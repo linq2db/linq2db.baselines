@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	DatePart('q', [t].[DateTimeValue])

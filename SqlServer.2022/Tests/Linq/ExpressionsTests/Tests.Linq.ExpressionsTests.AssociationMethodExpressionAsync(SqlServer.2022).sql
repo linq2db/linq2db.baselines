@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022
 
 SELECT
 	[t1].[ParentID],
@@ -7,8 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 
 SELECT
 	(

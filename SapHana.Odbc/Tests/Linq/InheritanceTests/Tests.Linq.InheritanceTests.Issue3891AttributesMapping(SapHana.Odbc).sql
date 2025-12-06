@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -28,7 +27,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -41,7 +39,6 @@ FROM
 	"Base" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Type Int -- Int32
 SET     @Type = 1
@@ -64,7 +61,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

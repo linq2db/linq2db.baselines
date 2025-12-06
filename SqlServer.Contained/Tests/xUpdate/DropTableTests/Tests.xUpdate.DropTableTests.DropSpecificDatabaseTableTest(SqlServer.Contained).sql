@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [DropTableTest]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -11,7 +9,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -19,15 +16,15 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TestDataContained].[dbo].[DropTableTest]
@@ -39,7 +36,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -47,12 +43,10 @@ SELECT
 FROM
 	[TestDataContained].[dbo].[DropTableTest] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE [TestDataContained].[dbo].[DropTableTest]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

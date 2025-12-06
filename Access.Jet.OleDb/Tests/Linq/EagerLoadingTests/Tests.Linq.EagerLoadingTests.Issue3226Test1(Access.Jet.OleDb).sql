@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[x_1].[Id],
@@ -16,10 +15,10 @@ FROM
 					[ItemValue] [a_Values]
 				WHERE
 					[x].[Id] = [a_Values].[ItemId]
-			) as [SUM_1]
+			) as [Sum_1]
 		FROM
 			[Item] [x]
 	) [x_1]
 ORDER BY
-	[x_1].[SUM_1]
+	[x_1].[Sum_1]
 

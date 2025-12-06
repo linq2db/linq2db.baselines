@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022
 
 SELECT
 	[p].[FirstName],
@@ -12,8 +11,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 
 SELECT
 	[p].[FirstName],

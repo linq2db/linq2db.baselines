@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @pageNumber Int -- Int32
 SET     @pageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength

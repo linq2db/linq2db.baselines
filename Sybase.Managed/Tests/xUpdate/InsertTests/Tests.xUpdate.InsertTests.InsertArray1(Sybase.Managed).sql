@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t].[ID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]

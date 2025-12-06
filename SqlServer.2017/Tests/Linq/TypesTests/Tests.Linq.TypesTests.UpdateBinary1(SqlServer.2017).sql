@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

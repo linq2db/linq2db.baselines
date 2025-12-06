@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @text VarWChar(3) -- String
 SET     @text = '123'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 WITH CTE1_ AS
 (
@@ -27,7 +26,6 @@ FROM
 	CTE1_ p
 		INNER JOIN LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

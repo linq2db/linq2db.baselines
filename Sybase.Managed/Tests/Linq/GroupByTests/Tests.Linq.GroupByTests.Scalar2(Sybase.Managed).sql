@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	MAX([g_1].[ChildID]),

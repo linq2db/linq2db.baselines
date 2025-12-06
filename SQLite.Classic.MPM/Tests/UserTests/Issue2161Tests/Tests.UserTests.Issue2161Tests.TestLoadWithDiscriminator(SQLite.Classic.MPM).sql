@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[m_1].[OrderId],
@@ -20,7 +17,6 @@ FROM
 	) [m_1]
 		INNER JOIN [OrderDetail] [d] ON [m_1].[OrderId] = [d].[OrderId]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -33,5 +29,3 @@ WHERE
 	[o].[OrderId] = 1
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

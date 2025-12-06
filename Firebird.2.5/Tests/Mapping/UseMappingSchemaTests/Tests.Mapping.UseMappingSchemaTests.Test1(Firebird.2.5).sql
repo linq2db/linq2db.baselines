@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Field1",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

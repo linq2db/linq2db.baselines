@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -24,7 +22,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = '	'
@@ -42,7 +39,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = '
@@ -62,7 +58,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ''
@@ -80,7 +75,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ''
@@ -98,7 +92,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ''
@@ -116,7 +109,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -134,7 +126,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -152,7 +143,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -170,7 +160,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -188,7 +177,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -206,7 +194,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -224,7 +211,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -242,7 +228,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -260,7 +245,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -278,7 +262,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -296,7 +279,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -314,7 +296,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = ' '
@@ -332,7 +313,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = '　'
@@ -350,7 +330,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = char(0)
@@ -368,7 +347,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = NULL
@@ -386,7 +364,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 2
@@ -402,7 +379,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 2

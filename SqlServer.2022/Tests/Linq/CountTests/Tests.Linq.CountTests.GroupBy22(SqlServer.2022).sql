@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @n Int -- Int32
 SET     @n = 1
 

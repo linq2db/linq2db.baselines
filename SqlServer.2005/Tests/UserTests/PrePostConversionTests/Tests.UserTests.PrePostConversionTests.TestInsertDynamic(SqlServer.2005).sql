@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @param Int -- Int32
 SET     @param = 2
 
@@ -16,7 +15,6 @@ VALUES
 	@param
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (2)

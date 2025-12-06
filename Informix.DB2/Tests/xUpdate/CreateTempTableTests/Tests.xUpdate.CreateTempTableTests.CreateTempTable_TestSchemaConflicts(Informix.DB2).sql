@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO TestTempTable
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int           NOT NULL,
-	Renamed NVarChar(255)     NULL
+	Renamed NVarChar(255)     NULL,
+
+	PRIMARY KEY (Id)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO TempTable
@@ -35,7 +34,6 @@ SELECT
 FROM
 	TestTempTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO TestTempTable
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO TempTable
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TempTable

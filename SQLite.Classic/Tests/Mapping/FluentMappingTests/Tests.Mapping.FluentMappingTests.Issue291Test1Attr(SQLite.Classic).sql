@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
 DECLARE @itemType  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeOtherField
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol2'
@@ -42,7 +40,6 @@ VALUES
 	@SomeOtherField
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -55,7 +52,6 @@ WHERE
 	[o].[my_col1] = 'MyCol1'
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

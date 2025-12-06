@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[p].[ParentID],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

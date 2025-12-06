@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [FluentTemp]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
@@ -45,7 +44,6 @@ SET
 WHERE
 	[FluentTemp].[ID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [FluentTemp]

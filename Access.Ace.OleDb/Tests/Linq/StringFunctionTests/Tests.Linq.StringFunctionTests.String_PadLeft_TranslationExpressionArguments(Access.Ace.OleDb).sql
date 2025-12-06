@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[s].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[s].[FirstName] <> ''
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

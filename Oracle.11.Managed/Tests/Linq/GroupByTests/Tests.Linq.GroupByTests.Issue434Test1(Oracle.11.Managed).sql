@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @input Varchar2(6) -- String
 SET     @input = '%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @input Varchar2(6) -- String
 SET     @input = '%test%'

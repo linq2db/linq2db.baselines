@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @text VarChar(3) -- String
 SET     @text = '123'
 

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 0
 DECLARE @FirstName NVarChar(4) -- String
@@ -30,12 +27,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cond  -- Int32
 SET     @cond = 0

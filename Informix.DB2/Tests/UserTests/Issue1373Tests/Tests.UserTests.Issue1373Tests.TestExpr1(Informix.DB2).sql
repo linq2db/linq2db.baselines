@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO Issue1373Tests
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Issue1373Tests
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Issue1373Tests
@@ -40,7 +37,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

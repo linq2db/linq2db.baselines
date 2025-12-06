@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Key_1`,
@@ -28,8 +25,7 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`g_2`.`Key_1`

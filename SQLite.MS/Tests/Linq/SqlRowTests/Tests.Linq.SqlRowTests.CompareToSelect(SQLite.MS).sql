@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -17,7 +16,6 @@ WHERE
 			[y].[Nil] IS NULL
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -36,7 +34,6 @@ WHERE
 			[y].[Nil] IS NULL
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -55,7 +52,6 @@ WHERE
 			[y].[Nil] IS NULL
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

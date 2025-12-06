@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	g_1."FirstName",

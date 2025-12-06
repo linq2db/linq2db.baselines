@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName Varchar2(27) -- String
@@ -31,7 +30,6 @@ WHEN NOT MATCHED THEN
 		:LastName
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -46,7 +44,6 @@ FROM
 WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 0
@@ -84,7 +81,6 @@ WHEN NOT MATCHED THEN
 		:MiddleName
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

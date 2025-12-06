@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*),
-	sum(g_1.ChildID),
-	min(g_1.ChildID),
-	max(g_1.ChildID),
-	avg(g_1.ChildID)
+	SUM(g_1.ChildID),
+	MIN(g_1.ChildID),
+	MAX(g_1.ChildID),
+	AVG(g_1.ChildID)
 FROM
 	Child g_1
 GROUP BY

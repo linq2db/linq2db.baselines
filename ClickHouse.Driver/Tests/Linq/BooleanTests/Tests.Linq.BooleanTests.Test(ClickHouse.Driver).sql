@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	r.Id,
@@ -16,7 +15,6 @@ FROM
 WHERE
 	r.Boolean = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	r.Boolean = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -84,7 +79,6 @@ FROM
 WHERE
 	r.Boolean = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -100,7 +94,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -118,7 +111,6 @@ FROM
 WHERE
 	r.Boolean = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -134,7 +126,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -152,7 +143,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -168,7 +158,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -186,7 +175,6 @@ FROM
 WHERE
 	r.BooleanN = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -202,7 +190,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -220,7 +207,6 @@ FROM
 WHERE
 	r.BooleanN = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -236,7 +222,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -254,7 +239,6 @@ FROM
 WHERE
 	r.BooleanN = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -270,7 +254,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -288,7 +271,6 @@ FROM
 WHERE
 	r.BooleanN = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -304,7 +286,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -322,7 +303,6 @@ FROM
 WHERE
 	r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -338,7 +318,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -356,7 +335,6 @@ FROM
 WHERE
 	r.Boolean <> true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -372,7 +350,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -390,7 +367,6 @@ FROM
 WHERE
 	r.Boolean <> false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -406,7 +382,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -424,7 +399,6 @@ FROM
 WHERE
 	r.Boolean <> true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -440,7 +414,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -458,7 +431,6 @@ FROM
 WHERE
 	r.Boolean <> false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -474,7 +446,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -490,7 +461,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -506,75 +476,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Id,
-	r.Boolean,
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r.Decimal,
-	r.DecimalN,
-	r.Double,
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> true OR r.BooleanN IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	t1.Id,
-	t1.Boolean,
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1.Decimal,
-	t1.DecimalN,
-	t1.Double,
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Id,
-	r.Boolean,
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r.Decimal,
-	r.DecimalN,
-	r.Double,
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> false OR r.BooleanN IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	t1.Id,
-	t1.Boolean,
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1.Decimal,
-	t1.DecimalN,
-	t1.Double,
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -592,7 +493,6 @@ FROM
 WHERE
 	r.BooleanN <> true OR r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -608,7 +508,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -626,7 +525,6 @@ FROM
 WHERE
 	r.BooleanN <> false OR r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -642,7 +540,70 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Boolean,
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r.Decimal,
+	r.DecimalN,
+	r.Double,
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> true OR r.BooleanN IS NULL
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Boolean,
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1.Decimal,
+	t1.DecimalN,
+	t1.Double,
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Boolean,
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r.Decimal,
+	r.DecimalN,
+	r.Double,
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> false OR r.BooleanN IS NULL
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Boolean,
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1.Decimal,
+	t1.DecimalN,
+	t1.Double,
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -660,7 +621,6 @@ FROM
 WHERE
 	r.BooleanN IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -676,7 +636,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -867,7 +826,6 @@ FROM
 GROUP BY
 	g_1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -883,7 +841,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1556,7 +1513,6 @@ SELECT
 FROM
 	BooleanTable r_1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1572,7 +1528,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1590,7 +1545,6 @@ FROM
 WHERE
 	r.Boolean = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1606,7 +1560,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1624,7 +1577,6 @@ FROM
 WHERE
 	r.Boolean = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1640,7 +1592,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1658,7 +1609,6 @@ FROM
 WHERE
 	r.Boolean = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1674,7 +1624,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1692,7 +1641,6 @@ FROM
 WHERE
 	r.Boolean = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1708,7 +1656,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1726,7 +1673,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1742,7 +1688,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1760,7 +1705,6 @@ FROM
 WHERE
 	r.BooleanN = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1776,7 +1720,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1794,7 +1737,6 @@ FROM
 WHERE
 	r.BooleanN = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1810,7 +1752,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1828,7 +1769,6 @@ FROM
 WHERE
 	r.BooleanN = true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1844,7 +1784,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1862,7 +1801,6 @@ FROM
 WHERE
 	r.BooleanN = false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1878,7 +1816,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1896,7 +1833,6 @@ FROM
 WHERE
 	r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1912,7 +1848,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1930,7 +1865,6 @@ FROM
 WHERE
 	r.Boolean <> true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1946,7 +1880,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1964,7 +1897,6 @@ FROM
 WHERE
 	r.Boolean <> false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1980,7 +1912,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1998,7 +1929,6 @@ FROM
 WHERE
 	r.Boolean <> true
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2014,7 +1944,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2032,7 +1961,6 @@ FROM
 WHERE
 	r.Boolean <> false
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2048,7 +1976,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2064,7 +1991,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2080,75 +2006,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Id,
-	r.Boolean,
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r.Decimal,
-	r.DecimalN,
-	r.Double,
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> true OR r.BooleanN IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	t1.Id,
-	t1.Boolean,
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1.Decimal,
-	t1.DecimalN,
-	t1.Double,
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Id,
-	r.Boolean,
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r.Decimal,
-	r.DecimalN,
-	r.Double,
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> false OR r.BooleanN IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	t1.Id,
-	t1.Boolean,
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1.Decimal,
-	t1.DecimalN,
-	t1.Double,
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2166,7 +2023,6 @@ FROM
 WHERE
 	r.BooleanN <> true OR r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2182,7 +2038,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2200,7 +2055,6 @@ FROM
 WHERE
 	r.BooleanN <> false OR r.BooleanN IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2216,7 +2070,70 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Boolean,
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r.Decimal,
+	r.DecimalN,
+	r.Double,
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> true OR r.BooleanN IS NULL
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Boolean,
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1.Decimal,
+	t1.DecimalN,
+	t1.Double,
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Boolean,
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r.Decimal,
+	r.DecimalN,
+	r.Double,
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> false OR r.BooleanN IS NULL
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Boolean,
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1.Decimal,
+	t1.DecimalN,
+	t1.Double,
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2234,7 +2151,6 @@ FROM
 WHERE
 	r.BooleanN IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2250,7 +2166,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2441,7 +2356,6 @@ FROM
 GROUP BY
 	g_1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -2457,7 +2371,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -3130,7 +3043,6 @@ SELECT
 FROM
 	BooleanTable r_1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

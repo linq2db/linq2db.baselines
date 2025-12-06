@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	DateAdd('m', [t].[SmallIntValue], [t].[DateTimeValue])

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TableWithIdentity"
 (
@@ -10,7 +9,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

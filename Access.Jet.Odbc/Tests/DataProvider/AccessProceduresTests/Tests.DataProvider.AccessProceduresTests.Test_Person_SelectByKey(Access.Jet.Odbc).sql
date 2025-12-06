@@ -1,21 +1,16 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 4
 
 { CALL Person_SelectByKey(?) }
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 4
@@ -31,5 +26,3 @@ FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
-DisposeTransaction

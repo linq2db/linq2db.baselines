@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	s."Id"
@@ -9,7 +8,6 @@ WHERE
 	s."Int" IN (-1, -2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	(s."Int" IN (-1) OR s."Int" IS NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	s."Int" IN (-1, 2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	(s."Int" NOT IN (2) AND s."Int" IS NOT NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

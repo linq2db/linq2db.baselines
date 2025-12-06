@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 CREATE TABLE [aa]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY ([bb])
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @bb Int -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[aa] [t1]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [aa]

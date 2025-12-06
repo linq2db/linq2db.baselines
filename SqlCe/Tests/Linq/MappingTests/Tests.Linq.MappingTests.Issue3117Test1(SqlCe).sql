@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
@@ -12,12 +11,10 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -25,7 +22,6 @@ SELECT
 FROM
 	[User] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @userId Int -- Int32
 SET     @userId = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
@@ -37,7 +33,6 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
-BeforeExecute
 -- SqlCe
 DECLARE @value Int -- Int32
 SET     @value = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]

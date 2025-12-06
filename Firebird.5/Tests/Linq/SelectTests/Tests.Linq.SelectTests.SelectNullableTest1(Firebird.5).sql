@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -68,7 +66,6 @@ WHERE
 	"t1".ID = 1000
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM

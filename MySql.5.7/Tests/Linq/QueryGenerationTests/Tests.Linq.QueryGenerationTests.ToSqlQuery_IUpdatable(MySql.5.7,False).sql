@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Value Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @newValue Int32
 SET     @newValue = 123
@@ -22,7 +20,6 @@ UPDATE
 SET
 	`t1`.`Value` = @newValue
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

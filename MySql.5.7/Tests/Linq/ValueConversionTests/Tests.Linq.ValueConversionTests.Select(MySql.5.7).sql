@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`Id`,
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	`t`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	`t2`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 1

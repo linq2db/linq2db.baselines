@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[Item1].[ParentID],

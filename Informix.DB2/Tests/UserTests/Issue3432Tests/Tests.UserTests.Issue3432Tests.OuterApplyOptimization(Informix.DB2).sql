@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	task_1.Description,

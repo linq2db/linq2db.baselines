@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Id",
@@ -10,8 +9,7 @@ WHERE
 	x."Id" = 1
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Id",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 WITH CTE_1
 (
@@ -33,7 +32,6 @@ FROM
 	CTE_1 "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

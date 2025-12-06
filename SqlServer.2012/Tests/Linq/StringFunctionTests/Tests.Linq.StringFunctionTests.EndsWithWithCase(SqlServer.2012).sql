@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	COUNT(*)
@@ -10,7 +9,6 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'Persecution'))) = Convert(VarBinary(8000), N'Persecution') AND
 	[p].[PersonID] = 2
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -21,7 +19,6 @@ WHERE
 	([p].[Diagnosis] NOT LIKE N'%Persecution' ESCAPE N'~' OR Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'Persecution'))) <> Convert(VarBinary(8000), N'Persecution')) AND
 	[p].[PersonID] = 2
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -33,7 +30,6 @@ WHERE
 	Convert(VarBinary(8000), RIGHT([p].[Diagnosis], LEN(N'persecution'))) = Convert(VarBinary(8000), N'persecution') AND
 	[p].[PersonID] = 2
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

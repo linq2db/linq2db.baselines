@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"pmp1"."ChildID"
@@ -14,7 +13,6 @@ FROM
 	) "pmp"
 		CROSS JOIN "Child" "pmp1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

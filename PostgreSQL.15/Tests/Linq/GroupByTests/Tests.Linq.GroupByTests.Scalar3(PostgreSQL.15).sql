@@ -1,11 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	MAX(CASE
-		WHEN g_1."ChildID" > 0 THEN g_1."ChildID"
-		ELSE NULL
-	END)
+	MAX(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 0)
 FROM
 	"Child" g_1
 GROUP BY

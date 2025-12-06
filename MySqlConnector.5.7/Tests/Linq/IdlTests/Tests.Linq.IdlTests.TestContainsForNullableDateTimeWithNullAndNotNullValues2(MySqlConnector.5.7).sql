@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`ID`,
@@ -15,7 +14,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -23,5 +21,5 @@ SELECT
 FROM
 	`LinqDataTypes` `x`
 WHERE
-	(`x`.`DateTimeValue2` IN ('2009-09-24 09:19:29.090') OR `x`.`DateTimeValue2` IS NULL)
+	(`x`.`DateTimeValue2` IN (STR_TO_DATE('2009-09-24 09:19:29.090', '%Y-%m-%d %H:%i:%s.%f')) OR `x`.`DateTimeValue2` IS NULL)
 

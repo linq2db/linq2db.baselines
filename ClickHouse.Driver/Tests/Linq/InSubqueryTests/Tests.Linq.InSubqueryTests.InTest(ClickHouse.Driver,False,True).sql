@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	c_1.ParentID,
@@ -14,7 +13,6 @@ WHERE
 			Parent p
 	)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -23,7 +21,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

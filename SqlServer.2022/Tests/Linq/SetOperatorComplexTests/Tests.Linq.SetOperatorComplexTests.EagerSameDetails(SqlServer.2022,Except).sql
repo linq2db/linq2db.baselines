@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[m_1].[Id],
@@ -39,9 +36,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -66,9 +60,6 @@ FROM
 WHERE
 	[a_Book_1].[Discriminator] = N'Novel'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -94,7 +85,6 @@ FROM
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -109,9 +99,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

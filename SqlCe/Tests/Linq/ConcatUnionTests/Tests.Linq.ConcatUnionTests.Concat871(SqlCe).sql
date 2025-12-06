@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[c_1].[Value1],

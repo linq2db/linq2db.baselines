@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
-	CAST(20 AS Float)
+	CAST(20 AS DOUBLE PRECISION)
 FROM rdb$database
 

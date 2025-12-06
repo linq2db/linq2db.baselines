@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer(4) -- Int32

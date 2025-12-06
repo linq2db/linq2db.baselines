@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.Value
@@ -8,7 +7,6 @@ FROM
 WHERE
 	t.Value IN ('key2')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

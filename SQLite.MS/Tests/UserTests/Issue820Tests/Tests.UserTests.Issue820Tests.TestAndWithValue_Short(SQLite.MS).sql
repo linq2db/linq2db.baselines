@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @param  -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @firstName Varchar2(255) -- String
 SET     @firstName = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	p."FirstName" = :firstName OR p."LastName" = :firstName
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @firstName Varchar2(4) -- String
 SET     @firstName = 'John'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	s."Value_1"
@@ -17,9 +16,6 @@ FROM
 WHERE
 	s."Value_1"
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -35,9 +31,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

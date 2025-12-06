@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT /*+ USE_NL(c_1 p) */
 	p."ParentID",

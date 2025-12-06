@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[WhereCases] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -68,7 +62,6 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -80,7 +73,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -92,7 +84,6 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -104,7 +95,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -116,7 +106,6 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -128,7 +117,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -141,7 +129,6 @@ WHERE
 	([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -153,7 +140,6 @@ FROM
 WHERE
 	NOT (([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -165,7 +151,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -177,7 +162,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -189,7 +173,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -201,7 +184,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -213,7 +195,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -225,7 +206,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -237,7 +217,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -249,7 +228,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -261,7 +239,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -273,7 +250,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -285,7 +261,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -297,7 +272,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -310,7 +284,6 @@ WHERE
 	[t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -322,7 +295,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -335,7 +307,6 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -347,7 +318,6 @@ FROM
 WHERE
 	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -360,7 +330,6 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -372,7 +341,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -385,7 +353,6 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

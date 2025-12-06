@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	NULL as [c1]

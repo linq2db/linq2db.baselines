@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[t1].[ParentID],
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	[t1].[ChildID]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."Id",
@@ -24,7 +21,6 @@ FROM
 	) "m_1"
 		INNER JOIN "EntityMC" "d_1" ON "m_1"."Id" = "d_1".FK
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -37,9 +33,6 @@ FROM
 	"EntityMA" "m_1"
 		INNER JOIN "EntityMB" "d" ON "m_1"."Id" = "d".FK
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

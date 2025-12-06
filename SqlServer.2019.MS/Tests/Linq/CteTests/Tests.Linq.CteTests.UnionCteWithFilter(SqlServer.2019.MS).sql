@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS

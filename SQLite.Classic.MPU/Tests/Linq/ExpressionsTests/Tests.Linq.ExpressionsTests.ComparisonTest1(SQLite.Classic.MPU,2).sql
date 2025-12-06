@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @personId  -- Int32
 SET     @personId = 0
 DECLARE @personId_1  -- Int32

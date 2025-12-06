@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -10,7 +9,6 @@ FROM
 	[TestEntity1] [t1]
 		LEFT JOIN [TestEntity2] [t2] ON [t1].[Id] = [t2].[Id]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

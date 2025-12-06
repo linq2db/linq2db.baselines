@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @text NVarChar(4000) -- String
 SET     @text = N'123'
 

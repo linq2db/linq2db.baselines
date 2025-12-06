@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = 0x030201
@@ -39,7 +36,6 @@ SET
 WHERE
 	[BlobClass].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

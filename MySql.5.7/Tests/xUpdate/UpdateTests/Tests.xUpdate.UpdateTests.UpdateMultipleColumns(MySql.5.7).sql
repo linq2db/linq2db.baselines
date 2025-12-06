@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
@@ -20,7 +19,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	`t`.`ID` = @ID
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1001

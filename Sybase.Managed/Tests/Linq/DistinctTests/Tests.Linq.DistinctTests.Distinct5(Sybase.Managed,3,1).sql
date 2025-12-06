@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 4
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 4
@@ -29,7 +26,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

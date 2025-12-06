@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	([p2].[PersonID] * 2) / 2,

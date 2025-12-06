@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeValue2
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT TOP (2)
@@ -30,7 +28,6 @@ SELECT TOP (2)
 FROM
 	[ValuesTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @SomeValue1 Int -- Int32
 SET     @SomeValue1 = 8
@@ -47,7 +44,6 @@ SET
 WHERE
 	[ValuesTable].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT TOP (2)

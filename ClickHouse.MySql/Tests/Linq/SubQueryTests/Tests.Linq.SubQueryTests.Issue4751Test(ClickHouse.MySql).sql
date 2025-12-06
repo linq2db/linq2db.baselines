@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	x.Id,
@@ -51,7 +50,6 @@ WHERE
 	position(x.CarNo, NULL) > 0 AND position(x.CarBrand, NULL) > 0
 LIMIT 20, 10
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

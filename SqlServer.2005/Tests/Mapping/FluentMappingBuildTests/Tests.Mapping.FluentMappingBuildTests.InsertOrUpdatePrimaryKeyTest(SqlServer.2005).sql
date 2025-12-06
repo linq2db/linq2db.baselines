@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -16,7 +14,6 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -34,7 +31,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 UPDATE
@@ -61,7 +57,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)

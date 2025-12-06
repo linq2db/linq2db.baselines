@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @s Varchar2(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	p."PersonID" = 1 AND :s LIKE '%[%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @s Varchar2(7) -- String
 SET     @s = '123[456'

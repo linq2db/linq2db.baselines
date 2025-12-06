@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Enum] IN (NULL, NULL)
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

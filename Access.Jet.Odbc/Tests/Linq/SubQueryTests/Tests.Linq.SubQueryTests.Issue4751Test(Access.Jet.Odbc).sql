@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 30
 	[x].[Id],
@@ -48,7 +47,6 @@ FROM
 				LEFT JOIN [Trp0041] [t4] ON ([t4].[CarNo] = [t].[CarNo] OR [t4].[CarNo] IS NULL AND [t].[CarNo] IS NULL)
 	) [x]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

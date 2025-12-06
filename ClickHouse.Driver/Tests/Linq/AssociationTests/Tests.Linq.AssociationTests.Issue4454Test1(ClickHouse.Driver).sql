@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	a_Client1.Name

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @p VarChar(20) -- AnsiString
 SET     @p = N'abc'
 
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[t].[VarcharDataType] = @p
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @VarChar VarChar -- AnsiString
 SET     @VarChar = Tests.Linq.ParameterTests+VarChar
@@ -26,7 +24,6 @@ VALUES
 	@VarChar
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @p VarChar -- AnsiString
 SET     @p = Tests.Linq.ParameterTests+VarChar

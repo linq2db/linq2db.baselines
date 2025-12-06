@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t1".ID,
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"t1"."TestField" = 0
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

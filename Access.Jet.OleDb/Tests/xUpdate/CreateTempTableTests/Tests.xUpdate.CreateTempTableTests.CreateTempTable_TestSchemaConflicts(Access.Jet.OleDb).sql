@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TestTempTable]
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [TempTable]
 (
 	[Id]      Int           NOT NULL,
-	[Renamed] NVarChar(255)     NULL
+	[Renamed] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TempTable]
@@ -35,7 +34,6 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TestTempTable]
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TempTable]
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [TempTable]

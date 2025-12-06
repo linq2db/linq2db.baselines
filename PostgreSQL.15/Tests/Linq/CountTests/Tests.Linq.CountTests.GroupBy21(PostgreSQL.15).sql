@@ -1,13 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
 SELECT
-	COUNT(CASE
-		WHEN g_2."ParentID" < 3 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_2."ParentID" < 3)
 FROM
 	(
 		SELECT

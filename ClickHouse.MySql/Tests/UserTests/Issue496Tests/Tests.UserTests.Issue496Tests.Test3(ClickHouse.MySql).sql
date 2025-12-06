@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	a_Children.ChildID,

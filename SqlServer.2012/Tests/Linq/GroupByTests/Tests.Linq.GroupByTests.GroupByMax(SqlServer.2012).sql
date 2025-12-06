@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	MAX([g_1].[ParentID])

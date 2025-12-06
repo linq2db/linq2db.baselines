@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
@@ -34,7 +32,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 3
@@ -52,7 +49,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
@@ -70,7 +66,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
@@ -88,7 +83,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
@@ -114,7 +108,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
@@ -140,7 +133,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)

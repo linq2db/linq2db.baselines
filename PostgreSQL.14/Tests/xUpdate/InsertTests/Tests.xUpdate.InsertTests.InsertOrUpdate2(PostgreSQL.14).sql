@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName Text(7) -- String
@@ -26,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -43,8 +41,7 @@ VALUES
 )
 ON CONFLICT ("PersonID") DO NOTHING
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -56,8 +53,7 @@ FROM
 WHERE
 	p."PersonID" = :id
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -73,8 +69,7 @@ VALUES
 )
 ON CONFLICT ("PersonID") DO NOTHING
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

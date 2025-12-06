@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

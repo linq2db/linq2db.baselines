@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value Int64
 SET     @value = 0
 

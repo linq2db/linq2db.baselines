@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1

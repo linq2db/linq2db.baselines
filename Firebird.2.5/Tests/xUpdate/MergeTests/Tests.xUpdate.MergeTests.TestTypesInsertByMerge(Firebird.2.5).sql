@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FieldBoolean Char -- String
 SET     @FieldBoolean = NULL
@@ -89,7 +86,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FieldBoolean Char -- String
 SET     @FieldBoolean = NULL
@@ -168,7 +164,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -192,7 +187,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

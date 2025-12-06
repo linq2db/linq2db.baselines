@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -18,7 +17,6 @@ FROM
 		LIMIT @skip, @take
 	) `t2`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

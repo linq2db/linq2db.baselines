@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	nm."MiddleName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (2)

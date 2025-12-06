@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @false_value VarChar -- AnsiString
 SET     @false_value = 'N'
 

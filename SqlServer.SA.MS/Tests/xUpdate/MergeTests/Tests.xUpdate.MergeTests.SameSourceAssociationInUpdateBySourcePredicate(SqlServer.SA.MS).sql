@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [Person] [Target]
 USING (
@@ -27,7 +24,6 @@ SET
 	[FirstName] = N'Updated'
 ;
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -41,5 +37,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

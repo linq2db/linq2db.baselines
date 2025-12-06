@@ -1,21 +1,16 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 4
 
 Person_SelectByKey
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 4
@@ -31,5 +26,3 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
-DisposeTransaction

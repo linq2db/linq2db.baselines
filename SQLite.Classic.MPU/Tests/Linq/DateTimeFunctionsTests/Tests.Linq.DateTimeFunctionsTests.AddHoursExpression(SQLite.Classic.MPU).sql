@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Hour  -- Int32
 SET     @Hour = 22
 

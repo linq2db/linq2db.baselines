@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
@@ -37,7 +35,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -52,7 +49,6 @@ FROM
 WHERE
 	x.FirstName = @FirstName
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -72,7 +68,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

@@ -1,14 +1,11 @@
-﻿BeforeExecute
+﻿-- Firebird.2.5 Firebird
+
+"Person_SelectAll"
+
 -- Firebird.2.5 Firebird
 
 "Person_SelectAll"
 
-BeforeExecute
--- Firebird.2.5 Firebird
-
-"Person_SelectAll"
-
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

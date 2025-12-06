@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @Field Int -- Int32
 SET     @Field = NULL
@@ -19,7 +17,6 @@ VALUES
 	@Field
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 MERGE INTO [TestMergeIdentity] [Target]
@@ -50,7 +46,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

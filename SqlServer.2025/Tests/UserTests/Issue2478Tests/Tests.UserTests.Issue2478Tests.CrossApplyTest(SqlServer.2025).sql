@@ -1,23 +1,21 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[p].[ParentID],
-	[c_2].[c1],
-	[c_2].[c2]
+	[c_2].[Count_1],
+	[c_2].[Sum_1]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [c1],
-				SUM([c_1].[ChildID]) as [c2]
+				COUNT(*) as [Count_1],
+				SUM([c_1].[ChildID]) as [Sum_1]
 			FROM
 				[Child] [c_1]
 			WHERE
 				[c_1].[ParentID] = [p].[ParentID]
 		) [c_2]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

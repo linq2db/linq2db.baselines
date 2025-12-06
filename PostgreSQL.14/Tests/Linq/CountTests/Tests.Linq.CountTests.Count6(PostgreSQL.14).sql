@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -11,7 +10,7 @@ FROM
 			"Child" g_1
 		GROUP BY
 			g_1."ParentID"
-	) g_2
+	) t1
 WHERE
-	g_2."ParentID" > 2
+	t1."ParentID" > 2
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"x"."FirstName",
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	"x"."PersonID" DESC
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

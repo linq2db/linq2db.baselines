@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +10,6 @@ INSERT INTO [Issue4460Table]
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

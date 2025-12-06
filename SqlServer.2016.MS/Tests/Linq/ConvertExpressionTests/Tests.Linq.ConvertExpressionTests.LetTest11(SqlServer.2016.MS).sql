@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	IIF([t1].[cond] IS NULL, 0, [t1].[cond]),

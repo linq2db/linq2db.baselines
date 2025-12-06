@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[y].[item]
@@ -14,7 +13,6 @@ FROM
 		UNION ALL
 		SELECT 'O') [y]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

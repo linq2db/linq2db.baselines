@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Field1",
@@ -8,8 +7,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Column1",
@@ -18,8 +16,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Field1",

@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[u].[PersonID] as [ID],
-	[x].[PersonID]
+	[x].[PersonID] as [x]
 FROM
 	[Person] [u]
 		CROSS APPLY (

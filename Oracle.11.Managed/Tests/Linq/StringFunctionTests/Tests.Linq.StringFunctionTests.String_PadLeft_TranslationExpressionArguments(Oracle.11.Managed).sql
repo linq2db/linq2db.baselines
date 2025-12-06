@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	s.ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	s."FirstName" IS NOT NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

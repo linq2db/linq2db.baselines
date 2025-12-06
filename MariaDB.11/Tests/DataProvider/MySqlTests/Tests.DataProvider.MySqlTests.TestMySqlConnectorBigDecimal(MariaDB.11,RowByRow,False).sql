@@ -1,15 +1,12 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Decimal NewDecimal -- Decimal
@@ -30,8 +27,7 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Decimal NewDecimal -- Decimal
@@ -52,8 +48,7 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -64,15 +59,13 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value1 NewDecimal -- Decimal
 SET     @value1 = 12345678901234567890123456789012345.123456789012345678901234567891
 DECLARE @value2 NewDecimal -- Decimal
@@ -91,8 +84,7 @@ VALUES
 	@value2
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
 
@@ -109,8 +101,7 @@ VALUES
 	NULL
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -121,15 +112,13 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Decimal NewDecimal -- Decimal
@@ -150,8 +139,7 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Decimal NewDecimal -- Decimal
@@ -172,8 +160,7 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

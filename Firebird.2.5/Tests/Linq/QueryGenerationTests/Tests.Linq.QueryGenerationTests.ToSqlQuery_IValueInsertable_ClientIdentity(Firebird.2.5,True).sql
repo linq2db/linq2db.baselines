@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "TableWithIdentity"
 (
@@ -12,7 +11,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

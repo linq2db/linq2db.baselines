@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntEnumNullable Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

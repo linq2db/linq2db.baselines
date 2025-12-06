@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 UPDATE
 	[TableWithData]
 SET
-	[Id] = [TableWithData].[Id],
 	[Value] = [TableWithData].[Value] + 1,
 	[ValueStr] = [TableWithData].[ValueStr] || 'Upd'
 WHERE

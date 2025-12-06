@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE N'%Joh%' ESCAPE N'~' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

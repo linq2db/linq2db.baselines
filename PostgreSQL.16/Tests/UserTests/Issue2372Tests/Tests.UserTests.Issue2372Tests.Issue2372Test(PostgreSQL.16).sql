@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "InventoryResource"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid

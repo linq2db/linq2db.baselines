@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 WITH CTE_1 ("Id2", "Id1")
 AS

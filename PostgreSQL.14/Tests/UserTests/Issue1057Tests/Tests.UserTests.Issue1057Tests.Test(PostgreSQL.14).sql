@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName Text(12) -- String
@@ -16,8 +15,7 @@ VALUES
 	:TargetName
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TargetName Text(4) -- String
@@ -34,8 +32,7 @@ VALUES
 	:TargetName
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
@@ -56,8 +53,7 @@ VALUES
 	:Actual
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."Id",

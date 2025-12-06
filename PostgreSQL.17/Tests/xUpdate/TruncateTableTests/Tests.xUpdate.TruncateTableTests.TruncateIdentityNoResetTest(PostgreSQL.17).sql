@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_temp
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_temp
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
@@ -41,12 +37,10 @@ ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_temp
@@ -58,7 +52,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_temp
@@ -70,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1

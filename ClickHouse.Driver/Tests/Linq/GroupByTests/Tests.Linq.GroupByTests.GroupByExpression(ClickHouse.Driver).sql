@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	Coalesce(minOrNull(gr.ParentID), 10)

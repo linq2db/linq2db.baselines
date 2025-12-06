@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "tmptbl1"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -25,7 +25,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 2
@@ -43,16 +42,16 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "tmptbl2"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255) NOT NULL
+	"Value" NVarChar(255) NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -70,7 +69,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 3
@@ -88,16 +86,16 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "tmptbl3"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -115,7 +113,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 2
@@ -133,7 +130,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -144,7 +140,6 @@ FROM
 		LEFT JOIN "tmptbl2" "t3" ON "t2"."ID" = "t3"."ID"
 		LEFT JOIN "tmptbl3" "t4" ON Coalesce("t3"."Value", "t2"."Value") = "t4"."Value" OR "t3"."Value" IS NULL AND "t2"."Value" IS NULL AND "t4"."Value" IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -153,7 +148,6 @@ SELECT
 FROM
 	"tmptbl1" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -162,7 +156,6 @@ SELECT
 FROM
 	"tmptbl2" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -171,17 +164,14 @@ SELECT
 FROM
 	"tmptbl3" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "tmptbl3"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "tmptbl2"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "tmptbl1"

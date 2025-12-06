@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[FirstName] = N'John'
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

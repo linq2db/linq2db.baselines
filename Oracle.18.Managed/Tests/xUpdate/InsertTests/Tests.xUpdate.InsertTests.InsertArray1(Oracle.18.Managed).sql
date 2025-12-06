@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID > 1000
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	t.ID = 1001
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM

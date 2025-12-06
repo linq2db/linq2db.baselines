@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @menuId Int -- Int32
 SET     @menuId = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @nullableGender NChar(1) -- StringFixedLength
 SET     @nullableGender = 'O'
@@ -41,7 +38,6 @@ SET
 WHERE
 	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 5

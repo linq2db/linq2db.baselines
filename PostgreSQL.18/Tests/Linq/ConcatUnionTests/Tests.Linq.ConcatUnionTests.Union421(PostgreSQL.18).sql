@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p_2.val

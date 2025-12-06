@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(10) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

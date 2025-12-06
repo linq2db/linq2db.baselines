@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -25,7 +22,6 @@ USING (
 ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND "Source"."Person_FirstName" = 'first 4' AND "Source"."Person_FirstName_1" = 'first 4' THEN DELETE
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -36,5 +32,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	c_1.ParentID = 1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)

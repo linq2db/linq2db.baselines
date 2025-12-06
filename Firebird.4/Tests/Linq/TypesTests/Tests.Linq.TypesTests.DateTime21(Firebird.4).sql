@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t".ID,
@@ -18,7 +17,6 @@ WHERE
 	"t".ID = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = CAST('2010-12-14 05:00:07.425' AS timestamp)
@@ -30,7 +28,6 @@ SET
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -50,7 +47,6 @@ WHERE
 	"t".ID = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = CAST('2001-01-11 01:11:21.100' AS timestamp)

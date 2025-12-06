@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Integer -- Int32
@@ -259,7 +256,6 @@ SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98 UNION ALL
 SELECT @p99,@p100
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111051
@@ -518,7 +514,6 @@ SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98 UNION ALL
 SELECT @p99,@p100
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111101
@@ -772,7 +767,6 @@ SELECT @p93,@p94 UNION ALL
 SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
@@ -786,5 +780,3 @@ FROM
 WHERE
 	[r].[ParentID] >= @ParentID AND [r].[ParentID] <= @ParentID_1
 
-BeforeExecute
-DisposeTransaction

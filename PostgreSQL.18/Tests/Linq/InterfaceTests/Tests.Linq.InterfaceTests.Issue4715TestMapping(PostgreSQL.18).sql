@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	:Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

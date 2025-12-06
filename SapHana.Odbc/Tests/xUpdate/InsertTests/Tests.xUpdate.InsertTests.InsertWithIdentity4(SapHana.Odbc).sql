@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
@@ -32,12 +30,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John0'
@@ -54,7 +50,6 @@ WHERE
 	"p"."FirstName" = ? AND "p"."LastName" = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
@@ -80,12 +75,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John1'
@@ -102,7 +95,6 @@ WHERE
 	"p"."FirstName" = ? AND "p"."LastName" = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

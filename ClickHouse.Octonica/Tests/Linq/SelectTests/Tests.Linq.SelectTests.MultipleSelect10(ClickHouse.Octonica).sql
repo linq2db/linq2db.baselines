@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p4.PersonID,

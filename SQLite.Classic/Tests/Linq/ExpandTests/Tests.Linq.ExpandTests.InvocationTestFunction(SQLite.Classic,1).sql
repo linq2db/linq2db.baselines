@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @v  -- Int32
 SET     @v = 1
 

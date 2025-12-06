@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t].[Str],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[TestLengthModel] [t]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

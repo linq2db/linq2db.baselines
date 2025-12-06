@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT TOP (1)
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[FirstName] IS NULL
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John'

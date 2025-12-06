@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[SectorId],
@@ -14,9 +11,6 @@ FROM
 WHERE
 	[a_UserPosition].[PositionId] = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

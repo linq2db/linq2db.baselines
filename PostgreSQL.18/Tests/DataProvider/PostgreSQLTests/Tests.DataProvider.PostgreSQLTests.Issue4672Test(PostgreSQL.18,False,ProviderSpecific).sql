@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "Issue4672Table"(Interval)
+﻿INSERT BULK "Issue4672Table"(Interval)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

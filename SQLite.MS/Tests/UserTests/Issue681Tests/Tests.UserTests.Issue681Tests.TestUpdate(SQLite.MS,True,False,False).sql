@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 10
 DECLARE @ID  -- Int32

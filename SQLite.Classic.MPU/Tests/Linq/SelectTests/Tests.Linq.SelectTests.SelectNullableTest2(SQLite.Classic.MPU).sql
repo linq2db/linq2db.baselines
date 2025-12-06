@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -66,7 +64,6 @@ WHERE
 	[t1].[ID] = 1000
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM

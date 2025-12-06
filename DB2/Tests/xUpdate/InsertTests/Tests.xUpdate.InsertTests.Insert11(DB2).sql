@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	MAX("t1"."PersonID")
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4

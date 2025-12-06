@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_2].[Id1],
@@ -17,7 +14,6 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON ([m_2].[Id1] = [d].[MasterId])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -36,9 +32,6 @@ FROM
 ORDER BY
 	[d].[DetailId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -49,9 +42,6 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -68,9 +58,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

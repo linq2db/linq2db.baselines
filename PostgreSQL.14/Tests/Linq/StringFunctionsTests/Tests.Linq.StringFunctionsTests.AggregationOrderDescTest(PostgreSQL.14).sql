@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	MAX(g_1."Value1"),
-	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value1" DESC)
+	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value1" DESC NULLS FIRST)
 FROM
 	"SampleClass" g_1
 GROUP BY

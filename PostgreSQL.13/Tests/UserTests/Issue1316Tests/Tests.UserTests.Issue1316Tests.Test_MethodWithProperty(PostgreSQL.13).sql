@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -12,8 +11,7 @@ VALUES
 	:ID
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 5
 

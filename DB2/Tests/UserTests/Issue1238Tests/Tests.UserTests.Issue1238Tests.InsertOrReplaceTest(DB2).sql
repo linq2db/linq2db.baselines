@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
@@ -39,7 +35,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Data AS Int)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -47,7 +42,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
@@ -80,7 +74,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Data AS Int)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -88,5 +81,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

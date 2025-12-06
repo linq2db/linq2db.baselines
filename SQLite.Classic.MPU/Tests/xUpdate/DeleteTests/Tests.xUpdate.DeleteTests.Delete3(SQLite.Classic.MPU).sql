@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ChildID] IN (1001, 1002)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -20,7 +18,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -34,7 +31,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
@@ -63,7 +58,6 @@ WHERE
 			[Child].[ChildID] = [c_1].[ChildID]
 	)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

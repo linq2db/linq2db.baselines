@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Location
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -46,7 +44,6 @@ VALUES
 	@DeviceType
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'TV00002'
@@ -79,7 +75,6 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'Disp00002'
@@ -96,7 +91,6 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

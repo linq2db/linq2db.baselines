@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij Integer -- Int32
 SET     @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij = 1
 

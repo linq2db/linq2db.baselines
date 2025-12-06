@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id],
@@ -16,7 +15,6 @@ WHERE
 		ELSE NULL
 	END LIKE '%2%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

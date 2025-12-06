@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[pmp].[ParentID]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[pmp].[ParentID]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName]
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -26,7 +24,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_1) = @nameToCheck_2 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -43,7 +40,6 @@ WHERE
 	([p].[FirstName] NOT LIKE @nameToCheck ESCAPE '~' OR Substr([p].[FirstName], 1, @nameToCheck_1) <> @nameToCheck_2) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -60,7 +56,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND Substr([p].[FirstName], 1, @nameToCheck_1) = @nameToCheck_2 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

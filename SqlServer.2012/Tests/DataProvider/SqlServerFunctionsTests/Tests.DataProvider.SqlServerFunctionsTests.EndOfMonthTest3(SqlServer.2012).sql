@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
-	EOMONTH(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7))
+	EOMONTH(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3))
 

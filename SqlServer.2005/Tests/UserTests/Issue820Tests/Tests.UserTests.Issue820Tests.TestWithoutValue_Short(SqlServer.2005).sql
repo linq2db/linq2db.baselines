@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

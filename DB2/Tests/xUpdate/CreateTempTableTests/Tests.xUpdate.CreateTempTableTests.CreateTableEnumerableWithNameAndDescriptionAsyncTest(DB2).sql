@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TempTable"';
 END
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
@@ -20,8 +18,7 @@ BEGIN
 	';
 END
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."TempTable"
 (
@@ -30,8 +27,7 @@ INSERT INTO SESSION."TempTable"
 VALUES
 ('John')
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t"."Name"
@@ -39,8 +35,7 @@ FROM
 	"Person" "p"
 		INNER JOIN SESSION."TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

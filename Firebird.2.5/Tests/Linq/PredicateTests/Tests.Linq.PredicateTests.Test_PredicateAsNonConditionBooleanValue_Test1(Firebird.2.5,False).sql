@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"r"."Id",
@@ -108,7 +107,6 @@ FROM
 WHERE
 	"r"."Id" <> -1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

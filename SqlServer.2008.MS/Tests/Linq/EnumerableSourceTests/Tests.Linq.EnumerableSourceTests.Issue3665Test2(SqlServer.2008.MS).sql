@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -9,7 +8,6 @@ FROM
 			(0), (1), (2), (3)
 		) [y]([item])
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

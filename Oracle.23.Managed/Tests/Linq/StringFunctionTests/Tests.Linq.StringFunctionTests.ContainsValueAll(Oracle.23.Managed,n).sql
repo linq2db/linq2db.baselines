@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p."PersonID" = 1 AND '123n456' LIKE '%n%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

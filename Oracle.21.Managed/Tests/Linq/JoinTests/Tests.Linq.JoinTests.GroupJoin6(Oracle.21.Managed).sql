@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @n Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName VarWChar(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

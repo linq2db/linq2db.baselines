@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p_p Integer -- Int32
 SET     @p_p = 2
 

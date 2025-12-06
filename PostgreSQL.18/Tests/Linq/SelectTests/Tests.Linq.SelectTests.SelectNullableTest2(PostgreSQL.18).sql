@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
@@ -48,7 +47,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -66,7 +64,6 @@ WHERE
 	t1."ID" = 1000
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

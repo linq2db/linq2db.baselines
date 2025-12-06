@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @VBLocal_SelectedValue  -- Int32
 SET     @VBLocal_SelectedValue = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"r"."Id",
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", TRUE)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", FALSE)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -84,7 +79,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

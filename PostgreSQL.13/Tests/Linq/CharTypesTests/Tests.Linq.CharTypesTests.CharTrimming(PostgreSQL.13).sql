@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -20,8 +18,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '	'
 
@@ -34,8 +31,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '
 '
@@ -49,8 +45,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -63,8 +58,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -77,8 +71,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -91,8 +84,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -105,8 +97,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -119,8 +110,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -133,8 +123,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -147,8 +136,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -161,8 +149,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -175,8 +162,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -189,8 +175,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -203,8 +188,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -217,8 +201,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -231,8 +214,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -245,8 +227,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -259,8 +240,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '　'
 
@@ -273,8 +253,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = NULL
 
@@ -287,8 +266,7 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -302,8 +280,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

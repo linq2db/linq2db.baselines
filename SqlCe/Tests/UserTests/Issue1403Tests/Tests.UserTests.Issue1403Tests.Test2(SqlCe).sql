@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [Issue1403Tests_2]
 (
@@ -12,7 +11,6 @@ VALUES
 	'New event'
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

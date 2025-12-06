@@ -1,18 +1,18 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS DropTableTest
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE DropTableTest
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO DropTableTest
@@ -24,7 +24,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -32,12 +31,10 @@ SELECT
 FROM
 	DropTableTest t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE DropTableTest
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

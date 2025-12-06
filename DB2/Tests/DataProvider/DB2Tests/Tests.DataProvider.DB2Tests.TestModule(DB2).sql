@@ -1,25 +1,21 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
 
 TEST_PROCEDURE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
 
 TEST_MODULE1.TEST_PROCEDURE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
 
 TEST_MODULE2.TEST_PROCEDURE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -28,7 +24,6 @@ FROM
 	"Person" "p"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -37,7 +32,6 @@ FROM
 	"Person" "p"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -46,7 +40,6 @@ FROM
 	"Person" "p"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
@@ -57,7 +50,6 @@ FROM
 	TABLE(TEST_TABLE_FUNCTION(@p)) "r"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
@@ -68,7 +60,6 @@ FROM
 	TABLE(TEST_MODULE1.TEST_TABLE_FUNCTION(@p)) "r"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1

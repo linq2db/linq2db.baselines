@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -16,7 +12,6 @@ SET
 WHERE
 	[t1].[InheritanceParentId] = 143 AND [t1].[Name] IS NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [InheritanceParent]
@@ -32,7 +27,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -40,7 +34,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -50,7 +43,6 @@ SET
 WHERE
 	[t1].[InheritanceParentId] = 143 AND [t1].[Name] IS NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -58,5 +50,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

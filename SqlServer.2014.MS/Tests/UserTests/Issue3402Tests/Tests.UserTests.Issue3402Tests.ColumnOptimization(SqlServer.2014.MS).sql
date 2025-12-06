@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[ess].[ID]
@@ -15,7 +14,6 @@ WHERE
 			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

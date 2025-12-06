@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	it_1."cond",
@@ -23,7 +22,6 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

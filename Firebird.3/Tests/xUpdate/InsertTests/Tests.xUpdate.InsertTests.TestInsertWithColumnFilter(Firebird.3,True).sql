@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

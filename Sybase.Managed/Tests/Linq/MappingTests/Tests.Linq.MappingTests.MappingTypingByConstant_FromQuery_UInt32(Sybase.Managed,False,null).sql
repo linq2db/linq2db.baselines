@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @value UnsignedInt -- UInt32
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @value UnsignedInt -- UInt32
 SET     @value = 2147483648

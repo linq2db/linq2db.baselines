@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[x].[FirstName],
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	[x].[PersonID] DESC
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

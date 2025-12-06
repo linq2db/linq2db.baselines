@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	s.ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	s.FirstName <> ''
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

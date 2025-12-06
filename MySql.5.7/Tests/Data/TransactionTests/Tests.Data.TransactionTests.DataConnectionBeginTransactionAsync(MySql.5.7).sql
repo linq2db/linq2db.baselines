@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -18,5 +16,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

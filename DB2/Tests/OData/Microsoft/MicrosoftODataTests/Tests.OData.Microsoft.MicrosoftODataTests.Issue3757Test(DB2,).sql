@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1".ID,
@@ -13,9 +10,6 @@ FROM
 	"Issue3757Level1" "m_1"
 		INNER JOIN "Issue3757Level2" "d" ON "m_1".ID = "d"."ParentId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

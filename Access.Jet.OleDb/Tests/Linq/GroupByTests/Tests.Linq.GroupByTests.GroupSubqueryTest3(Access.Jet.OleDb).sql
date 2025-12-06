@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[pmp].[ParentID]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[pmp].[ParentID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

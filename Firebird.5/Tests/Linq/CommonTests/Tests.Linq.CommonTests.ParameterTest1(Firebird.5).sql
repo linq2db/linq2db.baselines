@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -19,7 +18,6 @@ WHERE
 GROUP BY
 	"g_1"."ParentID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 2

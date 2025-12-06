@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @value Int -- Int32
 SET     @value = 123
 
@@ -12,7 +11,6 @@ VALUES
 	@value
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)

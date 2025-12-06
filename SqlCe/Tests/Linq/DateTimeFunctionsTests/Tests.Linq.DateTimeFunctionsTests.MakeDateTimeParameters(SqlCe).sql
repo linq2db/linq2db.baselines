@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @year Int -- Int32
 SET     @year = 2010
 

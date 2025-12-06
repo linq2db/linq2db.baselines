@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"p".ID,
@@ -16,7 +15,6 @@ WHERE
 	"p"."GuidValue" = X'40932FDB15434E4AAC2CCA371604FB4B'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

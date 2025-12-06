@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p."Value1" IS NULL OR p."Value1" <> 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

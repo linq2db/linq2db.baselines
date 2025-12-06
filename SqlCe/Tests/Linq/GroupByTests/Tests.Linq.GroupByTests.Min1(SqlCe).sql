@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	MIN([t1].[ChildID]) as [MIN_1]
+	MIN([t1].[ChildID]) as [Min_1]
 FROM
 	[Child] [t1]
 

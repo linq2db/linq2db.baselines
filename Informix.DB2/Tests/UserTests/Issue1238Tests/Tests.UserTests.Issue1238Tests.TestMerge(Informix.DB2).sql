@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	InheritanceParent
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
@@ -38,7 +34,6 @@ VALUES
 	Source.Data_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -46,7 +41,6 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
@@ -78,7 +72,6 @@ VALUES
 	Source.Data_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -86,5 +79,3 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
-DisposeTransaction

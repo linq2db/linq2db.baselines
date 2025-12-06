@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	x.Id,
 	x.Country,
 	x.State
 FROM

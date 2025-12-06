@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	`t1`.`ParentID` = @ParentID AND `t1`.`ChildID` IS NULL
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000

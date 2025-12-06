@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
@@ -16,7 +15,6 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

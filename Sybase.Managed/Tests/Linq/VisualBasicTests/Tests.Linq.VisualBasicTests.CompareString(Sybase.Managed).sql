@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[s].[Id],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[s].[Id] = 3
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 200

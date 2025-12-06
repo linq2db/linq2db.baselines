@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `InsertIssueTest`
 (
+	`Pk`,
 	`ID`,
 	`intDataType`
 )
 SELECT
+	`t2`.`ID`,
 	123,
 	`t2`.`ID`
 FROM
@@ -20,17 +21,18 @@ FROM
 			1 = 0
 	) `t2`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @cond Int16
 SET     @cond = 1234
 
 INSERT INTO `InsertIssueTest`
 (
+	`Pk`,
 	`ID`,
 	`intDataType`
 )
 SELECT
+	`t2`.`ID`,
 	123,
 	`t2`.`ID`
 FROM
@@ -44,10 +46,10 @@ FROM
 			`t1`.`ID` = @cond
 	) `t2`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`Pk`,
 	`t1`.`ID`,
 	`t1`.`intDataType`
 FROM

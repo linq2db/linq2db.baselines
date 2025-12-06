@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @testValue  -- Int32
 SET     @testValue = 3
 

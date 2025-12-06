@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @VBLocal_id Integer -- Int32
 SET     @VBLocal_id = 1
 

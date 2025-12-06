@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 DELETE [p]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Parent]
@@ -23,7 +21,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -33,7 +30,6 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 DELETE [p]

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_2].[Id],
@@ -21,9 +18,6 @@ FROM
 WHERE
 	[d].[Id] % 2 = 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -34,9 +28,6 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -73,7 +64,6 @@ FROM
 				[d_1].[Id] = 1
 		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -92,9 +82,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -105,7 +92,6 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

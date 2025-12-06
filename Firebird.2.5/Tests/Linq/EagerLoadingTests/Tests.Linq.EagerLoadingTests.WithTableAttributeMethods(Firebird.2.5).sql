@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

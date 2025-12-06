@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -20,8 +19,7 @@ VALUES
 	@Age
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t`.`Id`,
@@ -33,8 +31,7 @@ WHERE
 	`t`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Name VarChar(5) -- String
@@ -55,8 +52,7 @@ VALUES
 	@Age
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t`.`Id`,

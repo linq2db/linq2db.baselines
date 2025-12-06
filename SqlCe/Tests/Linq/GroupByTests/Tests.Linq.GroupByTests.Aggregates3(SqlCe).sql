@@ -1,27 +1,26 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	COUNT(CASE
 		WHEN [g_1].[ChildID] > 30 THEN 1
 		ELSE NULL
-	END) as [COUNT_1],
+	END) as [Cnt],
 	SUM(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [SUM_1],
+	END) as [Sum_1],
 	MIN(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [MIN_1],
+	END) as [Min_1],
 	MAX(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [MAX_1],
+	END) as [Max_1],
 	AVG(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [AVG_1]
+	END) as [Avg_1]
 FROM
 	[Child] [g_1]
 WHERE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[r].[Id],
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

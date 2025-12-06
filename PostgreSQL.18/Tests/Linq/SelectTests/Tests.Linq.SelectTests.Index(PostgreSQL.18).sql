@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	m_2."ParentID",
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	m_2."ChildID" DESC
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

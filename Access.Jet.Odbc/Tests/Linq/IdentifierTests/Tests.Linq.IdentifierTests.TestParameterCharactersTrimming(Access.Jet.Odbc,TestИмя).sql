@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @TestИмя Int -- Int32
 SET     @TestИмя = 2
 

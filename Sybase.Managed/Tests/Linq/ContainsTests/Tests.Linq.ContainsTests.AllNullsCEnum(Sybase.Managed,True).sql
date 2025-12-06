@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[CEnum] IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

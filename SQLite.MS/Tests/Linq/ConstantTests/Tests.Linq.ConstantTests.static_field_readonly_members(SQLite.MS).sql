@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId  -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

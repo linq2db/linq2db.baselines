@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[ParentID],
@@ -18,7 +17,6 @@ FROM
 				[y].[ParentID] = [p].[ParentID]
 		)
 
-BeforeExecute
 -- SqlCe
 
 SELECT

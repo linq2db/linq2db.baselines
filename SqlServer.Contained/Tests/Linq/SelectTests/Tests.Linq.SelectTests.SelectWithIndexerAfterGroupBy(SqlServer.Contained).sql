@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[x].[Key_1],
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	[x].[Key_1] DESC
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

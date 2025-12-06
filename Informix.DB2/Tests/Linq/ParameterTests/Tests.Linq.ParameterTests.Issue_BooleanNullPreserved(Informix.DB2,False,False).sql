@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO TestBool
 (
@@ -12,7 +11,6 @@ VALUES
 	't'::BOOLEAN
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -21,20 +19,17 @@ SELECT FIRST 2
 FROM
 	TestBool t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
 	TestBool t1
 SET
-	Id = 1,
 	"Value" = CASE
 		WHEN NOT t1."Value" THEN 't'::BOOLEAN
 		WHEN t1."Value" THEN 'f'::BOOLEAN
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -43,7 +38,6 @@ SELECT FIRST 2
 FROM
 	TestBool t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
@@ -52,7 +46,6 @@ SET
 	Id = 1,
 	"Value" = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

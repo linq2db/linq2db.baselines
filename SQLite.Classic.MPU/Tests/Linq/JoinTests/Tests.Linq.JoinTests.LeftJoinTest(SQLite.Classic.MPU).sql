@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[p1].[FirstName],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp VarChar(23) -- AnsiString

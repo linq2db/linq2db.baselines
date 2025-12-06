@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
 FROM
 	`LinqDataTypes` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @param Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = `t1`.`BigIntValue`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

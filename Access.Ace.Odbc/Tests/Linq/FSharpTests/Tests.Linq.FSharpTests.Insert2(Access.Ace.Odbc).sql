@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

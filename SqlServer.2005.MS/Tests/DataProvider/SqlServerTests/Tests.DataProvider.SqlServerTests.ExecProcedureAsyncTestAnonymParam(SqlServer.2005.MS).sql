@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+-- SqlServer.2005.MS SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'
 DECLARE @LastName NVarChar(4000) -- String
@@ -19,7 +17,6 @@ SET     @Gender = N'M'
 
 [TestDataMS]..[Person_Insert]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'

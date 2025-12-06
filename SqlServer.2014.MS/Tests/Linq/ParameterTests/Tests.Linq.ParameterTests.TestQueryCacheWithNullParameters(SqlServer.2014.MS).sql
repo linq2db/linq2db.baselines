@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1

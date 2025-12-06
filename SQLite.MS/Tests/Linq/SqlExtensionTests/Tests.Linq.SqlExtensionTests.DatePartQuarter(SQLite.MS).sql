@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	(Cast(strFTime('%m', [t].[DateTimeValue]) as int) - 1) / 3 + 1

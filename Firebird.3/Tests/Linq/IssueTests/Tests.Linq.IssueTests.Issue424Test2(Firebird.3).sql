@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 DECLARE @take Integer -- Int32
@@ -20,7 +19,6 @@ ORDER BY
 	"t2"."ParentID"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

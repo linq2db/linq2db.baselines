@@ -1,16 +1,11 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -18,7 +13,6 @@ SELECT
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM

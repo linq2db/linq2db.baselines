@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -10,7 +9,6 @@ ORDER BY
 	t1."ChildID"
 LIMIT 5 OFFSET 3 
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

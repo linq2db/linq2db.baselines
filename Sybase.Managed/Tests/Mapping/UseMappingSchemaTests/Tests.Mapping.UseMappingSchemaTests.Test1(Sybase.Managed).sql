@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[Field1],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

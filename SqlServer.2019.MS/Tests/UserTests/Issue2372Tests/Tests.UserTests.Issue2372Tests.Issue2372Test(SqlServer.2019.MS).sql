@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [InventoryResource]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'

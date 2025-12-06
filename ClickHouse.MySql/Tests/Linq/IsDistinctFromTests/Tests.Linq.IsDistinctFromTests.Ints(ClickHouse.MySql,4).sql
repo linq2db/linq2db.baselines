@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s.Int <> 4
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	s.NullableInt IS NULL OR s.NullableInt <> 4
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	s.Int = 4
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

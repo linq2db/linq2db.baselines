@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`PersonID`,
@@ -13,9 +10,6 @@ SELECT
 FROM
 	`Person` `m_1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -25,9 +19,6 @@ FROM
 GROUP BY
 	`t1`.`PersonID`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -40,9 +31,6 @@ SELECT
 FROM
 	`Person` `m_1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

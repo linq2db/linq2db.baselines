@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str NChar(5) -- StringFixedLength

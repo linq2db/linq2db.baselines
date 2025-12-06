@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @NVarChar NVarChar -- String
 SET     @NVarChar = Tests.Linq.ParameterTests+NVarChar
 
@@ -12,7 +11,6 @@ VALUES
 	@NVarChar
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @p NVarChar -- String
 SET     @p = Tests.Linq.ParameterTests+NVarChar

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param_1 Decimal(2, 0)

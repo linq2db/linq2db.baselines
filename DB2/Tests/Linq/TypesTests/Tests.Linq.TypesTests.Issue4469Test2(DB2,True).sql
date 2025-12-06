@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	Decimal("v"."Integer", 18, 10) / 33,

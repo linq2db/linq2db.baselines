@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @skip Int -- Int32
 SET     @skip = 1

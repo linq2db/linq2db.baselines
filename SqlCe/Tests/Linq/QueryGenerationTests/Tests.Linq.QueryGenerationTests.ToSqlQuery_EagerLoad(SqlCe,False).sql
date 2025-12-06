@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 2

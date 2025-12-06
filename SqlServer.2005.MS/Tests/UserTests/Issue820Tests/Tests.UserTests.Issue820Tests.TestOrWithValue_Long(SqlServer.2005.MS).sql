@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @param BigInt -- Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

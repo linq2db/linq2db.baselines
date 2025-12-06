@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 DECLARE @skip  -- Int32
@@ -53,7 +52,6 @@ FROM
 	) [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

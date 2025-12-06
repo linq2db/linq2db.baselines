@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT TOP (50) PERCENT WITH TIES
 	[t1].[FirstName],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	toDecimal128(toDecimal128('6579.64648', 10), 10)
@@ -7,7 +6,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -25,7 +22,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -34,7 +30,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -43,7 +38,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -52,7 +46,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -61,7 +54,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -70,7 +62,6 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

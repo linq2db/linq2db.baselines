@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
 
@@ -12,8 +11,7 @@ WHERE
 	c_1."ParentID" = :p
 FETCH NEXT :p ROWS ONLY
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 2
 

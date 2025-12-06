@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	MAX([p].[PersonID])
 FROM
 	[Person] [p]
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)

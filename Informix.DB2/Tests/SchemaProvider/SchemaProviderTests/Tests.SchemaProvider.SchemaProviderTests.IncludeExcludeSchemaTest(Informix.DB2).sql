@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 
 				SELECT
@@ -13,7 +12,6 @@
 				WHERE
 					tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -40,7 +38,6 @@ BeforeExecute
 							JOIN sysindexes x ON t.tabid = x.tabid
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -54,7 +51,6 @@ BeforeExecute
 						JOIN syscolumns c ON t.tabid = c.tabid
 					WHERE t.tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -106,7 +102,6 @@ BeforeExecute
 									JOIN sysindexes ox ON oc.tabid   = ox.tabid AND oc.idxname = ox.idxname
 									JOIN systables  ot ON oc.tabid   = ot.tabid
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -121,7 +116,6 @@ BeforeExecute
 				WHERE
 					tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -148,7 +142,6 @@ BeforeExecute
 							JOIN sysindexes x ON t.tabid = x.tabid
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -162,7 +155,6 @@ BeforeExecute
 						JOIN syscolumns c ON t.tabid = c.tabid
 					WHERE t.tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -214,7 +206,6 @@ BeforeExecute
 									JOIN sysindexes ox ON oc.tabid   = ox.tabid AND oc.idxname = ox.idxname
 									JOIN systables  ot ON oc.tabid   = ot.tabid
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -229,7 +220,6 @@ BeforeExecute
 				WHERE
 					tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -256,7 +246,6 @@ BeforeExecute
 							JOIN sysindexes x ON t.tabid = x.tabid
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -270,7 +259,6 @@ BeforeExecute
 						JOIN syscolumns c ON t.tabid = c.tabid
 					WHERE t.tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 

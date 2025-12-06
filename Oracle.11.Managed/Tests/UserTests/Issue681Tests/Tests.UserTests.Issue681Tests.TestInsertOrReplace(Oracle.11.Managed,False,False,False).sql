@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 5
 DECLARE @Value Int32
@@ -26,7 +25,6 @@ WHEN NOT MATCHED THEN
 		:Value
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 5

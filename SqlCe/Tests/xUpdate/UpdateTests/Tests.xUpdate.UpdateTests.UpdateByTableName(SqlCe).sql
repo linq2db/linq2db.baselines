@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [xxPerson]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   Int            NOT NULL IDENTITY,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     NChar(1)       NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY ([PersonID])
-)
-
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -43,15 +23,13 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -63,7 +41,6 @@ SELECT TOP (2)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
@@ -86,7 +63,6 @@ SET
 WHERE
 	[xxPerson].[PersonID] = @ID
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -97,9 +73,4 @@ SELECT TOP (2)
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [xxPerson]
 

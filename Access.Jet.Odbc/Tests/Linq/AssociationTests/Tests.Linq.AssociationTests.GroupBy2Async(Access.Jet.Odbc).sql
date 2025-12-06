@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(Unspecified)
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[ParentID],
@@ -20,8 +17,7 @@ FROM
 WHERE
 	[m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[a_Parent1].[ParentID]
@@ -31,5 +27,3 @@ FROM
 GROUP BY
 	[a_Parent1].[ParentID]
 
-BeforeExecute
-DisposeTransactionAsync

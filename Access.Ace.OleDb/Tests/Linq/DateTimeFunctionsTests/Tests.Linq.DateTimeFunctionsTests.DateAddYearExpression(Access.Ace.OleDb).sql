@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Value Integer -- Int32
 SET     @Value = 11
 

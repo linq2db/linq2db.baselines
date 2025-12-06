@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @CharFld WChar(1) -- StringFixedLength
 SET     @CharFld = 'P'
 
@@ -12,7 +11,6 @@ VALUES
 	@CharFld
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1

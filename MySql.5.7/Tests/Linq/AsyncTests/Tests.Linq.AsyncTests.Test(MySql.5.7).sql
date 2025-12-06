@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`ParentID`,
@@ -7,8 +6,7 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`ParentID`,

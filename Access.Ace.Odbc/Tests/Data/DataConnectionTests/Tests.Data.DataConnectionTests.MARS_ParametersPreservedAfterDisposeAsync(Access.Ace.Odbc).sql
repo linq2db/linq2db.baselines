@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @param NVarChar(4) -- String
 SET     @param = 'test'
 

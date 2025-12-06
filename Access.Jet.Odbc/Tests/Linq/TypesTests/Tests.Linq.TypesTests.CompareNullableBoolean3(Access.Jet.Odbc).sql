@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = False
 

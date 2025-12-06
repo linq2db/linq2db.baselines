@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t1"."FirstName",
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	CHAR_LENGTH("t1"."FirstName") > 1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

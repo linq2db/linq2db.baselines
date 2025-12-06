@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data Text(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	:Data
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -27,7 +25,6 @@ FROM
 ORDER BY
 	r."ID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

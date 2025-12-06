@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[FirstName],
@@ -15,9 +12,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[FirstName] = [d].[FirstName]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Issue1403Tests_3"
 (
@@ -12,7 +11,6 @@ VALUES
 	'New event'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

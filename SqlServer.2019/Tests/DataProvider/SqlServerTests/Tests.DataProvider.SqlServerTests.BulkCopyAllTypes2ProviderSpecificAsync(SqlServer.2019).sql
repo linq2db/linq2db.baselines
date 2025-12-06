@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [p]
 FROM
@@ -7,10 +6,8 @@ FROM
 WHERE
 	[p].[ID] >= 3
 
-BeforeExecute
 INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

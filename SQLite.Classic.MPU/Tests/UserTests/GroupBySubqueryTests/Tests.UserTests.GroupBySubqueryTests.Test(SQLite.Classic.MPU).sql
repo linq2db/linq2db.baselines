@@ -1,69 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeA]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeB]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeA]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeB]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeA]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeB]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeA]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE [TypeB]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -79,7 +14,6 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

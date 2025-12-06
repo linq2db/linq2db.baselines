@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.FirstName,
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe') n ON p.LastName = n.item
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

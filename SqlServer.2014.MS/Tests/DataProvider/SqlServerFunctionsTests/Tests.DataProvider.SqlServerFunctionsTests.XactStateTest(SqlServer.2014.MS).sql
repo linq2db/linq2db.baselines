@@ -1,14 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	XACT_STATE()
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

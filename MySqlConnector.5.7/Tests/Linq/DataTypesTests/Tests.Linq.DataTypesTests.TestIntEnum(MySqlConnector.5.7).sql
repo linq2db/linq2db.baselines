@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Column Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int32
@@ -14,7 +13,6 @@ FROM
 WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	`r`.`Column` = 2 AND `r`.`ColumnNullable` = 3
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
 	`IntEnumTable`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
 	`IntEnumTable`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `IntEnumTable`
@@ -109,7 +101,6 @@ VALUES
 (1,1,NULL),
 (2,2,3)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -121,17 +112,14 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
 	`IntEnumTable`
 
-BeforeExecute
 INSERT BULK `IntEnumTable`(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

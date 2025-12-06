@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -26,7 +24,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -48,7 +45,6 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT

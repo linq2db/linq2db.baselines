@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Type Int32
@@ -28,8 +27,7 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Type`,
@@ -41,8 +39,7 @@ FROM
 	`Base2` `t1`
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Type Int32
 SET     @Type = 1
 DECLARE @ChildId Int32
@@ -64,8 +61,7 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Type`,

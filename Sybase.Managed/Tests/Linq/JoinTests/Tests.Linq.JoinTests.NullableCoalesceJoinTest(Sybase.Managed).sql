@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE #tmptbl1
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO #tmptbl1
@@ -18,16 +18,16 @@ INSERT INTO #tmptbl1
 SELECT 1,'Value1' UNION ALL
 SELECT 2,NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE #tmptbl2
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255) NOT NULL
+	[Value] NVarChar(255) NOT NULL,
+
+	CONSTRAINT [PK_tmptbl2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO #tmptbl2
@@ -38,16 +38,16 @@ INSERT INTO #tmptbl2
 SELECT 1,'Value1' UNION ALL
 SELECT 3,'Value2'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE #tmptbl3
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl3] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO #tmptbl3
@@ -58,7 +58,6 @@ INSERT INTO #tmptbl3
 SELECT 1,'Value1' UNION ALL
 SELECT 2,NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -69,7 +68,6 @@ FROM
 		LEFT JOIN #tmptbl2 [t3] ON [t2].[ID] = [t3].[ID]
 		LEFT JOIN #tmptbl3 [t4] ON Coalesce([t3].[Value], [t2].[Value]) = [t4].[Value] OR [t3].[Value] IS NULL AND [t2].[Value] IS NULL AND [t4].[Value] IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -78,7 +76,6 @@ SELECT
 FROM
 	#tmptbl1 [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -87,7 +84,6 @@ SELECT
 FROM
 	#tmptbl2 [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -96,19 +92,16 @@ SELECT
 FROM
 	#tmptbl3 [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#tmptbl3') IS NOT NULL)
 	DROP TABLE #tmptbl3
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#tmptbl2') IS NOT NULL)
 	DROP TABLE #tmptbl2
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#tmptbl1') IS NOT NULL)

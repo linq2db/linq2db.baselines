@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	[s].[NullableInt] IS NOT NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -26,7 +23,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

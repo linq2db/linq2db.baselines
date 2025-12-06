@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[InterceptorsTestsTable]
 (
 	[ID] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT
 )
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[InterceptorsTestsTable]
 (
@@ -18,13 +16,11 @@ VALUES
 	1
 )
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[InterceptorsTestsTable]
 

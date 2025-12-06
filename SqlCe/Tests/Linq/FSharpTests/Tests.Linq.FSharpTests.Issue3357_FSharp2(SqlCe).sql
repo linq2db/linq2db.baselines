@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[PersonID] as [ID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT

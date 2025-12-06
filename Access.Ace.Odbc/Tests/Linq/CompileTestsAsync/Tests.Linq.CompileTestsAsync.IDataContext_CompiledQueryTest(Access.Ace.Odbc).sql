@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[FirstName],
@@ -12,8 +11,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[FirstName],

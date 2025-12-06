@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	IIF([t2].[x] < 0, 9, [t2].[x] + 8),

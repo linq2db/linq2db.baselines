@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 
@@ -25,12 +22,10 @@ SELECT
 FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 select hostName()
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 select database()

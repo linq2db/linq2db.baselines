@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(c_1.ParentID)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	c_1.ParentID = 1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(c_1.ParentID)

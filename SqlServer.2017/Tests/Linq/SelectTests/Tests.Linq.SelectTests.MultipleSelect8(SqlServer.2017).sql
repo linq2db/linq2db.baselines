@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	([p2].[PersonID] * 2) / 2,

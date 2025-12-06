@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -8,8 +7,7 @@ DELETE FROM
 WHERE
 	t1."ParentID" = :ParentID
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -26,8 +24,7 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -38,8 +35,7 @@ FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -48,8 +44,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 

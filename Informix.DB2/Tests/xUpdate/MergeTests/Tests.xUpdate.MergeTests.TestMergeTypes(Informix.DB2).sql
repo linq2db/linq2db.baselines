@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	TestMerge1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	TestMerge2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -74,7 +71,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -138,7 +134,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -202,7 +197,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -266,7 +260,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -330,7 +323,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -394,7 +386,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
@@ -458,7 +449,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
@@ -522,7 +512,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -545,7 +534,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

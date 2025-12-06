@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Value1 Integer(4) -- Int32
 SET     @Value1 = 100
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	Coalesce("x"."Value1", CAST(@Value1 AS Int)) > 10
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

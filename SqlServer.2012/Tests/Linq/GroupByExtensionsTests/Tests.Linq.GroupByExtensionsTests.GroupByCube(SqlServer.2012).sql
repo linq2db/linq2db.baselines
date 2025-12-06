@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	GROUPING([g_2].[Id1]),

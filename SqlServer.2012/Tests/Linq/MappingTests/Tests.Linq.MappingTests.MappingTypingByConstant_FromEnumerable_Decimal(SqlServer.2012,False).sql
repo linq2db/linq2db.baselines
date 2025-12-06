@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[arg].[Id],
@@ -10,7 +9,6 @@ FROM
 			(1,CAST(1 AS Decimal(1, 0)))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

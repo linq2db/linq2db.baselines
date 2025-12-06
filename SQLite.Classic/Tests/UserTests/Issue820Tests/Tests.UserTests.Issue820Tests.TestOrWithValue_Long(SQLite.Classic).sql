@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @param  -- Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

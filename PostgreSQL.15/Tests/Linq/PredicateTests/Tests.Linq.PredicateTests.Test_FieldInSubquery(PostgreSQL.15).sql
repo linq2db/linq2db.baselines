@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Id",
@@ -17,7 +16,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -29,7 +27,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,7 +45,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -60,7 +56,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -79,7 +74,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -91,7 +85,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -112,7 +105,6 @@ WHERE
 			r."Value5" = r_1."Value4" OR r."Value5" IS NULL AND r_1."Value4" IS NULL
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -124,7 +116,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -143,7 +134,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -155,7 +145,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -174,7 +163,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -186,7 +174,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -205,7 +192,6 @@ WHERE
 			"BooleanTable" r_1
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -217,7 +203,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -238,7 +223,6 @@ WHERE
 			r."Value5" = r_1."Value4" OR r."Value5" IS NULL AND r_1."Value4" IS NULL
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO CreateTableTypes
 (
@@ -12,7 +11,6 @@ VALUES
 	''
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO CreateTableTypes
@@ -26,7 +24,6 @@ VALUES
 	'test 10'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 WChar(5) -- StringFixedLength

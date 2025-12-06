@@ -1,5 +1,6 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @Pk Int32
+SET     @Pk = 1
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -7,34 +8,17 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO `Issue1096Task`
 (
+	`Pk`,
 	`Id`,
 	`TargetName`
 )
 VALUES
 (
+	@Pk,
 	@Id,
 	@TargetName
 )
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @TargetName VarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO `Issue1096Task`
-(
-	`Id`,
-	`TargetName`
-)
-VALUES
-(
-	@Id,
-	@TargetName
-)
-
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -56,10 +40,10 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT DISTINCT
+	`t`.`Pk`,
 	`t`.`Id`,
 	`t`.`TargetName`,
 	`a_ActualStage`.`Id`,

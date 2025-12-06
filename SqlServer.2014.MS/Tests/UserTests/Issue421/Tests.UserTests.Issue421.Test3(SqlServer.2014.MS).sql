@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(100) -- Binary
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (1)
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (1)

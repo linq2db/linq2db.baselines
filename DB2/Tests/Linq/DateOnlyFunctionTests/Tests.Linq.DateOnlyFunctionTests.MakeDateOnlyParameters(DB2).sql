@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @year Integer(4) -- Int32
 SET     @year = 2010
 

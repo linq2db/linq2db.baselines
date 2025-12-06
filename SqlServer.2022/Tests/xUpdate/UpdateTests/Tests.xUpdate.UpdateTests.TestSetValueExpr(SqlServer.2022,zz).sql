@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'zz'
 DECLARE @id Int -- Int32
@@ -13,7 +12,6 @@ SET
 WHERE
 	[TextData].[Id] >= @id
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

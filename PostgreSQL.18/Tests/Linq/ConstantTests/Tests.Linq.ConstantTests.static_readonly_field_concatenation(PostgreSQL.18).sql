@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	e."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	e."StringValue" || '1' = 'StrValue1'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

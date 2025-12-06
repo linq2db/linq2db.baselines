@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[s].[Int] <> @value
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 4
@@ -22,7 +20,6 @@ FROM
 WHERE
 	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 4
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[s].[Int] = @value
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @value Integer -- Int32
 SET     @value = 4

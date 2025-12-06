@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	'[{"Value":"Value1"}]' = m_1.Value2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

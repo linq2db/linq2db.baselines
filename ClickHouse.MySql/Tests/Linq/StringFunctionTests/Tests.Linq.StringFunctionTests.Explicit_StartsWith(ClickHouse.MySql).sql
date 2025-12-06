@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	startsWith(r.Diagnosis, 'Hall')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	startsWith(r.Diagnosis, 'hall')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	startsWith(lowerUTF8(r.Diagnosis), 'hall')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

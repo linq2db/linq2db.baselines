@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p  -- Int64
 SET     @p = 1
 DECLARE @endId  -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @startId  -- Int32
 SET     @startId = 1

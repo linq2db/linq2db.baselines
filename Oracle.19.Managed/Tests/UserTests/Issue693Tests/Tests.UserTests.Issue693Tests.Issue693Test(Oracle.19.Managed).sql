@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
@@ -58,7 +56,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id1 Int32
 SET     @id1 = 5
@@ -75,7 +72,6 @@ WHERE
 	t1."PersonID" = :id1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id2 Int32
 SET     @id2 = 6

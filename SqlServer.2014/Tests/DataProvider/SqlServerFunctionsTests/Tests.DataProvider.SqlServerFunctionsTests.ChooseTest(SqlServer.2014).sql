@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @b NVarChar(4000) -- String
 SET     @b = N'B'
 

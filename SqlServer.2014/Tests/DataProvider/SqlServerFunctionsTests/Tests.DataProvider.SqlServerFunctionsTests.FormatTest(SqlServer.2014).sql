@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	FORMAT(123456789, N'###-##-####')

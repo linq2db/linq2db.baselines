@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT DISTINCT
 	Coalesce("p"."Value1", MOD("p"."ParentID", 2))

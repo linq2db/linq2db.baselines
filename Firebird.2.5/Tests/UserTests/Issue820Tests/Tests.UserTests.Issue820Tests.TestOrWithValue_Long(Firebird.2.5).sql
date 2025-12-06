@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @param BigInt -- Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = "t1"."BigIntValue"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[PersonID],
@@ -13,9 +10,6 @@ SELECT
 FROM
 	[Person] [m_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -25,9 +19,6 @@ FROM
 GROUP BY
 	[t1].[PersonID]
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -40,9 +31,6 @@ SELECT
 FROM
 	[Person] [m_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,12 +1,12 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TABLE IF NOT EXISTS `DisposableTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_DisposableTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `DisposableTable`

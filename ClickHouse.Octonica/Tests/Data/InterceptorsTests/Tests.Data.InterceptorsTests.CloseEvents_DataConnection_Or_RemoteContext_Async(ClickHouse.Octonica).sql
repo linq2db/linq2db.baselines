@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,

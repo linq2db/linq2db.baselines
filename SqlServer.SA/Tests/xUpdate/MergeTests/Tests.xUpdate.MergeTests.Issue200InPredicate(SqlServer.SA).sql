@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @datetime2DataType DateTime2
 SET     @datetime2DataType = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
@@ -39,7 +35,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -51,5 +46,3 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
-DisposeTransaction

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 1234

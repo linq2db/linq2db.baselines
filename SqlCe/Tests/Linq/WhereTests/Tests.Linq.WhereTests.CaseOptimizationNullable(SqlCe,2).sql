@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @filterValue Int -- Int32
 SET     @filterValue = 2
 

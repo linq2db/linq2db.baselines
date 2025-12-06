@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Issue4460Table`
 (
@@ -11,7 +10,6 @@ INSERT INTO `Issue4460Table`
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

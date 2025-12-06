@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2564Table"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE TABLE "Issue2564Table"
@@ -26,7 +24,6 @@ CREATE TABLE "Issue2564Table"
 	CONSTRAINT "PK_Issue2564Table" PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @from_1 TimeStamp -- DateTime
 SET     @from_1 = TIMESTAMP '2020-02-28 17:54:55.123123'
@@ -38,7 +35,7 @@ SELECT
 	tgGroup_1."TranslatedMessageGroup",
 	tgGroup_1."Hour_1",
 	COUNT(*),
-	SUM(1000 * (EXTRACT(SECOND FROM CAST (tgGroup_1."cond" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (tgGroup_1."cond" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (tgGroup_1."cond" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (tgGroup_1."cond" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP))))))
+	SUM(1000 * (EXTRACT(SECOND FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP))))))
 FROM
 	(
 		SELECT
@@ -47,7 +44,7 @@ FROM
 			EXTRACT(HOUR FROM tgGroup."TimestampGenerated") as "Hour_1",
 			tgGroup."TranslatedMessage1",
 			tgGroup."TimestampGenerated",
-			tgGroup."TimestampGone" as "cond"
+			tgGroup."TimestampGone"
 		FROM
 			"Issue2564Table" tgGroup
 		WHERE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @DurationID  -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @personId  -- Int32
 SET     @personId = 1

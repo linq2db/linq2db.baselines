@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @FirstName Text(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Text(4) -- String
@@ -26,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -41,8 +39,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @FirstName Text(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Text(4) -- String
@@ -64,8 +61,7 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -79,8 +75,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

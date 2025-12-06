@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID]
 OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

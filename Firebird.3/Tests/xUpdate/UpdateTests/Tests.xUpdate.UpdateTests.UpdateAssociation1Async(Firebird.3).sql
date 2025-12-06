@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Parent"
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 INSERT INTO "Child"
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 UPDATE
 	"Parent"

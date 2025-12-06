@@ -1,7 +1,6 @@
-﻿BeginTransactionAsync(RepeatableRead)
+﻿
 
-
--- PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ProductId",
@@ -31,7 +30,7 @@ FROM
 
 
 
--- PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."OrderID",
@@ -59,10 +58,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."IsDeleted",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
 	[TableWithData]
@@ -20,7 +19,6 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

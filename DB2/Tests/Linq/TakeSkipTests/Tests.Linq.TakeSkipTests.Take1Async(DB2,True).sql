@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"ch"."ParentID",
@@ -8,7 +7,6 @@ FROM
 	"Child" "ch"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -18,8 +16,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT 3 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"ch"."ParentID",
@@ -28,8 +25,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"ch"."ParentID",

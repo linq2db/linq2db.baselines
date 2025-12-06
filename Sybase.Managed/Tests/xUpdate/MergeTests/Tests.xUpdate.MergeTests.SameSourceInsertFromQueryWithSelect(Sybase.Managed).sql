@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -31,7 +29,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -57,7 +54,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -83,7 +79,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -109,14 +104,12 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge2]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -142,7 +135,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -168,7 +160,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -194,7 +185,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
@@ -220,7 +210,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
@@ -257,7 +246,6 @@ VALUES
 	[Source].[Field4]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

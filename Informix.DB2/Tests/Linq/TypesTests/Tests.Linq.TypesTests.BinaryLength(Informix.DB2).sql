@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = {1,2,3,4,5}
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -20,7 +18,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL

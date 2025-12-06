@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"p"."ParentID",
@@ -17,7 +16,6 @@ FROM
 WHERE
 	"p_1"."ParentID" = 2
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

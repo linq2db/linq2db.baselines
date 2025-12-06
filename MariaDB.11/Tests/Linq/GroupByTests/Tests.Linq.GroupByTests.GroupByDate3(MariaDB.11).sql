@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
@@ -16,8 +15,7 @@ FROM
 GROUP BY
 	`grp_1`.`Date_1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	SUM(`grp_1`.`MoneyValue`),

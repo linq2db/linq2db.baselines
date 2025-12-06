@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS InventoryResource
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO InventoryResource

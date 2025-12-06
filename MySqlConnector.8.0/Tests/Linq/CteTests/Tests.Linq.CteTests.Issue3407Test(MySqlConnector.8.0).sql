@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 WITH `CTE_1`
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	`r`.`ID` = 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 WITH `CTE_1` (`c1`)

@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -17,7 +15,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "Issue681Table2"
@@ -28,7 +25,6 @@ CREATE TABLE "Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DROP TABLE "Issue681Table2"@"free"

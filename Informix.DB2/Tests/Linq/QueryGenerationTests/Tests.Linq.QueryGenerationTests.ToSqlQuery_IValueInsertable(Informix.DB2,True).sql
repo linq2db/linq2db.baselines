@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO TableWithIdentity
 (
@@ -10,7 +9,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

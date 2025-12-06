@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 TRUNCATE TABLE test_temp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO test_temp
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO test_temp
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
@@ -40,12 +36,10 @@ FROM
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 TRUNCATE TABLE test_temp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO test_temp
@@ -57,7 +51,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO test_temp
@@ -69,7 +62,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1

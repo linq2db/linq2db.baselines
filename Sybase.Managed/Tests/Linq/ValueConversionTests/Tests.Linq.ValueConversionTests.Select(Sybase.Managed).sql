@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	[t].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	[t2].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

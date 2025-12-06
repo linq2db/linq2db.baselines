@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[x].[ParentID],
@@ -55,7 +54,6 @@ WHERE
 		ELSE 1
 	END = 1
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

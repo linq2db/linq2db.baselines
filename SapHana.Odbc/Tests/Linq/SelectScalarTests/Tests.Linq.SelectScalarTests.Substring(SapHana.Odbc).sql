@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @p Int -- Int32
-SET     @p = 2
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Substring('123', 2, ?)
+	Substring('123', 2, 2)
 FROM DUMMY
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 226
 
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"LinqDataTypes" t
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

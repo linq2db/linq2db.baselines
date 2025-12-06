@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
@@ -18,8 +17,7 @@ VALUES
 ON CONFLICT ("ID") DO UPDATE SET
 	"Value" = :Value
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32

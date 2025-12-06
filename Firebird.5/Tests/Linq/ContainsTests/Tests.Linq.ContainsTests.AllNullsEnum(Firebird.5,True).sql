@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"s"."Enum" IS NULL
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

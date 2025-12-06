@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -16,8 +15,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", True)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -32,8 +30,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -50,8 +47,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", False)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -66,8 +62,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -84,8 +79,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 3
 

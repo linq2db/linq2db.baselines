@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName NVarChar(3) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5

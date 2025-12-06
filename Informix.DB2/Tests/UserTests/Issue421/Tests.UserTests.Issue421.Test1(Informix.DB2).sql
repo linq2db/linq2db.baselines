@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	t1.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = {3,2,1}
@@ -39,7 +36,6 @@ SET
 WHERE
 	t1.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1

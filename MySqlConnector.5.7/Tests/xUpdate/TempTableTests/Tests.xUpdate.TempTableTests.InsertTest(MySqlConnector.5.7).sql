@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `Table2`
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	`Table1` `t`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."Id",
@@ -10,7 +9,6 @@ WHERE
 	p."Text" IS NULL OR LTRIM(p."Text", '	
                  　') IS NULL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

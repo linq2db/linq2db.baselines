@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[m_1].[Id],
@@ -33,9 +30,6 @@ FROM
 				[d].[Id]
 		) [d_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -44,9 +38,6 @@ SELECT
 FROM
 	[SampleClass1] [t1]
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -79,9 +70,6 @@ FROM
 				[d].[Id]
 		) [d_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

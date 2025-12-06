@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO Parent
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Child
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Child
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -55,7 +51,6 @@ WHERE
 			Child.ChildID = a_Children.ChildID
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -63,7 +58,6 @@ DELETE FROM
 WHERE
 	Child.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

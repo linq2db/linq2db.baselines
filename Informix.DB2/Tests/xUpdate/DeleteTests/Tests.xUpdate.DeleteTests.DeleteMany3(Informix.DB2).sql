@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	GrandChild
 WHERE
 	GrandChild.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -14,7 +12,6 @@ DELETE FROM
 WHERE
 	Child.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -22,7 +19,6 @@ DELETE FROM
 WHERE
 	Parent.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Parent
@@ -34,7 +30,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Child
@@ -48,7 +43,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO GrandChild
@@ -64,7 +58,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO GrandChild
@@ -80,7 +73,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -101,7 +93,6 @@ WHERE
 			GrandChild.GrandChildID = a_GrandChildren.GrandChildID
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -109,7 +100,6 @@ DELETE FROM
 WHERE
 	GrandChild.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -117,7 +107,6 @@ DELETE FROM
 WHERE
 	Child.ParentID >= 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[c_1].[ParentID],
@@ -22,7 +21,6 @@ WHERE
 			[param].[ParentID] = [c_1].[ParentID] AND [param].[Value_1] = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

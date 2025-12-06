@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+﻿-- SqlServer.2014
 
 UPDATE
 	[t]
@@ -21,7 +20,6 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

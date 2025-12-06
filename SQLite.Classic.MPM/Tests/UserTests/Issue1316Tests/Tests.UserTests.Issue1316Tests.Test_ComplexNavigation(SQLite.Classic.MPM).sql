@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
 
@@ -12,7 +11,6 @@ VALUES
 	@ID
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 5
@@ -25,7 +23,6 @@ WHERE
 	[t1].[ID] = @p
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 5

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -14,8 +13,7 @@ VALUES
 	@id
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -26,8 +24,7 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @id
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -45,8 +42,7 @@ WHERE
 	`c_1`.`ParentID` = `c_2`.`ParentID` AND
 	`c_1`.`ChildID` = `c_2`.`ChildID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 1002
 

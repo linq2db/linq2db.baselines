@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @value BigInt -- Int64
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648

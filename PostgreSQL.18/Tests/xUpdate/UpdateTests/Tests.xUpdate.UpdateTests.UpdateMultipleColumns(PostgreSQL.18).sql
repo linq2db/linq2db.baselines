@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Numeric(4, 0) -- Decimal
@@ -20,7 +19,6 @@ VALUES
 	:SmallIntValue
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @value Date -- DateTime
 SET     @value = #2001-01-11 01:11:21#
 

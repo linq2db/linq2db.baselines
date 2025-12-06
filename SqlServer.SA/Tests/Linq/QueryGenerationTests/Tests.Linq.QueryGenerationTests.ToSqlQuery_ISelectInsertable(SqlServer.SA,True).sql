@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 INSERT INTO [TableWithIdentity]
@@ -24,7 +22,6 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

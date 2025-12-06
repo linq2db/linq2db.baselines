@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @ID_1 Int -- Int32

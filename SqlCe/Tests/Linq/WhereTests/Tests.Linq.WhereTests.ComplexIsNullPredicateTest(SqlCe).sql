@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[r].[Id],
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 UPDATE
@@ -21,7 +19,6 @@ WHERE
 	p."ParentID" = 1 AND "Parent"."ParentID" = p."ParentID" AND
 	("Parent"."Value1" = p."Value1" OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1

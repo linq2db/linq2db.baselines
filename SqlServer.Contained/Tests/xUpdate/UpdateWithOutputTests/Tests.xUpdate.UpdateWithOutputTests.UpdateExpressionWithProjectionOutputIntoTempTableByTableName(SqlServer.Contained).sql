@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 UPDATE
@@ -31,7 +31,6 @@ FROM
 	[TableWithData_source] [s]
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -41,7 +40,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]

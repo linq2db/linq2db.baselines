@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	([p2].[PersonID] * 2) / 2,

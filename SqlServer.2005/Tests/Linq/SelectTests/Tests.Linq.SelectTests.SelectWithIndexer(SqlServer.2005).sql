@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[x].[FirstName],
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	[x].[PersonID] DESC
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

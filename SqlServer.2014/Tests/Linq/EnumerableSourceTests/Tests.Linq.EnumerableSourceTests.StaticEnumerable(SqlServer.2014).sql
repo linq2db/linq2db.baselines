@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[p].[FirstName],
@@ -21,7 +20,6 @@ WHERE
 			[v].[item] = [p].[PersonID]
 	)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

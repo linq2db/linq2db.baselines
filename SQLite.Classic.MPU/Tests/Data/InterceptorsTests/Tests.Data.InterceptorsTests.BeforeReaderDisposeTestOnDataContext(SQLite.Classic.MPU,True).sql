@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -10,8 +9,7 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],

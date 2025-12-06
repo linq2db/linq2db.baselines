@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
@@ -26,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
@@ -54,8 +52,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
 
@@ -71,8 +68,7 @@ WHERE
 	t1."PersonID" = :id1
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 6
 

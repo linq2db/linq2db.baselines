@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
 	`billing_TempReading` `tr`
@@ -8,7 +7,6 @@ SET
 	`tr`.`DevReadingTypeId` = `drt`.`Id`,
 	`tr`.`Responsibility` = `drt`.`Responsibility`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE

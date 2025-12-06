@@ -1,11 +1,7 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT Max(`PersonID`) FROM `Person`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Person`
@@ -23,5 +19,3 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
-BeforeExecute
-DisposeTransaction

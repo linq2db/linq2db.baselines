@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 226
 
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"LinqDataTypes" t
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

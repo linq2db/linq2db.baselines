@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	COUNT(*)
@@ -14,7 +13,6 @@ WHERE
 			[r].[One]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -30,7 +28,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -46,7 +43,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -62,7 +58,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -78,7 +73,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -94,7 +88,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -110,7 +103,6 @@ WHERE
 			[r].[One]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -126,7 +118,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -142,7 +133,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -158,7 +148,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -174,7 +163,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

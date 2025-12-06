@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"s"."Id"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"s"."Enum" IN ('THREE', NULL)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -28,7 +25,6 @@ FROM
 WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -38,7 +34,6 @@ FROM
 WHERE
 	"s"."Enum" NOT IN (NULL, 'TWO')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

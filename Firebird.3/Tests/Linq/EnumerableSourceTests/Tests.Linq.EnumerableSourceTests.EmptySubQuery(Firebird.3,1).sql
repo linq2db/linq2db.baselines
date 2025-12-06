@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"t"."Id",
@@ -11,7 +10,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL "Id", NULL "Value" FROM rdb$database WHERE 1 = 0) "r"
+			(SELECT CAST(NULL AS Int) "Id", CAST(NULL AS VARCHAR(1)) "Value" FROM rdb$database WHERE 1 = 0) "r"
 		WHERE
 			"t"."Id" = "r"."Id" AND ("t"."Value" = "r"."Value" OR "t"."Value" IS NULL AND "r"."Value" IS NULL)
 	)

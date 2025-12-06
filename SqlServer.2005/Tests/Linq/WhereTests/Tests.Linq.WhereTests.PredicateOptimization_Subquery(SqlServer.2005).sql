@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -22,12 +22,12 @@ WHERE
 				SELECT [p].[Date3]
 				UNION ALL
 				SELECT [p].[Date4]) [t1]
-	) > CAST('2023-01-01T00:00:00.000' AS DATETIME)
+	) > CAST('2023-01-01' AS DateTime)
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

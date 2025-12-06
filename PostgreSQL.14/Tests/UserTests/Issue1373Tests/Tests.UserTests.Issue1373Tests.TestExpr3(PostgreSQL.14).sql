@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
@@ -14,8 +13,7 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
@@ -30,8 +28,7 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
 
@@ -46,8 +43,7 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

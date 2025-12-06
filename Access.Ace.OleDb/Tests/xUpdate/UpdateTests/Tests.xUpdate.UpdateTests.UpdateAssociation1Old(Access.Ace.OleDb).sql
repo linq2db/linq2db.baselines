@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [Parent]
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [Child]
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 UPDATE

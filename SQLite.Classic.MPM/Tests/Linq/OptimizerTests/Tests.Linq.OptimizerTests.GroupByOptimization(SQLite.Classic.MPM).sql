@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[s].[Key1],
@@ -11,7 +10,7 @@ SELECT
 	[s].[DataKey32],
 	[s].[DataKey33],
 	[s].[ValueStr],
-	[u].[Count_1],
+	[u].[UCount],
 	[nu].[Count_1]
 FROM
 	[SecondOptimizerData] [s]
@@ -21,7 +20,7 @@ FROM
 				[g_1].[DataKey22],
 				[g_1].[Key1],
 				[g_1].[Key2],
-				COUNT(*) as [Count_1]
+				COUNT(*) as [UCount]
 			FROM
 				[FirstOptimizerData] [g_1]
 			GROUP BY
@@ -43,7 +42,6 @@ FROM
 				[g_2].[DataKey22]
 		) [nu] ON [nu].[DataKey21] = [s].[DataKey21] AND [nu].[DataKey21] = [s].[DataKey22]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

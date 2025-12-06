@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @p1 Integer(4) -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Integer(4) -- Int32
@@ -260,7 +257,6 @@ VALUES
 (@p97,@p98),
 (@p99,@p100)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p1 Integer(4) -- Int32
 SET     @p1 = 111051
@@ -520,7 +516,6 @@ VALUES
 (@p97,@p98),
 (@p99,@p100)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p1 Integer(4) -- Int32
 SET     @p1 = 111101
@@ -775,7 +770,6 @@ VALUES
 (@p95,@p96),
 (@p97,@p98)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 111001
@@ -789,5 +783,3 @@ FROM
 WHERE
 	"r"."ParentID" >= @ParentID AND "r"."ParentID" <= @ParentID_1
 
-BeforeExecute
-DisposeTransaction

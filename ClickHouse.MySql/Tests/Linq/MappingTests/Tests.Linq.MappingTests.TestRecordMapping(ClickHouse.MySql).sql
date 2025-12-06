@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Record
 (
@@ -14,7 +13,6 @@ VALUES
 	'One'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Record
@@ -30,7 +28,6 @@ VALUES
 	'Two'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

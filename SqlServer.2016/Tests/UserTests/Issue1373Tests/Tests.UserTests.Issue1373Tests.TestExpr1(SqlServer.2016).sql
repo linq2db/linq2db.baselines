@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 INSERT INTO [Issue1373Tests]
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [Issue1373Tests]
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [Issue1373Tests]
@@ -40,7 +37,6 @@ VALUES
 	N'test'
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

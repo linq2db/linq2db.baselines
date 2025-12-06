@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @String VarChar -- String
@@ -16,8 +15,7 @@ VALUES
 	@String
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @String VarChar(9) -- String
@@ -34,8 +32,7 @@ VALUES
 	@String
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @cond  -- Int32
 SET     @cond = 5
 DECLARE @cond_1  -- Int32

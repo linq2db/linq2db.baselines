@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -18,5 +16,4 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

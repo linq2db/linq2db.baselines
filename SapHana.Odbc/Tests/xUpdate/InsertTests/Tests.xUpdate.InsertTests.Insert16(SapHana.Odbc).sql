@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	"t1"."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

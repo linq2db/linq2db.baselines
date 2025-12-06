@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	c_1."ParentID",
@@ -14,7 +13,6 @@ WHERE
 			"Parent" p
 	)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

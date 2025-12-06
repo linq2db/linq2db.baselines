@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -18,5 +16,4 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

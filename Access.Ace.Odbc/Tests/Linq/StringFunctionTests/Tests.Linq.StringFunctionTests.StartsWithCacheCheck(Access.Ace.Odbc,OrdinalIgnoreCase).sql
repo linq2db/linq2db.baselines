@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE ? AND [p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

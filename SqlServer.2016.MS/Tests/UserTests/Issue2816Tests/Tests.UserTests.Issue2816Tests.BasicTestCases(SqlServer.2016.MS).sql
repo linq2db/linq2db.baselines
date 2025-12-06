@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[p].[Id],
@@ -10,7 +9,6 @@ WHERE
 	[p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
                  　]%'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

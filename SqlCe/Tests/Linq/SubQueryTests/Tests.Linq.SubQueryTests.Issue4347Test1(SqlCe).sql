@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[m_1].[Id],
@@ -9,36 +6,28 @@ SELECT
 	[d].[Amount],
 	[d].[Currency]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[Id]
+	[TransactionEntity] [m_1]
+		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
+WHERE
+	EXISTS(
+		SELECT
+			*
 		FROM
-			[TransactionEntity] [x]
+			[LineEntity] [a_Lines]
 		WHERE
-			EXISTS(
+			[m_1].[Id] = [a_Lines].[TransactionId] AND EXISTS(
 				SELECT
 					*
 				FROM
-					[LineEntity] [a_Lines]
+					(
+						SELECT 'A' AS [item]
+						UNION ALL
+						SELECT 'B' AS [item]) [t1]
 				WHERE
-					[x].[Id] = [a_Lines].[TransactionId] AND EXISTS(
-						SELECT
-							*
-						FROM
-							(
-								SELECT 'A' AS [item]
-								UNION ALL
-								SELECT 'B' AS [item]) [t1]
-						WHERE
-							[a_Lines].[Currency] = [t1].[item] OR [a_Lines].[Currency] IS NULL AND [t1].[item] IS NULL
-					)
+					[a_Lines].[Currency] = [t1].[item] OR [a_Lines].[Currency] IS NULL AND [t1].[item] IS NULL
 			)
-	) [m_1]
-		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT

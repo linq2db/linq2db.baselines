@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -15,7 +14,6 @@ SELECT
 		ELSE False
 	END
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = -1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Code NVarChar(6) -- String
 SET     @Code = 'Child2'
@@ -42,7 +40,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

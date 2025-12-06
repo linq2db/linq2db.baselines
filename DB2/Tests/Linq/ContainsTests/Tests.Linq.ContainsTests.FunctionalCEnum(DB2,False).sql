@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -13,7 +12,6 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -28,7 +26,6 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -43,7 +40,6 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
@@ -58,7 +54,6 @@ WHERE
 	"s"."CEnum" NOT IN (@NotIn, @NotIn_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value3___'

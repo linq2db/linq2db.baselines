@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	c_1."ParentID",
@@ -16,7 +15,6 @@ WHERE
 			c_1."ParentID" = p."ParentID"
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

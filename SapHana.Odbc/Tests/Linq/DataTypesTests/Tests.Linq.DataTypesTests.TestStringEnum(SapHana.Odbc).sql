@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	"r"."Column" = 'value=2' AND "r"."ColumnNullable" = 'value=33'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -116,7 +108,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -138,7 +129,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -150,13 +140,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -178,7 +166,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -200,7 +187,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @toTest VarChar(4) -- String
 SET     @toTest = '%]]%'
 

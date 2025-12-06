@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT TOP (50) PERCENT
 	[t1].[FirstName],

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -11,15 +9,15 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE [TempTable]

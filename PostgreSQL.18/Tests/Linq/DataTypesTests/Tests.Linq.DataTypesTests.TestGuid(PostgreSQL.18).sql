@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Column Uuid -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @ColumnNullable Uuid -- Guid
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	r."Column" = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid AND
 	r."ColumnNullable" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "GuidTable"
@@ -108,7 +100,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,NULL),
 (2,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -120,16 +111,13 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 INSERT BULK "GuidTable"(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

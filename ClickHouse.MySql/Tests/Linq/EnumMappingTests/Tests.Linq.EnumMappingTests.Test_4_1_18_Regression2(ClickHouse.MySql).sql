@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 102
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -22,7 +20,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	t1.ID = 101
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

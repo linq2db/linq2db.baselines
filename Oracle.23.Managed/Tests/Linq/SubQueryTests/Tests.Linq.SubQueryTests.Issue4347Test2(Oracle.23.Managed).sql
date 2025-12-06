@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."Id",
@@ -9,34 +6,26 @@ SELECT
 	d."Amount",
 	d."Currency"
 FROM
-	(
-		SELECT DISTINCT
-			x."Id"
-		FROM
-			"TransactionEntity" x
-		WHERE
-			EXISTS(
-				SELECT
-					a_Lines."Currency"
-				FROM
-					"LineEntity" a_Lines
-				WHERE
-					x."Id" = a_Lines."TransactionId"
-				INTERSECT
-				SELECT
-					t1."item"
-				FROM
-					(
-						SELECT 'A' AS "item" FROM sys.dual
-						UNION ALL
-						SELECT 'B' FROM sys.dual) t1
-			)
-	) m_1
+	"TransactionEntity" m_1
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
+WHERE
+	EXISTS(
+		SELECT
+			a_Lines."Currency"
+		FROM
+			"LineEntity" a_Lines
+		WHERE
+			m_1."Id" = a_Lines."TransactionId"
+		INTERSECT
+		SELECT
+			t1."item"
+		FROM
+			(
+				SELECT 'A' AS "item" FROM sys.dual
+				UNION ALL
+				SELECT 'B' FROM sys.dual) t1
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

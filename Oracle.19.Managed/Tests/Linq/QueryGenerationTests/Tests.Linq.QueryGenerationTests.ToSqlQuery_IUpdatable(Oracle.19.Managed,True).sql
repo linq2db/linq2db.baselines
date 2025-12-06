@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
@@ -20,7 +18,6 @@ UPDATE
 SET
 	"Value" = 123
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -12,8 +11,7 @@ FROM
 WHERE
 	p."PersonID" = 1
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName",

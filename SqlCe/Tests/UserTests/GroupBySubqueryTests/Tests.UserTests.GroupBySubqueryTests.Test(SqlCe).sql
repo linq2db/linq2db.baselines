@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -15,13 +14,12 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[g_2].[Field6],
 	[g_2].[Field4],
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT DISTINCT

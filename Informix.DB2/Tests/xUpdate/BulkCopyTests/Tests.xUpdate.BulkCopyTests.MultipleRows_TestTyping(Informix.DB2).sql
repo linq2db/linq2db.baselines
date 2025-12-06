@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @DecimalValue1 Decimal
@@ -20,7 +19,6 @@ VALUES
 	@DecimalValue2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@DecimalValue2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

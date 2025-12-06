@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s."CEnum" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

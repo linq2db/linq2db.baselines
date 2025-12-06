@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	Mod(Extract(day from "t"."DateTimeValue"), 7)

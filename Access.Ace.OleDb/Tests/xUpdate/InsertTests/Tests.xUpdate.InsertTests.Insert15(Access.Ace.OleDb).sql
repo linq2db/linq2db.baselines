@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[FirstName] LIKE 'Insert15%'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert15%'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM

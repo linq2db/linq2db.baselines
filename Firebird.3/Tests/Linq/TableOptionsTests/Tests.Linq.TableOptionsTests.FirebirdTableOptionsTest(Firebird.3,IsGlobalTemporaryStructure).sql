@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN

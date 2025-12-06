@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [Issue1403Tests_1]
 (
@@ -12,7 +11,6 @@ VALUES
 	'New event'
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1

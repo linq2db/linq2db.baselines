@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	ess.ID
@@ -15,7 +14,6 @@ WHERE
 			ess.ID = y.ID AND y.IS_ACTIVE = 1
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

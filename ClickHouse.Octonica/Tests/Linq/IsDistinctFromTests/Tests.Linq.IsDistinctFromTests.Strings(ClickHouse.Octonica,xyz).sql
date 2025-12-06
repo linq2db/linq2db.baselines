@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s.String IS NULL OR s.String <> 'xyz'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	s.NullableString IS NULL OR s.NullableString <> 'xyz'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	NOT (s.String IS NULL OR s.String <> 'xyz')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

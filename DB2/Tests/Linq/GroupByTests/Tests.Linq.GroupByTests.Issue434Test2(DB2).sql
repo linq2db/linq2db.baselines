@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."PersonID",
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

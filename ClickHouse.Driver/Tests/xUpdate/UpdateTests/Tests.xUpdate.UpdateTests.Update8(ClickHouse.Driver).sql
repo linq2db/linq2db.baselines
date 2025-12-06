@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Parent
 (
@@ -12,7 +11,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -22,7 +20,6 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

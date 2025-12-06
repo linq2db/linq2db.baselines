@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	currentDatabase()
@@ -7,12 +6,10 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE testdb2.Issue681Table2
@@ -25,7 +22,6 @@ CREATE TABLE testdb2.Issue681Table2
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2

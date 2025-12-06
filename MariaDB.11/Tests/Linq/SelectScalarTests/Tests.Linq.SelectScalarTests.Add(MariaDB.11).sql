@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p Int32
-SET     @p = 5
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	@p as `c1`
+	5 as `c1`
 

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @asdfgh NVarChar(4) -- String
@@ -18,7 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id BigInt -- Int64
 SET     @Id = 100500
@@ -36,7 +32,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1 BigInt -- Int64
 SET     @ref1 = 100500
@@ -54,7 +49,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1 BigInt -- Int64
 SET     @ref1 = 1
@@ -72,7 +66,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ref1 BigInt -- Int64
 SET     @ref1 = 100500
@@ -90,7 +83,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -111,5 +103,3 @@ FROM
 		) "t1" ON 1=1
 LIMIT ?
 
-BeforeExecute
-DisposeTransaction

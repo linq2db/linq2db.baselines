@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	LEN([nm].[FirstName] + N'.') <> 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

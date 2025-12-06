@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	CAST(0 AS SIGNED),
@@ -31,9 +30,6 @@ FROM
 WHERE
 	`p_1`.`ParentID` <> 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -49,9 +45,6 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -60,7 +53,6 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

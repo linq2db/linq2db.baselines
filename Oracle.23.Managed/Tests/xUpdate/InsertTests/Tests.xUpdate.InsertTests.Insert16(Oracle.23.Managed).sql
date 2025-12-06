@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @name Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	`r`.`Bool1` = @Bool1 AND `r`.`Bool2` IS NULL AND `r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @true_value String(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
@@ -29,7 +27,6 @@ WHERE
 	`r`.`Bool1` = @true_value AND `r`.`Bool2` IS NULL AND
 	`r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
@@ -44,7 +41,6 @@ FROM
 WHERE
 	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
@@ -59,7 +55,6 @@ FROM
 WHERE
 	`r`.`Bool2` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
@@ -76,7 +71,6 @@ FROM
 WHERE
 	`r`.`Bool1` = @Bool1 AND `r`.`Bool2` IS NULL AND `r`.`Bool3` = @Bool3
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @true_value String(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
@@ -94,7 +88,6 @@ WHERE
 	`r`.`Bool3` = @true_value AND `r`.`Bool1` = @Bool1 AND
 	`r`.`Bool2` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @false_value String(1) -- AnsiStringFixedLength
 SET     @false_value = 'N'
@@ -112,7 +105,6 @@ WHERE
 	`r`.`Bool1` = @false_value AND `r`.`Bool2` IS NULL AND
 	`r`.`Bool3` = @Bool3
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
@@ -129,7 +121,6 @@ FROM
 WHERE
 	`r`.`Bool2` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool3` = @Bool3
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
@@ -146,7 +137,6 @@ FROM
 WHERE
 	`r`.`Bool1` = @Bool1 AND `r`.`Bool2` = @Bool2 AND `r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @false_value String(1) -- AnsiStringFixedLength
 SET     @false_value = 'N'
@@ -164,7 +154,6 @@ WHERE
 	`r`.`Bool1` = @false_value AND `r`.`Bool2` = @Bool2 AND
 	`r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
@@ -181,7 +170,6 @@ FROM
 WHERE
 	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` = @Bool2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
@@ -197,7 +185,6 @@ WHERE
 	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = @Bool1 AND
 	`r`.`Bool3` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
@@ -216,7 +203,6 @@ FROM
 WHERE
 	`r`.`Bool1` = @Bool1 AND `r`.`Bool2` = @Bool2 AND `r`.`Bool3` = @Bool3
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @true_value String(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
@@ -236,7 +222,6 @@ WHERE
 	`r`.`Bool1` = @true_value AND `r`.`Bool2` = @Bool2 AND
 	`r`.`Bool3` = @Bool3
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @true_value String(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
@@ -256,7 +241,6 @@ WHERE
 	`r`.`Bool3` = @true_value AND `r`.`Bool1` = @Bool1 AND
 	`r`.`Bool2` = @Bool2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'

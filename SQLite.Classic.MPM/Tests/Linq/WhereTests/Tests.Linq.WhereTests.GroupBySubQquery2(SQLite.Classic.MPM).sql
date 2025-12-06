@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[x].[ParentID],
@@ -16,7 +15,6 @@ WHERE
 			[x_1].[ParentID]
 	)
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

@@ -1,13 +1,14 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS DisposableTable

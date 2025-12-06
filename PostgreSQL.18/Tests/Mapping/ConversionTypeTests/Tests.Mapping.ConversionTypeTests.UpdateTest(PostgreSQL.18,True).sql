@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 UPDATE
 	"TrimTestTable"
@@ -8,7 +7,6 @@ SET
 WHERE
 	"TrimTestTable"."ID" = 3
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***HHH***'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	r."ID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

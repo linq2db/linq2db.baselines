@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -20,15 +18,15 @@ FROM
 WHERE
 	ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE TABLE "DropTableTest"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO TEST."DropTableTest"
@@ -40,7 +38,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -48,12 +45,10 @@ SELECT
 FROM
 	TEST."DropTableTest" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP TABLE TEST."DropTableTest"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

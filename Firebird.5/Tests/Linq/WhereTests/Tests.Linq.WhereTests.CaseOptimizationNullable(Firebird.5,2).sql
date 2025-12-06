@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @filterValue Integer -- Int32
 SET     @filterValue = 2
 

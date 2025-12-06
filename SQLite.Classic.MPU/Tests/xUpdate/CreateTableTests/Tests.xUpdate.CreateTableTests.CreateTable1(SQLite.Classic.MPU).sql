@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TestTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE [TestTable]
@@ -14,7 +12,6 @@ CREATE TABLE [TestTable]
 	[CreatedOn] DateTime2          NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -25,7 +22,6 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE [TestTable]

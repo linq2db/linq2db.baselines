@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "TableWithIdentity"
 (
@@ -12,7 +11,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

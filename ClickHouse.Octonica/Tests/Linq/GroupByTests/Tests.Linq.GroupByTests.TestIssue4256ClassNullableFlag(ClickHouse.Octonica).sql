@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	it_1.IsActive,
@@ -16,7 +15,6 @@ GROUP BY
 	it_1.IsActive,
 	it_1.Other
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

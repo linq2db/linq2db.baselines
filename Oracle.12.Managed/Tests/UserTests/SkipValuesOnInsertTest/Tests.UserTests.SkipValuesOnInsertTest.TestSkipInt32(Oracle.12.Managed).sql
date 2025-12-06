@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	:Name
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -29,7 +27,6 @@ WHERE
 	t."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -47,7 +44,6 @@ VALUES
 	:Name
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

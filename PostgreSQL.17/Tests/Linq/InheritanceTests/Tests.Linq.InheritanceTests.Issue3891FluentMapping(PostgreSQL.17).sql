@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	:Name_Second
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -41,7 +39,6 @@ FROM
 	"Base2" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
@@ -64,7 +61,6 @@ SET
 WHERE
 	"Base2"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

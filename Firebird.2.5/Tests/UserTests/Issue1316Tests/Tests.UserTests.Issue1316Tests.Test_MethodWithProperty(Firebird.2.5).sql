@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -12,7 +11,6 @@ VALUES
 	@ID
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Item1 Integer -- Int32
 SET     @Item1 = 5

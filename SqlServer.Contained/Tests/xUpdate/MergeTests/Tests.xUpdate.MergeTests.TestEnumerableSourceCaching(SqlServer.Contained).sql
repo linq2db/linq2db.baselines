@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -29,7 +28,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -40,7 +38,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [CacheTestTable] [Target]
@@ -71,7 +68,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

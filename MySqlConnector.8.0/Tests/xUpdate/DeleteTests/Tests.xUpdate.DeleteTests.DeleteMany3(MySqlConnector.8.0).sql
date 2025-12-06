@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`GrandChild`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
@@ -16,7 +14,6 @@ FROM
 WHERE
 	`Child`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
@@ -25,7 +22,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Parent`
@@ -37,7 +33,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Child`
@@ -51,7 +46,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `GrandChild`
@@ -67,7 +61,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `GrandChild`
@@ -83,7 +76,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE   `a_GrandChildren`
@@ -94,7 +86,6 @@ FROM
 WHERE
 	`gc`.`ParentID` IN (1001)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
@@ -103,7 +94,6 @@ FROM
 WHERE
 	`GrandChild`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
@@ -112,7 +102,6 @@ FROM
 WHERE
 	`Child`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  

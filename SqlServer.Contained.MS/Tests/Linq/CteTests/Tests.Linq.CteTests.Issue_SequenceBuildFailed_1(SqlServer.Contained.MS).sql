@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 WITH [cte] ([Id])
 AS
@@ -35,9 +32,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] = [m_1].[Item1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 WITH [cte] ([Id])

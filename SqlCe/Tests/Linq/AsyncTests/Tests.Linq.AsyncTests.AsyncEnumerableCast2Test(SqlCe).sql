@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 SELECT
 	[x].[ParentID],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."Id",
@@ -29,7 +28,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

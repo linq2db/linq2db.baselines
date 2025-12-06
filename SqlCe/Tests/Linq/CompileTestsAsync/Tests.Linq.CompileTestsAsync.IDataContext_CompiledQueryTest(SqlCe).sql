@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -12,8 +11,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT
 	[p].[FirstName],

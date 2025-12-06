@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[User] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @userId Int -- Int32
 SET     @userId = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @value Int -- Int32
 SET     @value = Tests.Linq.MappingTests+Id`1[Tests.Linq.MappingTests+User]

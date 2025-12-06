@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @month Int -- Int32
 SET     @month = 10
 

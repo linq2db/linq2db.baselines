@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -48,7 +47,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
@@ -62,7 +60,6 @@ SET
 WHERE
 	t1.ID = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 100500

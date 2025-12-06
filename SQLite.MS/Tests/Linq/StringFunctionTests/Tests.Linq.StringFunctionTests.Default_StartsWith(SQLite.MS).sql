@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[CollatedTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	[r].[CaseInsensitive] LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

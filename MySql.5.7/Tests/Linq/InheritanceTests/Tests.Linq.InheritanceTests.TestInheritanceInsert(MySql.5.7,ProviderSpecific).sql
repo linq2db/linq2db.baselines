@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `InheritanceFilter`
 (
@@ -20,7 +19,6 @@ VALUES
 (5,21,0,25,0,0,15,0),
 (6,22,0,26,0,0,0,16)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

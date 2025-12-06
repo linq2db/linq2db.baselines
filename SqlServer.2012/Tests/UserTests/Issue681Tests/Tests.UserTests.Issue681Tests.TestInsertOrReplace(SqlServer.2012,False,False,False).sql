@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @Value Int -- Int32
@@ -26,7 +25,6 @@ WHEN NOT MATCHED THEN
 		@Value
 	);
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 5

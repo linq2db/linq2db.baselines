@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String

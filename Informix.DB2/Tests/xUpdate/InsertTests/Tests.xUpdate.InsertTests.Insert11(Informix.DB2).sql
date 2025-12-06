@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	MAX(t1.PersonID)
 FROM
 	Person t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4

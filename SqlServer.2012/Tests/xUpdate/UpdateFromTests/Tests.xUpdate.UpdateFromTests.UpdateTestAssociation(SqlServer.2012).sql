@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 UPDATE
 	[v]
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[a_Relation].[RelatedValue1] = 11
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT TOP (1)

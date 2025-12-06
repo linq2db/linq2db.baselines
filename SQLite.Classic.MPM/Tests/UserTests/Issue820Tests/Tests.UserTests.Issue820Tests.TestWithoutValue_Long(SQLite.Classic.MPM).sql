@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int64
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

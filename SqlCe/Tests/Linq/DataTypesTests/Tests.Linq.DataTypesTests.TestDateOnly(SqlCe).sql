@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Column DateTime
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 SELECT
 	[r].[Id],
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -24,20 +22,18 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
+	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2020-01-01'
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column DateTime
-SET     @Column = '1950-01-01'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = NULL
 
@@ -54,14 +50,13 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column DateTime
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [DateOnlyTable]
@@ -103,10 +95,9 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[ColumnNullable]
 )
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
+SELECT 1,'1980-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2020-01-01'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -118,13 +109,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [DateOnlyTable]
@@ -133,10 +122,9 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[ColumnNullable]
 )
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
+SELECT 1,'1980-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2020-01-01'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

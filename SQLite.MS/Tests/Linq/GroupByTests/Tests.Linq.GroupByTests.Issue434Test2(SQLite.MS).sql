@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[PersonID],
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

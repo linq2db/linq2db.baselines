@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"t1"."ParentID",
@@ -7,9 +6,7 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

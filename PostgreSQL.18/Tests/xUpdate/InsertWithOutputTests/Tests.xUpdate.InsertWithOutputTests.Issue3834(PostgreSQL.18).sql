@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 123
 DECLARE @Nesto Text(5) -- String

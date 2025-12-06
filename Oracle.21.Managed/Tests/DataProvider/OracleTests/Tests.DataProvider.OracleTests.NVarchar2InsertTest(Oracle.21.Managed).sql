@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value NVarchar2(8) -- String
 SET     @value = '致我们最爱的母亲'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -18,7 +15,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Decimal(1, 0)
 SET     @id = 3
@@ -31,5 +27,3 @@ WHERE
 	p.ID = :id
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

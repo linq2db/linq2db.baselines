@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.FirstName,
@@ -12,8 +11,7 @@ FROM
 WHERE
 	p.PersonID = 1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.FirstName,

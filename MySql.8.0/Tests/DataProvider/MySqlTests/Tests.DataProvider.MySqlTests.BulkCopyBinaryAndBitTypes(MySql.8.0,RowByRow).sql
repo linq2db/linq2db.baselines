@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Bit_1 UInt64
@@ -18,9 +17,9 @@ DECLARE @Binary_1 Blob -- Binary
 SET     @Binary_1 = NULL
 DECLARE @Binary_2 Blob -- Binary
 SET     @Binary_2 = NULL
-DECLARE @Binary_3 VarChar -- String
+DECLARE @Binary_3 Blob -- Binary
 SET     @Binary_3 = NULL
-DECLARE @Binary_4 VarChar -- String
+DECLARE @Binary_4 Blob -- Binary
 SET     @Binary_4 = NULL
 DECLARE @VarBinary_1 Blob -- Binary
 SET     @VarBinary_1 = NULL
@@ -92,7 +91,6 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
@@ -112,9 +110,9 @@ DECLARE @Binary_1 Blob(3) -- Binary
 SET     @Binary_1 = 0x010203
 DECLARE @Binary_2 Blob(3) -- Binary
 SET     @Binary_2 = 0x040506
-DECLARE @Binary_3 Blob(3) -- Object
+DECLARE @Binary_3 Blob(3) -- Binary
 SET     @Binary_3 = 0x070809
-DECLARE @Binary_4 Blob(3) -- Object
+DECLARE @Binary_4 Blob(3) -- Binary
 SET     @Binary_4 = 0x0A0B0C
 DECLARE @VarBinary_1 Blob(3) -- Binary
 SET     @VarBinary_1 = 0x0D0E0F
@@ -186,7 +184,6 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

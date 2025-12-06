@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 WITH [cte]
 (
@@ -29,7 +28,6 @@ SELECT
 FROM
 	[cte] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

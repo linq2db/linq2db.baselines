@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @$VB$Local_SelectedValue Int -- Int32
 SET     @$VB$Local_SelectedValue = 1
 

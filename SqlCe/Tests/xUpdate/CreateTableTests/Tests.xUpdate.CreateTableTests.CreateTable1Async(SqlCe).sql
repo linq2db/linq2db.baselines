@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 DROP TABLE [TestTable]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 CREATE TABLE [TestTable]
 (
@@ -16,8 +14,7 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT
 	[t1].[ID],
@@ -27,8 +24,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 DROP TABLE [TestTable]
 

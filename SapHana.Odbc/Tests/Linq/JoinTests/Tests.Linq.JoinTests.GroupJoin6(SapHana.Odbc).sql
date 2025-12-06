@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" + ? = "d"."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

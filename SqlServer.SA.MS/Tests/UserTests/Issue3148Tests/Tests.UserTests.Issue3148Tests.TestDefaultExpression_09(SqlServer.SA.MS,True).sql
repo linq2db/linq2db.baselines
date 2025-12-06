@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[ParentID],
@@ -53,7 +52,6 @@ WHERE
 				LEFT JOIN [Child] [d_1] ON [a_Parent].[ParentID] = [d_1].[ParentID]
 	), 0, 1) = 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

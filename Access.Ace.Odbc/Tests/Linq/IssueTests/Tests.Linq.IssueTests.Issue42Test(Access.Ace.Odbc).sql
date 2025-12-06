@@ -1,4 +1,21 @@
-﻿BeforeExecute
+﻿-- Access.Ace.Odbc AccessODBC
+
+SELECT TOP 1
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
@@ -17,26 +34,6 @@ FROM
 WHERE
 	[r].[ID] = 1
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-SELECT TOP 1
-	[r].[ID],
-	[r].[MoneyValue],
-	[r].[DateTimeValue],
-	[r].[DateTimeValue2],
-	[r].[BoolValue],
-	[r].[GuidValue],
-	[r].[SmallIntValue],
-	[r].[IntValue],
-	[r].[BigIntValue],
-	[r].[StringValue]
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] = 1
-
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
@@ -74,7 +71,6 @@ SET
 WHERE
 	[t1].[ID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -95,7 +91,6 @@ FROM
 WHERE
 	[r].[ID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
@@ -133,7 +128,6 @@ SET
 WHERE
 	[t1].[ID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1

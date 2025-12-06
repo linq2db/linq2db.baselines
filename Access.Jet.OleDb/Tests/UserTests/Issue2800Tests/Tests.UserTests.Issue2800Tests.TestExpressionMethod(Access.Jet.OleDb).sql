@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[x].[Id],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Car] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 WHERE
 	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -47,7 +42,6 @@ FROM
 WHERE
 	[x].[Name] = 'Special'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -56,7 +50,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -65,7 +58,6 @@ SELECT
 FROM
 	[Car] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -74,7 +66,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -85,7 +76,6 @@ FROM
 WHERE
 	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -94,7 +84,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -105,7 +94,6 @@ FROM
 WHERE
 	[x].[Name] = 'Special'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

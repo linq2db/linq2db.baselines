@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	`p`.`PersonID` = 1 AND LOCATE('[', @s) > 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
 

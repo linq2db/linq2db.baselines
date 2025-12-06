@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @value Int -- Int32
 SET     @value = 2
 
@@ -16,7 +15,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -34,7 +32,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -52,7 +49,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @value Int -- Int32
 SET     @value = 2

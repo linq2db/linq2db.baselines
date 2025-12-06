@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[Value1],
@@ -25,7 +24,6 @@ SELECT
 FROM
 	[Child] [c_3]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimeStampTZ -- DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	:SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	:SomeDateTimeOffset
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @interval Int32
 SET     @interval = 10

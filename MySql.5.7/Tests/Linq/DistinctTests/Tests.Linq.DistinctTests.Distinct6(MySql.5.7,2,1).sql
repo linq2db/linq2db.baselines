@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 0
 DECLARE @Value1 Int32
@@ -11,7 +10,6 @@ SELECT DISTINCT
 FROM
 	`Parent` `p`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

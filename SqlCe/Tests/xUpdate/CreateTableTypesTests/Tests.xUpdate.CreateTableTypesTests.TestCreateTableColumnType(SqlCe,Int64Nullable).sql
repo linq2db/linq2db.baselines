@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int64Nullable BigInt -- Int64
@@ -16,7 +15,6 @@ VALUES
 	@Int64Nullable
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Int64Nullable
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT

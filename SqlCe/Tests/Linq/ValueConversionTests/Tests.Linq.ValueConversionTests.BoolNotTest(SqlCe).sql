@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @false_value NVarChar -- String
 SET     @false_value = 'N'
 

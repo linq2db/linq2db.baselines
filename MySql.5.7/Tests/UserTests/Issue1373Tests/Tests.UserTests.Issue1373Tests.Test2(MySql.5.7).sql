@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Field1 VarChar -- String
@@ -16,7 +15,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 3
@@ -52,7 +49,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

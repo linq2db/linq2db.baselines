@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[a_Customer_1].[CustomerID],

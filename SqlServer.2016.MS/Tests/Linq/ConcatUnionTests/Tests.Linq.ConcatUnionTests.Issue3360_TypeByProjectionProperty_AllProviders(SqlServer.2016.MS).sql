@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[p].[Id],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

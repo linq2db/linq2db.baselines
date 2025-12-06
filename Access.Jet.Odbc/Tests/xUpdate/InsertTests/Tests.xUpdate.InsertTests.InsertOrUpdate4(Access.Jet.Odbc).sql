@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @i Int -- Int32
 SET     @i = 0
@@ -43,7 +40,6 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -63,7 +59,6 @@ VALUES
 	CStr(? + ?)
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @i Int -- Int32
 SET     @i = 1
@@ -77,7 +72,6 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @i Int -- Int32
 SET     @i = 2
@@ -91,7 +85,6 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5

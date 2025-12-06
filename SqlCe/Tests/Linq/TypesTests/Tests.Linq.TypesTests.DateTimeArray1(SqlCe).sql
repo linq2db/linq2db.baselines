@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t].[ID],
@@ -15,5 +14,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN ('2001-01-11 01:11:21.100')
+	[t].[DateTimeValue] IN (CAST('2001-01-11 01:11:21.100' AS DateTime))
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Json NVarChar(4000) -- String
@@ -16,8 +15,7 @@ VALUES
 	@Json
 )
 
-BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -29,8 +27,7 @@ FROM
 WHERE
 	[x].[Id] = @Id
 
-BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -41,8 +38,7 @@ SET
 WHERE
 	[TestTable].[Id] = @Id
 
-BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 

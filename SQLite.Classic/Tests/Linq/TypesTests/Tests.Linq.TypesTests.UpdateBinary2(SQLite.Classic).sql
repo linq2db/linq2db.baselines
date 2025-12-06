@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 DECLARE @p  -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @p
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
@@ -26,7 +24,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @p
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

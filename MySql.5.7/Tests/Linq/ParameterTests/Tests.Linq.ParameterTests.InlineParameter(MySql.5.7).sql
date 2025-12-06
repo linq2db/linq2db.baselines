@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`ParentID`,
@@ -10,7 +9,6 @@ WHERE
 	`p`.`ParentID` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

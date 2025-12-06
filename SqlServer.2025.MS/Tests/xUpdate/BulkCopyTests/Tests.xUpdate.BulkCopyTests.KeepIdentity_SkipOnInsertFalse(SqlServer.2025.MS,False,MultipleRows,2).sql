@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -14,8 +13,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 INSERT INTO [AllTypes]
 (
@@ -25,7 +23,6 @@ VALUES
 (200),
 (300)
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -40,7 +37,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

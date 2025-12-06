@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[m_1].[CustomerID],
@@ -21,9 +18,6 @@ FROM
 WHERE
 	[m_1].[CompanyName] LIKE N'%t%' ESCAPE N'~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT

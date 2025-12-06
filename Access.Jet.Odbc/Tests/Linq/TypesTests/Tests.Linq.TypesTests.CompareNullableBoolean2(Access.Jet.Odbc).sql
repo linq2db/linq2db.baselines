@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[ID],
@@ -14,7 +13,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON ([t1].[ID] = [t2].[ID])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = False

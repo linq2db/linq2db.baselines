@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 UPDATE
 	[UpdatedEntities] [v]
@@ -11,7 +10,6 @@ SET
 WHERE
 	[a_Relation].[RelatedValue1] = 11
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			[p].[ParentID] + @n = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

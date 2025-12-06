@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿BeginTransactionAsync
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -18,9 +16,7 @@ VALUES
 	?
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

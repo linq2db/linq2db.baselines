@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

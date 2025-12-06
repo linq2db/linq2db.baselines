@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 200
 
@@ -22,7 +21,6 @@ RETURNING
 	[DestinationTable].[Value],
 	[DestinationTable].[ValueStr]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 200

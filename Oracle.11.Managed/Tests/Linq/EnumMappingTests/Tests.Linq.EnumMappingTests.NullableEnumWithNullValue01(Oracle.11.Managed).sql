@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 104
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	r.ID >= 101 AND r.ID < :p
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 101
@@ -26,7 +24,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 102
@@ -44,7 +41,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 103
@@ -62,7 +58,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -75,7 +70,6 @@ WHERE
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -89,7 +83,6 @@ WHERE
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 104

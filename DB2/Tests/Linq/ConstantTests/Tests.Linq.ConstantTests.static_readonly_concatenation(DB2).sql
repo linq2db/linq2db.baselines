@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @p VarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	"e"."StringValue" || '1' = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

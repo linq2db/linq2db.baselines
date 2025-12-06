@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -14,7 +13,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0

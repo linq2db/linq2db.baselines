@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_2."Id1",
@@ -17,7 +14,6 @@ FROM
 	) m_2
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -46,9 +42,6 @@ FROM
 			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 		) d_1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -59,9 +52,6 @@ SELECT
 FROM
 	"MasterClass" m_1
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -78,9 +68,6 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

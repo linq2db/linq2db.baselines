@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 WITH [CTE_1]

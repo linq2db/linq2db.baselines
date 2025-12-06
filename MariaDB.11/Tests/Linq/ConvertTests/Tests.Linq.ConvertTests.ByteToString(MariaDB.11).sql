@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`p`.`ID`
+	CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(3))
 FROM
 	`LinqDataTypes` `p`
 WHERE

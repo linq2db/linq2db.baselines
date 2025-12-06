@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id`,
@@ -12,10 +9,7 @@ FROM
 	`TransactionEntity` `m_1`
 		INNER JOIN `LineEntity` `d` ON `m_1`.`Id` = `d`.`TransactionId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Id`,

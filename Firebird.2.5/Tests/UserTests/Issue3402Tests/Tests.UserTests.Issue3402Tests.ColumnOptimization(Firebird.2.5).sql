@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"ess".ID
@@ -15,7 +14,6 @@ WHERE
 			"ess".ID = "y".ID AND "y".IS_ACTIVE = '1'
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

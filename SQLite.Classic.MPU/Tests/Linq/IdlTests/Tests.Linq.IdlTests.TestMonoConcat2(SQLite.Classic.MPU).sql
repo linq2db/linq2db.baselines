@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'
 
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[x_1].[FirstName] = @t
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 SELECT TOP (3)
 	[ch].[ParentID],

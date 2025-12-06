@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ChildID" > 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
@@ -24,7 +22,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	"c_1"."ChildID" = 1001
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p VarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	Concat(`e`.`StringValue`, '1') = @p
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

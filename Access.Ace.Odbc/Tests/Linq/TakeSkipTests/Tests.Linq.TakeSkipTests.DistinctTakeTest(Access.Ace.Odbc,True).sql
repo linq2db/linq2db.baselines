@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT DISTINCT TOP 3
-	[t1].[Value]
+	[r].[Value]
 FROM
-	[TakeSkipClass] [t1]
+	[TakeSkipClass] [r]
 

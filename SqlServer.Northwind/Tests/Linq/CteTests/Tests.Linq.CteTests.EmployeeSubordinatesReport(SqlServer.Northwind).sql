@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 WITH [EmployeeSubordinatesReport]
 (
@@ -38,7 +37,6 @@ FROM
 	[EmployeeSubordinatesReport] [employee]
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
@@ -52,15 +50,15 @@ SELECT
 		WHERE
 			[e2_1].[ReportsTo] = [employee].[ReportsTo]
 	),
-	[manager_1].[LastName],
-	[manager_1].[FirstName],
-	[manager_1].[NumberOfSubordinates]
+	[manager_1].[ManagerLastName],
+	[manager_1].[ManagerFirstName],
+	[manager_1].[ManagerNumberOfSubordinates]
 FROM
 	[Employees] [employee]
 		LEFT JOIN (
 			SELECT
-				[manager].[LastName],
-				[manager].[FirstName],
+				[manager].[LastName] as [ManagerLastName],
+				[manager].[FirstName] as [ManagerFirstName],
 				(
 					SELECT
 						COUNT(*)
@@ -68,7 +66,7 @@ FROM
 						[Employees] [e2]
 					WHERE
 						[e2].[ReportsTo] = [manager].[ReportsTo]
-				) as [NumberOfSubordinates],
+				) as [ManagerNumberOfSubordinates],
 				[manager].[EmployeeID]
 			FROM
 				[Employees] [manager]

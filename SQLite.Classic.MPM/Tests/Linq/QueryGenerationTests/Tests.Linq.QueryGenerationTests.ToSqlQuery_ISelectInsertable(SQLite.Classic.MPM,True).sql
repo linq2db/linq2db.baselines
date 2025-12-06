@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [TableWithIdentity]
@@ -24,7 +22,6 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

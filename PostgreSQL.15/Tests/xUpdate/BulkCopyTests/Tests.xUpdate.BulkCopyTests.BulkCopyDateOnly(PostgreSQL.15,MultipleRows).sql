@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "DateOnlyTable"
 (
@@ -8,10 +7,10 @@ INSERT INTO "DateOnlyTable"
 VALUES
 ('2021-01-01'::date)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Date"
 FROM
 	"DateOnlyTable" t1

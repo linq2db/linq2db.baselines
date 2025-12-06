@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -8,8 +7,7 @@ INSERT INTO SimpleBulkCopyTable
 VALUES
 (1)
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (

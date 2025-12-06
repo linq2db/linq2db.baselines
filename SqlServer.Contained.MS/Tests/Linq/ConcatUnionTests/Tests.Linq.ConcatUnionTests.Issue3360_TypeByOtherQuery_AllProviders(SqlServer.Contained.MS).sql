@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[p].[Id],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[pmp].[ParentID]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[pmp].[ParentID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

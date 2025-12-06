@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2019
 
 UPDATE
@@ -21,7 +19,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1

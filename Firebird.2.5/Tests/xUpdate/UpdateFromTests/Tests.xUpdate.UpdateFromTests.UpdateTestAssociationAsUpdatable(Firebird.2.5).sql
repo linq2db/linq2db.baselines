@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 UPDATE
 	"UpdatedEntities"
@@ -24,7 +23,6 @@ WHERE
 			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

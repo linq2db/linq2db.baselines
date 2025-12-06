@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	CAST("t"."Kind" = 1 OR "t"."Kind" = 2 AS smallint),
@@ -14,7 +13,6 @@ SELECT
 FROM
 	"Item" "t"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 WHERE
 	NOT ("x_1"."cond" AND ("x_1"."cond_1" AND "x_1"."cond_2" OR NOT "x_1"."cond_1") OR NOT "x_1"."cond" AND NOT "x_1"."cond_3")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -71,7 +67,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -105,7 +100,6 @@ WHERE
 	"x_1"."cond" AND ("x_1"."cond_1" AND "x_1"."cond_2" OR NOT "x_1"."cond_1") OR
 	NOT "x_1"."cond" AND NOT "x_1"."cond_3"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -117,7 +111,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -150,7 +143,6 @@ FROM
 WHERE
 	NOT (NOT "x_1"."cond" AND ("x_1"."cond_2" AND "x_1"."cond_3" OR NOT "x_1"."cond_2"))
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -162,7 +154,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -195,7 +186,6 @@ FROM
 WHERE
 	NOT "x_1"."cond" AND ("x_1"."cond_2" AND "x_1"."cond_3" OR NOT "x_1"."cond_2")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

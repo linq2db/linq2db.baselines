@@ -1,18 +1,15 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge2]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -90,7 +87,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -168,7 +164,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -248,7 +243,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -327,7 +321,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -405,7 +398,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -485,7 +477,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -563,7 +554,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
@@ -643,7 +633,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -669,7 +658,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

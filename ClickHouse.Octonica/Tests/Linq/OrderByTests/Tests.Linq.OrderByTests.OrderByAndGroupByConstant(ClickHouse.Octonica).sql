@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*),
@@ -9,7 +8,6 @@ FROM
 	Child g_1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

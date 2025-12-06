@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @dateTime DateTime
 SET     @dateTime = DATETIME2FROMPARTS(1992, 1, 11, 1, 11, 21, 1000000, 7)
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[DateTimeValue] > @dateTime
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @dateTime DateTime
 SET     @dateTime = DATETIME2FROMPARTS(1993, 1, 11, 1, 11, 21, 1000000, 7)

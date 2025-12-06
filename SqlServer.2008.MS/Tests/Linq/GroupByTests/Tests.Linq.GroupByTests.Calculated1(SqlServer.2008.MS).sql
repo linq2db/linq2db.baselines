@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[Key_1],
@@ -28,7 +25,6 @@ FROM
 			ELSE N'3'
 		END
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

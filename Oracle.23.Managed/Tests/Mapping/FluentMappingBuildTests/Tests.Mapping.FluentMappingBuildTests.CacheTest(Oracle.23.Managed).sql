@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -7,7 +6,9 @@ BEGIN
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL
+			"LastName" VarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -17,7 +18,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -39,7 +39,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -51,7 +50,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -63,7 +61,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -72,7 +69,9 @@ BEGIN
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL
+			"LastName" VarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -82,7 +81,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -104,7 +102,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -116,7 +113,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -128,7 +124,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -137,7 +132,9 @@ BEGIN
 		(
 			ID         Int         NOT NULL,
 			"Column"   VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL
+			"LastName" VarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -147,7 +144,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -169,7 +165,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -181,7 +176,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -193,7 +187,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -202,7 +195,9 @@ BEGIN
 		(
 			ID         Int         NOT NULL,
 			"Column"   VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL
+			"LastName" VarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -212,7 +207,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -234,7 +228,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -246,7 +239,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN

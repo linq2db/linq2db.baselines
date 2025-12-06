@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Parent`
 (
@@ -11,8 +8,7 @@ INSERT INTO `Parent`
 VALUES
 (111001,NULL)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Child`
 (
@@ -22,5 +18,3 @@ INSERT INTO `Child`
 VALUES
 (111001,0)
 
-BeforeExecute
-DisposeTransaction

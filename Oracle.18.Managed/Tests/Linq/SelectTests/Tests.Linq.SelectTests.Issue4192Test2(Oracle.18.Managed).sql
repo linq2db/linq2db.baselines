@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @parentId Int32
 SET     @parentId = 12
 
 SELECT
+	i."Id",
 	i."Name",
 	i."ParentId"
 FROM

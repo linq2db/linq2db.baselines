@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT Max(`Id`) FROM `Issue4702Table`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue4702Table`
 (
@@ -15,8 +13,7 @@ VALUES
 (1,'Text 1'),
 (2,'Text 2')
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue4702Table`
 (

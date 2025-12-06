@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
@@ -46,7 +43,6 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -58,7 +54,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -88,7 +82,6 @@ FROM
 WHERE
 	[t].[Id] = 2
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Jessy'
@@ -105,7 +98,6 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

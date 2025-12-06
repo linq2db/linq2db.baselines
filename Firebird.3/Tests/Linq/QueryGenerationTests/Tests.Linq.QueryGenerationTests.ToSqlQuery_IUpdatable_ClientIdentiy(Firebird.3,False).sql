@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @newValue Integer -- Int32
 SET     @newValue = 123
@@ -23,7 +21,6 @@ SET
 	"Id" = 492,
 	"Value" = CAST(@newValue AS Int)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
 FROM
 	Src s
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	s.NullableInt IS NOT NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -26,7 +23,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

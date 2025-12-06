@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

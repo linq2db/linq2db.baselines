@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[q].[ParentID],
@@ -17,7 +16,6 @@ FROM
 				[c_1].[ParentID] = [q].[ParentID]
 		) [c_2]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

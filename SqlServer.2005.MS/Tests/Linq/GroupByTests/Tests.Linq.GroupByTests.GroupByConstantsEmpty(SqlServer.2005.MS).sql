@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[g_2].[ChildId],
@@ -19,7 +18,6 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

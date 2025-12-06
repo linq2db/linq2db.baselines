@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[e].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[e].[StringValue] + N'1' = N'StrValue1'
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

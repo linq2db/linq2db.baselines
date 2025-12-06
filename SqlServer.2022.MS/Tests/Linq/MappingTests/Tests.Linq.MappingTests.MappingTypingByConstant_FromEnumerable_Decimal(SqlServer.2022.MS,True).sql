@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[arg].[Id],
@@ -10,7 +9,6 @@ FROM
 			(1,CAST(NULL AS Decimal(18, 10)))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

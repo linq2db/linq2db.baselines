@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	(COUNT(*)::text || ' items have not been processed, e.g. #' || Coalesce(MIN(g_1."PersonID")::text, '')) || '.'

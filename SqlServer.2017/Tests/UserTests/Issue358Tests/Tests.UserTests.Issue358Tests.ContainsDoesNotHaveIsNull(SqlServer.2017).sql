@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

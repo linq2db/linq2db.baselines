@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @p Int -- Int32
 SET     @p = 226
 
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

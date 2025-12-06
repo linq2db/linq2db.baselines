@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1.ID,
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @MyDate TimeStampTZ -- DateTimeOffset
 SET     @MyDate = NULL
@@ -21,7 +19,6 @@ SET
 WHERE
 	mt.ID = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE

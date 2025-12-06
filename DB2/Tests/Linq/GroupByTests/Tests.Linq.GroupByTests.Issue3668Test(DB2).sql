@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -20,9 +17,6 @@ WHERE
 	"m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR
 	"m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
@@ -62,7 +60,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @id
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 100500

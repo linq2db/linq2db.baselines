@@ -1,27 +1,21 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 DELETE [t1]
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [t1]
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [t1]
 FROM
 	[GrandChild] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -35,7 +29,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -49,7 +42,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 10
@@ -63,7 +55,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 20
@@ -77,7 +68,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 11
@@ -99,7 +89,6 @@ VALUES
 	@RightId
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 MERGE INTO [GrandChild] [Target]
@@ -126,7 +115,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -139,5 +127,3 @@ ORDER BY
 	[t1].[GrandChildID],
 	[t1].[ChildID]
 
-BeforeExecute
-DisposeTransaction

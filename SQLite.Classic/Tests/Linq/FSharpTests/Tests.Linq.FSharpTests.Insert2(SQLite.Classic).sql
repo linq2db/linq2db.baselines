@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -47,7 +44,6 @@ WHERE
 	[p].[PersonID] > 4
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM

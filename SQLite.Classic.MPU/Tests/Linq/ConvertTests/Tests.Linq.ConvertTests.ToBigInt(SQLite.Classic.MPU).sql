@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS BigInt)
+	CAST([t].[MoneyValue] AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t.ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	LinqDataTypes t
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

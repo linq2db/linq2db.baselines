@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS InventoryResource
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InventoryResource

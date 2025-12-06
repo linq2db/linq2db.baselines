@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

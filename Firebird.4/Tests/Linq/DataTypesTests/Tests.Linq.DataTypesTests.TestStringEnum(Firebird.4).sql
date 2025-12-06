@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	"r"."Column" = 'value=2' AND "r"."ColumnNullable" = 'value=33'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "StringEnumTable"
@@ -106,7 +98,6 @@ INSERT INTO "StringEnumTable"
 SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'value=2','value=33' FROM rdb$database
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -118,13 +109,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
 	"StringEnumTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "StringEnumTable"
@@ -136,7 +125,6 @@ INSERT INTO "StringEnumTable"
 SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
 SELECT 2,'value=2','value=33' FROM rdb$database
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

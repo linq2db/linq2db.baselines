@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	"Parent" "p"
 ---
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

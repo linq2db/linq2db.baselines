@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value3  -- Int32
 SET     @Value3 = 7
 DECLARE @id  -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
@@ -25,7 +23,6 @@ WHERE
 	[t1].[Id] = @id
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value3  -- Int32
 SET     @Value3 = 8
@@ -39,7 +36,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1

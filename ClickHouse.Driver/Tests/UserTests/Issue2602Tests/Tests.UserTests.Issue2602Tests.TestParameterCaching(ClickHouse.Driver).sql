@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -18,7 +17,6 @@ FROM
 	) m_1
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -29,7 +27,6 @@ WHERE
 	c_1.Id = 35
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -49,7 +46,6 @@ FROM
 	) m_1
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

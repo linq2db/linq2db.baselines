@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -82,7 +78,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -108,13 +103,11 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -140,7 +133,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -166,7 +158,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -192,7 +183,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
@@ -218,7 +208,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -231,7 +220,6 @@ SELECT
 FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 MERGE INTO "TestMerge1" "Target"
@@ -273,7 +261,6 @@ VALUES
 	"Source".SELECT_1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

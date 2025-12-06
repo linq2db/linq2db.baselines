@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 WITH [CTE_1] ([Obj_Operator])
 AS
@@ -14,7 +13,6 @@ SELECT TOP (1)
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (1)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	e.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	e.Id = 1 AND e.Id = 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	TestConstantsData t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	e.Id = 1 AND e.Id = 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMergeIdentity" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
@@ -18,7 +16,6 @@ VALUES
 	:Field
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -26,7 +23,6 @@ SELECT
 FROM
 	"TestMergeIdentity" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMergeIdentity" "Target"
@@ -53,7 +49,6 @@ UPDATE
 SET
 	"Field" = "Source"."Field"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

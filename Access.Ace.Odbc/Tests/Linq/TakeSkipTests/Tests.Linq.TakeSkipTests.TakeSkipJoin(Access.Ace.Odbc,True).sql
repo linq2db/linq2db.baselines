@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ID],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

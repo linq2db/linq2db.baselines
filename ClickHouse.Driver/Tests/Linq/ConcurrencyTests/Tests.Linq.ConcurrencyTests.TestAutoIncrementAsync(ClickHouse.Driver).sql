@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO ConcurrencyAutoIncrement
 (
@@ -14,7 +13,6 @@ VALUES
 	'initial'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,8 +22,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -35,7 +32,6 @@ UPDATE
 WHERE
 	Id = 1 AND Stamp = -10
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -45,8 +41,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -56,7 +51,6 @@ UPDATE
 WHERE
 	Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -66,8 +60,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -77,7 +70,6 @@ UPDATE
 WHERE
 	Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -87,15 +79,13 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
 	Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -105,15 +95,13 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
 DELETE WHERE
 	Id = 1 AND Stamp = -8
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

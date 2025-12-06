@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @True) = 1
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @False) = 1
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], IIF([r].[Id] % 2 = 1, 1, 0)) = 1
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

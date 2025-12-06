@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @personId Int32
 SET     @personId = 1

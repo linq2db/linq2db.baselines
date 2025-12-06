@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @DurationID Int -- Int32
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @personId Int -- Int32
 SET     @personId = 1

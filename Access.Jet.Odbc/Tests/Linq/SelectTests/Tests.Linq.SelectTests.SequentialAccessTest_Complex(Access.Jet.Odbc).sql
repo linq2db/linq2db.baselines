@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[TypeDiscriminator],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

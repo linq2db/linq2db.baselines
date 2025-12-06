@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."PersonID",
@@ -13,10 +10,7 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."FirstName",

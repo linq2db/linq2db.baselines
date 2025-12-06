@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`PersonID`,
@@ -13,9 +10,6 @@ SELECT
 FROM
 	`Person` `m_1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -25,9 +19,6 @@ FROM
 GROUP BY
 	`t1`.`PersonID`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -40,9 +31,6 @@ SELECT
 FROM
 	`Person` `m_1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

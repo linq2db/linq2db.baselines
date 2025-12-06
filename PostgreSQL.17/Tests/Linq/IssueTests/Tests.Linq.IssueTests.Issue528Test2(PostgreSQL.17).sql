@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Key_1",
@@ -19,9 +16,6 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON m_1."Key_1" = d."FirstName"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

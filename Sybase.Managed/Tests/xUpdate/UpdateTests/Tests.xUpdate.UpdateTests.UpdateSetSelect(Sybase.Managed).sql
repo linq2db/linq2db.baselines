@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Parent]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -37,7 +35,6 @@ WHERE
 			([Parent].[Value1] = [p].[Value1] OR [Parent].[Value1] IS NULL AND [p].[Value1] IS NULL)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1

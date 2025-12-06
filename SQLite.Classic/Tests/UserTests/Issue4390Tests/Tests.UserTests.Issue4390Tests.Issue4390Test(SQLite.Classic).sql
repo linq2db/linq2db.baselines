@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @InfeedAdviceID  -- Int32
 SET     @InfeedAdviceID = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@InfeedAdviceID
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

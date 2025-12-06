@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."ParentID",
@@ -10,7 +9,6 @@ ORDER BY
 	t1."ChildID"
 OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY 
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

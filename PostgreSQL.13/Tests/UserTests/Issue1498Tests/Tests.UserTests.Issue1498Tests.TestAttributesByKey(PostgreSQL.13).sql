@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title Text(5) -- String
@@ -20,10 +19,7 @@ VALUES
 	:Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -40,8 +36,7 @@ FROM
 	) m_1
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Id",
@@ -53,5 +48,3 @@ WHERE
 	x."Id" = 6
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

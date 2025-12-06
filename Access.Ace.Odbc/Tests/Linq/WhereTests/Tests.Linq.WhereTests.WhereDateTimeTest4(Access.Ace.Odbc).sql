@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ID],
@@ -15,5 +14,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = #2009-09-27#
+	[t1].[DateTimeValue] = DateSerial(2009, 9, 27)
 

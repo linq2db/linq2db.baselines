@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%Paranoid%' ESCAPE '~' AND InStr([r].[Diagnosis], 'Paranoid') > 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%paranoid%' ESCAPE '~' AND InStr([r].[Diagnosis], 'paranoid') > 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%paranoid%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (2)

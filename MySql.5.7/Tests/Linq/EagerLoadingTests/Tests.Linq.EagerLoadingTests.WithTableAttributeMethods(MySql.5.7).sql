@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @UserId Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

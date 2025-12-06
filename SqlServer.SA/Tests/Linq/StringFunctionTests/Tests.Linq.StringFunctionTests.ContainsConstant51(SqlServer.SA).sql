@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @ps NVarChar(4000) -- String
 SET     @ps = N'%~[%'
 

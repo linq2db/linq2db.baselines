@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] IS NULL OR [p].[Value1] <> 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

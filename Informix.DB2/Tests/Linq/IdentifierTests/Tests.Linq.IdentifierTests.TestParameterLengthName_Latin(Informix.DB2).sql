@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij Integer(4) -- Int32
 SET     @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij = 1
 

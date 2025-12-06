@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."PersonID",
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

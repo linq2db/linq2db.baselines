@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String
@@ -59,7 +58,6 @@ WHERE
 	LOCATE(@carNo, `x`.`CarNo`) > 0 AND LOCATE(@carBrand, `x`.`CarBrand`) > 0
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL

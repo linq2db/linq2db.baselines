@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND @s LIKE '%[[]%'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123[456'

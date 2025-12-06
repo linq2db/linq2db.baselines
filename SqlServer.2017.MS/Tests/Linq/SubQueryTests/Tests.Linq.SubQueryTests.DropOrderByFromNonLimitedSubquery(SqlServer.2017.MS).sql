@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[p].[ParentID],
@@ -21,7 +20,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -39,7 +36,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
@@ -27,7 +24,6 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
@@ -55,9 +51,6 @@ FROM
 	) [m_2]
 		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [d].[Id1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20

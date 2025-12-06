@@ -1,10 +1,14 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
-	t.MoneyValue
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			ROUND(p.MoneyValue::Float) as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	ROUND(t.MoneyValue::Float) <> 0
+	t.c1 <> 0
 

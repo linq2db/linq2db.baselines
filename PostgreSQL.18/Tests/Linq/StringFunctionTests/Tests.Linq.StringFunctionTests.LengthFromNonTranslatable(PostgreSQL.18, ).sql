@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t."Str",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"TestLengthModel" t
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

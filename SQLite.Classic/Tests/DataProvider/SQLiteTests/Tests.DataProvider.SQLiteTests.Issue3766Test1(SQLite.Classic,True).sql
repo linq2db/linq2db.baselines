@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- DateTimeOffset
 SET     @Id = '2020-02-29T17:09:55.1231234+00:00'
 
@@ -16,7 +15,6 @@ VALUES
 ON CONFLICT ([Id]) DO UPDATE SET
 	[Value] = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- DateTimeOffset
 SET     @Id = '2020-02-29T17:09:55.1231234+00:00'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."FirstName",
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	"x"."PersonID" DESC
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

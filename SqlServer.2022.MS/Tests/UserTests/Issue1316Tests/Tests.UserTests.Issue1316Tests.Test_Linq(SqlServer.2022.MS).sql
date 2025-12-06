@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -12,7 +11,6 @@ VALUES
 	@ID
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (2)

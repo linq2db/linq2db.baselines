@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithPrimaryKey2')) THEN
@@ -14,7 +13,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "TableWithPrimaryKey2"
@@ -23,7 +21,6 @@ INSERT INTO "TableWithPrimaryKey2"
 )
 SELECT 1 FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t].[Id],
@@ -21,7 +20,6 @@ WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
@@ -7,7 +6,6 @@ CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 	[Value] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[##IsGlobalTemporaryTable]', N'U') IS NOT NULL)

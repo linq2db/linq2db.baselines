@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @NVarChar NVarChar(5000) -- String
 SET     @NVarChar = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'
 -- value above truncated for logging
@@ -13,7 +12,6 @@ VALUES
 	@NVarChar
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -23,7 +21,6 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @p NVarChar(5000) -- String
 SET     @p = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'

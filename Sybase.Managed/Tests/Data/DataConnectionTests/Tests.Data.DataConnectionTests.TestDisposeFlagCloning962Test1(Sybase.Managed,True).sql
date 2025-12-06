@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[m_1].[CategoryID],
@@ -11,7 +10,6 @@ FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

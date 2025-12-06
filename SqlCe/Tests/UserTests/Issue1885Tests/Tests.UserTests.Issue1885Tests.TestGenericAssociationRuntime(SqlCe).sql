@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [User]
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [User]
@@ -22,7 +20,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT

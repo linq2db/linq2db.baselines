@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "LinqDataTypes"
@@ -20,7 +18,6 @@ VALUES
 	101
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	r."ID" = 101
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 102

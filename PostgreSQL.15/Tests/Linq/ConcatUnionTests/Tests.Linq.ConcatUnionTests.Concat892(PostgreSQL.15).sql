@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Value1",
@@ -25,7 +24,6 @@ SELECT
 FROM
 	"Child" c_3
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

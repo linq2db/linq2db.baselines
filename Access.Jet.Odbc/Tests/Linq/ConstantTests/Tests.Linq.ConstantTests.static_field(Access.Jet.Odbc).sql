@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
 SET     @GuidNonReadonly = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[GuidValue] = ? AND [e].[GuidNullableValue] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

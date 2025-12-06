@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id1 Int32
 SET     @id1 = 1
 DECLARE @id2 Int32
@@ -17,7 +16,6 @@ ORDER BY
 	`p`.`ParentID`
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id1 Int32
 SET     @id1 = 2

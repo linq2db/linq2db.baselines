@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @p VarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	"e"."StringValue" || '1' = @p
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

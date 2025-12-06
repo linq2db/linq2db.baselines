@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id"::VarChar(36)
@@ -7,8 +6,7 @@ FROM
 	"TableWithGuid" t
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -18,8 +16,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE '%63d-0f%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -29,8 +26,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE 'bc7b6%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -40,8 +36,7 @@ FROM
 WHERE
 	t."Id"::VarChar(36) LIKE '%8f4-53%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",

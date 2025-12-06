@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 1
 	[x].[Id],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[x].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

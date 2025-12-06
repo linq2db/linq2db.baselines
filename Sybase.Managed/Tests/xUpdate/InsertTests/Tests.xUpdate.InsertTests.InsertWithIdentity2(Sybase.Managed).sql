@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Person]
@@ -25,7 +23,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]

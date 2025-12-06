@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO DynamicColumnsTestTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'test_name'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

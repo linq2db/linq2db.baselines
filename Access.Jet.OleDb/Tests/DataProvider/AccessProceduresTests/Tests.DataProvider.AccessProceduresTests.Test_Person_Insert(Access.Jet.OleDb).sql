@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
 	[t1].[PersonID]
@@ -10,7 +7,6 @@ FROM
 ORDER BY
 	[t1].[PersonID] DESC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @firstName VarChar(9) -- AnsiString
 SET     @firstName = 'new first'
@@ -23,7 +19,6 @@ SET     @gender = 'U'
 
 Person_Insert
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @maxId Integer -- Int32
 SET     @maxId = 4
@@ -39,5 +34,3 @@ FROM
 WHERE
 	[t1].[PersonID] > @maxId
 
-BeforeExecute
-DisposeTransaction

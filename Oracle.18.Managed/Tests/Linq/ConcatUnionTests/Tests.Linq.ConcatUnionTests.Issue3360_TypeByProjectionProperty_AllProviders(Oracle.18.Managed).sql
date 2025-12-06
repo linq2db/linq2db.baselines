@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."Id",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"Issue3360Table" p_1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

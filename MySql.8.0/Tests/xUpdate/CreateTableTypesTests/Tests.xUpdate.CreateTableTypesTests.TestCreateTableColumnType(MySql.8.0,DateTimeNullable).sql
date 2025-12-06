@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @DateTimeNullable Datetime -- DateTime
@@ -16,7 +15,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	t."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	t2."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1

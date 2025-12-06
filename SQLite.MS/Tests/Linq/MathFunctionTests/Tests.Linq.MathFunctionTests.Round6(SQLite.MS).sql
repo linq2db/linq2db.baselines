@@ -1,10 +1,14 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			ROUND(CAST([p].[MoneyValue] AS Float)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	ROUND(CAST([t].[MoneyValue] AS Float)) <> 0
+	[t].[c1] <> 0
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @value BigInt(4) -- Int64
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @value BigInt(4) -- Int64
 SET     @value = 2147483648

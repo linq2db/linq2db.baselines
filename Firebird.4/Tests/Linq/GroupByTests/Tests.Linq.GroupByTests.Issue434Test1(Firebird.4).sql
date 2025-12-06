@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	Lower("m_1"."FirstName") LIKE CAST(@input AS VARCHAR(6)) ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'

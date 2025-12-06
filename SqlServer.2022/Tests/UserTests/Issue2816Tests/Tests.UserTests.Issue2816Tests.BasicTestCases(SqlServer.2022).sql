@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[p].[Id],
@@ -10,7 +9,6 @@ WHERE
 	[p].[Text] IS NULL OR (TRIM(N'	
                  　' FROM [p].[Text])) = N''
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

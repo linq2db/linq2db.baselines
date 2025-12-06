@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @Millisecond Int -- Int32
 SET     @Millisecond = 226
 

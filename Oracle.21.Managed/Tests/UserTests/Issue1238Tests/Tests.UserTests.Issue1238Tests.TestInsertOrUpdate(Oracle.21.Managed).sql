@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"InheritanceParent" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "InheritanceParent" t1
@@ -33,7 +29,6 @@ WHEN NOT MATCHED THEN
 		1
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -41,7 +36,6 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "InheritanceParent" t1
@@ -68,7 +62,6 @@ WHEN NOT MATCHED THEN
 		1
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -76,5 +69,3 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
-BeforeExecute
-DisposeTransaction

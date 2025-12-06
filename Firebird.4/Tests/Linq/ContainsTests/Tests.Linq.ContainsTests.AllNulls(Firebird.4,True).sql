@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"s"."Int" IS NULL
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

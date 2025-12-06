@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
 	"Person" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1

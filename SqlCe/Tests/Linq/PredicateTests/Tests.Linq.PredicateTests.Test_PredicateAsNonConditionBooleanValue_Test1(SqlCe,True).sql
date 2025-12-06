@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[r].[Id],
@@ -108,7 +107,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- SqlCe
 
 SELECT

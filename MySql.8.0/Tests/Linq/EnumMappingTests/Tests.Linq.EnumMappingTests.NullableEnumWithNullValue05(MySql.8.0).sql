@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p Int32
 SET     @p = 104
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 102
@@ -45,7 +42,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 103
@@ -63,7 +59,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -76,7 +71,6 @@ WHERE
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -90,7 +84,6 @@ WHERE
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p Int32
 SET     @p = 104

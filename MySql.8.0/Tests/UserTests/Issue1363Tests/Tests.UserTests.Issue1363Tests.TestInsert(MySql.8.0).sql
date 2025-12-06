@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id2 Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'

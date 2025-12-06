@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`Key_1`,
@@ -19,9 +16,6 @@ FROM
 	) `m_1`
 		INNER JOIN `Person` `d` ON `m_1`.`Key_1` = `d`.`FirstName`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

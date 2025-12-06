@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -12,7 +11,6 @@ VALUES
 	@ID
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5

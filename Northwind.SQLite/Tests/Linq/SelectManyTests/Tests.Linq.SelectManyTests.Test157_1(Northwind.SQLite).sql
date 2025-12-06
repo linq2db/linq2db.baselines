@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[bind_1].[OrderID],

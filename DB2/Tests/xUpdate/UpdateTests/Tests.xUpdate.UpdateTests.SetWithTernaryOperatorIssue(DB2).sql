@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -30,7 +29,6 @@ FROM
 		)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @nullableGender Char(1) -- StringFixedLength
 SET     @nullableGender = 'O'
@@ -42,7 +40,6 @@ SET
 WHERE
 	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5

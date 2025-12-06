@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"
@@ -29,7 +27,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 WHERE
 	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

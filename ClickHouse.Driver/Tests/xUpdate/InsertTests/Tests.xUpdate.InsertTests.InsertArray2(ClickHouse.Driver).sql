@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -22,7 +20,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	t.ID = 1001
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

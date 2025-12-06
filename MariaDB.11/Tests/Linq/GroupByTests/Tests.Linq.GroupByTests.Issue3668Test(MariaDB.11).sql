@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -20,10 +17,7 @@ WHERE
 	`m_1`.`PersonID` = @id AND `m_1`.`LastName` <> @name OR
 	`m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

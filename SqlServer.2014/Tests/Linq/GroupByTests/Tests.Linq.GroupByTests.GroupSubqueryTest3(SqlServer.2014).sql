@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[pmp].[ParentID]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[pmp].[ParentID]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

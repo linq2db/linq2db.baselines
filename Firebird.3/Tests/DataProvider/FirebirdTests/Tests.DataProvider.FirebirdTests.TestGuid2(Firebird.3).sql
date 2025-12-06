@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"t"."GuidValue"
 FROM
 	"LinqDataTypes" "t"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 	"LinqDataTypes" "t"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -62,7 +59,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @GuidValue Guid
 SET     @GuidValue = X'EF1291656FFE4DF9BB6BBB16E413C883'

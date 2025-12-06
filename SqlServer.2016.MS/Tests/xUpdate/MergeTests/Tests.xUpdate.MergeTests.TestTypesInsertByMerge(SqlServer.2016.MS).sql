@@ -1,18 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [TestMerge1] [Target]
@@ -95,7 +92,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [TestMerge2] [Target]
@@ -179,7 +175,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -207,7 +202,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

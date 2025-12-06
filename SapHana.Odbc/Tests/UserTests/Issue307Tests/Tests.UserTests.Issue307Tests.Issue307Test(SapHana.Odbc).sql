@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 5

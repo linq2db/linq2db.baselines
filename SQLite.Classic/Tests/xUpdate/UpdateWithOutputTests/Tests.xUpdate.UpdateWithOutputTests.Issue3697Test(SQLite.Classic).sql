@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [Test3697] DEFAULT VALUES
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 UPDATE
@@ -17,7 +15,6 @@ WHERE
 RETURNING
 	[Test3697Item].[Id]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 UPDATE

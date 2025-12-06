@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [Table2]
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Table1] [t]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

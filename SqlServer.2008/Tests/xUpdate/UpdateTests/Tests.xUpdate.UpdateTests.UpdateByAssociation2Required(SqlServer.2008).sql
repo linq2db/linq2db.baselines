@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[p].[Id] = @id
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

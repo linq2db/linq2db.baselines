@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -15,11 +14,9 @@ WHERE
 			[AssociatedTable] [p]
 				INNER JOIN [MainTable] [a_MainRequired] ON [p].[Id] = [a_MainRequired].[Id]
 		WHERE
-			[p].[Id] = @id AND [MainTable].[Id] = [a_MainRequired].[Id] AND
-			([MainTable].[Field] = [a_MainRequired].[Field] OR [MainTable].[Field] IS NULL AND [a_MainRequired].[Field] IS NULL)
+			[p].[Id] = @id AND [MainTable].[Id] = [a_MainRequired].[Id]
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT

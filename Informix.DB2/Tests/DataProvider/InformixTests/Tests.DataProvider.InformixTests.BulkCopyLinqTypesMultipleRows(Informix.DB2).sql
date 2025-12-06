@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4000
 DECLARE @MoneyValue Decimal(16)
@@ -52,7 +51,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4001
@@ -106,7 +104,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4002
@@ -160,7 +157,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4003
@@ -214,7 +210,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4004
@@ -268,7 +263,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4005
@@ -322,7 +316,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4006
@@ -376,7 +369,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4007
@@ -430,7 +422,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4008
@@ -484,7 +475,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 4009
@@ -538,7 +528,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

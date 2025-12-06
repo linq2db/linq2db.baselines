@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @DateTime Timestamp(20) -- DateTime
@@ -16,7 +15,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

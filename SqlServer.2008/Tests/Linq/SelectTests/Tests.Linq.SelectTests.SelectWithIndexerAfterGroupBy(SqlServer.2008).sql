@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[x].[Key_1],
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	[x].[Key_1] DESC
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

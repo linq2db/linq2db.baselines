@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -12,7 +11,6 @@ VALUES
 	@ID
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 5

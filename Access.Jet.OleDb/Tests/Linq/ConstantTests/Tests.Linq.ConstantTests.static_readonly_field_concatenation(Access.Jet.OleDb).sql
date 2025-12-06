@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[e].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[e].[StringValue] + '1' = 'StrValue1'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

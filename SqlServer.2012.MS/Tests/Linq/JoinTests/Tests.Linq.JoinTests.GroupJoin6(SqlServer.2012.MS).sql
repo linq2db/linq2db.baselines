@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] + @n = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @someId Int -- Int32
@@ -56,7 +55,6 @@ WHERE
 			"t"."id" = "c_1"."id" AND "t"."id" <> ? AND "UpdatedEntities"."id" = "c_1"."id"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

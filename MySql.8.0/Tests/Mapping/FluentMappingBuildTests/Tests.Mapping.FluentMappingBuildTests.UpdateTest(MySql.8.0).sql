@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Name VarChar(7) -- String
 SET     @Name = 'John II'
@@ -45,7 +44,6 @@ SET
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`

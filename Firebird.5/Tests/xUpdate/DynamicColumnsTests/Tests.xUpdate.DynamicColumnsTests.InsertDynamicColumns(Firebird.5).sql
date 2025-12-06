@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "Person"
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO Table2
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	Table1 t
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

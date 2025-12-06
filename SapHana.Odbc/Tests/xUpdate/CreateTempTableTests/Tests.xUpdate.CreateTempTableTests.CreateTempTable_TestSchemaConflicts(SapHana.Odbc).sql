@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TestTempTable"
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TempTable"
 (
 	"Id"      Integer       NOT NULL,
-	"Renamed" NVarChar(255)     NULL
+	"Renamed" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TempTable"
@@ -35,7 +34,6 @@ SELECT
 FROM
 	"TestTempTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TestTempTable"
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TempTable"
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TempTable"

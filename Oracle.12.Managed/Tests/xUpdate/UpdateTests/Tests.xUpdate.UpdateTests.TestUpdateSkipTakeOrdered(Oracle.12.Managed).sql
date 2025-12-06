@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int32
@@ -16,7 +15,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
@@ -34,7 +32,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1002
@@ -52,7 +49,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1003
@@ -70,7 +66,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1004
@@ -88,7 +83,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1005
@@ -106,7 +100,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1006
@@ -124,7 +117,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1007
@@ -142,7 +134,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1008
@@ -160,7 +151,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1009
@@ -178,7 +168,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 2
@@ -226,7 +215,6 @@ WHERE
 			"Parent"."ParentID" = t3."ParentID" AND ("Parent"."Value1" = t3."Value1" OR "Parent"."Value1" IS NULL AND t3."Value1" IS NULL)
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -23,7 +21,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck AND InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -38,7 +35,6 @@ WHERE
 	([p].[FirstName] NOT LIKE @nameToCheck OR InStr(1, [p].[FirstName], @nameToCheck_1, 0) <> 1) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -53,7 +49,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck AND InStr(1, [p].[FirstName], @nameToCheck_1, 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'JOH%'

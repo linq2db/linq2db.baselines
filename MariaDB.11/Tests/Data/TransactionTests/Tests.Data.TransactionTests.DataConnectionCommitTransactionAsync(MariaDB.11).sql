@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿BeginTransactionAsync
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -18,10 +16,8 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM

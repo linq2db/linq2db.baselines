@@ -1,25 +1,24 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	(
 		SELECT
-			SUM(t2."DetailId")
+			SUM(t2."Sum_1")
 		FROM
 			(
 				SELECT
-					t1."DetailId"
+					t1."Sum_1"
 				FROM
 					(
 						SELECT DISTINCT
-							"a_Details"."DetailId"
+							"a_Details"."DetailId" as "Sum_1"
 						FROM
 							"DetailClass" "a_Details"
 						WHERE
 							m_1."Id1" = "a_Details"."MasterId"
 					) t1
 				ORDER BY
-					t1."DetailId"
+					t1."Sum_1"
 				LIMIT 5 OFFSET 1 
 			) t2
 	),
@@ -33,24 +32,21 @@ SELECT
 				FROM
 					(
 						SELECT DISTINCT
-							"a_Details_1"."DetailValue"
+							"a_Details_1"."DetailValue" as "Count_1"
 						FROM
 							"DetailClass" "a_Details_1"
 						WHERE
 							m_1."Id1" = "a_Details_1"."MasterId"
 					) t3
 				ORDER BY
-					t3."DetailValue"
+					t3."Count_1"
 				LIMIT 2 OFFSET 1 
 			) t4
 	)
 FROM
 	"MasterClass" m_1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id1",
@@ -66,10 +62,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id1",

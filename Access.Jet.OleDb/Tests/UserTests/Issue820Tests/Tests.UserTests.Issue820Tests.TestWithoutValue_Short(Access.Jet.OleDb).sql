@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

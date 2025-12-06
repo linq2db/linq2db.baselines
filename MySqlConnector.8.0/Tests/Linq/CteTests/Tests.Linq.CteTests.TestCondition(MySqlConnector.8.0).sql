@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @var3 Int32
 SET     @var3 = 1
 

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ChildID] > 1000
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -22,19 +20,17 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -57,13 +53,12 @@ WHERE
 			[Child].[ChildID] = [c_1].[ChildID]
 	)
 
-BeforeExecute
 -- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 1003
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Child] [c_1]
 WHERE

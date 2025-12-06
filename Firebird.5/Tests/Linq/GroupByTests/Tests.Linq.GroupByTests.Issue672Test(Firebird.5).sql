@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- Firebird.5 Firebird4
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Boolean
+SET     @Enabled = TRUE
+DECLARE @ImageFullUrl VarChar(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	@Name,
+	@Enabled,
+	@ImageFullUrl
+)
+
 -- Firebird.5 Firebird4
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
@@ -20,29 +40,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- Firebird.5 Firebird4
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-DECLARE @Enabled Boolean
-SET     @Enabled = TRUE
-DECLARE @ImageFullUrl VarChar(3) -- String
-SET     @ImageFullUrl = '123'
-
-INSERT INTO "Stone"
-(
-	"Name",
-	"Enabled",
-	"ImageFullUrl"
-)
-VALUES
-(
-	@Name,
-	@Enabled,
-	@ImageFullUrl
-)
-
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
@@ -64,7 +61,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

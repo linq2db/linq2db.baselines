@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -17,7 +16,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -29,7 +27,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -48,7 +45,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -60,7 +56,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -79,7 +74,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -91,7 +85,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -118,7 +111,6 @@ WHERE
 			BooleanTable r_2
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -130,7 +122,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -149,7 +140,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -161,7 +151,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -180,7 +169,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -192,7 +180,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -211,7 +198,6 @@ WHERE
 			BooleanTable r_1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -223,7 +209,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -249,7 +234,6 @@ WHERE
 			BooleanTable r_2
 	))
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

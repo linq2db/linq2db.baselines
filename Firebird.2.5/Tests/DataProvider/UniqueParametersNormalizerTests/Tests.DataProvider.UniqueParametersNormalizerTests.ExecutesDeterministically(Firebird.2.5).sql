@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿-- Firebird.2.5 Firebird
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 
@@ -26,8 +25,7 @@ FROM
 WHERE
 	"row1_2"."Field1" STARTING WITH 'test'
 
-BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+-- Firebird.2.5 Firebird
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[c_1].[ParentID],
@@ -14,7 +13,6 @@ WHERE
 			[Parent] [p]
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

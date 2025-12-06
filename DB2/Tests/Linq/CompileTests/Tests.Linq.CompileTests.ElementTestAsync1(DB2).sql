@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 
@@ -12,8 +11,7 @@ WHERE
 	"c_1"."ParentID" = @p
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 2
 

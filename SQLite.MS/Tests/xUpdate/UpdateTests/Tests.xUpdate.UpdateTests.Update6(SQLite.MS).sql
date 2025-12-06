@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
@@ -40,7 +37,6 @@ SET
 WHERE
 	[Parent].[ParentID] = @id
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001

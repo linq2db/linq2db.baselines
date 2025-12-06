@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE [aa]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[aa] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [aa]

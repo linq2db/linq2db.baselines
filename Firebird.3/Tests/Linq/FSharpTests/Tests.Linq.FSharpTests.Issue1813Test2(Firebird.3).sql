@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -52,9 +49,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -62,17 +56,11 @@ SELECT
 	"d"."Id",
 	"d"."Text"
 FROM
-	(
-		SELECT DISTINCT
-			"Item1"."Id"
-		FROM
-			"Names" "Item1"
-	) "m_1"
+	"Names" "m_1"
 		INNER JOIN "Addresses" "d" ON "m_1"."Id" = "d"."Id"
+ORDER BY
+	"m_1"."Id"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

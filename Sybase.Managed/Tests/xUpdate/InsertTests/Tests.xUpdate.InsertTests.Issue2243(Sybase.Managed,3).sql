@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy UniVarChar -- String
@@ -37,7 +36,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -48,7 +46,6 @@ SELECT TOP 2
 FROM
 	[test_insert_or_replace] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test2'
@@ -87,7 +84,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

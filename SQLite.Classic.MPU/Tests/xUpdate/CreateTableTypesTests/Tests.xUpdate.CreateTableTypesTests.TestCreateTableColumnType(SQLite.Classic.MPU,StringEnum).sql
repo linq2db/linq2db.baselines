@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StringEnum NVarChar(2) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringEnum
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@StringEnum
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

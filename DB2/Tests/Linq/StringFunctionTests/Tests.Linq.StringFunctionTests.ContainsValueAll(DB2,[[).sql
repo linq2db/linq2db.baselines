@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"p"."PersonID" = 1 AND '123[[456' LIKE '%[[%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

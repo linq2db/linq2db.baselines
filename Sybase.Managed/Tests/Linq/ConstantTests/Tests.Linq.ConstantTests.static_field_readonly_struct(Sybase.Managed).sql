@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @p Integer -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

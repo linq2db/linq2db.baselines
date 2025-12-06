@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -12,9 +11,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 11
@@ -29,9 +25,6 @@ FROM
 WHERE
 	d."Id" = :id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -39,9 +32,6 @@ SELECT
 FROM
 	"Test3664" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 12
@@ -56,9 +46,6 @@ FROM
 WHERE
 	d."Id" = :id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

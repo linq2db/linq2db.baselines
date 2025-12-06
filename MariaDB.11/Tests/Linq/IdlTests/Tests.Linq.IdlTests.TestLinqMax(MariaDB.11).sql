@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	MAX(`x`.`PersonID`)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	`x`.`PersonID` < 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	MAX(`x`.`PersonID`)
@@ -18,8 +16,7 @@ FROM
 WHERE
 	`x`.`PersonID` < 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	MAX(`x`.`PersonID`)
@@ -28,8 +25,7 @@ FROM
 WHERE
 	`x`.`PersonID` < 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	MAX(`x`.`PersonID`)

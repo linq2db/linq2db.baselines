@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
@@ -13,7 +11,6 @@ CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 	[Value] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	[tempdb]..[#CreateIfNotExistsTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NULL)
@@ -32,13 +28,11 @@ IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)

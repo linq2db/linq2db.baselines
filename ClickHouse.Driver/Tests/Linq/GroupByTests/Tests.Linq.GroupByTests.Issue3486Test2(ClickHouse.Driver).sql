@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	gr.FirstName,
 	gr.LastName,
-	sum(gr.PersonID)
+	SUM(gr.PersonID)
 FROM
 	Person gr
 GROUP BY

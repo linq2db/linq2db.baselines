@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @newValue Int -- Int32
 SET     @newValue = 123
@@ -22,7 +20,6 @@ UPDATE
 SET
 	[Value] = @newValue
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (2)

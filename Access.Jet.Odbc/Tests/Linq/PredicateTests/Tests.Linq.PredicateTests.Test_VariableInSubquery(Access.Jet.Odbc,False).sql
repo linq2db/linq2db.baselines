@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -21,7 +20,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
@@ -56,7 +53,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -68,7 +64,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
@@ -91,7 +86,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -103,7 +97,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
@@ -126,7 +119,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -138,7 +130,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
@@ -161,7 +152,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -173,7 +163,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @One Int -- Int32
 SET     @One = 1
@@ -196,7 +185,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -208,7 +196,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
@@ -231,7 +218,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -243,7 +229,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
@@ -266,7 +251,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -278,7 +262,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
@@ -301,7 +284,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -313,7 +295,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -325,7 +306,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

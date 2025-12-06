@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @newValue Int -- Int32
 SET     @newValue = 123
@@ -22,7 +20,6 @@ UPDATE
 SET
 	"Value" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

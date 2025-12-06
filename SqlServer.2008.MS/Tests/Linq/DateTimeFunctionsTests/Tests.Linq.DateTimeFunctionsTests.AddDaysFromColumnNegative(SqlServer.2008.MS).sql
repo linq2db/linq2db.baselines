@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -50,7 +48,6 @@ FROM
 WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < CAST('2018-01-02' AS DateTime2)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t]

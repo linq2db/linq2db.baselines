@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
 	`Parent` `p`
@@ -8,9 +7,6 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
@@ -20,7 +16,6 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -32,9 +27,7 @@ WHERE
 	`p`.`ParentID` = 1
 LIMIT 1
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

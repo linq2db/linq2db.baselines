@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 WITH [CTE_1] ([Id2], [Id1])
 AS

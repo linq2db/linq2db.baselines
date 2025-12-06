@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @separator NVarChar(4000) -- String
 SET     @separator = N' => '
 

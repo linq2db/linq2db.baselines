@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	LISTAGG("g_1"."Value1", ' -> ') WITHIN GROUP (ORDER BY "g_1"."Value3", "g_1"."Value1" DESC)

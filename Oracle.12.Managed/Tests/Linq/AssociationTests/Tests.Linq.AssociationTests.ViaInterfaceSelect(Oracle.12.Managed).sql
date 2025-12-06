@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."Id",
@@ -11,9 +8,6 @@ FROM
 	"MainEntity" m_1
 		INNER JOIN "SubEntity" d ON m_1."Id" = d."MainEntityId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	IIF([t].[c1] * 2 = ROUND([t].[c1] * 2, 5) AND [t].[c1] <> ROUND([t].[c1], 5), ROUND([t].[c1] / 2, 5) * 2, ROUND([t].[c1], 5))

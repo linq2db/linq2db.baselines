@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 

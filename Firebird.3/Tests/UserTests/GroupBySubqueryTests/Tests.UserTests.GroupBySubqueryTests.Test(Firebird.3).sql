@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT DISTINCT
 	"a_Ref4"."Field6",
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"t1"."Field3" IS NOT NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

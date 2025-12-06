@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT DISTINCT
 	"a_Ref4"."Field6",
@@ -15,7 +14,6 @@ FROM
 WHERE
 	t1."Field3" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

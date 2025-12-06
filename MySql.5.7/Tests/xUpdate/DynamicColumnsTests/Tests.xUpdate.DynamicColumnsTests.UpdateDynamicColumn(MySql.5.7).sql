@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Person`
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	`c_1`.`LastName` = 'Limonadovy'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

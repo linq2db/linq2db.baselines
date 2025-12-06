@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @addition Int -- Int32
 SET     @addition = 123
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

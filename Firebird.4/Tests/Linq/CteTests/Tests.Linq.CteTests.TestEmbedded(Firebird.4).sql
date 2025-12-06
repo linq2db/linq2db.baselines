@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
-WITH RECURSIVE CTE_1 ("ChildID")
+WITH CTE_1 ("ChildID")
 AS
 (
 	SELECT

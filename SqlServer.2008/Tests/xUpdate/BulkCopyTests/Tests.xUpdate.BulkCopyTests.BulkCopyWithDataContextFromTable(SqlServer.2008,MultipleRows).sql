@@ -1,10 +1,7 @@
-﻿BeforeExecute
+﻿INSERT BULK [SimpleBulkCopyTable](Id)
+
 INSERT BULK [SimpleBulkCopyTable](Id)
 
-BeforeExecute
-INSERT BULK [SimpleBulkCopyTable](Id)
-
-BeforeExecute
 -- SqlServer.2008
 
 INSERT INTO [SimpleBulkCopyTable]

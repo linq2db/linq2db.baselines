@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.FirstName,
@@ -13,7 +12,6 @@ FROM
 	) m_1
 		INNER JOIN Person d ON m_1.FirstName = d.FirstName
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

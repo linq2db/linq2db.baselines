@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Id",
 	"t1"."user_name",
 	"t1"."city",
 	"t1"."street",

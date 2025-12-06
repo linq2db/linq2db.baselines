@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT DISTINCT
 	[cc_1].[Name]

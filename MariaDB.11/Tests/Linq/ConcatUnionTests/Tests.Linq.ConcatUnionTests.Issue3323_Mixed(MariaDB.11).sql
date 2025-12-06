@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue3323Table`
 (
 	`Id`,
-	`FistName`,
+	`FirstName`,
 	`LastName`,
 	`Text`
 )
@@ -16,12 +15,11 @@ VALUES
 	'text'
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
-	Concat(`r`.`FistName`, ' ', `r`.`LastName`)
+	Concat(`r`.`FirstName`, ' ', `r`.`LastName`)
 FROM
 	`Issue3323Table` `r`
 UNION ALL
@@ -31,8 +29,7 @@ SELECT
 FROM
 	`Issue3323Table` `r_1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id` + 1,
@@ -42,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	`r_1`.`Id`,
-	Concat(`r_1`.`FistName`, ' ', `r_1`.`LastName`)
+	Concat(`r_1`.`FirstName`, ' ', `r_1`.`LastName`)
 FROM
 	`Issue3323Table` `r_1`
 

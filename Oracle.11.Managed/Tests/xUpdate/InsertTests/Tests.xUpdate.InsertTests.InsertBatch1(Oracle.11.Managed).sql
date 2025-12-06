@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE
 	t1.ID > 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
@@ -14,7 +12,6 @@ INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "GuidValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (1004,0,NULL,NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),NULL,NULL,NULL,NULL)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"g_2"."Key_1",
@@ -17,7 +16,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -29,7 +27,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -60,7 +56,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -79,7 +74,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -91,7 +85,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -110,7 +103,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -122,7 +114,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -141,7 +132,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -153,7 +143,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -172,7 +161,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -184,7 +172,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -204,7 +191,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -216,7 +202,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -236,7 +221,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -248,7 +232,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -267,7 +250,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -279,7 +261,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -298,7 +279,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -310,7 +290,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -329,7 +308,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -341,7 +319,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -360,7 +337,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -372,7 +348,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -391,7 +366,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -403,7 +377,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -423,7 +396,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -435,7 +407,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -454,7 +425,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -466,7 +436,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -485,7 +454,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -497,7 +465,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -516,7 +483,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -528,7 +494,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -547,7 +512,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -559,7 +523,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -578,7 +541,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -590,7 +552,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -610,7 +571,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -622,7 +582,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -641,7 +600,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -653,7 +611,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -672,7 +629,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -684,7 +640,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -703,7 +658,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -715,7 +669,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -734,7 +687,6 @@ FROM
 GROUP BY
 	"g_2"."Key_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

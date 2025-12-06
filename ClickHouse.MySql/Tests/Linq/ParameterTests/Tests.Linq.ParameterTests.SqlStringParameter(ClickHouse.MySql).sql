@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t.PersonID,
@@ -13,7 +12,6 @@ WHERE
 	t.FirstName = 'John'
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

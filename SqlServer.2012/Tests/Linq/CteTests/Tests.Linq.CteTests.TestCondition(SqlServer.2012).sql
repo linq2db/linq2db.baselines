@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @var3 Int -- Int32
 SET     @var3 = 1
 

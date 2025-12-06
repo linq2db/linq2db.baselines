@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TableWithIdentity
 (
@@ -12,7 +11,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

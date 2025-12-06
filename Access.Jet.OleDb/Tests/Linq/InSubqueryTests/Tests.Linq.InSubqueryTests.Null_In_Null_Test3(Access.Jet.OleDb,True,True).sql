@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -15,19 +16,21 @@ WHERE
 			[t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL
 	)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_2] [t1]
 

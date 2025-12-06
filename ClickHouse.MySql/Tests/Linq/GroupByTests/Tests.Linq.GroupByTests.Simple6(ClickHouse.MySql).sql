@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -15,7 +14,6 @@ FROM
 	) m_1
 		INNER JOIN GrandChild d ON m_1.ParentID = d.ParentID AND m_1.ChildID = d.ChildID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

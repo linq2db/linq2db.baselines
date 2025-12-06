@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1002

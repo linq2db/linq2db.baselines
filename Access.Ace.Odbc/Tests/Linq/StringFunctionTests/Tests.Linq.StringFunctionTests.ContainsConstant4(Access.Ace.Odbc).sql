@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND ? LIKE '%[[]%'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'

@@ -1,7 +1,6 @@
-﻿BeginTransactionAsync(RepeatableRead)
+﻿
 
-
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`ProductId`,
@@ -31,7 +30,7 @@ FROM
 
 
 
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`OrderID`,
@@ -59,10 +58,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`e`.`IsDeleted`,

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TestTrun]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [TestTrun]
@@ -14,12 +12,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 TRUNCATE TABLE [TestTrun]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE [TestTrun]

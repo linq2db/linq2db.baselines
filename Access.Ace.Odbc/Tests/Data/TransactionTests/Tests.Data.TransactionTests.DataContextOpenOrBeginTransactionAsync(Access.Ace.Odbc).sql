@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -18,5 +16,3 @@ VALUES
 	?
 )
 
-BeforeExecute
-DisposeTransaction

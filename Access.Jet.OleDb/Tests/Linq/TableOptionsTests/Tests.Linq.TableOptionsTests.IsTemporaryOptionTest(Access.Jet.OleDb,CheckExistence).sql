@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -25,16 +25,16 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [temp_table2]
@@ -48,7 +48,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -57,7 +56,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -66,7 +64,6 @@ SELECT
 FROM
 	[temp_table2] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
@@ -84,7 +81,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
@@ -102,7 +98,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
@@ -120,22 +115,18 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM [temp_table1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM [temp_table2]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [temp_table2]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [temp_table1]

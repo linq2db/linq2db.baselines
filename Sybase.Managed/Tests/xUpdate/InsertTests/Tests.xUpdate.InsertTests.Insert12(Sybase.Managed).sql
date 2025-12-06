@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender UniChar(1) -- StringFixedLength

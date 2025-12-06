@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 15

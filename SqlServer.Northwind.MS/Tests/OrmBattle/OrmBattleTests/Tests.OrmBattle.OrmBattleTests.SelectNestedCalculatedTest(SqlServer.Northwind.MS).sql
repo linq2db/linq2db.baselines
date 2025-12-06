@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	([r].[Freight] * 1000) / 1000

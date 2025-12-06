@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	p."PersonID" = :id AND p."MiddleName" IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1

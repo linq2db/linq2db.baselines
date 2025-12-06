@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
+	p."Id",
 	p."MyEnum",
 	p."MyEnum2"
 FROM

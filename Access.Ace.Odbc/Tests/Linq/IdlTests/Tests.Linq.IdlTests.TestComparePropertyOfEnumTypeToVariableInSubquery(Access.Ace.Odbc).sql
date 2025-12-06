@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'O'
 

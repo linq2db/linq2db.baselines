@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +10,6 @@ INSERT INTO [Issue4460Table]
 VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

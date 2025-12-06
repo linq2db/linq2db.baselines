@@ -125,7 +125,7 @@ SELECT
 FROM
 	[Subdivisions] [s]
 WHERE
-	CAST([s].[Id] AS BigInt) = 1
+	CAST([s].[Id] AS INTEGER) = 1
 
 
 

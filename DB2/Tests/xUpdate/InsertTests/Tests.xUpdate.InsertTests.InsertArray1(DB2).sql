@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID > 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	"t".ID = 1001
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

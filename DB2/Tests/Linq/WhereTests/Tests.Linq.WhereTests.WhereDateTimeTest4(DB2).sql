@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1".ID,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	"t1"."DateTimeValue" = '2009-09-27-00.00.00.000000'
+	"t1"."DateTimeValue" = CAST('2009-09-27' AS timestamp)
 

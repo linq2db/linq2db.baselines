@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -17,12 +17,12 @@ WHERE
 			(VALUES
 				([p].[Date1]), ([p].[Date2]), ([p].[Date3]), ([p].[Date4])
 			) [t1]([item])
-	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 7)
+	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 3)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

@@ -1,15 +1,16 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
 	ID    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -19,18 +20,19 @@ INSERT INTO temp_table1
 VALUES
 (1,2)
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
 	ID    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table2
 (
@@ -43,7 +45,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -52,7 +53,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -61,8 +61,7 @@ SELECT
 FROM
 	temp_table2 t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -72,8 +71,7 @@ INSERT INTO temp_table1
 VALUES
 (2,3)
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -86,8 +84,7 @@ VALUES
 	3
 )
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -97,22 +94,18 @@ INSERT INTO temp_table1
 VALUES
 (4,5)
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 TRUNCATE TABLE temp_table1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 TRUNCATE TABLE temp_table2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS temp_table2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS temp_table1

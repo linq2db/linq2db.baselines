@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	p.ParentID,
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p.Value1 IS NULL OR p.Value1 <> 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

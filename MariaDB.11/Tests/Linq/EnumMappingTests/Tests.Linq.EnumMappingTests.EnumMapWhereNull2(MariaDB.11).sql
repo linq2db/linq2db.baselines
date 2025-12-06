@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 102
 
@@ -9,8 +8,7 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `LinqDataTypes`
 (
@@ -21,8 +19,7 @@ VALUES
 	101
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`BigIntValue`
@@ -32,8 +29,7 @@ WHERE
 	`r`.`ID` = 101 AND `r`.`BigIntValue` IS NULL
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 102
 

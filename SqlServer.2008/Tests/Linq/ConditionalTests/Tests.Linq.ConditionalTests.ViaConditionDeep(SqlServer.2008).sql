@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[x].[Id],
@@ -32,7 +31,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

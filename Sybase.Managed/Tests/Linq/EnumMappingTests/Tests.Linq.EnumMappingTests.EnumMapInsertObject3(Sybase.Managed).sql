@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@TestField
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102

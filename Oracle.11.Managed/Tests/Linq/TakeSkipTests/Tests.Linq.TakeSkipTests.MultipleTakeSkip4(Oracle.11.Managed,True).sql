@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @skip_1 Int32
@@ -10,15 +9,18 @@ DECLARE @take Int32
 SET     @take = 2
 
 SELECT
+	t3."Id",
 	t3."Value_1"
 FROM
 	(
 		SELECT
+			t2."Id",
 			t2."Value_1",
 			ROWNUM as RN
 		FROM
 			(
 				SELECT
+					t1."Id",
 					t1."Value" as "Value_1"
 				FROM
 					"TakeSkipClass" t1

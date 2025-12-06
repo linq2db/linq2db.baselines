@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[x].[Value1],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p2].[ParentID] <= 3
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[a_Child].[ParentID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[sub].[ParentID] = [g_1].[ParentID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

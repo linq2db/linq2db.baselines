@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	t.FirstName = @p
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'

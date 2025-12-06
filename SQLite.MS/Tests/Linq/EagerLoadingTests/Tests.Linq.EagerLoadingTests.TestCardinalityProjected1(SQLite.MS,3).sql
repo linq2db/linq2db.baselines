@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id],
@@ -17,9 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

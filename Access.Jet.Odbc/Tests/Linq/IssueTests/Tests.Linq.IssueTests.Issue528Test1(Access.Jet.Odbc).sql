@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[Key_1],
@@ -19,9 +16,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON ([m_1].[Key_1] = [d].[FirstName])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

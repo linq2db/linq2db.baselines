@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 WITH [CTE_1]
 (
@@ -54,7 +53,6 @@ SELECT TOP (1)
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (1)

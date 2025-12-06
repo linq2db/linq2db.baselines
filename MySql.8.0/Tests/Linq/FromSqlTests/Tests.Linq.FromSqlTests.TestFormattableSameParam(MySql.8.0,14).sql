@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	`c_1`.`id`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @startId Int32
 SET     @startId = 5

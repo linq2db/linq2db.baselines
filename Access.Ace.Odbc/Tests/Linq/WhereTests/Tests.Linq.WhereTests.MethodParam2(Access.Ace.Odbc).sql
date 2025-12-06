@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 2

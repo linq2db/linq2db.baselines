@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TableWithIdentity" "Target"
 USING (VALUES

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -13,8 +12,7 @@ FROM
 WHERE
 	m_1.Id1 >= 0
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.Id1,
@@ -34,8 +32,7 @@ FROM
 WHERE
 	d.MasterId % 2 = 0
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id1,

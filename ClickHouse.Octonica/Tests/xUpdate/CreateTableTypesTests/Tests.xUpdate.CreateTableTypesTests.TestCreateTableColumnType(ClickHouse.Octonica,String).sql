@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO CreateTableTypes
 (
@@ -12,7 +11,6 @@ VALUES
 	''
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO CreateTableTypes
@@ -26,7 +24,6 @@ VALUES
 	'test max value'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

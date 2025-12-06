@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	SUM(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))

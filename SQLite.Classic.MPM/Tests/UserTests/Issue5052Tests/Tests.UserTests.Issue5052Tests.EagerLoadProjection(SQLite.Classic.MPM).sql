@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[l].[Id],
@@ -13,9 +10,6 @@ FROM
 WHERE
 	[dtoLocationMapping].[id] = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

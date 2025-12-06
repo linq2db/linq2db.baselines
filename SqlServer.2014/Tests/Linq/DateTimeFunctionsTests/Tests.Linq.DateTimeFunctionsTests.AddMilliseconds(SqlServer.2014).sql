@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	DateAdd(millisecond, 226, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

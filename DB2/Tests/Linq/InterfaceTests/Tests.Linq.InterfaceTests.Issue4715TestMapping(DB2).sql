@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer(4) -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

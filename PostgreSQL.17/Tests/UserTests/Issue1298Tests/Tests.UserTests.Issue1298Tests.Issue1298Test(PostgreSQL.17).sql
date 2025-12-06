@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 DECLARE @asdfgh Text(4) -- String
@@ -18,7 +15,6 @@ VALUES
 	:asdfgh
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Bigint -- Int64
 SET     @Id = 100500
@@ -36,7 +32,6 @@ VALUES
 	:asdfgh
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
@@ -54,7 +49,6 @@ VALUES
 	:y1_q1_ref1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 1
@@ -72,7 +66,6 @@ VALUES
 	:y1_q1_ref1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
@@ -90,7 +83,6 @@ VALUES
 	:y1_q1_ref1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
@@ -110,5 +102,3 @@ FROM
 	mega_composites x
 LIMIT :take
 
-BeforeExecute
-DisposeTransaction

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."ParentID",
@@ -19,7 +16,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -28,5 +24,3 @@ SELECT FIRST 1
 FROM
 	"Parent" "t"
 
-BeforeExecute
-DisposeTransaction

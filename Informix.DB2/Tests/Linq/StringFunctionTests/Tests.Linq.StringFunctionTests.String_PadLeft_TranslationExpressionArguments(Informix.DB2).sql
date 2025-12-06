@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	s.ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	s.FirstName <> ''
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

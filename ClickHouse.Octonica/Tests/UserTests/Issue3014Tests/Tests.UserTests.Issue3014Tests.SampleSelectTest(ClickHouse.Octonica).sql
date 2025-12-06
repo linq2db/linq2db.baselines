@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	1
 FROM
 	TableStatus_3014 x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	Table2_3014 t
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	TableStatus_3014 x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -32,7 +28,6 @@ FROM
 WHERE
 	x.Id = 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -40,7 +35,6 @@ SELECT
 FROM
 	TableStatus_3014 x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -50,7 +44,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -58,7 +51,6 @@ SELECT
 FROM
 	TableStatus_3014 x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

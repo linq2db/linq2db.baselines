@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[FirstName],
@@ -15,7 +14,6 @@ ORDER BY
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 INSERT INTO [TableWithIdentity]
 (
@@ -10,7 +9,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (2)

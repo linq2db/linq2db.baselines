@@ -1,22 +1,28 @@
-﻿BeforeExecute
+﻿-- Oracle.11.Managed Oracle11
+
+CREATE TABLE "temp_table_1"
+(
+	ID      Int          NOT NULL,
+	"Value" VarChar(255)     NULL,
+
+	CONSTRAINT "PK_temp_table_1" PRIMARY KEY (ID)
+)
+
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE "temp_table_2"
-		(
-			"Value" VarChar(255)     NULL
-		)
-		ON COMMIT PRESERVE ROWS
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
+INSERT ALL
+	INTO "temp_table_1" (ID, "Value") VALUES (1,'Value')
+SELECT * FROM dual
 
-BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+CREATE TABLE "temp_table_2"
+(
+	"Value" VarChar(50) NOT NULL,
+
+	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
+)
+
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "temp_table_2"
@@ -43,11 +49,21 @@ FROM
 				"temp_table_1" c_1
 		) t1 ON gr_1.ID = t1.ID AND t1."rn" <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_2"';
+EXCEPTION
+	WHEN OTHERS THEN
+		IF SQLCODE != -942 THEN
+			RAISE;
+		END IF;
+END;
+
+-- Oracle.11.Managed Oracle11
+
+BEGIN
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_1"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	pmp.ParentID
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	pmp.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

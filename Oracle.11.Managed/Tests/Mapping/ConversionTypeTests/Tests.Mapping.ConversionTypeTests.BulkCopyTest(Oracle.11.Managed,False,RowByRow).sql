@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Data Varchar2(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	:Data
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -27,7 +25,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

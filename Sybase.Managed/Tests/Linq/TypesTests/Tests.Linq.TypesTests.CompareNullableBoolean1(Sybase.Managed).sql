@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t].[ID],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @param Bit -- Boolean
 SET     @param = 1

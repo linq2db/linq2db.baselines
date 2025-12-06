@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
@@ -12,9 +9,6 @@ FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

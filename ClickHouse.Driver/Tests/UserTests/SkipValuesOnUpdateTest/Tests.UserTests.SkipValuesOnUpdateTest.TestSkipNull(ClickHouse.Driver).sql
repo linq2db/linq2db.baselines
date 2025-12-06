@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO PR_1598_Update_Null_Table
 (
@@ -14,7 +13,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -38,7 +35,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -51,7 +47,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -61,7 +56,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

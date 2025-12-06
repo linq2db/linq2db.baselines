@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 WITH CTE_1 (Child_ParentID, Child_ChildID)
 AS
@@ -19,7 +18,6 @@ FROM
 	Parent p
 		INNER JOIN CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

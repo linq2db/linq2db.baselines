@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
@@ -39,7 +35,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Data AS Int)
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -47,7 +42,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
@@ -80,7 +74,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Data AS Int)
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -88,5 +81,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

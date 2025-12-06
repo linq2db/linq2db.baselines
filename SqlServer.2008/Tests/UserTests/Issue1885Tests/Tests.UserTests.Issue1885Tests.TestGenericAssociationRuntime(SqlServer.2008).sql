@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 INSERT INTO [User]
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 INSERT INTO [User]
@@ -22,7 +20,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

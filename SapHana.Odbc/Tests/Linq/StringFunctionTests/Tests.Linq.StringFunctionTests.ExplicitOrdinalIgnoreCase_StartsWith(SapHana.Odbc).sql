@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"CollatedTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	Lower("r"."CaseSensitive") LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	Lower("r"."CaseInsensitive") LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	Lower("r"."CaseSensitive") LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

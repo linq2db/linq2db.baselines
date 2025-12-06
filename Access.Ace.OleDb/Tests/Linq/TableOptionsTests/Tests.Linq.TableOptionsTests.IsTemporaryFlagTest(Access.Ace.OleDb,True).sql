@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_IsTemporaryTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	[IsTemporaryTable] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [IsTemporaryTable]

@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT DISTINCT
-	"t1"."Value"
+	"r"."Value"
 FROM
-	"TakeSkipClass" "t1"
+	"TakeSkipClass" "r"
 LIMIT 3
 

@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		c_1.ChildID

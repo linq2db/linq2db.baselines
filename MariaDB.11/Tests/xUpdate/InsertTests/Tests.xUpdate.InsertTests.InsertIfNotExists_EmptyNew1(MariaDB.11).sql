@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -12,8 +11,7 @@ VALUES
 	'test'
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	"t"."Data" = '***XXX***'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	"t"."Data" = @p
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

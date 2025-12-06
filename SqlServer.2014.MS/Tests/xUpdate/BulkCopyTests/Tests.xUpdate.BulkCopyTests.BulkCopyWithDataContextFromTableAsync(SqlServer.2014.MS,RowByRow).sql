@@ -1,11 +1,8 @@
-﻿BeforeExecute
+﻿INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
+
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
-BeforeExecute
-INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -18,14 +15,11 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
-BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 

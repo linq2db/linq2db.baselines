@@ -1,22 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [xxPerson]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     Char(1)        NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -41,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -49,7 +30,6 @@ SELECT
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -62,7 +42,6 @@ FROM
 	[xxPerson] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
@@ -85,7 +64,6 @@ SET
 WHERE
 	[xxPerson].[PersonID] = @ID
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -97,9 +75,4 @@ SELECT
 FROM
 	[xxPerson] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE [xxPerson]
 

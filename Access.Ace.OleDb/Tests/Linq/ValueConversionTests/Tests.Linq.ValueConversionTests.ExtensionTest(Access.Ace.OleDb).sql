@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @testedList VarWChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

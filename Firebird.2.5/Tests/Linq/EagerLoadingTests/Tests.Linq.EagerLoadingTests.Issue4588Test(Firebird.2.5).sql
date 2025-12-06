@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10
 DECLARE @skip Integer -- Int32
@@ -40,7 +37,6 @@ FROM
 	) "m_1"
 		INNER JOIN "SubOrderDetail" "d_1" ON "m_1"."Id" = "d_1"."SubOrderId"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10
@@ -69,9 +65,6 @@ FROM
 	) "m_1"
 		INNER JOIN "SubOrder" "d" ON "m_1"."Id" = "d"."OrderId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10

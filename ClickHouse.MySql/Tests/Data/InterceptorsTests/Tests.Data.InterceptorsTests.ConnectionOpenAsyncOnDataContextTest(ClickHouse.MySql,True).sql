@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -7,8 +6,7 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -16,8 +14,7 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ParentID,

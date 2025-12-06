@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ch."ParentID",
@@ -8,8 +7,7 @@ FROM
 	"Child" ch
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ch."ParentID",
@@ -18,8 +16,7 @@ FROM
 	"Child" ch
 LIMIT 3
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ch."ParentID",
@@ -28,8 +25,7 @@ FROM
 	"Child" ch
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ch."ParentID",

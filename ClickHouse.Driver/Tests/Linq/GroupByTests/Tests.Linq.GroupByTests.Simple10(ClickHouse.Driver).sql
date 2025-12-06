@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -14,7 +13,6 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.Key_1 = d.ParentID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

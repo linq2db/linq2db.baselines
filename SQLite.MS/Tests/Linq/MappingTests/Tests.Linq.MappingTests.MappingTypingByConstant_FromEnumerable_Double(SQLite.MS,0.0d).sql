@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[arg].[Id],
@@ -13,7 +12,6 @@ FROM
 				(1,0)
 			) [arg] ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

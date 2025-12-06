@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"g_2"."ChildId",
@@ -19,7 +18,6 @@ GROUP BY
 	"g_2"."ChildId",
 	"g_2"."ParentId"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

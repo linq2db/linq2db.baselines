@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [Issue681Table2]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [Issue681Table2]
 (
@@ -14,8 +12,7 @@ CREATE TABLE [Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [Issue681Table2]
 

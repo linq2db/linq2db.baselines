@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[m_1].[ParentID],
@@ -19,20 +16,17 @@ FROM
 		LEFT JOIN [Child] [a_Child] ON [d].[ParentID] = [a_Child].[ParentID] AND [d].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[COUNT_1],
+	[t1].[Count_1],
 	[p].[ParentID],
 	[p].[ChildID]
 FROM
 	[Child] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[GrandChild] [a_GrandChildren]
 			WHERE

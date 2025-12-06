@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
 	EXECUTE('
@@ -7,11 +6,12 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
-			[LastName] NVarChar(20)     NULL
+			[LastName] NVarChar(20)     NULL,
+
+			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -33,7 +33,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -45,13 +44,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
@@ -60,11 +57,12 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
-			[LastName] NVarChar(20)     NULL
+			[LastName] NVarChar(20)     NULL,
+
+			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -86,7 +84,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -98,13 +95,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
@@ -113,11 +108,12 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		(
 			[ID]       Int          NOT NULL,
 			[Column]   NVarChar(20)     NULL,
-			[LastName] NVarChar(20)     NULL
+			[LastName] NVarChar(20)     NULL,
+
+			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -139,7 +135,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -151,13 +146,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
@@ -166,11 +159,12 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		(
 			[ID]       Int          NOT NULL,
 			[Column]   NVarChar(20)     NULL,
-			[LastName] NVarChar(20)     NULL
+			[LastName] NVarChar(20)     NULL,
+
+			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -192,7 +186,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -204,7 +197,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)

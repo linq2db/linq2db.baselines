@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
@@ -31,7 +28,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
@@ -42,14 +38,9 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
@@ -60,7 +51,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
@@ -71,7 +61,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
@@ -82,7 +71,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111

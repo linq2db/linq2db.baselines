@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[Person] INDEXED BY IX_PersonDesc

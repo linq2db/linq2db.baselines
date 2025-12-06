@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ConcreteA
 (
@@ -12,7 +11,6 @@ VALUES
 	'a only'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ConcreteB
@@ -26,7 +24,6 @@ VALUES
 	'b only'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

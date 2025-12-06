@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	ess."ID"
@@ -15,7 +14,6 @@ WHERE
 			ess."ID" = y."ID" AND y."IS_ACTIVE"
 	)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

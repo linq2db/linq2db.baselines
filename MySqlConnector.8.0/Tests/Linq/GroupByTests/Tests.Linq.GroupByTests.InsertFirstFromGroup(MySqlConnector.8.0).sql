@@ -1,12 +1,32 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-CREATE TEMPORARY TABLE `temp_table_2`
+CREATE TABLE `temp_table_1`
 (
-	`Value` VARCHAR(4000)     NULL
+	`ID`    INT           NOT NULL,
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_temp_table_1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+INSERT INTO `temp_table_1`
+(
+	`ID`,
+	`Value`
+)
+VALUES
+(1,'Value')
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+CREATE TABLE `temp_table_2`
+(
+	`Value` VARCHAR(50) NOT NULL,
+
+	CONSTRAINT `PK_temp_table_2` PRIMARY KEY CLUSTERED (`Value`)
+)
+
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `temp_table_2`
@@ -34,8 +54,11 @@ FROM
 			LIMIT 1
 		) `t1` ON 1=1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `temp_table_2`
+DROP TABLE IF EXISTS `temp_table_2`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TABLE IF EXISTS `temp_table_1`
 

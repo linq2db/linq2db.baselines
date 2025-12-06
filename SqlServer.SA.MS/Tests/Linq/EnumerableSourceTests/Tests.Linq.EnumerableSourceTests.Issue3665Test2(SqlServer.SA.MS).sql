@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -9,7 +8,6 @@ FROM
 			(0), (1), (2), (3)
 		) [y]([item])
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

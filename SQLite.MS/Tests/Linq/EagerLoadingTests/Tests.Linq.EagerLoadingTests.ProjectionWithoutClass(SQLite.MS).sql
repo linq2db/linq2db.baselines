@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Details],
@@ -15,9 +12,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Details] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

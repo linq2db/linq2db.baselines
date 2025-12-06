@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @parentId Int -- Int32
 SET     @parentId = 12
 
 SELECT
+	[i].[Id],
 	[i].[Name],
 	[i].[ParentId]
 FROM

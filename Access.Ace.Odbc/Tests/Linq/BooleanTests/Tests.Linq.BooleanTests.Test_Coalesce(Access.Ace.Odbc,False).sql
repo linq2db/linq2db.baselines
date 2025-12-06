@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @True Bit -- Boolean
 SET     @True = True
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, ?, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @False Bit -- Boolean
 SET     @False = False
@@ -54,7 +51,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, ?, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

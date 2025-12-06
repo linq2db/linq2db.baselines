@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (1)
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
@@ -63,7 +60,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (1)
@@ -77,7 +73,6 @@ FROM
 WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 5

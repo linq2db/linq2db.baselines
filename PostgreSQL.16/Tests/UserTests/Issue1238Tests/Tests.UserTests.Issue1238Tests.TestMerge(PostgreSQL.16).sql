@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"InheritanceParent" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "InheritanceParent" "Target"
@@ -40,7 +36,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "InheritanceParent" "Target"
@@ -82,7 +76,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -90,5 +83,3 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
-BeforeExecute
-DisposeTransaction

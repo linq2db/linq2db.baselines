@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 

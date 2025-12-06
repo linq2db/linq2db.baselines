@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 
 DROP TABLE IF EXISTS schedule;
 DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO public.schedule
 (
@@ -21,7 +19,6 @@ VALUES
 ('day','day',3),
 ('hour',NULL,1)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -32,7 +29,6 @@ SELECT
 FROM
 	public.schedule t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
@@ -47,7 +43,6 @@ FROM
 WHERE
 	x.unit = :unit
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
@@ -62,7 +57,6 @@ FROM
 WHERE
 	x.unit_nullable = :unit
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
@@ -77,7 +71,6 @@ FROM
 WHERE
 	x.unit_nullable = :unitNullable
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	x.unit_nullable = 'day'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -103,7 +95,6 @@ FROM
 WHERE
 	x.unit_nullable IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

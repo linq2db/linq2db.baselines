@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 4

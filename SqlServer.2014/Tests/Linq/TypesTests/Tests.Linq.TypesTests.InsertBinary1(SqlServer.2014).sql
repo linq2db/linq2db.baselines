@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ID] > 1000
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @data VarBinary(8000) -- Binary
 SET     @data = NULL
@@ -25,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 DELETE [t1]

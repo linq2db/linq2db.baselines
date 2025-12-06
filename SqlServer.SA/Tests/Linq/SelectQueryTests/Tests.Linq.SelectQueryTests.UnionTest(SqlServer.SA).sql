@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
@@ -13,7 +12,6 @@ SELECT
 	DateAdd(day, 3, CURRENT_TIMESTAMP),
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

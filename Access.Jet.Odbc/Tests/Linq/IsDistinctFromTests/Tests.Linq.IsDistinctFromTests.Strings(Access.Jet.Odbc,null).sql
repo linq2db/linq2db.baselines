@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[String] IS NOT NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[s].[NullableString] IS NOT NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[s].[String] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"nm"."FirstName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CHAR_LENGTH("nm"."FirstName") <> 0
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

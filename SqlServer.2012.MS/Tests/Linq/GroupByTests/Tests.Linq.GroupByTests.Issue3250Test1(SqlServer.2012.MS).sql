@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	(CAST(COUNT(*) AS NVarChar(11)) + N' items have not been processed, e.g. #' + Coalesce(CAST(MIN([g_1].[PersonID]) AS NVarChar(11)), N'')) + N'.'

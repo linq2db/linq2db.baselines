@@ -1,4 +1,12 @@
-﻿BeforeExecute
+﻿-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	COUNT(*)
+FROM
+	[Ints] [i]
+WHERE
+	1 = 0
+
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -8,17 +16,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-SELECT
-	COUNT(*)
-FROM
-	[Ints] [i]
-WHERE
-	1 = 0
-
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

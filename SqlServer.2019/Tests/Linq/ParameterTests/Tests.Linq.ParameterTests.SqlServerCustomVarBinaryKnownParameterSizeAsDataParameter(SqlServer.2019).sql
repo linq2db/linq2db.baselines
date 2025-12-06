@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @p VarBinary(1) -- Binary
 SET     @p = 0x01
 

@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	MAX([p].[PersonID])
 FROM
 	[Person] [p]
 
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	COUNT(*)

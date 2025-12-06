@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK [TrimTestTable](ID, Data)
+﻿INSERT BULK [TrimTestTable](ID, Data)
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @is_deleted Int16
 SET     @is_deleted = 1
 
@@ -19,7 +18,6 @@ WHERE
 			sr."id" = 'TestProcessService' AND "component_categories"."id" = ct."id"
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	x."is_deleted" = 1 AND x."service_id" = 'TestProcessService'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

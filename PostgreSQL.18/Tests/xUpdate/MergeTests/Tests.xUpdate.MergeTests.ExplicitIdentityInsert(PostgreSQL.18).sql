@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
@@ -44,7 +40,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -58,5 +53,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

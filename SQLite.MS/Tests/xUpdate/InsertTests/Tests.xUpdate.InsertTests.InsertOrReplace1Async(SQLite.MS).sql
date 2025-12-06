@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,13 +23,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -49,8 +46,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -69,8 +65,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -89,8 +84,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 

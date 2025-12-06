@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @filter VarChar(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 VarChar(8) -- String
@@ -46,7 +45,6 @@ WHERE
 ORDER BY
 	"patient_1"."PersonID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -55,7 +53,6 @@ SELECT
 FROM
 	"Patient" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

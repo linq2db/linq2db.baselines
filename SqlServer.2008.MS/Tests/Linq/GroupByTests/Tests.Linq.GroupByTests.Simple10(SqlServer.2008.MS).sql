@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[Key_1],
@@ -16,9 +13,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

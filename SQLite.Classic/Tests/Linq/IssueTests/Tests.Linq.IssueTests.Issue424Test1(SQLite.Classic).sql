@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -18,7 +17,6 @@ ORDER BY
 	[t2].[ParentID]
 LIMIT @take
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

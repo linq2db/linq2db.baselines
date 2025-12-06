@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -30,8 +30,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName NVarChar(4) -- String
@@ -45,8 +44,7 @@ SET
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "FluentTemp"
 

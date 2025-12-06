@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 3

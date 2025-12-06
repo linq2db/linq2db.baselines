@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
@@ -10,15 +9,15 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "DropTableTest"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "DropTableTest"
@@ -30,7 +29,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -38,12 +36,10 @@ SELECT
 FROM
 	"DropTableTest" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP TABLE "DropTableTest"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

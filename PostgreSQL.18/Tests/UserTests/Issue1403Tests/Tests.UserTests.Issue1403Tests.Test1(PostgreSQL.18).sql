@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Issue1403Tests_1"
 (
@@ -12,7 +11,6 @@ VALUES
 	'New event'
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

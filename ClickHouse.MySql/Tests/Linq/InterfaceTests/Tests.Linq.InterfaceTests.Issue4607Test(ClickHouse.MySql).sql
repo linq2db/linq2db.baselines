@@ -1,21 +1,22 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO SomeTable
 (
+	Id,
 	ClassProp,
 	Interface
 )
 VALUES
 (
+	1,
 	true,
 	false
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.ClassProp,
 	t1.Interface
 FROM

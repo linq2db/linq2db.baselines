@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
@@ -10,14 +9,15 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
 		(
-			ID Int NOT NULL
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -27,7 +27,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TempTable"
@@ -39,7 +38,6 @@ SELECT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -47,7 +45,6 @@ SELECT
 FROM
 	"TempTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -56,7 +53,6 @@ FROM
 	"Parent" p
 		INNER JOIN "TempTable" t ON p."ParentID" = t.ID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN

@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	[t1].[COUNT_1],
+	[t1].[p1],
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [p1]
 			FROM
 				[Child] [ch]
 			WHERE

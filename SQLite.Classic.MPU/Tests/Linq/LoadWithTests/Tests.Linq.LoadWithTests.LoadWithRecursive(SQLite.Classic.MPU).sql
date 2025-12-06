@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_2].[Id],
@@ -32,7 +29,6 @@ FROM
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -52,7 +48,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -72,9 +67,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -86,9 +78,6 @@ FROM
 WHERE
 	[m_1].[Id] > 1
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -120,7 +109,6 @@ FROM
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -140,9 +128,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"ess".ID
@@ -15,7 +14,6 @@ WHERE
 			"ess".ID = "y".ID AND "y".IS_ACTIVE
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

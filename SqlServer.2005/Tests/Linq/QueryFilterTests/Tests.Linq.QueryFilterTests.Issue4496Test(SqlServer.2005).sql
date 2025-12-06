@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[x].[ChildID] > 30
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT DISTINCT

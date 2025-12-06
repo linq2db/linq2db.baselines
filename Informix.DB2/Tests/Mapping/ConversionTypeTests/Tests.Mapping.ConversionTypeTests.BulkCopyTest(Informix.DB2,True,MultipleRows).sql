@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO TrimTestTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

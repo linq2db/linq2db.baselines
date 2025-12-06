@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @testedList Varchar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -22,9 +19,6 @@ FROM
 WHERE
 	:testedList = m_1."Value2"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @testedList Varchar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'

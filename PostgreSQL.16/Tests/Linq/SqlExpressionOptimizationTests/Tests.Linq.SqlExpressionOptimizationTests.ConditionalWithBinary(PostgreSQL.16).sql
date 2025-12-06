@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
@@ -15,7 +14,6 @@ FROM
 WHERE
 	x."IntVlaue" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -29,7 +27,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
@@ -46,7 +43,6 @@ FROM
 WHERE
 	x_with_not."IntVlaue" <> 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -60,7 +56,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
@@ -77,7 +72,6 @@ FROM
 WHERE
 	swap."IntVlaue" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -91,7 +85,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
@@ -108,7 +101,6 @@ FROM
 WHERE
 	swap_with_not."IntVlaue" <> 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -122,7 +114,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
@@ -139,7 +130,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -153,7 +143,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
@@ -168,7 +157,6 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -182,7 +170,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
@@ -199,7 +186,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -213,7 +199,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
@@ -228,7 +213,6 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -242,7 +226,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
@@ -259,7 +242,6 @@ FROM
 WHERE
 	x."IntVlaue" <> 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -273,7 +255,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
@@ -290,7 +271,6 @@ FROM
 WHERE
 	x_with_not."IntVlaue" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -304,7 +284,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
@@ -321,7 +300,6 @@ FROM
 WHERE
 	swap."IntVlaue" <> 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -335,7 +313,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
@@ -352,7 +329,6 @@ FROM
 WHERE
 	swap_with_not."IntVlaue" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -366,7 +342,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.BoolValue ? True : False == True */
@@ -383,7 +358,6 @@ FROM
 WHERE
 	x."BoolValue" = True
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -397,7 +371,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
@@ -414,7 +387,6 @@ FROM
 WHERE
 	x_with_not."BoolValue" = False
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -428,7 +400,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => True == swap.BoolValue ? True : False */
@@ -445,7 +416,6 @@ FROM
 WHERE
 	swap."BoolValue" = True
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -459,7 +429,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
@@ -476,7 +445,6 @@ FROM
 WHERE
 	swap_with_not."BoolValue" = False
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -490,7 +458,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
@@ -507,7 +474,6 @@ FROM
 WHERE
 	NOT x."BoolValue"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -521,7 +487,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
@@ -538,7 +503,6 @@ FROM
 WHERE
 	x_with_not."BoolValue"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -552,7 +516,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
@@ -569,7 +532,6 @@ FROM
 WHERE
 	NOT swap."BoolValue"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -583,7 +545,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
@@ -600,7 +561,6 @@ FROM
 WHERE
 	swap_with_not."BoolValue"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -614,7 +574,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.BoolValue == True ? True : False == True */
@@ -631,7 +590,6 @@ FROM
 WHERE
 	x."BoolValue" = True
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -645,7 +603,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
@@ -662,7 +619,6 @@ FROM
 WHERE
 	x_with_not."BoolValue" = False
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -676,7 +632,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => True == swap.BoolValue == True ? True : False */
@@ -693,7 +648,6 @@ FROM
 WHERE
 	swap."BoolValue" = True
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -707,7 +661,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
@@ -724,7 +677,6 @@ FROM
 WHERE
 	swap_with_not."BoolValue" = False
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -738,7 +690,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
@@ -755,7 +706,6 @@ FROM
 WHERE
 	x."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -769,7 +719,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
@@ -786,7 +735,6 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -800,7 +748,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
@@ -817,7 +764,6 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -831,7 +777,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
@@ -848,7 +793,6 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -862,7 +806,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
@@ -879,7 +822,6 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -893,7 +835,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
@@ -910,7 +851,6 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -924,7 +864,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
@@ -941,7 +880,6 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -955,7 +893,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
@@ -972,7 +909,6 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -986,7 +922,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
@@ -1003,7 +938,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1017,7 +951,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
@@ -1032,7 +965,6 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1046,7 +978,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
@@ -1061,7 +992,6 @@ SELECT
 FROM
 	"OptimizationData" x
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1075,7 +1005,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
@@ -1092,7 +1021,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1106,7 +1034,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
@@ -1123,7 +1050,6 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1137,7 +1063,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
@@ -1154,7 +1079,6 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1168,7 +1092,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
@@ -1185,7 +1108,6 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1199,7 +1121,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
@@ -1216,7 +1137,6 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1230,7 +1150,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
@@ -1247,7 +1166,6 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1261,7 +1179,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
@@ -1278,7 +1195,6 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1292,7 +1208,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
@@ -1316,7 +1231,6 @@ WHERE
 		ELSE 1
 	END = 2
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1330,7 +1244,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
@@ -1354,7 +1267,6 @@ WHERE
 		ELSE 1
 	END <> 2
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1368,7 +1280,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
@@ -1392,7 +1303,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1406,7 +1316,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
@@ -1430,7 +1339,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1444,7 +1352,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
@@ -1461,7 +1368,6 @@ FROM
 WHERE
 	x."IntVlaue" = 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1475,7 +1381,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
@@ -1492,7 +1397,6 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" <> 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1506,7 +1410,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
@@ -1523,7 +1426,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" <> 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1537,7 +1439,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
@@ -1554,7 +1455,6 @@ FROM
 WHERE
 	swap."IntVlaue" < 4 OR swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1568,7 +1468,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
@@ -1585,7 +1484,6 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" < 4 OR swap_with_not."IntVlaue" <> 0 AND swap_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1599,7 +1497,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
@@ -1616,7 +1513,6 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" > 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1630,7 +1526,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
@@ -1647,7 +1542,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" > 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1661,7 +1555,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
@@ -1678,7 +1571,6 @@ FROM
 WHERE
 	x."IntVlaue" < 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1692,7 +1584,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
@@ -1709,7 +1600,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1723,7 +1613,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
@@ -1740,7 +1629,6 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" >= 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1754,7 +1642,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
@@ -1771,7 +1658,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" >= 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1785,7 +1671,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
@@ -1802,7 +1687,6 @@ FROM
 WHERE
 	x."IntVlaue" <= 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1816,7 +1700,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
@@ -1833,7 +1716,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <= 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1847,7 +1729,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
@@ -1864,7 +1745,6 @@ FROM
 WHERE
 	x."IntVlaue" = 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1878,7 +1758,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
@@ -1895,7 +1774,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" = 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1909,7 +1787,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
@@ -1926,7 +1803,6 @@ FROM
 WHERE
 	swap."IntVlaue" = 0 AND swap."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1940,7 +1816,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
@@ -1957,7 +1832,6 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" = 0 AND swap_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -1971,7 +1845,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
@@ -1988,7 +1861,6 @@ FROM
 WHERE
 	x."IntVlaue" <> 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2002,7 +1874,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
@@ -2019,7 +1890,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <> 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2033,7 +1903,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
@@ -2050,7 +1919,6 @@ FROM
 WHERE
 	swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4 OR swap."IntVlaue" < 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2064,7 +1932,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
@@ -2081,7 +1948,6 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" <> 0 AND swap_with_not."IntVlaue" >= 4 OR swap_with_not."IntVlaue" < 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2095,7 +1961,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
@@ -2112,7 +1977,6 @@ FROM
 WHERE
 	x."IntVlaue" > 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2126,7 +1990,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
@@ -2143,7 +2006,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" > 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2157,7 +2019,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
@@ -2174,7 +2035,6 @@ FROM
 WHERE
 	x."IntVlaue" < 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2188,7 +2048,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
@@ -2205,7 +2064,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2219,7 +2077,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
@@ -2236,7 +2093,6 @@ FROM
 WHERE
 	x."IntVlaue" >= 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2250,7 +2106,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
@@ -2267,7 +2122,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" >= 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2281,7 +2135,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
@@ -2298,7 +2151,6 @@ FROM
 WHERE
 	x."IntVlaue" <= 0 AND x."IntVlaue" >= 4
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -2312,7 +2164,6 @@ SELECT
 FROM
 	"OptimizationData" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
@@ -2329,7 +2180,6 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <= 0 AND x_with_not."IntVlaue" >= 4)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

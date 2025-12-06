@@ -1,12 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT Max([Id]) FROM [Issue4702Table]
 
-BeforeExecute
 INSERT BULK [Issue4702Table](Id, Text)
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [Issue4702Table]

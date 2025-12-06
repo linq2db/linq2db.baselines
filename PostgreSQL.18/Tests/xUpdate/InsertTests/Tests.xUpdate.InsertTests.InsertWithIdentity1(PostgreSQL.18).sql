@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Person"
@@ -24,7 +22,6 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

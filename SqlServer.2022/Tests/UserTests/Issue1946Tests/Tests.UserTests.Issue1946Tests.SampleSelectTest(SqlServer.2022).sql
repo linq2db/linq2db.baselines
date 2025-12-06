@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @maxVersion Int -- Int32
 SET     @maxVersion = 1
 

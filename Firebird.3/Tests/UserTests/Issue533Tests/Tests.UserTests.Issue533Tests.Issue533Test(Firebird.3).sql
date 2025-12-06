@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(12) -- String
@@ -30,7 +29,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 6

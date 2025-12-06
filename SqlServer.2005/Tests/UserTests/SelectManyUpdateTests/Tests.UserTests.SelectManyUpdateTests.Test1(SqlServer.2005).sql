@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @Value1 BigInt -- Int64
 SET     @Value1 = NULL
 

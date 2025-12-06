@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 1
 	user
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -21,7 +19,6 @@ BeforeExecute
 				WHERE
 					tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -48,7 +45,6 @@ BeforeExecute
 							JOIN sysindexes x ON t.tabid = x.tabid
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 
@@ -62,7 +58,6 @@ BeforeExecute
 						JOIN syscolumns c ON t.tabid = c.tabid
 					WHERE t.tabid >= 100
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 

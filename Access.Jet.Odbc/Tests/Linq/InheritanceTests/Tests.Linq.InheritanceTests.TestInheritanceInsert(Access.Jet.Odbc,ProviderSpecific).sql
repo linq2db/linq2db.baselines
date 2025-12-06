@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -94,7 +90,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -120,7 +115,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -146,7 +140,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

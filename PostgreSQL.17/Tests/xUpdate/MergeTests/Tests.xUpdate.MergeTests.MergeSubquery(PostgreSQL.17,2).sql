@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE "MergeTemp"
 (
@@ -12,7 +9,6 @@ CREATE TEMPORARY TABLE "MergeTemp"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "MergeTemp"
@@ -23,7 +19,6 @@ INSERT INTO "MergeTemp"
 VALUES
 (1,'John')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "MergeTemp" AS t1
@@ -47,7 +42,6 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"ID" = t1."ID",
 	"Name" = t1."Name"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "MergeTemp"

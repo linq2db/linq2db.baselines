@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Min_1] <> 0 OR [t1].[Min_1] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t1].[Max_1] <> 0 OR [t1].[Max_1] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -49,7 +46,6 @@ FROM
 WHERE
 	[t1].[Avg_1] <> 0 OR [t1].[Avg_1] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -66,7 +62,6 @@ FROM
 WHERE
 	[t1].[Sum_1] <> 0 OR [t1].[Sum_1] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [TrimTestTable]
 (
@@ -8,7 +7,6 @@ INSERT INTO [TrimTestTable]
 )
 SELECT 1,'***OOO***'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -19,7 +17,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

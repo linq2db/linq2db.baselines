@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	LEN([nm].[FirstName] + '.') <> 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t".PK,
 	"t".ID
 FROM
 	"test_in_1" "t"
@@ -15,20 +15,20 @@ WHERE
 			"t".ID = "p".ID
 	)
 ORDER BY
-	"t".ID
+	"t".PK
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1".PK,
 	"t1".ID
 FROM
 	"test_in_1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1".PK,
 	"t1".ID
 FROM
 	"test_in_2" "t1"

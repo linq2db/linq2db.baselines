@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

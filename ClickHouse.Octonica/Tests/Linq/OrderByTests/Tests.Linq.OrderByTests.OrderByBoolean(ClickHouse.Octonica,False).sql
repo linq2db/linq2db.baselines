@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	lengthUTF8(t1.FirstName) > 4
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

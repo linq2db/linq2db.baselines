@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	y."item"
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 'O' FROM sys.dual) y
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

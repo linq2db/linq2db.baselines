@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 INSERT INTO [SampleClass]
 (
@@ -14,7 +13,6 @@ VALUES
 	N'SampleClass'
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 INSERT INTO [SampleClass]
@@ -30,7 +28,6 @@ VALUES
 	N'SomeTest'
 )
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
@@ -51,7 +48,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
@@ -65,7 +61,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
@@ -86,7 +81,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
@@ -100,7 +94,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
@@ -121,7 +114,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'

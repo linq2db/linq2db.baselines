@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = x'0102030405'
 DECLARE @p Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t"."ID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = x'0504030201'
@@ -26,7 +24,6 @@ SET
 WHERE
 	"t"."ID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

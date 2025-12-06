@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	5
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[r].[ID] = 101
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 102

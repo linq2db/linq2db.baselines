@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 WHEN N > 40 THEN
@@ -40,7 +39,6 @@ SELECT
 	1000 as ID
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -48,7 +46,6 @@ SELECT
 FROM
 	"Dest1" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -58,7 +55,6 @@ FROM
 WHERE
 	x.ID = 1001
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

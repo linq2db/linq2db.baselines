@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`ch1`.`ParentID`,
@@ -9,8 +8,7 @@ FROM
 		INNER JOIN `Child` `ch` ON `t1`.`ParentID` = `ch`.`ParentID`
 		INNER JOIN `Child` `ch1` ON `ch`.`ChildID` = `ch1`.`ChildID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,
@@ -18,8 +16,7 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,

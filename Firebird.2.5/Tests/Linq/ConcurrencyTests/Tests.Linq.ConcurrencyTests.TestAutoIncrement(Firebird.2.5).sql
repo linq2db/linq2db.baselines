@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
@@ -47,7 +44,6 @@ SET
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -57,7 +53,6 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
@@ -74,7 +69,6 @@ SET
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -84,7 +78,6 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
@@ -101,7 +94,6 @@ SET
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -111,7 +103,6 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -123,7 +114,6 @@ DELETE FROM
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -133,7 +123,6 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -145,7 +134,6 @@ DELETE FROM
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

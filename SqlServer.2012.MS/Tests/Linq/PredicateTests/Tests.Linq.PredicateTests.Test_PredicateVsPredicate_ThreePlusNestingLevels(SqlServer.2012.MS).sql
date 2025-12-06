@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[r].[Id],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0), 1, 0) = IIF(IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] = [r].[Value2], 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) <> IIF([r].[Value2] = [r].[Value5], 1, 0), 1, 0) <> IIF(IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0) = IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0), 1, 0)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

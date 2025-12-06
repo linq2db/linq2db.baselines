@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t"."ID",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @param TinyInt(1) -- Byte
 SET     @param = 1

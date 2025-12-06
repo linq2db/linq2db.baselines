@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" + CAST(@n AS Int) = "d"."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

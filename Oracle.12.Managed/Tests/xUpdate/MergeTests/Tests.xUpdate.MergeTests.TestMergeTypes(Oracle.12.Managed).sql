@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge2" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -84,7 +81,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -158,7 +154,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
@@ -234,7 +229,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 4
@@ -309,7 +303,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
@@ -383,7 +376,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 4
@@ -459,7 +451,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 5
@@ -533,7 +524,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 6
@@ -609,7 +599,6 @@ VALUES
 	:FieldEnumNumber
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -634,7 +623,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

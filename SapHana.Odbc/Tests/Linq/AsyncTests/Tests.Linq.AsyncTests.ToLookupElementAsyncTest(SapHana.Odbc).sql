@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ParentID",
@@ -10,8 +9,7 @@ ORDER BY
 	"t1"."ParentID",
 	"t1"."ChildID"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ParentID",

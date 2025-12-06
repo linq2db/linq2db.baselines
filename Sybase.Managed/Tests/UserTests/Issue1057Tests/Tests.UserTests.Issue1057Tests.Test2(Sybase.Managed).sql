@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName UniVarChar(12) -- String
@@ -16,7 +15,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -69,7 +65,6 @@ FROM
 WHERE
 	[p].[TargetName] = 'bda.Requests'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

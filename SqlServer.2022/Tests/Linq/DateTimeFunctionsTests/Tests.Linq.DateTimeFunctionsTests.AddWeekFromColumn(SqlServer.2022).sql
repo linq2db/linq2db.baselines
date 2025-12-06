@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	CAST(DateAdd(week, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND 'M' = [t1].[Gender]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @gender WChar(1) -- StringFixedLength
 SET     @gender = 'M'
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @gender WChar(1) -- StringFixedLength
 SET     @gender = 'M'

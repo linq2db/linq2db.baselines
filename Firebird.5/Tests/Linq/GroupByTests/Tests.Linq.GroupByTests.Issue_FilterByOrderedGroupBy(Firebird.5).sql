@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t"."ParentID",
@@ -26,7 +25,6 @@ WHERE
 			"t"."ParentID" = "t1"."ParentID"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

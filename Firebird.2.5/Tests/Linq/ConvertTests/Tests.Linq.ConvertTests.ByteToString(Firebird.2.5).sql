@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"p".ID
+	CAST("p".ID AS SmallInt)
 FROM
 	"LinqDataTypes" "p"
 WHERE

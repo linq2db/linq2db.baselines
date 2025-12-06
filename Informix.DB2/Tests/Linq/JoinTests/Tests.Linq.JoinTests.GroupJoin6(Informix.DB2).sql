@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID + @n::Int = d.ParentID
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

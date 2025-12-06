@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 select @@version
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -56,19 +52,14 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[AddIssue792Record]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[DuplicateColumnNames]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -77,7 +68,6 @@ SET     @output = 0
 
 [TestDataMS].[dbo].[ExecuteProcIntParameters]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -86,22 +76,18 @@ SET     @output = 0
 
 [TestDataMS].[dbo].[ExecuteProcStringParameters]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[Issue1897]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @str VarChar(50) -- AnsiString
 SET     @str = N''
@@ -112,7 +98,6 @@ SET     @inputOutputStr = N''
 
 [TestDataMS].[dbo].[OutRefEnumTest]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 0
@@ -129,12 +114,10 @@ SET     @inputOutputStr = N''
 
 [TestDataMS].[dbo].[OutRefTest]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[Patient_SelectAll]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -143,14 +126,12 @@ SET     @lastName = N''
 
 [TestDataMS].[dbo].[Patient_SelectByName]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
 [TestDataMS].[dbo].[Person_Delete]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
@@ -163,7 +144,6 @@ SET     @Gender = char(0)
 
 [TestDataMS].[dbo].[Person_Insert]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
@@ -178,26 +158,22 @@ SET     @PersonID = 0
 
 [TestDataMS].[dbo].[Person_Insert_OutputParameter]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[Person_SelectAll]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMS].[dbo].[Person_SelectByKey]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMS].[dbo].[Person_SelectByKeyLowercase]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -206,7 +182,6 @@ SET     @lastName = N''
 
 [TestDataMS].[dbo].[Person_SelectByName]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -215,7 +190,6 @@ SET     @lastName = N''
 
 [TestDataMS].[dbo].[Person_SelectListByName]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
@@ -230,14 +204,12 @@ SET     @Gender = char(0)
 
 [TestDataMS].[dbo].[Person_Update]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMS].[dbo].[PersonSearch]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -250,7 +222,6 @@ SET     @output3 = 0
 
 [TestDataMS].[dbo].[QueryProcMultipleParameters]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -261,48 +232,39 @@ SET     @output2 = 0
 
 [TestDataMS].[dbo].[QueryProcParameters]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[dbo].[SelectImplicitColumn]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMS].[dbo].[TableTypeTestProc]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMS].[dbo].[VariableResults]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 [TestDataMS].[TestSchema].[TestProcedure]
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 select @@version
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -323,7 +285,6 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -350,9 +311,6 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[AddIssue792Record] '
@@ -361,7 +319,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[DuplicateColumnNames] '
@@ -370,7 +327,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcIntParameters] @input, @output'
@@ -379,7 +335,6 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcStringParameters] @input, @output'
@@ -388,12 +343,10 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
@@ -402,12 +355,10 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
@@ -416,7 +367,6 @@ SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr va
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
@@ -425,7 +375,6 @@ SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50)
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Patient_SelectAll] '
@@ -434,7 +383,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Patient_SelectByName] @firstName, @lastName'
@@ -443,7 +391,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_Delete] @PersonID'
@@ -452,7 +399,6 @@ SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
@@ -461,7 +407,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
@@ -470,7 +415,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_SelectAll] '
@@ -479,7 +423,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_SelectByKey] @id'
@@ -488,7 +431,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_SelectByKeyLowercase] @id'
@@ -497,7 +439,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_SelectByName] @firstName, @lastName'
@@ -506,7 +447,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_SelectListByName] @firstName, @lastName'
@@ -515,7 +455,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
@@ -524,7 +463,6 @@ SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(5
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[PersonSearch] @nameFilter'
@@ -533,14 +471,12 @@ SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMS].[dbo].[PersonSearch]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
@@ -549,7 +485,6 @@ SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcParameters] @input, @output1, @output2'
@@ -558,7 +493,6 @@ SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[SelectImplicitColumn] '
@@ -567,7 +501,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[TableTypeTestProc] @table'
@@ -576,14 +509,12 @@ SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMS].[dbo].[TableTypeTestProc]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[VariableResults] @ReturnFullRow'
@@ -592,19 +523,16 @@ SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMS].[dbo].[VariableResults]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[TestSchema].[TestProcedure] '
@@ -613,5 +541,4 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 RollbackTransaction

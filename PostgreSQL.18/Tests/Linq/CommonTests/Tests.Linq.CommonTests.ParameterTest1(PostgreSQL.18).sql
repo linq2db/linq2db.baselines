@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -19,7 +18,6 @@ WHERE
 GROUP BY
 	g_1."ParentID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 2

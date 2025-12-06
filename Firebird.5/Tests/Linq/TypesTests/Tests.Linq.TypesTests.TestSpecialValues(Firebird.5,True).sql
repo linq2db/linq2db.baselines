@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "AllTypes"
@@ -22,7 +20,6 @@ VALUES
 	LOG(1, 1)
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "AllTypes"
@@ -38,7 +35,6 @@ VALUES
 	LOG(1, 0.5)
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "AllTypes"
@@ -54,7 +50,6 @@ VALUES
 	LOG(1, 2)
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT INTO Table_3056(Name, Description) VALUES
+﻿INSERT INTO Table_3056(Name, Description) VALUES
 

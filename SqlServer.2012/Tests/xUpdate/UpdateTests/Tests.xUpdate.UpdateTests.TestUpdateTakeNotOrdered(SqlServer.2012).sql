@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -34,7 +32,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
@@ -52,7 +49,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1003
@@ -70,7 +66,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1004
@@ -88,7 +83,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1005
@@ -106,7 +100,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1006
@@ -124,7 +117,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1007
@@ -142,7 +134,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1008
@@ -160,7 +151,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1009
@@ -178,7 +168,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 5

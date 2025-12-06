@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 123
 
@@ -12,7 +11,6 @@ VALUES
 	@value
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)

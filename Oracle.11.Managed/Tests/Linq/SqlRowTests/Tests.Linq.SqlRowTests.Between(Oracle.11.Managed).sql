@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	i."Two" >= i."One" * 2 AND i."Two" <= i."One" + i."One"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	i."Three" >= i."One" AND i."Three" <= i."Four"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	i."Two" >= i."Three"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -39,7 +35,6 @@ WHERE
 	(i."Two" > i."One" OR i."Two" = i."One" AND i."Five" >= i."One") AND
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Two")
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -50,7 +45,6 @@ WHERE
 	(i."Two" > i."One" OR i."Two" = i."One" AND i."Five" >= i."One") AND
 	i."Five" <= i."Two"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -61,7 +55,6 @@ WHERE
 	(i."Two" > i."One" OR i."Two" = i."One" AND i."Nil" >= i."One") AND
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."One")
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -71,7 +64,6 @@ FROM
 WHERE
 	i."Nil" >= i."One" AND i."Nil" <= i."Three"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -82,7 +74,6 @@ WHERE
 	(i."Two" > i."One" OR i."Two" = i."One" AND i."Five" >= i."Nil") AND
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Five" <= i."Nil")
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -93,7 +84,6 @@ WHERE
 	(i."Two" > i."One" OR i."Two" = i."One" AND i."Nil" >= i."Nil") AND
 	(i."Two" < i."Three" OR i."Two" = i."Three" AND i."Nil" <= i."Nil")
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

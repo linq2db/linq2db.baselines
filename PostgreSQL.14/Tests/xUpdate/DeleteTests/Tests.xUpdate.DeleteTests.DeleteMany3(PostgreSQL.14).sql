@@ -1,29 +1,25 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"GrandChild" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"Parent" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -34,8 +30,7 @@ VALUES
 	1001
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Child"
 (
@@ -48,8 +43,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "GrandChild"
 (
@@ -64,8 +58,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "GrandChild"
 (
@@ -80,8 +73,7 @@ VALUES
 	2
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"GrandChild" t1
@@ -101,24 +93,21 @@ WHERE
 			t1."GrandChildID" = "a_GrandChildren"."GrandChildID"
 	)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"GrandChild" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"Parent" c_1

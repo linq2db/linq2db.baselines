@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
@@ -16,7 +15,6 @@ FROM
 GROUP BY
 	`grp_1`.`Date_1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

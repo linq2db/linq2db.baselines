@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"r"."Id",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	(("r"."Value1" <> "r"."Value2") = ("r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL)) = ((("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)) = ("r"."Value2" <> "r"."Value4" OR "r"."Value4" IS NULL))
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	("r"."Value1" = "r"."Value2") <> ("r"."Value4" <> "r"."Value1" OR "r"."Value4" IS NULL)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	("r"."Value1" = "r"."Value2") <> ("r"."Value4" = "r"."Value1" AND "r"."Value4" IS NOT NULL)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	("r"."Value1" = "r"."Value2") <> ("r"."Value4" = "r"."Value1" AND "r"."Value4" IS NOT NULL)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	("r"."Value1" = "r"."Value2") <> ("r"."Value4" <> "r"."Value1" OR "r"."Value4" IS NULL)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	(("r"."Value1" = "r"."Value2") = ("r"."Value2" <> "r"."Value4" OR "r"."Value4" IS NULL)) = ("r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	(("r"."Value1" <> "r"."Value2") <> ("r"."Value2" = "r"."Value5" AND "r"."Value5" IS NOT NULL)) <> (("r"."Value4" <> "r"."Value1" OR "r"."Value4" IS NULL) = (("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)))
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

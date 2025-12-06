@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TableToInsert"
 (
@@ -17,7 +16,6 @@ FROM
 WHERE
 	t."Id" IS NULL
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TableToInsert"

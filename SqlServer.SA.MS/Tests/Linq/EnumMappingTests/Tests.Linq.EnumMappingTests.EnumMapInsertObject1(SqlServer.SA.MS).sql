@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@TestField
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [Table2]
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Table1] [t]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

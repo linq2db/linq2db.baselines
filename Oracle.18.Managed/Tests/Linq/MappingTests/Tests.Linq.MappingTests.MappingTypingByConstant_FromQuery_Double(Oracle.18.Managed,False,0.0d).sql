@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 0D
 
@@ -15,7 +14,6 @@ FROM
 			"Person" r
 	) t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 3147483648D

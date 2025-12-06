@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	t.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	t2.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1

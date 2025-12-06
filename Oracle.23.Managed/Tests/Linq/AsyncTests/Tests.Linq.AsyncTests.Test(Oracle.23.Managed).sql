@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."ParentID",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."ParentID",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	DATEADD(Day, 1, CAST('2020-02-29T00:00:00.000' AS DATETIME))

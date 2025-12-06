@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	`t`.`FirstName` = @p
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'

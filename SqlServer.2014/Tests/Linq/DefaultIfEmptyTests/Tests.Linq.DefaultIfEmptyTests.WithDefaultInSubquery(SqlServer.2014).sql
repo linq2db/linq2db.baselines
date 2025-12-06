@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	(
 		SELECT
-			SUM([t1].[ParentID])
+			SUM([t2].[ParentID])
 		FROM
 			(
 				SELECT
@@ -12,11 +11,34 @@ SELECT
 				FROM
 					(
 						SELECT
-							-100 as [ParentID]
-					) [c_1]
+							1 as [c1]
+					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
-			) [t1]
+			) [t2]
 	)
 FROM
 	[Parent] [p]
+
+-- SqlServer.2014
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			[Parent] [t1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+
+-- SqlServer.2014
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

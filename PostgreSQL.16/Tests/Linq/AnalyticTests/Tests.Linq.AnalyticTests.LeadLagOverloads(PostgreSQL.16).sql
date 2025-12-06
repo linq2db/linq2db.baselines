@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	LEAD(p."ProcessName", 2) OVER(ORDER BY p."ProcessID")
 FROM
 	"Issue1799Table3" p
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	"Issue1799Table3" p
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	"Issue1799Table3" p
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

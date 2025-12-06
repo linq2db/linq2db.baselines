@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = "t1"."SmallIntValue"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

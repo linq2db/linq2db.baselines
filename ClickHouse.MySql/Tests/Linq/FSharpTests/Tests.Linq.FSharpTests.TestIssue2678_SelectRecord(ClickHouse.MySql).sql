@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO R
 (
@@ -12,7 +11,6 @@ VALUES
 	5
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

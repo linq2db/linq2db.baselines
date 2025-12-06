@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 CREATE GLOBAL TEMPORARY TABLE SESSION."IsGlobalTemporaryTable"
 (
@@ -8,7 +7,6 @@ CREATE GLOBAL TEMPORARY TABLE SESSION."IsGlobalTemporaryTable"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -17,7 +15,6 @@ SELECT
 FROM
 	SESSION."IsGlobalTemporaryTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

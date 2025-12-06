@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."ParentID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	(p."Value1" NOT IN (1, 2, 3) OR p."Value1" IS NULL)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

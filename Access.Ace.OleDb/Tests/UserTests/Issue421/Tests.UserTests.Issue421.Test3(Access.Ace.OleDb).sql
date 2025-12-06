@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(3) -- Binary
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1

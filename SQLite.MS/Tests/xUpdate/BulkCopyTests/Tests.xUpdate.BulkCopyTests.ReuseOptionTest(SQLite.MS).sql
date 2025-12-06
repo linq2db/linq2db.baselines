@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [Parent]
 (
@@ -11,7 +8,6 @@ INSERT INTO [Parent]
 VALUES
 (111001,NULL)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Child]
@@ -22,5 +18,3 @@ INSERT INTO [Child]
 VALUES
 (111001,0)
 
-BeforeExecute
-DisposeTransaction

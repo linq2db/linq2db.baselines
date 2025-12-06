@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT /*+ JOIN_PREFIX(p) JOIN_PREFIX(c_1) */
 	`p`.`ParentID`,

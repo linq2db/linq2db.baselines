@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -14,10 +13,8 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 INSERT ASYNC BULK [AllTypes](ID, intDataType)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -32,7 +29,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

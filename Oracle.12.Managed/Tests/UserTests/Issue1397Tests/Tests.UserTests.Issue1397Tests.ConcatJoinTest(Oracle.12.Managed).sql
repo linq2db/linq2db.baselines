@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
@@ -22,7 +21,6 @@ FROM
 				t."ParentID" = 2
 		) id_1 ON id_1."ParentID" = m_1."ParentID"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

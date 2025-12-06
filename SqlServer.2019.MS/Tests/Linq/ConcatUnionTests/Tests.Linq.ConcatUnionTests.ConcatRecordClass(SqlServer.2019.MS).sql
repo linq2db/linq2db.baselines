@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[p].[PersonID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[Person] [p_1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

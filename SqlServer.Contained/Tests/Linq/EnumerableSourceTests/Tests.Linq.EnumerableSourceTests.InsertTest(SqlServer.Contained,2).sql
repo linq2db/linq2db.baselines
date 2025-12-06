@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TableToInsert]
 (
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[Id] IS NULL
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TableToInsert]

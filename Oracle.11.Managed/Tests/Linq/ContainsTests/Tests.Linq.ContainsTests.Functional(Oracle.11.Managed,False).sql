@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	s."Id"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s."Int" IN (-1, -2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	s."Int" IN (-1, NULL) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	s."Int" IN (-1, 2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	s."Int" NOT IN (NULL, 2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

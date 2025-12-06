@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 12
 
 SELECT
+	i."Id",
 	i."Name",
 	i."ParentId"
 FROM

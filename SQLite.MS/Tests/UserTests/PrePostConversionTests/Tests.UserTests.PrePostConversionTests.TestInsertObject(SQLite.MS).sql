@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeValue2
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

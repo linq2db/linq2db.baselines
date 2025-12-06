@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TestIdTrun]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [TestIdTrun]
@@ -14,7 +12,6 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [TestIdTrun]
@@ -26,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [TestIdTrun]
@@ -38,7 +34,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -52,12 +47,10 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 TRUNCATE TABLE [TestIdTrun]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [TestIdTrun]
@@ -69,7 +62,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [TestIdTrun]
@@ -81,7 +73,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -95,7 +86,6 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE [TestIdTrun]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT DISTINCT
 	Coalesce([p].[Value1], [p].[ParentID] % 2),

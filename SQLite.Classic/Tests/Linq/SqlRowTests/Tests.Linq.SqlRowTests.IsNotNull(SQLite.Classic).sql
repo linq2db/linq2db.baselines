@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[Ints] [i]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

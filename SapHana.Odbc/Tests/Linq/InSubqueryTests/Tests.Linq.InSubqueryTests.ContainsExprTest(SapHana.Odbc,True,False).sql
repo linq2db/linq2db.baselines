@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			"p"."ParentID" + ? = "c_1"."ParentID"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

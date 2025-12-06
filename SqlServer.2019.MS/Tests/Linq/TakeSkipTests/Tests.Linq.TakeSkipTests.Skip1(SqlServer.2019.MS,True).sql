@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
@@ -12,7 +11,6 @@ ORDER BY
 	[t1].[ChildID]
 OFFSET @skip ROWS
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 4

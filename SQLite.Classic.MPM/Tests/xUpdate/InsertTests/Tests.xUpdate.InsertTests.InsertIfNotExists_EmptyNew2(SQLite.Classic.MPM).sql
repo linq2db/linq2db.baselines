@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (
@@ -13,7 +12,6 @@ VALUES
 )
 ON CONFLICT ([id]) DO NOTHING
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [test_insert_or_replace] AS [t1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @p Int -- Int32
 SET     @p = 105
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 102
@@ -45,7 +42,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 103
@@ -63,7 +59,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 104
@@ -81,7 +76,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -94,7 +88,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -108,7 +101,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @p Int -- Int32
 SET     @p = 105

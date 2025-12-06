@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -69,7 +65,6 @@ FROM
 WHERE
 	[p].[TargetName] = N'bda.Requests'
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

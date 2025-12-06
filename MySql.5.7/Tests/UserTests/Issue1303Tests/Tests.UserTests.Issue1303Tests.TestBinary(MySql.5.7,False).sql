@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Issue1303`
 (
@@ -14,7 +13,6 @@ VALUES
 	0x0405
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	`t1`.`ID` = 1
 LIMIT 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	`t1`.`Array` = 0x010203
 LIMIT 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

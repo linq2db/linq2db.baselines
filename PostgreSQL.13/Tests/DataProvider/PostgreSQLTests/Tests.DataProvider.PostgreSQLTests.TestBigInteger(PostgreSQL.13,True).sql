@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "BigIntegerTable"
 (
@@ -14,11 +13,7 @@ VALUES
 	-22345678901234567890123456789012345678901234567890
 )
 
-BeforeExecute
-INSERT BULK "BigIntegerTable"(Id, Value1, Value2)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

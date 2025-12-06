@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -7,7 +6,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ ORDER BY
 	x.OrderData1
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
@@ -27,7 +24,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ ORDER BY
 	x.OrderData1 DESC
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
@@ -47,7 +42,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -59,7 +53,6 @@ ORDER BY
 	x.OrderData2
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
@@ -68,7 +61,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -80,7 +72,6 @@ ORDER BY
 	x.OrderData2 DESC
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
@@ -89,7 +80,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -101,7 +91,6 @@ ORDER BY
 	x.OrderData2 DESC
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
@@ -110,7 +99,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

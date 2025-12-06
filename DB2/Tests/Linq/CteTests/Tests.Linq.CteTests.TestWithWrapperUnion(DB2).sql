@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	CTE_1 "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1

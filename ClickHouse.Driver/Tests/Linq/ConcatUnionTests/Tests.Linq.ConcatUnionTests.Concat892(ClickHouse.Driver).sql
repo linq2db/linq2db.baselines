@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.Value1,
@@ -25,7 +24,6 @@ SELECT
 FROM
 	Child c_3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

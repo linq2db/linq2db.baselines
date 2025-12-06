@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @value Float -- Double
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @value Float -- Double
 SET     @value = 3147483648

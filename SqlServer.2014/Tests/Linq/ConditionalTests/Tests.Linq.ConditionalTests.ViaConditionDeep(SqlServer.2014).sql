@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[x].[Id],
@@ -25,7 +24,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

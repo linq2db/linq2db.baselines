@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @id1  -- Int32
 SET     @id1 = 1
 DECLARE @id2  -- Int32
@@ -17,7 +16,6 @@ ORDER BY
 	[p].[ParentID]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id1  -- Int32
 SET     @id1 = 2

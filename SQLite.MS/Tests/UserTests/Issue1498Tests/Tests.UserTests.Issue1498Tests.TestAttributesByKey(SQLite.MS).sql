@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -40,7 +36,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON [m_1].[Id] = [d].[TopicId]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -53,5 +48,3 @@ WHERE
 	[x].[Id] = 6
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

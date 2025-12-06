@@ -1,4 +1,23 @@
-﻿BeforeExecute
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Value],
+	[m_1].[IsDeleted]
+FROM
+	[MasterClass] [m_1]
+WHERE
+	NOT [m_1].[IsDeleted]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Value],
+	[m_1].[IsDeleted]
+FROM
+	[MasterClass] [m_1]
+
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -10,29 +29,6 @@ FROM
 WHERE
 	NOT [m_1].[IsDeleted]
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
-	[m_1].[Id],
-	[m_1].[Value],
-	[m_1].[IsDeleted]
-FROM
-	[MasterClass] [m_1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT
-	[m_1].[Id],
-	[m_1].[Value],
-	[m_1].[IsDeleted]
-FROM
-	[MasterClass] [m_1]
-WHERE
-	NOT [m_1].[IsDeleted]
-
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

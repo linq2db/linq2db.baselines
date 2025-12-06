@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH RECURSIVE `CTE1_` (`ParentID`)
+WITH `CTE1_` (`ParentID`)
 AS
 (
 	SELECT
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN `CTE3_` `c3` ON `t1`.`ParentID` = `c3`.`ParentID`
 		INNER JOIN `LATEST` `c4_1` ON `c4_1`.`ParentID` = `c3`.`ParentID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

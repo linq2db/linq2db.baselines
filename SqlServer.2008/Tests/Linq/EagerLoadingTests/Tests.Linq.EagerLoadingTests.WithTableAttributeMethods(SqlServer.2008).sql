@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -22,7 +20,6 @@ BEGIN
 	';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -40,8 +37,7 @@ VALUES
 	@Name
 )
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "FluentTemp" "Target"
 USING (VALUES
@@ -70,8 +66,7 @@ VALUES
 	"Source"."Name"
 )
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

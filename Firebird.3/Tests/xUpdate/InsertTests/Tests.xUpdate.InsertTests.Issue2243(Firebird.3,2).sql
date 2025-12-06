@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -33,7 +32,6 @@ WHEN NOT MATCHED THEN
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -45,7 +43,6 @@ FROM
 	"test_insert_or_replace" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -80,7 +77,6 @@ WHEN NOT MATCHED THEN
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

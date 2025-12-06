@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -30,7 +29,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 6
@@ -47,7 +45,6 @@ WHERE
 	"t1"."PersonID" = @id
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
@@ -70,7 +67,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 6

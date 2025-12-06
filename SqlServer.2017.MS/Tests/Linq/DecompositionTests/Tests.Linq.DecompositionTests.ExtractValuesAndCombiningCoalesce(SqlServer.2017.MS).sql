@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0),
@@ -14,7 +13,6 @@ SELECT
 FROM
 	[Item] [t]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[Item] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 WHERE
 	NOT ([x_1].[cond] = 1 AND ([x_1].[cond_1] = 1 AND [x_1].[cond_2] = 1 OR [x_1].[cond_1] = 0) OR [x_1].[cond] = 0 AND [x_1].[cond_3] = 0)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -71,7 +67,6 @@ SELECT
 FROM
 	[Item] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -105,7 +100,6 @@ WHERE
 	[x_1].[cond] = 1 AND ([x_1].[cond_1] = 1 AND [x_1].[cond_2] = 1 OR [x_1].[cond_1] = 0) OR
 	[x_1].[cond] = 0 AND [x_1].[cond_3] = 0
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -117,7 +111,6 @@ SELECT
 FROM
 	[Item] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -150,7 +143,6 @@ FROM
 WHERE
 	NOT ([x_1].[cond] = 1 AND [x_1].[cond_1] = 0 OR [x_1].[cond] = 0 AND ([x_1].[cond_2] = 1 AND [x_1].[cond_3] = 1 OR [x_1].[cond_2] = 0))
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -162,7 +154,6 @@ SELECT
 FROM
 	[Item] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -195,7 +186,6 @@ FROM
 WHERE
 	[x_1].[cond] = 1 AND [x_1].[cond_1] = 0 OR [x_1].[cond] = 0 AND ([x_1].[cond_2] = 1 AND [x_1].[cond_3] = 1 OR [x_1].[cond_2] = 0)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

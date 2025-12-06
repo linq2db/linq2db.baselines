@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName Varchar2(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	x."FirstName" = :FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -61,7 +58,6 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -78,7 +74,6 @@ WHERE
 	x."FirstName" = :FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @newName Varchar2(18) -- String
 SET     @newName = 'InsertColumnFilter'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO CreateTableTypes
 (
@@ -12,7 +11,6 @@ VALUES
 	false
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO CreateTableTypes
@@ -26,7 +24,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title Varchar2(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	:Text
 )
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	) m_1
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -51,5 +46,3 @@ FROM
 WHERE
 	x."Id" = 6 AND ROWNUM <= 1
 
-BeforeExecute
-DisposeTransaction

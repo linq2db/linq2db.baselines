@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[p].[FirstName]
@@ -11,7 +10,6 @@ SELECT
 FROM
 	[Person] [p_1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	11
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
@@ -33,7 +30,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
@@ -43,7 +39,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102

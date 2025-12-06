@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p VarChar(1) -- String
 SET     @p = '1'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	`r`.`FirstName` = @p
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p VarChar(1) -- String
 SET     @p = '1'

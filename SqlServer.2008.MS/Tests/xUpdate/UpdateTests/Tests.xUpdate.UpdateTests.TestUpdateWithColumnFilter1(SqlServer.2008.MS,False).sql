@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
@@ -60,7 +57,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'

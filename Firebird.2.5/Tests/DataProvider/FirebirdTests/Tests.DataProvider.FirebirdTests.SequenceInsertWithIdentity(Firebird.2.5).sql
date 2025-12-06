@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"SequenceTest" "t1"
 WHERE
 	"t1"."Value_" = 'SeqValue'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Value VarChar(8) -- String
 SET     @Value = 'SeqValue'
@@ -26,7 +24,6 @@ VALUES
 RETURNING
 	ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -37,7 +34,6 @@ FROM
 WHERE
 	"t1"."Value_" = 'SeqValue'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
@@ -47,7 +43,6 @@ DELETE FROM
 WHERE
 	"t1".ID = @id1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

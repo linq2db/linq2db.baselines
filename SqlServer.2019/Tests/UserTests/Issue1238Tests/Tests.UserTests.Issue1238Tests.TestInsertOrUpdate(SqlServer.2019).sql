@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [InheritanceParent] [t1]
@@ -34,7 +30,6 @@ WHEN NOT MATCHED THEN
 		1
 	);
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -42,7 +37,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [InheritanceParent] [t1]
@@ -69,7 +63,6 @@ WHEN NOT MATCHED THEN
 		1
 	);
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -77,5 +70,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @offset Integer -- Int32
 SET     @offset = -1
 
@@ -8,10 +7,10 @@ UPDATE
 SET
 	"Field" = CAST(CAST("t1"."Field" AS Int) + CAST(@offset AS Int) AS SmallInt)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Id",
 	"t1"."Field"
 FROM
 	"Issue4963Table" "t1"

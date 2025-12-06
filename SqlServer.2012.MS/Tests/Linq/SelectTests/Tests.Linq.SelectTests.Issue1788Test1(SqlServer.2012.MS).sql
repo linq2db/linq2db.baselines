@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Table1788] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

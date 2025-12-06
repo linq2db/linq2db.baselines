@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	NOT `s`.`String` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -22,7 +20,6 @@ FROM
 WHERE
 	NOT `s`.`NullableString` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -34,7 +31,6 @@ FROM
 WHERE
 	`s`.`String` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'

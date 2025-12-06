@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String

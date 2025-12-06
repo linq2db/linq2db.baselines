@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Parent
 (
@@ -12,8 +11,7 @@ VALUES
 	1001
 )
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -22,8 +20,7 @@ FROM
 WHERE
 	p.ParentID = 1001
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	Parent
@@ -32,8 +29,7 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)

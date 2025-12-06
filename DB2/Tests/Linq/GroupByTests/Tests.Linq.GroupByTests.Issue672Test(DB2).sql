@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled SmallInt(4) -- Int16
+SET     @Enabled = 1
+DECLARE @ImageFullUrl VarChar(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	@Name,
+	@Enabled,
+	@ImageFullUrl
+)
+
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
@@ -20,29 +40,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-DECLARE @Enabled SmallInt(4) -- Int16
-SET     @Enabled = 1
-DECLARE @ImageFullUrl VarChar(3) -- String
-SET     @ImageFullUrl = '123'
-
-INSERT INTO "Stone"
-(
-	"Name",
-	"Enabled",
-	"ImageFullUrl"
-)
-VALUES
-(
-	@Name,
-	@Enabled,
-	@ImageFullUrl
-)
-
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
@@ -64,7 +61,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

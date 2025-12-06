@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 UPDATE
 	[TrimTestTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

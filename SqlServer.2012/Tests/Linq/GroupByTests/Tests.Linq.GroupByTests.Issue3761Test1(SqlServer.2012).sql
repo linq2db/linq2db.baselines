@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[t1].[Year_1],
@@ -14,7 +13,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
+			[n].[DATUM] < DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 3)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],

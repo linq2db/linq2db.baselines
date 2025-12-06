@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	SampleClass
@@ -7,7 +6,6 @@ UPDATE
 	Value = 10 + Value * 2
 WHERE 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

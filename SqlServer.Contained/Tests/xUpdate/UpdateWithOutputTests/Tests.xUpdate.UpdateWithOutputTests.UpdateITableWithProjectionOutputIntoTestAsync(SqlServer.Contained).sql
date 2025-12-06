@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained SqlServer.2019
 
 UPDATE
 	[t]
@@ -21,7 +20,6 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

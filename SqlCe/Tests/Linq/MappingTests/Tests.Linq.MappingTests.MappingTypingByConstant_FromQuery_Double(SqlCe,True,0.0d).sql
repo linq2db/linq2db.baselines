@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t1].[ID],
@@ -13,7 +12,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

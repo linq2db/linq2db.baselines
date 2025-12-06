@@ -1,19 +1,18 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
-BeforeExecute
--- SqlServer.2005 (asynchronously)
+-- SqlServer.2005
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- SqlServer.2005 (asynchronously)
+-- SqlServer.2005
 
 INSERT INTO [tempdb]..[#TempTable]
 (
@@ -24,13 +23,11 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- SqlServer.2005 (asynchronously)
+-- SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TempTable]
 
-BeforeExecute
 -- SqlServer.2005
 
 DROP TABLE [TempTable]

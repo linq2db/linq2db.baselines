@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -24,7 +22,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
@@ -36,7 +33,6 @@ FROM
 WHERE
 	"t1"."ParentID" = @id
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

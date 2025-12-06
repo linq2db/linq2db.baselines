@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @newValue Integer(4) -- Int32
 SET     @newValue = 123
@@ -22,7 +20,6 @@ UPDATE
 SET
 	"Value" = @newValue
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

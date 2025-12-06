@@ -1,15 +1,35 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[temp_table_2]
+CREATE TABLE [temp_table_1]
 (
-	[Value] NVarChar(255)     NULL
+	[ID]    INTEGER       NOT NULL,
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-INSERT INTO temp.[temp_table_2]
+INSERT INTO [temp_table_1]
+(
+	[ID],
+	[Value]
+)
+VALUES
+(1,'Value')
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [temp_table_2]
+(
+	[Value] NVarChar(50) NOT NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY ([Value])
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+INSERT INTO [temp_table_2]
 (
 	[Value]
 )
@@ -33,8 +53,11 @@ FROM
 				[temp_table_1] [c_1]
 		) [t1] ON [gr_1].[ID] = [t1].[ID] AND [t1].[rn] <= 1
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[temp_table_2]
+DROP TABLE IF EXISTS [temp_table_2]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [temp_table_1]
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[r].[Id],
@@ -19,7 +18,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -51,7 +48,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -63,7 +59,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -84,7 +79,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -96,7 +90,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -116,7 +109,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -128,7 +120,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -148,7 +139,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -160,7 +150,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -180,7 +169,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -192,7 +180,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -214,7 +201,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -226,7 +212,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -248,7 +233,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -260,7 +244,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -281,7 +264,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -293,7 +275,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -314,7 +295,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -326,7 +306,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -347,7 +326,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -359,7 +337,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -380,7 +357,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -392,7 +368,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -412,7 +387,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -424,7 +398,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -444,7 +417,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -456,7 +428,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -477,7 +448,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -489,7 +459,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -510,7 +479,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[r].[Id],
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], 1) = 1
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], 0) = 1
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -87,7 +82,6 @@ WHERE
 		ELSE 0
 	END) = 1
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

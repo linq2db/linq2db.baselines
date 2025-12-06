@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."CategoryID",
@@ -13,9 +10,6 @@ FROM
 	"Categories" m_1
 		INNER JOIN "Products" d ON m_1."CategoryID" = d."CategoryID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

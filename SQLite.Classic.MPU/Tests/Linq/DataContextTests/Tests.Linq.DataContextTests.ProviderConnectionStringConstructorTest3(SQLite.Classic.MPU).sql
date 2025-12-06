@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	[t1].[ChildID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

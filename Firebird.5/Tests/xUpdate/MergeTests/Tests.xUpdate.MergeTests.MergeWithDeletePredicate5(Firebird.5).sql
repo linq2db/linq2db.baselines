@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 MERGE INTO "Child" "Target"
 USING (
@@ -60,5 +57,3 @@ EXISTS(
 		"a_Child_1"."ChildID" = 22
 ) THEN DELETE
 
-BeforeExecute
-DisposeTransaction

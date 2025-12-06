@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntEnum Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@IntEnum
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@IntEnum
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 CREATE TABLE [aa]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY ([bb])
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @bb  -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[aa] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DROP TABLE [aa]

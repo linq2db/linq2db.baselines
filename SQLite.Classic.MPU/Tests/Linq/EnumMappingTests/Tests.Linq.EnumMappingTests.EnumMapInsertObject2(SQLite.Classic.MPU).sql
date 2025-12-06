@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 101
@@ -30,7 +28,6 @@ VALUES
 	@Int32Field
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102

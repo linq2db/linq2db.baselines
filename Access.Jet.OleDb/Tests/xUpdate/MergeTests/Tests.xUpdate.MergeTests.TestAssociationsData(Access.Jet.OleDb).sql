@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[t1].[PersonID],
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

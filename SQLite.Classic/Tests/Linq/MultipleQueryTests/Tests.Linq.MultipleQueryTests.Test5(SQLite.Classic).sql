@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -17,9 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Parent] [d] ON [d].[ParentID] = [m_1].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	MAX(`t1`.`PersonID`)
 FROM
 	`Person` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -47,7 +44,6 @@ WHERE
 	`p`.`PersonID` > 4
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  

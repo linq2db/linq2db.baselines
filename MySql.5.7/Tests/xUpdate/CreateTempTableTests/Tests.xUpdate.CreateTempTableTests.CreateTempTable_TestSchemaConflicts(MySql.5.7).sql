@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestTempTable`
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Id`      INT           NOT NULL,
-	`Renamed` VARCHAR(4000)     NULL
+	`Renamed` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Id`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TempTable`
@@ -35,7 +34,6 @@ SELECT
 FROM
 	`TestTempTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestTempTable`
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TempTable`
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `TempTable`

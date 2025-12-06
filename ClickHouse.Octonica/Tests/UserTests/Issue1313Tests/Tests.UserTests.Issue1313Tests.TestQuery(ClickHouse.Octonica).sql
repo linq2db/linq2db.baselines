@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ValueItem
 (
@@ -10,7 +9,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

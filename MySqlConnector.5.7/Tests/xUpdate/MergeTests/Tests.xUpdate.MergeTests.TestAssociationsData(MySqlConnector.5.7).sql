@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`PersonID`,
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	`t1`.`PersonID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	`t1`.`PersonID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	`t1`.`PersonID`
 
-BeforeExecute
-DisposeTransaction

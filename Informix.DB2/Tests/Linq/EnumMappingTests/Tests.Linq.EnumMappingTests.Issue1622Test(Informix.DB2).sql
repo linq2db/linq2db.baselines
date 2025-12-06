@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @SomeText VarChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -27,7 +25,6 @@ FROM
 WHERE
 	e.SomeText = 'Value1_suffix'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int32 Int32
@@ -16,7 +15,6 @@ VALUES
 	:Int32
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	:Int32
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

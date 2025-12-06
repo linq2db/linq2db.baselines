@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	CASE
@@ -13,8 +12,7 @@ SELECT
 		ELSE false
 	END
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	CASE

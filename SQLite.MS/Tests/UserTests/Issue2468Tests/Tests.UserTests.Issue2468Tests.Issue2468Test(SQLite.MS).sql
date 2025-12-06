@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Status  -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@CMYKColor
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

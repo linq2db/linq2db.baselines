@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @VBLocal_SelectedValue Int -- Int32
 SET     @VBLocal_SelectedValue = 1
 

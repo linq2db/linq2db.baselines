@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 (
@@ -8,8 +7,7 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 	CONSTRAINT `PK_TableWithPrimaryKey` PRIMARY KEY CLUSTERED (`Key`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey`
 

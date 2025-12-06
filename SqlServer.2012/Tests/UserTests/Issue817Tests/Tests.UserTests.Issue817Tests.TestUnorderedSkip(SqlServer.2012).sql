@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @skip Int -- Int32
 SET     @skip = 1

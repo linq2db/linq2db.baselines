@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."Id",
@@ -13,9 +10,6 @@ FROM
 		INNER JOIN "EntityMB" "d" ON "m_1"."Id" = "d".FK
 		LEFT JOIN "EntityMD" "a_ObjectD" ON "d".FKD = "a_ObjectD"."Id"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

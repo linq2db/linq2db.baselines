@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
@@ -18,7 +16,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
@@ -28,7 +25,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
@@ -38,9 +34,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
@@ -58,7 +51,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
@@ -76,7 +68,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
@@ -94,7 +85,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
@@ -112,9 +102,7 @@ VALUES
 	?
 )
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
@@ -124,7 +112,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
@@ -134,7 +121,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
@@ -144,7 +130,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,8 +15,7 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 200
 
@@ -30,8 +28,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 300
 
@@ -44,7 +41,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 3
@@ -59,7 +55,6 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 3

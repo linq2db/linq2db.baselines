@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'LastName307'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

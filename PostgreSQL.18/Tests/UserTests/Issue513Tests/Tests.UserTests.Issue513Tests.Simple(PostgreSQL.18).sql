@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."TypeDiscriminator",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

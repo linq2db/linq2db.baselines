@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	"s"."NullableInt" IS NOT NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -26,7 +23,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

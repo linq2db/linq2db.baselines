@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Int] IS NULL
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

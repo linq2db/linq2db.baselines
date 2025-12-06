@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @n Int -- Int32
 SET     @n = 2
 
@@ -8,9 +7,9 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > @n
+			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ChildID] > @n
 	) + 2
 FROM
 	[Parent] [p]

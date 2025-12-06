@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t".ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @param SmallInt(4) -- Int16
 SET     @param = 1

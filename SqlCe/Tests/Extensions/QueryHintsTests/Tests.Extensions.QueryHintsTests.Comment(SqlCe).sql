@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	[Parent] [p]
 ---
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -66,7 +62,6 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -80,7 +75,6 @@ FROM
 WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 5

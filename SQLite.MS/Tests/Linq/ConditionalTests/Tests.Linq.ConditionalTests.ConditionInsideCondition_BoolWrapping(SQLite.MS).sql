@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	CASE
@@ -10,9 +9,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,9 +24,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

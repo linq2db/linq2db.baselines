@@ -1,11 +1,7 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 { CALL Person_SelectAll() }
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -19,5 +15,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

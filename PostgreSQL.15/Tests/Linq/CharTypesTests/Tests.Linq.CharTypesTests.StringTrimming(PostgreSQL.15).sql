@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(6) -- String
 SET     @NString = 'test01'
@@ -20,7 +18,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test02  '
@@ -34,7 +31,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test03	 '
@@ -48,7 +44,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test04
@@ -63,7 +58,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test05 '
@@ -77,7 +71,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test06 '
@@ -91,7 +84,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test07 '
@@ -105,7 +97,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test08  '
@@ -119,7 +110,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test09  '
@@ -133,7 +123,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test10  '
@@ -147,7 +136,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test11  '
@@ -161,7 +149,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test12  '
@@ -175,7 +162,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test13  '
@@ -189,7 +175,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test14  '
@@ -203,7 +188,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test15  '
@@ -217,7 +201,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test16  '
@@ -231,7 +214,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test17  '
@@ -245,7 +227,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test18  '
@@ -259,7 +240,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test19  '
@@ -273,7 +253,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test20　 '
@@ -287,7 +266,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @NString Text -- String
 SET     @NString = NULL
@@ -301,7 +279,6 @@ VALUES
 	:NString
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
@@ -316,7 +293,6 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2

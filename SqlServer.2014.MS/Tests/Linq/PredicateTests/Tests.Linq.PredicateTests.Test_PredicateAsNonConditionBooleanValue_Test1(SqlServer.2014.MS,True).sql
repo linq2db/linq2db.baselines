@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[r].[Id],
@@ -32,7 +31,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

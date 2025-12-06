@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	Parent
 WHERE
 	Parent.Value1 = 11
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Parent
@@ -22,7 +20,6 @@ FROM
 WHERE
 	c_1.ChildID = 11
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	p.Value1 = 11
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

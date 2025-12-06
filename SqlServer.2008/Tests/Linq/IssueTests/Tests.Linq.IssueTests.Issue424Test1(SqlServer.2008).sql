@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t2].[ParentID]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,21 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-DROP TABLE [xxPatient]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int           NOT NULL,
-	[Diagnosis] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -28,8 +11,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarWChar(4) -- String
@@ -46,8 +28,7 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -60,8 +41,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarWChar(4) -- String
@@ -78,16 +58,14 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -100,8 +78,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -114,16 +91,10 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-DROP TABLE [xxPatient]
 

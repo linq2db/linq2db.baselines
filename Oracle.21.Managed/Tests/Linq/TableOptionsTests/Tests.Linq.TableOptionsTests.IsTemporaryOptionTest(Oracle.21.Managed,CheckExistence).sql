@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "temp_table1"
 		(
 			ID      Int NOT NULL,
-			"Value" Int NOT NULL
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_temp_table1" PRIMARY KEY (ID)
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -17,14 +18,12 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (1,2)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -32,7 +31,9 @@ BEGIN
 		CREATE GLOBAL TEMPORARY TABLE "temp_table2"
 		(
 			ID      Int NOT NULL,
-			"Value" Int NOT NULL
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_temp_table2" PRIMARY KEY (ID)
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -43,7 +44,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "temp_table2"
@@ -57,7 +57,6 @@ SELECT
 FROM
 	"temp_table1" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -66,7 +65,6 @@ SELECT
 FROM
 	"temp_table1" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -75,14 +73,12 @@ SELECT
 FROM
 	"temp_table2" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (2,3)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 3
@@ -100,24 +96,20 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (4,5)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "temp_table1"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "temp_table2"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -129,7 +121,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN

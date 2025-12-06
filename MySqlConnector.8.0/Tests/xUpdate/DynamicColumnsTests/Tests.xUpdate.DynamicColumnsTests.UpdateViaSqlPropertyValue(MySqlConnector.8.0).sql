@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @id
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ChildID Int32
 SET     @ChildID = 5000
@@ -41,7 +38,6 @@ SET
 WHERE
 	`c_1`.`ChildID` = @id AND `a_Parent`.`Value1` = 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

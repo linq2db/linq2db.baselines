@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Decimal
 SET     @ID = 1
 DECLARE @bigintDataType Decimal

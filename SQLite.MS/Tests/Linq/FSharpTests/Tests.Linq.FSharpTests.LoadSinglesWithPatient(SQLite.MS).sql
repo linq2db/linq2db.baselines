@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[PersonID],
@@ -16,7 +15,6 @@ WHERE
 	[p].[PersonID] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

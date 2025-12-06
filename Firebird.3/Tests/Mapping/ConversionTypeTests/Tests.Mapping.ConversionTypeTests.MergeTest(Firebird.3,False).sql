@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 MERGE INTO "TrimTestTable" "Target"
 USING (
@@ -29,7 +28,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 MERGE INTO "TrimTestTable" "Target"
@@ -58,7 +56,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -69,7 +66,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

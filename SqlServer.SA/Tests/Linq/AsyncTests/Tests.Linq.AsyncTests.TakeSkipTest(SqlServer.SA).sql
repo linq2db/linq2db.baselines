@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -14,8 +13,7 @@ ORDER BY
 	[t1].[ParentID]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = {2}
 

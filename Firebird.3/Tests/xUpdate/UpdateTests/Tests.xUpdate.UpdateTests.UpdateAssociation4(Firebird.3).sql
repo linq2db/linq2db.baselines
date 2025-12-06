@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Parent"
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "Child"
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 5

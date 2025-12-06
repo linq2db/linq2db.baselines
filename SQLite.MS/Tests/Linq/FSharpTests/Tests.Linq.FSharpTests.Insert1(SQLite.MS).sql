@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ChildID] > 1000
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
@@ -24,7 +22,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 1001
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeValue2
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @SomeValue1  -- Int32
 SET     @SomeValue1 = 8
@@ -31,7 +29,6 @@ SET
 	[SomeValue1] = @SomeValue1,
 	[SomeValue2] = 4
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 	[ValuesTable] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @param  -- Int32
 SET     @param = 8
@@ -52,7 +48,6 @@ UPDATE
 SET
 	[SomeValue2] = @param
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

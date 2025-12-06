@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 

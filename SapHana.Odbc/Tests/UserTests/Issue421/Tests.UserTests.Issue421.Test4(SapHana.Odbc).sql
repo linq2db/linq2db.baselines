@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "BlobClass"
 (
@@ -12,7 +11,6 @@ VALUES
 	x'010203'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -24,7 +22,6 @@ WHERE
 	"t1"."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

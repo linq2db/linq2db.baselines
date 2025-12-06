@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -15,9 +12,6 @@ FROM
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK TrimTestTable
+﻿INSERT BULK TrimTestTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

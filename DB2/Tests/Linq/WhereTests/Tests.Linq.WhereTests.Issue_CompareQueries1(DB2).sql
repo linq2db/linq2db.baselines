@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT("p"."PersonID")
@@ -9,7 +8,6 @@ WHERE
 	"p"."PersonID" IN (1, 2)
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

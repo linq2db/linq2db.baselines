@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)

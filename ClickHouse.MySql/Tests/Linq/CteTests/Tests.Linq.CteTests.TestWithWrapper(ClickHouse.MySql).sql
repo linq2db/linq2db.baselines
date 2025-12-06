@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 WITH CTE_1 AS
 (
@@ -18,7 +17,6 @@ FROM
 	Parent p
 		INNER JOIN CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

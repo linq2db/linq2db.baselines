@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "BlobClass"
 (
@@ -12,7 +11,6 @@ VALUES
 	X'010203'
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -24,7 +22,6 @@ WHERE
 	"t1"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

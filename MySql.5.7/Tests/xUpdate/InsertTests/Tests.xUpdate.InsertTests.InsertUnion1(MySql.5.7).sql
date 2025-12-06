@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` > 1000
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Parent`
@@ -33,7 +31,6 @@ FROM
 			`GrandChild` `c_2`
 	) `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	`c_1`.`ParentID` > 1000
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  

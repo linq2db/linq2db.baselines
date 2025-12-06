@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 WITH "CTE_1" ("ParentID")
 AS
@@ -20,7 +19,6 @@ FROM
 WHERE
 	ct."ParentID" = "CteChild"."ParentID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	(c_1."ParentID"::decimal % 2)::decimal = 0
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

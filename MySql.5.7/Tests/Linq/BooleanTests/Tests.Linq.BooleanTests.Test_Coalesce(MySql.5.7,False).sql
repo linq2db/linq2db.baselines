@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @True UByte -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @True)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @False UByte -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @False)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

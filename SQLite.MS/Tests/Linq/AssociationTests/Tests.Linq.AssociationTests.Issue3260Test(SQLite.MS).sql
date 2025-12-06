@@ -1,22 +1,21 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	(
 		SELECT
 			SUM(CASE
-				WHEN [d].[not_null] IS NOT NULL THEN [d].[StartHour]
+				WHEN [d].[not_null] IS NOT NULL THEN [d].[Result_1]
 				ELSE CAST(0 AS Decimal)
 			END)
 		FROM
 			(
 				SELECT
-					0 as [Result_1]
+					1 as [c1]
 			) [t1]
 				LEFT JOIN (
 					SELECT
 						1 as [not_null],
-						[e].[StartHour]
+						[e].[StartHour] as [Result_1]
 					FROM
 						[LeaveRequestDateEntry] [e]
 					WHERE

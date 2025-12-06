@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿BeginTransactionAsync
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -18,5 +16,4 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

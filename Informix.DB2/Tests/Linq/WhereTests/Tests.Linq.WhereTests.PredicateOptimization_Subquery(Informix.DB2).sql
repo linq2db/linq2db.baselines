@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,
@@ -22,12 +22,12 @@ WHERE
 				SELECT p.Date3::datetime year to fraction FROM table(set{1})
 				UNION ALL
 				SELECT p.Date4::datetime year to fraction FROM table(set{1})) t1
-	) > TO_DATE('2023-01-01', '%Y-%m-%d')
+	) > Mdy(1, 1, 2023)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,

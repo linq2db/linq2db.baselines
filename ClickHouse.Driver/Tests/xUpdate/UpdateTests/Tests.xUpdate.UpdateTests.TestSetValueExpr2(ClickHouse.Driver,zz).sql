@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	TextData
@@ -9,7 +8,6 @@ UPDATE
 WHERE
 	Id >= 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @p Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	`t`.`ID` = @p
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0504030201
@@ -26,7 +24,6 @@ SET
 WHERE
 	`t`.`ID` = @p
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"s"."Id"
@@ -9,7 +8,6 @@ WHERE
 	"s"."Int" IN (-1, -2)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	("s"."Int" IN (-1) OR "s"."Int" IS NULL)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	"s"."Int" IN (-1, 2)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	("s"."Int" NOT IN (2) AND "s"."Int" IS NOT NULL)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

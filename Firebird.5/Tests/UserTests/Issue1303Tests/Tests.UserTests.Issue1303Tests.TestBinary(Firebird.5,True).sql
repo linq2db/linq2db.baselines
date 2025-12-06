@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "Issue1303"
 (
@@ -14,7 +13,6 @@ VALUES
 	X'0405'
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	"t1".ID = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	"t1"."Array" = X'010203'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

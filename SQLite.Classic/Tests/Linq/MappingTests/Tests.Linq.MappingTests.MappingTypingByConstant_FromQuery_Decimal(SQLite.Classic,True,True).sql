@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -13,7 +12,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

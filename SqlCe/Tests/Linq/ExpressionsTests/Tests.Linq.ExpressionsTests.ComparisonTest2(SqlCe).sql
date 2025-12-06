@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @personId Int -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Int -- Int32
@@ -14,7 +13,7 @@ SELECT
 				[Person] [t7]
 					CROSS JOIN (
 						SELECT
-							COUNT(*) as [COUNT_1]
+							COUNT(*) as [Count_1]
 						FROM
 							[Patient] [t1]
 						WHERE
@@ -29,7 +28,7 @@ SELECT
 					) [t3]
 					CROSS JOIN (
 						SELECT
-							COUNT(*) as [COUNT_1]
+							COUNT(*) as [Count_1]
 						FROM
 							[Patient] [t4]
 						WHERE
@@ -43,7 +42,7 @@ SELECT
 							)
 					) [t6]
 			WHERE
-				[t3].[COUNT_1] = 0 AND [t6].[COUNT_1] = 0
+				[t3].[Count_1] = 0 AND [t6].[Count_1] = 0
 		)
 			THEN 1
 		ELSE 0

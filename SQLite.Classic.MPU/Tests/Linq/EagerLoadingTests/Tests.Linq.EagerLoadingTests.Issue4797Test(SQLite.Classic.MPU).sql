@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[cond],
@@ -25,7 +22,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Issue4797Child] [d_1] ON [m_1].[cond] = [d_1].[ParentId] OR [m_1].[cond] IS NULL AND [d_1].[ParentId] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -43,9 +39,6 @@ FROM
 		INNER JOIN [Issue4797Child] [d] ON [m_1].[Id] = [d].[ParentId]
 		LEFT JOIN [Issue4797Parent] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

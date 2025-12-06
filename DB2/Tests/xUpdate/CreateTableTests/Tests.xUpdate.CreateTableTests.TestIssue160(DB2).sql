@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "aa"
 (
@@ -9,7 +8,6 @@ CREATE TABLE "aa"
 	CONSTRAINT "PK_aa" PRIMARY KEY ("bb")
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @bb Integer(4) -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	"aa" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "aa"

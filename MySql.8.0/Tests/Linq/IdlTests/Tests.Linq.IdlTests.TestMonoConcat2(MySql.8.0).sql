@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @t VarChar(1) -- String
 SET     @t = 'A'
 
@@ -15,7 +14,6 @@ FROM
 WHERE
 	`x_1`.`FirstName` = @t
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @t VarChar(1) -- String
 SET     @t = 'A'

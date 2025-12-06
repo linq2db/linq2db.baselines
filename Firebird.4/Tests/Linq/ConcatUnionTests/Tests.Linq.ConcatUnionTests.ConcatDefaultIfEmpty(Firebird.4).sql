@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	CAST(0 AS Int),
@@ -31,9 +30,6 @@ FROM
 WHERE
 	"p_1"."ParentID" <> 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -49,9 +45,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -60,7 +53,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

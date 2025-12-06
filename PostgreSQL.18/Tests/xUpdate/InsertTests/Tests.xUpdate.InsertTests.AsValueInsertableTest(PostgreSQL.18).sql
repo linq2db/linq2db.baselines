@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 123
 DECLARE @FirstName Text(4) -- String
@@ -16,7 +15,6 @@ VALUES
 	:FirstName
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

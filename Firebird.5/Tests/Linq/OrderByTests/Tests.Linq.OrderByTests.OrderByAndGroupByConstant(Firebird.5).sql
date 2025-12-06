@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -11,7 +10,6 @@ FROM
 	"Child" "g_1"
 FETCH NEXT @take ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

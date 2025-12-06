@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	[t].[PK],
 	[t].[ID]
 FROM
 	[test_in_1] [t]
@@ -15,19 +15,20 @@ WHERE
 			[t].[ID] = [p].[ID]
 	)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_1] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_2] [t1]
 

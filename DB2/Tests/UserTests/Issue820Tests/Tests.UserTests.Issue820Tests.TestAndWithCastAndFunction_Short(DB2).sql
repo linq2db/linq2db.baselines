@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @param SmallInt(2) -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = "t1"."SmallIntValue"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

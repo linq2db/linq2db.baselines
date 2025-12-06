@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [InheritanceFilter]
 (
@@ -19,7 +18,6 @@ SELECT 4,12,24,0,0,14,0,0 UNION ALL
 SELECT 5,21,0,25,0,0,15,0 UNION ALL
 SELECT 6,22,0,26,0,0,0,16
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @p VarBinary -- Binary
 SET     @p = Tests.Linq.ParameterTests+VarBinary
 

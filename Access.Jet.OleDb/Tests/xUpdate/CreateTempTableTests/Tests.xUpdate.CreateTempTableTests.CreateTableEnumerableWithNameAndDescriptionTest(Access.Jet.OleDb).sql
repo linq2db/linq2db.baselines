@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [TempTable]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Name])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
@@ -25,7 +24,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -34,7 +32,6 @@ FROM
 	[Person] [p]
 		INNER JOIN [TempTable] [t] ON ([p].[FirstName] = [t].[Name])
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [TempTable]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -30,7 +28,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -48,8 +45,7 @@ VALUES
 	:Name
 )
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "FluentTemp" Target
 USING (
@@ -73,8 +69,7 @@ VALUES
 	"Source"."Name"
 )
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';

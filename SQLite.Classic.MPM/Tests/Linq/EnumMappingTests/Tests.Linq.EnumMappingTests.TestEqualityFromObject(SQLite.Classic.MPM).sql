@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @charValue Char(1) -- AnsiStringFixedLength
 SET     @charValue = 'A'
 DECLARE @intValue Char(1) -- AnsiStringFixedLength
@@ -19,7 +18,6 @@ WHERE
 	[t].[IntValue] = @stringIntValue AND
 	[t].[DoubleValue] = @doubleValue
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @charValue Char(1) -- AnsiStringFixedLength
 SET     @charValue = 'A'
@@ -40,7 +38,6 @@ WHERE
 	@stringIntValue = [t].[IntValue] AND
 	@doubleValue = [t].[DoubleValue]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -51,7 +48,6 @@ WHERE
 	[t].[EnumValue] IS NULL AND [t].[IntValue] IS NULL AND
 	[t].[DoubleValue] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

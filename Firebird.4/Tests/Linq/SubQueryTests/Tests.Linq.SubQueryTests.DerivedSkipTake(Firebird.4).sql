@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 DECLARE @take Integer -- Int32
@@ -18,7 +17,6 @@ FROM
 		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 	) "t2"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

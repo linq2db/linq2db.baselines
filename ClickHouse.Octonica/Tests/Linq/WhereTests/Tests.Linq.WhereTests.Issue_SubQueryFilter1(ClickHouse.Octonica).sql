@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.PersonID,
@@ -38,7 +37,6 @@ WHERE
 ORDER BY
 	t1.PersonID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -47,7 +45,6 @@ SELECT
 FROM
 	Patient t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

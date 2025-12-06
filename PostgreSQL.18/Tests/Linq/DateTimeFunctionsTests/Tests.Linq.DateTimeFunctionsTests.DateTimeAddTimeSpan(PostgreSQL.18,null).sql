@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ts Interval -- Object
 SET     @ts = NULL
 
@@ -37,7 +36,6 @@ SELECT
 FROM
 	"DateTypes" t_1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

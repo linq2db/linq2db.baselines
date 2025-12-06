@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[arg].[Id],
@@ -10,7 +9,6 @@ FROM
 			(1,CAST(1 AS Decimal))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

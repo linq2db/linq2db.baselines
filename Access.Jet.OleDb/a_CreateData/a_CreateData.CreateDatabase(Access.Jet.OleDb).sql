@@ -1,89 +1,71 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure AddIssue792Record
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure ThisProcedureNotVisibleFromODBC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectByKey
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectAll
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectByName
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectListByName
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Insert
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Update
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Delete
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Patient_SelectAll
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Patient_SelectByName
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Scalar_DataReader
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Doctor
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Patient
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Person
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE RelationsTable
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE InheritanceParent
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE InheritanceParent
@@ -93,12 +75,10 @@ CREATE TABLE InheritanceParent
 	Name                Text(50)     NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE InheritanceChild
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE InheritanceChild
@@ -109,7 +89,6 @@ CREATE TABLE InheritanceChild
 	Name                Text(50)     NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Person
@@ -123,7 +102,6 @@ CREATE TABLE Person
 	CONSTRAINT PK_Peson PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Doctor
@@ -134,7 +112,6 @@ CREATE TABLE Doctor
 	CONSTRAINT PK_Doctor PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Patient
@@ -145,79 +122,64 @@ CREATE TABLE Patient
 	CONSTRAINT PK_Patient PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE Doctor
 	ADD CONSTRAINT PersonDoctor FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE Patient
 	ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Doctor (PersonID, Taxonomy)   VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Parent
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Child
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE GrandChild
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Parent     (ParentID int, Value1 int NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Child      (ParentID int, ChildID int)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectByKey(
@@ -225,14 +187,12 @@ CREATE Procedure Person_SelectByKey(
 AS
 	SELECT * FROM Person WHERE PersonID = [@id];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectAll
 AS
 	SELECT * FROM Person;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectByName(
@@ -246,7 +206,6 @@ FROM
 WHERE
 	FirstName = [@firstName] AND LastName = [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectListByName(
@@ -260,7 +219,6 @@ FROM
 WHERE
 	FirstName like [@firstName] AND LastName like [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Insert(
@@ -274,7 +232,6 @@ INSERT INTO Person
 VALUES
 	([@FirstName], [@MiddleName], [@LastName], [@Gender]);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Update(
@@ -294,7 +251,6 @@ SET
 WHERE
 	PersonID = [@id];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Delete(
@@ -302,7 +258,6 @@ CREATE Procedure Person_Delete(
 AS
 DELETE FROM Person WHERE PersonID = [@PersonID];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Patient_SelectAll
@@ -314,7 +269,6 @@ FROM
 WHERE
 	Patient.PersonID = Person.PersonID;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Patient_SelectByName(
@@ -329,19 +283,16 @@ WHERE
 	Patient.PersonID = Person.PersonID
 	AND FirstName = [@firstName] AND LastName = [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Scalar_DataReader
 AS
 	SELECT 12345 AS intField, '54321' AS stringField;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE LinqDataTypes
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE LinqDataTypes
@@ -359,12 +310,10 @@ CREATE TABLE LinqDataTypes
 	StringValue    Text(50)  NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestIdentity
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestIdentity
@@ -373,12 +322,10 @@ CREATE TABLE TestIdentity
 	CONSTRAINT PK_TestIdentity PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE AllTypes
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE AllTypes
@@ -412,23 +359,19 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO AllTypes (binaryDataType)
 VALUES (NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestMerge1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestMerge2
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestMerge1
@@ -457,7 +400,6 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestMerge2
@@ -486,21 +428,18 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure AddIssue792Record(@id INT)
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure ThisProcedureNotVisibleFromODBC
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE RelationsTable
@@ -515,42 +454,34 @@ CREATE TABLE RelationsTable
 	FKN		INT NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE INDEX PK_RelationsTable ON RelationsTable(ID1, ID2) WITH PRIMARY;
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE INDEX IX_Index ON RelationsTable(Int1, IntN1);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE UNIQUE INDEX UX_Index1 ON RelationsTable(Int1);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE UNIQUE INDEX UX_Index2 ON RelationsTable(IntN1);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_Nullable FOREIGN KEY (IntN1, IntN2) REFERENCES RelationsTable(ID1, ID2);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2) REFERENCES RelationsTable(ID1, ID2);
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE CollatedTable
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE CollatedTable
@@ -560,7 +491,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -610,7 +540,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
@@ -660,7 +589,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
@@ -710,7 +638,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
@@ -760,7 +687,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -810,7 +736,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 6
@@ -860,7 +785,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 7
@@ -910,7 +834,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 8
@@ -960,7 +883,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 9
@@ -1010,7 +932,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 10
@@ -1060,7 +981,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 11
@@ -1110,7 +1030,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
@@ -1160,7 +1079,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -1178,7 +1096,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1196,7 +1113,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1214,7 +1130,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1232,7 +1147,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 5
@@ -1250,7 +1164,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1268,7 +1181,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 7
@@ -1286,7 +1198,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -1304,7 +1215,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1322,7 +1232,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1340,7 +1249,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1358,7 +1266,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1376,7 +1283,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1394,7 +1300,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1412,7 +1317,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1430,7 +1334,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1448,7 +1351,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1466,7 +1368,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1484,7 +1385,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1502,7 +1402,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1520,7 +1419,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1538,7 +1436,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1556,7 +1453,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -1574,7 +1470,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 7
@@ -1592,7 +1487,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -1614,7 +1508,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1636,7 +1529,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1658,7 +1550,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1680,7 +1571,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -1702,7 +1592,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1724,7 +1613,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1746,7 +1634,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1768,7 +1655,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1790,7 +1676,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1812,7 +1697,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1834,7 +1718,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1856,7 +1739,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1878,7 +1760,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -1900,7 +1781,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1922,7 +1802,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1944,7 +1823,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1966,7 +1844,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -1988,7 +1865,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -2010,7 +1886,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -2032,7 +1907,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -2054,7 +1928,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -2076,7 +1949,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
@@ -2098,7 +1970,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
@@ -2120,7 +1991,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 3
@@ -2142,7 +2012,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 1
@@ -2168,7 +2037,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 2
@@ -2194,7 +2062,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 3
@@ -2220,7 +2087,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @datetimeDataType Date -- DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#
@@ -2253,92 +2119,74 @@ SET     @uniqueidentifierDataType = {guid {6f9619ff-8b86-d011-b42d-00c04fc964ff}
 					@uniqueidentifierDataType
 				)
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure AddIssue792Record
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure ThisProcedureNotVisibleFromODBC
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectByKey
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectAll
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectByName
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_SelectListByName
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Insert
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Update
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Person_Delete
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Patient_SelectAll
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Patient_SelectByName
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP Procedure Scalar_DataReader
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Doctor
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Patient
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Person
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE RelationsTable
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE InheritanceParent
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE InheritanceParent
@@ -2348,12 +2196,10 @@ CREATE TABLE InheritanceParent
 	Name                Text(50)     NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE InheritanceChild
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE InheritanceChild
@@ -2364,7 +2210,6 @@ CREATE TABLE InheritanceChild
 	Name                Text(50)     NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Person
@@ -2378,7 +2223,6 @@ CREATE TABLE Person
 	CONSTRAINT PK_Peson PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Doctor
@@ -2389,7 +2233,6 @@ CREATE TABLE Doctor
 	CONSTRAINT PK_Doctor PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Patient
@@ -2400,79 +2243,64 @@ CREATE TABLE Patient
 	CONSTRAINT PK_Patient PRIMARY KEY (PersonID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE Doctor
 	ADD CONSTRAINT PersonDoctor FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE Patient
 	ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Doctor (PersonID, Taxonomy)   VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Parent
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE Child
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE GrandChild
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Parent     (ParentID int, Value1 int NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE Child      (ParentID int, ChildID int)
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int)
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectByKey(
@@ -2480,14 +2308,12 @@ CREATE Procedure Person_SelectByKey(
 AS
 	SELECT * FROM Person WHERE PersonID = [@id];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectAll
 AS
 	SELECT * FROM Person;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectByName(
@@ -2501,7 +2327,6 @@ FROM
 WHERE
 	FirstName = [@firstName] AND LastName = [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_SelectListByName(
@@ -2515,7 +2340,6 @@ FROM
 WHERE
 	FirstName like [@firstName] AND LastName like [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Insert(
@@ -2529,7 +2353,6 @@ INSERT INTO Person
 VALUES
 	([@FirstName], [@MiddleName], [@LastName], [@Gender]);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Update(
@@ -2549,7 +2372,6 @@ SET
 WHERE
 	PersonID = [@id];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Person_Delete(
@@ -2557,7 +2379,6 @@ CREATE Procedure Person_Delete(
 AS
 DELETE FROM Person WHERE PersonID = [@PersonID];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Patient_SelectAll
@@ -2569,7 +2390,6 @@ FROM
 WHERE
 	Patient.PersonID = Person.PersonID;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Patient_SelectByName(
@@ -2584,19 +2404,16 @@ WHERE
 	Patient.PersonID = Person.PersonID
 	AND FirstName = [@firstName] AND LastName = [@lastName];
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure Scalar_DataReader
 AS
 	SELECT 12345 AS intField, '54321' AS stringField;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE LinqDataTypes
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE LinqDataTypes
@@ -2614,12 +2431,10 @@ CREATE TABLE LinqDataTypes
 	StringValue    Text(50)  NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestIdentity
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestIdentity
@@ -2628,12 +2443,10 @@ CREATE TABLE TestIdentity
 	CONSTRAINT PK_TestIdentity PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE AllTypes
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE AllTypes
@@ -2667,23 +2480,19 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 INSERT INTO AllTypes (binaryDataType)
 VALUES (NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestMerge1
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE TestMerge2
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestMerge1
@@ -2712,7 +2521,6 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE TestMerge2
@@ -2741,21 +2549,18 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure AddIssue792Record(@id INT)
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE Procedure ThisProcedureNotVisibleFromODBC
 AS
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE RelationsTable
@@ -2770,42 +2575,34 @@ CREATE TABLE RelationsTable
 	FKN		INT NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE INDEX PK_RelationsTable ON RelationsTable(ID1, ID2) WITH PRIMARY;
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE INDEX IX_Index ON RelationsTable(Int1, IntN1);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE UNIQUE INDEX UX_Index1 ON RelationsTable(Int1);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE UNIQUE INDEX UX_Index2 ON RelationsTable(IntN1);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_Nullable FOREIGN KEY (IntN1, IntN2) REFERENCES RelationsTable(ID1, ID2);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 ALTER TABLE RelationsTable ADD CONSTRAINT FK_NotNullable FOREIGN KEY (Int1, Int2) REFERENCES RelationsTable(ID1, ID2);
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 DROP TABLE CollatedTable
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE CollatedTable
@@ -2815,7 +2612,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -2865,7 +2661,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
@@ -2915,7 +2710,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
@@ -2965,7 +2759,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
@@ -3015,7 +2808,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -3065,7 +2857,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 6
@@ -3115,7 +2906,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 7
@@ -3165,7 +2955,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 8
@@ -3215,7 +3004,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 9
@@ -3265,7 +3053,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 10
@@ -3315,7 +3102,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 11
@@ -3365,7 +3151,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 12
@@ -3415,7 +3200,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -3433,7 +3217,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3451,7 +3234,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -3469,7 +3251,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -3487,7 +3268,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 5
@@ -3505,7 +3285,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3523,7 +3302,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 7
@@ -3541,7 +3319,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -3559,7 +3336,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3577,7 +3353,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3595,7 +3370,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -3613,7 +3387,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -3631,7 +3404,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -3649,7 +3421,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -3667,7 +3438,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -3685,7 +3455,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -3703,7 +3472,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -3721,7 +3489,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3739,7 +3506,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3757,7 +3523,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3775,7 +3540,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3793,7 +3557,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3811,7 +3574,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 6
@@ -3829,7 +3591,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 7
@@ -3847,7 +3608,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -3869,7 +3629,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3891,7 +3650,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3913,7 +3671,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3935,7 +3692,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
@@ -3957,7 +3713,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -3979,7 +3734,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4001,7 +3755,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4023,7 +3776,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4045,7 +3797,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4067,7 +3818,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4089,7 +3839,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4111,7 +3860,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4133,7 +3881,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
@@ -4155,7 +3902,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4177,7 +3923,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4199,7 +3944,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4221,7 +3965,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4243,7 +3986,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4265,7 +4007,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4287,7 +4028,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4309,7 +4049,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4
@@ -4331,7 +4070,6 @@ VALUES
 	@GrandChildID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 1
@@ -4353,7 +4091,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 2
@@ -4375,7 +4112,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceParentId Integer -- Int32
 SET     @InheritanceParentId = 3
@@ -4397,7 +4133,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 1
@@ -4423,7 +4158,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 2
@@ -4449,7 +4183,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb.Data Access.Jet.OleDb AccessOleDb
 DECLARE @InheritanceChildId Integer -- Int32
 SET     @InheritanceChildId = 3
@@ -4475,7 +4208,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @datetimeDataType Date -- DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#

@@ -1,57 +1,57 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
 	[t].[Value] = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
 	[t].[Value] = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
 	[t].[Value] = 0
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
 	[t].[Value] = 0
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
 	[t].[Value] = 0
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]

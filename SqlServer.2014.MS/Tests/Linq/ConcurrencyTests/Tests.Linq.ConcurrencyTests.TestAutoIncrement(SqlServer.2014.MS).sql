@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 1'
@@ -47,7 +44,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -57,7 +53,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 2'
@@ -74,7 +69,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -84,7 +78,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 3'
@@ -101,7 +94,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -111,7 +103,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -124,7 +115,6 @@ FROM
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -134,7 +124,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -147,7 +136,6 @@ FROM
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

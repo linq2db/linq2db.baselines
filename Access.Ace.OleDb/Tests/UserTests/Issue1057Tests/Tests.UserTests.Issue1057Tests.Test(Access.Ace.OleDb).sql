@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarWChar(12) -- String
@@ -16,7 +15,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

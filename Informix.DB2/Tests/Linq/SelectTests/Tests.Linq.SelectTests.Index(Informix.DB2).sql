@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	m_2.ParentID,
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	m_2.ChildID DESC
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

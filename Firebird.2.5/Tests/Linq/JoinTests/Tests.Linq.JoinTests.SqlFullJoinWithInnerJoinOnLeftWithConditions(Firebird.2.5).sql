@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32

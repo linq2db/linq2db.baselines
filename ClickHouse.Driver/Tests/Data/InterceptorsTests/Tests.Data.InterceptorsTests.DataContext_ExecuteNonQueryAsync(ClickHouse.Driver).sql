@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE InterceptorsTestsTable
 (
@@ -7,8 +6,7 @@ CREATE TEMPORARY TABLE InterceptorsTestsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS InterceptorsTestsTable
 

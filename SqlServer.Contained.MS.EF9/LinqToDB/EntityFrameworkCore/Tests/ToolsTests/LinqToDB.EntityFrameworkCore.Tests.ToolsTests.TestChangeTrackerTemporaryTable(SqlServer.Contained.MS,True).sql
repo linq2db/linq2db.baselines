@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
--- SqlServer.2019 (asynchronously)
+-- SqlServer.2019
 
 INSERT INTO [tempdb]..[#Orders]
 (

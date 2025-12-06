@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName"
@@ -11,7 +10,6 @@ SELECT
 FROM
 	"Person" "p_1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

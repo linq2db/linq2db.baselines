@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	"t"."FirstName" = @p
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'

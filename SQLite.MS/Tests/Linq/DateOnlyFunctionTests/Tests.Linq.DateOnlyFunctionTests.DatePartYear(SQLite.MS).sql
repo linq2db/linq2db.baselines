@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	CAST(strftime('%Y', [t].[TransactionDate]) AS INTEGER)

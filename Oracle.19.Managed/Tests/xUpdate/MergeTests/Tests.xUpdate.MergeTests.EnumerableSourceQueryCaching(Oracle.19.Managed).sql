@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
@@ -28,7 +26,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -43,13 +40,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
@@ -73,7 +68,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
@@ -120,7 +112,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

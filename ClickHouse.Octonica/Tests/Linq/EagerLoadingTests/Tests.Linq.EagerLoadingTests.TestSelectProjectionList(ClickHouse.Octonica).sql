@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -13,7 +12,6 @@ FROM
 WHERE
 	m_1.Id1 >= 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -34,7 +32,6 @@ FROM
 WHERE
 	d.MasterId % 2 = 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.ParentID,
@@ -12,7 +11,6 @@ ORDER BY
 	p.ParentID
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

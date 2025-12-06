@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
 DECLARE @In_1 VarChar(20) -- AnsiString
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
@@ -24,7 +22,6 @@ FROM
 WHERE
 	([s].[CEnum] IN (@In) OR [s].[CEnum] IS NULL)
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
@@ -38,7 +35,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = N'___Value2___'
@@ -50,7 +46,6 @@ FROM
 WHERE
 	([s].[CEnum] NOT IN (@NotIn) AND [s].[CEnum] IS NOT NULL)
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = N'___Value3___'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[r].[Id],
@@ -82,7 +81,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

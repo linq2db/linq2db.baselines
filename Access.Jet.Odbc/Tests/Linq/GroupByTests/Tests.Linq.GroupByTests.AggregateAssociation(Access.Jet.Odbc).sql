@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	SUM(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -28,7 +27,6 @@ WHERE
 ORDER BY
 	[t3].[ParentID]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

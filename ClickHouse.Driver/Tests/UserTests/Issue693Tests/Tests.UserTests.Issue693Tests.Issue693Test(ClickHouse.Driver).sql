@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'b'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
@@ -38,7 +36,6 @@ VALUES
 	'd'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -53,7 +50,6 @@ WHERE
 	t1.PersonID = 100
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

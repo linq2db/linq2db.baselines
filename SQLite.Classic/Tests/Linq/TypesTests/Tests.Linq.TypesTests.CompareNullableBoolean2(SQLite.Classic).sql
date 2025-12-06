@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -14,7 +13,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @param2  -- Boolean
 SET     @param2 = 0

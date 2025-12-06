@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

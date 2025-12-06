@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender VarWChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > 4
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[s].[Id],
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[s].[Id] = 3
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 DELETE FROM
 	[TableWithData]

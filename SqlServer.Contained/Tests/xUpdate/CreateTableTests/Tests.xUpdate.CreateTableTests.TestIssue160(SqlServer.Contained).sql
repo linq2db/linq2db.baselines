@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [aa]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @bb Int -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[aa] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE [aa]

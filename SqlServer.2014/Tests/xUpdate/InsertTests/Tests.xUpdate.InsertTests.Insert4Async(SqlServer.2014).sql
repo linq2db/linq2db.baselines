@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+﻿-- SqlServer.2014
 
 DELETE [c_1]
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -25,8 +23,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -37,8 +34,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 
 DELETE [c_1]
 FROM

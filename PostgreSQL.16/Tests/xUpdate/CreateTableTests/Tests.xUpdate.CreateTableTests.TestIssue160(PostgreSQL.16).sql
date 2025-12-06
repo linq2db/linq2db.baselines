@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE aa
 (
@@ -9,7 +8,6 @@ CREATE TABLE aa
 	CONSTRAINT "PK_aa" PRIMARY KEY (bb)
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	:cc
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	aa t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE aa

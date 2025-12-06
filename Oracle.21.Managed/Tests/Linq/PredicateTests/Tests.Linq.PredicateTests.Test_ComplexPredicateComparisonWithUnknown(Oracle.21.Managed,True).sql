@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	r."Value1" = 1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -73,7 +71,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -85,7 +82,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -150,7 +146,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -162,7 +157,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -201,7 +195,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -213,7 +206,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -252,7 +244,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -264,7 +255,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -335,7 +325,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -347,7 +336,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -418,7 +406,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -430,7 +417,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -476,7 +462,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -488,7 +473,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -534,7 +518,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -546,7 +529,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -636,7 +618,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -648,7 +629,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -738,7 +718,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -750,7 +729,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -793,7 +771,6 @@ WHERE
 		ELSE 1
 	END = 1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -805,7 +782,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -848,7 +824,6 @@ WHERE
 		ELSE 1
 	END = 1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -860,7 +835,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -955,7 +929,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -967,7 +940,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1062,7 +1034,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1074,7 +1045,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1120,7 +1090,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1132,7 +1101,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1178,7 +1146,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1190,7 +1157,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1213,7 +1179,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1225,7 +1190,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1248,7 +1212,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1260,7 +1223,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1283,7 +1245,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1295,7 +1256,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1318,7 +1278,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1330,7 +1289,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1353,7 +1311,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1365,7 +1322,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1388,7 +1344,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1400,7 +1355,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1423,7 +1377,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1435,7 +1388,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1458,7 +1410,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1470,7 +1421,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1500,7 +1450,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1512,7 +1461,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1542,7 +1490,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1554,7 +1501,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1584,7 +1530,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1596,7 +1541,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1626,7 +1570,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1638,7 +1581,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1668,7 +1610,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1680,7 +1621,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1710,7 +1650,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1722,7 +1661,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1752,7 +1690,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1764,7 +1701,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cnt Int32
 SET     @cnt = 18
@@ -1794,7 +1730,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

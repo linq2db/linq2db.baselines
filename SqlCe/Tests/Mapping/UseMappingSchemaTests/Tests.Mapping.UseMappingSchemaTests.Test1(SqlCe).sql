@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t1].[Field1],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

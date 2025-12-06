@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @IntEnum Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@IntEnum
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@IntEnum
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

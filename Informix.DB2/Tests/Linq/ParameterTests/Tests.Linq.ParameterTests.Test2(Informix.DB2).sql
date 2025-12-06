@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer(4) -- Int32
@@ -15,7 +14,6 @@ WHERE
 ORDER BY
 	p.ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 2

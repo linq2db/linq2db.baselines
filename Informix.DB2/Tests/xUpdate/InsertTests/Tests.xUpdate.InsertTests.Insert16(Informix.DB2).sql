@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	Person
 WHERE
 	Person.FirstName LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @name Integer(4) -- Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	t1.FirstName LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue4460Table
 (
@@ -16,7 +15,6 @@ VALUES
 	'Black'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

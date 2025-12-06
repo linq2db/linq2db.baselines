@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[Parent] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
@@ -24,7 +22,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -42,7 +39,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
@@ -50,7 +46,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @p_p Int -- Int32
 SET     @p_p = 2
 

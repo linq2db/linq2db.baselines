@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Age Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -46,7 +43,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 UPDATE
 	[t]
@@ -21,7 +20,6 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT

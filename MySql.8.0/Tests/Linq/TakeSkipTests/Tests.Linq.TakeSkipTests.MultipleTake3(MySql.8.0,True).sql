@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`

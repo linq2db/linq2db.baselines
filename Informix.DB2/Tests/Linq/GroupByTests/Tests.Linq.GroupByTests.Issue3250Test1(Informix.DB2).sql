@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	(To_Char(COUNT(*)) || ' items have not been processed, e.g. #' || Nvl(To_Char(MIN(g_1.PersonID)), '')) || '.'

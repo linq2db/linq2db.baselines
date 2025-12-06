@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" STARTING WITH 'Insert15'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
@@ -34,7 +32,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -44,7 +41,6 @@ FROM
 WHERE
 	"t1"."FirstName" STARTING WITH 'Insert15'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM

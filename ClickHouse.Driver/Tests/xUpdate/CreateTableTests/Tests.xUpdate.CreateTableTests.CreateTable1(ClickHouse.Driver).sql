@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE TestTable
@@ -18,7 +16,6 @@ CREATE TABLE TestTable
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 FROM
 	TestTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE TestTable

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	(CAST(COUNT(*) AS Float) * 100) / SUM(COUNT(*)) OVER(),

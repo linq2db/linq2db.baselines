@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
-	t1."Name"
+	t1."PetName"
 FROM
 	"Issue2933Car" x
 		LEFT JOIN "Issue2933Person" a_Person ON x."PersonId" = a_Person."Id"
 		LEFT JOIN (
 			SELECT
-				a_PetIds."Name",
+				a_PetIds."Name" as "PetName",
 				ROW_NUMBER() OVER (PARTITION BY a_PetIds."PersonId" ORDER BY a_PetIds."PersonId") as "rn",
 				a_PetIds."PersonId"
 			FROM

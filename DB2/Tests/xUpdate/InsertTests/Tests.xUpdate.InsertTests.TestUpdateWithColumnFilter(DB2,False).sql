@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -61,7 +58,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -78,7 +74,6 @@ WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

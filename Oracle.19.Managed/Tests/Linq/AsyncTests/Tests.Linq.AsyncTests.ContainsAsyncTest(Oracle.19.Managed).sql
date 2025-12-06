@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
 

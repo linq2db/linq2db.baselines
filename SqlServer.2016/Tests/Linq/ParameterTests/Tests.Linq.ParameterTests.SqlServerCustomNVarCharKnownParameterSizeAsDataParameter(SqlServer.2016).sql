@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @p NVarChar(20) -- String
 SET     @p = N'abc'
 

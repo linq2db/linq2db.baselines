@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName"

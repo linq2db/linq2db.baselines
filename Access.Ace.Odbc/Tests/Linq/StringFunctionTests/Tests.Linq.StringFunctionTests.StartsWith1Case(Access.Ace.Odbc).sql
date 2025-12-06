@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	[p].[FirstName] LIKE 'Jo%' AND InStr(1, [p].[FirstName], 'Jo', 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	[p].[FirstName] LIKE 'jo%' AND InStr(1, [p].[FirstName], 'jo', 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			"t2"."ID" = ?
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 4

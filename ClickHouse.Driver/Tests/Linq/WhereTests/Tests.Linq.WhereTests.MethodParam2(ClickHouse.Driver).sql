@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.PersonID
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

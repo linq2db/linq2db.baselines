@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @p Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	`TestConstantsData` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

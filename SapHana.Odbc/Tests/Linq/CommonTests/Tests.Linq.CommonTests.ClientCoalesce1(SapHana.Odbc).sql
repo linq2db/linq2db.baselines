@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 100
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	Coalesce("x"."Value1", ?) > 10
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

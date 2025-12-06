@@ -1,19 +1,19 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TempTable
 (
@@ -24,12 +24,10 @@ SELECT
 FROM
 	Parent p
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE TempTable

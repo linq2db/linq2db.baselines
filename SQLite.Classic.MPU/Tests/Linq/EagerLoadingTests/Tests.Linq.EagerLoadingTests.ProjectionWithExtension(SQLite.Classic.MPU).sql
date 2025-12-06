@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id1],
@@ -17,9 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -30,9 +24,6 @@ SELECT
 FROM
 	[MasterClass] [x]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -49,9 +40,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

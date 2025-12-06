@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	Src s
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

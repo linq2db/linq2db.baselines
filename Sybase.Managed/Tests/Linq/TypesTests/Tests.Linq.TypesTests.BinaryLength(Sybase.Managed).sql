@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL

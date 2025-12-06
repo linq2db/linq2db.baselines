@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.Id,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	Issue3360Table p_1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

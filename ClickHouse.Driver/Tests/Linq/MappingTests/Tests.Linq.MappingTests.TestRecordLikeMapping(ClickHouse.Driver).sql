@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO RecordLike
 (
@@ -14,7 +13,6 @@ VALUES
 	'One'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO RecordLike
@@ -30,7 +28,6 @@ VALUES
 	'Two'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

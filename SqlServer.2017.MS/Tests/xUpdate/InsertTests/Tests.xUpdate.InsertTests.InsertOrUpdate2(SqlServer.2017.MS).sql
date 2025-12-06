@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -48,7 +46,6 @@ WHEN NOT MATCHED THEN
 		N'negative'
 	);
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -61,7 +58,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -83,7 +79,6 @@ WHEN NOT MATCHED THEN
 		N'positive'
 	);
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5

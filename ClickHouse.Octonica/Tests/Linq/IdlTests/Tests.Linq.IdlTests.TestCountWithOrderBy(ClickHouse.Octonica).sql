@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	maxOrNull(p.PersonID)
 FROM
 	Person p
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,26 +1,23 @@
-﻿BeforeExecute
+﻿-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	COUNT(*)
+FROM
+	"Child" "ch"
+		INNER JOIN "Parent" "a_Parent" ON "ch"."ParentID" = "a_Parent"."ParentID"
+WHERE
+	"a_Parent"."ParentID" = 1
+
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
 FROM
-	"Child" "p"
-		INNER JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"
+	"Child" "ch"
+		INNER JOIN "Parent" "a_Parent" ON "ch"."ParentID" = "a_Parent"."ParentID"
 WHERE
 	"a_Parent"."ParentID" = 1
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	COUNT(*)
-FROM
-	"Child" "p"
-		INNER JOIN "Parent" "a_Parent" ON "p"."ParentID" = "a_Parent"."ParentID"
-WHERE
-	"a_Parent"."ParentID" = 1
-
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

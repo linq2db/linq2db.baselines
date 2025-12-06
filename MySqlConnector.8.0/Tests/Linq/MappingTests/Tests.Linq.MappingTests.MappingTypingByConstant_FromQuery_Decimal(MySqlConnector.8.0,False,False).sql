@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value NewDecimal(1, 0) -- Decimal
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			`Person` `r`
 	) `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value NewDecimal(13, 3) -- Decimal
 SET     @value = 2147483648.123

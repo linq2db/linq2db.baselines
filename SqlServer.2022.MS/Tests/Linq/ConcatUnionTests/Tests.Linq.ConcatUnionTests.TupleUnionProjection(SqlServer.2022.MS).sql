@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[x].[Value1],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p2].[ParentID] <= 3
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

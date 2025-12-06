@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @language VarChar(2) -- String
 SET     @language = 'en'
 DECLARE @Exercise VarChar(1) -- String
@@ -38,10 +35,7 @@ FROM
 		INNER JOIN `exercise_equipment` `equipment` ON `d`.`equipment_id` = `equipment`.`id`
 		LEFT JOIN `ext_translations` `description` ON CAST(`equipment`.`id` AS CHAR(11)) = `description`.`foreign_key` AND `description`.`locale` = @currentLanguage AND `description`.`object_class` = @Equipment AND `description`.`field` = 'name'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @language VarChar(2) -- String
 SET     @language = 'en'
 DECLARE @Exercise VarChar(1) -- String

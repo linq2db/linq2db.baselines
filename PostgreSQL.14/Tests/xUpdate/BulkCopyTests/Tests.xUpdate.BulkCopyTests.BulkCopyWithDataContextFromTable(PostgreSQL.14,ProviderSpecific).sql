@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -8,8 +7,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -18,6 +16,5 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
-BeforeExecute
 INSERT BULK "SimpleBulkCopyTable"(Id)
 

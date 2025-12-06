@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 WITH CTE_1
 (
@@ -31,7 +30,6 @@ FROM
 WHERE
 	"x"."entry_ID" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

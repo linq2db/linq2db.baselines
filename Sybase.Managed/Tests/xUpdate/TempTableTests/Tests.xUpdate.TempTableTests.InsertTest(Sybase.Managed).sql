@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [Table2]
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Table1] [t]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

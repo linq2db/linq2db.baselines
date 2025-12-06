@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [TableWithPrimaryKey2]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [TableWithPrimaryKey2]
 	CONSTRAINT [PK_TableWithPrimaryKey2] PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Key Integer -- Int32
 SET     @Key = 1
@@ -22,7 +20,6 @@ VALUES
 	@Key
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TableWithPrimaryKey2]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
@@ -12,7 +11,6 @@ VALUES
 	@CharFld
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

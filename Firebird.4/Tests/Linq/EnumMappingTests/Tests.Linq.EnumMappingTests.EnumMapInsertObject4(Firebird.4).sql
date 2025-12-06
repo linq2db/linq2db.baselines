@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
@@ -30,7 +28,6 @@ VALUES
 	@Int32Field
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 12
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 102

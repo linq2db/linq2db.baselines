@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	SUM(Coalesce([a_Parent].[Value1], 0))

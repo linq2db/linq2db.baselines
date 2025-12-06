@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @gender Char(1) -- StringFixedLength
 SET     @gender = 'M'
 

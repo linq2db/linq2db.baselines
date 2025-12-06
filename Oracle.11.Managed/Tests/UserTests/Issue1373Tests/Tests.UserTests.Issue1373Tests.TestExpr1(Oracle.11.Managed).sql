@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue1373Tests"
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue1373Tests"
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue1373Tests"
@@ -40,7 +37,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

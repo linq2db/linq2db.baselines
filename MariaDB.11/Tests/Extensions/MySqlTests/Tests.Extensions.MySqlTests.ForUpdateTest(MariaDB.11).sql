@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Count_1`
@@ -18,8 +15,7 @@ WHERE
 	`t1`.`Count_1` = 0
 FOR UPDATE
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Datetime -- DateTime
 SET     @p = '2020-02-29 17:54:55.123'
 

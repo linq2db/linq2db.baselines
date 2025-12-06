@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[s].[ID],
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[s].[FirstName] <> ''
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

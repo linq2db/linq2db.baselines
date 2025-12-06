@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[Id] = ? AND [e].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[e].[Id] = ? AND [e].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

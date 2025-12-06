@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [Person]
 (
@@ -18,7 +15,6 @@ VALUES
 	'F'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -30,7 +26,6 @@ FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -45,7 +40,6 @@ SET     @gender = 'U'
 
 { CALL Person_Update(?, ?, ?, ?, ?) }
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -61,5 +55,3 @@ FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
-DisposeTransaction

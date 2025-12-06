@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p1].[ParentID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[Parent] [p2]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

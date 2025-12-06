@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [AllTypeCreateTest]
@@ -52,7 +50,6 @@ CREATE TABLE [AllTypeCreateTest]
 	[timeDataType]             Time                  NULL
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -101,7 +98,6 @@ SELECT
 FROM
 	[AllTypeCreateTest] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE [AllTypeCreateTest]

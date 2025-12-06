@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = N'some%'
 DECLARE @str_1 NChar(5) -- StringFixedLength

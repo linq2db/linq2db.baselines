@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] >= 1000
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @tt  -- Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	@tt
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -34,7 +31,6 @@ WHERE
 	[t].[ID] = 1001
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM

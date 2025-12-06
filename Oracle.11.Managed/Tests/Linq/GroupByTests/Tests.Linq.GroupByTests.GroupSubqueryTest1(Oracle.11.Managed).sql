@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	pmp1."ChildID"
@@ -14,7 +13,6 @@ FROM
 	) pmp
 		CROSS JOIN "Child" pmp1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

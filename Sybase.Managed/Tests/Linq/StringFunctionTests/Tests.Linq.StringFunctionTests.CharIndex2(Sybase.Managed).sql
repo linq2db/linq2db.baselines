@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[FirstName],
@@ -10,6 +9,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex('p', Substring([p].[LastName], 2, Len([p].[LastName]))) + 1 = 3 AND
+	CharIndex('p', Substring([p].[LastName], 2, Len([p].[LastName]))) = 2 AND
 	[p].[PersonID] = 1
 

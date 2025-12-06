@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t2].[ParentID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

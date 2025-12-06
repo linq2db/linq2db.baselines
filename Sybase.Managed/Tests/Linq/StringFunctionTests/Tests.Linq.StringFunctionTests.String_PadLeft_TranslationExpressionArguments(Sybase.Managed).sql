@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[s].[ID],
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[s].[FirstName] <> ''
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

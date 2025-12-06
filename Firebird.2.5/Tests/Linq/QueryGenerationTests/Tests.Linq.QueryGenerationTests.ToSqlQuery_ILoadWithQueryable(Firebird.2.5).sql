@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."ParentID",
@@ -9,9 +8,6 @@ FROM
 WHERE
 	"p"."ParentID" = 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -34,7 +30,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -45,5 +40,3 @@ FROM
 WHERE
 	"p"."ParentID" = 1
 
-BeforeExecute
-DisposeTransaction

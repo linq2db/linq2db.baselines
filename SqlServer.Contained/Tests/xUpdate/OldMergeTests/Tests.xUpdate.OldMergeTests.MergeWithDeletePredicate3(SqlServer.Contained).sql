@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -7,7 +6,6 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2

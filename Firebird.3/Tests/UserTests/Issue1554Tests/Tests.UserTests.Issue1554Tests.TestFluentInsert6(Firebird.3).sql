@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(2) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

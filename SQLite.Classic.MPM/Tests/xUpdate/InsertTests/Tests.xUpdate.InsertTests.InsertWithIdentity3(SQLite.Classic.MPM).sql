@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
@@ -28,12 +26,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -48,7 +44,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM

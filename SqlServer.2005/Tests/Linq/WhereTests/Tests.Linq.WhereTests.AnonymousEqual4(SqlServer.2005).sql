@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 

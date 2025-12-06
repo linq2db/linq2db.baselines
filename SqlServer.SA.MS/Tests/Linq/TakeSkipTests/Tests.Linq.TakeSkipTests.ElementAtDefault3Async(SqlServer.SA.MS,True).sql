@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 3
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

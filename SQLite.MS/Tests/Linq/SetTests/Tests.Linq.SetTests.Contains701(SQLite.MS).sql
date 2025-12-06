@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 11
 DECLARE @Value1  -- Int32

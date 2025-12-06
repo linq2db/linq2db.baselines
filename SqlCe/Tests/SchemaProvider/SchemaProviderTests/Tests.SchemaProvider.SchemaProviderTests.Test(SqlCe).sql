@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 
 SELECT
@@ -10,7 +9,6 @@ SELECT
 FROM INFORMATION_SCHEMA.INDEXES
 WHERE PRIMARY_KEY = 1
 
-BeforeExecute
 -- SqlCe
 
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 2
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	p."ParentID" = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 2

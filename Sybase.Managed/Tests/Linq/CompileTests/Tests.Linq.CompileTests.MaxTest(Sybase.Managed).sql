@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = -1

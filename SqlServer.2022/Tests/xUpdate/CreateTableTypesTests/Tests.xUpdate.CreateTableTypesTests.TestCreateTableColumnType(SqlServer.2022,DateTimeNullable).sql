@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DateTimeNullable DateTime2
@@ -16,7 +15,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

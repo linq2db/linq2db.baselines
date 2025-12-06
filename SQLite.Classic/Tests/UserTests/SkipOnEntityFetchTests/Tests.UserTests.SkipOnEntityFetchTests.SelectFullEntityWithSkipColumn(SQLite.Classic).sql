@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	Coalesce([p].[PersonID], 0) >= 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -31,7 +28,6 @@ SELECT
 			[p].[PersonID] IS NULL
 	)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

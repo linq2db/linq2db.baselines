@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -20,7 +19,6 @@ FROM
 			t2.year_1
 	) t3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	@IntValue
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"pmp"."ParentID"
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	"pmp"."ParentID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

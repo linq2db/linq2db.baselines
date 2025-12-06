@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @int1 Integer(4) -- Int32
 SET     @int1 = 11
 DECLARE @int2 Integer(4) -- Int32
@@ -34,7 +33,6 @@ WHERE
 			"t"."id" <> @someId AND "UpdatedEntities"."id" = "c_1"."id"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

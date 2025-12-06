@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[g_2].[Key_1]
@@ -13,7 +12,6 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

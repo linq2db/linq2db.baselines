@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [TableToInsert]
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[t].[Id] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TableToInsert]

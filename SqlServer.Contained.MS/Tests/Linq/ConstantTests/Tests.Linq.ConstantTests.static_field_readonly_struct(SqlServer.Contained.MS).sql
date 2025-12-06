@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @p Int -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @p
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

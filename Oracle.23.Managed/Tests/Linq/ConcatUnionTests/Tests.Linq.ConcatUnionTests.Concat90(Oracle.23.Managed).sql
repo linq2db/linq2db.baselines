@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -10,7 +9,6 @@ FROM
 	"TestEntity1" t1
 		LEFT JOIN "TestEntity2" t2 ON t1."Id" = t2."Id"
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	t1."Id" IS NULL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

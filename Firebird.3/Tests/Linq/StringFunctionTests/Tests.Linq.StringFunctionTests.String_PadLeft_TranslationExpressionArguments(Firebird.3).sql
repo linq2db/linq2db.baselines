@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"s".ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	"s"."FirstName" <> ''
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

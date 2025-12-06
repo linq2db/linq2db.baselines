@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 1
+LIMIT 1
+
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	r."ID" = 1
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-SELECT
-	r."ID",
-	r."MoneyValue",
-	r."DateTimeValue",
-	r."DateTimeValue2",
-	r."BoolValue",
-	r."GuidValue",
-	r."SmallIntValue",
-	r."IntValue",
-	r."BigIntValue",
-	r."StringValue"
-FROM
-	"LinqDataTypes" r
-WHERE
-	r."ID" = 1
-LIMIT 1
-
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -76,7 +73,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	r."ID" = :ID
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -136,7 +131,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

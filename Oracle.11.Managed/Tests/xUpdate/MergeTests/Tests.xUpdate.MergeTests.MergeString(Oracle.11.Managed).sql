@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "AllTypes" Target
@@ -30,7 +26,6 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
@@ -57,5 +52,3 @@ WHERE
 ORDER BY
 	t2.ID DESC
 
-BeforeExecute
-DisposeTransaction

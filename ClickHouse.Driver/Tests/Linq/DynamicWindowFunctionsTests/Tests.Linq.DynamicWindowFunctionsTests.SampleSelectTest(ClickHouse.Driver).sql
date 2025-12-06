@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	RANK() OVER(PARTITION BY e.Value1 ORDER BY e.Id, e.Value1 DESC),

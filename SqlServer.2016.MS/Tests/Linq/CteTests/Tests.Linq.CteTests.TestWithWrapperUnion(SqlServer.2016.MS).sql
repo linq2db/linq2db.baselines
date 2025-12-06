@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE_1]

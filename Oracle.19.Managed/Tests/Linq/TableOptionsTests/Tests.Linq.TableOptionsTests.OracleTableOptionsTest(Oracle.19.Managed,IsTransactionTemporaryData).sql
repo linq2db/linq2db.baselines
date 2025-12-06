@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 )
 ON COMMIT DELETE ROWS
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN

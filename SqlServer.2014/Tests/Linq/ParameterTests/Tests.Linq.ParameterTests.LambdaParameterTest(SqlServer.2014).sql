@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[r].[ParentID] = @p
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p Int32
 SET     @p = 1
 
@@ -13,7 +12,6 @@ SELECT
 			`c_1`.`ParentID` = @p
 	) as `c1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p Int32
 SET     @p = -1

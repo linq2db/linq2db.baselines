@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT /*+ NO_BKA(p) NO_MERGE(p, c_1) */
 	`p`.`ParentID`,

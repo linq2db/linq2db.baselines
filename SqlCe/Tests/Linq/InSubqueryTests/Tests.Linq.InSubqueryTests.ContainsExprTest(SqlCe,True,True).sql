@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			[p].[ParentID] + @n = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

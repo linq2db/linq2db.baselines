@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	[TestInsertOrReplaceTable].[ID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 0
@@ -37,7 +35,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -52,7 +49,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -72,7 +68,6 @@ SET
 WHERE
 	[TestInsertOrReplaceTable].[ID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

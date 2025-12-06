@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [Person]
 (
@@ -16,7 +15,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 DELETE [p]

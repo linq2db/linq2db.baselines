@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"nm"."MiddleName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CHAR_LENGTH("nm"."MiddleName") <> 0 OR "nm"."MiddleName" IS NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

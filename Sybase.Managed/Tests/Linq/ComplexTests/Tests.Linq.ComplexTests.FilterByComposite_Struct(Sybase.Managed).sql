@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 2
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

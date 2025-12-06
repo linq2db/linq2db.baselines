@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[item_1].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[a_PayRate].[Name] = 'test'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

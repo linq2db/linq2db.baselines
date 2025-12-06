@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int32
 SET     @p = 104
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 102
@@ -45,7 +42,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 103
@@ -63,7 +59,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -76,7 +71,6 @@ WHERE
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -90,7 +84,6 @@ WHERE
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int32
 SET     @p = 104

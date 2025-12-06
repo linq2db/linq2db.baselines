@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ComplexType NVarChar(8) -- String
 SET     @ComplexType = '{"Id":2}'
 
@@ -14,7 +13,6 @@ VALUES
 	@ComplexType
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

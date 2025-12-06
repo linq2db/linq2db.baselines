@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
@@ -34,7 +32,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
@@ -52,7 +49,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
@@ -70,7 +66,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1000
@@ -82,7 +77,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id AND [c_1].[ChildID] NOT IN (1000, 1001)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1000

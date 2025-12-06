@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer(4) -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

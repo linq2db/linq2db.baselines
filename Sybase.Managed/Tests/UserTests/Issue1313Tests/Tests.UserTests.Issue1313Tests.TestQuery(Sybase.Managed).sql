@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [ValueItem]
 (
@@ -10,7 +9,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

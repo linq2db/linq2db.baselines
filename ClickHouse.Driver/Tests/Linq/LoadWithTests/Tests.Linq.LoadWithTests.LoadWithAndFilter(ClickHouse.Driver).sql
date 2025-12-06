@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.Id,
@@ -31,7 +30,6 @@ FROM
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -52,7 +50,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -73,7 +70,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -88,7 +84,6 @@ WHERE
 ORDER BY
 	m_1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -121,7 +116,6 @@ FROM
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -142,7 +136,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -166,7 +159,6 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -181,7 +173,6 @@ WHERE
 ORDER BY
 	m_1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -214,7 +205,6 @@ FROM
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -235,7 +225,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -259,7 +248,6 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

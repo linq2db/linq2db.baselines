@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [TestMergeIdentity]
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
@@ -19,7 +17,6 @@ VALUES
 	@Field
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMergeIdentity] [Target]
@@ -50,7 +46,6 @@ VALUES
 	[Source].[Field]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

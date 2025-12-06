@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	DateSerial(DatePart('yyyy', [t].[DateTimeValue]) + 1, 10, 1)

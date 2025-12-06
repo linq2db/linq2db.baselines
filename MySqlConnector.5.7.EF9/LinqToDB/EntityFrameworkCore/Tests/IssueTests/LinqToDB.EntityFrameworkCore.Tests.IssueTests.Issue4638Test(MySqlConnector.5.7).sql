@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- MySql.5.7.MySqlConnector MySql57
 
@@ -35,6 +34,5 @@ LIMIT 1
 
 
 
-DisposeTransaction
 
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	0::Int,
@@ -31,9 +30,6 @@ FROM
 WHERE
 	p_1."ParentID" <> 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -49,9 +45,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -60,7 +53,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

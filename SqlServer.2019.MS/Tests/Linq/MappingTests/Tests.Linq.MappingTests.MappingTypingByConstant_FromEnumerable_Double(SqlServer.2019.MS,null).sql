@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[arg].[Id],
@@ -10,7 +9,6 @@ FROM
 			(1,CAST(NULL AS Float))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

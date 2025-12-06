@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -19,7 +18,6 @@ FROM
 	[CteChild] [c_2]
 		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 WHERE
 	[c_1].[ParentID] % 2 = 0
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 0
 
@@ -12,15 +11,12 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
-BeforeExecute
 INSERT BULK AllTypes
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 3
@@ -35,7 +31,6 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 3

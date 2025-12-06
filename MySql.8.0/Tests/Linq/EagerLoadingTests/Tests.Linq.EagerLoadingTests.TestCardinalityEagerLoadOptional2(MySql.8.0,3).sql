@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -24,7 +21,6 @@ FROM
 	) `m_1`
 		INNER JOIN `EntityMC` `d_1` ON `m_1`.`Id` = `d_1`.`FK`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -40,9 +36,6 @@ FROM
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

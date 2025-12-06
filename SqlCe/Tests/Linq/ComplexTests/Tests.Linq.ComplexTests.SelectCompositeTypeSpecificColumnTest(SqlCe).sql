@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[u].[city] as [City]
 FROM
 	[User] [u]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

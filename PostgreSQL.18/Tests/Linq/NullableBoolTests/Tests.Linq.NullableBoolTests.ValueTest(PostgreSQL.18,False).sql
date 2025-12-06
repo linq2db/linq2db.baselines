@@ -1,45 +1,45 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @value Boolean
 SET     @value = False
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
 WHERE
 	t."Value" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Boolean
 SET     @value = False
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
 WHERE
 	t."Value" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Boolean
 SET     @value = False
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
 WHERE
 	t."Value" <> :value OR t."Value" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Boolean
 SET     @value = False
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t

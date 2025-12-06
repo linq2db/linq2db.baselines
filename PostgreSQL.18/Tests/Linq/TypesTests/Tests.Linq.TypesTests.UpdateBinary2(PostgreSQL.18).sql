@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0102030405'::bytea
 DECLARE @p Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :p
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0504030201'::bytea
@@ -26,7 +24,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :p
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

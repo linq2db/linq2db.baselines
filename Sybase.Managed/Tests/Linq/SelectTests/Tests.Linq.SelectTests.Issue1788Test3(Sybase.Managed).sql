@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Table1788] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

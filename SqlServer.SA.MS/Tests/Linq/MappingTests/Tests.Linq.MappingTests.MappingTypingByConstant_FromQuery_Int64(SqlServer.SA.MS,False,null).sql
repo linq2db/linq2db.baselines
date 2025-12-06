@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @value BigInt -- Int64
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648

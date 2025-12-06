@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "Person" "Target"
 USING (
@@ -32,7 +29,6 @@ VALUES
 	'U'
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -46,5 +42,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

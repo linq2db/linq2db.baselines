@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(r.One IS NULL) = (r.One IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(r.One IS NULL) = (r.Zero IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(r.One IS NULL) = (r.Null IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(r.Zero IS NULL) = (r.Null IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	(r.Zero IS NULL) = (r.Zero IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	(r.Null IS NULL) = (r.Null IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	(r.One IS NULL) <> (r.One IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	(r.One IS NULL) <> (r.Zero IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	(r.One IS NULL) <> (r.Null IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	(r.Zero IS NULL) <> (r.Null IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	(r.Zero IS NULL) <> (r.Zero IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

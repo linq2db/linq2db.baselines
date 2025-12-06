@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @n Int32
 SET     @n = 3
 

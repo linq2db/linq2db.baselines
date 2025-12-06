@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	r.Id,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	r.Value5 = 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	(r.Value5 <> 0 OR r.Value5 IS NULL) AND r.Value1 > r.Value4 OR
 	r.Value1 <= r.Value4 OR r.Value4 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -51,7 +47,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -66,7 +61,6 @@ WHERE
 	r.Value5 > 0 AND r.Value1 > r.Value4 OR r.Value1 <= r.Value4 OR
 	r.Value4 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -78,7 +72,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -93,7 +86,6 @@ WHERE
 	r.Value5 >= 0 AND r.Value1 > r.Value4 OR r.Value1 <= r.Value4 OR
 	r.Value4 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -105,7 +97,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -119,7 +110,6 @@ FROM
 WHERE
 	r.Value5 < 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -131,7 +121,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -145,7 +134,6 @@ FROM
 WHERE
 	r.Value5 <= 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -157,7 +145,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -171,7 +158,6 @@ FROM
 WHERE
 	r.Value1 <= r.Value4 OR r.Value4 IS NULL OR r.Value5 = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -183,7 +169,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -197,7 +182,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 AND (r.Value5 <> 1 OR r.Value5 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -209,7 +193,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -223,7 +206,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 AND r.Value5 > 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -235,7 +217,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -249,7 +230,6 @@ FROM
 WHERE
 	r.Value1 <= r.Value4 OR r.Value4 IS NULL OR r.Value5 >= 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -261,7 +241,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -275,7 +254,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 AND r.Value5 < 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -287,7 +265,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -301,7 +278,6 @@ FROM
 WHERE
 	r.Value1 <= r.Value4 OR r.Value4 IS NULL OR r.Value5 <= 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -313,7 +289,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -327,7 +302,6 @@ FROM
 WHERE
 	r.Value5 = 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -339,7 +313,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -354,7 +327,6 @@ WHERE
 	(r.Value5 <> 0 OR r.Value5 IS NULL) AND r.Value1 > r.Value4 OR
 	r.Value1 <= r.Value4 OR r.Value4 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -366,7 +338,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -380,7 +351,6 @@ FROM
 WHERE
 	r.Value5 > 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -392,7 +362,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -406,7 +375,6 @@ FROM
 WHERE
 	r.Value5 >= 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -418,7 +386,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -432,7 +399,6 @@ FROM
 WHERE
 	r.Value5 < 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -444,7 +410,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -458,7 +423,6 @@ FROM
 WHERE
 	r.Value5 <= 0 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -470,7 +434,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -484,7 +447,6 @@ FROM
 WHERE
 	r.Value5 IS NULL OR r.Value1 <= r.Value4 OR r.Value4 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -496,7 +458,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -510,7 +471,6 @@ FROM
 WHERE
 	NOT (r.Value5 IS NULL OR r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -522,7 +482,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -536,7 +495,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -548,7 +506,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -562,7 +519,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -574,7 +530,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -588,7 +543,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -600,7 +554,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -614,7 +567,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -626,7 +578,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -643,7 +594,6 @@ WHERE
 		ELSE 0
 	END IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -655,7 +605,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -672,7 +621,6 @@ WHERE
 		ELSE 0
 	END IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -684,7 +632,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -698,7 +645,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -710,7 +656,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -724,7 +669,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -736,7 +680,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -750,7 +693,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -762,7 +704,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -776,7 +717,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -788,7 +728,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -802,7 +741,6 @@ FROM
 WHERE
 	r.Value5 = 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -814,7 +752,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -828,7 +765,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR (r.Value5 <> 0 OR r.Value5 IS NULL) AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -840,7 +776,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -854,7 +789,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 > 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -866,7 +800,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -880,7 +813,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 >= 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -892,7 +824,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -906,7 +837,6 @@ FROM
 WHERE
 	r.Value5 < 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -918,7 +848,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -932,7 +861,6 @@ FROM
 WHERE
 	r.Value5 <= 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -944,7 +872,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -958,7 +885,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -970,7 +896,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -984,7 +909,6 @@ FROM
 WHERE
 	(r.Value1 <= r.Value4 OR r.Value4 IS NULL) AND (r.Value5 <> 1 OR r.Value5 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -996,7 +920,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1010,7 +933,6 @@ FROM
 WHERE
 	(r.Value1 <= r.Value4 OR r.Value4 IS NULL) AND r.Value5 > 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1022,7 +944,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1036,7 +957,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 >= 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1048,7 +968,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1062,7 +981,6 @@ FROM
 WHERE
 	(r.Value1 <= r.Value4 OR r.Value4 IS NULL) AND r.Value5 < 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1074,7 +992,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1088,7 +1005,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 <= 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1100,7 +1016,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1114,7 +1029,6 @@ FROM
 WHERE
 	r.Value5 = 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1126,7 +1040,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1140,7 +1053,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR (r.Value5 <> 0 OR r.Value5 IS NULL) AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1152,7 +1064,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1166,7 +1077,6 @@ FROM
 WHERE
 	r.Value5 > 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1178,7 +1088,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1192,7 +1101,6 @@ FROM
 WHERE
 	r.Value5 >= 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1204,7 +1112,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1218,7 +1125,6 @@ FROM
 WHERE
 	r.Value5 < 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1230,7 +1136,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1244,7 +1149,6 @@ FROM
 WHERE
 	r.Value5 <= 0 AND (r.Value1 <= r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1256,7 +1160,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1270,7 +1173,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value5 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1282,7 +1184,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1296,7 +1197,6 @@ FROM
 WHERE
 	NOT (r.Value1 > r.Value4 AND r.Value4 IS NOT NULL OR r.Value5 IS NULL)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1308,7 +1208,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1322,7 +1221,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1334,7 +1232,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1348,7 +1245,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1360,7 +1256,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1374,7 +1269,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1386,7 +1280,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1400,7 +1293,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1412,7 +1304,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1429,7 +1320,6 @@ WHERE
 		ELSE r.Value5
 	END IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1441,7 +1331,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1458,7 +1347,6 @@ WHERE
 		ELSE r.Value5
 	END IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1470,7 +1358,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1484,7 +1371,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1496,7 +1382,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1510,7 +1395,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1522,7 +1406,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1536,7 +1419,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1548,7 +1430,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -1562,7 +1443,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

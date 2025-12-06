@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -22,20 +20,17 @@ FROM
 	"TestBool" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
 	"TestBool" "t1"
 SET
-	"Id" = 1,
 	"Value" = CASE
 		WHEN "t1"."Value" = 0 THEN 1
 		WHEN "t1"."Value" = 1 THEN 0
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -45,7 +40,6 @@ FROM
 	"TestBool" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -54,7 +48,6 @@ SET
 	"Id" = 1,
 	"Value" = 0
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

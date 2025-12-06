@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([t].[Value] AS NVarChar(11)) || ' Day'),
@@ -13,7 +12,6 @@ SELECT
 	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day'),
 	strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day')
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

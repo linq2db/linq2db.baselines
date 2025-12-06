@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- AnsiString
@@ -13,8 +12,7 @@ WHERE
 	`s`.`CEnum` IN (@In, @In_1)
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 
@@ -26,8 +24,7 @@ WHERE
 	(`s`.`CEnum` IN (@In) OR `s`.`CEnum` IS NULL)
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- AnsiString
@@ -41,8 +38,7 @@ WHERE
 	`s`.`CEnum` IN (@In, @In_1)
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value2___'
 
@@ -54,8 +50,7 @@ WHERE
 	(`s`.`CEnum` NOT IN (@NotIn) AND `s`.`CEnum` IS NOT NULL)
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 VarChar(12) -- AnsiString

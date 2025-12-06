@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Type UniVarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue UniVarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Type UniVarChar(9) -- String
 SET     @Type = 'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	@IntValue
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TEMP TABLE CreateIfNotExistsTable
@@ -12,7 +10,6 @@ CREATE TEMP TABLE CreateIfNotExistsTable
 	"Value" Int NOT NULL
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -21,7 +18,6 @@ SELECT
 FROM
 	CreateIfNotExistsTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
@@ -30,12 +26,10 @@ CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
 	"Value" Int NOT NULL
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable

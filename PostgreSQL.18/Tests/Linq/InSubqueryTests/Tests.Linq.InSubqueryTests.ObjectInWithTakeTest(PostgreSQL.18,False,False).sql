@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	c_1."ParentID",
@@ -23,7 +22,6 @@ WHERE
 			param."ParentID" = c_1."ParentID" AND param."Value_1" = c_1."ParentID"
 	)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

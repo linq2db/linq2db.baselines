@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TrimTestTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	N'***OOO***'
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t].[ID],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @param Bit -- Boolean
 SET     @param = 1

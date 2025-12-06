@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "SampleClass"
 (
@@ -14,7 +13,6 @@ VALUES
 	'SampleClass'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "SampleClass"
@@ -30,7 +28,6 @@ VALUES
 	'SomeTest'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
@@ -52,7 +49,6 @@ SELECT
 	END
 FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
@@ -66,7 +62,6 @@ FROM
 WHERE
 	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
@@ -88,7 +83,6 @@ SELECT
 	END
 FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
@@ -102,7 +96,6 @@ FROM
 WHERE
 	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'
@@ -124,7 +117,6 @@ SELECT
 	END
 FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'

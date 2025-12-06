@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TableWithIdentity]
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

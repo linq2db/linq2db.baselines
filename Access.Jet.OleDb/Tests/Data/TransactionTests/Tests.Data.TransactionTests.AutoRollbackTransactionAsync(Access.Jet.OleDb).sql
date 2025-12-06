@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
 	[t].[ParentID],

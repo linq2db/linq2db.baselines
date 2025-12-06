@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -42,7 +40,6 @@ FROM
 WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -65,7 +62,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -79,7 +75,6 @@ FROM
 WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

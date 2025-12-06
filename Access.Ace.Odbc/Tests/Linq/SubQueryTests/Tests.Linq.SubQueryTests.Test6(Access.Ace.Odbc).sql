@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -27,5 +26,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = ?
 ORDER BY
-	[c_1].[ParentID] DESC
+	[c_1].[ParentID] DESC,
+	[c_1].[ChildID]
 

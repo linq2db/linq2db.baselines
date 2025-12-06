@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	[t].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	[t2].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1

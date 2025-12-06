@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	@SomeDateTimeOffset
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @clientSideIn DateTimeOffset
 SET     @clientSideIn = DATETIMEOFFSETFROMPARTS(2019, 8, 8, 8, 8, 18, 0, 0, 0, 7)

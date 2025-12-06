@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	IIF([p].[ProductID] IS NULL, N'Nothing!', [p].[ProductName]),

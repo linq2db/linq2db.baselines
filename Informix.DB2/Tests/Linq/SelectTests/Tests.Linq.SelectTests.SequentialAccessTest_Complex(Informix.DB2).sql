@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.TypeDiscriminator,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

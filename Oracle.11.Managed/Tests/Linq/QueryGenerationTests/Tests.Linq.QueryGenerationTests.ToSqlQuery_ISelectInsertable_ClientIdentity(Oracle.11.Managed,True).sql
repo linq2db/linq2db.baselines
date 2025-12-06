@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Value Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TableWithIdentity"
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"TableWithIdentitySrc" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

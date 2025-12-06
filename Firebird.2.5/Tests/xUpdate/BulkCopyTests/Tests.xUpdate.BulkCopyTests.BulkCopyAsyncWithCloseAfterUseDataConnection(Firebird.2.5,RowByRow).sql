@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 

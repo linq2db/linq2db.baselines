@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "InheritanceFilter" ("Id", "Code", "Child1Field", "Child2Field", "Grandchild11Field", "Grandchild12Field", "Grandchild21Field", "Grandchild22Field") VALUES (1,1,11,0,0,0,0,0)
@@ -10,7 +9,6 @@ INSERT ALL
 	INTO "InheritanceFilter" ("Id", "Code", "Child1Field", "Child2Field", "Grandchild11Field", "Grandchild12Field", "Grandchild21Field", "Grandchild22Field") VALUES (6,22,0,26,0,0,0,16)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

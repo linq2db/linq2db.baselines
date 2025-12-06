@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 INSERT INTO [Table2]
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Table1] [t]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

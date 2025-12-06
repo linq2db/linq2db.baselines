@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "CteChild"
 (
@@ -27,14 +26,13 @@ AS
 	WHERE
 		MOD(c4."ParentID", 2) = 0
 )
-SELECT
+SELECT DISTINCT
 	c4_1."ChildID",
 	c4_1."ParentID"
 FROM
-	CTE1_ p
-		INNER JOIN LAST0 c4_1 ON c4_1."ParentID" = p."ParentID"
+	CTE1_ t1
+		INNER JOIN LAST0 c4_1 ON c4_1."ParentID" = t1."ParentID"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -46,18 +44,23 @@ ORDER BY
 	t1."ChildID",
 	t1."ParentID"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	c4."ChildID",
-	c4."ParentID"
+	t1."ChildID",
+	t1."ParentID"
 FROM
-	"Child" c_1
-		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
-WHERE
-	c_1."ParentID" > 1 AND MOD(c4."ParentID", 2) = 0
+	(
+		SELECT DISTINCT
+			c4."ChildID",
+			c4."ParentID"
+		FROM
+			"Child" c_1
+				INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
+		WHERE
+			c_1."ParentID" > 1 AND MOD(c4."ParentID", 2) = 0
+	) t1
 ORDER BY
-	c4."ChildID",
-	c4."ParentID"
+	t1."ChildID",
+	t1."ParentID"
 

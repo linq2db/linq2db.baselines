@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"t1".ID,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	"t1"."DateTimeValue" = CAST('2009-09-27' AS timestamp)
+	"t1"."DateTimeValue" = CAST('2009-09-27' AS TimeStamp)
 

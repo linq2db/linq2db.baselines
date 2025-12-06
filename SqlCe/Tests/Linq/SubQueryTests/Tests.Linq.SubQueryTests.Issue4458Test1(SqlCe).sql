@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[m_1].[Id],
@@ -25,10 +22,10 @@ FROM
 			)
 	) [m_1]
 		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
+ORDER BY
+	[d].[ItemId],
+	[d].[UserId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -61,4 +58,29 @@ WHERE
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
+
+-- SqlCe
+
+SELECT
+	[t1].[Id]
+FROM
+	[Issue4458Item] [t1]
+
+-- SqlCe
+
+SELECT
+	[t1].[ItemId],
+	[t1].[QuantityAvailable],
+	[t1].[WarehouseId]
+FROM
+	[WarehouseStock] [t1]
+
+-- SqlCe
+
+SELECT
+	[t1].[ItemId],
+	[t1].[UserId],
+	[t1].[Score]
+FROM
+	[Review] [t1]
 

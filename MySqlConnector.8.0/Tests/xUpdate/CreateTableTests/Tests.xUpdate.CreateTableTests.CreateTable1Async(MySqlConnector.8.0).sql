@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `TestTable`
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE `TestTable`
 (
@@ -16,8 +14,7 @@ CREATE TABLE `TestTable`
 	CONSTRAINT `PK_TestTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`ID`,
@@ -27,8 +24,7 @@ SELECT
 FROM
 	`TestTable` `t1`
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE `TestTable`
 

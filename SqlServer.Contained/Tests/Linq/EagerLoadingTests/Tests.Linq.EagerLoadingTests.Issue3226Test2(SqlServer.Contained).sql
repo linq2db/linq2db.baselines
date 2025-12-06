@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -10,9 +7,6 @@ FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

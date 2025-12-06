@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Extract(day from CAST('2010-01-' || Lpad("t"."TransactionId",2,'0') AS Date)) > 0
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

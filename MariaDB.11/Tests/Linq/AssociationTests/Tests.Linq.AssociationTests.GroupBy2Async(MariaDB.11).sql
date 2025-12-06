@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`ParentID`,
@@ -19,8 +16,7 @@ FROM
 			INNER JOIN `Parent` `a_Parent1_1` ON `d`.`ParentID` = `a_Parent1_1`.`ParentID`)
 		ON `m_1`.`ParentID` = `a_Parent1_1`.`ParentID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`a_Parent1`.`ParentID`
@@ -30,5 +26,3 @@ FROM
 GROUP BY
 	`a_Parent1`.`ParentID`
 
-BeforeExecute
-DisposeTransactionAsync

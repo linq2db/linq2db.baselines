@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @True SmallInt(4) -- Int16
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@True AS smallint))
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @False SmallInt(4) -- Int16
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@False AS smallint))
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

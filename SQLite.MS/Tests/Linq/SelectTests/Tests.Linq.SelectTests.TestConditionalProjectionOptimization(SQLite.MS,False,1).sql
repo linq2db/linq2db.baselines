@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[c_1].[ParentID]
 FROM
 	[Child] [c_1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

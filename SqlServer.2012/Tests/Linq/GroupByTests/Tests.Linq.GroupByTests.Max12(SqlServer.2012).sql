@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	MAX(IIF([t1].[ChildID] > 20, 1, 0))

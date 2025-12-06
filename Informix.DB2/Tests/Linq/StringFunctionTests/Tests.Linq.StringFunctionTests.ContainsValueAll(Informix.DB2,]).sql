@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.PersonID = 1 AND '123]456' LIKE '%~]%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

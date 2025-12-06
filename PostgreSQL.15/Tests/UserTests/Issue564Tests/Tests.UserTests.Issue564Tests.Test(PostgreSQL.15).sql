@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue Text(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	:IntValue
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

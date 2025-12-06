@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -24,8 +21,7 @@ FROM
 	) m_1
 		INNER JOIN "CHAINPOINTS" d_1 ON m_1."Id" = d_1."CHAIN_ID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."LINE_ID",
@@ -40,10 +36,7 @@ FROM
 ORDER BY
 	m_1."LINE_ID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."LINE_ID",

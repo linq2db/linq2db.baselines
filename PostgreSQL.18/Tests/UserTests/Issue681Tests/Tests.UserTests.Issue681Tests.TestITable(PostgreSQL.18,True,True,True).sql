@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	current_database()
@@ -7,7 +6,6 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

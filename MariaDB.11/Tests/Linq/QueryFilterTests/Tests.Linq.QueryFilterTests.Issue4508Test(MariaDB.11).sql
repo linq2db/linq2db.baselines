@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 0
 
@@ -14,8 +13,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 1
 
@@ -30,8 +28,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 0
 
@@ -46,8 +43,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 1
 
@@ -62,8 +58,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 0
 
@@ -78,8 +73,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 1
 
@@ -94,8 +88,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 0
 
@@ -110,8 +103,7 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @idCopy Int32
 SET     @idCopy = 1
 

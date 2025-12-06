@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[m_1].[CustomerID],
@@ -23,9 +20,6 @@ FROM
 	[Customers] [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT

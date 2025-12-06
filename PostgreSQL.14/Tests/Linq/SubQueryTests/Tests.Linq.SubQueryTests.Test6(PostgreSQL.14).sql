@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -27,5 +26,6 @@ FROM
 WHERE
 	c_1."ParentID" = :id
 ORDER BY
-	c_1."ParentID" DESC
+	c_1."ParentID" DESC,
+	c_1."ChildID"
 

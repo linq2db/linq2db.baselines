@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -9,7 +8,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
@@ -20,7 +18,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
@@ -31,7 +28,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
@@ -42,7 +38,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
@@ -53,7 +48,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	ROW_NUMBER() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [Person] [Target]
 USING (
@@ -28,7 +25,6 @@ SET
 	)
 ;
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -42,5 +38,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

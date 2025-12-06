@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."ParentID",
@@ -9,9 +6,6 @@ SELECT
 FROM
 	"Child" "t1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

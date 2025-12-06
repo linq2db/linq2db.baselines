@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	@SomeDateTimeOffset
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @interval  -- Int32
 SET     @interval = 10

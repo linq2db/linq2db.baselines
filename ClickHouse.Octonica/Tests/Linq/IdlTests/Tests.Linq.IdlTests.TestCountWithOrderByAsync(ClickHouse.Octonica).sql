@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	maxOrNull(p.PersonID)
 FROM
 	Person p
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)

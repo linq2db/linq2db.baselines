@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	it_1.IsActive,
@@ -16,7 +15,6 @@ GROUP BY
 	it_1.IsActive,
 	it_1.Other
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

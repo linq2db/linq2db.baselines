@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @UserId  -- Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

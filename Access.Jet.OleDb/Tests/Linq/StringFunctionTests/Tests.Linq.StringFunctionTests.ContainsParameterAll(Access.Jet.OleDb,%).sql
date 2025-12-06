@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123%456'
 DECLARE @toTest VarWChar(5) -- String

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	current_database()
@@ -7,7 +6,6 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -36,7 +33,6 @@ VALUES
 ON CONFLICT ("ID") DO UPDATE SET
 	"Value" = :Value
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

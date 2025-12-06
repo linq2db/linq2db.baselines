@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Year_1",
@@ -20,7 +19,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n".DATUM < CAST('2019-01-01' AS timestamp)
+			"n".DATUM < CAST('2019-01-01' AS TimeStamp)
 	) "t1"
 GROUP BY
 	"t1"."Year_1",

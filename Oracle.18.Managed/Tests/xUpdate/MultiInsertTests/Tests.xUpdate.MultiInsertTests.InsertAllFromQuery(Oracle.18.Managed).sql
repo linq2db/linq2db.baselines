@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 WHEN N > 40 THEN
@@ -42,7 +41,6 @@ FROM
 	"TestSource" s
 		INNER JOIN "TestSource" s2 ON s.ID = s2.ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -50,7 +48,6 @@ SELECT
 FROM
 	"Dest1" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -58,7 +55,6 @@ SELECT
 FROM
 	"Dest2" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -68,7 +64,6 @@ FROM
 WHERE
 	x.ID = 1001
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

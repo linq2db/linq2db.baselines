@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 INSERT INTO [Person]
 (
@@ -22,13 +20,11 @@ VALUES
 	'M'
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT TOP (2)
 	[p].[FirstName],
@@ -41,7 +37,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

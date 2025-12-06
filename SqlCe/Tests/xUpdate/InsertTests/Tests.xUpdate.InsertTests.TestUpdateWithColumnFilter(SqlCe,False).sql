@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -60,7 +57,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -76,7 +72,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlCe
 DECLARE @newName NVarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

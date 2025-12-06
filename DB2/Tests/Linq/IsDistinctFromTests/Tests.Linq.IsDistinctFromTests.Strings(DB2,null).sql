@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"s"."String" IS NOT NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"s"."NullableString" IS NOT NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	"s"."String" IS NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

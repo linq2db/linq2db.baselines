@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
@@ -40,7 +38,6 @@ SELECT TOP (2)
 FROM
 	[Base] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Type Int -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	[Base].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)

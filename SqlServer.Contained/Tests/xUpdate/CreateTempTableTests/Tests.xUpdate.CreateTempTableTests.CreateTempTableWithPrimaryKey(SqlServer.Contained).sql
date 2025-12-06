@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]

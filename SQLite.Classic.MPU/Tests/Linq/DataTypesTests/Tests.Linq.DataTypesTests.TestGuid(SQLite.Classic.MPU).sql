@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Column  -- Guid
 SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable  -- Guid
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	[r].[Column] = X'0D6048A921DE744F8AC29516B287076E' AND
 	[r].[ColumnNullable] = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [GuidTable]
@@ -108,7 +100,6 @@ VALUES
 (1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -120,13 +111,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [GuidTable]
@@ -139,7 +128,6 @@ VALUES
 (1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	x.ParentID,
@@ -9,7 +8,6 @@ FROM
 WHERE
 	x.ParentID = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 WHERE
 	x.ParentID = 3 OR x.ParentID = 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -49,7 +44,6 @@ FROM
 WHERE
 	x.ParentID = 1 OR x.ParentID = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

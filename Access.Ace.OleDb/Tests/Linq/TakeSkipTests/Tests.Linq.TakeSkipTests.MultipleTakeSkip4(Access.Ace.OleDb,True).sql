@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 5
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -24,13 +23,11 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 5
 
@@ -46,8 +43,7 @@ WHERE
 	`t1`.`PersonID` = @id
 LIMIT 1
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -69,8 +65,7 @@ SET
 WHERE
 	`t1`.`PersonID` = @ID
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 5
 

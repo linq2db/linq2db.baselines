@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
@@ -35,7 +33,6 @@ SET
 WHERE
 	[p].[Id] = 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2

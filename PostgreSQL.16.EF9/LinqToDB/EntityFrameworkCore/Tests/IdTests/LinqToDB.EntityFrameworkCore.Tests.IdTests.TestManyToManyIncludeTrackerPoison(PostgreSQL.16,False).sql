@@ -8,7 +8,6 @@ LEFT JOIN (
 ORDER BY e.id, s.entity_id, s.item_id
 
 
-BeginTransaction(RepeatableRead)
 
 
 -- PostgreSQL.15 PostgreSQL
@@ -26,7 +25,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- PostgreSQL.15 PostgreSQL

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeValue2
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (2)

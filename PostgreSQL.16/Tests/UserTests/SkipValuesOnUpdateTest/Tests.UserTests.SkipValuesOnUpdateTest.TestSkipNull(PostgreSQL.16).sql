@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
@@ -50,7 +47,6 @@ SET
 WHERE
 	"PR_1598_Update_Null_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -63,7 +59,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(6) -- String
 SET     @Name = 'Franki'
@@ -77,7 +72,6 @@ SET
 WHERE
 	"PR_1598_Update_Null_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

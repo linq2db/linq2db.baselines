@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	To_Date(Year(t.DateTimeValue) || '-01-01 00:20:00')

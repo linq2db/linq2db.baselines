@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[q].[ParentID] = @p
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 2

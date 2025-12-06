@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @addition Int -- Int32
 SET     @addition = 123
@@ -28,7 +26,6 @@ SELECT
 FROM
 	[TableWithIdentitySrc] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

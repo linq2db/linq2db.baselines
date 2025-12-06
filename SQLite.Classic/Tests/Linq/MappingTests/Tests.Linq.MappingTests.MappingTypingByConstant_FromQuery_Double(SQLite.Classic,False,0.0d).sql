@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @value  -- Double
 SET     @value = 0
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @value  -- Double
 SET     @value = 3147483648

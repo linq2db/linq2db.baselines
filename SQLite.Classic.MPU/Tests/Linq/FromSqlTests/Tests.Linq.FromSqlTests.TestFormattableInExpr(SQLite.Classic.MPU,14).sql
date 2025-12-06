@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @startId  -- Int32
 SET     @startId = 5
 DECLARE @endId  -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @startId  -- Int32
 SET     @startId = 5

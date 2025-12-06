@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	Src s
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

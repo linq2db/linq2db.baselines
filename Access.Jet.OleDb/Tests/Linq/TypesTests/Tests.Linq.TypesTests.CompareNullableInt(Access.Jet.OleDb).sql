@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[t].[ParentID],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Parent] [t]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @param Integer -- Int32
 SET     @param = 1

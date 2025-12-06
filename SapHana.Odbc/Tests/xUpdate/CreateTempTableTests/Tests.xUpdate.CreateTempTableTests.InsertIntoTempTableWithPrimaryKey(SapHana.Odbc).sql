@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TableWithPrimaryKey2"
 (
@@ -8,7 +7,6 @@ CREATE COLUMN TABLE "TableWithPrimaryKey2"
 	PRIMARY KEY ("Key")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Key Int -- Int32
 SET     @Key = 1
@@ -22,7 +20,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TableWithPrimaryKey2"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p."FirstName" ~ 'Jo.*'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

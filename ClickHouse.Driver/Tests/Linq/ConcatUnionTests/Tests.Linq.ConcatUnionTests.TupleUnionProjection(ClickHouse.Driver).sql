@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.Value1 as Item2,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	p2.ParentID <= 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

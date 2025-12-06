@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @structValue  -- Int32
 SET     @structValue = 13
 DECLARE @classValue  -- Int32
@@ -18,7 +17,6 @@ VALUES
 	@classValue
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 	[Table] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @structValue  -- Int32
 SET     @structValue = 1
@@ -43,7 +40,6 @@ SET
 	[Struct] = @structValue,
 	[Class] = @classValue
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

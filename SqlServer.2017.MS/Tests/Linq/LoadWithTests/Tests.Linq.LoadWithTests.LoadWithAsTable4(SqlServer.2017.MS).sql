@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[m_1].[ParentID],
@@ -19,7 +16,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
@@ -28,5 +24,3 @@ SELECT TOP (1)
 FROM
 	[Parent] [t]
 
-BeforeExecute
-DisposeTransaction

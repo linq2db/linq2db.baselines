@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[CollatedTable]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -37,7 +34,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~' AND
 	Substr([r].[CaseSensitive], -8) = 'stString'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -48,7 +44,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~' AND
 	Substr([r].[CaseInsensitive], -8) = 'stString'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -59,7 +54,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~' AND
 	Substr([r].[CaseSensitive], -8) = 'ststring'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
@@ -26,7 +24,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
@@ -38,7 +35,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
@@ -48,7 +44,6 @@ DELETE FROM
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001

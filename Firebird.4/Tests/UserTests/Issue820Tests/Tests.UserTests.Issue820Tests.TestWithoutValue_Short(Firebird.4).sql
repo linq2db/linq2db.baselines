@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = "t1"."SmallIntValue"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

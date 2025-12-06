@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"p"."PersonID" = 1 AND '123#456' LIKE '%#%' ESCAPE '~'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

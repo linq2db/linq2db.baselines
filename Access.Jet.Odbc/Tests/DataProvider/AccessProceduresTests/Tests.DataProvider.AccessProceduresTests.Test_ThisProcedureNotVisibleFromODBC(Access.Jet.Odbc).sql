@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
@@ -10,12 +7,10 @@ FROM
 WHERE
 	[t1].[char20DataType] = 'issue792'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 { CALL ThisProcedureNotVisibleFromODBC() }
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -25,5 +20,3 @@ FROM
 WHERE
 	[t1].[char20DataType] = 'issue792'
 
-BeforeExecute
-DisposeTransaction

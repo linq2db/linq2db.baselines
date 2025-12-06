@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."Field1",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

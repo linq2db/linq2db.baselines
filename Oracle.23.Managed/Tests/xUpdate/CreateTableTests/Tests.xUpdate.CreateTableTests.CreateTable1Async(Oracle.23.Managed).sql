@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	BEGIN
@@ -28,8 +27,7 @@ BEGIN
 	END;
 END;
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "TestTable"
 (
@@ -41,13 +39,11 @@ CREATE TABLE "TestTable"
 	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
 )
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "SIDENTITY_TestTable"
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestTable"
 BEFORE INSERT ON "TestTable" FOR EACH ROW
@@ -55,8 +51,7 @@ BEGIN
 	SELECT "SIDENTITY_TestTable".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
@@ -66,8 +61,7 @@ SELECT
 FROM
 	"TestTable" t1
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestTable"';

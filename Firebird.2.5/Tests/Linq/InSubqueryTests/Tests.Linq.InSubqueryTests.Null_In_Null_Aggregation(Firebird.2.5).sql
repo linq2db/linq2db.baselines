@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"t".ID
+	"t".PK,
+	"t".ID,
+	"t".GV
 FROM
 	"test_in_1" "t"
 WHERE
@@ -22,18 +23,19 @@ WHERE
 			"t".ID = "t1"."In_1" OR "t".ID IS NULL AND "t1"."In_1" IS NULL
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1".ID
+	"t1".PK,
+	"t1".ID,
+	"t1".GV
 FROM
 	"test_in_1" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
+	"t1".PK,
 	"t1".ID,
 	"t1".GV
 FROM

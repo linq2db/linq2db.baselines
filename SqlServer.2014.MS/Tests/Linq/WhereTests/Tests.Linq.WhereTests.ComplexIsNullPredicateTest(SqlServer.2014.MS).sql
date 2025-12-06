@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[r].[Id],
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

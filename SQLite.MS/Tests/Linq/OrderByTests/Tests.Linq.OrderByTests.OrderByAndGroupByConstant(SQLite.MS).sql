@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -11,7 +10,6 @@ FROM
 	[Child] [g_1]
 LIMIT @take
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

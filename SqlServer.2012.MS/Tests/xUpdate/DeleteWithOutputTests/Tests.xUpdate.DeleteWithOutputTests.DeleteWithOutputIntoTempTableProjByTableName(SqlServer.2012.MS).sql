@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -20,7 +20,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 100500
@@ -41,7 +40,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_target]', N'U') IS NOT NULL)

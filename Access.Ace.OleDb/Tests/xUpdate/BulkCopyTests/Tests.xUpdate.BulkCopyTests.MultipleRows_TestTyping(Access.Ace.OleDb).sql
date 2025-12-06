@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DecimalValue1 VarChar -- AnsiString
@@ -20,7 +19,6 @@ VALUES
 	@DecimalValue2
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@DecimalValue2
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

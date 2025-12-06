@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -24,12 +23,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -55,12 +52,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id1 Int32
 SET     @id1 = 5
@@ -77,7 +72,6 @@ WHERE
 	`t1`.`PersonID` = @id1
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id2 Int32
 SET     @id2 = 6

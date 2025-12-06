@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
@@ -19,7 +17,6 @@ SET     @Gender = N'M'
 
 [TestDataContained]..[Person_Insert]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'

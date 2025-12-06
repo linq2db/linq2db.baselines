@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
 
 [AddIssue792Record]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName LongVarWChar(50) -- String
 SET     @firstName = ''
@@ -16,14 +12,12 @@ SET     @lastName = ''
 
 [Patient_SelectByName]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 0
 
 [Person_Delete]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName LongVarWChar(50) -- String
 SET     @FirstName = ''
@@ -36,14 +30,12 @@ SET     @Gender = chr(0)
 
 [Person_Insert]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
 
 [Person_SelectByKey]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName LongVarWChar(50) -- String
 SET     @firstName = ''
@@ -52,7 +44,6 @@ SET     @lastName = ''
 
 [Person_SelectByName]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName LongVarWChar(50) -- String
 SET     @firstName = ''
@@ -61,7 +52,6 @@ SET     @lastName = ''
 
 [Person_SelectListByName]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 0
@@ -76,10 +66,8 @@ SET     @Gender = chr(0)
 
 [Person_Update]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 [ThisProcedureNotVisibleFromODBC]
 
-BeforeExecute
 RollbackTransaction

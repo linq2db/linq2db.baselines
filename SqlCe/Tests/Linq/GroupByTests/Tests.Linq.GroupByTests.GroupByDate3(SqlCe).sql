@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [SUM_1],
+	SUM([grp_1].[MoneyValue]) as [Total],
 	DatePart(year, [grp_1].[Date_1]) as [Year_1],
 	DatePart(month, [grp_1].[Date_1]) as [Month_1]
 FROM
@@ -16,11 +15,10 @@ FROM
 GROUP BY
 	[grp_1].[Date_1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [SUM_1],
+	SUM([grp_1].[MoneyValue]) as [Total],
 	DatePart(year, [grp_1].[Date_1]) as [Year_1],
 	DatePart(month, [grp_1].[Date_1]) as [Month_1]
 FROM

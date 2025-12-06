@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
@@ -15,7 +13,6 @@ AS RETURN
   UNION ALL
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -31,9 +28,6 @@ WHERE
 			dbo.fn_SomeFunction([x].[Id]) [t1]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -49,9 +43,6 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -60,7 +51,6 @@ SELECT
 FROM
 	[SomeTable] [t1] WITH (NOLOCK)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 

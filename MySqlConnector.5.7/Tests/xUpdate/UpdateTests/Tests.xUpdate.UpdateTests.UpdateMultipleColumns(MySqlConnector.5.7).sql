@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
@@ -20,7 +19,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	`t`.`ID` = @ID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 1001

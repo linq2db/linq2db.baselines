@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @DateTime0 DateTime2
 SET     @DateTime0 = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 0, 7)
@@ -21,7 +19,6 @@ VALUES
 	@DateTime3
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

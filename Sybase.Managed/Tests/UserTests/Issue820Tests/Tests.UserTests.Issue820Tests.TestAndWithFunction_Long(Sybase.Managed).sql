@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @param BigInt -- Int64
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

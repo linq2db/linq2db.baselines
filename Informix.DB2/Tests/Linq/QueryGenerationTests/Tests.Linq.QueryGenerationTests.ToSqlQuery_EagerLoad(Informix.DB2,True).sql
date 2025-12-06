@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p.ParentID,
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p.ParentID = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 2

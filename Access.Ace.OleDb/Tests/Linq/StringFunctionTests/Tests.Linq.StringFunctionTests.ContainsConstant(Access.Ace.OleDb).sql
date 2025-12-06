@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE '%jOh%' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

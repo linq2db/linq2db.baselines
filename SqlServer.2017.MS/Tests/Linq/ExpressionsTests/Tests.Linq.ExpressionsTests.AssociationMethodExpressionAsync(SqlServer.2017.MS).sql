@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[t1].[ParentID],
@@ -7,8 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	(

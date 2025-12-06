@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	"Parent" "p"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
@@ -29,7 +26,6 @@ SELECT DISTINCT
 FROM
 	"Parent" "p"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

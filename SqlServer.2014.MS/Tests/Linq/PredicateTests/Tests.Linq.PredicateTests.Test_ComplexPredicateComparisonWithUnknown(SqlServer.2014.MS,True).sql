@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Value1] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -73,7 +71,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -85,7 +82,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -150,7 +146,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -162,7 +157,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -198,7 +192,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -210,7 +203,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -246,7 +238,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -258,7 +249,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -322,7 +312,6 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -334,7 +323,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -398,7 +386,6 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -410,7 +397,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -446,7 +432,6 @@ WHERE
 		ELSE NULL
 	END, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -458,7 +443,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -494,7 +478,6 @@ WHERE
 		ELSE NULL
 	END, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -506,7 +489,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -596,7 +578,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -608,7 +589,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -698,7 +678,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -710,7 +689,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -746,7 +724,6 @@ WHERE
 		ELSE NULL
 	END, 0, 1) = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -758,7 +735,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -794,7 +770,6 @@ WHERE
 		ELSE NULL
 	END, 0, 1) = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -806,7 +781,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -894,7 +868,6 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -906,7 +879,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -994,7 +966,6 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1006,7 +977,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1042,7 +1012,6 @@ WHERE
 		ELSE NULL
 	END, 0, 1)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1054,7 +1023,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1090,7 +1058,6 @@ WHERE
 		ELSE NULL
 	END, 0, 1)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1102,7 +1069,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1125,7 +1091,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1137,7 +1102,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1160,7 +1124,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1172,7 +1135,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1195,7 +1157,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1207,7 +1168,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1230,7 +1190,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1242,7 +1201,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1265,7 +1223,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1277,7 +1234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1300,7 +1256,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1312,7 +1267,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1335,7 +1289,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1347,7 +1300,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1370,7 +1322,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1382,7 +1333,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1405,7 +1355,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1417,7 +1366,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1440,7 +1388,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1452,7 +1399,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1475,7 +1421,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1487,7 +1432,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1510,7 +1454,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1522,7 +1465,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1545,7 +1487,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1557,7 +1498,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1580,7 +1520,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1592,7 +1531,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1615,7 +1553,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -1627,7 +1564,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1650,7 +1586,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

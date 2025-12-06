@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
 DECLARE @In_2 Varchar2(12) -- String
@@ -12,7 +11,6 @@ FROM
 WHERE
 	s."CEnum" IN (:In_1, :In_2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
@@ -26,7 +24,6 @@ FROM
 WHERE
 	s."CEnum" IN (:In_1, :In_2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
@@ -40,7 +37,6 @@ FROM
 WHERE
 	s."CEnum" IN (:In_1, :In_2) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @NotIn Varchar2 -- String
 SET     @NotIn = NULL
@@ -54,7 +50,6 @@ FROM
 WHERE
 	s."CEnum" NOT IN (:NotIn, :NotIn_1) AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @NotIn Varchar2(12) -- String
 SET     @NotIn = '___Value3___'

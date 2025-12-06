@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @personId Integer -- Int32
 SET     @personId = 1

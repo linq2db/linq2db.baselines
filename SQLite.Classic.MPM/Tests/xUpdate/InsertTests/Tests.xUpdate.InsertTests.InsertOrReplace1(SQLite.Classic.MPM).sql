@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
@@ -49,7 +46,6 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
@@ -69,7 +65,6 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
@@ -89,7 +84,6 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5

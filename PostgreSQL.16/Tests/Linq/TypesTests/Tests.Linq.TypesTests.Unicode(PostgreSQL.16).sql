@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName Text(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

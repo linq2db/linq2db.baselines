@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[e].[EmployeeID],
@@ -23,7 +22,6 @@ SELECT
 FROM
 	[Employees] [e]
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1

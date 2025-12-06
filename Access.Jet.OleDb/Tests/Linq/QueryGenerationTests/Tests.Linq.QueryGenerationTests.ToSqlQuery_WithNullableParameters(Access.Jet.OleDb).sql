@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NOT NULL
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -38,11 +36,10 @@ SET
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [t1]
 WHERE

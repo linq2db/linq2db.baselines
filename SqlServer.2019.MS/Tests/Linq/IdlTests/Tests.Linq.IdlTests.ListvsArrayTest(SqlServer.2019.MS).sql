@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[x].[PersonID]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[x].[FirstName] IN (N'John')
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @st NVarChar(4000) -- String
 SET     @st = N'John'

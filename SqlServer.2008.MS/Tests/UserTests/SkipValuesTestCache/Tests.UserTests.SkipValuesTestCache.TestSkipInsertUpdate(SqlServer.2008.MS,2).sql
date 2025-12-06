@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
@@ -49,7 +46,6 @@ SET
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)

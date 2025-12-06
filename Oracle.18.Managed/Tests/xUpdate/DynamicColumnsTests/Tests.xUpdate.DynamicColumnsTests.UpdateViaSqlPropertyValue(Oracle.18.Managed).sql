@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	:id
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ChildID Int32
 SET     @ChildID = 5000
@@ -51,7 +48,6 @@ WHERE
 			"Child"."ChildID" = c_1."ChildID"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID]
 OFFSET 3 ROWS
 
-BeforeExecute
 -- SqlCe
 
 SELECT

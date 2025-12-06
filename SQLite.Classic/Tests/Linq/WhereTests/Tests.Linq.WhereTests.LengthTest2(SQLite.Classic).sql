@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Length([nm].[FirstName]) <> 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

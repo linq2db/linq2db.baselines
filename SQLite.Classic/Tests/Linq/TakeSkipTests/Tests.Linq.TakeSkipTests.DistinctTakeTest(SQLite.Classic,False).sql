@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT DISTINCT
-	[t1].[Value]
+	[r].[Value]
 FROM
-	[TakeSkipClass] [t1]
+	[TakeSkipClass] [r]
 LIMIT 3
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -41,7 +38,6 @@ FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -57,7 +53,6 @@ VALUES
 	'negative'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -70,7 +65,6 @@ FROM
 WHERE
 	[p].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -82,7 +76,6 @@ FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5

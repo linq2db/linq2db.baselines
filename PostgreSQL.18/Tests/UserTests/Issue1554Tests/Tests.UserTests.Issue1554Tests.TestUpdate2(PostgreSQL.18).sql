@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Text(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	:ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ClaimedKeyType Text(2) -- String
 SET     @ClaimedKeyType = 'EC'
@@ -35,7 +33,6 @@ SET
 WHERE
 	"Issue1554Table"."Id" = 0
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

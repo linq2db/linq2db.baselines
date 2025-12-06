@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName NVarChar(7) -- String
@@ -32,13 +30,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John0'
 
@@ -53,8 +49,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName NVarChar(7) -- String
@@ -79,13 +74,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John1'
 
@@ -100,7 +93,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

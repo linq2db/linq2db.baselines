@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 

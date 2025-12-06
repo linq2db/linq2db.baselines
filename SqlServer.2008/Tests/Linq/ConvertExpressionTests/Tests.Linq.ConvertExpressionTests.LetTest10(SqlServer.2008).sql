@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	CASE
@@ -10,8 +9,7 @@ SELECT
 				[Parent] [p]
 					OUTER APPLY (
 						SELECT TOP (1)
-							[c_1].[ParentID],
-							[c_1].[ChildID]
+							*
 						FROM
 							[Child] [c_1]
 						WHERE

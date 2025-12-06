@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Value2 Varchar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull Varchar -- String
@@ -17,8 +16,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."Id",
@@ -37,8 +35,7 @@ WHERE
 	e."Id" = 1
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Value1 Varchar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 Varchar(22) -- String
@@ -75,8 +72,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = :Id
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."Id",
@@ -95,8 +91,7 @@ WHERE
 	e."Id" = 2
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Value1 Varchar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 Varchar -- String
@@ -133,8 +128,7 @@ SET
 WHERE
 	"ValueConversion"."Id" = :Id
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."Id",

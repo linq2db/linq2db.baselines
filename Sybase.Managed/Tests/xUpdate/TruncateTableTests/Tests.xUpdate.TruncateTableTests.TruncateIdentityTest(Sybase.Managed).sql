@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TestIdTrun') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE [TestIdTrun]
@@ -15,7 +13,6 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
@@ -39,7 +35,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
@@ -50,17 +45,14 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 TRUNCATE TABLE [TestIdTrun]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_chgattribute [TestIdTrun], 'identity_burn_max', 0, '0'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
@@ -72,7 +64,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
@@ -84,7 +75,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
@@ -95,7 +85,6 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [TestIdTrun]

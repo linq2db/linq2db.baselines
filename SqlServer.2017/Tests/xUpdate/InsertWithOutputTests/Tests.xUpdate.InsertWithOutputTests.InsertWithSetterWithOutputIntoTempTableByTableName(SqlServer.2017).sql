@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#TInserted]
@@ -18,7 +16,6 @@ CREATE TABLE [tempdb]..[#TInserted]
 	PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -55,7 +51,6 @@ SELECT
 FROM
 	[tempdb]..[#TInserted] [c_1]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -66,12 +61,10 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#TInserted]
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [c_1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'Hall'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'hall'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower("r"."Diagnosis") STARTING WITH 'hall'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[Id],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[WhereCases] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 WHERE
 	NOT [t].[BoolValue] AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	NOT (NOT [t].[BoolValue] AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 WHERE
 	[t].[BoolValue] = True AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -68,7 +62,6 @@ FROM
 WHERE
 	[t].[BoolValue] = True AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -80,7 +73,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -92,7 +84,6 @@ FROM
 WHERE
 	[t].[BoolValue] = False AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -104,7 +95,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -116,7 +106,6 @@ FROM
 WHERE
 	[t].[BoolValue] = False AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -128,7 +117,6 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -141,7 +129,6 @@ WHERE
 	([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -153,7 +140,6 @@ FROM
 WHERE
 	NOT (([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -165,7 +151,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = True AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -177,7 +162,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -189,7 +173,6 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = True AND [t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -201,7 +184,6 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -214,7 +196,6 @@ WHERE
 	NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -226,7 +207,6 @@ FROM
 WHERE
 	NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -239,7 +219,6 @@ WHERE
 	NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -251,7 +230,6 @@ FROM
 WHERE
 	NOT (NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -264,7 +242,6 @@ WHERE
 	NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -276,7 +253,6 @@ FROM
 WHERE
 	NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -289,7 +265,6 @@ WHERE
 	NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

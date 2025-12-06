@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	COUNT(p.PersonID)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.PersonID IN (1, 2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

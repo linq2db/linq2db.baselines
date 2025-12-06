@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`UpdatedEntities` `v`
@@ -9,7 +8,6 @@ SET
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

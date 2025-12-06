@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
+	p.Id,
 	p.Code,
 	p.DIM_Company,
 	p.DIM_Branch,

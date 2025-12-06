@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[p].[Id],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

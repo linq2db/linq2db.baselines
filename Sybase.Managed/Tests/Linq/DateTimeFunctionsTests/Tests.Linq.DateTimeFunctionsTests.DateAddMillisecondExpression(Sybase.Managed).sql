@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 226
 
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (2)
 	[v].[Integer] / 33 as [Integer_1],

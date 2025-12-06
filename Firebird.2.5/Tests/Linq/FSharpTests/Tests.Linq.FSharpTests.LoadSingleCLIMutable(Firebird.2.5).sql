@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"p"."PersonID",
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	N'1' + [t1].[FirstName] COLLATE Albanian_CI_AS + N'2'

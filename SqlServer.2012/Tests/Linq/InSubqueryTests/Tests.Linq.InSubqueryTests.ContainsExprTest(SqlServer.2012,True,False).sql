@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			[p].[ParentID] + @n = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

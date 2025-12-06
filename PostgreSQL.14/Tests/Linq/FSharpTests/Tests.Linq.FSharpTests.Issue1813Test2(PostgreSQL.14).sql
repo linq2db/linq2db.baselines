@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -16,8 +15,7 @@ VALUES
 	:Name
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(5) -- String
@@ -34,8 +32,7 @@ VALUES
 	:Name
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Text Text(7) -- String
@@ -52,28 +49,19 @@ VALUES
 	:Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
 	d."Id",
 	d."Text"
 FROM
-	(
-		SELECT DISTINCT
-			"Item1"."Id"
-		FROM
-			"Names" "Item1"
-	) m_1
+	"Names" m_1
 		LEFT JOIN "Addresses" d ON m_1."Id" = d."Id"
+ORDER BY
+	m_1."Id"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	"tupledArg"."Id",

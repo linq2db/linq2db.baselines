@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS DropTableTest
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -11,7 +9,6 @@ SELECT FIRST 1
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -19,15 +16,15 @@ SELECT FIRST 1
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE DropTableTest
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO testdb:informix.DropTableTest
@@ -39,7 +36,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -47,12 +43,10 @@ SELECT
 FROM
 	testdb:informix.DropTableTest t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE testdb:informix.DropTableTest
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

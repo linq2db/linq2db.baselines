@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 UPDATE
@@ -31,7 +31,6 @@ FROM
 	[TableWithData_source] [s]
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -41,7 +40,6 @@ SELECT
 FROM
 	[DestinationTable_target] [t1]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]

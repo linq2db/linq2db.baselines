@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +10,6 @@ INSERT INTO [Issue4460Table]
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

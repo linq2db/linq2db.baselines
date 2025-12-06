@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue4280
 (
@@ -16,7 +15,6 @@ VALUES
 	'Something'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue4280
@@ -32,7 +30,6 @@ VALUES
 	'DISPLAY'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -45,7 +42,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -57,7 +53,6 @@ UPDATE
 WHERE
 	Id = 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -68,7 +63,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,12 +7,10 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 DROP TABLE [tempdb]..[#TempTable]
 
-BeforeExecute
 -- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#TempTable]

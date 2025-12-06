@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[cu].[Id],
@@ -14,7 +13,6 @@ SELECT
 FROM
 	[Issue1983Person] [cu]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -40,7 +38,6 @@ SELECT
 FROM
 	[Issue1983Person] [cu]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

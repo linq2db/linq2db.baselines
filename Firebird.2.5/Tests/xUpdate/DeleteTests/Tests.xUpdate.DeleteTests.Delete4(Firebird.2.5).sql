@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"GrandChild" "gc"
 WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "GrandChild"
@@ -22,7 +20,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "GrandChild"
@@ -38,7 +35,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -48,7 +44,6 @@ FROM
 WHERE
 	"gc"."ParentID" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
@@ -68,7 +63,6 @@ WHERE
 			"t1"."GrandChildID" = "gc"."GrandChildID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

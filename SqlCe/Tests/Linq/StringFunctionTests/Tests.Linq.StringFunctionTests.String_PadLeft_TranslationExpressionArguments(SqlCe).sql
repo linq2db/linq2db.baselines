@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[s].[ID],
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[s].[FirstName] <> ''
 
-BeforeExecute
 -- SqlCe
 
 SELECT

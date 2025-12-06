@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	"x"."FirstName" = ?
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -55,7 +52,6 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 5
@@ -72,7 +68,6 @@ WHERE
 	"x"."PersonID" = ?
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -95,7 +90,6 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 5

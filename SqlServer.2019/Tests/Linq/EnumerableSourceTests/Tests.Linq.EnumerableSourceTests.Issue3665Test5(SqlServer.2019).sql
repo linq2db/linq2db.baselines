@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[y].[item]
@@ -9,7 +8,6 @@ FROM
 			(N'M'), (N'F'), (N'U'), (N'O')
 		) [y]([item])
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

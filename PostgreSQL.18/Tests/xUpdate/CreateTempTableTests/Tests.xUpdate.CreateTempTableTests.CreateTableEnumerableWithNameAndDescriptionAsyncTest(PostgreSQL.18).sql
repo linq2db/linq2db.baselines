@@ -1,19 +1,18 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
-	"Name" text NOT NULL
+	"Name" text NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "TempTable"
 (
@@ -22,8 +21,7 @@ INSERT INTO "TempTable"
 VALUES
 ('John')
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t."Name"
@@ -31,8 +29,7 @@ FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 

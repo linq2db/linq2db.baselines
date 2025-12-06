@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [Person]
 (
@@ -16,7 +15,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]

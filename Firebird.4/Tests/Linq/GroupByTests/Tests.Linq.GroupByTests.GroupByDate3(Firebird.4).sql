@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	SUM("grp_1"."MoneyValue"),
@@ -16,7 +15,6 @@ FROM
 GROUP BY
 	"grp_1"."Date_1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

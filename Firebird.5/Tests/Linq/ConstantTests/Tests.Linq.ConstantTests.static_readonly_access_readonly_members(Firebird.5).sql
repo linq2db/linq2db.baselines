@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."Id" = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	"TestConstantsData" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	"e"."Id" = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

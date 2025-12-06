@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[o].[OrderID],
@@ -19,6 +18,6 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) >= strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [o].[OrderDate]) AS INTEGER)) || '-01-01 00:00:00.000'))
+	strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) >= strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [o].[OrderDate]) AS INTEGER)) || '-01-01 00:00:00.000')
 LIMIT 1
 

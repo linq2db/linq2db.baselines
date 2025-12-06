@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[sr].[id] = 'TestProcessService' AND [component_categories].[id] = [ct].[id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ChildID" > 1000
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
@@ -24,7 +22,6 @@ FROM
 WHERE
 	c_1."ChildID" = 11
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
@@ -36,7 +33,6 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM

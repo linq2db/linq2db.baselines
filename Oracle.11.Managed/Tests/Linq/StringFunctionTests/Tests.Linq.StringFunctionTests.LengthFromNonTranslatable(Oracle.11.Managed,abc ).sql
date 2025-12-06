@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Str",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"TestLengthModel" t
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

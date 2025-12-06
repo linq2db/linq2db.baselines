@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`g_2`.`ChildId`,
@@ -17,7 +16,6 @@ GROUP BY
 	`g_2`.`ChildId`,
 	`g_2`.`ParentId`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

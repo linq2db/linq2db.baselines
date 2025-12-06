@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 DECLARE @Data VarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 2
@@ -34,7 +32,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO TrimTestTable
@@ -48,7 +45,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -59,7 +55,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

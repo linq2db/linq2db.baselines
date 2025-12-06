@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 WITH RECURSIVE "CTE_1" ("Id")
 AS
@@ -42,7 +41,4 @@ SELECT
 FROM
 	"hierarchyDown" t4
 		INNER JOIN "HierarchyTree" data1 ON data1."Id" = t4."Id"
-		INNER JOIN "HierarchyTree" data2 ON data2."Id" = t4."Id"
-		INNER JOIN "HierarchyTree" data3 ON data3."Id" = t4."Id"
-		INNER JOIN "HierarchyTree" data4 ON data4."Id" = t4."Id"
 

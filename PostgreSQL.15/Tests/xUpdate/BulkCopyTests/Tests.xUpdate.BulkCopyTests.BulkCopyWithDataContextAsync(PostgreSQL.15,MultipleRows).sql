@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -8,8 +7,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (

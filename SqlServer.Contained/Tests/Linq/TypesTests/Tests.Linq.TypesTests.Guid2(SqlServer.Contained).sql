@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
 	[p].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[p].[GuidValue] = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)

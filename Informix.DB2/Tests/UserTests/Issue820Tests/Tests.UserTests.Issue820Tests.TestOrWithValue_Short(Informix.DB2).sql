@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @param SmallInt(2) -- Int16
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = t1.SmallIntValue
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

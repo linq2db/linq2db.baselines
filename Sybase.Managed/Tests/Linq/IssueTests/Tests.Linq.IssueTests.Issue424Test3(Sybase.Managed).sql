@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 2
 	[t2].[ParentID],
@@ -15,7 +14,6 @@ FROM
 ORDER BY
 	[t2].[ParentID] DESC
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

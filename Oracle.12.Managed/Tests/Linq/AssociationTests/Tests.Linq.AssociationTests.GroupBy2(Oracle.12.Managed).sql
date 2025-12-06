@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
@@ -19,9 +16,6 @@ FROM
 			INNER JOIN "Parent" a_Parent1_1 ON d."ParentID" = a_Parent1_1."ParentID"
 		ON m_1."ParentID" = a_Parent1_1."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS

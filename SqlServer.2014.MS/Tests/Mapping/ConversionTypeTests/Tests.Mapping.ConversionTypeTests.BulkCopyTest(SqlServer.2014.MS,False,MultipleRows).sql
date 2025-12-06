@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [TrimTestTable]
 (
@@ -9,7 +8,6 @@ INSERT INTO [TrimTestTable]
 VALUES
 (1,N'***OOO***')
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

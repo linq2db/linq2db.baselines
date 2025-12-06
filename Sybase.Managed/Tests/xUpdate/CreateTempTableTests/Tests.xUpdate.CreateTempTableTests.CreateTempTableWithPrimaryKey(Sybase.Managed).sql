@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE #TableWithPrimaryKey
 (
@@ -8,7 +7,6 @@ CREATE TABLE #TableWithPrimaryKey
 	CONSTRAINT [PK_TableWithPrimaryKey] PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#TableWithPrimaryKey') IS NOT NULL)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 WITH "CTE_1"
 (
@@ -33,7 +32,6 @@ FROM
 	"CTE_1" "t1"
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

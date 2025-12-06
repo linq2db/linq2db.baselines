@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	[Person] [x]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `FluentTemp`
@@ -49,7 +45,6 @@ ON DUPLICATE KEY UPDATE
 	`ID` = `ID`,
 	`Name` = `Name`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`

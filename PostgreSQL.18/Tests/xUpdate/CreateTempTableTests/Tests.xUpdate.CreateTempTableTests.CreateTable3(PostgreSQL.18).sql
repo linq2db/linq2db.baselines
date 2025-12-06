@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "TempTable"
@@ -13,7 +11,6 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 	CONSTRAINT "PK_TempTable" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "TempTable"
@@ -25,7 +22,6 @@ SELECT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -34,7 +30,6 @@ FROM
 	"Parent" p
 		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"

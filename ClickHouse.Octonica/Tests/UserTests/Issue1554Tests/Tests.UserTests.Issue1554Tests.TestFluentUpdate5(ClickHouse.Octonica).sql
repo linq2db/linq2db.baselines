@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue1554FluentTable
 (
@@ -14,7 +13,6 @@ VALUES
 	'RSA'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -25,7 +23,6 @@ UPDATE
 WHERE
 	Id = 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

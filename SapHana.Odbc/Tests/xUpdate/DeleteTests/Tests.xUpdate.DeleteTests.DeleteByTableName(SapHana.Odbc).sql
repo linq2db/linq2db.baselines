@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"xxPerson" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -45,7 +42,6 @@ FROM
 	"xxPerson" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -55,7 +51,6 @@ DELETE FROM
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

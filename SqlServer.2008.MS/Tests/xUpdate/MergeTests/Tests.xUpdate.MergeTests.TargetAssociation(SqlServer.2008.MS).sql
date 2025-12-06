@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [Person] [Target]
 USING (
@@ -28,7 +25,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = 1 THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -42,5 +38,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

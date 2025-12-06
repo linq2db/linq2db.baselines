@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -16,7 +15,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DELETE [p]

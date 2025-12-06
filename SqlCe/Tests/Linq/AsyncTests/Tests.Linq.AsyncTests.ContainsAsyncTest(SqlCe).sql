@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 

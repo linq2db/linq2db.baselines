@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -116,7 +108,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -138,7 +129,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -150,13 +140,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -178,7 +166,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -200,7 +187,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

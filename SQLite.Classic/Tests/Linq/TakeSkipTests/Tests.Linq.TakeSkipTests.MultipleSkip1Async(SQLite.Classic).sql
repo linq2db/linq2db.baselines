@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

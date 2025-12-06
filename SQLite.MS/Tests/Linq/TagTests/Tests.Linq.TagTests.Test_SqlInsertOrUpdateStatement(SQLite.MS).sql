@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 /* My Test */
 INSERT INTO [TestTable] AS [t1]

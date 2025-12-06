@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -28,7 +26,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "CreateIfNotExistsTable"
@@ -42,7 +39,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -51,7 +47,6 @@ SELECT
 FROM
 	"CreateIfNotExistsTable" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -69,7 +64,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -81,7 +75,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN

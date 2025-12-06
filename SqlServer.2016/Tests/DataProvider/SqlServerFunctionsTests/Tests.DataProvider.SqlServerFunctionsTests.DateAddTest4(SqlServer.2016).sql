@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @p Time
 SET     @p = TIMEFROMPARTS(2, 0, 0, 0, 7)
 

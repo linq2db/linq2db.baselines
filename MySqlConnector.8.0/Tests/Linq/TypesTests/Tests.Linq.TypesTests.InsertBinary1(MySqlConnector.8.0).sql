@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` > 1000
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @data Blob -- Binary
 SET     @data = NULL
@@ -25,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  

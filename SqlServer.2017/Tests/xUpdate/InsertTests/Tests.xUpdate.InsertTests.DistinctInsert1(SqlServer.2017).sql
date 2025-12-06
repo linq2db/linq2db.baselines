@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 DELETE [c_1]
 FROM
@@ -9,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ID] > 1000
 
-BeforeExecute
 -- SqlServer.2017
 
 INSERT INTO [LinqDataTypes]
@@ -30,7 +26,6 @@ FROM
 			[LinqDataTypes] [t1]
 	) [t2]
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [c_1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Has Boolean
 SET     @Has = True
 
@@ -12,12 +11,10 @@ VALUES
 	@Has
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1

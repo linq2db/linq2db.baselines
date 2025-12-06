@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Parent"
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Child"
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"Parent"

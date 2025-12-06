@@ -1,4 +1,14 @@
-﻿BeforeExecute
+﻿-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TestIdentityDropTable')) THEN
+		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_TestIdentityDropTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_TestIdentityDropTable')) THEN
+		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_TestIdentityDropTable"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestIdentityDropTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestIdentityDropTable"';
+END
+
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -10,19 +20,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "TestIdentityDropTable"';
 END
 
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TestIdentityDropTable')) THEN
-		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_TestIdentityDropTable"';
-	IF (EXISTS(SELECT 1 FROM rdb$generators WHERE rdb$generator_name = 'GIDENTITY_TestIdentityDropTable')) THEN
-		EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_TestIdentityDropTable"';
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestIdentityDropTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestIdentityDropTable"';
-END
-
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -44,7 +41,6 @@ EXECUTE BLOCK AS BEGIN
 	';
 END
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN

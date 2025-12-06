@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -22,10 +19,7 @@ FROM
 				d."ParentID"
 		) d_1 ON m_1."ParentID" = d_1."Key_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."ParentID"

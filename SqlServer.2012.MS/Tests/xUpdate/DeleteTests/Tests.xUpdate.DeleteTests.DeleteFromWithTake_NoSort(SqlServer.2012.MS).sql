@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
@@ -34,7 +32,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1003
@@ -52,7 +49,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -82,7 +78,6 @@ WHERE
 			) [t1]
 	)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -92,7 +87,6 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 DELETE [c_1]

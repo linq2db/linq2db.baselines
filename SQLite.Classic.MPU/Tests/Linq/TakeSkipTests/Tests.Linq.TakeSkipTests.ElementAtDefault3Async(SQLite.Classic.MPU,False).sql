@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @n  -- Int32
 SET     @n = 3
 

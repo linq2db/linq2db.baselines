@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [TrimTestTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

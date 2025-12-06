@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t1"."InId",
@@ -18,7 +17,6 @@ WHERE
 	"t1"."InId" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

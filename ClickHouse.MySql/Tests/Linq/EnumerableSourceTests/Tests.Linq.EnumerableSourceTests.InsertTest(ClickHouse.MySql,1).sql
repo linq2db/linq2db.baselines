@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO TableToInsert
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	t.Id IS NULL
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TableToInsert

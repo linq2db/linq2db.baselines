@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [TrimTestTable]
 (
@@ -15,7 +14,6 @@ RETURNING
 	[TrimTestTable].[ID],
 	[TrimTestTable].[Data]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

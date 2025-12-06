@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -39,7 +36,6 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkBookId" = m_1."Id"
 		LEFT JOIN "Author" "a_Author" ON d."FkAuthorId" = "a_Author"."AuthorId"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -80,9 +76,6 @@ FROM
 WHERE
 	"a_Author"."AuthorName" <> 'A' OR "a_Author"."AuthorName" IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -111,9 +104,6 @@ FROM
 WHERE
 	"a_Book_1"."Discriminator" = 'Novel'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -139,7 +129,6 @@ FROM
 		INNER JOIN "BookAuthor" d_1 ON d_1."FkBookId" = m_1."BookId"
 		LEFT JOIN "Author" "a_Author" ON d_1."FkAuthorId" = "a_Author"."AuthorId"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -154,9 +143,6 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkAuthorId" = m_1."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

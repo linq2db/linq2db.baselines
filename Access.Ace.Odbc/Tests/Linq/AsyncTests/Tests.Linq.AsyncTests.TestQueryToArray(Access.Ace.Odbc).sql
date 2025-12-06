@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
 	[p].[FirstName]

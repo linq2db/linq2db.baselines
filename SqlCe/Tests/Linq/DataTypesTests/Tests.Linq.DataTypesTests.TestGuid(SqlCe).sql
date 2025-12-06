@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	[r].[Column] = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [GuidTable]
@@ -107,7 +99,6 @@ INSERT INTO [GuidTable]
 SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
 SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -119,13 +110,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[GuidTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [GuidTable]
@@ -137,7 +126,6 @@ INSERT INTO [GuidTable]
 SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
 SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

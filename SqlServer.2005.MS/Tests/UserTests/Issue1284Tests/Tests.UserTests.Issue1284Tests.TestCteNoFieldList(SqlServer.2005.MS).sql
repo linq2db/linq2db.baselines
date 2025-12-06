@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 WITH [cte]
 (
@@ -29,7 +28,6 @@ SELECT
 FROM
 	[cte] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

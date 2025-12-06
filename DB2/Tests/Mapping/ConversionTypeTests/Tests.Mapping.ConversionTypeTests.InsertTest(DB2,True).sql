@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TrimTestTable"
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TrimTestTable"
@@ -26,7 +24,6 @@ VALUES
 	'***HHH***'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TrimTestTable"
@@ -40,7 +37,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -51,7 +47,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

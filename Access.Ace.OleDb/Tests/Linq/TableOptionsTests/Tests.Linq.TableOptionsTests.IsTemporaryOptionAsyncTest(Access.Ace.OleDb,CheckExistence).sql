@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Value Integer -- Int32
@@ -25,17 +25,17 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [temp_table2]
 (
@@ -48,7 +48,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -57,7 +56,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -66,8 +64,7 @@ SELECT
 FROM
 	[temp_table2] [t1]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
 DECLARE @Value Integer -- Int32
@@ -84,8 +81,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -102,8 +98,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
 DECLARE @Value Integer -- Int32
@@ -120,22 +115,18 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM [temp_table1]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM [temp_table2]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [temp_table2]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [temp_table1]

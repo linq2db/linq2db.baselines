@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t."ID",
@@ -15,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" IN ('2001-01-11 01:11:21.100'::timestamp)
+	t."DateTimeValue" IN (make_timestamp(2001, 1, 11, 1, 11, 21.100000000000001))
 

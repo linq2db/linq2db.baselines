@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" > 1000
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	t."ID" = 1001
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM

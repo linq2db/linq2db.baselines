@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.OrderId,
@@ -18,7 +17,6 @@ FROM
 	) m_1
 		INNER JOIN OrderDetail d ON m_1.OrderId = d.OrderId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

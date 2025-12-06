@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Gender NVarChar(4000) -- String
 SET     @Gender = N'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (2)
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > 4
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 DELETE [t]

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE IF EXISTS `DropTableTestID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 CREATE TABLE `DropTableTestID`
@@ -14,7 +12,6 @@ CREATE TABLE `DropTableTestID`
 	CONSTRAINT `PK_DropTableTestID` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `DropTableTestID`
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	`DropTableTestID` `t`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE `DropTableTestID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

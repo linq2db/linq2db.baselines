@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TABLE `Table`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_Table` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE `Table`
 

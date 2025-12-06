@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName VarChar(7) -- String
@@ -33,13 +31,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
 
@@ -55,8 +51,7 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -81,13 +76,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'
 
@@ -103,8 +96,7 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM

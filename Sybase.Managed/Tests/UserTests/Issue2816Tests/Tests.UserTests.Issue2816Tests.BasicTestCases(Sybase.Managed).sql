@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[Id],
@@ -10,7 +9,6 @@ WHERE
 	[p].[Text] IS NULL OR [p].[Text] NOT LIKE '%[^	
                  　]%'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

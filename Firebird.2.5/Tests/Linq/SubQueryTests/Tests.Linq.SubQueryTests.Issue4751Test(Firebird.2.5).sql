@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 10
 DECLARE @skip Integer -- Int32
@@ -52,7 +51,6 @@ FROM
 				LEFT JOIN "Trp0041" "t4" ON "t4"."CarNo" = "t"."CarNo" OR "t4"."CarNo" IS NULL AND "t"."CarNo" IS NULL
 	) "x"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

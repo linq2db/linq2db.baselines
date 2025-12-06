@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [IdentitySimpleBulkCopyTable]
@@ -13,7 +11,6 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 VALUES
 (1)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF

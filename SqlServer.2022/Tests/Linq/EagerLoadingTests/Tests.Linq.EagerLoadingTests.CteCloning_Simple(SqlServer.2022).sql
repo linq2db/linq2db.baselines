@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 WITH [CTE_1] ([Value4])
 AS
@@ -29,9 +26,6 @@ FROM
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2022
 
 WITH [CTE_1]

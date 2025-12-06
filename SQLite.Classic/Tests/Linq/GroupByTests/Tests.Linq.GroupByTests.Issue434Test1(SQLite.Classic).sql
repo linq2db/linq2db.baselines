@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @input NVarChar(6) -- String
 SET     @input = '%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @input NVarChar(6) -- String
 SET     @input = '%test%'

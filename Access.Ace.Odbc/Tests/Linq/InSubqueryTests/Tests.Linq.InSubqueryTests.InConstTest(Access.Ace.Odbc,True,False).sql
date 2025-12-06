@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[c_1].[ParentID],
@@ -16,7 +15,6 @@ WHERE
 			1 = [p].[Value1]
 	)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

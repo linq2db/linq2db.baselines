@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -16,7 +15,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [p]

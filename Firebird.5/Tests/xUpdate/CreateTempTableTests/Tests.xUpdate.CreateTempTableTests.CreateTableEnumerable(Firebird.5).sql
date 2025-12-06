@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	"Parent" "p"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -22,12 +19,13 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TempTable"
 			(
-				ID Int NOT NULL
+				ID Int NOT NULL,
+
+				CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "TempTable"
@@ -42,7 +40,6 @@ SELECT 5 FROM rdb$database UNION ALL
 SELECT 6 FROM rdb$database UNION ALL
 SELECT 7 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -51,7 +48,6 @@ FROM
 	"Parent" "p"
 		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN

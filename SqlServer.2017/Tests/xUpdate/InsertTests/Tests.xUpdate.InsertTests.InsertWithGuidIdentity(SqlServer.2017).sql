@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @Field1 Int -- Int32
 SET     @Field1 = 1
 

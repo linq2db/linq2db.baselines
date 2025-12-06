@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -17,8 +16,7 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.ParentID,
@@ -29,8 +27,7 @@ WHERE
 	x.ParentID = 3
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -48,8 +45,7 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.ParentID,
@@ -60,8 +56,7 @@ WHERE
 	x.ParentID = 3
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -79,8 +74,7 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.ParentID,

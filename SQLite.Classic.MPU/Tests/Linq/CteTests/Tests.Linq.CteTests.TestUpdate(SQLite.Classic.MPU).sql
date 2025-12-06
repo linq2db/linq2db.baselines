@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -20,7 +19,6 @@ FROM
 WHERE
 	[ct].[ParentID] = [CteChild].[ParentID]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	[c_1].[ParentID] % 2 = 0
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

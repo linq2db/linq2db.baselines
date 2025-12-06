@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[m_1].[PersonID] as [ID],
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT

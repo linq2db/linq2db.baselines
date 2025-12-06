@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-DROP TABLE [xxPerson]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   Int            NOT NULL IDENTITY,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     Char(1)        NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarWChar(4) -- String
@@ -43,16 +23,14 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -63,8 +41,7 @@ SELECT TOP 2
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -73,16 +50,10 @@ DELETE FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
-
-DROP TABLE [xxPerson]
 

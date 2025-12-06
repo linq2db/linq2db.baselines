@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	it_1."IsActive",
@@ -16,7 +15,6 @@ GROUP BY
 	it_1."IsActive",
 	it_1."Other"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

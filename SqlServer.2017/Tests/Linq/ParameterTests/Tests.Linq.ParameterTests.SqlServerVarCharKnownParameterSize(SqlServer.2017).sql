@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @p VarChar(20) -- AnsiString
 SET     @p = N'abc'
 

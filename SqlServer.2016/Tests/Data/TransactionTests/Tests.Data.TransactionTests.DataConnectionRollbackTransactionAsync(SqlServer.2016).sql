@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -18,5 +16,4 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

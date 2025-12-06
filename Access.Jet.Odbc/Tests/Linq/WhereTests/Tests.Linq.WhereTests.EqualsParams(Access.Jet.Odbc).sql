@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String

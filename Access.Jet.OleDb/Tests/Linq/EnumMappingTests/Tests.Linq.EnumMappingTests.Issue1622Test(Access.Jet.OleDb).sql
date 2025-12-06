@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeText VarWChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

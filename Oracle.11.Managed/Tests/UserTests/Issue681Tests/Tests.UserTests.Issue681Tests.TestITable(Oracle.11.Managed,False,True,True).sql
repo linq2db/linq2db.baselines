@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	sys_context('userenv', 'current_schema')
@@ -8,7 +7,6 @@ FROM
 WHERE
 	ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

@@ -125,7 +125,7 @@ SET
 
 
 
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -139,7 +139,7 @@ ORDER BY
 
 
 
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",

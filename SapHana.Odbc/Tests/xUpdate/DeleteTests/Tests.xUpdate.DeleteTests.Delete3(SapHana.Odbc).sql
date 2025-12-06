@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ChildID" IN (1001, 1002)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Child"
@@ -20,7 +18,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Child"
@@ -34,7 +31,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 WHERE
 	"c_1"."ParentID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -63,7 +58,6 @@ WHERE
 			"t1"."ChildID" = "c_1"."ChildID"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

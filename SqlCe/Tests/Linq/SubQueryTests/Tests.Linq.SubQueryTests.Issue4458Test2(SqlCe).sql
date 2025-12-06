@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[m_1].[Id],
@@ -26,9 +23,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT

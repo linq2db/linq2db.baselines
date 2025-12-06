@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	DateAdd(millisecond, 226, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

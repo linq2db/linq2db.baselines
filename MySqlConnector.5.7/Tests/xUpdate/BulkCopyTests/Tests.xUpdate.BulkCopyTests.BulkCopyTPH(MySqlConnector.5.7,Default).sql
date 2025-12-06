@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `TPHTable`
 (
@@ -15,7 +14,6 @@ VALUES
 (2,2,NULL,'Str2',NULL,NULL),
 (3,3,NULL,NULL,'Str3','Y')
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -46,7 +43,6 @@ WHERE
 	`x`.`Discriminator` = 1
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -62,7 +58,6 @@ WHERE
 	`x`.`Discriminator` = 2
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -78,7 +73,6 @@ WHERE
 	`x`.`Discriminator` = 3
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -94,7 +88,6 @@ WHERE
 	`x`.`Value1` = 'Str1'
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -110,7 +103,6 @@ WHERE
 	`x`.`Value2` = 'Str2'
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

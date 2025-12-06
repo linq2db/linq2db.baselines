@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND @s LIKE N'%~[%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123[456'

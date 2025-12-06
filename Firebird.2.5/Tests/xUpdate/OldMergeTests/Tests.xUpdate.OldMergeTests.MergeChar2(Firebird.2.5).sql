@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -31,5 +28,3 @@ VALUES
 	"Source"."ncharDataType"
 )
 
-BeforeExecute
-DisposeTransaction

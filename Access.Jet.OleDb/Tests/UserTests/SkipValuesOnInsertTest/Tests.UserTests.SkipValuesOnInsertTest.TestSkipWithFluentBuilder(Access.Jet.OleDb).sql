@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1

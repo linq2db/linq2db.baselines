@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 WITH "CTE_1"
 (
@@ -31,7 +30,6 @@ FROM
 WHERE
 	"x"."entry_ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

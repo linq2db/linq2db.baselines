@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TestTable')) THEN
@@ -10,7 +9,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "TestTable"';
 END
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
@@ -37,7 +35,6 @@ EXECUTE BLOCK AS BEGIN
 	';
 END
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -48,7 +45,6 @@ SELECT
 FROM
 	"TestTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN

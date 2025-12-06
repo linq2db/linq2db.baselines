@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "aa"
 (
@@ -9,7 +8,6 @@ CREATE TABLE "aa"
 	CONSTRAINT "PK_aa" PRIMARY KEY ("bb")
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @bb Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	:cc
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	"aa" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP TABLE "aa"

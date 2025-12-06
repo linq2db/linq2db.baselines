@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'Empty'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	t1.PersonID = 100
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -46,7 +43,6 @@ UPDATE
 WHERE
 	PersonID = 100
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

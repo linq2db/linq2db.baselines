@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
@@ -8,10 +7,8 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
-BeforeExecute
 -- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey2]', N'U') IS NOT NULL)

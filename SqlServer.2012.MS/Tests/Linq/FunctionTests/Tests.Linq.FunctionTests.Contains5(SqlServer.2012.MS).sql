@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] IN (1, 2)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -19,7 +18,6 @@ WHERE
 			s.Id > r.Id AND 1 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -52,7 +49,6 @@ WHERE
 			s.Id > r.Id AND 0 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -64,7 +60,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -85,7 +80,6 @@ WHERE
 			s.Id > r.Id AND 1 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -97,7 +91,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -118,7 +111,6 @@ WHERE
 			s.Id > r.Id AND 0 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -130,7 +122,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -144,7 +135,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -156,7 +146,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -177,7 +166,6 @@ WHERE
 			s.Id > r.Id AND 1 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -189,7 +177,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -210,7 +197,6 @@ WHERE
 			s.Id > r.Id AND 0 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -222,7 +208,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -243,7 +228,6 @@ WHERE
 			s.Id > r.Id AND 1 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -255,7 +239,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -276,7 +259,6 @@ WHERE
 			s.Id > r.Id AND 0 = s.Value1
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -288,7 +270,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -300,7 +281,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

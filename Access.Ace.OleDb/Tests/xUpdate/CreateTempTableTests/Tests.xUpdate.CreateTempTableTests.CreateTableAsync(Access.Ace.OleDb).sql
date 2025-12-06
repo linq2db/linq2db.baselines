@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TempTable]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [TempTable]
 (
@@ -23,7 +22,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -32,8 +30,7 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TempTable]
 

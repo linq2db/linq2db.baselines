@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Parent"
 (
@@ -10,7 +7,6 @@ INSERT INTO "Parent"
 )
 SELECT 111001,NULL FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "Child"
@@ -20,5 +16,3 @@ INSERT INTO "Child"
 )
 SELECT 111001,0 FROM rdb$database
 
-BeforeExecute
-DisposeTransaction

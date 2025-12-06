@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	:id
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1001
@@ -63,7 +60,6 @@ WHERE
 			"Child"."ChildID" = c_1."ChildID"
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 1002

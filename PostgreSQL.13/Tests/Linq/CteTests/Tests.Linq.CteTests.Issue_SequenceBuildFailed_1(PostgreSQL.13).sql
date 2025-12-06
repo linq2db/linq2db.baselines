@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE cte ("Id")
 AS
@@ -35,10 +32,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Item1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE cte ("Id")
 AS

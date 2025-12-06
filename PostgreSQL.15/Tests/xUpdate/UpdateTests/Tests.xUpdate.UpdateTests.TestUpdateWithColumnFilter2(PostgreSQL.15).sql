@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName Text(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	x."FirstName" = :FirstName
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -55,7 +52,6 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -72,7 +68,6 @@ WHERE
 	x."PersonID" = :ID
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -95,7 +90,6 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

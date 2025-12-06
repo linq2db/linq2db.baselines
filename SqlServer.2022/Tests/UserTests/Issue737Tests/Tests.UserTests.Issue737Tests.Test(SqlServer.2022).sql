@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[x].[FirstName],
@@ -13,7 +12,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

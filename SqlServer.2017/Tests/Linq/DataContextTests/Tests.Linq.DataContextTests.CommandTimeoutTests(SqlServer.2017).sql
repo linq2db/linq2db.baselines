@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[t1].[FirstName],
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (1)

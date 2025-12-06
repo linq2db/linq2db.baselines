@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE AllTypeCreateTest
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE AllTypeCreateTest
@@ -33,7 +31,6 @@ CREATE TABLE AllTypeCreateTest
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -61,7 +58,6 @@ SELECT
 FROM
 	AllTypeCreateTest t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE AllTypeCreateTest

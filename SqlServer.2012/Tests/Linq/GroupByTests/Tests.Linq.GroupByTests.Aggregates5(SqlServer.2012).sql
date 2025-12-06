@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	COUNT(IIF([g_1].[ChildID] > 30, 1, NULL)),

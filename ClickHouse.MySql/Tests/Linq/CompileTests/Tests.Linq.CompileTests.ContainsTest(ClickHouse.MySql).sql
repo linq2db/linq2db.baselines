@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	CASE
@@ -13,7 +12,6 @@ SELECT
 		ELSE false
 	END
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

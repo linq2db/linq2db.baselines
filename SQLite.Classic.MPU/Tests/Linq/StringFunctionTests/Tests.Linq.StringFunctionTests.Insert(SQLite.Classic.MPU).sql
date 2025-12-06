@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,7 @@ FROM
 WHERE
 	CASE
 		WHEN Length([p].[FirstName]) = 2 THEN [p].[FirstName] || '123'
-		ELSE LeftStr([p].[FirstName], 2) || '123' || RightStr([p].[FirstName], Length([p].[FirstName]) - 2)
+		ELSE SUBSTRING([p].[FirstName], 1, 2) || '123' || SUBSTRING([p].[FirstName], LENGTH([p].[FirstName]) - (Length([p].[FirstName]) - 2) + 1)
 	END = 'Jo123hn' AND
 	[p].[PersonID] = 1
 

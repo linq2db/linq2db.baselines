@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "HierarchyData"
 (
@@ -47,7 +46,6 @@ SELECT
 FROM
 	"hierarchyDown" t4
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

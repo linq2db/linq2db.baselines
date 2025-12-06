@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	[t1].[id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -37,7 +35,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2
@@ -48,7 +45,6 @@ SELECT TOP 2
 FROM
 	[test_insert_or_replace] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
@@ -65,7 +61,6 @@ SET
 WHERE
 	[t1].[id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2

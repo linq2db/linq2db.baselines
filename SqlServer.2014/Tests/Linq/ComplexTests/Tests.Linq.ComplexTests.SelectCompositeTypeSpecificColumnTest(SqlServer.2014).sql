@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

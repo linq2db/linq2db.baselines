@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 WITH [CTE1_] ([c1])
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
-BeforeExecute
 -- SqlServer.2014
 
 WITH [CTE1_] ([c1])
@@ -38,7 +35,6 @@ SELECT
 FROM
 	[CTE1_] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 WITH [CTE1_] ([c1])

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	x.PersonID
 FROM
 	Patient x
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	Person x
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

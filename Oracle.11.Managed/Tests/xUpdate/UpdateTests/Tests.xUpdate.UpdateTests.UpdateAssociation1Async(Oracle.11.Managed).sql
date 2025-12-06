@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Parent"
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Child"
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 UPDATE
 	"Parent"

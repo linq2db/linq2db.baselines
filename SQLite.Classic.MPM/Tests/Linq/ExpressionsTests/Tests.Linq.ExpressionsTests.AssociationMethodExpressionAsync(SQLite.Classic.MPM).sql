@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -7,8 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	(

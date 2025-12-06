@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 5
 DECLARE @p Int -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @startId Int -- Int32
 SET     @startId = 5

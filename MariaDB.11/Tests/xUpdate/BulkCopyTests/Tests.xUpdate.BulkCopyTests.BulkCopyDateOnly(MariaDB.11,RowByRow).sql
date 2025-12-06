@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Date Datetime -- DateTime
 SET     @Date = '2021-01-01'
 
@@ -12,10 +11,10 @@ VALUES
 	@Date
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Date`
 FROM
 	`DateOnlyTable` `t1`

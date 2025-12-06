@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 100
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	Coalesce(x."Value1", :Value1) > 10
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

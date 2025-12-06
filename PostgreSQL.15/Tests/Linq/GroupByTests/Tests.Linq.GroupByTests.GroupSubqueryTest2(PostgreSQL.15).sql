@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	pmp1."ChildID"
@@ -14,7 +13,6 @@ FROM
 				pmp."ParentID"
 		) pmp_1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

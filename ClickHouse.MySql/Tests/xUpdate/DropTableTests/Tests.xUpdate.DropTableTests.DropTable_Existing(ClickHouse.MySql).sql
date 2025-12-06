@@ -1,13 +1,14 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 CREATE TABLE Table
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE Table

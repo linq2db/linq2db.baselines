@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Gender UniVarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > 4
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]

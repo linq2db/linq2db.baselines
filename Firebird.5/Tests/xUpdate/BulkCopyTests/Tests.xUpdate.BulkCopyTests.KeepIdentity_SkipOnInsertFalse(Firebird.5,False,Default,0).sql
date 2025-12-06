@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING
 	ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "AllTypes"
@@ -26,7 +24,6 @@ INSERT INTO "AllTypes"
 SELECT 200 FROM rdb$database UNION ALL
 SELECT 300 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
@@ -41,7 +38,6 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3

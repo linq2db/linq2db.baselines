@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 CREATE TABLE [Issue681Table2]
@@ -14,7 +12,6 @@ CREATE TABLE [Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DROP TABLE [Issue681Table2]

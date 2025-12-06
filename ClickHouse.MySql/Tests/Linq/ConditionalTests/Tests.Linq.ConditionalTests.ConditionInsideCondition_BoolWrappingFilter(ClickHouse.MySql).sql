@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	s.Value_1
@@ -17,7 +16,6 @@ FROM
 WHERE
 	s.Value_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -33,7 +31,6 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

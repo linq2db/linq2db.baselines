@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 5
 DECLARE @Value Int32
@@ -18,7 +17,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Value` = @Value
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 5

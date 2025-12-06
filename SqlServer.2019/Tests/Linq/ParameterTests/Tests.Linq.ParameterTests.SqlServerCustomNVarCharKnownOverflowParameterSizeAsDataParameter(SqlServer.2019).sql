@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'abcdeabcdeabcdeabcde1'
 

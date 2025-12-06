@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	g_2."ChildId",
@@ -17,7 +16,6 @@ GROUP BY
 	g_2."ChildId",
 	g_2."ParentId"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

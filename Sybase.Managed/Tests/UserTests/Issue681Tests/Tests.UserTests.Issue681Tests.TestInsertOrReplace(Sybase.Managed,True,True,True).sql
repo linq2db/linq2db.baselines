@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	@@SERVERNAME
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -12,7 +10,6 @@ SELECT TOP 1
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -20,7 +17,6 @@ SELECT TOP 1
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
@@ -52,7 +48,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 10

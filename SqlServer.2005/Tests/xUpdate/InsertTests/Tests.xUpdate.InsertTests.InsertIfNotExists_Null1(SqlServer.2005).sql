@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -21,7 +20,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 
 IF NOT EXISTS(

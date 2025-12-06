@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -22,8 +21,7 @@ FROM
 				t."ParentID" = 2
 		) id_1 ON id_1."ParentID" = m_1."ParentID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ParentID",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[c_1].[ParentID],
@@ -16,7 +15,6 @@ WHERE
 			[param].[ParentID] = [c_1].[ParentID] AND Coalesce([param].[Value1], -1) = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

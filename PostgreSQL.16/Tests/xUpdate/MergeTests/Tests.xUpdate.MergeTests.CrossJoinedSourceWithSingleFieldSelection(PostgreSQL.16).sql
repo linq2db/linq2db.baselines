@@ -1,24 +1,18 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Child" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"GrandChild" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -32,7 +26,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -46,7 +39,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
@@ -60,7 +52,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
@@ -74,7 +65,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
@@ -96,7 +86,6 @@ VALUES
 	:RightId
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "GrandChild" "Target"
@@ -122,7 +111,6 @@ VALUES
 	"Source"."RightId"
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -132,5 +120,3 @@ SELECT
 FROM
 	"GrandChild" t1
 
-BeforeExecute
-DisposeTransaction

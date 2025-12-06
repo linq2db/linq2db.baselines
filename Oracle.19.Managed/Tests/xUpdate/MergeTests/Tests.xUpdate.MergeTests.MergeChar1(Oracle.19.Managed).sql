@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -18,7 +15,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 3
@@ -58,5 +54,3 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
-BeforeExecute
-DisposeTransaction

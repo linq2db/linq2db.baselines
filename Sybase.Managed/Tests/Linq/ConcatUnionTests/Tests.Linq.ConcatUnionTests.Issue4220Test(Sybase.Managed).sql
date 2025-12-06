@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @AOnly UniVarChar(6) -- String
@@ -16,7 +15,6 @@ VALUES
 	@AOnly
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@BOnly
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

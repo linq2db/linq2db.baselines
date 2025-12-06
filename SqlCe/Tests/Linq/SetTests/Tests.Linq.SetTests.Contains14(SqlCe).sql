@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -17,7 +16,6 @@ SELECT
 		ELSE 0
 	END as [c1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2

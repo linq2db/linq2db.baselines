@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
 	`Parent` `w`
@@ -9,9 +8,9 @@ SET
 WHERE
 	`b`.`ChildID` = (
 		SELECT
-			MAX(`b2`.`ParentID`)
+			MAX(`t1`.`ParentID`)
 		FROM
-			`Child` `b2`
+			`Child` `t1`
 	) AND
 	`b`.`ChildID` = -1
 

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -24,7 +22,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'	'
@@ -42,7 +39,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'
@@ -62,7 +58,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
@@ -80,7 +75,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
@@ -98,7 +92,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
@@ -116,7 +109,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -134,7 +126,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -152,7 +143,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -170,7 +160,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -188,7 +177,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -206,7 +194,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -224,7 +211,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -242,7 +228,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -260,7 +245,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -278,7 +262,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -296,7 +279,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -314,7 +296,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
@@ -332,7 +313,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'　'
@@ -350,7 +330,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = char(0)
@@ -368,7 +347,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = NULL
@@ -386,7 +364,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
@@ -402,7 +379,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"ch"."ParentID",
@@ -7,7 +6,6 @@ SELECT FIRST 2
 FROM
 	"Child" "ch"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 3
@@ -16,8 +14,7 @@ SELECT FIRST 3
 FROM
 	"Child" "ch"
 
-BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"ch"."ParentID",
@@ -25,8 +22,7 @@ SELECT FIRST 2
 FROM
 	"Child" "ch"
 
-BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+-- Firebird.2.5 Firebird
 
 SELECT FIRST 3
 	"ch"."ParentID",

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

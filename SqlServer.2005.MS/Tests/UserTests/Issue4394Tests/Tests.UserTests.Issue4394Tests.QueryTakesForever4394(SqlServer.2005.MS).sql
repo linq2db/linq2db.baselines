@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[x_8].[Id],
@@ -186,7 +185,6 @@ FROM
 		) = [i8].[Id] AND [i8].[Status] < 0
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO PR_1598_Insert_Fluent_Table
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

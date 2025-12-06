@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[p].[ParentID] = @p AND [p].[Value1] = @p_1
 
-BeforeExecute
 -- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 2

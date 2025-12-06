@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1002
 DECLARE @FirmId Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@FirmId
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @DirectionId UniqueIdentifier -- Guid
 SET     @DirectionId = 'c5c0a778-694e-49d1-b1a0-f8ef5569c673'
@@ -52,7 +49,6 @@ VALUES
 	@DateRevoke
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -70,7 +66,6 @@ FROM
 WHERE
 	[r].[Id] = 1002
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

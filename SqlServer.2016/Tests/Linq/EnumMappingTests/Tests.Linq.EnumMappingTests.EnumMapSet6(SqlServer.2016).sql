@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 UPDATE
@@ -33,7 +30,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -43,7 +39,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 4
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @p Int -- Int32
 SET     @p = 102

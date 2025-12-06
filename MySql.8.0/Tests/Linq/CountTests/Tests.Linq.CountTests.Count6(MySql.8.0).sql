@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	COUNT(*)
@@ -11,7 +10,7 @@ FROM
 			`Child` `g_1`
 		GROUP BY
 			`g_1`.`ParentID`
-	) `g_2`
+	) `t1`
 WHERE
-	`g_2`.`ParentID` > 2
+	`t1`.`ParentID` > 2
 

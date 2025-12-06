@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @param VarWChar(4) -- String
 SET     @param = 'test'
 

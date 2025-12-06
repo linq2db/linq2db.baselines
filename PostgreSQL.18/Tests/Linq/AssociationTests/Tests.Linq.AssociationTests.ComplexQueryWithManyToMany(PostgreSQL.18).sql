@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 3
 DECLARE @id1 Integer -- Int32

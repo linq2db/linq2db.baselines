@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 WITH [CTE_1] ([Obj_Operator])
 AS
@@ -15,7 +14,6 @@ FROM
 	[CTE_1] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

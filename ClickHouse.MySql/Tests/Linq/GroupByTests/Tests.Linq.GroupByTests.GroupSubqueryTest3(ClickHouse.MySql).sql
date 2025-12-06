@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	pmp.ParentID
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	pmp.ParentID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

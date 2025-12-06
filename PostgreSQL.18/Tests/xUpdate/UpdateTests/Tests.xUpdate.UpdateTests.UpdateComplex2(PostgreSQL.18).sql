@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -26,7 +25,6 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -36,7 +34,6 @@ SET
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5

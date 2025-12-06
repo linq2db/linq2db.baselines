@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "Issue1303"
 (
@@ -14,7 +13,6 @@ VALUES
 	X'0405'
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -26,7 +24,6 @@ FROM
 WHERE
 	"t1".ID = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -38,7 +35,6 @@ FROM
 WHERE
 	"t1"."Array" = X'010203'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

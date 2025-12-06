@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 123
 DECLARE @FirstName UniVarChar(4) -- String
@@ -16,7 +15,6 @@ VALUES
 	@FirstName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

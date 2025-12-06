@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	EXISTS(
@@ -10,7 +9,6 @@ SELECT
 				LEFT JOIN (
 					SELECT
 						"c_1"."ParentID",
-						"c_1"."ChildID",
 						ROW_NUMBER() OVER (PARTITION BY "c_1"."ParentID" ORDER BY "c_1"."ParentID") as "rn"
 					FROM
 						"Child" "c_1"

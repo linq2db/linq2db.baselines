@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @take Int32
@@ -14,8 +13,7 @@ ORDER BY
 	`t1`.`ChildID` DESC
 LIMIT @skip, @take
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @take Int32

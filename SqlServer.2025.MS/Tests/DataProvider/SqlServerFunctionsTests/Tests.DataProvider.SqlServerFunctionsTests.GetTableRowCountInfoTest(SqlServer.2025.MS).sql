@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
 	[p].[object_id],
@@ -16,9 +15,6 @@ GROUP BY
 ORDER BY
 	[p].[object_id]
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = -345
@@ -36,7 +32,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -54,9 +49,7 @@ GROUP BY
 ORDER BY
 	[p].[object_id]
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT

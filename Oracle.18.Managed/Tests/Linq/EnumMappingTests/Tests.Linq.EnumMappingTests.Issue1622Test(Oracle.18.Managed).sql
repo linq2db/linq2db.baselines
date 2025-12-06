@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeText Varchar2(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	:SomeText
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -28,7 +26,6 @@ WHERE
 	e."SomeText" = 'Value1_suffix'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @offset Int32
 SET     @offset = -1
 
@@ -8,10 +7,10 @@ UPDATE
 SET
 	`t1`.`Field` = CAST(CAST(`t1`.`Field` AS SIGNED) + @offset AS UNSIGNED)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Field`
 FROM
 	`Issue4963Table` `t1`

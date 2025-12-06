@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -19,7 +18,6 @@ SET
 WHERE
 	[cross_1].[Id] = @id AND [a_AssociatedOptional].[Id] = [cross_1].[Id_1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

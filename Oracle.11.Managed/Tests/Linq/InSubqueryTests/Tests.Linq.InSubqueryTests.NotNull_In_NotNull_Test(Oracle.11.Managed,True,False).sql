@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
+	t.PK,
 	t.ID
 FROM
 	"test_in_1" t
@@ -15,18 +15,18 @@ WHERE
 			t.ID = p.ID
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1.PK,
 	t1.ID
 FROM
 	"test_in_1" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1.PK,
 	t1.ID
 FROM
 	"test_in_2" t1

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

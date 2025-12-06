@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[e].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" STARTING WITH 'Insert16'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @name Integer -- Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	"t1"."FirstName" STARTING WITH 'Insert16'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

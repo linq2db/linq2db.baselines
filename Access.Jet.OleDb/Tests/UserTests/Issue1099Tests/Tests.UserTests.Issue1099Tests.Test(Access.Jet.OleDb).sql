@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @personId Integer -- Int32
 SET     @personId = 1

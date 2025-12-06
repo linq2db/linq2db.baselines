@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
@@ -31,7 +31,6 @@ FROM
 	[TableWithData_source] [s]
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -41,7 +40,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_destination]', N'U') IS NOT NULL)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "UIntTable"
 (
@@ -20,7 +19,6 @@ VALUES
 	18446744073709551615
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -33,13 +31,11 @@ SELECT
 FROM
 	"UIntTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"UIntTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value16 Integer -- Int32
 SET     @value16 = 65535
@@ -73,7 +69,6 @@ VALUES
 	:value64N
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -86,12 +81,10 @@ SELECT
 FROM
 	"UIntTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -140,7 +133,6 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 	SELECT
@@ -157,7 +149,6 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -246,7 +237,6 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
 				     ) columns;
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 

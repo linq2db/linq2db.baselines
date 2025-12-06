@@ -1,19 +1,16 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1
 
 [TestData]..[Person_SelectByKey]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1

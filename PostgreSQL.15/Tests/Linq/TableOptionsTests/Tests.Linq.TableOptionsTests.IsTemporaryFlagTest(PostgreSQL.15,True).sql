@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE "IsTemporaryTable"
 (
 	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_IsTemporaryTable" PRIMARY KEY ("Id")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -17,7 +17,6 @@ SELECT
 FROM
 	"IsTemporaryTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "IsTemporaryTable"

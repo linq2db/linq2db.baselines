@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Parent]
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Child]
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 UPDATE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -21,7 +19,6 @@ SET
 	"Id" = 492,
 	"Value" = 123
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

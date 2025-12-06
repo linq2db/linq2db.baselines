@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[x].[PersonID]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[x].[FirstName] IN ('John')
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @st VarWChar(4) -- String
 SET     @st = 'John'

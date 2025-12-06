@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	InheritanceParent
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Data Integer(4) -- Int32
 SET     @Data = 1
@@ -20,7 +16,6 @@ SET
 WHERE
 	t1.InheritanceParentId = @Key1 AND t1.Name IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
@@ -42,7 +37,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -50,7 +44,6 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Data Integer(4) -- Int32
 SET     @Data = 1
@@ -64,7 +57,6 @@ SET
 WHERE
 	t1.InheritanceParentId = @Key1 AND t1.Name IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -72,5 +64,3 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
-DisposeTransaction

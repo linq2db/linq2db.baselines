@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @real Real -- Single
 SET     @real = 'NaN'::float4
@@ -26,7 +24,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @real Real -- Single
 SET     @real = '-Infinity'::float4
@@ -46,7 +43,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @real Real -- Single
 SET     @real = 'Infinity'::float4
@@ -66,7 +62,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @maxID Integer -- Int32
 SET     @maxID = 2

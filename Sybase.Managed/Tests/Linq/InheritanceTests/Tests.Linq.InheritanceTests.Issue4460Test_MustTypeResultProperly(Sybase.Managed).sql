@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code UniVarChar(10) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Surname
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

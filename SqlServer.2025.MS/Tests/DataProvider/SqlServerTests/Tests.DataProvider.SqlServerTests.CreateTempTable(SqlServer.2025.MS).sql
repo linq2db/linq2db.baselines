@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,12 +7,10 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 DROP TABLE [tempdb]..[#TempTable]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]

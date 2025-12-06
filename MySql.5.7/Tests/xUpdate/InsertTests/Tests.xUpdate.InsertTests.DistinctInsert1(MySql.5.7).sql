@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -9,7 +6,6 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` > 1000
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `LinqDataTypes`
@@ -30,7 +26,6 @@ FROM
 			`LinqDataTypes` `t1`
 	) `t2`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  

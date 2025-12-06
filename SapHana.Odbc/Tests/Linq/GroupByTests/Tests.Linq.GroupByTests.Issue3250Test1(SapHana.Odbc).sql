@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	(CAST(COUNT(*) AS NVarChar(11)) || ' items have not been processed, e.g. #' || Coalesce(CAST(MIN("g_1"."PersonID") AS NVarChar(11)), '')) || '.'

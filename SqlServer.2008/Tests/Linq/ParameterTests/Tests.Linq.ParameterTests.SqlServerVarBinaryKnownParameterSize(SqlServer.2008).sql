@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @p VarBinary(1) -- Binary
 SET     @p = 0x01
 

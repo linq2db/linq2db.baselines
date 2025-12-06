@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @dateTime DateTime
 SET     @dateTime = '1992-01-11 01:11:21.100'
 
@@ -11,7 +10,6 @@ WHERE
 	"t"."DateTimeValue" > ?
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @dateTime DateTime
 SET     @dateTime = '1993-01-11 01:11:21.100'

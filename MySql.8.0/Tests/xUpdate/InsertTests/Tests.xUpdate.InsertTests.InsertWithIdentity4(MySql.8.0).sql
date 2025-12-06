@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
@@ -33,12 +31,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
@@ -55,7 +51,6 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
@@ -81,12 +76,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'
@@ -103,7 +96,6 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  

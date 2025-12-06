@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [InheritanceFilter]
 (
@@ -20,7 +19,6 @@ VALUES
 (5,21,0,25,0,0,15,0),
 (6,22,0,26,0,0,0,16)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

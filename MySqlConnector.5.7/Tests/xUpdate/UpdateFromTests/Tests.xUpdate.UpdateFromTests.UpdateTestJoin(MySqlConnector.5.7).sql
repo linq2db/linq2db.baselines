@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @int1 Int32
 SET     @int1 = 11
 DECLARE @int2 Int32
@@ -19,7 +18,6 @@ SET
 WHERE
 	`t`.`id` <> @someId
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

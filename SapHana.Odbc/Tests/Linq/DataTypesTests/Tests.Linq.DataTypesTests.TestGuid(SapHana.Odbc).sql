@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- AnsiStringFixedLength
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"r"."Column" = ? AND "r"."ColumnNullable" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	"r"."Column" = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
 	"r"."ColumnNullable" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"GuidTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"GuidTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -117,7 +109,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -139,7 +130,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -151,13 +141,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"GuidTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -179,7 +167,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -201,7 +188,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

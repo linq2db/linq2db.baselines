@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[r].[Id],
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

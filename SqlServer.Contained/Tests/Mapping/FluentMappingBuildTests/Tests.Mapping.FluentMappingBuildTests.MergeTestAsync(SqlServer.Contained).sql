@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [FluentTemp]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -15,7 +13,6 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -33,8 +30,7 @@ VALUES
 	@Name
 )
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [FluentTemp] [Target]
 USING (VALUES
@@ -64,8 +60,7 @@ VALUES
 )
 ;
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [FluentTemp]
 

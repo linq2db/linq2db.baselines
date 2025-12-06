@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	ch.ParentID,
@@ -8,7 +7,6 @@ FROM
 	Child ch
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 	Child ch
 LIMIT 3
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 	Child ch
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

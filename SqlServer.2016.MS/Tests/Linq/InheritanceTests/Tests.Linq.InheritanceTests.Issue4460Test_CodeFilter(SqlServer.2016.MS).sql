@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child2'
@@ -42,7 +40,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

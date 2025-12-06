@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "SimpleBulkCopyTable" ("Id") VALUES (1)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL

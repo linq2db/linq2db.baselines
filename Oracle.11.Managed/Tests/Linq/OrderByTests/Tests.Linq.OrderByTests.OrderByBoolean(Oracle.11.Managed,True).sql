@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."FirstName",
@@ -15,7 +14,6 @@ ORDER BY
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

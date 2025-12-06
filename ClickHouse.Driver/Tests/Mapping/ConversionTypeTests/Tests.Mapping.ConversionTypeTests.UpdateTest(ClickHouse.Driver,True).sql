@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	TrimTestTable
@@ -8,7 +7,6 @@ UPDATE
 WHERE
 	ID = 3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -18,7 +16,6 @@ UPDATE
 WHERE
 	Data = '***XXX***'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -28,7 +25,6 @@ UPDATE
 WHERE
 	Data = '***HHH***'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

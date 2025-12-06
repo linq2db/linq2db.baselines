@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[g_2].[LastName],
-	[g_2].[COUNT_1]
+	[g_2].[cnt]
 FROM
 	(
 		SELECT
 			[a_Employee].[EmployeeID],
-			[a_Employee].[LastName],
-			COUNT(IIF([a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [COUNT_1]
+			COUNT(IIF([a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [cnt],
+			[a_Employee].[LastName]
 		FROM
 			[EmployeeTerritories] [g_1]
 				LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]

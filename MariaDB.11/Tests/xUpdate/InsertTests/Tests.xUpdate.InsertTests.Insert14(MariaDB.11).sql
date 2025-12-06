@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Person`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Person`
 (
@@ -30,8 +28,7 @@ VALUES
 	'M'
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -40,8 +37,7 @@ FROM
 WHERE
 	`p`.`FirstName` LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 WITH CTE_1 ("Obj_Operator")
 AS
@@ -16,7 +15,6 @@ FROM
 WHERE
 	ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

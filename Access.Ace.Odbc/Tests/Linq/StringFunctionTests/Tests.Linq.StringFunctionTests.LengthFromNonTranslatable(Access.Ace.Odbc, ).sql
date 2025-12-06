@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t].[Str],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[TestLengthModel] [t]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

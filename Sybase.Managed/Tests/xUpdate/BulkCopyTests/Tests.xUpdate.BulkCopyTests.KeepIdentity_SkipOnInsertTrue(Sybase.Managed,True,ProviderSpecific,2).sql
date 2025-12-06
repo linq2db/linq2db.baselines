@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,8 +13,7 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [KeepIdentityTest]
 (
@@ -25,7 +23,6 @@ INSERT INTO [KeepIdentityTest]
 SELECT 11,200 UNION ALL
 SELECT 21,300
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1
@@ -40,7 +37,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[ParentID],
@@ -16,7 +15,6 @@ WHERE
 			[x_1].[ParentID]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -7,7 +6,6 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2

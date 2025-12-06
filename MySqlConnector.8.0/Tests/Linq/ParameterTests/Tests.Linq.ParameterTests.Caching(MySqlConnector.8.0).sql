@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	`x`.`ParentID` = @p
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int32
 SET     @p = 3
@@ -35,7 +32,6 @@ FROM
 WHERE
 	`x`.`ParentID` = @p OR `x`.`ParentID` = @p_1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -44,7 +40,6 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int32
 SET     @p = 1
@@ -59,7 +54,6 @@ FROM
 WHERE
 	`x`.`ParentID` = @p OR `x`.`ParentID` = @p_1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

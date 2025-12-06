@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`ParentID`,
@@ -7,9 +6,7 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

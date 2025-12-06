@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "DropTableTestID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "DropTableTestID"
@@ -14,7 +12,6 @@ CREATE COLUMN TABLE "DropTableTestID"
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "DropTableTestID"
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	"DropTableTestID" "t"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "DropTableTestID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

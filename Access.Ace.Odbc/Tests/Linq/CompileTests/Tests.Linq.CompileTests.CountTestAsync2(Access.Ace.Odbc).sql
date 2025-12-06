@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = ?
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = -1
 

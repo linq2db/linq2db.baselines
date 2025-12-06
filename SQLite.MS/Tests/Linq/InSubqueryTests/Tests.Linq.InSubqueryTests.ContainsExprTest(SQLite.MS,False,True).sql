@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @n  -- Int32
 SET     @n = 1
 
@@ -16,7 +15,6 @@ WHERE
 			[Child] [c_1]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

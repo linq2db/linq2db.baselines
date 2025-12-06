@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +12,6 @@ FROM
 			(3), (4)
 		) [n]([ID]) ON [p].[PersonID] = [n].[ID]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int32
 SET     @value = 2
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	NOT `s`.`Int` <=> @value
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int32
 SET     @value = 2
@@ -22,7 +20,6 @@ FROM
 WHERE
 	NOT `s`.`NullableInt` <=> @value
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int32
 SET     @value = 2
@@ -34,7 +31,6 @@ FROM
 WHERE
 	`s`.`Int` <=> @value
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int32
 SET     @value = 2

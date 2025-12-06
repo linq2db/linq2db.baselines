@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` > 1000
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @arr Blob -- Binary
 SET     @arr = NULL
@@ -25,7 +23,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -42,7 +39,6 @@ WHERE
 	`t`.`ID` = 1001
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  

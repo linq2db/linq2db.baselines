@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[t].[ParentID],
@@ -14,7 +13,6 @@ SELECT
 FROM
 	[Parent] [t]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

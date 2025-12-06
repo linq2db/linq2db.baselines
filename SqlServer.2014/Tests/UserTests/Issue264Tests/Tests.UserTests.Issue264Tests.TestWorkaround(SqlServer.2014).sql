@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	COUNT(*)
@@ -20,7 +19,6 @@ FROM
 			[t2].[year_1]
 	) [t3]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @DurationID Int -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @personId Int -- Int32
 SET     @personId = 1

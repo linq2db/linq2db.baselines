@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.PersonID + y.item
@@ -10,7 +9,6 @@ FROM
 			UNION ALL
 			SELECT 3) y
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

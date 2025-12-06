@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(10) -- String
 SET     @value = '%anything%'
 

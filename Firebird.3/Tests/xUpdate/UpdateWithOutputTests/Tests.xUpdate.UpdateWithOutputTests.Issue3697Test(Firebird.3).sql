@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
@@ -23,7 +21,6 @@ WHERE
 RETURNING
 	NEW."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE

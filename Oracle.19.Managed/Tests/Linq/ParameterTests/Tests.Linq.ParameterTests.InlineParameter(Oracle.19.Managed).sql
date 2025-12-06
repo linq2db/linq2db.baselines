@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."ParentID",
@@ -10,7 +9,6 @@ WHERE
 	p."ParentID" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

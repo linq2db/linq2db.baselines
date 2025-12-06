@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"x"."Id",
@@ -26,7 +25,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

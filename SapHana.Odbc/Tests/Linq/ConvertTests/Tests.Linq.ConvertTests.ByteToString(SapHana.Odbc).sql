@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."ID"
+	CAST(CAST("p"."ID" AS TinyInt) AS NVarChar(3))
 FROM
 	"LinqDataTypes" "p"
 WHERE

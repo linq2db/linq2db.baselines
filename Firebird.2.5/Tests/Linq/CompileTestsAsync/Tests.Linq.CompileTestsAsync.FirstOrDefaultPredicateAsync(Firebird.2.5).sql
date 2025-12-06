@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿-- Firebird.2.5 Firebird
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

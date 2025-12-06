@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	i.Id,
 	i.Name,
 	i.ParentId
 FROM

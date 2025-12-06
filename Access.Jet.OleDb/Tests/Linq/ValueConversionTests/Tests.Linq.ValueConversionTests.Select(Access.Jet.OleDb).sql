@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[t1].[Id],
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	[t].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	[t2].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

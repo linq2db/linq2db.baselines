@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[x].[Discontinued],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[Products] [x]
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT

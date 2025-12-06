@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	x."FirstName",
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	x."PersonID" DESC
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 UPDATE
 	"UpdatedEntities"
@@ -24,7 +23,6 @@ WHERE
 			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

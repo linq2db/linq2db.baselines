@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "LinqDataTypes" "Target"
 USING (
@@ -78,5 +75,3 @@ VALUES
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."ID" > 5 THEN DELETE
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FirstName Text(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Text(1) -- String

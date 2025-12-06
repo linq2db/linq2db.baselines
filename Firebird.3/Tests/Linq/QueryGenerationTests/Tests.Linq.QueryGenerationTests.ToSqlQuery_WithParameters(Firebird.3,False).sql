@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"p"."PersonID" = @id
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 1

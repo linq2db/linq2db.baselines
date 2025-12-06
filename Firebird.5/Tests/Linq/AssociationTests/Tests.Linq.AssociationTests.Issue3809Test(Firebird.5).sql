@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"m_1"."ParentID",
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	"d"."ChildID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

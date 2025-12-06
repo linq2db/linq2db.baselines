@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 WITH CTE_1 AS
 (
@@ -46,7 +45,6 @@ FROM
 	CTE_1 t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

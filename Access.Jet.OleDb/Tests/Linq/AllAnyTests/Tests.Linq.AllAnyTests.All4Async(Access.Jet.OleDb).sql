@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*) = 0

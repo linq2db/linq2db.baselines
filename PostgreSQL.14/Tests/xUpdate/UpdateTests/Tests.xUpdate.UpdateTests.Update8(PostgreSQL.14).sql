@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -16,8 +15,7 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1002
 DECLARE @ParentID Integer -- Int32
@@ -30,8 +28,7 @@ SET
 WHERE
 	"Parent"."ParentID" = :ParentID
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 

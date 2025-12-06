@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int1 Int -- Int32
@@ -40,7 +39,6 @@ VALUES
 	@String3
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -82,7 +80,6 @@ VALUES
 	@String3
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

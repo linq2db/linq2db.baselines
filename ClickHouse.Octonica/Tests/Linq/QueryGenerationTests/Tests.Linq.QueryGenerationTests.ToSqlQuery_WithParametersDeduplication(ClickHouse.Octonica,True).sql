@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.FirstName = 'John' OR p.LastName = 'John'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

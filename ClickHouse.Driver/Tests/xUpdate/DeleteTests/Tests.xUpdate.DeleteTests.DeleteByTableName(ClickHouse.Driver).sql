@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO xxPerson
 (
@@ -18,7 +17,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	xxPerson t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 	xxPerson t1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -47,7 +43,6 @@ ALTER TABLE
 DELETE WHERE
 	PersonID = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

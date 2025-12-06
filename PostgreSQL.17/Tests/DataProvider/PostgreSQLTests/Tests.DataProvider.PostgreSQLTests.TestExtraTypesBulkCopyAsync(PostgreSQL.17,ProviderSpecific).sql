@@ -1,8 +1,6 @@
-﻿BeforeExecute
-INSERT ASYNC BULK "ExtraBulkCopyTypesTable"(Id, Byte, SByte, Int16, UInt16, Int32, UInt32, Int64, UInt64, ByteT, SByteT, Int16T, UInt16T, Int32T, UInt32T, Int64T, UInt64T)
+﻿INSERT ASYNC BULK "ExtraBulkCopyTypesTable"(Id, Byte, SByte, Int16, UInt16, Int32, UInt32, Int64, UInt64, ByteT, SByteT, Int16T, UInt16T, Int32T, UInt32T, Int64T, UInt64T)
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",

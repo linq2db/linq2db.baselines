@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 

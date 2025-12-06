@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Issue1303"
 (
@@ -14,7 +13,6 @@ VALUES
 	HEXTORAW('0405')
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	t1.ID = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	t1."Array" = HEXTORAW('010203')
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

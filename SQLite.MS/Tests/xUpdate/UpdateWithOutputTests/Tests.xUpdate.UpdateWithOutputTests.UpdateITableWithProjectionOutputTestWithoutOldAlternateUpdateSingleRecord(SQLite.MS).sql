@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 UPDATE
 	[DestinationTable]
 SET
-	[Id] = [t1].[Id],
 	[Value] = [t1].[Value],
 	[ValueStr] = [t1].[ValueStr]
 FROM

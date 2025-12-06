@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[x].[PersonID] + [y].[item] as [c1]
@@ -10,7 +9,6 @@ FROM
 			UNION ALL
 			SELECT 3 AS [item]) [y]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

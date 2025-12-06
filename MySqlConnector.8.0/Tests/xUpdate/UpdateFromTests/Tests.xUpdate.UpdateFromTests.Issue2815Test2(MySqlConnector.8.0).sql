@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
 	`Issue2815Table1` `ext`
@@ -19,10 +18,10 @@ SET
 WHERE
 	`ext`.`NOT_HANDLED` = 2 AND `ext`.`TRANS_CHANNEL` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`SRC_BIC`,
 	`t1`.`DES_BIC`,
 	`t1`.`IDF`,

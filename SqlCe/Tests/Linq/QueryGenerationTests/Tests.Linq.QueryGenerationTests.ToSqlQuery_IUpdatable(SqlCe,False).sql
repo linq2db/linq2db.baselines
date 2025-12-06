@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @newValue Int -- Int32
 SET     @newValue = 123
@@ -22,7 +20,6 @@ UPDATE
 SET
 	[Value] = @newValue
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @text NVarChar(3) -- String
 SET     @text = '123'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
@@ -44,7 +41,6 @@ SELECT TOP 2
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -54,7 +50,6 @@ DELETE FROM
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Issue1303"
 (
@@ -14,7 +13,6 @@ VALUES
 	E'\\x0405'::bytea
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	t1."ID" = 1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	t1."Array" = E'\\x010203'::bytea
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

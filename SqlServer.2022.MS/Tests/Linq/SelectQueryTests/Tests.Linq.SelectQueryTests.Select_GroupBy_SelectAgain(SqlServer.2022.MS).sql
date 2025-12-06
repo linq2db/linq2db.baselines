@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -9,13 +8,13 @@ SELECT
 	COUNT(*) OVER(),
 	[x].[Key_1],
 	[x].[Count_1],
-	[x].[MAX_1]
+	[x].[HighestFirstName]
 FROM
 	(
 		SELECT
 			[summary].[LastName] as [Key_1],
 			COUNT(*) as [Count_1],
-			MAX([summary].[FirstName]) as [MAX_1]
+			MAX([summary].[FirstName]) as [HighestFirstName]
 		FROM
 			[Person] [summary]
 		GROUP BY

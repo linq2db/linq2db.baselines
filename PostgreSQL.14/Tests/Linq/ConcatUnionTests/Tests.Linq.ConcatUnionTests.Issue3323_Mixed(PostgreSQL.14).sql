@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Issue3323Table"
 (
 	"Id",
-	"FistName",
+	"FirstName",
 	"LastName",
 	"Text"
 )
@@ -16,12 +15,11 @@ VALUES
 	'text'
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
-	r."FistName" || ' ' || r."LastName"
+	r."FirstName" || ' ' || r."LastName"
 FROM
 	"Issue3323Table" r
 UNION ALL
@@ -31,8 +29,7 @@ SELECT
 FROM
 	"Issue3323Table" r_1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id" + 1,
@@ -42,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	r_1."Id",
-	r_1."FistName" || ' ' || r_1."LastName"
+	r_1."FirstName" || ' ' || r_1."LastName"
 FROM
 	"Issue3323Table" r_1
 

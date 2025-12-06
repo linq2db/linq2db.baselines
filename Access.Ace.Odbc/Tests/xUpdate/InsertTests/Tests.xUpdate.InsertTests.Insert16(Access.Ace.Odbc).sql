@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[FirstName] LIKE 'Insert16%'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert16%'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	CAST([t].[MoneyValue] * 1000 AS Decimal(10, 4))

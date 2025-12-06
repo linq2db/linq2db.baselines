@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"m_1"."PersonID",
@@ -13,9 +10,6 @@ SELECT
 FROM
 	"Person" "m_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -25,9 +19,6 @@ FROM
 GROUP BY
 	"t1"."PersonID"
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -40,9 +31,6 @@ SELECT
 FROM
 	"Person" "m_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

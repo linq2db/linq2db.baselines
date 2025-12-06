@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer -- Int32

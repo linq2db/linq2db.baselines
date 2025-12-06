@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -52,7 +50,6 @@ WHERE
 	`e`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 2
@@ -86,7 +83,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -106,7 +102,6 @@ WHERE
 	`e`.`Id` = 2
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 3
@@ -156,7 +151,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -176,7 +170,6 @@ WHERE
 	`e`.`Id` = 3
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

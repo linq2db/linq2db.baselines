@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	[Person] [x]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

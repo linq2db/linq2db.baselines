@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = NULL
 DECLARE @p_1 Int -- Int32
@@ -13,7 +12,6 @@ FROM
 		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Interpolation2*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -28,7 +26,6 @@ FROM
 		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Interpolation2*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = NULL
@@ -43,7 +40,6 @@ FROM
 		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Interpolation2*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 2
@@ -58,7 +54,6 @@ FROM
 		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Interpolation2*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 3

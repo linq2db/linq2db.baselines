@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TrimTestTable"
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TrimTestTable"
@@ -26,7 +24,6 @@ VALUES
 	'***HHH***'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "TrimTestTable"
@@ -40,7 +37,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -51,7 +47,6 @@ FROM
 ORDER BY
 	"r"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

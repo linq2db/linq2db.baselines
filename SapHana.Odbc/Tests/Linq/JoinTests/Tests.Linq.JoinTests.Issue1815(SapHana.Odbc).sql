@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."InId",
@@ -18,7 +17,6 @@ WHERE
 	"t1"."InId" = 1
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[ParentID],
@@ -7,9 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

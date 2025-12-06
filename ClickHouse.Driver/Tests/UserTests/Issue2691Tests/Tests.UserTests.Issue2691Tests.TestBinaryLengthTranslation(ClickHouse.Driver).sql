@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue2691Table
 (
@@ -14,7 +13,6 @@ VALUES
 	'\x01\x02\x03\x04\x05\x06'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	Issue2691Table x
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -30,7 +27,6 @@ SELECT
 FROM
 	Issue2691Table x
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ SELECT
 FROM
 	Issue2691Table x
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

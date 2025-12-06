@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @value Double
 SET     @value = NULL
 
@@ -10,12 +9,11 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(@value AS Float) as "Value_1"
+			CAST(@value AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @value Double
 SET     @value = 3147483648
@@ -27,7 +25,7 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(@value AS Float) as "Value_1"
+			CAST(@value AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"

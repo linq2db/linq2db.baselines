@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_DropTableTestID')) THEN
@@ -10,7 +9,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "DropTableTestID"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -35,7 +33,6 @@ EXECUTE BLOCK AS BEGIN
 	';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "DropTableTestID"
@@ -47,7 +44,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -56,7 +52,6 @@ SELECT
 FROM
 	"DropTableTestID" "t"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -65,7 +60,6 @@ EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TABLE "DropTableTestID"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

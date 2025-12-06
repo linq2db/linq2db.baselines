@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [LinqDataTypes] [Target]

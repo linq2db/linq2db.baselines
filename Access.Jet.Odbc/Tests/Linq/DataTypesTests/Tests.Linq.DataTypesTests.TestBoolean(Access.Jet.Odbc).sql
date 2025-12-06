@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Column Bit -- Boolean
 SET     @Column = False
 DECLARE @ColumnNullable Bit -- Boolean
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = ? AND [r].[ColumnNullable] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	[r].[Column] = False AND [r].[ColumnNullable] = True
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -116,7 +108,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -138,7 +129,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -150,13 +140,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -178,7 +166,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -200,7 +187,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

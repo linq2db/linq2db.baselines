@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -12,8 +10,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 	`Value` INT NOT NULL
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `CreateIfNotExistsTable`
 (
@@ -26,8 +23,7 @@ VALUES
 	2
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -35,8 +31,7 @@ SELECT
 FROM
 	`CreateIfNotExistsTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -44,13 +39,11 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 	`Value` INT NOT NULL
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

@@ -1,7 +1,6 @@
-﻿BeginTransactionAsync(RepeatableRead)
+﻿
 
-
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[m_1].[ProductId],
@@ -31,7 +30,7 @@ FROM
 
 
 
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[m_1].[OrderID],
@@ -59,10 +58,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[e].[IsDeleted],

@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."ParentID",
 	d_1."Key_1",
-	d_1."ToValue"
+	d_1."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +14,7 @@ FROM
 		INNER JOIN LATERAL (
 			SELECT
 				d."ParentID" as "Key_1",
-				STRING_AGG(d."ChildID"::text, ', ') as "ToValue"
+				STRING_AGG(d."ChildID"::text, ', ') as "Children"
 			FROM
 				"Child" d
 			WHERE
@@ -26,9 +23,6 @@ FROM
 				d."ParentID"
 		) d_1 ON 1=1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

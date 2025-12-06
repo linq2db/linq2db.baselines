@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,8 +11,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 

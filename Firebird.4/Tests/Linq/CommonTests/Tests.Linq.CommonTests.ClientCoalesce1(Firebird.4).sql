@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 100
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	Coalesce("x"."Value1", CAST(@Value1 AS Int)) > 10
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

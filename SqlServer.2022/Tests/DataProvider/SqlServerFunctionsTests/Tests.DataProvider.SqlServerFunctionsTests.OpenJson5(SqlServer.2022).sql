@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @json NVarChar(4000) -- String
 SET     @json = N'{ "test" : [ 10, 20 ] }'
 DECLARE @path NVarChar(4000) -- String

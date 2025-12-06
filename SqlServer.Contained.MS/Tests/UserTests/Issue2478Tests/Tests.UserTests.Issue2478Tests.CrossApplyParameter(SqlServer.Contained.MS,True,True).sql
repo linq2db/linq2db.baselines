@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[q].[ParentID],
@@ -19,7 +18,6 @@ FROM
 WHERE
 	[c_2].[Count_1] > 0
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

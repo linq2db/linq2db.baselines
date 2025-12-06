@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -16,11 +15,9 @@ WHERE
 				LEFT JOIN "AssociatedTable" "a_AssociatedOptional" ON "t1"."Id" = "a_AssociatedOptional"."Id"
 				LEFT JOIN "MainTable" "a_MainOptional" ON "a_AssociatedOptional"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"t1"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id" AND
-			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
+			"t1"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

@@ -1,15 +1,13 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
 FROM
-	[Child] [p]
-		INNER JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
+	[Child] [ch]
+		INNER JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

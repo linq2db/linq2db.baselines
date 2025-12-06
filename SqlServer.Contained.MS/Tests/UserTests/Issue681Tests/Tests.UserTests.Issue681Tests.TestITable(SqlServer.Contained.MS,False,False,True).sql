@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

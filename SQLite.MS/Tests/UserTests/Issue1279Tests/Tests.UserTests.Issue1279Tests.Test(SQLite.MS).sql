@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = 'P'
 
@@ -12,7 +11,6 @@ VALUES
 	@CharFld
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

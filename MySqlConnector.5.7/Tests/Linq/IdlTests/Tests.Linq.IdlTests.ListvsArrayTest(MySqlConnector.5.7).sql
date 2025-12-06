@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`x`.`PersonID`
@@ -8,7 +7,6 @@ FROM
 WHERE
 	`x`.`FirstName` IN ('John')
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @st VarChar(4) -- String
 SET     @st = 'John'

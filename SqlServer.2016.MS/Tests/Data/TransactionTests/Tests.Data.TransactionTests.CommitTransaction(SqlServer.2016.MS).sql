@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 UPDATE
@@ -28,9 +24,7 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)

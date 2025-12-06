@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[m_1].[Id],
@@ -17,9 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

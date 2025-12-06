@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Has Bit -- Boolean
 SET     @Has = 1
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1

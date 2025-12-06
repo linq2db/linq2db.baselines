@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
@@ -35,7 +33,6 @@ SET
 WHERE
 	`p`.`Id` = 0
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

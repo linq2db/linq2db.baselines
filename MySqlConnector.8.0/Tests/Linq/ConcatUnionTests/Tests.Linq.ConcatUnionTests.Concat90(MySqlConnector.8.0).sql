@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -10,7 +9,6 @@ FROM
 	`TestEntity1` `t1`
 		LEFT JOIN `TestEntity2` `t2` ON `t1`.`Id` = `t2`.`Id`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	`t1`.`Id` IS NULL
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

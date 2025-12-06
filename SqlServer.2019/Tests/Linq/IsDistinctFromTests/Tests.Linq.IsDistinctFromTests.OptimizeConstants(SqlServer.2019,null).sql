@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	COUNT(*)
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TrimTestTable" "Target"
 USING (VALUES
@@ -28,7 +27,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TrimTestTable" "Target"
@@ -58,7 +56,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -69,7 +66,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

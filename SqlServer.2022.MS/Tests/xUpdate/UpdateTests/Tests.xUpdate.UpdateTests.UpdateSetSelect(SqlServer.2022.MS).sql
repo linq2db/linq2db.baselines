@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 UPDATE
@@ -21,7 +19,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1

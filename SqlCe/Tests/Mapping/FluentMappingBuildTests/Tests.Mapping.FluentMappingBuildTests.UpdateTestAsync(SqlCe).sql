@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -30,8 +30,7 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName NVarChar(4) -- String
@@ -45,8 +44,7 @@ SET
 WHERE
 	[FluentTemp].[ID] = 1
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 DROP TABLE [FluentTemp]
 

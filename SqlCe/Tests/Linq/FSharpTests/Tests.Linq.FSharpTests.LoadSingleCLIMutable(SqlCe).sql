@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (2)
 	[p].[PersonID] as [ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

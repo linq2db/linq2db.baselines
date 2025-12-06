@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,8 +11,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @addition Integer -- Int32
 SET     @addition = 123
 
@@ -28,8 +26,7 @@ SELECT
 FROM
 	"TableWithIdentitySrc" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

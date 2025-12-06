@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Child`.`ChildID` > 1000
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1001
@@ -25,7 +23,6 @@ VALUES
 	@ParentID
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1001
@@ -37,7 +34,6 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @id
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  

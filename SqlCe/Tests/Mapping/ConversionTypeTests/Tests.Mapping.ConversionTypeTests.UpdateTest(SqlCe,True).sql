@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 UPDATE
 	[TrimTestTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

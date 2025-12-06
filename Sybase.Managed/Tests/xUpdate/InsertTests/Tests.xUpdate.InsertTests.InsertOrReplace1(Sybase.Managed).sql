@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName UniVarChar(7) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
@@ -58,7 +56,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
@@ -90,7 +87,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
@@ -122,7 +118,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Has Char -- String
 SET     @Has = '1'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING
 	"Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 1

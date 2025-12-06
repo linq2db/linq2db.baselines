@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
@@ -46,7 +43,6 @@ VALUES
 )
 ON CONFLICT ([PersonID]) DO NOTHING
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
@@ -59,7 +55,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
@@ -76,7 +71,6 @@ VALUES
 )
 ON CONFLICT ([PersonID]) DO NOTHING
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5

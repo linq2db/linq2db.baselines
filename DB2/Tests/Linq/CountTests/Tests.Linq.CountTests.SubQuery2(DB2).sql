@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	CASE
@@ -15,9 +14,9 @@ SELECT
 			SELECT
 				COUNT(*)
 			FROM
-				"Child" "c_1"
+				"Child" "a_Children_1"
 			WHERE
-				"p"."ParentID" = "c_1"."ParentID"
+				"p"."ParentID" = "a_Children_1"."ParentID"
 		)
 	END
 FROM

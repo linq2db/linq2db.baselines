@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	("r"."One" = "r"."One") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	("r"."Zero" = "r"."Zero") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	("r"."Null" = "r"."Null") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	("r"."One" = "r"."Zero") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	("r"."One" = "r"."Null") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	("r"."Zero" = "r"."Null") = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	("r"."One" = "r"."One") <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	("r"."Zero" = "r"."Zero") <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	("r"."Null" = "r"."Null") <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	("r"."One" = "r"."Zero") <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	("r"."One" = "r"."Null") <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Code Integer(4) -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Child1Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Child2Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	@Grandchild11Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -94,7 +90,6 @@ VALUES
 	@Grandchild12Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
@@ -120,7 +115,6 @@ VALUES
 	@Grandchild21Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
@@ -146,7 +140,6 @@ VALUES
 	@Grandchild22Field
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

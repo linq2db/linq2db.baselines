@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`nm`.`MiddleName`
@@ -8,8 +7,7 @@ FROM
 WHERE
 	CHAR_LENGTH(`nm`.`MiddleName`) <> 0 OR `nm`.`MiddleName` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`FirstName`,

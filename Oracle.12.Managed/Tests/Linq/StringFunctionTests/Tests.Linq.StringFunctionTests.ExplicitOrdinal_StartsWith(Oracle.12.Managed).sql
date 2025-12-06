@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"CollatedTable" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	:CaseInsensitive
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	r."CaseSensitive" LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	r."CaseInsensitive" LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	r."CaseSensitive" LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

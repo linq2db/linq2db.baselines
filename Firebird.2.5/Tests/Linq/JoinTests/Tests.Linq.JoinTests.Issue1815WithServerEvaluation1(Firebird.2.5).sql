@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"t1"."InId",
@@ -17,7 +16,6 @@ FROM
 WHERE
 	"t1"."InId" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

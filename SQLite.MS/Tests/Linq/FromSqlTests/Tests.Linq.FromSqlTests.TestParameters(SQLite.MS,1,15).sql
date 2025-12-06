@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p  -- Int64
 SET     @p = 5
 DECLARE @p_1  -- Int32
@@ -19,7 +18,6 @@ WHERE
 ORDER BY
 	[c_1].[id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @startId  -- Int32
 SET     @startId = 5

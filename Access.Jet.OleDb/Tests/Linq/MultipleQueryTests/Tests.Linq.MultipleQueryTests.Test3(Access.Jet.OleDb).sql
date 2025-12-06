@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[t1].[ParentID],
@@ -9,9 +6,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

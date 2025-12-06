@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
-WITH RECURSIVE CTE_1 ("Id2", "Id1")
+WITH CTE_1 ("Id2", "Id1")
 AS
 (
 	SELECT

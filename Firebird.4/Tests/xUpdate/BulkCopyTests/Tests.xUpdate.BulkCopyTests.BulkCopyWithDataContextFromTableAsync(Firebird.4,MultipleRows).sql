@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+﻿-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -7,8 +6,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 SELECT 1 FROM rdb$database
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -16,8 +14,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 SELECT 2 FROM rdb$database
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -25,8 +22,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 SELECT 3 FROM rdb$database
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -34,8 +30,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 SELECT 10 FROM rdb$database
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -43,8 +38,7 @@ INSERT INTO "SimpleBulkCopyTable"
 )
 SELECT 20 FROM rdb$database
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (

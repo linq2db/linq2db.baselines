@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Field1 VarChar(4) -- String
 SET     @Field1 = 'test'
@@ -46,7 +43,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

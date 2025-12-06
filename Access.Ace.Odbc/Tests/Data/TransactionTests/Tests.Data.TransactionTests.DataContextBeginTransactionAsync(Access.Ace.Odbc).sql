@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],
@@ -7,9 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	?
 )
 
-BeforeExecute
-DisposeTransaction

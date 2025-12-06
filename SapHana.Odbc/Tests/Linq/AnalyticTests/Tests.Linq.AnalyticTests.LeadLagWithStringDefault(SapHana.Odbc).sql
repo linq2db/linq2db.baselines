@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	LEAD("p"."ProcessName", 1, 'None') OVER(ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

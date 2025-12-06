@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
@@ -9,36 +6,28 @@ SELECT
 	[d].[Amount],
 	[d].[Currency]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[Id]
-		FROM
-			[TransactionEntity] [x]
-		WHERE
-			EXISTS(
-				SELECT
-					[a_Lines].[Currency]
-				FROM
-					[LineEntity] [a_Lines]
-				WHERE
-					[x].[Id] = [a_Lines].[TransactionId]
-				INTERSECT
-				SELECT
-					[t1].[item]
-				FROM
-					(
-						SELECT NULL [item] WHERE 1 = 0
-						UNION ALL
-						VALUES
-							('A'), ('B')
-						) [t1]
-			)
-	) [m_1]
+	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
+WHERE
+	EXISTS(
+		SELECT
+			[a_Lines].[Currency]
+		FROM
+			[LineEntity] [a_Lines]
+		WHERE
+			[m_1].[Id] = [a_Lines].[TransactionId]
+		INTERSECT
+		SELECT
+			[t1].[item]
+		FROM
+			(
+				SELECT NULL [item] WHERE 1 = 0
+				UNION ALL
+				VALUES
+					('A'), ('B')
+				) [t1]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

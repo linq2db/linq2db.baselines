@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent564
 (
@@ -12,7 +11,6 @@ VALUES
 	'SomeValue'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent564
@@ -26,7 +24,6 @@ VALUES
 	911
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

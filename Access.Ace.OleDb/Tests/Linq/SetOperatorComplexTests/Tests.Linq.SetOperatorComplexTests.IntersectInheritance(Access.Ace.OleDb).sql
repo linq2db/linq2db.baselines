@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT DISTINCT
 	[a_Book].[BookId],
@@ -21,9 +20,6 @@ WHERE
 			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
 	)
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -38,9 +34,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON ([d].[FkAuthorId] = [m_1].[AuthorId]))
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

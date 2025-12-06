@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"g_2"."ChildId",
@@ -17,7 +16,6 @@ GROUP BY
 	"g_2"."ChildId",
 	"g_2"."ParentId"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

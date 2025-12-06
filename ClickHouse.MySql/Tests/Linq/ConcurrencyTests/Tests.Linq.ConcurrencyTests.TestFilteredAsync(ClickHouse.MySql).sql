@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO ConcurrencyFiltered
 (
@@ -14,7 +13,6 @@ VALUES
 	'initial'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -24,8 +22,7 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	ConcurrencyFiltered
@@ -35,7 +32,6 @@ UPDATE
 WHERE
 	Id = 2 AND Id = 1 AND Stamp = -10
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -45,8 +41,7 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	ConcurrencyFiltered
@@ -56,7 +51,6 @@ UPDATE
 WHERE
 	Id = 1 AND Id = 1 AND Stamp = -10
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -66,15 +60,13 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	ConcurrencyFiltered
 DELETE WHERE
 	Id = 2 AND Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -84,15 +76,13 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	ConcurrencyFiltered
 DELETE WHERE
 	Id = 1 AND Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

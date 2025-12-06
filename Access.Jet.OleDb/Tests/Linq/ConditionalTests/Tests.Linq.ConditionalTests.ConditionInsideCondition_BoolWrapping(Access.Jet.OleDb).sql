@@ -1,14 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	IIF([p].[ParentID] MOD 2 = 0, [p].[ParentID] MOD 3 = 0, IIF([p].[ParentID] MOD 4 = 0, [p].[ParentID] > 0, [p].[ParentID] < 5))
 FROM
 	[Parent] [p]
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -24,9 +20,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

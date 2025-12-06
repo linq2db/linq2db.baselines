@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @value Integer -- Int32
 SET     @value = 123
 
@@ -12,7 +11,6 @@ VALUES
 	@value
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

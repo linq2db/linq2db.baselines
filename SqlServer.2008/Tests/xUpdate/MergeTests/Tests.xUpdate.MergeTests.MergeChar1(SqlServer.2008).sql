@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 INSERT INTO [AllTypes]
 (
@@ -16,7 +13,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 3
@@ -63,5 +59,3 @@ VALUES
 )
 ;
 
-BeforeExecute
-DisposeTransaction

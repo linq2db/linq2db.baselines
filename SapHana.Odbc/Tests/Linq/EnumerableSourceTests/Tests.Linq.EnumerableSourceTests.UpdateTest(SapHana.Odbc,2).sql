@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 UPDATE
 	"TableToInsert"
@@ -30,7 +29,6 @@ WHERE
 			"TableToInsert"."Id" = "t"."Id"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

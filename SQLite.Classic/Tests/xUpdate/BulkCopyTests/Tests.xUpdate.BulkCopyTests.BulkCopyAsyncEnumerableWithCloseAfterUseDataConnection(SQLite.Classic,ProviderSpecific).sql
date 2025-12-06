@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (

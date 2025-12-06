@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t.Str,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	TestLengthModel t
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

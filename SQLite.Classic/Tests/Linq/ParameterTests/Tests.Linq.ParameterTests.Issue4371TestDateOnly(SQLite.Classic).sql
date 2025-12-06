@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @ColumnDO VarChar(10) -- AnsiString
 SET     @ColumnDO = '2020-02-29'
 
@@ -12,7 +11,6 @@ VALUES
 	@ColumnDO
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @dt VarChar(10) -- AnsiString
 SET     @dt = '2020-02-29'

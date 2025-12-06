@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [Person]
 (
@@ -14,17 +13,15 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [c_1]
 WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -34,11 +31,10 @@ SET
 WHERE
 	[Person].[LastName] = 'Limonadovy'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [c_1]
 WHERE

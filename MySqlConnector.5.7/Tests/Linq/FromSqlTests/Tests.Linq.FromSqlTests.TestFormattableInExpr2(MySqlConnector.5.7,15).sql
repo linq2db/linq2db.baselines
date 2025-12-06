@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @endId Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	`s`.`id`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @startId Int32
 SET     @startId = 5

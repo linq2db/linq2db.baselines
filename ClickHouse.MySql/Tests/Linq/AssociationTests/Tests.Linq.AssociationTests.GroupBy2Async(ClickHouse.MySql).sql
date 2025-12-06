@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -23,8 +22,7 @@ FROM
 					INNER JOIN Parent a_Parent1_1 ON d.ParentID = a_Parent1_1.ParentID
 		) t2 ON m_1.ParentID = t2.ParentID
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 SELECT
 	a_Parent1.ParentID

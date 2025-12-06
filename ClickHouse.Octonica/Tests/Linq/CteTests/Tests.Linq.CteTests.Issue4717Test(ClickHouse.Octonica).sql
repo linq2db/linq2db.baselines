@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717Address
 (
@@ -18,7 +17,6 @@ VALUES
 	'12345'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717Warehouse
@@ -34,7 +32,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717UnitOfMeasure
@@ -50,7 +47,6 @@ VALUES
 	'ea'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717Product
@@ -68,7 +64,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717Product
@@ -86,7 +81,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717ProductIncludedProductMapping
@@ -102,7 +96,6 @@ VALUES
 	toDecimal128('10', 10)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4717WarehouseProductMapping

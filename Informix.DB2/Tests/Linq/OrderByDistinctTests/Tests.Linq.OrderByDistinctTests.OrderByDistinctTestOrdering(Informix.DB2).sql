@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
@@ -10,7 +9,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -24,7 +22,6 @@ FROM
 ORDER BY
 	x.OrderData1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -36,7 +33,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -50,7 +46,6 @@ FROM
 ORDER BY
 	x.OrderData1 DESC
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -62,7 +57,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -77,7 +71,6 @@ ORDER BY
 	x.OrderData1,
 	x.OrderData2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -89,7 +82,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -104,7 +96,6 @@ ORDER BY
 	x.OrderData1,
 	x.OrderData2 DESC
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -116,7 +107,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -131,7 +121,6 @@ ORDER BY
 	x.OrderData1 DESC,
 	x.OrderData2 DESC
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
@@ -143,7 +132,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0

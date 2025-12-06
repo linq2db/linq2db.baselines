@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			[t2].[ID] = @id
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 4

@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Data Int -- Int32
 SET     @Data = 1
@@ -20,7 +16,6 @@ SET
 WHERE
 	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
@@ -42,7 +37,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -50,7 +44,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Data Int -- Int32
 SET     @Data = 1
@@ -64,7 +57,6 @@ SET
 WHERE
 	"t1"."InheritanceParentId" = ? AND "t1"."Name" IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -72,5 +64,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(2) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

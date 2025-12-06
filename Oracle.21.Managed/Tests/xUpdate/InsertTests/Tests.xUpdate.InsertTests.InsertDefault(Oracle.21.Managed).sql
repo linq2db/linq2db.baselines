@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Person"
 (
@@ -16,7 +15,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM

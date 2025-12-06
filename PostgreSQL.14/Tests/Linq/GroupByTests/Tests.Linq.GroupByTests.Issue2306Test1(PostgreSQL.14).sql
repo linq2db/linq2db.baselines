@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."PersonID",
@@ -13,10 +10,7 @@ SELECT
 FROM
 	"Person" m_1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."PersonID"
@@ -25,10 +19,7 @@ FROM
 GROUP BY
 	t1."PersonID"
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."PersonID",
@@ -40,10 +31,7 @@ SELECT
 FROM
 	"Person" m_1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."PersonID"

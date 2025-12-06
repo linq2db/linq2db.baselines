@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[r].[Boolean] = @True
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	[r].[Boolean] = @False
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -90,7 +85,6 @@ FROM
 WHERE
 	[r].[Boolean] = @TrueN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -126,7 +119,6 @@ FROM
 WHERE
 	[r].[Boolean] = @FalseN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -196,7 +185,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @True
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -232,7 +219,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @False
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -268,7 +253,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @TrueN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -304,7 +287,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @FalseN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -374,7 +353,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @True
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -410,7 +387,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @False
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -446,7 +421,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @TrueN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -482,7 +455,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @FalseN
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -550,7 +519,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @True OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -586,7 +553,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @False OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -622,7 +587,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @TrueN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -658,7 +621,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @FalseN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -716,189 +675,188 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_1],
+	END) as [Count_1],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_2],
+	END) as [Count_Explicit],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_3],
+	END) as [CountN],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_4],
+	END) as [Count_False],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_5],
+	END) as [CountN_False],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_6],
+	END) as [Count_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_7],
+	END) as [CountN_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_8],
+	END) as [Count_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_9],
+	END) as [CountN_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[Int32] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_10],
+	END) as [CountInt32],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_11],
+	END) as [Count32N],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_12],
+	END) as [CountDecimal],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_13],
+	END) as [CountDecimalN],
 	COUNT(CASE
 		WHEN [g_1].[Double] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_14],
+	END) as [CountDouble],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_15],
+	END) as [CountDoubleN],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_16],
+	END) as [CountInt32_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <> 0 OR [g_1].[Int32N] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_17],
+	END) as [Count32N_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_18],
+	END) as [CountDecimal_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <> 0 OR [g_1].[DecimalN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_19],
+	END) as [CountDecimalN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_20],
+	END) as [CountDouble_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <> 0 OR [g_1].[DoubleN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_21],
+	END) as [CountDoubleN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_22],
+	END) as [CountInt32_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_23],
+	END) as [Count32N_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_24],
+	END) as [CountDecimal_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_25],
+	END) as [CountDecimalN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Double] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_26],
+	END) as [CountDouble_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_27],
+	END) as [CountDoubleN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_28],
+	END) as [CountInt32_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_29],
+	END) as [Count32N_Less],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_30],
+	END) as [CountDecimal_Less],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_31],
+	END) as [CountDecimalN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Double] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_32],
+	END) as [CountDouble_Less],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_33],
+	END) as [CountDoubleN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_34],
+	END) as [CountInt32_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_35],
+	END) as [Count32N_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_36],
+	END) as [CountDecimal_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_37],
+	END) as [CountDecimalN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_38],
+	END) as [CountDouble_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_39],
+	END) as [CountDoubleN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_40],
+	END) as [CountInt32_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_41],
+	END) as [Count32N_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_42],
+	END) as [CountDecimal_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_43],
+	END) as [CountDecimalN_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_44],
+	END) as [CountDouble_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_45]
+	END) as [CountDoubleN_LessEqual]
 FROM
 	[BooleanTable] [g_1]
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -914,7 +872,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1767,7 +1724,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1783,7 +1739,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1801,7 +1756,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1817,7 +1771,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1835,7 +1788,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1851,7 +1803,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1869,7 +1820,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1885,7 +1835,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1903,7 +1852,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1919,7 +1867,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1937,7 +1884,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1953,7 +1899,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1971,7 +1916,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -1987,7 +1931,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2005,7 +1948,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2021,7 +1963,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2039,7 +1980,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2055,7 +1995,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2073,7 +2012,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2089,7 +2027,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2107,7 +2044,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2123,7 +2059,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2141,7 +2076,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2157,7 +2091,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2175,7 +2108,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2191,7 +2123,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2209,7 +2140,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2225,7 +2155,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2243,7 +2172,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2259,7 +2187,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2275,7 +2202,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2291,75 +2217,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
--- SqlCe
-
-SELECT
-	[r].[Id],
-	[r].[Boolean] as [Boolean_1],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal] as [Decimal_1],
-	[r].[DecimalN],
-	[r].[Double] as [Double_1],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal] as [Decimal_1],
-	[t1].[DecimalN],
-	[t1].[Double] as [Double_1],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[r].[Id],
-	[r].[Boolean] as [Boolean_1],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal] as [Decimal_1],
-	[r].[DecimalN],
-	[r].[Double] as [Double_1],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SqlCe
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal] as [Decimal_1],
-	[t1].[DecimalN],
-	[t1].[Double] as [Double_1],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2377,7 +2234,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2393,7 +2249,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2411,7 +2266,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2427,7 +2281,70 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
+-- SqlCe
+
+SELECT
+	[r].[Id],
+	[r].[Boolean] as [Boolean_1],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal] as [Decimal_1],
+	[r].[DecimalN],
+	[r].[Double] as [Double_1],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
+
+-- SqlCe
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean] as [Boolean_1],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal] as [Decimal_1],
+	[t1].[DecimalN],
+	[t1].[Double] as [Double_1],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlCe
+
+SELECT
+	[r].[Id],
+	[r].[Boolean] as [Boolean_1],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal] as [Decimal_1],
+	[r].[DecimalN],
+	[r].[Double] as [Double_1],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
+
+-- SqlCe
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean] as [Boolean_1],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal] as [Decimal_1],
+	[t1].[DecimalN],
+	[t1].[Double] as [Double_1],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
 -- SqlCe
 
 SELECT
@@ -2445,7 +2362,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2461,7 +2377,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2469,189 +2384,188 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_1],
+	END) as [Count_1],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_2],
+	END) as [Count_Explicit],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_3],
+	END) as [CountN],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_4],
+	END) as [Count_False],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_5],
+	END) as [CountN_False],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_6],
+	END) as [Count_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_7],
+	END) as [CountN_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [COUNT_8],
+	END) as [Count_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_9],
+	END) as [CountN_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[Int32] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_10],
+	END) as [CountInt32],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_11],
+	END) as [Count32N],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_12],
+	END) as [CountDecimal],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_13],
+	END) as [CountDecimalN],
 	COUNT(CASE
 		WHEN [g_1].[Double] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_14],
+	END) as [CountDouble],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] = 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_15],
+	END) as [CountDoubleN],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_16],
+	END) as [CountInt32_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <> 0 OR [g_1].[Int32N] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_17],
+	END) as [Count32N_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_18],
+	END) as [CountDecimal_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <> 0 OR [g_1].[DecimalN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_19],
+	END) as [CountDecimalN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <> 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_20],
+	END) as [CountDouble_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <> 0 OR [g_1].[DoubleN] IS NULL THEN 1
 		ELSE NULL
-	END) as [COUNT_21],
+	END) as [CountDoubleN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_22],
+	END) as [CountInt32_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_23],
+	END) as [Count32N_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_24],
+	END) as [CountDecimal_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_25],
+	END) as [CountDecimalN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Double] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_26],
+	END) as [CountDouble_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] > 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_27],
+	END) as [CountDoubleN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_28],
+	END) as [CountInt32_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_29],
+	END) as [Count32N_Less],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_30],
+	END) as [CountDecimal_Less],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_31],
+	END) as [CountDecimalN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Double] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_32],
+	END) as [CountDouble_Less],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] < 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_33],
+	END) as [CountDoubleN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_34],
+	END) as [CountInt32_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_35],
+	END) as [Count32N_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_36],
+	END) as [CountDecimal_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_37],
+	END) as [CountDecimalN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_38],
+	END) as [CountDouble_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] >= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_39],
+	END) as [CountDoubleN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_40],
+	END) as [CountInt32_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_41],
+	END) as [Count32N_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_42],
+	END) as [CountDecimal_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_43],
+	END) as [CountDecimalN_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_44],
+	END) as [CountDouble_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <= 0 THEN 1
 		ELSE NULL
-	END) as [COUNT_45]
+	END) as [CountDoubleN_LessEqual]
 FROM
 	[BooleanTable] [g_1]
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -2667,7 +2581,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -3520,7 +3433,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

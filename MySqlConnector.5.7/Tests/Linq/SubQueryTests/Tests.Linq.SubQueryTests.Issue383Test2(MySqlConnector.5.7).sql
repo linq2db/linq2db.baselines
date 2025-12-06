@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`a`.`First_Name`,
@@ -13,7 +12,7 @@ SELECT
 		FROM
 			`Cities` `c_1`
 		WHERE
-			`c_1`.`City_Code` = `cp`.`City_Code` OR `c_1`.`City_Code` IS NULL AND `cp`.`City_Code` IS NULL
+			`c_1`.`City_Code` = `cp`.`City_Code`
 	),
 	`cp`.`State`,
 	`cp`.`Zip_Code`,

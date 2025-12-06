@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 UPDATE
@@ -20,7 +18,6 @@ UPDATE
 SET
 	[t1].[Value] = 123
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2

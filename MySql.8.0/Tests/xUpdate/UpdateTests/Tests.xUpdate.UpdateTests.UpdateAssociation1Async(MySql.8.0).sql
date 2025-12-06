@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Parent`
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Child`
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`Parent` `a_Parent`,

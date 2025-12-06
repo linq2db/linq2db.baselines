@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @filter1 VarWChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 VarWChar(8) -- String
@@ -42,7 +41,6 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

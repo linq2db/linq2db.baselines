@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO SampleClass
 (
@@ -14,7 +13,6 @@ VALUES
 	'V1'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO SampleClass
@@ -30,7 +28,6 @@ VALUES
 	'V1'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO SampleClass
@@ -46,7 +43,6 @@ VALUES
 	'V1'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO SampleClass

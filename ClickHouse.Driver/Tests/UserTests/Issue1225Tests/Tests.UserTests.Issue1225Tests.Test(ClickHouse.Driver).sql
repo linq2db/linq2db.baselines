@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Task
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Task
@@ -22,7 +20,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TaskStage
@@ -38,7 +35,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

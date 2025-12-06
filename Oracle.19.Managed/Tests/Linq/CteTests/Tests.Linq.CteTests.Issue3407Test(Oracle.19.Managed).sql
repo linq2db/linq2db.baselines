@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	r.ID = 2
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 WITH CTE_1 ("c1")

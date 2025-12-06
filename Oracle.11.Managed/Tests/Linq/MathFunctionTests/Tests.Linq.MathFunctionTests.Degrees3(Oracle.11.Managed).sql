@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	CAST(CAST(Floor(t."MoneyValue") AS Int) AS Float) * 57.295779513082323D

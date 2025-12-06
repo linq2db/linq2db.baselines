@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*),
@@ -13,7 +12,6 @@ FROM
 GROUP BY
 	g_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -21,7 +19,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -37,7 +33,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

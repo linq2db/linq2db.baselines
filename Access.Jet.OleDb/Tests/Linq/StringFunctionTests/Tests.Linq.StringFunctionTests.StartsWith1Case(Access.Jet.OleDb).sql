@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	[p].[FirstName] LIKE 'Jo%' AND InStr(1, [p].[FirstName], 'Jo', 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	[p].[FirstName] LIKE 'jo%' AND InStr(1, [p].[FirstName], 'jo', 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

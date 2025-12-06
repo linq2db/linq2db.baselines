@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "Person" "Target"
 USING (
@@ -31,7 +28,6 @@ SET
 	"MiddleName" = 'first ' || "Source"."Patient_Diagnosis",
 	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -45,5 +41,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

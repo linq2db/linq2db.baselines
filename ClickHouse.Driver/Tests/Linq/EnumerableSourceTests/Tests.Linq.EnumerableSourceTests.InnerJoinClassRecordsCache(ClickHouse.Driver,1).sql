@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.FirstName,
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3) n ON p.PersonID = n.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

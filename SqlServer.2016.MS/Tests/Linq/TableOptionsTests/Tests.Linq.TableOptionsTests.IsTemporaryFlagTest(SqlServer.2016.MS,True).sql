@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]

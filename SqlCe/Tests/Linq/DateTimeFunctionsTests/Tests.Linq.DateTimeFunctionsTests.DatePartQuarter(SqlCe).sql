@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	DatePart(quarter, [t].[DateTimeValue]) as [c1]

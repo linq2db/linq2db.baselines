@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id
@@ -9,7 +8,6 @@ WHERE
 	endsWith(r.Value, ']')
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	startsWith(r.Value, ']')
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	position(r.Value, '-') > 0
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	position(r.Value, '[]') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -53,7 +48,6 @@ FROM
 WHERE
 	position(r.Value, '[0') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -64,7 +58,6 @@ FROM
 WHERE
 	position(r.Value, '[0') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -75,7 +68,6 @@ FROM
 WHERE
 	position(r.Value, '[0-9]') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -86,7 +78,6 @@ FROM
 WHERE
 	position(r.Value, '6') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -97,7 +88,6 @@ FROM
 WHERE
 	r.Value LIKE '[0'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -108,7 +98,6 @@ FROM
 WHERE
 	r.Value LIKE '[0'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -119,7 +108,6 @@ FROM
 WHERE
 	r.Value LIKE '[0-9]'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

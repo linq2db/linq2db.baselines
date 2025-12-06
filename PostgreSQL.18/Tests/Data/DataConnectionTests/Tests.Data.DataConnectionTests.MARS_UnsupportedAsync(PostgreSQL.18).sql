@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -10,8 +9,7 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 

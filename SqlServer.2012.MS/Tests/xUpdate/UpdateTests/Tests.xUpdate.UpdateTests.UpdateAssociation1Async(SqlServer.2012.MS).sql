@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Parent]
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Child]
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 
 UPDATE
 	[a_Parent]

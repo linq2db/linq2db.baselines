@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -26,7 +24,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -41,7 +38,6 @@ WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard' AND
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

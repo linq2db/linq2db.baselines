@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE "NoIdentity"
 (
@@ -11,7 +11,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "NoIdentity"
 (
@@ -24,7 +24,7 @@ VALUES
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -34,7 +34,7 @@ FROM
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "NoIdentity"
 

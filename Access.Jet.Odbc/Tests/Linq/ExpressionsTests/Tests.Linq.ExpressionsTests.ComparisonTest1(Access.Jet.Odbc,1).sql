@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @personId Int -- Int32
 SET     @personId = 0
 DECLARE @personId Int -- Int32

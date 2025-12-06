@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	[Person] [x]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

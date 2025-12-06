@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 DELETE [p]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[p].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [Parent]
@@ -33,7 +31,6 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2016
 
 DELETE [p]

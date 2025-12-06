@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Varchar2(2) -- String
@@ -20,7 +19,6 @@ VALUES
 	:ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

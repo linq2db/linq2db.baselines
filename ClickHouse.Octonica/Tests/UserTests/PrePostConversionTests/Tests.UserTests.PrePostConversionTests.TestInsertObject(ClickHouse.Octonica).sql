@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ValuesTable
 (
@@ -14,7 +13,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	MAX("t1".ID)
 FROM
 	ALLTYPES "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -20,7 +18,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '	'
@@ -34,7 +31,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '
@@ -49,7 +45,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
@@ -63,7 +58,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
@@ -77,7 +71,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
@@ -91,7 +84,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -105,7 +97,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -119,7 +110,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -133,7 +123,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -147,7 +136,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -161,7 +149,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -175,7 +162,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -189,7 +175,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -203,7 +188,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -217,7 +201,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -231,7 +214,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -245,7 +227,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
@@ -259,7 +240,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '　'
@@ -273,7 +253,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = NULL
@@ -287,7 +266,6 @@ VALUES
 	@NChar
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
@@ -302,7 +280,6 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	p."FirstName" IS NULL
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @p Text(4) -- String
 SET     @p = 'John'

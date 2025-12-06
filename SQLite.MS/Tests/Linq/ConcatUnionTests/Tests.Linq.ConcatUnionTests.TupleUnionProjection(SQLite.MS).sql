@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Value1],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p2].[ParentID] <= 3
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[p].[PersonID],
@@ -14,7 +13,6 @@ FROM
 				[Person] [m_1]
 		) [m_2] ON [p].[PersonID] = [m_2].[c1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

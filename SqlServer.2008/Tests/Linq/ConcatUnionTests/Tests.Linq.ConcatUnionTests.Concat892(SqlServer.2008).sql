@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t1].[Value1],
@@ -25,7 +24,6 @@ SELECT
 FROM
 	[Child] [c_3]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

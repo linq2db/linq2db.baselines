@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 MERGE INTO PKOnlyTable Target
 USING (
@@ -23,7 +22,6 @@ VALUES
 	Source.ID
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

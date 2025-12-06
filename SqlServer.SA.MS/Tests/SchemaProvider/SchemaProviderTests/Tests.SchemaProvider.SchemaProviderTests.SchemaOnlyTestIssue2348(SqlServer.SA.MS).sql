@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 select @@version
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -56,19 +52,14 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[AddIssue792Record]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[DuplicateColumnNames]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -77,7 +68,6 @@ SET     @output = 0
 
 [TestDataMSSA].[dbo].[ExecuteProcIntParameters]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -86,22 +76,18 @@ SET     @output = 0
 
 [TestDataMSSA].[dbo].[ExecuteProcStringParameters]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[Issue1897]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1921]()')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @str VarChar(50) -- AnsiString
 SET     @str = N''
@@ -112,7 +98,6 @@ SET     @inputOutputStr = N''
 
 [TestDataMSSA].[dbo].[OutRefEnumTest]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 0
@@ -129,12 +114,10 @@ SET     @inputOutputStr = N''
 
 [TestDataMSSA].[dbo].[OutRefTest]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[Patient_SelectAll]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -143,14 +126,12 @@ SET     @lastName = N''
 
 [TestDataMSSA].[dbo].[Patient_SelectByName]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
 [TestDataMSSA].[dbo].[Person_Delete]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
@@ -163,7 +144,6 @@ SET     @Gender = char(0)
 
 [TestDataMSSA].[dbo].[Person_Insert]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
@@ -178,26 +158,22 @@ SET     @PersonID = 0
 
 [TestDataMSSA].[dbo].[Person_Insert_OutputParameter]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[Person_SelectAll]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMSSA].[dbo].[Person_SelectByKey]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMSSA].[dbo].[Person_SelectByKeyLowercase]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -206,7 +182,6 @@ SET     @lastName = N''
 
 [TestDataMSSA].[dbo].[Person_SelectByName]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
@@ -215,7 +190,6 @@ SET     @lastName = N''
 
 [TestDataMSSA].[dbo].[Person_SelectListByName]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
@@ -230,14 +204,12 @@ SET     @Gender = char(0)
 
 [TestDataMSSA].[dbo].[Person_Update]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMSSA].[dbo].[PersonSearch]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -250,7 +222,6 @@ SET     @output3 = 0
 
 [TestDataMSSA].[dbo].[QueryProcMultipleParameters]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 0
@@ -261,48 +232,39 @@ SET     @output2 = 0
 
 [TestDataMSSA].[dbo].[QueryProcParameters]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[dbo].[SelectImplicitColumn]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMSSA].[dbo].[TableTypeTestProc]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMSSA].[dbo].[VariableResults]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[TestSchema].[SchemaTableFunction](NULL)')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 [TestDataMSSA].[TestSchema].[TestProcedure]
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 select @@version
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -323,7 +285,6 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -350,9 +311,6 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[AddIssue792Record] '
@@ -361,7 +319,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[DuplicateColumnNames] '
@@ -370,7 +327,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[ExecuteProcIntParameters] @input, @output'
@@ -379,7 +335,6 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[ExecuteProcStringParameters] @input, @output'
@@ -388,12 +343,10 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Issue1897] '
@@ -402,12 +355,10 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1921]()')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
@@ -416,7 +367,6 @@ SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr va
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
@@ -425,7 +375,6 @@ SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50)
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Patient_SelectAll] '
@@ -434,7 +383,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Patient_SelectByName] @firstName, @lastName'
@@ -443,7 +391,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Delete] @PersonID'
@@ -452,7 +399,6 @@ SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
@@ -461,7 +407,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
@@ -470,7 +415,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectAll] '
@@ -479,7 +423,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByKey] @id'
@@ -488,7 +431,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByKeyLowercase] @id'
@@ -497,7 +439,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectByName] @firstName, @lastName'
@@ -506,7 +447,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_SelectListByName] @firstName, @lastName'
@@ -515,7 +455,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
@@ -524,7 +463,6 @@ SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(5
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[PersonSearch] @nameFilter'
@@ -533,14 +471,12 @@ SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMSSA].[dbo].[PersonSearch]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
@@ -549,7 +485,6 @@ SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[QueryProcParameters] @input, @output1, @output2'
@@ -558,7 +493,6 @@ SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[SelectImplicitColumn] '
@@ -567,7 +501,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[TableTypeTestProc] @table'
@@ -576,14 +509,12 @@ SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMSSA].[dbo].[TableTypeTestProc]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[VariableResults] @ReturnFullRow'
@@ -592,19 +523,16 @@ SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMSSA].[dbo].[VariableResults]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSSA].[TestSchema].[SchemaTableFunction](NULL)')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[TestSchema].[TestProcedure] '
@@ -613,5 +541,4 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 RollbackTransaction

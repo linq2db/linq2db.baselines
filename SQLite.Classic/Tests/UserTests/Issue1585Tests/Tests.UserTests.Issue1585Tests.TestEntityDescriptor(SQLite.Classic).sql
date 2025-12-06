@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Test1585]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 CREATE TABLE [Test1585]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = 255 AND [r].[ColumnNullable] = 2
 
-BeforeExecute
 -- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [ByteTable]
@@ -109,7 +101,6 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -121,17 +112,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
-BeforeExecute
 INSERT BULK [ByteTable](Id, Column, ColumnNullable)
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

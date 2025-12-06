@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 /* My Test */
 TRUNCATE TABLE [TestTable]

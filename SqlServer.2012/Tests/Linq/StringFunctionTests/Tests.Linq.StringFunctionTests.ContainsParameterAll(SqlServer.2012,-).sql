@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @s NVarChar(4000) -- String
 SET     @s = N'123-456'
 DECLARE @toTest NVarChar(4000) -- String

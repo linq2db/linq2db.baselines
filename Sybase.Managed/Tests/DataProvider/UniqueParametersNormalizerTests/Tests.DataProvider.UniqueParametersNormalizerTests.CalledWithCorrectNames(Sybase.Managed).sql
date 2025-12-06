@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 DECLARE @search UniVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 UniVarChar(4) -- String

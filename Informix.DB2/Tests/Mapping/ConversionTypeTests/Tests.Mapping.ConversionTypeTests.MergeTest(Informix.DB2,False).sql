@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 MERGE INTO TrimTestTable Target
 USING (
@@ -29,7 +28,6 @@ VALUES
 	Source.Data_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TrimTestTable Target
@@ -58,7 +56,6 @@ VALUES
 	Source.Data_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -69,7 +66,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"t1"."TestField" = 0
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_2].[Id],
@@ -20,9 +17,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId] OR [m_2].[Id] IS NULL AND [d].[ParentId] IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

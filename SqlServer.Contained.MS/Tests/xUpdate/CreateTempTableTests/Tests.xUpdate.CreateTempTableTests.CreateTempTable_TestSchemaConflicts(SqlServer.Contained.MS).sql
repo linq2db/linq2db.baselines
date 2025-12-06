@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TestTempTable]
 (
@@ -12,17 +11,17 @@ VALUES
 	N'value'
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
 		[Id]      Int            NOT NULL,
-		[Renamed] NVarChar(4000)     NULL
+		[Renamed] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Id])
 	)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TempTable]
@@ -36,7 +35,6 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TestTempTable]
@@ -50,7 +48,6 @@ VALUES
 	N'value 2'
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TempTable]
@@ -64,7 +61,6 @@ VALUES
 	N'renamed 2'
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -75,7 +71,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -86,7 +81,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -36,7 +34,6 @@ WHERE
 			("Parent"."Value1" = "p"."Value1" OR "Parent"."Value1" IS NULL AND "p"."Value1" IS NULL)
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1

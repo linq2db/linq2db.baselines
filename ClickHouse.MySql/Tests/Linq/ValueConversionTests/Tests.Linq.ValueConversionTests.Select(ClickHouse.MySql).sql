@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	t.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	t2.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

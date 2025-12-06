@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[it_1].[cond],
@@ -23,7 +22,6 @@ FROM
 WHERE
 	[it_1].[ColorName] = N'Red'
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @True TinyInt(1) -- Byte
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", ?) = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @False TinyInt(1) -- Byte
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", ?) = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -91,7 +86,6 @@ WHERE
 		ELSE 0
 	END) = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

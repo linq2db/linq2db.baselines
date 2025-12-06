@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	MAX([g_1].[ChildID]) as [MAX_1]
+	MAX([g_1].[ChildID]) as [Max_1]
 FROM
 	[Child] [g_1]
 GROUP BY

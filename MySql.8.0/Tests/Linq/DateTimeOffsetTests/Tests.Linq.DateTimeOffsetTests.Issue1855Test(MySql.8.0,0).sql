@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	@SomeDateTimeOffset
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @interval Int32
 SET     @interval = 10

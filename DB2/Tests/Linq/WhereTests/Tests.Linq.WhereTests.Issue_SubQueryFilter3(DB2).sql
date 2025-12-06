@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @filter VarChar(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 VarChar(8) -- String
@@ -46,7 +45,6 @@ WHERE
 ORDER BY
 	"patient_1"."PersonID"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -55,7 +53,6 @@ SELECT
 FROM
 	"Patient" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

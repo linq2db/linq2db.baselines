@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

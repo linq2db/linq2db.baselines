@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

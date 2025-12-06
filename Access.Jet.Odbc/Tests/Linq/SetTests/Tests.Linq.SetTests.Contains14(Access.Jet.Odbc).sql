@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1 AND [p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2

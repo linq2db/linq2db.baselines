@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @pattern NVarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

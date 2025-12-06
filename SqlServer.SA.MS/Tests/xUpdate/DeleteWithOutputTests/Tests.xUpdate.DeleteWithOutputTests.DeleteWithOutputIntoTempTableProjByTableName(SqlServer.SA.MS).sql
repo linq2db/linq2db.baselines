@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -20,7 +20,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 100500
@@ -41,7 +40,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_target]

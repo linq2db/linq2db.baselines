@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'John'
@@ -31,7 +29,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -45,7 +42,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]

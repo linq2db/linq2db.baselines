@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 UPDATE
 	[UpdatedEntities] [v]
@@ -11,7 +10,6 @@ SET
 WHERE
 	[a_Relation].[RelatedValue1] = 11
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1

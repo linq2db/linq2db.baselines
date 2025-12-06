@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -29,7 +28,6 @@ FROM
 	[CTE1_] [p]
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

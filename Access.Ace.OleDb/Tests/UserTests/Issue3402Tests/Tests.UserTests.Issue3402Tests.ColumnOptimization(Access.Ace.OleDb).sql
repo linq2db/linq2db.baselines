@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[ess].[ID]
@@ -15,7 +14,6 @@ WHERE
 			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE]
 	)
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[ParentID],
-	[t1].[ChildID]
+	[t1].[MaxChild]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[c_1].[ChildID]
+				[c_1].[ChildID] as [MaxChild]
 			FROM
 				[Child] [c_1]
 					LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]

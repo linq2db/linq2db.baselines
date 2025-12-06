@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p NVarChar(24) -- String
 SET     @p = '{"name":"bob", "age":10}'
 

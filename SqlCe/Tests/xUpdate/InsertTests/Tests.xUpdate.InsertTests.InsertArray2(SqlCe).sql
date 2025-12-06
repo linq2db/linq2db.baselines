@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
-BeforeExecute
 -- SqlCe
 DECLARE @arr VarBinary -- Binary
 SET     @arr = NULL
@@ -24,7 +22,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -40,7 +37,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

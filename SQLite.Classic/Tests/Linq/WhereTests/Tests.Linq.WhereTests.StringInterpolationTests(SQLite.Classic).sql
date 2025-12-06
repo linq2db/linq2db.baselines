@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -12,7 +11,6 @@ WHERE
 	('<{p.LastName}, ' || [p].[FirstName] || ' {' || [p].[LastName] || '}>') = ('<{p.LastName}, ' || [p].[FirstName] || ' {' || [p].[LastName]) || '}>' AND
 	'{}' || [p].[LastName] = '{}' || [p].[LastName]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

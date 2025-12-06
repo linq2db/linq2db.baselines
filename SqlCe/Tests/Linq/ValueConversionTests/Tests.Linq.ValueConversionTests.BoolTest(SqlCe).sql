@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @true_value NVarChar -- String
 SET     @true_value = 'Y'
 

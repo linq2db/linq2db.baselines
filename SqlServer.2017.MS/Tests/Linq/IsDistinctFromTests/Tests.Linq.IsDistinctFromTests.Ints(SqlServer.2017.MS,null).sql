@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	[s].[NullableInt] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -26,7 +23,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

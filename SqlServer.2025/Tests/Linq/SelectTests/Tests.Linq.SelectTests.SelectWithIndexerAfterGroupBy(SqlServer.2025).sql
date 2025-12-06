@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[x].[Key_1],
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	[x].[Key_1] DESC
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

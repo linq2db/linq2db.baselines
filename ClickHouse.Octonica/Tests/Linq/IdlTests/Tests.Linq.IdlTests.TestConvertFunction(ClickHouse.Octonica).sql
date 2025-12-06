@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.PersonID
 FROM
 	Patient x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	Person x
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

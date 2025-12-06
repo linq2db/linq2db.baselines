@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -15,8 +14,7 @@ FROM
 WHERE
 	`t1`.`Min_1` <> 0 OR `t1`.`Min_1` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -32,8 +30,7 @@ FROM
 WHERE
 	`t1`.`Max_1` <> 0 OR `t1`.`Max_1` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -49,8 +46,7 @@ FROM
 WHERE
 	`t1`.`Avg_1` <> 0 OR `t1`.`Avg_1` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -66,8 +62,7 @@ FROM
 WHERE
 	`t1`.`Sum_1` <> 0 OR `t1`.`Sum_1` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)

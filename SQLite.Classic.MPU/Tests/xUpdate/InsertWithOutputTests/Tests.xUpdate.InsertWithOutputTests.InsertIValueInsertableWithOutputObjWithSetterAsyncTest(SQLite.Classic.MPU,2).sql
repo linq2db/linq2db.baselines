@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 200
 DECLARE @value_1  -- Int32

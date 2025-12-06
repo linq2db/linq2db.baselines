@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿BeginTransactionAsync
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -18,9 +16,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  

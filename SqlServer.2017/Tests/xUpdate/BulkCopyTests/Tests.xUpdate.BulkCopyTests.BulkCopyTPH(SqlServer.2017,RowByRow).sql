@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Value2
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	@NullableBool
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -83,7 +79,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)
@@ -98,7 +93,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)
@@ -113,7 +107,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)
@@ -128,7 +121,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)
@@ -143,7 +135,6 @@ FROM
 WHERE
 	[x].[Value1] = N'Str1'
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)
@@ -158,7 +149,6 @@ FROM
 WHERE
 	[x].[Value2] = N'Str2'
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (2)

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
 	[t]
 SET
-	[t].[Id] = [t1].[Id],
 	[t].[Value] = [t1].[Value],
 	[t].[ValueStr] = [t1].[ValueStr]
 OUTPUT

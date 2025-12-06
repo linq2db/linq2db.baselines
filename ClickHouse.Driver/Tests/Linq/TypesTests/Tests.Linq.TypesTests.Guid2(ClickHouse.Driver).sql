@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.ID,
@@ -16,7 +15,6 @@ WHERE
 	p.GuidValue = toUUID('40932fdb-1543-4e4a-ac2c-ca371604fb4b')
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

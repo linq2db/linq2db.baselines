@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -13,9 +12,6 @@ FROM
 	[Person] [t1]
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -31,9 +27,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -42,7 +35,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -57,9 +49,6 @@ FROM
 	[Person] [t1]
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -75,9 +64,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -86,7 +72,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -102,9 +87,6 @@ FROM
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 LIMIT 1
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -121,7 +103,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -131,10 +112,7 @@ FROM
 	[Parent] [t1]
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -149,10 +127,7 @@ FROM
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 LIMIT 1
 
-BeforeExecute
-BeginTransactionAsync(Serializable)
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -168,8 +143,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -178,5 +152,3 @@ FROM
 	[Parent] [t1]
 LIMIT 1
 
-BeforeExecute
-DisposeTransactionAsync

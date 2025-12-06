@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NChar(1) -- StringFixedLength

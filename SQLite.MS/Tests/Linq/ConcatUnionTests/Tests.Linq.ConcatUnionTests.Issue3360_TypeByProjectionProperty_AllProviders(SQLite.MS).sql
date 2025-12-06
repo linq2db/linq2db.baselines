@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[Id],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

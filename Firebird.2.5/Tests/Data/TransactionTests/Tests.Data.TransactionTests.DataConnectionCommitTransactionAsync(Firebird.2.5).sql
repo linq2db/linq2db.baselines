@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿BeginTransactionAsync
+-- Firebird.2.5 Firebird
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -18,9 +16,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

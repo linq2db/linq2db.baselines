@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @VarBinary VarBinary -- Binary
 SET     @VarBinary = Tests.Linq.ParameterTests+VarBinary
 
@@ -12,7 +11,6 @@ VALUES
 	@VarBinary
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p VarBinary -- Binary
 SET     @p = Tests.Linq.ParameterTests+VarBinary

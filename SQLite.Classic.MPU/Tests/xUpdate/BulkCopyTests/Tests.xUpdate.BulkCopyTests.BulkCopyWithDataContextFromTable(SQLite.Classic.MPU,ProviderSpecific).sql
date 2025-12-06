@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,7 +7,6 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
@@ -18,7 +16,6 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (2)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]

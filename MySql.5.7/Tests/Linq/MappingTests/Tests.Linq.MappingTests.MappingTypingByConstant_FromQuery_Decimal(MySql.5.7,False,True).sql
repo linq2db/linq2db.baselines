@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value Decimal
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			`Person` `r`
 	) `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value Decimal(13, 3)
 SET     @value = 2147483648.123

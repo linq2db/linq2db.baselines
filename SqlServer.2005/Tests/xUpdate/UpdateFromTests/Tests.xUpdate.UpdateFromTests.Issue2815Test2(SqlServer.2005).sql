@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 UPDATE
 	[ext]
@@ -21,10 +20,10 @@ FROM
 WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t1].[Id],
 	[t1].[SRC_BIC],
 	[t1].[DES_BIC],
 	[t1].[IDF],

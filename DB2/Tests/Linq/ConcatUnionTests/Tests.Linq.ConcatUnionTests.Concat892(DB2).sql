@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Value1",
@@ -25,7 +24,6 @@ SELECT
 FROM
 	"Child" "c_3"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"Child" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

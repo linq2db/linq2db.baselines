@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Len([nm].[FirstName]) <> 0
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

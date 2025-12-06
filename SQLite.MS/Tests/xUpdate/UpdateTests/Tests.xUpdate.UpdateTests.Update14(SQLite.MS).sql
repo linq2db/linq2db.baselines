@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @name  -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

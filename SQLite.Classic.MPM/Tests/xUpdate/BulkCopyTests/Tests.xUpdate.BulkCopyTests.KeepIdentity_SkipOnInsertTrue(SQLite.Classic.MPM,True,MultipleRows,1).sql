@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -12,13 +11,11 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [AllTypes]
 (
@@ -29,7 +26,6 @@ VALUES
 (13,200),
 (23,300)
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
@@ -44,7 +40,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3

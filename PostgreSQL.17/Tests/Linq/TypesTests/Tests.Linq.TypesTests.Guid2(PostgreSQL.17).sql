@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."ID",
@@ -16,7 +15,6 @@ WHERE
 	p."GuidValue" = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

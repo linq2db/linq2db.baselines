@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [TestTempTable]
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[Id]      INTEGER       NOT NULL,
-	[Renamed] NVarChar(255)     NULL
+	[Renamed] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Id])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TempTable]
@@ -35,7 +34,6 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TestTempTable]
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TempTable]
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]

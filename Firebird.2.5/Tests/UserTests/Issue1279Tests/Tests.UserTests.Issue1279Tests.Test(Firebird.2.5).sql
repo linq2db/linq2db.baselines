@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
@@ -12,7 +11,6 @@ VALUES
 	@CharFld
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

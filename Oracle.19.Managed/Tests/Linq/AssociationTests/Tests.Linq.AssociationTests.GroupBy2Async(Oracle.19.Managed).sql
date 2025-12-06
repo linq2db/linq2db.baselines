@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(ReadCommitted)
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
@@ -19,8 +16,7 @@ FROM
 			INNER JOIN "Parent" a_Parent1_1 ON d."ParentID" = a_Parent1_1."ParentID"
 		ON m_1."ParentID" = a_Parent1_1."ParentID"
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	a_Parent1."ParentID"
@@ -30,5 +26,3 @@ FROM
 GROUP BY
 	a_Parent1."ParentID"
 
-BeforeExecute
-DisposeTransactionAsync

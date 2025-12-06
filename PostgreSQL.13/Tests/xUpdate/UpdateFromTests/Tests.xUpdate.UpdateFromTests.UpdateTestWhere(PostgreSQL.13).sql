@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @int2 Integer -- Int32
@@ -20,8 +19,7 @@ FROM
 WHERE
 	t.id = "UpdatedEntities".id AND t.id <> :someId
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	v.id,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Table2"
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Table1" "t"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "TrimTestTable"
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TrimTestTable"
@@ -26,7 +24,6 @@ VALUES
 	'***HHH***'
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TrimTestTable"
@@ -40,7 +37,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -51,7 +47,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

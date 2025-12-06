@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	:Name_LastName
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -47,7 +44,6 @@ WHERE
 	p."PersonID" > 4
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM

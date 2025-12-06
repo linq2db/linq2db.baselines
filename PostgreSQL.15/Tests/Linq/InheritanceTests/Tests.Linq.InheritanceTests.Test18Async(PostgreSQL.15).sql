@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT DISTINCT
 	p1."PersonID",

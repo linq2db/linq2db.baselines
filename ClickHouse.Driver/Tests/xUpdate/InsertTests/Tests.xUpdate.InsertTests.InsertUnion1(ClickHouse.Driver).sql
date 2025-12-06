@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID > 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Parent
@@ -32,7 +30,6 @@ FROM
 			GrandChild c_2
 	) t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	c_1.ParentID > 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 (
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 	CONSTRAINT `PK_TableWithPrimaryKey2` PRIMARY KEY CLUSTERED (`Key`)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `TableWithPrimaryKey2`
@@ -18,7 +16,6 @@ INSERT INTO `TableWithPrimaryKey2`
 VALUES
 (1)
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`

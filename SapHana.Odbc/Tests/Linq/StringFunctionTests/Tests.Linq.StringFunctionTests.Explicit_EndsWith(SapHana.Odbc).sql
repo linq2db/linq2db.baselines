@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"r"."Diagnosis" LIKE '%Persecution' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"r"."Diagnosis" LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower("r"."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

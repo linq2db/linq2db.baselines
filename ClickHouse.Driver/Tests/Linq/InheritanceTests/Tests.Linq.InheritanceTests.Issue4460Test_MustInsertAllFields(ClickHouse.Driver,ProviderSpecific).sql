@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT ASYNC BULK Issue4460Table(Id, Code, Name, Surname)
+﻿INSERT ASYNC BULK Issue4460Table(Id, Code, Name, Surname)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

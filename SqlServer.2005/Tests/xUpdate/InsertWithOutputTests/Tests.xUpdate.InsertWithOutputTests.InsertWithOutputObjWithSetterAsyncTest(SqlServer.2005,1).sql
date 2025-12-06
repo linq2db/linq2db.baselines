@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005 (asynchronously)
+﻿-- SqlServer.2005
 DECLARE @Value Int -- Int32
 SET     @Value = 100
 DECLARE @value_1 Int -- Int32

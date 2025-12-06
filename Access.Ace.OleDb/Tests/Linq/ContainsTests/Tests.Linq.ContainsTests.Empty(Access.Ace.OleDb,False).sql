@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[Src] [s]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

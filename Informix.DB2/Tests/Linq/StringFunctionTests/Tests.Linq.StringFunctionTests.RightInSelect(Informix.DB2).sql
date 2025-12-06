@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	Substr(p.FirstName, CHAR_LENGTH(p.FirstName || '.') - 3, 3)

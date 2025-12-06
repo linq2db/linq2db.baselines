@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 	) [pmp]
 		CROSS JOIN [Child] [pmp1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

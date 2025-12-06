@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,8 +7,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [SimpleBulkCopyTable]
 (

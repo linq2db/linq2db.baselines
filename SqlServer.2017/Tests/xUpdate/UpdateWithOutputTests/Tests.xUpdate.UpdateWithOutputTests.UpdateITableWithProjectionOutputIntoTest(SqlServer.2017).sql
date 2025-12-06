@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 UPDATE
 	[t]
@@ -21,7 +20,6 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

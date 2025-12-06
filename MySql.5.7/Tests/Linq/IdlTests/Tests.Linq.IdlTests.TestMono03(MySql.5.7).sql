@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p1 VarChar(1) -- String
 SET     @p1 = 'A'
 DECLARE @p2 Int32

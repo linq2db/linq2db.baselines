@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t".ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @param Char -- String
 SET     @param = '1'

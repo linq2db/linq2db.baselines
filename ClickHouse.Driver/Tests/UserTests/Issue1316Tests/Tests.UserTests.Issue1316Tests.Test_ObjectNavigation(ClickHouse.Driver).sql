@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1316Tests
 (
@@ -10,7 +9,6 @@ VALUES
 	5
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

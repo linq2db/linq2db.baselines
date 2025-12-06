@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -31,9 +28,6 @@ FROM
 		INNER JOIN "Attachment" "a_Attachment" ON d."AttachmentId" = "a_Attachment"."Id"
 		INNER JOIN "Document" "a_Documents" ON "a_Attachment"."Id" = "a_Documents"."AttachmentId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
@@ -23,7 +22,6 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[FirstName] = @FirstName,
 	[LastName] = @LastName
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -39,7 +37,6 @@ WHERE
 	[x].[FirstName] = @FirstName
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 0
@@ -69,7 +66,6 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[LastName] = @LastName,
 	[MiddleName] = @MiddleName
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

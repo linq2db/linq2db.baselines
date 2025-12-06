@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t2.ParentID,
@@ -14,7 +13,6 @@ FROM
 		LIMIT 1
 	) t2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

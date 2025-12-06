@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`x_2`.`Id`,
@@ -13,7 +12,7 @@ FROM
 			END as `StatusName`,
 			CASE
 				WHEN `x_1`.`PersonID` IS NOT NULL THEN `x_1`.`PersonID`
-				ELSE `x_1`.`PersonID_1`
+				ELSE `x_1`.`ID`
 			END as `Id`
 		FROM
 			(
@@ -36,7 +35,7 @@ FROM
 							`y_1`.`PersonID` = `x`.`PersonID`
 						LIMIT 1
 					) as `Diagnosis`,
-					`x`.`PersonID` as `PersonID_1`
+					`x`.`PersonID` as `ID`
 				FROM
 					`Person` `x`
 			) `x_1`

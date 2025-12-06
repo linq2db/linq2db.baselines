@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[Id],
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[Issue3360Table] [p_1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

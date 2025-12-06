@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."Key_1",
@@ -28,7 +25,6 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

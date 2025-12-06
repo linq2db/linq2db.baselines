@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -49,7 +46,6 @@ WHERE
 			[Child].[ChildID] = [c_1].[ChildID]
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 1002

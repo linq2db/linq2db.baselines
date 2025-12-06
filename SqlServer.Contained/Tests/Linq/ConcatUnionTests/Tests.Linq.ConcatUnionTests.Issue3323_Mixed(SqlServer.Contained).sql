@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Issue3323Table]
 (
 	[Id],
-	[FistName],
+	[FirstName],
 	[LastName],
 	[Text]
 )
@@ -16,12 +15,11 @@ VALUES
 	N'text'
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[r].[Id],
-	[r].[FistName] + N' ' + [r].[LastName]
+	[r].[FirstName] + N' ' + [r].[LastName]
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[Issue3323Table] [r_1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -42,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	[r_1].[FistName] + N' ' + [r_1].[LastName]
+	[r_1].[FirstName] + N' ' + [r_1].[LastName]
 FROM
 	[Issue3323Table] [r_1]
 

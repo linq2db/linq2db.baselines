@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
@@ -45,7 +42,6 @@ VALUES
 	'negative'
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
@@ -58,7 +54,6 @@ FROM
 WHERE
 	`p`.`PersonID` = @id
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
@@ -74,7 +69,6 @@ VALUES
 	'positive'
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5

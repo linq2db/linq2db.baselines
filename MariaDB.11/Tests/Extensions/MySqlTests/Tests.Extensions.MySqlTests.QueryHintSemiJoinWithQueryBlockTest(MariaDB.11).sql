@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT /*+ SEMIJOIN(@qq FIRSTMATCH, LOOSESCAN) */
 	`p_1`.`ParentID`,

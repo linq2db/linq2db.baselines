@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @pattern NVarChar(4000) -- String
 SET     @pattern = N'%h~%n%'
 

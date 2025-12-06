@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`FirstName`,
@@ -10,8 +9,7 @@ SELECT
 FROM
 	`Person` `t1`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1
 

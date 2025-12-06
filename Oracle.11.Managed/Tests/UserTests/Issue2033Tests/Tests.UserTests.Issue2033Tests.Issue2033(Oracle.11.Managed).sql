@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @sfcBo Varchar2(20) -- String
 SET     @sfcBo = 'SFCBO:8110,C17C05016'
 

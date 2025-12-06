@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO T3
 (
@@ -12,7 +11,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T3
@@ -26,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T3
@@ -40,7 +37,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T2
@@ -54,7 +50,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T2
@@ -68,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T1
@@ -86,7 +80,6 @@ VALUES
 	'NOTNULL'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO T1
@@ -104,7 +97,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

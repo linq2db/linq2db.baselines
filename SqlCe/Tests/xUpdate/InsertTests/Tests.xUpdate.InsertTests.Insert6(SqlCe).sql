@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[Value1] = 11
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [Parent]
@@ -22,17 +20,15 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

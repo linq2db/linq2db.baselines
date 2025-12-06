@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @take Integer(4) -- Int32
 SET     @take = 1
 
@@ -16,7 +15,6 @@ FROM
 		OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 	) "t2"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

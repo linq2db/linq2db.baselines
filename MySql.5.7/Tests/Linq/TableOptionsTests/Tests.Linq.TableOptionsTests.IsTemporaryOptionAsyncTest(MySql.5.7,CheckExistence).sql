@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table1`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `temp_table1`
 (
@@ -18,17 +18,17 @@ INSERT INTO `temp_table1`
 VALUES
 (1,2)
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table2`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `temp_table2`
 (
@@ -41,7 +41,6 @@ SELECT
 FROM
 	`temp_table1` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -50,7 +49,6 @@ SELECT
 FROM
 	`temp_table1` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -59,8 +57,7 @@ SELECT
 FROM
 	`temp_table2` `t1`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `temp_table1`
 (
@@ -70,8 +67,7 @@ INSERT INTO `temp_table1`
 VALUES
 (2,3)
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @Value Int32
@@ -88,8 +84,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `temp_table1`
 (
@@ -99,22 +94,18 @@ INSERT INTO `temp_table1`
 VALUES
 (4,5)
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 TRUNCATE TABLE `temp_table1`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 TRUNCATE TABLE `temp_table2`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `temp_table1`

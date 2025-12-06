@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @p Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @p
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0504030201
@@ -26,7 +24,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @p
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

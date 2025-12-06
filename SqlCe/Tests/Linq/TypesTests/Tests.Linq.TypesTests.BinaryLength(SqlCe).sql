@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlCe
 DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
 	[TrimTestTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = N'***HHH***'
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

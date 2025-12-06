@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @True Boolean
 SET     @True = True
 
@@ -18,8 +17,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", :True)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -34,8 +32,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @False Boolean
 SET     @False = False
 
@@ -54,8 +51,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", :False)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -70,8 +66,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -88,8 +83,7 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

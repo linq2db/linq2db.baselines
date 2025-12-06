@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	:Child1Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	:Child2Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	:Grandchild11Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -94,7 +90,6 @@ VALUES
 	:Grandchild12Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -120,7 +115,6 @@ VALUES
 	:Grandchild21Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
@@ -146,7 +140,6 @@ VALUES
 	:Grandchild22Field
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

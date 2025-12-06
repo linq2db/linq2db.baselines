@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @VBLocal_id Integer -- Int32
 SET     @VBLocal_id = 1
 

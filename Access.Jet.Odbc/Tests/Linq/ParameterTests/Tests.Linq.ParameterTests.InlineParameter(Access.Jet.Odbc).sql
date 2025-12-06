@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1

@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
-	[d_1].[ToValue]
+	[d_1].[Children]
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +14,7 @@ FROM
 		CROSS APPLY (
 			SELECT
 				[d].[ParentID] as [Key_1],
-				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [ToValue]
+				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [Children]
 			FROM
 				[Child] [d]
 			WHERE
@@ -26,9 +23,6 @@ FROM
 				[d].[ParentID]
 		) [d_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

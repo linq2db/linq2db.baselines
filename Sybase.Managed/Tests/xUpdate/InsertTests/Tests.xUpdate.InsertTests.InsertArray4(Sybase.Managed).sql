@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t].[ID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
@@ -45,7 +43,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -61,7 +58,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]

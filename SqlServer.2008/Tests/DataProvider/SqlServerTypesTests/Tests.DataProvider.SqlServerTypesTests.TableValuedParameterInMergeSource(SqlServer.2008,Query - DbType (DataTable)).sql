@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
@@ -7,7 +6,6 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 	[Name] NVarChar(4000)     NULL
 )
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
@@ -41,7 +39,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -52,7 +49,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TestMergeTVPTable]', N'U') IS NOT NULL)

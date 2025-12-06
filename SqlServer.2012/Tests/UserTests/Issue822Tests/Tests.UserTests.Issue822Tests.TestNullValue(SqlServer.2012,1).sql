@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			[t2].[ID] = @id
 	)
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 4

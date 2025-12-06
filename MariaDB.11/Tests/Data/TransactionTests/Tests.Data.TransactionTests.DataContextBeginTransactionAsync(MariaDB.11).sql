@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,
@@ -7,10 +6,8 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

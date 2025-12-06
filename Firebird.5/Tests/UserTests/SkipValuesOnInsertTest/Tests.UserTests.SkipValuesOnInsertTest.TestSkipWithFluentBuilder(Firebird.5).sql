@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

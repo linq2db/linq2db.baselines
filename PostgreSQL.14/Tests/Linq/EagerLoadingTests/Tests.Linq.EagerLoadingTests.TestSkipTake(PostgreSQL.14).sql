@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_2."Id1",
@@ -17,8 +14,7 @@ FROM
 	) m_2
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_2."Id1",
@@ -46,10 +42,7 @@ FROM
 			LIMIT 2 OFFSET 1 
 		) d_1 ON 1=1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id1",
@@ -59,10 +52,7 @@ SELECT
 FROM
 	"MasterClass" m_1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id1",
@@ -78,10 +68,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id1",

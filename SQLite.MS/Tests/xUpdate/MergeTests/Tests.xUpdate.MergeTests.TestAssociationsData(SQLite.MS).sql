@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

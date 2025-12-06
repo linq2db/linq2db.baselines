@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [Person]
@@ -22,12 +20,10 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
@@ -41,7 +37,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 12
 
 SELECT
+	[i].[Id],
 	[i].[Name],
 	[i].[ParentId]
 FROM

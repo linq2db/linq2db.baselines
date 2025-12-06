@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Child
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Child
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -46,7 +42,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p Int -- Int32
@@ -14,8 +13,7 @@ WHERE
 	"c_1"."ParentID" = ?
 LIMIT ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @p Int -- Int32
 SET     @p = 2
 DECLARE @p Int -- Int32

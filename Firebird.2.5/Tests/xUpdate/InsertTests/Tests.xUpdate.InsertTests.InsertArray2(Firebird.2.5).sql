@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID > 1000
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @arr Binary
 SET     @arr = NULL
@@ -24,7 +22,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -40,7 +37,6 @@ FROM
 WHERE
 	"t".ID = 1001
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

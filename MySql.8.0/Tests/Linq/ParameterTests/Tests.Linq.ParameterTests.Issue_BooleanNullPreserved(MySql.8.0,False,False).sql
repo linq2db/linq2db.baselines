@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `TestBool`
 (
@@ -12,7 +11,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -22,16 +20,13 @@ FROM
 	`TestBool` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`TestBool` `t1`
 SET
-	`t1`.`Id` = 1,
 	`t1`.`Value` = NOT `t1`.`Value`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -41,7 +36,6 @@ FROM
 	`TestBool` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
@@ -50,7 +44,6 @@ SET
 	`t1`.`Id` = 1,
 	`t1`.`Value` = 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Value"
 FROM
 	"TakeSkipClass" t1

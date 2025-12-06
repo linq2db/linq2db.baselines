@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[p1].[ParentID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p2].[ParentID] <= 3
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

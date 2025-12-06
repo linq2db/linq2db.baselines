@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
@@ -20,7 +19,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -42,7 +40,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -57,7 +54,6 @@ GROUP BY
 ORDER BY
 	[t1].[ReferenceId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'
@@ -100,7 +96,6 @@ FROM
 ORDER BY
 	[t3].[count_1] DESC
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'

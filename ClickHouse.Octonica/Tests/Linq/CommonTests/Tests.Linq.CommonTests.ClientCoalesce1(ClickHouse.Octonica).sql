@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Value1
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Coalesce(x.Value1, 100) > 10
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Key_1",
@@ -16,7 +13,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."Key_1" = d."ParentID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

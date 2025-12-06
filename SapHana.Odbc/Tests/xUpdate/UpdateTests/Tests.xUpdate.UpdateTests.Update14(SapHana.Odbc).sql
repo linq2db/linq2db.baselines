@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

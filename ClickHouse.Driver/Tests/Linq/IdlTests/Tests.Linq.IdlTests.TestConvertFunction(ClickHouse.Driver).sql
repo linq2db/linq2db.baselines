@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.PersonID
 FROM
 	Patient x
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	Person x
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

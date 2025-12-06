@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey]', N'U') IS NOT NULL)

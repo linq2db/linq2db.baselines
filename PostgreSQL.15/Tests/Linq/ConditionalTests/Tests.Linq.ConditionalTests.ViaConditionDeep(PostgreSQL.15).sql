@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	x."Id",
@@ -26,7 +25,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -18,8 +15,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -29,12 +25,7 @@ FROM
 WHERE
 	[x].[ParentID] = 3
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -51,8 +42,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -62,12 +52,7 @@ FROM
 WHERE
 	[x].[ParentID] = 3
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -84,8 +69,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -95,5 +79,3 @@ FROM
 WHERE
 	[x].[ParentID] = 3
 
-BeforeExecute
-DisposeTransactionAsync

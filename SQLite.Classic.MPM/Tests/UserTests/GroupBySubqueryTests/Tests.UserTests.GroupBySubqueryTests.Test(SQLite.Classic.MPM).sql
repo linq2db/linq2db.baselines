@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

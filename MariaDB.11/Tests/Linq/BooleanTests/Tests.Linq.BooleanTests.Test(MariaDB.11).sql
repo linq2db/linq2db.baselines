@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -18,8 +17,7 @@ FROM
 WHERE
 	`r`.`Boolean` = @True
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -34,8 +32,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @False Bool -- Boolean
 SET     @False = 0
 
@@ -54,8 +51,7 @@ FROM
 WHERE
 	`r`.`Boolean` = @False
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -70,8 +66,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @TrueN Bool -- Boolean
 SET     @TrueN = 1
 
@@ -90,8 +85,7 @@ FROM
 WHERE
 	`r`.`Boolean` = @TrueN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -106,8 +100,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FalseN Bool -- Boolean
 SET     @FalseN = 0
 
@@ -126,8 +119,7 @@ FROM
 WHERE
 	`r`.`Boolean` = @FalseN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -142,8 +134,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -160,8 +151,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -176,8 +166,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -196,8 +185,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = @True
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -212,8 +200,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @False Bool -- Boolean
 SET     @False = 0
 
@@ -232,8 +219,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = @False
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -248,8 +234,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @TrueN Bool -- Boolean
 SET     @TrueN = 1
 
@@ -268,8 +253,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = @TrueN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -284,8 +268,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FalseN Bool -- Boolean
 SET     @FalseN = 0
 
@@ -304,8 +287,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = @FalseN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -320,8 +302,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -338,8 +319,7 @@ FROM
 WHERE
 	`r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -354,8 +334,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -374,8 +353,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> @True
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -390,8 +368,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @False Bool -- Boolean
 SET     @False = 0
 
@@ -410,8 +387,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> @False
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -426,8 +402,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @TrueN Bool -- Boolean
 SET     @TrueN = 1
 
@@ -446,8 +421,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> @TrueN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -462,8 +436,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FalseN Bool -- Boolean
 SET     @FalseN = 0
 
@@ -482,8 +455,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> @FalseN
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -498,8 +470,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -514,8 +485,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -530,8 +500,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -550,8 +519,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> @True OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -566,8 +534,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @False Bool -- Boolean
 SET     @False = 0
 
@@ -586,8 +553,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> @False OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -602,8 +568,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @TrueN Bool -- Boolean
 SET     @TrueN = 1
 
@@ -622,8 +587,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> @TrueN OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -638,8 +602,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FalseN Bool -- Boolean
 SET     @FalseN = 0
 
@@ -658,8 +621,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> @FalseN OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -674,8 +636,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -692,8 +653,7 @@ FROM
 WHERE
 	`r`.`BooleanN` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -708,8 +668,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`g_1`.`Id`,
@@ -898,8 +857,7 @@ FROM
 GROUP BY
 	`g_1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -914,8 +872,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1587,8 +1544,7 @@ SELECT
 FROM
 	`BooleanTable` `r_1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1603,8 +1559,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1621,8 +1576,7 @@ FROM
 WHERE
 	`r`.`Boolean` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1637,8 +1591,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1655,8 +1608,7 @@ FROM
 WHERE
 	`r`.`Boolean` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1671,8 +1623,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1689,8 +1640,7 @@ FROM
 WHERE
 	`r`.`Boolean` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1705,8 +1655,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1723,8 +1672,7 @@ FROM
 WHERE
 	`r`.`Boolean` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1739,8 +1687,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1757,8 +1704,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1773,8 +1719,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1791,8 +1736,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1807,8 +1751,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1825,8 +1768,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1841,8 +1783,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1859,8 +1800,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1875,8 +1815,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1893,8 +1832,7 @@ FROM
 WHERE
 	`r`.`BooleanN` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1909,8 +1847,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1927,8 +1864,7 @@ FROM
 WHERE
 	`r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1943,8 +1879,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1961,8 +1896,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1977,8 +1911,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -1995,8 +1928,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2011,8 +1943,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2029,8 +1960,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2045,8 +1975,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2063,8 +1992,7 @@ FROM
 WHERE
 	`r`.`Boolean` <> 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2079,8 +2007,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2095,8 +2022,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2111,76 +2037,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`r`.`Id`,
-	`r`.`Boolean`,
-	`r`.`BooleanN`,
-	`r`.`Int32`,
-	`r`.`Int32N`,
-	`r`.`Decimal`,
-	`r`.`DecimalN`,
-	`r`.`Double`,
-	`r`.`DoubleN`
-FROM
-	`BooleanTable` `r`
-WHERE
-	`r`.`BooleanN` <> 1 OR `r`.`BooleanN` IS NULL
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Boolean`,
-	`t1`.`BooleanN`,
-	`t1`.`Int32`,
-	`t1`.`Int32N`,
-	`t1`.`Decimal`,
-	`t1`.`DecimalN`,
-	`t1`.`Double`,
-	`t1`.`DoubleN`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`r`.`Id`,
-	`r`.`Boolean`,
-	`r`.`BooleanN`,
-	`r`.`Int32`,
-	`r`.`Int32N`,
-	`r`.`Decimal`,
-	`r`.`DecimalN`,
-	`r`.`Double`,
-	`r`.`DoubleN`
-FROM
-	`BooleanTable` `r`
-WHERE
-	`r`.`BooleanN` <> 0 OR `r`.`BooleanN` IS NULL
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Boolean`,
-	`t1`.`BooleanN`,
-	`t1`.`Int32`,
-	`t1`.`Int32N`,
-	`t1`.`Decimal`,
-	`t1`.`DecimalN`,
-	`t1`.`Double`,
-	`t1`.`DoubleN`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2197,8 +2054,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> 1 OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2213,8 +2069,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2231,8 +2086,7 @@ FROM
 WHERE
 	`r`.`BooleanN` <> 0 OR `r`.`BooleanN` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2247,8 +2101,71 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Boolean`,
+	`r`.`BooleanN`,
+	`r`.`Int32`,
+	`r`.`Int32N`,
+	`r`.`Decimal`,
+	`r`.`DecimalN`,
+	`r`.`Double`,
+	`r`.`DoubleN`
+FROM
+	`BooleanTable` `r`
+WHERE
+	`r`.`BooleanN` <> 1 OR `r`.`BooleanN` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Boolean`,
+	`t1`.`BooleanN`,
+	`t1`.`Int32`,
+	`t1`.`Int32N`,
+	`t1`.`Decimal`,
+	`t1`.`DecimalN`,
+	`t1`.`Double`,
+	`t1`.`DoubleN`
+FROM
+	`BooleanTable` `t1`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Boolean`,
+	`r`.`BooleanN`,
+	`r`.`Int32`,
+	`r`.`Int32N`,
+	`r`.`Decimal`,
+	`r`.`DecimalN`,
+	`r`.`Double`,
+	`r`.`DoubleN`
+FROM
+	`BooleanTable` `r`
+WHERE
+	`r`.`BooleanN` <> 0 OR `r`.`BooleanN` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Boolean`,
+	`t1`.`BooleanN`,
+	`t1`.`Int32`,
+	`t1`.`Int32N`,
+	`t1`.`Decimal`,
+	`t1`.`DecimalN`,
+	`t1`.`Double`,
+	`t1`.`DoubleN`
+FROM
+	`BooleanTable` `t1`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -2265,8 +2182,7 @@ FROM
 WHERE
 	`r`.`BooleanN` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2281,8 +2197,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`g_1`.`Id`,
@@ -2471,8 +2386,7 @@ FROM
 GROUP BY
 	`g_1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2487,8 +2401,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -3160,8 +3073,7 @@ SELECT
 FROM
 	`BooleanTable` `r_1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

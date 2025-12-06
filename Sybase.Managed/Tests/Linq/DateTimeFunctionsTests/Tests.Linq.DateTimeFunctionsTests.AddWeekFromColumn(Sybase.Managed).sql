@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	CONVERT(Date, DateAdd(week, [t].[SmallIntValue], [t].[DateTimeValue]))

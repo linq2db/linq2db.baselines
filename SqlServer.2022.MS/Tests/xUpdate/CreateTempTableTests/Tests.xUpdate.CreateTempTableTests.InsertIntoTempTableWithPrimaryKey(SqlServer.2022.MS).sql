@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
@@ -8,10 +7,8 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey2]

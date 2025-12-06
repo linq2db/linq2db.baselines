@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[m_1].[Value] = 'Frau'
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

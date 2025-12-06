@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 3
 	"ch"."ParentID",

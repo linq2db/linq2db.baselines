@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -11,7 +10,6 @@ FROM
 	"Child" "g_1"
 LIMIT ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

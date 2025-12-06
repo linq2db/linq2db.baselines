@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -18,5 +16,3 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
-DisposeTransaction

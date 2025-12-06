@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @int1 Int32
 SET     @int1 = 11
 DECLARE @int2 Int32
@@ -95,7 +94,6 @@ WHERE
 			"UpdatedEntities"."id" = t3."id"
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

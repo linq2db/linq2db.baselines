@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1000
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Parent]
@@ -32,7 +30,6 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

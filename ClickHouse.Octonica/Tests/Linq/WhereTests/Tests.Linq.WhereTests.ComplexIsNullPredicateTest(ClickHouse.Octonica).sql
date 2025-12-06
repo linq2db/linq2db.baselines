@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	r.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

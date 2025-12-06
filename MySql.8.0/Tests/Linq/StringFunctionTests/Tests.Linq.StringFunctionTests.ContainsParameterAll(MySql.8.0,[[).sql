@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @toTest VarChar(2) -- String
 SET     @toTest = '[['
 DECLARE @s VarChar(8) -- String

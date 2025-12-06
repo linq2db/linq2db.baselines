@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t].[ParentID],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Parent] [t]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 1

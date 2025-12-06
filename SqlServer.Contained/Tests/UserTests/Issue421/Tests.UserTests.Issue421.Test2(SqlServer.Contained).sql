@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [BlobClass]
 (
@@ -12,7 +11,6 @@ VALUES
 	0x010203
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -23,7 +21,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 UPDATE
@@ -33,7 +30,6 @@ SET
 WHERE
 	[BlobClass].[Id] = 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)

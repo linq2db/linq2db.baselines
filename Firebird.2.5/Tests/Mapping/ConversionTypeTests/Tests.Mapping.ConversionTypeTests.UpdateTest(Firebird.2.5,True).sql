@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 UPDATE
 	"TrimTestTable" "t1"
@@ -8,7 +7,6 @@ SET
 WHERE
 	"t1".ID = 3
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	"t"."Data" = '***XXX***'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	"t"."Data" = '***HHH***'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

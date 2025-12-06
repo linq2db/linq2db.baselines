@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	sum(grp_1.MoneyValue),
+	SUM(grp_1.MoneyValue),
 	toYear(grp_1.Date_1),
 	toMonth(grp_1.Date_1)
 FROM
@@ -16,11 +15,10 @@ FROM
 GROUP BY
 	grp_1.Date_1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	sum(grp_1.MoneyValue),
+	SUM(grp_1.MoneyValue),
 	toYear(grp_1.Date_1),
 	toMonth(grp_1.Date_1)
 FROM

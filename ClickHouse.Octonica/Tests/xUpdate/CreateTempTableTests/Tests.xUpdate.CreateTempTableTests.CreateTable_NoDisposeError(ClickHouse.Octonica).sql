@@ -1,23 +1,22 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE TempTable
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable

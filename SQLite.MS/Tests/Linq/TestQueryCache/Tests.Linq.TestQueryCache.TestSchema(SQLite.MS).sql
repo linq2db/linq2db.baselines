@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -42,7 +40,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -64,7 +61,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1

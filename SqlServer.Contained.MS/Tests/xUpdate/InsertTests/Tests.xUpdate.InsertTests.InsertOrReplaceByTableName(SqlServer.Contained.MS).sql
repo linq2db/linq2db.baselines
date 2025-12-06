@@ -1,21 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [xxPatient]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int            NOT NULL,
-	[Diagnosis] NVarChar(4000)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -42,7 +25,6 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
@@ -70,7 +52,6 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -78,7 +59,6 @@ SELECT
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
@@ -106,7 +86,6 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
@@ -134,16 +113,10 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [xxPatient]
 

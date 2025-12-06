@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`p`.`FirstName`,
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

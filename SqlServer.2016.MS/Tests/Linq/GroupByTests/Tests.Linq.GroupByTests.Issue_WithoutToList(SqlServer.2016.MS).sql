@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
@@ -20,7 +19,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -42,9 +40,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'
@@ -98,9 +93,6 @@ FROM
 ORDER BY
 	[d].[count_1] DESC
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

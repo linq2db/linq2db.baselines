@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -12,7 +10,6 @@ SELECT
 FROM
 	Child p
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

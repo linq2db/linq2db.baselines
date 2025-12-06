@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName VarChar(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

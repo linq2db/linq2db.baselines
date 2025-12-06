@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName NVarChar(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

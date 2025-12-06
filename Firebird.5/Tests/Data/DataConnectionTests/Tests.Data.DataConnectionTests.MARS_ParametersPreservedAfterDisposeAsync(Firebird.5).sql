@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+﻿-- Firebird.5 Firebird4
 DECLARE @param VarChar(4) -- String
 SET     @param = 'test'
 

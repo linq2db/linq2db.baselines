@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Code VarChar(6) -- String
 SET     @Code = 'Child2'
@@ -42,7 +40,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

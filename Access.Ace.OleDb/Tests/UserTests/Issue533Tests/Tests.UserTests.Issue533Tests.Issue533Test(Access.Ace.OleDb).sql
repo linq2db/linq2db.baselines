@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarWChar(12) -- String
@@ -24,12 +23,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5

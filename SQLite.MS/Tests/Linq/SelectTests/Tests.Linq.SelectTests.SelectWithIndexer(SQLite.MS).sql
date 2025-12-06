@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[FirstName],
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	[x].[PersonID] DESC
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

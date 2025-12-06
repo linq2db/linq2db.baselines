@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	it_1.cond,
@@ -23,7 +22,6 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

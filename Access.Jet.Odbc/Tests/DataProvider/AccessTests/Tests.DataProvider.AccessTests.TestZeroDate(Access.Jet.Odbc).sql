@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [DateTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	DateSerial(1899, 12, 29)
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [DateTable]
@@ -26,7 +24,6 @@ VALUES
 	DateSerial(1899, 12, 30)
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [DateTable]
@@ -40,7 +37,6 @@ VALUES
 	DateSerial(1899, 12, 31)
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [DateTable]
@@ -54,7 +50,6 @@ VALUES
 	DateSerial(1900, 1, 1)
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

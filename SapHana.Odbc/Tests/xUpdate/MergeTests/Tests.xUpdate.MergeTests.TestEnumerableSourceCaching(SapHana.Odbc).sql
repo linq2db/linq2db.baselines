@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "CacheTestTable" "Target"
 USING (
@@ -25,7 +24,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -36,7 +34,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "CacheTestTable" "Target"
@@ -65,7 +62,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

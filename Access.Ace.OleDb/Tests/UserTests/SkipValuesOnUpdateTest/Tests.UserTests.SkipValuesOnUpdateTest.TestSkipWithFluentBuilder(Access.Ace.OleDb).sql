@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Name VarWChar(6) -- String
 SET     @Name = 'Franki'
@@ -49,7 +46,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -61,7 +57,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'Jack'
@@ -75,7 +70,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1

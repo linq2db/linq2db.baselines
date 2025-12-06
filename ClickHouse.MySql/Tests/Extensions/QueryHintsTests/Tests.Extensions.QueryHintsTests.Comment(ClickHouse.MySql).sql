@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	Parent p
 ---
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

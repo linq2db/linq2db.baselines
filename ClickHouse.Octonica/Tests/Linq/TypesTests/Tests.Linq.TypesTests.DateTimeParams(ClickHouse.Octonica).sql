@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.DateTimeValue
@@ -9,7 +8,6 @@ WHERE
 	t.DateTimeValue > toDateTime64('1992-01-11 01:11:21.100', 3)
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

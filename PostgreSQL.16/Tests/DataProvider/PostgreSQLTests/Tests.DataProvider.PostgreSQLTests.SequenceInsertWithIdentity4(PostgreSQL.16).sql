@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	test_schema."TestSchemaIdentity" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_schema."TestSchemaIdentity"
@@ -18,7 +16,6 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 	test_schema."TestSchemaIdentity" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"p"."PK",
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",
@@ -22,12 +22,12 @@ WHERE
 				SELECT "p"."Date3" FROM DUMMY
 				UNION ALL
 				SELECT "p"."Date4" FROM DUMMY) "t1"
-	) > '2023-01-01'
+	) > To_Timestamp('2023-01-01 00:00:00.000')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"p"."PK",
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	arg."Id",
@@ -10,7 +9,6 @@ FROM
 			(1,NULL::decimal)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

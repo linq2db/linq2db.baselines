@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Value1",
@@ -17,7 +16,6 @@ FROM
 WHERE
 	"p2"."ParentID" <= 3
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

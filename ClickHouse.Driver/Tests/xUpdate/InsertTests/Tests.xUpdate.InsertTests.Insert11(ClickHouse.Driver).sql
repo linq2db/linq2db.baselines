@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
@@ -26,7 +24,6 @@ VALUES
 	'ln'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

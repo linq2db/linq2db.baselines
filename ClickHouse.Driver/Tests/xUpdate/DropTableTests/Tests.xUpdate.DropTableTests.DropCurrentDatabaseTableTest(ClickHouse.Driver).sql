@@ -1,18 +1,18 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS DropTableTest
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE DropTableTest
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO DropTableTest
@@ -24,7 +24,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -32,12 +31,10 @@ SELECT
 FROM
 	DropTableTest t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE DropTableTest
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

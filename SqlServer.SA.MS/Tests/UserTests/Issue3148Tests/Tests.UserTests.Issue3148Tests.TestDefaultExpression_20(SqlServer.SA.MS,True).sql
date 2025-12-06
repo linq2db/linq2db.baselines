@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[r].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[r].[LastName] LIKE N'%x' ESCAPE N'~' AND Convert(VarBinary(8000), RIGHT([r].[LastName], LEN(N'x'))) = Convert(VarBinary(8000), N'x')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

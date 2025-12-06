@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -12,15 +10,15 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 CREATE TABLE #TempTable
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [TempTable]

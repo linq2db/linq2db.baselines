@@ -1,15 +1,27 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
-CREATE TABLE [tempdb]..[#temp_table_2]
+CREATE TABLE [temp_table_1]
 (
-	[Value] NVarChar(4000)     NULL
+	[ID]    Int            NOT NULL,
+	[Value] NVarChar(4000)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
+INSERT BULK [temp_table_1](ID, Value)
+
 -- SqlServer.2008
 
-INSERT INTO [tempdb]..[#temp_table_2]
+CREATE TABLE [temp_table_2]
+(
+	[Value] NVarChar(50) NOT NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY CLUSTERED ([Value])
+)
+
+-- SqlServer.2008
+
+INSERT INTO [temp_table_2]
 (
 	[Value]
 )
@@ -33,9 +45,13 @@ FROM
 				[gr_1].[ID] = [c_1].[ID]
 		) [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#temp_table_2]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#temp_table_2]
+IF (OBJECT_ID(N'[temp_table_2]', N'U') IS NOT NULL)
+	DROP TABLE [temp_table_2]
+
+-- SqlServer.2008
+
+IF (OBJECT_ID(N'[temp_table_1]', N'U') IS NOT NULL)
+	DROP TABLE [temp_table_1]
 

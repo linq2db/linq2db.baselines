@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[CollatedTable]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -26,41 +24,37 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[CollatedTable] [r]
 WHERE

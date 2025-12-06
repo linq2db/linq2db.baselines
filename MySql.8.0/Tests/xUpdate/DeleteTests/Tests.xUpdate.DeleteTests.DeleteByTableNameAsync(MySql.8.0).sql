@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-
-DROP TABLE IF EXISTS `xxPerson`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-
-CREATE TABLE `xxPerson`
-(
-	`FirstName`  VARCHAR(4000)                NOT NULL,
-	`PersonID`   INT           AUTO_INCREMENT NOT NULL,
-	`LastName`   VARCHAR(4000)                NOT NULL,
-	`MiddleName` VARCHAR(4000)                    NULL,
-	`Gender`     CHAR                         NOT NULL,
-
-	CONSTRAINT `PK_xxPerson` PRIMARY KEY CLUSTERED (`PersonID`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -43,16 +23,14 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`FirstName`,
@@ -64,8 +42,7 @@ FROM
 	`xxPerson` `t1`
 LIMIT 2
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -75,16 +52,10 @@ FROM
 WHERE
 	`xxPerson`.`PersonID` = @ID
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	COUNT(*)
 FROM
 	`xxPerson` `t1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
-
-DROP TABLE `xxPerson`
 

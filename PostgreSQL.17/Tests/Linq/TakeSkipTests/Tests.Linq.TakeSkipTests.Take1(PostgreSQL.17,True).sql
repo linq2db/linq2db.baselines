@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -10,7 +9,6 @@ FROM
 	"Child" ch
 LIMIT :take
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
@@ -22,7 +20,6 @@ FROM
 	"Child" ch
 LIMIT :take
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
@@ -34,7 +31,6 @@ FROM
 	"Child" ch
 LIMIT :take
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[ParentID],
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	[t1].[ChildID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

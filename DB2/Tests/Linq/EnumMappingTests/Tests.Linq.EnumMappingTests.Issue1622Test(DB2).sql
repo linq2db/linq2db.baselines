@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @SomeText VarChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -28,7 +26,6 @@ WHERE
 	"e"."SomeText" = 'Value1_suffix'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

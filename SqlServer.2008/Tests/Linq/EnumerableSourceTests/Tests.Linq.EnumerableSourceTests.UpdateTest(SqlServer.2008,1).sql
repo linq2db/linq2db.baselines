@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 UPDATE
 	[u]
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[u].[Id] = [r].[Id]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.SectorId,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	a_UserPosition.PositionId = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

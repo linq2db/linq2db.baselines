@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value Int -- Int32
 SET     @Value = 200
@@ -28,7 +26,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Value Int -- Int32
 SET     @Value = 300
@@ -42,7 +39,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -57,7 +53,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

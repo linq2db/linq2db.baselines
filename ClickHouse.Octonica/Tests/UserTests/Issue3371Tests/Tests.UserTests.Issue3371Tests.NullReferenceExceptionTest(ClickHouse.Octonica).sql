@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	item_1.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	a_PayRate.Name = 'test'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

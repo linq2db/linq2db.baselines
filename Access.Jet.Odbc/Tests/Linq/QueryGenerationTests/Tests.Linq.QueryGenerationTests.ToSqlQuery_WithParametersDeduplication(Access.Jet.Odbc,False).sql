@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @firstName NVarChar(255) -- String
 SET     @firstName = 'John'
 DECLARE @firstName NVarChar(255) -- String
@@ -16,7 +15,6 @@ FROM
 WHERE
 	[p].[FirstName] = ? OR [p].[LastName] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'

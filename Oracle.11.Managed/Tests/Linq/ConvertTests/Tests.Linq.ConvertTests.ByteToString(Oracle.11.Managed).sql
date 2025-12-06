@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	p.ID
+	CAST(CAST(p.ID AS Number(3)) AS VarChar(255))
 FROM
 	"LinqDataTypes" p
 WHERE

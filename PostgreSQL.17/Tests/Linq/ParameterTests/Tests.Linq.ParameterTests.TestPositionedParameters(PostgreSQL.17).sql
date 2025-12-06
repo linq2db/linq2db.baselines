@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer -- Int32

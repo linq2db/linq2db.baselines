@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -32,7 +30,6 @@ FROM
 WHERE
 	"t"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -54,7 +51,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

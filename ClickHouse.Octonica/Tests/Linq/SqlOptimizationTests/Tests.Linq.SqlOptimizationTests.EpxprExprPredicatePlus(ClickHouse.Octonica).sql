@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.Id,
@@ -10,7 +9,6 @@ FROM
 WHERE
 	t.Id > 4
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	4 < t.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	t.Id > 4
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

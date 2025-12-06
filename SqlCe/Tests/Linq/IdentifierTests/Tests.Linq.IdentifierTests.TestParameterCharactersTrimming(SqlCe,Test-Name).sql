@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @TestName Int -- Int32
 SET     @TestName = 2
 

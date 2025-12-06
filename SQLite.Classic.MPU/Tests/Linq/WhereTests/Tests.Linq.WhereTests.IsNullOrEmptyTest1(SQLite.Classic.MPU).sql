@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	NOT ([nm].[MiddleName] IS NULL OR Length([nm].[MiddleName]) = 0)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

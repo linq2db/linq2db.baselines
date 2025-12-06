@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @Name Varchar2(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Int16
+SET     @Enabled = 1
+DECLARE @ImageFullUrl Varchar2(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	:Name,
+	:Enabled,
+	:ImageFullUrl
+)
+
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
@@ -20,29 +40,6 @@ VALUES
 	:ImageFullUrl
 )
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @Name Varchar2(6) -- String
-SET     @Name = 'group1'
-DECLARE @Enabled Int16
-SET     @Enabled = 1
-DECLARE @ImageFullUrl Varchar2(3) -- String
-SET     @ImageFullUrl = '123'
-
-INSERT INTO "Stone"
-(
-	"Name",
-	"Enabled",
-	"ImageFullUrl"
-)
-VALUES
-(
-	:Name,
-	:Enabled,
-	:ImageFullUrl
-)
-
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group2'
@@ -64,7 +61,6 @@ VALUES
 	:ImageFullUrl
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

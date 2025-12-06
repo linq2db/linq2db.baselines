@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	toDecimal128(toFloat64(toDecimal128(v.Integer, 10)) / toFloat64(toDecimal128('33', 10)), 10),

@@ -1,21 +1,22 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "SomeTable"
 (
+	"Id",
 	"ClassProp",
 	"Interface"
 )
 VALUES
 (
+	1,
 	True,
 	False
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."ClassProp",
 	t1."Interface"
 FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 
 WITH [ProductsOverTenDollars] ([CategoryID], [ProductName], [UnitPrice])
 AS
@@ -41,7 +40,6 @@ FROM
 ORDER BY
 	[t1].[ProductName]
 
-BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT

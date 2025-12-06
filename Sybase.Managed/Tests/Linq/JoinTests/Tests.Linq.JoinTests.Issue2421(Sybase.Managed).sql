@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[m_1].[SectorId],
@@ -14,9 +11,6 @@ FROM
 WHERE
 	[a_UserPosition].[PositionId] = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

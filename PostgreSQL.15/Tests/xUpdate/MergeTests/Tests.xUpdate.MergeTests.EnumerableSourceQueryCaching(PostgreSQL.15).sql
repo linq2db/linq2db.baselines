@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
@@ -35,7 +33,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -50,13 +47,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
@@ -87,7 +82,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -102,13 +96,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
@@ -139,7 +131,6 @@ VALUES
 	"Source"."Field4"
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

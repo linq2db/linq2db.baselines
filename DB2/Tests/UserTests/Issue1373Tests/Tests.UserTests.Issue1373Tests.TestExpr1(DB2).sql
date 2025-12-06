@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Issue1373Tests"
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Issue1373Tests"
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Issue1373Tests"
@@ -40,7 +37,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

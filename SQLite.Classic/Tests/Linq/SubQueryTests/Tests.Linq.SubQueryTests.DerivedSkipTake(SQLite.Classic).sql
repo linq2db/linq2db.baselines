@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 DECLARE @skip  -- Int32
@@ -18,7 +17,6 @@ FROM
 		LIMIT @take OFFSET @skip
 	) [t2]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

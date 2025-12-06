@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @UserId  -- Int32
 SET     @UserId = 123
 DECLARE @take  -- Int32
@@ -34,9 +31,6 @@ FROM
 	) [m_1]
 		INNER JOIN [User] [d] ON [m_1].[UserId] = [d].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @UserId  -- Int32
 SET     @UserId = 123

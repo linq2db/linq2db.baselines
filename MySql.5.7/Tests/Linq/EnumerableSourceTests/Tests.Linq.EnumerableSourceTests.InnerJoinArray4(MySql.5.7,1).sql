@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`FirstName`,
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

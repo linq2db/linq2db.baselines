@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @p NVarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[e].[StringValue] + '1' = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

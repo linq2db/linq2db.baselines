@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[ess].[ID]
@@ -15,7 +14,6 @@ WHERE
 			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
 	)
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`TrimTestTable` `t1`
@@ -8,8 +7,7 @@ SET
 WHERE
 	`t1`.`ID` = 3
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`TrimTestTable` `t`
@@ -18,8 +16,7 @@ SET
 WHERE
 	`t`.`Data` = '***XXX***'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`TrimTestTable` `t`
@@ -28,8 +25,7 @@ SET
 WHERE
 	`t`.`Data` = '***HHH***'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,
@@ -39,8 +35,7 @@ FROM
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(4000) -- String
@@ -31,7 +30,6 @@ WHEN NOT MATCHED THEN
 		@LastName
 	);
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
@@ -46,7 +44,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 0
@@ -84,7 +81,6 @@ WHEN NOT MATCHED THEN
 		@MiddleName
 	);
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'

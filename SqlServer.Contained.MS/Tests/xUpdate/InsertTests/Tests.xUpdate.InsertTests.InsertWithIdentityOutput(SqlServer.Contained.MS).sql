@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
@@ -39,7 +37,6 @@ VALUES
 
 SELECT [PersonID] FROM @PersonOutput
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
@@ -55,7 +52,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
@@ -87,7 +83,6 @@ VALUES
 
 SELECT [PersonID] FROM @PersonOutput
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
@@ -103,7 +98,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t1]

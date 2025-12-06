@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName Text(8) -- String
@@ -24,8 +23,7 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @name Integer -- Int32
 SET     @name = 8
 DECLARE @idx Integer -- Int32
@@ -38,8 +36,7 @@ SET
 WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 		LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

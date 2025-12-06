@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Binary(3)
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'030201'
@@ -39,7 +36,6 @@ SET
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

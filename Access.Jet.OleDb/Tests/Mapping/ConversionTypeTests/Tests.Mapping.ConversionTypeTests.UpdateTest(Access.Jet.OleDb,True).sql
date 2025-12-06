@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 UPDATE
 	[TrimTestTable] [t1]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[t1].[ID] = 3
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[t].[Data] = '***XXX***'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[t].[Data] = '***HHH***'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

@@ -1,32 +1,21 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[m_1].[ID],
+	[m_1].[PersonID],
 	[d].[PersonID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[PersonID] as [ID]
+	[Person] [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[PersonID]
+WHERE
+	[m_1].[PersonID] IN (
+		SELECT
+			[x].[Id]
 		FROM
-			[Person] [p]
-		WHERE
-			[p].[PersonID] IN (
-				SELECT
-					[x].[Id]
-				FROM
-					@p [x]
-			)
-	) [m_1]
-		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
+			@p [x]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
@@ -43,35 +32,24 @@ WHERE
 			@p [x]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[m_1].[ID],
+	[m_1].[PersonID],
 	[d].[PersonID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[PersonID] as [ID]
+	[Person] [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[PersonID]
+WHERE
+	[m_1].[PersonID] IN (
+		SELECT
+			[x].[Id]
 		FROM
-			[Person] [p]
-		WHERE
-			[p].[PersonID] IN (
-				SELECT
-					[x].[Id]
-				FROM
-					@p [x]
-			)
-	) [m_1]
-		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
+			@p [x]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
@@ -88,35 +66,24 @@ WHERE
 			@p [x]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[m_1].[ID],
+	[m_1].[PersonID],
 	[d].[PersonID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[PersonID] as [ID]
+	[Person] [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[PersonID]
+WHERE
+	[m_1].[PersonID] IN (
+		SELECT
+			[x].[Id]
 		FROM
-			[Person] [p]
-		WHERE
-			[p].[PersonID] IN (
-				SELECT
-					[x].[Id]
-				FROM
-					@p [x]
-			)
-	) [m_1]
-		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
+			@p [x]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
@@ -133,35 +100,24 @@ WHERE
 			@p [x]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
 SELECT
-	[m_1].[ID],
+	[m_1].[PersonID],
 	[d].[PersonID]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[PersonID] as [ID]
+	[Person] [m_1]
+		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[PersonID]
+WHERE
+	[m_1].[PersonID] IN (
+		SELECT
+			[x].[Id]
 		FROM
-			[Person] [p]
-		WHERE
-			[p].[PersonID] IN (
-				SELECT
-					[x].[Id]
-				FROM
-					@p [x]
-			)
-	) [m_1]
-		INNER JOIN [Person] [d] ON [d].[PersonID] > [m_1].[ID]
+			@p [x]
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 

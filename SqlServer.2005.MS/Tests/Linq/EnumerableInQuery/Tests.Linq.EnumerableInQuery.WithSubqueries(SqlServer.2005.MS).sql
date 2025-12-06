@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[it_1].[cond],
@@ -20,7 +19,7 @@ FROM
 				(
 					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], (
 					SELECT
-						COUNT(*) as [COUNT_1]
+						COUNT(*) as [Count_1]
 					FROM
 						[SomeItem] [t1]
 				) AS [Count]
@@ -30,7 +29,6 @@ FROM
 WHERE
 	[it_1].[ColorName] = N'Red'
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -46,7 +44,6 @@ FROM
 		LEFT JOIN [SomeColor] [a_Color] ON [t1].[ColorId] = [a_Color].[Id]
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

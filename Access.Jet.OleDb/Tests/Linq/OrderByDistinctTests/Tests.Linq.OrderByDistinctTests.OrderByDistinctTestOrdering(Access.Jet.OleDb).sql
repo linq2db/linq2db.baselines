@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -16,7 +14,6 @@ FROM
 ORDER BY
 	[x].[OrderData1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
@@ -24,7 +21,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -34,7 +30,6 @@ FROM
 ORDER BY
 	[x].[OrderData1] DESC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
@@ -42,7 +37,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -53,7 +47,6 @@ ORDER BY
 	[x].[OrderData1],
 	[x].[OrderData2]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
@@ -61,7 +54,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -72,7 +64,6 @@ ORDER BY
 	[x].[OrderData1],
 	[x].[OrderData2] DESC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
@@ -80,7 +71,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -91,7 +81,6 @@ ORDER BY
 	[x].[OrderData1] DESC,
 	[x].[OrderData2] DESC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
@@ -99,7 +88,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 3

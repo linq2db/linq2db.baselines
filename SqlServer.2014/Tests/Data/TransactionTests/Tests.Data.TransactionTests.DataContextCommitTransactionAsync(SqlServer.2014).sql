@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+﻿BeginTransactionAsync
+-- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -18,9 +16,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- SqlServer.2014
 
 DELETE [t1]

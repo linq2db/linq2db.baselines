@@ -1,6 +1,28 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
+﻿-- SqlServer.2017
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N''
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N''
+DECLARE @MiddleName NVarChar(4000) -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'M'
+
+INSERT INTO [Person]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
 -- SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
@@ -26,7 +48,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
@@ -52,35 +73,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlServer.2017
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N''
-DECLARE @LastName NVarChar(4000) -- String
-SET     @LastName = N''
-DECLARE @MiddleName NVarChar(4000) -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = N'M'
-
-INSERT INTO [Person]
-(
-	[FirstName],
-	[LastName],
-	[MiddleName],
-	[Gender]
-)
-VALUES
-(
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
-)
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -88,7 +80,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT Max([PersonID]) FROM [Person]

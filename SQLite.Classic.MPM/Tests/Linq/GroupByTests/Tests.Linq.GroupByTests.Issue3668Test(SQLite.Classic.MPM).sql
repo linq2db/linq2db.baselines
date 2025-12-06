@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
@@ -20,9 +17,6 @@ WHERE
 	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1

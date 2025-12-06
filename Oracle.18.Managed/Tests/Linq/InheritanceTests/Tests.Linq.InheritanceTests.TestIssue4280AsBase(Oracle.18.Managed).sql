@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SerialNumber Varchar2(7) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Location
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -46,7 +44,6 @@ VALUES
 	:DeviceType
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @SerialNumber Varchar2(7) -- String
 SET     @SerialNumber = 'TV00002'
@@ -79,7 +75,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @SerialNumber Varchar2(9) -- String
 SET     @SerialNumber = 'Disp00002'
@@ -96,7 +91,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 20
 DECLARE @take Int -- Int32
@@ -55,11 +54,10 @@ ORDER BY
 	[x].[Id]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT

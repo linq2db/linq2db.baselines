@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' OR [p].[LastName] = 'John'
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'

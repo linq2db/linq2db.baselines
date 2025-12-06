@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -20,7 +19,6 @@ FROM
 			[t2].[year_1]
 	) [t3]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

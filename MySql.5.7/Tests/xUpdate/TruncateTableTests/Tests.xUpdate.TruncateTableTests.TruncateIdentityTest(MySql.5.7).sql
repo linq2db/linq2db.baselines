@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `TestIdTrun`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE `TestIdTrun`
@@ -14,7 +12,6 @@ CREATE TABLE `TestIdTrun`
 	CONSTRAINT `PK_TestIdTrun` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestIdTrun`
@@ -26,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestIdTrun`
@@ -38,7 +34,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 1
@@ -52,12 +47,10 @@ ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 TRUNCATE TABLE `TestIdTrun`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestIdTrun`
@@ -69,7 +62,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TestIdTrun`
@@ -81,7 +73,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 1
@@ -95,7 +86,6 @@ ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE `TestIdTrun`

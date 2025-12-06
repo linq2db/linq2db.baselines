@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[c_1].[ContactName],

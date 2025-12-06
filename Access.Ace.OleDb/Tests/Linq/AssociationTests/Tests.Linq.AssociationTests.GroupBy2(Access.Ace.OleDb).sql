@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[m_1].[ParentID],
@@ -20,9 +17,6 @@ FROM
 WHERE
 	[m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

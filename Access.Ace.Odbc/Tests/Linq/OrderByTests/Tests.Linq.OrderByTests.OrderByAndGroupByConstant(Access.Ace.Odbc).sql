@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
 	COUNT(*),
@@ -8,7 +7,6 @@ SELECT TOP 1
 FROM
 	[Child] [g_1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

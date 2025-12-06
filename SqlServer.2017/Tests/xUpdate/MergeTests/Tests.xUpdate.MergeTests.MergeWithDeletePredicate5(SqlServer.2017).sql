@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 MERGE INTO [Child] [Target]
 USING (
@@ -60,5 +57,3 @@ EXISTS(
 ) THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

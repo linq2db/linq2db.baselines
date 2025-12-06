@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InsertTestClassDest
 (
@@ -12,7 +11,6 @@ SELECT
 FROM
 	InsertTestClass t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 	InsertTestClass t1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

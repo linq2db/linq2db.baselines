@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]

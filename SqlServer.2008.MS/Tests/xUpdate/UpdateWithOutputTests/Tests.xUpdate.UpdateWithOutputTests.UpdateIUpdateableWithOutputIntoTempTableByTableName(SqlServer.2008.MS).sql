@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 UPDATE
@@ -29,7 +29,6 @@ INTO [tempdb]..[#TableWithData_destination]
 WHERE
 	[TableWithData_source].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -39,7 +38,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_destination]', N'U') IS NOT NULL)

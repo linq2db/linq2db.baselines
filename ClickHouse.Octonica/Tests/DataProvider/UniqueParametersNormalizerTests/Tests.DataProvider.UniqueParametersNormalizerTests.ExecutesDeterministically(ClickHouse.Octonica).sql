@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	row1.Id
@@ -24,8 +23,7 @@ FROM
 WHERE
 	startsWith(row1_2.Field1, 'test')
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	row1.Id

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s."String" IS NOT NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	s."NullableString" IS NOT NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	s."String" IS NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

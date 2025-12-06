@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value Float -- Single
 SET     @value = 0
 
@@ -15,7 +14,6 @@ FROM
 			`Person` `r`
 	) `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value Float -- Single
 SET     @value = 3.14748365E+09

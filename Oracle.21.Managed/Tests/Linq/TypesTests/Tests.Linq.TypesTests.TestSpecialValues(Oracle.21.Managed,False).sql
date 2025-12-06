@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @real BinaryFloat -- Single
 SET     @real = BINARY_FLOAT_NAN
@@ -26,7 +24,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @real BinaryFloat -- Single
 SET     @real = -BINARY_FLOAT_INFINITY
@@ -46,7 +43,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @real BinaryFloat -- Single
 SET     @real = BINARY_FLOAT_INFINITY
@@ -66,7 +62,6 @@ VALUES
 	:dbl
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @maxID Int32
 SET     @maxID = 2

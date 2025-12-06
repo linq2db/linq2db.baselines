@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[m_2].[Id1],
@@ -17,7 +14,6 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -36,9 +32,6 @@ FROM
 ORDER BY
 	[d].[DetailId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -49,9 +42,6 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -68,9 +58,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

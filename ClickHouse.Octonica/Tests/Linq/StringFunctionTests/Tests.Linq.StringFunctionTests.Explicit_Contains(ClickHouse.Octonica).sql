@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	position(r.Diagnosis, 'Paranoid') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	position(r.Diagnosis, 'paranoid') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	positionCaseInsensitive(r.Diagnosis, 'paranoid') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123%456'
 DECLARE @toTest NVarChar(4) -- String

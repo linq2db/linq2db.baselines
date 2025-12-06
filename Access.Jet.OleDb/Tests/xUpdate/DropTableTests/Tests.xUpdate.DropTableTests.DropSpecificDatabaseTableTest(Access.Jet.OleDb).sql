@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Database\TestData].[DropTableTest]
@@ -23,7 +22,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -31,12 +29,10 @@ SELECT
 FROM
 	[Database\TestData].[DropTableTest] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [Database\TestData].[DropTableTest]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

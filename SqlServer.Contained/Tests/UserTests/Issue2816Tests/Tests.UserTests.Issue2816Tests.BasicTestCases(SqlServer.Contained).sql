@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[Id],
@@ -10,7 +9,6 @@ WHERE
 	[p].[Text] IS NULL OR (TRIM(N'	
                  　' FROM [p].[Text])) = N''
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

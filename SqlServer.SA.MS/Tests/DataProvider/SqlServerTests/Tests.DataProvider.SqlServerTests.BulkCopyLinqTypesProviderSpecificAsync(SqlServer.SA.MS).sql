@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT ASYNC BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
+﻿INSERT ASYNC BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DELETE [p]

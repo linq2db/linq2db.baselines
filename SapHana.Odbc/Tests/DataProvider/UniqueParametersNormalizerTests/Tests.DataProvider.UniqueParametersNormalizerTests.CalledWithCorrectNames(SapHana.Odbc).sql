@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search NVarChar(4) -- String

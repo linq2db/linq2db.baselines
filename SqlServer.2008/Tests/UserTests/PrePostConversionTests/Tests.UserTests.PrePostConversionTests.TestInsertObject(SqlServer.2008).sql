@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeValue2
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (2)

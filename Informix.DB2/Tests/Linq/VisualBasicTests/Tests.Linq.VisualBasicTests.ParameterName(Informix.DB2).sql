@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @VBLocal_id Integer(4) -- Int32
 SET     @VBLocal_id = 1
 

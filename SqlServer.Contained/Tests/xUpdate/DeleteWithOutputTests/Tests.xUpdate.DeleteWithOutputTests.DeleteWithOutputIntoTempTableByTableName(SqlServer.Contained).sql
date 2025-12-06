@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -20,7 +20,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [s]
@@ -39,7 +38,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -49,7 +47,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]

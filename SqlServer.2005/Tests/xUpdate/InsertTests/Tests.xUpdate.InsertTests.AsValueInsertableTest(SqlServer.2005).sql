@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 123
 DECLARE @FirstName NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@FirstName
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	:id
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -46,7 +43,6 @@ WHERE
 	"Child"."ParentID" = c_1."ParentID" AND
 	"Child"."ChildID" = c_1."ChildID"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1002

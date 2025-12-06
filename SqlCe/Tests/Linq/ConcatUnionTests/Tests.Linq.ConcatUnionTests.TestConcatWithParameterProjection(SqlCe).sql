@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 

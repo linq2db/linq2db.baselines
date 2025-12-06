@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN
@@ -28,7 +27,6 @@ BEGIN
 	END;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE TABLE "TestIdTrun"
@@ -39,12 +37,10 @@ CREATE TABLE "TestIdTrun"
 	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_TestIdTrun"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestIdTrun"
@@ -53,7 +49,6 @@ BEGIN
 	SELECT "SIDENTITY_TestIdTrun".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
@@ -65,7 +60,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
@@ -77,7 +71,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
@@ -109,12 +102,10 @@ WHERE
 ORDER BY
 	t3.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "TestIdTrun"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DECLARE
@@ -133,7 +124,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'ALTER SEQUENCE "SIDENTITY_TestIdTrun" INCREMENT BY 1 MINVALUE 0';
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
@@ -145,7 +135,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
@@ -157,7 +146,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
@@ -189,7 +177,6 @@ WHERE
 ORDER BY
 	t3.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 BEGIN

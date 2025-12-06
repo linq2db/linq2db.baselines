@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	`r`.`Column` = @Column AND `r`.`ColumnNullable` = @ColumnNullable
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	`r`.`Column` = 'value=2' AND `r`.`ColumnNullable` = 'value=33'
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`StringEnumTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`StringEnumTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `StringEnumTable`
@@ -109,7 +101,6 @@ VALUES
 (1,'val=1',NULL),
 (2,'value=2','value=33')
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -121,14 +112,12 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`StringEnumTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `StringEnumTable`
@@ -141,7 +130,6 @@ VALUES
 (1,'val=1',NULL),
 (2,'value=2','value=33')
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

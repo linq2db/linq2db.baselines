@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."Id",
@@ -12,8 +11,7 @@ WHERE
 	e."GuidValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid AND
 	e."GuidNullableValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

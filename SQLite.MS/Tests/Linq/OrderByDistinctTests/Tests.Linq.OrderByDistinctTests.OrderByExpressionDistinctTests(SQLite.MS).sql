@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -11,7 +10,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 3

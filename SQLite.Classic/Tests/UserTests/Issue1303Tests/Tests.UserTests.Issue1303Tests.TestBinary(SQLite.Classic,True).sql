@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [Issue1303]
 (
@@ -14,7 +13,6 @@ VALUES
 	X'0405'
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	[t1].[ID] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	[t1].[Array] = X'010203'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

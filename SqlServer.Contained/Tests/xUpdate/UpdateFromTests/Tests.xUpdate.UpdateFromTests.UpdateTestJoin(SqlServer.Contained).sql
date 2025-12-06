@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -21,7 +20,6 @@ FROM
 WHERE
 	[t].[id] <> @someId
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

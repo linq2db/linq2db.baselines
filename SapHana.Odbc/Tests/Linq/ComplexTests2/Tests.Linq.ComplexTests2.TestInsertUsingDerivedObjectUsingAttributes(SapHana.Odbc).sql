@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,12 +23,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -44,7 +41,6 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -67,7 +63,6 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -82,7 +77,6 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 5

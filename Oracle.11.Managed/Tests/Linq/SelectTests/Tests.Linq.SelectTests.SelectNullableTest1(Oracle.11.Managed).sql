@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -67,7 +65,6 @@ FROM
 WHERE
 	t1.ID = 1000 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

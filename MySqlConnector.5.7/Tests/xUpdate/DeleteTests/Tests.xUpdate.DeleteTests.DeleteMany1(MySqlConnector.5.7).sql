@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `Parent`
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `Child`
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `Child`
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE   `a_Children`
@@ -48,7 +44,6 @@ FROM
 WHERE
 	`p`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
@@ -57,7 +52,6 @@ FROM
 WHERE
 	`Child`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  

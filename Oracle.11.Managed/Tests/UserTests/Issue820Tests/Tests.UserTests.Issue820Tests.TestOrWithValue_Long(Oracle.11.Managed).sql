@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @param Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	:param = t1."BigIntValue"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

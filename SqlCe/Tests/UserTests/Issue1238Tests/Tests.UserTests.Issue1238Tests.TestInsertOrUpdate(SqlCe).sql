@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[InheritanceParent]
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -17,7 +13,6 @@ WHERE
 	[InheritanceParent].[InheritanceParentId] = 143 AND
 	[InheritanceParent].[Name] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [InheritanceParent]
@@ -33,15 +28,13 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -52,13 +45,10 @@ WHERE
 	[InheritanceParent].[InheritanceParentId] = 143 AND
 	[InheritanceParent].[Name] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

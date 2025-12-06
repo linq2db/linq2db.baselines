@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'

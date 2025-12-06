@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [test_temp]
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [test_temp]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -49,12 +45,10 @@ WHERE
 ORDER BY
 	[t2].[ID]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [test_temp]
@@ -66,7 +60,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [test_temp]
@@ -78,7 +71,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1

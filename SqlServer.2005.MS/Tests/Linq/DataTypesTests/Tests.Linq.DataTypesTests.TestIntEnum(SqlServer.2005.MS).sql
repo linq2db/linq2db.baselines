@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [IntEnumTable]
@@ -108,7 +100,6 @@ INSERT INTO [IntEnumTable]
 SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -120,17 +111,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

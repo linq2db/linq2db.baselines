@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	p.Id,
 	p.Code,
 	p.DIM_Company,
 	p.DIM_Branch,

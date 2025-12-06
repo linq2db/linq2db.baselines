@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

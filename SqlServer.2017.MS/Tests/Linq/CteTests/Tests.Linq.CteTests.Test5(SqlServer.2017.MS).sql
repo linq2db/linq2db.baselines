@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN [CTE_1] [c_2] ON [p].[ParentID] = [c_2].[ParentID]
 		INNER JOIN [CTE_1] [c2] ON [p].[ParentID] = [c2].[ParentID]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

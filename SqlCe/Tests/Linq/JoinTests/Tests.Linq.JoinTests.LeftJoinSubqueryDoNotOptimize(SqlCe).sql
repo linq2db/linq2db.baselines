@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[PersonID] as [ID],
-	Coalesce([m_2].[MiddleName], 'default2') as [c1]
+	Coalesce([m_2].[MiddleName], 'default2') as [MiddleName]
 FROM
 	[Person] [p]
 		LEFT JOIN (
@@ -14,7 +13,6 @@ FROM
 				[Person] [m_1]
 		) [m_2] ON [p].[PersonID] = [m_2].[c1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

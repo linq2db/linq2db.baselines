@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" STARTING WITH 'Insert14'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Person"
@@ -29,7 +27,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 WHERE
 	"p"."FirstName" STARTING WITH 'Insert14'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

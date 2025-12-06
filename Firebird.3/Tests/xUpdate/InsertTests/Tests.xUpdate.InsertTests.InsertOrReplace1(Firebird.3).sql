@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -56,7 +54,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -84,7 +81,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -112,7 +108,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 5

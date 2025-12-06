@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 

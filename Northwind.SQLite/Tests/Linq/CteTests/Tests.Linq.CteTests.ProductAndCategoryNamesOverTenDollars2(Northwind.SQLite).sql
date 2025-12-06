@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 WITH [ProductAndCategoryNamesOverTenDollars] ([CategoryName], [UnitPrice], [ProductName])
 AS
@@ -25,7 +24,6 @@ ORDER BY
 	[p_1].[UnitPrice],
 	[p_1].[ProductName]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT

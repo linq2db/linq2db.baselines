@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	MAX(t1.PersonID)
 FROM
 	Person t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -46,7 +43,6 @@ FROM
 WHERE
 	p.PersonID > 4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

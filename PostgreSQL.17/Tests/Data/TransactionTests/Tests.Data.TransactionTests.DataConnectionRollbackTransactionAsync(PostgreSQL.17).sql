@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -18,5 +16,4 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

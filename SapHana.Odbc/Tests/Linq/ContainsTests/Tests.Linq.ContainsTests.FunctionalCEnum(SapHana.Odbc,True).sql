@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -13,7 +12,6 @@ WHERE
 	"s"."CEnum" IN (?, ?)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -26,7 +24,6 @@ WHERE
 	("s"."CEnum" IN (?) OR "s"."CEnum" IS NULL)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -41,7 +38,6 @@ WHERE
 	"s"."CEnum" IN (?, ?)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value2___'
@@ -54,7 +50,6 @@ WHERE
 	("s"."CEnum" NOT IN (?) AND "s"."CEnum" IS NOT NULL)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'

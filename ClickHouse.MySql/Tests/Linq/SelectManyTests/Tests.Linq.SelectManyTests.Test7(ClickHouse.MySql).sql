@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	a_Child.ParentID,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.ParentID = g_1.ParentID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

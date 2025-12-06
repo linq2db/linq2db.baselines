@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	xxPerson t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -44,7 +41,6 @@ SELECT FIRST 2
 FROM
 	xxPerson t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -54,7 +50,6 @@ DELETE FROM
 WHERE
 	xxPerson.PersonID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			"Person" r
 	) t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 3.14748365E+09

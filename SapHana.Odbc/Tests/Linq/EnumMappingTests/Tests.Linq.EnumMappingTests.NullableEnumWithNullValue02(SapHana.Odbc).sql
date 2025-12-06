@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @p Int -- Int32
 SET     @p = 105
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	"r"."ID" >= 101 AND "r"."ID" < ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 101
@@ -26,7 +24,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 102
@@ -44,7 +41,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 103
@@ -62,7 +58,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 104
@@ -80,7 +75,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -93,7 +87,6 @@ WHERE
 ORDER BY
 	"r"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -107,7 +100,6 @@ WHERE
 ORDER BY
 	"r"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p Int -- Int32
 SET     @p = 105

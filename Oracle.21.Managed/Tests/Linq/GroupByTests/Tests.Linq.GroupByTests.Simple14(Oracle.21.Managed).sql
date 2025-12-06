@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
@@ -22,9 +19,6 @@ FROM
 				d."ParentID"
 		) d_1 ON m_1."ParentID" = d_1."Key_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

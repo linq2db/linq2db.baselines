@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -11,19 +9,18 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
-		[ID] Int NOT NULL
+		[ID] Int NOT NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 INSERT BULK [TempTable](ID)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]

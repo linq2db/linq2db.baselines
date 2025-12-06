@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."FirstName",
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."item"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

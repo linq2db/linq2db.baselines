@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 UPDATE
 	[tr]
@@ -10,7 +9,6 @@ FROM
 	[billing_TempReading] [tr]
 		INNER JOIN [billing_DevReadingType] [drt] ON [drt].[Name] = [tr].[ReadingTypeName] AND [drt].[DevTypeId] = [tr].[Devtypeid]
 
-BeforeExecute
 -- SqlServer.2005
 
 UPDATE

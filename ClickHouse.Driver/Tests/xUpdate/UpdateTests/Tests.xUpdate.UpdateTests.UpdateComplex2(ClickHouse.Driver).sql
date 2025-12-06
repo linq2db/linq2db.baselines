@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'Empty'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -28,7 +26,6 @@ UPDATE
 WHERE
 	startsWith(FirstName, 'UpdateComplex')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

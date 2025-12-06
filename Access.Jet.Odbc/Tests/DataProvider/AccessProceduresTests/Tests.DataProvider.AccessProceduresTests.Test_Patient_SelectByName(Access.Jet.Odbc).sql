@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @firstName VarChar(6) -- AnsiString
 SET     @firstName = 'Tester'
 DECLARE @lastName VarChar(9) -- AnsiString
@@ -9,7 +6,6 @@ SET     @lastName = 'Testerson'
 
 { CALL Patient_SelectByName(?, ?) }
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @firstName NVarChar(6) -- String
 SET     @firstName = 'Tester'
@@ -24,7 +20,6 @@ FROM
 WHERE
 	[a_Person].[FirstName] = ? AND [a_Person].[LastName] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @firstName NVarChar(6) -- String
 SET     @firstName = 'Tester'
@@ -46,5 +41,3 @@ WHERE
 ORDER BY
 	[a_Person].[PersonID]
 
-BeforeExecute
-DisposeTransaction

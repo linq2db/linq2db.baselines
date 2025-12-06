@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @offset Int32
 SET     @offset = -1
 
@@ -8,10 +7,10 @@ UPDATE
 SET
 	`t1`.`Field` = CAST(CAST(`t1`.`Field` AS SIGNED) + @offset AS UNSIGNED)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Field`
 FROM
 	`Issue4963Table` `t1`

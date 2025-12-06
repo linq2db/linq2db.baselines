@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1

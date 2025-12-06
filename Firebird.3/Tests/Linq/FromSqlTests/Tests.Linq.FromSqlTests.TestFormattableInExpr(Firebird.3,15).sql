@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @startId Integer -- Int32
 SET     @startId = 5
 DECLARE @endId Integer -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	"s"."id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

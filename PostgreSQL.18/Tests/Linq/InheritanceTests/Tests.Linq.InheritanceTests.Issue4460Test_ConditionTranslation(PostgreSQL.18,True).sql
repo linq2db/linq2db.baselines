@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Code Text(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -24,7 +23,6 @@ VALUES
 	:IsMale
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Code Text(6) -- String
 SET     @Code = 'Child2'
@@ -50,7 +48,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Value Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @newValue Int32
 SET     @newValue = 123
@@ -23,7 +21,6 @@ SET
 	"Id" = 492,
 	"Value" = :newValue
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

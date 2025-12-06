@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Value Int32
 SET     @Value = 10
 DECLARE @IDENTITY_PARAMETER Decimal

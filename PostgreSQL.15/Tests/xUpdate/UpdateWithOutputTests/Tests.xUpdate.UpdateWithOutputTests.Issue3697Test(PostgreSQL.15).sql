@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 UPDATE
@@ -17,7 +15,6 @@ WHERE
 RETURNING
 	"Test3697Item"."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 UPDATE

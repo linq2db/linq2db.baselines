@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	sum(grp_1.MoneyValue),
+	SUM(grp_1.MoneyValue),
 	grp_1.Year_1,
 	grp_1.Month_1
 FROM

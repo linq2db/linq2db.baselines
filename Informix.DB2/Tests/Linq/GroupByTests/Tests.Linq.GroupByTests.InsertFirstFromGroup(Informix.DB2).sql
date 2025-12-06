@@ -1,12 +1,24 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
-CREATE TEMP TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	"Value" NVarChar(255)     NULL
+	ID      Int           NOT NULL,
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
-BeforeExecute
+INSERT BULK temp_table_1
+
+-- Informix.DB2 Informix
+
+CREATE TABLE temp_table_2
+(
+	"Value" NVarChar(50) NOT NULL,
+
+	PRIMARY KEY ("Value")
+)
+
 -- Informix.DB2 Informix
 
 INSERT INTO temp_table_2
@@ -33,8 +45,11 @@ FROM
 				temp_table_1 c_1
 		) t1 ON gr_1.ID = t1.ID AND t1.rn <= 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS temp_table_1
 

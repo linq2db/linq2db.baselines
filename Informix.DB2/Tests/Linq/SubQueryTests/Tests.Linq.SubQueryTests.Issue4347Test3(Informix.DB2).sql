@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	m_1.Id,
@@ -12,9 +9,6 @@ FROM
 	TransactionEntity m_1
 		INNER JOIN LineEntity d ON m_1.Id = d.TransactionId
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

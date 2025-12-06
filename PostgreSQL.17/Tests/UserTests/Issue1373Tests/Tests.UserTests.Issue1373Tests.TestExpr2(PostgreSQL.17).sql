@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
@@ -14,9 +13,8 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @Field1 Unknown -- Object
+DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -30,9 +28,8 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @Field1 Text(4) -- String
+DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
@@ -46,7 +43,6 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

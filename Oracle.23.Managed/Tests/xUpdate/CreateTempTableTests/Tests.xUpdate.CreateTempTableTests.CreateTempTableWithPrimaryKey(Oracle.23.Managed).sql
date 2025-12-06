@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -18,7 +17,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN

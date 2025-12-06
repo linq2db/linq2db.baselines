@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	u.city
 FROM
 	"User" u
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

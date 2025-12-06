@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
@@ -10,10 +9,8 @@ CREATE TEMPORARY TABLE TableWithPrimaryKey2
 ENGINE = MergeTree()
 ORDER BY Key
 
-BeforeExecute
 INSERT ASYNC BULK TableWithPrimaryKey2(Key)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TableWithPrimaryKey2

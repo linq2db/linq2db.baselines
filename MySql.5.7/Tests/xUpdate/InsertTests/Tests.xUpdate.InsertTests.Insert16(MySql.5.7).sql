@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Person`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @name Int32
 SET     @name = 8
@@ -27,7 +25,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  

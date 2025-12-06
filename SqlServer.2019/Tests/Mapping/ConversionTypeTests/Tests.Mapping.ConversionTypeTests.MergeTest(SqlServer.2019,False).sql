@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -29,7 +28,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2019
 
 MERGE INTO [TrimTestTable] [Target]
@@ -60,7 +58,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -71,7 +68,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

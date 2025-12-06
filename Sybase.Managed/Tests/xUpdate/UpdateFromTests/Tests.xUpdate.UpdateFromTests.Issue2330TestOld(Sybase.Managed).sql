@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 UPDATE
 	[Parent]
@@ -10,9 +9,9 @@ FROM
 WHERE
 	[b].[ChildID] = (
 		SELECT
-			MAX([b2].[ParentID])
+			MAX([t1].[ParentID])
 		FROM
-			[Child] [b2]
+			[Child] [t1]
 	) AND
 	[b].[ChildID] = -1 AND [Parent].[ParentID] = [b].[ParentID]
 

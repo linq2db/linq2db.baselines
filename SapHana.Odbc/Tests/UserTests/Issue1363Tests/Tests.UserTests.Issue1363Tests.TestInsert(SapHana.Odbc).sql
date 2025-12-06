@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @id Char(36) -- AnsiStringFixedLength
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Char(36) -- AnsiStringFixedLength
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id2 Char(36) -- AnsiStringFixedLength
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'

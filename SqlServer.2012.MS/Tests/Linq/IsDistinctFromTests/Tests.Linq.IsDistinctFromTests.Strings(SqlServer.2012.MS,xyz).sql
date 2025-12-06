@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -16,7 +15,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
@@ -34,7 +32,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
@@ -52,7 +49,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'

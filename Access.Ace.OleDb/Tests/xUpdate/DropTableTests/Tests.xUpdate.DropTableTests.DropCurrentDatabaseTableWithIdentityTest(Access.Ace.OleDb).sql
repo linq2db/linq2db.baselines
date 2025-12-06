@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [DropTableTestID]
@@ -14,7 +12,6 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [DropTableTestID]
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

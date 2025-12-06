@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GrandChild" gc
 WHERE
 	gc."GrandChildID" IN (1001, 1002)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "GrandChild"
@@ -22,7 +20,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "GrandChild"
@@ -38,7 +35,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -48,7 +44,6 @@ FROM
 WHERE
 	gc."ParentID" = 1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
@@ -68,7 +63,6 @@ WHERE
 			t1."GrandChildID" = gc."GrandChildID"
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

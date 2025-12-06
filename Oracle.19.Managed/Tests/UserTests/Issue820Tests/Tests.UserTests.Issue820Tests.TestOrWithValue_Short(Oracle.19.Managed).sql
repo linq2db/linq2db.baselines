@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @param Int16
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	:param = t1."SmallIntValue"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

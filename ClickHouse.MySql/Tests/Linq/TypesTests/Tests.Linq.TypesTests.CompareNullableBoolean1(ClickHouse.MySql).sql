@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t.ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	LinqDataTypes t
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

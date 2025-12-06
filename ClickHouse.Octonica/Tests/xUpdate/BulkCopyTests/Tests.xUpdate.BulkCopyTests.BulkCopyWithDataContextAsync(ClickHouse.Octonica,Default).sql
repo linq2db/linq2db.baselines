@@ -1,6 +1,4 @@
-﻿BeforeExecute
-INSERT INTO SimpleBulkCopyTable(Id) VALUES
+﻿INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
-BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 

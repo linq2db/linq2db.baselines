@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
@@ -8,7 +7,6 @@ CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -17,7 +15,6 @@ SELECT
 FROM
 	"IsGlobalTemporaryTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN

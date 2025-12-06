@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 DECLARE @likeA NVarChar(4000) -- String
 SET     @likeA = N'A%'
 DECLARE @likeL NVarChar(4000) -- String

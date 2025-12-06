@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @param BigInt -- Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = [t1].[BigIntValue]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

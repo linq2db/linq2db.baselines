@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[m_1].[CategoryID],
@@ -13,9 +10,6 @@ FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

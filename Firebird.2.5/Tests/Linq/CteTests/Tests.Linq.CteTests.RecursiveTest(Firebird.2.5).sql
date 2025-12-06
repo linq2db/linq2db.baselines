@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 WITH RECURSIVE MY_CTE ("ChildID", "ParentID", "GrandChildID")
 AS

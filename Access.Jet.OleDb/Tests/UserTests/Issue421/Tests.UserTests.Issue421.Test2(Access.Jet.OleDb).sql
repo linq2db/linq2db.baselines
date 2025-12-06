@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [BlobClass]
 (
@@ -12,7 +11,6 @@ VALUES
 	0x010203
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -23,7 +21,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -33,7 +30,6 @@ SET
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1

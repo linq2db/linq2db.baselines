@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @v1 Integer -- Int32
 SET     @v1 = 1
 DECLARE @v1_1 Integer -- Int32

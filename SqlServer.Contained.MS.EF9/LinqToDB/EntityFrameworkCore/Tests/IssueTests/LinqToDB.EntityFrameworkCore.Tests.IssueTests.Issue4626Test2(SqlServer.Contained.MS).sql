@@ -1,20 +1,19 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- SqlServer.2019
 
 SELECT
 	[m_1].[Id],
 	[d_1].[Key_1],
-	[d_1].[SUM_1],
-	[d_1].[ToValue]
+	[d_1].[Sum_1],
+	[d_1].[Des]
 FROM
 	[Parents] [m_1]
 		CROSS APPLY (
 			SELECT
 				[d].[ParentId] as [Key_1],
-				SUM([d].[Id]) as [SUM_1],
-				STRING_AGG([d].[Name], N', ') as [ToValue]
+				SUM([d].[Id]) as [Sum_1],
+				STRING_AGG([d].[Name], N', ') as [Des]
 			FROM
 				[Children] [d]
 			WHERE
@@ -25,7 +24,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- SqlServer.2019

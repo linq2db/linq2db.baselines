@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

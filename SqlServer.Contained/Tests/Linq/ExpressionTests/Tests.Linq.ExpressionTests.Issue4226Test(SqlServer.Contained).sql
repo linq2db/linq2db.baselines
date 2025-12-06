@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Date NVarChar(11) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Date
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)

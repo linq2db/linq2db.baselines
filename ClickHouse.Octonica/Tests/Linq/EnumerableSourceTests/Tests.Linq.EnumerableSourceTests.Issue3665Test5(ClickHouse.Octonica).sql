@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	y.item
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 'O') y
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

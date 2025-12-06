@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	*
 FROM
 	[Products] [t]
 
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT

@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"GrandChild" gc
 WHERE
 	gc."GrandChildID" IN (1001, 1002)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "GrandChild"
 (
@@ -22,8 +20,7 @@ VALUES
 	1001
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "GrandChild"
 (
@@ -38,8 +35,7 @@ VALUES
 	1002
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -48,8 +44,7 @@ FROM
 WHERE
 	gc."ParentID" = 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"GrandChild" t1
@@ -68,8 +63,7 @@ WHERE
 			t1."GrandChildID" = gc."GrandChildID"
 	)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

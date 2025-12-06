@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
+	i.Id,
 	i.Name,
 	i.ParentId
 FROM

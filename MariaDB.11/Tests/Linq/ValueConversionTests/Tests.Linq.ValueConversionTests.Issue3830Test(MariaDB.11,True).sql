@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -11,8 +10,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -24,8 +22,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -37,8 +34,7 @@ FROM
 WHERE
 	`r`.`Bool3` IS NULL AND `r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -50,8 +46,7 @@ FROM
 WHERE
 	`r`.`Bool2` IS NULL AND `r`.`Bool1` = 'Y' AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -63,8 +58,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -76,8 +70,7 @@ FROM
 WHERE
 	`r`.`Bool3` = 'Y' AND `r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -89,8 +82,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -102,8 +94,7 @@ FROM
 WHERE
 	`r`.`Bool2` IS NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool3` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -115,8 +106,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y' AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -128,8 +118,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y' AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -141,8 +130,7 @@ FROM
 WHERE
 	`r`.`Bool3` IS NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -154,8 +142,7 @@ FROM
 WHERE
 	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool3` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -167,8 +154,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N' AND `r`.`Bool3` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -180,8 +166,7 @@ FROM
 WHERE
 	`r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N' AND `r`.`Bool3` = 'Y'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -193,8 +178,7 @@ FROM
 WHERE
 	`r`.`Bool3` = 'Y' AND `r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,

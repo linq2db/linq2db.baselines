@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	m_1.ParentID,
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	d.ChildID
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

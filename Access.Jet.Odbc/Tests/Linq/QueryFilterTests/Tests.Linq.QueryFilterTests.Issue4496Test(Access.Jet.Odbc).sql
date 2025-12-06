@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[x].[ChildID] > 30
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT DISTINCT

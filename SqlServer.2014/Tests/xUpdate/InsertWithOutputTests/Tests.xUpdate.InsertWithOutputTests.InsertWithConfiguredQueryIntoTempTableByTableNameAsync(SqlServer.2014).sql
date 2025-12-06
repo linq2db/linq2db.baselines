@@ -1,25 +1,26 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 
 INSERT INTO [tempdb]..[#TableWithData_target]
 (
@@ -46,7 +47,6 @@ FROM
 WHERE
 	[p].[Gender] = 'F'
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -56,7 +56,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -66,13 +65,11 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_output]
 
-BeforeExecute
 -- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_target]', N'U') IS NOT NULL)

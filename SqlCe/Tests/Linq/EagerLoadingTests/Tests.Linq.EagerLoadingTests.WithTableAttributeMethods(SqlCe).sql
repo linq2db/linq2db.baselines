@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -43,10 +40,10 @@ FROM
 	[Person] [p],
 	(
 		SELECT
-			COUNT(*) as [COUNT_1]
+			COUNT(*) as [Count_1]
 		FROM
 			[UserIssue3128] [t1]
 	) [t2]
 WHERE
-	[t2].[COUNT_1] > 0
+	[t2].[Count_1] > 0
 

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE TestTable
@@ -18,7 +16,6 @@ CREATE TABLE TestTable
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 FROM
 	TestTable t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE TestTable

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [LinqDataTypes]
@@ -22,7 +20,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -39,7 +36,6 @@ WHERE
 	[t].[ID] = 1001
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM

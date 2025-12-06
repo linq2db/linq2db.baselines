@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ClaimedKeyType VarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
@@ -35,7 +33,6 @@ SET
 WHERE
 	"p"."Id" = 0
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

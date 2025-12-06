@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @p VarWChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[e].[StringValue] + '1' = @p
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

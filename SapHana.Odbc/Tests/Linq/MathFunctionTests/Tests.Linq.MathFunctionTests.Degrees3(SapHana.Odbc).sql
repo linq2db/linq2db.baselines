@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	CAST(CAST("t"."MoneyValue" AS Integer) AS Double) * 57.295779513082323

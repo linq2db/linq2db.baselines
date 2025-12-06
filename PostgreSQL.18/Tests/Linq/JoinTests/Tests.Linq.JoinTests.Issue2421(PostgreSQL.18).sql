@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	m_1."SectorId",
@@ -14,9 +11,6 @@ FROM
 WHERE
 	"a_UserPosition"."PositionId" = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

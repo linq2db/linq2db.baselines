@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
-INSERT INTO "BlobClass16"
+INSERT INTO "BlobClass"
 (
 	"Id",
 	"BlobValue"
@@ -12,26 +11,24 @@ VALUES
 	X'010203'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass16" "t1"
+	"BlobClass" "t1"
 WHERE
 	"t1"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"
 FROM
-	"BlobClass16" "t1"
+	"BlobClass" "t1"
 WHERE
 	"t1"."Id" = 1
 FETCH NEXT 1 ROWS ONLY

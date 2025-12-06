@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -12,8 +11,7 @@ FROM
 WHERE
 	r."Value2" IN (0, 1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -24,8 +22,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -38,8 +35,7 @@ FROM
 WHERE
 	(r."Value2" IN (0, 1) OR r."Value2" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -50,8 +46,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -64,8 +59,7 @@ FROM
 WHERE
 	r."Value5" IN (0, 1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -76,8 +70,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -90,8 +83,7 @@ FROM
 WHERE
 	(r."Value5" IN (0, 1) OR r."Value5" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -102,8 +94,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -116,8 +107,7 @@ FROM
 WHERE
 	r."Value2" NOT IN (0, 1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -128,8 +118,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -142,8 +131,7 @@ FROM
 WHERE
 	(r."Value2" NOT IN (0, 1) AND r."Value2" IS NOT NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -154,8 +142,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -168,8 +155,7 @@ FROM
 WHERE
 	(r."Value5" NOT IN (0, 1) OR r."Value5" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -180,8 +166,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -194,8 +179,7 @@ FROM
 WHERE
 	(r."Value5" NOT IN (0, 1) AND r."Value5" IS NOT NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

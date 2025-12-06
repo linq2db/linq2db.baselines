@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int32
 SET     @p = 1
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	`c_1`.`ParentID` = @p
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int32
 SET     @p = -1
 

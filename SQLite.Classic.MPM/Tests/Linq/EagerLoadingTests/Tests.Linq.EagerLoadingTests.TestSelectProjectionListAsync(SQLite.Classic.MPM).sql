@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -17,8 +14,7 @@ FROM
 WHERE
 	[m_1].[Id1] >= @intParam
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -40,8 +36,7 @@ FROM
 WHERE
 	[d].[MasterId] % 2 = 0
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -53,5 +48,3 @@ FROM
 WHERE
 	[m_1].[Id1] >= @intParam
 
-BeforeExecute
-DisposeTransactionAsync

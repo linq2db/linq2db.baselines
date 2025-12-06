@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[m_1].[cond],
@@ -32,7 +29,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d_1] ON [m_1].[cond] = [d_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -53,7 +49,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
@@ -64,5 +59,3 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-DisposeTransaction

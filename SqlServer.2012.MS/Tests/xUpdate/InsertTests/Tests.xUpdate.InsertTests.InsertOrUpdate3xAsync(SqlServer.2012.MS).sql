@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,8 +25,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @i Int -- Int32
@@ -56,8 +54,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @i Int -- Int32
@@ -86,8 +83,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 DECLARE @id2 Int -- Int32
 SET     @id2 = 5
 DECLARE @i Int -- Int32
@@ -116,8 +112,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 5
 

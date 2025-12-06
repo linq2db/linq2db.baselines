@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @value  -- Int32
 SET     @value = 123
 
@@ -12,7 +11,6 @@ VALUES
 	@value
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

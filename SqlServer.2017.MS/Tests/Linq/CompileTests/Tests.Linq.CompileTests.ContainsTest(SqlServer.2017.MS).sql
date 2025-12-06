@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ SELECT
 			[Child] [c_1]
 	), 1, 0)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @p Int -- Int32
 SET     @p = -1

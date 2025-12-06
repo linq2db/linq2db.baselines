@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 2
 
@@ -10,7 +9,6 @@ FROM
 	"Child" ch
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 3
@@ -22,8 +20,7 @@ FROM
 	"Child" ch
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 2
 
@@ -34,8 +31,7 @@ FROM
 	"Child" ch
 FETCH NEXT :take ROWS ONLY
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 3
 

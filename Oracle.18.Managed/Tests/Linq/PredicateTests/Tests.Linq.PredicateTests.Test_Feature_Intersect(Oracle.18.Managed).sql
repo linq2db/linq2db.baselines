@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -16,7 +15,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -34,7 +32,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -52,7 +49,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -70,7 +66,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -88,7 +83,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -106,7 +100,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -124,7 +117,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -142,7 +134,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -160,7 +151,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -178,7 +168,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -196,7 +185,6 @@ WHERE
 		FROM SYS.DUAL
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 5
 
 SELECT
-	AVG(CAST([c_1].[Id] AS BigInt))
+	AVG(CAST([c_1].[Id] AS INTEGER))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

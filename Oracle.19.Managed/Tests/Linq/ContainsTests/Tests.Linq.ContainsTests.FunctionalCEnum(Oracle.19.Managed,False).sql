@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
 DECLARE @In_2 Varchar2(12) -- String
@@ -13,7 +12,6 @@ WHERE
 	s."CEnum" IN (:In_1, :In_2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
@@ -28,7 +26,6 @@ WHERE
 	s."CEnum" IN (:In_1, :In_2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
@@ -43,7 +40,6 @@ WHERE
 	s."CEnum" IN (:In_1, :In_2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @NotIn Varchar2 -- String
 SET     @NotIn = NULL
@@ -58,7 +54,6 @@ WHERE
 	s."CEnum" NOT IN (:NotIn, :NotIn_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @NotIn Varchar2(12) -- String
 SET     @NotIn = '___Value3___'

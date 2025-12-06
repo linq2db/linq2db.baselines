@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String
@@ -26,7 +25,6 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -46,7 +44,6 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -66,7 +63,6 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -86,7 +82,6 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5

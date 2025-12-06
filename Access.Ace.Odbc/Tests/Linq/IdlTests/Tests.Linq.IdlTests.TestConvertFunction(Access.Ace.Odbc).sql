@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	[Person] [x]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 15

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	"r"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

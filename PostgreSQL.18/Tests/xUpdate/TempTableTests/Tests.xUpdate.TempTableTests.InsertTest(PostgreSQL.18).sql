@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Table2"
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Table1" t
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

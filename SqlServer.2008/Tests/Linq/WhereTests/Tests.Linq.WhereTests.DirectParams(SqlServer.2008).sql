@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String

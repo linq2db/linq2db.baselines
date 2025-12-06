@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[m_1].[ParentID],
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	[d].[ChildID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

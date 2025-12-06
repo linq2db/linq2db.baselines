@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS Test1585
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE Test1585

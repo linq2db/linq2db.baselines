@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer(4) -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	"t"."Data" = '***XXX***'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	"t"."Data" = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

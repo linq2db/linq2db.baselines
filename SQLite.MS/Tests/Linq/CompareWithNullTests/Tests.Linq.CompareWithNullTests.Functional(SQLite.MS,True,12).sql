@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 /* x => (int?)x.EnumA == (int?)x.EnumB */
 SELECT

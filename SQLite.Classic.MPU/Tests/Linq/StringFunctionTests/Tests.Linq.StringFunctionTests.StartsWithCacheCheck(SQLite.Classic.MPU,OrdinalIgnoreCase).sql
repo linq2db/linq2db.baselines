@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName]
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -21,7 +19,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Parent" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1000
@@ -24,7 +22,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -42,7 +39,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1002
@@ -60,7 +56,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1003
@@ -78,7 +73,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1004
@@ -96,7 +90,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1005
@@ -114,7 +107,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1006
@@ -132,7 +124,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1007
@@ -150,7 +141,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1008
@@ -168,7 +158,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1009
@@ -186,7 +175,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -195,7 +183,6 @@ WHERE
 	"p"."ParentID" >= 1000
 FETCH NEXT 5 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

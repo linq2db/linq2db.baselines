@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 2
 
@@ -16,7 +15,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -34,7 +32,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -52,7 +49,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @value Int -- Int32
 SET     @value = 2

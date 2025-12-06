@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -14,7 +13,6 @@ VALUES
 	N'M'
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

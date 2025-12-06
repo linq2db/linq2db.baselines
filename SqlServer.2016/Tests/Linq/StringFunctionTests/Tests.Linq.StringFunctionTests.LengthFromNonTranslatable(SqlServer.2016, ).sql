@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
 	[t].[Str],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[TestLengthModel] [t]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

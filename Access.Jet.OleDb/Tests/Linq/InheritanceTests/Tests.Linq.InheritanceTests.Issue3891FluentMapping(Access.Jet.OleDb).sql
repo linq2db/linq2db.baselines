@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -40,7 +38,6 @@ SELECT TOP 2
 FROM
 	[Base2] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

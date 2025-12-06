@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	Len([t1].[FirstName]) > 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "TPHTable" ("Id", "Discriminator", "Value1", "Value2", "Value3", "NullableBool") VALUES (1,1,'Str1',NULL,NULL,NULL)
@@ -7,7 +6,6 @@ INSERT ALL
 	INTO "TPHTable" ("Id", "Discriminator", "Value1", "Value2", "Value3", "NullableBool") VALUES (3,3,NULL,NULL,'Str3','Y')
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -38,7 +35,6 @@ WHERE
 	x."Discriminator" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -54,7 +50,6 @@ WHERE
 	x."Discriminator" = 2
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -70,7 +65,6 @@ WHERE
 	x."Discriminator" = 3
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -86,7 +80,6 @@ WHERE
 	x."Value1" = 'Str1'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -102,7 +95,6 @@ WHERE
 	x."Value2" = 'Str2'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

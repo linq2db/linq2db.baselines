@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- Informix.DB2 Informix
+
+SELECT
+	p.PersonID,
+	p.FirstName
+FROM
+	Person p
+
 -- Informix.DB2 Informix
 
 SELECT
@@ -7,7 +14,6 @@ SELECT
 FROM
 	Person p
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -16,7 +22,6 @@ SELECT
 FROM
 	Person p
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -25,16 +30,6 @@ SELECT
 FROM
 	Person p
 
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	p.PersonID,
-	p.FirstName
-FROM
-	Person p
-
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

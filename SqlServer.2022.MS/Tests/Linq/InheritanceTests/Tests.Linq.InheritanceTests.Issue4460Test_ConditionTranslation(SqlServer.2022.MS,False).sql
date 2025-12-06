@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@IsMale
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child2'
@@ -50,7 +48,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -8,8 +7,7 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (1)
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `SimpleBulkCopyTable`
 (

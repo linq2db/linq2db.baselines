@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	Add_Days(CURRENT_TIMESTAMP, "t"."Value"),
@@ -14,7 +13,6 @@ SELECT
 	Add_Days(CURRENT_TIMESTAMP, 4)
 FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

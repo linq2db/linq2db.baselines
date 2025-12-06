@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`UpdatedEntities` `v`
@@ -9,8 +8,7 @@ SET
 WHERE
 	`a_Relation`.`RelatedValue1` = 11
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`v`.`Value1`

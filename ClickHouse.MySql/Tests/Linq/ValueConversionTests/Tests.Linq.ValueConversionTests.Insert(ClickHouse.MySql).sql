@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO ValueConversion
 (
@@ -20,7 +19,6 @@ VALUES
 	'T'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -40,7 +38,6 @@ WHERE
 	e.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO ValueConversion
@@ -62,7 +59,6 @@ VALUES
 	'F'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -82,7 +78,6 @@ WHERE
 	e.Id = 2
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO ValueConversion
@@ -112,7 +107,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -132,7 +126,6 @@ WHERE
 	e.Id = 3
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

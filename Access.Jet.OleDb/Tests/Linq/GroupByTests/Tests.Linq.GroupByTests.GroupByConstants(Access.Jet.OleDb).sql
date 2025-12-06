@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[g_2].[ChildId],
@@ -17,7 +16,6 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

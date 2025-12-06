@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TrimTestTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

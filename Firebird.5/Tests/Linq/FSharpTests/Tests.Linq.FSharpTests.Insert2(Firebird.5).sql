@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	MAX("t1"."PersonID")
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
@@ -34,7 +32,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -49,7 +46,6 @@ WHERE
 	"p"."PersonID" > 4
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM

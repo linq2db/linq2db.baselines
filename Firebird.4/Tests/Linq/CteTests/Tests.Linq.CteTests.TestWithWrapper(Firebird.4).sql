@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 WITH CTE_1 ("Child_ParentID", "Child_ChildID")
 AS
@@ -19,7 +18,6 @@ FROM
 	"Parent" "p"
 		INNER JOIN CTE_1 "c_1" ON "p"."ParentID" = "c_1"."Child_ParentID"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

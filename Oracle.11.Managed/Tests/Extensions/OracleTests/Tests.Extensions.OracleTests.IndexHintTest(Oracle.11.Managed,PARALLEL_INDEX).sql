@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT /*+ PARALLEL_INDEX(p parent_ix parent2_ix) */
 	p."ParentID",

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[CreateIfNotExistsTable]
@@ -12,7 +10,6 @@ CREATE TEMPORARY TABLE temp.[CreateIfNotExistsTable]
 	[Value] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -21,7 +18,6 @@ SELECT
 FROM
 	temp.[CreateIfNotExistsTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
@@ -30,12 +26,10 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 	[Value] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[CreateIfNotExistsTable]

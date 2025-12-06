@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	y."item"
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 'O'::NChar(1) FROM table(set{1})) y
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

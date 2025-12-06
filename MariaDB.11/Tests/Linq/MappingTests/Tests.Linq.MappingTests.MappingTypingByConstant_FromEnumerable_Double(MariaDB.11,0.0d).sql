@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`arg`.`Id`,
@@ -9,8 +8,7 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS `Id`, CAST(0 AS DOUBLE) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`arg`.`Id`,

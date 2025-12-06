@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	nm.MiddleName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	nm.MiddleName IS NOT NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

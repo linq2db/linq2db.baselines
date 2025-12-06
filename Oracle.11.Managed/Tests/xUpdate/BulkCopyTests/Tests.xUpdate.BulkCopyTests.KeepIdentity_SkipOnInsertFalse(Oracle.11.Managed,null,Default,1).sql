@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Value Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,15 +15,13 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "AllTypes" ("intDataType") VALUES (200)
 	INTO "AllTypes" ("intDataType") VALUES (300)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @lastId Int32
 SET     @lastId = 3
@@ -39,7 +36,6 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @lastId Int32
 SET     @lastId = 3

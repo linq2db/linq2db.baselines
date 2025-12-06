@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	DatePart(minute, [t].[DateTimeValue]) as [c1]

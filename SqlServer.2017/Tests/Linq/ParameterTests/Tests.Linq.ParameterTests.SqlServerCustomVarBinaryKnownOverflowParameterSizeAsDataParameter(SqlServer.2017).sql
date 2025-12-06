@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @p VarBinary(8000) -- Binary
 SET     @p = 0x0102
 

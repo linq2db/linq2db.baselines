@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 
@@ -16,7 +15,6 @@ VALUES
 	200
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
@@ -29,7 +27,6 @@ SET
 WHERE
 	"t".ID = @id
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
@@ -42,7 +39,6 @@ SET
 WHERE
 	"t".ID = @id
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001

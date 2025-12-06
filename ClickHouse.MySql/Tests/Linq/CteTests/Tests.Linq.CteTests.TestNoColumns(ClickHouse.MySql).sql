@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 WITH CTE1_ AS
@@ -21,7 +19,6 @@ SELECT
 FROM
 	CTE1_ t2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 WITH CTE1_ AS
@@ -36,7 +33,6 @@ SELECT
 FROM
 	CTE1_ t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 WITH CTE1_ AS

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -9,7 +8,6 @@ FROM
 			(1), (3)
 		) [y]([item])
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"g_1"."GroupId",
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	"g_1"."GroupId"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM

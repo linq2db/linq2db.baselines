@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	c_1.ParentID,
@@ -10,8 +9,7 @@ WHERE
 	c_1.ParentID = 1
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	c_1.ParentID,

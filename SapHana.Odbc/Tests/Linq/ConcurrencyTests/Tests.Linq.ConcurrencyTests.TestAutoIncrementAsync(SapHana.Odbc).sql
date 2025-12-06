@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int -- Int32
@@ -47,7 +44,6 @@ SET
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -57,8 +53,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int -- Int32
@@ -74,7 +69,6 @@ SET
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -84,8 +78,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int -- Int32
@@ -101,7 +94,6 @@ SET
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -111,8 +103,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -123,7 +114,6 @@ DELETE FROM
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -133,8 +123,7 @@ SELECT
 FROM
 	"ConcurrencyAutoIncrement" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -145,7 +134,6 @@ DELETE FROM
 WHERE
 	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

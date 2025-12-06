@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName VarChar(7) -- String
@@ -33,13 +31,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
 
@@ -55,8 +51,7 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -81,13 +76,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'
 
@@ -103,7 +96,6 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  

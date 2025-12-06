@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
 DECLARE @y10 Int -- Int32

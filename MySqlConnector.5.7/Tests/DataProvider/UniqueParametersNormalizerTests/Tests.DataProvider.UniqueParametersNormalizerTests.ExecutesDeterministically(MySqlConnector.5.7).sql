@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	`row1_2`.`Field1` LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String

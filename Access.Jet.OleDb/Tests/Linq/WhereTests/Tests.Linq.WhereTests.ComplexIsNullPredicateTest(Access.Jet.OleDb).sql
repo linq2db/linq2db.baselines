@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[r].[Id],
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

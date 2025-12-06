@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 1
 
@@ -11,8 +10,7 @@ FROM
 WHERE
 	`p`.`ParentID` = @p
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 1
 
@@ -24,8 +22,7 @@ FROM
 WHERE
 	`p`.`ParentID` = @p
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p Int32
 SET     @p = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -7,9 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

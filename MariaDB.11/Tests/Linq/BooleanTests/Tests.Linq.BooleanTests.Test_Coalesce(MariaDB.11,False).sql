@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -18,8 +17,7 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @True)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -34,8 +32,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @False Bool -- Boolean
 SET     @False = 0
 
@@ -54,8 +51,7 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @False)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -70,8 +66,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`Id`,
@@ -88,8 +83,7 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

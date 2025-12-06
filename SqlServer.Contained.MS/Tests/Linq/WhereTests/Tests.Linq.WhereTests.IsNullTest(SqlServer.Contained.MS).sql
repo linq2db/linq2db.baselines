@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[nm].[MiddleName] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

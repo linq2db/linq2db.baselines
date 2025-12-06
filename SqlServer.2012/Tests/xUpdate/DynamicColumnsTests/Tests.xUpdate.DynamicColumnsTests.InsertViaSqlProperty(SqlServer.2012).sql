@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 1001

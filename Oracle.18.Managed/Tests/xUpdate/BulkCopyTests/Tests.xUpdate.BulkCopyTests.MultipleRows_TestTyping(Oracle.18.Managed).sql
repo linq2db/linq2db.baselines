@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "MultipleRowsTable" ("Id", "DecimalValue1", "DecimalValue2") VALUES (1,NULL,1)
 	INTO "MultipleRowsTable" ("Id", "DecimalValue1", "DecimalValue2") VALUES (2,1.5,-2.6)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

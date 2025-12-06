@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Key_1],
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	[x].[Key_1] DESC
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

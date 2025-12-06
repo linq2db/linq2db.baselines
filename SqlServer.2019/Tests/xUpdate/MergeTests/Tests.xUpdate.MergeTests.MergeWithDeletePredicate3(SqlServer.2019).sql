@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Не ASCII'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT TOP (1)
@@ -38,7 +34,6 @@ SELECT TOP (1)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
@@ -56,7 +51,6 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -69,7 +63,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
@@ -130,5 +123,3 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @PersonID THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

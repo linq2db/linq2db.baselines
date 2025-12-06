@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1

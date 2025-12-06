@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [Issue1373Tests]
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Issue1373Tests]
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Issue1373Tests]
@@ -40,7 +37,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

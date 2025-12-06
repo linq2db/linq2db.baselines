@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName VarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @name Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	`t1`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

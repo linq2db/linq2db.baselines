@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 WITH CTE1_ ("c1")
@@ -22,7 +20,6 @@ SELECT
 FROM
 	CTE1_ "t2"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 WITH CTE1_ ("c1")
@@ -38,7 +35,6 @@ SELECT
 FROM
 	CTE1_ "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 WITH CTE1_ ("c1")

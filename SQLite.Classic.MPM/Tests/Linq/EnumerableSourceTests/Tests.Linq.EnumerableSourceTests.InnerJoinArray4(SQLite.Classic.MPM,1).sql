@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName],
@@ -16,7 +15,6 @@ FROM
 				('Janet'), ('Doe'), ('John'), ('Doe')
 			) [n] ON [p].[LastName] = [n].[item]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

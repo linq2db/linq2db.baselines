@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%Paranoid%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%paranoid%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower([r].[Diagnosis]) LIKE '%paranoid%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

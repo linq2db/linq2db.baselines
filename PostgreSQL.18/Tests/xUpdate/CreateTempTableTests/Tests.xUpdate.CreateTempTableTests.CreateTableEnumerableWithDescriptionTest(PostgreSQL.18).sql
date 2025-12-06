@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
-	"Name" text NOT NULL
+	"Name" text NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "TempTable"
@@ -21,7 +20,6 @@ INSERT INTO "TempTable"
 VALUES
 ('John')
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"

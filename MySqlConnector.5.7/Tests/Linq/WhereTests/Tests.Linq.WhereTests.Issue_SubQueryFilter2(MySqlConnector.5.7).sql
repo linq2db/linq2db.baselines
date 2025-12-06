@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @filter1 VarChar(4) -- String
 SET     @filter1 = 'John'
 DECLARE @filter2 VarChar(6) -- String
@@ -44,7 +43,6 @@ WHERE
 ORDER BY
 	`p`.`PersonID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -53,7 +51,6 @@ SELECT
 FROM
 	`Patient` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

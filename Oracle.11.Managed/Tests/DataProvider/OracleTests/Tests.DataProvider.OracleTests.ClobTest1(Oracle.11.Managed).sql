@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ClobEntity"
 (
@@ -8,7 +7,6 @@ CREATE TABLE "ClobEntity"
 	"NClobValue" NClob     NULL
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
@@ -32,7 +30,6 @@ VALUES
 	:NClobValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -44,7 +41,6 @@ FROM
 WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP TABLE "ClobEntity"

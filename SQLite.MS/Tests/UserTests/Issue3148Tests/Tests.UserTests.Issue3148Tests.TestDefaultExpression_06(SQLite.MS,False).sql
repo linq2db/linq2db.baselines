@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -18,9 +15,6 @@ FROM
 WHERE
 	[d].[ParentID] <> 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,9 +22,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -48,9 +39,6 @@ FROM
 WHERE
 	[d].[ParentID] <> 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

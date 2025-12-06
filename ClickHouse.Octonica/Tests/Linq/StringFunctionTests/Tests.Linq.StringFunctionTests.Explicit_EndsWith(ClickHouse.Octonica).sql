@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	endsWith(r.Diagnosis, 'Persecution')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	endsWith(r.Diagnosis, 'persecution')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	endsWith(lowerUTF8(r.Diagnosis), 'persecution')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

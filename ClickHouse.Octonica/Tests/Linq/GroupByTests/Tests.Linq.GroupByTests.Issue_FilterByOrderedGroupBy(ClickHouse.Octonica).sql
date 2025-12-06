@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.ParentID,
@@ -19,12 +18,11 @@ WHERE
 				GROUP BY
 					x.ParentID
 				ORDER BY
-					max(x.ChildID) DESC
+					MAX(x.ChildID) DESC
 				LIMIT 2
 			) t1
 	)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

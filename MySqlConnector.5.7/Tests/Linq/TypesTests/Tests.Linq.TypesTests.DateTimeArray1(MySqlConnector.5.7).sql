@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t`.`ID`,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`DateTimeValue` IN ('2001-01-11 01:11:21.100')
+	`t`.`DateTimeValue` IN (STR_TO_DATE('2001-01-11 01:11:21.100', '%Y-%m-%d %H:%i:%s.%f'))
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -8,7 +7,6 @@ INSERT INTO SimpleBulkCopyTable
 VALUES
 (1)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
@@ -18,7 +16,6 @@ INSERT INTO SimpleBulkCopyTable
 VALUES
 (2)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO SimpleBulkCopyTable

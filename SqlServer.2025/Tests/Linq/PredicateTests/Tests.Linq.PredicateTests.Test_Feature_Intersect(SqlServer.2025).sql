@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	COUNT(*)
@@ -14,7 +13,6 @@ WHERE
 			[r].[One]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -30,7 +28,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -46,7 +43,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -62,7 +58,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -78,7 +73,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -94,7 +88,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -110,7 +103,6 @@ WHERE
 			[r].[One]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -126,7 +118,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -142,7 +133,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -158,7 +148,6 @@ WHERE
 			[r].[Zero]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -174,7 +163,6 @@ WHERE
 			[r].[Null]
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

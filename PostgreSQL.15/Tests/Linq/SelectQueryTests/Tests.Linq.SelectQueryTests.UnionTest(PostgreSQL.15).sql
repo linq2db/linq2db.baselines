@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * Interval '1 Day',
@@ -13,7 +12,6 @@ SELECT
 	CURRENT_TIMESTAMP + 3 * Interval '1 Day',
 	CURRENT_TIMESTAMP + 4 * Interval '1 Day'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

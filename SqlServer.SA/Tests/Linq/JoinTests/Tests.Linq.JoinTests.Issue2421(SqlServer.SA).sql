@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[m_1].[SectorId],
@@ -14,9 +11,6 @@ FROM
 WHERE
 	[a_UserPosition].[PositionId] = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

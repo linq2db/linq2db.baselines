@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[p].[PersonID],
+	[p].[FirstName]
+FROM
+	[Person] [p]
+
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -7,7 +14,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -16,7 +22,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -25,16 +30,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[p].[PersonID],
-	[p].[FirstName]
-FROM
-	[Person] [p]
-
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

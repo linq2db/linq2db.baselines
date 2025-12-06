@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue4460Table
 (
@@ -11,7 +10,6 @@ INSERT INTO Issue4460Table
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

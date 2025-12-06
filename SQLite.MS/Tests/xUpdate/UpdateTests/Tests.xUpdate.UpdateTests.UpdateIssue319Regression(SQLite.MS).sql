@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 100500
 DECLARE @Value1  -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 100500
@@ -29,7 +27,6 @@ WHERE
 	[p].[ParentID] = @id
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 100500

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 			[pmp].[ParentID]
 	) [pmp_1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

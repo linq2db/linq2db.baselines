@@ -1,11 +1,7 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 { CALL Patient_SelectAll() }
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -21,5 +17,3 @@ FROM
 ORDER BY
 	[a_Person].[PersonID]
 
-BeforeExecute
-DisposeTransaction

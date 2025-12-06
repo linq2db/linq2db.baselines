@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS InventoryResource
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InventoryResource

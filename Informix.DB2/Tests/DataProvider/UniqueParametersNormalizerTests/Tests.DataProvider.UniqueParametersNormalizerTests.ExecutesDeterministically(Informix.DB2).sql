@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 
@@ -26,8 +25,7 @@ FROM
 WHERE
 	row1_2.Field1 LIKE 'test%' ESCAPE '~'
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 

@@ -1,23 +1,21 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `TempTable`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TEMPORARY TABLE `TempTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE `TempTable`
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

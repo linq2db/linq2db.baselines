@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 
 SELECT * FROM (
@@ -22,7 +21,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
 ) ORDER BY PackageName, ProcedureName
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -63,11 +61,7 @@ SELECT
 		LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
 WHERE p.RDB$SYSTEM_FLAG = 0
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 
@@ -91,7 +85,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
 ) ORDER BY PackageName, ProcedureName
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -132,11 +125,7 @@ SELECT
 		LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
 WHERE p.RDB$SYSTEM_FLAG = 0
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 
@@ -160,7 +149,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
 ) ORDER BY PackageName, ProcedureName
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -201,7 +189,4 @@ SELECT
 		LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
 WHERE p.RDB$SYSTEM_FLAG = 0
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction

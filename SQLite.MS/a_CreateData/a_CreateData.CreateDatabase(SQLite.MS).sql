@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 --
 -- Helper table
@@ -102,24 +101,20 @@ CREATE TABLE LinqDataTypes
 
 DROP TABLE IF EXISTS TestIdentity
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP VIEW IF EXISTS AllTypesView
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS AllTypes
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE AllTypes
@@ -155,7 +150,6 @@ CREATE TABLE AllTypes
 	objectDataType           Object           NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE VIEW AllTypesView
@@ -165,7 +159,6 @@ SELECT
 	ROW_NUMBER () OVER () AS Number
 FROM AllTypes
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO AllTypes
@@ -188,7 +181,6 @@ SELECT
 		  '1',     '234', '567', '23233',  '3323',  '111',
 		   10
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 --
@@ -198,7 +190,6 @@ BeforeExecute
 -- Parent table
 DROP TABLE IF EXISTS PrimaryKeyTable
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE PrimaryKeyTable
@@ -207,13 +198,11 @@ CREATE TABLE PrimaryKeyTable
 	Name         nvarchar(50) NOT NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE ForeignKeyTable
@@ -226,13 +215,11 @@ CREATE TABLE ForeignKeyTable
 	CONSTRAINT FK_ForeignKeyTable_PrimaryKeyTable FOREIGN KEY(PrimaryKeyTableID) REFERENCES PrimaryKeyTable ON DELETE CASCADE
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE FKTestPosition
@@ -249,7 +236,6 @@ CREATE TABLE FKTestPosition
 	--    FOREIGN KEY(Department) REFERENCES FKTestDepartment(DepartmentID) ON DELETE CASCADE
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 -- merge test tables
@@ -341,7 +327,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL COLLATE NOCASE
 );
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
@@ -371,7 +356,6 @@ VALUES
 (11,11.45,'2009-09-27 00:00:00.000',NULL,1,X'181D02D3F097C04D98D0F0C7DF4A1230',11,NULL,NULL,'9'),
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Parent]
@@ -388,7 +372,6 @@ VALUES
 (6,6),
 (7,1)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Child]
@@ -415,7 +398,6 @@ VALUES
 (6,66),
 (7,77)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
@@ -448,7 +430,6 @@ VALUES
 (4,42,423),
 (4,42,424)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [InheritanceParent]
@@ -462,7 +443,6 @@ VALUES
 (2,1,NULL),
 (3,2,'InheritanceParent2')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [InheritanceChild]
@@ -477,7 +457,6 @@ VALUES
 (2,1,2,NULL),
 (3,2,3,'InheritanceParent2')
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @binaryDataType Binary(1)
 SET     @binaryDataType = X'01'
@@ -497,7 +476,6 @@ SET     @uniqueidentifierDataType = X'FF19966F868B11D0B42D00C04FC964FF'
 					uniqueidentifierDataType = @uniqueidentifierDataType
 				WHERE ID = 2
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 --
@@ -601,24 +579,20 @@ CREATE TABLE LinqDataTypes
 
 DROP TABLE IF EXISTS TestIdentity
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 DROP VIEW IF EXISTS AllTypesView
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 DROP TABLE IF EXISTS AllTypes
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE AllTypes
@@ -654,7 +628,6 @@ CREATE TABLE AllTypes
 	objectDataType           Object           NULL
 )
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE VIEW AllTypesView
@@ -664,7 +637,6 @@ SELECT
 	ROW_NUMBER () OVER () AS Number
 FROM AllTypes
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO AllTypes
@@ -687,7 +659,6 @@ SELECT
 		  '1',     '234', '567', '23233',  '3323',  '111',
 		   10
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 --
@@ -697,7 +668,6 @@ BeforeExecute
 -- Parent table
 DROP TABLE IF EXISTS PrimaryKeyTable
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE PrimaryKeyTable
@@ -706,13 +676,11 @@ CREATE TABLE PrimaryKeyTable
 	Name         nvarchar(50) NOT NULL
 )
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE ForeignKeyTable
@@ -725,13 +693,11 @@ CREATE TABLE ForeignKeyTable
 	CONSTRAINT FK_ForeignKeyTable_PrimaryKeyTable FOREIGN KEY(PrimaryKeyTableID) REFERENCES PrimaryKeyTable ON DELETE CASCADE
 )
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE FKTestPosition
@@ -748,7 +714,6 @@ CREATE TABLE FKTestPosition
 	--    FOREIGN KEY(Department) REFERENCES FKTestDepartment(DepartmentID) ON DELETE CASCADE
 )
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 -- merge test tables
@@ -840,7 +805,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL COLLATE NOCASE
 );
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
@@ -870,7 +834,6 @@ VALUES
 (11,11.45,'2009-09-27 00:00:00.000',NULL,1,X'181D02D3F097C04D98D0F0C7DF4A1230',11,NULL,NULL,'9'),
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [Parent]
@@ -887,7 +850,6 @@ VALUES
 (6,6),
 (7,1)
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [Child]
@@ -914,7 +876,6 @@ VALUES
 (6,66),
 (7,77)
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
@@ -947,7 +908,6 @@ VALUES
 (4,42,423),
 (4,42,424)
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [InheritanceParent]
@@ -961,7 +921,6 @@ VALUES
 (2,1,NULL),
 (3,2,'InheritanceParent2')
 
-BeforeExecute
 -- SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [InheritanceChild]
@@ -976,7 +935,6 @@ VALUES
 (2,1,2,NULL),
 (3,2,3,'InheritanceParent2')
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @binaryDataType Binary(1)
 SET     @binaryDataType = X'01'

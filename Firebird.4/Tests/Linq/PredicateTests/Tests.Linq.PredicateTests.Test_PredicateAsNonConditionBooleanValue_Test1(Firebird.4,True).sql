@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"r"."Id",
@@ -82,7 +81,6 @@ FROM
 WHERE
 	"r"."Id" <> -1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

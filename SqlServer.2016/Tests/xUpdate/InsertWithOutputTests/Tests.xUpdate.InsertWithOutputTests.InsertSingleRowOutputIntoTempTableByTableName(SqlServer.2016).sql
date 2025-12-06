@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [TableWithData_source]
@@ -34,7 +34,6 @@ VALUES
 	N'SomeStr'
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -44,7 +43,6 @@ SELECT
 FROM
 	[TableWithData_source] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -54,7 +52,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]

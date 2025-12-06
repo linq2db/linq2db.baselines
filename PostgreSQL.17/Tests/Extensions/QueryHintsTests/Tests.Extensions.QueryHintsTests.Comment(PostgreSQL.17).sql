@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	"Parent" p
 ---
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

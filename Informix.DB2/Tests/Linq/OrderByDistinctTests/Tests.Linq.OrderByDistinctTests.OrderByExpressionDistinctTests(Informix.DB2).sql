@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0
 DECLARE @take Integer(4) -- Int32
@@ -10,7 +9,6 @@ SELECT SKIP @skip FIRST @take DISTINCT
 FROM
 	OrderByDistinctData x
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 0

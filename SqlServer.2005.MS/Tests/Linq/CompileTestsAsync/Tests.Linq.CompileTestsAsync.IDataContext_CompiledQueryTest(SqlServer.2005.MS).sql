@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[p].[FirstName],
@@ -12,8 +11,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[p].[FirstName],

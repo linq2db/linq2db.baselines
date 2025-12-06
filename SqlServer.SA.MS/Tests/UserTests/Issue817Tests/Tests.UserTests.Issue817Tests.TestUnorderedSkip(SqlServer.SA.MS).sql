@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1

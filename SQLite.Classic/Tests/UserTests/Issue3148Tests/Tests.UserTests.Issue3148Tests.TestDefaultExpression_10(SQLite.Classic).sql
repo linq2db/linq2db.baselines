@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[x].[ParentID],
@@ -31,7 +30,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

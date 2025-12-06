@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	([i].[One], [i].[Two]) <> (1, [i].[One] * 2)
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	([i].[One], [i].[Two], [i].[Three]) <> (0, 7, 9) AND
 	([i].[One], [i].[Two], [i].[Three]) <> (NULL, -1, [i].[Four])
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -32,7 +29,6 @@ WHERE
 	([i].[One], [i].[Three], [i].[Four]) <> (0, 7, 9) AND
 	([i].[One], [i].[Three], [i].[Four]) <> (NULL, 2, [i].[Four])
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -44,7 +40,6 @@ WHERE
 	([i].[One], [i].[Two], [i].[Four]) <> (0, 7, 9) AND
 	([i].[One], [i].[Two], [i].[Four]) <> (NULL, 2, [i].[Four])
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

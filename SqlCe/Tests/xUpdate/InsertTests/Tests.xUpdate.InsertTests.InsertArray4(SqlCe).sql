@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
@@ -44,7 +42,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -60,7 +57,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

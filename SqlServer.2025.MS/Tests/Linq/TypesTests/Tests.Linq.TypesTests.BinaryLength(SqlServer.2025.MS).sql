@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT TOP (1)
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @BinaryValue VarBinary(8000) -- Binary
 SET     @BinaryValue = NULL

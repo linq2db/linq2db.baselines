@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 WITH [CTE1_] ([c1])
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 WITH [CTE1_] ([c1])
@@ -38,7 +35,6 @@ SELECT
 FROM
 	[CTE1_] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 WITH [CTE1_] ([c1])

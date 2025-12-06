@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."PersonID",
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

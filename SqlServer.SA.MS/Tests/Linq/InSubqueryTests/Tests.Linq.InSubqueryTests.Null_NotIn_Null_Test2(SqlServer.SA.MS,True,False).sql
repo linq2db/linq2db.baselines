@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -15,19 +16,21 @@ WHERE
 			[t].[ID] = [p].[ID]
 	)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_2] [t1]
 

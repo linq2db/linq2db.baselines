@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO TableWithIdentity
@@ -26,7 +24,6 @@ SELECT
 FROM
 	TableWithIdentitySrc t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

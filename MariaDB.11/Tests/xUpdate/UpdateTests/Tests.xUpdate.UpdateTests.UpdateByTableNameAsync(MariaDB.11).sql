@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-
-DROP TABLE IF EXISTS `xxPerson`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-
-CREATE TABLE `xxPerson`
-(
-	`FirstName`  VARCHAR(4000)                NOT NULL,
-	`PersonID`   INT           AUTO_INCREMENT NOT NULL,
-	`LastName`   VARCHAR(4000)                NOT NULL,
-	`MiddleName` VARCHAR(4000)                    NULL,
-	`Gender`     CHAR                         NOT NULL,
-
-	CONSTRAINT `PK_xxPerson` PRIMARY KEY CLUSTERED (`PersonID`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -43,16 +23,14 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`FirstName`,
@@ -64,8 +42,7 @@ FROM
 	`xxPerson` `t1`
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -87,8 +64,7 @@ SET
 WHERE
 	`t1`.`PersonID` = @ID
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`FirstName`,
@@ -99,9 +75,4 @@ SELECT
 FROM
 	`xxPerson` `t1`
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
-
-DROP TABLE `xxPerson`
 

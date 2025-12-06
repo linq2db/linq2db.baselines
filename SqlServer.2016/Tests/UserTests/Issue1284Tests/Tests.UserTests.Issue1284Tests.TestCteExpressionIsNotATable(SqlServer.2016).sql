@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 WITH [CTE_1]
 (
@@ -31,7 +30,6 @@ FROM
 WHERE
 	[x].[entry_ID] = 1
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

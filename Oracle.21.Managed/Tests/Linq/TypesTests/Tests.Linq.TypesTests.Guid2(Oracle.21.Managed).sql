@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	p.ID,
@@ -16,7 +15,6 @@ WHERE
 	p."GuidValue" = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B')
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

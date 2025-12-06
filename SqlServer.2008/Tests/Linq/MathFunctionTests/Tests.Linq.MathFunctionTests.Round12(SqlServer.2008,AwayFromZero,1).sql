@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			ROUND([p].[MoneyValue], 1) as [c1],
-			[p].[MoneyValue]
+			ROUND([p].[MoneyValue], 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

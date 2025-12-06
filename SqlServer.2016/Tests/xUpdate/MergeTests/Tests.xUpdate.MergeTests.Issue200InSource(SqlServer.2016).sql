@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 MERGE INTO [AllTypes2] [Target]
@@ -35,7 +31,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -47,5 +42,3 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
-DisposeTransaction

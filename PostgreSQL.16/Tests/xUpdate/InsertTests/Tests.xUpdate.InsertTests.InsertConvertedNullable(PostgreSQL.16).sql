@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" >= 1000
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @tt Bigint -- Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	:tt
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -34,7 +31,6 @@ WHERE
 	t."ID" = 1001
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM

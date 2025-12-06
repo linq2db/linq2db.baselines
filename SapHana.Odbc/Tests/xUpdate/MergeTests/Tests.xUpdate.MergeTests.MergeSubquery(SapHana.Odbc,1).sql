@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "MergeTemp"
 (
@@ -11,7 +8,6 @@ CREATE COLUMN TABLE "MergeTemp"
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -29,7 +25,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -47,7 +42,6 @@ WHERE
 			"t"."Name" = 'John'
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "MergeTemp"

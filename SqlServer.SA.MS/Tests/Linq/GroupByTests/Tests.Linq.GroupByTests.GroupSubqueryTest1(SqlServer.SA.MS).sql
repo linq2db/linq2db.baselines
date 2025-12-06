@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 	) [pmp]
 		CROSS JOIN [Child] [pmp1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

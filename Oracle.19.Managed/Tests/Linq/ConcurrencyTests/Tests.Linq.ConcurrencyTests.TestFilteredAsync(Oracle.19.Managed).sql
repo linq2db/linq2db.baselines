@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -20,7 +19,6 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Value Varchar2(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int32
@@ -47,7 +44,6 @@ SET
 WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -57,8 +53,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Value Varchar2(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int32
@@ -74,7 +69,6 @@ SET
 WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -84,8 +78,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -96,7 +89,6 @@ DELETE FROM
 WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -106,8 +98,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
@@ -118,7 +109,6 @@ DELETE FROM
 WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

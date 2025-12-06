@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t].[ParentID],
@@ -14,7 +13,6 @@ SELECT
 FROM
 	[Parent] [t]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

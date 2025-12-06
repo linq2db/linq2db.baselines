@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @VarChar VarChar -- AnsiString
 SET     @VarChar = Tests.Linq.ParameterTests+VarChar
 
@@ -12,7 +11,6 @@ VALUES
 	@VarChar
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[AllTypesCustomMaxLength] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @p VarChar -- AnsiString
 SET     @p = Tests.Linq.ParameterTests+VarChar

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	`p`.`PersonID` = @p
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p Int32
 SET     @p = 2

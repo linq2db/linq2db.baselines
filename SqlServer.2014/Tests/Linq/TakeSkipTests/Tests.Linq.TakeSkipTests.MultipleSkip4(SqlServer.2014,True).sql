@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

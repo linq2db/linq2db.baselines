@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[user_1].[Id],
 	[user_1].[FirstName],
 	[user_1].[Status]
 FROM

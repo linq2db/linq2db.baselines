@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -15,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1."DateTimeValue" = '2009-09-27'::date
+	t1."DateTimeValue" = make_timestamp(2009, 9, 27, 0, 0, 0)
 

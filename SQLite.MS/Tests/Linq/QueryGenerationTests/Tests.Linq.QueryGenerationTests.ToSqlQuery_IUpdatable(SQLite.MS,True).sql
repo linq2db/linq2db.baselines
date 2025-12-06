@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 UPDATE
@@ -20,7 +18,6 @@ UPDATE
 SET
 	[Value] = 123
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

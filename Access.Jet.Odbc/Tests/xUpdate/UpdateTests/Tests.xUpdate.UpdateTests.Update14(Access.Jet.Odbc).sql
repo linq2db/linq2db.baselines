@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

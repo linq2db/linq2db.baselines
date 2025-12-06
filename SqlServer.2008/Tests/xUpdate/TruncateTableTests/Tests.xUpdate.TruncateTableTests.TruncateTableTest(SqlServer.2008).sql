@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 IF (OBJECT_ID(N'[TestTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestTrun]
 
-BeforeExecute
 -- SqlServer.2008
 
 CREATE TABLE [TestTrun]
@@ -15,12 +13,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 TRUNCATE TABLE [TestTrun]
 
-BeforeExecute
 -- SqlServer.2008
 
 DROP TABLE [TestTrun]

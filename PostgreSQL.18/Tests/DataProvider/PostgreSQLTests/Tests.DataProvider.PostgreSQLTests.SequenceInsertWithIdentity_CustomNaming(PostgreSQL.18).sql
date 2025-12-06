@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"SequenceCustomNamingTest" t1
 WHERE
 	t1."Value" = 'SeqValue'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Value Text(8) -- String
 SET     @Value = 'SeqValue'
@@ -24,7 +22,6 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -36,7 +33,6 @@ WHERE
 	t1."Value" = 'SeqValue'
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
@@ -46,7 +42,6 @@ DELETE FROM
 WHERE
 	t1."ID" = :id1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue681Table2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE Issue681Table2
@@ -14,7 +12,6 @@ CREATE TABLE Issue681Table2
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue681Table2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	p.Id,
@@ -10,7 +9,6 @@ WHERE
 	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
 |||| || | | | | | | | | | | | | | | | |　', ''))
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @offset Int32
 SET     @offset = -1
 
@@ -8,10 +7,10 @@ UPDATE
 SET
 	"Field" = CAST(CAST(t1."Field" AS Int) + :offset AS Number(3))
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1."Id",
 	t1."Field"
 FROM
 	"Issue4963Table" t1

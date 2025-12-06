@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS FluentTemp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE IF NOT EXISTS FluentTemp
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -32,8 +29,7 @@ VALUES
 	@Name
 )
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 MERGE INTO FluentTemp Target
 USING (
@@ -61,8 +57,7 @@ VALUES
 	Source.Name
 )
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS FluentTemp
 

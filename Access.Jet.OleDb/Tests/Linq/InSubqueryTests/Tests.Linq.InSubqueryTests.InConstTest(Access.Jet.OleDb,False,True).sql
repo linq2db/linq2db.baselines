@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[c_1].[ParentID],
@@ -14,7 +13,6 @@ WHERE
 			[Parent] [p]
 	)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

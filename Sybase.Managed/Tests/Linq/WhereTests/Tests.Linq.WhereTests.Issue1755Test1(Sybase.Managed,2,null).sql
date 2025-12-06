@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

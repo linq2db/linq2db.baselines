@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value6 Int -- Int32
 SET     @Value6 = 7
 DECLARE @id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -25,7 +23,6 @@ WHERE
 	"t1"."Id" = ?
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value6 Int -- Int32
 SET     @Value6 = 8
@@ -39,7 +36,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 1

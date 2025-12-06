@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	Parent
 DELETE WHERE
 	Value1 = 11
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
@@ -22,7 +20,6 @@ FROM
 WHERE
 	c_1.ChildID = 11
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	p.Value1 = 11
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

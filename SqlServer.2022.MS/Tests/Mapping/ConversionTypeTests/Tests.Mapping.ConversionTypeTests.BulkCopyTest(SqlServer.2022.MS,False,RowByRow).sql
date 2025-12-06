@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(50) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
@@ -27,7 +25,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

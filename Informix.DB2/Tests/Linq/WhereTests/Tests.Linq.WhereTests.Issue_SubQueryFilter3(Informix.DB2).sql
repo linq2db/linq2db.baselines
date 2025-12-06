@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	patient_1.PersonID,
@@ -40,7 +39,6 @@ WHERE
 ORDER BY
 	patient_1.PersonID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -49,7 +47,6 @@ SELECT
 FROM
 	Patient t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

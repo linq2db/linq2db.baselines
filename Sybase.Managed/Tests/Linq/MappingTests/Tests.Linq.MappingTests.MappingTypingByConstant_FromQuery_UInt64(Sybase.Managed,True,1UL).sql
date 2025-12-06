@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID],
@@ -13,7 +12,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

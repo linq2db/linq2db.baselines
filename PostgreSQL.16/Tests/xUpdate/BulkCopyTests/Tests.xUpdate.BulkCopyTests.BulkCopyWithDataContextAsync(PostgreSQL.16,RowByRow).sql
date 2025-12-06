@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -12,8 +11,7 @@ VALUES
 	:Id
 )
 
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 

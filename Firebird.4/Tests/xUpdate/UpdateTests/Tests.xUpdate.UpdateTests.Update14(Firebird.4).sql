@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName VarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @name Integer -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	"t1"."FirstName" STARTING WITH 'Update14'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

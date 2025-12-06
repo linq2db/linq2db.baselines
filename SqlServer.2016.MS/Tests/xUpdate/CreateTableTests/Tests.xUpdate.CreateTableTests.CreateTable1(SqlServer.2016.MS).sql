@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [TestTable]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [TestTable]
@@ -16,7 +14,6 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [TestTable]

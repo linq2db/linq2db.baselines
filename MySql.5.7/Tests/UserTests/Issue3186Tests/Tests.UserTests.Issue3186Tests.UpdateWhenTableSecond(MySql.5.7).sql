@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @is_deleted UByte -- Boolean
 SET     @is_deleted = 1
 
@@ -13,7 +12,6 @@ SET
 WHERE
 	`ct`.`id` = 'TestProcessService' AND `ctg`.`id` = `ctg_1`.`id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 WHERE
 	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

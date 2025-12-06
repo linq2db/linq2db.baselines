@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 UPDATE
 	[TableWithData]
 SET
-	[Id] = [TableWithData].[Id],
 	[Value] = [TableWithData].[Value] + 1,
 	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
 OUTPUT

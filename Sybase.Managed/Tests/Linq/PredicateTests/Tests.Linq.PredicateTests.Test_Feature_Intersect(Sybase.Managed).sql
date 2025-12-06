@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -16,7 +15,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -34,7 +32,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -52,7 +49,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -72,7 +68,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -92,7 +87,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -112,7 +106,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -130,7 +123,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -148,7 +140,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -166,7 +157,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -186,7 +176,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -206,7 +195,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

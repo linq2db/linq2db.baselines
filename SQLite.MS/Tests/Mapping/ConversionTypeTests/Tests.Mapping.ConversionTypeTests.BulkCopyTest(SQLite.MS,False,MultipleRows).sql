@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [TrimTestTable]
 (
@@ -9,7 +8,6 @@ INSERT INTO [TrimTestTable]
 VALUES
 (1,'***OOO***')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

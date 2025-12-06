@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String

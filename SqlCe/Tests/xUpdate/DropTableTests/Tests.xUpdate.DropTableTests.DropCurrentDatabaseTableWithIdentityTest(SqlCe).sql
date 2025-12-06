@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [DropTableTestID]
@@ -14,7 +12,6 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [DropTableTestID]
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

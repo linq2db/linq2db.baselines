@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -49,7 +46,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -69,7 +65,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -89,7 +84,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32
 SET     @id = 5

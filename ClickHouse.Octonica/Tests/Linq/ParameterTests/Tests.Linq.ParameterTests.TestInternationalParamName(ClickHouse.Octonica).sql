@@ -1,4 +1,13 @@
-﻿BeforeExecute
+﻿-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	p.ParentID,
+	p.Value1
+FROM
+	Parent p
+WHERE
+	p.ParentID = 1
+
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -9,18 +18,6 @@ FROM
 WHERE
 	p.ParentID = 1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	p.ParentID,
-	p.Value1
-FROM
-	Parent p
-WHERE
-	p.ParentID = 1
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

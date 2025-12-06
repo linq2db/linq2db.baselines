@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeText UniVarChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

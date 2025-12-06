@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'John'
 DECLARE @name_1 NVarChar(3) -- String

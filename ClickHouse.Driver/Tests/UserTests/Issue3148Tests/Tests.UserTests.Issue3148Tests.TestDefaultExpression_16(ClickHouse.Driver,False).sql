@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	g_1.LastName,
@@ -11,7 +10,6 @@ FROM
 GROUP BY
 	g_1.LastName
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

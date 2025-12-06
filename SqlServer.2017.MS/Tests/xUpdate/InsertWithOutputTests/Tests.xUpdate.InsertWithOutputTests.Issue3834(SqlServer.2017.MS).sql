@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 123
 DECLARE @Nesto NVarChar(4000) -- String

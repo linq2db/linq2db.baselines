@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	IIF([t1].[ParentID] IS NOT NULL, [t1].[ChildID], 0)

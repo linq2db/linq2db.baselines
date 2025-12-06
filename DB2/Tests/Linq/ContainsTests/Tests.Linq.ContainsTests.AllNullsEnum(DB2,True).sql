@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"s"."Enum" IS NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

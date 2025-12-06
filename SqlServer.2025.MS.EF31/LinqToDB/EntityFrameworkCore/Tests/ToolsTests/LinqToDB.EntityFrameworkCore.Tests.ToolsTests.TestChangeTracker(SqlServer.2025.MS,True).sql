@@ -1,7 +1,6 @@
-﻿BeginTransactionAsync(RepeatableRead)
+﻿
 
-
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[m_1].[ProductId],
@@ -37,7 +36,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[m_1].[OrderID],
@@ -68,10 +67,9 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[e].[IsDeleted],

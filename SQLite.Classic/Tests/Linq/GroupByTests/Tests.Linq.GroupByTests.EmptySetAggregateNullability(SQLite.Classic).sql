@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Min_1] <> 0 OR [t1].[Min_1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t1].[Max_1] <> 0 OR [t1].[Max_1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -49,7 +46,6 @@ FROM
 WHERE
 	[t1].[Avg_1] <> 0 OR [t1].[Avg_1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -66,7 +62,6 @@ FROM
 WHERE
 	[t1].[Sum_1] <> 0 OR [t1].[Sum_1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

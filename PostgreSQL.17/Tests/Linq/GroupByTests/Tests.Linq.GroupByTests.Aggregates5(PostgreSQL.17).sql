@@ -1,15 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	COUNT(CASE
-		WHEN g_1."ChildID" > 30 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."ChildID" > 30 THEN 1
-		ELSE NULL
-	END),
+	COUNT(*) FILTER (WHERE g_1."ChildID" > 30),
+	COUNT(*) FILTER (WHERE g_1."ChildID" > 30),
 	COUNT(*)
 FROM
 	"Child" g_1

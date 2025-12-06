@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"c_1"."ParentID",
@@ -23,7 +22,6 @@ WHERE
 			"param"."ParentID" = "c_1"."ParentID" AND "param"."Value_1" = "c_1"."ParentID"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"Child" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

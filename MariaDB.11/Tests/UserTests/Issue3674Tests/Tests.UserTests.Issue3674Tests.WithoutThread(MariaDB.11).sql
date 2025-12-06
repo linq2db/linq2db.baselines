@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`p`.`Id`,
 	`p`.`Code`,
 	`p`.`DIM_Company`,
 	`p`.`DIM_Branch`,

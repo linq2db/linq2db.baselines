@@ -1,26 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-DROP TABLE IF EXISTS xxPerson
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-CREATE TABLE xxPerson
-(
-	FirstName  String,
-	PersonID   Int32,
-	LastName   String,
-	MiddleName Nullable(String),
-	Gender     FixedString(1),
-
-	PRIMARY KEY (PersonID)
-)
-ENGINE = MergeTree()
-ORDER BY PersonID
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO xxPerson
 (
@@ -39,16 +17,14 @@ VALUES
 	'M'
 )
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -60,24 +36,17 @@ FROM
 	xxPerson t1
 LIMIT 2
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	xxPerson
 DELETE WHERE
 	PersonID = 0
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-DROP TABLE xxPerson
 

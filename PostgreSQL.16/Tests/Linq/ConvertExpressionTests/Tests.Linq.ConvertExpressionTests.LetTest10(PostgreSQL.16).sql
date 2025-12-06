@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	EXISTS(
@@ -9,8 +8,7 @@ SELECT
 			"Parent" p
 				LEFT JOIN LATERAL (
 					SELECT
-						c_1."ParentID",
-						c_1."ChildID"
+						*
 					FROM
 						"Child" c_1
 					WHERE

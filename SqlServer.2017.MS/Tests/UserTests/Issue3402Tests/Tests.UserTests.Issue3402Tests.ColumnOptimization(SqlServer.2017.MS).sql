@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[ess].[ID]
@@ -15,7 +14,6 @@ WHERE
 			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
 	)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

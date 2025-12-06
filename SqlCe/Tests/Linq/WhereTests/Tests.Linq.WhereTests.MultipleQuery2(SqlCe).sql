@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlCe
 DECLARE @str NVarChar(3) -- String
 SET     @str = '123'

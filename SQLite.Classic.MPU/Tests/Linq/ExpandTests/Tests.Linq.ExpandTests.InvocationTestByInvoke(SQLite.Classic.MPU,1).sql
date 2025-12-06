@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 10
 
@@ -8,7 +7,6 @@ UPDATE
 SET
 	[Value] = @p + [SampleClass].[Value] * 2
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

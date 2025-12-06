@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32
@@ -12,8 +11,7 @@ SET
 WHERE
 	`t1`.`ParentID` = @ParentID AND `t1`.`ChildID` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32

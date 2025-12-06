@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "TPHTable"
 (
@@ -14,7 +13,6 @@ SELECT 1,1,CAST('Str1' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST(NULL AS Va
 SELECT 2,2,NULL,'Str2',NULL,NULL FROM rdb$database UNION ALL
 SELECT 3,3,NULL,NULL,'Str3','Y' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -44,7 +41,6 @@ FROM
 WHERE
 	"x"."Discriminator" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -59,7 +55,6 @@ FROM
 WHERE
 	"x"."Discriminator" = 2
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -74,7 +69,6 @@ FROM
 WHERE
 	"x"."Discriminator" = 3
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -89,7 +83,6 @@ FROM
 WHERE
 	"x"."Value1" = 'Str1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -104,7 +97,6 @@ FROM
 WHERE
 	"x"."Value2" = 'Str2'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	NOT `s`.`String` <=> @value
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -22,7 +20,6 @@ FROM
 WHERE
 	NOT `s`.`NullableString` <=> @value
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -34,7 +31,6 @@ FROM
 WHERE
 	`s`.`String` <=> @value
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'

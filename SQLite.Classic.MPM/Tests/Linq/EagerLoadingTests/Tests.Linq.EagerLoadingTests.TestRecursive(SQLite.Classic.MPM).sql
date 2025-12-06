@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
 SET     @masterFilter = 5
 
@@ -29,7 +26,6 @@ FROM
 	) [m_1]
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_1].[DetailId]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
 SET     @masterFilter = 5
@@ -58,7 +54,6 @@ FROM
 	) [m_1]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
 SET     @masterFilter = 5
@@ -77,9 +72,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @masterFilter  -- Int32
 SET     @masterFilter = 5

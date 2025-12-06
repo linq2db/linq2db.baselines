@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -30,7 +29,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1

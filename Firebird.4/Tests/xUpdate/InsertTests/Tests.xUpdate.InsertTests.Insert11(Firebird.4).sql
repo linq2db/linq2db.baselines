@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	MAX("t1"."PersonID")
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
@@ -34,7 +32,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 4

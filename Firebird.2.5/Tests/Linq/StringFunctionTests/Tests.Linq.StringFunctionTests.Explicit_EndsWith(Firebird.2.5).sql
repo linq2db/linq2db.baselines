@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%Persecution' ESCAPE '~'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower("r"."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

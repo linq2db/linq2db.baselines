@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName NVarchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
@@ -45,7 +43,6 @@ WHERE
 	t."PersonID" = :id
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5

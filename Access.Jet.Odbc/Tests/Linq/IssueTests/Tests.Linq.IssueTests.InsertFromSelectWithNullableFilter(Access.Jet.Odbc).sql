@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
+	[t2].[ID],
 	123,
 	[t2].[ID]
 FROM
@@ -20,17 +21,18 @@ FROM
 			1 = 0
 	) [t2]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
+	[t2].[ID],
 	123,
 	[t2].[ID]
 FROM
@@ -44,10 +46,10 @@ FROM
 			[t1].[ID] = ?
 	) [t2]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
+	[t1].[Pk],
 	[t1].[ID],
 	[t1].[intDataType]
 FROM

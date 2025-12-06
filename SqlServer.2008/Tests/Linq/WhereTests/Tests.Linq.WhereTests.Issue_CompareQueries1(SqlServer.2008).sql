@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT TOP (2)
 	COUNT([p].[PersonID])
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] IN (1, 2)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (2)

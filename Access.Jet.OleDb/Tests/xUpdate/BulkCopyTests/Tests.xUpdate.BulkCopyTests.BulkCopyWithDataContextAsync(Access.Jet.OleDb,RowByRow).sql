@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -12,8 +11,7 @@ VALUES
 	@Id
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 

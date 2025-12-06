@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	MIN([t2].[ParentID]) as [MIN_1]
+	MIN([t2].[ParentID]) as [Min_1]
 FROM
 	(
 		SELECT TOP (@take)

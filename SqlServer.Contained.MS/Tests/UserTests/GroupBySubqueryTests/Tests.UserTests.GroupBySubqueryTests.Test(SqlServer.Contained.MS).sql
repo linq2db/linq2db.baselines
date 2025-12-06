@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Field3] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

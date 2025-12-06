@@ -1,19 +1,15 @@
-﻿BeforeExecute
+﻿-- SqlServer.2019
+
+SELECT 'A'
+
 -- SqlServer.2019
 
 SELECT 'A'
 
-BeforeExecute
--- SqlServer.2019
-
-SELECT 'A'
-
-BeforeExecute
 -- SqlServer.2019
 
 SELECT 'B'
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT 'B'

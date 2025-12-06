@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = N'test'
@@ -46,7 +43,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

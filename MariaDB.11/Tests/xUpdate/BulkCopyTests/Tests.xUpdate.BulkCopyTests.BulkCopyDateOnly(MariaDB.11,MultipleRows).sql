@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `DateOnlyTable`
 (
@@ -8,10 +7,10 @@ INSERT INTO `DateOnlyTable`
 VALUES
 ('2021-01-01')
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Date`
 FROM
 	`DateOnlyTable` `t1`

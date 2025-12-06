@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",

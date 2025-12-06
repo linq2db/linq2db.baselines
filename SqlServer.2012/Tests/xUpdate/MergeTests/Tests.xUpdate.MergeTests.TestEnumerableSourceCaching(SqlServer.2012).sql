@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -29,7 +28,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -40,7 +38,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [CacheTestTable] [Target]
@@ -71,7 +68,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

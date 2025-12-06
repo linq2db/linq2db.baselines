@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	12
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @param BigInt -- Int64
 SET     @param = 11
@@ -41,7 +38,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -51,7 +47,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT TOP (1)
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (1)

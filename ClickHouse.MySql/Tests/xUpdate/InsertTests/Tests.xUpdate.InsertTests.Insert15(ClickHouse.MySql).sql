@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	Person
 DELETE WHERE
 	startsWith(FirstName, 'Insert15')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
@@ -26,7 +24,6 @@ VALUES
 	'Insert15'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	startsWith(t1.FirstName, 'Insert15')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

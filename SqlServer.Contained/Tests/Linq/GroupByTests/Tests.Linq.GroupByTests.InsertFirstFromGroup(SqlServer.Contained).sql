@@ -1,15 +1,27 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [tempdb]..[#temp_table_2]
+CREATE TABLE [temp_table_1]
 (
-	[Value] NVarChar(4000)     NULL
+	[ID]    Int            NOT NULL,
+	[Value] NVarChar(4000)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
+INSERT BULK [temp_table_1](ID, Value)
+
 -- SqlServer.Contained SqlServer.2019
 
-INSERT INTO [tempdb]..[#temp_table_2]
+CREATE TABLE [temp_table_2]
+(
+	[Value] NVarChar(50) NOT NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY CLUSTERED ([Value])
+)
+
+-- SqlServer.Contained SqlServer.2019
+
+INSERT INTO [temp_table_2]
 (
 	[Value]
 )
@@ -33,8 +45,11 @@ FROM
 				[gr_1].[ID] = [c_1].[ID]
 		) [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#temp_table_2]
+DROP TABLE IF EXISTS [temp_table_2]
+
+-- SqlServer.Contained SqlServer.2019
+
+DROP TABLE IF EXISTS [temp_table_1]
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO UserIssue3128
 (
@@ -10,7 +9,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO UserDetailsIssue3128
@@ -24,7 +22,6 @@ VALUES
 	18
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

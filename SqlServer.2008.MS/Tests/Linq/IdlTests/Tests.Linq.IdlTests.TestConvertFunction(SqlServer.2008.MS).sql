@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -15,7 +13,6 @@ SELECT
 FROM
 	[Person] [x]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

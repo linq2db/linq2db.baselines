@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[Id],
@@ -11,9 +8,6 @@ FROM
 	[MainEntity] [m_1]
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

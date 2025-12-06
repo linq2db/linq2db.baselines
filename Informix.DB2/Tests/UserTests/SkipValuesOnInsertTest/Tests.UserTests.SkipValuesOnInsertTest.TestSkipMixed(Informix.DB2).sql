@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -32,7 +30,6 @@ FROM
 WHERE
 	t.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 20
@@ -46,7 +43,6 @@ SET
 WHERE
 	t1.Id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -58,7 +54,6 @@ FROM
 WHERE
 	t.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -88,7 +82,6 @@ FROM
 WHERE
 	t.Id = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jessy'
@@ -105,7 +98,6 @@ SET
 WHERE
 	t1.Id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1

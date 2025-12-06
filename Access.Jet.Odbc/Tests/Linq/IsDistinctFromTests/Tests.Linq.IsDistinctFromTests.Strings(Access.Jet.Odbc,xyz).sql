@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[s].[String] IS NULL OR [s].[String] <> ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
@@ -22,7 +20,6 @@ FROM
 WHERE
 	[s].[NullableString] IS NULL OR [s].[NullableString] <> ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
@@ -34,7 +31,6 @@ FROM
 WHERE
 	NOT ([s].[String] IS NULL OR [s].[String] <> ?)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'

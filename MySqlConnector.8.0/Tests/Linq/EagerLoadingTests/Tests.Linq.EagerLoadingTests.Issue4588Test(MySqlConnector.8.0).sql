@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32
@@ -41,7 +38,6 @@ FROM
 	) `m_1`
 		INNER JOIN `SubOrderDetail` `d_1` ON `m_1`.`Id` = `d_1`.`SubOrderId`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @skip Int32
 SET     @skip = 100
@@ -71,9 +67,6 @@ FROM
 	) `m_1`
 		INNER JOIN `SubOrder` `d` ON `m_1`.`Id` = `d`.`OrderId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @skip Int32
 SET     @skip = 100

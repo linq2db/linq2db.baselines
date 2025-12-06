@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[c_1].[ParentID],
@@ -16,7 +15,6 @@ WHERE
 			[p].[ParentID] = 1
 	)
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

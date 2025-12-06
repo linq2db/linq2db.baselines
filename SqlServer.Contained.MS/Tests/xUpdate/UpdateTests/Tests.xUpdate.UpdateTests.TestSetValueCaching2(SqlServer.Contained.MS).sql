@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 11
 DECLARE @id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 12
@@ -38,7 +35,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1

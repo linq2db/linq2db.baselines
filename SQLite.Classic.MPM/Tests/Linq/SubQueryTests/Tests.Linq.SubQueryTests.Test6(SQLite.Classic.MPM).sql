@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
 
@@ -27,5 +26,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 ORDER BY
-	[c_1].[ParentID] DESC
+	[c_1].[ParentID] DESC,
+	[c_1].[ChildID]
 

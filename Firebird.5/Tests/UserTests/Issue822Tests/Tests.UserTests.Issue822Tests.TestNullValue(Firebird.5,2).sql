@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			"t2".ID = @id AND "t1".ID = "t2".ID
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 4

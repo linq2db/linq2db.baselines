@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
@@ -40,7 +37,6 @@ FROM
 	) [m_1]
 		INNER JOIN [PeopleForLoadWith] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -50,29 +46,23 @@ SELECT
 	[d].[ParentId]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id]
+		SELECT
+			[p].[Id]
 		FROM
-			(
+			[PeopleForLoadWith] [p]
+		WHERE
+			EXISTS(
 				SELECT
-					[p].[Id]
+					*
 				FROM
-					[PeopleForLoadWith] [p]
+					[PeopleForLoadWith] [c_1]
 				WHERE
-					EXISTS(
-						SELECT
-							*
-						FROM
-							[PeopleForLoadWith] [c_1]
-						WHERE
-							[p].[Id] = [c_1].[ParentId]
-					)
-				LIMIT 1
-			) [t1]
+					[p].[Id] = [c_1].[ParentId]
+			)
+		LIMIT 1
 	) [m_1]
 		INNER JOIN [PeopleForLoadWith] [d] ON [m_1].[Id] = [d].[ParentId]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -92,5 +82,3 @@ WHERE
 	)
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

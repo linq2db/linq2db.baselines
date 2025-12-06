@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @pattern NVarChar(4000) -- String

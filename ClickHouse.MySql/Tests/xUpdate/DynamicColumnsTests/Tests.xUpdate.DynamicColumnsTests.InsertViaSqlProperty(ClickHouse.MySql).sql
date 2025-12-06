@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Child
 (
@@ -12,7 +11,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

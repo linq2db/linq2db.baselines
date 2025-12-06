@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[r].[Id],
@@ -32,7 +31,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

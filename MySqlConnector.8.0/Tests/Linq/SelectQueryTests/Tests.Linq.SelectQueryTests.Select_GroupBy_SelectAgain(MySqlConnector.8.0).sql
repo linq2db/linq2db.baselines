@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -9,13 +8,13 @@ SELECT
 	COUNT(*) OVER(),
 	`x`.`Key_1`,
 	`x`.`Count_1`,
-	`x`.`MAX_1`
+	`x`.`HighestFirstName`
 FROM
 	(
 		SELECT
 			`summary`.`LastName` as `Key_1`,
 			COUNT(*) as `Count_1`,
-			MAX(`summary`.`FirstName`) as `MAX_1`
+			MAX(`summary`.`FirstName`) as `HighestFirstName`
 		FROM
 			`Person` `summary`
 		GROUP BY

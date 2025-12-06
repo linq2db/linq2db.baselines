@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 DECLARE @Value1 VarWChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2

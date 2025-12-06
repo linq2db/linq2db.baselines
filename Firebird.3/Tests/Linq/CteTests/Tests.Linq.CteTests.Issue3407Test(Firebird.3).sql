@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	"r".ID = 2
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 WITH CTE_1 ("c1")

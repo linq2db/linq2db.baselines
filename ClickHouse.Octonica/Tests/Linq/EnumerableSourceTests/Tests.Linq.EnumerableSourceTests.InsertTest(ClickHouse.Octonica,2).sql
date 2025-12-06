@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TableToInsert
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	t.Id IS NULL
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TableToInsert

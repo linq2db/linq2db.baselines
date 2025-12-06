@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
@@ -28,9 +24,7 @@ SET
 WHERE
 	`t`.`ParentID` = 1010
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

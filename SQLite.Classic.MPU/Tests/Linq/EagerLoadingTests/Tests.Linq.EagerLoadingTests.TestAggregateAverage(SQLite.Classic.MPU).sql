@@ -1,25 +1,24 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	(
 		SELECT
-			AVG(CAST([t2].[DetailId] AS Float))
+			AVG(CAST([t2].[Average] AS Float))
 		FROM
 			(
 				SELECT
-					[t1].[DetailId]
+					[t1].[Average]
 				FROM
 					(
 						SELECT DISTINCT
-							[a_Details].[DetailId]
+							[a_Details].[DetailId] as [Average]
 						FROM
 							[DetailClass] [a_Details]
 						WHERE
 							[m_1].[Id1] = [a_Details].[MasterId]
 					) [t1]
 				ORDER BY
-					[t1].[DetailId]
+					[t1].[Average]
 				LIMIT 5 OFFSET 1
 			) [t2]
 	)
@@ -35,9 +34,6 @@ WHERE
 			[m_1].[Id1] = [a_Details_1].[MasterId]
 	) > 1
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -54,9 +50,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

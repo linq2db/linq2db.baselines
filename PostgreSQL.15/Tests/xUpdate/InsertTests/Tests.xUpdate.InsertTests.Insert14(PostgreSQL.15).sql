@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Person" p
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Person"
@@ -29,7 +27,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM

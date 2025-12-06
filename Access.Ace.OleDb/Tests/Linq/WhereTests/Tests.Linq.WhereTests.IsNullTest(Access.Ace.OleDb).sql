@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[nm].[MiddleName] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

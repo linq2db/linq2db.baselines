@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"Parent"
@@ -13,9 +12,9 @@ SET
 		WHERE
 			b_1."ChildID" = (
 				SELECT
-					MAX(b2_1."ParentID")
+					MAX(t2."ParentID")
 				FROM
-					"Child" b2_1
+					"Child" t2
 			) AND
 			b_1."ChildID" = -1 AND
 			"Parent"."ParentID" = w_1."ParentID" AND
@@ -31,9 +30,9 @@ WHERE
 		WHERE
 			b."ChildID" = (
 				SELECT
-					MAX(b2."ParentID")
+					MAX(t1."ParentID")
 				FROM
-					"Child" b2
+					"Child" t1
 			) AND
 			b."ChildID" = -1 AND
 			"Parent"."ParentID" = w."ParentID" AND

@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- SqlCe
+
+SELECT
+	[p].[PersonID] as [ID],
+	[p].[FirstName]
+FROM
+	[Person] [p]
+
 -- SqlCe
 
 SELECT
@@ -7,7 +14,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -16,7 +22,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -25,16 +30,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
--- SqlCe
-
-SELECT
-	[p].[PersonID] as [ID],
-	[p].[FirstName]
-FROM
-	[Person] [p]
-
-BeforeExecute
 -- SqlCe
 
 SELECT

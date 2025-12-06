@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 1
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = @p
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = -1
 

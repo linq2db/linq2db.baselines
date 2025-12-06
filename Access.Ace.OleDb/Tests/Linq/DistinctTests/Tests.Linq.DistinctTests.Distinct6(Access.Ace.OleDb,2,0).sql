@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 0
 DECLARE @Value1 Integer -- Int32
@@ -11,7 +10,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

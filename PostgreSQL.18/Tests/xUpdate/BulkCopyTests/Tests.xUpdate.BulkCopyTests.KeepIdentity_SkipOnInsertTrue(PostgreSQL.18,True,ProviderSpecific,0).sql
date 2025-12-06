@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,10 +13,8 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
 INSERT BULK "AllTypes"(ID, intDataType)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
@@ -32,7 +29,6 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3

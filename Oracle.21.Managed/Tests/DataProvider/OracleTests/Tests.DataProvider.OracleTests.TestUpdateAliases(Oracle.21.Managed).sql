@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ FROM
 WHERE
 	parent_1."ParentID" < 5
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE

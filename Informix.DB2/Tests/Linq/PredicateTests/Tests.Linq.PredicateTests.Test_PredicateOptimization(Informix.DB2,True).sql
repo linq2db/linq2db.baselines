@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	r.Value1 = r.Value2 OR r.Value1 = r.Value2 AND r.Value1 = r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 OR r.Value1 = r.Value5 AND r.Value1 = r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 OR r.Value1 = r.Value5 AND r.Value1 = r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	r.Value1 <> r.Value2 OR r.Value1 <> r.Value2 AND (r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value5 AND r.Value1 <> r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value5 AND (r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	r.Value1 > r.Value2 OR r.Value1 > r.Value2 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -180,7 +166,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -194,7 +179,6 @@ FROM
 WHERE
 	r.Value1 > r.Value5 OR r.Value1 > r.Value5 AND r.Value1 > r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -206,7 +190,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -220,7 +203,6 @@ FROM
 WHERE
 	r.Value1 > r.Value5 OR r.Value1 > r.Value5 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -232,7 +214,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -246,7 +227,6 @@ FROM
 WHERE
 	r.Value1 = r.Value2 AND (r.Value1 = r.Value2 OR r.Value1 = r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -258,7 +238,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -272,7 +251,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 AND (r.Value1 = r.Value5 OR r.Value1 = r.Value2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -284,7 +262,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -298,7 +275,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 AND (r.Value1 = r.Value5 OR r.Value1 = r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -310,7 +286,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -324,7 +299,6 @@ FROM
 WHERE
 	r.Value1 <> r.Value2 AND (r.Value1 <> r.Value2 OR r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -336,7 +310,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -350,7 +323,6 @@ FROM
 WHERE
 	(r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -362,7 +334,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -376,7 +347,6 @@ FROM
 WHERE
 	(r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -388,7 +358,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -402,7 +371,6 @@ FROM
 WHERE
 	r.Value1 >= r.Value2 AND (r.Value1 >= r.Value2 OR r.Value1 >= r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -414,7 +382,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -428,7 +395,6 @@ FROM
 WHERE
 	r.Value1 >= r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 >= r.Value2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -440,7 +406,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -454,7 +419,6 @@ FROM
 WHERE
 	r.Value1 >= r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 >= r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -466,7 +430,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -480,7 +443,6 @@ FROM
 WHERE
 	r.Value1 = r.Value2 OR r.Value1 <> r.Value2 AND r.Value1 = r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -492,7 +454,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -506,7 +467,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 OR (r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND r.Value1 = r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -518,7 +478,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -532,7 +491,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 OR (r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND r.Value1 = r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -544,7 +502,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -558,7 +515,6 @@ FROM
 WHERE
 	r.Value1 > r.Value2 OR r.Value1 <= r.Value2 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -570,7 +526,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -584,7 +539,6 @@ FROM
 WHERE
 	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -596,7 +550,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -610,7 +563,6 @@ FROM
 WHERE
 	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -622,7 +574,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -636,7 +587,6 @@ FROM
 WHERE
 	r.Value1 = r.Value2 AND (r.Value1 <> r.Value2 OR r.Value1 = r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -648,7 +598,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -662,7 +611,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 = r.Value2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -674,7 +622,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -688,7 +635,6 @@ FROM
 WHERE
 	r.Value1 = r.Value5 AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 = r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -700,7 +646,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -714,7 +659,6 @@ FROM
 WHERE
 	r.Value1 < r.Value2 AND (r.Value1 >= r.Value2 OR r.Value1 < r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -726,7 +670,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -740,7 +683,6 @@ FROM
 WHERE
 	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value2)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -752,7 +694,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -766,7 +707,6 @@ FROM
 WHERE
 	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value4)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -778,7 +718,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -790,7 +729,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -802,7 +740,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -816,7 +753,6 @@ FROM
 WHERE
 	r.Value1 > r.Value2 OR r.Value1 <= r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -828,7 +764,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -842,7 +777,6 @@ FROM
 WHERE
 	r.Value1 >= r.Value2 OR r.Value1 < r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -854,7 +788,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -866,7 +799,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -878,7 +810,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -892,7 +823,6 @@ FROM
 WHERE
 	r.Value1 < r.Value4 OR r.Value1 >= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -904,7 +834,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -918,7 +847,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 OR r.Value1 <= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -930,7 +858,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -942,7 +869,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -954,7 +880,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -968,7 +893,6 @@ FROM
 WHERE
 	r.Value5 > r.Value4 OR r.Value5 <= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -980,7 +904,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -994,7 +917,6 @@ FROM
 WHERE
 	r.Value5 >= r.Value4 OR r.Value5 < r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1006,7 +928,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1020,7 +941,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1032,7 +952,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1046,7 +965,6 @@ FROM
 WHERE
 	r.Value1 > r.Value2 AND r.Value1 <= r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1058,7 +976,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1072,7 +989,6 @@ FROM
 WHERE
 	r.Value1 >= r.Value2 AND r.Value1 < r.Value2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1084,7 +1000,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1098,7 +1013,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1110,7 +1024,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1124,7 +1037,6 @@ FROM
 WHERE
 	r.Value1 < r.Value4 AND r.Value1 >= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1136,7 +1048,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1150,7 +1061,6 @@ FROM
 WHERE
 	r.Value1 > r.Value4 AND r.Value1 <= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1162,7 +1072,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1176,7 +1085,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1188,7 +1096,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1202,7 +1109,6 @@ FROM
 WHERE
 	r.Value5 > r.Value4 AND r.Value5 <= r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1214,7 +1120,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1228,7 +1133,6 @@ FROM
 WHERE
 	r.Value5 >= r.Value4 AND r.Value5 < r.Value4
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT INTO Issue4460Table(Id, Code, Name, Surname) VALUES
+﻿INSERT INTO Issue4460Table(Id, Code, Name, Surname) VALUES
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -52,7 +49,6 @@ WHERE
 	[cross_1].[ParentID_1] = [c_2].[ParentID] AND
 	[cross_1].[ChildID] = [c_2].[ChildID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
 SET     @p = 1002

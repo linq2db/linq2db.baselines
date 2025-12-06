@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	x."ParentID" = :p
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 3
@@ -35,7 +32,6 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -44,7 +40,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
@@ -59,7 +54,6 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.CategoryID,
@@ -11,7 +10,6 @@ FROM
 	Categories m_1
 		INNER JOIN Products d ON m_1.CategoryID = d.CategoryID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

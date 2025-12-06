@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	MAX(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
@@ -16,7 +15,6 @@ FROM
 	Parent p
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

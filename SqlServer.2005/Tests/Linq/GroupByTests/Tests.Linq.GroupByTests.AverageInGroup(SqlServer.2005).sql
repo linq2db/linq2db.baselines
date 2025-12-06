@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[g_1].[GroupId],
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	[g_1].[GroupId]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 	[Value] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [CreateIfNotExistsTable]
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -35,7 +31,6 @@ SELECT
 FROM
 	[CreateIfNotExistsTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
@@ -44,12 +39,10 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 	[Value] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]

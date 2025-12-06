@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[ParentID],

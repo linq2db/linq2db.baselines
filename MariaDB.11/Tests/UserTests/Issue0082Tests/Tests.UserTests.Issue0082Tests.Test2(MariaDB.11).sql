@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`o`.`ParentID`,
@@ -22,21 +21,19 @@ SELECT
 FROM
 	`Parent` `o`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `o`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`ParentID`,
 	`x`.`CountResult`,
-	`x`.`SUM_1`
+	`x`.`SumResult`
 FROM
 	(
 		SELECT
@@ -56,7 +53,7 @@ FROM
 					`Child` `a_Children_1`
 				WHERE
 					`o`.`ParentID` = `a_Children_1`.`ParentID`
-			) as `SUM_1`
+			) as `SumResult`
 		FROM
 			`Parent` `o`
 	) `x`

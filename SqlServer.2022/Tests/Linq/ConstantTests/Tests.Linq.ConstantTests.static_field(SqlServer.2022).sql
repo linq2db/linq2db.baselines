@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
 SET     @GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

@@ -1,5 +1,6 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
+DECLARE @Pk Int -- Int32
+SET     @Pk = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -7,34 +8,17 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO [Issue1096Task]
 (
+	[Pk],
 	[Id],
 	[TargetName]
 )
 VALUES
 (
+	@Pk,
 	@Id,
 	@TargetName
 )
 
-BeforeExecute
--- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @TargetName NVarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO [Issue1096Task]
-(
-	[Id],
-	[TargetName]
-)
-VALUES
-(
-	@Id,
-	@TargetName
-)
-
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -56,10 +40,10 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT DISTINCT
+	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
 	[a_ActualStage].[Id] as [Id_1],

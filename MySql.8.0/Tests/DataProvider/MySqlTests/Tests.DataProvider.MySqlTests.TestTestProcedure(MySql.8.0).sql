@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @param3 Int32
 SET     @param3 = 123
 DECLARE @param2 Int32
@@ -9,7 +8,6 @@ SET     @param1 = NULL
 
 `TestProcedure`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

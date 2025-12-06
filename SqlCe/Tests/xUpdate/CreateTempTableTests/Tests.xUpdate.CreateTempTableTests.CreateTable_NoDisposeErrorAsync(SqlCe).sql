@@ -1,23 +1,21 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 DROP TABLE [TempTable]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 CREATE TABLE [TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 DROP TABLE [TempTable]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 DROP TABLE [TempTable]
 

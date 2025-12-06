@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'M'
 

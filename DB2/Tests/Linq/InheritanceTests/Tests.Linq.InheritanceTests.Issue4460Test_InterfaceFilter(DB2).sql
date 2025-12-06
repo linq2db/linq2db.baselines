@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer(4) -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Code VarChar(6) -- String
 SET     @Code = 'Child2'
@@ -42,7 +40,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

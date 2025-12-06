@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p.Id,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	Issue3360Table p_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

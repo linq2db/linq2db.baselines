@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @year Integer -- Int32
 SET     @year = 2010
 DECLARE @year_1 Integer -- Int32

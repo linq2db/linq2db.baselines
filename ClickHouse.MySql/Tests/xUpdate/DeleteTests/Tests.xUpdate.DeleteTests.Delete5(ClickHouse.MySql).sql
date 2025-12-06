@@ -1,4 +1,10 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+ALTER TABLE
+	Parent
+DELETE WHERE
+	ParentID > 1000
+
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -6,15 +12,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID > 1000
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-ALTER TABLE
-	Parent
-DELETE WHERE
-	ParentID > 1000
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
@@ -28,7 +25,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
@@ -42,7 +38,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -52,7 +47,6 @@ FROM
 WHERE
 	t1.ParentID > 1000
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -60,7 +54,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID IN (1001, 1002)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[PersonID] as [Id],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[Person] [p_1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

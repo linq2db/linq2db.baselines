@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 INSERT INTO [Issue1403Tests_1]
 (
@@ -12,7 +11,6 @@ VALUES
 	N'New event'
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT TOP (1)

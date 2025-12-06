@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Table]
 (
@@ -14,7 +13,6 @@ VALUES
 	8
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 	[Table] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 UPDATE
@@ -35,7 +32,6 @@ SET
 	[Struct] = 1,
 	[Class] = -8
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[IsTemporaryTable]
 (
 	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_IsTemporaryTable] PRIMARY KEY ([Id])
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	temp.[IsTemporaryTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[IsTemporaryTable]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[g_1].[dt]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[g_1].[dt]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

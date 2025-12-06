@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t."PK",
 	t."ID"
 FROM
 	test_in_1 t
@@ -15,18 +15,18 @@ WHERE
 			t."ID" = p."ID"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_1 t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_2 t1

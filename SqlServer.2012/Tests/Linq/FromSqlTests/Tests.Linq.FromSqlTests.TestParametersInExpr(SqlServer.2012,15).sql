@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @p BigInt -- Int64
 SET     @p = 1
 DECLARE @endId Int -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @startId Int -- Int32
 SET     @startId = 1

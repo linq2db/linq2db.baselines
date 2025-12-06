@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value1 Int32
 SET     @Value1 = 3
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value1 Int32
 SET     @Value1 = 3
@@ -29,7 +26,6 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

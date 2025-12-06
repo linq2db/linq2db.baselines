@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t`.`ID`
+	`t`.`PK`,
+	`t`.`ID`,
+	`t`.`GV`
 FROM
 	`test_in_1` `t`
 WHERE
@@ -15,19 +16,21 @@ WHERE
 			`t`.`ID` = `p`.`ID` OR `t`.`ID` IS NULL AND `p`.`ID` IS NULL
 	)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ID`
+	`t1`.`PK`,
+	`t1`.`ID`,
+	`t1`.`GV`
 FROM
 	`test_in_1` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ID`
+	`t1`.`PK`,
+	`t1`.`ID`,
+	`t1`.`GV`
 FROM
 	`test_in_2` `t1`
 

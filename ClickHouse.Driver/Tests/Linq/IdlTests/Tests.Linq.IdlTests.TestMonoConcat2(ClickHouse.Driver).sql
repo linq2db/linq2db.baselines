@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	x.FirstName
@@ -13,7 +12,6 @@ FROM
 WHERE
 	x_1.FirstName = 'A'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."ParentID",
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	d."ChildID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

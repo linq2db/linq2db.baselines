@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"CollatedTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	:CaseInsensitive
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	r."CaseSensitive" ILIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	r."CaseInsensitive" ILIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	r."CaseSensitive" ILIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

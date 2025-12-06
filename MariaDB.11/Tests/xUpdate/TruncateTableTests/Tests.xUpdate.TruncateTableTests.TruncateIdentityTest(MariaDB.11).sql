@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `TestIdTrun`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TABLE `TestIdTrun`
 (
@@ -14,8 +12,7 @@ CREATE TABLE `TestIdTrun`
 	CONSTRAINT `PK_TestIdTrun` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `TestIdTrun`
 (
@@ -26,8 +23,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `TestIdTrun`
 (
@@ -38,8 +34,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -52,13 +47,11 @@ ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 TRUNCATE TABLE `TestIdTrun`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `TestIdTrun`
 (
@@ -69,8 +62,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `TestIdTrun`
 (
@@ -81,8 +73,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -95,8 +86,7 @@ ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE `TestIdTrun`
 

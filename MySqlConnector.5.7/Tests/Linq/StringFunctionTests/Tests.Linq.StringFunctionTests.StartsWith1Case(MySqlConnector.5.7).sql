@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE 'Jo%' ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE 'jo%' ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

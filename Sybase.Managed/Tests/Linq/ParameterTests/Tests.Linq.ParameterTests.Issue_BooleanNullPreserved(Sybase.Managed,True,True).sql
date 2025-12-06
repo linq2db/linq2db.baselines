@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [TestBool]
 (
@@ -12,7 +11,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -21,19 +19,16 @@ SELECT TOP 2
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = CASE
 		WHEN [TestBool].[Value] = 0 THEN 1
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -42,7 +37,6 @@ SELECT TOP 2
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -51,7 +45,6 @@ SET
 	[Id] = 1,
 	[Value] = 0
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[it_1].[IsActive],
@@ -16,7 +15,6 @@ GROUP BY
 	[it_1].[IsActive],
 	[it_1].[Other]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

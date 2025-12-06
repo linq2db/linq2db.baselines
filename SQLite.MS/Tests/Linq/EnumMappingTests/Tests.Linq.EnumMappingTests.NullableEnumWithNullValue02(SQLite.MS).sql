@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 105
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 101
@@ -26,7 +24,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 102
@@ -44,7 +41,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 103
@@ -62,7 +58,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 104
@@ -80,7 +75,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -93,7 +87,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -107,7 +100,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 105

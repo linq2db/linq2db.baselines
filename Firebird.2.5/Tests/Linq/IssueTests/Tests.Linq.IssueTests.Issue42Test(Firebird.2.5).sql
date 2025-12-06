@@ -1,4 +1,21 @@
-﻿BeforeExecute
+﻿-- Firebird.2.5 Firebird
+
+SELECT FIRST 1
+	"r".ID,
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = 1
+
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -17,26 +34,6 @@ FROM
 WHERE
 	"r".ID = 1
 
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT FIRST 1
-	"r".ID,
-	"r"."MoneyValue",
-	"r"."DateTimeValue",
-	"r"."DateTimeValue2",
-	"r"."BoolValue",
-	"r"."GuidValue",
-	"r"."SmallIntValue",
-	"r"."IntValue",
-	"r"."BigIntValue",
-	"r"."StringValue"
-FROM
-	"LinqDataTypes" "r"
-WHERE
-	"r".ID = 1
-
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -74,7 +71,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -95,7 +91,6 @@ FROM
 WHERE
 	"r".ID = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -133,7 +128,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

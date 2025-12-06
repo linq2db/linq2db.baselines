@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	maxOrNull(t1.ID)
 FROM
 	AllTypes t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO AllTypes
@@ -22,7 +20,6 @@ VALUES
 	toFloat64(NaN)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO AllTypes
@@ -38,7 +35,6 @@ VALUES
 	toFloat64(-Infinity)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO AllTypes
@@ -54,7 +50,6 @@ VALUES
 	toFloat64(Infinity)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

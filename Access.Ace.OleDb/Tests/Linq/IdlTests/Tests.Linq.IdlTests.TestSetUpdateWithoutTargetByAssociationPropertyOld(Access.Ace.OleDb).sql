@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 5
@@ -37,7 +34,6 @@ SET
 WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM
@@ -45,7 +41,6 @@ DELETE FROM
 WHERE
 	[x].[ChildID] = 10000
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM

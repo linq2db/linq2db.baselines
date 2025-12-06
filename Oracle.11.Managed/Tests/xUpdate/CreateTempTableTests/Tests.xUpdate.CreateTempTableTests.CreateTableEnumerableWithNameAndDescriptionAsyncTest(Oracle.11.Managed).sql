@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
@@ -10,14 +9,15 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TempTable"
 		(
-			"Name" VarChar(20) NOT NULL
+			"Name" VarChar(20) NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -28,15 +28,13 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "TempTable" ("Name") VALUES ('John')
 SELECT * FROM dual
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."Name"
@@ -44,8 +42,7 @@ FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';

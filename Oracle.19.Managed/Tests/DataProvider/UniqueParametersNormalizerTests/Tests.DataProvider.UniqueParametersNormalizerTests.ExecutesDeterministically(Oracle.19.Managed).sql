@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @search Varchar2(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Varchar2(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	row1_2."Field1" LIKE :search_2 ESCAPE '~'
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @search Varchar2(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Varchar2(4) -- String

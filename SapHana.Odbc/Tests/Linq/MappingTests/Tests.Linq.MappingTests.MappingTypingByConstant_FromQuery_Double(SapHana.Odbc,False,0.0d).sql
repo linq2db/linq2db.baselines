@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @value Double
 SET     @value = 0
 
@@ -15,7 +14,6 @@ FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Double
 SET     @value = 3147483648

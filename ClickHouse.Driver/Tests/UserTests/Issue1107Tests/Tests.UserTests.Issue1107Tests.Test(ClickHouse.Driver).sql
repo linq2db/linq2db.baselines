@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT ASYNC BULK Issue1107TB(Id, TestDate)
+﻿INSERT ASYNC BULK Issue1107TB(Id, TestDate)
 

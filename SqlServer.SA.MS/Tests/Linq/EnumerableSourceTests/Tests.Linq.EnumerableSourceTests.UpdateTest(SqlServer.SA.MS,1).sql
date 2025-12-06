@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 UPDATE
 	[u]
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[u].[Id] = [r].[Id]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

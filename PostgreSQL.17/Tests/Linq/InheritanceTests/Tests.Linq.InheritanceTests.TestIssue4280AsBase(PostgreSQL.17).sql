@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber Text(7) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Location
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -46,7 +44,6 @@ VALUES
 	:DeviceType
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @SerialNumber Text(7) -- String
 SET     @SerialNumber = 'TV00002'
@@ -79,7 +75,6 @@ SET
 WHERE
 	"Issue4280"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @SerialNumber Text(9) -- String
 SET     @SerialNumber = 'Disp00002'
@@ -96,7 +91,6 @@ SET
 WHERE
 	"Issue4280"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

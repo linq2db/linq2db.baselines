@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.PersonID,
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	t1.PersonID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	t1.PersonID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	t1.PersonID
 
-BeforeExecute
-DisposeTransaction

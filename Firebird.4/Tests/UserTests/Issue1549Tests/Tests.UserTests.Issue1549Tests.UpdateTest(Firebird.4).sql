@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 UPDATE
 	"billing_TempReading"
@@ -33,7 +32,6 @@ WHERE
 			"billing_TempReading"."id" = "tr"."id"
 	)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 UPDATE

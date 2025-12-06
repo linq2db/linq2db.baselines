@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @take Integer(4) -- Int32
 SET     @take = 2
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

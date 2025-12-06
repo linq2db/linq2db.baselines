@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_2."Id1",
@@ -17,7 +14,6 @@ FROM
 	) m_2
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -42,9 +38,6 @@ FROM
 				"DetailClass" d
 		) d_1 ON m_2."Id1" = d_1."MasterId" AND d_1."rn" > 1 AND d_1."rn" <= 3
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -55,9 +48,6 @@ SELECT
 FROM
 	"MasterClass" m_1
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -74,9 +64,6 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

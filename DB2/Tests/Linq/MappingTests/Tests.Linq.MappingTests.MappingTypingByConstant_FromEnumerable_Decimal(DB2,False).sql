@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"arg"."Id",
@@ -10,7 +9,6 @@ FROM
 			(1,1)
 		) "arg"("Id", "Value") ON "entity"."PersonID" = "arg"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 WITH "CTE1_" ("ParentID")
 AS
@@ -29,8 +28,7 @@ FROM
 	"CTE1_" p
 		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = p."ParentID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	c4."ParentID",

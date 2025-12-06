@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (1)
 	[a_GrandChildren2].[ParentID],

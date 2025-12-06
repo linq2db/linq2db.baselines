@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			p."ParentID" + :n = c_1."ParentID"
 	)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

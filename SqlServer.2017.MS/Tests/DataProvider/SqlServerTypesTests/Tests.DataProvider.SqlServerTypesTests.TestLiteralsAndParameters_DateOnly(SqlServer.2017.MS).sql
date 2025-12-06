@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[t1].[Value]
@@ -8,7 +7,6 @@ FROM
 		('2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value Text(10) -- AnsiString
 SET     @value = N'2020-02-29'
@@ -23,7 +21,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -33,7 +30,6 @@ FROM
 		(N'2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value NText(10) -- String
 SET     @value = N'2020-02-29'
@@ -48,7 +44,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -58,7 +53,6 @@ FROM
 		('2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value Char(10) -- AnsiStringFixedLength
 SET     @value = N'2020-02-29'
@@ -73,7 +67,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -83,7 +76,6 @@ FROM
 		(N'2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value NChar(10) -- StringFixedLength
 SET     @value = N'2020-02-29'
@@ -98,7 +90,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -108,7 +99,6 @@ FROM
 		('2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value VarChar(8000) -- AnsiString
 SET     @value = N'2020-02-29'
@@ -123,7 +113,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -133,7 +122,6 @@ FROM
 		(N'2020-02-29')
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'2020-02-29'
@@ -148,7 +136,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -158,7 +145,6 @@ FROM
 		(DATEFROMPARTS(2020, 2, 29))
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value Date
 SET     @value = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
@@ -173,7 +159,6 @@ FROM
 			(@value)
 		) [y]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -183,7 +168,6 @@ FROM
 		(DATEFROMPARTS(2020, 2, 29))
 	) [t1]([Value])
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @value Date
 SET     @value = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)

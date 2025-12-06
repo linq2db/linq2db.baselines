@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."PersonID",
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

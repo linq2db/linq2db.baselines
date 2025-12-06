@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	[r].[ID] = 2
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 WITH [CTE_1] ([c1])

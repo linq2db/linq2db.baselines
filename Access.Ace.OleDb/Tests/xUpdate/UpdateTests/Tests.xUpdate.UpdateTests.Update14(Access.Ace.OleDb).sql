@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName VarWChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @name Integer -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

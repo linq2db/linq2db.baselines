@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]

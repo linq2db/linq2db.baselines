@@ -1,8 +1,6 @@
-﻿BeforeExecute
-INSERT BULK "TrimTestTable"(ID, Data)
+﻿INSERT BULK "TrimTestTable"(ID, Data)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."ID",
@@ -12,8 +10,7 @@ FROM
 ORDER BY
 	r."ID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."ID",

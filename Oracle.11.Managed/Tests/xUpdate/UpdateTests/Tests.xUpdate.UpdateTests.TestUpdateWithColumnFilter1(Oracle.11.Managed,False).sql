@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Varchar2(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -60,7 +57,6 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'

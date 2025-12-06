@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -21,7 +20,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF NOT EXISTS(

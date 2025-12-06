@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = @p
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 2

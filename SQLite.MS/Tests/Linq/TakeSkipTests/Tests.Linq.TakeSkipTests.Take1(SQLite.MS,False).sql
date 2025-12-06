@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[ch].[ParentID],
@@ -8,7 +7,6 @@ FROM
 	[Child] [ch]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 	[Child] [ch]
 LIMIT 3
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 	[Child] [ch]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

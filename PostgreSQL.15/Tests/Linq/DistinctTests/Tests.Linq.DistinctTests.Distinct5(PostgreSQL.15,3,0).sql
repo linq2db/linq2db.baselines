@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 4
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 4
@@ -29,7 +26,6 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

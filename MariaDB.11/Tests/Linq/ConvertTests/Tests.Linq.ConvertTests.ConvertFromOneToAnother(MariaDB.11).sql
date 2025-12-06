@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -9,8 +8,7 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -20,8 +18,7 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -31,8 +28,7 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -42,8 +38,7 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -53,8 +48,7 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

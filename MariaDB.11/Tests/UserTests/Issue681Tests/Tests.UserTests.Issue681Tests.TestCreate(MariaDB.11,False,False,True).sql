@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `Issue681Table2`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TABLE `Issue681Table2`
 (
@@ -14,8 +12,7 @@ CREATE TABLE `Issue681Table2`
 	CONSTRAINT `PK_Issue681Table2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TABLE IF EXISTS `Issue681Table2`
 

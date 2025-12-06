@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Bool -- Boolean
+SET     @Enabled = 1
+DECLARE @ImageFullUrl VarChar(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO `Stone`
+(
+	`Name`,
+	`Enabled`,
+	`ImageFullUrl`
+)
+VALUES
+(
+	@Name,
+	@Enabled,
+	@ImageFullUrl
+)
+
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
@@ -20,29 +40,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Name VarChar(6) -- String
-SET     @Name = 'group1'
-DECLARE @Enabled Bool -- Boolean
-SET     @Enabled = 1
-DECLARE @ImageFullUrl VarChar(3) -- String
-SET     @ImageFullUrl = '123'
-
-INSERT INTO `Stone`
-(
-	`Name`,
-	`Enabled`,
-	`ImageFullUrl`
-)
-VALUES
-(
-	@Name,
-	@Enabled,
-	@ImageFullUrl
-)
-
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
@@ -64,7 +61,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

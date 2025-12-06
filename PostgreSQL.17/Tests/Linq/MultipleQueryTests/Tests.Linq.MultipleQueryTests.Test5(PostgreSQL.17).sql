@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -17,9 +14,6 @@ FROM
 	) m_1
 		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

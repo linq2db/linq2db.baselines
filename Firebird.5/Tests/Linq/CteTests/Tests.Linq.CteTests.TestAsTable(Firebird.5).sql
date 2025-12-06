@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 WITH CTE1_ ("ParentID", "ChildID")
 AS
@@ -16,7 +15,6 @@ SELECT
 FROM
 	CTE1_ "t2"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

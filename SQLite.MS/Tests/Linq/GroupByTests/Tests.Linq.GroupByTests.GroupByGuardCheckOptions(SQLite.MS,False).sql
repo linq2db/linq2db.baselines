@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -19,9 +16,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[Gender]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`g_1`.`GroupId`,
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	`g_1`.`GroupId`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`GroupId`,
 	`t1`.`DataValue`
 FROM

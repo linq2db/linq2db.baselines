@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -10,7 +9,6 @@ FROM
 	[Child] [ch]
 LIMIT @take
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -22,8 +20,7 @@ FROM
 	[Child] [ch]
 LIMIT @take
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -34,8 +31,7 @@ FROM
 	[Child] [ch]
 LIMIT @take
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 

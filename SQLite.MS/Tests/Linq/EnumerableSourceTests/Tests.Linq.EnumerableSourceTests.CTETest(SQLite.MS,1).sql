@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 WITH [CTE_1] ([Id], [Value_1])
 AS
@@ -22,7 +21,6 @@ FROM
 	[CTE_1] [r]
 		INNER JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value_1] OR [t].[Value] IS NULL AND [r].[Value_1] IS NULL)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

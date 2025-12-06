@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @int1 Int -- Int32
@@ -23,7 +22,6 @@ FROM
 WHERE
 	[t].[id] <> @someId
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

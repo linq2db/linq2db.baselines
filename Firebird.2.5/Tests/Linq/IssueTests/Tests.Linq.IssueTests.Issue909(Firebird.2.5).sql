@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."ParentID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	("p"."Value1" NOT IN (1, 2, 3) OR "p"."Value1" IS NULL)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

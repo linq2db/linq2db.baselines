@@ -1,4 +1,1 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
-DisposeTransaction
+﻿

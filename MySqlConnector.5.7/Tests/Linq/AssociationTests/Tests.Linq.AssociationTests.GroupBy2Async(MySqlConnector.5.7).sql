@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`ParentID`,
@@ -19,8 +16,7 @@ FROM
 			INNER JOIN `Parent` `a_Parent1_1` ON `d`.`ParentID` = `a_Parent1_1`.`ParentID`)
 		ON `m_1`.`ParentID` = `a_Parent1_1`.`ParentID`
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`a_Parent1`.`ParentID`
@@ -30,5 +26,3 @@ FROM
 GROUP BY
 	`a_Parent1`.`ParentID`
 
-BeforeExecute
-DisposeTransactionAsync

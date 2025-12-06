@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @pattern VarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

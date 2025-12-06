@@ -1,34 +1,27 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DROP TABLE Issue695
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Issue695Parent
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Patient
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Doctor
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Person
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE InheritanceParent
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE InheritanceParent
@@ -38,12 +31,10 @@ CREATE TABLE InheritanceParent
 	Name                nvarchar(50)     NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE InheritanceChild
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE InheritanceChild
@@ -54,7 +45,6 @@ CREATE TABLE InheritanceChild
 	Name                nvarchar(50)     NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 -- Person Table
@@ -68,27 +58,22 @@ CREATE TABLE Person
 	Gender     nchar(1)     NOT NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- SqlCe
 
 -- Doctor Table Extension
@@ -104,12 +89,10 @@ CREATE TABLE Doctor
 	Taxonomy nvarchar(50) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- SqlCe
 
 -- Patient Table Extension
@@ -125,47 +108,38 @@ CREATE TABLE Patient
 	Diagnosis nvarchar(256) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Parent
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE Child
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE GrandChild
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE Parent      (ParentID int, Value1 int)
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE Child       (ParentID int, ChildID int)
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE GrandChild  (ParentID int, ChildID int, GrandChildID int)
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE LinqDataTypes
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE LinqDataTypes
@@ -183,24 +157,20 @@ CREATE TABLE LinqDataTypes
 	StringValue    nvarchar(50)    NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE TestIdentity
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE TestIdentity (
 	ID int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestIdentity PRIMARY KEY
 )
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE AllTypes
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE AllTypes
@@ -232,7 +202,6 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO AllTypes
@@ -262,7 +231,6 @@ SELECT
 	        1,         2, Cast(3 as varbinary),
 	Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE Issue695Parent
@@ -271,7 +239,6 @@ CREATE TABLE Issue695Parent
 			CONSTRAINT PK_Issue695 PRIMARY KEY
 )
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE Issue695
@@ -286,22 +253,18 @@ CREATE TABLE Issue695
 	UniqueValue int NOT NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 CREATE UNIQUE INDEX IX_UniqueValue ON Issue695 (UniqueValue)
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE TestMerge1
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE TestMerge2
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE TestMerge1
@@ -329,7 +292,6 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE TestMerge2
@@ -357,12 +319,10 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE CollatedTable
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE CollatedTable
@@ -372,7 +332,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [LinqDataTypes]
@@ -401,7 +360,6 @@ SELECT 10,10.77,'2009-09-26 09:19:29.090',NULL,0,'61b2bc55-147f-4b40-93ed-a4aa83
 SELECT 11,11.45,'2009-09-27',NULL,1,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230',11,NULL,NULL,'9' UNION ALL
 SELECT 12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0'
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [Parent]
@@ -417,7 +375,6 @@ SELECT 5,5 UNION ALL
 SELECT 6,6 UNION ALL
 SELECT 7,1
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [Child]
@@ -443,7 +400,6 @@ SELECT 6,65 UNION ALL
 SELECT 6,66 UNION ALL
 SELECT 7,77
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [GrandChild]
@@ -475,7 +431,6 @@ SELECT 4,42,422 UNION ALL
 SELECT 4,42,423 UNION ALL
 SELECT 4,42,424
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [InheritanceParent]
@@ -488,7 +443,6 @@ SELECT 1,NULL,NULL UNION ALL
 SELECT 2,1,NULL UNION ALL
 SELECT 3,2,'InheritanceParent2'
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [InheritanceChild]
@@ -502,37 +456,30 @@ SELECT 1,NULL,1,NULL UNION ALL
 SELECT 2,1,2,NULL UNION ALL
 SELECT 3,2,3,'InheritanceParent2'
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Issue695
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Issue695Parent
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Patient
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Doctor
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Person
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE InheritanceParent
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE InheritanceParent
@@ -542,12 +489,10 @@ CREATE TABLE InheritanceParent
 	Name                nvarchar(50)     NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE InheritanceChild
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE InheritanceChild
@@ -558,7 +503,6 @@ CREATE TABLE InheritanceChild
 	Name                nvarchar(50)     NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 -- Person Table
@@ -572,27 +516,22 @@ CREATE TABLE Person
 	Gender     nchar(1)     NOT NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 -- Doctor Table Extension
@@ -608,12 +547,10 @@ CREATE TABLE Doctor
 	Taxonomy nvarchar(50) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 -- Patient Table Extension
@@ -629,47 +566,38 @@ CREATE TABLE Patient
 	Diagnosis nvarchar(256) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Parent
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE Child
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE GrandChild
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE Parent      (ParentID int, Value1 int)
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE Child       (ParentID int, ChildID int)
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE GrandChild  (ParentID int, ChildID int, GrandChildID int)
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE LinqDataTypes
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE LinqDataTypes
@@ -687,24 +615,20 @@ CREATE TABLE LinqDataTypes
 	StringValue    nvarchar(50)    NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE TestIdentity
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE TestIdentity (
 	ID int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestIdentity PRIMARY KEY
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE AllTypes
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE AllTypes
@@ -736,7 +660,6 @@ CREATE TABLE AllTypes
 	uniqueidentifierDataType uniqueidentifier NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO AllTypes
@@ -766,7 +689,6 @@ SELECT
 	        1,         2, Cast(3 as varbinary),
 	Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE Issue695Parent
@@ -775,7 +697,6 @@ CREATE TABLE Issue695Parent
 			CONSTRAINT PK_Issue695 PRIMARY KEY
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE Issue695
@@ -790,22 +711,18 @@ CREATE TABLE Issue695
 	UniqueValue int NOT NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE UNIQUE INDEX IX_UniqueValue ON Issue695 (UniqueValue)
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE TestMerge1
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE TestMerge2
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE TestMerge1
@@ -833,7 +750,6 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE TestMerge2
@@ -861,12 +777,10 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber INT               NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 DROP TABLE CollatedTable
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 CREATE TABLE CollatedTable
@@ -876,7 +790,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [LinqDataTypes]
@@ -905,7 +818,6 @@ SELECT 10,10.77,'2009-09-26 09:19:29.090',NULL,0,'61b2bc55-147f-4b40-93ed-a4aa83
 SELECT 11,11.45,'2009-09-27',NULL,1,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230',11,NULL,NULL,'9' UNION ALL
 SELECT 12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0'
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [Parent]
@@ -921,7 +833,6 @@ SELECT 5,5 UNION ALL
 SELECT 6,6 UNION ALL
 SELECT 7,1
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [Child]
@@ -947,7 +858,6 @@ SELECT 6,65 UNION ALL
 SELECT 6,66 UNION ALL
 SELECT 7,77
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [GrandChild]
@@ -979,7 +889,6 @@ SELECT 4,42,422 UNION ALL
 SELECT 4,42,423 UNION ALL
 SELECT 4,42,424
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [InheritanceParent]
@@ -992,7 +901,6 @@ SELECT 1,NULL,NULL UNION ALL
 SELECT 2,1,NULL UNION ALL
 SELECT 3,2,'InheritanceParent2'
 
-BeforeExecute
 -- SqlCe.Data SqlCe
 
 INSERT INTO [InheritanceChild]

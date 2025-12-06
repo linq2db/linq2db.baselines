@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 WITH RECURSIVE `cte` (`Id`)
 AS
@@ -35,10 +32,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Item1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 WITH RECURSIVE `cte` (`Id`)
 AS

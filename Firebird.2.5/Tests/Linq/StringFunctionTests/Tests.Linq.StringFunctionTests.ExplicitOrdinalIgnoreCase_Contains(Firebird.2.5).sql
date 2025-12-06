@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"CollatedTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	"r"."CaseSensitive" CONTAINING 'stSt'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	"r"."CaseInsensitive" CONTAINING 'stSt'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	"r"."CaseSensitive" CONTAINING 'stst'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

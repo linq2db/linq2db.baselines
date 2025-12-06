@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT DISTINCT
 	`a_Book`.`BookId`,
@@ -28,9 +27,6 @@ WHERE
 			(`a_Book`.`NovelScore` = `a_Book_1`.`NovelScore` OR `a_Book`.`NovelScore` IS NULL AND `a_Book_1`.`NovelScore` IS NULL)
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -45,9 +41,6 @@ FROM
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkAuthorId` = `m_1`.`AuthorId`
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

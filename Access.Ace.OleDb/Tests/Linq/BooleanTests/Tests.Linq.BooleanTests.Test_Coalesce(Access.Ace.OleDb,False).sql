@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @True Boolean
 SET     @True = True
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, @True, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @False Boolean
 SET     @False = False
@@ -54,7 +51,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, @False, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN])
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

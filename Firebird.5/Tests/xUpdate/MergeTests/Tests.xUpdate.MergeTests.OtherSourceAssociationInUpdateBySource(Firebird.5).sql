@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 MERGE INTO "Person" "Target"
 USING (
@@ -28,7 +25,6 @@ SET
 			"Target"."PersonID" = "a_Patient"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -42,5 +38,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

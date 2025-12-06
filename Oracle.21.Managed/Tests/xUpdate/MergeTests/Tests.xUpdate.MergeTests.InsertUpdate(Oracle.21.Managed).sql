@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
@@ -82,7 +78,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 4
@@ -108,13 +103,11 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge2" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
@@ -140,7 +133,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 4
@@ -166,7 +158,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 5
@@ -192,7 +183,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 6
@@ -218,7 +208,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
@@ -257,7 +246,6 @@ SET
 	"Field2" = "Source"."Field2",
 	"Field3" = "Source"."Field3"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

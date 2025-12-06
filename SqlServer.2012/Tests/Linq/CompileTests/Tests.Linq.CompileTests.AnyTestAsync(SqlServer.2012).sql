@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -13,8 +12,7 @@ SELECT
 			[c_1].[ParentID] = @p
 	), 1, 0)
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @p Int -- Int32
 SET     @p = -1
 

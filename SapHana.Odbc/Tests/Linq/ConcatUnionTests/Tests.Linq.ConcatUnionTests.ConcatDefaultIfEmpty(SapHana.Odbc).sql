@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	CAST(0 AS Integer),
@@ -31,9 +30,6 @@ FROM
 WHERE
 	"p_1"."ParentID" <> 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -49,9 +45,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -60,7 +53,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

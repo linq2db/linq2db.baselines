@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p."MiddleName" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @str Varchar2(3) -- String
 SET     @str = '123'

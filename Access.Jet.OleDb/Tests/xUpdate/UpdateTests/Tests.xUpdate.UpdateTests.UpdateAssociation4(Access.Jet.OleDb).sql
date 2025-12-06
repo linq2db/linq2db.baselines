@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Parent]
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Child]
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 5

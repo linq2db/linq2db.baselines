@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName UniVarChar(13) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -36,7 +34,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5

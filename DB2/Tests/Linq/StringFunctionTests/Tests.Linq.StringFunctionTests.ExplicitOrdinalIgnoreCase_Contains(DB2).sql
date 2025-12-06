@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"CollatedTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	Lower("r"."CaseSensitive") LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	Lower("r"."CaseInsensitive") LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	Lower("r"."CaseSensitive") LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

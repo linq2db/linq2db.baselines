@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Field1,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

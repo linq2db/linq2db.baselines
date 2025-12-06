@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @True Bool -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @True)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @False Bool -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, @False)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

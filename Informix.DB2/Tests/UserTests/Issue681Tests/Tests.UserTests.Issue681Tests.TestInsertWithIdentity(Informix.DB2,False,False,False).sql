@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1

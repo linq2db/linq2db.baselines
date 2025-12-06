@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -7,7 +6,9 @@ BEGIN
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL
+			"LastName" VarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -17,8 +18,7 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -39,8 +39,7 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Varchar2(4) -- String
@@ -54,8 +53,7 @@ SET
 WHERE
 	t.ID = 1
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';

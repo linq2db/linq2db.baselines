@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Update14'
 DECLARE @LastName NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

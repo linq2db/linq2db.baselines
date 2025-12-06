@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022
 
 SELECT DISTINCT
 	[p1].[PersonID],

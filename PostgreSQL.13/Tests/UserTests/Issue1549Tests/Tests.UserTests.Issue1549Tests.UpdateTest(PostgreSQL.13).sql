@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 UPDATE
 	"billing_TempReading"
@@ -12,8 +11,7 @@ WHERE
 	drt."Name" = "billing_TempReading"."ReadingTypeName" AND
 	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 UPDATE
 	"billing_TempReading"

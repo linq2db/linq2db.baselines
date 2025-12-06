@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -33,7 +32,6 @@ WHEN NOT MATCHED THEN
 		:CreatedBy
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -45,7 +43,6 @@ FROM
 	"test_insert_or_replace" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -80,7 +77,6 @@ WHEN NOT MATCHED THEN
 		:CreatedBy
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -27,7 +25,6 @@ FROM
 			LinqDataTypes t1
 	) t2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

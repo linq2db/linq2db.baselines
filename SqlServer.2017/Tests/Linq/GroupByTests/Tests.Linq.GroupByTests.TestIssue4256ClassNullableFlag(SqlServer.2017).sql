@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[it_1].[IsActive],
@@ -16,7 +15,6 @@ GROUP BY
 	[it_1].[IsActive],
 	[it_1].[Other]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

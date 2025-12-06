@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int32Nullable Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Int32Nullable
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Int32Nullable
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	snippet([r].[FTS4_TABLE], '>', '<', '[zzz]', 0)

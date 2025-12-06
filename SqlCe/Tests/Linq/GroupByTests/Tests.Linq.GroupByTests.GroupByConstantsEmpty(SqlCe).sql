@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT
@@ -19,7 +18,6 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

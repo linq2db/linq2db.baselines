@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = N'M'
 

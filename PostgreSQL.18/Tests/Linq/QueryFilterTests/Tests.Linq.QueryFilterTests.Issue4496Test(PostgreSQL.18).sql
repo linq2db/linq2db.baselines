@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT DISTINCT
 	x."ParentID",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	x."ChildID" > 30
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT DISTINCT

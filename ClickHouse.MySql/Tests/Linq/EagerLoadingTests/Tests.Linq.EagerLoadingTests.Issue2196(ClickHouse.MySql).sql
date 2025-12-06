@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -13,7 +12,6 @@ FROM
 WHERE
 	m_1.EventId = 1 AND m_1.IsActive
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

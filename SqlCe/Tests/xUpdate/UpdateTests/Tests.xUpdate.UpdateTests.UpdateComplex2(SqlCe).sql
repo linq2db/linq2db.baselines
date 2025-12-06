@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -39,7 +36,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5

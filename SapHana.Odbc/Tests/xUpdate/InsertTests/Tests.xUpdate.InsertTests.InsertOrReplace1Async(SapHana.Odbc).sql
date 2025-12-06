@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -24,13 +23,11 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 DECLARE @PersonID Int -- Int32
@@ -43,8 +40,7 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -61,8 +57,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
 DECLARE @PersonID Int -- Int32
@@ -75,8 +70,7 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
 DECLARE @PersonID Int -- Int32
@@ -89,8 +83,7 @@ SET
 WHERE
 	"t1"."PersonID" = ?
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 5
 

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "InventoryResource"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Char(36) -- AnsiStringFixedLength
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'

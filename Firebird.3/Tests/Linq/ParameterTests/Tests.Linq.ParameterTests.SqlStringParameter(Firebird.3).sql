@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	"t"."FirstName" = @p
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'

@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Int -- Int32
-SET     @p = 5
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	@p
+	5
 

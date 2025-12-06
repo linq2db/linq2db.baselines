@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,
@@ -18,8 +17,7 @@ WHERE
 	`r`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,
@@ -38,8 +36,7 @@ WHERE
 	`r`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Datetime -- DateTime
@@ -76,8 +73,7 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -98,8 +94,7 @@ WHERE
 	`r`.`ID` = @ID
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Datetime -- DateTime
@@ -136,8 +131,7 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,

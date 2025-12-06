@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"p"."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	"p"."PersonID" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	CAST("p"."FirstName" AS BLOB) STARTING WITH 'Joh' AND
 	"p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	CAST("p"."FirstName" AS BLOB) NOT STARTING WITH 'Joh' AND
 	"p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	CAST("p"."FirstName" AS BLOB) STARTING WITH 'JOH' AND
 	"p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

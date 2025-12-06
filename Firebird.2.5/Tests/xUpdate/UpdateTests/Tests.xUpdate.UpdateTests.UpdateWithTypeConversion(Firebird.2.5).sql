@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
@@ -16,7 +15,6 @@ VALUES
 	200
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -29,7 +27,6 @@ SET
 WHERE
 	"t".ID = @id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -42,7 +39,6 @@ SET
 WHERE
 	"t".ID = @id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 1001

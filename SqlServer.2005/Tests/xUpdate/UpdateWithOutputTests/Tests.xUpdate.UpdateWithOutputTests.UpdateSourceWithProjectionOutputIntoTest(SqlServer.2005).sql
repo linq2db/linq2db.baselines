@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 UPDATE
 	[TableWithData]
@@ -20,7 +19,6 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

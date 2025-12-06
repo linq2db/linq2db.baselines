@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @Uid VarBinary(16) -- Binary
 SET     @Uid = 0x3D667BBCDE0F27438F925D8CC3A11D11
 DECLARE @Id BigInt -- Int64

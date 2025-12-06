@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	DateAdd('yyyy', [t].[SmallIntValue], [t].[DateTimeValue])

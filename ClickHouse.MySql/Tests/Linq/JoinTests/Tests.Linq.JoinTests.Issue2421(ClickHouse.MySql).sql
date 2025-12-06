@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.SectorId,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	a_UserPosition.PositionId = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

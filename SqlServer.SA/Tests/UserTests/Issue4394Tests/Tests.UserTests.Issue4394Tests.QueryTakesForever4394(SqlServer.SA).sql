@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[x_8].[Id],
@@ -174,7 +173,6 @@ FROM
 		) = [i8].[Id] AND [i8].[Status] < 0
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

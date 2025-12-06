@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	g_1.GroupId,
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	g_1.GroupId
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Id,
 	t1.GroupId,
 	t1.DataValue
 FROM

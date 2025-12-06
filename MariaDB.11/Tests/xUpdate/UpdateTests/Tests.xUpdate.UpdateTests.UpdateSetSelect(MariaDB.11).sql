@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Parent`.`ParentID` > 1000
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`Parent` `p`
@@ -19,8 +17,7 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 

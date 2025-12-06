@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"TestMerge2" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge1" Target
@@ -67,7 +64,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TestMerge2" Target
@@ -125,7 +121,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -150,7 +145,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

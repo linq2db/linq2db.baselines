@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
+	"p".PK,
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",
@@ -22,12 +22,12 @@ WHERE
 				SELECT "p"."Date3" FROM rdb$database
 				UNION ALL
 				SELECT "p"."Date4" FROM rdb$database) "t1"
-	) > CAST('2023-01-01' AS timestamp)
+	) > CAST('2023-01-01' AS TimeStamp)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
+	"p".PK,
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",

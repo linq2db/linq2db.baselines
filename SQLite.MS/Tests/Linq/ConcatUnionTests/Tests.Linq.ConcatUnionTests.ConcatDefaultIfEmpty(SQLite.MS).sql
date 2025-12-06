@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	CAST(0 AS INTEGER),
@@ -29,9 +28,6 @@ FROM
 WHERE
 	[p_1].[ParentID] <> 1
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -47,9 +43,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -58,7 +51,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

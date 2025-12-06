@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t].[ID],
@@ -15,5 +14,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (CAST('2001-01-11T01:11:21.100' AS DATETIME))
+	[t].[DateTimeValue] IN (CAST('2001-01-11 01:11:21.100' AS DateTime))
 

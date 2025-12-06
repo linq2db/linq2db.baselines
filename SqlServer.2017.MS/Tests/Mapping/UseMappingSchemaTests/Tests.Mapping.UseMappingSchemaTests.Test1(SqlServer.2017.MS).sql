@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[t1].[Field1],
@@ -8,7 +7,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

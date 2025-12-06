@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -11,17 +9,18 @@ SELECT
 FROM
 	Parent p
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO TempTable
 (
@@ -36,7 +35,6 @@ VALUES
 (6),
 (7)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -45,8 +43,7 @@ FROM
 	Parent p
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 

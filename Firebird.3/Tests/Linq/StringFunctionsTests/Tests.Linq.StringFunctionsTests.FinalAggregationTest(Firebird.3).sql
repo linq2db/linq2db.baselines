@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
-	LIST("t"."Value1", ' -> ')
+	LIST("t1"."Value1", ' -> ')
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 

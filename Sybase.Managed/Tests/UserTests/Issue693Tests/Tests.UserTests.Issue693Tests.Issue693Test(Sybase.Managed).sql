@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName UniVarChar(1) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -54,7 +52,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
@@ -70,7 +67,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @id1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 6

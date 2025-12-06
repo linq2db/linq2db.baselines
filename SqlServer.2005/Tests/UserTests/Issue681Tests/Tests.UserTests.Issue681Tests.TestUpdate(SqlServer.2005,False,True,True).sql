@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (1)
@@ -14,7 +12,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Value Int -- Int32
 SET     @Value = 10

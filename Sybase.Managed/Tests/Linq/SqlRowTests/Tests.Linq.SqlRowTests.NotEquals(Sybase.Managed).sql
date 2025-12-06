@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[i].[Two] <> [i].[One] * 2 OR [i].[Three] <> [i].[Four] - 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[i].[Four] <> [i].[Three]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[i].[Nil] <> [i].[Two]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	1 <> [i].[One] OR [i].[Nil] <> [i].[Nil] OR 4 <> [i].[Three]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

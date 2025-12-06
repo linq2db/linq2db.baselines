@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 )
 ON COMMIT DELETE ROWS
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

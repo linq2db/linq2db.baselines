@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	Str_Replace(CAST([p].[MoneyValue] AS NVarChar(31)), ',', '.')

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.FirstName,
@@ -10,7 +9,6 @@ SELECT
 FROM
 	Person p
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

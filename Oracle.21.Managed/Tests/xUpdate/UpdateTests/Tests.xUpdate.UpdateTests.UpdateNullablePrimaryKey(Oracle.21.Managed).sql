@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1."ParentID" = :ParentID AND t1."ChildID" IS NULL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000

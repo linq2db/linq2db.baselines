@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[p].[Nullable] < [p].[OtherNullable]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -36,7 +33,6 @@ WHERE
 	[p].[Nullable] >= [p].[OtherNullable] OR [p].[Nullable] IS NULL OR
 	[p].[OtherNullable] IS NULL
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -47,7 +43,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -60,7 +55,6 @@ FROM
 WHERE
 	[p].[OtherNullable] > [p].[Nullable]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -71,7 +65,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -85,7 +78,6 @@ WHERE
 	[p].[OtherNullable] <= [p].[Nullable] OR [p].[OtherNullable] IS NULL OR
 	[p].[Nullable] IS NULL
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[s].[Id],
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -31,7 +29,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

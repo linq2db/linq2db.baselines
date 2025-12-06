@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @GuidNonReadonly Guid
 SET     @GuidNonReadonly = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	"e"."GuidValue" = @GuidNonReadonly AND "e"."GuidNullableValue" = @GuidNonReadonly
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

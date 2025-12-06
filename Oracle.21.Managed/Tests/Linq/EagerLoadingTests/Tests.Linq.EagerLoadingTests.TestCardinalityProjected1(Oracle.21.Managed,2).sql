@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."Id",
@@ -17,9 +14,6 @@ FROM
 	) m_1
 		INNER JOIN "EntityD" d ON m_1."Id" = d.FK
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

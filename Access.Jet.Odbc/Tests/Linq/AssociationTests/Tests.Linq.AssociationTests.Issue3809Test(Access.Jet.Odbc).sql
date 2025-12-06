@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[ParentID],
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	[d].[ChildID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

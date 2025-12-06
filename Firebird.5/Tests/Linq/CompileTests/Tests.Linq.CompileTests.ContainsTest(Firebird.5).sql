@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -14,7 +13,6 @@ SELECT
 	)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = -1

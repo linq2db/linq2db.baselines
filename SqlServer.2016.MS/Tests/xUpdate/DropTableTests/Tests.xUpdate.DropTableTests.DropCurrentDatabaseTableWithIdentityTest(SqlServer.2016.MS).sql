@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [DropTableTestID]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [DropTableTestID]
@@ -14,7 +12,6 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [DropTableTestID]
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -52,7 +49,6 @@ WHERE
 	[cross_1].[ParentID_1] = [c_2].[ParentID] AND
 	[cross_1].[ChildID] = [c_2].[ChildID]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 1002

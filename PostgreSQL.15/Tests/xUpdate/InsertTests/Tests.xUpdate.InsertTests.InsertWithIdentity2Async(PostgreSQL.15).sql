@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Person"
 (
@@ -24,8 +22,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -39,7 +36,6 @@ WHERE
 	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -25,7 +24,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

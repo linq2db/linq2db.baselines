@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[m_1].[Id],
@@ -24,7 +21,6 @@ FROM
 	) [m_1]
 		INNER JOIN [EntityMC] [d_1] ON ([m_1].[Id] = [d_1].[FK])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -40,9 +36,6 @@ FROM
 		INNER JOIN [EntityMB] [d] ON ([m_1].[Id] = [d].[FK]))
 		LEFT JOIN [EntityMD] [a_ObjectD] ON ([d].[FKD] = [a_ObjectD].[Id])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

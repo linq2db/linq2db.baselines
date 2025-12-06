@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	nm.MiddleName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	lengthUTF8(nm.MiddleName) <> 0 OR nm.MiddleName IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

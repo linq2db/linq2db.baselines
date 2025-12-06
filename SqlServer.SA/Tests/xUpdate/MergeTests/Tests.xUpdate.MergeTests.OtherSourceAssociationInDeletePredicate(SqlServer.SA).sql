@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 MERGE INTO [Patient] [Target]
 USING (
@@ -26,7 +23,6 @@ ON ([Target].[PersonID] = [Source].[PersonID] AND [Source].[Diagnosis] LIKE N'%v
 WHEN MATCHED AND [Source].[Person_FirstName] = N'first 4' AND [Source].[Person_FirstName_1] = N'first 4' THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -37,5 +33,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

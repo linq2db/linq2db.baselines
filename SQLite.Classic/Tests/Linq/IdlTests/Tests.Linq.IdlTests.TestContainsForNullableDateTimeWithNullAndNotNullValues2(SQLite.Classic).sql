@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -23,5 +21,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN ('2009-09-24 09:19:29.090') OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (strftime('%Y-%m-%d %H:%M:%f', '2009-09-24 09:19:29.090')) OR [x].[DateTimeValue2] IS NULL)
 

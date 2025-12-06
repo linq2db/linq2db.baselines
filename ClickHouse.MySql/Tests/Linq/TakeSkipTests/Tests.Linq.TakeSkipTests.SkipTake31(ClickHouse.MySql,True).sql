@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -10,7 +9,6 @@ ORDER BY
 	t1.ChildID DESC
 LIMIT 2, 5
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Value2 NVarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -17,7 +16,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -37,7 +35,6 @@ WHERE
 	[e].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value1 NVarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -75,7 +72,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -95,7 +91,6 @@ WHERE
 	[e].[Id] = 2
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
@@ -133,7 +128,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

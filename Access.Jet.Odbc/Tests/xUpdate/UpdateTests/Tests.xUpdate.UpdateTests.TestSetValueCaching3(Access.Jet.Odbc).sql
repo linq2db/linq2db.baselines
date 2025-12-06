@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 7
 DECLARE @id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
@@ -38,7 +35,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1

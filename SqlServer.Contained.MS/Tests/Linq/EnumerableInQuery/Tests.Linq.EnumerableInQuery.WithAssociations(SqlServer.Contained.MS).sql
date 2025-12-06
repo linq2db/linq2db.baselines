@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[it_1].[cond],
@@ -23,7 +22,6 @@ FROM
 WHERE
 	[it_1].[ColorName] = N'Red'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

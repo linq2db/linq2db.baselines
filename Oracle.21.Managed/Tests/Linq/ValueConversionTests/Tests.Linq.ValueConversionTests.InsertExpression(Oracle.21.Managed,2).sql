@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @iteration Int32
 SET     @iteration = 2
 DECLARE @Value1 Varchar2(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	:boolValue_1
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @iteration Int32
 SET     @iteration = 2

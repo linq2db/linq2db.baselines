@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	ch.ParentID,
@@ -8,7 +7,6 @@ FROM
 	Child ch
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -18,8 +16,7 @@ FROM
 	Child ch
 LIMIT 3
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	ch.ParentID,
@@ -28,8 +25,7 @@ FROM
 	Child ch
 LIMIT 2
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	ch.ParentID,

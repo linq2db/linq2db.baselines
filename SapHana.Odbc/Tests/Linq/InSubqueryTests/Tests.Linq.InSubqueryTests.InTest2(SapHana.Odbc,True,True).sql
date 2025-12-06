@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"c_1"."ParentID",
@@ -17,7 +16,6 @@ WHERE
 			"c_1"."ParentID" = "p"."Value1" OR "c_1"."ParentID" IS NULL AND "p"."Value1" IS NULL
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"GrandChild" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

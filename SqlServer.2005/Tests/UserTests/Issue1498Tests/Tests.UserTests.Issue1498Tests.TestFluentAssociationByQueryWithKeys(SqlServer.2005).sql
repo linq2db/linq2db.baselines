@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 60
@@ -42,7 +40,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 61
@@ -64,9 +61,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -83,7 +77,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (1)
@@ -95,5 +88,3 @@ FROM
 WHERE
 	[x].[Id] = 6
 
-BeforeExecute
-DisposeTransaction

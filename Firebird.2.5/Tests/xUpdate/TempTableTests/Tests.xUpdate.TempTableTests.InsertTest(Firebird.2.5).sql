@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "Table2"
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Table1" "t"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
@@ -8,12 +7,13 @@ BEGIN
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
-			"LastName" NVarChar(20)     NULL
+			"LastName" NVarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -35,7 +35,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(7) -- String
 SET     @Name = 'John II'
@@ -50,7 +49,6 @@ SET
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

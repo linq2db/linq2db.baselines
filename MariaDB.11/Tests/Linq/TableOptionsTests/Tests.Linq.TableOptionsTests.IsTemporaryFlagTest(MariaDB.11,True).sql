@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TEMPORARY TABLE `IsTemporaryTable`
 (
 	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_IsTemporaryTable` PRIMARY KEY CLUSTERED (`Id`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -16,8 +16,7 @@ SELECT
 FROM
 	`IsTemporaryTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `IsTemporaryTable`
 

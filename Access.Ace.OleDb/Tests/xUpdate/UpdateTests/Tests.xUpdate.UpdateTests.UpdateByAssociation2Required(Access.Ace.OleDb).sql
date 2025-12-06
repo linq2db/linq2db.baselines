@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -11,7 +10,6 @@ SET
 WHERE
 	[p].[Id] = @id AND [p].[Id] = [a_MainRequired].[Id]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

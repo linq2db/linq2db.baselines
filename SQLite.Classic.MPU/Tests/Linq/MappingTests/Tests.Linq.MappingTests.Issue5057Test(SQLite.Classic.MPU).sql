@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @item  -- Guid
 SET     @item = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @item_1  -- Guid

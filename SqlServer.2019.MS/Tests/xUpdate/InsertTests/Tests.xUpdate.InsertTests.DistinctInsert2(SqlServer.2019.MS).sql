@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ID] > 1000
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [LinqDataTypes]
@@ -28,7 +26,6 @@ FROM
 			[LinqDataTypes] [t1]
 	) [t2]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 DELETE [c_1]

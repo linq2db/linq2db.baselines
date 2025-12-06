@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"UpdatedEntities"
@@ -24,7 +23,6 @@ WHERE
 			a_Relation."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v."id"
 	)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

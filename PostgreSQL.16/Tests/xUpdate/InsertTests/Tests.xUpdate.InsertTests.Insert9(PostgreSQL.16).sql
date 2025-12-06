@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" > 1000
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
@@ -14,7 +12,6 @@ DELETE FROM
 WHERE
 	p."ParentID" > 1000
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -32,7 +29,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -50,7 +46,6 @@ FROM
 WHERE
 	p."ParentID" = :id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -62,7 +57,6 @@ FROM
 WHERE
 	c_1."ParentID" = :id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
@@ -70,7 +64,6 @@ DELETE FROM
 WHERE
 	c_1."ParentID" > 1000
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM

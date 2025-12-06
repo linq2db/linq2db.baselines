@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -9,7 +8,7 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 
-INSERT INTO "xxPerson_f_1a"
+INSERT INTO "xxPerson"
 (
 	"FirstName",
 	"LastName",
@@ -24,15 +23,13 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPerson_f_1a" "t1"
+	"xxPerson" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -42,23 +39,21 @@ SELECT FIRST 2
 	"t1"."MiddleName",
 	"t1"."Gender"
 FROM
-	"xxPerson_f_1a" "t1"
+	"xxPerson" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 DELETE FROM
-	"xxPerson_f_1a" "t1"
+	"xxPerson" "t1"
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPerson_f_1a" "t1"
+	"xxPerson" "t1"
 

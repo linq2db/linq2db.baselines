@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	g_2.Key_1,
@@ -14,7 +13,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -54,7 +50,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -70,7 +65,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -82,7 +76,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -98,7 +91,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -110,7 +102,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -126,7 +117,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -138,7 +128,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -154,7 +143,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -166,7 +154,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -186,7 +173,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -198,7 +184,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -218,7 +203,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -230,7 +214,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -249,7 +232,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -261,7 +243,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -280,7 +261,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -292,7 +272,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -311,7 +290,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -323,7 +301,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -342,7 +319,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -354,7 +330,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -373,7 +348,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -385,7 +359,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -401,7 +374,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -413,7 +385,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -432,7 +403,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -444,7 +414,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -463,7 +432,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -475,7 +443,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -494,7 +461,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -506,7 +472,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -525,7 +490,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -537,7 +501,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -556,7 +519,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -568,7 +530,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -584,7 +545,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -596,7 +556,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -615,7 +574,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -627,7 +585,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -646,7 +603,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -658,7 +614,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -677,7 +632,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -689,7 +643,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -708,7 +661,6 @@ FROM
 GROUP BY
 	g_2.Key_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

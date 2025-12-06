@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -52,12 +49,11 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[tupledArg].[Id],
-	[tupledArg].[Name],
+	[tupledArg].[Name] as [Item2],
 	[arg2].[Id] as [Id_1],
 	[arg2].[Text]
 FROM

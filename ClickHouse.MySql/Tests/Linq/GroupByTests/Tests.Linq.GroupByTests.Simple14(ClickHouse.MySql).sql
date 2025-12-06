@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -20,7 +19,6 @@ FROM
 				d.ParentID
 		) d_1 ON m_1.ParentID = d_1.Key_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

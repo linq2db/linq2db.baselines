@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.ParentID,
@@ -10,7 +9,7 @@ FROM
 	(
 		SELECT
 			m_1.ChildID as ChildID,
-			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - 1 as c1,
+			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1,
 			a_Parent.ParentID as ParentID
 		FROM
 			Child m_1
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	m_2.ChildID DESC
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -33,7 +31,7 @@ FROM
 	(
 		SELECT
 			m_1.ChildID as ChildID,
-			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - 1 as c1,
+			ROW_NUMBER() OVER (ORDER BY m_1.ChildID DESC) - toInt64(1) as c1,
 			a_Parent.ParentID as ParentID
 		FROM
 			Child m_1

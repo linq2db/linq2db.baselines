@@ -1,16 +1,16 @@
-﻿BeforeExecute
--- SqlServer.2008 (asynchronously)
+﻿-- SqlServer.2008
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
--- SqlServer.2008 (asynchronously)
+-- SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -31,8 +31,7 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
--- SqlServer.2008 (asynchronously)
+-- SqlServer.2008
 DECLARE @Name NVarChar(20) -- String
 SET     @Name = N'John II'
 DECLARE @LastName NVarChar(20) -- String
@@ -46,8 +45,7 @@ SET
 WHERE
 	[FluentTemp].[ID] = 1
 
-BeforeExecute
--- SqlServer.2008 (asynchronously)
+-- SqlServer.2008
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]

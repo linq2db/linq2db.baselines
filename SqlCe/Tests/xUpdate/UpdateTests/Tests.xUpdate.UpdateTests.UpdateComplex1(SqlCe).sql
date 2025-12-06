@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -45,7 +42,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
 -- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
@@ -68,7 +64,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"e"."Id",
@@ -12,7 +11,6 @@ WHERE
 	"e"."GuidValue" = X'BC7B663D0FDE43278F925D8CC3A11D11' AND
 	"e"."GuidNullableValue" = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

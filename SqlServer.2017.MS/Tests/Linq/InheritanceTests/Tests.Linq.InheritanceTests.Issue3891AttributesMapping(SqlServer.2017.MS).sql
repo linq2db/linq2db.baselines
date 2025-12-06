@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (2)
@@ -40,7 +38,6 @@ SELECT TOP (2)
 FROM
 	[Base] [t1]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @Type Int -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	[Base].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (2)

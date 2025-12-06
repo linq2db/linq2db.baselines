@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @iteration Int32
 SET     @iteration = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -32,8 +31,7 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @iteration Int32
 SET     @iteration = 1
 

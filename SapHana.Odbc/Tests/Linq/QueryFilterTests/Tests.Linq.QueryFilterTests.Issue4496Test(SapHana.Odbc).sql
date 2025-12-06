@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT DISTINCT
 	"x"."ParentID",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"x"."ChildID" > 30
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT DISTINCT

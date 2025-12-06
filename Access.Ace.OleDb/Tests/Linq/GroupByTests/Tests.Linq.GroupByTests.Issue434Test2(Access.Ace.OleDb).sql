@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[m_1].[PersonID],
@@ -13,9 +10,6 @@ FROM
 WHERE
 	LCase([m_1].[FirstName]) LIKE '%test%'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(3) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -38,7 +36,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(4) -- String
 SET     @Name = 'Jack'
@@ -58,7 +55,6 @@ SET
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -72,7 +68,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(8) -- String
 SET     @Name = 'Francine'
@@ -89,7 +84,6 @@ SET
 WHERE
 	"PR_1598_Update_Enum_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

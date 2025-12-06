@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 (
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 	CONSTRAINT `PK_TableWithPrimaryKey2` PRIMARY KEY CLUSTERED (`Key`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TableWithPrimaryKey2`
@@ -18,7 +16,6 @@ INSERT INTO `TableWithPrimaryKey2`
 VALUES
 (1)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`

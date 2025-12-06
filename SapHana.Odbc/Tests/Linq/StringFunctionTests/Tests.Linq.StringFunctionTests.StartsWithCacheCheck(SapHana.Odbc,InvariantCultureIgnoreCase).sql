@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	"p"."PersonID" = 1
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -19,7 +17,6 @@ FROM
 WHERE
 	Lower("p"."FirstName") LIKE 'joh%' ESCAPE '~' AND "p"."PersonID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

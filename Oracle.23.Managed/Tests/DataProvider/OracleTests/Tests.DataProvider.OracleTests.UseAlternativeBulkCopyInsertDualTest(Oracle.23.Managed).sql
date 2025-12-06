@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "UseAlternativeBulkCopy"
 (
@@ -7,7 +6,6 @@ CREATE TABLE "UseAlternativeBulkCopy"
 	"Value" Int NOT NULL
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "UseAlternativeBulkCopy"
@@ -42,7 +40,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 23,23 FROM DUAL  UNION ALL
 	SELECT 24,24 FROM DUAL 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "UseAlternativeBulkCopy"
@@ -77,7 +74,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 48,48 FROM DUAL  UNION ALL
 	SELECT 49,49 FROM DUAL 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "UseAlternativeBulkCopy"
@@ -112,7 +108,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 73,73 FROM DUAL  UNION ALL
 	SELECT 74,74 FROM DUAL 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "UseAlternativeBulkCopy"
@@ -147,7 +142,6 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 98,98 FROM DUAL  UNION ALL
 	SELECT 99,99 FROM DUAL 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -156,7 +150,6 @@ SELECT
 FROM
 	"UseAlternativeBulkCopy" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DROP TABLE "UseAlternativeBulkCopy"

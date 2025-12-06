@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @lang NVarChar(2) -- String
 SET     @lang = 'en'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	[d].[Lang] = @lang
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

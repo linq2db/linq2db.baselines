@@ -1,17 +1,17 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DisposableTable')) THEN
 		EXECUTE STATEMENT '
 			CREATE TABLE "DisposableTable"
 			(
-				ID Int NOT NULL
+				ID Int NOT NULL,
+
+				CONSTRAINT "PK_DisposableTable" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN

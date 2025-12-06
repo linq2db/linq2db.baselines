@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @GrandChildID  -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID  -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @GrandChildID  -- Int32
 SET     @GrandChildID = 1000

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 123
 DECLARE @FirstName Varchar2(4) -- String
@@ -16,7 +15,6 @@ VALUES
 	:FirstName
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

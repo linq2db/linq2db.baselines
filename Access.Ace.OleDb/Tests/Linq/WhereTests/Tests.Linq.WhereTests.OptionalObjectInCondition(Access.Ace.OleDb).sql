@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p VarWChar(1) -- String
 SET     @p = '1'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[FirstName] = @p
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @p VarWChar(1) -- String
 SET     @p = '1'

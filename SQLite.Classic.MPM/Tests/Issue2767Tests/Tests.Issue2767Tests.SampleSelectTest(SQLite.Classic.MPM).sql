@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'
 DECLARE @Exercise NVarChar(1) -- String
@@ -38,9 +35,6 @@ FROM
 		INNER JOIN [exercise_equipment] [equipment] ON [d].[equipment_id] = [equipment].[id]
 		LEFT JOIN [ext_translations] [description] ON CAST([equipment].[id] AS NVarChar(11)) = [description].[foreign_key] AND [description].[locale] = @currentLanguage AND [description].[object_class] = @Equipment AND [description].[field] = 'name'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[TestConstantsData] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

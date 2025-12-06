@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 CREATE TABLE Issue681Table2
 (
@@ -16,8 +14,7 @@ CREATE TABLE Issue681Table2
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 

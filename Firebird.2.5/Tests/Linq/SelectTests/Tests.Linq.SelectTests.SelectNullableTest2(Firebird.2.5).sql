@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -65,7 +63,6 @@ FROM
 WHERE
 	"t1".ID = 1000
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @str UniVarChar(6) -- String
 SET     @str = '%o~%h%'
 

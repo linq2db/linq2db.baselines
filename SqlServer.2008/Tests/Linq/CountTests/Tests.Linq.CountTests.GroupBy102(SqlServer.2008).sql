@@ -1,23 +1,22 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
-	[g_2].[MAX_1],
-	[g_2].[COUNT_1] + 1,
-	[g_2].[COUNT_1],
-	[g_2].[COUNT_2]
+	[g_2].[ID1],
+	[g_2].[ID2] + 1,
+	[g_2].[ID2],
+	[g_2].[ID4]
 FROM
 	(
 		SELECT
-			MAX([g_1].[ChildID]) as [MAX_1],
+			MAX([g_1].[ChildID]) as [ID1],
 			COUNT(CASE
 				WHEN [g_1].[ChildID] > 20 THEN 1
 				ELSE NULL
-			END) as [COUNT_1],
+			END) as [ID2],
 			COUNT(CASE
 				WHEN [g_1].[ChildID] > 10 THEN 1
 				ELSE NULL
-			END) as [COUNT_2]
+			END) as [ID4]
 		FROM
 			[Child] [g_1]
 		GROUP BY

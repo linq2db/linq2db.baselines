@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@IsMale
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Code NVarChar(6) -- String
 SET     @Code = 'Child2'
@@ -50,7 +48,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT

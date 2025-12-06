@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"r"."Id",
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	"r"."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	t1.InId,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	t1.InId = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

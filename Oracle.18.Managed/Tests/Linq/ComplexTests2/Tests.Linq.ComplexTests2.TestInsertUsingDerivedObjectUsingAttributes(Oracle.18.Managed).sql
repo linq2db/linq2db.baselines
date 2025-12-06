@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Varchar2(4) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -43,7 +41,6 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -66,7 +63,6 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -81,7 +77,6 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert'
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5

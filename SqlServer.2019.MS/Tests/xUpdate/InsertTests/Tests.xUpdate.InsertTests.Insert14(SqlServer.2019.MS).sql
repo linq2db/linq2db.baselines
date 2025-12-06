@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DELETE [p]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [Person]
@@ -30,7 +28,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 DELETE [p]

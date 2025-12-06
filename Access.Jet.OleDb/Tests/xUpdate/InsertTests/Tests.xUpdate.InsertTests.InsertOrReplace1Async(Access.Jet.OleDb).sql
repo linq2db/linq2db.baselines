@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarWChar(7) -- String
@@ -24,13 +23,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc0'
 DECLARE @PersonID Integer -- Int32
@@ -43,8 +40,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarWChar(4) -- String
@@ -61,8 +57,7 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc1'
 DECLARE @PersonID Integer -- Int32
@@ -75,8 +70,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc2'
 DECLARE @PersonID Integer -- Int32
@@ -89,8 +83,7 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 select PersonID, FirstName, MiddleName, LastName, Gender from Person where PersonID = 3
 

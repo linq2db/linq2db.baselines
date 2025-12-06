@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @doe VarChar(3) -- String
 SET     @doe = 'Doe'
 
@@ -16,7 +15,6 @@ FROM
 			UNION ALL
 			SELECT @doe) `n` ON 1=1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @doe VarChar(4) -- String
 SET     @doe = 'Doe1'

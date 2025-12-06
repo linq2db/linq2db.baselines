@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TableToInsert]
 (
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[Id] IS NULL
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TableToInsert]

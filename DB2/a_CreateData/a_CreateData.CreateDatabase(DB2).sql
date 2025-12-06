@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLESPACE DBHOSTTEMPS_32K';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -14,7 +12,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLESPACE DBHOSTTEMPU_32K';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -22,7 +19,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLESPACE DBHOST_32K';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -30,47 +26,38 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP BUFFERPOOL DBHOST_32K';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE BUFFERPOOL DBHOST_32K IMMEDIATE SIZE 250 AUTOMATIC PAGESIZE 32K;
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE LARGE TABLESPACE DBHOST_32K PAGESIZE 32K MANAGED BY AUTOMATIC STORAGE EXTENTSIZE 32 PREFETCHSIZE 32 BUFFERPOOL DBHOST_32K;
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE USER TEMPORARY TABLESPACE DBHOSTTEMPU_32K PAGESIZE 32K MANAGED BY AUTOMATIC STORAGE BUFFERPOOL DBHOST_32K;
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE SYSTEM TEMPORARY TABLESPACE DBHOSTTEMPS_32K PAGESIZE 32K MANAGED BY AUTOMATIC STORAGE BUFFERPOOL DBHOST_32K;
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Doctor"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Patient"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Person"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "InheritanceParent"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "InheritanceParent"
@@ -80,12 +67,10 @@ CREATE TABLE "InheritanceParent"
 	"Name"                VARCHAR(50)                   NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "InheritanceChild"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "InheritanceChild"
@@ -96,7 +81,6 @@ CREATE TABLE "InheritanceChild"
 	"Name"                VARCHAR(50)                  NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "Person"
@@ -108,27 +92,22 @@ CREATE TABLE "Person"
 	"Gender"     CHAR(1)     NOT NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 -- Doctor Table Extension
@@ -141,22 +120,18 @@ CREATE TABLE "Doctor"
 	FOREIGN KEY "FK_Doctor_Person" ("PersonID") REFERENCES "Person"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE MasterTable
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE SlaveTable
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE MasterTable
@@ -166,7 +141,6 @@ CREATE TABLE MasterTable
 	PRIMARY KEY (ID1,ID2)
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE SlaveTable
@@ -178,7 +152,6 @@ CREATE TABLE SlaveTable
 	REFERENCES MasterTable
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 -- Patient Table Extension
@@ -191,47 +164,38 @@ CREATE TABLE "Patient"
 	FOREIGN KEY "FK_Patient_Person" ("PersonID") REFERENCES "Person"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Parent"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Child"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "GrandChild"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "LinqDataTypes"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "LinqDataTypes"
@@ -249,24 +213,20 @@ CREATE TABLE "LinqDataTypes"
 	"StringValue"    VARCHAR(50) NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "TestIdentity"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "TestIdentity" (
 	"ID"   INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY NOT NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE AllTypes
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE AllTypes
@@ -299,12 +259,10 @@ CREATE TABLE AllTypes
 	xmlDataType              xml                   NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO AllTypes (xmlDataType) VALUES (NULL)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO AllTypes
@@ -360,14 +318,12 @@ VALUES
 	'<root><element strattr="strvalue" intattr="12345"/></root>'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE VIEW PersonView
 AS
 SELECT * FROM "Person"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE Procedure Person_SelectByKey(in ID integer)
@@ -380,17 +336,14 @@ BEGIN
 	OPEN C1;
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "TestMerge1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "TestMerge2"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "TestMerge1"
@@ -420,7 +373,6 @@ CREATE TABLE "TestMerge1"
 	"FieldEnumNumber" INT                         NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "TestMerge2"
@@ -450,12 +402,10 @@ CREATE TABLE "TestMerge2"
 	"FieldEnumNumber" INT                         NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "KeepIdentityTest"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "KeepIdentityTest" (
@@ -463,7 +413,6 @@ CREATE TABLE "KeepIdentityTest" (
 	"Value" INTEGER                                                  NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE Procedure AddIssue792Record()
@@ -472,12 +421,10 @@ BEGIN
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "CollatedTable"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "CollatedTable"
@@ -487,26 +434,22 @@ CREATE TABLE "CollatedTable"
 	"CaseInsensitive"	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE MODULE TEST_MODULE1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE1 PUBLISH
 	FUNCTION TEST_FUNCTION(i INT) RETURNS INT
 	RETURN i + 1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE1 PUBLISH
 	FUNCTION TEST_TABLE_FUNCTION(i INT) RETURNS TABLE(O INT)
 	RETURN SELECT i + 1 FROM "Person"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE1 PUBLISH
@@ -518,26 +461,22 @@ ALTER MODULE TEST_MODULE1 PUBLISH
 		OPEN C1;
 	END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE MODULE TEST_MODULE2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE2 PUBLISH
 	FUNCTION TEST_FUNCTION(i INT) RETURNS INT
 	RETURN i + 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE2 PUBLISH
 	FUNCTION TEST_TABLE_FUNCTION(i INT) RETURNS TABLE(O INT)
 	RETURN SELECT i + 2 FROM "Person"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 ALTER MODULE TEST_MODULE2 PUBLISH
@@ -549,19 +488,16 @@ ALTER MODULE TEST_MODULE2 PUBLISH
 		OPEN C1;
 	END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE FUNCTION TEST_FUNCTION(i INT) RETURNS INT
 RETURN i + 3
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE FUNCTION TEST_TABLE_FUNCTION(i INT) RETURNS TABLE(O INT)
 RETURN SELECT i + 3 FROM "Person"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE OR REPLACE PROCEDURE TEST_PROCEDURE(i INT)
@@ -572,7 +508,6 @@ BEGIN
 	OPEN C1;
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "LinqDataTypes"
@@ -602,7 +537,6 @@ VALUES
 (11,11.45,'2009-09-27-00.00.00.000000',NULL,1,BX'181D02D3F097C04D98D0F0C7DF4A1230',11,NULL,NULL,'9'),
 (12,11.45,'2012-11-07-19.19.29.090000',NULL,1,BX'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
@@ -619,7 +553,6 @@ VALUES
 (6,6),
 (7,1)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Child"
@@ -646,7 +579,6 @@ VALUES
 (6,66),
 (7,77)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GrandChild"
@@ -679,7 +611,6 @@ VALUES
 (4,42,423),
 (4,42,424)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "InheritanceParent"
@@ -693,7 +624,6 @@ VALUES
 (2,1,NULL),
 (3,2,'InheritanceParent2')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "InheritanceChild"

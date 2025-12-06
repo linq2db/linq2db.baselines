@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 UPDATE
 	[TableWithData]
@@ -19,7 +18,6 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

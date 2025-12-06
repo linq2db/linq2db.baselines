@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Raw(16) -- Binary
 SET     @id = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Raw(16) -- Binary
 SET     @id = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id2 Raw(16) -- Binary
 SET     @id2 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(67) -- String
 SET     @p = '<t>
 <r><c0>1</c0><c1>11</c1></r>
@@ -13,7 +12,6 @@ SELECT
 FROM
 	XmlTable('/t/r' PASSING XmlType(:p) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(35) -- String
 SET     @p = '<t><r><c0>1</c0><c1>11</c1></r></t>'

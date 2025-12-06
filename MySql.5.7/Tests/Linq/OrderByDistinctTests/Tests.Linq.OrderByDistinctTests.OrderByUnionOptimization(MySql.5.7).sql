@@ -1,13 +1,12 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT DISTINCT
 	`t1`.`Id`
 FROM
 	(
 		SELECT
-			`x_2`.`Id`,
 			`x_2`.`DuplicateData`,
+			`x_2`.`Id`,
 			`x_2`.`OrderData1`,
 			`x_2`.`OrderData2`
 		FROM
@@ -34,8 +33,8 @@ FROM
 			) `x_2`
 		UNION
 		SELECT
-			`x_3`.`Id`,
 			`x_3`.`DuplicateData`,
+			`x_3`.`Id`,
 			`x_3`.`OrderData1`,
 			`x_3`.`OrderData2`
 		FROM

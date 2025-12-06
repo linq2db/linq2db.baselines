@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 			[pmp].[ParentID]
 	) [pmp_1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

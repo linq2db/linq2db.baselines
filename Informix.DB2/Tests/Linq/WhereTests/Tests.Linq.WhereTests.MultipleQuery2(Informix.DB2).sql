@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.MiddleName IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'

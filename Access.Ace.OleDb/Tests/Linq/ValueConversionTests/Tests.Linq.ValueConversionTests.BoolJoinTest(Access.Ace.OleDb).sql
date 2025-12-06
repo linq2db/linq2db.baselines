@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @true_value VarChar(1) -- AnsiString
 SET     @true_value = 'Y'
 DECLARE @true_value_1 VarChar(1) -- AnsiString

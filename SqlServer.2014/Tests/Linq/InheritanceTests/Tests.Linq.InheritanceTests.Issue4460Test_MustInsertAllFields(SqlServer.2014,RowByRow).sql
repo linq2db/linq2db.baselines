@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Surname
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

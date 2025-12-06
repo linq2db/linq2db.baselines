@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`m_1`.`SectorId`,
@@ -14,9 +11,6 @@ FROM
 WHERE
 	`a_UserPosition`.`PositionId` = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

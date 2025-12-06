@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	IIF(([i].[BoolValue] IS NULL OR [i].[BoolValue] = 0) AND ([i].[IntValue] = (

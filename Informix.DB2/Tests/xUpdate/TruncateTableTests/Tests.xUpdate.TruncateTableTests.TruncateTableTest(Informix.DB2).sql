@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TestTrun
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE TestTrun
@@ -14,12 +12,10 @@ CREATE TABLE TestTrun
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 TRUNCATE TABLE TestTrun
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE TestTrun

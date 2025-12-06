@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."Id",
@@ -10,7 +9,6 @@ WHERE
 	p."Text" IS NULL OR LTRIM(p."Text", '	
                  　') = ''
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

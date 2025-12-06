@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	@SomeDateTimeOffset
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @interval Int -- Int32
 SET     @interval = 10

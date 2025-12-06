@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 
 SELECT
 	MAX([p].[PersonID])
 FROM
 	[Person] [p]
 
-BeforeExecute
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	COUNT(*)

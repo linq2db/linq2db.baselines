@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @name  -- Int32
 SET     @name = 8
@@ -26,7 +24,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM

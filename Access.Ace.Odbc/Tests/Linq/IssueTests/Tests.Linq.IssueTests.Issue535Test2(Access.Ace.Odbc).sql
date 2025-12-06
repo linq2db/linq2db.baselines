@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @filter NVarChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter NVarChar(6) -- String

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Key_1",
@@ -28,7 +25,6 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

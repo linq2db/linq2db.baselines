@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Boolean
 SET     @Value = 1
 DECLARE @Value_1  -- Boolean
@@ -20,7 +19,6 @@ SET
 	[Value4] = @Value_3,
 	[Value5] = @Value_4
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -34,7 +32,6 @@ FROM
 	[IssueDedup] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Boolean
 SET     @Value = 1
@@ -56,7 +53,6 @@ SET
 	[Value4] = @Value_3,
 	[Value5] = @Value_4
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -70,7 +66,6 @@ FROM
 	[IssueDedup] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Boolean
 SET     @Value = 0
@@ -92,7 +87,6 @@ SET
 	[Value4] = @Value_3,
 	[Value5] = @Value_4
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -106,7 +100,6 @@ FROM
 	[IssueDedup] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Boolean
 SET     @Value = 1
@@ -128,7 +121,6 @@ SET
 	[Value4] = @Value_3,
 	[Value5] = @Value_4
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

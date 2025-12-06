@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -11,9 +8,6 @@ FROM
 	[AttendanceSheet] [m_1]
 		INNER JOIN [AttendanceSheetRow] [d] ON [m_1].[Id] = [d].[AttendanceSheetId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

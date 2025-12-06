@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[r].[Id],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[r].[Value2] IN (0, 1)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	([r].[Value2] IN (0, 1) OR [r].[Value2] IS NULL)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	[r].[Value5] IN (0, 1)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	([r].[Value5] IN (0, 1) OR [r].[Value5] IS NULL)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	[r].[Value2] NOT IN (0, 1)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	([r].[Value2] NOT IN (0, 1) AND [r].[Value2] IS NOT NULL)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	([r].[Value5] NOT IN (0, 1) OR [r].[Value5] IS NULL)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -180,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -194,7 +179,6 @@ FROM
 WHERE
 	([r].[Value5] NOT IN (0, 1) AND [r].[Value5] IS NOT NULL)
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

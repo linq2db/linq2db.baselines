@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 5
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT TOP (@take)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -40,7 +37,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -56,7 +52,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -72,7 +67,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -86,7 +80,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -102,7 +95,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -118,7 +110,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
@@ -134,7 +125,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
@@ -154,7 +144,6 @@ WHERE
 			[GrandChild].[GrandChildID] = [a_GrandChildren].[GrandChildID]
 	)
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
@@ -171,7 +160,6 @@ WHERE
 			[Child].[ChildID] = [a_Children].[ChildID]
 	)
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
@@ -179,7 +167,6 @@ DELETE FROM
 WHERE
 	[GrandChild].[ParentID] >= 1000
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
@@ -187,7 +174,6 @@ DELETE FROM
 WHERE
 	[Child].[ParentID] >= 1000
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM

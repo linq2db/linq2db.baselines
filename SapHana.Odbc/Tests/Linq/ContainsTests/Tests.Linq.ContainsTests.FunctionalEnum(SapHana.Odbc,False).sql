@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"s"."Id"
@@ -9,7 +8,6 @@ WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	"s"."Enum" IN ('THREE', NULL)
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	"s"."Enum" NOT IN (NULL, 'TWO')
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

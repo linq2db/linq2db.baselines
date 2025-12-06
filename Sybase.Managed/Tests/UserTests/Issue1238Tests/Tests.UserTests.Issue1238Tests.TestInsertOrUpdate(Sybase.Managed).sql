@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -36,7 +32,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -44,7 +39,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -73,7 +67,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -81,5 +74,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

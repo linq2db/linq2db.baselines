@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` >= 1000
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1000
@@ -25,7 +23,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
@@ -43,7 +40,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1002
@@ -61,7 +57,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1003
@@ -79,7 +74,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1004
@@ -97,7 +91,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1005
@@ -115,7 +108,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1006
@@ -133,7 +125,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1007
@@ -151,7 +142,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1008
@@ -169,7 +159,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1009
@@ -187,7 +176,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
@@ -195,10 +183,7 @@ FROM
 	`Parent`
 WHERE
 	`Parent`.`ParentID` > 1000
-ORDER BY
-	`Parent`.`ParentID` DESC
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -210,7 +195,6 @@ WHERE
 ORDER BY
 	`r`.`ParentID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  

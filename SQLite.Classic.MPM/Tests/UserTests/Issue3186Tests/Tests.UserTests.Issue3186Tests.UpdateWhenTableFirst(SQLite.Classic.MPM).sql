@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @is_deleted  -- Boolean
 SET     @is_deleted = 1
 
@@ -16,7 +15,6 @@ WHERE
 	[component_categories].[id] = [cm].[category_id] AND
 	NOT [cm].[is_deleted]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

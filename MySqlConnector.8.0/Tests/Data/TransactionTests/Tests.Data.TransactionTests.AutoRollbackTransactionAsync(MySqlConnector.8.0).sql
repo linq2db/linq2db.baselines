@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	`t`.`ParentID` = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t`.`ParentID`,

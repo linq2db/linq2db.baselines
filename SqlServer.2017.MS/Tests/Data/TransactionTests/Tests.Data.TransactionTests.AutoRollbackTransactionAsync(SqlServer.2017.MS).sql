@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
 	[t].[ParentID],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Nvl(r.BooleanN, 't'::BOOLEAN)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Nvl(r.BooleanN, 'f'::BOOLEAN)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -87,7 +82,6 @@ WHERE
 		ELSE 'f'::BOOLEAN
 	END)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

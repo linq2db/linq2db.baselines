@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [DropTableTest]
@@ -23,7 +22,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -31,12 +29,10 @@ SELECT
 FROM
 	[DropTableTest] [t1]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = N'P'
 
@@ -12,7 +11,6 @@ VALUES
 	@CharFld
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (1)

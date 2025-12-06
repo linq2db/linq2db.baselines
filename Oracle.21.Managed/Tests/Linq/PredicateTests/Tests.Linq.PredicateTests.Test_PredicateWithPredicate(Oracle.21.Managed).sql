@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	r."Id",
@@ -19,7 +18,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -51,7 +48,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -63,7 +59,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -84,7 +79,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -96,7 +90,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -116,7 +109,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -128,7 +120,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -148,7 +139,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -160,7 +150,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -180,7 +169,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -192,7 +180,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -214,7 +201,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -226,7 +212,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -248,7 +233,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -260,7 +244,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -281,7 +264,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -293,7 +275,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -313,7 +294,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -325,7 +305,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -346,7 +325,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -358,7 +336,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -378,7 +355,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -390,7 +366,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -410,7 +385,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -422,7 +396,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -442,7 +415,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -454,7 +426,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -475,7 +446,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -487,7 +457,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -508,7 +477,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

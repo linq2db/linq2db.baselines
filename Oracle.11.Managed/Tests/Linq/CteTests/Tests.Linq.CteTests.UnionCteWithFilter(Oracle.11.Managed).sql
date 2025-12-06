@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

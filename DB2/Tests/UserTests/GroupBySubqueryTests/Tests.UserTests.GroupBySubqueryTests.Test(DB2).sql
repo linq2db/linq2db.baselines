@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT DISTINCT
 	"a_Ref4"."Field6",
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"t1"."Field3" IS NOT NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

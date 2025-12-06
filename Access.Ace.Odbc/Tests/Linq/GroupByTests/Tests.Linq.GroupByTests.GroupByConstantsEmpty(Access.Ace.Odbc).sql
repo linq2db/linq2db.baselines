@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[g_2].[ChildId],
@@ -19,7 +18,6 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

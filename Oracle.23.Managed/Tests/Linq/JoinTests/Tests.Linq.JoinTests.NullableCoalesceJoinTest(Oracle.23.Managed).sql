@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
 		(
 			ID      Int          NOT NULL,
-			"Value" VarChar(255)     NULL
+			"Value" VarChar(255)     NULL,
+
+			CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -17,7 +18,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -25,7 +25,6 @@ INSERT ALL
 	INTO "tmptbl1" (ID, "Value") VALUES (2,NULL)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -33,7 +32,9 @@ BEGIN
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
 		(
 			ID      Int          NOT NULL,
-			"Value" VarChar(255) NOT NULL
+			"Value" VarChar(255) NOT NULL,
+
+			CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -44,7 +45,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -52,7 +52,6 @@ INSERT ALL
 	INTO "tmptbl2" (ID, "Value") VALUES (3,'Value2')
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -60,7 +59,9 @@ BEGIN
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
 		(
 			ID      Int          NOT NULL,
-			"Value" VarChar(255)     NULL
+			"Value" VarChar(255)     NULL,
+
+			CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -71,7 +72,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -79,7 +79,6 @@ INSERT ALL
 	INTO "tmptbl3" (ID, "Value") VALUES (2,NULL)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -90,7 +89,6 @@ FROM
 		LEFT JOIN "tmptbl2" t3 ON t2.ID = t3.ID
 		LEFT JOIN "tmptbl3" t4 ON Coalesce(t3."Value", t2."Value") = t4."Value" OR t3."Value" IS NULL AND t2."Value" IS NULL AND t4."Value" IS NULL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -99,7 +97,6 @@ SELECT
 FROM
 	"tmptbl1" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -108,7 +105,6 @@ SELECT
 FROM
 	"tmptbl2" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -117,7 +113,6 @@ SELECT
 FROM
 	"tmptbl3" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -129,7 +124,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -141,7 +135,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN

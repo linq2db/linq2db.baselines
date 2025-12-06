@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."Id" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	"TestConstantsData" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	"e"."Id" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

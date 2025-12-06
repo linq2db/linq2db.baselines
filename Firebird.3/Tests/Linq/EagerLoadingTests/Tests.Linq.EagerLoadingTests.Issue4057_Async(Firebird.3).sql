@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."ParentID",
@@ -19,8 +16,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"x"."ParentID",
@@ -31,12 +27,7 @@ WHERE
 	"x"."ParentID" = 3
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."ParentID",
@@ -54,8 +45,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"x"."ParentID",
@@ -66,12 +56,7 @@ WHERE
 	"x"."ParentID" = 3
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."ParentID",
@@ -89,8 +74,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"x"."ParentID",
@@ -101,5 +85,3 @@ WHERE
 	"x"."ParentID" = 3
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransactionAsync

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -20,8 +19,7 @@ VALUES
 	@Text
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 60
 DECLARE @TopicId Int32
@@ -42,8 +40,7 @@ VALUES
 	@Text
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 61
 DECLARE @TopicId Int32
@@ -64,10 +61,7 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id`,
@@ -84,8 +78,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Id`,
@@ -97,5 +90,3 @@ WHERE
 	`x`.`Id` = 6
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

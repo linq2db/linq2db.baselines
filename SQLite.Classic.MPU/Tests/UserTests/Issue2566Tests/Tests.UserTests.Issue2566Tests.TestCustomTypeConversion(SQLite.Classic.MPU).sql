@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'Frau'
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[m_1].[Value] = @cond
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @In NVarChar(4) -- String
 SET     @In = 'Frau'

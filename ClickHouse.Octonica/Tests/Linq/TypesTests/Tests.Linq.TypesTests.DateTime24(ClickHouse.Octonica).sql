@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t.ID,
+	t.MoneyValue,
+	t.DateTimeValue,
+	t.DateTimeValue2,
+	t.BoolValue,
+	t.GuidValue,
+	t.SmallIntValue,
+	t.IntValue,
+	t.BigIntValue,
+	t.StringValue
+FROM
+	LinqDataTypes t
+WHERE
+	t.ID = 1
+LIMIT 1
+
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	t.ID = 1
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	t.ID,
-	t.MoneyValue,
-	t.DateTimeValue,
-	t.DateTimeValue2,
-	t.BoolValue,
-	t.GuidValue,
-	t.SmallIntValue,
-	t.IntValue,
-	t.BigIntValue,
-	t.StringValue
-FROM
-	LinqDataTypes t
-WHERE
-	t.ID = 1
-LIMIT 1
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -56,7 +53,6 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -76,7 +72,6 @@ WHERE
 	t.ID = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT
 	x."ParentID",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	x."ChildID" > 30
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT

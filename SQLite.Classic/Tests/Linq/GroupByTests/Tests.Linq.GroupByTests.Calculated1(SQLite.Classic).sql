@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -28,7 +25,6 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

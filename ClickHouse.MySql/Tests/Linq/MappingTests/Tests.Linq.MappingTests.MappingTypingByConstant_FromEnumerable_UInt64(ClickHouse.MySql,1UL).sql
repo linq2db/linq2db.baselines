@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	arg.Id,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS Id, toUInt64(1) AS Value) arg ON entity.PersonID = arg.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

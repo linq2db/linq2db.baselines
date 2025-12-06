@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	NOT EXISTS(
@@ -12,7 +11,6 @@ SELECT
 	)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

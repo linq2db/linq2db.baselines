@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [User]
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 INSERT INTO [User]
@@ -22,7 +20,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

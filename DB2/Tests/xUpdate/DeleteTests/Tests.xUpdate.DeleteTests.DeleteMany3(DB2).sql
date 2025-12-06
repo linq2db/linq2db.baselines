@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GrandChild" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -14,7 +12,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -22,7 +19,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
@@ -34,7 +30,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Child"
@@ -48,7 +43,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GrandChild"
@@ -64,7 +58,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GrandChild"
@@ -80,7 +73,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -101,7 +93,6 @@ WHERE
 			"t1"."GrandChildID" = "a_GrandChildren"."GrandChildID"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -109,7 +100,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -117,7 +107,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

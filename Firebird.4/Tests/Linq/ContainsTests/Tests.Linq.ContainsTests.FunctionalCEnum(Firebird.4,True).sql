@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -13,7 +12,6 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -26,7 +24,6 @@ WHERE
 	("s"."CEnum" IN (@In) OR "s"."CEnum" IS NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -41,7 +38,6 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value2___'
@@ -54,7 +50,6 @@ WHERE
 	("s"."CEnum" NOT IN (@NotIn) AND "s"."CEnum" IS NOT NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value3___'

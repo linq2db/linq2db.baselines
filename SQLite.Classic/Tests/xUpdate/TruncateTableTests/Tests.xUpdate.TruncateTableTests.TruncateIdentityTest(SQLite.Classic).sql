@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TestIdTrun]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 CREATE TABLE [TestIdTrun]
@@ -12,7 +10,6 @@ CREATE TABLE [TestIdTrun]
 	[Field1] Decimal  NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [TestIdTrun]
@@ -24,7 +21,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [TestIdTrun]
@@ -36,7 +32,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1
@@ -50,17 +45,14 @@ ORDER BY
 	[t1].[ID]
 LIMIT 2 OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM [TestIdTrun]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='TestIdTrun'
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [TestIdTrun]
@@ -72,7 +64,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [TestIdTrun]
@@ -84,7 +75,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1
@@ -98,7 +88,6 @@ ORDER BY
 	[t1].[ID]
 LIMIT 2 OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DROP TABLE [TestIdTrun]

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [TestTable]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [TestTable]
 (
@@ -16,8 +14,7 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ID],
@@ -27,8 +24,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [TestTable]
 

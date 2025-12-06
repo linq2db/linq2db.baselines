@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT SKIP 3
 	t1.ParentID,
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	t1.ChildID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT SKIP 4

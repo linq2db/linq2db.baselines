@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 100
@@ -35,7 +33,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 100
@@ -46,7 +43,6 @@ SELECT
 FROM
 	[TInserted] [c_1]
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -57,7 +53,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2019
 
 DELETE [c_1]

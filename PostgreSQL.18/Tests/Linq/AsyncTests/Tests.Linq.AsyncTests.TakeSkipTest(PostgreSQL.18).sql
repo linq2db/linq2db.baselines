@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @skip Integer -- Int32
@@ -14,8 +13,7 @@ ORDER BY
 	t1."ParentID"
 LIMIT :take OFFSET :skip 
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @skip Integer -- Int32

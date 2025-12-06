@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Issue1373Tests"
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "Issue1373Tests"
@@ -26,7 +24,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "Issue1373Tests"
@@ -40,7 +37,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

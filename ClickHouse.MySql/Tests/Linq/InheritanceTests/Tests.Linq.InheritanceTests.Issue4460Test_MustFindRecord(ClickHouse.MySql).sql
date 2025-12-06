@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue4460Table
 (
@@ -16,7 +15,6 @@ VALUES
 	'Black'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

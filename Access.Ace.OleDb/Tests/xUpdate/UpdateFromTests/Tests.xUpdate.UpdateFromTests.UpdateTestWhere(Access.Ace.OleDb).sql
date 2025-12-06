@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @int2 Integer -- Int32
@@ -19,7 +18,6 @@ SET
 WHERE
 	[t].[id] = [c_1].[id] AND [t].[id] <> @someId
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

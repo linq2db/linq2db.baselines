@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	Cast(Convert(NChar, [t].[DateTimeValue], 114) as DateTime) as [c1]

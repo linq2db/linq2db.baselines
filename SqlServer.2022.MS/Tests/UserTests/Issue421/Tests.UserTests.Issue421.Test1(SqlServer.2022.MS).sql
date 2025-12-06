@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(100) -- Binary
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (1)
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @BlobValue VarBinary(100) -- Binary
 SET     @BlobValue = 0x030201
@@ -39,7 +36,6 @@ SET
 WHERE
 	[BlobClass].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (1)

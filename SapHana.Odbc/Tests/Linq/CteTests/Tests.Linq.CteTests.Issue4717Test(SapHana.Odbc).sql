@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Issue4717Address"
 (
@@ -18,7 +17,6 @@ VALUES
 	'12345'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Issue4717Warehouse"
@@ -34,7 +32,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Issue4717UnitOfMeasure"
@@ -50,7 +47,6 @@ VALUES
 	'ea'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @productId Int -- Int32
 SET     @productId = 1
@@ -70,7 +66,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
@@ -90,7 +85,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @productId Int -- Int32
 SET     @productId = 1
@@ -110,7 +104,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @productId Int -- Int32
 SET     @productId = 1
@@ -128,7 +121,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @productId Int -- Int32
 SET     @productId = 1

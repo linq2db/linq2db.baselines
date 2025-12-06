@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @p BigInt(4) -- Int64
 SET     @p = 5
 DECLARE @p_1 Integer(4) -- Int32
@@ -19,7 +18,6 @@ WHERE
 ORDER BY
 	c_1.id
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @startId Integer(4) -- Int32
 SET     @startId = 5

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [test_temp]
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [test_temp]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -41,12 +37,10 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [test_temp]
@@ -58,7 +52,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [test_temp]
@@ -70,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1

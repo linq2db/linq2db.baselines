@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 DECLARE @id1 Integer -- Int32

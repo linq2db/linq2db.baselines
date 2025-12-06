@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK [IdentitySimpleBulkCopyTable](Id)
+﻿INSERT BULK [IdentitySimpleBulkCopyTable](Id)
 

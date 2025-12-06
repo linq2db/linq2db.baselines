@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @filter1 Varchar2(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 Varchar2(8) -- String
@@ -44,7 +43,6 @@ WHERE
 ORDER BY
 	p."PersonID"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -53,7 +51,6 @@ SELECT
 FROM
 	"Patient" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

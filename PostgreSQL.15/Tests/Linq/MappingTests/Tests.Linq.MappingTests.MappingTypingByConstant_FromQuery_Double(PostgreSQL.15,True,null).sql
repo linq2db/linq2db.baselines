@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -13,7 +12,6 @@ FROM
 			"Person" r
 	) t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

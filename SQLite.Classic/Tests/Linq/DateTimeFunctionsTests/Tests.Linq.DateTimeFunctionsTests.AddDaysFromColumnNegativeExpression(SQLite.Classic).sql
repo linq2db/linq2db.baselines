@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @part1  -- Int32
 SET     @part1 = 4
@@ -52,9 +50,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(([t].[SmallIntValue] + @part1) - @part2 AS NVarChar(11)) || ' Day')) < strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2018-01-02 00:00:00.000'))
+	[t].[ID] = 5000 AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(([t].[SmallIntValue] + @part1) - @part2 AS NVarChar(11)) || ' Day')) < strftime('%Y-%m-%d %H:%M:%f', '2018-01-02 00:00:00.000')
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM

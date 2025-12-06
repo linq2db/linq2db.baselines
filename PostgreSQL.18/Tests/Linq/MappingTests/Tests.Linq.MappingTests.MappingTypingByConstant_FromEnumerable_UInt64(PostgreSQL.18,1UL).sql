@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Value Numeric(1, 0) -- Decimal
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ FROM
 			(1,:Value)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Value Numeric(10, 0) -- Decimal
 SET     @Value = 2147483648

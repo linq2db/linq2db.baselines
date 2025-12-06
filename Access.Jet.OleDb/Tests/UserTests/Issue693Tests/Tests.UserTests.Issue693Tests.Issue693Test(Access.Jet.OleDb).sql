@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarWChar(1) -- String
@@ -24,12 +23,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -55,12 +52,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
@@ -76,7 +71,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @id1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 6

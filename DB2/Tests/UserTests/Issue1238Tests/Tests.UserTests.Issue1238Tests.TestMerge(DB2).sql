@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
@@ -40,7 +36,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
@@ -82,7 +76,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -90,5 +83,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

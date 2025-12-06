@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value1 Int32
 SET     @Value1 = 4
 
@@ -9,8 +8,7 @@ SELECT DISTINCT
 FROM
 	`Parent` `p`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,
@@ -18,8 +16,7 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value1 Int32
 SET     @Value1 = 4
 
@@ -29,8 +26,7 @@ SELECT DISTINCT
 FROM
 	`Parent` `p`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id],
@@ -32,9 +29,6 @@ FROM
 				[d].[ParentId] % 3 = 0
 		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -43,9 +37,6 @@ SELECT
 FROM
 	[SampleClass1] [t1]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -77,9 +68,6 @@ FROM
 				[d].[ParentId] % 3 = 0
 		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

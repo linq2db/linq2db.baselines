@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ParentID
 FROM
 	Parent t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -34,7 +32,6 @@ FROM
 			UNION ALL
 			SELECT 7) d ON d.ParentID = m_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -42,7 +39,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

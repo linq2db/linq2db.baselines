@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @false_value VarChar -- AnsiString
 SET     @false_value = 'N'
 

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(6) -- String
 SET     @String = 'test01'
@@ -20,7 +18,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test02  '
@@ -34,7 +31,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test03	 '
@@ -48,7 +44,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test04
@@ -63,7 +58,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test05 '
@@ -77,7 +71,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test06 '
@@ -91,7 +84,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test07 '
@@ -105,7 +97,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test09     '
@@ -119,7 +110,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test10     '
@@ -133,7 +123,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test11     '
@@ -147,7 +136,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test12     '
@@ -161,7 +149,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test13     '
@@ -175,7 +162,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test14     '
@@ -189,7 +175,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test15     '
@@ -203,7 +188,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test16     '
@@ -217,7 +201,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test17     '
@@ -231,7 +214,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test18     '
@@ -245,7 +227,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test19     '
@@ -259,7 +240,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test20     '
@@ -273,7 +253,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar(10) -- String
 SET     @String = _utf8 x'74657374323100202020'
@@ -287,7 +266,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @String VarChar -- String
 SET     @String = NULL
@@ -301,7 +279,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
@@ -316,7 +293,6 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2

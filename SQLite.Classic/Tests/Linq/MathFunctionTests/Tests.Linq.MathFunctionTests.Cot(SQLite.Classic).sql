@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Floor(Cot(CAST([p].[MoneyValue] AS Float) / 15) * 15) as [Value_1]
+			Floor((1/TAN((CAST([p].[MoneyValue] AS Float) / 15))) * 15) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

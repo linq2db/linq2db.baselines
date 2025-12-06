@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p.Id,
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p.Text IS NULL OR LTRIM(p.Text, '	' || chr(10) || '' || chr(13) || '  ') = ''
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

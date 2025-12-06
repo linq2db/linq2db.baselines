@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @pattern UniVarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

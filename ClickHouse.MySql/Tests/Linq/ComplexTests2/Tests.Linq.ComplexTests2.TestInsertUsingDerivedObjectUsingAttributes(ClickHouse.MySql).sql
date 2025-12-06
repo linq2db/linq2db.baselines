@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'U'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	t1.FirstName = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -46,7 +43,6 @@ UPDATE
 WHERE
 	PersonID = 10500
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -61,7 +57,6 @@ WHERE
 	t1.FirstName = 'test_inherited_insert'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

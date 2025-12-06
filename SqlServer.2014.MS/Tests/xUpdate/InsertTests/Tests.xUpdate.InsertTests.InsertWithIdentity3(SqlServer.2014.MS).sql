@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
@@ -31,7 +29,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
@@ -45,7 +42,6 @@ FROM
 WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]

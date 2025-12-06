@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 2
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Substring('123', 2, :p)
+	Substring('123', 2, 2)
 

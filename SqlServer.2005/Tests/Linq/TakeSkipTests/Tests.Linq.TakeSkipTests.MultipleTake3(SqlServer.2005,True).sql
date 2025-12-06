@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @take Int -- Int32
 SET     @take = 1
 
 SELECT TOP (@take)
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

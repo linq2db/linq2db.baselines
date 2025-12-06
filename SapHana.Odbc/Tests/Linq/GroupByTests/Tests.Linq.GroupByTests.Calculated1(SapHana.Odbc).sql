@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."Key_1",
@@ -28,7 +25,6 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

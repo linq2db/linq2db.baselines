@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[s].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[s].[FirstName] <> N''
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[ParentID],
@@ -7,9 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

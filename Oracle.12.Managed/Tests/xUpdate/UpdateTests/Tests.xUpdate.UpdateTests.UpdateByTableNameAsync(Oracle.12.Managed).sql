@@ -1,63 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_o"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -4080 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_o"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -2289 THEN
-				RAISE;
-			END IF;
-	END;
-	BEGIN
-		EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_o"';
-	EXCEPTION
-		WHEN OTHERS THEN
-			IF SQLCODE != -942 THEN
-				RAISE;
-			END IF;
-	END;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-
-CREATE TABLE "xxPerson_o"
-(
-	"FirstName"  VarChar(255)  NOT NULL,
-	"PersonID"   Int           NOT NULL,
-	"LastName"   VarChar(255)  NOT NULL,
-	"MiddleName" VarChar(255)      NULL,
-	"Gender"     Char(1)       NOT NULL,
-
-	CONSTRAINT "PK_xxPerson_o" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-
-CREATE SEQUENCE "SIDENTITY_xxPerson_o"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-
-CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_o"
-BEFORE INSERT ON "xxPerson_o" FOR EACH ROW
-BEGIN
-	SELECT "SIDENTITY_xxPerson_o".NEXTVAL INTO :NEW."PersonID" FROM dual;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -67,7 +8,7 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO "xxPerson_o"
+INSERT INTO "xxPerson"
 (
 	"FirstName",
 	"LastName",
@@ -82,16 +23,14 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."FirstName",
@@ -100,11 +39,10 @@ SELECT
 	t1."MiddleName",
 	t1."Gender"
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -117,7 +55,7 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson_o" t1
+	"xxPerson" t1
 SET
 	"FirstName" = :FirstName,
 	"LastName" = :LastName,
@@ -126,8 +64,7 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."FirstName",
@@ -136,15 +73,6 @@ SELECT
 	t1."MiddleName",
 	t1."Gender"
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_o"';
-	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_xxPerson_o"';
-	EXECUTE IMMEDIATE 'DROP TABLE "xxPerson_o"';
-END;
 

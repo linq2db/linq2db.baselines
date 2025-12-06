@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+﻿-- SqlServer.2014
 
 SELECT TOP (3)
 	[t1].[ParentID],

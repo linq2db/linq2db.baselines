@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @value  -- Int64
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			[Person] [r]
 	) [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Int64
 SET     @value = 2147483648

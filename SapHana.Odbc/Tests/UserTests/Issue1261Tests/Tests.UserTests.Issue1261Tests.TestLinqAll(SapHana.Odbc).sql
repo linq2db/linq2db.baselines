@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	CASE
@@ -16,7 +15,6 @@ SELECT
 	END
 FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Date Timestamp(20) -- DateTime
 SET     @Date = '2009-09-20-00.00.00.000000'
 

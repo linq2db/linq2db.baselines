@@ -1,13 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	grp."SiteID",
 	COUNT(*),
-	COUNT(CASE
-		WHEN NOT grp."Active" THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE NOT grp."Active")
 FROM
 	"Issue1078Table" grp
 GROUP BY

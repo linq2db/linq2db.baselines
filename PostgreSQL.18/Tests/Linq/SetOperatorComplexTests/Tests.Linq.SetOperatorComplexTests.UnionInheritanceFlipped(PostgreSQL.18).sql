@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	"a_Book"."BookId",
@@ -29,9 +28,6 @@ FROM
 WHERE
 	"a_Book_1"."Discriminator" = 'Roman'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -46,9 +42,6 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkAuthorId" = m_1."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

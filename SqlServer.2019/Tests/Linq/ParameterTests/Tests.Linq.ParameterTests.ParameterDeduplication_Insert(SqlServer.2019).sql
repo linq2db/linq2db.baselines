@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @int1 Int -- Int32
@@ -40,7 +39,6 @@ VALUES
 	@str3
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
@@ -82,7 +80,6 @@ VALUES
 	@str3
 )
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

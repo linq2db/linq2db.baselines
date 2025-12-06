@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Name Text(7) -- String
 SET     @Name = 'John II'
@@ -45,7 +44,6 @@ SET
 WHERE
 	"FluentTemp"."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"

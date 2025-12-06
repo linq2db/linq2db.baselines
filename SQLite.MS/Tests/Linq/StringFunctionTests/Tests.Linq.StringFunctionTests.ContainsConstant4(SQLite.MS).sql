@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND @s LIKE '%~[%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'

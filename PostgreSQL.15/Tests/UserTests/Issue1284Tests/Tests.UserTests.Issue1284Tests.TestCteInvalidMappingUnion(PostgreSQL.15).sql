@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 WITH "CTE_1"
 (
@@ -55,7 +54,6 @@ FROM
 	"CTE_1" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

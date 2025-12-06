@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -16,7 +15,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -69,7 +65,6 @@ FROM
 WHERE
 	p.TargetName = 'bda.Requests'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

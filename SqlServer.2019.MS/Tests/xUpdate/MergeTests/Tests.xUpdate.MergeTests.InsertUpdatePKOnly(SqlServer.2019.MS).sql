@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
@@ -21,7 +20,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

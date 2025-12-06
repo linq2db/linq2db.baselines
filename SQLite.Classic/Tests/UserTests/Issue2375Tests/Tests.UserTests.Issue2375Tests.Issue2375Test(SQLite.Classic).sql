@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ResourceLabel NVarChar(1) -- String
@@ -16,7 +15,6 @@ VALUES
 	@ResourceLabel
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'0D6048A921DE744F8AC29516B287076E'
@@ -42,7 +40,6 @@ VALUES
 	@ModifiedTimeStamp
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'A57339BD2343D84D9F4FDF9F93E2A627'
@@ -68,9 +65,6 @@ VALUES
 	@ModifiedTimeStamp
 )
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -104,9 +98,6 @@ FROM
 			INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id])
 		ON [m_1].[Status] = [d].[Status] AND ([m_1].[ResourceLabel] = [lc_1].[ResourceLabel] OR [m_1].[ResourceLabel] IS NULL AND [lc_1].[ResourceLabel] IS NULL)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

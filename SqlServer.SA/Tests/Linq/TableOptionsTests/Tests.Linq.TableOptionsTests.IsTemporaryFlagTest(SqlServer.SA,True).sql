@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]

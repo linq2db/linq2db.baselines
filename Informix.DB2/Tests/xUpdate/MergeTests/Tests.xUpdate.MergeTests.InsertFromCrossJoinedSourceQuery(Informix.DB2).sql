@@ -1,24 +1,18 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	Parent
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	Child
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	GrandChild
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -32,7 +26,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -46,7 +39,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 10
@@ -60,7 +52,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 20
@@ -74,7 +65,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 11
@@ -96,7 +86,6 @@ VALUES
 	@RightId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO GrandChild Target
@@ -130,7 +119,6 @@ VALUES
 	Source.RightId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -142,5 +130,3 @@ FROM
 ORDER BY
 	t1.GrandChildID
 
-BeforeExecute
-DisposeTransaction

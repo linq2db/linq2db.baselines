@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 2
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 2

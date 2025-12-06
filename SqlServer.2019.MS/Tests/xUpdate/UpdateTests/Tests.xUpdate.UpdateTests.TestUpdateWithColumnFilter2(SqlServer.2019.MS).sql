@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
@@ -54,7 +51,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 5
@@ -70,7 +66,6 @@ FROM
 WHERE
 	[x].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
@@ -93,7 +88,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 5

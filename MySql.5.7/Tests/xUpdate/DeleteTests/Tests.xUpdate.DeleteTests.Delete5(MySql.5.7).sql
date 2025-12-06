@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+DELETE  
+FROM
+	`Parent`
+WHERE
+	`Parent`.`ParentID` > 1000
+
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
@@ -7,16 +14,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` > 1000
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DELETE  
-FROM
-	`Parent`
-WHERE
-	`Parent`.`ParentID` > 1000
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1001
@@ -32,7 +29,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1002
@@ -48,7 +44,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -58,7 +53,6 @@ FROM
 WHERE
 	`t1`.`ParentID` > 1000
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
@@ -67,7 +61,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` IN (1001, 1002)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

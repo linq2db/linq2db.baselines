@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value1 NVarchar2(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	:AnotherBoolValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -51,7 +49,6 @@ FROM
 WHERE
 	e."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -85,7 +82,6 @@ VALUES
 	:AnotherBoolValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -104,7 +100,6 @@ FROM
 WHERE
 	e."Id" = 2 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 3
@@ -154,7 +149,6 @@ VALUES
 	:DateTimeNullable
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -173,7 +167,6 @@ FROM
 WHERE
 	e."Id" = 3 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

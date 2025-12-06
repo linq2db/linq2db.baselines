@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	"Parent" p
 ---
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

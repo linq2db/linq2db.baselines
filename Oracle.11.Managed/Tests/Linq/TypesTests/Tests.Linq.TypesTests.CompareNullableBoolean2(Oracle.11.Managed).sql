@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1.ID,
@@ -14,7 +13,6 @@ FROM
 	"LinqDataTypes" t1
 		INNER JOIN "LinqDataTypes" t2 ON t1.ID = t2.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @param2 Int16
 SET     @param2 = 0

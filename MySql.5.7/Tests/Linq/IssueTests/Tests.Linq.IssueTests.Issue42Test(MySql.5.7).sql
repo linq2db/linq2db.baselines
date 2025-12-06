@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`r`.`ID`,
+	`r`.`MoneyValue`,
+	`r`.`DateTimeValue`,
+	`r`.`DateTimeValue2`,
+	`r`.`BoolValue`,
+	`r`.`GuidValue`,
+	`r`.`SmallIntValue`,
+	`r`.`IntValue`,
+	`r`.`BigIntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 1
+LIMIT 1
+
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	`r`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-SELECT
-	`r`.`ID`,
-	`r`.`MoneyValue`,
-	`r`.`DateTimeValue`,
-	`r`.`DateTimeValue2`,
-	`r`.`BoolValue`,
-	`r`.`GuidValue`,
-	`r`.`SmallIntValue`,
-	`r`.`IntValue`,
-	`r`.`BigIntValue`,
-	`r`.`StringValue`
-FROM
-	`LinqDataTypes` `r`
-WHERE
-	`r`.`ID` = 1
-LIMIT 1
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
@@ -76,7 +73,6 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	`r`.`ID` = @ID
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
@@ -136,7 +131,6 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @str NVarChar(3) -- String
 SET     @str = '123'

@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	g_2."Key_1",
-	SUM(g_2."Max_1")
+	SUM(g_2."c1")
 FROM
 	(
 		SELECT
 			g_1."ParentID" as "Key_1",
-			MAX(g_1."Value1") as "Max_1"
+			MAX(g_1."Value1") as "c1"
 		FROM
 			"Parent" g_1
 		WHERE

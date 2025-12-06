@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

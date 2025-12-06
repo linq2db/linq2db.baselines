@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	e.Id
@@ -8,7 +7,6 @@ FROM
 WHERE
 	e.Id = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 WHERE
 	toInt64(1) = t1.BigIntValue
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

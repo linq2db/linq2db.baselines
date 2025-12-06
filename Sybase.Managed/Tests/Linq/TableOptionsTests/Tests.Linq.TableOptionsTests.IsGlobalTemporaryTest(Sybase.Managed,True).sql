@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE ##IsGlobalTemporaryTable
 (
@@ -7,7 +6,6 @@ CREATE TABLE ##IsGlobalTemporaryTable
 	[Value] Int NOT NULL
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	##IsGlobalTemporaryTable [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'##IsGlobalTemporaryTable') IS NOT NULL)

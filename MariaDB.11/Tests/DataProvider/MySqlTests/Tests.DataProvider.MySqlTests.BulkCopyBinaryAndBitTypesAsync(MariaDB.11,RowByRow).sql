@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SET GLOBAL local_infile=ON
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Bit_1 UInt64
@@ -23,9 +21,9 @@ DECLARE @Binary_1 Blob -- Binary
 SET     @Binary_1 = NULL
 DECLARE @Binary_2 Blob -- Binary
 SET     @Binary_2 = NULL
-DECLARE @Binary_3 VarChar -- String
+DECLARE @Binary_3 Blob -- Binary
 SET     @Binary_3 = NULL
-DECLARE @Binary_4 VarChar -- String
+DECLARE @Binary_4 Blob -- Binary
 SET     @Binary_4 = NULL
 DECLARE @VarBinary_1 Blob -- Binary
 SET     @VarBinary_1 = NULL
@@ -97,8 +95,7 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Bit_1 UInt64
@@ -191,8 +188,7 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,

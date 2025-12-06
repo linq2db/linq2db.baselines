@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`r`.`ID`,
+	`r`.`MoneyValue`,
+	`r`.`DateTimeValue`,
+	`r`.`DateTimeValue2`,
+	`r`.`BoolValue`,
+	`r`.`GuidValue`,
+	`r`.`SmallIntValue`,
+	`r`.`IntValue`,
+	`r`.`BigIntValue`,
+	`r`.`StringValue`
+FROM
+	`LinqDataTypes` `r`
+WHERE
+	`r`.`ID` = 1
+LIMIT 1
+
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	`r`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
-	`r`.`ID`,
-	`r`.`MoneyValue`,
-	`r`.`DateTimeValue`,
-	`r`.`DateTimeValue2`,
-	`r`.`BoolValue`,
-	`r`.`GuidValue`,
-	`r`.`SmallIntValue`,
-	`r`.`IntValue`,
-	`r`.`BigIntValue`,
-	`r`.`StringValue`
-FROM
-	`LinqDataTypes` `r`
-WHERE
-	`r`.`ID` = 1
-LIMIT 1
-
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -76,7 +73,6 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	`r`.`ID` = @ID
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @MoneyValue NewDecimal(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -136,7 +131,6 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

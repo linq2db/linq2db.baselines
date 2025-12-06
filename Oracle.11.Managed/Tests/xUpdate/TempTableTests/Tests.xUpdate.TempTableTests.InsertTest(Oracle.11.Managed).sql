@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Table2"
 (
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Table1" t
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

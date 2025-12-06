@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Parent]
@@ -22,7 +20,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

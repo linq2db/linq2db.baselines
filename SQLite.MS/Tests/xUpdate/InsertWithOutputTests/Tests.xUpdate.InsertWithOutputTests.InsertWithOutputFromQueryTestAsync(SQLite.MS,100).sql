@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
 
@@ -22,7 +21,6 @@ RETURNING
 	[DestinationTable].[Value],
 	[DestinationTable].[ValueStr]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @param  -- Int32
 SET     @param = 100

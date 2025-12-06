@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GrandChild" "gc"
 WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GrandChild"
@@ -22,7 +20,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GrandChild"
@@ -38,7 +35,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -48,7 +44,6 @@ FROM
 WHERE
 	"gc"."ParentID" = 1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
@@ -68,7 +63,6 @@ WHERE
 			"t1"."GrandChildID" = "gc"."GrandChildID"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

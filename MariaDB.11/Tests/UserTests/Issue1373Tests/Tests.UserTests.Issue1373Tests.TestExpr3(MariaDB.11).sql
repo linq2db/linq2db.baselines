@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -14,8 +13,7 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -30,8 +28,7 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Field1 VarChar(4) -- String
 SET     @Field1 = 'test'
 
@@ -46,8 +43,7 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[m_1].[Id],
@@ -20,9 +17,6 @@ FROM
 	) [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -40,10 +34,10 @@ FROM
 					[ItemValue] [a_Values]
 				WHERE
 					[x].[Id] = [a_Values].[ItemId]
-			) as [SUM_1]
+			) as [Sum_1]
 		FROM
 			[Item] [x]
 	) [x_1]
 ORDER BY
-	Coalesce([x_1].[SUM_1], 0)
+	Coalesce([x_1].[Sum_1], 0)
 

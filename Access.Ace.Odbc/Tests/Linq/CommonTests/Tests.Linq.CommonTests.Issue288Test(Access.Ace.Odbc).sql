@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[FirstName] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'

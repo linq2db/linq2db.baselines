@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [LinqDataTypes]
@@ -25,7 +23,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -41,7 +38,6 @@ FROM
 WHERE
 	[t1].[ID] = 101
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102

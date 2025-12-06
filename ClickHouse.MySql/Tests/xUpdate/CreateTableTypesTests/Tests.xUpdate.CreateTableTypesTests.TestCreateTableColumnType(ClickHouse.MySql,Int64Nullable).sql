@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO CreateTableTypes
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO CreateTableTypes
@@ -26,7 +24,6 @@ VALUES
 	toInt64(4)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

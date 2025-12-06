@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- SqlServer.SA.MS SqlServer.2019
+DECLARE @Name NVarChar(4000) -- String
+SET     @Name = N'group1'
+DECLARE @Enabled Bit -- Boolean
+SET     @Enabled = 1
+DECLARE @ImageFullUrl NVarChar(4000) -- String
+SET     @ImageFullUrl = N'123'
+
+INSERT INTO [Stone]
+(
+	[Name],
+	[Enabled],
+	[ImageFullUrl]
+)
+VALUES
+(
+	@Name,
+	@Enabled,
+	@ImageFullUrl
+)
+
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group1'
@@ -20,29 +40,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'group1'
-DECLARE @Enabled Bit -- Boolean
-SET     @Enabled = 1
-DECLARE @ImageFullUrl NVarChar(4000) -- String
-SET     @ImageFullUrl = N'123'
-
-INSERT INTO [Stone]
-(
-	[Name],
-	[Enabled],
-	[ImageFullUrl]
-)
-VALUES
-(
-	@Name,
-	@Enabled,
-	@ImageFullUrl
-)
-
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group2'
@@ -64,7 +61,6 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

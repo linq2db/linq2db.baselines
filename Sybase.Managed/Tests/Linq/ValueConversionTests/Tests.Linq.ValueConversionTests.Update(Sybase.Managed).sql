@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value2 UniVarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -17,7 +16,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -36,7 +34,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value1 UniVarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -74,7 +71,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -93,7 +89,6 @@ FROM
 WHERE
 	[e].[Id] = 2
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value1 UniVarChar -- String
 SET     @Value1 = NULL
@@ -131,7 +126,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

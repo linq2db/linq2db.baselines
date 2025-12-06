@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 102
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -20,7 +18,6 @@ VALUES
 	toInt64(12)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ FROM
 WHERE
 	entity.BigIntValue = toInt64(12)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

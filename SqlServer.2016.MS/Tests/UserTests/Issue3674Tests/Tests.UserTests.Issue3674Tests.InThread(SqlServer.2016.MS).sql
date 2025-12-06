@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

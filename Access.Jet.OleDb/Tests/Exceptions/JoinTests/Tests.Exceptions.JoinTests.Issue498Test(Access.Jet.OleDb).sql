@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[x].[ParentID]
@@ -7,7 +6,6 @@ FROM
 	[Parent] [x]
 		INNER JOIN [Child] [y] ON ([x].[ParentID] = [y].[ParentID])
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

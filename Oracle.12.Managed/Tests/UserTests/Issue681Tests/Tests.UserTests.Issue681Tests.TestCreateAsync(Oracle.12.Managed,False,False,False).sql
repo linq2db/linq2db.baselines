@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
@@ -10,8 +9,7 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "Issue681Table2"
 (
@@ -21,8 +19,7 @@ CREATE TABLE "Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
 )
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';

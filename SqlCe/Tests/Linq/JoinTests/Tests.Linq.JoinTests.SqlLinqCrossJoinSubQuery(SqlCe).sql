@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @take_1 Int -- Int32

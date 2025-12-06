@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -13,7 +12,6 @@ FROM
 WHERE
 	"p"."ParentID" = @p AND "p"."Value1" = @p_1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 2

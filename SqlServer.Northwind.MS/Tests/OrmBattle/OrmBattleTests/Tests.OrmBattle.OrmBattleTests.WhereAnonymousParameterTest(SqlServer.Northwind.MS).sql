@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @City NVarChar(4000) -- String
 SET     @City = N'Seattle'
 DECLARE @Region NVarChar(4000) -- String

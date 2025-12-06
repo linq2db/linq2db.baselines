@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."KeyValue",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	t1."KeyValue" = 'NullValues'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL OR Length(t1."StringValue1") = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL OR Length(t1."StringValue2") = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -58,7 +53,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -70,7 +64,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -82,7 +75,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -94,7 +86,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -106,7 +97,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -118,7 +108,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -130,7 +119,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -142,7 +130,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -154,7 +141,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -166,7 +152,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -178,7 +163,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -190,7 +174,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -202,7 +185,6 @@ FROM
 WHERE
 	t1."StringValue1" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -214,7 +196,6 @@ FROM
 WHERE
 	t1."StringValue2" IS NULL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

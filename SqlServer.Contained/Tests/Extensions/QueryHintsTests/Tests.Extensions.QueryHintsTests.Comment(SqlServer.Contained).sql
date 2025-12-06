@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	[Parent] [p]
 ---
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

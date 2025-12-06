@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce(r.BooleanN, true)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce(r.BooleanN, false)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -84,7 +79,6 @@ FROM
 WHERE
 	Coalesce(r.BooleanN, r.Id % 2 = 1)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

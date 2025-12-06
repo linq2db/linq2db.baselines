@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t.ID,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" IN (TIMESTAMP '2001-01-11 01:11:21.100000')
+	t."DateTimeValue" IN (TO_TIMESTAMP('2001-01-11 01:11:21.100', 'YYYY-MM-DD HH24:MI:SS.FF3'))
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.MiddleName IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

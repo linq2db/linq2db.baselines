@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data VarWChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
@@ -34,7 +32,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TrimTestTable]
@@ -48,7 +45,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -59,7 +55,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

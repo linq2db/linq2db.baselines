@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @json NVarChar(4000) -- String
 SET     @json = N'[ 10, 20, 30, 40, 50, 60, 70 ]'
 

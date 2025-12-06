@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Double Float -- Double
@@ -16,7 +15,6 @@ VALUES
 	@Double
 )
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Double
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

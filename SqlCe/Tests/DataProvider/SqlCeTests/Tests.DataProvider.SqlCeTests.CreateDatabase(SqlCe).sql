@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 CREATE TABLE [CreateTableTest]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [CreateTableTest]
 	CONSTRAINT [PK_CreateTableTest] PRIMARY KEY ([Id])
 )
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [CreateTableTest]

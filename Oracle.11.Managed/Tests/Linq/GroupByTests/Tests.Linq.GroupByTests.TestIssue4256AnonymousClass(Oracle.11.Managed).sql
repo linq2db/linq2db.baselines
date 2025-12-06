@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	it_1."IsActive",
@@ -19,7 +18,6 @@ GROUP BY
 	it_1."IsActive",
 	it_1."Other"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

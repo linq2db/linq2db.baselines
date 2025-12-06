@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
@@ -18,7 +16,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
@@ -28,7 +25,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
@@ -38,7 +34,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
@@ -56,7 +51,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
@@ -74,7 +68,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
@@ -92,7 +85,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
@@ -110,7 +102,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
@@ -120,7 +111,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
@@ -130,7 +120,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
@@ -140,7 +129,6 @@ DELETE FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111

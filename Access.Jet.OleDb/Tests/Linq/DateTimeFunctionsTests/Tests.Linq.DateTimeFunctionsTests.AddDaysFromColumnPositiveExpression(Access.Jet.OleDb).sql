@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
@@ -54,7 +52,6 @@ FROM
 WHERE
 	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

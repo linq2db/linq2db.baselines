@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`p`.`Id`,
 	`p`.`Code`,
 	`p`.`DIM_Company`,
 	`p`.`DIM_Branch`,

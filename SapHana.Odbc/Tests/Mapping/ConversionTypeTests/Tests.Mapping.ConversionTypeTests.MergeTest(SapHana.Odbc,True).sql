@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TrimTestTable" "Target"
 USING (
@@ -25,7 +24,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "TrimTestTable" "Target"
@@ -50,7 +48,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -61,7 +58,6 @@ FROM
 ORDER BY
 	"r"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

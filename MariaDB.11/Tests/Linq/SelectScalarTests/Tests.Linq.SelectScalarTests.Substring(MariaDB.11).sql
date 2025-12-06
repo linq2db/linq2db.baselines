@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p Int32
-SET     @p = 2
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Substring('123', 2, @p) as `c1`
+	Substring('123', 2, 2) as `c1`
 

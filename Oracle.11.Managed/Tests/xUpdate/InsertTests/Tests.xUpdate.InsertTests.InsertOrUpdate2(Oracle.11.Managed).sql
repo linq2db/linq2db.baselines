@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName Varchar2(7) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
@@ -50,7 +48,6 @@ WHEN NOT MATCHED THEN
 		'negative'
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
@@ -63,7 +60,6 @@ FROM
 WHERE
 	p."PersonID" = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5
@@ -85,7 +81,6 @@ WHEN NOT MATCHED THEN
 		'positive'
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5

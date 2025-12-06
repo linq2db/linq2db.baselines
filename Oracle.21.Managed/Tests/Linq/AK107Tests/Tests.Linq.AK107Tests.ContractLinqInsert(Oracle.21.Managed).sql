@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'user'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -20,7 +17,6 @@ VALUES
 RETURNING 
 	"user_id" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ContractSequence Int64
 SET     @ContractSequence = 0

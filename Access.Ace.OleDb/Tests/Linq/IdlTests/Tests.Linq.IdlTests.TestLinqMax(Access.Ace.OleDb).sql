@@ -1,4 +1,12 @@
-﻿BeforeExecute
+﻿-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	MAX([x].[PersonID])
+FROM
+	[Patient] [x]
+WHERE
+	[x].[PersonID] < 0
+
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -8,7 +16,6 @@ FROM
 WHERE
 	[x].[PersonID] < 0
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -18,17 +25,6 @@ FROM
 WHERE
 	[x].[PersonID] < 0
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	MAX([x].[PersonID])
-FROM
-	[Patient] [x]
-WHERE
-	[x].[PersonID] < 0
-
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

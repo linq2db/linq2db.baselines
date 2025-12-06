@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	:One IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -42,7 +39,6 @@ FROM
 WHERE
 	:Zero IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -54,7 +50,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -70,7 +65,6 @@ FROM
 WHERE
 	:OneN IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -82,7 +76,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -98,7 +91,6 @@ FROM
 WHERE
 	:ZeroN IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -110,7 +102,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Null_1 Int32
 SET     @Null_1 = NULL
@@ -126,7 +117,6 @@ FROM
 WHERE
 	:Null_1 IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -138,7 +128,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
@@ -154,7 +143,6 @@ FROM
 WHERE
 	(:One IN (0, 1) OR :One IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -166,7 +154,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -182,7 +169,6 @@ FROM
 WHERE
 	(:Zero IN (0, 1) OR :Zero IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -194,7 +180,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -210,7 +195,6 @@ FROM
 WHERE
 	(:OneN IN (0, 1) OR :OneN IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -222,7 +206,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -238,7 +221,6 @@ FROM
 WHERE
 	(:ZeroN IN (0, 1) OR :ZeroN IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -250,7 +232,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Null_1 Int32
 SET     @Null_1 = NULL
@@ -266,7 +247,6 @@ FROM
 WHERE
 	(:Null_1 IN (0, 1) OR :Null_1 IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -278,7 +258,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
@@ -294,7 +273,6 @@ FROM
 WHERE
 	:One NOT IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -306,7 +284,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -322,7 +299,6 @@ FROM
 WHERE
 	:Zero NOT IN (0, 1)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -334,7 +310,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -350,7 +325,6 @@ FROM
 WHERE
 	(:OneN NOT IN (0, 1) OR :OneN IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -362,7 +336,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -378,7 +351,6 @@ FROM
 WHERE
 	(:ZeroN NOT IN (0, 1) OR :ZeroN IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -390,7 +362,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Null_1 Int32
 SET     @Null_1 = NULL
@@ -406,7 +377,6 @@ FROM
 WHERE
 	(:Null_1 NOT IN (0, 1) OR :Null_1 IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -418,7 +388,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
@@ -434,7 +403,6 @@ FROM
 WHERE
 	(:One NOT IN (0, 1) AND :One IS NOT NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -446,7 +414,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -462,7 +429,6 @@ FROM
 WHERE
 	(:Zero NOT IN (0, 1) AND :Zero IS NOT NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -474,7 +440,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -490,7 +455,6 @@ FROM
 WHERE
 	(:OneN NOT IN (0, 1) AND :OneN IS NOT NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -502,7 +466,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -518,7 +481,6 @@ FROM
 WHERE
 	(:ZeroN NOT IN (0, 1) AND :ZeroN IS NOT NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -530,7 +492,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Null_1 Int32
 SET     @Null_1 = NULL
@@ -546,7 +507,6 @@ FROM
 WHERE
 	(:Null_1 NOT IN (0, 1) AND :Null_1 IS NOT NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
@@ -20,7 +18,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
@@ -31,7 +28,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
@@ -42,9 +38,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `Parent`
@@ -58,9 +51,7 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
@@ -71,7 +62,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
@@ -82,7 +72,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
@@ -93,7 +82,6 @@ FROM
 WHERE
 	`Parent`.`ParentID` = @ParentID
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 4111

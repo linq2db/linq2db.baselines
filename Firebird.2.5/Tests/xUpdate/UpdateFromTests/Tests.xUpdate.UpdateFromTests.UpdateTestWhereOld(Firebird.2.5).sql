@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @someId Integer -- Int32
@@ -53,7 +52,6 @@ WHERE
 			"t"."id" = "c_1"."id" AND "t"."id" <> @someId AND "UpdatedEntities"."id" = "c_1"."id"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

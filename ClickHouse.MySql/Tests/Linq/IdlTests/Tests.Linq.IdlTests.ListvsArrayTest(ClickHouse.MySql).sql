@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	x.PersonID
@@ -8,7 +7,6 @@ FROM
 WHERE
 	x.FirstName IN ('John')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	t1.COUNT_1
+	t1."MyGroupedCount"
 FROM
 	(
 		SELECT
 			COUNT(CASE
 				WHEN t."Status" = 3 THEN 1
 				ELSE NULL
-			END) as COUNT_1
+			END) as "MyGroupedCount"
 		FROM
 			"Issue1192Table" t
 		WHERE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value4 Raw(16) -- Binary
 SET     @Value4 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @id Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
@@ -25,7 +23,6 @@ WHERE
 	t1."Id" = :id
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value4 Raw(16) -- Binary
 SET     @Value4 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
@@ -39,7 +36,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1

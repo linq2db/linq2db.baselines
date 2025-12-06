@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -22,7 +21,6 @@ FROM
 WHERE
 	[s].[Id] = 3
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @param Int -- Int32
 SET     @param = 100

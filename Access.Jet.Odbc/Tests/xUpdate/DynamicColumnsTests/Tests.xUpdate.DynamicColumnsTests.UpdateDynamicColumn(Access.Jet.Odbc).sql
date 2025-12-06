@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [Person]
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

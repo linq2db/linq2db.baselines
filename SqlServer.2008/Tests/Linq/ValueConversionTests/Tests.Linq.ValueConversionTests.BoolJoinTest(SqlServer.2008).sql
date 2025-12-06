@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @true_value VarChar -- AnsiString
 SET     @true_value = N'Y'
 

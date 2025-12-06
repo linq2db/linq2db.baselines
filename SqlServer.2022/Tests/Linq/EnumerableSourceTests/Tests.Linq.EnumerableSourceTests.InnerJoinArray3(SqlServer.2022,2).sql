@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +12,6 @@ FROM
 			(N'Janet'), (N'Doe'), (N'John'), (N'Doe')
 		) [n]([item]) ON [p].[LastName] = [n].[item]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

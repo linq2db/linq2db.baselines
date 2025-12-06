@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	pmp1.ChildID
@@ -14,7 +13,6 @@ FROM
 				pmp.ParentID
 		) pmp_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

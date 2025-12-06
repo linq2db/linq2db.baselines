@@ -22,10 +22,9 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([o].[IsDeleted] <> CAST(1 AS bit)
 ORDER BY [o].[OrderID], [t1].[OrderID], [t1].[ProductID], [t1].[ProductID0], [t1].[OrderID0], [t1].[ProductID1]
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[m_1].[ProductId],
@@ -55,7 +54,7 @@ FROM
 
 
 
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[m_1].[OrderID],
@@ -83,10 +82,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- SqlServer.2017 (asynchronously)
+-- SqlServer.2017
 
 SELECT
 	[e].[IsDeleted],

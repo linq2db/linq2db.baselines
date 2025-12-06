@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -30,7 +29,6 @@ FROM
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -39,7 +37,6 @@ SELECT
 FROM
 	SampleClass1 t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -71,7 +68,6 @@ FROM
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

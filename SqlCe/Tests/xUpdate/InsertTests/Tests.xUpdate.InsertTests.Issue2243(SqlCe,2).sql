@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	[test_insert_or_replace].[id] = @Id
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -37,7 +35,6 @@ VALUES
 	@CreatedBy
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -48,7 +45,6 @@ SELECT TOP (2)
 FROM
 	[test_insert_or_replace] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
@@ -65,7 +61,6 @@ SET
 WHERE
 	[test_insert_or_replace].[id] = @Id
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

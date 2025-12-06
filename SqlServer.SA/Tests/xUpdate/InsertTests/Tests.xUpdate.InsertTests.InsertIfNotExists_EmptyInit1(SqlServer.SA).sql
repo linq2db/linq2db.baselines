@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -18,7 +17,6 @@ WHEN NOT MATCHED THEN
 		N'test'
 	);
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 MERGE INTO [test_insert_or_replace] [t1]

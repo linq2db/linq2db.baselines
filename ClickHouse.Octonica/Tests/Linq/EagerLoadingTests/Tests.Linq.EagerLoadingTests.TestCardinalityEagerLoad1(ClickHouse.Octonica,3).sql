@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -15,7 +14,6 @@ FROM
 	) m_1
 		INNER JOIN EntityD d ON m_1.Id = d.FK
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

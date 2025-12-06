@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [count_1]
 FROM
 	[Child] [g_1]
 GROUP BY

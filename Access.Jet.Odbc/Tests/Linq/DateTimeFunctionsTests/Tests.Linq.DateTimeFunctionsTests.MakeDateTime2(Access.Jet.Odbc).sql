@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	CDate('2010-' + Format([t].[ID], String('0', 2)) + '-01 20:35:44')

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT /*+ NO_INMEMORY(p) NO_INMEMORY(c_1) */
 	p."ParentID",

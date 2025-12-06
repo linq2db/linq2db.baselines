@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "test_temp"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "test_temp"
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "test_temp"
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
@@ -59,12 +55,10 @@ WHERE
 ORDER BY
 	t3.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "test_temp"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "test_temp"
@@ -76,7 +70,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "test_temp"
@@ -88,7 +81,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1

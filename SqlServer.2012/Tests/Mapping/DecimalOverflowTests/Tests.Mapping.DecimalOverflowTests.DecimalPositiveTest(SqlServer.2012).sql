@@ -1,15 +1,12 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 CREATE TABLE [tempdb]..[#dtmp]
 (
 	[Value] Decimal(38, 37) NOT NULL
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#dtmp](Value)
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -17,7 +14,6 @@ SELECT
 FROM
 	[tempdb]..[#dtmp] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#dtmp]', N'U') IS NOT NULL)

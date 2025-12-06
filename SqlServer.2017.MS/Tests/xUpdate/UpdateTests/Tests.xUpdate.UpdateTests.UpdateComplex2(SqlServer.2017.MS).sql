@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 UPDATE
@@ -36,7 +34,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 5

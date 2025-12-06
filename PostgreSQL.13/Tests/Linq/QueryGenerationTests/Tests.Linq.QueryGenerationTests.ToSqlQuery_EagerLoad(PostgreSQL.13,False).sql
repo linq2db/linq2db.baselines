@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -11,8 +10,7 @@ FROM
 WHERE
 	p."ParentID" = :id
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 1
 DECLARE @p  -- Int32
@@ -40,7 +39,6 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 3
@@ -82,7 +80,6 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 4
@@ -124,7 +121,6 @@ WHERE
 			[p_2].[PersonID] = @paramCopy
 	))
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @paramCopy  -- Int32
 SET     @paramCopy = 1
@@ -166,7 +162,6 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 4
@@ -208,7 +203,6 @@ WHERE
 			[p_2].[PersonID] = @paramCopy
 	))
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 3

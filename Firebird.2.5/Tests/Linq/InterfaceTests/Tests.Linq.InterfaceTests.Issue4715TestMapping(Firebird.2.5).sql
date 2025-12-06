@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

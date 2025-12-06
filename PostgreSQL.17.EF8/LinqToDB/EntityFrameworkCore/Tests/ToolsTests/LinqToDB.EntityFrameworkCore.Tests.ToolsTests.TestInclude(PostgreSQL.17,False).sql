@@ -32,10 +32,9 @@ WHERE @__ef_filter__p_0 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")
 ORDER BY o."OrderID", t."EmployeeID", t1."EmployeeID", t1."TerritoryID", t1."TerritoryID0", t3."OrderID", t3."ProductID"
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."EmployeeId",
@@ -59,7 +58,7 @@ FROM
 
 
 
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."OrderId",
@@ -92,10 +91,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	e."IsDeleted",

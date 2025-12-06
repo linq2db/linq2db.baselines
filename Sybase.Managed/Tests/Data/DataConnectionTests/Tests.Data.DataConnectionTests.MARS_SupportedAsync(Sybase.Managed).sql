@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 SELECT
 	[t1].[FirstName],
@@ -18,8 +16,7 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -31,8 +28,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
 
@@ -44,8 +40,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 
@@ -57,8 +52,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 4
 

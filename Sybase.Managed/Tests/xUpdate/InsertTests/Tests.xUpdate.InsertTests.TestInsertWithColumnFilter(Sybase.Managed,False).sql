@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName UniVarChar(8) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -36,7 +34,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @newName UniVarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

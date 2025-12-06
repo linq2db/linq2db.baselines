@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[s].[Key1],
@@ -23,7 +22,6 @@ FROM
 				[FirstOptimizerData] [d]
 		) [d_1] ON [d_1].[DataKey11] = [s].[DataKey11] AND [d_1].[DataKey31] = [s].[DataKey31]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

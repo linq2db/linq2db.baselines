@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.Id1,
@@ -17,8 +16,7 @@ FROM
 	) m_2
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -32,8 +30,7 @@ FROM
 WHERE
 	m_1.Id1 >= 0 AND d.DetailId % 2 = 0
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id1,

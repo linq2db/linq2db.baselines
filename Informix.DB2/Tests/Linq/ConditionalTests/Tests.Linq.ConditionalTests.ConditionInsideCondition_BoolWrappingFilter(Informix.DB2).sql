@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	s.Value_1
@@ -26,9 +25,6 @@ FROM
 WHERE
 	s.Value_1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -44,9 +40,6 @@ FROM
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

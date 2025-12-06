@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5
 DECLARE @skip Integer -- Int32
@@ -13,7 +12,6 @@ FROM
 ORDER BY
 	"t1"."ChildID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 5

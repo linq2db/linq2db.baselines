@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p UniVarChar(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[t].[FirstName] = @p
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @p UniVarChar(6) -- String
 SET     @p = 'Tester'

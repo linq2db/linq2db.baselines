@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."Id",
@@ -17,9 +14,6 @@ FROM
 	) "m_1"
 		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d"."FK" OR "m_1"."Id" IS NULL AND "d"."FK" IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

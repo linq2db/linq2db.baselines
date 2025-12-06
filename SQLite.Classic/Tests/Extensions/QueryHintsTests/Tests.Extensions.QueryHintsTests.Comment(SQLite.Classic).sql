@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	[Parent] [p]
 ---
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(4) -- String
 SET     @FirstName = 'John'
@@ -28,12 +26,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -47,7 +43,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

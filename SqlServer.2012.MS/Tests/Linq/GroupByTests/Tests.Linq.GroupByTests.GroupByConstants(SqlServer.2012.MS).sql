@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[g_2].[ChildId],
@@ -17,7 +16,6 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

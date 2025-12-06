@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) = (`r`.`One` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) = (`r`.`Zero` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) = (`r`.`Null` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(`r`.`Zero` IS NULL) = (`r`.`Null` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	(`r`.`Zero` IS NULL) = (`r`.`Zero` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	(`r`.`Null` IS NULL) = (`r`.`Null` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) <> (`r`.`One` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) <> (`r`.`Zero` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	(`r`.`One` IS NULL) <> (`r`.`Null` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	(`r`.`Zero` IS NULL) <> (`r`.`Null` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	(`r`.`Zero` IS NULL) <> (`r`.`Zero` IS NULL)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[User] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @userId Int -- Int32
 SET     @userId = 5
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT TOP (1)

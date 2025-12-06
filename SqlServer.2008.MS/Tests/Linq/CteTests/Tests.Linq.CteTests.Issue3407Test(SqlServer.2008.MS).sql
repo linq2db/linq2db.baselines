@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	[r].[ID] = 2
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1] ([c1])

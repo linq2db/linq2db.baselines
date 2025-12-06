@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 WITH "cte" ("Id")
 AS
@@ -35,9 +32,6 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Item1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 WITH "cte" ("Id")

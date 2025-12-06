@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @int1  -- Int32
 SET     @int1 = 11
 DECLARE @int2  -- Int32
@@ -20,7 +19,6 @@ FROM
 WHERE
 	[t].[id] <> @someId AND [t].[id] = [UpdatedEntities].[id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

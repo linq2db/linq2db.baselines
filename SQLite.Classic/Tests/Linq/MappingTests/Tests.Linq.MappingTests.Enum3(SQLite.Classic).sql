@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

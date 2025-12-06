@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "TrimTestTable"
 (
@@ -15,7 +14,6 @@ RETURNING
 	"TrimTestTable".ID,
 	"TrimTestTable"."Data"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017 (asynchronously)
+﻿-- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value Int -- Int32

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT DISTINCT
 	`x`.`ParentID`,
@@ -10,8 +9,7 @@ FROM
 WHERE
 	`x`.`ChildID` > 30
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT DISTINCT
 	`x`.`ParentID`,

@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InsertIssueTest
 (
+	Pk,
 	ID,
 	intDataType
 )
 SELECT
+	t2.ID,
 	toInt16(123),
 	t2.ID
 FROM
@@ -20,15 +21,16 @@ FROM
 			1 = 0
 	) t2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InsertIssueTest
 (
+	Pk,
 	ID,
 	intDataType
 )
 SELECT
+	t2.ID,
 	toInt16(123),
 	t2.ID
 FROM
@@ -42,10 +44,10 @@ FROM
 			t1.ID = toInt16(1234)
 	) t2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.ID,
 	t1.intDataType
 FROM

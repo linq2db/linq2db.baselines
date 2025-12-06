@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
-	GROUP_CONCAT([t].[Value1], ' -> ')
+	GROUP_CONCAT([t1].[Value1], ' -> ')
 FROM
-	[SampleClass] [t]
+	[SampleClass] [t1]
 

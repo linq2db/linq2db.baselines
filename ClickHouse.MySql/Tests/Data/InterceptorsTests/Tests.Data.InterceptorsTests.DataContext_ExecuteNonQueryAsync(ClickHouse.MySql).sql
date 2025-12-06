@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE InterceptorsTestsTable
 (
@@ -7,8 +6,7 @@ CREATE TEMPORARY TABLE InterceptorsTestsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS InterceptorsTestsTable
 

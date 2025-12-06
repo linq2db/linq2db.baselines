@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."FirstName",
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n" ON "p"."LastName" = "n"."item"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

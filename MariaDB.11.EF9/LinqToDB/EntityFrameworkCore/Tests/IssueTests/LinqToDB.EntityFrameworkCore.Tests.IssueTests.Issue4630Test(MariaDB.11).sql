@@ -1,4 +1,4 @@
-﻿-- MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 2
 

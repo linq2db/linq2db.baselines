@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 3
 DECLARE @skip Int -- Int32
@@ -11,7 +10,6 @@ FROM
 	"OrderByDistinctData" "x"
 LIMIT ? OFFSET ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 3

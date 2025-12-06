@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	CASE
@@ -15,9 +14,9 @@ SELECT
 			SELECT
 				COUNT(*)
 			FROM
-				"Child" c_1
+				"Child" "a_Children_1"
 			WHERE
-				p."ParentID" = c_1."ParentID"
+				p."ParentID" = "a_Children_1"."ParentID"
 		)
 	END
 FROM

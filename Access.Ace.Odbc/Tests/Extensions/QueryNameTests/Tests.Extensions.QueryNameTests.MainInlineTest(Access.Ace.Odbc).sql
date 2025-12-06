@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[t1].[COUNT_1]
+	[t1].[Count_1]
 FROM
 	(
 		SELECT
 			[c_1].[ParentID],
-			COUNT(*) as [COUNT_1]
+			COUNT(*) as [Count_1]
 		FROM
 			[Child] [c_1]
 		GROUP BY

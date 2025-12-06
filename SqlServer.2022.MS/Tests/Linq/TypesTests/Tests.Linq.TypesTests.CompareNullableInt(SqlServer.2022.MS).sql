@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t].[ParentID],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Parent] [t]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @param Int -- Int32
 SET     @param = 1

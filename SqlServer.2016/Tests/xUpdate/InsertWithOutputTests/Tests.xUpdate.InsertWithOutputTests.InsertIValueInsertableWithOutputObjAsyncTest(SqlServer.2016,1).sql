@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 DECLARE @Value Int -- Int32
 SET     @Value = 100
 DECLARE @Id Int -- Int32

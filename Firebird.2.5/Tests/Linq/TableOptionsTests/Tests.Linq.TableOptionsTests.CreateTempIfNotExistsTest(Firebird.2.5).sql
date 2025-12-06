@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateIfNotExistsTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "CreateIfNotExistsTable"';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
@@ -21,7 +19,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -30,7 +27,6 @@ SELECT
 FROM
 	"CreateIfNotExistsTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
@@ -44,7 +40,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
@@ -52,7 +47,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "CreateIfNotExistsTable"';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

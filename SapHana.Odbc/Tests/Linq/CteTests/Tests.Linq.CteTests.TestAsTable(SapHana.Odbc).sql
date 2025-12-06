@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 WITH "CTE1_" ("ParentID", "ChildID")
 AS
@@ -16,7 +15,6 @@ SELECT
 FROM
 	"CTE1_" "t2"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

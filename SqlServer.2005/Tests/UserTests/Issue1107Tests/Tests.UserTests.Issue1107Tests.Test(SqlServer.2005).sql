@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK [Issue1107TB](Id, TestDate)
+﻿INSERT BULK [Issue1107TB](Id, TestDate)
 

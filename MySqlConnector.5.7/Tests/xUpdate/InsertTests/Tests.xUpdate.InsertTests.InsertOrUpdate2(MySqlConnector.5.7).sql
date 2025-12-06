@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 5
@@ -45,7 +42,6 @@ VALUES
 	'negative'
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 5
@@ -58,7 +54,6 @@ FROM
 WHERE
 	`p`.`PersonID` = @id
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 5
@@ -74,7 +69,6 @@ VALUES
 	'positive'
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 5

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 102
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -20,7 +18,6 @@ VALUES
 	toInt64(12)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -28,7 +25,6 @@ ALTER TABLE
 DELETE WHERE
 	ID = 101 AND BigIntValue = toInt64(12)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -23,7 +22,6 @@ ON DUPLICATE KEY UPDATE
 	`FirstName` = @FirstName,
 	`LastName` = @LastName
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -39,7 +37,6 @@ WHERE
 	`x`.`FirstName` = @FirstName
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @ID Int32
 SET     @ID = 0
@@ -69,7 +66,6 @@ ON DUPLICATE KEY UPDATE
 	`LastName` = @LastName,
 	`MiddleName` = @MiddleName
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

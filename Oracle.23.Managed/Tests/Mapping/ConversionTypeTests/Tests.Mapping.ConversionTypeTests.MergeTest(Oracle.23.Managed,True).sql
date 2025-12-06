@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TrimTestTable" Target
 USING (
@@ -25,7 +24,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 MERGE INTO "TrimTestTable" Target
@@ -50,7 +48,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -61,7 +58,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

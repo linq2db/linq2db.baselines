@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [DateOnlyTable]
 (
@@ -8,10 +7,10 @@ INSERT INTO [DateOnlyTable]
 VALUES
 (DATEFROMPARTS(2021, 1, 1))
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)
+	[t1].[Id],
 	[t1].[Date]
 FROM
 	[DateOnlyTable] [t1]

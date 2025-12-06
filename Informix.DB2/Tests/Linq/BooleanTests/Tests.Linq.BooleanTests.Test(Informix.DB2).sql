@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @True Char(1) -- StringFixedLength
 SET     @True = 't'
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	r."Boolean" = @True
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @False Char(1) -- StringFixedLength
 SET     @False = 'f'
@@ -54,7 +51,6 @@ FROM
 WHERE
 	r."Boolean" = @False
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @TrueN Char(1) -- StringFixedLength
 SET     @TrueN = 't'
@@ -90,7 +85,6 @@ FROM
 WHERE
 	r."Boolean" = @TrueN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FalseN Char(1) -- StringFixedLength
 SET     @FalseN = 'f'
@@ -126,7 +119,6 @@ FROM
 WHERE
 	r."Boolean" = @FalseN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @True Char(1) -- StringFixedLength
 SET     @True = 't'
@@ -196,7 +185,6 @@ FROM
 WHERE
 	r.BooleanN = @True
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @False Char(1) -- StringFixedLength
 SET     @False = 'f'
@@ -232,7 +219,6 @@ FROM
 WHERE
 	r.BooleanN = @False
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @TrueN Char(1) -- StringFixedLength
 SET     @TrueN = 't'
@@ -268,7 +253,6 @@ FROM
 WHERE
 	r.BooleanN = @TrueN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FalseN Char(1) -- StringFixedLength
 SET     @FalseN = 'f'
@@ -304,7 +287,6 @@ FROM
 WHERE
 	r.BooleanN = @FalseN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @True Char(1) -- StringFixedLength
 SET     @True = 't'
@@ -374,7 +353,6 @@ FROM
 WHERE
 	r."Boolean" <> @True
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @False Char(1) -- StringFixedLength
 SET     @False = 'f'
@@ -410,7 +387,6 @@ FROM
 WHERE
 	r."Boolean" <> @False
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @TrueN Char(1) -- StringFixedLength
 SET     @TrueN = 't'
@@ -446,7 +421,6 @@ FROM
 WHERE
 	r."Boolean" <> @TrueN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FalseN Char(1) -- StringFixedLength
 SET     @FalseN = 'f'
@@ -482,7 +455,6 @@ FROM
 WHERE
 	r."Boolean" <> @FalseN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @True Char(1) -- StringFixedLength
 SET     @True = 't'
@@ -550,7 +519,6 @@ FROM
 WHERE
 	r.BooleanN <> @True OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @False Char(1) -- StringFixedLength
 SET     @False = 'f'
@@ -586,7 +553,6 @@ FROM
 WHERE
 	r.BooleanN <> @False OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @TrueN Char(1) -- StringFixedLength
 SET     @TrueN = 't'
@@ -622,7 +587,6 @@ FROM
 WHERE
 	r.BooleanN <> @TrueN OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FalseN Char(1) -- StringFixedLength
 SET     @FalseN = 'f'
@@ -658,7 +621,6 @@ FROM
 WHERE
 	r.BooleanN <> @FalseN OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	r.BooleanN IS NOT NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -900,7 +859,6 @@ FROM
 GROUP BY
 	g_1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -916,7 +874,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1589,7 +1546,6 @@ SELECT
 FROM
 	BooleanTable r_1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1607,7 +1563,6 @@ FROM
 WHERE
 	r."Boolean" = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1623,7 +1578,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1641,7 +1595,6 @@ FROM
 WHERE
 	r."Boolean" = 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1657,7 +1610,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1675,7 +1627,6 @@ FROM
 WHERE
 	r."Boolean" = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1691,7 +1642,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1709,7 +1659,6 @@ FROM
 WHERE
 	r."Boolean" = 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1725,7 +1674,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1743,7 +1691,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1759,7 +1706,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1777,7 +1723,6 @@ FROM
 WHERE
 	r.BooleanN = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1793,7 +1738,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1811,7 +1755,6 @@ FROM
 WHERE
 	r.BooleanN = 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1827,7 +1770,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1845,7 +1787,6 @@ FROM
 WHERE
 	r.BooleanN = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1861,7 +1802,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1879,7 +1819,6 @@ FROM
 WHERE
 	r.BooleanN = 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1895,7 +1834,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1913,7 +1851,6 @@ FROM
 WHERE
 	r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1929,7 +1866,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1947,7 +1883,6 @@ FROM
 WHERE
 	r."Boolean" <> 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1963,7 +1898,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1981,7 +1915,6 @@ FROM
 WHERE
 	r."Boolean" <> 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -1997,7 +1930,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2015,7 +1947,6 @@ FROM
 WHERE
 	r."Boolean" <> 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2031,7 +1962,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2049,7 +1979,6 @@ FROM
 WHERE
 	r."Boolean" <> 'f'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2065,7 +1994,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2081,7 +2009,6 @@ SELECT
 FROM
 	BooleanTable r
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2097,75 +2024,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	r.Id,
-	r."Boolean",
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r."Decimal",
-	r.DecimalN,
-	r."Double",
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.Id,
-	t1."Boolean",
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1."Decimal",
-	t1.DecimalN,
-	t1."Double",
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	r.Id,
-	r."Boolean",
-	r.BooleanN,
-	r.Int32,
-	r.Int32N,
-	r."Decimal",
-	r.DecimalN,
-	r."Double",
-	r.DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
-
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT
-	t1.Id,
-	t1."Boolean",
-	t1.BooleanN,
-	t1.Int32,
-	t1.Int32N,
-	t1."Decimal",
-	t1.DecimalN,
-	t1."Double",
-	t1.DoubleN
-FROM
-	BooleanTable t1
-
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2183,7 +2041,6 @@ FROM
 WHERE
 	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2199,7 +2056,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2217,7 +2073,6 @@ FROM
 WHERE
 	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2233,7 +2088,70 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r."Boolean",
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r."Decimal",
+	r.DecimalN,
+	r."Double",
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> 't'::BOOLEAN OR r.BooleanN IS NULL
+
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1."Boolean",
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1."Decimal",
+	t1.DecimalN,
+	t1."Double",
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r."Boolean",
+	r.BooleanN,
+	r.Int32,
+	r.Int32N,
+	r."Decimal",
+	r.DecimalN,
+	r."Double",
+	r.DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> 'f'::BOOLEAN OR r.BooleanN IS NULL
+
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1."Boolean",
+	t1.BooleanN,
+	t1.Int32,
+	t1.Int32N,
+	t1."Decimal",
+	t1.DecimalN,
+	t1."Double",
+	t1.DoubleN
+FROM
+	BooleanTable t1
+
 -- Informix.DB2 Informix
 
 SELECT
@@ -2251,7 +2169,6 @@ FROM
 WHERE
 	r.BooleanN IS NOT NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2267,7 +2184,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2459,7 +2375,6 @@ FROM
 GROUP BY
 	g_1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -2475,7 +2390,6 @@ SELECT
 FROM
 	BooleanTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

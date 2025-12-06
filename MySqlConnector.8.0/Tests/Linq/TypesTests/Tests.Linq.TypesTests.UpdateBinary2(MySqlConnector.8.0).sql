@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @p Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	`t`.`ID` = @p
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0504030201
@@ -26,7 +24,6 @@ SET
 WHERE
 	`t`.`ID` = @p
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

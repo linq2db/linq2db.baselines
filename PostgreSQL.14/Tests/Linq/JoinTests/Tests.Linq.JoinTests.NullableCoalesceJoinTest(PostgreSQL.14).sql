@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl1
 (
 	"ID"    Int  NOT NULL,
-	"Value" text     NULL
+	"Value" text     NULL,
+
+	CONSTRAINT "PK_tmptbl1" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl1
 (
@@ -20,18 +20,18 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl2
 (
 	"ID"    Int  NOT NULL,
-	"Value" text NOT NULL
+	"Value" text NOT NULL,
+
+	CONSTRAINT "PK_tmptbl2" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl2
 (
@@ -42,18 +42,18 @@ VALUES
 (1,'Value1'),
 (3,'Value2')
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl3
 (
 	"ID"    Int  NOT NULL,
-	"Value" text     NULL
+	"Value" text     NULL,
+
+	CONSTRAINT "PK_tmptbl3" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl3
 (
@@ -64,8 +64,7 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t4."ID",
@@ -75,8 +74,7 @@ FROM
 		LEFT JOIN tmptbl2 t3 ON t2."ID" = t3."ID"
 		LEFT JOIN tmptbl3 t4 ON Coalesce(t3."Value", t2."Value") = t4."Value" OR t3."Value" IS NULL AND t2."Value" IS NULL AND t4."Value" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -84,8 +82,7 @@ SELECT
 FROM
 	tmptbl1 t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -93,8 +90,7 @@ SELECT
 FROM
 	tmptbl2 t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -102,18 +98,15 @@ SELECT
 FROM
 	tmptbl3 t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl3
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl1
 

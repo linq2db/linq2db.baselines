@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	"Parent" "p"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -22,12 +19,13 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
 		(
-			ID Int NOT NULL
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
 		)
 	';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TempTable"
@@ -43,7 +41,6 @@ VALUES
 (6),
 (7)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -52,7 +49,6 @@ FROM
 	"Parent" "p"
 		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Car" x
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -47,7 +42,6 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -56,7 +50,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -65,7 +58,6 @@ SELECT
 FROM
 	"Car" x
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -74,7 +66,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -85,7 +76,6 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -94,7 +84,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -105,7 +94,6 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

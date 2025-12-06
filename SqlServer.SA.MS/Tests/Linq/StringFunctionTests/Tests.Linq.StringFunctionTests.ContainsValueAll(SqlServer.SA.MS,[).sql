@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND N'123[456' LIKE N'%~[%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

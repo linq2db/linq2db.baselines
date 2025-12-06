@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp DateTime2

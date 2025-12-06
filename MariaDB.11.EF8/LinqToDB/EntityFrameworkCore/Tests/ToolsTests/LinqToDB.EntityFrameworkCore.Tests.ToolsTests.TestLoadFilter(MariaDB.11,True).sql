@@ -32,10 +32,9 @@ WHERE (@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)
 ORDER BY `p`.`ProductID`, `t3`.`OrderID0`, `t3`.`ProductID`, `t3`.`OrderID`, `t3`.`ProductID0`, `t3`.`SupplierID`
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`SupplierId`,
@@ -79,7 +78,7 @@ WHERE
 
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`ProductID`,
@@ -110,10 +109,9 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`p`.`ProductName`,

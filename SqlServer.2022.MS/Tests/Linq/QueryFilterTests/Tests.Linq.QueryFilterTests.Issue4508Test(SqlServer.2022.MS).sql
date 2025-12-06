@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
@@ -30,7 +28,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
@@ -62,7 +58,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
@@ -78,7 +73,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
@@ -94,7 +88,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
@@ -110,7 +103,6 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1

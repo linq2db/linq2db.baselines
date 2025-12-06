@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE CreateIfNotExistsTable
@@ -13,7 +11,6 @@ CREATE TEMPORARY TABLE CreateIfNotExistsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	CreateIfNotExistsTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
@@ -32,12 +28,10 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable

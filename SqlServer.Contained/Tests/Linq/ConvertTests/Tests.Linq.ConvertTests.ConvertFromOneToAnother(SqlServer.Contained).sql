@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -8,7 +7,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
@@ -18,7 +16,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
@@ -28,7 +25,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
@@ -38,7 +34,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
@@ -48,7 +43,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 
 DROP TABLE IF EXISTS schedule;
 DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
@@ -28,7 +26,6 @@ VALUES
 	:Amount
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
@@ -50,7 +47,6 @@ VALUES
 	:Amount
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'day'
@@ -72,7 +68,6 @@ VALUES
 	:Amount
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'hour'
@@ -94,7 +89,6 @@ VALUES
 	:Amount
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -105,7 +99,6 @@ SELECT
 FROM
 	public.schedule t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
@@ -120,7 +113,6 @@ FROM
 WHERE
 	x.unit = :unit
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
@@ -135,7 +127,6 @@ FROM
 WHERE
 	x.unit_nullable = :unit
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
@@ -150,7 +141,6 @@ FROM
 WHERE
 	x.unit_nullable = :unitNullable
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -163,7 +153,6 @@ FROM
 WHERE
 	x.unit_nullable = 'day'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -176,7 +165,6 @@ FROM
 WHERE
 	x.unit_nullable IS NULL
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

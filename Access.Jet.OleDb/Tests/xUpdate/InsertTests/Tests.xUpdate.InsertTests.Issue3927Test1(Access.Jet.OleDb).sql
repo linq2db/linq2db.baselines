@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @PageNumber Integer -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength

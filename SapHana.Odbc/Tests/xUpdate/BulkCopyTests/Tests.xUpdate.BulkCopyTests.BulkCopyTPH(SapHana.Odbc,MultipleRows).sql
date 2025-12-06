@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -83,7 +79,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -99,7 +94,6 @@ WHERE
 	"x"."Discriminator" = 1
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -115,7 +109,6 @@ WHERE
 	"x"."Discriminator" = 2
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -131,7 +124,6 @@ WHERE
 	"x"."Discriminator" = 3
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -147,7 +139,6 @@ WHERE
 	"x"."Value1" = 'Str1'
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -163,7 +154,6 @@ WHERE
 	"x"."Value2" = 'Str2'
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

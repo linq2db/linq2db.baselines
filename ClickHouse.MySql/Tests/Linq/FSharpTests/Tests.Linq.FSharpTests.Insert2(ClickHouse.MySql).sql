@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
@@ -26,7 +24,6 @@ VALUES
 	'ln'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -41,7 +38,6 @@ WHERE
 	p.PersonID > 4
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

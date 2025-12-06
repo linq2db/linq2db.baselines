@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	CASE
@@ -20,7 +19,6 @@ SELECT
 FROM
 	"Item" t
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"Item" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -77,7 +74,6 @@ FROM
 WHERE
 	NOT (x_1."cond" = 1 AND (x_1."cond_1" = 1 AND x_1."cond_2" = 1 OR x_1."cond_1" = 0) OR x_1."cond" = 0 AND x_1."cond_3" = 0)
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -89,7 +85,6 @@ SELECT
 FROM
 	"Item" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -135,7 +130,6 @@ WHERE
 	x_1."cond" = 1 AND (x_1."cond_1" = 1 AND x_1."cond_2" = 1 OR x_1."cond_1" = 0) OR
 	x_1."cond" = 0 AND x_1."cond_3" = 0
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -147,7 +141,6 @@ SELECT
 FROM
 	"Item" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -192,7 +185,6 @@ FROM
 WHERE
 	NOT (x_1."cond" = 1 AND x_1."cond_1" = 0 OR x_1."cond" = 0 AND (x_1."cond_2" = 1 AND x_1."cond_3" = 1 OR x_1."cond_2" = 0))
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -204,7 +196,6 @@ SELECT
 FROM
 	"Item" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -249,7 +240,6 @@ FROM
 WHERE
 	x_1."cond" = 1 AND x_1."cond_1" = 0 OR x_1."cond" = 0 AND (x_1."cond_2" = 1 AND x_1."cond_3" = 1 OR x_1."cond_2" = 0)
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

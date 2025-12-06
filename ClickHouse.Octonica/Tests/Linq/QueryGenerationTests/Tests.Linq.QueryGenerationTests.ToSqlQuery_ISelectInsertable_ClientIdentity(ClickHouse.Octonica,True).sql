@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TableWithIdentitySrc
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TableWithIdentity
@@ -24,7 +22,6 @@ SELECT
 FROM
 	TableWithIdentitySrc t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

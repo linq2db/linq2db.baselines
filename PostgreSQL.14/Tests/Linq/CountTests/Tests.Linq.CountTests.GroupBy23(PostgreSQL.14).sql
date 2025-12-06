@@ -1,11 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	COUNT(CASE
-		WHEN g_1."ParentID" < 2 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."ParentID" < 2)
 FROM
 	"Parent" g_1
 WHERE

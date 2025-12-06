@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @ncCodeBo NVarChar(4000) -- String
 SET     @ncCodeBo = N'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

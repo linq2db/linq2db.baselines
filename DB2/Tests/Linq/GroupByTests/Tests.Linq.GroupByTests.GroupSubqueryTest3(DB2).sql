@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"pmp"."ParentID"
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	"pmp"."ParentID"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

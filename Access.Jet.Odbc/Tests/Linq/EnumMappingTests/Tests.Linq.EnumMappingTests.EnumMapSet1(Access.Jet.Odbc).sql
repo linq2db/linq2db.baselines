@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [LinqDataTypes]
@@ -22,7 +20,6 @@ VALUES
 	11
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @TestField Int -- Int32
 SET     @TestField = 12
@@ -34,7 +31,6 @@ SET
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -44,7 +40,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 102

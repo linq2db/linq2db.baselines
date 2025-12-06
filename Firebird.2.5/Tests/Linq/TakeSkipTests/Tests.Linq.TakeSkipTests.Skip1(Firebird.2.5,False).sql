@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT SKIP 3
 	"t1"."ParentID",
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	"t1"."ChildID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT SKIP 4

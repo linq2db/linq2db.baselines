@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [TestTable]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [TestTable]
@@ -16,7 +14,6 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [TestTable]

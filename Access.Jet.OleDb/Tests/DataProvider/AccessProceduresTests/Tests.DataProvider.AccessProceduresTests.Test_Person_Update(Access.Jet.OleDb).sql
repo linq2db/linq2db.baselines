@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [Person]
 (
@@ -18,7 +15,6 @@ VALUES
 	'F'
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1
@@ -30,7 +26,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1
@@ -45,7 +40,6 @@ SET     @gender = 'U'
 
 Person_Update
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1
@@ -61,5 +55,3 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
-DisposeTransaction

@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK Issue4460Table
+﻿INSERT BULK Issue4460Table
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

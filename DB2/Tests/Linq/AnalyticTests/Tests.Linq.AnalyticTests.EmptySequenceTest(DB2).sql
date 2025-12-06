@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
 	"d_1"."Key_1",
-	"d_1"."ToValue"
+	"d_1"."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,16 +14,13 @@ FROM
 		INNER JOIN (
 			SELECT
 				"d"."ParentID" as "Key_1",
-				LISTAGG(RTrim(Char("d"."ChildID")), ', ') as "ToValue"
+				LISTAGG(RTrim(Char("d"."ChildID")), ', ') as "Children"
 			FROM
 				"Child" "d"
 			GROUP BY
 				"d"."ParentID"
 		) "d_1" ON "m_1"."ParentID" = "d_1"."Key_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

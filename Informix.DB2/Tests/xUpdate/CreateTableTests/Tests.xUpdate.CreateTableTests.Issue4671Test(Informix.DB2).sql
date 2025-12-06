@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 CREATE TEMP TABLE Issue4671EntityTMP
 (
@@ -9,7 +8,6 @@ CREATE TEMP TABLE Issue4671EntityTMP
 	PRIMARY KEY (Id)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Issue4671Entity
@@ -21,7 +19,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO Issue4671EntityTMP
@@ -33,7 +30,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -42,7 +38,6 @@ SELECT FIRST 2
 FROM
 	Issue4671Entity t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -51,7 +46,6 @@ SELECT FIRST 2
 FROM
 	Issue4671EntityTMP t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue4671EntityTMP

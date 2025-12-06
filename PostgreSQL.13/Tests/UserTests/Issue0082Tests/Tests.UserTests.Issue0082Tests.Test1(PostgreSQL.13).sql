@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -22,21 +21,19 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
 FROM
 	"Parent" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x_1."ParentID",
 	x_1."CountResult",
-	x_1."SUM_1"
+	x_1."SumResult"
 FROM
 	(
 		SELECT
@@ -56,7 +53,7 @@ FROM
 					"Child" od_1
 				WHERE
 					x."ParentID" = od_1."ParentID"
-			) as "SUM_1"
+			) as "SumResult"
 		FROM
 			"Parent" x
 	) x_1

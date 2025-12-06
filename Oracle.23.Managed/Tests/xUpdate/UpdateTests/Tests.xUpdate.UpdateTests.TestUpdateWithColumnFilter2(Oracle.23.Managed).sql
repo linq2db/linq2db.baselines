@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName Varchar2(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	x."FirstName" = :FirstName
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -55,7 +52,6 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5
@@ -72,7 +68,6 @@ WHERE
 	x."PersonID" = :ID
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -95,7 +90,6 @@ SET
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Issue4671Entity]
@@ -21,7 +19,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [tempdb]..[#Issue4671EntityTMP]
@@ -33,7 +30,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
@@ -42,7 +38,6 @@ SELECT TOP (2)
 FROM
 	[Issue4671Entity] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
@@ -51,7 +46,6 @@ SELECT TOP (2)
 FROM
 	[tempdb]..[#Issue4671EntityTMP] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671EntityTMP]

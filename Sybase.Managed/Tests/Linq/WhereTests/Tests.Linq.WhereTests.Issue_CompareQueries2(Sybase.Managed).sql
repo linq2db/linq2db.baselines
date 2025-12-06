@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 2
 	COUNT([p].[PersonID])
@@ -15,7 +14,6 @@ WHERE
 			[p_1].[PersonID] IN (3)
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

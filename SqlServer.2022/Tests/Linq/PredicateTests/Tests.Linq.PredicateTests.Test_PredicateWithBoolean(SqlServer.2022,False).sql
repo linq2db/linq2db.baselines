@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[r].[Id],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[r].[Value1] = [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -40,7 +37,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -52,7 +48,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -66,7 +61,6 @@ FROM
 WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -78,7 +72,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -94,7 +87,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -106,7 +98,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -120,7 +111,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -132,7 +122,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -146,7 +135,6 @@ FROM
 WHERE
 	[r].[Value1] = [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -158,7 +146,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -174,7 +161,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -186,7 +172,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -200,7 +185,6 @@ FROM
 WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -212,7 +196,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -228,7 +211,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -240,7 +222,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -254,7 +235,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -266,7 +246,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -280,7 +259,6 @@ FROM
 WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -292,7 +270,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -308,7 +285,6 @@ FROM
 WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -320,7 +296,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -335,7 +310,6 @@ WHERE
 	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -347,7 +321,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -363,7 +336,6 @@ FROM
 WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -375,7 +347,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -389,7 +360,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -401,7 +371,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -415,7 +384,6 @@ FROM
 WHERE
 	[r].[Value1] <> [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -427,7 +395,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -443,7 +410,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -455,7 +421,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -469,7 +434,6 @@ FROM
 WHERE
 	[r].[Value1] = [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -481,7 +445,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -497,7 +460,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -509,7 +471,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -521,7 +482,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -533,7 +493,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -547,7 +506,6 @@ FROM
 WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -559,7 +517,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -575,7 +532,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -587,7 +543,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -601,7 +556,6 @@ FROM
 WHERE
 	[r].[Value1] = [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -613,7 +567,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -629,7 +582,6 @@ FROM
 WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -641,7 +593,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -653,7 +604,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -665,7 +615,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -680,7 +629,6 @@ WHERE
 	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -692,7 +640,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -708,7 +655,6 @@ FROM
 WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -720,7 +666,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -734,7 +679,6 @@ FROM
 WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -746,7 +690,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -762,7 +705,6 @@ FROM
 WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -774,7 +716,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -786,7 +727,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -798,7 +738,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -812,7 +751,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -824,7 +762,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -840,7 +777,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -852,7 +788,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -866,7 +801,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -878,7 +812,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -894,7 +827,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -906,7 +838,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -920,7 +851,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -932,7 +862,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -946,7 +875,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -958,7 +886,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -974,7 +901,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -986,7 +912,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1000,7 +925,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1012,7 +936,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1028,7 +951,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1040,7 +962,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1054,7 +975,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1066,7 +986,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1080,7 +999,6 @@ FROM
 WHERE
 	[r].[Value5] > [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1092,7 +1010,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1108,7 +1025,6 @@ FROM
 WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1120,7 +1036,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1135,7 +1050,6 @@ WHERE
 	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1147,7 +1061,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1163,7 +1076,6 @@ FROM
 WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1175,7 +1087,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1189,7 +1100,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1201,7 +1111,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1215,7 +1124,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1227,7 +1135,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1243,7 +1150,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1255,7 +1161,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1269,7 +1174,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1281,7 +1185,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1297,7 +1200,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1309,7 +1211,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1321,7 +1222,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1333,7 +1233,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1347,7 +1246,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1359,7 +1257,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1375,7 +1272,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1387,7 +1283,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1401,7 +1296,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1413,7 +1307,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1429,7 +1322,6 @@ FROM
 WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1441,7 +1333,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1453,7 +1344,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1465,7 +1355,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1480,7 +1369,6 @@ WHERE
 	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1492,7 +1380,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1508,7 +1395,6 @@ FROM
 WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1520,7 +1406,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1534,7 +1419,6 @@ FROM
 WHERE
 	[r].[Value5] > [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1546,7 +1430,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1562,7 +1445,6 @@ FROM
 WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1574,7 +1456,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1586,7 +1467,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1598,7 +1478,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1612,7 +1491,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1624,7 +1502,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1640,7 +1517,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1652,7 +1528,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1666,7 +1541,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1678,7 +1552,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1694,7 +1567,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1706,7 +1578,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1720,7 +1591,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1732,7 +1602,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1746,7 +1615,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1758,7 +1626,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1774,7 +1641,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1786,7 +1652,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1800,7 +1665,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1812,7 +1676,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1828,7 +1691,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1840,7 +1702,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1854,7 +1715,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1866,7 +1726,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1880,7 +1739,6 @@ FROM
 WHERE
 	[r].[Value5] >= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1892,7 +1750,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -1908,7 +1765,6 @@ FROM
 WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1920,7 +1776,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1935,7 +1790,6 @@ WHERE
 	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1947,7 +1801,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -1963,7 +1816,6 @@ FROM
 WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1975,7 +1827,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -1989,7 +1840,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2001,7 +1851,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2015,7 +1864,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2027,7 +1875,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2043,7 +1890,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2055,7 +1901,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2069,7 +1914,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2081,7 +1925,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2097,7 +1940,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2109,7 +1951,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2121,7 +1962,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2133,7 +1973,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2147,7 +1986,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2159,7 +1997,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2175,7 +2012,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2187,7 +2023,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2201,7 +2036,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2213,7 +2047,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2229,7 +2062,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2241,7 +2073,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2253,7 +2084,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2265,7 +2095,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2280,7 +2109,6 @@ WHERE
 	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2292,7 +2120,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2308,7 +2135,6 @@ FROM
 WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2320,7 +2146,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2334,7 +2159,6 @@ FROM
 WHERE
 	[r].[Value5] >= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2346,7 +2170,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2362,7 +2185,6 @@ FROM
 WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2374,7 +2196,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2386,7 +2207,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2398,7 +2218,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2412,7 +2231,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2424,7 +2242,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2440,7 +2257,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2452,7 +2268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2466,7 +2281,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2478,7 +2292,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2494,7 +2307,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2506,7 +2318,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2520,7 +2331,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2532,7 +2342,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2546,7 +2355,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2558,7 +2366,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2574,7 +2381,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2586,7 +2392,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2600,7 +2405,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2612,7 +2416,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2628,7 +2431,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2640,7 +2442,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2654,7 +2455,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2666,7 +2466,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2680,7 +2479,6 @@ FROM
 WHERE
 	[r].[Value5] < [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2692,7 +2490,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2708,7 +2505,6 @@ FROM
 WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2720,7 +2516,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2735,7 +2530,6 @@ WHERE
 	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2747,7 +2541,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2763,7 +2556,6 @@ FROM
 WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2775,7 +2567,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2789,7 +2580,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2801,7 +2591,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2815,7 +2604,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2827,7 +2615,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2843,7 +2630,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2855,7 +2641,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2869,7 +2654,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2881,7 +2665,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -2897,7 +2680,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2909,7 +2691,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2921,7 +2702,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2933,7 +2713,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2947,7 +2726,6 @@ FROM
 WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2959,7 +2737,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -2975,7 +2752,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -2987,7 +2763,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3001,7 +2776,6 @@ FROM
 WHERE
 	[r].[Value1] < [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3013,7 +2787,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3029,7 +2802,6 @@ FROM
 WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3041,7 +2813,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3053,7 +2824,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3065,7 +2835,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3080,7 +2849,6 @@ WHERE
 	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3092,7 +2860,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3108,7 +2875,6 @@ FROM
 WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3120,7 +2886,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3134,7 +2899,6 @@ FROM
 WHERE
 	[r].[Value5] < [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3146,7 +2910,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3162,7 +2925,6 @@ FROM
 WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3174,7 +2936,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3186,7 +2947,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3198,7 +2958,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3212,7 +2971,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3224,7 +2982,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3240,7 +2997,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3252,7 +3008,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3266,7 +3021,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3278,7 +3032,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3294,7 +3047,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3306,7 +3058,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3320,7 +3071,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3332,7 +3082,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3346,7 +3095,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3358,7 +3106,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3374,7 +3121,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3386,7 +3132,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3400,7 +3145,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3412,7 +3156,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3428,7 +3171,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3440,7 +3182,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3454,7 +3195,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3466,7 +3206,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3480,7 +3219,6 @@ FROM
 WHERE
 	[r].[Value5] <= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3492,7 +3230,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3508,7 +3245,6 @@ FROM
 WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3520,7 +3256,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3535,7 +3270,6 @@ WHERE
 	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3547,7 +3281,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3563,7 +3296,6 @@ FROM
 WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3575,7 +3307,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3589,7 +3320,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3601,7 +3331,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3615,7 +3344,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3627,7 +3355,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3643,7 +3370,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3655,7 +3381,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3669,7 +3394,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value2]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3681,7 +3405,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3697,7 +3420,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3709,7 +3431,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3721,7 +3442,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3733,7 +3453,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3747,7 +3466,6 @@ FROM
 WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3759,7 +3477,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3775,7 +3492,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3787,7 +3503,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3801,7 +3516,6 @@ FROM
 WHERE
 	[r].[Value1] <= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3813,7 +3527,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3829,7 +3542,6 @@ FROM
 WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3841,7 +3553,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3853,7 +3564,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3865,7 +3575,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3880,7 +3589,6 @@ WHERE
 	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
 	[r].[Value4] IS NULL
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3892,7 +3600,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -3908,7 +3615,6 @@ FROM
 WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @TrueN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3920,7 +3626,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3934,7 +3639,6 @@ FROM
 WHERE
 	[r].[Value5] <= [r].[Value4]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3946,7 +3650,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -3962,7 +3665,6 @@ FROM
 WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @FalseN
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3974,7 +3676,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -3986,7 +3687,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
 	[p].[FirstName]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @filter NVarChar(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 NVarChar(8) -- String
@@ -46,7 +45,6 @@ WHERE
 ORDER BY
 	[patient_1].[PersonID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -55,7 +53,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

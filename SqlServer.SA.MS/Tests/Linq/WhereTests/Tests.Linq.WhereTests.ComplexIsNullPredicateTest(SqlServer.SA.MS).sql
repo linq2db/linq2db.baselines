@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

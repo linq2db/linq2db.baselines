@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	UpdateSetTest
@@ -8,7 +7,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -19,7 +17,6 @@ WHERE
 	t1.Id = 1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -29,7 +26,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

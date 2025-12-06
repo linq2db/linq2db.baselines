@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."ParentID",
 	d_1."Key_1",
-	d_1."ToValue"
+	d_1."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,16 +14,13 @@ FROM
 		INNER JOIN (
 			SELECT
 				d."ParentID" as "Key_1",
-				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY ROWNUM) as "ToValue"
+				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(d."ChildID" AS VarChar(255))) as "Children"
 			FROM
 				"Child" d
 			GROUP BY
 				d."ParentID"
 		) d_1 ON m_1."ParentID" = d_1."Key_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

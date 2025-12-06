@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p1 VarWChar(1) -- String
 SET     @p1 = 'A'
 DECLARE @p2 Integer -- Int32

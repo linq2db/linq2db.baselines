@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`s`.`Id`
@@ -9,7 +8,6 @@ WHERE
 	`s`.`Int` IN (-1, -2)
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	`s`.`Int` IN (-1, NULL)
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	`s`.`Int` IN (-1, 2)
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	`s`.`Int` NOT IN (NULL, 2)
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

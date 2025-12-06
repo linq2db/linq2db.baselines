@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -33,7 +32,6 @@ WHEN NOT MATCHED THEN
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -44,7 +42,6 @@ SELECT FIRST 2
 FROM
 	"test_insert_or_replace" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -79,7 +76,6 @@ WHEN NOT MATCHED THEN
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

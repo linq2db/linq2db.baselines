@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @testValue Int -- Int32
 SET     @testValue = 3
 
 SELECT
 	[id_1].[c1],
-	[t1].[COUNT_1],
-	[t2].[COUNT_1] as [COUNT_2]
+	[t1].[Count1],
+	[t2].[Count2]
 FROM
 	(
 		SELECT DISTINCT
@@ -21,7 +20,7 @@ FROM
 	) [id_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count1]
 			FROM
 				[Child] [p]
 			WHERE
@@ -29,7 +28,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count2]
 			FROM
 				[Child] [p_1]
 			WHERE

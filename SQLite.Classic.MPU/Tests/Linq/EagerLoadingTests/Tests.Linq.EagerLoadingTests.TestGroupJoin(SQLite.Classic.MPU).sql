@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
@@ -28,7 +25,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
@@ -64,7 +60,6 @@ FROM
 				[SubDetailClass] [d]
 		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
@@ -102,9 +97,6 @@ FROM
 				[MasterClass] [d]
 		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20

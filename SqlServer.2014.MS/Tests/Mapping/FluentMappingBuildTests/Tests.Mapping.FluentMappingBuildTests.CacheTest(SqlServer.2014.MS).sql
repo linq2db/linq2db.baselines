@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -31,7 +31,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -43,13 +42,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -57,10 +54,11 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -82,7 +80,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -94,13 +91,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -108,10 +103,11 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -133,7 +129,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -145,13 +140,11 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -159,10 +152,11 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -184,7 +178,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -196,7 +189,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)

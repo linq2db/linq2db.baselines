@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	:Name_LastName
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 4

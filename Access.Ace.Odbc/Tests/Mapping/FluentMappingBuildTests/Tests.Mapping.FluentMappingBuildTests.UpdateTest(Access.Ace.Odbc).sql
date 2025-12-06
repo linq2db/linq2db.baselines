@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
@@ -45,7 +44,6 @@ SET
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]

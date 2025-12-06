@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[p].[ParentID],
@@ -9,9 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -34,7 +30,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -45,5 +40,3 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
-DisposeTransaction

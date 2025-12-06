@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Parent]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[p].[ParentID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Parent]
@@ -33,7 +31,6 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Parent]

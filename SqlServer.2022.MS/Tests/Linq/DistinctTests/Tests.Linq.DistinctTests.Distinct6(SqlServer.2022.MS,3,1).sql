@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 DECLARE @Value1 Int -- Int32
@@ -11,7 +10,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

@@ -1,25 +1,23 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	t1.COUNT_1,
-	t1."c1",
-	t1.MAX_1
+	t1."Count_1",
+	t1."Expr",
+	t1."Max_1"
 FROM
 	(
 		SELECT
-			COUNT(*) as COUNT_1,
-			1 + MIN(g_1."ChildID") as "c1",
-			MAX(g_1."ChildID") as MAX_1
+			COUNT(*) as "Count_1",
+			1 + MIN(g_1."ChildID") as "Expr",
+			MAX(g_1."ChildID") as "Max_1"
 		FROM
 			"Child" g_1
 	) t1
 WHERE
 	ROWNUM <= :take
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

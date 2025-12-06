@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE #Issue4671EntityTMP
 (
@@ -9,7 +8,6 @@ CREATE TABLE #Issue4671EntityTMP
 	CONSTRAINT [PK_Issue4671EntityTMP] PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Issue4671Entity]
@@ -21,7 +19,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO #Issue4671EntityTMP
@@ -33,7 +30,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -42,7 +38,6 @@ SELECT TOP 2
 FROM
 	[Issue4671Entity] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -51,7 +46,6 @@ SELECT TOP 2
 FROM
 	#Issue4671EntityTMP [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#Issue4671EntityTMP') IS NOT NULL)

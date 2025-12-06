@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id1,
@@ -15,7 +14,6 @@ FROM
 	) m_2
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -40,7 +38,6 @@ FROM
 				DetailClass d
 		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.rn > 1 AND d_1.rn <= 3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -51,7 +48,6 @@ SELECT
 FROM
 	MasterClass m_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -68,7 +64,6 @@ FROM
 	) m_1
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

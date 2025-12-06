@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @false_value VarChar(1) -- String
 SET     @false_value = 'N'
 

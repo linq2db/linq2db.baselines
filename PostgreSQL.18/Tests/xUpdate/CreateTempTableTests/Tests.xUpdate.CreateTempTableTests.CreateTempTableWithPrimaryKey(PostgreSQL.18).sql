@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 (
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TableWithPrimaryKey"

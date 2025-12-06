@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -37,7 +35,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jack'
@@ -57,7 +54,6 @@ SET
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -70,7 +66,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Francine'
@@ -87,7 +82,6 @@ SET
 WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)

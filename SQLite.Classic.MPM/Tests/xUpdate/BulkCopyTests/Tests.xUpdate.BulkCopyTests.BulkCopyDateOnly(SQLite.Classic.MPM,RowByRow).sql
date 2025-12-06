@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Date VarChar(10) -- AnsiString
 SET     @Date = '2021-01-01'
 
@@ -12,10 +11,10 @@ VALUES
 	@Date
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[Date]
 FROM
 	[DateOnlyTable] [t1]

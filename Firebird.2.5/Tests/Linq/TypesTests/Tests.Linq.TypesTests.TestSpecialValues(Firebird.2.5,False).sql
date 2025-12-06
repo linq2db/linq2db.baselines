@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 1) AS FLOAT)
@@ -26,7 +24,6 @@ VALUES
 	@dbl
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 0.5) AS FLOAT)
@@ -46,7 +43,6 @@ VALUES
 	@dbl
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 2) AS FLOAT)
@@ -66,7 +62,6 @@ VALUES
 	@dbl
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @maxID Integer -- Int32
 SET     @maxID = 2

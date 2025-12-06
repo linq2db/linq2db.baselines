@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	(Floor(Extract(year From d."DateTimeValue"))::Int || '-02-24 00:00:00')::TimeStamp

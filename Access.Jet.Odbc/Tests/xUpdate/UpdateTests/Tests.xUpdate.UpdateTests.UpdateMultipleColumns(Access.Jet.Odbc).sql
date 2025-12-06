@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue VarChar(4, 0) -- AnsiString
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	[t].[ID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1001

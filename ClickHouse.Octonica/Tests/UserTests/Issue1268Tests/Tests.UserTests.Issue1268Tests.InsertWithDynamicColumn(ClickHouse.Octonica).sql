@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO DynamicColumnTable
 (
@@ -14,7 +13,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO DynamicColumnTable
@@ -30,7 +28,6 @@ VALUES
 	false
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -43,7 +40,6 @@ WHERE
 	e.Name = 'Some1'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

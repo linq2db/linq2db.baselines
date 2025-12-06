@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	False
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -22,16 +20,13 @@ FROM
 	"TestBool" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"TestBool"
 SET
-	"Id" = 1,
 	"Value" = NOT "TestBool"."Value"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -41,7 +36,6 @@ FROM
 	"TestBool" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 UPDATE
@@ -50,7 +44,6 @@ SET
 	"Id" = 1,
 	"Value" = False
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

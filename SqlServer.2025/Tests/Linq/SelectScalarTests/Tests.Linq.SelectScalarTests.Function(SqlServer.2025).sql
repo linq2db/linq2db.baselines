@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @text NVarChar(4000) -- String
 SET     @text = N'123'
 

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[m_1].[ParentID],
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	[d].[ChildID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

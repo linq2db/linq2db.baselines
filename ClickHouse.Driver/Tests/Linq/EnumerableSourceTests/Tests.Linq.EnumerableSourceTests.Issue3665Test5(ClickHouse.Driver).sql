@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	y.item
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 'O') y
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

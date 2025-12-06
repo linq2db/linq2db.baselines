@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Value1],
@@ -25,7 +24,6 @@ SELECT
 FROM
 	[Child] [c_3]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

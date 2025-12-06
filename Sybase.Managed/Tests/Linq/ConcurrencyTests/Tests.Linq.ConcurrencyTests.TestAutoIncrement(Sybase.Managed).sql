@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 1'
@@ -47,7 +44,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -57,7 +53,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 2'
@@ -74,7 +69,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -84,7 +78,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Value UniVarChar(7) -- String
 SET     @Value = 'value 3'
@@ -101,7 +94,6 @@ SET
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -111,7 +103,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -124,7 +115,6 @@ FROM
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -134,7 +124,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -147,7 +136,6 @@ FROM
 WHERE
 	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Int] IN (NULL, NULL)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

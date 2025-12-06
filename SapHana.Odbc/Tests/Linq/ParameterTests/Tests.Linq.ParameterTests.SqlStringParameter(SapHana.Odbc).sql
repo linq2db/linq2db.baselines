@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	"t"."FirstName" = ?
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar(6) -- String
 SET     @p = 'Tester'

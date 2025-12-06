@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 2
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Substr('123', 2, :p)
+	Substr('123', 2, 2)
 FROM SYS.DUAL
 

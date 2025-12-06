@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -31,7 +29,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -57,7 +54,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -83,7 +79,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -109,14 +104,12 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -142,7 +135,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -168,7 +160,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -194,7 +185,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -220,7 +210,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
@@ -237,7 +226,6 @@ ON ([Source].[OtherId] = [Target].[Id])
 WHEN MATCHED AND [Target].[Id] = 4 THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

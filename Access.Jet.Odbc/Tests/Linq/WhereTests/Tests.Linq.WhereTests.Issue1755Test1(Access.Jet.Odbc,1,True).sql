@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = ? AND [c_1].[Value1] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

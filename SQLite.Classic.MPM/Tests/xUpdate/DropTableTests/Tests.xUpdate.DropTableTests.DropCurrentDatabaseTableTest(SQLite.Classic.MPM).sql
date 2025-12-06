@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [DropTableTest]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [DropTableTest]
@@ -23,7 +22,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -31,12 +29,10 @@ SELECT
 FROM
 	[DropTableTest] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

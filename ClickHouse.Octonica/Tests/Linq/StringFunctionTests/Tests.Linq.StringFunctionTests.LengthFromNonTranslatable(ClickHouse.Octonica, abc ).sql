@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.Str,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	TestLengthModel t
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

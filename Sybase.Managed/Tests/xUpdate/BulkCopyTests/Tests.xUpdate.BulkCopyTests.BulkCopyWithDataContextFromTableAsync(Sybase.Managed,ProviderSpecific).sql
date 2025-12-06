@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -7,8 +6,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 1
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -16,8 +14,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 2
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -25,8 +22,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 3
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -34,8 +30,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 10
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -43,8 +38,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 20
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (

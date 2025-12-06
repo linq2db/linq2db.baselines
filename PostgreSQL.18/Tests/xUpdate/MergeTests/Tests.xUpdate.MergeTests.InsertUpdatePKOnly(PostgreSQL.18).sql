@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (VALUES
@@ -20,7 +19,6 @@ VALUES
 	"Source"."ID"
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

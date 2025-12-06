@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = N'test'
@@ -46,7 +43,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

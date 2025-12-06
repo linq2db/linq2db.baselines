@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTable"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 CREATE TABLE "TestTable"
@@ -16,7 +14,6 @@ CREATE TABLE "TestTable"
 	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	"TestTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE "TestTable"

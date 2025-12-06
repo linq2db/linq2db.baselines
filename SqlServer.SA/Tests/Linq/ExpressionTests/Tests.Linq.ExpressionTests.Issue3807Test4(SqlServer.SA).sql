@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[m_1].[ArrayString],
@@ -24,25 +21,22 @@ FROM
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[r].[Id],
-	[r].[ArrayString]
+	[a].[Id],
+	[a].[ArrayString]
 FROM
-	[Issue3807Table] [r]
+	[Issue3807Table] [a]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[STRING_SPLIT]([r].[ArrayString], N',') [i]
+			[STRING_SPLIT]([a].[ArrayString], N',') [i]
 		WHERE
 			[i].[value] = N'two'
 	)
 ORDER BY
-	[r].[Id]
+	[a].[Id]
 

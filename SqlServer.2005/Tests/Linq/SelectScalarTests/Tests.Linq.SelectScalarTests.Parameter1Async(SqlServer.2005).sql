@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005 (asynchronously)
+﻿-- SqlServer.2005
 
 SELECT
 	1

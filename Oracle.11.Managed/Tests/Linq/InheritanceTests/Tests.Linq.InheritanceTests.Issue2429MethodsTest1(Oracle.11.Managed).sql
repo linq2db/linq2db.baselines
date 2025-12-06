@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	x."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

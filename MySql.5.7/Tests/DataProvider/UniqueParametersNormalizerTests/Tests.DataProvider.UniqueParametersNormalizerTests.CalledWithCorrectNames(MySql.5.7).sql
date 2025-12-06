@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	1
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"t1"."id" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "test_insert_or_replace"
@@ -22,7 +20,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

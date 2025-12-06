@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[m_2].[ParentID],
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	[m_2].[ChildID] DESC
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

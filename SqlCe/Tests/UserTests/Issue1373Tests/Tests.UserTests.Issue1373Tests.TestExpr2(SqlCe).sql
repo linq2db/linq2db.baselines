@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Field1 NVarChar(4) -- String
 SET     @Field1 = 'test'
@@ -46,7 +43,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT

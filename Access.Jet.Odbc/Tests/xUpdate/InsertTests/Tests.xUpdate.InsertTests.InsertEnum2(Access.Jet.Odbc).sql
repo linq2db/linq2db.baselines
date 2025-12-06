@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -24,7 +22,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -36,7 +33,6 @@ FROM
 WHERE
 	[t1].[ParentID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM

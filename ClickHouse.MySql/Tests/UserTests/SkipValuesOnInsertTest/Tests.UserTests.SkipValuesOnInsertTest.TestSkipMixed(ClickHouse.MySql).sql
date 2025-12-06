@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Mixed_Table
 (
@@ -14,7 +13,6 @@ VALUES
 	20
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -37,7 +34,6 @@ UPDATE
 WHERE
 	Id = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -50,7 +46,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Mixed_Table
@@ -64,7 +59,6 @@ VALUES
 	25
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -77,7 +71,6 @@ WHERE
 	t.Id = 2
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -88,7 +81,6 @@ UPDATE
 WHERE
 	Id = 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

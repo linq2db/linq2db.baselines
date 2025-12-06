@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 2
 DECLARE @take Int32
@@ -14,7 +13,6 @@ ORDER BY
 	t1."ChildID" DESC
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 2

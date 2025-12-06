@@ -1,6 +1,17 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[m_1].[Id1],
+	[m_1].[Id2],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
+FROM
+	[MasterClass] [m_1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
+WHERE
+	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
+
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -15,22 +26,6 @@ FROM
 WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
-	[m_1].[Id1],
-	[m_1].[Id2],
-	[d].[DetailId],
-	[d].[MasterId],
-	[d].[DetailValue]
-FROM
-	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
-WHERE
-	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
-
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -43,9 +38,6 @@ FROM
 WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Binary(3)
@@ -16,7 +15,6 @@ VALUES
 	@BlobValue
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -28,7 +26,6 @@ WHERE
 	"t1"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'030201'
@@ -40,7 +37,6 @@ SET
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

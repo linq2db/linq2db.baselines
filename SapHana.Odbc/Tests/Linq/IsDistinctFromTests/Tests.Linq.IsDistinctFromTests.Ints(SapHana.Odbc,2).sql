@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @value Int -- Int32
 SET     @value = 2
 
@@ -18,7 +17,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -38,7 +36,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -58,7 +55,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Int -- Int32
 SET     @value = 2

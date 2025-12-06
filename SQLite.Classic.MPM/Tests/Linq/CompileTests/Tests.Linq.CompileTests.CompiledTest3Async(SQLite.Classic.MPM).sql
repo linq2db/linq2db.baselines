@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 1
 
@@ -12,8 +11,7 @@ WHERE
 	[c_1].[ParentID] = @p
 LIMIT @p
 
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 2
 

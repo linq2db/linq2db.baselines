@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[m_1].[ArrayString],
@@ -22,9 +19,6 @@ FROM
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

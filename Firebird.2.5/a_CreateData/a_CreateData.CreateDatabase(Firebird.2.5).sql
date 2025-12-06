@@ -1,144 +1,115 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DROP PROCEDURE "AddIssue792Record";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_SelectByKey";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_SelectAll";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_SelectByName";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_Insert";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_Insert_OutputParameter";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_Update";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Person_Delete";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Patient_SelectAll";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Patient_SelectByName";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "OutRefTest";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "OutRefEnumTest";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Scalar_DataReader";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Scalar_OutputParameter";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP PROCEDURE "Scalar_ReturnParameter";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT 1 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP VIEW "PersonView";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TRIGGER "CREATE_PersonID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TRIGGER "CREATE_DataTypeTest";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Dual";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "DataTypeTest";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Doctor";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Patient";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Person";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP GENERATOR "DataTypeID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP GENERATOR "PersonID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP EXTERNAL FUNCTION RTRIM;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP EXTERNAL FUNCTION LTRIM;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DECLARE EXTERNAL FUNCTION LTRIM
@@ -146,7 +117,6 @@ DECLARE EXTERNAL FUNCTION LTRIM
 	RETURNS CSTRING(255) FREE_IT
 	ENTRY_POINT 'IB_UDF_ltrim' MODULE_NAME 'ib_udf';
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DECLARE EXTERNAL FUNCTION RTRIM
@@ -154,7 +124,6 @@ DECLARE EXTERNAL FUNCTION RTRIM
 	RETURNS CSTRING(255) FREE_IT
 	ENTRY_POINT 'IB_UDF_rtrim' MODULE_NAME 'ib_udf';
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 /*
@@ -163,17 +132,14 @@ SELECT 1 AS id => SELECT 1 AS "id" *FROM Dual*
 */
 CREATE TABLE "Dual" ("Dummy"  VARCHAR(10));
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO  "Dual" ("Dummy") VALUES ('X');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "InheritanceParent";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "InheritanceParent"
@@ -183,12 +149,10 @@ CREATE TABLE "InheritanceParent"
 	"Name"                VARCHAR(50)
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "InheritanceChild";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "InheritanceChild"
@@ -199,7 +163,6 @@ CREATE TABLE "InheritanceChild"
 	"Name"                VARCHAR(50)
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person Table
@@ -213,12 +176,10 @@ CREATE TABLE "Person"
 	"Gender"     CHAR(1)     NOT NULL CHECK ("Gender" in ('M', 'F', 'U', 'O'))
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE GENERATOR "PersonID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TRIGGER "CREATE_PersonID" FOR "Person"
@@ -227,28 +188,23 @@ AS BEGIN
 	NEW."PersonID" = GEN_ID("PersonID", 1);
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jürgen', 'König',     'M');
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES (_utf8 x'4AC3BC7267656E', _utf8 x'4BC3B66E6967', 'Ko', 'M');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Doctor Table Extension
@@ -261,12 +217,10 @@ CREATE TABLE "Doctor"
 			ON DELETE CASCADE
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Patient Table Extension
@@ -279,12 +233,10 @@ CREATE TABLE "Patient"
 			ON DELETE CASCADE
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Data Types test
@@ -329,12 +281,10 @@ CREATE TABLE "DataTypeTest"
 	"Xml_"            CHAR(1000)
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE GENERATOR "DataTypeID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TRIGGER "CREATE_DataTypeTest" FOR "DataTypeTest"
@@ -343,7 +293,6 @@ AS BEGIN
 	NEW."DataTypeID" = GEN_ID("DataTypeID", 1);
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "DataTypeTest"
@@ -355,7 +304,6 @@ VALUES
 		NULL,     NULL,    NULL,    NULL,    NULL,      NULL,     NULL,
 		NULL,     NULL,    NULL,    NULL,    NULL,      NULL,     NULL);
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "DataTypeTest"
@@ -378,42 +326,34 @@ VALUES
 	1234.123, 'dddddddddddddddd', 'string', 32767, 32768, 200000000,
 	'<root><element strattr="strvalue" intattr="12345"/></root>');
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Parent";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "Child";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "GrandChild";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int);
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int);
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int);
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "LinqDataTypes";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "LinqDataTypes"
@@ -438,22 +378,18 @@ CREATE TABLE "LinqDataTypes"
 	"StringValue"    VARCHAR(50)
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP GENERATOR "SequenceTestSeq";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE GENERATOR "SequenceTestSeq";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "SequenceTest";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "SequenceTest"
@@ -462,34 +398,28 @@ CREATE TABLE "SequenceTest"
 	"Value_" VARCHAR(50) NOT NULL
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TRIGGER CREATE_ID;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP GENERATOR "TestIdentityID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "TestIdentity";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "TestIdentity" (
 	ID INTEGER NOT NULL PRIMARY KEY
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE GENERATOR "TestIdentityID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TRIGGER CREATE_ID FOR "TestIdentity"
@@ -498,22 +428,18 @@ AS BEGIN
 	NEW.ID = GEN_ID("TestIdentityID", 1);
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TRIGGER "AllTypes_ID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP GENERATOR "AllTypesID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "AllTypes";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "AllTypes"
@@ -542,12 +468,10 @@ CREATE TABLE "AllTypes"
 	"blobDataType"             blob
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE GENERATOR "AllTypesID";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TRIGGER "AllTypes_ID" FOR "AllTypes"
@@ -556,7 +480,6 @@ AS BEGIN
 	NEW.ID = GEN_ID("AllTypesID", 1);
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "AllTypes"
@@ -586,7 +509,6 @@ VALUES
 	NULL
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "AllTypes"
@@ -616,14 +538,12 @@ VALUES
 	'12345'
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE VIEW "PersonView"
 AS
 	SELECT * FROM "Person";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_SelectByKey
@@ -649,7 +569,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_SelectAll
@@ -675,7 +594,6 @@ BEGIN
 	DO SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_SelectByName
@@ -707,7 +625,6 @@ BEGIN
 	DO SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_Insert
@@ -732,7 +649,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_Insert_OutputParameter
@@ -757,7 +673,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_Update
@@ -782,7 +697,6 @@ BEGIN
 		"PersonID" = :PersonID;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Person_Delete
@@ -795,7 +709,6 @@ BEGIN
 	DELETE FROM "Person" WHERE "PersonID" = :"PersonID";
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Patient_SelectAll
@@ -833,7 +746,6 @@ BEGIN
 	DO SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- Patient_SelectByName
@@ -869,7 +781,6 @@ BEGIN
 	DO SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- OutRefTest
@@ -903,7 +814,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- OutRefEnumTest
@@ -923,7 +833,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 -- ExecuteScalarTest
@@ -940,7 +849,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE PROCEDURE "Scalar_OutputParameter"
@@ -955,7 +863,6 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 /*
@@ -970,12 +877,10 @@ BEGIN
 	SUSPEND;
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "CamelCaseName";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "CamelCaseName"
@@ -988,17 +893,14 @@ CREATE TABLE "CamelCaseName"
 	"NAME 5" VARCHAR(20)
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "TestMerge1";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "TestMerge2";
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "TestMerge1"
@@ -1035,7 +937,6 @@ CREATE TABLE "TestMerge1"
 	"FieldEnumNumber" INT
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "TestMerge2"
@@ -1072,7 +973,6 @@ CREATE TABLE "TestMerge2"
 	"FieldEnumNumber" INT
 );
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE PROCEDURE "AddIssue792Record"
@@ -1081,17 +981,14 @@ BEGIN
 	INSERT INTO "AllTypes"("char20DataType") VALUES('issue792');
 END;
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT 1 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DROP TABLE "CollatedTable"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 CREATE TABLE "CollatedTable"
@@ -1101,12 +998,10 @@ CREATE TABLE "CollatedTable"
 	"CaseInsensitive"	VARCHAR(20) CHARACTER SET UTF8 COLLATE UNICODE_CI
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT 1 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "LinqDataTypes"
@@ -1135,7 +1030,6 @@ SELECT 10,10.77,CAST('2009-09-26 09:19:29.090' AS timestamp),NULL,'0',X'61B2BC55
 SELECT 11,11.45,CAST('2009-09-27' AS timestamp),NULL,'1',X'D3021D1897F04DC098D0F0C7DF4A1230',11,NULL,NULL,'9' FROM rdb$database UNION ALL
 SELECT 12,11.45,CAST('2012-11-07 19:19:29.090' AS timestamp),NULL,'1',X'03021D1897F04DC098D0F0C7DF4A1230',12,NULL,NULL,'0' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Parent"
@@ -1151,7 +1045,6 @@ SELECT 5,5 FROM rdb$database UNION ALL
 SELECT 6,6 FROM rdb$database UNION ALL
 SELECT 7,1 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Child"
@@ -1177,7 +1070,6 @@ SELECT 6,65 FROM rdb$database UNION ALL
 SELECT 6,66 FROM rdb$database UNION ALL
 SELECT 7,77 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "GrandChild"
@@ -1209,7 +1101,6 @@ SELECT 4,42,422 FROM rdb$database UNION ALL
 SELECT 4,42,423 FROM rdb$database UNION ALL
 SELECT 4,42,424 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "InheritanceParent"
@@ -1222,7 +1113,6 @@ SELECT 1,NULL,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$data
 SELECT 2,1,NULL FROM rdb$database UNION ALL
 SELECT 3,2,'InheritanceParent2' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "InheritanceChild"
@@ -1236,7 +1126,6 @@ SELECT 1,NULL,1,CAST(NULL AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$da
 SELECT 2,1,2,NULL FROM rdb$database UNION ALL
 SELECT 3,2,3,'InheritanceParent2' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FIRSTNAME VarChar(255) -- String
 SET     @FIRSTNAME = _utf8 x'4AC3BC7267656E'

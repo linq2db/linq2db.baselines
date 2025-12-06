@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE temp.[NoIdentity]
 
 
 
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[NoIdentity]
 (

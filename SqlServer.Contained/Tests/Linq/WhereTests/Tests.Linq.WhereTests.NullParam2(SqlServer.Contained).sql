@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id AND [p].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1

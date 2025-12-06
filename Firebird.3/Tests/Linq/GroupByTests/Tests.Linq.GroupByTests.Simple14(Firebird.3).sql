@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."ParentID",
@@ -22,9 +19,6 @@ FROM
 				"d"."ParentID"
 		) "d_1" ON "m_1"."ParentID" = "d_1"."Key_1"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

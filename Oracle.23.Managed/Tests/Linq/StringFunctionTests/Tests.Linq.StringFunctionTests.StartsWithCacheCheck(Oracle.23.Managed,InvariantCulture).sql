@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	p."PersonID" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -21,7 +19,6 @@ FROM
 WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -34,7 +31,6 @@ WHERE
 	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -46,7 +42,6 @@ FROM
 WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 DECLARE @p_1 Integer -- Int32
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	"c_1"."id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

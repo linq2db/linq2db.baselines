@@ -1,19 +1,19 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO TempTable
 (
@@ -24,12 +24,10 @@ SELECT
 FROM
 	Parent p
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE TempTable

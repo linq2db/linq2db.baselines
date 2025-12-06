@@ -1,22 +1,20 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[TempTable]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE temp.[TempTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[TempTable]

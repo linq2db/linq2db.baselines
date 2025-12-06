@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS FluentTemp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE IF NOT EXISTS FluentTemp
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
@@ -43,7 +39,6 @@ SET
 WHERE
 	t1.ID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS FluentTemp

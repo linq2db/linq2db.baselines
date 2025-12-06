@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @nm UniVarChar(4) -- String
 SET     @nm = 'John'
 

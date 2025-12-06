@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -20,8 +19,7 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Discriminator Integer -- Int32
@@ -42,8 +40,7 @@ VALUES
 	:Value2
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Discriminator Integer -- Int32
@@ -68,8 +65,7 @@ VALUES
 	:NullableBool
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Discriminator",
@@ -83,8 +79,7 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",
@@ -99,8 +94,7 @@ WHERE
 	x."Discriminator" = 1
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",
@@ -115,8 +109,7 @@ WHERE
 	x."Discriminator" = 2
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",
@@ -131,8 +124,7 @@ WHERE
 	x."Discriminator" = 3
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",
@@ -147,8 +139,7 @@ WHERE
 	x."Value1" = 'Str1'
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",
@@ -163,8 +154,7 @@ WHERE
 	x."Value2" = 'Str2'
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	x."Discriminator",

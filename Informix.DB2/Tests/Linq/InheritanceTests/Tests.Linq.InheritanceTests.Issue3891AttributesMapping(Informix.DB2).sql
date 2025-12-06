@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Type Integer(4) -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -40,7 +38,6 @@ SELECT FIRST 2
 FROM
 	Base t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Type Integer(4) -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	t1.Id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @param Integer -- Int32
 SET     @param = 200
 
@@ -22,7 +21,6 @@ RETURNING
 	"DestinationTable"."Value",
 	"DestinationTable"."ValueStr"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @param Integer -- Int32
 SET     @param = 200

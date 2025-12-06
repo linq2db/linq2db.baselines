@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	DatePart(dayofyear, [t].[DateTimeValue]) % 7 as [c1]

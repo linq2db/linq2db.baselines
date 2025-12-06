@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Int -- Int32
@@ -15,7 +14,6 @@ SET
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -37,7 +35,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -49,7 +46,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
@@ -66,7 +62,6 @@ SET
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

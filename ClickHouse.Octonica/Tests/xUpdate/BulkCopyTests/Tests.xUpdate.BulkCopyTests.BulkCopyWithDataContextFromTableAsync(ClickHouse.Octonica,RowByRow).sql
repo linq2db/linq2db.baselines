@@ -1,11 +1,8 @@
-﻿BeforeExecute
+﻿INSERT INTO SimpleBulkCopyTable(Id) VALUES
+
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
-BeforeExecute
-INSERT INTO SimpleBulkCopyTable(Id) VALUES
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -16,14 +13,11 @@ VALUES
 	3
 )
 
-BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
-BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (

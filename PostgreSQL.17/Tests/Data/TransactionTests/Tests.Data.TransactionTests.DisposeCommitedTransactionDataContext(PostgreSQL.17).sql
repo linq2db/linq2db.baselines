@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 commit;
 SELECT
@@ -9,5 +6,3 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
-DisposeTransaction

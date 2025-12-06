@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	addDays(now(), t.Value) as Value1,
@@ -13,7 +12,6 @@ SELECT
 	addDays(now(), 3) as Value1,
 	addDays(now(), 4) as Value2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

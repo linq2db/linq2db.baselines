@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Has  -- Boolean
 SET     @Has = 1
 
@@ -12,12 +11,10 @@ VALUES
 	@Has
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1

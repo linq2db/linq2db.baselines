@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	it_1."cond",
@@ -20,7 +19,7 @@ FROM
 				(
 					SELECT a_Color."Name" AS "ColorName", a_Style."Name" AS "StyleName", (
 					SELECT
-						COUNT(*) as COUNT_1
+						COUNT(*) as "Count_1"
 					FROM
 						"SomeItem" t1
 				) AS "Count" FROM sys.dual
@@ -30,7 +29,6 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -46,7 +44,6 @@ FROM
 		LEFT JOIN "SomeColor" a_Color ON t1."ColorId" = a_Color."Id"
 		LEFT JOIN "SomeStyle" a_Style ON t1."StyleId" = a_Style."Id"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[p].[FirstName],
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT N'Doe') [n] ON [p].[LastName] = [n].[item]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

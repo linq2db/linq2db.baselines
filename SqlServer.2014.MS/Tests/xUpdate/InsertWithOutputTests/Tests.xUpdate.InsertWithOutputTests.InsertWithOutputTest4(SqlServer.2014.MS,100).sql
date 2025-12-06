@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @id Int -- Int32
@@ -20,7 +19,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @param Int -- Int32
 SET     @param = 100
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [c_1]

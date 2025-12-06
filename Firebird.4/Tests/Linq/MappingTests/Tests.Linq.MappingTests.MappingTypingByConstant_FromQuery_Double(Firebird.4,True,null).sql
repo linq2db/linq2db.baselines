@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t1".ID,
@@ -8,12 +7,11 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(NULL AS Float) as "Value_1"
+			CAST(NULL AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -23,7 +21,7 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(3147483648 AS Float) as "Value_1"
+			CAST(3147483648 AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"

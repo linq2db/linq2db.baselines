@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`m_1`.`ParentID`,
@@ -22,9 +19,6 @@ FROM
 				`d`.`ParentID`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

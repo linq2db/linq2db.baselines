@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 MERGE INTO "Person" Target
 USING (
@@ -28,7 +25,6 @@ SET
 DELETE WHERE
 	"Source"."Patient_Diagnosis" = 'very sick' AND "Source"."Patient_Diagnosis_1" = 'very sick'
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -42,5 +38,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

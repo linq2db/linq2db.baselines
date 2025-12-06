@@ -1,17 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     Char(1)        NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -36,8 +23,7 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -62,13 +48,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -93,21 +77,18 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -116,14 +97,4 @@ FROM
 WHERE
 	[p].[FirstName] = 'Steven' AND [p].[LastName] = 'King' AND
 	[p].[Gender] = 'M'
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DROP TABLE [xxPerson]
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [xxPerson]
 

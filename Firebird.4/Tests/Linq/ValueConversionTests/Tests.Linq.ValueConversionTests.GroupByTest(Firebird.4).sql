@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -22,9 +19,6 @@ FROM
 WHERE
 	@testedList = "m_1"."Value2"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'

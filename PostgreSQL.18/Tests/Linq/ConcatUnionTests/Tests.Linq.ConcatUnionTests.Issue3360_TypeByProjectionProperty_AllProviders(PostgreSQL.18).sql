@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p."Id",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"Issue3360Table" p_1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

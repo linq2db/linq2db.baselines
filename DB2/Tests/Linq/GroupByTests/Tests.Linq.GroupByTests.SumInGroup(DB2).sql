@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"g_1"."GroupId",
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	"g_1"."GroupId"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM

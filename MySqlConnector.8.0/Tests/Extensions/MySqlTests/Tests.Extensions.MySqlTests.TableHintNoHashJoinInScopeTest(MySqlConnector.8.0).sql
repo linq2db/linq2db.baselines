@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT /*+ NO_HASH_JOIN(p) NO_HASH_JOIN(c_1) */
 	`p`.`ParentID`,

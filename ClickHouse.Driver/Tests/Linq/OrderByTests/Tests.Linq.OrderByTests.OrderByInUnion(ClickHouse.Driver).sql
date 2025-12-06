@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t2.ParentID,
@@ -29,7 +28,6 @@ FROM
 			t3.ChildID DESC
 	) t4
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -52,7 +50,6 @@ FROM
 			t2.ChildID DESC
 	) t3
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -61,14 +58,14 @@ SELECT
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID,
-			t1.ChildID as ChildID
+			t1.ChildID as ChildID,
+			t1.ParentID as ParentID
 		FROM
 			Child t1
 		UNION ALL
 		SELECT
-			t2.ParentID as ParentID,
-			t2.ChildID as ChildID
+			t2.ChildID as ChildID,
+			t2.ParentID as ParentID
 		FROM
 			Child t2
 	) t3

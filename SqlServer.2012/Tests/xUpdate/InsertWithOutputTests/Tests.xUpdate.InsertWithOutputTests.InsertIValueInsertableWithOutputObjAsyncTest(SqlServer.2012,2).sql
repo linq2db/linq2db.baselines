@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 DECLARE @Id Int -- Int32

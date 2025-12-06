@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)
@@ -12,7 +11,6 @@ WHERE
 	('<{p.LastName}, ' || "p"."FirstName" || ' {' || "p"."LastName" || '}>') = ('<{p.LastName}, ' || "p"."FirstName" || ' {' || "p"."LastName") || '}>' AND
 	'{}' || "p"."LastName" = '{}' || "p"."LastName"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

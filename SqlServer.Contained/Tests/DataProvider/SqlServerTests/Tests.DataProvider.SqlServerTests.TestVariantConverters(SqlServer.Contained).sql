@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK [VariantTable](Id, Value)
+﻿INSERT BULK [VariantTable](Id, Value)
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

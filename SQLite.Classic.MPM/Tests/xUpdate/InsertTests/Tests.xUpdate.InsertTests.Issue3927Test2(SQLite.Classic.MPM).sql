@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @pageNumber  -- Int32
 SET     @pageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength

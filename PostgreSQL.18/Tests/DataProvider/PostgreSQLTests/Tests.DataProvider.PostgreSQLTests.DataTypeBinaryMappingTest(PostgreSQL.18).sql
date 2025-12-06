@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "DataTypeBinaryMapping"(Binary)
+﻿INSERT BULK "DataTypeBinaryMapping"(Binary)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

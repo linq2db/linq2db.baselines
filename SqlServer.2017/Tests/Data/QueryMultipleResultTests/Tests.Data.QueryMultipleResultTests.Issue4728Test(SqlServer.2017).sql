@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017 (asynchronously)
+﻿-- SqlServer.2017
 
 
 select 1, 1 from INFORMATION_SCHEMA.TABLES where 1 = 0;

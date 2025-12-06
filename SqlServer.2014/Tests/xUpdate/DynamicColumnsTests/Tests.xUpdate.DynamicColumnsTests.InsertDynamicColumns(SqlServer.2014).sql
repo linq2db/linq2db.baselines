@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 INSERT INTO [Person]
 (
@@ -14,7 +13,6 @@ VALUES
 	N'M'
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

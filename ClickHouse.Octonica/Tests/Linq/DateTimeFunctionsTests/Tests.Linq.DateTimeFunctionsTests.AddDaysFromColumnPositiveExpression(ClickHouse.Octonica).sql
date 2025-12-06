@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO LinqDataTypes
 (
@@ -24,7 +23,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -34,7 +32,6 @@ FROM
 WHERE
 	t.ID = 5000 AND addDays(t.DateTimeValue, t.SmallIntValue) > makeDateTime(2018, 1, 2, 0, 0, 0)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE

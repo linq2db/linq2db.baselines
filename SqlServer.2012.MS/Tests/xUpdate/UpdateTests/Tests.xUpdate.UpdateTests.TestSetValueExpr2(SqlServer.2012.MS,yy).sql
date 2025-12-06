@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'yy'
 DECLARE @id Int -- Int32
@@ -13,7 +12,6 @@ SET
 WHERE
 	[TextData].[Id] >= @id
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

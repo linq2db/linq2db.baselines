@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTrun"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE "TestTrun"
@@ -14,12 +12,10 @@ CREATE TABLE "TestTrun"
 	CONSTRAINT "PK_TestTrun" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 TRUNCATE TABLE "TestTrun"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE "TestTrun"

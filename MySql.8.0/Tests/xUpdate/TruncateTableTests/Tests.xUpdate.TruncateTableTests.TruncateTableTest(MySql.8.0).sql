@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE IF EXISTS `TestTrun`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 CREATE TABLE `TestTrun`
@@ -14,12 +12,10 @@ CREATE TABLE `TestTrun`
 	CONSTRAINT `PK_TestTrun` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 TRUNCATE TABLE `TestTrun`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DROP TABLE `TestTrun`

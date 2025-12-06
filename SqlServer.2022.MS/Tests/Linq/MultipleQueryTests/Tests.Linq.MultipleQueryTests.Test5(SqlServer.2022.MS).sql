@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[m_1].[ParentID],
@@ -17,9 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Parent] [d] ON [d].[ParentID] = [m_1].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

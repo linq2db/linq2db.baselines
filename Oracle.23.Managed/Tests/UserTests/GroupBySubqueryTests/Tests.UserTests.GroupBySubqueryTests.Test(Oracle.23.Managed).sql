@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT
 	a_Ref4."Field6",
@@ -15,7 +14,6 @@ FROM
 WHERE
 	t1."Field3" IS NOT NULL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

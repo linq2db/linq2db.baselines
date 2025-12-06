@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	Replace(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.')

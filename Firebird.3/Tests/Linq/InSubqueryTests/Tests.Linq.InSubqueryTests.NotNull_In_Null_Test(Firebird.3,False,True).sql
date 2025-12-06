@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
+	"t".PK,
 	"t".ID
 FROM
 	"test_in_1" "t"
@@ -15,19 +15,20 @@ WHERE
 			"t".ID = "p".ID
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1".PK,
 	"t1".ID
 FROM
 	"test_in_1" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
-	"t1".ID
+	"t1".PK,
+	"t1".ID,
+	"t1".GV
 FROM
 	"test_in_2" "t1"
 

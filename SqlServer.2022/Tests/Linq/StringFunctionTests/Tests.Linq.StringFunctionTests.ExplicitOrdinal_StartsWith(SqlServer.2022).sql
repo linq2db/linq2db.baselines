@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -38,7 +35,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'TestSt%' ESCAPE N'~' AND
 	Convert(VarBinary(8000), LEFT([r].[CaseSensitive], LEN(N'TestSt'))) = Convert(VarBinary(8000), N'TestSt')
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -49,7 +45,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'TestSt%' ESCAPE N'~' AND
 	Convert(VarBinary(8000), LEFT([r].[CaseInsensitive], LEN(N'TestSt'))) = Convert(VarBinary(8000), N'TestSt')
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -60,7 +55,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'testst%' ESCAPE N'~' AND
 	Convert(VarBinary(8000), LEFT([r].[CaseSensitive], LEN(N'testst'))) = Convert(VarBinary(8000), N'testst')
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

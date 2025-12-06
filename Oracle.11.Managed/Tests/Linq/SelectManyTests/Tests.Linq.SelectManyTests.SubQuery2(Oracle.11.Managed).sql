@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."PersonID",
@@ -11,7 +10,6 @@ WHERE
 	(p."PersonID" = 1 OR p."PersonID" = 2) AND p2."PersonID" <> 2 AND
 	p."PersonID" = p2."PersonID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

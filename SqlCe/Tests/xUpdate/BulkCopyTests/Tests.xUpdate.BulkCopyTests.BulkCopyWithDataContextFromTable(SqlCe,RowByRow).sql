@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -7,7 +6,6 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 1
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [SimpleBulkCopyTable]
@@ -16,7 +14,6 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 2
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3

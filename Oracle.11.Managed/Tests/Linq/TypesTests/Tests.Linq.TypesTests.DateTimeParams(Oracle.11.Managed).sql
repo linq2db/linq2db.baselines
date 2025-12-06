@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @dateTime TimeStamp -- DateTime
 SET     @dateTime = TIMESTAMP '1992-01-11 01:11:21.100000'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	t."DateTimeValue" > :dateTime AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @dateTime TimeStamp -- DateTime
 SET     @dateTime = TIMESTAMP '1993-01-11 01:11:21.100000'

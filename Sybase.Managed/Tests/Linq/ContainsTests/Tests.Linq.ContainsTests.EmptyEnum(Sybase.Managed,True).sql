@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[Src] [s]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

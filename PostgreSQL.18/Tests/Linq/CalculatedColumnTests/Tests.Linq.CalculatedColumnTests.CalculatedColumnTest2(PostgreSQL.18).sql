@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."PersonID",
@@ -20,7 +19,6 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

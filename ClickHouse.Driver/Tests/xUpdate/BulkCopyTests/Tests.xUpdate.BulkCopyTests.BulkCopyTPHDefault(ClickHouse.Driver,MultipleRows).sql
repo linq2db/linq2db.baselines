@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TPHTableDefault
 (
@@ -14,7 +13,6 @@ VALUES
 (2,2,NULL,'Str2',NULL),
 (3,3,NULL,NULL,'Str3')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -43,7 +40,6 @@ WHERE
 	x.Discriminator = 1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -58,7 +54,6 @@ WHERE
 	x.Discriminator = 2
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -73,7 +68,6 @@ WHERE
 	x.Discriminator = 3
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -88,7 +82,6 @@ WHERE
 	x.Value1 = 'Str1'
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -103,7 +96,6 @@ WHERE
 	x.Value2 = 'Str2'
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

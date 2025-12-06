@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	COUNT(IIF([g_1].[ChildID] < 30 AND [g_1].[ChildID] >= 20, 1, NULL))

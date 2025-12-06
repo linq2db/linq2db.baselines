@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE UniqueIdTmp
 (
@@ -7,22 +6,18 @@ CREATE TEMPORARY TABLE UniqueIdTmp
 )
 ENGINE = Memory()
 
-BeforeExecute
 INSERT ASYNC BULK UniqueIdTmp(ID)
 
-BeforeExecute
 INSERT ASYNC BULK UniqueIdTmp(ID)
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	UniqueIdTmp t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS UniqueIdTmp
 

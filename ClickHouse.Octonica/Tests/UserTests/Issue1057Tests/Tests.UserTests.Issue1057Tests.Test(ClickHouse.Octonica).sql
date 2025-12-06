@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Task
 (
@@ -12,7 +11,6 @@ VALUES
 	'bda.Requests'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Task
@@ -26,7 +24,6 @@ VALUES
 	'None'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TaskStage
@@ -42,7 +39,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	[t].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Age  -- Int32
 SET     @Age = 20
@@ -47,7 +44,6 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -60,7 +56,6 @@ WHERE
 	[t].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -78,7 +73,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -91,7 +85,6 @@ WHERE
 	[t].[Id] = 2
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jessy'
@@ -108,7 +101,6 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

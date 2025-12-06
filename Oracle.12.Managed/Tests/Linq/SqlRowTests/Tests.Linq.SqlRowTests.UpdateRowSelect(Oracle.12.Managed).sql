@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"Ints" i
@@ -23,10 +22,10 @@ SET
 WHERE
 	i."One" = 10
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1."Id",
 	t1."One",
 	t1."Two",
 	t1."Three",

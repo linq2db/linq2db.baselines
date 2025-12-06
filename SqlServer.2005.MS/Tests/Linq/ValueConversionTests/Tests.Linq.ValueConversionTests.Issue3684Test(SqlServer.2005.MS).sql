@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @DateTime0 DateTime
 SET     @DateTime0 = CAST('2020-02-29T17:54:55.000' AS DATETIME)
@@ -21,7 +19,6 @@ VALUES
 	@DateTime3
 )
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

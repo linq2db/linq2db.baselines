@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 2
 DECLARE @p_1 Int -- Int32

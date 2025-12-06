@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Value4 UniqueIdentifier -- Guid
 SET     @Value4 = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Value4 UniqueIdentifier -- Guid
 SET     @Value4 = '{a948600d-de21-4f74-8ac2-9516b287076e}'
@@ -38,7 +35,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1

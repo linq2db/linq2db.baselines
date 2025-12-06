@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[Id],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Text] IS NULL OR LTRIM([p].[Text]) = ''
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

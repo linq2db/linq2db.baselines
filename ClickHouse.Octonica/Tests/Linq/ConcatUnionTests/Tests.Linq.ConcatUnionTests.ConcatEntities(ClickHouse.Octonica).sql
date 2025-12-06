@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	p_1.ParentID = 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 /* My Test */
 UPDATE
@@ -9,7 +8,6 @@ SET
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 /* My Test */

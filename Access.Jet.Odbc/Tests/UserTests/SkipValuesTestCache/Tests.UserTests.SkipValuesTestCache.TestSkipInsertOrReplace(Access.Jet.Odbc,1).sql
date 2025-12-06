@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
@@ -56,7 +52,6 @@ SET
 WHERE
 	[t1].[Id] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1

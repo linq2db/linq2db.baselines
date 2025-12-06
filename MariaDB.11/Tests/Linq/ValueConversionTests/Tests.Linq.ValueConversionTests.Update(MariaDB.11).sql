@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value2 VarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -17,8 +16,7 @@ SET
 WHERE
 	`e`.`Id` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`e`.`Id`,
@@ -37,8 +35,7 @@ WHERE
 	`e`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 VarChar(22) -- String
@@ -75,8 +72,7 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`e`.`Id`,
@@ -95,8 +91,7 @@ WHERE
 	`e`.`Id` = 2
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
 DECLARE @Value2 VarChar -- String
@@ -133,8 +128,7 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`e`.`Id`,

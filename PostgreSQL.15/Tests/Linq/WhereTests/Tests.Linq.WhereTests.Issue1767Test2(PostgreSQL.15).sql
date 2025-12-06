@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."ParentID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p."Value1" IS NULL OR p."Value1" <> 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

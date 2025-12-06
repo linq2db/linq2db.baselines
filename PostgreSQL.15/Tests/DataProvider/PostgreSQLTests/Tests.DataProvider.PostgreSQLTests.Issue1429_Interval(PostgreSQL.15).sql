@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
@@ -26,7 +24,6 @@ VALUES
 	:timeDataType
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @value Interval -- Object
 SET     @value = NpgsqlTypes.NpgsqlInterval
@@ -44,7 +41,6 @@ VALUES
 	:intervalDataType2
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 3.00:00:00
@@ -58,7 +54,6 @@ VALUES
 	:timeDataType
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @maxId Integer -- Int32
 SET     @maxId = 2

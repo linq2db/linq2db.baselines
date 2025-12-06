@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 WITH RECURSIVE "CTE_1" ("Id")
 AS
@@ -47,7 +46,6 @@ SELECT
 FROM
 	"hierarchyDown" t4
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

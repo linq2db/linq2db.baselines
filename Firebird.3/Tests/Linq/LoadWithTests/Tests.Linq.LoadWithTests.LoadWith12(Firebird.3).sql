@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."cond",
@@ -33,7 +30,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d_1" ON "m_1"."cond" = "d_1"."ParentID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -55,7 +51,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -67,5 +62,3 @@ WHERE
 	"p"."ParentID" < 2
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

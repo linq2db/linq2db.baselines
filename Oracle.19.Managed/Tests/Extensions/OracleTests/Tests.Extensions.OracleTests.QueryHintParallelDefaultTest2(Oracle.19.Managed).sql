@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT /*+ PQ_DISTRIBUTE(p PARTITION, NONE) */
 	p."ParentID",

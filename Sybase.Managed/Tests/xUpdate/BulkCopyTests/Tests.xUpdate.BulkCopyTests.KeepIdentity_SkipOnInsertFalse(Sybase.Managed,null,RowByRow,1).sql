@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,8 +13,7 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 
@@ -28,8 +26,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 300
 
@@ -42,7 +39,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1
@@ -57,7 +53,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1

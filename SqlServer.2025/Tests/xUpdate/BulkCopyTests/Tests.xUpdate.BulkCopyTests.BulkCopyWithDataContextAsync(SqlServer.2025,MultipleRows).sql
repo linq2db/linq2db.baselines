@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2025 SqlServer.2022
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,8 +7,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
-BeforeExecute
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 
 INSERT INTO [SimpleBulkCopyTable]
 (

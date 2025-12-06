@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -12,7 +11,6 @@ WHERE
 	concat('<{p.LastName}, ', p.FirstName, ' {', p.LastName, '}>') = concat('<{p.LastName}, ', p.FirstName, ' {', p.LastName, '}>') AND
 	concat('{}', p.LastName) = concat('{}', p.LastName)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

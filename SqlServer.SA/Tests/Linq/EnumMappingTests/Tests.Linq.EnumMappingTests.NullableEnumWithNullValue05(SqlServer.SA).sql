@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 104
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 101
@@ -27,7 +25,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 102
@@ -45,7 +42,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 103
@@ -63,7 +59,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -76,7 +71,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -90,7 +84,6 @@ WHERE
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 104

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t"."Value4", ' -> ')
+	STRING_AGG("t1"."Value4", ' -> ')
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 

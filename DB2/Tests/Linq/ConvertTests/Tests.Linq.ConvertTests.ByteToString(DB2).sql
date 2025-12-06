@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p".ID
+	RTrim(Char(CAST("p".ID AS SmallInt)))
 FROM
 	"LinqDataTypes" "p"
 WHERE

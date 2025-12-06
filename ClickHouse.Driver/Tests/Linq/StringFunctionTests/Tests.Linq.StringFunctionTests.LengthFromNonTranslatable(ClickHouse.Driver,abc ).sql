@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t.Str,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	TestLengthModel t
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

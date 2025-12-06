@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	1
@@ -8,7 +7,6 @@ FROM
 WHERE
 	t1.id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO test_insert_or_replace
@@ -22,7 +20,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

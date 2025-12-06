@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO TableWithIdentity
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -19,7 +17,6 @@ UPDATE
 	Value = 123
 WHERE 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

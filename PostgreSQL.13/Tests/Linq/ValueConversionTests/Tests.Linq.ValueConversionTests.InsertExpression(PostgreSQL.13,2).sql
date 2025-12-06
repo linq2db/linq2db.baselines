@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 DECLARE @Value1 Text(2) -- String
@@ -32,8 +31,7 @@ VALUES
 	:boolValue_1
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 

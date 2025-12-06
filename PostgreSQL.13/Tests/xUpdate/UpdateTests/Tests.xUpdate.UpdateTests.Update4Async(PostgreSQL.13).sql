@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -14,8 +13,7 @@ VALUES
 	:id
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -26,8 +24,7 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -44,8 +41,7 @@ WHERE
 	"Child"."ParentID" = c_1."ParentID" AND
 	"Child"."ChildID" = c_1."ChildID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1002
 

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `FluentTemp`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ID Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `FluentTemp`
@@ -49,7 +45,6 @@ ON DUPLICATE KEY UPDATE
 	`ID` = `ID`,
 	`Name` = `Name`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `FluentTemp`

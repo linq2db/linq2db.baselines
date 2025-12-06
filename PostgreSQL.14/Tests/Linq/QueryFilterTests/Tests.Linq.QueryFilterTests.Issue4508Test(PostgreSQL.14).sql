@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
@@ -14,8 +13,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
@@ -30,8 +28,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
@@ -46,8 +43,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
@@ -62,8 +58,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
@@ -78,8 +73,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 
@@ -94,8 +88,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 0
 
@@ -110,8 +103,7 @@ FROM
 WHERE
 	p."PersonID" > :idCopy
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @idCopy Integer -- Int32
 SET     @idCopy = 1
 

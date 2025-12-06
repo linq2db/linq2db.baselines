@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName",
@@ -12,8 +11,7 @@ FROM
 WHERE
 	"p"."PersonID" = 1
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName",

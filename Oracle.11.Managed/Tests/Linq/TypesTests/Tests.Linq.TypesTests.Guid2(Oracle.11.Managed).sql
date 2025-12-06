@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	p.ID,
@@ -16,7 +15,6 @@ WHERE
 	p."GuidValue" = HEXTORAW('DB2F934043154A4EAC2CCA371604FB4B') AND
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

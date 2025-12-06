@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[r].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[r].[PersonID] <> 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

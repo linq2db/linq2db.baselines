@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
@@ -13,8 +12,7 @@ SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval 3 Day),
 	Date_Add(CURRENT_TIMESTAMP, Interval 4 Day)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`v_1`.`Value2`

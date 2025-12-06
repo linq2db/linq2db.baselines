@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -29,5 +26,3 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
-BeforeExecute
-DisposeTransaction

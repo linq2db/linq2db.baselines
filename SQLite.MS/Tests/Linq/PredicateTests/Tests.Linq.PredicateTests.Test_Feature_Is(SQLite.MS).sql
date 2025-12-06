@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[One] IS [r].[One]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Zero] IS [r].[Zero]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Null] IS [r].[Null]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	[r].[One] IS [r].[Zero]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	[r].[One] IS [r].[Null]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	[r].[Zero] IS [r].[Null]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	[r].[One] IS NOT [r].[One]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	[r].[Zero] IS NOT [r].[Zero]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	[r].[Null] IS NOT [r].[Null]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	[r].[One] IS NOT [r].[Zero]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	[r].[One] IS NOT [r].[Null]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

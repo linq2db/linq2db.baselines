@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -10,7 +9,6 @@ SELECT TOP (1)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 
@@ -18,7 +16,6 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFu
 	BEGIN DROP FUNCTION PersonTableFunction
 END
 
-BeforeExecute
 -- SqlServer.2022
 
 
@@ -27,7 +24,6 @@ RETURNS TABLE
 AS
 	RETURN ( SELECT * FROM dbo.Person WHERE PersonID = @ID AND FirstName = @FirstName )
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -43,7 +39,6 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -59,7 +54,6 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -75,7 +69,6 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -91,7 +84,6 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -111,7 +103,6 @@ FROM
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [te] ON [te].[PersonID] = [p].[PersonID]
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
-BeforeExecute
 -- SqlServer.2022
 
 

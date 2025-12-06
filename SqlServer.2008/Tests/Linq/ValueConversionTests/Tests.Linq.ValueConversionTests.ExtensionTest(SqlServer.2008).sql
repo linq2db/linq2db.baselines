@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 

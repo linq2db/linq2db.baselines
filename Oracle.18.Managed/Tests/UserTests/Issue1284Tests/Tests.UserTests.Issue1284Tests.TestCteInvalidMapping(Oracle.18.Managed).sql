@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 WITH CTE_1
 (
@@ -33,7 +32,6 @@ FROM
 	CTE_1 t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

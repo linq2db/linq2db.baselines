@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TestTrun"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE TABLE "TestTrun"
@@ -21,12 +19,10 @@ CREATE TABLE "TestTrun"
 	CONSTRAINT "PK_TestTrun" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "TestTrun"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP TABLE "TestTrun"

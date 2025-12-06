@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	e."StringValue" || '1' = :p
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

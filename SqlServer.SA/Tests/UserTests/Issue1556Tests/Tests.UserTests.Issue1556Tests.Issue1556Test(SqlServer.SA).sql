@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -18,7 +17,6 @@ FROM
 				[y].[ParentID] = [p].[ParentID]
 		)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

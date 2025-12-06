@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"p"."FirstName",
@@ -12,8 +11,7 @@ FROM
 WHERE
 	"p"."PersonID" = 1
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"p"."FirstName",

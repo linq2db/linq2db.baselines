@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @param Smallint -- Int16
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	:param = t1."SmallIntValue"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

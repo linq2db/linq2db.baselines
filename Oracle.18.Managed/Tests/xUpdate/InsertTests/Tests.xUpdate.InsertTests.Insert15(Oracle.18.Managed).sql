@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	:Name_LastName
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @dateTime DateTime
 SET     @dateTime = '1992-01-11 01:11:21.100'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[DateTimeValue] > @dateTime
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @dateTime DateTime
 SET     @dateTime = '1993-01-11 01:11:21.100'

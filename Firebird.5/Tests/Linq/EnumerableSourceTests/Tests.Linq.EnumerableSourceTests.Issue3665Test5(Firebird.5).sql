@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"y"."item"
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT CAST('O' AS CHAR(1)) FROM rdb$database) "y"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

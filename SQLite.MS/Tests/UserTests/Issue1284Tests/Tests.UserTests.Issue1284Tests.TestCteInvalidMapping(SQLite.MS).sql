@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 WITH [CTE_1]
 (
@@ -33,7 +32,6 @@ FROM
 	[CTE_1] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

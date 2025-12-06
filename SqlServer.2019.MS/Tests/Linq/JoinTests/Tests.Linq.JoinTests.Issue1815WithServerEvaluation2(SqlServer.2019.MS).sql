@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[InId],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[t1].[InId] = 1
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (2)

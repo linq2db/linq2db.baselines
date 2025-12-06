@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[p].[PersonID],
@@ -16,7 +15,6 @@ WHERE
 	[p].[PersonID] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [DateOnlyTable]
 (
@@ -8,10 +7,10 @@ INSERT INTO [DateOnlyTable]
 VALUES
 ('2021-01-01')
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[Date]
 FROM
 	[DateOnlyTable] [t1]

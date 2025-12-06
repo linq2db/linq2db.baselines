@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[e].[StringValue] + N'1' = @p
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

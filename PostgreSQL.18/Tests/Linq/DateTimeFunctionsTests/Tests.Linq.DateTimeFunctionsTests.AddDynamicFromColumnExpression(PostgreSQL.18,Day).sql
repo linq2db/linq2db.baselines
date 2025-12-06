@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32

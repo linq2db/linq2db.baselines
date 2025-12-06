@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	[t2].[ParentID]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

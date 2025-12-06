@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [TransactionScopeTable]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [TransactionScopeTable]
@@ -11,7 +9,6 @@ CREATE TABLE [TransactionScopeTable]
 	[Id] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TransactionScopeTable]
@@ -23,7 +20,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TransactionScopeTable]
@@ -35,7 +31,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -45,7 +40,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [TransactionScopeTable]

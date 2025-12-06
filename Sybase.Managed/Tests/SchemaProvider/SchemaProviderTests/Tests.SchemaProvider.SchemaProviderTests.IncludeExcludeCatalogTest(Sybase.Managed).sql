@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 select @@unicharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 select @@ncharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
@@ -26,7 +23,6 @@ FROM
 WHERE
 	type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -46,7 +42,6 @@ WHERE
 	i.indid > 0 AND
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -73,7 +68,6 @@ FROM
 WHERE
 	o.type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT * FROM (
@@ -365,65 +359,51 @@ FROM
 WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_stored_procedures
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_getprocedurecolumns
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SET FMTONLY ON
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @RETURN_VALUE Integer(10) -- Int32
 SET     @RETURN_VALUE = 0
 
 [TestDataCore].[dbo].[AddIssue792Record]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SET FMTONLY OFF
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SET FMTONLY ON
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @RETURN_VALUE Integer(10) -- Int32
 SET     @RETURN_VALUE = 0
 
 [TestDataCore].[dbo].[Person_SelectAll]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SET FMTONLY OFF
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 select @@unicharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 select @@ncharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
@@ -441,7 +421,6 @@ FROM
 WHERE
 	type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -461,7 +440,6 @@ WHERE
 	i.indid > 0 AND
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -488,7 +466,6 @@ FROM
 WHERE
 	o.type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT * FROM (
@@ -780,31 +757,23 @@ FROM
 WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_stored_procedures
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_getprocedurecolumns
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Sybase.Managed Sybase
 
 select @@unicharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 select @@ncharsize
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
@@ -822,7 +791,6 @@ FROM
 WHERE
 	type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -842,7 +810,6 @@ WHERE
 	i.indid > 0 AND
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 
@@ -869,7 +836,6 @@ FROM
 WHERE
 	o.type IN ('U','V')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT * FROM (
@@ -1161,17 +1127,12 @@ FROM
 WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_stored_procedures
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_oledb_getprocedurecolumns
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction

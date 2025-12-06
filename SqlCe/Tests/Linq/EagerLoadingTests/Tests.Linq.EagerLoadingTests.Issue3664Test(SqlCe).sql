@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,9 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 11
@@ -29,9 +25,6 @@ FROM
 WHERE
 	[d].[Id] = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -39,9 +32,6 @@ SELECT
 FROM
 	[Test3664] [t1]
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 12
@@ -56,9 +46,6 @@ FROM
 WHERE
 	[d].[Id] = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT

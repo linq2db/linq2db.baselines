@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @personId Int -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Int -- Int32

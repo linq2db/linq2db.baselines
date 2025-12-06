@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge1" "Target"
@@ -89,7 +86,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "TestMerge2" "Target"
@@ -169,7 +165,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -196,7 +191,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

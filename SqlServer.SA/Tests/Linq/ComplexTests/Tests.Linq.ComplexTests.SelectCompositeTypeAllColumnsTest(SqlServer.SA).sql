@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
+	[t1].[Id],
 	[t1].[user_name],
 	[t1].[city],
 	[t1].[street],

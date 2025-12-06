@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"p"."MiddleName" IS NULL
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'

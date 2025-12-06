@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- SqlServer.2014.MS SqlServer.2014
+
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
@@ -7,16 +14,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-DELETE [t1]
-FROM
-	[Parent] [t1]
-WHERE
-	[t1].[ParentID] > 1000
-
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -32,7 +29,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
@@ -48,7 +44,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -58,7 +53,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
@@ -67,7 +61,6 @@ FROM
 WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

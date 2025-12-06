@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_2`.`Id1`,
@@ -17,8 +14,7 @@ FROM
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_2`.`Id1`,
@@ -42,10 +38,7 @@ FROM
 				`DetailClass` `d`
 		) `d_1` ON `m_2`.`Id1` = `d_1`.`MasterId` AND `d_1`.`rn` > 1 AND `d_1`.`rn` <= 3
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id1`,
@@ -55,10 +48,7 @@ SELECT
 FROM
 	`MasterClass` `m_1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id1`,
@@ -74,10 +64,7 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id1`,

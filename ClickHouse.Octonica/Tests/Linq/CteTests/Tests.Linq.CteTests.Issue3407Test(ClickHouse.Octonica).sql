@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 WITH CTE_1 AS
 (
@@ -28,7 +27,6 @@ FROM
 WHERE
 	r.ID = 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 WITH CTE_1 AS

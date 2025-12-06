@@ -1,4 +1,12 @@
-﻿BeforeExecute
+﻿-- SqlServer.2016.MS SqlServer.2016
+
+SELECT
+	[t1].[Field1],
+	[t1].[Field2],
+	[t1].[Column3]
+FROM
+	[UseMappingSchemaTestTable] [t1]
+
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -8,17 +16,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-SELECT
-	[t1].[Field1],
-	[t1].[Field2],
-	[t1].[Column3]
-FROM
-	[UseMappingSchemaTestTable] [t1]
-
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable2] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -38,7 +34,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	[UseMappingSchemaTestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

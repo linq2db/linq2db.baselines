@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] IS NULL OR [p].[Value1] <> 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

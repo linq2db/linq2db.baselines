@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	ch."ParentID",
@@ -8,7 +7,6 @@ FROM
 	"Child" ch
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,8 +16,7 @@ FROM
 	"Child" ch
 FETCH NEXT 3 ROWS ONLY
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	ch."ParentID",
@@ -28,8 +25,7 @@ FROM
 	"Child" ch
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	ch."ParentID",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"arg"."Id",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS "Id", CAST(1 AS Decimal(10, 0)) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

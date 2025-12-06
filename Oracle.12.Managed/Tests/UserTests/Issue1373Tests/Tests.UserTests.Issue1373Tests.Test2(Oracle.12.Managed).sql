@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Field1 NVarchar2 -- String
@@ -16,11 +15,10 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @Field1 Varchar2 -- String
+DECLARE @Field1 NVarchar2 -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -34,11 +32,10 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 3
-DECLARE @Field1 Varchar2(4) -- String
+DECLARE @Field1 NVarchar2(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
@@ -52,7 +49,6 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

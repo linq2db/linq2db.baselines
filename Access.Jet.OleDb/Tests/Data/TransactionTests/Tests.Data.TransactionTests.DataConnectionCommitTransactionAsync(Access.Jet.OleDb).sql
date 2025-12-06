@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿BeginTransactionAsync
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -18,9 +16,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

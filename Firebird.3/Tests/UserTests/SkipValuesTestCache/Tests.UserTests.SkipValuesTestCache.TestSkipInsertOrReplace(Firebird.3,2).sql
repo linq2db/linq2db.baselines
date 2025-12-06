@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -31,7 +30,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Age AS Int)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -44,7 +42,6 @@ WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -77,7 +74,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Age AS Int)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

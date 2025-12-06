@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

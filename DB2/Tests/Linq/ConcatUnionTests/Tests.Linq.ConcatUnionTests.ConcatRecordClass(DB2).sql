@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."PersonID",
@@ -15,7 +14,6 @@ SELECT
 FROM
 	"Person" "p_1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

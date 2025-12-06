@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -40,7 +38,6 @@ SELECT FIRST 2
 FROM
 	"Base" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

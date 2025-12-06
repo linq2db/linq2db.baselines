@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Column Char(1) -- StringFixedLength
 SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	r."Column" = 'f'::BOOLEAN AND r.ColumnNullable = 't'::BOOLEAN
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	BooleanTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	BooleanTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -116,7 +108,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -138,7 +129,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -150,16 +140,13 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	BooleanTable
 
-BeforeExecute
 INSERT BULK BooleanTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"p"."FirstName" LIKE 'Jo%' ESCAPE '~' AND "p"."PersonID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"p"."FirstName" LIKE 'jo%' ESCAPE '~' AND "p"."PersonID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

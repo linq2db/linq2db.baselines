@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @param Int -- Int32
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	? = [t1].[BigIntValue]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

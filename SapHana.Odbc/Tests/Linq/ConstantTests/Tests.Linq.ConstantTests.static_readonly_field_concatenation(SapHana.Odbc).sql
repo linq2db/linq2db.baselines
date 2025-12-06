@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."StringValue" || '1' = 'StrValue1'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

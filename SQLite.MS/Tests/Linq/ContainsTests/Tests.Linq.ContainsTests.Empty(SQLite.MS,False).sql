@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[Src] [s]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

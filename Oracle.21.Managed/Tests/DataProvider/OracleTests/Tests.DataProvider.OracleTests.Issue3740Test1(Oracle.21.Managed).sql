@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE FUNCTION ISSUE3742(myParameter IN VARCHAR2) RETURN BOOLEAN AS BEGIN RETURN TRUE; END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(255) -- String
 SET     @p = 'test'
@@ -15,7 +13,6 @@ BEGIN
 END convert_bool;
 SELECT convert_bool(:p) FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP FUNCTION ISSUE3742

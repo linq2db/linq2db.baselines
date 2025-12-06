@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Tests_Linq_InterfaceTests_IExplicitInterfaceTest
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

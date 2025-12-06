@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [TestTable]
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+-- SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [TestTable]
 (
@@ -17,8 +15,7 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[ID],
@@ -28,8 +25,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+-- SqlServer.2005.MS SqlServer.2005
 
 DROP TABLE [TestTable]
 

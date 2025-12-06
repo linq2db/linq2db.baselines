@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -43,7 +41,6 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -66,7 +63,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -81,7 +77,6 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

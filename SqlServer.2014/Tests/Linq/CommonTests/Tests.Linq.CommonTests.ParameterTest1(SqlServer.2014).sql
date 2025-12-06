@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -19,7 +18,6 @@ WHERE
 GROUP BY
 	[g_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 2

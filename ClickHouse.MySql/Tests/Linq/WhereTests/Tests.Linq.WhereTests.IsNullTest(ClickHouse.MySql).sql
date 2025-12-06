@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	nm.MiddleName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	nm.MiddleName IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

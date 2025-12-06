@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	CAST(DateAdd(dayofyear, 3, [t].[DateTimeValue]) AS Date)

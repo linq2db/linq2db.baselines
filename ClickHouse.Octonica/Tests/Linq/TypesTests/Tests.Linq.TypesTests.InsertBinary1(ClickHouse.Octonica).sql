@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -22,7 +20,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE

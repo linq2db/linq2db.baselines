@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "Child" "Target"
 USING (
@@ -60,5 +57,3 @@ EXISTS(
 		"a_Child_1"."ChildID" = 22
 ) THEN DELETE
 
-BeforeExecute
-DisposeTransaction

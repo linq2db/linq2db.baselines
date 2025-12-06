@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 11
 DECLARE @Value1 Int32

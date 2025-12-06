@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t2].[ParentID],
@@ -29,7 +28,6 @@ FROM
 			[t3].[ChildID] DESC
 	) [t4]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -52,7 +50,6 @@ FROM
 			[t2].[ChildID] DESC
 	) [t3]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -61,14 +58,14 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID],
-			[t1].[ChildID]
+			[t1].[ChildID],
+			[t1].[ParentID]
 		FROM
 			[Child] [t1]
 		UNION ALL
 		SELECT
-			[t2].[ParentID],
-			[t2].[ChildID]
+			[t2].[ChildID],
+			[t2].[ParentID]
 		FROM
 			[Child] [t2]
 	) [t3]

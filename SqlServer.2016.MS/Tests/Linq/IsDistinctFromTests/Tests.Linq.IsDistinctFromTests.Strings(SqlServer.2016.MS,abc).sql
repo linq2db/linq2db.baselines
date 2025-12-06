@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
 
@@ -16,7 +15,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
@@ -34,7 +32,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'
@@ -52,7 +49,6 @@ WHERE
 			@value
 	)
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'abc'

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
+	u."Id",
 	u."user_name" as "Name",
 	u."city" as "City",
 	u."street" as "Street",

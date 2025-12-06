@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue4717Address`
 (
@@ -18,8 +17,7 @@ VALUES
 	'12345'
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue4717Warehouse`
 (
@@ -34,8 +32,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Issue4717UnitOfMeasure`
 (
@@ -50,8 +47,7 @@ VALUES
 	'ea'
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @productId Int32
 SET     @productId = 1
 
@@ -70,8 +66,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @includedProductId Int32
 SET     @includedProductId = 2
 
@@ -90,8 +85,7 @@ VALUES
 	1
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @productId Int32
 SET     @productId = 1
 DECLARE @includedProductId Int32
@@ -110,8 +104,7 @@ VALUES
 	10
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @productId Int32
 SET     @productId = 1
 
@@ -128,8 +121,7 @@ VALUES
 	10
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @productId Int32
 SET     @productId = 1
 

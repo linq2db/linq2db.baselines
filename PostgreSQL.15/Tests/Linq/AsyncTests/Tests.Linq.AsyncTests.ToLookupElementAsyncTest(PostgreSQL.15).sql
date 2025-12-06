@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -10,8 +9,7 @@ ORDER BY
 	t1."ParentID",
 	t1."ChildID"
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",

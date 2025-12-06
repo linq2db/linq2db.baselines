@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

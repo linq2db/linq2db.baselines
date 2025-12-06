@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -12,7 +11,6 @@ WHERE
 	c_1."ParentID" = :p
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 2

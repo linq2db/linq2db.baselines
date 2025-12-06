@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringEnum NVarChar(2) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringEnum
 )
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@StringEnum
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[m_1].[Id],
@@ -12,9 +9,6 @@ FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON ([m_1].[Id] = [d].[TransactionId])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

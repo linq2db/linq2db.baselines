@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	COUNT(*)
 FROM
 	`Child` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE1_` (`c1`)
@@ -22,7 +20,6 @@ SELECT
 FROM
 	`CTE1_` `t2`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE1_` (`c1`)
@@ -38,7 +35,6 @@ SELECT
 FROM
 	`CTE1_` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE1_` (`c1`)

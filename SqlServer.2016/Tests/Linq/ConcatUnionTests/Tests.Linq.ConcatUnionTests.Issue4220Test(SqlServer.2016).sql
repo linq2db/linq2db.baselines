@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@AOnly
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@BOnly
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

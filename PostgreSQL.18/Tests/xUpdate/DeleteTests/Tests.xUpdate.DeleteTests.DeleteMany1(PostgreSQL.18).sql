@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Child"
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Child"
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
@@ -55,7 +51,6 @@ WHERE
 			t1."ChildID" = "a_Children"."ChildID"
 	)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
@@ -63,7 +58,6 @@ DELETE FROM
 WHERE
 	c_1."ParentID" >= 1000
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

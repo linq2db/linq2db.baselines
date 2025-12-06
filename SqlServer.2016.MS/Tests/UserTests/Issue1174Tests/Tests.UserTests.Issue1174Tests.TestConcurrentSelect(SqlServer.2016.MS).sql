@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -7,8 +6,7 @@ SELECT TOP (1)
 FROM
 	[User] [t1]
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)
 	[t1].[Id],

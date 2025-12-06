@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"x"."cond",
@@ -32,7 +31,6 @@ FROM
 WHERE
 	NOT ("x"."cond" = '1' AND "x"."cond_1" = '1' OR "x"."cond" = '0')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -44,7 +42,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -74,7 +71,6 @@ FROM
 WHERE
 	"x"."cond" = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -86,7 +82,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -155,7 +150,6 @@ FROM
 WHERE
 	"t2"."cond" = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -167,7 +161,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -253,7 +246,6 @@ FROM
 WHERE
 	NOT ("x_1"."Color" = '1' AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" = '1' OR "x_1"."Color" = '0')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -265,7 +257,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -351,7 +342,6 @@ FROM
 WHERE
 	"x_1"."Color" = '1' AND "x_1"."Color_1" = '1' OR "x_1"."Color" = '0'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -363,7 +353,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -449,7 +438,6 @@ FROM
 WHERE
 	NOT ("x_1"."Size_1" = '1' AND "x_1"."Color" IS NULL AND "x_1"."Size_2" = '1' OR "x_1"."Size_1" = '0')
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -461,7 +449,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -548,7 +535,6 @@ WHERE
 	"x_1"."Size_1" = '1' AND "x_1"."Color" IS NULL AND "x_1"."Size_2" = '1' OR
 	"x_1"."Size_1" = '0'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Exp(CAST("p"."MoneyValue" AS Float))) as "Value_1"
+			Floor(Exp(CAST("p"."MoneyValue" AS DOUBLE PRECISION))) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

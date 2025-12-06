@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[p].[Id],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Text] IS NULL OR LTRIM([p].[Text]) = ''
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

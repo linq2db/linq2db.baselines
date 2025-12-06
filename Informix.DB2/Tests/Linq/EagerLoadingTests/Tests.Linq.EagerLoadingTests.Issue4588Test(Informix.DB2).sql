@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 100
 DECLARE @take Integer(4) -- Int32
@@ -40,7 +37,6 @@ FROM
 	) m_1
 		INNER JOIN SubOrderDetail d_1 ON m_1.Id = d_1.SubOrderId
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 100
@@ -69,9 +65,6 @@ FROM
 	) m_1
 		INNER JOIN SubOrder d ON m_1.Id = d.OrderId
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 100

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @n Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			`p`.`ParentID` + @n = `c_1`.`ParentID`
 	)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

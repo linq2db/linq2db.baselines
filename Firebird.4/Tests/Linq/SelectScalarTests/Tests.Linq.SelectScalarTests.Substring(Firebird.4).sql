@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
-DECLARE @p Integer -- Int32
-SET     @p = 2
+﻿-- Firebird.4 Firebird4
 
 SELECT
-	Substring('123' from 2 for CAST(@p AS Int))
+	Substring('123' from 2 for 2)
 FROM rdb$database
 

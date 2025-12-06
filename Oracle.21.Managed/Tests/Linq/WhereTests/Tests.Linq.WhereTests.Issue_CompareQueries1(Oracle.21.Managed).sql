@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(p."PersonID") as "c1"
@@ -9,7 +8,6 @@ WHERE
 	p."PersonID" IN (1, 2)
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

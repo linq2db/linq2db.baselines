@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Key_1",
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	x."Key_1" DESC
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

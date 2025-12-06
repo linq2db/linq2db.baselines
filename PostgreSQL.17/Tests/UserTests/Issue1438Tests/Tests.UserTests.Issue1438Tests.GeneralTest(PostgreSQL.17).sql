@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Has Boolean
 SET     @Has = True
 
@@ -14,7 +13,6 @@ VALUES
 RETURNING 
 	"Id"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1

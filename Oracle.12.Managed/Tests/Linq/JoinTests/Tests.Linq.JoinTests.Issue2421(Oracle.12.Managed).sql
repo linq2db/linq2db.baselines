@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."SectorId",
@@ -14,9 +11,6 @@ FROM
 WHERE
 	a_UserPosition."PositionId" = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

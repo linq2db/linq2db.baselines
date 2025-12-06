@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[FirstName],
@@ -13,7 +12,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

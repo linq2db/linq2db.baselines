@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent
 (
@@ -12,7 +11,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	p.ParentID = 1001 AND p.Value1 = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -32,7 +29,6 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	p.ParentID = 1001 AND p.Value1 = 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -52,7 +47,6 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

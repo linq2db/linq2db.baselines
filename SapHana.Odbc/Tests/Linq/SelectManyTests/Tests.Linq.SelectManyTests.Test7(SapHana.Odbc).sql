@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"a_Child"."ParentID",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"p"."ParentID" = "g_1"."ParentID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "LinqDataTypes"
 (
@@ -24,19 +23,16 @@ VALUES
 (4008,1008,'2001-01-11-01.11.21.100000',1,BX'99F33B231097794E873D2EC7BF1E0008',NULL,8,NULL),
 (4009,1009,'2001-01-11-01.11.21.100000',1,BX'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "p"
 WHERE
 	"p".ID >= 4000
 
-BeforeExecute
 INSERT BULK "LinqDataTypes"
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "p"

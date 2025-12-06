@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT INTO TrimTestTable(ID, Data) VALUES
+﻿INSERT INTO TrimTestTable(ID, Data) VALUES
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

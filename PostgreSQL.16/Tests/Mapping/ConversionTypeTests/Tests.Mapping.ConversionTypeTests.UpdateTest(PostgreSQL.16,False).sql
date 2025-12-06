@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Data Text(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"TrimTestTable"."ID" = :ID
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Data Text(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Data Text(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	"TrimTestTable"."Data" = :p
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	r."ID"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[temp_table1]
@@ -18,16 +18,16 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (1,2)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[temp_table2]
@@ -41,7 +41,6 @@ SELECT
 FROM
 	temp.[temp_table1] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -50,7 +49,6 @@ SELECT
 FROM
 	temp.[temp_table1] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -59,7 +57,6 @@ SELECT
 FROM
 	temp.[temp_table2] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[temp_table1]
@@ -70,7 +67,6 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (2,3)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
@@ -88,7 +84,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[temp_table1]
@@ -99,22 +94,18 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (4,5)
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM temp.[temp_table1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM temp.[temp_table2]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[temp_table2]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[temp_table1]

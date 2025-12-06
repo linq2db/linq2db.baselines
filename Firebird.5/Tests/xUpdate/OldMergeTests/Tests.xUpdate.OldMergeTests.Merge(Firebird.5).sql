@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t1".ID,
@@ -15,7 +14,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 MERGE INTO "LinqDataTypes" "Target"

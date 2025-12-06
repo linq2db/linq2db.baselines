@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	r."ParentID" = :p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

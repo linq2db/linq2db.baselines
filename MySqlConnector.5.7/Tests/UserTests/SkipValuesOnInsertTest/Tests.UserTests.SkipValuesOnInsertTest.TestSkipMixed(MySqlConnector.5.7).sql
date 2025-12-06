@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	`t`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Age Int32
 SET     @Age = 20
@@ -47,7 +44,6 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -60,7 +56,6 @@ WHERE
 	`t`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 2
@@ -78,7 +73,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -91,7 +85,6 @@ WHERE
 	`t`.`Id` = 2
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jessy'
@@ -108,7 +101,6 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

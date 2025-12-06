@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[c_1].[ParentID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = [p_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT

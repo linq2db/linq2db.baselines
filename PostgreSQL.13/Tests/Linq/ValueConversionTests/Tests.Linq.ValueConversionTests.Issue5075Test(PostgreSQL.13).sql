@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	t."EnumValue" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -22,8 +20,7 @@ FROM
 WHERE
 	t."EnumValue" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -34,8 +31,7 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -46,8 +42,7 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -58,8 +53,7 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -70,8 +64,7 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -80,8 +73,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -90,8 +82,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -100,8 +91,7 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -110,8 +100,7 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -120,8 +109,7 @@ FROM
 WHERE
 	t."EnumValueNull" IS NULL
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

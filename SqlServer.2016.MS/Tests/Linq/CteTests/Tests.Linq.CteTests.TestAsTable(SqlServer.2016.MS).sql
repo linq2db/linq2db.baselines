@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
@@ -16,7 +15,6 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

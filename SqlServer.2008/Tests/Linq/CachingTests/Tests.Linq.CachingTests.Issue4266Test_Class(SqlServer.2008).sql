@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 
-BeforeExecute
 -- SqlServer.2008
 
 CREATE TYPE IntTableType AS TABLE(Id INT)
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
@@ -24,7 +21,6 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
@@ -40,7 +36,6 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
-BeforeExecute
 -- SqlServer.2008
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType

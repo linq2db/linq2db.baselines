@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -20,7 +18,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -33,7 +30,6 @@ WHERE
 	[p].[FirstName] NOT LIKE @nameToCheck ESCAPE '~' AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -45,7 +41,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

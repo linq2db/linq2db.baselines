@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[p].[ParentID],
@@ -18,7 +17,6 @@ FROM
 				[y].[ParentID] = [p].[ParentID]
 		)
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

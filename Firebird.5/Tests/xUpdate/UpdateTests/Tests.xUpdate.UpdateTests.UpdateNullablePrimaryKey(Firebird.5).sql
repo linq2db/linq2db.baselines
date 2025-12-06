@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t1"."ParentID" = @ParentID AND "t1"."ChildID" IS NULL
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000

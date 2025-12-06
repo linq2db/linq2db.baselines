@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @FirstName Text(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Text(1) -- String

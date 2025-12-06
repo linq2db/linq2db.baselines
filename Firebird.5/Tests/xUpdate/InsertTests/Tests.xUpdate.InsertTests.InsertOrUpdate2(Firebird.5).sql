@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
@@ -50,7 +48,6 @@ WHEN NOT MATCHED THEN
 		'negative'
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
@@ -63,7 +60,6 @@ FROM
 WHERE
 	"p"."PersonID" = @id
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
@@ -85,7 +81,6 @@ WHEN NOT MATCHED THEN
 		'positive'
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5

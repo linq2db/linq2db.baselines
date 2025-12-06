@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],
@@ -7,8 +6,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	(

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Field Int32
 SET     @Field = 11
 
@@ -12,7 +11,6 @@ VALUES
 	:Field
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Field Int32
 SET     @Field = 12
@@ -26,7 +24,6 @@ VALUES
 	:Field
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

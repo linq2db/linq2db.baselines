@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl1"
 (
@@ -8,7 +7,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl1"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."tmptbl1"
@@ -20,7 +18,6 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl2"
@@ -30,7 +27,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl2"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."tmptbl2"
@@ -42,7 +38,6 @@ VALUES
 (1,'Value1'),
 (3,'Value2')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl3"
@@ -52,7 +47,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."tmptbl3"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."tmptbl3"
@@ -64,7 +58,6 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -75,7 +68,6 @@ FROM
 		LEFT JOIN SESSION."tmptbl2" "t3" ON "t2".ID = "t3".ID
 		LEFT JOIN SESSION."tmptbl3" "t4" ON Coalesce("t3"."Value", "t2"."Value") = "t4"."Value" OR "t3"."Value" IS NULL AND "t2"."Value" IS NULL AND "t4"."Value" IS NULL
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -84,7 +76,6 @@ SELECT
 FROM
 	SESSION."tmptbl1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -93,7 +84,6 @@ SELECT
 FROM
 	SESSION."tmptbl2" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -102,7 +92,6 @@ SELECT
 FROM
 	SESSION."tmptbl3" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -110,7 +99,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE SESSION."tmptbl3"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -118,7 +106,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE SESSION."tmptbl2"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

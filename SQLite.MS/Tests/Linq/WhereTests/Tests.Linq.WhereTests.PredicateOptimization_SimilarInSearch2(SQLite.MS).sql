@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[FirstName],
@@ -13,7 +12,6 @@ WHERE
 	([x].[FirstName] = 'John' OR [x].[FirstName] = 'Jane') AND
 	[x].[PersonID] > 3 AND [x].[FirstName] = 'Jane'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	([x].[FirstName] = 'John' OR [x].[FirstName] = 'Jane') AND
 	[x].[PersonID] > 3
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

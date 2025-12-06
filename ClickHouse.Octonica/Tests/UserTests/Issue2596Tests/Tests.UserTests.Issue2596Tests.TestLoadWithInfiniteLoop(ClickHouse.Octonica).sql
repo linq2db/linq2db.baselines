@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -26,7 +25,6 @@ FROM
 		LEFT JOIN ProductUnit a_ProductUnit ON d.ProductUnitId = a_ProductUnit.Id
 		LEFT JOIN Product a_Product ON d.ProductId = a_Product.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -51,7 +49,6 @@ FROM
 		INNER JOIN InvoiceTaxLine d ON m_1.Id = d.InvoiceId
 		INNER JOIN AccountTax a_Tax ON d.TaxId = a_Tax.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -73,7 +70,6 @@ FROM
 	) m_1
 		INNER JOIN CustomInvoiceLine d ON m_1.Id = d.CustomInvoiceId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -101,7 +97,6 @@ FROM
 		LEFT JOIN MeasureSource a_Source ON d.MeasuresSourceId = a_Source.Id
 		LEFT JOIN MeasureSource a_PreviousSource ON d.PreviousSourceId = a_PreviousSource.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -123,7 +118,6 @@ FROM
 	) m_1
 		INNER JOIN TypeBMeasures d ON m_1.Id = d.CustomInvoiceId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [AllTypes2] [Target]
@@ -35,7 +31,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @datetime2DataType DateTime2
 SET     @datetime2DataType = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
@@ -67,7 +62,6 @@ SET
 	[datetime2DataType] = @dt2
 ;
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -79,5 +73,3 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
-DisposeTransaction

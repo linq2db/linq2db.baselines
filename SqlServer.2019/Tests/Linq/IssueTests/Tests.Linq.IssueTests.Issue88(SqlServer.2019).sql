@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = N'M'
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND N'M' = [t1].[Gender]
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
-BeforeExecute
 -- SqlServer.2019
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'

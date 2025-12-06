@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -14,8 +13,7 @@ VALUES
 	@id
 )
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -26,8 +24,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -41,8 +38,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1002
 

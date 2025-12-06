@@ -1,11 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CASE
 		WHEN [t1].[ParentID] IS NULL THEN 0
 		ELSE [t2].[ParentID]
-	END as [c1],
+	END as [First1],
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -17,8 +16,8 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c2],
-	[t3].[COUNT_1],
+	END as [Any_1],
+	[t3].[Count_1],
 	[t4].[ParentID],
 	[t4].[ChildID]
 FROM
@@ -47,7 +46,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c_3]
 			WHERE

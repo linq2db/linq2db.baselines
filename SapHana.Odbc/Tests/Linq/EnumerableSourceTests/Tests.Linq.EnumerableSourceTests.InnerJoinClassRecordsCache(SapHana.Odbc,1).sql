@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName",
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3 FROM DUMMY) "n" ON "p"."PersonID" = "n"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

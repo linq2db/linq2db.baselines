@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.Id,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	Issue3360Table p_1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

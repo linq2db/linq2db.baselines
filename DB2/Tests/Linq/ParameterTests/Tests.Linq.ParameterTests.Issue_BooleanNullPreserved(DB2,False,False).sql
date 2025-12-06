@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -22,16 +20,13 @@ FROM
 	"TestBool" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
 	"TestBool" "t1"
 SET
-	"Id" = 1,
 	"Value" = NOT "t1"."Value"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -41,7 +36,6 @@ FROM
 	"TestBool" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
@@ -50,7 +44,6 @@ SET
 	"Id" = 1,
 	"Value" = 1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

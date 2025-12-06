@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

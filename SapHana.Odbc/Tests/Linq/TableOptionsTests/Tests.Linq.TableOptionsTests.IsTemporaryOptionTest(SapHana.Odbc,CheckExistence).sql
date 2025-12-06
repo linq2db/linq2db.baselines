@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "temp_table1"
 (
 	"ID"    Integer NOT NULL,
-	"Value" Integer NOT NULL
+	"Value" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -25,16 +25,16 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "temp_table2"
 (
 	"ID"    Integer NOT NULL,
-	"Value" Integer NOT NULL
+	"Value" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "temp_table2"
@@ -48,7 +48,6 @@ SELECT
 FROM
 	"temp_table1" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -57,7 +56,6 @@ SELECT
 FROM
 	"temp_table1" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -66,7 +64,6 @@ SELECT
 FROM
 	"temp_table2" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 2
@@ -84,7 +81,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 3
@@ -102,7 +98,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 4
@@ -120,22 +115,18 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM "temp_table1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM "temp_table2"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "temp_table2"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "temp_table1"

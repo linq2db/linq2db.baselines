@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	x."Id",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Car" x
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -47,7 +42,6 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -56,7 +50,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -65,7 +58,6 @@ SELECT
 FROM
 	"Car" x
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -74,7 +66,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -85,7 +76,6 @@ FROM
 WHERE
 	x."Name" <> 'Special' OR x."Name" IS NULL
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -94,7 +84,6 @@ SELECT
 FROM
 	"Car" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -105,7 +94,6 @@ FROM
 WHERE
 	x."Name" = 'Special'
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

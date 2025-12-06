@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
 	[s].[Id]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Enum] IN (N'THREE', N'FOUR')
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[s].[Enum] IN (N'THREE', NULL)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[s].[Enum] IN (N'THREE', N'TWO')
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
@@ -38,7 +34,6 @@ FROM
 WHERE
 	[s].[Enum] NOT IN (NULL, N'TWO')
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)

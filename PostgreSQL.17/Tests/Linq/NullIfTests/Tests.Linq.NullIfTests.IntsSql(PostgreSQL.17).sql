@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	NULLIF(s."Int", 2)
@@ -8,7 +7,24 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."Int" = 2
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."Int" <> 2
+
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,17 +34,49 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	NULLIF(s."Int", NULL)
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."Int" = 4
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."Int" <> 4
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	s."Int"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	1 = 0
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -38,7 +86,24 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableInt" = 2 OR s."NullableInt" IS NULL
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."NullableInt" = 2 OR s."NullableInt" IS NULL)
+
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,13 +113,48 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	NULLIF(s."NullableInt", NULL)
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableInt" = 4 OR s."NullableInt" IS NULL
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."NullableInt" = 4 OR s."NullableInt" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	s."NullableInt"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableInt" IS NULL
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableInt" IS NOT NULL
 

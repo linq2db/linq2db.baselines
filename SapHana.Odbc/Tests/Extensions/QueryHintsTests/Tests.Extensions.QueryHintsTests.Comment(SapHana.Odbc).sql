@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	"Parent" "p"
 ---
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

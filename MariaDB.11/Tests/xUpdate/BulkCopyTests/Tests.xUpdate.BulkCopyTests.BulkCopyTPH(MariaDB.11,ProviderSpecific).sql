@@ -1,8 +1,6 @@
-﻿BeforeExecute
-INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool)
+﻿INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Discriminator`,
@@ -16,8 +14,7 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,
@@ -32,8 +29,7 @@ WHERE
 	`x`.`Discriminator` = 1
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,
@@ -48,8 +44,7 @@ WHERE
 	`x`.`Discriminator` = 2
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,
@@ -64,8 +59,7 @@ WHERE
 	`x`.`Discriminator` = 3
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,
@@ -80,8 +74,7 @@ WHERE
 	`x`.`Value1` = 'Str1'
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,
@@ -96,8 +89,7 @@ WHERE
 	`x`.`Value2` = 'Str2'
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`Discriminator`,

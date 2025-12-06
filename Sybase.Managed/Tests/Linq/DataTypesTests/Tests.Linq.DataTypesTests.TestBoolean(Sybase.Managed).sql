@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [BooleanTable]
@@ -108,7 +100,6 @@ INSERT INTO [BooleanTable]
 SELECT 1,1,0 UNION ALL
 SELECT 2,0,1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -120,14 +111,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [BooleanTable]
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [BooleanTable]
@@ -139,7 +128,6 @@ INSERT INTO [BooleanTable]
 SELECT 1,1,0 UNION ALL
 SELECT 2,0,1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

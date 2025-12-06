@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."CardTypeId",
@@ -16,7 +15,6 @@ SELECT
 FROM
 	"Person2562" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

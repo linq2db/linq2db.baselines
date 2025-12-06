@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
@@ -65,7 +63,6 @@ FROM
 WHERE
 	[t1].[ID] = 1000
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]

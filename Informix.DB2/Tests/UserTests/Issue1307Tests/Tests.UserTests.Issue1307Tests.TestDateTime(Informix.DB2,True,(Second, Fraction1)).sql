@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO DateTimeTestTable
 (
@@ -10,7 +9,6 @@ VALUES
 	TO_DATE('2134-05-21 13:45:43.12345', '%Y-%m-%d %H:%M:%S.%F5')
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

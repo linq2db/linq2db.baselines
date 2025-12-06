@@ -1,4 +1,21 @@
-﻿BeforeExecute
+﻿-- Informix.DB2 Informix
+
+SELECT FIRST 1
+	r.ID,
+	r.MoneyValue,
+	r.DateTimeValue,
+	r.DateTimeValue2,
+	r.BoolValue,
+	r.GuidValue,
+	r.SmallIntValue,
+	r.IntValue,
+	r.BigIntValue,
+	r.StringValue
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 1
+
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -17,26 +34,6 @@ FROM
 WHERE
 	r.ID = 1
 
-BeforeExecute
--- Informix.DB2 Informix
-
-SELECT FIRST 1
-	r.ID,
-	r.MoneyValue,
-	r.DateTimeValue,
-	r.DateTimeValue2,
-	r.BoolValue,
-	r.GuidValue,
-	r.SmallIntValue,
-	r.IntValue,
-	r.BigIntValue,
-	r.StringValue
-FROM
-	LinqDataTypes r
-WHERE
-	r.ID = 1
-
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1.1100
@@ -74,7 +71,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -95,7 +91,6 @@ FROM
 WHERE
 	r.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1.1100
@@ -133,7 +128,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1

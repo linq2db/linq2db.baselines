@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TInserted]
@@ -18,8 +16,7 @@ CREATE TABLE [tempdb]..[#TInserted]
 	PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
 )
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -44,7 +41,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -53,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#TInserted] [c_1]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -64,13 +59,11 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#TInserted]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TInserted]
 
-BeforeExecute
 -- SqlServer.2012
 
 DELETE [c_1]

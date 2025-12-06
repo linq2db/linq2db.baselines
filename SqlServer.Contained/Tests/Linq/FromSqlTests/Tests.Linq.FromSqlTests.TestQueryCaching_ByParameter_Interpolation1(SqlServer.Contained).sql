@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = NULL
 
@@ -10,7 +9,6 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Interpolation1*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
@@ -22,7 +20,6 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Interpolation1*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = NULL
@@ -34,7 +31,6 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Interpolation1*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 2
@@ -46,7 +42,6 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Interpolation1*/
 	) [t1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 3

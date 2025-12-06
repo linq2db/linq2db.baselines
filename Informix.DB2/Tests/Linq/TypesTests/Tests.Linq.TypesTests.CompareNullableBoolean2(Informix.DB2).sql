@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.ID,
@@ -14,7 +13,6 @@ FROM
 	LinqDataTypes t1
 		INNER JOIN LinqDataTypes t2 ON t1.ID = t2.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @param2 Char(1) -- StringFixedLength
 SET     @param2 = 'f'

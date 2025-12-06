@@ -1,19 +1,18 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 CREATE TEMPORARY TABLE "TempTable"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "TempTable"
 (
@@ -24,12 +23,10 @@ SELECT
 FROM
 	"Parent" p
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE "TempTable"

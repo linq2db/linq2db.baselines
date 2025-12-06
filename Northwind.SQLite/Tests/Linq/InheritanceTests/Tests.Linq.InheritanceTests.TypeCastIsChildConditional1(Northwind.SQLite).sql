@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[x].[Discontinued],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[Products] [x]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT

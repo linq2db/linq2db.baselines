@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @ncCodeBo NVarChar(4000) -- String
 SET     @ncCodeBo = N'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [InheritanceParent] [Target]
@@ -42,7 +38,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -50,7 +45,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [InheritanceParent] [Target]
@@ -85,7 +79,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -93,5 +86,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

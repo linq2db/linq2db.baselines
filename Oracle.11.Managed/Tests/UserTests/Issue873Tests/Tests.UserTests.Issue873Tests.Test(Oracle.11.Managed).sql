@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	' ' || CAST(Coalesce(f."Value1", 0) AS VarChar(255)),

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Parent"
@@ -22,7 +20,6 @@ FROM
 WHERE
 	"c_1"."ChildID" = 11
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

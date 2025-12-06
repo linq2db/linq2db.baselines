@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[r].[ID] >= 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
@@ -23,7 +21,6 @@ VALUES
 	@tt
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]

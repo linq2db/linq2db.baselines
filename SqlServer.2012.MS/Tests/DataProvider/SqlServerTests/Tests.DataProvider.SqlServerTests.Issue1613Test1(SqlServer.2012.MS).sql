@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[g_1].[dt]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[g_1].[dt]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

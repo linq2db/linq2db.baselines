@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -42,22 +41,21 @@ FROM
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "FluentTemp"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -79,7 +77,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -91,22 +88,21 @@ FROM
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "FluentTemp"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Column"   NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -128,7 +124,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -140,22 +135,21 @@ FROM
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "FluentTemp"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Column"   NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -177,7 +171,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -189,7 +182,6 @@ FROM
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "FluentTemp"

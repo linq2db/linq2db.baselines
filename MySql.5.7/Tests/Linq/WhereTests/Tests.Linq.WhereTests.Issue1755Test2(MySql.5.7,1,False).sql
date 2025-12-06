@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	`c_1`.`ParentID` = @id AND `c_1`.`Value1` IS NOT NULL
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

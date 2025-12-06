@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -16,7 +15,6 @@ WHERE
 			[Child] [c_1]
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

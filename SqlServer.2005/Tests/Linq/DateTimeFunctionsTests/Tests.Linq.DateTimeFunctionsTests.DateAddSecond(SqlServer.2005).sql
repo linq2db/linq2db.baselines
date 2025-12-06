@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	DatePart(second, DateAdd(second, 41, [t].[DateTimeValue]))

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
 DECLARE @p2  -- Int32

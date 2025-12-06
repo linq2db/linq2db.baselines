@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"r"."Id",
@@ -19,7 +18,6 @@ WHERE
 			"r"."Value2" = "r_1"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -52,7 +49,6 @@ WHERE
 			"r"."Value2" = "r_1"."Value4"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -64,7 +60,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -85,7 +80,6 @@ WHERE
 			"r"."Value5" = "r_1"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -97,7 +91,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -118,7 +111,6 @@ WHERE
 			"r"."Value5" = "r_1"."Value4" OR "r"."Value5" IS NULL AND "r_1"."Value4" IS NULL
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -130,7 +122,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -151,7 +142,6 @@ WHERE
 			"r"."Value2" = "r_1"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -163,7 +153,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -184,7 +173,6 @@ WHERE
 			"r"."Value2" = "r_1"."Value4"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -196,7 +184,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -217,7 +204,6 @@ WHERE
 			"r"."Value5" = "r_1"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -229,7 +215,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -250,7 +235,6 @@ WHERE
 			"r"."Value5" = "r_1"."Value4" OR "r"."Value5" IS NULL AND "r_1"."Value4" IS NULL
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

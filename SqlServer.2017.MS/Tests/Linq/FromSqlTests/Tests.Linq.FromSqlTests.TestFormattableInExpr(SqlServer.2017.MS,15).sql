@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @startId Int -- Int32
 SET     @startId = 5

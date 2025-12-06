@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	LEAD([p].[ProcessName], 2) OVER(ORDER BY [p].[ProcessID])
 FROM
 	[Issue1799Table3] [p]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	[Issue1799Table3] [p]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	[Issue1799Table3] [p]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

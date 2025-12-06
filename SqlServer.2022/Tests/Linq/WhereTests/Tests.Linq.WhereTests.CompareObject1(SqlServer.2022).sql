@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 DECLARE @ChildID Int -- Int32

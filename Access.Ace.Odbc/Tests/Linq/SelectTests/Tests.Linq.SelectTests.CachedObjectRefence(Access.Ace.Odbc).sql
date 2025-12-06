@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[FirstName],
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

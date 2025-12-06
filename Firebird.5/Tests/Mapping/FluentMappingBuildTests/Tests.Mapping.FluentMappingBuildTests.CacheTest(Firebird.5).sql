@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
@@ -8,12 +7,13 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -35,7 +35,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -47,7 +46,6 @@ FROM
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -55,7 +53,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -65,12 +62,13 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -92,7 +90,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -104,7 +101,6 @@ FROM
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -112,7 +108,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -122,12 +117,13 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Column"   VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -149,7 +145,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -161,7 +156,6 @@ FROM
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -169,7 +163,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -179,12 +172,13 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Column"   VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -206,7 +200,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -218,7 +211,6 @@ FROM
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN

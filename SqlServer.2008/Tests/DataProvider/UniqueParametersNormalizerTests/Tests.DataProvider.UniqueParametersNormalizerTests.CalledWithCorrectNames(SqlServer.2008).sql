@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008 (asynchronously)
+﻿-- SqlServer.2008
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'test%'
 DECLARE @search_1 NVarChar(4000) -- String

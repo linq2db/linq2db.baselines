@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @true_value VarChar(1) -- AnsiString
 SET     @true_value = 'Y'
 DECLARE @true_value VarChar(1) -- AnsiString

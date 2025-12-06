@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @param BigInt -- Int64
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	? = "t1"."BigIntValue"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -9,17 +6,9 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -27,9 +16,6 @@ SELECT
 FROM
 	"Table404One" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @cond Integer -- Int32
 SET     @cond = 0
@@ -40,19 +26,11 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
 	d."Usage" = :cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -60,9 +38,6 @@ SELECT
 FROM
 	"Table404One" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @cond Integer -- Int32
 SET     @cond = 1
@@ -73,19 +48,11 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
 	d."Usage" = :cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -93,9 +60,6 @@ SELECT
 FROM
 	"Table404One" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -104,17 +68,9 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -122,9 +78,6 @@ SELECT
 FROM
 	"Table404One" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @cond Integer -- Int32
 SET     @cond = 0
@@ -135,19 +88,11 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
 	d."Usage" = :cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -155,9 +100,6 @@ SELECT
 FROM
 	"Table404One" t1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @cond Integer -- Int32
 SET     @cond = 1
@@ -168,19 +110,11 @@ SELECT
 	d."Usage",
 	d."FirstTableId"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Table404One" t1
-	) m_1
+	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 WHERE
 	d."Usage" = :cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

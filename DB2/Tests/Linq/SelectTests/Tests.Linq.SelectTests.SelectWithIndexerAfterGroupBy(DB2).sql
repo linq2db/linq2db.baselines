@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Key_1",
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	"x"."Key_1" DESC
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

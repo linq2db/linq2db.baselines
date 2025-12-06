@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -15,7 +13,6 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -33,8 +30,7 @@ VALUES
 	@Name
 )
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [FluentTemp] [Target]
 USING (VALUES
@@ -64,8 +60,7 @@ VALUES
 )
 ;
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [FluentTemp]
 

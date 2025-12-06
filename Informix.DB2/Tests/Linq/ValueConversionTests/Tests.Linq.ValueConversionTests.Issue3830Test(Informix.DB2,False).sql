@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	r.Bool1 = @Bool1 AND r.Bool2 IS NULL AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
@@ -28,7 +26,6 @@ FROM
 WHERE
 	r.Bool1 = @true_value AND r.Bool2 IS NULL AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
@@ -43,7 +40,6 @@ FROM
 WHERE
 	r.Bool3 IS NULL AND r.Bool1 = @Bool1 AND r.Bool2 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
@@ -58,7 +54,6 @@ FROM
 WHERE
 	r.Bool2 IS NULL AND r.Bool1 = @Bool1 AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
@@ -75,7 +70,6 @@ FROM
 WHERE
 	r.Bool1 = @Bool1 AND r.Bool2 IS NULL AND r.Bool3 = @Bool3
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
@@ -92,7 +86,6 @@ FROM
 WHERE
 	r.Bool3 = @true_value AND r.Bool1 = @Bool1 AND r.Bool2 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @false_value Char(1) -- StringFixedLength
 SET     @false_value = 'N'
@@ -109,7 +102,6 @@ FROM
 WHERE
 	r.Bool1 = @false_value AND r.Bool2 IS NULL AND r.Bool3 = @Bool3
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
@@ -126,7 +118,6 @@ FROM
 WHERE
 	r.Bool2 IS NULL AND r.Bool1 = @Bool1 AND r.Bool3 = @Bool3
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
@@ -143,7 +134,6 @@ FROM
 WHERE
 	r.Bool1 = @Bool1 AND r.Bool2 = @Bool2 AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @false_value Char(1) -- StringFixedLength
 SET     @false_value = 'N'
@@ -160,7 +150,6 @@ FROM
 WHERE
 	r.Bool1 = @false_value AND r.Bool2 = @Bool2 AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
@@ -177,7 +166,6 @@ FROM
 WHERE
 	r.Bool3 IS NULL AND r.Bool1 = @Bool1 AND r.Bool2 = @Bool2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
@@ -192,7 +180,6 @@ FROM
 WHERE
 	r.Bool2 IS NOT NULL AND r.Bool1 = @Bool1 AND r.Bool3 IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
@@ -211,7 +198,6 @@ FROM
 WHERE
 	r.Bool1 = @Bool1 AND r.Bool2 = @Bool2 AND r.Bool3 = @Bool3
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
@@ -230,7 +216,6 @@ FROM
 WHERE
 	r.Bool1 = @true_value AND r.Bool2 = @Bool2 AND r.Bool3 = @Bool3
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
@@ -249,7 +234,6 @@ FROM
 WHERE
 	r.Bool3 = @true_value AND r.Bool1 = @Bool1 AND r.Bool2 = @Bool2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'

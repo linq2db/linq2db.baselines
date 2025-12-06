@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Parent"
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Child"
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value1 Int32
 SET     @Value1 = 5

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`x`.`Id`,
 	`x`.`Country`,
 	`x`.`State`
 FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"p".ID,
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"p"."GuidValue" = X'40932FDB15434E4AAC2CCA371604FB4B'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

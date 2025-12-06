@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id AND [p].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1

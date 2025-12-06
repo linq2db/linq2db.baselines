@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32
@@ -16,7 +15,6 @@ WHERE
 ORDER BY
 	[p].[ParentID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2

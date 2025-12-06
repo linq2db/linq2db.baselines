@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
 	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > 1
+			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ChildID] > 1
 	)
 FROM
 	[Parent] [p]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[it_1].[cond],
@@ -23,7 +22,6 @@ FROM
 WHERE
 	[it_1].[ColorName] = 'Red'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

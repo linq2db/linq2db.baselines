@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`a_2`.`ParentID`,
@@ -22,8 +21,7 @@ FROM
 		LEFT JOIN `Parent` `z_1` ON `a_2`.`ParentID` = Coalesce(`z_1`.`Value1`, 1)
 		LEFT JOIN `Parent` `a_1` ON `a_2`.`ParentID` = `a_1`.`ParentID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,

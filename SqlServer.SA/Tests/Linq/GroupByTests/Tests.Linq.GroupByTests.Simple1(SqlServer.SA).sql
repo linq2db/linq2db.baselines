@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -16,7 +13,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

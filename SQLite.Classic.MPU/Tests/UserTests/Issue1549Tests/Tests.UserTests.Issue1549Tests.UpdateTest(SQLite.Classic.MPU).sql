@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 UPDATE
 	[billing_TempReading]
@@ -12,7 +11,6 @@ WHERE
 	[drt].[Name] = [billing_TempReading].[ReadingTypeName] AND
 	[drt].[DevTypeId] = [billing_TempReading].[Devtypeid]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 UPDATE

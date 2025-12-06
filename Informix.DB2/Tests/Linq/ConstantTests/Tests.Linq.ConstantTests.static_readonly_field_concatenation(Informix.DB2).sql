@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	e.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	e.StringValue || '1' = 'StrValue1'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

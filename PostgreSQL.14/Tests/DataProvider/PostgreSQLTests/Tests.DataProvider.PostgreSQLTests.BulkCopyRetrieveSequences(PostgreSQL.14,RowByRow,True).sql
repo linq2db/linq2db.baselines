@@ -1,18 +1,15 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT nextval('sequencetestseq') FROM generate_series(1, 40)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue1'
 
@@ -27,8 +24,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue2'
 
@@ -43,8 +39,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue3'
 
@@ -59,8 +54,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue4'
 
@@ -75,8 +69,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue5'
 
@@ -91,8 +84,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue6'
 
@@ -107,8 +99,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue7'
 
@@ -123,8 +114,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue8'
 
@@ -139,8 +129,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(9) -- String
 SET     @Value = 'SeqValue9'
 
@@ -155,8 +144,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue10'
 
@@ -171,8 +159,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue11'
 
@@ -187,8 +174,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue12'
 
@@ -203,8 +189,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue13'
 
@@ -219,8 +204,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue14'
 
@@ -235,8 +219,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue15'
 
@@ -251,8 +234,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue16'
 
@@ -267,8 +249,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue17'
 
@@ -283,8 +264,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue18'
 
@@ -299,8 +279,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue19'
 
@@ -315,8 +294,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue20'
 
@@ -331,8 +309,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue21'
 
@@ -347,8 +324,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue22'
 
@@ -363,8 +339,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue23'
 
@@ -379,8 +354,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue24'
 
@@ -395,8 +369,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue25'
 
@@ -411,8 +384,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue26'
 
@@ -427,8 +399,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue27'
 
@@ -443,8 +414,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue28'
 
@@ -459,8 +429,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue29'
 
@@ -475,8 +444,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue30'
 
@@ -491,8 +459,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue31'
 
@@ -507,8 +474,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue32'
 
@@ -523,8 +489,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue33'
 
@@ -539,8 +504,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue34'
 
@@ -555,8 +519,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue35'
 
@@ -571,8 +534,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue36'
 
@@ -587,8 +549,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue37'
 
@@ -603,8 +564,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue38'
 
@@ -619,8 +579,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue39'
 
@@ -635,8 +594,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(10) -- String
 SET     @Value = 'SeqValue40'
 
@@ -651,8 +609,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"SequenceTest1" t1

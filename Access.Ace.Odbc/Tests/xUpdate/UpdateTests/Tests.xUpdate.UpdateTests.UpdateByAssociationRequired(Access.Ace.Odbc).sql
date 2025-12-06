@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -19,7 +18,6 @@ SET
 WHERE
 	[cross_1].[Id] = ? AND [a_AssociatedRequired].[Id] = [cross_1].[Id_1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

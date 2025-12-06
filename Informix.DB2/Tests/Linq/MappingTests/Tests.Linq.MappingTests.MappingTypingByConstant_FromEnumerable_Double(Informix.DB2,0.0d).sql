@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	arg.Id,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1::Int AS Id, 0::Float AS "Value" FROM table(set{1})) arg ON entity.PersonID = arg.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

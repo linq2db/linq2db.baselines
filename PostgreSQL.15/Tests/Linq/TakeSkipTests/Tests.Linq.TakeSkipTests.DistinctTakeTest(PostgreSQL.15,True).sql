@@ -1,11 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT DISTINCT
-	t1."Value"
+	r."Value"
 FROM
-	"TakeSkipClass" t1
+	"TakeSkipClass" r
 LIMIT :take
 

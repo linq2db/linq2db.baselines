@@ -1,16 +1,11 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SET GLOBAL local_infile=ON
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT Max(`PersonID`) FROM `Person`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Person`
@@ -28,5 +23,3 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
-BeforeExecute
-DisposeTransaction

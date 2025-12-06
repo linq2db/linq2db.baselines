@@ -1,7 +1,6 @@
-﻿BeginTransaction(RepeatableRead)
+﻿
 
-
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."OrderID",
@@ -32,10 +31,9 @@ WHERE
 
 
 
-DisposeTransaction
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."IsDeleted",

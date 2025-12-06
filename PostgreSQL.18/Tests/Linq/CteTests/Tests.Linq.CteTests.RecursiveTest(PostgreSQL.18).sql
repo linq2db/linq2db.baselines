@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 WITH RECURSIVE "MY_CTE" ("ChildID", "ParentID", "GrandChildID")
 AS

@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- SqlCe
-DECLARE @p Int -- Int32
-SET     @p = 5
+﻿-- SqlCe
 
 SELECT
-	@p as [c1]
+	5 as [c1]
 

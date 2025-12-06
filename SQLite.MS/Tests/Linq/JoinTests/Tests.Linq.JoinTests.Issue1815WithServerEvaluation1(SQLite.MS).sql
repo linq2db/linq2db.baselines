@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[InId],
@@ -18,7 +17,6 @@ WHERE
 	[t1].[InId] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

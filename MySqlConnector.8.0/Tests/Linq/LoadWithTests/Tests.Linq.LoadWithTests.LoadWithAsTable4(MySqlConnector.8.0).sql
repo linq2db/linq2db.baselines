@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`ParentID`,
@@ -20,7 +17,6 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -30,5 +26,3 @@ FROM
 	`Parent` `t`
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

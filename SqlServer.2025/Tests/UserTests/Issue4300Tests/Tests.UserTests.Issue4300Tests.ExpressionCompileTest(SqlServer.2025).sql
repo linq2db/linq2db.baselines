@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'Some1'
 
@@ -17,7 +16,6 @@ WHERE
 			[row1].[NAME1] = @str
 	)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'Some2'

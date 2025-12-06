@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"x"."Value1",
@@ -17,7 +16,6 @@ FROM
 WHERE
 	"p2"."ParentID" <= 3
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

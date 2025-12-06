@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	EXISTS(
@@ -10,7 +9,6 @@ SELECT
 				LEFT JOIN (
 					SELECT
 						c_1.ParentID as ParentID,
-						c_1.ChildID as ChildID,
 						ROW_NUMBER() OVER (PARTITION BY c_1.ParentID ORDER BY c_1.ParentID) as rn
 					FROM
 						Child c_1

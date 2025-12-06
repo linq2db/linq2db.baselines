@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			"p"."ParentID" + CAST(@n AS Int) = "c_1"."ParentID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

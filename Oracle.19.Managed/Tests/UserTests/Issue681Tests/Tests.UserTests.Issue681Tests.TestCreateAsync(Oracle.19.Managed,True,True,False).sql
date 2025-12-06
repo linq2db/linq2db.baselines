@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -17,8 +15,7 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "Issue681Table2"@XE
 (
@@ -28,8 +25,7 @@ CREATE TABLE "Issue681Table2"@XE
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
 )
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';

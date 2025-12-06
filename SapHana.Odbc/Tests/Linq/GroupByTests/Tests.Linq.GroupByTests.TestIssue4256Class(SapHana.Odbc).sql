@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"it_1"."IsActive",
@@ -19,7 +18,6 @@ GROUP BY
 	"it_1"."IsActive",
 	"it_1"."Other"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

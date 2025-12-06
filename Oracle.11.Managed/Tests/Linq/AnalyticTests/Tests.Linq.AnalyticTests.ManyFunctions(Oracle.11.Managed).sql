@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	RANK() OVER(PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1", c_1."ChildID", c_1."ParentID"),

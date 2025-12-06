@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" > 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Parent"
@@ -32,7 +30,6 @@ FROM
 			"GrandChild" "c_2"
 	) "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	"c_1"."ParentID" > 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

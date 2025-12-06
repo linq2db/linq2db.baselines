@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -22,7 +21,6 @@ FROM
 				"t"."ParentID" = 2
 		) "t1" ON "m_1"."ParentID" = "t1"."ParentID"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

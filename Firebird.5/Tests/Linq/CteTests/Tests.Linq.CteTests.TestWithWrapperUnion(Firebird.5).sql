@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	CTE_1 "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 WITH CTE_1

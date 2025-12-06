@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.ID,
@@ -10,7 +9,6 @@ FROM
 WHERE
 	t1.TestField = toInt8(0)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

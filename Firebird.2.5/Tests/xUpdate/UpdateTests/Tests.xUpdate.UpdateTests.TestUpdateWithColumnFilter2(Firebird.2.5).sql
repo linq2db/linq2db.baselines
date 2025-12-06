@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	"x"."FirstName" = @FirstName
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -54,7 +51,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -70,7 +66,6 @@ FROM
 WHERE
 	"x"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -93,7 +88,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

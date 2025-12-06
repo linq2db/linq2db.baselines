@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 5
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[child_1].[ChildID] = 10000
 
-BeforeExecute
 -- SqlServer.2022
 
 DELETE [x]
@@ -48,7 +44,6 @@ FROM
 WHERE
 	[x].[ChildID] = 10000
 
-BeforeExecute
 -- SqlServer.2022
 
 DELETE [x]

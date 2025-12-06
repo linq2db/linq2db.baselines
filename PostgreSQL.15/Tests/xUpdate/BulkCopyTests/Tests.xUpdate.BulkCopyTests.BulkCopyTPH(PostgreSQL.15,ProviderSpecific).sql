@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, Value3, NullableBool)
+﻿INSERT BULK "TPHTable"(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -32,7 +29,6 @@ WHERE
 	x."Discriminator" = 1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,7 +44,6 @@ WHERE
 	x."Discriminator" = 2
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -64,7 +59,6 @@ WHERE
 	x."Discriminator" = 3
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -80,7 +74,6 @@ WHERE
 	x."Value1" = 'Str1'
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -96,7 +89,6 @@ WHERE
 	x."Value2" = 'Str2'
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

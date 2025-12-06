@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."ParentID",
-	"t1"."ChildID"
+	"t1"."MaxChild"
 FROM
 	"Parent" "p"
 		LEFT JOIN LATERAL (
 			SELECT
-				"c_1"."ChildID"
+				"c_1"."ChildID" as "MaxChild"
 			FROM
 				"Child" "c_1"
 					LEFT JOIN "Parent" "a_Parent" ON "c_1"."ParentID" = "a_Parent"."ParentID"

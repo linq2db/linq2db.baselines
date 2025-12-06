@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @ps UniVarChar(4) -- String
 SET     @ps = '%~[%'
 

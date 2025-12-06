@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -67,7 +65,6 @@ FROM
 WHERE
 	[t1].[ID] = 1000
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM

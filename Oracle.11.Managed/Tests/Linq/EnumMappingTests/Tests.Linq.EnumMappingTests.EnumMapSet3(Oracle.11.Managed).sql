@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	r.ID >= 101 AND r.ID < :p
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
@@ -32,7 +29,6 @@ SET
 WHERE
 	r.ID = 101 AND r."IntValue" = 3
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	r.ID = 101 AND r."IntValue" = 4
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Int32
 SET     @p = 102

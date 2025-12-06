@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"p"."FirstName"
@@ -11,7 +10,6 @@ SELECT
 FROM
 	"Person" "p_1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

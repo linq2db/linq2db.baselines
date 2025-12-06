@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	r.Id,
@@ -82,7 +81,6 @@ FROM
 WHERE
 	r.Id <> -1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

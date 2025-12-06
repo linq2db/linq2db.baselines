@@ -1,15 +1,14 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[o].[ParentID],
-	[t1].[COUNT_1],
-	[t2].[SUM_1]
+	[t1].[CountResult],
+	[t2].[SumResult]
 FROM
 	[Parent] [o]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [CountResult]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -17,28 +16,26 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children_1].[ParentID]) as [SUM_1]
+				SUM([a_Children_1].[ParentID]) as [SumResult]
 			FROM
 				[Child] [a_Children_1]
 			WHERE
 				[o].[ParentID] = [a_Children_1].[ParentID]
 		) [t2]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [o]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],
-	[t2].[SUM_1]
+	[t2].[SumResult]
 FROM
 	[Parent] [x]
 		OUTER APPLY (
@@ -51,7 +48,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children_1].[ParentID]) as [SUM_1]
+				SUM([a_Children_1].[ParentID]) as [SumResult]
 			FROM
 				[Child] [a_Children_1]
 			WHERE

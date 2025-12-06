@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	LinqDataTypes
 WHERE
 	LinqDataTypes.ID > 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @arr VarBinary(4) -- Binary
 SET     @arr = {1,2,3,4}
@@ -24,7 +22,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -40,7 +37,6 @@ FROM
 WHERE
 	t.ID = 1001
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

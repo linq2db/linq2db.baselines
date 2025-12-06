@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 2
 DECLARE @Int2 Int -- Int32
@@ -30,7 +29,6 @@ SET
 WHERE
 	[ParameterDeduplication].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Int1 Int -- Int32
 SET     @Int1 = 3
@@ -62,7 +60,6 @@ SET
 WHERE
 	[ParameterDeduplication].[Id] = @Id
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT

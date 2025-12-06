@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."ParentID",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	(

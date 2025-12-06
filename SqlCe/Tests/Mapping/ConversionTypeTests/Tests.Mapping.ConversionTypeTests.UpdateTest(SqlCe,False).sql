@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
-BeforeExecute
 -- SqlCe
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = @p
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

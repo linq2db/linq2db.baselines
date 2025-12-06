@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 INSERT INTO [TestBool]
 (
@@ -12,7 +11,6 @@ VALUES
 	False
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -21,16 +19,13 @@ SELECT TOP 2
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
 	[TestBool] [t1]
 SET
-	[t1].[Id] = 1,
 	[t1].[Value] = NOT [t1].[Value]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -39,7 +34,6 @@ SELECT TOP 2
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 UPDATE
@@ -48,7 +42,6 @@ SET
 	[t1].[Id] = 1,
 	[t1].[Value] = False
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2

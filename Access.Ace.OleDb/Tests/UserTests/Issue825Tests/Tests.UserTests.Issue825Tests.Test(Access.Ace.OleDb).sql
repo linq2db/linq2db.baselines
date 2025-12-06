@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @userId Integer -- Int32
 SET     @userId = 32
 DECLARE @childId Integer -- Int32

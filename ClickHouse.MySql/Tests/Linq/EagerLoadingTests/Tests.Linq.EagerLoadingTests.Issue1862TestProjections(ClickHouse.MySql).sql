@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -29,7 +28,6 @@ WHERE
 ORDER BY
 	d_1.TagId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -50,7 +48,6 @@ FROM
 ORDER BY
 	d.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

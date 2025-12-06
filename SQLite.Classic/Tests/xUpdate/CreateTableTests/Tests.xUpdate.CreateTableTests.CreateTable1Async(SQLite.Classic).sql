@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TestTable]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 CREATE TABLE [TestTable]
 (
@@ -14,8 +12,7 @@ CREATE TABLE [TestTable]
 	[CreatedOn] DateTime2          NULL
 )
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -25,8 +22,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 DROP TABLE [TestTable]
 

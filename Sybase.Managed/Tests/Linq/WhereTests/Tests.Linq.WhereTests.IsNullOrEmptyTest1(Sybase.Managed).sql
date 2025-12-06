@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	NOT ([nm].[MiddleName] IS NULL OR CHAR_LENGTH([nm].[MiddleName]) = 0)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

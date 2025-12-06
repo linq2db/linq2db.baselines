@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarWChar(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON ([m_1].[Id] = [d].[TopicId])
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -51,5 +46,3 @@ FROM
 WHERE
 	[x].[Id] = 6
 
-BeforeExecute
-DisposeTransaction

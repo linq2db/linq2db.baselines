@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID]
 OFFSET 3 ROWS
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

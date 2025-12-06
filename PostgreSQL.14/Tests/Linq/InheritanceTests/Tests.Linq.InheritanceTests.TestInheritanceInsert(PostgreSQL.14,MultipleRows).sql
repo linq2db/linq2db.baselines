@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "InheritanceFilter"
 (
@@ -20,8 +19,7 @@ VALUES
 (5,21,0,25,0,0,15,0),
 (6,22,0,26,0,0,0,16)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Code",

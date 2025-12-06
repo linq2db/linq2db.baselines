@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE 'TestSt%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	[r].[CaseInsensitive] LIKE 'TestSt%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE 'testst%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

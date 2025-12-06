@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 UPDATE
 	"TableToInsert"
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"TableToInsert"."Id" = r."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

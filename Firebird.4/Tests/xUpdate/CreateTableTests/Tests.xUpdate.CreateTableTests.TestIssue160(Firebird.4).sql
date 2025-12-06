@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 CREATE TABLE "aa"
 (
@@ -9,7 +8,6 @@ CREATE TABLE "aa"
 	CONSTRAINT "PK_aa" PRIMARY KEY ("bb")
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	@cc
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	"aa" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DROP TABLE "aa"

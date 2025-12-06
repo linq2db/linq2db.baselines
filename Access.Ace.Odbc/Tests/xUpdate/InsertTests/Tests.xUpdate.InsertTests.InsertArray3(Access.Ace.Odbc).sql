@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @arr VarBinary(4) -- Binary
 SET     @arr = 0x01020304
@@ -24,7 +22,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
@@ -40,7 +37,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

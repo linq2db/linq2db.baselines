@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id`,
@@ -22,30 +19,10 @@ FROM
 		FROM
 			`Issue4596Form` `t1`
 		LIMIT 1
-	) `m_1`,
-	`Issue4596Item` `d`
-WHERE
-	`d`.`FormId` = `m_1`.`Id`
-ORDER BY
-	CASE
-		WHEN `m_1`.`cond` THEN `d`.`OrderIndex`
-		ELSE 0
-	END,
-	CASE
-		WHEN `m_1`.`cond_1` THEN `d`.`Name1`
-		ELSE ''
-	END,
-	CASE
-		WHEN `m_1`.`cond_1` THEN `d`.`Name2`
-		ELSE ''
-	END,
-	CASE
-		WHEN `m_1`.`cond_1` THEN `d`.`Name3`
-		ELSE ''
-	END
+	) `m_1`
+		INNER JOIN `Issue4596Item` `d` ON `d`.`FormId` = `m_1`.`Id`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -56,5 +33,3 @@ FROM
 	`Issue4596Form` `t1`
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "Dest1"
@@ -37,24 +36,21 @@ SELECT
 	42 as N
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)

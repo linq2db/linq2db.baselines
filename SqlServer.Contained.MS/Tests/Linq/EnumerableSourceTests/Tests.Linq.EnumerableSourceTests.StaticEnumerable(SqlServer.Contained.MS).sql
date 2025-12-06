@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[p].[FirstName],
@@ -21,7 +20,6 @@ WHERE
 			[v].[item] = [p].[PersonID]
 	)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

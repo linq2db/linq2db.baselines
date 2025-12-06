@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'
 
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[x_1].[FirstName] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'

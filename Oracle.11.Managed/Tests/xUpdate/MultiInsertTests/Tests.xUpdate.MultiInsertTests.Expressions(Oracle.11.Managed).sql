@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT ALL
 WHEN N < 0 THEN
@@ -29,7 +28,6 @@ SELECT
 	3000 as ID
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -37,7 +35,6 @@ SELECT
 FROM
 	"Dest1" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -47,7 +44,6 @@ FROM
 WHERE
 	x.ID = 3002
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT ALL
@@ -78,7 +74,6 @@ SELECT
 	42 as N
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

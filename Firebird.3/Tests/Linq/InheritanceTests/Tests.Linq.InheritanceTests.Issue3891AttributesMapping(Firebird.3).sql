@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -41,7 +39,6 @@ FROM
 	"Base" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
@@ -64,7 +61,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

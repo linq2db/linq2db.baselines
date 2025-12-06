@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String

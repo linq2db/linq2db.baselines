@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -9,7 +8,6 @@ FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
@@ -20,7 +18,6 @@ FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Double
 SET     @value = 6579.6464800000003
@@ -31,35 +28,32 @@ FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS Float)
+	CAST(@value AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS Float)
+	CAST(@value AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT
-	CAST(@value AS Float)
+	CAST(@value AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY

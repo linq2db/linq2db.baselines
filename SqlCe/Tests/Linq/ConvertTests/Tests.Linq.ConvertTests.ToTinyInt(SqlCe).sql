@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CAST([t].[MoneyValue] AS TinyInt) as [c1]

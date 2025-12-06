@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] >= 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 WHERE
 	[p].[Value1] < 2 OR [p].[Value1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -38,7 +34,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -49,7 +44,6 @@ FROM
 WHERE
 	2 <= [p].[Value1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -58,7 +52,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -69,7 +62,6 @@ FROM
 WHERE
 	2 > [p].[Value1] OR [p].[Value1] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 10
 DECLARE @ID Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[Issue681Table].[ID] = @ID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 5
@@ -30,7 +28,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 10

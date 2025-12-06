@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [BananaTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	'test1'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -21,7 +19,6 @@ SELECT
 FROM
 	[BananaTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Property  -- Object
 SET     @Property = 'banana'
@@ -35,7 +32,6 @@ SET
 WHERE
 	[BananaTable].[Id] = @filter
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

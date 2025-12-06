@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[s].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[s].[FirstName] <> N''
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

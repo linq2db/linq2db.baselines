@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -30,7 +29,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -42,7 +40,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
@@ -74,7 +71,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_insert_or_replace AS t1
 (
@@ -13,7 +12,6 @@ VALUES
 )
 ON CONFLICT (id) DO NOTHING
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO test_insert_or_replace AS t1

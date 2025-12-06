@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 99
 DECLARE @Data Binary(5)
@@ -20,7 +19,6 @@ VALUES
 	@DataB
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -28,7 +26,6 @@ SELECT
 FROM
 	[Issue2691Table] [x]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[Issue2691Table] [x]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -44,7 +40,6 @@ SELECT
 FROM
 	[Issue2691Table] [x]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

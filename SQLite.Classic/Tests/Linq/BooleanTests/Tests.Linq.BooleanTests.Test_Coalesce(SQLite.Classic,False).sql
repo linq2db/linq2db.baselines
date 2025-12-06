@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @True  -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @True)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @False  -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @False)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], [r].[Id] % 2 = 1)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithPrimaryKey')) THEN
@@ -14,7 +13,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[g_2].[Key_1]
@@ -13,7 +12,6 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT DISTINCT

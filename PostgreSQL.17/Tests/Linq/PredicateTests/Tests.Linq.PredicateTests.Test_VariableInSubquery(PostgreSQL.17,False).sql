@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -21,7 +20,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -56,7 +53,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -68,7 +64,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -91,7 +86,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -103,7 +97,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -126,7 +119,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -138,7 +130,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
@@ -161,7 +152,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -173,7 +163,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @One Integer -- Int32
 SET     @One = 1
@@ -196,7 +185,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -208,7 +196,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -231,7 +218,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -243,7 +229,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -266,7 +251,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -278,7 +262,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -301,7 +284,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -313,7 +295,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -325,7 +306,6 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	r."Value1" = 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -32,7 +30,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR
 	r."Value4" IS NULL AND r."Value5" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -44,7 +41,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -68,7 +64,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR
 	r."Value4" IS NULL AND r."Value5" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -80,7 +75,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -103,7 +97,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -115,7 +108,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -138,7 +130,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -150,7 +141,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -173,7 +163,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -185,7 +174,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -208,7 +196,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -220,7 +207,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -247,7 +233,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -259,7 +244,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -286,7 +270,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -298,7 +281,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -322,7 +304,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR
 	r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -334,7 +315,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -358,7 +338,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR
 	r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -370,7 +349,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -397,7 +375,6 @@ WHERE
 		ELSE True
 	END
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -409,7 +386,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -436,7 +412,6 @@ WHERE
 		ELSE True
 	END
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -448,7 +423,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -471,7 +445,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NULL))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -483,7 +456,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -506,7 +478,6 @@ WHERE
 			r_1."Value1" = 1
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NULL))
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -518,7 +489,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -545,7 +515,6 @@ WHERE
 		ELSE True
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -557,7 +526,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -584,7 +552,6 @@ WHERE
 		ELSE True
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -596,7 +563,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -619,7 +585,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -631,7 +596,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -654,7 +618,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -666,7 +629,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -689,7 +651,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -701,7 +662,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -724,7 +684,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -736,7 +695,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -759,7 +717,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -771,7 +728,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -794,7 +750,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -806,7 +761,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -829,7 +783,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -841,7 +794,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -864,7 +816,6 @@ WHERE
 			r_1."Value1" = 1
 	) + r."Value5")
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -876,7 +827,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -903,7 +853,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -915,7 +864,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -942,7 +890,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -954,7 +901,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -981,7 +927,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -993,7 +938,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -1020,7 +964,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -1032,7 +975,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -1059,7 +1001,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -1071,7 +1012,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -1098,7 +1038,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -1110,7 +1049,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -1137,7 +1075,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -1149,7 +1086,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @cnt Integer -- Int32
 SET     @cnt = 18
@@ -1176,7 +1112,6 @@ WHERE
 		ELSE False
 	END)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

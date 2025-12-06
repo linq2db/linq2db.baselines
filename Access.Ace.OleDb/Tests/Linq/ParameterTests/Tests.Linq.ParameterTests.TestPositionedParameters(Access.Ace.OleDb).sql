@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @x3 Integer -- Int32
 SET     @x3 = 3
 DECLARE @y10 Integer -- Int32

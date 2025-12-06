@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (VALUES
@@ -20,7 +19,6 @@ VALUES
 	"Source".ID
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SET LOCK_TIMEOUT 1000
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

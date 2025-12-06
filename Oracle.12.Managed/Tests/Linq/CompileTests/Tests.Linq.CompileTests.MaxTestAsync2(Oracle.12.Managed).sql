@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	c_1."ParentID" = :p
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = -1
 

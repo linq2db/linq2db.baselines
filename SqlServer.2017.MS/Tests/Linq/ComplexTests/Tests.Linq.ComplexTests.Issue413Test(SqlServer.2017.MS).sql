@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
@@ -34,7 +32,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
@@ -52,7 +49,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
@@ -70,7 +66,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
@@ -88,7 +83,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
@@ -114,7 +108,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
@@ -140,7 +133,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'aaa%'

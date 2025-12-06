@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
 	`CollatedTable`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	`r`.`CaseSensitive` COLLATE utf8_bin LIKE '%stString' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -47,7 +43,6 @@ FROM
 WHERE
 	`r`.`CaseInsensitive` COLLATE utf8_bin LIKE '%stString' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -57,7 +52,6 @@ FROM
 WHERE
 	`r`.`CaseSensitive` COLLATE utf8_bin LIKE '%ststring' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

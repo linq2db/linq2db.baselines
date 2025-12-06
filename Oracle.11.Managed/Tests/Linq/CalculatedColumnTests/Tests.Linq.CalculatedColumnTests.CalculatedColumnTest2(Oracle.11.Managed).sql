@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."PersonID",
@@ -20,7 +19,6 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

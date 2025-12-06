@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TableToInsert
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	t.Id IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TableToInsert

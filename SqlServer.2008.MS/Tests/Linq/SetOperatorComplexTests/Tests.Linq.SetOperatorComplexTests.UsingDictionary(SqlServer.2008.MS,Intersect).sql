@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	CAST(N'Discriminator' AS NVarChar(4000)),
@@ -25,9 +24,6 @@ FROM
 WHERE
 	[a_Book_1].[Discriminator] = N'Novel'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -53,7 +49,6 @@ FROM
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -68,9 +63,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

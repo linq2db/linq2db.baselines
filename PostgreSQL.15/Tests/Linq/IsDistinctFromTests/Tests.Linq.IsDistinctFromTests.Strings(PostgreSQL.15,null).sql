@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	s."String" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	s."NullableString" IS NOT NULL
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	s."String" IS NULL
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

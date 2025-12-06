@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"i"."Two" = "i"."One" * 2 AND "i"."Three" = "i"."Four" - 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"i"."Four" = "i"."Three"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	"i"."Nil" = "i"."Two"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	1 = "i"."One" AND "i"."Nil" = "i"."Nil" AND 3 = "i"."Three"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019
 DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 

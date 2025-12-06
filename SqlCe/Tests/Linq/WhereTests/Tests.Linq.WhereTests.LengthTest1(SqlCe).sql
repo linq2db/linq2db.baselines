@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	LEN([nm].[MiddleName] + '.') <> 1 OR [nm].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlCe
 
 SELECT

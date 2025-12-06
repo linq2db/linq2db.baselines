@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [Issue681Table2]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [Issue681Table2]
@@ -14,7 +12,6 @@ CREATE TABLE [Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [Issue681Table2]

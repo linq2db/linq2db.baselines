@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Enum] IN (NULL, NULL)
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

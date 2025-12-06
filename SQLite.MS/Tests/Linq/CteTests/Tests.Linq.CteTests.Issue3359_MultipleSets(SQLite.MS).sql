@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 select sqlite_version();
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 WITH [cte] ([FirstName], [LastName])

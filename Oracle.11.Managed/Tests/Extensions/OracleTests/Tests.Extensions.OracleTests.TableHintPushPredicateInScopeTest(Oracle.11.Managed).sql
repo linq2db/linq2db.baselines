@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT /*+ PUSH_PRED(p) PUSH_PRED(c_1) */
 	p."ParentID",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Char(1) -- String

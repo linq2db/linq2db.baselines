@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -42,22 +41,21 @@ FROM
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -79,7 +77,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -91,22 +88,21 @@ FROM
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Column`   VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -128,7 +124,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -140,22 +135,21 @@ FROM
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Column`   VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
@@ -177,7 +171,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -189,7 +182,6 @@ FROM
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `FluentTemp`

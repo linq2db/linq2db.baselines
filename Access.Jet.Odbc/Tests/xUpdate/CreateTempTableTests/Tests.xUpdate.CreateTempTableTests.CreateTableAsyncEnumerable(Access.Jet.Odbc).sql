@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [TempTable]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -11,16 +9,16 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -33,8 +31,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 
@@ -47,8 +44,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 
@@ -61,8 +57,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 4
 
@@ -75,8 +70,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -89,8 +83,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 6
 
@@ -103,8 +96,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 7
 
@@ -117,7 +109,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -126,8 +117,7 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [TempTable]
 

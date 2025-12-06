@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
-	t.ID
+	t.PK,
+	t.ID,
+	t.GV
 FROM
 	test_in_1 t
 WHERE
@@ -15,19 +16,21 @@ WHERE
 			t.ID = p.ID OR t.ID IS NULL AND p.ID IS NULL
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	test_in_1 t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	test_in_2 t1
 

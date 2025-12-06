@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @pattern NVarChar(4000) -- String
 SET     @pattern = N'%h~%n%'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 INSERT INTO "TableWithGuid"
 (
@@ -20,7 +19,6 @@ VALUES
 	'66aa9df9-260f-4a2b-ac50-9ca8ce7ad725'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	"TableWithGuid" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	"x"."Default" = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -53,7 +49,6 @@ FROM
 WHERE
 	"x"."Binary" = X'A948600DDE214F748AC29516B287076E'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -63,7 +58,6 @@ FROM
 WHERE
 	"x"."String" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -73,7 +67,6 @@ FROM
 WHERE
 	"x"."DefaultN" = X'76B1C87522874B82A23B7967C5EAFED8'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -83,7 +76,6 @@ FROM
 WHERE
 	"x"."BinaryN" = X'656606A46E364431ADD685F886A1C7C2'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

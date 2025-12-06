@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[m_1].[Key_1],
@@ -19,9 +16,6 @@ FROM
 WHERE
 	[d].[ParentID] IN (2)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -33,9 +27,6 @@ WHERE
 GROUP BY
 	[x].[ChildID]
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -54,9 +45,6 @@ FROM
 WHERE
 	[d].[ParentID] IN (3)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

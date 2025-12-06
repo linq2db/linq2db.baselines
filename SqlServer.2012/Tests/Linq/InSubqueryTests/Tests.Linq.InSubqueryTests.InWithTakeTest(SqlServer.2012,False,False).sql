@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[c_1].[ParentID],
@@ -19,7 +18,6 @@ WHERE
 			) [t1]
 	)
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -28,7 +26,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

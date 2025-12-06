@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @filter VarChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 VarChar(6) -- String

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarChar(4) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringConverted
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@StringConverted
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

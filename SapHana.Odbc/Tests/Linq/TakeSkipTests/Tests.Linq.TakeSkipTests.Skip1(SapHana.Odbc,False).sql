@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ParentID",
@@ -10,7 +9,6 @@ ORDER BY
 	"t1"."ChildID"
 LIMIT 4200000000 OFFSET 3
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

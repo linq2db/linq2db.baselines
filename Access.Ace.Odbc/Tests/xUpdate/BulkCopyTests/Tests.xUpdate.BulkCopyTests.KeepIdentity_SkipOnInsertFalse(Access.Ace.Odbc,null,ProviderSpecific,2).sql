@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -12,13 +11,11 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 
@@ -31,8 +28,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 300
 
@@ -45,7 +41,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -60,7 +55,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

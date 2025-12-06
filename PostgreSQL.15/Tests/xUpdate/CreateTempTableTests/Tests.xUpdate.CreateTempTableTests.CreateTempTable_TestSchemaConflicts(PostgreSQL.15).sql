@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestTempTable"
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"Id"      Int  NOT NULL,
-	"Renamed" text     NULL
+	"Renamed" text     NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TempTable"
@@ -35,7 +34,6 @@ SELECT
 FROM
 	"TestTempTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestTempTable"
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TempTable"
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"

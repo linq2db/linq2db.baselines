@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	CAST(NOT EXISTS(
@@ -12,7 +11,6 @@ SELECT
 	) AS smallint)
 FROM SYSIBM.SYSDUMMY1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

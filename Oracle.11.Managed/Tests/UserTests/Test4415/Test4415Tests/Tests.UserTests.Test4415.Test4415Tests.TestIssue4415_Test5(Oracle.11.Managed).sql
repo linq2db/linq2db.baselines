@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."LanguageID",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Common_Language" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),

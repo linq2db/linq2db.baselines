@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName Varchar2(7) -- String
@@ -36,8 +34,7 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(5) -- String
 SET     @p = 'John0'
 
@@ -53,8 +50,7 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard' AND
 	ROWNUM <= 2
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Varchar2(7) -- String
@@ -83,8 +79,7 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(5) -- String
 SET     @p = 'John1'
 
@@ -100,7 +95,6 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard' AND
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

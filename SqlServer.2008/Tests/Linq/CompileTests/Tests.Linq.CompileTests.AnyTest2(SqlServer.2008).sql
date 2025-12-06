@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -17,7 +16,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @p Int -- Int32
 SET     @p = -1

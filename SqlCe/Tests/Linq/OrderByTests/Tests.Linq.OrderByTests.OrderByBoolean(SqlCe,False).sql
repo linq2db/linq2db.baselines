@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t1].[FirstName],
@@ -15,7 +14,6 @@ ORDER BY
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT

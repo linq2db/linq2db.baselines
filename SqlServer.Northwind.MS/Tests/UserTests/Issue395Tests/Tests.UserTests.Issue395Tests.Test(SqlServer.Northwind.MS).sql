@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[Key_1],
@@ -41,7 +40,6 @@ FROM
 GROUP BY
 	[t1].[Key_1]
 
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
@@ -53,7 +51,6 @@ FROM
 WHERE
 	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @ShipCountry
 
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
@@ -65,7 +62,6 @@ FROM
 WHERE
 	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @ShipCountry
 
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'

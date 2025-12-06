@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Id",
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	"t"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	"t2"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @skip Integer -- Int32
 SET     @skip = 1

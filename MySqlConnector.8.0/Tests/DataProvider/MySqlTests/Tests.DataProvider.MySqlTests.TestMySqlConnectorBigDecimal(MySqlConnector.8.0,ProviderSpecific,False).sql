@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -30,7 +27,6 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 2
@@ -52,7 +48,6 @@ VALUES
 	@DecimalN
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -64,14 +59,12 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value1 NewDecimal -- Decimal
 SET     @value1 = 12345678901234567890123456789012345.123456789012345678901234567891
@@ -91,7 +84,6 @@ VALUES
 	@value2
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value2 NewDecimal -- Decimal
 SET     @value2 = -12345678901234567890123456789012345.123456789012345678901234567891
@@ -109,7 +101,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -121,17 +112,14 @@ FROM
 ORDER BY
 	`t1`.`Id`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
 
-BeforeExecute
 INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

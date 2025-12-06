@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ID Int32
 SET     @ID = 1001
 
@@ -16,7 +15,6 @@ VALUES
 	200
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 1001
@@ -29,7 +27,6 @@ SET
 WHERE
 	`t`.`ID` = @id
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 1001
@@ -42,7 +39,6 @@ SET
 WHERE
 	`t`.`ID` = @id
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 1001

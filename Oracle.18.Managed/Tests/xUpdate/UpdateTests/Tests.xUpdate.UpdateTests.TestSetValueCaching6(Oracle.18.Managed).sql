@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value6 Int32
 SET     @Value6 = 7
 DECLARE @id Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
@@ -25,7 +23,6 @@ WHERE
 	t1."Id" = :id
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value6 Int32
 SET     @Value6 = 8
@@ -39,7 +36,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1

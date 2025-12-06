@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
@@ -16,7 +15,6 @@ FROM
 GROUP BY
 	[grp_1].[Date_1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

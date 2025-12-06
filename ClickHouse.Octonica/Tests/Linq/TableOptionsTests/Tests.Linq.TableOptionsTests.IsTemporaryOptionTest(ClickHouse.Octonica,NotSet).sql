@@ -1,27 +1,29 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE temp_table1
 (
 	ID    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 INSERT INTO temp_table1(ID, Value) VALUES
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE temp_table2
 (
 	ID    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table2
@@ -35,7 +37,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -44,7 +45,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -53,7 +53,6 @@ SELECT
 FROM
 	temp_table2 t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table1
@@ -64,7 +63,6 @@ INSERT INTO temp_table1
 VALUES
 (2,3)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table1
@@ -78,25 +76,20 @@ VALUES
 	3
 )
 
-BeforeExecute
 INSERT INTO temp_table1(ID, Value) VALUES
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 TRUNCATE TABLE temp_table1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 TRUNCATE TABLE temp_table2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS temp_table2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS temp_table1

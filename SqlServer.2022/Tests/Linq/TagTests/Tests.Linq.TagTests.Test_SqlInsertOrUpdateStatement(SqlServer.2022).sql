@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 /* My Test */
 MERGE INTO [TestTable] [t1]

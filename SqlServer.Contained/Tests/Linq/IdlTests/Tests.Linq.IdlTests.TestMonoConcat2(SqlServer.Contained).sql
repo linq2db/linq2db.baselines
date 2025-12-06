@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[x_1].[FirstName] = @t
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'

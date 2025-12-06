@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 
 INSERT INTO [SimpleBulkCopyTable]
 (

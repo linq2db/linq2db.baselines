@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
@@ -18,7 +16,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
@@ -28,7 +25,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 4111
@@ -38,9 +34,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -50,9 +43,7 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (4111,4111)
 SELECT * FROM dual
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1111
@@ -62,7 +53,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 2111
@@ -72,7 +62,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 3111
@@ -82,7 +71,6 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 4111

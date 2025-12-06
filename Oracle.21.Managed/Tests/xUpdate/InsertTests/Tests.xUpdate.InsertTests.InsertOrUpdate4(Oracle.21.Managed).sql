@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Varchar2(7) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
@@ -58,7 +56,6 @@ WHEN NOT MATCHED THEN
 		CAST(:diagnosis + :i AS VarChar(255))
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
@@ -88,7 +85,6 @@ WHEN NOT MATCHED THEN
 		CAST(:diagnosis + :i AS VarChar(255))
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
@@ -118,7 +114,6 @@ WHEN NOT MATCHED THEN
 		CAST(:diagnosis + :i AS VarChar(255))
 	)
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5

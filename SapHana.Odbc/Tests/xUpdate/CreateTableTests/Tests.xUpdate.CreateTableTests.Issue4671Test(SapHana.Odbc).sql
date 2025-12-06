@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Issue4671EntityTMP"
 (
@@ -9,7 +8,6 @@ CREATE COLUMN TABLE "Issue4671EntityTMP"
 	PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Issue4671Entity"
@@ -21,7 +19,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Issue4671EntityTMP"
@@ -33,7 +30,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -43,7 +39,6 @@ FROM
 	"Issue4671Entity" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -53,7 +48,6 @@ FROM
 	"Issue4671EntityTMP" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "Issue4671EntityTMP"

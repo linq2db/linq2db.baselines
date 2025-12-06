@@ -1,21 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [xxPatient]
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  INTEGER       NOT NULL,
-	[Diagnosis] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY ([PersonID])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -34,8 +17,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -54,16 +36,14 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -82,8 +62,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -102,16 +81,10 @@ VALUES
 ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = @Diagnosis
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [xxPatient]
 

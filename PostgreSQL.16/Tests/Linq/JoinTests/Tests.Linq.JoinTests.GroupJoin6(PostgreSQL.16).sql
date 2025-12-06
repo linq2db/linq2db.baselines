@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

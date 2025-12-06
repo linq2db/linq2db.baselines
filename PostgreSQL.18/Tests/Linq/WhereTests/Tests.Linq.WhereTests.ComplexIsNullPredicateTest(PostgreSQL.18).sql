@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	r."Id",
@@ -11,7 +10,6 @@ WHERE
 ORDER BY
 	r."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

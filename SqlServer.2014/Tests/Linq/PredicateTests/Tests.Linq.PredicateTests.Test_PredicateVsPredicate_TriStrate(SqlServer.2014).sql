@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	[r].[Id],
@@ -16,7 +15,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -28,7 +26,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -59,7 +56,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -71,7 +67,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -94,7 +89,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -146,7 +139,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -158,7 +150,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -172,7 +163,6 @@ FROM
 WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) = IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -184,7 +174,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -198,7 +187,6 @@ FROM
 WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) <> IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -210,7 +198,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -241,7 +228,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -253,7 +239,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -293,7 +278,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -305,7 +289,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -323,7 +306,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -335,7 +317,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -353,7 +334,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -365,7 +345,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -388,7 +367,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -400,7 +378,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -423,7 +400,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -435,7 +411,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -449,7 +424,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -461,7 +435,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -475,7 +448,6 @@ FROM
 WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -487,7 +459,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -505,7 +476,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -517,7 +487,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -540,7 +509,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

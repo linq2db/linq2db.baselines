@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p."MiddleName" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @str Text(3) -- String
 SET     @str = '123'

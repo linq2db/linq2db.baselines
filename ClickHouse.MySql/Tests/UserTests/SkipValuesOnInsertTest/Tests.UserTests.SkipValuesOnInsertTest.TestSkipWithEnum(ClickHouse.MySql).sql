@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Insert_Enum_Table
 (
@@ -16,7 +15,6 @@ VALUES
 	'Male'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -30,7 +28,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Insert_Enum_Table
@@ -46,7 +43,6 @@ VALUES
 	25
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

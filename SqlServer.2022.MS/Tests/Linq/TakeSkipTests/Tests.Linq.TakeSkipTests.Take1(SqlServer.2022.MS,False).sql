@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -7,7 +6,6 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (3)
@@ -16,7 +14,6 @@ SELECT TOP (3)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (2)
@@ -25,7 +22,6 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (3)

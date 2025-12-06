@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -24,7 +23,6 @@ VALUES
 	@IsMale
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Code VarChar(6) -- String
 SET     @Code = 'Child2'
@@ -50,7 +48,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

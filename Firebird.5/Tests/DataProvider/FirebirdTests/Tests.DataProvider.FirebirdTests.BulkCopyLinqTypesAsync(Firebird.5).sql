@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,16 +22,14 @@ SELECT 4007,1007,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF399971
 SELECT 4008,1008,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF39997104E79873D2EC7BF1E0008',NULL,8,NULL FROM rdb$database UNION ALL
 SELECT 4009,1009,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF39997104E79873D2EC7BF1E0009',NULL,9,NULL FROM rdb$database
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 DELETE FROM
 	"LinqDataTypes" "p"
 WHERE
 	"p".ID >= 4000
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 INSERT INTO "LinqDataTypes"
 (
@@ -56,8 +53,7 @@ SELECT 4007,1007,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF399971
 SELECT 4008,1008,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF39997104E79873D2EC7BF1E0008',NULL,8,NULL FROM rdb$database UNION ALL
 SELECT 4009,1009,CAST('2001-01-11 01:11:21.100' AS timestamp),TRUE,X'233BF39997104E79873D2EC7BF1E0009',NULL,9,NULL FROM rdb$database
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 DELETE FROM
 	"LinqDataTypes" "p"

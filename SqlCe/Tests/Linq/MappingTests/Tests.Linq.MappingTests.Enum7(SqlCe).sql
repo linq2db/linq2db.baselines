@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @v1 Int -- Int32
 SET     @v1 = 1
 

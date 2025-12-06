@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."Id" = 1 AND "e"."Id" = 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	"TestConstantsData" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	"e"."Id" = 1 AND "e"."Id" = 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

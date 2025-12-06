@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @abcdefghijabcdefghijabcdef Integer -- Int32
 SET     @abcdefghijabcdefghijabcdef = 1
 

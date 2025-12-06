@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	x.Id,
@@ -26,7 +25,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

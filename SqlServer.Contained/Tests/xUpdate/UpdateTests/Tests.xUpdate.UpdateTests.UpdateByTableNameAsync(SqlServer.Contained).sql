@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
-
-DROP TABLE IF EXISTS [xxPerson]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(4000)  NOT NULL,
-	[PersonID]   Int             NOT NULL IDENTITY,
-	[LastName]   NVarChar(4000)  NOT NULL,
-	[MiddleName] NVarChar(4000)      NULL,
-	[Gender]     Char(1)         NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -43,16 +23,14 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -63,8 +41,7 @@ SELECT TOP (2)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -86,8 +63,7 @@ SET
 WHERE
 	[xxPerson].[PersonID] = @ID
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -97,9 +73,4 @@ SELECT TOP (2)
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
-
-DROP TABLE [xxPerson]
 

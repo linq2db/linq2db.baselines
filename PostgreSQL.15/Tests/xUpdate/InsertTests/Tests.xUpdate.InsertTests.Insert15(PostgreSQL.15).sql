@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	:Name_LastName
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM

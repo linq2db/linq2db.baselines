@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`ID`,
@@ -16,7 +15,6 @@ WHERE
 	`p`.`GuidValue` = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 LIMIT 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

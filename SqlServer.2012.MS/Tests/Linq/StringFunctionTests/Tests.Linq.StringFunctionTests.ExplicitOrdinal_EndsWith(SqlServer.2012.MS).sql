@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -38,7 +35,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%stString' ESCAPE N'~' AND
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -49,7 +45,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'%stString' ESCAPE N'~' AND
 	Convert(VarBinary(8000), RIGHT([r].[CaseInsensitive], LEN(N'stString'))) = Convert(VarBinary(8000), N'stString')
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -60,7 +55,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%ststring' ESCAPE N'~' AND
 	Convert(VarBinary(8000), RIGHT([r].[CaseSensitive], LEN(N'ststring'))) = Convert(VarBinary(8000), N'ststring')
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

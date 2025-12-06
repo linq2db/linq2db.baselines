@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @s1 Char -- String
 SET     @s1 = _utf8 x'00'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.FirstName
@@ -9,7 +8,6 @@ WHERE
 	p.PersonID = 1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -19,7 +17,6 @@ FROM
 WHERE
 	startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 WHERE
 	NOT startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 WHERE
 	startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

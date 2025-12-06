@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Child]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
@@ -25,7 +23,6 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 1001
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Child]

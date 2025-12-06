@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[e].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[e].[StringValue] + N'1' = N'StrValue1'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

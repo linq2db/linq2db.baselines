@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."ParentID",
@@ -19,8 +16,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."ParentID",
@@ -31,12 +27,7 @@ WHERE
 	"x"."ParentID" = 3
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."ParentID",
@@ -54,8 +45,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."ParentID",
@@ -66,12 +56,7 @@ WHERE
 	"x"."ParentID" = 3
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."ParentID",
@@ -89,8 +74,7 @@ FROM
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."ParentID",
@@ -101,5 +85,3 @@ WHERE
 	"x"."ParentID" = 3
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

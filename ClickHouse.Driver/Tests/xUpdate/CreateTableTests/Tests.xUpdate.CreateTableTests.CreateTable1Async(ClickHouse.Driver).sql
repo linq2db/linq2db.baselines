@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 CREATE TABLE TestTable
 (
@@ -18,8 +16,7 @@ CREATE TABLE TestTable
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.ID,
@@ -29,8 +26,7 @@ SELECT
 FROM
 	TestTable t1
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 DROP TABLE TestTable
 

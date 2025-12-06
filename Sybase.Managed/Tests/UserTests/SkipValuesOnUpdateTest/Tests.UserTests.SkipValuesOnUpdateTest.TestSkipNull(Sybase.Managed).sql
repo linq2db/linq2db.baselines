@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'Jack'
@@ -49,7 +46,6 @@ SET
 WHERE
 	[PR_1598_Update_Null_Table].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -61,7 +57,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(6) -- String
 SET     @Name = 'Franki'
@@ -75,7 +70,6 @@ SET
 WHERE
 	[PR_1598_Update_Null_Table].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

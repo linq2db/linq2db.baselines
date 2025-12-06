@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[s].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[s].[FirstName] <> N''
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

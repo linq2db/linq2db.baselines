@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t1"."ParentID",
@@ -10,7 +9,6 @@ ORDER BY
 	"t1"."ChildID" DESC
 OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

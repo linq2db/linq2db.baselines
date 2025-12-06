@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -31,7 +30,6 @@ WHEN NOT MATCHED THEN
 		CAST(@LastName AS VARCHAR(8))
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -46,7 +44,6 @@ FROM
 WHERE
 	"x"."FirstName" = @FirstName
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
@@ -84,7 +81,6 @@ WHEN NOT MATCHED THEN
 		CAST(@MiddleName AS VARCHAR(12))
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

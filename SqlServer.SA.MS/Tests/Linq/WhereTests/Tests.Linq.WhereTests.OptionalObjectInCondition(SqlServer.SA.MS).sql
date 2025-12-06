@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'1'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[FirstName] = @p
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'1'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Age Integer -- Int32
 SET     @Age = 20
@@ -47,7 +44,6 @@ SET
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -60,7 +56,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -78,7 +73,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -91,7 +85,6 @@ WHERE
 	t."Id" = 2
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(5) -- String
 SET     @Name = 'Jessy'
@@ -108,7 +101,6 @@ SET
 WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

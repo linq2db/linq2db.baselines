@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,9 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 11
@@ -29,9 +25,6 @@ FROM
 WHERE
 	[d].[Id] = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -39,9 +32,6 @@ SELECT
 FROM
 	[Test3664] [t1]
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 12
@@ -56,9 +46,6 @@ FROM
 WHERE
 	[d].[Id] = @id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

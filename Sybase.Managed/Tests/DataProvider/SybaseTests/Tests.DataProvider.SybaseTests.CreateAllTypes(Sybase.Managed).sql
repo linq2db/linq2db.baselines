@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DROP TABLE [AllTypeCreateTest]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE [AllTypeCreateTest]
@@ -42,7 +40,6 @@ CREATE TABLE [AllTypeCreateTest]
 	CONSTRAINT [PK_AllTypeCreateTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -79,7 +76,6 @@ SELECT
 FROM
 	[AllTypeCreateTest] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [AllTypeCreateTest]

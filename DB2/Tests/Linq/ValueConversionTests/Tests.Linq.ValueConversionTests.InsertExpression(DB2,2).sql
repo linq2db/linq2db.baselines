@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @iteration Integer(4) -- Int32
 SET     @iteration = 2
 DECLARE @Value1 VarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @iteration Integer(4) -- Int32
 SET     @iteration = 2

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"it_1"."IsActive",
@@ -16,7 +15,6 @@ GROUP BY
 	"it_1"."IsActive",
 	"it_1"."Other"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

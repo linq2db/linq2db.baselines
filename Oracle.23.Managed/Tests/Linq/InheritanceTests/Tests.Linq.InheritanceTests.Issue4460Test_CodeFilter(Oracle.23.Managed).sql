@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Code Varchar2(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -20,7 +19,6 @@ VALUES
 	:Name
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Code Varchar2(6) -- String
 SET     @Code = 'Child2'
@@ -42,7 +40,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

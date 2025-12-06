@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName" as ID
@@ -9,7 +8,6 @@ WHERE
 	p."FirstName" IS NULL
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'

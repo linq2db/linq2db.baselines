@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p."FirstName" LIKE 'Jo%' ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	p."FirstName" LIKE 'jo%' ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

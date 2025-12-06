@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -8,7 +7,6 @@ FROM
 	Item m_1
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Topic
 (
@@ -14,7 +13,6 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Message
@@ -30,7 +28,6 @@ VALUES
 	'message'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Message
@@ -46,7 +43,6 @@ VALUES
 	'message'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -64,7 +60,6 @@ FROM
 	) m_1
 		INNER JOIN Message d ON d.TopicId = m_1.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

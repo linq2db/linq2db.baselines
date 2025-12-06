@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -23,7 +22,6 @@ ON DUPLICATE KEY UPDATE
 	`Name` = @Name,
 	`Age` = @Age
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -36,7 +34,6 @@ WHERE
 	`t`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
@@ -61,7 +58,6 @@ ON DUPLICATE KEY UPDATE
 	`Name` = @Name,
 	`Age` = @Age
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

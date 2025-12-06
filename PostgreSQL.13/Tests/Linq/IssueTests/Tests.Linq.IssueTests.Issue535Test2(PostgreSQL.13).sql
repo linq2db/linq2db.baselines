@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @filter Text(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 Text(6) -- String

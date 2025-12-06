@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."FirstName"
@@ -9,8 +8,7 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -21,8 +19,7 @@ FROM
 WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -34,8 +31,7 @@ WHERE
 	p."FirstName" NOT LIKE :nameToCheck ESCAPE '~' AND
 	p."PersonID" = 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -46,8 +42,7 @@ FROM
 WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 

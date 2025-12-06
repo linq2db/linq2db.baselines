@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	endsWith(p.FirstName, 'JOHN') AND p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

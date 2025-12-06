@@ -1,19 +1,15 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT USER FROM DUAL
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 select user from dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @CurrentUser Varchar2(4) -- String
 SET     @CurrentUser = 'TEST'
@@ -45,7 +41,6 @@ SET     @CurrentUser = 'TEST'
 					ORDER BY TableID, isView
 					
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 
@@ -64,7 +59,6 @@ BeforeExecute
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('TEST')
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 
@@ -86,7 +80,6 @@ BeforeExecute
 							c.COLUMN_NAME = cc.COLUMN_NAME
 					
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 
@@ -109,7 +102,6 @@ BeforeExecute
 						ORDER BY Ordinal, Name
 						
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -130,7 +122,6 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.OBJECT_NAME ELSE NULL END,
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -149,14 +140,10 @@ FROM ALL_ARGUMENTS
 WHERE SEQUENCE > 0 AND DATA_LEVEL = 0 AND OWNER = USER
 	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 TEST.ISSUE2132.TEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @I Decimal(22)
 SET     @I = 0
@@ -165,12 +152,10 @@ SET     @O = 0
 
 TEST.TEST_PACKAGE1.TEST_PROCEDURE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT * FROM TABLE(TEST.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL))
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @I Decimal(22)
 SET     @I = 0
@@ -179,17 +164,14 @@ SET     @O = 0
 
 TEST.TEST_PACKAGE2.TEST_PROCEDURE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT * FROM TABLE(TEST.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL))
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 TEST.ADDISSUE792RECORD
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Decimal(22)
 SET     @ID = 0
@@ -248,7 +230,6 @@ SET     @XMLDATATYPE = NULL
 
 TEST.ALLOUTPUTPARAMETERS
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PINTARRAY Varchar2 -- String
 SET     @PINTARRAY = NULL
@@ -265,7 +246,6 @@ SET     @PINPUTOUTPUTSTRARRAY = NULL
 
 TEST.ARRAYTEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PSTR NVarchar2 -- String
 SET     @PSTR = ''
@@ -276,7 +256,6 @@ SET     @PINPUTOUTPUTSTR = ''
 
 TEST.OUTREFENUMTEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PID Decimal(22)
 SET     @PID = 0
@@ -293,14 +272,12 @@ SET     @PINPUTOUTPUTSTR = ''
 
 TEST.OUTREFTEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PPERSONID Decimal(22)
 SET     @PPERSONID = 0
 
 TEST.PERSON_DELETE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PFIRSTNAME NVarchar2 -- String
 SET     @PFIRSTNAME = ''
@@ -315,7 +292,6 @@ SET     @PPERSONID = 0
 
 TEST.PERSON_INSERT_OUTPUTPARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @PPERSONID Decimal(22)
 SET     @PPERSONID = 0
@@ -330,7 +306,6 @@ SET     @PGENDER = ''
 
 TEST.PERSON_UPDATE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
@@ -339,14 +314,12 @@ SET     @SR = NULL
 
 TEST.RESULTSETTEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @POUTPUTINTARRAY Varchar2 -- String
 SET     @POUTPUTINTARRAY = NULL
 
 TEST.SCALARARRAY
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @POUTPUTINT Int32
 SET     @POUTPUTINT = 0
@@ -355,7 +328,6 @@ SET     @POUTPUTSTRING = ''
 
 TEST.SCALAR_OUTPUTPARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @I Decimal(22)
 SET     @I = 0
@@ -364,10 +336,8 @@ SET     @O = 0
 
 TEST.TEST_PROCEDURE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT * FROM TABLE(TEST.TEST_TABLE_FUNCTION(NULL))
 
-BeforeExecute
 RollbackTransaction

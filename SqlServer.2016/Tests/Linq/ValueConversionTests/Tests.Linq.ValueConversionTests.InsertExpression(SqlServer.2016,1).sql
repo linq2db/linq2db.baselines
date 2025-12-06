@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(4000) -- String
@@ -32,7 +31,6 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1

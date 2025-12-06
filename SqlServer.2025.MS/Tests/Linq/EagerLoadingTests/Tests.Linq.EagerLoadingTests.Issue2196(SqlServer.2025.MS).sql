@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -17,9 +14,6 @@ FROM
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1

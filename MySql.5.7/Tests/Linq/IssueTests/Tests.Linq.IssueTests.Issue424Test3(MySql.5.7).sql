@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @take Int32
@@ -20,7 +19,6 @@ ORDER BY
 	`t2`.`ParentID` DESC
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

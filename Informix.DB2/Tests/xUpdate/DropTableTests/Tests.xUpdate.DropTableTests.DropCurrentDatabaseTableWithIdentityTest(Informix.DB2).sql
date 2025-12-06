@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS DropTableTestID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TABLE DropTableTestID
@@ -14,7 +12,6 @@ CREATE TABLE DropTableTestID
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO DropTableTestID
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	DropTableTestID t
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE DropTableTestID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

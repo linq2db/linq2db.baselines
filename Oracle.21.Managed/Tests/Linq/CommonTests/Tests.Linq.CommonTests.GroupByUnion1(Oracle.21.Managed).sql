@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	tt."Key_1",
-	SUM(tt.ID)
+	SUM(tt."ChildID")
 FROM
 	(
 		SELECT
 			gr."ParentID" as "Key_1",
-			gr."ChildID" as ID
+			gr."ChildID"
 		FROM
 			"Child" gr
 		WHERE
@@ -16,7 +15,7 @@ FROM
 		UNION ALL
 		SELECT
 			Coalesce(g_1."ParentID", 0) as "Key_1",
-			Coalesce(g_1."GrandChildID", 0) as ID
+			Coalesce(g_1."GrandChildID", 0) as "ChildID"
 		FROM
 			"GrandChild" g_1
 		WHERE
@@ -25,5 +24,5 @@ FROM
 GROUP BY
 	tt."Key_1"
 HAVING
-	SUM(tt.ID) <> 0
+	SUM(tt."ChildID") <> 0
 

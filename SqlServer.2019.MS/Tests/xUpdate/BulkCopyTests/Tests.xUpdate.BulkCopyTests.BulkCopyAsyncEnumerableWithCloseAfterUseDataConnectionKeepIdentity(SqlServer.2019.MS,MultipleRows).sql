@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
@@ -13,8 +11,7 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 VALUES
 (2)
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

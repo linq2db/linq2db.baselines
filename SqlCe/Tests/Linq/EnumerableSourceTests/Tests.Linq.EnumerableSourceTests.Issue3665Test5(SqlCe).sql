@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[y].[item] as [item_1]
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 'O' AS [item]) [y]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

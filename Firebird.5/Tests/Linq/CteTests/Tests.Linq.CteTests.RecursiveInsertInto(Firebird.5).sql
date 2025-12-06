@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "HierarchyData"
 (
@@ -47,7 +46,6 @@ SELECT
 FROM
 	"hierarchyDown" "t4"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

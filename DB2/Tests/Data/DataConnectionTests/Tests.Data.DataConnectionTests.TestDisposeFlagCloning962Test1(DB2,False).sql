@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."CategoryID",
@@ -13,9 +10,6 @@ FROM
 	"Categories" "m_1"
 		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

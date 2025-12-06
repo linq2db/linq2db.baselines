@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @arr VarBinary -- Binary
 SET     @arr = NULL
@@ -24,7 +22,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -40,7 +37,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

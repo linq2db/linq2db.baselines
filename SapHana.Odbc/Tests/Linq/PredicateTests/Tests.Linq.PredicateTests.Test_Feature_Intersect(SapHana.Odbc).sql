@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -16,7 +15,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -34,7 +32,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -52,7 +49,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -70,7 +66,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -88,7 +83,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -106,7 +100,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -124,7 +117,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -142,7 +134,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -160,7 +151,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -178,7 +168,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -196,7 +185,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

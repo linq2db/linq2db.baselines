@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @UserId Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

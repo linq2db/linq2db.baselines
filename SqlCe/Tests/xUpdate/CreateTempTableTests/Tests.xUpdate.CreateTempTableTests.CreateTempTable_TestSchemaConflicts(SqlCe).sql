@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [TestTempTable]
 (
@@ -12,16 +11,16 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [TempTable]
 (
 	[Id]      Int           NOT NULL,
-	[Renamed] NVarChar(255)     NULL
+	[Renamed] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Id])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TempTable]
@@ -35,7 +34,6 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TestTempTable]
@@ -49,7 +47,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TempTable]
@@ -63,7 +60,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -74,7 +70,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -85,7 +80,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [TempTable]

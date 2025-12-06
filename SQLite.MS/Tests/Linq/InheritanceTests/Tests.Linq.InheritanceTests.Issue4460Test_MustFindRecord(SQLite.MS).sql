@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(10) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Surname
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

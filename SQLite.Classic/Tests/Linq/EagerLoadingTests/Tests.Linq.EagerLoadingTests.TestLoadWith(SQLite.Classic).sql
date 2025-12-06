@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -21,7 +18,6 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
@@ -38,9 +34,6 @@ FROM
 WHERE
 	[m_1].[Id1] >= @intParam AND [d].[DetailId] % 2 = 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0

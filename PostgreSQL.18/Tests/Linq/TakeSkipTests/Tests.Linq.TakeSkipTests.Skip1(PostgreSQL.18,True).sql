@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
@@ -12,7 +11,6 @@ ORDER BY
 	t1."ChildID"
 OFFSET :skip 
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 4

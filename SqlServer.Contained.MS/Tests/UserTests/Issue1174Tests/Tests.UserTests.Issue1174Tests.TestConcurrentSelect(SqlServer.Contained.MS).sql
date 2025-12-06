@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -7,8 +6,7 @@ SELECT TOP (1)
 FROM
 	[User] [t1]
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[Id],

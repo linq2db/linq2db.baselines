@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 WITH RECURSIVE cte AS
 (
@@ -32,7 +31,6 @@ FROM
 	) m_1
 		INNER JOIN Person d ON d.PersonID = m_1.Item1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 WITH RECURSIVE cte AS

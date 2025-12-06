@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)
 	[t].[ID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @dt DateTime
 SET     @dt = CAST('2010-12-14T05:00:07.425' AS DATETIME)
@@ -29,7 +27,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)
@@ -48,7 +45,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @pdt DateTime
 SET     @pdt = CAST('2001-01-11T01:11:21.100' AS DATETIME)

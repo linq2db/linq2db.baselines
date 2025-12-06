@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Child`.`ChildID` > 1000
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -25,8 +23,7 @@ FROM
 WHERE
 	`c_1`.`ChildID` = 11
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -37,8 +34,7 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @id
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM

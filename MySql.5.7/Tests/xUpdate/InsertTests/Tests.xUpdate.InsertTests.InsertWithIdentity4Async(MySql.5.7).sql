@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName VarChar(7) -- String
@@ -33,13 +31,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
 
@@ -55,8 +51,7 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -81,13 +76,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'
 
@@ -103,7 +96,6 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  

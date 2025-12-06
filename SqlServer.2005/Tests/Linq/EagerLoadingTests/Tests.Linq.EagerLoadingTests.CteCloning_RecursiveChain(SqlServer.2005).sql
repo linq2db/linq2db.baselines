@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 WITH [cte] ([Value2])
 AS
@@ -85,9 +82,6 @@ FROM
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2005
 
 WITH [cte] ([Value2])

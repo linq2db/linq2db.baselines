@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (2)
@@ -27,7 +25,6 @@ FROM
 WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (2)

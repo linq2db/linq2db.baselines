@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [LinqDataTypes]
@@ -21,7 +19,6 @@ VALUES
 	101
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
@@ -31,7 +28,6 @@ FROM
 WHERE
 	[r].[ID] = 101
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102

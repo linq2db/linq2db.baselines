@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
 	BEGIN
@@ -28,7 +27,6 @@ BEGIN
 	END;
 END;
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "TestTable"
@@ -41,12 +39,10 @@ CREATE TABLE "TestTable"
 	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "SIDENTITY_TestTable"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestTable"
@@ -55,7 +51,6 @@ BEGIN
 	SELECT "SIDENTITY_TestTable".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -66,7 +61,6 @@ SELECT
 FROM
 	"TestTable" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN

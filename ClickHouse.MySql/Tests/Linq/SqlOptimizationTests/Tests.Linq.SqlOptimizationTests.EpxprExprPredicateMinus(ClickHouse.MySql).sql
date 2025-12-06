@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t.Id,
@@ -10,7 +9,6 @@ FROM
 WHERE
 	t.Id > 6
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	5 < t.Id - 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	2 > t.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

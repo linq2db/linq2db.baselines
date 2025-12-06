@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -19,8 +16,7 @@ FROM
 			INNER JOIN "Parent" "a_Parent1_1" ON d."ParentID" = "a_Parent1_1"."ParentID"
 		ON m_1."ParentID" = "a_Parent1_1"."ParentID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	"a_Parent1"."ParentID"
@@ -30,5 +26,3 @@ FROM
 GROUP BY
 	"a_Parent1"."ParentID"
 
-BeforeExecute
-DisposeTransactionAsync

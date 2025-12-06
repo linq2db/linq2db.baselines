@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value2 NVarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull NVarChar -- String
@@ -17,7 +16,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -36,7 +34,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 DECLARE @Value1 NVarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -74,7 +71,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -93,7 +89,6 @@ FROM
 WHERE
 	[e].[Id] = 2
 
-BeforeExecute
 -- SqlCe
 DECLARE @Value1 NVarChar -- String
 SET     @Value1 = NULL
@@ -131,7 +126,6 @@ SET
 WHERE
 	[ValueConversion].[Id] = @Id
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

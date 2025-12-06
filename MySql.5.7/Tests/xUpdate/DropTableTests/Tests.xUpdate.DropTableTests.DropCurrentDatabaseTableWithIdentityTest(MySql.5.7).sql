@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `DropTableTestID`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE `DropTableTestID`
@@ -14,7 +12,6 @@ CREATE TABLE `DropTableTestID`
 	CONSTRAINT `PK_DropTableTestID` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `DropTableTestID`
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	`DropTableTestID` `t`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE `DropTableTestID`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

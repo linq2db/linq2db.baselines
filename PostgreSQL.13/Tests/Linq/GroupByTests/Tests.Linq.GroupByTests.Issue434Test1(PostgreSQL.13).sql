@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 
@@ -15,10 +12,7 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 

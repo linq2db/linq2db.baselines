@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017 (asynchronously)
+﻿-- SqlServer.2017
 
 SELECT TOP (3)
 	[t1].[ParentID],

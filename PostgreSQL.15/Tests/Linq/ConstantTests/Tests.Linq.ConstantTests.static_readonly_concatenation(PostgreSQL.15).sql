@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @p Text(9) -- String
 SET     @p = 'StrValue1'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	e."StringValue" || '1' = :p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

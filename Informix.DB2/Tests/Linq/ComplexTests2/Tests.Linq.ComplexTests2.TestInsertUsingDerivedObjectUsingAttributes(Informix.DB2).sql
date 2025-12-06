@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	t1.FirstName = 'test_inherited_insert'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
@@ -66,7 +62,6 @@ SET
 WHERE
 	t1.PersonID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -80,7 +75,6 @@ FROM
 WHERE
 	t1.FirstName = 'test_inherited_insert'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[m_1].[ParentID],
@@ -22,9 +19,6 @@ FROM
 				[d].[ParentID]
 		) [d_1] ON ([m_1].[ParentID] = [d_1].[Key_1])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

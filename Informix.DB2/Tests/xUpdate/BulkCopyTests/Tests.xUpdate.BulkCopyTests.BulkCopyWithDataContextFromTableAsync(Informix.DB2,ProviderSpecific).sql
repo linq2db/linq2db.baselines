@@ -1,18 +1,12 @@
-﻿BeforeExecute
+﻿INSERT BULK SimpleBulkCopyTable
+
 INSERT BULK SimpleBulkCopyTable
 
-BeforeExecute
 INSERT BULK SimpleBulkCopyTable
 
-BeforeExecute
 INSERT BULK SimpleBulkCopyTable
 
-BeforeExecute
 INSERT BULK SimpleBulkCopyTable
 
-BeforeExecute
-INSERT BULK SimpleBulkCopyTable
-
-BeforeExecute
 INSERT BULK SimpleBulkCopyTable
 

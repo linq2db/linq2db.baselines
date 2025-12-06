@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."StringValue" || '1' = 'StrValue1'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

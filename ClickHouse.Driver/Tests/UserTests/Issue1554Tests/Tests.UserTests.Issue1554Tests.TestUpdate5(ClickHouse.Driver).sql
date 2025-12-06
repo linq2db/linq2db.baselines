@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1554Table
 (
@@ -14,7 +13,6 @@ VALUES
 	'RSA'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -25,7 +23,6 @@ UPDATE
 WHERE
 	Id = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

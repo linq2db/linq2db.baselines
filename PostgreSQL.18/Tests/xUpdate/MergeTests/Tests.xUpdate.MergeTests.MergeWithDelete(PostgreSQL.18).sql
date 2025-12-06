@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "LinqDataTypes" "Target"
 USING (
@@ -76,5 +73,3 @@ VALUES
 
 WHEN NOT MATCHED BY SOURCE THEN DELETE
 
-BeforeExecute
-DisposeTransaction

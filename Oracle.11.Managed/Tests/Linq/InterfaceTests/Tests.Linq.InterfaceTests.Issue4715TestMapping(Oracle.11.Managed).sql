@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int32
@@ -28,7 +27,6 @@ VALUES
 	:Tests_Linq_InterfaceTests_IEx
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

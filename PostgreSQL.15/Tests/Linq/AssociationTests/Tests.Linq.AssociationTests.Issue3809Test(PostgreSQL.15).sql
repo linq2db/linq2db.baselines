@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -28,9 +25,6 @@ FROM
 ORDER BY
 	d."ChildID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

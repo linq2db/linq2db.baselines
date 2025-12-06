@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	date_diff('second', t.TransactionDate, addMinutes(t.TransactionDate, toFloat64(100)))

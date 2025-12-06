@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	y.item
@@ -9,7 +8,6 @@ FROM
 			('M'), ('F'), ('U'), ('O')
 		) y(item)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

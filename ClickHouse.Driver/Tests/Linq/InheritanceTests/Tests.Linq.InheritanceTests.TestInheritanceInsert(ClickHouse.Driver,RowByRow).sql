@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
 (
@@ -14,7 +13,6 @@ VALUES
 	11
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
@@ -30,7 +28,6 @@ VALUES
 	12
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
@@ -48,7 +45,6 @@ VALUES
 	13
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
@@ -66,7 +62,6 @@ VALUES
 	14
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
@@ -84,7 +79,6 @@ VALUES
 	15
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO InheritanceFilter
@@ -102,7 +96,6 @@ VALUES
 	16
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

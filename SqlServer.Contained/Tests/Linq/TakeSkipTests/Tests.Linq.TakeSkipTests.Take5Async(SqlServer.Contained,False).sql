@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT TOP (3)
 	[t1].[ParentID],

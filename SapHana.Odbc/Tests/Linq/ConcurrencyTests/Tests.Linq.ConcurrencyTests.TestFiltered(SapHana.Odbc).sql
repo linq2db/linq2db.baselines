@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	"ConcurrencyFiltered" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
@@ -47,7 +44,6 @@ SET
 WHERE
 	"r"."Id" = 2 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -57,7 +53,6 @@ SELECT
 FROM
 	"ConcurrencyFiltered" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
@@ -74,7 +69,6 @@ SET
 WHERE
 	"r"."Id" = 1 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -84,7 +78,6 @@ SELECT
 FROM
 	"ConcurrencyFiltered" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -96,7 +89,6 @@ DELETE FROM
 WHERE
 	"r"."Id" = 2 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -106,7 +98,6 @@ SELECT
 FROM
 	"ConcurrencyFiltered" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -118,7 +109,6 @@ DELETE FROM
 WHERE
 	"r"."Id" = 1 AND "r"."Id" = ? AND "r"."Stamp" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

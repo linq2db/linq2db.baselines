@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO ConcurrencyFiltered
 (
@@ -14,7 +13,6 @@ VALUES
 	'initial'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -35,7 +32,6 @@ UPDATE
 WHERE
 	Id = 2 AND Id = 1 AND Stamp = -10
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -45,7 +41,6 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -56,7 +51,6 @@ UPDATE
 WHERE
 	Id = 1 AND Id = 1 AND Stamp = -10
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -66,7 +60,6 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -74,7 +67,6 @@ ALTER TABLE
 DELETE WHERE
 	Id = 2 AND Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -84,7 +76,6 @@ SELECT
 FROM
 	ConcurrencyFiltered t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -92,7 +83,6 @@ ALTER TABLE
 DELETE WHERE
 	Id = 1 AND Id = 1 AND Stamp = -9
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

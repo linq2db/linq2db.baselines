@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id],
@@ -26,7 +25,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

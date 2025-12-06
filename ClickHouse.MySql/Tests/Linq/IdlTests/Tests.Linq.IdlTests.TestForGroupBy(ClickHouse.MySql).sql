@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	d.ParentID IN (2)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -29,7 +27,6 @@ WHERE
 GROUP BY
 	x.ChildID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 WHERE
 	d.ParentID IN (3)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

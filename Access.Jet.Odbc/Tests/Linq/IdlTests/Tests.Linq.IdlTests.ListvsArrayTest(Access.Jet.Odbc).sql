@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[x].[PersonID]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[x].[FirstName] IN ('John')
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @st NVarChar(4) -- String
 SET     @st = 'John'

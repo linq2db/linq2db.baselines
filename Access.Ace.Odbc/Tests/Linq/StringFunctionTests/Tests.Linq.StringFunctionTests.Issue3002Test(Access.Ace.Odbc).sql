@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [SampleClass]
 (
@@ -14,7 +13,6 @@ VALUES
 	'SampleClass'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [SampleClass]
@@ -30,7 +28,6 @@ VALUES
 	'SomeTest'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
@@ -44,7 +41,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
@@ -58,7 +54,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
@@ -72,7 +67,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
@@ -86,7 +80,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'
@@ -100,7 +93,6 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = ? OR [sampleClass_1].[Value2] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'

@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK Issue1107TB
+﻿INSERT BULK Issue1107TB
 

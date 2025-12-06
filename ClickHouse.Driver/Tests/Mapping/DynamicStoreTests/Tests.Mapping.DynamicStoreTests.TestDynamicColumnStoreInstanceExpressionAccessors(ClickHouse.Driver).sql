@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO DynamicColumnsTestTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'test_name'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

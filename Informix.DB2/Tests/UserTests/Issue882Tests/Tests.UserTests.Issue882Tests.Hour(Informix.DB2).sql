@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	Mod(t.DateTimeValue::datetime Hour to Hour::Char(3)::Int, 7)

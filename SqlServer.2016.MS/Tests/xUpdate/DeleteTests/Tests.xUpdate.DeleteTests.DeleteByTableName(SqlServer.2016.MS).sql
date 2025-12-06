@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (2)
@@ -44,7 +41,6 @@ SELECT TOP (2)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -55,7 +51,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

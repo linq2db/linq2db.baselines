@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 UniVarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -51,7 +49,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -85,7 +82,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -104,7 +100,6 @@ FROM
 WHERE
 	[e].[Id] = 2
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -154,7 +149,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -173,7 +167,6 @@ FROM
 WHERE
 	[e].[Id] = 3
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

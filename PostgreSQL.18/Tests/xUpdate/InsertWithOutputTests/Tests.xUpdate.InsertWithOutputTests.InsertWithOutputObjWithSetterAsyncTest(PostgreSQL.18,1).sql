@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 100
 DECLARE @value_1 Integer -- Int32

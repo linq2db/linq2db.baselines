@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1

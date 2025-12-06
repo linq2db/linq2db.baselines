@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -40,7 +36,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Message" "d" ON "d"."TopicId" = "m_1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -53,5 +48,3 @@ WHERE
 	"x"."Id" = 6
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

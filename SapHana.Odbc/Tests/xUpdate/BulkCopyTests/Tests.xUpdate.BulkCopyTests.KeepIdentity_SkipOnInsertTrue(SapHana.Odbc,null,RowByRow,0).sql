@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -12,12 +11,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value Int -- Int32
 SET     @Value = 200
@@ -31,7 +28,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value Int -- Int32
 SET     @Value = 300
@@ -45,7 +41,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -60,7 +55,6 @@ WHERE
 ORDER BY
 	"t1"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

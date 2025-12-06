@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarWChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc0'
@@ -43,7 +40,6 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
@@ -61,7 +57,6 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc1'
@@ -75,7 +70,6 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'abc2'
@@ -89,7 +83,6 @@ SET
 WHERE
 	[t1].[PersonID] = @PersonID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5

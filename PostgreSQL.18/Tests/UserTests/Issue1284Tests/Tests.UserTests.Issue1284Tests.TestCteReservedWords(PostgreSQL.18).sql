@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 WITH "CTE_1" ("Obj_Operator")
 AS
@@ -15,7 +14,6 @@ FROM
 	"CTE_1" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

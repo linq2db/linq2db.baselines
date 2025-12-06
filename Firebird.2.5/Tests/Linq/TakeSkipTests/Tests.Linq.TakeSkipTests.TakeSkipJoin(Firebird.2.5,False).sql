@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1".ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1

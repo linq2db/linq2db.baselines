@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],
@@ -10,8 +9,7 @@ ORDER BY
 	[t1].[ParentID],
 	[t1].[ChildID]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],

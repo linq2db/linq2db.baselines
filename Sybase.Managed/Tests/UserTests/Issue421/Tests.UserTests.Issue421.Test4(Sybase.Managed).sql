@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [BlobClass]
 (
@@ -12,7 +11,6 @@ VALUES
 	0x010203
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -23,7 +21,6 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

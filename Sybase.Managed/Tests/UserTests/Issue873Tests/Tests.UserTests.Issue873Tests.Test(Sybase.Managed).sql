@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 

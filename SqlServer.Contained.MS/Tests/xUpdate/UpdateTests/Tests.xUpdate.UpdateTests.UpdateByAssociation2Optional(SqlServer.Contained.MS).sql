@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[p].[Id] = @id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

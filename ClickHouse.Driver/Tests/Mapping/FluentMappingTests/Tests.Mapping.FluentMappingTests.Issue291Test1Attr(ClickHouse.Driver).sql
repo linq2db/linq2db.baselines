@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO my_table
 (
@@ -14,7 +13,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO my_table
@@ -30,7 +28,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -43,7 +40,6 @@ WHERE
 	o.my_col1 = 'MyCol1'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

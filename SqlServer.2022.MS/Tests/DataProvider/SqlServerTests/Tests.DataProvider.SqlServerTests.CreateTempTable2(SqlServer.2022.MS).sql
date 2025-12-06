@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]

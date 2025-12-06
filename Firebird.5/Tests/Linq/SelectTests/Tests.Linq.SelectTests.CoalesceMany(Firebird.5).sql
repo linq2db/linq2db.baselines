@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	Coalesce("t"."Nullable1", "t"."Nullable2", "t"."Nullable3", "t"."Id"),
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"CoalesceNullableFields" "t"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

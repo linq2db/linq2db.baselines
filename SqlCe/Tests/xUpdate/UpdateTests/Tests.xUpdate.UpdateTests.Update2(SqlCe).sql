@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -16,19 +15,17 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -40,13 +37,12 @@ SET
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 1002
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [p]
 WHERE

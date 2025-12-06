@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Data Int -- Int32
 SET     @Data = 1
@@ -42,7 +38,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -50,7 +45,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Data Int -- Int32
 SET     @Data = 1
@@ -85,7 +79,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -93,5 +86,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

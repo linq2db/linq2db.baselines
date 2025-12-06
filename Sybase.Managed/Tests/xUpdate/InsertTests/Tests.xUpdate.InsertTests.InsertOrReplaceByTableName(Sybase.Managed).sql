@@ -1,22 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
-	DROP TABLE [xxPatient]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int           NOT NULL,
-	[Diagnosis] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -47,7 +29,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
@@ -79,7 +60,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -87,7 +67,6 @@ SELECT
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
@@ -119,7 +98,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
@@ -151,17 +129,10 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
-	DROP TABLE [xxPatient]
 

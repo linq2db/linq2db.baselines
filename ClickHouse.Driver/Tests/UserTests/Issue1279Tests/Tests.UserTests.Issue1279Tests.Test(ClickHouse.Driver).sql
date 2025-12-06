@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1279Table
 (
@@ -10,7 +9,6 @@ VALUES
 	'P'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

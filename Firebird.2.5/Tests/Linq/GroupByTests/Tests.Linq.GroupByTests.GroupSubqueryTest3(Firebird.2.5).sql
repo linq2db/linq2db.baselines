@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"pmp"."ParentID"
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	"pmp"."ParentID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

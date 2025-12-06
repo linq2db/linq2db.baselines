@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @ncCodeBo NVarChar(4000) -- String
 SET     @ncCodeBo = N'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

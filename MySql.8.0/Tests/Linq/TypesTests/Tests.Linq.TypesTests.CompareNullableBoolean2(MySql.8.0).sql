@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`ID`,
@@ -14,7 +13,6 @@ FROM
 	`LinqDataTypes` `t1`
 		INNER JOIN `LinqDataTypes` `t2` ON `t1`.`ID` = `t2`.`ID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @param2 UByte -- Boolean
 SET     @param2 = 0

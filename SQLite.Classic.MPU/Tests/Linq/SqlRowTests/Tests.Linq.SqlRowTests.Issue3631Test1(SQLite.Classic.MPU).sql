@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

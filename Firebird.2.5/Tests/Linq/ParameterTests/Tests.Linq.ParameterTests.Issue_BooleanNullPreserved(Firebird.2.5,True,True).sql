@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	'0'
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -21,20 +19,17 @@ SELECT FIRST 2
 FROM
 	"TestBool" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
 	"TestBool" "t1"
 SET
-	"Id" = 1,
 	"Value" = CASE
 		WHEN "t1"."Value" = '0' THEN '1'
 		WHEN "t1"."Value" = '1' THEN '0'
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -43,7 +38,6 @@ SELECT FIRST 2
 FROM
 	"TestBool" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -52,7 +46,6 @@ SET
 	"Id" = 1,
 	"Value" = '0'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

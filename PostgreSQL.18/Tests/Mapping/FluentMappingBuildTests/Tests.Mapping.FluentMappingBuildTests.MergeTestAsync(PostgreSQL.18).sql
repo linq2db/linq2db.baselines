@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -32,8 +29,7 @@ VALUES
 	:Name
 )
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 MERGE INTO "FluentTemp" "Target"
 USING (VALUES
@@ -62,8 +58,7 @@ VALUES
 	"Source"."Name"
 )
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 

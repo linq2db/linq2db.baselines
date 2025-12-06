@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue681Table2"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "Issue681Table2"
 (
@@ -14,8 +12,7 @@ CREATE TABLE "Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue681Table2"
 

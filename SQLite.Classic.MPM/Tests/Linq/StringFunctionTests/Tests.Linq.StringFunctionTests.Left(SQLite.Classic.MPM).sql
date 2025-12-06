@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +9,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LeftStr([p].[FirstName], 2) = 'Jo' AND [p].[PersonID] = 1
+	SUBSTRING([p].[FirstName], 1, 2) = 'Jo' AND [p].[PersonID] = 1
 

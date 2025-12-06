@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[t1].[OrderID],
@@ -22,7 +21,6 @@ ORDER BY
 	[t1].[OrderDate]
 LIMIT 1
 
-BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @OrderID  -- Int32
 SET     @OrderID = 10248

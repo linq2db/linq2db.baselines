@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	"t"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	"t2"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

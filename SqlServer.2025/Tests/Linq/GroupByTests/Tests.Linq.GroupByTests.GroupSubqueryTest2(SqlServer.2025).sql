@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 				[pmp].[ParentID]
 		) [pmp_1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

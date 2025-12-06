@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
@@ -36,7 +34,6 @@ WHERE
 			("Parent"."Value1" = p."Value1" OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "Parent"
@@ -32,7 +30,6 @@ FROM
 			"GrandChild" c_2
 	) t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	c_1."ParentID" > 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

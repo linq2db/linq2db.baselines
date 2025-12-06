@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 MERGE INTO "Person" Target
 USING (
@@ -25,7 +22,6 @@ SET
 	"MiddleName" = 'first ' || "Source"."Patient_Diagnosis",
 	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -39,5 +35,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [InsertEntity]
 (
@@ -16,7 +15,6 @@ FROM
 WHERE
 	NOT [e].[IsDeleted]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

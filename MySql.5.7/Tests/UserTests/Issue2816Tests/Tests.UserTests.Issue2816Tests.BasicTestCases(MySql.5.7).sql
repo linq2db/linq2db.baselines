@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`Id`,
@@ -10,7 +9,6 @@ WHERE
 	`p`.`Text` IS NULL OR NOT `p`.`Text` RLIKE '[^	
                  　]'
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

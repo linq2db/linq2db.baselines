@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Id",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	1 IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	0 IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	1 IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	0 IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	NULL IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	(1 IN (0, 1) OR 1 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	(0 IN (0, 1) OR 0 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -180,7 +166,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -194,7 +179,6 @@ FROM
 WHERE
 	(1 IN (0, 1) OR 1 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -206,7 +190,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -220,7 +203,6 @@ FROM
 WHERE
 	(0 IN (0, 1) OR 0 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -232,7 +214,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -246,7 +227,6 @@ FROM
 WHERE
 	(NULL IN (0, 1) OR NULL IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -258,7 +238,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -272,7 +251,6 @@ FROM
 WHERE
 	1 NOT IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -284,7 +262,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -298,7 +275,6 @@ FROM
 WHERE
 	0 NOT IN (0, 1)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -310,7 +286,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -324,7 +299,6 @@ FROM
 WHERE
 	(1 NOT IN (0, 1) OR 1 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -336,7 +310,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -350,7 +323,6 @@ FROM
 WHERE
 	(0 NOT IN (0, 1) OR 0 IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -362,7 +334,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -376,7 +347,6 @@ FROM
 WHERE
 	(NULL NOT IN (0, 1) OR NULL IS NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -388,7 +358,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -402,7 +371,6 @@ FROM
 WHERE
 	(1 NOT IN (0, 1) AND 1 IS NOT NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -414,7 +382,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -428,7 +395,6 @@ FROM
 WHERE
 	(0 NOT IN (0, 1) AND 0 IS NOT NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -440,7 +406,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -454,7 +419,6 @@ FROM
 WHERE
 	(1 NOT IN (0, 1) AND 1 IS NOT NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -466,7 +430,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -480,7 +443,6 @@ FROM
 WHERE
 	(0 NOT IN (0, 1) AND 0 IS NOT NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -492,7 +454,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -506,7 +467,6 @@ FROM
 WHERE
 	(NULL NOT IN (0, 1) AND NULL IS NOT NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

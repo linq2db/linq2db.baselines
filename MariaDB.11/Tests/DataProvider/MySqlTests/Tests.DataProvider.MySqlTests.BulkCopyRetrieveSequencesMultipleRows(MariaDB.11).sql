@@ -1,17 +1,12 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SET GLOBAL local_infile=ON
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT Max(`PersonID`) FROM `Person`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `Person`
 (
@@ -28,5 +23,3 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
-BeforeExecute
-DisposeTransaction

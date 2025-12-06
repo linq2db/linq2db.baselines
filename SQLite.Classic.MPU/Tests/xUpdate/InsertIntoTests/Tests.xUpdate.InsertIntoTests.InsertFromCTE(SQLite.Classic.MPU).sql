@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 WITH [CTE_1] ([Id], [Value_1], [OtherValue])
 AS
@@ -24,7 +23,6 @@ SELECT
 FROM
 	[CTE_1] [t2]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -35,7 +33,6 @@ FROM
 	[InsertTestClass] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

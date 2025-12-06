@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 MERGE INTO [Person] [Target]
 USING (
@@ -33,7 +30,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -47,5 +43,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

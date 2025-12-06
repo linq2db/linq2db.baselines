@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
@@ -37,5 +34,3 @@ VALUES
 )
 ;
 
-BeforeExecute
-DisposeTransaction

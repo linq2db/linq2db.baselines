@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
 (
@@ -28,7 +27,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -46,7 +44,6 @@ WHERE
 	t1.ID = 1000
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

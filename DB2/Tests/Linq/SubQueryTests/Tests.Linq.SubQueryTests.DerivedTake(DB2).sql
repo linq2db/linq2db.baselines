@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t2"."ParentID",
@@ -14,7 +13,6 @@ FROM
 		FETCH NEXT 1 ROWS ONLY
 	) "t2"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

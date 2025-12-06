@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+﻿-- SqlServer.2014
 
 SELECT
 	[t1].[ParentID],
@@ -10,8 +9,7 @@ ORDER BY
 	[t1].[ParentID],
 	[t1].[ChildID]
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(4000) -- String
@@ -36,7 +35,6 @@ WHEN NOT MATCHED THEN
 		@MiddleName
 	);
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'
@@ -51,7 +49,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 0
@@ -84,7 +81,6 @@ WHEN NOT MATCHED THEN
 		@LastName
 	);
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertOrReplaceColumnFilter'

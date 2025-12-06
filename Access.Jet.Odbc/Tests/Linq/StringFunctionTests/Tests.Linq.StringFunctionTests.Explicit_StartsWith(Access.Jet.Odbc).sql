@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE 'Hall%' AND InStr(1, [r].[Diagnosis], 'Hall', 0) = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE 'hall%' AND InStr(1, [r].[Diagnosis], 'hall', 0) = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE 'hall%'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

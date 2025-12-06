@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- SqlServer.2016
 
@@ -29,7 +28,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- SqlServer.2016

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])),

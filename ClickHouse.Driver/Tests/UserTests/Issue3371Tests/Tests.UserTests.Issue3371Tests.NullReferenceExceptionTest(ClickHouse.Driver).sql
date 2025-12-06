@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	item_1.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	a_PayRate.Name = 'test'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

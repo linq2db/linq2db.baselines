@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @filter1 NVarChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 NVarChar(8) -- String
@@ -40,7 +39,6 @@ WHERE
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -49,7 +47,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

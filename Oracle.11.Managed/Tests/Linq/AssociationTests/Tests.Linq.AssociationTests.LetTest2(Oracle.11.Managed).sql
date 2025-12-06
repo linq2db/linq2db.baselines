@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."ParentID",
@@ -14,7 +13,6 @@ SELECT
 FROM
 	"Parent" t
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

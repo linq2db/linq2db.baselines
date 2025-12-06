@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 UPDATE
 	"DestinationTable"
 SET
-	"Id" = t1."Id",
 	"Value" = t1."Value",
 	"ValueStr" = t1."ValueStr"
 FROM

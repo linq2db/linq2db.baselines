@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"r"."Diagnosis" LIKE '%Persecution' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	"r"."Diagnosis" LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower("r"."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

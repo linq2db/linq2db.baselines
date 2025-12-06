@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -16,9 +15,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 UPDATE
@@ -28,9 +24,7 @@ SET
 WHERE
 	"Parent"."ParentID" = 1010
 
-BeforeExecute
 CommitTransaction
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

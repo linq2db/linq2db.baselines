@@ -1,7 +1,6 @@
-﻿BeginTransaction(RepeatableRead)
+﻿
 
-
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`OrderID`,
@@ -29,10 +28,9 @@ FROM
 
 
 
-DisposeTransaction
 
 
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`e`.`IsDeleted`,

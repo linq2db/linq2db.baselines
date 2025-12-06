@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	IIF([p].[Value1] IS NULL, (
@@ -13,9 +12,9 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children_1]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
+			[p].[ParentID] = [a_Children_1].[ParentID]
 	))
 FROM
 	[Parent] [p]

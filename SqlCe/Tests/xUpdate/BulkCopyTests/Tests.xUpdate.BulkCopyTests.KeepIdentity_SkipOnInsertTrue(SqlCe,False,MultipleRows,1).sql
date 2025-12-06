@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -12,13 +11,11 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 INSERT INTO [AllTypes]
 (
@@ -27,7 +24,6 @@ INSERT INTO [AllTypes]
 SELECT 200 UNION ALL
 SELECT 300
 
-BeforeExecute
 -- SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -42,7 +38,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `TempTable`
 (
-	`Name` VARCHAR(20) NOT NULL
+	`Name` VARCHAR(20) NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Name`)
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `TempTable`
 (
@@ -21,8 +20,7 @@ INSERT INTO `TempTable`
 VALUES
 ('John')
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t`.`Name`
@@ -30,8 +28,7 @@ FROM
 	`Person` `p`
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

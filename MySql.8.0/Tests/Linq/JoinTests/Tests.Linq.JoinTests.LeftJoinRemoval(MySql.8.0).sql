@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`ch1`.`ParentID`,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN `Child` `ch` ON `t1`.`ParentID` = `ch`.`ParentID`
 		INNER JOIN `Child` `ch1` ON `ch`.`ChildID` = `ch1`.`ChildID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	`Parent` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

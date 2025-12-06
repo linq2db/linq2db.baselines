@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	ch1."ParentID",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN "Child" ch ON t1."ParentID" = ch."ParentID"
 		INNER JOIN "Child" ch1 ON ch."ChildID" = ch1."ChildID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

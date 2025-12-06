@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	ch1.ParentID,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN Child ch ON t1.ParentID = ch.ParentID
 		INNER JOIN Child ch1 ON ch.ChildID = ch1.ChildID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

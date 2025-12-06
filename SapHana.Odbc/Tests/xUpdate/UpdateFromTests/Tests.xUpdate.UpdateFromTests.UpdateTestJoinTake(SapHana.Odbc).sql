@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @someId Int -- Int32
@@ -99,7 +98,6 @@ WHERE
 			"UpdatedEntities"."id" = "t1"."id"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

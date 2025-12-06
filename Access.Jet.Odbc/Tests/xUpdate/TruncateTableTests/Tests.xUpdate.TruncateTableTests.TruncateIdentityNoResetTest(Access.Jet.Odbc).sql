@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [test_temp]
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [test_temp]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 3
@@ -38,12 +34,10 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [test_temp]
@@ -55,7 +49,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [test_temp]
@@ -67,7 +60,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 3

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -50,7 +48,6 @@ FROM
 WHERE
 	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") < CAST('2018-01-02' AS TimeStamp)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

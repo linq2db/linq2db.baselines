@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	a_Parent.Value1
@@ -10,5 +9,5 @@ GROUP BY
 	a_Parent.ParentID,
 	a_Parent.Value1
 HAVING
-	max(g_1.ParentID) > 2
+	MAX(g_1.ParentID) > 2
 

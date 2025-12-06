@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @userId  -- Int32
 SET     @userId = 32
 DECLARE @childId  -- Int32

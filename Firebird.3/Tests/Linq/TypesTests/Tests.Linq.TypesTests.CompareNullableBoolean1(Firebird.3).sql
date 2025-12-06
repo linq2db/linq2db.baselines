@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"t".ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @param Boolean
 SET     @param = TRUE

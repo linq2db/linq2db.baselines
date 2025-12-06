@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -30,8 +30,7 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Name Text(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Text(4) -- String
@@ -45,8 +44,7 @@ SET
 WHERE
 	"FluentTemp"."ID" = 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 

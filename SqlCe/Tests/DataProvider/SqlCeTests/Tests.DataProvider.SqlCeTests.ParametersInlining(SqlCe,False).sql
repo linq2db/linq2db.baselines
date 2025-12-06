@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @minValue DateTime
 SET     @minValue = '1753-01-01'
 

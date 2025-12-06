@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 
 SELECT * FROM (
@@ -22,7 +21,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0
 ) ORDER BY ProcedureName
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -59,11 +57,7 @@ SELECT
 FROM RDB$FUNCTION_ARGUMENTS p
 		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 
@@ -87,7 +81,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0
 ) ORDER BY ProcedureName
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -124,11 +117,7 @@ SELECT
 FROM RDB$FUNCTION_ARGUMENTS p
 		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 
@@ -152,7 +141,6 @@ SELECT * FROM (
 	WHERE RDB$SYSTEM_FLAG = 0
 ) ORDER BY ProcedureName
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -189,7 +177,4 @@ SELECT
 FROM RDB$FUNCTION_ARGUMENTS p
 		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction

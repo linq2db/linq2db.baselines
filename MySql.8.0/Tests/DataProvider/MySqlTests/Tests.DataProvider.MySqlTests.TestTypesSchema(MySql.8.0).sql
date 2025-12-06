@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 
 SELECT
@@ -10,7 +9,6 @@ SELECT
 	FROM INFORMATION_SCHEMA.TABLES
 	WHERE TABLE_SCHEMA = DATABASE()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 
@@ -32,7 +30,6 @@ BeforeExecute
 					c.CONSTRAINT_TYPE   ='PRIMARY KEY' AND
 					c.CONSTRAINT_SCHEMA = database()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 
@@ -52,7 +49,6 @@ SELECT
 	FROM INFORMATION_SCHEMA.COLUMNS
 	WHERE TABLE_SCHEMA = DATABASE()
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 

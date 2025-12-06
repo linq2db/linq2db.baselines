@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @filter Text(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 Text(8) -- String
@@ -46,8 +45,7 @@ WHERE
 ORDER BY
 	patient_1."PersonID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."PersonID",
@@ -55,8 +53,7 @@ SELECT
 FROM
 	"Patient" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."FirstName",

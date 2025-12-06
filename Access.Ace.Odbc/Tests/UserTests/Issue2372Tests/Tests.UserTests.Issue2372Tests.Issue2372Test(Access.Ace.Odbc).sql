@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [InventoryResource]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'

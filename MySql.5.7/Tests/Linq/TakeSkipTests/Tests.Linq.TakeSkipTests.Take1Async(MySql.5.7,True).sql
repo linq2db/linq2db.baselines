@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @take Int32
 SET     @take = 2
 
@@ -10,7 +9,6 @@ FROM
 	`Child` `ch`
 LIMIT @take
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @take Int32
 SET     @take = 3
@@ -22,8 +20,7 @@ FROM
 	`Child` `ch`
 LIMIT @take
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @take Int32
 SET     @take = 2
 
@@ -34,8 +31,7 @@ FROM
 	`Child` `ch`
 LIMIT @take
 
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @take Int32
 SET     @take = 3
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	t."FirstName" = :p
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(6) -- String
 SET     @p = 'Tester'

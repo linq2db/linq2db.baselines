@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Len([nm].[MiddleName]) <> 0 OR [nm].[MiddleName] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

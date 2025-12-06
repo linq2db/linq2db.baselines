@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 WITH [CTE_1] ([Obj_Operator])
 AS
@@ -14,7 +13,6 @@ SELECT TOP (1)
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)

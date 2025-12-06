@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	Src s
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	s.NullableInt IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -26,7 +23,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

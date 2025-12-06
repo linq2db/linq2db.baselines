@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [LinqDataTypes]
@@ -22,7 +20,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 UPDATE
@@ -32,7 +29,6 @@ SET
 WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 3
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 4
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @p Integer -- Int32
 SET     @p = 102

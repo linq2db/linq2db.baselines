@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "BlobClass"
 (
@@ -12,7 +11,6 @@ VALUES
 	HEXTORAW('010203')
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

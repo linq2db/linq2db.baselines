@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
-
-DROP TABLE IF EXISTS "xxPerson"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
-
-CREATE TABLE "xxPerson"
-(
-	"FirstName"  text     NOT NULL,
-	"PersonID"   SERIAL   NOT NULL,
-	"LastName"   text     NOT NULL,
-	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
-
-	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -43,16 +23,14 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" t1
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -64,8 +42,7 @@ FROM
 	"xxPerson" t1
 LIMIT 2
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -87,8 +64,7 @@ SET
 WHERE
 	"xxPerson"."PersonID" = :ID
 
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -99,9 +75,4 @@ SELECT
 FROM
 	"xxPerson" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
-
-DROP TABLE "xxPerson"
 

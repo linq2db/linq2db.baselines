@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DoubleNullable Double
@@ -16,7 +15,6 @@ VALUES
 	:DoubleNullable
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	:DoubleNullable
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

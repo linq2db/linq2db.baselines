@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -24,8 +23,7 @@ VALUES
 	@IsMale
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Code VarChar(6) -- String
 SET     @Code = 'Child2'
 DECLARE @Id Int32
@@ -50,8 +48,7 @@ VALUES
 	@Age
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`e`.`Code`,

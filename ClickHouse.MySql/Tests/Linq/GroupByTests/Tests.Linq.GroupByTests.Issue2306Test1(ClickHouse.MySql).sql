@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -11,7 +10,6 @@ SELECT
 FROM
 	Person m_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -21,7 +19,6 @@ FROM
 GROUP BY
 	t1.PersonID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ SELECT
 FROM
 	Person m_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 DECLARE @id1 Integer -- Int32

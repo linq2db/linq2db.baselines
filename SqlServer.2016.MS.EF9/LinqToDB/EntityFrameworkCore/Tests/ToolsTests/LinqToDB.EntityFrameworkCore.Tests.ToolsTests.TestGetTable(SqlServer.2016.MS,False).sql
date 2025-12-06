@@ -1,4 +1,4 @@
-﻿-- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 
 SELECT
 	[e].[IsDeleted],

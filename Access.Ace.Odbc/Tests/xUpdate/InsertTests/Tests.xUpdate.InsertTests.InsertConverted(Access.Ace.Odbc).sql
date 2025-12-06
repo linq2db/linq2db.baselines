@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] >= 1000
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @tt Int -- Int32
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
@@ -33,7 +30,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

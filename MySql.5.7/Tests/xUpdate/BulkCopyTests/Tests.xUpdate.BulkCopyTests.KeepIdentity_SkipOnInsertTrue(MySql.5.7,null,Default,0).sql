@@ -1,56 +1,51 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Value Int32
 SET     @Value = 0
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
-	`intDataType`
+	`Value`
 )
 VALUES
 (
 	@Value
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
-	`intDataType`
+	`Value`
 )
 VALUES
 (200),
 (300)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 265
 
 SELECT
 	`t1`.`ID`,
-	`t1`.`intDataType`
+	`t1`.`Value`
 FROM
-	`AllTypes` `t1`
+	`KeepIdentityTest` `t1`
 WHERE
 	`t1`.`ID` > @lastId
 ORDER BY
 	`t1`.`ID`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 265
 
 DELETE  
 FROM
-	`AllTypes`
+	`KeepIdentityTest`
 WHERE
-	`AllTypes`.`ID` >= @lastId
+	`KeepIdentityTest`.`ID` >= @lastId
 

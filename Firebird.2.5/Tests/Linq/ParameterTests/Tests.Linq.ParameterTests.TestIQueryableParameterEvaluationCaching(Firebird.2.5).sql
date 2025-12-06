@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 
@@ -21,7 +20,6 @@ WHERE
 			"p"."PersonID" = @paramCopy AND "t1"."PersonID" = "p"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 2
@@ -44,7 +42,6 @@ WHERE
 			"p"."PersonID" = @paramCopy AND "t1"."PersonID" = "p"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 3
@@ -67,7 +64,6 @@ WHERE
 			"p"."PersonID" = @paramCopy AND "t1"."PersonID" = "p"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 4
@@ -90,7 +86,6 @@ WHERE
 			"p"."PersonID" = @paramCopy AND "t1"."PersonID" = "p"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1

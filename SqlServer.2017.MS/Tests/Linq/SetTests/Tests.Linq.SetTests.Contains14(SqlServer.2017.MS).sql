@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -13,7 +12,6 @@ SELECT
 			[p].[ParentID] = 1
 	), 1, 0)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2

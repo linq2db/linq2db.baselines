@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
@@ -22,7 +20,6 @@ FROM
 WHERE
 	"c_1"."ChildID" = 11
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
@@ -15,7 +13,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [TempTable]
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -36,7 +32,6 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)

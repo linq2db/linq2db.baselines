@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[Issue4671EntityTMP]
 (
@@ -7,7 +6,6 @@ CREATE TEMPORARY TABLE temp.[Issue4671EntityTMP]
 	[Value] INTEGER  NOT NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Issue4671Entity]
@@ -19,7 +17,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO temp.[Issue4671EntityTMP]
@@ -31,7 +28,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -41,7 +37,6 @@ FROM
 	[Issue4671Entity] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -51,7 +46,6 @@ FROM
 	temp.[Issue4671EntityTMP] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[Issue4671EntityTMP]

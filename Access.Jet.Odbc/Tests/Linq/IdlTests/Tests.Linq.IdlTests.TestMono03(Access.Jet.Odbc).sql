@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
 DECLARE @p2 Int -- Int32

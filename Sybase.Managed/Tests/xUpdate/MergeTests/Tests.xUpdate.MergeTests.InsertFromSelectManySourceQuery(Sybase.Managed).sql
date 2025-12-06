@@ -1,27 +1,21 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Child]
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [GrandChild]
 FROM
 	[GrandChild] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -35,7 +29,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -49,7 +42,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
@@ -63,7 +55,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
@@ -77,7 +68,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
@@ -99,7 +89,6 @@ VALUES
 	@RightId
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [GrandChild] [Target]
@@ -133,7 +122,6 @@ VALUES
 	[Source].[RightId]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -145,5 +133,3 @@ FROM
 ORDER BY
 	[t1].[GrandChildID]
 
-BeforeExecute
-DisposeTransaction

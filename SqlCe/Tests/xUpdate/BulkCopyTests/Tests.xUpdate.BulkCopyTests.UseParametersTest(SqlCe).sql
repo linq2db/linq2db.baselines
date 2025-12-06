@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Int -- Int32
@@ -259,7 +256,6 @@ SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98 UNION ALL
 SELECT @p99,@p100
 
-BeforeExecute
 -- SqlCe
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111051
@@ -518,7 +514,6 @@ SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98 UNION ALL
 SELECT @p99,@p100
 
-BeforeExecute
 -- SqlCe
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111101
@@ -772,7 +767,6 @@ SELECT @p93,@p94 UNION ALL
 SELECT @p95,@p96 UNION ALL
 SELECT @p97,@p98
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
@@ -780,11 +774,9 @@ DECLARE @ParentID_1 Int -- Int32
 SET     @ParentID_1 = 111149
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [r]
 WHERE
 	[r].[ParentID] >= @ParentID AND [r].[ParentID] <= @ParentID_1
 
-BeforeExecute
-DisposeTransaction

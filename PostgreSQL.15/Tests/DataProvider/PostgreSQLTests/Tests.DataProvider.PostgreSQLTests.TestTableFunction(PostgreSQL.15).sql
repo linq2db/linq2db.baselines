@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -44,7 +43,6 @@ SELECT
 FROM
 	"TestTableFunctionSchema"() t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -92,7 +90,6 @@ FROM
 ORDER BY
 	t1."ID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

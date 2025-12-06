@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 MERGE INTO "Person" "Target"
 USING (
@@ -31,7 +28,6 @@ SET
 	"MiddleName" = 'first ' || "Source"."Patient_Diagnosis",
 	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -45,5 +41,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

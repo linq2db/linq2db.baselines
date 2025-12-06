@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	COUNT([p].[PersonID])
@@ -16,7 +15,6 @@ WHERE
 	)
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

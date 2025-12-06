@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -21,7 +20,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[DestinationTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

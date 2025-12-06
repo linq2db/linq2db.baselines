@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,9 +11,6 @@ VALUES
 	?
 )
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 11
@@ -29,9 +25,6 @@ FROM
 WHERE
 	[d].[Id] = ?
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -39,9 +32,6 @@ SELECT
 FROM
 	[Test3664] [t1]
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 12
@@ -56,9 +46,6 @@ FROM
 WHERE
 	[d].[Id] = ?
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

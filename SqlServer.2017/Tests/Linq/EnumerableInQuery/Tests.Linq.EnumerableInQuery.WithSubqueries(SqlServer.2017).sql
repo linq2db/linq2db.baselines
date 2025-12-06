@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	[it_1].[cond],
@@ -20,7 +19,7 @@ FROM
 				(VALUES
 					([a_Color].[Name],[a_Style].[Name],(
 						SELECT
-							COUNT(*) as [COUNT_1]
+							COUNT(*) as [Count_1]
 						FROM
 							[SomeItem] [t1]
 					)),
@@ -30,7 +29,6 @@ FROM
 WHERE
 	[it_1].[ColorName] = N'Red'
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -46,7 +44,6 @@ FROM
 		LEFT JOIN [SomeColor] [a_Color] ON [t1].[ColorId] = [a_Color].[Id]
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT

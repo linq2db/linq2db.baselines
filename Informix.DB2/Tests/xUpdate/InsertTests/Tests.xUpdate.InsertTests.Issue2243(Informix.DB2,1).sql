@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy VarChar -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	t1.id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -37,7 +35,6 @@ VALUES
 	@CreatedBy
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -48,7 +45,6 @@ SELECT FIRST 2
 FROM
 	test_insert_or_replace t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test2'
@@ -65,7 +61,6 @@ SET
 WHERE
 	t1.id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

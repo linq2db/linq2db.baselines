@@ -1,21 +1,20 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	Name String
-)
-ENGINE = Memory()
+	Name String,
 
-BeforeExecute
+	PRIMARY KEY (Name)
+)
+ENGINE = MergeTree()
+ORDER BY Name
+
 INSERT ASYNC BULK TempTable(Name)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	Person p
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable

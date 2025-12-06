@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
 SELECT
+	t1."Id",
 	t1."Value"
 FROM
 	"TakeSkipClass" t1

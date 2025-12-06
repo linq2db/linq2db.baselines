@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	x."Id"
@@ -9,7 +8,6 @@ WHERE
 	x."Text" IS NULL
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = ''

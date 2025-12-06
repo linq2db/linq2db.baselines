@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = _utf8 x'D09DD0B5204153434949'
 DECLARE @LastName VarChar(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	"Person" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
@@ -57,7 +52,6 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -71,7 +65,6 @@ WHERE
 	"t1"."PersonID" = @ID
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
@@ -132,5 +125,3 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ) = CAST(@PersonID AS Int) THEN DELETE
 
-BeforeExecute
-DisposeTransaction

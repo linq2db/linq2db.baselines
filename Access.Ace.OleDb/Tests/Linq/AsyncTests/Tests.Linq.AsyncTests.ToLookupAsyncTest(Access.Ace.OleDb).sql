@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[t1].[ParentID],
@@ -10,8 +9,7 @@ ORDER BY
 	[t1].[ParentID],
 	[t1].[ChildID]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[t1].[ParentID],

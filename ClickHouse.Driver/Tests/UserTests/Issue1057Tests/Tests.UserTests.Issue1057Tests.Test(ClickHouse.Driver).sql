@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Task
 (
@@ -12,7 +11,6 @@ VALUES
 	'bda.Requests'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Task
@@ -26,7 +24,6 @@ VALUES
 	'None'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TaskStage
@@ -42,7 +39,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

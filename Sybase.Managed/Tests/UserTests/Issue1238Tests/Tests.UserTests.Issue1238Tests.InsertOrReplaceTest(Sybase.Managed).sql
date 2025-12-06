@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
@@ -44,7 +40,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -52,7 +47,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
@@ -89,7 +83,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -97,5 +90,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 UPDATE
 	[UpdatedEntities]
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[a_Relation].[RelatedValue1] = 11 AND [UpdatedEntities].[RelationId] = [a_Relation].[id]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

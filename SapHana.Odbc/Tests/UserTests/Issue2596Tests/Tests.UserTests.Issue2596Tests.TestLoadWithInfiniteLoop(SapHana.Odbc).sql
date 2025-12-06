@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."Id",
@@ -28,7 +25,6 @@ FROM
 		LEFT JOIN "ProductUnit" "a_ProductUnit" ON "d"."ProductUnitId" = "a_ProductUnit"."Id"
 		LEFT JOIN "Product" "a_Product" ON "d"."ProductId" = "a_Product"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -53,7 +49,6 @@ FROM
 		INNER JOIN "InvoiceTaxLine" "d" ON "m_1"."Id" = "d"."InvoiceId"
 		INNER JOIN "AccountTax" "a_Tax" ON "d"."TaxId" = "a_Tax"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -75,7 +70,6 @@ FROM
 	) "m_1"
 		INNER JOIN "CustomInvoiceLine" "d" ON "m_1"."Id" = "d"."CustomInvoiceId"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -103,7 +97,6 @@ FROM
 		LEFT JOIN "MeasureSource" "a_Source" ON "d"."MeasuresSourceId" = "a_Source"."Id"
 		LEFT JOIN "MeasureSource" "a_PreviousSource" ON "d"."PreviousSourceId" = "a_PreviousSource"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -125,9 +118,6 @@ FROM
 	) "m_1"
 		INNER JOIN "TypeBMeasures" "d" ON "m_1"."Id" = "d"."CustomInvoiceId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

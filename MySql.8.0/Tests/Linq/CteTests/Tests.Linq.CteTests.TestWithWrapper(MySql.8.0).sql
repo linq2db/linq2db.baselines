@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE_1` (`Child_ParentID`, `Child_ChildID`)
 AS
@@ -19,7 +18,6 @@ FROM
 	`Parent` `p`
 		INNER JOIN `CTE_1` `c_1` ON `p`.`ParentID` = `c_1`.`Child_ParentID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

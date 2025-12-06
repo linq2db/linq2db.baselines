@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test01'
@@ -24,7 +22,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test02  '
@@ -42,7 +39,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test03	 '
@@ -60,7 +56,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test04
@@ -80,7 +75,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test05 '
@@ -98,7 +92,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test06 '
@@ -116,7 +109,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test07 '
@@ -134,7 +126,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test08  '
@@ -152,7 +143,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test09  '
@@ -170,7 +160,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test10  '
@@ -188,7 +177,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test11  '
@@ -206,7 +194,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test12  '
@@ -224,7 +211,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test13  '
@@ -242,7 +228,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test14  '
@@ -260,7 +245,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test15  '
@@ -278,7 +262,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test16  '
@@ -296,7 +279,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test17  '
@@ -314,7 +296,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test18  '
@@ -332,7 +313,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test19  '
@@ -350,7 +330,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test20　 '
@@ -368,7 +347,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test21' + char(0) + N' '
@@ -386,7 +364,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = NULL
@@ -404,7 +381,6 @@ VALUES
 	@String
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
@@ -420,7 +396,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2

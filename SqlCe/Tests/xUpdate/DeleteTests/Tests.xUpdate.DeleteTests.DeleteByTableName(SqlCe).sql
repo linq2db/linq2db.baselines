@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,15 +23,13 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -44,7 +41,6 @@ SELECT TOP (2)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -54,11 +50,10 @@ DELETE FROM
 WHERE
 	[xxPerson].[PersonID] = @ID
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 

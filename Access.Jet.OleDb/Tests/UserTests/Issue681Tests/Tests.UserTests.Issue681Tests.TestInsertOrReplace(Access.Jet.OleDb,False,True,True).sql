@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
 DECLARE @ID Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[ID] = @ID
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
@@ -30,7 +28,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Value Integer -- Int32
 SET     @Value = 10

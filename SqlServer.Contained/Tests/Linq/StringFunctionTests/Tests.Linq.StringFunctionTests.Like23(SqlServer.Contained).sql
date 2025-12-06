@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @pattern NVarChar(4000) -- String
 SET     @pattern = N'%h~%n%'
 

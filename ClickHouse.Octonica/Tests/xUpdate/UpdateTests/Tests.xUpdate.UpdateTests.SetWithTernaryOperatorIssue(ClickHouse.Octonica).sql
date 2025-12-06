@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'Empty'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -28,7 +26,6 @@ UPDATE
 WHERE
 	startsWith(FirstName, 'UpdateComplex')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

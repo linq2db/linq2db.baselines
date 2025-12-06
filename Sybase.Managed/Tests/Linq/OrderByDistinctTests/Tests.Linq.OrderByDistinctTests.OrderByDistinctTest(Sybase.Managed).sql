@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
@@ -18,7 +16,6 @@ GROUP BY
 ORDER BY
 	MAX([x].[OrderData1])
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT DISTINCT TOP 3
@@ -26,7 +23,6 @@ SELECT DISTINCT TOP 3
 FROM
 	[OrderByDistinctData] [x]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3

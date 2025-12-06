@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @GrandChildID Integer(4) -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Integer(4) -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1.ParentID = @ParentID AND t1.ChildID IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @GrandChildID Integer(4) -- Int32
 SET     @GrandChildID = 1000

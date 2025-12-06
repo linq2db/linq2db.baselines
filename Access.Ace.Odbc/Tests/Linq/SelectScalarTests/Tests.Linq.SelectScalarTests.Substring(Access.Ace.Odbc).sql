@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 2
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	Mid('123', 2, ?)
+	Mid('123', 2, 2)
 

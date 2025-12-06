@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO ValuesTable
 (
@@ -14,7 +13,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 INSERT INTO "TestTempTable"
 (
@@ -12,7 +11,6 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -21,12 +19,13 @@ EXECUTE BLOCK AS BEGIN
 			CREATE TABLE "TempTable"
 			(
 				"Id"      Int                                    NOT NULL,
-				"Renamed" VarChar(255) CHARACTER SET UNICODE_FSS
+				"Renamed" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "TempTable"
@@ -40,7 +39,6 @@ SELECT
 FROM
 	"TestTempTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "TestTempTable"
@@ -54,7 +52,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "TempTable"
@@ -68,7 +65,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -79,7 +75,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -90,7 +85,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN

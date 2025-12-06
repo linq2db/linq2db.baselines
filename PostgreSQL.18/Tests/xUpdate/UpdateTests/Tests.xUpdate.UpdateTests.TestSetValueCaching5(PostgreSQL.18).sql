@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Value5 Integer -- Int32
 SET     @Value5 = 11
 DECLARE @id Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"UpdateSetTest"."Id" = :id
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
@@ -25,7 +23,6 @@ WHERE
 	t1."Id" = :id
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Value5 Integer -- Int32
 SET     @Value5 = 12
@@ -39,7 +36,6 @@ SET
 WHERE
 	"UpdateSetTest"."Id" = :id
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1

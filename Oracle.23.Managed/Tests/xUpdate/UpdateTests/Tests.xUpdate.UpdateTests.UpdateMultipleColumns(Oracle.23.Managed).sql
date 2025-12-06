@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
@@ -20,7 +19,6 @@ VALUES
 	:SmallIntValue
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	t.ID = :ID
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001

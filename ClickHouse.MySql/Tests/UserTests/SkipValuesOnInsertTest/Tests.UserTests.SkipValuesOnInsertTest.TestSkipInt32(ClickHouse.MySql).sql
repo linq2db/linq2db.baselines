@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Insert_Table
 (
@@ -12,7 +11,6 @@ VALUES
 	'Smith'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -25,7 +23,6 @@ WHERE
 	t.Id = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO PR_1598_Insert_Table
@@ -39,7 +36,6 @@ VALUES
 	'Tommy'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

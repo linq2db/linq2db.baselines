@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN BookAuthor d ON d.FkBookId = m_1.Id
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -78,7 +76,6 @@ FROM
 WHERE
 	a_Author.AuthorName <> 'A' OR a_Author.AuthorName IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -107,7 +104,6 @@ FROM
 WHERE
 	a_Book_1.Discriminator = 'Novel'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -133,7 +129,6 @@ FROM
 		INNER JOIN BookAuthor d_1 ON d_1.FkBookId = m_1.BookId
 		LEFT JOIN Author a_Author ON d_1.FkAuthorId = a_Author.AuthorId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -148,7 +143,6 @@ FROM
 		INNER JOIN BookAuthor d ON d.FkAuthorId = m_1.AuthorId
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

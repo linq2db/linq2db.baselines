@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [Child]
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
@@ -55,7 +51,6 @@ WHERE
 			[Child].[ChildID] = [a_Children].[ChildID]
 	)
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
@@ -63,7 +58,6 @@ DELETE FROM
 WHERE
 	[Child].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[p].[FirstName],
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

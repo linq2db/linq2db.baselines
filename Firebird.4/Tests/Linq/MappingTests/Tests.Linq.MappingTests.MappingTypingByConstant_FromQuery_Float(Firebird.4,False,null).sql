@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @value Float -- Single
 SET     @value = NULL
 
@@ -15,7 +14,6 @@ FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @value Float -- Single
 SET     @value = 3.14748365E+09

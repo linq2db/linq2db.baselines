@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t1].[FirstName],
@@ -10,7 +9,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (1)

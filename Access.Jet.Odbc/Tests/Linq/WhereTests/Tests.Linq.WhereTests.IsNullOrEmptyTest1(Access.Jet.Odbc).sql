@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

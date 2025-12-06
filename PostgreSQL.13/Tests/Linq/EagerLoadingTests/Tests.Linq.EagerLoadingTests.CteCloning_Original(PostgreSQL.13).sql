@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE cte ("Value2", "Value4")
 AS
@@ -37,10 +34,7 @@ FROM
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE cte
 (

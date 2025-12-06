@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	EXISTS(
@@ -9,7 +8,6 @@ SELECT
 			[Issue2494Table] [t1]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
@@ -23,7 +21,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

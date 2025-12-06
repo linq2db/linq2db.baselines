@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND N'123%456' LIKE N'%~%%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

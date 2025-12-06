@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[t3].[NAME3],
@@ -32,7 +31,6 @@ FROM
 ORDER BY
 	[t3].[ID3]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -42,7 +40,6 @@ SELECT
 FROM
 	[TABLE3] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -52,7 +49,6 @@ SELECT
 FROM
 	[TABLE2] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

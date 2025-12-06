@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -9,7 +8,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Single
 SET     @value = 6579.64648
@@ -20,7 +18,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Double
 SET     @value = 6579.6464800000003
@@ -31,7 +28,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
@@ -42,7 +38,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Single
 SET     @value = 6579.64648
@@ -53,7 +48,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Double
 SET     @value = 6579.6464800000003
@@ -64,7 +58,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
@@ -75,7 +68,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Single
 SET     @value = 6579.64648
@@ -86,7 +78,6 @@ FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @value  -- Double
 SET     @value = 6579.6464800000003

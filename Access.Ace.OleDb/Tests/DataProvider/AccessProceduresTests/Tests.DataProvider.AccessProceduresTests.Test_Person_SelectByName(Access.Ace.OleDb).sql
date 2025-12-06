@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName VarChar(6) -- AnsiString
 SET     @firstName = 'Jürgen'
 DECLARE @lastName VarChar(5) -- AnsiString
@@ -9,7 +6,6 @@ SET     @lastName = 'König'
 
 Person_SelectByName
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName VarWChar(6) -- String
 SET     @firstName = 'Jürgen'
@@ -23,7 +19,6 @@ FROM
 WHERE
 	[t1].[FirstName] = @firstName AND [t1].[LastName] = @lastName
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @firstName VarWChar(6) -- String
 SET     @firstName = 'Jürgen'
@@ -41,5 +36,3 @@ FROM
 WHERE
 	[t1].[FirstName] = @firstName AND [t1].[LastName] = @lastName
 
-BeforeExecute
-DisposeTransaction

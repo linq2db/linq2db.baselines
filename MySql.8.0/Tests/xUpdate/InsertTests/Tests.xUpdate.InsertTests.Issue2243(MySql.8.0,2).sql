@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -25,7 +24,6 @@ ON DUPLICATE KEY UPDATE
 	`name` = @Name,
 	`updated_by` = @UpdatedBy
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -37,7 +35,6 @@ FROM
 	`test_insert_or_replace` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -64,7 +61,6 @@ ON DUPLICATE KEY UPDATE
 	`name` = @Name,
 	`updated_by` = @UpdatedBy
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

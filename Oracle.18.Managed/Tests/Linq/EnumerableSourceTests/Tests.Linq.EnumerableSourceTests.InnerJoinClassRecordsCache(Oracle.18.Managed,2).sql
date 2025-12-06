@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName",
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 4 FROM sys.dual) n ON p."PersonID" = n.ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

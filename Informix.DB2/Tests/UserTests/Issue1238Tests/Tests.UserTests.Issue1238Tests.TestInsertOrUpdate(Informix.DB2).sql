@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	InheritanceParent
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
@@ -16,7 +12,6 @@ SET
 WHERE
 	t1.InheritanceParentId = 143 AND t1.Name IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO InheritanceParent
@@ -32,7 +27,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -40,7 +34,6 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
@@ -50,7 +43,6 @@ SET
 WHERE
 	t1.InheritanceParentId = 143 AND t1.Name IS NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -58,5 +50,3 @@ SELECT
 FROM
 	InheritanceParent t1
 
-BeforeExecute
-DisposeTransaction

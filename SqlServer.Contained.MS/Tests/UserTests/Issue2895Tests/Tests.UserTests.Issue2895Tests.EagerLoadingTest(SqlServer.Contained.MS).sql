@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -30,9 +27,6 @@ FROM
 		INNER JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

@@ -1,14 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [t1]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -28,9 +24,6 @@ FROM
 				(1), (2), (3), (4), (5), (6), (7)
 			) [d] ON [d].[ParentID] = [m_1].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -38,7 +31,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

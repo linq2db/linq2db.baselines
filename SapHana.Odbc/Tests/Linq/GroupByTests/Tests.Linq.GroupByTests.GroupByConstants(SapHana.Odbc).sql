@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"g_2"."ChildId",
@@ -17,7 +16,6 @@ GROUP BY
 	"g_2"."ChildId",
 	"g_2"."ParentId"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

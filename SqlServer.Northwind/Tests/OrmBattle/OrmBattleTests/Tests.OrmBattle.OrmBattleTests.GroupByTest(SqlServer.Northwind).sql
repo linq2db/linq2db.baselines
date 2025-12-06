@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -28,9 +25,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT

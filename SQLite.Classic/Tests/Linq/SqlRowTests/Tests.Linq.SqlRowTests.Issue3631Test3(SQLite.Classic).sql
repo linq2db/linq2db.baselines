@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

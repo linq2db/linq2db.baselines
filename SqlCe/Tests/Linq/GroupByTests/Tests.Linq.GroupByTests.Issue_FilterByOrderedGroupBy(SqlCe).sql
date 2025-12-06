@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t].[ParentID],
@@ -29,7 +28,6 @@ WHERE
 			) [t1]
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT

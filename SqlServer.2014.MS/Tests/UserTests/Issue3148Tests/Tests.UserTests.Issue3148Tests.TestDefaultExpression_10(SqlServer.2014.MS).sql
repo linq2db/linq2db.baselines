@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[x].[ParentID],
@@ -27,7 +26,6 @@ WHERE
 			[a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

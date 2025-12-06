@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	"p"."FirstName" IS NULL
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'

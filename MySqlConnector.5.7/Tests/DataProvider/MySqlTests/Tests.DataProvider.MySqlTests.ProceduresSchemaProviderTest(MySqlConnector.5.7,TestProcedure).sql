@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	DATABASE()
@@ -7,7 +6,6 @@ FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 
@@ -19,7 +17,6 @@ SELECT
 	FROM INFORMATION_SCHEMA.TABLES
 	WHERE TABLE_SCHEMA = DATABASE()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 
@@ -41,7 +38,6 @@ BeforeExecute
 					c.CONSTRAINT_TYPE   ='PRIMARY KEY' AND
 					c.CONSTRAINT_SCHEMA = database()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 
@@ -61,7 +57,6 @@ SELECT
 	FROM INFORMATION_SCHEMA.COLUMNS
 	WHERE TABLE_SCHEMA = DATABASE()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 
@@ -83,24 +78,18 @@ SELECT
 	WHERE tc.CONSTRAINT_TYPE = 'FOREIGN KEY'
 		AND c.TABLE_SCHEMA   = DATABASE()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 `testdataconnector`.`AddIssue792Record`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
@@ -112,7 +101,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Blob(255) -- Binary
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -205,7 +194,6 @@ SET     @GeometryCollection = NULL
 
 `testdataconnector`.`Issue2313Parameters`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @VarCharDefault VarChar(4000) -- AnsiString
 SET     @VarCharDefault = NULL
@@ -217,7 +205,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Blob(255) -- Binary
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -310,7 +298,6 @@ SET     @Year = NULL
 
 `testdataconnector`.`Issue2313Results`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
@@ -319,7 +306,6 @@ SET     @aOutParam = NULL
 
 `testdataconnector`.`TestOutputParametersWithoutTableProcedure`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @param3 Int32
 SET     @param3 = NULL
@@ -330,5 +316,4 @@ SET     @param1 = NULL
 
 `testdataconnector`.`TestProcedure`
 
-BeforeExecute
 RollbackTransaction

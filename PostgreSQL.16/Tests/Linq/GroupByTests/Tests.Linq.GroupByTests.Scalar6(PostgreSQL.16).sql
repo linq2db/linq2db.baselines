@@ -1,11 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	MAX(CASE
-		WHEN g_1."ParentID" < 3 THEN g_1."ChildID"
-		ELSE NULL
-	END)
+	MAX(g_1."ChildID") FILTER (WHERE g_1."ParentID" < 3)
 FROM
 	"Child" g_1
 WHERE

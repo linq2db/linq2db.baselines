@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Varchar2(1) -- String

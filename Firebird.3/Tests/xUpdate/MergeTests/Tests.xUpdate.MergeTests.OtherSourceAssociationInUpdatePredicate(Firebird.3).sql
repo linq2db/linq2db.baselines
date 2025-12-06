@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 MERGE INTO "Person" "Target"
 USING (
@@ -31,7 +28,6 @@ UPDATE
 SET
 	"LastName" = 'Updated'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -45,5 +41,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

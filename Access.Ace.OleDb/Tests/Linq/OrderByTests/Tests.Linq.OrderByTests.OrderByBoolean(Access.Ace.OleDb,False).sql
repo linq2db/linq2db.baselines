@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	Len([t1].[FirstName]) > 4
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

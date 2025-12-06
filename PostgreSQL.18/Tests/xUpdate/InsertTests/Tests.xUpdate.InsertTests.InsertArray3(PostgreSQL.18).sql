@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" > 1000
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @arr Bytea(4) -- Binary
 SET     @arr = E'\\x01020304'::bytea
@@ -24,7 +22,6 @@ VALUES
 	:arr
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -41,7 +38,6 @@ WHERE
 	t."ID" = 1001
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

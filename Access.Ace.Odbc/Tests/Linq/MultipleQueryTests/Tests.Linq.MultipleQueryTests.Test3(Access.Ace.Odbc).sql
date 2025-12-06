@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],
@@ -9,9 +6,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

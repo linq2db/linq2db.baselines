@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	(
@@ -10,7 +9,7 @@ SELECT
 	),
 	(
 		SELECT
-			arrayStringConcat(groupArray(t2.Value1), ' -> ')
+			arrayStringConcat(groupArray(toString(t2.Value1)), ' -> ')
 		FROM
 			SampleClass t2
 	)

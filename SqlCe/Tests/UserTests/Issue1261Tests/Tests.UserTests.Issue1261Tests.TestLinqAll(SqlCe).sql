@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CASE
@@ -15,7 +14,6 @@ SELECT
 		ELSE 0
 	END as [c1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName",
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."item"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

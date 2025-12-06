@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"p"."PersonID" = 1 AND @s LIKE '%[%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'

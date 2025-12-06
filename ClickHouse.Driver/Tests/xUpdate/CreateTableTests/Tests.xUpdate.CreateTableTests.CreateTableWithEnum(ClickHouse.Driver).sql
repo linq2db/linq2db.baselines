@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE TestEnumTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE TestEnumTable
@@ -16,7 +14,6 @@ CREATE TABLE TestEnumTable
 )
 ENGINE = Memory()
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TestEnumTable
@@ -36,7 +33,6 @@ VALUES
 	toInt16(0)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -48,7 +44,6 @@ SELECT
 FROM
 	TestEnumTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE TestEnumTable

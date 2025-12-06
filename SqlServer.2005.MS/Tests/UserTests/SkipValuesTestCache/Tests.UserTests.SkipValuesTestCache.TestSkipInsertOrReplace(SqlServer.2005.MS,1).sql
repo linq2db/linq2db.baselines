@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Id Int -- Int32
@@ -28,7 +27,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
@@ -70,7 +67,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)

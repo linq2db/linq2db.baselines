@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
@@ -28,7 +27,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -39,7 +37,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "CacheTestTable" "Target"
@@ -69,7 +66,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

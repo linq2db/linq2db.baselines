@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [aa]
 (
@@ -9,7 +8,6 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @bb Int -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	[aa] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [aa]

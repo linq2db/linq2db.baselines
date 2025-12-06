@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer -- Int32

@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 
@@ -25,12 +22,10 @@ SELECT
 FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 select hostName()
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 select database()

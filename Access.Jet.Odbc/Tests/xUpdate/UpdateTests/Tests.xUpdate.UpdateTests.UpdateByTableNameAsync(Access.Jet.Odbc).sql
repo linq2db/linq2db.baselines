@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
-
-DROP TABLE [xxPerson]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   Int            NOT NULL IDENTITY,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     Char(1)        NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -43,16 +23,14 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -63,8 +41,7 @@ SELECT TOP 2
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -86,8 +63,7 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -97,9 +73,4 @@ SELECT TOP 2
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
-
-DROP TABLE [xxPerson]
 

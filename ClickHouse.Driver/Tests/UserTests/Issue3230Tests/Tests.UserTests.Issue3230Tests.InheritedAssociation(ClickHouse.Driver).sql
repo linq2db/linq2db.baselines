@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.ID,
@@ -12,7 +11,6 @@ FROM
 		LEFT JOIN Parent_3230 a_Parent ON t1.ParentID = a_Parent.ID
 		LEFT JOIN GrandParent_3230 a_GrandParent ON a_Parent.GrandParentID = a_GrandParent.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

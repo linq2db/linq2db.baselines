@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -52,7 +50,6 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 	SELECT
@@ -69,7 +66,6 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -158,7 +154,6 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
 				     ) columns;
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -208,7 +203,6 @@ BeforeExecute
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -228,12 +222,10 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
@@ -244,36 +236,27 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -322,7 +305,6 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 	SELECT
@@ -339,7 +321,6 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -428,7 +409,6 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 				     ) columns;
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -478,7 +458,6 @@ BeforeExecute
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -498,12 +477,10 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog', 'public', 'test_schema')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
@@ -514,16 +491,11 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -572,7 +544,6 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog') AND v.schemaname IN ('IncludeExcludeSchemaTest')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 	SELECT
@@ -589,7 +560,6 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('IncludeExcludeSchemaTest')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -678,7 +648,6 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog') AND ns.nspname IN ('IncludeExcludeSchemaTest')
 				     ) columns;
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -728,7 +697,6 @@ BeforeExecute
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('IncludeExcludeSchemaTest')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
@@ -748,12 +716,10 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('IncludeExcludeSchemaTest')
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
@@ -764,7 +730,4 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction

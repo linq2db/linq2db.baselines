@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO DateOnlyTable
 (
@@ -8,10 +7,10 @@ INSERT INTO DateOnlyTable
 VALUES
 (toDate32('2021-01-01'))
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Date
 FROM
 	DateOnlyTable t1

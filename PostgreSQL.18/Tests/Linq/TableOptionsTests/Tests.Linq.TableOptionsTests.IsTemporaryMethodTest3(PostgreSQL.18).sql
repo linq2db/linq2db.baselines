@@ -1,19 +1,18 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTable"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 CREATE TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -30,7 +29,6 @@ FROM
 WHERE
 	t1."Id" = t2."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTable"

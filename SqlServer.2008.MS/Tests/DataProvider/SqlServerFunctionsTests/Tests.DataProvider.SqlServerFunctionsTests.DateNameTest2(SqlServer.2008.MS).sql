@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	DATENAME(Month, CAST('2022-03-22T00:00:00.0000000' AS DATETIME2))
+	DATENAME(Month, CAST('2022-03-22' AS DateTime2))
 

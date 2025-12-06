@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[m_1].[PersonID],
@@ -13,9 +10,6 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

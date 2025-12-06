@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bool -- Boolean
@@ -20,8 +19,7 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bool -- Boolean
@@ -42,8 +40,7 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Bool -- Boolean
@@ -64,8 +61,7 @@ VALUES
 	@ImageFullUrl
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value2 VarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -17,7 +16,6 @@ SET
 WHERE
 	`e`.`Id` = 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -37,7 +35,6 @@ WHERE
 	`e`.`Id` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -75,7 +72,6 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -95,7 +91,6 @@ WHERE
 	`e`.`Id` = 2
 LIMIT 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
@@ -133,7 +128,6 @@ SET
 WHERE
 	`t1`.`Id` = @Id
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

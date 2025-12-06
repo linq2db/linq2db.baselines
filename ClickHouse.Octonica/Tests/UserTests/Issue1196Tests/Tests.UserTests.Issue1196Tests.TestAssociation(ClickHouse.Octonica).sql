@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Requests
 (
@@ -12,7 +11,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO FirmInfo
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Assignments
@@ -40,7 +37,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -58,7 +54,6 @@ FROM
 WHERE
 	r.Id = 1002
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

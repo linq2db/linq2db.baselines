@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
 	BEGIN
@@ -28,7 +27,6 @@ BEGIN
 	END;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "DropTableTestID"
@@ -39,12 +37,10 @@ CREATE TABLE "DropTableTestID"
 	CONSTRAINT "PK_DropTableTestID" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "SIDENTITY_DropTableTestID"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_DropTableTestID"
@@ -53,7 +49,6 @@ BEGIN
 	SELECT "SIDENTITY_DropTableTestID".NEXTVAL INTO :NEW.ID FROM dual;
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "DropTableTestID"
@@ -65,7 +60,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -74,7 +68,6 @@ SELECT
 FROM
 	"DropTableTestID" t
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -83,7 +76,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTestID"';
 END;
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

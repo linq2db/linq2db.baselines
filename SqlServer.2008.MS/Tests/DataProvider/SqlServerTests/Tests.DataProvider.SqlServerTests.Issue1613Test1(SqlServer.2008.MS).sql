@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[g_1].[dt]
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	[g_1].[dt]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

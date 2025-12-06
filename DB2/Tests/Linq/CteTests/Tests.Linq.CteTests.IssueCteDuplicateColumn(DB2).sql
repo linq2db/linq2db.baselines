@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1 ("Id2", "Id1")
 AS
@@ -25,10 +24,8 @@ AS
 		"t2"."Id1",
 		"record2"."Id2"
 	FROM
-		CTE_1 "t2",
-		CTE_1 "record2"
-	WHERE
-		"t2"."Id2" = "record2"."Id1"
+		CTE_1 "t2"
+			INNER JOIN CTE_1 "record2" ON "t2"."Id2" = "record2"."Id1"
 )
 SELECT
 	"t3"."Id1",

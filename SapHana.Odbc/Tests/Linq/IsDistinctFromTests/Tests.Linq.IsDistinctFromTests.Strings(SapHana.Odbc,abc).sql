@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -18,7 +17,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
@@ -38,7 +36,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
@@ -58,7 +55,6 @@ FROM DUMMY
 FROM DUMMY
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'

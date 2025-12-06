@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	arg.Id,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS Id, toInt64(1) AS Value) arg ON entity.PersonID = arg.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

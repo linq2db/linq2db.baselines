@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [Child]
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
@@ -55,7 +51,6 @@ WHERE
 			[t1].[ChildID] = [a_Children].[ChildID]
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
@@ -63,7 +58,6 @@ DELETE FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM

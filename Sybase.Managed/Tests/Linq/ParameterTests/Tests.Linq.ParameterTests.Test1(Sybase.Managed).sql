@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @dt DateTime
 SET     @dt = '2020-02-29 17:54:55.123'
 

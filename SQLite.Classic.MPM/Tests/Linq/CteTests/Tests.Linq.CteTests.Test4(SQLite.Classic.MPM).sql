@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -29,7 +28,6 @@ FROM
 	[CTE1_] [p]
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

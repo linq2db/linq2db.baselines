@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[t1].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -27,7 +25,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -50,7 +46,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001

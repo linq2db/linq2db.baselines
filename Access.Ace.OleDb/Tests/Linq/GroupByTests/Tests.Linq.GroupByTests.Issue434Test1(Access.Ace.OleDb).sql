@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @input VarWChar(6) -- String
 SET     @input = '%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	LCase([m_1].[FirstName]) LIKE @input
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @input VarWChar(6) -- String
 SET     @input = '%test%'

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 MERGE INTO [Person] [Target]
 USING (
@@ -24,7 +21,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = 1 THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -38,5 +34,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

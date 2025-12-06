@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
@@ -56,7 +52,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1

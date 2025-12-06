@@ -1,22 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
-
-IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient]
-
-BeforeExecute
--- SqlServer.2012 (asynchronously)
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int            NOT NULL,
-	[Diagnosis] NVarChar(4000)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -43,8 +25,7 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -71,16 +52,14 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -107,8 +86,7 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -135,17 +113,10 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 
 SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- SqlServer.2012 (asynchronously)
-
-IF (OBJECT_ID(N'[xxPatient]', N'U') IS NOT NULL)
-	DROP TABLE [xxPatient]
 

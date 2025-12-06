@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
 SELECT FIRST @take DISTINCT
-	"t1"."Value"
+	"r"."Value"
 FROM
-	"TakeSkipClass" "t1"
+	"TakeSkipClass" "r"
 

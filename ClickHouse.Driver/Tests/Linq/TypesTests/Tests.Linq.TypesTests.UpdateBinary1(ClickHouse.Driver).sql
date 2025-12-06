@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
@@ -8,7 +7,6 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

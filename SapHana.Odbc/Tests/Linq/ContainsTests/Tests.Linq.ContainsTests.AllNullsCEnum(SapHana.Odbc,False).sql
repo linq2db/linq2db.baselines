@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @In VarChar -- AnsiString
 SET     @In = NULL
 DECLARE @In VarChar -- AnsiString
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"s"."CEnum" IN (?, ?)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL

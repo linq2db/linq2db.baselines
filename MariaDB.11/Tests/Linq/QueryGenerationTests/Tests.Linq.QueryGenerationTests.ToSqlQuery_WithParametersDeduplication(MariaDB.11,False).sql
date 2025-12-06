@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @firstName VarChar(4000) -- String
 SET     @firstName = 'John'
 
@@ -14,8 +13,7 @@ FROM
 WHERE
 	`p`.`FirstName` = @firstName OR `p`.`LastName` = @firstName
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

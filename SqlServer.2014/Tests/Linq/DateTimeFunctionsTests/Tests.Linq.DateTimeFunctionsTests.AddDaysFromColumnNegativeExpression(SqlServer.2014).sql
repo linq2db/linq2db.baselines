@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @part1 Int -- Int32
 SET     @part1 = 4
@@ -52,9 +50,8 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) < DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0)
+	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) < DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 3)
 
-BeforeExecute
 -- SqlServer.2014
 
 DELETE [t]

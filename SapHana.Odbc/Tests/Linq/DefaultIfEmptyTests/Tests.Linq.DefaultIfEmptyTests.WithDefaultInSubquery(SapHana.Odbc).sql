@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	(
@@ -11,11 +10,34 @@ SELECT
 		FROM
 			(
 				SELECT
-					-100 as "ParentID"
+					1 as "c1"
 FROM DUMMY
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"
 	)
 FROM
 	"Parent" "p"
+
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"m_1"."ParentID",
+	"d"."ParentID",
+	"d"."ChildID"
+FROM
+	(
+		SELECT DISTINCT
+			"t1"."ParentID"
+		FROM
+			"Parent" "t1"
+	) "m_1"
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
+
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
 

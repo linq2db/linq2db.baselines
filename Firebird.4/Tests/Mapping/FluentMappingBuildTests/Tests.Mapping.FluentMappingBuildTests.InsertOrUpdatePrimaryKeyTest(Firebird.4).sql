@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
 END
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -22,7 +20,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -40,7 +37,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 MERGE INTO "FluentTemp" "t1"
@@ -65,7 +61,6 @@ WHEN NOT MATCHED THEN
 		'John II'
 	)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 CREATE TABLE "Issue464"
 (
@@ -7,7 +6,6 @@ CREATE TABLE "Issue464"
 	"Value" Int
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "Issue464"
@@ -19,7 +17,6 @@ SELECT 1,1 FROM rdb$database UNION ALL
 SELECT 2,2 FROM rdb$database UNION ALL
 SELECT 3,3 FROM rdb$database
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	"Issue464" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DROP TABLE "Issue464"

@@ -1,10 +1,9 @@
-﻿BeforeExecute
-INSERT INTO DateOnlyTable(Date) VALUES
+﻿INSERT INTO DateOnlyTable(Date) VALUES
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Date
 FROM
 	DateOnlyTable t1

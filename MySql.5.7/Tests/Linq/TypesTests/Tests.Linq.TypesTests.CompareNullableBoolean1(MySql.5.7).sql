@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t`.`ID`,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @param UByte -- Boolean
 SET     @param = 1

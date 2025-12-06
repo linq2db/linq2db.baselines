@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t."PK",
 	t."ID"
 FROM
 	test_in_1 t
@@ -13,20 +13,20 @@ WHERE
 			test_in_2 p
 	)
 ORDER BY
-	t."ID"
+	t."PK"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_1 t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_2 t1

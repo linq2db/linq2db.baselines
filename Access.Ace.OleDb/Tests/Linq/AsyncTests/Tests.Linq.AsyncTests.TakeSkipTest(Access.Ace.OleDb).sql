@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3
 	[t1].[ParentID],
@@ -9,8 +8,7 @@ FROM
 ORDER BY
 	[t1].[ParentID]
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3
 	[t1].[ParentID],

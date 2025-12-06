@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t.Str,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	TestLengthModel t
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

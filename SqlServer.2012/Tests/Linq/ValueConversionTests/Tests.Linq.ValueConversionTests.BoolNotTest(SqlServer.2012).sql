@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @false_value VarChar -- AnsiString
 SET     @false_value = N'N'
 

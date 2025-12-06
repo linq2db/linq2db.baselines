@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -28,8 +27,7 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 5
 DECLARE @i Integer -- Int32
@@ -58,8 +56,7 @@ WHEN NOT MATCHED THEN
 		'abc'
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 5
 DECLARE @i Integer -- Int32
@@ -88,8 +85,7 @@ WHEN NOT MATCHED THEN
 		'abc'
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 5
 DECLARE @i Integer -- Int32
@@ -118,8 +114,7 @@ WHEN NOT MATCHED THEN
 		'abc'
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

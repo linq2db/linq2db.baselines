@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
+	p.Id,
 	p.MyEnum,
 	p.MyEnum2
 FROM

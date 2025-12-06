@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 WITH [CTE_1]
 (
@@ -31,7 +30,6 @@ FROM
 WHERE
 	[x].[entry_ID] = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

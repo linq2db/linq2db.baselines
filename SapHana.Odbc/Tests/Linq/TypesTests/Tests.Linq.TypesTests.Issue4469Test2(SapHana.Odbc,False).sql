@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param Decimal(2, 0)

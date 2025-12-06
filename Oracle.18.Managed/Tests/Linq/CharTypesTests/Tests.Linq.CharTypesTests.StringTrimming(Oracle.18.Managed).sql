@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(6) -- String
 SET     @NString = 'test01'
@@ -24,7 +22,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test02  '
@@ -42,7 +39,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test03	 '
@@ -60,7 +56,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test04
@@ -80,7 +75,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test05 '
@@ -98,7 +92,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test06 '
@@ -116,7 +109,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test07 '
@@ -134,7 +126,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test08  '
@@ -152,7 +143,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test09  '
@@ -170,7 +160,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test10  '
@@ -188,7 +177,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test11  '
@@ -206,7 +194,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test12  '
@@ -224,7 +211,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test13  '
@@ -242,7 +228,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test14  '
@@ -260,7 +245,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test15  '
@@ -278,7 +262,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test16  '
@@ -296,7 +279,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test17  '
@@ -314,7 +296,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test18  '
@@ -332,7 +313,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test19  '
@@ -350,7 +330,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test20　 '
@@ -368,7 +347,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2(8) -- String
 SET     @NString = 'test21' || chr(0) || ' '
@@ -386,7 +364,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @NString Varchar2 -- String
 SET     @NString = NULL
@@ -404,7 +381,6 @@ VALUES
 	:String
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 2
@@ -420,7 +396,6 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 2

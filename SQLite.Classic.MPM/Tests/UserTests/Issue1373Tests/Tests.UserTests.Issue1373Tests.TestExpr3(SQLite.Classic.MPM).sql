@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Field1 NVarChar(4) -- String
 SET     @Field1 = 'test'
@@ -46,7 +43,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

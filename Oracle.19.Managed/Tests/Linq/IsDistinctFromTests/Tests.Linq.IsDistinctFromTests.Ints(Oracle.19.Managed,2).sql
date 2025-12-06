@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 2
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	DECODE(s."Int", :value, 0, 1) = 1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 2
@@ -22,7 +20,6 @@ FROM
 WHERE
 	DECODE(s."NullableInt", :value, 0, 1) = 1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 2
@@ -34,7 +31,6 @@ FROM
 WHERE
 	DECODE(s."Int", :value, 0, 1) = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 2

@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT
-	MIN([c_1].[Id]) as [MIN_1]
+	MIN([c_1].[Id]) as [Min_1]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

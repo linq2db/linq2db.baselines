@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`Parent` `p`
@@ -8,10 +7,7 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`Parent` `p`
@@ -20,8 +16,7 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`p`.`ParentID`,
@@ -32,10 +27,8 @@ WHERE
 	`p`.`ParentID` = 1
 LIMIT 1
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`p`.`ParentID`,

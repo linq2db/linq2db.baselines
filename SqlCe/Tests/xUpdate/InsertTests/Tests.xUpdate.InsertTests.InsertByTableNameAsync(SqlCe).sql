@@ -1,19 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)  NOT NULL,
-	[PersonID]   Int            NOT NULL IDENTITY,
-	[LastName]   NVarChar(255)  NOT NULL,
-	[MiddleName] NVarChar(255)      NULL,
-	[Gender]     NChar(1)       NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY ([PersonID])
-)
-
-BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -38,8 +23,7 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -64,13 +48,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -95,37 +77,24 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [p]
 WHERE
 	[p].[FirstName] = 'Steven' AND [p].[LastName] = 'King' AND
 	[p].[Gender] = 'M'
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DROP TABLE [xxPerson]
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DROP TABLE [xxPerson]
 

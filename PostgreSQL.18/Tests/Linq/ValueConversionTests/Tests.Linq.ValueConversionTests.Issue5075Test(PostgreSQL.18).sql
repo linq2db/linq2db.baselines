@@ -1,4 +1,14 @@
-﻿BeforeExecute
+﻿-- PostgreSQL.18 PostgreSQL
+DECLARE @value Varchar(4) -- String
+SET     @value = 'User'
+
+SELECT
+	COUNT(*)
+FROM
+	"Table" t
+WHERE
+	t."EnumValue" = :value
+
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
@@ -10,19 +20,6 @@ FROM
 WHERE
 	t."EnumValue" = :value
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
-DECLARE @value Varchar(4) -- String
-SET     @value = 'User'
-
-SELECT
-	COUNT(*)
-FROM
-	"Table" t
-WHERE
-	t."EnumValue" = :value
-
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
@@ -34,7 +31,6 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
@@ -46,7 +42,6 @@ FROM
 WHERE
 	t."EnumValueNullable" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
@@ -58,7 +53,6 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
@@ -70,7 +64,6 @@ FROM
 WHERE
 	t."EnumValueNull" = :value
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -80,7 +73,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -90,7 +82,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -100,7 +91,6 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -110,7 +100,6 @@ FROM
 WHERE
 	t."EnumValueNullable" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -120,7 +109,6 @@ FROM
 WHERE
 	t."EnumValueNull" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 WHERE
 	toInt64(1) = t1.BigIntValue
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

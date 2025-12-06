@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
 DECLARE @take Integer -- Int32
@@ -11,7 +10,6 @@ FROM
 	"OrderByDistinctData" "x"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
@@ -28,7 +26,6 @@ ORDER BY
 	MAX("x"."OrderData1")
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 0
@@ -41,7 +38,6 @@ FROM
 	"OrderByDistinctData" "x"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 0

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[a_Person].[personid],
@@ -9,7 +8,7 @@ FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [f].[added]) >= strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2017-01-01 00:00:00.000'))
+	strftime('%Y-%m-%d %H:%M:%f', [f].[added]) >= strftime('%Y-%m-%d %H:%M:%f', '2017-01-01 00:00:00.000')
 GROUP BY
 	[a_Person].[personid],
 	[a_Person].[personname]

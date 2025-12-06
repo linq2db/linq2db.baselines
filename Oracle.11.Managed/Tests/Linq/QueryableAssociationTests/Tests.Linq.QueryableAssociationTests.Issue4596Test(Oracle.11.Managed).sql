@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."Id",
@@ -29,29 +26,9 @@ FROM
 			"Issue4596Form" t1
 		WHERE
 			ROWNUM <= 1
-	) m_1,
-	"Issue4596Item" d
-WHERE
-	d."FormId" = m_1."Id"
-ORDER BY
-	CASE
-		WHEN m_1."cond" = 1 THEN d."OrderIndex"
-		ELSE 0
-	END,
-	CASE
-		WHEN m_1."cond_1" = 1 THEN d."Name1"
-		ELSE ''
-	END,
-	CASE
-		WHEN m_1."cond_1" = 1 THEN d."Name2"
-		ELSE ''
-	END,
-	CASE
-		WHEN m_1."cond_1" = 1 THEN d."Name3"
-		ELSE ''
-	END
+	) m_1
+		INNER JOIN "Issue4596Item" d ON d."FormId" = m_1."Id"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -70,5 +47,3 @@ FROM
 WHERE
 	ROWNUM <= 1
 
-BeforeExecute
-DisposeTransaction

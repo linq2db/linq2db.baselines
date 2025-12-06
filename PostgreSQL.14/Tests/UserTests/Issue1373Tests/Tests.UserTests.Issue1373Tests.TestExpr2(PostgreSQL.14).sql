@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
@@ -14,9 +13,8 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Field1 Unknown -- Object
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -30,9 +28,8 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Field1 Text(4) -- String
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
@@ -46,8 +43,7 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

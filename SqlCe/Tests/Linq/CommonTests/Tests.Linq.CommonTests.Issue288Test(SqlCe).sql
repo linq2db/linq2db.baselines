@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (1)
 	[p].[FirstName] as [ID]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[FirstName] IS NULL
 
-BeforeExecute
 -- SqlCe
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'

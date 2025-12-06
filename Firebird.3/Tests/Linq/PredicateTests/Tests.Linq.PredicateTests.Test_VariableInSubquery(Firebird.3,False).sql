@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -21,7 +20,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @One = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -56,7 +53,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @Zero = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -68,7 +64,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -91,7 +86,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @OneN = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -103,7 +97,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -126,7 +119,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @ZeroN = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -138,7 +130,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -152,7 +143,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -164,7 +154,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @One Integer -- Int32
 SET     @One = 1
@@ -187,7 +176,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @One = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -199,7 +187,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -222,7 +209,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @Zero = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -234,7 +220,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -257,7 +242,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @OneN = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -269,7 +253,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -292,7 +275,6 @@ WHERE
 			"s"."Id" > "r"."Id" AND @ZeroN = "s"."Value1"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -304,7 +286,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -316,7 +297,6 @@ SELECT
 FROM
 	"BooleanTable" "r"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

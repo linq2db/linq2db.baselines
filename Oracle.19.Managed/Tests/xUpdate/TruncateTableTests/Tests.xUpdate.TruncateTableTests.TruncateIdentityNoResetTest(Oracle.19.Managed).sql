@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "test_temp"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "test_temp"
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "test_temp"
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 1
@@ -41,12 +37,10 @@ ORDER BY
 	t1.ID
 OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "test_temp"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "test_temp"
@@ -58,7 +52,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "test_temp"
@@ -70,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 1

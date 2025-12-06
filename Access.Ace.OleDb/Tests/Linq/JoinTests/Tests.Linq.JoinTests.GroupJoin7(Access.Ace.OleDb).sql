@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -20,9 +17,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID] - @n)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

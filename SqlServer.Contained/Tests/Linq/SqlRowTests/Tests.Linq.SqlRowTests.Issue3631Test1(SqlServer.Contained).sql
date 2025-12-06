@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

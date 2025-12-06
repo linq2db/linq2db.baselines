@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	CASE
@@ -16,7 +15,6 @@ SELECT
 	END
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [TableWithPrimaryKey]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [TableWithPrimaryKey]
 	CONSTRAINT [PK_TableWithPrimaryKey] PRIMARY KEY CLUSTERED ([Key])
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [TableWithPrimaryKey]

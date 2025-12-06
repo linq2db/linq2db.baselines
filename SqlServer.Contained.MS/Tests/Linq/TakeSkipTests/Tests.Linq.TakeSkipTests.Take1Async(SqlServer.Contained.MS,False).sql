@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -7,7 +6,6 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (3)
@@ -16,8 +14,7 @@ SELECT TOP (3)
 FROM
 	[Child] [ch]
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -25,8 +22,7 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (3)
 	[ch].[ParentID],

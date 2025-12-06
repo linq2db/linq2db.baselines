@@ -22,7 +22,6 @@ WHERE (@__ef_filter__p_0 OR NOT (`o`.`IsDeleted`)) OR NOT (`o`.`IsDeleted`)
 ORDER BY `o`.`OrderID`, `t`.`OrderID`, `t`.`ProductID`, `t0`.`ProductID`, `t1`.`OrderId`
 
 
-BeginTransaction(RepeatableRead)
 
 
 -- MySql.8.0.MySqlConnector MySql80
@@ -45,7 +44,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- MySql.8.0.MySqlConnector MySql80

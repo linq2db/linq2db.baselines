@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t].[Id],
@@ -11,7 +10,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL [Id], NULL [Value] WHERE 1 = 0) [r]([Id], [Value])
+			(SELECT CAST(NULL AS Int) [Id], CAST(NULL AS NVarChar(4000)) [Value] WHERE 1 = 0) [r]([Id], [Value])
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)

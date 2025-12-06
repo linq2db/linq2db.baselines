@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = True
 
@@ -20,7 +19,6 @@ SET
 WHERE
 	[cross_1].[id] = 'TestProcessService' AND [cross_1].[id_1] = [ctg_1].[id]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

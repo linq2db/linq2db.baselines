@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [Issue3323Table]
 (
 	[Id],
-	[FistName],
+	[FirstName],
 	[LastName],
 	[Text]
 )
@@ -16,20 +15,19 @@ VALUES
 	N'text'
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
 	[t1].[Text],
-	[t1].[FistName] + N' ' + [t1].[LastName]
+	[t1].[FirstName] + N' ' + [t1].[LastName]
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
 	[t2].[Text],
-	[t2].[FistName] + N' ' + [t2].[LastName]
+	[t2].[FirstName] + N' ' + [t2].[LastName]
 FROM
 	[Issue3323Table] [t2]
 

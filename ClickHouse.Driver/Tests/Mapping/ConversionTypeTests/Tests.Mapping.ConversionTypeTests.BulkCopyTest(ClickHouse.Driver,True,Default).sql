@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT ASYNC BULK TrimTestTable(ID, Data)
+﻿INSERT ASYNC BULK TrimTestTable(ID, Data)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

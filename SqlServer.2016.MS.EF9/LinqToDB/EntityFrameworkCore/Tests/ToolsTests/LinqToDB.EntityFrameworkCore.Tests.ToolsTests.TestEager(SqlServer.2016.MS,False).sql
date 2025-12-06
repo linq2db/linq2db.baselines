@@ -32,10 +32,9 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR 
 ORDER BY [o].[OrderID], [e0].[EmployeeID], [s].[EmployeeID], [s].[TerritoryID], [s].[TerritoryID0], [s0].[OrderID], [s0].[ProductID]
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	[m_1].[EmployeeId],
@@ -59,7 +58,7 @@ FROM
 
 
 
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	[m_1].[OrderId],
@@ -92,10 +91,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 SELECT
 	[a_Employee].[IsDeleted],

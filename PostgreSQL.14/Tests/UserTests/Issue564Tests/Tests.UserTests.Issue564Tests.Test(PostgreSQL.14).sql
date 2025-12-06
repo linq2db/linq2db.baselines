@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue Text(9) -- String
@@ -16,8 +15,7 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564B'
 DECLARE @IntValue Integer -- Int32
@@ -34,8 +32,7 @@ VALUES
 	:IntValue
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
@@ -27,7 +25,6 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

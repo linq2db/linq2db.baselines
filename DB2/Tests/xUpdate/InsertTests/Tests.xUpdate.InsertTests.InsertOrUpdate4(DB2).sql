@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -30,7 +29,6 @@ FROM
 		)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
@@ -60,7 +58,6 @@ WHEN NOT MATCHED THEN
 		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
@@ -90,7 +87,6 @@ WHEN NOT MATCHED THEN
 		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
@@ -120,7 +116,6 @@ WHEN NOT MATCHED THEN
 		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5

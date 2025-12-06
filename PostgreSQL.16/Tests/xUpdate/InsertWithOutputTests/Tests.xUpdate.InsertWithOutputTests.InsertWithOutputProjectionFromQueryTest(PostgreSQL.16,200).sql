@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
 
@@ -21,7 +20,6 @@ RETURNING
 	"DestinationTable"."Id" + 1,
 	"DestinationTable"."ValueStr" || 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	"DestinationTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 1
 	COUNT(*),
@@ -8,7 +7,6 @@ SELECT TOP 1
 FROM
 	[Child] [g_1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

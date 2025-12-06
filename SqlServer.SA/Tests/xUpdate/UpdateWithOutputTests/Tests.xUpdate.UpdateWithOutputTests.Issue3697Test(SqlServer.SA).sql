@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [Test3697] DEFAULT VALUES
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 UPDATE
@@ -16,7 +14,6 @@ FROM
 	[Test3697] [a]
 		INNER JOIN [Test3697Item] [a_Items] ON [a].[Id] = [a_Items].[TestId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 UPDATE

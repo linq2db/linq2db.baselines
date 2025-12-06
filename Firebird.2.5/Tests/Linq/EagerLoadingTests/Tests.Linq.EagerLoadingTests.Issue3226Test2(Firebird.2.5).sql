@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."Id",
@@ -10,9 +7,6 @@ FROM
 	"Item" "m_1"
 		INNER JOIN "ItemValue" "d" ON "m_1"."Id" = "d"."ItemId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

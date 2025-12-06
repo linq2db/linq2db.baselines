@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 WITH "CTE_1"
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	r."ID" = 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 WITH "CTE_1" (c1)

@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[i].[DocumentNo],
-	[t1].[Id]
+	[t1].[ApplicationId]
 FROM
 	[PropertyHistory] [i]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_CustomerApplication].[Id]
+				[a_CustomerApplication].[Id] as [ApplicationId]
 			FROM
 				[CustomerApplication] [a_CustomerApplication]
 			WHERE

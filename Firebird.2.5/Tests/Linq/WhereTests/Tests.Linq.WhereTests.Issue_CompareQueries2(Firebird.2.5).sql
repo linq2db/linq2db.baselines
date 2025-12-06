@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	COUNT("p"."PersonID")
@@ -15,7 +14,6 @@ WHERE
 			"p_1"."PersonID" IN (3) AND "p"."PersonID" = "p_1"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

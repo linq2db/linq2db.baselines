@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -16,9 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -28,9 +24,7 @@ SET
 WHERE
 	"t"."ParentID" = 1010
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

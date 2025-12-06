@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Date Date
 SET     @Date = CAST('2021-01-01' AS date)
 
@@ -12,10 +11,10 @@ VALUES
 	@Date
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Id",
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"

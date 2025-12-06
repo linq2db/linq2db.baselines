@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -17,7 +14,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -34,9 +30,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -7,7 +7,6 @@ FROM
 WHERE
 	t2.Value > 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

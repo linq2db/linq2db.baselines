@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [Child]
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DELETE [a_Children]
@@ -48,7 +44,6 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DELETE [c_1]
@@ -57,7 +52,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DELETE [c_1]

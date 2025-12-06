@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 WITH CTE1_ AS
 (
@@ -15,7 +14,6 @@ SELECT
 FROM
 	CTE1_ t2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

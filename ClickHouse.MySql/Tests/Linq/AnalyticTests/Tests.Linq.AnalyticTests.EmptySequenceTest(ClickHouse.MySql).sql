@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.ParentID,
 	d_1.Key_1,
-	d_1.ToValue
+	d_1.Children
 FROM
 	(
 		SELECT DISTINCT
@@ -15,14 +14,13 @@ FROM
 		INNER JOIN (
 			SELECT
 				d.ParentID as Key_1,
-				arrayStringConcat(groupArray(toString(d.ChildID)), ', ') as ToValue
+				arrayStringConcat(groupArray(toString(toString(d.ChildID))), ', ') as Children
 			FROM
 				Child d
 			GROUP BY
 				d.ParentID
 		) d_1 ON m_1.ParentID = d_1.Key_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

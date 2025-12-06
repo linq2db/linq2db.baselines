@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t].[Id],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[Id] > 4
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	4 < [t].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[t].[Id] > 4
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	r.Diagnosis LIKE 'Hall%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	r.Diagnosis LIKE 'hall%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower(r.Diagnosis) LIKE 'hall%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

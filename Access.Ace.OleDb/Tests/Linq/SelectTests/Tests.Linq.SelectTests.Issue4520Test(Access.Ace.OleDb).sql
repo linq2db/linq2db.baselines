@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	IIF(NOT IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) AND ([i].[IntValue] = (

@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
-WITH RECURSIVE "CTE_1" ("Value1", "Value2")
+WITH "CTE_1" ("Value1", "Value2")
 AS
 (
 	SELECT

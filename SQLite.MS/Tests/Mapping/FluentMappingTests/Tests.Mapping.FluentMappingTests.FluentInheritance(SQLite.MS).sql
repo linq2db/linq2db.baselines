@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Gender],
@@ -12,7 +11,6 @@ WHERE
 	[t1].[PersonID] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

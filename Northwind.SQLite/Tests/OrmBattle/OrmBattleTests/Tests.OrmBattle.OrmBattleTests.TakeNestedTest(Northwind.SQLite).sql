@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[m_1].[CustomerID],
@@ -42,9 +39,6 @@ FROM
 				[Orders] [d]
 		) [d_1] ON [m_1].[CustomerID] = [d_1].[CustomerID] AND [d_1].[rn] <= 5
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT

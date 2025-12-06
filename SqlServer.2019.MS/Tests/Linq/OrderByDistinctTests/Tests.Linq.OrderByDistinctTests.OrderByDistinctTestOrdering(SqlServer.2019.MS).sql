@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -13,7 +12,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -28,7 +26,6 @@ ORDER BY
 	[x].[OrderData1]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -43,7 +40,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -58,7 +54,6 @@ ORDER BY
 	[x].[OrderData1] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -73,7 +68,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -89,7 +83,6 @@ ORDER BY
 	[x].[OrderData2]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -104,7 +97,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -120,7 +112,6 @@ ORDER BY
 	[x].[OrderData2] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -135,7 +126,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -151,7 +141,6 @@ ORDER BY
 	[x].[OrderData2] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -166,7 +155,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Task
 (
@@ -12,7 +11,6 @@ VALUES
 	'bda.Requests'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Task
@@ -26,7 +24,6 @@ VALUES
 	'None'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TaskStage
@@ -42,7 +39,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -55,7 +51,6 @@ FROM
 WHERE
 	p.TargetName = 'bda.Requests'
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

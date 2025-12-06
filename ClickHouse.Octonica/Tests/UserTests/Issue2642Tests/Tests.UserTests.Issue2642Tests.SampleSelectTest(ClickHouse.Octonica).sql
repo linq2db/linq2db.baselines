@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -18,7 +17,6 @@ FROM
 	) m_1
 		INNER JOIN EmailAttachments d ON m_1.Id = d.EmailId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

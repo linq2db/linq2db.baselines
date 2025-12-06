@@ -1,12 +1,3 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
+﻿RollbackTransaction
 RollbackTransaction
-BeforeExecute
-BeginTransaction
-BeforeExecute
-RollbackTransaction
-BeforeExecute
-BeginTransaction
-BeforeExecute
 RollbackTransaction

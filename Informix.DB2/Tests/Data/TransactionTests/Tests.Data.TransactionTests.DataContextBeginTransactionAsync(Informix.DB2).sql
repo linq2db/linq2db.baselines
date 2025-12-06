@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,
@@ -7,9 +6,7 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 BeginTransactionAsync
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
@@ -27,5 +24,3 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-DisposeTransaction

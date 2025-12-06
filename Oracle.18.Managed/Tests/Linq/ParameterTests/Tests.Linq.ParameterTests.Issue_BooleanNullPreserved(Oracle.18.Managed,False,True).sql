@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -22,20 +20,17 @@ FROM
 	"TestBool" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"TestBool" t1
 SET
-	"Id" = 1,
 	"Value" = CASE
 		WHEN t1."Value" = 0 THEN 1
 		WHEN t1."Value" = 1 THEN 0
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -45,7 +40,6 @@ FROM
 	"TestBool" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 UPDATE
@@ -54,7 +48,6 @@ SET
 	"Id" = 1,
 	"Value" = 0
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

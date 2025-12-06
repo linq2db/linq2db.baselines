@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 MERGE INTO "CacheTestTable" "Target"
 USING (
@@ -29,7 +28,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -40,7 +38,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 MERGE INTO "CacheTestTable" "Target"
@@ -73,7 +70,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

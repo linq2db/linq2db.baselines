@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TempTable"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TempTable"
 (
-	"Name" NVarChar(20) NOT NULL
+	"Name" NVarChar(20) NOT NULL,
+
+	PRIMARY KEY ("Name")
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
@@ -25,8 +24,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t"."Name"
@@ -34,8 +32,7 @@ FROM
 	"Person" "p"
 		INNER JOIN "TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TempTable"
 

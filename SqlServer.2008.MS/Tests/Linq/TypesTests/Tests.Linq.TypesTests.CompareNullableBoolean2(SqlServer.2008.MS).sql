@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[ID],
@@ -14,7 +13,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @personId Integer -- Int32
 SET     @personId = 1

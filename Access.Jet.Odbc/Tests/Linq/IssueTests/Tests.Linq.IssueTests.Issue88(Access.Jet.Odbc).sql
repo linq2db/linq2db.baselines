@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND 'M' = [t1].[Gender]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = 'M'
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = 'M'

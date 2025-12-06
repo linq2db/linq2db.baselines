@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿BeginTransactionAsync
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -18,9 +16,7 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM

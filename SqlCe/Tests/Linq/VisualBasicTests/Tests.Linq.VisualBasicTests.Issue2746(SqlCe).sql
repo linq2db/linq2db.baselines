@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @VBLocal_SelectedValue Int -- Int32
 SET     @VBLocal_SelectedValue = 1
 

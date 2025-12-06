@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	'Title',
 	it.Title,
-	sum(it.YearsExperience)
+	SUM(it.YearsExperience)
 FROM
 	odata_person it
 GROUP BY

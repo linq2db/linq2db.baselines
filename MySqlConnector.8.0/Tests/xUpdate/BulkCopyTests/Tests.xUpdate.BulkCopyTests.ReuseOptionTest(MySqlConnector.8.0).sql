@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Parent`
 (
@@ -11,7 +8,6 @@ INSERT INTO `Parent`
 VALUES
 (111001,NULL)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Child`
@@ -22,5 +18,3 @@ INSERT INTO `Child`
 VALUES
 (111001,0)
 
-BeforeExecute
-DisposeTransaction

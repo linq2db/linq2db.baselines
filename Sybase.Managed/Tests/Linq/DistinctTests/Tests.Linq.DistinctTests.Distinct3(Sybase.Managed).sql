@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT DISTINCT
 	Coalesce([p].[Value1], [p].[ParentID] % 2),

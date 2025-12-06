@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (1)
 	[x].[Id],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[x].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
@@ -21,7 +20,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

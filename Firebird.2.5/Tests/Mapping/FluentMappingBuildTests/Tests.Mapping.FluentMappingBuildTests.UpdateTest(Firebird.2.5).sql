@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
@@ -8,12 +7,13 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -35,7 +35,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(7) -- String
 SET     @Name = 'John II'
@@ -50,7 +49,6 @@ SET
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

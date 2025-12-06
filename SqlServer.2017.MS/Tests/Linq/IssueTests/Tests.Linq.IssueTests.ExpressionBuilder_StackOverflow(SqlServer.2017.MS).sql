@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 WITH [cte] ([Id])
 AS
@@ -34,9 +31,6 @@ FROM
 	) [m_1]
 		INNER JOIN [StackOverflowTable5] [d] ON [d].[Value] = [m_1].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 WITH [cte] ([Id])

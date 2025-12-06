@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE [main].[Issue681Table2]
 (
@@ -14,8 +12,7 @@ CREATE TABLE [main].[Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [Issue681Table2]
 

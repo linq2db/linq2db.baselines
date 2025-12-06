@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[ID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	[t].[Data] = '***XXX***'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	[t].[Data] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

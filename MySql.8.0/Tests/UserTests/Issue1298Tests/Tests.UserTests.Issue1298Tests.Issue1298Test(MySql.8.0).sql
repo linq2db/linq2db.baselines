@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @asdfgh VarChar(4) -- String
@@ -18,7 +15,6 @@ VALUES
 	@asdfgh
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int64
 SET     @Id = 100500
@@ -36,7 +32,6 @@ VALUES
 	@asdfgh
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
@@ -54,7 +49,6 @@ VALUES
 	@y1_q1_ref1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 1
@@ -72,7 +66,6 @@ VALUES
 	@y1_q1_ref1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
@@ -90,7 +83,6 @@ VALUES
 	@y1_q1_ref1
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @take Int32
 SET     @take = 2
@@ -110,5 +102,3 @@ FROM
 	`mega_composites` `x`
 LIMIT @take
 
-BeforeExecute
-DisposeTransaction

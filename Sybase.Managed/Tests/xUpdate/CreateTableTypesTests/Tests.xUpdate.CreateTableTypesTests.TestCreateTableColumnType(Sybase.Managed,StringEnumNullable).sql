@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StringEnumNullable UniVarChar -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringEnumNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@StringEnumNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

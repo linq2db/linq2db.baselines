@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @fm NVarChar(1) -- String
 SET     @fm = 'F'
 

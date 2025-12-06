@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
@@ -9,14 +8,12 @@ CREATE TABLE [tempdb]..[#InsertTempTable_42]
 	[SourceId]  Int                NULL
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -42,7 +39,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -68,7 +64,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -94,7 +89,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -120,14 +114,12 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -153,7 +145,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -179,7 +170,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -205,7 +195,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -231,8 +220,7 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -281,7 +269,6 @@ INTO [tempdb]..[#InsertTempTable_42]
 )
 ;
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
@@ -292,7 +279,6 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable_42]

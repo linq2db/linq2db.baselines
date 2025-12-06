@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO HierarchyData
 (
@@ -44,7 +43,6 @@ SELECT
 FROM
 	hierarchyDown t4
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

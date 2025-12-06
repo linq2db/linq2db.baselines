@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -12,7 +11,6 @@ FROM
 				(0), (1), (2), (3)
 			) [y]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

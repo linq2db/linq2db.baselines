@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [TableToInsert]
 (
@@ -20,7 +19,6 @@ FROM
 WHERE
 	[t].[Id] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TableToInsert]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "Person"
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

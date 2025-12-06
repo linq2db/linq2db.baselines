@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = 5
+﻿-- Firebird.3 Firebird3
 
 SELECT
-	CAST(@p AS Int)
+	5
 FROM rdb$database
 

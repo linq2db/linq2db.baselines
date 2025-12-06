@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			t2.ID = @id AND t1.ID = t2.ID
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4

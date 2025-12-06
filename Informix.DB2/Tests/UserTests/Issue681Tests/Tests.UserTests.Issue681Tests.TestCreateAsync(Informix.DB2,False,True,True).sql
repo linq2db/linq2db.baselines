@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 1
 	DBINFO('dbname')
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -14,13 +12,11 @@ SELECT FIRST 1
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue681Table2
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 CREATE TABLE testdb:informix.Issue681Table2
 (
@@ -30,8 +26,7 @@ CREATE TABLE testdb:informix.Issue681Table2
 	PRIMARY KEY (ID)
 )
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue681Table2
 

@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT INTO InventoryResourceDTO(Id, Status, ResourceID, ModifiedTimeStamp) VALUES
+﻿INSERT INTO InventoryResourceDTO(Id, Status, ResourceID, ModifiedTimeStamp) VALUES
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue1554Table
 (
@@ -14,7 +13,6 @@ VALUES
 	'EC'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

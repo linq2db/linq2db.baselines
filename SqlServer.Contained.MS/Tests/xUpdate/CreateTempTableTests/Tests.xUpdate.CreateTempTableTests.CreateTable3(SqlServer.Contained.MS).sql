@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
@@ -14,7 +12,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TempTable]
@@ -26,7 +23,6 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -35,7 +31,6 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]

@@ -1,11 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CASE
 		WHEN [t1].[cond] IS NULL THEN 0
 		ELSE [t1].[cond]
-	END as [c1],
+	END as [First1],
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM

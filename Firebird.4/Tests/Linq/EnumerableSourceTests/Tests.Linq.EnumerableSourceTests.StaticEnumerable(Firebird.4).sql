@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"p"."FirstName",
@@ -24,7 +23,6 @@ WHERE
 			"v"."item" = "p"."PersonID"
 	)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

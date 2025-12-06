@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @n Int -- Int32
 SET     @n = 1
 DECLARE @n Int -- Int32

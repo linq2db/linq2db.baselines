@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	[t1].[COUNT_1],
-	[t2].[COUNT_1] as [COUNT_2]
+	[t1].[Count1],
+	[t2].[Count2]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count1]
 			FROM
 				[Child] [c_1]
 			WHERE
@@ -16,7 +15,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count2]
 			FROM
 				[GrandChild] [g_1]
 			WHERE

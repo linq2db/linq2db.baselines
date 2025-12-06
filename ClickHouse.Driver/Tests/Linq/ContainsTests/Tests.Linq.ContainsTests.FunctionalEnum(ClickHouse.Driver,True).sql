@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	s.Id
@@ -9,7 +8,6 @@ WHERE
 	s.Enum IN ('THREE', 'FOUR')
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	(s.Enum IN ('THREE') OR s.Enum IS NULL)
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	s.Enum IN ('THREE', 'TWO')
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	(s.Enum NOT IN ('TWO') AND s.Enum IS NOT NULL)
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

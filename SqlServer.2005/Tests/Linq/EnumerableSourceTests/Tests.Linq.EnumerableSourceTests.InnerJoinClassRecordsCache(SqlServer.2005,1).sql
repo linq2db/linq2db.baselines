@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[p].[FirstName],
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3) [n] ON [p].[PersonID] = [n].[ID]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

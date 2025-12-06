@@ -1,4 +1,30 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	m_1.Id1,
+	d.DetailValue
+FROM
+	(
+		SELECT
+			x.Id1 as Id1
+		FROM
+			MasterClass x
+		WHERE
+			x.Id1 = 1
+		LIMIT 1
+	) m_1
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	x.Id1
+FROM
+	MasterClass x
+WHERE
+	x.Id1 = 1
+LIMIT 1
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -16,7 +42,6 @@ FROM
 	) m_1
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -27,36 +52,6 @@ WHERE
 	x.Id1 = 1
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	m_1.Id1,
-	d.DetailValue
-FROM
-	(
-		SELECT
-			x.Id1 as Id1
-		FROM
-			MasterClass x
-		WHERE
-			x.Id1 = 1
-		LIMIT 1
-	) m_1
-		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	x.Id1
-FROM
-	MasterClass x
-WHERE
-	x.Id1 = 1
-LIMIT 1
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -79,7 +74,6 @@ FROM
 	) m_1
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

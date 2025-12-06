@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING
 	"Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	"User" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @userId Integer -- Int32
 SET     @userId = 5
@@ -37,7 +34,6 @@ WHERE
 	"u"."Id" = @userId
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

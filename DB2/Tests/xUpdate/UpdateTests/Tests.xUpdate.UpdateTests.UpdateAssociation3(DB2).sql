@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Child"
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE

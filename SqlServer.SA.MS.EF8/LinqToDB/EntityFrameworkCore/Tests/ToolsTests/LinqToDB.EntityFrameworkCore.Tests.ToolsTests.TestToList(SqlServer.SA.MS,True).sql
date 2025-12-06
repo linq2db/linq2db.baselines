@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- SqlServer.2019
 
@@ -32,7 +31,6 @@ WHERE
 
 
 
-DisposeTransaction
 
 
 -- SqlServer.2019

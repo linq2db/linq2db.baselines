@@ -1,4 +1,10 @@
-﻿BeforeExecute
+﻿-- Informix.DB2 Informix
+
+DELETE FROM
+	Parent
+WHERE
+	Parent.ParentID > 1000
+
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -6,15 +12,6 @@ DELETE FROM
 WHERE
 	Parent.ParentID > 1000
 
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM
-	Parent
-WHERE
-	Parent.ParentID > 1000
-
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -30,7 +27,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1002
@@ -46,7 +42,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	t1.ParentID > 1000
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
@@ -64,7 +58,6 @@ DELETE FROM
 WHERE
 	Parent.ParentID IN (1001, 1002)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

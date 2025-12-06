@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Person"
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	c_1."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	c_1."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

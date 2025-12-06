@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -20,7 +18,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = '	'
@@ -34,7 +31,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = '
@@ -49,7 +45,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ''
@@ -63,7 +58,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ''
@@ -77,7 +71,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ''
@@ -91,7 +84,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -105,7 +97,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -119,7 +110,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -133,7 +123,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -147,7 +136,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -161,7 +149,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -175,7 +162,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -189,7 +175,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -203,7 +188,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -217,7 +201,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -231,7 +214,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -245,7 +227,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
@@ -259,7 +240,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = _utf8 x'00'
@@ -273,7 +253,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = NULL
@@ -287,7 +266,6 @@ VALUES
 	@Char
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
@@ -302,7 +280,6 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2

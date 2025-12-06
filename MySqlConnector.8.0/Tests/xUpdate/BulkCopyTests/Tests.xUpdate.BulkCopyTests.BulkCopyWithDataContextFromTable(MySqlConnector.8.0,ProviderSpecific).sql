@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -8,7 +7,6 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (1)
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `SimpleBulkCopyTable`
@@ -18,6 +16,5 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (2)
 
-BeforeExecute
 INSERT BULK `SimpleBulkCopyTable`(Id)
 

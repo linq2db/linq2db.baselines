@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '-3 Month')

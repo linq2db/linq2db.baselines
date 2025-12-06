@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
 	`Issue2815Table1` `ext`
@@ -19,10 +18,10 @@ SET
 WHERE
 	`ext`.`NOT_HANDLED` = 2 AND `ext`.`TRANS_CHANNEL` IS NULL
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`SRC_BIC`,
 	`t1`.`DES_BIC`,
 	`t1`.`IDF`,

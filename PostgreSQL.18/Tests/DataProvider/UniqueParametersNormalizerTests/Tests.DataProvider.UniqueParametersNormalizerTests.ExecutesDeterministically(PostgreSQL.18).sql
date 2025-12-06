@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	row1_2."Field1" LIKE :search_2 ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]

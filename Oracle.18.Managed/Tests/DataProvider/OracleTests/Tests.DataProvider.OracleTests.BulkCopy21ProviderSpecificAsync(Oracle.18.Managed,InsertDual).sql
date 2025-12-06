@@ -1,13 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1
 
-BeforeExecute
 INSERT BULK LINQDATATYPESBC(ID, MONEYVALUE, DATETIMEVALUE, DATETIMEVALUE2, BOOLVALUE, GUIDVALUE, SMALLINTVALUE, INTVALUE, BIGINTVALUE, STRINGVALUE)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM

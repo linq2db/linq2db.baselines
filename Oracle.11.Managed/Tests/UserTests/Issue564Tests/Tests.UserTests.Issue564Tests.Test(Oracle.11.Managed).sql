@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Type Varchar2(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue Varchar2(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Type Varchar2(9) -- String
 SET     @Type = 'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	:IntValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

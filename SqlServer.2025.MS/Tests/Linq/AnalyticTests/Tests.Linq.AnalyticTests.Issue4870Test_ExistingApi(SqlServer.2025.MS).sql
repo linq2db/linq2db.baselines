@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
 	[g_1].[Id],
 	[g_1].[EmployerNumber],
-	CONCAT(N'{', STRING_AGG(CONCAT(N'"', CAST([g_1].[TemplateId] AS NVarChar(11)), N'"', N': { "DateCreated": "', CAST([g_1].[DateCreated] AS NVarChar(27)), N'", "Link":"', [g_1].[Path_1], N'","fields":', CAST([g_1].[FieldResultsJson] AS NVarChar(4000))), N'},'), N'}}')
+	CONCAT(N'{', STRING_AGG(CONCAT(N'"', CAST([g_1].[TemplateId] AS NVarChar(11)), N'"', N': { "DateCreated": "', CAST([g_1].[DateCreated] AS NVarChar(27)), N'", "Link":"', [g_1].[Path_1], N'","fields":', [g_1].[FieldResultsJson]), N'},'), N'}}')
 FROM
 	(
 		SELECT

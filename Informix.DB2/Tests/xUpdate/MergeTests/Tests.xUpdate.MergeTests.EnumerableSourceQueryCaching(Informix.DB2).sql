@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	TestMerge1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
@@ -34,7 +32,6 @@ VALUES
 	Source.Field4
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -49,13 +46,11 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	TestMerge1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
@@ -85,7 +80,6 @@ VALUES
 	Source.Field4
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -100,13 +94,11 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	TestMerge1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO TestMerge1 Target
@@ -138,7 +130,6 @@ VALUES
 	Source.Field4
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

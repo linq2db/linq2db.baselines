@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [LinqDataTypes] [Target]
 USING (
@@ -76,5 +73,3 @@ VALUES
 WHEN NOT MATCHED BY SOURCE THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

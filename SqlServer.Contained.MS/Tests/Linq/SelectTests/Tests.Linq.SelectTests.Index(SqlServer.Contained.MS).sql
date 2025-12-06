@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[m_2].[ParentID],
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	[m_2].[ChildID] DESC
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

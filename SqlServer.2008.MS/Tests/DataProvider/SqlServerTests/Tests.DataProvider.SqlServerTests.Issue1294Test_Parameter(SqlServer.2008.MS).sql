@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 Int -- Int32

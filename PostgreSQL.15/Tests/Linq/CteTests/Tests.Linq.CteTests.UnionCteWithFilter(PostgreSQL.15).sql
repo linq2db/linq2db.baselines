@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

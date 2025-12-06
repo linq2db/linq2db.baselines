@@ -1,22 +1,18 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 select @@version
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 
@@ -55,7 +51,6 @@ BeforeExecute
 							name     = N'microsoft_database_tools_support'
 					) IS NULL
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 
@@ -75,7 +70,6 @@ BeforeExecute
 				WHERE
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 
@@ -113,7 +107,6 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 
@@ -134,7 +127,6 @@ BeforeExecute
 					ThisTableID,
 					Ordinal
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -155,7 +147,6 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -182,9 +173,6 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[AddIssue792Record] '
@@ -193,7 +181,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[DuplicateColumnNames] '
@@ -202,7 +189,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[ExecuteProcIntParameters] @input, @output'
@@ -211,7 +197,6 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[ExecuteProcStringParameters] @input, @output'
@@ -220,12 +205,10 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Issue1897] '
@@ -234,12 +217,10 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1921]()')
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
@@ -248,7 +229,6 @@ SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr va
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
@@ -257,7 +237,6 @@ SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50)
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Patient_SelectAll] '
@@ -266,7 +245,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Patient_SelectByName] @firstName, @lastName'
@@ -275,7 +253,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Delete] @PersonID'
@@ -284,7 +261,6 @@ SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
@@ -293,7 +269,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
@@ -302,7 +277,6 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectAll] '
@@ -311,7 +285,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByKey] @id'
@@ -320,7 +293,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByKeyLowercase] @id'
@@ -329,7 +301,6 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectByName] @firstName, @lastName'
@@ -338,7 +309,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_SelectListByName] @firstName, @lastName'
@@ -347,7 +317,6 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
@@ -356,7 +325,6 @@ SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(5
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[PersonSearch] @nameFilter'
@@ -365,14 +333,12 @@ SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMSContained].[dbo].[PersonSearch]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
@@ -381,7 +347,6 @@ SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[QueryProcParameters] @input, @output1, @output2'
@@ -390,7 +355,6 @@ SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[SelectImplicitColumn] '
@@ -399,7 +363,6 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[TableTypeTestProc] @table'
@@ -408,14 +371,12 @@ SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMSContained].[dbo].[TableTypeTestProc]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[VariableResults] @ReturnFullRow'
@@ -424,12 +385,10 @@ SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMSContained].[dbo].[VariableResults]
 
-BeforeExecute
 RollbackTransaction

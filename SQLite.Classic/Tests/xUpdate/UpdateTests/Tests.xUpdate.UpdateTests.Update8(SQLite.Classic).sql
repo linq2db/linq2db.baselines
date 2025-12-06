@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Value1  -- Int32
 SET     @Value1 = 1002
@@ -30,7 +28,6 @@ SET
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001

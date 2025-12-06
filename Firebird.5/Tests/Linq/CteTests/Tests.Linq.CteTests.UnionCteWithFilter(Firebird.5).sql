@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

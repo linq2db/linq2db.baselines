@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	"t".ID = 1
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

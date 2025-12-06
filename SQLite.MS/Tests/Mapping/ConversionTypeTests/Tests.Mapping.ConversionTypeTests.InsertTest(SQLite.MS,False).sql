@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 2
@@ -34,7 +32,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TrimTestTable]
@@ -48,7 +45,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -59,7 +55,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -24,7 +23,6 @@ VALUES
 	:PersonID
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @personId Int32
 SET     @personId = 1

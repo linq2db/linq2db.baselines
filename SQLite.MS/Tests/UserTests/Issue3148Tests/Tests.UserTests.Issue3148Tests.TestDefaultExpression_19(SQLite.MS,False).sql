@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -12,7 +10,6 @@ SELECT
 FROM
 	[Child] [p]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

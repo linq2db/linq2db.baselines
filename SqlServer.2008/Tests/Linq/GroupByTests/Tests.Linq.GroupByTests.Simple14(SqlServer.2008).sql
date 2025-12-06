@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[m_1].[ParentID],
@@ -22,9 +19,6 @@ FROM
 				[d].[ParentID]
 		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

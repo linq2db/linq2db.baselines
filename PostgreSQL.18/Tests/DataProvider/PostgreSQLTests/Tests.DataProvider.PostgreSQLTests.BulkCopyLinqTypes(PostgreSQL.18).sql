@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -24,7 +23,6 @@ VALUES
 (4008,1008,'2001-01-11 01:11:21.100'::timestamp,True,'233bf399-9710-4e79-873d-2ec7bf1e0008'::uuid,NULL,8,NULL),
 (4009,1009,'2001-01-11 01:11:21.100'::timestamp,True,'233bf399-9710-4e79-873d-2ec7bf1e0009'::uuid,NULL,9,NULL)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM
@@ -32,10 +30,8 @@ DELETE FROM
 WHERE
 	p."ID" >= 4000
 
-BeforeExecute
 INSERT BULK "LinqDataTypes"(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

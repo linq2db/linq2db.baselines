@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -18,7 +17,6 @@ ORDER BY
 	"t2"."ParentID"
 LIMIT ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

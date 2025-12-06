@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Column Text(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable Text(8) -- String
@@ -14,8 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -26,14 +24,12 @@ FROM
 WHERE
 	r."Column" = 'value=2' AND r."ColumnNullable" = 'value=33'
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"StringEnumTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Text(5) -- String
@@ -54,8 +50,7 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Text(7) -- String
@@ -76,8 +71,7 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -88,14 +82,12 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"StringEnumTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "StringEnumTable"
 (
@@ -107,8 +99,7 @@ VALUES
 (1,'val=1',NULL),
 (2,'value=2','value=33')
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -119,17 +110,14 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"StringEnumTable" t1
 
-BeforeExecute
 INSERT BULK "StringEnumTable"(Id, Column, ColumnNullable)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

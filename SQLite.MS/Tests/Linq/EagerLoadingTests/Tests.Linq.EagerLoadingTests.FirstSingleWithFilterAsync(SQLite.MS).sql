@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(Serializable)
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id1],
@@ -18,8 +15,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id1]
@@ -29,12 +25,7 @@ WHERE
 	[x].[Id1] = 1
 LIMIT 1
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(Serializable)
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id1],
@@ -51,8 +42,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id1]
@@ -62,12 +52,7 @@ WHERE
 	[x].[Id1] = 1
 LIMIT 1
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
-BeginTransactionAsync(Serializable)
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id1],
@@ -89,8 +74,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id1]
@@ -100,5 +84,3 @@ WHERE
 	[x].[Id1] = 1
 LIMIT 2
 
-BeforeExecute
-DisposeTransactionAsync

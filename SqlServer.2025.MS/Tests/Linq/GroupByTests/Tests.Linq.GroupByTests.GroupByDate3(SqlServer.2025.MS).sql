@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
@@ -8,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
@@ -16,7 +15,6 @@ FROM
 GROUP BY
 	[grp_1].[Date_1]
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -26,7 +24,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]

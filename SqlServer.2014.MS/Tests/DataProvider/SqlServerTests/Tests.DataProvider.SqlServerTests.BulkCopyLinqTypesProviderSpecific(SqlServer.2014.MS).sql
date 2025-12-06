@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
+﻿INSERT BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [p]

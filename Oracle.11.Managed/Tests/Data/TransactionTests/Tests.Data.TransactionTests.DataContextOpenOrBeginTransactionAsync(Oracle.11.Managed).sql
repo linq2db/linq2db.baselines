@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -18,5 +16,3 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
-DisposeTransaction

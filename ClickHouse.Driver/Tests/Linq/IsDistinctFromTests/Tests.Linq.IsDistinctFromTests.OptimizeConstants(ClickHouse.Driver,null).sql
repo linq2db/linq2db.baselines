@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

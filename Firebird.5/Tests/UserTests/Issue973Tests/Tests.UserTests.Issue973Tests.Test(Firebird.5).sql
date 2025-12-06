@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -17,7 +16,6 @@ FROM
 WHERE
 	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
 SET     @param = 4
@@ -31,7 +29,6 @@ WHERE
 	("o"."ParentID" IN (1, 2, 3) OR "o"."ParentID" IS NULL) OR
 	"o"."ParentID" = @param
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 4
@@ -50,7 +47,6 @@ FROM
 WHERE
 	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
 SET     @param = 4

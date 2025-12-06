@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[ParentID],
@@ -10,7 +9,6 @@ WHERE
 	[p].[ParentID] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

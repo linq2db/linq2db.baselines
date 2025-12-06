@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @p Text(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	t."FirstName" = :p
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @p Text(6) -- String
 SET     @p = 'Tester'

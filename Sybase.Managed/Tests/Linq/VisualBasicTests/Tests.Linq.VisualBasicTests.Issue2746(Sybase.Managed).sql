@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 

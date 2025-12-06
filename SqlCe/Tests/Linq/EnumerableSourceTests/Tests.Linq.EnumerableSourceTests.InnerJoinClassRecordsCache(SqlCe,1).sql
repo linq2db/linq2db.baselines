@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3 AS [ID]) [n] ON [p].[PersonID] = [n].[ID]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

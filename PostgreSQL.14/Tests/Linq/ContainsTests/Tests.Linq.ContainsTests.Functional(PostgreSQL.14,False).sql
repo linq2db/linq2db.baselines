@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	s."Id"
@@ -9,8 +8,7 @@ WHERE
 	s."Int" IN (-1, -2)
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	s."Id"
@@ -20,8 +18,7 @@ WHERE
 	s."Int" IN (-1, NULL)
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	s."Id"
@@ -31,8 +28,7 @@ WHERE
 	s."Int" IN (-1, 2)
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	s."Id"
@@ -42,8 +38,7 @@ WHERE
 	s."Int" NOT IN (NULL, 2)
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	s."Id"

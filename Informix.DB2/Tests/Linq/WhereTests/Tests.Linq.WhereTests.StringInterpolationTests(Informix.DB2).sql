@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -12,7 +11,6 @@ WHERE
 	('<{p.LastName}, ' || p.FirstName || ' {' || p.LastName || '}>') = ('<{p.LastName}, ' || p.FirstName || ' {' || p.LastName) || '}>' AND
 	'{}' || p.LastName = '{}' || p.LastName
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	x."PersonID" + y.item
@@ -9,7 +8,6 @@ FROM
 			(1), (3)
 		) y(item)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

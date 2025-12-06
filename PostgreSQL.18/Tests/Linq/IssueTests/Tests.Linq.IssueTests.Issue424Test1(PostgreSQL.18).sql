@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -18,7 +17,6 @@ ORDER BY
 	t2."ParentID"
 LIMIT :take
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

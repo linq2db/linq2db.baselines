@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	e."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

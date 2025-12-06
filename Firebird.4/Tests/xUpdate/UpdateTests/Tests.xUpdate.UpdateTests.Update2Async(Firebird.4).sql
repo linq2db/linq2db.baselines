@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+﻿-- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -16,8 +15,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -28,8 +26,7 @@ FROM
 WHERE
 	"p"."ParentID" = @ParentID
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -40,8 +37,7 @@ SET
 WHERE
 	"p"."ParentID" = @ParentID
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 1002
 

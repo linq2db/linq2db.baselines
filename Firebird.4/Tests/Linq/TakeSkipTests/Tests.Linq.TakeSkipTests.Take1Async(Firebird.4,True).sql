@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -10,7 +9,6 @@ FROM
 	"Child" "ch"
 FETCH NEXT @take ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 3
@@ -22,8 +20,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT @take ROWS ONLY
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -34,8 +31,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT @take ROWS ONLY
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE N'%stString' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -47,7 +43,6 @@ FROM
 WHERE
 	[r].[CaseInsensitive] LIKE N'%stString' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -57,7 +52,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE N'%ststring' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

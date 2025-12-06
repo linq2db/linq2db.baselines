@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -16,7 +15,6 @@ FROM
 		FETCH NEXT @take ROWS ONLY
 	) "t2"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

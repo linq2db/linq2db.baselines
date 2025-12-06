@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @dateTime DateTime
 SET     @dateTime = CAST('1992-01-11T01:11:21.100' AS DATETIME)
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[DateTimeValue] > @dateTime
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @dateTime DateTime
 SET     @dateTime = CAST('1993-01-11T01:11:21.100' AS DATETIME)

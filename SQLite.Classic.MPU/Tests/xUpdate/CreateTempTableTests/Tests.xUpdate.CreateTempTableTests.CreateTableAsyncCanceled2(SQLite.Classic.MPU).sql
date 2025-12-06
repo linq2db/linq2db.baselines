@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[TempTable]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO temp.[TempTable]
 (
@@ -23,12 +22,10 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TempTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE [TempTable]

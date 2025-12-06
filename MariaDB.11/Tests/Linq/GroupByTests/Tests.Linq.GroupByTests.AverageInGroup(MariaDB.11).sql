@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`g_1`.`GroupId`,
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	`g_1`.`GroupId`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`GroupId`,
 	`t1`.`DataValue`
 FROM

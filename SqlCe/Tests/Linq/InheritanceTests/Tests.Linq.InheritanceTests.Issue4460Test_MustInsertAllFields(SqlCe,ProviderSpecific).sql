@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [Issue4460Table]
 (
@@ -10,7 +9,6 @@ INSERT INTO [Issue4460Table]
 )
 SELECT 1,'GrandChild','Tom','Black'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 UPDATE
 	[Ints]
@@ -18,10 +17,10 @@ SET
 WHERE
 	[Ints].[One] = 10
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[One],
 	[t1].[Two],
 	[t1].[Three],

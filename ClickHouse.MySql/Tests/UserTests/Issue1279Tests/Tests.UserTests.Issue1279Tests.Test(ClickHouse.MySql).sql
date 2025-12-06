@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue1279Table
 (
@@ -10,7 +9,6 @@ VALUES
 	'P'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

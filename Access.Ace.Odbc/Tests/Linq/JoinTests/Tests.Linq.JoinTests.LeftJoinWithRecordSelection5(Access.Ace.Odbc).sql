@@ -1,16 +1,15 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[ft].[Id],
+	[f].[Id],
 	[t].[Id],
 	[t].[FactId],
 	[t].[Name]
 FROM
-	[Fact] [ft]
-		LEFT JOIN [Tag] [t] ON ([t].[FactId] = [ft].[Id])
+	[Fact] [f]
+		LEFT JOIN [Tag] [t] ON ([t].[FactId] = [f].[Id])
 WHERE
-	[ft].[Id] > 3
+	[f].[Id] > 3
 ORDER BY
-	[ft].[Id]
+	[f].[Id]
 

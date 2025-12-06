@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp)
+﻿INSERT BULK "InventoryResourceDTO"(Id, Status, ResourceID, ModifiedTimeStamp)
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -7,7 +6,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -17,10 +15,9 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	max(x.OrderData1)
+	MAX(x.OrderData1)
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT DISTINCT
@@ -29,7 +26,6 @@ FROM
 	OrderByDistinctData x
 LIMIT 0, 3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -39,6 +35,6 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	min(x.OrderData1) DESC
+	MIN(x.OrderData1) DESC
 LIMIT 0, 3
 

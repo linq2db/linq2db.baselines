@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 				[pmp].[ParentID]
 		) [pmp_1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

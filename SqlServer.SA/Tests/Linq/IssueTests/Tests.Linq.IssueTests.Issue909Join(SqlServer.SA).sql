@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[c_1].[ParentID],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[ParentID] = [c_1].[ParentID] AND ([p].[Value1] NOT IN (1, 2, 3) OR [p].[Value1] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -19,7 +17,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 
@@ -10,7 +9,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -21,7 +19,6 @@ WHERE
 	[t].[ID] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL

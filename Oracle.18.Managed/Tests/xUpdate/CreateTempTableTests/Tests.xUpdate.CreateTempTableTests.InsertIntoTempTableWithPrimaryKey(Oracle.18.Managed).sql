@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -18,14 +17,12 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "TableWithPrimaryKey2" ("Key") VALUES (1)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN

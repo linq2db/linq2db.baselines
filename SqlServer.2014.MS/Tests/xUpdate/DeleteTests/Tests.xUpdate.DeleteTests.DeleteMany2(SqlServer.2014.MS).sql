@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -40,7 +37,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -56,7 +52,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -72,7 +67,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Child]
@@ -86,7 +80,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -102,7 +95,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -118,7 +110,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [GrandChild]
@@ -134,7 +125,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [a_GrandChildren]
@@ -145,7 +135,6 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [a_Children]
@@ -155,7 +144,6 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [c_1]
@@ -164,7 +152,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [c_1]
@@ -173,7 +160,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [c_1]

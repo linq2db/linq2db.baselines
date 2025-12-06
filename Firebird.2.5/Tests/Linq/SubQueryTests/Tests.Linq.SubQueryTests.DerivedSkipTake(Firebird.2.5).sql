@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
 DECLARE @skip Integer -- Int32
@@ -17,7 +16,6 @@ FROM
 			"Parent" "t1"
 	) "t2"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

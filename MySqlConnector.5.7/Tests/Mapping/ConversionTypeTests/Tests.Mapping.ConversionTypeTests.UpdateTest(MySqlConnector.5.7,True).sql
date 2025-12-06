@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
 	`TrimTestTable` `t1`
@@ -8,7 +7,6 @@ SET
 WHERE
 	`t1`.`ID` = 3
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	`t`.`Data` = '***XXX***'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	`t`.`Data` = '***HHH***'
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

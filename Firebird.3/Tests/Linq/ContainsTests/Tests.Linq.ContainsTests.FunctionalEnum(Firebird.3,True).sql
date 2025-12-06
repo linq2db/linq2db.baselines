@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"s"."Id"
@@ -9,7 +8,6 @@ WHERE
 	"s"."Enum" IN ('THREE', 'FOUR')
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	("s"."Enum" IN ('THREE') OR "s"."Enum" IS NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	"s"."Enum" IN ('THREE', 'TWO')
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	("s"."Enum" NOT IN ('TWO') AND "s"."Enum" IS NOT NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

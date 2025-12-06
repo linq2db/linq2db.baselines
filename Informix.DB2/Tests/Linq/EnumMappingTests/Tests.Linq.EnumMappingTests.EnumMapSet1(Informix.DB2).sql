@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO LinqDataTypes
@@ -22,7 +20,6 @@ VALUES
 	11
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @TestField BigInt(8) -- Int64
 SET     @TestField = 12
@@ -34,7 +31,6 @@ SET
 WHERE
 	r.ID = 101 AND r.BigIntValue = 11
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -44,7 +40,6 @@ FROM
 WHERE
 	r.ID = 101 AND r.BigIntValue = 12
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102

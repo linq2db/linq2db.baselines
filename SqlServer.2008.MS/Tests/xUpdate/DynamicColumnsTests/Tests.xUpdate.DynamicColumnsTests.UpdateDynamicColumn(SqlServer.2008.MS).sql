@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [Person]
 (
@@ -14,7 +13,6 @@ VALUES
 	N'M'
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	[Person].[LastName] = N'Limonadovy'
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

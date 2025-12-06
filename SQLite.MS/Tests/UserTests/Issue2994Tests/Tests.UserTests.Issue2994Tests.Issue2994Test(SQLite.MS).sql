@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @LastName NVarChar(1) -- String
 SET     @LastName = 'a'
 

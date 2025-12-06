@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @value Real(4) -- Single
 SET     @value = 0
 
@@ -15,7 +14,6 @@ FROM
 			Person r
 	) t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value Real(4) -- Single
 SET     @value = 3.14748365E+09

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	c_1."ParentID",
@@ -23,7 +22,6 @@ WHERE
 			param."ParentID" = c_1."ParentID" AND param."Value_1" = c_1."ParentID"
 	)
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @addition Integer -- Int32
 SET     @addition = 123
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"TableWithIdentitySrc" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

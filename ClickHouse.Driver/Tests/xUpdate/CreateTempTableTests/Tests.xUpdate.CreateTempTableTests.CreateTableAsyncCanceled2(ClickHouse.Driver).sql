@@ -1,19 +1,19 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TempTable
 (
@@ -24,12 +24,10 @@ SELECT
 FROM
 	Parent p
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE TempTable

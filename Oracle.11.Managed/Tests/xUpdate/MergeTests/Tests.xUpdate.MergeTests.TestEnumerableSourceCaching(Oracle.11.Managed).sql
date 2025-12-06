@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 MERGE INTO "CacheTestTable" Target
 USING (
@@ -25,7 +24,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -36,7 +34,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 MERGE INTO "CacheTestTable" Target
@@ -65,7 +62,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

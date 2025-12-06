@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID > 1000
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1001
@@ -44,7 +42,6 @@ VALUES
 	:SmallIntValue
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -61,7 +58,6 @@ WHERE
 	t.ID = 1001
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM

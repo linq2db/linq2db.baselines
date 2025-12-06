@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT DISTINCT TOP (3)
-	[t1].[Value]
+	[r].[Value]
 FROM
-	[TakeSkipClass] [t1]
+	[TakeSkipClass] [r]
 

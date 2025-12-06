@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -21,8 +20,7 @@ RETURNING
 	"DestinationTable"."Id" + 1,
 	"DestinationTable"."ValueStr" || 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -31,8 +29,7 @@ SELECT
 FROM
 	"DestinationTable" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id" + 1,

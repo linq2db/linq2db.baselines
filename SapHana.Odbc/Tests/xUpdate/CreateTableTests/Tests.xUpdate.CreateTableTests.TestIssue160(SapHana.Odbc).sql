@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "aa"
 (
@@ -9,7 +8,6 @@ CREATE COLUMN TABLE "aa"
 	PRIMARY KEY ("bb")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @bb Int -- Int32
 SET     @bb = 99
@@ -27,7 +25,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -36,7 +33,6 @@ SELECT
 FROM
 	"aa" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "aa"

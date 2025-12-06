@@ -1,11 +1,12 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "DisposableTable"
 		(
-			ID Int NOT NULL
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_DisposableTable" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -15,7 +16,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN

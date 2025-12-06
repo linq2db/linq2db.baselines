@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT TOP (2)
 	COUNT([p].[PersonID])
@@ -15,7 +14,6 @@ WHERE
 			[p_1].[PersonID] IN (3)
 	)
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT TOP (2)

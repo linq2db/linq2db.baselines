@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 DECLARE @p Integer -- Int32
@@ -40,8 +39,7 @@ WHERE
 			:p_1 <> p_2."PersonID"
 	))
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @paramCopy Integer -- Int32
@@ -82,8 +80,7 @@ WHERE
 			:p_1 <> p_2."PersonID"
 	))
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -124,8 +121,7 @@ WHERE
 			p_2."PersonID" = :paramCopy
 	))
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 DECLARE @p Integer -- Int32
@@ -166,8 +162,7 @@ WHERE
 			:p_1 <> p_2."PersonID"
 	))
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -208,8 +203,7 @@ WHERE
 			p_2."PersonID" = :paramCopy
 	))
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @paramCopy Integer -- Int32

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 DECLARE @param  -- Int32
@@ -20,7 +19,6 @@ WHERE
 RETURNING
 	[Child].[ChildID] + [Child].[ParentID] + @param
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @param  -- Int32
 SET     @param = 200
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM

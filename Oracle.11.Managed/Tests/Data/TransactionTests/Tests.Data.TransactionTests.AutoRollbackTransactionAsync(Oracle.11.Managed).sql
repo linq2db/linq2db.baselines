@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -16,9 +15,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	t."ParentID" = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t."ParentID",

@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 12
@@ -47,7 +43,6 @@ VALUES
 ;
 SET IDENTITY_INSERT [Person] OFF
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -61,5 +56,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

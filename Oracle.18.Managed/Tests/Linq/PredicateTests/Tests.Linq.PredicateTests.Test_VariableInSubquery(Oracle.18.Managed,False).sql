@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
 
@@ -21,7 +20,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -56,7 +53,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -68,7 +64,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -91,7 +86,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -103,7 +97,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -126,7 +119,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -138,7 +130,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Null_1 Int32
 SET     @Null_1 = NULL
@@ -161,7 +152,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -173,7 +163,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @One Int32
 SET     @One = 1
@@ -196,7 +185,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -208,7 +196,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Zero Int32
 SET     @Zero = 0
@@ -231,7 +218,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -243,7 +229,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @OneN Int32
 SET     @OneN = 1
@@ -266,7 +251,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -278,7 +262,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ZeroN Int32
 SET     @ZeroN = 0
@@ -301,7 +284,6 @@ WHERE
 			s."Id" > r."Id"
 	)
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -313,7 +295,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -325,7 +306,6 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

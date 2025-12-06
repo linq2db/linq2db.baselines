@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	CASE
@@ -15,7 +14,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

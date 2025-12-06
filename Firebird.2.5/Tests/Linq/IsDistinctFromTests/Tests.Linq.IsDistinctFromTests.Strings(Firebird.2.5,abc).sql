@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"s"."String" IS DISTINCT FROM @value
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
@@ -22,7 +20,6 @@ FROM
 WHERE
 	"s"."NullableString" IS DISTINCT FROM @value
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
@@ -34,7 +31,6 @@ FROM
 WHERE
 	"s"."String" IS NOT DISTINCT FROM @value
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'

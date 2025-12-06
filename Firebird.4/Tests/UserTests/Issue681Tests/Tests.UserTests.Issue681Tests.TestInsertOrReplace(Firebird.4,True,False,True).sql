@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
@@ -26,7 +25,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Value AS Int)
 	)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

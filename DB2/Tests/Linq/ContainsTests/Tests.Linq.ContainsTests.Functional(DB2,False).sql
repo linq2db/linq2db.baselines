@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"s"."Id"
@@ -9,7 +8,6 @@ WHERE
 	"s"."Int" IN (-1, -2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	"s"."Int" IN (-1, NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	"s"."Int" IN (-1, 2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	"s"."Int" NOT IN (NULL, 2)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @:p1 Interval -- Object
 SET     @:p1 = P-4DT-6H-5M-4S-876s-876600n
 
@@ -10,8 +9,7 @@ INSERT INTO "Issue4672Table"
 VALUES
 (:p1)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

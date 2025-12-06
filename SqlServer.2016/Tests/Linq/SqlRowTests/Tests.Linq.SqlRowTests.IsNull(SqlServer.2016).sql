@@ -1,4 +1,12 @@
-﻿BeforeExecute
+﻿-- SqlServer.2016
+
+SELECT
+	COUNT(*)
+FROM
+	[Ints] [i]
+WHERE
+	1 = 0
+
 -- SqlServer.2016
 
 SELECT
@@ -8,17 +16,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- SqlServer.2016
-
-SELECT
-	COUNT(*)
-FROM
-	[Ints] [i]
-WHERE
-	1 = 0
-
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

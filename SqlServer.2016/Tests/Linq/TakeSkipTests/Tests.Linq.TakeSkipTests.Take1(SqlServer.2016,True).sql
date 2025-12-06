@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -9,7 +8,6 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 3
@@ -20,7 +18,6 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -31,7 +28,6 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 3

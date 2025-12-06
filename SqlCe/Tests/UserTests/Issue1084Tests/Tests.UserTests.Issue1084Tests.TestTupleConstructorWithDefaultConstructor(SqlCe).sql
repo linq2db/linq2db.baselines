@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[k_1].[StatusBitmask] & 128 as [IsBlocked],

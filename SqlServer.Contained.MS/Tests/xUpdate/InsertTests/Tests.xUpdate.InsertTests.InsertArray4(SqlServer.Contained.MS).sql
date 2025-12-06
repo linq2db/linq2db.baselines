@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t].[ID] > 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
@@ -45,7 +43,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
@@ -61,7 +58,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -45,7 +42,6 @@ FROM
 	[xxPerson] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
@@ -55,7 +51,6 @@ DELETE FROM
 WHERE
 	[xxPerson].[PersonID] = @ID
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

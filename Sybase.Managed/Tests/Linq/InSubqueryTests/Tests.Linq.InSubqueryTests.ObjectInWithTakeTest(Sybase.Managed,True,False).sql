@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[c_1].[ParentID],
@@ -22,7 +21,6 @@ WHERE
 			[param].[ParentID] = [c_1].[ParentID] AND [param].[Value_1] = [c_1].[ParentID]
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

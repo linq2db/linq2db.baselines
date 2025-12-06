@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Column  -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	[r].[Column] = 255 AND [r].[ColumnNullable] = 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [ByteTable]
@@ -107,7 +99,6 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -119,13 +110,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [ByteTable]
@@ -138,7 +127,6 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

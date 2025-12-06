@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"a_2"."ParentID",
@@ -22,7 +21,6 @@ FROM
 		LEFT JOIN "Parent" "z_1" ON "a_2"."ParentID" = Coalesce("z_1"."Value1", 1)
 		LEFT JOIN "Parent" "a_1" ON "a_2"."ParentID" = "a_1"."ParentID"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

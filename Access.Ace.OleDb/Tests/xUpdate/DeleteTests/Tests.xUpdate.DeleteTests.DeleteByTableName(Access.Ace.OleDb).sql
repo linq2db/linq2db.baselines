@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarWChar(4) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -44,7 +41,6 @@ SELECT TOP 2
 FROM
 	[xxPerson] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -54,7 +50,6 @@ DELETE FROM
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

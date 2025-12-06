@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2
 	COUNT([p].[PersonID])
@@ -15,7 +14,6 @@ WHERE
 			[p_1].[PersonID] IN (3)
 	)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2

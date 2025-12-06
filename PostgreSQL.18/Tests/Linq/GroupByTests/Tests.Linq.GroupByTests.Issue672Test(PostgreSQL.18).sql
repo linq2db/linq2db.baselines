@@ -1,4 +1,24 @@
-﻿BeforeExecute
+﻿-- PostgreSQL.18 PostgreSQL
+DECLARE @Name Text(6) -- String
+SET     @Name = 'group1'
+DECLARE @Enabled Boolean
+SET     @Enabled = True
+DECLARE @ImageFullUrl Text(3) -- String
+SET     @ImageFullUrl = '123'
+
+INSERT INTO "Stone"
+(
+	"Name",
+	"Enabled",
+	"ImageFullUrl"
+)
+VALUES
+(
+	:Name,
+	:Enabled,
+	:ImageFullUrl
+)
+
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group1'
@@ -20,29 +40,6 @@ VALUES
 	:ImageFullUrl
 )
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
-DECLARE @Name Text(6) -- String
-SET     @Name = 'group1'
-DECLARE @Enabled Boolean
-SET     @Enabled = True
-DECLARE @ImageFullUrl Text(3) -- String
-SET     @ImageFullUrl = '123'
-
-INSERT INTO "Stone"
-(
-	"Name",
-	"Enabled",
-	"ImageFullUrl"
-)
-VALUES
-(
-	:Name,
-	:Enabled,
-	:ImageFullUrl
-)
-
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group2'
@@ -64,7 +61,6 @@ VALUES
 	:ImageFullUrl
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

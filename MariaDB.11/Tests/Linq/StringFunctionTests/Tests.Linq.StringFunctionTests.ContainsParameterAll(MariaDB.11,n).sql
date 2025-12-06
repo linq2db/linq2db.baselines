@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @toTest VarChar(1) -- String
 SET     @toTest = 'n'
 DECLARE @s VarChar(7) -- String

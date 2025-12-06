@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe' AS [item]) [n] ON [p].[LastName] = [n].[item]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

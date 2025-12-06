@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
 	[t1].[file_id],
@@ -34,7 +33,6 @@ SELECT TOP (1)
 FROM
 	[sys].[database_files] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'TestDataMS'

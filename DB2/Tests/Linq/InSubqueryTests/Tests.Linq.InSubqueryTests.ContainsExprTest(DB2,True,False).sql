@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			"p"."ParentID" + @n = "c_1"."ParentID"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

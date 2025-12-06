@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp DateTime2

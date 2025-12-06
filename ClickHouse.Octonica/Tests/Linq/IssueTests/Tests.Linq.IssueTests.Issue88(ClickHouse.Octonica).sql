@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	t1.PersonID = 1 AND t1.Gender = 'M'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	t1.PersonID = 1 AND 'M' = t1.Gender
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	t1.PersonID = 1 AND t1.Gender = 'M'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

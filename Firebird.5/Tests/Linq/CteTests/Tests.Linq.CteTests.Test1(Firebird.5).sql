@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 WITH CTE_1 ("ParentID")
 AS
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN CTE_1 "c_2" ON "p"."ParentID" = "c_2"."ParentID"
 		INNER JOIN CTE_1 "c2" ON "p"."ParentID" = "c2"."ParentID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

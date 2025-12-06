@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ParentID",
@@ -17,10 +14,7 @@ FROM
 	) m_1
 		INNER JOIN "GrandChild" d ON (m_1."ParentID" = d."ParentID" + 1 OR m_1."ParentID" IS NULL AND d."ParentID" IS NULL) AND (m_1."ChildID" = d."ChildID" OR m_1."ChildID" IS NULL AND d."ChildID" IS NULL)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t2."ParentID",

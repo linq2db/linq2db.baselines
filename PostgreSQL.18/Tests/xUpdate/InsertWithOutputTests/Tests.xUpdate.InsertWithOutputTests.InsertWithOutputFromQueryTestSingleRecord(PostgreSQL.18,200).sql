@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
 
@@ -22,7 +21,6 @@ RETURNING
 	NEW."Value",
 	NEW."ValueStr"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200

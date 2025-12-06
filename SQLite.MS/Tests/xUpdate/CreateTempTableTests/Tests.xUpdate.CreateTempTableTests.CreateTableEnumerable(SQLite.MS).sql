@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -11,15 +9,15 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [TempTable]
@@ -35,7 +33,6 @@ VALUES
 (6),
 (7)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -44,7 +41,6 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]

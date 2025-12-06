@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'123'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -42,7 +40,6 @@ FROM
 WHERE
 	[t].[PersonID] = @id
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5

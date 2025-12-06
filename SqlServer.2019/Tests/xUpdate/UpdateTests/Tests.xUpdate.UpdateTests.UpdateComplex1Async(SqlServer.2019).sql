@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -26,8 +25,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.2019 (asynchronously)
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -42,8 +40,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
--- SqlServer.2019 (asynchronously)
+-- SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -65,8 +62,7 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
--- SqlServer.2019 (asynchronously)
+-- SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 

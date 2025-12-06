@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "SampleClass"
 (
@@ -14,7 +13,6 @@ VALUES
 	'SampleClass'
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "SampleClass"
@@ -30,7 +28,6 @@ VALUES
 	'SomeTest'
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(4) -- String
 SET     @test = 'Test'
@@ -52,7 +49,6 @@ SELECT
 	END
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(4) -- String
 SET     @test = 'Test'
@@ -66,7 +62,6 @@ FROM
 WHERE
 	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Value'
@@ -88,7 +83,6 @@ SELECT
 	END
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Value'
@@ -102,7 +96,6 @@ FROM
 WHERE
 	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Class'
@@ -124,7 +117,6 @@ SELECT
 	END
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Class'

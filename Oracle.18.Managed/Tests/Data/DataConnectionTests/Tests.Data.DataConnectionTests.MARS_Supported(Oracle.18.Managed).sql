@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"Person" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
@@ -31,7 +28,6 @@ FROM
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 2
@@ -44,7 +40,6 @@ FROM
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 3
@@ -57,7 +52,6 @@ FROM
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 4

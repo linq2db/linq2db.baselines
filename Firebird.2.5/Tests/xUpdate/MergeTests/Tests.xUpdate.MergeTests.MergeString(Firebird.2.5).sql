@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	MAX("t1".ID)
 FROM
 	"AllTypes" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 MERGE INTO "AllTypes" "Target"
@@ -36,7 +32,6 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 1
@@ -51,5 +46,3 @@ FROM
 ORDER BY
 	"t1".ID DESC
 
-BeforeExecute
-DisposeTransaction

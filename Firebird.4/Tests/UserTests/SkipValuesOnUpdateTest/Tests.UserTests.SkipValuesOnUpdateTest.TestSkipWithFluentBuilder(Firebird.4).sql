@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'Franki'
@@ -50,7 +47,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -63,7 +59,6 @@ WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
@@ -77,7 +72,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

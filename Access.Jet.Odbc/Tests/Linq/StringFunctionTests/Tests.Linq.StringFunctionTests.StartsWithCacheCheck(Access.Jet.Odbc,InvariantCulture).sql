@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -23,7 +21,6 @@ WHERE
 	[p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -38,7 +35,6 @@ WHERE
 	([p].[FirstName] NOT LIKE ? OR InStr(1, [p].[FirstName], ?, 0) <> 1) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -53,7 +49,6 @@ WHERE
 	[p].[FirstName] LIKE ? AND InStr(1, [p].[FirstName], ?, 0) = 1 AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

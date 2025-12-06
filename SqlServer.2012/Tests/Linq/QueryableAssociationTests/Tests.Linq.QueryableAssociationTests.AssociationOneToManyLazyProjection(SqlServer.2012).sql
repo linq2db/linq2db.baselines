@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
@@ -15,9 +13,6 @@ AS RETURN
   UNION ALL
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -62,7 +57,6 @@ FROM
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -99,9 +93,6 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 2
@@ -131,7 +122,6 @@ FROM
 				dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
 		) [t2]
 
-BeforeExecute
 -- SqlServer.2012
 
 

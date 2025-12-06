@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Has Boolean
 SET     @Has = TRUE
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING
 	"Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 1

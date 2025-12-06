@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "TPHTable"
+﻿INSERT BULK "TPHTable"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -32,7 +29,6 @@ WHERE
 	"x"."Discriminator" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -48,7 +44,6 @@ WHERE
 	"x"."Discriminator" = 2
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -64,7 +59,6 @@ WHERE
 	"x"."Discriminator" = 3
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -80,7 +74,6 @@ WHERE
 	"x"."Value1" = 'Str1'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -96,7 +89,6 @@ WHERE
 	"x"."Value2" = 'Str2'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

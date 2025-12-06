@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 DELETE [p]
 FROM
@@ -7,13 +6,11 @@ FROM
 WHERE
 	[p].[ID] >= 3
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 
 SET IDENTITY_INSERT [AllTypes2] ON
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 DECLARE @p1 hierarchyid -- Udt -- Object
 SET     @p1 = /1/3/
 DECLARE @p2 geography -- Udt -- Object
@@ -98,12 +95,10 @@ VALUES
 (11,DATETIME2FROMPARTS(2020, 3, 8, 0, 0, 0, 0, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 18, 2, 55, 1231234, 0, 0, 7),DATETIME2FROMPARTS(2020, 3, 8, 0, 0, 0, 0, 7),TIMEFROMPARTS(0, 0, 8, 0, 7),@p25,@p26,@p27),
 (12,DATETIME2FROMPARTS(2020, 3, 9, 0, 0, 0, 0, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 18, 3, 55, 1231234, 0, 0, 7),DATETIME2FROMPARTS(2020, 3, 9, 0, 0, 0, 0, 7),TIMEFROMPARTS(0, 0, 9, 0, 7),@p28,@p29,@p30)
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 
 SET IDENTITY_INSERT [AllTypes2] OFF
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

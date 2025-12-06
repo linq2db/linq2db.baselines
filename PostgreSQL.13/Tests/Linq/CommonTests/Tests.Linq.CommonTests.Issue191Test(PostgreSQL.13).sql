@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
+	user_1."Id",
 	user_1."FirstName",
 	user_1."Status"
 FROM

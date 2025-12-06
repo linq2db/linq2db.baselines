@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 10
 DECLARE @skip Integer -- Int32
@@ -53,7 +52,6 @@ FROM
 	) x
 LIMIT :take OFFSET :skip 
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

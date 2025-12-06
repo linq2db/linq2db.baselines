@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[od].[OrderID],
@@ -13,7 +12,6 @@ FROM
 ORDER BY
 	[od].[OrderID]
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT

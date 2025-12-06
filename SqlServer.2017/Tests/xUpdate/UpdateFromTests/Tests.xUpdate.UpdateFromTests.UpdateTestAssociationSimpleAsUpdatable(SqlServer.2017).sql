@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 UPDATE
 	[v]
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[a_Relation].[RelatedValue1] = 11
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT TOP (1)

@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 CREATE TABLE [IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_IsTemporaryTable] PRIMARY KEY ([Id])
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	[IsTemporaryTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [IsTemporaryTable]

@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 MERGE INTO [AllTypes] [Target]
@@ -38,7 +34,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @take Int -- Int32
 SET     @take = 1
@@ -53,5 +48,3 @@ FROM
 ORDER BY
 	[t1].[ID] DESC
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 
@@ -21,8 +20,7 @@ WHERE
 			p."PersonID" = :paramCopy
 	)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 2
 
@@ -44,8 +42,7 @@ WHERE
 			p."PersonID" = :paramCopy
 	)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 3
 
@@ -67,8 +64,7 @@ WHERE
 			p."PersonID" = :paramCopy
 	)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 4
 
@@ -90,8 +86,7 @@ WHERE
 			p."PersonID" = :paramCopy
 	)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"c_1"."ParentID",
@@ -16,7 +15,6 @@ WHERE
 			"param"."ParentID" = "c_1"."ParentID" AND Coalesce("param"."Value1", -1) = "c_1"."ParentID"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	"Child" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

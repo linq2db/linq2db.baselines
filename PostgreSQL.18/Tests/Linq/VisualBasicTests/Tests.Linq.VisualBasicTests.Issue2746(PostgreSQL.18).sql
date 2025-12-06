@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 

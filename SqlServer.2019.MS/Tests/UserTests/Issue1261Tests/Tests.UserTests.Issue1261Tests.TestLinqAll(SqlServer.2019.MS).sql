@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	IIF(NOT EXISTS(
@@ -11,7 +10,6 @@ SELECT
 			[x].[ParentID] = 1 AND NOT ([x].[ChildID] = 11 AND [x].[ChildID] IS NOT NULL AND [x].[GrandChildID] = 777 AND [x].[GrandChildID] IS NOT NULL)
 	), 1, 0)
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

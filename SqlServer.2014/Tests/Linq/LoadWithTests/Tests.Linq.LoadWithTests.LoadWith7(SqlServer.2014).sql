@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT TOP (1)
 	[a_GrandChildren2].[ParentID],

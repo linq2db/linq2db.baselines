@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[y].[item]
@@ -12,7 +11,6 @@ FROM
 				('M'), ('F'), ('U'), ('O')
 			) [y]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

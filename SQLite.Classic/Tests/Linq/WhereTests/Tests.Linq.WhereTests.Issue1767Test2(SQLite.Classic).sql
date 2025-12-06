@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] IS NULL OR [p].[Value1] <> 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

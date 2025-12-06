@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			`t2`.`ID` = @id
 	)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 4

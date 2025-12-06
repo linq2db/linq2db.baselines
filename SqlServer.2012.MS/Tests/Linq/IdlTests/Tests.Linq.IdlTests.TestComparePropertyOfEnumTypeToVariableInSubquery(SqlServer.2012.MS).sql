@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = N'O'
 

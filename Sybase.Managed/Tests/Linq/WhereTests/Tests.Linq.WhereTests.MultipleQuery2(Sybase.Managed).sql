@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @str UniVarChar(3) -- String
 SET     @str = '123'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [InsertTestClassDest]
 (
@@ -14,7 +13,6 @@ FROM
 		select * from InsertTestClass
 	) [x]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 	[InsertTestClass] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
-BeforeExecute
 -- SqlCe
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000

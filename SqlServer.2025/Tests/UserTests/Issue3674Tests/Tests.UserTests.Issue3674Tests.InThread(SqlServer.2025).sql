@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 INSERT INTO [Test3697] DEFAULT VALUES
 
-BeforeExecute
 -- SqlServer.2008
 
 UPDATE
@@ -16,7 +14,6 @@ FROM
 	[Test3697] [a]
 		INNER JOIN [Test3697Item] [a_Items] ON [a].[Id] = [a_Items].[TestId]
 
-BeforeExecute
 -- SqlServer.2008
 
 UPDATE

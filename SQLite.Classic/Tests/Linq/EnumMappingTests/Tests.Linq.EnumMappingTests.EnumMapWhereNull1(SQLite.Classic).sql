@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [LinqDataTypes]
@@ -20,7 +18,6 @@ VALUES
 	101
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IS NULL
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102

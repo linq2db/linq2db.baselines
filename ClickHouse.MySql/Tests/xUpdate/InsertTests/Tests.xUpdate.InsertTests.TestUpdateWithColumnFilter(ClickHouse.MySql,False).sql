@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	x.FirstName = 'InsertColumnFilter'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -45,7 +42,6 @@ UPDATE
 WHERE
 	PersonID = 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -60,7 +56,6 @@ WHERE
 	x.FirstName = 'InsertColumnFilter'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

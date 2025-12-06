@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "BlobClass"
 (
@@ -12,7 +11,6 @@ VALUES
 	X'010203'
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -23,7 +21,6 @@ FROM
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -33,7 +30,6 @@ SET
 WHERE
 	"t1"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

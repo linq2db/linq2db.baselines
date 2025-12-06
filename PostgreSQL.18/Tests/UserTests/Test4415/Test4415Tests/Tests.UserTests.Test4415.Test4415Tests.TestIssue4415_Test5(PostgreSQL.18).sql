@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	t1."LanguageID",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Common_Language" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[ParentID],
@@ -22,7 +21,6 @@ FROM
 				[t].[ParentID] = 2
 		) [id_1] ON ([id_1].[ParentID] = [m_1].[ParentID])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

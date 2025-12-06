@@ -1,5 +1,6 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
+DECLARE @Pk Integer -- Int32
+SET     @Pk = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarWChar(12) -- String
@@ -7,34 +8,17 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO [Issue1096Task]
 (
+	[Pk],
 	[Id],
 	[TargetName]
 )
 VALUES
 (
+	@Pk,
 	@Id,
 	@TargetName
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @TargetName VarWChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO [Issue1096Task]
-(
-	[Id],
-	[TargetName]
-)
-VALUES
-(
-	@Id,
-	@TargetName
-)
-
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -56,10 +40,10 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT
+	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
 	[a_ActualStage].[Id],

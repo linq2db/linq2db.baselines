@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO DynamicColumnsTestTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'test_name'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

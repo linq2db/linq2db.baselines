@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -24,13 +23,11 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -45,8 +42,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -68,8 +64,7 @@ SET
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+-- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

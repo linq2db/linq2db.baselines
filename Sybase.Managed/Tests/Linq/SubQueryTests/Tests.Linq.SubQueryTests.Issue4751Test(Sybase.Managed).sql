@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 30
 	[x].[Id],
@@ -48,7 +47,6 @@ FROM
 				LEFT JOIN [Trp0041] [t4] ON [t4].[CarNo] = [t].[CarNo] OR [t4].[CarNo] IS NULL AND [t].[CarNo] IS NULL
 	) [x]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [Person] [Target]
@@ -47,7 +43,6 @@ VALUES
 	[Source].[Gender]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -61,5 +56,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

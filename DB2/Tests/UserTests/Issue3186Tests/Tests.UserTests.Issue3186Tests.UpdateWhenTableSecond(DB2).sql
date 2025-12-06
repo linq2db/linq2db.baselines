@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @is_deleted SmallInt(4) -- Int16
 SET     @is_deleted = 1
 
@@ -19,7 +18,6 @@ WHERE
 			"ct"."id" = 'TestProcessService' AND "component_categories"."id" = "ctg"."id"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

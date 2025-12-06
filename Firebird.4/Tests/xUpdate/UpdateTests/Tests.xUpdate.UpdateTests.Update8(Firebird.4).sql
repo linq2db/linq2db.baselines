@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1002
@@ -30,7 +28,6 @@ SET
 WHERE
 	"t1"."ParentID" = @ParentID
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001

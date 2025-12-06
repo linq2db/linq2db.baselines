@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @currentDate VarChar(23) -- AnsiString
 SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate_1 VarChar(23) -- AnsiString

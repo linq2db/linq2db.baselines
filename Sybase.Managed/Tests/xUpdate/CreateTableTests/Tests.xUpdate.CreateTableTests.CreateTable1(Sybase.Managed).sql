@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TestTable') IS NOT NULL)
 	DROP TABLE [TestTable]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE [TestTable]
@@ -17,7 +15,6 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [TestTable]

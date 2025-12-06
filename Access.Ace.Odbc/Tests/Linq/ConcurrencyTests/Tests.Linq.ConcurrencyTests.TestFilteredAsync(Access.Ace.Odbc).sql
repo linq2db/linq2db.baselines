@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int -- Int32
@@ -47,7 +44,6 @@ SET
 WHERE
 	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -57,8 +53,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int -- Int32
@@ -74,7 +69,6 @@ SET
 WHERE
 	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -84,8 +78,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -96,7 +89,6 @@ DELETE FROM
 WHERE
 	[r].[Id] = 2 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -106,8 +98,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -118,7 +109,6 @@ DELETE FROM
 WHERE
 	[r].[Id] = 1 AND [r].[Id] = ? AND [r].[Stamp] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

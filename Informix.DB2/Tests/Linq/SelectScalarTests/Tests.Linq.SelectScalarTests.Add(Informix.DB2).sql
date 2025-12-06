@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
-DECLARE @p Integer(4) -- Int32
-SET     @p = 5
+﻿-- Informix.DB2 Informix
 
 SELECT
-	@p::Int
+	5
 FROM table(set{1})
 

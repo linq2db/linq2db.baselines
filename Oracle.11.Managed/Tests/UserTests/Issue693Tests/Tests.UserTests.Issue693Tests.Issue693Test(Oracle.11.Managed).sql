@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
@@ -58,7 +56,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id1 Int32
 SET     @id1 = 5
@@ -74,7 +71,6 @@ FROM
 WHERE
 	t1."PersonID" = :id1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id2 Int32
 SET     @id2 = 6

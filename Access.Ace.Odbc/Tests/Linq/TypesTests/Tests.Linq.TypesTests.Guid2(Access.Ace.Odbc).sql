@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @value UniqueIdentifier -- Guid
 SET     @value = '{40932fdb-1543-4e4a-ac2c-ca371604fb4b}'
 
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p].[GuidValue] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @value UniqueIdentifier -- Guid
 SET     @value = '{d2f970c0-35ac-4987-9cd5-5badb1757436}'

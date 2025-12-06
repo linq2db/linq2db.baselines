@@ -1,11 +1,7 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 Patient_SelectAll
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -21,5 +17,3 @@ FROM
 ORDER BY
 	[a_Person].[PersonID]
 
-BeforeExecute
-DisposeTransaction

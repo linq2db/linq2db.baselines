@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	MAX("t1"."PersonID")
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Gender VarChar(1) -- String
 SET     @Gender = 'M'
@@ -34,7 +32,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -48,7 +45,6 @@ FROM
 WHERE
 	"p"."PersonID" > 4
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Int64
 SET     @p = 1
 DECLARE @endId Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	s."id"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @startId Int32
 SET     @startId = 1

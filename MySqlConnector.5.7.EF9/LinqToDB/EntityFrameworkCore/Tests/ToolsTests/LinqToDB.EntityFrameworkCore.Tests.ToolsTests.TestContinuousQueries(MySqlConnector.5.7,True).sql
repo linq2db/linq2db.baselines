@@ -22,10 +22,9 @@ WHERE (@__ef_filter__p_0 OR NOT (`o`.`IsDeleted`)) OR NOT (`o`.`IsDeleted`)
 ORDER BY `o`.`OrderID`, `s`.`OrderID`, `s`.`ProductID`, `s`.`ProductID0`, `s`.`OrderID0`
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`ProductId`,
@@ -61,7 +60,7 @@ WHERE
 
 
 
--- MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`OrderID`,
@@ -92,10 +91,9 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
--- MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`e`.`IsDeleted`,

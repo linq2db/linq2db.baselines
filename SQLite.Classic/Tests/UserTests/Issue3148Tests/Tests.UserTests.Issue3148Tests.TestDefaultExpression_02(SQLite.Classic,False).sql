@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[r].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[r].[MiddleName] IS NOT NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

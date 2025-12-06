@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[x].[Id],
@@ -16,9 +15,6 @@ WHERE
 			[x].[Id] = [a_Children].[ParentId]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -37,9 +33,6 @@ FROM
 	) [m_1]
 		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

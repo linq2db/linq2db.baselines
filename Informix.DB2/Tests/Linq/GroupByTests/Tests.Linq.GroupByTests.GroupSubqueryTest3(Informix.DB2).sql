@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	pmp.ParentID
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	pmp.ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	p.ID
+	toString(toUInt8(p.ID))
 FROM
 	LinqDataTypes p
 WHERE

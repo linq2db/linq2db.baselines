@@ -1,49 +1,39 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT user FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 GRANT CREATE ANY TRIGGER TO TEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 GRANT CREATE ANY SEQUENCE TO TEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 GRANT DROP ANY TRIGGER TO TEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 GRANT DROP ANY SEQUENCE TO TEST
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP USER C##ISSUE723SCHEMA CASCADE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE USER C##ISSUE723SCHEMA IDENTIFIED BY password
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT default_tablespace FROM sys.dba_users WHERE username = 'C##ISSUE723SCHEMA'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 ALTER USER C##ISSUE723SCHEMA quota unlimited on SYSTEM
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
@@ -53,12 +43,10 @@ CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
 	CONSTRAINT PK_ISSUE723TABLE PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE
@@ -67,7 +55,6 @@ BEGIN
 	SELECT C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE.NEXTVAL INTO :NEW."Id" FROM dual;
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -76,7 +63,6 @@ INSERT INTO C##ISSUE723SCHEMA.ISSUE723TABLE VALUES (DEFAULT)
 RETURNING 
 	"Id" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -85,7 +71,6 @@ INSERT INTO C##ISSUE723SCHEMA.ISSUE723TABLE VALUES (DEFAULT)
 RETURNING 
 	"Id" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 BEGIN
@@ -94,7 +79,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE C##ISSUE723SCHEMA.ISSUE723TABLE';
 END;
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP USER C##ISSUE723SCHEMA CASCADE

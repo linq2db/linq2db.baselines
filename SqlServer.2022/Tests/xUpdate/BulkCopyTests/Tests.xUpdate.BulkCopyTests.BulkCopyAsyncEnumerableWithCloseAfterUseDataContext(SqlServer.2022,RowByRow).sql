@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 

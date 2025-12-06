@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 
@@ -21,8 +20,7 @@ WHERE
 			`p`.`PersonID` = @paramCopy
 	)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @paramCopy Int32
 SET     @paramCopy = 2
 
@@ -44,8 +42,7 @@ WHERE
 			`p`.`PersonID` = @paramCopy
 	)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @paramCopy Int32
 SET     @paramCopy = 3
 
@@ -67,8 +64,7 @@ WHERE
 			`p`.`PersonID` = @paramCopy
 	)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @paramCopy Int32
 SET     @paramCopy = 4
 
@@ -90,8 +86,7 @@ WHERE
 			`p`.`PersonID` = @paramCopy
 	)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 

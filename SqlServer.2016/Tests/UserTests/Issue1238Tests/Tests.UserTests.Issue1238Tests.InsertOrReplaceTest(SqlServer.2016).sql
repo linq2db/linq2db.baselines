@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
@@ -40,7 +36,6 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
@@ -81,7 +75,6 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -89,5 +82,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @GuidNonReadonly Raw(16) -- Binary
 SET     @GuidNonReadonly = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

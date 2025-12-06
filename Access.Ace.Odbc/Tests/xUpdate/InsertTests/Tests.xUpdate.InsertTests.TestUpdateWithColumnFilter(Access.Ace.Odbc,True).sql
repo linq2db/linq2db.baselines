@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[x].[FirstName] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -63,7 +60,6 @@ SET
 WHERE
 	[t1].[PersonID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -79,7 +75,6 @@ FROM
 WHERE
 	[x].[FirstName] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @newName NVarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

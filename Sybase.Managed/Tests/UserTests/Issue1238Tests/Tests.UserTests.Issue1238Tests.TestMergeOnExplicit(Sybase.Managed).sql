@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
@@ -40,7 +36,6 @@ VALUES
 	[Source].[Data_1]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [InheritanceParent] [Target]
@@ -81,7 +75,6 @@ VALUES
 	[Source].[Data_1]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -89,5 +82,3 @@ SELECT
 FROM
 	[InheritanceParent] [t1]
 
-BeforeExecute
-DisposeTransaction

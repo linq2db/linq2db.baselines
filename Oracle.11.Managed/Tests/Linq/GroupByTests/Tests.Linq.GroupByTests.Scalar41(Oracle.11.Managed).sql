@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	g_2.MIN_1
+	g_2."Min_1"
 FROM
 	(
 		SELECT
@@ -13,7 +12,7 @@ FROM
 			MIN(CASE
 				WHEN g_1."ParentID" > 2 THEN g_1."ChildID"
 				ELSE NULL
-			END) as MIN_1
+			END) as "Min_1"
 		FROM
 			"Child" g_1
 		GROUP BY

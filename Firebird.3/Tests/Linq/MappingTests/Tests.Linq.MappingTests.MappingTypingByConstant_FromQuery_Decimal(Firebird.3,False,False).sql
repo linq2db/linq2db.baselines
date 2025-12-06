@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @value Decimal(1, 0)
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @value Decimal(13, 3)
 SET     @value = 2147483648.123

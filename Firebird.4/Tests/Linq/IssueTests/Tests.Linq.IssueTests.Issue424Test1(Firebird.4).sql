@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -18,7 +17,6 @@ ORDER BY
 	"t2"."ParentID"
 FETCH NEXT @take ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

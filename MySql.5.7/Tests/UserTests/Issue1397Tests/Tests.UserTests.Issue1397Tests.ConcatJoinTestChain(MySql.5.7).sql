@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`m_1`.`ParentID`,
@@ -22,7 +21,6 @@ FROM
 				`t`.`ParentID` = 2
 		) `t1` ON `m_1`.`ParentID` = `t1`.`ParentID`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

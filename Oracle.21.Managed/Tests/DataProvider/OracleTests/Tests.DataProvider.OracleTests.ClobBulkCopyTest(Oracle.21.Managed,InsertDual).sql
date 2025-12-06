@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "ClobEntity"
 (
@@ -8,7 +7,6 @@ CREATE TABLE "ClobEntity"
 	"NClobValue" NClob     NULL
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Clob -- Object
 SET     @:p1 = 'Clob1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
@@ -33,7 +31,6 @@ INSERT INTO "ClobEntity"
 	SELECT 1,:p1,:p2 FROM DUAL  UNION ALL
 	SELECT 2,:p3,:p4 FROM DUAL 
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -43,7 +40,6 @@ SELECT
 FROM
 	"ClobEntity" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP TABLE "ClobEntity"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[g_1].[LastName],
@@ -11,7 +10,6 @@ FROM
 GROUP BY
 	[g_1].[LastName]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

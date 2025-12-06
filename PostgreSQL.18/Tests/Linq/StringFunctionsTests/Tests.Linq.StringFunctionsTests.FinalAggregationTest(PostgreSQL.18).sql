@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	STRING_AGG(t."Value1", ' -> ')
+	STRING_AGG(t1."Value1", ' -> ')
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -51,7 +49,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -64,7 +61,6 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -89,7 +85,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5

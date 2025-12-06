@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT DISTINCT TOP (2)
 	[u].[city] as [City],

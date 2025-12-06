@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @part1 Int32
 SET     @part1 = 4
@@ -54,7 +52,6 @@ FROM
 WHERE
 	t.ID = 5000 AND t."DateTimeValue" + ((CAST(t."SmallIntValue" AS Int) + :part1) - :part2) * INTERVAL '1' DAY < TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

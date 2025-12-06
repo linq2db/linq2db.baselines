@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t"."Str",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"TestLengthModel" "t"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

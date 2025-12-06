@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
@@ -29,7 +26,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT

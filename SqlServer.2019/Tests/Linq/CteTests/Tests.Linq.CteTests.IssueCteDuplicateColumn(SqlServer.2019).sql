@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 WITH [CTE_1] ([Id2], [Id1])
 AS

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Guid1 Guid
 SET     @Guid1 = X'BC7B663D0FDE43278F925D8CC3A11D11'
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"x"."PersonID" + "y"."item"
@@ -10,7 +9,6 @@ FROM
 			UNION ALL
 			SELECT 3 FROM rdb$database) "y"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

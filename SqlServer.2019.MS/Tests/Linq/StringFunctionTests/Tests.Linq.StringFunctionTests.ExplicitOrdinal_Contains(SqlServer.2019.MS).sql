@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -38,7 +35,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%stSt%' ESCAPE N'~' AND
 	CHARINDEX(Convert(VarBinary(8000), N'stSt'), Convert(VarBinary(8000), [r].[CaseSensitive])) > 0
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -49,7 +45,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'%stSt%' ESCAPE N'~' AND
 	CHARINDEX(Convert(VarBinary(8000), N'stSt'), Convert(VarBinary(8000), [r].[CaseInsensitive])) > 0
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -60,7 +55,6 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%stst%' ESCAPE N'~' AND
 	CHARINDEX(Convert(VarBinary(8000), N'stst'), Convert(VarBinary(8000), [r].[CaseSensitive])) > 0
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

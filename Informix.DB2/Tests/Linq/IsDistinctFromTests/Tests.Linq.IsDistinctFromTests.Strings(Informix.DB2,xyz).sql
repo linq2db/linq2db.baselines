@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -18,7 +17,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -38,7 +36,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
@@ -58,7 +55,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'

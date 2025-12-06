@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 WITH [BooksCte] ([AuthorId], [Title])
 AS

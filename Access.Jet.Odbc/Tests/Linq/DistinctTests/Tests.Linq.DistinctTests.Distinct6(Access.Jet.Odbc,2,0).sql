@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 0
 DECLARE @Value1 Int -- Int32
@@ -11,7 +10,6 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

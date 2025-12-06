@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = BX'0102030405'
 DECLARE @p Integer(4) -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t".ID = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = BX'0504030201'
@@ -26,7 +24,6 @@ SET
 WHERE
 	"t".ID = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

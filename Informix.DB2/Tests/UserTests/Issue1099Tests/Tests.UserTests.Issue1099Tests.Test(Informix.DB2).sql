@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer(4) -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @personId Integer(4) -- Int32
 SET     @personId = 1

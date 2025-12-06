@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -22,7 +21,6 @@ FROM
 	) m_1
 		INNER JOIN CHAINPOINTS d_1 ON m_1.Id = d_1.CHAIN_ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -38,7 +36,6 @@ FROM
 ORDER BY
 	m_1.LINE_ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

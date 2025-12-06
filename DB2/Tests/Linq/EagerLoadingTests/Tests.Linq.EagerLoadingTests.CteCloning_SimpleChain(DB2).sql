@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1 ("Id")
 AS
@@ -45,9 +42,6 @@ FROM
 	) "m_1"
 		INNER JOIN "CteTable" "d_1" ON "m_1"."Id" = "d_1"."Value3"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1

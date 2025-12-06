@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "DropTableTest"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -21,15 +18,15 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 CREATE TABLE "DropTableTest"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO testdata.public."DropTableTest"
@@ -41,7 +38,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -49,12 +45,10 @@ SELECT
 FROM
 	testdata.public."DropTableTest" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE testdata.public."DropTableTest"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

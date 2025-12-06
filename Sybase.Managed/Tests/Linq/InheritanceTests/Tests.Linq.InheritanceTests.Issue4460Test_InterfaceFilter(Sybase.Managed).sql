@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Code UniVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Code UniVarChar(6) -- String
 SET     @Code = 'Child2'
@@ -42,7 +40,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t2].[ParentID],
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[t2].[ChildID]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

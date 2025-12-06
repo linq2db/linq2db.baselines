@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Integer -- Int32
@@ -259,7 +256,6 @@ SELECT CAST(@p95 AS Int),CAST(@p96 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p97 AS Int),CAST(@p98 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p99 AS Int),CAST(@p100 AS Int) FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111051
@@ -518,7 +514,6 @@ SELECT CAST(@p95 AS Int),CAST(@p96 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p97 AS Int),CAST(@p98 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p99 AS Int),CAST(@p100 AS Int) FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @p1 Integer -- Int32
 SET     @p1 = 111101
@@ -772,7 +767,6 @@ SELECT CAST(@p93 AS Int),CAST(@p94 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p95 AS Int),CAST(@p96 AS Int) FROM rdb$database UNION ALL
 SELECT CAST(@p97 AS Int),CAST(@p98 AS Int) FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
@@ -786,5 +780,3 @@ FROM
 WHERE
 	"r"."ParentID" >= @ParentID AND "r"."ParentID" <= @ParentID_1
 
-BeforeExecute
-DisposeTransaction

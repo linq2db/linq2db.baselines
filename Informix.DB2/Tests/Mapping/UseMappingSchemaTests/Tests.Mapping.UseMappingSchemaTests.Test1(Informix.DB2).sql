@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.Field1,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

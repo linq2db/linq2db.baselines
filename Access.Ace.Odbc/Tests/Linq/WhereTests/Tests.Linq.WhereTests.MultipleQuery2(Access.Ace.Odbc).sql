@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @str NVarChar(3) -- String
 SET     @str = '123'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[OrderID],
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	[t1].[OrderDate]
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 DECLARE @OrderID Int -- Int32
 SET     @OrderID = 10248

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[FirstName],
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe') [n] ON [p].[LastName] = [n].[item]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

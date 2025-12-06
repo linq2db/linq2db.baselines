@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	toString('Discriminator') as c1,
@@ -25,7 +24,6 @@ FROM
 WHERE
 	a_Book_1.Discriminator = 'Novel'
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -51,7 +49,6 @@ FROM
 		INNER JOIN BookAuthor d_1 ON d_1.FkBookId = m_1.BookId
 		LEFT JOIN Author a_Author ON d_1.FkAuthorId = a_Author.AuthorId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -66,7 +63,6 @@ FROM
 		INNER JOIN BookAuthor d ON d.FkAuthorId = m_1.AuthorId
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

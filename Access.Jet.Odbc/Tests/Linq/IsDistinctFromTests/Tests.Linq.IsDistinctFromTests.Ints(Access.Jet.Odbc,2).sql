@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 2
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[s].[Int] <> ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -22,7 +20,6 @@ FROM
 WHERE
 	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 2
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[s].[Int] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @value Int -- Int32
 SET     @value = 2

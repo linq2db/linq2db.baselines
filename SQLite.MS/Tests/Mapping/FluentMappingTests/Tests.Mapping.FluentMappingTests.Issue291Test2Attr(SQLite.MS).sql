@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
 DECLARE @itemType  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@SomeOtherField
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @MyCol1 NVarChar -- String
 SET     @MyCol1 = NULL
@@ -42,7 +40,6 @@ VALUES
 	@SomeOtherField
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -55,7 +52,6 @@ WHERE
 	[t1].[itemType] <> 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

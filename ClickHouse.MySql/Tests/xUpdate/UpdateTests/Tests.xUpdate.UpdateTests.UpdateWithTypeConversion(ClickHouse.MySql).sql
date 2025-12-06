@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO LinqDataTypes
 (
@@ -14,7 +13,6 @@ VALUES
 	toInt16(200)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -25,7 +23,6 @@ UPDATE
 WHERE
 	ID = 1001
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -36,7 +33,6 @@ UPDATE
 WHERE
 	ID = 1001
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

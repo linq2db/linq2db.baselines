@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	s.ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	s.FirstName <> ''
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

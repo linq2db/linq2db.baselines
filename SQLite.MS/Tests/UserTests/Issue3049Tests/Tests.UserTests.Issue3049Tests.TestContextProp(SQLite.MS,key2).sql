@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t].[Value]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[t].[Value] IN ('key2')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

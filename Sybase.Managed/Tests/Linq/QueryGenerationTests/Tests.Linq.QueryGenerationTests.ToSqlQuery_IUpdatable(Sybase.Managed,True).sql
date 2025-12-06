@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -20,7 +18,6 @@ UPDATE
 SET
 	[Value] = 123
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

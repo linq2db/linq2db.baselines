@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -23,5 +21,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (DATETIME2FROMPARTS(2009, 9, 24, 9, 19, 29, 900000, 7)) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (DATETIME2FROMPARTS(2009, 9, 24, 9, 19, 29, 90, 3)) OR [x].[DateTimeValue2] IS NULL)
 

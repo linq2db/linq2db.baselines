@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"p"."PersonID",
@@ -16,7 +15,6 @@ WHERE
 	"p"."PersonID" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

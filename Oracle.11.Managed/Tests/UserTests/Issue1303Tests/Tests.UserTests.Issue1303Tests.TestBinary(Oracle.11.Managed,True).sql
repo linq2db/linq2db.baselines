@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue1303"
 (
@@ -14,7 +13,6 @@ VALUES
 	HEXTORAW('0405')
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	t1.ID = 1 AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	t1."Array" = HEXTORAW('010203') AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

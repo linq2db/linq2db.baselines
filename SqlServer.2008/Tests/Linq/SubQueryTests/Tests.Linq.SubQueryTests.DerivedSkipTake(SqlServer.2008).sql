@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -26,7 +25,6 @@ FROM
 			[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 	) [t3]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

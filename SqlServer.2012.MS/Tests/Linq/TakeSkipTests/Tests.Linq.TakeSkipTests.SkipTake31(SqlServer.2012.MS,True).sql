@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID] DESC
 OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[m_1].[Key_1],
@@ -16,9 +13,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[Key_1] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

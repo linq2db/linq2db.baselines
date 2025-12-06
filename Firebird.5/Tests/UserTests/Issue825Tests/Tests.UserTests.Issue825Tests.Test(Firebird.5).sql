@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @userId Integer -- Int32
 SET     @userId = 32
 DECLARE @childId Integer -- Int32

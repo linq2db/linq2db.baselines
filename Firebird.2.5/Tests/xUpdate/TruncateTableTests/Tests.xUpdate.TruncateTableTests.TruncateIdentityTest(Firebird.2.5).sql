@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TestIdTrun')) THEN
@@ -10,7 +9,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "TestIdTrun"';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
@@ -35,7 +33,6 @@ EXECUTE BLOCK AS BEGIN
 	';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "TestIdTrun"
@@ -47,7 +44,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "TestIdTrun"
@@ -59,7 +55,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
@@ -72,17 +67,14 @@ FROM
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM "TestIdTrun"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SET GENERATOR "GIDENTITY_TestIdTrun" TO 0
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "TestIdTrun"
@@ -94,7 +86,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "TestIdTrun"
@@ -106,7 +97,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
@@ -119,7 +109,6 @@ FROM
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

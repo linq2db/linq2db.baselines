@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
@@ -45,7 +42,6 @@ FROM
 WHERE
 	t1.PersonID = @id
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -68,7 +64,6 @@ SET
 WHERE
 	t1.PersonID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5

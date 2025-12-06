@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String
@@ -26,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Text(4) -- String
@@ -46,8 +44,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Text(4) -- String
@@ -66,8 +63,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Text(4) -- String
@@ -86,8 +82,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

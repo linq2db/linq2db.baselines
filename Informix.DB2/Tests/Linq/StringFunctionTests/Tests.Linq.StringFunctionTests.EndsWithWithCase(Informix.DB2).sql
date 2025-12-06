@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.Diagnosis LIKE '%Persecution' ESCAPE '~' AND p.PersonID = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -19,7 +17,6 @@ WHERE
 	NOT p.Diagnosis LIKE '%Persecution' ESCAPE '~' AND
 	p.PersonID = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 WHERE
 	p.Diagnosis LIKE '%persecution' ESCAPE '~' AND p.PersonID = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

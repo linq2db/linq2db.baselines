@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"m_1"."Key_1",
@@ -19,9 +16,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Person" "d" ON "m_1"."Key_1" = "d"."FirstName"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

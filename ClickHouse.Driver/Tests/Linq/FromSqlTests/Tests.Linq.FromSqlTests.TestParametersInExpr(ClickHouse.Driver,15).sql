@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	s.value,
@@ -14,7 +13,6 @@ WHERE
 ORDER BY
 	s.id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

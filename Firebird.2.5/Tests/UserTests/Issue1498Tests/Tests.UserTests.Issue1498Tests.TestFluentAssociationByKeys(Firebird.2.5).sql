@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Message" "d" ON "m_1"."Id" = "d"."TopicId"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -51,5 +46,3 @@ FROM
 WHERE
 	"x"."Id" = 6
 
-BeforeExecute
-DisposeTransaction

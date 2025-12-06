@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @VBLocal_id Int -- Int32
 SET     @VBLocal_id = 1
 

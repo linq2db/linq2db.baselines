@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	[CTE_1] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
 	IIF(LEN([p].[FirstName] + N'.') = 1, 1, 0)

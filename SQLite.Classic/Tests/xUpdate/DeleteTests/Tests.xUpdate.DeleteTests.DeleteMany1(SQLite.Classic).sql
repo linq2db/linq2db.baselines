@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -38,7 +35,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM
@@ -55,7 +51,6 @@ WHERE
 			[Child].[ChildID] = [a_Children].[ChildID]
 	)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM
@@ -63,7 +58,6 @@ DELETE FROM
 WHERE
 	[Child].[ParentID] >= 1000
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM

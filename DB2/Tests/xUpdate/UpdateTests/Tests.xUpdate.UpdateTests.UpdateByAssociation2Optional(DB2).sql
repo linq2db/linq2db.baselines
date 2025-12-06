@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 3
 
@@ -15,11 +14,9 @@ WHERE
 			"AssociatedTable" "p"
 				LEFT JOIN "MainTable" "a_MainOptional" ON "p"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"p"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id" AND
-			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
+			"p"."Id" = @id AND "MainTable"."Id" = "a_MainOptional"."Id"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

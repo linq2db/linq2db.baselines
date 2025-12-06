@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	ch."ParentID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 WHERE
 	ROWNUM <= 3
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -31,7 +28,6 @@ FROM
 WHERE
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

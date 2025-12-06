@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	s."Id"
@@ -9,7 +8,6 @@ WHERE
 	s."Enum" IN ('THREE', 'FOUR')
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	s."Enum" IN ('THREE', NULL)
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	s."Enum" IN ('THREE', 'TWO')
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	s."Enum" NOT IN (NULL, 'TWO')
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

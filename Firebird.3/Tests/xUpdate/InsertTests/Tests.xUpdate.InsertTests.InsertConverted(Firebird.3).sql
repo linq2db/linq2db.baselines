@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r".ID >= 1000
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	@tt
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -34,7 +31,6 @@ WHERE
 	"t".ID = 1001
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM

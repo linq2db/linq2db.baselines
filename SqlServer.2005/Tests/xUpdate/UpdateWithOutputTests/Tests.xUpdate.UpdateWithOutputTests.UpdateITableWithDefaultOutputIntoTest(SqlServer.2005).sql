@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 UPDATE
 	[t]
@@ -21,7 +20,6 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[DestinationTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

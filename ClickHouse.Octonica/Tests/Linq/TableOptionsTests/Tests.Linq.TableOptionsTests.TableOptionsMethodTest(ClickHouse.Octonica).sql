@@ -1,19 +1,19 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE TestTable
 (
 	Id    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
+	PRIMARY KEY (Id)
+)
+ENGINE = MergeTree()
+ORDER BY Id
+
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -30,7 +30,6 @@ FROM
 WHERE
 	t1.Id = t2.Id
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestTable

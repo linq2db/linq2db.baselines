@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
@@ -13,7 +11,6 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
-BeforeExecute
 -- SqlServer.2019
 
 INSERT INTO [CreateIfNotExistsTable]
@@ -27,7 +24,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	[CreateIfNotExistsTable] [t1]
 
-BeforeExecute
 -- SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
@@ -46,12 +41,10 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
-BeforeExecute
 -- SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]

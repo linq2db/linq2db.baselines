@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -20,8 +19,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -30,8 +28,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -48,8 +45,7 @@ WHERE
 	"ConcurrencyFiltered"."Id" = 2 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -58,8 +54,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Value Text(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
@@ -76,8 +71,7 @@ WHERE
 	"ConcurrencyFiltered"."Id" = 1 AND "ConcurrencyFiltered"."Id" = :Id AND
 	"ConcurrencyFiltered"."Stamp" = :Stamp
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -86,8 +80,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -98,8 +91,7 @@ DELETE FROM
 WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -108,8 +100,7 @@ SELECT
 FROM
 	"ConcurrencyFiltered" t1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -120,8 +111,7 @@ DELETE FROM
 WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

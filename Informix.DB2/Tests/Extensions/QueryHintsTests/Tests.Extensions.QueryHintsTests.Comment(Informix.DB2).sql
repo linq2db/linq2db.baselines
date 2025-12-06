@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	Parent p
 ---
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

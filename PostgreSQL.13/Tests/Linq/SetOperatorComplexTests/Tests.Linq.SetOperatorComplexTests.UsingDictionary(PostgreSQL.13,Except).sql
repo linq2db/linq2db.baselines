@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	'Discriminator'::text,
@@ -25,10 +24,7 @@ FROM
 WHERE
 	"a_Book_1"."Discriminator" = 'Novel'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."BookId",
@@ -53,8 +49,7 @@ FROM
 		INNER JOIN "BookAuthor" d_1 ON d_1."FkBookId" = m_1."BookId"
 		LEFT JOIN "Author" "a_Author" ON d_1."FkAuthorId" = "a_Author"."AuthorId"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."AuthorId",
@@ -68,10 +63,7 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkAuthorId" = m_1."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."AuthorId",

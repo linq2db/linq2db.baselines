@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t1].[TestField] = 0
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

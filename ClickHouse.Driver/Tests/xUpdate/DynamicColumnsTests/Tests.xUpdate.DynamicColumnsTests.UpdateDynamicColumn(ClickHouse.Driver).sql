@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	c_1.LastName = 'Limonadovy'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -34,7 +31,6 @@ UPDATE
 WHERE
 	LastName = 'Limonadovy'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	MAX([p].[PersonID])
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK [Issue4460Table](Id, Code, Name, Surname)
+﻿INSERT BULK [Issue4460Table](Id, Code, Name, Surname)
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

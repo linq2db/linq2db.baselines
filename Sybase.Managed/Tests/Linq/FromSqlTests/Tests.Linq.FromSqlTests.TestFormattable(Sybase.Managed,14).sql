@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 5
 DECLARE @p_1 Integer -- Int32
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	[c_1].[id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID >= 101 AND ID < 104
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -20,7 +18,6 @@ VALUES
 	'11'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -34,7 +31,6 @@ VALUES
 	'22'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
@@ -48,7 +44,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -61,7 +56,6 @@ WHERE
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -75,7 +69,6 @@ WHERE
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

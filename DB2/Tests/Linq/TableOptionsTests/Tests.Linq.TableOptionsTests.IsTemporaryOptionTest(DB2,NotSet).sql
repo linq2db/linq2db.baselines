@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table1"
 (
@@ -8,7 +7,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table1"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."temp_table1"
@@ -19,7 +17,6 @@ INSERT INTO SESSION."temp_table1"
 VALUES
 (1,2)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table2"
@@ -29,7 +26,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table2"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."temp_table2"
@@ -43,7 +39,6 @@ SELECT
 FROM
 	SESSION."temp_table1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -52,7 +47,6 @@ SELECT
 FROM
 	SESSION."temp_table1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -61,7 +55,6 @@ SELECT
 FROM
 	SESSION."temp_table2" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."temp_table1"
@@ -72,7 +65,6 @@ INSERT INTO SESSION."temp_table1"
 VALUES
 (2,3)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
@@ -90,20 +82,16 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 INSERT BULK SESSION."temp_table1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 TRUNCATE TABLE SESSION."temp_table1" IMMEDIATE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 TRUNCATE TABLE SESSION."temp_table2" IMMEDIATE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -111,7 +99,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE SESSION."temp_table2"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

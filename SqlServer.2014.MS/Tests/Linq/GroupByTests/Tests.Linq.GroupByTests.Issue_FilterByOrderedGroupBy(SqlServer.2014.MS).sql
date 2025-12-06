@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t].[ParentID],
@@ -23,7 +22,6 @@ WHERE
 			) [t1]
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

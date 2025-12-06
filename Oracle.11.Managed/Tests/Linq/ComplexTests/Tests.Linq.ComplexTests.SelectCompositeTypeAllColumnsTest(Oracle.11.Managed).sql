@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."user_name",
 	t1."city",
 	t1."street",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[One]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Zero] IS DISTINCT FROM [r].[Zero]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Null] IS DISTINCT FROM [r].[Null]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[Zero]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[Null]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	[r].[Zero] IS DISTINCT FROM [r].[Null]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[One]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	[r].[Zero] IS NOT DISTINCT FROM [r].[Zero]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	[r].[Null] IS NOT DISTINCT FROM [r].[Null]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[Zero]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[Null]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	arrayStringConcat(groupArray(t.Value1), ' -> ')
+	arrayStringConcat(groupArray(toString(t1.Value1)), ' -> ')
 FROM
-	SampleClass t
+	SampleClass t1
 

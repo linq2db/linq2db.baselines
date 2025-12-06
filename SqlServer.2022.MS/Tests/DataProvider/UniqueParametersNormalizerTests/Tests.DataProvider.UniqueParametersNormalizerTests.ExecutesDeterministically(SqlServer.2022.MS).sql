@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'test%'
 DECLARE @search_1 NVarChar(4000) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022.MS SqlServer.2022
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'test%'
 DECLARE @search_1 NVarChar(4000) -- String

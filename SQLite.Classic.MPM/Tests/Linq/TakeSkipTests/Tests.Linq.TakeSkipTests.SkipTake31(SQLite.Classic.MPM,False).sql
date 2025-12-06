@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 5
 DECLARE @skip  -- Int32
@@ -14,7 +13,6 @@ ORDER BY
 	[t1].[ChildID] DESC
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 5

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`ParentID`,
@@ -19,10 +16,7 @@ FROM
 	) `m_1`
 		INNER JOIN `GrandChild` `d` ON (`m_1`.`ParentID` = `d`.`ParentID` OR `m_1`.`ParentID` IS NULL AND `d`.`ParentID` IS NULL) AND (`m_1`.`ChildID` = `d`.`ChildID` OR `m_1`.`ChildID` IS NULL AND `d`.`ChildID` IS NULL)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ParentID`,

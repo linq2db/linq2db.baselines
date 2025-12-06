@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 
@@ -14,7 +13,6 @@ VALUES
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[User] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @userId Integer -- Int32
 SET     @userId = 5
@@ -34,7 +31,6 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

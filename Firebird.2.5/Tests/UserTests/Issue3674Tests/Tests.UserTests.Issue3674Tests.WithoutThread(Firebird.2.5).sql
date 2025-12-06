@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 1
+	"p"."Id",
 	"p"."Code",
 	"p"."DIM_Company",
 	"p"."DIM_Branch",

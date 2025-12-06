@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -25,7 +22,6 @@ USING (
 ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND "Source"."Person_FirstName" = 'first 4' AND "Source"."Person_FirstName_1" = 'first 4' THEN DELETE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -36,5 +32,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

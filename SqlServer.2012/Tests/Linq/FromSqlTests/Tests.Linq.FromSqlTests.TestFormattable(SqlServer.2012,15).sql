@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @p Int -- Int32
 SET     @p = 5
 DECLARE @p_1 Int -- Int32
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	[c_1].[id]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @startId Int -- Int32
 SET     @startId = 5

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [TestTable]
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 CREATE TABLE [TestTable]
 (
@@ -16,8 +14,7 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -27,8 +24,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [TestTable]
 

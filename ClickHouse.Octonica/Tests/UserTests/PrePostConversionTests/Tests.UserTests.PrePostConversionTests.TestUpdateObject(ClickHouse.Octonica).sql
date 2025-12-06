@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ValuesTable
 (
@@ -14,7 +13,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 	ValuesTable t1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -36,7 +33,6 @@ UPDATE
 WHERE
 	Id = toInt64(1)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

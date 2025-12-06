@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"ess"."ID"
@@ -15,7 +14,6 @@ WHERE
 			"ess"."ID" = "y"."ID" AND "y"."IS_ACTIVE" = 1
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

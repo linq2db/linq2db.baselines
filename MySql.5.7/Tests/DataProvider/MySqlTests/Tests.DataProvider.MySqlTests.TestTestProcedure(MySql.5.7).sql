@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @param3 Int32
 SET     @param3 = 123
 DECLARE @param2 Int32
@@ -9,7 +8,6 @@ SET     @param1 = NULL
 
 `TestProcedure`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

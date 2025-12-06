@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Value VarWChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
@@ -47,7 +44,6 @@ SET
 WHERE
 	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -57,8 +53,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Value VarWChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
@@ -74,7 +69,6 @@ SET
 WHERE
 	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -84,8 +78,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -96,7 +89,6 @@ DELETE FROM
 WHERE
 	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -106,8 +98,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
@@ -118,7 +109,6 @@ DELETE FROM
 WHERE
 	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

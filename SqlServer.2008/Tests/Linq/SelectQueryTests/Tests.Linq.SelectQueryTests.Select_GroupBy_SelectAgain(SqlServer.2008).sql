@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -9,19 +8,19 @@ SELECT
 	COUNT(*) OVER(),
 	[x].[Key_1],
 	[x].[Count_1],
-	[x].[MAX_1]
+	[x].[HighestFirstName]
 FROM
 	(
 		SELECT
 			[t1].[Key_1],
 			[t1].[Count_1],
-			[t1].[MAX_1]
+			[t1].[HighestFirstName]
 		FROM
 			(
 				SELECT
 					[summary].[LastName] as [Key_1],
 					COUNT(*) as [Count_1],
-					MAX([summary].[FirstName]) as [MAX_1],
+					MAX([summary].[FirstName]) as [HighestFirstName],
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[Person] [summary]

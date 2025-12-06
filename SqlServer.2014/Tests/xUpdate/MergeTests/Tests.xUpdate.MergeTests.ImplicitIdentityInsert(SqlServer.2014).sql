@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 MERGE INTO [Person] [Target]
@@ -48,7 +44,6 @@ VALUES
 )
 ;
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -62,5 +57,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

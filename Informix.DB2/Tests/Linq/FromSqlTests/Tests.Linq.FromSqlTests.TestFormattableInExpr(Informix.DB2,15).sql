@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @startId Integer(4) -- Int32
 SET     @startId = 5
 DECLARE @endId Integer(4) -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	s.id
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @startId Integer(4) -- Int32
 SET     @startId = 5

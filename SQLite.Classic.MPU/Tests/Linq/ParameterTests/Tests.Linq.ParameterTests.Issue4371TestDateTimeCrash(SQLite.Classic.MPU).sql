@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ColumnDT VarChar(23) -- AnsiString
 SET     @ColumnDT = '0160-05-06 18:13:59.154'
 DECLARE @ColumnDTO VarChar -- AnsiString
@@ -20,7 +19,6 @@ VALUES
 	@ColumnTS
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @dt VarChar(23) -- AnsiString
 SET     @dt = '0160-05-06 18:13:59.154'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @currentDate Date -- DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
 DECLARE @currentDate_1 Date -- DateTime

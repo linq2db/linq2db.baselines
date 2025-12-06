@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 WITH CTE1_ ("ParentID")
 AS
@@ -29,7 +28,6 @@ FROM
 	CTE1_ "p"
 		INNER JOIN LAST0 "c4_1" ON "c4_1"."ParentID" = "p"."ParentID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 
@@ -27,5 +26,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 ORDER BY
-	[c_1].[ParentID] DESC
+	[c_1].[ParentID] DESC,
+	[c_1].[ChildID]
 

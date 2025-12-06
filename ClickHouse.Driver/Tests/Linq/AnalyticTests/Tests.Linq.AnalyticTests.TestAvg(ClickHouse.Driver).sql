@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	avg(c_1.ChildID),
+	AVG(c_1.ChildID),
 	AVG(c_1.ChildID),
 	AVG(ALL c_1.ChildID),
 	AVG(DISTINCT c_1.ChildID)
@@ -12,7 +11,6 @@ FROM
 GROUP BY
 	g_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

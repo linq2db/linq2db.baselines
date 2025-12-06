@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "TableToInsert"
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	"t"."Id" IS NULL
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "TableToInsert"

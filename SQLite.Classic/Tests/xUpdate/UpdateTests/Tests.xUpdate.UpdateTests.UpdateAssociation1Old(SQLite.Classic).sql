@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [Child]
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 UPDATE

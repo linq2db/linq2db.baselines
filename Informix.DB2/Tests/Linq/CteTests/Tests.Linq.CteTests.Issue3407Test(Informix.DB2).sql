@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	r.ID = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 WITH CTE_1 (c1)

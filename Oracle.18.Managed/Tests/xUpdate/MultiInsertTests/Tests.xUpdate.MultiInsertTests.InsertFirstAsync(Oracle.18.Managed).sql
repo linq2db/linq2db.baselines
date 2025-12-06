@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT FIRST
 WHEN N < 40 THEN
@@ -40,16 +39,14 @@ SELECT
 	1000 as ID
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)

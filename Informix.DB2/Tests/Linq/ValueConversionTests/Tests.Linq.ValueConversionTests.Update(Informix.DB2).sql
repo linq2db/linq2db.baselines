@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value2 VarChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- String
@@ -17,7 +16,6 @@ SET
 WHERE
 	e.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -36,7 +34,6 @@ FROM
 WHERE
 	e.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Value1 VarChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -74,7 +71,6 @@ SET
 WHERE
 	t1.Id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -93,7 +89,6 @@ FROM
 WHERE
 	e.Id = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Value1 VarChar -- String
 SET     @Value1 = NULL
@@ -131,7 +126,6 @@ SET
 WHERE
 	t1.Id = @Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1

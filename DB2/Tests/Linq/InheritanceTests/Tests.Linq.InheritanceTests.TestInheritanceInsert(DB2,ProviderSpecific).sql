@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "InheritanceFilter"
+﻿INSERT BULK "InheritanceFilter"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

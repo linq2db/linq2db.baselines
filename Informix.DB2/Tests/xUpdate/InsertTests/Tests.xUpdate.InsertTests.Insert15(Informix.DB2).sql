@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	Person
 WHERE
 	Person.FirstName LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

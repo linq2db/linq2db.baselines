@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -9,27 +6,19 @@ SELECT
 	d."UserId",
 	d."Score"
 FROM
-	(
-		SELECT DISTINCT
-			t1."Id"
-		FROM
-			"Issue4458Item" t1
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					"Review" r
-				WHERE
-					r."ItemId" = t1."Id" AND r."Score" > 95
-			)
-	) m_1
+	"Issue4458Item" m_1
 		INNER JOIN "Review" d ON d."ItemId" = m_1."Id"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Review" r
+		WHERE
+			r."ItemId" = m_1."Id" AND r."Score" > 95
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Id",

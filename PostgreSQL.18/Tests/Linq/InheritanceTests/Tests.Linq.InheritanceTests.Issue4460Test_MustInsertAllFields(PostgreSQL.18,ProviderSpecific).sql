@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "Issue4460Table"(Id, Code, Name, Surname)
+﻿INSERT BULK "Issue4460Table"(Id, Code, Name, Surname)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

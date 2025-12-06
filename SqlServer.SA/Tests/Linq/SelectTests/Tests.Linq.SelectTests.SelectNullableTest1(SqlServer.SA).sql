@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -48,7 +47,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (1)
@@ -67,7 +65,6 @@ FROM
 WHERE
 	[t1].[ID] = 1000
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DELETE [t1]

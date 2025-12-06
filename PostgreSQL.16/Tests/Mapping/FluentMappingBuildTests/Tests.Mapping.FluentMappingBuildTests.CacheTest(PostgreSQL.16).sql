@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -42,22 +41,21 @@ FROM
 WHERE
 	t."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -79,7 +77,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -91,22 +88,21 @@ FROM
 WHERE
 	t."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -128,7 +124,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -140,22 +135,21 @@ FROM
 WHERE
 	t."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -177,7 +171,6 @@ VALUES
 	:LastName
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -189,7 +182,6 @@ FROM
 WHERE
 	t."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"

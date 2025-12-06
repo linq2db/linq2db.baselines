@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿BeginTransactionAsync
+-- PostgreSQL.18 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -18,9 +16,7 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 DELETE FROM

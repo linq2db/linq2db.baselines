@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer(4) -- Int32
@@ -47,7 +44,6 @@ SET
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -57,8 +53,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer(4) -- Int32
@@ -74,7 +69,6 @@ SET
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -84,8 +78,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer(4) -- Int32
@@ -101,7 +94,6 @@ SET
 WHERE
 	obj.Id = @Id AND obj.Stamp = @Stamp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -111,8 +103,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -123,7 +114,6 @@ DELETE FROM
 WHERE
 	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -133,8 +123,7 @@ SELECT
 FROM
 	ConcurrencyAutoIncrement t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -145,7 +134,6 @@ DELETE FROM
 WHERE
 	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

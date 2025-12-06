@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[m_1].[ArrayString],
@@ -22,23 +19,20 @@ FROM
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[r].[Id],
-	[r].[ArrayString]
+	[a].[Id],
+	[a].[ArrayString]
 FROM
-	[Issue3807Table] [r]
+	[Issue3807Table] [a]
 WHERE
 	N'two' IN (
 		SELECT
-			[r_1].[value]
+			[r].[value]
 		FROM
-			[STRING_SPLIT]([r].[ArrayString], N',') [r_1]
+			[STRING_SPLIT]([a].[ArrayString], N',') [r]
 	)
 ORDER BY
-	[r].[Id]
+	[a].[Id]
 

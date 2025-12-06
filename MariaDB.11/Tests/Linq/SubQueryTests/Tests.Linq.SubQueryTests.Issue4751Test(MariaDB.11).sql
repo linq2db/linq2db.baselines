@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String
@@ -59,8 +58,7 @@ WHERE
 	LOCATE(@carNo, `x`.`CarNo`) > 0 AND LOCATE(@carBrand, `x`.`CarBrand`) > 0
 LIMIT @skip, @take
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String

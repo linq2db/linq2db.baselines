@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT DISTINCT
 	Coalesce(p.Value1, p.ParentID + 1),
@@ -7,7 +6,6 @@ SELECT DISTINCT
 FROM
 	Parent p
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param_1 Decimal(2, 0)

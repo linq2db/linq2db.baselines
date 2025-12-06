@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.ID
+	toString(toUInt8(p.ID))
 FROM
 	LinqDataTypes p
 WHERE

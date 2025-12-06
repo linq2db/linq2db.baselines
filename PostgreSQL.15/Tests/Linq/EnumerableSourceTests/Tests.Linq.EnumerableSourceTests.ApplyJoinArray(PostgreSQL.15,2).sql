@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @doe Text(3) -- String
 SET     @doe = 'Doe'
 
@@ -11,7 +10,6 @@ FROM
 			(p."FirstName"), (p."LastName"), ('John'), (:doe)
 		) n(item) ON 1=1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @doe Text(4) -- String
 SET     @doe = 'Doe1'

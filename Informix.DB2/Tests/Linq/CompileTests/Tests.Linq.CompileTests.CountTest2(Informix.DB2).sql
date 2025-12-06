@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	c_1.ParentID = @p
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = -1

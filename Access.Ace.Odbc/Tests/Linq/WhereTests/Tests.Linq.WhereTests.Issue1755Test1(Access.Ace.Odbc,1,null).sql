@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

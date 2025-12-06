@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "BooleanMapping" ("Id", "BoolProp", "NullableBoolProp") VALUES (1,1,'Y')
@@ -7,7 +6,6 @@ INSERT ALL
 	INTO "BooleanMapping" ("Id", "BoolProp", "NullableBoolProp") VALUES (3,1,NULL)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

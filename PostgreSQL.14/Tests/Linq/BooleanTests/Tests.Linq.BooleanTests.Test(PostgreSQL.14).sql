@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @True Boolean
 SET     @True = True
 
@@ -18,8 +17,7 @@ FROM
 WHERE
 	r."Boolean" = :True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -34,8 +32,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @False Boolean
 SET     @False = False
 
@@ -54,8 +51,7 @@ FROM
 WHERE
 	r."Boolean" = :False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -70,8 +66,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -90,8 +85,7 @@ FROM
 WHERE
 	r."Boolean" = :TrueN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -106,8 +100,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -126,8 +119,7 @@ FROM
 WHERE
 	r."Boolean" = :FalseN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -142,8 +134,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -160,8 +151,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -176,8 +166,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @True Boolean
 SET     @True = True
 
@@ -196,8 +185,7 @@ FROM
 WHERE
 	r."BooleanN" = :True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -212,8 +200,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @False Boolean
 SET     @False = False
 
@@ -232,8 +219,7 @@ FROM
 WHERE
 	r."BooleanN" = :False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -248,8 +234,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -268,8 +253,7 @@ FROM
 WHERE
 	r."BooleanN" = :TrueN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -284,8 +268,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -304,8 +287,7 @@ FROM
 WHERE
 	r."BooleanN" = :FalseN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -320,8 +302,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -338,8 +319,7 @@ FROM
 WHERE
 	r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -354,8 +334,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @True Boolean
 SET     @True = True
 
@@ -374,8 +353,7 @@ FROM
 WHERE
 	r."Boolean" <> :True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -390,8 +368,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @False Boolean
 SET     @False = False
 
@@ -410,8 +387,7 @@ FROM
 WHERE
 	r."Boolean" <> :False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -426,8 +402,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -446,8 +421,7 @@ FROM
 WHERE
 	r."Boolean" <> :TrueN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -462,8 +436,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -482,8 +455,7 @@ FROM
 WHERE
 	r."Boolean" <> :FalseN
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -498,8 +470,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -514,8 +485,7 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -530,8 +500,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @True Boolean
 SET     @True = True
 
@@ -550,8 +519,7 @@ FROM
 WHERE
 	r."BooleanN" <> :True OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -566,8 +534,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @False Boolean
 SET     @False = False
 
@@ -586,8 +553,7 @@ FROM
 WHERE
 	r."BooleanN" <> :False OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -602,8 +568,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @TrueN Boolean
 SET     @TrueN = True
 
@@ -622,8 +587,7 @@ FROM
 WHERE
 	r."BooleanN" <> :TrueN OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -638,8 +602,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @FalseN Boolean
 SET     @FalseN = False
 
@@ -658,8 +621,7 @@ FROM
 WHERE
 	r."BooleanN" <> :FalseN OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -674,8 +636,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -692,8 +653,7 @@ FROM
 WHERE
 	r."BooleanN" IS NOT NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -708,198 +668,61 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	g_1."Id",
-	COUNT(CASE
-		WHEN g_1."Boolean" THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <= 0 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."Boolean"),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" = 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" = 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Double" = 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <> 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Double" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" > 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" > 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Double" > 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" < 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" < 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Double" < 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <= 0)
 FROM
 	"BooleanTable" g_1
 GROUP BY
 	g_1."Id"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -914,8 +737,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1587,8 +1409,7 @@ SELECT
 FROM
 	"BooleanTable" r_1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1603,8 +1424,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1621,8 +1441,7 @@ FROM
 WHERE
 	r."Boolean" = True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1637,8 +1456,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1655,8 +1473,7 @@ FROM
 WHERE
 	r."Boolean" = False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1671,8 +1488,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1689,8 +1505,7 @@ FROM
 WHERE
 	r."Boolean" = True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1705,8 +1520,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1723,8 +1537,7 @@ FROM
 WHERE
 	r."Boolean" = False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1739,8 +1552,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1757,8 +1569,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1773,8 +1584,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1791,8 +1601,7 @@ FROM
 WHERE
 	r."BooleanN" = True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1807,8 +1616,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1825,8 +1633,7 @@ FROM
 WHERE
 	r."BooleanN" = False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1841,8 +1648,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1859,8 +1665,7 @@ FROM
 WHERE
 	r."BooleanN" = True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1875,8 +1680,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1893,8 +1697,7 @@ FROM
 WHERE
 	r."BooleanN" = False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1909,8 +1712,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1927,8 +1729,7 @@ FROM
 WHERE
 	r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1943,8 +1744,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1961,8 +1761,7 @@ FROM
 WHERE
 	r."Boolean" <> True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1977,8 +1776,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -1995,8 +1793,7 @@ FROM
 WHERE
 	r."Boolean" <> False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2011,8 +1808,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2029,8 +1825,7 @@ FROM
 WHERE
 	r."Boolean" <> True
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2045,8 +1840,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2063,8 +1857,7 @@ FROM
 WHERE
 	r."Boolean" <> False
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2079,8 +1872,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2095,8 +1887,7 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2111,76 +1902,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	r."Id",
-	r."Boolean",
-	r."BooleanN",
-	r."Int32",
-	r."Int32N",
-	r."Decimal",
-	r."DecimalN",
-	r."Double",
-	r."DoubleN"
-FROM
-	"BooleanTable" r
-WHERE
-	r."BooleanN" <> True OR r."BooleanN" IS NULL
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Boolean",
-	t1."BooleanN",
-	t1."Int32",
-	t1."Int32N",
-	t1."Decimal",
-	t1."DecimalN",
-	t1."Double",
-	t1."DoubleN"
-FROM
-	"BooleanTable" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	r."Id",
-	r."Boolean",
-	r."BooleanN",
-	r."Int32",
-	r."Int32N",
-	r."Decimal",
-	r."DecimalN",
-	r."Double",
-	r."DoubleN"
-FROM
-	"BooleanTable" r
-WHERE
-	r."BooleanN" <> False OR r."BooleanN" IS NULL
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Boolean",
-	t1."BooleanN",
-	t1."Int32",
-	t1."Int32N",
-	t1."Decimal",
-	t1."DecimalN",
-	t1."Double",
-	t1."DoubleN"
-FROM
-	"BooleanTable" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2197,8 +1919,7 @@ FROM
 WHERE
 	r."BooleanN" <> True OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2213,8 +1934,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2231,8 +1951,7 @@ FROM
 WHERE
 	r."BooleanN" <> False OR r."BooleanN" IS NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2247,8 +1966,71 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	r."BooleanN" <> True OR r."BooleanN" IS NULL
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	r."Id",
+	r."Boolean",
+	r."BooleanN",
+	r."Int32",
+	r."Int32N",
+	r."Decimal",
+	r."DecimalN",
+	r."Double",
+	r."DoubleN"
+FROM
+	"BooleanTable" r
+WHERE
+	r."BooleanN" <> False OR r."BooleanN" IS NULL
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Boolean",
+	t1."BooleanN",
+	t1."Int32",
+	t1."Int32N",
+	t1."Decimal",
+	t1."DecimalN",
+	t1."Double",
+	t1."DoubleN"
+FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -2265,8 +2047,7 @@ FROM
 WHERE
 	r."BooleanN" IS NOT NULL
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2281,198 +2062,61 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	g_1."Id",
-	COUNT(CASE
-		WHEN g_1."Boolean" THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <= 0 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."Boolean"),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" = 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" = 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Double" = 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <> 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Double" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" > 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" > 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Double" > 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" < 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" < 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Double" < 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <= 0)
 FROM
 	"BooleanTable" g_1
 GROUP BY
 	g_1."Id"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2487,8 +2131,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -3160,8 +2803,7 @@ SELECT
 FROM
 	"BooleanTable" r_1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

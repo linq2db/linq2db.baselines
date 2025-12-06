@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -33,7 +32,6 @@ WHEN NOT MATCHED THEN
 		:CreatedBy
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -46,7 +44,6 @@ FROM
 WHERE
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
@@ -81,7 +78,6 @@ WHEN NOT MATCHED THEN
 		:CreatedBy
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

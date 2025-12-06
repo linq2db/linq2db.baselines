@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
@@ -33,7 +31,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]

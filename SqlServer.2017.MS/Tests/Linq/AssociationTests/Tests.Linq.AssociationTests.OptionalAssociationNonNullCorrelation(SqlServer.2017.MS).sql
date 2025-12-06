@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[m_1].[ID],
@@ -27,9 +24,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3] OR [m_1].[ID] IS NULL AND [d].[ID3] IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -52,9 +46,6 @@ WHERE
 			[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -72,9 +63,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Table4] [d] ON [m_1].[cond] = [d].[ID3] OR [m_1].[cond] IS NULL AND [d].[ID3] IS NULL
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

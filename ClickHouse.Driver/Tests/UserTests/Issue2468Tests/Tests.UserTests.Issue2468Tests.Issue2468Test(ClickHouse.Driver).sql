@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO InventoryResourceDTO
 (
@@ -16,7 +15,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

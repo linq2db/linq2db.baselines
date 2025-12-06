@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -14,7 +12,6 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
@@ -26,7 +23,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "Issue681Table2"
@@ -37,7 +33,6 @@ CREATE TABLE "Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DROP TABLE SYSTEM."Issue681Table2"@"xe"

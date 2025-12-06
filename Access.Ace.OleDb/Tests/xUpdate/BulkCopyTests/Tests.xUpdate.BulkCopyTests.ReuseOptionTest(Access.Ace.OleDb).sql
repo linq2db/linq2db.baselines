@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
 DECLARE @Value1 Integer -- Int32
@@ -18,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
@@ -36,5 +32,3 @@ VALUES
 	@ChildID
 )
 
-BeforeExecute
-DisposeTransaction

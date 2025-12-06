@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 5
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	CVar(?)
+	5
 

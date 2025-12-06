@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	arg."Id",
@@ -10,7 +9,6 @@ FROM
 			(1,0::Float)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

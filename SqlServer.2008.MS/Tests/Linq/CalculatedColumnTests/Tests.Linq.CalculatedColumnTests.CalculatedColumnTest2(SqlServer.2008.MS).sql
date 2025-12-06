@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[PersonID],
@@ -20,7 +19,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

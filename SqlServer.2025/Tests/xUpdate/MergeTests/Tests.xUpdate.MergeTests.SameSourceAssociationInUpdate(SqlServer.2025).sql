@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 MERGE INTO [Person] [Target]
 USING (
@@ -32,7 +29,6 @@ SET
 	[LastName] = N'last ' + [Source].[Patient_Diagnosis_1]
 ;
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -46,5 +42,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

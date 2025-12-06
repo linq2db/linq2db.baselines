@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ID`,
@@ -14,8 +13,7 @@ FROM
 	`LinqDataTypes` `t1`
 		INNER JOIN `LinqDataTypes` `t2` ON `t1`.`ID` = `t2`.`ID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @param2 Bool -- Boolean
 SET     @param2 = 0
 

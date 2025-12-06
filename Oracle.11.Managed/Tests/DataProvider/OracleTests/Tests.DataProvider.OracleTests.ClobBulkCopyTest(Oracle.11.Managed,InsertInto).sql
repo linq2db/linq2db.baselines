@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 CREATE TABLE "ClobEntity"
 (
@@ -8,7 +7,6 @@ CREATE TABLE "ClobEntity"
 	"NClobValue" NClob     NULL
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
 SET     @:p1 = {1,2}
@@ -21,7 +19,6 @@ SET     @:p3 = {'NClob1111111111111111111111111111111111111111111111111111111111
 
 INSERT INTO "ClobEntity" ("Id", "ClobValue", "NClobValue") VALUES (:p1, :p2, :p3)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -31,7 +28,6 @@ SELECT
 FROM
 	"ClobEntity" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DROP TABLE "ClobEntity"

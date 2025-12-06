@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search NVarChar(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE ?
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search NVarChar(4) -- String

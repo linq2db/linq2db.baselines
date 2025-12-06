@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
@@ -32,7 +29,6 @@ SET
 WHERE
 	"r".ID = 101 AND "r"."IntValue" = 3
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	"r".ID = 101 AND "r"."IntValue" = 4
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102

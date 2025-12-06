@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	current server
@@ -7,7 +6,6 @@ FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 	"LinqDataTypes" "t1"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -24,7 +21,6 @@ BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE TESTDB.DB2INST1."Issue681Table2"
@@ -35,7 +31,6 @@ CREATE TABLE TESTDB.DB2INST1."Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

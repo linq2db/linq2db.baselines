@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	(CAST(COUNT(*) AS Float) * 100) / SUM(COUNT(*)) OVER(),

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[t1].[ParentID] = @ParentID
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -27,7 +25,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -50,7 +46,6 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001

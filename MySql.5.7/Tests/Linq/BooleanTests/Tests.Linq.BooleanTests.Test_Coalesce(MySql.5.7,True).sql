@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`r`.`Id`,
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, 1)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, 0)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -84,7 +79,6 @@ FROM
 WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

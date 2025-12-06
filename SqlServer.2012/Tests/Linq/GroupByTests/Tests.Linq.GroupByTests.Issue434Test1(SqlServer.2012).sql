@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE N'~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'

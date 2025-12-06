@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 WITH "CTE1_" ("ParentID", "ChildID")
 AS
@@ -16,7 +15,6 @@ SELECT
 FROM
 	"CTE1_" t2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

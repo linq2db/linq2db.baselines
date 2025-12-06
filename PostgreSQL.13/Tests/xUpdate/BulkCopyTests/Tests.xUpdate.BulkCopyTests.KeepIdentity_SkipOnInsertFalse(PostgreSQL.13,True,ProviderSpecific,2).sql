@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,11 +13,9 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
 INSERT ASYNC BULK "AllTypes"(ID, intDataType)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -32,8 +29,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

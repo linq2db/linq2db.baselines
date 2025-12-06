@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 UPDATE
 	[MyTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[MyTable].[Id] = 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

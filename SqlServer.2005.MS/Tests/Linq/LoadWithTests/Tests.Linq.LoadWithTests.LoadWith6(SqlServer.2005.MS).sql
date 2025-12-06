@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[m_1].[ParentID],
@@ -19,9 +16,6 @@ FROM
 		LEFT JOIN [Child] [a_Child] ON [d].[ParentID] = [a_Child].[ParentID] AND [d].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

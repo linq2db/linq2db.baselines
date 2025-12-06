@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	min(c_1.ChildID),
+	MIN(c_1.ChildID),
 	MIN(c_1.ChildID),
 	MIN(ALL c_1.ChildID),
 	MIN(DISTINCT c_1.ChildID)
@@ -12,7 +11,6 @@ FROM
 GROUP BY
 	g_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."FirstName",
@@ -10,7 +9,6 @@ SELECT
 FROM
 	"Person" "p"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

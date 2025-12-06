@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DateTime DateTime
@@ -16,7 +15,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@DateTime
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

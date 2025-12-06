@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Issue4460Table`
 (
@@ -11,7 +10,6 @@ INSERT INTO `Issue4460Table`
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

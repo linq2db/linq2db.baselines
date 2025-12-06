@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 WITH RECURSIVE "MY_CTE" ("ChildID", "ParentID", "GrandChildID")
 AS

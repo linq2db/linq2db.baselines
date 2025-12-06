@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @filterValue Integer(4) -- Int32
 SET     @filterValue = 2
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 INSERT INTO [MultipleRowsTable]
 (
@@ -10,7 +9,6 @@ INSERT INTO [MultipleRowsTable]
 SELECT 1,NULL,1 UNION ALL
 SELECT 2,1.5,-2.6
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

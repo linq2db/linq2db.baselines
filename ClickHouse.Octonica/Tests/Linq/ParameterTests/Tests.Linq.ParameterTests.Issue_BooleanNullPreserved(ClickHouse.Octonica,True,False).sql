@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO TestBool
 (
@@ -12,7 +11,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -22,17 +20,14 @@ FROM
 	TestBool t1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	TestBool
 UPDATE
-	Id = 1,
 	Value = NOT Value
 WHERE 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

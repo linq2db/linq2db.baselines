@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Value Int -- Int32
@@ -25,17 +25,17 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [temp_table2]
 (
@@ -48,7 +48,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -57,7 +56,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -66,8 +64,7 @@ SELECT
 FROM
 	[temp_table2] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @Value Int -- Int32
@@ -84,8 +81,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -102,8 +98,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 4
 DECLARE @Value Int -- Int32
@@ -120,22 +115,18 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM [temp_table1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM [temp_table2]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [temp_table2]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [temp_table1]

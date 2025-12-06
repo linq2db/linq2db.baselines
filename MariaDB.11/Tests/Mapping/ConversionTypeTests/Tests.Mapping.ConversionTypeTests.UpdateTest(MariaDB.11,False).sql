@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int32
@@ -12,8 +11,7 @@ SET
 WHERE
 	`t1`.`ID` = @ID
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
 
@@ -24,8 +22,7 @@ SET
 WHERE
 	`t`.`Data` = '***XXX***'
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p VarChar(9) -- String
@@ -38,8 +35,7 @@ SET
 WHERE
 	`t`.`Data` = @p
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,
@@ -49,8 +45,7 @@ FROM
 ORDER BY
 	`r`.`ID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`r`.`ID`,

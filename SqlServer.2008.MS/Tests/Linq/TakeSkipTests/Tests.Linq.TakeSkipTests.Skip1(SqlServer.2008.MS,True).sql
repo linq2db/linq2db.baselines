@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	[t2].[ChildID]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 4

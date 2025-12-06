@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @p
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @p Int -- Int32
 SET     @p = -1

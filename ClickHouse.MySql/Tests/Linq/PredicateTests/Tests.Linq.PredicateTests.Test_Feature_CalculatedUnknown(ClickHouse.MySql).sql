@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(r.One = r.One) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(r.Zero = r.Zero) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(r.Null = r.Null) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(r.One = r.Zero) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	(r.One = r.Null) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	(r.Zero = r.Null) = (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	(r.One = r.One) <> (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	(r.Zero = r.Zero) <> (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	(r.Null = r.Null) <> (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	(r.One = r.Zero) <> (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	(r.One = r.Null) <> (1=null)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

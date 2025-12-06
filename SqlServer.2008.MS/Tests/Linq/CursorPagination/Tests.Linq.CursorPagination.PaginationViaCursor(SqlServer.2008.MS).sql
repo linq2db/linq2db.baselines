@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t].[BookingID],
@@ -8,12 +7,11 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+	[t].[ServiceDate] > CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 12
@@ -35,12 +33,11 @@ FROM
 		FROM
 			[Booking] [e]
 		WHERE
-			[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+			[e].[ServiceDate] > CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
@@ -64,7 +61,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 )
 SELECT
 	[q].[RowNumber],
@@ -84,7 +81,6 @@ WHERE
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
@@ -108,7 +104,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 )
 SELECT
 	[q].[RowNumber],
@@ -128,7 +124,6 @@ WHERE
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
@@ -152,7 +147,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.1231234' AS DATETIME2))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.1231234' AS DATETIME2)
 )
 SELECT
 	[q].[RowNumber],

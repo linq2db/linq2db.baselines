@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @dateTime Timestamp -- DateTime2
 SET     @dateTime = '1992-01-11 01:11:21.100'::timestamp
 
@@ -11,7 +10,6 @@ WHERE
 	t."DateTimeValue" > :dateTime
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @dateTime Timestamp -- DateTime2
 SET     @dateTime = '1993-01-11 01:11:21.100'::timestamp

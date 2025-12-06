@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"a_Parent"."ParentID",
@@ -12,7 +11,6 @@ WHERE
 ORDER BY
 	"m_1"."ChildID" DESC
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

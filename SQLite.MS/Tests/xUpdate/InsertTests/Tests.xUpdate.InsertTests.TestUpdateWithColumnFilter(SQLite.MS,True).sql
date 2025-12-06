@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -41,7 +39,6 @@ WHERE
 	[x].[FirstName] = @FirstName
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -64,7 +61,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -81,7 +77,6 @@ WHERE
 	[x].[FirstName] = @FirstName
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @newName NVarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

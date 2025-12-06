@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "DateTimeOffsetTable"
 (
 	"DateTimeOffsetValue" timestamp with time zone NOT NULL
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @DateTimeOffsetValue TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffsetValue = 03/30/2017 15:32:58.512655 +03:00
@@ -20,7 +18,6 @@ VALUES
 	:DateTimeOffsetValue
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 	"DateTimeOffsetTable" x
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DROP TABLE "DateTimeOffsetTable"

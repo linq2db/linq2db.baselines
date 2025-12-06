@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @nm NVarChar(4000) -- String
 SET     @nm = N'John'
 

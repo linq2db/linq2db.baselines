@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	[t2].[COUNT_1],
+	[t2].[cnt],
 	[t].[PersonID],
 	[t].[FirstName],
 	[t].[LastName],
@@ -23,7 +22,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [cnt]
 			FROM
 				[Doctor] [d_1]
 			WHERE

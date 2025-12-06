@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
@@ -16,7 +15,6 @@ VALUES
 	200
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -29,7 +27,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :id
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001
@@ -42,7 +39,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :id
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1001

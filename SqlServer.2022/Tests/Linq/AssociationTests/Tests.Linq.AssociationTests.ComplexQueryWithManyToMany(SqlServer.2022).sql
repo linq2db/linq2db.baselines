@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 3
 DECLARE @id1 Int -- Int32

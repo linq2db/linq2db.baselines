@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	COUNT(p."PersonID")
@@ -9,7 +8,6 @@ WHERE
 	p."PersonID" IN (1, 2)
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

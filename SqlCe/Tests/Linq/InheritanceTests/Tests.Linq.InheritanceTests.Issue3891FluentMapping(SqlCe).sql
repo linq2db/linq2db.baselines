@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -40,7 +38,6 @@ SELECT TOP (2)
 FROM
 	[Base2] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Type Int -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	[Base2].[Id] = @Id
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

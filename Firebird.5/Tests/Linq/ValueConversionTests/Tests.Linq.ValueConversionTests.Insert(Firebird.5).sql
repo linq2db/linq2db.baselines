@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -52,7 +50,6 @@ WHERE
 	"e"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -86,7 +83,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -106,7 +102,6 @@ WHERE
 	"e"."Id" = 2
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -156,7 +151,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -176,7 +170,6 @@ WHERE
 	"e"."Id" = 3
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

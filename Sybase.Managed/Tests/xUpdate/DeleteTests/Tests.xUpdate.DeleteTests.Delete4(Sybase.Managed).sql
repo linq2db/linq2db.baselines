@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [GrandChild]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[gc].[GrandChildID] IN (1001, 1002)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [GrandChild]
@@ -23,7 +21,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [GrandChild]
@@ -39,7 +36,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [GrandChild]
@@ -59,7 +54,6 @@ FROM
 WHERE
 	[a_Parent].[ParentID] = 1 AND [gc].[GrandChildID] IN (1001, 1002)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

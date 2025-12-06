@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "TestBool"
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -22,16 +20,13 @@ FROM
 	"TestBool" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
 	"TestBool" "t1"
 SET
-	"Id" = 1,
 	"Value" = NOT "t1"."Value"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -41,7 +36,6 @@ FROM
 	"TestBool" "t1"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
@@ -50,7 +44,6 @@ SET
 	"Id" = 1,
 	"Value" = NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

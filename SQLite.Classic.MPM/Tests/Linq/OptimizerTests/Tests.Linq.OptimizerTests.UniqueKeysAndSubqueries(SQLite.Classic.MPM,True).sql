@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[s].[Key1],
@@ -34,7 +33,6 @@ FROM
 		LEFT JOIN [FirstOptimizerData] [f1] ON [f1].[DataKey11] = [s].[DataKey11] AND [f1].[ValueStr] LIKE 'Str%' ESCAPE '~'
 		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[ValueStr] LIKE 'Str%' ESCAPE '~' AND [f2].[DataKey11] = 10
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

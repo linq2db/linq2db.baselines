@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	[Parent] [p]
 ---
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

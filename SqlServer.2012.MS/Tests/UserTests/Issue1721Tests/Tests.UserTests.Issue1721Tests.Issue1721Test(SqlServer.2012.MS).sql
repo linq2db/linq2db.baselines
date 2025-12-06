@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#I1721Model]
 	[TestNonZeroPrecision]    DateTime2(1)   NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#I1721Model]', N'U') IS NOT NULL)

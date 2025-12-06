@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Person"
 (
@@ -14,8 +13,7 @@ VALUES
 	'M'
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -24,8 +22,7 @@ FROM
 WHERE
 	c_1."LastName" = 'Limonadovy'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 UPDATE
 	"Person"
@@ -34,8 +31,7 @@ SET
 WHERE
 	"Person"."LastName" = 'Limonadovy'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 MERGE INTO "InheritanceParent" "t1"
@@ -33,7 +29,6 @@ WHEN NOT MATCHED THEN
 		1
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -41,7 +36,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 MERGE INTO "InheritanceParent" "t1"
@@ -68,7 +62,6 @@ WHEN NOT MATCHED THEN
 		1
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -76,5 +69,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

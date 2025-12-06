@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 5
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	:p
+	5
 

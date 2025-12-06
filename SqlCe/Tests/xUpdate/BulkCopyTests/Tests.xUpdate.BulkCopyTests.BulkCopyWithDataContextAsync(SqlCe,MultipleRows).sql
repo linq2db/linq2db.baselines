@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -7,8 +6,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 1
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 INSERT INTO [SimpleBulkCopyTable]
 (

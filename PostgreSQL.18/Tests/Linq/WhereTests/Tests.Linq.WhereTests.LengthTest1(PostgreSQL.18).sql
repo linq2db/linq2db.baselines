@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	nm."MiddleName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

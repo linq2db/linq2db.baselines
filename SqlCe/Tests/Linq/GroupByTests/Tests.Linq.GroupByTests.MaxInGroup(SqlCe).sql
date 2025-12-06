@@ -1,29 +1,28 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[g_2].[GroupId],
-	[g_2].[MAX_1],
-	[g_2].[MAX_2],
-	[g_2].[MAX_3],
-	[g_2].[MAX_4],
-	[t2].[MAX_1] as [MAX_5],
-	[t4].[MAX_1] as [MAX_6],
-	[t6].[MAX_1] as [MAX_7]
+	[g_2].[Simple_1],
+	[g_2].[Projection],
+	[g_2].[Filter_1],
+	[g_2].[FilterProjection],
+	[t2].[Distinct_1],
+	[t4].[FilterDistinct1],
+	[t6].[FilterDistinct2]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId],
-			MAX([g_1].[DataValue]) as [MAX_1],
-			MAX([g_1].[DataValue]) as [MAX_2],
+			MAX([g_1].[DataValue]) as [Simple_1],
+			MAX([g_1].[DataValue]) as [Projection],
 			MAX(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MAX_3],
+			END) as [Filter_1],
 			MAX(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MAX_4]
+			END) as [FilterProjection]
 		FROM
 			[AggregationData] [g_1]
 		GROUP BY
@@ -31,11 +30,11 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				MAX([t1].[DataValue]) as [MAX_1]
+				MAX([t1].[Distinct_1]) as [Distinct_1]
 			FROM
 				(
 					SELECT DISTINCT
-						[t].[DataValue]
+						[t].[DataValue] as [Distinct_1]
 					FROM
 						[AggregationData] [t]
 					WHERE
@@ -44,11 +43,11 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MAX([t3].[DataValue]) as [MAX_1]
+				MAX([t3].[FilterDistinct1]) as [FilterDistinct1]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_1].[DataValue]
+						[t_1].[DataValue] as [FilterDistinct1]
 					FROM
 						[AggregationData] [t_1]
 					WHERE
@@ -57,11 +56,11 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				MAX([t5].[DataValue]) as [MAX_1]
+				MAX([t5].[FilterDistinct2]) as [FilterDistinct2]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_2].[DataValue]
+						[t_2].[DataValue] as [FilterDistinct2]
 					FROM
 						[AggregationData] [t_2]
 					WHERE
@@ -69,10 +68,10 @@ FROM
 				) [t5]
 		) [t6]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

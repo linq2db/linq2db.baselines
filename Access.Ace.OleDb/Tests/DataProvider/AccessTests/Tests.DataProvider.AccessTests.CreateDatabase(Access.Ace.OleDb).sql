@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [TestDatabase.accdb].[CreateTableTest]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [TestDatabase.accdb].[CreateTableTest]
 	CONSTRAINT [PK_CreateTableTest] PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TestDatabase.accdb].[CreateTableTest]

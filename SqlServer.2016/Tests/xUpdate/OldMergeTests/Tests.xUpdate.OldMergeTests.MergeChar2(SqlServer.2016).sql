@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
@@ -33,5 +30,3 @@ VALUES
 )
 ;
 
-BeforeExecute
-DisposeTransaction

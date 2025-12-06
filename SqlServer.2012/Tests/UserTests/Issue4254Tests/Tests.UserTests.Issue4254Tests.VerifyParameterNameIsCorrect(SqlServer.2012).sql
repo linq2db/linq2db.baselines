@@ -1,22 +1,18 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_item_to_media_item_categories]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_to_media_item_categories]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_item_user_share]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_user_share]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_items]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_items]
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [issue_4254_media_items]
@@ -26,7 +22,6 @@ CREATE TABLE [issue_4254_media_items]
 	CONSTRAINT [PK_issue_4254_media_items] PRIMARY KEY CLUSTERED ([id])
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [issue_4254_media_item_user_share]
@@ -40,7 +35,6 @@ CREATE TABLE [issue_4254_media_item_user_share]
 	CONSTRAINT [PK_issue_4254_media_item_user_share] PRIMARY KEY CLUSTERED ([id])
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
@@ -52,9 +46,6 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 	CONSTRAINT [PK_issue_4254_media_item_to_media_item_categories] PRIMARY KEY CLUSTERED ([id])
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
@@ -62,39 +53,31 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
-	[m_1].[Id],
+	[m_1].[id],
 	[d].[category_id]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[id] as [Id]
+	[issue_4254_media_items] [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
 		FROM
-			[issue_4254_media_items] [x]
+			[issue_4254_media_item_user_share] [y]
 		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y]
-				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
-			) OR
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y_1]
-				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
-			)
-	) [m_1]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[issue_4254_media_item_user_share] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
@@ -133,9 +116,6 @@ WHERE
 			[y_2].[expires_at] > @now
 	)
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2012
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -143,39 +123,31 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 SELECT
-	[m_1].[Id],
+	[m_1].[id],
 	[d].[category_id]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[id] as [Id]
+	[issue_4254_media_items] [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
 		FROM
-			[issue_4254_media_items] [x]
+			[issue_4254_media_item_user_share] [y]
 		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y]
-				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
-			) OR
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y_1]
-				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
-			)
-	) [m_1]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[issue_4254_media_item_user_share] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
@@ -214,19 +186,16 @@ WHERE
 			[y_2].[expires_at] > @now
 	)
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_item_to_media_item_categories]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_to_media_item_categories]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_item_user_share]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_user_share]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[issue_4254_media_items]', N'U') IS NOT NULL)

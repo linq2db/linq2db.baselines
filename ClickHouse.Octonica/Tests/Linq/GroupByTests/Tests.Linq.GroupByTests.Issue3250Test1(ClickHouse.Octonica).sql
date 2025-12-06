@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	concat(toString(COUNT(*)), ' items have not been processed, e.g. #', Coalesce(toString(minOrNull(g_1.PersonID)), ''), '.')

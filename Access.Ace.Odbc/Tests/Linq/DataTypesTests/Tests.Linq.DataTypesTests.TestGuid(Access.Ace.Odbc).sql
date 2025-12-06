@@ -1,4 +1,18 @@
-﻿BeforeExecute
+﻿-- Access.Ace.Odbc AccessODBC
+DECLARE @Column UniqueIdentifier -- Guid
+SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
+DECLARE @ColumnNullable UniqueIdentifier -- Guid
+SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
+
+SELECT
+	[r].[Id],
+	[r].[Column],
+	[r].[ColumnNullable]
+FROM
+	[GuidTable] [r]
+WHERE
+	[r].[Column] = ? AND [r].[ColumnNullable] = ?
+
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
@@ -14,29 +28,11 @@ FROM
 WHERE
 	[r].[Column] = ? AND [r].[ColumnNullable] = ?
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @Column UniqueIdentifier -- Guid
-SET     @Column = '{a948600d-de21-4f74-8ac2-9516b287076e}'
-DECLARE @ColumnNullable UniqueIdentifier -- Guid
-SET     @ColumnNullable = '{bd3973a5-4323-4dd8-9f4f-df9f93e2a627}'
-
-SELECT
-	[r].[Id],
-	[r].[Column],
-	[r].[ColumnNullable]
-FROM
-	[GuidTable] [r]
-WHERE
-	[r].[Column] = ? AND [r].[ColumnNullable] = ?
-
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -58,7 +54,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -80,7 +75,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -92,13 +86,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -120,7 +112,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -142,7 +133,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -154,13 +144,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -182,7 +170,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -204,7 +191,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

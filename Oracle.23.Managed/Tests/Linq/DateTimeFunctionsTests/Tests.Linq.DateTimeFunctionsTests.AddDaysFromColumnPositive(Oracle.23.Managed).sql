@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -40,7 +39,6 @@ VALUES
 	:StringValue
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -50,7 +48,6 @@ FROM
 WHERE
 	t.ID = 5000 AND t."DateTimeValue" + t."SmallIntValue" * INTERVAL '1' DAY > TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM

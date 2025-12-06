@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -23,7 +21,6 @@ WHERE
 RETURNING
 	NEW."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
@@ -12,7 +11,6 @@ VALUES
 	:CharFld
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

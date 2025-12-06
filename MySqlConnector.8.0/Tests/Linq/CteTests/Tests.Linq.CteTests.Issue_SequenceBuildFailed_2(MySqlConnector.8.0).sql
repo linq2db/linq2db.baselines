@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 WITH `CTE_1` (`PersonID`)
 AS
@@ -29,9 +26,6 @@ FROM
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Item1`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 WITH `CTE_1` (`PersonID`)

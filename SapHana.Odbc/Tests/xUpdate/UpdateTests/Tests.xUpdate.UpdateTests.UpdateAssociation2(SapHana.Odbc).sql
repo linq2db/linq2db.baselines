@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Parent"
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Child"
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp]
 (

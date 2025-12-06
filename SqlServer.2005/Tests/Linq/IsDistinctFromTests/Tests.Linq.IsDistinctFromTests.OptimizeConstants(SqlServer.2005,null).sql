@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	COUNT(*)
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

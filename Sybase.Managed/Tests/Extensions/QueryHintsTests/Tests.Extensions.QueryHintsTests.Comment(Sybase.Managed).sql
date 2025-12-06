@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	[Parent] [p]
 ---
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

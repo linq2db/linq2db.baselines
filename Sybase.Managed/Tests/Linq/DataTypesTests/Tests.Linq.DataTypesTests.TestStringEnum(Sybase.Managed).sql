@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Column UniVarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable UniVarChar(8) -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = 'value=2' AND [r].[ColumnNullable] = 'value=33'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [StringEnumTable]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [StringEnumTable]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [StringEnumTable]
@@ -108,7 +100,6 @@ INSERT INTO [StringEnumTable]
 SELECT 1,'val=1',NULL UNION ALL
 SELECT 2,'value=2','value=33'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -120,14 +111,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [StringEnumTable]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [StringEnumTable]
@@ -139,7 +128,6 @@ INSERT INTO [StringEnumTable]
 SELECT 1,'val=1',NULL UNION ALL
 SELECT 2,'value=2','value=33'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

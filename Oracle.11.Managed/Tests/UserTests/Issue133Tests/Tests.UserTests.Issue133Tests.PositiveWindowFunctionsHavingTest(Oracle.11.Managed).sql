@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	(CAST(COUNT(*) AS Float) * 100D) / SUM(COUNT(*)) OVER(),

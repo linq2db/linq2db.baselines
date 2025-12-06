@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -25,7 +24,6 @@ ON CONFLICT ([id]) DO UPDATE SET
 	[name] = @Name,
 	[updated_by] = @UpdatedBy
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -37,7 +35,6 @@ FROM
 	[test_insert_or_replace] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -64,7 +61,6 @@ ON CONFLICT ([id]) DO UPDATE SET
 	[name] = @Name,
 	[updated_by] = @UpdatedBy
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

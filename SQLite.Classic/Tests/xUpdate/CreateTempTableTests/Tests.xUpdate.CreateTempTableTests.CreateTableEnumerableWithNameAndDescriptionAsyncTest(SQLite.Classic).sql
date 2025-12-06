@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TempTable]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp.[TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Name])
 )
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 INSERT INTO temp.[TempTable]
 (
@@ -21,8 +20,7 @@ INSERT INTO temp.[TempTable]
 VALUES
 ('John')
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 SELECT
 	[t].[Name]
@@ -30,8 +28,7 @@ FROM
 	[Person] [p]
 		INNER JOIN temp.[TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TempTable]
 

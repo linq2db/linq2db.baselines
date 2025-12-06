@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent
 (
@@ -12,8 +11,7 @@ VALUES
 	1001
 )
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -22,8 +20,7 @@ FROM
 WHERE
 	p.ParentID = 1001
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Parent
@@ -32,8 +29,7 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)

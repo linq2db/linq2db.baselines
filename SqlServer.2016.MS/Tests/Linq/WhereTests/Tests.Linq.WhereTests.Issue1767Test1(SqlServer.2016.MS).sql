@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] IS NOT NULL AND [p].[Value1] <> 1
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TestIdTrun"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE "TestIdTrun"
@@ -14,7 +12,6 @@ CREATE TABLE "TestIdTrun"
 	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestIdTrun"
@@ -26,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestIdTrun"
@@ -38,7 +34,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
@@ -52,12 +47,10 @@ ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 TRUNCATE TABLE "TestIdTrun" RESTART IDENTITY
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestIdTrun"
@@ -69,7 +62,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TestIdTrun"
@@ -81,7 +73,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
@@ -95,7 +86,6 @@ ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE "TestIdTrun"

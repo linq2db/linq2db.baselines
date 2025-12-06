@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Value2
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	@NullableBool
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -83,7 +79,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -99,7 +94,6 @@ WHERE
 	"x"."Discriminator" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -115,7 +109,6 @@ WHERE
 	"x"."Discriminator" = 2
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -131,7 +124,6 @@ WHERE
 	"x"."Discriminator" = 3
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -147,7 +139,6 @@ WHERE
 	"x"."Value1" = 'Str1'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -163,7 +154,6 @@ WHERE
 	"x"."Value2" = 'Str2'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

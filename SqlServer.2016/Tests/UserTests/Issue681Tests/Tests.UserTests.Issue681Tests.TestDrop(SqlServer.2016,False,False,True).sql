@@ -1,17 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
-BeforeExecute
 -- SqlServer.2016
 
 CREATE TABLE [Issue681Table2]
@@ -22,7 +19,6 @@ CREATE TABLE [Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE [dbo].[Issue681Table2]

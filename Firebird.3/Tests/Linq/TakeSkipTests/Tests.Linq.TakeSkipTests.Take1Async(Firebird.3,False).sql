@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"ch"."ParentID",
@@ -8,7 +7,6 @@ FROM
 	"Child" "ch"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -18,8 +16,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT 3 ROWS ONLY
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"ch"."ParentID",
@@ -28,8 +25,7 @@ FROM
 	"Child" "ch"
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	"ch"."ParentID",

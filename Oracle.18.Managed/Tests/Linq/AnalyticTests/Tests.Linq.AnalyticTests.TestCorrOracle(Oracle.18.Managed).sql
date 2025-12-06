@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	CORR(p."Value1", c_1."ChildID") OVER(PARTITION BY p."Value1", c_1."ChildID"),
@@ -13,7 +12,6 @@ FROM
 	"Parent" p
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 GROUP BY
 	g_1."ParentID"
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

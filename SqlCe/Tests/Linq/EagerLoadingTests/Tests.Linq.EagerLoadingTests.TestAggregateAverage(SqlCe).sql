@@ -1,13 +1,12 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	[t4].[AVG_1]
+	[t4].[Average]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[DetailClass] [a_Details]
 			WHERE
@@ -15,31 +14,28 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [AVG_1]
+				AVG(CAST([t3].[Average] AS Float)) as [Average]
 			FROM
 				(
 					SELECT
-						[t2].[DetailId]
+						[t2].[Average]
 					FROM
 						(
 							SELECT DISTINCT
-								[a_Details_1].[DetailId]
+								[a_Details_1].[DetailId] as [Average]
 							FROM
 								[DetailClass] [a_Details_1]
 							WHERE
 								[m_1].[Id1] = [a_Details_1].[MasterId]
 						) [t2]
 					ORDER BY
-						[t2].[DetailId]
+						[t2].[Average]
 					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
 				) [t3]
 		) [t4]
 WHERE
-	[t1].[COUNT_1] > 1
+	[t1].[Count_1] > 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -56,9 +52,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT

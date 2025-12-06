@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	DateAdd(minute, [t].[SmallIntValue], [t].[DateTimeValue])

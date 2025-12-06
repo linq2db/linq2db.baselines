@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 UPDATE
 	"TableToInsert"
@@ -30,7 +29,6 @@ WHERE
 			"TableToInsert"."Id" = t."Id"
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	it_1.cond,
@@ -20,7 +19,7 @@ FROM
 				(VALUES
 					("a_Color"."Name","a_Style"."Name",(
 						SELECT
-							COUNT(*) as "COUNT_1"
+							COUNT(*) as "Count_1"
 						FROM
 							"SomeItem" t1
 					)),
@@ -30,8 +29,7 @@ FROM
 WHERE
 	it_1."ColorName" = 'Red'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -46,8 +44,7 @@ FROM
 		LEFT JOIN "SomeColor" "a_Color" ON t1."ColorId" = "a_Color"."Id"
 		LEFT JOIN "SomeStyle" "a_Style" ON t1."StyleId" = "a_Style"."Id"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

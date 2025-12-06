@@ -1,4 +1,18 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+INSERT INTO Stone
+(
+	Name,
+	Enabled,
+	ImageFullUrl
+)
+VALUES
+(
+	'group1',
+	true,
+	'123'
+)
+
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Stone
@@ -14,23 +28,6 @@ VALUES
 	'123'
 )
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO Stone
-(
-	Name,
-	Enabled,
-	ImageFullUrl
-)
-VALUES
-(
-	'group1',
-	true,
-	'123'
-)
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Stone
@@ -46,7 +43,6 @@ VALUES
 	'123'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

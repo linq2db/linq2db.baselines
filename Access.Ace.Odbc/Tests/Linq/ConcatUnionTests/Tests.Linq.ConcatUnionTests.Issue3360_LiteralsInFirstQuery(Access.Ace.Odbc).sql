@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @value UniqueIdentifier -- Guid
 SET     @value = '{0b8afe27-481c-442e-b8cf-729ddfeece29}'
 DECLARE @value UniqueIdentifier -- Guid

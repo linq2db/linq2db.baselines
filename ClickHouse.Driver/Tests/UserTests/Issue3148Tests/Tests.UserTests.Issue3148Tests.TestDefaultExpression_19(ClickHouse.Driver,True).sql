@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -12,7 +10,6 @@ SELECT
 FROM
 	Child p
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 	) [pmp]
 		CROSS JOIN [Child] [pmp1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

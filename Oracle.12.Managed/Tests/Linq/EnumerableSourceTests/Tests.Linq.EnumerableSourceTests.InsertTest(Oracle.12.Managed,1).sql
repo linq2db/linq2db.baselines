@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TableToInsert"
 (
@@ -18,7 +17,6 @@ FROM
 WHERE
 	t."Id" IS NULL
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TableToInsert"

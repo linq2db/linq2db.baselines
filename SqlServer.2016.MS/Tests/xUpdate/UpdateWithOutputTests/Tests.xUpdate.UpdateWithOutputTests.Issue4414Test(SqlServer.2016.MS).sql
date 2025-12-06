@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -14,8 +13,7 @@ FROM
 	[Issue4193Person] [u],
 	(
 		SELECT TOP (@take)
-			[x].[Name],
-			[x].[EmployeeId]
+			[x].[Id]
 		FROM
 			[Issue4193Person] [x]
 		WHERE
@@ -24,5 +22,5 @@ FROM
 			[x].[EmployeeId]
 	) [t1]
 WHERE
-	[u].[Name] = [t1].[Name] AND ([u].[EmployeeId] = [t1].[EmployeeId] OR [u].[EmployeeId] IS NULL AND [t1].[EmployeeId] IS NULL)
+	[u].[Id] = [t1].[Id]
 

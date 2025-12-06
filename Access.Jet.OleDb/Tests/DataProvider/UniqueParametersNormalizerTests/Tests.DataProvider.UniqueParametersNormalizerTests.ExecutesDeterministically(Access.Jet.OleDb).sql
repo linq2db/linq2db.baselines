@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @search VarWChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarWChar(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @search VarWChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarWChar(4) -- String

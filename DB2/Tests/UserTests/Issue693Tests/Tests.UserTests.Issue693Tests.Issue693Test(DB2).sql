@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -30,7 +29,6 @@ FROM
 		)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -62,7 +60,6 @@ FROM
 		)
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 5
@@ -79,7 +76,6 @@ WHERE
 	"t1"."PersonID" = @id1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 6

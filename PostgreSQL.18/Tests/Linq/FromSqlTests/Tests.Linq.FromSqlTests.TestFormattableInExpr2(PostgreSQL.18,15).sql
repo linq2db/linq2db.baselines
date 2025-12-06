@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @p Bigint -- Int64
 SET     @p = 5
 DECLARE @endId Integer -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	s.id
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

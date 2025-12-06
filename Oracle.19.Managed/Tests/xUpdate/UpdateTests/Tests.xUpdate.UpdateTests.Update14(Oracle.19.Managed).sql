@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName Varchar2(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @name Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

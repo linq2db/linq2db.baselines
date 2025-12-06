@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
@@ -12,7 +10,6 @@ CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 	[Value] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -21,7 +18,6 @@ SELECT
 FROM
 	[tempdb]..[#CreateIfNotExistsTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
@@ -31,12 +27,10 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 		[Value] Int NOT NULL
 	)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#CreateIfNotExistsTable]

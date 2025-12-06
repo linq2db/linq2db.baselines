@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 MERGE INTO "TestMerge1" "Target"
@@ -81,7 +78,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 MERGE INTO "TestMerge2" "Target"
@@ -152,7 +148,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -176,7 +171,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

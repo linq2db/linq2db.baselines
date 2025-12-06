@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @DurationID  -- Int32
@@ -24,7 +23,6 @@ VALUES
 	@PersonID
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @personId  -- Int32
 SET     @personId = 1

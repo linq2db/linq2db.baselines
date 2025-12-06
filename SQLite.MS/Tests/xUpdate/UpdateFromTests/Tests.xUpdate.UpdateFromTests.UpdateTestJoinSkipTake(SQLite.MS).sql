@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @int1  -- Int32
 SET     @int1 = 11
 DECLARE @int2  -- Int32
@@ -38,7 +37,6 @@ FROM
 WHERE
 	[UpdatedEntities].[id] = [t1].[id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

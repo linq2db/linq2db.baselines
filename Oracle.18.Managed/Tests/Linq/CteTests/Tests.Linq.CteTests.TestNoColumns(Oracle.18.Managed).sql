@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 WITH CTE1_ ("c1")
@@ -22,7 +20,6 @@ SELECT
 FROM
 	CTE1_ t2
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 WITH CTE1_ ("c1")
@@ -38,7 +35,6 @@ SELECT
 FROM
 	CTE1_ t1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 WITH CTE1_ ("c1")

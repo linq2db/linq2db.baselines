@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
@@ -11,10 +8,8 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
@@ -53,7 +48,6 @@ WHEN NOT MATCHED THEN
 		N'John II'
 	);
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]

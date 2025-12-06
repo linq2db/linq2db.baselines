@@ -1,26 +1,23 @@
-﻿BeforeExecute
+﻿-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[Child] [ch]
+		INNER JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
+WHERE
+	[a_Parent].[ParentID] = 1
+
 -- SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Child] [p]
-		INNER JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
+	[Child] [ch]
+		INNER JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] = 1
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	COUNT(*)
-FROM
-	[Child] [p]
-		INNER JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
-WHERE
-	[a_Parent].[ParentID] = 1
-
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

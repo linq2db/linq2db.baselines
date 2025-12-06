@@ -1,28 +1,27 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t3"."AVG_1"
+	"t3"."Average"
 FROM
 	"MasterClass" "m_1"
 		LEFT JOIN LATERAL (
 			SELECT
-				AVG(CAST("t2"."DetailId" AS Double)) as "AVG_1"
+				AVG(CAST("t2"."Average" AS Double)) as "Average"
 			FROM
 				(
 					SELECT
-						"t1"."DetailId"
+						"t1"."Average"
 					FROM
 						(
 							SELECT DISTINCT
-								"a_Details"."DetailId"
+								"a_Details"."DetailId" as "Average"
 							FROM
 								"DetailClass" "a_Details"
 							WHERE
 								"m_1"."Id1" = "a_Details"."MasterId"
 						) "t1"
 					ORDER BY
-						"t1"."DetailId"
+						"t1"."Average"
 					LIMIT 5 OFFSET 1
 				) "t2"
 		) "t3" ON 1=1
@@ -36,9 +35,6 @@ WHERE
 			"m_1"."Id1" = "a_Details_1"."MasterId"
 	) > 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -55,9 +51,6 @@ FROM
 	) "m_1"
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

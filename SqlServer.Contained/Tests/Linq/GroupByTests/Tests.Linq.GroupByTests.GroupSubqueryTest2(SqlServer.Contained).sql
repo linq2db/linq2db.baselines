@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[pmp1].[ChildID]
@@ -14,7 +13,6 @@ FROM
 				[pmp].[ParentID]
 		) [pmp_1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

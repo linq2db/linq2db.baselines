@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"e"."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	"e"."StringValue" || '1' = 'StrValue1'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

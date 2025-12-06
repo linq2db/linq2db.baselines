@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Text(1) -- String
 SET     @p = '1'
 
@@ -14,8 +13,7 @@ FROM
 WHERE
 	r."FirstName" = :p
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."FirstName",
@@ -28,8 +26,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Text(1) -- String
 SET     @p = '1'
 

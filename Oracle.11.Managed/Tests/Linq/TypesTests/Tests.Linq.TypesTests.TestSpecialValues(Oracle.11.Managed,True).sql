@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "AllTypes"
@@ -22,7 +20,6 @@ VALUES
 	BINARY_DOUBLE_NAN
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "AllTypes"
@@ -38,7 +35,6 @@ VALUES
 	-BINARY_DOUBLE_INFINITY
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 INSERT INTO "AllTypes"
@@ -54,7 +50,6 @@ VALUES
 	BINARY_DOUBLE_INFINITY
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

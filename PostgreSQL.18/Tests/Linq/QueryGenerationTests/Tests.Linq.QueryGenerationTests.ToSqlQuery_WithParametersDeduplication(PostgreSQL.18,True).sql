@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p."FirstName" = 'John' OR p."LastName" = 'John'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'

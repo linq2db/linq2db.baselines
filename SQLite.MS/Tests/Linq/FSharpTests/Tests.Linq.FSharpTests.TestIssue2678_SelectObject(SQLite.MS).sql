@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @MetadataVersion  -- Int32
 SET     @MetadataVersion = 2
 DECLARE @DictionaryKey  -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@DictionaryKey
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

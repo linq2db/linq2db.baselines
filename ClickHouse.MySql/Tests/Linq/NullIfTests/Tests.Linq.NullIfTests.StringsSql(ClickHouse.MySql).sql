@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	NULLIF(s.String, 'abc')
@@ -8,7 +7,24 @@ FROM
 ORDER BY
 	s.Int
 
-BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.String = 'abc' OR s.String IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.String = 'abc' OR s.String IS NULL)
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,17 +34,51 @@ FROM
 ORDER BY
 	s.Int
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.String, NULL)
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.String = 'xyz' OR s.String IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.String = 'xyz' OR s.String IS NULL)
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	s.String
 FROM
 	Src s
 ORDER BY
 	s.Int
 
-BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.String IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.String IS NOT NULL
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -38,7 +88,24 @@ FROM
 ORDER BY
 	s.Int
 
-BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableString = 'abc' OR s.NullableString IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.NullableString = 'abc' OR s.NullableString IS NULL)
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -48,13 +115,48 @@ FROM
 ORDER BY
 	s.Int
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULLIF(s.NullableString, NULL)
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableString = 'xyz' OR s.NullableString IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.NullableString = 'xyz' OR s.NullableString IS NULL)
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	s.NullableString
 FROM
 	Src s
 ORDER BY
 	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableString IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableString IS NOT NULL
 

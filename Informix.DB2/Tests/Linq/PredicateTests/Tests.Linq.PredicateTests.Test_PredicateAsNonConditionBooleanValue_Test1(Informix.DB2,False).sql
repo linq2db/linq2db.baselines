@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -82,7 +81,6 @@ FROM
 WHERE
 	r.Id <> -1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

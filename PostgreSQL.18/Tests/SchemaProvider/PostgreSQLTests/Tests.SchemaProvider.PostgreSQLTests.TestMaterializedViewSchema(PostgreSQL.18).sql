@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 
@@ -52,7 +50,6 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 	SELECT
@@ -69,7 +66,6 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 
@@ -158,7 +154,6 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
 				     ) columns;
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 
@@ -208,7 +203,6 @@ BeforeExecute
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 
@@ -228,12 +222,10 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
@@ -244,27 +236,20 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
-BeforeExecute
 RollbackTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	currentDatabase()
@@ -7,13 +6,11 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE testdb1.Issue681Table2
 (
@@ -25,8 +22,7 @@ CREATE TABLE testdb1.Issue681Table2
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 

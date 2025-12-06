@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"Ints"
@@ -18,10 +17,10 @@ SET
 WHERE
 	"Ints"."One" = 10
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."One",
 	t1."Two",
 	t1."Three",

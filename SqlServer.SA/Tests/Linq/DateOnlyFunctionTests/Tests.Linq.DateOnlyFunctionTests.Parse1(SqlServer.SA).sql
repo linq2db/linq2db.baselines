@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	DatePart(day, CAST(N'2010-01-' + format([t].[TransactionId], 'd2') AS Date)) > 0
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

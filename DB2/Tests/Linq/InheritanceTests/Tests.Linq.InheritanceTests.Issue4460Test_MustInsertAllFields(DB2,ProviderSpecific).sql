@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "Issue4460Table"
+﻿INSERT BULK "Issue4460Table"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

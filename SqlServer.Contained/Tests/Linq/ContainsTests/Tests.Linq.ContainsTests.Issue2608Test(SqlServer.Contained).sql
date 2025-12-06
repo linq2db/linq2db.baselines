@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @code Int -- Int32
 SET     @code = 1
 DECLARE @site Int -- Int32

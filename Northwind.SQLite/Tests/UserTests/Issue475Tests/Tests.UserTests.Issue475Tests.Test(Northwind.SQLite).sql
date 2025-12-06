@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[e].[EmployeeID],
@@ -23,7 +22,6 @@ SELECT
 FROM
 	[Employees] [e]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1

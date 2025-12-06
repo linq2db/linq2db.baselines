@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[x].[Id],
@@ -29,7 +28,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	[r].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

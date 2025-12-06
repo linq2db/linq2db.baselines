@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 WHEN N < 0 THEN
@@ -29,16 +28,14 @@ SELECT
 	3000 as ID
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -47,8 +44,7 @@ FROM
 WHERE
 	x.ID = 3002
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 WHEN 1 = 1 THEN
@@ -78,16 +74,14 @@ SELECT
 	42 as N
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)

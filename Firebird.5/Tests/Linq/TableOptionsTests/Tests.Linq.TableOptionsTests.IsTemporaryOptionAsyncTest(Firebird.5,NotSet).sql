@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table1')) THEN
@@ -7,14 +6,15 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "temp_table1"
 			(
 				ID      Int NOT NULL,
-				"Value" Int NOT NULL
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_temp_table1" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
 END
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 INSERT INTO "temp_table1"
 (
@@ -23,8 +23,7 @@ INSERT INTO "temp_table1"
 )
 SELECT 1,2 FROM rdb$database
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table2')) THEN
@@ -32,14 +31,15 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "temp_table2"
 			(
 				ID      Int NOT NULL,
-				"Value" Int NOT NULL
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_temp_table2" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
 END
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 INSERT INTO "temp_table2"
 (
@@ -52,7 +52,6 @@ SELECT
 FROM
 	"temp_table1" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -61,7 +60,6 @@ SELECT
 FROM
 	"temp_table1" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -70,8 +68,7 @@ SELECT
 FROM
 	"temp_table2" "t1"
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 INSERT INTO "temp_table1"
 (
@@ -80,8 +77,7 @@ INSERT INTO "temp_table1"
 )
 SELECT 2,3 FROM rdb$database
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -98,8 +94,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 INSERT INTO "temp_table1"
 (
@@ -108,17 +103,14 @@ INSERT INTO "temp_table1"
 )
 SELECT 4,5 FROM rdb$database
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 DELETE FROM "temp_table1"
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 
 DELETE FROM "temp_table2"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
@@ -126,7 +118,6 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT 'DROP TABLE "temp_table2"';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN

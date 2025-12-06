@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		r.Id
@@ -40,10 +39,9 @@ FROM
 	) m_1
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		r.Id,

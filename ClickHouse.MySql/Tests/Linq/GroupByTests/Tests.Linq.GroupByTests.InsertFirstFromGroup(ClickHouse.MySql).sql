@@ -1,13 +1,36 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+CREATE TABLE temp_table_1
+(
+	ID    Int32,
+	Value Nullable(String),
+
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.MySql ClickHouse
 
-CREATE TEMPORARY TABLE temp_table_2
+INSERT INTO temp_table_1
 (
-	Value Nullable(String)
+	ID,
+	Value
 )
-ENGINE = Memory()
+VALUES
+(1,'Value')
 
-BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+CREATE TABLE temp_table_2
+(
+	Value String,
+
+	PRIMARY KEY (Value)
+)
+ENGINE = MergeTree()
+ORDER BY Value
+
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO temp_table_2
@@ -34,8 +57,11 @@ FROM
 				temp_table_1 c_1
 		) t1 ON gr_1.ID = t1.ID AND t1.rn <= 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- ClickHouse.MySql ClickHouse
+
+DROP TABLE IF EXISTS temp_table_1
 

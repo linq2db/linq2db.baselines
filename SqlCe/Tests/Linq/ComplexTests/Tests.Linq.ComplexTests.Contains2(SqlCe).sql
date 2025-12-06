@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[p].[ParentID],
@@ -11,7 +10,7 @@ SELECT
 	CASE
 		WHEN [gc_1].[not_null] IS NOT NULL THEN [gc_1].[ChildID]
 		ELSE 2147483647
-	END as [c1]
+	END as [Value_1]
 FROM
 	[Child] [ch]
 		INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`p`.`FirstName`
@@ -9,8 +8,7 @@ WHERE
 	`p`.`PersonID` = 1
 LIMIT 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -22,8 +20,7 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -35,8 +32,7 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin NOT LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -48,8 +44,7 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 

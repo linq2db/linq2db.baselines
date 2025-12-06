@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Base
 (
@@ -14,7 +13,6 @@ VALUES
 	'Jane'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Base
@@ -30,7 +28,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."FirstName",
@@ -15,7 +14,6 @@ ORDER BY
 		ELSE '0'
 	END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

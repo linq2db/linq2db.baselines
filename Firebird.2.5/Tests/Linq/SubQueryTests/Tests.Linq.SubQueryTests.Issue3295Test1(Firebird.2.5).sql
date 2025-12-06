@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"x_2"."Id",
@@ -13,7 +12,7 @@ FROM
 			END as "StatusName",
 			CASE
 				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."PersonID"
-				ELSE "x_1"."PersonID_1"
+				ELSE "x_1".ID
 			END as "Id"
 		FROM
 			(
@@ -34,7 +33,7 @@ FROM
 						WHERE
 							"y_1"."PersonID" = "x"."PersonID"
 					) as "Diagnosis",
-					"x"."PersonID" as "PersonID_1"
+					"x"."PersonID" as ID
 				FROM
 					"Person" "x"
 			) "x_1"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
@@ -8,7 +7,6 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -18,7 +16,6 @@ UPDATE
 WHERE
 	ID = 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

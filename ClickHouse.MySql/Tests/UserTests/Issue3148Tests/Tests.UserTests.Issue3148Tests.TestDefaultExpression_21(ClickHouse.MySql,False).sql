@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,
@@ -11,7 +10,6 @@ FROM
 		SELECT 0 as Id, NULL as Field1, NULL as Field2, 4 as Field3
 	) t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

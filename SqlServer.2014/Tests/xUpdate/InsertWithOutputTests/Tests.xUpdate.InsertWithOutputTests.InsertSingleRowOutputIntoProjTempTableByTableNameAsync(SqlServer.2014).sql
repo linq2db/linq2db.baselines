@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
--- SqlServer.2014 (asynchronously)
+-- SqlServer.2014
 
 INSERT INTO [TableWithData_source]
 (
@@ -34,7 +34,6 @@ VALUES
 	N'SomeStr'
 )
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -44,7 +43,6 @@ SELECT
 FROM
 	[TableWithData_source] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -54,7 +52,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_output]', N'U') IS NOT NULL)

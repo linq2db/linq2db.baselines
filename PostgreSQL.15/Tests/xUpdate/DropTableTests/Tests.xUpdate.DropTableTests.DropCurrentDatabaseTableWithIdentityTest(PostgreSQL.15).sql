@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "DropTableTestID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 CREATE TABLE "DropTableTestID"
@@ -14,7 +12,6 @@ CREATE TABLE "DropTableTestID"
 	CONSTRAINT "PK_DropTableTestID" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "DropTableTestID"
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	"DropTableTestID" t
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE "DropTableTestID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	(r."One" IS NULL) = (r."One" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -18,8 +16,7 @@ FROM
 WHERE
 	(r."One" IS NULL) = (r."Zero" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -28,8 +25,7 @@ FROM
 WHERE
 	(r."One" IS NULL) = (r."Null" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -38,8 +34,7 @@ FROM
 WHERE
 	(r."Zero" IS NULL) = (r."Null" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -48,8 +43,7 @@ FROM
 WHERE
 	(r."Zero" IS NULL) = (r."Zero" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -58,8 +52,7 @@ FROM
 WHERE
 	(r."Null" IS NULL) = (r."Null" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -68,8 +61,7 @@ FROM
 WHERE
 	(r."One" IS NULL) <> (r."One" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -78,8 +70,7 @@ FROM
 WHERE
 	(r."One" IS NULL) <> (r."Zero" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -88,8 +79,7 @@ FROM
 WHERE
 	(r."One" IS NULL) <> (r."Null" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -98,8 +88,7 @@ FROM
 WHERE
 	(r."Zero" IS NULL) <> (r."Null" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -108,8 +97,7 @@ FROM
 WHERE
 	(r."Zero" IS NULL) <> (r."Zero" IS NULL)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

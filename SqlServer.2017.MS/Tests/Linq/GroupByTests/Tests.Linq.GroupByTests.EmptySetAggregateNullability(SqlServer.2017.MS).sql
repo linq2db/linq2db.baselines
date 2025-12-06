@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	COUNT(*)
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[t1].[Min_1] <> 0 OR [t1].[Min_1] IS NULL
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 WHERE
 	[t1].[Max_1] <> 0 OR [t1].[Max_1] IS NULL
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -49,7 +46,6 @@ FROM
 WHERE
 	[t1].[Avg_1] <> 0 OR [t1].[Avg_1] IS NULL
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
@@ -66,7 +62,6 @@ FROM
 WHERE
 	[t1].[Sum_1] <> 0 OR [t1].[Sum_1] IS NULL
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TestTempTable"
 (
@@ -12,7 +11,6 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN
@@ -21,12 +19,13 @@ BEGIN
 		CREATE TABLE "TempTable"
 		(
 			"Id"      Int           NOT NULL,
-			"Renamed" NVarChar(255)     NULL
+			"Renamed" NVarChar(255)     NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
 		)
 	';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TempTable"
@@ -40,7 +39,6 @@ SELECT
 FROM
 	"TestTempTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TestTempTable"
@@ -54,7 +52,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "TempTable"
@@ -68,7 +65,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -79,7 +75,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -90,7 +85,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	AVG([c_1].[ChildID]),
@@ -12,7 +11,6 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	t."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Age Int32
 SET     @Age = 20
@@ -47,7 +44,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -60,7 +56,6 @@ WHERE
 	t."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -78,7 +73,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -91,7 +85,6 @@ WHERE
 	t."Id" = 2
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(5) -- String
 SET     @Name = 'Jessy'
@@ -108,7 +101,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

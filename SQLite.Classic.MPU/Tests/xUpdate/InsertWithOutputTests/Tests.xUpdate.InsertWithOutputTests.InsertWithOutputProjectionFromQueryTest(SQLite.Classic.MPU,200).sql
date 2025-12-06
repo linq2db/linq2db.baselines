@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 200
 
@@ -21,7 +20,6 @@ RETURNING
 	[DestinationTable].[Id] + 1,
 	[DestinationTable].[ValueStr] || 1
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[DestinationTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

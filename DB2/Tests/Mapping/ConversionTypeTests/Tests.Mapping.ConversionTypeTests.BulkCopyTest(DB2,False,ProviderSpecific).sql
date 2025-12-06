@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK "TrimTestTable"
+﻿INSERT BULK "TrimTestTable"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -12,7 +10,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

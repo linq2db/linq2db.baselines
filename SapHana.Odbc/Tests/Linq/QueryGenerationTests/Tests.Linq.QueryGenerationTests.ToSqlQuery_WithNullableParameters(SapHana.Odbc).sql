@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"p"."MiddleName" IS NOT NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

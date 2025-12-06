@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NChar(1) -- StringFixedLength

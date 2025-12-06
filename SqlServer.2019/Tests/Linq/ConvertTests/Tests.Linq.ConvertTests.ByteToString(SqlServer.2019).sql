@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
-	[p].[ID]
+	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM
 	[LinqDataTypes] [p]
 WHERE

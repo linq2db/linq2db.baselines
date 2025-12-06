@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32
@@ -16,7 +15,6 @@ ORDER BY
 	p."ParentID"
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2

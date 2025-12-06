@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`InheritanceParent`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `InheritanceParent`
@@ -25,7 +21,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -33,7 +28,6 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `InheritanceParent`
@@ -51,7 +45,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = 1
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -59,5 +52,3 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
-BeforeExecute
-DisposeTransaction

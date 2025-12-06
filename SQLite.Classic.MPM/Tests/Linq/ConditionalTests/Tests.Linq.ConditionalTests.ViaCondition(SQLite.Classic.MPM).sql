@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[x].[Id],
@@ -16,7 +15,6 @@ WHERE
 		ELSE [x].[StringProp]
 	END LIKE '%2%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

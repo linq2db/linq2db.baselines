@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	Replace(CAST([p].[MoneyValue] AS NVarChar(31)), ',', '.') as [c1]

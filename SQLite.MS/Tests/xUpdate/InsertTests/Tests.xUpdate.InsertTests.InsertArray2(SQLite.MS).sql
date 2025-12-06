@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @arr Binary
 SET     @arr = NULL
@@ -24,7 +22,6 @@ VALUES
 	@arr
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -41,7 +38,6 @@ WHERE
 	[t].[ID] = 1001
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Uid VarBinary(16) -- Binary
 SET     @Uid = {61,102,123,188,222,15,39,67}
 -- value above truncated for logging

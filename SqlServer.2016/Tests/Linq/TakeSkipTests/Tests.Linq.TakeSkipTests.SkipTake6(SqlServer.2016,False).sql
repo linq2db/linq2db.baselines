@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
 	[c_1].[ParentID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = [p_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

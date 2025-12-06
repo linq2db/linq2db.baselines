@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @personId Int32
 SET     @personId = 0
 DECLARE @personId_1 Int32

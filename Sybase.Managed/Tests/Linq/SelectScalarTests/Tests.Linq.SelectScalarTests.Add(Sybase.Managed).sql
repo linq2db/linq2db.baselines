@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = 5
+﻿-- Sybase.Managed Sybase
 
 SELECT
-	@p
+	5
 

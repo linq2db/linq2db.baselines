@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @id1 Int32
 SET     @id1 = 3000
 DECLARE @value Varchar2 -- String
@@ -34,8 +33,7 @@ SELECT
 	:value as "Value_1"
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1.ID,

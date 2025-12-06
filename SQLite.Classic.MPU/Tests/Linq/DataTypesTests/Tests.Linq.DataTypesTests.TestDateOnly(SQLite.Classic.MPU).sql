@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Column VarChar(10) -- AnsiString
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable VarChar(10) -- AnsiString
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 SELECT
 	[r].[Id],
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -24,20 +22,18 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
+	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2020-01-01'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column VarChar(10) -- AnsiString
-SET     @Column = '1950-01-01'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable  -- Date
 SET     @ColumnNullable = NULL
 
@@ -54,14 +50,13 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column VarChar(10) -- AnsiString
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable VarChar(10) -- AnsiString
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [DateOnlyTable]
@@ -104,10 +96,9 @@ INSERT INTO [DateOnlyTable]
 	[ColumnNullable]
 )
 VALUES
-(1,'1950-01-01',NULL),
-(2,'2020-02-29','2200-01-01')
+(1,'1980-01-01',NULL),
+(2,'2020-02-29','2020-01-01')
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
@@ -119,13 +110,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [DateOnlyTable]
@@ -135,10 +124,9 @@ INSERT INTO [DateOnlyTable]
 	[ColumnNullable]
 )
 VALUES
-(1,'1950-01-01',NULL),
-(2,'2020-02-29','2200-01-01')
+(1,'1980-01-01',NULL),
+(2,'2020-02-29','2020-01-01')
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

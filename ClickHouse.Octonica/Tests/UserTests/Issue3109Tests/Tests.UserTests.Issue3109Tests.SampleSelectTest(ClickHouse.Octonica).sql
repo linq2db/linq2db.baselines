@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.LeftId,
@@ -14,7 +13,6 @@ FROM
 		LEFT JOIN Right a_Right ON t1.RightId = a_Right.RightId
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 	) m_1
 		INNER JOIN LeftRight d ON m_1.LeftId = d.LeftId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -41,7 +38,6 @@ FROM
 	Left t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -58,7 +54,6 @@ FROM
 	) m_1
 		INNER JOIN LeftRight d ON m_1.RightId = d.RightId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

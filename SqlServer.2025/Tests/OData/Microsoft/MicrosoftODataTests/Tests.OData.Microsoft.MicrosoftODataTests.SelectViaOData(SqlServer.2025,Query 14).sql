@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'Engineer'
 DECLARE @TypedProperty_1 NVarChar(4000) -- String

@@ -1,4 +1,14 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	IntEnumTable r
+WHERE
+	r.Column = 2 AND r.ColumnNullable = 3
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -10,26 +20,12 @@ FROM
 WHERE
 	r.Column = 2 AND r.ColumnNullable = 3
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	IntEnumTable r
-WHERE
-	r.Column = 2 AND r.ColumnNullable = 3
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	IntEnumTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO IntEnumTable
@@ -45,7 +41,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO IntEnumTable
@@ -61,7 +56,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -73,14 +67,12 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	IntEnumTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO IntEnumTable
@@ -93,7 +85,6 @@ VALUES
 (1,1,NULL),
 (2,2,3)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -105,14 +96,12 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	IntEnumTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO IntEnumTable
@@ -125,7 +114,6 @@ VALUES
 (1,1,NULL),
 (2,2,3)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
@@ -35,7 +33,6 @@ VALUES
 	[Source].[Field4]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -50,14 +47,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
@@ -87,7 +82,6 @@ VALUES
 	[Source].[Field4]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -102,14 +96,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TestMerge1] [Target]
@@ -141,7 +133,6 @@ VALUES
 	[Source].[Field4]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

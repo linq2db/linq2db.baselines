@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1.cond,
@@ -33,7 +30,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d_1 ON m_1.cond = d_1."ParentID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -55,7 +51,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON d."ParentID" = "a_Parent"."ParentID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -67,5 +62,3 @@ WHERE
 	p."ParentID" < 2
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @p Integer(4) -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"TestConstantsData" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[p].[Value1] IS NOT NULL AND [p].[Value1] <> 1
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

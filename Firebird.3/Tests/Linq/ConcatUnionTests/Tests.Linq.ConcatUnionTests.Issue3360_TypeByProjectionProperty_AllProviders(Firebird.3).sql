@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"p"."Id",
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"Issue3360Table" "p_1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

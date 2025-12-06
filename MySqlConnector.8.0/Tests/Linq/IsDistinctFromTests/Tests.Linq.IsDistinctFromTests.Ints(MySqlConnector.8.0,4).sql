@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Int32
 SET     @value = 4
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	NOT `s`.`Int` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Int32
 SET     @value = 4
@@ -22,7 +20,6 @@ FROM
 WHERE
 	NOT `s`.`NullableInt` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Int32
 SET     @value = 4
@@ -34,7 +31,6 @@ FROM
 WHERE
 	`s`.`Int` <=> @value
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Int32
 SET     @value = 4

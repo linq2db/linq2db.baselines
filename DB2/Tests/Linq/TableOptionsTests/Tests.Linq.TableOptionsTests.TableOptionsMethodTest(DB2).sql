@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE SESSION."TestTable"';
 END
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."TestTable"
@@ -16,7 +14,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."TestTable"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -24,16 +21,14 @@ SELECT
 	"t1"."Value",
 	"t2"."Id",
 	"t2"."Value",
-	"t3"."Id",
-	"t3"."Value"
+	"t2"."Id",
+	"t2"."Value"
 FROM
 	SESSION."TestTable" "t1",
 	SESSION."TestTable" "t2"
-		INNER JOIN SESSION."TestTable" "t3" ON "t2"."Id" = "t3"."Id"
 WHERE
 	"t1"."Id" = "t2"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

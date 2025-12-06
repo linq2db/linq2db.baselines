@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	r.ID >= 101 AND r.ID < :p
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "LinqDataTypes"
@@ -20,7 +18,6 @@ VALUES
 	101
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	r.ID = 101 AND r."BigIntValue" IS NULL
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 102

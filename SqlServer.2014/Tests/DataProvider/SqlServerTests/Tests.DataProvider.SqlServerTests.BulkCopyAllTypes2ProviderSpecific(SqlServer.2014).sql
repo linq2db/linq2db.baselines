@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 DELETE [p]
 FROM
@@ -7,10 +6,8 @@ FROM
 WHERE
 	[p].[ID] >= 3
 
-BeforeExecute
 INSERT BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

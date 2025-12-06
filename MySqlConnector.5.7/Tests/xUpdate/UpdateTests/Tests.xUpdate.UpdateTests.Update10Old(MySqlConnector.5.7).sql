@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -14,7 +13,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1001
@@ -26,7 +24,6 @@ FROM
 WHERE
 	`c_1`.`ChildID` = @id
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1001
@@ -45,7 +42,6 @@ WHERE
 	`c_1`.`ParentID` = `c_2`.`ParentID` AND
 	`c_1`.`ChildID` = `c_2`.`ChildID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p Int32
 SET     @p = 1002

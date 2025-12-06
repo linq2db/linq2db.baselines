@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1".ID,
@@ -14,7 +13,6 @@ FROM
 	"LinqDataTypes" "t1"
 		INNER JOIN "LinqDataTypes" "t2" ON "t1".ID = "t2".ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @param2 Char -- String
 SET     @param2 = '0'

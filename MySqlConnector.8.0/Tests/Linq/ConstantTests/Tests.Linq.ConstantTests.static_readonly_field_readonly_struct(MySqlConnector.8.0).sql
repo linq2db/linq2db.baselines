@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`e`.`Id`,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	`e`.`Id` = 1 AND `e`.`Id` = 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	`TestConstantsData` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -35,7 +32,6 @@ FROM
 WHERE
 	`e`.`Id` = 1 AND `e`.`Id` = 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

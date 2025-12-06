@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TestTrun]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE [TestTrun]
@@ -14,12 +12,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM [TestTrun]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE [TestTrun]

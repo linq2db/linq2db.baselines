@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" p
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Person"
@@ -29,7 +27,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM

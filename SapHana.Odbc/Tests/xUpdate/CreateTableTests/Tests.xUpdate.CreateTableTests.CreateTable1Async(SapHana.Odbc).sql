@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TestTable"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TestTable"
 (
@@ -16,8 +14,7 @@ CREATE COLUMN TABLE "TestTable"
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -27,8 +24,7 @@ SELECT
 FROM
 	"TestTable" "t1"
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TestTable"
 

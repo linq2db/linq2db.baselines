@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	p."PersonID" = :p
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 2

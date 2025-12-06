@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -26,17 +24,15 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [t1]
 WHERE
 	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

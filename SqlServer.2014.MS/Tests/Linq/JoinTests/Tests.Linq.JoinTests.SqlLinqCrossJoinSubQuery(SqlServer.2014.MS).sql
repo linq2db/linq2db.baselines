@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @take_1 Int -- Int32

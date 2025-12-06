@@ -1,8 +1,9 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`t`.`ID`
+	`t`.`PK`,
+	`t`.`ID`,
+	`t`.`GV`
 FROM
 	`test_in_1` `t`
 WHERE
@@ -15,19 +16,21 @@ WHERE
 			`t`.`ID` = `p`.`ID`
 	)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`t1`.`ID`
+	`t1`.`PK`,
+	`t1`.`ID`,
+	`t1`.`GV`
 FROM
 	`test_in_1` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`t1`.`ID`
+	`t1`.`PK`,
+	`t1`.`ID`,
+	`t1`.`GV`
 FROM
 	`test_in_2` `t1`
 

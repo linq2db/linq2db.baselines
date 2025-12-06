@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"it_1"."IsActive",
@@ -16,7 +15,6 @@ GROUP BY
 	"it_1"."IsActive",
 	"it_1"."Other"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

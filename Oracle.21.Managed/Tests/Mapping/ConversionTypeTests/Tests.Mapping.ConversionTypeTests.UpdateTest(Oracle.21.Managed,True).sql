@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"TrimTestTable" t1
@@ -8,7 +7,6 @@ SET
 WHERE
 	t1.ID = 3
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	t."Data" = '***XXX***'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	t."Data" = '***HHH***'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

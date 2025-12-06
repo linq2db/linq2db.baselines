@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
 	Coalesce(p.Value1, p.ParentID),
@@ -7,7 +6,6 @@ SELECT DISTINCT
 FROM
 	Parent p
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

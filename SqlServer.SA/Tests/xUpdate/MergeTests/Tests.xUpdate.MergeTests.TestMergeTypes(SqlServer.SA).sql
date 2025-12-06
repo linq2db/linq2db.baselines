@@ -1,18 +1,15 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -98,7 +95,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -184,7 +180,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -272,7 +267,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -359,7 +353,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -445,7 +438,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -533,7 +525,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -619,7 +610,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -707,7 +697,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -735,7 +724,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

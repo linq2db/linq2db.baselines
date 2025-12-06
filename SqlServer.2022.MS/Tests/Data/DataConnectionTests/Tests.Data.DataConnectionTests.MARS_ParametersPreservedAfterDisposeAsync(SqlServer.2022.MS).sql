@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @param NVarChar(4000) -- String
 SET     @param = N'test'
 

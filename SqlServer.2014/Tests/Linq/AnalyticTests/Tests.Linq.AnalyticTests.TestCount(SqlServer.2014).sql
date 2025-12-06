@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	COUNT(*),
@@ -13,7 +12,6 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -21,7 +19,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -29,7 +26,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -37,7 +33,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT

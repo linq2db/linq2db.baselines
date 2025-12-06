@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName UniVarChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @name Integer -- Int32
 SET     @name = 8
@@ -38,7 +36,6 @@ SET
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

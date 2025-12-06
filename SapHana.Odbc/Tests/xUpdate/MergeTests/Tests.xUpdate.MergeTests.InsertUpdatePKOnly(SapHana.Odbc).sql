@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (
@@ -20,7 +19,6 @@ VALUES
 	"Source"."ID"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

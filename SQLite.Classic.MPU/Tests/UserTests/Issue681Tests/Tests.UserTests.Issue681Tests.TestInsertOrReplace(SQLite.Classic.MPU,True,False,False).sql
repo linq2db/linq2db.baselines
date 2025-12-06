@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
 DECLARE @Value  -- Int32
@@ -18,7 +17,6 @@ VALUES
 ON CONFLICT ([ID]) DO UPDATE SET
 	[Value] = @Value
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5

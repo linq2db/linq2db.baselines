@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Column Boolean
 SET     @Column = False
 DECLARE @ColumnNullable Boolean
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	r."Column" = False AND r."ColumnNullable" = True
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "BooleanTable"
@@ -107,7 +99,6 @@ VALUES
 (1,True,NULL),
 (2,False,True)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -119,16 +110,13 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"BooleanTable" t1
 
-BeforeExecute
 INSERT BULK "BooleanTable"(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CHAR_LENGTH([nm].[FirstName]) <> 0
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

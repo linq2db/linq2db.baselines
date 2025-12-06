@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1] ([PersonID])
 AS
@@ -29,9 +26,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] = [m_1].[Item1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 WITH [CTE_1] ([PersonID])

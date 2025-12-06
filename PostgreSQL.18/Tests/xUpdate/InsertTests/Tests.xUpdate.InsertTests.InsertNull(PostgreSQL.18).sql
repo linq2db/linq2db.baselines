@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

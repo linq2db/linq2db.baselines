@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`g_2`.`Key_1`
@@ -10,12 +9,12 @@ FROM
 			COUNT(CASE
 				WHEN `g_1`.`ChildID` > 20 THEN 1
 				ELSE NULL
-			END) as `COUNT_1`
+			END) as `Count_1`
 		FROM
 			`Child` `g_1`
 		GROUP BY
 			`g_1`.`ParentID`
 	) `g_2`
 WHERE
-	`g_2`.`COUNT_1` > 2 OR `g_2`.`Key_1` > 2
+	`g_2`.`Count_1` > 2 OR `g_2`.`Key_1` > 2
 

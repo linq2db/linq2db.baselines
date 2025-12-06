@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t].[Value_1]
 FROM
 	(
 		SELECT
-			Floor(Log(CAST([p].[MoneyValue] AS Float))) as [Value_1]
+			Floor(Ln(CAST([p].[MoneyValue] AS Float))) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

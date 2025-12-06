@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar(12) -- String
@@ -13,7 +12,6 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
@@ -28,7 +26,6 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
@@ -43,7 +40,6 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @NotIn Varchar -- String
 SET     @NotIn = NULL
@@ -58,7 +54,6 @@ WHERE
 	s."CEnum" NOT IN (:NotIn, :NotIn_1)
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @NotIn Varchar(12) -- String
 SET     @NotIn = '___Value3___'

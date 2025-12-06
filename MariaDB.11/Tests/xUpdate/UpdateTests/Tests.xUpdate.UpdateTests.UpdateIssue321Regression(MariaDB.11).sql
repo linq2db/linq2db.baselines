@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ID Int32
 SET     @ID = 100500
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
@@ -48,8 +47,7 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value2 NewDecimal(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Int32
@@ -62,8 +60,7 @@ SET
 WHERE
 	`t1`.`ID` = @id
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
 SET     @id = 100500
 

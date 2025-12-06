@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."Id",
@@ -29,7 +28,6 @@ WHERE
 		ELSE 2
 	END = 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

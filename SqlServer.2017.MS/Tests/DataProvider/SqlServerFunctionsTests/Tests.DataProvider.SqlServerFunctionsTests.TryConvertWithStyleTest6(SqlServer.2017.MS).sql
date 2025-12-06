@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	TRY_CONVERT(NVarChar(4000), DATETIMEFROMPARTS(2022, 2, 22, 0, 0, 0, 0), 5)
+	TRY_CONVERT(NVarChar(4000), DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3), 5)
 

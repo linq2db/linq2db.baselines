@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
 	x.ParentID,
@@ -10,7 +9,6 @@ FROM
 WHERE
 	x.ChildID > 30
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT

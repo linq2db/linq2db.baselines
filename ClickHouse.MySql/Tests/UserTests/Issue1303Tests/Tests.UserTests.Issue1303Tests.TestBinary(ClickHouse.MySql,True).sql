@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue1303
 (
@@ -14,7 +13,6 @@ VALUES
 	'\x04\x05'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -27,7 +25,6 @@ WHERE
 	t1.ID = 1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -40,7 +37,6 @@ WHERE
 	t1.Array = '\x01\x02\x03'
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

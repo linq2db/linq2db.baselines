@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 DECLARE @skip_1 Int32
@@ -34,7 +33,6 @@ WHERE
 ORDER BY
 	t3."ChildID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1

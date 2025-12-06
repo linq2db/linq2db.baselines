@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [Person]
 (
@@ -25,8 +23,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+-- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (2)
 	[p].[FirstName],
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(6) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	[t].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Jacob'
@@ -50,7 +47,6 @@ SET
 WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -63,7 +59,6 @@ WHERE
 	[t].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Age  -- Int32
 SET     @Age = 22
@@ -77,7 +72,6 @@ SET
 WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

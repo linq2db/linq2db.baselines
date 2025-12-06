@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName],
@@ -10,5 +9,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CharIndex('oh', [p].[FirstName]) = 2 AND [p].[PersonID] = 1
+	INSTR([p].[FirstName], 'oh') = 2 AND [p].[PersonID] = 1
 

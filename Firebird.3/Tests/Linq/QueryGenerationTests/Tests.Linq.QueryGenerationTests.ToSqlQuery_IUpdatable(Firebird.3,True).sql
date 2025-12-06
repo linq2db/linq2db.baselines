@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 UPDATE
@@ -20,7 +18,6 @@ UPDATE
 SET
 	"Value" = 123
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

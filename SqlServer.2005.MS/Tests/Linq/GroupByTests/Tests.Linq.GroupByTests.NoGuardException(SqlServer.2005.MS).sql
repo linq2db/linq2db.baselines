@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[inner_1].[Count_1]
@@ -18,7 +17,6 @@ FROM
 				[g_1].[GuidValue]
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

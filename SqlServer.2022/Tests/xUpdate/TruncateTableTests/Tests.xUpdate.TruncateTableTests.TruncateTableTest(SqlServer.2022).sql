@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 DROP TABLE IF EXISTS [TestTrun]
 
-BeforeExecute
 -- SqlServer.2022
 
 CREATE TABLE [TestTrun]
@@ -14,12 +12,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 TRUNCATE TABLE [TestTrun]
 
-BeforeExecute
 -- SqlServer.2022
 
 DROP TABLE [TestTrun]

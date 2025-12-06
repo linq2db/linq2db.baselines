@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Value2
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	@NullableBool
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -83,7 +79,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -98,7 +93,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -113,7 +107,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -128,7 +121,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -143,7 +135,6 @@ FROM
 WHERE
 	[x].[Value1] = 'Str1'
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -158,7 +149,6 @@ FROM
 WHERE
 	[x].[Value2] = 'Str2'
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

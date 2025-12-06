@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	COUNT(*)
 FROM
 	[Person] [r]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
 (
@@ -10,18 +9,15 @@ VALUES
 	X'3D667BBCDE0F27438F925D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid1) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -33,18 +29,15 @@ VALUES
 	X'3D667BBCDE0F27438F925D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid2) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -56,18 +49,15 @@ VALUES
 	X'3D667BBCDE0F27438F925D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid3) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -79,18 +69,15 @@ VALUES
 	X'3D667BBCDE0F27438F925D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid4) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -102,23 +89,19 @@ VALUES
 	'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(TextGuid1) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT TextGuid1 FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -130,23 +113,19 @@ VALUES
 	'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(TextGuid2) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT TextGuid2 FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NonReadonlyGuid1  -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
@@ -160,20 +139,17 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid1) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @NonReadonlyGuid1  -- Guid
+DECLARE @NonReadonlyGuid1 Binary(16)
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
@@ -185,18 +161,15 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid2) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NonReadonlyGuid1  -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
@@ -210,18 +183,15 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid3) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NonReadonlyGuid1  -- Guid
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
@@ -235,18 +205,15 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(BlobGuid4) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NonReadonlyGuid1 NVarChar(36) -- String
 SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
@@ -260,23 +227,19 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(TextGuid1) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT TextGuid1 FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NonReadonlyGuid1 NVarChar(36) -- String
 SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
@@ -290,23 +253,19 @@ VALUES
 	@NonReadonlyGuid1
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT typeof(TextGuid2) FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT TextGuid2 FROM GuidMapping
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -321,7 +280,6 @@ INSERT INTO [GuidMapping]
 VALUES
 (X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11','BC7B663D-0FDE-4327-8F92-5D8CC3A11D11','BC7B663D-0FDE-4327-8F92-5D8CC3A11D11')
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -334,13 +292,11 @@ SELECT
 FROM
 	[GuidMapping] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [GuidMapping]
@@ -362,7 +318,6 @@ VALUES
 	'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -375,17 +330,15 @@ SELECT
 FROM
 	[GuidMapping] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @BlobGuid1  -- Guid
 SET     @BlobGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @BlobGuid2  -- Guid
+DECLARE @BlobGuid2 Binary(16)
 SET     @BlobGuid2 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @BlobGuid3  -- Guid
 SET     @BlobGuid3 = X'3D667BBCDE0F27438F925D8CC3A11D11'
@@ -415,7 +368,6 @@ VALUES
 	@TextGuid2
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -428,23 +380,19 @@ SELECT
 FROM
 	[GuidMapping] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidMapping]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO GuidMapping(BlobGuid1, BlobGuid2, BlobGuid3, BlobGuid4, TextGuid1, TextGuid2) VALUES('BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11')
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO GuidMapping(BlobGuid1, BlobGuid2, BlobGuid3, BlobGuid4, TextGuid1, TextGuid2) VALUES(x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11')
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

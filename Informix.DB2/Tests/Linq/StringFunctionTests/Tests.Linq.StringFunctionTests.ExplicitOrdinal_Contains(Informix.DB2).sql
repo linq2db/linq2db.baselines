@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 DELETE FROM
 	CollatedTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -26,7 +24,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	r.CaseSensitive LIKE '%stSt%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -46,7 +42,6 @@ FROM
 WHERE
 	r.CaseInsensitive LIKE '%stSt%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -56,7 +51,6 @@ FROM
 WHERE
 	r.CaseSensitive LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [TrimTestTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	'***OOO***'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TrimTestTable]
@@ -26,7 +24,6 @@ VALUES
 	'***HHH***'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TrimTestTable]
@@ -40,7 +37,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -51,7 +47,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

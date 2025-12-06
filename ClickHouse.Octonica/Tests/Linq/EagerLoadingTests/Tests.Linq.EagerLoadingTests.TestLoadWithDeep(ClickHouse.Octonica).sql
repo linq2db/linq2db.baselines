@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.DetailId,
@@ -25,7 +24,6 @@ FROM
 	) m_2
 		INNER JOIN SubDetailClass d_1 ON m_2.DetailId = d_1.DetailId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -44,7 +42,6 @@ FROM
 	) m_2
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

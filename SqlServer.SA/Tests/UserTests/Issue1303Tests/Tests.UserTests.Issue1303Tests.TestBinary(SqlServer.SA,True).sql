@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [Issue1303]
 (
@@ -14,7 +13,6 @@ VALUES
 	0x0405
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[t1].[ID] = 1
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)
@@ -38,7 +35,6 @@ FROM
 WHERE
 	[t1].[Array] = 0x010203
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)

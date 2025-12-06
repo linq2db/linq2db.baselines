@@ -1,5 +1,6 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
+DECLARE @Pk Int -- Int32
+SET     @Pk = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -7,34 +8,17 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO "Issue1096Task"
 (
+	"Pk",
 	"Id",
 	"TargetName"
 )
 VALUES
 (
 	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @TargetName NVarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO "Issue1096Task"
-(
-	"Id",
-	"TargetName"
-)
-VALUES
-(
 	?,
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -56,10 +40,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT DISTINCT
+	"t"."Pk",
 	"t"."Id",
 	"t"."TargetName",
 	"a_ActualStage"."Id",

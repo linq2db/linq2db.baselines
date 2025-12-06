@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -22,10 +22,10 @@ WHERE
 				) [t1]
 	) > strftime('%Y-%m-%d %H:%M:%f', '2023-01-01 00:00:00.000')
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

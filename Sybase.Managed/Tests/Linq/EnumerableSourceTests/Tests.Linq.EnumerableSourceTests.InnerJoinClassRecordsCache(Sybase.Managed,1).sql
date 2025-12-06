@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[p].[FirstName],
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3) [n] ON [p].[PersonID] = [n].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -51,7 +49,6 @@ FROM
 WHERE
 	e.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -85,7 +82,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -104,7 +100,6 @@ FROM
 WHERE
 	e.Id = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -154,7 +149,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -173,7 +167,6 @@ FROM
 WHERE
 	e.Id = 3
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

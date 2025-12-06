@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	[Parent].[ParentID] = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT TOP (1)
 	[t].[ParentID],

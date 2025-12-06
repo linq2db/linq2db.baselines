@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data VarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
@@ -34,7 +32,6 @@ VALUES
 	@Data
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 INSERT INTO "TrimTestTable"
@@ -48,7 +45,6 @@ VALUES
 	'***VVV***'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -59,7 +55,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

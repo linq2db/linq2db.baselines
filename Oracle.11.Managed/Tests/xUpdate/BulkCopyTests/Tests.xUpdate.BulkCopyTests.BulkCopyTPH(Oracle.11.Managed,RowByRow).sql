@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Discriminator Int32
@@ -20,7 +19,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	:Value2
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 3
@@ -68,7 +65,6 @@ VALUES
 	:NullableBool
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -83,7 +79,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -98,7 +93,6 @@ FROM
 WHERE
 	x."Discriminator" = 1 AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -113,7 +107,6 @@ FROM
 WHERE
 	x."Discriminator" = 2 AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -128,7 +121,6 @@ FROM
 WHERE
 	x."Discriminator" = 3 AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -143,7 +135,6 @@ FROM
 WHERE
 	x."Value1" = 'Str1' AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -158,7 +149,6 @@ FROM
 WHERE
 	x."Value2" = 'Str2' AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

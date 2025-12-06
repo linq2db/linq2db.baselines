@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 WITH CTE_1 ("Id")
 AS
@@ -45,9 +42,6 @@ FROM
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 WITH CTE_1

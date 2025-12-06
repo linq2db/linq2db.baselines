@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @guid NVarChar(4000) -- String
 SET     @guid = N'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

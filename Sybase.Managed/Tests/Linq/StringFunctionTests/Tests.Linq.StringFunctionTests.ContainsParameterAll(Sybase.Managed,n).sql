@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @s UniVarChar(7) -- String
 SET     @s = '123n456'
 DECLARE @toTest UniVarChar(3) -- String

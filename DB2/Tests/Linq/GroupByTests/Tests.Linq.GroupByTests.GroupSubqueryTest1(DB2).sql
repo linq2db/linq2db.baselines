@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"pmp1"."ChildID"
@@ -14,7 +13,6 @@ FROM
 	) "pmp",
 	"Child" "pmp1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

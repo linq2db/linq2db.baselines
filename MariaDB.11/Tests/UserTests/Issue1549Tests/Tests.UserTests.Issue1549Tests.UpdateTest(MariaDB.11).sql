@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`billing_TempReading` `tr`
@@ -8,8 +7,7 @@ SET
 	`tr`.`DevReadingTypeId` = `drt`.`Id`,
 	`tr`.`Responsibility` = `drt`.`Responsibility`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
 	`billing_TempReading` `t1`

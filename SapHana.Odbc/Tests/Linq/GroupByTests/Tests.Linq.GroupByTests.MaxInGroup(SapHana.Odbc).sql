@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"g_1"."GroupId",
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	"g_1"."GroupId"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM

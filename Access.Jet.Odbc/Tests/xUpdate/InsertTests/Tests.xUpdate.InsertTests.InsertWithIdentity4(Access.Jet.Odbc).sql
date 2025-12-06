@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
@@ -32,12 +30,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John0'
@@ -53,7 +49,6 @@ FROM
 WHERE
 	[p].[FirstName] = ? AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
@@ -79,12 +74,10 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String
 SET     @p = 'John1'
@@ -100,7 +93,6 @@ FROM
 WHERE
 	[p].[FirstName] = ? AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM

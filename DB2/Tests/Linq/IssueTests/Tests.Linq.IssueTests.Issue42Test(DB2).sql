@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"r".ID,
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r".ID = 1
+FETCH NEXT 1 ROWS ONLY
+
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	"r".ID = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"r".ID,
-	"r"."MoneyValue",
-	"r"."DateTimeValue",
-	"r"."DateTimeValue2",
-	"r"."BoolValue",
-	"r"."GuidValue",
-	"r"."SmallIntValue",
-	"r"."IntValue",
-	"r"."BigIntValue",
-	"r"."StringValue"
-FROM
-	"LinqDataTypes" "r"
-WHERE
-	"r".ID = 1
-FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -76,7 +73,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	"r".ID = @ID
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
@@ -136,7 +131,6 @@ SET
 WHERE
 	"t1".ID = @ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

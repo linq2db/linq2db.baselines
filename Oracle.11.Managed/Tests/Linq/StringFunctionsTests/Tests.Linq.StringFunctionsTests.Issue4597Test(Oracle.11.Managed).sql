@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	(
 		SELECT
-			LISTAGG(CAST(a_Children."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY ROWNUM)
+			LISTAGG(CAST(a_Children."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(a_Children."ChildID" AS VarChar(255)))
 		FROM
 			"Child" a_Children
 		WHERE

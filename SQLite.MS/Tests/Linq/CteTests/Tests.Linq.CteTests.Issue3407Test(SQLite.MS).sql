@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 WITH [CTE_1]
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	[r].[ID] = 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 WITH [CTE_1] ([c1])

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String
@@ -26,8 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
@@ -46,8 +44,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
@@ -66,8 +63,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
@@ -86,8 +82,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+-- PostgreSQL.18 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

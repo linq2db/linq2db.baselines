@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
@@ -14,8 +12,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -32,8 +29,7 @@ VALUES
 	:Name
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "FluentTemp" AS t1
 (
@@ -49,8 +45,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"ID" = t1."ID",
 	"Name" = t1."Name"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "FluentTemp"
 

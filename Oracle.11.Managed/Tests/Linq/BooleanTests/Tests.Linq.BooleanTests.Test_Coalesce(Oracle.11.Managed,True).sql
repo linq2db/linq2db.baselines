@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	r."Id",
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", 1) = 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce(r."BooleanN", 0) = 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -87,7 +82,6 @@ WHERE
 		ELSE 0
 	END) = 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

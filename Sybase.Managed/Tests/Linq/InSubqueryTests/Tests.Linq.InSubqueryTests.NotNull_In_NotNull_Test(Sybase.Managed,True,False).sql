@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
+	[t].[PK],
 	[t].[ID]
 FROM
 	[test_in_1] [t]
@@ -15,18 +15,18 @@ WHERE
 			[t].[ID] = [p].[ID]
 	)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_1] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_2] [t1]

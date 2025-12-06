@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`GrandChild`.`GrandChildID` IN (1001, 1002)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `GrandChild`
@@ -23,7 +21,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `GrandChild`
@@ -39,7 +36,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 WHERE
 	`gc`.`ParentID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DELETE   `gc`
@@ -59,7 +54,6 @@ FROM
 WHERE
 	`a_Parent`.`ParentID` = 1 AND `gc`.`GrandChildID` IN (1001, 1002)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

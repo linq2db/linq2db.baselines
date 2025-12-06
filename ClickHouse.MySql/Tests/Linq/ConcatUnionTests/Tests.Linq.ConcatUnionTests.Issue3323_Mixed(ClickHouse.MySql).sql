@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Issue3323Table
 (
 	Id,
-	FistName,
+	FirstName,
 	LastName,
 	Text
 )
@@ -16,12 +15,11 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
 	r.Id,
-	concat(r.FistName, ' ', r.LastName) as Text
+	concat(r.FirstName, ' ', r.LastName) as Text
 FROM
 	Issue3323Table r
 UNION ALL
@@ -31,7 +29,6 @@ SELECT
 FROM
 	Issue3323Table r_1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -42,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	r_1.Id as Id,
-	concat(r_1.FistName, ' ', r_1.LastName) as Text
+	concat(r_1.FirstName, ' ', r_1.LastName) as Text
 FROM
 	Issue3323Table r_1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	`r`.`Value1` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -32,8 +30,7 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -44,8 +41,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -68,8 +64,7 @@ WHERE
 	) = (`r`.`Value5` + @cnt)) OR
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -80,8 +75,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -103,8 +97,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -115,8 +108,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -138,8 +130,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -150,8 +141,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -173,8 +163,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL) AND NOT (`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -185,8 +174,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -208,8 +196,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL) AND NOT (`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -220,8 +207,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -247,8 +233,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -259,8 +244,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -286,8 +270,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -298,8 +281,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -323,8 +305,7 @@ WHERE
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR
 	`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -335,8 +316,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -360,8 +340,7 @@ WHERE
 	`r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR
 	`r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -372,8 +351,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -399,8 +377,7 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -411,8 +388,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -438,8 +414,7 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -450,8 +425,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -473,8 +447,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR `r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -485,8 +458,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -508,8 +480,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) = (`r`.`Value5` + @cnt)) OR `r`.`Value4` IS NULL AND `r`.`Value5` IS NOT NULL OR `r`.`Value4` IS NOT NULL AND `r`.`Value5` IS NULL) AND NOT (`r`.`Value4` IS NULL AND `r`.`Value5` IS NULL))
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -520,8 +491,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -547,8 +517,7 @@ WHERE
 		ELSE 1
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -559,8 +528,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -586,8 +554,7 @@ WHERE
 		ELSE 1
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -598,8 +565,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -621,8 +587,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -633,8 +598,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -656,8 +620,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -668,8 +631,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -691,8 +653,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -703,8 +664,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -726,8 +686,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -738,8 +697,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -761,8 +719,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -773,8 +730,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -796,8 +752,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -808,8 +763,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -831,8 +785,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -843,8 +796,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -866,8 +818,7 @@ WHERE
 			`r_1`.`Value1` = 1
 	) + `r`.`Value5`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -878,8 +829,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -905,8 +855,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -917,8 +866,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -944,8 +892,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -956,8 +903,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -983,8 +929,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -995,8 +940,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -1022,8 +966,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1034,8 +977,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -1061,8 +1003,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1073,8 +1014,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -1100,8 +1040,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1112,8 +1051,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -1139,8 +1077,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1151,8 +1088,7 @@ SELECT
 FROM
 	`BooleanTable` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cnt Int32
 SET     @cnt = 18
 
@@ -1178,8 +1114,7 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

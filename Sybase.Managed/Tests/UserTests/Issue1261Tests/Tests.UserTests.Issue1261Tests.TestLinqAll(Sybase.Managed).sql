@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	CASE
@@ -15,7 +14,6 @@ SELECT
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

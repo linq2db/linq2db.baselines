@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -52,9 +49,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -62,22 +56,16 @@ SELECT
 	[d].[Id] as [Id_1],
 	[d].[Text]
 FROM
-	(
-		SELECT DISTINCT
-			[Item1].[Id]
-		FROM
-			[Names] [Item1]
-	) [m_1]
+	[Names] [m_1]
 		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
+ORDER BY
+	[m_1].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[tupledArg].[Id],
-	[tupledArg].[Name]
+	[tupledArg].[Name] as [Item2]
 FROM
 	[Names] [tupledArg]
 ORDER BY

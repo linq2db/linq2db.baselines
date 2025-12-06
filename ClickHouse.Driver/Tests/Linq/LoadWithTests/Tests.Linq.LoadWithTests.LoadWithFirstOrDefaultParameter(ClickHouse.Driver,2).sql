@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.cond,
@@ -31,7 +30,6 @@ FROM
 	) m_1
 		INNER JOIN Child d_1 ON m_1.cond = d_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -53,7 +51,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 		LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

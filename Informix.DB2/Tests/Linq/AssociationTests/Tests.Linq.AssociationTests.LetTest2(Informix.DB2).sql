@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t.ParentID,
@@ -14,7 +13,6 @@ SELECT
 FROM
 	Parent t
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

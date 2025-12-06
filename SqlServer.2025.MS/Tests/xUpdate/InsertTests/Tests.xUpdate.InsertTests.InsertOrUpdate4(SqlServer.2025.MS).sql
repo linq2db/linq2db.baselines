@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -56,7 +54,6 @@ WHEN NOT MATCHED THEN
 		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -86,7 +83,6 @@ WHEN NOT MATCHED THEN
 		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -116,7 +112,6 @@ WHEN NOT MATCHED THEN
 		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
-BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5

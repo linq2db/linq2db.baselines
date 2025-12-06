@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`x`.`ChildID`,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN `Person` `p2` ON `x`.`ParentID` = `p2`.`PersonID`
 		INNER JOIN `Person` `p3` ON `x`.`ChildID` = `p3`.`PersonID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

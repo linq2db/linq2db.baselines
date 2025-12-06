@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id],

@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

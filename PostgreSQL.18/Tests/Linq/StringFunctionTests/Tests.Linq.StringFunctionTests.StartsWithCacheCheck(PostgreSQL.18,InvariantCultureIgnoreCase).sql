@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -21,7 +19,6 @@ FROM
 WHERE
 	p."FirstName" ILIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'

@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -20,8 +20,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2005 (asynchronously)
+-- SqlServer.2005
 
 DELETE [s]
 OUTPUT
@@ -39,7 +38,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -49,7 +47,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_target]', N'U') IS NOT NULL)

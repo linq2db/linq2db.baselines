@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p.ParentID,
@@ -23,7 +22,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -41,7 +38,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

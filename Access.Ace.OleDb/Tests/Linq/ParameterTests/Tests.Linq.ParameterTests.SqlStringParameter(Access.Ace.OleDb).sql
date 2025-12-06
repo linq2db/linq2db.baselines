@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p VarWChar(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[t].[FirstName] = @p
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @p VarWChar(6) -- String
 SET     @p = 'Tester'

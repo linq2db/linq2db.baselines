@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."ParentID",
@@ -7,8 +6,7 @@ SELECT
 FROM
 	"Parent" "t1"
 
-BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+-- Firebird.2.5 Firebird
 
 SELECT
 	"t1"."ParentID",

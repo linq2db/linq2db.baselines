@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[temp_table1]
 (
@@ -18,17 +18,17 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (1,2)
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[temp_table2]
 (
@@ -41,7 +41,6 @@ SELECT
 FROM
 	temp.[temp_table1] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -50,7 +49,6 @@ SELECT
 FROM
 	temp.[temp_table1] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -59,8 +57,7 @@ SELECT
 FROM
 	temp.[temp_table2] [t1]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[temp_table1]
 (
@@ -70,8 +67,7 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (2,3)
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @Value  -- Int32
@@ -88,8 +84,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[temp_table1]
 (
@@ -99,22 +94,18 @@ INSERT INTO temp.[temp_table1]
 VALUES
 (4,5)
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 DELETE FROM temp.[temp_table1]
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 DELETE FROM temp.[temp_table2]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[temp_table2]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[temp_table1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_2"."ParentID",
@@ -21,7 +20,6 @@ FROM
 ORDER BY
 	"m_2"."ChildID" DESC
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

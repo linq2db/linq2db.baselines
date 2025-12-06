@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(r."One" = r."One") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(r."Zero" = r."Zero") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(r."Null" = r."Null") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(r."One" = r."Zero") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	(r."One" = r."Null") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	(r."Zero" = r."Null") = FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	(r."One" = r."One") <> FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	(r."Zero" = r."Zero") <> FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	(r."Null" = r."Null") <> FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	(r."One" = r."Zero") <> FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	(r."One" = r."Null") <> FALSE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,25 +1,25 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 CREATE TEMP TABLE IF NOT EXISTS temp_table1
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 INSERT BULK temp_table1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 CREATE TEMP TABLE IF NOT EXISTS temp_table2
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 INSERT INTO temp_table2
@@ -33,7 +33,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -42,7 +41,6 @@ SELECT
 FROM
 	temp_table1 t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	temp_table2 t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 2
@@ -69,7 +66,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
@@ -87,25 +83,20 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 INSERT BULK temp_table1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 TRUNCATE TABLE temp_table1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 TRUNCATE TABLE temp_table2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS temp_table2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS temp_table1

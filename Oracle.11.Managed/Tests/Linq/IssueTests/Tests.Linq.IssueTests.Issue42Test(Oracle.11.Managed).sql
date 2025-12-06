@@ -1,4 +1,21 @@
-﻿BeforeExecute
+﻿-- Oracle.11.Managed Oracle11
+
+SELECT
+	r.ID,
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r.ID = 1 AND ROWNUM <= 1
+
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -17,26 +34,6 @@ FROM
 WHERE
 	r.ID = 1 AND ROWNUM <= 1
 
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	r.ID,
-	r."MoneyValue",
-	r."DateTimeValue",
-	r."DateTimeValue2",
-	r."BoolValue",
-	r."GuidValue",
-	r."SmallIntValue",
-	r."IntValue",
-	r."BigIntValue",
-	r."StringValue"
-FROM
-	"LinqDataTypes" r
-WHERE
-	r.ID = 1 AND ROWNUM <= 1
-
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -74,7 +71,6 @@ SET
 WHERE
 	t1.ID = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
@@ -95,7 +91,6 @@ FROM
 WHERE
 	r.ID = :ID AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -133,7 +128,6 @@ SET
 WHERE
 	t1.ID = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

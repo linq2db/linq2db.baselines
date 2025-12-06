@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Count_1`
@@ -18,7 +15,6 @@ WHERE
 	`t1`.`Count_1` = 0
 FOR UPDATE
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Datetime -- DateTime
 SET     @p = '2020-02-29 17:54:55.123'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -31,7 +30,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Age AS Int)
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1
@@ -43,7 +41,6 @@ FROM
 WHERE
 	"t"."Id" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -76,7 +73,6 @@ WHEN NOT MATCHED THEN
 		CAST(@Age AS Int)
 	)
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`nm`.`MiddleName`
@@ -8,7 +7,6 @@ FROM
 WHERE
 	NOT (`nm`.`MiddleName` IS NULL OR CHAR_LENGTH(`nm`.`MiddleName`) = 0)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

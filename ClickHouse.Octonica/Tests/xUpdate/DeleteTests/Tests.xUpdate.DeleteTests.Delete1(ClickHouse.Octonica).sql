@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent
@@ -20,7 +18,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -30,7 +27,6 @@ FROM
 WHERE
 	p.ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -38,7 +34,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

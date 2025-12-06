@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TestInsertOrReplaceTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'John'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

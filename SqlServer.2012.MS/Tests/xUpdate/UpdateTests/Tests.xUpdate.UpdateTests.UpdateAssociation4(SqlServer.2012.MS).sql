@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Parent]
 (
@@ -12,7 +11,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [Child]
@@ -26,7 +24,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 5

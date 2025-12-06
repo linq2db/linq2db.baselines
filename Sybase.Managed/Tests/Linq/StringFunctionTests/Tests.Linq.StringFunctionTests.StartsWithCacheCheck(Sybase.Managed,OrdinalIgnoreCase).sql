@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	Lower([p].[FirstName]) LIKE 'joh%' ESCAPE '~' AND [p].[PersonID] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [DropTableTestID]
@@ -14,7 +12,6 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 INSERT INTO [DropTableTestID]
@@ -26,7 +23,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -35,12 +31,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

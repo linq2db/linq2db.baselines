@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	c_1.ParentID,
@@ -9,7 +8,6 @@ FROM
 WHERE
 	c_1.ParentID = 2 AND c_1.Value1 IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

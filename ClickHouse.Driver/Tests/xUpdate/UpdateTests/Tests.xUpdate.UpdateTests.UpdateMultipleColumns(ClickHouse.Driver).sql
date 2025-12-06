@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO LinqDataTypes
 (
@@ -14,7 +13,6 @@ VALUES
 	toInt16(100)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -25,7 +23,6 @@ UPDATE
 WHERE
 	ID = 1001
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

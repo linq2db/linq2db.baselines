@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	MAX([t1].[PersonID]) as [MAX_1]
+	MAX([t1].[PersonID]) as [Max_1]
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)
@@ -46,7 +43,6 @@ FROM
 WHERE
 	[p].[PersonID] > 4
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM

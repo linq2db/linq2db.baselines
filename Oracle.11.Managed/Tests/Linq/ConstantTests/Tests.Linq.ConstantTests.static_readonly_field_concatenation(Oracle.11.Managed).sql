@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	e."Id",
@@ -11,7 +10,6 @@ FROM
 WHERE
 	e."StringValue" || '1' = 'StrValue1'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

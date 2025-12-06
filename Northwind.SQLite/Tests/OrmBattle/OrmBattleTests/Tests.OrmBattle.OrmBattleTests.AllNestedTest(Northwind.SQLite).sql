@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[t1].[CustomerID],
@@ -16,7 +15,6 @@ SELECT
 FROM
 	[Customers] [t1]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -41,7 +39,6 @@ SELECT
 FROM
 	[Employees] [t1]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -58,7 +55,6 @@ SELECT
 FROM
 	[Products] [t1]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -79,7 +75,6 @@ SELECT
 FROM
 	[Orders] [t1]
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT

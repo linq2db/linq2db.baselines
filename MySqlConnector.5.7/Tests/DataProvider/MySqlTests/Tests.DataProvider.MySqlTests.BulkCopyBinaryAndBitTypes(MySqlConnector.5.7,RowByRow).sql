@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SET GLOBAL local_infile=ON
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
@@ -23,9 +21,9 @@ DECLARE @Binary_1 Blob -- Binary
 SET     @Binary_1 = NULL
 DECLARE @Binary_2 Blob -- Binary
 SET     @Binary_2 = NULL
-DECLARE @Binary_3 VarChar -- String
+DECLARE @Binary_3 Blob -- Binary
 SET     @Binary_3 = NULL
-DECLARE @Binary_4 VarChar -- String
+DECLARE @Binary_4 Blob -- Binary
 SET     @Binary_4 = NULL
 DECLARE @VarBinary_1 Blob -- Binary
 SET     @VarBinary_1 = NULL
@@ -97,7 +95,6 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 2
@@ -191,7 +188,6 @@ VALUES
 	@LongBlob_2
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 

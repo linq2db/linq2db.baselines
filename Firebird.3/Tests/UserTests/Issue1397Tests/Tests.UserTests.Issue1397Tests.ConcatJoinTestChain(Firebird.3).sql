@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"m_1"."ParentID",
@@ -22,7 +21,6 @@ FROM
 				"t"."ParentID" = 2
 		) "t1" ON "m_1"."ParentID" = "t1"."ParentID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

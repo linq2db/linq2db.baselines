@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
@@ -14,7 +13,6 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
@@ -30,7 +28,6 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
@@ -46,7 +43,6 @@ VALUES
 	:Field1
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

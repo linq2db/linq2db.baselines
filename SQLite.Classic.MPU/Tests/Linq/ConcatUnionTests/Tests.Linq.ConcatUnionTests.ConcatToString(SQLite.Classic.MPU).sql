@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @pattern NVarChar(3) -- String
 SET     @pattern = '%1%'
 DECLARE @take  -- Int32

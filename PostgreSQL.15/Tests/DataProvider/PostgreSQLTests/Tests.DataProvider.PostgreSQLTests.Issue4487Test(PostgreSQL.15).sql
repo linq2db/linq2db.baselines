@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DROP TYPE IF EXISTS "item_type_enum";
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 CREATE TYPE "item_type_enum" AS ENUM (
@@ -12,7 +10,6 @@ CREATE TYPE "item_type_enum" AS ENUM (
   'type3'
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -30,12 +27,10 @@ VALUES
 	:Value
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 insert into "Issue4487Table"("Id", "Values") values (2, '{type3,type2}')
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -53,7 +48,6 @@ VALUES
 	:Values
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -65,7 +59,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TYPE IF EXISTS "item_type_enum";

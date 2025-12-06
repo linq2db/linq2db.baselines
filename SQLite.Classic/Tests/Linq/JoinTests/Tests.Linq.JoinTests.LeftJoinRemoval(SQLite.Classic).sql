@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[ch1].[ParentID],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN [Child] [ch] ON [t1].[ParentID] = [ch].[ParentID]
 		INNER JOIN [Child] [ch1] ON [ch].[ChildID] = [ch1].[ChildID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

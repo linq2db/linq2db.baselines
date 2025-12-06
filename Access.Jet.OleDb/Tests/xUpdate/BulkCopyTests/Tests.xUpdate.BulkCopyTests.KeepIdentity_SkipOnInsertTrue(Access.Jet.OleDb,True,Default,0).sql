@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -12,12 +11,10 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3

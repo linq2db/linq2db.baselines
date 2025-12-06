@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t"."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Asin(CAST("p"."MoneyValue" AS Float) / 15) * 15) as "Value_1"
+			Floor(Asin(CAST("p"."MoneyValue" AS DOUBLE PRECISION) / 15) * 15) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	toDateTime(concat(toString(toYear(t.DateTimeValue)), '-01-01 00:20:00'))

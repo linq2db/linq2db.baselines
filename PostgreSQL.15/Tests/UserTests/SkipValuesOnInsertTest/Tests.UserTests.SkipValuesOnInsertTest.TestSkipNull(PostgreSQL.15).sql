@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	:Name
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

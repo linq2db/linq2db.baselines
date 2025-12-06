@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -12,13 +11,11 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO [AllTypes]
 (
@@ -28,7 +25,6 @@ VALUES
 (200),
 (300)
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
@@ -43,7 +39,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3

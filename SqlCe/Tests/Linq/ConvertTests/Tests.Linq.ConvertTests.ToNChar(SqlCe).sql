@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CAST([t].[MoneyValue] AS NChar(20)) as [c1]

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE
 	[t1].[ID] > 1000
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @data VarBinary -- Binary
 SET     @data = NULL
@@ -24,7 +22,6 @@ VALUES
 	True
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF (OBJECT_ID(N'[TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [TestTable]
 
-BeforeExecute
 -- SqlServer.2005
 
 CREATE TABLE [TestTable]
@@ -17,7 +15,6 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	[TestTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 DROP TABLE [TestTable]

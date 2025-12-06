@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -34,7 +32,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
@@ -52,7 +49,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1003
@@ -70,7 +66,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1004
@@ -88,7 +83,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1005
@@ -106,7 +100,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1006
@@ -124,7 +117,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1007
@@ -142,7 +134,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1008
@@ -160,7 +151,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1009
@@ -178,7 +168,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @skip Integer -- Int32
 SET     @skip = 2
@@ -195,7 +184,6 @@ ORDER BY
 	"x"."ParentID" DESC
 ROWS @skip + 1 TO @skip + @take
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

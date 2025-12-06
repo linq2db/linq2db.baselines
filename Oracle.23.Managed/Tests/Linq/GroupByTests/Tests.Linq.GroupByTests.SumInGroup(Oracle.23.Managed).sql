@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	g_1."GroupId",
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	g_1."GroupId"
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1."Id",
 	t1."GroupId",
 	t1."DataValue"
 FROM

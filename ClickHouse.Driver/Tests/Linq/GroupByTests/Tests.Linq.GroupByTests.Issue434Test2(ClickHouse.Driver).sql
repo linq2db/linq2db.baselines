@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	position(lowerUTF8(m_1.FirstName), 'test') > 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @id Uuid -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Uuid -- Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id2 Uuid -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid

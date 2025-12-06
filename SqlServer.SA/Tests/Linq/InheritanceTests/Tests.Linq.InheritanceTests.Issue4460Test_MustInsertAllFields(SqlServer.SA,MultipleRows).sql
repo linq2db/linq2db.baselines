@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +10,6 @@ INSERT INTO [Issue4460Table]
 VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

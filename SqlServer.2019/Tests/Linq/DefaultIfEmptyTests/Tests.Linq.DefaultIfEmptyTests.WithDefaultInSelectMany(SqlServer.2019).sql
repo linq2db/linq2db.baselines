@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[s].[ParentID],
@@ -11,9 +10,6 @@ FROM
 WHERE
 	[c_1].[ChildID] < 0 OR [c_1].[ParentID] IS NULL
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -29,9 +25,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2019
 
 SELECT

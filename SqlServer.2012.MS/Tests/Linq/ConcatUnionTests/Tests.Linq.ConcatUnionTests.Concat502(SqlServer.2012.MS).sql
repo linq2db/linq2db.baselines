@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[p_1].[cond],
@@ -9,8 +8,8 @@ FROM
 	(
 		SELECT
 			[a_Parent].[ParentID] as [cond],
-			[a_Parent].[ParentID],
-			[a_Parent].[Value1]
+			[a_Parent].[Value1],
+			[a_Parent].[ParentID]
 		FROM
 			[Child] [p]
 				LEFT JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
@@ -19,8 +18,8 @@ FROM
 		UNION ALL
 		SELECT
 			[a_Parent_1].[ParentID] as [cond],
-			[a_Parent_1].[ParentID],
-			[a_Parent_1].[Value1]
+			[a_Parent_1].[Value1],
+			[a_Parent_1].[ParentID]
 		FROM
 			[Child] [c_1]
 				LEFT JOIN [Parent] [a_Parent_1] ON [c_1].[ParentID] = [a_Parent_1].[ParentID]

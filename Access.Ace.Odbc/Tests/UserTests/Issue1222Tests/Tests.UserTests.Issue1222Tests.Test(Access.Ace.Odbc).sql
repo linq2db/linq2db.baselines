@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 DECLARE @parentId Int -- Int32

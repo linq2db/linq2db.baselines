@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String
@@ -59,7 +58,6 @@ WHERE
 	LOCATE(@carNo, `x`.`CarNo`) > 0 AND LOCATE(@carBrand, `x`.`CarBrand`) > 0
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL

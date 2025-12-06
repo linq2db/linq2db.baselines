@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @filter1 VarChar(4) -- String
 SET     @filter1 = 'John'
 DECLARE @filter2 VarChar(6) -- String
@@ -44,8 +43,7 @@ WHERE
 ORDER BY
 	`p`.`PersonID`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`PersonID`,
@@ -53,8 +51,7 @@ SELECT
 FROM
 	`Patient` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`FirstName`,

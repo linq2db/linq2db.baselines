@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @dt Date -- DateTime
 SET     @dt = #2020-02-29 17:54:55#
 

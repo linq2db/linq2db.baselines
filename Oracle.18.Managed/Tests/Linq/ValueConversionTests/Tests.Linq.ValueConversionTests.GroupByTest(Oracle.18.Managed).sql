@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @testedList NVarchar2(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -22,9 +19,6 @@ FROM
 WHERE
 	:testedList = m_1."Value2"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @testedList NVarchar2(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'

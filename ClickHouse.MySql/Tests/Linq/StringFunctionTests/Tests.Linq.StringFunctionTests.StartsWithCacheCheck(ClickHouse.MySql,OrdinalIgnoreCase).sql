@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	p.FirstName
@@ -9,7 +8,6 @@ WHERE
 	p.PersonID = 1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -19,7 +17,6 @@ FROM
 WHERE
 	startsWith(lowerUTF8(p.FirstName), 'joh') AND p.PersonID = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

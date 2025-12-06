@@ -1,32 +1,18 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1096Task
 (
+	Pk,
 	Id,
 	TargetName
 )
 VALUES
 (
 	1,
-	'bda.Requests'
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO Issue1096Task
-(
-	Id,
-	TargetName
-)
-VALUES
-(
 	1,
 	'bda.Requests'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1096TaskStage
@@ -42,10 +28,10 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
+	t.Pk,
 	t.Id,
 	t.TargetName,
 	a_ActualStage.Id,

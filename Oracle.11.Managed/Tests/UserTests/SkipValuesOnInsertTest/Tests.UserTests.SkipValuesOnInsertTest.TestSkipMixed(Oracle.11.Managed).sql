@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 WHERE
 	t."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Age Int32
 SET     @Age = 20
@@ -46,7 +43,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -58,7 +54,6 @@ FROM
 WHERE
 	t."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -88,7 +82,6 @@ FROM
 WHERE
 	t."Id" = 2 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(5) -- String
 SET     @Name = 'Jessy'
@@ -105,7 +98,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

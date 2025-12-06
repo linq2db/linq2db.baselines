@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111001
 DECLARE @:p2 Integer -- Int32
@@ -260,8 +257,7 @@ VALUES
 (:p97,:p98),
 (:p99,:p100)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111051
 DECLARE @:p2 Integer -- Int32
@@ -520,8 +516,7 @@ VALUES
 (:p97,:p98),
 (:p99,:p100)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111101
 DECLARE @:p2 Integer -- Int32
@@ -775,8 +770,7 @@ VALUES
 (:p95,:p96),
 (:p97,:p98)
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
 DECLARE @ParentID_1 Integer -- Int32
@@ -789,5 +783,3 @@ FROM
 WHERE
 	r."ParentID" >= :ParentID AND r."ParentID" <= :ParentID_1
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @someId Integer -- Int32
@@ -97,7 +96,6 @@ WHERE
 			"UpdatedEntities"."id" = "t1"."id"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

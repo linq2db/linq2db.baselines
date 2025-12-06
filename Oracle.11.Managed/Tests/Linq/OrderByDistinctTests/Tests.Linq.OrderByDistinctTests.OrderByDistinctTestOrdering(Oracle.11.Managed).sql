@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -25,7 +24,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -54,7 +52,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -81,7 +78,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -110,7 +106,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -137,7 +132,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -167,7 +161,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -194,7 +187,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -224,7 +216,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -251,7 +242,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -281,7 +271,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0
@@ -308,7 +297,6 @@ FROM
 WHERE
 	t2.RN > :skip
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 0

@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK "TestIssue3895BulkCopy"(timestampDataType, timestampTZDataType)
+﻿INSERT BULK "TestIssue3895BulkCopy"(timestampDataType, timestampTZDataType)
 

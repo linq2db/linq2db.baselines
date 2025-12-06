@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	Parent.ParentID = @ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -26,7 +24,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -38,7 +35,6 @@ FROM
 WHERE
 	p.ParentID = @ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
@@ -48,7 +44,6 @@ DELETE FROM
 WHERE
 	Parent.ParentID = @ParentID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001

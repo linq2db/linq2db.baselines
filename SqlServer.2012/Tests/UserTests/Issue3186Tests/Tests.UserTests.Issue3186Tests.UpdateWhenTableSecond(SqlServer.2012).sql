@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[ct].[id] = N'TestProcessService'
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
@@ -15,8 +14,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -29,8 +27,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
 SELECT
@@ -46,8 +43,7 @@ FROM
 WHERE
 	`x_with_not`.`IntVlaue` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -60,8 +56,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
 SELECT
@@ -77,8 +72,7 @@ FROM
 WHERE
 	`swap`.`IntVlaue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -91,8 +85,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
 SELECT
@@ -108,8 +101,7 @@ FROM
 WHERE
 	`swap_with_not`.`IntVlaue` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -122,8 +114,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
 SELECT
@@ -139,8 +130,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -153,8 +143,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
 SELECT
@@ -168,8 +157,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -182,8 +170,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
 SELECT
@@ -199,8 +186,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -213,8 +199,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
 SELECT
@@ -228,8 +213,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -242,8 +226,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
 SELECT
@@ -259,8 +242,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -273,8 +255,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -290,8 +271,7 @@ FROM
 WHERE
 	`x_with_not`.`IntVlaue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -304,8 +284,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
 SELECT
@@ -321,8 +300,7 @@ FROM
 WHERE
 	`swap`.`IntVlaue` <> 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -335,8 +313,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
 SELECT
@@ -352,8 +329,7 @@ FROM
 WHERE
 	`swap_with_not`.`IntVlaue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -366,8 +342,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.BoolValue ? True : False == True */
 SELECT
@@ -383,8 +358,7 @@ FROM
 WHERE
 	`x`.`BoolValue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -397,8 +371,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
 SELECT
@@ -414,8 +387,7 @@ FROM
 WHERE
 	`x_with_not`.`BoolValue` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -428,8 +400,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => True == swap.BoolValue ? True : False */
 SELECT
@@ -445,8 +416,7 @@ FROM
 WHERE
 	`swap`.`BoolValue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -459,8 +429,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
 SELECT
@@ -476,8 +445,7 @@ FROM
 WHERE
 	`swap_with_not`.`BoolValue` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -490,8 +458,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
 SELECT
@@ -507,8 +474,7 @@ FROM
 WHERE
 	NOT `x`.`BoolValue`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -521,8 +487,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -538,8 +503,7 @@ FROM
 WHERE
 	`x_with_not`.`BoolValue`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -552,8 +516,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
 SELECT
@@ -569,8 +532,7 @@ FROM
 WHERE
 	NOT `swap`.`BoolValue`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -583,8 +545,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
 SELECT
@@ -600,8 +561,7 @@ FROM
 WHERE
 	`swap_with_not`.`BoolValue`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -614,8 +574,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.BoolValue == True ? True : False == True */
 SELECT
@@ -631,8 +590,7 @@ FROM
 WHERE
 	`x`.`BoolValue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -645,8 +603,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
 SELECT
@@ -662,8 +619,7 @@ FROM
 WHERE
 	`x_with_not`.`BoolValue` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -676,8 +632,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => True == swap.BoolValue == True ? True : False */
 SELECT
@@ -693,8 +648,7 @@ FROM
 WHERE
 	`swap`.`BoolValue` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -707,8 +661,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
 SELECT
@@ -724,8 +677,7 @@ FROM
 WHERE
 	`swap_with_not`.`BoolValue` = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -738,8 +690,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
 SELECT
@@ -755,8 +706,7 @@ FROM
 WHERE
 	`x`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -769,8 +719,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
 SELECT
@@ -786,8 +735,7 @@ FROM
 WHERE
 	`x_with_not`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -800,8 +748,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -817,8 +764,7 @@ FROM
 WHERE
 	`swap`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -831,8 +777,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -848,8 +793,7 @@ FROM
 WHERE
 	`swap_with_not`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -862,8 +806,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
 SELECT
@@ -879,8 +822,7 @@ FROM
 WHERE
 	`x`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -893,8 +835,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
 SELECT
@@ -910,8 +851,7 @@ FROM
 WHERE
 	`x_with_not`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -924,8 +864,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
 SELECT
@@ -941,8 +880,7 @@ FROM
 WHERE
 	`swap`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -955,8 +893,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
 SELECT
@@ -972,8 +909,7 @@ FROM
 WHERE
 	`swap_with_not`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -986,8 +922,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
 SELECT
@@ -1003,8 +938,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1017,8 +951,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
 SELECT
@@ -1032,8 +965,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1046,8 +978,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
 SELECT
@@ -1061,8 +992,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1075,8 +1005,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
 SELECT
@@ -1092,8 +1021,7 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1106,8 +1034,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
 SELECT
@@ -1123,8 +1050,7 @@ FROM
 WHERE
 	`x`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1137,8 +1063,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
 SELECT
@@ -1154,8 +1079,7 @@ FROM
 WHERE
 	`x_with_not`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1168,8 +1092,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
 SELECT
@@ -1185,8 +1108,7 @@ FROM
 WHERE
 	`x`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1199,8 +1121,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
 SELECT
@@ -1216,8 +1137,7 @@ FROM
 WHERE
 	`x_with_not`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1230,8 +1150,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -1247,8 +1166,7 @@ FROM
 WHERE
 	`swap`.`StringValueNullable` IS NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1261,8 +1179,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -1278,8 +1195,7 @@ FROM
 WHERE
 	`swap_with_not`.`StringValueNullable` IS NOT NULL
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1292,8 +1208,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
 SELECT
@@ -1316,8 +1231,7 @@ WHERE
 		ELSE 1
 	END = 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1330,8 +1244,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
 SELECT
@@ -1354,8 +1267,7 @@ WHERE
 		ELSE 1
 	END <> 2
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1368,8 +1280,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
 SELECT
@@ -1392,8 +1303,7 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1406,8 +1316,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
 SELECT
@@ -1430,8 +1339,7 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1444,8 +1352,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
 SELECT
@@ -1461,8 +1368,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` = 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1475,8 +1381,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
 SELECT
@@ -1492,8 +1397,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1506,8 +1410,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
 SELECT
@@ -1523,8 +1426,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` < 4 OR `x_with_not`.`IntVlaue` <> 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1537,8 +1439,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
 SELECT
@@ -1554,8 +1455,7 @@ FROM
 WHERE
 	`swap`.`IntVlaue` < 4 OR `swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1568,8 +1468,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
 SELECT
@@ -1585,8 +1484,7 @@ FROM
 WHERE
 	NOT (`swap_with_not`.`IntVlaue` < 4 OR `swap_with_not`.`IntVlaue` <> 0 AND `swap_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1599,8 +1497,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
 SELECT
@@ -1616,8 +1513,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1630,8 +1526,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
 SELECT
@@ -1647,8 +1542,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` < 4 OR `x_with_not`.`IntVlaue` > 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1661,8 +1555,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
 SELECT
@@ -1678,8 +1571,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` < 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1692,8 +1584,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
 SELECT
@@ -1709,8 +1600,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` < 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1723,8 +1613,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
 SELECT
@@ -1740,8 +1629,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1754,8 +1642,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
 SELECT
@@ -1771,8 +1658,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` < 4 OR `x_with_not`.`IntVlaue` >= 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1785,8 +1671,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
 SELECT
@@ -1802,8 +1687,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` <= 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1816,8 +1700,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
 SELECT
@@ -1833,8 +1716,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` <= 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1847,8 +1729,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
 SELECT
@@ -1864,8 +1745,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` = 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1878,8 +1758,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
 SELECT
@@ -1895,8 +1774,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` = 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1909,8 +1787,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -1926,8 +1803,7 @@ FROM
 WHERE
 	`swap`.`IntVlaue` = 0 AND `swap`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1940,8 +1816,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -1957,8 +1832,7 @@ FROM
 WHERE
 	NOT (`swap_with_not`.`IntVlaue` = 0 AND `swap_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -1971,8 +1845,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
 SELECT
@@ -1988,8 +1861,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2002,8 +1874,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
 SELECT
@@ -2019,8 +1890,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` <> 0 AND `x_with_not`.`IntVlaue` >= 4 OR `x_with_not`.`IntVlaue` < 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2033,8 +1903,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -2051,8 +1920,7 @@ WHERE
 	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR
 	`swap`.`IntVlaue` < 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2065,8 +1933,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -2082,8 +1949,7 @@ FROM
 WHERE
 	NOT (`swap_with_not`.`IntVlaue` <> 0 AND `swap_with_not`.`IntVlaue` >= 4 OR `swap_with_not`.`IntVlaue` < 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2096,8 +1962,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
 SELECT
@@ -2113,8 +1978,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2127,8 +1991,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
 SELECT
@@ -2144,8 +2007,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` > 0 AND `x_with_not`.`IntVlaue` >= 4 OR `x_with_not`.`IntVlaue` < 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2158,8 +2020,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
 SELECT
@@ -2175,8 +2036,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` < 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2189,8 +2049,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
 SELECT
@@ -2206,8 +2065,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` < 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2220,8 +2078,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
 SELECT
@@ -2237,8 +2094,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2251,8 +2107,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
 SELECT
@@ -2268,8 +2123,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` >= 0 AND `x_with_not`.`IntVlaue` >= 4 OR `x_with_not`.`IntVlaue` < 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2282,8 +2136,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
 SELECT
@@ -2299,8 +2152,7 @@ FROM
 WHERE
 	`x`.`IntVlaue` <= 0 AND `x`.`IntVlaue` >= 4
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -2313,8 +2165,7 @@ SELECT
 FROM
 	`OptimizationData` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
 SELECT
@@ -2330,8 +2181,7 @@ FROM
 WHERE
 	NOT (`x_with_not`.`IntVlaue` <= 0 AND `x_with_not`.`IntVlaue` >= 4)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

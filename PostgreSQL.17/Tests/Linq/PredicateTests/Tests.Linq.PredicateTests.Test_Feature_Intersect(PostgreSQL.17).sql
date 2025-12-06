@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -14,7 +13,6 @@ WHERE
 			r."One"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -30,7 +28,6 @@ WHERE
 			r."Zero"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -46,7 +43,6 @@ WHERE
 			r."Null"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -62,7 +58,6 @@ WHERE
 			r."Zero"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -78,7 +73,6 @@ WHERE
 			r."Null"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -94,7 +88,6 @@ WHERE
 			r."Null"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -110,7 +103,6 @@ WHERE
 			r."One"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -126,7 +118,6 @@ WHERE
 			r."Zero"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -142,7 +133,6 @@ WHERE
 			r."Null"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -158,7 +148,6 @@ WHERE
 			r."Zero"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -174,7 +163,6 @@ WHERE
 			r."Null"
 	)
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT

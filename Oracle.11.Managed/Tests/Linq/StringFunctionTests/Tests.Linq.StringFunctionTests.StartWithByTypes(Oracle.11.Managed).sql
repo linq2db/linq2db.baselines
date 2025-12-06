@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 Char(5) -- StringFixedLength

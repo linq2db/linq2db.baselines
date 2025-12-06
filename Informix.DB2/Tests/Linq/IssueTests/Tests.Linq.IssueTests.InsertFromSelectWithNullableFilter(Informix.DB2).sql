@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 INSERT INTO InsertIssueTest
 (
+	Pk,
 	ID,
 	intDataType
 )
 SELECT
+	t2.ID,
 	123,
 	t2.ID
 FROM
@@ -20,17 +21,18 @@ FROM
 			1 = 0
 	) t2
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @cond SmallInt(2) -- Int16
 SET     @cond = 1234
 
 INSERT INTO InsertIssueTest
 (
+	Pk,
 	ID,
 	intDataType
 )
 SELECT
+	t2.ID,
 	123,
 	t2.ID
 FROM
@@ -44,10 +46,10 @@ FROM
 			t1.ID = @cond
 	) t2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.ID,
 	t1.intDataType
 FROM

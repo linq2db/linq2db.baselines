@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 /* My Test */
 UPDATE
@@ -9,7 +8,6 @@ SET
 WHERE
 	[TestTable].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 
 /* My Test */

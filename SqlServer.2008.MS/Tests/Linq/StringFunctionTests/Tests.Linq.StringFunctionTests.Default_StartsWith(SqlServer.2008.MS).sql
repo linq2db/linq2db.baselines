@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE N'TestSt%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -47,7 +43,6 @@ FROM
 WHERE
 	[r].[CaseInsensitive] LIKE N'TestSt%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -57,7 +52,6 @@ FROM
 WHERE
 	[r].[CaseSensitive] LIKE N'testst%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

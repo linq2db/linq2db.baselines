@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 2
 
@@ -27,5 +26,6 @@ FROM
 WHERE
 	c_1."ParentID" = :id
 ORDER BY
-	c_1."ParentID" DESC
+	c_1."ParentID" DESC,
+	c_1."ChildID"
 

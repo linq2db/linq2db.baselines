@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 
 
 select 1, 1 from INFORMATION_SCHEMA.TABLES where 1 = 0;

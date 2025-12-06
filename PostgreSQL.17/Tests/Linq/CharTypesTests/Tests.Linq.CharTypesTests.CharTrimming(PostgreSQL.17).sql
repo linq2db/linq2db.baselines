@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -20,7 +18,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '	'
@@ -34,7 +31,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '
@@ -49,7 +45,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
@@ -63,7 +58,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
@@ -77,7 +71,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
@@ -91,7 +84,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -105,7 +97,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -119,7 +110,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -133,7 +123,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -147,7 +136,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -161,7 +149,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -175,7 +162,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -189,7 +175,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -203,7 +188,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -217,7 +201,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -231,7 +214,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -245,7 +227,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
@@ -259,7 +240,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '　'
@@ -273,7 +253,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = NULL
@@ -287,7 +266,6 @@ VALUES
 	:NChar
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
@@ -302,7 +280,6 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2

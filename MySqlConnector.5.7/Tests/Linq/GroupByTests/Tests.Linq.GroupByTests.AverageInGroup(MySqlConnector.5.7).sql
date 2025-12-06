@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`g_1`.`GroupId`,
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	`g_1`.`GroupId`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`GroupId`,
 	`t1`.`DataValue`
 FROM

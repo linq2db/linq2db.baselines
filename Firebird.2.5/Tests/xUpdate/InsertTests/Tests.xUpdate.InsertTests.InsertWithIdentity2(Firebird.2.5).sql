@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -26,7 +24,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -40,7 +37,6 @@ FROM
 WHERE
 	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

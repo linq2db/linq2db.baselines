@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	IIF(LEN([t1].[FirstName] + N'.') > 5, 1, 0)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Field1",
@@ -8,7 +7,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

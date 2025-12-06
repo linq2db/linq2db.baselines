@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000

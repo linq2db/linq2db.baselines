@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	nm."FirstName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Length(nm."FirstName") <> 0
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

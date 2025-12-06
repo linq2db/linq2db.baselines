@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John0'
@@ -36,7 +34,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(5) -- String
 SET     @p = 'John0'
@@ -53,7 +50,6 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
@@ -83,7 +79,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(5) -- String
 SET     @p = 'John1'
@@ -100,7 +95,6 @@ WHERE
 	p."FirstName" = :p AND p."LastName" = 'Shepard'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM

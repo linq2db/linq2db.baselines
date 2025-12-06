@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Int16
 SET     @Column_1 = 255
 DECLARE @ColumnNullable Int16
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	r."Column" = 255 AND r."ColumnNullable" = 2
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -102,7 +94,6 @@ INSERT ALL
 	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -114,13 +105,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -128,7 +117,6 @@ INSERT ALL
 	INTO "ByteTable" ("Id", "Column", "ColumnNullable") VALUES (2,255,2)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

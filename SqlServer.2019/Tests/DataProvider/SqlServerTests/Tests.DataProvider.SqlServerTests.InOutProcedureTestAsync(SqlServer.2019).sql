@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
--- SqlServer.2019 (asynchronously)
+-- SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1234
 DECLARE @outputID Int -- Int32

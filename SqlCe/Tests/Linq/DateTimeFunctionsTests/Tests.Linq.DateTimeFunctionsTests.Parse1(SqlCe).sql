@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	CAST(CONVERT(NVarChar(10), [d].[DateTimeValue], 101) AS DateTime) as [Date_1]

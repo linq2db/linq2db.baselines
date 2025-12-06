@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [FluentTemp]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [FluentTemp]
@@ -14,7 +12,6 @@ CREATE TABLE IF NOT EXISTS [FluentTemp]
 	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [FluentTemp] AS [t1]
@@ -49,7 +45,6 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[ID] = [t1].[ID],
 	[Name] = [t1].[Name]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [FluentTemp]

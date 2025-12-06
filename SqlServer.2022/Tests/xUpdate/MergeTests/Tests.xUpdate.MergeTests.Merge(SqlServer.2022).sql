@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 MERGE INTO [LinqDataTypes] [Target]
 USING (

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Value6 Integer -- Int32
 SET     @Value6 = 7
 DECLARE @id Integer -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[t1].[Id] = @id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value6 Integer -- Int32
 SET     @Value6 = 8
@@ -38,7 +35,6 @@ SET
 WHERE
 	[t1].[Id] = @id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 1

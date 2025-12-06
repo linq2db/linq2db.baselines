@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [Issue681Table2]
 (
@@ -14,8 +12,7 @@ CREATE TABLE [Issue681Table2]
 	CONSTRAINT [PK_Issue681Table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+-- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue681Table2]
 

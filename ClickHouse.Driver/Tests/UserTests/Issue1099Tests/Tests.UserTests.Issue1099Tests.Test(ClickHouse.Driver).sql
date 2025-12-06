@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO BackgroundTask
 (
@@ -16,7 +15,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

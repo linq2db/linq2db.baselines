@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -8,8 +7,7 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (1)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -18,11 +16,9 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (2)
 
-BeforeExecute
 INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -31,8 +27,7 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (10)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -41,6 +36,5 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (20)
 
-BeforeExecute
 INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 

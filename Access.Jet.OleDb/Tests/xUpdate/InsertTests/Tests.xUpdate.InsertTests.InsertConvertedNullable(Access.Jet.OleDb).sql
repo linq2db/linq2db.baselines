@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[LinqDataTypes] [r]
 WHERE
 	[r].[ID] >= 1000
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	@tt
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -33,7 +30,6 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

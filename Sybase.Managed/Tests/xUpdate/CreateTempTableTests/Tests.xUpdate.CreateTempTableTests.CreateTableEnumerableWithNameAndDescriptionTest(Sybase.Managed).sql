@@ -1,21 +1,20 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [TempTable]
 		(
-			[Name] NVarChar(20) NOT NULL
+			[Name] NVarChar(20) NOT NULL,
+
+			CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Name])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TempTable]
@@ -24,7 +23,6 @@ INSERT INTO [TempTable]
 )
 SELECT 'John'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -33,7 +31,6 @@ FROM
 	[Person] [p]
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)

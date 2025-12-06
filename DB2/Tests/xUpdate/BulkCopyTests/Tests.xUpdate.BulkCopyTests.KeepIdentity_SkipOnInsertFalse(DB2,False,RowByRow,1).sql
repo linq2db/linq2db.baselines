@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 0
 
@@ -18,8 +17,7 @@ FROM
 		)
 	)
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 200
 
@@ -32,8 +30,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 300
 
@@ -46,7 +43,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1
@@ -61,7 +57,6 @@ WHERE
 ORDER BY
 	"t1".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1

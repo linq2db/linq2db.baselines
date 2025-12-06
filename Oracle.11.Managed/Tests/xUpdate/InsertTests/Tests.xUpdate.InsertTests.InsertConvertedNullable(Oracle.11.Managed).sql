@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID >= 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @tt Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	:tt
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -33,7 +30,6 @@ FROM
 WHERE
 	t.ID = 1001 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

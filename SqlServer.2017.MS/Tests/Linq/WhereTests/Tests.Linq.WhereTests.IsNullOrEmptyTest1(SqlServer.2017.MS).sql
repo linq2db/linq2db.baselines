@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	NOT ([nm].[MiddleName] IS NULL OR LEN([nm].[MiddleName] + N'.') = 1)
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

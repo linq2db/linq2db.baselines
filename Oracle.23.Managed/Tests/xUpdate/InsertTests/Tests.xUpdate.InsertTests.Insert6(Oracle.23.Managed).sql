@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Parent" p
 WHERE
 	p."Value1" = 11
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Parent"
@@ -22,7 +20,6 @@ FROM
 WHERE
 	c_1."ChildID" = 11
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	p."Value1" = 11
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM

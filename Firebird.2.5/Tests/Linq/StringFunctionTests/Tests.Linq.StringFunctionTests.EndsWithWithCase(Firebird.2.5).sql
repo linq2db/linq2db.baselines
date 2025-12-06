@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	CAST("p"."Diagnosis" AS BLOB) LIKE '%Persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	CAST("p"."Diagnosis" AS BLOB) NOT LIKE '%Persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	CAST("p"."Diagnosis" AS BLOB) LIKE '%persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

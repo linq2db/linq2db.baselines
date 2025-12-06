@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 SELECT
 	MAX([x].[Value])
@@ -8,8 +7,7 @@ FROM
 WHERE
 	[x].[Id] = 0
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	MAX([x].[Value])
@@ -18,8 +16,7 @@ FROM
 WHERE
 	[x].[Id] = 0
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	MAX(CASE
@@ -33,8 +30,7 @@ FROM
 	) [t1]
 		LEFT JOIN [TestClass] [d] ON [d].[Id] = 0
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	MAX(CASE

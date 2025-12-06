@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @firstName VarChar(3) -- AnsiString
 SET     @firstName = '%e%'
 DECLARE @lastName VarChar(3) -- AnsiString
@@ -9,7 +6,6 @@ SET     @lastName = '%o%'
 
 { CALL Person_SelectListByName(?, ?) }
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @firstName NVarChar(3) -- String
 SET     @firstName = '%e%'
@@ -23,7 +19,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE ? AND [t1].[LastName] LIKE ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @firstName NVarChar(3) -- String
 SET     @firstName = '%e%'
@@ -43,5 +38,3 @@ WHERE
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

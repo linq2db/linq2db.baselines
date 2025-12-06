@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	`s`.`id`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @startId Int32
 SET     @startId = 5

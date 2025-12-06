@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE /*+ FULL(c_1) ALL_ROWS FIRST_ROWS(10) */ FROM
 	"Child" c_1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @p Integer -- Int32
@@ -15,7 +14,6 @@ FROM
 WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	"TestConstantsData" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -43,7 +40,6 @@ FROM
 WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

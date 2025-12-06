@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	p."PersonID",
@@ -9,7 +8,6 @@ FROM
 WHERE
 	p."PersonID" = 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

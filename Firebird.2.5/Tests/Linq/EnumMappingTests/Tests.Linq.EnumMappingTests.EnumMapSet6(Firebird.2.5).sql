@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "LinqDataTypes"
@@ -22,7 +20,6 @@ VALUES
 	3
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 UPDATE
@@ -32,7 +29,6 @@ SET
 WHERE
 	"r".ID = 101 AND "r"."IntValue" = 3
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -42,7 +38,6 @@ FROM
 WHERE
 	"r".ID = 101 AND "r"."IntValue" = 4
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @p Integer -- Int32
 SET     @p = 102

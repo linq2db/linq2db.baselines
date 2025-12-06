@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [InsertEntity]
 (
@@ -14,7 +13,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

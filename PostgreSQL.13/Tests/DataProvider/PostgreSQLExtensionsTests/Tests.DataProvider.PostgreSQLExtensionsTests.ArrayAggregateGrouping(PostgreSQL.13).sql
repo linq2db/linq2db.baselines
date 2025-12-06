@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	g_2."Key_1",
@@ -19,8 +18,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ARRAY_AGG(v.value)
@@ -28,8 +26,7 @@ FROM
 	"SampleClass" t1
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ARRAY_AGG(DISTINCT v.value)
@@ -37,8 +34,7 @@ FROM
 	"SampleClass" t1
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ARRAY_AGG(v.value ORDER BY v.value)

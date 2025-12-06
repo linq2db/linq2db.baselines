@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @json NVarChar(4000) -- String
 SET     @json = N'{ "test" : 1 }'
 

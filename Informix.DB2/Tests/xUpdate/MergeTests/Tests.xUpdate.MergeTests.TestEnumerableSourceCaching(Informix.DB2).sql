@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 MERGE INTO CacheTestTable Target
 USING (
@@ -29,7 +28,6 @@ VALUES
 	Source.Value_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -40,7 +38,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 MERGE INTO CacheTestTable Target
@@ -73,7 +70,6 @@ VALUES
 	Source.Value_1
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

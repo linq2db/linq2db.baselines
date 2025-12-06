@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 100
 DECLARE @value_1  -- Int32

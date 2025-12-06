@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
 DECLARE @val_1 Raw(3) -- Binary
@@ -22,7 +21,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @val Raw(3) -- Binary
 SET     @val = HEXTORAW('010203')
@@ -44,7 +42,6 @@ FROM
 WHERE
 	t1.ID = :n AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @n Decimal(1, 0)
 SET     @n = 3

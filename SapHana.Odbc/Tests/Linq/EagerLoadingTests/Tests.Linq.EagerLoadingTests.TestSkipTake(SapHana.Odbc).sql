@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_2"."Id1",
@@ -17,7 +14,6 @@ FROM
 	) "m_2"
 		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -46,9 +42,6 @@ FROM
 			LIMIT 2 OFFSET 1
 		) "d_1" ON 1=1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -59,9 +52,6 @@ SELECT
 FROM
 	"MasterClass" "m_1"
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -78,9 +68,6 @@ FROM
 	) "m_1"
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

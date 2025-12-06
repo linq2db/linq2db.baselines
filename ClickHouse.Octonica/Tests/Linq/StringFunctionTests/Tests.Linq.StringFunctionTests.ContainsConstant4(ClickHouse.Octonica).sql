@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.PersonID = 1 AND position('123[456', '[') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

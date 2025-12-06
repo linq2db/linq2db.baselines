@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	RightStr([p].[FirstName], 3)
+	SUBSTRING([p].[FirstName], LENGTH([p].[FirstName]) - 3 + 1)
 FROM
 	[Person] [p]
 WHERE

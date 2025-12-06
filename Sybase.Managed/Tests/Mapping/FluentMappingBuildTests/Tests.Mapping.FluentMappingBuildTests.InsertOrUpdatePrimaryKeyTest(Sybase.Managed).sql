@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
@@ -18,7 +16,6 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -36,7 +33,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 UPDATE
@@ -63,7 +59,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -10,7 +9,6 @@ FROM
 	[TestEntity1] [t1]
 		LEFT JOIN [TestEntity2] [t2] ON [t1].[Id] = [t2].[Id]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

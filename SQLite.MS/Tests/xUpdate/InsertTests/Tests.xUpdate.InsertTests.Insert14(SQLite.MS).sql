@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[FirstName] LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [Person]
@@ -29,7 +27,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -39,7 +36,6 @@ FROM
 WHERE
 	[p].[FirstName] LIKE 'Insert14%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM

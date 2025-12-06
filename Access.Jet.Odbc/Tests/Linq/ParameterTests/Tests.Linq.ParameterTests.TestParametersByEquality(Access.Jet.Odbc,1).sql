@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId Int -- Int32
@@ -21,7 +20,6 @@ FROM
 WHERE
 	[p].[PersonID] = ? AND [p].[PersonID] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @personId Int -- Int32
 SET     @personId = 1

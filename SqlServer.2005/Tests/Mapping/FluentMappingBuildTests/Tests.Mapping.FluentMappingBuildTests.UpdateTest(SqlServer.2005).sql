@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -31,7 +31,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @Name NVarChar(20) -- String
 SET     @Name = N'John II'
@@ -46,7 +45,6 @@ SET
 WHERE
 	[FluentTemp].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)

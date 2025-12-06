@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 5000
 
@@ -24,7 +23,7 @@ SELECT
 			"Child" c_3
 		WHERE
 			c_3."ParentID" = t."ParentID" AND c_3."ChildID" > -100
-	) as COUNT_1,
+	) as "Count_1",
 	(
 		SELECT
 			c_4."ParentID"

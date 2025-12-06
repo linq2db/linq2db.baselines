@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -7,7 +6,6 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2

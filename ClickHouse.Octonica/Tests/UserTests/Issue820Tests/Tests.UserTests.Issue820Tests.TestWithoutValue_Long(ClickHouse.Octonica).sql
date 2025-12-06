@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	toInt64(1) = t1.BigIntValue
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

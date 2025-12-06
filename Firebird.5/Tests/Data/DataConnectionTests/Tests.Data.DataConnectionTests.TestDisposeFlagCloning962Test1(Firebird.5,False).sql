@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"m_1"."CategoryID",
@@ -13,9 +10,6 @@ FROM
 	"Categories" "m_1"
 		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

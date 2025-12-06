@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 UPDATE
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[child_1].[ChildID] = 10000
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [x]
@@ -46,7 +42,6 @@ FROM
 WHERE
 	[x].[ChildID] = 10000
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DELETE [x]

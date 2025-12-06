@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -28,9 +25,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = IIF([d].[Freight] > 50, IIF([d].[Freight] > 100, N'expensive', N'average'), N'cheap')
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT

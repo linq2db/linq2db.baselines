@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[i].[One] = 1 AND [i].[Two] = [i].[One] * 2
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	[i].[One] = 0 AND [i].[Two] = 7 AND [i].[Three] = 9 OR
 	[i].[One] >= NULL AND [i].[Two] = -1 AND [i].[Three] = [i].[Four]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -32,7 +29,6 @@ WHERE
 	[i].[One] = 0 AND [i].[Two] = 7 AND [i].[Four] = 9 OR
 	[i].[One] >= NULL AND [i].[Two] = 2
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

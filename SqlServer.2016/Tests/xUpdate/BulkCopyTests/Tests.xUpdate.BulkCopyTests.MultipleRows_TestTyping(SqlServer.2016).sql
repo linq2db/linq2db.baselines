@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 INSERT INTO [MultipleRowsTable]
 (
@@ -11,7 +10,6 @@ VALUES
 (1,NULL,1),
 (2,1.5,-2.6)
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT

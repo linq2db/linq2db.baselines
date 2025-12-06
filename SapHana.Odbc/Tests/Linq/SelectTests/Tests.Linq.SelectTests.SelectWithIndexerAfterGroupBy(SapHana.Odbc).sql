@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."Key_1",
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	"x"."Key_1" DESC
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

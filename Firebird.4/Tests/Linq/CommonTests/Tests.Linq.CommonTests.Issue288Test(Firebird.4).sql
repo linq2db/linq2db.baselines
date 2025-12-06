@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"p"."FirstName"
@@ -9,7 +8,6 @@ WHERE
 	"p"."FirstName" IS NULL
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[r].[Id],
@@ -32,7 +31,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

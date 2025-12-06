@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 UPDATE
 	[p1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @filter NVarChar(4000) -- String
 SET     @filter = N'%John%'
 DECLARE @filter_1 NVarChar(4000) -- String
@@ -44,7 +43,6 @@ WHERE
 ORDER BY
 	[patient_1].[PersonID]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -53,7 +51,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

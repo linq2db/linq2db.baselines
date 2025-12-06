@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK TPHTable
+﻿INSERT BULK TPHTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -31,7 +28,6 @@ FROM
 WHERE
 	x.Discriminator = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -46,7 +42,6 @@ FROM
 WHERE
 	x.Discriminator = 2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -61,7 +56,6 @@ FROM
 WHERE
 	x.Discriminator = 3
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -76,7 +70,6 @@ FROM
 WHERE
 	x.Value1 = 'Str1'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2
@@ -91,7 +84,6 @@ FROM
 WHERE
 	x.Value2 = 'Str2'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

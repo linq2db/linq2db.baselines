@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
@@ -7,7 +6,6 @@ CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 	[Value] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[##IsGlobalTemporaryTable]

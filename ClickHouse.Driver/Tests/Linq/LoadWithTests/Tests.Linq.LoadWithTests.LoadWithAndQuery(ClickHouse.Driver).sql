@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.Id,
@@ -19,7 +18,6 @@ FROM
 WHERE
 	d.Id % 2 = 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 WHERE
 	m_1.Id > 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -67,7 +64,6 @@ FROM
 				d_1.Id = 1
 		) d_2 ON m_2.Id = d_2.ParentId AND d_2.rn <= 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -86,7 +82,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -97,7 +92,6 @@ FROM
 WHERE
 	m_1.Id > 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

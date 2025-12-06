@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" p
 WHERE
 	p."Value1" = 11
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Parent"
@@ -22,7 +20,6 @@ FROM
 WHERE
 	c_1."ChildID" = 11
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	p."Value1" = 11
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM

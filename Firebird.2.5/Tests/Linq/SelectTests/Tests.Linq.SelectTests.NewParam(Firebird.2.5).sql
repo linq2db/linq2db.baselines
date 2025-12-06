@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- Firebird.2.5 Firebird
+
+SELECT
+	"p"."PersonID",
+	"p"."FirstName"
+FROM
+	"Person" "p"
+
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -7,7 +14,6 @@ SELECT
 FROM
 	"Person" "p"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -16,7 +22,6 @@ SELECT
 FROM
 	"Person" "p"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -25,16 +30,6 @@ SELECT
 FROM
 	"Person" "p"
 
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"p"."PersonID",
-	"p"."FirstName"
-FROM
-	"Person" "p"
-
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

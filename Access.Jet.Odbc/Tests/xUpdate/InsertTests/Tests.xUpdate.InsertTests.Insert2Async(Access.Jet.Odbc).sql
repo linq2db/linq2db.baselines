@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+﻿-- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -22,8 +20,7 @@ VALUES
 	?
 )
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -34,8 +31,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = ?
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC (asynchronously)
+-- Access.Jet.Odbc AccessODBC
 
 DELETE FROM
 	[Child] [c_1]

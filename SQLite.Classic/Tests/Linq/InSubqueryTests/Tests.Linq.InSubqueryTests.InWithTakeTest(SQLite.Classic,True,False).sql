@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[c_1].[ParentID],
@@ -22,7 +21,6 @@ WHERE
 			[c_1].[ParentID] = [t1].[ParentID]
 	)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

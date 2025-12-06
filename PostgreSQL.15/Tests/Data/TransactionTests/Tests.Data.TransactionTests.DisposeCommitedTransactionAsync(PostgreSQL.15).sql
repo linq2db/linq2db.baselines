@@ -1,9 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿BeginTransactionAsync
+-- PostgreSQL.15 PostgreSQL
 
 commit;
 
-BeforeExecute
-DisposeTransactionAsync

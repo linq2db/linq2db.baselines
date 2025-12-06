@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @True) = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @False) = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -91,7 +86,6 @@ WHERE
 		ELSE 0
 	END) = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

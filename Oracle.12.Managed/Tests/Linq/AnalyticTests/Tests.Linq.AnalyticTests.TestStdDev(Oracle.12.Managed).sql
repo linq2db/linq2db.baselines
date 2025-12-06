@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	STDDEV(c_1."ChildID"),
@@ -12,7 +11,6 @@ FROM
 GROUP BY
 	g_1."ParentID"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	"Child" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

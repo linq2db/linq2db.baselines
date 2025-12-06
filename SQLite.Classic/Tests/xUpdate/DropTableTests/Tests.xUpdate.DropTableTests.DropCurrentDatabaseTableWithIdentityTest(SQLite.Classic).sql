@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [DropTableTestID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 CREATE TABLE [DropTableTestID]
@@ -12,7 +10,6 @@ CREATE TABLE [DropTableTestID]
 	[ID1] INTEGER  NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [DropTableTestID]
@@ -24,7 +21,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -33,12 +29,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	x."ParentID" = :p
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -20,7 +18,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 3
@@ -35,7 +32,6 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -44,7 +40,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
@@ -59,7 +54,6 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"g_2"."ChildId",
@@ -17,7 +16,6 @@ GROUP BY
 	"g_2"."ChildId",
 	"g_2"."ParentId"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

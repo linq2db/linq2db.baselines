@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @parentId  -- Int32
 SET     @parentId = 12
 
 SELECT
+	[i].[Id],
 	[i].[Name],
 	[i].[ParentId]
 FROM

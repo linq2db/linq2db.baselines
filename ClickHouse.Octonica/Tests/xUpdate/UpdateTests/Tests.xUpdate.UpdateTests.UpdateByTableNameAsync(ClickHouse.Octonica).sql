@@ -1,26 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-DROP TABLE IF EXISTS xxPerson
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-CREATE TABLE xxPerson
-(
-	FirstName  String,
-	PersonID   Int32,
-	LastName   String,
-	MiddleName Nullable(String),
-	Gender     FixedString(1),
-
-	PRIMARY KEY (PersonID)
-)
-ENGINE = MergeTree()
-ORDER BY PersonID
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO xxPerson
 (
@@ -39,16 +17,14 @@ VALUES
 	'M'
 )
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -60,8 +36,7 @@ FROM
 	xxPerson t1
 LIMIT 2
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	xxPerson
@@ -73,8 +48,7 @@ UPDATE
 WHERE
 	PersonID = 0
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -85,9 +59,4 @@ SELECT
 FROM
 	xxPerson t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
-
-DROP TABLE xxPerson
 

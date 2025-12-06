@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id AND [c_1].[Value1] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

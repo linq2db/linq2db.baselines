@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	pmp1.ChildID
@@ -14,7 +13,6 @@ FROM
 	) pmp
 		CROSS JOIN Child pmp1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

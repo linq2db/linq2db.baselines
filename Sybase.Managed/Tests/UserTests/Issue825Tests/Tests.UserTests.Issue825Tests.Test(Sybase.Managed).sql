@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @userId Integer -- Int32
 SET     @userId = 32
 DECLARE @childId Integer -- Int32

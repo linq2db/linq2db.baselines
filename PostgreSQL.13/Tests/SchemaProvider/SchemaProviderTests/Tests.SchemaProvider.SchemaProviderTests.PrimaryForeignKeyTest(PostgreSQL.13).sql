@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	current_schema()
@@ -7,13 +6,11 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SHOW server_version_num
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 
 				SELECT
@@ -61,8 +58,7 @@ BeforeExecute
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog') AND v.schemaname IN ('public')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
@@ -78,8 +74,7 @@ BeforeExecute
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('public')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 
 				SELECT columns.TableID,
@@ -167,8 +162,7 @@ BeforeExecute
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog') AND ns.nspname IN ('public')
 				     ) columns;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 
 				SELECT
@@ -217,8 +211,7 @@ BeforeExecute
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('public')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 
 SELECT	r.ROUTINE_CATALOG,
@@ -237,13 +230,11 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
@@ -253,27 +244,20 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
-BeforeExecute
 RollbackTransaction

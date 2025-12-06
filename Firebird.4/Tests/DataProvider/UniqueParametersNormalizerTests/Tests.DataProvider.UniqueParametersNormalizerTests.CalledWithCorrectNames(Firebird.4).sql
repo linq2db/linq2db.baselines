@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+﻿-- Firebird.4 Firebird4
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 

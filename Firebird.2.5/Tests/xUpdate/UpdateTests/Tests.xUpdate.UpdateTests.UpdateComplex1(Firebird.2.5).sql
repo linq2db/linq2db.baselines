@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -30,7 +29,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 6
@@ -46,7 +44,6 @@ FROM
 WHERE
 	"t1"."PersonID" = @id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
@@ -69,7 +66,6 @@ SET
 WHERE
 	"t1"."PersonID" = @ID
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 6

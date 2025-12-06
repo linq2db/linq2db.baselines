@@ -1,11 +1,10 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 5
 
 SELECT
 	g_2."Key_1",
-	COUNT(*) as COUNT_1
+	COUNT(*) as "Count_1"
 FROM
 	(
 		SELECT

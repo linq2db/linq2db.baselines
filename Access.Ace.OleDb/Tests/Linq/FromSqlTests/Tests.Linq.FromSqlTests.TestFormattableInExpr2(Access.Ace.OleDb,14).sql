@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 DECLARE @endId Integer -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[s].[id]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

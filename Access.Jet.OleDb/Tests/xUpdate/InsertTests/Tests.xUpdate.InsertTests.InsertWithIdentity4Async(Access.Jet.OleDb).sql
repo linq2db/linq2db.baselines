@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName VarWChar(7) -- String
@@ -32,13 +30,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @p VarWChar(5) -- String
 SET     @p = 'John0'
 
@@ -53,8 +49,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarWChar(7) -- String
@@ -79,13 +74,11 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb (asynchronously)
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @p VarWChar(5) -- String
 SET     @p = 'John1'
 
@@ -100,7 +93,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 DELETE FROM

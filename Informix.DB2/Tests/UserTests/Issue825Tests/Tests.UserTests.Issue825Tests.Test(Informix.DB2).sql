@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @userId Integer(4) -- Int32
 SET     @userId = 32
 DECLARE @childId Integer(4) -- Int32

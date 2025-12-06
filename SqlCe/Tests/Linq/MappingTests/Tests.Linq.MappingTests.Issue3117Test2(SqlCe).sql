@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 
@@ -12,12 +11,10 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -25,7 +22,6 @@ SELECT
 FROM
 	[User] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @userId Int -- Int32
 SET     @userId = 5
@@ -37,7 +33,6 @@ FROM
 WHERE
 	[u].[Id] = @userId
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)

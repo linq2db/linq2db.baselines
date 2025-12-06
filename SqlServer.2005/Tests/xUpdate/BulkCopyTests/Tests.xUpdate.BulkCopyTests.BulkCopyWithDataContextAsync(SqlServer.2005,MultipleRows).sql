@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005 (asynchronously)
+﻿-- SqlServer.2005
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -7,8 +6,7 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 SELECT 1
 
-BeforeExecute
--- SqlServer.2005 (asynchronously)
+-- SqlServer.2005
 
 INSERT INTO [SimpleBulkCopyTable]
 (

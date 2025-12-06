@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
 	[p].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[p].[GuidValue] = {guid {40932fdb-1543-4e4a-ac2c-ca371604fb4b}}
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2

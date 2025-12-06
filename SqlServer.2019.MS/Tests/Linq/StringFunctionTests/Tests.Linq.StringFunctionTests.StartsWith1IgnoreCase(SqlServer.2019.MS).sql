@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	Lower([p].[FirstName]) LIKE N'joh%' ESCAPE N'~' AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

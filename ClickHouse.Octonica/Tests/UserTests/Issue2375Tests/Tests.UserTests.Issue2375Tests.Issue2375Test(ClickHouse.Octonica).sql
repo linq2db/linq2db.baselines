@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO WmsLoadCarrierDTO
 (
@@ -12,7 +11,6 @@ VALUES
 	'b'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InventoryResourceDTO
@@ -30,7 +28,6 @@ VALUES
 	toDateTime64('2020-02-29 15:54:55.1231234', 7)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO InventoryResourceDTO
@@ -48,7 +45,6 @@ VALUES
 	toDateTime64('2020-02-29 15:54:55.1231234', 7)
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -90,7 +86,6 @@ FROM
 					INNER JOIN WmsLoadCarrierDTO lc_1 ON d.ResourceID = lc_1.Id
 		) t2 ON m_1.Status = t2.Status AND (m_1.ResourceLabel = t2.ResourceLabel OR m_1.ResourceLabel IS NULL AND t2.ResourceLabel IS NULL)
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

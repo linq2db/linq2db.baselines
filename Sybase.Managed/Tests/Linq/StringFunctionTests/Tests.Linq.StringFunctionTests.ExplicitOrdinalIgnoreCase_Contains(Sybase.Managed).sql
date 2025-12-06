@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [CollatedTable]
 FROM
 	[CollatedTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	Lower([r].[CaseSensitive]) LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -47,7 +43,6 @@ FROM
 WHERE
 	Lower([r].[CaseInsensitive]) LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -57,7 +52,6 @@ FROM
 WHERE
 	Lower([r].[CaseSensitive]) LIKE '%stst%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

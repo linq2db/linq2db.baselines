@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[arg].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS [Id], CAST(1 AS Decimal(1, 0)) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

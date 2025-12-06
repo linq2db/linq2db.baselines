@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
@@ -12,7 +10,6 @@ CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 	`Value` INT NOT NULL
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -21,7 +18,6 @@ SELECT
 FROM
 	`CreateIfNotExistsTable` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
@@ -30,12 +26,10 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 	`Value` INT NOT NULL
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`

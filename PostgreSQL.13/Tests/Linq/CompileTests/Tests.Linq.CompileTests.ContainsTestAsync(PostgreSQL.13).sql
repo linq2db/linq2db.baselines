@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -15,8 +14,7 @@ SELECT
 		ELSE False
 	END
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

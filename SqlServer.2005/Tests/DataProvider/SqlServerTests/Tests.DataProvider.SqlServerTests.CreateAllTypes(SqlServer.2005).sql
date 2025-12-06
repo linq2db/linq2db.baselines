@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 IF (OBJECT_ID(N'[AllTypeCreateTest]', N'U') IS NOT NULL)
 	DROP TABLE [AllTypeCreateTest]
 
-BeforeExecute
 -- SqlServer.2005
 
 CREATE TABLE [AllTypeCreateTest]
@@ -53,7 +51,6 @@ CREATE TABLE [AllTypeCreateTest]
 	[timeDataType]             VarChar(Max)          NULL
 )
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -102,7 +99,6 @@ SELECT
 FROM
 	[AllTypeCreateTest] [t1]
 
-BeforeExecute
 -- SqlServer.2005
 
 DROP TABLE [AllTypeCreateTest]

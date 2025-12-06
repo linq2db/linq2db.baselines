@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[r].[Id],
@@ -32,7 +31,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

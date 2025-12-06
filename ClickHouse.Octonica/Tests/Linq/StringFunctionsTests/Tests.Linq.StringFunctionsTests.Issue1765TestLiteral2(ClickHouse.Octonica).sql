@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	arrayStringConcat(groupArray(t1.Value4), ' -> ')
+	arrayStringConcat(groupArray(toString(t1.Value4)), ' -> ')
 FROM
 	SampleClass t1
 

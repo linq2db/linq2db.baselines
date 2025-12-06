@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 DECLARE @param NVarChar(4000) -- String
 SET     @param = N'test'
 

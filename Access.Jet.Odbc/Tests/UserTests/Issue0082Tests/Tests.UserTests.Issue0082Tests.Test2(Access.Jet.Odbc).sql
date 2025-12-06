@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[o].[ParentID],
@@ -22,7 +21,6 @@ SELECT
 FROM
 	[Parent] [o]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -30,13 +28,12 @@ SELECT
 FROM
 	[Parent] [o]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[x].[ParentID],
 	[x].[CountResult],
-	[x].[SUM_1]
+	[x].[SumResult]
 FROM
 	(
 		SELECT
@@ -56,7 +53,7 @@ FROM
 					[Child] [a_Children_1]
 				WHERE
 					[o].[ParentID] = [a_Children_1].[ParentID]
-			) as [SUM_1]
+			) as [SumResult]
 		FROM
 			[Parent] [o]
 	) [x]

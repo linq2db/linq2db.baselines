@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"nm"."MiddleName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"nm"."MiddleName" IS NOT NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

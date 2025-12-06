@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32

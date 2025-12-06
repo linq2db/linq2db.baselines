@@ -1,4 +1,11 @@
-﻿BeforeExecute
+﻿-- SqlServer.2012
+
+SELECT
+	[p].[PersonID],
+	[p].[FirstName]
+FROM
+	[Person] [p]
+
 -- SqlServer.2012
 
 SELECT
@@ -7,7 +14,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -16,7 +22,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -25,16 +30,6 @@ SELECT
 FROM
 	[Person] [p]
 
-BeforeExecute
--- SqlServer.2012
-
-SELECT
-	[p].[PersonID],
-	[p].[FirstName]
-FROM
-	[Person] [p]
-
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

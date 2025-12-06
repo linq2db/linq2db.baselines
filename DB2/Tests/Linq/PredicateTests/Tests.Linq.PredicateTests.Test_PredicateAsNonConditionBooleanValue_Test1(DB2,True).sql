@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -82,7 +81,6 @@ FROM
 WHERE
 	"r"."Id" <> -1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

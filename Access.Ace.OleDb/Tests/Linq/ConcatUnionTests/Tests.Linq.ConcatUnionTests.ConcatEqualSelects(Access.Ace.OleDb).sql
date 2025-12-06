@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[p].[ParentID] + 1,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[p_1].[ParentID] = 2
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

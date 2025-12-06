@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	toDateTime64(concat(toString(toYear(d.DateTimeValue)), '-02-24 00:00:00'), 7)

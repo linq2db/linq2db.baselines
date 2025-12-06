@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	[r].[Diagnosis] LIKE '%Persecution' ESCAPE '~' AND
 	Substr([r].[Diagnosis], -11) = 'Persecution'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	[r].[Diagnosis] LIKE '%persecution' ESCAPE '~' AND
 	Substr([r].[Diagnosis], -11) = 'persecution'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -30,7 +27,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%persecution' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

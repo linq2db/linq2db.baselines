@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
@@ -29,7 +28,6 @@ FROM
 WHERE
 	[t1].[Id] = [t2].[Id]
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]

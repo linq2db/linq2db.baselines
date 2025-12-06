@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test1'
 DECLARE @UpdatedBy NVarChar(4000) -- String
@@ -35,7 +34,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (2)
@@ -46,7 +44,6 @@ SELECT TOP (2)
 FROM
 	[test_insert_or_replace] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test2'
@@ -83,7 +80,6 @@ BEGIN
 	)
 END
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (2)

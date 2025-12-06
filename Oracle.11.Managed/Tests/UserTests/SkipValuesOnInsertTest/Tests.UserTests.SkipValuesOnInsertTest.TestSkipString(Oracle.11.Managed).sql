@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Age Int32
@@ -16,7 +15,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -28,7 +26,6 @@ FROM
 WHERE
 	t."Id" = 1 AND ROWNUM <= 1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -46,7 +43,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

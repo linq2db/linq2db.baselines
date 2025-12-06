@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32

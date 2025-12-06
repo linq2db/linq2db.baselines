@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -24,7 +21,6 @@ VALUES
 	-12345678901234567890123456789012345.123456789012345678901234567891
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -40,7 +36,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -51,14 +46,12 @@ FROM
 	`BigDecimalMySqlDataTable` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -74,7 +67,6 @@ VALUES
 	-12345678901234567890123456789012345.123456789012345678901234567891
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -90,7 +82,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -101,14 +92,12 @@ FROM
 	`BigDecimalMySqlDataTable` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -124,7 +113,6 @@ VALUES
 	-12345678901234567890123456789012345.123456789012345678901234567891
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `BigDecimalMySqlDataTable`
@@ -140,7 +128,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
@@ -16,7 +15,6 @@ VALUES
 	200
 )
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -29,7 +27,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @id
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -42,7 +39,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @id
 
-BeforeExecute
 -- SqlServer.2014
 DECLARE @id Int -- Int32
 SET     @id = 1001

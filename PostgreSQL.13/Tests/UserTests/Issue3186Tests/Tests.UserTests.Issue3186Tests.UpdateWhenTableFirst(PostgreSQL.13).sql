@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @is_deleted Boolean
 SET     @is_deleted = True
 
@@ -16,8 +15,7 @@ WHERE
 	component_categories.id = cm.category_id AND
 	NOT cm.is_deleted
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x.id,
@@ -28,8 +26,7 @@ FROM
 WHERE
 	x.is_deleted AND x.service_id = 'TestProcessService'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x.id,

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 DROP TABLE IF EXISTS [TestTrun]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 CREATE TABLE [TestTrun]
@@ -14,12 +12,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 TRUNCATE TABLE [TestTrun]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 DROP TABLE [TestTrun]

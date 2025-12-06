@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK [VariantTable](Id, Value)
+﻿INSERT BULK [VariantTable](Id, Value)
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

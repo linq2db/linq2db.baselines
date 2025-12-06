@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -42,22 +41,21 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -79,7 +77,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -91,22 +88,21 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Column]   NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -128,7 +124,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -140,22 +135,21 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
 (
 	[ID]       Int          NOT NULL,
 	[Column]   NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -177,7 +171,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -189,7 +182,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]

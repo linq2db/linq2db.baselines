@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -16,7 +15,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@TargetName
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -56,20 +53,18 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[p].[Id],
 	[p].[TargetName],
-	[a_ActualStage].[Id] as [Id_1]
+	[a_ActualStage].[Id] as [ActualStageId]
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 WHERE
 	[p].[TargetName] = 'bda.Requests'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

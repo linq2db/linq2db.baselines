@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 WITH CTE1_ (c1)
@@ -22,7 +20,6 @@ SELECT
 FROM
 	CTE1_ t2
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 WITH CTE1_ (c1)
@@ -38,7 +35,6 @@ SELECT
 FROM
 	CTE1_ t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 WITH CTE1_ (c1)

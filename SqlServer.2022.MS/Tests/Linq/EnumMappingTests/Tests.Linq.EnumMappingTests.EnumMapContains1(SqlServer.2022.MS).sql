@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +8,6 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [LinqDataTypes]
@@ -23,7 +21,6 @@ VALUES
 	12
 )
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
@@ -33,7 +30,6 @@ FROM
 WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IN (12)
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 102

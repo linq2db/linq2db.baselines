@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @value Integer -- Int32
 SET     @value = 123
 
@@ -14,7 +13,6 @@ VALUES
 	:value
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

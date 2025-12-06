@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500
 DECLARE @Value1 Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 100500
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.2005
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 100500

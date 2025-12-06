@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @Column NVarChar(4000) -- String
 SET     @Column = N'value=2'
 DECLARE @ColumnNullable NVarChar(4000) -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = N'value=2' AND [r].[ColumnNullable] = N'value=33'
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [StringEnumTable]
@@ -109,7 +101,6 @@ VALUES
 (1,N'val=1',NULL),
 (2,N'value=2',N'value=33')
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -121,17 +112,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
-BeforeExecute
 INSERT BULK [StringEnumTable](Id, Column, ColumnNullable)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

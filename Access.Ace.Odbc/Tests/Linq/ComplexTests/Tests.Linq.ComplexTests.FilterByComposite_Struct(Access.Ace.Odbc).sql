@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

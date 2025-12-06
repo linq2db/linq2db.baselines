@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
@@ -13,7 +11,6 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO CreateIfNotExistsTable
@@ -27,7 +24,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	CreateIfNotExistsTable t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
@@ -46,12 +41,10 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 )
 ENGINE = Memory()
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable

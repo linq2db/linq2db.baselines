@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -19,9 +16,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[FirstName]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT

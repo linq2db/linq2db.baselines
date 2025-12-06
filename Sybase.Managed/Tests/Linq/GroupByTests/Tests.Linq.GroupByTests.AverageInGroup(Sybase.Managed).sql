@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[g_1].[GroupId],
@@ -29,10 +28,10 @@ WHERE
 GROUP BY
 	[g_1].[GroupId]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

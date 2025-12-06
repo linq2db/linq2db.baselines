@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @maxVersion Int -- Int32
 SET     @maxVersion = 1
 

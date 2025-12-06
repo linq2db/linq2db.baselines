@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -18,7 +17,6 @@ FROM
 	) m_2
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId OR m_2.Id IS NULL AND d.ParentId IS NULL
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

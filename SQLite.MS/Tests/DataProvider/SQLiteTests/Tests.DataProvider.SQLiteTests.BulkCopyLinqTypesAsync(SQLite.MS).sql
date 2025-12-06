@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,16 +23,14 @@ VALUES
 (4008,1008,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0008',NULL,8,NULL),
 (4009,1009,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] >= 4000
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -58,8 +55,7 @@ VALUES
 (4008,1008,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0008',NULL,8,NULL),
 (4009,1009,'2001-01-11 01:11:21.100',1,X'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 DELETE FROM
 	[LinqDataTypes]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 

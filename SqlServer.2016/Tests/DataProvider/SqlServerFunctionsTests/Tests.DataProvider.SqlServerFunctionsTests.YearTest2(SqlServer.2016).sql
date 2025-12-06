@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
-	YEAR(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7))
+	YEAR(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3))
 

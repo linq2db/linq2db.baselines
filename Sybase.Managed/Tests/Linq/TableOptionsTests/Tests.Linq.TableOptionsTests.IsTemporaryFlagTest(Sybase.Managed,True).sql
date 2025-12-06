@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 CREATE TABLE #IsTemporaryTable
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_IsTemporaryTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	#IsTemporaryTable [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#IsTemporaryTable') IS NOT NULL)

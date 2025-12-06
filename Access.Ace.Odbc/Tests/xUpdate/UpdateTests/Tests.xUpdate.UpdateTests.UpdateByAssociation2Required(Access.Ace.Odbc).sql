@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -11,7 +10,6 @@ SET
 WHERE
 	[p].[Id] = ? AND [p].[Id] = [a_MainRequired].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

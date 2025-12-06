@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- PostgreSQL.18 PostgreSQL
 
@@ -16,7 +15,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- PostgreSQL.18 PostgreSQL

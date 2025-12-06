@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	(COUNT(*) || ' items have not been processed, e.g. #' || Coalesce(MIN("g_1"."PersonID"), '')) || '.'

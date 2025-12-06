@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671EntityTMP')) THEN
@@ -27,7 +26,6 @@ EXECUTE BLOCK AS BEGIN
 		';
 END
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Issue4671Entity"
@@ -39,7 +37,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "Issue4671EntityTMP"
@@ -51,7 +48,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -60,7 +56,6 @@ SELECT FIRST 2
 FROM
 	"Issue4671Entity" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -69,7 +64,6 @@ SELECT FIRST 2
 FROM
 	"Issue4671EntityTMP" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

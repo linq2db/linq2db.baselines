@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -8,7 +7,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TempTable]

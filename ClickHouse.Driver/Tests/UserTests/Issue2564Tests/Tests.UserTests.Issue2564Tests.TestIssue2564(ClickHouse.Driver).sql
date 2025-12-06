@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS Issue2564Table
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE Issue2564Table
@@ -21,7 +19,6 @@ CREATE TABLE Issue2564Table
 ENGINE = MergeTree()
 ORDER BY Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -29,7 +26,7 @@ SELECT
 	tgGroup_1.TranslatedMessageGroup,
 	tgGroup_1.Hour_1,
 	COUNT(*),
-	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.cond, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
 FROM
 	(
 		SELECT
@@ -38,7 +35,7 @@ FROM
 			toHour(tgGroup.TimestampGenerated) as Hour_1,
 			tgGroup.TranslatedMessage1 as TranslatedMessage1,
 			tgGroup.TimestampGenerated as TimestampGenerated,
-			tgGroup.TimestampGone as cond
+			tgGroup.TimestampGone as TimestampGone
 		FROM
 			Issue2564Table tgGroup
 		WHERE

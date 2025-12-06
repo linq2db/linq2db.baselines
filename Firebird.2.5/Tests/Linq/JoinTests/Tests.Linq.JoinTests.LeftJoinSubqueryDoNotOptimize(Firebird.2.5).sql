@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"p"."PersonID",
@@ -14,7 +13,6 @@ FROM
 				"Person" "m_1"
 		) "m_2" ON "p"."PersonID" = "m_2"."c1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	SUM(Coalesce([a_Parent].[Value1], 0)) as [SUM_1]
+	SUM(Coalesce([a_Parent].[Value1], 0)) as [Value_1]
 FROM
 	[Child] [grp]
 		LEFT JOIN [Parent] [a_Parent] ON [grp].[ParentID] = [a_Parent].[ParentID]

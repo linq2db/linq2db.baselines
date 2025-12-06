@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -32,7 +30,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	"t1"."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

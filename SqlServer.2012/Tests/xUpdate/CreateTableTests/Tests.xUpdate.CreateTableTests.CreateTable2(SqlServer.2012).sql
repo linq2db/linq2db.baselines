@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -10,10 +9,8 @@ CREATE TABLE [tempdb]..[#TestTable]
 	[Field3]  SmallInt    NOT NULL
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#TestTable](Field1, Field11, Field2, Field21, Field3)
 
-BeforeExecute
 -- SqlServer.2012
 
 DROP TABLE [tempdb]..[#TestTable]

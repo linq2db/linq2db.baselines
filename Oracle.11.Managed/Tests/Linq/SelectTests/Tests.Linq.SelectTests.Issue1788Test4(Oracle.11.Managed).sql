@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Table1788" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

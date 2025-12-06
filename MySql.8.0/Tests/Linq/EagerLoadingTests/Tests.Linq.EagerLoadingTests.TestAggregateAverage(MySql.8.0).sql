@@ -1,31 +1,29 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t3`.`AVG_1`
+	(
+		SELECT
+			AVG(CAST(`t2`.`Average` AS DOUBLE))
+		FROM
+			(
+				SELECT
+					`t1`.`Average`
+				FROM
+					(
+						SELECT DISTINCT
+							`a_Details`.`DetailId` as `Average`
+						FROM
+							`DetailClass` `a_Details`
+						WHERE
+							`m_1`.`Id1` = `a_Details`.`MasterId`
+					) `t1`
+				ORDER BY
+					`t1`.`Average`
+				LIMIT 1, 5
+			) `t2`
+	)
 FROM
 	`MasterClass` `m_1`
-		LEFT JOIN LATERAL (
-			SELECT
-				AVG(CAST(`t2`.`DetailId` AS DOUBLE)) as `AVG_1`
-			FROM
-				(
-					SELECT
-						`t1`.`DetailId`
-					FROM
-						(
-							SELECT DISTINCT
-								`a_Details`.`DetailId`
-							FROM
-								`DetailClass` `a_Details`
-							WHERE
-								`m_1`.`Id1` = `a_Details`.`MasterId`
-						) `t1`
-					ORDER BY
-						`t1`.`DetailId`
-					LIMIT 1, 5
-				) `t2`
-		) `t3` ON 1=1
 WHERE
 	(
 		SELECT
@@ -36,9 +34,6 @@ WHERE
 			`m_1`.`Id1` = `a_Details_1`.`MasterId`
 	) > 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -55,9 +50,6 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

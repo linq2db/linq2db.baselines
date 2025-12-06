@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,8 +13,7 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 
@@ -28,8 +26,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 300
 
@@ -42,8 +39,7 @@ VALUES
 	:Value
 )
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -57,8 +53,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

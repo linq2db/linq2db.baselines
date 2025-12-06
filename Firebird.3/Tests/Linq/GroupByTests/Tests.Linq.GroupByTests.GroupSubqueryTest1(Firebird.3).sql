@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"pmp1"."ChildID"
@@ -14,7 +13,6 @@ FROM
 	) "pmp"
 		CROSS JOIN "Child" "pmp1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

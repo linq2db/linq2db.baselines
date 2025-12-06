@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `tmptbl1`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_tmptbl1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `tmptbl1`
@@ -19,16 +19,16 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `tmptbl2`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000) NOT NULL
+	`Value` VARCHAR(4000) NOT NULL,
+
+	CONSTRAINT `PK_tmptbl2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `tmptbl2`
@@ -40,16 +40,16 @@ VALUES
 (1,'Value1'),
 (3,'Value2')
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `tmptbl3`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_tmptbl3` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `tmptbl3`
@@ -61,7 +61,6 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -72,7 +71,6 @@ FROM
 		LEFT JOIN `tmptbl2` `t3` ON `t2`.`ID` = `t3`.`ID`
 		LEFT JOIN `tmptbl3` `t4` ON Coalesce(`t3`.`Value`, `t2`.`Value`) = `t4`.`Value` OR `t3`.`Value` IS NULL AND `t2`.`Value` IS NULL AND `t4`.`Value` IS NULL
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -81,7 +79,6 @@ SELECT
 FROM
 	`tmptbl1` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -90,7 +87,6 @@ SELECT
 FROM
 	`tmptbl2` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -99,17 +95,14 @@ SELECT
 FROM
 	`tmptbl3` `t1`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `tmptbl3`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `tmptbl2`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `tmptbl1`

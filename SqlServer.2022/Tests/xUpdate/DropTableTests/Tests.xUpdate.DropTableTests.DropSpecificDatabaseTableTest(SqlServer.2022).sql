@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 DROP TABLE IF EXISTS [DropTableTest]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT TOP (1)
@@ -11,7 +9,6 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT TOP (1)
@@ -19,15 +16,15 @@ SELECT TOP (1)
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 INSERT INTO [TestData].[dbo].[DropTableTest]
@@ -39,7 +36,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT
@@ -47,12 +43,10 @@ SELECT
 FROM
 	[TestData].[dbo].[DropTableTest] [t1]
 
-BeforeExecute
 -- SqlServer.2022
 
 DROP TABLE [TestData].[dbo].[DropTableTest]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

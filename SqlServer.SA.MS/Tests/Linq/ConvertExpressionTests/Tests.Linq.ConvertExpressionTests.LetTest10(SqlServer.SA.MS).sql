@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	IIF(EXISTS(
@@ -9,8 +8,7 @@ SELECT
 			[Parent] [p]
 				OUTER APPLY (
 					SELECT TOP (1)
-						[c_1].[ParentID],
-						[c_1].[ChildID]
+						*
 					FROM
 						[Child] [c_1]
 					WHERE

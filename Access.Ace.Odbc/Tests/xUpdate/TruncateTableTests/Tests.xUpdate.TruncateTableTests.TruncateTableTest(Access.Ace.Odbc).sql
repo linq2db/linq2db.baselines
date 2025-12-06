@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [TestTrun]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [TestTrun]
@@ -14,12 +12,10 @@ CREATE TABLE [TestTrun]
 	CONSTRAINT [PK_TestTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM [TestTrun]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [TestTrun]

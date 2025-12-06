@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Не ASCII'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
@@ -38,7 +34,6 @@ SELECT TOP (1)
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
@@ -66,7 +61,6 @@ WHEN NOT MATCHED THEN
 		@Diagnosis
 	);
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @patient Int -- Int32
 SET     @patient = 1
@@ -128,7 +122,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @patient THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @patient Int -- Int32
 SET     @patient = 2
@@ -190,5 +183,3 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @patient THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

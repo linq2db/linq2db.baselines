@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING
 	ID
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3

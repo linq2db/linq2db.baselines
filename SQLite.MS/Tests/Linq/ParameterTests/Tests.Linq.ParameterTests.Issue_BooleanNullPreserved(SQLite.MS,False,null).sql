@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [TestBool]
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -22,16 +20,13 @@ FROM
 	[TestBool] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = NOT [TestBool].[Value]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -41,7 +36,6 @@ FROM
 	[TestBool] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 UPDATE
@@ -50,7 +44,6 @@ SET
 	[Id] = 1,
 	[Value] = NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

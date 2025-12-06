@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -16,7 +15,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -24,7 +22,6 @@ INSERT ALL
 	INTO "AllTypes" ("intDataType") VALUES (300)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 3
@@ -39,7 +36,6 @@ WHERE
 ORDER BY
 	t1.ID
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @lastId Int32
 SET     @lastId = 3

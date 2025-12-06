@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT TOP (1)
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -46,7 +43,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT TOP (1)

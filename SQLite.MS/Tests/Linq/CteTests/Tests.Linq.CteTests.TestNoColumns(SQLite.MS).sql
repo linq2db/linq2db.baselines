@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 WITH [CTE1_] ([c1])
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 WITH [CTE1_] ([c1])
@@ -38,7 +35,6 @@ SELECT
 FROM
 	[CTE1_] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 WITH [CTE1_] ([c1])

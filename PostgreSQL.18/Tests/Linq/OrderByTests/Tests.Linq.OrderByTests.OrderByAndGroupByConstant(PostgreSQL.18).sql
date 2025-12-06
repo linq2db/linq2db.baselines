@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -11,7 +10,6 @@ FROM
 	"Child" g_1
 LIMIT :take
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

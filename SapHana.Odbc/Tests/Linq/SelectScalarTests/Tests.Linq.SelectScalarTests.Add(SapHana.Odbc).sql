@@ -1,9 +1,6 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @p Int -- Int32
-SET     @p = 5
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	?
+	5
 FROM DUMMY
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t`.`ID`,
@@ -18,8 +17,7 @@ WHERE
 	`t`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @dt Datetime -- DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
 
@@ -30,8 +28,7 @@ SET
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t`.`ID`,
@@ -50,8 +47,7 @@ WHERE
 	`t`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @pdt Datetime -- DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'
 

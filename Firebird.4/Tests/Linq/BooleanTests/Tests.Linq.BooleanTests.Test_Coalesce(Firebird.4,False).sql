@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @True Boolean
 SET     @True = TRUE
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@True AS BOOLEAN))
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @False Boolean
 SET     @False = FALSE
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@False AS BOOLEAN))
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

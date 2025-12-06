@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @is_deleted TinyInt(1) -- Byte
 SET     @is_deleted = 1
 
@@ -19,7 +18,6 @@ WHERE
 			"sr"."id" = 'TestProcessService' AND "component_categories"."id" = "ct"."id"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	"x"."is_deleted" = 1 AND "x"."service_id" = 'TestProcessService'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

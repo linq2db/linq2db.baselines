@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	Length([t1].[FirstName]) > 4
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

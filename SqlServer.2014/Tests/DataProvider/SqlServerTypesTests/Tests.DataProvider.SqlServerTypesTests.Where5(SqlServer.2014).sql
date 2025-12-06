@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
 

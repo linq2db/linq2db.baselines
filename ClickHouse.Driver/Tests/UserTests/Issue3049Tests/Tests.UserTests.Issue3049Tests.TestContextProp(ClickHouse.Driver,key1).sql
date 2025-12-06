@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t.Value
@@ -8,7 +7,6 @@ FROM
 WHERE
 	t.Value IN ('key1')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

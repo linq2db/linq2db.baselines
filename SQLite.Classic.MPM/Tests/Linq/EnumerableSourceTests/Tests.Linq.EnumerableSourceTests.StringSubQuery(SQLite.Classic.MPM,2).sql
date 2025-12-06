@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t].[FirstName],
@@ -21,6 +20,6 @@ WHERE
 					('j'), ('o'), ('h'), ('n')
 				) [x]
 		WHERE
-			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
+			INSTR([t].[FirstName], [x].[item]) - 1 > 0
 	)
 

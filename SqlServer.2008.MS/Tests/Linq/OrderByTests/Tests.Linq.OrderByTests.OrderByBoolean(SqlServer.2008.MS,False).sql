@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[FirstName],
@@ -15,7 +14,6 @@ ORDER BY
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

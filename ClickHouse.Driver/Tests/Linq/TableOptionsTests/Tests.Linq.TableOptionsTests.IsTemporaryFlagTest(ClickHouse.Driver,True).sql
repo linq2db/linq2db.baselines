@@ -1,14 +1,15 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TEMPORARY TABLE IsTemporaryTable
 (
 	Id    Int32,
-	Value Int32
-)
-ENGINE = Memory()
+	Value Int32,
 
-BeforeExecute
+	PRIMARY KEY (Id)
+)
+ENGINE = MergeTree()
+ORDER BY Id
+
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -17,7 +18,6 @@ SELECT
 FROM
 	IsTemporaryTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS IsTemporaryTable

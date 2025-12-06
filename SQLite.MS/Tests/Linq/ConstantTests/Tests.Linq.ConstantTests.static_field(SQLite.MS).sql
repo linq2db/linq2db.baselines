@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @GuidNonReadonly  -- Guid
 SET     @GuidNonReadonly = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

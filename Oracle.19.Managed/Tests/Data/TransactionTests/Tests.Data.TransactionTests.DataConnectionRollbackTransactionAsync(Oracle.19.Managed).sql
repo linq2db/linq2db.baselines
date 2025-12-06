@@ -1,6 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
+﻿BeginTransactionAsync
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
@@ -18,5 +16,4 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 RollbackTransactionAsync

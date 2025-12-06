@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 3
 
@@ -26,7 +25,6 @@ WHERE
 			t2.ID = :id
 	)
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 4

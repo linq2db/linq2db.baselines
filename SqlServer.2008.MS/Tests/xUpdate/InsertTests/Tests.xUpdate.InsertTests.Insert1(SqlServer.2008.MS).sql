@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -23,7 +21,6 @@ VALUES
 	@id
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -35,7 +32,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = @id
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]

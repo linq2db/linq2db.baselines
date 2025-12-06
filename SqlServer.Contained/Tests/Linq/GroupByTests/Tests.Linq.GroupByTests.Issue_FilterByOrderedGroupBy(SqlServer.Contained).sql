@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t].[ParentID],
@@ -23,7 +22,6 @@ WHERE
 			) [t1]
 	)
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

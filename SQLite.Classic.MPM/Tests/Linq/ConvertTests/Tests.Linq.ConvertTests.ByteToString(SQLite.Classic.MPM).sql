@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ID]
+	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM
 	[LinqDataTypes] [p]
 WHERE

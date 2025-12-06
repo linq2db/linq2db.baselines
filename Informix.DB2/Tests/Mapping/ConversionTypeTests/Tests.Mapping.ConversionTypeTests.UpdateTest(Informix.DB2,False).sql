@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer(4) -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	t."Data" = '***XXX***'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	t."Data" = @p
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

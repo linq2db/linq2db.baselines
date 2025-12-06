@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	NULLIF("s"."Int", 2)
@@ -8,7 +7,24 @@ FROM
 ORDER BY
 	"s"."Int"
 
-BeforeExecute
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" = 2
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" <> 2
+
 -- Firebird.5 Firebird4
 
 SELECT
@@ -18,17 +34,49 @@ FROM
 ORDER BY
 	"s"."Int"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	NULLIF("s"."Int", NULL)
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" = 4
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."Int" <> 4
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"s"."Int"
 FROM
 	"Src" "s"
 ORDER BY
 	"s"."Int"
 
-BeforeExecute
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	1 = 0
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+
 -- Firebird.5 Firebird4
 
 SELECT
@@ -38,7 +86,24 @@ FROM
 ORDER BY
 	"s"."Int"
 
-BeforeExecute
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."NullableInt" = 2 OR "s"."NullableInt" IS NULL
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	NOT ("s"."NullableInt" = 2 OR "s"."NullableInt" IS NULL)
+
 -- Firebird.5 Firebird4
 
 SELECT
@@ -48,13 +113,48 @@ FROM
 ORDER BY
 	"s"."Int"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
-	NULLIF("s"."NullableInt", NULL)
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."NullableInt" = 4 OR "s"."NullableInt" IS NULL
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	NOT ("s"."NullableInt" = 4 OR "s"."NullableInt" IS NULL)
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"s"."NullableInt"
 FROM
 	"Src" "s"
 ORDER BY
 	"s"."Int"
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."NullableInt" IS NULL
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "s"
+WHERE
+	"s"."NullableInt" IS NOT NULL
 

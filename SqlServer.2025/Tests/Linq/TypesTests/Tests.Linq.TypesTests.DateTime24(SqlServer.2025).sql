@@ -1,4 +1,21 @@
-﻿BeforeExecute
+﻿-- SqlServer.2025 SqlServer.2022
+
+SELECT TOP (1)
+	[t].[ID],
+	[t].[MoneyValue],
+	[t].[DateTimeValue],
+	[t].[DateTimeValue2],
+	[t].[BoolValue],
+	[t].[GuidValue],
+	[t].[SmallIntValue],
+	[t].[IntValue],
+	[t].[BigIntValue],
+	[t].[StringValue]
+FROM
+	[LinqDataTypes] [t]
+WHERE
+	[t].[ID] = 1
+
 -- SqlServer.2025 SqlServer.2022
 
 SELECT TOP (1)
@@ -17,26 +34,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
--- SqlServer.2025 SqlServer.2022
-
-SELECT TOP (1)
-	[t].[ID],
-	[t].[MoneyValue],
-	[t].[DateTimeValue],
-	[t].[DateTimeValue2],
-	[t].[BoolValue],
-	[t].[GuidValue],
-	[t].[SmallIntValue],
-	[t].[IntValue],
-	[t].[BigIntValue],
-	[t].[StringValue]
-FROM
-	[LinqDataTypes] [t]
-WHERE
-	[t].[ID] = 1
-
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
@@ -74,7 +71,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT TOP (1)
@@ -93,7 +89,6 @@ FROM
 WHERE
 	[t].[ID] = 1
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @pdt DateTime2
 SET     @pdt = NULL

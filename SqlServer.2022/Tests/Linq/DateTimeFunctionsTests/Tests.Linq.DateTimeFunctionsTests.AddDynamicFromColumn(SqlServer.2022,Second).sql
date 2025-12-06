@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	DateAdd(second, [t].[SmallIntValue], [t].[DateTimeValue])

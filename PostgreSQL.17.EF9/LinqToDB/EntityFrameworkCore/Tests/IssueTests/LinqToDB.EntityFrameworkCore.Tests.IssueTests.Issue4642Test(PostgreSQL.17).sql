@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @systemId Varchar(6) -- String
 SET     @systemId = 'system'
 

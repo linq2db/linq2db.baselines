@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	1
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[t1].[id] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [test_insert_or_replace]
@@ -22,7 +20,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

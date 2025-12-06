@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 WITH cte (Value2)
 AS
@@ -85,9 +82,6 @@ FROM
 	) m_1
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Informix.DB2 Informix
 
 WITH cte (Value2)

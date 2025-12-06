@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	c_1.value,
@@ -15,7 +14,6 @@ WHERE
 ORDER BY
 	c_1.id
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

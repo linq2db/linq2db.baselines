@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
 	[ch].[ParentID],
@@ -7,7 +6,6 @@ SELECT TOP 2
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 3
@@ -16,8 +14,7 @@ SELECT TOP 3
 FROM
 	[Child] [ch]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 2
 	[ch].[ParentID],
@@ -25,8 +22,7 @@ SELECT TOP 2
 FROM
 	[Child] [ch]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 3
 	[ch].[ParentID],

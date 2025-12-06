@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[s].[Id],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100

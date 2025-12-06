@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	pmp1.ChildID
@@ -14,7 +13,6 @@ FROM
 				pmp.ParentID
 		) pmp_1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

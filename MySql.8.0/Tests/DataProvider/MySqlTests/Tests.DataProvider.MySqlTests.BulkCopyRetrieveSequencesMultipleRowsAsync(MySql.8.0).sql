@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT Max(`PersonID`) FROM `Person`
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Person`
 (
@@ -23,5 +19,3 @@ VALUES
 ('Pediatrics',8,'test',NULL,'M'),
 ('Psychiatry',9,'test',NULL,'M')
 
-BeforeExecute
-DisposeTransaction

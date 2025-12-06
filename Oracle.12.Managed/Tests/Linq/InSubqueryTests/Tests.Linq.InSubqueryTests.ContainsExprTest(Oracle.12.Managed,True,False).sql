@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @n Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			p."ParentID" + :n = c_1."ParentID"
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

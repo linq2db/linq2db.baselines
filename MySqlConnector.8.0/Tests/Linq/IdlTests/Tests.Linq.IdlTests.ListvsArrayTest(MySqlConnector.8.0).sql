@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`PersonID`
@@ -8,7 +7,6 @@ FROM
 WHERE
 	`x`.`FirstName` IN ('John')
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @st VarChar(4) -- String
 SET     @st = 'John'

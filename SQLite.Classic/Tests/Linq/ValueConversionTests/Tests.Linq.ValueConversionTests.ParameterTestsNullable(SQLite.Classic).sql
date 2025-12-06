@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @testDate VarChar(23) -- AnsiString
 SET     @testDate = '2020-02-29 00:00:00.000'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', @testDate) = strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeNullable])
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @testDate VarChar(23) -- AnsiString
 SET     @testDate = '2020-02-29 00:00:00.000'

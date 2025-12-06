@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO UserIssue3128
 (
@@ -10,7 +9,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO UserDetailsIssue3128
@@ -24,7 +22,6 @@ VALUES
 	18
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

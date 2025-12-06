@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -28,7 +27,6 @@ FROM
 WHERE
 	d.id2 = 2
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

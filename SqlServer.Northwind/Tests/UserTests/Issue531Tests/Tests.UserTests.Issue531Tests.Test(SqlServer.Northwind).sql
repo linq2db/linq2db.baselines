@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+﻿-- SqlServer.Northwind SqlServer.2019
 DECLARE @ext NVarChar(4000) -- String
 SET     @ext = N'5467'
 
@@ -27,7 +26,6 @@ FROM
 WHERE
 	[e].[Extension] = @ext
 
-BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT

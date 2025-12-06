@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO CollatedTable
@@ -21,7 +19,6 @@ VALUES
 	'TestString'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ FROM
 WHERE
 	positionCaseInsensitive(r.CaseSensitive, 'stSt') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -41,7 +37,6 @@ FROM
 WHERE
 	positionCaseInsensitive(r.CaseInsensitive, 'stSt') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -51,7 +46,6 @@ FROM
 WHERE
 	positionCaseInsensitive(r.CaseSensitive, 'stst') > 0
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

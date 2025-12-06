@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @GuidNonReadonly Uuid -- Guid
 SET     @GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
@@ -13,7 +12,6 @@ FROM
 WHERE
 	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

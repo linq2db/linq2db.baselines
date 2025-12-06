@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[x].[ParentID],
@@ -53,7 +52,6 @@ WHERE
 				LEFT JOIN [Child] [d_1] ON [a_Parent].[ParentID] = [d_1].[ParentID]
 	), 0, 1) = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

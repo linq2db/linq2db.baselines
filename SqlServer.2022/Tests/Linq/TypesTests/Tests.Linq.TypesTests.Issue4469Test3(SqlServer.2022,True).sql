@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT TOP (2)
 	CAST([v].[Integer] AS Float) / 33,

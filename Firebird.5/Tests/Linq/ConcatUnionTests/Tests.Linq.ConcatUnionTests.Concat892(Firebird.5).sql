@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"t1"."Value1",
@@ -25,7 +24,6 @@ SELECT
 FROM
 	"Child" "c_3"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"Child" "t1"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO qwerty
 (
@@ -12,7 +11,6 @@ VALUES
 	'res1'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO qwerty
@@ -26,7 +24,6 @@ VALUES
 	'res100500'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO mega_composites
@@ -40,7 +37,6 @@ VALUES
 	toInt64(100500)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO mega_composites
@@ -54,7 +50,6 @@ VALUES
 	toInt64(100500)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO mega_composites
@@ -68,7 +63,6 @@ VALUES
 	toInt64(1)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

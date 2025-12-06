@@ -1,12 +1,13 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TestTable"
 		(
 			"Id"    Int NOT NULL,
-			"Value" Int NOT NULL
+			"Value" Int NOT NULL,
+
+			CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 		)
 		ON COMMIT PRESERVE ROWS
 	';
@@ -17,7 +18,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN

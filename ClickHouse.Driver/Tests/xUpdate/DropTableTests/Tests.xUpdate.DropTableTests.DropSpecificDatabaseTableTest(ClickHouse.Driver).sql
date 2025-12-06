@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS DropTableTest
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -12,16 +10,17 @@ FROM
 	LinqDataTypes t1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE DropTableTest
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO testdb2.DropTableTest
@@ -33,7 +32,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -41,12 +39,10 @@ SELECT
 FROM
 	testdb2.DropTableTest t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE testdb2.DropTableTest
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

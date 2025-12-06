@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TestIdTrun
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 CREATE TABLE TestIdTrun
@@ -16,7 +14,6 @@ CREATE TABLE TestIdTrun
 ENGINE = MergeTree()
 ORDER BY ID
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TestIdTrun
@@ -28,7 +25,6 @@ VALUES
 	toDecimal128('1', 10)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TestIdTrun
@@ -40,7 +36,6 @@ VALUES
 	toDecimal128('1', 10)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -52,12 +47,10 @@ ORDER BY
 	t1.ID
 LIMIT 1, 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 TRUNCATE TABLE TestIdTrun
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TestIdTrun
@@ -69,7 +62,6 @@ VALUES
 	toDecimal128('1', 10)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO TestIdTrun
@@ -81,7 +73,6 @@ VALUES
 	toDecimal128('1', 10)
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -93,7 +84,6 @@ ORDER BY
 	t1.ID
 LIMIT 1, 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE TestIdTrun

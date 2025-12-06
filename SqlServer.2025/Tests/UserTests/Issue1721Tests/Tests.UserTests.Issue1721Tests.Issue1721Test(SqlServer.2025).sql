@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#I1721Model]
 	[TestNonZeroPrecision]    DateTime2(1)   NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#I1721Model]

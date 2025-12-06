@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (?, ?)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -24,7 +22,6 @@ FROM
 WHERE
 	([s].[CEnum] IN (?) OR [s].[CEnum] IS NULL)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -38,7 +35,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (?, ?)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value2___'
@@ -50,7 +46,6 @@ FROM
 WHERE
 	([s].[CEnum] NOT IN (?) AND [s].[CEnum] IS NOT NULL)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'

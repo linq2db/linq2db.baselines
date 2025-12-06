@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 /* My Test */
 UPDATE
@@ -9,7 +8,6 @@ SET
 WHERE
 	t1.Id = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 /* My Test */

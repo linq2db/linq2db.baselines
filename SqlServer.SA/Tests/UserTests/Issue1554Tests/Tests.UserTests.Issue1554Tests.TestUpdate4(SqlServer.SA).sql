@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -20,7 +19,6 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @ClaimedKeyType NVarChar(3) -- String
 SET     @ClaimedKeyType = N'EC'
@@ -35,7 +33,6 @@ SET
 WHERE
 	[Issue1554Table].[Id] = 0
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)

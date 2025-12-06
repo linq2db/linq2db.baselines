@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @id1 Int32
 SET     @id1 = 3000
 DECLARE @id2 Int32
@@ -34,8 +33,7 @@ SELECT
 	:value as "Value_1"
 FROM SYS.DUAL
 
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,

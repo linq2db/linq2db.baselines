@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 DECLARE @GuidID2Output TABLE ([ID] UniqueIdentifier)
 

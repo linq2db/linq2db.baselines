@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -10,7 +9,6 @@ SELECT
 FROM
 	Person t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

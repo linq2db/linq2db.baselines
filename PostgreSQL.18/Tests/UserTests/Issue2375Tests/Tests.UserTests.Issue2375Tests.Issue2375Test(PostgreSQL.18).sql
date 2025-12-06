@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ResourceLabel Text(1) -- String
@@ -16,7 +15,6 @@ VALUES
 	:ResourceLabel
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
@@ -42,7 +40,6 @@ VALUES
 	:ModifiedTimeStamp
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
@@ -68,9 +65,6 @@ VALUES
 	:ModifiedTimeStamp
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -104,9 +98,6 @@ FROM
 			INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id"
 		ON m_1."Status" = d."Status" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @param Smallint -- Int16
 SET     @param = 1
 
@@ -19,7 +18,6 @@ FROM
 WHERE
 	:param = t1."SmallIntValue"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

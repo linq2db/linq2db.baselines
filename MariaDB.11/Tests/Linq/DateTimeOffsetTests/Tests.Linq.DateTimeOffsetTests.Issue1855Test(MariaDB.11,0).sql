@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -20,8 +19,7 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -38,8 +36,7 @@ VALUES
 	@SomeDateTimeOffset
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @interval Int32
 SET     @interval = 10
 DECLARE @clientSideIn Datetime -- DateTimeOffset

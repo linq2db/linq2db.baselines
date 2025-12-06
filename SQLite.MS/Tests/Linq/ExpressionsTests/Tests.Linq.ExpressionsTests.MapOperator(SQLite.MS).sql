@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[ParentID],
@@ -7,5 +6,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	CAST(CAST([p].[ParentID] AS BigInt) >> 1 AS INTEGER) > 0
+	CAST(CAST([p].[ParentID] AS INTEGER) >> 1 AS INTEGER) > 0
 

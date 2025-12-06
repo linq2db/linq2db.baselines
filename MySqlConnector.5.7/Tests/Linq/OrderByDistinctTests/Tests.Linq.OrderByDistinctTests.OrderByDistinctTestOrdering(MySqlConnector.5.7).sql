@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -11,7 +10,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -26,7 +24,6 @@ ORDER BY
 	`x`.`OrderData1`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -39,7 +36,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -54,7 +50,6 @@ ORDER BY
 	`x`.`OrderData1` DESC
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -67,7 +62,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -83,7 +77,6 @@ ORDER BY
 	`x`.`OrderData2`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -96,7 +89,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -112,7 +104,6 @@ ORDER BY
 	`x`.`OrderData2` DESC
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -125,7 +116,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -141,7 +131,6 @@ ORDER BY
 	`x`.`OrderData2` DESC
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -154,7 +143,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @skip Int32
 SET     @skip = 0

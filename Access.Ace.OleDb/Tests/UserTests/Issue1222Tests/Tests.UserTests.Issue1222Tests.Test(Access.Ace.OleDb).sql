@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 111
 DECLARE @parentId_1 Integer -- Int32

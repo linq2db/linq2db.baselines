@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'seafood | bread'
 DECLARE @language NVarChar(4000) -- String

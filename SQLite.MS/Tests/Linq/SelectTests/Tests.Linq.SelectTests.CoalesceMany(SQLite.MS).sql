@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Nullable3], [t].[Id]),
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[CoalesceNullableFields] [t]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

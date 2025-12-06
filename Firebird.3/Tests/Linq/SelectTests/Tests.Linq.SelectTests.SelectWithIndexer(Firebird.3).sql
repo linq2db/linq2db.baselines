@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"x"."FirstName",
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	"x"."PersonID" DESC
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#I1721Model]
 	[TestNonZeroPrecision]    DateTime2(1)   NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#I1721Model]

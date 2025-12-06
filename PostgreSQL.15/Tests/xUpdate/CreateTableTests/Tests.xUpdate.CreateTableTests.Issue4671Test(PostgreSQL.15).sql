@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE "Issue4671EntityTMP"
 (
@@ -10,7 +9,6 @@ CREATE TEMPORARY TABLE "Issue4671EntityTMP"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Issue4671Entity"
@@ -22,7 +20,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Issue4671EntityTMP"
@@ -34,7 +31,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 	"Issue4671Entity" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -54,7 +49,6 @@ FROM
 	"Issue4671EntityTMP" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue4671EntityTMP"

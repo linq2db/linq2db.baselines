@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE SEQ_A START WITH 1 MINVALUE 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 
@@ -14,8 +12,7 @@ CREATE TABLE "TABLE_A"(
 	CONSTRAINT "PK_TABLE_A" PRIMARY KEY("COLUMN_A", "COLUMN_B", "COLUMN_C")
 )
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @COLUMNA Int64
 SET     @COLUMNA = 1
 DECLARE @COLUMNB Int32
@@ -38,8 +35,7 @@ VALUES
 RETURNING 
 	COLUMN_C INTO :IDENTITY_PARAMETER
 
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @COLUMNA Int64
 SET     @COLUMNA = 1
 DECLARE @COLUMNB Int32
@@ -62,12 +58,10 @@ VALUES
 RETURNING 
 	COLUMN_C INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP SEQUENCE SEQ_A
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP TABLE "TABLE_A"

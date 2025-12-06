@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[PersonID] = @p
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @p Int -- Int32
 SET     @p = 2

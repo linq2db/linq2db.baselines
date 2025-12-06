@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 10
 

@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT DISTINCT
-	t1."Value"
+	r."Value"
 FROM
-	"TakeSkipClass" t1
+	"TakeSkipClass" r
 LIMIT 3
 

@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DELETE FROM
 	[TestMerge1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -82,7 +78,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -108,13 +103,11 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[TestMerge2]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -140,7 +133,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -166,7 +158,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -192,7 +183,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -218,7 +208,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -233,7 +222,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

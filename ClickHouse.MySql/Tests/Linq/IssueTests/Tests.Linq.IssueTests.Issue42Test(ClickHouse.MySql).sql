@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.ID,
+	r.MoneyValue,
+	r.DateTimeValue,
+	r.DateTimeValue2,
+	r.BoolValue,
+	r.GuidValue,
+	r.SmallIntValue,
+	r.IntValue,
+	r.BigIntValue,
+	r.StringValue
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 1
+LIMIT 1
+
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	r.ID = 1
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	r.ID,
-	r.MoneyValue,
-	r.DateTimeValue,
-	r.DateTimeValue2,
-	r.BoolValue,
-	r.GuidValue,
-	r.SmallIntValue,
-	r.IntValue,
-	r.BigIntValue,
-	r.StringValue
-FROM
-	LinqDataTypes r
-WHERE
-	r.ID = 1
-LIMIT 1
-
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -56,7 +53,6 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -76,7 +72,6 @@ WHERE
 	r.ID = 1
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -94,7 +89,6 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

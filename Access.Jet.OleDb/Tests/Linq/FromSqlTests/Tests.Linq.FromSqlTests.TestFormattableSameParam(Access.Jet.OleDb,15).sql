@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 DECLARE @p_1 Integer -- Int32
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	[c_1].[id]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @startId Integer -- Int32
 SET     @startId = 5

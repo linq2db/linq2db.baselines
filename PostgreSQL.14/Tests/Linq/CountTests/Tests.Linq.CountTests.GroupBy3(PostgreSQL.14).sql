@@ -1,13 +1,9 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	g_2."ParentID",
 	MIN(g_2."ChildID"),
-	COUNT(CASE
-		WHEN g_2."ChildID" > 25 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_2."ChildID" > 25)
 FROM
 	(
 		SELECT

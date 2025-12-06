@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @p Int -- Int32
@@ -40,7 +39,6 @@ WHERE
 			? <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 3
@@ -82,7 +80,6 @@ WHERE
 			? <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 4
@@ -124,7 +121,6 @@ WHERE
 			[p_2].[PersonID] = ?
 	))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
@@ -166,7 +162,6 @@ WHERE
 			? <> [p_2].[PersonID]
 	))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 4
@@ -208,7 +203,6 @@ WHERE
 			[p_2].[PersonID] = ?
 	))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 3

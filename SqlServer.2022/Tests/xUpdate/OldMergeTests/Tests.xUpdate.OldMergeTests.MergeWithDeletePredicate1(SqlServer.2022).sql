@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[t].[ID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[ID] > 5
 
-BeforeExecute
 -- SqlServer.2022
 
 MERGE INTO [LinqDataTypes] [Target]

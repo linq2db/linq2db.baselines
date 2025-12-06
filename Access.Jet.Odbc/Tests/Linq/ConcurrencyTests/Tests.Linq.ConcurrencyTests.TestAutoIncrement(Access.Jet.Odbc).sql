@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -20,7 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -30,7 +28,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
@@ -47,7 +44,6 @@ SET
 WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -57,7 +53,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
@@ -74,7 +69,6 @@ SET
 WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -84,7 +78,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
@@ -101,7 +94,6 @@ SET
 WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -111,7 +103,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -123,7 +114,6 @@ DELETE FROM
 WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -133,7 +123,6 @@ SELECT
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -145,7 +134,6 @@ DELETE FROM
 WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	CASE
@@ -13,7 +12,6 @@ SELECT
 		ELSE false
 	END
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

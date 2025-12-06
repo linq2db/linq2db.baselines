@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'

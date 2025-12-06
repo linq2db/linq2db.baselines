@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0
 

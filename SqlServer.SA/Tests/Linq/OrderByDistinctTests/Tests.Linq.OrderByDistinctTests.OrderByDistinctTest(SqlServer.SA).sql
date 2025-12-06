@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -13,7 +12,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -30,7 +28,6 @@ ORDER BY
 	MAX([x].[OrderData1])
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
@@ -45,7 +42,6 @@ ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0

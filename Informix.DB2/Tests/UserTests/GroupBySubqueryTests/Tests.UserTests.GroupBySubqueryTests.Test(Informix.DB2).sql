@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT DISTINCT
 	a_Ref4.Field6,
@@ -15,7 +14,6 @@ FROM
 WHERE
 	t1.Field3 IS NOT NULL
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

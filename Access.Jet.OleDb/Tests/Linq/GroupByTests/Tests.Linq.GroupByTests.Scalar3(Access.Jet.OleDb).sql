@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	MAX(IIF([g_1].[ChildID] > 0, [g_1].[ChildID], NULL))

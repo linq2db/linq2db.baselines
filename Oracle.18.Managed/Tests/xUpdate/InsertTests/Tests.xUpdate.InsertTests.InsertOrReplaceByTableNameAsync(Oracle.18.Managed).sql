@@ -1,28 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-
-CREATE TABLE "xxPatient"
-(
-	"PersonID"  Int          NOT NULL,
-	"Diagnosis" VarChar(255)     NULL,
-
-	CONSTRAINT "PK_xxPatient" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -49,8 +25,7 @@ WHEN NOT MATCHED THEN
 		:Diagnosis
 	)
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -77,16 +52,14 @@ WHEN NOT MATCHED THEN
 		:Diagnosis
 	)
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"xxPatient" t1
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -113,8 +86,7 @@ WHEN NOT MATCHED THEN
 		:Diagnosis
 	)
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -141,23 +113,10 @@ WHEN NOT MATCHED THEN
 		:Diagnosis
 	)
 
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
 FROM
 	"xxPatient" t1
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

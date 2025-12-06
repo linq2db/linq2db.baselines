@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
 	[s].[Id]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[Int] IN (-1, -2)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[s].[Int] IN (-1, NULL)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[s].[Int] IN (-1, 2)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
@@ -38,7 +34,6 @@ FROM
 WHERE
 	[s].[Int] NOT IN (NULL, 2)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1

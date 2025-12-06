@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @search Varchar2(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Varchar2(4) -- String

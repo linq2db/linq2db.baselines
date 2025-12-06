@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 CREATE TABLE [temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [temp_table1]
@@ -17,16 +17,16 @@ INSERT INTO [temp_table1]
 )
 SELECT 1,2
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [temp_table2]
@@ -40,7 +40,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -49,7 +48,6 @@ SELECT
 FROM
 	[temp_table1] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -58,7 +56,6 @@ SELECT
 FROM
 	[temp_table2] [t1]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [temp_table1]
@@ -68,7 +65,6 @@ INSERT INTO [temp_table1]
 )
 SELECT 2,3
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 3
@@ -86,7 +82,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [temp_table1]
@@ -96,22 +91,18 @@ INSERT INTO [temp_table1]
 )
 SELECT 4,5
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM [temp_table1]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM [temp_table2]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [temp_table2]
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [temp_table1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 WITH [CTE_1] ([ParentID], [ChildID])
 AS

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 DECLARE @Value1 Integer -- Int32
@@ -11,7 +10,6 @@ SELECT DISTINCT
 FROM
 	"Parent" "p"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

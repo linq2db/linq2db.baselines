@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = N'F'
 

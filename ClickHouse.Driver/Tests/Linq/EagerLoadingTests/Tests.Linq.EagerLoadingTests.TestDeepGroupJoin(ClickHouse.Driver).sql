@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_2.Id1,
@@ -23,7 +22,6 @@ FROM
 	) m_2
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -49,7 +47,6 @@ FROM
 	) m_2
 		INNER JOIN MasterClass d ON m_2.Id1 = d.Id1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

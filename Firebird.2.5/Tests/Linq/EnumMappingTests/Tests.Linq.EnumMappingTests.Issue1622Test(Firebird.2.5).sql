@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeText VarChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2
@@ -27,7 +25,6 @@ FROM
 WHERE
 	"e"."SomeText" = 'Value1_suffix'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT FIRST 2

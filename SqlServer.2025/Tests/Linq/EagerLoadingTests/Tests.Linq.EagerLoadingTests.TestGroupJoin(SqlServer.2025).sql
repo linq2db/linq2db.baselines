@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -27,7 +24,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 20
@@ -65,7 +61,6 @@ FROM
 				[d].[SubDetailValue]
 		) [d_1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 20
@@ -105,9 +100,6 @@ FROM
 				[d].[Value]
 		) [d_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 20

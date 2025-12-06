@@ -1,4 +1,4 @@
-﻿-- SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
--- SqlServer.2016 (asynchronously)
+-- SqlServer.2016
 
 INSERT INTO [tempdb]..[#Orders]
 (

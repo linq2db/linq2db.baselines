@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Lower("p"."FirstName") STARTING WITH 'joh' AND "p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

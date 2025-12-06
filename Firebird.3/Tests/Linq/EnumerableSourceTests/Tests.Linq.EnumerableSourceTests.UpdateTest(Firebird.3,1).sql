@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 UPDATE
 	"TableToInsert"
@@ -30,7 +29,6 @@ WHERE
 			"TableToInsert"."Id" = "t"."Id"
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

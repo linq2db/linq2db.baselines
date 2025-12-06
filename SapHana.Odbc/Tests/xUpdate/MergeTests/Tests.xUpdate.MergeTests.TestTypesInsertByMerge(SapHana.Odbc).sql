@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Time
 SET     @value = 09:44:34.6534321
@@ -77,7 +74,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @value Time
 SET     @value = 23:59:59.9999999
@@ -147,7 +143,6 @@ VALUES
 	"Source"."FieldEnumNumber"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -174,7 +169,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

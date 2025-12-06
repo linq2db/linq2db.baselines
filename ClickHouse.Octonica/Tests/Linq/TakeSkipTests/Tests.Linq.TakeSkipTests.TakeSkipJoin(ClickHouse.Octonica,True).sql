@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID,
@@ -13,7 +12,6 @@ SELECT
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

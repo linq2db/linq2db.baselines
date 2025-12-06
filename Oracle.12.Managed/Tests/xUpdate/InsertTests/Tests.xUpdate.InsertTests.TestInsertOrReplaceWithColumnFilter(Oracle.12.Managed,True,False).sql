@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName Varchar2(27) -- String
@@ -36,7 +35,6 @@ WHEN NOT MATCHED THEN
 		:MiddleName
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -52,7 +50,6 @@ WHERE
 	x."FirstName" = :FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 0
@@ -90,7 +87,6 @@ WHEN NOT MATCHED THEN
 		:MiddleName
 	)
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

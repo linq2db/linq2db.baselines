@@ -22,10 +22,9 @@ WHERE @__ef_filter__p_0 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")
 ORDER BY o."OrderID", t."OrderID", t."ProductID", t0."ProductID", t1."OrderId"
 
 
-BeginTransaction(RepeatableRead)
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."ProductId",
@@ -45,10 +44,9 @@ FROM
 
 
 
-DisposeTransaction
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	"a_Product"."ProductID",

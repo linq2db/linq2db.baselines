@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Value
 FROM
 	TakeSkipClass t1

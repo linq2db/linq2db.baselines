@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	t.ID,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.DateTimeValue IN (toDateTime64('2001-01-11 01:11:21.100', 3))
+	t.DateTimeValue IN (makeDateTime64(2001, 1, 11, 1, 11, 21, 100))
 

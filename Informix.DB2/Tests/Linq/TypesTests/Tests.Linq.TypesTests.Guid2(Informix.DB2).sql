@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	p.ID,
@@ -15,7 +14,6 @@ FROM
 WHERE
 	p.GuidValue = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 2

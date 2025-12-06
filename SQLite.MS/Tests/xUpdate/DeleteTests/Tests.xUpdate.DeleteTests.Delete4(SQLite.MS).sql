@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 DELETE FROM
 	[GrandChild]
 WHERE
 	[GrandChild].[GrandChildID] IN (1001, 1002)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
@@ -22,7 +20,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
@@ -38,7 +35,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -48,7 +44,6 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 DELETE FROM
@@ -68,7 +63,6 @@ WHERE
 			[GrandChild].[GrandChildID] = [gc].[GrandChildID]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

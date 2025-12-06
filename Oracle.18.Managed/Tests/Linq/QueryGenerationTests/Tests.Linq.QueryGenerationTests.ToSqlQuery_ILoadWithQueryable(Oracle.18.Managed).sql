@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."ParentID",
@@ -9,9 +8,6 @@ FROM
 WHERE
 	p."ParentID" = 1
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -35,7 +31,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -47,5 +42,3 @@ WHERE
 	p."ParentID" = 1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

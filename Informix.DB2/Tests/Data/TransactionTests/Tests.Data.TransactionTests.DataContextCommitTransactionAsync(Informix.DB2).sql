@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿BeginTransactionAsync
+-- Informix.DB2 Informix
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer(4) -- Int32
@@ -18,9 +16,7 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 CommitTransactionAsync
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM

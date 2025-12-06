@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransactionAsync(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -19,8 +16,7 @@ FROM
 			INNER JOIN "Parent" "a_Parent1_1" ON "d"."ParentID" = "a_Parent1_1"."ParentID"
 		ON "m_1"."ParentID" = "a_Parent1_1"."ParentID"
 
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"a_Parent1"."ParentID"
@@ -30,5 +26,3 @@ FROM
 GROUP BY
 	"a_Parent1"."ParentID"
 
-BeforeExecute
-DisposeTransactionAsync

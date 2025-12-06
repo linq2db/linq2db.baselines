@@ -1,14 +1,13 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	tt.Key_1,
-	SUM(tt.ID)
+	SUM(tt.ChildID)
 FROM
 	(
 		SELECT
 			gr.ParentID as Key_1,
-			gr.ChildID as ID
+			gr.ChildID
 		FROM
 			Child gr
 		WHERE
@@ -16,7 +15,7 @@ FROM
 		UNION ALL
 		SELECT
 			Nvl(g_1.ParentID, 0) as Key_1,
-			Nvl(g_1.GrandChildID, 0) as ID
+			Nvl(g_1.GrandChildID, 0) as ChildID
 		FROM
 			GrandChild g_1
 		WHERE
@@ -25,5 +24,5 @@ FROM
 GROUP BY
 	tt.Key_1
 HAVING
-	SUM(tt.ID) <> 0
+	SUM(tt.ChildID) <> 0
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(7) -- String
@@ -24,7 +23,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -46,7 +44,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @SerialNumber NVarChar(7) -- String
 SET     @SerialNumber = 'TV00002'
@@ -79,7 +75,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @SerialNumber NVarChar(9) -- String
 SET     @SerialNumber = 'Disp00002'
@@ -96,7 +91,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

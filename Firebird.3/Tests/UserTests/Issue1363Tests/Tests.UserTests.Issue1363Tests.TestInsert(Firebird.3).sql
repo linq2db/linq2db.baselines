@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @id Guid
 SET     @id = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Guid
 SET     @id = X'A948600DDE214F748AC29516B287076E'
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id2 Guid
 SET     @id2 = X'A948600DDE214F748AC29516B287076E'

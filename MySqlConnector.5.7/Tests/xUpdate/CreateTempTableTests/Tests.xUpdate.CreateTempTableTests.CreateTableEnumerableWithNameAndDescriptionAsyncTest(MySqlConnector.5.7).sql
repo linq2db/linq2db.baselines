@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `TempTable`
 (
-	`Name` VARCHAR(20) NOT NULL
+	`Name` VARCHAR(20) NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Name`)
 )
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `TempTable`
 (
@@ -21,8 +20,7 @@ INSERT INTO `TempTable`
 VALUES
 ('John')
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t`.`Name`
@@ -30,8 +28,7 @@ FROM
 	`Person` `p`
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

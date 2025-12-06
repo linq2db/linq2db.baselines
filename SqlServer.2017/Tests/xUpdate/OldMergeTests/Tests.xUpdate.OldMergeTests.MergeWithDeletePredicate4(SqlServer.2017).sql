@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -7,7 +6,6 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @patient Int -- Int32
 SET     @patient = 2
@@ -68,7 +66,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @patient THEN DELETE
 ;
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @patient Int -- Int32
 SET     @patient = 3

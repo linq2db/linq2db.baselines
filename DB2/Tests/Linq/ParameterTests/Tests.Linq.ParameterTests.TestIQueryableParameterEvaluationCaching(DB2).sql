@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 1
 
@@ -21,7 +20,6 @@ WHERE
 			"p"."PersonID" = @paramCopy
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 2
@@ -44,7 +42,6 @@ WHERE
 			"p"."PersonID" = @paramCopy
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 3
@@ -67,7 +64,6 @@ WHERE
 			"p"."PersonID" = @paramCopy
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 4
@@ -90,7 +86,6 @@ WHERE
 			"p"."PersonID" = @paramCopy
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 1

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"nm"."FirstName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CHAR_LENGTH("nm"."FirstName") <> 0
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

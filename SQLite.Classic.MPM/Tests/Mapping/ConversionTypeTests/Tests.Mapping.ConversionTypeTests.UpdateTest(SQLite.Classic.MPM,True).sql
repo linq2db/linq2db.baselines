@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 UPDATE
 	[TrimTestTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 60
@@ -42,7 +40,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 61
@@ -64,9 +61,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -84,7 +78,6 @@ FROM
 	) "m_1"
 		INNER JOIN "Message" "d" ON "d"."TopicId" = "m_1"."Id"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -97,5 +90,3 @@ WHERE
 	"x"."Id" = 6
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

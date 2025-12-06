@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0
 

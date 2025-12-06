@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -11,7 +10,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -28,7 +26,6 @@ ORDER BY
 	MAX(`x`.`OrderData1`)
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 0
@@ -41,7 +38,6 @@ FROM
 	`OrderByDistinctData` `x`
 LIMIT @skip, @take
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 0

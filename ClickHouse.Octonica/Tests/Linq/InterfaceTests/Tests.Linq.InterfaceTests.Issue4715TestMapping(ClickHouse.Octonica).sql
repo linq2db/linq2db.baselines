@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Issue4715Table
 (
@@ -18,7 +17,6 @@ VALUES
 	22
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

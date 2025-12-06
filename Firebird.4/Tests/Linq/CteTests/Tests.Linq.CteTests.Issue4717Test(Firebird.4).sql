@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 INSERT INTO "Issue4717Address"
 (
@@ -18,7 +17,6 @@ VALUES
 	'12345'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "Issue4717Warehouse"
@@ -34,7 +32,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 INSERT INTO "Issue4717UnitOfMeasure"
@@ -50,7 +47,6 @@ VALUES
 	'ea'
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
@@ -70,7 +66,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @includedProductId Integer -- Int32
 SET     @includedProductId = 2
@@ -90,7 +85,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
@@ -110,7 +104,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @productId Integer -- Int32
 SET     @productId = 1
@@ -128,7 +121,6 @@ VALUES
 	10
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @productId Integer -- Int32
 SET     @productId = 1

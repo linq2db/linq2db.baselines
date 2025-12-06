@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."ParentID",
@@ -9,7 +8,6 @@ FROM
 ORDER BY
 	"t1"."ChildID"
 
-BeforeExecute
 -- DB2.LUW DB2LUW
 
 SELECT

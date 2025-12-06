@@ -1,8 +1,5 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 2
+﻿-- SQLite.MS SQLite
 
 SELECT
-	Substr('123', 2, @p)
+	Substr('123', 2, 2)
 

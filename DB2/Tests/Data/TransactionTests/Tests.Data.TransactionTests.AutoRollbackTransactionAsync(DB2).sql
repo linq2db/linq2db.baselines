@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer(4) -- Int32
@@ -16,9 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	"t"."ParentID" = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t"."ParentID",

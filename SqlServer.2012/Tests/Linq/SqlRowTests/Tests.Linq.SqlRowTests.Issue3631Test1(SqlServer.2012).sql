@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

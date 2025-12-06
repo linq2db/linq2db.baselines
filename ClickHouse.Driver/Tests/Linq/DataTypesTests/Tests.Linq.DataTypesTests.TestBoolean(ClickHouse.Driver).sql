@@ -1,4 +1,14 @@
-﻿BeforeExecute
+﻿-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	BooleanTable r
+WHERE
+	r.Column = false AND r.ColumnNullable = true
+
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -10,26 +20,12 @@ FROM
 WHERE
 	r.Column = false AND r.ColumnNullable = true
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Id,
-	r.Column,
-	r.ColumnNullable
-FROM
-	BooleanTable r
-WHERE
-	r.Column = false AND r.ColumnNullable = true
-
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO BooleanTable
@@ -45,7 +41,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO BooleanTable
@@ -61,7 +56,6 @@ VALUES
 	true
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -73,14 +67,12 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO BooleanTable
@@ -93,7 +85,6 @@ VALUES
 (1,true,NULL),
 (2,false,true)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -105,17 +96,14 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
-BeforeExecute
 INSERT ASYNC BULK BooleanTable(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

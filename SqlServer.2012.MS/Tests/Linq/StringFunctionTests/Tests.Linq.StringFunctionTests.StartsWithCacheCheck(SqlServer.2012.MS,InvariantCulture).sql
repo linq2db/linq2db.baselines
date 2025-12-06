@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
@@ -23,7 +21,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) = Convert(VarBinary(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
@@ -38,7 +35,6 @@ WHERE
 	([p].[FirstName] NOT LIKE @nameToCheck ESCAPE N'~' OR Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) <> Convert(VarBinary(8000), @nameToCheck_1)) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
@@ -53,7 +49,6 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) = Convert(VarBinary(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'

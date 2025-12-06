@@ -1,11 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	COUNT(CASE
-		WHEN t."Status" = 3 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE t."Status" = 3)
 FROM
 	"Issue1192Table" t
 WHERE

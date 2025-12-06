@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT LAST_INSERT_ID()
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -49,7 +46,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -69,7 +65,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @PersonID Int32
 SET     @PersonID = 5
@@ -89,7 +84,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @id Int32
 SET     @id = 5

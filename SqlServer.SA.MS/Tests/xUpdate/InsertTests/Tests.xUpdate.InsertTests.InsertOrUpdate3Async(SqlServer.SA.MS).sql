@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -26,8 +25,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -54,8 +52,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -82,8 +79,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
@@ -110,8 +106,7 @@ WHEN NOT MATCHED THEN
 		N'abc'
 	);
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 

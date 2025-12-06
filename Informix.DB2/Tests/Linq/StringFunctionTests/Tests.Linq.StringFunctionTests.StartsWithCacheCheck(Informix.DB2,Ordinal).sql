@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	p.FirstName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p.PersonID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	p.FirstName LIKE 'Joh%' ESCAPE '~' AND p.PersonID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	NOT p.FirstName LIKE 'Joh%' ESCAPE '~' AND p.PersonID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	p.FirstName LIKE 'JOH%' ESCAPE '~' AND p.PersonID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

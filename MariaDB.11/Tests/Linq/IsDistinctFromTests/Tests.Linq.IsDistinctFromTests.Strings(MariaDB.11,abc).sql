@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -10,8 +9,7 @@ FROM
 WHERE
 	NOT `s`.`String` <=> @value
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -22,8 +20,7 @@ FROM
 WHERE
 	NOT `s`.`NullableString` <=> @value
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -34,8 +31,7 @@ FROM
 WHERE
 	`s`.`String` <=> @value
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 

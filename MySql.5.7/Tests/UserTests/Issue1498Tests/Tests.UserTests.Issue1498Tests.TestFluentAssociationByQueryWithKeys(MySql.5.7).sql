@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 60
@@ -42,7 +40,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 61
@@ -64,9 +61,6 @@ VALUES
 	@Text
 )
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -84,7 +78,6 @@ FROM
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -97,5 +90,3 @@ WHERE
 	`x`.`Id` = 6
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

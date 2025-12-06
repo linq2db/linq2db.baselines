@@ -1,24 +1,18 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 DELETE FROM
 	"Parent" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
 	"Child" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
 	"GrandChild" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -32,7 +26,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -46,7 +39,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
@@ -60,7 +52,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
@@ -74,7 +65,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
@@ -96,7 +86,6 @@ VALUES
 	@RightId
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 MERGE INTO "GrandChild" "Target"
@@ -122,7 +111,6 @@ VALUES
 	"Source"."RightId"
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -132,5 +120,3 @@ SELECT
 FROM
 	"GrandChild" "t1"
 
-BeforeExecute
-DisposeTransaction

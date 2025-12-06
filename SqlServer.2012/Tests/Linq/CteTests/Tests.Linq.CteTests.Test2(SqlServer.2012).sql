@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN [CTE3_] [c3] ON [t1].[ParentID] = [c3].[ParentID]
 		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [c3].[ParentID]
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

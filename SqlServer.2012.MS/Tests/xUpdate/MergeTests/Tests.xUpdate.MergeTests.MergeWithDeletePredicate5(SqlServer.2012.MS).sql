@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 MERGE INTO [Child] [Target]
 USING (
@@ -60,5 +57,3 @@ EXISTS(
 ) THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

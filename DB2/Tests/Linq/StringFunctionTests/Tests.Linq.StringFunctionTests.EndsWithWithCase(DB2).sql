@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -9,7 +8,6 @@ WHERE
 	"p"."Diagnosis" LIKE '%Persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -20,7 +18,6 @@ WHERE
 	"p"."Diagnosis" NOT LIKE '%Persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -31,7 +28,6 @@ WHERE
 	"p"."Diagnosis" LIKE '%persecution' ESCAPE '~' AND
 	"p"."PersonID" = 2
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @PageNumber Integer(4) -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- StringFixedLength

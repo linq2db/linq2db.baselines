@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	Coalesce("t"."Nullable1", "t"."Nullable2", "t"."Nullable3", "t"."Id"),
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"CoalesceNullableFields" "t"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

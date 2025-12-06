@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t.ID > 1000
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @arr Blob -- Object
 SET     @arr = HEXTORAW('01020304')
@@ -24,7 +22,6 @@ VALUES
 	:arr
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	t.ID = 1001 AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
@@ -9,14 +8,12 @@ CREATE TABLE [tempdb]..[#InsertTempTable_42]
 	[SourceId]  Int                NULL
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -42,7 +39,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -68,7 +64,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -94,7 +89,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -120,14 +114,12 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -153,7 +145,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
@@ -179,7 +170,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
@@ -205,7 +195,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
@@ -231,7 +220,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [TestMerge1] [Target]
@@ -283,7 +271,6 @@ INTO [tempdb]..[#InsertTempTable_42]
 )
 ;
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -294,7 +281,6 @@ SELECT
 FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#InsertTempTable_42]', N'U') IS NOT NULL)

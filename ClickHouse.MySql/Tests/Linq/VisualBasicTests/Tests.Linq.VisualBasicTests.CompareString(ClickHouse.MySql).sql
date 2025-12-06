@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	p.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.FirstName = 'John'
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

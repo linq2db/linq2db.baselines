@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
-	DAY(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7))
+	DAY(DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 3))
 

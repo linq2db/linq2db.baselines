@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	?
 )
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON ([d].[TopicId] = [m_1].[Id])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
@@ -51,5 +46,3 @@ FROM
 WHERE
 	[x].[Id] = 6
 
-BeforeExecute
-DisposeTransaction

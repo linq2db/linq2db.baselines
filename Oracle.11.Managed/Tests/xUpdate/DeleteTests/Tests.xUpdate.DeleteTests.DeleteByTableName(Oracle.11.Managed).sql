@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -9,7 +8,7 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 
-INSERT INTO "xxPerson_o"
+INSERT INTO "xxPerson"
 (
 	"FirstName",
 	"LastName",
@@ -24,15 +23,13 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -42,25 +39,23 @@ SELECT
 	t1."MiddleName",
 	t1."Gender"
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 WHERE
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 1
 
 DELETE FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 WHERE
 	t1."PersonID" = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPerson_o" t1
+	"xxPerson" t1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	c_1.ParentID,
@@ -16,7 +15,6 @@ WHERE
 			param.ParentID = c_1.ParentID AND Nvl(param.Value1, -1) = c_1.ParentID
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	Child t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

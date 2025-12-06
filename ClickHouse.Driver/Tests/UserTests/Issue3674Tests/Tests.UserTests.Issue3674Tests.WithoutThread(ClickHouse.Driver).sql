@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	p.Id,
 	p.Code,
 	p.DIM_Company,
 	p.DIM_Branch,

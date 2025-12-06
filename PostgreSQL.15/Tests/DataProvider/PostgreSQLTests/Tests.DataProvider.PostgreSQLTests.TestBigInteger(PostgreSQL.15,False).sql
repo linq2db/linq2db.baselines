@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 Numeric -- Decimal
@@ -20,10 +19,6 @@ VALUES
 	:Value2
 )
 
-BeforeExecute
-INSERT BULK "BigIntegerTable"(Id, Value1, Value2)
-
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

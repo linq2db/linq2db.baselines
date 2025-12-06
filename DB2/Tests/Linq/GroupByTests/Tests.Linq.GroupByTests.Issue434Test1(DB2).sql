@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'
 
@@ -15,9 +12,6 @@ FROM
 WHERE
 	Lower("m_1"."FirstName") LIKE CAST(@input AS NVarChar(6)) ESCAPE '~'
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'

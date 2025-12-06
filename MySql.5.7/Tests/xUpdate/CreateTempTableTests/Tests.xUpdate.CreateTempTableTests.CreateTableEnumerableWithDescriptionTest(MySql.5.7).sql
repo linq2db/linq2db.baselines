@@ -1,17 +1,16 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `TempTable`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
-	`Name` VARCHAR(20) NOT NULL
+	`Name` VARCHAR(20) NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Name`)
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TempTable`
@@ -21,7 +20,6 @@ INSERT INTO `TempTable`
 VALUES
 ('John')
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 	`Person` `p`
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE IF EXISTS `TempTable`

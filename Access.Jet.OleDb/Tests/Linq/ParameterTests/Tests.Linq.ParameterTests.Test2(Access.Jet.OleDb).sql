@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id1_1 Integer -- Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	[p].[ParentID]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2

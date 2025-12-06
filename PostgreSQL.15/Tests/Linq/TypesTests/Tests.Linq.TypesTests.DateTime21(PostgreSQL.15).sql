@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t."ID",
@@ -18,7 +17,6 @@ WHERE
 	t."ID" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2010-12-14 05:00:07.425'::timestamp
@@ -30,7 +28,6 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -50,7 +47,6 @@ WHERE
 	t."ID" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @pdt Timestamp -- DateTime2
 SET     @pdt = '2001-01-11 01:11:21.100'::timestamp

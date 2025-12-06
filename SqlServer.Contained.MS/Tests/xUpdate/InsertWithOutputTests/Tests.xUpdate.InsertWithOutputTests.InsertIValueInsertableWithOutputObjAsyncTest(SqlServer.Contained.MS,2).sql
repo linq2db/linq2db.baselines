@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 DECLARE @Id Int -- Int32

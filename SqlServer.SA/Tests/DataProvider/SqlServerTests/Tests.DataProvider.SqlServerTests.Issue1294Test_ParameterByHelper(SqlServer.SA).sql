@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 2
 DECLARE @p_1 Int -- Int32

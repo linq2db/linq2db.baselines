@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	DateAdd(Day, "t"."Value", LOCALTIMESTAMP),
@@ -14,7 +13,6 @@ SELECT
 	DateAdd(Day, 4, LOCALTIMESTAMP)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

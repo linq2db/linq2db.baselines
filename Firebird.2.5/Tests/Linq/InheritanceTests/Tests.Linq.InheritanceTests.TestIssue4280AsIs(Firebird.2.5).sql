@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarChar(7) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Location
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -46,7 +44,6 @@ VALUES
 	@DeviceType
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -59,7 +56,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @SerialNumber VarChar(7) -- String
 SET     @SerialNumber = 'TV00002'
@@ -79,7 +75,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @SerialNumber VarChar(9) -- String
 SET     @SerialNumber = 'Disp00002'
@@ -96,7 +91,6 @@ SET
 WHERE
 	"t1"."Id" = @Id
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

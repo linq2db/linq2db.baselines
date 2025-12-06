@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[arg].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS [Id], CAST(NULL AS Real) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

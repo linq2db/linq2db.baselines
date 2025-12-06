@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
@@ -8,7 +7,6 @@ CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -17,7 +15,6 @@ SELECT
 FROM
 	"IsGlobalTemporaryTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN

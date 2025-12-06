@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 INSERT INTO "SampleClass"
 (
@@ -14,7 +13,6 @@ VALUES
 	'SampleClass'
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "SampleClass"
@@ -30,7 +28,6 @@ VALUES
 	'SomeTest'
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
@@ -48,7 +45,6 @@ SELECT
 	)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
@@ -62,7 +58,6 @@ FROM
 WHERE
 	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
@@ -80,7 +75,6 @@ SELECT
 	)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
@@ -94,7 +88,6 @@ FROM
 WHERE
 	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'
@@ -112,7 +105,6 @@ SELECT
 	)
 FROM rdb$database
 
-BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'

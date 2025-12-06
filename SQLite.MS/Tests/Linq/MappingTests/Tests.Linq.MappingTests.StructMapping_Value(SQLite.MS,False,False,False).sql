@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @cond  -- Int32
 SET     @cond = 5
 DECLARE @cond_1  -- Int32

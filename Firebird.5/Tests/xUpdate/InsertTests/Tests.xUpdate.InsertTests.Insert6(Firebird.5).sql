@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 INSERT INTO "Parent"
@@ -22,7 +20,6 @@ FROM
 WHERE
 	"c_1"."ChildID" = 11
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	"p"."Value1" = 11
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 DELETE FROM

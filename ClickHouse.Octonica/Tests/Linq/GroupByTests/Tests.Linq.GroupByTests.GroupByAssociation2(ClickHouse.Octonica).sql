@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	g_2.Value1
@@ -7,7 +6,7 @@ FROM
 	(
 		SELECT
 			a_Parent.ParentID as ParentID,
-			COUNT(*) as COUNT_1,
+			COUNT(*) as Count_1,
 			a_Parent.Value1 as Value1
 		FROM
 			GrandChild g_1
@@ -17,5 +16,5 @@ FROM
 			a_Parent.Value1
 	) g_2
 WHERE
-	g_2.COUNT_1 > 2 AND g_2.ParentID <> 1
+	g_2.Count_1 > 2 AND g_2.ParentID <> 1
 

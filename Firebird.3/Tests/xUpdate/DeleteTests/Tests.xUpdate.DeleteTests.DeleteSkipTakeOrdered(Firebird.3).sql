@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 DELETE FROM
 	"Parent" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
@@ -24,7 +22,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
@@ -42,7 +39,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
@@ -60,7 +56,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1003
@@ -78,7 +73,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1004
@@ -96,7 +90,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1005
@@ -114,7 +107,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1006
@@ -132,7 +124,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1007
@@ -150,7 +141,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1008
@@ -168,7 +158,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1009
@@ -186,7 +175,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @skip Integer -- Int32
 SET     @skip = 2
@@ -201,7 +189,6 @@ ORDER BY
 	"x"."ParentID" DESC
 ROWS @skip + 1 TO @skip + @take
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -213,7 +200,6 @@ WHERE
 ORDER BY
 	"r"."ParentID"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM

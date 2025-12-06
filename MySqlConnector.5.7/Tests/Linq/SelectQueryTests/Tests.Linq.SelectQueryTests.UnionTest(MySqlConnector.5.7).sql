@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
@@ -13,7 +12,6 @@ SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval 3 Day),
 	Date_Add(CURRENT_TIMESTAMP, Interval 4 Day)
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

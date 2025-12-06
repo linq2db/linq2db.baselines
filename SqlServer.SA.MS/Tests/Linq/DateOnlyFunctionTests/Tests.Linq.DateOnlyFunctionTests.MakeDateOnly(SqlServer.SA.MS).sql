@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	DATETIMEFROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0)

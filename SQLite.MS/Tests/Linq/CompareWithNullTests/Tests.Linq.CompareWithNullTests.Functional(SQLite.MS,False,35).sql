@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 /* x => !((int?)x.CEnumA < (int?)x.CEnumB) */
 SELECT

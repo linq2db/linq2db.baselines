@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 
@@ -24,7 +23,6 @@ FROM
 ORDER BY
 	[t1].[OrderID]
 
-BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 10

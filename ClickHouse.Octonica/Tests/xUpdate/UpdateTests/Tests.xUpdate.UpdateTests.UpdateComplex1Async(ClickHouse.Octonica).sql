@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Person
 (
@@ -18,8 +17,7 @@ VALUES
 	'Empty'
 )
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.PersonID,
@@ -33,8 +31,7 @@ WHERE
 	t1.PersonID = 100
 LIMIT 1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Person
@@ -46,8 +43,7 @@ UPDATE
 WHERE
 	PersonID = 100
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.PersonID,

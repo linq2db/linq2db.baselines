@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	@One IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -26,7 +24,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -42,7 +39,6 @@ FROM
 WHERE
 	@Zero IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -54,7 +50,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -70,7 +65,6 @@ FROM
 WHERE
 	@OneN IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -82,7 +76,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -98,7 +91,6 @@ FROM
 WHERE
 	@ZeroN IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -110,7 +102,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
@@ -126,7 +117,6 @@ FROM
 WHERE
 	@Null IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -138,7 +128,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @One Integer -- Int32
 SET     @One = 1
@@ -156,7 +145,6 @@ FROM
 WHERE
 	(@One IN (0, 1) OR @One_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -168,7 +156,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -186,7 +173,6 @@ FROM
 WHERE
 	(@Zero IN (0, 1) OR @Zero_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -198,7 +184,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -216,7 +201,6 @@ FROM
 WHERE
 	(@OneN IN (0, 1) OR @OneN_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -228,7 +212,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -246,7 +229,6 @@ FROM
 WHERE
 	(@ZeroN IN (0, 1) OR @ZeroN_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -258,7 +240,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
@@ -276,7 +257,6 @@ FROM
 WHERE
 	(@Null IN (0, 1) OR @Null_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -288,7 +268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @One Integer -- Int32
 SET     @One = 1
@@ -304,7 +283,6 @@ FROM
 WHERE
 	@One NOT IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -316,7 +294,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -332,7 +309,6 @@ FROM
 WHERE
 	@Zero NOT IN (0, 1)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -344,7 +320,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -362,7 +337,6 @@ FROM
 WHERE
 	(@OneN NOT IN (0, 1) OR @OneN_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -374,7 +348,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -392,7 +365,6 @@ FROM
 WHERE
 	(@ZeroN NOT IN (0, 1) OR @ZeroN_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -404,7 +376,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
@@ -422,7 +393,6 @@ FROM
 WHERE
 	(@Null NOT IN (0, 1) OR @Null_1 IS NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -434,7 +404,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @One Integer -- Int32
 SET     @One = 1
@@ -452,7 +421,6 @@ FROM
 WHERE
 	(@One NOT IN (0, 1) AND @One_1 IS NOT NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -464,7 +432,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
@@ -482,7 +449,6 @@ FROM
 WHERE
 	(@Zero NOT IN (0, 1) AND @Zero_1 IS NOT NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -494,7 +460,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
@@ -512,7 +477,6 @@ FROM
 WHERE
 	(@OneN NOT IN (0, 1) AND @OneN_1 IS NOT NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -524,7 +488,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
@@ -542,7 +505,6 @@ FROM
 WHERE
 	(@ZeroN NOT IN (0, 1) AND @ZeroN_1 IS NOT NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -554,7 +516,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
@@ -572,7 +533,6 @@ FROM
 WHERE
 	(@Null NOT IN (0, 1) AND @Null_1 IS NOT NULL)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

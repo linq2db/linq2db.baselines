@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue (1, 0) -- Decimal
@@ -40,7 +39,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @part1 Integer(4) -- Int32
 SET     @part1 = 4
@@ -54,7 +52,6 @@ FROM
 WHERE
 	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) DAY > CAST('2018-01-02' AS timestamp)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

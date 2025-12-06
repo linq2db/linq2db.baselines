@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @filter1 NVarChar(4000) -- String
 SET     @filter1 = N'%John%'
 DECLARE @filter2 NVarChar(4000) -- String
@@ -42,7 +41,6 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT

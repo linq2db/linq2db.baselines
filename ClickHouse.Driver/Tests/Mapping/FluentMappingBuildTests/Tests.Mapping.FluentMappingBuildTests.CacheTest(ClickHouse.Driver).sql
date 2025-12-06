@@ -1,15 +1,16 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Value    Nullable(String),
-	LastName Nullable(String)
-)
-ENGINE = Memory()
+	LastName Nullable(String),
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO FluentTemp
@@ -25,7 +26,6 @@ VALUES
 	'Doe'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -37,23 +37,23 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS FluentTemp
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Value    Nullable(String),
-	LastName Nullable(String)
-)
-ENGINE = Memory()
+	LastName Nullable(String),
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO FluentTemp
@@ -69,7 +69,6 @@ VALUES
 	'Doe'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -81,23 +80,23 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS FluentTemp
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Column   Nullable(String),
-	LastName Nullable(String)
-)
-ENGINE = Memory()
+	LastName Nullable(String),
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO FluentTemp
@@ -113,7 +112,6 @@ VALUES
 	'Doe'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -125,23 +123,23 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS FluentTemp
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Column   Nullable(String),
-	LastName Nullable(String)
-)
-ENGINE = Memory()
+	LastName Nullable(String),
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO FluentTemp
@@ -157,7 +155,6 @@ VALUES
 	'Doe'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -169,7 +166,6 @@ FROM
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS FluentTemp

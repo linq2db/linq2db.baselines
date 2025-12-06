@@ -1,12 +1,8 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "InheritanceParent" "Target"
@@ -34,7 +30,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -42,7 +37,6 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "InheritanceParent" "Target"
@@ -70,7 +64,6 @@ VALUES
 	"Source"."Data_1"
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -78,5 +71,3 @@ SELECT
 FROM
 	"InheritanceParent" "t1"
 
-BeforeExecute
-DisposeTransaction

@@ -1,35 +1,34 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t3"."SUM_1",
-	"t6"."COUNT_1"
+	"t3"."Sum_1",
+	"t6"."Count_1"
 FROM
 	"MasterClass" "m_1"
 		LEFT JOIN LATERAL (
 			SELECT
-				SUM("t2"."DetailId") as "SUM_1"
+				SUM("t2"."Sum_1") as "Sum_1"
 			FROM
 				(
 					SELECT
-						"t1"."DetailId"
+						"t1"."Sum_1"
 					FROM
 						(
 							SELECT DISTINCT
-								"a_Details"."DetailId"
+								"a_Details"."DetailId" as "Sum_1"
 							FROM
 								"DetailClass" "a_Details"
 							WHERE
 								"m_1"."Id1" = "a_Details"."MasterId"
 						) "t1"
 					ORDER BY
-						"t1"."DetailId"
+						"t1"."Sum_1"
 					LIMIT 5 OFFSET 1
 				) "t2"
 		) "t3" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				COUNT(*) as "COUNT_1"
+				COUNT(*) as "Count_1"
 			FROM
 				(
 					SELECT
@@ -37,21 +36,18 @@ FROM
 					FROM
 						(
 							SELECT DISTINCT
-								"a_Details_1"."DetailValue"
+								"a_Details_1"."DetailValue" as "Count_1"
 							FROM
 								"DetailClass" "a_Details_1"
 							WHERE
 								"m_1"."Id1" = "a_Details_1"."MasterId"
 						) "t4"
 					ORDER BY
-						"t4"."DetailValue"
+						"t4"."Count_1"
 					LIMIT 2 OFFSET 1
 				) "t5"
 		) "t6" ON 1=1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -68,9 +64,6 @@ FROM
 	) "m_1"
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

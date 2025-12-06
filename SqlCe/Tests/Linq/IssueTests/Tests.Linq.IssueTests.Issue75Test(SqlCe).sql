@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[c_1].[ChildID],
 	[c_1].[ParentID],
-	[t1].[COUNT_1],
+	[t1].[CountChildren],
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -29,13 +28,13 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as [AllChildren],
-	[t2].[MIN_1],
-	[t3].[MAX_1]
+	[t2].[AllChildrenMin],
+	[t3].[AllChildrenMax]
 FROM
 	[Child] [c_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [CountChildren]
 			FROM
 				[Child] [c2]
 			WHERE
@@ -43,7 +42,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				MIN([c2_1].[ChildID]) as [MIN_1]
+				MIN([c2_1].[ChildID]) as [AllChildrenMin]
 			FROM
 				[Child] [c2_1]
 			WHERE
@@ -51,7 +50,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MAX([c2_2].[ChildID]) as [MAX_1]
+				MAX([c2_2].[ChildID]) as [AllChildrenMax]
 			FROM
 				[Child] [c2_2]
 			WHERE

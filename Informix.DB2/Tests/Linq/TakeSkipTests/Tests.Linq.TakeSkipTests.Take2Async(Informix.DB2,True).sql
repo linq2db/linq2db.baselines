@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 

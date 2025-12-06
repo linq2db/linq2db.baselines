@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[r].[Id],
@@ -34,7 +33,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -46,7 +44,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -67,7 +64,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -79,7 +75,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -99,7 +94,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -111,7 +105,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -131,7 +124,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -143,7 +135,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -164,7 +155,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -204,7 +193,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -216,7 +204,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -252,7 +239,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SqlCe
 
 SELECT

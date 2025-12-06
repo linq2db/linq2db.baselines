@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT DISTINCT
 	`a_Ref4`.`Field6`,
@@ -15,7 +14,6 @@ FROM
 WHERE
 	`t1`.`Field3` IS NOT NULL
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

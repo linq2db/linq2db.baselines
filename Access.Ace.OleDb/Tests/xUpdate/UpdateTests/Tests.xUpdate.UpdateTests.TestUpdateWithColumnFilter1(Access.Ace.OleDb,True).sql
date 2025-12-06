@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarWChar(8) -- String
@@ -24,7 +23,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -40,7 +38,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
@@ -63,7 +60,6 @@ SET
 WHERE
 	[t1].[PersonID] = @ID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'

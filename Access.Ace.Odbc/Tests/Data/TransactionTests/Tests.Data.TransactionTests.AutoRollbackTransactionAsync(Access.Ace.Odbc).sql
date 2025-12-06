@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -16,9 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 UPDATE
@@ -28,10 +24,7 @@ SET
 WHERE
 	[t].[ParentID] = 1010
 
-BeforeExecute
-DisposeTransactionAsync
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
+-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
 	[t].[ParentID],

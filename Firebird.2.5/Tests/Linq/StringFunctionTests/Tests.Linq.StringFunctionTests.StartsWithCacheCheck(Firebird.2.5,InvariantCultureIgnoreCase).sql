@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"p"."FirstName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	Lower("p"."FirstName") STARTING WITH 'joh' AND "p"."PersonID" = 1
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

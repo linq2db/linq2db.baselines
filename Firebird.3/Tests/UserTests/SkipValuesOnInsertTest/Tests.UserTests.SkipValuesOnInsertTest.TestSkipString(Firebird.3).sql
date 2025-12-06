@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Age Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -29,7 +27,6 @@ WHERE
 	"t"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -47,7 +44,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

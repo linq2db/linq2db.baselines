@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -11,7 +10,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -28,7 +26,6 @@ ORDER BY
 	MAX([x].[OrderData1])
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -41,7 +38,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3

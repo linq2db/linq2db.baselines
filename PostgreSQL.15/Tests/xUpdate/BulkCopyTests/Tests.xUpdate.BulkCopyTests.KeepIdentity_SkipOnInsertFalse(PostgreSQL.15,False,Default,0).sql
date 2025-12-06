@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -14,7 +13,6 @@ VALUES
 RETURNING 
 	"ID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "AllTypes"
@@ -25,7 +23,6 @@ VALUES
 (200),
 (300)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
@@ -40,7 +37,6 @@ WHERE
 ORDER BY
 	t1."ID"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3

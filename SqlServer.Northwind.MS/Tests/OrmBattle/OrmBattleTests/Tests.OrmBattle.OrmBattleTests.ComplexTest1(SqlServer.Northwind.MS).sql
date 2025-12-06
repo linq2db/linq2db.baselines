@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[m_1].[ProductID],
@@ -34,7 +31,6 @@ FROM
 			LEFT JOIN [Suppliers] [a_Supplier] ON [d_1].[SupplierID] = [a_Supplier].[SupplierID]
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
@@ -44,9 +40,6 @@ FROM
 	[Suppliers] [m_1]
 		CROSS JOIN [Products] [d]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT

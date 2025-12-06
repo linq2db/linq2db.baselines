@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Column Char(36) -- StringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	r."Column" = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
 	r.ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	GuidTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	GuidTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -117,7 +109,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -139,7 +130,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -151,16 +141,13 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DELETE FROM
 	GuidTable
 
-BeforeExecute
 INSERT BULK GuidTable
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

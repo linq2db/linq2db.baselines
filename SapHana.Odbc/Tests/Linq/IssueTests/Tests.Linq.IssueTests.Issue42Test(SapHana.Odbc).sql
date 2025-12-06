@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"r"."ID",
+	"r"."MoneyValue",
+	"r"."DateTimeValue",
+	"r"."DateTimeValue2",
+	"r"."BoolValue",
+	"r"."GuidValue",
+	"r"."SmallIntValue",
+	"r"."IntValue",
+	"r"."BigIntValue",
+	"r"."StringValue"
+FROM
+	"LinqDataTypes" "r"
+WHERE
+	"r"."ID" = 1
+LIMIT 1
+
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	"r"."ID" = 1
 LIMIT 1
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"r"."ID",
-	"r"."MoneyValue",
-	"r"."DateTimeValue",
-	"r"."DateTimeValue2",
-	"r"."BoolValue",
-	"r"."GuidValue",
-	"r"."SmallIntValue",
-	"r"."IntValue",
-	"r"."BigIntValue",
-	"r"."StringValue"
-FROM
-	"LinqDataTypes" "r"
-WHERE
-	"r"."ID" = 1
-LIMIT 1
-
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
@@ -76,7 +73,6 @@ SET
 WHERE
 	"t1"."ID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	"r"."ID" = ?
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
@@ -136,7 +131,6 @@ SET
 WHERE
 	"t1"."ID" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

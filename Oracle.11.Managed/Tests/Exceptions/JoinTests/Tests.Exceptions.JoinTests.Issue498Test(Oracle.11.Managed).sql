@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."ParentID"
@@ -7,7 +6,6 @@ FROM
 	"Parent" x
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

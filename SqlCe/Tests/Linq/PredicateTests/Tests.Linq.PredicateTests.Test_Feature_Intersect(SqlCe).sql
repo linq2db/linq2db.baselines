@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -16,11 +15,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -34,11 +32,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -52,11 +49,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -72,11 +68,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -92,11 +87,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -112,11 +106,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -130,11 +123,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -148,11 +140,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -166,11 +157,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -186,11 +176,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE
@@ -206,11 +195,10 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[FeatureTable] [r]
 WHERE

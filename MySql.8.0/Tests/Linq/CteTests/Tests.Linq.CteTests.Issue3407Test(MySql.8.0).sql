@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE_1`
 (
@@ -38,7 +37,6 @@ FROM
 WHERE
 	`r`.`ID` = 2
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE_1` (`c1`)

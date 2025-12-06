@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Child`.`ChildID` IN (1001, 1002)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Child`
@@ -21,7 +19,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `Child`
@@ -35,7 +32,6 @@ VALUES
 	1002
 )
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -45,7 +41,6 @@ FROM
 WHERE
 	`c_1`.`ParentID` = 1
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE   `c_1`
@@ -55,7 +50,6 @@ FROM
 WHERE
 	`a_Parent`.`ParentID` = 1 AND `c_1`.`ChildID` IN (1001, 1002)
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT

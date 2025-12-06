@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -17,7 +15,6 @@ WHERE
 RETURNING
 	NEW."Id"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE

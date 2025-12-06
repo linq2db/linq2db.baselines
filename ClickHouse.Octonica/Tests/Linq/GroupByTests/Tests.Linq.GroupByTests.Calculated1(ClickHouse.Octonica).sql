@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -26,7 +25,6 @@ FROM
 			ELSE '3'
 		END
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

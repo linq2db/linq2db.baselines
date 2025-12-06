@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.FirstName,
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe') n ON p.LastName = n.item
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

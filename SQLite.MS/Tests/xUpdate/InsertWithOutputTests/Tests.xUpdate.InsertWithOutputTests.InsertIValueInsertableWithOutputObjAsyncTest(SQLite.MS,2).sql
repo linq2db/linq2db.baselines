@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 200
 DECLARE @Id  -- Int32

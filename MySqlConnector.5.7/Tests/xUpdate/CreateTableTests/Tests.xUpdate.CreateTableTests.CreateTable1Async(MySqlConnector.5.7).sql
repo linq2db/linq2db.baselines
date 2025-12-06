@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `TestTable`
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TABLE `TestTable`
 (
@@ -16,8 +14,7 @@ CREATE TABLE `TestTable`
 	CONSTRAINT `PK_TestTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`ID`,
@@ -27,8 +24,7 @@ SELECT
 FROM
 	`TestTable` `t1`
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE `TestTable`
 

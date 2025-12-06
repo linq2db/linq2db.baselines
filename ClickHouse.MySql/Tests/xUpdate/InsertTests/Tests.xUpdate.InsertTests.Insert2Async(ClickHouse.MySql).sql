@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	Child
 DELETE WHERE
 	ChildID > 1000
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Child
 (
@@ -20,8 +18,7 @@ VALUES
 	1001
 )
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -30,8 +27,7 @@ FROM
 WHERE
 	c_1.ChildID = 1001
 
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	Child

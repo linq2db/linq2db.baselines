@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 WITH [CTE_1] ([Id])
 AS
@@ -47,7 +46,6 @@ SELECT
 FROM
 	[hierarchyDown] [t4]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

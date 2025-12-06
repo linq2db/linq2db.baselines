@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @newValue  -- Int32
 SET     @newValue = 123
@@ -23,7 +21,6 @@ SET
 	[Id] = 492,
 	[Value] = @newValue
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

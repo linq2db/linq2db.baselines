@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[a_Parent].[ParentID],
@@ -12,7 +11,6 @@ WHERE
 ORDER BY
 	[m_1].[ChildID] DESC
 
-BeforeExecute
 -- SqlCe
 
 SELECT

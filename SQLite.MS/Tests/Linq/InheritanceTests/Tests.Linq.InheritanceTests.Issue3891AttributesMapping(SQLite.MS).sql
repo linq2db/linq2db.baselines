@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Type  -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -41,7 +39,6 @@ FROM
 	[Base] [t1]
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Type  -- Int32
 SET     @Type = 1
@@ -64,7 +61,6 @@ SET
 WHERE
 	[Base].[Id] = @Id
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

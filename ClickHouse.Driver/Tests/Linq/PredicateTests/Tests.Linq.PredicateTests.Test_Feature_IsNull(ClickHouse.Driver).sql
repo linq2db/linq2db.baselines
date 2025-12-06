@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(r.One = r.One) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(r.Zero = r.Zero) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(r.Null = r.Null) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(r.One = r.Zero) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -48,7 +43,6 @@ FROM
 WHERE
 	(r.One = r.Null) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -58,7 +52,6 @@ FROM
 WHERE
 	(r.Zero = r.Null) IS NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -68,7 +61,6 @@ FROM
 WHERE
 	(r.One = r.One) IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -78,7 +70,6 @@ FROM
 WHERE
 	(r.Zero = r.Zero) IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -88,7 +79,6 @@ FROM
 WHERE
 	(r.Null = r.Null) IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -98,7 +88,6 @@ FROM
 WHERE
 	(r.One = r.Zero) IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -108,7 +97,6 @@ FROM
 WHERE
 	(r.One = r.Null) IS NOT NULL
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

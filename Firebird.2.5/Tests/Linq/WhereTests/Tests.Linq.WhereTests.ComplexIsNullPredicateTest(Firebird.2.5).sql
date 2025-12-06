@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"r"."Id",
@@ -17,7 +16,6 @@ WHERE
 ORDER BY
 	"r"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

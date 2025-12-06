@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	LEN([nm].[MiddleName] + N'.') <> 1 OR [nm].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

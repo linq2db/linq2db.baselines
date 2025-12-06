@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -16,7 +15,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", 1)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -32,7 +30,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -50,7 +47,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", 0)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -66,7 +62,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -84,7 +79,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

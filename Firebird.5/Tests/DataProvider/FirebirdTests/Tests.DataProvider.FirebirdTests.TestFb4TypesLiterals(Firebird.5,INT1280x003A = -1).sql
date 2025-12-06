@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @Int128 Int128 -- Object
 SET     @Int128 = -1
 
@@ -14,7 +13,6 @@ VALUES
 	@Int128
 )
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

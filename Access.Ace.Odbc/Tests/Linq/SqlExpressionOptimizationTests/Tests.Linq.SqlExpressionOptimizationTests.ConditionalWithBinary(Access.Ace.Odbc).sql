@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[x].[Id],
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[x].[IntVlaue] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -28,7 +26,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -44,7 +41,6 @@ FROM
 WHERE
 	[x_with_not].[IntVlaue] <> 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -58,7 +54,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -74,7 +69,6 @@ FROM
 WHERE
 	[swap].[IntVlaue] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -88,7 +82,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -104,7 +97,6 @@ FROM
 WHERE
 	[swap_with_not].[IntVlaue] <> 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -118,7 +110,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -134,7 +125,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -148,7 +138,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -162,7 +151,6 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -176,7 +164,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -192,7 +179,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -206,7 +192,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -220,7 +205,6 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -234,7 +218,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -250,7 +233,6 @@ FROM
 WHERE
 	[x].[IntVlaue] <> 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -264,7 +246,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -280,7 +261,6 @@ FROM
 WHERE
 	[x_with_not].[IntVlaue] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -294,7 +274,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -310,7 +289,6 @@ FROM
 WHERE
 	[swap].[IntVlaue] <> 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -324,7 +302,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -340,7 +317,6 @@ FROM
 WHERE
 	[swap_with_not].[IntVlaue] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -354,7 +330,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -370,7 +345,6 @@ FROM
 WHERE
 	[x].[BoolValue] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -384,7 +358,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -400,7 +373,6 @@ FROM
 WHERE
 	[x_with_not].[BoolValue] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -414,7 +386,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -430,7 +401,6 @@ FROM
 WHERE
 	[swap].[BoolValue] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -444,7 +414,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -460,7 +429,6 @@ FROM
 WHERE
 	[swap_with_not].[BoolValue] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -474,7 +442,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -490,7 +457,6 @@ FROM
 WHERE
 	NOT [x].[BoolValue]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -504,7 +470,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -520,7 +485,6 @@ FROM
 WHERE
 	[x_with_not].[BoolValue]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -534,7 +498,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -550,7 +513,6 @@ FROM
 WHERE
 	NOT [swap].[BoolValue]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -564,7 +526,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -580,7 +541,6 @@ FROM
 WHERE
 	[swap_with_not].[BoolValue]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -594,7 +554,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -610,7 +569,6 @@ FROM
 WHERE
 	[x].[BoolValue] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -624,7 +582,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -640,7 +597,6 @@ FROM
 WHERE
 	[x_with_not].[BoolValue] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -654,7 +610,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -670,7 +625,6 @@ FROM
 WHERE
 	[swap].[BoolValue] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -684,7 +638,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -700,7 +653,6 @@ FROM
 WHERE
 	[swap_with_not].[BoolValue] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -714,7 +666,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -730,7 +681,6 @@ FROM
 WHERE
 	[x].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -744,7 +694,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -760,7 +709,6 @@ FROM
 WHERE
 	[x_with_not].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -774,7 +722,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -790,7 +737,6 @@ FROM
 WHERE
 	[swap].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -804,7 +750,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -820,7 +765,6 @@ FROM
 WHERE
 	[swap_with_not].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -834,7 +778,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -850,7 +793,6 @@ FROM
 WHERE
 	[x].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -864,7 +806,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -880,7 +821,6 @@ FROM
 WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -894,7 +834,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -910,7 +849,6 @@ FROM
 WHERE
 	[swap].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -924,7 +862,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -940,7 +877,6 @@ FROM
 WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -954,7 +890,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -970,7 +905,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -984,7 +918,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -998,7 +931,6 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1012,7 +944,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1026,7 +957,6 @@ SELECT
 FROM
 	[OptimizationData] [x]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1040,7 +970,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1056,7 +985,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1070,7 +998,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1086,7 +1013,6 @@ FROM
 WHERE
 	[x].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1100,7 +1026,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1116,7 +1041,6 @@ FROM
 WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1130,7 +1054,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1146,7 +1069,6 @@ FROM
 WHERE
 	[x].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1160,7 +1082,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1176,7 +1097,6 @@ FROM
 WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1190,7 +1110,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1206,7 +1125,6 @@ FROM
 WHERE
 	[swap].[StringValueNullable] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1220,7 +1138,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1236,7 +1153,6 @@ FROM
 WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1250,7 +1166,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1266,7 +1181,6 @@ FROM
 WHERE
 	IIF([x].[StringValueNullable] IS NOT NULL, IIF([x].[StringValueNullable] = '2', 2, 10), IIF([x].[StringValueNullable] IS NULL, 3, 1)) = 2
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1280,7 +1194,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1296,7 +1209,6 @@ FROM
 WHERE
 	IIF([x_with_not].[StringValueNullable] IS NOT NULL, IIF([x_with_not].[StringValueNullable] = '2', 2, 10), IIF([x_with_not].[StringValueNullable] IS NULL, 3, 1)) <> 2
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1310,7 +1222,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1326,7 +1237,6 @@ FROM
 WHERE
 	2 = IIF([swap].[StringValueNullable] IS NOT NULL, IIF([swap].[StringValueNullable] = '2', 2, 10), IIF([swap].[StringValueNullable] IS NULL, 3, 1))
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1340,7 +1250,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1356,7 +1265,6 @@ FROM
 WHERE
 	2 <> IIF([swap_with_not].[StringValueNullable] IS NOT NULL, IIF([swap_with_not].[StringValueNullable] = '2', 2, 10), IIF([swap_with_not].[StringValueNullable] IS NULL, 3, 1))
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1370,7 +1278,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1386,7 +1293,6 @@ FROM
 WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1400,7 +1306,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1416,7 +1321,6 @@ FROM
 WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1430,7 +1334,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1446,7 +1349,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1460,7 +1362,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1476,7 +1377,6 @@ FROM
 WHERE
 	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1490,7 +1390,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1506,7 +1405,6 @@ FROM
 WHERE
 	NOT ([swap_with_not].[IntVlaue] < 4 OR [swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1520,7 +1418,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1536,7 +1433,6 @@ FROM
 WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1550,7 +1446,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1566,7 +1461,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1580,7 +1474,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1596,7 +1489,6 @@ FROM
 WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1610,7 +1502,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1626,7 +1517,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1640,7 +1530,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1656,7 +1545,6 @@ FROM
 WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1670,7 +1558,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1686,7 +1573,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1700,7 +1586,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1716,7 +1601,6 @@ FROM
 WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1730,7 +1614,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1746,7 +1629,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1760,7 +1642,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1776,7 +1657,6 @@ FROM
 WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1790,7 +1670,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1806,7 +1685,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] = 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1820,7 +1698,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1836,7 +1713,6 @@ FROM
 WHERE
 	[swap].[IntVlaue] = 0 AND [swap].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1850,7 +1726,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1866,7 +1741,6 @@ FROM
 WHERE
 	NOT ([swap_with_not].[IntVlaue] = 0 AND [swap_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1880,7 +1754,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1896,7 +1769,6 @@ FROM
 WHERE
 	[x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1910,7 +1782,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1926,7 +1797,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1940,7 +1810,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1957,7 +1826,6 @@ WHERE
 	[swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR
 	[swap].[IntVlaue] < 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1971,7 +1839,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1987,7 +1854,6 @@ FROM
 WHERE
 	NOT ([swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4 OR [swap_with_not].[IntVlaue] < 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2001,7 +1867,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2017,7 +1882,6 @@ FROM
 WHERE
 	[x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2031,7 +1895,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2047,7 +1910,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2061,7 +1923,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2077,7 +1938,6 @@ FROM
 WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2091,7 +1951,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2107,7 +1966,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2121,7 +1979,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2137,7 +1994,6 @@ FROM
 WHERE
 	[x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2151,7 +2007,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2167,7 +2022,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2181,7 +2035,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2197,7 +2050,6 @@ FROM
 WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2211,7 +2063,6 @@ SELECT
 FROM
 	[OptimizationData] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -2227,7 +2078,6 @@ FROM
 WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

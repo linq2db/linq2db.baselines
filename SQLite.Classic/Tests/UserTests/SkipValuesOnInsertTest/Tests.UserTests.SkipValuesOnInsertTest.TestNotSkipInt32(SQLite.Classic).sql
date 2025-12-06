@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	[t].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -55,7 +52,6 @@ VALUES
 	@Age
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

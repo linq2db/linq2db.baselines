@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	Replace(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.')

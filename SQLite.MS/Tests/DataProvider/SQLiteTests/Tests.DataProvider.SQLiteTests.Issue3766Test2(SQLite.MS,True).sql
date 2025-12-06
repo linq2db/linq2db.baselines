@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- DateTimeOffset
 SET     @Id = '2020-02-29T17:09:55.1231234+00:00'
 
@@ -14,7 +13,6 @@ VALUES
 	0
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- DateTimeOffset
 SET     @Id = '2020-02-29T17:09:55.1231234+00:00'

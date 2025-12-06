@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND N'123n456' LIKE N'%n%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

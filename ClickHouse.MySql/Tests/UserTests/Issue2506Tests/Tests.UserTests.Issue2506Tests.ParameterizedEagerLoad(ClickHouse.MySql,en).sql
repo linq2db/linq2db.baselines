@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	d.Lang = 'en'
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

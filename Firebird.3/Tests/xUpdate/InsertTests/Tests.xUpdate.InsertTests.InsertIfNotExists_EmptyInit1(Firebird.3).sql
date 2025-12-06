@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 MERGE INTO "test_insert_or_replace" "t1"
 USING (SELECT 1 AS "id" FROM rdb$database) "s" ON
@@ -18,7 +17,6 @@ WHEN NOT MATCHED THEN
 		'test'
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 MERGE INTO "test_insert_or_replace" "t1"

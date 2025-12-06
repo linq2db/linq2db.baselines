@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (
@@ -23,7 +22,6 @@ VALUES
 	"Source".ID
 )
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

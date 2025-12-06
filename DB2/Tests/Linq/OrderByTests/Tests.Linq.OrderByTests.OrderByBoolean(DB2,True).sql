@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."FirstName",
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	CHAR_LENGTH("t1"."FirstName") > 1
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

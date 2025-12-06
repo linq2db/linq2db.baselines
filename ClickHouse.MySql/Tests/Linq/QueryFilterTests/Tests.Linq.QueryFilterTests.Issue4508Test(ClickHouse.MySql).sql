@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	p.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	p.PersonID > 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -26,7 +24,6 @@ FROM
 WHERE
 	p.PersonID > 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -40,7 +37,6 @@ FROM
 WHERE
 	p.PersonID > 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -54,7 +50,6 @@ FROM
 WHERE
 	p.PersonID > 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -68,7 +63,6 @@ FROM
 WHERE
 	p.PersonID > 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -82,7 +76,6 @@ FROM
 WHERE
 	p.PersonID > 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -96,7 +89,6 @@ FROM
 WHERE
 	p.PersonID > 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

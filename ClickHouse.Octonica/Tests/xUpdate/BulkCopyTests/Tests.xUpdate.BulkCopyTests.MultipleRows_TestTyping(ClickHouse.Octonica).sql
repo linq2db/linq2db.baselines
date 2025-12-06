@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO MultipleRowsTable
 (
@@ -11,7 +10,6 @@ VALUES
 (1,NULL,toDecimal128('1', 10)),
 (2,toDecimal128('1.5', 10),toDecimal128('-2.6', 10))
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

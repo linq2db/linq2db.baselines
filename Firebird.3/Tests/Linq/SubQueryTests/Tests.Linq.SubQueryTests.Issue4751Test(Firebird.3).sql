@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @skip Integer -- Int32
 SET     @skip = 20
 DECLARE @take Integer -- Int32
@@ -53,7 +52,6 @@ FROM
 	) "x"
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

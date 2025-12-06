@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	p.PersonID = 1 AND @s LIKE '%~[%' ESCAPE '~'
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @s VarChar(7) -- String
 SET     @s = '123[456'

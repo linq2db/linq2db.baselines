@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -19,7 +18,6 @@ WHERE
 			[sr].[id] = 'TestProcessService' AND [component_categories].[id] = [ct].[id]
 	)
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
 
-BeforeExecute
 -- SqlCe
 
 SELECT

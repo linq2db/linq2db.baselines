@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 MERGE INTO "Person" "Target"
 USING (
@@ -25,7 +22,6 @@ SET
 	"MiddleName" = 'first ' || "Source"."Patient_Diagnosis",
 	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -39,5 +35,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

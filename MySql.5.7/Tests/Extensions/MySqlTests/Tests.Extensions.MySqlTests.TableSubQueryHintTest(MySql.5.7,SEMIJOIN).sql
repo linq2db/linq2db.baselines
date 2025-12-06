@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT /*+ SEMIJOIN(@qq FIRSTMATCH, LOOSESCAN) */
 	`p_1`.`ParentID`,

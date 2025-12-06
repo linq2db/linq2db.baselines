@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(13) -- String
@@ -16,7 +15,6 @@ VALUES
 	@SomeText
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -28,7 +26,6 @@ WHERE
 	[e].[SomeText] = 'Value1_suffix'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

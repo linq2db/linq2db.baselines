@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -12,13 +11,11 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 
@@ -31,8 +28,7 @@ VALUES
 	@Value
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 300
 
@@ -45,7 +41,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
@@ -60,7 +55,6 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3

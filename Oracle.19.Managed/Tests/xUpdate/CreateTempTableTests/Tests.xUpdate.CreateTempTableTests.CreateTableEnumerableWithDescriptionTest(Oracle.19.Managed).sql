@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
@@ -10,14 +9,15 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
 		(
-			"Name" VarChar(20) NOT NULL
+			"Name" VarChar(20) NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 		)
 	';
 EXCEPTION
@@ -27,14 +27,12 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "TempTable" ("Name") VALUES ('John')
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -43,7 +41,6 @@ FROM
 	"Person" p
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

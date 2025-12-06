@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
 
@@ -18,7 +17,6 @@ SELECT
 	END
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = -1

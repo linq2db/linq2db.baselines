@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[r].[Id]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	COALESCE([r].[Value], 0) <> 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	COALESCE([r].[Value], 0) <> 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	COALESCE([r].[Value], 0) = 0
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

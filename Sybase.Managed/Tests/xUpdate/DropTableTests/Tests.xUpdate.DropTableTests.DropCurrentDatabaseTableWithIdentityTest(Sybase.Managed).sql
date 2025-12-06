@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'DropTableTestID') IS NOT NULL)
 	DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 CREATE TABLE [DropTableTestID]
@@ -15,7 +13,6 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [DropTableTestID]
@@ -27,7 +24,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -36,12 +32,10 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DROP TABLE [DropTableTestID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
@@ -16,7 +14,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
@@ -25,7 +22,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [Parent]
@@ -37,7 +33,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [Child]
@@ -51,7 +46,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [GrandChild]
@@ -67,7 +61,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [GrandChild]
@@ -83,7 +76,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [a_GrandChildren]
@@ -94,7 +86,6 @@ FROM
 WHERE
 	[gc].[ParentID] IN (1001)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
@@ -103,7 +94,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
@@ -112,7 +102,6 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -17,7 +16,6 @@ FROM
 	) m_1
 		INNER JOIN Person d ON m_1.Key_1 = d.FirstName
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

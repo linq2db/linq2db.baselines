@@ -1,13 +1,9 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
 	`InheritanceParent`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Key1 Int32
 SET     @Key1 = 143
@@ -31,7 +27,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -39,7 +34,6 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Key1 Int32
 SET     @Key1 = 143
@@ -63,7 +57,6 @@ VALUES
 ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
@@ -71,5 +64,3 @@ SELECT
 FROM
 	`InheritanceParent` `t1`
 
-BeforeExecute
-DisposeTransaction

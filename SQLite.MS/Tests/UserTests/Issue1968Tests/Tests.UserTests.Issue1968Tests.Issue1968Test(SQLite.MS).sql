@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Location
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -58,7 +56,6 @@ VALUES
 	@UniversityId
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @SubjectId  -- Int32
 SET     @SubjectId = 1
@@ -88,9 +85,6 @@ VALUES
 	@FacultyId
 )
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -111,7 +105,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -137,9 +130,6 @@ FROM
 				[m_2].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
 		)
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

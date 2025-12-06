@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -19,12 +18,10 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "SIDENTITY_Issue4671EntityTMP"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_Issue4671EntityTMP"
@@ -33,7 +30,6 @@ BEGIN
 	SELECT "SIDENTITY_Issue4671EntityTMP".NEXTVAL INTO :NEW."Id" FROM dual;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Issue4671Entity"
@@ -45,7 +41,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Issue4671EntityTMP"
@@ -57,7 +52,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -67,7 +61,6 @@ FROM
 	"Issue4671Entity" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -77,7 +70,6 @@ FROM
 	"Issue4671EntityTMP" t1
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN

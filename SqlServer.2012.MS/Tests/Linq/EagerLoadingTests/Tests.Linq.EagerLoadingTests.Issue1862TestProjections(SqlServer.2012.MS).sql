@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -33,7 +30,6 @@ WHERE
 ORDER BY
 	[d_1].[TagId]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
@@ -56,9 +52,6 @@ FROM
 ORDER BY
 	[d].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1

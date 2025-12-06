@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Field1 UniVarChar -- String
@@ -16,11 +15,10 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Field1 Char -- AnsiStringFixedLength
+DECLARE @Field1 UniVarChar -- String
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
@@ -34,7 +32,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -52,7 +49,6 @@ VALUES
 	@Field1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	max(id.ChildID)
+	MAX(id.ChildID)
 FROM
 	Child id
 GROUP BY

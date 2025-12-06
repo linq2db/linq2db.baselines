@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -26,14 +24,12 @@ FROM
 WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -89,14 +83,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [IntEnumTable]
@@ -109,7 +101,6 @@ VALUES
 (1,1,NULL),
 (2,2,3)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -121,17 +112,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-BeforeExecute
 INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

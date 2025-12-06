@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[c_1].[ParentID],
@@ -17,7 +16,6 @@ WHERE
 			[c_1].[ParentID] = [p].[Value1] OR [c_1].[ParentID] IS NULL AND [p].[Value1] IS NULL
 	)
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	[GrandChild] [t1]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

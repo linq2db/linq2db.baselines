@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 UPDATE
 	[TrimTestTable]
@@ -8,7 +7,6 @@ SET
 WHERE
 	[TrimTestTable].[ID] = 3
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

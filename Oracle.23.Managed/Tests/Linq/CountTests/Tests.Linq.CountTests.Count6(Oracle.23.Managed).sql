@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -11,7 +10,7 @@ FROM
 			"Child" g_1
 		GROUP BY
 			g_1."ParentID"
-	) g_2
+	) t1
 WHERE
-	g_2."ParentID" > 2
+	t1."ParentID" > 2
 

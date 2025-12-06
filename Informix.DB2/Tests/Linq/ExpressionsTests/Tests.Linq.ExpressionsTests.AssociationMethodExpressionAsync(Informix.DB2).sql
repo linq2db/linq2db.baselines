@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,
@@ -7,8 +6,7 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 SELECT
 	(

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TestTempTable
 (
@@ -12,17 +11,18 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int32,
-	Renamed Nullable(String)
-)
-ENGINE = Memory()
+	Renamed Nullable(String),
 
-BeforeExecute
+	PRIMARY KEY (Id)
+)
+ENGINE = MergeTree()
+ORDER BY Id
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TempTable
@@ -36,7 +36,6 @@ SELECT
 FROM
 	TestTempTable t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TestTempTable
@@ -50,7 +49,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TempTable
@@ -64,7 +62,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -75,7 +72,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -86,7 +82,6 @@ FROM
 ORDER BY
 	t1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable

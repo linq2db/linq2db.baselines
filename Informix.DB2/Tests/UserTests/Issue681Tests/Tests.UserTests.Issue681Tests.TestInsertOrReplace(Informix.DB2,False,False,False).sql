@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10
 DECLARE @ID Integer(4) -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1.ID = @ID
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
@@ -30,7 +28,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10

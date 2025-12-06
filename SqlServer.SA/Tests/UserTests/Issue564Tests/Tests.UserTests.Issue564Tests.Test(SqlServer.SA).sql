@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564A'
 DECLARE @StringValue NVarChar(20) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	@IntValue
 )
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

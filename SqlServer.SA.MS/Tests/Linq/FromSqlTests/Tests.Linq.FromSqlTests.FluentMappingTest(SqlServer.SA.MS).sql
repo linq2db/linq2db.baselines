@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 
@@ -14,7 +13,6 @@ FROM
 			SELECT * FROM sample_other_class where parent_id = [t].[id] and id >= @idFilter
 		) [a_AssociatedOne]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1

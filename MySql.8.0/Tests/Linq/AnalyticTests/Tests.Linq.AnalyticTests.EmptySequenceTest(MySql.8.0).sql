@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`,
-	`d_1`.`ToValue`
+	`d_1`.`Children`
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +14,7 @@ FROM
 		INNER JOIN LATERAL (
 			SELECT
 				`d`.`ParentID` as `Key_1`,
-				GROUP_CONCAT(CAST(`d`.`ChildID` AS CHAR(11)) SEPARATOR ', ') as `ToValue`
+				GROUP_CONCAT(CAST(`d`.`ChildID` AS CHAR(11)) SEPARATOR ', ') as `Children`
 			FROM
 				`Child` `d`
 			WHERE
@@ -26,9 +23,6 @@ FROM
 				`d`.`ParentID`
 		) `d_1` ON 1=1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

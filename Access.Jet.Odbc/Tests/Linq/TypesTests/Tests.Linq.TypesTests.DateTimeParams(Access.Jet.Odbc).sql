@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @dateTime DateTime
 SET     @dateTime = #1992-01-11 01:11:21#
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[DateTimeValue] > ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @dateTime DateTime
 SET     @dateTime = #1993-01-11 01:11:21#

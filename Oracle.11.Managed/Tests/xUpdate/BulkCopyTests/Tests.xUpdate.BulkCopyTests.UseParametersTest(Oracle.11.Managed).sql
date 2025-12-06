@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
 SET     @:p1 = 111001
 DECLARE @:p2 Int32
@@ -256,7 +253,6 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (:p99,:p100)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
 SET     @:p1 = 111051
@@ -512,7 +508,6 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (:p99,:p100)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
 SET     @:p1 = 111101
@@ -763,7 +758,6 @@ INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (:p97,:p98)
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 111001
@@ -777,5 +771,3 @@ FROM
 WHERE
 	r."ParentID" >= :ParentID AND r."ParentID" <= :ParentID_1
 
-BeforeExecute
-DisposeTransaction

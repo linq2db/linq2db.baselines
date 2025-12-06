@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
@@ -10,7 +9,6 @@ FROM
 	TransactionEntity m_1
 		INNER JOIN LineEntity d ON m_1.Id = d.TransactionId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

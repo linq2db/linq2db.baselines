@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	s.Key1,
@@ -24,7 +23,6 @@ FROM
 	SecondOptimizerData s
 		LEFT JOIN FirstOptimizerData a ON a.DataKey11 = s.DataKey11
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -41,7 +39,6 @@ FROM
 	SecondOptimizerData p
 		LEFT JOIN FirstOptimizerData a ON a.DataKey11 = p.DataKey11
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -67,7 +64,6 @@ FROM
 	SecondOptimizerData s
 		LEFT JOIN FirstOptimizerData a ON a.DataKey22 = s.DataKey22 AND a.DataKey21 = s.DataKey21 AND a.Key1 = s.Key1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -84,7 +80,6 @@ FROM
 	SecondOptimizerData p
 		LEFT JOIN FirstOptimizerData a ON a.DataKey22 = p.DataKey22 AND a.DataKey21 = p.DataKey21 AND a.Key1 = p.Key1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -110,7 +105,6 @@ FROM
 	SecondOptimizerData s
 		LEFT JOIN FirstOptimizerData a ON a.DataKey31 = s.DataKey31 AND a.DataKey32 = s.DataKey32 AND a.DataKey33 = s.DataKey33
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

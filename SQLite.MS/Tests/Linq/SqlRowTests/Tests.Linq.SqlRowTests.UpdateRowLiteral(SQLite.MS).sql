@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 UPDATE
 	[Ints]
@@ -10,10 +9,10 @@ SET
 WHERE
 	[Ints].[One] = 10
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[One],
 	[t1].[Two],
 	[t1].[Three],

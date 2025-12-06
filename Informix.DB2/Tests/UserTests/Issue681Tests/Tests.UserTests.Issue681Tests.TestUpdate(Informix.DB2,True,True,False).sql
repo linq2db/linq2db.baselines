@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	DBSERVERNAME
 FROM table(set{1})
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 1
@@ -13,7 +11,6 @@ SELECT FIRST 1
 FROM
 	LinqDataTypes t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10

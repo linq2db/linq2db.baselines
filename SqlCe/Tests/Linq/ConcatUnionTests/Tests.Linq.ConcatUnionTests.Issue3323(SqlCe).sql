@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 INSERT INTO [Issue3323Table]
 (
 	[Id],
-	[FistName],
+	[FirstName],
 	[LastName],
 	[Text]
 )
@@ -16,20 +15,19 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
 	[t1].[Id],
 	[t1].[Text],
-	[t1].[FistName] + ' ' + [t1].[LastName] as [FullName]
+	[t1].[FirstName] + ' ' + [t1].[LastName] as [FullName]
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
 	[t2].[Text],
-	[t2].[FistName] + ' ' + [t2].[LastName] as [FullName]
+	[t2].[FirstName] + ' ' + [t2].[LastName] as [FullName]
 FROM
 	[Issue3323Table] [t2]
 

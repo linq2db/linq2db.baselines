@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[m_1].[BookId],
@@ -42,7 +39,6 @@ FROM
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -78,7 +74,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -129,7 +124,6 @@ FROM
 		INNER JOIN [BookAuthor] [d_2] ON [d_2].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_2].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -178,9 +172,6 @@ FROM
 				[d].[FkAuthorId] = [m_1].[c1]
 		) [d_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -201,9 +192,6 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = N'Novel'
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -229,7 +217,6 @@ FROM
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -244,9 +231,6 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

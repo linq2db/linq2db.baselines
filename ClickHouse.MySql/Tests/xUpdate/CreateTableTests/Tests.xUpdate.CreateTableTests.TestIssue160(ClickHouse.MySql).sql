@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 CREATE TABLE aa
 (
@@ -11,7 +10,6 @@ CREATE TABLE aa
 ENGINE = MergeTree()
 ORDER BY bb
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO aa
@@ -25,7 +23,6 @@ VALUES
 	'hallo'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ SELECT
 FROM
 	aa t1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 DROP TABLE aa

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 DECLARE @is_deleted Boolean
 SET     @is_deleted = TRUE
 
@@ -19,7 +18,6 @@ WHERE
 			"sr"."id" = 'TestProcessService' AND "component_categories"."id" = "ct"."id"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -31,7 +29,6 @@ FROM
 WHERE
 	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

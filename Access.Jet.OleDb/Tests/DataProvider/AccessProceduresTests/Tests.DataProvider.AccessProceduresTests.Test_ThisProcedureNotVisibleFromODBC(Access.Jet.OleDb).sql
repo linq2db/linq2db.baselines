@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -10,12 +7,10 @@ FROM
 WHERE
 	[t1].[char20DataType] = 'issue792'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 ThisProcedureNotVisibleFromODBC
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -25,5 +20,3 @@ FROM
 WHERE
 	[t1].[char20DataType] = 'issue792'
 
-BeforeExecute
-DisposeTransaction

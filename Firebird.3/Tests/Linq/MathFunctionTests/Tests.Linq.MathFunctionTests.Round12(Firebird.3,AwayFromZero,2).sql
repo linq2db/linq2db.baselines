@@ -1,13 +1,11 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
-	"t"."MoneyValue"
+	"t"."c1"
 FROM
 	(
 		SELECT
-			ROUND("p"."MoneyValue", 1) as "c1",
-			"p"."MoneyValue"
+			ROUND("p"."MoneyValue", 1) as "c1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "Dest1"
@@ -37,7 +36,6 @@ SELECT
 	42 as N
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -45,7 +43,6 @@ SELECT
 FROM
 	"Dest1" t1
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [TestTempTable]
 (
@@ -12,7 +11,6 @@ VALUES
 	'value'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NULL)
@@ -20,11 +18,12 @@ IF (OBJECT_ID(N'TempTable') IS NULL)
 		CREATE TABLE [TempTable]
 		(
 			[Id]      Int           NOT NULL,
-			[Renamed] NVarChar(255)     NULL
+			[Renamed] NVarChar(255)     NULL,
+
+			CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Id])
 		)
 	')
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TempTable]
@@ -38,7 +37,6 @@ SELECT
 FROM
 	[TestTempTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TestTempTable]
@@ -52,7 +50,6 @@ VALUES
 	'value 2'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [TempTable]
@@ -66,7 +63,6 @@ VALUES
 	'renamed 2'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -77,7 +73,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -88,7 +83,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)

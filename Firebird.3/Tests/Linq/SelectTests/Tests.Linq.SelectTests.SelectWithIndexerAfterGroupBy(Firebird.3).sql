@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	"x"."Key_1",
@@ -24,7 +23,6 @@ WHERE
 ORDER BY
 	"x"."Key_1" DESC
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

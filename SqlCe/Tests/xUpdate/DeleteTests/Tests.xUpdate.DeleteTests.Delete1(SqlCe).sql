@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -8,7 +7,6 @@ DELETE FROM
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -26,19 +24,17 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -48,13 +44,12 @@ DELETE FROM
 WHERE
 	[Parent].[ParentID] = @ParentID
 
-BeforeExecute
 -- SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [p]
 WHERE

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Topic
 (
@@ -14,7 +13,6 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 	) m_1
 		INNER JOIN Message d ON m_1.Id = d.TopicId
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

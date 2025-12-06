@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @p Int -- Int32
 SET     @p = 2
 DECLARE @p_1 Int -- Int32

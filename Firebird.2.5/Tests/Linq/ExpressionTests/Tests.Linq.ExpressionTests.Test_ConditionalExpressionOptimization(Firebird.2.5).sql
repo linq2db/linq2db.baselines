@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
 FROM
 	"Person" "r"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -16,7 +14,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

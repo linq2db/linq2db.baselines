@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 CREATE TABLE aa
 (
@@ -11,7 +10,6 @@ CREATE TABLE aa
 ENGINE = MergeTree()
 ORDER BY bb
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO aa
@@ -25,7 +23,6 @@ VALUES
 	'hallo'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -34,7 +31,6 @@ SELECT
 FROM
 	aa t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE aa

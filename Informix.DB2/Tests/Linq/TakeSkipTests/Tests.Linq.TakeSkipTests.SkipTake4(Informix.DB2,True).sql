@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 2
 DECLARE @skip_1 Integer(4) -- Int32

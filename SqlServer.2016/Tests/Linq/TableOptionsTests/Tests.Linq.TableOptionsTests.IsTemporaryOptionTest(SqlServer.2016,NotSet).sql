@@ -1,25 +1,25 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
-BeforeExecute
 -- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [tempdb]..[#temp_table2]
@@ -33,7 +33,6 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -42,7 +41,6 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#temp_table2] [t1]
 
-BeforeExecute
 -- SqlServer.2016
 
 INSERT INTO [tempdb]..[#temp_table1]
@@ -62,7 +59,6 @@ INSERT INTO [tempdb]..[#temp_table1]
 VALUES
 (2,3)
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 3
@@ -80,25 +76,20 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
-BeforeExecute
 -- SqlServer.2016
 
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
-BeforeExecute
 -- SqlServer.2016
 
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
-BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
-BeforeExecute
 -- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]

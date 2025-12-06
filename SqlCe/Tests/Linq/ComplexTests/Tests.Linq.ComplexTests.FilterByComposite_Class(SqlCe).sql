@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name] as [Name],
 	[u].[city] as [City],
 	[u].[street] as [Street],

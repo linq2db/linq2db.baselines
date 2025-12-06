@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,8 +7,7 @@ FROM
 WHERE
 	(i."One", i."Two") NOT BETWEEN (i."One", i."One" * 2) AND (i."One", i."One" + i."One")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -18,8 +16,7 @@ FROM
 WHERE
 	(i."One", i."Three") NOT BETWEEN (i."One", i."One") AND (i."One", i."Four")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -28,8 +25,7 @@ FROM
 WHERE
 	(i."One", i."Two") NOT BETWEEN (i."One", i."Three") AND (i."One", i."Two")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -38,8 +34,7 @@ FROM
 WHERE
 	(i."Two", i."Five") NOT BETWEEN (i."One", i."One") AND (i."Three", i."Two")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -48,8 +43,7 @@ FROM
 WHERE
 	(i."Two", i."Five") NOT BETWEEN (i."One", i."One") AND (i."Two", i."Two")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -58,8 +52,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") NOT BETWEEN (i."One", i."One") AND (i."Three", i."One")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -68,8 +61,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") NOT BETWEEN (i."Two", i."One") AND (i."Two", i."Three")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -78,8 +70,7 @@ FROM
 WHERE
 	(i."Two", i."Five") NOT BETWEEN (i."One", i."Nil") AND (i."Three", i."Nil")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -88,8 +79,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") NOT BETWEEN (i."One", i."Nil") AND (i."Three", i."Nil")
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

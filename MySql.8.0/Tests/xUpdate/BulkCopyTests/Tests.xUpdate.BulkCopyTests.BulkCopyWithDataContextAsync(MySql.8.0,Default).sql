@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -8,8 +7,7 @@ INSERT INTO `SimpleBulkCopyTable`
 VALUES
 (1)
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `SimpleBulkCopyTable`
 (

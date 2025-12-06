@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [Parent]
 (
@@ -10,7 +9,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [Child]
@@ -24,7 +22,6 @@ VALUES
 	20000
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 UPDATE
@@ -35,7 +32,6 @@ SET
 WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
@@ -43,7 +39,6 @@ DELETE FROM
 WHERE
 	[x].[ChildID] = 10000
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

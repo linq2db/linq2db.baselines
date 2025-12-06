@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t1"."PersonID",
@@ -11,7 +8,6 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -22,7 +18,6 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -36,5 +31,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

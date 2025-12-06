@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS Test1585
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE Test1585

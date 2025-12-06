@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @test Int -- Int32
 SET     @test = 1
 

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1554FluentTable
 (
@@ -14,7 +13,6 @@ VALUES
 	'EC'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

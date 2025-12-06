@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	x.FirstName,
@@ -20,7 +19,6 @@ WHERE
 ORDER BY
 	x.PersonID DESC
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

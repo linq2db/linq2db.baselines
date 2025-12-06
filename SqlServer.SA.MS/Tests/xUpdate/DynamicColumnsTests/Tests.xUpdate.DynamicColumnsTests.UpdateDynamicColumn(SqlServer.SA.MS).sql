@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -14,7 +13,6 @@ VALUES
 	N'M'
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	[Person].[LastName] = N'Limonadovy'
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

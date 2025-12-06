@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Column Date
 SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'::date
+SET     @ColumnNullable = '2020-01-01'::date
 
 SELECT
 	r."Id",
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -24,20 +22,18 @@ SELECT
 FROM
 	"DateOnlyTable" r
 WHERE
-	r."Column" = '2020-02-29'::date AND r."ColumnNullable" = '2200-01-01'::date
+	r."Column" = '2020-02-29'::date AND r."ColumnNullable" = '2020-01-01'::date
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = '1950-01-01'::date
+SET     @Column = '1980-01-01'::date
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -54,14 +50,13 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Date
 SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'::date
+SET     @ColumnNullable = '2020-01-01'::date
 
 INSERT INTO "DateOnlyTable"
 (
@@ -76,7 +71,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "DateOnlyTable"
@@ -104,10 +96,9 @@ INSERT INTO "DateOnlyTable"
 	"ColumnNullable"
 )
 VALUES
-(1,'1950-01-01'::date,NULL),
-(2,'2020-02-29'::date,'2200-01-01'::date)
+(1,'1980-01-01'::date,NULL),
+(2,'2020-02-29'::date,'2020-01-01'::date)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -119,16 +110,13 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 INSERT BULK "DateOnlyTable"(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

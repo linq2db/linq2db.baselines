@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param_1 Decimal(2, 0)

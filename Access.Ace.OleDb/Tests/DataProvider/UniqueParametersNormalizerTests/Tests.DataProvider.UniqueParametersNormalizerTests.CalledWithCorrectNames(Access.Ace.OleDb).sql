@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb (asynchronously)
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @search VarWChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarWChar(4) -- String

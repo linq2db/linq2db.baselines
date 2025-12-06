@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+﻿-- SqlServer.SA SqlServer.2019
 
 
 select 1, 1 from INFORMATION_SCHEMA.TABLES where 1 = 0;

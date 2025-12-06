@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."cond",
@@ -26,7 +25,6 @@ FROM
 WHERE
 	NOT ("x"."cond" AND "x"."cond_1" OR NOT "x"."cond")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -38,7 +36,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -65,7 +62,6 @@ FROM
 WHERE
 	"x"."cond"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -77,7 +73,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -134,7 +129,6 @@ FROM
 WHERE
 	"t2"."cond"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -146,7 +140,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -220,7 +213,6 @@ FROM
 WHERE
 	NOT ("x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR NOT "x_1"."Color")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -232,7 +224,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -307,7 +298,6 @@ WHERE
 	"x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR
 	NOT "x_1"."Color"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -319,7 +309,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -393,7 +382,6 @@ FROM
 WHERE
 	NOT ("x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR NOT "x_1"."Size_1")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -405,7 +393,6 @@ SELECT
 FROM
 	"Item" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -480,7 +467,6 @@ WHERE
 	"x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR
 	NOT "x_1"."Size_1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

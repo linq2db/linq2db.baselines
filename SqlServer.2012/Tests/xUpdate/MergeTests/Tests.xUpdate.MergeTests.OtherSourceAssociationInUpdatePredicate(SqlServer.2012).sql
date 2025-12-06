@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 MERGE INTO [Person] [Target]
 USING (
@@ -32,7 +29,6 @@ SET
 	[LastName] = N'Updated'
 ;
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -46,5 +42,3 @@ FROM
 ORDER BY
 	[t1].[PersonID]
 
-BeforeExecute
-DisposeTransaction

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	"t1"."PersonID",
@@ -20,7 +19,6 @@ SELECT
 FROM
 	"Person" "t1"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

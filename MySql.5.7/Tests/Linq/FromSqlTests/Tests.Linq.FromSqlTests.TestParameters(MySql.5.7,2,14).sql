@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -19,7 +18,6 @@ WHERE
 ORDER BY
 	`c_1`.`id`
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @startId Int32
 SET     @startId = 5

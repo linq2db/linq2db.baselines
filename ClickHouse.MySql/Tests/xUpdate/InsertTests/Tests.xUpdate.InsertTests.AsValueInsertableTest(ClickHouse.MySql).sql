@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO TestInsertOrReplaceTable
 (
@@ -12,7 +11,6 @@ VALUES
 	'John'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

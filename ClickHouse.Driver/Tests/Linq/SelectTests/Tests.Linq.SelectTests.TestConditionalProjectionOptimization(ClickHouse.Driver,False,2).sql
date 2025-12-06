@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	c_1.ParentID
 FROM
 	Child c_1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

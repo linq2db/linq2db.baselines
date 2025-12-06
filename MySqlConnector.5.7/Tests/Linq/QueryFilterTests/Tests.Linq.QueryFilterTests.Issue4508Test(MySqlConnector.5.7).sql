@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 0
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 1
@@ -30,7 +28,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 0
@@ -46,7 +43,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 1
@@ -62,7 +58,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 0
@@ -78,7 +73,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 1
@@ -94,7 +88,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 0
@@ -110,7 +103,6 @@ FROM
 WHERE
 	`p`.`PersonID` > @idCopy
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @idCopy Int32
 SET     @idCopy = 1

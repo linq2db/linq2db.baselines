@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"nm"."FirstName"
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Length("nm"."FirstName") <> 0
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

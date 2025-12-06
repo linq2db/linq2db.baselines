@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	e.Id,
@@ -11,7 +10,6 @@ FROM
 WHERE
 	concat(e.StringValue, '1') = 'StrValue1'
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

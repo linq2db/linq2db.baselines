@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TableWithIdentitySrc
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TableWithIdentity
@@ -22,7 +20,6 @@ SELECT
 FROM
 	TableWithIdentitySrc t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`p`.`PersonID`,
@@ -14,7 +13,6 @@ FROM
 				`Person` `m_1`
 		) `m_2` ON `p`.`PersonID` = `m_2`.`c1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

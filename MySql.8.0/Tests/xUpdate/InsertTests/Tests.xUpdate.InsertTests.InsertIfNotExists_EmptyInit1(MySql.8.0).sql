@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT IGNORE INTO `test_insert_or_replace`
 (
@@ -12,7 +11,6 @@ VALUES
 	'test'
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT IGNORE INTO `test_insert_or_replace`

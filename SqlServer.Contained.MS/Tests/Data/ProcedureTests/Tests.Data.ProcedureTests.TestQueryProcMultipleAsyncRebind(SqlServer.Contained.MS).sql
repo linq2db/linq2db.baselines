@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output1 Int -- Int32

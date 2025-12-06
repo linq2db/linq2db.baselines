@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[m_1].[Key_1],
@@ -19,9 +16,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON ([m_1].[Key_1] = [d].[FirstName])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

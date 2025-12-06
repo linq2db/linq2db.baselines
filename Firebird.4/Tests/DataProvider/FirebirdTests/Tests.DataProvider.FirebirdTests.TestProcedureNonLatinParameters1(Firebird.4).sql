@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @FIRSTNAME VarChar(50) -- String
 SET     @FIRSTNAME = _utf8 x'D098D0BCD18F'
 DECLARE @LASTNAME VarChar(50) -- String
@@ -13,7 +12,6 @@ SET     @PERSONID = NULL
 
 "Person_Insert"
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5
@@ -30,7 +28,6 @@ WHERE
 	"p"."PersonID" = @id
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 5

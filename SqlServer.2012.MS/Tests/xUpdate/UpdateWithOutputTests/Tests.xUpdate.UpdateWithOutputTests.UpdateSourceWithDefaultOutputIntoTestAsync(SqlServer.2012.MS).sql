@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 UPDATE
 	[TableWithData]
@@ -20,7 +19,6 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT

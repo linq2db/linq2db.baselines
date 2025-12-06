@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
@@ -28,7 +27,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -39,7 +37,6 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "CacheTestTable" "Target"
@@ -69,7 +66,6 @@ VALUES
 	"Source"."Value_1"
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

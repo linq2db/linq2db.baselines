@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 INSERT INTO [TPHTable]
 (
@@ -15,7 +14,6 @@ VALUES
 (2,2,NULL,N'Str2',NULL,NULL),
 (3,3,NULL,NULL,N'Str3','Y')
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT
@@ -30,7 +28,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)
@@ -45,7 +42,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)
@@ -60,7 +56,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)
@@ -75,7 +70,6 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)
@@ -90,7 +84,6 @@ FROM
 WHERE
 	[x].[Value1] = N'Str1'
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)
@@ -105,7 +98,6 @@ FROM
 WHERE
 	[x].[Value2] = N'Str2'
 
-BeforeExecute
 -- SqlServer.2014
 
 SELECT TOP (2)

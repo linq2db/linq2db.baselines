@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [tempdb]..[#TestTable]
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -14,8 +12,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 	[CreatedOn] DateTime2          NULL
 )
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -25,8 +22,7 @@ SELECT
 FROM
 	[tempdb]..[#TestTable] [t1]
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
+-- SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [tempdb]..[#TestTable]
 

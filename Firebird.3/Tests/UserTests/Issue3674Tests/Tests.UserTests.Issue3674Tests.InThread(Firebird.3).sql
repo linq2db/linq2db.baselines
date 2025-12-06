@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
+	"p"."Id",
 	"p"."Code",
 	"p"."DIM_Company",
 	"p"."DIM_Branch",

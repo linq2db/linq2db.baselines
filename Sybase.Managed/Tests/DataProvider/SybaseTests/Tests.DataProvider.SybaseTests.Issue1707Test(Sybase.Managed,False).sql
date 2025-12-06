@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 INSERT INTO [Issue1707]
 (
@@ -22,7 +21,6 @@ VALUES
 	'1900-01-01'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Issue1707]
@@ -46,7 +44,6 @@ VALUES
 	'1900-01-01 02:03:00'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Issue1707]
@@ -70,7 +67,6 @@ VALUES
 	'1899-12-31 21:57:00'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Issue1707]
@@ -94,7 +90,6 @@ VALUES
 	'1900-01-02 02:07:00'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 INSERT INTO [Issue1707]
@@ -118,7 +113,6 @@ VALUES
 	'1899-12-30 21:53:00'
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

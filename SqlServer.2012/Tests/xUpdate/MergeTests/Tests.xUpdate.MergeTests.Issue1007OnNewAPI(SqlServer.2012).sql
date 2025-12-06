@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @Field Int -- Int32
 SET     @Field = NULL
@@ -19,7 +17,6 @@ VALUES
 	@Field
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT
@@ -27,7 +24,6 @@ SELECT
 FROM
 	[TestMergeIdentity] [t1]
 
-BeforeExecute
 -- SqlServer.2012
 
 MERGE INTO [TestMergeIdentity] [Target]
@@ -55,7 +51,6 @@ SET
 	[Field] = [Source].[Field]
 ;
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

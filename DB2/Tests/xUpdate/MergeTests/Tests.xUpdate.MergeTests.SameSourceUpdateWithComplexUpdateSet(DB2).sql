@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -82,7 +78,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -108,13 +103,11 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -140,7 +133,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -166,7 +158,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
@@ -192,7 +183,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
@@ -218,7 +208,6 @@ VALUES
 	@Field4
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @name Integer(4) -- Int32
 SET     @name = 4
@@ -254,7 +243,6 @@ SET
 	"Field4" = "Target"."Field4" + "Source"."Field4",
 	"Field5" = "Target"."Field5" + "Source"."Field5"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

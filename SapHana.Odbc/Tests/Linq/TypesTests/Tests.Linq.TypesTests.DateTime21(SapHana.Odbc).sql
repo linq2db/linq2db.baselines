@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t"."ID",
@@ -18,7 +17,6 @@ WHERE
 	"t"."ID" = 1
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @dt DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
@@ -30,7 +28,6 @@ SET
 WHERE
 	"t"."ID" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -50,7 +47,6 @@ WHERE
 	"t"."ID" = 1
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @pdt DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'

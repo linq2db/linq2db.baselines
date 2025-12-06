@@ -1,6 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
+﻿-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	COUNT(*)
+FROM
+	[AllTypes] [t1]
+
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -8,13 +12,3 @@ SELECT
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-SELECT
-	COUNT(*)
-FROM
-	[AllTypes] [t1]
-
-BeforeExecute
-DisposeTransaction

@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 	DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [DropTableTest]
@@ -24,7 +23,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
@@ -32,12 +30,10 @@ SELECT
 FROM
 	[DropTableTest] [t1]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 DROP TABLE [DropTableTest]
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

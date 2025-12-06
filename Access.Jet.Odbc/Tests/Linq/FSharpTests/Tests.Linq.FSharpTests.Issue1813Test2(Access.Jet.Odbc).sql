@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -16,7 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -52,9 +49,6 @@ VALUES
 	?
 )
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -62,17 +56,11 @@ SELECT
 	[d].[Id],
 	[d].[Text]
 FROM
-	(
-		SELECT DISTINCT
-			[Item1].[Id]
-		FROM
-			[Names] [Item1]
-	) [m_1]
+	[Names] [m_1]
 		INNER JOIN [Addresses] [d] ON ([m_1].[Id] = [d].[Id])
+ORDER BY
+	[m_1].[Id]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

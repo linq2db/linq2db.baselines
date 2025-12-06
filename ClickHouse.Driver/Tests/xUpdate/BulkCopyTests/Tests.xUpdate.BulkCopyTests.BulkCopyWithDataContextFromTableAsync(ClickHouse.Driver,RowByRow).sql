@@ -1,11 +1,8 @@
-﻿BeforeExecute
+﻿INSERT ASYNC BULK SimpleBulkCopyTable(Id)
+
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
-BeforeExecute
-INSERT ASYNC BULK SimpleBulkCopyTable(Id)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -16,14 +13,11 @@ VALUES
 	3
 )
 
-BeforeExecute
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
-BeforeExecute
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
+-- ClickHouse.Driver ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (

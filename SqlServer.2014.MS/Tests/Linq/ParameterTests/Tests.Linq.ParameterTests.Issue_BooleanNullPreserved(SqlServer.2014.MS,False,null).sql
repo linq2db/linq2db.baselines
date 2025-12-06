@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [TestBool]
 (
@@ -12,7 +11,6 @@ VALUES
 	NULL
 )
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
@@ -21,20 +19,17 @@ SELECT TOP (2)
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = CASE
 		WHEN [TestBool].[Value] = 0 THEN 1
 		WHEN [TestBool].[Value] = 1 THEN 0
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
@@ -43,7 +38,6 @@ SELECT TOP (2)
 FROM
 	[TestBool] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 UPDATE
@@ -52,7 +46,6 @@ SET
 	[Id] = 1,
 	[Value] = NULL
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)

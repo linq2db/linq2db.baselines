@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 UPDATE
 	"UpdatedEntities"
@@ -18,7 +17,6 @@ WHERE
 			"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."id" = "v"."id"
 	)
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

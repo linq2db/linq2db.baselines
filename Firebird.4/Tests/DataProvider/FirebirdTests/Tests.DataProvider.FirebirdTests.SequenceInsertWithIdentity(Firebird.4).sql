@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 DELETE FROM
 	"SequenceTest" "t1"
 WHERE
 	"t1"."Value_" = 'SeqValue'
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @Value VarChar(8) -- String
 SET     @Value = 'SeqValue'
@@ -26,7 +24,6 @@ VALUES
 RETURNING
 	ID
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
@@ -38,7 +35,6 @@ WHERE
 	"t1"."Value_" = 'SeqValue'
 FETCH NEXT 2 ROWS ONLY
 
-BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
@@ -48,7 +44,6 @@ DELETE FROM
 WHERE
 	"t1".ID = @id1
 
-BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT

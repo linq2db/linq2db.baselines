@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 WITH RECURSIVE "cte" ("Value2", "Value4")
 AS
@@ -37,9 +34,6 @@ FROM
 	) "m_1"
 		INNER JOIN "CteTable" "d_1" ON "m_1"."Id" = "d_1"."Value3"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Firebird.5 Firebird4
 
 WITH RECURSIVE "cte"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Topic
 (
@@ -14,7 +13,6 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -32,7 +30,6 @@ FROM
 	) m_1
 		INNER JOIN Message d ON d.TopicId = m_1.Id
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

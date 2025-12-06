@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	pmp."ParentID"
@@ -8,7 +7,6 @@ FROM
 GROUP BY
 	pmp."ParentID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",
@@ -17,7 +16,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -29,7 +27,6 @@ FROM
 ORDER BY
 	"t"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -48,7 +45,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -81,7 +77,6 @@ FROM
 ORDER BY
 	"t2"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @skip Int -- Int32
 SET     @skip = 1

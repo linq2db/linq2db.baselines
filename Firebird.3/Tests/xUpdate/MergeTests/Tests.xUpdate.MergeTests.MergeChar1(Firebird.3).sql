@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -18,7 +15,6 @@ VALUES
 RETURNING
 	ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 3
@@ -64,5 +60,3 @@ VALUES
 	"Source"."nvarcharDataType"
 )
 
-BeforeExecute
-DisposeTransaction

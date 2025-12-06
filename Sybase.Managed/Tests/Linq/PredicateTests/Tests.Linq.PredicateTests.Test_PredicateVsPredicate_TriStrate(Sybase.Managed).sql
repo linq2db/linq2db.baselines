@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -19,7 +18,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -62,7 +59,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -74,7 +70,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -100,7 +95,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -112,7 +106,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -152,7 +145,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -164,7 +156,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -184,7 +175,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -196,7 +186,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -216,7 +205,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -228,7 +216,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -259,7 +246,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -271,7 +257,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -311,7 +296,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -323,7 +307,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -344,7 +327,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -356,7 +338,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -377,7 +358,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -389,7 +369,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -415,7 +394,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -427,7 +405,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -453,7 +430,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -465,7 +441,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -485,7 +460,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -497,7 +471,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -517,7 +490,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -529,7 +501,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -550,7 +521,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -562,7 +532,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -588,7 +557,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

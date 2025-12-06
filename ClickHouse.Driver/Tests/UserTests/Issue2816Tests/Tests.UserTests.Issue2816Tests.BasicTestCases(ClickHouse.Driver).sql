@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	p.Id,
@@ -10,7 +9,6 @@ WHERE
 	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
 |||| || | | | | | | | | | | | | | | | |　', ''))
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

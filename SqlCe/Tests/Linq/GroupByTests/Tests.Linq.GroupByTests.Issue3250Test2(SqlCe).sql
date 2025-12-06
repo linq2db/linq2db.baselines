@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	(CAST(COUNT(*) AS NVarChar(11)) + ' items have not been processed, e.g. #' + CAST(MIN([s].[PersonID]) AS NVarChar(11))) + '.' as [c1]
+	(CAST(COUNT(*) AS NVarChar(11)) + ' items have not been processed, e.g. #' + Coalesce(CAST(MIN([s].[PersonID]) AS NVarChar(11)), '')) + '.' as [Message]
 FROM
 	[Person] [s]
 WHERE

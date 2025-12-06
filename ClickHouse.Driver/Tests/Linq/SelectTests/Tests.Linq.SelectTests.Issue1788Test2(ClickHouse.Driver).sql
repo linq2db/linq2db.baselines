@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	t1.Id,
@@ -7,7 +6,6 @@ SELECT
 FROM
 	Table1788 t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

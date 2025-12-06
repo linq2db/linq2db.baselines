@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	DATEDIFF_BIG(Month, DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7), DATETIME2FROMPARTS(2021, 2, 28, 0, 0, 0, 0, 7))

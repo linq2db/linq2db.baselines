@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMerge1" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -82,7 +78,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -108,13 +103,11 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMerge2" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -140,7 +133,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -166,7 +158,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -192,7 +183,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
@@ -218,7 +208,6 @@ VALUES
 	:Field4
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMerge1" "Target"
@@ -234,7 +223,6 @@ USING (
 ON ("Target"."Id" = "Source"."Id")
 WHEN MATCHED AND "Source"."Id" = 4 THEN DELETE
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

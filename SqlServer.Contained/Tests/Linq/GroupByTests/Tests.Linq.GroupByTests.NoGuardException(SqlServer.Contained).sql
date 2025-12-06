@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[inner_1].[Count_1]
@@ -15,7 +14,6 @@ FROM
 				[g_1].[GuidValue]
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

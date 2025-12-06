@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -30,8 +28,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id  -- Int32
@@ -48,7 +45,6 @@ WHERE
 	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -58,8 +54,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id  -- Int32
@@ -76,7 +71,6 @@ WHERE
 	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -86,8 +80,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -99,7 +92,6 @@ WHERE
 	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -109,8 +101,7 @@ SELECT
 FROM
 	[ConcurrencyFiltered] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Stamp  -- Int32
@@ -122,7 +113,6 @@ WHERE
 	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

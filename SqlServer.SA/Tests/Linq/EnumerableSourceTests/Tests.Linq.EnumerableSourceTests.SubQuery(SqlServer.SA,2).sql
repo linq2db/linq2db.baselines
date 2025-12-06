@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	[t].[Id],
@@ -18,7 +17,6 @@ WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

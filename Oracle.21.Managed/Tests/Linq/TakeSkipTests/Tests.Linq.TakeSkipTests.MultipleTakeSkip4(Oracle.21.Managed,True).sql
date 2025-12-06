@@ -1,11 +1,11 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 3
 DECLARE @take Int32
 SET     @take = 2
 
 SELECT
+	t1."Id",
 	t1."Value" as "Value_1"
 FROM
 	"TakeSkipClass" t1

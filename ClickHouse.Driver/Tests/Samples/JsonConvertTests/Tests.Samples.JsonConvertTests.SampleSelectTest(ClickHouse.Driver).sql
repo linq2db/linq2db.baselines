@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO SampleClass
 (
@@ -12,7 +11,6 @@ VALUES
 	'{"Property1":"Pr1"}'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

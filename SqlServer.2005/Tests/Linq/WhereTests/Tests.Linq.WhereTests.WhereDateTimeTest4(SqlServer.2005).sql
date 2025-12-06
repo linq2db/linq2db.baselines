@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT
 	[t1].[ID],
@@ -15,5 +14,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = CAST('2009-09-27T00:00:00.000' AS DATETIME)
+	[t1].[DateTimeValue] = CAST('2009-09-27' AS DateTime)
 

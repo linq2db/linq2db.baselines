@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[p].[FirstName],
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[p].[FirstName] = 'John' OR [p].[LastName] = 'John'
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'

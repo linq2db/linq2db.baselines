@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -11,7 +10,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -26,7 +24,6 @@ ORDER BY
 	[x].[OrderData1]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -39,7 +36,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -54,7 +50,6 @@ ORDER BY
 	[x].[OrderData1] DESC
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -67,7 +62,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -83,7 +77,6 @@ ORDER BY
 	[x].[OrderData2]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -96,7 +89,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -112,7 +104,6 @@ ORDER BY
 	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -125,7 +116,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -141,7 +131,6 @@ ORDER BY
 	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
@@ -154,7 +143,6 @@ FROM
 	[OrderByDistinctData] [x]
 LIMIT @take OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3

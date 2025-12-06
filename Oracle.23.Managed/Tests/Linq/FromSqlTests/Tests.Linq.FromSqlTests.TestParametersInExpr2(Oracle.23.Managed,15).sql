@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -18,7 +17,6 @@ WHERE
 ORDER BY
 	s."id"
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @startId Int32
 SET     @startId = 5

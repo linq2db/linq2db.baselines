@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @CODE_AA VarChar(2) -- String
 SET     @CODE_AA = 'AA'
 
@@ -14,7 +11,6 @@ VALUES
 	@CODE_AA
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
@@ -25,12 +21,10 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 	CONSTRAINT `PK_TMP_MIN_TEMPORARY` PRIMARY KEY CLUSTERED (`IDX`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @CODE_AA VarChar(2) -- String
 SET     @CODE_AA = 'AA'
@@ -44,9 +38,7 @@ VALUES
 	@CODE_AA
 )
 
-BeforeExecute
 RollbackTransaction
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

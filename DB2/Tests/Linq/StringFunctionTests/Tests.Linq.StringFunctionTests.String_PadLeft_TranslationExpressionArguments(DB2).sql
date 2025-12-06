@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"s".ID,
@@ -18,7 +17,6 @@ FROM
 WHERE
 	"s"."FirstName" <> ''
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

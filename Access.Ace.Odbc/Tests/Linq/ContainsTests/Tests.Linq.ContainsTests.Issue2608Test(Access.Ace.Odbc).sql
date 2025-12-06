@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @code Int -- Int32
 SET     @code = 1
 DECLARE @site Int -- Int32

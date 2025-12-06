@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	SampleClass
@@ -7,7 +6,6 @@ UPDATE
 	Value = 20 + Value * 2
 WHERE 1
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

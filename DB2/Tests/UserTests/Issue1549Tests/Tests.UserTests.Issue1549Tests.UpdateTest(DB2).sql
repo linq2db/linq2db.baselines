@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 UPDATE
 	"billing_TempReading"
@@ -25,7 +24,6 @@ WHERE
 			"billing_TempReading"."id" = "tr"."id"
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE

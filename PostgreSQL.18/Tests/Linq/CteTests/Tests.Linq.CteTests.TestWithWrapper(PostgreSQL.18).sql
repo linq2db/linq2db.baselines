@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 WITH "CTE_1" ("Child_ParentID", "Child_ChildID")
 AS
@@ -19,7 +18,6 @@ FROM
 	"Parent" p
 		INNER JOIN "CTE_1" c_1 ON p."ParentID" = c_1."Child_ParentID"
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

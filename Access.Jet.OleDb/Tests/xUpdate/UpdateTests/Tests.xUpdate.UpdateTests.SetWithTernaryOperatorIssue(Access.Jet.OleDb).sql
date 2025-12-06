@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarWChar(13) -- String
@@ -24,12 +23,10 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT @@IDENTITY
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @nullableGender WChar(1) -- StringFixedLength
 SET     @nullableGender = 'O'
@@ -41,7 +38,6 @@ SET
 WHERE
 	[t1].[FirstName] LIKE 'UpdateComplex%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5

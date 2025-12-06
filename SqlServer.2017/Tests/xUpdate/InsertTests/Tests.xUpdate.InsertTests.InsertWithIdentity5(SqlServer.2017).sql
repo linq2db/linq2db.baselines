@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
@@ -35,7 +33,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
@@ -51,7 +48,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
@@ -79,7 +75,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
@@ -95,7 +90,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [t1]

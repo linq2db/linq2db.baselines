@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"TableWithData"
 SET
-	"Id" = "TableWithData"."Id",
 	"Value" = "TableWithData"."Value" + 1,
 	"ValueStr" = "TableWithData"."ValueStr" || 'Upd'
 WHERE

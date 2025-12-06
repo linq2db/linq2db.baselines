@@ -1,16 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
 	[t1].[Key_1],
-	[t1].[SUM_1],
+	[t1].[Sum_1],
 	[p2].[Key_1],
 	[p2].[Sum_1]
 FROM
 	(
 		SELECT
 			[g_1].[ParentID] as [Key_1],
-			SUM([g_1].[ParentID]) as [SUM_1]
+			SUM([g_1].[ParentID]) as [Sum_1]
 		FROM
 			[Parent] [g_1]
 		WHERE

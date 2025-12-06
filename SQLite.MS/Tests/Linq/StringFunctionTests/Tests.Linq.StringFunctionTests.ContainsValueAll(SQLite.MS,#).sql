@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1 AND '123#456' LIKE '%~#%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

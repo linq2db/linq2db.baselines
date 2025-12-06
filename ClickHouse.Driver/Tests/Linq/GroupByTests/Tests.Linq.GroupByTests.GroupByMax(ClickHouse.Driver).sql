@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	max(g_1.ParentID)
+	MAX(g_1.ParentID)
 FROM
 	Child g_1
 GROUP BY

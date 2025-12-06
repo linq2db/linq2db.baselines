@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[s].[Id],
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+-- SqlServer.2014.MS SqlServer.2014
 DECLARE @param Int -- Int32
 SET     @param = 100
 

@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Date
 SET     @Column_1 = TIMESTAMP '2020-02-29 00:00:00.000000'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2200-01-01 00:00:00.000000'
+SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.000000'
 
 SELECT
 	r."Id",
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,20 +22,18 @@ SELECT
 FROM
 	"DateOnlyTable" r
 WHERE
-	r."Column" = DATE '2020-02-29' AND r."ColumnNullable" = DATE '2200-01-01'
+	r."Column" = DATE '2020-02-29' AND r."ColumnNullable" = DATE '2020-01-01'
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Column_1 Date
-SET     @Column_1 = TIMESTAMP '1950-01-01 00:00:00.000000'
+SET     @Column_1 = TIMESTAMP '1980-01-01 00:00:00.000000'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -54,14 +50,13 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Column_1 Date
 SET     @Column_1 = TIMESTAMP '2020-02-29 00:00:00.000000'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2200-01-01 00:00:00.000000'
+SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.000000'
 
 INSERT INTO "DateOnlyTable"
 (
@@ -76,7 +71,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -88,21 +82,18 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1950-01-01',NULL)
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2200-01-01')
+	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1980-01-01',NULL)
+	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2020-01-01')
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -114,21 +105,18 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"DateOnlyTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT ALL
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1950-01-01',NULL)
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2200-01-01')
+	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1980-01-01',NULL)
+	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2020-01-01')
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

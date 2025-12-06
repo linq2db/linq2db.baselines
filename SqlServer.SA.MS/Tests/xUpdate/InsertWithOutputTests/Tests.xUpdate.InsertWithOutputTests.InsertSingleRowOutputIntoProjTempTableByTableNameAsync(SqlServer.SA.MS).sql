@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+-- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [TableWithData_source]
 (
@@ -34,7 +34,6 @@ VALUES
 	N'SomeStr'
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -44,7 +43,6 @@ SELECT
 FROM
 	[TableWithData_source] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
@@ -54,7 +52,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]

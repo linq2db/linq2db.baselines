@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Time Time
@@ -36,7 +35,6 @@ VALUES
 	@DateTimeN
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -74,7 +72,6 @@ VALUES
 	@DateTimeN
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
@@ -112,7 +109,6 @@ VALUES
 	@DateTimeN
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
@@ -150,7 +146,6 @@ VALUES
 	@DateTimeN
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
@@ -188,7 +183,6 @@ VALUES
 	@DateTimeN
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

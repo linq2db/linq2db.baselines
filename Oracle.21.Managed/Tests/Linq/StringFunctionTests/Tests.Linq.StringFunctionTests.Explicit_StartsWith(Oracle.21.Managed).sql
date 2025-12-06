@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	r."Diagnosis" LIKE 'Hall%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	r."Diagnosis" LIKE 'hall%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	Lower(r."Diagnosis") LIKE 'hall%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

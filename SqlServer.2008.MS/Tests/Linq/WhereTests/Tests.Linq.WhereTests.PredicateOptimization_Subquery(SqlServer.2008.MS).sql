@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -17,12 +17,12 @@ WHERE
 			(VALUES
 				([p].[Date1]), ([p].[Date2]), ([p].[Date3]), ([p].[Date4])
 			) [t1]([item])
-	) > CAST('2023-01-01T00:00:00.0000000' AS DATETIME2)
+	) > CAST('2023-01-01' AS DateTime2)
 
-BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

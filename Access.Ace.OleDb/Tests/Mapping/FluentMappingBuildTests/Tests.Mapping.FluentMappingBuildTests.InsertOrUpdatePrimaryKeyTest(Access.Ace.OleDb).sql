@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [FluentTemp]
@@ -14,7 +12,6 @@ CREATE TABLE [FluentTemp]
 	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 UPDATE
@@ -43,7 +39,6 @@ SET
 WHERE
 	[t1].[ID] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [FluentTemp]

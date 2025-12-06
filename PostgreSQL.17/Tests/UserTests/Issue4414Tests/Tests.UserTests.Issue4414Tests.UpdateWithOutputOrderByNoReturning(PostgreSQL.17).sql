@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
 

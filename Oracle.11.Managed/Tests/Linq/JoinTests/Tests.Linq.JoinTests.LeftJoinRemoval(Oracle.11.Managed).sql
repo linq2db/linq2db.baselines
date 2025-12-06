@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	ch1."ParentID",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN "Child" ch ON t1."ParentID" = ch."ParentID"
 		INNER JOIN "Child" ch1 ON ch."ChildID" = ch1."ChildID"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

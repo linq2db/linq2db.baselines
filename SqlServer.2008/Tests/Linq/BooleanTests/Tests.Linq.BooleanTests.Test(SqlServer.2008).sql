@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[r].[Boolean] = @True
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	[r].[Boolean] = @False
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -90,7 +85,6 @@ FROM
 WHERE
 	[r].[Boolean] = @TrueN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -126,7 +119,6 @@ FROM
 WHERE
 	[r].[Boolean] = @FalseN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -196,7 +185,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @True
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -232,7 +219,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @False
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -268,7 +253,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @TrueN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -304,7 +287,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @FalseN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -374,7 +353,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @True
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -410,7 +387,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @False
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -446,7 +421,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @TrueN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -482,7 +455,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @FalseN
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @True Bit -- Boolean
 SET     @True = 1
@@ -550,7 +519,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @True OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @False Bit -- Boolean
 SET     @False = 0
@@ -586,7 +553,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @False OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
@@ -622,7 +587,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @TrueN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
@@ -658,7 +621,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @FalseN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -898,7 +857,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -914,7 +872,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1767,7 +1724,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1783,7 +1739,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1801,7 +1756,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1817,7 +1771,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1835,7 +1788,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1851,7 +1803,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1869,7 +1820,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1885,7 +1835,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1903,7 +1852,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1919,7 +1867,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1937,7 +1884,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1953,7 +1899,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1971,7 +1916,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -1987,7 +1931,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2005,7 +1948,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2021,7 +1963,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2039,7 +1980,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2055,7 +1995,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2073,7 +2012,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2089,7 +2027,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2107,7 +2044,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2123,7 +2059,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2141,7 +2076,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2157,7 +2091,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2175,7 +2108,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2191,7 +2123,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2209,7 +2140,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2225,7 +2155,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2243,7 +2172,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2259,7 +2187,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2275,7 +2202,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2291,75 +2217,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SqlServer.2008
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2377,7 +2234,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2393,7 +2249,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2411,7 +2266,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2427,7 +2281,70 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
+-- SqlServer.2008
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
+
+-- SqlServer.2008
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlServer.2008
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
+
+-- SqlServer.2008
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
 -- SqlServer.2008
 
 SELECT
@@ -2445,7 +2362,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2461,7 +2377,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2651,7 +2566,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -2667,7 +2581,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -3520,7 +3433,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

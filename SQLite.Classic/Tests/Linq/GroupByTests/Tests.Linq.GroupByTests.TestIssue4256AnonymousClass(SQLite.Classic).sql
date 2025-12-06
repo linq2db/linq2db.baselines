@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[it_1].[IsActive],
@@ -16,7 +15,6 @@ GROUP BY
 	[it_1].[IsActive],
 	[it_1].[Other]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

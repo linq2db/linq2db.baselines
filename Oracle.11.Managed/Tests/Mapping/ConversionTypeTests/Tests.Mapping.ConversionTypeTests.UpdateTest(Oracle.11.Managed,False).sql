@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1.ID = :ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***OOO***'
@@ -24,7 +22,6 @@ SET
 WHERE
 	t."Data" = '***XXX***'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***SSS***'
@@ -38,7 +35,6 @@ SET
 WHERE
 	t."Data" = :p
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -49,7 +45,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

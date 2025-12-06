@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p."PersonID" = 1 AND '123]]456' LIKE '%~]~]%' ESCAPE '~'
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

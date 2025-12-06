@@ -1,4 +1,12 @@
-﻿BeforeExecute
+﻿-- Firebird.2.5 Firebird
+
+SELECT
+	"t1"."Field1",
+	"t1"."Field2",
+	"t1"."Column3"
+FROM
+	"UseMappingSchemaTestTable" "t1"
+
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -8,17 +16,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" "t1"
 
-BeforeExecute
--- Firebird.2.5 Firebird
-
-SELECT
-	"t1"."Field1",
-	"t1"."Field2",
-	"t1"."Column3"
-FROM
-	"UseMappingSchemaTestTable" "t1"
-
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -28,7 +25,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable2" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -38,7 +34,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -48,7 +43,6 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

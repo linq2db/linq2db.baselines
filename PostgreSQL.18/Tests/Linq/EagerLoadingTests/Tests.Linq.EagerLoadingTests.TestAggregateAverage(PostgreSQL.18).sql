@@ -1,25 +1,24 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	(
 		SELECT
-			AVG(t2."DetailId"::Float)
+			AVG(t2."Average"::Float)
 		FROM
 			(
 				SELECT
-					t1."DetailId"
+					t1."Average"
 				FROM
 					(
 						SELECT DISTINCT
-							"a_Details"."DetailId"
+							"a_Details"."DetailId" as "Average"
 						FROM
 							"DetailClass" "a_Details"
 						WHERE
 							m_1."Id1" = "a_Details"."MasterId"
 					) t1
 				ORDER BY
-					t1."DetailId"
+					t1."Average"
 				LIMIT 5 OFFSET 1 
 			) t2
 	)
@@ -35,9 +34,6 @@ WHERE
 			m_1."Id1" = "a_Details_1"."MasterId"
 	) > 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -54,9 +50,6 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

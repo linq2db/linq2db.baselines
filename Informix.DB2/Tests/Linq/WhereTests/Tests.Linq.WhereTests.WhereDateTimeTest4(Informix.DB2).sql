@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	t1.ID,
@@ -15,5 +14,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue = TO_DATE('2009-09-27', '%Y-%m-%d')
+	t1.DateTimeValue = Mdy(9, 27, 2009)
 

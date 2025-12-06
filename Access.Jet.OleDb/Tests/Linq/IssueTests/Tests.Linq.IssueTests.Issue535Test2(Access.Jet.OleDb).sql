@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @filter VarWChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 VarWChar(6) -- String

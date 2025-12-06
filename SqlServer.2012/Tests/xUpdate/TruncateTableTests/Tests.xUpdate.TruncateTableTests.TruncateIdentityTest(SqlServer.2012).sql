@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
-BeforeExecute
 -- SqlServer.2012
 
 CREATE TABLE [TestIdTrun]
@@ -15,7 +13,6 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 INSERT INTO [TestIdTrun]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 INSERT INTO [TestIdTrun]
@@ -39,7 +35,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -53,12 +48,10 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2012
 
 TRUNCATE TABLE [TestIdTrun]
 
-BeforeExecute
 -- SqlServer.2012
 
 INSERT INTO [TestIdTrun]
@@ -70,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2012
 
 INSERT INTO [TestIdTrun]
@@ -82,7 +74,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -96,7 +87,6 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlServer.2012
 
 DROP TABLE [TestIdTrun]

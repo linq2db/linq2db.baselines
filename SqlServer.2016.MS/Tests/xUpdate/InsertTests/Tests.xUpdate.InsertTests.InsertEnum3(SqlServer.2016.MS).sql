@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
@@ -23,7 +21,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -35,7 +32,6 @@ FROM
 WHERE
 	[t1].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]

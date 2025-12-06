@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ID],
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t1].[TestField] = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

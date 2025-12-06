@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`Id`,
@@ -24,7 +21,6 @@ FROM
 	) `m_1`
 		INNER JOIN `CHAINPOINTS` `d_1` ON `m_1`.`Id` = `d_1`.`CHAIN_ID`
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -40,9 +36,6 @@ FROM
 ORDER BY
 	`m_1`.`LINE_ID`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

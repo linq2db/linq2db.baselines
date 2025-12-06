@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

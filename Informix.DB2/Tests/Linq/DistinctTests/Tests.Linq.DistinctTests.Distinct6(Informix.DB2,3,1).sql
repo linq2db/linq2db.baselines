@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Value1 Integer(4) -- Int32
 SET     @Value1 = 4
 
@@ -9,7 +8,6 @@ SELECT DISTINCT
 FROM
 	Parent p
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

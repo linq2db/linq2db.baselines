@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS

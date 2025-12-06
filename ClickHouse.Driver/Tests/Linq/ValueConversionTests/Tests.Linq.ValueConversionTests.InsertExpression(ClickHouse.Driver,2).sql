@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO ValueConversion
 (
@@ -20,7 +19,6 @@ VALUES
 	'T'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @True Char -- String
 SET     @True = '1'
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@True AS CHAR(1))) = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @False Char -- String
 SET     @False = '0'
@@ -54,7 +51,6 @@ FROM
 WHERE
 	Coalesce("r"."BooleanN", CAST(@False AS CHAR(1))) = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -91,7 +86,6 @@ WHERE
 		ELSE '0'
 	END) = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

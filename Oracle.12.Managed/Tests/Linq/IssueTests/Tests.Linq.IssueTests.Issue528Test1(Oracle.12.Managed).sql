@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."Key_1",
@@ -19,9 +16,6 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON m_1."Key_1" = d."FirstName"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

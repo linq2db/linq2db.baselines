@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -15,7 +14,6 @@ SET
 WHERE
 	"t1"."id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -37,7 +35,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -49,7 +46,6 @@ FROM
 	"test_insert_or_replace" "t1"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
@@ -66,7 +62,6 @@ SET
 WHERE
 	"t1"."id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

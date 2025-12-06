@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT DISTINCT
 	"x"."ParentID",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	"x"."ChildID" > 30
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT DISTINCT

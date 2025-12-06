@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
 	"r".ID >= 1000
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @tt BigInt(8) -- Int64
 SET     @tt = 600000000
@@ -22,7 +20,6 @@ VALUES
 	@tt
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -34,7 +31,6 @@ WHERE
 	"t".ID = 1001
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM

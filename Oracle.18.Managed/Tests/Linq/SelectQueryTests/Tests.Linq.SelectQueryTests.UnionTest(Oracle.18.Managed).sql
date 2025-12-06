@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * INTERVAL '1' DAY,
@@ -14,7 +13,6 @@ SELECT
 	CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY
 FROM SYS.DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

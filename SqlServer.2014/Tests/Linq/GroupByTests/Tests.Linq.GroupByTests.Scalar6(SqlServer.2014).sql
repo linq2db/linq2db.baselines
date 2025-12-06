@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014
+﻿-- SqlServer.2014
 
 SELECT
 	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))

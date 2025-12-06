@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 WITH CTE_1 ("Child_ParentID", "Child_ChildID")
 AS
@@ -19,7 +18,6 @@ FROM
 	"Parent" "p"
 		INNER JOIN CTE_1 "c_1" ON "p"."ParentID" = "c_1"."Child_ParentID"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Value1] = 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -32,7 +30,6 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -44,7 +41,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -68,7 +64,6 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -80,7 +75,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -103,7 +97,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -115,7 +108,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -138,7 +130,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -150,7 +141,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -173,7 +163,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -185,7 +174,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -208,7 +196,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -220,7 +207,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -247,7 +233,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -259,7 +244,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -286,7 +270,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -298,7 +281,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -323,7 +305,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -335,7 +316,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -360,7 +340,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -372,7 +351,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -399,7 +377,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -411,7 +388,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -438,7 +414,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -450,7 +425,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -473,7 +447,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -485,7 +458,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -508,7 +480,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -520,7 +491,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -547,7 +517,6 @@ WHERE
 		ELSE 1
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -559,7 +528,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -586,7 +554,6 @@ WHERE
 		ELSE 1
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -598,7 +565,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -621,7 +587,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -633,7 +598,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -656,7 +620,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -668,7 +631,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -691,7 +653,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -703,7 +664,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -726,7 +686,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -738,7 +697,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -761,7 +719,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -773,7 +730,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -796,7 +752,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -808,7 +763,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -831,7 +785,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -843,7 +796,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -866,7 +818,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -878,7 +829,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -905,7 +855,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -917,7 +866,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -944,7 +892,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -956,7 +903,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -983,7 +929,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -995,7 +940,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -1022,7 +966,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -1034,7 +977,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -1061,7 +1003,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -1073,7 +1014,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -1100,7 +1040,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -1112,7 +1051,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -1139,7 +1077,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -1151,7 +1088,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
@@ -1178,7 +1114,6 @@ WHERE
 		ELSE 0
 	END)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [FluentTemp]
@@ -14,7 +12,6 @@ CREATE TABLE [FluentTemp]
 	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- SqlCe
 
 UPDATE
@@ -43,7 +39,6 @@ SET
 WHERE
 	[FluentTemp].[ID] = 1
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [FluentTemp]

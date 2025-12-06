@@ -1,18 +1,18 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	ID Int32
-)
-ENGINE = Memory()
+	ID Int32,
 
-BeforeExecute
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO TempTable
@@ -24,7 +24,6 @@ SELECT
 FROM
 	Parent p
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -33,7 +32,6 @@ FROM
 	Parent p
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS TempTable

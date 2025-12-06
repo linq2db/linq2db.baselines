@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	makeDateTime(toYear(t.DateTimeValue), 10, 1, 20, 35, 44)

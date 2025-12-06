@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @True Boolean
 SET     @True = TRUE
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	"r"."Boolean" = @True
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @False Boolean
 SET     @False = FALSE
@@ -54,7 +51,6 @@ FROM
 WHERE
 	"r"."Boolean" = @False
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @TrueN Boolean
 SET     @TrueN = TRUE
@@ -90,7 +85,6 @@ FROM
 WHERE
 	"r"."Boolean" = @TrueN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FalseN Boolean
 SET     @FalseN = FALSE
@@ -126,7 +119,6 @@ FROM
 WHERE
 	"r"."Boolean" = @FalseN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @True Boolean
 SET     @True = TRUE
@@ -196,7 +185,6 @@ FROM
 WHERE
 	"r"."BooleanN" = @True
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @False Boolean
 SET     @False = FALSE
@@ -232,7 +219,6 @@ FROM
 WHERE
 	"r"."BooleanN" = @False
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @TrueN Boolean
 SET     @TrueN = TRUE
@@ -268,7 +253,6 @@ FROM
 WHERE
 	"r"."BooleanN" = @TrueN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FalseN Boolean
 SET     @FalseN = FALSE
@@ -304,7 +287,6 @@ FROM
 WHERE
 	"r"."BooleanN" = @FalseN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	"r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @True Boolean
 SET     @True = TRUE
@@ -374,7 +353,6 @@ FROM
 WHERE
 	"r"."Boolean" <> @True
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @False Boolean
 SET     @False = FALSE
@@ -410,7 +387,6 @@ FROM
 WHERE
 	"r"."Boolean" <> @False
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @TrueN Boolean
 SET     @TrueN = TRUE
@@ -446,7 +421,6 @@ FROM
 WHERE
 	"r"."Boolean" <> @TrueN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FalseN Boolean
 SET     @FalseN = FALSE
@@ -482,7 +455,6 @@ FROM
 WHERE
 	"r"."Boolean" <> @FalseN
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	"BooleanTable" "r"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @True Boolean
 SET     @True = TRUE
@@ -550,7 +519,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> @True OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @False Boolean
 SET     @False = FALSE
@@ -586,7 +553,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> @False OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @TrueN Boolean
 SET     @TrueN = TRUE
@@ -622,7 +587,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> @TrueN OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @FalseN Boolean
 SET     @FalseN = FALSE
@@ -658,7 +621,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> @FalseN OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	"r"."BooleanN" IS NOT NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -900,7 +859,6 @@ FROM
 GROUP BY
 	"g_1"."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -916,7 +874,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1589,7 +1546,6 @@ SELECT
 FROM
 	"BooleanTable" "r_1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1605,7 +1561,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1623,7 +1578,6 @@ FROM
 WHERE
 	"r"."Boolean" = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1639,7 +1593,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1657,7 +1610,6 @@ FROM
 WHERE
 	"r"."Boolean" = FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1673,7 +1625,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1691,7 +1642,6 @@ FROM
 WHERE
 	"r"."Boolean" = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1707,7 +1657,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1725,7 +1674,6 @@ FROM
 WHERE
 	"r"."Boolean" = FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1741,7 +1689,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1759,7 +1706,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1775,7 +1721,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1793,7 +1738,6 @@ FROM
 WHERE
 	"r"."BooleanN" = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1809,7 +1753,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1827,7 +1770,6 @@ FROM
 WHERE
 	"r"."BooleanN" = FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1843,7 +1785,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1861,7 +1802,6 @@ FROM
 WHERE
 	"r"."BooleanN" = TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1877,7 +1817,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1895,7 +1834,6 @@ FROM
 WHERE
 	"r"."BooleanN" = FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1911,7 +1849,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1929,7 +1866,6 @@ FROM
 WHERE
 	"r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1945,7 +1881,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1963,7 +1898,6 @@ FROM
 WHERE
 	"r"."Boolean" <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1979,7 +1913,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -1997,7 +1930,6 @@ FROM
 WHERE
 	"r"."Boolean" <> FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2013,7 +1945,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2031,7 +1962,6 @@ FROM
 WHERE
 	"r"."Boolean" <> TRUE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2047,7 +1977,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2065,7 +1994,6 @@ FROM
 WHERE
 	"r"."Boolean" <> FALSE
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2081,7 +2009,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2097,7 +2024,6 @@ SELECT
 FROM
 	"BooleanTable" "r"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2113,75 +2039,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
--- Firebird.3 Firebird3
-
-SELECT
-	"r"."Id",
-	"r"."Boolean",
-	"r"."BooleanN",
-	"r"."Int32",
-	"r"."Int32N",
-	"r"."Decimal",
-	"r"."DecimalN",
-	"r"."Double",
-	"r"."DoubleN"
-FROM
-	"BooleanTable" "r"
-WHERE
-	"r"."BooleanN" <> TRUE OR "r"."BooleanN" IS NULL
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-SELECT
-	"t1"."Id",
-	"t1"."Boolean",
-	"t1"."BooleanN",
-	"t1"."Int32",
-	"t1"."Int32N",
-	"t1"."Decimal",
-	"t1"."DecimalN",
-	"t1"."Double",
-	"t1"."DoubleN"
-FROM
-	"BooleanTable" "t1"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-SELECT
-	"r"."Id",
-	"r"."Boolean",
-	"r"."BooleanN",
-	"r"."Int32",
-	"r"."Int32N",
-	"r"."Decimal",
-	"r"."DecimalN",
-	"r"."Double",
-	"r"."DoubleN"
-FROM
-	"BooleanTable" "r"
-WHERE
-	"r"."BooleanN" <> FALSE OR "r"."BooleanN" IS NULL
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-SELECT
-	"t1"."Id",
-	"t1"."Boolean",
-	"t1"."BooleanN",
-	"t1"."Int32",
-	"t1"."Int32N",
-	"t1"."Decimal",
-	"t1"."DecimalN",
-	"t1"."Double",
-	"t1"."DoubleN"
-FROM
-	"BooleanTable" "t1"
-
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2199,7 +2056,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> TRUE OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2215,7 +2071,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2233,7 +2088,6 @@ FROM
 WHERE
 	"r"."BooleanN" <> FALSE OR "r"."BooleanN" IS NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2249,7 +2103,70 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"r"."Id",
+	"r"."Boolean",
+	"r"."BooleanN",
+	"r"."Int32",
+	"r"."Int32N",
+	"r"."Decimal",
+	"r"."DecimalN",
+	"r"."Double",
+	"r"."DoubleN"
+FROM
+	"BooleanTable" "r"
+WHERE
+	"r"."BooleanN" <> TRUE OR "r"."BooleanN" IS NULL
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"t1"."Id",
+	"t1"."Boolean",
+	"t1"."BooleanN",
+	"t1"."Int32",
+	"t1"."Int32N",
+	"t1"."Decimal",
+	"t1"."DecimalN",
+	"t1"."Double",
+	"t1"."DoubleN"
+FROM
+	"BooleanTable" "t1"
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"r"."Id",
+	"r"."Boolean",
+	"r"."BooleanN",
+	"r"."Int32",
+	"r"."Int32N",
+	"r"."Decimal",
+	"r"."DecimalN",
+	"r"."Double",
+	"r"."DoubleN"
+FROM
+	"BooleanTable" "r"
+WHERE
+	"r"."BooleanN" <> FALSE OR "r"."BooleanN" IS NULL
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"t1"."Id",
+	"t1"."Boolean",
+	"t1"."BooleanN",
+	"t1"."Int32",
+	"t1"."Int32N",
+	"t1"."Decimal",
+	"t1"."DecimalN",
+	"t1"."Double",
+	"t1"."DoubleN"
+FROM
+	"BooleanTable" "t1"
+
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2267,7 +2184,6 @@ FROM
 WHERE
 	"r"."BooleanN" IS NOT NULL
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2283,7 +2199,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2475,7 +2390,6 @@ FROM
 GROUP BY
 	"g_1"."Id"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -2491,7 +2405,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -3164,7 +3077,6 @@ SELECT
 FROM
 	"BooleanTable" "r_1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

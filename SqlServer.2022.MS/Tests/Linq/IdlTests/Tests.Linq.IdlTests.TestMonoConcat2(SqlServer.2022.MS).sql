@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'
 
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[x_1].[FirstName] = @t
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @t NVarChar(4000) -- String
 SET     @t = N'A'

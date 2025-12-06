@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+﻿-- SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,8 +7,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -18,8 +16,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (2)
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
 
@@ -32,8 +29,7 @@ VALUES
 	@Id
 )
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -42,8 +38,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (10)
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -52,8 +47,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (20)
 
-BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+-- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 30
 

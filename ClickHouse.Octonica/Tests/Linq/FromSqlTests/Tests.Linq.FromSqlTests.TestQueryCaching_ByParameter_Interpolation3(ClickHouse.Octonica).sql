@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Value1
@@ -8,7 +7,6 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Interpolation3*/
 	) t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 		SELECT 1 as Value1 /*TestQueryCaching_ByParameter_Interpolation3*/
 	) t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 		SELECT NULL as Value1 /*TestQueryCaching_ByParameter_Interpolation3*/
 	) t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 		SELECT 2 as Value1 /*TestQueryCaching_ByParameter_Interpolation3*/
 	) t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 MERGE INTO "Person" Target
 USING (
@@ -27,7 +24,6 @@ WHERE
 	("Source"."Patient_Diagnosis" = "Source"."Patient_Diagnosis_1" OR "Source"."Patient_Diagnosis" IS NULL AND "Source"."Patient_Diagnosis_1" IS NULL) AND
 "Source"."Patient_Diagnosis_1" LIKE '%very%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -41,5 +37,3 @@ FROM
 ORDER BY
 	t1."PersonID"
 
-BeforeExecute
-DisposeTransaction

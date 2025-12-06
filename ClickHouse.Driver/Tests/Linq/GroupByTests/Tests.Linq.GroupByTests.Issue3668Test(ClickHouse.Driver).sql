@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -13,7 +12,6 @@ FROM
 WHERE
 	m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

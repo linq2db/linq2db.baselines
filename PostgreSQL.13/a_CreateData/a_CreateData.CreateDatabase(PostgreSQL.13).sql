@@ -1,35 +1,28 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Doctor"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Patient"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP FUNCTION IF EXISTS "TestTableFunctionSchema"()
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP MATERIALIZED VIEW IF EXISTS "Issue2023"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Person"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "InheritanceParent"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "InheritanceParent"
 (
@@ -38,13 +31,11 @@ CREATE TABLE "InheritanceParent"
 	"Name"                VARCHAR(50)                   NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "InheritanceChild"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "InheritanceChild"
 (
@@ -54,8 +45,7 @@ CREATE TABLE "InheritanceChild"
 	"Name"                VARCHAR(50)                  NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "Person"
 (
@@ -67,34 +57,28 @@ CREATE TABLE "Person"
 	"Gender"     CHAR(1)     NOT NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 COMMENT ON TABLE  "Person"            IS 'This is the Person table';
 COMMENT ON COLUMN "Person"."PersonID" IS 'This is the Person.PersonID column';
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 -- Doctor Table Extension
 
@@ -104,13 +88,11 @@ CREATE TABLE "Doctor"
 	"Taxonomy" VARCHAR(50) NOT NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 -- Patient Table Extension
 
@@ -120,13 +102,11 @@ CREATE TABLE "Patient"
 	"Diagnosis" VARCHAR(256) NOT NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION reverse(text) RETURNS text
 	AS $_$
@@ -143,43 +123,35 @@ RETURN reverse_str;
 END;$_$
 	LANGUAGE plpgsql IMMUTABLE;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Parent"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Child"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "GrandChild"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "LinqDataTypes"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "LinqDataTypes"
 (
@@ -196,21 +168,18 @@ CREATE TABLE "LinqDataTypes"
 	"StringValue"    varchar(50) NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "GetParentByID"(id int)
 RETURNS TABLE ("ParentID" int, "Value1" int)
 AS $$ SELECT * FROM "Parent" WHERE "ParentID" = $1 $$
 LANGUAGE SQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS  entity
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE entity
 (
@@ -218,8 +187,7 @@ CREATE TABLE entity
 	CONSTRAINT entity_name_key UNIQUE (the_name)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION add_if_not_exists(p_name character varying)
 	RETURNS void AS
@@ -234,53 +202,43 @@ END;
 $BODY$
 	LANGUAGE plpgsql;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "SequenceTest1"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "SequenceTest2"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "SequenceTest3"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "SequenceCustomNamingTest"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SEQUENCE IF EXISTS SequenceTestSeq
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SEQUENCE SequenceTestSeq INCREMENT 1 START 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SEQUENCE IF EXISTS "SequenceTest2_ID_seq"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SEQUENCE "SequenceTest2_ID_seq" INCREMENT 1 START 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SEQUENCE IF EXISTS test_schema."SequenceCustomNamingTest__seq__"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "SequenceTest1"
 (
@@ -288,8 +246,7 @@ CREATE TABLE "SequenceTest1"
 	"Value" VARCHAR(50)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "SequenceTest2"
 (
@@ -297,8 +254,7 @@ CREATE TABLE "SequenceTest2"
 	"Value" VARCHAR(50)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "SequenceTest3"
 (
@@ -306,50 +262,41 @@ CREATE TABLE "SequenceTest3"
 	"Value" VARCHAR(50)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "TestIdentity"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SEQUENCE IF EXISTS "TestIdentity_ID_seq"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SEQUENCE "TestIdentity_ID_seq" INCREMENT 1 START 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "TestIdentity" (
 	"ID" INTEGER PRIMARY KEY DEFAULT NEXTVAL('"TestIdentity_ID_seq"')
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "AllTypes"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "AllTypes"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TYPE IF EXISTS color
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TYPE color AS ENUM ('Red', 'Green', 'Blue');
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "AllTypes"
 (
@@ -422,8 +369,7 @@ CREATE TABLE "AllTypes"
 	DecimalArray          decimal[]                NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "AllTypes"
 (
@@ -548,53 +494,43 @@ SELECT
 
 	B'1011'
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS TestSameName
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS test_schema.TestSameName
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS test_schema.TestSerialIdentity
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS test_schema."TestSchemaIdentity"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SEQUENCE IF EXISTS test_schema."TestSchemaIdentity_ID_seq"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SCHEMA IF EXISTS test_schema
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SCHEMA test_schema
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SEQUENCE test_schema."TestSchemaIdentity_ID_seq" INCREMENT 1 START 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SEQUENCE test_schema."SequenceCustomNamingTest__seq__" INCREMENT 1 START 1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "SequenceCustomNamingTest"
 (
@@ -602,49 +538,42 @@ CREATE TABLE "SequenceCustomNamingTest"
 	"Value" VARCHAR(50)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE test_schema."TestSchemaIdentity" (
 	"ID" INTEGER PRIMARY KEY DEFAULT NEXTVAL('test_schema."TestSchemaIdentity_ID_seq"')
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE test_schema.TestSerialIdentity
 (
 	"ID" serial NOT NULL PRIMARY KEY
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE test_schema.TestSameName
 (
 	ID serial NOT NULL PRIMARY KEY
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE TestSameName
 (
 	ID serial NOT NULL PRIMARY KEY
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "TestMerge1"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "TestMerge2"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "TestMerge1"
 (
@@ -674,8 +603,7 @@ CREATE TABLE "TestMerge1"
 	"FieldEnumNumber" INT                      NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "TestMerge2"
 (
@@ -705,8 +633,7 @@ CREATE TABLE "TestMerge2"
 	"FieldEnumNumber" INT                      NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION AddIssue792Record()
 	RETURNS void AS
@@ -717,49 +644,41 @@ END;
 $BODY$
 	LANGUAGE PLPGSQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestTableFunctionSchema"() RETURNS SETOF "AllTypes"
 AS $$ SELECT * FROM "AllTypes" $$ LANGUAGE SQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestFunctionParameters"(param1 INT, INOUT param2 INT, OUT param3 INT)
 AS $$ SELECT param1, param2 $$ LANGUAGE SQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestTableFunction"(param1 INT) RETURNS TABLE(param2 INT)
 AS $$ SELECT param1 UNION ALL SELECT param1 $$ LANGUAGE SQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestTableFunction1"(param1 INT, param2 INT) RETURNS TABLE(param3 INT, param4 INT)
 AS $$ SELECT param1, 23 UNION ALL SELECT 333, param2 $$ LANGUAGE SQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestScalarFunction"(param INT) RETURNS VARCHAR(10)
 AS $$ BEGIN RETURN 'done'; END $$ LANGUAGE PLPGSQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "TestSingleOutParameterFunction"(param1 INT, OUT param2 INT)
 AS $$ BEGIN param2 := param1 + 123; END $$ LANGUAGE PLPGSQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP AGGREGATE IF EXISTS test_avg(float8)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE AGGREGATE test_avg(float8)
 (
@@ -769,14 +688,12 @@ CREATE AGGREGATE test_avg(float8)
 	initcond = '{0,0,0}'
 );
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "bool"(param INT) RETURNS VARCHAR(20)
 AS $$ BEGIN RETURN 'issue1295test'; END $$ LANGUAGE PLPGSQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION issue_1742_date(p1 date) RETURNS int AS $$
 BEGIN
@@ -796,62 +713,51 @@ BEGIN
 END; $$
 LANGUAGE plpgsql;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE MATERIALIZED VIEW "Issue2023" AS select * from "Person"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 COMMENT ON MATERIALIZED VIEW  "Issue2023" IS 'This is the Issue2023 matview';
 COMMENT ON COLUMN             "Issue2023"."PersonID" IS 'This is the Issue2023.PersonID column';
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP FUNCTION IF EXISTS "SchemaName"."fnTest"(INT)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP SCHEMA IF EXISTS "SchemaName"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE SCHEMA "SchemaName"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION "SchemaName"."fnTest"(param INT) RETURNS VARCHAR(20)
 AS $$ BEGIN RETURN 'issue2679test'; END $$ LANGUAGE PLPGSQL;
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS same_name2
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS same_name1
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS same_name
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE same_name (
 id INTEGER PRIMARY KEY
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE same_name1 (
 id			INTEGER PRIMARY KEY,
@@ -862,8 +768,7 @@ CONSTRAINT same_name
 	REFERENCES same_name (id)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE same_name2 (
 id			INTEGER PRIMARY KEY,
@@ -874,13 +779,11 @@ CONSTRAINT same_name
 	REFERENCES same_name (id)
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE "CollatedTable"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "CollatedTable"
 (
@@ -889,13 +792,11 @@ CREATE TABLE "CollatedTable"
 	"CaseInsensitive"	VARCHAR(20) NOT NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE "TestMergeIdentity"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TABLE "TestMergeIdentity"
 (
@@ -903,8 +804,7 @@ CREATE TABLE "TestMergeIdentity"
 	"Field"  INT NULL
 )
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE OR REPLACE FUNCTION overloads(input1 integer)
  RETURNS integer
@@ -967,8 +867,7 @@ INSERT INTO multitenant_table (TenantId, Id, Name, Description, CreatedAt) VALUE
 ('33333333-3333-3333-3333-333333333333', 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee', 'Tenant3 Record1', 'Description for Tenant3 Record1', NOW()),
 ('33333333-3333-3333-3333-333333333333', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 'Tenant3 Record2', 'Description for Tenant3 Record2', NOW());
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "LinqDataTypes"
 (
@@ -997,8 +896,7 @@ VALUES
 (11,11.45,'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,11,NULL,NULL,'9'),
 (12,11.45,'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,12,NULL,NULL,'0')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -1014,8 +912,7 @@ VALUES
 (6,6),
 (7,1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Child"
 (
@@ -1041,8 +938,7 @@ VALUES
 (6,66),
 (7,77)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "GrandChild"
 (
@@ -1074,8 +970,7 @@ VALUES
 (4,42,423),
 (4,42,424)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "InheritanceParent"
 (
@@ -1088,8 +983,7 @@ VALUES
 (2,1,NULL),
 (3,2,'InheritanceParent2')
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "InheritanceChild"
 (

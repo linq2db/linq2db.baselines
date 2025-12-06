@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -17,7 +16,6 @@ FROM
 	) m_1
 		INNER JOIN GrandChild d ON m_1.ParentID = d.ParentID AND m_1.ChildID = d.ChildID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

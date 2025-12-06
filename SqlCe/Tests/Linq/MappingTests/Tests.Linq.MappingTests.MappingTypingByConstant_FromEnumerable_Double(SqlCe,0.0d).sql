@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[arg].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS [Id], 0 AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

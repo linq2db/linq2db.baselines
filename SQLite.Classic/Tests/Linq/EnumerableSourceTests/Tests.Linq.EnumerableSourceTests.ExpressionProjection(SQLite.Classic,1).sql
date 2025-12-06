@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 2
 DECLARE @ID_1  -- Int32

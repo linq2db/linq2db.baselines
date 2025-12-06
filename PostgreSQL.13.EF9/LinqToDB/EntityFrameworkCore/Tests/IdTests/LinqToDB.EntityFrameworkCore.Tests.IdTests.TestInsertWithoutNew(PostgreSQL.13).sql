@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @name Text(11) -- String
 SET     @name = 'test insert'
 

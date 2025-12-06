@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	g_1.GroupId,
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	g_1.GroupId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	t1.Id,
 	t1.GroupId,
 	t1.DataValue
 FROM

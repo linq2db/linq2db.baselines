@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	CONVERT(Date, DateAdd(weekday, 1, [t].[DateTimeValue]))

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Не ASCII'
 DECLARE @LastName Text(9) -- String
@@ -26,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 	"Person" t1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
@@ -59,7 +54,6 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @patient Integer -- Int32
 SET     @patient = 1
@@ -120,7 +114,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ) = :patient THEN DELETE
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @patient Integer -- Int32
 SET     @patient = 2
@@ -181,5 +174,3 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ) = :patient THEN DELETE
 
-BeforeExecute
-DisposeTransaction

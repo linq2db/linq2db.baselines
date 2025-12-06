@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[PersonID]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[x].[FirstName] IN ('John')
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @st NVarChar(4) -- String
 SET     @st = 'John'

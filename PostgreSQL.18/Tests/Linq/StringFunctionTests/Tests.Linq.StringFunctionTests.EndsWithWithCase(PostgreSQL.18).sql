@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	p."Diagnosis" LIKE '%Persecution' ESCAPE '~' AND p."PersonID" = 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -19,7 +17,6 @@ WHERE
 	p."Diagnosis" NOT LIKE '%Persecution' ESCAPE '~' AND
 	p."PersonID" = 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -29,7 +26,6 @@ FROM
 WHERE
 	p."Diagnosis" LIKE '%persecution' ESCAPE '~' AND p."PersonID" = 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

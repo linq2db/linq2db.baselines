@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[nm].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	Len([nm].[FirstName]) <> 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @userId Int -- Int32
 SET     @userId = 32
 DECLARE @childId Int -- Int32

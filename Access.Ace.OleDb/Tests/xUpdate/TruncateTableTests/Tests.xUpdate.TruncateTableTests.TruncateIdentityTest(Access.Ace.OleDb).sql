@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TestIdTrun]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 CREATE TABLE [TestIdTrun]
@@ -14,7 +12,6 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [TestIdTrun]
@@ -26,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [TestIdTrun]
@@ -38,7 +34,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -49,17 +44,14 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DELETE FROM [TestIdTrun]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] COUNTER(1, 1)
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [TestIdTrun]
@@ -71,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 INSERT INTO [TestIdTrun]
@@ -83,7 +74,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -94,7 +84,6 @@ FROM
 ORDER BY
 	[t1].[ID]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 DROP TABLE [TestIdTrun]

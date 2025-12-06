@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @value Integer(4) -- Int32
 SET     @value = 2
 
@@ -18,7 +17,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value Integer(4) -- Int32
 SET     @value = 2
@@ -38,7 +36,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value Integer(4) -- Int32
 SET     @value = 2
@@ -58,7 +55,6 @@ WHERE
 		FROM table(set{1})
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value Integer(4) -- Int32
 SET     @value = 2

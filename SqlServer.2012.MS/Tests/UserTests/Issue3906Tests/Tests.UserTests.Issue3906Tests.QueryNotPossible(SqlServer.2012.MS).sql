@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -12,7 +11,6 @@ VALUES
 	@Id
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @InfeedAdviceID Int -- Int32
 SET     @InfeedAdviceID = 1
@@ -30,7 +28,6 @@ VALUES
 	@Quantity
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -48,7 +45,6 @@ VALUES
 	@Nr
 )
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)

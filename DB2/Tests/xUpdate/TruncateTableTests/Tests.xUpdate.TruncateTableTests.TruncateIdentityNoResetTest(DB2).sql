@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 TRUNCATE TABLE "test_temp" IMMEDIATE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "test_temp"
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "test_temp"
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -39,12 +35,10 @@ ORDER BY
 	"t1".ID
 OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 TRUNCATE TABLE "test_temp" IMMEDIATE
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "test_temp"
@@ -56,7 +50,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO "test_temp"
@@ -68,7 +61,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

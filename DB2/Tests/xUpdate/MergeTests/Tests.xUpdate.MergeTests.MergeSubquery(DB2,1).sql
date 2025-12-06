@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."MergeTemp"
 (
@@ -10,7 +7,6 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."MergeTemp"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 INSERT INTO SESSION."MergeTemp"
@@ -21,7 +17,6 @@ INSERT INTO SESSION."MergeTemp"
 VALUES
 (1,'John')
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 MERGE INTO SESSION."MergeTemp" "t1"
@@ -60,7 +55,6 @@ WHEN NOT MATCHED THEN
 		'John II'
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 BEGIN

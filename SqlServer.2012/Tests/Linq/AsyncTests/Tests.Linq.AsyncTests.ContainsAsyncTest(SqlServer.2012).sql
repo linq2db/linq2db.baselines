@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 

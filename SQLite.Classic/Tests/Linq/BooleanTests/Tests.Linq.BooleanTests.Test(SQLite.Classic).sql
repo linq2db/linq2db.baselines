@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 DECLARE @True  -- Boolean
 SET     @True = 1
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[r].[Boolean] = @True
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @False  -- Boolean
 SET     @False = 0
@@ -54,7 +51,6 @@ FROM
 WHERE
 	[r].[Boolean] = @False
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @TrueN  -- Boolean
 SET     @TrueN = 1
@@ -90,7 +85,6 @@ FROM
 WHERE
 	[r].[Boolean] = @TrueN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @FalseN  -- Boolean
 SET     @FalseN = 0
@@ -126,7 +119,6 @@ FROM
 WHERE
 	[r].[Boolean] = @FalseN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @True  -- Boolean
 SET     @True = 1
@@ -196,7 +185,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @True
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @False  -- Boolean
 SET     @False = 0
@@ -232,7 +219,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @False
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @TrueN  -- Boolean
 SET     @TrueN = 1
@@ -268,7 +253,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @TrueN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @FalseN  -- Boolean
 SET     @FalseN = 0
@@ -304,7 +287,6 @@ FROM
 WHERE
 	[r].[BooleanN] = @FalseN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @True  -- Boolean
 SET     @True = 1
@@ -374,7 +353,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @True
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @False  -- Boolean
 SET     @False = 0
@@ -410,7 +387,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @False
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @TrueN  -- Boolean
 SET     @TrueN = 1
@@ -446,7 +421,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @TrueN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @FalseN  -- Boolean
 SET     @FalseN = 0
@@ -482,7 +455,6 @@ FROM
 WHERE
 	[r].[Boolean] <> @FalseN
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @True  -- Boolean
 SET     @True = 1
@@ -550,7 +519,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @True OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @False  -- Boolean
 SET     @False = 0
@@ -586,7 +553,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @False OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @TrueN  -- Boolean
 SET     @TrueN = 1
@@ -622,7 +587,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @TrueN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @FalseN  -- Boolean
 SET     @FalseN = 0
@@ -658,7 +621,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> @FalseN OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -898,7 +857,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -914,7 +872,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1587,7 +1544,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1603,7 +1559,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1621,7 +1576,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1637,7 +1591,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1655,7 +1608,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1671,7 +1623,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1689,7 +1640,6 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1705,7 +1655,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1723,7 +1672,6 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1739,7 +1687,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1757,7 +1704,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1773,7 +1719,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1791,7 +1736,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1807,7 +1751,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1825,7 +1768,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1841,7 +1783,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1859,7 +1800,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1875,7 +1815,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1893,7 +1832,6 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1909,7 +1847,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1927,7 +1864,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1943,7 +1879,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1961,7 +1896,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1977,7 +1911,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -1995,7 +1928,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2011,7 +1943,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2029,7 +1960,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2045,7 +1975,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2063,7 +1992,6 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2079,7 +2007,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2095,7 +2022,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2111,75 +2037,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2197,7 +2054,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2213,7 +2069,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2231,7 +2086,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2247,7 +2101,70 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
+
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
+
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2265,7 +2182,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2281,7 +2197,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2471,7 +2386,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -2487,7 +2401,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -3160,7 +3073,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

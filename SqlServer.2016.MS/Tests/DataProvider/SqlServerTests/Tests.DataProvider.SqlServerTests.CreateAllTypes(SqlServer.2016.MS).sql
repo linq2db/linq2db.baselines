@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [AllTypeCreateTest]
@@ -52,7 +50,6 @@ CREATE TABLE [AllTypeCreateTest]
 	[timeDataType]             Time                  NULL
 )
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
@@ -101,7 +98,6 @@ SELECT
 FROM
 	[AllTypeCreateTest] [t1]
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [AllTypeCreateTest]

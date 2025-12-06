@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -8,7 +7,6 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
@@ -18,7 +16,6 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3

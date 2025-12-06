@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	MIN(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),

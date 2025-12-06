@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 SELECT
 	"x"."Id",
@@ -7,7 +6,6 @@ SELECT
 FROM
 	"Car" "x"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	"Car" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 WHERE
 	"x"."Name" <> 'Special' OR "x"."Name" IS NULL
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	"Car" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -47,7 +42,6 @@ FROM
 WHERE
 	"x"."Name" = 'Special'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -56,7 +50,6 @@ SELECT
 FROM
 	"Car" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -65,7 +58,6 @@ SELECT
 FROM
 	"Car" "x"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -74,7 +66,6 @@ SELECT
 FROM
 	"Car" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -85,7 +76,6 @@ FROM
 WHERE
 	"x"."Name" <> 'Special' OR "x"."Name" IS NULL
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -94,7 +84,6 @@ SELECT
 FROM
 	"Car" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -105,7 +94,6 @@ FROM
 WHERE
 	"x"."Name" = 'Special'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

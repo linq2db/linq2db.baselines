@@ -1,10 +1,7 @@
-﻿BeforeExecute
+﻿INSERT BULK [SimpleBulkCopyTable](Id)
+
 INSERT BULK [SimpleBulkCopyTable](Id)
 
-BeforeExecute
-INSERT BULK [SimpleBulkCopyTable](Id)
-
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 3

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 DECLARE @pattern VarChar(3) -- String
 SET     @pattern = '%1%'
 DECLARE @take Integer -- Int32

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (2)
 	[p].[ID],
@@ -15,7 +14,6 @@ FROM
 WHERE
 	[p].[GuidValue] = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
-BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (2)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -33,7 +31,6 @@ WHERE
 	x.FirstName = 'UpdateColumnFilterUpdated'
 LIMIT 1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
@@ -46,7 +43,6 @@ UPDATE
 WHERE
 	PersonID = 100
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[x].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[p2].[Id] IS NULL OR [p2].[StringProp] = '-1'
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

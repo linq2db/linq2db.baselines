@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
 SELECT
 	(Extract(Month from "t"."DateTimeValue") - 1) / 3 + 1

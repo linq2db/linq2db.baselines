@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[od].[OrderID],
@@ -12,7 +11,6 @@ FROM
 	[Order Details] [od]
 		INNER JOIN [Orders] [o1] ON [od].[OrderID] = [o1].[OrderID] AND [od].[ProductID] = 1
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
@@ -21,7 +19,6 @@ FROM
 	[Order Details] [v]
 		INNER JOIN [Orders] [o1] ON [v].[OrderID] = [o1].[OrderID] AND [v].[ProductID] = 1
 
-BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT

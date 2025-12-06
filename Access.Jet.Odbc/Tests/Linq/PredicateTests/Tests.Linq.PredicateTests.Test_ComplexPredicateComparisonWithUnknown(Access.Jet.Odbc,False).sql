@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Value1] = 1
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -32,7 +30,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -44,7 +41,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -68,7 +64,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -80,7 +75,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -103,7 +97,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -115,7 +108,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -138,7 +130,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -150,7 +141,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -173,7 +163,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -185,7 +174,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -208,7 +196,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -220,7 +207,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -243,7 +229,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -255,7 +240,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -278,7 +262,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -290,7 +273,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -315,7 +297,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -327,7 +308,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -352,7 +332,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -364,7 +343,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -387,7 +365,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), False, True)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -399,7 +376,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -422,7 +398,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), False, True)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -434,7 +409,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -457,7 +431,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -469,7 +442,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -492,7 +464,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -504,7 +475,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -527,7 +497,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), False, True))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -539,7 +508,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -562,7 +530,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) = ([r].[Value5] + ?)), False, True))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -574,7 +541,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -597,7 +563,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -609,7 +574,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -632,7 +596,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -644,7 +607,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -667,7 +629,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -679,7 +640,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -702,7 +662,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -714,7 +673,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -737,7 +695,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -749,7 +706,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -772,7 +728,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -784,7 +739,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -807,7 +761,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -819,7 +772,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -842,7 +794,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -854,7 +805,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -877,7 +827,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -889,7 +838,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -912,7 +860,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -924,7 +871,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -947,7 +893,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -959,7 +904,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -982,7 +926,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -994,7 +937,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1017,7 +959,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -1029,7 +970,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1052,7 +992,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -1064,7 +1003,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1087,7 +1025,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -1099,7 +1036,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1122,7 +1058,6 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), True, False))
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

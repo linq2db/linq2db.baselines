@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+﻿-- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[c_1].[CustomerID],
@@ -16,6 +15,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	LeftStr([c_1].[City], 3) = 'Sea'
+	SUBSTRING([c_1].[City], 1, 3) = 'Sea'
 LIMIT 1
 

@@ -1,9 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿BeginTransactionAsync
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 commit;
 
-BeforeExecute
-DisposeTransactionAsync

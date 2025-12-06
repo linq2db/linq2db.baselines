@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -51,7 +49,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -85,7 +82,6 @@ VALUES
 	@AnotherBoolValue
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -104,7 +100,6 @@ FROM
 WHERE
 	[e].[Id] = 2
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
@@ -154,7 +149,6 @@ VALUES
 	@DateTimeNullable
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
@@ -173,11 +167,10 @@ FROM
 WHERE
 	[e].[Id] = 3
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[ValueConversion] [t1]
 

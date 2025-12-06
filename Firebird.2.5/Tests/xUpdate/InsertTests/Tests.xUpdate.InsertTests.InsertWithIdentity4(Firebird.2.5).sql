@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
@@ -36,7 +34,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
@@ -52,7 +49,6 @@ FROM
 WHERE
 	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
@@ -82,7 +78,6 @@ VALUES
 RETURNING
 	"PersonID"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'
@@ -98,7 +93,6 @@ FROM
 WHERE
 	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM

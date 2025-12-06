@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -16,7 +15,6 @@ WHERE
 			[Child] [c_1]
 	)
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	[Parent] [t1]
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT

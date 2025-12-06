@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	nm.FirstName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	lengthUTF8(nm.FirstName) <> 0
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

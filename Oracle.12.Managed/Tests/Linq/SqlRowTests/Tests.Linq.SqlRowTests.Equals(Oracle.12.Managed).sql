@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	(i."One", i."Two", i."Three") = ((i."One", i."One" * 2, i."Four" - 1))
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	(i."One", i."Two", i."Four") = ((i."One", i."Two", i."Three"))
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	(i."One", i."Nil", i."Three") = ((i."One", i."Two", i."Three"))
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -38,7 +34,6 @@ FROM
 WHERE
 	(1, i."Nil", 3) = ((i."One", i."Nil", i."Three"))
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

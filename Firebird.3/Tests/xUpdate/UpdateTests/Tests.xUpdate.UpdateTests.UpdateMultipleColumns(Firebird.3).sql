@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
@@ -20,7 +19,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	"t".ID = @ID
 
-BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001

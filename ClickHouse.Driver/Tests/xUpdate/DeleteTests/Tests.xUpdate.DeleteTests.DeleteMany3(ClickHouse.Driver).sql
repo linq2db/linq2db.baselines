@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	GrandChild
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -14,7 +12,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -22,7 +19,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Parent
@@ -34,7 +30,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Child
@@ -48,7 +43,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO GrandChild
@@ -64,7 +58,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO GrandChild
@@ -80,7 +73,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -88,7 +80,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
@@ -96,7 +87,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID >= 1000
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

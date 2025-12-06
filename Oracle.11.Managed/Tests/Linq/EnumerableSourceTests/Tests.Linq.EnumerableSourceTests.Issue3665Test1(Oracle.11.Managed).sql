@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	x."PersonID" + y."item"
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3 FROM sys.dual) y
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

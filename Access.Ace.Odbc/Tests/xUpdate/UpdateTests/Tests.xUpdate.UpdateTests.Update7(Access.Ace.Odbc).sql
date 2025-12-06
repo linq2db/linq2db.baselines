@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[p].[ParentID] = ? AND [p].[Value1] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
@@ -42,7 +39,6 @@ SET
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -54,7 +50,6 @@ FROM
 WHERE
 	[p].[ParentID] = ? AND [p].[Value1] = 2
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
@@ -68,7 +63,6 @@ SET
 WHERE
 	[p].[ParentID] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1001

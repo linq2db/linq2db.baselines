@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "AllTypes"
@@ -22,7 +20,6 @@ VALUES
 	'NaN'::float8
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "AllTypes"
@@ -38,7 +35,6 @@ VALUES
 	'-Infinity'::float8
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "AllTypes"
@@ -54,7 +50,6 @@ VALUES
 	'Infinity'::float8
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

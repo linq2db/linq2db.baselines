@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
@@ -23,9 +20,6 @@ FROM
 WHERE
 	[m_1].[PersonID] = ? AND [m_1].[LastName] <> ? OR [m_1].[FirstName] <> ? AND [m_1].[PersonID] - 1 = ?
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 1

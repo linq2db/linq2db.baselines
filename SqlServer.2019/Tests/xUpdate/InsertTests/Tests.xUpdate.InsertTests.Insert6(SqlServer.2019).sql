@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [p]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- SqlServer.2019
 
 INSERT INTO [Parent]
@@ -23,7 +21,6 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
-BeforeExecute
 -- SqlServer.2019
 
 SELECT
@@ -33,7 +30,6 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
-BeforeExecute
 -- SqlServer.2019
 
 DELETE [p]

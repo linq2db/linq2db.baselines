@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	COUNT(*)
@@ -12,7 +11,6 @@ WHERE
 	(N'<{p.LastName}, ' + [p].[FirstName] + N' {' + [p].[LastName] + N'}>') = (N'<{p.LastName}, ' + [p].[FirstName] + N' {' + [p].[LastName]) + N'}>' AND
 	N'{}' + [p].[LastName] = N'{}' + [p].[LastName]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [test_temp]
@@ -15,7 +13,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [test_temp]
@@ -27,7 +24,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1
@@ -41,12 +37,10 @@ ORDER BY
 	[t1].[ID]
 LIMIT 2 OFFSET @skip
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM [test_temp]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [test_temp]
@@ -58,7 +52,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [test_temp]
@@ -70,7 +63,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1

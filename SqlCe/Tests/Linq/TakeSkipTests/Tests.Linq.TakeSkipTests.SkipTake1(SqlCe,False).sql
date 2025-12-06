@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +9,6 @@ ORDER BY
 	[t1].[ChildID] DESC
 OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 
-BeforeExecute
 -- SqlCe
 
 SELECT

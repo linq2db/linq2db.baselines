@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Person
 DELETE WHERE
 	startsWith(FirstName, 'Insert16')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Person
@@ -22,7 +20,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -32,7 +29,6 @@ FROM
 WHERE
 	startsWith(t1.FirstName, 'Insert16')
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE

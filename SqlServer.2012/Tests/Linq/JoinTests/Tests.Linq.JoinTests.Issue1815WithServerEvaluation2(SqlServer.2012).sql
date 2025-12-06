@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT TOP (2)
 	[t1].[InId],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[t1].[InId] = 1
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT TOP (2)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[s].[String] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[s].[NullableString] IS NOT NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[s].[String] IS NULL
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT

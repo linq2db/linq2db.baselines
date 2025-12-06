@@ -1,19 +1,15 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT USER FROM DUAL
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 select user from dual
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @CurrentUser Varchar2(6) -- String
 SET     @CurrentUser = 'SYSTEM'
@@ -45,7 +41,6 @@ SET     @CurrentUser = 'SYSTEM'
 					ORDER BY TableID, isView
 					
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 
@@ -64,7 +59,6 @@ BeforeExecute
 						FKCON.CONSTRAINT_TYPE  = 'P' AND
 						FKCOLS.OWNER IN ('SYSTEM')
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 
@@ -86,7 +80,6 @@ BeforeExecute
 							c.COLUMN_NAME = cc.COLUMN_NAME
 					
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 35
 
@@ -22,7 +19,6 @@ FROM
 	) [m_1]
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 35
@@ -35,11 +31,6 @@ WHERE
 	[c_1].[Id] = @p
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 36
@@ -61,7 +52,6 @@ FROM
 	) [m_1]
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 36
@@ -74,5 +64,3 @@ WHERE
 	[c_1].[Id] = @p
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

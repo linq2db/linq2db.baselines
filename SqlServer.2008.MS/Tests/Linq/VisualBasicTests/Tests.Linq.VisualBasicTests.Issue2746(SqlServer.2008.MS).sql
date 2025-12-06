@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @VBLocal_SelectedValue Int -- Int32
 SET     @VBLocal_SelectedValue = 1
 

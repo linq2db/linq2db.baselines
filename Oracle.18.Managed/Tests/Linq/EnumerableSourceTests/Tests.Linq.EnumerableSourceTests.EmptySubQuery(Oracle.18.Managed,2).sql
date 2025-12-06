@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t."Id",
@@ -11,7 +10,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL "Id", NULL "Value" FROM sys.dual WHERE 1 = 0) r
+			(SELECT CAST(NULL AS Int) "Id", CAST(NULL AS VarChar(255)) "Value" FROM sys.dual WHERE 1 = 0) r
 		WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 WITH CTE_1
 (
@@ -38,7 +37,6 @@ SELECT
 FROM
 	CTE_1 t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 WITH CTE_1

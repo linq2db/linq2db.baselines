@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"GrandChild" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -14,7 +12,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -22,7 +19,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Parent"
@@ -34,7 +30,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Child"
@@ -48,7 +43,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "GrandChild"
@@ -64,7 +58,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "GrandChild"
@@ -80,7 +73,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -101,7 +93,6 @@ WHERE
 			"t1"."GrandChildID" = "a_GrandChildren"."GrandChildID"
 	)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -109,7 +100,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
@@ -117,7 +107,6 @@ DELETE FROM
 WHERE
 	"c_1"."ParentID" >= 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

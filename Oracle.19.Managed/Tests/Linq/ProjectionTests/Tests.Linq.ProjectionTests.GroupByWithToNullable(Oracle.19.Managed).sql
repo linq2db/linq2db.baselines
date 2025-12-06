@@ -1,12 +1,11 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @take Int32
 SET     @take = 1000
 
 SELECT
 	a_Patient."Diagnosis",
 	a_Patient."PersonID" as "id",
-	AVG(auto16031."PersonID") as AVG_1
+	AVG(auto16031."PersonID") as "y"
 FROM
 	"Person" auto16031
 		LEFT JOIN "Patient" a_Patient ON auto16031."PersonID" = a_Patient."PersonID"

@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT ASYNC BULK InheritanceFilter(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
+﻿INSERT ASYNC BULK InheritanceFilter(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

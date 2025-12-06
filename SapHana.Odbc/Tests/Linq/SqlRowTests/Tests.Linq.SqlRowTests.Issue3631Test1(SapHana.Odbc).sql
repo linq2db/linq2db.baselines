@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

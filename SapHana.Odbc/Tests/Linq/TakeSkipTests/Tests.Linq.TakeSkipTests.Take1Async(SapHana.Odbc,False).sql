@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"ch"."ParentID",
@@ -8,7 +7,6 @@ FROM
 	"Child" "ch"
 LIMIT 2
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -18,8 +16,7 @@ FROM
 	"Child" "ch"
 LIMIT 3
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"ch"."ParentID",
@@ -28,8 +25,7 @@ FROM
 	"Child" "ch"
 LIMIT 2
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"ch"."ParentID",

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
@@ -20,7 +19,6 @@ VALUES
 	@SmallIntValue
 )
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
@@ -33,7 +31,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
-BeforeExecute
 -- SqlServer.2016
 DECLARE @ID Int -- Int32
 SET     @ID = 1001

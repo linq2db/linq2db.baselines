@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @n Int32
 SET     @n = 3
 
@@ -8,9 +7,9 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			"Child" c_1
+			"Child" a_Children
 		WHERE
-			p."ParentID" = c_1."ParentID" AND c_1."ChildID" > :n
+			p."ParentID" = a_Children."ParentID" AND a_Children."ChildID" > :n
 	) + 4
 FROM
 	"Parent" p

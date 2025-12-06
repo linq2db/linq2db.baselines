@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 String(5) -- StringFixedLength

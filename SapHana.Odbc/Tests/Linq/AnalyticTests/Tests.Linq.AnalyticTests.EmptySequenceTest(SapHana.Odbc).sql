@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."ParentID",
 	"d_1"."Key_1",
-	"d_1"."ToValue"
+	"d_1"."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +14,7 @@ FROM
 		INNER JOIN LATERAL (
 			SELECT
 				"d"."ParentID" as "Key_1",
-				STRING_AGG(CAST("d"."ChildID" AS NVarChar(11)), ', ') as "ToValue"
+				STRING_AGG(CAST("d"."ChildID" AS NVarChar(11)), ', ') as "Children"
 			FROM
 				"Child" "d"
 			WHERE
@@ -26,9 +23,6 @@ FROM
 				"d"."ParentID"
 		) "d_1" ON 1=1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`cond`,
@@ -26,8 +25,7 @@ FROM
 WHERE
 	NOT (`x`.`cond` AND `x`.`cond_1` OR NOT `x`.`cond`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -38,8 +36,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`cond`,
@@ -65,8 +62,7 @@ FROM
 WHERE
 	`x`.`cond`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -77,8 +73,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`cond`,
@@ -134,8 +129,7 @@ FROM
 WHERE
 	`t2`.`cond`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -146,8 +140,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x_1`.`Color`,
@@ -220,8 +213,7 @@ FROM
 WHERE
 	NOT (`x_1`.`Color` AND `x_1`.`Color_1` IS NOT NULL AND `x_1`.`Color_1` OR NOT `x_1`.`Color`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -232,8 +224,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x_1`.`Color`,
@@ -307,8 +298,7 @@ WHERE
 	`x_1`.`Color` AND `x_1`.`Color_1` IS NOT NULL AND `x_1`.`Color_1` OR
 	NOT `x_1`.`Color`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -319,8 +309,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x_1`.`Size_1`,
@@ -393,8 +382,7 @@ FROM
 WHERE
 	NOT (`x_1`.`Size_1` AND `x_1`.`Color` IS NULL AND `x_1`.`Size_2` OR NOT `x_1`.`Size_1`)
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,
@@ -405,8 +393,7 @@ SELECT
 FROM
 	`Item` `t1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x_1`.`Size_1`,
@@ -480,8 +467,7 @@ WHERE
 	`x_1`.`Size_1` AND `x_1`.`Color` IS NULL AND `x_1`.`Size_2` OR
 	NOT `x_1`.`Size_1`
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`ItemId`,

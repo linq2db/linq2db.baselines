@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String
@@ -20,9 +17,6 @@ WHERE
 	m_1."PersonID" = :id AND m_1."LastName" <> :name OR
 	m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1

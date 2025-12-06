@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Nullable3], [t].[Id]),
@@ -13,7 +12,6 @@ SELECT
 FROM
 	[CoalesceNullableFields] [t]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

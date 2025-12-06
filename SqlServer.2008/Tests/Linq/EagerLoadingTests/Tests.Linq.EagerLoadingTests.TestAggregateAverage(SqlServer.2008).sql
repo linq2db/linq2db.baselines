@@ -1,36 +1,34 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
-	[t4].[AVG_1]
+	(
+		SELECT
+			AVG(CAST([t3].[Average] AS Float))
+		FROM
+			(
+				SELECT
+					[t2].[Average]
+				FROM
+					(
+						SELECT
+							[t1].[Average],
+							ROW_NUMBER() OVER (ORDER BY [t1].[Average]) as [RN]
+						FROM
+							(
+								SELECT DISTINCT
+									[a_Details].[DetailId] as [Average]
+								FROM
+									[DetailClass] [a_Details]
+								WHERE
+									[m_1].[Id1] = [a_Details].[MasterId]
+							) [t1]
+					) [t2]
+				WHERE
+					[t2].[RN] > 1 AND [t2].[RN] <= 6
+			) [t3]
+	)
 FROM
 	[MasterClass] [m_1]
-		OUTER APPLY (
-			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [AVG_1]
-			FROM
-				(
-					SELECT
-						[t2].[DetailId]
-					FROM
-						(
-							SELECT
-								[t1].[DetailId],
-								ROW_NUMBER() OVER (ORDER BY [t1].[DetailId]) as [RN]
-							FROM
-								(
-									SELECT DISTINCT
-										[a_Details].[DetailId]
-									FROM
-										[DetailClass] [a_Details]
-									WHERE
-										[m_1].[Id1] = [a_Details].[MasterId]
-								) [t1]
-						) [t2]
-					WHERE
-						[t2].[RN] > 1 AND [t2].[RN] <= 6
-				) [t3]
-		) [t4]
 WHERE
 	(
 		SELECT
@@ -41,9 +39,6 @@ WHERE
 			[m_1].[Id1] = [a_Details_1].[MasterId]
 	) > 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -60,9 +55,6 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Person
 (
@@ -18,7 +17,6 @@ VALUES
 	'Empty'
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -28,7 +26,6 @@ UPDATE
 WHERE
 	startsWith(FirstName, 'UpdateComplex')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

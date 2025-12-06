@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	ch.ParentID,
@@ -7,7 +6,6 @@ SELECT FIRST 2
 FROM
 	Child ch
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT FIRST 3
@@ -16,8 +14,7 @@ SELECT FIRST 3
 FROM
 	Child ch
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 SELECT FIRST 2
 	ch.ParentID,
@@ -25,8 +22,7 @@ SELECT FIRST 2
 FROM
 	Child ch
 
-BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+-- Informix.DB2 Informix
 
 SELECT FIRST 3
 	ch.ParentID,

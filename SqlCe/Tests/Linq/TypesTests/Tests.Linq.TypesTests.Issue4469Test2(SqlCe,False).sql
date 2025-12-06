@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param_1 Decimal(2, 0)

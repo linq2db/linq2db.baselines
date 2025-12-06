@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -38,7 +35,6 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 1

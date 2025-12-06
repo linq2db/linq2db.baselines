@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 WITH "CTE1_" (c1)
@@ -22,7 +20,6 @@ SELECT
 FROM
 	"CTE1_" t2
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 WITH "CTE1_" (c1)
@@ -38,7 +35,6 @@ SELECT
 FROM
 	"CTE1_" t1
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 WITH "CTE1_" (c1)

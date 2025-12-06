@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`p`.`FirstName`
@@ -9,7 +8,6 @@ WHERE
 	`p`.`PersonID` = 1
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -22,7 +20,6 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
@@ -35,7 +32,6 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin NOT LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
@@ -48,7 +44,6 @@ WHERE
 	`p`.`FirstName` COLLATE utf8_bin LIKE @nameToCheck ESCAPE '~' AND
 	`p`.`PersonID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'

@@ -1,7 +1,6 @@
-﻿BeginTransaction(RepeatableRead)
+﻿
 
-
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1.id,
@@ -16,10 +15,9 @@ FROM
 
 
 
-DisposeTransaction
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1.id,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t1].[ID],
@@ -15,7 +14,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -23,5 +21,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (CAST('2009-09-24T09:19:29.0900000' AS DATETIME2)) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (CAST('2009-09-24 09:19:29.090' AS DateTime2)) OR [x].[DateTimeValue2] IS NULL)
 

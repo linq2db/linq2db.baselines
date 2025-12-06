@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID = 1111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -14,7 +12,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 2111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -22,7 +19,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 3111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -30,7 +26,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 4111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
@@ -44,7 +39,6 @@ VALUES
 (3111,3111),
 (4111,4111)
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -52,7 +46,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 1111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -60,7 +53,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 2111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -68,7 +60,6 @@ ALTER TABLE
 DELETE WHERE
 	ParentID = 3111
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value1 Int32
 SET     @Value1 = 2
@@ -22,7 +20,6 @@ VALUES
 	:Value1
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1001
@@ -36,7 +33,6 @@ FROM
 WHERE
 	t1."ParentID" = :id AND t1."Value1" = :Value1
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName Varchar2(12) -- String
@@ -16,7 +15,6 @@ VALUES
 	:TargetName
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	:TargetName
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -56,7 +53,6 @@ VALUES
 	:Actual
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

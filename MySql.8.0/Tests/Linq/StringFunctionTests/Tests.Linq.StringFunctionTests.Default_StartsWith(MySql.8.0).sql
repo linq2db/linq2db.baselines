@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`CollatedTable`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
@@ -27,7 +25,6 @@ VALUES
 	@CaseInsensitive
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	`r`.`CaseSensitive` LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -47,7 +43,6 @@ FROM
 WHERE
 	`r`.`CaseInsensitive` LIKE 'TestSt%' ESCAPE '~'
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -57,7 +52,6 @@ FROM
 WHERE
 	`r`.`CaseSensitive` LIKE 'testst%' ESCAPE '~'
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

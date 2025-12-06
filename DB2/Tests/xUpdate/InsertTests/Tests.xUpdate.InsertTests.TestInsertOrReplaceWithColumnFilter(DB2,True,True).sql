@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -36,7 +35,6 @@ WHEN NOT MATCHED THEN
 		CAST(@MiddleName AS NVarChar(15))
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -52,7 +50,6 @@ WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
@@ -90,7 +87,6 @@ WHEN NOT MATCHED THEN
 		CAST(@MiddleName AS NVarChar(12))
 	)
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'

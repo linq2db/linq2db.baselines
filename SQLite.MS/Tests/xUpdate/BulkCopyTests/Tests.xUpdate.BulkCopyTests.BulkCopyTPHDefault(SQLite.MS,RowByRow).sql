@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Discriminator  -- Int32
@@ -20,7 +19,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Value2
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
@@ -64,7 +61,6 @@ VALUES
 	@Value3
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -78,7 +74,6 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -93,7 +88,6 @@ WHERE
 	[x].[Discriminator] = 1
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -108,7 +102,6 @@ WHERE
 	[x].[Discriminator] = 2
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -123,7 +116,6 @@ WHERE
 	[x].[Discriminator] = 3
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -138,7 +130,6 @@ WHERE
 	[x].[Value1] = 'Str1'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -153,7 +144,6 @@ WHERE
 	[x].[Value2] = 'Str2'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

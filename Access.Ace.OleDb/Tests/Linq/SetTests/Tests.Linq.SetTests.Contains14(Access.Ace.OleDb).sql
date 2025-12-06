@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1 AND [p].[ParentID] = @ParentID
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2

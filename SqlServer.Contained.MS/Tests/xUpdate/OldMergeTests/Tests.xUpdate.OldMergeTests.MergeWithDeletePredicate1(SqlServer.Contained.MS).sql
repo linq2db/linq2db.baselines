@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t].[ID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[ID] > 5
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [LinqDataTypes] [Target]

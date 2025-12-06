@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
@@ -40,7 +39,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
@@ -50,7 +48,6 @@ FROM
 WHERE
 	[t].[ID] = 5000 AND DateAdd('d', [t].[SmallIntValue], [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 DELETE FROM

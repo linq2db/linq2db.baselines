@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -7,8 +6,7 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 DECLARE @LastName NVarChar(4000) -- String
@@ -35,8 +33,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
 
@@ -51,8 +48,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -79,8 +75,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
 
@@ -95,7 +90,6 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DELETE [t1]

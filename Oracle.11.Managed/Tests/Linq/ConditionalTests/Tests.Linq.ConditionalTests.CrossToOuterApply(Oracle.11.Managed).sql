@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID",
@@ -26,9 +25,6 @@ FROM
 				"Child" a_Children_1
 		) t2 ON p."ParentID" = t2."ParentID" AND t2."rn" <= 1
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -44,9 +40,6 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

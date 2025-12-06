@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 
 UPDATE
 	[TableWithData_source]
@@ -30,7 +30,6 @@ INTO [tempdb]..[#TableWithData_destination]
 WHERE
 	[TableWithData_source].[Id] > 3
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
@@ -40,7 +39,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]

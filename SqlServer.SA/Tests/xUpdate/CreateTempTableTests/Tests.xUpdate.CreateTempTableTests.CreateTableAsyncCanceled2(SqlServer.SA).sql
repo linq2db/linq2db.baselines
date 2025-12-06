@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 
 INSERT INTO [tempdb]..[#TempTable]
 (
@@ -23,12 +22,10 @@ SELECT
 FROM
 	[Parent] [p]
 
-BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+-- SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 
-BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 DROP TABLE [TempTable]

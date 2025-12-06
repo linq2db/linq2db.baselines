@@ -1,115 +1,111 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT
-	[t9].[Key_1],
-	[t9].[COUNT_1],
-	[t9].[COUNT_2],
-	[t9].[COUNT_3],
-	[t2].[COUNT_1] as [COUNT_4],
-	[t3].[COUNT_1] as [COUNT_5],
-	[t5].[COUNT_1] as [COUNT_6],
-	[t6].[COUNT_1] as [COUNT_7],
-	[t9].[COUNT_4] as [COUNT_8],
-	[t8].[COUNT_1] as [COUNT_9]
+	[t11].[GroupId],
+	[t11].[Simple_1],
+	[t11].[WithFilter],
+	[t11].[Projection],
+	[t2].[Distinct_1],
+	[t4].[DistinctWithFilter],
+	[t6].[FilterDistinct],
+	[t8].[FilterDistinctWithFilter],
+	[t11].[SubFilter],
+	[t10].[SubFilterDistinct]
 FROM
 	(
 		SELECT
-			[t].[GroupId] as [Key_1],
-			COUNT(*) as [COUNT_1],
+			[t].[GroupId],
+			COUNT(*) as [Simple_1],
 			COUNT(CASE
 				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
 				ELSE NULL
-			END) as [COUNT_2],
-			COUNT(*) as [COUNT_3],
+			END) as [WithFilter],
+			COUNT(*) as [Projection],
 			COUNT(CASE
 				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
 				ELSE NULL
-			END) as [COUNT_4]
+			END) as [SubFilter]
 		FROM
 			[AggregationData] [t]
 		WHERE
 			[t].[DataValue] IS NOT NULL
 		GROUP BY
 			[t].[GroupId]
-	) [t9]
+	) [t11]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Distinct_1]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_1].[DataValue]
+						[t_1].[DataValue] as [Distinct_1]
 					FROM
 						[AggregationData] [t_1]
 					WHERE
-						[t_1].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_1].[GroupId]
+						[t_1].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_1].[GroupId]
 				) [t1]
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [DistinctWithFilter]
 			FROM
 				(
 					SELECT DISTINCT
-						[x].[DataValue]
+						[x].[DataValue] as [DistinctWithFilter]
 					FROM
 						[AggregationData] [x]
 					WHERE
-						[x].[DataValue] IS NOT NULL AND [t9].[Key_1] = [x].[GroupId]
-				) [x_1]
-			WHERE
-				CAST([x_1].[DataValue] AS Int) % 2 = 0
-		) [t3]
+						[x].[DataValue] IS NOT NULL AND [t11].[GroupId] = [x].[GroupId] AND
+						CAST([x].[DataValue] AS Int) % 2 = 0
+				) [t3]
+		) [t4]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [FilterDistinct]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_2].[DataValue]
+						[t_2].[DataValue] as [FilterDistinct]
 					FROM
 						[AggregationData] [t_2]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_2].[GroupId] AND
+						[t_2].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_2].[GroupId] AND
 						CAST([t_2].[DataValue] AS Int) % 2 = 0
-				) [t4]
-		) [t5]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [COUNT_1]
-			FROM
-				(
-					SELECT DISTINCT
-						[x_2].[DataValue]
-					FROM
-						[AggregationData] [x_2]
-					WHERE
-						[x_2].[DataValue] IS NOT NULL AND [t9].[Key_1] = [x_2].[GroupId] AND
-						CAST([x_2].[DataValue] AS Int) % 2 = 0
-				) [x_3]
-			WHERE
-				CAST([x_3].[DataValue] AS Int) % 2 = 0
+				) [t5]
 		) [t6]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [FilterDistinctWithFilter]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_3].[DataValue]
+						[x_1].[DataValue] as [FilterDistinctWithFilter]
+					FROM
+						[AggregationData] [x_1]
+					WHERE
+						[x_1].[DataValue] IS NOT NULL AND [t11].[GroupId] = [x_1].[GroupId] AND
+						CAST([x_1].[DataValue] AS Int) % 2 = 0
+				) [t7]
+		) [t8]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [SubFilterDistinct]
+			FROM
+				(
+					SELECT DISTINCT
+						[t_3].[DataValue] as [SubFilterDistinct]
 					FROM
 						[AggregationData] [t_3]
 					WHERE
-						[t_3].[DataValue] IS NOT NULL AND [t9].[Key_1] = [t_3].[GroupId] AND
+						[t_3].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_3].[GroupId] AND
 						CAST([t_3].[DataValue] AS Int) % 2 = 0
-				) [t7]
-		) [t8]
+				) [t9]
+		) [t10]
 
-BeforeExecute
 -- SqlCe
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

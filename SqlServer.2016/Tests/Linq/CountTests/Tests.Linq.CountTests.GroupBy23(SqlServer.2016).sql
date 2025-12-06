@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
 	COUNT(IIF([g_1].[ParentID] < 2, 1, NULL))

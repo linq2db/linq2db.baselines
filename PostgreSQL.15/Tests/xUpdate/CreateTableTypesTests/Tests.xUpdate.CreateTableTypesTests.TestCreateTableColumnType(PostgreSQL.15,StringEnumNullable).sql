@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StringEnumNullable Text -- String
@@ -16,7 +15,6 @@ VALUES
 	:StringEnumNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	:StringEnumNullable
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

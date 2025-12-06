@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "CamelCaseName"
 (
@@ -20,7 +19,6 @@ VALUES
 	'name5'
 )
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -33,7 +31,6 @@ SELECT
 FROM
 	"CamelCaseName" "t1"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 DELETE FROM

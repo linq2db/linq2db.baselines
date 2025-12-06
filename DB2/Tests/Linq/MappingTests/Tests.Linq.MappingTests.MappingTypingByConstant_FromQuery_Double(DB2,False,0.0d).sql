@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @value Double(8)
 SET     @value = 0
 
@@ -15,7 +14,6 @@ FROM
 			"Person" "r"
 	) "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @value Double(8)
 SET     @value = 3147483648

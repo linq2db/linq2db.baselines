@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	VAR_POP(p.Value1) OVER(PARTITION BY p.Value1, c_1.ChildID),
@@ -10,7 +9,6 @@ FROM
 	Parent p
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -21,7 +19,6 @@ FROM
 GROUP BY
 	g_1.ParentID
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

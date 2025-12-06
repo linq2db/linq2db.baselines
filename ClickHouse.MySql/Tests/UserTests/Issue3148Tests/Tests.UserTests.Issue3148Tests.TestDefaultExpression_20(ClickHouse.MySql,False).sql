@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	r.FirstName,
@@ -12,7 +11,6 @@ FROM
 WHERE
 	endsWith(r.LastName, 'x')
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

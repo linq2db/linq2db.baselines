@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%Persecution' AND InStr(Len([r].[Diagnosis]) - 10, [r].[Diagnosis], 'Persecution', 0) = (Len([r].[Diagnosis]) - 10)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%persecution' AND InStr(Len([r].[Diagnosis]) - 10, [r].[Diagnosis], 'persecution', 0) = (Len([r].[Diagnosis]) - 10)
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Diagnosis] LIKE '%persecution'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT

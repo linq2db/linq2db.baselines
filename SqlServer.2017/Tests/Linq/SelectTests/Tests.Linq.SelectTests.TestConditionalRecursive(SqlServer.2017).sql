@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
 	IIF([p].[ParentID] = 1, IIF([c_2].[cond] IS NOT NULL, N'1', N'2'), N'3')

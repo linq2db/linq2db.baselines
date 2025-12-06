@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[m_1].[ParentID],
@@ -19,7 +16,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID]))
 		LEFT JOIN [Parent] [a_Parent] ON ([d].[ParentID] = [a_Parent].[ParentID])
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
@@ -28,5 +24,3 @@ SELECT TOP 1
 FROM
 	[Parent] [t]
 
-BeforeExecute
-DisposeTransaction

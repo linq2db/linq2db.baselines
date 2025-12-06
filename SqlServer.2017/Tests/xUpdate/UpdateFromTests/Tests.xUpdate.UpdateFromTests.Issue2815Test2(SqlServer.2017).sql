@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 UPDATE
 	[ext]
@@ -14,10 +13,10 @@ FROM
 WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
+	[t1].[Id],
 	[t1].[SRC_BIC],
 	[t1].[DES_BIC],
 	[t1].[IDF],

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -28,7 +27,6 @@ VALUES
 	@Name_Second
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2
@@ -40,7 +38,6 @@ SELECT TOP 2
 FROM
 	[Base] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
@@ -63,7 +60,6 @@ SET
 WHERE
 	[Base].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 2

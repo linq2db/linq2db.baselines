@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -22,7 +21,6 @@ RETURNING
 	"DestinationTable"."Value",
 	"DestinationTable"."ValueStr"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 100

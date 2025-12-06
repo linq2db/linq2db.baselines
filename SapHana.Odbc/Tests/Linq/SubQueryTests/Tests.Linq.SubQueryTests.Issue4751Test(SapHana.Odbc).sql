@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @skip Int -- Int32
@@ -53,7 +52,6 @@ FROM
 	) "x"
 LIMIT ? OFFSET ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

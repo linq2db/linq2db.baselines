@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
 	[g_1].[GroupId],
@@ -15,10 +14,10 @@ FROM
 GROUP BY
 	[g_1].[GroupId]
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

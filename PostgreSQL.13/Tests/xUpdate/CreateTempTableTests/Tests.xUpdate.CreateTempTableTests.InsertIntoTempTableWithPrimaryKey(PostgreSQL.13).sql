@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE "TableWithPrimaryKey2"
 (
@@ -9,8 +8,7 @@ CREATE TEMPORARY TABLE "TableWithPrimaryKey2"
 )
 ON COMMIT PRESERVE ROWS
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "TableWithPrimaryKey2"
 (
@@ -19,8 +17,7 @@ INSERT INTO "TableWithPrimaryKey2"
 VALUES
 (1)
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "TableWithPrimaryKey2"
 

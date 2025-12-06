@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"it_1"."cond",
@@ -23,7 +22,6 @@ FROM
 WHERE
 	"it_1"."ColorName" = 'Red'
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT

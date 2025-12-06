@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[nm].[MiddleName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	LEN([nm].[MiddleName] + N'.') <> 1 OR [nm].[MiddleName] IS NULL
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

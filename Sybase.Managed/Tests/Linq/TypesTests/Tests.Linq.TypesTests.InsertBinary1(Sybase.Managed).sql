@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[ID] > 1000
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @data VarBinary -- Binary
 SET     @data = NULL
@@ -25,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]

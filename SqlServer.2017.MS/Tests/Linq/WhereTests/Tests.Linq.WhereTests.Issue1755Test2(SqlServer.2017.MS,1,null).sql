@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT

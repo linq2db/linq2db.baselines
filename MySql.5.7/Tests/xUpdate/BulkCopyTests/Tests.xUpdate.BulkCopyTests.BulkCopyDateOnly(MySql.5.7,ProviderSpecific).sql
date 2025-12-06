@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `DateOnlyTable`
 (
@@ -8,10 +7,10 @@ INSERT INTO `DateOnlyTable`
 VALUES
 ('2021-01-01')
 
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Date`
 FROM
 	`DateOnlyTable` `t1`

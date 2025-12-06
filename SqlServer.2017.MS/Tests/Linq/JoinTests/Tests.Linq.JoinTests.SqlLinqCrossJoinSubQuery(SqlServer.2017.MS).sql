@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @take_1 Int -- Int32

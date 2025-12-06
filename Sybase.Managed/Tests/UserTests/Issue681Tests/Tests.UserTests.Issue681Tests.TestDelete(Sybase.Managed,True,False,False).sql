@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	@@SERVERNAME
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 5

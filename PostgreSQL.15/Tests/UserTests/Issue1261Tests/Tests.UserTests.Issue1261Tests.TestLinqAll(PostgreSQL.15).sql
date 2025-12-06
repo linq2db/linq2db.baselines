@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	NOT EXISTS(
@@ -11,7 +10,6 @@ SELECT
 			x."ParentID" = 1 AND NOT (x."ChildID" = 11 AND x."ChildID" IS NOT NULL AND x."GrandChildID" = 777 AND x."GrandChildID" IS NOT NULL)
 	)
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -16,7 +13,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = IIF([d].[ParentID] > 2, IIF([d].[ParentID] > 3, N'1', N'2'), N'3')
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

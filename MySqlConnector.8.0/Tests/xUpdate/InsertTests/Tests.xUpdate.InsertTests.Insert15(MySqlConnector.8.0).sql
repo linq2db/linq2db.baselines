@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	`Person`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -33,7 +31,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DELETE  

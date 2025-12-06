@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[p].[Id],
@@ -11,7 +10,6 @@ FROM
 WHERE
 	[p].[Nullable] = [p].[OtherNullable] OR [p].[Nullable] IS NULL AND [p].[OtherNullable] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -22,7 +20,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -36,7 +33,6 @@ WHERE
 	[p].[Nullable] <> [p].[OtherNullable] OR [p].[Nullable] IS NULL AND [p].[OtherNullable] IS NOT NULL OR
 	[p].[Nullable] IS NOT NULL AND [p].[OtherNullable] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -47,7 +43,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -60,7 +55,6 @@ FROM
 WHERE
 	[p].[OtherNullable] = [p].[Nullable] OR [p].[OtherNullable] IS NULL AND [p].[Nullable] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -71,7 +65,6 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
@@ -85,7 +78,6 @@ WHERE
 	[p].[OtherNullable] <> [p].[Nullable] OR [p].[OtherNullable] IS NULL AND [p].[Nullable] IS NOT NULL OR
 	[p].[OtherNullable] IS NOT NULL AND [p].[Nullable] IS NULL
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT

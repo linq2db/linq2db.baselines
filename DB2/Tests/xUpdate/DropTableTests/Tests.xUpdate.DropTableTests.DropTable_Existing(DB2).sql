@@ -1,12 +1,12 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 CREATE TABLE "Table"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_Table" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DROP TABLE "Table"

@@ -1,4 +1,13 @@
-﻿BeforeExecute
+﻿-- Firebird.4 Firebird4
+
+SELECT
+	"arg"."Id",
+	"arg"."Value"
+FROM
+	"Person" "entity"
+		INNER JOIN (
+			SELECT 1 AS "Id", CAST(NULL AS DOUBLE PRECISION) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
+
 -- Firebird.4 Firebird4
 
 SELECT
@@ -7,16 +16,5 @@ SELECT
 FROM
 	"Person" "entity"
 		INNER JOIN (
-			SELECT 1 AS "Id", CAST(NULL AS Float) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-SELECT
-	"arg"."Id",
-	"arg"."Value"
-FROM
-	"Person" "entity"
-		INNER JOIN (
-			SELECT 1 AS "Id", CAST(3147483648 AS Float) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
+			SELECT 1 AS "Id", CAST(3147483648 AS DOUBLE PRECISION) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
 

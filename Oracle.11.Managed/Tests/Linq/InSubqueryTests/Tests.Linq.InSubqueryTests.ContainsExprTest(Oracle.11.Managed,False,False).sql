@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @n Int32
 SET     @n = 1
 
@@ -16,7 +15,6 @@ WHERE
 			"Child" c_1
 	)
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -25,7 +23,6 @@ SELECT
 FROM
 	"Parent" t1
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

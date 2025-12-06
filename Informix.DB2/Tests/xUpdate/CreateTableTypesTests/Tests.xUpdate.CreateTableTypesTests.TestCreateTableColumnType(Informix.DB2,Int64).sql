@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Int64 BigInt(8) -- Int64
@@ -16,7 +15,6 @@ VALUES
 	@Int64
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@Int64
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

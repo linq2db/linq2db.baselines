@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimeStampTZ -- DateTimeOffset
@@ -20,7 +19,6 @@ VALUES
 	:SomeNullableDateTimeOffset
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
@@ -38,7 +36,6 @@ VALUES
 	:SomeDateTimeOffset
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @clientSideIn TimeStampTZ -- DateTimeOffset
 SET     @clientSideIn = 08/08/2019 08:08:18 +00:00

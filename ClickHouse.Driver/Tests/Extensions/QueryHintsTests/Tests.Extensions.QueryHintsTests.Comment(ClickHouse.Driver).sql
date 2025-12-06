@@ -6,7 +6,6 @@ FROM
 ---
 ----
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -24,7 +23,6 @@ FROM
 	Parent p
 ---
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	t.ID,
@@ -18,7 +17,6 @@ WHERE
 	t.ID = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = TIMESTAMP '2010-12-14 06:00:07.425014'
@@ -30,7 +28,6 @@ SET
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -50,7 +47,6 @@ WHERE
 	t.ID = 1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.100000'

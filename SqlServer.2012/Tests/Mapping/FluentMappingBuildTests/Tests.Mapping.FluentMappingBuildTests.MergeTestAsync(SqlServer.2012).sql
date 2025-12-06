@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+﻿-- SqlServer.2012
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- SqlServer.2012
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -16,7 +14,6 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
-BeforeExecute
 -- SqlServer.2012
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -34,8 +31,7 @@ VALUES
 	@Name
 )
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 
 MERGE INTO [FluentTemp] [Target]
 USING (VALUES
@@ -65,8 +61,7 @@ VALUES
 )
 ;
 
-BeforeExecute
--- SqlServer.2012 (asynchronously)
+-- SqlServer.2012
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]

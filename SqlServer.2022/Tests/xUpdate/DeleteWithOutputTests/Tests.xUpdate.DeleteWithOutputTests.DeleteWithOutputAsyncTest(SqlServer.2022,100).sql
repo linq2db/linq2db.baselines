@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[s].[Id],
@@ -10,8 +9,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2022 (asynchronously)
+-- SqlServer.2022
 
 DELETE [s]
 OUTPUT

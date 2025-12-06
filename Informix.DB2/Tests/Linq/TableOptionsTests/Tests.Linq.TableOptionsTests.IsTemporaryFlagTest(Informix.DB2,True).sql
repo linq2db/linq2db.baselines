@@ -1,13 +1,13 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 CREATE TEMP TABLE IsTemporaryTable
 (
 	Id      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (Id)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -16,7 +16,6 @@ SELECT
 FROM
 	IsTemporaryTable t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS IsTemporaryTable

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	t."FirstName" = :p AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(6) -- String
 SET     @p = 'Tester'

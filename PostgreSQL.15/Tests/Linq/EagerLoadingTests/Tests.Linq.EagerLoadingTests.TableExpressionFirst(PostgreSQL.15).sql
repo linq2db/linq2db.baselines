@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 
@@ -12,7 +11,6 @@ VALUES
 	:Id
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 10
@@ -30,7 +28,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

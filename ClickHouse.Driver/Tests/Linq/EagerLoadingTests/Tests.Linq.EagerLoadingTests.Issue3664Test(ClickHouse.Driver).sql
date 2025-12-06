@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Test3664
 (
@@ -10,7 +9,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -23,7 +21,6 @@ FROM
 WHERE
 	d.Id = 11
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ SELECT
 FROM
 	Test3664 t1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -44,7 +40,6 @@ FROM
 WHERE
 	d.Id = 12
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

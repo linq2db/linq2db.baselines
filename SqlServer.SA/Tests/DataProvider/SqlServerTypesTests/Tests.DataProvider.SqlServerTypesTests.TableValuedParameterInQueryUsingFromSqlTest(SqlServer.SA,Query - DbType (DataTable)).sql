@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 

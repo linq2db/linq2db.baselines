@@ -1,11 +1,9 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO CollatedTable
@@ -21,7 +19,6 @@ VALUES
 	'TestString'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -31,7 +28,6 @@ FROM
 WHERE
 	startsWith(r.CaseSensitive, 'TestSt')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -41,7 +37,6 @@ FROM
 WHERE
 	startsWith(r.CaseInsensitive, 'TestSt')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -51,7 +46,6 @@ FROM
 WHERE
 	startsWith(r.CaseSensitive, 'testst')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

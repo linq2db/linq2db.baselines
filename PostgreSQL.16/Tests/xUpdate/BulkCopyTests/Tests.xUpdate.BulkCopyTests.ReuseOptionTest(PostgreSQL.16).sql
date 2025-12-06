@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -11,7 +8,6 @@ INSERT INTO "Parent"
 VALUES
 (111001,NULL)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Child"
@@ -22,5 +18,3 @@ INSERT INTO "Child"
 VALUES
 (111001,0)
 
-BeforeExecute
-DisposeTransaction

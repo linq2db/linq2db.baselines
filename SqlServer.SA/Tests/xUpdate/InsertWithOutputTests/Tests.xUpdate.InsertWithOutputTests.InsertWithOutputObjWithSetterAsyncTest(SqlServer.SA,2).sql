@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+﻿-- SqlServer.SA SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 DECLARE @value_1 Int -- Int32

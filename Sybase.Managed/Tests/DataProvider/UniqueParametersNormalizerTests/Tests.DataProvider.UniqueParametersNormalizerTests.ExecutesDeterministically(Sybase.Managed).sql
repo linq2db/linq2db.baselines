@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+﻿-- Sybase.Managed Sybase
 DECLARE @search UniVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 UniVarChar(4) -- String
@@ -30,8 +29,7 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+-- Sybase.Managed Sybase
 DECLARE @search UniVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 UniVarChar(4) -- String

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @True Bit -- Boolean
 SET     @True = True
 
@@ -18,7 +17,6 @@ FROM
 WHERE
 	[r].[Boolean] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -34,7 +32,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @False Bit -- Boolean
 SET     @False = False
@@ -54,7 +51,6 @@ FROM
 WHERE
 	[r].[Boolean] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -70,7 +66,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = True
@@ -90,7 +85,6 @@ FROM
 WHERE
 	[r].[Boolean] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -106,7 +100,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = False
@@ -126,7 +119,6 @@ FROM
 WHERE
 	[r].[Boolean] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -142,7 +134,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -160,7 +151,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -176,7 +166,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @True Bit -- Boolean
 SET     @True = True
@@ -196,7 +185,6 @@ FROM
 WHERE
 	[r].[BooleanN] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -212,7 +200,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @False Bit -- Boolean
 SET     @False = False
@@ -232,7 +219,6 @@ FROM
 WHERE
 	[r].[BooleanN] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -248,7 +234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = True
@@ -268,7 +253,6 @@ FROM
 WHERE
 	[r].[BooleanN] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -284,7 +268,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = False
@@ -304,7 +287,6 @@ FROM
 WHERE
 	[r].[BooleanN] = ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -320,7 +302,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -338,7 +319,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -354,7 +334,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @True Bit -- Boolean
 SET     @True = True
@@ -374,7 +353,6 @@ FROM
 WHERE
 	[r].[Boolean] <> ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -390,7 +368,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @False Bit -- Boolean
 SET     @False = False
@@ -410,7 +387,6 @@ FROM
 WHERE
 	[r].[Boolean] <> ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -426,7 +402,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = True
@@ -446,7 +421,6 @@ FROM
 WHERE
 	[r].[Boolean] <> ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -462,7 +436,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = False
@@ -482,7 +455,6 @@ FROM
 WHERE
 	[r].[Boolean] <> ?
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -498,7 +470,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -514,7 +485,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -530,7 +500,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @True Bit -- Boolean
 SET     @True = True
@@ -550,7 +519,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> ? OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -566,7 +534,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @False Bit -- Boolean
 SET     @False = False
@@ -586,7 +553,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> ? OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -602,7 +568,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = True
@@ -622,7 +587,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> ? OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -638,7 +602,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = False
@@ -658,7 +621,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> ? OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -674,7 +636,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -692,7 +653,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -708,7 +668,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -763,7 +722,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -779,7 +737,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -942,7 +899,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -958,7 +914,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -976,7 +931,6 @@ FROM
 WHERE
 	[r].[Boolean] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -992,7 +946,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1010,7 +963,6 @@ FROM
 WHERE
 	[r].[Boolean] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1026,7 +978,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1044,7 +995,6 @@ FROM
 WHERE
 	[r].[Boolean] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1060,7 +1010,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1078,7 +1027,6 @@ FROM
 WHERE
 	[r].[Boolean] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1094,7 +1042,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1112,7 +1059,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1128,7 +1074,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1146,7 +1091,6 @@ FROM
 WHERE
 	[r].[BooleanN] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1162,7 +1106,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1180,7 +1123,6 @@ FROM
 WHERE
 	[r].[BooleanN] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1196,7 +1138,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1214,7 +1155,6 @@ FROM
 WHERE
 	[r].[BooleanN] = True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1230,7 +1170,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1248,7 +1187,6 @@ FROM
 WHERE
 	[r].[BooleanN] = False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1264,7 +1202,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1282,7 +1219,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1298,7 +1234,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1316,7 +1251,6 @@ FROM
 WHERE
 	[r].[Boolean] <> True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1332,7 +1266,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1350,7 +1283,6 @@ FROM
 WHERE
 	[r].[Boolean] <> False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1366,7 +1298,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1384,7 +1315,6 @@ FROM
 WHERE
 	[r].[Boolean] <> True
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1400,7 +1330,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1418,7 +1347,6 @@ FROM
 WHERE
 	[r].[Boolean] <> False
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1434,7 +1362,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1450,7 +1377,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1466,75 +1392,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> True OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> False OR [r].[BooleanN] IS NULL
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1552,7 +1409,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> True OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1568,7 +1424,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1586,7 +1441,6 @@ FROM
 WHERE
 	[r].[BooleanN] <> False OR [r].[BooleanN] IS NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1602,7 +1456,70 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
+-- Access.Ace.Odbc AccessODBC
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> True OR [r].[BooleanN] IS NULL
+
+-- Access.Ace.Odbc AccessODBC
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- Access.Ace.Odbc AccessODBC
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> False OR [r].[BooleanN] IS NULL
+
+-- Access.Ace.Odbc AccessODBC
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1620,7 +1537,6 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1636,7 +1552,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1691,7 +1606,6 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1707,7 +1621,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -1870,7 +1783,6 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT

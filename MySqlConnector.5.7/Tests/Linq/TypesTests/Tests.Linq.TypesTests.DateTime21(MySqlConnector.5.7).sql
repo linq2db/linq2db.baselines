@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t`.`ID`,
@@ -18,7 +17,6 @@ WHERE
 	`t`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @dt Datetime -- DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
@@ -30,7 +28,6 @@ SET
 WHERE
 	`t`.`ID` = 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
@@ -50,7 +47,6 @@ WHERE
 	`t`.`ID` = 1
 LIMIT 1
 
-BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @pdt Datetime -- DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'

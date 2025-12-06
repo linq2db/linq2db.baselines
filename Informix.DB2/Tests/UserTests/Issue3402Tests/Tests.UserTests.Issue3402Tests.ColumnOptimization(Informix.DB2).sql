@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	ess.ID
@@ -15,7 +14,6 @@ WHERE
 			ess.ID = y.ID AND y.IS_ACTIVE
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

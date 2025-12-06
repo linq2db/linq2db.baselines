@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [Parent]
 (
@@ -12,8 +11,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [Child]
 (
@@ -26,8 +24,7 @@ VALUES
 	20000
 )
 
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022.MS SqlServer.2022
 
 UPDATE
 	[a_Parent]

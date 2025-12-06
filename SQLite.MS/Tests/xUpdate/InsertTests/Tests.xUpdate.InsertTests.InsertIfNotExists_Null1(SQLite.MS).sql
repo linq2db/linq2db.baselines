@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (
@@ -13,7 +12,6 @@ VALUES
 )
 ON CONFLICT ([id]) DO NOTHING
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 INSERT INTO [test_insert_or_replace] AS [t1]

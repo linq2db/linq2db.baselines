@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @true_value VarChar(1) -- AnsiString
 SET     @true_value = 'Y'
 

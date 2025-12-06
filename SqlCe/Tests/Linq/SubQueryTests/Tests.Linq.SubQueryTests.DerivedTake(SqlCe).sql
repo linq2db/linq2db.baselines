@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -15,7 +14,6 @@ FROM
 			[Parent] [t1]
 	) [t2]
 
-BeforeExecute
 -- SqlCe
 
 SELECT

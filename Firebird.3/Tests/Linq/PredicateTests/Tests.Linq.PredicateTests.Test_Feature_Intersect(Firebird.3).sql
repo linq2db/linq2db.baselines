@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
@@ -18,7 +17,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -38,7 +36,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -58,7 +55,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -80,7 +76,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -102,7 +97,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -124,7 +118,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -144,7 +137,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -164,7 +156,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -184,7 +175,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -206,7 +196,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -228,7 +217,6 @@ WHERE
 			)
 	)
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

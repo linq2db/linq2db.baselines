@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Year_1`,
@@ -20,7 +19,7 @@ FROM
 		FROM
 			`Issue3761Table` `n`
 		WHERE
-			`n`.`DATUM` < '2019-01-01'
+			`n`.`DATUM` < STR_TO_DATE('2019-01-01 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 	) `t1`
 GROUP BY
 	`t1`.`Year_1`,

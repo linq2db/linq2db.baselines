@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] > 1000
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 INSERT INTO [Parent]
@@ -32,7 +30,6 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
@@ -42,7 +39,6 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DELETE FROM

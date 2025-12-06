@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 
 INSERT INTO "Person"
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	c_1."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	"Person"."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

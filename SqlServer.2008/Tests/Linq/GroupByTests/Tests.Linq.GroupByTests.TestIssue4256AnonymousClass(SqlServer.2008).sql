@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[it_1].[IsActive],
@@ -19,7 +18,6 @@ GROUP BY
 	[it_1].[IsActive],
 	[it_1].[Other]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

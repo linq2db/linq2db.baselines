@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 DELETE [c_1]
 FROM
@@ -7,10 +6,8 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 DELETE [p]
@@ -19,7 +16,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 DELETE [c_1]

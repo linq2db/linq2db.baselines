@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- AnsiString
@@ -12,7 +11,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -24,7 +22,6 @@ FROM
 WHERE
 	([s].[CEnum] IN (@In) OR [s].[CEnum] IS NULL)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
@@ -38,7 +35,6 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value2___'
@@ -50,7 +46,6 @@ FROM
 WHERE
 	([s].[CEnum] NOT IN (@NotIn) AND [s].[CEnum] IS NOT NULL)
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'

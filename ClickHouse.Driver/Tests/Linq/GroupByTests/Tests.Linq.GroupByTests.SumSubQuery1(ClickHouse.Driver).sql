@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	sum(g_2.ParentID - 3)
+	SUM(g_2.ParentID - 3)
 FROM
 	(
 		SELECT

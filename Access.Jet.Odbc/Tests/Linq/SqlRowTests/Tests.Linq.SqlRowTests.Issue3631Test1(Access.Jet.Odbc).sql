@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

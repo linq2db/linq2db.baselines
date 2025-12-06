@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 UPDATE
 	"TrimTestTable" "t1"
@@ -8,7 +7,6 @@ SET
 WHERE
 	"t1"."ID" = 3
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	"t"."Data" = '***XXX***'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	"t"."Data" = '***HHH***'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	"r"."ID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

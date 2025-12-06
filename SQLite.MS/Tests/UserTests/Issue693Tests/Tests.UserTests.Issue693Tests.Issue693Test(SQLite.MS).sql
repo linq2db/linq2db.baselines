@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(1) -- String
@@ -24,12 +23,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -55,12 +52,10 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id1  -- Int32
 SET     @id1 = 5
@@ -77,7 +72,6 @@ WHERE
 	[t1].[PersonID] = @id1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id2  -- Int32
 SET     @id2 = 6

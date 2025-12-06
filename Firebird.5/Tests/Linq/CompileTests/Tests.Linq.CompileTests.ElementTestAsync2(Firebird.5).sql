@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+﻿-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -12,8 +11,7 @@ WHERE
 	"c_1"."ParentID" = @p
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

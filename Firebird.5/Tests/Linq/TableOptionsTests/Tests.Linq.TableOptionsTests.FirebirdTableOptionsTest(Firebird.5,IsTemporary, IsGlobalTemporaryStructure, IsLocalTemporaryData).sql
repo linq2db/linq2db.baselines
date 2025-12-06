@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
@@ -7,13 +6,14 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "TestTable"
 			(
 				"Id"    Int NOT NULL,
-				"Value" Int NOT NULL
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_TestTable" PRIMARY KEY ("Id")
 			)
 			ON COMMIT PRESERVE ROWS
 		';
 END
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 EXECUTE BLOCK AS BEGIN

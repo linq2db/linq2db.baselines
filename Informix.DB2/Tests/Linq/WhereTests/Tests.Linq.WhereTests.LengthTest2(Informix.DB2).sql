@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	nm.FirstName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	CHAR_LENGTH(nm.FirstName || '.') <> 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

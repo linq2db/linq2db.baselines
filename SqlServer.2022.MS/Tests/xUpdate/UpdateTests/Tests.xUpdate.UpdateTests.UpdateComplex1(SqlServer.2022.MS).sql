@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+﻿-- SqlServer.2022.MS SqlServer.2022
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -26,7 +25,6 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5
@@ -42,7 +40,6 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
@@ -65,7 +62,6 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
-BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 5

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	DateAdd(Second, "t"."SmallIntValue", "t"."DateTimeValue")

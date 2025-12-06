@@ -1,14 +1,10 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
@@ -36,7 +32,6 @@ VALUES
 	[Source].[nvarcharDataType]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -49,5 +44,3 @@ FROM
 ORDER BY
 	[t1].[ID] DESC
 
-BeforeExecute
-DisposeTransaction

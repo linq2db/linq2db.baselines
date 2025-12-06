@@ -1,7 +1,5 @@
-﻿BeforeExecute
-BeginTransactionAsync
-BeforeExecute
--- PostgreSQL.18 PostgreSQL (asynchronously)
+﻿BeginTransactionAsync
+-- PostgreSQL.18 PostgreSQL
 
 commit;
 SELECT
@@ -9,5 +7,3 @@ SELECT
 FROM
 	"Person" t1
 
-BeforeExecute
-DisposeTransactionAsync

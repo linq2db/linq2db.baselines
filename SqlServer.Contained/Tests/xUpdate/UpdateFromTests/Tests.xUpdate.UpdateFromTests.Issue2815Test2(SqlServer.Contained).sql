@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 UPDATE
 	[ext]
@@ -14,10 +13,10 @@ FROM
 WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
+	[t1].[Id],
 	[t1].[SRC_BIC],
 	[t1].[DES_BIC],
 	[t1].[IDF],

@@ -1,7 +1,6 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4
+﻿-- Firebird.4 Firebird4
 
-WITH RECURSIVE CTE_1 ("Value1", "Value2")
+WITH CTE_1 ("Value1", "Value2")
 AS
 (
 	SELECT

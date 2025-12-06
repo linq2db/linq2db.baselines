@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `LinqDataTypes`
 (
@@ -24,8 +23,7 @@ VALUES
 (4008,1008,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0008',NULL,8,NULL),
 (4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL)
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
@@ -33,8 +31,7 @@ FROM
 WHERE
 	`LinqDataTypes`.`ID` >= 4000
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `LinqDataTypes`
 (
@@ -59,8 +56,7 @@ VALUES
 (4008,1008,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0008',NULL,8,NULL),
 (4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL)
 
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM

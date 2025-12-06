@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[e].[Id],
@@ -12,7 +11,6 @@ WHERE
 	[e].[GuidValue] = X'3D667BBCDE0F27438F925D8CC3A11D11' AND
 	[e].[GuidNullableValue] = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

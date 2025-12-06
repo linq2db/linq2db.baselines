@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`arg`.`Id`,
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS `Id`, CAST(NULL AS UNSIGNED) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

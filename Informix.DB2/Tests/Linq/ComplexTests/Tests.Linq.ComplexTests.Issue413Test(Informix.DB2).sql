@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer(4) -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
@@ -34,7 +32,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 3
@@ -52,7 +49,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
@@ -70,7 +66,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
@@ -88,7 +83,6 @@ VALUES
 	@IndexId
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
@@ -114,7 +108,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
@@ -140,7 +133,6 @@ VALUES
 	@SourceInstrumentCode
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @uptoDate Timestamp(16) -- DateTime
 SET     @uptoDate = TO_DATE('2020-02-29 17:54:55.12312', '%Y-%m-%d %H:%M:%S.%F5')

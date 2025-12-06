@@ -7,7 +7,6 @@ FROM
 WHERE
 	[t2].[Value] > @param
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @param  -- Int32
 SET     @param = 1

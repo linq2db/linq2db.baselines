@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	s."Id",
@@ -10,7 +9,6 @@ FROM
 WHERE
 	s."Id" = 3
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200

@@ -1,3 +1,2 @@
-﻿BeforeExecute
-INSERT BULK "SimpleBulkCopyTable"
+﻿INSERT BULK "SimpleBulkCopyTable"
 

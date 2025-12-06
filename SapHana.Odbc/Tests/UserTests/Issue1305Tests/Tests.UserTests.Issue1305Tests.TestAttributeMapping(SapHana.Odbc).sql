@@ -1,14 +1,11 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -55,7 +52,6 @@ BeforeExecute
 				JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -68,7 +64,6 @@ BeforeExecute
 					POSITION
 				FROM INDEX_COLUMNS
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -115,7 +110,6 @@ BeforeExecute
 				JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -129,7 +123,6 @@ BeforeExecute
 				FROM REFERENTIAL_CONSTRAINTS
 				WHERE SCHEMA_NAME IN ('TESTDB')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -146,7 +139,6 @@ BeforeExecute
 				) AS p ON c.CUBE_NAME = p.CUBE_NAME
 				WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME IN ('TESTDB')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -163,7 +155,6 @@ BeforeExecute
 				WHERE c.CATALOG_NAME = p.CATALOG_NAME AND v.VIEW_TYPE = 'CALC' AND v.SCHEMA_NAME IN ('TESTDB')
 				ORDER BY v.VIEW_NAME, p."ORDER"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -210,7 +201,6 @@ BeforeExecute
 				JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -232,7 +222,6 @@ BeforeExecute
 				FROM FUNCTIONS AS F
 				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 
@@ -265,14 +254,10 @@ BeforeExecute
 				WHERE NOT (PARAMETER_TYPE = 'RETURN' AND DATA_TYPE_NAME = 'TABLE_TYPE') AND SCHEMA_NAME IN ('TESTDB')
 				ORDER BY SCHEMA_NAME, PROCEDURE_NAME, POSITION
 
-BeforeExecute
-BeginTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."AddIssue792Record" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
 SET     @TABLENAME = ''
@@ -283,7 +268,6 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPCONSTRAINTFROMTABLE" (?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FUNCTIONNAME VarChar(50) -- AnsiString
 SET     @FUNCTIONNAME = ''
@@ -292,7 +276,6 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGFUNCTION" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PROCEDURENAME VarChar(50) -- AnsiString
 SET     @PROCEDURENAME = ''
@@ -301,7 +284,6 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGPROCEDURE" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
 SET     @TABLENAME = ''
@@ -310,7 +292,6 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGTABLE" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @VIEWNAME VarChar(50) -- AnsiString
 SET     @VIEWNAME = ''
@@ -319,12 +300,10 @@ SET     @SCHEMANAME = ''
 
 { CALL "TESTDB"."DROPEXISTINGVIEW" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."DuplicateColumnNames" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @STR VarChar(50) -- AnsiString
 SET     @STR = ''
@@ -335,7 +314,6 @@ SET     @INPUTOUTPUTSTR = ''
 
 { CALL "TESTDB"."OutRefEnumTest" (?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int(10) -- Int32
 SET     @ID = 0
@@ -352,12 +330,10 @@ SET     @INPUTOUTPUTSTR = ''
 
 { CALL "TESTDB"."OutRefTest" (?,?,?,?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Patient_SelectAll" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -366,14 +342,12 @@ SET     @LASTNAME = ''
 
 { CALL "TESTDB"."Patient_SelectByName" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID Int(10) -- Int32
 SET     @PERSONID = 0
 
 { CALL "TESTDB"."Person_Delete" (?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -386,7 +360,6 @@ SET     @GENDER = char(0)
 
 { CALL "TESTDB"."Person_Insert" (?,?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -401,19 +374,16 @@ SET     @PERSONID = 0
 
 { CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Person_SelectAll" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int(10) -- Int32
 SET     @ID = 0
 
 { CALL "TESTDB"."Person_SelectByKey" (?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -422,7 +392,6 @@ SET     @LASTNAME = ''
 
 { CALL "TESTDB"."Person_SelectByName" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -431,7 +400,6 @@ SET     @LASTNAME = ''
 
 { CALL "TESTDB"."Person_SelectListByName" (?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID Int(10) -- Int32
 SET     @PERSONID = 0
@@ -446,32 +414,26 @@ SET     @GENDER = char(0)
 
 { CALL "TESTDB"."Person_Update" (?,?,?,?,?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."SelectImplicitColumn" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @I Int(10) -- Int32
 SET     @I = 0
 
 { CALL "TESTDB"."TEST_PROCEDURE" (?) }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."GetParentByID"(0)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
-BeforeExecute
 RollbackTransaction

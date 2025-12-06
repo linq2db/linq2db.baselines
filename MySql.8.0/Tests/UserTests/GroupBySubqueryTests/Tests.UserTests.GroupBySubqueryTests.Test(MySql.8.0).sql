@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT DISTINCT
 	`a_Ref4`.`Field6`,
@@ -15,7 +14,6 @@ FROM
 WHERE
 	`t1`.`Field3` IS NOT NULL
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

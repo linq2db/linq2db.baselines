@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Type Int32
@@ -28,7 +27,6 @@ VALUES
 	:Name_Second
 )
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
@@ -42,7 +40,6 @@ FROM
 WHERE
 	ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Type Int32
 SET     @Type = 1
@@ -65,7 +62,6 @@ SET
 WHERE
 	t1."Id" = :Id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

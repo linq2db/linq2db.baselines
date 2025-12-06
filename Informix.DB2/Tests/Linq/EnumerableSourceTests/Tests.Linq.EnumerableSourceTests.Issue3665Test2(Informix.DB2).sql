@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	x.PersonID + y."item"
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3::Int FROM table(set{1})) y
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

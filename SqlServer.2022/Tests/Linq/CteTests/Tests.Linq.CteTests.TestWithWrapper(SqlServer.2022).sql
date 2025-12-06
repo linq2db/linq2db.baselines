@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 
 WITH [CTE_1] ([Child_ParentID], [Child_ChildID])
 AS
@@ -19,7 +18,6 @@ FROM
 	[Parent] [p]
 		INNER JOIN [CTE_1] [c_1] ON [p].[ParentID] = [c_1].[Child_ParentID]
 
-BeforeExecute
 -- SqlServer.2022
 
 SELECT

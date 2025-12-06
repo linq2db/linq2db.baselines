@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @filter1 VarChar(4) -- String
 SET     @filter1 = 'John'
 DECLARE @filter2 VarChar(6) -- String
@@ -42,7 +41,6 @@ WHERE
 ORDER BY
 	`t1`.`PersonID`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	`Patient` `t1`
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

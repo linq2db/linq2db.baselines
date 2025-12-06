@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 SELECT TOP (2)
 	[t1].[InId] as [LinkId],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t1].[InId] = 1
 
-BeforeExecute
 -- SqlCe
 
 SELECT TOP (2)

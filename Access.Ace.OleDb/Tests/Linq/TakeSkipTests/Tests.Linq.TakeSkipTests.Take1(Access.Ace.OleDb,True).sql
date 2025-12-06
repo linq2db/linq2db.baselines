@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
 	[ch].[ParentID],
@@ -7,7 +6,6 @@ SELECT TOP 2
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3
@@ -16,7 +14,6 @@ SELECT TOP 3
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -25,7 +22,6 @@ SELECT TOP 2
 FROM
 	[Child] [ch]
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 3

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 UPDATE
 	"TrimTestTable" "t1"
@@ -8,7 +7,6 @@ SET
 WHERE
 	"t1".ID = 3
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
@@ -18,7 +16,6 @@ SET
 WHERE
 	"t"."Data" = '***XXX***'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
@@ -28,7 +25,6 @@ SET
 WHERE
 	"t"."Data" = '***HHH***'
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 ORDER BY
 	"r".ID
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

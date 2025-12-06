@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 SELECT
 	"m_1"."ParentID",
@@ -20,7 +17,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -30,5 +26,3 @@ FROM
 	"Parent" "t"
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

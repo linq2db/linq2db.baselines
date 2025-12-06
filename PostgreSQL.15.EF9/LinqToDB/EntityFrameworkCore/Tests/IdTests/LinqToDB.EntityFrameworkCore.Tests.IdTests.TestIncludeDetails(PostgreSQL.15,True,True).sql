@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- PostgreSQL.15 PostgreSQL
 
@@ -59,7 +58,6 @@ WHERE
 
 
 
-DisposeTransaction
 
 
 -- PostgreSQL.15 PostgreSQL

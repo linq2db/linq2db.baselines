@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @Column Char -- String
 SET     @Column = '0'
 DECLARE @ColumnNullable Char -- String
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	"r"."Column" = '0' AND "r"."ColumnNullable" = '1'
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "BooleanTable"
@@ -106,7 +98,6 @@ INSERT INTO "BooleanTable"
 SELECT 1,'1',NULL FROM rdb$database UNION ALL
 SELECT 2,'0','1' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
@@ -118,13 +109,11 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 DELETE FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 INSERT INTO "BooleanTable"
@@ -136,7 +125,6 @@ INSERT INTO "BooleanTable"
 SELECT 1,'1',NULL FROM rdb$database UNION ALL
 SELECT 2,'0','1' FROM rdb$database
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT

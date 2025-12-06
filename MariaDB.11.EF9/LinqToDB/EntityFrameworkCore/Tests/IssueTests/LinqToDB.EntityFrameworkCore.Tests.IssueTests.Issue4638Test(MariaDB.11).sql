@@ -1,7 +1,6 @@
-﻿BeginTransaction(RepeatableRead)
+﻿
 
-
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Key_1`,
@@ -23,7 +22,7 @@ ORDER BY
 
 
 
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`p`.`AclNameId`
@@ -35,6 +34,5 @@ LIMIT 1
 
 
 
-DisposeTransaction
 
 

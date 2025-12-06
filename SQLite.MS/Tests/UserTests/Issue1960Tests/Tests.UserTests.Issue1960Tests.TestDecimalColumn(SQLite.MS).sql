@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @decValue NVarChar -- String
 SET     @decValue = 12345.6789
 DECLARE @dtValue  -- Int64
@@ -20,7 +19,6 @@ VALUES
 	@dtValue
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

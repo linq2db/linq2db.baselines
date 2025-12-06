@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -13,7 +12,6 @@ FROM
 			('Janet'), ('Doe'), ('John'), ('Doe')
 		) n(item) ON p."LastName" = n.item
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

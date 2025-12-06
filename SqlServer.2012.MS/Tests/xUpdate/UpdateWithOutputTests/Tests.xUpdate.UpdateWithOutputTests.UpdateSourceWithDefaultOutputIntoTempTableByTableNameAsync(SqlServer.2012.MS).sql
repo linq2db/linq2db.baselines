@@ -1,15 +1,15 @@
-﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+-- SqlServer.2012.MS SqlServer.2012
 
 UPDATE
 	[TableWithData_source]
@@ -30,7 +30,6 @@ INTO [tempdb]..[#TableWithData_destination]
 WHERE
 	[TableWithData_source].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
@@ -40,7 +39,6 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
-BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_destination]', N'U') IS NOT NULL)

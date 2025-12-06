@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StrKey NVarChar(2) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -42,7 +40,6 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
@@ -66,7 +63,6 @@ VALUES
 ON CONFLICT ([Id], [KeyValue1]) DO UPDATE SET
 	[Value1] = @Value
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'V4'
@@ -80,12 +76,10 @@ VALUES
 	@Value
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
@@ -97,7 +91,6 @@ DELETE FROM
 WHERE
 	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue1] = @StrKey
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Value NVarChar(2) -- String
 SET     @Value = 'VU'
@@ -113,7 +106,6 @@ SET
 WHERE
 	[SampleClass].[Id] = @Id AND [SampleClass].[KeyValue1] = @StrKey
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

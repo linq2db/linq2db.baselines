@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 MERGE INTO "Person" "Target"
 USING (
@@ -27,7 +24,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Target"."PersonID" = "a_Patient"."PersonID"
 ) THEN DELETE
 
-BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
@@ -41,5 +37,3 @@ FROM
 ORDER BY
 	"t1"."PersonID"
 
-BeforeExecute
-DisposeTransaction

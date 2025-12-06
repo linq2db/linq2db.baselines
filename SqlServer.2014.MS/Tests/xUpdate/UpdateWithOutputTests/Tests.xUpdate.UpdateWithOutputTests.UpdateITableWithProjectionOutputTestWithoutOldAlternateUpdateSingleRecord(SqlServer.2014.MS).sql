@@ -1,10 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 UPDATE
 	[t]
 SET
-	[t].[Id] = [t1].[Id],
 	[t].[Value] = [t1].[Value],
 	[t].[ValueStr] = [t1].[ValueStr]
 OUTPUT

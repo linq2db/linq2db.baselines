@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO Parent
 (
@@ -12,7 +11,6 @@ VALUES
 	1001
 )
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -22,7 +20,6 @@ FROM
 WHERE
 	p.ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
@@ -32,7 +29,6 @@ UPDATE
 WHERE
 	ParentID = 1001
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

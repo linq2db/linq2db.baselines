@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Column Smallint -- Int16
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @Column Smallint -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -26,19 +24,17 @@ FROM
 WHERE
 	r."Column" = 255 AND r."ColumnNullable" = 2
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column Smallint -- Int16
+DECLARE @Column Smallint -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
@@ -54,13 +50,12 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column Smallint -- Int16
+DECLARE @Column Smallint -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"
@@ -76,7 +71,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "ByteTable"
@@ -107,7 +99,6 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -119,16 +110,13 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"ByteTable" t1
 
-BeforeExecute
 INSERT BULK "ByteTable"(Id, Column, ColumnNullable)
 
-BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT

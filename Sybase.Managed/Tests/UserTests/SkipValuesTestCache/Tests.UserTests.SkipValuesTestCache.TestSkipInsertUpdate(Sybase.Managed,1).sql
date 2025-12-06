@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(4) -- String
@@ -16,7 +15,6 @@ VALUES
 	@Name
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[t].[Id] = 1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
@@ -42,7 +39,6 @@ SET
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1

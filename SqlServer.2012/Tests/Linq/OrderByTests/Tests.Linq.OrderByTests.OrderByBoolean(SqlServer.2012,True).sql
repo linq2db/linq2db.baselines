@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2012
+﻿-- SqlServer.2012
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +11,6 @@ FROM
 ORDER BY
 	IIF(LEN([t1].[FirstName] + N'.') > 2, 1, 0)
 
-BeforeExecute
 -- SqlServer.2012
 
 SELECT

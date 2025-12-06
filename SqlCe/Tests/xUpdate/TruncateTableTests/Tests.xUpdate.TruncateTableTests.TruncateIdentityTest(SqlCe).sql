@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 
 DROP TABLE [TestIdTrun]
 
-BeforeExecute
 -- SqlCe
 
 CREATE TABLE [TestIdTrun]
@@ -14,7 +12,6 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY ([ID])
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TestIdTrun]
@@ -26,7 +23,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TestIdTrun]
@@ -38,7 +34,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -52,17 +47,14 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM [TestIdTrun]
 
-BeforeExecute
 -- SqlCe
 
 ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] IDENTITY(1, 1)
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TestIdTrun]
@@ -74,7 +66,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [TestIdTrun]
@@ -86,7 +77,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1
@@ -100,7 +90,6 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
-BeforeExecute
 -- SqlCe
 
 DROP TABLE [TestIdTrun]

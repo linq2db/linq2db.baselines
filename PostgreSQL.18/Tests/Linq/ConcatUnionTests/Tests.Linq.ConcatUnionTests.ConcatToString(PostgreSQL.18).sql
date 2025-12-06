@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @pattern Text(3) -- String
 SET     @pattern = '%1%'
 DECLARE @take Integer -- Int32

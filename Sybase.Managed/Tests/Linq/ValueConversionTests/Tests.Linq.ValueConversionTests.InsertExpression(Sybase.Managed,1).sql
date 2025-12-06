@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 DECLARE @Value1 UniVarChar(2) -- String
@@ -32,7 +31,6 @@ VALUES
 	@boolValue_1
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1

@@ -1,9 +1,8 @@
-﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)),
-	[t2].[SUM_1],
+	[t2].[SubSum],
 	IIF(EXISTS(
 		SELECT
 			*
@@ -39,12 +38,12 @@ FROM
 						WHERE
 							[a_Parent].[ParentID] = [f].[ParentID] AND ([a_Parent].[Value1] = [f].[Value1] OR [a_Parent].[Value1] IS NULL AND [f].[Value1] IS NULL)
 					) [t1]
-			) as [SUM_1],
+			) as [SubSum],
 			[f].[ParentID]
 		FROM
 			[Parent] [f]
 	) [t2]
 WHERE
 	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)) LIKE N'%1%' ESCAPE N'~' AND
-	[t2].[SUM_1] > 0
+	[t2].[SubSum] > 0
 

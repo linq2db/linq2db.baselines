@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
 
@@ -32,7 +29,6 @@ FROM
 WHERE
 	d.id2 = :myId
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
@@ -50,5 +46,3 @@ ORDER BY
 	x.id
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

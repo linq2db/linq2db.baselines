@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @id VarBinary(16) -- Binary
 SET     @id = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 
@@ -21,7 +20,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id VarBinary(16) -- Binary
 SET     @id = BX'0D6048A921DE744F8AC29516B287076E'
@@ -46,7 +44,6 @@ VALUES
 	)
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id2 VarBinary(16) -- Binary
 SET     @id2 = BX'0D6048A921DE744F8AC29516B287076E'

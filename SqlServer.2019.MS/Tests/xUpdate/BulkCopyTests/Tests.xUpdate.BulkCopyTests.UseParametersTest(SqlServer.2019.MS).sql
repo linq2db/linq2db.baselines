@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+﻿-- SqlServer.2019.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111001
 DECLARE @p2 Int -- Int32
@@ -260,7 +257,6 @@ VALUES
 (@p97,@p98),
 (@p99,@p100)
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111051
@@ -520,7 +516,6 @@ VALUES
 (@p97,@p98),
 (@p99,@p100)
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @p1 Int -- Int32
 SET     @p1 = 111101
@@ -775,7 +770,6 @@ VALUES
 (@p95,@p96),
 (@p97,@p98)
 
-BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
@@ -789,5 +783,3 @@ FROM
 WHERE
 	[r].[ParentID] >= @ParentID AND [r].[ParentID] <= @ParentID_1
 
-BeforeExecute
-DisposeTransaction

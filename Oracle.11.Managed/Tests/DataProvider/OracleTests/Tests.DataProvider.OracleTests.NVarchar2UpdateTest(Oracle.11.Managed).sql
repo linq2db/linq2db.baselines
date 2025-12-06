@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -16,7 +13,6 @@ VALUES
 RETURNING 
 	ID INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @value NVarchar2(8) -- String
 SET     @value = '致我们最爱的母亲'
@@ -26,7 +22,6 @@ UPDATE
 SET
 	"nvarcharDataType" = :value
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Decimal(1, 0)
 SET     @id = 3
@@ -38,5 +33,3 @@ FROM
 WHERE
 	p.ID = :id AND ROWNUM <= 2
 
-BeforeExecute
-DisposeTransaction

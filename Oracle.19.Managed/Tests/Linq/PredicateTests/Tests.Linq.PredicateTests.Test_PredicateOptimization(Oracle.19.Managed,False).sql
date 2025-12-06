@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	r."Id",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	r."Value1" = r."Value2" OR r."Value1" = r."Value2" AND r."Value1" = r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -24,7 +22,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -38,7 +35,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" OR r."Value1" = r."Value5" AND r."Value1" = r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -50,7 +46,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -64,7 +59,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" OR r."Value1" = r."Value5" AND r."Value1" = r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -76,7 +70,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -90,7 +83,6 @@ FROM
 WHERE
 	r."Value1" <> r."Value2" OR r."Value1" <> r."Value2" AND (r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -102,7 +94,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -116,7 +107,6 @@ FROM
 WHERE
 	r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value5" AND r."Value1" <> r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -128,7 +118,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -142,7 +131,6 @@ FROM
 WHERE
 	r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value5" AND (r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -154,7 +142,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -168,7 +155,6 @@ FROM
 WHERE
 	r."Value1" > r."Value2" OR r."Value1" > r."Value2" AND r."Value1" > r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -180,7 +166,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -194,7 +179,6 @@ FROM
 WHERE
 	r."Value1" > r."Value5" OR r."Value1" > r."Value5" AND r."Value1" > r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -206,7 +190,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -220,7 +203,6 @@ FROM
 WHERE
 	r."Value1" > r."Value5" OR r."Value1" > r."Value5" AND r."Value1" > r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -232,7 +214,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -246,7 +227,6 @@ FROM
 WHERE
 	r."Value1" = r."Value2" AND (r."Value1" = r."Value2" OR r."Value1" = r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -258,7 +238,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -272,7 +251,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" AND (r."Value1" = r."Value5" OR r."Value1" = r."Value2")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -284,7 +262,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -298,7 +275,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" AND (r."Value1" = r."Value5" OR r."Value1" = r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -310,7 +286,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -324,7 +299,6 @@ FROM
 WHERE
 	r."Value1" <> r."Value2" AND (r."Value1" <> r."Value2" OR r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -336,7 +310,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -351,7 +324,6 @@ WHERE
 	(r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND
 	(r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value2")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -363,7 +335,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -378,7 +349,6 @@ WHERE
 	(r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND
 	(r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -390,7 +360,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -404,7 +373,6 @@ FROM
 WHERE
 	r."Value1" >= r."Value2" AND (r."Value1" >= r."Value2" OR r."Value1" >= r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -416,7 +384,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -430,7 +397,6 @@ FROM
 WHERE
 	r."Value1" >= r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" >= r."Value2")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -442,7 +408,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -456,7 +421,6 @@ FROM
 WHERE
 	r."Value1" >= r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" >= r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -468,7 +432,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -482,7 +445,6 @@ FROM
 WHERE
 	r."Value1" = r."Value2" OR r."Value1" <> r."Value2" AND r."Value1" = r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -494,7 +456,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -508,7 +469,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" OR (r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND r."Value1" = r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -520,7 +480,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -534,7 +493,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" OR (r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND r."Value1" = r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -546,7 +504,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -560,7 +517,6 @@ FROM
 WHERE
 	r."Value1" > r."Value2" OR r."Value1" <= r."Value2" AND r."Value1" > r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -572,7 +528,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -586,7 +541,6 @@ FROM
 WHERE
 	r."Value1" > r."Value5" OR r."Value1" <= r."Value5" AND r."Value1" > r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -598,7 +552,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -612,7 +565,6 @@ FROM
 WHERE
 	r."Value1" > r."Value5" OR r."Value1" <= r."Value5" AND r."Value1" > r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -624,7 +576,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -638,7 +589,6 @@ FROM
 WHERE
 	r."Value1" = r."Value2" AND (r."Value1" <> r."Value2" OR r."Value1" = r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -650,7 +600,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -664,7 +613,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" AND (r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" = r."Value2")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -676,7 +624,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -690,7 +637,6 @@ FROM
 WHERE
 	r."Value1" = r."Value5" AND (r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" = r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -702,7 +648,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -716,7 +661,6 @@ FROM
 WHERE
 	r."Value1" < r."Value2" AND (r."Value1" >= r."Value2" OR r."Value1" < r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -728,7 +672,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -742,7 +685,6 @@ FROM
 WHERE
 	r."Value1" < r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" < r."Value2")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -754,7 +696,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -768,7 +709,6 @@ FROM
 WHERE
 	r."Value1" < r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" < r."Value4")
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -780,7 +720,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -792,7 +731,6 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -804,7 +742,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -818,7 +755,6 @@ FROM
 WHERE
 	r."Value1" > r."Value2" OR r."Value1" <= r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -830,7 +766,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -844,7 +779,6 @@ FROM
 WHERE
 	r."Value1" >= r."Value2" OR r."Value1" < r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -856,7 +790,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -868,7 +801,6 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -880,7 +812,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -894,7 +825,6 @@ FROM
 WHERE
 	r."Value1" < r."Value4" OR r."Value1" >= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -906,7 +836,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -920,7 +849,6 @@ FROM
 WHERE
 	r."Value1" > r."Value4" OR r."Value1" <= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -932,7 +860,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -944,7 +871,6 @@ SELECT
 FROM
 	"BooleanTable" r
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -956,7 +882,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -970,7 +895,6 @@ FROM
 WHERE
 	r."Value5" > r."Value4" OR r."Value5" <= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -982,7 +906,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -996,7 +919,6 @@ FROM
 WHERE
 	r."Value5" >= r."Value4" OR r."Value5" < r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1008,7 +930,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1022,7 +943,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1034,7 +954,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1048,7 +967,6 @@ FROM
 WHERE
 	r."Value1" > r."Value2" AND r."Value1" <= r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1060,7 +978,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1074,7 +991,6 @@ FROM
 WHERE
 	r."Value1" >= r."Value2" AND r."Value1" < r."Value2"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1086,7 +1002,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1100,7 +1015,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1112,7 +1026,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1126,7 +1039,6 @@ FROM
 WHERE
 	r."Value1" < r."Value4" AND r."Value1" >= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1138,7 +1050,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1152,7 +1063,6 @@ FROM
 WHERE
 	r."Value1" > r."Value4" AND r."Value1" <= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1164,7 +1074,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1178,7 +1087,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1190,7 +1098,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1204,7 +1111,6 @@ FROM
 WHERE
 	r."Value5" > r."Value4" AND r."Value5" <= r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1216,7 +1122,6 @@ SELECT
 FROM
 	"BooleanTable" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -1230,7 +1135,6 @@ FROM
 WHERE
 	r."Value5" >= r."Value4" AND r."Value5" < r."Value4"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	g_1."GroupId",
@@ -27,10 +26,10 @@ FROM
 GROUP BY
 	g_1."GroupId"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."GroupId",
 	t1."DataValue"
 FROM

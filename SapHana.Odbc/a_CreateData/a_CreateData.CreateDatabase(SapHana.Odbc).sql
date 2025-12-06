@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DROP PROCEDURE DROPEXISTINGTABLE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE DROPEXISTINGTABLE
@@ -18,12 +16,10 @@ IF (:MYROWID > 0 ) THEN
 END IF;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP PROCEDURE DROPEXISTINGPROCEDURE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE DROPEXISTINGPROCEDURE
@@ -38,12 +34,10 @@ IF (:MYROWID > 0 ) THEN
 END IF;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP PROCEDURE DROPEXISTINGFUNCTION
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE DROPEXISTINGFUNCTION
@@ -58,12 +52,10 @@ IF (:MYROWID > 0 ) THEN
 END IF;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP PROCEDURE DROPEXISTINGVIEW
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE DROPEXISTINGVIEW
@@ -78,12 +70,10 @@ IF (:MYROWID > 0 ) THEN
 END IF;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DROP PROCEDURE DROPCONSTRAINTFROMTABLE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE DROPCONSTRAINTFROMTABLE
@@ -99,12 +89,10 @@ IF (:MYROWID > 0 ) THEN
 END IF;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('InheritanceParent', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE TABLE "InheritanceParent"
@@ -116,12 +104,10 @@ CREATE TABLE "InheritanceParent"
 	PRIMARY KEY ("InheritanceParentId")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('InheritanceChild', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE TABLE "InheritanceChild"
@@ -134,22 +120,18 @@ CREATE TABLE "InheritanceChild"
 	PRIMARY KEY ("InheritanceChildId")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('Doctor', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('Patient', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('Person', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Person" (
@@ -161,27 +143,22 @@ CREATE COLUMN TABLE "Person" (
 	 PRIMARY KEY ("PersonID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"("FirstName","LastName","Gender") VALUES ('John',   'Pupkin',    'M')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"("FirstName","LastName","Gender") VALUES ('Tester', 'Testerson', 'M')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"("FirstName","LastName","Gender") VALUES ('Jane',   'Doe',       'F')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"("FirstName","LastName","MiddleName","Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Doctor"
@@ -191,17 +168,14 @@ CREATE COLUMN TABLE "Doctor"
 	PRIMARY KEY ("PersonID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 ALTER TABLE "Doctor" ADD CONSTRAINT "FK_Doctor_Person" FOREIGN KEY ("PersonID") REFERENCES "Person" ("PersonID") ON UPDATE CASCADE ON DELETE CASCADE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Patient"
@@ -211,22 +185,18 @@ CREATE COLUMN TABLE "Patient"
 	PRIMARY KEY ("PersonID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 ALTER TABLE "Patient" ADD CONSTRAINT "FK_Patient_Person" FOREIGN KEY ("PersonID") REFERENCES "Person" ("PersonID") ON UPDATE CASCADE ON DELETE CASCADE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_SelectByKey', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_SelectByKey"
@@ -236,12 +206,10 @@ BEGIN
 	SELECT * FROM "Person" WHERE "PersonID" = :ID;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_SelectAll', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_SelectAll"
@@ -251,12 +219,10 @@ BEGIN
 	SELECT * FROM "Person";
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_SelectByName', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_SelectByName"
@@ -268,12 +234,10 @@ BEGIN
 	SELECT * FROM "Person" WHERE "FirstName" = :FirstName AND "LastName" = :LastName;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_SelectListByName', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_SelectListByName"
@@ -285,12 +249,10 @@ BEGIN
 	SELECT * FROM "Person" WHERE "FirstName" LIKE :FirstName AND "LastName" LIKE :LastName;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_Insert', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_Insert"
@@ -305,12 +267,10 @@ BEGIN
 	VALUES (:LastName, :FirstName, :MiddleName, :Gender);
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_Insert_OutputParameter', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_Insert_OutputParameter"
@@ -328,12 +288,10 @@ BEGIN
 	SELECT MAX("PersonID") INTO PersonID FROM "Person";
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_Update', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_Update"
@@ -354,12 +312,10 @@ BEGIN
 		"PersonID" = :PersonID;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Person_Delete', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Person_Delete"
@@ -369,12 +325,10 @@ BEGIN
 	DELETE FROM "Person" WHERE "PersonID" = :PersonID;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Patient_SelectAll', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Patient_SelectAll"
@@ -387,12 +341,10 @@ BEGIN
 		"Person"."PersonID" = "Patient"."PersonID";
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('Patient_SelectByName', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "Patient_SelectByName"
@@ -408,12 +360,10 @@ BEGIN
 		AND "FirstName" = :FirstName AND "LastName" = :LastName;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('OutRefTest', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "OutRefTest"
@@ -432,12 +382,10 @@ BEGIN
 	inputOutputStr := str || inputOutputStr;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('OutRefEnumTest', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "OutRefEnumTest"
@@ -451,12 +399,10 @@ BEGIN
 	inputOutputStr := str || inputOutputStr;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('AllTypes', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "AllTypes"
@@ -496,7 +442,6 @@ CREATE COLUMN TABLE "AllTypes"
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypes"
@@ -513,7 +458,6 @@ INSERT INTO "AllTypes"
 	NULL, NULL,
 	NULL, NULL,  NULL)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypes"
@@ -530,12 +474,10 @@ INSERT INTO "AllTypes"
 	CAST( 'abcdefgh' AS BINARY), CAST( 'abcdefgh' AS VARBINARY),
 	'abcdefgh', 'qwertyuiop', 'ąčęėįšqwerty123456' )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('AllTypesGeo', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "AllTypesGeo"
@@ -546,64 +488,53 @@ CREATE COLUMN TABLE "AllTypesGeo"
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES (NULL, NULL)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('POINT', NEW ST_POINT('POINT(0.0 0.0)'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('POLYGON', NEW ST_POLYGON('POLYGON((6.0 7.0, 10.0 3.0, 10.0 10.0, 6.0 7.0))'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('LINESTRING', NEW ST_LINESTRING('LINESTRING(3.0 3.0, 5.0 4.0, 6.0 3.0)'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('MULTIPOINT', NEW ST_MULTIPOINT('MultiPoint ((10 10), (12 12), (14 10))'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('MULTIPOLYGON', NEW ST_MultiPolygon('MultiPolygon (((-5 -5, 5 -5, 0 5, -5 -5), (-2 -2, -2 0, 2 0, 2 -2, -2 -2)), ((10 -5, 15 5, 5 5, 10 -5)))'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypesGeo" ("dataType", "stgeometryDataType")
 VALUES ('MULTILINESTRING', NEW ST_MultiLineString('MultiLineString ((10 10, 12 12), (14 10, 16 12))'))
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('Parent',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('Child',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('GrandChild',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Parent" (
@@ -611,7 +542,6 @@ CREATE COLUMN TABLE "Parent" (
 	"Value1" INTEGER
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "Child" (
@@ -619,7 +549,6 @@ CREATE COLUMN TABLE "Child" (
 	"ChildID" INTEGER
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "GrandChild" (
@@ -628,12 +557,10 @@ CREATE COLUMN TABLE "GrandChild" (
 	"GrandChildID" INTEGER
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGFUNCTION('GetParentByID', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE FUNCTION "GetParentByID"
@@ -651,24 +578,20 @@ BEGIN
 	SELECT * FROM "Parent" WHERE "ParentID" = :id;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGVIEW('ParentView', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE VIEW "ParentView"
 AS
 	SELECT * FROM "Parent"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGVIEW('ParentChildView', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE VIEW "ParentChildView"
@@ -680,12 +603,10 @@ AS
 	FROM "Parent" p
 		LEFT JOIN "Child" ch ON p."ParentID" = ch."ParentID"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('SelectImplicitColumn', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "SelectImplicitColumn"
@@ -695,12 +616,10 @@ BEGIN
 	SELECT 123 FROM DUMMY;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('LinqDataTypes', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "LinqDataTypes"
@@ -718,12 +637,10 @@ CREATE COLUMN TABLE "LinqDataTypes"
 	"StringValue" NVARCHAR(50) NULL
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('BulkInsertLowerCaseColumns', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "BulkInsertLowerCaseColumns"
@@ -739,12 +656,10 @@ CREATE COLUMN TABLE "BulkInsertLowerCaseColumns"
 	"BigIntValue" BIGINT NULL
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('BulkInsertUpperCaseColumns', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "BulkInsertUpperCaseColumns"
@@ -760,12 +675,10 @@ CREATE COLUMN TABLE "BulkInsertUpperCaseColumns"
 	"BIGINTVALUE" BIGINT NULL
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('DuplicateColumnNames', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "DuplicateColumnNames"
@@ -775,12 +688,10 @@ BEGIN
 	SELECT 123 as "id", '456' as "id" FROM DUMMY;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('TestIdentity',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TestIdentity" (
@@ -788,17 +699,14 @@ CREATE COLUMN TABLE "TestIdentity" (
 	PRIMARY KEY ("ID")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPCONSTRAINTFROMTABLE('IndexTable2', 'FK_Patient2_IndexTable', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('IndexTable',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "IndexTable" (
@@ -809,17 +717,14 @@ CREATE COLUMN TABLE "IndexTable" (
 	PRIMARY KEY ("PKField1", "PKField2")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE UNIQUE INDEX "IX_IndexTable" ON "IndexTable"("UniqueField")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('IndexTable2',CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "IndexTable2" (
@@ -828,22 +733,18 @@ CREATE COLUMN TABLE "IndexTable2" (
 	PRIMARY KEY ("PKField1", "PKField2")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 ALTER TABLE "IndexTable2" ADD CONSTRAINT "FK_Patient2_IndexTable" FOREIGN KEY ("PKField1", "PKField2") REFERENCES "IndexTable" ("PKField1", "PKField2") ON UPDATE CASCADE ON DELETE CASCADE
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('TestMerge1', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('TestMerge2', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE TABLE "TestMerge1"
@@ -875,7 +776,6 @@ CREATE TABLE "TestMerge1"
 	PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE TABLE "TestMerge2"
@@ -907,12 +807,10 @@ CREATE TABLE "TestMerge2"
 	PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('AddIssue792Record', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "AddIssue792Record"()
@@ -921,12 +819,10 @@ BEGIN
 	INSERT INTO "AllTypes"("char20DataType") VALUES('issue792');
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('prd.global.ecc/CV_MARA', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE TABLE "prd.global.ecc/CV_MARA"
@@ -936,12 +832,10 @@ CREATE TABLE "prd.global.ecc/CV_MARA"
 	PRIMARY KEY ("Id")
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGPROCEDURE('prd.global.ecc/CV_MARAproc', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE PROCEDURE "prd.global.ecc/CV_MARAproc"()
@@ -950,12 +844,10 @@ BEGIN
 	SELECT 123 as "id", '456' as "id" FROM DUMMY;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CALL DROPEXISTINGTABLE('CollatedTable', CURRENT_SCHEMA)
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "CollatedTable"
@@ -965,7 +857,6 @@ CREATE COLUMN TABLE "CollatedTable"
 	"CaseInsensitive"	NVARCHAR(20) NOT NULL
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE OR REPLACE LIBRARY TEST_PACKAGE1 AS
@@ -984,7 +875,6 @@ BEGIN
 	END;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE OR REPLACE LIBRARY TEST_PACKAGE2 AS
@@ -1003,7 +893,6 @@ BEGIN
 	END;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE OR REPLACE PROCEDURE TEST_PROCEDURE (IN i INT) AS
@@ -1011,7 +900,6 @@ BEGIN
 	SELECT i + 3 FROM dummy;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE OR REPLACE FUNCTION TEST_TABLE_FUNCTION(i INT) RETURNS TABLE(O INTEGER) AS
@@ -1019,7 +907,6 @@ BEGIN
 	RETURN	SELECT i + 3 AS O FROM "Person";
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 CREATE OR REPLACE FUNCTION TEST_FUNCTION (i INT) RETURNS o INT AS
@@ -1027,7 +914,6 @@ BEGIN
 	o = :i + 3;
 END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -1077,7 +963,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 2
@@ -1127,7 +1012,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 3
@@ -1177,7 +1061,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 4
@@ -1227,7 +1110,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 5
@@ -1277,7 +1159,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 6
@@ -1327,7 +1208,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 7
@@ -1377,7 +1257,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 8
@@ -1427,7 +1306,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 9
@@ -1477,7 +1355,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 10
@@ -1527,7 +1404,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 11
@@ -1577,7 +1453,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 12
@@ -1627,7 +1502,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
@@ -1645,7 +1519,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -1663,7 +1536,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -1681,7 +1553,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -1699,7 +1570,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 5
@@ -1717,7 +1587,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -1735,7 +1604,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
@@ -1753,7 +1621,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
@@ -1771,7 +1638,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -1789,7 +1655,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -1807,7 +1672,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -1825,7 +1689,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -1843,7 +1706,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -1861,7 +1723,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -1879,7 +1740,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -1897,7 +1757,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -1915,7 +1774,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -1933,7 +1791,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -1951,7 +1808,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -1969,7 +1825,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -1987,7 +1842,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -2005,7 +1859,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -2023,7 +1876,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 6
@@ -2041,7 +1893,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 7
@@ -2059,7 +1910,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
@@ -2081,7 +1931,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -2103,7 +1952,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -2125,7 +1973,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -2147,7 +1994,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
@@ -2169,7 +2015,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2191,7 +2036,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2213,7 +2057,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2235,7 +2078,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2257,7 +2099,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2279,7 +2120,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2301,7 +2141,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2323,7 +2162,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2345,7 +2183,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
@@ -2367,7 +2204,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2389,7 +2225,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2411,7 +2246,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2433,7 +2267,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2455,7 +2288,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2477,7 +2309,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2499,7 +2330,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2521,7 +2351,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4
@@ -2543,7 +2372,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 1
@@ -2565,7 +2393,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 2
@@ -2587,7 +2414,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceParentId Int -- Int32
 SET     @InheritanceParentId = 3
@@ -2609,7 +2435,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 1
@@ -2635,7 +2460,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 2
@@ -2661,7 +2485,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @InheritanceChildId Int -- Int32
 SET     @InheritanceChildId = 3

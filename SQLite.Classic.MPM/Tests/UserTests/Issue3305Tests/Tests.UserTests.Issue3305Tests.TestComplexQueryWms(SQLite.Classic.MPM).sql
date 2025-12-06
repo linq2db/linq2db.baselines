@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[ChannelDTO]
 (
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE temp.[ChannelDTO]
 	[MaterialID] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
@@ -26,7 +24,6 @@ CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
 	[InfeedAdviceID] INTEGER     NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[MaterialDTO]
@@ -43,7 +40,6 @@ CREATE TEMPORARY TABLE temp.[MaterialDTO]
 	[CategoryTemperature]   NVarChar(255)     NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
@@ -59,7 +55,6 @@ CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
 	[CustomLong3]   INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
@@ -69,7 +64,6 @@ CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
 	[ResourceID]     INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[AisleDTO]
@@ -80,7 +74,6 @@ CREATE TEMPORARY TABLE temp.[AisleDTO]
 	[Name]        NVarChar(255)     NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
@@ -89,7 +82,6 @@ CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
 	[ResourceID] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
@@ -98,7 +90,6 @@ CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
 	[InfeedAdviceType] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
@@ -111,7 +102,6 @@ CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 	[DepthCoordinate] INTEGER NOT NULL
 )
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 WITH [CTE_1]
@@ -328,47 +318,38 @@ FROM
 				LEFT JOIN [StorageShelfDTO] [a2] ON [t1].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
 	) [x]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[StorageShelfDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[InfeedAdvicePositionDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[RefOutfeedTransportOrderResourceDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[AisleDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[RefResourceStorageShelfDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[WmsLoadCarrierDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[MaterialDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[InventoryResourceDTO]
 
-BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[ChannelDTO]

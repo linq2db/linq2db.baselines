@@ -1,30 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient20')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient20"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
-
-CREATE TABLE "xxPatient20"
-(
-	"PersonID"  Int                                    NOT NULL,
-	"Diagnosis" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-	CONSTRAINT "PK_xxPatient20" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+﻿-- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient20" "t1"
+MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -45,14 +25,13 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient20" "t1"
+MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -73,22 +52,20 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPatient20" "t1"
+	"xxPatient" "t1"
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-MERGE INTO "xxPatient20" "t1"
+MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -109,14 +86,13 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-MERGE INTO "xxPatient20" "t1"
+MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
@@ -137,19 +113,10 @@ WHEN NOT MATCHED THEN
 		CAST(@Diagnosis AS VARCHAR(4))
 	)
 
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
+-- Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)
 FROM
-	"xxPatient20" "t1"
-
-BeforeExecute
--- Firebird.3 Firebird3 (asynchronously)
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient20')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "xxPatient20"';
-END
+	"xxPatient" "t1"
 

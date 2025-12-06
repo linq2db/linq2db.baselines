@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 INSERT INTO "DateOnlyTable"
 (
@@ -7,10 +6,10 @@ INSERT INTO "DateOnlyTable"
 )
 SELECT CAST('2021-01-01' AS date) FROM rdb$database
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
+	"t1"."Id",
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[p].[Id],
@@ -10,7 +9,6 @@ WHERE
 	[p].[Text] IS NULL OR LTRIM([p].[Text], '	
                  　') = ''
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

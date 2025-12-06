@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Column TinyInt -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt -- Byte
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -26,13 +24,11 @@ FROM
 WHERE
 	[r].[Column] = 255 AND [r].[ColumnNullable] = 2
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -54,7 +50,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -76,7 +71,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -88,13 +82,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [ByteTable]
@@ -106,7 +98,6 @@ INSERT INTO [ByteTable]
 SELECT 1,1,NULL UNION ALL
 SELECT 2,255,2
 
-BeforeExecute
 -- SqlCe
 
 SELECT
@@ -118,13 +109,11 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlCe
 
 DELETE FROM
 	[ByteTable]
 
-BeforeExecute
 -- SqlCe
 
 INSERT INTO [ByteTable]
@@ -136,7 +125,6 @@ INSERT INTO [ByteTable]
 SELECT 1,1,NULL UNION ALL
 SELECT 2,255,2
 
-BeforeExecute
 -- SqlCe
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t].[ID],
@@ -17,7 +16,6 @@ FROM
 WHERE
 	[t].[ID] > 5
 
-BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 MERGE INTO [LinqDataTypes] [Target]

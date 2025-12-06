@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[m_1].[CustomerID],
@@ -26,9 +23,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT

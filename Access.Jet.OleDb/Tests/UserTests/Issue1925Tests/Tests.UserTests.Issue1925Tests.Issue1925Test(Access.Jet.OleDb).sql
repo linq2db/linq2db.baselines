@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
 	[r].[Id]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%]'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -18,7 +16,6 @@ FROM
 WHERE
 	[r].[Value] LIKE ']%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT TOP 2
@@ -28,7 +25,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%[-]%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -39,7 +35,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%[[]]%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -50,7 +45,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%[[]0%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @asParamUnterm VarWChar(6) -- String
 SET     @asParamUnterm = '%[[]0%'
@@ -63,7 +57,6 @@ FROM
 WHERE
 	[r].[Value] LIKE @asParamUnterm
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -74,7 +67,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%[[]0[-]9]%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -85,7 +77,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '%6%'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -96,7 +87,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '[0'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @asParamUnterm VarWChar(2) -- String
 SET     @asParamUnterm = '[0'
@@ -109,7 +99,6 @@ FROM
 WHERE
 	[r].[Value] LIKE @asParamUnterm
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
@@ -120,7 +109,6 @@ FROM
 WHERE
 	[r].[Value] LIKE '[0-9]'
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @asParam VarWChar(5) -- String
 SET     @asParam = '[0-9]'

@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Issue3323Table"
 (
 	"Id",
-	"FistName",
+	"FirstName",
 	"LastName",
 	"Text"
 )
@@ -16,20 +15,19 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
 	t1."Text",
-	t1."FistName" || ' ' || t1."LastName"
+	t1."FirstName" || ' ' || t1."LastName"
 FROM
 	"Issue3323Table" t1
 UNION ALL
 SELECT
 	t2."Id",
 	t2."Text",
-	t2."FistName" || ' ' || t2."LastName"
+	t2."FirstName" || ' ' || t2."LastName"
 FROM
 	"Issue3323Table" t2
 

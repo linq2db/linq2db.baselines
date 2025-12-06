@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,7 +22,6 @@ INSERT INTO "LinqDataTypes"
 	SELECT 4008,1008,TIMESTAMP '2001-01-11 01:11:21.100000',1,NULL,8,NULL FROM DUAL  UNION ALL
 	SELECT 4009,1009,TIMESTAMP '2001-01-11 01:11:21.100000',1,NULL,9,NULL FROM DUAL 
 
-BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM

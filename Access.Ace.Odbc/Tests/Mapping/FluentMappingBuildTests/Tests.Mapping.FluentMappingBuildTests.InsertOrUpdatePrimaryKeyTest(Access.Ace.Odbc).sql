@@ -1,9 +1,7 @@
-﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+﻿-- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 CREATE TABLE [FluentTemp]
@@ -14,7 +12,6 @@ CREATE TABLE [FluentTemp]
 	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @ID Int -- Int32
 SET     @ID = 1
@@ -32,7 +29,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 UPDATE
@@ -43,7 +39,6 @@ SET
 WHERE
 	[t1].[ID] = 1
 
-BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
 DROP TABLE [FluentTemp]

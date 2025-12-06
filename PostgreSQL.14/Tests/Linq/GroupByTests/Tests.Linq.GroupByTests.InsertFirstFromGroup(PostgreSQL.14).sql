@@ -1,14 +1,33 @@
-﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-CREATE TEMPORARY TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	"Value" text     NULL
-)
-ON COMMIT PRESERVE ROWS
+	"ID"    Int  NOT NULL,
+	"Value" text     NULL,
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+	CONSTRAINT "PK_temp_table_1" PRIMARY KEY ("ID")
+)
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+INSERT INTO temp_table_1
+(
+	"ID",
+	"Value"
+)
+VALUES
+(1,'Value')
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+CREATE TABLE temp_table_2
+(
+	"Value" text NOT NULL,
+
+	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
+)
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO temp_table_2
 (
@@ -35,8 +54,11 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP TABLE IF EXISTS temp_table_1
 

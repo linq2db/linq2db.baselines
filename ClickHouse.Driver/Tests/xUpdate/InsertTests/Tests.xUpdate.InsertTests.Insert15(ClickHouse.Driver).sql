@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	Person
 DELETE WHERE
 	startsWith(FirstName, 'Insert15')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Person
@@ -26,7 +24,6 @@ VALUES
 	'Insert15'
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -36,7 +33,6 @@ FROM
 WHERE
 	startsWith(t1.FirstName, 'Insert15')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE

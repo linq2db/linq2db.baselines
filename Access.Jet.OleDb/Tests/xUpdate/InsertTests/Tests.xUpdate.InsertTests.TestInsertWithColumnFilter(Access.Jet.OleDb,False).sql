@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarWChar(8) -- String
@@ -20,7 +19,6 @@ VALUES
 	@Gender
 )
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
@@ -36,7 +34,6 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @newName VarWChar(18) -- String
 SET     @newName = 'InsertColumnFilter'

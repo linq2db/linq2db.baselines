@@ -1,24 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
-
-DROP TABLE IF EXISTS "xxPerson"
-
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
-
-CREATE TABLE "xxPerson"
-(
-	"FirstName"  text     NOT NULL,
-	"PersonID"   SERIAL   NOT NULL,
-	"LastName"   text     NOT NULL,
-	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
-
-	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -43,7 +23,6 @@ VALUES
 	:Gender
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -51,7 +30,6 @@ SELECT
 FROM
 	"xxPerson" t1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -64,7 +42,6 @@ FROM
 	"xxPerson" t1
 LIMIT 2
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
@@ -87,7 +64,6 @@ SET
 WHERE
 	"xxPerson"."PersonID" = :ID
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -99,9 +75,4 @@ SELECT
 FROM
 	"xxPerson" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.18 PostgreSQL
-
-DROP TABLE "xxPerson"
 

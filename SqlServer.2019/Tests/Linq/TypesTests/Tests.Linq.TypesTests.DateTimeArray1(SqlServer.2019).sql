@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[t].[ID],
@@ -15,5 +14,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN (DATETIMEFROMPARTS(2001, 1, 11, 1, 11, 21, 100))
+	[t].[DateTimeValue] IN (DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 100, 3))
 

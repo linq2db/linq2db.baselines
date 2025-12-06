@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Age Integer -- Int32
@@ -16,7 +15,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
@@ -29,7 +27,6 @@ WHERE
 	t."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -47,7 +44,6 @@ VALUES
 	:Age
 )
 
-BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT

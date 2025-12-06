@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName],
@@ -16,7 +15,6 @@ FROM
 				(2), (3)
 			) [n] ON [p].[PersonID] = [n].[ID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

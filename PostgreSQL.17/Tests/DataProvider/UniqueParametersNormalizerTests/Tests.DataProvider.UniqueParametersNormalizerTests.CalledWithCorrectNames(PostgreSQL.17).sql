@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String

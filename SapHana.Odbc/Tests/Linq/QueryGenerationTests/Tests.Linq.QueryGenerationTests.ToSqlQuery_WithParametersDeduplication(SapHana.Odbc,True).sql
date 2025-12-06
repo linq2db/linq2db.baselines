@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName",
@@ -12,7 +11,6 @@ FROM
 WHERE
 	"p"."FirstName" = 'John' OR "p"."LastName" = 'John'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @s VarWChar(7) -- String
 SET     @s = '123[456'
 DECLARE @ps VarWChar(5) -- String

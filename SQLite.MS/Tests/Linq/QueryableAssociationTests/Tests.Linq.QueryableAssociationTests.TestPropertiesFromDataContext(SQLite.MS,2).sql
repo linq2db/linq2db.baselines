@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @CurrentUserId  -- Int32
 SET     @CurrentUserId = 2
 

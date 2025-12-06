@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @is_deleted Boolean
 SET     @is_deleted = True
 
@@ -12,7 +11,6 @@ SET
 WHERE
 	[sr].[id] = 'TestProcessService'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT

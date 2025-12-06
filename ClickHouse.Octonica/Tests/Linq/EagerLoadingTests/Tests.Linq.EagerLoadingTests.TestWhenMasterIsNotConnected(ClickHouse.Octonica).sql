@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.DetailId,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	DetailClass t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TEMPORARY TABLE `Issue4671EntityTMP`
 (
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE `Issue4671EntityTMP`
 	CONSTRAINT `PK_Issue4671EntityTMP` PRIMARY KEY CLUSTERED (`Id`)
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Issue4671Entity`
@@ -21,7 +19,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `Issue4671EntityTMP`
@@ -33,7 +30,6 @@ VALUES
 	2
 )
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -43,7 +39,6 @@ FROM
 	`Issue4671Entity` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
@@ -53,7 +48,6 @@ FROM
 	`Issue4671EntityTMP` `t1`
 LIMIT 2
 
-BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TEMPORARY TABLE IF EXISTS `Issue4671EntityTMP`

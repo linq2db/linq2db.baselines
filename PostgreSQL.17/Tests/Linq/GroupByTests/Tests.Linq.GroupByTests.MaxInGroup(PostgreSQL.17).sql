@@ -1,36 +1,23 @@
-﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	g_1."GroupId",
 	MAX(g_1."DataValue"),
 	MAX(g_1."DataValue"),
-	MAX(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	MAX(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
+	MAX(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	MAX(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
 	MAX(DISTINCT g_1."DataValue"),
-	MAX(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	MAX(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END)
+	MAX(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	MAX(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0)
 FROM
 	"AggregationData" g_1
 GROUP BY
 	g_1."GroupId"
 
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."GroupId",
 	t1."DataValue"
 FROM

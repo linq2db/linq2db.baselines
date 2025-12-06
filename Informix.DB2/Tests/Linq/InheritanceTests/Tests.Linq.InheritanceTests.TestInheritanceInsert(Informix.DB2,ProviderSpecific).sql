@@ -1,7 +1,5 @@
-﻿BeforeExecute
-INSERT BULK InheritanceFilter
+﻿INSERT BULK InheritanceFilter
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

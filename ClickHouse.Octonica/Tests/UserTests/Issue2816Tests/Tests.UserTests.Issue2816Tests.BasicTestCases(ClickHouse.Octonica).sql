@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.Id,
@@ -10,7 +9,6 @@ WHERE
 	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
 |||| || | | | | | | | | | | | | | | | |　', ''))
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

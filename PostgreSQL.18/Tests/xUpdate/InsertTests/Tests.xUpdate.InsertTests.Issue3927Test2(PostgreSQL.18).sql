@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @pageNumber Integer -- Int32
 SET     @pageNumber = 9
 DECLARE @serialNumber Char(11) -- String

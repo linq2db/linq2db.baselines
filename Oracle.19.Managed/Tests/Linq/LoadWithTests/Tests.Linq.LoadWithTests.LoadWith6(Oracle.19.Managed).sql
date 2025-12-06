@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
@@ -19,9 +16,6 @@ FROM
 		LEFT JOIN "Child" a_Child ON d."ParentID" = a_Child."ParentID" AND d."ChildID" = a_Child."ChildID"
 		LEFT JOIN "Parent" a_Parent ON a_Child."ParentID" = a_Parent."ParentID"
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

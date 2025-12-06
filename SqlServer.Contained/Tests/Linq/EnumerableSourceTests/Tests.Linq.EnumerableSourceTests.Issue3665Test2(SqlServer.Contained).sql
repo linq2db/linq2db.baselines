@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -9,7 +8,6 @@ FROM
 			(0), (1), (2), (3)
 		) [y]([item])
 
-BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT

@@ -1,16 +1,17 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+﻿-- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Value    Nullable(String),
-	LastName Nullable(String)
-)
-ENGINE = Memory()
+	LastName Nullable(String),
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+	PRIMARY KEY (ID)
+)
+ENGINE = MergeTree()
+ORDER BY ID
+
+-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO FluentTemp
 (
@@ -25,8 +26,7 @@ VALUES
 	'Doe'
 )
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	FluentTemp
@@ -36,8 +36,7 @@ UPDATE
 WHERE
 	ID = 1
 
-BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS FluentTemp
 

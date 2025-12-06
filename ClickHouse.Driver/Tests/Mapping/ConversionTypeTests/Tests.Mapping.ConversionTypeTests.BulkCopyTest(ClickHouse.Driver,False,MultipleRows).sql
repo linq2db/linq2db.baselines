@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO TrimTestTable
 (
@@ -9,7 +8,6 @@ INSERT INTO TrimTestTable
 VALUES
 (1,'***OOO***')
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
@@ -20,7 +18,6 @@ FROM
 ORDER BY
 	r.ID
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

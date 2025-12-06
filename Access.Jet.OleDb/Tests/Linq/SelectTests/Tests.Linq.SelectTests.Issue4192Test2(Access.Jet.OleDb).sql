@@ -1,9 +1,9 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 12
 
 SELECT
+	[i].[Id],
 	[i].[Name],
 	[i].[ParentId]
 FROM

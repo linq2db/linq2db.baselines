@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Type NVarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue NVarChar(9) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringValue
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @Type NVarChar(9) -- String
 SET     @Type = 'Child564B'
@@ -34,7 +32,6 @@ VALUES
 	@IntValue
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
 	g_2.ChildId,
@@ -17,7 +16,6 @@ GROUP BY
 	g_2.ChildId,
 	g_2.ParentId
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

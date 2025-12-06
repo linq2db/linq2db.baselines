@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -19,7 +18,6 @@ SET
 WHERE
 	[t].[id] = [c_1].[id] AND [t].[id] <> ?
 
-BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT

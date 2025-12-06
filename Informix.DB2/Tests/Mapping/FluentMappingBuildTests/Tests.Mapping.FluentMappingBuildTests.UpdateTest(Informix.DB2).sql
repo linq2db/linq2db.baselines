@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int          NOT NULL,
 	"Value"  NVarChar(20)     NULL,
-	LastName NVarChar(20)     NULL
+	LastName NVarChar(20)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
@@ -30,7 +30,6 @@ VALUES
 	@LastName
 )
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @Name VarChar(7) -- String
 SET     @Name = 'John II'
@@ -45,7 +44,6 @@ SET
 WHERE
 	t.ID = 1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS FluentTemp

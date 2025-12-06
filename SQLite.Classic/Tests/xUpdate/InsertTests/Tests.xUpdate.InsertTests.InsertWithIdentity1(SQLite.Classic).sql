@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 INSERT INTO [Person]
@@ -22,12 +20,10 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -42,7 +38,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 LIMIT 2
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 DELETE FROM

@@ -1,8 +1,7 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 SELECT
-	STRING_AGG([t].[Value1], N' -> ')
+	STRING_AGG([t1].[Value1], N' -> ')
 FROM
-	[SampleClass] [t]
+	[SampleClass] [t1]
 

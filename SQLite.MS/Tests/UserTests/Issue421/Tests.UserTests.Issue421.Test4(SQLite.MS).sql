@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [BlobClass]
 (
@@ -12,7 +11,6 @@ VALUES
 	X'010203'
 )
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -24,7 +22,6 @@ WHERE
 	[t1].[Id] = 1
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

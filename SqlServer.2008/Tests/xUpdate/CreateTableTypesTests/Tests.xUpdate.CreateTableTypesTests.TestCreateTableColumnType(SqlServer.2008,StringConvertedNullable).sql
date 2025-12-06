@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarChar(4000) -- String
@@ -16,7 +15,6 @@ VALUES
 	@StringConverted
 )
 
-BeforeExecute
 -- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -34,7 +32,6 @@ VALUES
 	@StringConverted
 )
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT

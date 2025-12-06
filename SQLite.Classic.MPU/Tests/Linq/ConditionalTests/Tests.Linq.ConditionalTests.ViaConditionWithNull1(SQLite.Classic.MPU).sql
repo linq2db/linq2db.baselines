@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[x].[Id],
@@ -11,12 +10,8 @@ SELECT
 FROM
 	[ConditionalData] [x]
 WHERE
-	CASE
-		WHEN [x].[StringProp] = '1' THEN NULL
-		ELSE [x].[StringProp]
-	END LIKE '%2%' ESCAPE '~'
+	NULLIF([x].[StringProp], '1') LIKE '%2%' ESCAPE '~'
 
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

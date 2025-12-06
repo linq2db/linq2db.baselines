@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id`,
@@ -9,28 +6,17 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`
 FROM
 	`Table404One` `t1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cond Int32
 SET     @cond = 0
 
@@ -40,30 +26,19 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 WHERE
 	`d`.`Usage` = @cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`
 FROM
 	`Table404One` `t1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cond Int32
 SET     @cond = 1
 
@@ -73,30 +48,19 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 WHERE
 	`d`.`Usage` = @cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`
 FROM
 	`Table404One` `t1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id`,
@@ -104,28 +68,17 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`
 FROM
 	`Table404One` `t1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cond Int32
 SET     @cond = 0
 
@@ -135,30 +88,19 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 WHERE
 	`d`.`Usage` = @cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`
 FROM
 	`Table404One` `t1`
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @cond Int32
 SET     @cond = 1
 
@@ -168,20 +110,12 @@ SELECT
 	`d`.`Usage`,
 	`d`.`FirstTableId`
 FROM
-	(
-		SELECT DISTINCT
-			`t1`.`Id`
-		FROM
-			`Table404One` `t1`
-	) `m_1`
+	`Table404One` `m_1`
 		INNER JOIN `Table404Two` `d` ON `m_1`.`Id` = `d`.`FirstTableId`
 WHERE
 	`d`.`Usage` = @cond
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`

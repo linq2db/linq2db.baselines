@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM

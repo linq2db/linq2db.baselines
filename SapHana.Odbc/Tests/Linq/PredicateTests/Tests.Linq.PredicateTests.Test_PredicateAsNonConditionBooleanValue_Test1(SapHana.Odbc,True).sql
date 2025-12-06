@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"r"."Id",
@@ -108,7 +107,6 @@ FROM
 WHERE
 	"r"."Id" <> -1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

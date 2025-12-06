@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @dateTime Date -- DateTime
 SET     @dateTime = #1992-01-11 01:11:21#
 
@@ -10,7 +9,6 @@ FROM
 WHERE
 	[t].[DateTimeValue] > @dateTime
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @dateTime Date -- DateTime
 SET     @dateTime = #1993-01-11 01:11:21#

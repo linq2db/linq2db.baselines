@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- Firebird.3 Firebird3
+﻿-- Firebird.3 Firebird3
 
 SELECT
 	LEAD("p"."ProcessName", 2) OVER(ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -14,7 +12,6 @@ SELECT
 FROM
 	"Issue1799Table3" "p"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT
@@ -22,7 +19,6 @@ SELECT
 FROM
 	"Issue1799Table3" "p"
 
-BeforeExecute
 -- Firebird.3 Firebird3
 
 SELECT

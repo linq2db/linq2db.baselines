@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+﻿-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -12,8 +11,7 @@ VALUES
 	@Id
 )
 
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+-- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 

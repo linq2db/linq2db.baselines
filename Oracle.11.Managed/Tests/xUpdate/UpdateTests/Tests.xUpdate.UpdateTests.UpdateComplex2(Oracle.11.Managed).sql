@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(13) -- String
@@ -28,7 +27,6 @@ VALUES
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
@@ -38,7 +36,6 @@ SET
 WHERE
 	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 5

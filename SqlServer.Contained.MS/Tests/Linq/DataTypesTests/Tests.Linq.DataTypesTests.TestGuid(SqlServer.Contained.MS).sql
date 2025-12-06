@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+﻿-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -14,7 +13,6 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -27,14 +25,12 @@ WHERE
 	[r].[Column] = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -56,7 +52,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
@@ -78,7 +73,6 @@ VALUES
 	@ColumnNullable
 )
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -90,14 +84,12 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [GuidTable]
@@ -110,7 +102,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL),
 (2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
@@ -122,17 +113,14 @@ FROM
 ORDER BY
 	[t1].[Id]
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
-BeforeExecute
 INSERT BULK [GuidTable](Id, Column, ColumnNullable)
 
-BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT

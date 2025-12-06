@@ -1,84 +1,67 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Parent;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Child;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS GrandChild;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS InheritanceParent;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS InheritanceChild;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Doctor;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Patient;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS Person;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS LinqDataTypes;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS AllTypes;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS CollatedTable;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestMerge1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestMerge2;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE Parent      (ParentID Int32, Value1 Nullable(Int32)) ENGINE = Memory();
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE Child       (ParentID Int32, ChildID Int32) ENGINE = Memory();
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE GrandChild  (ParentID Int32, ChildID Int32, GrandChildID Int32) ENGINE = Memory();
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE LinqDataTypes
@@ -96,7 +79,6 @@ CREATE TABLE LinqDataTypes
 	StringValue    Nullable(String)
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE InheritanceParent
@@ -106,7 +88,6 @@ CREATE TABLE InheritanceParent
 	Name                Nullable(String)
 ) ENGINE = MergeTree() ORDER BY InheritanceParentId PRIMARY KEY InheritanceParentId;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE InheritanceChild
@@ -117,7 +98,6 @@ CREATE TABLE InheritanceChild
 	Name                Nullable(String)
 ) ENGINE = MergeTree() ORDER BY InheritanceChildId PRIMARY KEY InheritanceChildId;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE Person
@@ -130,7 +110,6 @@ CREATE TABLE Person
 	CONSTRAINT CK_Person_Gender CHECK (Gender in ('M', 'F', 'U', 'O'))
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
@@ -140,7 +119,6 @@ INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	(3, 'Jane',   'Doe',       NULL, 'F'),
 	(4, 'Jürgen', 'König',     'Ko', 'M');
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE Doctor
@@ -149,12 +127,10 @@ CREATE TABLE Doctor
 	Taxonomy String
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry');
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE Patient
@@ -163,12 +139,10 @@ CREATE TABLE Patient
 	Diagnosis String
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE AllTypes
@@ -190,7 +164,6 @@ CREATE TABLE AllTypes
 
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 INSERT INTO AllTypes
@@ -210,7 +183,6 @@ SELECT	2,
 		20.31, 16.2,
 		'23233', 'тест', '234', '1'
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE CollatedTable
@@ -220,7 +192,6 @@ CREATE TABLE CollatedTable
 	CaseInsensitive Nullable(String)
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE TestMerge1
@@ -251,7 +222,6 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber Nullable(Int32)
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE TestMerge2
@@ -282,12 +252,10 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber Nullable(Int32)
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS ReplacingMergeTreeTable;
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 CREATE TABLE ReplacingMergeTreeTable
@@ -299,21 +267,15 @@ ENGINE = ReplacingMergeTree(TS)
 PARTITION BY toDate(TS)
 ORDER BY ID;
 
-BeforeExecute
 INSERT INTO LinqDataTypes(ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue) VALUES
 
-BeforeExecute
 INSERT INTO Parent(ParentID, Value1) VALUES
 
-BeforeExecute
 INSERT INTO Child(ParentID, ChildID) VALUES
 
-BeforeExecute
 INSERT INTO GrandChild(ParentID, ChildID, GrandChildID) VALUES
 
-BeforeExecute
 INSERT INTO InheritanceParent(InheritanceParentId, TypeDiscriminator, Name) VALUES
 
-BeforeExecute
 INSERT INTO InheritanceChild(InheritanceChildId, TypeDiscriminator, InheritanceParentId, Name) VALUES
 

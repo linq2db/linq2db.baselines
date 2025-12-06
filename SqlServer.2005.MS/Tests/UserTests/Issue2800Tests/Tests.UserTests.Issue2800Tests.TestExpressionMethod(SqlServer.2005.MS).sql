@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[x].[Id],
@@ -7,7 +6,6 @@ SELECT
 FROM
 	[Car] [x]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -16,7 +14,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -27,7 +24,6 @@ FROM
 WHERE
 	[x].[Name] <> N'Special' OR [x].[Name] IS NULL
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -36,7 +32,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -47,7 +42,6 @@ FROM
 WHERE
 	[x].[Name] = N'Special'
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -56,7 +50,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -65,7 +58,6 @@ SELECT
 FROM
 	[Car] [x]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -74,7 +66,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -85,7 +76,6 @@ FROM
 WHERE
 	[x].[Name] <> N'Special' OR [x].[Name] IS NULL
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -94,7 +84,6 @@ SELECT
 FROM
 	[Car] [t1]
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
@@ -105,7 +94,6 @@ FROM
 WHERE
 	[x].[Name] = N'Special'
 
-BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
@@ -33,7 +31,6 @@ VALUES
 	@Name_LastName
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -43,7 +40,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Person]

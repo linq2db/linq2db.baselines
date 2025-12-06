@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -12,7 +11,6 @@ FROM
 WHERE
 	s.CEnum IN (@In, @In_1)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -26,7 +24,6 @@ FROM
 WHERE
 	s.CEnum IN (@In, @In_1)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
@@ -40,7 +37,6 @@ FROM
 WHERE
 	s.CEnum IN (@In, @In_1)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
@@ -54,7 +50,6 @@ FROM
 WHERE
 	s.CEnum NOT IN (@NotIn, @NotIn_1)
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value3___'

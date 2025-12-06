@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))

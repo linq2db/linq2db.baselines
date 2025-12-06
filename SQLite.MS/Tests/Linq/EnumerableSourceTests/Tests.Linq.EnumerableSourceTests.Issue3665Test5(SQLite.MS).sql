@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[y].[item]
@@ -12,7 +11,6 @@ FROM
 				('M'), ('F'), ('U'), ('O')
 			) [y]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

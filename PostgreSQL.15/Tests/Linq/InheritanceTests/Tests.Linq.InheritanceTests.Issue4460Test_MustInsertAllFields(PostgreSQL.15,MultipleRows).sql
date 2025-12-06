@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Issue4460Table"
 (
@@ -11,7 +10,6 @@ INSERT INTO "Issue4460Table"
 VALUES
 (1,'GrandChild','Tom','Black')
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT

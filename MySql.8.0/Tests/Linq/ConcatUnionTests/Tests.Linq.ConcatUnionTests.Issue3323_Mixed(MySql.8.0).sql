@@ -1,10 +1,9 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Issue3323Table`
 (
 	`Id`,
-	`FistName`,
+	`FirstName`,
 	`LastName`,
 	`Text`
 )
@@ -16,12 +15,11 @@ VALUES
 	'text'
 )
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`r`.`Id`,
-	Concat(`r`.`FistName`, ' ', `r`.`LastName`)
+	Concat(`r`.`FirstName`, ' ', `r`.`LastName`)
 FROM
 	`Issue3323Table` `r`
 UNION ALL
@@ -31,7 +29,6 @@ SELECT
 FROM
 	`Issue3323Table` `r_1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -42,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	`r_1`.`Id`,
-	Concat(`r_1`.`FistName`, ' ', `r_1`.`LastName`)
+	Concat(`r_1`.`FirstName`, ' ', `r_1`.`LastName`)
 FROM
 	`Issue3323Table` `r_1`
 

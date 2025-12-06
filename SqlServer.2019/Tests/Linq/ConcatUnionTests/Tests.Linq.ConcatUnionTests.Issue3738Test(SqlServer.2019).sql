@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	N'I-' + CAST([x].[PersonID] AS NVarChar(11)),

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Date_1 Date
 SET     @Date_1 = TIMESTAMP '2020-01-03 00:00:00.000000'
 DECLARE @DateTime TimeStamp -- DateTime
@@ -52,7 +51,6 @@ VALUES
 	:DateTimeOffset_9
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -70,7 +68,6 @@ SELECT
 FROM
 	"Test0431" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDate Date
 SET     @pDate = TIMESTAMP '2020-01-03 00:00:00.000000'
@@ -92,7 +89,6 @@ FROM
 WHERE
 	r."Date" = :pDate
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
@@ -114,7 +110,6 @@ FROM
 WHERE
 	r."DateTime" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
@@ -136,7 +131,6 @@ FROM
 WHERE
 	r."DateTime_" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
@@ -158,7 +152,6 @@ FROM
 WHERE
 	r."DateTime2" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.000000'
@@ -180,7 +173,6 @@ FROM
 WHERE
 	r."DateTime2_0" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.700000'
@@ -202,7 +194,6 @@ FROM
 WHERE
 	r."DateTime2_1" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTime TimeStamp -- DateTime
 SET     @pDateTime = TIMESTAMP '2020-01-03 04:05:06.789123'
@@ -224,7 +215,6 @@ FROM
 WHERE
 	r."DateTime2_9" = :pDateTime
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.789123 +00:45
@@ -246,7 +236,6 @@ FROM
 WHERE
 	r."DateTimeOffset_" = :pDateTimeOffset
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06 +00:45
@@ -268,7 +257,6 @@ FROM
 WHERE
 	r."DateTimeOffset_0" = :pDateTimeOffset
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7 +00:45
@@ -290,7 +278,6 @@ FROM
 WHERE
 	r."DateTimeOffset_1" = :pDateTimeOffset
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @pDateTimeOffset TimeStampTZ -- DateTimeOffset
 SET     @pDateTimeOffset = 01/03/2020 04:05:06.7891234 +00:45

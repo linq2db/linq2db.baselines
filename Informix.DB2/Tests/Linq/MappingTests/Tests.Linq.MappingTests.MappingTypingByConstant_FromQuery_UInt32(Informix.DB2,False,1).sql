@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @value BigInt(4) -- Int64
 SET     @value = 1
 
@@ -15,7 +14,6 @@ FROM
 			Person r
 	) t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value BigInt(4) -- Int64
 SET     @value = 2147483648

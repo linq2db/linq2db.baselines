@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1855Table
 (
@@ -14,7 +13,6 @@ VALUES
 	toDateTime64('2019-08-08 08:08:08.0000000', 7)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 INSERT INTO Issue1855Table
@@ -28,7 +26,6 @@ VALUES
 	toDateTime64('2019-08-08 08:08:08.0000000', 7)
 )
 
-BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT

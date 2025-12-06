@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -20,7 +17,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -30,5 +26,3 @@ FROM
 	[Parent] [t]
 LIMIT 1
 
-BeforeExecute
-DisposeTransaction

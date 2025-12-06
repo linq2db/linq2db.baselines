@@ -1,21 +1,4 @@
-﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [xxPatient]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int           NOT NULL,
-	[Diagnosis] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY ([PersonID])
-)
-
-BeforeExecute
--- SqlCe
+﻿-- SqlCe
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -28,7 +11,6 @@ SET
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
-BeforeExecute
 -- SqlCe
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
@@ -46,7 +28,6 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
 -- SqlCe
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
@@ -60,7 +41,6 @@ SET
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
-BeforeExecute
 -- SqlCe
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
@@ -78,15 +58,13 @@ VALUES
 	@Diagnosis
 )
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPatient] [t1]
 
-BeforeExecute
 -- SqlCe
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
@@ -100,7 +78,6 @@ SET
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
-BeforeExecute
 -- SqlCe
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
@@ -114,16 +91,10 @@ SET
 WHERE
 	[xxPatient].[PersonID] = @PersonID
 
-BeforeExecute
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPatient] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [xxPatient]
 

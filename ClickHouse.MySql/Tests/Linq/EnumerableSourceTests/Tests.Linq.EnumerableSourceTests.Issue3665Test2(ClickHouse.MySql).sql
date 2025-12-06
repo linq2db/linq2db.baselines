@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	x.PersonID + y.item
@@ -14,7 +13,6 @@ FROM
 			UNION ALL
 			SELECT 3) y
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

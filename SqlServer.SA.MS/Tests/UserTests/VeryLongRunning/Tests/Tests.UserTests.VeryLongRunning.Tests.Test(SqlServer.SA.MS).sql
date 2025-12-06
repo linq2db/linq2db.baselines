@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+﻿-- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl0101]
 (
@@ -15,7 +14,6 @@ CREATE TABLE [tempdb]..[#tbl0101]
 	PRIMARY KEY CLUSTERED ([Column1])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl0202]
@@ -29,7 +27,6 @@ CREATE TABLE [tempdb]..[#tbl0202]
 	PRIMARY KEY CLUSTERED ([Column1], [Column2], [Column3], [Column4])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl3333]
@@ -41,7 +38,6 @@ CREATE TABLE [tempdb]..[#tbl3333]
 	PRIMARY KEY CLUSTERED ([Column1])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl4444]
@@ -52,7 +48,6 @@ CREATE TABLE [tempdb]..[#tbl4444]
 	PRIMARY KEY CLUSTERED ([Column1], [Column2])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl5555]
@@ -65,7 +60,6 @@ CREATE TABLE [tempdb]..[#tbl5555]
 	PRIMARY KEY CLUSTERED ([Column1], [Column2], [Column4])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl6666]
@@ -79,7 +73,6 @@ CREATE TABLE [tempdb]..[#tbl6666]
 	PRIMARY KEY CLUSTERED ([Column1], [Column4], [Column6])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl7777]
@@ -95,7 +88,6 @@ CREATE TABLE [tempdb]..[#tbl7777]
 	PRIMARY KEY CLUSTERED ([Column1], [Column2])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl9999]
@@ -114,7 +106,6 @@ CREATE TABLE [tempdb]..[#tbl9999]
 	PRIMARY KEY CLUSTERED ([Column1], [Column4])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1010]
@@ -129,7 +120,6 @@ CREATE TABLE [tempdb]..[#tbl1010]
 	[Column8] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1212]
@@ -144,7 +134,6 @@ CREATE TABLE [tempdb]..[#tbl1212]
 	PRIMARY KEY CLUSTERED ([Column1], [Column2], [Column3], [Column6], [Column4])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1313]
@@ -157,7 +146,6 @@ CREATE TABLE [tempdb]..[#tbl1313]
 	PRIMARY KEY CLUSTERED ([Column1], [Column4])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1515]
@@ -172,7 +160,6 @@ CREATE TABLE [tempdb]..[#tbl1515]
 	PRIMARY KEY CLUSTERED ([Column1])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1414]
@@ -182,7 +169,6 @@ CREATE TABLE [tempdb]..[#tbl1414]
 	PRIMARY KEY CLUSTERED ([Column1])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 30, 0, 0, 0, 0, 7)
@@ -193,35 +179,44 @@ SELECT
 	[t].[Column1],
 	CASE
 		WHEN [r].[Column4] IS NOT NULL THEN [r].[Column4]
-		WHEN [i].[Column8] IS NULL AND ([rd].[Column4] IS NOT NULL OR [rd2].[Column4] IS NOT NULL)
-			THEN IIF([rd].[Column4] IS NOT NULL, [rd].[Column4], [rd2].[Column4])
+		WHEN [i].[Column8] IS NULL AND ([i].[Column4] IS NOT NULL OR [i].[Column4_1] IS NOT NULL)
+			THEN IIF([i].[Column4] IS NOT NULL, [i].[Column4], [i].[Column4_1])
 		ELSE [i].[Column8]
 	END
 FROM
-	[tempdb]..[#tbl9999] [i]
-		LEFT JOIN (
-			SELECT
-				[g_1].[Column3] as [Key_1],
-				MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_1]
-			WHERE
-				[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
-				[g_1].[Column3] IS NOT NULL
-			GROUP BY
-				[g_1].[Column3]
-		) [rd] ON [i].[Column2] = [rd].[Key_1] OR [i].[Column2] IS NULL AND [rd].[Key_1] IS NULL
-		LEFT JOIN (
-			SELECT
-				MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_2]
-			WHERE
-				[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
-				[g_2].[Column3] IS NULL
-			GROUP BY
-				[g_2].[Column3]
-		) [rd2] ON 1=1
+	(
+		SELECT
+			[id].[Column1],
+			[id].[Column8],
+			[rd].[Column4],
+			(
+				SELECT
+					MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL))
+				FROM
+					[tempdb]..[#tbl1515] [g_2]
+				WHERE
+					[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
+					[g_2].[Column3] IS NULL
+				GROUP BY
+					[g_2].[Column3]
+			) as [Column4_1]
+		FROM
+			[tempdb]..[#tbl9999] [id]
+				LEFT JOIN (
+					SELECT
+						[g_1].[Column3] as [Key_1],
+						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
+					FROM
+						[tempdb]..[#tbl1515] [g_1]
+					WHERE
+						[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
+						[g_1].[Column3] IS NOT NULL
+					GROUP BY
+						[g_1].[Column3]
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
+		WHERE
+			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
+	) [i]
 		LEFT JOIN (
 			SELECT
 				[g_3].[Column2] as [Key_1],
@@ -237,15 +232,11 @@ FROM
 				[g_3].[Column2]
 		) [r] ON [i].[Column1] = [r].[Key_1]
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
-WHERE
-	[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1414]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp001]
@@ -253,7 +244,6 @@ CREATE TABLE [tempdb]..[#tmp001]
 	[Column6] BigInt NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -275,7 +265,6 @@ FROM
 WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp002]
@@ -287,7 +276,6 @@ CREATE TABLE [tempdb]..[#tmp002]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -322,7 +310,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp003]
@@ -335,7 +322,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 	PRIMARY KEY CLUSTERED ([Column2], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp003]
@@ -375,7 +361,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp004]
@@ -383,7 +368,6 @@ CREATE TABLE [tempdb]..[#tmp004]
 	[Column2] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp004]
@@ -395,7 +379,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp003] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -406,7 +389,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -447,7 +429,6 @@ WHERE
 	[p].[Column1] = @date
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -463,32 +444,26 @@ FROM
 WHERE
 	[pc].[Column1] = @date
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp001]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp005]
@@ -496,7 +471,6 @@ CREATE TABLE [tempdb]..[#tmp005]
 	[Column4] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp005]
@@ -508,7 +482,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tbl7777] [pc]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp002]
@@ -520,7 +493,6 @@ CREATE TABLE [tempdb]..[#tmp002]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -558,7 +530,6 @@ WHERE
 	[t].[Column2] IS NOT NULL AND
 	[i].[Column2] = 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp003]
@@ -571,7 +542,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 	PRIMARY KEY CLUSTERED ([Column2], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp003]
@@ -611,7 +581,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp004]
@@ -619,7 +588,6 @@ CREATE TABLE [tempdb]..[#tmp004]
 	[Column2] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp004]
@@ -631,7 +599,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp003] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -642,7 +609,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -683,7 +649,6 @@ WHERE
 	[p].[Column1] = @date
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -699,27 +664,22 @@ FROM
 WHERE
 	[pc].[Column1] = @date
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -731,7 +691,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -768,7 +727,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -781,7 +739,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -821,7 +778,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -829,7 +785,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -841,7 +796,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -852,7 +806,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -898,7 +851,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -927,27 +879,22 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -959,7 +906,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -996,7 +942,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -1009,7 +954,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -1049,7 +993,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -1057,7 +1000,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -1069,7 +1011,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -1080,7 +1021,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -1126,7 +1066,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -1155,27 +1094,22 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -1187,7 +1121,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -1229,7 +1162,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -1242,7 +1174,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -1282,7 +1213,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -1290,7 +1220,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -1302,7 +1231,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -1313,7 +1241,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -1359,7 +1286,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 23, 0, 0, 0, 0, 7)
@@ -1388,32 +1314,26 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp005]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl1414]
@@ -1423,7 +1343,6 @@ CREATE TABLE [tempdb]..[#tbl1414]
 	PRIMARY KEY CLUSTERED ([Column1])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 30, 0, 0, 0, 0, 7)
@@ -1434,35 +1353,44 @@ SELECT
 	[t].[Column1],
 	CASE
 		WHEN [r].[Column4] IS NOT NULL THEN [r].[Column4]
-		WHEN [i].[Column8] IS NULL AND ([rd].[Column4] IS NOT NULL OR [rd2].[Column4] IS NOT NULL)
-			THEN IIF([rd].[Column4] IS NOT NULL, [rd].[Column4], [rd2].[Column4])
+		WHEN [i].[Column8] IS NULL AND ([i].[Column4] IS NOT NULL OR [i].[Column4_1] IS NOT NULL)
+			THEN IIF([i].[Column4] IS NOT NULL, [i].[Column4], [i].[Column4_1])
 		ELSE [i].[Column8]
 	END
 FROM
-	[tempdb]..[#tbl9999] [i]
-		LEFT JOIN (
-			SELECT
-				[g_1].[Column3] as [Key_1],
-				MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_1]
-			WHERE
-				[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
-				[g_1].[Column3] IS NOT NULL
-			GROUP BY
-				[g_1].[Column3]
-		) [rd] ON [i].[Column2] = [rd].[Key_1] OR [i].[Column2] IS NULL AND [rd].[Key_1] IS NULL
-		LEFT JOIN (
-			SELECT
-				MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_2]
-			WHERE
-				[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
-				[g_2].[Column3] IS NULL
-			GROUP BY
-				[g_2].[Column3]
-		) [rd2] ON 1=1
+	(
+		SELECT
+			[id].[Column1],
+			[id].[Column8],
+			[rd].[Column4],
+			(
+				SELECT
+					MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL))
+				FROM
+					[tempdb]..[#tbl1515] [g_2]
+				WHERE
+					[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
+					[g_2].[Column3] IS NULL
+				GROUP BY
+					[g_2].[Column3]
+			) as [Column4_1]
+		FROM
+			[tempdb]..[#tbl9999] [id]
+				LEFT JOIN (
+					SELECT
+						[g_1].[Column3] as [Key_1],
+						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
+					FROM
+						[tempdb]..[#tbl1515] [g_1]
+					WHERE
+						[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
+						[g_1].[Column3] IS NOT NULL
+					GROUP BY
+						[g_1].[Column3]
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
+		WHERE
+			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
+	) [i]
 		LEFT JOIN (
 			SELECT
 				[g_3].[Column2] as [Key_1],
@@ -1478,15 +1406,11 @@ FROM
 				[g_3].[Column2]
 		) [r] ON [i].[Column1] = [r].[Key_1]
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
-WHERE
-	[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1414]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp001]
@@ -1494,7 +1418,6 @@ CREATE TABLE [tempdb]..[#tmp001]
 	[Column6] BigInt NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1516,7 +1439,6 @@ FROM
 WHERE
 	[ex].[Column4] <= @date AND ([ex].[Column5] IS NULL OR [ex].[Column5] > @date)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp002]
@@ -1528,7 +1450,6 @@ CREATE TABLE [tempdb]..[#tmp002]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1563,7 +1484,6 @@ WHERE
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
 	([e].[Column2] IS NOT NULL OR [be].[Column2] IS NOT NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp003]
@@ -1576,7 +1496,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 	PRIMARY KEY CLUSTERED ([Column2], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp003]
@@ -1616,7 +1535,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp004]
@@ -1624,7 +1542,6 @@ CREATE TABLE [tempdb]..[#tmp004]
 	[Column2] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp004]
@@ -1636,7 +1553,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp003] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -1647,7 +1563,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1688,7 +1603,6 @@ WHERE
 	[p].[Column1] = @date
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1704,32 +1618,26 @@ FROM
 WHERE
 	[pc].[Column1] = @date
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp001]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp005]
@@ -1737,7 +1645,6 @@ CREATE TABLE [tempdb]..[#tmp005]
 	[Column4] Int NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp005]
@@ -1749,7 +1656,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tbl7777] [pc]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp002]
@@ -1761,7 +1667,6 @@ CREATE TABLE [tempdb]..[#tmp002]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1799,7 +1704,6 @@ WHERE
 	[t].[Column2] IS NOT NULL AND
 	[i].[Column2] = 1
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp003]
@@ -1812,7 +1716,6 @@ CREATE TABLE [tempdb]..[#tmp003]
 	PRIMARY KEY CLUSTERED ([Column2], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp003]
@@ -1852,7 +1755,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp004]
@@ -1860,7 +1762,6 @@ CREATE TABLE [tempdb]..[#tmp004]
 	[Column2] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp004]
@@ -1872,7 +1773,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp003] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -1883,7 +1783,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1924,7 +1823,6 @@ WHERE
 	[p].[Column1] = @date
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -1940,27 +1838,22 @@ FROM
 WHERE
 	[pc].[Column1] = @date
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp004]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp003]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp002]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -1972,7 +1865,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2009,7 +1901,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -2022,7 +1913,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -2062,7 +1952,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -2070,7 +1959,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -2082,7 +1970,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -2093,7 +1980,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2139,7 +2025,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2168,27 +2053,22 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -2200,7 +2080,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2237,7 +2116,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -2250,7 +2128,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -2290,7 +2167,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -2298,7 +2174,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -2310,7 +2185,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -2321,7 +2195,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2367,7 +2240,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2396,27 +2268,22 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp006]
@@ -2428,7 +2295,6 @@ CREATE TABLE [tempdb]..[#tmp006]
 	[Prop3]   BigInt         NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2470,7 +2336,6 @@ WHERE
 	[t].[Column3] IS NOT NULL AND
 	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp007]
@@ -2483,7 +2348,6 @@ CREATE TABLE [tempdb]..[#tmp007]
 	PRIMARY KEY CLUSTERED ([Column3], [Prop3])
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp007]
@@ -2523,7 +2387,6 @@ FROM
 		) [lp_1]
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tmp008]
@@ -2531,7 +2394,6 @@ CREATE TABLE [tempdb]..[#tmp008]
 	[ISIN] NVarChar(4000) NOT NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [tempdb]..[#tmp008]
@@ -2543,7 +2405,6 @@ SELECT DISTINCT
 FROM
 	[tempdb]..[#tmp007] [t]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#tbl8888]
@@ -2554,7 +2415,6 @@ CREATE TABLE [tempdb]..[#tbl8888]
 	[Column4] VarChar(20)        NULL
 )
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2600,7 +2460,6 @@ WHERE
 	[r].[Column6] IS NULL
 OPTION (RECOMPILE)
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @date Date
 SET     @date = DATETIME2FROMPARTS(2018, 11, 27, 0, 0, 0, 0, 7)
@@ -2629,87 +2488,70 @@ WHERE
 	[r_1].[Column6] IS NULL AND [u].[Column1] = [r_1].[Column1_1] AND
 	[u].[Column2] = [r_1].[Column2]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl8888]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp008]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp007]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp006]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tmp005]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1515]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1313]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1212]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl1010]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl9999]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl7777]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl6666]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl5555]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl4444]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl3333]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl0202]
 
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#tbl0101]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2005
+﻿-- SqlServer.2005
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -8,7 +7,6 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT
@@ -19,7 +17,6 @@ WHERE
 	Lower([p].[FirstName]) LIKE N'joh%' ESCAPE N'~' AND
 	[p].[PersonID] = 1
 
-BeforeExecute
 -- SqlServer.2005
 
 SELECT

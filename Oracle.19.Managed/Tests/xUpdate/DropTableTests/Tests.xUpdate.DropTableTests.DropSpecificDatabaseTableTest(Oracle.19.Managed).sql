@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTest"';
@@ -10,7 +9,6 @@ EXCEPTION
 		END IF;
 END;
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -19,15 +17,15 @@ FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "DropTableTest"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY (ID)
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 INSERT INTO SYSTEM."DropTableTest"
@@ -39,7 +37,6 @@ VALUES
 	123
 )
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -47,12 +44,10 @@ SELECT
 FROM
 	SYSTEM."DropTableTest" t1
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP TABLE SYSTEM."DropTableTest"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	To_Date(Add_Months("t"."DateTimeValue", "t"."SmallIntValue" * 3))

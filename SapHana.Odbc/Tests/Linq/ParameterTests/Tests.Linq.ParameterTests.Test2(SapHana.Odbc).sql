@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id1 Int -- Int32
@@ -18,7 +17,6 @@ ORDER BY
 	"p"."ParentID"
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2

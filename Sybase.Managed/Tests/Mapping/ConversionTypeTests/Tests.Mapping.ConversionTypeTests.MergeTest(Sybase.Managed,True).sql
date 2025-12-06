@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 MERGE INTO [TrimTestTable] [Target]
 USING (
@@ -29,7 +28,6 @@ VALUES
 	[Source].[Data_1]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 MERGE INTO [TrimTestTable] [Target]
@@ -58,7 +56,6 @@ VALUES
 	[Source].[Data_1]
 )
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
@@ -69,7 +66,6 @@ FROM
 ORDER BY
 	[r].[ID]
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

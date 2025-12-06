@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Sybase.Managed Sybase
+﻿-- Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -108,7 +107,6 @@ FROM
 WHERE
 	[r].[Id] <> -1
 
-BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @search Varchar2(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Varchar2(4) -- String

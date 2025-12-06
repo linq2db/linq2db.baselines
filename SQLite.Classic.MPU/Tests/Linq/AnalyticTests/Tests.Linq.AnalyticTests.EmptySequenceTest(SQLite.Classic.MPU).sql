@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
-	[d_1].[ToValue]
+	[d_1].[Children]
 FROM
 	(
 		SELECT DISTINCT
@@ -17,16 +14,13 @@ FROM
 		INNER JOIN (
 			SELECT
 				[d].[ParentID] as [Key_1],
-				GROUP_CONCAT(CAST([d].[ChildID] AS NVarChar(11)), ', ') as [ToValue]
+				GROUP_CONCAT(CAST([d].[ChildID] AS NVarChar(11)), ', ') as [Children]
 			FROM
 				[Child] [d]
 			GROUP BY
 				[d].[ParentID]
 		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT

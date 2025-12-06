@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	[c_1].[ParentID],
@@ -17,7 +16,6 @@ WHERE
 			[c_1].[ParentID] = [p].[Value1] OR [c_1].[ParentID] IS NULL AND [p].[Value1] IS NULL
 	)
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	[GrandChild] [t1]
 
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

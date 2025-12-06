@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -16,7 +15,6 @@ VALUES
 	@Value1
 )
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -28,7 +26,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 1
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
@@ -42,7 +39,6 @@ SET
 WHERE
 	[Parent].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1001
@@ -54,7 +50,6 @@ FROM
 WHERE
 	[p].[ParentID] = @id AND [p].[Value1] = 2
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
@@ -68,7 +63,6 @@ SET
 WHERE
 	[Parent].[ParentID] = @id
 
-BeforeExecute
 -- SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1001

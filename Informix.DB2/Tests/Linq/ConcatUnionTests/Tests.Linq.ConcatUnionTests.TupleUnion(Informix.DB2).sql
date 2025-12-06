@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 
 SELECT
 	p1.ParentID,
@@ -17,7 +16,6 @@ FROM
 WHERE
 	p2.ParentID <= 3
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

@@ -27,10 +27,9 @@ WHERE @__ef_filter__p_0 OR NOT ("o"."IsDeleted") OR NOT ("o"."IsDeleted")
 ORDER BY "o"."OrderID", "e0"."EmployeeID", "e2"."EmployeeID", "e2"."TerritoryID", "s"."OrderID", "s"."ProductID"
 
 
-BeginTransactionAsync(Serializable)
 
 
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[EmployeeId],
@@ -49,7 +48,7 @@ FROM
 
 
 
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[OrderId],
@@ -82,10 +81,9 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
--- SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite
 
 SELECT
 	[e].[IsDeleted],

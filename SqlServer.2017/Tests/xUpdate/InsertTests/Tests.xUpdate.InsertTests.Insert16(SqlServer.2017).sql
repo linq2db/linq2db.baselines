@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017
+﻿-- SqlServer.2017
 
 DELETE [t1]
 FROM
@@ -7,7 +6,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2017
 DECLARE @name Int -- Int32
 SET     @name = 8
@@ -27,7 +25,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SqlServer.2017
 
 SELECT
@@ -37,7 +34,6 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
-BeforeExecute
 -- SqlServer.2017
 
 DELETE [t1]

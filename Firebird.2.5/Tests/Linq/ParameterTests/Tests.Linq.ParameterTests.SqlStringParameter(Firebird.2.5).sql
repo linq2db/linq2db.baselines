@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Firebird.2.5 Firebird
+﻿-- Firebird.2.5 Firebird
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +13,6 @@ FROM
 WHERE
 	"t"."FirstName" = @p
 
-BeforeExecute
 -- Firebird.2.5 Firebird
 DECLARE @p VarChar(6) -- String
 SET     @p = 'Tester'

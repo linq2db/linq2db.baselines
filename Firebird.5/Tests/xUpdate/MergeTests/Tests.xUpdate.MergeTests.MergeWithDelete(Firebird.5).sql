@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Firebird.5 Firebird4
+﻿-- Firebird.5 Firebird4
 
 MERGE INTO "LinqDataTypes" "Target"
 USING (
@@ -76,5 +73,3 @@ VALUES
 
 WHEN NOT MATCHED BY SOURCE THEN DELETE
 
-BeforeExecute
-DisposeTransaction

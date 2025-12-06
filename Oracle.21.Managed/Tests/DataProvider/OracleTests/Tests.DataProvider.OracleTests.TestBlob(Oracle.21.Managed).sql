@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @blob Blob -- Object
 SET     @blob = Oracle.ManagedDataAccess.Types.OracleBlob
 
@@ -16,7 +13,6 @@ VALUES
 	:blob
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @blob Blob -- Object
 SET     @blob = Oracle.ManagedDataAccess.Types.OracleBlob
@@ -32,7 +28,6 @@ VALUES
 	:blob
 )
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -42,5 +37,4 @@ FROM
 WHERE
 	x.ID IN (-10, -20)
 
-BeforeExecute
 RollbackTransaction

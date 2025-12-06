@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 
 INSERT INTO [tempdb]..[#Orders]
 (

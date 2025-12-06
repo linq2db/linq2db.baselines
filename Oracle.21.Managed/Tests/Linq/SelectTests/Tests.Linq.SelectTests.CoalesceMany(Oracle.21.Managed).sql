@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	Coalesce(t."Nullable1", t."Nullable2", t."Nullable3", t."Id"),
@@ -13,7 +12,6 @@ SELECT
 FROM
 	"CoalesceNullableFields" t
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

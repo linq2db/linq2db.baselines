@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Raw(16) -- Binary
 SET     @Column_1 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @ColumnNullable Raw(16) -- Binary
@@ -14,7 +13,6 @@ FROM
 WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -27,13 +25,11 @@ WHERE
 	r."Column" = HEXTORAW('0D6048A921DE744F8AC29516B287076E') AND
 	r."ColumnNullable" = HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627')
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
@@ -55,7 +51,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
@@ -77,7 +72,6 @@ VALUES
 	:ColumnNullable
 )
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -89,13 +83,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -103,7 +95,6 @@ INSERT ALL
 	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (2,HEXTORAW('0D6048A921DE744F8AC29516B287076E'),HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627'))
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -115,13 +106,11 @@ FROM
 ORDER BY
 	t1."Id"
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
@@ -129,7 +118,6 @@ INSERT ALL
 	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (2,HEXTORAW('0D6048A921DE744F8AC29516B287076E'),HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627'))
 SELECT * FROM dual
 
-BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT

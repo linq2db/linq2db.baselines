@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+﻿-- Access.Jet.OleDb AccessOleDb
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32
@@ -21,7 +20,6 @@ FROM
 WHERE
 	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1
 
-BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @personId Integer -- Int32
 SET     @personId = 1

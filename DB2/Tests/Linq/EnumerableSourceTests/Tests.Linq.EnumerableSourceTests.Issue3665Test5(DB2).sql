@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"y"."item"
@@ -9,7 +8,6 @@ FROM
 		('M'), ('F'), ('U'), ('O')
 	) "y"("item")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

@@ -1,12 +1,10 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE
 	"t1"."ID" > 1000
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @data VarBinary -- Binary
 SET     @data = NULL
@@ -24,7 +22,6 @@ VALUES
 	1
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM

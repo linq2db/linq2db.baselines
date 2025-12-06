@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction
-BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[t1].[FirstName],
@@ -12,7 +9,6 @@ SELECT
 FROM
 	[Person] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -21,7 +17,6 @@ SELECT
 FROM
 	[Patient] [t1]
 
-BeforeExecute
 -- SqlServer.2008
 
 MERGE INTO [Person] [Target]
@@ -41,5 +36,3 @@ ON ([Target].[PersonID] = [Source].[ID])
 WHEN MATCHED AND [Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NULL THEN DELETE
 ;
 
-BeforeExecute
-DisposeTransaction

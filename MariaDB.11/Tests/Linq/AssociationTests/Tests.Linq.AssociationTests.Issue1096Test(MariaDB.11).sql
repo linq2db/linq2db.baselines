@@ -1,5 +1,6 @@
-﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @Pk Int32
+SET     @Pk = 1
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -7,35 +8,18 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO `Issue1096Task`
 (
+	`Pk`,
 	`Id`,
 	`TargetName`
 )
 VALUES
 (
+	@Pk,
 	@Id,
 	@TargetName
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @TargetName VarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO `Issue1096Task`
-(
-	`Id`,
-	`TargetName`
-)
-VALUES
-(
-	@Id,
-	@TargetName
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TaskId Int32
@@ -56,10 +40,10 @@ VALUES
 	@Actual
 )
 
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT DISTINCT
+	`t`.`Pk`,
 	`t`.`Id`,
 	`t`.`TargetName`,
 	`a_ActualStage`.`Id`,

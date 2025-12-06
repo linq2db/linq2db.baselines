@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title Varchar2(5) -- String
@@ -20,9 +19,6 @@ VALUES
 	:Text
 )
 
-BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -40,7 +36,6 @@ FROM
 	) m_1
 		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
-BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -53,5 +48,3 @@ WHERE
 	x."Id" = 6
 FETCH NEXT 1 ROWS ONLY
 
-BeforeExecute
-DisposeTransaction

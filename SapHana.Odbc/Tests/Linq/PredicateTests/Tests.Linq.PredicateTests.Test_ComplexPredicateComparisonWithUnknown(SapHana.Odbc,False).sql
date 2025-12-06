@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -8,7 +7,6 @@ FROM
 WHERE
 	"r"."Value1" = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -79,7 +77,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -91,7 +88,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -162,7 +158,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -174,7 +169,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -215,7 +209,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -227,7 +220,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -268,7 +260,6 @@ WHERE
 		ELSE NULL
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -280,7 +271,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -357,7 +347,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -369,7 +358,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -446,7 +434,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -458,7 +445,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -506,7 +492,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -518,7 +503,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -566,7 +550,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -578,7 +561,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -678,7 +660,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -690,7 +671,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -790,7 +770,6 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -802,7 +781,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -847,7 +825,6 @@ WHERE
 		ELSE 1
 	END = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -859,7 +836,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -904,7 +880,6 @@ WHERE
 		ELSE 1
 	END = 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -916,7 +891,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1021,7 +995,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1033,7 +1006,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1138,7 +1110,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1150,7 +1121,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1198,7 +1168,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1210,7 +1179,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1258,7 +1226,6 @@ WHERE
 		ELSE 1
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1270,7 +1237,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1293,7 +1259,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1305,7 +1270,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1328,7 +1292,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1340,7 +1303,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1363,7 +1325,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1375,7 +1336,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1398,7 +1358,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1410,7 +1369,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1433,7 +1391,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1445,7 +1402,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1468,7 +1424,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1480,7 +1435,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1503,7 +1457,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1515,7 +1468,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1538,7 +1490,6 @@ WHERE
 			"r_1"."Value1" = 1
 	) + "r"."Value5")
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1550,7 +1501,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1580,7 +1530,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1592,7 +1541,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1622,7 +1570,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1634,7 +1581,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1664,7 +1610,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1676,7 +1621,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1706,7 +1650,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1718,7 +1661,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1748,7 +1690,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1760,7 +1701,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1790,7 +1730,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1802,7 +1741,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1832,7 +1770,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -1844,7 +1781,6 @@ SELECT
 FROM
 	"BooleanTable" "t1"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
@@ -1874,7 +1810,6 @@ WHERE
 		ELSE 0
 	END
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

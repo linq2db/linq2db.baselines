@@ -27,10 +27,9 @@ WHERE (@__ef_filter__p_0 OR NOT (`o`.`IsDeleted`)) OR NOT (`o`.`IsDeleted`)
 ORDER BY `o`.`OrderID`, `e0`.`EmployeeID`, `e2`.`EmployeeID`, `e2`.`TerritoryID`, `s`.`OrderID`, `s`.`ProductID`
 
 
-BeginTransactionAsync(RepeatableRead)
 
 
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`EmployeeId`,
@@ -53,7 +52,7 @@ WHERE
 
 
 
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`m_1`.`OrderId`,
@@ -90,10 +89,9 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
--- MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`e`.`IsDeleted`,

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[r].[Id],
@@ -19,7 +18,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -31,7 +29,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -52,7 +49,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -64,7 +60,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -85,7 +80,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -97,7 +91,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -118,7 +111,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -130,7 +122,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -151,7 +142,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -163,7 +153,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -184,7 +173,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -196,7 +184,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -217,7 +204,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -229,7 +215,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -250,7 +235,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -262,7 +246,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -283,7 +266,6 @@ WHERE
 			[s].[Id] > [r].[Id]
 	)
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -295,7 +277,6 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
@@ -307,7 +288,6 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

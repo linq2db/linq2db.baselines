@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+﻿-- SqlServer.2017.MS SqlServer.2017
 
 UPDATE
 	[w]
@@ -11,9 +10,9 @@ FROM
 WHERE
 	[b].[ChildID] = (
 		SELECT
-			MAX([b2].[ParentID])
+			MAX([t1].[ParentID])
 		FROM
-			[Child] [b2]
+			[Child] [t1]
 	) AND
 	[b].[ChildID] = -1
 

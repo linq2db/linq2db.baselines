@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."FirstName",
@@ -18,7 +17,6 @@ FROM
 			UNION ALL
 			SELECT 'Doe' FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

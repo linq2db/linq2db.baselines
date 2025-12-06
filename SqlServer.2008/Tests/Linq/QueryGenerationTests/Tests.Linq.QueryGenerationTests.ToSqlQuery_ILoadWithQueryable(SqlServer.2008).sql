@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2008
+﻿-- SqlServer.2008
 
 SELECT
 	[p].[ParentID],
@@ -9,9 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
 -- SqlServer.2008
 
 SELECT
@@ -34,7 +30,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
-BeforeExecute
 -- SqlServer.2008
 
 SELECT TOP (2)
@@ -45,5 +40,3 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
-BeforeExecute
-DisposeTransaction

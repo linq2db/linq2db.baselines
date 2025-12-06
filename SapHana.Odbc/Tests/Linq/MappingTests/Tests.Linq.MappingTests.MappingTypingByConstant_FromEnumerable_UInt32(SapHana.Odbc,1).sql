@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"arg"."Id",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS "Id", CAST(1 AS BigInt) AS "Value" FROM DUMMY) "arg" ON "entity"."PersonID" = "arg"."Id"
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

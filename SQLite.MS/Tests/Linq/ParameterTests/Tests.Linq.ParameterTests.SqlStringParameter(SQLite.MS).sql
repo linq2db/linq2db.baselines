@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'
 
@@ -15,7 +14,6 @@ WHERE
 	[t].[FirstName] = @p
 LIMIT 2
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @p NVarChar(6) -- String
 SET     @p = 'Tester'

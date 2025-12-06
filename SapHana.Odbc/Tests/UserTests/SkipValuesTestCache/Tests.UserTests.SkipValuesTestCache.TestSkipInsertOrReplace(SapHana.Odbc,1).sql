@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Int -- Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -30,7 +28,6 @@ VALUES
 	?
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -43,7 +40,6 @@ WHERE
 	"t"."Id" = 1
 LIMIT 1
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
@@ -57,7 +53,6 @@ SET
 WHERE
 	"t1"."Id" = ?
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

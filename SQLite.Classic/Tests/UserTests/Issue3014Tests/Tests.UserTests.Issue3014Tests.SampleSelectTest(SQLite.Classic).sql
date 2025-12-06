@@ -1,16 +1,10 @@
-﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
--- SQLite.Classic SQLite
+﻿-- SQLite.Classic SQLite
 
 SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -18,9 +12,6 @@ SELECT
 FROM
 	[Table2_3014] [t]
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -28,9 +19,6 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -40,9 +28,6 @@ FROM
 WHERE
 	[x].[Id] = 0
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -50,9 +35,6 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -62,9 +44,6 @@ FROM
 WHERE
 	1 = 0
 
-BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
@@ -72,9 +51,6 @@ SELECT
 FROM
 	[TableStatus_3014] [x]
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT

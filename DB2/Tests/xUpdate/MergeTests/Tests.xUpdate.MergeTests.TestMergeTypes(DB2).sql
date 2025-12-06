@@ -1,16 +1,13 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge1" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"TestMerge2" "t1"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
@@ -92,7 +89,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
@@ -174,7 +170,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -258,7 +253,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -341,7 +335,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
@@ -423,7 +416,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
@@ -507,7 +499,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
@@ -589,7 +580,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
@@ -673,7 +663,6 @@ VALUES
 	@FieldEnumNumber
 )
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
@@ -700,7 +689,6 @@ FROM
 ORDER BY
 	"t1"."Id"
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

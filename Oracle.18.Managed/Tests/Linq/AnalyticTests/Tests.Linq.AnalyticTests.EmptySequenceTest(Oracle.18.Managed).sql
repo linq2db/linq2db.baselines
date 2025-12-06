@@ -1,12 +1,9 @@
-﻿BeforeExecute
-BeginTransaction(ReadCommitted)
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."ParentID",
 	d_1."Key_1",
-	d_1."ToValue"
+	d_1."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +14,7 @@ FROM
 		CROSS APPLY (
 			SELECT
 				d."ParentID" as "Key_1",
-				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY ROWNUM) as "ToValue"
+				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(d."ChildID" AS VarChar(255))) as "Children"
 			FROM
 				"Child" d
 			WHERE
@@ -26,9 +23,6 @@ FROM
 				d."ParentID"
 		) d_1
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT

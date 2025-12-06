@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Field1,
@@ -8,7 +7,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
@@ -18,7 +16,6 @@ SELECT
 FROM
 	UseMappingSchemaTestTable t1
 
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT

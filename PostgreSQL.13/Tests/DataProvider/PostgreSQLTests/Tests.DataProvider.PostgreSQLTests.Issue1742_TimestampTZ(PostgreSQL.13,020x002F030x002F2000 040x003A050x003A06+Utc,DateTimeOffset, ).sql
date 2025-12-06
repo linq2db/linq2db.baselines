@@ -1,6 +1,5 @@
-﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p TimestampTz -- DateTime
+﻿-- PostgreSQL.13 PostgreSQL
+DECLARE @p TimestampTz -- DateTimeOffset
 SET     @p = '2000-02-03 04:05:06.007'::timestamp
 
 SELECT

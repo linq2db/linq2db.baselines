@@ -1,14 +1,14 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -20,8 +20,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2025 SqlServer.2022 (asynchronously)
+-- SqlServer.2025 SqlServer.2022
 DECLARE @param Int -- Int32
 SET     @param = 100500
 
@@ -41,7 +40,6 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
@@ -51,7 +49,6 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
-BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_target]

@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 INSERT INTO InsertTestClassDest
 (
@@ -14,7 +13,6 @@ SELECT
 FROM
 	InsertTestClass x
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
@@ -25,7 +23,6 @@ FROM
 	InsertTestClass t1
 LIMIT 2
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

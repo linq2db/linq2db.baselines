@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @filter VarChar(4) -- String
 SET     @filter = 'John'
 DECLARE @filter_1 VarChar(6) -- String
@@ -46,7 +45,6 @@ WHERE
 ORDER BY
 	`patient_1`.`PersonID`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
@@ -55,7 +53,6 @@ SELECT
 FROM
 	`Patient` `t1`
 
-BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT

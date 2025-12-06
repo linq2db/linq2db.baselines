@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."PersonID" + "y"."item"
@@ -9,7 +8,6 @@ FROM
 		(0), (1), (2), (3)
 	) "y"("item")
 
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT

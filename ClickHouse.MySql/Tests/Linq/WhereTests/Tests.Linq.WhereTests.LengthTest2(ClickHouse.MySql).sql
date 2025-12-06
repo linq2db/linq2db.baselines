@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
 	nm.FirstName
@@ -8,7 +7,6 @@ FROM
 WHERE
 	lengthUTF8(nm.FirstName) <> 0
 
-BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT

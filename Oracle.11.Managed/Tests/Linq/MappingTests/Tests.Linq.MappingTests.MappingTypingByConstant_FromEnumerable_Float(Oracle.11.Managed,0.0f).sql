@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 
 SELECT
 	arg."Id",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN (
 			SELECT 1 AS "Id", 0 AS "Value" FROM sys.dual) arg ON entity."PersonID" = arg."Id"
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT

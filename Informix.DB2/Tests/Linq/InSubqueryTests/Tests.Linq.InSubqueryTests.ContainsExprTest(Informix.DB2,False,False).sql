@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Informix.DB2 Informix
+﻿-- Informix.DB2 Informix
 DECLARE @n Integer(4) -- Int32
 SET     @n = 1
 
@@ -18,7 +17,6 @@ WHERE
 			p.ParentID + @n::Int = c_1.ParentID
 	)
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
@@ -27,7 +25,6 @@ SELECT
 FROM
 	Parent t1
 
-BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT

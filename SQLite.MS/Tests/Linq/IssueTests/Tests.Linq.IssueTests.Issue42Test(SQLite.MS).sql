@@ -1,4 +1,22 @@
-﻿BeforeExecute
+﻿-- SQLite.MS SQLite
+
+SELECT
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+LIMIT 1
+
 -- SQLite.MS SQLite
 
 SELECT
@@ -18,27 +36,6 @@ WHERE
 	[r].[ID] = 1
 LIMIT 1
 
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[r].[ID],
-	[r].[MoneyValue],
-	[r].[DateTimeValue],
-	[r].[DateTimeValue2],
-	[r].[BoolValue],
-	[r].[GuidValue],
-	[r].[SmallIntValue],
-	[r].[IntValue],
-	[r].[BigIntValue],
-	[r].[StringValue]
-FROM
-	[LinqDataTypes] [r]
-WHERE
-	[r].[ID] = 1
-LIMIT 1
-
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -76,7 +73,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
@@ -98,7 +94,6 @@ WHERE
 	[r].[ID] = @ID
 LIMIT 1
 
-BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
@@ -136,7 +131,6 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT

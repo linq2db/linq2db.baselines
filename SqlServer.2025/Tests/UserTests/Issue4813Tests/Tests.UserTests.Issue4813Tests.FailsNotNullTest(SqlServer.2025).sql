@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025 SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -7,16 +6,16 @@ SELECT TOP (@take)
 	[r].[Id],
 	[r].[OriginalSaleId],
 	[t1].[cond],
-	[t1].[Id],
+	[t1].[OriginalSale],
 	[r].[ReshipSaleId],
 	[t2].[cond],
-	[t2].[Id]
+	[t2].[ReshipSale]
 FROM
 	[Returns] [r]
 		OUTER APPLY (
 			SELECT TOP (1)
 				N'Id' as [cond],
-				[x].[Id]
+				[x].[Id] as [OriginalSale]
 			FROM
 				[Sales] [x]
 			WHERE
@@ -25,7 +24,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				N'Id' as [cond],
-				[x_1].[Id]
+				[x_1].[Id] as [ReshipSale]
 			FROM
 				[Sales] [x_1]
 			WHERE

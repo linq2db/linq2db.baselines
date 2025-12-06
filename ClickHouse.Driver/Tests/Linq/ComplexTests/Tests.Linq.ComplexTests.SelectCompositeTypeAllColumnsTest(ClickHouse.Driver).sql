@@ -1,7 +1,7 @@
-﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	t1.Id,
 	t1.user_name,
 	t1.city,
 	t1.street,

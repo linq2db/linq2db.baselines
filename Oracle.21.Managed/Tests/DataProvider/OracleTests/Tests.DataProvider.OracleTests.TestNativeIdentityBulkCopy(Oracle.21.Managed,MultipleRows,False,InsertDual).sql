@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "NativeIdentity"
 (
@@ -9,7 +8,6 @@ INSERT INTO "NativeIdentity"
 	SELECT 11 FROM DUAL  UNION ALL
 	SELECT 12 FROM DUAL 
 
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT

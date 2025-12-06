@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	NULLIF(s."String", 'abc')
@@ -8,7 +7,24 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."String" = 'abc' OR s."String" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."String" = 'abc' OR s."String" IS NULL)
+
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -18,17 +34,51 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	NULLIF(s."String", NULL)
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."String" = 'xyz' OR s."String" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."String" = 'xyz' OR s."String" IS NULL)
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	s."String"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."String" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."String" IS NOT NULL
+
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -38,7 +88,24 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableString" = 'abc' OR s."NullableString" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."NullableString" = 'abc' OR s."NullableString" IS NULL)
+
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
@@ -48,13 +115,48 @@ FROM
 ORDER BY
 	s."Int"
 
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	NULLIF(s."NullableString", NULL)
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableString" = 'xyz' OR s."NullableString" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	NOT (s."NullableString" = 'xyz' OR s."NullableString" IS NULL)
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	s."NullableString"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableString" IS NULL
+
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" s
+WHERE
+	s."NullableString" IS NOT NULL
 

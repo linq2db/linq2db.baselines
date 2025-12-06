@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+﻿-- Oracle.11.Managed Oracle11
 DECLARE @Value4 Raw(16) -- Binary
 SET     @Value4 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @id Int32
@@ -12,7 +11,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1
@@ -24,7 +22,6 @@ FROM
 WHERE
 	t1."Id" = :id AND ROWNUM <= 2
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Value4 Raw(16) -- Binary
 SET     @Value4 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
@@ -38,7 +35,6 @@ SET
 WHERE
 	t1."Id" = :id
 
-BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 1

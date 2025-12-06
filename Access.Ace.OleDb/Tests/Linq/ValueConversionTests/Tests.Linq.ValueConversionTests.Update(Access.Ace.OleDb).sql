@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 DECLARE @Value2 VarWChar(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar -- AnsiString
@@ -17,7 +16,6 @@ SET
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -36,7 +34,6 @@ FROM
 WHERE
 	[e].[Id] = 1
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value1 VarWChar(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
@@ -74,7 +71,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1
@@ -93,7 +89,6 @@ FROM
 WHERE
 	[e].[Id] = 2
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Value1 VarWChar -- String
 SET     @Value1 = NULL
@@ -131,7 +126,6 @@ SET
 WHERE
 	[t1].[Id] = @Id
 
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 1

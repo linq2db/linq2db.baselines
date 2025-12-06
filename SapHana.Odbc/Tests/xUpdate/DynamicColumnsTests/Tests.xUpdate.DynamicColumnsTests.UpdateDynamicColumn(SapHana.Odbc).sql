@@ -1,5 +1,4 @@
-﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+﻿-- SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "Person"
 (
@@ -14,7 +13,6 @@ VALUES
 	'M'
 )
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
@@ -24,7 +22,6 @@ FROM
 WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
@@ -34,7 +31,6 @@ SET
 WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT

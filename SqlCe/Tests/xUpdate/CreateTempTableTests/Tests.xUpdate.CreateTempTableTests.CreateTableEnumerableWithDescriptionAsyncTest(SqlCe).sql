@@ -1,18 +1,17 @@
-﻿BeforeExecute
--- SqlCe (asynchronously)
+﻿-- SqlCe
 
 DROP TABLE [TempTable]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 CREATE TABLE [TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Name])
 )
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 INSERT INTO [TempTable]
 (
@@ -20,8 +19,7 @@ INSERT INTO [TempTable]
 )
 SELECT 'John'
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 SELECT
 	[t].[Name]
@@ -29,8 +27,7 @@ FROM
 	[Person] [p]
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
-BeforeExecute
--- SqlCe (asynchronously)
+-- SqlCe
 
 DROP TABLE [TempTable]
 

@@ -1,7 +1,4 @@
-﻿BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[m_1].[ParentID],
@@ -18,9 +15,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -31,9 +25,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -51,9 +42,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -64,9 +52,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -84,9 +69,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -97,9 +79,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -117,9 +96,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -130,9 +106,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -150,9 +123,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -163,9 +133,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -183,9 +150,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -196,9 +160,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -216,9 +177,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -229,9 +187,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -249,9 +204,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -262,9 +214,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -282,9 +231,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -295,9 +241,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -315,9 +258,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -328,9 +268,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -348,9 +285,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -361,9 +295,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -381,9 +312,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -394,9 +322,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -414,9 +339,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -427,9 +349,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -447,9 +366,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -460,9 +376,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -480,9 +393,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -493,9 +403,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -513,9 +420,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -526,9 +430,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -546,9 +447,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -559,9 +457,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -579,9 +474,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -592,9 +484,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -612,9 +501,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -625,9 +511,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -645,9 +528,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -658,9 +538,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -678,9 +555,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -691,9 +565,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -711,9 +582,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -724,9 +592,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -744,9 +609,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -757,9 +619,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -777,9 +636,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -790,9 +646,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -810,9 +663,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -823,9 +673,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -843,9 +690,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -856,9 +700,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -876,9 +717,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -889,9 +727,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -909,9 +744,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -922,9 +754,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -942,9 +771,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -955,9 +781,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -975,9 +798,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -988,9 +808,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1008,9 +825,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1021,9 +835,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1041,9 +852,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1054,9 +862,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1074,9 +879,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1087,9 +889,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1107,9 +906,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1120,9 +916,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1140,9 +933,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1153,9 +943,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1173,9 +960,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1186,9 +970,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1206,9 +987,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1219,9 +997,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1239,9 +1014,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1252,9 +1024,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1272,9 +1041,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1285,9 +1051,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1305,9 +1068,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1318,9 +1078,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1338,9 +1095,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1351,9 +1105,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1371,9 +1122,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1384,9 +1132,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1404,9 +1149,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1417,9 +1159,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1437,9 +1176,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1450,9 +1186,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1470,9 +1203,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1483,9 +1213,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1503,9 +1230,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1516,9 +1240,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1536,9 +1257,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1549,9 +1267,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1569,9 +1284,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1582,9 +1294,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1602,9 +1311,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1615,9 +1321,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1635,9 +1338,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1648,9 +1348,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1668,9 +1365,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1681,9 +1375,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1701,9 +1392,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1714,9 +1402,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1734,9 +1419,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1747,9 +1429,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1767,9 +1446,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1780,9 +1456,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1800,9 +1473,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1813,9 +1483,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1833,9 +1500,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1846,9 +1510,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1866,9 +1527,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1879,9 +1537,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1899,9 +1554,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1912,9 +1564,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1932,9 +1581,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1945,9 +1591,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1965,9 +1608,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1978,9 +1618,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -1998,9 +1635,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2011,9 +1645,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2031,9 +1662,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2044,9 +1672,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2064,9 +1689,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2077,9 +1699,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2097,9 +1716,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2110,9 +1726,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2130,9 +1743,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2143,9 +1753,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2163,9 +1770,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2176,9 +1780,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2196,9 +1797,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2209,9 +1807,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2229,9 +1824,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2242,9 +1834,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2262,9 +1851,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2275,9 +1861,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2295,9 +1878,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2308,9 +1888,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2328,9 +1905,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2341,9 +1915,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2361,9 +1932,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2374,9 +1942,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2394,9 +1959,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2407,9 +1969,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2427,9 +1986,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2440,9 +1996,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2460,9 +2013,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2473,9 +2023,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2493,9 +2040,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2506,9 +2050,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2526,9 +2067,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2539,9 +2077,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2559,9 +2094,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2572,9 +2104,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2592,9 +2121,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2605,9 +2131,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2625,9 +2148,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2638,9 +2158,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2658,9 +2175,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2671,9 +2185,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2691,9 +2202,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2704,9 +2212,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2724,9 +2229,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2737,9 +2239,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2757,9 +2256,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2770,9 +2266,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2790,9 +2283,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2803,9 +2293,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2823,9 +2310,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2836,9 +2320,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2856,9 +2337,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2869,9 +2347,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2889,9 +2364,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2902,9 +2374,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2922,9 +2391,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2935,9 +2401,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2955,9 +2418,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2968,9 +2428,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -2988,9 +2445,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3001,9 +2455,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3021,9 +2472,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3034,9 +2482,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3054,9 +2499,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3067,9 +2509,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3087,9 +2526,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3100,9 +2536,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3120,9 +2553,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3133,9 +2563,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3153,9 +2580,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3166,9 +2590,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3186,9 +2607,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3199,9 +2617,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3219,9 +2634,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3232,9 +2644,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3252,9 +2661,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3265,9 +2671,6 @@ FROM
 WHERE
 	[p].[ParentID] < 2
 
-BeforeExecute
-BeginTransaction(Unspecified)
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
@@ -3285,9 +2688,6 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
