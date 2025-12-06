@@ -5,14 +5,14 @@ SET     @systemId = 'system'
 MERGE INTO "Issue4642Table2" "Target"
 USING (
 	SELECT
-		y."Id",
-		y."SystemId",
-		y."Timestamp" as "Timestamp_1"
+		x."Id",
+		x."SystemId",
+		x."Timestamp" as "Timestamp_1"
 	FROM
-		"Issue4642Table1" x
-			INNER JOIN "Issue4642Table2" y ON x."Id" = y."Id"
+		"Issue4642Table1" x_1
+			INNER JOIN "Issue4642Table2" x ON x_1."Id" = x."Id"
 	WHERE
-		x."Id" IN (1) AND y."SystemId" = :systemId
+		x_1."Id" IN (1) AND x."SystemId" = :systemId
 ) "Source"
 (
 	"Id",

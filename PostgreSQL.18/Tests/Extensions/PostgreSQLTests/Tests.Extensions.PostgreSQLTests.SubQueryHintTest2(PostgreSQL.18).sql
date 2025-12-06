@@ -11,7 +11,7 @@ FROM
 			FROM
 				"Child" c_1
 			FOR UPDATE
-		) t1 ON p."ParentID" = t1."ParentID"
+		) c_2 ON p."ParentID" = c_2."ParentID"
 FOR KEY SHARE
 FOR SHARE
 
