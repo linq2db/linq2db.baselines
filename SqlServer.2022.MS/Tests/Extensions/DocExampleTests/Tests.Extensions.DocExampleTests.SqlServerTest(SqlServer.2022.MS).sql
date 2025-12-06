@@ -1,18 +1,18 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t].[ParentID],
+	[p].[ParentID],
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[t].[ParentID] = [a_Children].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Child] [c_1] WITH (SPATIAL_WINDOW_MAX_CELLS=10, Index(IX_ChildIndex))
-		INNER HASH JOIN [Parent] [t] WITH (NoLock) ON [c_1].[ParentID] = [t].[ParentID]
+		INNER HASH JOIN [Parent] [p] WITH (NoLock) ON [c_1].[ParentID] = [p].[ParentID]
 WHERE
 	EXISTS(
 		SELECT
@@ -20,7 +20,7 @@ WHERE
 		FROM
 			[Child] [a_Children_1]
 		WHERE
-			[t].[ParentID] = [a_Children_1].[ParentID]
+			[p].[ParentID] = [a_Children_1].[ParentID]
 	)
 OPTION (RECOMPILE, FAST 10, HASH JOIN)
 
