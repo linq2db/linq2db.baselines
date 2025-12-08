@@ -7,17 +7,15 @@ SELECT
 	t1."AverageGrade"
 FROM
 	"PersonWithAssociation" p
-		INNER JOIN LATERAL (
+		INNER JOIN (
 			SELECT
 				AVG("a_GradeStats"."Grade"::Float) as "AverageGrade",
 				"a_GradeStats"."PersonId" as "Key_1"
 			FROM
 				"PersonGrades" "a_GradeStats"
-			WHERE
-				"a_GradeStats"."PersonId" = p."Id"
 			GROUP BY
 				"a_GradeStats"."PersonId"
-		) t1 ON 1=1
+		) t1 ON t1."Key_1" = p."Id"
 WHERE
 	t1."AverageGrade" > 5
 
