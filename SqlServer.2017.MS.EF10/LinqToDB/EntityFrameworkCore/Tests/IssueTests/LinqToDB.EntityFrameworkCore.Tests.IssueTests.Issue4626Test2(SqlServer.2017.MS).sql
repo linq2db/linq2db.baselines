@@ -9,16 +9,18 @@ SELECT
 	[d_1].[Des]
 FROM
 	[Parents] [m_1]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
 				[d].[ParentId] as [Key_1],
 				SUM([d].[Id]) as [Sum_1],
 				STRING_AGG([d].[Name], N', ') as [Des]
 			FROM
 				[Children] [d]
+			WHERE
+				[m_1].[Id] = [d].[ParentId]
 			GROUP BY
 				[d].[ParentId]
-		) [d_1] ON [m_1].[Id] = [d_1].[Key_1]
+		) [d_1]
 
 
 
