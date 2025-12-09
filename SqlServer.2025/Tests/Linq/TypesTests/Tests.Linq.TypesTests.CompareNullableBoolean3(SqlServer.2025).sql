@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0
 

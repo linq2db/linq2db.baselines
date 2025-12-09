@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1002
 DECLARE @FirmId Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@FirmId
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -28,7 +28,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @DirectionId UniqueIdentifier -- Guid
 SET     @DirectionId = 'c5c0a778-694e-49d1-b1a0-f8ef5569c673'
 DECLARE @TargetId Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 	@DateRevoke
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[a_Requests].[Id],
@@ -66,7 +66,7 @@ FROM
 WHERE
 	[r].[Id] = 1002
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[a_Requests].[Id],

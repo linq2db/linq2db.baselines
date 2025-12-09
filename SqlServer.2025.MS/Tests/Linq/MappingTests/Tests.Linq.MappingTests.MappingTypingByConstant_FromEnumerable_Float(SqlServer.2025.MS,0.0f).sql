@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[arg].[Id],
@@ -9,7 +9,7 @@ FROM
 			(1,CAST(0 AS Real))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[arg].[Id],

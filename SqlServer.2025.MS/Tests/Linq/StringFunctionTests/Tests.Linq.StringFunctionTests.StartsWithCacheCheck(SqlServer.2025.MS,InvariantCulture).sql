@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -21,7 +21,7 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) = Convert(VarBinary(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -35,7 +35,7 @@ WHERE
 	([p].[FirstName] NOT LIKE @nameToCheck ESCAPE N'~' OR Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) <> Convert(VarBinary(8000), @nameToCheck_1)) AND
 	[p].[PersonID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -49,7 +49,7 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE N'~' AND Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(@nameToCheck_1))) = Convert(VarBinary(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String

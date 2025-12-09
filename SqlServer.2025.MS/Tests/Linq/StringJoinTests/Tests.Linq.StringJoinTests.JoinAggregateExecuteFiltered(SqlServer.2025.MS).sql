@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	Coalesce(STRING_AGG(Coalesce([x].[NullableValue], N''), N', '), N'')

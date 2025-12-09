@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [TrimTestTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [TrimTestTable]
 VALUES
 (1,N'***OOO***')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],
@@ -18,7 +18,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],

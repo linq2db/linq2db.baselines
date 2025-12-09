@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb]..[#tmptbl1]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#tmptbl1]
 
 INSERT BULK [tempdb]..[#tmptbl1](ID, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb]..[#tmptbl2]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [tempdb]..[#tmptbl2]
 
 INSERT BULK [tempdb]..[#tmptbl2](ID, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb]..[#tmptbl3]
 (
@@ -34,7 +34,7 @@ CREATE TABLE [tempdb]..[#tmptbl3]
 
 INSERT BULK [tempdb]..[#tmptbl3](ID, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t4].[ID],
@@ -44,7 +44,7 @@ FROM
 		LEFT JOIN [tempdb]..[#tmptbl2] [t3] ON [t2].[ID] = [t3].[ID]
 		LEFT JOIN [tempdb]..[#tmptbl3] [t4] ON Coalesce([t3].[Value], [t2].[Value]) = [t4].[Value] OR [t3].[Value] IS NULL AND [t2].[Value] IS NULL AND [t4].[Value] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[tempdb]..[#tmptbl1] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -60,7 +60,7 @@ SELECT
 FROM
 	[tempdb]..[#tmptbl2] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -68,15 +68,15 @@ SELECT
 FROM
 	[tempdb]..[#tmptbl3] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#tmptbl3]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#tmptbl2]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#tmptbl1]
 

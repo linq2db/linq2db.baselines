@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [c_1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 DECLARE @ChildID Int -- Int32
@@ -23,7 +23,7 @@ VALUES
 	@ChildID
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 1001
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [c_1]
 FROM

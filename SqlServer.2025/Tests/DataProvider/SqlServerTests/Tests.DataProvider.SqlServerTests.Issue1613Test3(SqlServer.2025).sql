@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1]
@@ -12,7 +12,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT DISTINCT
 	CAST([r].[dt] AS Time)

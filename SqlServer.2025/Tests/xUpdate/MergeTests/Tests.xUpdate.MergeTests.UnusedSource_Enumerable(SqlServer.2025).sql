@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 MERGE INTO [UnusedSourceTable] [Target]
 USING (VALUES
@@ -22,7 +22,7 @@ VALUES
 )
 ;
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[r].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 
@@ -12,7 +12,7 @@ FROM
 WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = N'Y'
 
@@ -27,7 +27,7 @@ WHERE
 	[r].[Bool1] = @true_value AND [r].[Bool2] IS NULL AND
 	[r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 
@@ -41,7 +41,7 @@ FROM
 WHERE
 	[r].[Bool3] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 
@@ -55,7 +55,7 @@ FROM
 WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -71,7 +71,7 @@ FROM
 WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = N'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
@@ -88,7 +88,7 @@ WHERE
 	[r].[Bool3] = @true_value AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool2] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @false_value Char(1) -- AnsiStringFixedLength
 SET     @false_value = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -105,7 +105,7 @@ WHERE
 	[r].[Bool1] = @false_value AND [r].[Bool2] IS NULL AND
 	[r].[Bool3] = @Bool3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -121,7 +121,7 @@ FROM
 WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool3] = @Bool3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -137,7 +137,7 @@ FROM
 WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @false_value Char(1) -- AnsiStringFixedLength
 SET     @false_value = N'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -154,7 +154,7 @@ WHERE
 	[r].[Bool1] = @false_value AND [r].[Bool2] = @Bool2 AND
 	[r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -170,7 +170,7 @@ FROM
 WHERE
 	[r].[Bool3] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'N'
 
@@ -185,7 +185,7 @@ WHERE
 	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool3] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -203,7 +203,7 @@ FROM
 WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = N'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -222,7 +222,7 @@ WHERE
 	[r].[Bool1] = @true_value AND [r].[Bool2] = @Bool2 AND
 	[r].[Bool3] = @Bool3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = N'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
@@ -241,7 +241,7 @@ WHERE
 	[r].[Bool3] = @true_value AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool2] = @Bool2
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = N'Y'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength

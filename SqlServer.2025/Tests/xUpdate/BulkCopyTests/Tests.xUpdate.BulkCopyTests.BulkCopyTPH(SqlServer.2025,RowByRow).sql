@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Discriminator Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Value2
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Discriminator Int -- Int32
@@ -65,7 +65,7 @@ VALUES
 	@NullableBool
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Discriminator],
@@ -79,7 +79,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -93,7 +93,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -107,7 +107,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -121,7 +121,7 @@ FROM
 WHERE
 	[x].[Discriminator] = 3
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -135,7 +135,7 @@ FROM
 WHERE
 	[x].[Value1] = N'Str1'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -149,7 +149,7 @@ FROM
 WHERE
 	[x].[Value2] = N'Str2'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[x].[Discriminator],

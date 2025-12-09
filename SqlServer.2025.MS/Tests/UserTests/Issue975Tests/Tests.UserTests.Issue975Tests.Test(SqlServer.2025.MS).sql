@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -21,7 +21,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -42,7 +42,7 @@ VALUES
 	CURRENT_TIMESTAMP
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @taskId Int -- Int32
 SET     @taskId = 1
 
@@ -61,7 +61,7 @@ VALUES
 	CURRENT_TIMESTAMP
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 

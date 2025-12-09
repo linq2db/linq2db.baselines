@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -25,13 +25,13 @@ WHERE
 	[r].[Column] = 'a948600d-de21-4f74-8ac2-9516b287076e' AND
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column UniqueIdentifier -- Guid
@@ -52,7 +52,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column UniqueIdentifier -- Guid
@@ -73,7 +73,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -84,13 +84,13 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [GuidTable]
 (
@@ -102,7 +102,7 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL),
 (2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -113,7 +113,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -121,7 +121,7 @@ FROM
 
 INSERT BULK [GuidTable](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

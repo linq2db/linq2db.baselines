@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
@@ -48,7 +48,7 @@ WHEN NOT MATCHED THEN
 		N'John II'
 	);
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT TOP (2)
 	[p].[PersonID],
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[p].[PersonID] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[p].[PersonID],

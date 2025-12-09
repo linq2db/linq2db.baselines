@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 MERGE INTO [Person] [Target]
 USING (
@@ -31,7 +31,7 @@ SET
 	[MiddleName] = N'R.I.P.'
 ;
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[FirstName],

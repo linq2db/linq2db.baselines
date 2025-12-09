@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Has Bit -- Boolean
 SET     @Has = 1
 
@@ -13,7 +13,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 

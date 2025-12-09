@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [AllTypeCreateTest]
 (
@@ -50,7 +50,7 @@ CREATE TABLE [AllTypeCreateTest]
 	[timeDataType]             Time                  NULL
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -98,7 +98,7 @@ SELECT
 FROM
 	[AllTypeCreateTest] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [AllTypeCreateTest]
 

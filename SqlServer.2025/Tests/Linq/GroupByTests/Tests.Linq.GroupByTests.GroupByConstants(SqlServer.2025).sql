@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[g_2].[ChildId],
@@ -16,7 +16,7 @@ GROUP BY
 	[g_2].[ChildId],
 	[g_2].[ParentId]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

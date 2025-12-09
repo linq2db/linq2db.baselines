@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[m_1].[Key_1],
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[d].[ParentID] IN (2)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[ChildID]
@@ -27,7 +27,7 @@ WHERE
 GROUP BY
 	[x].[ChildID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[Key_1],
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[d].[ParentID] IN (3)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[ChildID]

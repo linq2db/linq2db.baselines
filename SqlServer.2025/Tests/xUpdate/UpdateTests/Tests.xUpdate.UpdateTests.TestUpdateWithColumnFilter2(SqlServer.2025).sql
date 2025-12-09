@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Gender
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 DECLARE @ID Int -- Int32
@@ -51,7 +51,7 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -66,7 +66,7 @@ FROM
 WHERE
 	[x].[PersonID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(4000) -- String
@@ -88,7 +88,7 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

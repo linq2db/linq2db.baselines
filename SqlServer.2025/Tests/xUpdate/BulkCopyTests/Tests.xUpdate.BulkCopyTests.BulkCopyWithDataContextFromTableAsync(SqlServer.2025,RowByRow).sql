@@ -2,7 +2,7 @@
 
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -19,7 +19,7 @@ INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 

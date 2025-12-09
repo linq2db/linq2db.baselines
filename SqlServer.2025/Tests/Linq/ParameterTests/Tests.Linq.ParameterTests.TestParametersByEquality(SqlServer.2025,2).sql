@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32

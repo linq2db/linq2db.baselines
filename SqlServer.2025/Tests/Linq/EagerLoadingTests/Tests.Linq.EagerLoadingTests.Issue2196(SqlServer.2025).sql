@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 

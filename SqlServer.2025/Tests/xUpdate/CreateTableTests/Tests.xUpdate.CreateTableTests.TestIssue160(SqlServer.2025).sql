@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [aa]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [aa]
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @bb Int -- Int32
 SET     @bb = 99
 DECLARE @cc NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 	@cc
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[bb],
@@ -33,7 +33,7 @@ SELECT
 FROM
 	[aa] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [aa]
 

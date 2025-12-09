@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -39,7 +39,7 @@ VALUES
 	@StringValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 3)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t]
 FROM

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = N'M'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[FirstName],
@@ -24,7 +24,7 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND N'M' = [t1].[Gender]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'
 
@@ -39,7 +39,7 @@ FROM
 WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'
 

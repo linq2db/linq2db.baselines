@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[ProductId],
@@ -36,7 +36,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[OrderID],
@@ -69,7 +69,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[e].[IsDeleted],
