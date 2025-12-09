@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [DropTableTestID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [DropTableTestID]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [DropTableTestID]
 	CONSTRAINT [PK_DropTableTestID] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [DropTableTestID]
 (
@@ -23,7 +23,7 @@ VALUES
 	2
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[ID],
@@ -31,11 +31,11 @@ SELECT
 FROM
 	[DropTableTestID] [t]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [DropTableTestID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],

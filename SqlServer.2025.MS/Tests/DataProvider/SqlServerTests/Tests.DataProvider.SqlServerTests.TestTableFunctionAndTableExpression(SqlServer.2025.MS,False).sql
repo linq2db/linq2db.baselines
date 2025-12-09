@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -9,14 +9,14 @@ SELECT TOP (1)
 FROM
 	[Person] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
 	BEGIN DROP FUNCTION PersonTableFunction
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 
 CREATE FUNCTION dbo.PersonTableFunction( @ID int, @FirstName varchar(50))
@@ -24,7 +24,7 @@ RETURNS TABLE
 AS
 	RETURN ( SELECT * FROM dbo.Person WHERE PersonID = @ID AND FirstName = @FirstName )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -39,7 +39,7 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -54,7 +54,7 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -69,7 +69,7 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -84,7 +84,7 @@ SELECT TOP (1)
 FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @FirstName NVarChar(4000) -- String
@@ -103,7 +103,7 @@ FROM
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [te] ON [te].[PersonID] = [p].[PersonID]
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')

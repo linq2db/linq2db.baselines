@@ -1,16 +1,16 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @FieldInt32 Int -- Int32
@@ -95,7 +95,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @FieldInt32 Int -- Int32
@@ -180,7 +180,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Int -- Int32
@@ -267,7 +267,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Int -- Int32
@@ -353,7 +353,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Int -- Int32
@@ -438,7 +438,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Int -- Int32
@@ -525,7 +525,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @FieldInt32 Int -- Int32
@@ -610,7 +610,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @FieldInt32 Int -- Int32
@@ -697,7 +697,7 @@ VALUES
 	@FieldEnumNumber
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -724,7 +724,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

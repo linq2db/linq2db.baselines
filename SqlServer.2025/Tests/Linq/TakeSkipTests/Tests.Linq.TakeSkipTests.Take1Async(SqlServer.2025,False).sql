@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -6,7 +6,7 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (3)
 	[ch].[ParentID],
@@ -14,7 +14,7 @@ SELECT TOP (3)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -22,7 +22,7 @@ SELECT TOP (2)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (3)
 	[ch].[ParentID],

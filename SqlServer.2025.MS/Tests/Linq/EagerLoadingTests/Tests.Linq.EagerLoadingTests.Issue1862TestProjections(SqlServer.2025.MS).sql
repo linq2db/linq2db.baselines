@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -30,7 +30,7 @@ WHERE
 ORDER BY
 	[d_1].[TagId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -52,7 +52,7 @@ FROM
 ORDER BY
 	[d].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 

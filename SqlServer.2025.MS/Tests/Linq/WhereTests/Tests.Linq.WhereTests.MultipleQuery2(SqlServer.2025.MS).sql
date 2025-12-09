@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p].[FirstName],
@@ -11,7 +11,7 @@ FROM
 WHERE
 	[p].[MiddleName] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'
 

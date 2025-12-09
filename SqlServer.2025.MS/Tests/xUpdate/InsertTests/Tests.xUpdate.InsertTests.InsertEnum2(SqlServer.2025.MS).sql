@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -23,7 +23,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[t1].[ParentID] = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM

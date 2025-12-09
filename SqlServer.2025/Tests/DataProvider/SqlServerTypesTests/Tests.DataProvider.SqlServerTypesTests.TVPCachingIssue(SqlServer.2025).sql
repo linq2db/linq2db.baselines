@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -16,7 +16,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -32,7 +32,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -50,7 +50,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -66,7 +66,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -84,7 +84,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -100,7 +100,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -118,7 +118,7 @@ WHERE
 			@p [x]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 2
 
@@ -15,7 +15,7 @@ VALUES
 	@param
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id],

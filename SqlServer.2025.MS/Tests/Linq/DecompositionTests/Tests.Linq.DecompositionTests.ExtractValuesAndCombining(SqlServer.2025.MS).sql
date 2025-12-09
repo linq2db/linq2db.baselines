@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[cond],
@@ -25,7 +25,7 @@ FROM
 WHERE
 	NOT ([x].[cond] = 1 AND [x].[cond_1] = 1 OR [x].[cond] = 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -36,7 +36,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[cond],
@@ -62,7 +62,7 @@ FROM
 WHERE
 	[x].[cond] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -73,7 +73,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[cond],
@@ -129,7 +129,7 @@ FROM
 WHERE
 	[t2].[cond] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -140,7 +140,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x_1].[Color],
@@ -213,7 +213,7 @@ FROM
 WHERE
 	NOT ([x_1].[Color] = 1 AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -224,7 +224,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x_1].[Color],
@@ -297,7 +297,7 @@ FROM
 WHERE
 	[x_1].[Color] = 1 AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -308,7 +308,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x_1].[Size_1],
@@ -381,7 +381,7 @@ FROM
 WHERE
 	NOT ([x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR [x_1].[Size_1] = 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -392,7 +392,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x_1].[Size_1],
@@ -466,7 +466,7 @@ WHERE
 	[x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR
 	[x_1].[Size_1] = 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ItemId],

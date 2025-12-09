@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -9,7 +9,7 @@ FROM
 	[TestEntity1] [t1]
 		LEFT JOIN [TestEntity2] [t2] ON [t1].[Id] = [t2].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[t1].[Id] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

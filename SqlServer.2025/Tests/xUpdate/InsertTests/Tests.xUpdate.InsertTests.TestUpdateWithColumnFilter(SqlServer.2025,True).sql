@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Gender
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -60,7 +60,7 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
@@ -75,7 +75,7 @@ FROM
 WHERE
 	[x].[FirstName] = @FirstName
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @newName NVarChar(4000) -- String
 SET     @newName = N'InsertColumnFilter'
 

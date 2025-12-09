@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TestEmployees]
 (
@@ -27,7 +27,7 @@ CREATE TABLE [tempdb]..[#TestEmployees]
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [tempdb]..[#TestEmployees]
 (
@@ -78,7 +78,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -97,7 +97,7 @@ FROM [Employees] AS [e]
 WHERE @ef_filter__p0 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TestEmployees]
 

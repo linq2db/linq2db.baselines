@@ -1,22 +1,22 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [DropTableTest]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	DB_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [DropTableTest]
 (
@@ -25,7 +25,7 @@ CREATE TABLE [DropTableTest]
 	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [TestData].[dbo].[DropTableTest]
 (
@@ -36,18 +36,18 @@ VALUES
 	123
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID]
 FROM
 	[TestData].[dbo].[DropTableTest] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [TestData].[dbo].[DropTableTest]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID]

@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [TempTable]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
@@ -12,7 +12,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [TempTable]
 (
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[Parent] [p]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[ID]
@@ -31,7 +31,7 @@ FROM
 	[Parent] [p]
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [TempTable]
 

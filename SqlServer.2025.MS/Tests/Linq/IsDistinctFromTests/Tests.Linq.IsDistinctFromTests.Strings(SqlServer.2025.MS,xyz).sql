@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[s].[String] IS DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[s].[NullableString] IS DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[s].[String] IS NOT DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 

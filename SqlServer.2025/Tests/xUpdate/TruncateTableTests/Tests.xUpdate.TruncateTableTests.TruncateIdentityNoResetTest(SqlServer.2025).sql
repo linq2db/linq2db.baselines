@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE FROM [test_temp]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [test_temp]
 (
@@ -13,7 +13,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [test_temp]
 (
@@ -24,7 +24,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -37,11 +37,11 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE FROM [test_temp]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [test_temp]
 (
@@ -52,7 +52,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [test_temp]
 (
@@ -63,7 +63,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

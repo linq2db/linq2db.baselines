@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[p].[PersonID],
@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [p]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[PersonID],
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[Person] [p]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[PersonID],
@@ -22,7 +22,7 @@ SELECT
 FROM
 	[Person] [p]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[PersonID],
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[Person] [p]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[PersonID],

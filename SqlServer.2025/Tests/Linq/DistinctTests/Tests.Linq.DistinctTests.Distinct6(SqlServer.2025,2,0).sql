@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 0
 DECLARE @Value1 Int -- Int32
@@ -10,7 +10,7 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

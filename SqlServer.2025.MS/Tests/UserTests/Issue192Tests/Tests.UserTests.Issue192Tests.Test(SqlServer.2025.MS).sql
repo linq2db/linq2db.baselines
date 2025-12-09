@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(50) -- String
@@ -23,7 +23,7 @@ VALUES
 	@GuidValue
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(50) -- String
@@ -48,7 +48,7 @@ VALUES
 	@GuidValue
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -57,7 +57,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -66,7 +66,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cond VarChar(50) -- AnsiString
 SET     @cond = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
@@ -77,7 +77,7 @@ FROM
 WHERE
 	[t1].[GuidValue] = @cond
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -89,7 +89,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -101,7 +101,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -113,7 +113,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -125,7 +125,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -137,7 +137,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -149,7 +149,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -161,7 +161,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -173,7 +173,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -185,7 +185,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'N'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -197,7 +197,7 @@ FROM
 WHERE
 	[t1].[BoolValue] = 'Y'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -211,7 +211,7 @@ FROM
 WHERE
 	[t1].[GuidValue] = @GuidValue
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 

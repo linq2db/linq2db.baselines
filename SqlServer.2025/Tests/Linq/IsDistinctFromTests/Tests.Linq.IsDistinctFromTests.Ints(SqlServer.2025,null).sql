@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -14,7 +14,7 @@ FROM
 WHERE
 	[s].[NullableInt] IS NOT NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -23,7 +23,7 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)

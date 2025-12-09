@@ -1,12 +1,12 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TYPE IntTableType AS TABLE(Id INT)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
 DECLARE @cond IntTableType -- Structured -- Object
@@ -21,7 +21,7 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
 DECLARE @cond IntTableType -- Structured -- Object
@@ -36,7 +36,7 @@ WHERE
 ORDER BY
 	[p].[PersonID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -13,7 +13,7 @@ ORDER BY
 	[t1].[ParentID]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
@@ -8,7 +8,7 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 		CONSTRAINT [PK_DisposableTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [DisposableTable]
 

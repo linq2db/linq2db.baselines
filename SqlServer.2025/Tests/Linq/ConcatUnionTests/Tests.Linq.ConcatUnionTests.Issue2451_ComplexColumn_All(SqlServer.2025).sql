@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[p].[FirstName]
@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [p_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[FirstName] + N'/' + [p].[LastName]

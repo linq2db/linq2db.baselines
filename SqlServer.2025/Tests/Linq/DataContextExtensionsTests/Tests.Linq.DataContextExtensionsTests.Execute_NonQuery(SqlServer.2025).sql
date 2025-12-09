@@ -1,24 +1,24 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE Person SET MiddleName = NULL WHERE MiddleName IS NULL
 

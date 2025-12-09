@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [temp_table_1]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [temp_table_1]
 
 INSERT BULK [temp_table_1](ID, Value)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [temp_table_2]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [temp_table_2]
 	CONSTRAINT [PK_temp_table_2] PRIMARY KEY CLUSTERED ([Value])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [temp_table_2]
 (
@@ -45,11 +45,11 @@ FROM
 				[gr_1].[ID] = [c_1].[ID]
 		) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [temp_table_2]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [temp_table_1]
 

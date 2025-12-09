@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -7,7 +7,7 @@ INSERT INTO [SimpleBulkCopyTable]
 VALUES
 (1)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [SimpleBulkCopyTable]
 (

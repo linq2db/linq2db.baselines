@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -17,7 +17,7 @@ FROM
 WHERE
 	[r].[Boolean] = @True
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -51,7 +51,7 @@ FROM
 WHERE
 	[r].[Boolean] = @False
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -66,7 +66,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -85,7 +85,7 @@ FROM
 WHERE
 	[r].[Boolean] = @TrueN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -100,7 +100,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -119,7 +119,7 @@ FROM
 WHERE
 	[r].[Boolean] = @FalseN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -134,7 +134,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -151,7 +151,7 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -166,7 +166,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -185,7 +185,7 @@ FROM
 WHERE
 	[r].[BooleanN] = @True
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -200,7 +200,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -219,7 +219,7 @@ FROM
 WHERE
 	[r].[BooleanN] = @False
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -234,7 +234,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -253,7 +253,7 @@ FROM
 WHERE
 	[r].[BooleanN] = @TrueN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -268,7 +268,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -287,7 +287,7 @@ FROM
 WHERE
 	[r].[BooleanN] = @FalseN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -302,7 +302,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -319,7 +319,7 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -334,7 +334,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -353,7 +353,7 @@ FROM
 WHERE
 	[r].[Boolean] <> @True
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -368,7 +368,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -387,7 +387,7 @@ FROM
 WHERE
 	[r].[Boolean] <> @False
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -402,7 +402,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -421,7 +421,7 @@ FROM
 WHERE
 	[r].[Boolean] <> @TrueN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -436,7 +436,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -455,7 +455,7 @@ FROM
 WHERE
 	[r].[Boolean] <> @FalseN
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -470,7 +470,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -485,7 +485,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -500,7 +500,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -519,7 +519,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> @True OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -534,7 +534,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -553,7 +553,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> @False OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -568,7 +568,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -587,7 +587,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> @TrueN OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -602,7 +602,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -621,7 +621,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> @FalseN OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -636,7 +636,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -653,7 +653,7 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -668,7 +668,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_1].[Id],
@@ -722,7 +722,7 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -737,7 +737,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -899,7 +899,7 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -914,7 +914,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -931,7 +931,7 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -946,7 +946,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -963,7 +963,7 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -978,7 +978,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -995,7 +995,7 @@ FROM
 WHERE
 	[r].[Boolean] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1010,7 +1010,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1027,7 +1027,7 @@ FROM
 WHERE
 	[r].[Boolean] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1042,7 +1042,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1059,7 +1059,7 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1074,7 +1074,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1091,7 +1091,7 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1106,7 +1106,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1123,7 +1123,7 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1138,7 +1138,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1155,7 +1155,7 @@ FROM
 WHERE
 	[r].[BooleanN] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1170,7 +1170,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1187,7 +1187,7 @@ FROM
 WHERE
 	[r].[BooleanN] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1202,7 +1202,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1219,7 +1219,7 @@ FROM
 WHERE
 	[r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1234,7 +1234,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1251,7 +1251,7 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1266,7 +1266,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1283,7 +1283,7 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1298,7 +1298,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1315,7 +1315,7 @@ FROM
 WHERE
 	[r].[Boolean] <> 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1330,7 +1330,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1347,7 +1347,7 @@ FROM
 WHERE
 	[r].[Boolean] <> 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1362,7 +1362,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1377,7 +1377,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1392,71 +1392,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
-
--- SqlServer.2025 SqlServer.2022
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
--- SqlServer.2025 SqlServer.2022
-
-SELECT
-	[r].[Id],
-	[r].[Boolean],
-	[r].[BooleanN],
-	[r].[Int32],
-	[r].[Int32N],
-	[r].[Decimal],
-	[r].[DecimalN],
-	[r].[Double],
-	[r].[DoubleN]
-FROM
-	[BooleanTable] [r]
-WHERE
-	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
-
--- SqlServer.2025 SqlServer.2022
-
-SELECT
-	[t1].[Id],
-	[t1].[Boolean],
-	[t1].[BooleanN],
-	[t1].[Int32],
-	[t1].[Int32N],
-	[t1].[Decimal],
-	[t1].[DecimalN],
-	[t1].[Double],
-	[t1].[DoubleN]
-FROM
-	[BooleanTable] [t1]
-
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1473,7 +1409,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1488,7 +1424,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1505,7 +1441,7 @@ FROM
 WHERE
 	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1520,7 +1456,71 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 1 OR [r].[BooleanN] IS NULL
+
+-- SqlServer.2025
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlServer.2025
+
+SELECT
+	[r].[Id],
+	[r].[Boolean],
+	[r].[BooleanN],
+	[r].[Int32],
+	[r].[Int32N],
+	[r].[Decimal],
+	[r].[DecimalN],
+	[r].[Double],
+	[r].[DoubleN]
+FROM
+	[BooleanTable] [r]
+WHERE
+	[r].[BooleanN] <> 0 OR [r].[BooleanN] IS NULL
+
+-- SqlServer.2025
+
+SELECT
+	[t1].[Id],
+	[t1].[Boolean],
+	[t1].[BooleanN],
+	[t1].[Int32],
+	[t1].[Int32N],
+	[t1].[Decimal],
+	[t1].[DecimalN],
+	[t1].[Double],
+	[t1].[DoubleN]
+FROM
+	[BooleanTable] [t1]
+
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1537,7 +1537,7 @@ FROM
 WHERE
 	[r].[BooleanN] IS NOT NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1552,7 +1552,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_1].[Id],
@@ -1606,7 +1606,7 @@ FROM
 GROUP BY
 	[g_1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1621,7 +1621,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -1783,7 +1783,7 @@ SELECT
 FROM
 	[BooleanTable] [r_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

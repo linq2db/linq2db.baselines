@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Child1Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Code Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Child2Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Code Int -- Int32
@@ -65,7 +65,7 @@ VALUES
 	@Grandchild11Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Code Int -- Int32
@@ -90,7 +90,7 @@ VALUES
 	@Grandchild12Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Code Int -- Int32
@@ -115,7 +115,7 @@ VALUES
 	@Grandchild21Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Code Int -- Int32
@@ -140,7 +140,7 @@ VALUES
 	@Grandchild22Field
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Code],

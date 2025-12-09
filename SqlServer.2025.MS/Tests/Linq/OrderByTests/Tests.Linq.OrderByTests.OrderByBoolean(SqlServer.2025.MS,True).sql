@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 ORDER BY
 	IIF(LEN([t1].[FirstName] + N'.') > 2, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[FirstName],

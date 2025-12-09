@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[PersonID] > 4
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 DECLARE @LastName NVarChar(4000) -- String
@@ -33,7 +33,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
 
@@ -48,7 +48,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -75,7 +75,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
 
@@ -90,7 +90,7 @@ FROM
 WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM

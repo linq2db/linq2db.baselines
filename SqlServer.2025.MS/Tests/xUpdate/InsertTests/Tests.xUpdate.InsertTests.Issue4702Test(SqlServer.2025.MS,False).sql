@@ -1,10 +1,10 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT Max([Id]) FROM [Issue4702Table]
 
 INSERT BULK [Issue4702Table](Id, Text)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Issue4702Table]
 (

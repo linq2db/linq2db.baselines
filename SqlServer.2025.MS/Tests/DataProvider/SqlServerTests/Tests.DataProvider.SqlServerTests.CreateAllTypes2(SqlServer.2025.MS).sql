@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE [AllType2CreateTest]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [AllType2CreateTest]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [AllType2CreateTest]
 	CONSTRAINT [PK_AllType2CreateTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[AllType2CreateTest] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE [AllType2CreateTest]
 

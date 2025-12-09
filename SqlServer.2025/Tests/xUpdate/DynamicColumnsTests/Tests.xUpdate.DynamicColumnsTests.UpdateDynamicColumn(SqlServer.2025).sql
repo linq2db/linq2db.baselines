@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Person]
 (
@@ -13,7 +13,7 @@ VALUES
 	N'M'
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE
 	[Person]
@@ -31,7 +31,7 @@ SET
 WHERE
 	[Person].[LastName] = N'Limonadovy'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)

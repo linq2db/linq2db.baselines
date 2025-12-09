@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(200) -- String
@@ -31,7 +31,7 @@ VALUES
 	@AnotherBoolValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[e].[Id],
@@ -49,7 +49,7 @@ FROM
 WHERE
 	[e].[Id] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar(200) -- String
@@ -82,7 +82,7 @@ VALUES
 	@AnotherBoolValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[e].[Id],
@@ -100,7 +100,7 @@ FROM
 WHERE
 	[e].[Id] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(200) -- String
@@ -149,7 +149,7 @@ VALUES
 	@DateTimeNullable
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[e].[Id],
@@ -167,7 +167,7 @@ FROM
 WHERE
 	[e].[Id] = 3
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)

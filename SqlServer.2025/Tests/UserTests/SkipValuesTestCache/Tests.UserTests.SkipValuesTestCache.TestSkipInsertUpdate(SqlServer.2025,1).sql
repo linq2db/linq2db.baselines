@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -15,7 +15,7 @@ VALUES
 	@Name
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],
@@ -26,7 +26,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Id Int -- Int32
@@ -39,7 +39,7 @@ SET
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -17,7 +17,7 @@ FROM
 	) [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x_1].[Id],
