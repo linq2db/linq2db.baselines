@@ -11,15 +11,17 @@ FROM
 		FROM
 			[Parent] [c_1]
 	) [m_1]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
 				[d].[ParentID] as [Key_1],
 				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [Children]
 			FROM
 				[Child] [d]
+			WHERE
+				[m_1].[ParentID] = [d].[ParentID]
 			GROUP BY
 				[d].[ParentID]
-		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
+		) [d_1]
 
 -- SqlServer.Contained SqlServer.2019
 

@@ -7,15 +7,17 @@ SELECT
 	[t1].[AverageGrade]
 FROM
 	[PersonWithAssociation] [p]
-		INNER JOIN (
+		CROSS APPLY (
 			SELECT
 				AVG(CAST([a_GradeStats].[Grade] AS Float)) as [AverageGrade],
 				[a_GradeStats].[PersonId] as [Key_1]
 			FROM
 				[PersonGrades] [a_GradeStats]
+			WHERE
+				[a_GradeStats].[PersonId] = [p].[Id]
 			GROUP BY
 				[a_GradeStats].[PersonId]
-		) [t1] ON [t1].[Key_1] = [p].[Id]
+		) [t1]
 WHERE
 	[t1].[AverageGrade] > 5
 
