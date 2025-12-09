@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -7,11 +7,11 @@ CREATE TABLE [tempdb]..[#TempTable]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [tempdb]..[#TempTable]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TempTable]
 (

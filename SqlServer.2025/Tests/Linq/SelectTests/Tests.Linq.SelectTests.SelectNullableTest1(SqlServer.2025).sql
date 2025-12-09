@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -47,7 +47,7 @@ VALUES
 	@StringValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[ID],
@@ -65,7 +65,7 @@ FROM
 WHERE
 	[t1].[ID] = 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM

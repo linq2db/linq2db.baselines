@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -24,13 +24,13 @@ FROM
 WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Bit -- Boolean
@@ -51,7 +51,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Bit -- Boolean
@@ -72,7 +72,7 @@ VALUES
 	@ColumnNullable
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -83,13 +83,13 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [BooleanTable]
 (
@@ -101,7 +101,7 @@ VALUES
 (1,1,NULL),
 (2,0,1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -112,7 +112,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -120,7 +120,7 @@ FROM
 
 INSERT BULK [BooleanTable](Id, Column, ColumnNullable)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

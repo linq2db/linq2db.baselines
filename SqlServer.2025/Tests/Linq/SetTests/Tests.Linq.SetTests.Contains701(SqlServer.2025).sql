@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 11
 DECLARE @Value1 Int -- Int32

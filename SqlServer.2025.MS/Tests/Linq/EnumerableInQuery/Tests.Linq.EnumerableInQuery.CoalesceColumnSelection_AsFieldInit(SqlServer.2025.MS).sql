@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t3].[ColorName],
@@ -32,7 +32,7 @@ FROM
 ORDER BY
 	[t3].[StrValue]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -47,7 +47,7 @@ FROM
 		LEFT JOIN [SomeColor] [a_Color] ON [t1].[ColorId] = [a_Color].[Id]
 		LEFT JOIN [SomeStyle] [a_Style] ON [t1].[StyleId] = [a_Style].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

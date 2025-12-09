@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -16,7 +16,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -27,7 +27,7 @@ FROM
 ORDER BY
 	[t].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t2].[Id],
@@ -77,7 +77,7 @@ FROM
 ORDER BY
 	[t2].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [FluentTemp]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -13,7 +13,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -30,7 +30,7 @@ VALUES
 	@Name
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 MERGE INTO [FluentTemp] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
@@ -54,7 +54,7 @@ WHEN NOT MATCHED THEN
 		N'John II'
 	);
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [FluentTemp]
 

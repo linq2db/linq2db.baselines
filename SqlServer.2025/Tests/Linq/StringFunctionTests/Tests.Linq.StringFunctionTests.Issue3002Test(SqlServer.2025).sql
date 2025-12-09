@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [SampleClass]
 (
@@ -13,7 +13,7 @@ VALUES
 	N'SampleClass'
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [SampleClass]
 (
@@ -28,7 +28,7 @@ VALUES
 	N'SomeTest'
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -44,7 +44,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -57,7 +57,7 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -73,7 +73,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -86,7 +86,7 @@ FROM
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -102,7 +102,7 @@ SELECT
 			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String

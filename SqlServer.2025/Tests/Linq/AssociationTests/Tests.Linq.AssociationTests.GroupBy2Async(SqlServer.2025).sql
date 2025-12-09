@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[m_1].[ParentID],
@@ -16,7 +16,7 @@ FROM
 			INNER JOIN [Parent] [a_Parent1_1] ON [d].[ParentID] = [a_Parent1_1].[ParentID]
 		ON [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[a_Parent1].[ParentID]

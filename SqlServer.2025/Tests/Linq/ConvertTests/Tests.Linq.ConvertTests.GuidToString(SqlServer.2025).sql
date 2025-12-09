@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @guid NVarChar(4000) -- String
 SET     @guid = N'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[p].[PK],
@@ -19,7 +19,7 @@ WHERE
 			) [t1]([item])
 	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 3)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[PK],

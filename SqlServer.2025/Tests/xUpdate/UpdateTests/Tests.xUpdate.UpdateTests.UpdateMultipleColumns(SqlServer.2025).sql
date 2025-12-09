@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(4, 0)
@@ -19,7 +19,7 @@ VALUES
 	@SmallIntValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
@@ -31,7 +31,7 @@ SET
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 

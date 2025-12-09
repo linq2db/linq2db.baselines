@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -12,7 +12,7 @@ FROM
 WHERE
 	[p].[ParentID] = @p AND [p].[Value1] = @p_1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 2
 

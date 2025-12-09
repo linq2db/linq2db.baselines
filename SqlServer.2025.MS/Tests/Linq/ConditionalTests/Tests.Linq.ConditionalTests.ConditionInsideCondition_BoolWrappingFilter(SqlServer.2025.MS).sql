@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[s].[Value_1]
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[s].[Value_1] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[ParentID],
@@ -31,7 +31,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

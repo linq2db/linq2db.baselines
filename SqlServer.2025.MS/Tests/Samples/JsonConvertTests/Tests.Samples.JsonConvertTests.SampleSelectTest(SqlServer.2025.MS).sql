@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Data VarChar(4000) -- AnsiString
@@ -15,7 +15,7 @@ VALUES
 	@Data
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],

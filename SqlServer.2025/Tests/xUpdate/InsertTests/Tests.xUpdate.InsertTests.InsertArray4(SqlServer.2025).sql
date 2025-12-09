@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [t]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t].[ID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -43,7 +43,7 @@ VALUES
 	@SmallIntValue
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[t].[ID],
@@ -58,7 +58,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t]
 FROM

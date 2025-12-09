@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -28,7 +28,7 @@ FROM
 	[CTE1_] [p]
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[c4].[ParentID],

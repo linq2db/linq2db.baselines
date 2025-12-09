@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[e].[Id],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[e].[StringValue] + N'1' = N'StrValue1'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

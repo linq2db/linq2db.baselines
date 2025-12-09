@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
@@ -11,7 +11,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
@@ -22,7 +22,7 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 		PRIMARY KEY CLUSTERED ([ID])
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [tempdb]..[#temp_table2]
 (
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -43,7 +43,7 @@ SELECT
 FROM
 	[tempdb]..[#temp_table1] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -51,7 +51,7 @@ SELECT
 FROM
 	[tempdb]..[#temp_table2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [tempdb]..[#temp_table1]
 (
@@ -61,7 +61,7 @@ INSERT INTO [tempdb]..[#temp_table1]
 VALUES
 (2,3)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -80,19 +80,19 @@ VALUES
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

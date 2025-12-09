@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -8,7 +8,7 @@ FROM
 			(0), (1), (2), (3)
 		) [y]([item])
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[FirstName],

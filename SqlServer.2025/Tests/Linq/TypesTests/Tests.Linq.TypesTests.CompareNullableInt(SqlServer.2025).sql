@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[t].[ParentID],
@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Parent] [t]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 1
 

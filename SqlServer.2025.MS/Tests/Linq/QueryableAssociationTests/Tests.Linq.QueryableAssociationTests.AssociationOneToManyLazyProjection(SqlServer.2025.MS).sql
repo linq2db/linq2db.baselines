@@ -1,10 +1,10 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
@@ -13,7 +13,7 @@ AS RETURN
   UNION ALL
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -57,7 +57,7 @@ FROM
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -93,7 +93,7 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -122,7 +122,7 @@ FROM
 				dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
 		) [t2]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))

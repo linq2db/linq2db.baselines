@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[One]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[r].[Zero] IS DISTINCT FROM [r].[Zero]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[r].[Null] IS DISTINCT FROM [r].[Null]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[Zero]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 WHERE
 	[r].[One] IS DISTINCT FROM [r].[Null]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[r].[Zero] IS DISTINCT FROM [r].[Null]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -61,7 +61,7 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[One]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -70,7 +70,7 @@ FROM
 WHERE
 	[r].[Zero] IS NOT DISTINCT FROM [r].[Zero]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -79,7 +79,7 @@ FROM
 WHERE
 	[r].[Null] IS NOT DISTINCT FROM [r].[Null]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -88,7 +88,7 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[Zero]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -97,7 +97,7 @@ FROM
 WHERE
 	[r].[One] IS NOT DISTINCT FROM [r].[Null]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)

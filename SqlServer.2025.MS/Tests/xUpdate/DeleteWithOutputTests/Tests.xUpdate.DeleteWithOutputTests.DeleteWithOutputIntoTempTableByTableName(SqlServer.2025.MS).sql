@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[s].[Id],
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [s]
 OUTPUT
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[s].[Id] > 3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -47,7 +47,7 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

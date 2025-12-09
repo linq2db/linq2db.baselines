@@ -6,7 +6,7 @@ FROM [Customers] AS [c]
 WHERE @ef_filter__p0 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @CompanyName NVarChar(40) -- String
 SET     @CompanyName = N'Alfreds Futterkiste'
 DECLARE @CustomerId NVarChar(5) -- String

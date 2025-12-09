@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	NULLIF([s].[Int], 2)
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[s].[Int] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[s].[Int] <> 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	NULLIF([s].[Int], 4)
@@ -34,7 +34,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 WHERE
 	[s].[Int] = 4
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[s].[Int] <> 4
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[s].[Int]
@@ -61,7 +61,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -70,14 +70,14 @@ FROM
 WHERE
 	1 = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
 FROM
 	[Src] [s]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	NULLIF([s].[NullableInt], 2)
@@ -86,7 +86,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -95,7 +95,7 @@ FROM
 WHERE
 	[s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -104,7 +104,7 @@ FROM
 WHERE
 	NOT ([s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	NULLIF([s].[NullableInt], 4)
@@ -113,7 +113,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -122,7 +122,7 @@ FROM
 WHERE
 	[s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -131,7 +131,7 @@ FROM
 WHERE
 	NOT ([s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[s].[NullableInt]
@@ -140,7 +140,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -149,7 +149,7 @@ FROM
 WHERE
 	[s].[NullableInt] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)

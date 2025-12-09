@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[a_Parent].[ParentID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[a_Parent].[ParentID]

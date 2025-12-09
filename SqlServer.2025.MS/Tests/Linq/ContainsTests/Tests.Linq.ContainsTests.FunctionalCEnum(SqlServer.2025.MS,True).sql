@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
 DECLARE @In_1 VarChar(20) -- AnsiString
@@ -11,7 +11,7 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
 
@@ -22,7 +22,7 @@ FROM
 WHERE
 	([s].[CEnum] IN (@In) OR [s].[CEnum] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = N'___Value3___'
 DECLARE @In_1 VarChar(20) -- AnsiString
@@ -35,7 +35,7 @@ FROM
 WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = N'___Value2___'
 
@@ -46,7 +46,7 @@ FROM
 WHERE
 	([s].[CEnum] NOT IN (@NotIn) AND [s].[CEnum] IS NOT NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = N'___Value3___'
 DECLARE @NotIn_1 VarChar(20) -- AnsiString

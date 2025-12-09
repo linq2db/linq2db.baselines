@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Issue1403Tests_2]
 (
@@ -11,7 +11,7 @@ VALUES
 	N'New event'
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[event_id],

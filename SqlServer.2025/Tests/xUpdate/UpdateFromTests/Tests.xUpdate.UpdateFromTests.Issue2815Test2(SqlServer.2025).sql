@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 UPDATE
 	[ext]
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

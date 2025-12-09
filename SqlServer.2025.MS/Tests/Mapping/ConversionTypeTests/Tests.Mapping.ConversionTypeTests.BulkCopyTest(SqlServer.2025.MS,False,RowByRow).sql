@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(50) -- String
@@ -15,7 +15,7 @@ VALUES
 	@Data
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],
@@ -25,7 +25,7 @@ FROM
 ORDER BY
 	[r].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],

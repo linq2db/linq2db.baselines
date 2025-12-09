@@ -1,15 +1,15 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [TransactionScopeTable]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [TransactionScopeTable]
 (
 	[Id] Int NOT NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -20,7 +20,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -31,7 +31,7 @@ VALUES
 	2
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -42,7 +42,7 @@ VALUES
 	3
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
@@ -51,7 +51,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [TransactionScopeTable]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -17,7 +17,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @True) = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -51,7 +51,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], @False) = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -66,7 +66,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -83,7 +83,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], IIF([r].[Id] % 2 = 1, 1, 0)) = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

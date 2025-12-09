@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [TestTable]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [TestTable]
 (
@@ -14,7 +14,7 @@ CREATE TABLE [TestTable]
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[TestTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [TestTable]
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -19,7 +19,7 @@ VALUES
 	@ClaimedKeyTypeN
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id],

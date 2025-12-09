@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [p]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[p].[ParentID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Parent]
 (
@@ -31,7 +31,7 @@ FROM
 			[GrandChild] [c_2]
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[c_1].[ParentID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [p]
 FROM

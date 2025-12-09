@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[OrderID],
@@ -30,7 +30,7 @@ FROM
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[e].[IsDeleted],

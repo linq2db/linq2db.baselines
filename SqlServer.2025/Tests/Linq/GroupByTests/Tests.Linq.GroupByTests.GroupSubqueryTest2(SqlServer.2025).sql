@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[pmp1].[ChildID]
@@ -13,7 +13,7 @@ FROM
 				[pmp].[ParentID]
 		) [pmp_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

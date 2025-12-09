@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -12,7 +12,7 @@ SELECT
 			[c_1].[ParentID] = @p
 	), 1, 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = -1
 

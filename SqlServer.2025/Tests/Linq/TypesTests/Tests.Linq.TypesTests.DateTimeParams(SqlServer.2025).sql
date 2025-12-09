@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @dateTime DateTime
 SET     @dateTime = DATETIME2FROMPARTS(1992, 1, 11, 1, 11, 21, 1000000, 7)
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[t].[DateTimeValue] > @dateTime
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @dateTime DateTime
 SET     @dateTime = DATETIME2FROMPARTS(1993, 1, 11, 1, 11, 21, 1000000, 7)
 

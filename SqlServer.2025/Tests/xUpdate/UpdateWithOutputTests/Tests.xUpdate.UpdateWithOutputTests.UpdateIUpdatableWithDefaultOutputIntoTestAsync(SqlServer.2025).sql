@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 UPDATE
 	[TableWithData]
@@ -18,7 +18,7 @@ INTO [destination]
 WHERE
 	[TableWithData].[Id] > 3
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

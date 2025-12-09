@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'%C%'
 

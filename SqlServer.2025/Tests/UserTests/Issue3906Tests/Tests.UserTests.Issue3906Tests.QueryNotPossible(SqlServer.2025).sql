@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -11,7 +11,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InfeedAdviceID Int -- Int32
 SET     @InfeedAdviceID = 1
 DECLARE @Quantity Int -- Int32
@@ -28,7 +28,7 @@ VALUES
 	@Quantity
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Nr Int -- Int32
@@ -45,7 +45,7 @@ VALUES
 	@Nr
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[infeed].[Id],

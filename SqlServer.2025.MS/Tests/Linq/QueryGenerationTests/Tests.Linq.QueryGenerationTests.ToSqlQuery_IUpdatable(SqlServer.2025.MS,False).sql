@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -11,7 +11,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @newValue Int -- Int32
 SET     @newValue = 123
 
@@ -20,7 +20,7 @@ UPDATE
 SET
 	[Value] = @newValue
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id],

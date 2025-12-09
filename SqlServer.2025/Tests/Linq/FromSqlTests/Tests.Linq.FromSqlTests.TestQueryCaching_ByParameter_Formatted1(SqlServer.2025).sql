@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = NULL
 
@@ -9,7 +9,7 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -20,7 +20,7 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = NULL
 
@@ -31,7 +31,7 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 2
 
@@ -42,7 +42,7 @@ FROM
 		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 3
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [gc]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[gc].[GrandChildID] IN (1001, 1002)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -21,7 +21,7 @@ VALUES
 	1001
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -36,7 +36,7 @@ VALUES
 	1002
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[gc].[ParentID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [gc]
 FROM
@@ -54,7 +54,7 @@ FROM
 WHERE
 	[a_Parent].[ParentID] = 1 AND [gc].[GrandChildID] IN (1001, 1002)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)

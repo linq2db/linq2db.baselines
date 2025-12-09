@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[ParentID] > 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 UPDATE
 	[p]
@@ -19,7 +19,7 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 

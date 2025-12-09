@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -9,7 +9,7 @@ FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[Id],

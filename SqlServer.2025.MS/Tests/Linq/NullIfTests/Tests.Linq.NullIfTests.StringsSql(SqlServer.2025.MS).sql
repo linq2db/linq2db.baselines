@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	NULLIF([s].[String], N'abc')
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[s].[String] = N'abc' OR [s].[String] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	NOT ([s].[String] = N'abc' OR [s].[String] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	NULLIF([s].[String], N'xyz')
@@ -34,7 +34,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 WHERE
 	[s].[String] = N'xyz' OR [s].[String] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 WHERE
 	NOT ([s].[String] = N'xyz' OR [s].[String] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[s].[String]
@@ -61,7 +61,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -70,7 +70,7 @@ FROM
 WHERE
 	[s].[String] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -79,7 +79,7 @@ FROM
 WHERE
 	[s].[String] IS NOT NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	NULLIF([s].[NullableString], N'abc')
@@ -88,7 +88,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -97,7 +97,7 @@ FROM
 WHERE
 	[s].[NullableString] = N'abc' OR [s].[NullableString] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -106,7 +106,7 @@ FROM
 WHERE
 	NOT ([s].[NullableString] = N'abc' OR [s].[NullableString] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	NULLIF([s].[NullableString], N'xyz')
@@ -115,7 +115,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -124,7 +124,7 @@ FROM
 WHERE
 	[s].[NullableString] = N'xyz' OR [s].[NullableString] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -133,7 +133,7 @@ FROM
 WHERE
 	NOT ([s].[NullableString] = N'xyz' OR [s].[NullableString] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[s].[NullableString]
@@ -142,7 +142,7 @@ FROM
 ORDER BY
 	[s].[Int]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -151,7 +151,7 @@ FROM
 WHERE
 	[s].[NullableString] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)

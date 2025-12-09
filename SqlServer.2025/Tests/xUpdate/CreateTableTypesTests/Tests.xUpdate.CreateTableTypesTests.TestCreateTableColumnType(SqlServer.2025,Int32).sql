@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int32 Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Int32
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int32 Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@Int32
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

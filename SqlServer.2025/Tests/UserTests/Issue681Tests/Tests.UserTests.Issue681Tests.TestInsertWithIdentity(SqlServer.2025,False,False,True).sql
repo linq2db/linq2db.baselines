@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Value Int -- Int32
 SET     @Value = 10
 

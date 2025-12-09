@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Parent]
 (
@@ -9,7 +9,7 @@ VALUES
 	1001
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Child]
 (
@@ -22,7 +22,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -37,7 +37,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -52,7 +52,7 @@ VALUES
 	2
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -67,7 +67,7 @@ VALUES
 	3
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Child]
 (
@@ -80,7 +80,7 @@ VALUES
 	2
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -95,7 +95,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -110,7 +110,7 @@ VALUES
 	2
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [GrandChild]
 (
@@ -125,7 +125,7 @@ VALUES
 	3
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [a_GrandChildren]
 FROM
@@ -135,7 +135,7 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [a_Children]
 FROM
@@ -144,7 +144,7 @@ FROM
 WHERE
 	[p].[ParentID] >= 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [c_1]
 FROM
@@ -152,7 +152,7 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [c_1]
 FROM
@@ -160,7 +160,7 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [c_1]
 FROM

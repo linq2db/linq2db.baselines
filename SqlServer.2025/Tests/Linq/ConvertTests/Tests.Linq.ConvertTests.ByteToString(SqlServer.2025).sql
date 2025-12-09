@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))

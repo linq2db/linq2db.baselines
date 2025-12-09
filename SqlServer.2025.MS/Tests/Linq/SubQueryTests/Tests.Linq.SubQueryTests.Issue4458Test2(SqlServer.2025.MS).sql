@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -18,7 +18,7 @@ WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[i].[Id],

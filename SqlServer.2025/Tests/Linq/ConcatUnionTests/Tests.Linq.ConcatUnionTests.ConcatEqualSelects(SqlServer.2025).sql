@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[p].[ParentID] + 1,
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[p_1].[ParentID] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],
