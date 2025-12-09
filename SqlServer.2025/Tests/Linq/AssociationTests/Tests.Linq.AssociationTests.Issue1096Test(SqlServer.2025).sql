@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Pk Int -- Int32
 SET     @Pk = 1
 DECLARE @Id Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@TargetName
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TaskId Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Actual
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT DISTINCT
 	[t].[Pk],

@@ -1,6 +1,6 @@
 ﻿
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -26,7 +26,7 @@ FROM
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[c_1].[Id]

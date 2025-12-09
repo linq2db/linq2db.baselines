@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -8,7 +8,7 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -18,7 +18,7 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -28,7 +28,7 @@ SELECT TOP (@take)
 FROM
 	[Child] [ch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 3
 

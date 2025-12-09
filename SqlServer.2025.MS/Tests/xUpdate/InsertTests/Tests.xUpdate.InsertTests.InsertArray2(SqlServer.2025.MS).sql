@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t].[ID] > 1000
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @arr VarBinary(8000) -- Binary
 SET     @arr = NULL
 
@@ -23,7 +23,7 @@ VALUES
 	@arr
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[t].[ID],
@@ -38,7 +38,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t]
 FROM

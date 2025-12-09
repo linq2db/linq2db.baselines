@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[c_1].[ParentID],
@@ -15,7 +15,7 @@ WHERE
 			[c_1].[ParentID] = [p].[ParentID]
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],
@@ -23,7 +23,7 @@ SELECT
 FROM
 	[Child] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

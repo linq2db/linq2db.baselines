@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[inner_1].[Count_1]
@@ -14,7 +14,7 @@ FROM
 				[g_1].[GuidValue]
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],

@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
 FROM
 	[Child] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 WITH [CTE1_] ([c1])
 AS
@@ -20,7 +20,7 @@ SELECT
 FROM
 	[CTE1_] [t2]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 WITH [CTE1_] ([c1])
 AS
@@ -35,7 +35,7 @@ SELECT
 FROM
 	[CTE1_] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 WITH [CTE1_] ([c1])
 AS

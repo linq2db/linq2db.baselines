@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	MAX([c_1].[ChildID]),
@@ -11,21 +11,21 @@ FROM
 GROUP BY
 	[g_1].[ParentID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	MAX([t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	MAX(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	MAX(DISTINCT [t1].[ParentID])

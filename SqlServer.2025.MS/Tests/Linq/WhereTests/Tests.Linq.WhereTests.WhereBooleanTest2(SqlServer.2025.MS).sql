@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -7,7 +7,7 @@ SELECT
 FROM
 	[WhereCases] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -29,7 +29,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -51,7 +51,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -62,7 +62,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -73,7 +73,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 1 AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -84,7 +84,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -95,7 +95,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -106,7 +106,7 @@ FROM
 WHERE
 	[t].[BoolValue] = 0 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -117,7 +117,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -129,7 +129,7 @@ WHERE
 	([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -140,7 +140,7 @@ FROM
 WHERE
 	NOT (([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -151,7 +151,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -162,7 +162,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -173,7 +173,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] = 1 AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -184,7 +184,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] = 1 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -195,7 +195,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -206,7 +206,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -217,7 +217,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -228,7 +228,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -239,7 +239,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -250,7 +250,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -261,7 +261,7 @@ FROM
 WHERE
 	[t].[NullableBoolValue] IS NULL AND [t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -272,7 +272,7 @@ FROM
 WHERE
 	NOT ([t].[NullableBoolValue] IS NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -284,7 +284,7 @@ WHERE
 	[t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -295,7 +295,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -307,7 +307,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND
 	[t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -318,7 +318,7 @@ FROM
 WHERE
 	NOT (NOT ([t].[BoolValue] = 0 AND ([t].[NullableBoolValue] = 0 OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -330,7 +330,7 @@ WHERE
 	[t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND
 	[t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -341,7 +341,7 @@ FROM
 WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -353,7 +353,7 @@ WHERE
 	NOT ([t].[BoolValue] = 0 AND [t].[NullableBoolValue] = 0 AND [t].[NullableBoolValue] IS NOT NULL) AND
 	[t].[Id] > 0
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t].[Id],

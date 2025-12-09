@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @p Int -- Int32
@@ -39,7 +39,7 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @paramCopy Int -- Int32
@@ -80,7 +80,7 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32
@@ -121,7 +121,7 @@ WHERE
 			[p_2].[PersonID] = @paramCopy
 	))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @p Int -- Int32
@@ -162,7 +162,7 @@ WHERE
 			@p_1 <> [p_2].[PersonID]
 	))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32
@@ -203,7 +203,7 @@ WHERE
 			[p_2].[PersonID] = @paramCopy
 	))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @paramCopy Int -- Int32

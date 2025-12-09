@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[ChildID],
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN [Person] [p2] ON [x].[ParentID] = [p2].[PersonID]
 		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[ChildID],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -19,7 +19,7 @@ VALUES
 	@SomeNullableDateTimeOffset
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset DateTimeOffset
@@ -36,7 +36,7 @@ VALUES
 	@SomeDateTimeOffset
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @clientSideIn DateTimeOffset
 SET     @clientSideIn = DATETIMEOFFSETFROMPARTS(2019, 8, 8, 8, 8, 18, 0, 0, 0, 7)
 

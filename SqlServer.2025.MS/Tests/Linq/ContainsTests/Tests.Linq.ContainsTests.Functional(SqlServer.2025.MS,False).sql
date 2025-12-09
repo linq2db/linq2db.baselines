@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[s].[Id]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[s].[Int] IN (-1, -2)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[s].[Id]
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[s].[Int] IN (-1, NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[s].[Id]
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[s].[Int] IN (-1, 2)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[s].[Id]
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[s].[Int] NOT IN (NULL, 2)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[s].[Id]

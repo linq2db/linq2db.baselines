@@ -1,22 +1,22 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[Parent] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[Child] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[GrandChild] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -29,7 +29,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -42,7 +42,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -55,7 +55,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 20
 
@@ -68,7 +68,7 @@ VALUES
 	@Id
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @LeftId Int -- Int32
@@ -89,7 +89,7 @@ VALUES
 	@RightId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 MERGE INTO [GrandChild] [Target]
 USING (
@@ -115,7 +115,7 @@ VALUES
 )
 ;
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[GrandChildID],

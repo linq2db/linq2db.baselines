@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[it_1].[IsActive],
@@ -15,7 +15,7 @@ GROUP BY
 	[it_1].[IsActive],
 	[it_1].[Other]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ID],

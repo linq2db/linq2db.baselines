@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @currentDate DateTime
 SET     @currentDate = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @currentDate_1 DateTime2

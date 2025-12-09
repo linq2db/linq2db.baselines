@@ -1,6 +1,6 @@
 ﻿INSERT BULK [Issue4460Table](Id, Code, Name, Surname)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Code],

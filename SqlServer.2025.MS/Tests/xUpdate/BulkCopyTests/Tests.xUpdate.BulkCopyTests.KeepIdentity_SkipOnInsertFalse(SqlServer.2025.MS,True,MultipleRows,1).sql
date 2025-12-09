@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -13,11 +13,11 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SET IDENTITY_INSERT [AllTypes] ON
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [AllTypes]
 (
@@ -28,11 +28,11 @@ VALUES
 (13,200),
 (23,300)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SET IDENTITY_INSERT [AllTypes] OFF
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -46,7 +46,7 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

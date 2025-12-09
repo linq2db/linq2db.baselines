@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[FirstName],
@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[PersonID],
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[Patient] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 MERGE INTO [Person] [Target]
 USING (

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564A'
 DECLARE @StringValue NVarChar(20) -- String
@@ -15,7 +15,7 @@ VALUES
 	@StringValue
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564B'
 DECLARE @IntValue Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@IntValue
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)

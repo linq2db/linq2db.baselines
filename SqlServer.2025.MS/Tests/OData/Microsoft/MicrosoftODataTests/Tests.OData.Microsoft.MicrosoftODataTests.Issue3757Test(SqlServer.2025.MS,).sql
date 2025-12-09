@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[ID],
@@ -10,7 +10,7 @@ FROM
 	[Issue3757Level1] [m_1]
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[l1].[ID],

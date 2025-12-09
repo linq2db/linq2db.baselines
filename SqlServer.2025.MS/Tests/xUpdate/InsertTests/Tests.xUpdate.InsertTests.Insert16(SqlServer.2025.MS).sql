@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @name Int -- Int32
 SET     @name = 8
 DECLARE @idx Int -- Int32
@@ -25,7 +25,7 @@ VALUES
 	'M'
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM

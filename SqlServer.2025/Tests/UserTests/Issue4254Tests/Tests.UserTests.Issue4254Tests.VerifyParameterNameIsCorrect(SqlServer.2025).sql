@@ -1,16 +1,16 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [issue_4254_media_items]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [issue_4254_media_items]
 	CONSTRAINT [PK_issue_4254_media_items] PRIMARY KEY CLUSTERED ([id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [issue_4254_media_item_user_share]
 (
@@ -32,7 +32,7 @@ CREATE TABLE [issue_4254_media_item_user_share]
 	CONSTRAINT [PK_issue_4254_media_item_user_share] PRIMARY KEY CLUSTERED ([id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 (
@@ -43,7 +43,7 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 	CONSTRAINT [PK_issue_4254_media_item_to_media_item_categories] PRIMARY KEY CLUSTERED ([id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now DateTime2
@@ -75,7 +75,7 @@ WHERE
 			[y_1].[expires_at] > @now
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @userId UniqueIdentifier -- Guid
@@ -113,7 +113,7 @@ WHERE
 			[y_2].[expires_at] > @now
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now DateTime2
@@ -145,7 +145,7 @@ WHERE
 			[y_1].[expires_at] > @now
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 DECLARE @userId UniqueIdentifier -- Guid
@@ -183,15 +183,15 @@ WHERE
 			[y_2].[expires_at] > @now
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 

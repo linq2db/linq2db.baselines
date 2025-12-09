@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(4000) -- String
@@ -15,7 +15,7 @@ VALUES
 	@SomeText
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[e].[Id],
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[e].[Id],

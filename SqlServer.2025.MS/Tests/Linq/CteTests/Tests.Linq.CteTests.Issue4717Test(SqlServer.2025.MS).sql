@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Issue4717Address]
 (
@@ -17,7 +17,7 @@ VALUES
 	N'12345'
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Issue4717Warehouse]
 (
@@ -32,7 +32,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [Issue4717UnitOfMeasure]
 (
@@ -47,7 +47,7 @@ VALUES
 	N'ea'
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -66,7 +66,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
 
@@ -85,7 +85,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 DECLARE @includedProductId Int -- Int32
@@ -104,7 +104,7 @@ VALUES
 	10
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -121,7 +121,7 @@ VALUES
 	10
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 

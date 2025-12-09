@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 105
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 101
 DECLARE @Value NChar(2) -- StringFixedLength
@@ -25,7 +25,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 DECLARE @Value NChar(2) -- StringFixedLength
@@ -42,7 +42,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 103
 DECLARE @Value NChar -- StringFixedLength
@@ -59,7 +59,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 104
 DECLARE @Value NChar -- StringFixedLength
@@ -76,7 +76,7 @@ VALUES
 	@Value
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],
@@ -88,7 +88,7 @@ WHERE
 ORDER BY
 	[r].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[ID],
@@ -101,7 +101,7 @@ WHERE
 ORDER BY
 	[r].[ID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 105
 

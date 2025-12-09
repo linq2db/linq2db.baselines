@@ -1,19 +1,19 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.SameTableName END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.TestSchema_SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.TestSchema_SameTableName END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE TestSchema.SameTableName END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Doctor') AND type in (N'U'))
 BEGIN DROP TABLE Doctor END
@@ -27,18 +27,18 @@ BEGIN DROP TABLE InheritanceParent END
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('InheritanceChild') AND type in (N'U'))
 BEGIN DROP TABLE InheritanceChild END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TestProcedure' AND schema_id = SCHEMA_ID('TestSchema'))
 	DROP PROCEDURE TestSchema.TestProcedure
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'SchemaTableFunction' AND schema_id = SCHEMA_ID('TestSchema'))
 BEGIN DROP FUNCTION TestSchema.SchemaTableFunction
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE InheritanceParent
 (
@@ -48,7 +48,7 @@ CREATE TABLE InheritanceParent
 )
 ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE InheritanceChild
 (
@@ -59,7 +59,7 @@ CREATE TABLE InheritanceChild
 )
 ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person Table
 
@@ -77,23 +77,23 @@ CREATE TABLE Person
 )
 ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES (N'Jürgen', N'König', 'Ko', 'M')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Doctor Table Extension
 
@@ -109,11 +109,11 @@ CREATE TABLE Doctor
 )
 ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Patient Table Extension
 
@@ -129,11 +129,11 @@ CREATE TABLE Patient
 )
 ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_SelectByKey
 
@@ -141,7 +141,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectB
 BEGIN DROP Procedure Person_SelectByKey
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_SelectByKey
 	@id int
@@ -149,11 +149,11 @@ AS
 
 SELECT * FROM Person WHERE PersonID = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectByKey TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_SelectByKeyLowercase
 
@@ -161,7 +161,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectB
 BEGIN DROP Procedure Person_SelectByKeyLowercase
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_SelectByKeyLowercase
 	@id int
@@ -169,36 +169,36 @@ AS
 
 SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectByKeyLowercase TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_SelectAll
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectAll')
 BEGIN DROP Procedure Person_SelectAll END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_SelectAll
 AS
 
 SELECT * FROM Person
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectAll TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_SelectByName
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectByName')
 BEGIN DROP Procedure Person_SelectByName END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_SelectByName
 	@firstName nvarchar(50),
@@ -212,11 +212,11 @@ FROM
 WHERE
 	FirstName = @firstName AND LastName = @lastName
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_SelectListByName
 
@@ -224,7 +224,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectL
 BEGIN DROP Procedure Person_SelectListByName
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_SelectListByName
 	@firstName nvarchar(50),
@@ -238,18 +238,18 @@ FROM
 WHERE
 	FirstName like @firstName AND LastName like @lastName
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_Insert
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert')
 BEGIN DROP Procedure Person_Insert END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_Insert
 	@FirstName  nvarchar(50),
@@ -265,18 +265,18 @@ VALUES
 
 SELECT Cast(SCOPE_IDENTITY() as int) PersonID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_Insert TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_Insert_OutputParameter
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert_OutputParameter')
 BEGIN DROP Procedure Person_Insert_OutputParameter END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_Insert_OutputParameter
 	@FirstName  nvarchar(50),
@@ -293,18 +293,18 @@ VALUES
 
 SET @PersonID = Cast(SCOPE_IDENTITY() as int)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_Insert_OutputParameter TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_Update
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Update')
 BEGIN DROP Procedure Person_Update END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_Update
 	@PersonID   int,
@@ -324,18 +324,18 @@ SET
 WHERE
 	PersonID = @PersonID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_Update TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Person_Delete
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Delete')
 BEGIN DROP Procedure Person_Delete END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Person_Delete
 	@PersonID int
@@ -343,18 +343,18 @@ AS
 
 DELETE FROM Person WHERE PersonID = @PersonID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_Delete TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Patient_SelectAll
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_SelectAll')
 BEGIN DROP Procedure Patient_SelectAll END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Patient_SelectAll
 AS
@@ -366,18 +366,18 @@ FROM
 WHERE
 	Patient.PersonID = Person.PersonID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Patient_SelectAll TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Patient_SelectByName
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_SelectByName')
 BEGIN DROP Procedure Patient_SelectByName END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure Patient_SelectByName
 	@firstName nvarchar(50),
@@ -392,18 +392,18 @@ WHERE
 	Patient.PersonID = Person.PersonID
 	AND FirstName = @firstName AND LastName = @lastName
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- VariableResults
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'VariableResults')
 BEGIN DROP Procedure VariableResults END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE VariableResults
 	@ReturnFullRow bit = 1
@@ -422,14 +422,14 @@ BEGIN
 			2   as Code
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- OutRefTest
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefTest')
 BEGIN DROP Procedure OutRefTest END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure OutRefTest
 	@ID             int,
@@ -445,14 +445,14 @@ SET @inputOutputID  = @ID + @inputOutputID
 SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- OutRefEnumTest
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefEnumTest')
 BEGIN DROP Procedure OutRefEnumTest END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure OutRefEnumTest
 	@str            varchar(50),
@@ -463,14 +463,14 @@ AS
 SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Data Types test
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes') AND type in (N'U'))
 BEGIN DROP TABLE AllTypes END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE AllTypes
 (
@@ -605,7 +605,7 @@ CREATE TABLE AllTypes
 
 ) ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO AllTypes
 (
@@ -644,12 +644,12 @@ SELECT
 	  '22322',    '3333',  2345,
 	'<root><element strattr="strvalue" intattr="12345"/></root>'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes2') AND type in (N'U'))
 BEGIN DROP TABLE AllTypes2 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE AllTypes2
 (
@@ -665,7 +665,7 @@ CREATE TABLE AllTypes2
 
 ) ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO AllTypes2
 SELECT
@@ -680,63 +680,63 @@ SELECT
 	Cast(geography::STGeomFromText('LINESTRING(-122.360 47.656, -122.343 47.656)', 4326) as geography),
 	Cast(geometry::STGeomFromText('LINESTRING (100 100, 20 180, 180 180)', 0) as geometry)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- GetParentByID function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'GetParentByID')
 BEGIN DROP FUNCTION GetParentByID
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentView') AND type in (N'V'))
 BEGIN DROP VIEW ParentView END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentChildView') AND type in (N'V'))
 BEGIN DROP VIEW ParentChildView END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Parent') AND type in (N'U'))
 BEGIN DROP TABLE Parent END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Child') AND type in (N'U'))
 BEGIN DROP TABLE Child END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('GrandChild') AND type in (N'U'))
 BEGIN DROP TABLE GrandChild END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Parent     (ParentID int, Value1 int,  _ID INT IDENTITY PRIMARY KEY)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Child      (ParentID int, ChildID int, _ID INT IDENTITY PRIMARY KEY)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT IDENTITY PRIMARY KEY)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This ChildID column', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'TABLE', @level1name=N'Child', @level2type=N'COLUMN', @level2name=N'ChildID'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE FUNCTION GetParentByID(@id int)
 RETURNS TABLE
@@ -746,7 +746,7 @@ RETURN
 	SELECT * FROM Parent WHERE ParentID = @id
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- ParentView
 
@@ -754,7 +754,7 @@ CREATE VIEW ParentView
 AS
 	SELECT * FROM Parent
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- ParentChildView
 
@@ -767,14 +767,14 @@ AS
 	FROM Parent p
 		LEFT JOIN Child ch ON p.ParentID = ch.ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- LinqDataTypes
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('LinqDataTypes') AND type in (N'U'))
 BEGIN DROP TABLE LinqDataTypes END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE LinqDataTypes
 (
@@ -792,29 +792,29 @@ CREATE TABLE LinqDataTypes
 	StringValue    nvarchar(50) NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE TestIdentity (
 	ID int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- IndexTable
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable2') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable2 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE IndexTable
 (
@@ -826,7 +826,7 @@ CREATE TABLE IndexTable
 	CONSTRAINT IX_IndexTable UNIQUE NONCLUSTERED (UniqueField)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE IndexTable2
 (
@@ -839,13 +839,13 @@ CREATE TABLE IndexTable2
 			ON DELETE CASCADE
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SelectImplicitColumn')
 BEGIN DROP Procedure SelectImplicitColumn
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE SelectImplicitColumn
 AS
@@ -853,13 +853,13 @@ BEGIN
 	SELECT 123
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'DuplicateColumnNames')
 BEGIN DROP Procedure DuplicateColumnNames
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE DuplicateColumnNames
 AS
@@ -867,12 +867,12 @@ BEGIN
 	SELECT 123 as id, '456' as id
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'Name.Test')
 BEGIN DROP TABLE [Name.Test] END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [Name.Test]
 (
@@ -880,12 +880,12 @@ CREATE TABLE [Name.Test]
 	[Name.Test] int
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID')
 BEGIN DROP TABLE [GuidID] END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [GuidID]
 (
@@ -893,24 +893,24 @@ CREATE TABLE [GuidID]
 	Field1 int
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID2')
 BEGIN DROP TABLE [GuidID2] END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [GuidID2]
 (
 	ID uniqueidentifier default(NewID()) PRIMARY KEY CLUSTERED
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'DecimalOverflow')
 BEGIN DROP TABLE [DecimalOverflow] END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [DecimalOverflow]
 (
@@ -921,7 +921,7 @@ CREATE TABLE [DecimalOverflow]
 	Decimal5 decimal(38,38)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [DecimalOverflow]
 SELECT  123456789012345.12345678901234567890,  1234567890123456789.91,  12.345678901234512345678901234567890,  1234567890123456789,  .12345678901234512345678901234567890 UNION ALL
@@ -933,12 +933,12 @@ SELECT -12345678901234.56789012345678,                           NULL,          
 SELECT  12345678901234.5678901234567,                            NULL,                                  NULL,                 NULL,                                  NULL UNION ALL
 SELECT -12345678901234.5678901234567,                            NULL,                                  NULL,                 NULL,                                  NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'SqlTypes')
 BEGIN DROP TABLE [SqlTypes] END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [SqlTypes]
 (
@@ -946,7 +946,7 @@ CREATE TABLE [SqlTypes]
 	HID hierarchyid,
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [SqlTypes]
 SELECT 1, hierarchyid::Parse('/')      UNION ALL
@@ -958,23 +958,23 @@ SELECT 6, hierarchyid::Parse('/2/1/')  UNION ALL
 SELECT 7, hierarchyid::Parse('/2/2/')  UNION ALL
 SELECT 8, hierarchyid::Parse('/2/1/1/')
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- merge test tables
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge1') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge1 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge2') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge2 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMergeIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestMergeIdentity END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE TestMerge1
 (
@@ -1012,7 +1012,7 @@ CREATE TABLE TestMerge1
 	FieldEnumNumber INT               NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE TestMerge2
 (
@@ -1050,7 +1050,7 @@ CREATE TABLE TestMerge2
 	FieldEnumNumber INT               NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE TestMergeIdentity
 (
@@ -1058,37 +1058,37 @@ CREATE TABLE TestMergeIdentity
 	Field  int NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- Generate schema
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaY') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaY END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaX') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaX END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaB') AND type in (N'U'))
 BEGIN DROP TABLE TestSchema.TestSchemaB END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaA') AND type in (N'U'))
 BEGIN
 	DROP TABLE TestSchema.TestSchemaA
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT  SCHEMA_NAME FROM    INFORMATION_SCHEMA.SCHEMATA WHERE   SCHEMA_NAME = 'TestSchema')
 BEGIN
 	DROP SCHEMA [TestSchema]
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 EXEC('CREATE SCHEMA [TestSchema] AUTHORIZATION [dbo]');
 
@@ -1098,7 +1098,7 @@ CREATE TABLE [dbo].[TestSchemaX]
 	[Field1]        int NOT NULL
 );
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [dbo].[TestSchemaY]
 (
@@ -1110,7 +1110,7 @@ CREATE TABLE [dbo].[TestSchemaY]
 	CONSTRAINT [FK_TestSchemaY_OtherID]           FOREIGN KEY (TestSchemaXID)       REFERENCES [TestSchemaX] ([TestSchemaXID])
 );
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [TestSchema].[TestSchemaA]
 (
@@ -1118,7 +1118,7 @@ CREATE TABLE [TestSchema].[TestSchemaA]
 	[Field1]        int NOT NULL
 );
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [TestSchema].[TestSchemaB]
 (
@@ -1132,12 +1132,12 @@ CREATE TABLE [TestSchema].[TestSchemaB]
 	CONSTRAINT [FK_TestSchema_TestSchemaBY_TargetTestSchemaA2] FOREIGN KEY ([Target_Test_Schema_A_ID]) REFERENCES [TestSchema].[TestSchemaA] ([TestSchemaAID])
 );
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'AddIssue792Record')
 	DROP Procedure AddIssue792Record
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure AddIssue792Record
 AS
@@ -1145,16 +1145,16 @@ BEGIN
 	INSERT INTO dbo.AllTypes(char20DataType) VALUES('issue792')
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 GRANT EXEC ON AddIssue792Record TO PUBLIC
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Issue1144') AND type in (N'U'))
 BEGIN DROP TABLE Issue1144 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Issue1144
 (
@@ -1162,38 +1162,38 @@ CREATE TABLE Issue1144
 	CONSTRAINT PK_Issue1144 PRIMARY KEY CLUSTERED (id ASC)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Column description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'COLUMN',@level2name=N'id'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Index description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'INDEX',@level2name=N'PK_Issue1144'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE dbo.SameTableName
 (
 	id	INT
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE dbo.TestSchema_SameTableName
 (
 	id	INT
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE TestSchema.SameTableName
 (
 	id	INT
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.Issue1115') AND type in (N'U'))
 BEGIN DROP TABLE dbo.Issue1115 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Issue1115
 (
@@ -1201,17 +1201,17 @@ CREATE TABLE Issue1115
 
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TableTypeTestProc')
 DROP PROC TableTypeTestProc
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'TestTableType')
 DROP TYPE TestTableType
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TYPE TestTableType AS TABLE
 (
@@ -1219,7 +1219,7 @@ CREATE TYPE TestTableType AS TABLE
 	Name NVARCHAR(10)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROC TableTypeTestProc (
 	@table TestTableType READONLY
@@ -1229,7 +1229,7 @@ BEGIN
 	SELECT * FROM @table AS Result
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
@@ -1237,7 +1237,7 @@ BEGIN
 	SELECT 1
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE FUNCTION TestSchema.SchemaTableFunction(@id int)
 RETURNS TABLE
@@ -1247,14 +1247,14 @@ RETURN
 	SELECT * FROM Parent WHERE ParentID = @id
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- PersonSearch
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'PersonSearch')
 BEGIN DROP Procedure PersonSearch END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE PersonSearch
 	@nameFilter	nvarchar(512)
@@ -1308,12 +1308,12 @@ BEGIN
 	Drop Table #PeopleIds;
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Issue1897')
 BEGIN DROP Procedure Issue1897 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE PROCEDURE dbo.Issue1897
 AS
@@ -1321,12 +1321,12 @@ BEGIN
 	RETURN 4
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'TF' AND name = 'Issue1921')
 BEGIN DROP FUNCTION Issue1921 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE FUNCTION dbo.Issue1921()
 RETURNS @table table (name sysname, objid    int)
@@ -1337,12 +1337,12 @@ BEGIN
 RETURN
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcParameters')
 BEGIN DROP Procedure QueryProcParameters END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure QueryProcParameters
 	@input          int,
@@ -1354,12 +1354,12 @@ SET @output1 = @input + 1
 SELECT * FROM Person
 SET @output2 = @input + 2
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcMultipleParameters')
 BEGIN DROP Procedure QueryProcMultipleParameters END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure QueryProcMultipleParameters
 	@input   int,
@@ -1374,12 +1374,12 @@ SET @output2 = @input + 2
 SELECT * FROM Doctor
 SET @output3 = @input + 3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcIntParameters')
 BEGIN DROP Procedure ExecuteProcIntParameters END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure ExecuteProcIntParameters
 	@input          int,
@@ -1389,12 +1389,12 @@ AS
 SET @output = @input + 1
 UPDATE Person SET FirstName = N'John' WHERE FirstName = N'John'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcStringParameters')
 BEGIN DROP Procedure ExecuteProcStringParameters END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE Procedure ExecuteProcStringParameters
 	@input          int,
@@ -1404,14 +1404,14 @@ AS
 SET @output = @input + 1
 SELECT N'издрасте'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- ScalarFunction function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'ScalarFunction')
 BEGIN DROP FUNCTION ScalarFunction
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE FUNCTION ScalarFunction(@value INT)
 RETURNS INT
@@ -1420,7 +1420,7 @@ BEGIN
 	RETURN @value
 END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> procedure!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> procedure parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters', @level2type=N'PARAMETER', @level2name=N'@input'
@@ -1429,24 +1429,24 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test>
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> scalar function!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'FUNCTION', @level1name=N'ScalarFunction'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> scalar function parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'FUNCTION', @level1name=N'ScalarFunction', @level2type=N'PARAMETER', @level2name=N'@value'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- test T4 name conflict
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.DataType') AND type in (N'U'))
 BEGIN DROP TABLE dbo.DataType END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE DataType
 (
 	id INT NOT NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE CollatedTable
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE CollatedTable
 (
@@ -1455,30 +1455,30 @@ CREATE TABLE CollatedTable
 	CaseInsensitive NVARCHAR(20) COLLATE Latin1_General_CI_AI NOT NULL
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 IF EXISTS (SELECT name FROM sys.sequences  WHERE name = N'TestSequence')
 	DROP SEQUENCE dbo.TestSequence
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE SEQUENCE dbo.TestSequence
 	START WITH 1
 	INCREMENT BY 1;
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 -- one-to-one (by primary key) relation for scaffold testing
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE Provider
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE Member
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Member(
 	MemberId INT IDENTITY(1,1) NOT NULL,
@@ -1486,7 +1486,7 @@ CREATE TABLE Member(
  CONSTRAINT PK_Member PRIMARY KEY (MemberId)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE Provider(
 	ProviderId INT           NOT NULL,
@@ -1494,7 +1494,7 @@ CREATE TABLE Provider(
  CONSTRAINT PK_Provider PRIMARY KEY (ProviderId)
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 ALTER TABLE Provider WITH CHECK ADD CONSTRAINT FK_Provider_Member FOREIGN KEY(ProviderId) REFERENCES Member (MemberId)
 

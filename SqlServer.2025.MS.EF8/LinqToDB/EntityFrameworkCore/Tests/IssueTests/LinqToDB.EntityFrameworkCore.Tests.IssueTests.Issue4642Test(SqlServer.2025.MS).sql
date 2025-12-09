@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 

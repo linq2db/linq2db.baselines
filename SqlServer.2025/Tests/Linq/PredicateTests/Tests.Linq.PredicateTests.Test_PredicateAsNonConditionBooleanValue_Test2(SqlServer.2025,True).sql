@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -13,7 +13,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -39,7 +39,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -65,7 +65,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -76,7 +76,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -91,7 +91,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -102,7 +102,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -117,7 +117,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -128,7 +128,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -143,7 +143,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -154,7 +154,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -169,7 +169,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -180,7 +180,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -195,7 +195,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -206,7 +206,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -221,7 +221,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -232,7 +232,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -247,7 +247,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -258,7 +258,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -273,7 +273,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -284,7 +284,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -299,7 +299,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -310,7 +310,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -325,7 +325,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -336,7 +336,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -351,7 +351,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -362,7 +362,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -377,7 +377,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -388,7 +388,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -403,7 +403,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -414,7 +414,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -429,7 +429,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -440,7 +440,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -455,7 +455,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -466,7 +466,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -481,7 +481,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -492,7 +492,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -507,7 +507,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -518,7 +518,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -533,7 +533,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -544,7 +544,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -559,7 +559,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -570,7 +570,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -585,7 +585,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -596,7 +596,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[g_2].[Key_1],
@@ -611,7 +611,7 @@ FROM
 GROUP BY
 	[g_2].[Key_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

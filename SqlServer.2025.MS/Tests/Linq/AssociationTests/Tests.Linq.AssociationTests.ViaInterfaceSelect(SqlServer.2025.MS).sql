@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -8,7 +8,7 @@ FROM
 	[MainEntity] [m_1]
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[x].[Id]

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test'
 DECLARE @LastName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -46,7 +46,7 @@ WHEN NOT MATCHED THEN
 		N'negative'
 	);
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -58,7 +58,7 @@ FROM
 WHERE
 	[p].[PersonID] = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -79,7 +79,7 @@ WHEN NOT MATCHED THEN
 		N'positive'
 	);
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 

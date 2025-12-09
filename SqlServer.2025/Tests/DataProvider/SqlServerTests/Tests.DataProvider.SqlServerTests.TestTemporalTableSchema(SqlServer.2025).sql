@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
@@ -13,7 +13,7 @@ DROP TABLE IF EXISTS TemporalTable4
 DROP TABLE IF EXISTS TemporalTable2History
 DROP TABLE IF EXISTS TemporalTable3History
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 -- simple temporal table
@@ -65,15 +65,15 @@ CREATE TABLE TemporalTable4
 	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
 ) WITH (SYSTEM_VERSIONING = ON)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 select @@version
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 				SELECT
@@ -111,7 +111,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 							name     = N'microsoft_database_tools_support'
 					) IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 				SELECT
@@ -130,7 +130,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 				WHERE
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 				SELECT
@@ -167,7 +167,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 						x.name = 'MS_Description' AND x.class = 1
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 				SELECT
@@ -187,7 +187,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 					ThisTableID,
 					Ordinal
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -207,7 +207,7 @@ SELECT
 							x.name = 'MS_Description' AND x.class = 1
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -233,7 +233,7 @@ SELECT
 							ORDINAL_POSITION = x.minor_id AND
 							x.name = 'MS_Description' AND x.class = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[AddIssue792Record] '
 DECLARE @params NVarChar(4000) -- String
@@ -241,7 +241,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[DuplicateColumnNames] '
 DECLARE @params NVarChar(4000) -- String
@@ -249,7 +249,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[ExecuteProcIntParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
@@ -257,7 +257,7 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[ExecuteProcStringParameters] @input, @output'
 DECLARE @params NVarChar(4000) -- String
@@ -265,11 +265,11 @@ SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String
@@ -277,11 +277,11 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 EXEC('SELECT * FROM [TestData].[dbo].[Issue1921]()')
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
@@ -289,7 +289,7 @@ SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr va
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[OutRefTest] @ID, @outputID, @inputOutputID, @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
@@ -297,7 +297,7 @@ SET     @params = N'@ID int, @outputID int, @inputOutputID int, @str varchar(50)
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Patient_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
@@ -305,7 +305,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Patient_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -313,7 +313,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_Delete] @PersonID'
 DECLARE @params NVarChar(4000) -- String
@@ -321,7 +321,7 @@ SET     @params = N'@PersonID int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_Insert] @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
@@ -329,7 +329,7 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_Insert_OutputParameter] @FirstName, @LastName, @MiddleName, @Gender, @PersonID'
 DECLARE @params NVarChar(4000) -- String
@@ -337,7 +337,7 @@ SET     @params = N'@FirstName nvarchar(50), @LastName nvarchar(50), @MiddleName
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_SelectAll] '
 DECLARE @params NVarChar(4000) -- String
@@ -345,7 +345,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_SelectByKey] @id'
 DECLARE @params NVarChar(4000) -- String
@@ -353,7 +353,7 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_SelectByKeyLowercase] @id'
 DECLARE @params NVarChar(4000) -- String
@@ -361,7 +361,7 @@ SET     @params = N'@id int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_SelectByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -369,7 +369,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_SelectListByName] @firstName, @lastName'
 DECLARE @params NVarChar(4000) -- String
@@ -377,7 +377,7 @@ SET     @params = N'@firstName nvarchar(50), @lastName nvarchar(50)'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[Person_Update] @PersonID, @FirstName, @LastName, @MiddleName, @Gender'
 DECLARE @params NVarChar(4000) -- String
@@ -385,7 +385,7 @@ SET     @params = N'@PersonID int, @FirstName nvarchar(50), @LastName nvarchar(5
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[PersonSearch] @nameFilter'
 DECLARE @params NVarChar(4000) -- String
@@ -393,13 +393,13 @@ SET     @params = N'@nameFilter nvarchar(512)'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestData].[dbo].[PersonSearch]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
 DECLARE @params NVarChar(4000) -- String
@@ -407,7 +407,7 @@ SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[QueryProcParameters] @input, @output1, @output2'
 DECLARE @params NVarChar(4000) -- String
@@ -415,7 +415,7 @@ SET     @params = N'@input int, @output1 int, @output2 int'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[SelectImplicitColumn] '
 DECLARE @params NVarChar(4000) -- String
@@ -423,7 +423,7 @@ SET     @params = N''
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[TableTypeTestProc] @table'
 DECLARE @params NVarChar(4000) -- String
@@ -431,13 +431,13 @@ SET     @params = N'@table [dbo].[TestTableType]'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestData].[dbo].[TableTypeTestProc]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[VariableResults] @ReturnFullRow'
 DECLARE @params NVarChar(4000) -- String
@@ -445,17 +445,17 @@ SET     @params = N'@ReturnFullRow bit'
 
 sp_describe_first_result_set
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestData].[dbo].[VariableResults]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 EXEC('SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)')
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[TestSchema].[TestProcedure] '
 DECLARE @params NVarChar(4000) -- String
@@ -464,7 +464,7 @@ SET     @params = N''
 sp_describe_first_result_set
 
 RollbackTransaction
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)

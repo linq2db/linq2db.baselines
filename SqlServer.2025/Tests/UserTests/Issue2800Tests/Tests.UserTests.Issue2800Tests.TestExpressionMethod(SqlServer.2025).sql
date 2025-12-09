@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Car] [x]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[Car] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -24,7 +24,7 @@ FROM
 WHERE
 	[x].[Name] <> N'Special' OR [x].[Name] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ SELECT
 FROM
 	[Car] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -42,7 +42,7 @@ FROM
 WHERE
 	[x].[Name] = N'Special'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ SELECT
 FROM
 	[Car] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -58,7 +58,7 @@ SELECT
 FROM
 	[Car] [x]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -66,7 +66,7 @@ SELECT
 FROM
 	[Car] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -76,7 +76,7 @@ FROM
 WHERE
 	[x].[Name] <> N'Special' OR [x].[Name] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -84,7 +84,7 @@ SELECT
 FROM
 	[Car] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x].[Id],
@@ -94,7 +94,7 @@ FROM
 WHERE
 	[x].[Name] = N'Special'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

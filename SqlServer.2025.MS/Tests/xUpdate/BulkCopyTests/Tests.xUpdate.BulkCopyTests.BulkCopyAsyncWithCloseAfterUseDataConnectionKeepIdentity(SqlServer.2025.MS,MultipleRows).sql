@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
@@ -11,7 +11,7 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 VALUES
 (1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

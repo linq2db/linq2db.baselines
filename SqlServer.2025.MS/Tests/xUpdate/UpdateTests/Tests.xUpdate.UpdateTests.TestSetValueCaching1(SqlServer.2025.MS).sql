@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @id Int -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Value1 UniqueIdentifier -- Guid
 SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id Int -- Int32
@@ -35,7 +35,7 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 

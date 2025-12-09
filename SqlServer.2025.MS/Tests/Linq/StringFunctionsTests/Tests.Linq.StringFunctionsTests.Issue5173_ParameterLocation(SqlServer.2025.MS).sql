@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	STRING_AGG(N'test:' + CAST([grp_1].[ch] AS VarChar(11)), N';')

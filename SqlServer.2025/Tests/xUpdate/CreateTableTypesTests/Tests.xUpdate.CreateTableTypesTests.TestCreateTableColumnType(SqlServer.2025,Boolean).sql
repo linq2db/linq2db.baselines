@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Boolean Bit -- Boolean
@@ -15,7 +15,7 @@ VALUES
 	@Boolean
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Boolean Bit -- Boolean
@@ -32,7 +32,7 @@ VALUES
 	@Boolean
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

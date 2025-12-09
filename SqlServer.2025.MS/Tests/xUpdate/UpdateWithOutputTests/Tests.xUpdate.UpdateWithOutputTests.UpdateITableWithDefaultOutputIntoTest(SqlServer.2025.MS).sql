@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 UPDATE
 	[t]
@@ -20,7 +20,7 @@ FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -29,7 +29,7 @@ SELECT
 FROM
 	[DestinationTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

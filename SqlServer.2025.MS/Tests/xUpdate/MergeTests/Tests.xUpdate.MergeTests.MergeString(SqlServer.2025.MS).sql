@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
@@ -34,7 +34,7 @@ VALUES
 )
 ;
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 1
 

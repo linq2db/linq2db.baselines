@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p].[Id],
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[p].[Nullable] < [p].[OtherNullable]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -20,7 +20,7 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p].[Id],
@@ -33,7 +33,7 @@ WHERE
 	[p].[Nullable] >= [p].[OtherNullable] OR [p].[Nullable] IS NULL OR
 	[p].[OtherNullable] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -43,7 +43,7 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p].[Id],
@@ -55,7 +55,7 @@ FROM
 WHERE
 	[p].[OtherNullable] > [p].[Nullable]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -65,7 +65,7 @@ SELECT
 FROM
 	[WhereCompareData] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p].[Id],
@@ -78,7 +78,7 @@ WHERE
 	[p].[OtherNullable] <= [p].[Nullable] OR [p].[OtherNullable] IS NULL OR
 	[p].[Nullable] IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
