@@ -1,30 +1,22 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[m_1].[Key_1],
-	[d].[NullableValue]
+	[m_1].[Id],
+	[m_1].[NullableValue]
 FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
+	[SampleClass] [m_1]
+ORDER BY
+	[m_1].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[m_1].[Key_1],
-	[d].[NotNullableValue]
+	[m_1].[Id],
+	[m_1].[NotNullableValue]
 FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
+	[SampleClass] [m_1]
+ORDER BY
+	[m_1].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
 
