@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'StrValue1'
 
@@ -12,7 +12,7 @@ FROM
 WHERE
 	[e].[StringValue] + N'1' = @p
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

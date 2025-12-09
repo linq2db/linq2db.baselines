@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -24,7 +24,7 @@ FROM
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -61,7 +61,7 @@ FROM
 				[d].[SubDetailValue]
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -100,7 +100,7 @@ FROM
 				[d].[Value]
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 20
 

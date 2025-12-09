@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [TestIdTrun]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [TestIdTrun]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [TestIdTrun]
 	CONSTRAINT [PK_TestIdTrun] PRIMARY KEY CLUSTERED ([ID])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [TestIdTrun]
 (
@@ -23,7 +23,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [TestIdTrun]
 (
@@ -34,7 +34,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -47,11 +47,11 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 TRUNCATE TABLE [TestIdTrun]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [TestIdTrun]
 (
@@ -62,7 +62,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [TestIdTrun]
 (
@@ -73,7 +73,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -86,7 +86,7 @@ ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE [TestIdTrun]
 

@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -22,7 +22,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'	'
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -39,7 +39,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'
 '
@@ -58,7 +58,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -75,7 +75,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -92,7 +92,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -109,7 +109,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -126,7 +126,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -143,7 +143,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -160,7 +160,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -177,7 +177,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -194,7 +194,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -211,7 +211,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -228,7 +228,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -245,7 +245,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -262,7 +262,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -279,7 +279,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -296,7 +296,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -313,7 +313,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'　'
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -330,7 +330,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = char(0)
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -347,7 +347,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = NULL
 DECLARE @Char NChar -- StringFixedLength
@@ -364,7 +364,7 @@ VALUES
 	@Char
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
@@ -379,7 +379,7 @@ WHERE
 ORDER BY
 	[t1].[ID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 

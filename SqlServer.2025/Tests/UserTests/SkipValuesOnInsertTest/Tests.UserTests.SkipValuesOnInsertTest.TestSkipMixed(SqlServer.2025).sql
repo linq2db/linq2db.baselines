@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Age Int -- Int32
 SET     @Age = 20
 DECLARE @Id Int -- Int32
@@ -43,7 +43,7 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],
@@ -54,7 +54,7 @@ FROM
 WHERE
 	[t].[Id] = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Age Int -- Int32
@@ -71,7 +71,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],
@@ -82,7 +82,7 @@ FROM
 WHERE
 	[t].[Id] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jessy'
 DECLARE @Age Int -- Int32
@@ -98,7 +98,7 @@ SET
 WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[Id],

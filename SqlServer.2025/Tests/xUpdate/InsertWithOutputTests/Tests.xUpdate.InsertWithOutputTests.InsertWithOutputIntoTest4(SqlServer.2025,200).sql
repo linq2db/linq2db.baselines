@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [c_1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @param Int -- Int32
@@ -33,7 +33,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[c_1].[ParentID],
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[TInserted] [c_1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[c_1].[ParentID],
@@ -51,7 +51,7 @@ FROM
 WHERE
 	[c_1].[ChildID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [c_1]
 FROM

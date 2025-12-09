@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	VECTORPROPERTY(CAST('[1, 2, 3]' AS VECTOR(3, float32)), 'Dimensions'),

@@ -1,11 +1,11 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -25,7 +25,7 @@ FROM
 WHERE
 	@param = [t1].[SmallIntValue]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ID],

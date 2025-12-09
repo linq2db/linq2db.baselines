@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -15,7 +15,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], 1) = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -47,7 +47,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], 0) = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -62,7 +62,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -79,7 +79,7 @@ FROM
 WHERE
 	Coalesce([r].[BooleanN], IIF([r].[Id] % 2 = 1, 1, 0)) = 1
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

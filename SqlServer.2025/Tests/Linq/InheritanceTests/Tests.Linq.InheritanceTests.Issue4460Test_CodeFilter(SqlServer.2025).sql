@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@Name
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child2'
 DECLARE @Id Int -- Int32
@@ -40,7 +40,7 @@ VALUES
 	@Age
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[e].[Code],

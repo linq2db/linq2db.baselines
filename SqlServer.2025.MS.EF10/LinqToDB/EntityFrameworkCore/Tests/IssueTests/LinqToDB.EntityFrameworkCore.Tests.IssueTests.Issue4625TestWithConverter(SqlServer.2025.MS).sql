@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @DateTimeOffsetWithConverter BigInt -- Int64
 SET     @DateTimeOffsetWithConverter = 1304956839836121088
 DECLARE @DateTimeOffsetNWithConverter BigInt -- Int64

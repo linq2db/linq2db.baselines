@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[t1].[Id] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[t1].[Id] = 2
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
@@ -27,7 +27,7 @@ FROM
 WHERE
 	[x].[Id] = @UserId
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@IndexId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@IndexId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 	@IndexId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -66,7 +66,7 @@ VALUES
 	@IndexId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -83,7 +83,7 @@ VALUES
 	@IndexId
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -108,7 +108,7 @@ VALUES
 	@SourceInstrumentCode
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -133,7 +133,7 @@ VALUES
 	@SourceInstrumentCode
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'aaa%'
 DECLARE @uptoDate DateTime2

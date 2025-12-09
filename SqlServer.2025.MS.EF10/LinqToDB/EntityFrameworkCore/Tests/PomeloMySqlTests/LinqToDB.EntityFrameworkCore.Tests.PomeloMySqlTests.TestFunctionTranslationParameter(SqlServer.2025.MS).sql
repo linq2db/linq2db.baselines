@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @value NVarChar(60) -- String
 SET     @value = N'%anything%'
 

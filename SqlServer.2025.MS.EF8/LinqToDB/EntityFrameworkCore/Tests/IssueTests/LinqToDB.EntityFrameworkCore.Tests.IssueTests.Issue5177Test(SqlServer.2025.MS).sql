@@ -7,7 +7,7 @@ INSERT INTO [Issue5177] ([Id], [Value])
 VALUES (@p0, @p1);
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (2)
 	[r].[Id],

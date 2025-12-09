@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Parent]
 (
@@ -9,7 +9,7 @@ VALUES
 	20000
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Child]
 (
@@ -22,7 +22,7 @@ VALUES
 	20000
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 UPDATE
 	[a_Parent]
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[child_1].[ChildID] = 10000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [x]
 FROM
@@ -42,7 +42,7 @@ FROM
 WHERE
 	[x].[ChildID] = 10000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [x]
 FROM

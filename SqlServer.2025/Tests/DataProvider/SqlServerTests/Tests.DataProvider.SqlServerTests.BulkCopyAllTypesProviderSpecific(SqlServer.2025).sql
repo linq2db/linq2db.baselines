@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [p]
 FROM
@@ -8,7 +8,7 @@ WHERE
 
 INSERT BULK [AllTypes](ID, bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType, smallmoneyDataType, intDataType, tinyintDataType, moneyDataType, floatDataType, realDataType, datetimeDataType, smalldatetimeDataType, charDataType, varcharDataType, textDataType, ncharDataType, nvarcharDataType, ntextDataType, binaryDataType, varbinaryDataType, imageDataType, uniqueidentifierDataType, sql_variantDataType, nvarchar_max_DataType, varchar_max_DataType, varbinary_max_DataType, xmlDataType, datetime2DataType, datetimeoffsetDataType, datetimeoffset0DataType, datetimeoffset1DataType, datetimeoffset2DataType, datetimeoffset3DataType, datetimeoffset4DataType, datetimeoffset5DataType, datetimeoffset6DataType, datetimeoffset7DataType, dateDataType, timeDataType)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[ID],
@@ -60,7 +60,7 @@ WHERE
 ORDER BY
 	[t].[ID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [p]
 FROM

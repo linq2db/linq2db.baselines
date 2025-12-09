@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Int -- Int32
@@ -15,7 +15,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@ChildID
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
@@ -49,7 +49,7 @@ VALUES
 	@ChildID
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
 DECLARE @ChildID Int -- Int32
@@ -66,7 +66,7 @@ VALUES
 	@ChildID
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1000
 
@@ -77,7 +77,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id AND [c_1].[ChildID] NOT IN (1000, 1001)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1000
 

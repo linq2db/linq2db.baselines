@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @value BigInt -- Int64
 SET     @value = NULL
 
@@ -14,7 +14,7 @@ FROM
 			[Person] [r]
 	) [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648
 

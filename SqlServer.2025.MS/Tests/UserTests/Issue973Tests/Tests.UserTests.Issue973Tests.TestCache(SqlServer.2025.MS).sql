@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -16,7 +16,7 @@ FROM
 WHERE
 	[o].[ParentID] IN (@p, @p_1, @p_2) OR [o].[ParentID] = @param
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -34,7 +34,7 @@ FROM
 WHERE
 	[o].[ParentID] IN (@p, @p_1, @p_2) OR [o].[ParentID] = @param
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32
@@ -52,7 +52,7 @@ FROM
 WHERE
 	[o].[ParentID] IN (@p, @p_1, @p_2) OR [o].[ParentID] = @param
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32

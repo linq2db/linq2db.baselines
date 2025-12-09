@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [r]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[r].[ID] >= 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
@@ -21,7 +21,7 @@ VALUES
 	@tt
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t].[ID],
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[t].[ID] = 1001
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [r]
 FROM

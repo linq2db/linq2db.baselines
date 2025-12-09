@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -10,7 +10,7 @@ FROM
 WHERE
 	[c_1].[ParentID] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ParentID],

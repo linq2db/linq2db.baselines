@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[Id],
@@ -27,7 +27,7 @@ FROM
 				[d].[Id]
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -39,7 +39,7 @@ WHERE
 ORDER BY
 	[m_1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[Id],
@@ -77,7 +77,7 @@ FROM
 				[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -89,7 +89,7 @@ WHERE
 ORDER BY
 	[m_1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[cond],
@@ -137,7 +137,7 @@ FROM
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[Id],
@@ -158,7 +158,7 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -170,7 +170,7 @@ WHERE
 ORDER BY
 	[m_1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[cond],
@@ -218,7 +218,7 @@ FROM
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[Id],
@@ -239,7 +239,7 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -251,7 +251,7 @@ WHERE
 ORDER BY
 	[m_1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_2].[Id],
@@ -271,7 +271,7 @@ FROM
 WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],

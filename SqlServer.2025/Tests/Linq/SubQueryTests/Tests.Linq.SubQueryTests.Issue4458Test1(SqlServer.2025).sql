@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -21,7 +21,7 @@ ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[i].[Id],
@@ -54,14 +54,14 @@ WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -70,7 +70,7 @@ SELECT
 FROM
 	[WarehouseStock] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	PARSE(N'345,98' as decimal(30, 2) USING N'de-DE')

@@ -1,6 +1,6 @@
 ﻿INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -10,7 +10,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -18,7 +18,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -28,7 +28,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -36,7 +36,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -46,7 +46,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -54,7 +54,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -64,7 +64,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -72,7 +72,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -82,7 +82,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -90,7 +90,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -100,7 +100,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -108,7 +108,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -118,7 +118,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -126,7 +126,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -136,7 +136,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -144,7 +144,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -154,7 +154,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -162,7 +162,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -172,7 +172,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -180,7 +180,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -190,7 +190,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -198,7 +198,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -208,7 +208,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -216,7 +216,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -226,7 +226,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -234,7 +234,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -244,7 +244,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -252,7 +252,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -262,7 +262,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -270,7 +270,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -280,7 +280,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -288,7 +288,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -298,7 +298,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -306,7 +306,7 @@ FROM
 
 INSERT ASYNC BULK [BulkCopyTable](Id, Value)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -316,7 +316,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DELETE [t1]
 FROM

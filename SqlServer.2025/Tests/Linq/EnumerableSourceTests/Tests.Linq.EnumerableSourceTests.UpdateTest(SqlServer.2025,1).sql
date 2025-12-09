@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 UPDATE
 	[u]
@@ -12,7 +12,7 @@ FROM
 WHERE
 	[u].[Id] = [r].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

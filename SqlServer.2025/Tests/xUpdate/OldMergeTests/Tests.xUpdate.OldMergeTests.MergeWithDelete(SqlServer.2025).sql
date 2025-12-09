@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[t1].[ID],
@@ -14,7 +14,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 MERGE INTO [LinqDataTypes] [Target]
 USING (

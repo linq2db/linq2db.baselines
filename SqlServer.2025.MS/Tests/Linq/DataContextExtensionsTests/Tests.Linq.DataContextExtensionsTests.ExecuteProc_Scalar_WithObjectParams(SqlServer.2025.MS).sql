@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32
@@ -6,7 +6,7 @@ SET     @output = 0
 
 ExecuteProcStringParameters
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32
@@ -14,7 +14,7 @@ SET     @output = 0
 
 ExecuteProcStringParameters
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32
@@ -22,7 +22,7 @@ SET     @output = 0
 
 ExecuteProcStringParameters
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32
@@ -30,7 +30,7 @@ SET     @output = 0
 
 ExecuteProcStringParameters
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32
@@ -38,7 +38,7 @@ SET     @output = 0
 
 ExecuteProcStringParameters
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -6,7 +6,7 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @patient Int -- Int32
 SET     @patient = 2
 
@@ -66,7 +66,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 ) = @patient THEN DELETE
 ;
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @patient Int -- Int32
 SET     @patient = 3
 

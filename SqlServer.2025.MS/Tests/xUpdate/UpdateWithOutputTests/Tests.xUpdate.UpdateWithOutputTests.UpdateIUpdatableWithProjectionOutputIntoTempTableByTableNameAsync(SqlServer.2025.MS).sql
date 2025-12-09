@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 UPDATE
 	[TableWithData_source]
@@ -29,7 +29,7 @@ INTO [tempdb]..[#DestinationTable_destination]
 WHERE
 	[TableWithData_source].[Id] > 3
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -38,7 +38,7 @@ SELECT
 FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

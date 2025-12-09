@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[s].[Int] IS DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	[s].[NullableInt] IS DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	[s].[Int] IS NOT DISTINCT FROM @value
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @value Int -- Int32
 SET     @value = 4
 

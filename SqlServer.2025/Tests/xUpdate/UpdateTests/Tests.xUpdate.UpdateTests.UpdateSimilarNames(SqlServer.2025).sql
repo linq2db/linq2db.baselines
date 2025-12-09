@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Parent]
 (
@@ -11,7 +11,7 @@ VALUES
 	20000
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Child]
 (
@@ -24,7 +24,7 @@ VALUES
 	20000
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 20000
 

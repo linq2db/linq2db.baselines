@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -9,14 +9,14 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cond Int -- Int32
 SET     @cond = 0
 
@@ -31,14 +31,14 @@ FROM
 WHERE
 	[d].[Usage] = @cond
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cond Int -- Int32
 SET     @cond = 1
 
@@ -53,14 +53,14 @@ FROM
 WHERE
 	[d].[Usage] = @cond
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -71,14 +71,14 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cond Int -- Int32
 SET     @cond = 0
 
@@ -93,14 +93,14 @@ FROM
 WHERE
 	[d].[Usage] = @cond
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cond Int -- Int32
 SET     @cond = 1
 
@@ -115,7 +115,7 @@ FROM
 WHERE
 	[d].[Usage] = @cond
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id]

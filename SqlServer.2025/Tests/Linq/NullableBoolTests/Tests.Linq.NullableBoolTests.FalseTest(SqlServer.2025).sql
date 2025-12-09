@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[t].[Value] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[t].[Value] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[Id],
@@ -28,7 +28,7 @@ FROM
 WHERE
 	[t].[Value] = 1 OR [t].[Value] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t].[Id],

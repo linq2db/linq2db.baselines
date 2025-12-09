@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 	@Location
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -44,7 +44,7 @@ VALUES
 	@DeviceType
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[DeviceType],
@@ -56,7 +56,7 @@ FROM
 ORDER BY
 	[t1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'TV00002'
 DECLARE @DeviceType NVarChar(4000) -- String
@@ -75,7 +75,7 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @SerialNumber NVarChar(4000) -- String
 SET     @SerialNumber = N'Disp00002'
 DECLARE @DeviceType NVarChar(4000) -- String
@@ -91,7 +91,7 @@ SET
 WHERE
 	[Issue4280].[Id] = @Id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[DeviceType],
