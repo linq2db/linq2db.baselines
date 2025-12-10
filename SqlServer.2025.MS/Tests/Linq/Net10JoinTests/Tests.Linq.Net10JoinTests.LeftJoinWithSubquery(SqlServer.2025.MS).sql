@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -16,7 +16,7 @@ FROM
 	) [p_1]
 		LEFT JOIN [Child] [c_1] ON [p_1].[ParentID] = [c_1].[ParentID]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ParentID],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[Parent] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ParentID],
