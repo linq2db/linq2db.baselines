@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2025
-DECLARE @separator NVarChar(4000) -- String
-SET     @separator = N', '
 
 SELECT
 	[g_1].[Id],
-	Coalesce(STRING_AGG(Coalesce([g_1].[NullableValue], N''), @separator), N''),
-	Coalesce(STRING_AGG([g_1].[NotNullableValue], @separator), N'')
+	Coalesce(STRING_AGG(Coalesce([g_1].[NullableValue], N''), N', '), N''),
+	Coalesce(STRING_AGG([g_1].[NotNullableValue], N', '), N'')
 FROM
 	[SampleClass] [g_1]
 GROUP BY

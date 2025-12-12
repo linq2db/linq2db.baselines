@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[p2].[ParentID],
@@ -7,7 +7,7 @@ FROM
 	[Parent] [p1]
 		RIGHT JOIN [Parent] [p2] ON [p1].[ParentID] = [p2].[ParentID] AND ([p1].[Value1] = [p2].[Value1] OR [p1].[Value1] IS NULL AND [p2].[Value1] IS NULL)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[ParentID],
