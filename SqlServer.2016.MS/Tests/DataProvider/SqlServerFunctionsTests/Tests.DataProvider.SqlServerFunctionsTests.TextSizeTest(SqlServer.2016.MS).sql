@@ -1,0 +1,9 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+
+SET TEXTSIZE 2048
+
+-- SqlServer.2016.MS SqlServer.2016
+
+SELECT
+	@@TEXTSIZE
+
