@@ -1,0 +1,192 @@
+﻿-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'bit')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'decimal')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'money')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'numeric')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'float')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000002E+308 as 'real')
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'bit')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'decimal')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'money')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'numeric')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'float')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(-1.7900000000000008E+308 as 'real')
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000008E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000008E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = -1.7900000000000008E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'bit')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'decimal')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'money')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'numeric')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'float')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000002E+308 as 'real')
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000002E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'bit')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'decimal')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'money')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'numeric')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'float')
+
+-- SQLite.MS SQLite
+
+SELECT
+	CAST(1.7900000000000008E+308 as 'real')
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000008E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000008E+308
+
+SELECT @p
+
+-- SQLite.MS SQLite
+DECLARE @p  -- Double
+SET     @p = 1.7900000000000008E+308
+
+SELECT @p
+
