@@ -1,0 +1,5 @@
+﻿-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	20
+
