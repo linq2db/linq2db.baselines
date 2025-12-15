@@ -1,0 +1,39 @@
+﻿-- Sybase.Managed Sybase
+DECLARE @is_deleted Bit -- Boolean
+SET     @is_deleted = 1
+
+UPDATE
+	[component_categories]
+SET
+	[is_deleted] = @is_deleted
+FROM
+	[element_services] [sr],
+	[Components] [cm]
+WHERE
+	[sr].[id] = 'TestProcessService' AND
+	[sr].[id] = [component_categories].[service_id] AND
+	[component_categories].[id] = [cm].[category_id] AND
+	[cm].[is_deleted] = 0
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
+FROM
+	[component_categories] [x]
+WHERE
+	[x].[is_deleted] = 0 AND [x].[service_id] <> 'TestProcessService'
+
