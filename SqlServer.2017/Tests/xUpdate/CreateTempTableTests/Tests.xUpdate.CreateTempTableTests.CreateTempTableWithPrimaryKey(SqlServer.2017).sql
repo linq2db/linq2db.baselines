@@ -1,0 +1,13 @@
+﻿-- SqlServer.2017
+
+CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
+(
+	[Key] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Key])
+)
+
+-- SqlServer.2017
+
+DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]
+

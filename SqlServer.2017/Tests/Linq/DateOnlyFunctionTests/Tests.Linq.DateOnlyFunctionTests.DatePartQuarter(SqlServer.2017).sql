@@ -1,0 +1,7 @@
+﻿-- SqlServer.2017
+
+SELECT
+	DatePart(quarter, [t].[TransactionDate])
+FROM
+	[Transactions] [t]
+
