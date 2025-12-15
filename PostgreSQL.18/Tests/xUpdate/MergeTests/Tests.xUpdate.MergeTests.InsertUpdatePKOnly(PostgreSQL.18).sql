@@ -1,0 +1,30 @@
+﻿-- PostgreSQL.18 PostgreSQL
+
+MERGE INTO "PKOnlyTable" "Target"
+USING (VALUES
+	(1), (2), (3)
+) "Source"
+(
+	"ID"
+)
+ON ("Target"."ID" = "Source"."ID")
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	"ID"
+)
+VALUES
+(
+	"Source"."ID"
+)
+
+-- PostgreSQL.18 PostgreSQL
+
+SELECT
+	t1."ID"
+FROM
+	"PKOnlyTable" t1
+ORDER BY
+	t1."ID"
+
