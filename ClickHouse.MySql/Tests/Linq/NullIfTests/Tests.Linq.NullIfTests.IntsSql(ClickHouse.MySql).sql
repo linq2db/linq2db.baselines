@@ -1,0 +1,160 @@
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	NULLIF(s.Int, 2)
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.Int = 2
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.Int <> 2
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	NULLIF(s.Int, 4)
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.Int = 4
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.Int <> 4
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	s.Int
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	1 = 0
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	NULLIF(s.NullableInt, 2)
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableInt = 2 OR s.NullableInt IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.NullableInt = 2 OR s.NullableInt IS NULL)
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	NULLIF(s.NullableInt, 4)
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableInt = 4 OR s.NullableInt IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	NOT (s.NullableInt = 4 OR s.NullableInt IS NULL)
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	s.NullableInt
+FROM
+	Src s
+ORDER BY
+	s.Int
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableInt IS NULL
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.NullableInt IS NOT NULL
+
