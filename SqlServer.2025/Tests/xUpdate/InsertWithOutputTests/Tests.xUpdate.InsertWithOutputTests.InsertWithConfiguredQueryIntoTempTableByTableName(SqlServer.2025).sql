@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [tempdb]..[#TableWithData_target]
 (
@@ -47,7 +47,7 @@ FROM
 WHERE
 	[p].[Gender] = 'F'
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -65,11 +65,11 @@ SELECT
 FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

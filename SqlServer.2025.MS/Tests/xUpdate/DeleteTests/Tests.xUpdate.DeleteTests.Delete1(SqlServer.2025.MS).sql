@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[t1].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -25,7 +25,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -36,7 +36,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -46,7 +46,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 

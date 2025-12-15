@@ -1,9 +1,7 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @separator NVarChar(4000) -- String
-SET     @separator = N' => '
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	STRING_AGG([g_1].[Value4], @separator) WITHIN GROUP (ORDER BY [g_1].[Value3] DESC, [g_1].[Value4])
+	STRING_AGG([g_1].[Value4], N' => ') WITHIN GROUP (ORDER BY [g_1].[Value3] DESC, [g_1].[Value4])
 FROM
 	[SampleClass] [g_1]
 GROUP BY

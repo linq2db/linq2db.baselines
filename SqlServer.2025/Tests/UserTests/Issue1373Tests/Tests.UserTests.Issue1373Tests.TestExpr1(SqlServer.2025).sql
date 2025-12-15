@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Issue1373Tests]
 (
@@ -11,7 +11,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Issue1373Tests]
 (
@@ -24,7 +24,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Issue1373Tests]
 (
@@ -37,7 +37,7 @@ VALUES
 	N'test'
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

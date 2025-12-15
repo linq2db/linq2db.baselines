@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -6,7 +6,7 @@ SELECT TOP (1)
 FROM
 	[Patient] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 

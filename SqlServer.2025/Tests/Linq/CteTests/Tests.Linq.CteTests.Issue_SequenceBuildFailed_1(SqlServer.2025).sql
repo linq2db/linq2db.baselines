@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 WITH [cte] ([Id])
 AS
@@ -32,7 +32,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] = [m_1].[Item1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 WITH [cte] ([Id])
 AS

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -40,7 +40,7 @@ FROM
 WHERE
 	[t1].[PersonID] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -62,7 +62,7 @@ SET
 WHERE
 	[Person].[PersonID] = @ID
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 5
 

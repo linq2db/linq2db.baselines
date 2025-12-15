@@ -1,10 +1,10 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -36,14 +36,14 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -75,7 +75,7 @@ WHEN NOT MATCHED THEN
 		@Data
 	);
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)

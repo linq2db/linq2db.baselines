@@ -1,10 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
-DECLARE @separator NVarChar(4000) -- String
-SET     @separator = N' -> '
+﻿-- SqlServer.2025
 
 SELECT
 	MAX([g_1].[Value4]),
-	STRING_AGG([g_1].[Value4], @separator)
+	STRING_AGG([g_1].[Value4], N' -> ')
 FROM
 	[SampleClass] [g_1]
 GROUP BY

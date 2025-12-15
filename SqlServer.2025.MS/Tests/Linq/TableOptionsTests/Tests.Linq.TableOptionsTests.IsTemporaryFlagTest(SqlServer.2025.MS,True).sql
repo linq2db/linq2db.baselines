@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -16,7 +16,7 @@ SELECT
 FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]
 

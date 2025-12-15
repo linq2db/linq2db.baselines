@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0),
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Item] [t]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x_1].[cond_1],
@@ -56,7 +56,7 @@ FROM
 WHERE
 	NOT ([x_1].[cond] = 1 AND ([x_1].[cond_1] = 1 AND [x_1].[cond_2] = 1 OR [x_1].[cond_1] = 0) OR [x_1].[cond] = 0 AND [x_1].[cond_3] = 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -67,7 +67,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x_1].[cond_1],
@@ -100,7 +100,7 @@ WHERE
 	[x_1].[cond] = 1 AND ([x_1].[cond_1] = 1 AND [x_1].[cond_2] = 1 OR [x_1].[cond_1] = 0) OR
 	[x_1].[cond] = 0 AND [x_1].[cond_3] = 0
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -111,7 +111,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x_1].[cond_1],
@@ -143,7 +143,7 @@ FROM
 WHERE
 	NOT ([x_1].[cond] = 1 AND [x_1].[cond_1] = 0 OR [x_1].[cond] = 0 AND ([x_1].[cond_2] = 1 AND [x_1].[cond_3] = 1 OR [x_1].[cond_2] = 0))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],
@@ -154,7 +154,7 @@ SELECT
 FROM
 	[Item] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[x_1].[cond_1],
@@ -186,7 +186,7 @@ FROM
 WHERE
 	[x_1].[cond] = 1 AND [x_1].[cond_1] = 0 OR [x_1].[cond] = 0 AND ([x_1].[cond_2] = 1 AND [x_1].[cond_3] = 1 OR [x_1].[cond_2] = 0)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[ItemId],

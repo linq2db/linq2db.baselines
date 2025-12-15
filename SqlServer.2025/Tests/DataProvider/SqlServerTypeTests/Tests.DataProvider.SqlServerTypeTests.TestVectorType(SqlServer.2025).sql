@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -9,7 +9,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -20,13 +20,13 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -43,7 +43,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -54,13 +54,13 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
@@ -73,7 +73,7 @@ INSERT INTO [TypeTable`2]
 VALUES
 (@p1,CAST('[1.2, -1.1]' AS VECTOR(2, float32)),NULL)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -84,7 +84,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -92,7 +92,7 @@ FROM
 
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -103,7 +103,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -111,7 +111,7 @@ FROM
 
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -122,7 +122,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -133,7 +133,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -144,13 +144,13 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -167,7 +167,7 @@ VALUES
 	NULL
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -178,13 +178,13 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
@@ -197,7 +197,7 @@ INSERT INTO [TypeTable`2]
 VALUES
 (@p1,CAST('[5.2, -3.1]' AS VECTOR(2, float32)),NULL)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -208,7 +208,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -216,7 +216,7 @@ FROM
 
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -227,7 +227,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -235,7 +235,7 @@ FROM
 
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -246,7 +246,7 @@ FROM
 WHERE
 	[r].[ColumnNullable] IS NULL
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -255,7 +255,7 @@ SELECT
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -264,13 +264,13 @@ SELECT
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -287,7 +287,7 @@ VALUES
 	CAST('[5.2, -3.1]' AS VECTOR(2, float32))
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -296,13 +296,13 @@ SELECT
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 
@@ -315,7 +315,7 @@ INSERT INTO [TypeTable`2]
 VALUES
 (@p1,CAST('[11.2, -4.1]' AS VECTOR(2, float32)),CAST('[5.2, -3.1]' AS VECTOR(2, float32)))
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -324,7 +324,7 @@ SELECT
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -332,7 +332,7 @@ FROM
 
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -341,7 +341,7 @@ SELECT
 FROM
 	[TypeTable`2] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -349,7 +349,7 @@ FROM
 
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],

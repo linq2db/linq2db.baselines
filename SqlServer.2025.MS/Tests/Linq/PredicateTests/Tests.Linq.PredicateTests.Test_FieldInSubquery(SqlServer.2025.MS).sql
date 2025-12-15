@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -16,7 +16,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -27,7 +27,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -45,7 +45,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -56,7 +56,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -74,7 +74,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -105,7 +105,7 @@ WHERE
 			[r].[Value5] = [r_1].[Value4] OR [r].[Value5] IS NULL AND [r_1].[Value4] IS NULL
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -116,7 +116,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -134,7 +134,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -145,7 +145,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -163,7 +163,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -174,7 +174,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -192,7 +192,7 @@ WHERE
 			[BooleanTable] [r_1]
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -203,7 +203,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[r].[Id],
@@ -223,7 +223,7 @@ WHERE
 			[r].[Value5] = [r_1].[Value4] OR [r].[Value5] IS NULL AND [r_1].[Value4] IS NULL
 	)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

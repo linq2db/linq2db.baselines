@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(100) -- Binary
@@ -15,7 +15,7 @@ VALUES
 	@BlobValue
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[t1].[Id] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @BlobValue VarBinary(100) -- Binary
 SET     @BlobValue = 0x030201
 
@@ -36,7 +36,7 @@ SET
 WHERE
 	[BlobClass].[Id] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],

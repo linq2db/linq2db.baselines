@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 INSERT INTO [Issue4460Table]
 (
@@ -10,7 +10,7 @@ INSERT INTO [Issue4460Table]
 VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Code],

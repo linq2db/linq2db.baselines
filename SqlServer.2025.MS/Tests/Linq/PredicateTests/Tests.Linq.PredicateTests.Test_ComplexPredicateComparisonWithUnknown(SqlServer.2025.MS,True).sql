@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	[r].[Value1] = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -71,7 +71,7 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -82,7 +82,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -146,7 +146,7 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -157,7 +157,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -192,7 +192,7 @@ WHERE
 		ELSE NULL
 	END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -203,7 +203,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -238,7 +238,7 @@ WHERE
 		ELSE NULL
 	END
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -249,7 +249,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -312,7 +312,7 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -323,7 +323,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -386,7 +386,7 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -397,7 +397,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -432,7 +432,7 @@ WHERE
 		ELSE NULL
 	END, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -443,7 +443,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -478,7 +478,7 @@ WHERE
 		ELSE NULL
 	END, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -489,7 +489,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -578,7 +578,7 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -589,7 +589,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -678,7 +678,7 @@ WHERE
 		ELSE NULL
 	END IS NULL
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -689,7 +689,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -724,7 +724,7 @@ WHERE
 		ELSE NULL
 	END, 0, 1) = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -735,7 +735,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -770,7 +770,7 @@ WHERE
 		ELSE NULL
 	END, 0, 1) = 1
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -781,7 +781,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -868,7 +868,7 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -879,7 +879,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -966,7 +966,7 @@ WHERE
 		ELSE NULL
 	END IS NULL, 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -977,7 +977,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1012,7 +1012,7 @@ WHERE
 		ELSE NULL
 	END, 0, 1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1023,7 +1023,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1058,7 +1058,7 @@ WHERE
 		ELSE NULL
 	END, 0, 1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1069,7 +1069,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1091,7 +1091,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1102,7 +1102,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1124,7 +1124,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1135,7 +1135,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1157,7 +1157,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1168,7 +1168,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1190,7 +1190,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1201,7 +1201,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1223,7 +1223,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1234,7 +1234,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1256,7 +1256,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1267,7 +1267,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1289,7 +1289,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1300,7 +1300,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1322,7 +1322,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5])
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1333,7 +1333,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1355,7 +1355,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1366,7 +1366,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1388,7 +1388,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1399,7 +1399,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1421,7 +1421,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1432,7 +1432,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1454,7 +1454,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1465,7 +1465,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1487,7 +1487,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1498,7 +1498,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1520,7 +1520,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1531,7 +1531,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1553,7 +1553,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -1564,7 +1564,7 @@ SELECT
 FROM
 	[BooleanTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1586,7 +1586,7 @@ WHERE
 			[r_1].[Value1] = 1
 	) + [r].[Value5]), 1, 0)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[t1].[Id],

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[t1].[ID] > 1000
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @data VarBinary(8000) -- Binary
 SET     @data = NULL
 
@@ -23,7 +23,7 @@ VALUES
 	1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [t1]
 FROM

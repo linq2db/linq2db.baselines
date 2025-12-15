@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 	@SomeValue2
 )
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -28,7 +28,7 @@ SELECT TOP (2)
 FROM
 	[ValuesTable] [t1]
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @SomeValue1 Int -- Int32
 SET     @SomeValue1 = 8
 DECLARE @SomeValue2 Int -- Int32
@@ -44,7 +44,7 @@ SET
 WHERE
 	[ValuesTable].[Id] = @Id
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (2)
 	[t1].[Id],

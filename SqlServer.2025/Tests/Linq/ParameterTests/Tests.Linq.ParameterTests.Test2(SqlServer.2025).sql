@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32
@@ -15,7 +15,7 @@ WHERE
 ORDER BY
 	[p].[ParentID]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
 DECLARE @id2 Int -- Int32

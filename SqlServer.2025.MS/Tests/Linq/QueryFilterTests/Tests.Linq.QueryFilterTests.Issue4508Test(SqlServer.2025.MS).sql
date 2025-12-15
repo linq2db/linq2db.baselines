@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -28,7 +28,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -43,7 +43,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -58,7 +58,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -73,7 +73,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -88,7 +88,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -103,7 +103,7 @@ FROM
 WHERE
 	[p].[PersonID] > @idCopy
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 

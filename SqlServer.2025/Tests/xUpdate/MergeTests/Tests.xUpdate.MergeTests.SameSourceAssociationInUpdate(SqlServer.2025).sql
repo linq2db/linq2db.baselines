@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 MERGE INTO [Person] [Target]
 USING (
@@ -29,7 +29,7 @@ SET
 	[LastName] = N'last ' + [Source].[Patient_Diagnosis_1]
 ;
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[FirstName],

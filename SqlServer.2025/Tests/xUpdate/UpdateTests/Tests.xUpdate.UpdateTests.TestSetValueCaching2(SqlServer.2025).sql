@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 11
 DECLARE @id Int -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -22,7 +22,7 @@ FROM
 WHERE
 	[t1].[Id] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 12
 DECLARE @id Int -- Int32
@@ -35,7 +35,7 @@ SET
 WHERE
 	[UpdateSetTest].[Id] = @id
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 1
 

@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[p].[object_id],
@@ -15,7 +15,7 @@ GROUP BY
 ORDER BY
 	[p].[object_id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = -345
 DECLARE @Value1 Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 	@Value1
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[object_id],
@@ -50,7 +50,7 @@ ORDER BY
 	[p].[object_id]
 
 RollbackTransaction
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[object_id],

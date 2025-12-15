@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -21,7 +21,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Issue4596Item] [d] ON [d].[FormId] = [m_1].[Id]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[t1].[Id],

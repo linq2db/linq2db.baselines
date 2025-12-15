@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [p]
 FROM
@@ -6,7 +6,7 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 INSERT INTO [Parent]
 (
@@ -21,7 +21,7 @@ FROM
 WHERE
 	[c_1].[ChildID] = 11
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	COUNT(*)
@@ -30,7 +30,7 @@ FROM
 WHERE
 	[p].[Value1] = 11
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DELETE [p]
 FROM

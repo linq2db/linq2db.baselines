@@ -34,7 +34,7 @@ ORDER BY [p].[ProductID], [s1].[OrderID0], [s1].[ProductID], [s1].[OrderID], [s1
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[SupplierId],
@@ -78,7 +78,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[m_1].[ProductID],
@@ -111,7 +111,7 @@ WHERE
 
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[p].[ProductName],

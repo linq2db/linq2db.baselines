@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -8,7 +8,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
@@ -18,7 +18,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
@@ -28,7 +28,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 
@@ -40,7 +40,7 @@ WHERE
 
 INSERT BULK [Parent](ParentID, Value1)
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -50,7 +50,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
@@ -60,7 +60,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
@@ -70,7 +70,7 @@ FROM
 WHERE
 	[p].[ParentID] = @ParentID
 
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 

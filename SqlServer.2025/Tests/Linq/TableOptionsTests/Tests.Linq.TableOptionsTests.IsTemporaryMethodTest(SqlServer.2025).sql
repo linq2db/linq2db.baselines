@@ -1,8 +1,8 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[tempdb]..[#TestTable] [t1]
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

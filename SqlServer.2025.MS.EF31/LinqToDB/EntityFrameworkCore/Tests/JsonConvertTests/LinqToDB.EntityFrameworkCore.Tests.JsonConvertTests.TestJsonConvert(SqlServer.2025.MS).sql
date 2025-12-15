@@ -1,4 +1,4 @@
-﻿-- SqlServer.2025 SqlServer.2022
+﻿-- SqlServer.2025
 
 DELETE [t1]
 FROM
@@ -17,7 +17,7 @@ FROM [EventScheduleItem]
 WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
 
 
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025
 
 SELECT TOP (1)
 	[p].[Id],

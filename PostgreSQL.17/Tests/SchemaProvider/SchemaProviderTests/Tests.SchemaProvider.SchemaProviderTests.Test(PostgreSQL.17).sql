@@ -250,7 +250,7 @@ SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -258,6 +258,6 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 RollbackTransaction
