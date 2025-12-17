@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			SUM([t1].[ParentID])
+			SUM([t2].[ParentID])
 		FROM
 			(
 				SELECT
@@ -15,9 +15,9 @@ SELECT
 					(
 						SELECT
 							1 as [c1]
-					) [c_1]
+					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
-			) [t1]
+			) [t2]
 	)
 FROM
 	[Parent] [p]
