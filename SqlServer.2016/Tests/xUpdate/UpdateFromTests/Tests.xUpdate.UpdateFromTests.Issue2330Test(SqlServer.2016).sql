@@ -10,9 +10,9 @@ FROM
 WHERE
 	[b].[ChildID] = (
 		SELECT
-			MAX([t1].[ParentID])
+			MAX([b2].[ParentID])
 		FROM
-			[Child] [t1]
+			[Child] [b2]
 	) AND
 	[b].[ChildID] = -1
 
