@@ -8,14 +8,9 @@ FROM
 WHERE
 	c_1.ParentID IN (
 		SELECT
-			t1.ParentID
+			p.ParentID
 		FROM
-			(
-				SELECT
-					p.ParentID as ParentID
-				FROM
-					Parent p
-				LIMIT 1, 100
-			) t1
+			Parent p
+		LIMIT 1, 100
 	)
 
