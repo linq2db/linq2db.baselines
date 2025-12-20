@@ -10,16 +10,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			(
-				SELECT
-					v."ParentID"
-				FROM
-					"Parent" v
-				WHERE
-					ROWNUM <= 100
-			) t1
+			"Parent" p
 		WHERE
-			c_1."ParentID" = t1."ParentID"
+			ROWNUM <= 100 AND c_1."ParentID" = p."ParentID"
 	)
 
 -- Oracle.11.Managed Oracle11
