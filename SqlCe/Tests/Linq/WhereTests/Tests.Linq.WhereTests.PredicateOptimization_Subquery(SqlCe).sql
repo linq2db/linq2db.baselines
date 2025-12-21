@@ -23,7 +23,7 @@ FROM
 					SELECT [p].[Date4] AS [item]) [t1]
 		) [t2]
 WHERE
-	[t2].[Max_1] > CAST('2023-01-01' AS DateTime)
+	[t2].[Max_1] > '2023-01-01'
 
 -- SqlCe
 
