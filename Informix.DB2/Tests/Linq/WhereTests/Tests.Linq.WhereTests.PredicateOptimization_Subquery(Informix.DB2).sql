@@ -22,7 +22,7 @@ WHERE
 				SELECT p.Date3::datetime year to fraction FROM table(set{1})
 				UNION ALL
 				SELECT p.Date4::datetime year to fraction FROM table(set{1})) t1
-	) > Mdy(1, 1, 2023)
+	) > TO_DATE('2023-01-01', '%Y-%m-%d')
 
 -- Informix.DB2 Informix
 
