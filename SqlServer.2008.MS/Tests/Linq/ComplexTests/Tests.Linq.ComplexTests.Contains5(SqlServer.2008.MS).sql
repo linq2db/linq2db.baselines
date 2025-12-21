@@ -8,21 +8,16 @@ FROM
 WHERE
 	[c_1].[ParentID] IN (
 		SELECT
-			[t2].[ParentID]
+			[t1].[ParentID]
 		FROM
 			(
 				SELECT
-					[t1].[ParentID]
+					[p].[ParentID],
+					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
-					(
-						SELECT
-							[p].[ParentID],
-							ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
-						FROM
-							[Parent] [p]
-					) [t1]
-				WHERE
-					[t1].[RN] > 1 AND [t1].[RN] <= 101
-			) [t2]
+					[Parent] [p]
+			) [t1]
+		WHERE
+			[t1].[RN] > 1 AND [t1].[RN] <= 101
 	)
 
