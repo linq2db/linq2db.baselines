@@ -7,25 +7,20 @@ FROM
 	[Child] [t]
 WHERE
 	[t].[ParentID] IN (
-		SELECT
+		SELECT TOP (2)
 			[t1].[ParentID]
 		FROM
 			(
-				SELECT TOP (2)
-					[x].[ParentID]
+				SELECT
+					MAX([g_1].[ChildID]) as [Max_1],
+					[g_1].[ParentID]
 				FROM
-					(
-						SELECT
-							MAX([g_1].[ChildID]) as [Max_1],
-							[g_1].[ParentID]
-						FROM
-							[Child] [g_1]
-						GROUP BY
-							[g_1].[ParentID]
-					) [x]
-				ORDER BY
-					[x].[Max_1] DESC
+					[Child] [g_1]
+				GROUP BY
+					[g_1].[ParentID]
 			) [t1]
+		ORDER BY
+			[t1].[Max_1] DESC
 	)
 
 -- SqlCe
