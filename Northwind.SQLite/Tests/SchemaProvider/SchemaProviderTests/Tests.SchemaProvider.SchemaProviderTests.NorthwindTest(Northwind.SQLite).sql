@@ -68,7 +68,7 @@
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
-SELECT * FROM [Summary of Sales by Quarter]
+SELECT * FROM [Products by Category]
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
@@ -76,7 +76,15 @@ SELECT * FROM [Summary of Sales by Year]
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
+SELECT * FROM [Summary of Sales by Quarter]
+
+-- Northwind.SQLite SQLite.Classic SQLite
+
 SELECT * FROM [Order Subtotals]
+
+-- Northwind.SQLite SQLite.Classic SQLite
+
+SELECT * FROM [Alphabetical list of products]
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
@@ -97,14 +105,6 @@ SELECT * FROM [Customer and Suppliers by City]
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT * FROM [Current Product List]
-
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT * FROM [Products by Category]
-
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT * FROM [Alphabetical list of products]
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
