@@ -8,10 +8,15 @@ FROM
 WHERE
 	c_1.ParentID IN (
 		SELECT
-			p.ParentID
+			t1.ParentID
 		FROM
-			Parent p
-		LIMIT 100
+			(
+				SELECT
+					v.ParentID as ParentID
+				FROM
+					Parent v
+				LIMIT 100
+			) t1
 	)
 
 -- ClickHouse.MySql ClickHouse
