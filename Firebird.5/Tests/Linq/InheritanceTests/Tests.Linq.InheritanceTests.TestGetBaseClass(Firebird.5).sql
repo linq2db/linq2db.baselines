@@ -6,5 +6,5 @@ SELECT
 FROM
 	"Parent" "x"
 WHERE
-	"x"."Value1" = 2 OR "x"."Value1" = 1
+	"x"."Value1" = 1 OR "x"."Value1" = 2
 
