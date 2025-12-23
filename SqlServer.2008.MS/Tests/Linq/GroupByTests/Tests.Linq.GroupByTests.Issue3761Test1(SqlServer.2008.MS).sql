@@ -19,7 +19,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < CAST('2019-01-01' AS DateTime2)
+			[n].[DATUM] < CAST('2019-01-01T00:00:00.0000000' AS DATETIME2)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],

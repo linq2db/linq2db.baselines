@@ -19,7 +19,7 @@ FROM
 		FROM
 			`Issue3761Table` `n`
 		WHERE
-			`n`.`DATUM` < STR_TO_DATE('2019-01-01 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
+			`n`.`DATUM` < '2019-01-01'
 	) `t1`
 GROUP BY
 	`t1`.`Year_1`,
