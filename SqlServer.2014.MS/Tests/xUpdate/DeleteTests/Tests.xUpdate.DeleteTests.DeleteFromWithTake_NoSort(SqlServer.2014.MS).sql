@@ -65,17 +65,12 @@ FROM
 	) [p]
 WHERE
 	[p].[ParentID] IN (
-		SELECT
-			[t1].[ParentID]
+		SELECT TOP (@take)
+			[c_2].[ParentID]
 		FROM
-			(
-				SELECT TOP (@take)
-					[c_2].[ParentID]
-				FROM
-					[Parent] [c_2]
-				WHERE
-					[c_2].[ParentID] > 1000
-			) [t1]
+			[Parent] [c_2]
+		WHERE
+			[c_2].[ParentID] > 1000
 	)
 
 -- SqlServer.2014.MS SqlServer.2014

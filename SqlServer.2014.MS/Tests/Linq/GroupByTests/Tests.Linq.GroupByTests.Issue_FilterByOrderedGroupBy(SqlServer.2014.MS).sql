@@ -7,19 +7,14 @@ FROM
 	[Child] [t]
 WHERE
 	[t].[ParentID] IN (
-		SELECT
-			[t1].[ParentID]
+		SELECT TOP (2)
+			[g_1].[ParentID]
 		FROM
-			(
-				SELECT TOP (2)
-					[x].[ParentID]
-				FROM
-					[Child] [x]
-				GROUP BY
-					[x].[ParentID]
-				ORDER BY
-					MAX([x].[ChildID]) DESC
-			) [t1]
+			[Child] [g_1]
+		GROUP BY
+			[g_1].[ParentID]
+		ORDER BY
+			MAX([g_1].[ChildID]) DESC
 	)
 
 -- SqlServer.2014.MS SqlServer.2014
