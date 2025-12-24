@@ -3,29 +3,29 @@ DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
-	[m_1].[cond],
+	[m_1].[c1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[cond_1] as [cond]
+			[t3].[c1]
 		FROM
 			(
 				SELECT
 					[t2].[cond],
-					[t2].[cond_1]
+					[t2].[c1]
 				FROM
 					(
 						SELECT
 							[t1].[BookType] as [cond],
-							[t1].[cond] as [cond_1],
+							[t1].[c1],
 							ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 						FROM
 							(
 								SELECT
 									CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-									NULL as [cond]
+									NULL as [c1]
 								FROM
 									[Book] [b]
 								WHERE
@@ -33,7 +33,7 @@ FROM
 								UNION ALL
 								SELECT
 									CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-									[b_1].[BookId] as [cond]
+									[b_1].[BookId] as [c1]
 								FROM
 									[Book] [b_1]
 								WHERE
@@ -46,7 +46,7 @@ FROM
 		WHERE
 			[t3].[cond] = N'Novel'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[cond]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2008
@@ -56,7 +56,7 @@ SET     @skip = 6
 SELECT
 	[t2].[BookType],
 	[t2].[cond],
-	[t2].[cond_1]
+	[t2].[c1]
 FROM
 	(
 		SELECT
@@ -65,13 +65,13 @@ FROM
 				WHEN [t1].[BookType] = N'Roman' THEN 1
 				ELSE 0
 			END as [cond],
-			[t1].[cond] as [cond_1],
+			[t1].[c1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 		FROM
 			(
 				SELECT
 					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-					NULL as [cond]
+					NULL as [c1]
 				FROM
 					[Book] [b]
 				WHERE
@@ -79,7 +79,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-					[b_1].[BookId] as [cond]
+					[b_1].[BookId] as [c1]
 				FROM
 					[Book] [b_1]
 				WHERE
