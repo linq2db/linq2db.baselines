@@ -1,6 +1,5 @@
 ﻿-- Firebird.5 Firebird4
 
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -64,7 +63,6 @@ WHERE p.RDB$SYSTEM_FLAG = 0
 RollbackTransaction
 -- Firebird.5 Firebird4
 
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -127,7 +125,6 @@ WHERE p.RDB$SYSTEM_FLAG = 0
 
 RollbackTransaction
 -- Firebird.5 Firebird4
-
 
 SELECT * FROM (
 	SELECT
