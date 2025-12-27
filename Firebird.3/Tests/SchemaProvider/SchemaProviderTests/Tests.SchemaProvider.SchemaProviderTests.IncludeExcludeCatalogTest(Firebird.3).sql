@@ -1,6 +1,5 @@
 ﻿-- Firebird.3 Firebird3
 
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -172,7 +171,6 @@ SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 RollbackTransaction
 -- Firebird.3 Firebird3
 
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -235,7 +233,6 @@ WHERE p.RDB$SYSTEM_FLAG = 0
 
 RollbackTransaction
 -- Firebird.3 Firebird3
-
 
 SELECT * FROM (
 	SELECT
