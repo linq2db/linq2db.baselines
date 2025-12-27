@@ -21,8 +21,8 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[d_3].[cond],
-			[d_3].[Key_2] as [Key_1],
+			[t2].[cond],
+			[t2].[Key_1],
 			[d_3].[Key_1] as [Key_2]
 		FROM
 			(
@@ -55,9 +55,7 @@ FROM
 			) [t2]
 				CROSS APPLY (
 					SELECT
-						[d_2].[Key_1],
-						[t2].[cond],
-						[t2].[Key_1] as [Key_2]
+						[d_2].[Key_1]
 					FROM
 						(
 							SELECT
