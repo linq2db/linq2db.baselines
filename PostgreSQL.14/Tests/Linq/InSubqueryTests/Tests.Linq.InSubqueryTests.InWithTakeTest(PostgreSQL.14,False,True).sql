@@ -8,15 +8,10 @@ FROM
 WHERE
 	c_1."ParentID" IN (
 		SELECT
-			t1."ParentID"
+			p."ParentID"
 		FROM
-			(
-				SELECT
-					v."ParentID"
-				FROM
-					"Parent" v
-				LIMIT 100
-			) t1
+			"Parent" p
+		LIMIT 100
 	)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL

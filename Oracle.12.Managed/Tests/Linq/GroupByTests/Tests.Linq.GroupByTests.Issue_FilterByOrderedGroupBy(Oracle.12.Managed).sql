@@ -8,19 +8,14 @@ FROM
 WHERE
 	t."ParentID" IN (
 		SELECT
-			t1."ParentID"
+			g_1."ParentID"
 		FROM
-			(
-				SELECT
-					x."ParentID"
-				FROM
-					"Child" x
-				GROUP BY
-					x."ParentID"
-				ORDER BY
-					MAX(x."ChildID") DESC
-				FETCH NEXT 2 ROWS ONLY
-			) t1
+			"Child" g_1
+		GROUP BY
+			g_1."ParentID"
+		ORDER BY
+			MAX(g_1."ChildID") DESC
+		FETCH NEXT 2 ROWS ONLY
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12

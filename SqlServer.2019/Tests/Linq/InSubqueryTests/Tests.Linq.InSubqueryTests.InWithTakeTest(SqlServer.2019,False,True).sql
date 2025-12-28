@@ -7,15 +7,10 @@ FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] IN (
-		SELECT
-			[t1].[ParentID]
+		SELECT TOP (100)
+			[p].[ParentID]
 		FROM
-			(
-				SELECT TOP (100)
-					[v].[ParentID]
-				FROM
-					[Parent] [v]
-			) [t1]
+			[Parent] [p]
 	)
 
 -- SqlServer.2019

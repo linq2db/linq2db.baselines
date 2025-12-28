@@ -8,16 +8,11 @@ FROM
 WHERE
 	c_1."ParentID" IN (
 		SELECT
-			t1."ParentID"
+			p."ParentID"
 		FROM
-			(
-				SELECT
-					v."ParentID"
-				FROM
-					"Parent" v
-				WHERE
-					ROWNUM <= 100
-			) t1
+			"Parent" p
+		WHERE
+			ROWNUM <= 100
 	)
 
 -- Oracle.11.Managed Oracle11
