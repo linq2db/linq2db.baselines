@@ -41,8 +41,9 @@ LIMIT 2
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = NULL
+WHERE
+	[TestBool].[Id] = 1
 
 -- SQLite.Classic SQLite
 
