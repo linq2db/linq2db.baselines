@@ -45,10 +45,11 @@ WHERE
 -- Oracle.11.Managed Oracle11
 
 UPDATE
-	"TestBool" t1
+	"TestBool" r
 SET
-	"Id" = 1,
 	"Value" = NULL
+WHERE
+	r."Id" = 1
 
 -- Oracle.11.Managed Oracle11
 
