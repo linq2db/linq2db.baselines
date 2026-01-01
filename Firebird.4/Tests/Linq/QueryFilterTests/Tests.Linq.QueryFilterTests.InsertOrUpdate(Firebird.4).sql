@@ -1,9 +1,9 @@
 ﻿-- Firebird.4 Firebird4
 
-MERGE INTO "Issue5289Table" "r"
+MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON
 (
-	"r"."Id" = "s"."Id"
+	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
@@ -13,32 +13,34 @@ WHEN NOT MATCHED THEN
 	INSERT
 	(
 		"Id",
-		"PictureId"
+		"PictureId",
+		"Deleted"
 	)
 	VALUES
 	(
 		1,
-		2
+		2,
+		FALSE
 	)
 
 -- Firebird.4 Firebird4
 
 SELECT
 	"r"."Id",
-	"r"."PictureId"
+	"r"."PictureId",
+	"r"."Deleted"
 FROM
 	"Issue5289Table" "r"
 WHERE
-	("r"."Deleted" = FALSE OR "r"."Deleted" IS NULL) AND
-	"r"."Id" = 1
+	NOT "r"."Deleted" AND "r"."Id" = 1
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
 
-MERGE INTO "Issue5289Table" "r"
+MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON
 (
-	"r"."Id" = "s"."Id"
+	"t1"."Id" = "s"."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
@@ -48,23 +50,25 @@ WHEN NOT MATCHED THEN
 	INSERT
 	(
 		"Id",
-		"PictureId"
+		"PictureId",
+		"Deleted"
 	)
 	VALUES
 	(
 		1,
-		2
+		2,
+		FALSE
 	)
 
 -- Firebird.4 Firebird4
 
 SELECT
 	"r"."Id",
-	"r"."PictureId"
+	"r"."PictureId",
+	"r"."Deleted"
 FROM
 	"Issue5289Table" "r"
 WHERE
-	("r"."Deleted" = FALSE OR "r"."Deleted" IS NULL) AND
-	"r"."Id" = 1
+	NOT "r"."Deleted" AND "r"."Id" = 1
 FETCH NEXT 2 ROWS ONLY
 
