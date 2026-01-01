@@ -41,8 +41,9 @@ LIMIT 2
 UPDATE
 	"TestBool"
 SET
-	"Id" = 1,
 	"Value" = False
+WHERE
+	"TestBool"."Id" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
