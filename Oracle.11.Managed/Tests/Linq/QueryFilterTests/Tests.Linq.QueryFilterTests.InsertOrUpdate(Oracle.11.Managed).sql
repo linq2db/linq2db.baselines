@@ -1,9 +1,9 @@
 ﻿-- Oracle.11.Managed Oracle11
 
-MERGE INTO "Issue5289Table" r
+MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
-	r."Id" = s."Id"
+	t1."Id" = s."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
@@ -13,31 +13,33 @@ WHEN NOT MATCHED THEN
 	INSERT
 	(
 		"Id",
-		"PictureId"
+		"PictureId",
+		"Deleted"
 	)
 	VALUES
 	(
 		1,
-		2
+		2,
+		0
 	)
 
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	r."Id",
-	r."PictureId"
+	r."PictureId",
+	r."Deleted"
 FROM
 	"Issue5289Table" r
 WHERE
-	(r."Deleted" = 0 OR r."Deleted" IS NULL) AND r."Id" = 1 AND
-	ROWNUM <= 2
+	r."Deleted" = 0 AND r."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
 
-MERGE INTO "Issue5289Table" r
+MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
-	r."Id" = s."Id"
+	t1."Id" = s."Id"
 )
 WHEN MATCHED THEN
 	UPDATE 
@@ -47,22 +49,24 @@ WHEN NOT MATCHED THEN
 	INSERT
 	(
 		"Id",
-		"PictureId"
+		"PictureId",
+		"Deleted"
 	)
 	VALUES
 	(
 		1,
-		2
+		2,
+		0
 	)
 
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	r."Id",
-	r."PictureId"
+	r."PictureId",
+	r."Deleted"
 FROM
 	"Issue5289Table" r
 WHERE
-	(r."Deleted" = 0 OR r."Deleted" IS NULL) AND r."Id" = 1 AND
-	ROWNUM <= 2
+	r."Deleted" = 0 AND r."Id" = 1 AND ROWNUM <= 2
 
