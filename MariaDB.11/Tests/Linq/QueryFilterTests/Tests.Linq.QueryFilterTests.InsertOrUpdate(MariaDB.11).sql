@@ -3,12 +3,14 @@
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
-	`PictureId`
+	`PictureId`,
+	`Deleted`
 )
 VALUES
 (
 	1,
-	2
+	2,
+	0
 )
 ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
@@ -17,11 +19,12 @@ ON DUPLICATE KEY UPDATE
 
 SELECT
 	`r`.`Id`,
-	`r`.`PictureId`
+	`r`.`PictureId`,
+	`r`.`Deleted`
 FROM
 	`Issue5289Table` `r`
 WHERE
-	(`r`.`Deleted` = 0 OR `r`.`Deleted` IS NULL) AND `r`.`Id` = 1
+	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -29,12 +32,14 @@ LIMIT 2
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
-	`PictureId`
+	`PictureId`,
+	`Deleted`
 )
 VALUES
 (
 	1,
-	2
+	2,
+	0
 )
 ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
@@ -43,10 +48,11 @@ ON DUPLICATE KEY UPDATE
 
 SELECT
 	`r`.`Id`,
-	`r`.`PictureId`
+	`r`.`PictureId`,
+	`r`.`Deleted`
 FROM
 	`Issue5289Table` `r`
 WHERE
-	(`r`.`Deleted` = 0 OR `r`.`Deleted` IS NULL) AND `r`.`Id` = 1
+	NOT `r`.`Deleted` AND `r`.`Id` = 1
 LIMIT 2
 
