@@ -39,10 +39,11 @@ LIMIT 2
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
-	`TestBool` `t1`
+	`TestBool` `r`
 SET
-	`t1`.`Id` = 1,
-	`t1`.`Value` = 0
+	`r`.`Value` = 0
+WHERE
+	`r`.`Id` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
