@@ -5,7 +5,6 @@ UPDATE
 SET
 	[PictureId] = 3
 WHERE
-	([Issue5289Table].[Deleted] = 0 OR [Issue5289Table].[Deleted] IS NULL) AND
 	[Issue5289Table].[Id] = 1
 
 -- SqlCe
@@ -13,23 +12,26 @@ WHERE
 INSERT INTO [Issue5289Table]
 (
 	[Id],
-	[PictureId]
+	[PictureId],
+	[Deleted]
 )
 VALUES
 (
 	1,
-	2
+	2,
+	0
 )
 
 -- SqlCe
 
 SELECT TOP (2)
 	[r].[Id],
-	[r].[PictureId]
+	[r].[PictureId],
+	[r].[Deleted]
 FROM
 	[Issue5289Table] [r]
 WHERE
-	([r].[Deleted] = 0 OR [r].[Deleted] IS NULL) AND [r].[Id] = 1
+	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlCe
 
@@ -38,16 +40,16 @@ UPDATE
 SET
 	[PictureId] = 3
 WHERE
-	([Issue5289Table].[Deleted] = 0 OR [Issue5289Table].[Deleted] IS NULL) AND
 	[Issue5289Table].[Id] = 1
 
 -- SqlCe
 
 SELECT TOP (2)
 	[r].[Id],
-	[r].[PictureId]
+	[r].[PictureId],
+	[r].[Deleted]
 FROM
 	[Issue5289Table] [r]
 WHERE
-	([r].[Deleted] = 0 OR [r].[Deleted] IS NULL) AND [r].[Id] = 1
+	[r].[Deleted] = 0 AND [r].[Id] = 1
 
