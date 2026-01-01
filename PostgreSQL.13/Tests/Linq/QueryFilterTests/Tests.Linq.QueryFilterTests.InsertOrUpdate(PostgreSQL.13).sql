@@ -1,14 +1,16 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
-INSERT INTO "Issue5289Table" AS r
+INSERT INTO "Issue5289Table" AS t1
 (
 	"Id",
-	"PictureId"
+	"PictureId",
+	"Deleted"
 )
 VALUES
 (
 	1,
-	2
+	2,
+	False
 )
 ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
@@ -17,24 +19,27 @@ ON CONFLICT ("Id") DO UPDATE SET
 
 SELECT
 	r."Id",
-	r."PictureId"
+	r."PictureId",
+	r."Deleted"
 FROM
 	"Issue5289Table" r
 WHERE
-	(r."Deleted" = False OR r."Deleted" IS NULL) AND r."Id" = 1
+	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL
 
-INSERT INTO "Issue5289Table" AS r
+INSERT INTO "Issue5289Table" AS t1
 (
 	"Id",
-	"PictureId"
+	"PictureId",
+	"Deleted"
 )
 VALUES
 (
 	1,
-	2
+	2,
+	False
 )
 ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
@@ -43,10 +48,11 @@ ON CONFLICT ("Id") DO UPDATE SET
 
 SELECT
 	r."Id",
-	r."PictureId"
+	r."PictureId",
+	r."Deleted"
 FROM
 	"Issue5289Table" r
 WHERE
-	(r."Deleted" = False OR r."Deleted" IS NULL) AND r."Id" = 1
+	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
 
