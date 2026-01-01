@@ -37,10 +37,11 @@ FROM
 -- Access.Ace.Odbc AccessODBC
 
 UPDATE
-	[TestBool] [t1]
+	[TestBool] [r]
 SET
-	[t1].[Id] = 1,
-	[t1].[Value] = True
+	[r].[Value] = True
+WHERE
+	[r].[Id] = 1
 
 -- Access.Ace.Odbc AccessODBC
 
