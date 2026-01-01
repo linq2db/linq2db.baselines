@@ -39,10 +39,11 @@ LIMIT 2
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
-	`TestBool` `t1`
+	`TestBool` `r`
 SET
-	`t1`.`Id` = 1,
-	`t1`.`Value` = 1
+	`r`.`Value` = 1
+WHERE
+	`r`.`Id` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
