@@ -39,10 +39,11 @@ FETCH NEXT 2 ROWS ONLY
 -- Firebird.3 Firebird3
 
 UPDATE
-	"TestBool" "t1"
+	"TestBool" "r"
 SET
-	"Id" = 1,
 	"Value" = NULL
+WHERE
+	"r"."Id" = 1
 
 -- Firebird.3 Firebird3
 
