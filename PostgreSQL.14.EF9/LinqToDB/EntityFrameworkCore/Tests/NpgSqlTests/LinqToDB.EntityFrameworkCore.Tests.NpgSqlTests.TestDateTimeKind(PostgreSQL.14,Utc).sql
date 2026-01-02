@@ -17,7 +17,7 @@ WHERE
 
 
 -- PostgreSQL.13 PostgreSQL
-DECLARE @ldt Unknown -- Object
+DECLARE @ldt Timestamp -- DateTime2
 SET     @ldt = 02/29/2020 17:54:55
 
 SELECT
@@ -71,7 +71,7 @@ WHERE
 
 
 -- PostgreSQL.13 PostgreSQL
-DECLARE @ins Unknown -- Object
+DECLARE @ins TimestampTz -- DateTime
 SET     @ins = 2020-02-29T17:14:55Z
 
 SELECT
