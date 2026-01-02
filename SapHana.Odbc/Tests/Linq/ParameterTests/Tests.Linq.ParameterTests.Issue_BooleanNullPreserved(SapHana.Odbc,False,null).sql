@@ -43,10 +43,11 @@ LIMIT 2
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"TestBool" "t1"
+	"TestBool" "r"
 SET
-	"Id" = 1,
 	"Value" = NULL
+WHERE
+	"r"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
 
