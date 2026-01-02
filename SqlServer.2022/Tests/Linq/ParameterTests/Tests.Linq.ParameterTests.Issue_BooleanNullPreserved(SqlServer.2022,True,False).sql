@@ -43,8 +43,9 @@ FROM
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = 1
+WHERE
+	[TestBool].[Id] = 1
 
 -- SqlServer.2022
 
