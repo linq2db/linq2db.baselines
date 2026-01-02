@@ -43,8 +43,9 @@ FROM
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = 0
+WHERE
+	[TestBool].[Id] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
 
