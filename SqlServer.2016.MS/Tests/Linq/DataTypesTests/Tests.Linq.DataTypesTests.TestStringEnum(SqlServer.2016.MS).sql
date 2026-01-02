@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-DECLARE @Column NVarChar(4000) -- String
+DECLARE @Column NVarChar(8) -- String
 SET     @Column = N'value=2'
-DECLARE @ColumnNullable NVarChar(4000) -- String
+DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = N'value=33'
 
 SELECT
