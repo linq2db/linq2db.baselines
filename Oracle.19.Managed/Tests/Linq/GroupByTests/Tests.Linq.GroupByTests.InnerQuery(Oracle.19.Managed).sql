@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			s."PersonID"
+			s."PersonID" as "Key_1"
 		FROM
 			"Doctor" s
 		GROUP BY
@@ -17,7 +17,7 @@ FROM
 			FROM
 				"Doctor" s_1
 			WHERE
-				s_2."PersonID" = s_1."PersonID"
+				s_2."Key_1" = s_1."PersonID"
 			FETCH NEXT 1 ROWS ONLY
 		) t1
 

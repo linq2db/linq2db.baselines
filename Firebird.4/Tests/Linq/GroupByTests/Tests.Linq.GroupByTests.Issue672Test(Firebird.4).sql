@@ -71,7 +71,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"sG"."Name"
+			"sG"."Name" as "Key_1"
 		FROM
 			"Stone" "sG"
 		WHERE
@@ -92,7 +92,7 @@ FROM
 				"s"."Enabled" = TRUE AND
 				"s"."Name" NOT STARTING WITH 'level - ' AND
 				CHAR_LENGTH("s"."ImageFullUrl") > 0 AND
-				"sG_1"."Name" = "s"."Name"
+				"sG_1"."Key_1" = "s"."Name"
 			FETCH NEXT 1 ROWS ONLY
 		) "t1"
 

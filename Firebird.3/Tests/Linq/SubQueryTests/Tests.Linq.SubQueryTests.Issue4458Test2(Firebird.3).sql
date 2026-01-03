@@ -30,13 +30,13 @@ SELECT
 		WHERE
 			"s"."ItemId" = "i"."Id" AND (
 				SELECT
-					"stock"."ItemId"
+					"s_1"."ItemId"
 				FROM
-					"WarehouseStock" "stock"
+					"WarehouseStock" "s_1"
 				WHERE
-					"stock"."ItemId" = "i"."Id"
+					"s_1"."ItemId" = "i"."Id"
 				GROUP BY
-					"stock"."ItemId"
+					"s_1"."ItemId"
 			) = "s"."ItemId"
 	)
 FROM
