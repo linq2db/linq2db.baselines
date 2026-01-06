@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[gr].[ID]
+			[gr].[ID] as [Key_1]
 		FROM
 			[temp_table_1] [gr]
 		GROUP BY
@@ -49,7 +49,7 @@ FROM
 			FROM
 				[temp_table_1] [c_1]
 			WHERE
-				[gr_1].[ID] = [c_1].[ID]
+				[gr_1].[Key_1] = [c_1].[ID]
 		) [t1]
 
 -- SqlCe
