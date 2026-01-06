@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	`WarehouseTableDto` `t1`
 SET
-	`t1`.`Value` = (`t1`.`Value` | @addMask) & (~@removeMask)
+	`t1`.`Value` = (`t1`.`Value` | @addMask) & ~@removeMask
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
