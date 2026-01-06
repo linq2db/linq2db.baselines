@@ -7,7 +7,7 @@ SET     @removeMask = 12
 UPDATE
 	[WarehouseTableDto]
 SET
-	[Value] = [WarehouseTableDto].[Value] | @addMask & (~@removeMask)
+	[Value] = [WarehouseTableDto].[Value] | @addMask & ~@removeMask
 
 -- SqlServer.2019.MS SqlServer.2019
 
