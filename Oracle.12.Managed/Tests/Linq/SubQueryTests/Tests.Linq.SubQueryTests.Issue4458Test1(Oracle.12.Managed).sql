@@ -27,20 +27,13 @@ SELECT
 	i."Id",
 	(
 		SELECT
-			SUM(s."QuantityAvailable")
+			SUM(stock."QuantityAvailable")
 		FROM
-			"WarehouseStock" s
+			"WarehouseStock" stock
 		WHERE
-			s."ItemId" = i."Id" AND (
-				SELECT
-					s_1."ItemId"
-				FROM
-					"WarehouseStock" s_1
-				WHERE
-					s_1."ItemId" = i."Id"
-				GROUP BY
-					s_1."ItemId"
-			) = s."ItemId"
+			stock."ItemId" = i."Id"
+		GROUP BY
+			stock."ItemId"
 	)
 FROM
 	"Issue4458Item" i
