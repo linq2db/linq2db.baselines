@@ -5,5 +5,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	concat(p.FirstName, ' ', toString(1)) = 'John 1'
+	concat(p.FirstName, ' ', 1) = 'John 1'
 
