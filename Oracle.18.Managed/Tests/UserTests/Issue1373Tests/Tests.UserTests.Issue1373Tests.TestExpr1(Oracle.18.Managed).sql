@@ -34,7 +34,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	'test'
+	N'test'
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
