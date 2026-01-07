@@ -3,7 +3,7 @@
 SELECT
 	m_2.Id,
 	d.Id,
-	concat('QueryResult', toString(d.Id))
+	concat('QueryResult', d.Id)
 FROM
 	(
 		SELECT DISTINCT
