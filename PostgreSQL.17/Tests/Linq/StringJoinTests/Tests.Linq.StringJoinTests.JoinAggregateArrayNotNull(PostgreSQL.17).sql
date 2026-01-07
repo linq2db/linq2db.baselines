@@ -17,6 +17,7 @@ FROM
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."Id",
 	t1."NullableValue",
 	t1."NotNullableValue",
