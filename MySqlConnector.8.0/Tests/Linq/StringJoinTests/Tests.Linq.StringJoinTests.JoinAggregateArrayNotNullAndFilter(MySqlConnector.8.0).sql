@@ -34,6 +34,7 @@ WHERE
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`PK`,
 	`t1`.`Id`,
 	`t1`.`NullableValue`,
 	`t1`.`NotNullableValue`,
