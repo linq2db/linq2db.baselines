@@ -20,5 +20,5 @@ WHERE
 RETURNING
 	[TableWithData].[Id] + @param,
 	[TableWithData].[Value] + @param,
-	[TableWithData].[ValueStr] || @param
+	[TableWithData].[ValueStr] || CAST(@param AS NVarChar(11))
 

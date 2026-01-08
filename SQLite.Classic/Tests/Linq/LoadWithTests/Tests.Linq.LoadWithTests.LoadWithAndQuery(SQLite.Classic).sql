@@ -3,7 +3,7 @@
 SELECT
 	[m_2].[Id],
 	[d].[Id],
-	'QueryResult' || [d].[Id]
+	'QueryResult' || CAST([d].[Id] AS NVarChar(11))
 FROM
 	(
 		SELECT DISTINCT
