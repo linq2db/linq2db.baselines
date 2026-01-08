@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			-Int(--([p].[MoneyValue] + 1)) as [Value_1]
+			-Int([p].[MoneyValue] + 1) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
