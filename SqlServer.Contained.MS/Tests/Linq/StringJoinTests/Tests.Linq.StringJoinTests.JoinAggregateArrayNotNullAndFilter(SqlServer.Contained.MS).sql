@@ -10,6 +10,7 @@ WHERE
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
+	[t1].[PK],
 	[t1].[Id],
 	[t1].[NullableValue],
 	[t1].[NotNullableValue],
