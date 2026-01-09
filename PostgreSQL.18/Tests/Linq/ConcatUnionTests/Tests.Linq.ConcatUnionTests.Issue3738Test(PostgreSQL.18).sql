@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	'I-' || x."PersonID",
+	'I-' || x."PersonID"::text,
 	x."FirstName"
 FROM
 	"Person" x

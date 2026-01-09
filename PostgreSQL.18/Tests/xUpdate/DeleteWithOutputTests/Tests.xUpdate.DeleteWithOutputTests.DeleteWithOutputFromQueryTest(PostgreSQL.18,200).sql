@@ -20,5 +20,5 @@ WHERE
 RETURNING
 	OLD."Id" + :param,
 	OLD."Value" + :param,
-	OLD."ValueStr" || :param
+	OLD."ValueStr" || :param::text
 
