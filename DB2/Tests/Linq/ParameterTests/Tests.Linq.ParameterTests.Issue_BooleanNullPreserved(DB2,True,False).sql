@@ -39,10 +39,11 @@ FETCH NEXT 2 ROWS ONLY
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"TestBool" "t1"
+	"TestBool" "r"
 SET
-	"Id" = 1,
 	"Value" = 1
+WHERE
+	"r"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
 

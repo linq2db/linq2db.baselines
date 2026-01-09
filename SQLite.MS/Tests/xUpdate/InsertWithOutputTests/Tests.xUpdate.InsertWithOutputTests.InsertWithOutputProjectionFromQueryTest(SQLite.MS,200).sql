@@ -11,14 +11,14 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
-	[s].[ValueStr] || 100
+	[s].[ValueStr] || CAST(100 AS NVarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
 	[s].[Id] > 3
 RETURNING
 	[DestinationTable].[Id] + 1,
-	[DestinationTable].[ValueStr] || 1
+	[DestinationTable].[ValueStr] || CAST(1 AS NVarChar(11))
 
 -- SQLite.MS SQLite
 
@@ -33,7 +33,7 @@ FROM
 
 SELECT
 	[t].[Id] + 1,
-	[t].[ValueStr] || 1
+	[t].[ValueStr] || CAST(1 AS NVarChar(11))
 FROM
 	[DestinationTable] [t]
 

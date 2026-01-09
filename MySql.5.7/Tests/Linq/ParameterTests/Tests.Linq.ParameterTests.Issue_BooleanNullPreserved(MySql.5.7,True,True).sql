@@ -39,10 +39,11 @@ LIMIT 2
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
-	`TestBool` `t1`
+	`TestBool` `r`
 SET
-	`t1`.`Id` = 1,
-	`t1`.`Value` = 0
+	`r`.`Value` = 0
+WHERE
+	`r`.`Id` = 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 

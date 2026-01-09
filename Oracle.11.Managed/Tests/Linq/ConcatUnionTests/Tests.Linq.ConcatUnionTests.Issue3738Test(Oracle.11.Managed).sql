@@ -1,7 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	'I-' || x."PersonID",
+	'I-' || CAST(x."PersonID" AS VarChar(11)),
 	x."FirstName"
 FROM
 	"Person" x

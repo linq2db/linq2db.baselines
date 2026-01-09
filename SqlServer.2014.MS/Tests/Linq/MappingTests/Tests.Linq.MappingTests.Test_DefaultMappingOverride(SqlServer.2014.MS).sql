@@ -6,5 +6,5 @@ SELECT
 FROM
 	[TimeSpanAsTicks] [r]
 WHERE
-	[r].[Value] = CAST(-1200000000 AS BIGINT)
+	[r].[Value] = -CAST(1200000000 AS BIGINT)
 

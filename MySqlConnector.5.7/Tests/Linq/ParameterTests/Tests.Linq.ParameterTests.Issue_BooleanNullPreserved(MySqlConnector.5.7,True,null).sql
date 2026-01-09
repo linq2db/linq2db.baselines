@@ -39,10 +39,11 @@ LIMIT 2
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
-	`TestBool` `t1`
+	`TestBool` `r`
 SET
-	`t1`.`Id` = 1,
-	`t1`.`Value` = NULL
+	`r`.`Value` = NULL
+WHERE
+	`r`.`Id` = 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 

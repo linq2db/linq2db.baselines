@@ -9,5 +9,5 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	([t].[Flags] & CAST(@flag AS INTEGER)) <> 0
+	([t].[Flags] & @flag) <> 0
 

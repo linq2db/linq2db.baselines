@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	'I-' || [x].[PersonID],
+	'I-' || CAST([x].[PersonID] AS NVarChar(11)),
 	[x].[FirstName]
 FROM
 	[Person] [x]

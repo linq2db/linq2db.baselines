@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	'I-' || "x"."PersonID",
+	'I-' || RTrim(Char("x"."PersonID")),
 	"x"."FirstName"
 FROM
 	"Person" "x"

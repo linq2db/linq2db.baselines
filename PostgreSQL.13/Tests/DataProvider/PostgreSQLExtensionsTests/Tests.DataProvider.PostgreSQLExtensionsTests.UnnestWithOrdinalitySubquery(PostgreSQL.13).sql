@@ -4,7 +4,7 @@ SELECT
 	t."Id",
 	(
 		SELECT
-			e.idx || ' - ' || e.value
+			e.idx::text || ' - ' || e.value
 		FROM
 			UNNEST(t."StrArray") WITH ORDINALITY e(value, idx)
 		LIMIT 1 OFFSET 1 

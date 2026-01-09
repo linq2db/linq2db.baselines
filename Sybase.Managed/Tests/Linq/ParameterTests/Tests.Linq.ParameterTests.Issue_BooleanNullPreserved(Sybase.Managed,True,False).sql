@@ -42,8 +42,9 @@ FROM
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = 1
+WHERE
+	[TestBool].[Id] = 1
 
 -- Sybase.Managed Sybase
 

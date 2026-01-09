@@ -9,7 +9,7 @@ AS
 		"Person" "p"
 	UNION ALL
 	SELECT
-		"r"."FirstName" || '/' || "r"."LastName"
+		"r"."FirstName" || RTrim(Char('/')) || "r"."LastName"
 	FROM
 		"cte" "t1",
 		"Person" "r"
