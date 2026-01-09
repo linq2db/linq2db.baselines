@@ -3,7 +3,7 @@
 UPDATE
 	"Issue4193Person"
 SET
-	"Name" = "Issue4193Person"."Name" || r."SalaryId"
+	"Name" = "Issue4193Person"."Name" || r."SalaryId"::text
 FROM
 	"Issue4193Employee" r
 WHERE

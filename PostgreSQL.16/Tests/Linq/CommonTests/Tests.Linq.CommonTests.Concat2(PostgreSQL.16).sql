@@ -5,5 +5,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."FirstName" || ' ' || 1 = 'John 1'
+	p."FirstName" || ' ' || 1::text = 'John 1'
 
