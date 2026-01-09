@@ -120,6 +120,7 @@ ORDER BY
 -- Informix.DB2 Informix
 
 SELECT
+	t1.PK,
 	t1.Id,
 	t1.NullableValue,
 	t1.NotNullableValue,

@@ -24,6 +24,7 @@ ORDER BY
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t1".PK,
 	"t1"."Id",
 	"t1"."NullableValue",
 	"t1"."NotNullableValue",

@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([p].[FinalCustomerId] = 0, [p].[CustomerId], IIF([p].[FinalCustomerId] = 0, NULL, [p].[FinalCustomerId])) as [FinalCustomerId],
+			IIF([p].[FinalCustomerId] = 0, [p].[CustomerId], [p].[FinalCustomerId]) as [FinalCustomerId],
 			False as [IsActive],
 			[t].[Volume] * [p].[Price] as [c1]
 		FROM

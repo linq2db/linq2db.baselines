@@ -14,6 +14,7 @@ ORDER BY
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1.PK,
 	t1."Id",
 	t1."NullableValue",
 	t1."NotNullableValue",

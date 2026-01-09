@@ -49,6 +49,7 @@ ORDER BY
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[t1].[PK],
 	[t1].[Id],
 	[t1].[NullableValue],
 	[t1].[NotNullableValue],

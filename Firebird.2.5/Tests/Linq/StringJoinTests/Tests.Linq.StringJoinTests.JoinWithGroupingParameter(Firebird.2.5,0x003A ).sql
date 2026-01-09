@@ -16,6 +16,7 @@ ORDER BY
 -- Firebird.2.5 Firebird
 
 SELECT
+	"t1".PK,
 	"t1"."Id",
 	"t1"."NullableValue",
 	"t1"."NotNullableValue",
