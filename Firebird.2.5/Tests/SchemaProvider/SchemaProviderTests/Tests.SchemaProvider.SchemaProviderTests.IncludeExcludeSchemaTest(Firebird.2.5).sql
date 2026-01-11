@@ -1,6 +1,5 @@
 ﻿-- Firebird.2.5 Firebird
 
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -60,7 +59,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 RollbackTransaction
 -- Firebird.2.5 Firebird
 
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -119,7 +117,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 
 SELECT * FROM (
 	SELECT

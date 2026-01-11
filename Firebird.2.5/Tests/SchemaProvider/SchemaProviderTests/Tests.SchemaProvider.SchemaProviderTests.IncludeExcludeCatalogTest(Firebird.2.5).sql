@@ -1,6 +1,5 @@
 ﻿-- Firebird.2.5 Firebird
 
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -132,7 +131,6 @@ SELECT * FROM "Scalar_ReturnParameter"
 RollbackTransaction
 -- Firebird.2.5 Firebird
 
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -191,7 +189,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 
 SELECT * FROM (
 	SELECT

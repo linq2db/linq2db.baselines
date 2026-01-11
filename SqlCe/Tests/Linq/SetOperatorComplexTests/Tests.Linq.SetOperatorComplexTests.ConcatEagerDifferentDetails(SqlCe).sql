@@ -41,7 +41,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	[m_1].[c1] as [Item1],
+	[m_1].[c1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
