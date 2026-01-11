@@ -1,6 +1,5 @@
 ﻿-- SqlCe
 
-
 SELECT
 	COALESCE(TABLE_CATALOG, '') + '.' + COALESCE(TABLE_SCHEMA, '') + '.' + TABLE_NAME AS TableID,
 	INDEX_NAME                                            AS PrimaryKeyName,
@@ -10,7 +9,6 @@ FROM INFORMATION_SCHEMA.INDEXES
 WHERE PRIMARY_KEY = 1
 
 -- SqlCe
-
 
 SELECT
 	COALESCE(rc.CONSTRAINT_CATALOG,        '') + '.' + COALESCE(rc.CONSTRAINT_SCHEMA,        '') + '.' + rc.CONSTRAINT_TABLE_NAME        ThisTableID,
@@ -28,7 +26,6 @@ FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS rc
 
 -- SqlCe
 
-
 SELECT
 	COALESCE(TABLE_CATALOG, '') + '.' + COALESCE(TABLE_SCHEMA, '') + '.' + TABLE_NAME AS TableID,
 	INDEX_NAME                                            AS PrimaryKeyName,
@@ -38,7 +35,6 @@ FROM INFORMATION_SCHEMA.INDEXES
 WHERE PRIMARY_KEY = 1
 
 -- SqlCe
-
 
 SELECT
 	COALESCE(rc.CONSTRAINT_CATALOG,        '') + '.' + COALESCE(rc.CONSTRAINT_SCHEMA,        '') + '.' + rc.CONSTRAINT_TABLE_NAME        ThisTableID,
@@ -56,7 +52,6 @@ FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS rc
 
 -- SqlCe
 
-
 SELECT
 	COALESCE(TABLE_CATALOG, '') + '.' + COALESCE(TABLE_SCHEMA, '') + '.' + TABLE_NAME AS TableID,
 	INDEX_NAME                                            AS PrimaryKeyName,
@@ -66,7 +61,6 @@ FROM INFORMATION_SCHEMA.INDEXES
 WHERE PRIMARY_KEY = 1
 
 -- SqlCe
-
 
 SELECT
 	COALESCE(rc.CONSTRAINT_CATALOG,        '') + '.' + COALESCE(rc.CONSTRAINT_SCHEMA,        '') + '.' + rc.CONSTRAINT_TABLE_NAME        ThisTableID,
