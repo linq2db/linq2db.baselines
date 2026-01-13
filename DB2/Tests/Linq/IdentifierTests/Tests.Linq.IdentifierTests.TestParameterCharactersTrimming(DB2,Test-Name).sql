@@ -5,7 +5,7 @@ SET     @TestName = 2
 UPDATE
 	"testparams" "t"
 SET
-	"Test-Name" = @TestName
+	"Test-Name" = CAST(@TestName AS Int)
 WHERE
 	"t"."Test-Name" = 1
 

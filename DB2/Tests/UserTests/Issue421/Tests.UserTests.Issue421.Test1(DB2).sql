@@ -33,7 +33,7 @@ SET     @BlobValue = BX'030201'
 UPDATE
 	"BlobClass" "t1"
 SET
-	"BlobValue" = @BlobValue
+	"BlobValue" = CAST(@BlobValue AS Blob(3))
 WHERE
 	"t1"."Id" = 1
 

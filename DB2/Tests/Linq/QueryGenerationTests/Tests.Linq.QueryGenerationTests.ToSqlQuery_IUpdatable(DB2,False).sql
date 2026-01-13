@@ -18,7 +18,7 @@ SET     @newValue = 123
 UPDATE
 	"TableWithIdentity" "t1"
 SET
-	"Value" = @newValue
+	"Value" = CAST(@newValue AS Int)
 
 -- DB2 DB2.LUW DB2LUW
 
