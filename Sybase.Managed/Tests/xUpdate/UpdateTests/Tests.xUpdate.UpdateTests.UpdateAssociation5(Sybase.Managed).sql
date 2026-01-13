@@ -5,23 +5,24 @@ UPDATE
 SET
 	[BoolValue] = (
 		SELECT
-			CASE
-				WHEN NOT EXISTS(
-					SELECT
-						*
-					FROM
-						[Parent] [x_2]
-					WHERE
-						[t1].[ID] = [x_2].[ParentID] AND ([x_2].[Value1] <> 1 OR [x_2].[Value1] IS NULL)
-				)
-					THEN 1
-				ELSE 0
-			END
+			[t1].[c1]
 		FROM
 			(
 				SELECT DISTINCT
 					[a_Table1_1].[ID],
-					[a_Table1_1].[BoolValue]
+					[a_Table1_1].[BoolValue],
+					CASE
+						WHEN NOT EXISTS(
+							SELECT
+								*
+							FROM
+								[Parent] [x_2]
+							WHERE
+								[a_Table1_1].[ID] = [x_2].[ParentID] AND ([x_2].[Value1] <> 1 OR [x_2].[Value1] IS NULL)
+						)
+							THEN 1
+						ELSE 0
+					END as [c1]
 				FROM
 					[Parent] [x_1]
 						INNER JOIN [LinqDataTypes] [a_Table1_1] ON [x_1].[ParentID] = [a_Table1_1].[ID]
