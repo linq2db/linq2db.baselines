@@ -11,6 +11,16 @@ FROM
 			[t1].[Id]
 		FROM
 			[Issue4458Item] [t1]
+				OUTER APPLY (
+					SELECT
+						SUM([stock].[QuantityAvailable]) as [TotalAvailable]
+					FROM
+						[WarehouseStock] [stock]
+					WHERE
+						[stock].[ItemId] = [t1].[Id]
+					GROUP BY
+						[stock].[ItemId]
+				) [stock_1]
 		WHERE
 			EXISTS(
 				SELECT
@@ -27,25 +37,19 @@ FROM
 
 SELECT
 	[i].[Id],
-	[t1].[TotalAvailable]
+	[stock_1].[TotalAvailable]
 FROM
 	[Issue4458Item] [i]
-		LEFT JOIN (
-			SELECT
-				[stock].[ItemId]
-			FROM
-				[WarehouseStock] [stock]
-			GROUP BY
-				[stock].[ItemId]
-		) [stock_1] ON [stock_1].[ItemId] = [i].[Id]
 		OUTER APPLY (
 			SELECT
-				SUM([s].[QuantityAvailable]) as [TotalAvailable]
+				SUM([stock].[QuantityAvailable]) as [TotalAvailable]
 			FROM
-				[WarehouseStock] [s]
+				[WarehouseStock] [stock]
 			WHERE
-				[s].[ItemId] = [i].[Id] AND [stock_1].[ItemId] = [s].[ItemId]
-		) [t1]
+				[stock].[ItemId] = [i].[Id]
+			GROUP BY
+				[stock].[ItemId]
+		) [stock_1]
 WHERE
 	EXISTS(
 		SELECT
