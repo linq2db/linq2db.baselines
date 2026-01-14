@@ -5,7 +5,7 @@ SET     @from = 2
 UPDATE
 	"testparams" "t"
 SET
-	"from" = @from
+	"from" = CAST(@from AS Int)
 WHERE
 	"t"."from" = 1
 
