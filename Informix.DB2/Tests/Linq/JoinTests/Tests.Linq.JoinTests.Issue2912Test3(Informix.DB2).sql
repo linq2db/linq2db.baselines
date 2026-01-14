@@ -7,7 +7,6 @@ SELECT
 	END
 FROM
 	Parent employee
-		LEFT JOIN GrandChild names_1 ON employee.ParentID = names_1.ParentID
 		LEFT JOIN (
 			SELECT
 				a_Children.ParentID,
@@ -16,4 +15,5 @@ FROM
 			FROM
 				Child a_Children
 		) t1 ON employee.ParentID = t1.ParentID AND t1.rn <= 1
+		LEFT JOIN GrandChild names_1 ON employee.ParentID = names_1.ParentID
 

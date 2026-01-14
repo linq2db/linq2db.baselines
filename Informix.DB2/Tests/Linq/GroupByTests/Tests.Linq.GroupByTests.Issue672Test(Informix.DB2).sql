@@ -71,7 +71,7 @@ SELECT
 FROM
 	(
 		SELECT
-			sG.Name
+			sG.Name as Key_1
 		FROM
 			Stone sG
 		WHERE
@@ -92,5 +92,5 @@ FROM
 			WHERE
 				s.Enabled = 't'::BOOLEAN AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 				CHAR_LENGTH(s.ImageFullUrl || '.') - 1 > 0
-		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
+		) t1 ON sG_1.Key_1 = t1.Name AND t1.rn <= 1
 

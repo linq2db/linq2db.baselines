@@ -27,20 +27,13 @@ SELECT
 	i.Id,
 	(
 		SELECT
-			SUM(s.QuantityAvailable)
+			SUM(stock.QuantityAvailable)
 		FROM
-			WarehouseStock s
+			WarehouseStock stock
 		WHERE
-			s.ItemId = i.Id AND (
-				SELECT
-					stock.ItemId
-				FROM
-					WarehouseStock stock
-				WHERE
-					stock.ItemId = i.Id
-				GROUP BY
-					stock.ItemId
-			) = s.ItemId
+			stock.ItemId = i.Id
+		GROUP BY
+			stock.ItemId
 	)
 FROM
 	Issue4458Item i
