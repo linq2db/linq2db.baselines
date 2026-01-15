@@ -71,7 +71,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"sG"."Name"
+			"sG"."Name" as "Key_1"
 		FROM
 			"Stone" "sG"
 		WHERE
@@ -92,7 +92,7 @@ FROM
 				s."Enabled" = True AND
 				s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 				Length(s."ImageFullUrl") > 0 AND
-				"sG_1"."Name" = s."Name"
+				"sG_1"."Key_1" = s."Name"
 			LIMIT 1
 		) t1 ON 1=1
 
