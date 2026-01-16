@@ -8,27 +8,33 @@ SELECT
 FROM
 	(
 		SELECT
-			p."Id"
+			t1."Id"
 		FROM
-			"Issue4629Posts" p
-		WHERE
 			(
 				SELECT
-					SUM("a_Tags"."Weight")
+					p."Id",
+					(
+						SELECT
+							SUM("a_Tags"."Weight")
+						FROM
+							"Issue4629Tags" "a_Tags"
+						WHERE
+							p."Id" = "a_Tags"."PostId"
+					) as "Sum_1"
 				FROM
-					"Issue4629Tags" "a_Tags"
-				WHERE
-					p."Id" = "a_Tags"."PostId" AND "a_Tags"."Weight" > 1
-			) > 5
-		ORDER BY
+					"Issue4629Posts" p
+			) t1
+		WHERE
 			(
 				SELECT
 					SUM("a_Tags_1"."Weight")
 				FROM
 					"Issue4629Tags" "a_Tags_1"
 				WHERE
-					p."Id" = "a_Tags_1"."PostId"
-			)
+					t1."Id" = "a_Tags_1"."PostId" AND "a_Tags_1"."Weight" > 1
+			) > 5
+		ORDER BY
+			t1."Sum_1"
 		LIMIT :take
 	) id
 
