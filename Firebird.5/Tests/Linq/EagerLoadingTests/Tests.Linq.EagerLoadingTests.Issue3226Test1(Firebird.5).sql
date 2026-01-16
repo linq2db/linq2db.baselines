@@ -1,17 +1,24 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	"x"."Id",
-	"x"."Text"
+	"x_1"."Id",
+	"x_1"."Text"
 FROM
-	"Item" "x"
-ORDER BY
 	(
 		SELECT
-			SUM("a_Values"."Value")
+			"x"."Id",
+			"x"."Text",
+			(
+				SELECT
+					SUM("a_Values"."Value")
+				FROM
+					"ItemValue" "a_Values"
+				WHERE
+					"x"."Id" = "a_Values"."ItemId"
+			) as "Sum_1"
 		FROM
-			"ItemValue" "a_Values"
-		WHERE
-			"x"."Id" = "a_Values"."ItemId"
-	)
+			"Item" "x"
+	) "x_1"
+ORDER BY
+	"x_1"."Sum_1"
 
