@@ -4,23 +4,40 @@ SELECT
 	m_1."Id",
 	d."Value"
 FROM
-	"Item" m_1
+	(
+		SELECT DISTINCT
+			t1."Id"
+		FROM
+			(
+				SELECT
+					x."Id"
+				FROM
+					"Item" x
+			) t1
+	) m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	x."Id",
-	x."Text"
+	x_1."Id",
+	x_1."Text"
 FROM
-	"Item" x
-ORDER BY
-	Coalesce((
+	(
 		SELECT
-			SUM("a_Values"."Value")
+			x."Id",
+			x."Text",
+			(
+				SELECT
+					SUM("a_Values"."Value")
+				FROM
+					"ItemValue" "a_Values"
+				WHERE
+					x."Id" = "a_Values"."ItemId"
+			) as "Sum_1"
 		FROM
-			"ItemValue" "a_Values"
-		WHERE
-			x."Id" = "a_Values"."ItemId"
-	), 0)
+			"Item" x
+	) x_1
+ORDER BY
+	Coalesce(x_1."Sum_1", 0)
 
