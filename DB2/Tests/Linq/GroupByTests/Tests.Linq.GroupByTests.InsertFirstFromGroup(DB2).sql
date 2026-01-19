@@ -38,7 +38,7 @@ SELECT
 FROM
 	(
 		SELECT
-			"gr".ID
+			"gr".ID as "Key_1"
 		FROM
 			"temp_table_1" "gr"
 		GROUP BY
@@ -51,7 +51,7 @@ FROM
 				"c_1".ID
 			FROM
 				"temp_table_1" "c_1"
-		) "t1" ON "gr_1".ID = "t1".ID AND "t1"."rn" <= 1
+		) "t1" ON "gr_1"."Key_1" = "t1".ID AND "t1"."rn" <= 1
 
 -- DB2 DB2.LUW DB2LUW
 
