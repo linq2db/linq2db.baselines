@@ -8,13 +8,19 @@ FROM
 WHERE
 	[t].[ParentID] IN (
 		SELECT TOP 2
-			[g_1].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Child] [g_1]
-		GROUP BY
-			[g_1].[ParentID]
+			(
+				SELECT
+					MAX([g_1].[ChildID]) as [Max_1],
+					[g_1].[ParentID]
+				FROM
+					[Child] [g_1]
+				GROUP BY
+					[g_1].[ParentID]
+			) [t1]
 		ORDER BY
-			MAX([g_1].[ChildID]) DESC
+			[t1].[Max_1] DESC
 	)
 
 -- Access.Ace.OleDb AccessOleDb
