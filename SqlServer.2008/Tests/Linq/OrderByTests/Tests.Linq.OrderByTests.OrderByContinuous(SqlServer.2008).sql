@@ -1,26 +1,19 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	[t1].[ParentID],
-	[t1].[Value1]
+	[p].[ParentID],
+	[p].[Value1]
 FROM
-	(
-		SELECT
-			[p].[Value1],
-			[p].[ParentID],
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Child] [a_Children]
-				WHERE
-					[p].[ParentID] = [a_Children].[ParentID]
-			) as [Count_1]
-		FROM
-			[Parent] [p]
-	) [t1]
-		INNER JOIN [Parent] [pp] ON [t1].[Value1] = [pp].[Value1]
+	[Parent] [p]
+		INNER JOIN [Parent] [pp] ON [p].[Value1] = [pp].[Value1]
 ORDER BY
 	[pp].[ParentID],
-	[t1].[Count_1]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID]
+	)
 
