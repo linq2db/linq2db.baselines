@@ -8,6 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t].[PK],
 					[t].[NullableValue]
 				FROM
 					[SampleClass] [t]
@@ -24,6 +25,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_1].[PK],
 					[t_1].[NullableValue]
 				FROM
 					[SampleClass] [t_1]
