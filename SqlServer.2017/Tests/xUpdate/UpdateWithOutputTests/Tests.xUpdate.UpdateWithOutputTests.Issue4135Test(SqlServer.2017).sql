@@ -5,7 +5,7 @@ SET     @take = 4
 UPDATE
 	[u]
 SET
-	[u].[NeedsUpdate] = 0
+	[u].[NeedsUpdate] = [t1].[c1]
 OUTPUT
 	DELETED.[Id],
 	DELETED.[Name],
@@ -14,6 +14,7 @@ FROM
 	[Issue4135Table] [u],
 	(
 		SELECT TOP (@take)
+			0 as [c1],
 			[e].[Id]
 		FROM
 			[Issue4135Table] [e]
