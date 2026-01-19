@@ -8,6 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t].[PK],
 					[t].[NullableValue]
 				FROM
 					[SampleClass] [t]
@@ -27,6 +28,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_1].[PK],
 					[t_1].[NullableValue]
 				FROM
 					[SampleClass] [t_1]
@@ -43,6 +45,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_2].[PK],
 					[t_2].[NotNullableValue]
 				FROM
 					[SampleClass] [t_2]
@@ -59,6 +62,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_3].[PK],
 					[t_3].[NullableValue]
 				FROM
 					[SampleClass] [t_3]
@@ -75,6 +79,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_4].[PK],
 					[t_4].[NotNullableValue]
 				FROM
 					[SampleClass] [t_4]
@@ -91,6 +96,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_5].[PK],
 					[t_5].[NotNullableValue]
 				FROM
 					[SampleClass] [t_5]
