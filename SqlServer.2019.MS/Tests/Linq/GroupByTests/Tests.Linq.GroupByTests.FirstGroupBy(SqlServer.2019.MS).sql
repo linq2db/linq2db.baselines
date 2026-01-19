@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[gr].[ParentID]
+			[gr].[ParentID] as [Key_1]
 		FROM
 			[Child] [gr]
 		GROUP BY
@@ -19,7 +19,7 @@ FROM
 			FROM
 				[Child] [t]
 			WHERE
-				[gr_1].[ParentID] = [t].[ParentID]
+				[gr_1].[Key_1] = [t].[ParentID]
 			ORDER BY
 				[t].[ChildID] DESC
 		) [t1]
