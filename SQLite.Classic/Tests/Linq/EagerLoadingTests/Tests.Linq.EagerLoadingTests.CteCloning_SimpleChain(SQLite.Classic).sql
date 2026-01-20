@@ -1,18 +1,40 @@
 ﻿-- SQLite.Classic SQLite
 
-WITH [CTE_1] ([Id])
+WITH [CTE_1]
+(
+	[Id],
+	[Value2],
+	[Value5],
+	[Value3],
+	[Value4]
+)
 AS
 (
 	SELECT
-		[r].[Id]
+		[r].[Id],
+		[r].[Value2],
+		[r].[Value5],
+		[r].[Value3],
+		[r].[Value4]
 	FROM
 		[CteTable] [r]
 ),
-[CTE_2] ([Id])
+[CTE_2]
+(
+	[Id],
+	[Value1],
+	[Value3],
+	[Value5],
+	[Value4]
+)
 AS
 (
 	SELECT
-		[r_1].[Id]
+		[r_1].[Id],
+		[r_1].[Value2],
+		[r_1].[Value5],
+		[r_1].[Value3],
+		[r_1].[Value4]
 	FROM
 		[CTE_1] [r_1]
 ),

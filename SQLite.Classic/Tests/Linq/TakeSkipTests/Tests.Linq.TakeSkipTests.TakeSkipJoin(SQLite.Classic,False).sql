@@ -43,13 +43,25 @@ FROM
 				(
 					SELECT
 						[t4].[ID],
-						[t4].[SmallIntValue]
+						[t4].[MoneyValue],
+						[t4].[DateTimeValue],
+						[t4].[BoolValue],
+						[t4].[GuidValue],
+						[t4].[BinaryValue],
+						[t4].[SmallIntValue],
+						[t4].[StringValue]
 					FROM
 						[LinqDataTypes] [t4]
 					UNION ALL
 					SELECT
 						[t5].[ID],
-						[t5].[SmallIntValue]
+						[t5].[MoneyValue],
+						[t5].[DateTimeValue],
+						[t5].[BoolValue],
+						[t5].[GuidValue],
+						[t5].[BinaryValue],
+						[t5].[SmallIntValue],
+						[t5].[StringValue]
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]
