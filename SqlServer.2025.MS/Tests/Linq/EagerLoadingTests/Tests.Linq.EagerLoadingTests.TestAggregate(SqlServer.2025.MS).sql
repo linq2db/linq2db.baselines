@@ -28,7 +28,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					*
+					[t3].[Count_1]
 				FROM
 					(
 						SELECT DISTINCT
