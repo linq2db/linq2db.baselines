@@ -12,6 +12,8 @@ USING (
 			FROM
 				(
 					SELECT
+						"patr"."PatentId",
+						"patr"."UserId",
 						"a_User"."DisplayName"
 					FROM
 						"Issue2918Table2" "patr"
