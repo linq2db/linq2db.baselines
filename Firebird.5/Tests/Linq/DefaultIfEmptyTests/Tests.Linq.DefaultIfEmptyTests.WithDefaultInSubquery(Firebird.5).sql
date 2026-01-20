@@ -10,7 +10,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					1 as "c1"
+					-100 as "ParentID"
 				FROM rdb$database
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"

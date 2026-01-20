@@ -8,6 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					"t".PK,
 					"t"."NullableValue"
 				FROM
 					"SampleClass" "t"
