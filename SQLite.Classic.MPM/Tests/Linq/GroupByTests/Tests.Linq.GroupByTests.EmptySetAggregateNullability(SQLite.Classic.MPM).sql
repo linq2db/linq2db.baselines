@@ -5,7 +5,11 @@ SELECT
 FROM
 	(
 		SELECT
-			MIN([gr].[ParentID]) as [Min_1]
+			MIN([gr].[ParentID]) as [Min_1],
+			MAX([gr].[ParentID]) as [Max_1],
+			AVG([gr].[ParentID]) as [Avg_1],
+			SUM([gr].[ParentID]) as [Sum_1],
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [gr]
 		WHERE
@@ -21,7 +25,11 @@ SELECT
 FROM
 	(
 		SELECT
-			MAX([gr].[ParentID]) as [Max_1]
+			MAX([gr].[ParentID]) as [Max_1],
+			MIN([gr].[ParentID]) as [Min_1],
+			AVG([gr].[ParentID]) as [Avg_1],
+			SUM([gr].[ParentID]) as [Sum_1],
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [gr]
 		WHERE
@@ -37,7 +45,11 @@ SELECT
 FROM
 	(
 		SELECT
-			AVG([gr].[ParentID]) as [Avg_1]
+			AVG([gr].[ParentID]) as [Avg_1],
+			MIN([gr].[ParentID]) as [Min_1],
+			MAX([gr].[ParentID]) as [Max_1],
+			SUM([gr].[ParentID]) as [Sum_1],
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [gr]
 		WHERE
@@ -53,7 +65,11 @@ SELECT
 FROM
 	(
 		SELECT
-			SUM([gr].[ParentID]) as [Sum_1]
+			SUM([gr].[ParentID]) as [Sum_1],
+			MIN([gr].[ParentID]) as [Min_1],
+			MAX([gr].[ParentID]) as [Max_1],
+			AVG([gr].[ParentID]) as [Avg_1],
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [gr]
 		WHERE
@@ -69,7 +85,11 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT(*) as [Count_1]
+			COUNT(*) as [Count_1],
+			MIN([gr].[ParentID]) as [Min_1],
+			MAX([gr].[ParentID]) as [Max_1],
+			AVG([gr].[ParentID]) as [Avg_1],
+			SUM([gr].[ParentID]) as [Sum_1]
 		FROM
 			[Parent] [gr]
 		WHERE

@@ -1,11 +1,20 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
+WITH [BooksCte]
+(
+	[Book_Id],
+	[Book_Title],
+	[Book_AuthorId],
+	[Author_Id],
+	[Author_Name]
+)
 AS
 (
 	SELECT
 		[b].[Id],
 		[b].[Title],
+		[b].[AuthorId],
+		[a_Author].[Id],
 		[a_Author].[Name]
 	FROM
 		[Books] [b]
