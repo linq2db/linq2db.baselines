@@ -1,23 +1,21 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	(
-		SELECT FIRST 1
-			"a_Children"."ParentID"
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"p"."ParentID" = "a_Children"."ParentID"
-	)
+	"t1"."cond"
 FROM
-	"Parent" "p"
-WHERE
 	(
-		SELECT FIRST 1
-			"a_Children"."ParentID"
+		SELECT
+			(
+				SELECT FIRST 1
+					"a_Children"."ParentID"
+				FROM
+					"Child" "a_Children"
+				WHERE
+					"p"."ParentID" = "a_Children"."ParentID"
+			) as "cond"
 		FROM
-			"Child" "a_Children"
-		WHERE
-			"p"."ParentID" = "a_Children"."ParentID"
-	) IS NOT NULL
+			"Parent" "p"
+	) "t1"
+WHERE
+	"t1"."cond" IS NOT NULL
 
