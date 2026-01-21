@@ -33,27 +33,34 @@ FROM
 -- SqlCe
 
 SELECT
-	[x].[ParentID],
-	[t1].[CountResult],
-	[t2].[SumResult]
+	[t3].[ParentID],
+	[t3].[CountResult],
+	[t3].[SumResult]
 FROM
-	[Parent] [x]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [CountResult]
-			FROM
-				[Child] [a_Children]
-			WHERE
-				[x].[ParentID] = [a_Children].[ParentID]
-		) [t1]
-		OUTER APPLY (
-			SELECT
-				SUM([a_Children_1].[ParentID]) as [SumResult]
-			FROM
-				[Child] [a_Children_1]
-			WHERE
-				[x].[ParentID] = [a_Children_1].[ParentID]
-		) [t2]
+	(
+		SELECT
+			[x].[ParentID],
+			[t1].[CountResult],
+			[t2].[SumResult]
+		FROM
+			[Parent] [x]
+				OUTER APPLY (
+					SELECT
+						COUNT(*) as [CountResult]
+					FROM
+						[Child] [a_Children]
+					WHERE
+						[x].[ParentID] = [a_Children].[ParentID]
+				) [t1]
+				OUTER APPLY (
+					SELECT
+						SUM([a_Children_1].[ParentID]) as [SumResult]
+					FROM
+						[Child] [a_Children_1]
+					WHERE
+						[x].[ParentID] = [a_Children_1].[ParentID]
+				) [t2]
+	) [t3]
 WHERE
-	[t1].[CountResult] > 0
+	[t3].[CountResult] > 0
 
