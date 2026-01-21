@@ -5,7 +5,7 @@ SET     @take = 3
 UPDATE
 	[u]
 SET
-	[u].[Name] = N'new_name'
+	[u].[Name] = [t1].[c1]
 OUTPUT
 	INSERTED.[EmployeeId],
 	INSERTED.[Name]
@@ -13,6 +13,7 @@ FROM
 	[Issue4193Person] [u],
 	(
 		SELECT TOP (@take)
+			N'new_name' as [c1],
 			[x].[Id]
 		FROM
 			[Issue4193Person] [x]
