@@ -68,37 +68,27 @@ VALUES
 -- SqlServer.2025.MS SqlServer.2025
 
 SELECT TOP (1)
-	[t2].[LanguageId],
-	[t2].[TextId],
-	[t2].[Text],
-	[t2].[TooltipText]
+	[t1].[LanguageId],
+	[t1].[TextId],
+	[t1].[Text],
+	[t1].[TooltipText]
 FROM
+	[TextTranslationDTO] [t1]
+ORDER BY
 	(
 		SELECT
-			[t1].[LanguageId],
-			[t1].[TextId],
-			[t1].[Text],
-			[t1].[TooltipText],
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[LanguageDTO] [l]
-				WHERE
-					[l].[AlternativeLanguageID] = [t1].[LanguageId]
-			) as [Count_1],
-			(
-				SELECT
-					[t].[ServerOnlyText]
-				FROM
-					[TextDTO] [t]
-				WHERE
-					[t].[Id] = [t1].[TextId]
-			) as [ServerOnlyText]
+			COUNT(*)
 		FROM
-			[TextTranslationDTO] [t1]
-	) [t2]
-ORDER BY
-	[t2].[Count_1],
-	[t2].[ServerOnlyText]
+			[LanguageDTO] [l]
+		WHERE
+			[l].[AlternativeLanguageID] = [t1].[LanguageId]
+	),
+	(
+		SELECT
+			[t].[ServerOnlyText]
+		FROM
+			[TextDTO] [t]
+		WHERE
+			[t].[Id] = [t1].[TextId]
+	)
 
