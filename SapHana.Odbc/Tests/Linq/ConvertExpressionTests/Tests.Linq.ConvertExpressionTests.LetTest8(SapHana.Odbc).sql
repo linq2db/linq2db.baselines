@@ -3,7 +3,7 @@
 SELECT
 	CASE
 		WHEN "t1"."ParentID" IS NULL THEN 0
-		ELSE "t2"."ParentID"
+		ELSE "t3"."ParentID"
 	END,
 	CASE
 		WHEN EXISTS(
@@ -25,8 +25,8 @@ SELECT
 		WHERE
 			"c_5"."ParentID" = "p"."ParentID" AND "c_5"."ChildID" > -100
 	),
-	"t3"."ParentID",
-	"t3"."ChildID"
+	"t2"."ParentID",
+	"t2"."ChildID"
 FROM
 	"Parent" "p"
 		LEFT JOIN LATERAL (
@@ -43,24 +43,24 @@ FROM
 		) "t1" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"c_2"."ParentID"
+				"c_2"."ParentID",
+				"c_2"."ChildID"
 			FROM
 				"Child" "c_2"
 			WHERE
-				"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100 AND
-				"c_2"."ParentID" > 0
+				"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
 			ORDER BY
 				"c_2"."ChildID"
 			LIMIT 1
 		) "t2" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"c_3"."ParentID",
-				"c_3"."ChildID"
+				"c_3"."ParentID"
 			FROM
 				"Child" "c_3"
 			WHERE
-				"c_3"."ParentID" = "p"."ParentID" AND "c_3"."ChildID" > -100
+				"c_3"."ParentID" = "p"."ParentID" AND "c_3"."ChildID" > -100 AND
+				"c_3"."ParentID" > 0
 			ORDER BY
 				"c_3"."ChildID"
 			LIMIT 1
