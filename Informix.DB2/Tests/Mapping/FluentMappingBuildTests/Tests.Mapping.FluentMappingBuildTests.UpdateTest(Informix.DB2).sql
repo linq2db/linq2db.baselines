@@ -39,8 +39,8 @@ SET     @LastName = 'Dory'
 UPDATE
 	FluentTemp t
 SET
-	"Value" = @Name,
-	LastName = @LastName
+	"Value" = @Name::NVarChar(7),
+	LastName = @LastName::NVarChar(4)
 WHERE
 	t.ID = 1
 
