@@ -644,7 +644,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 1 : String.op_Inequality(x.StringValueNullable, null) ? 2 : 3 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -671,7 +671,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 1 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 2 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -698,7 +698,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
+/* swap => 2 == String.op_Equality(swap.StringValueNullable, null) ? 1 : String.op_Inequality(swap.StringValueNullable, null) ? 2 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -725,7 +725,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
+/* swap_with_not => !(2 == String.op_Equality(swap_with_not.StringValueNullable, null) ? 1 : String.op_Inequality(swap_with_not.StringValueNullable, null) ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -752,7 +752,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 2 : String.op_Inequality(x.StringValueNullable, null) ? 1 : 3 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -779,7 +779,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 2 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 1 : 3 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -806,7 +806,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
+/* swap => 2 == String.op_Equality(swap.StringValueNullable, null) ? 2 : String.op_Inequality(swap.StringValueNullable, null) ? 1 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -833,7 +833,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
+/* swap_with_not => !(2 == String.op_Equality(swap_with_not.StringValueNullable, null) ? 2 : String.op_Inequality(swap_with_not.StringValueNullable, null) ? 1 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -860,7 +860,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 2 : String.op_Inequality(x.StringValueNullable, null) ? 1 : 3 > 3 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -887,7 +887,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 2 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 1 : 3 > 3) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -912,7 +912,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 2 : String.op_Inequality(x.StringValueNullable, null) ? 1 : 3 >= 1 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -937,7 +937,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 2 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 1 : 3 >= 1) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -964,7 +964,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 2 : String.op_Inequality(x.StringValueNullable, null) ? 1 : 3 > 1 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -991,7 +991,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 2 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 1 : 3 > 1) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1018,7 +1018,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
+/* x => String.op_Equality(x.StringValueNullable, null) ? 1 : String.op_Inequality(x.StringValueNullable, null) ? 2 : 3 != 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1045,7 +1045,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
+/* x_with_not => !(String.op_Equality(x_with_not.StringValueNullable, null) ? 1 : String.op_Inequality(x_with_not.StringValueNullable, null) ? 2 : 3 != 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1072,7 +1072,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
+/* swap => 2 != String.op_Equality(swap.StringValueNullable, null) ? 1 : String.op_Inequality(swap.StringValueNullable, null) ? 2 : 3 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1099,7 +1099,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
+/* swap_with_not => !(2 != String.op_Equality(swap_with_not.StringValueNullable, null) ? 1 : String.op_Inequality(swap_with_not.StringValueNullable, null) ? 2 : 3) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1126,7 +1126,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
+/* x => String.op_Inequality(x.StringValueNullable, null) ? String.op_Equality(x.StringValueNullable, "2") ? 2 : 10 : String.op_Equality(x.StringValueNullable, null) ? 3 : 1 == 2 */
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1160,7 +1160,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
+/* x_with_not => !(String.op_Inequality(x_with_not.StringValueNullable, null) ? String.op_Equality(x_with_not.StringValueNullable, "2") ? 2 : 10 : String.op_Equality(x_with_not.StringValueNullable, null) ? 3 : 1 == 2) */
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1194,7 +1194,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
+/* swap => 2 == String.op_Inequality(swap.StringValueNullable, null) ? String.op_Equality(swap.StringValueNullable, "2") ? 2 : 10 : String.op_Equality(swap.StringValueNullable, null) ? 3 : 1 */
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1228,7 +1228,7 @@ FROM
 
 -- Sybase.Managed Sybase
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
+/* swap_with_not => !(2 == String.op_Inequality(swap_with_not.StringValueNullable, null) ? String.op_Equality(swap_with_not.StringValueNullable, "2") ? 2 : 10 : String.op_Equality(swap_with_not.StringValueNullable, null) ? 3 : 1) */
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
