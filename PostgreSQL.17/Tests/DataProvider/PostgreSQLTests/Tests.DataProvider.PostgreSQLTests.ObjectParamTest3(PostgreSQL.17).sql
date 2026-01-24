@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @categoryParam Integer -- Int32
+DECLARE @categoryParam Unknown -- Object
 SET     @categoryParam = 1
 
 SELECT
