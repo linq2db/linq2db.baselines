@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @charValue Char(1) -- AnsiStringFixedLength
+DECLARE @charValue  -- Object
 SET     @charValue = 'A'
-DECLARE @intValue Char(1) -- AnsiStringFixedLength
+DECLARE @intValue  -- Object
 SET     @intValue = 'A'
-DECLARE @stringIntValue  -- Int32
+DECLARE @stringIntValue  -- Object
 SET     @stringIntValue = 1
-DECLARE @doubleValue  -- Double
+DECLARE @doubleValue  -- Object
 SET     @doubleValue = 1
 
 SELECT
@@ -19,13 +19,13 @@ WHERE
 	[t].[DoubleValue] = @doubleValue
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @charValue Char(1) -- AnsiStringFixedLength
+DECLARE @charValue  -- Object
 SET     @charValue = 'A'
-DECLARE @intValue Char(1) -- AnsiStringFixedLength
+DECLARE @intValue  -- Object
 SET     @intValue = 'A'
-DECLARE @stringIntValue  -- Int32
+DECLARE @stringIntValue  -- Object
 SET     @stringIntValue = 1
-DECLARE @doubleValue  -- Double
+DECLARE @doubleValue  -- Object
 SET     @doubleValue = 1
 
 SELECT
