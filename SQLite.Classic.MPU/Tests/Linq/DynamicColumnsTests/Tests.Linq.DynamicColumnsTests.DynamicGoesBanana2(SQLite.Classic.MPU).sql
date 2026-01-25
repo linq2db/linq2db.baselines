@@ -22,7 +22,7 @@ FROM
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Property NVarChar(6) -- String
 SET     @Property = 'banana'
-DECLARE @filter  -- Object
+DECLARE @filter  -- Int32
 SET     @filter = 1
 
 UPDATE
