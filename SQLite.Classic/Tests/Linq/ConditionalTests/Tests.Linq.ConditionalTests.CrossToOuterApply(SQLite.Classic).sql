@@ -24,6 +24,9 @@ FROM
 			FROM
 				[Child] [a_Children_1]
 		) [t2] ON [p].[ParentID] = [t2].[ParentID] AND [t2].[rn] <= 1
+ORDER BY
+	[t1].[ChildID],
+	[t2].[ChildID]
 
 -- SQLite.Classic SQLite
 

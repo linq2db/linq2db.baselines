@@ -27,11 +27,11 @@ SELECT
 				FROM
 					(
 						SELECT
-							Coalesce([x].[NullableValue], '') as [NotNullableOrderedNulls]
+							Coalesce([t_1].[NullableValue], '') as [NotNullableOrderedNulls]
 						FROM
-							[SampleClass] [x]
+							[SampleClass] [t_1]
 						WHERE
-							[t1].[Key_1] = [x].[Id]
+							[t1].[Key_1] = [t_1].[Id]
 					) [t3]
 				ORDER BY
 					[t3].[NotNullableOrderedNulls]
@@ -39,12 +39,10 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[g_1].[Id] as [Key_1]
 		FROM
 			[SampleClass] [g_1]
-		GROUP BY
-			[g_1].[Id]
 	) [t1]
 ORDER BY
 	[t1].[Key_1]

@@ -9,6 +9,8 @@ SELECT
 		FROM
 			(
 				SELECT
+					[uma].[UserId],
+					[uma].[MachineId],
 					[a_Machine].[Name]
 				FROM
 					[UserMachineAssignment] [uma]

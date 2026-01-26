@@ -25,12 +25,10 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		INNER JOIN (
-			SELECT
+			SELECT DISTINCT
 				[t2].[Id1]
 			FROM
 				[MasterClass] [t2]
-			GROUP BY
-				[t2].[Id1]
 		) [d] ON [d].[Id1] = [m_2].[MasterId]
 		INNER JOIN (
 			SELECT
@@ -42,6 +40,8 @@ FROM
 			FROM
 				[MasterClass] [mm]
 		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Id1] = [t3].[Id1] AND [t3].[rn] <= 1
+ORDER BY
+	[t3].[Id1]
 
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
