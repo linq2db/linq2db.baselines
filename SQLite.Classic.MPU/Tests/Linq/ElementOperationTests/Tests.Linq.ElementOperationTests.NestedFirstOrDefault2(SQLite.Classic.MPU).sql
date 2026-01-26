@@ -13,4 +13,6 @@ FROM
 			FROM
 				[Child] [a_Children]
 		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+ORDER BY
+	[t1].[ChildID]
 

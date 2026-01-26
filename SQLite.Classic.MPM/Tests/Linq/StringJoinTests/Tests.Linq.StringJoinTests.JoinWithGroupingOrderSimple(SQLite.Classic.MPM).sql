@@ -8,6 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t].[PK],
 					[t].[NullableValue]
 				FROM
 					[SampleClass] [t]
@@ -24,6 +25,7 @@ SELECT
 		FROM
 			(
 				SELECT
+					[t_1].[PK],
 					[t_1].[NullableValue]
 				FROM
 					[SampleClass] [t_1]
@@ -35,12 +37,10 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[g_1].[Id] as [Key_1]
 		FROM
 			[SampleClass] [g_1]
-		GROUP BY
-			[g_1].[Id]
 	) [t1]
 ORDER BY
 	[t1].[Key_1]

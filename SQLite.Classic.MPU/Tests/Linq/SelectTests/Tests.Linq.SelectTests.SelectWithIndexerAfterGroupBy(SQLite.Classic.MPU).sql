@@ -10,12 +10,10 @@ FROM
 			[g_2].[Key_1]
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					[g_1].[PersonID] as [Key_1]
 				FROM
 					[Person] [g_1]
-				GROUP BY
-					[g_1].[PersonID]
 			) [g_2]
 	) [x]
 WHERE

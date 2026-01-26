@@ -16,5 +16,6 @@ FROM
 WHERE
 	[p].[ParentID] >= 1
 ORDER BY
-	[p].[ParentID]
+	[p].[ParentID],
+	[t1].[ChildID]
 

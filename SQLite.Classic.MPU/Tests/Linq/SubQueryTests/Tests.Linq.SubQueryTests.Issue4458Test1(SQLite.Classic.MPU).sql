@@ -16,6 +16,9 @@ WHERE
 			[Review] [r]
 		WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
+		ORDER BY
+			[r].[ItemId],
+			[r].[UserId]
 	)
 ORDER BY
 	[d].[ItemId],
@@ -32,14 +35,12 @@ SELECT
 			[WarehouseStock] [s]
 		WHERE
 			[s].[ItemId] = [i].[Id] AND (
-				SELECT
+				SELECT DISTINCT
 					[stock].[ItemId]
 				FROM
 					[WarehouseStock] [stock]
 				WHERE
 					[stock].[ItemId] = [i].[Id]
-				GROUP BY
-					[stock].[ItemId]
 			) = [s].[ItemId]
 	)
 FROM
@@ -52,6 +53,9 @@ WHERE
 			[Review] [r]
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
+		ORDER BY
+			[r].[ItemId],
+			[r].[UserId]
 	)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

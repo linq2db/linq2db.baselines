@@ -1,24 +1,10 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-SELECT
-	[p_2].[Key_1]
+SELECT DISTINCT
+	[p].[ParentID]
 FROM
-	(
-		SELECT
-			[p_1].[Key_1]
-		FROM
-			(
-				SELECT
-					[p].[ParentID] as [Key_1]
-				FROM
-					[Child] [p]
-				GROUP BY
-					[p].[ParentID]
-			) [p_1]
-		GROUP BY
-			[p_1].[Key_1],
-			[p_1].[Key_1]
-	) [p_2]
+	[Child] [p]
 GROUP BY
-	[p_2].[Key_1]
+	[p].[ParentID],
+	[p].[ParentID]
 
