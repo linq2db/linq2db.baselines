@@ -39,6 +39,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[c_1].[ParentID],
+				[c_1].[ChildID],
 				ROW_NUMBER() OVER (PARTITION BY [c_1].[ParentID] ORDER BY [c_1].[ChildID]) as [rn]
 			FROM
 				[Child] [c_1]
@@ -55,4 +56,7 @@ FROM
 			WHERE
 				[c_2].[ChildID] > -100
 		) [t2] ON [t2].[ParentID] = [p].[ParentID] AND [t2].[rn] <= 1
+ORDER BY
+	[t1].[ChildID],
+	[t2].[ChildID]
 

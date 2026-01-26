@@ -1,11 +1,9 @@
 ﻿-- SQLite.MS SQLite
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- SQLite.MS SQLite
 

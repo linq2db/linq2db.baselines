@@ -39,21 +39,14 @@ FROM
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
-SELECT
-	[g_2].[Key_1]
+SELECT DISTINCT
+	CASE
+		WHEN [g_1].[Freight] > 50 THEN CASE
+			WHEN [g_1].[Freight] > 100 THEN 'expensive'
+			ELSE 'average'
+		END
+		ELSE 'cheap'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [g_1].[Freight] > 50 THEN CASE
-					WHEN [g_1].[Freight] > 100 THEN 'expensive'
-					ELSE 'average'
-				END
-				ELSE 'cheap'
-			END as [Key_1]
-		FROM
-			[Orders] [g_1]
-	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
+	[Orders] [g_1]
 

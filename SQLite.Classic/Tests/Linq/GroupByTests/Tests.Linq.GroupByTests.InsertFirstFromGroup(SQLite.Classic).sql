@@ -37,12 +37,10 @@ SELECT
 	[t1].[Value_1]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[gr].[ID]
 		FROM
 			[temp_table_1] [gr]
-		GROUP BY
-			[gr].[ID]
 	) [gr_1]
 		INNER JOIN (
 			SELECT

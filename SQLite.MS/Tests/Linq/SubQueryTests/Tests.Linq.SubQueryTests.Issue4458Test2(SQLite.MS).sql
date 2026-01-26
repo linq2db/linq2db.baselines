@@ -29,14 +29,12 @@ SELECT
 			[WarehouseStock] [s]
 		WHERE
 			[s].[ItemId] = [i].[Id] AND (
-				SELECT
+				SELECT DISTINCT
 					[stock].[ItemId]
 				FROM
 					[WarehouseStock] [stock]
 				WHERE
 					[stock].[ItemId] = [i].[Id]
-				GROUP BY
-					[stock].[ItemId]
 			) = [s].[ItemId]
 	)
 FROM

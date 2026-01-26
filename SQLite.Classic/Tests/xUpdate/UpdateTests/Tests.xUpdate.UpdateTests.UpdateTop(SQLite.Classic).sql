@@ -181,6 +181,7 @@ SET
 FROM
 	(
 		SELECT
+			1 as [c1],
 			[p].[ParentID],
 			[p].[Value1]
 		FROM
