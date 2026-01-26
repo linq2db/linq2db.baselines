@@ -5,12 +5,10 @@ SELECT
 	[t1].[ChildID]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[gr].[ParentID]
 		FROM
 			[Child] [gr]
-		GROUP BY
-			[gr].[ParentID]
 	) [gr_1]
 		INNER JOIN (
 			SELECT
@@ -20,4 +18,6 @@ FROM
 			FROM
 				[Child] [t]
 		) [t1] ON [gr_1].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+ORDER BY
+	[t1].[ChildID] DESC
 

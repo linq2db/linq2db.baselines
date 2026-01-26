@@ -20,21 +20,28 @@ FROM
 				LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
 	) [m_1]
 		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[Id] = [d_1].[CHAIN_ID]
+ORDER BY
+	[m_1].[Id_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[LINE_ID],
+	[m_1].[Id],
 	[d].[LINE_ID],
 	[d].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID]
 FROM
-	[PUMPLINES] [m_1]
-		INNER JOIN [PUMPLINE_CHAINS] [d] ON [m_1].[LINE_ID] = [d].[LINE_ID]
+	(
+		SELECT DISTINCT
+			[t1].[LINE_ID] as [Id]
+		FROM
+			[PUMPLINES] [t1]
+	) [m_1]
+		INNER JOIN [PUMPLINE_CHAINS] [d] ON [m_1].[Id] = [d].[LINE_ID]
 		LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
 ORDER BY
-	[m_1].[LINE_ID]
+	[m_1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

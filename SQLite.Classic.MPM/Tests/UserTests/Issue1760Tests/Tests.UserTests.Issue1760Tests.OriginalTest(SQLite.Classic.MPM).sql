@@ -2,7 +2,7 @@
 DECLARE @id  -- Int32
 SET     @id = 0
 
-SELECT
+SELECT DISTINCT
 	[bt1].[textCol],
 	[t1].[b1],
 	[t1].[b2],
@@ -36,9 +36,4 @@ FROM
 		LEFT JOIN [c_table2] [ctb2] ON [bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL
 WHERE
 	[s].[commonTableId] = @id
-GROUP BY
-	[t1].[b1],
-	[t1].[b2],
-	[t1].[b3],
-	[bt1].[textCol]
 

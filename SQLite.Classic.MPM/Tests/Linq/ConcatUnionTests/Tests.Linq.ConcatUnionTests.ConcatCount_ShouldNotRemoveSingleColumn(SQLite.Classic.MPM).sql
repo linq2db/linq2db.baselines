@@ -10,7 +10,7 @@ FROM
 			[Person] [t1]
 		UNION ALL
 		SELECT
-			[t2].[ParentID] as [PersonID]
+			CAST(1 AS INTEGER) as [PersonID]
 		FROM
 			[Parent] [t2]
 	) [t3]

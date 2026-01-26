@@ -23,12 +23,10 @@ WHERE
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[ValueConversion] [g_1]
 WHERE
 	@testedList = [g_1].[Value2]
-GROUP BY
-	[g_1].[Id]
 
