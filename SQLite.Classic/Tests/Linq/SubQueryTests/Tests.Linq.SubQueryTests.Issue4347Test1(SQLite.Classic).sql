@@ -6,27 +6,32 @@ SELECT
 	[d].[Amount],
 	[d].[Currency]
 FROM
-	[TransactionEntity] [m_1]
-		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
-WHERE
-	EXISTS(
-		SELECT
-			[a_Lines].[Currency]
+	(
+		SELECT DISTINCT
+			[x].[Id]
 		FROM
-			[LineEntity] [a_Lines]
+			[TransactionEntity] [x]
 		WHERE
-			[m_1].[Id] = [a_Lines].[TransactionId]
-		INTERSECT
-		SELECT
-			[t1].[item]
-		FROM
-			(
-				SELECT NULL [item] WHERE 1 = 0
-				UNION ALL
-				VALUES
-					('A'), ('B')
-				) [t1]
-	)
+			EXISTS(
+				SELECT
+					[a_Lines].[Currency]
+				FROM
+					[LineEntity] [a_Lines]
+				WHERE
+					[x].[Id] = [a_Lines].[TransactionId]
+				INTERSECT
+				SELECT
+					[t1].[item]
+				FROM
+					(
+						SELECT NULL [item] WHERE 1 = 0
+						UNION ALL
+						VALUES
+							('A'), ('B')
+						) [t1]
+			)
+	) [m_1]
+		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SQLite.Classic SQLite
 

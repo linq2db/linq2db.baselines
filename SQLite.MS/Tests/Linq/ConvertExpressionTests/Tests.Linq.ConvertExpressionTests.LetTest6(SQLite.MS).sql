@@ -9,6 +9,8 @@ SELECT
 			[Child] [c_2]
 		WHERE
 			[c_2].[ParentID] = [t].[ParentID] AND [c_2].[ChildID] > -100
+		ORDER BY
+			[c_2].[ChildID]
 	),
 	(
 		SELECT
@@ -46,4 +48,6 @@ FROM
 		) [t1] ON [t1].[ParentID] = [t].[ParentID] AND [t1].[rn] <= 1
 WHERE
 	[t].[ParentID] > 0
+ORDER BY
+	[t1].[ChildID]
 

@@ -20,12 +20,10 @@ WHERE
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
-SELECT
+SELECT DISTINCT
 	[o].[CustomerID]
 FROM
 	[Customers] [o]
 WHERE
 	[o].[CompanyName] LIKE '%t%' ESCAPE '~'
-GROUP BY
-	[o].[CustomerID]
 

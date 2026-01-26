@@ -17,4 +17,6 @@ FROM
 		) [t1] ON [a_Parent].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
 	[p].[ChildID] > 0
+ORDER BY
+	[t1].[ChildID]
 

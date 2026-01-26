@@ -56,7 +56,12 @@ SELECT
 	[d].[Id],
 	[d].[Text]
 FROM
-	[Names] [m_1]
+	(
+		SELECT DISTINCT
+			[Item1].[Id]
+		FROM
+			[Names] [Item1]
+	) [m_1]
 		INNER JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]

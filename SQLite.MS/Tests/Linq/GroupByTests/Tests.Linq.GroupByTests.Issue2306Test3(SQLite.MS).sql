@@ -12,12 +12,10 @@ FROM
 
 -- SQLite.MS SQLite
 
-SELECT
+SELECT DISTINCT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 
 -- SQLite.MS SQLite
 
@@ -33,10 +31,8 @@ FROM
 
 -- SQLite.MS SQLite
 
-SELECT
+SELECT DISTINCT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 

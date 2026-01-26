@@ -6,7 +6,12 @@ SELECT
 	[d].[Amount],
 	[d].[Currency]
 FROM
-	[TransactionEntity] [m_1]
+	(
+		SELECT DISTINCT
+			[x].[Id]
+		FROM
+			[TransactionEntity] [x]
+	) [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SQLite.MS SQLite

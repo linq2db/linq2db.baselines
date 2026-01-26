@@ -19,6 +19,8 @@ FROM
 					[Child] [a_1]
 				WHERE
 					[a_ParentTest].[ParentID] = [a_1].[ParentID] AND [a_1].[ChildID] = 11
+				ORDER BY
+					[a_1].[ChildID]
 			)
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
@@ -41,5 +43,7 @@ WHERE
 			[Child] [a_1]
 		WHERE
 			[a_ParentTest].[ParentID] = [a_1].[ParentID] AND [a_1].[ChildID] = 11
+		ORDER BY
+			[a_1].[ChildID]
 	)
 
