@@ -43,4 +43,6 @@ FROM
 			WHERE
 				[c_1].[ChildID] > -100
 		) [t1] ON [t1].[ParentID] = [p].[ParentID] AND [t1].[rn] <= 1
+ORDER BY
+	[t1].[ChildID]
 

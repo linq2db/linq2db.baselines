@@ -36,14 +36,7 @@ INSERT INTO [temp_table_2]
 SELECT
 	[t1].[Value_1]
 FROM
-	(
-		SELECT
-			[gr].[ID]
-		FROM
-			[temp_table_1] [gr]
-		GROUP BY
-			[gr].[ID]
-	) [gr_1]
+	[temp_table_1] [gr]
 		INNER JOIN (
 			SELECT
 				[c_1].[Value] as [Value_1],
@@ -51,7 +44,7 @@ FROM
 				[c_1].[ID]
 			FROM
 				[temp_table_1] [c_1]
-		) [t1] ON [gr_1].[ID] = [t1].[ID] AND [t1].[rn] <= 1
+		) [t1] ON [gr].[ID] = [t1].[ID] AND [t1].[rn] <= 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
