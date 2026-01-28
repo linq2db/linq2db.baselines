@@ -26,12 +26,9 @@ FROM
 
 -- SqlServer.Northwind.MS SqlServer.2019
 
-SELECT
+SELECT DISTINCT
 	[t1].[Region],
 	[t1].[City]
 FROM
 	[Customers] [t1]
-GROUP BY
-	[t1].[Region],
-	[t1].[City]
 

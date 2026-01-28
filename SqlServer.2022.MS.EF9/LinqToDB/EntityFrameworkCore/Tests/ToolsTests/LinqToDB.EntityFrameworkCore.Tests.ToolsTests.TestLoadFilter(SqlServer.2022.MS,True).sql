@@ -54,23 +54,14 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Supplier].[SupplierID] as [SupplierId],
-			[t1].[ProductId]
+			[e_1].[ProductID] as [ProductId]
 		FROM
-			(
-				SELECT DISTINCT
-					[e].[ProductID] as [ProductId]
-				FROM
-					[Products] [e]
-				WHERE
-					[e].[IsDeleted] = 0
-			) [t1]
-				INNER JOIN [Order Details] [d] ON [t1].[ProductId] = [d].[ProductID]
-				INNER JOIN [Orders] [e_1] ON [d].[OrderID] = [e_1].[OrderID]
-				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
-				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND [a_Supplier].[IsDeleted] = 0
+			[Products] [e_1]
+				INNER JOIN [Order Details] [d] ON [e_1].[ProductID] = [d].[ProductID]
+				INNER JOIN [Orders] [e] ON [d].[OrderID] = [e].[OrderID]
+				LEFT JOIN [Suppliers] [a_Supplier] ON [e_1].[SupplierID] = [a_Supplier].[SupplierID] AND [a_Supplier].[IsDeleted] = 0
 		WHERE
-			[e_1].[IsDeleted] = 0 AND [a_Product].[IsDeleted] = 0 AND
-			[d].[IsDeleted] = 0
+			[e_1].[IsDeleted] = 0 AND [e].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
 	) [m_1]
 		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
 WHERE

@@ -6,15 +6,12 @@ SELECT
 	toInt32(1) as int_1
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			toMonth(t1.DateTimeValue) as month_1,
 			toYear(t1.DateTimeValue) as year_1
 		FROM
 			LinqDataTypes t1
 	) t2
-GROUP BY
-	t2.month_1,
-	t2.year_1
 UNION DISTINCT
 SELECT
 	t3.SmallIntValue as month_1,

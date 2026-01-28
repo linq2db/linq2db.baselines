@@ -27,7 +27,7 @@ SELECT
 		FROM
 			(
 				SELECT FIRST 2 SKIP 1
-					*
+					1 as "c1"
 				FROM
 					(
 						SELECT DISTINCT

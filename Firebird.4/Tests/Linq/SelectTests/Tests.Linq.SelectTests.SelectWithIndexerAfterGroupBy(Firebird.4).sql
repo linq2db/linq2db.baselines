@@ -6,17 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY "g_2"."Key_1" DESC) - 1 as "Index_1",
-			"g_2"."Key_1"
+			ROW_NUMBER() OVER (ORDER BY "g_1"."PersonID" DESC) - 1 as "Index_1",
+			"g_1"."PersonID" as "Key_1"
 		FROM
-			(
-				SELECT
-					"g_1"."PersonID" as "Key_1"
-				FROM
-					"Person" "g_1"
-				GROUP BY
-					"g_1"."PersonID"
-			) "g_2"
+			"Person" "g_1"
 	) "x"
 WHERE
 	"x"."Index_1" > 0

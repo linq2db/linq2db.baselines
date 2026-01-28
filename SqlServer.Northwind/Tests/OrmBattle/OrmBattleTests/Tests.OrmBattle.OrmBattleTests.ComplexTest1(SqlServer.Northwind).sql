@@ -17,14 +17,9 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[ProductID],
-			[t1].[SupplierID]
+			[supplier].[SupplierID]
 		FROM
-			(
-				SELECT DISTINCT
-					[supplier].[SupplierID]
-				FROM
-					[Suppliers] [supplier]
-			) [t1]
+			[Suppliers] [supplier]
 				CROSS JOIN [Products] [d]
 	) [m_1]
 		INNER JOIN [Products] [d_1]

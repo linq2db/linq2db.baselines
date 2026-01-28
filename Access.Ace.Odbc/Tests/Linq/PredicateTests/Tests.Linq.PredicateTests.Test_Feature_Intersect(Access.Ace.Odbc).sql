@@ -11,7 +11,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 			)
 	)
 

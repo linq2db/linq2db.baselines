@@ -3,7 +3,7 @@
 MERGE INTO "Issue4556Table1" "Target"
 USING (
 	SELECT NULL::Int, NULL::json, NULL::jsonb, NULL::json, NULL::jsonb
-	FROM "Issue4556Table1"	WHERE 1 = 0
+	FROM "Issue4556Table1" WHERE 1 = 0
 )
  "Source"
 (

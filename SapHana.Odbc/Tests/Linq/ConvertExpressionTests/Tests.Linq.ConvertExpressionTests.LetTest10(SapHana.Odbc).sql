@@ -9,7 +9,7 @@ SELECT
 				"Parent" "p"
 					LEFT JOIN LATERAL (
 						SELECT
-							*
+							1 as "c1"
 						FROM
 							"Child" "c_1"
 						WHERE

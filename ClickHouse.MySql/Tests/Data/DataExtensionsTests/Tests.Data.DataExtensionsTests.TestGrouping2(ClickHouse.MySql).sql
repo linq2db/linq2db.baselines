@@ -14,10 +14,8 @@ FROM
 
 -- ClickHouse.MySql ClickHouse
 
-SELECT
+SELECT DISTINCT
 	g_1.FirstName
 FROM
 	Person g_1
-GROUP BY
-	g_1.FirstName
 

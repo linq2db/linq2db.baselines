@@ -18,10 +18,8 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 
-SELECT
+SELECT DISTINCT
 	t1.FirstName
 FROM
 	Person t1
-GROUP BY
-	t1.FirstName
 

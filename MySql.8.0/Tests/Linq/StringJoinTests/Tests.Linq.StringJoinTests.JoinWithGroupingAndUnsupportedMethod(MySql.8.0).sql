@@ -36,12 +36,10 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			`g_1`.`Id` as `Key_1`
 		FROM
 			`SampleClass` `g_1`
-		GROUP BY
-			`g_1`.`Id`
 	) `t1`
 ORDER BY
 	`t1`.`Key_1`

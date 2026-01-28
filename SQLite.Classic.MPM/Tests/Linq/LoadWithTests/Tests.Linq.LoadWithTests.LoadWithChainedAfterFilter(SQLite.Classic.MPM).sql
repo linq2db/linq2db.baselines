@@ -10,30 +10,25 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t2].[Id] as [Id_1]
+			[t1].[Id] as [Id_1]
 		FROM
 			(
-				SELECT DISTINCT
-					[t1].[Id]
+				SELECT
+					[p].[Id]
 				FROM
-					(
+					[PeopleForLoadWith] [p]
+				WHERE
+					EXISTS(
 						SELECT
-							[p].[Id]
+							*
 						FROM
-							[PeopleForLoadWith] [p]
+							[PeopleForLoadWith] [c_1]
 						WHERE
-							EXISTS(
-								SELECT
-									*
-								FROM
-									[PeopleForLoadWith] [c_1]
-								WHERE
-									[p].[Id] = [c_1].[ParentId]
-							)
-						LIMIT 1
-					) [t1]
-			) [t2]
-				INNER JOIN [PeopleForLoadWith] [d] ON [t2].[Id] = [d].[ParentId]
+							[p].[Id] = [c_1].[ParentId]
+					)
+				LIMIT 1
+			) [t1]
+				INNER JOIN [PeopleForLoadWith] [d] ON [t1].[Id] = [d].[ParentId]
 	) [m_1]
 		INNER JOIN [PeopleForLoadWith] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 

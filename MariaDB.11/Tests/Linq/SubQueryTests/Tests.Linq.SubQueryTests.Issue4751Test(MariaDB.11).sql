@@ -56,6 +56,8 @@ FROM
 	) `x`
 WHERE
 	LOCATE(@carNo, `x`.`CarNo`) > 0 AND LOCATE(@carBrand, `x`.`CarBrand`) > 0
+ORDER BY
+	`x`.`CarNo`
 LIMIT @skip, @take
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

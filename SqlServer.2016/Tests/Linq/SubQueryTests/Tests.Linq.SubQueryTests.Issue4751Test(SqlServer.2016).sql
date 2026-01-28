@@ -51,7 +51,7 @@ FROM
 				LEFT JOIN [Trp0041] [t4] ON [t4].[CarNo] = [t].[CarNo] OR [t4].[CarNo] IS NULL AND [t].[CarNo] IS NULL
 	) [x]
 ORDER BY
-	1
+	[x].[CarNo]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- SqlServer.2016

@@ -19,15 +19,12 @@ SELECT
 	1::Int
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			Floor(Extract(month From t3."DateTimeValue"))::Int as month_1,
 			Floor(Extract(year From t3."DateTimeValue"))::Int as year_1
 		FROM
 			"LinqDataTypes" t3
 	) t4
-GROUP BY
-	t4.month_1,
-	t4.year_1
 UNION
 SELECT
 	Floor(Extract(year From t5."DateTimeValue"))::Int,

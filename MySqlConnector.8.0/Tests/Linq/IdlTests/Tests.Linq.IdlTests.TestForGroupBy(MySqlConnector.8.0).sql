@@ -18,14 +18,12 @@ WHERE
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (2)
-GROUP BY
-	`x`.`ChildID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -47,12 +45,10 @@ WHERE
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (3)
-GROUP BY
-	`x`.`ChildID`
 

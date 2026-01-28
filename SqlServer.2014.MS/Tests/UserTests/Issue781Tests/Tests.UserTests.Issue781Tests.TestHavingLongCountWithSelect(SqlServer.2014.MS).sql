@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[t2].[Key_1]
+			1 as [c1]
 		FROM
 			(
 				SELECT

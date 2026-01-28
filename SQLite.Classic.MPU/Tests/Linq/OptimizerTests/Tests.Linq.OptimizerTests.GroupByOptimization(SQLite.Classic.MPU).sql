@@ -56,15 +56,5 @@ SELECT
 	[p].[ValueStr]
 FROM
 	[SecondOptimizerData] [p]
-		LEFT JOIN (
-			SELECT
-				[g_1].[DataKey21]
-			FROM
-				[FirstOptimizerData] [g_1]
-			GROUP BY
-				[g_1].[Key1],
-				[g_1].[Key2],
-				[g_1].[DataKey21],
-				[g_1].[DataKey22]
-		) [nu] ON [nu].[DataKey21] = [p].[DataKey21] AND [nu].[DataKey21] = [p].[DataKey22]
+		LEFT JOIN [FirstOptimizerData] [nu] ON [nu].[DataKey21] = [p].[DataKey21] AND [nu].[DataKey21] = [p].[DataKey22]
 

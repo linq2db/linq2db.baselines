@@ -26,6 +26,4 @@ FROM
 	[Customers] [o]
 WHERE
 	[o].[CompanyName] LIKE '%t%' ESCAPE '~'
-GROUP BY
-	[o].[CustomerID]
 

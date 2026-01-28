@@ -125,15 +125,10 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t2].[AuthorId]
+			[t1].[AuthorId]
 		FROM
-			(
-				SELECT DISTINCT
-					[t1].[AuthorId]
-				FROM
-					[Author] [t1]
-			) [t2]
-				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t2].[AuthorId]
+			[Author] [t1]
+				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]
 				LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]

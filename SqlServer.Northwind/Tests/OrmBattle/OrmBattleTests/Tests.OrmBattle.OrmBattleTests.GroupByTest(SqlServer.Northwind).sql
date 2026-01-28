@@ -27,10 +27,8 @@ FROM
 
 -- SqlServer.Northwind SqlServer.2019
 
-SELECT
+SELECT DISTINCT
 	[t1].[OrderDate]
 FROM
 	[Orders] [t1]
-GROUP BY
-	[t1].[OrderDate]
 
