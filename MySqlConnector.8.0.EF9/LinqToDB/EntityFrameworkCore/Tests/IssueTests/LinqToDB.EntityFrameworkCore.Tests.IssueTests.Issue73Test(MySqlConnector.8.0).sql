@@ -7,7 +7,7 @@ WHERE `i`.`Name` = 'Name1_3'
 -- MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat(`a_Parent`.`Name`, '>', `x`.`Name`)
+	CONCAT(CONCAT(`a_Parent`.`Name`, '>'), `x`.`Name`)
 FROM
 	`Issue73Entities` `x`
 		LEFT JOIN `Issue73Entities` `a_Parent` ON `x`.`ParentId` = `a_Parent`.`Id`

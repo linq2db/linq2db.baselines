@@ -692,7 +692,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -721,7 +721,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 == 2) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -750,7 +750,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
+/* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	swap."Id",
 	swap."IntVlaue",
@@ -779,7 +779,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	swap_with_not."Id",
 	swap_with_not."IntVlaue",
@@ -808,7 +808,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -837,7 +837,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 == 2) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -866,7 +866,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
+/* swap => 2 == swap.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 */
 SELECT
 	swap."Id",
 	swap."IntVlaue",
@@ -895,7 +895,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3) */
 SELECT
 	swap_with_not."Id",
 	swap_with_not."IntVlaue",
@@ -924,7 +924,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -953,7 +953,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 3) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -980,7 +980,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -1007,7 +1007,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 >= 1) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -1036,7 +1036,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -1065,7 +1065,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 2 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 1 : 3 > 1) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -1094,7 +1094,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
+/* x => x.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -1123,7 +1123,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
+/* x_with_not => !(x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 != 2) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -1152,7 +1152,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
+/* swap => 2 != swap.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3 */
 SELECT
 	swap."Id",
 	swap."IntVlaue",
@@ -1181,7 +1181,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
+/* swap_with_not => !(2 != swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 1 : swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? 2 : 3) */
 SELECT
 	swap_with_not."Id",
 	swap_with_not."IntVlaue",
@@ -1210,7 +1210,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
+/* x => x.StringValueNullable !=   String.op_Inequality(...)  null ? x.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2 */
 SELECT
 	x."Id",
 	x."IntVlaue",
@@ -1246,7 +1246,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
+/* x_with_not => !(x_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? x_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : x_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 == 2) */
 SELECT
 	x_with_not."Id",
 	x_with_not."IntVlaue",
@@ -1282,7 +1282,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
+/* swap => 2 == swap.StringValueNullable !=   String.op_Inequality(...)  null ? swap.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1 */
 SELECT
 	swap."Id",
 	swap."IntVlaue",
@@ -1318,7 +1318,7 @@ FROM
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-/* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
+/* swap_with_not => !(2 == swap_with_not.StringValueNullable !=   String.op_Inequality(...)  null ? swap_with_not.StringValueNullable ==   String.op_Equality(...)  "2" ? 2 : 10 : swap_with_not.StringValueNullable ==   String.op_Equality(...)  null ? 3 : 1) */
 SELECT
 	swap_with_not."Id",
 	swap_with_not."IntVlaue",

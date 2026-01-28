@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
-DECLARE @Value1 NVarChar(4000) -- String
+DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = N'[]'
 DECLARE @Enum NVarChar(50) -- String
 SET     @Enum = N'Value1'
