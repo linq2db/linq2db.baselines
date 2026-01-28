@@ -1,11 +1,8 @@
 ﻿-- Firebird.3 Firebird3
 
-SELECT
+SELECT DISTINCT
 	"gr"."ParentID",
 	"gr"."ChildID"
 FROM
 	"GrandChild" "gr"
-GROUP BY
-	"gr"."ParentID",
-	"gr"."ChildID"
 

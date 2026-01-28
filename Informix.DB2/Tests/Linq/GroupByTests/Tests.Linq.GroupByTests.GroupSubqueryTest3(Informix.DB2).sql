@@ -1,11 +1,9 @@
 ﻿-- Informix.DB2 Informix
 
-SELECT
+SELECT DISTINCT
 	pmp.ParentID
 FROM
 	Child pmp
-GROUP BY
-	pmp.ParentID
 
 -- Informix.DB2 Informix
 

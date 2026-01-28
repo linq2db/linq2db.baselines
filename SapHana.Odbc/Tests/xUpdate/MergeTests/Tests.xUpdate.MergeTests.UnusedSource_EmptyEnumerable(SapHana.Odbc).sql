@@ -3,7 +3,7 @@
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 AS "Unused"
-	FROM DUMMY	WHERE 1 = 0
+	FROM DUMMY WHERE 1 = 0
 )
  "Source"
 ON ("Target"."Value" = 5)

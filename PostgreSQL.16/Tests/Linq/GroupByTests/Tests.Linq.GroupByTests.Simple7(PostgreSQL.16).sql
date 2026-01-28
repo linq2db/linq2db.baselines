@@ -1,11 +1,8 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-SELECT
+SELECT DISTINCT
 	gr."ParentID",
 	gr."ChildID"
 FROM
 	"GrandChild" gr
-GROUP BY
-	gr."ParentID",
-	gr."ChildID"
 

@@ -213,7 +213,7 @@ VALUES
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT NULL, NULL, NULL, NULL
-	FROM rdb$database	WHERE 1 = 0
+	FROM rdb$database WHERE 1 = 0
 )
  "Source"
 (

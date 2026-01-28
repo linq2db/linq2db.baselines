@@ -18,10 +18,8 @@ FROM
 
 -- SQLite.MS SQLite
 
-SELECT
+SELECT DISTINCT
 	[t1].[Gender]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[Gender]
 

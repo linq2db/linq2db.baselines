@@ -1,14 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-SELECT
-	`g_2`.`ParentID`
+SELECT DISTINCT
+	`g_1`.`ParentID` + 1
 FROM
-	(
-		SELECT
-			`g_1`.`ParentID` + 1 as `ParentID`
-		FROM
-			`Child` `g_1`
-	) `g_2`
-GROUP BY
-	`g_2`.`ParentID`
+	`Child` `g_1`
 

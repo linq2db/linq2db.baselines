@@ -70,15 +70,13 @@ SELECT
 	"t1"."ImageFullUrl"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"sG"."Name"
 		FROM
 			"Stone" "sG"
 		WHERE
 			"sG"."Enabled" = TRUE AND "sG"."Name" NOT STARTING WITH 'level - ' AND
 			CHAR_LENGTH("sG"."ImageFullUrl") > 0
-		GROUP BY
-			"sG"."Name"
 	) "sG_1"
 		CROSS JOIN LATERAL (
 			SELECT

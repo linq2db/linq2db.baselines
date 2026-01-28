@@ -3,7 +3,7 @@
 MERGE INTO "Person" "Target"
 USING (
 	SELECT CAST(NULL AS Int), CAST(NULL AS NVarChar(255)), CAST(NULL AS NVarChar(255)), CAST(NULL AS NVarChar(255)), CAST(NULL AS Char(1))
-	FROM "Person"	WHERE 1 = 0
+	FROM "Person" WHERE 1 = 0
 )
  "Source"
 (

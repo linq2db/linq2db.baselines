@@ -5,12 +5,10 @@ SELECT
 FROM
 	"Child" "pmp1"
 		CROSS JOIN (
-			SELECT
+			SELECT DISTINCT
 				"pmp"."ParentID"
 			FROM
 				"Child" "pmp"
-			GROUP BY
-				"pmp"."ParentID"
 		) "pmp_1"
 
 -- SapHana.Odbc SapHanaOdbc

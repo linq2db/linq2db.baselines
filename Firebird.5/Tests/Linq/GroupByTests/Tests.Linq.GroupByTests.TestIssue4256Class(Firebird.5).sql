@@ -1,19 +1,10 @@
 ﻿-- Firebird.5 Firebird4
 
-SELECT
-	"it_1"."IsActive",
-	"it_1"."Other"
+SELECT DISTINCT
+	TRUE,
+	"it"."SmallIntValue" <> 0
 FROM
-	(
-		SELECT
-			TRUE as "IsActive",
-			"it"."SmallIntValue" <> 0 as "Other"
-		FROM
-			"LinqDataTypes" "it"
-	) "it_1"
-GROUP BY
-	"it_1"."IsActive",
-	"it_1"."Other"
+	"LinqDataTypes" "it"
 
 -- Firebird.5 Firebird4
 

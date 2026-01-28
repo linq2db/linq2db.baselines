@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2012
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- SqlServer.2012
 

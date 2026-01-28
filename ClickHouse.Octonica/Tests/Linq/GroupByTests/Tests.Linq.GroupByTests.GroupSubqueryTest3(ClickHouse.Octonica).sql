@@ -1,11 +1,9 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
-SELECT
+SELECT DISTINCT
 	pmp.ParentID
 FROM
 	Child pmp
-GROUP BY
-	pmp.ParentID
 
 -- ClickHouse.Octonica ClickHouse
 

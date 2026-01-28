@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- SqlServer.2025.MS SqlServer.2025
 

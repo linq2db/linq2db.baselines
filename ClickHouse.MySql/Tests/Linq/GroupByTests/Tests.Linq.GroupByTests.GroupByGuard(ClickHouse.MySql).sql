@@ -39,12 +39,10 @@ FROM
 
 -- ClickHouse.MySql ClickHouse
 
-SELECT
+SELECT DISTINCT
 	t1.Gender
 FROM
 	Person t1
-GROUP BY
-	t1.Gender
 
 -- ClickHouse.MySql ClickHouse
 
@@ -64,8 +62,6 @@ SELECT
 	t1.PersonID
 FROM
 	Person t1
-GROUP BY
-	t1.PersonID
 
 -- ClickHouse.MySql ClickHouse
 
@@ -85,6 +81,4 @@ SELECT
 	t1.PersonID
 FROM
 	Person t1
-GROUP BY
-	t1.PersonID
 

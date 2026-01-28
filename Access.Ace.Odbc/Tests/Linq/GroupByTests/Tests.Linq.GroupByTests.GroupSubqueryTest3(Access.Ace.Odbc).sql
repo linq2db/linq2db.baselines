@@ -1,11 +1,9 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- Access.Ace.Odbc AccessODBC
 

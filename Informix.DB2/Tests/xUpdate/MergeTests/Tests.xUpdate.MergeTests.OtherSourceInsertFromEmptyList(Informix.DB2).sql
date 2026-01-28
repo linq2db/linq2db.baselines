@@ -213,7 +213,7 @@ VALUES
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT NULL::Int, NULL::Int, NULL::Int, NULL::Int, NULL::Int, NULL::Int
-	FROM table(set{1})	WHERE 1 = 0
+	FROM table(set{1}) WHERE 1 = 0
 )
  Source
 (

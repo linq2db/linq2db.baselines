@@ -16,8 +16,6 @@ SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 
 -- Access.Ace.OleDb AccessOleDb
 
@@ -37,6 +35,4 @@ SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 

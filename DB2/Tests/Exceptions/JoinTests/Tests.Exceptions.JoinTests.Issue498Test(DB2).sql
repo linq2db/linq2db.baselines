@@ -8,11 +8,9 @@ FROM
 
 -- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT DISTINCT
 	"g_1"."ParentID"
 FROM
 	"Parent" "g_1"
 		INNER JOIN "Child" "y" ON "g_1"."ParentID" = "y"."ParentID"
-GROUP BY
-	"g_1"."ParentID"
 
