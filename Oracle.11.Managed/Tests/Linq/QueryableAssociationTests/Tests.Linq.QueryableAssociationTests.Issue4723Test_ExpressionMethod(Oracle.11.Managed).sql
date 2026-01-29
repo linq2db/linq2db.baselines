@@ -12,5 +12,5 @@ FROM
 				se."Id"
 			FROM
 				"Issue4723Table2" se
-		) t1 ON t1."Id" = t2."Id" AND t1."rn" <= 1
+		) t1 ON t1."Id" = t2."Id" AND t1."rn" = 1
 

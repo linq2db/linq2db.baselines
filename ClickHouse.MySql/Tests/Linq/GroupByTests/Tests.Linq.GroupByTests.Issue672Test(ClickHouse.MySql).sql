@@ -72,5 +72,5 @@ FROM
 			WHERE
 				s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
 				lengthUTF8(s.ImageFullUrl) > 0
-		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
+		) t1 ON sG_1.Name = t1.Name AND t1.rn = 1
 

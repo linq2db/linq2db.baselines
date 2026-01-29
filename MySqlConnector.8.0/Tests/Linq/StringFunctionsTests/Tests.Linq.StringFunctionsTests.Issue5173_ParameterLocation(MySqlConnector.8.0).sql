@@ -13,8 +13,6 @@ FROM
 					SELECT 11 AS `item`
 					UNION ALL
 					SELECT 13) `ch`
-		ORDER BY
-			`grp`.`ParentID`
 	) `grp_1`
 GROUP BY
 	`grp_1`.`Key_1`

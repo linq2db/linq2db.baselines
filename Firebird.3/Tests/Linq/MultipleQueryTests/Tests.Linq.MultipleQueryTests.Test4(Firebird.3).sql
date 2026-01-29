@@ -11,6 +11,8 @@ FROM
 			"Parent" "p"
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
+ORDER BY
+	"m_1"."ParentID"
 
 -- Firebird.3 Firebird3
 

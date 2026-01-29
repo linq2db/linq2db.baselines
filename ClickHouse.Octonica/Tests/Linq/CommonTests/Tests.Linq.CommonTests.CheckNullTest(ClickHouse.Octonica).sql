@@ -20,7 +20,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY a.ParentID ORDER BY a.ParentID) as rn
 			FROM
 				GrandChild a
-		) t1 ON t1.ParentID = p.ParentID AND t1.rn <= 1
+		) t1 ON t1.ParentID = p.ParentID AND t1.rn = 1
 		LEFT JOIN (
 			SELECT
 				a_1.ParentID as ParentID,
@@ -28,7 +28,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY a_1.ParentID ORDER BY a_1.ParentID) as rn
 			FROM
 				Child a_1
-		) t2 ON t2.ParentID = p.ParentID AND t2.rn <= 1
+		) t2 ON t2.ParentID = p.ParentID AND t2.rn = 1
 WHERE
 	p.ParentID = 6
 

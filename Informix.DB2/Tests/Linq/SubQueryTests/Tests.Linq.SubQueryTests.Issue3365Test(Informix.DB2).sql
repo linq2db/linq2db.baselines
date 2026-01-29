@@ -11,7 +11,7 @@ FROM
 				a_GrandChildren.ChildID
 			FROM
 				GrandChild a_GrandChildren
-		) t1 ON x.ParentID = t1.Assignee AND x.ChildID = t1.ChildID AND t1.rn <= 1
+		) t1 ON x.ParentID = t1.Assignee AND x.ChildID = t1.ChildID AND t1.rn = 1
 ORDER BY
 	t1.Assignee
 

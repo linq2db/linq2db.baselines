@@ -12,6 +12,6 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY "c_1"."ParentID" ORDER BY "c_1"."ChildID") as "rn"
 			FROM
 				"Child" "c_1"
-		) "t1" ON "t1"."ParentID" = "p"."ParentID" AND "t1"."rn" <= 1
+		) "t1" ON "t1"."ParentID" = "p"."ParentID" AND "t1"."rn" = 1
 FETCH NEXT 10 ROWS ONLY
 

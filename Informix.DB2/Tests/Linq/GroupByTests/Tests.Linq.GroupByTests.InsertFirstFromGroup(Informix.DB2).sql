@@ -36,7 +36,7 @@ FROM
 				c_1.ID
 			FROM
 				temp_table_1 c_1
-		) t1 ON gr.ID = t1.ID AND t1.rn <= 1
+		) t1 ON gr.ID = t1.ID AND t1.rn = 1
 
 -- Informix.DB2 Informix
 

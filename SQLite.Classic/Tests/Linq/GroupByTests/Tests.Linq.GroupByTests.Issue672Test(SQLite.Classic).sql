@@ -90,5 +90,5 @@ FROM
 			WHERE
 				[s].[Enabled] = 1 AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
 				Length([s].[ImageFullUrl]) > 0
-		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] <= 1
+		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] = 1
 

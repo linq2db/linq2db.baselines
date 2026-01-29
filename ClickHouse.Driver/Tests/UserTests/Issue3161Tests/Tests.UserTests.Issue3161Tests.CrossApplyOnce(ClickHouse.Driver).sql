@@ -14,5 +14,5 @@ FROM
 				x.PARENTID2 as PARENTID2
 			FROM
 				TABLE2 x
-		) t1 ON t1.PARENTID2 = t1_1.ID1 AND t1.rn <= 1
+		) t1 ON t1.PARENTID2 = t1_1.ID1 AND t1.rn = 1
 

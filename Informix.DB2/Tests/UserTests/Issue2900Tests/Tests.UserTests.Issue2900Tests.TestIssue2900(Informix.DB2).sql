@@ -13,5 +13,5 @@ FROM
 				a_Metrics.RequestId
 			FROM
 				Metric a_Metrics
-		) t1 ON a.Id = t1.RequestId AND t1.rn <= 1
+		) t1 ON a.Id = t1.RequestId AND t1.rn = 1
 
