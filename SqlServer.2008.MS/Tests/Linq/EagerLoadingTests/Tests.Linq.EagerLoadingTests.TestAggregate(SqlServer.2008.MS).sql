@@ -33,10 +33,11 @@ SELECT
 		FROM
 			(
 				SELECT
-					*
+					[t5].[c1]
 				FROM
 					(
 						SELECT
+							1 as [c1],
 							ROW_NUMBER() OVER (ORDER BY [t4].[Count_1]) as [RN]
 						FROM
 							(

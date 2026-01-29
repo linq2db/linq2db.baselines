@@ -15,4 +15,6 @@ FROM
 			FROM
 				"Child" c_1
 		) c_2 ON o."ParentID" = c_2."ParentID" AND c_2."rn" <= 1
+ORDER BY
+	c_2."ChildID" DESC
 

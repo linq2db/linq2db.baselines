@@ -15,4 +15,6 @@ FROM
 			FROM
 				`Child` `c_1`
 		) `c_2` ON `c_2`.`ParentID` = `o`.`ParentID` AND `c_2`.`rn` <= 1
+ORDER BY
+	`c_2`.`ChildID` DESC
 

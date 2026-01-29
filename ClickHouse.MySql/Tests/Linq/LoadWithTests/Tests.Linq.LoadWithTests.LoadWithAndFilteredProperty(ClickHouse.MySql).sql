@@ -25,6 +25,9 @@ FROM
 			WHERE
 				d.ParentId % 2 = 0
 		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
+ORDER BY
+	m_2.Id,
+	d_1.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -65,6 +68,9 @@ FROM
 			WHERE
 				d.ParentId % 2 = 0
 		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
+ORDER BY
+	m_2.Id,
+	d_1.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -114,6 +120,9 @@ FROM
 			WHERE
 				d_1.ParentId % 2 = 0
 		) d_2 ON (m_2.cond = d_2.ParentId OR m_2.cond IS NULL AND d_2.ParentId IS NULL) AND d_2.rn <= 2
+ORDER BY
+	m_2.Id,
+	d_2.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -135,6 +144,8 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
+ORDER BY
+	m_2.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -184,6 +195,9 @@ FROM
 			WHERE
 				d_1.ParentId % 2 = 0
 		) d_2 ON (m_2.cond = d_2.ParentId OR m_2.cond IS NULL AND d_2.ParentId IS NULL) AND d_2.rn <= 2
+ORDER BY
+	m_2.Id,
+	d_2.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -205,6 +219,8 @@ FROM
 	) m_2
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
+ORDER BY
+	m_2.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -237,6 +253,8 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 WHERE
 	d.ParentId % 2 = 0 AND startsWith(d.Value, 'Sub1_')
+ORDER BY
+	m_2.Id
 
 -- ClickHouse.MySql ClickHouse
 

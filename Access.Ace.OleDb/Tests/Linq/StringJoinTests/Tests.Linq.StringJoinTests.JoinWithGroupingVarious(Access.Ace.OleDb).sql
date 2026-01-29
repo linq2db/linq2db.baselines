@@ -17,28 +17,8 @@ FROM
 			FROM
 				[SampleClass] [d]
 		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
-
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[m_1].[Key_1],
-	[d_1].[NullableValue]
-FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [m_1]
-		INNER JOIN (
-			SELECT DISTINCT
-				[d].[NullableValue],
-				[d].[Id]
-			FROM
-				[SampleClass] [d]
-			WHERE
-				[d].[NullableValue] IS NOT NULL
-		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
+ORDER BY
+	[m_1].[Key_1]
 
 -- Access.Ace.OleDb AccessOleDb
 
@@ -62,13 +42,13 @@ FROM
 				[d].[NullableValue] IS NOT NULL
 		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
 ORDER BY
-	[d_1].[NullableValue] DESC
+	[m_1].[Key_1]
 
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
 	[m_1].[Key_1],
-	[d_1].[NotNullableValue]
+	[d_1].[NullableValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -78,11 +58,16 @@ FROM
 	) [m_1]
 		INNER JOIN (
 			SELECT DISTINCT
-				[d].[NotNullableValue],
+				[d].[NullableValue],
 				[d].[Id]
 			FROM
 				[SampleClass] [d]
+			WHERE
+				[d].[NullableValue] IS NOT NULL
 		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
+ORDER BY
+	[d_1].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.OleDb AccessOleDb
 
@@ -104,18 +89,44 @@ FROM
 				[SampleClass] [d]
 		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
 ORDER BY
-	[d_1].[NotNullableValue] DESC
+	[m_1].[Key_1]
 
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[g_1].[Id]
+	[m_1].[Key_1],
+	[d_1].[NotNullableValue]
 FROM
-	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
+	(
+		SELECT DISTINCT
+			[g_1].[Id] as [Key_1]
+		FROM
+			[SampleClass] [g_1]
+	) [m_1]
+		INNER JOIN (
+			SELECT DISTINCT
+				[d].[NotNullableValue],
+				[d].[Id]
+			FROM
+				[SampleClass] [d]
+		) [d_1] ON ([m_1].[Key_1] = [d_1].[Id])
 ORDER BY
-	[g_1].[Id]
+	[d_1].[NotNullableValue] DESC,
+	[m_1].[Key_1]
+
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[Key_1]
+FROM
+	(
+		SELECT DISTINCT
+			[g_1].[Id] as [Key_1]
+		FROM
+			[SampleClass] [g_1]
+	) [t1]
+ORDER BY
+	[t1].[Key_1]
 
 -- Access.Ace.OleDb AccessOleDb
 
