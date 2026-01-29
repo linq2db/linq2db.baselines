@@ -26,6 +26,8 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -76,6 +78,8 @@ FROM
 			WHERE
 				[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
 		) [d_1]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -136,6 +140,8 @@ FROM
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -157,6 +163,8 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -217,6 +225,8 @@ FROM
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -238,6 +248,8 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -270,6 +282,8 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 

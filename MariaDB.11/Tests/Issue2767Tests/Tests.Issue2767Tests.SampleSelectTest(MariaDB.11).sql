@@ -34,6 +34,8 @@ FROM
 		INNER JOIN `exercise_equipment_linker` `d` ON `m_1`.`Id` = `d`.`exercise_id`
 		INNER JOIN `exercise_equipment` `equipment` ON `d`.`equipment_id` = `equipment`.`id`
 		LEFT JOIN `ext_translations` `description` ON CAST(`equipment`.`id` AS CHAR(11)) = `description`.`foreign_key` AND `description`.`locale` = @currentLanguage AND `description`.`object_class` = @Equipment AND `description`.`field` = 'name'
+ORDER BY
+	`m_1`.`Id` DESC
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @language VarChar(2) -- String

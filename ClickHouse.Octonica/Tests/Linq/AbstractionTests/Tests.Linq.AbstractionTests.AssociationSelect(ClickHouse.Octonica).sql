@@ -28,6 +28,8 @@ FROM
 			WHERE
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
+ORDER BY
+	d_1.Id
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -67,6 +69,8 @@ FROM
 			WHERE
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
+ORDER BY
+	d_1.Id
 
 -- ClickHouse.Octonica ClickHouse
 
