@@ -12,19 +12,14 @@ SELECT
 FROM
 	(
 		SELECT
-			t3."Key_1"
+			x.id as "Key_1"
 		FROM
-			(
-				SELECT DISTINCT
-					g_1.id as "Key_1"
-				FROM
-					"T1" g_1
-						LEFT JOIN "T2" order_1 ON g_1.id = order_1.id AND order_1.id2 = :myId
-				WHERE
-					g_1.id2 = :myId
-			) t3
+			"T1" x
+				LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
+		WHERE
+			x.id2 = :myId
 		ORDER BY
-			t3."Key_1"
+			x.id
 		LIMIT 1
 	) m_1
 		INNER JOIN "T1" d ON m_1."Key_1" = d.id
@@ -37,18 +32,13 @@ DECLARE @myId Integer -- Int32
 SET     @myId = 85
 
 SELECT
-	t3."Key_1"
+	x.id
 FROM
-	(
-		SELECT DISTINCT
-			g_1.id as "Key_1"
-		FROM
-			"T1" g_1
-				LEFT JOIN "T2" order_1 ON g_1.id = order_1.id AND order_1.id2 = :myId
-		WHERE
-			g_1.id2 = :myId
-	) t3
+	"T1" x
+		LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
+WHERE
+	x.id2 = :myId
 ORDER BY
-	t3."Key_1"
+	x.id
 LIMIT 1
 
