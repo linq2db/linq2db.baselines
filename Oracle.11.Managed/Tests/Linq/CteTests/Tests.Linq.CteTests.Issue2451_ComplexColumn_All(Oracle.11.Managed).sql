@@ -9,7 +9,7 @@ AS
 		"Person" p
 	UNION ALL
 	SELECT
-		r."FirstName" || CAST('/' AS VarChar(4000)) || r."LastName"
+		r."FirstName" || '/' || r."LastName"
 	FROM
 		"cte" t1
 			INNER JOIN "Person" r ON t1."FirstName" = r."LastName"

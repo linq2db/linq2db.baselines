@@ -1,64 +1,64 @@
 ﻿-- Oracle.11.Managed Oracle11
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert BinaryFloat -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(:value AS Real)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-DECLARE @value BinaryFloat -- Single
-SET     @value = 6579.64648
+DECLARE @Convert BinaryFloat -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(:value AS Real)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-DECLARE @value BinaryDouble -- Double
-SET     @value = 6579.6464800000003D
+DECLARE @Convert BinaryFloat -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(:value AS Real)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert BinaryDouble -- Double
+SET     @Convert = 6579.6464800000003D
 
 SELECT
-	CAST(:value AS Float)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-DECLARE @value BinaryFloat -- Single
-SET     @value = 6579.64648
+DECLARE @Convert BinaryDouble -- Double
+SET     @Convert = 6579.646484375D
 
 SELECT
-	CAST(:value AS Float)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-DECLARE @value BinaryDouble -- Double
-SET     @value = 6579.6464800000003D
+DECLARE @Convert BinaryDouble -- Double
+SET     @Convert = 6579.6464800000003D
 
 SELECT
-	CAST(:value AS Float)
+	:Convert
 FROM
 	"LinqDataTypes" t1
 WHERE
