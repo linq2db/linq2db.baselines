@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @flag  -- Int32
-SET     @flag = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	[t].[Id],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[MappingTestClass] [t]
 WHERE
-	([t].[Flags] & @flag) <> 0
+	([t].[Flags] & @p) <> 0
 

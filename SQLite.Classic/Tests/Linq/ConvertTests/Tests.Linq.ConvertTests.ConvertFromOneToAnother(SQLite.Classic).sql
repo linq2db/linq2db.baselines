@@ -1,89 +1,89 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(9, 5)
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS Decimal)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(7, 3)
+SET     @Convert = 6579.646
 
 SELECT
-	CAST(@value AS Decimal)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Decimal(9, 5)
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS Decimal)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert  -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Single
-SET     @value = 6579.64648
+DECLARE @Convert  -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert  -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert  -- Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Single
-SET     @value = 6579.64648
+DECLARE @Convert  -- Double
+SET     @Convert = 6579.646484375
 
 SELECT
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
 
 -- SQLite.Classic SQLite
-DECLARE @value  -- Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert  -- Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
