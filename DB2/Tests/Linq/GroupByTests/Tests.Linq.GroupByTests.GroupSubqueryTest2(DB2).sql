@@ -5,10 +5,12 @@ SELECT
 FROM
 	"Child" "pmp1",
 	(
-		SELECT DISTINCT
-			"pmp"."ParentID"
+		SELECT
+			1 as "c1"
 		FROM
 			"Child" "pmp"
+		GROUP BY
+			"pmp"."ParentID"
 	) "pmp_1"
 
 -- DB2 DB2.LUW DB2LUW
