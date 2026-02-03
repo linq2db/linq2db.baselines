@@ -117,17 +117,12 @@ ORDER BY
 
 -- SqlServer.2008
 
-SELECT
-	[t1].[Key_1]
+SELECT DISTINCT
+	[g_1].[Id]
 FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [t1]
+	[SampleClass] [g_1]
 ORDER BY
-	[t1].[Key_1]
+	[g_1].[Id]
 
 -- SqlServer.2008
 
