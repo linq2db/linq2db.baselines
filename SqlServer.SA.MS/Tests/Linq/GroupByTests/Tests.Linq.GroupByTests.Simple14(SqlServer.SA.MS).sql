@@ -10,14 +10,14 @@ FROM
 		FROM
 			[Parent] [p]
 	) [m_1]
-		CROSS APPLY (
-			SELECT DISTINCT
+		INNER JOIN (
+			SELECT
 				[d].[ParentID] as [Key_1]
 			FROM
 				[Child] [d]
-			WHERE
-				[m_1].[ParentID] = [d].[ParentID]
-		) [d_1]
+			GROUP BY
+				[d].[ParentID]
+		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
 
 -- SqlServer.SA.MS SqlServer.2019
 
