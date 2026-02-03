@@ -1,81 +1,81 @@
 ﻿-- Informix.DB2 Informix
-DECLARE @value Decimal(16)
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(16)
+SET     @Convert = 6579.64648
 
 SELECT FIRST 1
-	@value::Decimal
+	@Convert::Decimal(9, 5)
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Real(4) -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(16)
+SET     @Convert = 6579.646
 
 SELECT FIRST 1
-	@value::Decimal
+	@Convert::Decimal(7, 3)
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Double(8)
-SET     @value = 6579.6464800000003
+DECLARE @Convert Decimal(16)
+SET     @Convert = 6579.64648
 
 SELECT FIRST 1
-	@value::Decimal
+	@Convert::Decimal(9, 5)
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Decimal(16)
-SET     @value = 6579.64648
+DECLARE @Convert Real(4) -- Single
+SET     @Convert = 6579.64648
 
 SELECT FIRST 1
-	@value::Real
+	@Convert::Real
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Real(4) -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Real(4) -- Single
+SET     @Convert = 6579.64648
 
 SELECT FIRST 1
-	@value::Real
+	@Convert::Real
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Double(8)
-SET     @value = 6579.6464800000003
+DECLARE @Convert Real(4) -- Single
+SET     @Convert = 6579.64648
 
 SELECT FIRST 1
-	@value::Real
+	@Convert::Real
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Decimal(16)
-SET     @value = 6579.64648
+DECLARE @Convert Double(8)
+SET     @Convert = 6579.6464800000003
 
 SELECT FIRST 1
-	@value::Float
+	@Convert::Float
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Real(4) -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Double(8)
+SET     @Convert = 6579.646484375
 
 SELECT FIRST 1
-	@value::Float
+	@Convert::Float
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-DECLARE @value Double(8)
-SET     @value = 6579.6464800000003
+DECLARE @Convert Double(8)
+SET     @Convert = 6579.6464800000003
 
 SELECT FIRST 1
-	@value::Float
+	@Convert::Float
 FROM
 	LinqDataTypes t1
 
