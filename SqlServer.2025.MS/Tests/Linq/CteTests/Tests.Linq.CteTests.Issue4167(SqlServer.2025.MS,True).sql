@@ -4,17 +4,14 @@ WITH [CTE_1] ([EnumValue])
 AS
 (
 	SELECT
-		IIF([g_2].[EnumValue] IS NOT NULL, [g_2].[EnumValue], 0)
+		IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
 	FROM
-		(
-			SELECT DISTINCT
-				[g_1].[Value] as [Value_1],
-				[g_1].[EnumValue]
-			FROM
-				[Issue4167Table] [g_1]
-			WHERE
-				[g_1].[Value] = N'000001'
-		) [g_2]
+		[Issue4167Table] [g_1]
+	WHERE
+		[g_1].[Value] = N'000001'
+	GROUP BY
+		[g_1].[Value],
+		[g_1].[EnumValue]
 )
 SELECT
 	[t1].[EnumValue]
