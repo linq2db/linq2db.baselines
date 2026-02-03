@@ -5,10 +5,12 @@ SELECT
 FROM
 	`Child` `pmp1`
 		CROSS JOIN (
-			SELECT DISTINCT
-				`pmp`.`ParentID`
+			SELECT
+				1 as `c1`
 			FROM
 				`Child` `pmp`
+			GROUP BY
+				`pmp`.`ParentID`
 		) `pmp_1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
