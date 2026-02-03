@@ -5,5 +5,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Concat(`p`.`FirstName`, ' ', 1) = 'John 1'
+	Concat(`p`.`FirstName`, ' 1') = 'John 1'
 
