@@ -19,12 +19,15 @@ SELECT
 	CAST(1 AS Int)
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			EXTRACT(MONTH FROM t3."DateTimeValue") as "month_1",
 			EXTRACT(YEAR FROM t3."DateTimeValue") as "year_1"
 		FROM
 			"LinqDataTypes" t3
 	) t4
+GROUP BY
+	t4."month_1",
+	t4."year_1"
 UNION
 SELECT
 	EXTRACT(YEAR FROM t5."DateTimeValue"),
