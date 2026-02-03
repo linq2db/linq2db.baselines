@@ -17,6 +17,6 @@ WHERE
 	s."Id" = 3
 RETURNING
 	s."Id" + 1,
-	s."ValueStr" || 1::text,
+	s."ValueStr" || '1',
 	s."ValueStr" IS NOT NULL
 
