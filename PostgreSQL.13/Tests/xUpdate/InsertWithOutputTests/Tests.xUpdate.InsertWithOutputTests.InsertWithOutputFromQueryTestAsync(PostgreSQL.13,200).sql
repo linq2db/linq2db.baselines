@@ -1,6 +1,8 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
+DECLARE @ValueStr Text(3) -- String
+SET     @ValueStr = '200'
 
 INSERT INTO "DestinationTable"
 (
@@ -11,7 +13,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || :param::text
+	s."ValueStr" || :ValueStr
 FROM
 	"TableWithData" s
 WHERE
@@ -24,11 +26,13 @@ RETURNING
 -- PostgreSQL.13 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
+DECLARE @ValueStr Text(3) -- String
+SET     @ValueStr = '200'
 
 SELECT
 	s."Id" + :param,
 	s."Value" + :param,
-	s."ValueStr" || :param::text
+	s."ValueStr" || :ValueStr
 FROM
 	"TableWithData" s
 WHERE
