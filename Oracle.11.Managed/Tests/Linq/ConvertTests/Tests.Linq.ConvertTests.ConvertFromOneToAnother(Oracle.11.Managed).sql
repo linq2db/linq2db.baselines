@@ -14,7 +14,7 @@ DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
 SELECT
-	CAST(:value AS Real)
+	:value
 FROM
 	"LinqDataTypes" t1
 WHERE
@@ -58,7 +58,7 @@ DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 
 SELECT
-	CAST(:value AS Float)
+	:value
 FROM
 	"LinqDataTypes" t1
 WHERE
