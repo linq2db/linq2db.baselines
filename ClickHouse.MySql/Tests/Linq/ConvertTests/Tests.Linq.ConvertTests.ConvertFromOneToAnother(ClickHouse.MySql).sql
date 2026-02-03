@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDecimal128(toDecimal128('6579.64648', 10), 10)
+	toDecimal128('6579.64648', 10)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -9,7 +9,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDecimal128(toFloat32(6579.64648), 10)
+	toDecimal128('6579.646', 10)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -17,7 +17,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toDecimal128(toFloat64(6579.6464800000003), 10)
+	toDecimal128('6579.64648', 10)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -25,7 +25,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat32(toDecimal128('6579.64648', 10))
+	toFloat32(6579.64648)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -33,7 +33,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat32(toFloat32(6579.64648))
+	toFloat32(6579.64648)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -41,7 +41,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat32(toFloat64(6579.6464800000003))
+	toFloat32(6579.64648)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -49,7 +49,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat64(toDecimal128('6579.64648', 10))
+	toFloat64(6579.6464800000003)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -57,7 +57,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat64(toFloat32(6579.64648))
+	toFloat64(6579.646484375)
 FROM
 	LinqDataTypes t1
 LIMIT 1
@@ -65,7 +65,7 @@ LIMIT 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat64(toFloat64(6579.6464800000003))
+	toFloat64(6579.6464800000003)
 FROM
 	LinqDataTypes t1
 LIMIT 1
