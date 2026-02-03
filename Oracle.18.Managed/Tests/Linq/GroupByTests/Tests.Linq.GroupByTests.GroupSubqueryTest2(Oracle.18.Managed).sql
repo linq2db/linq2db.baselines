@@ -5,10 +5,12 @@ SELECT
 FROM
 	"Child" pmp1
 		CROSS JOIN (
-			SELECT DISTINCT
-				pmp."ParentID"
+			SELECT
+				1 as "c1"
 			FROM
 				"Child" pmp
+			GROUP BY
+				pmp."ParentID"
 		) pmp_1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
