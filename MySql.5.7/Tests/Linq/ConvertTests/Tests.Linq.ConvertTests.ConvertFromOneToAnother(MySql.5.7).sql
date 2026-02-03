@@ -1,59 +1,59 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Float -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	@Convert
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Float -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Float -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	@Convert
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Float -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	@Convert
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	CAST(@Convert AS DECIMAL(29, 10))
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Float -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Double
+SET     @Convert = 6579.646484375
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	CAST(@Convert AS DECIMAL(29, 10))
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @value Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	CAST(@Convert AS DECIMAL(29, 10))
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
