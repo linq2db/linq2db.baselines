@@ -4,19 +4,16 @@ WITH CTE_1 AS
 (
 	SELECT
 		CASE
-			WHEN g_2.EnumValue IS NOT NULL THEN g_2.EnumValue
+			WHEN g_1.EnumValue IS NOT NULL THEN g_1.EnumValue
 			ELSE 0
 		END as EnumValue
 	FROM
-		(
-			SELECT DISTINCT
-				g_1.Value as Value_1,
-				g_1.EnumValue as EnumValue
-			FROM
-				Issue4167Table g_1
-			WHERE
-				g_1.Value = '000001'
-		) g_2
+		Issue4167Table g_1
+	WHERE
+		g_1.Value = '000001'
+	GROUP BY
+		g_1.Value,
+		g_1.EnumValue
 )
 SELECT
 	t1.EnumValue
