@@ -6,12 +6,15 @@ SELECT
 	1::Int
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			Floor(Extract(month From t1."DateTimeValue"))::Int as month_1,
 			Floor(Extract(year From t1."DateTimeValue"))::Int as year_1
 		FROM
 			"LinqDataTypes" t1
 	) t2
+GROUP BY
+	t2.month_1,
+	t2.year_1
 UNION
 SELECT
 	t3."SmallIntValue",
