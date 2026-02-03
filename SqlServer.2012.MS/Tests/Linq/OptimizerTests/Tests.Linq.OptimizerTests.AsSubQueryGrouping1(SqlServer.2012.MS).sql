@@ -4,9 +4,11 @@ SELECT
 	COUNT(*)
 FROM
 	(
-		SELECT DISTINCT
-			[x].[Key1]
+		SELECT
+			1 as [c1]
 		FROM
 			[FirstOptimizerData] [x]
+		GROUP BY
+			[x].[Key1]
 	) [x_1]
 

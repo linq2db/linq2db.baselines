@@ -7,15 +7,12 @@ FROM
 		SELECT
 			IIF([r].[EnumValue] IS NOT NULL, [r].[EnumValue], 0) as [EnumValue]
 		FROM
-			(
-				SELECT DISTINCT
-					[g_1].[Value] as [Value_1],
-					[g_1].[EnumValue]
-				FROM
-					[Issue4167Table] [g_1]
-				WHERE
-					[g_1].[Value] = N'000001'
-			) [r]
+			[Issue4167Table] [r]
+		WHERE
+			[r].[Value] = N'000001'
+		GROUP BY
+			[r].[Value],
+			[r].[EnumValue]
 	) [t1]
 ORDER BY
 	[t1].[EnumValue]
