@@ -1,10 +1,10 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-SELECT
+SELECT DISTINCT
 	`g_2`.`Key_1`
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			CASE
 				WHEN (
 					SELECT
