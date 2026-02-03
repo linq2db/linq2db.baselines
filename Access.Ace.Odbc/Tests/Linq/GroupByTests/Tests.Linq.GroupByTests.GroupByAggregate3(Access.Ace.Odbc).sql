@@ -1,10 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
-SELECT
+SELECT DISTINCT
 	[g_2].[Key_1]
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			IIF((
 				SELECT
 					AVG([a_Children].[ParentID])

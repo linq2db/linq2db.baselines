@@ -11,10 +11,12 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN (
-			SELECT DISTINCT
+			SELECT
 				[d].[ParentID] as [Key_1]
 			FROM
 				[Child] [d]
+			GROUP BY
+				[d].[ParentID]
 		) [d_1] ON ([m_1].[ParentID] = [d_1].[Key_1])
 
 -- Access.Ace.Odbc AccessODBC

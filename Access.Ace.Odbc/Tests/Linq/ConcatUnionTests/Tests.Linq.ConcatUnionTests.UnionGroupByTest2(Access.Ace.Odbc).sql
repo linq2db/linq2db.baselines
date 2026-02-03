@@ -19,12 +19,15 @@ SELECT
 	1
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			DatePart('m', [t3].[DateTimeValue]) as [month_1],
 			DatePart('yyyy', [t3].[DateTimeValue]) as [year_1]
 		FROM
 			[LinqDataTypes] [t3]
 	) [t4]
+GROUP BY
+	[t4].[month_1],
+	[t4].[year_1]
 UNION
 SELECT
 	DatePart('yyyy', [t5].[DateTimeValue]),
