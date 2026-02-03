@@ -3,11 +3,10 @@ DECLARE @p  -- Int32
 SET     @p = 1
 
 SELECT
-	[t].[Id],
-	[t].[Value],
-	[t].[Flags]
+	[r].[Id],
+	[r].[Name]
 FROM
-	[MappingTestClass] [t]
+	[ConvertTable] [r]
 WHERE
-	([t].[Flags] & @p) <> 0
+	[r].[Id] = @p
 
