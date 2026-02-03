@@ -1,10 +1,10 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-SELECT
+SELECT DISTINCT
 	[g_2].[Key_1]
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			CASE
 				WHEN (
 					SELECT
