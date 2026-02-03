@@ -1,6 +1,8 @@
 ﻿-- SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 200
+DECLARE @ValueStr NVarChar(50) -- String
+SET     @ValueStr = N'200'
 
 INSERT INTO [DestinationTable]
 (
@@ -15,7 +17,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param AS NVarChar(11))
+	[s].[ValueStr] + @ValueStr
 FROM
 	[TableWithData] [s]
 WHERE
@@ -24,11 +26,13 @@ WHERE
 -- SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 200
+DECLARE @ValueStr NVarChar(50) -- String
+SET     @ValueStr = N'200'
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param AS NVarChar(11))
+	[s].[ValueStr] + @ValueStr
 FROM
 	[TableWithData] [s]
 WHERE
