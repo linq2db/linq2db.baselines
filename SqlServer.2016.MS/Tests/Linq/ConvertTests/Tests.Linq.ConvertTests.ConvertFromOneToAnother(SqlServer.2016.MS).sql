@@ -1,54 +1,54 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT TOP (1)
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Real -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT TOP (1)
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Float -- Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT TOP (1)
-	CAST(@value AS Real)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Float -- Double
+SET     @Convert = 6579.6464800000003
 
 SELECT TOP (1)
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Real -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Float -- Double
+SET     @Convert = 6579.646484375
 
 SELECT TOP (1)
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @value Float -- Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Float -- Double
+SET     @Convert = 6579.6464800000003
 
 SELECT TOP (1)
-	CAST(@value AS Float)
+	@Convert
 FROM
 	[LinqDataTypes] [t1]
 
