@@ -17,5 +17,5 @@ WHERE
 	s."Id" > 3
 RETURNING
 	OLD."Id" + 1,
-	OLD."ValueStr" || 1::text
+	OLD."ValueStr" || '1'
 
