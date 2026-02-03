@@ -1,10 +1,10 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-SELECT
+SELECT DISTINCT
 	`g_2`.`Key_1`
 FROM
 	(
-		SELECT DISTINCT
+		SELECT
 			CASE
 				WHEN (
 					SELECT
