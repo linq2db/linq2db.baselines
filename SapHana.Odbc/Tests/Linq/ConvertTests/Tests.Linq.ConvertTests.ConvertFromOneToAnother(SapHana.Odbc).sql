@@ -1,89 +1,89 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(9, 5)
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(? AS Decimal(38, 10))
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Real -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Decimal(7, 3)
+SET     @Convert = 6579.646
 
 SELECT
-	CAST(? AS Decimal(38, 10))
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Decimal(9, 5)
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(? AS Decimal(38, 10))
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(? AS Real)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Real -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(? AS Real)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Real -- Single
+SET     @Convert = 6579.64648
 
 SELECT
-	CAST(? AS Real)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Decimal(9, 5)
-SET     @value = 6579.64648
+DECLARE @Convert Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(? AS Double)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Real -- Single
-SET     @value = 6579.64648
+DECLARE @Convert Double
+SET     @Convert = 6579.646484375
 
 SELECT
-	CAST(? AS Double)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value Double
-SET     @value = 6579.6464800000003
+DECLARE @Convert Double
+SET     @Convert = 6579.6464800000003
 
 SELECT
-	CAST(? AS Double)
+	?
 FROM
 	"LinqDataTypes" "t1"
 LIMIT 1
