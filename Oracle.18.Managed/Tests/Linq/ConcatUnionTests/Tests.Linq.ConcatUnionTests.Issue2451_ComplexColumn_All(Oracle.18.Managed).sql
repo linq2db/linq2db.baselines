@@ -6,14 +6,14 @@ FROM
 	"Person" p
 UNION ALL
 SELECT
-	p_1."FirstName" || CAST('/' AS VarChar(4000)) || p_1."LastName"
+	p_1."FirstName" || '/' || p_1."LastName"
 FROM
 	"Person" p_1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."FirstName" || CAST('/' AS VarChar(4000)) || p."LastName"
+	p."FirstName" || '/' || p."LastName"
 FROM
 	"Person" p
 UNION ALL
