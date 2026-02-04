@@ -6,7 +6,7 @@ FROM
 	"Child" pmp1
 		CROSS JOIN (
 			SELECT
-				1 as c1
+				pmp."ParentID"
 			FROM
 				"Child" pmp
 			GROUP BY
