@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as c1
+			t2.Key_1 as Key_1
 		FROM
 			(
 				SELECT
