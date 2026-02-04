@@ -5,10 +5,12 @@ SELECT
 FROM
 	[Child] [pmp1],
 	(
-		SELECT DISTINCT
+		SELECT
 			[pmp].[ParentID]
 		FROM
 			[Child] [pmp]
+		GROUP BY
+			[pmp].[ParentID]
 	) [pmp_1]
 
 -- Sybase.Managed Sybase
