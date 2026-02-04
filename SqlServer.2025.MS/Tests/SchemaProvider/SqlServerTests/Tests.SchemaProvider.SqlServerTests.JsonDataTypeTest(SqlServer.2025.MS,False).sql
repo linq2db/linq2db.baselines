@@ -15,7 +15,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 					TABLE_SCHEMA                                                                   as SchemaName,
 					TABLE_NAME                                                                     as TableName,
 					CASE WHEN TABLE_TYPE = 'VIEW' THEN 1 ELSE 0 END                                as IsView,
-					ISNULL(CONVERT(varchar(8000), x.value), '')                                    as Description,
+					ISNULL(CONVERT(NVARCHAR(MAX), x.value), N'')                                   as Description,
 					CASE WHEN TABLE_SCHEMA = 'dbo' THEN 1 ELSE 0 END                               as IsDefaultSchema
 				FROM
 					INFORMATION_SCHEMA.TABLES s
@@ -75,7 +75,7 @@ SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 					CHARACTER_MAXIMUM_LENGTH                                                                            as Length,
 					ISNULL(NUMERIC_PRECISION, DATETIME_PRECISION)                                                       as [Precision],
 					NUMERIC_SCALE                                                                                       as Scale,
-					ISNULL(CONVERT(varchar(8000), x.value), '')                                                         as [Description],
+					ISNULL(CONVERT(NVARCHAR(MAX), x.value), N'')                                                        as [Description],
 					COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsIdentity') as IsIdentity,
 					CASE WHEN c.DATA_TYPE = 'timestamp'
 						OR COLUMNPROPERTY(object_id('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'), COLUMN_NAME, 'IsComputed') = 1
