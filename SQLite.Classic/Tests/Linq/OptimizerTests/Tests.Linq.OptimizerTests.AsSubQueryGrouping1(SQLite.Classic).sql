@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as [c1]
+			[x].[Key1]
 		FROM
 			[FirstOptimizerData] [x]
 		GROUP BY
