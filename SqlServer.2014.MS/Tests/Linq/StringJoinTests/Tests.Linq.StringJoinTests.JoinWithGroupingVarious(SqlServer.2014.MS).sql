@@ -65,8 +65,8 @@ FROM
 				[m_1].[Key_1] = [d].[Id] AND [d].[NullableValue] IS NOT NULL
 		) [d_1]
 ORDER BY
-	[d_1].[NullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NullableValue] DESC
 
 -- SqlServer.2014.MS SqlServer.2014
 
@@ -112,22 +112,17 @@ FROM
 				[m_1].[Key_1] = [d].[Id]
 		) [d_1]
 ORDER BY
-	[d_1].[NotNullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NotNullableValue] DESC
 
 -- SqlServer.2014.MS SqlServer.2014
 
-SELECT
-	[t1].[Key_1]
+SELECT DISTINCT
+	[g_1].[Id]
 FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [t1]
+	[SampleClass] [g_1]
 ORDER BY
-	[t1].[Key_1]
+	[g_1].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
 
