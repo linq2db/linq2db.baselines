@@ -1,10 +1,10 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT DISTINCT
+SELECT
 	`g_2`.`Key_1`
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			CASE
 				WHEN (
 					SELECT
