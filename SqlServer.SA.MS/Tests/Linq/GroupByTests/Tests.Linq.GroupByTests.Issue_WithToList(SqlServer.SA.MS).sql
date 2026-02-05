@@ -42,20 +42,14 @@ VALUES
 
 -- SqlServer.SA.MS SqlServer.2019
 
-SELECT
-	[t2].[Id],
-	[t2].[ReferenceId]
+SELECT DISTINCT
+	[a_Reference].[Id],
+	[t1].[ReferenceId]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[ReferenceId],
-			[a_Reference].[Id]
-		FROM
-			[TestAggregateTable] [t1]
-				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
-	) [t2]
+	[TestAggregateTable] [t1]
+		LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
 ORDER BY
-	[t2].[ReferenceId]
+	[t1].[ReferenceId]
 
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @tz NVarChar(4000) -- String
