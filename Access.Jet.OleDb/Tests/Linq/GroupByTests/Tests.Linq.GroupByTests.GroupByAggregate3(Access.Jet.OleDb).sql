@@ -1,10 +1,10 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
-SELECT DISTINCT
+SELECT
 	[g_2].[Key_1]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			IIF((
 				SELECT
 					AVG([a_Children].[ParentID])
