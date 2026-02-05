@@ -1,10 +1,10 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
-SELECT DISTINCT
+SELECT
 	g_2."Key_1"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			CASE
 				WHEN (
 					SELECT
