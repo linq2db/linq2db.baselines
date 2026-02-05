@@ -66,8 +66,8 @@ FROM
 				[d].[NullableValue] IS NOT NULL
 		) [d_1] ON [m_1].[Key_1] = [d_1].[Id]
 ORDER BY
-	[d_1].[NullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NullableValue] DESC
 
 -- Sybase.Managed Sybase
 
@@ -111,22 +111,17 @@ FROM
 				[SampleClass] [d]
 		) [d_1] ON [m_1].[Key_1] = [d_1].[Id]
 ORDER BY
-	[d_1].[NotNullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NotNullableValue] DESC
 
 -- Sybase.Managed Sybase
 
-SELECT
-	[t1].[Key_1]
+SELECT DISTINCT
+	[g_1].[Id]
 FROM
-	(
-		SELECT DISTINCT
-			[g_1].[Id] as [Key_1]
-		FROM
-			[SampleClass] [g_1]
-	) [t1]
+	[SampleClass] [g_1]
 ORDER BY
-	[t1].[Key_1]
+	[g_1].[Id]
 
 -- Sybase.Managed Sybase
 
