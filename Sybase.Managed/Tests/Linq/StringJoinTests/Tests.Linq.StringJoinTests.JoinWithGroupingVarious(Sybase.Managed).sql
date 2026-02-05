@@ -116,12 +116,17 @@ ORDER BY
 
 -- Sybase.Managed Sybase
 
-SELECT DISTINCT
-	[g_1].[Id]
+SELECT
+	[t1].[Key_1]
 FROM
-	[SampleClass] [g_1]
+	(
+		SELECT DISTINCT
+			[g_1].[Id] as [Key_1]
+		FROM
+			[SampleClass] [g_1]
+	) [t1]
 ORDER BY
-	[g_1].[Id]
+	[t1].[Key_1]
 
 -- Sybase.Managed Sybase
 
