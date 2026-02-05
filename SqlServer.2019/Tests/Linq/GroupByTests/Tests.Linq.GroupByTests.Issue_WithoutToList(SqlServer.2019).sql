@@ -59,9 +59,6 @@ FROM
 		FROM
 			[TestAggregateTable] [t1]
 				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
-		GROUP BY
-			[a_Reference].[Id],
-			[t1].[ReferenceId]
 	) [m_1]
 		CROSS APPLY (
 			SELECT
@@ -96,13 +93,16 @@ ORDER BY
 -- SqlServer.2019
 
 SELECT
-	[a_Reference].[Id]
+	[group_1].[key_1]
 FROM
-	[TestAggregateTable] [group_1]
-		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
-GROUP BY
-	[a_Reference].[Id],
-	[group_1].[ReferenceId]
+	(
+		SELECT DISTINCT
+			[t1].[ReferenceId],
+			[a_Reference].[Id] as [key_1]
+		FROM
+			[TestAggregateTable] [t1]
+				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+	) [group_1]
 ORDER BY
 	[group_1].[ReferenceId]
 
