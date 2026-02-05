@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
-SELECT DISTINCT
+SELECT
 	g_2."Key_1"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			CASE
 				WHEN (
 					SELECT
