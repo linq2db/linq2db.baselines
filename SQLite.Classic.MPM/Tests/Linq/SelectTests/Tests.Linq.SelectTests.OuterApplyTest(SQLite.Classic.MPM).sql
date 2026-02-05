@@ -134,7 +134,7 @@ FROM
 						ROW_NUMBER() OVER (PARTITION BY [c1].[ParentID] ORDER BY [c1].[ParentID]) as [rn]
 					FROM
 						[Child] [c1]
-				) [c1_1] ON [c1_1].[ParentID] = [p].[ParentID] AND [c1_1].[rn] <= 1
+				) [c1_1] ON [c1_1].[ParentID] = [p].[ParentID] AND [c1_1].[rn] = 1
 				LEFT JOIN (
 					SELECT
 						[c_1].[ChildID],
