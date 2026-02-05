@@ -1,19 +1,24 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	x."Id",
-	t1."Association"
+	x_1."Id",
+	x_1."Association"
 FROM
-	"Issue4723Table1" x
-		LEFT JOIN LATERAL (
-			SELECT
-				"a_Association"."Value" as "Association"
-			FROM
-				"Issue4723Table2" "a_Association"
-			WHERE
-				"a_Association"."Id" = x."Id"
-			LIMIT 1
-		) t1 ON 1=1
+	(
+		SELECT
+			(
+				SELECT
+					"a_Association"."Value"
+				FROM
+					"Issue4723Table2" "a_Association"
+				WHERE
+					"a_Association"."Id" = x."Id"
+				LIMIT 1
+			) as "Association",
+			x."Id"
+		FROM
+			"Issue4723Table1" x
+	) x_1
 WHERE
-	t1."Association" IS NOT NULL AND t1."Association" <> 'unknown'
+	x_1."Association" IS NOT NULL AND x_1."Association" <> 'unknown'
 
