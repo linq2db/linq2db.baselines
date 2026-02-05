@@ -19,10 +19,13 @@ FROM
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`FirstName`,
-	`t1`.`FirstName`
+	`t2`.`Key_1`,
+	`t2`.`Key_1`
 FROM
-	`Person` `t1`
-GROUP BY
-	`t1`.`FirstName`
+	(
+		SELECT DISTINCT
+			`t1`.`FirstName` as `Key_1`
+		FROM
+			`Person` `t1`
+	) `t2`
 

@@ -1,10 +1,10 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-SELECT DISTINCT
+SELECT
 	`g_2`.`Key_1`
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			CASE
 				WHEN (
 					SELECT
