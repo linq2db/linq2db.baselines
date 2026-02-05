@@ -2,10 +2,10 @@
 
 CREATE TEMPORARY TABLE "Issue4940RecordNotMapped"
 (
-	"Id"             Int                NOT NULL,
-	"Source"         text                   NULL,
-	"Status"         issue4940db_status NOT NULL,
-	"NullableStatus" issue4940db_status     NULL
+	"Id"             Int                         NOT NULL,
+	"Source"         text                            NULL,
+	"Status"         issue4940db_status          NOT NULL,
+	"NullableStatus" issue4940db_nullable_status     NULL
 )
 ON COMMIT PRESERVE ROWS
 
@@ -21,7 +21,7 @@ INSERT INTO "Issue4940RecordNotMapped"
 	"NullableStatus"
 )
 VALUES
-(1,'TempTable','open'::issue4940db_status,'open'::issue4940db_status),
+(1,'TempTable','open'::issue4940db_status,'open'::issue4940db_nullable_status),
 (2,'TempTable','closed'::issue4940db_status,NULL)
 
 
@@ -61,7 +61,7 @@ INSERT BULK "Issue4940RecordNotMapped"(Id, Source, Status, NullableStatus)
 
 MERGE INTO "Issue4940RecordNotMapped" "Target"
 USING (VALUES
-	('Merge',6,'open'::issue4940db_status,'closed'::issue4940db_status),
+	('Merge',6,'open'::issue4940db_status,'closed'::issue4940db_nullable_status),
 	('Merge',7,'open'::issue4940db_status,NULL)
 ) "Source"
 (

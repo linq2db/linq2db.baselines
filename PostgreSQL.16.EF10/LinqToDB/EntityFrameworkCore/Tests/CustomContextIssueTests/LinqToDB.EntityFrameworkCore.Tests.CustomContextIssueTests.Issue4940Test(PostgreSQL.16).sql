@@ -2,10 +2,10 @@
 
 CREATE TEMPORARY TABLE issue_4940_temp_table
 (
-	"Id"             integer            NOT NULL,
-	"Source"         text               NOT NULL,
-	"Status"         issue4940db_status NOT NULL,
-	"NullableStatus" issue4940db_status     NULL
+	"Id"             integer                     NOT NULL,
+	"Source"         text                        NOT NULL,
+	"Status"         issue4940db_status          NOT NULL,
+	"NullableStatus" issue4940db_nullable_status     NULL
 )
 ON COMMIT PRESERVE ROWS
 
@@ -21,7 +21,7 @@ INSERT INTO issue_4940_temp_table
 	"NullableStatus"
 )
 VALUES
-(1,'TempTable','open'::issue4940db_status,'closed'::issue4940db_status),
+(1,'TempTable','open'::issue4940db_status,'closed'::issue4940db_nullable_status),
 (2,'TempTable','closed'::issue4940db_status,NULL)
 
 
@@ -34,7 +34,7 @@ SET     @Source = 'Insert'
 DECLARE @Status Enum -- Object
 SET     @Status = 'open'::issue4940db_status
 DECLARE @NullableStatus Enum -- Object
-SET     @NullableStatus = 'closed'::issue4940db_status
+SET     @NullableStatus = 'closed'::issue4940db_nullable_status
 
 INSERT INTO "Issue4940DBRecords"
 (
@@ -88,7 +88,7 @@ INSERT BULK "Issue4940DBRecords"(Id, Source, Status, NullableStatus)
 
 MERGE INTO "Issue4940DBRecords" "Target"
 USING (VALUES
-	('Merge',5,'open'::issue4940db_status,'open'::issue4940db_status),
+	('Merge',5,'open'::issue4940db_status,'open'::issue4940db_nullable_status),
 	('Merge',6,'open'::issue4940db_status,NULL)
 ) "Source"
 (
