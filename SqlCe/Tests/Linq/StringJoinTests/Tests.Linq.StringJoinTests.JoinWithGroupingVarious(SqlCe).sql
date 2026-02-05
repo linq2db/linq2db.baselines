@@ -65,8 +65,8 @@ FROM
 				[m_1].[Key_1] = [d].[Id] AND [d].[NullableValue] IS NOT NULL
 		) [d_1]
 ORDER BY
-	[d_1].[NullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NullableValue] DESC
 
 -- SqlCe
 
@@ -112,8 +112,8 @@ FROM
 				[m_1].[Key_1] = [d].[Id]
 		) [d_1]
 ORDER BY
-	[d_1].[NotNullableValue] DESC,
-	[m_1].[Key_1]
+	[m_1].[Key_1],
+	[d_1].[NotNullableValue] DESC
 
 -- SqlCe
 

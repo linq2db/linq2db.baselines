@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t4].[Average]
+	[t3].[Average]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
@@ -14,25 +14,20 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[Average] AS Float)) as [Average]
+				AVG(CAST([t2].[Average] AS Float)) as [Average]
 			FROM
 				(
-					SELECT
-						[t2].[Average]
+					SELECT DISTINCT
+						[a_Details_1].[DetailId] as [Average]
 					FROM
-						(
-							SELECT DISTINCT
-								[a_Details_1].[DetailId] as [Average]
-							FROM
-								[DetailClass] [a_Details_1]
-							WHERE
-								[m_1].[Id1] = [a_Details_1].[MasterId]
-						) [t2]
+						[DetailClass] [a_Details_1]
+					WHERE
+						[m_1].[Id1] = [a_Details_1].[MasterId]
 					ORDER BY
-						[t2].[Average]
+						[a_Details_1].[DetailId]
 					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
-				) [t3]
-		) [t4]
+				) [t2]
+		) [t3]
 WHERE
 	[t1].[Count_1] > 1
 
