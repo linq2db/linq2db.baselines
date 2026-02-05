@@ -66,8 +66,8 @@ FROM
 				d.NullableValue IS NOT NULL
 		) d_1 ON m_1.Key_1 = d_1.Id
 ORDER BY
-	d_1.NullableValue DESC,
-	m_1.Key_1
+	m_1.Key_1,
+	d_1.NullableValue DESC
 
 -- Informix.DB2 Informix
 
@@ -111,8 +111,8 @@ FROM
 				SampleClass d
 		) d_1 ON m_1.Key_1 = d_1.Id
 ORDER BY
-	d_1.NotNullableValue DESC,
-	m_1.Key_1
+	m_1.Key_1,
+	d_1.NotNullableValue DESC
 
 -- Informix.DB2 Informix
 
