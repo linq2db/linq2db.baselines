@@ -4,61 +4,51 @@ SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."AggregatedNotNullFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."AggregatedNotNullFilteredDistinct", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t2"."AggregatedNotNullFilteredDistinct"
+				SELECT DISTINCT
+					"t1"."item" as "AggregatedNotNullFilteredDistinct"
 				FROM
 					(
-						SELECT DISTINCT
-							"t1"."item" as "AggregatedNotNullFilteredDistinct"
-						FROM
-							(
-								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
-						WHERE
-							"t1"."item" IS NOT NULL
-					) "t2"
+						SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
+				WHERE
+					"t1"."item" IS NOT NULL
 				ORDER BY
-					"t2"."AggregatedNotNullFilteredDistinct"
-			) "t3"
+					"t1"."item"
+			) "t2"
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t6"."AggregatedFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t4"."AggregatedFilteredDistinct", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t5"."AggregatedFilteredDistinct"
+				SELECT DISTINCT
+					"t3"."item" as "AggregatedFilteredDistinct"
 				FROM
 					(
-						SELECT DISTINCT
-							"t4"."item" as "AggregatedFilteredDistinct"
-						FROM
-							(
-								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NVarcharValue" FROM rdb$database) "t4"
-						WHERE
-							"t4"."item" <> 'A' OR "t4"."item" IS NULL
-					) "t5"
+						SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NVarcharValue" FROM rdb$database) "t3"
+				WHERE
+					"t3"."item" <> 'A' OR "t3"."item" IS NULL
 				ORDER BY
 					CASE
-						WHEN "t5"."AggregatedFilteredDistinct" IS NULL THEN 0
+						WHEN "t3"."item" IS NULL THEN 0
 						ELSE 1
 					END,
-					"t5"."AggregatedFilteredDistinct"
-			) "t6"
+					"t3"."item"
+			) "t4"
 	)
 FROM
 	"SampleClass" "t"
