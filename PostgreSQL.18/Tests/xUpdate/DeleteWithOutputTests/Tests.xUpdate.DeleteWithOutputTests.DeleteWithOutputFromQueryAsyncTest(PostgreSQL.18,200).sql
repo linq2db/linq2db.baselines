@@ -12,6 +12,8 @@ WHERE
 -- PostgreSQL.18 PostgreSQL
 DECLARE @param Integer -- Int32
 SET     @param = 200
+DECLARE @ValueStr Text(3) -- String
+SET     @ValueStr = '200'
 
 DELETE FROM
 	"TableWithData" s
@@ -20,5 +22,5 @@ WHERE
 RETURNING
 	OLD."Id" + :param,
 	OLD."Value" + :param,
-	OLD."ValueStr" || :param::text
+	OLD."ValueStr" || :ValueStr
 

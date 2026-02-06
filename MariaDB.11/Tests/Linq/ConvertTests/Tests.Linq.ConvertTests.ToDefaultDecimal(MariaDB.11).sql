@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	CAST(`t`.`MoneyValue` * 1000 AS DECIMAL(29, 10))
+	`t`.`MoneyValue` * 1000
 FROM
 	`LinqDataTypes` `t`
 

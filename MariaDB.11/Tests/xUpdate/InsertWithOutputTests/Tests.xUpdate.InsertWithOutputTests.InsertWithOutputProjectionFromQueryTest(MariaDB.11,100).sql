@@ -11,14 +11,14 @@ INSERT INTO `DestinationTable`
 SELECT
 	`s`.`Id` + 100 + @param,
 	`s`.`Value` + 100,
-	Concat(`s`.`ValueStr`, 100)
+	Concat(`s`.`ValueStr`, '100')
 FROM
 	`TableWithData` `s`
 WHERE
 	`s`.`Id` > 3
 RETURNING
 	`DestinationTable`.`Id` + 1,
-	Concat(`DestinationTable`.`ValueStr`, 1)
+	Concat(`DestinationTable`.`ValueStr`, '1')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
@@ -33,7 +33,7 @@ FROM
 
 SELECT
 	`t`.`Id` + 1,
-	Concat(`t`.`ValueStr`, 1)
+	Concat(`t`.`ValueStr`, '1')
 FROM
 	`DestinationTable` `t`
 

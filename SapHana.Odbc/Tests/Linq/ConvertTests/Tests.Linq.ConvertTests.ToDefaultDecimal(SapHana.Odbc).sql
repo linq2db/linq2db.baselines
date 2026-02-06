@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	CAST("t"."MoneyValue" * 1000 AS Decimal(38, 10))
+	"t"."MoneyValue" * 1000
 FROM
 	"LinqDataTypes" "t"
 

@@ -1,6 +1,8 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
+DECLARE @ValueStr NVarChar(3) -- String
+SET     @ValueStr = '100'
 
 INSERT INTO [DestinationTable]
 (
@@ -11,7 +13,7 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || CAST(@param AS NVarChar(11))
+	[s].[ValueStr] || @ValueStr
 FROM
 	[TableWithData] [s]
 WHERE
@@ -24,11 +26,13 @@ RETURNING
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
+DECLARE @ValueStr NVarChar(3) -- String
+SET     @ValueStr = '100'
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || CAST(@param AS NVarChar(11))
+	[s].[ValueStr] || @ValueStr
 FROM
 	[TableWithData] [s]
 WHERE

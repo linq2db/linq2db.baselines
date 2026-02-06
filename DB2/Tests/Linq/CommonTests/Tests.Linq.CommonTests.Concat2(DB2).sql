@@ -5,5 +5,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."FirstName" || ' ' || RTrim(Char(1)) = 'John 1'
+	("p"."FirstName" || ' 1') = 'John 1'
 

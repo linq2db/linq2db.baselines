@@ -12,7 +12,7 @@ DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT TOP (1)
-	CAST(@value AS Real) as [ServerConvert]
+	@value as [ServerConvert]
 FROM
 	[LinqDataTypes] [t1]
 
@@ -48,7 +48,7 @@ DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
 
 SELECT TOP (1)
-	CAST(@value AS Float) as [ServerConvert]
+	@value as [ServerConvert]
 FROM
 	[LinqDataTypes] [t1]
 

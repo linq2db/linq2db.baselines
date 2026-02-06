@@ -29,7 +29,7 @@ AS
 		r."Level_1" + 1,
 		t1."Id",
 		t1."ParentId",
-		r."Label" || CAST('/' AS VarChar(4000)) || t1."Label",
+		r."Label" || '/' || t1."Label",
 		t1."Id",
 		t1."Label",
 		t1."ParentId"
