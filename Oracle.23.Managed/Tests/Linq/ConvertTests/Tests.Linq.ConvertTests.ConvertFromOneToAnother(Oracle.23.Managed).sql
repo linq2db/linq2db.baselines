@@ -13,7 +13,7 @@ DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
 SELECT
-	CAST(:value AS Real) as "ServerConvert"
+	:value as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY
@@ -53,7 +53,7 @@ DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 
 SELECT
-	CAST(:value AS Float) as "ServerConvert"
+	:value as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
 FETCH NEXT 1 ROWS ONLY

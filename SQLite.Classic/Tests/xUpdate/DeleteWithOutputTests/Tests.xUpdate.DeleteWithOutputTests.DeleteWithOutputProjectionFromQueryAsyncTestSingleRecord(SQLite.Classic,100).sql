@@ -17,5 +17,5 @@ WHERE
 	[TableWithData].[Id] = 3
 RETURNING
 	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || CAST(1 AS NVarChar(11))
+	[TableWithData].[ValueStr] || '1'
 
