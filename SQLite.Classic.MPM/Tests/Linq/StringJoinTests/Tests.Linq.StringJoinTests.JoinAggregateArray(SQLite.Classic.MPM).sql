@@ -4,59 +4,49 @@ SELECT
 	Coalesce([t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || ', ' || Coalesce([t].[VarcharValue], '') || ', ' || Coalesce([t].[NVarcharValue], ''),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t3].[AggregatedNotNullFilteredDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[AggregatedNotNullFilteredDistinct], ''), ', '), '')
 		FROM
 			(
-				SELECT
-					[t2].[AggregatedNotNullFilteredDistinct]
+				SELECT DISTINCT
+					[t1].[item] as [AggregatedNotNullFilteredDistinct]
 				FROM
 					(
-						SELECT DISTINCT
-							[t1].[item] as [AggregatedNotNullFilteredDistinct]
-						FROM
-							(
-								SELECT NULL [item] WHERE 1 = 0
-								UNION ALL
-								VALUES
-									([t].[NotNullableValue]), ([t].[NotNullableValue]),
-									([t].[NotNullableValue]), ([t].[NVarcharValue])
-								) [t1]
-						WHERE
-							[t1].[item] IS NOT NULL
-					) [t2]
+						SELECT NULL [item] WHERE 1 = 0
+						UNION ALL
+						VALUES
+							([t].[NotNullableValue]), ([t].[NotNullableValue]),
+							([t].[NotNullableValue]), ([t].[NVarcharValue])
+						) [t1]
+				WHERE
+					[t1].[item] IS NOT NULL
 				ORDER BY
-					[t2].[AggregatedNotNullFilteredDistinct]
-			) [t3]
+					[t1].[item]
+			) [t2]
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t6].[AggregatedFilteredDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t4].[AggregatedFilteredDistinct], ''), ', '), '')
 		FROM
 			(
-				SELECT
-					[t5].[AggregatedFilteredDistinct]
+				SELECT DISTINCT
+					[t3].[item] as [AggregatedFilteredDistinct]
 				FROM
 					(
-						SELECT DISTINCT
-							[t4].[item] as [AggregatedFilteredDistinct]
-						FROM
-							(
-								SELECT NULL [item] WHERE 1 = 0
-								UNION ALL
-								VALUES
-									([t].[NotNullableValue]), ([t].[NotNullableValue]),
-									([t].[NotNullableValue]), ([t].[NVarcharValue])
-								) [t4]
-						WHERE
-							[t4].[item] <> 'A' OR [t4].[item] IS NULL
-					) [t5]
+						SELECT NULL [item] WHERE 1 = 0
+						UNION ALL
+						VALUES
+							([t].[NotNullableValue]), ([t].[NotNullableValue]),
+							([t].[NotNullableValue]), ([t].[NVarcharValue])
+						) [t3]
+				WHERE
+					[t3].[item] <> 'A' OR [t3].[item] IS NULL
 				ORDER BY
 					CASE
-						WHEN [t5].[AggregatedFilteredDistinct] IS NULL THEN 0
+						WHEN [t3].[item] IS NULL THEN 0
 						ELSE 1
 					END,
-					[t5].[AggregatedFilteredDistinct]
-			) [t6]
+					[t3].[item]
+			) [t4]
 	)
 FROM
 	[SampleClass] [t]
