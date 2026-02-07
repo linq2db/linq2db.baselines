@@ -2,24 +2,36 @@
 
 SELECT
 	(
-		SELECT FIRST 1 DISTINCT
-			"a_Children"."ParentID"
+		SELECT FIRST 1
+			"t1"."ParentID"
 		FROM
-			"Child" "a_Children"
-		WHERE
-			"p"."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" > 0
+			(
+				SELECT DISTINCT
+					"a_Children"."ParentID",
+					"a_Children"."ChildID"
+				FROM
+					"Child" "a_Children"
+				WHERE
+					"p"."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" > 0
+			) "t1"
 		ORDER BY
-			"a_Children"."ChildID"
+			"t1"."ChildID"
 	),
 	(
-		SELECT FIRST 1 DISTINCT
-			"a_Children_1"."ChildID"
+		SELECT FIRST 1
+			"t2"."ChildID"
 		FROM
-			"Child" "a_Children_1"
-		WHERE
-			"p"."ParentID" = "a_Children_1"."ParentID" AND "a_Children_1"."ParentID" > 0
+			(
+				SELECT DISTINCT
+					"a_Children_1"."ParentID",
+					"a_Children_1"."ChildID"
+				FROM
+					"Child" "a_Children_1"
+				WHERE
+					"p"."ParentID" = "a_Children_1"."ParentID" AND "a_Children_1"."ParentID" > 0
+			) "t2"
 		ORDER BY
-			"a_Children_1"."ChildID"
+			"t2"."ChildID"
 	)
 FROM
 	"Parent" "p"
