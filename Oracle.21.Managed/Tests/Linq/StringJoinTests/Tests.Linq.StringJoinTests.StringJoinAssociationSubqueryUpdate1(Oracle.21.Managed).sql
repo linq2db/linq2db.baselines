@@ -8,22 +8,17 @@ SET
 			t1."Result_1",
 			t1."Result_1"
 		FROM
-			(
-				SELECT
-					(
-						SELECT
-							LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
-						FROM
-							"SampleClass" a_Children
-						WHERE
-							t_1."Id" = a_Children."Id"
-					) as "Result_1",
-					t_1.PK
-				FROM
-					"SampleClass" t_1
-			) t1
+			"SampleClass" t_1
+				OUTER APPLY (
+					SELECT
+						LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue") as "Result_1"
+					FROM
+						"SampleClass" a_Children
+					WHERE
+						t_1."Id" = a_Children."Id"
+				) t1
 		WHERE
-			"SampleClass".PK = t1.PK
+			"SampleClass".PK = t_1.PK
 	)
 WHERE
 	EXISTS(
