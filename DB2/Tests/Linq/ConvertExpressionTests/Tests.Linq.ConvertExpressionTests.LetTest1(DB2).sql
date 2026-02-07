@@ -1,16 +1,25 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."cond"
+	(
+		SELECT
+			"a_Children"."ParentID"
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"p"."ParentID" = "a_Children"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" "p"
-		LEFT JOIN (
-			SELECT
-				"a_Children"."ParentID" as "cond",
-				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentID" ORDER BY "a_Children"."ParentID") as "rn"
-			FROM
-				"Child" "a_Children"
-		) "t1" ON "p"."ParentID" = "t1"."cond" AND "t1"."rn" = 1
 WHERE
-	"t1"."cond" IS NOT NULL
+	(
+		SELECT
+			"a_Children"."ParentID"
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"p"."ParentID" = "a_Children"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
+	) IS NOT NULL
 
