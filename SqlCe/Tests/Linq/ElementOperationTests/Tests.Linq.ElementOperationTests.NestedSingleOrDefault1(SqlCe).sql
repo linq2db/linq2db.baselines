@@ -4,10 +4,12 @@ SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT DISTINCT
 				[a_Children].[ParentID]
 			FROM
 				[Child] [a_Children]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 
