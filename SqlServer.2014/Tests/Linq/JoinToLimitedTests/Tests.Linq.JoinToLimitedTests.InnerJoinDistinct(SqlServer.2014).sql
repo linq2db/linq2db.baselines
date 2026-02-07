@@ -7,13 +7,11 @@ SELECT
 	[c_2].[ChildID]
 FROM
 	[Parent] [o]
-		CROSS APPLY (
+		INNER JOIN (
 			SELECT DISTINCT
 				[c_1].[ParentID],
 				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
-			WHERE
-				[o].[ParentID] = [c_1].[ParentID]
-		) [c_2]
+		) [c_2] ON [o].[ParentID] = [c_2].[ParentID]
 
