@@ -2,7 +2,7 @@
 
 SELECT
 	m_1.Key_1,
-	d_1.NullableValue
+	d.NullableValue
 FROM
 	(
 		SELECT DISTINCT
@@ -10,24 +10,19 @@ FROM
 		FROM
 			SampleClass g_1
 	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NullableValue,
-				d.Id
-			FROM
-				SampleClass d
-			WHERE
-				d.NullableValue IS NOT NULL
-		) d_1 ON m_1.Key_1 = d_1.Id
+		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
+WHERE
+	d.NullableValue IS NOT NULL
 ORDER BY
-	m_1.Key_1,
-	d_1.NullableValue
+	d.NullableValue,
+	d.Id,
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
 SELECT
 	m_1.Key_1,
-	d_1.c1
+	d.NullableValue
 FROM
 	(
 		SELECT DISTINCT
@@ -35,16 +30,10 @@ FROM
 		FROM
 			SampleClass g_1
 	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				Nvl(d.NullableValue, '') as c1,
-				d.Id
-			FROM
-				SampleClass d
-		) d_1 ON m_1.Key_1 = d_1.Id
+		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
 ORDER BY
-	m_1.Key_1,
-	d_1.c1
+	Nvl(d.NullableValue, ''),
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
