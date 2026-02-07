@@ -21,3 +21,24 @@ FROM
 				[g_2].[Id] = [t1].[Id]
 		) [t2]
 
+-- SqlServer.2014.MS SqlServer.2014
+
+SELECT
+	[t1].[Id],
+	[t1].[Name],
+	[t1].[ReferenceId],
+	[a_Reference].[Id],
+	[a_Reference].[Name]
+FROM
+	[TestTable] [t1]
+		INNER JOIN [Reference] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+
+-- SqlServer.2014.MS SqlServer.2014
+
+SELECT
+	[t1].[Id],
+	[t1].[Name],
+	[t1].[ReferenceId]
+FROM
+	[TestTable] [t1]
+
