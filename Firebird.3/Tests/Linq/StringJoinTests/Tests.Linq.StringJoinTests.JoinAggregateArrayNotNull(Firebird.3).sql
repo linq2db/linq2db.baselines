@@ -4,30 +4,25 @@ SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", '') FROM 3),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NotNullDistinctValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."NotNullDistinctValue", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t2"."NotNullDistinctValue"
+				SELECT DISTINCT
+					"t1"."item" as "NotNullDistinctValue"
 				FROM
 					(
-						SELECT DISTINCT
-							"t1"."item" as "NotNullDistinctValue"
-						FROM
-							(
-								SELECT "t"."NullableValue" AS "item" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."VarcharValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
-						WHERE
-							"t1"."item" IS NOT NULL
-					) "t2"
+						SELECT "t"."NullableValue" AS "item" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."VarcharValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
+				WHERE
+					"t1"."item" IS NOT NULL
 				ORDER BY
-					"t2"."NotNullDistinctValue"
-			) "t3"
+					"t1"."item"
+			) "t2"
 	)
 FROM
 	"SampleClass" "t"
