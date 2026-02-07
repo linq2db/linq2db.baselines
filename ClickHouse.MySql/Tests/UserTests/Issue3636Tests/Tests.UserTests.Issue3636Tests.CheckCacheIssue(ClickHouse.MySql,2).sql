@@ -9,7 +9,7 @@ SELECT
 	order_2.id2
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			x.id as Key_1
 		FROM
 			T1 x
@@ -27,7 +27,7 @@ WHERE
 
 -- ClickHouse.MySql ClickHouse
 
-SELECT
+SELECT DISTINCT
 	x.id
 FROM
 	T1 x
