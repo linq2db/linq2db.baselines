@@ -44,21 +44,15 @@ ORDER BY
 
 -- ClickHouse.Octonica ClickHouse
 
-SELECT
-	t1.ChildID,
-	t1.ParentID
+SELECT DISTINCT
+	c4.ChildID,
+	c4.ParentID
 FROM
-	(
-		SELECT DISTINCT
-			c4.ChildID as ChildID,
-			c4.ParentID as ParentID
-		FROM
-			Child c_1
-				INNER JOIN Child c4 ON c4.ParentID = c_1.ParentID
-		WHERE
-			c_1.ParentID > 1 AND c4.ParentID % 2 = 0
-	) t1
+	Child c_1
+		INNER JOIN Child c4 ON c4.ParentID = c_1.ParentID
+WHERE
+	c_1.ParentID > 1 AND c4.ParentID % 2 = 0
 ORDER BY
-	t1.ChildID,
-	t1.ParentID
+	c4.ChildID,
+	c4.ParentID
 
