@@ -22,3 +22,24 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Name",
+	t1."ReferenceId",
+	"a_Reference"."Id",
+	"a_Reference"."Name"
+FROM
+	"TestTable" t1
+		INNER JOIN "Reference" "a_Reference" ON t1."ReferenceId" = "a_Reference"."Id"
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Name",
+	t1."ReferenceId"
+FROM
+	"TestTable" t1
+
