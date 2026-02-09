@@ -1,6 +1,5 @@
 ﻿-- Firebird.5 Firebird4
 
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
