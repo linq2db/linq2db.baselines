@@ -2,7 +2,7 @@
 
 SELECT
 	m_1.Key_1,
-	d_1.NullableValue
+	d.NullableValue
 FROM
 	(
 		SELECT DISTINCT
@@ -10,65 +10,15 @@ FROM
 		FROM
 			SampleClass g_1
 	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NullableValue,
-				d.Id
-			FROM
-				SampleClass d
-		) d_1 ON m_1.Key_1 = d_1.Id
-
--- Informix.DB2 Informix
-
-SELECT
-	m_1.Key_1,
-	d_1.NullableValue
-FROM
-	(
-		SELECT DISTINCT
-			g_1.Id as Key_1
-		FROM
-			SampleClass g_1
-	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NullableValue,
-				d.Id
-			FROM
-				SampleClass d
-			WHERE
-				d.NullableValue IS NOT NULL
-		) d_1 ON m_1.Key_1 = d_1.Id
-
--- Informix.DB2 Informix
-
-SELECT
-	m_1.Key_1,
-	d_1.NullableValue
-FROM
-	(
-		SELECT DISTINCT
-			g_1.Id as Key_1
-		FROM
-			SampleClass g_1
-	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NullableValue,
-				d.Id
-			FROM
-				SampleClass d
-			WHERE
-				d.NullableValue IS NOT NULL
-		) d_1 ON m_1.Key_1 = d_1.Id
+		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
 ORDER BY
-	d_1.NullableValue DESC
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
 SELECT
 	m_1.Key_1,
-	d_1.NotNullableValue
+	d.NullableValue
 FROM
 	(
 		SELECT DISTINCT
@@ -76,44 +26,34 @@ FROM
 		FROM
 			SampleClass g_1
 	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NotNullableValue,
-				d.Id
-			FROM
-				SampleClass d
-		) d_1 ON m_1.Key_1 = d_1.Id
-
--- Informix.DB2 Informix
-
-SELECT
-	m_1.Key_1,
-	d_1.NotNullableValue
-FROM
-	(
-		SELECT DISTINCT
-			g_1.Id as Key_1
-		FROM
-			SampleClass g_1
-	) m_1
-		INNER JOIN (
-			SELECT DISTINCT
-				d.NotNullableValue,
-				d.Id
-			FROM
-				SampleClass d
-		) d_1 ON m_1.Key_1 = d_1.Id
+		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
+WHERE
+	d.NullableValue IS NOT NULL
 ORDER BY
-	d_1.NotNullableValue DESC
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
 SELECT
+	m_1.Key_1,
+	d.NotNullableValue
+FROM
+	(
+		SELECT DISTINCT
+			g_1.Id as Key_1
+		FROM
+			SampleClass g_1
+	) m_1
+		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
+ORDER BY
+	m_1.Key_1
+
+-- Informix.DB2 Informix
+
+SELECT DISTINCT
 	g_1.Id
 FROM
 	SampleClass g_1
-GROUP BY
-	g_1.Id
 ORDER BY
 	g_1.Id
 

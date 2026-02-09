@@ -7,17 +7,7 @@ SELECT
 				*
 			FROM
 				"Parent" p
-					OUTER APPLY (
-						SELECT
-							1 as "c1"
-						FROM
-							"Child" c_1
-						WHERE
-							c_1."ParentID" = p."ParentID"
-						FETCH NEXT 1 ROWS ONLY
-					) t1
-		)
-			THEN 1
+		) THEN 1
 		ELSE 0
 	END
 FROM SYS.DUAL

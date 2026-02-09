@@ -3,14 +3,7 @@
 SELECT
 	[t2].[ReferenceName]
 FROM
-	(
-		SELECT
-			[g_1].[Id]
-		FROM
-			[TestTable] [g_1]
-		GROUP BY
-			[g_1].[Id]
-	) [g_2]
+	[TestTable] [g_1]
 		INNER JOIN (
 			SELECT
 				[a_Reference].[Name] as [ReferenceName],
@@ -19,7 +12,7 @@ FROM
 			FROM
 				[TestTable] [t1]
 					INNER JOIN [Reference] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
-		) [t2] ON [g_2].[Id] = [t2].[Id] AND [t2].[rn] <= 1
+		) [t2] ON [g_1].[Id] = [t2].[Id] AND [t2].[rn] = 1
 
 -- SQLite.MS SQLite
 

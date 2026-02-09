@@ -21,5 +21,5 @@ FROM
 				a_Association."Id"
 			FROM
 				"Issue4723Table2" a_Association
-		) t2 ON t2."Id" = t3."Id" AND t2."rn" <= 1
+		) t2 ON t2."Id" = t3."Id" AND t2."rn" = 1
 

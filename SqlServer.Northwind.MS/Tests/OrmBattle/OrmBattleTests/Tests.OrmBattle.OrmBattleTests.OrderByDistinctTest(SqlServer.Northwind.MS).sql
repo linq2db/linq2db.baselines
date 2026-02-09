@@ -1,14 +1,9 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
 
-SELECT
-	[c_2].[City]
+SELECT DISTINCT
+	[c_1].[City]
 FROM
-	(
-		SELECT DISTINCT
-			[c_1].[City]
-		FROM
-			[Customers] [c_1]
-	) [c_2]
+	[Customers] [c_1]
 ORDER BY
-	[c_2].[City]
+	[c_1].[City]
 

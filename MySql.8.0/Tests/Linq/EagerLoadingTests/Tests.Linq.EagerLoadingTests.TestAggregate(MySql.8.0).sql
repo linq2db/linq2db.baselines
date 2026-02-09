@@ -3,45 +3,35 @@
 SELECT
 	(
 		SELECT
-			SUM(`t2`.`Sum_1`)
+			SUM(`t1`.`Sum_1`)
 		FROM
 			(
-				SELECT
-					`t1`.`Sum_1`
+				SELECT DISTINCT
+					`a_Details`.`DetailId` as `Sum_1`
 				FROM
-					(
-						SELECT DISTINCT
-							`a_Details`.`DetailId` as `Sum_1`
-						FROM
-							`DetailClass` `a_Details`
-						WHERE
-							`m_1`.`Id1` = `a_Details`.`MasterId`
-					) `t1`
+					`DetailClass` `a_Details`
+				WHERE
+					`m_1`.`Id1` = `a_Details`.`MasterId`
 				ORDER BY
-					`t1`.`Sum_1`
+					`a_Details`.`DetailId`
 				LIMIT 1, 5
-			) `t2`
+			) `t1`
 	),
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			(
-				SELECT
-					1 as `c1`
+				SELECT DISTINCT
+					`a_Details_1`.`DetailValue` as `Count_1`
 				FROM
-					(
-						SELECT DISTINCT
-							`a_Details_1`.`DetailValue` as `Count_1`
-						FROM
-							`DetailClass` `a_Details_1`
-						WHERE
-							`m_1`.`Id1` = `a_Details_1`.`MasterId`
-					) `t3`
+					`DetailClass` `a_Details_1`
+				WHERE
+					`m_1`.`Id1` = `a_Details_1`.`MasterId`
 				ORDER BY
-					`t3`.`Count_1`
+					`a_Details_1`.`DetailValue`
 				LIMIT 1, 2
-			) `t4`
+			) `t2`
 	)
 FROM
 	`MasterClass` `m_1`

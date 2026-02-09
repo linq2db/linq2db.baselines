@@ -6,14 +6,5 @@ SELECT
 			*
 		FROM
 			`Parent` `p`
-				LEFT JOIN LATERAL (
-					SELECT
-						1 as `c1`
-					FROM
-						`Child` `c_1`
-					WHERE
-						`c_1`.`ParentID` = `p`.`ParentID`
-					LIMIT 1
-				) `t1` ON 1=1
 	) as `c1`
 

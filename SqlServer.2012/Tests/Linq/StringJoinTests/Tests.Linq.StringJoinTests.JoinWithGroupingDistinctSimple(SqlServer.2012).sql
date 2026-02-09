@@ -18,6 +18,9 @@ FROM
 			WHERE
 				[m_1].[Key_1] = [d].[Id] AND [d].[NullableValue] IS NOT NULL
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1],
+	[d_1].[NullableValue]
 
 -- SqlServer.2012
 
@@ -39,15 +42,16 @@ FROM
 			WHERE
 				[m_1].[Key_1] = [d].[Id]
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1],
+	[d_1].[c1]
 
 -- SqlServer.2012
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

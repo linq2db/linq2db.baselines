@@ -6,27 +6,22 @@ SET     @take = 50
 DECLARE @skip_1 Int -- Int32
 SET     @skip_1 = 10
 
-SELECT
-	[t2].[RequiredDate]
+SELECT DISTINCT
+	[t1].[RequiredDate]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[RequiredDate]
+		SELECT
+			[o].[RequiredDate],
+			[o].[OrderDate]
 		FROM
-			(
-				SELECT
-					[o].[RequiredDate],
-					[o].[OrderDate]
-				FROM
-					[Orders] [o]
-				ORDER BY
-					[o].[OrderDate]
-				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-			) [t1]
-		WHERE
-			[t1].[OrderDate] IS NOT NULL
-	) [t2]
+			[Orders] [o]
+		ORDER BY
+			[o].[OrderDate]
+		OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+	) [t1]
+WHERE
+	[t1].[OrderDate] IS NOT NULL
 ORDER BY
-	[t2].[RequiredDate] DESC
+	[t1].[RequiredDate] DESC
 OFFSET @skip_1 ROWS
 

@@ -12,7 +12,7 @@ FROM
 				a_Association.Id as Id
 			FROM
 				Issue4723Table2 a_Association
-		) t1 ON t1.Id = x.Id AND t1.rn <= 1
+		) t1 ON t1.Id = x.Id AND t1.rn = 1
 WHERE
 	t1.Association IS NOT NULL AND t1.Association <> 'unknown'
 

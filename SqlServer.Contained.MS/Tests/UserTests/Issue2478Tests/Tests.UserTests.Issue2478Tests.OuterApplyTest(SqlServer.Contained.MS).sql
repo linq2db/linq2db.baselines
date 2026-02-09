@@ -1,17 +1,18 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ParentID],
-	(
-		SELECT
-			COUNT(*)
-		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ParentID] = [t1].[ParentID]
-	)
+	[p].[ParentID],
+	IIF([c_2].[cond] IS NULL, 0, [c_2].[cond])
 FROM
-	[Parent] [t1]
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [cond]
+			FROM
+				[Child] [c_1]
+			WHERE
+				[c_1].[ParentID] = [p].[ParentID]
+		) [c_2]
 
 -- SqlServer.Contained.MS SqlServer.2019
 

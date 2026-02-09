@@ -14,5 +14,5 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY c_1.ParentID ORDER BY c_1.ChildID DESC) as rn
 			FROM
 				Child c_1
-		) c_2 ON o.ParentID = c_2.ParentID AND c_2.rn <= 1
+		) c_2 ON o.ParentID = c_2.ParentID AND c_2.rn = 1
 
