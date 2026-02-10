@@ -52,13 +52,14 @@ SELECT
 	[al_group_2].[Id],
 	(
 		SELECT TOP 1
-			[t1].[LastUpdate]
+			IIF([t1].[LastUpdate] IS NULL, [t1].[CreationDate], [t1].[LastUpdate])
 		FROM
 			((
 				SELECT
 					[al_group_3].[AlertCode],
 					[al_group_3].[Id],
-					IIF(MAX([au_1].[TransactionDate]) IS NULL, [al_group_3].[CreationDate], MAX([au_1].[TransactionDate])) as [LastUpdate],
+					[al_group_3].[CreationDate],
+					MAX([au_1].[TransactionDate]) as [LastUpdate],
 					[al_group_3].[AlertKey]
 				FROM
 					[Alert] [al_group_3]
