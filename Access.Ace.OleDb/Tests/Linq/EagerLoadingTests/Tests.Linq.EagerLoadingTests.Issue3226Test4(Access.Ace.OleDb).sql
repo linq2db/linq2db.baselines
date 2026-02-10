@@ -4,17 +4,7 @@ SELECT
 	[m_1].[Id],
 	[d].[Value]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[Id]
-		FROM
-			(
-				SELECT
-					[x].[Id]
-				FROM
-					[Item] [x]
-			) [t1]
-	) [m_1]
+	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])
 
 -- Access.Ace.OleDb AccessOleDb
@@ -27,24 +17,17 @@ FROM
 		SELECT
 			[x].[Id],
 			[x].[Text],
-			IIF((
+			(
 				SELECT
 					SUM([a_Values].[Value])
 				FROM
 					[ItemValue] [a_Values]
 				WHERE
 					[x].[Id] = [a_Values].[ItemId]
-			) IS NULL, 0, (
-				SELECT
-					SUM([a_Values].[Value])
-				FROM
-					[ItemValue] [a_Values]
-				WHERE
-					[x].[Id] = [a_Values].[ItemId]
-			)) as [c1]
+			) as [Sum_1]
 		FROM
 			[Item] [x]
 	) [x_1]
 ORDER BY
-	[x_1].[c1]
+	IIF([x_1].[Sum_1] IS NULL, 0, [x_1].[Sum_1])
 
