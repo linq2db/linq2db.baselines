@@ -1,11 +1,9 @@
 ﻿-- SQLite.Classic SQLite
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- SQLite.Classic SQLite
 

@@ -12,9 +12,6 @@ FROM
 			r."PersonID" as "sort_1"
 		FROM
 			"Person" r
-		GROUP BY
-			r."PersonID",
-			r."PersonID"
 		ORDER BY
 			r."PersonID"
 	) t1

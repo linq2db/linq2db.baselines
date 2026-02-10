@@ -1,52 +1,42 @@
 ﻿-- SqlCe
 
 SELECT
-	[t3].[Sum_1],
-	[t6].[Count_1]
+	[t2].[Sum_1],
+	[t4].[Count_1]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				SUM([t2].[Sum_1]) as [Sum_1]
+				SUM([t1].[Sum_1]) as [Sum_1]
 			FROM
 				(
-					SELECT
-						[t1].[Sum_1]
+					SELECT DISTINCT
+						[a_Details].[DetailId] as [Sum_1]
 					FROM
-						(
-							SELECT DISTINCT
-								[a_Details].[DetailId] as [Sum_1]
-							FROM
-								[DetailClass] [a_Details]
-							WHERE
-								[m_1].[Id1] = [a_Details].[MasterId]
-						) [t1]
+						[DetailClass] [a_Details]
+					WHERE
+						[m_1].[Id1] = [a_Details].[MasterId]
 					ORDER BY
-						[t1].[Sum_1]
+						[a_Details].[DetailId]
 					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
-				) [t2]
-		) [t3]
+				) [t1]
+		) [t2]
 		OUTER APPLY (
 			SELECT
 				COUNT(*) as [Count_1]
 			FROM
 				(
-					SELECT
-						*
+					SELECT DISTINCT
+						[a_Details_1].[DetailValue] as [Count_1]
 					FROM
-						(
-							SELECT DISTINCT
-								[a_Details_1].[DetailValue] as [Count_1]
-							FROM
-								[DetailClass] [a_Details_1]
-							WHERE
-								[m_1].[Id1] = [a_Details_1].[MasterId]
-						) [t4]
+						[DetailClass] [a_Details_1]
+					WHERE
+						[m_1].[Id1] = [a_Details_1].[MasterId]
 					ORDER BY
-						[t4].[Count_1]
+						[a_Details_1].[DetailValue]
 					OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
-				) [t5]
-		) [t6]
+				) [t3]
+		) [t4]
 
 -- SqlCe
 

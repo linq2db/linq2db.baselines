@@ -1,11 +1,9 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-SELECT
+SELECT DISTINCT
 	pmp."ParentID"
 FROM
 	"Child" pmp
-GROUP BY
-	pmp."ParentID"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 

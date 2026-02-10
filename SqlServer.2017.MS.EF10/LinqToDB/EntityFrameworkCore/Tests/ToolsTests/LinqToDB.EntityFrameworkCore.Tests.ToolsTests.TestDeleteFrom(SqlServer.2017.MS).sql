@@ -6,7 +6,7 @@ DELETE [x]
 FROM
 	(
 		SELECT TOP (@take)
-			[e].[CustomerID] as [CustomerId]
+			1 as [c1]
 		FROM
 			[Customers] [e]
 		WHERE

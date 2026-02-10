@@ -28,7 +28,8 @@ FROM
 WHERE
 	[d_1].[IsDeleted] = 0
 ORDER BY
-	[d_1].[TagId]
+	[d_1].[TagId],
+	[m_1].[Id]
 
 -- SqlServer.2025
 DECLARE @blogId Int -- Int32

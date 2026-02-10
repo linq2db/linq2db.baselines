@@ -52,15 +52,13 @@ SELECT
 	t1.ImageFullUrl
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			sG.Name as Name
 		FROM
 			Stone sG
 		WHERE
 			sG.Enabled = true AND NOT startsWith(sG.Name, 'level - ') AND
 			lengthUTF8(sG.ImageFullUrl) > 0
-		GROUP BY
-			sG.Name
 	) sG_1
 		INNER JOIN (
 			SELECT
@@ -74,5 +72,5 @@ FROM
 			WHERE
 				s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
 				lengthUTF8(s.ImageFullUrl) > 0
-		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
+		) t1 ON sG_1.Name = t1.Name AND t1.rn = 1
 

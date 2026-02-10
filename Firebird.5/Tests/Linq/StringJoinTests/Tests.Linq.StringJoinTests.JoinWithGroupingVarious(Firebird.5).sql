@@ -6,44 +6,34 @@ SELECT
 	"t1"."NullableDistinctNotNullDistinct",
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NullableDistinctNotNullDistinctOrdered", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."NullableDistinctNotNullDistinctOrdered", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t2"."NullableDistinctNotNullDistinctOrdered"
+				SELECT DISTINCT
+					"t"."NullableValue" as "NullableDistinctNotNullDistinctOrdered"
 				FROM
-					(
-						SELECT DISTINCT
-							"t"."NullableValue" as "NullableDistinctNotNullDistinctOrdered"
-						FROM
-							"SampleClass" "t"
-						WHERE
-							"t1"."Key_1" = "t"."Id" AND "t"."NullableValue" IS NOT NULL
-					) "t2"
+					"SampleClass" "t"
+				WHERE
+					"t1"."Key_1" = "t"."Id" AND "t"."NullableValue" IS NOT NULL
 				ORDER BY
-					"t2"."NullableDistinctNotNullDistinctOrdered" DESC
-			) "t3"
+					"t"."NullableValue" DESC
+			) "t2"
 	),
 	"t1"."NotNullableDistinct",
 	(
 		SELECT
-			Coalesce(LIST("t5"."NotNullableDistinctOrdered", ', '), '')
+			Coalesce(LIST("t3"."NotNullableDistinctOrdered", ', '), '')
 		FROM
 			(
-				SELECT
-					"t4"."NotNullableDistinctOrdered"
+				SELECT DISTINCT
+					"t_1"."NotNullableValue" as "NotNullableDistinctOrdered"
 				FROM
-					(
-						SELECT DISTINCT
-							"t_1"."NotNullableValue" as "NotNullableDistinctOrdered"
-						FROM
-							"SampleClass" "t_1"
-						WHERE
-							"t1"."Key_1" = "t_1"."Id"
-					) "t4"
+					"SampleClass" "t_1"
+				WHERE
+					"t1"."Key_1" = "t_1"."Id"
 				ORDER BY
-					"t4"."NotNullableDistinctOrdered" DESC
-			) "t5"
+					"t_1"."NotNullableValue" DESC
+			) "t3"
 	)
 FROM
 	(

@@ -2,7 +2,7 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-SELECT
+SELECT DISTINCT
 	"g_1"."ParentID"
 FROM
 	"Child" "g_1"
@@ -15,14 +15,12 @@ WHERE
 		WHERE
 			"t"."ParentID" = @id AND "t"."ParentID" = "g_1"."ParentID"
 	)
-GROUP BY
-	"g_1"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 2
 
-SELECT
+SELECT DISTINCT
 	"g_1"."ParentID"
 FROM
 	"Child" "g_1"
@@ -35,6 +33,4 @@ WHERE
 		WHERE
 			"t"."ParentID" = @id AND "t"."ParentID" = "g_1"."ParentID"
 	)
-GROUP BY
-	"g_1"."ParentID"
 

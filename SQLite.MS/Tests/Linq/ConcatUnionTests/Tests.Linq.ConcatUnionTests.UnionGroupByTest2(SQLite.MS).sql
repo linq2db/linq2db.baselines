@@ -19,15 +19,12 @@ SELECT
 	CAST(1 AS INTEGER)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			CAST(strftime('%m', [t3].[DateTimeValue]) AS INTEGER) as [month_1],
 			CAST(strftime('%Y', [t3].[DateTimeValue]) AS INTEGER) as [year_1]
 		FROM
 			[LinqDataTypes] [t3]
 	) [t4]
-GROUP BY
-	[t4].[month_1],
-	[t4].[year_1]
 UNION
 SELECT
 	CAST(strftime('%Y', [t5].[DateTimeValue]) AS INTEGER),

@@ -21,7 +21,7 @@ DELETE
 				INNER JOIN "cteQueryable" cte ON item_2."ParentItemId" = cte."Id1"
 	)
 	SELECT
-		*
+		1
 	FROM
 		"Issue4968Item" i
 	WHERE

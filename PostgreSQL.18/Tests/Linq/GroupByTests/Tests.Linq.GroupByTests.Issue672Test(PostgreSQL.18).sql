@@ -70,15 +70,13 @@ SELECT
 	t1."ImageFullUrl"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"sG"."Name"
 		FROM
 			"Stone" "sG"
 		WHERE
 			"sG"."Enabled" = True AND "sG"."Name" NOT LIKE 'level - %' ESCAPE '~' AND
 			Length("sG"."ImageFullUrl") > 0
-		GROUP BY
-			"sG"."Name"
 	) "sG_1"
 		INNER JOIN LATERAL (
 			SELECT

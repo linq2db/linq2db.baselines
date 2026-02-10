@@ -155,5 +155,5 @@ FROM
 				wp.WarehouseId
 			FROM
 				Issue4717WarehouseProductMapping wp
-		) t1 ON t1.WarehouseId = source.WarehouseId AND t1.rn <= 1
+		) t1 ON t1.WarehouseId = source.WarehouseId AND t1.rn = 1
 

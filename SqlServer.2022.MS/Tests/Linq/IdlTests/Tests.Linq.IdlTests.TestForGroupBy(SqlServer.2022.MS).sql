@@ -18,14 +18,12 @@ WHERE
 
 -- SqlServer.2022.MS SqlServer.2022
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-GROUP BY
-	[x].[ChildID]
 
 -- SqlServer.2022.MS SqlServer.2022
 
@@ -47,12 +45,10 @@ WHERE
 
 -- SqlServer.2022.MS SqlServer.2022
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (3)
-GROUP BY
-	[x].[ChildID]
 

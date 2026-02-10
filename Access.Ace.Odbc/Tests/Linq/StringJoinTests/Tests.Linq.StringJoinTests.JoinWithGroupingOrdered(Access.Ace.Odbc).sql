@@ -13,7 +13,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
@@ -32,7 +33,8 @@ WHERE
 	[d].[NullableValue] IS NOT NULL AND [d].[NullableValue] <> ''
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
@@ -49,7 +51,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
@@ -66,7 +69,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
@@ -83,7 +87,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON ([m_1].[Key_1] = [d].[Id])
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
@@ -101,16 +106,15 @@ FROM
 ORDER BY
 	IIF([d].[NullableValue] IS NULL, 0, 1),
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue]
+	[d].[NullableValue],
+	[m_1].[Key_1]
 
 -- Access.Ace.Odbc AccessODBC
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

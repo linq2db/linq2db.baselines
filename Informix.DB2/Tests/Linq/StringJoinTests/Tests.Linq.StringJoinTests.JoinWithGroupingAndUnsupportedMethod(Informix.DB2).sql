@@ -14,10 +14,14 @@ FROM
 			SELECT
 				d.NullableValue,
 				ROW_NUMBER() OVER (PARTITION BY d.Id ORDER BY d.NotNullableValue) as rn,
-				d.Id
+				d.Id,
+				d.NotNullableValue
 			FROM
 				SampleClass d
 		) d_1 ON m_1.Key_1 = d_1.Id AND d_1.rn <= 2
+ORDER BY
+	m_1.Key_1,
+	d_1.NotNullableValue
 
 -- Informix.DB2 Informix
 
@@ -39,15 +43,16 @@ FROM
 			FROM
 				SampleClass d
 		) d_1 ON m_1.Key_1 = d_1.Id AND d_1.rn <= 2
+ORDER BY
+	m_1.Key_1,
+	d_1.NotNullableValue
 
 -- Informix.DB2 Informix
 
-SELECT
+SELECT DISTINCT
 	g_1.Id
 FROM
 	SampleClass g_1
-GROUP BY
-	g_1.Id
 ORDER BY
 	g_1.Id
 

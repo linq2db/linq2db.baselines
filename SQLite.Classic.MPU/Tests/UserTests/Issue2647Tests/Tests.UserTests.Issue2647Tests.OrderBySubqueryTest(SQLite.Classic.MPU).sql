@@ -1,26 +1,27 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[Id],
-	[t1].[LanguageId],
-	[t1].[Text]
+	[t2].[Id],
+	[t2].[LanguageId],
+	[t2].[Text]
 FROM
-	[Issue2647Table] [t1]
+	(
+		SELECT
+			[t1].[Id],
+			[t1].[LanguageId],
+			[t1].[Text],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Issue2647Table] [ss2]
+				WHERE
+					[ss2].[Id] = [t1].[Id]
+			) as [Count_1]
+		FROM
+			[Issue2647Table] [t1]
+	) [t2]
 ORDER BY
-	[t1].[LanguageId],
-	((
-		SELECT
-			COUNT(*)
-		FROM
-			[Issue2647Table] [ss2]
-		WHERE
-			[ss2].[Id] = [t1].[Id]
-	) * 10000) / (
-		SELECT
-			COUNT(*)
-		FROM
-			[Issue2647Table] [ss2]
-		WHERE
-			[ss2].[Id] = [t1].[Id]
-	) DESC
+	[t2].[LanguageId],
+	([t2].[Count_1] * 10000) / [t2].[Count_1] DESC
 

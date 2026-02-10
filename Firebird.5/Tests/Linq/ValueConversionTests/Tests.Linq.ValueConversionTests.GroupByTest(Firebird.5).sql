@@ -29,6 +29,4 @@ FROM
 	"ValueConversion" "g_1"
 WHERE
 	@testedList = "g_1"."Value2"
-GROUP BY
-	"g_1"."Id"
 

@@ -14,12 +14,10 @@ SELECT
 	[c_1].[Fax]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[t1].[City]
 		FROM
 			[Customers] [t1]
-		GROUP BY
-			[t1].[City]
 	) [g_1]
 		INNER JOIN [Customers] [c_1] ON [g_1].[City] = [c_1].[City] OR [g_1].[City] IS NULL AND [c_1].[City] IS NULL
 

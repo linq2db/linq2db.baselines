@@ -184,7 +184,7 @@ DELETE [t1]
 FROM
 	(
 		SELECT TOP (@take)
-			*
+			1 as [c1]
 		FROM
 			[Parent] [x]
 		WHERE

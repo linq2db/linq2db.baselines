@@ -18,14 +18,12 @@ WHERE
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-GROUP BY
-	[x].[ChildID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -47,12 +45,10 @@ WHERE
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (3)
-GROUP BY
-	[x].[ChildID]
 

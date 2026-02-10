@@ -1,11 +1,9 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT
+SELECT DISTINCT
 	`pmp`.`ParentID`
 FROM
 	`Child` `pmp`
-GROUP BY
-	`pmp`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 

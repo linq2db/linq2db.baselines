@@ -13,7 +13,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -32,7 +33,8 @@ WHERE
 	[d].[NullableValue] IS NOT NULL AND [d].[NullableValue] <> ''
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -49,7 +51,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -66,7 +69,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -83,7 +87,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -104,16 +109,15 @@ ORDER BY
 		ELSE 1
 	END,
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue]
+	[d].[NullableValue],
+	[m_1].[Key_1]
 
 -- SqlCe
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id] as [Key_1]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

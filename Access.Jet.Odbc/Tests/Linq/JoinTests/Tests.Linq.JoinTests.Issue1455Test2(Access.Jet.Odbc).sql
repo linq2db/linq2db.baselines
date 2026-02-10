@@ -52,13 +52,14 @@ SELECT
 	[al_group_2].[Id],
 	(
 		SELECT TOP 1
-			[t1].[LastUpdate]
+			IIF([t1].[LastUpdate] IS NULL, [t1].[CreationDate], [t1].[LastUpdate])
 		FROM
 			((
 				SELECT
 					[al_group_3].[AlertCode],
 					[al_group_3].[Id],
-					IIF(MAX([au_1].[TransactionDate]) IS NULL, [al_group_3].[CreationDate], MAX([au_1].[TransactionDate])) as [LastUpdate],
+					[al_group_3].[CreationDate],
+					MAX([au_1].[TransactionDate]) as [LastUpdate],
 					[al_group_3].[AlertKey]
 				FROM
 					[Alert] [al_group_3]
@@ -221,28 +222,22 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[al_group_1].[Id]
 		FROM
 			((
-				SELECT
+				SELECT DISTINCT
 					[al_group].[AlertCode],
 					[al_group].[Id],
 					[al_group].[AlertKey]
 				FROM
 					[Alert] [al_group]
 						LEFT JOIN [AuditAlert] [au] ON ([au].[AlertKey] = [al_group].[AlertKey])
-				GROUP BY
-					[al_group].[Id],
-					[al_group].[AlertKey],
-					[al_group].[AlertCode]
 			) [al_group_1]
 				LEFT JOIN [Trade] [trade_1] ON ([al_group_1].[AlertKey] = CStr([trade_1].[DealId])))
 				LEFT JOIN [Nomin] [nomin_1] ON ([al_group_1].[AlertKey] = CStr([nomin_1].[CargoId]))
 		WHERE
 			[nomin_1].[DeliveryCounterParty] LIKE ? OR [trade_1].[CounterParty] LIKE ? OR
 			[al_group_1].[AlertCode] LIKE ?
-		GROUP BY
-			[al_group_1].[Id]
 	) [al_group_2]
 

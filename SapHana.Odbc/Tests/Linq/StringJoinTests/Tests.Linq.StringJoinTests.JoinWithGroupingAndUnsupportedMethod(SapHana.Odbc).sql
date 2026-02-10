@@ -6,12 +6,10 @@ SELECT
 	"t4"."NotNullable"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"g_1"."Id" as "Key_1"
 		FROM
 			"SampleClass" "g_1"
-		GROUP BY
-			"g_1"."Id"
 	) "t5"
 		LEFT JOIN LATERAL (
 			SELECT

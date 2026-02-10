@@ -3,7 +3,7 @@
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 AS "Unused"
-	FROM rdb$database	WHERE 1 = 0
+	FROM rdb$database WHERE 1 = 0
 )
  "Source"
 (

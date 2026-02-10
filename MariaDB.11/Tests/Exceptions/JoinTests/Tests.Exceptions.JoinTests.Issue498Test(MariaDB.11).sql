@@ -8,11 +8,9 @@ FROM
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-SELECT
+SELECT DISTINCT
 	`g_1`.`ParentID`
 FROM
 	`Parent` `g_1`
 		INNER JOIN `Child` `y` ON `g_1`.`ParentID` = `y`.`ParentID`
-GROUP BY
-	`g_1`.`ParentID`
 

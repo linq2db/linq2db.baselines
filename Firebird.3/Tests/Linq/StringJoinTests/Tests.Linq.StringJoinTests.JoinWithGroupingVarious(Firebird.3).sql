@@ -30,27 +30,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t5"."NullableDistinctNotNullDist", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t4"."NullableDistinctNotNullDist", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t4"."NullableDistinctNotNullDist"
+				SELECT DISTINCT
+					"t_2"."NullableValue" as "NullableDistinctNotNullDist"
 				FROM
-					(
-						SELECT DISTINCT
-							"t_2"."NullableValue" as "NullableDistinctNotNullDist"
-						FROM
-							"SampleClass" "t_2"
-						WHERE
-							"t1"."Key_1" = "t_2"."Id" AND "t_2"."NullableValue" IS NOT NULL
-					) "t4"
+					"SampleClass" "t_2"
+				WHERE
+					"t1"."Key_1" = "t_2"."Id" AND "t_2"."NullableValue" IS NOT NULL
 				ORDER BY
-					"t4"."NullableDistinctNotNullDist" DESC
-			) "t5"
+					"t_2"."NullableValue" DESC
+			) "t4"
 	),
 	(
 		SELECT
-			Coalesce(LIST("t6"."NotNullableDistinct", ', '), '')
+			Coalesce(LIST("t5"."NotNullableDistinct", ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
@@ -59,36 +54,29 @@ SELECT
 					"SampleClass" "t_3"
 				WHERE
 					"t1"."Key_1" = "t_3"."Id"
-			) "t6"
+			) "t5"
 	),
 	(
 		SELECT
-			Coalesce(LIST("t8"."NotNullableDistinctOrdered", ', '), '')
+			Coalesce(LIST("t6"."NotNullableDistinctOrdered", ', '), '')
 		FROM
 			(
-				SELECT
-					"t7"."NotNullableDistinctOrdered"
+				SELECT DISTINCT
+					"t_4"."NotNullableValue" as "NotNullableDistinctOrdered"
 				FROM
-					(
-						SELECT DISTINCT
-							"t_4"."NotNullableValue" as "NotNullableDistinctOrdered"
-						FROM
-							"SampleClass" "t_4"
-						WHERE
-							"t1"."Key_1" = "t_4"."Id"
-					) "t7"
+					"SampleClass" "t_4"
+				WHERE
+					"t1"."Key_1" = "t_4"."Id"
 				ORDER BY
-					"t7"."NotNullableDistinctOrdered" DESC
-			) "t8"
+					"t_4"."NotNullableValue" DESC
+			) "t6"
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"g_1"."Id" as "Key_1"
 		FROM
 			"SampleClass" "g_1"
-		GROUP BY
-			"g_1"."Id"
 	) "t1"
 ORDER BY
 	"t1"."Key_1"

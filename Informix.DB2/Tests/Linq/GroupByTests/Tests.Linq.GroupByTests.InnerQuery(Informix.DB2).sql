@@ -4,12 +4,10 @@ SELECT
 	t1.Taxonomy
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			s.PersonID
 		FROM
 			Doctor s
-		GROUP BY
-			s.PersonID
 	) s_2
 		INNER JOIN (
 			SELECT
@@ -18,5 +16,5 @@ FROM
 				s_1.PersonID
 			FROM
 				Doctor s_1
-		) t1 ON s_2.PersonID = t1.PersonID AND t1.rn <= 1
+		) t1 ON s_2.PersonID = t1.PersonID AND t1.rn = 1
 

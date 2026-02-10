@@ -48,6 +48,8 @@ FROM
 	) x
 WHERE
 	position(x.CarNo, NULL) > 0 AND position(x.CarBrand, NULL) > 0
+ORDER BY
+	x.CarNo
 LIMIT 20, 10
 
 -- ClickHouse.Driver ClickHouse

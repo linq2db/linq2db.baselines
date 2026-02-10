@@ -1,19 +1,10 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-SELECT
-	`it_1`.`IsActive`,
-	`it_1`.`Other`
+SELECT DISTINCT
+	1,
+	`it`.`SmallIntValue` <> 0
 FROM
-	(
-		SELECT
-			1 as `IsActive`,
-			`it`.`SmallIntValue` <> 0 as `Other`
-		FROM
-			`LinqDataTypes` `it`
-	) `it_1`
-GROUP BY
-	`it_1`.`IsActive`,
-	`it_1`.`Other`
+	`LinqDataTypes` `it`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 

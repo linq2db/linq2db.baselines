@@ -6,15 +6,12 @@ SELECT
 	CAST(1 AS Int)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			EXTRACT(MONTH FROM t1."DateTimeValue") as "month_1",
 			EXTRACT(YEAR FROM t1."DateTimeValue") as "year_1"
 		FROM
 			"LinqDataTypes" t1
 	) t2
-GROUP BY
-	t2."month_1",
-	t2."year_1"
 UNION
 SELECT
 	CAST(t3."SmallIntValue" AS Int),

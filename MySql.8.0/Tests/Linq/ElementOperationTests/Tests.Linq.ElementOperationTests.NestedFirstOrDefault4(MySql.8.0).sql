@@ -1,26 +1,20 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t2`.`ParentID`,
-	`t2`.`ChildID`
+	`t1`.`ParentID`,
+	`t1`.`ChildID`
 FROM
 	`Parent` `p`
 		LEFT JOIN LATERAL (
-			SELECT
-				`t1`.`ParentID`,
-				`t1`.`ChildID`
+			SELECT DISTINCT
+				`a_Children`.`ParentID`,
+				`a_Children`.`ChildID`
 			FROM
-				(
-					SELECT DISTINCT
-						`a_Children`.`ChildID`,
-						`a_Children`.`ParentID`
-					FROM
-						`Child` `a_Children`
-					WHERE
-						`p`.`ParentID` = `a_Children`.`ParentID` AND `a_Children`.`ParentID` > 0
-				) `t1`
+				`Child` `a_Children`
+			WHERE
+				`p`.`ParentID` = `a_Children`.`ParentID` AND `a_Children`.`ParentID` > 0
 			ORDER BY
-				`t1`.`ChildID`
+				`a_Children`.`ChildID`
 			LIMIT 1
-		) `t2` ON 1=1
+		) `t1` ON 1=1
 

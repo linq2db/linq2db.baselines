@@ -15,7 +15,8 @@ WHERE
 	[d].[NullableValue] IS NOT NULL
 ORDER BY
 	[d].[NullableValue],
-	[d].[Id]
+	[d].[Id],
+	[m_1].[Key_1]
 
 -- SqlServer.2012.MS SqlServer.2012
 
@@ -31,16 +32,15 @@ FROM
 	) [m_1]
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
-	[d].[NullableValue]
+	[d].[NullableValue],
+	[m_1].[Key_1]
 
 -- SqlServer.2012.MS SqlServer.2012
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

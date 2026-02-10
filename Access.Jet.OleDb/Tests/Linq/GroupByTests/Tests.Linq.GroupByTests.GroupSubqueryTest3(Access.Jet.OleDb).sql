@@ -1,11 +1,9 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- Access.Jet.OleDb AccessOleDb
 

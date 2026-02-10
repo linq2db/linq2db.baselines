@@ -16,8 +16,6 @@ SELECT
 	[t1].[PersonID] as [Key_1]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 
 -- SqlCe
 
@@ -37,6 +35,4 @@ SELECT
 	[t1].[PersonID] as [Key_1]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 

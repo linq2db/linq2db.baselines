@@ -11,6 +11,8 @@ FROM
 			[SampleClass] [g_1]
 	) [m_1]
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlServer.2014.MS SqlServer.2014
 
@@ -25,15 +27,15 @@ FROM
 			[SampleClass] [g_1]
 	) [m_1]
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlServer.2014.MS SqlServer.2014
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 

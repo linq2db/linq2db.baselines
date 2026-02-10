@@ -29,6 +29,6 @@ FROM
 							x.PARENTID3 as PARENTID3
 						FROM
 							TABLE3 x
-					) t1 ON t1.PARENTID3 = x_1.ID2 AND t1.rn <= 1
-		) t2 ON t2.PARENTID2 = t1_1.ID1 AND t2.rn <= 1
+					) t1 ON t1.PARENTID3 = x_1.ID2 AND t1.rn = 1
+		) t2 ON t2.PARENTID2 = t1_1.ID1 AND t2.rn = 1
 

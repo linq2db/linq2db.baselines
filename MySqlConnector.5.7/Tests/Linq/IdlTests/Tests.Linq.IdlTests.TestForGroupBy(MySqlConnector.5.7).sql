@@ -18,14 +18,12 @@ WHERE
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (2)
-GROUP BY
-	`x`.`ChildID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
@@ -47,12 +45,10 @@ WHERE
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (3)
-GROUP BY
-	`x`.`ChildID`
 

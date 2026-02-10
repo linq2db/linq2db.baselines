@@ -4,17 +4,7 @@ SELECT
 	[m_1].[Id],
 	[d].[Value]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[Id]
-		FROM
-			(
-				SELECT
-					[x].[Id]
-				FROM
-					[Item] [x]
-			) [t1]
-	) [m_1]
+	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])
 
 -- Access.Jet.OleDb AccessOleDb

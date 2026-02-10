@@ -13,29 +13,23 @@ SELECT
 	t2."CounterParty"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			al_group_1."Id"
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					al_group."AlertCode",
 					al_group."Id",
 					al_group."AlertKey"
 				FROM
 					"Alert" al_group
 						LEFT JOIN "AuditAlert" au ON au."AlertKey" = al_group."AlertKey"
-				GROUP BY
-					al_group."Id",
-					al_group."AlertKey",
-					al_group."AlertCode"
 			) al_group_1
 				LEFT JOIN "Trade" trade_1 ON al_group_1."AlertKey" = CAST(trade_1."DealId" AS VarChar(255))
 				LEFT JOIN "Nomin" nomin_1 ON al_group_1."AlertKey" = CAST(nomin_1."CargoId" AS VarChar(255))
 		WHERE
 			nomin_1."DeliveryCounterParty" LIKE :cond OR trade_1."CounterParty" LIKE :cond OR
 			al_group_1."AlertCode" LIKE :cond
-		GROUP BY
-			al_group_1."Id"
 	) al_group_3
 		LEFT JOIN (
 			SELECT
@@ -69,5 +63,5 @@ FROM
 			WHERE
 				nomin_2."DeliveryCounterParty" LIKE :cond OR trade_2."CounterParty" LIKE :cond OR
 				t1."AlertCode" LIKE :cond
-		) t2 ON al_group_3."Id" = t2."Id" AND t2."rn" <= 1
+		) t2 ON al_group_3."Id" = t2."Id" AND t2."rn" = 1
 

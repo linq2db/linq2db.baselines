@@ -11,29 +11,23 @@ SELECT
 	t2.CounterParty
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			al_group_1.Id
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					al_group.Id,
 					al_group.AlertKey,
 					al_group.AlertCode
 				FROM
 					Alert al_group
 						LEFT JOIN AuditAlert au ON au.AlertKey = al_group.AlertKey
-				GROUP BY
-					al_group.Id,
-					al_group.AlertKey,
-					al_group.AlertCode
 			) al_group_1
 				LEFT JOIN Trade trade_1 ON al_group_1.AlertKey = To_Char(trade_1.DealId)
 				LEFT JOIN Nomin nomin_1 ON al_group_1.AlertKey = To_Char(nomin_1.CargoId)
 		WHERE
 			nomin_1.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR
 			trade_1.CounterParty LIKE '%C%' ESCAPE '~' OR al_group_1.AlertCode LIKE '%C%' ESCAPE '~'
-		GROUP BY
-			al_group_1.Id
 	) al_group_3
 		LEFT JOIN (
 			SELECT
@@ -67,5 +61,5 @@ FROM
 			WHERE
 				nomin_2.DeliveryCounterParty LIKE '%C%' ESCAPE '~' OR
 				trade_2.CounterParty LIKE '%C%' ESCAPE '~' OR t1.AlertCode LIKE '%C%' ESCAPE '~'
-		) t2 ON al_group_3.Id = t2.Id AND t2.rn <= 1
+		) t2 ON al_group_3.Id = t2.Id AND t2.rn = 1
 

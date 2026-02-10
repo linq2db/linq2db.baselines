@@ -186,7 +186,7 @@ DELETE [t1]
 FROM
 	(
 		SELECT
-			*
+			1 as [c1]
 		FROM
 			[Parent] [x]
 		WHERE

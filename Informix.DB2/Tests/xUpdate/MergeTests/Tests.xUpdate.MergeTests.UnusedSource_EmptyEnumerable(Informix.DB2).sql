@@ -3,7 +3,7 @@
 MERGE INTO UnusedSourceTable Target
 USING (
 	SELECT 1 AS Unused
-	FROM table(set{1})	WHERE 1 = 0
+	FROM table(set{1}) WHERE 1 = 0
 )
  Source
 (

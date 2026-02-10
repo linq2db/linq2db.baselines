@@ -23,6 +23,6 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [entity2].[PersonID] ORDER BY [entity2].[PersonID]) as [rn]
 			FROM
 				[Person] [entity2]
-		) [t1] ON [t1].[ID] = [entity1].[PersonID] AND [t1].[rn] <= 1
+		) [t1] ON [t1].[ID] = [entity1].[PersonID] AND [t1].[rn] = 1
 LIMIT 1
 

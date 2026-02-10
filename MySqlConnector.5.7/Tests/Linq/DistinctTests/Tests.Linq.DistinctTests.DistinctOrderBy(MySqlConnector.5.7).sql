@@ -1,14 +1,9 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-SELECT
-	`t1`.`ParentID`
+SELECT DISTINCT
+	`ch`.`ParentID`
 FROM
-	(
-		SELECT DISTINCT
-			`ch`.`ParentID`
-		FROM
-			`Child` `ch`
-	) `t1`
+	`Child` `ch`
 ORDER BY
-	`t1`.`ParentID`
+	`ch`.`ParentID`
 

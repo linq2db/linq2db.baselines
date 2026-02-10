@@ -12,5 +12,5 @@ FROM
 			FROM
 				"Child" ch
 					LEFT JOIN "Parent" a_Parent ON ch."ParentID" = a_Parent."ParentID"
-		) t1 ON t1."ChildID" = c_1."ChildID" AND t1."rn" <= 1
+		) t1 ON t1."ChildID" = c_1."ChildID" AND t1."rn" = 1
 
