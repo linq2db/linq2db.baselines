@@ -53,38 +53,22 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[t5].[ParentID],
-	[t5].[ChildID]
+	[t3].[ParentID],
+	[t3].[ChildID]
 FROM
 	(
+		SELECT
+			[t1].[ChildID],
+			[t1].[ParentID]
+		FROM
+			[Child] [t1]
+		UNION ALL
 		SELECT
 			[t2].[ChildID],
 			[t2].[ParentID]
 		FROM
-			(
-				SELECT
-					[t1].[ParentID],
-					[t1].[ChildID]
-				FROM
-					[Child] [t1]
-				ORDER BY
-					[t1].[ChildID]
-			) [t2]
-		UNION ALL
-		SELECT
-			[t4].[ChildID],
-			[t4].[ParentID]
-		FROM
-			(
-				SELECT
-					[t3].[ParentID],
-					[t3].[ChildID]
-				FROM
-					[Child] [t3]
-				ORDER BY
-					[t3].[ChildID] DESC
-			) [t4]
-	) [t5]
+			[Child] [t2]
+	) [t3]
 ORDER BY
-	[t5].[ChildID]
+	[t3].[ChildID]
 
