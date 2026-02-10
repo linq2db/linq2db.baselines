@@ -1,25 +1,22 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	(
-		SELECT
-			"a_Children"."ParentID"
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"p"."ParentID" = "a_Children"."ParentID"
-		FETCH NEXT 1 ROWS ONLY
-	)
+	"t1"."cond"
 FROM
-	"Parent" "p"
-WHERE
 	(
 		SELECT
-			"a_Children"."ParentID"
+			(
+				SELECT
+					"a_Children"."ParentID"
+				FROM
+					"Child" "a_Children"
+				WHERE
+					"p"."ParentID" = "a_Children"."ParentID"
+				FETCH NEXT 1 ROWS ONLY
+			) as "cond"
 		FROM
-			"Child" "a_Children"
-		WHERE
-			"p"."ParentID" = "a_Children"."ParentID"
-		FETCH NEXT 1 ROWS ONLY
-	) IS NOT NULL
+			"Parent" "p"
+	) "t1"
+WHERE
+	"t1"."cond" IS NOT NULL
 

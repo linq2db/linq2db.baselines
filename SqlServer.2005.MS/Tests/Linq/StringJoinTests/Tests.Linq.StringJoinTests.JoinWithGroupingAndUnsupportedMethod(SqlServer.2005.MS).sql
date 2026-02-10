@@ -20,6 +20,8 @@ FROM
 			ORDER BY
 				[d].[NotNullableValue]
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -43,15 +45,15 @@ FROM
 			ORDER BY
 				[d].[NotNullableValue]
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 
