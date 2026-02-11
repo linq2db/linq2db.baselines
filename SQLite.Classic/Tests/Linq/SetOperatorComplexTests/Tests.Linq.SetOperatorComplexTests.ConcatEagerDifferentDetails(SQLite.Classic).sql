@@ -2,17 +2,20 @@
 
 SELECT
 	[m_1].[Id],
+	[m_1].[Id_1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[Id]
+			[t3].[Id],
+			[t3].[Id_1]
 		FROM
 			(
 				SELECT
 					CAST(0 AS INTEGER) as [projection__set_id__],
-					[a_Book].[BookId] as [Id]
+					[a_Book].[BookId] as [Id],
+					[a_Book].[BookId] as [Id_1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -22,7 +25,8 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(1 AS INTEGER) as [projection__set_id__],
-					NULL as [Id]
+					NULL as [Id],
+					NULL as [Id_1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -33,7 +37,7 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 0
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id] AND [m_1].[Id_1] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 WHERE
 	[a_Author].[AuthorName] <> 'A' OR [a_Author].[AuthorName] IS NULL
@@ -42,17 +46,20 @@ WHERE
 
 SELECT
 	[m_1].[c1],
+	[m_1].[c2],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[c1]
+			[t3].[c1],
+			[t3].[c2]
 		FROM
 			(
 				SELECT
 					CAST(0 AS INTEGER) as [projection__set_id__],
-					NULL as [c1]
+					NULL as [c1],
+					NULL as [c2]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -62,7 +69,8 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(1 AS INTEGER) as [projection__set_id__],
-					[a_Book_1].[BookId] as [c1]
+					[a_Book_1].[BookId] as [c1],
+					[a_Book_1].[BookId] as [c2]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -73,7 +81,7 @@ FROM
 		WHERE
 			[t3].[projection__set_id__] = 1
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1] AND [m_1].[c2] IS NOT NULL
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SQLite.Classic SQLite
@@ -83,6 +91,8 @@ SELECT
 	[a_Book].[BookName],
 	CAST(0 AS INTEGER),
 	[a_Book].[BookId],
+	[a_Book].[BookId],
+	NULL,
 	NULL
 FROM
 	[Author] [t1]
@@ -96,6 +106,8 @@ SELECT
 	[a_Book_1].[BookName],
 	CAST(1 AS INTEGER),
 	NULL,
+	NULL,
+	[a_Book_1].[BookId],
 	[a_Book_1].[BookId]
 FROM
 	[Author] [t2]
@@ -108,14 +120,14 @@ WHERE
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
+	[m_1].[Item1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]
