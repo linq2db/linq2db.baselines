@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d_1].[Id],
 	[d_1].[ParentId],
 	[d_1].[SubId],
@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t1].[Id] as [Item1]
 		FROM
 			[SampleClass1] [t1]
 	) [m_1]
@@ -27,7 +27,7 @@ FROM
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
 				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+		) [d_1] ON [m_1].[Item1] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 ORDER BY
 	[d_1].[Id]
 
@@ -42,7 +42,7 @@ FROM
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d_1].[Id],
 	[d_1].[ParentId],
 	[d_1].[SubId],
@@ -51,7 +51,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t1].[Id] as [Item1]
 		FROM
 			[SampleClass2] [t1]
 	) [m_1]
@@ -68,7 +68,7 @@ FROM
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
 				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+		) [d_1] ON [m_1].[Item1] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 ORDER BY
 	[d_1].[Id]
 
