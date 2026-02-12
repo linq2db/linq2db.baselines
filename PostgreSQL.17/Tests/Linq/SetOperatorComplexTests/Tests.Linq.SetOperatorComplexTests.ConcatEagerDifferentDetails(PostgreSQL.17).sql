@@ -22,7 +22,7 @@ FROM
 				UNION ALL
 				SELECT
 					1::Int as projection__set_id__,
-					NULL::Int as "Id"
+					"a_Book_1"."BookId" as "Id"
 				FROM
 					"Author" t2
 						INNER JOIN "BookAuthor" b_1 ON b_1."FkAuthorId" = t2."AuthorId"
@@ -41,18 +41,18 @@ WHERE
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	m_1.c1,
+	m_1."Id",
 	"a_Author"."AuthorId",
 	"a_Author"."AuthorName"
 FROM
 	(
 		SELECT DISTINCT
-			t3.c1
+			t3."Id"
 		FROM
 			(
 				SELECT
 					0::Int as projection__set_id__,
-					NULL::Int as c1
+					"a_Book"."BookId" as "Id"
 				FROM
 					"Author" t1
 						INNER JOIN "BookAuthor" b ON b."FkAuthorId" = t1."AuthorId"
@@ -62,7 +62,7 @@ FROM
 				UNION ALL
 				SELECT
 					1::Int as projection__set_id__,
-					"a_Book_1"."BookId" as c1
+					"a_Book_1"."BookId" as "Id"
 				FROM
 					"Author" t2
 						INNER JOIN "BookAuthor" b_1 ON b_1."FkAuthorId" = t2."AuthorId"
@@ -73,7 +73,7 @@ FROM
 		WHERE
 			t3.projection__set_id__ = 1
 	) m_1
-		INNER JOIN "BookAuthor" d ON d."FkBookId" = m_1.c1
+		INNER JOIN "BookAuthor" d ON d."FkBookId" = m_1."Id"
 		LEFT JOIN "Author" "a_Author" ON d."FkAuthorId" = "a_Author"."AuthorId"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -81,9 +81,7 @@ FROM
 SELECT
 	"a_Book"."BookId",
 	"a_Book"."BookName",
-	0::Int,
-	"a_Book"."BookId",
-	NULL::Int
+	0::Int
 FROM
 	"Author" t1
 		INNER JOIN "BookAuthor" b ON b."FkAuthorId" = t1."AuthorId"
@@ -94,9 +92,7 @@ UNION ALL
 SELECT
 	"a_Book_1"."BookId",
 	"a_Book_1"."BookName",
-	1::Int,
-	NULL::Int,
-	"a_Book_1"."BookId"
+	1::Int
 FROM
 	"Author" t2
 		INNER JOIN "BookAuthor" b_1 ON b_1."FkAuthorId" = t2."AuthorId"
@@ -108,14 +104,14 @@ WHERE
 
 SELECT
 	m_1."BookId",
-	m_1."AuthorId",
+	m_1."Item1",
 	"a_Author"."AuthorId",
 	"a_Author"."AuthorName"
 FROM
 	(
 		SELECT DISTINCT
 			"a_Book"."BookId",
-			t1."AuthorId"
+			t1."AuthorId" as "Item1"
 		FROM
 			"Author" t1
 				INNER JOIN "BookAuthor" d ON d."FkAuthorId" = t1."AuthorId"
