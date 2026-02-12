@@ -1,14 +1,15 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
+	[m_1].[cond],
+	[m_1].[cond],
 	[m_1].[Id],
-	[m_1].[Id_1],
 	[d_1].[CHAIN_ID]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Chain].[CHAIN_ID] as [Id],
-			[t2].[Id] as [Id_1]
+			[a_Chain].[CHAIN_ID] as [cond],
+			[t2].[Id]
 		FROM
 			(
 				SELECT
@@ -19,9 +20,9 @@ FROM
 				INNER JOIN [PUMPLINE_CHAINS] [d] ON [t2].[Id] = [d].[LINE_ID]
 				LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
 	) [m_1]
-		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[Id] = [d_1].[CHAIN_ID]
+		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[cond] = [d_1].[CHAIN_ID]
 ORDER BY
-	[m_1].[Id_1]
+	[m_1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
 
