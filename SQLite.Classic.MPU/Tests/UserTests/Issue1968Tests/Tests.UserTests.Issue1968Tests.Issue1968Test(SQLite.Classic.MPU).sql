@@ -88,7 +88,7 @@ VALUES
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d].[Id],
 	[d].[Code],
 	[d].[FacultyName],
@@ -99,16 +99,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t1].[Id] as [Item1]
 		FROM
 			[University] [t1]
 	) [m_1]
-		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
+		INNER JOIN [Faculty] [d] ON [m_1].[Item1] = [d].[UniversityId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_2].[Id],
+	[m_2].[Item1],
 	[d].[SubjectId],
 	[d].[FirstSubject],
 	[d].[SecondSubject],
@@ -117,7 +117,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t1].[Id] as [Item1]
 		FROM
 			[University] [t1]
 	) [m_2]
@@ -127,7 +127,7 @@ FROM
 			FROM
 				[Faculty] [m_1]
 			WHERE
-				[m_2].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
+				[m_2].[Item1] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
 		)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

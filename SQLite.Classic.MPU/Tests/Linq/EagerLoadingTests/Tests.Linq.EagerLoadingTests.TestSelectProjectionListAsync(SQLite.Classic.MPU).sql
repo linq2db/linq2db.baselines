@@ -19,20 +19,20 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
 SELECT
-	[m_2].[Id1],
+	[m_2].[Item1],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id1]
+			[m_1].[Id1] as [Item1]
 		FROM
 			[MasterClass] [m_1]
 		WHERE
 			[m_1].[Id1] >= @intParam
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_2].[Id1]
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_2].[Item1]
 WHERE
 	[d].[MasterId] % 2 = 0
 
