@@ -16,7 +16,7 @@ SELECT
 			FROM
 				[Child] [a_Children_1]
 			WHERE
-				[p].[ParentID] = [a_Children_1].[ParentID]
+				[p].[ParentID] = [a_Children_1].[ParentID] AND [a_Children_1].[ParentID] = [p].[ParentID]
 		)
 	END
 FROM
