@@ -1,21 +1,21 @@
 ﻿-- SqlServer.2012
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d].[Value]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id]
+			[t1].[Item1]
 		FROM
 			(
 				SELECT
-					[x].[Id]
+					[x].[Id] as [Item1]
 				FROM
 					[Item] [x]
 			) [t1]
 	) [m_1]
-		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
+		INNER JOIN [ItemValue] [d] ON [m_1].[Item1] = [d].[ItemId]
 
 -- SqlServer.2012
 
