@@ -1,14 +1,9 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"p"."c1"
+	CAST("p"."MoneyValue" AS DOUBLE PRECISION)
 FROM
-	(
-		SELECT
-			CAST("t"."MoneyValue" AS DOUBLE PRECISION) as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "p"
+	"LinqDataTypes" "p"
 WHERE
-	"p"."c1" > 0
+	CAST("p"."MoneyValue" AS DOUBLE PRECISION) > 0
 
