@@ -15,17 +15,17 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[ParentID],
+	[m_1].[Item1],
 	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID]
+			[t1].[ParentID] as [Item1]
 		FROM
 			[Parent] [t1]
 	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+		INNER JOIN [Child] [d] ON [m_1].[Item1] = [d].[ParentID]
 
 -- SQLite.MS SQLite
 
@@ -52,17 +52,17 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[ParentID],
+	[m_1].[Item1],
 	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID]
+			[t1].[ParentID] as [Item1]
 		FROM
 			[Parent] [t1]
 	) [m_1]
-		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+		INNER JOIN [Child] [d] ON [m_1].[Item1] = [d].[ParentID]
 
 -- SQLite.MS SQLite
 
