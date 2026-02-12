@@ -3,12 +3,7 @@
 SELECT
 	[p].[MoneyValue]
 FROM
-	(
-		SELECT
-			[t].[MoneyValue]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [p]
 WHERE
 	[p].[MoneyValue] > 0
 
