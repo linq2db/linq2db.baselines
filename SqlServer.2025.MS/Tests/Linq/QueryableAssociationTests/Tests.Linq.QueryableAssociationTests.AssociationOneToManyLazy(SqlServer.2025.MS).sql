@@ -18,17 +18,17 @@ DECLARE @take Int -- Int32
 SET     @take = 2
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d_1].[Id],
 	[d_1].[StrValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[Id]
+			[t2].[Item1]
 		FROM
 			(
 				SELECT TOP (@take)
-					[t1].[Id]
+					[t1].[Id] as [Item1]
 				FROM
 					[SomeEntity] [t1] WITH (NOLOCK)
 			) [t2]
@@ -40,7 +40,7 @@ FROM
 			FROM
 				[SomeOtherEntity] [d]
 			WHERE
-				[d].[Id] = [m_1].[Id]
+				[d].[Id] = [m_1].[Item1]
 		) [d_1]
 
 -- SqlServer.2025.MS SqlServer.2025
