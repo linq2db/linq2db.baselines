@@ -132,8 +132,7 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[cond] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
@@ -217,8 +216,7 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[cond] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
