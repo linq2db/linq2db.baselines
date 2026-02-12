@@ -2,14 +2,14 @@
 
 SELECT
 	m_1."Id",
-	m_1."Id_1",
+	m_1."Item1",
 	d_1."Id",
 	d_1."FK"
 FROM
 	(
 		SELECT DISTINCT
 			d."Id",
-			t1."Id" as "Id_1"
+			t1."Id" as "Item1"
 		FROM
 			"EntityMA" t1
 				INNER JOIN "EntityMB" d ON t1."Id" = d."FK"
