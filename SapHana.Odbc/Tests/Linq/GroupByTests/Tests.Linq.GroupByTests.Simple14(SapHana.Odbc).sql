@@ -1,12 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"m_1"."ParentID",
+	"m_1"."Item1",
 	"d_1"."Key_1"
 FROM
 	(
 		SELECT DISTINCT
-			"p"."ParentID"
+			"p"."ParentID" as "Item1"
 		FROM
 			"Parent" "p"
 	) "m_1"
@@ -16,7 +16,7 @@ FROM
 			FROM
 				"Child" "d"
 			WHERE
-				"m_1"."ParentID" = "d"."ParentID"
+				"m_1"."Item1" = "d"."ParentID"
 		) "d_1" ON 1=1
 
 -- SapHana.Odbc SapHanaOdbc
