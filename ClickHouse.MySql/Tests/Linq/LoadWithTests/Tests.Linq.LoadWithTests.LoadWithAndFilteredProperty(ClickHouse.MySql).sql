@@ -119,7 +119,7 @@ FROM
 				SubItem2 d_1
 			WHERE
 				d_1.ParentId % 2 = 0
-		) d_2 ON (m_2.cond = d_2.ParentId OR m_2.cond IS NULL AND d_2.ParentId IS NULL) AND d_2.rn <= 2
+		) d_2 ON m_2.cond = d_2.ParentId AND d_2.rn <= 2
 ORDER BY
 	m_2.Id,
 	d_2.Id
@@ -194,7 +194,7 @@ FROM
 				SubItem2 d_1
 			WHERE
 				d_1.ParentId % 2 = 0
-		) d_2 ON (m_2.cond = d_2.ParentId OR m_2.cond IS NULL AND d_2.ParentId IS NULL) AND d_2.rn <= 2
+		) d_2 ON m_2.cond = d_2.ParentId AND d_2.rn <= 2
 ORDER BY
 	m_2.Id,
 	d_2.Id

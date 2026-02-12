@@ -1,18 +1,19 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	m_1.Id,
+	m_1.cond,
+	m_1.cond,
 	d.Id,
 	d.FK
 FROM
 	(
 		SELECT DISTINCT
-			a_ObjectBOptional.Id as Id
+			a_ObjectBOptional.Id as cond
 		FROM
 			EntityA t1
 				LEFT JOIN EntityB a_ObjectBOptional ON t1.FK = a_ObjectBOptional.Id
 	) m_1
-		INNER JOIN EntityD d ON m_1.Id = d.FK OR m_1.Id IS NULL AND d.FK IS NULL
+		INNER JOIN EntityD d ON m_1.cond = d.FK
 
 -- ClickHouse.MySql ClickHouse
 
