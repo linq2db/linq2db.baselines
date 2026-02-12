@@ -2,14 +2,14 @@
 
 SELECT
 	m_1.Id,
-	m_1.Id_1,
+	m_1.Item1,
 	d_1.Id,
 	d_1.FK
 FROM
 	(
 		SELECT DISTINCT
 			d.Id,
-			e.Id as Id_1
+			e.Id as Item1
 		FROM
 			EntityMA e
 				INNER JOIN EntityMB d ON e.Id = d.FK
