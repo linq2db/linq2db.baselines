@@ -2,14 +2,14 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id_1],
-	[d_1].[Id] as [Id_2],
+	[m_1].[Item1],
+	[d_1].[Id] as [Id_1],
 	[d_1].[FK]
 FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t1].[Id] as [Id_1]
+			[t1].[Id] as [Item1]
 		FROM
 			[EntityMA] [t1]
 				INNER JOIN [EntityMB] [d] ON [t1].[Id] = [d].[FK]
@@ -19,11 +19,11 @@ FROM
 -- SqlCe
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[FK],
 	[d].[FKD],
-	[d].[Id] as [Id_2],
+	[d].[Id] as [Id_1],
 	[a_ObjectD].[Id] as [cond],
 	[a_ObjectD].[FK] as [FK_1]
 FROM

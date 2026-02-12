@@ -16,8 +16,8 @@ DECLARE @id Int -- Int32
 SET     @id = 11
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]
@@ -37,8 +37,8 @@ DECLARE @id Int -- Int32
 SET     @id = 12
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]

@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
@@ -21,8 +21,8 @@ DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
@@ -43,8 +43,8 @@ DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
@@ -63,8 +63,8 @@ FROM
 -- SqlCe
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
@@ -83,8 +83,8 @@ DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
@@ -105,8 +105,8 @@ DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM

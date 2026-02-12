@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[a_ObjectD].[Id] as [cond],
 	[a_ObjectD].[FK]
 FROM
