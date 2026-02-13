@@ -2,15 +2,15 @@
 
 SELECT
 	CASE
-		WHEN ([i].[BoolValue] IS NULL OR [i].[BoolValue] = 0) AND ([i].[IntValue] = [t1].[cond] OR [i].[IntValue] IS NULL AND [t1].[cond] IS NULL)
+		WHEN ([i].[BoolValue] IS NULL OR [i].[BoolValue] = 0) AND ([i].[IntValue] = [t1].[IntValue] OR [i].[IntValue] IS NULL AND [t1].[IntValue] IS NULL)
 			THEN 1
 		ELSE 0
-	END as [cond]
+	END as [c1]
 FROM
 	[LinqDataTypes] [i]
 		LEFT JOIN (
 			SELECT TOP (1)
-				[p].[IntValue] as [cond]
+				[p].[IntValue]
 			FROM
 				[LinqDataTypes] [p]
 			WHERE

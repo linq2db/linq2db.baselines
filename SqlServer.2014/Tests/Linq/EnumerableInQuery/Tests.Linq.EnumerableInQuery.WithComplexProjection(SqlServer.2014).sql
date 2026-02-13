@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2014
 
 SELECT
-	[it_1].[cond],
+	[it_1].[not_null],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
 	[it_1].[Count_1],
@@ -28,7 +28,7 @@ FROM
 				[it].[field1],
 				[it].[field2],
 				[it].[field3],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(VALUES
 					([a_Color].[Name],[t2].[Count_1],[a_Style].[Name],IIF([a_Color].[Name] = N'Red', [t2].[Count_1], 0),1,2,3),

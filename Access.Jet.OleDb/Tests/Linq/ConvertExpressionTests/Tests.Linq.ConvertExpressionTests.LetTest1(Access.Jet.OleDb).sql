@@ -1,7 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t1].[cond]
+	[t1].[ParentID]
 FROM
 	(
 		SELECT
@@ -12,10 +12,10 @@ FROM
 					[Child] [a_Children]
 				WHERE
 					[p].[ParentID] = [a_Children].[ParentID]
-			) as [cond]
+			) as [ParentID]
 		FROM
 			[Parent] [p]
 	) [t1]
 WHERE
-	[t1].[cond] IS NOT NULL
+	[t1].[ParentID] IS NOT NULL
 

@@ -13,13 +13,13 @@ WHERE
 			Person e,
 			(
 				SELECT FIRST 1
-					d.PersonID as cond
+					d.PersonID
 				FROM
 					Patient d
 			) t1
 		WHERE
 			e.PersonID = p.PersonID AND e.FirstName LIKE '%John%' ESCAPE '~' AND
-			e.PersonID = t1.cond
+			e.PersonID = t1.PersonID
 	) OR
 	EXISTS(
 		SELECT
@@ -28,13 +28,13 @@ WHERE
 			Person e_1,
 			(
 				SELECT FIRST 1
-					d_1.PersonID as cond
+					d_1.PersonID
 				FROM
 					Patient d_1
 			) t2
 		WHERE
 			e_1.PersonID = p.PersonID AND e_1.FirstName LIKE '%Tester%' ESCAPE '~' AND
-			e_1.PersonID = t2.cond
+			e_1.PersonID = t2.PersonID
 	)
 ORDER BY
 	p.PersonID

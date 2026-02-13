@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	t2.cond_1,
-	t2.cond,
+	t2.c2,
+	t2.c1,
 	t2.Id3,
 	t2.Name3,
 	t2.Name2,
@@ -11,10 +11,10 @@ FROM
 	TABLE1 t1_1
 		LEFT JOIN (
 			SELECT
-				t1.c1 as cond,
+				t1.c1 as c1,
 				t1.Id3 as Id3,
 				t1.Name3 as Name3,
-				't2' as cond_1,
+				't2' as c2,
 				x_1.NAME2 as Name2,
 				ROW_NUMBER() OVER (PARTITION BY x_1.PARENTID2 ORDER BY x_1.PARENTID2) as rn,
 				x_1.PARENTID2 as PARENTID2

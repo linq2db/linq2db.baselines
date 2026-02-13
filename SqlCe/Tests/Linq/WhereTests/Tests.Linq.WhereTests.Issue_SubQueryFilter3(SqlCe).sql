@@ -17,14 +17,14 @@ WHERE
 			[Person] [p]
 				CROSS APPLY (
 					SELECT TOP (1)
-						[d].[PersonID] as [cond]
+						[d].[PersonID] as [ID]
 					FROM
 						[Person] [d]
 					WHERE
 						[d].[PersonID] = [patient_1].[PersonID]
 				) [t1]
 		WHERE
-			[p].[FirstName] LIKE @filter ESCAPE '~' AND [p].[PersonID] = [t1].[cond]
+			[p].[FirstName] LIKE @filter ESCAPE '~' AND [p].[PersonID] = [t1].[ID]
 	) AND
 	EXISTS(
 		SELECT
@@ -33,14 +33,14 @@ WHERE
 			[Person] [p_1]
 				CROSS APPLY (
 					SELECT TOP (1)
-						[d_1].[PersonID] as [cond]
+						[d_1].[PersonID] as [ID]
 					FROM
 						[Person] [d_1]
 					WHERE
 						[d_1].[PersonID] = [patient_1].[PersonID]
 				) [t2]
 		WHERE
-			[p_1].[FirstName] LIKE @filter_1 ESCAPE '~' AND [p_1].[PersonID] = [t2].[cond]
+			[p_1].[FirstName] LIKE @filter_1 ESCAPE '~' AND [p_1].[PersonID] = [t2].[ID]
 	)
 ORDER BY
 	[patient_1].[PersonID]

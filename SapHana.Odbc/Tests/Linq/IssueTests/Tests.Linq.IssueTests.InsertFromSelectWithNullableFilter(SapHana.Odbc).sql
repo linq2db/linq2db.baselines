@@ -22,8 +22,8 @@ FROM
 	) "t2"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond SmallInt -- Int16
-SET     @cond = 1234
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 1234
 
 INSERT INTO "InsertIssueTest"
 (

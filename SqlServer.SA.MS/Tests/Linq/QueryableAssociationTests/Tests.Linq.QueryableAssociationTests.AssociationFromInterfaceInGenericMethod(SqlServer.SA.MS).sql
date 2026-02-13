@@ -18,20 +18,20 @@ WHERE
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d].[Id],
 	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[t].[Id]
+			[t].[Id] as [Item1]
 		FROM
 			[TreeItem] [t]
 				INNER JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 		WHERE
 			[a_Parent].[Id] > 0
 	) [m_1]
-		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
+		INNER JOIN [TreeItem] [d] ON [m_1].[Item1] = [d].[ParentId]
 
 -- SqlServer.SA.MS SqlServer.2019
 

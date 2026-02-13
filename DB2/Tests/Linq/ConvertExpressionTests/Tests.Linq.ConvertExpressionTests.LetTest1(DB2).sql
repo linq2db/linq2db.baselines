@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."cond"
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
@@ -13,10 +13,10 @@ FROM
 				WHERE
 					"p"."ParentID" = "a_Children"."ParentID"
 				FETCH NEXT 1 ROWS ONLY
-			) as "cond"
+			) as "ParentID"
 		FROM
 			"Parent" "p"
 	) "t1"
 WHERE
-	"t1"."cond" IS NOT NULL
+	"t1"."ParentID" IS NOT NULL
 

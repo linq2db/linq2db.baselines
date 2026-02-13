@@ -38,7 +38,7 @@ ORDER BY `p`.`ProductID`, `s1`.`OrderID0`, `s1`.`ProductID`, `s1`.`OrderID`, `s1
 
 SELECT
 	`m_1`.`SupplierId`,
-	`m_1`.`ProductId`,
+	`m_1`.`Item1`,
 	`d_1`.`IsDeleted`,
 	`d_1`.`ProductID`,
 	`d_1`.`ProductName`,
@@ -54,7 +54,7 @@ FROM
 	(
 		SELECT DISTINCT
 			`a_Supplier`.`SupplierID` as `SupplierId`,
-			`e_1`.`ProductID` as `ProductId`
+			`e_1`.`ProductID` as `Item1`
 		FROM
 			`Products` `e_1`
 				INNER JOIN `Order Details` `d` ON `e_1`.`ProductID` = `d`.`ProductID`
@@ -63,7 +63,7 @@ FROM
 		WHERE
 			NOT `e_1`.`IsDeleted` AND NOT `e`.`IsDeleted` AND NOT `d`.`IsDeleted`
 	) `m_1`
-		INNER JOIN `Products` `d_1` ON `m_1`.`SupplierId` = `d_1`.`SupplierID` OR `m_1`.`SupplierId` IS NULL AND `d_1`.`SupplierID` IS NULL
+		INNER JOIN `Products` `d_1` ON `m_1`.`SupplierId` = `d_1`.`SupplierID`
 WHERE
 	NOT `d_1`.`IsDeleted`
 

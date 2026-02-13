@@ -1,35 +1,29 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	t2.year_1,
-	t2.year_1,
-	t2.int_1
+	t1."SmallIntValue",
+	t1."SmallIntValue",
+	3::Int
 FROM
-	(
-		SELECT
-			t1."SmallIntValue" as year_1,
-			3::Int as int_1
-		FROM
-			"LinqDataTypes" t1
-	) t2
+	"LinqDataTypes" t1
 UNION
 SELECT
-	t4.month_1,
-	t4.year_1,
+	t3.month_1,
+	t3.year_1,
 	1::Int
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Extract(month From t3."DateTimeValue"))::Int as month_1,
-			Floor(Extract(year From t3."DateTimeValue"))::Int as year_1
+			Floor(Extract(month From t2."DateTimeValue"))::Int as month_1,
+			Floor(Extract(year From t2."DateTimeValue"))::Int as year_1
 		FROM
-			"LinqDataTypes" t3
-	) t4
+			"LinqDataTypes" t2
+	) t3
 UNION
 SELECT
-	Floor(Extract(year From t5."DateTimeValue"))::Int,
-	Floor(Extract(year From t5."DateTimeValue"))::Int,
+	Floor(Extract(year From t4."DateTimeValue"))::Int,
+	Floor(Extract(year From t4."DateTimeValue"))::Int,
 	2::Int
 FROM
-	"LinqDataTypes" t5
+	"LinqDataTypes" t4
 

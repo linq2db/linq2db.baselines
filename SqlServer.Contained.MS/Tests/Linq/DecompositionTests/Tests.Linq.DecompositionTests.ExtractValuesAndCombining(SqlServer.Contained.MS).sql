@@ -1,19 +1,19 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[x].[cond],
+	[x].[Color],
 	[x].[Kind],
 	[x].[ItemCode],
-	[x].[Color],
+	[x].[Color_2],
 	[x].[ItemCode_1],
 	[x].[Style_1]
 FROM
 	(
 		SELECT
-			IIF([i].[Kind] = 1 OR [i].[Kind] = 2, 1, 0) as [cond],
-			IIF([i].[Kind] = 1, 1, 0) as [cond_1],
+			IIF([i].[Kind] = 1 OR [i].[Kind] = 2, 1, 0) as [Color],
+			IIF([i].[Kind] = 1, 1, 0) as [Color_1],
 			Substring([i].[ItemCode], 1, 2) as [ItemCode],
-			[i].[Color],
+			[i].[Color] as [Color_2],
 			[i].[Kind],
 			Substring([i].[ItemCode], 3, 2) as [ItemCode_1],
 			[i].[Style] as [Style_1]
@@ -23,7 +23,7 @@ FROM
 			[i].[Kind] = 1 OR [i].[Kind] = 2
 	) [x]
 WHERE
-	NOT ([x].[cond] = 1 AND [x].[cond_1] = 1 OR [x].[cond] = 0)
+	NOT ([x].[Color] = 1 AND [x].[Color_1] = 1 OR [x].[Color] = 0)
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -39,18 +39,18 @@ FROM
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[x].[cond],
-	[x].[ItemCode],
 	[x].[Color],
+	[x].[ItemCode],
+	[x].[Color_1],
 	[x].[Kind],
 	[x].[ItemCode_1],
 	[x].[Style_1]
 FROM
 	(
 		SELECT
-			IIF([i].[Kind] = 1 OR [i].[Kind] = 3, 1, 0) as [cond],
+			IIF([i].[Kind] = 1 OR [i].[Kind] = 3, 1, 0) as [Color],
 			Substring([i].[ItemCode], 5, 2) as [ItemCode],
-			[i].[Color],
+			[i].[Color] as [Color_1],
 			[i].[Kind],
 			Substring([i].[ItemCode], 7, 2) as [ItemCode_1],
 			[i].[Style] as [Style_1]
@@ -60,7 +60,7 @@ FROM
 			[i].[Kind] = 1 OR [i].[Kind] = 3
 	) [x]
 WHERE
-	[x].[cond] = 1
+	[x].[Color] = 1
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -76,7 +76,7 @@ FROM
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[cond],
+	[t1].[Top],
 	[t1].[Color],
 	[t1].[ItemCode],
 	[t1].[Name],
@@ -90,7 +90,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [cond],
+			IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [Top],
 			Substring([t].[ItemCode], 1, 2) as [ItemCode],
 			[t].[Color] as [Name],
 			Substring([t].[ItemCode], 3, 2) as [ItemCode_1],
@@ -100,10 +100,10 @@ FROM
 			[Item] [t]
 	) [t1]
 WHERE
-	[t1].[cond] = 1
+	[t1].[Top] = 1
 UNION ALL
 SELECT
-	[t2].[cond],
+	[t2].[Bottom],
 	NULL,
 	NULL,
 	NULL,
@@ -111,23 +111,23 @@ SELECT
 	[t2].[Color],
 	NULL,
 	NULL,
-	[t2].[cond_1],
+	[t2].[Size_1],
 	[t2].[ItemCode_1],
 	[t2].[Style_1]
 FROM
 	(
 		SELECT
-			IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [cond],
+			IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [Bottom],
 			Substring([t_1].[ItemCode], 5, 2) as [ItemCode],
 			[t_1].[Color],
 			Substring([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 			[t_1].[Style] as [Style_1],
-			IIF([t_1].[Kind] = 1, 1, 0) as [cond_1]
+			IIF([t_1].[Kind] = 1, 1, 0) as [Size_1]
 		FROM
 			[Item] [t_1]
 	) [t2]
 WHERE
-	[t2].[cond] = 1
+	[t2].[Bottom] = 1
 
 -- SqlServer.Contained.MS SqlServer.2019
 
@@ -157,8 +157,8 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[cond] as [Color],
-			[x].[cond_1] as [Color_1],
+			[x].[Top] as [Color],
+			[x].[Color_1],
 			[x].[ItemCode],
 			[x].[Color] as [Name],
 			[x].[ItemCode_1],
@@ -171,20 +171,20 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [cond],
+					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [Top],
 					Substring([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Substring([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t].[Kind] = 1, 1, 0) as [Color_1]
 				FROM
 					[Item] [t]
 			) [x]
 		WHERE
-			[x].[cond] = 1
+			[x].[Top] = 1
 		UNION ALL
 		SELECT
-			[t1].[cond] as [Color],
+			[t1].[Bottom] as [Color],
 			NULL as [Color_1],
 			NULL as [ItemCode],
 			NULL as [Name],
@@ -192,23 +192,23 @@ FROM
 			NULL as [Name_1],
 			[t1].[ItemCode] as [ItemCode_2],
 			[t1].[Color] as [Name_2],
-			[t1].[cond_1] as [Size_1],
+			[t1].[Size_1],
 			[t1].[ItemCode_1] as [ItemCode_3],
 			[t1].[Style_1] as [Name_3]
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [cond],
+					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [Bottom],
 					Substring([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Substring([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t_1].[Kind] = 1, 1, 0) as [Size_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
 		WHERE
-			[t1].[cond] = 1
+			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
 	NOT ([x_1].[Color] = 1 AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0)
@@ -241,8 +241,8 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[cond] as [Color],
-			[x].[cond_1] as [Color_1],
+			[x].[Top] as [Color],
+			[x].[Color_1],
 			[x].[ItemCode],
 			[x].[Color] as [Name],
 			[x].[ItemCode_1],
@@ -255,20 +255,20 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [cond],
+					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [Top],
 					Substring([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Substring([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t].[Kind] = 1, 1, 0) as [Color_1]
 				FROM
 					[Item] [t]
 			) [x]
 		WHERE
-			[x].[cond] = 1
+			[x].[Top] = 1
 		UNION ALL
 		SELECT
-			[t1].[cond] as [Color],
+			[t1].[Bottom] as [Color],
 			NULL as [Color_1],
 			NULL as [ItemCode],
 			NULL as [Name],
@@ -276,23 +276,23 @@ FROM
 			NULL as [Name_1],
 			[t1].[ItemCode] as [ItemCode_2],
 			[t1].[Color] as [Name_2],
-			[t1].[cond_1] as [Size_1],
+			[t1].[Size_1],
 			[t1].[ItemCode_1] as [ItemCode_3],
 			[t1].[Style_1] as [Name_3]
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [cond],
+					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [Bottom],
 					Substring([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Substring([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t_1].[Kind] = 1, 1, 0) as [Size_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
 		WHERE
-			[t1].[cond] = 1
+			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
 	[x_1].[Color] = 1 AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0
@@ -325,8 +325,8 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[cond] as [Size_1],
-			[x].[cond_1] as [Color],
+			[x].[Top] as [Size_1],
+			[x].[Color_1] as [Color],
 			[x].[ItemCode],
 			[x].[Color] as [Name],
 			[x].[ItemCode_1],
@@ -339,20 +339,20 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [cond],
+					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [Top],
 					Substring([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Substring([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t].[Kind] = 1, 1, 0) as [Color_1]
 				FROM
 					[Item] [t]
 			) [x]
 		WHERE
-			[x].[cond] = 1
+			[x].[Top] = 1
 		UNION ALL
 		SELECT
-			[t1].[cond] as [Size_1],
+			[t1].[Bottom] as [Size_1],
 			NULL as [Color],
 			NULL as [ItemCode],
 			NULL as [Name],
@@ -360,23 +360,23 @@ FROM
 			NULL as [Name_1],
 			[t1].[ItemCode] as [ItemCode_2],
 			[t1].[Color] as [Name_2],
-			[t1].[cond_1] as [Size_2],
+			[t1].[Size_1] as [Size_2],
 			[t1].[ItemCode_1] as [ItemCode_3],
 			[t1].[Style_1] as [Name_3]
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [cond],
+					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [Bottom],
 					Substring([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Substring([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t_1].[Kind] = 1, 1, 0) as [Size_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
 		WHERE
-			[t1].[cond] = 1
+			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
 	NOT ([x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR [x_1].[Size_1] = 0)
@@ -409,8 +409,8 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[cond] as [Size_1],
-			[x].[cond_1] as [Color],
+			[x].[Top] as [Size_1],
+			[x].[Color_1] as [Color],
 			[x].[ItemCode],
 			[x].[Color] as [Name],
 			[x].[ItemCode_1],
@@ -423,20 +423,20 @@ FROM
 		FROM
 			(
 				SELECT
-					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [cond],
+					IIF([t].[Kind] = 1 OR [t].[Kind] = 2, 1, 0) as [Top],
 					Substring([t].[ItemCode], 1, 2) as [ItemCode],
 					[t].[Color],
 					Substring([t].[ItemCode], 3, 2) as [ItemCode_1],
 					[t].[Style] as [Style_1],
-					IIF([t].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t].[Kind] = 1, 1, 0) as [Color_1]
 				FROM
 					[Item] [t]
 			) [x]
 		WHERE
-			[x].[cond] = 1
+			[x].[Top] = 1
 		UNION ALL
 		SELECT
-			[t1].[cond] as [Size_1],
+			[t1].[Bottom] as [Size_1],
 			NULL as [Color],
 			NULL as [ItemCode],
 			NULL as [Name],
@@ -444,23 +444,23 @@ FROM
 			NULL as [Name_1],
 			[t1].[ItemCode] as [ItemCode_2],
 			[t1].[Color] as [Name_2],
-			[t1].[cond_1] as [Size_2],
+			[t1].[Size_1] as [Size_2],
 			[t1].[ItemCode_1] as [ItemCode_3],
 			[t1].[Style_1] as [Name_3]
 		FROM
 			(
 				SELECT
-					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [cond],
+					IIF([t_1].[Kind] = 1 OR [t_1].[Kind] = 3, 1, 0) as [Bottom],
 					Substring([t_1].[ItemCode], 5, 2) as [ItemCode],
 					[t_1].[Color],
 					Substring([t_1].[ItemCode], 7, 2) as [ItemCode_1],
 					[t_1].[Style] as [Style_1],
-					IIF([t_1].[Kind] = 1, 1, 0) as [cond_1]
+					IIF([t_1].[Kind] = 1, 1, 0) as [Size_1]
 				FROM
 					[Item] [t_1]
 			) [t1]
 		WHERE
-			[t1].[cond] = 1
+			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
 	[x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR

@@ -2,8 +2,8 @@
 
 SELECT
 	CASE
-		WHEN t2."cond" IS NULL THEN 0
-		ELSE t2."cond"
+		WHEN t2."ParentID" IS NULL THEN 0
+		ELSE t2."ParentID"
 	END,
 	t4."ParentID",
 	t4."ChildID"
@@ -11,11 +11,11 @@ FROM
 	"Parent" p
 		LEFT JOIN (
 			SELECT
-				t1."cond"
+				t1."ParentID"
 			FROM
 				(
 					SELECT
-						c_1."ParentID" as "cond"
+						c_1."ParentID"
 					FROM
 						"Child" c_1
 					WHERE

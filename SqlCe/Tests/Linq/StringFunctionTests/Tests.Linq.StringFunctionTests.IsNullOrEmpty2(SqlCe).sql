@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN LEN([p].[FirstName] + '.') = 1 THEN 1
 		ELSE 0
-	END as [cond]
+	END as [c1]
 FROM
 	[Person] [p]
 WHERE

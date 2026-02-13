@@ -1,14 +1,14 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	"t1"."cond_1",
-	"t1"."cond"
+	"t1"."Value_2",
+	"t1"."Value_1"
 FROM
 	"Request" "a"
 		LEFT JOIN (
 			SELECT
-				"a_Metrics"."Value" as "cond",
-				"a_Metrics"."Value" IS NOT NULL as "cond_1",
+				"a_Metrics"."Value" as "Value_1",
+				"a_Metrics"."Value" IS NOT NULL as "Value_2",
 				ROW_NUMBER() OVER (PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
 				"a_Metrics"."RequestId"
 			FROM

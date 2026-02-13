@@ -5,17 +5,17 @@ SET     @take = 1
 SELECT TOP (@take)
 	[r].[Id],
 	[r].[OriginalSaleId],
-	[t1].[cond],
 	[t1].[OriginalSale],
+	[t1].[OriginalSale_1],
 	[r].[ReshipSaleId],
-	[t2].[cond],
-	[t2].[ReshipSale]
+	[t2].[ReshipSale],
+	[t2].[ReshipSale_1]
 FROM
 	[Returns] [r]
 		OUTER APPLY (
 			SELECT TOP (1)
-				N'Id' as [cond],
-				[x].[Id] as [OriginalSale]
+				N'Id' as [OriginalSale],
+				[x].[Id] as [OriginalSale_1]
 			FROM
 				[Sales] [x]
 			WHERE
@@ -23,8 +23,8 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				N'Id' as [cond],
-				[x_1].[Id] as [ReshipSale]
+				N'Id' as [ReshipSale],
+				[x_1].[Id] as [ReshipSale_1]
 			FROM
 				[Sales] [x_1]
 			WHERE

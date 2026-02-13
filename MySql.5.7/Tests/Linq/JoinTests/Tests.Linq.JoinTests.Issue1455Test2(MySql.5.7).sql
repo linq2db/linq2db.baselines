@@ -1,6 +1,6 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @cond VarChar(3) -- String
-SET     @cond = '%C%'
+DECLARE @DeliveryCounterParty VarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	`al_group_2`.`Id`,
@@ -26,7 +26,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_2` ON `t1`.`AlertKey` = CAST(`trade_2`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_2` ON `t1`.`AlertKey` = CAST(`nomin_2`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_2`.`DeliveryCounterParty` LIKE @cond OR `trade_2`.`CounterParty` LIKE @cond OR `t1`.`AlertCode` LIKE @cond) AND
+			(`nomin_2`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_2`.`CounterParty` LIKE @DeliveryCounterParty OR `t1`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t1`.`Id`
 		LIMIT 1
 	),
@@ -51,7 +51,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_3` ON `t2`.`AlertKey` = CAST(`trade_3`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_3` ON `t2`.`AlertKey` = CAST(`nomin_3`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_3`.`DeliveryCounterParty` LIKE @cond OR `trade_3`.`CounterParty` LIKE @cond OR `t2`.`AlertCode` LIKE @cond) AND
+			(`nomin_3`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_3`.`CounterParty` LIKE @DeliveryCounterParty OR `t2`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t2`.`Id`
 		LIMIT 1
 	),
@@ -76,7 +76,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_4` ON `t3`.`AlertKey` = CAST(`trade_4`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_4` ON `t3`.`AlertKey` = CAST(`nomin_4`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_4`.`DeliveryCounterParty` LIKE @cond OR `trade_4`.`CounterParty` LIKE @cond OR `t3`.`AlertCode` LIKE @cond) AND
+			(`nomin_4`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_4`.`CounterParty` LIKE @DeliveryCounterParty OR `t3`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t3`.`Id`
 		LIMIT 1
 	),
@@ -101,7 +101,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_5` ON `t4`.`AlertKey` = CAST(`trade_5`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_5` ON `t4`.`AlertKey` = CAST(`nomin_5`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_5`.`DeliveryCounterParty` LIKE @cond OR `trade_5`.`CounterParty` LIKE @cond OR `t4`.`AlertCode` LIKE @cond) AND
+			(`nomin_5`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_5`.`CounterParty` LIKE @DeliveryCounterParty OR `t4`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t4`.`Id`
 		LIMIT 1
 	),
@@ -126,7 +126,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_6` ON `t5`.`AlertKey` = CAST(`trade_6`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_6` ON `t5`.`AlertKey` = CAST(`nomin_6`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_6`.`DeliveryCounterParty` LIKE @cond OR `trade_6`.`CounterParty` LIKE @cond OR `t5`.`AlertCode` LIKE @cond) AND
+			(`nomin_6`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_6`.`CounterParty` LIKE @DeliveryCounterParty OR `t5`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t5`.`Id`
 		LIMIT 1
 	),
@@ -151,7 +151,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_7` ON `t6`.`AlertKey` = CAST(`trade_7`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_7` ON `t6`.`AlertKey` = CAST(`nomin_7`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_7`.`DeliveryCounterParty` LIKE @cond OR `trade_7`.`CounterParty` LIKE @cond OR `t6`.`AlertCode` LIKE @cond) AND
+			(`nomin_7`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_7`.`CounterParty` LIKE @DeliveryCounterParty OR `t6`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t6`.`Id`
 		LIMIT 1
 	),
@@ -176,7 +176,7 @@ SELECT
 				LEFT JOIN `Trade` `trade_8` ON `t7`.`AlertKey` = CAST(`trade_8`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_8` ON `t7`.`AlertKey` = CAST(`nomin_8`.`CargoId` AS CHAR(11))
 		WHERE
-			(`nomin_8`.`DeliveryCounterParty` LIKE @cond OR `trade_8`.`CounterParty` LIKE @cond OR `t7`.`AlertCode` LIKE @cond) AND
+			(`nomin_8`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR `trade_8`.`CounterParty` LIKE @DeliveryCounterParty OR `t7`.`AlertCode` LIKE @DeliveryCounterParty) AND
 			`al_group_2`.`Id` = `t7`.`Id`
 		LIMIT 1
 	)
@@ -197,7 +197,8 @@ FROM
 				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
 		WHERE
-			`nomin_1`.`DeliveryCounterParty` LIKE @cond OR `trade_1`.`CounterParty` LIKE @cond OR
-			`al_group_1`.`AlertCode` LIKE @cond
+			`nomin_1`.`DeliveryCounterParty` LIKE @DeliveryCounterParty OR
+			`trade_1`.`CounterParty` LIKE @DeliveryCounterParty OR
+			`al_group_1`.`AlertCode` LIKE @DeliveryCounterParty
 	) `al_group_2`
 

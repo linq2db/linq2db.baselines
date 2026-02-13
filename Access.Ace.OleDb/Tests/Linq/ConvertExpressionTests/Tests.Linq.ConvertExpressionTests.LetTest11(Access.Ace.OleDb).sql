@@ -1,7 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	IIF([t1].[cond] IS NULL, 0, [t1].[cond]),
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	(
 		SELECT TOP 1
 			[c_2].[ParentID]
@@ -34,11 +34,11 @@ FROM
 					[c_1].[ParentID] > 0
 				ORDER BY
 					[c_1].[ParentID]
-			) as [cond],
-			[p].[ParentID]
+			) as [ParentID],
+			[p].[ParentID] as [ParentID_1]
 		FROM
 			[Parent] [p]
 	) [t1]
 ORDER BY
-	[t1].[ParentID]
+	[t1].[ParentID_1]
 

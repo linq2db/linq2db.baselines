@@ -28,14 +28,14 @@ WHERE
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
+	[m_1].[Item1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	((
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			([Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON ([d].[FkAuthorId] = [t1].[AuthorId]))

@@ -15,10 +15,10 @@ SET     @cpty_5 = '%C%'
 SELECT
 	"al_group_3"."Id",
 	"t2"."LastUpdate",
-	"t2"."cond",
+	"t2"."CargoId",
 	"t2"."DeliveryId",
 	"t2"."DeliveryCounterParty",
-	"t2"."cond_1",
+	"t2"."DealId",
 	"t2"."ParcelId",
 	"t2"."CounterParty"
 FROM
@@ -44,10 +44,10 @@ FROM
 	) "al_group_3"
 		LEFT JOIN LATERAL (
 			SELECT
-				"nomin_2"."CargoId" as "cond",
+				"nomin_2"."CargoId",
 				"nomin_2"."DeliveryId",
 				"nomin_2"."DeliveryCounterParty",
-				"trade_2"."DealId" as "cond_1",
+				"trade_2"."DealId",
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
 				"t1"."LastUpdate"

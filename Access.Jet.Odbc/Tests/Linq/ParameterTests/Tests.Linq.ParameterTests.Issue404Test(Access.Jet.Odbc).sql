@@ -17,8 +17,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @cond Int -- Int32
-SET     @cond = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -39,8 +39,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @cond Int -- Int32
-SET     @cond = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
@@ -79,8 +79,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @cond Int -- Int32
-SET     @cond = 0
+DECLARE @Usage Int -- Int32
+SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -101,8 +101,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @cond Int -- Int32
-SET     @cond = 1
+DECLARE @Usage Int -- Int32
+SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],

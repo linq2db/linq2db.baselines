@@ -1,12 +1,12 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t1`.`cond`
+	`t1`.`ParentID`
 FROM
 	`Parent` `p`
 		LEFT JOIN LATERAL (
 			SELECT
-				`a_Children`.`ParentID` as `cond`
+				`a_Children`.`ParentID`
 			FROM
 				`Child` `a_Children`
 			WHERE
@@ -14,5 +14,5 @@ FROM
 			LIMIT 1
 		) `t1` ON 1=1
 WHERE
-	`t1`.`cond` IS NOT NULL
+	`t1`.`ParentID` IS NOT NULL
 

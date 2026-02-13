@@ -9,7 +9,7 @@ FROM
 		LEFT JOIN [ThingState] [s] ON [s].[ThingId] = [thing_1].[Id]
 		OUTER APPLY (
 			SELECT
-				[t].[ThingId] as [cond],
+				[t].[ThingId],
 				[t].[TransitionType]
 			FROM
 				[Transition] [t]
@@ -18,5 +18,5 @@ FROM
 				[t].[ThingId] = [s_1].[ThingId] AND [t].[CreatedDate] = [s_1].[LastTransitionDate]
 		) [t1]
 WHERE
-	IIF([s].[ThingId] IS NOT NULL, IIF([t1].[cond] IS NULL OR [t1].[TransitionType] <> N'Delete' OR [t1].[TransitionType] IS NULL, 1, 0), @p) = 1
+	IIF([s].[ThingId] IS NOT NULL, IIF([t1].[ThingId] IS NULL OR [t1].[TransitionType] <> N'Delete' OR [t1].[TransitionType] IS NULL, 1, 0), @p) = 1
 

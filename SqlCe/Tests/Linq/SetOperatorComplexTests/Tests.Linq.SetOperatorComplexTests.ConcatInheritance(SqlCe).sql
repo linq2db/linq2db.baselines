@@ -31,9 +31,9 @@ WHERE
 -- SqlCe
 
 SELECT
-	[m_1].[AuthorId],
+	[m_1].[AuthorId] as [Item1],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator] as [cond],
+	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

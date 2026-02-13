@@ -3,18 +3,18 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_2].[Id1],
+	[m_2].[Item1],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1]
+			[t1].[Item1]
 		FROM
 			(
 				SELECT
-					[m_1].[Id1]
+					[m_1].[Id1] as [Item1]
 				FROM
 					[MasterClass] [m_1]
 				ORDER BY
@@ -22,14 +22,14 @@ FROM
 				LIMIT @take
 			) [t1]
 	) [m_2]
-		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Item1] = [d].[MasterId]
 
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_2].[Id1],
+	[m_2].[Item1],
 	[d].[Id1],
 	[d].[Id2],
 	[d].[Value],
@@ -37,11 +37,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1]
+			[t1].[Item1]
 		FROM
 			(
 				SELECT
-					[m_1].[Id1]
+					[m_1].[Id1] as [Item1]
 				FROM
 					[MasterClass] [m_1]
 				ORDER BY
@@ -49,7 +49,7 @@ FROM
 				LIMIT @take
 			) [t1]
 	) [m_2]
-		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [d].[Id1]
+		INNER JOIN [MasterClass] [d] ON [m_2].[Item1] = [d].[Id1]
 
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

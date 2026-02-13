@@ -1,35 +1,29 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t2"."year_1",
-	"t2"."year_1",
-	"t2"."int_1"
+	"t1"."SmallIntValue",
+	"t1"."SmallIntValue",
+	CAST(3 AS Integer)
 FROM
-	(
-		SELECT
-			"t1"."SmallIntValue" as "year_1",
-			CAST(3 AS Integer) as "int_1"
-		FROM
-			"LinqDataTypes" "t1"
-	) "t2"
+	"LinqDataTypes" "t1"
 UNION
 SELECT
-	"t4"."month_1",
-	"t4"."year_1",
+	"t3"."month_1",
+	"t3"."year_1",
 	CAST(1 AS Integer)
 FROM
 	(
 		SELECT DISTINCT
-			Month("t3"."DateTimeValue") as "month_1",
-			Year("t3"."DateTimeValue") as "year_1"
+			Month("t2"."DateTimeValue") as "month_1",
+			Year("t2"."DateTimeValue") as "year_1"
 		FROM
-			"LinqDataTypes" "t3"
-	) "t4"
+			"LinqDataTypes" "t2"
+	) "t3"
 UNION
 SELECT
-	Year("t5"."DateTimeValue"),
-	Year("t5"."DateTimeValue"),
+	Year("t4"."DateTimeValue"),
+	Year("t4"."DateTimeValue"),
 	CAST(2 AS Integer)
 FROM
-	"LinqDataTypes" "t5"
+	"LinqDataTypes" "t4"
 

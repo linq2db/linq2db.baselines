@@ -219,8 +219,8 @@ DECLARE @Val1 Integer(4) -- Int32
 SET     @Val1 = 1
 DECLARE @Val3 Integer(4) -- Int32
 SET     @Val3 = 3
-DECLARE @cond Integer(4) -- Int32
-SET     @cond = 125
+DECLARE @Field3 Integer(4) -- Int32
+SET     @Field3 = 125
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -256,5 +256,5 @@ WHEN MATCHED AND "Source"."Id" = @Val3 THEN
 UPDATE
 SET
 	"Field4" = @Val5
-WHEN MATCHED AND "Target"."Field3" = @cond THEN DELETE
+WHEN MATCHED AND "Target"."Field3" = @Field3 THEN DELETE
 

@@ -21,10 +21,8 @@ FROM
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 						LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 				WHERE
-					[a_Book_1].[Discriminator] = N'Novel' AND
-					([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-					([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-					[a_Book].[BookId] IS NULL
+					[a_Book_1].[Discriminator] = N'Novel' AND ([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+					([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
 			)
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
@@ -48,24 +46,22 @@ WHERE
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 		WHERE
-			[a_Book_1].[Discriminator] = N'Novel' AND
-			([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-			[a_Book].[BookId] IS NULL
+			[a_Book_1].[Discriminator] = N'Novel' AND ([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
 	)
 
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
+	[m_1].[Item1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]

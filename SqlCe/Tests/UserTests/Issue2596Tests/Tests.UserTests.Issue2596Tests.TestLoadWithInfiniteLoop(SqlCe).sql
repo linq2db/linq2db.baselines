@@ -6,8 +6,8 @@ SELECT
 	[d].[ProductUnitId],
 	[d].[InvoiceId],
 	[d].[ProductId],
-	[a_ProductUnit].[Id] as [cond],
-	[a_Product].[Id] as [cond_1]
+	[a_ProductUnit].[Id] as [Id_2],
+	[a_Product].[Id] as [Id_3]
 FROM
 	(
 		SELECT DISTINCT
@@ -78,8 +78,8 @@ SELECT
 	[d].[CustomInvoiceId],
 	[d].[MeasuresSourceId],
 	[d].[PreviousSourceId],
-	[a_Source].[Id] as [cond],
-	[a_PreviousSource].[Id] as [cond_1]
+	[a_Source].[Id] as [Id_2],
+	[a_PreviousSource].[Id] as [Id_3]
 FROM
 	(
 		SELECT DISTINCT

@@ -36,8 +36,7 @@ FROM
 
 SELECT
 	[a_Book].[BookId] as [Id],
-	[a_Book].[BookName],
-	[a_Book].[BookId] as [Id_1]
+	[a_Book].[BookName]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -47,8 +46,7 @@ WHERE
 UNION ALL
 SELECT
 	[a_Book_1].[BookId] as [Id],
-	[a_Book_1].[BookName],
-	[a_Book_1].[BookId] as [Id_1]
+	[a_Book_1].[BookName]
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -60,14 +58,14 @@ WHERE
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
-	[a_Author].[AuthorId] as [AuthorId_1],
+	[m_1].[Item1],
+	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]
@@ -79,9 +77,9 @@ FROM
 -- SqlCe
 
 SELECT
-	[m_1].[AuthorId],
+	[m_1].[AuthorId] as [Item1],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator] as [cond],
+	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

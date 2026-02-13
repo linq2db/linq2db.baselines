@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[it_1].[cond],
+	[it_1].[not_null],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
 	[it_1].[Count_1]
@@ -20,7 +20,7 @@ FROM
 				[it].[ColorName],
 				[it].[StyleName],
 				[it].[Count] as [Count_1],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(
 					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], [t2].[Count_1] AS [Count]
@@ -36,9 +36,9 @@ SELECT
 	[t1].[Id],
 	[t1].[ColorId],
 	[t1].[StyleId],
-	[a_Color].[Id] as [cond],
+	[a_Color].[Id] as [Id_1],
 	[a_Color].[Name],
-	[a_Style].[Id] as [cond_1],
+	[a_Style].[Id] as [Id_2],
 	[a_Style].[Name] as [Name_1]
 FROM
 	[SomeItem] [t1]

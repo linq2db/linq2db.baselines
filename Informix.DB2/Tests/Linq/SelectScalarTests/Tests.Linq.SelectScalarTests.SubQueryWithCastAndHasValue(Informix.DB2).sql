@@ -7,10 +7,10 @@ FROM
 	Parent t1,
 	(
 		SELECT FIRST 1
-			r.Value1 as cond
+			r.Value1 as HasValue
 		FROM
 			Parent r
 	) t2
 WHERE
-	t2.cond IS NOT NULL
+	t2.HasValue IS NOT NULL
 

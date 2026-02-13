@@ -12,8 +12,8 @@ GROUP BY
 -- SqlCe
 
 SELECT
-	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[m_1].[Id] as [Item1],
+	[d].[Id],
 	[d].[ItemId],
 	[d].[ValueName],
 	[d].[Value] as [Value_1]

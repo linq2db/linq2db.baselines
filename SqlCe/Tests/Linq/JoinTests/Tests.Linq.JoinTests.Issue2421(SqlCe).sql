@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[SectorId],
+	[m_1].[SectorId] as [Item1],
 	[a_User].[UserId]
 FROM
 	[SectorDTO] [m_1]
