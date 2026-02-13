@@ -1,35 +1,29 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t2`.`year_1`,
-	`t2`.`year_1`,
-	`t2`.`int_1`
+	`t1`.`SmallIntValue`,
+	`t1`.`SmallIntValue`,
+	CAST(3 AS SIGNED)
 FROM
-	(
-		SELECT
-			`t1`.`SmallIntValue` as `year_1`,
-			CAST(3 AS SIGNED) as `int_1`
-		FROM
-			`LinqDataTypes` `t1`
-	) `t2`
+	`LinqDataTypes` `t1`
 UNION
 SELECT
-	`t4`.`month_1`,
-	`t4`.`year_1`,
+	`t3`.`month_1`,
+	`t3`.`year_1`,
 	CAST(1 AS SIGNED)
 FROM
 	(
 		SELECT DISTINCT
-			Extract(month from `t3`.`DateTimeValue`) as `month_1`,
-			Extract(year from `t3`.`DateTimeValue`) as `year_1`
+			Extract(month from `t2`.`DateTimeValue`) as `month_1`,
+			Extract(year from `t2`.`DateTimeValue`) as `year_1`
 		FROM
-			`LinqDataTypes` `t3`
-	) `t4`
+			`LinqDataTypes` `t2`
+	) `t3`
 UNION
 SELECT
-	Extract(year from `t5`.`DateTimeValue`),
-	Extract(year from `t5`.`DateTimeValue`),
+	Extract(year from `t4`.`DateTimeValue`),
+	Extract(year from `t4`.`DateTimeValue`),
 	CAST(2 AS SIGNED)
 FROM
-	`LinqDataTypes` `t5`
+	`LinqDataTypes` `t4`
 

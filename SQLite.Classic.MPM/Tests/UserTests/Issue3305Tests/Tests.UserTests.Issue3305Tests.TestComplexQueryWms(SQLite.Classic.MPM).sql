@@ -159,8 +159,8 @@ SELECT
 	[x].[CategoryDimensions],
 	[x].[CategoryQuality],
 	[x].[CategoryTemperature],
-	[x].[cond],
 	[x].[Id_3],
+	[x].[Id_4],
 	[x].[Status],
 	[x].[ResourceLabel],
 	[x].[CustomField1],
@@ -169,7 +169,7 @@ SELECT
 	[x].[CustomLong1],
 	[x].[CustomLong2],
 	[x].[CustomLong3],
-	[x].[Id_4],
+	[x].[Id_5],
 	[x].[MaterialNumber_1],
 	[x].[MaterialDescription_1_1],
 	[x].[MaterialDescription_2_1],
@@ -179,7 +179,7 @@ SELECT
 	[x].[CategoryDimensions_1],
 	[x].[CategoryQuality_1],
 	[x].[CategoryTemperature_1],
-	[x].[Id_5],
+	[x].[Id_6],
 	[x].[BatchNumber],
 	[x].[BundleUnit],
 	[x].[ProductStatus],
@@ -197,7 +197,7 @@ SELECT
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_1]
 		WHERE
-			[x_1].[ResourceID] = [x].[Id_3]
+			[x_1].[ResourceID] = [x].[Id_4]
 	),
 	EXISTS(
 		SELECT
@@ -205,7 +205,7 @@ SELECT
 		FROM
 			[CTE_1] [x_2]
 		WHERE
-			[x_2].[IR_ResourceID] = [x].[Id_3] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+			[x_2].[IR_ResourceID] = [x].[Id_4] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
@@ -234,9 +234,9 @@ FROM
 			[t1].[CategoryDimensions],
 			[t1].[CategoryQuality],
 			[t1].[CategoryTemperature],
-			[t1].[cond],
+			[t1].[Id_3],
 			[i1].[Count_1],
-			[c1].[Id] as [Id_3],
+			[c1].[Id] as [Id_4],
 			[c1].[Status],
 			[c1].[ResourceLabel],
 			[c1].[CustomField1],
@@ -245,7 +245,7 @@ FROM
 			[c1].[CustomLong1],
 			[c1].[CustomLong2],
 			[c1].[CustomLong3],
-			[m1].[Id] as [Id_4],
+			[m1].[Id] as [Id_5],
 			[m1].[MaterialNumber] as [MaterialNumber_1],
 			[m1].[MaterialDescription_1] as [MaterialDescription_1_1],
 			[m1].[MaterialDescription_2] as [MaterialDescription_2_1],
@@ -255,7 +255,7 @@ FROM
 			[m1].[CategoryDimensions] as [CategoryDimensions_1],
 			[m1].[CategoryQuality] as [CategoryQuality_1],
 			[m1].[CategoryTemperature] as [CategoryTemperature_1],
-			[i1].[IR_Id] as [Id_5],
+			[i1].[IR_Id] as [Id_6],
 			[i1].[IR_BatchNumber] as [BatchNumber],
 			[i1].[IR_BundleUnit] as [BundleUnit],
 			[i1].[IR_ProductStatus] as [ProductStatus],
@@ -294,7 +294,7 @@ FROM
 					[m_1].[CategoryDimensions],
 					[m_1].[CategoryQuality],
 					[m_1].[CategoryTemperature],
-					[a1].[Id] as [cond],
+					[a1].[Id] as [Id_3],
 					[a1].[Status],
 					[a1].[CategoryABC] as [CategoryABC_1],
 					[a1].[HeightClass],

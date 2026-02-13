@@ -4,24 +4,24 @@ SET     @blogId = 1
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id_1],
+	[m_1].[Item1],
 	[d_1].[TagId],
 	[a_Tag].[Name]
 FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t1].[Id] as [Id_1]
+			[t1].[Item1]
 		FROM
 			(
 				SELECT DISTINCT
-					[b].[Id]
+					[b].[Id] as [Item1]
 				FROM
 					[Blog] [b]
 				WHERE
 					[b].[Id] = @blogId
 			) [t1]
-				INNER JOIN [Post] [d] ON [t1].[Id] = [d].[BlogId]
+				INNER JOIN [Post] [d] ON [t1].[Item1] = [d].[BlogId]
 	) [m_1]
 		INNER JOIN [PostTag] [d_1] ON [m_1].[Id] = [d_1].[PostId]
 		INNER JOIN [Tag] [a_Tag] ON [d_1].[TagId] = [a_Tag].[Id]
@@ -36,20 +36,20 @@ DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
 SELECT
-	[m_1].[Id],
+	[m_1].[Item1],
 	[d].[Id],
 	[d].[Title],
 	[d].[PostContent]
 FROM
 	(
 		SELECT DISTINCT
-			[b].[Id]
+			[b].[Id] as [Item1]
 		FROM
 			[Blog] [b]
 		WHERE
 			[b].[Id] = @blogId
 	) [m_1]
-		INNER JOIN [Post] [d] ON [m_1].[Id] = [d].[BlogId]
+		INNER JOIN [Post] [d] ON [m_1].[Item1] = [d].[BlogId]
 ORDER BY
 	[d].[Id]
 

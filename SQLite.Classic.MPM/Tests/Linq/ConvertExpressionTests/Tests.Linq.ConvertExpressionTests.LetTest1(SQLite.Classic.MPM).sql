@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[cond]
+	[t1].[ParentID]
 FROM
 	(
 		SELECT
@@ -13,10 +13,10 @@ FROM
 				WHERE
 					[p].[ParentID] = [a_Children].[ParentID]
 				LIMIT 1
-			) as [cond]
+			) as [ParentID]
 		FROM
 			[Parent] [p]
 	) [t1]
 WHERE
-	[t1].[cond] IS NOT NULL
+	[t1].[ParentID] IS NOT NULL
 

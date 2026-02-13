@@ -129,7 +129,7 @@ FROM
 SELECT
 	[m_1].[c1],
 	[d_1].[BookId],
-	[d_1].[cond],
+	[d_1].[Discriminator],
 	[d_1].[BookName],
 	[d_1].[NovelScore],
 	[d_1].[RomanScore]
@@ -160,7 +160,7 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_Book_1].[Discriminator] as [cond],
+				[a_Book_1].[Discriminator],
 				[a_Book_1].[BookId],
 				[a_Book_1].[BookName],
 				[a_Book_1].[NovelScore],
@@ -196,14 +196,14 @@ WHERE
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
+	[m_1].[Item1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]

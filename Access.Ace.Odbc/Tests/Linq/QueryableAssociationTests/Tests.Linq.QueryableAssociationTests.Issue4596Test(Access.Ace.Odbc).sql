@@ -2,8 +2,7 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[cond],
-	[m_1].[cond_1],
+	[m_1].[C1],
 	[d].[Id],
 	[d].[FormId],
 	[d].[OrderIndex],
@@ -14,25 +13,22 @@ FROM
 	(
 		SELECT TOP 1
 			[t1].[Id],
-			[t1].[C1] = 'T' as [cond],
-			[t1].[C1] <> 'T' as [cond_1]
+			[t1].[C1]
 		FROM
 			[Issue4596Form] [t1]
 	) [m_1]
 		INNER JOIN [Issue4596Item] [d] ON ([d].[FormId] = [m_1].[Id])
 ORDER BY
-	IIF([m_1].[cond], [d].[OrderIndex], 0),
-	IIF([m_1].[cond_1], [d].[Name1], ''),
-	IIF([m_1].[cond_1], [d].[Name2], ''),
-	IIF([m_1].[cond_1], [d].[Name3], '')
+	IIF([m_1].[C1] = 'T', [d].[OrderIndex], 0),
+	IIF([m_1].[C1] <> 'T', [d].[Name1], ''),
+	IIF([m_1].[C1] <> 'T', [d].[Name2], ''),
+	IIF([m_1].[C1] <> 'T', [d].[Name3], '')
 
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
 	[t1].[Id],
-	[t1].[C1],
-	[t1].[C1] = 'T',
-	[t1].[C1] <> 'T'
+	[t1].[C1]
 FROM
 	[Issue4596Form] [t1]
 

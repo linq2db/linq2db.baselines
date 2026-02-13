@@ -22,8 +22,8 @@ FROM
 	) t2
 
 -- Informix.DB2 Informix
-DECLARE @cond SmallInt(2) -- Int16
-SET     @cond = 1234
+DECLARE @ID SmallInt(2) -- Int16
+SET     @ID = 1234
 
 INSERT INTO InsertIssueTest
 (
@@ -43,7 +43,7 @@ FROM
 			InsertIssueTest t1
 				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
-			t1.ID = @cond
+			t1.ID = @ID
 	) t2
 
 -- Informix.DB2 Informix

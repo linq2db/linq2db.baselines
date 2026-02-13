@@ -1,52 +1,52 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
-DECLARE @cond NVarChar(3) -- String
-SET     @cond = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
+DECLARE @DeliveryCounterParty NVarChar(3) -- String
+SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	[al_group_2].[Id],

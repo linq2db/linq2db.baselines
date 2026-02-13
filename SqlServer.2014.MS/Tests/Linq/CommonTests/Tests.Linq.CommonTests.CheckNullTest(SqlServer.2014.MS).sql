@@ -3,7 +3,7 @@
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[t1].[cond],
+	[t1].[not_null],
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[t1].[GrandChildID],
@@ -16,7 +16,7 @@ FROM
 				[a].[ParentID],
 				[a].[ChildID],
 				[a].[GrandChildID],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				[GrandChild] [a]
 			WHERE

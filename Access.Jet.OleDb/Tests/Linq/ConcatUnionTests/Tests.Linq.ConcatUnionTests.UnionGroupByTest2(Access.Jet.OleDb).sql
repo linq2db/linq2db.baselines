@@ -1,35 +1,29 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t2].[year_1],
-	[t2].[year_1],
-	[t2].[int_1]
+	[t1].[SmallIntValue],
+	[t1].[SmallIntValue],
+	3
 FROM
-	(
-		SELECT
-			[t1].[SmallIntValue] as [year_1],
-			3 as [int_1]
-		FROM
-			[LinqDataTypes] [t1]
-	) [t2]
+	[LinqDataTypes] [t1]
 UNION
 SELECT
-	[t4].[month_1],
-	[t4].[year_1],
+	[t3].[month_1],
+	[t3].[year_1],
 	1
 FROM
 	(
 		SELECT DISTINCT
-			DatePart('m', [t3].[DateTimeValue]) as [month_1],
-			DatePart('yyyy', [t3].[DateTimeValue]) as [year_1]
+			DatePart('m', [t2].[DateTimeValue]) as [month_1],
+			DatePart('yyyy', [t2].[DateTimeValue]) as [year_1]
 		FROM
-			[LinqDataTypes] [t3]
-	) [t4]
+			[LinqDataTypes] [t2]
+	) [t3]
 UNION
 SELECT
-	DatePart('yyyy', [t5].[DateTimeValue]),
-	DatePart('yyyy', [t5].[DateTimeValue]),
+	DatePart('yyyy', [t4].[DateTimeValue]),
+	DatePart('yyyy', [t4].[DateTimeValue]),
 	2
 FROM
-	[LinqDataTypes] [t5]
+	[LinqDataTypes] [t4]
 

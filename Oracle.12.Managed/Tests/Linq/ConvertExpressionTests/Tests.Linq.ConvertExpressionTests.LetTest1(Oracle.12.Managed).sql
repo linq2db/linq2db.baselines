@@ -1,12 +1,12 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."cond"
+	t1."ParentID"
 FROM
 	"Parent" p
 		OUTER APPLY (
 			SELECT
-				a_Children."ParentID" as "cond"
+				a_Children."ParentID"
 			FROM
 				"Child" a_Children
 			WHERE
@@ -14,5 +14,5 @@ FROM
 			FETCH NEXT 1 ROWS ONLY
 		) t1
 WHERE
-	t1."cond" IS NOT NULL
+	t1."ParentID" IS NOT NULL
 

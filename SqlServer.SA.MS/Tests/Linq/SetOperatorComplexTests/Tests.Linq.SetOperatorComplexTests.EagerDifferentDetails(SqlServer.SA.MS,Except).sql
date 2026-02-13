@@ -7,13 +7,12 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[Id_1] as [Id]
+			[t3].[Id]
 		FROM
 			(
 				SELECT
 					[a_Book].[BookId] as [Id],
-					[a_Book].[BookName],
-					[a_Book].[BookId] as [Id_1]
+					[a_Book].[BookName]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -23,8 +22,7 @@ FROM
 				EXCEPT
 				SELECT
 					[a_Book_1].[BookId] as [Id],
-					[a_Book_1].[BookName],
-					NULL as [Id_1]
+					[a_Book_1].[BookName]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -40,8 +38,7 @@ FROM
 
 SELECT
 	[a_Book].[BookId],
-	[a_Book].[BookName],
-	[a_Book].[BookId]
+	[a_Book].[BookName]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -51,8 +48,7 @@ WHERE
 EXCEPT
 SELECT
 	[a_Book_1].[BookId],
-	[a_Book_1].[BookName],
-	NULL
+	[a_Book_1].[BookName]
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -64,14 +60,14 @@ WHERE
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[AuthorId],
+	[m_1].[Item1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Book].[BookId],
-			[t1].[AuthorId]
+			[t1].[AuthorId] as [Item1]
 		FROM
 			[Author] [t1]
 				INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [t1].[AuthorId]

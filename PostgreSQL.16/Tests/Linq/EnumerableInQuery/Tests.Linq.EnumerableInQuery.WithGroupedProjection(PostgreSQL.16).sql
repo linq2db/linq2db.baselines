@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	it_1.cond,
+	it_1.not_null,
 	it_1."ColorName",
 	it_1."StyleName",
 	it_1."Count_1",
@@ -38,7 +38,7 @@ FROM
 				it.field1,
 				it.field2,
 				it.field3,
-				1 as cond
+				1 as not_null
 			FROM
 				(VALUES
 					(t1."ColorName",t1."Conditional",t1."StyleName",CASE

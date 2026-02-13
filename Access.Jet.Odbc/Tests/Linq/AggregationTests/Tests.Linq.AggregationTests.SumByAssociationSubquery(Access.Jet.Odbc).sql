@@ -1,19 +1,13 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[g_2].[Key_1],
-	SUM(IIF([g_2].[Value_1] IS NULL, 0, [g_2].[Value_1]))
+	[g_1].[Id],
+	SUM(IIF([a_Values].[Value] IS NULL, 0, [a_Values].[Value]))
 FROM
-	(
-		SELECT
-			[g_1].[Id] as [Key_1],
-			[a_Values].[Value] as [Value_1]
-		FROM
-			[Item] [g_1]
-				LEFT JOIN [ItemValue] [a_Values] ON ([g_1].[Id] = [a_Values].[ItemId] AND [a_Values].[ValueName] = 'Value1')
-	) [g_2]
+	[Item] [g_1]
+		LEFT JOIN [ItemValue] [a_Values] ON ([g_1].[Id] = [a_Values].[ItemId] AND [a_Values].[ValueName] = 'Value1')
 GROUP BY
-	[g_2].[Key_1]
+	[g_1].[Id]
 
 -- Access.Jet.Odbc AccessODBC
 

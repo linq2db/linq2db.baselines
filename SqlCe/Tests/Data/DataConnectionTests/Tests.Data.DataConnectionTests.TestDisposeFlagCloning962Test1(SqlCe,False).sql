@@ -1,10 +1,10 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[CategoryID],
+	[m_1].[CategoryID] as [Item1],
 	[d].[ProductID],
 	[d].[ProductName],
-	[d].[CategoryID] as [CategoryID_1],
+	[d].[CategoryID],
 	[d].[QuantityPerUnit]
 FROM
 	[Categories] [m_1]

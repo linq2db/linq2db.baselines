@@ -2,8 +2,7 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[cond],
-	[m_1].[cond_1],
+	[m_1].[C1],
 	[d].[Id],
 	[d].[FormId],
 	[d].[OrderIndex],
@@ -14,25 +13,22 @@ FROM
 	(
 		SELECT TOP (1)
 			[t1].[Id],
-			IIF([t1].[C1] = N'T', 1, 0) as [cond],
-			IIF([t1].[C1] <> N'T', 1, 0) as [cond_1]
+			[t1].[C1]
 		FROM
 			[Issue4596Form] [t1]
 	) [m_1]
 		INNER JOIN [Issue4596Item] [d] ON [d].[FormId] = [m_1].[Id]
 ORDER BY
-	IIF([m_1].[cond] = 1, [d].[OrderIndex], 0),
-	IIF([m_1].[cond_1] = 1, [d].[Name1], N''),
-	IIF([m_1].[cond_1] = 1, [d].[Name2], N''),
-	IIF([m_1].[cond_1] = 1, [d].[Name3], N'')
+	IIF([m_1].[C1] = N'T', [d].[OrderIndex], 0),
+	IIF([m_1].[C1] <> N'T', [d].[Name1], N''),
+	IIF([m_1].[C1] <> N'T', [d].[Name2], N''),
+	IIF([m_1].[C1] <> N'T', [d].[Name3], N'')
 
 -- SqlServer.SA SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[Id],
-	[t1].[C1],
-	IIF([t1].[C1] = N'T', 1, 0),
-	IIF([t1].[C1] <> N'T', 1, 0)
+	[t1].[C1]
 FROM
 	[Issue4596Form] [t1]
 

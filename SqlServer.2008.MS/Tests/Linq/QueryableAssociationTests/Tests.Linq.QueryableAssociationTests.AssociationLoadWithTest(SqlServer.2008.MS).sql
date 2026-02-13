@@ -3,7 +3,7 @@
 SELECT
 	[t2].[Id],
 	[t2].[OwnerStr],
-	[t1].[cond],
+	[t1].[Id],
 	[t1].[StrValue],
 	[a_OtherMapped].[Id],
 	[a_OtherMapped].[StrValue]
@@ -11,7 +11,7 @@ FROM
 	[SomeEntity] [t2]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Other].[Id] as [cond],
+				[a_Other].[Id],
 				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]

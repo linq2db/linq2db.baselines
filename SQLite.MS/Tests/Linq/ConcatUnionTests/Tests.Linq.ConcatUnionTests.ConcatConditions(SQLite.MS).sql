@@ -19,7 +19,7 @@ FROM
 				UNION ALL
 				SELECT
 					NULL as [Parent1],
-					NULL as [ParentID]
+					[p_1].[ParentID]
 				FROM
 					[Child] [t2]
 						LEFT JOIN [Parent] [p_1] ON [p_1].[ParentID] = [t2].[ParentID]
@@ -37,8 +37,7 @@ SELECT
 	[t1].[Value1],
 	[t1].[Parent1],
 	[t1].[ParentID],
-	[t1].[Value1],
-	[t1].[ParentID]
+	[t1].[Value1]
 FROM
 	(
 		SELECT
@@ -54,7 +53,6 @@ SELECT
 	[p_1].[ParentID] IS NULL,
 	[p_1].[ParentID],
 	[p_1].[Value1],
-	NULL,
 	NULL,
 	NULL,
 	NULL

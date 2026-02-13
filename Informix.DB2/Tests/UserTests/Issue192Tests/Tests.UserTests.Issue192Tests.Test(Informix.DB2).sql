@@ -67,15 +67,15 @@ WHERE
 	t1.BoolValue = 'Y'
 
 -- Informix.DB2 Informix
-DECLARE @cond VarChar(36) -- String
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- String
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @cond
+	t1.GuidValue = @GuidValue
 
 -- Informix.DB2 Informix
 

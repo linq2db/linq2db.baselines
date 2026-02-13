@@ -96,16 +96,16 @@ ORDER BY
 -- SqlServer.2008
 
 SELECT
-	[m_2].[cond],
 	[m_2].[Id],
+	[m_2].[Id_1],
 	[d_2].[Id],
 	[d_2].[Value_1],
 	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [cond],
-			[t1].[Id]
+			[a_Parent].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -132,8 +132,7 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[Id] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
@@ -141,7 +140,7 @@ FROM
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
 ORDER BY
-	[m_2].[Id]
+	[m_2].[Id_1]
 
 -- SqlServer.2008
 
@@ -181,16 +180,16 @@ ORDER BY
 -- SqlServer.2008
 
 SELECT
-	[m_2].[cond],
 	[m_2].[Id],
+	[m_2].[Id_1],
 	[d_2].[Id],
 	[d_2].[Value_1],
 	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [cond],
-			[t1].[Id]
+			[a_Parent].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -217,8 +216,7 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[Id] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
@@ -226,7 +224,7 @@ FROM
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
 ORDER BY
-	[m_2].[Id]
+	[m_2].[Id_1]
 
 -- SqlServer.2008
 

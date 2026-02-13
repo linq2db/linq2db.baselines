@@ -1,47 +1,47 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`m_1`.`ParentID`,
+	`m_1`.`Item1`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`n`.`ParentID`
+			`n`.`ParentID` as `Item1`
 		FROM
 			`Parent` `n`
 	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
+		INNER JOIN `Child` `d` ON `m_1`.`Item1` = `d`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`m_1`.`ParentID`,
+	`m_1`.`Item1`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`n`.`ParentID`
+			`n`.`ParentID` as `Item1`
 		FROM
 			`Parent` `n`
 	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
+		INNER JOIN `Child` `d` ON `m_1`.`Item1` = `d`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`m_1`.`ParentID`,
+	`m_1`.`Item1`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`n`.`ParentID`
+			`n`.`ParentID` as `Item1`
 		FROM
 			`Parent` `n`
 	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
+		INNER JOIN `Child` `d` ON `m_1`.`Item1` = `d`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 

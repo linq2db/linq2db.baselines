@@ -1,13 +1,13 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[m_1].[ParentID],
+	[m_1].[Item1],
 	[d_1].[Key_1],
 	[d_1].[Children]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[ParentID]
+			[c_1].[ParentID] as [Item1]
 		FROM
 			[Parent] [c_1]
 	) [m_1]
@@ -18,7 +18,7 @@ FROM
 			FROM
 				[Child] [d]
 			WHERE
-				[m_1].[ParentID] = [d].[ParentID]
+				[m_1].[Item1] = [d].[ParentID]
 			GROUP BY
 				[d].[ParentID]
 		) [d_1]

@@ -1,14 +1,9 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	p.c1
+	toFloat64(p.MoneyValue)
 FROM
-	(
-		SELECT
-			toFloat64(t.MoneyValue) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > toFloat64(0)
+	toFloat64(p.MoneyValue) > toFloat64(0)
 

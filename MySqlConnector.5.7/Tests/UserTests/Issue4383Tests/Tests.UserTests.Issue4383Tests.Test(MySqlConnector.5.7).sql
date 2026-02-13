@@ -2,6 +2,7 @@
 
 SELECT
 	`m_1`.`Id`,
+	`m_1`.`Id`,
 	`m_1`.`Id_1`,
 	`d_1`.`CHAIN_ID`
 FROM

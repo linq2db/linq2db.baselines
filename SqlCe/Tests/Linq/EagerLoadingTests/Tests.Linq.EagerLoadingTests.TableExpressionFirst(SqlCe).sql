@@ -32,7 +32,7 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[a_Details].[UserId] as [cond],
+	[a_Details].[UserId],
 	[a_Details].[Age]
 FROM
 	[UserIssue3128] [t1]
