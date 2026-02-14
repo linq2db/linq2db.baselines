@@ -8,7 +8,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			MAX([y].[ChildID])
+			MAX([y].[ChildID]) as [Max_1]
 		FROM
 			[Child] [y]
 		GROUP BY

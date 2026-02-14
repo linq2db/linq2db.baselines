@@ -13,7 +13,7 @@ FROM
 					SUM(CASE
 						WHEN [d].[not_null] IS NOT NULL THEN [d].[WithParentReference]
 						ELSE CAST(0 AS Decimal)
-					END)
+					END) as [WithParentReference]
 				FROM
 					(
 						SELECT
@@ -38,7 +38,7 @@ FROM
 					Sum(CASE
 						WHEN [d_1].[not_null] IS NOT NULL THEN [d_1].[WithParentReferenceCustom1]
 						ELSE CAST(0 AS Decimal)
-					END)
+					END) as [SumCustom]
 				FROM
 					(
 						SELECT
@@ -63,7 +63,7 @@ FROM
 					Sum(CASE
 						WHEN [d_2].[not_null] IS NOT NULL THEN [d_2].[WithParentReferenceCustom2]
 						ELSE CAST(0 AS Decimal)
-					END)
+					END) as [SumCustom]
 				FROM
 					(
 						SELECT
@@ -88,7 +88,7 @@ FROM
 					SUM(CASE
 						WHEN [d_3].[not_null] IS NOT NULL THEN [d_3].[WithoutParentReference]
 						ELSE CAST(0 AS Decimal)
-					END)
+					END) as [WithoutParentReference]
 				FROM
 					(
 						SELECT

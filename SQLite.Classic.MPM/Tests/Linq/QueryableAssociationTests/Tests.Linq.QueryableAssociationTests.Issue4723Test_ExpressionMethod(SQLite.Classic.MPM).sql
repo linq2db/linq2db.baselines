@@ -4,7 +4,7 @@ SELECT
 	[t1].[Id],
 	(
 		SELECT
-			[se].[Value]
+			[se].[Value] as [ExpressionMethod]
 		FROM
 			[Issue4723Table2] [se]
 		WHERE

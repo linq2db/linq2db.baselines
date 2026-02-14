@@ -8,7 +8,7 @@ FROM
 WHERE
 	[r].[rowid] IN (
 		SELECT
-			[r_1].[rowid]
+			[r_1].[rowid] as [RowId_1]
 		FROM
 			[FTS3_TABLE] [r_1]
 		WHERE

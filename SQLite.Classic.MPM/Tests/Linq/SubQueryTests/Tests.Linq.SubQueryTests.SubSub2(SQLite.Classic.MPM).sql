@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			[a_Children].[ParentID] + 1
+			[a_Children].[ParentID] + 1 as [Count_1]
 		FROM
 			[Child] [a_Children]
 		WHERE

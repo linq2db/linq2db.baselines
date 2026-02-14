@@ -14,7 +14,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Child] [p]
 				LEFT JOIN [Parent] [a_Parent_2] ON [p].[ParentID] = [a_Parent_2].[ParentID]
@@ -27,7 +27,7 @@ FROM
 			[f].[Value1],
 			(
 				SELECT
-					SUM([c_1].[ChildID])
+					SUM([c_1].[ChildID]) as [SubSum]
 				FROM
 					[Child] [c_1]
 						LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]

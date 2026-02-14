@@ -5,7 +5,7 @@ UPDATE
 SET
 	[VarcharValue] = (
 		SELECT
-			GROUP_CONCAT([a_Children].[VarcharValue], ' | ')
+			GROUP_CONCAT([a_Children].[VarcharValue], ' | ') as [Result_1]
 		FROM
 			[SampleClass] [a_Children]
 		WHERE
@@ -13,7 +13,7 @@ SET
 	),
 	[NVarcharValue] = (
 		SELECT
-			GROUP_CONCAT([a_Children].[VarcharValue], ' | ')
+			GROUP_CONCAT([a_Children].[VarcharValue], ' | ') as [Result_1]
 		FROM
 			[SampleClass] [a_Children]
 		WHERE

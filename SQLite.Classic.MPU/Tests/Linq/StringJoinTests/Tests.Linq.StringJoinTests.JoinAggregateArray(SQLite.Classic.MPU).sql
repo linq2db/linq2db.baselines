@@ -4,7 +4,7 @@ SELECT
 	Coalesce([t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || ', ' || Coalesce([t].[VarcharValue], '') || ', ' || Coalesce([t].[NVarcharValue], ''),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[AggregatedNotNullFilteredDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[AggregatedNotNullFilteredDistinct], ''), ', '), '') as [AggregatedNotNullFilteredDistinct]
 		FROM
 			(
 				SELECT DISTINCT
@@ -25,7 +25,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t4].[AggregatedFilteredDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t4].[AggregatedFilteredDistinct], ''), ', '), '') as [AggregatedFilteredDistinct]
 		FROM
 			(
 				SELECT DISTINCT

@@ -37,10 +37,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -55,7 +55,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Zero]
+			[r].[Zero] as [One]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -70,7 +70,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [One]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -85,7 +85,7 @@ WHERE
 			[r].[Zero]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Zero]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -127,10 +127,10 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -145,7 +145,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Zero]
+			[r].[Zero] as [One]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -160,7 +160,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [One]
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -175,6 +175,6 @@ WHERE
 			[r].[Zero]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Zero]
 	)
 

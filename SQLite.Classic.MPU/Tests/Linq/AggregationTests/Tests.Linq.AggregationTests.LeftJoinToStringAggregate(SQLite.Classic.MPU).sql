@@ -5,7 +5,7 @@ SELECT
 	[u].[Name],
 	(
 		SELECT
-			GROUP_CONCAT([t1].[Name], ', ')
+			GROUP_CONCAT([t1].[Name], ', ') as [MachineNames]
 		FROM
 			(
 				SELECT

@@ -11,7 +11,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					SUM([t1].[MoneyValue])
+					SUM([t1].[MoneyValue]) as [x]
 				FROM
 					[LinqDataTypes] [t1]
 			) as [x]

@@ -6,8 +6,8 @@ SET
 	[One] = [Ints].[Two] * 5,
 	([Two], [Three]) = (
 		SELECT
-			[Ints].[Two] * 10,
-			[j].[Three] * 100
+			[Ints].[Two] * 10 as [c1],
+			[j].[Three] * 100 as [c2]
 		FROM
 			[Ints] [j]
 		WHERE

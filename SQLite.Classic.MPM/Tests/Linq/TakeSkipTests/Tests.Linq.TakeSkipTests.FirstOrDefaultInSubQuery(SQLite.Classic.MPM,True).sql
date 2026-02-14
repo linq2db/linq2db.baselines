@@ -12,7 +12,7 @@ FROM
 			[x].[Id],
 			(
 				SELECT
-					[a_Confirmations].[Date]
+					[a_Confirmations].[Date] as [CreationDate]
 				FROM
 					[Confirmation] [a_Confirmations]
 				WHERE

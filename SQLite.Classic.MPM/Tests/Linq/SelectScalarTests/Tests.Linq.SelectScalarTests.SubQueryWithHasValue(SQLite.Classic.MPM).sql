@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			[r].[Value1]
+			[r].[Value1] as [HasValue]
 		FROM
 			[Parent] [r]
 		LIMIT 1

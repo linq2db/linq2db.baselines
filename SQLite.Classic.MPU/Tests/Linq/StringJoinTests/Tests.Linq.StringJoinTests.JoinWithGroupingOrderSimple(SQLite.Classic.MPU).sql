@@ -4,7 +4,7 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '') as [NotNullableeOrderedNoNulls]
 		FROM
 			(
 				SELECT
@@ -20,7 +20,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableValue], ''), ', '), '') as [NotNullableeOrderedNulls]
 		FROM
 			(
 				SELECT

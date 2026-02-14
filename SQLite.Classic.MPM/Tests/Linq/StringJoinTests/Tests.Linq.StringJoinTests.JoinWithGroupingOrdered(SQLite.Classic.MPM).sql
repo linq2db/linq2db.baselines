@@ -4,7 +4,7 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '') as [Nullable_1]
 		FROM
 			(
 				SELECT
@@ -23,7 +23,7 @@ SELECT
 			Coalesce(GROUP_CONCAT(CASE
 				WHEN [t3].[NullableValue] <> '' THEN [t3].[NullableValue]
 				ELSE NULL
-			END, ', '), '')
+			END, ', '), '') as [NullableFiltered]
 		FROM
 			(
 				SELECT
@@ -39,7 +39,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t4].[NotNullableValue], ', '), '')
+			Coalesce(GROUP_CONCAT([t4].[NotNullableValue], ', '), '') as [NotNullable]
 		FROM
 			(
 				SELECT
@@ -55,7 +55,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t5].[NullableValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t5].[NullableValue], ''), ', '), '') as [NullableDoubleOrder]
 		FROM
 			(
 				SELECT
@@ -71,7 +71,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t6].[NotNullableValue], ', '), '')
+			Coalesce(GROUP_CONCAT([t6].[NotNullableValue], ', '), '') as [NotNullableDoubleOrder]
 		FROM
 			(
 				SELECT
@@ -87,7 +87,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t7].[NotNullableValue], ', '), '')
+			Coalesce(GROUP_CONCAT([t7].[NotNullableValue], ', '), '') as [NotNullableeOrderedCustom]
 		FROM
 			(
 				SELECT

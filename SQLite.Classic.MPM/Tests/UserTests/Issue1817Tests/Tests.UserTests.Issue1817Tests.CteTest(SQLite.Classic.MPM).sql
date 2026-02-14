@@ -30,7 +30,7 @@ SELECT
 	[t1].[Name],
 	(
 		SELECT
-			MAX([t4].[OperDate])
+			MAX([t4].[OperDate]) as [max_1]
 		FROM
 			(
 				SELECT
