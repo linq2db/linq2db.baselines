@@ -16,7 +16,7 @@ SET
 			CASE
 				WHEN [gt_s_one].[col3] = 'empty' THEN ''
 				ELSE CAST([y1_1].[id] AS NVarChar(11))
-			END
+			END as [c1]
 		FROM
 			[gt_s_one] [x_1]
 				LEFT JOIN [access_mode] [y1_1] ON Upper(Str_Replace([x_1].[col3], 'auth.', '')) = Upper([y1_1].[code]) OR [x_1].[col3] IS NULL AND [y1_1].[code] IS NULL
