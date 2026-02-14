@@ -5,7 +5,7 @@ UPDATE
 SET
 	`t`.`VarcharValue` = (
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '') as `Result_1`
 		FROM
 			`SampleClass` `a_Children`
 		WHERE
@@ -13,7 +13,7 @@ SET
 	),
 	`t`.`NVarcharValue` = (
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '') as `Result_1`
 		FROM
 			`SampleClass` `a_Children`
 		WHERE

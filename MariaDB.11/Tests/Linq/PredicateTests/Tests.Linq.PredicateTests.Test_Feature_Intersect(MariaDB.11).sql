@@ -37,10 +37,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -55,7 +55,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Zero`
+			`r`.`Zero` as `One`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -70,7 +70,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `One`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -85,7 +85,7 @@ WHERE
 			`r`.`Zero`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Zero`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -127,10 +127,10 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -145,7 +145,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Zero`
+			`r`.`Zero` as `One`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -160,7 +160,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `One`
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -175,6 +175,6 @@ WHERE
 			`r`.`Zero`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Zero`
 	)
 

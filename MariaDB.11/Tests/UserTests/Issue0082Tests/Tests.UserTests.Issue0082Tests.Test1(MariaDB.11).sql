@@ -4,7 +4,7 @@ SELECT
 	`t1`.`ParentID`,
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `CountResult`
 		FROM
 			`Child` `od`
 		WHERE
@@ -12,7 +12,7 @@ SELECT
 	),
 	(
 		SELECT
-			SUM(`od_1`.`ParentID`)
+			SUM(`od_1`.`ParentID`) as `SumResult`
 		FROM
 			`Child` `od_1`
 		WHERE
@@ -39,7 +39,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					COUNT(*)
+					COUNT(*) as `CountResult`
 				FROM
 					`Child` `od`
 				WHERE
@@ -48,7 +48,7 @@ FROM
 			`x`.`ParentID`,
 			(
 				SELECT
-					SUM(`od_1`.`ParentID`)
+					SUM(`od_1`.`ParentID`) as `SumResult`
 				FROM
 					`Child` `od_1`
 				WHERE

@@ -10,7 +10,7 @@ SELECT
 	Concat(`t1`.`LastName`, ', ', `t1`.`FirstName`),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `DoctorCount`
 		FROM
 			`Doctor` `d`
 		WHERE
@@ -31,7 +31,7 @@ SELECT
 	Concat(`i`.`LastName`, ', ', `i`.`FirstName`),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `DoctorCount`
 		FROM
 			`Doctor` `d`
 		WHERE

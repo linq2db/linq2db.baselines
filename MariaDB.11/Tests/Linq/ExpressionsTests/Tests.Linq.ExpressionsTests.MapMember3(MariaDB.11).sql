@@ -5,7 +5,7 @@ SET     @n = 2
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`Child` `a_Children`
 		WHERE
