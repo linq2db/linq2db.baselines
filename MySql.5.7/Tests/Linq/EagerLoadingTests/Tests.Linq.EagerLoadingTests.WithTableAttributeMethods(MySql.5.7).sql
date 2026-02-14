@@ -41,7 +41,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`UserIssue3128` `t1`
 	) > 0

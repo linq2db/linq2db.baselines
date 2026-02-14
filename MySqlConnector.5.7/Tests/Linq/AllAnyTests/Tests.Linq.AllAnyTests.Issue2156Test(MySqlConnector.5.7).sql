@@ -32,7 +32,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			`e_1`.`PersonID`
+			`e_1`.`PersonID` as `ID`
 		FROM
 			`Person` `e_1`
 		WHERE

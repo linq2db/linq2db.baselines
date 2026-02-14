@@ -38,7 +38,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`Child` `c_4`
 		WHERE

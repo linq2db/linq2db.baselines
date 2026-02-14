@@ -11,7 +11,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`Child` `c_2`
 		WHERE
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT
-			`c_3`.`ParentID`
+			`c_3`.`ParentID` as `First1`
 		FROM
 			`Child` `c_3`
 		WHERE

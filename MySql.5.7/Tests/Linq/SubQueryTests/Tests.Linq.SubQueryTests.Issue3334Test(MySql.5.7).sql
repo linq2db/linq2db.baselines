@@ -17,7 +17,7 @@ SELECT
 	),
 	(
 		SELECT
-			`entity2_1`.`PersonID`
+			`entity2_1`.`PersonID` as `ID`
 		FROM
 			`Person` `entity2_1`
 		WHERE

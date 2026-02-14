@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			MAX(`a_Children`.`ParentID`)
+			MAX(`a_Children`.`ParentID`) as `max_1`
 		FROM
 			`Child` `a_Children`
 		WHERE

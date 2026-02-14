@@ -45,7 +45,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		FROM DUAL
 		WHERE
 			EXISTS(
@@ -165,7 +165,7 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		FROM DUAL
 		WHERE
 			EXISTS(

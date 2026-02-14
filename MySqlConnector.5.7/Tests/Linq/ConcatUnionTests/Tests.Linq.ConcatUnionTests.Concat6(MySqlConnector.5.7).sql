@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`GrandChild` `a_GrandChildren`
 		WHERE
@@ -24,7 +24,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`GrandChild` `a_GrandChildren_1`
 		WHERE
