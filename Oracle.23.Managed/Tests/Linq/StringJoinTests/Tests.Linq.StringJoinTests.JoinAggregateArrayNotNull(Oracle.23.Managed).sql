@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
+			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '') as "NotNullValue"
 		FROM
 			(
 				SELECT CAST(t."NullableValue" AS NVarChar2(50)) AS "item" FROM sys.dual

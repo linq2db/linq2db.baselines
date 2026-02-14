@@ -17,9 +17,9 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * t6."Value1") * :int1,
-			("UpdatedEntities"."Value2" * t6."Value2") * :int2,
-			("UpdatedEntities"."Value3" * t6."Value3") * :int3
+			("UpdatedEntities"."Value1" * t6."Value1") * :int1 as "c1",
+			("UpdatedEntities"."Value2" * t6."Value2") * :int2 as "c2",
+			("UpdatedEntities"."Value3" * t6."Value3") * :int3 as "c3"
 		FROM
 			(
 				SELECT

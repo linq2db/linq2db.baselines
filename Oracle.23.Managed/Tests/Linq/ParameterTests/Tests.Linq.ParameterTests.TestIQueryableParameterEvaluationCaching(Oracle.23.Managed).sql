@@ -13,7 +13,7 @@ FROM
 WHERE
 	t1."PersonID" IN (
 		SELECT
-			p."PersonID"
+			p."PersonID" as ID
 		FROM
 			"Person" p
 		WHERE
@@ -35,7 +35,7 @@ FROM
 WHERE
 	t1."PersonID" IN (
 		SELECT
-			p."PersonID"
+			p."PersonID" as ID
 		FROM
 			"Person" p
 		WHERE
@@ -57,7 +57,7 @@ FROM
 WHERE
 	t1."PersonID" IN (
 		SELECT
-			p."PersonID"
+			p."PersonID" as ID
 		FROM
 			"Person" p
 		WHERE
@@ -79,7 +79,7 @@ FROM
 WHERE
 	t1."PersonID" IN (
 		SELECT
-			p."PersonID"
+			p."PersonID" as ID
 		FROM
 			"Person" p
 		WHERE
@@ -101,7 +101,7 @@ FROM
 WHERE
 	t1."PersonID" IN (
 		SELECT
-			p."PersonID"
+			p."PersonID" as ID
 		FROM
 			"Person" p
 		WHERE

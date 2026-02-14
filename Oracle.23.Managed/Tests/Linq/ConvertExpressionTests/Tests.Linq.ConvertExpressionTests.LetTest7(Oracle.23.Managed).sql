@@ -18,7 +18,7 @@ SELECT
 	END as "Any_1",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"Child" c_3
 		WHERE
