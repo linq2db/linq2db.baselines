@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count6]
 		FROM
 			[Child] [c_1]
 		WHERE

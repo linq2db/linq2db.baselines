@@ -24,7 +24,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Employees] [a_Employees]
 		WHERE

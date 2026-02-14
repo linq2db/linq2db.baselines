@@ -7,7 +7,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Orders] [a_Orders]
 		WHERE

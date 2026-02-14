@@ -23,7 +23,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[EmployeeTerritories] [a_EmployeeTerritories]
 		WHERE

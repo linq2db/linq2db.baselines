@@ -4,7 +4,7 @@ SELECT
 	[outfeed].[Id],
 	(
 		SELECT
-			[t1].[Value]
+			[t1].[Value] as [Value_1]
 		FROM
 			(
 				SELECT NULL [Key], NULL [Value] WHERE 1 = 0
@@ -20,7 +20,7 @@ SELECT
 	),
 	(
 		SELECT
-			[t2].[Value]
+			[t2].[Value] as [Value_1]
 		FROM
 			(
 				SELECT NULL [Key], NULL [Value] WHERE 1 = 0

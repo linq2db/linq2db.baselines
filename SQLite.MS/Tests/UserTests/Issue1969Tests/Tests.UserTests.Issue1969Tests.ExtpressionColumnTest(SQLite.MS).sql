@@ -5,7 +5,7 @@ SELECT
 	[c_1].[NAME],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOf]
 		FROM
 			[KOMPO] [k_1]
 		WHERE
@@ -17,7 +17,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOf]
 		FROM
 			[KOMPO] [k_2]
 		WHERE

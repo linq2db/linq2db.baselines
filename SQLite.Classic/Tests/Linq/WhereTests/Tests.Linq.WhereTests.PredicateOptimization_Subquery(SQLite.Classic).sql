@@ -12,7 +12,7 @@ FROM
 WHERE
 	(
 		SELECT
-			strftime('%Y-%m-%d %H:%M:%f', MAX([t1].[item]))
+			strftime('%Y-%m-%d %H:%M:%f', MAX([t1].[item])) as [Max_1]
 		FROM
 			(
 				SELECT NULL [item] WHERE 1 = 0
@@ -37,7 +37,7 @@ WHERE
 	CASE
 		WHEN (
 			SELECT
-				strftime('%Y-%m-%d %H:%M:%f', MAX([t1].[item]))
+				strftime('%Y-%m-%d %H:%M:%f', MAX([t1].[item])) as [Max_1]
 			FROM
 				(
 					SELECT NULL [item] WHERE 1 = 0

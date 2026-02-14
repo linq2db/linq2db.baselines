@@ -42,7 +42,7 @@ SELECT
 	[i1].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir1ic]
 		FROM
 			[InventoryResourceDTO] [x_9]
 		WHERE
@@ -96,7 +96,7 @@ SELECT
 	[i2].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir2ic]
 		FROM
 			[InventoryResourceDTO] [x_12]
 		WHERE

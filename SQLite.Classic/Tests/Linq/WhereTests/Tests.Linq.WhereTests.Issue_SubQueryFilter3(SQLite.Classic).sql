@@ -18,7 +18,7 @@ WHERE
 		WHERE
 			[p].[FirstName] LIKE @filter ESCAPE '~' AND [p].[PersonID] = (
 				SELECT
-					[d].[PersonID]
+					[d].[PersonID] as [ID]
 				FROM
 					[Person] [d]
 				WHERE
@@ -34,7 +34,7 @@ WHERE
 		WHERE
 			[p_1].[FirstName] LIKE @filter_1 ESCAPE '~' AND [p_1].[PersonID] = (
 				SELECT
-					[d_1].[PersonID]
+					[d_1].[PersonID] as [ID]
 				FROM
 					[Person] [d_1]
 				WHERE

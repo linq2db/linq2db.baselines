@@ -17,7 +17,7 @@ AS
 		[e].[FirstName],
 		(
 			SELECT
-				COUNT(*)
+				COUNT(*) as [NumberOfSubordinates]
 			FROM
 				[Employees] [e2]
 			WHERE
@@ -44,7 +44,7 @@ SELECT
 	[employee].[FirstName],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [NumberOfSubordinates]
 		FROM
 			[Employees] [e2_1]
 		WHERE
@@ -61,7 +61,7 @@ FROM
 				[manager].[FirstName] as [ManagerFirstName],
 				(
 					SELECT
-						COUNT(*)
+						COUNT(*) as [NumberOfSubordinates]
 					FROM
 						[Employees] [e2]
 					WHERE

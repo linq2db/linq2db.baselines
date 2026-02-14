@@ -19,7 +19,7 @@ FROM
 			CASE
 				WHEN (
 					SELECT
-						AVG([a_Orders].[Freight])
+						AVG([a_Orders].[Freight]) as [Average]
 					FROM
 						[Orders] [a_Orders]
 					WHERE
@@ -50,7 +50,7 @@ SELECT DISTINCT
 	CASE
 		WHEN (
 			SELECT
-				AVG([a_Orders].[Freight])
+				AVG([a_Orders].[Freight]) as [Average]
 			FROM
 				[Orders] [a_Orders]
 			WHERE

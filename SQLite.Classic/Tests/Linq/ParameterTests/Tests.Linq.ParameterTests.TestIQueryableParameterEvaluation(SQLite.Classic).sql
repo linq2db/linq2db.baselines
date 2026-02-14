@@ -17,7 +17,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -25,14 +25,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			[p_1].[PersonID] = @p
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE
@@ -58,7 +58,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -66,14 +66,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			@paramCopy = [p_1].[PersonID]
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE
@@ -99,7 +99,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -107,14 +107,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			[p_1].[PersonID] = @p_1
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE
@@ -140,7 +140,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -148,14 +148,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			[p_1].[PersonID] = @p
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE
@@ -181,7 +181,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -189,14 +189,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			[p_1].[PersonID] = @p_1
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE
@@ -222,7 +222,7 @@ FROM
 WHERE
 	[t1].[PersonID] IN (
 		SELECT
-			[p].[PersonID]
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
 		WHERE
@@ -230,14 +230,14 @@ WHERE
 	) AND
 	([t1].[PersonID] IN (
 		SELECT
-			[p_1].[PersonID]
+			[p_1].[PersonID] as [ID]
 		FROM
 			[Person] [p_1]
 		WHERE
 			@paramCopy = [p_1].[PersonID]
 	) OR [t1].[PersonID] IN (
 		SELECT
-			[p_2].[PersonID]
+			[p_2].[PersonID] as [ID]
 		FROM
 			[Person] [p_2]
 		WHERE

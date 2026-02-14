@@ -4,7 +4,7 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullableOrderedNoNulls], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullableOrderedNoNulls], ''), ', '), '') as [NotNullableOrderedNoNulls]
 		FROM
 			(
 				SELECT DISTINCT
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t4].[NotNullableOrderedNulls], ', '), '')
+			Coalesce(GROUP_CONCAT([t4].[NotNullableOrderedNulls], ', '), '') as [NotNullableOrderedNulls]
 		FROM
 			(
 				SELECT DISTINCT

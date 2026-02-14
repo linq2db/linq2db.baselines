@@ -77,7 +77,7 @@ FROM
 ORDER BY
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[LanguageDTO] [l]
 		WHERE

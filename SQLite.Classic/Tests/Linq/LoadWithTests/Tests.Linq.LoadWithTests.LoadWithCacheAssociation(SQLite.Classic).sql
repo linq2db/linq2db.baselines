@@ -12,7 +12,7 @@ FROM
 WHERE
 	[a_MainItem].[Id] IS NOT NULL AND (
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[SubItem1] [a_SubItems1]
 		WHERE

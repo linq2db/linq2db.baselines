@@ -6,7 +6,7 @@ SELECT
 	[m_1].[IsDeleted],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [DetailCount]
 		FROM
 			[DetailClass] [a_Details]
 		WHERE

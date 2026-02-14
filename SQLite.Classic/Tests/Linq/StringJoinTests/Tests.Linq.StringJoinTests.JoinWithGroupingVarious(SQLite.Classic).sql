@@ -4,7 +4,7 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableDistinct], ''), ', '), '') as [NullableDistinct]
 		FROM
 			(
 				SELECT DISTINCT
@@ -17,7 +17,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableDistinctNotNullDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableDistinctNotNullDistinct], ''), ', '), '') as [NullableDistinctNotNullDistinct]
 		FROM
 			(
 				SELECT DISTINCT
@@ -30,7 +30,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t4].[NullableDistinctNotNullDistinctOrdered], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t4].[NullableDistinctNotNullDistinctOrdered], ''), ', '), '') as [NullableDistinctNotNullDistinctOrdered]
 		FROM
 			(
 				SELECT DISTINCT
@@ -45,7 +45,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t5].[NotNullableDistinct], ', '), '')
+			Coalesce(GROUP_CONCAT([t5].[NotNullableDistinct], ', '), '') as [NotNullableDistinct]
 		FROM
 			(
 				SELECT DISTINCT
@@ -58,7 +58,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t6].[NotNullableDistinctOrdered], ', '), '')
+			Coalesce(GROUP_CONCAT([t6].[NotNullableDistinctOrdered], ', '), '') as [NotNullableDistinctOrdered]
 		FROM
 			(
 				SELECT DISTINCT

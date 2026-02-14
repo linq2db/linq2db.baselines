@@ -147,7 +147,7 @@ SELECT
 	),
 	(
 		SELECT
-			SUM([wp_1].[StockOnHand])
+			SUM([wp_1].[StockOnHand]) as [sum_1]
 		FROM
 			[Issue4717WarehouseProductMapping] [wp_1]
 		WHERE

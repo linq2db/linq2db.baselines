@@ -35,7 +35,7 @@ SELECT DISTINCT
 	[t1].[ParentID],
 	(
 		SELECT
-			[c_5].[ChildID]
+			[c_5].[ChildID] as [ChildArray]
 		FROM
 			[Child] [c_5]
 		WHERE
@@ -44,7 +44,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			[c_6].[ParentID]
+			[c_6].[ParentID] as [ChildArray]
 		FROM
 			[Child] [c_6]
 		WHERE
@@ -53,7 +53,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			[c_7].[ChildID]
+			[c_7].[ChildID] as [ChildDictionary1]
 		FROM
 			[Child] [c_7]
 		WHERE
@@ -62,7 +62,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			[c_8].[ParentID]
+			[c_8].[ParentID] as [ChildDictionary1]
 		FROM
 			[Child] [c_8]
 		WHERE
@@ -71,7 +71,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			'ChildID'
+			'ChildID' as [ChildDictionary2]
 		FROM
 			[Child] [c_9]
 		WHERE
@@ -80,7 +80,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			[c_10].[ChildID]
+			[c_10].[ChildID] as [ChildDictionary2]
 		FROM
 			[Child] [c_10]
 		WHERE
@@ -89,7 +89,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			'ParentID'
+			'ParentID' as [ChildDictionary2]
 		FROM
 			[Child] [c_11]
 		WHERE
@@ -98,7 +98,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT
-			[c_12].[ParentID]
+			[c_12].[ParentID] as [ChildDictionary2]
 		FROM
 			[Child] [c_12]
 		WHERE

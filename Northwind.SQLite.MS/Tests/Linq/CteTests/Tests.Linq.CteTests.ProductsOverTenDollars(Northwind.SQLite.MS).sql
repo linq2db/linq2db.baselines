@@ -20,7 +20,7 @@ AS
 		[c_1].[CategoryName],
 		(
 			SELECT
-				COUNT(*)
+				COUNT(*) as [NumberOfProducts]
 			FROM
 				[Products] [p_1]
 			WHERE
@@ -46,7 +46,7 @@ SELECT
 	[c_1].[CategoryName],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [NumberOfProducts]
 		FROM
 			[Products] [p_1]
 		WHERE

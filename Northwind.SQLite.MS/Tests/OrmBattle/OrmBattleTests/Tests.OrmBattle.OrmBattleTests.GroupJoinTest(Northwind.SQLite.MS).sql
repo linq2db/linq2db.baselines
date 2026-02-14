@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [OrderCount]
 		FROM
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
@@ -12,7 +12,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [EmployeesCount]
 		FROM
 			[Employees] [e]
 		WHERE

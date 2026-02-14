@@ -4,7 +4,7 @@ SELECT
 	SUBSTR(Coalesce(', ' || [t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || Coalesce(', ' || [t].[VarcharValue], '') || Coalesce(', ' || [t].[NVarcharValue], ''), 3),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullDistinctValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullDistinctValue], ''), ', '), '') as [NotNullDistinctValue]
 		FROM
 			(
 				SELECT DISTINCT

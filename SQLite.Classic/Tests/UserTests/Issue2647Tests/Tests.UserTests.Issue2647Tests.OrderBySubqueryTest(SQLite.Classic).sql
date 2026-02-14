@@ -12,7 +12,7 @@ FROM
 			[t1].[Text],
 			(
 				SELECT
-					COUNT(*)
+					COUNT(*) as [Count_1]
 				FROM
 					[Issue2647Table] [ss2]
 				WHERE

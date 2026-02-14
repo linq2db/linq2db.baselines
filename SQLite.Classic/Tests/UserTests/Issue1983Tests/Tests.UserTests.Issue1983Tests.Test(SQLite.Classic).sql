@@ -4,7 +4,7 @@ SELECT
 	[cu].[Id],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOfCards]
 		FROM
 			[Issue1983Card] [card]
 		WHERE
@@ -21,7 +21,7 @@ SELECT
 	[cu].[CountOfCards],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOfCards2]
 		FROM
 			[Issue1983Card] [card]
 		WHERE
@@ -29,7 +29,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOfCards3]
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE
@@ -46,7 +46,7 @@ SELECT
 	[cu].[CountOfCards],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOfCards2]
 		FROM
 			[Issue1983Card] [card]
 		WHERE
@@ -54,7 +54,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [CountOfCards3]
 		FROM
 			[Issue1983Card] [a_Cards]
 		WHERE

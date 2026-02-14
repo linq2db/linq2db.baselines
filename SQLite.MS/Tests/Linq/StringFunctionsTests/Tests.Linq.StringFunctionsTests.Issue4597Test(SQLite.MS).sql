@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			GROUP_CONCAT(CAST([a_Children].[ChildID] AS NVarChar(11)), ', ')
+			GROUP_CONCAT(CAST([a_Children].[ChildID] AS NVarChar(11)), ', ') as [ConcatStringsNullable]
 		FROM
 			[Child] [a_Children]
 		WHERE

@@ -9,7 +9,7 @@ SELECT
 	[x_2].[Amount],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [TotalCount]
 		FROM
 			(
 				SELECT
