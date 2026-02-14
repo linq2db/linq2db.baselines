@@ -10,7 +10,7 @@ FROM
 				N't2' as [c1],
 				(
 					SELECT TOP (1)
-						[x_1].[ID3]
+						[x_1].[ID3] as [Id3]
 					FROM
 						[TABLE3] [x_1]
 					WHERE

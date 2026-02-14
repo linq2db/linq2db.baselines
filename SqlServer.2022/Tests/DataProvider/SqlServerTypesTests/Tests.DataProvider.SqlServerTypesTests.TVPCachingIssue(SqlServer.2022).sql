@@ -11,7 +11,7 @@ FROM
 WHERE
 	[m_1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -27,7 +27,7 @@ FROM
 WHERE
 	[p1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -45,7 +45,7 @@ FROM
 WHERE
 	[m_1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -61,7 +61,7 @@ FROM
 WHERE
 	[p1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -79,7 +79,7 @@ FROM
 WHERE
 	[m_1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -95,7 +95,7 @@ FROM
 WHERE
 	[p1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -113,7 +113,7 @@ FROM
 WHERE
 	[m_1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)
@@ -129,7 +129,7 @@ FROM
 WHERE
 	[p1].[PersonID] IN (
 		SELECT
-			[x].[Id]
+			[x].[Id] as [Value_1]
 		FROM
 			@p [x]
 	)

@@ -23,14 +23,14 @@ FROM
 		SELECT
 			Coalesce((
 				SELECT
-					SUM([x].[Quantity])
+					SUM([x].[Quantity]) as [RefQty]
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x]
 				WHERE
 					[x].[InventoryResourceID] = [ir].[Id]
 			), 0) + (
 				SELECT
-					CAST(COUNT(*) AS Decimal(18, 10))
+					CAST(COUNT(*) AS Decimal(18, 10)) as [RefQty]
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x_1]
 				WHERE

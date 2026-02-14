@@ -7,7 +7,7 @@ SELECT
 	[i].[Description],
 	(
 		SELECT TOP (1)
-			[subtype_1].[Description]
+			[subtype_1].[Description] as [Description2]
 		FROM
 			[ItemAppType] [itemtype]
 				INNER JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [itemtype].[AppTypeId]

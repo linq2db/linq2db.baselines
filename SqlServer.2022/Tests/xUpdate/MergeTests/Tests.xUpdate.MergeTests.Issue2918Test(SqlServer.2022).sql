@@ -8,7 +8,7 @@ USING (
 		[pa].[PatentId],
 		(
 			SELECT
-				STRING_AGG([t1].[DisplayName], N'; ') WITHIN GROUP (ORDER BY [t1].[DisplayName])
+				STRING_AGG([t1].[DisplayName], N'; ') WITHIN GROUP (ORDER BY [t1].[DisplayName]) as [TechnicalReviewersText]
 			FROM
 				(
 					SELECT

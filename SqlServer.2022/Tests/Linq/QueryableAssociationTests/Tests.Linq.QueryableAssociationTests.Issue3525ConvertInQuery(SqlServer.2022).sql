@@ -4,7 +4,7 @@ SELECT
 	[i].[DocumentNo],
 	(
 		SELECT TOP (1)
-			[a_CustomerApplication].[Id]
+			[a_CustomerApplication].[Id] as [ApplicationId]
 		FROM
 			[CustomerApplication] [a_CustomerApplication]
 		WHERE

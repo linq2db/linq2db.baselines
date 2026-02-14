@@ -27,7 +27,7 @@ WHERE
 	END = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -36,7 +36,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -52,7 +52,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -61,7 +61,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -102,7 +102,7 @@ WHERE
 	END = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -111,7 +111,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -127,7 +127,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -136,7 +136,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -173,7 +173,7 @@ WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -182,7 +182,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -219,7 +219,7 @@ WHERE
 	IIF(([r].[Value1] <> [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -228,7 +228,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -269,7 +269,7 @@ WHERE
 	END = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -278,7 +278,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -293,7 +293,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -302,7 +302,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -343,7 +343,7 @@ WHERE
 	END = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -352,7 +352,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -367,7 +367,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -376,7 +376,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -413,7 +413,7 @@ WHERE
 	IIF((1=1), 1, 0) = IIF(IIF(([r].[Value1] = [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -422,7 +422,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -459,7 +459,7 @@ WHERE
 	IIF((1=1), 1, 0) = IIF(IIF(([r].[Value1] <> [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -468,7 +468,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -509,7 +509,7 @@ WHERE
 	END <> CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -518,7 +518,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -534,7 +534,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -543,7 +543,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -559,7 +559,7 @@ WHERE
 	END IS NOT NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -568,7 +568,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -609,7 +609,7 @@ WHERE
 	END <> CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -618,7 +618,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -634,7 +634,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -643,7 +643,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -659,7 +659,7 @@ WHERE
 	END IS NOT NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -668,7 +668,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -705,7 +705,7 @@ WHERE
 	IIF(IIF(([r].[Value1] = [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -714,7 +714,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -751,7 +751,7 @@ WHERE
 	IIF(IIF(([r].[Value1] <> [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -760,7 +760,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -801,7 +801,7 @@ WHERE
 	END <> CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -810,7 +810,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -825,7 +825,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -834,7 +834,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -849,7 +849,7 @@ WHERE
 	END IS NOT NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -858,7 +858,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -899,7 +899,7 @@ WHERE
 	END <> CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -908,7 +908,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -923,7 +923,7 @@ WHERE
 	END IS NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -932,7 +932,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -947,7 +947,7 @@ WHERE
 	END IS NOT NULL AND CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -956,7 +956,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -993,7 +993,7 @@ WHERE
 	IIF((1=1), 1, 0) = IIF(IIF(([r].[Value1] = [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -1002,7 +1002,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -1039,7 +1039,7 @@ WHERE
 	IIF((1=1), 1, 0) = IIF(IIF(([r].[Value1] <> [r].[Value2]), 1, 0) = CASE
 		WHEN ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -1048,7 +1048,7 @@ WHERE
 			THEN 1
 		WHEN NOT ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r_1]
 			WHERE
@@ -1084,7 +1084,7 @@ FROM
 WHERE
 	([r].[Value4] + @cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1117,7 +1117,7 @@ FROM
 WHERE
 	([r].[Value4] + @cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1150,7 +1150,7 @@ FROM
 WHERE
 	([r].[Value4] + @cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1183,7 +1183,7 @@ FROM
 WHERE
 	([r].[Value4] + @cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1216,7 +1216,7 @@ FROM
 WHERE
 	([r].[Value2] + @cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1249,7 +1249,7 @@ FROM
 WHERE
 	([r].[Value2] + @cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1282,7 +1282,7 @@ FROM
 WHERE
 	([r].[Value2] + @cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1315,7 +1315,7 @@ FROM
 WHERE
 	([r].[Value2] + @cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1348,7 +1348,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value4] + @cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1381,7 +1381,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value4] + @cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1414,7 +1414,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value4] + @cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1447,7 +1447,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value4] + @cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1480,7 +1480,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value2] + @cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1513,7 +1513,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value2] + @cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1546,7 +1546,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value2] + @cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE
@@ -1579,7 +1579,7 @@ FROM
 WHERE
 	IIF((1=1), 1, 0) = IIF(([r].[Value2] + @cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[BooleanTable] [r_1]
 		WHERE

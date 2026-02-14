@@ -4,7 +4,7 @@ SELECT
 	[x].[Id],
 	(
 		SELECT TOP (1)
-			[a_PetIds].[Name]
+			[a_PetIds].[Name] as [PetName]
 		FROM
 			[Issue2933Pet] [a_PetIds]
 		WHERE

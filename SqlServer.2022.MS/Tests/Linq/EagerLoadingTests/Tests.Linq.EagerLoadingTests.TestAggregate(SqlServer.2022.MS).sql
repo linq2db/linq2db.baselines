@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			SUM([t1].[Sum_1])
+			SUM([t1].[Sum_1]) as [Sum_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			(
 				SELECT DISTINCT

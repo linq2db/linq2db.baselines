@@ -10,7 +10,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					SUM([t2].[WithParentReference])
+					SUM([t2].[WithParentReference]) as [WithParentReference]
 				FROM
 					(
 						SELECT
@@ -34,7 +34,7 @@ FROM
 			) as [WithParentReference],
 			(
 				SELECT
-					Sum([t4].[WithParentReferenceCustom1])
+					Sum([t4].[WithParentReferenceCustom1]) as [SumCustom]
 				FROM
 					(
 						SELECT
@@ -58,7 +58,7 @@ FROM
 			) as [WithParentReferenceCustom1],
 			(
 				SELECT
-					Sum([t6].[WithParentReferenceCustom2])
+					Sum([t6].[WithParentReferenceCustom2]) as [SumCustom]
 				FROM
 					(
 						SELECT
@@ -82,7 +82,7 @@ FROM
 			) as [WithParentReferenceCustom2],
 			(
 				SELECT
-					SUM([t8].[WithoutParentReference])
+					SUM([t8].[WithoutParentReference]) as [WithoutParentReference]
 				FROM
 					(
 						SELECT

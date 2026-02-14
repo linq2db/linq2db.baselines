@@ -4,7 +4,7 @@ SELECT TOP (1)
 	[x].[Id],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [LanguagesWithEnCount]
 		FROM
 			[User] [x_1]
 				LEFT JOIN [Language] [a_Language] ON [x_1].[LanguageId] = [a_Language].[Id]
@@ -13,7 +13,7 @@ SELECT TOP (1)
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [LanguagesWithLisCount]
 		FROM
 			[User] [x_2]
 				LEFT JOIN [Language] [a_Language_1] ON [x_2].[LanguageId] = [a_Language_1].[Id]

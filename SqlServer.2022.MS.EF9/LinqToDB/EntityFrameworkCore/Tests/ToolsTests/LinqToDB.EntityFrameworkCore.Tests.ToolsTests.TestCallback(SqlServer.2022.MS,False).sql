@@ -6,7 +6,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Order Details] [e_1]
 		WHERE

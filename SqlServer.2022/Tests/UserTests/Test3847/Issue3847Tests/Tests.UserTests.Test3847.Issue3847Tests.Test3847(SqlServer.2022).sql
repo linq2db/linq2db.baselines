@@ -4,7 +4,7 @@ SELECT
 	[outfeed].[Id],
 	(
 		SELECT TOP (1)
-			[t1].[Value]
+			[t1].[Value] as [Value_1]
 		FROM
 			(VALUES
 				('bc7b663d-0fde-4327-8f92-5d8cc3a11d11',DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)),
@@ -16,7 +16,7 @@ SELECT
 	),
 	(
 		SELECT TOP (1)
-			[t2].[Value]
+			[t2].[Value] as [Value_1]
 		FROM
 			(VALUES
 				('76b1c875-2287-4b82-a23b-7967c5eafed8',DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)),

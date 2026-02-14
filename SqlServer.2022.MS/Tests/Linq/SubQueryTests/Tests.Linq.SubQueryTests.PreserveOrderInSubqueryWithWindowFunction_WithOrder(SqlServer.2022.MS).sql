@@ -11,7 +11,7 @@ FROM
 			[r].[PersonID] as [ID],
 			ROW_NUMBER() OVER(ORDER BY (
 				SELECT
-					N'unordered'
+					N'unordered' as [RowNumber]
 			)) as [RowNumber]
 		FROM
 			[Person] [r]

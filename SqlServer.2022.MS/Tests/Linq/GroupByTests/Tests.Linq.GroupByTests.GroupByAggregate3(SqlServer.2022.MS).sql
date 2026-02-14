@@ -7,7 +7,7 @@ FROM
 		SELECT DISTINCT
 			IIF((
 				SELECT
-					AVG([a_Children].[ParentID])
+					AVG([a_Children].[ParentID]) as [Average]
 				FROM
 					[Child] [a_Children]
 				WHERE

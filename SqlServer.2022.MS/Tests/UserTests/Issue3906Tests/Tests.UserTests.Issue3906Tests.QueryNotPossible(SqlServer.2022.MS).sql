@@ -51,7 +51,7 @@ SELECT TOP (1)
 	[infeed].[Id],
 	(
 		SELECT
-			SUM([x].[Quantity])
+			SUM([x].[Quantity]) as [CurrentQuantity]
 		FROM
 			[InventoryResourceDTO] [x]
 		WHERE

@@ -5,7 +5,7 @@ SET     @n = 3
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count4]
 		FROM
 			[Child] [a_Children]
 		WHERE

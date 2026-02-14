@@ -10,7 +10,7 @@ SELECT
 	[i].[LastName] + N', ' + [i].[FirstName],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [DoctorCount]
 		FROM
 			[Doctor] [d]
 		WHERE

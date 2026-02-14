@@ -13,7 +13,7 @@ USING (
 ON ([Target].[PersonID] = [Source].[ID] + 10)
 WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
-		IIF([p].[Diagnosis] LIKE N'%very%' ESCAPE N'~', 1, 0)
+		IIF([p].[Diagnosis] LIKE N'%very%' ESCAPE N'~', 1, 0) as [c1]
 	FROM
 		[Patient] [p]
 	WHERE

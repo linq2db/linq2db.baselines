@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT TOP (1)
-			[r].[Value1]
+			[r].[Value1] as [HasValue]
 		FROM
 			[Parent] [r]
 	) IS NOT NULL

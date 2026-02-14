@@ -81,7 +81,7 @@ FROM
 			[t1].[TooltipText],
 			(
 				SELECT
-					COUNT(*)
+					COUNT(*) as [Count_1]
 				FROM
 					[LanguageDTO] [l]
 				WHERE

@@ -11,7 +11,7 @@ SELECT
 	), 1, 0),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Child] [c_4]
 		WHERE

@@ -5,12 +5,12 @@ SELECT
 		SELECT TOP (1)
 			(
 				SELECT TOP (1)
-					[x_1].[ID3]
+					[x_1].[ID3] as [Id3]
 				FROM
 					[TABLE3] [x_1]
 				WHERE
 					[x_1].[PARENTID3] = [x].[ID2]
-			)
+			) as [Id3]
 		FROM
 			[TABLE2] [x]
 		WHERE

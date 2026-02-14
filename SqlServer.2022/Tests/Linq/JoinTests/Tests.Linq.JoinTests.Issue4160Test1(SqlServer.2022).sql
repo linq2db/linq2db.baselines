@@ -3,7 +3,7 @@
 SELECT DISTINCT
 	(
 		SELECT TOP (1)
-			[cc].[Name]
+			[cc].[Name] as [Value_1]
 		FROM
 			[Issue4160City] [cc]
 		WHERE

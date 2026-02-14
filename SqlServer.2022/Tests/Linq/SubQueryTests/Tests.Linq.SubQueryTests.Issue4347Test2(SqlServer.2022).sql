@@ -18,7 +18,7 @@ WHERE
 			[m_1].[Id] = [a_Lines].[TransactionId]
 		INTERSECT
 		SELECT
-			[t1].[item]
+			[t1].[item] as [Currency]
 		FROM
 			(VALUES
 				(N'A'), (N'B')
@@ -42,7 +42,7 @@ WHERE
 			[x].[Id] = [a_Lines].[TransactionId]
 		INTERSECT
 		SELECT
-			[t1].[item]
+			[t1].[item] as [Currency]
 		FROM
 			(VALUES
 				(N'A'), (N'B')

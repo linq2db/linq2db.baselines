@@ -4,7 +4,7 @@ SELECT
 	[product_1].[Id],
 	(
 		SELECT
-			SUM([t1].[OnOrder])
+			SUM([t1].[OnOrder]) as [OnOrder]
 		FROM
 			(
 				SELECT

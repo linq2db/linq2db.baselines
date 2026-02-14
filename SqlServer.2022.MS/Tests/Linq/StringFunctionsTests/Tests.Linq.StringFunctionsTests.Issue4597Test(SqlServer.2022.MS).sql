@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			STRING_AGG(CAST([a_Children].[ChildID] AS NVarChar(11)), N', ')
+			STRING_AGG(CAST([a_Children].[ChildID] AS NVarChar(11)), N', ') as [ConcatStringsNullable]
 		FROM
 			[Child] [a_Children]
 		WHERE

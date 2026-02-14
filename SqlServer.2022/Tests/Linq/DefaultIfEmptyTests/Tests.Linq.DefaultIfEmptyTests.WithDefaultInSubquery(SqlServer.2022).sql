@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			SUM([t2].[ParentID])
+			SUM([t2].[ParentID]) as [Sum_1]
 		FROM
 			(
 				SELECT

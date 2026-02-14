@@ -7,7 +7,7 @@ WHERE
 	[e].[IsDeleted] = 0 AND
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Order Details] [e_1]
 		WHERE

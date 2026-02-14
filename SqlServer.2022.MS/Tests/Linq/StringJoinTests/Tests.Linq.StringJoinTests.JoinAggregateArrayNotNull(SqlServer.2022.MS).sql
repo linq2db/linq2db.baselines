@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(N', ', [t].[NullableValue], [t].[NotNullableValue], [t].[VarcharValue], [t].[NVarcharValue]),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce([t2].[NotNullDistinctValue], N''), N', ') WITHIN GROUP (ORDER BY [t2].[NotNullDistinctValue]), N'')
+			Coalesce(STRING_AGG(Coalesce([t2].[NotNullDistinctValue], N''), N', ') WITHIN GROUP (ORDER BY [t2].[NotNullDistinctValue]), N'') as [NotNullDistinctValue]
 		FROM
 			(
 				SELECT DISTINCT

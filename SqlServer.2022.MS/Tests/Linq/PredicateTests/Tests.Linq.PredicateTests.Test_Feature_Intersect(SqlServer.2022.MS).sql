@@ -37,10 +37,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -55,7 +55,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Zero]
+			[r].[Zero] as [One]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -70,7 +70,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [One]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -85,7 +85,7 @@ WHERE
 			[r].[Zero]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Zero]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -127,10 +127,10 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -145,7 +145,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Zero]
+			[r].[Zero] as [One]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -160,7 +160,7 @@ WHERE
 			[r].[One]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [One]
 	)
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -175,6 +175,6 @@ WHERE
 			[r].[Zero]
 		INTERSECT
 		SELECT
-			[r].[Null]
+			[r].[Null] as [Zero]
 	)
 

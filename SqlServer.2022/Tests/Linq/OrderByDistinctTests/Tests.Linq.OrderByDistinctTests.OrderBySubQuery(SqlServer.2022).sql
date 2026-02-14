@@ -6,7 +6,7 @@ SELECT
 	[t_1].[DuplicateData],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[OrderByDistinctData] [c_1]
 		WHERE

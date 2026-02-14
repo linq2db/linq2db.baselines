@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT TOP (1)
-			[a_CaseLog].[Number]
+			[a_CaseLog].[Number] as [CaseNumber]
 		FROM
 			[CaseLogProperty] [a_CaseLogProperties]
 				LEFT JOIN [CaseLog] [a_CaseLog] ON [a_CaseLogProperties].[CaseLogId] = [a_CaseLog].[Id]
@@ -12,7 +12,7 @@ SELECT
 	),
 	(
 		SELECT TOP (1)
-			[a_Incident].[EventNumber]
+			[a_Incident].[EventNumber] as [IncidentNumber]
 		FROM
 			[IncidentProperty] [a_IncidentProperties]
 				LEFT JOIN [Incident] [a_Incident] ON [a_IncidentProperties].[IncidentId] = [a_Incident].[Id]
