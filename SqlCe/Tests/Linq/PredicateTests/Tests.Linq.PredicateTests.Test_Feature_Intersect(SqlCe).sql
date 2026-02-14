@@ -41,7 +41,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT DISTINCT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		WHERE
 			EXISTS(
 				SELECT
@@ -149,7 +149,7 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT DISTINCT
-			[r].[Null]
+			[r].[Null] as [Null_1]
 		WHERE
 			EXISTS(
 				SELECT
