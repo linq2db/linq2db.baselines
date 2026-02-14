@@ -14,7 +14,7 @@ SELECT
 			WHERE
 				(
 					SELECT
-						COUNT(t2."PersonID")
+						COUNT(t2."PersonID") as "c1"
 					FROM
 						"Patient" t2
 					WHERE
@@ -29,7 +29,7 @@ SELECT
 				) = 0 AND
 				(
 					SELECT
-						COUNT(t4."PersonID")
+						COUNT(t4."PersonID") as "c1"
 					FROM
 						"Patient" t4
 					WHERE

@@ -4,7 +4,7 @@ SELECT
 	x."Id",
 	(
 		SELECT
-			a_PetIds."Name"
+			a_PetIds."Name" as "PetName"
 		FROM
 			"Issue2933Pet" a_PetIds
 		WHERE

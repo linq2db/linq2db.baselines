@@ -6,7 +6,7 @@ SET
 	("VarcharValue", "NVarcharValue") = (
 		SELECT
 			t1."Result_1",
-			t1."Result_1"
+			t1."Result_1" as "Result_1_1"
 		FROM
 			"SampleClass" t_1
 				OUTER APPLY (

@@ -8,7 +8,7 @@ FROM
 WHERE
 	x."ChildID" IN (
 		SELECT
-			MAX(x_1."ChildID")
+			MAX(x_1."ChildID") as "Max_1"
 		FROM
 			"Child" x_1
 		GROUP BY
@@ -25,7 +25,7 @@ FROM
 WHERE
 	x."ChildID" IN (
 		SELECT
-			MAX(x_1."ChildID")
+			MAX(x_1."ChildID") as "Max_1"
 		FROM
 			"Child" x_1
 		GROUP BY

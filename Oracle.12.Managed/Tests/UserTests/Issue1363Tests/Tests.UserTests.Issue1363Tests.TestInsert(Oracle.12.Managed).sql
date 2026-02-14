@@ -12,7 +12,7 @@ VALUES
 	:id,
 	(
 		SELECT
-			t1."required_field"
+			t1."required_field" as "Required"
 		FROM
 			"Issue1363" t1
 		WHERE
@@ -36,7 +36,7 @@ VALUES
 	:id,
 	(
 		SELECT
-			t1."required_field"
+			t1."required_field" as "Required"
 		FROM
 			"Issue1363" t1
 		WHERE

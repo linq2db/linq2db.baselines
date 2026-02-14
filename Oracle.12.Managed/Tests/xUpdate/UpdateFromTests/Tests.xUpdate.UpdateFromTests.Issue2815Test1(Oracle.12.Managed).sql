@@ -5,7 +5,7 @@ UPDATE
 SET
 	(TRANS_CHANNEL, IDF) = (
 		SELECT
-			Coalesce(channel_1."Trans_Channel", 1),
+			Coalesce(channel_1."Trans_Channel", 1) as "c1",
 			channel_1."Idf"
 		FROM
 			"Issue2815Table1" ext_1

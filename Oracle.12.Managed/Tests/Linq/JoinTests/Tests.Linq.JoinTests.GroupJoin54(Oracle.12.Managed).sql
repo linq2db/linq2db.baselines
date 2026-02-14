@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "p1"
 		FROM
 			"Child" ch_1
 		WHERE
