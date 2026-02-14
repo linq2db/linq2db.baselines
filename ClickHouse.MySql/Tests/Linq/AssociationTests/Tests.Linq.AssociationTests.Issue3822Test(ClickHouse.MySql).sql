@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			a_WindowAtPosition.Id
+			a_WindowAtPosition.Id as Id
 		FROM
 			Window a_WindowAtPosition
 		WHERE

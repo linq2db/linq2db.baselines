@@ -11,7 +11,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					sumOrNull(t1.MoneyValue)
+					sumOrNull(t1.MoneyValue) as x
 				FROM
 					LinqDataTypes t1
 			) as x

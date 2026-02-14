@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			t1.ChildID
+			t1.ChildID as ChildID
 		FROM
 			Child t1
 		LIMIT 1

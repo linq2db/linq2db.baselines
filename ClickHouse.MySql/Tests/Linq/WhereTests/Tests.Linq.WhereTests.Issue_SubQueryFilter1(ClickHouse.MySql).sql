@@ -14,7 +14,7 @@ WHERE
 		WHERE
 			position(e.FirstName, 'John') > 0 AND e.PersonID = (
 				SELECT
-					d.PersonID
+					d.PersonID as PersonID
 				FROM
 					Patient d
 				LIMIT 1
@@ -28,7 +28,7 @@ WHERE
 		WHERE
 			position(e_1.FirstName, 'Tester') > 0 AND e_1.PersonID = (
 				SELECT
-					d_1.PersonID
+					d_1.PersonID as PersonID
 				FROM
 					Patient d_1
 				LIMIT 1

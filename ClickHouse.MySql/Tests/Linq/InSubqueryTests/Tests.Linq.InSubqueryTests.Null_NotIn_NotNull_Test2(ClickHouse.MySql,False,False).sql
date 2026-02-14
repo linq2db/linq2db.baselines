@@ -9,7 +9,7 @@ FROM
 WHERE
 	t.ID IS NOT NULL AND t.ID NOT IN (
 		SELECT
-			p.ID
+			p.ID as ID
 		FROM
 			test_in_2 p
 	)

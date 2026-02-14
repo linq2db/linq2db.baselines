@@ -7,9 +7,9 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			r.One
+			r.One as One
 		INTERSECT DISTINCT
 		SELECT
-			r.One
+			r.One as One
 	)
 

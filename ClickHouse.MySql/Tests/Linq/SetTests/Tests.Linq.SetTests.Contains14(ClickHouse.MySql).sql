@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN 1 IN (
 			SELECT
-				p.ParentID
+				p.ParentID as ParentID
 			FROM
 				Parent p
 			WHERE
@@ -20,7 +20,7 @@ SELECT
 	CASE
 		WHEN 2 IN (
 			SELECT
-				p.ParentID
+				p.ParentID as ParentID
 			FROM
 				Parent p
 			WHERE

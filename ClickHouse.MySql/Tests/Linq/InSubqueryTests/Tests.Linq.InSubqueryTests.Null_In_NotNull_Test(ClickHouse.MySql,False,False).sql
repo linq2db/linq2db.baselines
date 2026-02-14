@@ -9,7 +9,7 @@ FROM
 WHERE
 	t.ID IN (
 		SELECT
-			p.ID
+			p.ID as ID
 		FROM
 			test_in_2 p
 	)

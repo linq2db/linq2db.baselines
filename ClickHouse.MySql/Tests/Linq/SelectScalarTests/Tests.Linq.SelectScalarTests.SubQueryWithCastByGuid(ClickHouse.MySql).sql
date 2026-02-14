@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			r.GuidValue
+			r.GuidValue as GuidValue
 		FROM
 			LinqDataTypes r
 		LIMIT 1

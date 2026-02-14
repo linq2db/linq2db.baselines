@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN 1 IN (
 			SELECT
-				1
+				1 as c1
 			FROM
 				Parent c_1
 			WHERE

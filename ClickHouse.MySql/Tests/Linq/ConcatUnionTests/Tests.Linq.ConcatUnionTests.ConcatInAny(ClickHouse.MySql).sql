@@ -3,12 +3,12 @@
 SELECT
 	EXISTS(
 		SELECT
-			p.ParentID
+			p.ParentID as ParentID
 		FROM
 			Parent p
 		UNION ALL
 		SELECT
-			p_1.ParentID
+			p_1.ParentID as ParentID
 		FROM
 			Parent p_1
 	)
