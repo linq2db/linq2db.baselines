@@ -8,7 +8,7 @@ FROM
 WHERE
 	1 IN (
 		SELECT
-			p.Value1
+			p.Value1 as Value1
 		FROM
 			Parent p
 	)

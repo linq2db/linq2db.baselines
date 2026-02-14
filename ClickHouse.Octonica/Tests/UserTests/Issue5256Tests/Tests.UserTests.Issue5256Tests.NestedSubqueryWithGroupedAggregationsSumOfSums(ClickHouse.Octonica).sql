@@ -4,7 +4,7 @@ SELECT
 	product_1.Id,
 	(
 		SELECT
-			sumOrNull(t1.OnOrder)
+			sumOrNull(t1.OnOrder) as OnOrder
 		FROM
 			(
 				SELECT

@@ -9,14 +9,14 @@ FROM
 WHERE
 	NOT (t.ID IS NULL AND 1 IN (
 		SELECT
-			1
+			1 as c1
 		FROM
 			test_in_2 p
 		WHERE
 			p.ID IS NULL
 	) OR t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			p_1.ID
+			p_1.ID as ID
 		FROM
 			test_in_2 p_1
 	))

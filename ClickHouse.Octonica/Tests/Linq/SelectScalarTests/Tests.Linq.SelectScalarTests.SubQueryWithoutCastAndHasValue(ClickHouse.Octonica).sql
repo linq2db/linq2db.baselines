@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			r.Value1
+			r.Value1 as Value1
 		FROM
 			Parent r
 		LIMIT 1

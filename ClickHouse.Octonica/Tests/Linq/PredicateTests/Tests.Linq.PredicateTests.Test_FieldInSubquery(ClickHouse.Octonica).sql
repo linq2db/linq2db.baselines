@@ -11,7 +11,7 @@ FROM
 WHERE
 	r.Value2 IN (
 		SELECT
-			r_1.Value1
+			r_1.Value1 as Value1
 		FROM
 			BooleanTable r_1
 	)
@@ -40,7 +40,7 @@ FROM
 WHERE
 	r.Value2 IN (
 		SELECT
-			r_1.Value4
+			r_1.Value4 as Value4
 		FROM
 			BooleanTable r_1
 	)
@@ -69,7 +69,7 @@ FROM
 WHERE
 	r.Value5 IN (
 		SELECT
-			r_1.Value1
+			r_1.Value1 as Value1
 		FROM
 			BooleanTable r_1
 	)
@@ -98,7 +98,7 @@ FROM
 WHERE
 	r.Value5 IS NULL AND 1 IN (
 		SELECT
-			1
+			1 as c1
 		FROM
 			BooleanTable r_1
 		WHERE
@@ -106,7 +106,7 @@ WHERE
 	) OR
 	r.Value5 IS NOT NULL AND r.Value5 IN (
 		SELECT
-			r_2.Value4
+			r_2.Value4 as Value4
 		FROM
 			BooleanTable r_2
 	)
@@ -135,7 +135,7 @@ FROM
 WHERE
 	r.Value2 NOT IN (
 		SELECT
-			r_1.Value1
+			r_1.Value1 as Value1
 		FROM
 			BooleanTable r_1
 	)
@@ -164,7 +164,7 @@ FROM
 WHERE
 	r.Value2 NOT IN (
 		SELECT
-			r_1.Value4
+			r_1.Value4 as Value4
 		FROM
 			BooleanTable r_1
 	)
@@ -193,7 +193,7 @@ FROM
 WHERE
 	r.Value5 IS NULL OR r.Value5 NOT IN (
 		SELECT
-			r_1.Value1
+			r_1.Value1 as Value1
 		FROM
 			BooleanTable r_1
 	)
@@ -222,14 +222,14 @@ FROM
 WHERE
 	NOT (r.Value5 IS NULL AND 1 IN (
 		SELECT
-			1
+			1 as c1
 		FROM
 			BooleanTable r_1
 		WHERE
 			r_1.Value4 IS NULL
 	) OR r.Value5 IS NOT NULL AND r.Value5 IN (
 		SELECT
-			r_2.Value4
+			r_2.Value4 as Value4
 		FROM
 			BooleanTable r_2
 	))

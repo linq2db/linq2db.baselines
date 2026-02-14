@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN 11 IN (
 			SELECT
-				c_1.ParentID
+				c_1.ParentID as ParentID
 			FROM
 				Child c_1
 		)

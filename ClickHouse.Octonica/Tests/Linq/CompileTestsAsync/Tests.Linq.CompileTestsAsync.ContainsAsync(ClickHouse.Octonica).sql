@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN 2 IN (
 			SELECT
-				c_1.Id
+				c_1.Id as Id
 			FROM
 				AsyncDataTable c_1
 		)
