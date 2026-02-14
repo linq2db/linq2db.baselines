@@ -7,7 +7,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					COUNT(*)
+					COUNT(*) as "Count1"
 				FROM
 					"Child" c_1
 				WHERE

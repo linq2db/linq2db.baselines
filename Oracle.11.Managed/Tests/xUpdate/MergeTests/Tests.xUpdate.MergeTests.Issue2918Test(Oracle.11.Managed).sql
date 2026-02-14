@@ -8,7 +8,7 @@ USING (
 		pa."PatentId",
 		(
 			SELECT
-				LISTAGG(a_User."DisplayName", '; ') WITHIN GROUP (ORDER BY a_User."DisplayName")
+				LISTAGG(a_User."DisplayName", '; ') WITHIN GROUP (ORDER BY a_User."DisplayName") as "TechnicalReviewersText"
 			FROM
 				"Issue2918Table2" patr
 					LEFT JOIN "User" a_User ON patr."UserId" = a_User."Id"

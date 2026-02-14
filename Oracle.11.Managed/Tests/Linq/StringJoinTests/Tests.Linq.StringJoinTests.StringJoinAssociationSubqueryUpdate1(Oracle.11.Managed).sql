@@ -5,7 +5,7 @@ UPDATE
 SET
 	"VarcharValue" = (
 		SELECT
-			LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
+			LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue") as "Result_1"
 		FROM
 			"SampleClass" a_Children
 		WHERE
@@ -13,7 +13,7 @@ SET
 	),
 	"NVarcharValue" = (
 		SELECT
-			LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
+			LISTAGG(a_Children."VarcharValue", ' | ') WITHIN GROUP (ORDER BY a_Children."VarcharValue") as "Result_1"
 		FROM
 			"SampleClass" a_Children
 		WHERE

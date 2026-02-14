@@ -41,11 +41,11 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		FROM SYS.DUAL
 	)
 
@@ -62,7 +62,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Zero"
+			r."Zero" as "One"
 		FROM SYS.DUAL
 	)
 
@@ -79,7 +79,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "One"
 		FROM SYS.DUAL
 	)
 
@@ -96,7 +96,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Zero"
 		FROM SYS.DUAL
 	)
 
@@ -143,11 +143,11 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		FROM SYS.DUAL
 	)
 
@@ -164,7 +164,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Zero"
+			r."Zero" as "One"
 		FROM SYS.DUAL
 	)
 
@@ -181,7 +181,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "One"
 		FROM SYS.DUAL
 	)
 
@@ -198,7 +198,7 @@ WHERE
 		FROM SYS.DUAL
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Zero"
 		FROM SYS.DUAL
 	)
 

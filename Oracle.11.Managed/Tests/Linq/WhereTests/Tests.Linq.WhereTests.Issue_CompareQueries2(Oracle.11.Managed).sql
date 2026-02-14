@@ -11,7 +11,7 @@ FROM
 		WHERE
 			p."PersonID" IN (1, 2) AND p."PersonID" NOT IN (
 				SELECT
-					p_1."PersonID"
+					p_1."PersonID" as ID
 				FROM
 					"Person" p_1
 				WHERE
@@ -34,7 +34,7 @@ FROM
 		WHERE
 			p."PersonID" IN (3) AND p."PersonID" NOT IN (
 				SELECT
-					p_1."PersonID"
+					p_1."PersonID" as ID
 				FROM
 					"Person" p_1
 				WHERE
