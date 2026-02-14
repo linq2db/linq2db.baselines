@@ -8,7 +8,7 @@ SET
 WHERE
 	[b].[ChildID] = (
 		SELECT
-			MAX([t1].[ParentID])
+			MAX([t1].[ParentID]) as [Max_1]
 		FROM
 			[Child] [t1]
 	) AND

@@ -10,7 +10,7 @@ FROM
 			[x].[Id],
 			(
 				SELECT TOP 1
-					[a_Confirmations].[Date]
+					[a_Confirmations].[Date] as [CreationDate]
 				FROM
 					[Confirmation] [a_Confirmations]
 				WHERE

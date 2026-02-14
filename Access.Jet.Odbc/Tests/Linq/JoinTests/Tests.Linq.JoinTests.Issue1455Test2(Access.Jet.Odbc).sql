@@ -52,7 +52,7 @@ SELECT
 	[al_group_2].[Id],
 	(
 		SELECT TOP 1
-			IIF([t1].[LastUpdate] IS NULL, [t1].[CreationDate], [t1].[LastUpdate])
+			IIF([t1].[LastUpdate] IS NULL, [t1].[CreationDate], [t1].[LastUpdate]) as [LastUpdate]
 		FROM
 			((
 				SELECT

@@ -31,7 +31,7 @@ SELECT DISTINCT
 	),
 	(
 		SELECT TOP 1
-			[e_1].[PersonID]
+			[e_1].[PersonID] as [ID]
 		FROM
 			[Person] [e_1]
 		WHERE

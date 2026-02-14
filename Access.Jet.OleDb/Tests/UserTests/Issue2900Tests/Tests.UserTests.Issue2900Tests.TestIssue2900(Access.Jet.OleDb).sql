@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT TOP 1
-			[a_Metrics].[Value] IS NOT NULL
+			[a_Metrics].[Value] IS NOT NULL as [Value_1]
 		FROM
 			[Metric] [a_Metrics]
 		WHERE
@@ -11,7 +11,7 @@ SELECT
 	),
 	(
 		SELECT TOP 1
-			[a_Metrics_1].[Value]
+			[a_Metrics_1].[Value] as [Value_1]
 		FROM
 			[Metric] [a_Metrics_1]
 		WHERE

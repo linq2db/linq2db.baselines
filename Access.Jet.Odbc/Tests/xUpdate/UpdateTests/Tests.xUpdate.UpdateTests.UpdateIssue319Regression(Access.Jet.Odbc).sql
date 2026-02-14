@@ -41,7 +41,7 @@ SET
 WHERE
 	[p].[ParentID] = ? AND (
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Parent] [p_1]
 		WHERE

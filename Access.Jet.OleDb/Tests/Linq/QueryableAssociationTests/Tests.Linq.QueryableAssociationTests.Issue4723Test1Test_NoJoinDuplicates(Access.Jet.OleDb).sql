@@ -8,7 +8,7 @@ FROM
 		SELECT
 			(
 				SELECT TOP 1
-					[a_Association].[Value]
+					[a_Association].[Value] as [Association]
 				FROM
 					[Issue4723Table2] [a_Association]
 				WHERE
