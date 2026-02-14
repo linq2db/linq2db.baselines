@@ -22,7 +22,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value4") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -56,7 +56,7 @@ FROM
 WHERE
 	(r."Value1" <> r."Value4") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -90,7 +90,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value2") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -123,7 +123,7 @@ FROM
 WHERE
 	(r."Value1" <> r."Value2") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -156,7 +156,7 @@ FROM
 WHERE
 	((1=1)) = (((r."Value1" = r."Value4") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -189,7 +189,7 @@ FROM
 WHERE
 	((1=1)) = (((r."Value1" <> r."Value4") = ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -223,7 +223,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value1" = r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -260,7 +260,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value1" <> r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -296,7 +296,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value4") <> ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -330,7 +330,7 @@ FROM
 WHERE
 	(r."Value1" <> r."Value4") <> ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -365,7 +365,7 @@ WHERE
 	CASE
 		WHEN (r."Value1" = r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -402,7 +402,7 @@ WHERE
 	CASE
 		WHEN (r."Value1" <> r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -438,7 +438,7 @@ FROM
 WHERE
 	((1=1)) = (((r."Value1" = r."Value4") <> ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -471,7 +471,7 @@ FROM
 WHERE
 	((1=1)) = (((r."Value1" <> r."Value4") <> ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -505,7 +505,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value1" = r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -542,7 +542,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value1" <> r."Value2") = ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -578,7 +578,7 @@ FROM
 WHERE
 	(r."Value4" + :cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -611,7 +611,7 @@ FROM
 WHERE
 	(r."Value4" + :cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -644,7 +644,7 @@ FROM
 WHERE
 	(r."Value4" + :cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -677,7 +677,7 @@ FROM
 WHERE
 	(r."Value4" + :cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -710,7 +710,7 @@ FROM
 WHERE
 	(r."Value2" + :cnt) >= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -743,7 +743,7 @@ FROM
 WHERE
 	(r."Value2" + :cnt) > ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -776,7 +776,7 @@ FROM
 WHERE
 	(r."Value2" + :cnt) <= ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -809,7 +809,7 @@ FROM
 WHERE
 	(r."Value2" + :cnt) < ((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"BooleanTable" r_1
 		WHERE
@@ -843,7 +843,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value4" + :cnt) >= ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -880,7 +880,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value4" + :cnt) > ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -917,7 +917,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value4" + :cnt) <= ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -954,7 +954,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value4" + :cnt) < ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -991,7 +991,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value2" + :cnt) >= ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -1028,7 +1028,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value2" + :cnt) > ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -1065,7 +1065,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value2" + :cnt) <= ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE
@@ -1102,7 +1102,7 @@ WHERE
 	((1=1)) = (CASE
 		WHEN (r."Value2" + :cnt) < ((
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"BooleanTable" r_1
 			WHERE

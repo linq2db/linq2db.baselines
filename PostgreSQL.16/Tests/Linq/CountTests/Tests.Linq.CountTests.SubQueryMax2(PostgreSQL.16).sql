@@ -3,7 +3,7 @@
 SELECT
 	MAX((
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"Child" "a_Children"
 		WHERE

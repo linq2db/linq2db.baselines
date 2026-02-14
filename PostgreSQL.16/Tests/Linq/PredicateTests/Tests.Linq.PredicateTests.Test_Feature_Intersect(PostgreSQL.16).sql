@@ -37,10 +37,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -55,7 +55,7 @@ WHERE
 			r."One"
 		INTERSECT
 		SELECT
-			r."Zero"
+			r."Zero" as "One"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -70,7 +70,7 @@ WHERE
 			r."One"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "One"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -85,7 +85,7 @@ WHERE
 			r."Zero"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Zero"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -127,10 +127,10 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Null_1"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -145,7 +145,7 @@ WHERE
 			r."One"
 		INTERSECT
 		SELECT
-			r."Zero"
+			r."Zero" as "One"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -160,7 +160,7 @@ WHERE
 			r."One"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "One"
 	)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -175,6 +175,6 @@ WHERE
 			r."Zero"
 		INTERSECT
 		SELECT
-			r."Null"
+			r."Null" as "Zero"
 	)
 

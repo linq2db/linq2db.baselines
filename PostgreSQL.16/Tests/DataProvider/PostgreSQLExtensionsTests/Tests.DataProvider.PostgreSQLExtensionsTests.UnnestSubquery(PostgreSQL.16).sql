@@ -4,7 +4,7 @@ SELECT
 	t."Id",
 	(
 		SELECT
-			t1.value
+			t1.value as "First_1"
 		FROM
 			UNNEST(t."StrArray") t1(value)
 		LIMIT 1

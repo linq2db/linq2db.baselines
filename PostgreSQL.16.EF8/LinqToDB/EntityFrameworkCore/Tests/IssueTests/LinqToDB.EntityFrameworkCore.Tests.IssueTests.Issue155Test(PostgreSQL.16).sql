@@ -5,7 +5,7 @@ SELECT
 	e."Linked",
 	(
 		SELECT
-			ARRAY_AGG(DISTINCT r."Id")
+			ARRAY_AGG(DISTINCT r."Id") as "ToValue"
 		FROM
 			"Issue155Table" r
 		WHERE

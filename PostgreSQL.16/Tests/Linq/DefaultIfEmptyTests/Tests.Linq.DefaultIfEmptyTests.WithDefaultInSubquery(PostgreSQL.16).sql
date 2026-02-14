@@ -6,7 +6,7 @@ SELECT
 			SUM(CASE
 				WHEN d."ParentID" IS NOT NULL THEN d."ParentID"
 				ELSE -100
-			END)
+			END) as "Sum_1"
 		FROM
 			(
 				SELECT

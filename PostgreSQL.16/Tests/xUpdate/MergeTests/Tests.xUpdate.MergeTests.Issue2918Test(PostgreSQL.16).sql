@@ -8,7 +8,7 @@ USING (
 		pa."PatentId",
 		(
 			SELECT
-				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName" NULLS FIRST) FILTER (WHERE t1."PatentId" = pa."PatentId")
+				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName" NULLS FIRST) FILTER (WHERE t1."PatentId" = pa."PatentId") as "TechnicalReviewersText"
 			FROM
 				"Issue2918Table2" t1
 					LEFT JOIN "User" "a_User" ON t1."UserId" = "a_User"."Id"

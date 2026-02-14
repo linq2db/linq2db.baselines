@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			STRING_AGG("a_Children"."ChildID"::text, ', ')
+			STRING_AGG("a_Children"."ChildID"::text, ', ') as "ConcatStringsNullable"
 		FROM
 			"Child" "a_Children"
 		WHERE

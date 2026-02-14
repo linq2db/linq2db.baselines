@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"Child" "a_Children"
 				INNER JOIN "GrandChild" g_1 ON "a_Children"."ParentID" = g_1."ParentID" AND "a_Children"."ChildID" = g_1."ChildID"
