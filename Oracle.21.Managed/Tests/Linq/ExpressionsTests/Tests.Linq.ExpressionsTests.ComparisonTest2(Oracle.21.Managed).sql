@@ -14,7 +14,7 @@ SELECT
 			WHERE
 				(
 					SELECT
-						COUNT(*)
+						COUNT(*) as "Count_1"
 					FROM
 						"Patient" t2
 					WHERE
@@ -29,7 +29,7 @@ SELECT
 				) = 0 AND
 				(
 					SELECT
-						COUNT(*)
+						COUNT(*) as "Count_1"
 					FROM
 						"Patient" t4
 					WHERE

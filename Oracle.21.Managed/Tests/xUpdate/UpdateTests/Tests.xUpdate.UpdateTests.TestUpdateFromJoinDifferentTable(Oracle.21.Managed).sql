@@ -7,16 +7,16 @@ SET
 		SELECT
 			x_1."col1",
 			x_1."col2",
-			Replace(x_1."col3", 'auth.', ''),
+			Replace(x_1."col3", 'auth.', '') as "c1",
 			x_1."col4",
 			CASE
 				WHEN x_1."col3" = 'empty' THEN '1'
 				ELSE '0'
-			END,
+			END as "c2",
 			CASE
 				WHEN x_1."col3" = 'empty' THEN ''
 				ELSE CAST(y1_1."id" AS VarChar(100))
-			END
+			END as "c3"
 		FROM
 			"gt_s_one" x_1
 				INNER JOIN "gt_s_one_target" t2_1 ON x_1."id" = t2_1."id"

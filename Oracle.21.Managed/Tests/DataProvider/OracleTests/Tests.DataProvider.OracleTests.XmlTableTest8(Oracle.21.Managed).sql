@@ -10,7 +10,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			XmlTable('/t/r' PASSING XmlType(:data) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
 		WHERE
@@ -29,7 +29,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			XmlTable('/t/r' PASSING XmlType(:data) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
 		WHERE

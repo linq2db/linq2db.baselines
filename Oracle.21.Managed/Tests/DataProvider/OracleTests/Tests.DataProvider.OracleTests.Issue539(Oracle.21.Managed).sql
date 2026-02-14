@@ -31,7 +31,7 @@ SELECT
 	t1."binaryDataType",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"AllTypes" t2
 		WHERE

@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			MIN(a_Children."ParentID")
+			MIN(a_Children."ParentID") as "max_1"
 		FROM
 			"Child" a_Children
 		WHERE

@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			r."GuidValue"
+			r."GuidValue" as "HasValue"
 		FROM
 			"LinqDataTypes" r
 		FETCH NEXT 1 ROWS ONLY

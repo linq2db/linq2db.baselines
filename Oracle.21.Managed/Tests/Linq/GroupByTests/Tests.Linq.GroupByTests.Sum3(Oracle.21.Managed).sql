@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			SUM(a_Children."ChildID")
+			SUM(a_Children."ChildID") as "Sum_1"
 		FROM
 			"Child" a_Children
 		WHERE
