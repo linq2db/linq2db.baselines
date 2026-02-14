@@ -6,7 +6,7 @@ SELECT
 	p."ParentID",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "count_1"
 		FROM
 			"Child" c_1
 		WHERE

@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				item_1."Value"
+				item_1."Value" as "Key_1"
 			FROM
 				"TakeSkipClass" item_1
 			GROUP BY

@@ -5,7 +5,7 @@ UPDATE
 SET
 	"Value" = (
 		SELECT
-			r_1."Value"
+			r_1."Value" as "Value_1"
 		FROM
 			"TableToInsert" t_1
 				INNER JOIN (

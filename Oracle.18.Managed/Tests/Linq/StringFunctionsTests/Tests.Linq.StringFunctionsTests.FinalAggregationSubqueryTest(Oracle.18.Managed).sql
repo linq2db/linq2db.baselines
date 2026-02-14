@@ -3,13 +3,13 @@
 SELECT
 	(
 		SELECT
-			COUNT(DISTINCT t1."Value1")
+			COUNT(DISTINCT t1."Value1") as "CountExt"
 		FROM
 			"SampleClass" t1
 	),
 	(
 		SELECT
-			LISTAGG(t2."Value1", ' -> ') WITHIN GROUP (ORDER BY t2."Value1")
+			LISTAGG(t2."Value1", ' -> ') WITHIN GROUP (ORDER BY t2."Value1") as "Aggregated"
 		FROM
 			"SampleClass" t2
 	)
