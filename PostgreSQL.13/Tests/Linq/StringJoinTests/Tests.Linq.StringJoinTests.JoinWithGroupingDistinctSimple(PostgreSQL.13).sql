@@ -4,7 +4,7 @@ SELECT
 	t1."Key_1",
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce(t2."NotNullableOrderedNoNulls", ''), ', '), '')
+			Coalesce(STRING_AGG(Coalesce(t2."NotNullableOrderedNoNulls", ''), ', '), '') as "NotNullableOrderedNoNulls"
 		FROM
 			(
 				SELECT DISTINCT
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG(t4."NotNullableOrderedNulls", ', '), '')
+			Coalesce(STRING_AGG(t4."NotNullableOrderedNulls", ', '), '') as "NotNullableOrderedNulls"
 		FROM
 			(
 				SELECT DISTINCT

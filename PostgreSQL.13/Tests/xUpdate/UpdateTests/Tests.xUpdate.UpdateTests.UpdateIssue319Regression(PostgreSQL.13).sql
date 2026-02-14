@@ -40,7 +40,7 @@ SET
 WHERE
 	"Parent"."ParentID" = :id AND (
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"Parent" p
 		WHERE
