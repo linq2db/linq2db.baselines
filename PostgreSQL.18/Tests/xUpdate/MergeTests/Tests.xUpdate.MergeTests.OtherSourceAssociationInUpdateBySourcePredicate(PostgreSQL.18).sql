@@ -17,7 +17,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 		CASE
 			WHEN "a_Patient"."Diagnosis" LIKE '%very%' ESCAPE '~' THEN True
 			ELSE False
-		END
+		END as c1
 	FROM
 		"Patient" "a_Patient"
 	WHERE

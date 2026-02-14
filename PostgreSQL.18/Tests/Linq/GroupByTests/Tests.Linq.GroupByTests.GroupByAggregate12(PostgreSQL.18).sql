@@ -4,14 +4,14 @@ SELECT DISTINCT
 	CASE
 		WHEN (
 			SELECT
-				COUNT(*)
+				COUNT(*) as "Count_1"
 			FROM
 				"Child" "a_Children"
 			WHERE
 				g_1."ParentID" = "a_Children"."ParentID"
 		) > 0 AND (
 			SELECT
-				AVG("a_Children_1"."ParentID")
+				AVG("a_Children_1"."ParentID") as "Average"
 			FROM
 				"Child" "a_Children_1"
 			WHERE

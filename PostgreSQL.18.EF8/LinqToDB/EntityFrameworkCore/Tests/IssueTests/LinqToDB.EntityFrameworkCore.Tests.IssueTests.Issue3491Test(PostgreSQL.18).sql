@@ -6,7 +6,7 @@ SET
 	("Title", "SearchVector") = (
 		SELECT
 			"PostgreTestTable"."Title",
-			to_tsvector('test')
+			to_tsvector('test') as c1
 		FROM
 			"PostgreTestTable" x
 		WHERE

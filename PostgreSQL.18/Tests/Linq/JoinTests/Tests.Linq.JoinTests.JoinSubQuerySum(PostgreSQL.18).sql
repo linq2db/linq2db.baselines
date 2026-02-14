@@ -4,7 +4,7 @@ SELECT
 	p."ParentID",
 	(
 		SELECT
-			SUM(c_1."ChildID")
+			SUM(c_1."ChildID") as count_1
 		FROM
 			"Child" c_1
 		WHERE

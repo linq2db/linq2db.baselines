@@ -57,7 +57,7 @@ WHERE
 				CASE
 					WHEN d_1."ChildID" IS NOT NULL THEN d_1."ChildID"
 					ELSE 0
-				END
+				END as c1
 			FROM
 				(
 					SELECT
@@ -129,7 +129,7 @@ WHERE
 				CASE
 					WHEN d_1."ChildID" IS NOT NULL THEN d_1."ChildID"
 					ELSE 0
-				END
+				END as c1
 			FROM
 				(
 					SELECT

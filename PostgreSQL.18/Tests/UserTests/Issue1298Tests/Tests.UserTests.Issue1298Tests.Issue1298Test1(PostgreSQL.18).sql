@@ -91,7 +91,7 @@ SELECT
 	x."y1.q1.ref1",
 	(
 		SELECT
-			q.asdfgh
+			q.asdfgh as face_y1_q1_ref1
 		FROM
 			qwerty q
 		WHERE

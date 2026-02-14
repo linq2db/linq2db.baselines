@@ -72,7 +72,7 @@ SELECT
 	c_1."DisplayOrder",
 	(
 		SELECT
-			STRING_AGG(t2."Name", ' -> ' ORDER BY t2."Level_1" DESC NULLS FIRST) FILTER (WHERE t2."RootCategoryId" = c_1."Id")
+			STRING_AGG(t2."Name", ' -> ' ORDER BY t2."Level_1" DESC NULLS FIRST) FILTER (WHERE t2."RootCategoryId" = c_1."Id") as "FullPath"
 		FROM
 			"categoryHierarchy" t2
 	)
