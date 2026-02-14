@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"SubEntity" "a_SubEntities"
 		WHERE

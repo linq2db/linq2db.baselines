@@ -8,7 +8,7 @@ SELECT
 	t1."NotNullableDistinct",
 	(
 		SELECT
-			Coalesce(STRING_AGG(t2."NotNullableDistinctOrdered", ', ' ORDER BY t2."NotNullableDistinctOrdered" DESC NULLS FIRST), '')
+			Coalesce(STRING_AGG(t2."NotNullableDistinctOrdered", ', ' ORDER BY t2."NotNullableDistinctOrdered" DESC NULLS FIRST), '') as "NotNullableDistinctOrdered"
 		FROM
 			(
 				SELECT DISTINCT

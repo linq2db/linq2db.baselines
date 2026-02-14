@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(', ', Coalesce(t."NullableValue", ''), t."NotNullableValue", Coalesce(t."VarcharValue", ''), Coalesce(t."NVarcharValue", '')),
 	(
 		SELECT
-			Coalesce(STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item), '')
+			Coalesce(STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item), '') as "AggregatedNotNullFilteredDistinct"
 		FROM
 			(VALUES
 				(t."NotNullableValue"), (t."NotNullableValue"),
@@ -16,7 +16,7 @@ SELECT
 			Coalesce(STRING_AGG(Coalesce(t3."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
 				WHEN t3."AggregatedFilteredDistinct" IS NULL THEN 0
 				ELSE 1
-			END NULLS FIRST, t3."AggregatedFilteredDistinct" NULLS FIRST), '')
+			END NULLS FIRST, t3."AggregatedFilteredDistinct" NULLS FIRST), '') as "AggregatedFilteredDistinct"
 		FROM
 			(
 				SELECT DISTINCT
