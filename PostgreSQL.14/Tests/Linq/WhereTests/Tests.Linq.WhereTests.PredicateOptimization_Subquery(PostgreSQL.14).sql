@@ -12,7 +12,7 @@ FROM
 WHERE
 	(
 		SELECT
-			MAX(t1.item)
+			MAX(t1.item) as "Max_1"
 		FROM
 			(VALUES
 				(p."Date1"), (p."Date2"), (p."Date3"), (p."Date4")
@@ -34,7 +34,7 @@ WHERE
 	CASE
 		WHEN (
 			SELECT
-				MAX(t1.item)
+				MAX(t1.item) as "Max_1"
 			FROM
 				(VALUES
 					(p."Date1"), (p."Date2"), (p."Date3"), (p."Date4")

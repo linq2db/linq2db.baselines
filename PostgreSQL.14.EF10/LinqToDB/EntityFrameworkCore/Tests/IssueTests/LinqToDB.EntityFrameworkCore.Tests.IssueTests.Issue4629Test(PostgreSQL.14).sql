@@ -14,7 +14,7 @@ FROM
 		WHERE
 			(
 				SELECT
-					SUM("a_Tags"."Weight")
+					SUM("a_Tags"."Weight") as "Sum_1"
 				FROM
 					"Issue4629Tags" "a_Tags"
 				WHERE
@@ -23,7 +23,7 @@ FROM
 		ORDER BY
 			(
 				SELECT
-					SUM("a_Tags_1"."Weight")
+					SUM("a_Tags_1"."Weight") as "Sum_1"
 				FROM
 					"Issue4629Tags" "a_Tags_1"
 				WHERE

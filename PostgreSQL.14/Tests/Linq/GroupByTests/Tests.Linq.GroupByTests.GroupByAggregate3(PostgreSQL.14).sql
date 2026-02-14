@@ -8,7 +8,7 @@ FROM
 			CASE
 				WHEN (
 					SELECT
-						AVG("a_Children"."ParentID")
+						AVG("a_Children"."ParentID") as "Average"
 					FROM
 						"Child" "a_Children"
 					WHERE

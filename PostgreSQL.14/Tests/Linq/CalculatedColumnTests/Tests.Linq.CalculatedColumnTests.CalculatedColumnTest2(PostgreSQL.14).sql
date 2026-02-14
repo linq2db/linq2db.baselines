@@ -10,7 +10,7 @@ SELECT
 	t1."LastName" || ', ' || t1."FirstName",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "DoctorCount"
 		FROM
 			"Doctor" d
 		WHERE
@@ -31,7 +31,7 @@ SELECT
 	i."LastName" || ', ' || i."FirstName",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "DoctorCount"
 		FROM
 			"Doctor" d
 		WHERE
