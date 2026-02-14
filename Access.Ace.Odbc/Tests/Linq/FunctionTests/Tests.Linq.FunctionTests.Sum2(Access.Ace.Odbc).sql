@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			SUM([a_Children].[ParentID] * [a_Children].[ChildID])
+			SUM([a_Children].[ParentID] * [a_Children].[ChildID]) as [ChildCount]
 		FROM
 			[Child] [a_Children]
 		WHERE

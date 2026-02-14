@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			MAX([ch].[ChildID])
+			MAX([ch].[ChildID]) as [Max_1]
 		FROM
 			[Child] [ch]
 		WHERE

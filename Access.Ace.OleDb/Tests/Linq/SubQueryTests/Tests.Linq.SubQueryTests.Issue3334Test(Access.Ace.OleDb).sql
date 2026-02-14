@@ -16,7 +16,7 @@ SELECT TOP 1
 	),
 	(
 		SELECT TOP 1
-			[entity2_1].[PersonID]
+			[entity2_1].[PersonID] as [ID]
 		FROM
 			[Person] [entity2_1]
 		WHERE
