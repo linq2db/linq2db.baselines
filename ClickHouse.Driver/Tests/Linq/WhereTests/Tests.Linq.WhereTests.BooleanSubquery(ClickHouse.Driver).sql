@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT
-			x.BoolValue
+			x.BoolValue as BoolValue
 		FROM
 			WhereWithBool x
 		WHERE

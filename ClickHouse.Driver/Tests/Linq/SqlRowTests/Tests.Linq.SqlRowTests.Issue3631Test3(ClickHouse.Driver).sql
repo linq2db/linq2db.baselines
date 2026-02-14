@@ -9,8 +9,8 @@ FROM
 WHERE
 	(x.Country, x.State) IN (
 		SELECT
-			t1.Item1,
-			t1.Item2
+			t1.Item1 as Item1,
+			t1.Item2 as Item2
 		FROM
 			(
 				SELECT 'US' AS Item1, 'CA' AS Item2

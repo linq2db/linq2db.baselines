@@ -7,7 +7,7 @@ SELECT
 			ELSE false
 		END AND (i.IntValue = (
 			SELECT
-				p.IntValue
+				p.IntValue as IntValue
 			FROM
 				LinqDataTypes p
 			WHERE
@@ -15,7 +15,7 @@ SELECT
 			LIMIT 1
 		) OR i.IntValue IS NULL AND (
 			SELECT
-				p.IntValue
+				p.IntValue as IntValue
 			FROM
 				LinqDataTypes p
 			WHERE

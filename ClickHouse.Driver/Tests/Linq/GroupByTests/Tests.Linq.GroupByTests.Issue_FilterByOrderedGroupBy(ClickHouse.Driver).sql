@@ -8,7 +8,7 @@ FROM
 WHERE
 	t.ParentID IN (
 		SELECT
-			g_1.ParentID
+			g_1.ParentID as ParentID
 		FROM
 			Child g_1
 		GROUP BY

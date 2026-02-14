@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			t1.ParentID
+			t1.ParentID as ParentID
 		FROM
 			Child t1
 		LIMIT 1

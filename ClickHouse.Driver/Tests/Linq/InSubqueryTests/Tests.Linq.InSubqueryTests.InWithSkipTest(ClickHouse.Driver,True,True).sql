@@ -8,7 +8,7 @@ FROM
 WHERE
 	c_1.ParentID IN (
 		SELECT
-			t1.ParentID
+			t1.ParentID as ParentID
 		FROM
 			(
 				SELECT

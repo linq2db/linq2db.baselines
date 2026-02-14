@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		p.Id,
+		p.Id as Id,
 		toUUID(NULL) as Guid
 	FROM
 		Issue3360NullInAnchor p

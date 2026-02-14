@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN 1 IN (
 			SELECT
-				c_1.ParentID
+				c_1.ParentID as ParentID
 			FROM
 				Child c_1
 		)
@@ -18,7 +18,7 @@ SELECT
 	CASE
 		WHEN -1 IN (
 			SELECT
-				c_1.ParentID
+				c_1.ParentID as ParentID
 			FROM
 				Child c_1
 		)

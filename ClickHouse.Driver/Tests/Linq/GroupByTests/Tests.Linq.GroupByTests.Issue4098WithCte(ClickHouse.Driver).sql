@@ -3,8 +3,8 @@
 WITH CTE_1 AS
 (
 	SELECT
-		g_1.InvestorId,
-		g_1.SecurityClass,
+		g_1.InvestorId as InvestorId,
+		g_1.SecurityClass as SecurityClass,
 		SUM(g_1.Units) as Units
 	FROM
 		Transaction g_1

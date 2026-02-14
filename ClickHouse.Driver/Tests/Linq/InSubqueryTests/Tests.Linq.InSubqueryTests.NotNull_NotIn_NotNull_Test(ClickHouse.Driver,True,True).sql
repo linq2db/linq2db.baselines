@@ -8,7 +8,7 @@ FROM
 WHERE
 	t.ID NOT IN (
 		SELECT
-			p.ID
+			p.ID as ID
 		FROM
 			test_in_2 p
 	)

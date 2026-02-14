@@ -9,7 +9,7 @@ FROM
 WHERE
 	t.ID IS NULL AND 1 IN (
 		SELECT
-			1
+			1 as c1
 		FROM
 			(
 				SELECT
@@ -24,7 +24,7 @@ WHERE
 	) OR
 	t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			minOrNull(g_2.ID)
+			minOrNull(g_2.ID) as In_1
 		FROM
 			test_in_2 g_2
 		GROUP BY

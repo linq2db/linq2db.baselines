@@ -8,7 +8,7 @@ FROM
 WHERE
 	c_1.ParentID IN (
 		SELECT
-			p.ParentID
+			p.ParentID as ParentID
 		FROM
 			Parent p
 		LIMIT 1, 100
