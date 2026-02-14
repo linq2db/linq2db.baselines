@@ -5,7 +5,7 @@ SELECT
 	c_1."ParentID",
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "CountChildren"
 		FROM
 			"Child" c2
 		WHERE
@@ -37,7 +37,7 @@ SELECT
 	END,
 	(
 		SELECT
-			MIN(c2_3."ChildID")
+			MIN(c2_3."ChildID") as "AllChildrenMin"
 		FROM
 			"Child" c2_3
 		WHERE
@@ -45,7 +45,7 @@ SELECT
 	),
 	(
 		SELECT
-			MAX(c2_4."ChildID")
+			MAX(c2_4."ChildID") as "AllChildrenMax"
 		FROM
 			"Child" c2_4
 		WHERE

@@ -8,7 +8,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					SUM(a_Children."ParentID")
+					SUM(a_Children."ParentID") as "Value1"
 				FROM
 					"Child" a_Children
 				WHERE

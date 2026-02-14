@@ -3,7 +3,7 @@
 SELECT
 	Coalesce((
 		SELECT
-			MAX(a_Children."ChildID")
+			MAX(a_Children."ChildID") as "Max_1"
 		FROM
 			"Child" a_Children
 		WHERE

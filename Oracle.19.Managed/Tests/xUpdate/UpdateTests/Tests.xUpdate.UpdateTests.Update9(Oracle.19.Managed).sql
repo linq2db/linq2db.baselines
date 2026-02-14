@@ -33,7 +33,7 @@ UPDATE
 SET
 	("ChildID", "ParentID") = (
 		SELECT
-			"Child"."ChildID" + 1,
+			"Child"."ChildID" + 1 as "c1",
 			p_1."ParentID"
 		FROM
 			"Child" c_2

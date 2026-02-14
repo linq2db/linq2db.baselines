@@ -12,7 +12,7 @@ UPDATE
 SET
 	"ParentID" = (
 		SELECT
-			c_4."ParentID" + 1000
+			c_4."ParentID" + 1000 as "c1"
 		FROM
 			"Parent" p_1
 				INNER JOIN "Child" c_3 ON p_1."ParentID" = c_3."ParentID"

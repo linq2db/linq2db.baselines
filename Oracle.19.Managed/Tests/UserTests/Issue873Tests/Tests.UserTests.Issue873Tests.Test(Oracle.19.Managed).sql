@@ -18,7 +18,7 @@ SELECT
 	END,
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"Child" p
 				LEFT JOIN "Parent" a_Parent_2 ON p."ParentID" = a_Parent_2."ParentID"

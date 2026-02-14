@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			LISTAGG(CAST(a_Children."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(a_Children."ChildID" AS VarChar(255)))
+			LISTAGG(CAST(a_Children."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(a_Children."ChildID" AS VarChar(255))) as "ConcatStringsNullable"
 		FROM
 			"Child" a_Children
 		WHERE

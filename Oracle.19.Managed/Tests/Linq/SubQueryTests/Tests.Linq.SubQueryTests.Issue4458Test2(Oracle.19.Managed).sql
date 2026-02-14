@@ -24,7 +24,7 @@ SELECT
 	i."Id",
 	(
 		SELECT
-			SUM(s."QuantityAvailable")
+			SUM(s."QuantityAvailable") as "TotalAvailable"
 		FROM
 			"WarehouseStock" s
 		WHERE

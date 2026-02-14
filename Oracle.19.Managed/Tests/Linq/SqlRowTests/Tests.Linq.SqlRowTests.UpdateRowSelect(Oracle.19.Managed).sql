@@ -6,8 +6,8 @@ SET
 	"One" = i."Two" * 5,
 	("Two", "Three") = (
 		SELECT
-			i."Two" * 10,
-			j."Three" * 100
+			i."Two" * 10 as "c1",
+			j."Three" * 100 as "c2"
 		FROM
 			"Ints" j
 		WHERE
@@ -15,8 +15,8 @@ SET
 	),
 	("Four", "Nil") = (
 		SELECT
-			i."One" * i."Four",
-			600
+			i."One" * i."Four" as "c1",
+			600 as "c2"
 		FROM SYS.DUAL
 	)
 WHERE

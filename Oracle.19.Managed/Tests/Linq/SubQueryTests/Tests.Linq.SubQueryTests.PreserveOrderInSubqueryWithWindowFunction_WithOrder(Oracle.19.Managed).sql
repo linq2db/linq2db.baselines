@@ -11,7 +11,7 @@ FROM
 			r."PersonID" as ID,
 			ROW_NUMBER() OVER(ORDER BY (
 				SELECT
-					'unordered'
+					'unordered' as "RowNumber"
 				FROM SYS.DUAL
 			)) as "RowNumber"
 		FROM
