@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			AVG(t1."Average"::Float)
+			AVG(t1."Average"::Float) as "Average"
 		FROM
 			(
 				SELECT DISTINCT
@@ -22,7 +22,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count_1"
 		FROM
 			"DetailClass" "a_Details_1"
 		WHERE

@@ -6,7 +6,7 @@ SELECT
 	id_1.c1,
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count1"
 		FROM
 			"Child" p
 		WHERE
@@ -14,7 +14,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as "Count2"
 		FROM
 			"Child" p_1
 		WHERE
