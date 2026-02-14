@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN `p`.`Value1` IS NULL THEN (
 			SELECT
-				COUNT(*)
+				COUNT(*) as `Count_1`
 			FROM
 				`Child` `a_Children`
 			WHERE
@@ -12,7 +12,7 @@ SELECT
 		)
 		ELSE (
 			SELECT
-				COUNT(*)
+				COUNT(*) as `Count_1`
 			FROM
 				`Child` `a_Children_1`
 			WHERE

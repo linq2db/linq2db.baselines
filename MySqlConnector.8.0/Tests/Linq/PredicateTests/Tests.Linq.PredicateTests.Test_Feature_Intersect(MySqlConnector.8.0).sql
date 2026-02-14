@@ -37,10 +37,10 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -55,7 +55,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Zero`
+			`r`.`Zero` as `One`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -70,7 +70,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `One`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -85,7 +85,7 @@ WHERE
 			`r`.`Zero`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Zero`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -127,10 +127,10 @@ FROM
 WHERE
 	NOT EXISTS(
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Null_1`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -145,7 +145,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Zero`
+			`r`.`Zero` as `One`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -160,7 +160,7 @@ WHERE
 			`r`.`One`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `One`
 	)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -175,6 +175,6 @@ WHERE
 			`r`.`Zero`
 		INTERSECT
 		SELECT
-			`r`.`Null`
+			`r`.`Null` as `Zero`
 	)
 

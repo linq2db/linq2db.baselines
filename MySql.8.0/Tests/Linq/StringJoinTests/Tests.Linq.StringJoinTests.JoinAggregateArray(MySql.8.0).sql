@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(', ', Coalesce(`t`.`NullableValue`, ''), `t`.`NotNullableValue`, Coalesce(`t`.`VarcharValue`, ''), Coalesce(`t`.`NVarcharValue`, '')),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', '), '')
+			Coalesce(GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', '), '') as `AggregatedNotNullFilteredDistinct`
 		FROM
 			(
 				SELECT `t`.`NotNullableValue` AS `item`
@@ -23,7 +23,7 @@ SELECT
 			END ORDER BY CASE
 				WHEN `t2`.`item` IS NULL THEN 0
 				ELSE 1
-			END, `t2`.`item` SEPARATOR ', '), '')
+			END, `t2`.`item` SEPARATOR ', '), '') as `AggregatedFilteredDistinct`
 		FROM
 			(
 				SELECT `t`.`NotNullableValue` AS `item`

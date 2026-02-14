@@ -18,7 +18,7 @@ WHERE
 		WHERE
 			LOCATE(@filter, `p`.`FirstName`) > 0 AND `p`.`PersonID` = (
 				SELECT
-					`d`.`PersonID`
+					`d`.`PersonID` as `ID`
 				FROM
 					`Person` `d`
 				WHERE
@@ -34,7 +34,7 @@ WHERE
 		WHERE
 			LOCATE(@filter_1, `p_1`.`FirstName`) > 0 AND `p_1`.`PersonID` = (
 				SELECT
-					`d_1`.`PersonID`
+					`d_1`.`PersonID` as `ID`
 				FROM
 					`Person` `d_1`
 				WHERE

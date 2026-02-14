@@ -3,7 +3,7 @@
 SELECT DISTINCT
 	(
 		SELECT
-			`cc`.`Name`
+			`cc`.`Name` as `Value_1`
 		FROM
 			`Issue4160City` `cc`
 		WHERE

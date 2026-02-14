@@ -40,7 +40,7 @@ SET
 WHERE
 	`p`.`ParentID` = @id AND (
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			(
 				SELECT

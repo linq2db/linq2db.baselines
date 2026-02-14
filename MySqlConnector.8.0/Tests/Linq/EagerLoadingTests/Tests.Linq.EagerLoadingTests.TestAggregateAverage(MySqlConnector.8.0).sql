@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST(`t1`.`Average` AS DOUBLE))
+			AVG(CAST(`t1`.`Average` AS DOUBLE)) as `Average`
 		FROM
 			(
 				SELECT DISTINCT
@@ -22,7 +22,7 @@ FROM
 WHERE
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as `Count_1`
 		FROM
 			`DetailClass` `a_Details_1`
 		WHERE

@@ -91,7 +91,7 @@ SELECT
 	`x`.`ref1`,
 	(
 		SELECT
-			`q`.`asdfgh`
+			`q`.`asdfgh` as `face_ref1`
 		FROM
 			`qwerty` `q`
 		WHERE

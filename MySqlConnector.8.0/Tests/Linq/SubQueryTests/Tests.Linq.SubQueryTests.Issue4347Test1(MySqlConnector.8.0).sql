@@ -18,7 +18,7 @@ WHERE
 			`m_1`.`Id` = `a_Lines`.`TransactionId`
 		INTERSECT
 		SELECT
-			`t1`.`item`
+			`t1`.`item` as `Currency`
 		FROM
 			(
 				SELECT 'A' AS `item`
@@ -43,7 +43,7 @@ WHERE
 			`x`.`Id` = `a_Lines`.`TransactionId`
 		INTERSECT
 		SELECT
-			`t1`.`item`
+			`t1`.`item` as `Currency`
 		FROM
 			(
 				SELECT 'A' AS `item`

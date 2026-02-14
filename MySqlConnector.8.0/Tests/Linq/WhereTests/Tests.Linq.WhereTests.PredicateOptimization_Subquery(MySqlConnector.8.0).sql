@@ -12,7 +12,7 @@ FROM
 WHERE
 	(
 		SELECT
-			MAX(`t1`.`item`)
+			MAX(`t1`.`item`) as `Max_1`
 		FROM
 			(
 				SELECT `p`.`Date1` AS `item`
@@ -39,7 +39,7 @@ WHERE
 	CASE
 		WHEN (
 			SELECT
-				MAX(`t1`.`item`)
+				MAX(`t1`.`item`) as `Max_1`
 			FROM
 				(
 					SELECT `p`.`Date1` AS `item`
