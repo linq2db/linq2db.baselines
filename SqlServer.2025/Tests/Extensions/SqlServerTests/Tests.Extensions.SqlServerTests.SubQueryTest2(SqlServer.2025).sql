@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT TOP (1)
-			[c1].[ChildID]
+			[c1].[ChildID] as [cc]
 		FROM
 			[Child] [c1] WITH (NoLock)
 		WHERE

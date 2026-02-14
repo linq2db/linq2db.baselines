@@ -11,7 +11,7 @@ SELECT
 	), 1, 0),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Child] [c_3]
 		WHERE
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT TOP (1)
-			[c_4].[ParentID]
+			[c_4].[ParentID] as [First1]
 		FROM
 			[Child] [c_4]
 		WHERE

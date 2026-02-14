@@ -50,7 +50,7 @@ WHERE
 	[e].[IsDeleted] = 0 AND
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Order Details] [e_1]
 		WHERE
@@ -59,7 +59,7 @@ WHERE
 	[pd2].[IsDeleted] = 0 AND
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[Order Details] [e_2]
 		WHERE

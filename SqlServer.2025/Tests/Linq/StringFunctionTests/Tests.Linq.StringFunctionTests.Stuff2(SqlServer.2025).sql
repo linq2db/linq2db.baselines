@@ -5,7 +5,7 @@ SELECT
 	[t].[Name],
 	Stuff((
 		SELECT
-			N',' + [c_1].[Name]
+			N',' + [c_1].[Name] as [Categories]
 		FROM
 			[Category] [c_1]
 		WHERE

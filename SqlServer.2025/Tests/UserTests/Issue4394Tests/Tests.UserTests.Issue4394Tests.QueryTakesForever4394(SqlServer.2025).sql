@@ -42,7 +42,7 @@ SELECT
 	[i1].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir1ic]
 		FROM
 			[InventoryResourceDTO] [x_9]
 		WHERE
@@ -217,7 +217,7 @@ SELECT
 	[i1].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir1ic]
 		FROM
 			[InventoryResourceDTO] [x_9]
 		WHERE
@@ -271,7 +271,7 @@ SELECT
 	[i2].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir2ic]
 		FROM
 			[InventoryResourceDTO] [x_12]
 		WHERE
@@ -325,7 +325,7 @@ SELECT
 	[i3].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir3ic]
 		FROM
 			[InventoryResourceDTO] [x_15]
 		WHERE
@@ -379,7 +379,7 @@ SELECT
 	[i4].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir4ic]
 		FROM
 			[InventoryResourceDTO] [x_18]
 		WHERE
@@ -433,7 +433,7 @@ SELECT
 	[i5].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir5ic]
 		FROM
 			[InventoryResourceDTO] [x_21]
 		WHERE
@@ -487,7 +487,7 @@ SELECT
 	[i6].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir6ic]
 		FROM
 			[InventoryResourceDTO] [x_24]
 		WHERE
@@ -541,7 +541,7 @@ SELECT
 	[i7].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir7ic]
 		FROM
 			[InventoryResourceDTO] [x_27]
 		WHERE
@@ -595,7 +595,7 @@ SELECT
 	[i8].[CustomDate1],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [ir8ic]
 		FROM
 			[InventoryResourceDTO] [x_30]
 		WHERE

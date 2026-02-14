@@ -16,7 +16,7 @@ SELECT
 				WHEN [a_ChecklistTriggers_1].[TriggerType] = 2 THEN N'PreHired'
 				WHEN [a_ChecklistTriggers_1].[TriggerType] = 3 THEN N'Terminated'
 				ELSE N''
-			END, N',')
+			END, N',') as [Triggers_1]
 		FROM
 			[ChecklistTrigger] [a_ChecklistTriggers_1]
 		WHERE

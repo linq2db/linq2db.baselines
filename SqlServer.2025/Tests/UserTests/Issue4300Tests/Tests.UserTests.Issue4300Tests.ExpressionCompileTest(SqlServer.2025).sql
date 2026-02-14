@@ -9,7 +9,7 @@ FROM
 WHERE
 	[row2].[TABLE1ID] IN (
 		SELECT
-			[row1].[ID1]
+			[row1].[ID1] as [Id1]
 		FROM
 			[TABLE1] [row1]
 		WHERE
@@ -27,7 +27,7 @@ FROM
 WHERE
 	[row2].[TABLE1ID] IN (
 		SELECT
-			[row1].[ID1]
+			[row1].[ID1] as [Id1]
 		FROM
 			[TABLE1] [row1]
 		WHERE

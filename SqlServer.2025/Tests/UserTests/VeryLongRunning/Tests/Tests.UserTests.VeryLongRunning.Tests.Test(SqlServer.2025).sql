@@ -191,7 +191,7 @@ FROM
 			[rd].[Column4],
 			(
 				SELECT
-					MIN(IIF([rd2].[Column2] = 1, [rd2].[Column6], NULL))
+					MIN(IIF([rd2].[Column2] = 1, [rd2].[Column6], NULL)) as [Column4]
 				FROM
 					[tempdb]..[#tbl1515] [rd2]
 				WHERE
@@ -1365,7 +1365,7 @@ FROM
 			[rd].[Column4],
 			(
 				SELECT
-					MIN(IIF([rd2].[Column2] = 1, [rd2].[Column6], NULL))
+					MIN(IIF([rd2].[Column2] = 1, [rd2].[Column6], NULL)) as [Column4]
 				FROM
 					[tempdb]..[#tbl1515] [rd2]
 				WHERE

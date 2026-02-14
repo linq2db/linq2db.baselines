@@ -29,7 +29,7 @@ FROM
 			[x].[Text],
 			(
 				SELECT
-					SUM([a_Values].[Value])
+					SUM([a_Values].[Value]) as [Sum_1]
 				FROM
 					[ItemValue] [a_Values]
 				WHERE

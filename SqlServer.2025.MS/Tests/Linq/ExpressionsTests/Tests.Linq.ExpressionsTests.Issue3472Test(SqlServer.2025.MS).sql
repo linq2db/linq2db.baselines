@@ -4,7 +4,7 @@ SELECT
 	[t1].[Id],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [PersonsCount]
 		FROM
 			[Person] [p]
 		WHERE

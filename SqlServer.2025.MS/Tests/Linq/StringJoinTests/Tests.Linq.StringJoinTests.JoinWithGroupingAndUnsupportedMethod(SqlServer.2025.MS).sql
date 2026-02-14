@@ -4,7 +4,7 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce([t2].[NullableValue], N''), N', '), N'')
+			Coalesce(STRING_AGG(Coalesce([t2].[NullableValue], N''), N', '), N'') as [Nullable_1]
 		FROM
 			(
 				SELECT TOP (2)
@@ -19,7 +19,7 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG([t3].[NotNullableValue], N', '), N'')
+			Coalesce(STRING_AGG([t3].[NotNullableValue], N', '), N'') as [NotNullable]
 		FROM
 			(
 				SELECT TOP (2)

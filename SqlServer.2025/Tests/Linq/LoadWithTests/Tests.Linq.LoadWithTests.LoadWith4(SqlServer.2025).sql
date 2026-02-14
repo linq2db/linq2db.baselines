@@ -18,7 +18,7 @@ FROM
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count_1]
 		FROM
 			[GrandChild] [a_GrandChildren]
 		WHERE

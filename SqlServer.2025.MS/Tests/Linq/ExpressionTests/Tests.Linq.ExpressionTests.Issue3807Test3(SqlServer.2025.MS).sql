@@ -12,7 +12,7 @@ FROM
 		WHERE
 			N'two' IN (
 				SELECT
-					[r].[value]
+					[r].[value] as [Value_1]
 				FROM
 					[STRING_SPLIT]([a].[ArrayString], N',') [r]
 			)
@@ -29,7 +29,7 @@ FROM
 WHERE
 	N'two' IN (
 		SELECT
-			[r].[value]
+			[r].[value] as [Value_1]
 		FROM
 			[STRING_SPLIT]([a].[ArrayString], N',') [r]
 	)

@@ -15,7 +15,7 @@ INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
 	SELECT
-		[t].[ID]
+		[t].[ID] as [ID]
 	FROM
 		[tempdb]..[#MergeTemp] [t]
 	WHERE
@@ -39,7 +39,7 @@ WHEN NOT MATCHED THEN
 	(
 		(
 			SELECT
-				[t].[ID]
+				[t].[ID] as [ID]
 			FROM
 				[tempdb]..[#MergeTemp] [t]
 			WHERE

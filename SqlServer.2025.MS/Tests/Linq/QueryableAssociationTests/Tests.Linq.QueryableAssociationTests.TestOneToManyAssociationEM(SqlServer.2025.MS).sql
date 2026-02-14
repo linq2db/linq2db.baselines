@@ -4,7 +4,7 @@ SELECT TOP (1)
 	[x].[Id],
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [EnglishUserCount]
 		FROM
 			[User] [x_1]
 		WHERE
@@ -12,7 +12,7 @@ SELECT TOP (1)
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [FrenchhUserCount]
 		FROM
 			[User] [x_2]
 		WHERE

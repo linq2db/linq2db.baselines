@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count1]
 		FROM
 			[Child] [c_1]
 		WHERE
@@ -11,7 +11,7 @@ SELECT
 	),
 	(
 		SELECT
-			COUNT(*)
+			COUNT(*) as [Count2]
 		FROM
 			[GrandChild] [g_1]
 		WHERE

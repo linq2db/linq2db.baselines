@@ -12,7 +12,7 @@ SELECT TOP (1)
 				WHERE
 					[a_FirstUsersWithLanguage_1].[UserGroupId] = [a_UserGroup].[Id] AND
 					[a_FirstUsersWithLanguage_1].[LanguageId] = 2
-			)
+			) as [Id]
 		FROM
 			[User] [a_FirstUsersWithLanguage]
 				LEFT JOIN [UserGroup] [a_UserGroup] ON [a_FirstUsersWithLanguage].[UserGroupId] = [a_UserGroup].[Id]

@@ -7,7 +7,7 @@ FROM
 		SELECT
 			(
 				SELECT TOP (1)
-					[a_GrandChildren].[ParentID]
+					[a_GrandChildren].[ParentID] as [Assignee]
 				FROM
 					[GrandChild] [a_GrandChildren]
 				WHERE

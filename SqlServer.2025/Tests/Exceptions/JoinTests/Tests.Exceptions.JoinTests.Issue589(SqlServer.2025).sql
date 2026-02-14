@@ -6,7 +6,7 @@ SELECT
 	[a_Parent].[ParentID],
 	(
 		SELECT TOP (1)
-			[grandChild1].[GrandChildID]
+			[grandChild1].[GrandChildID] as [Tmp]
 		FROM
 			[Child] [pf]
 				INNER JOIN [Parent] [parent1] ON [pf].[ParentID] = [parent1].[ParentID]

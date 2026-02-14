@@ -8,7 +8,7 @@ FROM
 WHERE
 	(
 		SELECT TOP (1)
-			[r].[GuidValue]
+			[r].[GuidValue] as [HasValue]
 		FROM
 			[LinqDataTypes] [r]
 	) IS NOT NULL
