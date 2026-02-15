@@ -51,7 +51,7 @@ FROM
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
-	m_1."Item1",
+	m_1."OrderId",
 	d."IsDeleted",
 	d."OrderID",
 	d."ProductID",
@@ -72,11 +72,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			e."OrderID" as "Item1"
+			e."OrderID" as "OrderId"
 		FROM
 			"Orders" e
 	) m_1
-		INNER JOIN "Order Details" d ON m_1."Item1" = d."OrderID"
+		INNER JOIN "Order Details" d ON m_1."OrderId" = d."OrderID"
 		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 
 
