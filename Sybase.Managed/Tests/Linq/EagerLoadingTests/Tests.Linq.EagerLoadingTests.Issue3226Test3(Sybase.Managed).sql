@@ -1,21 +1,21 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d].[Value]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Item1]
+			[t1].[Id]
 		FROM
 			(
 				SELECT
-					[x].[Id] as [Item1]
+					[x].[Id]
 				FROM
 					[Item] [x]
 			) [t1]
 	) [m_1]
-		INNER JOIN [ItemValue] [d] ON [m_1].[Item1] = [d].[ItemId]
+		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- Sybase.Managed Sybase
 
