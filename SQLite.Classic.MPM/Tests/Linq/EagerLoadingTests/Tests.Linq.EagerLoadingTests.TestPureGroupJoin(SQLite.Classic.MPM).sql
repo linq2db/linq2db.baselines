@@ -3,24 +3,24 @@ DECLARE @take  -- Int32
 SET     @take = 20
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id1],
 	[d].[DetailId],
 	[d].[MasterId],
 	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[Item1]
+			[t2].[Id1]
 		FROM
 			(
 				SELECT
-					[t1].[Id1] as [Item1]
+					[t1].[Id1]
 				FROM
 					[MasterClass] [t1]
 				LIMIT @take
 			) [t2]
 	) [m_1]
-		INNER JOIN [DetailClass] [d] ON [m_1].[Item1] = [d].[MasterId]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
