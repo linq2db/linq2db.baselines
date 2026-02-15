@@ -38,7 +38,7 @@ ORDER BY "p"."ProductID", "t3"."OrderID0", "t3"."ProductID", "t3"."OrderID", "t3
 
 SELECT
 	[m_1].[SupplierId],
-	[m_1].[Item1],
+	[m_1].[ProductId],
 	[d_1].[IsDeleted],
 	[d_1].[ProductID],
 	[d_1].[ProductName],
@@ -54,7 +54,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Supplier].[SupplierID] as [SupplierId],
-			[e_1].[ProductID] as [Item1]
+			[e_1].[ProductID] as [ProductId]
 		FROM
 			[Products] [e_1]
 				INNER JOIN [Order Details] [d] ON [e_1].[ProductID] = [d].[ProductID]

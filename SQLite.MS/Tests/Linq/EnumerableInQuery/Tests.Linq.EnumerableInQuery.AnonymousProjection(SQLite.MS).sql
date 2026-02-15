@@ -8,12 +8,12 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[ParentID],
 	[d].[ParentID]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID] as [Item1]
+			[t1].[ParentID]
 		FROM
 			[Parent] [t1]
 	) [m_1]
@@ -22,7 +22,7 @@ FROM
 			UNION ALL
 			VALUES
 				(1), (2), (3), (4), (5), (6), (7)
-			) [d] ON [d].[ParentID] = [m_1].[Item1]
+			) [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 -- SQLite.MS SQLite
 
