@@ -58,14 +58,14 @@ WHERE
 
 SELECT
 	"m_1"."BookId",
-	"m_1"."Item1",
+	"m_1"."AuthorId",
 	"a_Author"."AuthorId",
 	"a_Author"."AuthorName"
 FROM
 	(
 		SELECT DISTINCT
 			"a_Book"."BookId",
-			"t1"."AuthorId" as "Item1"
+			"t1"."AuthorId"
 		FROM
 			"Author" "t1"
 				INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "t1"."AuthorId"

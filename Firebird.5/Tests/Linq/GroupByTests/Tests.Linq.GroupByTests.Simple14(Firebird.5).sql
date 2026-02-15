@@ -1,12 +1,12 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	"m_1"."Item1",
+	"m_1"."ParentID",
 	"d_1"."Key_1"
 FROM
 	(
 		SELECT DISTINCT
-			"p"."ParentID" as "Item1"
+			"p"."ParentID"
 		FROM
 			"Parent" "p"
 	) "m_1"
@@ -16,7 +16,7 @@ FROM
 			FROM
 				"Child" "d"
 			WHERE
-				"m_1"."Item1" = "d"."ParentID"
+				"m_1"."ParentID" = "d"."ParentID"
 		) "d_1"
 
 -- Firebird.5 Firebird4
