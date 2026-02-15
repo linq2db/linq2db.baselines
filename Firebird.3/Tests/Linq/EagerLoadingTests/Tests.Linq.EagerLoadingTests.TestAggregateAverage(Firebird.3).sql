@@ -32,18 +32,18 @@ WHERE
 -- Firebird.3 Firebird3
 
 SELECT
-	"m_1"."Item1",
+	"m_1"."Id1",
 	"d"."DetailId",
 	"d"."MasterId",
 	"d"."DetailValue"
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id1" as "Item1"
+			"t1"."Id1"
 		FROM
 			"MasterClass" "t1"
 	) "m_1"
-		INNER JOIN "DetailClass" "d" ON "m_1"."Item1" = "d"."MasterId"
+		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 -- Firebird.3 Firebird3
 
