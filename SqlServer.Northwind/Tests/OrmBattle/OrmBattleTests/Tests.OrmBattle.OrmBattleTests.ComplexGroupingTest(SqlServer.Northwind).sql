@@ -1,7 +1,7 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[CustomerID],
 	[m_1].[Key_1],
 	[m_1].[Key_2],
 	[d_4].[OrderID],
@@ -23,12 +23,12 @@ FROM
 		SELECT DISTINCT
 			[t1].[Key_1],
 			[d_3].[Key_1] as [Key_2],
-			[t1].[Item1]
+			[t1].[CustomerID]
 		FROM
 			(
 				SELECT DISTINCT
 					[d_1].[Key_1],
-					[c_1].[CustomerID] as [Item1]
+					[c_1].[CustomerID]
 				FROM
 					[Customers] [c_1]
 						CROSS APPLY (
@@ -46,15 +46,15 @@ FROM
 					FROM
 						[Orders] [d_2]
 					WHERE
-						[t1].[Item1] = [d_2].[CustomerID] AND ([t1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [t1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
+						[t1].[CustomerID] = [d_2].[CustomerID] AND ([t1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [t1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
 				) [d_3]
 	) [m_1]
-		INNER JOIN [Orders] [d_4] ON [m_1].[Item1] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
+		INNER JOIN [Orders] [d_4] ON [m_1].[CustomerID] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
 
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[CustomerID],
 	[m_1].[Key_1],
 	[d_3].[Key_1],
 	[d_3].[Key_1]
@@ -62,7 +62,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[d_1].[Key_1],
-			[c_1].[CustomerID] as [Item1]
+			[c_1].[CustomerID]
 		FROM
 			[Customers] [c_1]
 				CROSS APPLY (
@@ -80,7 +80,7 @@ FROM
 			FROM
 				[Orders] [d_2]
 			WHERE
-				[m_1].[Item1] = [d_2].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
+				[m_1].[CustomerID] = [d_2].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
 		) [d_3]
 
 -- SqlServer.Northwind SqlServer.2019
