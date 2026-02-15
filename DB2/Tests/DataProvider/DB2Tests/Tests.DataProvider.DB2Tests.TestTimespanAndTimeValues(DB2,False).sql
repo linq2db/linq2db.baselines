@@ -311,8 +311,8 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp8 Timestamp(20) -- DateTime
-SET     @TimeStamp8 = 1000-01-10-02.20.30.00000001
+DECLARE @value Timestamp(20) -- DateTime
+SET     @value = 1000-01-10-02.20.30.00000001
 
 SELECT
 	"t1"."Id",
@@ -335,12 +335,12 @@ SELECT
 FROM
 	"TestTimeTypes" "t1"
 WHERE
-	"t1"."TimeStamp8" = @TimeStamp8
+	"t1"."TimeStamp8" = @value
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp9 Timestamp(20) -- DateTime
-SET     @TimeStamp9 = 1000-01-10-02.20.30.000000001
+DECLARE @value Timestamp(20) -- DateTime
+SET     @value = 1000-01-10-02.20.30.000000001
 
 SELECT
 	"t1"."Id",
@@ -363,12 +363,12 @@ SELECT
 FROM
 	"TestTimeTypes" "t1"
 WHERE
-	"t1"."TimeStamp9" = @TimeStamp9
+	"t1"."TimeStamp9" = @value
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp10 Timestamp(20) -- DateTime
-SET     @TimeStamp10 = 1000-01-10-02.20.30.0000000001
+DECLARE @value Timestamp(20) -- DateTime
+SET     @value = 1000-01-10-02.20.30.0000000001
 
 SELECT
 	"t1"."Id",
@@ -391,12 +391,12 @@ SELECT
 FROM
 	"TestTimeTypes" "t1"
 WHERE
-	"t1"."TimeStamp10" = @TimeStamp10
+	"t1"."TimeStamp10" = @value
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp11 Timestamp(20) -- DateTime
-SET     @TimeStamp11 = 1000-01-10-02.20.30.00000000001
+DECLARE @value Timestamp(20) -- DateTime
+SET     @value = 1000-01-10-02.20.30.00000000001
 
 SELECT
 	"t1"."Id",
@@ -419,12 +419,12 @@ SELECT
 FROM
 	"TestTimeTypes" "t1"
 WHERE
-	"t1"."TimeStamp11" = @TimeStamp11
+	"t1"."TimeStamp11" = @value
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TimeStamp12 Timestamp(20) -- DateTime
-SET     @TimeStamp12 = 1000-01-10-02.20.30.000000000001
+DECLARE @value Timestamp(20) -- DateTime
+SET     @value = 1000-01-10-02.20.30.000000000001
 
 SELECT
 	"t1"."Id",
@@ -447,6 +447,6 @@ SELECT
 FROM
 	"TestTimeTypes" "t1"
 WHERE
-	"t1"."TimeStamp12" = @TimeStamp12
+	"t1"."TimeStamp12" = @value
 FETCH NEXT 2 ROWS ONLY
 
