@@ -1,18 +1,18 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`m_1`.`Item1`,
+	`m_1`.`ParentID`,
 	`d`.`ChildID`
 FROM
 	(
 		SELECT DISTINCT
-			`p`.`ParentID` as `Item1`
+			`p`.`ParentID`
 		FROM
 			`Parent` `p`
 	) `m_1`
-		INNER JOIN `Child` `d` ON `m_1`.`Item1` = `d`.`ParentID`
+		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 ORDER BY
-	`m_1`.`Item1`
+	`m_1`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 

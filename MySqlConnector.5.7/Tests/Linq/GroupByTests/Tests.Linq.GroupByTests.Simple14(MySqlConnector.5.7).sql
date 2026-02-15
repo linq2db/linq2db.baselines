@@ -1,12 +1,12 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`m_1`.`Item1`,
+	`m_1`.`ParentID`,
 	`d_1`.`Key_1`
 FROM
 	(
 		SELECT DISTINCT
-			`p`.`ParentID` as `Item1`
+			`p`.`ParentID`
 		FROM
 			`Parent` `p`
 	) `m_1`
@@ -15,7 +15,7 @@ FROM
 				`d`.`ParentID` as `Key_1`
 			FROM
 				`Child` `d`
-		) `d_1` ON `m_1`.`Item1` = `d_1`.`Key_1`
+		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
