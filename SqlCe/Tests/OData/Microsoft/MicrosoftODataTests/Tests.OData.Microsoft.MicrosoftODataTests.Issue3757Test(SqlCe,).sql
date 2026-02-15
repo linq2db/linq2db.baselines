@@ -1,9 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[ID] as [Item1],
-	[m_1].[ValS] as [Item2],
-	[d].[ID] as [Id],
+	[m_1].[ID],
+	[m_1].[ValS],
+	[d].[ID] as [Id_1],
 	[d].[ValB] as [LB],
 	[d].[ValInt] as [LI]
 FROM

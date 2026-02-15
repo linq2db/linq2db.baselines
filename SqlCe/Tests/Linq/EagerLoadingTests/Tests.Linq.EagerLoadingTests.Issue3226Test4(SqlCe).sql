@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[Id] as [Item1],
+	[m_1].[Id],
 	[d].[Value] as [Value_1]
 FROM
 	[Item] [m_1]
