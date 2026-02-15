@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
-	m_1."Item1",
+	m_1."ParentID",
 	d_1."Key_1",
 	d_1."Children"
 FROM
 	(
 		SELECT DISTINCT
-			c_1."ParentID" as "Item1"
+			c_1."ParentID"
 		FROM
 			"Parent" c_1
 	) m_1
@@ -18,7 +18,7 @@ FROM
 			FROM
 				"Child" d
 			WHERE
-				m_1."Item1" = d."ParentID"
+				m_1."ParentID" = d."ParentID"
 			GROUP BY
 				d."ParentID"
 		) d_1 ON 1=1
