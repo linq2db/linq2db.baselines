@@ -15,20 +15,20 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Item1,
+	m_2.Id1,
 	d.DetailId,
 	d.MasterId,
 	d.DetailValue
 FROM
 	(
 		SELECT DISTINCT
-			m_1.Id1 as Item1
+			m_1.Id1 as Id1
 		FROM
 			MasterClass m_1
 		WHERE
 			m_1.Id1 >= 0
 	) m_2
-		INNER JOIN DetailClass d ON d.MasterId = m_2.Item1
+		INNER JOIN DetailClass d ON d.MasterId = m_2.Id1
 WHERE
 	d.MasterId % 2 = 0
 
