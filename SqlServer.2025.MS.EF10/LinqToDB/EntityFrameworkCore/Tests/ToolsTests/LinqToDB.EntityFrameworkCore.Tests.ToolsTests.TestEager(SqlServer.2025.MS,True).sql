@@ -65,7 +65,7 @@ WHERE
 -- SqlServer.2025
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[OrderId],
 	[d].[IsDeleted],
 	[d].[OrderID],
 	[d].[ProductID],
@@ -86,13 +86,13 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[e].[OrderID] as [Item1]
+			[e].[OrderID] as [OrderId]
 		FROM
 			[Orders] [e]
 		WHERE
 			[e].[IsDeleted] = 0
 	) [m_1]
-		INNER JOIN [Order Details] [d] ON [m_1].[Item1] = [d].[OrderID]
+		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
 		INNER JOIN [Products] [e_1] ON [d].[ProductID] = [e_1].[ProductID]
 WHERE
 	[e_1].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
