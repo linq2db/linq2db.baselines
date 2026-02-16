@@ -16,14 +16,14 @@ FROM
 			a_Association.ID
 		FROM
 			"InsertIssueTest" t1
-				INNER JOIN "InsertIssueTest" a_Association ON t1.ID = a_Association."intDataType"
+				INNER JOIN "InsertIssueTest" a_Association ON CAST(t1.ID AS Int) = a_Association."intDataType"
 		WHERE
 			1 = 0
 	) t2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @ID Int16
-SET     @ID = 1234
+DECLARE @p Int16
+SET     @p = 1234
 
 INSERT INTO "InsertIssueTest"
 (
@@ -41,9 +41,9 @@ FROM
 			a_Association.ID
 		FROM
 			"InsertIssueTest" t1
-				INNER JOIN "InsertIssueTest" a_Association ON t1.ID = a_Association."intDataType"
+				INNER JOIN "InsertIssueTest" a_Association ON CAST(t1.ID AS Int) = a_Association."intDataType"
 		WHERE
-			t1.ID = :ID
+			t1.ID = :p
 	) t2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12

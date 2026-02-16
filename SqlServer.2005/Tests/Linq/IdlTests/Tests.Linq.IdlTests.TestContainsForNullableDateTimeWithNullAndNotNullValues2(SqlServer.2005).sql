@@ -21,5 +21,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (CAST('2009-09-24T09:19:29.090' AS DATETIME)) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (CAST('2009-09-24 09:19:29.090' AS DateTime)) OR [x].[DateTimeValue2] IS NULL)
 
