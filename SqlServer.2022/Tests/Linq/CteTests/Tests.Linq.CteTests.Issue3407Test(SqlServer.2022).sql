@@ -8,7 +8,8 @@ WITH [CTE_1]
 	[MiddleName],
 	[Gender],
 	[Patient_PersonID],
-	[Patient_Diagnosis]
+	[Patient_Diagnosis],
+	[PersonID]
 )
 AS
 (
@@ -19,7 +20,8 @@ AS
 		[t1].[MiddleName],
 		[t1].[Gender],
 		[a_Patient].[PersonID],
-		[a_Patient].[Diagnosis]
+		[a_Patient].[Diagnosis],
+		[a_Patient].[PersonID]
 	FROM
 		[Person] [t1]
 			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
@@ -30,6 +32,7 @@ SELECT
 	[r].[LastName],
 	[r].[MiddleName],
 	[r].[Gender],
+	[r].[PersonID],
 	[r].[Patient_PersonID],
 	[r].[Patient_Diagnosis]
 FROM
