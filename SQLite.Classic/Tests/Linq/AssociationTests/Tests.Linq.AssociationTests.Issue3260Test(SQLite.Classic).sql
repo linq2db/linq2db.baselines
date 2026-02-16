@@ -10,7 +10,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					0 as [Result_1]
+					1 as [c1]
 			) [t1]
 				LEFT JOIN (
 					SELECT
