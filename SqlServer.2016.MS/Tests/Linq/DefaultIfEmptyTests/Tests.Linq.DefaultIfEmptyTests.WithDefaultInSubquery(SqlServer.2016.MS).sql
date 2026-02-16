@@ -11,7 +11,7 @@ SELECT
 				FROM
 					(
 						SELECT
-							1 as [c1]
+							-100 as [ParentID]
 					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
 			) [t2]
