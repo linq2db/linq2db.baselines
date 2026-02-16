@@ -48,6 +48,7 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
+	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -56,6 +57,7 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -66,6 +68,7 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
+	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM
@@ -91,6 +94,7 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
+	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -99,6 +103,7 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -109,6 +114,7 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
+	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM
@@ -134,6 +140,7 @@ WITH [CTE_1]
 (
 	[Cursor_1],
 	[RowNumber],
+	[Data_BookingID],
 	[Data_ServiceDate],
 	[Data_Value]
 )
@@ -142,6 +149,7 @@ AS
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
+		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -152,6 +160,7 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
+	[q].[Data_BookingID],
 	[q].[Data_ServiceDate],
 	[q].[Data_Value]
 FROM
