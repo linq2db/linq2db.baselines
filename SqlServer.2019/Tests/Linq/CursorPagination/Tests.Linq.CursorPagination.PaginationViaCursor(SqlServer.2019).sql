@@ -17,7 +17,7 @@ DECLARE @take Int -- Int32
 SET     @take = 12
 
 SELECT
-	[q].[TotalCount],
+	CAST([q].[TotalCount] AS BigInt),
 	[q].[RowNumber],
 	[q].[BookingID],
 	[q].[ServiceDate],

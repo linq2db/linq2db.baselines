@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	EXTRACT(EPOCH FROM ((t."TransactionDate" + 100 * Interval '1 Minute')::timestamp - t."TransactionDate"::timestamp))
+	(EXTRACT(EPOCH FROM ((t."TransactionDate" + 100 * Interval '1 Minute')::timestamp - t."TransactionDate"::timestamp)))::Float
 FROM
 	"Transactions" t
 

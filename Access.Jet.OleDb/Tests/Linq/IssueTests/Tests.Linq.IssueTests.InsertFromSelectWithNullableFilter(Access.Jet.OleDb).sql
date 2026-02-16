@@ -22,8 +22,8 @@ FROM
 	) [t2]
 
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @ID SmallInt -- Int16
-SET     @ID = 1234
+DECLARE @p SmallInt -- Int16
+SET     @p = 1234
 
 INSERT INTO [InsertIssueTest]
 (
@@ -43,7 +43,7 @@ FROM
 			[InsertIssueTest] [t1]
 				INNER JOIN [InsertIssueTest] [a_Association] ON ([t1].[ID] = [a_Association].[intDataType])
 		WHERE
-			[t1].[ID] = @ID
+			[t1].[ID] = @p
 	) [t2]
 
 -- Access.Jet.OleDb AccessOleDb
