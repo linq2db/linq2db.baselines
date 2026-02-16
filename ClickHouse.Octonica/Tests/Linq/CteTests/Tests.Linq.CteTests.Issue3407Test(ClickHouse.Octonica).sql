@@ -4,12 +4,13 @@ WITH CTE_1 AS
 (
 	SELECT
 		t1.PersonID as ID,
-		t1.FirstName,
-		t1.LastName,
-		t1.MiddleName,
-		t1.Gender,
+		t1.FirstName as FirstName,
+		t1.LastName as LastName,
+		t1.MiddleName as MiddleName,
+		t1.Gender as Gender,
 		a_Patient.PersonID as Patient_PersonID,
-		a_Patient.Diagnosis as Patient_Diagnosis
+		a_Patient.Diagnosis as Patient_Diagnosis,
+		a_Patient.PersonID as PersonID
 	FROM
 		Person t1
 			LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
@@ -20,6 +21,7 @@ SELECT
 	r.LastName,
 	r.MiddleName,
 	r.Gender,
+	r.PersonID,
 	r.Patient_PersonID,
 	r.Patient_Diagnosis
 FROM

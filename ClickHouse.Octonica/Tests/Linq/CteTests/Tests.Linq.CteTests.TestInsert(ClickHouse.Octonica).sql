@@ -8,7 +8,7 @@ INSERT INTO CteChild
 WITH CTE1_ AS
 (
 	SELECT
-		c_1.ParentID
+		c_1.ParentID as ParentID
 	FROM
 		Child c_1
 	WHERE
@@ -17,8 +17,8 @@ WITH CTE1_ AS
 LAST0 AS
 (
 	SELECT
-		c4.ParentID,
-		c4.ChildID
+		c4.ParentID as ParentID,
+		c4.ChildID as ChildID
 	FROM
 		Child c4
 	WHERE

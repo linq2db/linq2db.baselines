@@ -4,9 +4,9 @@ WITH RECURSIVE d AS
 (
 	SELECT
 		a.name as FullName,
-		a.id,
-		a.parent_id,
-		a.name
+		a.id as id,
+		a.parent_id as parent_id,
+		a.name as name
 	FROM
 		Dto a
 	WHERE

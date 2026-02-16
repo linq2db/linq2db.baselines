@@ -3,7 +3,7 @@
 WITH RECURSIVE CTE_1 AS
 (
 	SELECT
-		t.Id
+		t.Id as Id
 	FROM
 		HierarchyTree t
 	WHERE
@@ -12,15 +12,15 @@ WITH RECURSIVE CTE_1 AS
 CTE_2 AS
 (
 	SELECT
-		t1.ParentId,
-		t1.Id
+		t1.ParentId as ParentId,
+		t1.Id as Id
 	FROM
 		HierarchyTree t1
 ),
 hierarchyDown AS
 (
 	SELECT
-		t2.Id
+		t2.Id as Id
 	FROM
 		CTE_1 t2
 	UNION ALL
