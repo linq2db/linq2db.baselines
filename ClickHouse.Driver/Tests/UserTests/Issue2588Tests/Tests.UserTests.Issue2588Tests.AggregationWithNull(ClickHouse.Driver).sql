@@ -26,7 +26,7 @@ SELECT
 FROM
 	(
 		SELECT
-			0 as c1
+			1 as c1
 	) t1
 		LEFT JOIN TestClass d ON d.Id = 0
 
@@ -40,7 +40,7 @@ SELECT
 FROM
 	(
 		SELECT
-			5 as c1
+			1 as c1
 	) t1
 		LEFT JOIN TestClass d ON d.Id = 0
 
