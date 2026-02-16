@@ -26,7 +26,7 @@ FROM
 		UNION
 		SELECT
 			Coalesce(`c_2`.`ParentID`, 0) as `ParentID`,
-			Floor(CAST(Coalesce(`c_2`.`GrandChildID`, 0) AS DECIMAL(29, 10)) / 100) as `Value1`
+			CAST(Floor(CAST(Coalesce(`c_2`.`GrandChildID`, 0) AS DECIMAL(29, 10)) / 100) AS SIGNED) as `Value1`
 		FROM
 			`GrandChild` `c_2`
 	) `t1`
