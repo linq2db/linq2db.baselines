@@ -18,7 +18,7 @@ FROM
 						FROM
 							(
 								SELECT
-									1 as [c1]
+									0 as [WithParentReference]
 							) [t1]
 								LEFT JOIN (
 									SELECT
@@ -42,7 +42,7 @@ FROM
 						FROM
 							(
 								SELECT
-									1 as [c1]
+									0 as [WithParentReferenceCustom1]
 							) [t3]
 								LEFT JOIN (
 									SELECT
@@ -66,7 +66,7 @@ FROM
 						FROM
 							(
 								SELECT
-									1 as [c1]
+									0 as [WithParentReferenceCustom2]
 							) [t5]
 								LEFT JOIN (
 									SELECT
@@ -90,7 +90,7 @@ FROM
 						FROM
 							(
 								SELECT
-									1 as [c1]
+									0 as [WithoutParentReference]
 							) [t7]
 								LEFT JOIN (
 									SELECT

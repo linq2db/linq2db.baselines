@@ -36,7 +36,7 @@ WHERE
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					0 as [c1]
 			) [t3]
 				LEFT JOIN [Child] [d_1] ON [a_Parent].[ParentID] = [d_1].[ParentID]
 	), 0, 1) = 1
@@ -79,7 +79,7 @@ WHERE
 		FROM
 			(
 				SELECT
-					1 as [c1]
+					0 as [c1]
 			) [t3]
 				LEFT JOIN [Child] [d_1] ON [a_Parent].[ParentID] = [d_1].[ParentID]
 	), 0, 1) = 1
