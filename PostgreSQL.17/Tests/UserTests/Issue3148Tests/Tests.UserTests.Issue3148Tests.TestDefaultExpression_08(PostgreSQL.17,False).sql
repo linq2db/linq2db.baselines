@@ -47,7 +47,7 @@ WHERE
 			FROM
 				(
 					SELECT
-						0 as c1
+						1 as c1
 				) t3
 					LEFT JOIN "Child" d_1 ON "a_Parent"."ParentID" = d_1."ParentID"
 			LIMIT 1
@@ -105,7 +105,7 @@ WHERE
 			FROM
 				(
 					SELECT
-						0 as c1
+						1 as c1
 				) t3
 					LEFT JOIN "Child" d_1 ON "a_Parent"."ParentID" = d_1."ParentID"
 			LIMIT 1
