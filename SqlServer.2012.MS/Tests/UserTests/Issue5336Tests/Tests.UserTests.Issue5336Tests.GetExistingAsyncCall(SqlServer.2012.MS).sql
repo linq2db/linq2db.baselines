@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'edb131ab-1114-4960-b5cc-65c74bba5be6'
+SET     @Id = 'd8504566-3fe5-4427-916b-bd9c8450ae2c'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -20,6 +20,10 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = 'd8504566-3fe5-4427-916b-bd9c8450ae2c'
+DECLARE @Number Int -- Int32
+SET     @Number = 5
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -28,6 +32,5 @@ SELECT TOP (1)
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = 'edb131ab-1114-4960-b5cc-65c74bba5be6' AND
-	[t1].[Number] = 5
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 
