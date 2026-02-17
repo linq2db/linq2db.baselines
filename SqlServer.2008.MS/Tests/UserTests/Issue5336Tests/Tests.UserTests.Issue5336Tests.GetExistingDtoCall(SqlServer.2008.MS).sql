@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '3b303797-1c23-4c69-a4e1-d9e66282e26c'
+SET     @Id = '061f7fe2-ff32-4e23-a626-ecc59968d835'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -20,17 +20,17 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @id UniqueIdentifier -- Guid
-SET     @id = '3b303797-1c23-4c69-a4e1-d9e66282e26c'
-DECLARE @nr Int -- Int32
-SET     @nr = 5
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = '061f7fe2-ff32-4e23-a626-ecc59968d835'
+DECLARE @Number Int -- Int32
+SET     @Number = 5
 
 SELECT TOP (1)
-	[x].[Id],
-	[x].[Number],
-	[x].[Test]
+	[t1].[Id],
+	[t1].[Number],
+	[t1].[Test]
 FROM
-	[TestDtoWithPks] [x]
+	[TestDtoWithPks] [t1]
 WHERE
-	[x].[Id] = @id AND [x].[Number] = @nr
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 
