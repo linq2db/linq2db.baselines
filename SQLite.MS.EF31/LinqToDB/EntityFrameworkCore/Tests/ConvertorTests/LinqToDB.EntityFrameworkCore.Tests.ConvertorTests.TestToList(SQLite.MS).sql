@@ -159,7 +159,7 @@ SELECT
 FROM
 	[Subdivisions] [s]
 WHERE
-	[s].[Id] IN (2, 3)
+	NULL
 
 
 
