@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Guid
-SET     @Id = X'BD991E961C7B9948BF5ADD09897EFDD1'
+SET     @Id = X'B71E4088032A434B98AA2576CFD7FA3B'
 DECLARE @Number  -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(3) -- String
@@ -20,6 +20,10 @@ VALUES
 )
 
 -- SQLite.MS SQLite
+DECLARE @Id  -- Guid
+SET     @Id = X'B71E4088032A434B98AA2576CFD7FA3B'
+DECLARE @Number  -- Int32
+SET     @Number = 5
 
 SELECT
 	[t1].[Id],
@@ -28,7 +32,6 @@ SELECT
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = X'BD991E961C7B9948BF5ADD09897EFDD1' AND
-	[t1].[Number] = 5
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 LIMIT 1
 
