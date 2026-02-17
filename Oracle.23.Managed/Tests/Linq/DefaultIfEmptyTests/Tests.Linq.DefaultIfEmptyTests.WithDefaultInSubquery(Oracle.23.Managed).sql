@@ -13,7 +13,7 @@ FROM
 			FROM
 				(
 					SELECT
-						-100 as "ParentID"
+						1 as "c1"
 					FROM SYS.DUAL
 				) t1
 					LEFT JOIN "Child" d ON p."ParentID" = d."ParentID"
