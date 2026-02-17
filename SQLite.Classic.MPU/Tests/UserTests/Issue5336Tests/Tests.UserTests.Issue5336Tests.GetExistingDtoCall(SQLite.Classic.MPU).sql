@@ -1,6 +1,6 @@
-﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = X'D6FAE2B6A84DFE43B3323F8DB3CE765B'
+SET     @Id = X'76400C0920C93C49AC6EE1646C3E3BD0'
 DECLARE @Number  -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(3) -- String
@@ -19,7 +19,11 @@ VALUES
 	@Test
 )
 
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @Id  -- Guid
+SET     @Id = X'76400C0920C93C49AC6EE1646C3E3BD0'
+DECLARE @Number  -- Int32
+SET     @Number = 5
 
 SELECT
 	[t1].[Id],
@@ -28,7 +32,6 @@ SELECT
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = X'D6FAE2B6A84DFE43B3323F8DB3CE765B' AND
-	[t1].[Number] = 5
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 LIMIT 1
 

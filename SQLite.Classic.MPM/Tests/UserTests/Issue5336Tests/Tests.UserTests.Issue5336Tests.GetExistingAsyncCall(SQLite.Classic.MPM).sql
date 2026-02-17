@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = X'50E0887B8ABF5E4583AB492C7F0DB0DE'
+SET     @Id = X'27A0EF36AC8E36409F2B3E5E3E5AEF6C'
 DECLARE @Number  -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(3) -- String
@@ -20,18 +20,18 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Guid
-SET     @id = X'50E0887B8ABF5E4583AB492C7F0DB0DE'
-DECLARE @nr  -- Int32
-SET     @nr = 5
+DECLARE @Id  -- Guid
+SET     @Id = X'27A0EF36AC8E36409F2B3E5E3E5AEF6C'
+DECLARE @Number  -- Int32
+SET     @Number = 5
 
 SELECT
-	[x].[Id],
-	[x].[Number],
-	[x].[Test]
+	[t1].[Id],
+	[t1].[Number],
+	[t1].[Test]
 FROM
-	[TestDtoWithPks] [x]
+	[TestDtoWithPks] [t1]
 WHERE
-	[x].[Id] = @id AND [x].[Number] = @nr
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 LIMIT 1
 

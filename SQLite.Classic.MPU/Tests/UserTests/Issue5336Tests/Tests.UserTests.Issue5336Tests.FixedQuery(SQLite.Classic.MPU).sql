@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Guid
-SET     @Id = X'ED57AB24D5594D438DF81152E4968C2B'
+SET     @Id = X'C1DB62CD5CEFFE45AED1FE39EE301FA1'
 DECLARE @Number  -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(3) -- String
@@ -21,7 +21,7 @@ VALUES
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Guid
-SET     @id = X'ED57AB24D5594D438DF81152E4968C2B'
+SET     @id = X'C1DB62CD5CEFFE45AED1FE39EE301FA1'
 DECLARE @nr  -- Int32
 SET     @nr = 5
 
