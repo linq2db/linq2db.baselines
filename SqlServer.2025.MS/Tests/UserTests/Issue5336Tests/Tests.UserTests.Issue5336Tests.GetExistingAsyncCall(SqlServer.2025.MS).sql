@@ -1,6 +1,6 @@
-﻿-- SqlServer.2025
+﻿-- SqlServer.2025.MS SqlServer.2025
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'c3abb18e-e7c2-4555-b221-22f2779511d6'
+SET     @Id = '54f6bb06-d510-47ff-9835-6c906d5c08ad'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -19,7 +19,11 @@ VALUES
 	@Test
 )
 
--- SqlServer.2025
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @Id UniqueIdentifier -- Guid
+SET     @Id = '54f6bb06-d510-47ff-9835-6c906d5c08ad'
+DECLARE @Number Int -- Int32
+SET     @Number = 5
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -28,6 +32,5 @@ SELECT TOP (1)
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = 'c3abb18e-e7c2-4555-b221-22f2779511d6' AND
-	[t1].[Number] = 5
+	[t1].[Id] = @Id AND [t1].[Number] = @Number
 
