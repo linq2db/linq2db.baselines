@@ -7,9 +7,9 @@ WITH RECURSIVE CTE AS
 		c_1.Id as Id,
 		c_1.ParentId as ParentId,
 		c_1.Label as Label,
-		c_1.Id as Entity_Id,
-		c_1.Label as Entity_Label,
-		c_1.ParentId as Entity_ParentId
+		c_1.Id as Id_1,
+		c_1.Label as Label_1,
+		c_1.ParentId as ParentId_1
 	FROM
 		TestFolder c_1
 	WHERE
@@ -20,9 +20,9 @@ WITH RECURSIVE CTE AS
 		t1.Id as Id,
 		t1.ParentId as ParentId,
 		concat(r.Label, '/', t1.Label) as Label,
-		t1.Id as Entity_Id,
-		t1.Label as Entity_Label,
-		t1.ParentId as Entity_ParentId
+		t1.Id as Id_1,
+		t1.Label as Label_1,
+		t1.ParentId as ParentId_1
 	FROM
 		TestFolder t1
 			INNER JOIN CTE r ON t1.ParentId = r.Id
@@ -32,9 +32,9 @@ SELECT
 	t2.Id,
 	t2.ParentId,
 	t2.Label,
-	t2.Entity_Id,
-	t2.Entity_Label,
-	t2.Entity_ParentId
+	t2.Id_1,
+	t2.Label_1,
+	t2.ParentId_1
 FROM
 	CTE t2
 

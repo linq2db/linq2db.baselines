@@ -8,9 +8,8 @@ WITH CTE_1 AS
 		t1.LastName as LastName,
 		t1.MiddleName as MiddleName,
 		t1.Gender as Gender,
-		a_Patient.PersonID as Patient_PersonID,
-		a_Patient.Diagnosis as Patient_Diagnosis,
-		a_Patient.PersonID as PersonID
+		a_Patient.PersonID as PersonID,
+		a_Patient.Diagnosis as Diagnosis
 	FROM
 		Person t1
 			LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
@@ -22,8 +21,7 @@ SELECT
 	r.MiddleName,
 	r.Gender,
 	r.PersonID,
-	r.Patient_PersonID,
-	r.Patient_Diagnosis
+	r.Diagnosis
 FROM
 	CTE_1 r
 WHERE

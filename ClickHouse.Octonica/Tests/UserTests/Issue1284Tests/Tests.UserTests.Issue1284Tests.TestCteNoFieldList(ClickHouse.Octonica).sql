@@ -3,20 +3,20 @@
 WITH cte AS
 (
 	SELECT
-		x.FirstName as FirstName,
-		x.PersonID as ID,
-		x.LastName as LastName,
-		x.MiddleName as MiddleName,
-		x.Gender as Gender
+		x.FirstName as entry_FirstName,
+		x.PersonID as entry_ID,
+		x.LastName as entry_LastName,
+		x.MiddleName as entry_MiddleName,
+		x.Gender as entry_Gender
 	FROM
 		Person x
 )
 SELECT
-	t1.FirstName,
-	t1.ID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1.entry_FirstName,
+	t1.entry_ID,
+	t1.entry_LastName,
+	t1.entry_MiddleName,
+	t1.entry_Gender
 FROM
 	cte t1
 
