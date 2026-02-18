@@ -2,11 +2,11 @@
 
 WITH `cte`
 (
-	`FirstName`,
-	`ID`,
-	`LastName`,
-	`MiddleName`,
-	`Gender`
+	`entry_FirstName`,
+	`entry_ID`,
+	`entry_LastName`,
+	`entry_MiddleName`,
+	`entry_Gender`
 )
 AS
 (
@@ -20,11 +20,11 @@ AS
 		`Person` `x`
 )
 SELECT
-	`t1`.`FirstName`,
-	`t1`.`ID`,
-	`t1`.`LastName`,
-	`t1`.`MiddleName`,
-	`t1`.`Gender`
+	`t1`.`entry_FirstName`,
+	`t1`.`entry_ID`,
+	`t1`.`entry_LastName`,
+	`t1`.`entry_MiddleName`,
+	`t1`.`entry_Gender`
 FROM
 	`cte` `t1`
 
