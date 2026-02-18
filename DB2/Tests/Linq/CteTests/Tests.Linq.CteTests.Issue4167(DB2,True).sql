@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 ("EnumValue")
+WITH CTE_1 ("field_1")
 AS
 (
 	SELECT
@@ -20,9 +20,9 @@ AS
 		) "g_2"
 )
 SELECT
-	"t1"."EnumValue"
+	"t1"."field_1"
 FROM
 	CTE_1 "t1"
 ORDER BY
-	"t1"."EnumValue"
+	"t1"."field_1"
 

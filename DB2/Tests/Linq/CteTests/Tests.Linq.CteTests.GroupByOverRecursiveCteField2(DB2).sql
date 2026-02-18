@@ -2,7 +2,7 @@
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-WITH "cte" ("Field1", "Field2", "Field3")
+WITH "cte" ("Field1", "Field1_1", "Field3")
 AS
 (
 	SELECT
@@ -30,22 +30,22 @@ AS
 SELECT
 	"m_1"."Key_1",
 	"d"."Field1",
-	"d"."Field2",
+	"d"."Field1_1",
 	"d"."Field3"
 FROM
 	(
 		SELECT DISTINCT
-			"t2"."Field2" as "Key_1"
+			"t2"."Field1_1" as "Key_1"
 		FROM
 			"cte" "t2"
 	) "m_1"
-		INNER JOIN "cte" "d" ON "m_1"."Key_1" = "d"."Field2"
+		INNER JOIN "cte" "d" ON "m_1"."Key_1" = "d"."Field1_1"
 
 -- DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
-WITH "cte" ("Field2", "Field3")
+WITH "cte" ("Field1_1", "Field3")
 AS
 (
 	SELECT
@@ -69,7 +69,7 @@ AS
 		"suble"."Field2" IS NOT NULL
 )
 SELECT DISTINCT
-	"t2"."Field2"
+	"t2"."Field1_1"
 FROM
 	"cte" "t2"
 

@@ -1,6 +1,6 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
-WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
+WITH "BooksCte" ("Id", "Title", "Author_Name")
 AS
 (
 	SELECT
@@ -17,8 +17,8 @@ FROM
 	(
 		SELECT
 			CAST(NULL AS NVarChar(255)) as "Name",
-			"r"."Book_Title" as "Title",
-			"r"."Book_Id" as "Id"
+			"r"."Title",
+			"r"."Id"
 		FROM
 			"BooksCte" "r"
 		UNION ALL

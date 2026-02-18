@@ -4,7 +4,7 @@ WITH "cte"
 (
 	"Id",
 	"Byte",
-	"ByteN",
+	"Byte_1",
 	"Guid",
 	"GuidN",
 	"Enum",
@@ -48,7 +48,7 @@ AS
 SELECT
 	"t1"."Id",
 	"t1"."Byte",
-	"t1"."ByteN",
+	"t1"."Byte_1",
 	"t1"."Guid",
 	"t1"."GuidN",
 	"t1"."Enum",
