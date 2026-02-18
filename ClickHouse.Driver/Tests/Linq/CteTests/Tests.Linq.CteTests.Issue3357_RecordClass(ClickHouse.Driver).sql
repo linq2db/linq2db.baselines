@@ -4,8 +4,8 @@ WITH RECURSIVE cte AS
 (
 	SELECT
 		p.PersonID as Id,
-		p.FirstName,
-		p.LastName
+		p.FirstName as FirstName,
+		p.LastName as LastName
 	FROM
 		Person p
 	UNION ALL
