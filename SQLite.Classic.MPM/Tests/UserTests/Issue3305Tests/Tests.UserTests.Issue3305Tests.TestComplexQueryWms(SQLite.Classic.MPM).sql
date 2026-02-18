@@ -106,19 +106,19 @@ CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 
 WITH [CTE_1]
 (
-	[IR_ResourceID],
+	[ResourceID],
 	[RN],
-	[IR_MaterialID],
-	[IR_InfeedAdviceID],
+	[MaterialID],
+	[InfeedAdviceID],
 	[Count_1],
 	[CountLocked],
-	[IR_Id],
-	[IR_ProductStatus],
-	[IR_BatchNumber],
-	[IR_BundleUnit],
-	[IR_CustomField1],
-	[IR_CustomField2],
-	[IR_CustomField3]
+	[Id],
+	[ProductStatus],
+	[BatchNumber],
+	[BundleUnit],
+	[CustomField1],
+	[CustomField2],
+	[CustomField3]
 )
 AS
 (
@@ -205,13 +205,13 @@ SELECT
 		FROM
 			[CTE_1] [x_2]
 		WHERE
-			[x_2].[IR_ResourceID] = [x].[Id_4] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+			[x_2].[ResourceID] = [x].[Id_4] AND ([x_2].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_2].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
+					[y].[Id] = [x_2].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
 			))
 	)
 FROM
@@ -255,13 +255,13 @@ FROM
 			[m1].[CategoryDimensions] as [CategoryDimensions_1],
 			[m1].[CategoryQuality] as [CategoryQuality_1],
 			[m1].[CategoryTemperature] as [CategoryTemperature_1],
-			[i1].[IR_Id] as [Id_6],
-			[i1].[IR_BatchNumber] as [BatchNumber],
-			[i1].[IR_BundleUnit] as [BundleUnit],
-			[i1].[IR_ProductStatus] as [ProductStatus],
-			[i1].[IR_CustomField1] as [CustomField1_1],
-			[i1].[IR_CustomField2] as [CustomField2_1],
-			[i1].[IR_CustomField3] as [CustomField3_1],
+			[i1].[Id] as [Id_6],
+			[i1].[BatchNumber],
+			[i1].[BundleUnit],
+			[i1].[ProductStatus],
+			[i1].[CustomField1] as [CustomField1_1],
+			[i1].[CustomField2] as [CustomField2_1],
+			[i1].[CustomField3] as [CustomField3_1],
 			[t1].[Status] as [Status_1],
 			[t1].[CategoryABC_1] as [CategoryABC_2],
 			[t1].[HeightClass],
@@ -313,8 +313,8 @@ FROM
 						LEFT JOIN [StorageShelfDTO] [a1] ON [c_1].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 			) [t1]
 				LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [t1].[ResourceID]
-				LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [t1].[ResourceID] AND [i1].[RN] = 1
-				LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
+				LEFT JOIN [CTE_1] [i1] ON [i1].[ResourceID] = [t1].[ResourceID] AND [i1].[RN] = 1
+				LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[MaterialID]
 				LEFT JOIN [StorageShelfDTO] [a2] ON [t1].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
 	) [x]
 

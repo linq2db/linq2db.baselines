@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-WITH [CTE_1] ([Obj_Operator])
+WITH [CTE_1] ([x_Obj_Operator])
 AS
 (
 	SELECT
@@ -9,7 +9,7 @@ AS
 		[Person] [x]
 )
 SELECT
-	[t1].[Obj_Operator]
+	[t1].[x_Obj_Operator]
 FROM
 	[CTE_1] [t1]
 LIMIT 1

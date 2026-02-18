@@ -4,13 +4,13 @@ WITH [cte]
 (
 	[Id],
 	[Byte],
-	[ByteN],
+	[Byte_1],
 	[Guid],
-	[GuidN],
+	[Guid_1],
 	[Enum],
 	[EnumN],
 	[Bool],
-	[BoolN]
+	[Bool_1]
 )
 AS
 (
@@ -46,13 +46,13 @@ AS
 SELECT
 	[t1].[Id],
 	[t1].[Byte],
-	[t1].[ByteN],
+	[t1].[Byte_1],
 	[t1].[Guid],
-	[t1].[GuidN],
+	[t1].[Guid_1],
 	[t1].[Enum],
 	[t1].[EnumN],
 	[t1].[Bool],
-	[t1].[BoolN]
+	[t1].[Bool_1]
 FROM
 	[cte] [t1]
 ORDER BY
