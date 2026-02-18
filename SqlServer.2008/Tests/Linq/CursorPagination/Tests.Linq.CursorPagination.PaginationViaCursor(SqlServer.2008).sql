@@ -46,18 +46,16 @@ SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor_1],
+	[BookingID],
 	[RowNumber],
-	[Data_BookingID],
-	[Data_ServiceDate],
-	[Data_Value]
+	[ServiceDate],
+	[Value_1]
 )
 AS
 (
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -67,10 +65,9 @@ AS
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor_1],
-	[q].[Data_BookingID],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[BookingID],
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -80,7 +77,7 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[BookingID] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
@@ -92,18 +89,16 @@ SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor_1],
+	[BookingID],
 	[RowNumber],
-	[Data_BookingID],
-	[Data_ServiceDate],
-	[Data_Value]
+	[ServiceDate],
+	[Value_1]
 )
 AS
 (
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -113,10 +108,9 @@ AS
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor_1],
-	[q].[Data_BookingID],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[BookingID],
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -126,7 +120,7 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[BookingID] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
@@ -138,18 +132,16 @@ SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor_1],
+	[BookingID],
 	[RowNumber],
-	[Data_BookingID],
-	[Data_ServiceDate],
-	[Data_Value]
+	[ServiceDate],
+	[Value_1]
 )
 AS
 (
 	SELECT
 		[e].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [e].[ServiceDate] DESC, [e].[BookingID] DESC),
-		[e].[BookingID],
 		[e].[ServiceDate],
 		[e].[Value]
 	FROM
@@ -159,10 +151,9 @@ AS
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor_1],
-	[q].[Data_BookingID],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[BookingID],
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -172,7 +163,7 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[BookingID] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 

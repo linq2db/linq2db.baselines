@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008
 
-WITH [CTE_1] ([Obj_Operator])
+WITH [CTE_1] ([x_Obj_Operator])
 AS
 (
 	SELECT
@@ -9,7 +9,7 @@ AS
 		[Person] [x]
 )
 SELECT TOP (1)
-	[t1].[Obj_Operator]
+	[t1].[x_Obj_Operator]
 FROM
 	[CTE_1] [t1]
 

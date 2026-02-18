@@ -58,7 +58,7 @@ SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-WITH [pagination_cte] ([Data_Id], [RowNumber], [Data_Value])
+WITH [pagination_cte] ([Id], [RowNumber], [Value_1])
 AS
 (
 	SELECT
@@ -71,8 +71,8 @@ AS
 		[x].[Id] % 2 = 0
 )
 SELECT
-	[t1].[Data_Id],
-	[t1].[Data_Value],
+	[t1].[Id],
+	[t1].[Value_1],
 	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1
 FROM
 	(
@@ -82,7 +82,7 @@ FROM
 		FROM
 			[pagination_cte] [x_1]
 		WHERE
-			[x_1].[Data_Id] = @Id
+			[x_1].[Id] = @Id
 	) [page]
 		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY
@@ -96,9 +96,9 @@ SET     @Id = 78
 
 WITH [pagination_cte]
 (
-	[Data_Id],
+	[Id],
 	[RowNumber],
-	[Data_Value],
+	[Value_1],
 	[TotalCount]
 )
 AS
@@ -114,8 +114,8 @@ AS
 		[x].[Id] % 2 = 0
 )
 SELECT
-	[t1].[Data_Id],
-	[t1].[Data_Value],
+	[t1].[Id],
+	[t1].[Value_1],
 	CAST([page].[RowNumber] - 1 AS Int) / 20 + 1,
 	[t1].[TotalCount]
 FROM
@@ -126,7 +126,7 @@ FROM
 		FROM
 			[pagination_cte] [x_1]
 		WHERE
-			[x_1].[Data_Id] = @Id
+			[x_1].[Id] = @Id
 	) [page]
 		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY
