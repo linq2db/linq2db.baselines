@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-WITH "CTE_1" ("Child_ParentID", "Child_ChildID")
+WITH "CTE_1" ("ParentID", "ChildID")
 AS
 (
 	SELECT
@@ -12,11 +12,11 @@ AS
 SELECT
 	p."ParentID",
 	p."Value1",
-	c_1."Child_ParentID",
-	c_1."Child_ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" p
-		INNER JOIN "CTE_1" c_1 ON p."ParentID" = c_1."Child_ParentID"
+		INNER JOIN "CTE_1" c_1 ON p."ParentID" = c_1."ParentID"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
