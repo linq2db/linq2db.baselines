@@ -1,15 +1,15 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
-WITH CTE_1 ("Obj_Operator")
+WITH CTE_1 ("x_Obj_Operator")
 AS
 (
 	SELECT
-		x."LastName" as "Obj_Operator"
+		x."LastName" as "x_Obj_Operator"
 	FROM
 		"Person" x
 )
 SELECT
-	t1."Obj_Operator" as "Operator_1"
+	t1."x_Obj_Operator" as "Operator_1"
 FROM
 	CTE_1 t1
 FETCH NEXT 1 ROWS ONLY
