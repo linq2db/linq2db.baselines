@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic SQLite
 
-WITH [CTE_1] ([Id2], [Id1])
+WITH [CTE_1] ([Value1], [ParentID])
 AS
 (
 	SELECT
@@ -15,17 +15,17 @@ AS
 AS
 (
 	SELECT
-		[t1].[Id1],
-		[t1].[Id2]
+		[t1].[ParentID],
+		[t1].[Value1]
 	FROM
 		[CTE_1] [t1]
 	UNION ALL
 	SELECT
-		[t2].[Id1],
-		[record2].[Id2]
+		[t2].[ParentID],
+		[record2].[Value1]
 	FROM
 		[CTE_1] [t2]
-			INNER JOIN [CTE_1] [record2] ON [t2].[Id2] = [record2].[Id1]
+			INNER JOIN [CTE_1] [record2] ON [t2].[Value1] = [record2].[ParentID]
 )
 SELECT
 	[t3].[Id1],
