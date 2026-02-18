@@ -125,7 +125,7 @@ VALUES
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
-WITH [CTE_1] ([ProductId], [WarehouseId])
+WITH [CTE_1] ([productId], [Id])
 AS
 (
 	SELECT
@@ -135,14 +135,14 @@ AS
 		[Issue4717Warehouse] [w]
 )
 SELECT
-	[source].[ProductId],
+	[source].[productId],
 	(
 		SELECT TOP (1)
 			[wp].[StockOnHand]
 		FROM
 			[Issue4717WarehouseProductMapping] [wp]
 		WHERE
-			[wp].[WarehouseId] = [source].[WarehouseId]
+			[wp].[WarehouseId] = [source].[Id]
 	),
 	(
 		SELECT
@@ -150,9 +150,9 @@ SELECT
 		FROM
 			[Issue4717WarehouseProductMapping] [wp_1]
 		WHERE
-			[wp_1].[WarehouseId] = [source].[WarehouseId]
+			[wp_1].[WarehouseId] = [source].[Id]
 	)
 FROM
 	[CTE_1] [source]
-		INNER JOIN [Issue4717ProductIncludedProductMapping] [includedProductMapping] ON [source].[ProductId] = [includedProductMapping].[ProductId]
+		INNER JOIN [Issue4717ProductIncludedProductMapping] [includedProductMapping] ON [source].[productId] = [includedProductMapping].[ProductId]
 
