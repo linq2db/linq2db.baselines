@@ -2,11 +2,11 @@
 
 WITH CTE_1
 (
-	"entry_ID",
-	"entry_FirstName",
-	"entry_LastName",
-	"entry_MiddleName",
-	"entry_Gender"
+	ID,
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
 )
 AS
 (
@@ -20,15 +20,15 @@ AS
 		"Person" person_1
 )
 SELECT
-	x."entry_FirstName",
-	x."entry_ID",
-	x."entry_LastName",
-	x."entry_MiddleName",
-	x."entry_Gender"
+	x."FirstName",
+	x.ID,
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
 	CTE_1 x
 WHERE
-	x."entry_ID" = 1
+	x.ID = 1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
