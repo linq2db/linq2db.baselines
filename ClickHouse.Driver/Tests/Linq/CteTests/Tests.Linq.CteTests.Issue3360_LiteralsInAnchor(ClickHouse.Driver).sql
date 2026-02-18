@@ -5,7 +5,7 @@ WITH RECURSIVE cte AS
 	SELECT
 		r.Id as Id,
 		toUInt8(toUInt8(5)) as Byte,
-		toUInt8(toUInt8(5)) as ByteN,
+		toUInt8(toUInt8(5)) as Byte_1,
 		toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29')) as Guid,
 		toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece30')) as GuidN,
 		toString('ENUM1_VALUE') as Enum,
@@ -20,7 +20,7 @@ WITH RECURSIVE cte AS
 	SELECT
 		r_1.Id as Id,
 		r_1.Byte as Byte,
-		r_1.ByteN as ByteN,
+		r_1.ByteN as Byte_1,
 		r_1.Guid as Guid,
 		r_1.GuidN as GuidN,
 		r_1.Enum as Enum,
@@ -34,7 +34,7 @@ WITH RECURSIVE cte AS
 SELECT
 	t1.Id,
 	t1.Byte,
-	t1.ByteN,
+	t1.Byte_1,
 	t1.Guid,
 	t1.GuidN,
 	t1.Enum,

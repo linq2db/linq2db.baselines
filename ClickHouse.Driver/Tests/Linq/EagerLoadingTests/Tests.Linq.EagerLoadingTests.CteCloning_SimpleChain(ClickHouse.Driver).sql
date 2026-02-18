@@ -17,7 +17,7 @@ CTE_2 AS
 CTE_3 AS
 (
 	SELECT
-		r_2.Id as Value4
+		r_2.Id as Id
 	FROM
 		CTE_2 r_2
 )
@@ -35,7 +35,7 @@ FROM
 			d.Id as Id
 		FROM
 			CTE_3 t1
-				LEFT JOIN CteChildTable d ON t1.Value4 = d.Id
+				LEFT JOIN CteChildTable d ON t1.Id = d.Id
 	) m_1
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
@@ -56,10 +56,9 @@ CTE_2 AS
 (
 	SELECT
 		r_1.Id as Id,
-		r_1.Value2 as Value1,
-		r_1.Value5 as Value3,
-		r_1.Value3 as Value5,
 		r_1.Value2 as Value2,
+		r_1.Value5 as Value5,
+		r_1.Value3 as Value3,
 		r_1.Value4 as Value4
 	FROM
 		CTE_1 r_1
@@ -67,24 +66,22 @@ CTE_2 AS
 CTE_3 AS
 (
 	SELECT
-		r_2.Id as Value4,
-		r_2.Value1 as Id,
-		r_2.Value3 as Value1,
-		r_2.Value5 as Value2,
-		r_2.Value2 as Value3,
-		r_2.Value4 as Value5
+		r_2.Id as Id,
+		r_2.Value2 as Value1,
+		r_2.Value5 as Value3,
+		r_2.Value3 as Value5,
+		r_2.Value4 as Value4
 	FROM
 		CTE_2 r_2
 )
 SELECT
-	t1.Id,
 	t1.Value1,
-	t1.Value2,
 	t1.Value3,
-	t1.Value4,
 	t1.Value5,
+	t1.Id,
+	t1.Value4,
 	d.Id
 FROM
 	CTE_3 t1
-		LEFT JOIN CteChildTable d ON t1.Value4 = d.Id
+		LEFT JOIN CteChildTable d ON t1.Id = d.Id
 
