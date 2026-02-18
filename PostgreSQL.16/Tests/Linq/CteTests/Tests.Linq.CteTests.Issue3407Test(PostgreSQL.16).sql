@@ -7,9 +7,8 @@ WITH "CTE_1"
 	"LastName",
 	"MiddleName",
 	"Gender",
-	"Patient_PersonID",
-	"Patient_Diagnosis",
-	"PersonID"
+	"PersonID",
+	"Diagnosis"
 )
 AS
 (
@@ -20,8 +19,7 @@ AS
 		t1."MiddleName",
 		t1."Gender",
 		"a_Patient"."PersonID",
-		"a_Patient"."Diagnosis",
-		"a_Patient"."PersonID"
+		"a_Patient"."Diagnosis"
 	FROM
 		"Person" t1
 			LEFT JOIN "Patient" "a_Patient" ON t1."PersonID" = "a_Patient"."PersonID"
@@ -33,8 +31,7 @@ SELECT
 	r."MiddleName",
 	r."Gender",
 	r."PersonID",
-	r."Patient_PersonID",
-	r."Patient_Diagnosis"
+	r."Diagnosis"
 FROM
 	"CTE_1" r
 WHERE
