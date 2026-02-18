@@ -1,6 +1,6 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
-WITH CTE_1 ("Value1", "Value2")
+WITH CTE_1 ("FirstName", "LastName")
 AS
 (
 	SELECT
@@ -13,8 +13,8 @@ CTE_2 ("Value1", "Value2")
 AS
 (
 	SELECT
-		t1."Value1",
-		t1."Value2"
+		t1."FirstName",
+		t1."LastName"
 	FROM
 		CTE_1 t1
 	UNION
