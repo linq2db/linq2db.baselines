@@ -3,8 +3,8 @@
 WITH BooksCte AS
 (
 	SELECT
-		b.Id as Book_Id,
-		b.Title as Book_Title,
+		b.Id as Id,
+		b.Title as Title,
 		a_Author.Name as Author_Name
 	FROM
 		Books b
@@ -16,8 +16,8 @@ FROM
 	(
 		SELECT
 			toString(NULL) as Name,
-			r.Book_Title as Title,
-			r.Book_Id as Id
+			r.Title as Title,
+			r.Id as Id
 		FROM
 			BooksCte r
 		UNION ALL

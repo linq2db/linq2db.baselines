@@ -3,16 +3,16 @@
 WITH CTE_1 AS
 (
 	SELECT
-		o.FirstName as Value1,
-		o.LastName as Value2
+		o.FirstName as FirstName,
+		o.LastName as LastName
 	FROM
 		Person o
 ),
 CTE_2 AS
 (
 	SELECT
-		t1.Value1 as Value1,
-		t1.Value2 as Value2
+		t1.FirstName as Value1,
+		t1.LastName as Value2
 	FROM
 		CTE_1 t1
 	UNION DISTINCT

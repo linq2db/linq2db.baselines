@@ -6,7 +6,7 @@ WITH CTE_1 AS
 		CASE
 			WHEN g_2.EnumValue IS NOT NULL THEN g_2.EnumValue
 			ELSE 0
-		END as EnumValue
+		END as field_1
 	FROM
 		(
 			SELECT DISTINCT
@@ -19,9 +19,9 @@ WITH CTE_1 AS
 		) g_2
 )
 SELECT
-	t1.EnumValue
+	t1.field_1
 FROM
 	CTE_1 t1
 ORDER BY
-	t1.EnumValue
+	t1.field_1
 

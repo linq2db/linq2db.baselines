@@ -3,12 +3,12 @@
 WITH CTE_1 AS
 (
 	SELECT
-		a.Property2 as Property1
+		a.Property2 as Property2
 	FROM
 		NestingC a
 )
 SELECT
-	c2.Property1,
+	c2.Property2,
 	t_1.Property2,
 	t_1.Property3
 FROM

@@ -3,12 +3,12 @@
 WITH CTE_1 AS
 (
 	SELECT
-		x.LastName as Obj_Operator
+		x.LastName as x_Obj_Operator
 	FROM
 		Person x
 )
 SELECT
-	t1.Obj_Operator
+	t1.x_Obj_Operator
 FROM
 	CTE_1 t1
 LIMIT 1
