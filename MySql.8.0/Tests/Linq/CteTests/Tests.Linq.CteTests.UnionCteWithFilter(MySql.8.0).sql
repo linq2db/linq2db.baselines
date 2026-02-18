@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `BooksCte` (`Book_Id`, `Book_Title`, `Author_Name`)
+WITH `BooksCte` (`Id`, `Title`, `Author_Name`)
 AS
 (
 	SELECT
@@ -17,8 +17,8 @@ FROM
 	(
 		SELECT
 			NULL as `Name`,
-			`r`.`Book_Title` as `Title`,
-			`r`.`Book_Id` as `Id`
+			`r`.`Title`,
+			`r`.`Id`
 		FROM
 			`BooksCte` `r`
 		UNION ALL

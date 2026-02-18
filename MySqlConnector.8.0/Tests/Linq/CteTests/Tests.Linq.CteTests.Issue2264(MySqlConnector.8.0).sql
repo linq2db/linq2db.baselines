@@ -6,9 +6,9 @@ WITH RECURSIVE `CTE`
 	`Id`,
 	`ParentId`,
 	`Label`,
-	`Entity_Id`,
-	`Entity_Label`,
-	`Entity_ParentId`
+	`Id_1`,
+	`Label_1`,
+	`ParentId_1`
 )
 AS
 (
@@ -42,9 +42,9 @@ SELECT
 	`t2`.`Id`,
 	`t2`.`ParentId`,
 	`t2`.`Label`,
-	`t2`.`Entity_Id`,
-	`t2`.`Entity_Label`,
-	`t2`.`Entity_ParentId`
+	`t2`.`Id_1`,
+	`t2`.`Label_1`,
+	`t2`.`ParentId_1`
 FROM
 	`CTE` `t2`
 

@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH `CTE_1` (`Property1`)
+WITH `CTE_1` (`Property2`)
 AS
 (
 	SELECT
@@ -9,7 +9,7 @@ AS
 		`NestingC` `a`
 )
 SELECT
-	`c2`.`Property1`,
+	`c2`.`Property2`,
 	`t_1`.`Property2`,
 	`t_1`.`Property3`
 FROM

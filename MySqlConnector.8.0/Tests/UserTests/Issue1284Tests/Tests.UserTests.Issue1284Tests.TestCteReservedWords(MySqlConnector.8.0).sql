@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-WITH `CTE_1` (`Obj_Operator`)
+WITH `CTE_1` (`x_Obj_Operator`)
 AS
 (
 	SELECT
@@ -9,7 +9,7 @@ AS
 		`Person` `x`
 )
 SELECT
-	`t1`.`Obj_Operator`
+	`t1`.`x_Obj_Operator`
 FROM
 	`CTE_1` `t1`
 LIMIT 1
