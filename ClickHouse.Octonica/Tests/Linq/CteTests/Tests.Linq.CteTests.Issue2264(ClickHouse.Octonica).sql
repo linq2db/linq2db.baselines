@@ -4,9 +4,9 @@ WITH RECURSIVE CTE AS
 (
 	SELECT
 		toInt32(0) as Level_1,
-		c_1.Id,
-		c_1.ParentId,
-		c_1.Label,
+		c_1.Id as Id,
+		c_1.ParentId as ParentId,
+		c_1.Label as Label,
 		c_1.Id as Entity_Id,
 		c_1.Label as Entity_Label,
 		c_1.ParentId as Entity_ParentId

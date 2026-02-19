@@ -3,9 +3,9 @@
 WITH RECURSIVE MY_CTE AS
 (
 	SELECT
-		gc1.ChildID,
+		gc1.ChildID as ChildID,
 		gc1.GrandChildID as ParentID,
-		gc1.GrandChildID
+		gc1.GrandChildID as GrandChildID
 	FROM
 		GrandChild gc1
 	UNION ALL
