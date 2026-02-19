@@ -13,7 +13,11 @@ SET
 		WHERE
 			[j].[One] = 1
 	),
-	([Four], [Nil]) = ([Ints].[One] * [Ints].[Four], 600)
+	([Four], [Nil]) = (
+		SELECT
+			[Ints].[One] * [Ints].[Four],
+			600
+	)
 WHERE
 	[Ints].[One] = 10
 
