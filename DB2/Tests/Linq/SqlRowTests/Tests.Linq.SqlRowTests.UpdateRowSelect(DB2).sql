@@ -13,7 +13,12 @@ SET
 		WHERE
 			"j"."One" = 1
 	),
-	("Four", "Nil") = ("i"."One" * "i"."Four", 600)
+	("Four", "Nil") = (
+		SELECT
+			"i"."One" * "i"."Four",
+			600
+		FROM SYSIBM.SYSDUMMY1
+	)
 WHERE
 	"i"."One" = 10
 
