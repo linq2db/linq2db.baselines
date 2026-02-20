@@ -5,7 +5,6 @@ SELECT
 	[x].[ChildID]
 FROM
 	[Child] [x]
-		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		LEFT JOIN (
 			SELECT
 				[a_GrandChildren].[ParentID],
@@ -15,6 +14,7 @@ FROM
 			FROM
 				[GrandChild] [a_GrandChildren]
 		) [t1] ON [x].[ParentID] = [t1].[ParentID] AND [x].[ChildID] = [t1].[ChildID] AND [t1].[rn] = 1
+		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	CASE
 		WHEN [x].[ParentID] = (
@@ -37,7 +37,6 @@ SELECT
 	[x].[ChildID]
 FROM
 	[Child] [x]
-		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		LEFT JOIN (
 			SELECT
 				[a_GrandChildren].[ParentID],
@@ -47,6 +46,7 @@ FROM
 			FROM
 				[GrandChild] [a_GrandChildren]
 		) [t1] ON [x].[ParentID] = [t1].[ParentID] AND [x].[ChildID] = [t1].[ChildID] AND [t1].[rn] = 1
+		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	CASE
 		WHEN [x].[ParentID] = (

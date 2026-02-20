@@ -26,10 +26,10 @@ FROM
 	) [m_2]
 		INNER JOIN (
 			SELECT DISTINCT
-				[t2].[Id1]
+				[t2].[Id1] as [Key_1]
 			FROM
 				[MasterClass] [t2]
-		) [d] ON [d].[Id1] = [m_2].[MasterId]
+		) [d] ON [d].[Key_1] = [m_2].[MasterId]
 		INNER JOIN (
 			SELECT
 				[mm].[Id1],
@@ -39,7 +39,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [mm].[Id1] ORDER BY [mm].[Id1]) as [rn]
 			FROM
 				[MasterClass] [mm]
-		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Id1] = [t3].[Id1] AND [t3].[rn] = 1
+		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Key_1] = [t3].[Id1] AND [t3].[rn] = 1
 
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
