@@ -1,43 +1,26 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d].[Value]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[Item1]
-		FROM
-			(
-				SELECT
-					[x].[Id] as [Item1]
-				FROM
-					[Item] [x]
-			) [t1]
-	) [m_1]
-		INNER JOIN [ItemValue] [d] ON [m_1].[Item1] = [d].[ItemId]
+	[Item] [m_1]
+		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- SqlServer.2008
 
 SELECT
-	[x_1].[Id],
-	[x_1].[Text]
+	[x].[Id],
+	[x].[Text]
 FROM
-	(
-		SELECT
-			[x].[Id],
-			[x].[Text],
-			Coalesce((
-				SELECT
-					SUM([a_Values].[Value])
-				FROM
-					[ItemValue] [a_Values]
-				WHERE
-					[x].[Id] = [a_Values].[ItemId]
-			), 0) as [c1]
-		FROM
-			[Item] [x]
-	) [x_1]
+	[Item] [x]
 ORDER BY
-	[x_1].[c1]
+	Coalesce((
+		SELECT
+			SUM([a_Values].[Value])
+		FROM
+			[ItemValue] [a_Values]
+		WHERE
+			[x].[Id] = [a_Values].[ItemId]
+	), 0)
 
