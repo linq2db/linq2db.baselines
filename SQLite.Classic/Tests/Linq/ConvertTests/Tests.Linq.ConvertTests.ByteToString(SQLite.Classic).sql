@@ -1,9 +1,9 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	CAST(CAST([p].[ID] AS TinyIntByte) AS NVarChar(3))
+	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	Length(CAST(CAST([p].[ID] AS TinyIntByte) AS NVarChar(3))) > 0
+	Length(CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))) > 0
 

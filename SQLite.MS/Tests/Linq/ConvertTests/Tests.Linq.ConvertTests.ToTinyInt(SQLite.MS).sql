@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS TinyIntByte)
+	CAST([t].[MoneyValue] AS TinyInt)
 FROM
 	[LinqDataTypes] [t]
 

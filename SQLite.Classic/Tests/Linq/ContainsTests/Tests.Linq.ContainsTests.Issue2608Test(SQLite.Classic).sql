@@ -5,7 +5,7 @@ DECLARE @site  -- Int32
 SET     @site = 2
 
 SELECT
-	CAST([f].[StringValue] AS SmallIntInt16)
+	CAST([f].[StringValue] AS SmallInt)
 FROM
 	[LinqDataTypes] [x]
 		INNER JOIN [LinqDataTypes] [o] ON [x].[IntValue] = [o].[IntValue] OR [x].[IntValue] IS NULL AND [o].[IntValue] IS NULL
@@ -18,5 +18,5 @@ WHERE
 	[x].[IntValue] = @site AND
 	[o].[BoolValue] = 0 AND
 	[u].[BoolValue] = 0 AND
-	(CAST([f].[StringValue] AS SmallIntInt16) NOT IN (11, 18, 19, 20, 21, 22, 23, 24, 26, 29, 28) OR CAST([f].[StringValue] AS SmallIntInt16) IS NULL)
+	(CAST([f].[StringValue] AS SmallInt) NOT IN (11, 18, 19, 20, 21, 22, 23, 24, 26, 29, 28) OR CAST([f].[StringValue] AS SmallInt) IS NULL)
 

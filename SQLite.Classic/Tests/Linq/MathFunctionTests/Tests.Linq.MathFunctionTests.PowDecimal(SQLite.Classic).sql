@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(CAST(Power(CAST([p].[MoneyValue] AS FloatDouble), CAST(3 AS FloatDouble)) AS Decimal)) as [Value_1]
+			Floor(CAST(Power(CAST([p].[MoneyValue] AS Float), CAST(3 AS Float)) AS Decimal)) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

@@ -3,7 +3,7 @@
 UPDATE
 	[Issue4963Table]
 SET
-	[Field] = CAST(CAST([Issue4963Table].[Field] AS INTEGER) + -1 AS TinyIntByte)
+	[Field] = CAST(CAST([Issue4963Table].[Field] AS INTEGER) + -1 AS TinyInt)
 
 -- SQLite.MS SQLite
 

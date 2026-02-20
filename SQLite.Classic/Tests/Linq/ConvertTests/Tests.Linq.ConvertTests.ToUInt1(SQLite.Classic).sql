@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS BigIntUInt32)
+	CAST([t].[MoneyValue] AS BigInt)
 FROM
 	[LinqDataTypes] [t]
 

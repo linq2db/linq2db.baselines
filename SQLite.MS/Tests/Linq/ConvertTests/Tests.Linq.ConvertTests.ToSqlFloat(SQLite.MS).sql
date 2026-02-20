@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS FloatDouble)
+	CAST([t].[MoneyValue] AS Float)
 FROM
 	[LinqDataTypes] [t]
 

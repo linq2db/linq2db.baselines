@@ -1,9 +1,9 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	CAST([p].[MoneyValue] AS RealSingle)
+	CAST([p].[MoneyValue] AS Real)
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CAST([p].[MoneyValue] AS RealSingle) > 0
+	CAST([p].[MoneyValue] AS Real) > 0
 

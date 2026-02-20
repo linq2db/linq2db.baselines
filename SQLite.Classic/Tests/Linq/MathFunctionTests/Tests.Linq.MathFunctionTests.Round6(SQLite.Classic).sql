@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROUND(CAST([p].[MoneyValue] AS FloatDouble)) as [c1]
+			ROUND(CAST([p].[MoneyValue] AS Float)) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

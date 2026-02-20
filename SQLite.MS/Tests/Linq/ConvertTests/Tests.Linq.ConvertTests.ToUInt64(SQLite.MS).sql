@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CAST([p].[MoneyValue] AS DecimalUInt64) > 0
+	CAST([p].[MoneyValue] AS Decimal) > 0
 

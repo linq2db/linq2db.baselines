@@ -5,7 +5,7 @@ SET     @offset = -1
 UPDATE
 	[Issue4963Table]
 SET
-	[Field] = CAST(CAST([Issue4963Table].[Field] AS INTEGER) + @offset AS TinyIntByte)
+	[Field] = CAST(CAST([Issue4963Table].[Field] AS INTEGER) + @offset AS TinyInt)
 
 -- SQLite.MS SQLite
 
