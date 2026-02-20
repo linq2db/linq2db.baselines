@@ -2,13 +2,13 @@
 
 SELECT
 	[p].[ParentID],
-	CAST(1 AS BitBoolean)
+	CAST(1 AS Bit)
 FROM
 	[Parent] [p]
 UNION
 SELECT
 	[ch].[ParentID],
-	CAST(0 AS BitBoolean)
+	CAST(0 AS Bit)
 FROM
 	[Child] [ch]
 

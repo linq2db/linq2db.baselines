@@ -40,7 +40,7 @@ SELECT
 	NULL,
 	NULL,
 	[x_2].[Id],
-	CAST(4.4400000000000004 AS FloatDouble)
+	CAST(4.4400000000000004 AS Float)
 FROM
 	[SetEntityBase] [x_2]
 WHERE

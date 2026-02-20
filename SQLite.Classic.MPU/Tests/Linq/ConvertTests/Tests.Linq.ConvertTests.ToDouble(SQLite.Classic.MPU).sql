@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CAST(CAST([p].[MoneyValue] AS FloatDouble) AS INTEGER) > 0
+	CAST(CAST([p].[MoneyValue] AS Float) AS INTEGER) > 0
 

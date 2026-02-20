@@ -89,7 +89,7 @@ FROM
 			CAST(0 AS INTEGER) as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			CAST(0 AS BitBoolean) as [MixedStock]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]

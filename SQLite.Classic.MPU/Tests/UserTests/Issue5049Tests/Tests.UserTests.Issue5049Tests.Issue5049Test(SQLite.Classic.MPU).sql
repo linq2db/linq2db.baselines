@@ -9,7 +9,7 @@ FROM
 	[PersonWithAssociation] [p]
 		INNER JOIN (
 			SELECT
-				AVG(CAST([a_GradeStats].[Grade] AS FloatDouble)) as [AverageGrade],
+				AVG(CAST([a_GradeStats].[Grade] AS Float)) as [AverageGrade],
 				[a_GradeStats].[PersonId] as [Key_1]
 			FROM
 				[PersonGrades] [a_GradeStats]

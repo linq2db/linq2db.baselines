@@ -6,8 +6,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN CAST(-[p].[MoneyValue] AS FloatDouble) >= 0 THEN Floor(CAST(-[p].[MoneyValue] AS FloatDouble))
-				ELSE Ceiling(CAST(-[p].[MoneyValue] AS FloatDouble))
+				WHEN CAST(-[p].[MoneyValue] AS Float) >= 0 THEN Floor(CAST(-[p].[MoneyValue] AS Float))
+				ELSE Ceiling(CAST(-[p].[MoneyValue] AS Float))
 			END as [Value_1]
 		FROM
 			[LinqDataTypes] [p]

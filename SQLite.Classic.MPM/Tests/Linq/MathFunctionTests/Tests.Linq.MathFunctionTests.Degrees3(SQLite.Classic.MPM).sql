@@ -10,5 +10,5 @@ FROM
 			[LinqDataTypes] [p]
 	) [t]
 WHERE
-	CAST([t].[Value_1] AS FloatDouble) <> 0.10000000000000001
+	CAST([t].[Value_1] AS Float) <> 0.10000000000000001
 

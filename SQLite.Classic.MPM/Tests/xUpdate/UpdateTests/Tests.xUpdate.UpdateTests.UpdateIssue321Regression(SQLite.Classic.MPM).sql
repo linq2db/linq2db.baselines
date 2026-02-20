@@ -56,7 +56,7 @@ SET     @id = 100500
 UPDATE
 	[LinqDataTypes]
 SET
-	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]) AS SmallIntInt16)
+	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]) AS SmallInt)
 WHERE
 	[LinqDataTypes].[ID] = @id
 
