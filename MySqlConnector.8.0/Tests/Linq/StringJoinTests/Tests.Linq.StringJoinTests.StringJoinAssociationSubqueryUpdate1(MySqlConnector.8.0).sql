@@ -2,15 +2,33 @@
 
 UPDATE
 	`SampleClass` `t`
-		LEFT JOIN LATERAL (
-			SELECT
-				GROUP_CONCAT(`a_Children`.`VarcharValue` SEPARATOR ' | ') as `Result_1`
-			FROM
-				`SampleClass` `a_Children`
-			WHERE
-				`t`.`Id` = `a_Children`.`Id`
-		) `t1` ON 1=1
 SET
-	`t`.`VarcharValue` = `t1`.`Result_1`,
-	`t`.`NVarcharValue` = `t1`.`Result_1`
+	`t`.`VarcharValue` = (
+		SELECT
+			GROUP_CONCAT(`t1`.`VarcharValue` SEPARATOR ' | ')
+		FROM
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
+		WHERE
+			`t`.`Id` = `t1`.`Id`
+	),
+	`t`.`NVarcharValue` = (
+		SELECT
+			GROUP_CONCAT(`t1`.`VarcharValue` SEPARATOR ' | ')
+		FROM
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
+		WHERE
+			`t`.`Id` = `t1`.`Id`
+	)
 
