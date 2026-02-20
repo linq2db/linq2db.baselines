@@ -4,7 +4,7 @@
 
 SELECT
 	[m_1].[ProductId],
-	[m_1].[Item1],
+	[m_1].[OrderId],
 	[d_1].[IsDeleted],
 	[d_1].[OrderID],
 	[d_1].[ProductID],
@@ -15,7 +15,7 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Product].[ProductID] as [ProductId],
-			[e].[OrderID] as [Item1]
+			[e].[OrderID] as [OrderId]
 		FROM
 			[Orders] [e]
 				INNER JOIN [Order Details] [d] ON [e].[OrderID] = [d].[OrderID]

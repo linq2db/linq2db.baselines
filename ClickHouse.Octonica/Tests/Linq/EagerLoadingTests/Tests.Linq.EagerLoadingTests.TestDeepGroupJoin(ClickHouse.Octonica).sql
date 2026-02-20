@@ -1,18 +1,18 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	m_2.Item1,
+	m_2.Id1,
 	d.DetailId,
 	d.MasterId,
 	d.DetailValue
 FROM
 	(
 		SELECT DISTINCT
-			t1.Item1 as Item1
+			t1.Id1 as Id1
 		FROM
 			(
 				SELECT
-					m_1.Id1 as Item1
+					m_1.Id1 as Id1
 				FROM
 					MasterClass m_1
 				ORDER BY
@@ -20,12 +20,12 @@ FROM
 				LIMIT 20
 			) t1
 	) m_2
-		INNER JOIN DetailClass d ON m_2.Item1 = d.MasterId
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	m_2.Item1,
+	m_2.Id1,
 	d.Id1,
 	d.Id2,
 	d.Value,
@@ -33,11 +33,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1.Item1 as Item1
+			t1.Id1 as Id1
 		FROM
 			(
 				SELECT
-					m_1.Id1 as Item1
+					m_1.Id1 as Id1
 				FROM
 					MasterClass m_1
 				ORDER BY
@@ -45,7 +45,7 @@ FROM
 				LIMIT 20
 			) t1
 	) m_2
-		INNER JOIN MasterClass d ON m_2.Item1 = d.Id1
+		INNER JOIN MasterClass d ON m_2.Id1 = d.Id1
 
 -- ClickHouse.Octonica ClickHouse
 

@@ -2,22 +2,22 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Item1],
+	[m_1].[Id_1],
 	[d_1].[Id],
 	[d_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
 			[a_Parent].[Id],
-			[t2].[Item1]
+			[t2].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[t1].[Id] as [Item1]
+					[t1].[Id]
 				FROM
 					[Issue4797Parent] [t1]
 			) [t2]
-				INNER JOIN [Issue4797Child] [d] ON [t2].[Item1] = [d].[ParentId]
+				INNER JOIN [Issue4797Child] [d] ON [t2].[Id] = [d].[ParentId]
 				LEFT JOIN [Issue4797Parent] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_1]
 		INNER JOIN [Issue4797Child] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
@@ -25,18 +25,18 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d].[Id],
 	[d].[ParentId],
 	[a_Parent].[Id]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id] as [Item1]
+			[t1].[Id]
 		FROM
 			[Issue4797Parent] [t1]
 	) [m_1]
-		INNER JOIN [Issue4797Child] [d] ON [m_1].[Item1] = [d].[ParentId]
+		INNER JOIN [Issue4797Child] [d] ON [m_1].[Id] = [d].[ParentId]
 		LEFT JOIN [Issue4797Parent] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 
 -- SQLite.MS SQLite

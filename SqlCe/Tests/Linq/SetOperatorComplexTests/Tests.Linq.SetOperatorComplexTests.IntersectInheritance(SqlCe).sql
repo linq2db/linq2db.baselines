@@ -23,7 +23,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	[m_1].[AuthorId] as [Item1],
+	[m_1].[AuthorId],
 	[a_Book].[BookId],
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],

@@ -1,17 +1,17 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	m_1."Item1",
+	m_1."ParentID",
 	d."ChildID",
 	d."ParentID"
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID" as "Item1"
+			p."ParentID"
 		FROM
 			"Parent" p
 	) m_1
-		INNER JOIN "Child" d ON CAST(m_1."Item1" AS Number(19)) = d."ParentID"
+		INNER JOIN "Child" d ON CAST(m_1."ParentID" AS Number(19)) = d."ParentID"
 
 -- Oracle.11.Managed Oracle11
 
