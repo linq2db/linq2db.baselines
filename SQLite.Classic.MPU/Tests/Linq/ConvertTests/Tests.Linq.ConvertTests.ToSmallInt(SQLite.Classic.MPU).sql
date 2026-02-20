@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	CAST([t].[MoneyValue] AS SmallInt)
+	CAST([t].[MoneyValue] AS SmallIntInt16)
 FROM
 	[LinqDataTypes] [t]
 

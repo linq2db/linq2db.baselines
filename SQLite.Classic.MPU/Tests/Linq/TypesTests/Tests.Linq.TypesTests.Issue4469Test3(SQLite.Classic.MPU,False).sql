@@ -3,8 +3,8 @@ DECLARE @param  -- Double
 SET     @param = 33
 
 SELECT
-	CAST([v].[Integer] AS Float) / @param,
-	CAST([v].[Decimal] AS Float) / @param,
+	CAST([v].[Integer] AS FloatDouble) / @param,
+	CAST([v].[Decimal] AS FloatDouble) / @param,
 	[v].[Double] / @param
 FROM
 	[Issue4469Table] [v]

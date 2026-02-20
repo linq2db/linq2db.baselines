@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CAST([p].[MoneyValue] AS SmallInt) > 0
+	CAST([p].[MoneyValue] AS SmallIntInt16) > 0
 

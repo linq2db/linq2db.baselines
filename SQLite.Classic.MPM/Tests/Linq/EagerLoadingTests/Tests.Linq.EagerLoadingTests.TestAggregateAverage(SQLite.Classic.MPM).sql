@@ -3,7 +3,7 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST([t1].[Average] AS Float))
+			AVG(CAST([t1].[Average] AS FloatDouble))
 		FROM
 			(
 				SELECT DISTINCT

@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CAST([p].[MoneyValue] AS BigInt) > 0
+	CAST([p].[MoneyValue] AS BigIntUInt32) > 0
 
