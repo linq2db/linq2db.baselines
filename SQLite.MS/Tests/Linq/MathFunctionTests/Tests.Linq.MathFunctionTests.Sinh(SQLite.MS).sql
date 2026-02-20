@@ -2,16 +2,16 @@
 
 SELECT
 	CASE
-		WHEN Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 > 0
-			THEN CAST(Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 AS INTEGER)
-		ELSE CAST(Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 - 0.99999999999999989 AS INTEGER)
+		WHEN Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 > 0
+			THEN CAST(Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 AS INTEGER)
+		ELSE CAST(Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 - 0.99999999999999989 AS INTEGER)
 	END
 FROM
 	[LinqDataTypes] [t]
 WHERE
 	CAST(CASE
-		WHEN Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 > 0
-			THEN CAST(Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 AS INTEGER)
-		ELSE CAST(Sinh(CAST([t].[MoneyValue] AS Float) / 15) * 15 - 0.99999999999999989 AS INTEGER)
-	END AS Float) <> 0.10000000000000001
+		WHEN Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 > 0
+			THEN CAST(Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 AS INTEGER)
+		ELSE CAST(Sinh(CAST([t].[MoneyValue] AS FloatDouble) / 15) * 15 - 0.99999999999999989 AS INTEGER)
+	END AS FloatDouble) <> 0.10000000000000001
 

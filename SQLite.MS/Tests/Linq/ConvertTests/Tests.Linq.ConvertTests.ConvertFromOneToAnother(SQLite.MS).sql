@@ -33,7 +33,7 @@ DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS Real)
+	CAST(@value AS RealSingle)
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
@@ -53,7 +53,7 @@ DECLARE @value  -- Double
 SET     @value = 6579.6464800000003
 
 SELECT
-	CAST(@value AS Real)
+	CAST(@value AS RealSingle)
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
@@ -63,7 +63,7 @@ DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS Float)
+	CAST(@value AS FloatDouble)
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1
@@ -73,7 +73,7 @@ DECLARE @value  -- Single
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS Float)
+	CAST(@value AS FloatDouble)
 FROM
 	[LinqDataTypes] [t1]
 LIMIT 1

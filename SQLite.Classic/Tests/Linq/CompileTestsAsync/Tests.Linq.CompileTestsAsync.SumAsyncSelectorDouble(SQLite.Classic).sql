@@ -3,7 +3,7 @@ DECLARE @p  -- Int32
 SET     @p = 5
 
 SELECT
-	SUM(CAST([c_1].[Id] AS Float))
+	SUM(CAST([c_1].[Id] AS FloatDouble))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

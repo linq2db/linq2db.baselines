@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Ln(CAST([p].[MoneyValue] AS Float)) / 0.69314718055994529) as [Value_1]
+			Floor(Ln(CAST([p].[MoneyValue] AS FloatDouble)) / 0.69314718055994529) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Degrees(CAST([p].[MoneyValue] AS Float)) as [Value_1]
+			Degrees(CAST([p].[MoneyValue] AS FloatDouble)) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
