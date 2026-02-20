@@ -14,23 +14,23 @@ SELECT
 FROM
 	(
 		SELECT
-			[t].[GroupId],
+			[g_1].[GroupId],
 			COUNT(*) as [Simple_1],
 			COUNT(CASE
-				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN 1
 				ELSE NULL
 			END) as [WithFilter],
 			COUNT(*) as [Projection],
 			COUNT(CASE
-				WHEN CAST([t].[DataValue] AS Int) % 2 = 0 THEN 1
+				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN 1
 				ELSE NULL
 			END) as [SubFilter]
 		FROM
-			[AggregationData] [t]
+			[AggregationData] [g_1]
 		WHERE
-			[t].[DataValue] IS NOT NULL
+			[g_1].[DataValue] IS NOT NULL
 		GROUP BY
-			[t].[GroupId]
+			[g_1].[GroupId]
 	) [t11]
 		OUTER APPLY (
 			SELECT
@@ -38,11 +38,11 @@ FROM
 			FROM
 				(
 					SELECT DISTINCT
-						[t_1].[DataValue] as [Distinct_1]
+						[t].[DataValue] as [Distinct_1]
 					FROM
-						[AggregationData] [t_1]
+						[AggregationData] [t]
 					WHERE
-						[t_1].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_1].[GroupId]
+						[t].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t].[GroupId]
 				) [t1]
 		) [t2]
 		OUTER APPLY (
@@ -65,12 +65,12 @@ FROM
 			FROM
 				(
 					SELECT DISTINCT
-						[t_2].[DataValue] as [FilterDistinct]
+						[t_1].[DataValue] as [FilterDistinct]
 					FROM
-						[AggregationData] [t_2]
+						[AggregationData] [t_1]
 					WHERE
-						[t_2].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_2].[GroupId] AND
-						CAST([t_2].[DataValue] AS Int) % 2 = 0
+						[t_1].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_1].[GroupId] AND
+						CAST([t_1].[DataValue] AS Int) % 2 = 0
 				) [t5]
 		) [t6]
 		OUTER APPLY (
@@ -93,12 +93,12 @@ FROM
 			FROM
 				(
 					SELECT DISTINCT
-						[t_3].[DataValue] as [SubFilterDistinct]
+						[t_2].[DataValue] as [SubFilterDistinct]
 					FROM
-						[AggregationData] [t_3]
+						[AggregationData] [t_2]
 					WHERE
-						[t_3].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_3].[GroupId] AND
-						CAST([t_3].[DataValue] AS Int) % 2 = 0
+						[t_2].[DataValue] IS NOT NULL AND [t11].[GroupId] = [t_2].[GroupId] AND
+						CAST([t_2].[DataValue] AS Int) % 2 = 0
 				) [t9]
 		) [t10]
 

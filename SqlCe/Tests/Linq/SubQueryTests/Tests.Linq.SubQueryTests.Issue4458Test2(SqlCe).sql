@@ -6,34 +6,50 @@ SELECT
 	[d].[UserId],
 	[d].[Score]
 FROM
-	[Issue4458Item] [m_1]
-		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
-WHERE
-	EXISTS(
-		SELECT
-			*
+	(
+		SELECT DISTINCT
+			[t1].[Id]
 		FROM
-			[Review] [r]
+			[Issue4458Item] [t1]
+				OUTER APPLY (
+					SELECT
+						SUM([stock].[QuantityAvailable]) as [TotalAvailable]
+					FROM
+						[WarehouseStock] [stock]
+					WHERE
+						[stock].[ItemId] = [t1].[Id]
+					GROUP BY
+						[stock].[ItemId]
+				) [stock_1]
 		WHERE
-			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
-	)
+			EXISTS(
+				SELECT
+					*
+				FROM
+					[Review] [r]
+				WHERE
+					[r].[ItemId] = [t1].[Id] AND [r].[Score] > 95
+			)
+	) [m_1]
+		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
 
 -- SqlCe
 
 SELECT
 	[i].[Id],
-	[t1].[TotalAvailable]
+	[stock_1].[TotalAvailable]
 FROM
 	[Issue4458Item] [i]
-		LEFT JOIN [WarehouseStock] [stock] ON [stock].[ItemId] = [i].[Id]
 		OUTER APPLY (
 			SELECT
-				SUM([s].[QuantityAvailable]) as [TotalAvailable]
+				SUM([stock].[QuantityAvailable]) as [TotalAvailable]
 			FROM
-				[WarehouseStock] [s]
+				[WarehouseStock] [stock]
 			WHERE
-				[s].[ItemId] = [i].[Id] AND [stock].[ItemId] = [s].[ItemId]
-		) [t1]
+				[stock].[ItemId] = [i].[Id]
+			GROUP BY
+				[stock].[ItemId]
+		) [stock_1]
 WHERE
 	EXISTS(
 		SELECT
