@@ -1,43 +1,26 @@
 ﻿-- SqlServer.2019
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d].[Value]
 FROM
-	(
-		SELECT DISTINCT
-			[t1].[Item1]
-		FROM
-			(
-				SELECT
-					[x].[Id] as [Item1]
-				FROM
-					[Item] [x]
-			) [t1]
-	) [m_1]
-		INNER JOIN [ItemValue] [d] ON [m_1].[Item1] = [d].[ItemId]
+	[Item] [m_1]
+		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 -- SqlServer.2019
 
 SELECT
-	[x_1].[Id],
-	[x_1].[Text]
+	[x].[Id],
+	[x].[Text]
 FROM
+	[Item] [x]
+ORDER BY
 	(
 		SELECT
-			[x].[Id],
-			[x].[Text],
-			(
-				SELECT
-					SUM([a_Values].[Value])
-				FROM
-					[ItemValue] [a_Values]
-				WHERE
-					[x].[Id] = [a_Values].[ItemId]
-			) as [Sum_1]
+			SUM([a_Values].[Value])
 		FROM
-			[Item] [x]
-	) [x_1]
-ORDER BY
-	[x_1].[Sum_1]
+			[ItemValue] [a_Values]
+		WHERE
+			[x].[Id] = [a_Values].[ItemId]
+	)
 
