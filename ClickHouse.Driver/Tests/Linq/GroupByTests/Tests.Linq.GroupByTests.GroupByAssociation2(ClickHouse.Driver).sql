@@ -6,8 +6,8 @@ FROM
 	(
 		SELECT
 			a_Parent.ParentID as ParentID,
-			COUNT(*) as Count_1,
-			a_Parent.Value1 as Value1
+			a_Parent.Value1 as Value1,
+			COUNT(*) as Count_1
 		FROM
 			GrandChild g_1
 				INNER JOIN Parent a_Parent ON g_1.ParentID = a_Parent.ParentID
