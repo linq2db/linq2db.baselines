@@ -17,7 +17,8 @@ WHERE
 					[ProductTable] [groupedProduct]
 						INNER JOIN [ProductAttributeMapping] [pam_1] ON [groupedProduct].[Id] = [pam_1].[ProductId]
 				GROUP BY
-					[groupedProduct].[Id]
+					[groupedProduct].[Id],
+					[groupedProduct].[Name]
 				HAVING
 					COUNT(*) = 1
 			) [p]
