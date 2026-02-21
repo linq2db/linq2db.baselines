@@ -6,7 +6,10 @@ SELECT
 	[t1].[not_null],
 	[t1].[Col3],
 	[t1].[Col],
-	[t1].[Id]
+	[t1].[Id],
+	[t1].[Col1],
+	[t1].[Col2],
+	[t1].[Col3_1]
 FROM
 	[table1] [s]
 		LEFT JOIN [table2] [bt1] ON [s].[c_tb1l_Id] = [bt1].[id]
@@ -15,6 +18,9 @@ FROM
 				[ctb].[Col3],
 				[tbl3].[col] as [Col],
 				[btbl].[id] as [Id],
+				[btbl].[col1] as [Col1],
+				[btbl].[col2] as [Col2],
+				[btbl].[col3] as [Col3_1],
 				1 as [not_null]
 			FROM
 				(
@@ -35,5 +41,8 @@ WHERE
 GROUP BY
 	[t1].[Col3],
 	[t1].[Col],
-	[t1].[Id]
+	[t1].[Id],
+	[t1].[Col1],
+	[t1].[Col2],
+	[t1].[Col3_1]
 

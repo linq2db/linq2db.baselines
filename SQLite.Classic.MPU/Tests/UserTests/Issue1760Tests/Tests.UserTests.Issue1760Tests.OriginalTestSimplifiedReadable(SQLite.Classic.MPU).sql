@@ -7,7 +7,9 @@ SELECT
 	[ctb_1].[Key_1],
 	[ctb_1].[maxCol],
 	[ctb_1].[Id],
-	[ctb_1].[Id_1]
+	[ctb_1].[Col],
+	[ctb_1].[Id_1],
+	[ctb_1].[Col_1]
 FROM
 	[table1] [g_2]
 		LEFT JOIN [table2] [bt1] ON [g_2].[c_tb1l_Id] = [bt1].[id]
@@ -16,7 +18,9 @@ FROM
 				[ctb].[Key_1],
 				[ctb].[maxCol],
 				[tbl3].[id] as [Id],
+				[tbl3].[col] as [Col],
 				[btbl].[id] as [Id_1],
+				[btbl].[col] as [Col_1],
 				1 as [not_null]
 			FROM
 				(
@@ -38,5 +42,7 @@ GROUP BY
 	[ctb_1].[Key_1],
 	[ctb_1].[maxCol],
 	[ctb_1].[Id],
-	[ctb_1].[Id_1]
+	[ctb_1].[Col],
+	[ctb_1].[Id_1],
+	[ctb_1].[Col_1]
 

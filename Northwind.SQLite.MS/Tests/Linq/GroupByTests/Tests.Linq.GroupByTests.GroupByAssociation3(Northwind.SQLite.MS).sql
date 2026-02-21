@@ -7,7 +7,9 @@ FROM
 		LEFT JOIN [Categories] [a_Category] ON [g_1].[CategoryID] = [a_Category].[CategoryID]
 GROUP BY
 	[a_Category].[CategoryID],
-	[a_Category].[CategoryName]
+	[a_Category].[CategoryName],
+	[a_Category].[Description],
+	[a_Category].[Picture]
 HAVING
 	COUNT(*) = 12
 
