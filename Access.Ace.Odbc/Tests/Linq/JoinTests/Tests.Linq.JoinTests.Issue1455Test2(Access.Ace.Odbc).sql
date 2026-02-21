@@ -50,6 +50,8 @@ SET     @DeliveryCounterParty = '%C%'
 
 SELECT
 	[al_group_2].[Id],
+	[al_group_2].[AlertKey],
+	[al_group_2].[AlertCode],
 	(
 		SELECT TOP 1
 			IIF([t1].[LastUpdate] IS NULL, [t1].[CreationDate], [t1].[LastUpdate])
@@ -223,13 +225,17 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[al_group_1].[Id]
+			[al_group_1].[Id],
+			[al_group_1].[AlertKey],
+			[al_group_1].[AlertCode],
+			[al_group_1].[CreationDate]
 		FROM
 			((
 				SELECT DISTINCT
 					[al_group].[AlertCode],
 					[al_group].[Id],
-					[al_group].[AlertKey]
+					[al_group].[AlertKey],
+					[al_group].[CreationDate]
 				FROM
 					[Alert] [al_group]
 						LEFT JOIN [AuditAlert] [au] ON ([au].[AlertKey] = [al_group].[AlertKey])
