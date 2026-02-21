@@ -4,6 +4,8 @@ SET     @cpty = 'C'
 
 SELECT
 	`al_group_3`.`Id`,
+	`al_group_3`.`AlertKey`,
+	`al_group_3`.`AlertCode`,
 	`t2`.`LastUpdate`,
 	`t2`.`CargoId`,
 	`t2`.`DeliveryId`,
@@ -14,13 +16,17 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			`al_group_1`.`Id`
+			`al_group_1`.`Id`,
+			`al_group_1`.`AlertKey`,
+			`al_group_1`.`AlertCode`,
+			`al_group_1`.`CreationDate`
 		FROM
 			(
 				SELECT DISTINCT
 					`al_group`.`Id`,
 					`al_group`.`AlertKey`,
-					`al_group`.`AlertCode`
+					`al_group`.`AlertCode`,
+					`al_group`.`CreationDate`
 				FROM
 					`Alert` `al_group`
 						LEFT JOIN `AuditAlert` `au` ON `au`.`AlertKey` = `al_group`.`AlertKey`
