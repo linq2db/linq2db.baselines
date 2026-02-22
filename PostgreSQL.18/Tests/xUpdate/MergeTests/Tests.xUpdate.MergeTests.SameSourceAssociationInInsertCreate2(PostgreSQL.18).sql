@@ -7,7 +7,7 @@ USING (
 		"a_Patient"."Diagnosis" as "Patient_Diagnosis"
 	FROM
 		"Person" t1
-			INNER JOIN "Patient" "a_Patient" ON t1."PersonID" = "a_Patient"."PersonID"
+			LEFT JOIN "Patient" "a_Patient" ON t1."PersonID" = "a_Patient"."PersonID"
 ) "Source"
 (
 	"ID",
