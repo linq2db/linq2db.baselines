@@ -5,7 +5,7 @@ SET     @Test = NULL
 UPDATE
 	Issue5351Table x
 SET
-	Test = @Test
+	Test = @Test::Char(1)
 WHERE
 	x.Id = 1
 
@@ -26,7 +26,7 @@ SET     @Test = 'X'
 UPDATE
 	Issue5351Table x
 SET
-	Test = @Test
+	Test = @Test::Char(1)
 WHERE
 	x.Id = 2
 
@@ -50,5 +50,5 @@ SELECT
 FROM
 	Issue5351Table x
 WHERE
-	x.Test = @Test
+	x.Test = @Test::Char(1)
 
