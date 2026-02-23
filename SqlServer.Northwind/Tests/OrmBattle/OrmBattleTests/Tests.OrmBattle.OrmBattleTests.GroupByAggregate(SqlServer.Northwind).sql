@@ -38,15 +38,25 @@ FROM
 
 -- SqlServer.Northwind SqlServer.2019
 
-SELECT DISTINCT
-	IIF((
-		SELECT
-			AVG([a_Orders].[Freight])
-		FROM
-			[Orders] [a_Orders]
-		WHERE
-			[t1].[CustomerID] = [a_Orders].[CustomerID]
-	) >= 80, 1, 0)
+SELECT
+	[t3].[Key_1]
 FROM
-	[Customers] [t1]
+	(
+		SELECT
+			IIF([t1].[Average] >= 80, 1, 0) as [Key_1],
+			IIF([t1].[Average] >= 80, 1, 0) as [c1]
+		FROM
+			[Customers] [t2]
+				OUTER APPLY (
+					SELECT
+						AVG([a_Orders].[Freight]) as [Average]
+					FROM
+						[Orders] [a_Orders]
+					WHERE
+						[t2].[CustomerID] = [a_Orders].[CustomerID]
+				) [t1]
+	) [t3]
+GROUP BY
+	[t3].[Key_1],
+	[t3].[c1]
 
