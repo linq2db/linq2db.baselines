@@ -17,19 +17,23 @@ FROM
 	(
 		SELECT DISTINCT
 			CASE
-				WHEN (
-					SELECT
-						AVG([a_Orders].[Freight])
-					FROM
-						[Orders] [a_Orders]
-					WHERE
-						[t1].[CustomerID] = [a_Orders].[CustomerID]
-				) = 33.25
-					THEN 1
+				WHEN [t2].[Average] = 33.25 THEN 1
 				ELSE 0
 			END as [Key_1]
 		FROM
-			[Customers] [t1]
+			(
+				SELECT
+					(
+						SELECT
+							AVG([a_Orders].[Freight])
+						FROM
+							[Orders] [a_Orders]
+						WHERE
+							[t1].[CustomerID] = [a_Orders].[CustomerID]
+					) as [Average]
+				FROM
+					[Customers] [t1]
+			) [t2]
 	) [m_1]
 		INNER JOIN [Customers] [d] ON ([m_1].[Key_1]) = (CASE
 			WHEN (
@@ -46,19 +50,35 @@ FROM
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
-SELECT DISTINCT
-	CASE
-		WHEN (
-			SELECT
-				AVG([a_Orders].[Freight])
-			FROM
-				[Orders] [a_Orders]
-			WHERE
-				[t1].[CustomerID] = [a_Orders].[CustomerID]
-		) = 33.25
-			THEN 1
-		ELSE 0
-	END
+SELECT
+	[t3].[Key_1]
 FROM
-	[Customers] [t1]
+	(
+		SELECT
+			CASE
+				WHEN [t2].[Average] = 33.25 THEN 1
+				ELSE 0
+			END as [Key_1],
+			CASE
+				WHEN [t2].[Average] = 33.25 THEN 1
+				ELSE 0
+			END as [c1]
+		FROM
+			(
+				SELECT
+					(
+						SELECT
+							AVG([a_Orders].[Freight])
+						FROM
+							[Orders] [a_Orders]
+						WHERE
+							[t1].[CustomerID] = [a_Orders].[CustomerID]
+					) as [Average]
+				FROM
+					[Customers] [t1]
+			) [t2]
+	) [t3]
+GROUP BY
+	[t3].[Key_1],
+	[t3].[c1]
 
