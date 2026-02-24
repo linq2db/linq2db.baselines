@@ -1,7 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	r.PersonID,
 	r.PersonID
 FROM
 	Person r
