@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 0
+DECLARE @z  -- Int32
+SET     @z = 0
 
 SELECT
 	COUNT(*)
 FROM
 	[sample_table_temp] [t]
 WHERE
-	[t].[id] BETWEEN @p AND [value]
+	[t].[id] BETWEEN @z AND [value]
 
