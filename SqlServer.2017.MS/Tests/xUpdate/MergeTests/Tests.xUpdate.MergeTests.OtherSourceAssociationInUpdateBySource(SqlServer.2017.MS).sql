@@ -19,10 +19,11 @@ SET
 		SELECT
 			[a_Patient].[Diagnosis]
 		FROM
-			[Patient] [a_Patient]
-				INNER JOIN [Person] [a_Person] ON [a_Patient].[PersonID] = [a_Person].[PersonID]
+			[Patient] [a_Patient_1]
+				LEFT JOIN [Person] [a_Person] ON [a_Patient_1].[PersonID] = [a_Person].[PersonID]
+				LEFT JOIN [Patient] [a_Patient] ON [a_Person].[PersonID] = [a_Patient].[PersonID]
 		WHERE
-			[Target].[PersonID] = [a_Patient].[PersonID]
+			[Target].[PersonID] = [a_Patient_1].[PersonID]
 	)
 ;
 
