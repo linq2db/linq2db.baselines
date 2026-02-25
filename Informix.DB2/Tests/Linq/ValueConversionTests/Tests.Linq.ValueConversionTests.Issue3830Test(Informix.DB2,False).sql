@@ -10,7 +10,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @Bool1 AND r.Bool2 IS NULL AND r.Bool3 IS NULL
+	r.Bool1 = @Bool1::Char(1) AND r.Bool2 IS NULL AND r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
@@ -24,7 +24,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @true_value AND r.Bool2 IS NULL AND r.Bool3 IS NULL
+	r.Bool1 = @true_value::Char(1) AND r.Bool2 IS NULL AND
+	r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -38,7 +39,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool3 IS NULL AND r.Bool1 = @Bool1 AND r.Bool2 IS NULL
+	r.Bool3 IS NULL AND r.Bool1 = @Bool1::Char(1) AND r.Bool2 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -52,7 +53,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool2 IS NULL AND r.Bool1 = @Bool1 AND r.Bool3 IS NULL
+	r.Bool2 IS NULL AND r.Bool1 = @Bool1::Char(1) AND r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -68,7 +69,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @Bool1 AND r.Bool2 IS NULL AND r.Bool3 = @Bool3
+	r.Bool1 = @Bool1::Char(1) AND r.Bool2 IS NULL AND r.Bool3 = @Bool3::Char(1)
 
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
@@ -84,7 +85,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool3 = @true_value AND r.Bool1 = @Bool1 AND r.Bool2 IS NULL
+	r.Bool3 = @true_value::Char(1) AND r.Bool1 = @Bool1::Char(1) AND
+	r.Bool2 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @false_value Char(1) -- StringFixedLength
@@ -100,7 +102,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @false_value AND r.Bool2 IS NULL AND r.Bool3 = @Bool3
+	r.Bool1 = @false_value::Char(1) AND r.Bool2 IS NULL AND
+	r.Bool3 = @Bool3::Char(1)
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -116,7 +119,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool2 IS NULL AND r.Bool1 = @Bool1 AND r.Bool3 = @Bool3
+	r.Bool2 IS NULL AND r.Bool1 = @Bool1::Char(1) AND r.Bool3 = @Bool3::Char(1)
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -132,7 +135,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @Bool1 AND r.Bool2 = @Bool2 AND r.Bool3 IS NULL
+	r.Bool1 = @Bool1::Char(1) AND r.Bool2 = @Bool2 AND
+	r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @false_value Char(1) -- StringFixedLength
@@ -148,7 +152,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @false_value AND r.Bool2 = @Bool2 AND r.Bool3 IS NULL
+	r.Bool1 = @false_value::Char(1) AND r.Bool2 = @Bool2 AND
+	r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -164,7 +169,7 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool3 IS NULL AND r.Bool1 = @Bool1 AND r.Bool2 = @Bool2
+	r.Bool3 IS NULL AND r.Bool1 = @Bool1::Char(1) AND r.Bool2 = @Bool2
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -178,7 +183,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool2 IS NOT NULL AND r.Bool1 = @Bool1 AND r.Bool3 IS NULL
+	r.Bool2 IS NOT NULL AND r.Bool1 = @Bool1::Char(1) AND
+	r.Bool3 IS NULL
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -196,7 +202,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @Bool1 AND r.Bool2 = @Bool2 AND r.Bool3 = @Bool3
+	r.Bool1 = @Bool1::Char(1) AND r.Bool2 = @Bool2 AND
+	r.Bool3 = @Bool3::Char(1)
 
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
@@ -214,7 +221,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool1 = @true_value AND r.Bool2 = @Bool2 AND r.Bool3 = @Bool3
+	r.Bool1 = @true_value::Char(1) AND r.Bool2 = @Bool2 AND
+	r.Bool3 = @Bool3::Char(1)
 
 -- Informix.DB2 Informix
 DECLARE @true_value Char(1) -- StringFixedLength
@@ -232,7 +240,8 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool3 = @true_value AND r.Bool1 = @Bool1 AND r.Bool2 = @Bool2
+	r.Bool3 = @true_value::Char(1) AND r.Bool1 = @Bool1::Char(1) AND
+	r.Bool2 = @Bool2
 
 -- Informix.DB2 Informix
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -248,5 +257,6 @@ SELECT
 FROM
 	Issue3830TestTable r
 WHERE
-	r.Bool2 IS NOT NULL AND r.Bool1 = @Bool1 AND r.Bool3 = @Bool3
+	r.Bool2 IS NOT NULL AND r.Bool1 = @Bool1::Char(1) AND
+	r.Bool3 = @Bool3::Char(1)
 

@@ -27,8 +27,8 @@ VALUES
 	@Value1,
 	@Enum,
 	@inserted,
-	@boolValue,
-	@boolValue_1
+	@boolValue::VarChar(1),
+	@boolValue_1::VarChar(1)
 )
 
 -- Informix.DB2 Informix
