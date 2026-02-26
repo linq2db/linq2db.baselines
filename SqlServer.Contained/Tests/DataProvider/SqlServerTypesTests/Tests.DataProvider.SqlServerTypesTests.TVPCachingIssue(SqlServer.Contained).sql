@@ -1,6 +1,6 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[PersonID],
@@ -13,12 +13,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p1].[PersonID]
@@ -29,12 +29,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[PersonID],
@@ -47,12 +47,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p1].[PersonID]
@@ -63,12 +63,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[PersonID],
@@ -81,12 +81,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p1].[PersonID]
@@ -97,12 +97,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[m_1].[PersonID],
@@ -115,12 +115,12 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[p1].[PersonID]
@@ -131,6 +131,6 @@ WHERE
 		SELECT
 			[x].[Id]
 		FROM
-			@p [x]
+			@table [x]
 	)
 
