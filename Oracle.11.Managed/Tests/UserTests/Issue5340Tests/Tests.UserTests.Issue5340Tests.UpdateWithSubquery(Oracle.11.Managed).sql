@@ -8,7 +8,7 @@ SET
 			t3."Field4"
 		FROM
 			"OuterTable" t4
-				INNER JOIN (
+				LEFT JOIN (
 					SELECT
 						y_1."Field4",
 						ROW_NUMBER() OVER (PARTITION BY y_1."Field3" ORDER BY y_1."Field4") as "rn",
@@ -25,7 +25,7 @@ WHERE
 			*
 		FROM
 			"OuterTable" t2
-				INNER JOIN (
+				LEFT JOIN (
 					SELECT
 						ROW_NUMBER() OVER (PARTITION BY y."Field3" ORDER BY y."Field4") as "rn",
 						y."Field3"

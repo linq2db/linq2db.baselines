@@ -11,11 +11,17 @@ WHERE
 UPDATE
 	[p]
 SET
-	[p].[ParentID] = [c_2].[ParentID] + 1000
+	[p].[ParentID] = (
+		SELECT
+			[c_2].[ParentID]
+		FROM
+			[Child] [c_2]
+		WHERE
+			[c_2].[ChildID] = 11
+	) + 1000
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
-		LEFT JOIN [Child] [c_2] ON [c_2].[ChildID] = 11
 WHERE
 	[p].[ParentID] = 1
 
