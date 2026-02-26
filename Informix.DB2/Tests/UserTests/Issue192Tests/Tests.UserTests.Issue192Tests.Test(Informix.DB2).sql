@@ -19,7 +19,7 @@ VALUES
 (
 	@Id,
 	@Name,
-	@BoolValue,
+	@BoolValue::Char,
 	@GuidValue
 )
 
@@ -44,7 +44,7 @@ VALUES
 (
 	@Id,
 	@Name,
-	@BoolValue,
+	@BoolValue::Char,
 	@GuidValue
 )
 
