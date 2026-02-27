@@ -25,7 +25,7 @@ FROM
 		UNION
 		SELECT
 			Coalesce(c_2."ParentID", 0) as "ParentID",
-			CAST(Floor(CAST(Coalesce(c_2."GrandChildID", 0) AS Float) / 100D) AS Int) as "Value1"
+			Floor(CAST(Coalesce(c_2."GrandChildID", 0) AS Float) / 100D) as "Value1"
 		FROM
 			"GrandChild" c_2
 	) t1
