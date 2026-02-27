@@ -14,5 +14,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue = Mdy(9, 27, 2009)
+	t1.DateTimeValue = TO_DATE('2009-09-27', '%Y-%m-%d')
 
