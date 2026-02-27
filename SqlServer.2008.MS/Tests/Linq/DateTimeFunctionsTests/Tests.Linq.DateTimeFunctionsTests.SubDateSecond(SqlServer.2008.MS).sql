@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	DateDiff(second, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue]))
+	CAST(DateDiff(second, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue])) AS Float)
 FROM
 	[LinqDataTypes] [t]
 

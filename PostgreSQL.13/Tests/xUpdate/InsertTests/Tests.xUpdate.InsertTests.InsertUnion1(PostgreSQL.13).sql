@@ -25,7 +25,7 @@ FROM
 		UNION
 		SELECT
 			Coalesce(c_2."ParentID", 0) as "ParentID",
-			Floor(Coalesce(c_2."GrandChildID", 0)::Float / 100) as "Value1"
+			Floor(Coalesce(c_2."GrandChildID", 0)::Float / 100)::Int as "Value1"
 		FROM
 			"GrandChild" c_2
 	) t1
