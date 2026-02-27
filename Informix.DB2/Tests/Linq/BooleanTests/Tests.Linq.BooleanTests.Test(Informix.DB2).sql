@@ -183,7 +183,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = @True
+	r.BooleanN = @True::BOOLEAN
 
 -- Informix.DB2 Informix
 
@@ -217,7 +217,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN = @False
+	r.BooleanN = @False::BOOLEAN
 
 -- Informix.DB2 Informix
 
@@ -517,7 +517,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN <> @True OR r.BooleanN IS NULL
+	r.BooleanN <> @True::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
 
@@ -551,7 +551,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.BooleanN <> @False OR r.BooleanN IS NULL
+	r.BooleanN <> @False::BOOLEAN OR r.BooleanN IS NULL
 
 -- Informix.DB2 Informix
 

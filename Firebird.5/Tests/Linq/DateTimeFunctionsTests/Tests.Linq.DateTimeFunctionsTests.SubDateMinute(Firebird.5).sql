@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	DateDiff(minute, "t"."DateTimeValue", DateAdd(Minute, 100, "t"."DateTimeValue"))
+	CAST(DateDiff(minute, "t"."DateTimeValue", DateAdd(Minute, 100, "t"."DateTimeValue")) AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t"
 
