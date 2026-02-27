@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DATEDIFF(minute, LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") as "Diff",
+			DateDiff(minute, LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") as "Diff",
 			"x"."EventUser" as "User_1",
 			"x"."ProcessID" as "Proc"
 		FROM
