@@ -18,5 +18,5 @@ SELECT
 FROM
 	T1351Model t1
 WHERE
-	toInt32(t1.TestNullable) <> 1 OR t1.TestNullable IS NULL
+	t1.TestNullable <> toInt8(1) OR t1.TestNullable IS NULL
 
