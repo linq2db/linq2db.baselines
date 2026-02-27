@@ -14,5 +14,5 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[UnitsInStock] < [p].[ReorderLevel] AND CAST([p].[UnitsOnOrder] AS Int) = 0
+	[p].[UnitsInStock] < [p].[ReorderLevel] AND [p].[UnitsOnOrder] = 0
 
