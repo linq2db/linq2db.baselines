@@ -5,5 +5,5 @@ SELECT
 FROM
 	[Parent] [i]
 WHERE
-	([i].[Value1] IN (5, 3, 4) OR [i].[Value1] IS NULL)
+	(CAST([i].[Value1] AS INTEGER) IN (5, 3, 4) OR CAST([i].[Value1] AS INTEGER) IS NULL)
 
