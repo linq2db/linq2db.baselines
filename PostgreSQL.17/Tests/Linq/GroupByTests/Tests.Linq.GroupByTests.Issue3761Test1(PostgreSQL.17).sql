@@ -19,7 +19,7 @@ FROM
 		FROM
 			"Issue3761Table" n
 		WHERE
-			n."DATUM" < make_timestamp(2019, 1, 1, 0, 0, 0)
+			n."DATUM" < '2019-01-01'::date
 	) t1
 GROUP BY
 	t1."Year_1",
