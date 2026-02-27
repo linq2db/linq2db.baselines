@@ -22,8 +22,8 @@ FROM
 	) [t2]
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p SmallInt -- Int16
-SET     @p = 1234
+DECLARE @ID SmallInt -- Int16
+SET     @ID = 1234
 
 INSERT INTO [InsertIssueTest]
 (
