@@ -1,6 +1,8 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 DECLARE @currentDate DateTime
 SET     @currentDate = CAST('2020-02-29T17:54:55.123' AS DATETIME)
+DECLARE @currentDate_1 DateTime
+SET     @currentDate_1 = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 SELECT
 	[o].[ID],
@@ -23,13 +25,13 @@ FROM
 				[LinqDataTypes] [t]
 			WHERE
 				Coalesce([t].[DateTimeValue], [t].[DateTimeValue2]) <= @currentDate AND
-				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= @currentDate)
+				([t].[DateTimeValue2] IS NULL OR [t].[DateTimeValue2] >= @currentDate_1)
 			GROUP BY
 				[t].[ID]
 		) [t1] ON [o].[ID] = [t1].[ID] AND ([o].[DateTimeValue2] = [t1].[c1] OR [o].[DateTimeValue2] IS NULL AND [t1].[c1] IS NULL)
 WHERE
 	Coalesce([o].[DateTimeValue], [o].[DateTimeValue2]) <= @currentDate AND
-	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= @currentDate)
+	([o].[DateTimeValue2] IS NULL OR [o].[DateTimeValue2] >= @currentDate_1)
 ORDER BY
 	[o].[DateTimeValue2]
 
