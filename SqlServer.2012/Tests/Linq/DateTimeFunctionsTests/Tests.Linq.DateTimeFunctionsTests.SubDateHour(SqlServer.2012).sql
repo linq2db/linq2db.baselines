@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2012
 
 SELECT
-	CAST(DateDiff(hour, [t].[DateTimeValue], DateAdd(hour, 100, [t].[DateTimeValue])) AS Float)
+	DateDiff(hour, [t].[DateTimeValue], DateAdd(hour, 100, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 
