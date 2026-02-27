@@ -26,7 +26,7 @@ SELECT
 	tgGroup_1.TranslatedMessageGroup,
 	tgGroup_1.Hour_1,
 	COUNT(*),
-	sumOrNull(toFloat64(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3))))
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
 FROM
 	(
 		SELECT
