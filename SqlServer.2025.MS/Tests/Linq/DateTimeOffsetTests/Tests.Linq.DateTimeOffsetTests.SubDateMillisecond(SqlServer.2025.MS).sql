@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	CAST(DateDiff(millisecond, [t].[TransactionDate], DateAdd(second, 1, [t].[TransactionDate])) AS Float)
+	DateDiff(millisecond, [t].[TransactionDate], DateAdd(second, 1, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 
