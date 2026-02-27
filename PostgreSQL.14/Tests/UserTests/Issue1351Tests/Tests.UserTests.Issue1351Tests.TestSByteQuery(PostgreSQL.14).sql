@@ -18,5 +18,5 @@ SELECT
 FROM
 	"T1351Model" t1
 WHERE
-	t1."TestNullable"::Int <> 1 OR t1."TestNullable" IS NULL
+	t1."TestNullable" <> 1 OR t1."TestNullable" IS NULL
 
