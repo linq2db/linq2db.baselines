@@ -25,7 +25,7 @@ FROM
 		UNION DISTINCT
 		SELECT
 			Coalesce(c_2.ParentID, 0) as ParentID,
-			toInt32(Floor(toFloat64(Coalesce(c_2.GrandChildID, 0)) / toFloat64(100))) as Value1
+			Floor(toFloat64(Coalesce(c_2.GrandChildID, 0)) / toFloat64(100)) as Value1
 		FROM
 			GrandChild c_2
 	) t1
