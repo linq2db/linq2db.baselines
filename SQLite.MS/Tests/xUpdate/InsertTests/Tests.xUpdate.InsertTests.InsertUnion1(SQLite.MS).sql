@@ -28,11 +28,11 @@ FROM
 		UNION
 		SELECT
 			Coalesce([c_2].[ParentID], 0) as [ParentID],
-			CASE
+			CAST(CASE
 				WHEN CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 > 0
 					THEN CAST(CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 AS INTEGER)
 				ELSE CAST(CAST(Coalesce([c_2].[GrandChildID], 0) AS Float) / 100 - 0.99999999999999989 AS INTEGER)
-			END as [Value1]
+			END AS Float) as [Value1]
 		FROM
 			[GrandChild] [c_2]
 	) [t1]
