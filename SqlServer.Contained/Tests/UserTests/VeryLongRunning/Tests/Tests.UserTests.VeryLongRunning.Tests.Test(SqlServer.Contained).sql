@@ -204,7 +204,7 @@ FROM
 			[tempdb]..[#tbl9999] [id]
 				LEFT JOIN (
 					SELECT
-						[g_1].[Column3] as [Column1],
+						[g_1].[Column3] as [Key_1],
 						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
 					FROM
 						[tempdb]..[#tbl1515] [g_1]
@@ -213,7 +213,7 @@ FROM
 						[g_1].[Column3] IS NOT NULL
 					GROUP BY
 						[g_1].[Column3]
-				) [rd] ON [id].[Column2] = [rd].[Column1] OR [id].[Column2] IS NULL AND [rd].[Column1] IS NULL
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
 		WHERE
 			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
 	) [i]
@@ -1378,7 +1378,7 @@ FROM
 			[tempdb]..[#tbl9999] [id]
 				LEFT JOIN (
 					SELECT
-						[g_1].[Column3] as [Column1],
+						[g_1].[Column3] as [Key_1],
 						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
 					FROM
 						[tempdb]..[#tbl1515] [g_1]
@@ -1387,7 +1387,7 @@ FROM
 						[g_1].[Column3] IS NOT NULL
 					GROUP BY
 						[g_1].[Column3]
-				) [rd] ON [id].[Column2] = [rd].[Column1] OR [id].[Column2] IS NULL AND [rd].[Column1] IS NULL
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
 		WHERE
 			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
 	) [i]
