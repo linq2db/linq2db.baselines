@@ -19,7 +19,7 @@ FROM
 		FROM
 			Issue3761Table n
 		WHERE
-			n.DATUM < Mdy(1, 1, 2019)
+			n.DATUM < TO_DATE('2019-01-01', '%Y-%m-%d')
 	) t1
 GROUP BY
 	t1.Year_1,
@@ -44,7 +44,7 @@ FROM
 		FROM
 			Issue3761Table n_1
 		WHERE
-			n_1.DATUM >= Mdy(1, 1, 2019)
+			n_1.DATUM >= TO_DATE('2019-01-01', '%Y-%m-%d')
 	) t2
 GROUP BY
 	t2.Year_1,
