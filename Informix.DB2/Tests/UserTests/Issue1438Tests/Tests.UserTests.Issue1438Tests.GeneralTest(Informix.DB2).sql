@@ -8,7 +8,7 @@ INSERT INTO Issue1438
 )
 VALUES
 (
-	@Has
+	@Has::BOOLEAN
 )
 
 -- Informix.DB2 Informix

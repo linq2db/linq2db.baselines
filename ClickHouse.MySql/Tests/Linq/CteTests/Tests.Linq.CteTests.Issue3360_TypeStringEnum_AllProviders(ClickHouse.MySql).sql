@@ -3,8 +3,8 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		p.Id,
-		p.Str
+		p.Id as Id,
+		p.Str as Str
 	FROM
 		Issue3360WithEnum p
 	UNION ALL

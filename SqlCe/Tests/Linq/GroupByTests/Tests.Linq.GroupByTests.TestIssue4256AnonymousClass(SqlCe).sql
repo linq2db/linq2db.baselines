@@ -5,7 +5,7 @@ SELECT DISTINCT
 	CASE
 		WHEN [it].[SmallIntValue] <> 0 THEN 1
 		ELSE 0
-	END as [Other]
+	END as [c1]
 FROM
 	[LinqDataTypes] [it]
 

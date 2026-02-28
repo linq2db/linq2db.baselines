@@ -1,12 +1,12 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-DECLARE @p TimestampTz -- DateTimeOffset
-SET     @p = '2000-02-03 04:05:06.007'::timestamp
+DECLARE @p1 TimestampTz -- DateTimeOffset
+SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 
 SELECT
 	t1."Value"
 FROM
 	(
-		SELECT issue_1742_tstz(:p) as "Value"
+		SELECT issue_1742_tstz(:p1) as "Value"
 	) t1
 LIMIT 2
 

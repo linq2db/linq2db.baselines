@@ -9,9 +9,9 @@ INSERT INTO InsertTestClassDest
 WITH CTE_1 AS
 (
 	SELECT
-		t1.Id,
+		t1.Id as Id,
 		t1.Value as Value_1,
-		t1.OtherValue
+		t1.OtherValue as OtherValue
 	FROM
 		InsertTestClass t1
 )

@@ -1,7 +1,6 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT TOP 100
-	[r].[PersonID],
 	[r].[PersonID]
 FROM
 	[Person] [r]

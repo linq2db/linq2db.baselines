@@ -1,7 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r.PersonID,
 	r.PersonID
 FROM
 	Person r

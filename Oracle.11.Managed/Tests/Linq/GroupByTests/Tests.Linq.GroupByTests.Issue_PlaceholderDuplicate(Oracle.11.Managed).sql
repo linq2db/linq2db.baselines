@@ -3,13 +3,11 @@ DECLARE @take Int32
 SET     @take = 100
 
 SELECT
-	t1.ID,
-	t1."sort_1"
+	t1.ID
 FROM
 	(
 		SELECT
-			r."PersonID" as ID,
-			r."PersonID" as "sort_1"
+			r."PersonID" as ID
 		FROM
 			"Person" r
 		ORDER BY

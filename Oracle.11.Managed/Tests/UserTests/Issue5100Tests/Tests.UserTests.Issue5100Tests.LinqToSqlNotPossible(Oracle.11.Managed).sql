@@ -81,6 +81,7 @@ FROM
 			t1."TooltipText"
 		FROM
 			"TextTranslationDTO" t1
+				INNER JOIN "TextDTO" t ON t."Id" = t1."TextId"
 		ORDER BY
 			(
 				SELECT
@@ -90,14 +91,7 @@ FROM
 				WHERE
 					l."AlternativeLanguageID" = t1."LanguageId"
 			),
-			(
-				SELECT
-					t."ServerOnlyText"
-				FROM
-					"TextDTO" t
-				WHERE
-					t."Id" = t1."TextId"
-			)
+			t."ServerOnlyText"
 	) t2
 WHERE
 	ROWNUM <= 1
