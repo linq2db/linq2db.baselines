@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		r.Id,
+		r.Id as Id,
 		toUInt8(toUInt8(5)) as Byte,
 		toUInt8(toUInt8(5)) as ByteN,
 		toUUID(toUUID('0b8afe27-481c-442e-b8cf-729ddfeece29')) as Guid,

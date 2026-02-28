@@ -26,29 +26,34 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t4"."AggregatedFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t5"."AggregatedFilteredDistinct", ''), ', '), '')
 		FROM
 			(
-				SELECT DISTINCT
-					"t3"."item" as "AggregatedFilteredDistinct"
+				SELECT
+					"t4"."AggregatedFilteredDistinct"
 				FROM
 					(
-						SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
-						UNION ALL
-						SELECT "t"."NotNullableValue" FROM rdb$database
-						UNION ALL
-						SELECT "t"."NotNullableValue" FROM rdb$database
-						UNION ALL
-						SELECT "t"."NVarcharValue" FROM rdb$database) "t3"
-				WHERE
-					"t3"."item" <> 'A' OR "t3"."item" IS NULL
+						SELECT DISTINCT
+							"t3"."item" as "AggregatedFilteredDistinct"
+						FROM
+							(
+								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
+								UNION ALL
+								SELECT "t"."NotNullableValue" FROM rdb$database
+								UNION ALL
+								SELECT "t"."NotNullableValue" FROM rdb$database
+								UNION ALL
+								SELECT "t"."NVarcharValue" FROM rdb$database) "t3"
+						WHERE
+							"t3"."item" <> 'A' OR "t3"."item" IS NULL
+					) "t4"
 				ORDER BY
 					CASE
-						WHEN "t3"."item" IS NULL THEN 0
+						WHEN "t4"."AggregatedFilteredDistinct" IS NULL THEN 0
 						ELSE 1
 					END,
-					"t3"."item"
-			) "t4"
+					"t4"."AggregatedFilteredDistinct"
+			) "t5"
 	)
 FROM
 	"SampleClass" "t"

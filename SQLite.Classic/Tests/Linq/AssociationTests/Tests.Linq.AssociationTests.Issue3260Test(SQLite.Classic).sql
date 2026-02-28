@@ -5,7 +5,7 @@ SELECT
 		SELECT
 			SUM(CASE
 				WHEN [d].[not_null] IS NOT NULL THEN [d].[Result_1]
-				ELSE CAST(0 AS Decimal)
+				ELSE 0
 			END)
 		FROM
 			(

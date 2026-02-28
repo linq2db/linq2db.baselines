@@ -145,59 +145,59 @@ SELECT
 	[x].[Id],
 	[x].[AisleID],
 	[x].[MaterialID],
-	[x].[Id_1],
-	[x].[AisleNumber],
-	[x].[PlantID],
-	[x].[Name],
-	[x].[Id_2],
-	[x].[MaterialNumber],
-	[x].[MaterialDescription_1],
-	[x].[MaterialDescription_2],
-	[x].[MaterialDescription_3],
-	[x].[CategoryABC],
-	[x].[CategoryCustoms],
-	[x].[CategoryDimensions],
-	[x].[CategoryQuality],
-	[x].[CategoryTemperature],
-	[x].[Id_3],
-	[x].[Id_4],
-	[x].[Status],
-	[x].[ResourceLabel],
-	[x].[CustomField1],
-	[x].[CustomField2],
-	[x].[CustomField3],
-	[x].[CustomLong1],
-	[x].[CustomLong2],
-	[x].[CustomLong3],
-	[x].[Id_5],
-	[x].[MaterialNumber_1],
-	[x].[MaterialDescription_1_1],
-	[x].[MaterialDescription_2_1],
-	[x].[MaterialDescription_3_1],
-	[x].[CategoryABC_1],
-	[x].[CategoryCustoms_1],
-	[x].[CategoryDimensions_1],
-	[x].[CategoryQuality_1],
-	[x].[CategoryTemperature_1],
-	[x].[Id_6],
-	[x].[BatchNumber],
-	[x].[BundleUnit],
-	[x].[ProductStatus],
-	[x].[CustomField1_1],
-	[x].[CustomField2_1],
-	[x].[CustomField3_1],
-	[x].[Status_1],
-	[x].[CategoryABC_2],
-	[x].[HeightClass],
-	[x].[Count_1],
-	[x].[CountLocked],
+	[a].[Id],
+	[a].[AisleNumber],
+	[a].[PlantID],
+	[a].[Name],
+	[m_1].[Id],
+	[m_1].[MaterialNumber],
+	[m_1].[MaterialDescription_1],
+	[m_1].[MaterialDescription_2],
+	[m_1].[MaterialDescription_3],
+	[m_1].[CategoryABC],
+	[m_1].[CategoryCustoms],
+	[m_1].[CategoryDimensions],
+	[m_1].[CategoryQuality],
+	[m_1].[CategoryTemperature],
+	[a1].[Id],
+	[c1].[Id],
+	[c1].[Status],
+	[c1].[ResourceLabel],
+	[c1].[CustomField1],
+	[c1].[CustomField2],
+	[c1].[CustomField3],
+	[c1].[CustomLong1],
+	[c1].[CustomLong2],
+	[c1].[CustomLong3],
+	[m1].[Id],
+	[m1].[MaterialNumber],
+	[m1].[MaterialDescription_1],
+	[m1].[MaterialDescription_2],
+	[m1].[MaterialDescription_3],
+	[m1].[CategoryABC],
+	[m1].[CategoryCustoms],
+	[m1].[CategoryDimensions],
+	[m1].[CategoryQuality],
+	[m1].[CategoryTemperature],
+	[i1].[IR_Id],
+	[i1].[IR_BatchNumber],
+	[i1].[IR_BundleUnit],
+	[i1].[IR_ProductStatus],
+	[i1].[IR_CustomField1],
+	[i1].[IR_CustomField2],
+	[i1].[IR_CustomField3],
+	[a1].[Status],
+	[a1].[CategoryABC],
+	[a1].[HeightClass],
+	[i1].[Count_1],
+	[i1].[CountLocked],
 	EXISTS(
 		SELECT
 			*
 		FROM
 			[RefOutfeedTransportOrderResourceDTO] [x_1]
 		WHERE
-			[x_1].[ResourceID] = [x].[Id_4]
+			[x_1].[ResourceID] = [c1].[Id]
 	),
 	EXISTS(
 		SELECT
@@ -205,7 +205,7 @@ SELECT
 		FROM
 			[CTE_1] [x_2]
 		WHERE
-			[x_2].[IR_ResourceID] = [x].[Id_4] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+			[x_2].[IR_ResourceID] = [c1].[Id] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
@@ -215,108 +215,14 @@ SELECT
 			))
 	)
 FROM
-	(
-		SELECT
-			[t1].[Id],
-			[t1].[AisleID],
-			[t1].[MaterialID],
-			[t1].[Id_1],
-			[t1].[AisleNumber],
-			[t1].[PlantID],
-			[t1].[Name],
-			[t1].[Id_2],
-			[t1].[MaterialNumber],
-			[t1].[MaterialDescription_1],
-			[t1].[MaterialDescription_2],
-			[t1].[MaterialDescription_3],
-			[t1].[CategoryABC],
-			[t1].[CategoryCustoms],
-			[t1].[CategoryDimensions],
-			[t1].[CategoryQuality],
-			[t1].[CategoryTemperature],
-			[t1].[Id_3],
-			[i1].[Count_1],
-			[c1].[Id] as [Id_4],
-			[c1].[Status],
-			[c1].[ResourceLabel],
-			[c1].[CustomField1],
-			[c1].[CustomField2],
-			[c1].[CustomField3],
-			[c1].[CustomLong1],
-			[c1].[CustomLong2],
-			[c1].[CustomLong3],
-			[m1].[Id] as [Id_5],
-			[m1].[MaterialNumber] as [MaterialNumber_1],
-			[m1].[MaterialDescription_1] as [MaterialDescription_1_1],
-			[m1].[MaterialDescription_2] as [MaterialDescription_2_1],
-			[m1].[MaterialDescription_3] as [MaterialDescription_3_1],
-			[m1].[CategoryABC] as [CategoryABC_1],
-			[m1].[CategoryCustoms] as [CategoryCustoms_1],
-			[m1].[CategoryDimensions] as [CategoryDimensions_1],
-			[m1].[CategoryQuality] as [CategoryQuality_1],
-			[m1].[CategoryTemperature] as [CategoryTemperature_1],
-			[i1].[IR_Id] as [Id_6],
-			[i1].[IR_BatchNumber] as [BatchNumber],
-			[i1].[IR_BundleUnit] as [BundleUnit],
-			[i1].[IR_ProductStatus] as [ProductStatus],
-			[i1].[IR_CustomField1] as [CustomField1_1],
-			[i1].[IR_CustomField2] as [CustomField2_1],
-			[i1].[IR_CustomField3] as [CustomField3_1],
-			[t1].[Status] as [Status_1],
-			[t1].[CategoryABC_1] as [CategoryABC_2],
-			[t1].[HeightClass],
-			[i1].[CountLocked],
-			(
-				SELECT
-					[b2].[ResourceID]
-				FROM
-					[RefResourceStorageShelfDTO] [b2]
-				WHERE
-					[a2].[Id] = [b2].[StorageShelfID]
-			) as [ResourceID]
-		FROM
-			(
-				SELECT
-					[c_1].[Id],
-					[c_1].[AisleID],
-					[c_1].[MaterialID],
-					[a].[Id] as [Id_1],
-					[a].[AisleNumber],
-					[a].[PlantID],
-					[a].[Name],
-					[m_1].[Id] as [Id_2],
-					[m_1].[MaterialNumber],
-					[m_1].[MaterialDescription_1],
-					[m_1].[MaterialDescription_2],
-					[m_1].[MaterialDescription_3],
-					[m_1].[CategoryABC],
-					[m_1].[CategoryCustoms],
-					[m_1].[CategoryDimensions],
-					[m_1].[CategoryQuality],
-					[m_1].[CategoryTemperature],
-					[a1].[Id] as [Id_3],
-					[a1].[Status],
-					[a1].[CategoryABC] as [CategoryABC_1],
-					[a1].[HeightClass],
-					(
-						SELECT
-							[b1].[ResourceID]
-						FROM
-							[RefResourceStorageShelfDTO] [b1]
-						WHERE
-							[a1].[Id] = [b1].[StorageShelfID]
-					) as [ResourceID]
-				FROM
-					[ChannelDTO] [c_1]
-						INNER JOIN [AisleDTO] [a] ON [c_1].[AisleID] = [a].[Id]
-						LEFT JOIN [MaterialDTO] [m_1] ON [c_1].[MaterialID] = [m_1].[Id]
-						LEFT JOIN [StorageShelfDTO] [a1] ON [c_1].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
-			) [t1]
-				LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [t1].[ResourceID]
-				LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [t1].[ResourceID] AND [i1].[RN] = 1
-				LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
-				LEFT JOIN [StorageShelfDTO] [a2] ON [t1].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
-	) [x]
+	[ChannelDTO] [x]
+		INNER JOIN [AisleDTO] [a] ON [x].[AisleID] = [a].[Id]
+		LEFT JOIN [MaterialDTO] [m_1] ON [x].[MaterialID] = [m_1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a1] ON [x].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [b1].[ResourceID]
+		LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [b1].[ResourceID] AND [i1].[RN] = 1
+		LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
