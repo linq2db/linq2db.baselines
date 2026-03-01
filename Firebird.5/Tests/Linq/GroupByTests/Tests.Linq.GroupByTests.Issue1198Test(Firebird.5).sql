@@ -1,13 +1,18 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	COUNT(CASE
-		WHEN "t"."Status" = 3 THEN 1
-		ELSE NULL
-	END)
+	"t1"."MyGroupedCount"
 FROM
-	"Issue1192Table" "t"
-WHERE
-	"t"."MyOtherId" = 12
+	(
+		SELECT
+			COUNT(CASE
+				WHEN "g_1"."Status" = 3 THEN 1
+				ELSE NULL
+			END) as "MyGroupedCount"
+		FROM
+			"Issue1192Table" "g_1"
+		WHERE
+			"g_1"."MyOtherId" = 12
+	) "t1"
 FETCH NEXT 1 ROWS ONLY
 
