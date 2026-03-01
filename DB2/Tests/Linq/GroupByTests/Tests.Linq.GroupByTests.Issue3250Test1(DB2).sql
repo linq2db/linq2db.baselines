@@ -1,11 +1,17 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	(RTrim(Char(COUNT(*))) || ' items have not been processed, e.g. #' || Coalesce(RTrim(Char(MIN("g_1"."PersonID"))), '')) || '.'
+	(RTrim(Char("g_2"."Message")) || ' items have not been processed, e.g. #' || Coalesce(RTrim(Char("g_2"."Message_1")), '')) || '.'
 FROM
-	"Person" "g_1"
+	(
+		SELECT
+			COUNT(*) as "Message",
+			MIN("g_1"."PersonID") as "Message_1"
+		FROM
+			"Person" "g_1"
+		WHERE
+			"g_1"."LastName" <> 'ERROR'
+	) "g_2"
 WHERE
-	"g_1"."LastName" <> 'ERROR'
-HAVING
-	COUNT(*) > 0
+	"g_2"."Message" > 0
 
