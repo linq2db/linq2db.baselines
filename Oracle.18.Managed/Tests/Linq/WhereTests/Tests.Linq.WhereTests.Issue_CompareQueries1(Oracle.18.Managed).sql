@@ -1,20 +1,30 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	COUNT(p."PersonID") as "c1"
+	t1."c1"
 FROM
-	"Person" p
-WHERE
-	p."PersonID" IN (1, 2)
+	(
+		SELECT
+			COUNT(p."PersonID") as "c1"
+		FROM
+			"Person" p
+		WHERE
+			p."PersonID" IN (1, 2)
+	) t1
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	COUNT(p."PersonID") as "c1"
+	t1."c1"
 FROM
-	"Person" p
-WHERE
-	1 = 0
+	(
+		SELECT
+			COUNT(p."PersonID") as "c1"
+		FROM
+			"Person" p
+		WHERE
+			1 = 0
+	) t1
 FETCH NEXT 2 ROWS ONLY
 
