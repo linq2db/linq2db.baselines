@@ -1,9 +1,14 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	COUNT(t1."ParentID") = COUNT(right_1."ParentID") AND COUNT(t1."ParentID") = COUNT(*)
+	t1.c1
 FROM
-	"Parent" t1
-		FULL JOIN "Parent" right_1 ON right_1."ParentID" = t1."ParentID"
+	(
+		SELECT
+			COUNT(left_1."ParentID") = COUNT(right_1."ParentID") AND COUNT(left_1."ParentID") = COUNT(*) as c1
+		FROM
+			"Parent" left_1
+				FULL JOIN "Parent" right_1 ON right_1."ParentID" = left_1."ParentID"
+	) t1
 LIMIT 2
 
