@@ -1,9 +1,14 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
-	COUNT(IIF([t].[Status] = 3, 1, NULL))
+	[t1].[MyGroupedCount]
 FROM
-	[Issue1192Table] [t]
-WHERE
-	[t].[MyOtherId] = 12
+	(
+		SELECT
+			COUNT(IIF([g_1].[Status] = 3, 1, NULL)) as [MyGroupedCount]
+		FROM
+			[Issue1192Table] [g_1]
+		WHERE
+			[g_1].[MyOtherId] = 12
+	) [t1]
 
