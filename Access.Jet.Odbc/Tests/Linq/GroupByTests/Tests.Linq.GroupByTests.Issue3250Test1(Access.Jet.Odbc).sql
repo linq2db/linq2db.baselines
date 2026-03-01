@@ -11,7 +11,7 @@ FROM
 			[Person] [g_1]
 		WHERE
 			[g_1].[LastName] <> 'ERROR'
-		HAVING
-			COUNT(*) > 0
 	) [g_2]
+WHERE
+	[g_2].[Message] > 0
 
