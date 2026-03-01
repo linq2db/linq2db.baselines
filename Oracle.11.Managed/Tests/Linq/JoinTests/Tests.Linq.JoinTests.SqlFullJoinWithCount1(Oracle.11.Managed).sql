@@ -1,19 +1,19 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	t2."c1"
+	t1."c1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN COUNT(t1."ParentID") = COUNT(right_1."ParentID") AND COUNT(t1."ParentID") = COUNT(*)
+				WHEN COUNT(left_1."ParentID") = COUNT(right_1."ParentID") AND COUNT(left_1."ParentID") = COUNT(*)
 					THEN 1
 				ELSE 0
 			END as "c1"
 		FROM
-			"Parent" t1
-				FULL JOIN "Parent" right_1 ON right_1."ParentID" = t1."ParentID"
-	) t2
+			"Parent" left_1
+				FULL JOIN "Parent" right_1 ON right_1."ParentID" = left_1."ParentID"
+	) t1
 WHERE
 	ROWNUM <= 2
 
