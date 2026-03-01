@@ -3,16 +3,21 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
 SELECT
-	CAST(COUNT("t1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("t1"."ParentID") = COUNT(*) AS smallint)
+	"t1"."c1"
 FROM
 	(
 		SELECT
-			"p"."ParentID"
+			CAST(COUNT("left_1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("left_1"."ParentID") = COUNT(*) AS smallint) as "c1"
 		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" <> @id
+			(
+				SELECT
+					"p"."ParentID"
+				FROM
+					"Parent" "p"
+				WHERE
+					"p"."ParentID" <> @id
+			) "left_1"
+				FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "left_1"."ParentID"
 	) "t1"
-		FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "t1"."ParentID"
 FETCH NEXT 2 ROWS ONLY
 
