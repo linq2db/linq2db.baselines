@@ -6,13 +6,13 @@ FROM
 	(
 		SELECT
 			COUNT(CASE
-				WHEN t."Status" = 3 THEN 1
+				WHEN g_1."Status" = 3 THEN 1
 				ELSE NULL
 			END) as "MyGroupedCount"
 		FROM
-			"Issue1192Table" t
+			"Issue1192Table" g_1
 		WHERE
-			t."MyOtherId" = 12
+			g_1."MyOtherId" = 12
 	) t1
 WHERE
 	ROWNUM <= 1
