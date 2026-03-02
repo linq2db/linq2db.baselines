@@ -2,12 +2,14 @@
 
 SELECT
 	`f`.`Id`,
-	`ft`.`Id`,
-	`ft`.`FactId`,
-	`ft`.`Name`
+	`t1`.`Id`,
+	`t1`.`FactId`,
+	`t1`.`Name`
 FROM
-	`Tag` `ft`
-		RIGHT JOIN `Fact` `f` ON `ft`.`FactId` = `f`.`Id`
+	`Tag` `t1`
+		RIGHT JOIN `Fact` `f` ON `t1`.`FactId` = `f`.`Id`
 WHERE
 	`f`.`Id` > 3
+ORDER BY
+	`f`.`Id`
 
