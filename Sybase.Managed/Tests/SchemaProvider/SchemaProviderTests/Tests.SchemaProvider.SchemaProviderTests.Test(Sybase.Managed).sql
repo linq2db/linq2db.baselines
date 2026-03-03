@@ -17,7 +17,6 @@ select @@ncharsize
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
 
-
 SELECT
 	id                                                 as TableID,
 	@db                                                as CatalogName,
@@ -31,7 +30,6 @@ WHERE
 	type IN ('U','V')
 
 -- Sybase.Managed Sybase
-
 
 SELECT
 	i.id                                                              as TableID,
@@ -50,7 +48,6 @@ WHERE
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
 -- Sybase.Managed Sybase
-
 
 SELECT
 	o.id                                             as TableID,
@@ -77,8 +74,7 @@ WHERE
 
 -- Sybase.Managed Sybase
 
-SELECT * FROM (
-SELECT
+SELECT * FROM (SELECT
 	o.name                           as Name,
 	c.tableid                        as ThisTableID,
 	r.reftabid                       as OtherTableID,
