@@ -1,13 +1,13 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	m_1.Item1,
+	m_1.ParentID,
 	d_1.Key_1,
 	d_1.Children
 FROM
 	(
 		SELECT DISTINCT
-			c_1.ParentID as Item1
+			c_1.ParentID as ParentID
 		FROM
 			Parent c_1
 	) m_1
@@ -19,7 +19,7 @@ FROM
 				Child d
 			GROUP BY
 				d.ParentID
-		) d_1 ON m_1.Item1 = d_1.Key_1
+		) d_1 ON m_1.ParentID = d_1.Key_1
 
 -- ClickHouse.MySql ClickHouse
 

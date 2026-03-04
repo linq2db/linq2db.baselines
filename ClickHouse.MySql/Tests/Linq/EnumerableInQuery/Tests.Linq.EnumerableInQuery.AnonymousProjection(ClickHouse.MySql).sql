@@ -8,12 +8,12 @@ FROM
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	m_1.Item1,
+	m_1.ParentID,
 	d.ParentID
 FROM
 	(
 		SELECT DISTINCT
-			t1.ParentID as Item1
+			t1.ParentID as ParentID
 		FROM
 			Parent t1
 	) m_1
@@ -30,7 +30,7 @@ FROM
 			UNION ALL
 			SELECT 6
 			UNION ALL
-			SELECT 7) d ON d.ParentID = m_1.Item1
+			SELECT 7) d ON d.ParentID = m_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
 
