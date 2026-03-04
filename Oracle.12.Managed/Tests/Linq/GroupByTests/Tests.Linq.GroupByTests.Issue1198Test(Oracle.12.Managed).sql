@@ -1,18 +1,13 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."MyGroupedCount"
+	COUNT(CASE
+		WHEN t."Status" = 3 THEN 1
+		ELSE NULL
+	END) as "MyGroupedCount"
 FROM
-	(
-		SELECT
-			COUNT(CASE
-				WHEN g_1."Status" = 3 THEN 1
-				ELSE NULL
-			END) as "MyGroupedCount"
-		FROM
-			"Issue1192Table" g_1
-		WHERE
-			g_1."MyOtherId" = 12
-	) t1
+	"Issue1192Table" t
+WHERE
+	t."MyOtherId" = 12
 FETCH NEXT 1 ROWS ONLY
 
