@@ -1,14 +1,9 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."c1"
+	CAST(COUNT("t1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("t1"."ParentID") = COUNT(*) AS smallint)
 FROM
-	(
-		SELECT
-			CAST(COUNT("left_1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("left_1"."ParentID") = COUNT(*) AS smallint) as "c1"
-		FROM
-			"Parent" "left_1"
-				FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "left_1"."ParentID"
-	) "t1"
+	"Parent" "t1"
+		FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "t1"."ParentID"
 FETCH NEXT 2 ROWS ONLY
 
