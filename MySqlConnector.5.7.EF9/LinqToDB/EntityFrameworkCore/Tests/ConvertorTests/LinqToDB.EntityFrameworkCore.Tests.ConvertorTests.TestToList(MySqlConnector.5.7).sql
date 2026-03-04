@@ -115,6 +115,8 @@ WHERE CAST(`s`.`Id` AS signed) = 1
 
 
 -- MySql.5.7.MySqlConnector MySql57
+DECLARE @Id Int64
+SET     @Id = 1
 
 SELECT
 	`s`.`Id`,
@@ -125,7 +127,7 @@ SELECT
 FROM
 	`Subdivisions` `s`
 WHERE
-	CAST(`s`.`Id` AS SIGNED) = 1
+	CAST(`s`.`Id` AS SIGNED) = @Id
 
 
 

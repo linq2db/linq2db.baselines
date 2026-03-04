@@ -10,7 +10,7 @@ WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
 
 
 -- SqlServer.2019
-DECLARE @field64 Decimal
+DECLARE @field64 Decimal(1, 0)
 SET     @field64 = 5
 
 SELECT TOP (1)

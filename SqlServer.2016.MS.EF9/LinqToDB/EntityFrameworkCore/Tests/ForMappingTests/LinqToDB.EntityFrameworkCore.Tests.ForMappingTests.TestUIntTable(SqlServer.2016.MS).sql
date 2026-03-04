@@ -9,7 +9,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
 
 
 -- SqlServer.2016
-DECLARE @field64 Decimal
+DECLARE @field64 Decimal(1, 0)
 SET     @field64 = 5
 
 SELECT TOP (1)

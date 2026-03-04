@@ -103,6 +103,8 @@ WHERE CAST([s].[Id] AS bigint) = CAST(1 AS bigint)
 
 
 -- SqlServer.2016
+DECLARE @Id BigInt -- Int64
+SET     @Id = 1
 
 SELECT
 	[s].[Id],
@@ -113,7 +115,7 @@ SELECT
 FROM
 	[Subdivisions] [s]
 WHERE
-	CAST([s].[Id] AS BigInt) = 1
+	CAST([s].[Id] AS BigInt) = @Id
 
 
 
