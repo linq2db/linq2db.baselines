@@ -1,14 +1,9 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 1
-	[t1].[MyGroupedCount]
+	COUNT(IIF([t].[Status] = 3, 1, NULL))
 FROM
-	(
-		SELECT
-			COUNT(IIF([g_1].[Status] = 3, 1, NULL)) as [MyGroupedCount]
-		FROM
-			[Issue1192Table] [g_1]
-		WHERE
-			[g_1].[MyOtherId] = 12
-	) [t1]
+	[Issue1192Table] [t]
+WHERE
+	[t].[MyOtherId] = 12
 
