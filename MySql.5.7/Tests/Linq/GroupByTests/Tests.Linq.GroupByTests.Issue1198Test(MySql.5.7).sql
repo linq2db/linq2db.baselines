@@ -1,18 +1,13 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	`t1`.`MyGroupedCount`
+	COUNT(CASE
+		WHEN `t`.`Status` = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	(
-		SELECT
-			COUNT(CASE
-				WHEN `g_1`.`Status` = 3 THEN 1
-				ELSE NULL
-			END) as `MyGroupedCount`
-		FROM
-			`Issue1192Table` `g_1`
-		WHERE
-			`g_1`.`MyOtherId` = 12
-	) `t1`
+	`Issue1192Table` `t`
+WHERE
+	`t`.`MyOtherId` = 12
 LIMIT 1
 
