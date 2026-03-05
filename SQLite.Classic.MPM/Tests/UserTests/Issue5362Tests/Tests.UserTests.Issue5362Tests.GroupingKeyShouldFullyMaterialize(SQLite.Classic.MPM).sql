@@ -24,15 +24,15 @@ SELECT
 FROM
 	(
 		SELECT
-			MAX([ss].[DepthCoordinate]) as [Max_1],
 			[g_1].[Id],
+			[rp].[Id] as [Id_1],
+			MAX([ss].[DepthCoordinate]) as [Max_1],
 			[g_1].[Status],
 			[g_1].[GroupStatus],
 			[g_1].[OptimizationMaxLevel],
 			[g_1].[AdditionalField1],
 			[g_1].[AdditionalField2],
 			[g_1].[AdditionalField3],
-			[rp].[Id] as [Id_1],
 			[rp].[Nr],
 			[rp].[IsSrm],
 			[rp].[OutOfOrder]
