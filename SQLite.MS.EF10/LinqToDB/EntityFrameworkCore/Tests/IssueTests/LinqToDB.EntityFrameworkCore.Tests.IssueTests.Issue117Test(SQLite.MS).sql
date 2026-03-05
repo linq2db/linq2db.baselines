@@ -1,7 +1,7 @@
 ﻿Parameters:
-@userId0='?' (DbType = Int32), @userId='?' (DbType = Int32)
+@userId1='?' (DbType = Int32), @userId='?' (DbType = Int32)
 
-SELECT "p"."Id" AS "PatentId", @userId0 AS "UserId"
+SELECT "p"."Id" AS "PatentId", @userId1 AS "UserId"
 FROM "Patents" AS "p"
 LEFT JOIN "PatentAssessment" AS "p0" ON "p"."Id" = "p0"."PatentId"
 WHERE "p0"."PatentId" IS NULL OR "p0"."TechnicalReviewerId" <> @userId OR "p0"."TechnicalReviewerId" IS NULL
