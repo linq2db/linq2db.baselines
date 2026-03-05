@@ -175,11 +175,12 @@ SET     @take = 5
 UPDATE
 	[u]
 SET
-	[u].[Value1] = 1
+	[u].[Value1] = [t1].[c1]
 FROM
 	[Parent] [u],
 	(
 		SELECT TOP (@take)
+			1 as [c1],
 			[x].[ParentID],
 			[x].[Value1]
 		FROM
