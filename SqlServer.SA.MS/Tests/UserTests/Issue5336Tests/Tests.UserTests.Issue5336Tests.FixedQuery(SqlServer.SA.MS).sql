@@ -1,6 +1,6 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = 'f2e926ae-4ce1-4acb-9fd2-1b04b8ff7b75'
+SET     @Id = '6358107d-531b-4a60-be3c-378860be876a'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -21,7 +21,7 @@ VALUES
 
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @id UniqueIdentifier -- Guid
-SET     @id = 'f2e926ae-4ce1-4acb-9fd2-1b04b8ff7b75'
+SET     @id = '6358107d-531b-4a60-be3c-378860be876a'
 DECLARE @nr Int -- Int32
 SET     @nr = 5
 
