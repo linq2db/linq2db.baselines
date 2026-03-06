@@ -86,11 +86,11 @@ FROM
 
 
 Parameters:
-@ef_filter__p0='?' (DbType = Boolean)
+@ef_filter__p1='?' (DbType = Boolean)
 
 SELECT COUNT(*)
 FROM [Employees] AS [e]
-WHERE @ef_filter__p0 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)
+WHERE @ef_filter__p1 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)
 
 
 -- SqlServer.2017
