@@ -1,9 +1,9 @@
 ﻿Parameters:
-@ef_filter__p0='?' (DbType = Boolean)
+@ef_filter__p1='?' (DbType = Boolean)
 
 SELECT "c"."CustomerID", "c"."Address", "c"."City", "c"."CompanyName", "c"."ContactName", "c"."ContactTitle", "c"."Country", "c"."Fax", "c"."IsDeleted", "c"."Phone", "c"."PostalCode", "c"."Region"
 FROM "Customers" AS "c"
-WHERE @ef_filter__p0 OR NOT ("c"."IsDeleted") OR NOT ("c"."IsDeleted")
+WHERE @ef_filter__p1 OR NOT ("c"."IsDeleted") OR NOT ("c"."IsDeleted")
 LIMIT 1
 
 
