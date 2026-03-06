@@ -4,7 +4,7 @@
 
 SELECT
 	m_1."Id",
-	m_1."Item1",
+	m_1."Id_1",
 	d_1.id,
 	d_1.master_id,
 	d_1.name
@@ -12,7 +12,7 @@ FROM
 	(
 		SELECT DISTINCT
 			d.id as "Id",
-			e.id as "Item1"
+			e.id as "Id_1"
 		FROM
 			entities e
 				INNER JOIN details d ON e.id = d.master_id
