@@ -1,26 +1,61 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
-select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
+SELECT
+	r.name,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.engine
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.MySql ClickHouse
-
-select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
-
--- ClickHouse.MySql ClickHouse
-
 
 SELECT
-	table,
-	name,
-	type,
-	position,
-	comment,
-	multiIf(type LIKE '%FixedString%', character_octet_length, NULL),
-	multiIf(type LIKE '%DateTime64%', datetime_precision, numeric_precision_radix = 10, numeric_precision, NULL),
-	multiIf(numeric_precision_radix = 10, numeric_scale, NULL),
-	is_in_primary_key
-FROM system.columns
-WHERE database = database() and default_kind <> 'ALIAS'
+	r.name,
+	r.primary_key
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database() AND
+	r.primary_key <> ''
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.table,
+	r.name,
+	r.type,
+	r.position,
+	CASE
+		WHEN position(r.type, 'FixedString') > 0 THEN toInt32(r.character_octet_length)
+		ELSE NULL
+	END,
+	CASE
+		WHEN position(r.type, 'DateTime64') > 0 THEN toInt32(r.datetime_precision)
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_precision)
+		ELSE NULL
+	END,
+	CASE
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_scale)
+		ELSE NULL
+	END,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.is_in_primary_key
+FROM
+	system.columns r
+WHERE
+	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
 
@@ -32,27 +67,66 @@ select database()
 
 -- ClickHouse.MySql ClickHouse
 
-select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
+SELECT version()
 
 -- ClickHouse.MySql ClickHouse
-
-select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
-
--- ClickHouse.MySql ClickHouse
-
 
 SELECT
-	table,
-	name,
-	type,
-	position,
-	comment,
-	multiIf(type LIKE '%FixedString%', character_octet_length, NULL),
-	multiIf(type LIKE '%DateTime64%', datetime_precision, numeric_precision_radix = 10, numeric_precision, NULL),
-	multiIf(numeric_precision_radix = 10, numeric_scale, NULL),
-	is_in_primary_key
-FROM system.columns
-WHERE database = database() and default_kind <> 'ALIAS'
+	r.name,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.engine
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database()
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.name,
+	r.primary_key
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database() AND
+	r.primary_key <> ''
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.table,
+	r.name,
+	r.type,
+	r.position,
+	CASE
+		WHEN position(r.type, 'FixedString') > 0 THEN toInt32(r.character_octet_length)
+		ELSE NULL
+	END,
+	CASE
+		WHEN position(r.type, 'DateTime64') > 0 THEN toInt32(r.datetime_precision)
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_precision)
+		ELSE NULL
+	END,
+	CASE
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_scale)
+		ELSE NULL
+	END,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.is_in_primary_key
+FROM
+	system.columns r
+WHERE
+	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
 
@@ -64,27 +138,66 @@ select database()
 
 -- ClickHouse.MySql ClickHouse
 
-select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
+SELECT version()
 
 -- ClickHouse.MySql ClickHouse
-
-select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
-
--- ClickHouse.MySql ClickHouse
-
 
 SELECT
-	table,
-	name,
-	type,
-	position,
-	comment,
-	multiIf(type LIKE '%FixedString%', character_octet_length, NULL),
-	multiIf(type LIKE '%DateTime64%', datetime_precision, numeric_precision_radix = 10, numeric_precision, NULL),
-	multiIf(numeric_precision_radix = 10, numeric_scale, NULL),
-	is_in_primary_key
-FROM system.columns
-WHERE database = database() and default_kind <> 'ALIAS'
+	r.name,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.engine
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database()
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.name,
+	r.primary_key
+FROM
+	system.tables r
+WHERE
+	NOT r.is_temporary AND r.database = database() AND
+	r.primary_key <> ''
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	r.table,
+	r.name,
+	r.type,
+	r.position,
+	CASE
+		WHEN position(r.type, 'FixedString') > 0 THEN toInt32(r.character_octet_length)
+		ELSE NULL
+	END,
+	CASE
+		WHEN position(r.type, 'DateTime64') > 0 THEN toInt32(r.datetime_precision)
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_precision)
+		ELSE NULL
+	END,
+	CASE
+		WHEN r.numeric_precision_radix = toUInt64(10) THEN toInt32(r.numeric_scale)
+		ELSE NULL
+	END,
+	CASE
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
+			THEN NULL
+		ELSE r.comment
+	END,
+	r.is_in_primary_key
+FROM
+	system.columns r
+WHERE
+	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
 
@@ -93,4 +206,8 @@ select hostName()
 -- ClickHouse.MySql ClickHouse
 
 select database()
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT version()
 
