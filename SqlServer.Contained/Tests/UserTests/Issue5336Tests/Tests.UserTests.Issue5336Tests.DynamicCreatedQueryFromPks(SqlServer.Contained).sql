@@ -1,6 +1,6 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '421c7962-67ee-4041-9c46-4e4aaa6f2d76'
+SET     @Id = '01c791d5-cf82-4b36-8909-4ad42af39bb6'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -28,6 +28,6 @@ SELECT TOP (1)
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = '421c7962-67ee-4041-9c46-4e4aaa6f2d76' AND
+	[t1].[Id] = '01c791d5-cf82-4b36-8909-4ad42af39bb6' AND
 	[t1].[Number] = 5
 
