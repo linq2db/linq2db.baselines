@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2014
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '94f08651-fb3b-4fdd-8373-8f3cece0a502'
+SET     @Id = '1bb999f5-3fbb-42bc-b3c2-bdcedfd99e67'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -21,7 +21,7 @@ VALUES
 
 -- SqlServer.2014
 DECLARE @id UniqueIdentifier -- Guid
-SET     @id = '94f08651-fb3b-4fdd-8373-8f3cece0a502'
+SET     @id = '1bb999f5-3fbb-42bc-b3c2-bdcedfd99e67'
 DECLARE @nr Int -- Int32
 SET     @nr = 5
 
