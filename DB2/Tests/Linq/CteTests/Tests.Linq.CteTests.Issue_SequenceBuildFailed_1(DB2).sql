@@ -18,7 +18,7 @@ AS
 		"t1"."Id" = "p"."PersonID" + 1
 )
 SELECT
-	"m_1"."Item1",
+	"m_1"."Id",
 	"d"."FirstName",
 	"d"."PersonID",
 	"d"."LastName",
@@ -27,12 +27,12 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t2"."Id" as "Item1"
+			"t2"."Id"
 		FROM
 			"cte" "t2"
 				INNER JOIN "Patient" "p_1" ON "t2"."Id" = "p_1"."PersonID"
 	) "m_1"
-		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."Item1"
+		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
 
