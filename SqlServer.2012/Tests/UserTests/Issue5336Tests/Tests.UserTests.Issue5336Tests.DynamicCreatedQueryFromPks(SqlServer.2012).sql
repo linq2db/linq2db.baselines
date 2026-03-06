@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2012
 DECLARE @Id UniqueIdentifier -- Guid
-SET     @Id = '770504fb-8e5d-450d-85ed-446c79928db9'
+SET     @Id = 'b39c133e-8abb-43ba-8c16-d148a84d0fc4'
 DECLARE @Number Int -- Int32
 SET     @Number = 5
 DECLARE @Test NVarChar(4000) -- String
@@ -28,6 +28,6 @@ SELECT TOP (1)
 FROM
 	[TestDtoWithPks] [t1]
 WHERE
-	[t1].[Id] = '770504fb-8e5d-450d-85ed-446c79928db9' AND
+	[t1].[Id] = 'b39c133e-8abb-43ba-8c16-d148a84d0fc4' AND
 	[t1].[Number] = 5
 
