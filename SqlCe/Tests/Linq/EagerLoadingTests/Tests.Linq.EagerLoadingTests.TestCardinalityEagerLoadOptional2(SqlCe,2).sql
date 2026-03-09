@@ -1,11 +1,11 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[Id] as [Item1],
-	[d].[Id],
+	[m_1].[Id],
+	[d].[Id] as [Id_1],
 	[d].[FK],
 	[d].[FKD],
-	[a_ObjectD].[Id] as [Id_1],
+	[a_ObjectD].[Id] as [Id_2],
 	[a_ObjectD].[FK] as [FK_1]
 FROM
 	[EntityMA] [m_1]

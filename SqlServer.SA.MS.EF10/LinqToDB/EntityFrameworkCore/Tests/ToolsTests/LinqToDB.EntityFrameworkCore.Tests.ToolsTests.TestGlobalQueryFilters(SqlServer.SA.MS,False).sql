@@ -30,16 +30,16 @@ FROM
 
 
 Parameters:
-@ef_filter__p2='?' (DbType = Boolean), @ef_filter__p0='?' (DbType = Boolean)
+@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT [p].[ProductID], [p].[CategoryID], [p].[Discontinued], [p].[IsDeleted], [p].[PeriodEnd], [p].[PeriodStart], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierID], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder], [o0].[OrderID], [o0].[ProductID], [o0].[Discount], [o0].[IsDeleted], [o0].[Quantity], [o0].[UnitPrice]
 FROM [Products] AS [p]
 INNER JOIN (
     SELECT [o].[OrderID], [o].[ProductID], [o].[Discount], [o].[IsDeleted], [o].[Quantity], [o].[UnitPrice]
     FROM [Order Details] AS [o]
-    WHERE @ef_filter__p2 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit)
+    WHERE @ef_filter__p3 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit)
 ) AS [o0] ON [p].[ProductID] = [o0].[ProductID]
-WHERE @ef_filter__p0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
+WHERE @ef_filter__p1 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
 
 
 -- SqlServer.2019

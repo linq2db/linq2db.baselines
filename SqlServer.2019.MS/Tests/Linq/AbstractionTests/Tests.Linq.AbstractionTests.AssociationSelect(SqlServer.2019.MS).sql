@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d_1].[Id_1],
 	[d_1].[ParentId],
 	[d_1].[SubId],
@@ -10,7 +10,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id] as [Item1]
+			[t1].[Id]
 		FROM
 			[SampleClass1] [t1]
 	) [m_1]
@@ -25,7 +25,7 @@ FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[m_1].[Item1] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -41,7 +41,7 @@ FROM
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[m_1].[Item1],
+	[m_1].[Id],
 	[d_1].[Id_1],
 	[d_1].[ParentId],
 	[d_1].[SubId],
@@ -50,7 +50,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id] as [Item1]
+			[t1].[Id]
 		FROM
 			[SampleClass2] [t1]
 	) [m_1]
@@ -65,7 +65,7 @@ FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
-				[m_1].[Item1] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
 			ORDER BY
 				[d].[Id]
 		) [d_1]

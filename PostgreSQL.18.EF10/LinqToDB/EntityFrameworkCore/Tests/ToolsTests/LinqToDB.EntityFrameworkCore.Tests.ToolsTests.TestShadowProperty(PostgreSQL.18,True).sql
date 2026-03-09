@@ -1,9 +1,9 @@
 ﻿Parameters:
-@ef_filter__p0='?' (DbType = Boolean)
+@ef_filter__p1='?' (DbType = Boolean)
 
 SELECT p."QuantityPerUnit" AS "Quantity"
 FROM "Products" AS p
-WHERE @ef_filter__p0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
+WHERE @ef_filter__p1 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
 
 
 -- PostgreSQL.18 PostgreSQL
