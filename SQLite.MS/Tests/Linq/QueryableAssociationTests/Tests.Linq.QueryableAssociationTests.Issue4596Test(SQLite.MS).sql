@@ -18,7 +18,7 @@ FROM
 			[Issue4596Form] [t1]
 		LIMIT 1
 	) [m_1]
-		INNER JOIN [Issue4596Item] [d] ON [d].[FormId] = [m_1].[Id]
+		CROSS JOIN [Issue4596Item] [d]
 ORDER BY
 	CASE
 		WHEN [m_1].[C1] = 'T' THEN [d].[OrderIndex]

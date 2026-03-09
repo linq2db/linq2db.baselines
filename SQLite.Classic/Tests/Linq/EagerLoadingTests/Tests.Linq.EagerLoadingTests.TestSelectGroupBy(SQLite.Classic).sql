@@ -39,7 +39,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [mm].[Id1] ORDER BY [mm].[Id1]) as [rn]
 			FROM
 				[MasterClass] [mm]
-		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Id1] = [t3].[Id1] AND [t3].[rn] = 1
+		) [t3] ON [d].[Id1] = [t3].[Id1] AND [t3].[rn] = 1
 
 -- SQLite.Classic SQLite
 DECLARE @take  -- Int32

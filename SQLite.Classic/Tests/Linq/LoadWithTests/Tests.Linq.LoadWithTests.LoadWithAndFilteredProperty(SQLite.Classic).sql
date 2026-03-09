@@ -45,9 +45,9 @@ ORDER BY
 
 SELECT
 	[m_2].[Id],
-	[d_1].[Id],
-	[d_1].[Value_1],
-	[d_1].[ParentId]
+	[d].[Id],
+	[d].[Value_1],
+	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -59,18 +59,21 @@ FROM
 	) [m_2]
 		INNER JOIN (
 			SELECT
-				[d].[Id],
-				[d].[Value] as [Value_1],
-				[d].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem1] [d]
+				[SubItem1] [i]
 			WHERE
-				[d].[ParentId] % 2 = 0
-		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+				[i].[ParentId] % 2 = 0
+			ORDER BY
+				[i].[Id]
+			LIMIT 2
+		) [d] ON [m_2].[Id] = [d].[ParentId]
+WHERE
+	[d].[Value_1] LIKE 'Sub1~_%' ESCAPE '~'
 ORDER BY
-	[m_2].[Id],
-	[d_1].[Id]
+	[m_2].[Id]
 
 -- SQLite.Classic SQLite
 
@@ -89,9 +92,9 @@ ORDER BY
 SELECT
 	[m_2].[Id],
 	[m_2].[Id_1],
-	[d_2].[Id],
-	[d_2].[Value_1],
-	[d_2].[ParentId]
+	[d_1].[Id],
+	[d_1].[Value_1],
+	[d_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -111,18 +114,21 @@ FROM
 	) [m_2]
 		INNER JOIN (
 			SELECT
-				[d_1].[Id],
-				[d_1].[Value] as [Value_1],
-				[d_1].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem2] [d_1]
+				[SubItem2] [i]
 			WHERE
-				[d_1].[ParentId] % 2 = 0
-		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
+				[i].[ParentId] % 2 = 0
+			ORDER BY
+				[i].[Id]
+			LIMIT 2
+		) [d_1] ON [m_2].[Id] = [d_1].[ParentId]
+WHERE
+	[d_1].[Value_1] LIKE 'Sub2~_%' ESCAPE '~'
 ORDER BY
-	[m_2].[Id_1],
-	[d_2].[Id]
+	[m_2].[Id_1]
 
 -- SQLite.Classic SQLite
 
@@ -164,9 +170,9 @@ ORDER BY
 SELECT
 	[m_2].[Id],
 	[m_2].[Id_1],
-	[d_2].[Id],
-	[d_2].[Value_1],
-	[d_2].[ParentId]
+	[d_1].[Id],
+	[d_1].[Value_1],
+	[d_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -186,18 +192,21 @@ FROM
 	) [m_2]
 		INNER JOIN (
 			SELECT
-				[d_1].[Id],
-				[d_1].[Value] as [Value_1],
-				[d_1].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem2] [d_1]
+				[SubItem2] [i]
 			WHERE
-				[d_1].[ParentId] % 2 = 0
-		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
+				[i].[ParentId] % 2 = 0
+			ORDER BY
+				[i].[Id]
+			LIMIT 2
+		) [d_1] ON [m_2].[Id] = [d_1].[ParentId]
+WHERE
+	[d_1].[Value_1] LIKE 'Sub2~_%' ESCAPE '~'
 ORDER BY
-	[m_2].[Id_1],
-	[d_2].[Id]
+	[m_2].[Id_1]
 
 -- SQLite.Classic SQLite
 

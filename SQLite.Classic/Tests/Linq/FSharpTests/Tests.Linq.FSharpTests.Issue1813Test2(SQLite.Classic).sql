@@ -57,7 +57,7 @@ SELECT
 	[d].[Text]
 FROM
 	[Names] [m_1]
-		INNER JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
+		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]
 
