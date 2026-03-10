@@ -15,7 +15,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			[ct].[ParentID]
+			1
 		FROM
 			[CteChild] [c_2]
 				INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]

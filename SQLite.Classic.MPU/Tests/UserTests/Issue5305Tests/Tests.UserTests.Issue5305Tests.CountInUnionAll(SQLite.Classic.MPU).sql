@@ -13,12 +13,12 @@ SELECT
 		FROM
 			(
 				SELECT
-					CAST([o].[Id] AS NVarChar(11)) as [Order_1]
+					CAST(1 AS INTEGER) as [c1]
 				FROM
 					[Lines] [o]
 				UNION ALL
 				SELECT
-					[x_3].[Order] as [Order_1]
+					CAST(1 AS INTEGER) as [c1]
 				FROM
 					[InvoiceLines] [x_3]
 			) [t1]
