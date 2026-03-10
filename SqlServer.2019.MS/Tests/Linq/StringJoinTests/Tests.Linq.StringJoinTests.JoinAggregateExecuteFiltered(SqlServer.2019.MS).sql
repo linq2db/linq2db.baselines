@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Coalesce(STRING_AGG(Coalesce([x].[NullableValue], N''), N', '), N'')
+	STRING_AGG(Coalesce([x].[NullableValue], N''), N', ')
 FROM
 	[SampleClass] [x]
 WHERE
