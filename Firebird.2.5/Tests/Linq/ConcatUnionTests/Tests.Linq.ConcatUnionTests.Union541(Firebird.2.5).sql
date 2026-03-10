@@ -11,16 +11,16 @@ FROM
 	"Parent" "p"
 UNION
 SELECT
+	Coalesce("t1"."Value1", 0),
+	NULL,
+	NULL,
 	"t1"."ParentID",
-	NULL,
-	NULL,
-	"t1"."ParentID_1",
-	"t1"."ParentID_1",
+	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
 	(
 		SELECT
-			Coalesce("p2"."Value1", 0) as "ParentID",
+			"p2"."Value1",
 			(
 				SELECT FIRST 1
 					"a_Children"."ParentID"
@@ -30,7 +30,7 @@ FROM
 					"p2"."ParentID" = "a_Children"."ParentID"
 				ORDER BY
 					"a_Children"."ChildID" DESC
-			) as "ParentID_1",
+			) as "ParentID",
 			(
 				SELECT FIRST 1
 					"a_Children_1"."ChildID"
