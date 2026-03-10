@@ -2,42 +2,17 @@
 
 SELECT
 	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID_1]),
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Child] [c_3]
-		WHERE
-			[c_3].[ParentID] = [t1].[ParentID_2] AND [c_3].[ChildID] > -100
-	),
+	[t1].[Any_1],
 	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [c_4]
-		WHERE
-			[c_4].[ParentID] = [t1].[ParentID_2] AND [c_4].[ChildID] > -100
-	),
-	(
-		SELECT TOP 1
-			[c_5].[ParentID]
-		FROM
-			[Child] [c_5]
-		WHERE
-			[c_5].[ParentID] = [t1].[ParentID_2] AND [c_5].[ChildID] > -100
-		ORDER BY
-			[c_5].[ChildID]
-	),
-	(
-		SELECT TOP 1
-			[c_6].[ChildID]
-		FROM
 			[Child] [c_6]
 		WHERE
-			[c_6].[ParentID] = [t1].[ParentID_2] AND [c_6].[ChildID] > -100
-		ORDER BY
-			[c_6].[ChildID]
-	)
+			[c_6].[ParentID] = [t1].[ParentID_3] AND [c_6].[ChildID] > -100
+	),
+	[t1].[ParentID_2],
+	[t1].[ChildID]
 FROM
 	(
 		SELECT
@@ -63,7 +38,35 @@ FROM
 				ORDER BY
 					[c_2].[ChildID]
 			) as [ParentID_1],
-			[p].[ParentID] as [ParentID_2]
+			(
+				SELECT TOP 1
+					[c_3].[ParentID]
+				FROM
+					[Child] [c_3]
+				WHERE
+					[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
+				ORDER BY
+					[c_3].[ChildID]
+			) as [ParentID_2],
+			(
+				SELECT TOP 1
+					[c_4].[ChildID]
+				FROM
+					[Child] [c_4]
+				WHERE
+					[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
+				ORDER BY
+					[c_4].[ChildID]
+			) as [ChildID],
+			EXISTS(
+				SELECT
+					*
+				FROM
+					[Child] [c_5]
+				WHERE
+					[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
+			) as [Any_1],
+			[p].[ParentID] as [ParentID_3]
 		FROM
 			[Parent] [p]
 	) [t1]
