@@ -6,9 +6,9 @@ SELECT
 	t1."NullableDistinctNotNullDistinct",
 	t1."NullableDistinctNotNullDistinctOrdered",
 	t1."NotNullableDistinct",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(t2."NotNullableDistinctOrdered", ', ' ORDER BY t2."NotNullableDistinctOrdered" DESC NULLS FIRST), '')
+			STRING_AGG(t2."NotNullableDistinctOrdered", ', ' ORDER BY t2."NotNullableDistinctOrdered" DESC NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -18,7 +18,7 @@ SELECT
 				WHERE
 					t1."Key_1" = t."Id"
 			) t2
-	)
+	), '')
 FROM
 	(
 		SELECT
