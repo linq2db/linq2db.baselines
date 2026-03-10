@@ -61,33 +61,28 @@ FROM
 -- MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`m_1`.`OrderId`,
+	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
 	`d`.`OrderID`,
 	`d`.`ProductID`,
 	`d`.`UnitPrice`,
 	`d`.`Quantity`,
 	`d`.`Discount`,
-	`e_1`.`IsDeleted`,
-	`e_1`.`ProductID`,
-	`e_1`.`ProductName`,
-	`e_1`.`SupplierID`,
-	`e_1`.`CategoryID`,
-	`e_1`.`QuantityPerUnit`,
-	`e_1`.`UnitPrice`,
-	`e_1`.`UnitsInStock`,
-	`e_1`.`UnitsOnOrder`,
-	`e_1`.`ReorderLevel`,
-	`e_1`.`Discontinued`
+	`e`.`IsDeleted`,
+	`e`.`ProductID`,
+	`e`.`ProductName`,
+	`e`.`SupplierID`,
+	`e`.`CategoryID`,
+	`e`.`QuantityPerUnit`,
+	`e`.`UnitPrice`,
+	`e`.`UnitsInStock`,
+	`e`.`UnitsOnOrder`,
+	`e`.`ReorderLevel`,
+	`e`.`Discontinued`
 FROM
-	(
-		SELECT DISTINCT
-			`e`.`OrderID` as `OrderId`
-		FROM
-			`Orders` `e`
-	) `m_1`
-		INNER JOIN `Order Details` `d` ON `m_1`.`OrderId` = `d`.`OrderID`
-		INNER JOIN `Products` `e_1` ON `d`.`ProductID` = `e_1`.`ProductID`
+	`Orders` `m_1`
+		INNER JOIN `Order Details` `d` ON `m_1`.`OrderID` = `d`.`OrderID`
+		INNER JOIN `Products` `e` ON `d`.`ProductID` = `e`.`ProductID`
 
 
 

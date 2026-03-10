@@ -5,10 +5,10 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			`g_1`.`ParentID`
+			`g_1`.`ParentID` as `Key_1`
 		FROM
 			`Child` `g_1`
-		WHERE
-			`g_1`.`ParentID` > 2
 	) `t1`
+WHERE
+	`t1`.`Key_1` > 2
 

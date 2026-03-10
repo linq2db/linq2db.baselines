@@ -6,10 +6,10 @@ FROM
 	`Child` `pmp1`
 		CROSS JOIN (
 			SELECT DISTINCT
-				`pmp`.`ParentID`
+				`g_1`.`ParentID`
 			FROM
-				`Child` `pmp`
-		) `pmp_1`
+				`Child` `g_1`
+		) `pmp`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 

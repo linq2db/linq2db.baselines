@@ -22,16 +22,21 @@ SELECT
 			COUNT(*)
 		FROM
 			(
-				SELECT DISTINCT
-					`a_Details_1`.`DetailValue` as `Count_1`
+				SELECT
+					1 as `c1`
 				FROM
-					`DetailClass` `a_Details_1`
-				WHERE
-					`m_1`.`Id1` = `a_Details_1`.`MasterId`
+					(
+						SELECT DISTINCT
+							`a_Details_1`.`DetailValue` as `Count_1`
+						FROM
+							`DetailClass` `a_Details_1`
+						WHERE
+							`m_1`.`Id1` = `a_Details_1`.`MasterId`
+					) `t2`
 				ORDER BY
-					`a_Details_1`.`DetailValue`
+					`t2`.`Count_1`
 				LIMIT 1, 2
-			) `t2`
+			) `t3`
 	)
 FROM
 	`MasterClass` `m_1`

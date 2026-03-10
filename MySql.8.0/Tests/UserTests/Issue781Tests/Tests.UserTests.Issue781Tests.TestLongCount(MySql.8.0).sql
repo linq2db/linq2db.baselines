@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			Concat('test', `a_Patient`.`Diagnosis`) as `Key_1`
+			Concat('test', `a_Patient`.`Diagnosis`) as `c1`
 		FROM
 			`Person` `t1`
 				LEFT JOIN `Patient` `a_Patient` ON `t1`.`PersonID` = `a_Patient`.`PersonID`
