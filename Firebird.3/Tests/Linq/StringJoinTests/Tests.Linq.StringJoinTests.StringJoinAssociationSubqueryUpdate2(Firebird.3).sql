@@ -3,20 +3,20 @@
 UPDATE
 	"SampleClass" "t"
 SET
-	"VarcharValue" = (
+	"VarcharValue" = Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("a_Children"."VarcharValue", ''), ', '), '')
+			LIST(Coalesce("a_Children"."VarcharValue", ''), ', ')
 		FROM
 			"SampleClass" "a_Children"
 		WHERE
 			"t"."Id" = "a_Children"."Id"
-	),
-	"NVarcharValue" = (
+	), ''),
+	"NVarcharValue" = Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("a_Children"."VarcharValue", ''), ', '), '')
+			LIST(Coalesce("a_Children"."VarcharValue", ''), ', ')
 		FROM
 			"SampleClass" "a_Children"
 		WHERE
 			"t"."Id" = "a_Children"."Id"
-	)
+	), '')
 
