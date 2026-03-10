@@ -1,7 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	Coalesce(LISTAGG(Coalesce(t1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY t1."NullableValue"), '')
+	LISTAGG(Coalesce(t1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY t1."NullableValue")
 FROM
 	(
 		SELECT

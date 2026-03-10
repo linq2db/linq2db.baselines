@@ -80,8 +80,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			a_GrandChildren."ParentID",
-			a_GrandChildren."ChildID"
+			1
 		FROM
 			"Parent" gc
 				INNER JOIN "Child" a_Children ON gc."ParentID" = a_Children."ParentID"

@@ -1,50 +1,19 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	m_1."Id",
-	d."ItemId",
-	d."UserId",
-	d."Score"
+	item_1."Id",
+	stock_1."TotalAvailable"
 FROM
-	"Issue4458Item" m_1
-		INNER JOIN "Review" d ON d."ItemId" = m_1."Id"
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Review" r
-		WHERE
-			r."ItemId" = m_1."Id" AND r."Score" > 95
-	)
-ORDER BY
-	d."ItemId",
-	d."UserId"
-
--- Oracle.11.Managed Oracle11
-
-SELECT
-	i."Id",
-	(
-		SELECT
-			SUM(s."QuantityAvailable")
-		FROM
-			"WarehouseStock" s
-		WHERE
-			s."ItemId" = i."Id" AND stock."ItemId" = s."ItemId"
-	)
-FROM
-	"Issue4458Item" i
-		LEFT JOIN "WarehouseStock" stock ON stock."ItemId" = i."Id"
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Review" r
-		WHERE
-			r."ItemId" = i."Id" AND r."Score" > 95
-	)
+	"Issue4458Item" item_1
+		LEFT JOIN (
+			SELECT
+				SUM(stock."QuantityAvailable") as "TotalAvailable",
+				stock."ItemId"
+			FROM
+				"WarehouseStock" stock
+			GROUP BY
+				stock."ItemId"
+		) stock_1 ON stock_1."ItemId" = item_1."Id"
 
 -- Oracle.11.Managed Oracle11
 
@@ -61,13 +30,4 @@ SELECT
 	t1."WarehouseId"
 FROM
 	"WarehouseStock" t1
-
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."ItemId",
-	t1."UserId",
-	t1."Score"
-FROM
-	"Review" t1
 

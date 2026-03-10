@@ -2,13 +2,18 @@
 
 WITH CTE_1 AS
 (
-	SELECT DISTINCT
-		c_1."ParentID",
-		c_1."ChildID"
+	SELECT
+		1
 	FROM
-		"Child" c_1
-	WHERE
-		c_1."ParentID" > 1
+		(
+			SELECT DISTINCT
+				c_1."ParentID",
+				c_1."ChildID"
+			FROM
+				"Child" c_1
+			WHERE
+				c_1."ParentID" > 1
+		) t1
 )
 SELECT
 	COUNT(*)

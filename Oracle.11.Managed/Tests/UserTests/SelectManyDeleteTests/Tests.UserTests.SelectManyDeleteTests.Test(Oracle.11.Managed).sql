@@ -5,7 +5,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			a_GrandChildren."ChildID"
+			1
 		FROM
 			"Parent" x
 				INNER JOIN "Child" a_Children ON x."ParentID" = a_Children."ParentID"
