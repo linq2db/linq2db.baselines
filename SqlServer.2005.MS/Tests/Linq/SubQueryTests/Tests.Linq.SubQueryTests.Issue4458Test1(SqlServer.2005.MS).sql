@@ -1,50 +1,19 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[m_1].[Id],
-	[d].[ItemId],
-	[d].[UserId],
-	[d].[Score]
-FROM
-	[Issue4458Item] [m_1]
-		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Review] [r]
-		WHERE
-			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
-	)
-ORDER BY
-	[d].[ItemId],
-	[d].[UserId]
-
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[i].[Id],
+	[item_1].[Id],
 	(
 		SELECT
-			SUM([s].[QuantityAvailable])
+			SUM([stock].[QuantityAvailable])
 		FROM
-			[WarehouseStock] [s]
+			[WarehouseStock] [stock]
 		WHERE
-			[s].[ItemId] = [i].[Id] AND [stock].[ItemId] = [s].[ItemId]
+			[stock].[ItemId] = [item_1].[Id]
+		GROUP BY
+			[stock].[ItemId]
 	)
 FROM
-	[Issue4458Item] [i]
-		LEFT JOIN [WarehouseStock] [stock] ON [stock].[ItemId] = [i].[Id]
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[Review] [r]
-		WHERE
-			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
-	)
+	[Issue4458Item] [item_1]
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -61,13 +30,4 @@ SELECT
 	[t1].[WarehouseId]
 FROM
 	[WarehouseStock] [t1]
-
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT
-	[t1].[ItemId],
-	[t1].[UserId],
-	[t1].[Score]
-FROM
-	[Review] [t1]
 

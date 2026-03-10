@@ -1,18 +1,21 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[OuterTable]
+	[t2]
 SET
-	[Field1] = (
-		SELECT TOP (1)
-			[y].[Field4]
-		FROM
-			[InnerTable] [y]
-		WHERE
-			[OuterTable].[Field2] = [y].[Field3]
-		ORDER BY
-			[y].[Field4]
-	)
+	[t2].[Field1] = [t1].[Field4]
+FROM
+	[OuterTable] [t2]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[y].[Field4]
+			FROM
+				[InnerTable] [y]
+			WHERE
+				[t2].[Field2] = [y].[Field3]
+			ORDER BY
+				[y].[Field4]
+		) [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
 
