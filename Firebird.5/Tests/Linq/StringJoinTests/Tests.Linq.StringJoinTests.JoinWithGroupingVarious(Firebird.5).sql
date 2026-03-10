@@ -4,9 +4,9 @@ SELECT
 	"t1"."Key_1",
 	"t1"."NullableDistinct",
 	"t1"."NullableDistinctNotNullDistinct",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NullableDistinctNotNullDistinctOrdered", ''), ', '), '')
+			LIST(Coalesce("t2"."NullableDistinctNotNullDistinctOrdered", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -18,11 +18,11 @@ SELECT
 				ORDER BY
 					"t"."NullableValue" DESC
 			) "t2"
-	),
+	), ''),
 	"t1"."NotNullableDistinct",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST("t3"."NotNullableDistinctOrdered", ', '), '')
+			LIST("t3"."NotNullableDistinctOrdered", ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -34,7 +34,7 @@ SELECT
 				ORDER BY
 					"t_1"."NotNullableValue" DESC
 			) "t3"
-	)
+	), '')
 FROM
 	(
 		SELECT

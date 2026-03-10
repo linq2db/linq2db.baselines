@@ -1,18 +1,35 @@
 ﻿-- Firebird.5 Firebird4
 
 UPDATE
-	"OuterTable" "t1"
+	"OuterTable"
 SET
 	"Field1" = (
 		SELECT
-			"y"."Field4"
+			"t2"."Field4"
 		FROM
-			"InnerTable" "y"
+			"OuterTable" "t3"
+				LEFT JOIN LATERAL (
+					SELECT
+						"y"."Field4"
+					FROM
+						"InnerTable" "y"
+					WHERE
+						"t3"."Field2" = "y"."Field3"
+					ORDER BY
+						"y"."Field4"
+					FETCH NEXT 1 ROWS ONLY
+				) "t2" ON 1=1
 		WHERE
-			"t1"."Field2" = "y"."Field3"
-		ORDER BY
-			"y"."Field4"
-		FETCH NEXT 1 ROWS ONLY
+			"OuterTable"."Id" = "t3"."Id"
+	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"OuterTable" "t1"
+		WHERE
+			"OuterTable"."Id" = "t1"."Id"
 	)
 
 -- Firebird.5 Firebird4

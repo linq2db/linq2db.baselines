@@ -35,24 +35,49 @@ WHERE
 -- Firebird.5 Firebird4
 
 UPDATE
-	"billing_TempReading" "t1"
+	"billing_TempReading"
 SET
 	"DevReadingTypeId" = (
 		SELECT
-			"w"."Id"
+			"t2"."Id"
 		FROM
-			"billing_DevReadingType" "w"
+			"billing_TempReading" "t3"
+				LEFT JOIN LATERAL (
+					SELECT
+						"w"."Id"
+					FROM
+						"billing_DevReadingType" "w"
+					WHERE
+						"w"."Name" = "t3"."ReadingTypeName" AND "w"."DevTypeId" = "t3"."Devtypeid"
+					FETCH NEXT 1 ROWS ONLY
+				) "t2" ON 1=1
 		WHERE
-			"w"."Name" = "t1"."ReadingTypeName" AND "w"."DevTypeId" = "t1"."Devtypeid"
-		FETCH NEXT 1 ROWS ONLY
+			"billing_TempReading"."id" = "t3"."id"
 	),
 	"Responsibility" = (
 		SELECT
-			"w_1"."Responsibility"
+			"t4"."Responsibility"
 		FROM
-			"billing_DevReadingType" "w_1"
+			"billing_TempReading" "t5"
+				LEFT JOIN LATERAL (
+					SELECT
+						"w_1"."Responsibility"
+					FROM
+						"billing_DevReadingType" "w_1"
+					WHERE
+						"w_1"."Name" = "t5"."ReadingTypeName" AND "w_1"."DevTypeId" = "t5"."Devtypeid"
+					FETCH NEXT 1 ROWS ONLY
+				) "t4" ON 1=1
 		WHERE
-			"w_1"."Name" = "t1"."ReadingTypeName" AND "w_1"."DevTypeId" = "t1"."Devtypeid"
-		FETCH NEXT 1 ROWS ONLY
+			"billing_TempReading"."id" = "t5"."id"
+	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"billing_TempReading" "t1"
+		WHERE
+			"billing_TempReading"."id" = "t1"."id"
 	)
 
