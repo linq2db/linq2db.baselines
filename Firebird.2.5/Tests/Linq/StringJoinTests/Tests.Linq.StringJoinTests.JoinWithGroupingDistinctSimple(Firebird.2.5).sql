@@ -2,9 +2,9 @@
 
 SELECT
 	"t1"."Key_1",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NotNullableOrderedNoNulls", ''), ', '), '')
+			LIST(Coalesce("t2"."NotNullableOrderedNoNulls", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -16,8 +16,8 @@ SELECT
 				ORDER BY
 					"t"."NullableValue"
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
 			LIST("t4"."NotNullableOrderedNulls", ', ')
 		FROM
@@ -36,7 +36,7 @@ SELECT
 				ORDER BY
 					"t3"."NotNullableOrderedNulls"
 			) "t4"
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT

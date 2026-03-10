@@ -6,33 +6,39 @@ SELECT
 	"d"."UserId",
 	"d"."Score"
 FROM
-	"Issue4458Item" "m_1"
-		INNER JOIN "Review" "d" ON "d"."ItemId" = "m_1"."Id"
-WHERE
-	EXISTS(
-		SELECT
-			*
+	(
+		SELECT DISTINCT
+			"t1"."Id"
 		FROM
-			"Review" "r"
+			"Issue4458Item" "t1"
 		WHERE
-			"r"."ItemId" = "m_1"."Id" AND "r"."Score" > 95
-	)
+			EXISTS(
+				SELECT
+					*
+				FROM
+					"Review" "r"
+				WHERE
+					"r"."ItemId" = "t1"."Id" AND "r"."Score" > 95
+			)
+	) "m_1"
+		INNER JOIN "Review" "d" ON "d"."ItemId" = "m_1"."Id"
 
 -- Firebird.2.5 Firebird
 
 SELECT
 	"i"."Id",
-	(
-		SELECT
-			SUM("s"."QuantityAvailable")
-		FROM
-			"WarehouseStock" "s"
-		WHERE
-			"s"."ItemId" = "i"."Id" AND "stock"."ItemId" = "s"."ItemId"
-	)
+	"stock_1"."TotalAvailable"
 FROM
 	"Issue4458Item" "i"
-		LEFT JOIN "WarehouseStock" "stock" ON "stock"."ItemId" = "i"."Id"
+		LEFT JOIN (
+			SELECT
+				SUM("stock"."QuantityAvailable") as "TotalAvailable",
+				"stock"."ItemId"
+			FROM
+				"WarehouseStock" "stock"
+			GROUP BY
+				"stock"."ItemId"
+		) "stock_1" ON "stock_1"."ItemId" = "i"."Id"
 WHERE
 	EXISTS(
 		SELECT
