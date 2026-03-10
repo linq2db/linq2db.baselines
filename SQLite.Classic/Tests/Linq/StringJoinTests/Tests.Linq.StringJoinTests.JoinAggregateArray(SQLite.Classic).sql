@@ -2,9 +2,9 @@
 
 SELECT
 	Coalesce([t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || ', ' || Coalesce([t].[VarcharValue], '') || ', ' || Coalesce([t].[NVarcharValue], ''),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[AggregatedNotNullFilteredDistinct], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t2].[AggregatedNotNullFilteredDistinct], ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -22,10 +22,10 @@ SELECT
 				ORDER BY
 					[t1].[item]
 			) [t2]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t5].[AggregatedFilteredDistinct], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t5].[AggregatedFilteredDistinct], ''), ', ')
 		FROM
 			(
 				SELECT
@@ -52,7 +52,7 @@ SELECT
 					END,
 					[t4].[AggregatedFilteredDistinct]
 			) [t5]
-	)
+	), '')
 FROM
 	[SampleClass] [t]
 

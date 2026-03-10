@@ -5,7 +5,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			[r].[Id]
+			1
 		FROM
 			[TableToInsert] [t]
 				INNER JOIN (

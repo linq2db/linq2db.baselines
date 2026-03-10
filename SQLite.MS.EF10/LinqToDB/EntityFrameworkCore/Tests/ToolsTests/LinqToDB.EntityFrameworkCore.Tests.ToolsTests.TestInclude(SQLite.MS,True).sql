@@ -65,7 +65,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[OrderId],
+	[m_1].[OrderID],
 	[d].[IsDeleted],
 	[d].[OrderID],
 	[d].[ProductID],
@@ -84,18 +84,12 @@ SELECT
 	[a_Product].[ReorderLevel],
 	[a_Product].[Discontinued]
 FROM
-	(
-		SELECT DISTINCT
-			[e].[OrderID] as [OrderId]
-		FROM
-			[Orders] [e]
-		WHERE
-			NOT [e].[IsDeleted]
-	) [m_1]
-		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
+	[Orders] [m_1]
+		INNER JOIN [Order Details] [d] ON [m_1].[OrderID] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 WHERE
-	NOT [a_Product].[IsDeleted] AND NOT [d].[IsDeleted]
+	NOT [m_1].[IsDeleted] AND NOT [a_Product].[IsDeleted] AND
+	NOT [d].[IsDeleted]
 
 
 
