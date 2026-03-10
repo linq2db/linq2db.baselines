@@ -2,7 +2,7 @@
 
 SELECT
 	[t2].[Sum_1],
-	[t4].[Count_1]
+	[t5].[Count_1]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
@@ -26,17 +26,22 @@ FROM
 				COUNT(*) as [Count_1]
 			FROM
 				(
-					SELECT DISTINCT
-						[a_Details_1].[DetailValue] as [Count_1]
+					SELECT
+						1 as [c1]
 					FROM
-						[DetailClass] [a_Details_1]
-					WHERE
-						[m_1].[Id1] = [a_Details_1].[MasterId]
+						(
+							SELECT DISTINCT
+								[a_Details_1].[DetailValue] as [Count_1]
+							FROM
+								[DetailClass] [a_Details_1]
+							WHERE
+								[m_1].[Id1] = [a_Details_1].[MasterId]
+						) [t3]
 					ORDER BY
-						[a_Details_1].[DetailValue]
+						[t3].[Count_1]
 					OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
-				) [t3]
-		) [t4]
+				) [t4]
+		) [t5]
 
 -- SqlCe
 
