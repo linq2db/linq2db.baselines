@@ -3,20 +3,32 @@
 UPDATE
 	`SampleClass` `t`
 SET
-	`t`.`VarcharValue` = (
+	`t`.`VarcharValue` = Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '')
+			GROUP_CONCAT(Coalesce(`t1`.`VarcharValue`, '') SEPARATOR ', ')
 		FROM
-			`SampleClass` `a_Children`
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
 		WHERE
-			`t`.`Id` = `a_Children`.`Id`
-	),
-	`t`.`NVarcharValue` = (
+			`t`.`Id` = `t1`.`Id`
+	), ''),
+	`t`.`NVarcharValue` = Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce(`a_Children`.`VarcharValue`, '') SEPARATOR ', '), '')
+			GROUP_CONCAT(Coalesce(`t1`.`VarcharValue`, '') SEPARATOR ', ')
 		FROM
-			`SampleClass` `a_Children`
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
 		WHERE
-			`t`.`Id` = `a_Children`.`Id`
-	)
+			`t`.`Id` = `t1`.`Id`
+	), '')
 

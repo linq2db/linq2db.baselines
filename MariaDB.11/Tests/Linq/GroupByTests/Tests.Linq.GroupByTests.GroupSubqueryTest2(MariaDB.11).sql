@@ -6,10 +6,10 @@ FROM
 	`Child` `pmp1`
 		CROSS JOIN (
 			SELECT DISTINCT
-				`pmp`.`ParentID`
+				`g_1`.`ParentID`
 			FROM
-				`Child` `pmp`
-		) `pmp_1`
+				`Child` `g_1`
+		) `pmp`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

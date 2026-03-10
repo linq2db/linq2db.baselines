@@ -51,7 +51,7 @@ FROM
 -- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`m_1`.`OrderId`,
+	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
 	`d`.`OrderID`,
 	`d`.`ProductID`,
@@ -70,13 +70,8 @@ SELECT
 	`a_Product`.`ReorderLevel`,
 	`a_Product`.`Discontinued`
 FROM
-	(
-		SELECT DISTINCT
-			`e`.`OrderID` as `OrderId`
-		FROM
-			`Orders` `e`
-	) `m_1`
-		INNER JOIN `Order Details` `d` ON `m_1`.`OrderId` = `d`.`OrderID`
+	`Orders` `m_1`
+		INNER JOIN `Order Details` `d` ON `m_1`.`OrderID` = `d`.`OrderID`
 		INNER JOIN `Products` `a_Product` ON `d`.`ProductID` = `a_Product`.`ProductID`
 
 
