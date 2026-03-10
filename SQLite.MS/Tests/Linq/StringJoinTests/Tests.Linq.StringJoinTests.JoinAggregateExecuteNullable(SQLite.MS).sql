@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+	GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', ')
 FROM
 	(
 		SELECT
