@@ -5,13 +5,13 @@ UPDATE
 SET
 	("VarcharValue", "NVarcharValue") = (
 		SELECT
-			t1."Result_1",
-			t1."Result_1"
+			Coalesce(t1."Result_1", ''),
+			Coalesce(t1."Result_1", '')
 		FROM
 			"SampleClass" t_1
 				OUTER APPLY (
 					SELECT
-						Coalesce(LISTAGG(Coalesce(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue"), '') as "Result_1"
+						LISTAGG(Coalesce(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue") as "Result_1"
 					FROM
 						"SampleClass" a_Children
 					WHERE
