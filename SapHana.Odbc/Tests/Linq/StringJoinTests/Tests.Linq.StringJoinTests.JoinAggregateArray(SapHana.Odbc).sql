@@ -2,9 +2,9 @@
 
 SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."AggregatedNotNullFilteredDistinct", ''), ', ' ORDER BY "t2"."AggregatedNotNullFilteredDistinct" NULLS FIRST), '')
+			STRING_AGG(Coalesce("t2"."AggregatedNotNullFilteredDistinct", ''), ', ' ORDER BY "t2"."AggregatedNotNullFilteredDistinct" NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -21,13 +21,13 @@ SELECT
 				WHERE
 					"t1"."item" IS NOT NULL
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t4"."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
+			STRING_AGG(Coalesce("t4"."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
 				WHEN "t4"."AggregatedFilteredDistinct" IS NULL THEN 0
 				ELSE 1
-			END NULLS FIRST, "t4"."AggregatedFilteredDistinct" NULLS FIRST), '')
+			END NULLS FIRST, "t4"."AggregatedFilteredDistinct" NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -44,7 +44,7 @@ SELECT
 				WHERE
 					"t3"."item" <> 'A' OR "t3"."item" IS NULL
 			) "t4"
-	)
+	), '')
 FROM
 	"SampleClass" "t"
 

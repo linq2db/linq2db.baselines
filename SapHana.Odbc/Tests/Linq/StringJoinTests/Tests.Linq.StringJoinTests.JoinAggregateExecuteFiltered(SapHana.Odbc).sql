@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Coalesce(STRING_AGG(Coalesce("t1"."NullableValue", ''), ', '), '')
+	STRING_AGG(Coalesce("t1"."NullableValue", ''), ', ')
 FROM
 	(
 		SELECT
