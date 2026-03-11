@@ -1,0 +1,12 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	LISTAGG("g_1"."Value1", ' -> ')
+FROM
+	"SampleClass" "g_1"
+GROUP BY
+	"g_1"."Id",
+	"g_1"."Value1"
+ORDER BY
+	"g_1"."Id"
+
