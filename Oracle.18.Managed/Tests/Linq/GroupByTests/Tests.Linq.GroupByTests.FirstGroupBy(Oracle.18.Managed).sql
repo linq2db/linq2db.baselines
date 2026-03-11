@@ -1,0 +1,25 @@
+﻿-- Oracle.18.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	(
+		SELECT DISTINCT
+			gr."ParentID"
+		FROM
+			"Child" gr
+	) gr_1
+		CROSS APPLY (
+			SELECT
+				t."ParentID",
+				t."ChildID"
+			FROM
+				"Child" t
+			WHERE
+				gr_1."ParentID" = t."ParentID"
+			ORDER BY
+				t."ChildID" DESC
+			FETCH NEXT 1 ROWS ONLY
+		) t1
+
