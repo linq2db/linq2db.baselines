@@ -1,0 +1,5 @@
+﻿-- SqlServer.2014.MS SqlServer.2014
+
+SELECT
+	SMALLDATETIMEFROMPARTS(2022, 2, 22, 0, 0)
+
