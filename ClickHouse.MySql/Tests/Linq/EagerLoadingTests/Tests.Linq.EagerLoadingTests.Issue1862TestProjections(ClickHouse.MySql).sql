@@ -26,7 +26,8 @@ FROM
 WHERE
 	NOT d_1.IsDeleted
 ORDER BY
-	d_1.TagId
+	d_1.TagId,
+	m_1.Id
 
 -- ClickHouse.MySql ClickHouse
 

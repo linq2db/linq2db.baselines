@@ -41,10 +41,11 @@ FROM
 -- Firebird.2.5 Firebird
 
 UPDATE
-	"TestBool" "t1"
+	"TestBool" "r"
 SET
-	"Id" = 1,
 	"Value" = '1'
+WHERE
+	"r"."Id" = 1
 
 -- Firebird.2.5 Firebird
 

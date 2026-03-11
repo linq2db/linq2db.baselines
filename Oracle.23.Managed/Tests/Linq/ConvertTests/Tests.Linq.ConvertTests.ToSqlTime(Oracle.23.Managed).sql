@@ -1,7 +1,7 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	EXTRACT(HOUR FROM t."DateTimeValue") || ':01:01'
+	CAST(EXTRACT(HOUR FROM t."DateTimeValue") AS VarChar(255)) || ':01:01'
 FROM
 	"LinqDataTypes" t
 

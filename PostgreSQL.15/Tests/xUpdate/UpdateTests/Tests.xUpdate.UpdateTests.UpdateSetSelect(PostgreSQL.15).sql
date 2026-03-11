@@ -10,14 +10,18 @@ WHERE
 UPDATE
 	"Parent"
 SET
-	"ParentID" = c_2."ParentID" + 1000
+	"ParentID" = (
+		SELECT
+			c_2."ParentID"
+		FROM
+			"Child" c_2
+		WHERE
+			c_2."ChildID" = 11
+	) + 1000
 FROM
-	"Parent" p
-		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
-		LEFT JOIN "Child" c_2 ON c_2."ChildID" = 11
+	"Child" c_1
 WHERE
-	p."ParentID" = 1 AND "Parent"."ParentID" = p."ParentID" AND
-	("Parent"."Value1" = p."Value1" OR "Parent"."Value1" IS NULL AND p."Value1" IS NULL)
+	"Parent"."ParentID" = 1 AND "Parent"."ParentID" = c_1."ParentID"
 
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32

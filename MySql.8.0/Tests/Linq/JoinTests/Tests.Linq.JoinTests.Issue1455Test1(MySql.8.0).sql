@@ -5,44 +5,38 @@ SET     @cpty = 'C'
 SELECT
 	`al_group_3`.`Id`,
 	`t2`.`LastUpdate`,
-	`t2`.`cond`,
+	`t2`.`CargoId`,
 	`t2`.`DeliveryId`,
 	`t2`.`DeliveryCounterParty`,
-	`t2`.`cond_1`,
+	`t2`.`DealId`,
 	`t2`.`ParcelId`,
 	`t2`.`CounterParty`
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			`al_group_1`.`Id`
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					`al_group`.`Id`,
 					`al_group`.`AlertKey`,
 					`al_group`.`AlertCode`
 				FROM
 					`Alert` `al_group`
 						LEFT JOIN `AuditAlert` `au` ON `au`.`AlertKey` = `al_group`.`AlertKey`
-				GROUP BY
-					`al_group`.`Id`,
-					`al_group`.`AlertKey`,
-					`al_group`.`AlertCode`
 			) `al_group_1`
 				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
 				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
 		WHERE
 			LOCATE(@cpty, `nomin_1`.`DeliveryCounterParty`) > 0 OR
 			LOCATE(@cpty, `trade_1`.`CounterParty`) > 0 OR LOCATE(@cpty, `al_group_1`.`AlertCode`) > 0
-		GROUP BY
-			`al_group_1`.`Id`
 	) `al_group_3`
 		LEFT JOIN LATERAL (
 			SELECT
-				`nomin_2`.`CargoId` as `cond`,
+				`nomin_2`.`CargoId`,
 				`nomin_2`.`DeliveryId`,
 				`nomin_2`.`DeliveryCounterParty`,
-				`trade_2`.`DealId` as `cond_1`,
+				`trade_2`.`DealId`,
 				`trade_2`.`ParcelId`,
 				`trade_2`.`CounterParty`,
 				`t1`.`LastUpdate`

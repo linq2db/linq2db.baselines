@@ -7,10 +7,10 @@ FROM
 	Parent t1,
 	(
 		SELECT FIRST 1
-			r.GuidValue as cond
+			r.GuidValue as HasValue
 		FROM
 			LinqDataTypes r
 	) t2
 WHERE
-	t2.cond IS NOT NULL
+	t2.HasValue IS NOT NULL
 

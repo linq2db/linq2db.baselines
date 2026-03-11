@@ -3,7 +3,7 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[ctb_1].[cond],
+	[ctb_1].[not_null],
 	[ctb_1].[Key_1],
 	[ctb_1].[maxCol],
 	[ctb_1].[Id],
@@ -17,7 +17,7 @@ FROM
 				[ctb].[maxCol],
 				[tbl3].[id] as [Id],
 				[btbl].[id] as [Id_1],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(
 					SELECT

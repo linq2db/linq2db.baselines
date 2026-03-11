@@ -15,20 +15,14 @@ FROM
 	(
 		SELECT DISTINCT
 			[a_Product].[ProductID] as [ProductId],
-			[t1].[OrderId]
+			[e].[OrderID] as [OrderId]
 		FROM
-			(
-				SELECT DISTINCT
-					[e].[OrderID] as [OrderId]
-				FROM
-					[Orders] [e]
-				WHERE
-					NOT [e].[IsDeleted]
-			) [t1]
-				INNER JOIN [Order Details] [d] ON [t1].[OrderId] = [d].[OrderID]
+			[Orders] [e]
+				INNER JOIN [Order Details] [d] ON [e].[OrderID] = [d].[OrderID]
 				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 		WHERE
-			NOT [a_Product].[IsDeleted] AND NOT [d].[IsDeleted]
+			NOT [e].[IsDeleted] AND NOT [a_Product].[IsDeleted] AND
+			NOT [d].[IsDeleted]
 	) [m_1]
 		INNER JOIN [Order Details] [d_1] ON [m_1].[ProductId] = [d_1].[ProductID]
 WHERE

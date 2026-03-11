@@ -51,7 +51,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"GrandChild" gc
 				INNER JOIN "Parent" "a_Parent" ON gc."ParentID" = "a_Parent"."ParentID"

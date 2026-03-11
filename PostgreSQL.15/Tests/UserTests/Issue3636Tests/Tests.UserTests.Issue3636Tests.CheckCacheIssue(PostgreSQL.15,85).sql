@@ -11,15 +11,13 @@ SELECT
 	order_2.id2
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			x.id as "Key_1"
 		FROM
 			"T1" x
 				LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
 		WHERE
 			x.id2 = :myId
-		GROUP BY
-			x.id
 		ORDER BY
 			x.id
 		LIMIT 1
@@ -33,15 +31,13 @@ WHERE
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
 
-SELECT
+SELECT DISTINCT
 	x.id
 FROM
 	"T1" x
 		LEFT JOIN "T2" order_1 ON x.id = order_1.id AND order_1.id2 = :myId
 WHERE
 	x.id2 = :myId
-GROUP BY
-	x.id
 ORDER BY
 	x.id
 LIMIT 1

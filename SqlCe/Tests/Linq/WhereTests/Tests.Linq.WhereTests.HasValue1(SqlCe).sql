@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[ParentID],
-	[p].[Value1] as [cond]
+	[p].[Value1]
 FROM
 	[Parent] [p]
 WHERE

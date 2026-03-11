@@ -1,14 +1,9 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.c1
+	toFloat32(p.MoneyValue)
 FROM
-	(
-		SELECT
-			toFloat32(t.MoneyValue) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > toFloat32(0)
+	toFloat32(p.MoneyValue) > toFloat32(0)
 

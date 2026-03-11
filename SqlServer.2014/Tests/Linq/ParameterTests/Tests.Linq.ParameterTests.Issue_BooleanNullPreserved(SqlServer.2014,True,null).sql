@@ -43,8 +43,9 @@ FROM
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = NULL
+WHERE
+	[TestBool].[Id] = 1
 
 -- SqlServer.2014
 

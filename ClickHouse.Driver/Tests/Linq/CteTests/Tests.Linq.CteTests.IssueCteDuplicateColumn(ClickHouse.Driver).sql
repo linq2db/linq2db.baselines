@@ -13,8 +13,8 @@ WITH CTE_1 AS
 CTE_2 AS
 (
 	SELECT
-		t1.Id1,
-		t1.Id2
+		t1.Id1 as Id1,
+		t1.Id2 as Id2
 	FROM
 		CTE_1 t1
 	UNION ALL

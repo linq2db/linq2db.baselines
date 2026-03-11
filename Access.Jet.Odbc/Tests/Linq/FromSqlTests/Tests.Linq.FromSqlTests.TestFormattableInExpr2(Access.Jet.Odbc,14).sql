@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @startId Int -- Int32
+SET     @startId = 5
 DECLARE @endId Int -- Int32
 SET     @endId = 14
 

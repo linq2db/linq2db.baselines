@@ -23,16 +23,16 @@ FROM
 					) as [Sum_1]
 				FROM
 					[Issue4629Posts] [p]
-			) [t1]
-		WHERE
-			(
-				SELECT
-					SUM([a_Tags_1].[Weight])
-				FROM
-					[Issue4629Tags] [a_Tags_1]
 				WHERE
-					[t1].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
-			) > 5
+					(
+						SELECT
+							SUM([a_Tags_1].[Weight])
+						FROM
+							[Issue4629Tags] [a_Tags_1]
+						WHERE
+							[p].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
+					) > 5
+			) [t1]
 		ORDER BY
 			[t1].[Sum_1]
 	) [id]

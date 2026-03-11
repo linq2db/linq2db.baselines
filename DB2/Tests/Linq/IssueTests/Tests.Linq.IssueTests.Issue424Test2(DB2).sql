@@ -2,19 +2,13 @@
 DECLARE @take Integer(4) -- Int32
 SET     @take = 1
 
-SELECT
-	"t2"."ParentID",
-	"t2"."Value1"
+SELECT DISTINCT
+	"t1"."ParentID",
+	"t1"."Value1"
 FROM
-	(
-		SELECT DISTINCT
-			"t1"."ParentID",
-			"t1"."Value1"
-		FROM
-			"Parent" "t1"
-	) "t2"
+	"Parent" "t1"
 ORDER BY
-	"t2"."ParentID"
+	"t1"."ParentID"
 OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
 
 -- DB2 DB2.LUW DB2LUW

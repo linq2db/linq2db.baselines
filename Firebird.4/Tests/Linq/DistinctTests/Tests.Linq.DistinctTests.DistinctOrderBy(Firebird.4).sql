@@ -1,14 +1,9 @@
 ﻿-- Firebird.4 Firebird4
 
-SELECT
-	"t1"."ParentID"
+SELECT DISTINCT
+	"ch"."ParentID"
 FROM
-	(
-		SELECT DISTINCT
-			"ch"."ParentID"
-		FROM
-			"Child" "ch"
-	) "t1"
+	"Child" "ch"
 ORDER BY
-	"t1"."ParentID"
+	"ch"."ParentID"
 

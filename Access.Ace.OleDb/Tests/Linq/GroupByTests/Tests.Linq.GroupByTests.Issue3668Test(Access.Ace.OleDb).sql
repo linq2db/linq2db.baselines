@@ -38,6 +38,4 @@ FROM
 WHERE
 	[x].[PersonID] = @id AND [x].[LastName] <> @name OR
 	[x].[FirstName] <> @name_1 AND [x].[PersonID] - 1 = @id_1
-GROUP BY
-	[x].[PersonID]
 

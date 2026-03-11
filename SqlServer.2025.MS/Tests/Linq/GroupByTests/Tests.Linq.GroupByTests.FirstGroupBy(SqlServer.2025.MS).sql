@@ -5,12 +5,10 @@ SELECT
 	[t1].[ChildID]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[gr].[ParentID]
 		FROM
 			[Child] [gr]
-		GROUP BY
-			[gr].[ParentID]
 	) [gr_1]
 		CROSS APPLY (
 			SELECT TOP (1)

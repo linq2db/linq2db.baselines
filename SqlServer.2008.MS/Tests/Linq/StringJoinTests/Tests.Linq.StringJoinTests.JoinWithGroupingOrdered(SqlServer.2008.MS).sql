@@ -13,7 +13,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -32,7 +33,8 @@ WHERE
 	[d].[NullableValue] IS NOT NULL AND [d].[NullableValue] <> N''
 ORDER BY
 	[d].[NotNullableValue],
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -49,7 +51,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -66,7 +69,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -83,7 +87,8 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue] DESC
+	[d].[NullableValue] DESC,
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -104,22 +109,22 @@ ORDER BY
 		ELSE 1
 	END,
 	[d].[NotNullableValue] DESC,
-	[d].[NullableValue]
+	[d].[NullableValue],
+	[m_1].[Key_1]
 
 -- SqlServer.2008.MS SqlServer.2008
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
+	[t1].[PK],
 	[t1].[Id],
 	[t1].[NullableValue],
 	[t1].[NotNullableValue],

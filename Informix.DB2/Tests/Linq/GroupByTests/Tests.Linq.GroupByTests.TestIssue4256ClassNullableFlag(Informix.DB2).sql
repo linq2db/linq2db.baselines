@@ -1,19 +1,10 @@
 ﻿-- Informix.DB2 Informix
 
-SELECT
-	it_1.IsActive,
-	it_1.Other
+SELECT DISTINCT
+	't'::BOOLEAN,
+	it.SmallIntValue <> 0
 FROM
-	(
-		SELECT
-			't'::BOOLEAN as IsActive,
-			it.SmallIntValue <> 0 as Other
-		FROM
-			LinqDataTypes it
-	) it_1
-GROUP BY
-	it_1.IsActive,
-	it_1.Other
+	LinqDataTypes it
 
 -- Informix.DB2 Informix
 

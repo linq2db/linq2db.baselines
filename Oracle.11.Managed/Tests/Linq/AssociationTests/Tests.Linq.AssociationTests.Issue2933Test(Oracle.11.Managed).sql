@@ -13,5 +13,5 @@ FROM
 				a_PetIds."PersonId"
 			FROM
 				"Issue2933Pet" a_PetIds
-		) t1 ON a_Person."Id" = t1."PersonId" AND t1."rn" <= 1
+		) t1 ON a_Person."Id" = t1."PersonId" AND t1."rn" = 1
 

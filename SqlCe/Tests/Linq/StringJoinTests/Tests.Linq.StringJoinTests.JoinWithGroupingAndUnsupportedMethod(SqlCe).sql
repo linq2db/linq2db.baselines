@@ -20,6 +20,8 @@ FROM
 			ORDER BY
 				[d].[NotNullableValue]
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlCe
 
@@ -43,21 +45,22 @@ FROM
 			ORDER BY
 				[d].[NotNullableValue]
 		) [d_1]
+ORDER BY
+	[m_1].[Key_1]
 
 -- SqlCe
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id] as [Key_1]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 
 -- SqlCe
 
 SELECT
+	[t1].[PK],
 	[t1].[Id],
 	[t1].[NullableValue],
 	[t1].[NotNullableValue],

@@ -23,7 +23,7 @@ FROM
 						ROW_NUMBER() OVER (PARTITION BY "y"."PersonID" ORDER BY "y"."PersonID") as "rn"
 					FROM
 						"Patient" "y"
-				) "t1" ON "t1"."PersonID" = "x"."PersonID" AND "t1"."rn" <= 1
+				) "t1" ON "t1"."PersonID" = "x"."PersonID" AND "t1"."rn" = 1
 	) "x_1"
 WHERE
 	"x_1"."StatusName" = 'abc'

@@ -6,12 +6,10 @@ SELECT
 	"t4"."NotNullable"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"g_1"."Id" as "Key_1"
 		FROM
 			"SampleClass" "g_1"
-		GROUP BY
-			"g_1"."Id"
 	) "t5"
 		LEFT JOIN LATERAL (
 			SELECT
@@ -51,6 +49,7 @@ ORDER BY
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."PK",
 	"t1"."Id",
 	"t1"."NullableValue",
 	"t1"."NotNullableValue",

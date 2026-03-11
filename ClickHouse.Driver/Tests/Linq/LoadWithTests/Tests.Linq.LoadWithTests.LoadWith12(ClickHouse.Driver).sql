@@ -1,34 +1,29 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_1.cond,
 	m_1.ParentID,
+	m_1.ParentID_1,
 	d_1.ParentID,
 	d_1.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			a_Parent.ParentID as cond,
-			t2.ParentID as ParentID
+			a_Parent.ParentID as ParentID,
+			t1.ParentID as ParentID_1
 		FROM
 			(
-				SELECT DISTINCT
-					t1.ParentID as ParentID
+				SELECT
+					p.ParentID as ParentID
 				FROM
-					(
-						SELECT
-							p.ParentID as ParentID
-						FROM
-							Parent p
-						WHERE
-							p.ParentID < 2
-						LIMIT 1
-					) t1
-			) t2
-				INNER JOIN Child d ON t2.ParentID = d.ParentID
+					Parent p
+				WHERE
+					p.ParentID < 2
+				LIMIT 1
+			) t1
+				INNER JOIN Child d ON t1.ParentID = d.ParentID
 				LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 	) m_1
-		INNER JOIN Child d_1 ON m_1.cond = d_1.ParentID
+		INNER JOIN Child d_1 ON m_1.ParentID = d_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
 

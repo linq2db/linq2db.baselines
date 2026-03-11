@@ -1,7 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat('I-', `x`.`PersonID`),
+	Concat('I-', CAST(`x`.`PersonID` AS CHAR(11))),
 	`x`.`FirstName`
 FROM
 	`Person` `x`

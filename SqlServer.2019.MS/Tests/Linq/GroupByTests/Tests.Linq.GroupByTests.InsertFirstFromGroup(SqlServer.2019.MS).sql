@@ -28,21 +28,14 @@ INSERT INTO [temp_table_2]
 SELECT
 	[t1].[Value_1]
 FROM
-	(
-		SELECT
-			[gr].[ID]
-		FROM
-			[temp_table_1] [gr]
-		GROUP BY
-			[gr].[ID]
-	) [gr_1]
+	[temp_table_1] [gr]
 		CROSS APPLY (
 			SELECT TOP (1)
 				[c_1].[Value] as [Value_1]
 			FROM
 				[temp_table_1] [c_1]
 			WHERE
-				[gr_1].[ID] = [c_1].[ID]
+				[gr].[ID] = [c_1].[ID]
 		) [t1]
 
 -- SqlServer.2019.MS SqlServer.2019

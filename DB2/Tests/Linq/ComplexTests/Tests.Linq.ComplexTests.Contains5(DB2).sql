@@ -8,14 +8,9 @@ FROM
 WHERE
 	"c_1"."ParentID" IN (
 		SELECT
-			"t1"."ParentID"
+			"p"."ParentID"
 		FROM
-			(
-				SELECT
-					"p"."ParentID"
-				FROM
-					"Parent" "p"
-				OFFSET 1 ROWS FETCH NEXT 100 ROWS ONLY 
-			) "t1"
+			"Parent" "p"
+		OFFSET 1 ROWS FETCH NEXT 100 ROWS ONLY 
 	)
 

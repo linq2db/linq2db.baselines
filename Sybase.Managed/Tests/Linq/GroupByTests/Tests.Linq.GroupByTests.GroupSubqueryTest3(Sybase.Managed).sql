@@ -1,11 +1,9 @@
 ﻿-- Sybase.Managed Sybase
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- Sybase.Managed Sybase
 

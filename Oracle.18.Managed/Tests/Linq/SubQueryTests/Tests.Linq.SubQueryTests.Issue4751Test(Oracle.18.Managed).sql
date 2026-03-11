@@ -50,6 +50,8 @@ FROM
 				LEFT JOIN "Trp003" t3 ON t3."RuleNo" = t2."RuleNo" OR t3."RuleNo" IS NULL AND t2."RuleNo" IS NULL
 				LEFT JOIN "Trp0041" t4 ON t4."CarNo" = t."CarNo" OR t4."CarNo" IS NULL AND t."CarNo" IS NULL
 	) x
+ORDER BY
+	x."CarNo"
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 -- Oracle.18.Managed Oracle.Managed Oracle12

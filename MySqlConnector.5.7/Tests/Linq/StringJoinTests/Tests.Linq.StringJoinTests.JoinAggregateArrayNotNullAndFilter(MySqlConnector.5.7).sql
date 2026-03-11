@@ -34,6 +34,7 @@ WHERE
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`t1`.`PK`,
 	`t1`.`Id`,
 	`t1`.`NullableValue`,
 	`t1`.`NotNullableValue`,

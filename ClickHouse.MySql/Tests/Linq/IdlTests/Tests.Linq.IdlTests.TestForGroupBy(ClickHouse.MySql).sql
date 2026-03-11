@@ -18,14 +18,12 @@ WHERE
 
 -- ClickHouse.MySql ClickHouse
 
-SELECT
+SELECT DISTINCT
 	x.ChildID
 FROM
 	GrandChild x
 WHERE
 	x.ParentID IN (2)
-GROUP BY
-	x.ChildID
 
 -- ClickHouse.MySql ClickHouse
 
@@ -47,12 +45,10 @@ WHERE
 
 -- ClickHouse.MySql ClickHouse
 
-SELECT
+SELECT DISTINCT
 	x.ChildID
 FROM
 	GrandChild x
 WHERE
 	x.ParentID IN (3)
-GROUP BY
-	x.ChildID
 

@@ -9,15 +9,10 @@ FROM
 	(
 		SELECT DISTINCT
 			d.Id as Id,
-			t2.Id as Id_1
+			t1.Id as Id_1
 		FROM
-			(
-				SELECT DISTINCT
-					t1.Id as Id
-				FROM
-					EntityMA t1
-			) t2
-				INNER JOIN EntityMB d ON t2.Id = d.FK
+			EntityMA t1
+				INNER JOIN EntityMB d ON t1.Id = d.FK
 	) m_1
 		INNER JOIN EntityMC d_1 ON m_1.Id = d_1.FK
 

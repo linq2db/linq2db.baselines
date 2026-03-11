@@ -17,6 +17,6 @@ WHERE
 	[TableWithData].[Id] = 3
 RETURNING
 	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || 1,
+	[TableWithData].[ValueStr] || '1',
 	[TableWithData].[ValueStr] IS NOT NULL
 

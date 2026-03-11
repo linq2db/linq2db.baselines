@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		p.Id,
+		p.Id as Id,
 		toString('Str1') as Str
 	FROM
 		Issue3360Table p

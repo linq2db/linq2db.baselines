@@ -12,7 +12,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -31,7 +31,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -50,7 +50,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -69,7 +69,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."One" = "r"."Zero" OR "r"."One" IS NULL AND "r"."Zero" IS NULL
@@ -90,7 +90,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."One" = "r"."Null" OR "r"."One" IS NULL AND "r"."Null" IS NULL
@@ -111,7 +111,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."Zero" = "r"."Null" OR "r"."Zero" IS NULL AND "r"."Null" IS NULL
@@ -132,7 +132,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -151,7 +151,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -170,7 +170,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 			)
 	)
@@ -189,7 +189,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."One" = "r"."Zero" OR "r"."One" IS NULL AND "r"."Zero" IS NULL
@@ -210,7 +210,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."One" = "r"."Null" OR "r"."One" IS NULL AND "r"."Null" IS NULL
@@ -231,7 +231,7 @@ WHERE
 		WHERE
 			EXISTS(
 				SELECT
-					1
+					*
 				FROM rdb$database
 				WHERE
 					"r"."Zero" = "r"."Null" OR "r"."Zero" IS NULL AND "r"."Null" IS NULL

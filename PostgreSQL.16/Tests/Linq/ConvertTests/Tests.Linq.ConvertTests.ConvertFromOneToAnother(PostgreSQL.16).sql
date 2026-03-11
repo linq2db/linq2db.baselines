@@ -3,7 +3,7 @@ DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
 SELECT
-	:value::decimal
+	:value
 FROM
 	"LinqDataTypes" t1
 LIMIT 1
@@ -43,7 +43,7 @@ DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT
-	:value::Real
+	:value
 FROM
 	"LinqDataTypes" t1
 LIMIT 1
@@ -83,7 +83,7 @@ DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT
-	:value::Float
+	:value
 FROM
 	"LinqDataTypes" t1
 LIMIT 1

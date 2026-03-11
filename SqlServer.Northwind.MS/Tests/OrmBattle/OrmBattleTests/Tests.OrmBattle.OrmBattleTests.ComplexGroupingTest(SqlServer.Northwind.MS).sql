@@ -1,7 +1,7 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[m_1].[cond],
+	[m_1].[CustomerID],
 	[m_1].[Key_1],
 	[m_1].[Key_2],
 	[d_4].[OrderID],
@@ -21,106 +21,66 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[cond],
-			[t2].[Key_1],
-			[d_3].[Key_1] as [Key_2]
+			[t1].[Key_1],
+			[d_3].[Key_1] as [Key_2],
+			[t1].[CustomerID]
 		FROM
 			(
 				SELECT DISTINCT
-					[d_1].[cond],
-					[d_1].[Key_1]
+					[d_1].[Key_1],
+					[c_1].[CustomerID]
 				FROM
-					(
-						SELECT DISTINCT
-							[c_1].[CustomerID] as [cond]
-						FROM
-							[Customers] [c_1]
-					) [t1]
+					[Customers] [c_1]
 						CROSS APPLY (
-							SELECT
-								[d].[Key_1],
-								[t1].[cond]
+							SELECT DISTINCT
+								DatePart(year, [d].[OrderDate]) as [Key_1]
 							FROM
-								(
-									SELECT
-										DatePart(year, [yg].[OrderDate]) as [Key_1]
-									FROM
-										[Orders] [yg]
-									WHERE
-										[t1].[cond] = [yg].[CustomerID]
-								) [d]
-							GROUP BY
-								[d].[Key_1]
-						) [d_1]
-			) [t2]
-				CROSS APPLY (
-					SELECT
-						[d_2].[Key_1]
-					FROM
-						(
-							SELECT
-								DatePart(month, [mg].[OrderDate]) as [Key_1]
-							FROM
-								[Orders] [mg]
+								[Orders] [d]
 							WHERE
-								[t2].[cond] = [mg].[CustomerID] AND ([t2].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [t2].[Key_1] IS NULL AND [mg].[OrderDate] IS NULL)
-						) [d_2]
-					GROUP BY
-						[d_2].[Key_1]
+								[c_1].[CustomerID] = [d].[CustomerID]
+						) [d_1]
+			) [t1]
+				CROSS APPLY (
+					SELECT DISTINCT
+						DatePart(month, [d_2].[OrderDate]) as [Key_1]
+					FROM
+						[Orders] [d_2]
+					WHERE
+						[t1].[CustomerID] = [d_2].[CustomerID] AND ([t1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [t1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
 				) [d_3]
 	) [m_1]
-		INNER JOIN [Orders] [d_4] ON [m_1].[cond] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
+		INNER JOIN [Orders] [d_4] ON [m_1].[CustomerID] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
 
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[m_1].[cond],
+	[m_1].[CustomerID],
 	[m_1].[Key_1],
 	[d_3].[Key_1],
 	[d_3].[Key_1]
 FROM
 	(
 		SELECT DISTINCT
-			[d_1].[cond],
-			[d_1].[Key_1]
+			[d_1].[Key_1],
+			[c_1].[CustomerID]
 		FROM
-			(
-				SELECT DISTINCT
-					[c_1].[CustomerID] as [cond]
-				FROM
-					[Customers] [c_1]
-			) [t1]
+			[Customers] [c_1]
 				CROSS APPLY (
-					SELECT
-						[d].[Key_1],
-						[t1].[cond]
+					SELECT DISTINCT
+						DatePart(year, [d].[OrderDate]) as [Key_1]
 					FROM
-						(
-							SELECT
-								DatePart(year, [yg].[OrderDate]) as [Key_1]
-							FROM
-								[Orders] [yg]
-							WHERE
-								[t1].[cond] = [yg].[CustomerID]
-						) [d]
-					GROUP BY
-						[d].[Key_1]
+						[Orders] [d]
+					WHERE
+						[c_1].[CustomerID] = [d].[CustomerID]
 				) [d_1]
 	) [m_1]
 		CROSS APPLY (
-			SELECT
-				[d_2].[Key_1]
+			SELECT DISTINCT
+				DatePart(month, [d_2].[OrderDate]) as [Key_1]
 			FROM
-				(
-					SELECT
-						DatePart(month, [mg].[OrderDate]) as [Key_1]
-					FROM
-						[Orders] [mg]
-					WHERE
-						[m_1].[cond] = [mg].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [mg].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [mg].[OrderDate] IS NULL)
-				) [d_2]
-			GROUP BY
-				[d_2].[Key_1]
+				[Orders] [d_2]
+			WHERE
+				[m_1].[CustomerID] = [d_2].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
 		) [d_3]
 
 -- SqlServer.Northwind.MS SqlServer.2019
@@ -131,19 +91,12 @@ SELECT
 FROM
 	[Customers] [m_1]
 		CROSS APPLY (
-			SELECT
-				[d].[Key_1]
+			SELECT DISTINCT
+				DatePart(year, [d].[OrderDate]) as [Key_1]
 			FROM
-				(
-					SELECT
-						DatePart(year, [yg].[OrderDate]) as [Key_1]
-					FROM
-						[Orders] [yg]
-					WHERE
-						[m_1].[CustomerID] = [yg].[CustomerID]
-				) [d]
-			GROUP BY
-				[d].[Key_1]
+				[Orders] [d]
+			WHERE
+				[m_1].[CustomerID] = [d].[CustomerID]
 		) [d_1]
 
 -- SqlServer.Northwind.MS SqlServer.2019

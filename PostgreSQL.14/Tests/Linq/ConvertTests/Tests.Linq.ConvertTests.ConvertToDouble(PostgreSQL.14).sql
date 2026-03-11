@@ -1,14 +1,9 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	p.c1
+	p."MoneyValue"::Float
 FROM
-	(
-		SELECT
-			t."MoneyValue"::Float as c1
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" p
 WHERE
-	p.c1 > 0
+	p."MoneyValue"::Float > 0
 

@@ -66,19 +66,14 @@ DELETE FROM
 WHERE
 	"p"."ParentID" IN (
 		SELECT
-			"t1"."ParentID"
+			"c_2"."ParentID"
 		FROM
-			(
-				SELECT
-					"c_2"."ParentID"
-				FROM
-					"Parent" "c_2"
-				WHERE
-					"c_2"."ParentID" > 1000
-				ORDER BY
-					"c_2"."ParentID"
-				FETCH NEXT 2 ROWS ONLY
-			) "t1"
+			"Parent" "c_2"
+		WHERE
+			"c_2"."ParentID" > 1000
+		ORDER BY
+			"c_2"."ParentID"
+		FETCH NEXT 2 ROWS ONLY
 	)
 
 -- DB2 DB2.LUW DB2LUW

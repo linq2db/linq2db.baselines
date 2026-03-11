@@ -15,10 +15,8 @@ FROM
 
 -- SqlCe
 
-SELECT
+SELECT DISTINCT
 	[t1].[ParentID] as [Key_1]
 FROM
 	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
 

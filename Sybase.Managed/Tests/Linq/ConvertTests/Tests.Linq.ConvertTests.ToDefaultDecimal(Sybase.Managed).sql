@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	CAST([t].[MoneyValue] * 1000 AS DECIMAL(18, 10))
+	[t].[MoneyValue] * 1000
 FROM
 	[LinqDataTypes] [t]
 

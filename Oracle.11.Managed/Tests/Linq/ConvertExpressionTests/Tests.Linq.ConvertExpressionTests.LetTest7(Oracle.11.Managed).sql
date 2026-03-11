@@ -37,7 +37,7 @@ FROM
 				"Child" c_1
 			WHERE
 				c_1."ChildID" > -100 AND c_1."ParentID" > 0
-		) t1 ON t1."ParentID" = t."ParentID" AND t1."rn" <= 1
+		) t1 ON t1."ParentID" = t."ParentID" AND t1."rn" = 1
 		LEFT JOIN (
 			SELECT
 				c_2."ParentID",
@@ -47,7 +47,7 @@ FROM
 				"Child" c_2
 			WHERE
 				c_2."ChildID" > -100
-		) t2 ON t2."ParentID" = t."ParentID" AND t2."rn" <= 1
+		) t2 ON t2."ParentID" = t."ParentID" AND t2."rn" = 1
 WHERE
 	t."ParentID" > 0 AND ROWNUM <= :take
 

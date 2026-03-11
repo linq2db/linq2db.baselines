@@ -21,7 +21,7 @@ FROM
 							LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
 							LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 							LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-				) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
+				) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] = 1
 	) [m_1]
 		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] = [d].[EmailId]
 		INNER JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
@@ -30,7 +30,7 @@ FROM
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[cond],
+	[t1].[not_null],
 	[t1].[Id]
 FROM
 	[Request] [r]
@@ -38,7 +38,7 @@ FROM
 		LEFT JOIN [Admin] [a_Admin] ON [a_User].[Id] = [a_Admin].[Id]
 		LEFT JOIN (
 			SELECT
-				1 as [cond],
+				1 as [not_null],
 				[a_Email_1].[Id],
 				ROW_NUMBER() OVER (PARTITION BY [a_EmailAdminAssociations].[AdminId] ORDER BY [a_EmailAdminAssociations].[AdminId]) as [rn],
 				[a_EmailAdminAssociations].[AdminId]
@@ -47,5 +47,5 @@ FROM
 					LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
 					LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 					LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-		) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
+		) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] = 1
 

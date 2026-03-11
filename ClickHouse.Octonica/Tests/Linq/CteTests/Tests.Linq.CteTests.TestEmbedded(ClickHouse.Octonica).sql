@@ -3,7 +3,7 @@
 WITH CTE_1 AS
 (
 	SELECT
-		c_1.ChildID
+		c_1.ChildID as ChildID
 	FROM
 		Child c_1
 ),
@@ -17,14 +17,14 @@ CTE_2 AS
 CTE_3 AS
 (
 	SELECT DISTINCT
-		t2.NotIn
+		t2.NotIn as NotIn
 	FROM
 		CTE_2 t2
 ),
 CTE_4 AS
 (
 	SELECT DISTINCT
-		t3.NotIn
+		t3.NotIn as NotIn
 	FROM
 		CTE_3 t3
 )

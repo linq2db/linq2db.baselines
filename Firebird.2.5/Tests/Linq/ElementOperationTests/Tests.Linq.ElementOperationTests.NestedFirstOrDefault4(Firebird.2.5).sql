@@ -7,8 +7,8 @@ SELECT
 		FROM
 			(
 				SELECT DISTINCT
-					"a_Children"."ChildID",
-					"a_Children"."ParentID"
+					"a_Children"."ParentID",
+					"a_Children"."ChildID"
 				FROM
 					"Child" "a_Children"
 				WHERE
@@ -23,8 +23,8 @@ SELECT
 		FROM
 			(
 				SELECT DISTINCT
-					"a_Children_1"."ChildID",
-					"a_Children_1"."ParentID"
+					"a_Children_1"."ParentID",
+					"a_Children_1"."ChildID"
 				FROM
 					"Child" "a_Children_1"
 				WHERE

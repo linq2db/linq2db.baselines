@@ -3,7 +3,7 @@ DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	@value::Decimal
+	@value::Decimal(9, 5)
 FROM
 	LinqDataTypes t1
 

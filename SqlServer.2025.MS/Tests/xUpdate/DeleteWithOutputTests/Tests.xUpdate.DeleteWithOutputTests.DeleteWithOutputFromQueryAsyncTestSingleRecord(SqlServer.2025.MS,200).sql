@@ -12,12 +12,14 @@ WHERE
 -- SqlServer.2025.MS SqlServer.2025
 DECLARE @param Int -- Int32
 SET     @param = 200
+DECLARE @ValueStr NVarChar(50) -- String
+SET     @ValueStr = N'200'
 
 DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	DELETED.[ValueStr] + CAST(@param AS NVarChar(11))
+	DELETED.[ValueStr] + @ValueStr
 FROM
 	[TableWithData] [s]
 WHERE

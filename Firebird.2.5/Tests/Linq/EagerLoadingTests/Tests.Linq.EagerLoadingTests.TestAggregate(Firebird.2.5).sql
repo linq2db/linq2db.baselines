@@ -3,43 +3,33 @@
 SELECT
 	(
 		SELECT
-			SUM("t2"."Sum_1")
+			SUM("t1"."Sum_1")
 		FROM
 			(
-				SELECT FIRST 5 SKIP 1
-					"t1"."Sum_1"
+				SELECT FIRST 5 SKIP 1 DISTINCT
+					"a_Details"."DetailId" as "Sum_1"
 				FROM
-					(
-						SELECT DISTINCT
-							"a_Details"."DetailId" as "Sum_1"
-						FROM
-							"DetailClass" "a_Details"
-						WHERE
-							"m_1"."Id1" = "a_Details"."MasterId"
-					) "t1"
+					"DetailClass" "a_Details"
+				WHERE
+					"m_1"."Id1" = "a_Details"."MasterId"
 				ORDER BY
-					"t1"."Sum_1"
-			) "t2"
+					"a_Details"."DetailId"
+			) "t1"
 	),
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			(
-				SELECT FIRST 2 SKIP 1
-					*
+				SELECT FIRST 2 SKIP 1 DISTINCT
+					"a_Details_1"."DetailValue" as "Count_1"
 				FROM
-					(
-						SELECT DISTINCT
-							"a_Details_1"."DetailValue" as "Count_1"
-						FROM
-							"DetailClass" "a_Details_1"
-						WHERE
-							"m_1"."Id1" = "a_Details_1"."MasterId"
-					) "t3"
+					"DetailClass" "a_Details_1"
+				WHERE
+					"m_1"."Id1" = "a_Details_1"."MasterId"
 				ORDER BY
-					"t3"."Count_1"
-			) "t4"
+					"a_Details_1"."DetailValue"
+			) "t2"
 	)
 FROM
 	"MasterClass" "m_1"

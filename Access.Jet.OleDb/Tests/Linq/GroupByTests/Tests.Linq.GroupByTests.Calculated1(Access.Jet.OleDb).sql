@@ -15,15 +15,8 @@ FROM
 
 -- Access.Jet.OleDb AccessOleDb
 
-SELECT
-	[g_2].[Key_1]
+SELECT DISTINCT
+	IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3')
 FROM
-	(
-		SELECT
-			IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3') as [Key_1]
-		FROM
-			[Child] [g_1]
-	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
+	[Child] [g_1]
 

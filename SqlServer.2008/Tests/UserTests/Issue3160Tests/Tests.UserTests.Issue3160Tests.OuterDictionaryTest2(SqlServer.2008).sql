@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	[t1].[cond],
+	[t1].[c1],
 	[t1].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				N't2' as [cond],
+				N't2' as [c1],
 				(
 					SELECT TOP (1)
 						[x_1].[ID3]

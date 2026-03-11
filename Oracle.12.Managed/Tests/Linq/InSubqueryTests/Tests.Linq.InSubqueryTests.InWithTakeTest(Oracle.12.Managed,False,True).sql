@@ -8,15 +8,10 @@ FROM
 WHERE
 	c_1."ParentID" IN (
 		SELECT
-			t1."ParentID"
+			p."ParentID"
 		FROM
-			(
-				SELECT
-					v."ParentID"
-				FROM
-					"Parent" v
-				FETCH NEXT 100 ROWS ONLY
-			) t1
+			"Parent" p
+		FETCH NEXT 100 ROWS ONLY
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12

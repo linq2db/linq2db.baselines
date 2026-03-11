@@ -3,8 +3,8 @@
 WITH BooksCte AS
 (
 	SELECT
-		t1.AuthorId,
-		t1.Title
+		t1.AuthorId as AuthorId,
+		t1.Title as Title
 	FROM
 		Books t1
 )

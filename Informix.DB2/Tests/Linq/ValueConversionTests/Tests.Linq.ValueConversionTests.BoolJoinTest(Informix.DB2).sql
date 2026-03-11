@@ -8,10 +8,10 @@ FROM
 	ValueConversion t1
 		INNER JOIN (
 			SELECT
-				*
+				1 as c1
 			FROM
 				ValueConversion t2
 			WHERE
-				t2.BoolValue = @true_value
-		) t2_1 ON t1.BoolValue = @true_value
+				t2.BoolValue = @true_value::VarChar(1)
+		) t2_1 ON t1.BoolValue = @true_value::VarChar(1)
 

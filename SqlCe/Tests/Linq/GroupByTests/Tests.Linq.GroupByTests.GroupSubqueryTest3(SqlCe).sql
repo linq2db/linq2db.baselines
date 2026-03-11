@@ -1,11 +1,9 @@
 ﻿-- SqlCe
 
-SELECT
+SELECT DISTINCT
 	[pmp].[ParentID] as [Key_1]
 FROM
 	[Child] [pmp]
-GROUP BY
-	[pmp].[ParentID]
 
 -- SqlCe
 

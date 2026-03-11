@@ -1,11 +1,9 @@
 ﻿-- Firebird.2.5 Firebird
 
-SELECT
+SELECT DISTINCT
 	"pmp"."ParentID"
 FROM
 	"Child" "pmp"
-GROUP BY
-	"pmp"."ParentID"
 
 -- Firebird.2.5 Firebird
 

@@ -36,21 +36,14 @@ INSERT INTO `temp_table_2`
 SELECT
 	`t1`.`Value_1`
 FROM
-	(
-		SELECT
-			`gr`.`ID`
-		FROM
-			`temp_table_1` `gr`
-		GROUP BY
-			`gr`.`ID`
-	) `gr_1`
+	`temp_table_1` `gr`
 		INNER JOIN LATERAL (
 			SELECT
 				`c_1`.`Value` as `Value_1`
 			FROM
 				`temp_table_1` `c_1`
 			WHERE
-				`gr_1`.`ID` = `c_1`.`ID`
+				`gr`.`ID` = `c_1`.`ID`
 			LIMIT 1
 		) `t1` ON 1=1
 

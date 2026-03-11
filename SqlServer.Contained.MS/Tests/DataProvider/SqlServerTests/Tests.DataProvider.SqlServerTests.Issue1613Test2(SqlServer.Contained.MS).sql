@@ -1,16 +1,9 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
-SELECT
-	[g_2].[Key_1]
+SELECT DISTINCT
+	CAST([g_1].[dt] AS Date)
 FROM
-	(
-		SELECT
-			CAST([g_1].[dt] AS Date) as [Key_1]
-		FROM
-			[Issue1613] [g_1]
-	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
+	[Issue1613] [g_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
 

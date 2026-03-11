@@ -1,14 +1,9 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.c1
+	toDecimal128(p.MoneyValue, 10)
 FROM
-	(
-		SELECT
-			toDecimal128(t.MoneyValue, 10) as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > toDecimal128('0', 10)
+	toDecimal128(p.MoneyValue, 10) > toDecimal128('0', 10)
 

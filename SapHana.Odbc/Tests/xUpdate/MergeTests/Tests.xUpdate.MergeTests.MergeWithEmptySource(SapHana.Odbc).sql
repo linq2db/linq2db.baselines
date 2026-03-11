@@ -3,7 +3,7 @@
 MERGE INTO "Person" "Target"
 USING (
 	SELECT NULL "ID", NULL "FirstName", NULL "LastName", NULL "MiddleName", NULL "Gender"
-	FROM DUMMY	WHERE 1 = 0
+	FROM DUMMY WHERE 1 = 0
 )
  "Source"
 ON ("Target"."PersonID" = "Source"."ID")

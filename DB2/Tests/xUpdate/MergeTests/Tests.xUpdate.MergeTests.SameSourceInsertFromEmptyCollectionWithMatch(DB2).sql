@@ -213,7 +213,7 @@ VALUES
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int)
-	FROM "TestMerge1"	WHERE 1 = 0
+	FROM "TestMerge1" WHERE 1 = 0
 )
  "Source"
 (

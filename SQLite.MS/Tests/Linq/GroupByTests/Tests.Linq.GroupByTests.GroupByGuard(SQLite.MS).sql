@@ -39,12 +39,10 @@ FROM
 
 -- SQLite.MS SQLite
 
-SELECT
+SELECT DISTINCT
 	[t1].[Gender]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[Gender]
 
 -- SQLite.MS SQLite
 
@@ -64,8 +62,6 @@ SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 
 -- SQLite.MS SQLite
 
@@ -85,6 +81,4 @@ SELECT
 	[t1].[PersonID]
 FROM
 	[Person] [t1]
-GROUP BY
-	[t1].[PersonID]
 

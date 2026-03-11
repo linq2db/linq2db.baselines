@@ -33,8 +33,8 @@ VALUES
 SELECT
 	e.Code,
 	e.Id,
-	e.Age,
-	e.Name
+	e.Name,
+	e.Age
 FROM
 	Base e
 WHERE

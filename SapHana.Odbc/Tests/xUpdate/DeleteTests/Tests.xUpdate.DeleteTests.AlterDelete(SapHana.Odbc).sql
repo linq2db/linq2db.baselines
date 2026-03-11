@@ -5,7 +5,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Parent" "p"
 				LEFT JOIN "Child" "ch" ON "p"."ParentID" = "ch"."ParentID"

@@ -15,10 +15,8 @@ FROM
 
 -- SqlServer.2016.MS SqlServer.2016
 
-SELECT
+SELECT DISTINCT
 	[t1].[ParentID]
 FROM
 	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
 

@@ -17,6 +17,7 @@ ORDER BY
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`PK`,
 	`t1`.`Id`,
 	`t1`.`NullableValue`,
 	`t1`.`NotNullableValue`,

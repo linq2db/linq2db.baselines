@@ -1,7 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[it_1].[cond],
+	[it_1].[not_null],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
 	[it_1].[Count_1]
@@ -14,7 +14,7 @@ FROM
 				[it].[ColorName],
 				[it].[StyleName],
 				[it].[Count] as [Count_1],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(VALUES
 					([a_Color].[Name],[a_Style].[Name],(

@@ -8,4 +8,6 @@ FROM
 GROUP BY
 	g_1."Id",
 	g_1."Value1"
+ORDER BY
+	g_1."Id"
 

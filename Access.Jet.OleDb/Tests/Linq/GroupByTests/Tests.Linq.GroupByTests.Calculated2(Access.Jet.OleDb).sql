@@ -1,21 +1,14 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[p].[c1]
+	[p].[Key_1] + '2'
 FROM
 	(
-		SELECT
-			[ch].[Key_1] + '2' as [c1]
+		SELECT DISTINCT
+			IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3') as [Key_1]
 		FROM
-			(
-				SELECT
-					IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3') as [Key_1]
-				FROM
-					[Child] [g_1]
-			) [ch]
-		GROUP BY
-			[ch].[Key_1]
+			[Child] [g_1]
 	) [p]
 WHERE
-	[p].[c1] = '22'
+	[p].[Key_1] + '2' = '22'
 

@@ -2,10 +2,10 @@
 
 SELECT
 	[m_1].[Id],
-	[d_1].[Id],
+	[d_1].[Id_1],
 	[d_1].[ParentId],
 	[d_1].[SubId],
-	[d_1].[cond],
+	[d_1].[Id],
 	[d_1].[Value_1]
 FROM
 	(
@@ -16,9 +16,9 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id] as [cond],
+				[a_SubItem].[Id],
 				[a_SubItem].[Value] as [Value_1],
-				[d].[Id],
+				[d].[Id] as [Id_1],
 				[d].[ParentId],
 				[d].[SubId]
 			FROM
@@ -42,10 +42,10 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d_1].[Id],
+	[d_1].[Id_1],
 	[d_1].[ParentId],
 	[d_1].[SubId],
-	[d_1].[cond],
+	[d_1].[Id],
 	[d_1].[Value_1]
 FROM
 	(
@@ -56,9 +56,9 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id] as [cond],
+				[a_SubItem].[Id],
 				[a_SubItem].[Value] as [Value_1],
-				[d].[Id],
+				[d].[Id] as [Id_1],
 				[d].[ParentId],
 				[d].[SubId]
 			FROM

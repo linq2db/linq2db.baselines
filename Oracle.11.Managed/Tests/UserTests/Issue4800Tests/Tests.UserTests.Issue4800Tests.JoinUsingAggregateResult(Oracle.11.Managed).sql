@@ -8,9 +8,14 @@ FROM
 			MIN(elements_1."TesteeId") as "TesteeId"
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					elements."Token" as "Key_1",
-					elements."TesteeId"
+					elements."TesteeId",
+					elements."TestId",
+					elements."StructureId",
+					elements."SoleId",
+					elements."Distance",
+					elements."Placement"
 				FROM
 					"Coverage" elements
 						INNER JOIN "Test" test_1 ON elements."TestId" = test_1."Id"
@@ -19,14 +24,6 @@ FROM
 						LEFT JOIN "Outfit" outfit_1 ON testee_1."WorkblankId" = outfit_1."WorkblankId"
 				WHERE
 					elements."Status" = 14650
-				GROUP BY
-					elements."Token",
-					elements."TesteeId",
-					elements."TestId",
-					elements."StructureId",
-					elements."SoleId",
-					elements."Distance",
-					elements."Placement"
 			) elements_1
 		GROUP BY
 			elements_1."Key_1"

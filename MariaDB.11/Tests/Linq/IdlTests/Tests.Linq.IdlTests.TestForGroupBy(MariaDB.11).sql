@@ -18,14 +18,12 @@ WHERE
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (2)
-GROUP BY
-	`x`.`ChildID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
@@ -47,12 +45,10 @@ WHERE
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-SELECT
+SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (3)
-GROUP BY
-	`x`.`ChildID`
 

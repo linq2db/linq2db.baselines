@@ -1,19 +1,10 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
-SELECT
-	[it_1].[IsActive],
-	[it_1].[Other]
+SELECT DISTINCT
+	1,
+	IIF([it].[SmallIntValue] <> 0, 1, 0)
 FROM
-	(
-		SELECT
-			1 as [IsActive],
-			IIF([it].[SmallIntValue] <> 0, 1, 0) as [Other]
-		FROM
-			[LinqDataTypes] [it]
-	) [it_1]
-GROUP BY
-	[it_1].[IsActive],
-	[it_1].[Other]
+	[LinqDataTypes] [it]
 
 -- SqlServer.2012.MS SqlServer.2012
 

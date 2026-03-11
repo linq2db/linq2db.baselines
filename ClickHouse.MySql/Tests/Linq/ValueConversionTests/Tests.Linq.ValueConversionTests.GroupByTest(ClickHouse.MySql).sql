@@ -25,6 +25,4 @@ FROM
 	ValueConversion g_1
 WHERE
 	'[{"Value":"Value1"}]' = g_1.Value2
-GROUP BY
-	g_1.Id
 

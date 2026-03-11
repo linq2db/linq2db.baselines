@@ -10,5 +10,5 @@ SELECT
 FROM
 	ValueConversion t
 WHERE
-	t.BoolValue = @false_value
+	t.BoolValue = @false_value::VarChar(1)
 

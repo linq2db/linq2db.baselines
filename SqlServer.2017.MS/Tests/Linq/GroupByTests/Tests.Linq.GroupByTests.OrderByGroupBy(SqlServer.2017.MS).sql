@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 
-SELECT
+SELECT DISTINCT
 	[c2].[ParentID]
 FROM
 	[Child] [c2]
-GROUP BY
-	[c2].[ParentID]
 ORDER BY
 	[c2].[ParentID]
 

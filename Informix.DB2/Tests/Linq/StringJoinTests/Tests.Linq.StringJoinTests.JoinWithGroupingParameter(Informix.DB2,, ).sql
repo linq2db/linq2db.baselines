@@ -11,6 +11,8 @@ FROM
 			SampleClass g_1
 	) m_1
 		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
+ORDER BY
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
@@ -25,21 +27,22 @@ FROM
 			SampleClass g_1
 	) m_1
 		INNER JOIN SampleClass d ON m_1.Key_1 = d.Id
+ORDER BY
+	m_1.Key_1
 
 -- Informix.DB2 Informix
 
-SELECT
+SELECT DISTINCT
 	g_1.Id
 FROM
 	SampleClass g_1
-GROUP BY
-	g_1.Id
 ORDER BY
 	g_1.Id
 
 -- Informix.DB2 Informix
 
 SELECT
+	t1.PK,
 	t1.Id,
 	t1.NullableValue,
 	t1.NotNullableValue,

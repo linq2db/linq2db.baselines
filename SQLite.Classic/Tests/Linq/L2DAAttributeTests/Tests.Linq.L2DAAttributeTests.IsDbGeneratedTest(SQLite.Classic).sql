@@ -32,11 +32,11 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.Classic SQLite
-DECLARE @cond  -- Int32
-SET     @cond = 0
+DECLARE @PersonID  -- Int32
+SET     @PersonID = 0
 
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[PersonID] = @cond
+	[Person].[PersonID] = @PersonID
 

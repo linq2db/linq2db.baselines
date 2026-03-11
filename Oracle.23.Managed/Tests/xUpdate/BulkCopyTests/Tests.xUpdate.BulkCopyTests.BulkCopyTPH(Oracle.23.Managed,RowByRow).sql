@@ -70,10 +70,10 @@ VALUES
 SELECT
 	t1."Discriminator",
 	t1."Id",
-	t1."Value3",
-	t1."NullableBool",
+	t1."Value1",
 	t1."Value2",
-	t1."Value1"
+	t1."Value3",
+	t1."NullableBool"
 FROM
 	"TPHTable" t1
 ORDER BY
@@ -84,10 +84,10 @@ ORDER BY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -99,10 +99,10 @@ FETCH NEXT 2 ROWS ONLY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -114,10 +114,10 @@ FETCH NEXT 2 ROWS ONLY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -129,10 +129,10 @@ FETCH NEXT 2 ROWS ONLY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -144,10 +144,10 @@ FETCH NEXT 2 ROWS ONLY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE
@@ -159,10 +159,10 @@ FETCH NEXT 2 ROWS ONLY
 SELECT
 	x."Discriminator",
 	x."Id",
-	x."Value3",
-	x."NullableBool",
+	x."Value1",
 	x."Value2",
-	x."Value1"
+	x."Value3",
+	x."NullableBool"
 FROM
 	"TPHTable" x
 WHERE

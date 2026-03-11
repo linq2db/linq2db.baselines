@@ -37,7 +37,7 @@ VALUES
 (
 	@Id,
 	@TaskId,
-	@Actual
+	@Actual::BOOLEAN
 )
 
 -- Informix.DB2 Informix

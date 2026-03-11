@@ -48,9 +48,9 @@ VALUES
 SELECT
 	t1.Discriminator,
 	t1.Id,
-	t1.Value3,
+	t1.Value1,
 	t1.Value2,
-	t1.Value1
+	t1.Value3
 FROM
 	TPHTableDefault t1
 ORDER BY
@@ -61,9 +61,9 @@ ORDER BY
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE
@@ -75,9 +75,9 @@ LIMIT 2
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE
@@ -89,9 +89,9 @@ LIMIT 2
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE
@@ -103,9 +103,9 @@ LIMIT 2
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE
@@ -117,9 +117,9 @@ LIMIT 2
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE
@@ -131,9 +131,9 @@ LIMIT 2
 SELECT
 	x.Discriminator,
 	x.Id,
-	x.Value3,
+	x.Value1,
 	x.Value2,
-	x.Value1
+	x.Value3
 FROM
 	TPHTableDefault x
 WHERE

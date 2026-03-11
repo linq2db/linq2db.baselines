@@ -5,16 +5,19 @@ AS
 (
 	SELECT
 		CASE
-			WHEN [g_1].[EnumValue] IS NOT NULL THEN [g_1].[EnumValue]
+			WHEN [g_2].[EnumValue] IS NOT NULL THEN [g_2].[EnumValue]
 			ELSE 0
 		END
 	FROM
-		[Issue4167Table] [g_1]
-	WHERE
-		[g_1].[Value] = '000001'
-	GROUP BY
-		[g_1].[Value],
-		[g_1].[EnumValue]
+		(
+			SELECT DISTINCT
+				[g_1].[Value] as [Value_1],
+				[g_1].[EnumValue]
+			FROM
+				[Issue4167Table] [g_1]
+			WHERE
+				[g_1].[Value] = '000001'
+		) [g_2]
 )
 SELECT
 	[t1].[EnumValue]

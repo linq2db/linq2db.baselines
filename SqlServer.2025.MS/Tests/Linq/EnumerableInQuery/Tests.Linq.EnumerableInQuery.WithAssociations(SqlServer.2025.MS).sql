@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	[it_1].[cond],
+	[it_1].[not_null],
 	[it_1].[ColorName],
 	[it_1].[StyleName]
 FROM
@@ -12,7 +12,7 @@ FROM
 			SELECT
 				[it].[ColorName],
 				[it].[StyleName],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(VALUES
 					([a_Color].[Name],[a_Style].[Name]),

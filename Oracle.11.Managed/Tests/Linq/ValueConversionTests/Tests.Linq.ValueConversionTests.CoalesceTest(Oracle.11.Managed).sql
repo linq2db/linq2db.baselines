@@ -1,7 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	Coalesce(t1."EnumNullable", t1."Enum")
+	Coalesce(CAST(t1."EnumNullable" AS NVarChar2(50)), t1."Enum")
 FROM
 	"ValueConversion" t1
 

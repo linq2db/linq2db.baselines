@@ -67,15 +67,15 @@ WHERE
 	t1."BoolValue" = 'Y'
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @cond Varchar2(36) -- String
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue Varchar2(36) -- String
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :cond
+	t1."GuidValue" = :GuidValue
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 

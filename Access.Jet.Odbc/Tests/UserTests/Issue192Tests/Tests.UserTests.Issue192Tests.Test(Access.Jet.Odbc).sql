@@ -67,8 +67,8 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @cond VarChar(36) -- AnsiString
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- AnsiString
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)

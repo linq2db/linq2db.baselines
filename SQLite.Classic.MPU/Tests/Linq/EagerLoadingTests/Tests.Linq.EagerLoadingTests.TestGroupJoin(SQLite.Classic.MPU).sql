@@ -59,6 +59,8 @@ FROM
 			FROM
 				[SubDetailClass] [d]
 		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
+ORDER BY
+	[d_1].[SubDetailValue]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
@@ -96,6 +98,8 @@ FROM
 			FROM
 				[MasterClass] [d]
 		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10
+ORDER BY
+	[d_1].[Value_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32

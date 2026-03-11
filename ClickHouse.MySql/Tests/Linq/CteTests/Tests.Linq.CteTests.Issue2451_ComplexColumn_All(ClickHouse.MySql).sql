@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		p.FirstName
+		p.FirstName as FirstName
 	FROM
 		Person p
 	UNION ALL

@@ -16,9 +16,5 @@ FROM
 				t."Id" = "a_Children"."Id"
 		) t1 ON 1=1
 WHERE
-	"SampleClass"."Id" = t."Id" AND
-	("SampleClass"."NullableValue" = t."NullableValue" OR "SampleClass"."NullableValue" IS NULL AND t."NullableValue" IS NULL) AND
-	"SampleClass"."NotNullableValue" = t."NotNullableValue" AND
-	("SampleClass"."VarcharValue" = t."VarcharValue" OR "SampleClass"."VarcharValue" IS NULL AND t."VarcharValue" IS NULL) AND
-	("SampleClass"."NVarcharValue" = t."NVarcharValue" OR "SampleClass"."NVarcharValue" IS NULL AND t."NVarcharValue" IS NULL)
+	"SampleClass"."PK" = t."PK"
 

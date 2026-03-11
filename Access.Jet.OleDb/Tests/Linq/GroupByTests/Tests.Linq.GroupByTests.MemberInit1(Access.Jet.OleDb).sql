@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
-SELECT
+SELECT DISTINCT
 	[g_1].[ParentID]
 FROM
 	[Child] [g_1]
-GROUP BY
-	[g_1].[ParentID]
 

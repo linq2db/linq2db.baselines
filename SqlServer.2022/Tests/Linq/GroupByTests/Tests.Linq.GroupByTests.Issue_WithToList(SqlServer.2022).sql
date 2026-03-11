@@ -42,15 +42,12 @@ VALUES
 
 -- SqlServer.2022
 
-SELECT
+SELECT DISTINCT
 	[a_Reference].[Id],
 	[t1].[ReferenceId]
 FROM
 	[TestAggregateTable] [t1]
 		LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
-GROUP BY
-	[a_Reference].[Id],
-	[t1].[ReferenceId]
 ORDER BY
 	[t1].[ReferenceId]
 

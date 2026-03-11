@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	'I-' || x.PersonID,
+	'I-' || To_Char(x.PersonID),
 	x.FirstName
 FROM
 	Person x

@@ -3,7 +3,7 @@
 MERGE INTO Person Target
 USING (
 	SELECT NULL::Int, NULL::NVarChar(255), NULL::NVarChar(255), NULL::NVarChar(255), NULL::Char(1)
-	FROM table(set{1})	WHERE 1 = 0
+	FROM table(set{1}) WHERE 1 = 0
 )
  Source
 (

@@ -1,5 +1,5 @@
 ﻿Parameters:
-p0='?' (DbType = Int32), @ef_filter__p0='?' (DbType = Boolean)
+p0='?' (DbType = Int32), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT [l0].[CategoryID], [l0].[CategoryName], [l0].[Description], [l0].[IsDeleted], [l0].[Picture]
 FROM [Categories] AS [c]
@@ -8,9 +8,9 @@ CROSS JOIN (
     FROM (
         SELECT * FROM [dbo].[Categories] WHERE CategoryId = @p0
     ) AS [l]
-    WHERE @ef_filter__p0 = CAST(1 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit)
+    WHERE @ef_filter__p1 = CAST(1 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit)
 ) AS [l0]
-WHERE @ef_filter__p0 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
+WHERE @ef_filter__p1 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
 
 
 -- SqlServer.2022

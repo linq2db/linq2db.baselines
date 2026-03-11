@@ -67,15 +67,15 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SqlCe
-DECLARE @cond NVarChar(36) -- String
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue NVarChar(36) -- String
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*) as [Count_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @cond
+	[t1].[GuidValue] = @GuidValue
 
 -- SqlCe
 

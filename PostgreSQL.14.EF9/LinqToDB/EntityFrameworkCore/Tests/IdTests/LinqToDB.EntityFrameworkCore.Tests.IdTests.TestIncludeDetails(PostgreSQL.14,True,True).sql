@@ -12,17 +12,12 @@ FROM
 	(
 		SELECT DISTINCT
 			d.id as "Id",
-			t1."Id" as "Id_1"
+			e.id as "Id_1"
 		FROM
-			(
-				SELECT DISTINCT
-					e.id as "Id"
-				FROM
-					entities e
-				WHERE
-					e.name = 'Alpha'
-			) t1
-				INNER JOIN details d ON t1."Id" = d.master_id
+			entities e
+				INNER JOIN details d ON e.id = d.master_id
+		WHERE
+			e.name = 'Alpha'
 	) m_1
 		INNER JOIN sub_details d_1 ON m_1."Id" = d_1.master_id
 

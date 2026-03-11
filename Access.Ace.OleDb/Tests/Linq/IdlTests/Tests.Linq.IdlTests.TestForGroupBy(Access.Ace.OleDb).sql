@@ -18,14 +18,12 @@ WHERE
 
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-GROUP BY
-	[x].[ChildID]
 
 -- Access.Ace.OleDb AccessOleDb
 
@@ -47,12 +45,10 @@ WHERE
 
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (3)
-GROUP BY
-	[x].[ChildID]
 

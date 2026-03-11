@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @cond NVarChar(4) -- String
-SET     @cond = 'Frau'
+DECLARE @Value NVarChar(4) -- String
+SET     @Value = 'Frau'
 
 SELECT
 	[m_1].[Id],
@@ -8,7 +8,7 @@ SELECT
 FROM
 	[DataClass] [m_1]
 WHERE
-	[m_1].[Value] = @cond
+	[m_1].[Value] = @Value
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @In NVarChar(4) -- String

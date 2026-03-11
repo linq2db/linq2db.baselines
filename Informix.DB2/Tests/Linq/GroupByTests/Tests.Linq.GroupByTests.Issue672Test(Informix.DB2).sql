@@ -70,15 +70,13 @@ SELECT
 	t1.ImageFullUrl
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			sG.Name
 		FROM
 			Stone sG
 		WHERE
 			sG.Enabled = 't'::BOOLEAN AND NOT sG.Name LIKE 'level - %' ESCAPE '~' AND
 			CHAR_LENGTH(sG.ImageFullUrl || '.') - 1 > 0
-		GROUP BY
-			sG.Name
 	) sG_1
 		INNER JOIN (
 			SELECT
@@ -92,5 +90,5 @@ FROM
 			WHERE
 				s.Enabled = 't'::BOOLEAN AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 				CHAR_LENGTH(s.ImageFullUrl || '.') - 1 > 0
-		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
+		) t1 ON sG_1.Name = t1.Name AND t1.rn = 1
 

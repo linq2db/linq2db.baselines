@@ -28,19 +28,11 @@ SELECT
 		FROM
 			[WarehouseStock] [s]
 		WHERE
-			[s].[ItemId] = [i].[Id] AND (
-				SELECT
-					[stock].[ItemId]
-				FROM
-					[WarehouseStock] [stock]
-				WHERE
-					[stock].[ItemId] = [i].[Id]
-				GROUP BY
-					[stock].[ItemId]
-			) = [s].[ItemId]
+			[s].[ItemId] = [i].[Id] AND [stock].[ItemId] = [s].[ItemId]
 	)
 FROM
 	[Issue4458Item] [i]
+		LEFT JOIN [WarehouseStock] [stock] ON ([stock].[ItemId] = [i].[Id])
 WHERE
 	EXISTS(
 		SELECT

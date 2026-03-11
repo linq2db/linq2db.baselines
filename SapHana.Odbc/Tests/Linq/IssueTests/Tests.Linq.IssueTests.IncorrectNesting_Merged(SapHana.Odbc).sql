@@ -7,7 +7,7 @@ FROM
 		LEFT JOIN "ThingState" "s" ON "s"."ThingId" = "thing_1"."Id"
 		LEFT JOIN LATERAL (
 			SELECT
-				"t"."ThingId" as "cond",
+				"t"."ThingId",
 				"t"."TransitionType"
 			FROM
 				"Transition" "t"
@@ -17,7 +17,7 @@ FROM
 		) "t1" ON 1=1
 WHERE
 	"s"."ThingId" IS NULL OR
-	"t1"."cond" IS NULL OR
+	"t1"."ThingId" IS NULL OR
 	"t1"."TransitionType" <> 'Delete' OR
 	"t1"."TransitionType" IS NULL
 

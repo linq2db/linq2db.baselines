@@ -19,10 +19,13 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
-	t1.FirstName,
-	t1.FirstName
+	t2.Key_1,
+	t2.Key_1
 FROM
-	Person t1
-GROUP BY
-	t1.FirstName
+	(
+		SELECT DISTINCT
+			t1.FirstName as Key_1
+		FROM
+			Person t1
+	) t2
 

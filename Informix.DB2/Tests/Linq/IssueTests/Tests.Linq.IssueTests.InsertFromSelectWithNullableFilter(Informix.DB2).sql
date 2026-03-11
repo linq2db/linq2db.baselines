@@ -16,14 +16,14 @@ FROM
 			a_Association.ID
 		FROM
 			InsertIssueTest t1
-				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
+				INNER JOIN InsertIssueTest a_Association ON t1.ID::Int = a_Association.intDataType
 		WHERE
 			1 = 0
 	) t2
 
 -- Informix.DB2 Informix
-DECLARE @cond SmallInt(2) -- Int16
-SET     @cond = 1234
+DECLARE @p SmallInt(2) -- Int16
+SET     @p = 1234
 
 INSERT INTO InsertIssueTest
 (
@@ -41,9 +41,9 @@ FROM
 			a_Association.ID
 		FROM
 			InsertIssueTest t1
-				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
+				INNER JOIN InsertIssueTest a_Association ON t1.ID::Int = a_Association.intDataType
 		WHERE
-			t1.ID = @cond
+			t1.ID = @p
 	) t2
 
 -- Informix.DB2 Informix

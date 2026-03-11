@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2008
-DECLARE @p BigInt -- Int64
-SET     @p = 5
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 14
+DECLARE @startId BigInt -- Int64
+SET     @startId = 5
+DECLARE @p Int -- Int32
+SET     @p = 14
 
 SELECT
 	[c_1].[value],
@@ -11,7 +11,7 @@ FROM
 	(
 		SELECT * FROM
 		[sample_class]
-		where [id] >= @p and [id] < @p_1
+		where [id] >= @startId and [id] < @p
 	) [c_1]
 WHERE
 	[c_1].[id] > 10

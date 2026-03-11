@@ -44,7 +44,7 @@ FROM
 			[x].[RecCreateTime],
 			[x].[RecRevisor],
 			[x].[RecReviseTime],
-			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
+			ROW_NUMBER() OVER (ORDER BY [x].[CarNo]) as [RN]
 		FROM
 			(
 				SELECT
@@ -75,6 +75,8 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+ORDER BY
+	[t1].[CarNo]
 
 -- SqlServer.2005.MS SqlServer.2005
 

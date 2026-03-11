@@ -3,8 +3,8 @@
 WITH CTE_1 AS
 (
 	SELECT
-		t1.ChildID,
-		t1.ParentID
+		t1.ChildID as ChildID,
+		t1.ParentID as ParentID
 	FROM
 		Child t1
 )

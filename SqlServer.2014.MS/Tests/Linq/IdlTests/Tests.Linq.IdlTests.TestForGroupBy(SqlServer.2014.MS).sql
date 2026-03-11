@@ -18,14 +18,12 @@ WHERE
 
 -- SqlServer.2014.MS SqlServer.2014
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-GROUP BY
-	[x].[ChildID]
 
 -- SqlServer.2014.MS SqlServer.2014
 
@@ -47,12 +45,10 @@ WHERE
 
 -- SqlServer.2014.MS SqlServer.2014
 
-SELECT
+SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (3)
-GROUP BY
-	[x].[ChildID]
 

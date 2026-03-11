@@ -12,6 +12,8 @@ WHERE
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @param Int32
 SET     @param = 200
+DECLARE @ValueStr VarChar(3) -- String
+SET     @ValueStr = '200'
 
 DELETE  
 FROM
@@ -21,5 +23,5 @@ WHERE
 RETURNING
 	`TableWithData`.`Id` + @param,
 	`TableWithData`.`Value` + @param,
-	Concat(`TableWithData`.`ValueStr`, @param)
+	Concat(`TableWithData`.`ValueStr`, @ValueStr)
 

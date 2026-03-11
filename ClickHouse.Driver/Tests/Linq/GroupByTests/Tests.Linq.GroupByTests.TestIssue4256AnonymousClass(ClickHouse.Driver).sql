@@ -1,19 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
-SELECT
-	it_1.IsActive,
-	it_1.Other
+SELECT DISTINCT
+	true,
+	it.SmallIntValue <> 0
 FROM
-	(
-		SELECT
-			true as IsActive,
-			it.SmallIntValue <> 0 as Other
-		FROM
-			LinqDataTypes it
-	) it_1
-GROUP BY
-	it_1.IsActive,
-	it_1.Other
+	LinqDataTypes it
 
 -- ClickHouse.Driver ClickHouse
 

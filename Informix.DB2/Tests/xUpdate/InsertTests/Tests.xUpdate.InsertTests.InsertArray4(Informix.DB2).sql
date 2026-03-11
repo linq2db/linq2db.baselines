@@ -36,7 +36,7 @@ VALUES
 	@ID,
 	@MoneyValue,
 	@DateTimeValue,
-	@BoolValue,
+	@BoolValue::BOOLEAN,
 	@GuidValue,
 	@BinaryValue,
 	@SmallIntValue

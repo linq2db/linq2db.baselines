@@ -1,11 +1,17 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	(COUNT(*)::text || ' items have not been processed, e.g. #' || Coalesce(MIN(g_1."PersonID")::text, '')) || '.'
+	(g_2."Message"::text || ' items have not been processed, e.g. #' || Coalesce(g_2."Message_1"::text, '')) || '.'
 FROM
-	"Person" g_1
+	(
+		SELECT
+			COUNT(*) as "Message",
+			MIN(g_1."PersonID") as "Message_1"
+		FROM
+			"Person" g_1
+		WHERE
+			g_1."LastName" <> 'ERROR'
+	) g_2
 WHERE
-	g_1."LastName" <> 'ERROR'
-HAVING
-	COUNT(*) > 0
+	g_2."Message" > 0
 

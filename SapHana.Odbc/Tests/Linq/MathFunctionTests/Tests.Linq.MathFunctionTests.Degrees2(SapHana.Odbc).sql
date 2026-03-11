@@ -1,14 +1,9 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Floor("t"."Value_1")
+	Floor(CAST("t"."MoneyValue" AS Double) * 57.295779513082323)
 FROM
-	(
-		SELECT
-			CAST("p"."MoneyValue" AS Double) * 57.295779513082323 as "Value_1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	"t"."Value_1" <> 0.10000000000000001
+	CAST("t"."MoneyValue" AS Double) * 57.295779513082323 <> 0.10000000000000001
 

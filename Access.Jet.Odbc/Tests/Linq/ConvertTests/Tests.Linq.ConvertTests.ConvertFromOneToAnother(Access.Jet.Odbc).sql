@@ -3,7 +3,7 @@ DECLARE @value VarChar(9, 5) -- AnsiString
 SET     @value = 6579.64648
 
 SELECT TOP 1
-	?
+	CVar(?)
 FROM
 	[LinqDataTypes] [t1]
 
@@ -39,7 +39,7 @@ DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
 SELECT TOP 1
-	?
+	CSng(?)
 FROM
 	[LinqDataTypes] [t1]
 
@@ -75,7 +75,7 @@ DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT TOP 1
-	?
+	CVar(?)
 FROM
 	[LinqDataTypes] [t1]
 

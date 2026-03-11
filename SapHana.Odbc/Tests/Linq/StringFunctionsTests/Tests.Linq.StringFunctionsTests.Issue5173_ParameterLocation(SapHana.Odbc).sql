@@ -13,8 +13,6 @@ FROM
 					SELECT 11 AS "item" FROM DUMMY
 					UNION ALL
 					SELECT 13 FROM DUMMY) "ch"
-		ORDER BY
-			"grp"."ParentID"
 	) "grp_1"
 GROUP BY
 	"grp_1"."Key_1"

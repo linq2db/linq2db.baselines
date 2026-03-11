@@ -43,10 +43,11 @@ FETCH NEXT 2 ROWS ONLY
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"TestBool" t1
+	"TestBool" r
 SET
-	"Id" = 1,
 	"Value" = 0
+WHERE
+	r."Id" = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 

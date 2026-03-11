@@ -12,7 +12,7 @@ INSERT INTO CreateTableTypes
 VALUES
 (
 	@Id,
-	@Boolean
+	@Boolean::BOOLEAN
 )
 
 -- Informix.DB2 Informix
@@ -29,7 +29,7 @@ INSERT INTO CreateTableTypes
 VALUES
 (
 	@Id,
-	@Boolean
+	@Boolean::BOOLEAN
 )
 
 -- Informix.DB2 Informix

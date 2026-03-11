@@ -1,7 +1,7 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
-	"it_1"."cond",
+	"it_1"."not_null",
 	"it_1"."ColorName",
 	"it_1"."StyleName",
 	"it_1"."Count_1",
@@ -28,7 +28,7 @@ FROM
 				"it"."field1",
 				"it"."field2",
 				"it"."field3",
-				1 as "cond"
+				1 as "not_null"
 			FROM
 				(
 					SELECT "a_Color"."Name" AS "ColorName", "t2"."Count_1" AS "Count", "a_Style"."Name" AS "StyleName", CASE

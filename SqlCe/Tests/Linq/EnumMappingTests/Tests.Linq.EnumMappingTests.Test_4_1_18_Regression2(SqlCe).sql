@@ -29,7 +29,7 @@ SELECT
 		WHEN [t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL
 			THEN 1
 		ELSE 0
-	END as [cond],
+	END as [c1],
 	[t1].[BigIntValue] as [TargetType],
 	[t1].[IntValue] as [TargetID]
 FROM

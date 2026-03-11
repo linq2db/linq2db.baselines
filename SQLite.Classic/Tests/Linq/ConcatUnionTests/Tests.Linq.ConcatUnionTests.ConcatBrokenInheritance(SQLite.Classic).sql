@@ -3,9 +3,9 @@
 SELECT
 	[t1].[Id],
 	[t1].[Discriminator],
-	[t1].[DoubleValue],
-	[t1].[StrValue],
 	[t1].[IntValue],
+	[t1].[StrValue],
+	[t1].[DoubleValue],
 	NULL,
 	NULL
 FROM

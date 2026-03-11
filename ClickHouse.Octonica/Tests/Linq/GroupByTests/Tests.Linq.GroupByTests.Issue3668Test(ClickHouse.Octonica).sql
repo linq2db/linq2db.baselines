@@ -20,6 +20,4 @@ FROM
 	Person x
 WHERE
 	x.PersonID = 1 AND x.LastName <> 'test' OR x.FirstName <> 'test' AND x.PersonID = 2
-GROUP BY
-	x.PersonID
 

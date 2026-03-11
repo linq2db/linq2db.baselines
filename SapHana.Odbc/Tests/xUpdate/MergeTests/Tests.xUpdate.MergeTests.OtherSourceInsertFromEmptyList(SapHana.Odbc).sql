@@ -213,7 +213,7 @@ VALUES
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT NULL "OtherId", NULL "OtherField1", NULL "OtherField5", NULL "OtherField2", NULL "OtherField4", NULL "OtherField3"
-	FROM DUMMY	WHERE 1 = 0
+	FROM DUMMY WHERE 1 = 0
 )
  "Source"
 ON ("Target"."Id" = "Source"."OtherId")

@@ -27,8 +27,8 @@ VALUES
 	@Value1,
 	@Enum,
 	@Value2,
-	@BoolValue,
-	@AnotherBoolValue
+	@BoolValue::VarChar(1),
+	@AnotherBoolValue::VarChar(1)
 )
 
 -- Informix.DB2 Informix
@@ -78,8 +78,8 @@ VALUES
 	@Value1,
 	@Value2,
 	@Enum,
-	@BoolValue,
-	@AnotherBoolValue
+	@BoolValue::VarChar(1),
+	@AnotherBoolValue::VarChar(1)
 )
 
 -- Informix.DB2 Informix

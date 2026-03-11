@@ -9,15 +9,10 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t2].[Id] as [Id_1]
+			[t1].[Id] as [Id_1]
 		FROM
-			(
-				SELECT DISTINCT
-					[t1].[Id]
-				FROM
-					[EntityMA] [t1]
-			) [t2]
-				INNER JOIN [EntityMB] [d] ON [t2].[Id] = [d].[FK]
+			[EntityMA] [t1]
+				INNER JOIN [EntityMB] [d] ON [t1].[Id] = [d].[FK]
 	) [m_1]
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
 
@@ -29,7 +24,7 @@ SELECT
 	[d].[FK],
 	[d].[FKD],
 	[d].[Id] as [Id_2],
-	[a_ObjectD].[Id] as [cond],
+	[a_ObjectD].[Id] as [Id_3],
 	[a_ObjectD].[FK] as [FK_1]
 FROM
 	[EntityMA] [m_1]

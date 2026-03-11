@@ -9,7 +9,7 @@ INSERT INTO "SampleClass"
 VALUES
 (
 	1,
-	'Test',
+	N'Test',
 	'SampleClass'
 )
 
@@ -24,7 +24,7 @@ INSERT INTO "SampleClass"
 VALUES
 (
 	2,
-	'Value',
+	N'Value',
 	'SomeTest'
 )
 

@@ -69,12 +69,10 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"g_1"."Id" as "Key_1"
 		FROM
 			"SampleClass" "g_1"
-		GROUP BY
-			"g_1"."Id"
 	) "t1"
 ORDER BY
 	"t1"."Key_1"
@@ -82,6 +80,7 @@ ORDER BY
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."PK",
 	"t1"."Id",
 	"t1"."NullableValue",
 	"t1"."NotNullableValue",

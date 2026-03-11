@@ -12,7 +12,8 @@ FROM
 	) [m_1]
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
-	[d].[NotNullableValue]
+	[d].[NotNullableValue],
+	[m_1].[Key_1]
 
 -- Sybase.Managed Sybase
 
@@ -28,22 +29,22 @@ FROM
 	) [m_1]
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
-	[d].[NotNullableValue]
+	[d].[NotNullableValue],
+	[m_1].[Key_1]
 
 -- Sybase.Managed Sybase
 
-SELECT
+SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
-GROUP BY
-	[g_1].[Id]
 ORDER BY
 	[g_1].[Id]
 
 -- Sybase.Managed Sybase
 
 SELECT
+	[t1].[PK],
 	[t1].[Id],
 	[t1].[NullableValue],
 	[t1].[NotNullableValue],

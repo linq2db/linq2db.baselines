@@ -87,16 +87,10 @@ FROM
 				WHERE
 					[l].[AlternativeLanguageID] = [t1].[LanguageId]
 			) as [Count_1],
-			(
-				SELECT
-					[t].[ServerOnlyText]
-				FROM
-					[TextDTO] [t]
-				WHERE
-					[t].[Id] = [t1].[TextId]
-			) as [ServerOnlyText]
+			[t].[ServerOnlyText]
 		FROM
 			[TextTranslationDTO] [t1]
+				INNER JOIN [TextDTO] [t] ON [t].[Id] = [t1].[TextId]
 	) [t2]
 ORDER BY
 	[t2].[Count_1],

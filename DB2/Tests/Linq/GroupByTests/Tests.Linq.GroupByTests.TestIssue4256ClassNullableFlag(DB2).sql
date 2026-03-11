@@ -1,19 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
-SELECT
-	"it_1"."IsActive",
-	"it_1"."Other"
+SELECT DISTINCT
+	1,
+	CAST("it"."SmallIntValue" <> 0 AS smallint)
 FROM
-	(
-		SELECT
-			1 as "IsActive",
-			CAST("it"."SmallIntValue" <> 0 AS smallint) as "Other"
-		FROM
-			"LinqDataTypes" "it"
-	) "it_1"
-GROUP BY
-	"it_1"."IsActive",
-	"it_1"."Other"
+	"LinqDataTypes" "it"
 
 -- DB2 DB2.LUW DB2LUW
 

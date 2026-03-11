@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		p.Id,
+		p.Id as Id,
 		toString(NULL) as Enum1
 	FROM
 		Issue3360NullInAnchor p

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT DISTINCT
-	[a_Book].[BookId] as [cond],
+	[a_Book].[BookId],
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
@@ -32,7 +32,7 @@ WHERE
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator] as [cond],
+	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]

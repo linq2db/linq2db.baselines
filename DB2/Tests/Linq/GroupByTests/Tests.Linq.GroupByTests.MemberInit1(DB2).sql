@@ -1,9 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
-SELECT
+SELECT DISTINCT
 	"g_1"."ParentID"
 FROM
 	"Child" "g_1"
-GROUP BY
-	"g_1"."ParentID"
 

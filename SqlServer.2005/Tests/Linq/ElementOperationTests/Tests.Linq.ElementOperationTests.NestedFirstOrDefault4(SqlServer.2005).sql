@@ -12,8 +12,8 @@ FROM
 			FROM
 				(
 					SELECT DISTINCT
-						[a_Children].[ChildID],
-						[a_Children].[ParentID]
+						[a_Children].[ParentID],
+						[a_Children].[ChildID]
 					FROM
 						[Child] [a_Children]
 					WHERE

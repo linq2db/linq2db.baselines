@@ -30,11 +30,9 @@ FROM
 
 -- SqlServer.Northwind SqlServer.2019
 
-SELECT
+SELECT DISTINCT
 	[a_Customer].[CustomerID]
 FROM
 	[Orders] [t1]
 		INNER JOIN [Customers] [a_Customer] ON [t1].[CustomerID] = [a_Customer].[CustomerID]
-GROUP BY
-	[a_Customer].[CustomerID]
 

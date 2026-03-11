@@ -221,21 +221,17 @@ SELECT
 	)
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"al_group_1"."Id"
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					"al_group"."Id",
 					"al_group"."AlertKey",
 					"al_group"."AlertCode"
 				FROM
 					"Alert" "al_group"
 						LEFT JOIN "AuditAlert" "au" ON "au"."AlertKey" = "al_group"."AlertKey"
-				GROUP BY
-					"al_group"."Id",
-					"al_group"."AlertKey",
-					"al_group"."AlertCode"
 			) "al_group_1"
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = "trade_1"."DealId"
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = "nomin_1"."CargoId"
@@ -243,7 +239,5 @@ FROM
 			"nomin_1"."DeliveryCounterParty" LIKE @cpty_21 ESCAPE '~' OR
 			"trade_1"."CounterParty" LIKE @cpty_22 ESCAPE '~' OR
 			"al_group_1"."AlertCode" LIKE @cpty_23 ESCAPE '~'
-		GROUP BY
-			"al_group_1"."Id"
 	) "al_group_2"
 

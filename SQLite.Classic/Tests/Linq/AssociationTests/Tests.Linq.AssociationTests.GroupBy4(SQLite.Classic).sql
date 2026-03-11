@@ -1,14 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 
-SELECT
-	[g_2].[Key_1]
+SELECT DISTINCT
+	CAST(strftime('%Y', [g_1].[DateTimeValue]) AS INTEGER)
 FROM
-	(
-		SELECT
-			CAST(strftime('%Y', [g_1].[DateTimeValue]) AS INTEGER) as [Key_1]
-		FROM
-			[LinqDataTypes] [g_1]
-	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
+	[LinqDataTypes] [g_1]
 

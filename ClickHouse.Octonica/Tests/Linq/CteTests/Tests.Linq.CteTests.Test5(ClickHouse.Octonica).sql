@@ -3,7 +3,7 @@
 WITH CTE_1 AS
 (
 	SELECT
-		t1.ParentID
+		t1.ParentID as ParentID
 	FROM
 		(
 			SELECT DISTINCT

@@ -3,14 +3,14 @@
 WITH CTE_1 AS
 (
 	SELECT
-		r.Id
+		r.Id as Id
 	FROM
 		CteTable r
 ),
 CTE_2 AS
 (
 	SELECT
-		r_1.Id
+		r_1.Id as Id
 	FROM
 		CTE_1 r_1
 ),
@@ -44,22 +44,22 @@ FROM
 WITH CTE_1 AS
 (
 	SELECT
-		r.Id,
-		r.Value2,
-		r.Value5,
-		r.Value3,
-		r.Value4
+		r.Id as Id,
+		r.Value2 as Value2,
+		r.Value5 as Value5,
+		r.Value3 as Value3,
+		r.Value4 as Value4
 	FROM
 		CteTable r
 ),
 CTE_2 AS
 (
 	SELECT
-		r_1.Id,
+		r_1.Id as Id,
 		r_1.Value2 as Value1,
 		r_1.Value5 as Value3,
 		r_1.Value3 as Value5,
-		r_1.Value4
+		r_1.Value4 as Value4
 	FROM
 		CTE_1 r_1
 ),

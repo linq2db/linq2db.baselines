@@ -77,6 +77,6 @@ FROM
 				q.Id as Id
 			FROM
 				qwerty q
-		) t1 ON t1.Id = x.`y1.q1.ref1` AND t1.rn <= 1
+		) t1 ON t1.Id = x.`y1.q1.ref1` AND t1.rn = 1
 LIMIT 2
 

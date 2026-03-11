@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toDecimal128(t.MoneyValue * toDecimal64('1000', 4), 10)
+	t.MoneyValue * toDecimal64('1000', 4)
 FROM
 	LinqDataTypes t
 

@@ -4,42 +4,37 @@ SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."AggregatedNotNullFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."AggregatedNotNullFilteredDistinct", ''), ', '), '')
 		FROM
 			(
-				SELECT
-					"t2"."AggregatedNotNullFilteredDistinct"
+				SELECT DISTINCT
+					"t1"."item" as "AggregatedNotNullFilteredDistinct"
 				FROM
 					(
-						SELECT DISTINCT
-							"t1"."item" as "AggregatedNotNullFilteredDistinct"
-						FROM
-							(
-								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NotNullableValue" FROM rdb$database
-								UNION ALL
-								SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
-						WHERE
-							"t1"."item" IS NOT NULL
-					) "t2"
+						SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NotNullableValue" FROM rdb$database
+						UNION ALL
+						SELECT "t"."NVarcharValue" FROM rdb$database) "t1"
+				WHERE
+					"t1"."item" IS NOT NULL
 				ORDER BY
-					"t2"."AggregatedNotNullFilteredDistinct"
-			) "t3"
+					"t1"."item"
+			) "t2"
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t6"."AggregatedFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t5"."AggregatedFilteredDistinct", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t5"."AggregatedFilteredDistinct"
+					"t4"."AggregatedFilteredDistinct"
 				FROM
 					(
 						SELECT DISTINCT
-							"t4"."item" as "AggregatedFilteredDistinct"
+							"t3"."item" as "AggregatedFilteredDistinct"
 						FROM
 							(
 								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
@@ -48,17 +43,17 @@ SELECT
 								UNION ALL
 								SELECT "t"."NotNullableValue" FROM rdb$database
 								UNION ALL
-								SELECT "t"."NVarcharValue" FROM rdb$database) "t4"
+								SELECT "t"."NVarcharValue" FROM rdb$database) "t3"
 						WHERE
-							"t4"."item" <> 'A' OR "t4"."item" IS NULL
-					) "t5"
+							"t3"."item" <> 'A' OR "t3"."item" IS NULL
+					) "t4"
 				ORDER BY
 					CASE
-						WHEN "t5"."AggregatedFilteredDistinct" IS NULL THEN 0
+						WHEN "t4"."AggregatedFilteredDistinct" IS NULL THEN 0
 						ELSE 1
 					END,
-					"t5"."AggregatedFilteredDistinct"
-			) "t6"
+					"t4"."AggregatedFilteredDistinct"
+			) "t5"
 	)
 FROM
 	"SampleClass" "t"
@@ -66,6 +61,7 @@ FROM
 -- Firebird.4 Firebird4
 
 SELECT
+	"t1".PK,
 	"t1"."Id",
 	"t1"."NullableValue",
 	"t1"."NotNullableValue",

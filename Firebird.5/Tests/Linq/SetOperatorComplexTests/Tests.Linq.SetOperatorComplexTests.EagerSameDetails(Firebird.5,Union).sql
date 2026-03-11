@@ -7,13 +7,12 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t3"."Id_1" as "Id"
+			"t3"."Id"
 		FROM
 			(
 				SELECT
 					"a_Book"."BookId" as "Id",
-					"a_Book"."BookName",
-					"a_Book"."BookId" as "Id_1"
+					"a_Book"."BookName"
 				FROM
 					"Author" "t1"
 						INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
@@ -23,8 +22,7 @@ FROM
 				UNION
 				SELECT
 					"a_Book_1"."BookId" as "Id",
-					"a_Book_1"."BookName",
-					"a_Book_1"."BookId" as "Id_1"
+					"a_Book_1"."BookName"
 				FROM
 					"Author" "t2"
 						INNER JOIN "BookAuthor" "b_1" ON "b_1"."FkAuthorId" = "t2"."AuthorId"
@@ -40,8 +38,7 @@ FROM
 
 SELECT
 	"a_Book"."BookId",
-	"a_Book"."BookName",
-	"a_Book"."BookId"
+	"a_Book"."BookName"
 FROM
 	"Author" "t1"
 		INNER JOIN "BookAuthor" "b" ON "b"."FkAuthorId" = "t1"."AuthorId"
@@ -51,8 +48,7 @@ WHERE
 UNION
 SELECT
 	"a_Book_1"."BookId",
-	"a_Book_1"."BookName",
-	"a_Book_1"."BookId"
+	"a_Book_1"."BookName"
 FROM
 	"Author" "t2"
 		INNER JOIN "BookAuthor" "b_1" ON "b_1"."FkAuthorId" = "t2"."AuthorId"
@@ -71,15 +67,10 @@ FROM
 	(
 		SELECT DISTINCT
 			"a_Book"."BookId",
-			"t2"."AuthorId"
+			"t1"."AuthorId"
 		FROM
-			(
-				SELECT DISTINCT
-					"t1"."AuthorId"
-				FROM
-					"Author" "t1"
-			) "t2"
-				INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "t2"."AuthorId"
+			"Author" "t1"
+				INNER JOIN "BookAuthor" "d" ON "d"."FkAuthorId" = "t1"."AuthorId"
 				LEFT JOIN "Book" "a_Book" ON "d"."FkBookId" = "a_Book"."BookId"
 	) "m_1"
 		INNER JOIN "BookAuthor" "d_1" ON "d_1"."FkBookId" = "m_1"."BookId"

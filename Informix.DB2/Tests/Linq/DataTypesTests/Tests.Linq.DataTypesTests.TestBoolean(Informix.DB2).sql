@@ -11,7 +11,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
+	r."Column" = @Column::BOOLEAN AND r.ColumnNullable = @ColumnNullable
 
 -- Informix.DB2 Informix
 
@@ -46,7 +46,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column,
+	@Column::BOOLEAN,
 	@ColumnNullable
 )
 
@@ -67,7 +67,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column,
+	@Column::BOOLEAN,
 	@ColumnNullable
 )
 
@@ -104,7 +104,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column,
+	@Column::BOOLEAN,
 	@ColumnNullable
 )
 
@@ -125,7 +125,7 @@ INSERT INTO BooleanTable
 VALUES
 (
 	@Id,
-	@Column,
+	@Column::BOOLEAN,
 	@ColumnNullable
 )
 

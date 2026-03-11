@@ -8,28 +8,23 @@ FROM
 WHERE
 	c_1."ParentID" IN (
 		SELECT
-			t3."ParentID"
+			t2."ParentID"
 		FROM
 			(
 				SELECT
-					t2."ParentID"
+					t1."ParentID",
+					ROWNUM as RN
 				FROM
 					(
 						SELECT
-							t1."ParentID",
-							ROWNUM as RN
+							p."ParentID"
 						FROM
-							(
-								SELECT
-									p."ParentID"
-								FROM
-									"Parent" p
-							) t1
-						WHERE
-							ROWNUM <= 101
-					) t2
+							"Parent" p
+					) t1
 				WHERE
-					t2.RN > 1
-			) t3
+					ROWNUM <= 101
+			) t2
+		WHERE
+			t2.RN > 1
 	)
 

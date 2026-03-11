@@ -3,7 +3,7 @@
 WITH CTE_1 AS
 (
 	SELECT
-		r.Value4
+		r.Value4 as Value4
 	FROM
 		CteTable r
 )
@@ -30,12 +30,12 @@ FROM
 WITH CTE_1 AS
 (
 	SELECT
-		r.Value4,
-		r.Id,
-		r.Value1,
-		r.Value2,
-		r.Value3,
-		r.Value5
+		r.Value4 as Value4,
+		r.Id as Id,
+		r.Value1 as Value1,
+		r.Value2 as Value2,
+		r.Value3 as Value3,
+		r.Value5 as Value5
 	FROM
 		CteTable r
 )

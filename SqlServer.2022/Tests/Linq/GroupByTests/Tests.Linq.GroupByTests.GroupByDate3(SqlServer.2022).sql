@@ -2,33 +2,33 @@
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[Date_1]),
-	DatePart(month, [grp_1].[Date_1])
+	DatePart(year, [grp_1].[c1]),
+	DatePart(month, [grp_1].[c1])
 FROM
 	(
 		SELECT
-			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
 	) [grp_1]
 GROUP BY
-	[grp_1].[Date_1]
+	[grp_1].[c1]
 
 -- SqlServer.2022
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
-	DatePart(year, [grp_1].[Date_1]),
-	DatePart(month, [grp_1].[Date_1])
+	DatePart(year, [grp_1].[c1]),
+	DatePart(month, [grp_1].[c1])
 FROM
 	(
 		SELECT
-			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
 	) [grp_1]
 GROUP BY
-	[grp_1].[Date_1]
+	[grp_1].[c1]
 

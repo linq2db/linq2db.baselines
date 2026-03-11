@@ -1,22 +1,13 @@
 ﻿-- SqlCe
 
-SELECT
-	[it_1].[IsActive],
-	[it_1].[Other]
+SELECT DISTINCT
+	1 as [IsActive],
+	CASE
+		WHEN [it].[SmallIntValue] <> 0 THEN 1
+		ELSE 0
+	END as [c1]
 FROM
-	(
-		SELECT
-			1 as [IsActive],
-			CASE
-				WHEN [it].[SmallIntValue] <> 0 THEN 1
-				ELSE 0
-			END as [Other]
-		FROM
-			[LinqDataTypes] [it]
-	) [it_1]
-GROUP BY
-	[it_1].[IsActive],
-	[it_1].[Other]
+	[LinqDataTypes] [it]
 
 -- SqlCe
 

@@ -9,10 +9,9 @@ USING (
 		[a_Patient_1].[Diagnosis] as [Patient_Diagnosis_1]
 	FROM
 		[Person] [t1]
-			INNER JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
-			LEFT JOIN [Person] [Target_1]
-				INNER JOIN [Patient] [a_Patient_1] ON [Target_1].[PersonID] = [a_Patient_1].[PersonID]
-			ON [Target_1].[PersonID] = [t1].[PersonID] AND [t1].[FirstName] = 'first 4'
+			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+			LEFT JOIN [Person] [Target_1] ON [Target_1].[PersonID] = [t1].[PersonID] AND [t1].[FirstName] = 'first 4'
+			LEFT JOIN [Patient] [a_Patient_1] ON [Target_1].[PersonID] = [a_Patient_1].[PersonID]
 ) [Source]
 (
 	[ID],

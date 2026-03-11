@@ -1,11 +1,9 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-SELECT
+SELECT DISTINCT
 	`pmp`.`ParentID`
 FROM
 	`Child` `pmp`
-GROUP BY
-	`pmp`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

@@ -16,10 +16,15 @@ FROM
 WHERE
 	[x].[LanguageID] IN (
 		SELECT
-			IIF(MAX([x_1].[LanguageID]) IS NULL, '', MAX([x_1].[LanguageID])) + 'test'
+			IIF([t1].[Max_1] IS NULL, '', [t1].[Max_1]) + 'test'
 		FROM
-			[Common_Language] [x_1]
-		GROUP BY
-			[x_1].[Name]
+			(
+				SELECT
+					MAX([x_1].[LanguageID]) as [Max_1]
+				FROM
+					[Common_Language] [x_1]
+				GROUP BY
+					[x_1].[Name]
+			) [t1]
 	)
 

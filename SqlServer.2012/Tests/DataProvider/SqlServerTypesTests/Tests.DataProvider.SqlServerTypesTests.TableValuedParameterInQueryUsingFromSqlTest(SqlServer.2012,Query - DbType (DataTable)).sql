@@ -1,10 +1,10 @@
 ﻿-- SqlServer.2012
-DECLARE @p [dbo].[TestTableType] -- Structured -- Object
-SET     @p = 
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = 
 
 SELECT
 	[record_1].[Id],
 	[record_1].[Name]
 FROM
-	@p [record_1]
+	@table [record_1]
 

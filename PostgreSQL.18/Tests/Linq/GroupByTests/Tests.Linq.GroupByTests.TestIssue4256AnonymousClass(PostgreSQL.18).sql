@@ -1,19 +1,10 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-SELECT
-	it_1."IsActive",
-	it_1."Other"
+SELECT DISTINCT
+	True,
+	it."SmallIntValue" <> 0
 FROM
-	(
-		SELECT
-			True as "IsActive",
-			it."SmallIntValue" <> 0 as "Other"
-		FROM
-			"LinqDataTypes" it
-	) it_1
-GROUP BY
-	it_1."IsActive",
-	it_1."Other"
+	"LinqDataTypes" it
 
 -- PostgreSQL.18 PostgreSQL
 

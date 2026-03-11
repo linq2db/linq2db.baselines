@@ -23,14 +23,14 @@ VALUES
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[cond],
+	[t1].[not_null],
 	[t1].[Data_1]
 FROM
 	[User] [t]
 		LEFT JOIN (
 			SELECT
 				[a_Data].[Data] as [Data_1],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(
 					SELECT 'Testing' AS Data

@@ -70,15 +70,13 @@ SELECT
 	[t1].[ImageFullUrl]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[sG].[Name]
 		FROM
 			[Stone] [sG]
 		WHERE
 			[sG].[Enabled] = 1 AND [sG].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
 			LEN([sG].[ImageFullUrl] + N'.') - 1 > 0
-		GROUP BY
-			[sG].[Name]
 	) [sG_1]
 		CROSS APPLY (
 			SELECT TOP (1)

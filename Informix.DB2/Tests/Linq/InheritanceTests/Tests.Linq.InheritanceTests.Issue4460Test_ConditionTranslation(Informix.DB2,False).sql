@@ -20,7 +20,7 @@ VALUES
 	@Code,
 	@Id,
 	@Name,
-	@IsMale
+	@IsMale::BOOLEAN
 )
 
 -- Informix.DB2 Informix

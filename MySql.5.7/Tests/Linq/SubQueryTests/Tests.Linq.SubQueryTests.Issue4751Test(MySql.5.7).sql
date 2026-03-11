@@ -56,6 +56,8 @@ FROM
 	) `x`
 WHERE
 	LOCATE(@carNo, `x`.`CarNo`) > 0 AND LOCATE(@carBrand, `x`.`CarBrand`) > 0
+ORDER BY
+	`x`.`CarNo`
 LIMIT @skip, @take
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

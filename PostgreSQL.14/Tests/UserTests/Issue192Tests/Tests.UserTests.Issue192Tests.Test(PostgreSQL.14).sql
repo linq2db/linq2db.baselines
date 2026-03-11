@@ -67,15 +67,15 @@ WHERE
 	t1."BoolValue" = 'Y'
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-DECLARE @cond Varchar(36) -- String
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue Varchar(36) -- String
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :cond
+	t1."GuidValue" = :GuidValue
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 

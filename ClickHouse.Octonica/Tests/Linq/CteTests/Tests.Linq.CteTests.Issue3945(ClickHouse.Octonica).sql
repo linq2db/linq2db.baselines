@@ -8,8 +8,8 @@ INSERT INTO TestFolder
 WITH CTE AS
 (
 	SELECT
-		c_1.ParentId,
-		c_1.Label
+		c_1.ParentId as ParentId,
+		c_1.Label as Label
 	FROM
 		TestFolder c_1
 	WHERE

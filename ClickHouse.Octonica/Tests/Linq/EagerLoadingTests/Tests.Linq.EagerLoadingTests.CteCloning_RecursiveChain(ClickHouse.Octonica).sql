@@ -3,7 +3,7 @@
 WITH RECURSIVE cte AS
 (
 	SELECT
-		r.Value2
+		r.Value2 as Value2
 	FROM
 		CteTable r
 	UNION ALL
@@ -16,7 +16,7 @@ WITH RECURSIVE cte AS
 cte0 AS
 (
 	SELECT
-		r_2.Value2
+		r_2.Value2 as Value2
 	FROM
 		CteTable r_2
 	UNION ALL
@@ -35,8 +35,8 @@ cte0 AS
 cte1 AS
 (
 	SELECT
-		r_5.Value2,
-		r_5.Value4
+		r_5.Value2 as Value2,
+		r_5.Value4 as Value4
 	FROM
 		CteTable r_5
 	UNION ALL
@@ -84,7 +84,7 @@ FROM
 WITH RECURSIVE cte AS
 (
 	SELECT
-		r.Value2
+		r.Value2 as Value2
 	FROM
 		CteTable r
 	UNION ALL
@@ -97,7 +97,7 @@ WITH RECURSIVE cte AS
 cte0 AS
 (
 	SELECT
-		r_2.Value2
+		r_2.Value2 as Value2
 	FROM
 		CteTable r_2
 	UNION ALL
@@ -117,11 +117,11 @@ cte1 AS
 (
 	SELECT
 		r_5.Value4 as Id,
-		r_5.Value1,
-		r_5.Value2,
-		r_5.Value3,
-		r_5.Value4,
-		r_5.Value5
+		r_5.Value1 as Value1,
+		r_5.Value2 as Value2,
+		r_5.Value3 as Value3,
+		r_5.Value4 as Value4,
+		r_5.Value5 as Value5
 	FROM
 		CteTable r_5
 	UNION ALL

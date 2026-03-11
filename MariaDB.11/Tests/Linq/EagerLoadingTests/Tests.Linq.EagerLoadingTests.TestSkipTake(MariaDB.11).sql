@@ -37,6 +37,8 @@ FROM
 			FROM
 				`DetailClass` `d`
 		) `d_1` ON `m_2`.`Id1` = `d_1`.`MasterId` AND `d_1`.`rn` > 1 AND `d_1`.`rn` <= 3
+ORDER BY
+	`d_1`.`DetailId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

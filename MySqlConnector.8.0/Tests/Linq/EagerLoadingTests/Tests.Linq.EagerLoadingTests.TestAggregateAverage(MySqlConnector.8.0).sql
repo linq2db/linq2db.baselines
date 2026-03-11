@@ -3,24 +3,19 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST(`t2`.`Average` AS DOUBLE))
+			AVG(CAST(`t1`.`Average` AS DOUBLE))
 		FROM
 			(
-				SELECT
-					`t1`.`Average`
+				SELECT DISTINCT
+					`a_Details`.`DetailId` as `Average`
 				FROM
-					(
-						SELECT DISTINCT
-							`a_Details`.`DetailId` as `Average`
-						FROM
-							`DetailClass` `a_Details`
-						WHERE
-							`m_1`.`Id1` = `a_Details`.`MasterId`
-					) `t1`
+					`DetailClass` `a_Details`
+				WHERE
+					`m_1`.`Id1` = `a_Details`.`MasterId`
 				ORDER BY
-					`t1`.`Average`
+					`a_Details`.`DetailId`
 				LIMIT 1, 5
-			) `t2`
+			) `t1`
 	)
 FROM
 	`MasterClass` `m_1`

@@ -67,15 +67,15 @@ WHERE
 	`t1`.`BoolValue` = 'Y'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @cond VarChar(36) -- AnsiString
-SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- AnsiString
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	`TypeConvertTable` `t1`
 WHERE
-	`t1`.`GuidValue` = @cond
+	`t1`.`GuidValue` = @GuidValue
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 

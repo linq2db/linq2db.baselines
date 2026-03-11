@@ -1,25 +1,24 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[i].[Id],
-	IIF((
-		SELECT TOP 1
-			[a_SubDatas].[Reason]
-		FROM
-			[SubData2] [a_SubDatas]
-		WHERE
-			[a_SubData].[Id] = [a_SubDatas].[Id]
-	) IS NULL, '', (
-		SELECT TOP 1
-			[a_SubDatas].[Reason]
-		FROM
-			[SubData2] [a_SubDatas]
-		WHERE
-			[a_SubData].[Id] = [a_SubDatas].[Id]
-	))
+	[t1].[Id],
+	IIF([t1].[Reason] IS NULL, '', [t1].[Reason])
 FROM
-	[Data] [i]
-		LEFT JOIN [SubData1] [a_SubData] ON ([i].[Id] = [a_SubData].[Id])
+	(
+		SELECT
+			[i].[Id],
+			(
+				SELECT TOP 1
+					[a_SubDatas].[Reason]
+				FROM
+					[SubData2] [a_SubDatas]
+				WHERE
+					[a_SubData].[Id] = [a_SubDatas].[Id]
+			) as [Reason]
+		FROM
+			[Data] [i]
+				LEFT JOIN [SubData1] [a_SubData] ON ([i].[Id] = [a_SubData].[Id])
+	) [t1]
 ORDER BY
-	[i].[Id]
+	[t1].[Id]
 

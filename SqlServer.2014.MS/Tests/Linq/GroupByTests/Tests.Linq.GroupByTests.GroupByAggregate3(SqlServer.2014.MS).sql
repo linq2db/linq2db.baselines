@@ -4,7 +4,7 @@ SELECT
 	[g_2].[Key_1]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			IIF((
 				SELECT
 					AVG([a_Children].[ParentID])
@@ -16,8 +16,6 @@ FROM
 		FROM
 			[Parent] [g_1]
 	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
 ORDER BY
 	[g_2].[Key_1]
 

@@ -213,7 +213,7 @@ VALUES
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT NULL "ID"
-	FROM DUMMY	WHERE 1 = 0
+	FROM DUMMY WHERE 1 = 0
 )
  "Source"
 ON ("Target"."Id" = "Source"."ID")

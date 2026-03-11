@@ -1,14 +1,9 @@
 ﻿-- SqlServer.2012
 
 SELECT
-	[p].[c1]
+	CAST([p].[MoneyValue] AS Float)
 FROM
-	(
-		SELECT
-			CAST([t].[MoneyValue] AS Float) as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [p]
 WHERE
-	[p].[c1] > 0
+	CAST([p].[MoneyValue] AS Float) > 0
 

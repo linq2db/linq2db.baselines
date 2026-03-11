@@ -68,6 +68,6 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [ir].[Id] ORDER BY [ir].[Id]) as [rn]
 			FROM
 				[MlogInfeedAddonsDTO] [ir]
-		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] <= 1
+		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] = 1
 LIMIT 1
 

@@ -4,12 +4,10 @@ SELECT
 	"t1"."Taxonomy"
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			"s"."PersonID"
 		FROM
 			"Doctor" "s"
-		GROUP BY
-			"s"."PersonID"
 	) "s_2"
 		CROSS JOIN LATERAL (
 			SELECT

@@ -3,7 +3,7 @@
 MERGE INTO "Person" "Target"
 USING (
 	SELECT NULL::Int, NULL::text, NULL::text, NULL::text, NULL::Char(1)
-	FROM "Person"	WHERE 1 = 0
+	FROM "Person" WHERE 1 = 0
 )
  "Source"
 (

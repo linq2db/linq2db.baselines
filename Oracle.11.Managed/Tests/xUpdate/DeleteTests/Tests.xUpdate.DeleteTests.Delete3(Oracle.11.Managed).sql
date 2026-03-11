@@ -47,7 +47,7 @@ DELETE FROM
 WHERE
 	EXISTS(
 		SELECT
-			*
+			1
 		FROM
 			"Child" c_1
 				INNER JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"

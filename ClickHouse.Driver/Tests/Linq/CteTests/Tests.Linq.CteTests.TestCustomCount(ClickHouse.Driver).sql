@@ -3,8 +3,8 @@
 WITH CTE_1 AS
 (
 	SELECT DISTINCT
-		c_1.ParentID,
-		c_1.ChildID
+		c_1.ParentID as ParentID,
+		c_1.ChildID as ChildID
 	FROM
 		Child c_1
 	WHERE

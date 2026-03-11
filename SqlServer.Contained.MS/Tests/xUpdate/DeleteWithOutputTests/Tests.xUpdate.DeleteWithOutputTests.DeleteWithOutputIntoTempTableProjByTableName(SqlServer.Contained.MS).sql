@@ -23,12 +23,14 @@ WHERE
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 100500
+DECLARE @ValueStr NVarChar(50) -- String
+SET     @ValueStr = N'100500'
 
 DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	DELETED.[ValueStr] + CAST(@param AS NVarChar(11))
+	DELETED.[ValueStr] + @ValueStr
 INTO [tempdb]..[#DestinationTable_target]
 (
 	[Id],

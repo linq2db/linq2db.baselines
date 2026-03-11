@@ -41,10 +41,11 @@ FROM
 -- Informix.DB2 Informix
 
 UPDATE
-	TestBool t1
+	TestBool r
 SET
-	Id = 1,
 	"Value" = 'f'::BOOLEAN
+WHERE
+	r.Id = 1
 
 -- Informix.DB2 Informix
 

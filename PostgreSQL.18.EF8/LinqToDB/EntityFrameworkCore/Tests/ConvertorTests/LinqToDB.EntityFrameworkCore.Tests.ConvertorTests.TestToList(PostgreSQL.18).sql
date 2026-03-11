@@ -103,6 +103,8 @@ WHERE s."Id"::bigint = 1
 
 
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Bigint -- Int64
+SET     @Id = 1
 
 SELECT
 	s."Id",
@@ -113,7 +115,7 @@ SELECT
 FROM
 	"Subdivisions" s
 WHERE
-	s."Id"::BigInt = 1
+	s."Id"::BigInt = :Id
 
 
 

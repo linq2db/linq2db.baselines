@@ -1,14 +1,9 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
-SELECT
-	[t1].[ParentID]
+SELECT DISTINCT
+	[ch].[ParentID]
 FROM
-	(
-		SELECT DISTINCT
-			[ch].[ParentID]
-		FROM
-			[Child] [ch]
-	) [t1]
+	[Child] [ch]
 ORDER BY
-	[t1].[ParentID]
+	[ch].[ParentID]
 

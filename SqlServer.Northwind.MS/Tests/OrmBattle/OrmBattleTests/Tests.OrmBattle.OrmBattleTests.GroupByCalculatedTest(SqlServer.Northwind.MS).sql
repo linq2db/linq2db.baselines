@@ -27,15 +27,8 @@ FROM
 
 -- SqlServer.Northwind.MS SqlServer.2019
 
-SELECT
-	[g_2].[Key_1]
+SELECT DISTINCT
+	IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap')
 FROM
-	(
-		SELECT
-			IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap') as [Key_1]
-		FROM
-			[Orders] [g_1]
-	) [g_2]
-GROUP BY
-	[g_2].[Key_1]
+	[Orders] [g_1]
 

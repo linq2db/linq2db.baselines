@@ -1,14 +1,9 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	p.c1
+	p.MoneyValue::Real
 FROM
-	(
-		SELECT
-			t.MoneyValue::Real as c1
-		FROM
-			LinqDataTypes t
-	) p
+	LinqDataTypes p
 WHERE
-	p.c1 > 0
+	p.MoneyValue::Real > 0
 

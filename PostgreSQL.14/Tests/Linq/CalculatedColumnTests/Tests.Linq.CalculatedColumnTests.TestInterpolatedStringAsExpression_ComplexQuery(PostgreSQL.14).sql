@@ -18,16 +18,16 @@ FROM
 			x."Id",
 			x."StrVal",
 			Length(x."StrVal") as "Length_1",
-			x."IntVal"
+			x."IntVal",
+			CASE
+				WHEN NOT (x."StrVal" IS NULL OR Length(x."StrVal") = 0) THEN x."StrVal"
+				ELSE x."IntVal"::text
+			END as c1
 		FROM
 			"InterpolatedStringTable" x
 	) x_1
 ORDER BY
-	CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR Length(x_1."StrVal") = 0)
-			THEN x_1."StrVal"
-		ELSE x_1."IntVal"::text
-	END
+	x_1.c1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
@@ -49,14 +49,14 @@ FROM
 			x."Id",
 			x."StrVal",
 			Length(x."StrVal") as "Length_1",
-			x."IntVal"
+			x."IntVal",
+			Coalesce(CASE
+				WHEN NOT (x."StrVal" IS NULL OR Length(x."StrVal") = 0) THEN x."StrVal"
+				ELSE x."IntVal"::text
+			END, '') as c1
 		FROM
 			"InterpolatedStringTable" x
 	) x_1
 ORDER BY
-	Coalesce(CASE
-		WHEN NOT (x_1."StrVal" IS NULL OR Length(x_1."StrVal") = 0)
-			THEN x_1."StrVal"
-		ELSE x_1."IntVal"::text
-	END, '')
+	x_1.c1
 

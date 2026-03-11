@@ -3,7 +3,7 @@
 MERGE INTO [Person] [Target]
 USING (
 	SELECT NULL, NULL, NULL, NULL, NULL
-	FROM [Person]	WHERE 1 = 0
+	FROM [Person] WHERE 1 = 0
 )
  [Source]
 (

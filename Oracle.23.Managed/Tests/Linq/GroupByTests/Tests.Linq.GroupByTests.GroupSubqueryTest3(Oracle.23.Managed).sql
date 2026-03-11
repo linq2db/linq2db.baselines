@@ -1,11 +1,9 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
-SELECT
+SELECT DISTINCT
 	pmp."ParentID"
 FROM
 	"Child" pmp
-GROUP BY
-	pmp."ParentID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 

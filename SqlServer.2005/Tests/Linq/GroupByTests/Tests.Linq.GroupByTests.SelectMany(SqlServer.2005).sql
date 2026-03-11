@@ -5,12 +5,10 @@ SELECT
 	[ch].[ChildID]
 FROM
 	(
-		SELECT
+		SELECT DISTINCT
 			[t1].[ParentID]
 		FROM
 			[Child] [t1]
-		GROUP BY
-			[t1].[ParentID]
 	) [g_1]
 		INNER JOIN [Child] [ch] ON [g_1].[ParentID] = [ch].[ParentID]
 

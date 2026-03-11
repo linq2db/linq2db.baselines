@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[it_1].[cond],
+	[it_1].[not_null],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
 	[it_1].[Count_1]
@@ -14,7 +14,7 @@ FROM
 				[it].[ColorName],
 				[it].[StyleName],
 				[it].[Count] as [Count_1],
-				1 as [cond]
+				1 as [not_null]
 			FROM
 				(
 					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], (

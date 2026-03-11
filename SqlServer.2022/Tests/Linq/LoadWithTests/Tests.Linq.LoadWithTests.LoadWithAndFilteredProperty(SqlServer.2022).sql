@@ -26,6 +26,8 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.2022
 
@@ -76,6 +78,8 @@ FROM
 			WHERE
 				[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
 		) [d_1]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.2022
 
@@ -92,16 +96,16 @@ ORDER BY
 -- SqlServer.2022
 
 SELECT
-	[m_2].[cond],
 	[m_2].[Id],
+	[m_2].[Id_1],
 	[d_2].[Id],
 	[d_2].[Value_1],
 	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [cond],
-			[t1].[Id]
+			[a_Parent].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -128,14 +132,15 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[Id] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
+ORDER BY
+	[m_2].[Id_1]
 
 -- SqlServer.2022
 
@@ -157,6 +162,8 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.2022
 
@@ -173,16 +180,16 @@ ORDER BY
 -- SqlServer.2022
 
 SELECT
-	[m_2].[cond],
 	[m_2].[Id],
+	[m_2].[Id_1],
 	[d_2].[Id],
 	[d_2].[Value_1],
 	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Parent].[Id] as [cond],
-			[t1].[Id]
+			[a_Parent].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -209,14 +216,15 @@ FROM
 					FROM
 						[SubItem2] [i]
 					WHERE
-						([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
-						[i].[ParentId] % 2 = 0
+						[m_2].[Id] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 					ORDER BY
 						[i].[Id]
 				) [d_1]
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
+ORDER BY
+	[m_2].[Id_1]
 
 -- SqlServer.2022
 
@@ -238,6 +246,8 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.2022
 
@@ -270,6 +280,8 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
+ORDER BY
+	[m_2].[Id]
 
 -- SqlServer.2022
 
