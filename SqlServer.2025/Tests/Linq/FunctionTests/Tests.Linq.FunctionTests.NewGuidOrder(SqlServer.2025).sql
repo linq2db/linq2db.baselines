@@ -1,0 +1,9 @@
+﻿-- SqlServer.2025
+
+SELECT
+	[p].[GuidValue]
+FROM
+	[LinqDataTypes] [p]
+ORDER BY
+	NewID()
+

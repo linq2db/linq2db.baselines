@@ -1,0 +1,5 @@
+﻿-- SqlServer.2025
+
+SELECT
+	DATEFROMPARTS(2022, 2, 22)
+
