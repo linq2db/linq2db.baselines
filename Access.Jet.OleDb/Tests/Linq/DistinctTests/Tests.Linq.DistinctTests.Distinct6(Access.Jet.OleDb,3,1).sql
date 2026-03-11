@@ -1,0 +1,20 @@
+﻿-- Access.Jet.OleDb AccessOleDb
+DECLARE @ParentID Integer -- Int32
+SET     @ParentID = 1
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 4
+
+SELECT DISTINCT
+	IIF([p].[Value1] IS NULL, [p].[ParentID] + @ParentID, [p].[Value1]),
+	CVar(@Value1)
+FROM
+	[Parent] [p]
+
+-- Access.Jet.OleDb AccessOleDb
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
