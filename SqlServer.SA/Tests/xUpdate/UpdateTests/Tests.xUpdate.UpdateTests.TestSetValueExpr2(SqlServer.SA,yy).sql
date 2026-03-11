@@ -1,0 +1,25 @@
+﻿-- SqlServer.SA SqlServer.2019
+DECLARE @str NVarChar(4000) -- String
+SET     @str = N'yy'
+DECLARE @id Int -- Int32
+SET     @id = 1
+
+UPDATE
+	[TextData]
+SET
+	[Items1] = Coalesce([TextData].[Items1], N'') + Coalesce(@str, N''),
+	[Items2] = Coalesce([TextData].[Items2], N'') + Coalesce(@str, N'')
+WHERE
+	[TextData].[Id] >= @id
+
+-- SqlServer.SA SqlServer.2019
+
+SELECT
+	[t1].[Id],
+	[t1].[Items1],
+	[t1].[Items2]
+FROM
+	[TextData] [t1]
+ORDER BY
+	[t1].[Id]
+

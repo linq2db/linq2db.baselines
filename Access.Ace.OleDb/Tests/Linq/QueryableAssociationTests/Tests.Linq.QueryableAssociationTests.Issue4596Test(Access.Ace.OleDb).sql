@@ -1,0 +1,34 @@
+﻿-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[m_1].[Id],
+	[m_1].[C1],
+	[d].[Id],
+	[d].[FormId],
+	[d].[OrderIndex],
+	[d].[Name1],
+	[d].[Name2],
+	[d].[Name3]
+FROM
+	(
+		SELECT TOP 1
+			[t1].[Id],
+			[t1].[C1]
+		FROM
+			[Issue4596Form] [t1]
+	) [m_1]
+		INNER JOIN [Issue4596Item] [d] ON ([d].[FormId] = [m_1].[Id])
+ORDER BY
+	IIF([m_1].[C1] = 'T', [d].[OrderIndex], 0),
+	IIF([m_1].[C1] <> 'T', [d].[Name1], ''),
+	IIF([m_1].[C1] <> 'T', [d].[Name2], ''),
+	IIF([m_1].[C1] <> 'T', [d].[Name3], '')
+
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 1
+	[t1].[Id],
+	[t1].[C1]
+FROM
+	[Issue4596Form] [t1]
+

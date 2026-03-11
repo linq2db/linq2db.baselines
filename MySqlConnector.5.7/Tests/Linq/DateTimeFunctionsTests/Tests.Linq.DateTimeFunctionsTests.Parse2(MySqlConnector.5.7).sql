@@ -1,0 +1,9 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	CAST(Concat(CAST(Extract(year from `d`.`DateTimeValue`) AS CHAR(11)), '-02-24 00:00:00') AS DATETIME)
+FROM
+	`LinqDataTypes` `d`
+WHERE
+	Extract(day from CAST(Concat(CAST(Extract(year from `d`.`DateTimeValue`) AS CHAR(11)), '-02-24 00:00:00') AS DATETIME)) > 0
+

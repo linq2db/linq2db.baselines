@@ -1,0 +1,18 @@
+﻿-- Firebird.3 Firebird3
+
+SELECT
+	"g_2"."c1",
+	COUNT(*)
+FROM
+	(
+		SELECT
+			CASE
+				WHEN "g_1"."TradingStatus" = 'D' THEN TRUE
+				ELSE FALSE
+			END as "c1"
+		FROM
+			"Issue913Test" "g_1"
+	) "g_2"
+GROUP BY
+	"g_2"."c1"
+
