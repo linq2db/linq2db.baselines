@@ -1,0 +1,192 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool3` IS NULL AND `r`.`Bool1` = 'Y' AND `r`.`Bool2` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool2` IS NULL AND `r`.`Bool1` = 'Y' AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool3` = 'Y' AND `r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'N' AND `r`.`Bool2` IS NULL AND `r`.`Bool3` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool2` IS NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool3` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y' AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y' AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool3` IS NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool2` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = 'N' AND `r`.`Bool3` IS NULL
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N' AND `r`.`Bool3` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N' AND `r`.`Bool3` = 'Y'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool3` = 'Y' AND `r`.`Bool1` = 'Y' AND `r`.`Bool2` = 'N'
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`r`.`Id`,
+	`r`.`Bool1`,
+	`r`.`Bool2`,
+	`r`.`Bool3`
+FROM
+	`Issue3830TestTable` `r`
+WHERE
+	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = 'Y' AND `r`.`Bool3` = 'Y'
+
