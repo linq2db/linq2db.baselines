@@ -1,0 +1,11 @@
+﻿-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."Code",
+	t1."Id",
+	t1."Child1Field",
+	t1."Grandchild11Field",
+	t1."Grandchild12Field"
+FROM
+	"InheritanceFilter" t1
+
