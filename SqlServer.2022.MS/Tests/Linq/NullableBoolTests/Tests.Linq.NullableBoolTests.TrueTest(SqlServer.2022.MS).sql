@@ -1,0 +1,40 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[NullableBoolClass] [t]
+WHERE
+	[t].[Value] = 1
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[NullableBoolClass] [t]
+WHERE
+	[t].[Value] = 1
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[NullableBoolClass] [t]
+WHERE
+	[t].[Value] = 0 OR [t].[Value] IS NULL
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t].[Id],
+	[t].[Value]
+FROM
+	[NullableBoolClass] [t]
+WHERE
+	[t].[Value] = 0
+
