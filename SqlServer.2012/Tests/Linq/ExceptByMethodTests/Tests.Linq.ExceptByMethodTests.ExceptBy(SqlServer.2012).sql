@@ -1,0 +1,27 @@
+﻿-- SqlServer.2012
+
+SELECT
+	[e_1].[Id],
+	[e_1].[TestId]
+FROM
+	(
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY [e].[TestId] ORDER BY [e].[TestId]) as [RowNumber],
+			[e].[Id],
+			[e].[TestId]
+		FROM
+			[TestTable] [e]
+		WHERE
+			[e].[TestId] NOT IN (20)
+	) [e_1]
+WHERE
+	[e_1].[RowNumber] = 1
+
+-- SqlServer.2012
+
+SELECT
+	[t1].[Id],
+	[t1].[TestId]
+FROM
+	[TestTable] [t1]
+

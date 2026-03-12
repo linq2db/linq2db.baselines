@@ -1,0 +1,39 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+
+INSERT INTO [User]
+(
+	[Id]
+)
+VALUES
+(
+	1
+)
+
+-- SqlServer.2025.MS SqlServer.2025
+
+INSERT INTO [User]
+(
+	[Id]
+)
+VALUES
+(
+	2
+)
+
+-- SqlServer.2025.MS SqlServer.2025
+
+SELECT
+	[t1].[not_null],
+	[t1].[Data_1]
+FROM
+	[User] [t]
+		LEFT JOIN (
+			SELECT
+				[a_Data].[Data] as [Data_1],
+				1 as [not_null]
+			FROM
+				(
+					SELECT 'Testing' AS Data
+				) [a_Data]
+		) [t1] ON 1=1
+

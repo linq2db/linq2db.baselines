@@ -1,0 +1,7 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	CAST(DateDiff(millisecond, [t].[DateTimeValue], DateAdd(millisecond, 2023456789, [t].[DateTimeValue])) AS Float)
+FROM
+	[LinqDataTypes] [t]
+

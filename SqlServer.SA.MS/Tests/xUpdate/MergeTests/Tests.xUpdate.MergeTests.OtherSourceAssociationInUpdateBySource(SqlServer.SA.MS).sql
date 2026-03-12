@@ -1,0 +1,42 @@
+﻿-- SqlServer.SA.MS SqlServer.2019
+
+MERGE INTO [Person] [Target]
+USING (
+	SELECT
+		[t1].[PersonID] as [ID]
+	FROM
+		[Person] [t1]
+) [Source]
+(
+	[ID]
+)
+ON ([Target].[PersonID] = [Source].[ID] + 10)
+
+WHEN NOT MATCHED By Source AND [Target].[FirstName] = N'first 3' THEN UPDATE
+SET
+	[FirstName] = N'Updated',
+	[LastName] = (
+		SELECT
+			[a_Patient].[Diagnosis]
+		FROM
+			[Patient] [a_Patient_1]
+				LEFT JOIN [Person] [a_Person] ON [a_Patient_1].[PersonID] = [a_Person].[PersonID]
+				LEFT JOIN [Patient] [a_Patient] ON [a_Person].[PersonID] = [a_Patient].[PersonID]
+		WHERE
+			[Target].[PersonID] = [a_Patient_1].[PersonID]
+	)
+;
+
+-- SqlServer.SA.MS SqlServer.2019
+
+SELECT
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
+FROM
+	[Person] [t1]
+ORDER BY
+	[t1].[PersonID]
+

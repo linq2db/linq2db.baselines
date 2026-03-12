@@ -1,0 +1,7 @@
+﻿-- SqlServer.2025
+
+SELECT DISTINCT
+	[ch].[ParentID]
+FROM
+	[Child] [ch]
+
