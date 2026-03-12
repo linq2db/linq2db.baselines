@@ -164,9 +164,11 @@ FROM
 		INNER JOIN [Contract] [a_Contract] ON [f].[ContractId] = [a_Contract].[Id]
 		INNER JOIN [AccessTariff] [a_AccessTariff] ON [f].[AccessTariffId] = [a_AccessTariff].[Id]
 		INNER JOIN [ServicePoint] [a_ServicePoint] ON [f].[ServicePointId] = [a_ServicePoint].[Id]
-		LEFT JOIN [Town] [a_Town] ON [a_ServicePoint].[TownId] = [a_Town].[Id]
-		LEFT JOIN [CountryState] [a_State] ON [a_Town].[StateId] = [a_State].[Id]
-		LEFT JOIN [AutonomousCommunity] [a_Community] ON [a_State].[AutonomousCommunityId] = [a_Community].[Id]
+		LEFT JOIN ([Town] [a_Town]
+			LEFT JOIN ([CountryState] [a_State]
+				LEFT JOIN [AutonomousCommunity] [a_Community] ON [a_State].[AutonomousCommunityId] = [a_Community].[Id])
+			ON [a_Town].[StateId] = [a_State].[Id])
+		ON [a_ServicePoint].[TownId] = [a_Town].[Id]
 		LEFT JOIN [StreetType] [a_StreetType] ON [a_ServicePoint].[StreetTypeId] = [a_StreetType].[Id]
 		LEFT JOIN [PriceList] [a_PriceList] ON [f].[PriceListId] = [a_PriceList].[Id]
 WHERE

@@ -5,8 +5,9 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[GrandChild] [p]
-		LEFT JOIN [Child] [a_Child] ON [p].[ParentID] = [a_Child].[ParentID] AND [p].[ChildID] = [a_Child].[ChildID]
-		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN ([Child] [a_Child]
+			LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID])
+		ON [p].[ParentID] = [a_Child].[ParentID] AND [p].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN (
 			SELECT
 				[a_Children].[ParentID],

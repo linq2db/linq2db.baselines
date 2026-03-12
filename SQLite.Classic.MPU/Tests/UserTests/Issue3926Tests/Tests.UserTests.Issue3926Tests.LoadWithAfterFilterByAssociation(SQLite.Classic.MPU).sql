@@ -16,8 +16,9 @@ SELECT
 	[a_CallRecord].[Id]
 FROM
 	[t_call_metas] [x]
-		LEFT JOIN [t_dialog_categories] [a_DialogCategory] ON [x].[DialogCategoryId] = [a_DialogCategory].[Id]
-		LEFT JOIN [t_category_groups] [a_CategoryGroup] ON [a_DialogCategory].[CategoryGroupId] = [a_CategoryGroup].[Id]
+		LEFT JOIN ([t_dialog_categories] [a_DialogCategory]
+			LEFT JOIN [t_category_groups] [a_CategoryGroup] ON [a_DialogCategory].[CategoryGroupId] = [a_CategoryGroup].[Id])
+		ON [x].[DialogCategoryId] = [a_DialogCategory].[Id]
 		LEFT JOIN [CALL_TRANSCRIPTION] [a_CallTranscription] ON [x].[Id] = [a_CallTranscription].[Id]
 		LEFT JOIN [CALL_RECORD] [a_CallRecord] ON [x].[Id] = [a_CallRecord].[Id]
 WHERE

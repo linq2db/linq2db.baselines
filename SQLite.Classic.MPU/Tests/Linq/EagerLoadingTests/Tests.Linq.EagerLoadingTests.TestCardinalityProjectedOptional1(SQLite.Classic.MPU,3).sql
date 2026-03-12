@@ -25,6 +25,7 @@ SELECT
 	[a_ObjectC].[FK]
 FROM
 	[EntityA] [e]
-		LEFT JOIN [EntityB] [a_ObjectBOptional] ON [e].[FK] = [a_ObjectBOptional].[Id]
-		LEFT JOIN [EntityC] [a_ObjectC] ON [a_ObjectBOptional].[FK] = [a_ObjectC].[Id]
+		LEFT JOIN ([EntityB] [a_ObjectBOptional]
+			LEFT JOIN [EntityC] [a_ObjectC] ON [a_ObjectBOptional].[FK] = [a_ObjectC].[Id])
+		ON [e].[FK] = [a_ObjectBOptional].[Id]
 

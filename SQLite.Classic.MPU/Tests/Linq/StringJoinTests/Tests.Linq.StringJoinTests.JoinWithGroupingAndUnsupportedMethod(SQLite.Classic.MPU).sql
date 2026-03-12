@@ -2,9 +2,9 @@
 
 SELECT
 	[t1].[Key_1],
-	(
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', ')
 		FROM
 			(
 				SELECT
@@ -17,10 +17,10 @@ SELECT
 					[x].[NotNullableValue]
 				LIMIT 2
 			) [t2]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT([t3].[NotNullableValue], ', '), '')
+			GROUP_CONCAT([t3].[NotNullableValue], ', ')
 		FROM
 			(
 				SELECT
@@ -33,7 +33,7 @@ SELECT
 					[x_1].[NotNullableValue]
 				LIMIT 2
 			) [t3]
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT
