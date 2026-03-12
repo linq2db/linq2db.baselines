@@ -27,8 +27,9 @@ FROM
 				INNER JOIN [Child] [d] ON [t1].[ParentID] = [d].[ParentID]
 	) [m_1]
 		INNER JOIN [GrandChild] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID] AND [m_1].[ChildID] = [d_1].[ChildID]
-		LEFT JOIN [Child] [a_Child] ON [d_1].[ParentID] = [a_Child].[ParentID] AND [d_1].[ChildID] = [a_Child].[ChildID]
-		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN ([Child] [a_Child]
+			LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID])
+		ON [d_1].[ParentID] = [a_Child].[ParentID] AND [d_1].[ChildID] = [a_Child].[ChildID]
 
 -- SQLite.MS SQLite
 

@@ -23,8 +23,9 @@ FROM
 		FROM
 			[OrderPeriod] [op]
 				INNER JOIN [ProductsPerOrderPeriod] [pop] ON [op].[Id] = [pop].[OrderPeriodId]
-				LEFT JOIN [Product] [vpc] ON [vpc].[Id] = [pop].[ProductId]
-				LEFT JOIN [ProductCategory] [pcc] ON [pcc].[Id] = [vpc].[CategoryId]
+				LEFT JOIN ([Product] [vpc]
+					LEFT JOIN [ProductCategory] [pcc] ON [pcc].[Id] = [vpc].[CategoryId])
+				ON [vpc].[Id] = [pop].[ProductId]
 				LEFT JOIN (
 					SELECT
 						[agroup].[Id],

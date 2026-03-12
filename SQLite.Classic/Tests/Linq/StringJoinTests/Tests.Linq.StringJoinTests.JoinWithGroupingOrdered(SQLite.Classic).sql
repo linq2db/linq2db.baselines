@@ -2,9 +2,9 @@
 
 SELECT
 	[t1].[Key_1],
-	(
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', ')
 		FROM
 			(
 				SELECT
@@ -17,8 +17,8 @@ SELECT
 					[t].[NotNullableValue],
 					[t].[NullableValue] DESC
 			) [t2]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
 			Coalesce(GROUP_CONCAT(CASE
 				WHEN [t3].[NullableValue] <> '' THEN [t3].[NullableValue]
@@ -36,10 +36,10 @@ SELECT
 					[t_1].[NotNullableValue],
 					[t_1].[NullableValue] DESC
 			) [t3]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT([t4].[NotNullableValue], ', '), '')
+			GROUP_CONCAT([t4].[NotNullableValue], ', ')
 		FROM
 			(
 				SELECT
@@ -52,10 +52,10 @@ SELECT
 					[t_2].[NotNullableValue] DESC,
 					[t_2].[NullableValue] DESC
 			) [t4]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t5].[NullableValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t5].[NullableValue], ''), ', ')
 		FROM
 			(
 				SELECT
@@ -68,10 +68,10 @@ SELECT
 					[t_3].[NotNullableValue] DESC,
 					[t_3].[NullableValue] DESC
 			) [t5]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT([t6].[NotNullableValue], ', '), '')
+			GROUP_CONCAT([t6].[NotNullableValue], ', ')
 		FROM
 			(
 				SELECT
@@ -84,10 +84,10 @@ SELECT
 					[t_4].[NotNullableValue] DESC,
 					[t_4].[NullableValue] DESC
 			) [t6]
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT([t7].[NotNullableValue], ', '), '')
+			GROUP_CONCAT([t7].[NotNullableValue], ', ')
 		FROM
 			(
 				SELECT
@@ -104,7 +104,7 @@ SELECT
 					[t_5].[NotNullableValue] DESC,
 					[t_5].[NullableValue]
 			) [t7]
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT

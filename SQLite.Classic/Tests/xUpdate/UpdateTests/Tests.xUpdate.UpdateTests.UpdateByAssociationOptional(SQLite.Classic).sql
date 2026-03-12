@@ -8,9 +8,11 @@ SET
 	[Field] = 'test'
 FROM
 	[MainTable] [t1]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [t1].[Id] = [a_AssociatedOptional].[Id]
+		LEFT JOIN ([AssociatedTable] [a_AssociatedOptional]
+			LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id])
+		ON [t1].[Id] = [a_AssociatedOptional].[Id]
 WHERE
-	[t1].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
+	[t1].[Id] = @id AND [MainTable].[Id] = [a_MainOptional].[Id]
 
 -- SQLite.Classic SQLite
 
