@@ -13,5 +13,5 @@ SELECT
 	[p2].[Gender] as [Gender_1]
 FROM
 	[Person] [p1]
-		INNER JOIN [Person] [p2] ON [p1].[MiddleName] = [p2].[MiddleName] OR [p1].[MiddleName] IS NULL AND [p2].[MiddleName] IS NULL
+		INNER JOIN [Person] [p2] ON [p1].[MiddleName] = [p2].[MiddleName]
 
