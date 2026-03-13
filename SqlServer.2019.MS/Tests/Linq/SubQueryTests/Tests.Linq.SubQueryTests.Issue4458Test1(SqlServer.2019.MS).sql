@@ -27,15 +27,16 @@ SELECT
 	[i].[Id],
 	(
 		SELECT
-			SUM([s].[QuantityAvailable])
+			SUM([stock].[QuantityAvailable])
 		FROM
-			[WarehouseStock] [s]
+			[WarehouseStock] [stock]
 		WHERE
-			[s].[ItemId] = [i].[Id] AND [stock].[ItemId] = [s].[ItemId]
+			[stock].[ItemId] = [i].[Id]
+		GROUP BY
+			[stock].[ItemId]
 	)
 FROM
 	[Issue4458Item] [i]
-		LEFT JOIN [WarehouseStock] [stock] ON [stock].[ItemId] = [i].[Id]
 WHERE
 	EXISTS(
 		SELECT
