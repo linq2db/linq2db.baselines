@@ -1,13 +1,12 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	[u].[UserId],
-	[u].[FirstName],
-	[u].[Supervisor]
+	[u_1].[UserId],
+	[u_1].[FirstName],
+	[u_1].[Supervisor]
 FROM
 	[SampleClass] [t1]
-		INNER JOIN ([SampleClass] [u_1]
-			INNER JOIN [User] [u] ON 1=1)
-		ON [u].[UserId] = [t1].[Id]
+		CROSS JOIN [SampleClass] [u]
+		INNER JOIN [User] [u_1] ON [u_1].[UserId] = [t1].[Id]
 LIMIT 1
 
