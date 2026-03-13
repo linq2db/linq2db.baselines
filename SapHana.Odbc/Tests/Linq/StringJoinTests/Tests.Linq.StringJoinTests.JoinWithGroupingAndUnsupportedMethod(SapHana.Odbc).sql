@@ -2,8 +2,8 @@
 
 SELECT
 	"t5"."Key_1",
-	"t2"."Nullable_1",
-	"t4"."NotNullable"
+	Coalesce("t2"."Nullable_1", ''),
+	Coalesce("t4"."NotNullable", '')
 FROM
 	(
 		SELECT DISTINCT
@@ -13,7 +13,7 @@ FROM
 	) "t5"
 		LEFT JOIN LATERAL (
 			SELECT
-				Coalesce(STRING_AGG(Coalesce("t1"."NullableValue", ''), ', '), '') as "Nullable_1"
+				STRING_AGG(Coalesce("t1"."NullableValue", ''), ', ') as "Nullable_1"
 			FROM
 				(
 					SELECT
@@ -29,7 +29,7 @@ FROM
 		) "t2" ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				Coalesce(STRING_AGG("t3"."NotNullableValue", ', '), '') as "NotNullable"
+				STRING_AGG("t3"."NotNullableValue", ', ') as "NotNullable"
 			FROM
 				(
 					SELECT
