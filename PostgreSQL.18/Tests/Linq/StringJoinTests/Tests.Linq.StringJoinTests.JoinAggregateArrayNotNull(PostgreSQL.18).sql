@@ -2,7 +2,7 @@
 
 SELECT
 	CONCAT_WS(', ', t."NullableValue", t."NotNullableValue", t."VarcharValue", t."NVarcharValue"),
-	(
+	Coalesce((
 		SELECT
 			Coalesce(STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item), '')
 		FROM
@@ -10,7 +10,7 @@ SELECT
 				(t."NullableValue"), (t."NotNullableValue"),
 				(t."VarcharValue"), (t."NVarcharValue")
 			) t1(item)
-	)
+	), '')
 FROM
 	"SampleClass" t
 

@@ -5,7 +5,6 @@ SELECT
 	x."ChildID"
 FROM
 	"Child" x
-		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren"."ParentID",
@@ -17,6 +16,7 @@ FROM
 				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
 			LIMIT 1
 		) t1 ON 1=1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 WHERE
 	CASE
 		WHEN x."ParentID" = (
@@ -39,7 +39,6 @@ SELECT
 	x."ChildID"
 FROM
 	"Child" x
-		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_GrandChildren"."ParentID",
@@ -51,6 +50,7 @@ FROM
 				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
 			LIMIT 1
 		) t1 ON 1=1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 WHERE
 	CASE
 		WHEN x."ParentID" = (
