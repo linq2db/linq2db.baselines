@@ -3,13 +3,13 @@
 UPDATE
 	[t]
 SET
-	[t].[VarcharValue] = [t1].[Result_1],
-	[t].[NVarcharValue] = [t1].[Result_1]
+	[t].[VarcharValue] = Coalesce([t1].[Result_1], ''),
+	[t].[NVarcharValue] = Coalesce([t1].[Result_1], '')
 FROM
 	[SampleClass] [t]
 		OUTER APPLY (
 			SELECT
-				Coalesce(STRING_AGG(Coalesce([a_Children].[VarcharValue], ''), ', '), '') as [Result_1]
+				STRING_AGG(Coalesce([a_Children].[VarcharValue], ''), ', ') as [Result_1]
 			FROM
 				[SampleClass] [a_Children]
 			WHERE
