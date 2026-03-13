@@ -25,17 +25,18 @@ ORDER BY
 
 SELECT
 	i."Id",
-	(
-		SELECT
-			SUM(s."QuantityAvailable")
-		FROM
-			"WarehouseStock" s
-		WHERE
-			s."ItemId" = i."Id" AND stock."ItemId" = s."ItemId"
-	)
+	stock_1."TotalAvailable"
 FROM
 	"Issue4458Item" i
-		LEFT JOIN "WarehouseStock" stock ON stock."ItemId" = i."Id"
+		LEFT JOIN (
+			SELECT
+				SUM(stock."QuantityAvailable") as "TotalAvailable",
+				stock."ItemId"
+			FROM
+				"WarehouseStock" stock
+			GROUP BY
+				stock."ItemId"
+		) stock_1 ON stock_1."ItemId" = i."Id"
 WHERE
 	EXISTS(
 		SELECT
