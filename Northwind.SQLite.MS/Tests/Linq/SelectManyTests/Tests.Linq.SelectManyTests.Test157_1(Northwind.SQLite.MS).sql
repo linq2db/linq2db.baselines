@@ -1,13 +1,13 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
-	[bind_1].[OrderID],
-	[bind_1].[EmployeeID],
-	[bind_1].[OrderDate],
-	[bind_1].[RequiredDate],
-	[bind_1].[ShippedDate],
-	[bind_1].[ShipVia],
-	[bind_1].[Freight],
+	[bind1].[OrderID],
+	[bind1].[EmployeeID],
+	[bind1].[OrderDate],
+	[bind1].[RequiredDate],
+	[bind1].[ShippedDate],
+	[bind1].[ShipVia],
+	[bind1].[Freight],
 	[a_Shipper].[ShipperID],
 	[a_Shipper].[CompanyName],
 	[a_Shipper].[Phone],
@@ -40,11 +40,11 @@ SELECT
 	[a_Customer].[Country],
 	[a_Customer].[Phone],
 	[a_Customer].[Fax],
-	[bind_2].[OrderID],
-	[bind_2].[ProductID],
-	[bind_2].[UnitPrice],
-	[bind_2].[Quantity],
-	[bind_2].[Discount],
+	[bind2].[OrderID],
+	[bind2].[ProductID],
+	[bind2].[UnitPrice],
+	[bind2].[Quantity],
+	[bind2].[Discount],
 	[e].[EmployeeID],
 	[e].[BirthDate],
 	[e].[HireDate],
@@ -67,7 +67,7 @@ SELECT
 	[bind].[Notes],
 	[bind].[ReportsTo],
 	[bind].[PhotoPath],
-	[bind_3].[EmployeeID],
+	[bind3].[EmployeeID],
 	[a_Employee_1].[EmployeeID],
 	[a_Employee_1].[LastName],
 	[a_Employee_1].[FirstName],
@@ -86,23 +86,23 @@ SELECT
 	[a_Employee_1].[Notes],
 	[a_Employee_1].[ReportsTo],
 	[a_Employee_1].[PhotoPath],
-	[bind_4].[TerritoryID],
-	[bind_4].[TerritoryDescription],
-	[bind_4].[RegionID],
-	[bind_5].[RegionID],
-	[bind_5].[RegionDescription]
+	[bind4].[TerritoryID],
+	[bind4].[TerritoryDescription],
+	[bind4].[RegionID],
+	[bind5].[RegionID],
+	[bind5].[RegionDescription]
 FROM
 	[Employees] [e]
 		LEFT JOIN [Employees] [bind] ON [e].[ReportsTo] = [bind].[EmployeeID]
-		LEFT JOIN [Orders] [bind_1] ON [e].[EmployeeID] = [bind_1].[EmployeeID]
-		LEFT JOIN [Shippers] [a_Shipper] ON [bind_1].[ShipVia] = [a_Shipper].[ShipperID]
-		LEFT JOIN [Employees] [a_Employee] ON [bind_1].[EmployeeID] = [a_Employee].[EmployeeID]
-		INNER JOIN [Customers] [a_Customer] ON [bind_1].[CustomerID] = [a_Customer].[CustomerID]
-		LEFT JOIN [Order Details] [bind_2] ON [bind_1].[OrderID] = [bind_2].[OrderID]
-		LEFT JOIN [EmployeeTerritories] [bind_3] ON [e].[EmployeeID] = [bind_3].[EmployeeID]
-		LEFT JOIN [Employees] [a_Employee_1] ON [bind_3].[EmployeeID] = [a_Employee_1].[EmployeeID]
-		LEFT JOIN [Territories] [bind_4] ON [bind_3].[TerritoryID] = [bind_4].[TerritoryID]
-		LEFT JOIN [Region] [bind_5] ON [bind_4].[RegionID] = [bind_5].[RegionID]
+		LEFT JOIN [Orders] [bind1] ON [e].[EmployeeID] = [bind1].[EmployeeID]
+		LEFT JOIN [Shippers] [a_Shipper] ON [bind1].[ShipVia] = [a_Shipper].[ShipperID]
+		LEFT JOIN [Employees] [a_Employee] ON [bind1].[EmployeeID] = [a_Employee].[EmployeeID]
+		LEFT JOIN [Customers] [a_Customer] ON [bind1].[CustomerID] = [a_Customer].[CustomerID]
+		LEFT JOIN [Order Details] [bind2] ON [bind1].[OrderID] = [bind2].[OrderID]
+		LEFT JOIN [EmployeeTerritories] [bind3] ON [e].[EmployeeID] = [bind3].[EmployeeID]
+		LEFT JOIN [Employees] [a_Employee_1] ON [bind3].[EmployeeID] = [a_Employee_1].[EmployeeID]
+		LEFT JOIN [Territories] [bind4] ON [bind3].[TerritoryID] = [bind4].[TerritoryID]
+		LEFT JOIN [Region] [bind5] ON [bind4].[RegionID] = [bind5].[RegionID]
 WHERE
 	[e].[EmployeeID] = 5
 
