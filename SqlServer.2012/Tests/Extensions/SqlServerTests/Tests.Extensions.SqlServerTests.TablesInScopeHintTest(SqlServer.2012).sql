@@ -8,7 +8,7 @@ FROM
 		CROSS JOIN [Child] [c_1] WITH (NoLock)
 		CROSS JOIN [Child] [c1] WITH (Index(IX_ChildIndex), NoLock)
 		CROSS JOIN [Child] [c_2] WITH (NoWait)
-		LEFT JOIN [Parent] [a_Parent] WITH (NoWait) ON [c_2].[ParentID] = [a_Parent].[ParentID]
+		INNER JOIN [Parent] [a_Parent] WITH (NoWait) ON [c_2].[ParentID] = [a_Parent].[ParentID]
 		CROSS JOIN [Parent] [p1] WITH (HoldLock)
 		CROSS JOIN [Child] [c_3]
 WHERE
