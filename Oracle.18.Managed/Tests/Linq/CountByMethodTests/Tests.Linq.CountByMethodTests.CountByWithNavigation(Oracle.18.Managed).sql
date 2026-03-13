@@ -11,14 +11,12 @@ FROM
 		FROM
 			"Parent" p
 				CROSS APPLY (
-					SELECT
-						c_1."ParentID"
+					SELECT DISTINCT
+						c_1."ParentID" as "Key_1"
 					FROM
 						"Child" c_1
 					WHERE
 						p."ParentID" = c_1."ParentID"
-					GROUP BY
-						c_1."ParentID"
 				) c_2
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
