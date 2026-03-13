@@ -3,20 +3,20 @@
 UPDATE
 	[SampleClass]
 SET
-	[VarcharValue] = (
+	[VarcharValue] = Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([a_Children].[VarcharValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([a_Children].[VarcharValue], ''), ', ')
 		FROM
 			[SampleClass] [a_Children]
 		WHERE
 			[SampleClass].[Id] = [a_Children].[Id]
-	),
-	[NVarcharValue] = (
+	), ''),
+	[NVarcharValue] = Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([a_Children].[VarcharValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([a_Children].[VarcharValue], ''), ', ')
 		FROM
 			[SampleClass] [a_Children]
 		WHERE
 			[SampleClass].[Id] = [a_Children].[Id]
-	)
+	), '')
 
