@@ -2,7 +2,7 @@
 
 SELECT
 	CONCAT_WS(', ', `t`.`NullableValue`, `t`.`NotNullableValue`, `t`.`VarcharValue`, `t`.`NVarcharValue`),
-	(
+	Coalesce((
 		SELECT
 			Coalesce(GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', '), '')
 		FROM
@@ -14,7 +14,7 @@ SELECT
 				SELECT `t`.`VarcharValue`
 				UNION ALL
 				SELECT `t`.`NVarcharValue`) `t1`
-	)
+	), '')
 FROM
 	`SampleClass` `t`
 
