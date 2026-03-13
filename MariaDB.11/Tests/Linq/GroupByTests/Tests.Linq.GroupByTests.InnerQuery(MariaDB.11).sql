@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			`s`.`PersonID`
+			`s`.`PersonID` as `Key_1`
 		FROM
 			`Doctor` `s`
 	) `s_2`
@@ -16,5 +16,5 @@ FROM
 				`s_1`.`PersonID`
 			FROM
 				`Doctor` `s_1`
-		) `t1` ON `s_2`.`PersonID` = `t1`.`PersonID` AND `t1`.`rn` = 1
+		) `t1` ON `s_2`.`Key_1` = `t1`.`PersonID` AND `t1`.`rn` = 1
 
