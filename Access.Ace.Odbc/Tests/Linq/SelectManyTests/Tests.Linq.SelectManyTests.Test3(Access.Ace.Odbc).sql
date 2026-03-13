@@ -9,6 +9,6 @@ FROM
 		FROM
 			[Parent] [t1],
 			[Person] [t]
-	) [sub]
-		INNER JOIN [GrandChild] [g_1] ON ([sub].[ParentID] = [g_1].[ParentID])
+	) [cross_1]
+		INNER JOIN [GrandChild] [g_1] ON ([cross_1].[ParentID] = [g_1].[ParentID])
 
