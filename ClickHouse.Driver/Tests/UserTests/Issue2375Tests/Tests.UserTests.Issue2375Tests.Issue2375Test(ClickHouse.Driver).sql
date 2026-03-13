@@ -50,10 +50,10 @@ VALUES
 SELECT
 	m_1.Status,
 	m_1.ResourceLabel,
-	t2.Id,
-	t2.Status,
-	t2.ResourceID,
-	t2.ModifiedTimeStamp
+	d.Id,
+	d.Status,
+	d.ResourceID,
+	d.ModifiedTimeStamp
 FROM
 	(
 		SELECT DISTINCT
@@ -74,17 +74,8 @@ FROM
 					COUNT(*) > 1
 			) t1
 	) m_1
-		INNER JOIN (
-			SELECT
-				d.Status as Status,
-				lc_1.ResourceLabel as ResourceLabel,
-				d.Id as Id,
-				d.ResourceID as ResourceID,
-				d.ModifiedTimeStamp as ModifiedTimeStamp
-			FROM
-				InventoryResourceDTO d
-					INNER JOIN WmsLoadCarrierDTO lc_1 ON d.ResourceID = lc_1.Id
-		) t2 ON m_1.Status = t2.Status AND (m_1.ResourceLabel = t2.ResourceLabel OR m_1.ResourceLabel IS NULL AND t2.ResourceLabel IS NULL)
+		INNER JOIN InventoryResourceDTO d ON m_1.Status = d.Status
+		INNER JOIN WmsLoadCarrierDTO lc_1 ON d.ResourceID = lc_1.Id AND (m_1.ResourceLabel = lc_1.ResourceLabel OR m_1.ResourceLabel IS NULL AND lc_1.ResourceLabel IS NULL)
 
 -- ClickHouse.Driver ClickHouse
 
