@@ -2,9 +2,9 @@
 
 SELECT
 	"t1"."Key_1",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NullableValue", ''), ', '), '')
+			LIST(Coalesce("t2"."NullableValue", ''), ', ')
 		FROM
 			(
 				SELECT
@@ -17,10 +17,10 @@ SELECT
 					"t"."NotNullableValue",
 					"t"."NullableValue" DESC
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NullableValue", ''), ', '), '')
+			LIST(Coalesce("t3"."NullableValue", ''), ', ')
 		FROM
 			(
 				SELECT
@@ -34,10 +34,10 @@ SELECT
 					"x"."NotNullableValue",
 					"x"."NullableValue" DESC
 			) "t3"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST("t4"."NotNullableValue", ', '), '')
+			LIST("t4"."NotNullableValue", ', ')
 		FROM
 			(
 				SELECT
@@ -50,10 +50,10 @@ SELECT
 					"t_1"."NotNullableValue" DESC,
 					"t_1"."NullableValue" DESC
 			) "t4"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t5"."NullableValue", ''), ', '), '')
+			LIST(Coalesce("t5"."NullableValue", ''), ', ')
 		FROM
 			(
 				SELECT
@@ -66,10 +66,10 @@ SELECT
 					"t_2"."NotNullableValue" DESC,
 					"t_2"."NullableValue" DESC
 			) "t5"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST("t6"."NotNullableValue", ', '), '')
+			LIST("t6"."NotNullableValue", ', ')
 		FROM
 			(
 				SELECT
@@ -82,10 +82,10 @@ SELECT
 					"t_3"."NotNullableValue" DESC,
 					"t_3"."NullableValue" DESC
 			) "t6"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST("t7"."NotNullableValue", ', '), '')
+			LIST("t7"."NotNullableValue", ', ')
 		FROM
 			(
 				SELECT
@@ -102,7 +102,7 @@ SELECT
 					"t_4"."NotNullableValue" DESC,
 					"t_4"."NullableValue"
 			) "t7"
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT
