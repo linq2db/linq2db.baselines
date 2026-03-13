@@ -1,13 +1,13 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[bind2].[OrderID],
-	[bind2].[EmployeeID],
-	[bind2].[OrderDate],
-	[bind2].[RequiredDate],
-	[bind2].[ShippedDate],
-	[bind2].[ShipVia],
-	[bind2].[Freight],
+	[bind1].[OrderID],
+	[bind1].[EmployeeID],
+	[bind1].[OrderDate],
+	[bind1].[RequiredDate],
+	[bind1].[ShippedDate],
+	[bind1].[ShipVia],
+	[bind1].[Freight],
 	[a_Shipper].[ShipperID],
 	[a_Shipper].[CompanyName],
 	[a_Shipper].[Phone],
@@ -40,34 +40,34 @@ SELECT
 	[a_Customer].[Country],
 	[a_Customer].[Phone],
 	[a_Customer].[Fax],
-	[bind3].[OrderID],
-	[bind3].[ProductID],
-	[bind3].[UnitPrice],
-	[bind3].[Quantity],
-	[bind3].[Discount],
+	[bind2].[OrderID],
+	[bind2].[ProductID],
+	[bind2].[UnitPrice],
+	[bind2].[Quantity],
+	[bind2].[Discount],
 	[e].[EmployeeID],
 	[e].[BirthDate],
 	[e].[HireDate],
 	[e].[ReportsTo],
-	[bind1].[EmployeeID],
-	[bind1].[LastName],
-	[bind1].[FirstName],
-	[bind1].[Title],
-	[bind1].[TitleOfCourtesy],
-	[bind1].[BirthDate],
-	[bind1].[HireDate],
-	[bind1].[Address],
-	[bind1].[City],
-	[bind1].[Region],
-	[bind1].[PostalCode],
-	[bind1].[Country],
-	[bind1].[HomePhone],
-	[bind1].[Extension],
-	[bind1].[Photo],
-	[bind1].[Notes],
-	[bind1].[ReportsTo],
-	[bind1].[PhotoPath],
-	[bind4].[EmployeeID],
+	[bind].[EmployeeID],
+	[bind].[LastName],
+	[bind].[FirstName],
+	[bind].[Title],
+	[bind].[TitleOfCourtesy],
+	[bind].[BirthDate],
+	[bind].[HireDate],
+	[bind].[Address],
+	[bind].[City],
+	[bind].[Region],
+	[bind].[PostalCode],
+	[bind].[Country],
+	[bind].[HomePhone],
+	[bind].[Extension],
+	[bind].[Photo],
+	[bind].[Notes],
+	[bind].[ReportsTo],
+	[bind].[PhotoPath],
+	[bind3].[EmployeeID],
 	[a_Employee_1].[EmployeeID],
 	[a_Employee_1].[LastName],
 	[a_Employee_1].[FirstName],
@@ -86,23 +86,23 @@ SELECT
 	[a_Employee_1].[Notes],
 	[a_Employee_1].[ReportsTo],
 	[a_Employee_1].[PhotoPath],
-	[bind5].[TerritoryID],
-	[bind5].[TerritoryDescription],
+	[bind4].[TerritoryID],
+	[bind4].[TerritoryDescription],
+	[bind4].[RegionID],
 	[bind5].[RegionID],
-	[bind6].[RegionID],
-	[bind6].[RegionDescription]
+	[bind5].[RegionDescription]
 FROM
 	[Employees] [e]
-		LEFT JOIN [Employees] [bind1] ON [e].[ReportsTo] = [bind1].[EmployeeID]
-		LEFT JOIN [Orders] [bind2] ON [e].[EmployeeID] = [bind2].[EmployeeID]
-		LEFT JOIN [Shippers] [a_Shipper] ON [bind2].[ShipVia] = [a_Shipper].[ShipperID]
-		LEFT JOIN [Employees] [a_Employee] ON [bind2].[EmployeeID] = [a_Employee].[EmployeeID]
-		INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
-		LEFT JOIN [Order Details] [bind3] ON [bind2].[OrderID] = [bind3].[OrderID]
-		LEFT JOIN [EmployeeTerritories] [bind4] ON [e].[EmployeeID] = [bind4].[EmployeeID]
-		LEFT JOIN [Employees] [a_Employee_1] ON [bind4].[EmployeeID] = [a_Employee_1].[EmployeeID]
-		LEFT JOIN [Territories] [bind5] ON [bind4].[TerritoryID] = [bind5].[TerritoryID]
-		LEFT JOIN [Region] [bind6] ON [bind5].[RegionID] = [bind6].[RegionID]
+		LEFT JOIN [Employees] [bind] ON [e].[ReportsTo] = [bind].[EmployeeID]
+		LEFT JOIN [Orders] [bind1] ON [e].[EmployeeID] = [bind1].[EmployeeID]
+		LEFT JOIN [Shippers] [a_Shipper] ON [bind1].[ShipVia] = [a_Shipper].[ShipperID]
+		LEFT JOIN [Employees] [a_Employee] ON [bind1].[EmployeeID] = [a_Employee].[EmployeeID]
+		LEFT JOIN [Customers] [a_Customer] ON [bind1].[CustomerID] = [a_Customer].[CustomerID]
+		LEFT JOIN [Order Details] [bind2] ON [bind1].[OrderID] = [bind2].[OrderID]
+		LEFT JOIN [EmployeeTerritories] [bind3] ON [e].[EmployeeID] = [bind3].[EmployeeID]
+		LEFT JOIN [Employees] [a_Employee_1] ON [bind3].[EmployeeID] = [a_Employee_1].[EmployeeID]
+		LEFT JOIN [Territories] [bind4] ON [bind3].[TerritoryID] = [bind4].[TerritoryID]
+		LEFT JOIN [Region] [bind5] ON [bind4].[RegionID] = [bind5].[RegionID]
 WHERE
 	[e].[EmployeeID] = 5
 
