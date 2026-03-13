@@ -28,8 +28,8 @@ SET     @ClaimedKeyTypeN = 'EC'
 UPDATE
 	"Issue1554FluentTable" "p"
 SET
-	"ClaimedKeyType" = @ClaimedKeyType,
-	"ClaimedKeyTypeN" = @ClaimedKeyTypeN
+	"ClaimedKeyType" = CAST(@ClaimedKeyType AS NVarChar(2)),
+	"ClaimedKeyTypeN" = CAST(@ClaimedKeyTypeN AS NVarChar(2))
 WHERE
 	"p"."Id" = 0
 
