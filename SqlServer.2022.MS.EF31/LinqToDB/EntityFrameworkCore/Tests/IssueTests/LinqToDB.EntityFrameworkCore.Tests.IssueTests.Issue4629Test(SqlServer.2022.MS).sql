@@ -8,33 +8,27 @@ SELECT
 FROM
 	(
 		SELECT TOP (@take)
-			[t1].[Id]
+			[p].[Id]
 		FROM
+			[Issue4629Posts] [p]
+		WHERE
 			(
 				SELECT
-					[p].[Id],
-					(
-						SELECT
-							SUM([a_Tags].[Weight])
-						FROM
-							[Issue4629Tags] [a_Tags]
-						WHERE
-							[p].[Id] = [a_Tags].[PostId]
-					) as [Sum_1]
+					SUM([a_Tags].[Weight])
 				FROM
-					[Issue4629Posts] [p]
+					[Issue4629Tags] [a_Tags]
 				WHERE
-					(
-						SELECT
-							SUM([a_Tags_1].[Weight])
-						FROM
-							[Issue4629Tags] [a_Tags_1]
-						WHERE
-							[p].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
-					) > 5
-			) [t1]
+					[p].[Id] = [a_Tags].[PostId] AND [a_Tags].[Weight] > 1
+			) > 5
 		ORDER BY
-			[t1].[Sum_1]
+			(
+				SELECT
+					SUM([a_Tags_1].[Weight])
+				FROM
+					[Issue4629Tags] [a_Tags_1]
+				WHERE
+					[p].[Id] = [a_Tags_1].[PostId]
+			)
 	) [id]
 
 
