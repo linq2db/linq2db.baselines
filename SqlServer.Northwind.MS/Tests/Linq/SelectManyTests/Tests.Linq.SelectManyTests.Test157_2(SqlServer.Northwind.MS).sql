@@ -94,10 +94,11 @@ SELECT
 FROM
 	[Employees] [e]
 		LEFT JOIN [Employees] [bind1] ON [e].[ReportsTo] = [bind1].[EmployeeID]
-		LEFT JOIN [Orders] [bind2] ON [e].[EmployeeID] = [bind2].[EmployeeID]
+		LEFT JOIN [Orders] [bind2]
+			INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
+		ON [e].[EmployeeID] = [bind2].[EmployeeID]
 		LEFT JOIN [Shippers] [a_Shipper] ON [bind2].[ShipVia] = [a_Shipper].[ShipperID]
 		LEFT JOIN [Employees] [a_Employee] ON [bind2].[EmployeeID] = [a_Employee].[EmployeeID]
-		INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
 		LEFT JOIN [Order Details] [bind3] ON [bind2].[OrderID] = [bind3].[OrderID]
 		LEFT JOIN [EmployeeTerritories] [bind4] ON [e].[EmployeeID] = [bind4].[EmployeeID]
 		LEFT JOIN [Employees] [a_Employee_1] ON [bind4].[EmployeeID] = [a_Employee_1].[EmployeeID]
