@@ -41,21 +41,21 @@ FROM
 	) r
 		LEFT JOIN "OrderPeriod" v2
 			INNER JOIN "ProductCategory" vpcc ON 1=1
-			LEFT JOIN (
-				SELECT
-					agroup_1."Id",
-					p."CategoryId",
-					SUM(CAST(oi_1."Quantity" AS Int)) as "Quantity"
-				FROM
-					"OrderPeriod" agroup_1
-						LEFT JOIN "OrderHeader" oh_1 ON agroup_1."Id" = oh_1."PeriodId"
-						LEFT JOIN "OrderItem" oi_1 ON oh_1."Id" = oi_1."OrderHeaderId"
-						LEFT JOIN "Product" p ON p."Id" = oi_1."ProductId"
-				GROUP BY
-					agroup_1."Id",
-					p."CategoryId"
-			) vsopc ON vsopc."Id" = v2."Id" AND (vsopc."CategoryId" = vpcc."Id" OR vsopc."CategoryId" IS NULL AND vpcc."Id" IS NULL)
 		ON v2."Id" = r."OrderPeriodId" AND vpcc."Id" = r."CategoryId"
+		LEFT JOIN (
+			SELECT
+				agroup_1."Id",
+				p."CategoryId",
+				SUM(CAST(oi_1."Quantity" AS Int)) as "Quantity"
+			FROM
+				"OrderPeriod" agroup_1
+					LEFT JOIN "OrderHeader" oh_1 ON agroup_1."Id" = oh_1."PeriodId"
+					LEFT JOIN "OrderItem" oi_1 ON oh_1."Id" = oi_1."OrderHeaderId"
+					LEFT JOIN "Product" p ON p."Id" = oi_1."ProductId"
+			GROUP BY
+				agroup_1."Id",
+				p."CategoryId"
+		) vsopc ON vsopc."Id" = v2."Id" AND (vsopc."CategoryId" = vpcc."Id" OR vsopc."CategoryId" IS NULL AND vpcc."Id" IS NULL)
 WHERE
 	ROWNUM <= :take
 
