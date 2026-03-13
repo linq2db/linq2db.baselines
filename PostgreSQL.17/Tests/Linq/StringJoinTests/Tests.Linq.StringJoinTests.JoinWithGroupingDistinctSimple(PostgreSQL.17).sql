@@ -2,9 +2,9 @@
 
 SELECT
 	t1."Key_1",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce(t2."NotNullableOrderedNoNulls", ''), ', '), '')
+			STRING_AGG(Coalesce(t2."NotNullableOrderedNoNulls", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -16,10 +16,10 @@ SELECT
 				ORDER BY
 					t."NullableValue"
 			) t2
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(t4."NotNullableOrderedNulls", ', '), '')
+			STRING_AGG(t4."NotNullableOrderedNulls", ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -36,7 +36,7 @@ SELECT
 				ORDER BY
 					t3."NotNullableOrderedNulls"
 			) t4
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT
