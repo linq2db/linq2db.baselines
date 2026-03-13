@@ -1,8 +1,8 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[sub].[ParentID_1],
-	[sub].[ChildID]
+	[cross_1].[ParentID_1],
+	[cross_1].[ChildID]
 FROM
 	(
 		SELECT
@@ -12,11 +12,11 @@ FROM
 		FROM
 			[Parent] [p],
 			[Child] [c_1]
-	) [sub]
-		INNER JOIN [Parent] [a_Parent1] ON ([sub].[ParentID] = [a_Parent1].[ParentID])
+	) [cross_1]
+		INNER JOIN [Parent] [a_Parent1] ON ([cross_1].[ParentID] = [a_Parent1].[ParentID])
 WHERE
-	[sub].[ParentID_1] = [a_Parent1].[ParentID]
+	[cross_1].[ParentID_1] = [a_Parent1].[ParentID]
 ORDER BY
-	[sub].[ParentID_1],
-	[sub].[ChildID]
+	[cross_1].[ParentID_1],
+	[cross_1].[ChildID]
 
