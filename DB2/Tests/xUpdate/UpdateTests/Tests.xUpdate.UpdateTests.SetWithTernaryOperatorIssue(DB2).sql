@@ -36,7 +36,7 @@ SET     @nullableGender = 'O'
 UPDATE
 	"Person" "t1"
 SET
-	"Gender" = @nullableGender
+	"Gender" = CAST(@nullableGender AS NChar(1))
 WHERE
 	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 

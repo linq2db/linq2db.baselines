@@ -175,7 +175,7 @@ SET     @Value1 = 1
 UPDATE
 	"Parent" "p"
 SET
-	"Value1" = @Value1
+	"Value1" = CAST(@Value1 AS Int)
 WHERE
 	"p"."ParentID" >= 1000
 FETCH NEXT 5 ROWS ONLY

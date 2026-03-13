@@ -7,7 +7,7 @@ SET     @p = 1
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS VARBINARY(32672))
 WHERE
 	"t".ID = @p
 
@@ -20,7 +20,7 @@ SET     @p = 2
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"BinaryValue" = @BinaryValue
+	"BinaryValue" = CAST(@BinaryValue AS VARBINARY(32672))
 WHERE
 	"t".ID = @p
 

@@ -44,8 +44,8 @@ SET     @LastName = 'Dory'
 UPDATE
 	"FluentTemp" "t"
 SET
-	"Value" = @Name,
-	"LastName" = @LastName
+	"Value" = CAST(@Name AS NVarChar(7)),
+	"LastName" = CAST(@LastName AS NVarChar(4))
 WHERE
 	"t".ID = 1
 
