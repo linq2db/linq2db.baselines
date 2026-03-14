@@ -1,21 +1,23 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	e_1."Id",
-	e_1."TestId"
+	t1."Id",
+	t1."TestId"
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."TestId") as "RowNumber",
+			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."Id" DESC) as "RowNumber",
 			e."Id",
 			e."TestId"
 		FROM
 			"TestTable" e
 		WHERE
 			e."TestId" IN (20, 30)
-	) e_1
+	) t1
 WHERE
-	e_1."RowNumber" = 1
+	t1."RowNumber" = 1
+ORDER BY
+	t1."Id" DESC
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
