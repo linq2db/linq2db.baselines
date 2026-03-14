@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	TRUE,
-	@arr
+	CAST(@arr AS VARBINARY(4))
 )
 
 -- Firebird.5 Firebird4

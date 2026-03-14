@@ -14,9 +14,9 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS VARCHAR(2)),
+	CAST(@ClaimedKeyTypeN AS VARCHAR(2))
 )
 
 -- Firebird.5 Firebird4
