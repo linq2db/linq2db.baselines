@@ -14,7 +14,7 @@ FROM
 			Parent p,
 			Child c_1
 	) sub
-		LEFT JOIN Parent a_Parent ON sub.ParentID = a_Parent.ParentID
+		INNER JOIN Parent a_Parent ON sub.ParentID = a_Parent.ParentID
 WHERE
 	a_Parent.ParentID = sub.ParentID_1 AND (a_Parent.Value1 = sub.Value1 OR a_Parent.Value1 IS NULL AND sub.Value1 IS NULL)
 ORDER BY
