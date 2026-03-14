@@ -23,12 +23,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@iteration,
-	@Value1,
-	@Enum,
-	@inserted,
-	@boolValue,
-	@boolValue_1
+	CAST(@iteration AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@inserted AS VARCHAR(22)),
+	CAST(@boolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@boolValue_1 AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 -- Firebird.3 Firebird3

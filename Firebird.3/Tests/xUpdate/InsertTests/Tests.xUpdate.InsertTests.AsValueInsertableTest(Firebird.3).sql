@@ -11,8 +11,8 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	@ID,
-	@FirstName
+	CAST(@ID AS Int),
+	CAST(@FirstName AS VARCHAR(4))
 )
 
 -- Firebird.3 Firebird3

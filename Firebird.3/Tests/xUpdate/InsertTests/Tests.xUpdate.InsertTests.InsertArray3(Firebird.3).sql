@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	TRUE,
-	@arr
+	CAST(@arr AS VARCHAR(4) CHARACTER SET OCTETS)
 )
 
 -- Firebird.3 Firebird3
