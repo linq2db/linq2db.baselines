@@ -15,7 +15,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(6))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -28,7 +28,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -41,7 +41,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -55,7 +55,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -68,7 +68,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -81,7 +81,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -94,7 +94,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -107,7 +107,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -120,7 +120,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -133,7 +133,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -146,7 +146,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -159,7 +159,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -172,7 +172,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -185,7 +185,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -198,7 +198,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -211,7 +211,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -224,7 +224,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -237,7 +237,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -250,7 +250,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -263,7 +263,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(8))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -276,7 +276,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	@NString
+	CAST(@NString AS NVarChar(255))
 )
 
 -- DB2 DB2.LUW DB2LUW

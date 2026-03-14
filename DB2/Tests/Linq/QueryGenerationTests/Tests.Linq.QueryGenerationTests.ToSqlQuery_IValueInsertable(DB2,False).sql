@@ -8,7 +8,7 @@ INSERT INTO "TableWithIdentity"
 )
 VALUES
 (
-	@value
+	CAST(@value AS Int)
 )
 
 -- DB2 DB2.LUW DB2LUW

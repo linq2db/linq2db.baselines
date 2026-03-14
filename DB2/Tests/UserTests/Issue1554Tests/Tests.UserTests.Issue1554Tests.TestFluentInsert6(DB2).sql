@@ -14,9 +14,9 @@ INSERT INTO "Issue1554FluentTable"
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS NVarChar(2)),
+	CAST(@ClaimedKeyTypeN AS NVarChar(2))
 )
 
 -- DB2 DB2.LUW DB2LUW

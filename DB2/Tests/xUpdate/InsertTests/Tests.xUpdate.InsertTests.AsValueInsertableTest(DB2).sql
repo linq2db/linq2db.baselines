@@ -11,8 +11,8 @@ INSERT INTO "TestInsertOrReplaceTable"
 )
 VALUES
 (
-	@ID,
-	@FirstName
+	CAST(@ID AS Int),
+	CAST(@FirstName AS NVarChar(4))
 )
 
 -- DB2 DB2.LUW DB2LUW
