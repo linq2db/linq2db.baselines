@@ -10,7 +10,7 @@ INSERT INTO "TestFbTypesTable"
 VALUES
 (
 	1,
-	@Int128
+	CAST(@Int128 AS INT128)
 )
 
 -- Firebird.4 Firebird4

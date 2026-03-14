@@ -17,7 +17,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	1001,
-	@Value1
+	CAST(@Value1 AS Int)
 )
 
 -- Firebird.4 Firebird4

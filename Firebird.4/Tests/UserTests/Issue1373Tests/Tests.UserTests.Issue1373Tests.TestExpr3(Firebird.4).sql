@@ -10,7 +10,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	@Field1
+	CAST(@Field1 AS VARCHAR(1))
 )
 
 -- Firebird.4 Firebird4
@@ -25,7 +25,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	@Field1
+	CAST(@Field1 AS VARCHAR(1))
 )
 
 -- Firebird.4 Firebird4
@@ -40,7 +40,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	@Field1
+	CAST(@Field1 AS VARCHAR(4))
 )
 
 -- Firebird.4 Firebird4
