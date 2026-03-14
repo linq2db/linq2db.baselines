@@ -12,12 +12,19 @@ FROM
 		FROM
 			`TestTable` `e`
 		WHERE
-			`e`.`TestId` NOT IN (20)
+			`e`.`TestId` IN (
+				SELECT DISTINCT
+					`x`.`TestId`
+				FROM
+					`TestTable` `x`
+				WHERE
+					`x`.`Id` <= 2
+			)
 	) `t1`
 WHERE
 	`t1`.`RowNumber` = 1
 ORDER BY
-	`t1`.`TestId` DESC,
+	`t1`.`TestId`,
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
