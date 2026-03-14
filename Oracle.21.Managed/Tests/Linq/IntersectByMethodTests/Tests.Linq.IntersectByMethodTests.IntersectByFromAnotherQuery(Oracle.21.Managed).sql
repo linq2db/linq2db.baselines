@@ -1,23 +1,31 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	e_1."Id",
-	e_1."TestId"
+	t1."Id",
+	t1."TestId"
 FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."Id") as "RowNumber",
-			e."Id",
-			e."TestId"
+			e."TestId",
+			e."Id"
 		FROM
 			"TestTable" e
 		WHERE
-			e."TestId" NOT IN (20)
-	) e_1
+			e."TestId" IN (
+				SELECT DISTINCT
+					x."TestId"
+				FROM
+					"TestTable" x
+				WHERE
+					x."Id" <= 2
+			)
+	) t1
 WHERE
-	e_1."RowNumber" = 1
+	t1."RowNumber" = 1
 ORDER BY
-	e_1."Id"
+	t1."TestId",
+	t1."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
