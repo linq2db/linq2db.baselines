@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY `e`.`TestId` ORDER BY `e`.`TestId`) as `RowNumber`,
+			ROW_NUMBER() OVER (PARTITION BY `e`.`TestId` ORDER BY `e`.`Id`) as `RowNumber`,
 			`e`.`TestId`,
 			`e`.`Id`
 		FROM
