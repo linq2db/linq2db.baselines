@@ -14,9 +14,9 @@ INSERT INTO "LinqDataTypes"
 )
 VALUES
 (
-	@ID,
-	@MoneyValue,
-	@SmallIntValue
+	CAST(@ID AS Int),
+	CAST(@MoneyValue AS Decimal(4, 0)),
+	CAST(@SmallIntValue AS SmallInt)
 )
 
 -- Firebird.2.5 Firebird

@@ -17,7 +17,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	@id
+	CAST(@id AS Int)
 )
 
 -- Firebird.2.5 Firebird

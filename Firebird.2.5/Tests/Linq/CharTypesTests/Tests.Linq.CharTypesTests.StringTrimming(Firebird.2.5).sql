@@ -15,7 +15,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(6))
 )
 
 -- Firebird.2.5 Firebird
@@ -28,7 +28,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -41,7 +41,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -55,7 +55,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -68,7 +68,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -81,7 +81,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -94,7 +94,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(8))
 )
 
 -- Firebird.2.5 Firebird
@@ -107,7 +107,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -120,7 +120,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -133,7 +133,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -146,7 +146,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -159,7 +159,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -172,7 +172,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -185,7 +185,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -198,7 +198,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -211,7 +211,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -224,7 +224,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -237,7 +237,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -250,7 +250,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(11))
 )
 
 -- Firebird.2.5 Firebird
@@ -263,7 +263,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(10))
 )
 
 -- Firebird.2.5 Firebird
@@ -276,7 +276,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@String
+	CAST(@String AS VARCHAR(1))
 )
 
 -- Firebird.2.5 Firebird

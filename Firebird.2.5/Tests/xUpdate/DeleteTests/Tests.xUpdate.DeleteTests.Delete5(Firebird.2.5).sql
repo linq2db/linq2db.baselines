@@ -23,7 +23,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -38,7 +38,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 

@@ -23,12 +23,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Enum,
-	@Value2,
-	@BoolValue,
-	@AnotherBoolValue
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(2)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@Value2 AS VARCHAR(22)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 -- Firebird.2.5 Firebird
@@ -74,12 +74,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Enum,
-	@BoolValue,
-	@AnotherBoolValue
+	CAST(@Id AS Int),
+	CAST(@Value1 AS VARCHAR(1)),
+	CAST(@Value2 AS VARCHAR(1)),
+	CAST(@Enum AS VARCHAR(6)),
+	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
+	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
 )
 
 -- Firebird.2.5 Firebird

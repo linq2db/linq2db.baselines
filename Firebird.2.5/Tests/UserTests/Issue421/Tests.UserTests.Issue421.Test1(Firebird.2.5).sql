@@ -11,8 +11,8 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	CAST(@Id AS Int),
+	CAST(@BlobValue AS Blob(3))
 )
 
 -- Firebird.2.5 Firebird
