@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[TestId] ORDER BY [e].[TestId]) as [RowNumber],
+			ROW_NUMBER() OVER (PARTITION BY [e].[TestId] ORDER BY [e].[Id]) as [RowNumber],
 			[e].[Id],
 			[e].[TestId]
 		FROM
@@ -16,6 +16,8 @@ FROM
 	) [e_1]
 WHERE
 	[e_1].[RowNumber] = 1
+ORDER BY
+	[e_1].[Id]
 
 -- SqlServer.2005
 
