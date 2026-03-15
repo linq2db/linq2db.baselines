@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	't'::BOOLEAN,
-	@arr
+	@arr::BYTE
 )
 
 -- Informix.DB2 Informix

@@ -11,8 +11,8 @@ INSERT INTO BlobClass
 )
 VALUES
 (
-	@Id,
-	@BlobValue
+	@Id::Int,
+	@BlobValue::byte
 )
 
 -- Informix.DB2 Informix

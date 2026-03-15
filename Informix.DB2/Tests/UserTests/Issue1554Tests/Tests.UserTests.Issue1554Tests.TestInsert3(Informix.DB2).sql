@@ -14,9 +14,9 @@ INSERT INTO Issue1554Table
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	@Id::Int,
+	@ClaimedKeyType::NVarChar(2),
+	@ClaimedKeyTypeN::NVarChar(2)
 )
 
 -- Informix.DB2 Informix

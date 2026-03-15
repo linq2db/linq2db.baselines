@@ -8,7 +8,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input
+	@input::datetime Minute to Second
 )
 
 -- Informix.DB2 Informix

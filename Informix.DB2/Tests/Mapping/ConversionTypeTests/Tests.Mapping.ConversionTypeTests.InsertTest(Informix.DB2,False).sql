@@ -28,8 +28,8 @@ INSERT INTO TrimTestTable
 )
 VALUES
 (
-	@ID,
-	@Data
+	@ID::Int,
+	@Data::NVarChar(9)
 )
 
 -- Informix.DB2 Informix

@@ -8,7 +8,7 @@ INSERT INTO TableWithIdentity
 )
 VALUES
 (
-	@value
+	@value::Int
 )
 
 -- Informix.DB2 Informix
