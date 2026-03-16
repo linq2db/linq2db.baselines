@@ -17,7 +17,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	@tt
+	CAST(@tt AS BigInt)
 )
 
 -- DB2 DB2.LUW DB2LUW

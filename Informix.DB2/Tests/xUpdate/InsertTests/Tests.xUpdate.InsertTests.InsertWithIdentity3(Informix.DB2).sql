@@ -21,9 +21,9 @@ INSERT INTO Person
 )
 VALUES
 (
-	@FirstName,
-	@LastName,
-	@Gender
+	@FirstName::NVarChar(4),
+	@LastName::NVarChar(7),
+	@Gender::Char(1)
 )
 
 -- Informix.DB2 Informix

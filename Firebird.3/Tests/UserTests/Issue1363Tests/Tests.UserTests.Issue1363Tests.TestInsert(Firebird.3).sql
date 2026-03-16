@@ -9,7 +9,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
 	(
 		SELECT
 			"t1"."required_field"
@@ -33,7 +33,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS CHAR(16) CHARACTER SET OCTETS),
 	(
 		SELECT
 			"t1"."required_field"

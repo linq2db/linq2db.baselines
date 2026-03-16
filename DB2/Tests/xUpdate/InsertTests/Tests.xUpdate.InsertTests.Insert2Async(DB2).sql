@@ -17,7 +17,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	@id
+	CAST(@id AS Int)
 )
 
 -- DB2 DB2.LUW DB2LUW

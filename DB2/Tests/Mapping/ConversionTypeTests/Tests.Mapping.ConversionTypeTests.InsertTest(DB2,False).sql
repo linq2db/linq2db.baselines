@@ -28,8 +28,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS NVarChar(9))
 )
 
 -- DB2 DB2.LUW DB2LUW

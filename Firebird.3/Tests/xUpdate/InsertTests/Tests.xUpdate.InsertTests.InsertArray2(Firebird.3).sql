@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	TRUE,
-	@arr
+	CAST(@arr AS BLOB)
 )
 
 -- Firebird.3 Firebird3

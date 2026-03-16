@@ -10,7 +10,7 @@ INSERT INTO BlobClass
 VALUES
 (
 	1,
-	@BlobValue
+	@BlobValue::byte
 )
 
 -- Informix.DB2 Informix

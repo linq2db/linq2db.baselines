@@ -17,7 +17,7 @@ INSERT INTO LinqDataTypes
 VALUES
 (
 	1001,
-	@tt
+	@tt::BigInt
 )
 
 -- Informix.DB2 Informix

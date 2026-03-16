@@ -15,7 +15,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -28,7 +28,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -42,7 +42,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -55,7 +55,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -68,7 +68,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -81,7 +81,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -94,7 +94,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -107,7 +107,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -120,7 +120,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -133,7 +133,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -146,7 +146,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -159,7 +159,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -172,7 +172,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -185,7 +185,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -198,7 +198,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -211,7 +211,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -224,7 +224,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -237,7 +237,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -250,7 +250,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
@@ -263,7 +263,7 @@ INSERT INTO "AllTypes"
 )
 VALUES
 (
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.3 Firebird3
