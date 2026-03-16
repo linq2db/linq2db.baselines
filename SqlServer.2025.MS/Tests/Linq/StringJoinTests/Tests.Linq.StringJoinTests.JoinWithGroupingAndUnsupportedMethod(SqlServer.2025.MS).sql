@@ -2,9 +2,9 @@
 
 SELECT
 	[t1].[Key_1],
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce([t2].[NullableValue], N''), N', '), N'')
+			STRING_AGG(Coalesce([t2].[NullableValue], N''), N', ')
 		FROM
 			(
 				SELECT TOP (2)
@@ -16,10 +16,10 @@ SELECT
 				ORDER BY
 					[x].[NotNullableValue]
 			) [t2]
-	),
-	(
+	), N''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG([t3].[NotNullableValue], N', '), N'')
+			STRING_AGG([t3].[NotNullableValue], N', ')
 		FROM
 			(
 				SELECT TOP (2)
@@ -31,7 +31,7 @@ SELECT
 				ORDER BY
 					[x_1].[NotNullableValue]
 			) [t3]
-	)
+	), N'')
 FROM
 	(
 		SELECT DISTINCT

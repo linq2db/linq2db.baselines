@@ -5,14 +5,14 @@ UPDATE
 SET
 	"VarcharValue" = (
 		SELECT
-			(
+			Coalesce((
 				SELECT
-					Coalesce(LIST(Coalesce("a_Children"."VarcharValue", ''), ', '), '')
+					LIST(Coalesce("a_Children"."VarcharValue", ''), ', ')
 				FROM
 					"SampleClass" "a_Children"
 				WHERE
 					"t_1"."Id" = "a_Children"."Id"
-			)
+			), '')
 		FROM
 			"SampleClass" "t_1"
 		WHERE
@@ -20,14 +20,14 @@ SET
 	),
 	"NVarcharValue" = (
 		SELECT
-			(
+			Coalesce((
 				SELECT
-					Coalesce(LIST(Coalesce("a_Children_1"."VarcharValue", ''), ', '), '')
+					LIST(Coalesce("a_Children_1"."VarcharValue", ''), ', ')
 				FROM
 					"SampleClass" "a_Children_1"
 				WHERE
 					"t_2"."Id" = "a_Children_1"."Id"
-			)
+			), '')
 		FROM
 			"SampleClass" "t_2"
 		WHERE

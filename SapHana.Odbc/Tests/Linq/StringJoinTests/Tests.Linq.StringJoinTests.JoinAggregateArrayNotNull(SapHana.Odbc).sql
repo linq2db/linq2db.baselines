@@ -2,9 +2,9 @@
 
 SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", ''), 3),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."NotNullDistinctValue", ''), ', ' ORDER BY "t2"."NotNullDistinctValue" NULLS FIRST), '')
+			STRING_AGG(Coalesce("t2"."NotNullDistinctValue", ''), ', ' ORDER BY "t2"."NotNullDistinctValue" NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -21,7 +21,7 @@ SELECT
 				WHERE
 					"t1"."item" IS NOT NULL
 			) "t2"
-	)
+	), '')
 FROM
 	"SampleClass" "t"
 

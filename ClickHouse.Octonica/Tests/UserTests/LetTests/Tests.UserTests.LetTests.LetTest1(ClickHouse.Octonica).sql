@@ -12,10 +12,11 @@ FROM
 		INNER JOIN (
 			SELECT
 				t2.Field3 as Field3,
-				a_Ref5_1.Field8 as Field8
+				a_Ref5_1.Field8 as Field8,
+				t2.Field6 as Field6
 			FROM
 				Table3 t2
 					LEFT JOIN Table7 a_Ref5_1 ON t2.Field4 = a_Ref5_1.Field4
-					INNER JOIN Table2 t4 ON t2.Field6 = t4.Field6
 		) t1 ON a_Ref1.Id IS NOT NULL AND a_Ref1.Field3 = t1.Field3 AND a_Ref5.Field8 = t1.Field8
+		INNER JOIN Table2 t4 ON t1.Field6 = t4.Field6
 

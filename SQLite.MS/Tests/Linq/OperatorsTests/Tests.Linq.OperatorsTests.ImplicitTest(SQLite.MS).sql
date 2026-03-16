@@ -6,7 +6,7 @@ SELECT
 	[r].[IntData1],
 	[r].[IntData2]
 FROM
-	[ImplicitTestTable] [r]
+	[ImplicitData] [r]
 LIMIT 2
 
 -- SQLite.MS SQLite
@@ -17,6 +17,6 @@ SELECT
 	[t1].[IntData1],
 	[t1].[IntData2]
 FROM
-	[ImplicitTestTable] [t1]
+	[ImplicitData] [t1]
 LIMIT 2
 

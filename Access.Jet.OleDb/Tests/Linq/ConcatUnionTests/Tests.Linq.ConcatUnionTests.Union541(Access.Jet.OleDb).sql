@@ -11,16 +11,16 @@ FROM
 	[Parent] [p]
 UNION
 SELECT
+	IIF([t1].[Value1] IS NULL, 0, [t1].[Value1]),
+	IIF(False, 0, NULL),
+	IIF(False, 0, NULL),
 	[t1].[ParentID],
-	IIF(False, 0, NULL),
-	IIF(False, 0, NULL),
-	[t1].[ParentID_1],
-	[t1].[ParentID_1],
+	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
 	(
 		SELECT
-			IIF([p2].[Value1] IS NULL, 0, [p2].[Value1]) as [ParentID],
+			[p2].[Value1],
 			(
 				SELECT TOP 1
 					[a_Children].[ParentID]
@@ -30,7 +30,7 @@ FROM
 					[p2].[ParentID] = [a_Children].[ParentID]
 				ORDER BY
 					[a_Children].[ChildID] DESC
-			) as [ParentID_1],
+			) as [ParentID],
 			(
 				SELECT TOP 1
 					[a_Children_1].[ChildID]

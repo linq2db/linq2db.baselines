@@ -8,7 +8,7 @@ FROM
 		CROSS JOIN "Child" c_1
 		CROSS JOIN "Child" c1
 		CROSS JOIN "Child" c_2
-		LEFT JOIN "Parent" a_Parent ON c_2."ParentID" = a_Parent."ParentID"
+		INNER JOIN "Parent" a_Parent ON c_2."ParentID" = a_Parent."ParentID"
 		CROSS JOIN "Parent" p1
 		CROSS JOIN "Child" c_3
 WHERE

@@ -1,13 +1,19 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[c_1].[Key]
+	[c_2].[Key_1]
 FROM
-	[Issue5327Table] [c_1]
-GROUP BY
-	[c_1].[Key]
+	(
+		SELECT
+			SUM([c_1].[Value]) as [Sum_1],
+			[c_1].[Key] as [Key_1]
+		FROM
+			[Issue5327Table] [c_1]
+		GROUP BY
+			[c_1].[Key]
+	) [c_2]
 ORDER BY
-	SUM([c_1].[Value]) DESC
+	[c_2].[Sum_1] DESC
 
 -- Access.Jet.Odbc AccessODBC
 

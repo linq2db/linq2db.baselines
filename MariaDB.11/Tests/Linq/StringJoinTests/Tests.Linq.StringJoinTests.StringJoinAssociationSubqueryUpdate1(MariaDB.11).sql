@@ -5,18 +5,30 @@ UPDATE
 SET
 	`t`.`VarcharValue` = (
 		SELECT
-			GROUP_CONCAT(`a_Children`.`VarcharValue` SEPARATOR ' | ')
+			GROUP_CONCAT(`t1`.`VarcharValue` SEPARATOR ' | ')
 		FROM
-			`SampleClass` `a_Children`
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
 		WHERE
-			`t`.`Id` = `a_Children`.`Id`
+			`t`.`Id` = `t1`.`Id`
 	),
 	`t`.`NVarcharValue` = (
 		SELECT
-			GROUP_CONCAT(`a_Children`.`VarcharValue` SEPARATOR ' | ')
+			GROUP_CONCAT(`t1`.`VarcharValue` SEPARATOR ' | ')
 		FROM
-			`SampleClass` `a_Children`
+			(
+				SELECT
+					`a_Children`.`VarcharValue`,
+					`a_Children`.`Id`
+				FROM
+					`SampleClass` `a_Children`
+			) `t1`
 		WHERE
-			`t`.`Id` = `a_Children`.`Id`
+			`t`.`Id` = `t1`.`Id`
 	)
 

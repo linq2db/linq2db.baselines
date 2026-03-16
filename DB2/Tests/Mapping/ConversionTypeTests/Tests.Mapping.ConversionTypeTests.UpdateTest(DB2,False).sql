@@ -18,7 +18,7 @@ SET     @Data = '***OOO***'
 UPDATE
 	"TrimTestTable" "t"
 SET
-	"Data" = @Data
+	"Data" = CAST(@Data AS NVarChar(9))
 WHERE
 	"t"."Data" = '***XXX***'
 
@@ -31,7 +31,7 @@ SET     @p = '***HHH***'
 UPDATE
 	"TrimTestTable" "t"
 SET
-	"Data" = @Data
+	"Data" = CAST(@Data AS NVarChar(9))
 WHERE
 	"t"."Data" = @p
 

@@ -14,7 +14,7 @@ FROM
 				COUNT(*) as "Count_1"
 			FROM
 				"UserMachineAssignment" g_1
-					INNER JOIN "Machine" "a_Machine" ON g_1."MachineId" = "a_Machine"."Id" OR g_1."MachineId" IS NULL AND "a_Machine"."Id" IS NULL
+					LEFT JOIN "Machine" "a_Machine" ON g_1."MachineId" = "a_Machine"."Id" OR g_1."MachineId" IS NULL AND "a_Machine"."Id" IS NULL
 			GROUP BY
 				g_1."UserId"
 		) aq ON aq."Key_1" = u."Id"

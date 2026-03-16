@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id) as RowNumber,
-			e.TestId as TestId,
-			e.Id as Id
+			e.Id as Id,
+			e.TestId as TestId
 		FROM
 			TestTable e
 		WHERE
@@ -24,8 +24,7 @@ FROM
 WHERE
 	t1.RowNumber = toInt64(1)
 ORDER BY
-	t1.TestId,
-	t1.Id
+	t1.Id DESC
 
 -- ClickHouse.MySql ClickHouse
 

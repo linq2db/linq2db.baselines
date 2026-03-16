@@ -40,7 +40,7 @@ UPDATE
 	"ConcurrencyAutoIncrement" "obj"
 SET
 	"Stamp" = "obj"."Stamp" + 1,
-	"Value" = @Value
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
@@ -65,7 +65,7 @@ UPDATE
 	"ConcurrencyAutoIncrement" "obj"
 SET
 	"Stamp" = "obj"."Stamp" + 1,
-	"Value" = @Value
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
@@ -90,7 +90,7 @@ UPDATE
 	"ConcurrencyAutoIncrement" "obj"
 SET
 	"Stamp" = "obj"."Stamp" + 1,
-	"Value" = @Value
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 

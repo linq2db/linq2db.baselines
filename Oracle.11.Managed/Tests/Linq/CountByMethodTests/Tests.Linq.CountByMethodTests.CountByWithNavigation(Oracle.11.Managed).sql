@@ -11,12 +11,10 @@ FROM
 		FROM
 			"Parent" p
 				INNER JOIN (
-					SELECT
+					SELECT DISTINCT
 						c_1."ParentID" as "Key_1"
 					FROM
 						"Child" c_1
-					GROUP BY
-						c_1."ParentID"
 				) c_2 ON p."ParentID" = c_2."Key_1"
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"

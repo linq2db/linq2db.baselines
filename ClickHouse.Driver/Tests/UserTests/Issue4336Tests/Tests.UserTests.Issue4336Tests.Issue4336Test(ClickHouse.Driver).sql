@@ -8,8 +8,8 @@ SELECT
 	r.Quantity,
 	r.MaxCapacity - r.Quantity,
 	COALESCE(t1.PeriodOrderLimit,0),
-	t1.Quantity,
-	COALESCE(t1.PeriodOrderLimit,0) - t1.Quantity
+	vsopc.Quantity,
+	COALESCE(t1.PeriodOrderLimit,0) - vsopc.Quantity
 FROM
 	(
 		SELECT
@@ -41,25 +41,24 @@ FROM
 			SELECT
 				v2.Id as Id,
 				vpcc.Id as Id_1,
-				vpcc.PeriodOrderLimit as PeriodOrderLimit,
-				vsopc.Quantity as Quantity
+				vpcc.PeriodOrderLimit as PeriodOrderLimit
 			FROM
 				OrderPeriod v2
 					INNER JOIN ProductCategory vpcc ON 1=1
-					LEFT JOIN (
-						SELECT
-							agroup_1.Id as Id,
-							p.CategoryId as CategoryId,
-							sumOrNull(oi_1.Quantity) as Quantity
-						FROM
-							OrderPeriod agroup_1
-								LEFT JOIN OrderHeader oh_1 ON agroup_1.Id = oh_1.PeriodId
-								LEFT JOIN OrderItem oi_1 ON oh_1.Id = oi_1.OrderHeaderId
-								LEFT JOIN Product p ON p.Id = oi_1.ProductId
-						GROUP BY
-							agroup_1.Id,
-							p.CategoryId
-					) vsopc ON vsopc.Id = v2.Id AND vsopc.CategoryId = vpcc.Id
 		) t1 ON t1.Id = r.OrderPeriodId AND t1.Id_1 = r.CategoryId
+		LEFT JOIN (
+			SELECT
+				agroup_1.Id as Id,
+				p.CategoryId as CategoryId,
+				sumOrNull(oi_1.Quantity) as Quantity
+			FROM
+				OrderPeriod agroup_1
+					LEFT JOIN OrderHeader oh_1 ON agroup_1.Id = oh_1.PeriodId
+					LEFT JOIN OrderItem oi_1 ON oh_1.Id = oi_1.OrderHeaderId
+					LEFT JOIN Product p ON p.Id = oi_1.ProductId
+			GROUP BY
+				agroup_1.Id,
+				p.CategoryId
+		) vsopc ON vsopc.Id = t1.Id AND (vsopc.CategoryId = t1.Id_1 OR vsopc.CategoryId IS NULL AND t1.Id_1 IS NULL)
 LIMIT 10
 

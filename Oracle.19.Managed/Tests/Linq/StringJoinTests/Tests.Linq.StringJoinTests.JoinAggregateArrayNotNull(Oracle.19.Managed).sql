@@ -1,7 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
 		FROM
@@ -13,8 +13,8 @@ SELECT
 				SELECT CAST(t."VarcharValue" AS NVarChar2(50)) FROM sys.dual
 				UNION ALL
 				SELECT t."NVarcharValue" FROM sys.dual) t4
-	),
-	t3."NotNullDistinctValue"
+	), ''),
+	Coalesce(t3."NotNullDistinctValue", '')
 FROM
 	"SampleClass" t
 		OUTER APPLY (

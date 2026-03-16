@@ -15,17 +15,26 @@ CREATE TABLE [TestTable]
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[t1].[Id],
-	[t1].[Value],
-	[t2].[Id],
-	[t2].[Value],
-	[t2].[Id],
-	[t2].[Value]
+	[cross_1].[Id_1],
+	[cross_1].[Value_1],
+	[cross_1].[Id],
+	[cross_1].[Value_2],
+	[t3].[Id],
+	[t3].[Value]
 FROM
-	[TestTable] [t1],
-	[TestTable] [t2]
+	(
+		SELECT
+			[t2].[Id],
+			[t1].[Id] as [Id_1],
+			[t1].[Value] as [Value_1],
+			[t2].[Value] as [Value_2]
+		FROM
+			[TestTable] [t1],
+			[TestTable] [t2]
+	) [cross_1]
+		INNER JOIN [TestTable] [t3] ON ([cross_1].[Id] = [t3].[Id])
 WHERE
-	[t1].[Id] = [t2].[Id]
+	[cross_1].[Id_1] = [cross_1].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
 

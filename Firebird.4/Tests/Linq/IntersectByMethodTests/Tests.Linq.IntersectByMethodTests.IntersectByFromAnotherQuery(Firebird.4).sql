@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."TestId" ORDER BY "e"."Id") as "RowNumber",
-			"e"."TestId",
-			"e"."Id"
+			"e"."Id",
+			"e"."TestId"
 		FROM
 			"TestTable" "e"
 		WHERE
@@ -31,8 +31,7 @@ FROM
 WHERE
 	"t2"."RowNumber" = 1
 ORDER BY
-	"t2"."TestId",
-	"t2"."Id"
+	"t2"."Id" DESC
 
 -- Firebird.4 Firebird4
 

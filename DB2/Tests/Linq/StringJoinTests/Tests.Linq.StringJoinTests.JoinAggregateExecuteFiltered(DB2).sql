@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Coalesce(LISTAGG(Coalesce("x"."NullableValue", ''), ', '), '')
+	LISTAGG(Coalesce("x"."NullableValue", ''), ', ')
 FROM
 	"SampleClass" "x"
 WHERE

@@ -1,7 +1,16 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
+	(
+		SELECT TOP 1
+			[c_1].[ParentID]
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] > 0
+		ORDER BY
+			[c_1].[ParentID]
+	),
 	(
 		SELECT TOP 1
 			[c_2].[ParentID]
@@ -23,22 +32,7 @@ SELECT
 			[c_3].[ParentID]
 	)
 FROM
-	(
-		SELECT
-			(
-				SELECT TOP 1
-					[c_1].[ParentID]
-				FROM
-					[Child] [c_1]
-				WHERE
-					[c_1].[ParentID] > 0
-				ORDER BY
-					[c_1].[ParentID]
-			) as [ParentID],
-			[p].[ParentID] as [ParentID_1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
 ORDER BY
-	[t1].[ParentID_1]
+	[p].[ParentID]
 

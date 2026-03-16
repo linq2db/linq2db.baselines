@@ -94,9 +94,8 @@ FROM
 					COUNT(*) > 1
 			) t1
 	) m_1
-		INNER JOIN "InventoryResourceDTO" d
-			INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id"
-		ON m_1."Status" = d."Status" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
+		INNER JOIN "InventoryResourceDTO" d ON m_1."Status" = d."Status"
+		INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 

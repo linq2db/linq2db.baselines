@@ -2,7 +2,7 @@
 
 SELECT
 	CONCAT_WS(', ', Coalesce(t."NullableValue", ''), t."NotNullableValue", Coalesce(t."VarcharValue", ''), Coalesce(t."NVarcharValue", '')),
-	(
+	Coalesce((
 		SELECT
 			Coalesce(STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item), '')
 		FROM
@@ -10,13 +10,13 @@ SELECT
 				(t."NotNullableValue"), (t."NotNullableValue"),
 				(t."NotNullableValue"), (t."NVarcharValue")
 			) t1(item)
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce(t3."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
+			STRING_AGG(Coalesce(t3."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
 				WHEN t3."AggregatedFilteredDistinct" IS NULL THEN 0
 				ELSE 1
-			END NULLS FIRST, t3."AggregatedFilteredDistinct" NULLS FIRST), '')
+			END NULLS FIRST, t3."AggregatedFilteredDistinct" NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -29,7 +29,7 @@ SELECT
 				WHERE
 					t2.item <> 'A' OR t2.item IS NULL
 			) t3
-	)
+	), '')
 FROM
 	"SampleClass" t
 

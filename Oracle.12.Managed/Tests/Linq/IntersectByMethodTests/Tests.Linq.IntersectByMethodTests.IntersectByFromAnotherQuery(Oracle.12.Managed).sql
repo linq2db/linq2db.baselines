@@ -7,8 +7,8 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."Id") as "RowNumber",
-			e."TestId",
-			e."Id"
+			e."Id",
+			e."TestId"
 		FROM
 			"TestTable" e
 		WHERE
@@ -24,8 +24,7 @@ FROM
 WHERE
 	t1."RowNumber" = 1
 ORDER BY
-	t1."TestId",
-	t1."Id"
+	t1."Id" DESC
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 

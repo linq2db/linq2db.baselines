@@ -10,7 +10,7 @@ FROM
 		FROM
 			[Parent] [t1],
 			[Child] [c_1]
-	) [sub]
-		INNER JOIN [Patient] [t] ON ([sub].[ParentID] = [t].[PersonID])
+	) [cross_1]
+		INNER JOIN [Patient] [t] ON ([cross_1].[ParentID] = [t].[PersonID])
 WITH OWNERACCESS OPTION
 
