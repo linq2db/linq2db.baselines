@@ -6,7 +6,7 @@ SELECT
 	[r].[IntData1],
 	[r].[IntData2]
 FROM
-	[<>f__AnonymousType707`4] [r]
+	[ImplicitTestTable] [r]
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -17,6 +17,6 @@ SELECT
 	[t1].[IntData1],
 	[t1].[IntData2]
 FROM
-	[<>f__AnonymousType707`4] [t1]
+	[ImplicitTestTable] [t1]
 LIMIT 2
 

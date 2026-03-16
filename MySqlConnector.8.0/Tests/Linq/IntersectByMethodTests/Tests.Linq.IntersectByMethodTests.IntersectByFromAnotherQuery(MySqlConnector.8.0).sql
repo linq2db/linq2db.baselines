@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY `e`.`TestId` ORDER BY `e`.`TestId`) as `RowNumber`,
+			ROW_NUMBER() OVER (PARTITION BY `e`.`TestId` ORDER BY `e`.`Id`) as `RowNumber`,
 			`e`.`TestId`,
 			`e`.`Id`
 		FROM
@@ -24,7 +24,8 @@ FROM
 WHERE
 	`t1`.`RowNumber` = 1
 ORDER BY
-	`t1`.`TestId`
+	`t1`.`TestId`,
+	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 

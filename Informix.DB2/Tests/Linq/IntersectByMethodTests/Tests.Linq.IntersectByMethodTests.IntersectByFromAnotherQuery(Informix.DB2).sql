@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.TestId) as RowNumber,
+			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id) as RowNumber,
 			e.TestId,
 			e.Id
 		FROM
@@ -31,7 +31,8 @@ FROM
 WHERE
 	t2.RowNumber = 1
 ORDER BY
-	t2.TestId
+	t2.TestId,
+	t2.Id
 
 -- Informix.DB2 Informix
 
