@@ -1,0 +1,60 @@
+﻿-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t5"."Key_1",
+	Coalesce("t2"."Nullable_1", ''),
+	Coalesce("t4"."NotNullable", '')
+FROM
+	(
+		SELECT DISTINCT
+			"g_1"."Id" as "Key_1"
+		FROM
+			"SampleClass" "g_1"
+	) "t5"
+		LEFT JOIN LATERAL (
+			SELECT
+				STRING_AGG(Coalesce("t1"."NullableValue", ''), ', ') as "Nullable_1"
+			FROM
+				(
+					SELECT
+						"x"."NullableValue"
+					FROM
+						"SampleClass" "x"
+					WHERE
+						"t5"."Key_1" = "x"."Id"
+					ORDER BY
+						"x"."NotNullableValue"
+					LIMIT 2
+				) "t1"
+		) "t2" ON 1=1
+		LEFT JOIN LATERAL (
+			SELECT
+				STRING_AGG("t3"."NotNullableValue", ', ') as "NotNullable"
+			FROM
+				(
+					SELECT
+						"x_1"."NotNullableValue"
+					FROM
+						"SampleClass" "x_1"
+					WHERE
+						"t5"."Key_1" = "x_1"."Id"
+					ORDER BY
+						"x_1"."NotNullableValue"
+					LIMIT 2
+				) "t3"
+		) "t4" ON 1=1
+ORDER BY
+	"t5"."Key_1"
+
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."PK",
+	"t1"."Id",
+	"t1"."NullableValue",
+	"t1"."NotNullableValue",
+	"t1"."VarcharValue",
+	"t1"."NVarcharValue"
+FROM
+	"SampleClass" "t1"
+
