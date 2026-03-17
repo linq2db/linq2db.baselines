@@ -1,0 +1,20 @@
+﻿-- Firebird.4 Firebird4
+
+SELECT
+	"arg"."Id",
+	"arg"."Value"
+FROM
+	"Person" "entity"
+		INNER JOIN (
+			SELECT 1 AS "Id", CAST(0 AS Real) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
+
+-- Firebird.4 Firebird4
+
+SELECT
+	"arg"."Id",
+	"arg"."Value"
+FROM
+	"Person" "entity"
+		INNER JOIN (
+			SELECT 1 AS "Id", CAST(3.14748365E+09 AS Real) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
+
