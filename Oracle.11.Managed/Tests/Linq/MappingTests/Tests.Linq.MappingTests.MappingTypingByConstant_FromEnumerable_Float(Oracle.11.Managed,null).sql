@@ -1,0 +1,20 @@
+﻿-- Oracle.11.Managed Oracle11
+
+SELECT
+	arg."Id",
+	arg."Value"
+FROM
+	"Person" entity
+		INNER JOIN (
+			SELECT 1 AS "Id", NULL AS "Value" FROM sys.dual) arg ON entity."PersonID" = arg."Id"
+
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	arg."Id",
+	arg."Value"
+FROM
+	"Person" entity
+		INNER JOIN (
+			SELECT 1 AS "Id", 3.14748365E+09 AS "Value" FROM sys.dual) arg ON entity."PersonID" = arg."Id"
+
