@@ -2,9 +2,9 @@
 
 SELECT
 	CONCAT_WS(N', ', [t].[NullableValue], [t].[NotNullableValue], [t].[VarcharValue], [t].[NVarcharValue]),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce([t2].[NotNullDistinctValue], N''), N', ') WITHIN GROUP (ORDER BY [t2].[NotNullDistinctValue]), N'')
+			STRING_AGG(Coalesce([t2].[NotNullDistinctValue], N''), N', ') WITHIN GROUP (ORDER BY [t2].[NotNullDistinctValue])
 		FROM
 			(
 				SELECT DISTINCT
@@ -17,7 +17,7 @@ SELECT
 				WHERE
 					[t1].[item] IS NOT NULL
 			) [t2]
-	)
+	), N'')
 FROM
 	[SampleClass] [t]
 

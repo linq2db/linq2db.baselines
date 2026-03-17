@@ -2,9 +2,9 @@
 
 SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."AggregatedNotNullFilteredDi", ''), ', '), '')
+			LIST(Coalesce("t2"."AggregatedNotNullFilteredDi", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -23,10 +23,10 @@ SELECT
 				ORDER BY
 					"t1"."item"
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t5"."AggregatedFilteredDistinct", ''), ', '), '')
+			LIST(Coalesce("t5"."AggregatedFilteredDistinct", ''), ', ')
 		FROM
 			(
 				SELECT
@@ -54,7 +54,7 @@ SELECT
 					END,
 					"t4"."AggregatedFilteredDistinct"
 			) "t5"
-	)
+	), '')
 FROM
 	"SampleClass" "t"
 

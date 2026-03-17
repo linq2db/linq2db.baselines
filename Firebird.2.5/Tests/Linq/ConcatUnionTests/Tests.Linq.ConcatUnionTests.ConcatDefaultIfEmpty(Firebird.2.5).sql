@@ -23,12 +23,13 @@ FROM
 					"Child" "a_Children_1"
 				WHERE
 					"p"."ParentID" = "a_Children_1"."ParentID"
-			) as "ChildID"
+			) as "ChildID",
+			"p"."ParentID" as "ParentID_1"
 		FROM
 			"Parent" "p"
-		WHERE
-			"p"."ParentID" = 1
 	) "t1"
+WHERE
+	"t1"."ParentID_1" = 1
 UNION ALL
 SELECT
 	CAST(1 AS Int),

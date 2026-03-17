@@ -7,7 +7,6 @@ SELECT
 	END
 FROM
 	"Parent" employee
-		LEFT JOIN "GrandChild" names_1 ON employee."ParentID" = names_1."ParentID"
 		OUTER APPLY (
 			SELECT
 				a_Children."ParentID",
@@ -18,4 +17,5 @@ FROM
 				employee."ParentID" = a_Children."ParentID"
 			FETCH NEXT 1 ROWS ONLY
 		) t1
+		LEFT JOIN "GrandChild" names_1 ON employee."ParentID" = names_1."ParentID"
 

@@ -14,7 +14,7 @@ FROM
 			[Parent] [p],
 			[Child] [c_1]
 	) [sub]
-		LEFT JOIN [Parent] [a_Parent] ON [sub].[ParentID] = [a_Parent].[ParentID]
+		INNER JOIN [Parent] [a_Parent] ON [sub].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[sub].[ParentID_1] = [a_Parent].[ParentID] AND ([sub].[Value1] = [a_Parent].[Value1] OR [sub].[Value1] IS NULL AND [a_Parent].[Value1] IS NULL)
 ORDER BY

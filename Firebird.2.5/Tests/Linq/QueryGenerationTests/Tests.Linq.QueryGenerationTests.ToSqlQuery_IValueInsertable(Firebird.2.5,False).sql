@@ -8,7 +8,7 @@ INSERT INTO "TableWithIdentity"
 )
 VALUES
 (
-	@value
+	CAST(@value AS Int)
 )
 
 -- Firebird.2.5 Firebird

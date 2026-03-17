@@ -14,8 +14,8 @@ INSERT INTO "Person"
 VALUES
 (
 	GEN_ID("PersonID", 1),
-	@FirstName,
+	CAST(@FirstName AS VARCHAR(9)),
 	'LastName',
-	@Gender
+	CAST(@Gender AS CHAR(1))
 )
 

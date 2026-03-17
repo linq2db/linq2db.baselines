@@ -5,7 +5,7 @@ SET     @Test = NULL
 UPDATE
 	"Issue5351Table" "x"
 SET
-	"Test" = @Test
+	"Test" = CAST(@Test AS Char(1))
 WHERE
 	"x"."Id" = 1
 
@@ -27,7 +27,7 @@ SET     @Test = 'X'
 UPDATE
 	"Issue5351Table" "x"
 SET
-	"Test" = @Test
+	"Test" = CAST(@Test AS Char(1))
 WHERE
 	"x"."Id" = 2
 

@@ -1,8 +1,8 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[sub].[PersonID_1],
-	[sub].[FirstName],
+	[cross_1].[PersonID_1],
+	[cross_1].[FirstName],
 	[doctor_1].[Taxonomy]
 FROM
 	(
@@ -13,12 +13,12 @@ FROM
 		FROM
 			[Patient] [patient_1],
 			[Person] [person_1]
-	) [sub]
-		LEFT JOIN [Doctor] [doctor_1] ON ([doctor_1].[PersonID] = [sub].[PersonID] AND [doctor_1].[PersonID] = [sub].[PersonID_1])
+	) [cross_1]
+		LEFT JOIN [Doctor] [doctor_1] ON ([doctor_1].[PersonID] = [cross_1].[PersonID] AND [doctor_1].[PersonID] = [cross_1].[PersonID_1])
 WHERE
-	[sub].[FirstName] LIKE 'J%'
+	[cross_1].[FirstName] LIKE 'J%'
 ORDER BY
-	[sub].[PersonID_1],
-	[sub].[FirstName],
+	[cross_1].[PersonID_1],
+	[cross_1].[FirstName],
 	[doctor_1].[Taxonomy]
 

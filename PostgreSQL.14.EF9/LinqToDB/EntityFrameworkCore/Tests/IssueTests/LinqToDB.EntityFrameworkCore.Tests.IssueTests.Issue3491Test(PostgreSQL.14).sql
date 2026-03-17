@@ -3,12 +3,9 @@
 UPDATE
 	"PostgreTestTable"
 SET
-	("Title", "SearchVector") = (x_1."Title", to_tsvector('test'))
-FROM
-	"PostgreTestTable" x_1
-		LEFT JOIN "PostgreTestTable" x ON x_1."Id" = x."Id"
+	("Title", "SearchVector") = ("PostgreTestTable"."Title", to_tsvector('test'))
 WHERE
-	x_1."Id" = 1 AND "PostgreTestTable"."Id" = x_1."Id"
+	"PostgreTestTable"."Id" = 1
 
 
 

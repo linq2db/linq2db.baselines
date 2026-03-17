@@ -10,7 +10,7 @@ INSERT INTO TableWithIdentity
 VALUES
 (
 	543,
-	@value
+	@value::Int
 )
 
 -- Informix.DB2 Informix

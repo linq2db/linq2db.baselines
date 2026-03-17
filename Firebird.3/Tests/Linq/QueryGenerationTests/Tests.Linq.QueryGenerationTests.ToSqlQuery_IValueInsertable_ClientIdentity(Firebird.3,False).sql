@@ -10,7 +10,7 @@ INSERT INTO "TableWithIdentity"
 VALUES
 (
 	543,
-	@value
+	CAST(@value AS Int)
 )
 
 -- Firebird.3 Firebird3

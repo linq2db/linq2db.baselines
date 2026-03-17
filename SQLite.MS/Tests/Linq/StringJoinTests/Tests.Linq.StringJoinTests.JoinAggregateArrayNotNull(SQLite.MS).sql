@@ -2,9 +2,9 @@
 
 SELECT
 	SUBSTR(Coalesce(', ' || [t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || Coalesce(', ' || [t].[VarcharValue], '') || Coalesce(', ' || [t].[NVarcharValue], ''), 3),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullDistinctValue], ''), ', '), '')
+			GROUP_CONCAT(Coalesce([t2].[NotNullDistinctValue], ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -22,7 +22,7 @@ SELECT
 				ORDER BY
 					[t1].[item]
 			) [t2]
-	)
+	), '')
 FROM
 	[SampleClass] [t]
 

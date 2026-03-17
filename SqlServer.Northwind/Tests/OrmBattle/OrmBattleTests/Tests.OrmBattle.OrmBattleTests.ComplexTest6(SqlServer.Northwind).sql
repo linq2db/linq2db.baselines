@@ -28,7 +28,7 @@ SELECT
 	[o].[ShipCountry]
 FROM
 	[Customers] [i]
-		INNER JOIN [Orders] [o]
-			INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
-		ON [a_Customer].[CustomerID] = [i].[CustomerID]
+		CROSS JOIN [Orders] [o]
+WHERE
+	[o].[CustomerID] = [i].[CustomerID]
 

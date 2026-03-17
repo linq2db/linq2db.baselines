@@ -10,7 +10,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	@ID,
+	@ID::Int,
 	100,
 	200
 )

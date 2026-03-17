@@ -2,9 +2,9 @@
 
 SELECT
 	"t1"."Key_1",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."NullableDistinct", ''), ', '), '')
+			STRING_AGG(Coalesce("t2"."NullableDistinct", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -14,10 +14,10 @@ SELECT
 				WHERE
 					"t1"."Key_1" = "t"."Id"
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t3"."NullableDistinctNotNullDistinct", ''), ', '), '')
+			STRING_AGG(Coalesce("t3"."NullableDistinctNotNullDistinct", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -27,10 +27,10 @@ SELECT
 				WHERE
 					"t1"."Key_1" = "t_1"."Id" AND "t_1"."NullableValue" IS NOT NULL
 			) "t3"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t4"."NullableDistinctNotNullDistinctOrdered", ''), ', ' ORDER BY "t4"."NullableDistinctNotNullDistinctOrdered" DESC NULLS FIRST), '')
+			STRING_AGG(Coalesce("t4"."NullableDistinctNotNullDistinctOrdered", ''), ', ' ORDER BY "t4"."NullableDistinctNotNullDistinctOrdered" DESC NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -40,10 +40,10 @@ SELECT
 				WHERE
 					"t1"."Key_1" = "t_2"."Id" AND "t_2"."NullableValue" IS NOT NULL
 			) "t4"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG("t5"."NotNullableDistinct", ', '), '')
+			STRING_AGG("t5"."NotNullableDistinct", ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -53,10 +53,10 @@ SELECT
 				WHERE
 					"t1"."Key_1" = "t_3"."Id"
 			) "t5"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG("t6"."NotNullableDistinctOrdered", ', ' ORDER BY "t6"."NotNullableDistinctOrdered" DESC NULLS FIRST), '')
+			STRING_AGG("t6"."NotNullableDistinctOrdered", ', ' ORDER BY "t6"."NotNullableDistinctOrdered" DESC NULLS FIRST)
 		FROM
 			(
 				SELECT DISTINCT
@@ -66,7 +66,7 @@ SELECT
 				WHERE
 					"t1"."Key_1" = "t_4"."Id"
 			) "t6"
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT

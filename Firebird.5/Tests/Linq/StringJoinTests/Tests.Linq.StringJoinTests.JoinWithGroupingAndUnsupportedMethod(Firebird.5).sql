@@ -2,9 +2,9 @@
 
 SELECT
 	"t1"."Key_1",
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NullableValue", ''), ', '), '')
+			LIST(Coalesce("t2"."NullableValue", ''), ', ')
 		FROM
 			(
 				SELECT
@@ -17,10 +17,10 @@ SELECT
 					"x"."NotNullableValue"
 				FETCH NEXT 2 ROWS ONLY
 			) "t2"
-	),
-	(
+	), ''),
+	Coalesce((
 		SELECT
-			Coalesce(LIST("t3"."NotNullableValue", ', '), '')
+			LIST("t3"."NotNullableValue", ', ')
 		FROM
 			(
 				SELECT
@@ -33,7 +33,7 @@ SELECT
 					"x_1"."NotNullableValue"
 				FETCH NEXT 2 ROWS ONLY
 			) "t3"
-	)
+	), '')
 FROM
 	(
 		SELECT DISTINCT

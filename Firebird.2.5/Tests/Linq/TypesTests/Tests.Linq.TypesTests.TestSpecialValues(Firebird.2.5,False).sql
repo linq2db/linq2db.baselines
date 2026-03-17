@@ -20,8 +20,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1000,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS DOUBLE PRECISION)
 )
 
 -- Firebird.2.5 Firebird
@@ -39,8 +39,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1001,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS DOUBLE PRECISION)
 )
 
 -- Firebird.2.5 Firebird
@@ -58,8 +58,8 @@ INSERT INTO "AllTypes"
 VALUES
 (
 	1002,
-	@real,
-	@dbl
+	CAST(@real AS Real),
+	CAST(@dbl AS DOUBLE PRECISION)
 )
 
 -- Firebird.2.5 Firebird

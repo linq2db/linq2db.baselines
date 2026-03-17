@@ -6,9 +6,9 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."TestId") as "RowNumber",
-			e."TestId",
-			e."Id"
+			ROW_NUMBER() OVER (PARTITION BY e."TestId" ORDER BY e."Id") as "RowNumber",
+			e."Id",
+			e."TestId"
 		FROM
 			"TestTable" e
 		WHERE
@@ -24,7 +24,7 @@ FROM
 WHERE
 	t1."RowNumber" = 1
 ORDER BY
-	t1."TestId"
+	t1."Id" DESC
 
 -- PostgreSQL.13 PostgreSQL
 

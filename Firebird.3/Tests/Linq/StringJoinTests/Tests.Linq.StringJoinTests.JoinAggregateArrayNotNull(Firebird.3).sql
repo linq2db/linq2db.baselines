@@ -2,9 +2,9 @@
 
 SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", '') FROM 3),
-	(
+	Coalesce((
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NotNullDistinctValue", ''), ', '), '')
+			LIST(Coalesce("t2"."NotNullDistinctValue", ''), ', ')
 		FROM
 			(
 				SELECT DISTINCT
@@ -23,7 +23,7 @@ SELECT
 				ORDER BY
 					"t1"."item"
 			) "t2"
-	)
+	), '')
 FROM
 	"SampleClass" "t"
 

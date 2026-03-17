@@ -1,0 +1,82 @@
+﻿-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	[t2].[ParentID],
+	[t2].[ChildID]
+FROM
+	(
+		SELECT
+			[t1].[ParentID],
+			[t1].[ChildID]
+		FROM
+			[Child] [t1]
+		ORDER BY
+			[t1].[ChildID]
+	) [t2]
+UNION ALL
+SELECT
+	[t4].[ParentID],
+	[t4].[ChildID]
+FROM
+	(
+		SELECT
+			[t3].[ParentID],
+			[t3].[ChildID]
+		FROM
+			[Child] [t3]
+		ORDER BY
+			[t3].[ChildID] DESC
+	) [t4]
+
+-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+UNION ALL
+SELECT
+	[t3].[ParentID],
+	[t3].[ChildID]
+FROM
+	(
+		SELECT
+			[t2].[ParentID],
+			[t2].[ChildID]
+		FROM
+			[Child] [t2]
+		ORDER BY
+			[t2].[ChildID] DESC
+	) [t3]
+
+-- Access.Jet.Odbc AccessODBC
+
+SELECT
+	[t4].[ParentID],
+	[t4].[ChildID]
+FROM
+	(
+		SELECT
+			[t1].[ChildID],
+			[t1].[ParentID]
+		FROM
+			[Child] [t1]
+		UNION ALL
+		SELECT
+			[t3].[ChildID],
+			[t3].[ParentID]
+		FROM
+			(
+				SELECT
+					[t2].[ParentID],
+					[t2].[ChildID]
+				FROM
+					[Child] [t2]
+				ORDER BY
+					[t2].[ChildID] DESC
+			) [t3]
+	) [t4]
+ORDER BY
+	[t4].[ChildID]
+

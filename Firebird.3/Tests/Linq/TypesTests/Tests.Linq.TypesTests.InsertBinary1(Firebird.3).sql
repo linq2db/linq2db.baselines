@@ -18,7 +18,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	@data,
+	CAST(@data AS BLOB),
 	TRUE
 )
 

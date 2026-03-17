@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e_2].[Key_1] ORDER BY [e_2].[SourceIndex], [e_2].[Key_1]) as [RowNumber],
+			ROW_NUMBER() OVER (PARTITION BY [e_2].[Key_1] ORDER BY [e_2].[SourceIndex], [e_2].[Id]) as [RowNumber],
 			[e_2].[Id],
 			[e_2].[Key_1],
 			[e_2].[Value_1]

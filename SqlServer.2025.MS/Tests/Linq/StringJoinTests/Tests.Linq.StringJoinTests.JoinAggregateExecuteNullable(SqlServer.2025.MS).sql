@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	Coalesce(STRING_AGG(Coalesce([t1].[NullableValue], N''), N', ') WITHIN GROUP (ORDER BY [t1].[NotNullableValue]), N'')
+	STRING_AGG(Coalesce([t1].[NullableValue], N''), N', ') WITHIN GROUP (ORDER BY [t1].[NotNullableValue])
 FROM
 	[SampleClass] [t1]
 

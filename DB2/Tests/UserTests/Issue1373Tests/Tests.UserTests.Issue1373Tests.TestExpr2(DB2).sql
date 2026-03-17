@@ -10,7 +10,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	@Field1
+	CAST(@Field1 AS NVarChar(8168))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -25,7 +25,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	@Field1
+	CAST(@Field1 AS NVarChar(8168))
 )
 
 -- DB2 DB2.LUW DB2LUW
@@ -40,7 +40,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	@Field1
+	CAST(@Field1 AS NVarChar(4))
 )
 
 -- DB2 DB2.LUW DB2LUW

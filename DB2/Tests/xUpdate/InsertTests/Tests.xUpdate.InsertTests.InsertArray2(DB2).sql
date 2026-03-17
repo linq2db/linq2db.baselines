@@ -19,7 +19,7 @@ VALUES
 (
 	1001,
 	1,
-	@arr
+	CAST(@arr AS VARBINARY(32672))
 )
 
 -- DB2 DB2.LUW DB2LUW

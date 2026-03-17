@@ -18,8 +18,8 @@ INSERT INTO "Child"
 )
 VALUES
 (
-	@id,
-	@ParentID
+	CAST(@id AS Int),
+	CAST(@ParentID AS Int)
 )
 
 -- Firebird.5 Firebird4
