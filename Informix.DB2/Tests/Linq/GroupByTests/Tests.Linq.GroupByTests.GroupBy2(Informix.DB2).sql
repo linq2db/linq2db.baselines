@@ -1,0 +1,14 @@
+﻿-- Informix.DB2 Informix
+
+SELECT
+	gr_1.ID,
+	gr_1.ID + 1
+FROM
+	(
+		SELECT DISTINCT
+			Nvl(gr.Value1, c_1.ChildID) as ID
+		FROM
+			Parent gr
+				INNER JOIN Child c_1 ON gr.ParentID = c_1.ParentID
+	) gr_1
+
