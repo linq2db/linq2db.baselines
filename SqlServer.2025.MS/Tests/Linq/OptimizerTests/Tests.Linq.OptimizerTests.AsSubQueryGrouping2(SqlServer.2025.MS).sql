@@ -1,0 +1,14 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+
+SELECT
+	COUNT([x_1].[Key2]),
+	COUNT([x_1].[Key1])
+FROM
+	(
+		SELECT
+			[x].[Key2],
+			[x].[Key1]
+		FROM
+			[FirstOptimizerData] [x]
+	) [x_1]
+

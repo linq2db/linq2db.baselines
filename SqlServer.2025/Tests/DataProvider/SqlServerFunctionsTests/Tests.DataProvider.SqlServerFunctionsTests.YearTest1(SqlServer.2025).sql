@@ -1,0 +1,5 @@
+﻿-- SqlServer.2025
+
+SELECT
+	YEAR(N'2022-02-24')
+
