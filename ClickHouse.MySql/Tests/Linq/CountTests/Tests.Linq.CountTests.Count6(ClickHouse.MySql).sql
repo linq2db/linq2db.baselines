@@ -1,0 +1,14 @@
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT DISTINCT
+			g_1.ParentID as ParentID
+		FROM
+			Child g_1
+		WHERE
+			g_1.ParentID > 2
+	) t1
+
