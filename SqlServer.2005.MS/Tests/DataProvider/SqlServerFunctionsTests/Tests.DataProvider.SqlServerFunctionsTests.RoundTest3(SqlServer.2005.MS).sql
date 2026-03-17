@@ -1,0 +1,5 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	ROUND(0.999, 1, 1)
+

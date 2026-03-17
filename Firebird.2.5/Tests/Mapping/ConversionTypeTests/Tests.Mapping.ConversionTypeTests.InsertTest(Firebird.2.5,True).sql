@@ -1,0 +1,59 @@
+﻿-- Firebird.2.5 Firebird
+
+INSERT INTO "TrimTestTable"
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	1,
+	'***OOO***'
+)
+
+-- Firebird.2.5 Firebird
+
+INSERT INTO "TrimTestTable"
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	2,
+	'***HHH***'
+)
+
+-- Firebird.2.5 Firebird
+
+INSERT INTO "TrimTestTable"
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	3,
+	'***VVV***'
+)
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	"r".ID,
+	"r"."Data"
+FROM
+	"TrimTestTable" "r"
+ORDER BY
+	"r".ID
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	"r".ID,
+	"r"."Data"
+FROM
+	"TrimTestTable" "r"
+ORDER BY
+	"r".ID
+

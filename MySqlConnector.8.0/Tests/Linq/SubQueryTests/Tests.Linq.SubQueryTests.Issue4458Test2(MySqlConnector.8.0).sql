@@ -1,0 +1,46 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`m_1`.`Id`,
+	`d`.`ItemId`,
+	`d`.`UserId`,
+	`d`.`Score`
+FROM
+	`Issue4458Item` `m_1`
+		INNER JOIN `Review` `d` ON `d`.`ItemId` = `m_1`.`Id`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Review` `r`
+		WHERE
+			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
+	)
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`i`.`Id`,
+	(
+		SELECT
+			SUM(`stock`.`QuantityAvailable`)
+		FROM
+			`WarehouseStock` `stock`
+		WHERE
+			`stock`.`ItemId` = `i`.`Id`
+		GROUP BY
+			`stock`.`ItemId`
+	)
+FROM
+	`Issue4458Item` `i`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Review` `r`
+		WHERE
+			`r`.`ItemId` = `i`.`Id` AND `r`.`Score` > 95
+	)
+

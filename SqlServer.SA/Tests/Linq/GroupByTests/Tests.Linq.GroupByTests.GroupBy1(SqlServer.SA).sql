@@ -1,0 +1,7 @@
+﻿-- SqlServer.SA SqlServer.2019
+
+SELECT DISTINCT
+	[p].[ParentID]
+FROM
+	[Child] [p]
+

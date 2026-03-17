@@ -1,0 +1,26 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+DECLARE @p Int -- Int32
+SET     @p = 1
+DECLARE @p_1 Int -- Int32
+SET     @p_1 = 1
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @p AND [p].[Value1] = @p_1
+
+-- SqlServer.2017.MS SqlServer.2017
+DECLARE @p Int -- Int32
+SET     @p = 2
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] = @p AND [p].[Value1] IS NULL
+

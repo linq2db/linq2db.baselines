@@ -1,0 +1,9 @@
+﻿-- SqlServer.2014
+
+SET TEXTSIZE 2048
+
+-- SqlServer.2014
+
+SELECT
+	@@TEXTSIZE
+

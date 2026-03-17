@@ -1,0 +1,98 @@
+﻿-- SqlServer.2025
+
+IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
+	CREATE TABLE [tempdb]..[#temp_table1]
+	(
+		[ID]    Int NOT NULL,
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
+	)
+
+INSERT BULK [tempdb]..[#temp_table1](ID, Value)
+
+-- SqlServer.2025
+
+IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
+	CREATE TABLE [tempdb]..[#temp_table2]
+	(
+		[ID]    Int NOT NULL,
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
+	)
+
+-- SqlServer.2025
+
+INSERT INTO [tempdb]..[#temp_table2]
+(
+	[ID],
+	[Value]
+)
+SELECT
+	[t1].[ID],
+	[t1].[Value]
+FROM
+	[tempdb]..[#temp_table1] [t1]
+
+-- SqlServer.2025
+
+SELECT
+	[t1].[ID],
+	[t1].[Value]
+FROM
+	[tempdb]..[#temp_table1] [t1]
+
+-- SqlServer.2025
+
+SELECT
+	[t1].[ID],
+	[t1].[Value]
+FROM
+	[tempdb]..[#temp_table2] [t1]
+
+-- SqlServer.2025
+
+INSERT INTO [tempdb]..[#temp_table1]
+(
+	[ID],
+	[Value]
+)
+VALUES
+(2,3)
+
+-- SqlServer.2025
+DECLARE @ID Int -- Int32
+SET     @ID = 3
+DECLARE @Value Int -- Int32
+SET     @Value = 3
+
+INSERT INTO [tempdb]..[#temp_table1]
+(
+	[ID],
+	[Value]
+)
+VALUES
+(
+	@ID,
+	@Value
+)
+
+INSERT BULK [tempdb]..[#temp_table1](ID, Value)
+
+-- SqlServer.2025
+
+TRUNCATE TABLE [tempdb]..[#temp_table1]
+
+-- SqlServer.2025
+
+TRUNCATE TABLE [tempdb]..[#temp_table2]
+
+-- SqlServer.2025
+
+DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
+
+-- SqlServer.2025
+
+DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
+

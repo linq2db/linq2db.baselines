@@ -1,0 +1,40 @@
+﻿-- SQLite.Classic SQLite
+
+SELECT
+	SUBSTR(Coalesce(', ' || [t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || Coalesce(', ' || [t].[VarcharValue], '') || Coalesce(', ' || [t].[NVarcharValue], ''), 3),
+	Coalesce((
+		SELECT
+			GROUP_CONCAT(Coalesce([t2].[NotNullDistinctValue], ''), ', ')
+		FROM
+			(
+				SELECT DISTINCT
+					[t1].[item] as [NotNullDistinctValue]
+				FROM
+					(
+						SELECT NULL [item] WHERE 1 = 0
+						UNION ALL
+						VALUES
+							([t].[NullableValue]), ([t].[NotNullableValue]),
+							([t].[VarcharValue]), ([t].[NVarcharValue])
+						) [t1]
+				WHERE
+					[t1].[item] IS NOT NULL
+				ORDER BY
+					[t1].[item]
+			) [t2]
+	), '')
+FROM
+	[SampleClass] [t]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[PK],
+	[t1].[Id],
+	[t1].[NullableValue],
+	[t1].[NotNullableValue],
+	[t1].[VarcharValue],
+	[t1].[NVarcharValue]
+FROM
+	[SampleClass] [t1]
+

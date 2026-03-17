@@ -1,0 +1,14 @@
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	COUNT(x_1.Key2),
+	COUNT(x_1.Key1)
+FROM
+	(
+		SELECT
+			x.Key2 as Key2,
+			x.Key1 as Key1
+		FROM
+			FirstOptimizerData x
+	) x_1
+

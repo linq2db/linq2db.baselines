@@ -1,0 +1,8 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	MIN(DECFLOATDATATYPE)
+FROM
+	ALLTYPES "t",
+	"Child" "c_1"
+

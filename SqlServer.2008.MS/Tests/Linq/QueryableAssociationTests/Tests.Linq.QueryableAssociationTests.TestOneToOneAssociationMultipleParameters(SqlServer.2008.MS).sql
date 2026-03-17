@@ -1,0 +1,15 @@
+﻿-- SqlServer.2008.MS SqlServer.2008
+
+SELECT TOP (1)
+	[x].[Id],
+	(
+		SELECT TOP (1)
+			[a_FirstUserWithMultipleParameters].[Id]
+		FROM
+			[User] [a_FirstUserWithMultipleParameters]
+		WHERE
+			[a_FirstUserWithMultipleParameters].[UserGroupId] = [x].[Id]
+	)
+FROM
+	[UserGroup] [x]
+

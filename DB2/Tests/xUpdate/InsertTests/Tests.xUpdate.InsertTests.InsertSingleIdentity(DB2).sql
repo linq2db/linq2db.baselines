@@ -1,0 +1,20 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"TestIdentity" "t1"
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	ID
+FROM
+	NEW TABLE
+	(
+		INSERT INTO "TestIdentity" VALUES (DEFAULT)
+	)
+
+-- DB2 DB2.LUW DB2LUW
+
+DELETE FROM
+	"TestIdentity" "t1"
+

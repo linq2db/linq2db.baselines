@@ -1,0 +1,21 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	t1."Taxonomy"
+FROM
+	(
+		SELECT DISTINCT
+			s."PersonID" as "Key_1"
+		FROM
+			"Doctor" s
+	) s_2
+		INNER JOIN LATERAL (
+			SELECT
+				s_1."Taxonomy"
+			FROM
+				"Doctor" s_1
+			WHERE
+				s_2."Key_1" = s_1."PersonID"
+			LIMIT 1
+		) t1 ON 1=1
+

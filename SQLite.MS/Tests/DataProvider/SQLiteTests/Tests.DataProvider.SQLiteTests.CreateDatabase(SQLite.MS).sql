@@ -1,0 +1,11 @@
+﻿-- SQLite.MS SQLite
+
+CREATE TABLE [CreateTableTest]
+(
+	[Id] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT
+)
+
+-- SQLite.MS SQLite
+
+DROP TABLE [CreateTableTest]
+
