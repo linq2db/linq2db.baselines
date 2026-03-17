@@ -1,0 +1,46 @@
+﻿-- Firebird.3 Firebird3
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "User"
+(
+	"Id"
+)
+VALUES
+(
+	@Id
+)
+RETURNING
+	"Id"
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"t1"."Id"
+FROM
+	"User" "t1"
+
+-- Firebird.3 Firebird3
+DECLARE @userId Integer -- Int32
+SET     @userId = 5
+
+SELECT
+	"u"."Id"
+FROM
+	"User" "u"
+WHERE
+	"u"."Id" = @userId
+FETCH NEXT 1 ROWS ONLY
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"u"."Id"
+FROM
+	"User" "u"
+WHERE
+	"u"."Id" IN (5)
+FETCH NEXT 1 ROWS ONLY
+
