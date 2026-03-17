@@ -1,0 +1,31 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+DECLARE @Id  -- Int64
+SET     @Id = 1
+DECLARE @SomeValue1  -- Int32
+SET     @SomeValue1 = 2
+DECLARE @SomeValue2  -- Int32
+SET     @SomeValue2 = 2
+
+INSERT INTO [ValuesTable]
+(
+	[Id],
+	[SomeValue1],
+	[SomeValue2]
+)
+VALUES
+(
+	@Id,
+	@SomeValue1,
+	@SomeValue2
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[SomeValue1],
+	[t1].[SomeValue2]
+FROM
+	[ValuesTable] [t1]
+LIMIT 2
+
