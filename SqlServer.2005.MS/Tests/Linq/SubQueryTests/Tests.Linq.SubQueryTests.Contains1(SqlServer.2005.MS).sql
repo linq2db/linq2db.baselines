@@ -1,0 +1,17 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] IN (
+		SELECT TOP (3)
+			[p].[ParentID]
+		FROM
+			[Parent] [p1]
+		WHERE
+			[p1].[Value1] = [p].[Value1] OR [p1].[Value1] IS NULL AND [p].[Value1] IS NULL
+	)
+
