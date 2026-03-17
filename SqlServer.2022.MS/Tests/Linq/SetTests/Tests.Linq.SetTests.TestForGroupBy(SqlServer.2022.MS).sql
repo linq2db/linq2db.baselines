@@ -1,0 +1,22 @@
+﻿-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[x].[ParentID],
+	[x].[ChildID],
+	[x].[GrandChildID]
+FROM
+	[GrandChild] [x]
+WHERE
+	[x].[ParentID] IN (2)
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[x].[ParentID],
+	[x].[ChildID],
+	[x].[GrandChildID]
+FROM
+	[GrandChild] [x]
+WHERE
+	[x].[ParentID] IN (3)
+
