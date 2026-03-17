@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	f."ParentID",
+	f."Value1"
+FROM
+	"Parent" f
+
