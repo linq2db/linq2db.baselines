@@ -1,20 +1,18 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	p.PersonID as Id,
+	p.FirstName as Name
 FROM
 	Person p
 WHERE
 	p.PersonID = 1
-
--- ClickHouse.MySql ClickHouse
-
+UNION ALL
 SELECT
-	p.PersonID,
-	p.FirstName
+	p_1.PersonID as Id,
+	p_1.FirstName as Name
 FROM
-	Person p
+	Person p_1
 WHERE
-	p.PersonID = 1
+	p_1.PersonID = 1
 
