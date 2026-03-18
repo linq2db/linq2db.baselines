@@ -7,14 +7,12 @@ FROM
 	`Person` `p`
 WHERE
 	`p`.`PersonID` = 1
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+UNION ALL
 SELECT
-	`p`.`PersonID`,
-	`p`.`FirstName`
+	`p_1`.`PersonID`,
+	`p_1`.`FirstName`
 FROM
-	`Person` `p`
+	`Person` `p_1`
 WHERE
-	`p`.`PersonID` = 1
+	`p_1`.`PersonID` = 1
 
