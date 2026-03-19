@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT DISTINCT
-	[t2].[ParentID],
-	[t2].[Value1],
+	[p].[ParentID],
+	[p].[Value1],
 	[c1_1].[ParentID],
 	[c1_1].[ChildID],
 	EXISTS(
@@ -19,7 +19,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_3]
 		WHERE
-			[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [t2].[ParentID]
+			[c_3].[ChildID] > 2 AND [c_3].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -28,7 +28,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_4]
 		WHERE
-			[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= [t2].[ParentID]
+			[c_4].[ChildID] > 2 AND [c_4].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	[t1].[ChildID],
@@ -39,7 +39,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_5]
 		WHERE
-			[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= [t2].[ParentID]
+			[c_5].[ChildID] > 2 AND [c_5].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -48,7 +48,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_6]
 		WHERE
-			[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [t2].[ParentID]
+			[c_6].[ChildID] > 2 AND [c_6].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -57,7 +57,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_7]
 		WHERE
-			[c_7].[ChildID] > 2 AND [c_7].[ParentID] >= [t2].[ParentID]
+			[c_7].[ChildID] > 2 AND [c_7].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -66,7 +66,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_8]
 		WHERE
-			[c_8].[ChildID] > 2 AND [c_8].[ParentID] >= [t2].[ParentID]
+			[c_8].[ChildID] > 2 AND [c_8].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -75,7 +75,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_9]
 		WHERE
-			[c_9].[ChildID] > 2 AND [c_9].[ParentID] >= [t2].[ParentID]
+			[c_9].[ChildID] > 2 AND [c_9].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -84,7 +84,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_10]
 		WHERE
-			[c_10].[ChildID] > 2 AND [c_10].[ParentID] >= [t2].[ParentID]
+			[c_10].[ChildID] > 2 AND [c_10].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -93,7 +93,7 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_11]
 		WHERE
-			[c_11].[ChildID] > 2 AND [c_11].[ParentID] >= [t2].[ParentID]
+			[c_11].[ChildID] > 2 AND [c_11].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	),
 	(
@@ -102,11 +102,11 @@ SELECT DISTINCT
 		FROM
 			[Child] [c_12]
 		WHERE
-			[c_12].[ChildID] > 2 AND [c_12].[ParentID] >= [t2].[ParentID]
+			[c_12].[ChildID] > 2 AND [c_12].[ParentID] >= [p].[ParentID]
 		LIMIT 1
 	)
 FROM
-	[Parent] [t2]
+	[Parent] [p]
 		LEFT JOIN (
 			SELECT
 				[c1].[ParentID],
@@ -114,7 +114,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [c1].[ParentID] ORDER BY [c1].[ParentID]) as [rn]
 			FROM
 				[Child] [c1]
-		) [c1_1] ON [c1_1].[ParentID] = [t2].[ParentID] AND [c1_1].[rn] = 1
+		) [c1_1] ON [c1_1].[ParentID] = [p].[ParentID] AND [c1_1].[rn] = 1
 		LEFT JOIN (
 			SELECT
 				[c_1].[ChildID],
@@ -126,5 +126,5 @@ FROM
 			LIMIT 1
 		) [t1] ON 1=1
 ORDER BY
-	[t2].[ParentID]
+	[p].[ParentID]
 

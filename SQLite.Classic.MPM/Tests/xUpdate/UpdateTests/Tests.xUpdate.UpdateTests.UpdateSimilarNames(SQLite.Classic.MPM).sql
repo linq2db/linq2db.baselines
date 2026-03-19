@@ -33,7 +33,7 @@ UPDATE
 SET
 	[ParentID] = @ParentID
 FROM
-	[Parent] [t1]
+	[Parent] [child_1]
 WHERE
-	[t1].[Value1] = 20000 AND [Child].[ParentID] = [t1].[ParentID]
+	[child_1].[Value1] = 20000 AND [Child].[ParentID] = [child_1].[ParentID]
 

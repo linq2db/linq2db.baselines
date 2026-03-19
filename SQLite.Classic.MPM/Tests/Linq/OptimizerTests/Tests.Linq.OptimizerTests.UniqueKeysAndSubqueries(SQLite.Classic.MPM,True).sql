@@ -1,15 +1,15 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t1].[Key1],
-	[t1].[Key2],
-	[t1].[DataKey11],
-	[t1].[DataKey21],
-	[t1].[DataKey22],
-	[t1].[DataKey31],
-	[t1].[DataKey32],
-	[t1].[DataKey33],
-	[t1].[ValueStr],
+	[s].[Key1],
+	[s].[Key2],
+	[s].[DataKey11],
+	[s].[DataKey21],
+	[s].[DataKey22],
+	[s].[DataKey31],
+	[s].[DataKey32],
+	[s].[DataKey33],
+	[s].[ValueStr],
 	[f1].[Key1],
 	[f1].[Key2],
 	[f1].[DataKey11],
@@ -29,8 +29,8 @@ SELECT
 	[f2].[DataKey33],
 	[f2].[ValueStr]
 FROM
-	[SecondOptimizerData] [t1]
-		LEFT JOIN [FirstOptimizerData] [f1] ON [f1].[DataKey11] = [t1].[DataKey11] AND [f1].[ValueStr] LIKE 'Str%' ESCAPE '~'
+	[SecondOptimizerData] [s]
+		LEFT JOIN [FirstOptimizerData] [f1] ON [f1].[DataKey11] = [s].[DataKey11] AND [f1].[ValueStr] LIKE 'Str%' ESCAPE '~'
 		LEFT JOIN [FirstOptimizerData] [f2] ON [f2].[ValueStr] LIKE 'Str%' ESCAPE '~' AND [f2].[DataKey11] = 10
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

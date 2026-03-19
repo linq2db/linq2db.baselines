@@ -1,26 +1,26 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT DISTINCT
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender],
+	[i].[FirstName],
+	[i].[PersonID],
+	[i].[LastName],
+	[i].[MiddleName],
+	[i].[Gender],
 	[u].[FirstName],
 	[u].[PersonID],
 	[u].[LastName],
 	[u].[MiddleName],
 	[u].[Gender],
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender],
-	[t1].[FirstName],
-	[t1].[PersonID],
-	[t1].[LastName],
-	[t1].[MiddleName],
-	[t1].[Gender],
+	[i].[FirstName],
+	[i].[PersonID],
+	[i].[LastName],
+	[i].[MiddleName],
+	[i].[Gender],
+	[i].[FirstName],
+	[i].[PersonID],
+	[i].[LastName],
+	[i].[MiddleName],
+	[i].[Gender],
 	[e_1].[FirstName],
 	[e_1].[ID],
 	[e_1].[LastName],
@@ -35,10 +35,10 @@ SELECT DISTINCT
 			[t].[PersonID] = [tg].[PersonID] AND [tg].[FirstName] = 'John'
 	)
 FROM
-	[Person] [t1]
-		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
-		LEFT JOIN [Person] [t] ON [t1].[PersonID] = [t].[PersonID] AND [t].[FirstName] <> 'Nameless One'
-		LEFT JOIN [Person] [u] ON [t1].[PersonID] = [u].[PersonID]
+	[Person] [i]
+		LEFT JOIN [Patient] [a_Patient] ON [i].[PersonID] = [a_Patient].[PersonID]
+		LEFT JOIN [Person] [t] ON [i].[PersonID] = [t].[PersonID] AND [t].[FirstName] <> 'Nameless One'
+		LEFT JOIN [Person] [u] ON [i].[PersonID] = [u].[PersonID]
 		LEFT JOIN (
 			SELECT
 				[e].[FirstName],
