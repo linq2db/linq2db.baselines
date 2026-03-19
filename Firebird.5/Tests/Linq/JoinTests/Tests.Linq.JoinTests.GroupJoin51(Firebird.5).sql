@@ -7,33 +7,33 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"p"."ParentID"
+			"t2"."ParentID"
 		FROM
-			"Parent" "p"
+			"Parent" "t2"
 				CROSS JOIN LATERAL (
 					SELECT
 						1 as "c1"
 					FROM
 						"Child" "ch"
 					WHERE
-						"p"."ParentID" = "ch"."ParentID"
+						"t2"."ParentID" = "ch"."ParentID"
 					ORDER BY
 						"ch"."ChildID" DESC
 					FETCH NEXT 1 ROWS ONLY
 				) "t1"
 		WHERE
-			"p"."ParentID" = 1
+			"t2"."ParentID" = 1
 	) "m_1"
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.5 Firebird4
 
 SELECT
-	"p"."ParentID",
+	"t2"."ParentID",
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
-	"Parent" "p"
+	"Parent" "t2"
 		CROSS JOIN LATERAL (
 			SELECT
 				"ch"."ParentID",
@@ -41,11 +41,11 @@ FROM
 			FROM
 				"Child" "ch"
 			WHERE
-				"p"."ParentID" = "ch"."ParentID"
+				"t2"."ParentID" = "ch"."ParentID"
 			ORDER BY
 				"ch"."ChildID" DESC
 			FETCH NEXT 1 ROWS ONLY
 		) "t1"
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 

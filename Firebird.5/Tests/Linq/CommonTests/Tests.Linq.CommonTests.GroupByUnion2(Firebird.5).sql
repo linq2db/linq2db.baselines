@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	"p"."ParentID"
+	"t1"."ParentID"
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 

@@ -3,16 +3,16 @@
 SELECT
 	"t1"."ParentID"
 FROM
-	"Parent" "p"
+	"Parent" "t2"
 		CROSS JOIN LATERAL (
 			SELECT
 				"ch"."ParentID"
 			FROM
 				"Child" "ch"
 			WHERE
-				"p"."ParentID" = "ch"."ParentID"
+				"t2"."ParentID" = "ch"."ParentID"
 			FETCH NEXT 1 ROWS ONLY
 		) "t1"
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 
