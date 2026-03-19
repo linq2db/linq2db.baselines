@@ -1,9 +1,9 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID",
+	"t1"."Value1"
 FROM
-	"Parent" "p"
-		LEFT JOIN "Child" "ch" ON "p"."ParentID" = "ch"."ParentID" AND "ch"."ParentID" > 0
+	"Parent" "t1"
+		LEFT JOIN "Child" "ch" ON "t1"."ParentID" = "ch"."ParentID" AND "ch"."ParentID" > 0
 
