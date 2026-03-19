@@ -20,21 +20,21 @@ FROM
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1",
+	t1."ParentID",
+	t1."Value1",
 	c_1."ParentID",
 	c_1."ChildID"
 FROM
-	"Parent" p,
+	"Parent" t1,
 	"Child" c_1
 WHERE
-	p."ParentID" = c_1."ParentID" OR EXISTS(
+	t1."ParentID" = c_1."ParentID" OR EXISTS(
 		SELECT
 			*
 		FROM
 			"GrandChild" y
 		WHERE
 			c_1."ParentID" = y."ParentID" AND c_1."ChildID" = y."ChildID" AND
-			y."ParentID" = p."ParentID"
+			y."ParentID" = t1."ParentID"
 	)
 

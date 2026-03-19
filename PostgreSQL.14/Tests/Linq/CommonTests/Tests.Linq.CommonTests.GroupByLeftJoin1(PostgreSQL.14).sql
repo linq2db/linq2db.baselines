@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID"
+	t1."ParentID"
 FROM
-	"Parent" p
+	"Parent" t1
 

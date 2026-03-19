@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID",
+	t1."ParentID",
 	c_2."Value_1"
 FROM
-	"Parent" p
+	"Parent" t1
 		INNER JOIN LATERAL (
 			SELECT
 				c_1."ChildID" as "Key_1",
@@ -12,7 +12,7 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				p."ParentID" = c_1."ParentID"
+				t1."ParentID" = c_1."ParentID"
 			GROUP BY
 				c_1."ChildID"
 		) c_2 ON 1=1

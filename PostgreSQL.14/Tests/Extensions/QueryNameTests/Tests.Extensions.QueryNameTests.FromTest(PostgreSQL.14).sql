@@ -1,16 +1,16 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."Value1"
+	t2."ParentID",
+	t2."Value1"
 FROM
 	(
 		SELECT /* PARENT */
-			p."ParentID",
-			p."Value1"
+			t1."ParentID",
+			t1."Value1"
 		FROM
-			"Parent" p
-	) t1,
+			"Parent" t1
+	) t2,
 	(
 		SELECT /* CHILD */
 			c_1."ParentID"
@@ -18,5 +18,5 @@ FROM
 			"Child" c_1
 	) c_2
 WHERE
-	t1."ParentID" = c_2."ParentID"
+	t2."ParentID" = c_2."ParentID"
 

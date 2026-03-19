@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1",
+	t1."ParentID",
+	t1."Value1",
 	ch."ParentID",
 	ch."ChildID"
 FROM
-	"Parent" p
-		LEFT JOIN "Child" ch ON p."ParentID" = ch."ParentID"
+	"Parent" t1
+		LEFT JOIN "Child" ch ON t1."ParentID" = ch."ParentID"
 WHERE
-	p."ParentID" >= 4
+	t1."ParentID" >= 4
 
