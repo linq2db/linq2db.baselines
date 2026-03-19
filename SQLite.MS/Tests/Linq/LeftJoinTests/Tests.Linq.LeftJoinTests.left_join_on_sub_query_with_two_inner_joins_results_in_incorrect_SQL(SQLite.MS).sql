@@ -14,13 +14,13 @@ VALUES
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[Id],
+	[a_1].[Id],
 	[bc].[AId],
 	[bc].[Id],
 	[c_1].[Id]
 FROM
-	[A] [t1]
+	[A] [a_1]
 		LEFT JOIN ([B] [bc]
 			INNER JOIN [C] [c_1] ON [bc].[Id] = [c_1].[BId])
-		ON [t1].[Id] = [bc].[AId]
+		ON [a_1].[Id] = [bc].[AId]
 

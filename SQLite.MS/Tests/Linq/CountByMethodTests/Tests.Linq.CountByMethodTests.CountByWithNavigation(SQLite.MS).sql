@@ -7,26 +7,26 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1]
+			[Parent] [p]
 				INNER JOIN (
 					SELECT DISTINCT
 						[c_1].[ParentID] as [Key_1]
 					FROM
 						[Child] [c_1]
-				) [c_2] ON [t1].[ParentID] = [c_2].[Key_1]
+				) [c_2] ON [p].[ParentID] = [c_2].[Key_1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID],
-	[t1].[Value1],
+	[p].[ParentID],
+	[p].[Value1],
 	[c_2].[Value_1]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 		INNER JOIN (
 			SELECT
 				[c_1].[ParentID] as [Key_1],
@@ -35,7 +35,7 @@ FROM
 				[Child] [c_1]
 			GROUP BY
 				[c_1].[ParentID]
-		) [c_2] ON [t1].[ParentID] = [c_2].[Key_1]
+		) [c_2] ON [p].[ParentID] = [c_2].[Key_1]
 ORDER BY
 	[c_2].[Key_1]
 
