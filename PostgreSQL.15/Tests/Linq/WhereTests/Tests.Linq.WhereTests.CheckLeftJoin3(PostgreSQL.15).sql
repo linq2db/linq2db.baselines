@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	t1."ParentID",
+	t1."Value1"
 FROM
-	"Parent" p
+	"Parent" t1
 		LEFT JOIN (
 			SELECT
 				1 + ch."ParentID" as "ParentID",
@@ -13,7 +13,7 @@ FROM
 				"GrandChild" ch
 			WHERE
 				ch."ParentID" > 0
-		) ch_1 ON p."ParentID" = ch_1."ParentID"
+		) ch_1 ON t1."ParentID" = ch_1."ParentID"
 WHERE
 	ch_1.not_null IS NULL
 

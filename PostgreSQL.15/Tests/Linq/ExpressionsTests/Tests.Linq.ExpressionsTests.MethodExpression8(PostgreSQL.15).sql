@@ -1,11 +1,11 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	ch."ParentID",
-	ch."ChildID"
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	"Child" ch
-		INNER JOIN "Parent" p ON p."ParentID" = Floor(ch."ChildID"::Float / 10)::Int
+	"Child" t1
+		INNER JOIN "Parent" p ON p."ParentID" = Floor(t1."ChildID"::Float / 10)::Int
 WHERE
-	ch."ParentID" = p."ParentID"
+	t1."ParentID" = p."ParentID"
 

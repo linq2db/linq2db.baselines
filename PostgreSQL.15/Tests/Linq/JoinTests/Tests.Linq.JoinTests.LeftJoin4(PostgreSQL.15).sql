@@ -1,12 +1,12 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	"Parent_1"."ParentID",
-	"Parent_1"."Value1",
+	t2."ParentID",
+	t2."Value1",
 	t1."ParentID",
 	t1."ChildID"
 FROM
-	"Parent" "Parent_1"
+	"Parent" t2
 		LEFT JOIN LATERAL (
 			SELECT
 				y1."ParentID",
@@ -14,12 +14,12 @@ FROM
 			FROM
 				"Child" y1
 			WHERE
-				"Parent_1"."ParentID" = y1."ParentID" AND "Parent_1"."Value1" = y1."ParentID"
+				t2."ParentID" = y1."ParentID" AND t2."Value1" = y1."ParentID"
 			LIMIT 1
 		) t1 ON 1=1
-		LEFT JOIN "Child" y4 ON "Parent_1"."ParentID" = y4."ParentID" AND "Parent_1"."Value1" = y4."ParentID"
+		LEFT JOIN "Child" y4 ON t2."ParentID" = y4."ParentID" AND t2."Value1" = y4."ParentID"
 WHERE
-	"Parent_1"."ParentID" = 1 AND "Parent_1"."Value1" IS NOT NULL
+	t2."ParentID" = 1 AND t2."Value1" IS NOT NULL
 ORDER BY
-	"Parent_1"."ParentID"
+	t2."ParentID"
 
