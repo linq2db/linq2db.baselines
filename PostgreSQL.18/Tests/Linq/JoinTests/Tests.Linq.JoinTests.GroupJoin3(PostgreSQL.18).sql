@@ -7,11 +7,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID"
+			t1."ParentID"
 		FROM
-			"Parent" p
+			"Parent" t1
 		WHERE
-			p."ParentID" = 2
+			t1."ParentID" = 2
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 

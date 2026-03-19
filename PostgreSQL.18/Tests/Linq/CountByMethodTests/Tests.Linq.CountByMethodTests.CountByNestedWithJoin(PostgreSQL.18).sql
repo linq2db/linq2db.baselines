@@ -4,18 +4,18 @@ SELECT
 	p2."ParentID",
 	c_2."ChildIDCount"
 FROM
-	"Parent" p
+	"Parent" t1
 		INNER JOIN LATERAL (
 			SELECT
 				COUNT(*) as "ChildIDCount"
 			FROM
 				"Child" c_1
 			WHERE
-				p."ParentID" = c_1."ParentID"
+				t1."ParentID" = c_1."ParentID"
 			GROUP BY
 				c_1."ChildID"
 		) c_2 ON 1=1
-		INNER JOIN "Parent" p2 ON p."ParentID" = p2."ParentID"
+		INNER JOIN "Parent" p2 ON t1."ParentID" = p2."ParentID"
 
 -- PostgreSQL.18 PostgreSQL
 
