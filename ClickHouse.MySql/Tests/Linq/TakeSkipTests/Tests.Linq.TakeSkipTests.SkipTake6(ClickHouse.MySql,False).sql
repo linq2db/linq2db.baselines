@@ -1,10 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.ParentID,
-	c_1.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Child c_1,
+	Child t1,
 	(
 		SELECT
 			p.ParentID as ParentID
@@ -13,15 +13,15 @@ FROM
 		LIMIT 3
 	) p_1
 WHERE
-	c_1.ParentID = p_1.ParentID
+	t1.ParentID = p_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	c_1.ParentID,
-	c_1.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Child c_1,
+	Child t1,
 	(
 		SELECT
 			p.ParentID as ParentID
@@ -30,5 +30,5 @@ FROM
 		LIMIT 12, 3
 	) p_1
 WHERE
-	c_1.ParentID = p_1.ParentID
+	t1.ParentID = p_1.ParentID
 

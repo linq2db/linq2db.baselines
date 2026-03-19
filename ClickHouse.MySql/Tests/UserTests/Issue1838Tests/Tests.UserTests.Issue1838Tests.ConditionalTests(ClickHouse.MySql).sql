@@ -1,19 +1,19 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	i.InvoiceID,
+	t1.InvoiceID,
 	CASE
 		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
 		ELSE r.ReferenceNumber
 	END,
 	CASE
-		WHEN i.SettlementTotalOnIssue IS NOT NULL THEN i.SettlementTotalOnIssue
+		WHEN t1.SettlementTotalOnIssue IS NOT NULL THEN t1.SettlementTotalOnIssue
 		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
 		ELSE NULL
 	END
 FROM
-	Invoice i
-		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
 				g_1.InvoiceID as InvoiceId,
@@ -25,25 +25,25 @@ FROM
 				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceId = i.InvoiceID
+		) ia ON ia.InvoiceId = t1.InvoiceID
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i.InvoiceID,
+	t1.InvoiceID,
 	CASE
 		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
 		ELSE r.ReferenceNumber
 	END,
-	i.SettlementTotalOnIssue
+	t1.SettlementTotalOnIssue
 FROM
-	Invoice i
-		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i.InvoiceID,
+	t1.InvoiceID,
 	CASE
 		WHEN r.InvoiceReferenceNumberID IS NULL THEN NULL
 		ELSE r.ReferenceNumber
@@ -53,8 +53,8 @@ SELECT
 		ELSE NULL
 	END
 FROM
-	Invoice i
-		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
 				g_1.InvoiceID as InvoiceId,
@@ -66,5 +66,5 @@ FROM
 				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceId = i.InvoiceID
+		) ia ON ia.InvoiceId = t1.InvoiceID
 

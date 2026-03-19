@@ -7,20 +7,20 @@ SELECT
 	r.MaxCapacity,
 	r.Quantity,
 	r.MaxCapacity - r.Quantity,
-	COALESCE(t1.PeriodOrderLimit,0),
+	COALESCE(t2.PeriodOrderLimit,0),
 	vsopc.Quantity,
-	COALESCE(t1.PeriodOrderLimit,0) - vsopc.Quantity
+	COALESCE(t2.PeriodOrderLimit,0) - vsopc.Quantity
 FROM
 	(
 		SELECT
-			op.Id as OrderPeriodId,
+			t1.Id as OrderPeriodId,
 			vpc.CategoryId as CategoryId,
 			pop.ProductId as ProductId,
 			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
 			COALESCE(COALESCE(vsp.Quantity,0),0) as Quantity
 		FROM
-			OrderPeriod op
-				INNER JOIN ProductsPerOrderPeriod pop ON op.Id = pop.OrderPeriodId
+			OrderPeriod t1
+				INNER JOIN ProductsPerOrderPeriod pop ON t1.Id = pop.OrderPeriodId
 				LEFT JOIN Product vpc ON vpc.Id = pop.ProductId
 				LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
 				LEFT JOIN (
@@ -35,7 +35,7 @@ FROM
 					GROUP BY
 						agroup.Id,
 						oi.ProductId
-				) vsp ON vsp.Id = op.Id AND vsp.ProductId = pop.ProductId
+				) vsp ON vsp.Id = t1.Id AND vsp.ProductId = pop.ProductId
 	) r
 		LEFT JOIN (
 			SELECT
@@ -45,7 +45,7 @@ FROM
 			FROM
 				OrderPeriod v2
 					INNER JOIN ProductCategory vpcc ON 1=1
-		) t1 ON t1.Id = r.OrderPeriodId AND t1.Id_1 = r.CategoryId
+		) t2 ON t2.Id = r.OrderPeriodId AND t2.Id_1 = r.CategoryId
 		LEFT JOIN (
 			SELECT
 				agroup_1.Id as Id,
@@ -59,6 +59,6 @@ FROM
 			GROUP BY
 				agroup_1.Id,
 				p.CategoryId
-		) vsopc ON vsopc.Id = t1.Id AND (vsopc.CategoryId = t1.Id_1 OR vsopc.CategoryId IS NULL AND t1.Id_1 IS NULL)
+		) vsopc ON vsopc.Id = t2.Id AND (vsopc.CategoryId = t2.Id_1 OR vsopc.CategoryId IS NULL AND t2.Id_1 IS NULL)
 LIMIT 10
 
