@@ -1,8 +1,8 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
-	m_2.Id_1,
+	m_1.Id,
+	m_1.Id_1,
 	d_1.Id,
 	d_1.Value,
 	d_1.ParentId,
@@ -13,88 +13,88 @@ FROM
 	(
 		SELECT DISTINCT
 			d.Id as Id,
-			t1.Id as Id_1
+			t2.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
-					m_1.Id as Id
+					t1.Id as Id
 				FROM
-					MainItem m_1
-						INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+					MainItem t1
+						INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 						INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 				WHERE
-					m_1.Id > 1
-			) t1
-				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
-	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+					t1.Id > 1
+			) t2
+				INNER JOIN SubItem1 d ON t2.Id = d.ParentId
+	) m_1
+		INNER JOIN SubItem1_Sub d_1 ON m_1.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 ORDER BY
-	m_2.Id_1
-
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	m_2.Id,
-	d.Id,
-	d.Value,
-	d.ParentId
-FROM
-	(
-		SELECT DISTINCT
-			m_1.Id as Id
-		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
-				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
-		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
-ORDER BY
-	m_2.Id
-
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	m_2.Id,
-	d.Id,
-	d.Value,
-	d.ParentId
-FROM
-	(
-		SELECT DISTINCT
-			m_1.Id as Id
-		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
-				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
-		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
-ORDER BY
-	m_2.Id
+	m_1.Id_1
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
 	m_1.Id,
-	m_1.Value
+	d.Id,
+	d.Value,
+	d.ParentId
 FROM
-	MainItem m_1
-		INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
-		INNER JOIN MainItem2 mm ON mm.Id = m2.Id
-WHERE
-	m_1.Id > 1
+	(
+		SELECT DISTINCT
+			t1.Id as Id
+		FROM
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
+				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
+		WHERE
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem1 d ON m_1.Id = d.ParentId
 ORDER BY
 	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
-	m_2.Id_1,
+	m_1.Id,
+	d.Id,
+	d.Value,
+	d.ParentId
+FROM
+	(
+		SELECT DISTINCT
+			t1.Id as Id
+		FROM
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
+				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
+		WHERE
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem2 d ON m_1.Id = d.ParentId
+ORDER BY
+	m_1.Id
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Value
+FROM
+	MainItem t1
+		INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
+		INNER JOIN MainItem2 mm ON mm.Id = m2.Id
+WHERE
+	t1.Id > 1
+ORDER BY
+	t1.Id
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	m_1.Id,
+	m_1.Id_1,
 	d_1.Id,
 	d_1.Value,
 	d_1.ParentId,
@@ -105,51 +105,51 @@ FROM
 	(
 		SELECT DISTINCT
 			d.Id as Id,
-			t1.Id as Id_1
+			t2.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
-					m_1.Id as Id
+					t1.Id as Id
 				FROM
-					MainItem m_1
-						INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+					MainItem t1
+						INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 						INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 				WHERE
-					m_1.Id > 1
-			) t1
-				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
-	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+					t1.Id > 1
+			) t2
+				INNER JOIN SubItem1 d ON t2.Id = d.ParentId
+	) m_1
+		INNER JOIN SubItem1_Sub d_1 ON m_1.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 ORDER BY
-	m_2.Id_1
+	m_1.Id_1
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
+	m_1.Id,
 	d.Id,
 	d.Value,
 	d.ParentId
 FROM
 	(
 		SELECT DISTINCT
-			m_1.Id as Id
+			t1.Id as Id
 		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem1 d ON m_1.Id = d.ParentId
 ORDER BY
-	m_2.Id
+	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
+	m_1.Id,
 	d.Id,
 	d.Value,
 	d.ParentId,
@@ -158,38 +158,38 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			m_1.Id as Id
+			t1.Id as Id
 		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem2 d ON m_1.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
-ORDER BY
-	m_2.Id
-
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	m_1.Id,
-	m_1.Value
-FROM
-	MainItem m_1
-		INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
-		INNER JOIN MainItem2 mm ON mm.Id = m2.Id
-WHERE
-	m_1.Id > 1
 ORDER BY
 	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
-	m_2.Id_1,
+	t1.Id,
+	t1.Value
+FROM
+	MainItem t1
+		INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
+		INNER JOIN MainItem2 mm ON mm.Id = m2.Id
+WHERE
+	t1.Id > 1
+ORDER BY
+	t1.Id
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	m_1.Id,
+	m_1.Id_1,
 	d_1.Id,
 	d_1.Value,
 	d_1.ParentId,
@@ -200,51 +200,51 @@ FROM
 	(
 		SELECT DISTINCT
 			d.Id as Id,
-			t1.Id as Id_1
+			t2.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
-					m_1.Id as Id
+					t1.Id as Id
 				FROM
-					MainItem m_1
-						INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+					MainItem t1
+						INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 						INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 				WHERE
-					m_1.Id > 1
-			) t1
-				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
-	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+					t1.Id > 1
+			) t2
+				INNER JOIN SubItem1 d ON t2.Id = d.ParentId
+	) m_1
+		INNER JOIN SubItem1_Sub d_1 ON m_1.Id = d_1.ParentId
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 ORDER BY
-	m_2.Id_1
+	m_1.Id_1
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
+	m_1.Id,
 	d.Id,
 	d.Value,
 	d.ParentId
 FROM
 	(
 		SELECT DISTINCT
-			m_1.Id as Id
+			t1.Id as Id
 		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem1 d ON m_1.Id = d.ParentId
 ORDER BY
-	m_2.Id
+	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_2.Id,
+	m_1.Id,
 	d.Id,
 	d.Value,
 	d.ParentId,
@@ -253,30 +253,30 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			m_1.Id as Id
+			t1.Id as Id
 		FROM
-			MainItem m_1
-				INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+			MainItem t1
+				INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 				INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 		WHERE
-			m_1.Id > 1
-	) m_2
-		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
+			t1.Id > 1
+	) m_1
+		INNER JOIN SubItem2 d ON m_1.Id = d.ParentId
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 ORDER BY
-	m_2.Id
+	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	m_1.Id,
-	m_1.Value
+	t1.Id,
+	t1.Value
 FROM
-	MainItem m_1
-		INNER JOIN MainItem2 m2 ON m2.Id = m_1.Id
+	MainItem t1
+		INNER JOIN MainItem2 m2 ON m2.Id = t1.Id
 		INNER JOIN MainItem2 mm ON mm.Id = m2.Id
 WHERE
-	m_1.Id > 1
+	t1.Id > 1
 ORDER BY
-	m_1.Id
+	t1.Id
 

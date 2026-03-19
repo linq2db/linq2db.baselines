@@ -7,26 +7,26 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID
+			t1.ParentID as ParentID
 		FROM
-			Parent p
+			Parent t1
 				INNER JOIN (
 					SELECT DISTINCT
 						c_1.ParentID as Key_1
 					FROM
 						Child c_1
-				) c_2 ON p.ParentID = c_2.Key_1
+				) c_2 ON t1.ParentID = c_2.Key_1
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	p.ParentID,
-	p.Value1,
+	t1.ParentID,
+	t1.Value1,
 	c_2.Value_1
 FROM
-	Parent p
+	Parent t1
 		INNER JOIN (
 			SELECT
 				c_1.ParentID as Key_1,
@@ -35,7 +35,7 @@ FROM
 				Child c_1
 			GROUP BY
 				c_1.ParentID
-		) c_2 ON p.ParentID = c_2.Key_1
+		) c_2 ON t1.ParentID = c_2.Key_1
 ORDER BY
 	c_2.Key_1
 

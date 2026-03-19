@@ -1,11 +1,11 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	t.ParentID,
-	t.Value1
+	t1.ParentID,
+	t1.Value1
 FROM
-	Parent t
-		INNER JOIN GrandChild g_1 ON t.ParentID = g_1.ParentID
+	Parent t1
+		INNER JOIN GrandChild g_1 ON t1.ParentID = g_1.ParentID
 WHERE
 	g_1.ChildID > 22
 ORDER BY

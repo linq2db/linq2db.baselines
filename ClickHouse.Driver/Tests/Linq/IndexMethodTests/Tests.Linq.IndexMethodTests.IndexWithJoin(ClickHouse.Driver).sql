@@ -1,11 +1,11 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	p.ParentID,
+	t1.ParentID,
 	IndexedParent_1.Item1,
 	IndexedParent_1.Value1
 FROM
-	Parent p,
+	Parent t1,
 	(
 		SELECT
 			ROW_NUMBER() OVER (ORDER BY IndexedParent.ParentID) - toInt64(1) as Item1,

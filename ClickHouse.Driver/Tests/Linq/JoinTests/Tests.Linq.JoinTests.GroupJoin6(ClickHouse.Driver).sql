@@ -7,21 +7,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID
+			t1.ParentID as ParentID
 		FROM
-			Parent p
+			Parent t1
 		WHERE
-			p.ParentID = 1
+			t1.ParentID = 1
 	) m_1
 		INNER JOIN Child d ON m_1.ParentID + 1 = d.ParentID
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	p.ParentID,
-	p.Value1
+	t1.ParentID,
+	t1.Value1
 FROM
-	Parent p
+	Parent t1
 WHERE
-	p.ParentID = 1
+	t1.ParentID = 1
 

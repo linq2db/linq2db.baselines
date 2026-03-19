@@ -1,11 +1,11 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Child ch
-		INNER JOIN Parent p ON p.ParentID = toInt32(Floor(toFloat64(ch.ChildID) / toFloat64(10)))
+	Child t1
+		INNER JOIN Parent p ON p.ParentID = toInt32(Floor(toFloat64(t1.ChildID) / toFloat64(10)))
 WHERE
-	ch.ParentID = p.ParentID
+	t1.ParentID = p.ParentID
 
