@@ -1,15 +1,15 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	fact_1."Id",
+	t1."Id",
 	"leftTag"."Id",
 	"leftTag"."FactId",
 	"leftTag"."Name"
 FROM
-	"Fact" fact_1
-		LEFT JOIN "Tag" "leftTag" ON fact_1."Id" = "leftTag"."FactId"
+	"Fact" t1
+		LEFT JOIN "Tag" "leftTag" ON t1."Id" = "leftTag"."FactId"
 WHERE
-	fact_1."Id" > 3
+	t1."Id" > 3
 ORDER BY
-	fact_1."Id"
+	t1."Id"
 
