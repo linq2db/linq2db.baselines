@@ -48,11 +48,11 @@ SELECT
 	NULL::Int,
 	NULL::Int,
 	NULL::text,
-	t2_1."Id",
-	t2_1."Field1"
+	t3."Id",
+	t3."Field1"
 FROM
-	"TestEntity2" t2_1
-		LEFT JOIN "TestEntity1" t1_1 ON t2_1."Id" = t1_1."Id"
+	"TestEntity2" t3
+		LEFT JOIN "TestEntity1" t1_1 ON t3."Id" = t1_1."Id"
 WHERE
 	t1_1."Id" IS NULL
 

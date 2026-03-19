@@ -7,16 +7,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID"
+			t1."ParentID"
 		FROM
-			"Parent" p
+			"Parent" t1
 				INNER JOIN LATERAL (
 					SELECT DISTINCT
 						c_1."ParentID" as "Key_1"
 					FROM
 						"Child" c_1
 					WHERE
-						p."ParentID" = c_1."ParentID"
+						t1."ParentID" = c_1."ParentID"
 				) c_2 ON 1=1
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
@@ -24,11 +24,11 @@ FROM
 -- PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1",
+	t1."ParentID",
+	t1."Value1",
 	c_2."Value_1"
 FROM
-	"Parent" p
+	"Parent" t1
 		INNER JOIN LATERAL (
 			SELECT
 				c_1."ParentID" as "Key_1",
@@ -36,7 +36,7 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				p."ParentID" = c_1."ParentID"
+				t1."ParentID" = c_1."ParentID"
 			GROUP BY
 				c_1."ParentID"
 		) c_2 ON 1=1

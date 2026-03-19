@@ -33,7 +33,7 @@ UPDATE
 SET
 	"ParentID" = :ParentID
 FROM
-	"Parent" child_1
+	"Parent" t1
 WHERE
-	child_1."Value1" = 20000 AND "Child"."ParentID" = child_1."ParentID"
+	t1."Value1" = 20000 AND "Child"."ParentID" = t1."ParentID"
 

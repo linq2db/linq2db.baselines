@@ -9,21 +9,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID"
+			t1."ParentID"
 		FROM
-			"Parent" p
+			"Parent" t1
 		WHERE
-			p."ParentID" = 1
+			t1."ParentID" = 1
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
 -- PostgreSQL.13 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	t1."ParentID",
+	t1."Value1"
 FROM
-	"Parent" p
+	"Parent" t1
 WHERE
-	p."ParentID" = 1
+	t1."ParentID" = 1
 
