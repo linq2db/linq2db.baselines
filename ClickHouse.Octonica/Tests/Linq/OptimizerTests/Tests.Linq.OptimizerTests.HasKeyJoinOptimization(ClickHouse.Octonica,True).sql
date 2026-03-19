@@ -56,11 +56,11 @@ SELECT
 	f3.DataKey33,
 	f3.ValueStr
 FROM
-	SecondOptimizerData s
-		INNER JOIN FirstOptimizerData p2 ON p2.Key1 = s.Key1 AND p2.Key2 = s.Key2
-		INNER JOIN FirstOptimizerData f1 ON f1.DataKey11 = s.DataKey11
-		INNER JOIN FirstOptimizerData f2 ON f2.DataKey21 = s.DataKey21 AND f2.DataKey22 = s.DataKey22
-		INNER JOIN FirstOptimizerData f3 ON f3.DataKey31 = s.DataKey31 AND f3.DataKey32 = s.DataKey32 AND f3.DataKey33 = s.DataKey33
+	SecondOptimizerData t1
+		INNER JOIN FirstOptimizerData p2 ON p2.Key1 = t1.Key1 AND p2.Key2 = t1.Key2
+		INNER JOIN FirstOptimizerData f1 ON f1.DataKey11 = t1.DataKey11
+		INNER JOIN FirstOptimizerData f2 ON f2.DataKey21 = t1.DataKey21 AND f2.DataKey22 = t1.DataKey22
+		INNER JOIN FirstOptimizerData f3 ON f3.DataKey31 = t1.DataKey31 AND f3.DataKey32 = t1.DataKey32 AND f3.DataKey33 = t1.DataKey33
 WHERE
 	f1.ValueStr IS NOT NULL AND f2.DataKey22 > 0 AND f3.Key1 > 0
 

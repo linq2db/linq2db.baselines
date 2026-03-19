@@ -1,10 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.ParentID,
+	t1.ParentID,
 	c_2.Value_1
 FROM
-	Parent p
+	Parent t1
 		INNER JOIN (
 			SELECT
 				COUNT(*) as Value_1,
@@ -13,7 +13,7 @@ FROM
 				Child c_1
 			GROUP BY
 				c_1.ParentID
-		) c_2 ON p.ParentID = c_2.ParentID
+		) c_2 ON t1.ParentID = c_2.ParentID
 WHERE
 	c_2.Value_1 > 0
 

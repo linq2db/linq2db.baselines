@@ -1,31 +1,31 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t2.Id,
-	t2.Status,
-	t2.ResourceLabel,
-	t2.ResourceLabelNVE,
-	t2.ParentResourceID,
-	t2.TypeID,
-	t2.HeightClass,
-	t2.CurrentWeightOfResource,
-	t2.WidthClass,
-	t2.LengthClass,
-	t2.OriginalResourceID,
-	t2.LastGlobalTaskID,
-	t2.WashingDate,
-	t2.ResourcePointID,
-	t2.Height,
-	t2.Width,
-	t2.Length_1,
-	t2.TechnicalValues,
-	t2.RearrangementCount,
-	t2.IsVirtual,
-	t2.ErrorMessage,
-	t2.FillingDegree,
-	t2.LastInventoryCheckTimeStamp,
-	t2.Segmentation,
-	t2.DontTouch,
+	t3.Id,
+	t3.Status,
+	t3.ResourceLabel,
+	t3.ResourceLabelNVE,
+	t3.ParentResourceID,
+	t3.TypeID,
+	t3.HeightClass,
+	t3.CurrentWeightOfResource,
+	t3.WidthClass,
+	t3.LengthClass,
+	t3.OriginalResourceID,
+	t3.LastGlobalTaskID,
+	t3.WashingDate,
+	t3.ResourcePointID,
+	t3.Height,
+	t3.Width,
+	t3.Length_1,
+	t3.TechnicalValues,
+	t3.RearrangementCount,
+	t3.IsVirtual,
+	t3.ErrorMessage,
+	t3.FillingDegree,
+	t3.LastInventoryCheckTimeStamp,
+	t3.Segmentation,
+	t3.DontTouch,
 	tp.Id,
 	tp.Name,
 	tp.ShortName,
@@ -34,35 +34,6 @@ SELECT
 	tp.Width
 FROM
 	(
-		SELECT
-			res.Id as Id,
-			res.Status as Status,
-			res.ResourceLabel as ResourceLabel,
-			res.ResourceLabelNVE as ResourceLabelNVE,
-			res.ParentResourceID as ParentResourceID,
-			res.TypeID as TypeID,
-			res.HeightClass as HeightClass,
-			res.CurrentWeightOfResource as CurrentWeightOfResource,
-			res.WidthClass as WidthClass,
-			res.LengthClass as LengthClass,
-			res.OriginalResourceID as OriginalResourceID,
-			res.LastGlobalTaskID as LastGlobalTaskID,
-			res.WashingDate as WashingDate,
-			res.ResourcePointID as ResourcePointID,
-			res.Height as Height,
-			res.Width as Width,
-			res.Length as Length_1,
-			res.TechnicalValues as TechnicalValues,
-			res.RearrangementCount as RearrangementCount,
-			res.IsVirtual as IsVirtual,
-			res.ErrorMessage as ErrorMessage,
-			res.FillingDegree as FillingDegree,
-			res.LastInventoryCheckTimeStamp as LastInventoryCheckTimeStamp,
-			res.Segmentation as Segmentation,
-			res.DontTouch as DontTouch
-		FROM
-			WmsLoadCarrierDTO res
-		UNION DISTINCT
 		SELECT
 			t1.Id as Id,
 			t1.Status as Status,
@@ -90,7 +61,36 @@ FROM
 			t1.Segmentation as Segmentation,
 			t1.DontTouch as DontTouch
 		FROM
-			WMS_ResourceA t1
-	) t2
-		LEFT JOIN WmsResourceTypeDTO tp ON t2.TypeID = tp.Id
+			WmsLoadCarrierDTO t1
+		UNION DISTINCT
+		SELECT
+			t2.Id as Id,
+			t2.Status as Status,
+			t2.ResourceLabel as ResourceLabel,
+			t2.ResourceLabelNVE as ResourceLabelNVE,
+			t2.ParentResourceID as ParentResourceID,
+			t2.TypeID as TypeID,
+			t2.HeightClass as HeightClass,
+			t2.CurrentWeightOfResource as CurrentWeightOfResource,
+			t2.WidthClass as WidthClass,
+			t2.LengthClass as LengthClass,
+			t2.OriginalResourceID as OriginalResourceID,
+			t2.LastGlobalTaskID as LastGlobalTaskID,
+			t2.WashingDate as WashingDate,
+			t2.ResourcePointID as ResourcePointID,
+			t2.Height as Height,
+			t2.Width as Width,
+			t2.Length as Length_1,
+			t2.TechnicalValues as TechnicalValues,
+			t2.RearrangementCount as RearrangementCount,
+			t2.IsVirtual as IsVirtual,
+			t2.ErrorMessage as ErrorMessage,
+			t2.FillingDegree as FillingDegree,
+			t2.LastInventoryCheckTimeStamp as LastInventoryCheckTimeStamp,
+			t2.Segmentation as Segmentation,
+			t2.DontTouch as DontTouch
+		FROM
+			WMS_ResourceA t2
+	) t3
+		LEFT JOIN WmsResourceTypeDTO tp ON t3.TypeID = tp.Id
 
