@@ -1,14 +1,14 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
-	"p1"."FirstName",
-	"p1"."PersonID",
-	"p1"."LastName",
-	"p1"."MiddleName",
-	"p1"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "p1",
+	"Person" "t1",
 	"Person" "p2"
 WHERE
-	"p1"."PersonID" = "p2"."PersonID" AND "p1"."FirstName" LIKE Replace("p2"."FirstName", '%', '~%') ESCAPE '~'
+	"t1"."PersonID" = "p2"."PersonID" AND "t1"."FirstName" LIKE Replace("p2"."FirstName", '%', '~%') ESCAPE '~'
 

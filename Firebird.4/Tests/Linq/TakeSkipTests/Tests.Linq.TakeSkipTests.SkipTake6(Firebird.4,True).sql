@@ -1,10 +1,10 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Child" "c_1",
+	"Child" "t1",
 	(
 		SELECT
 			"p"."ParentID"
@@ -13,15 +13,15 @@ FROM
 		FETCH NEXT 3 ROWS ONLY
 	) "p_1"
 WHERE
-	"c_1"."ParentID" = "p_1"."ParentID"
+	"t1"."ParentID" = "p_1"."ParentID"
 
 -- Firebird.4 Firebird4
 
 SELECT
-	"c_1"."ParentID",
-	"c_1"."ChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Child" "c_1",
+	"Child" "t1",
 	(
 		SELECT
 			"p"."ParentID"
@@ -30,5 +30,5 @@ FROM
 		OFFSET 12 ROWS FETCH NEXT 3 ROWS ONLY 
 	) "p_1"
 WHERE
-	"c_1"."ParentID" = "p_1"."ParentID"
+	"t1"."ParentID" = "p_1"."ParentID"
 
