@@ -7,8 +7,8 @@ SELECT
 	[gc].[ChildID],
 	[gc].[GrandChildID]
 FROM
-	[Child] [ch]
-		LEFT JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
+	[Child] [t2]
+		LEFT JOIN [Parent] [a_Parent] ON [t2].[ParentID] = [a_Parent].[ParentID]
 		LEFT JOIN [GrandChild] [gc]
 			INNER JOIN (
 				SELECT

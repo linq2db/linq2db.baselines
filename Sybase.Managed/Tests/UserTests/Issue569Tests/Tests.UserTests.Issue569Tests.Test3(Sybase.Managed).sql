@@ -1,15 +1,15 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	[p].[PersonID],
+	[t1].[PersonID],
 	[pt].[PersonID],
 	[d].[Taxonomy]
 FROM
-	[Person] [p],
+	[Person] [t1],
 	[Patient] [pt],
 	[Doctor] [d]
 ORDER BY
-	[p].[PersonID],
+	[t1].[PersonID],
 	[pt].[PersonID],
 	[d].[Taxonomy]
 
