@@ -19,18 +19,6 @@ SELECT
 FROM
 	(
 		SELECT
-			"tp0"."Id",
-			"tp0"."ResourceID",
-			"tp0"."StorageShelfSourceID",
-			"tp0"."RPSourceID",
-			"tp0"."StorageShelfDestinationID",
-			"tp0"."RPDestinationID",
-			"tp0"."RPOrigDestinationID",
-			"tp0"."OutfeedTransportOrderID"
-		FROM
-			"GlobalTaskDTO" "tp0"
-		UNION
-		SELECT
 			"t1"."Id",
 			"t1"."ResourceID",
 			"t1"."StorageShelfSourceID",
@@ -40,7 +28,19 @@ FROM
 			"t1"."RPOrigDestinationID",
 			"t1"."OutfeedTransportOrderID"
 		FROM
-			"WMS_GlobalTaskA" "t1"
+			"GlobalTaskDTO" "t1"
+		UNION
+		SELECT
+			"t2"."Id",
+			"t2"."ResourceID",
+			"t2"."StorageShelfSourceID",
+			"t2"."RPSourceID",
+			"t2"."StorageShelfDestinationID",
+			"t2"."RPDestinationID",
+			"t2"."RPOrigDestinationID",
+			"t2"."OutfeedTransportOrderID"
+		FROM
+			"WMS_GlobalTaskA" "t2"
 	) "tp12"
 		LEFT JOIN "WmsResourcePointDTO" "source" ON "tp12"."RPSourceID" = "source"."Id"
 		LEFT JOIN "StorageShelfDTO" "sourceShelf" ON "tp12"."StorageShelfSourceID" = "sourceShelf"."Id"
@@ -54,9 +54,9 @@ FROM
 				"WmsLoadCarrierDTO" "res"
 			UNION
 			SELECT
-				"t2"."Id"
+				"t3"."Id"
 			FROM
-				"WMS_ResourceA" "t2"
+				"WMS_ResourceA" "t3"
 		) "res_1" ON "tp12"."ResourceID" = "res_1"."Id"
 		LEFT JOIN (
 			SELECT
@@ -65,8 +65,8 @@ FROM
 				"OutfeedTransportOrderDTO" "outfeed1"
 			UNION
 			SELECT
-				"t3"."Id"
+				"t4"."Id"
 			FROM
-				"WMS_OutfeedTransportOrderA" "t3"
+				"WMS_OutfeedTransportOrderA" "t4"
 		) "outfeed" ON "tp12"."OutfeedTransportOrderID" = "outfeed"."Id"
 

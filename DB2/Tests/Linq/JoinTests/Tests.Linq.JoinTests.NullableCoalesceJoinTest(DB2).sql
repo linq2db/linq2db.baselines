@@ -64,9 +64,9 @@ SELECT
 	"t4".ID,
 	"t4"."Value"
 FROM
-	SESSION."tmptbl1" "t2"
-		LEFT JOIN SESSION."tmptbl2" "t3" ON "t2".ID = "t3".ID
-		LEFT JOIN SESSION."tmptbl3" "t4" ON Coalesce("t3"."Value", "t2"."Value") = "t4"."Value" OR "t3"."Value" IS NULL AND "t2"."Value" IS NULL AND "t4"."Value" IS NULL
+	SESSION."tmptbl1" "t1"
+		LEFT JOIN SESSION."tmptbl2" "t3" ON "t1".ID = "t3".ID
+		LEFT JOIN SESSION."tmptbl3" "t4" ON Coalesce("t3"."Value", "t1"."Value") = "t4"."Value" OR "t3"."Value" IS NULL AND "t1"."Value" IS NULL AND "t4"."Value" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
 

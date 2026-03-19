@@ -15,27 +15,27 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t2"."Value1") * @int1,
-			("UpdatedEntities"."Value2" * "t2"."Value2") * @int2,
-			("UpdatedEntities"."Value3" * "t2"."Value3") * @int3
+			("UpdatedEntities"."Value1" * "t4"."Value1") * @int1,
+			("UpdatedEntities"."Value2" * "t4"."Value2") * @int2,
+			("UpdatedEntities"."Value3" * "t4"."Value3") * @int3
 		FROM
 			(
 				SELECT
 					"t_1"."Value1",
 					"t_1"."Value2",
 					"t_1"."Value3",
-					"c_2"."id"
+					"t3"."id"
 				FROM
-					"UpdatedEntities" "c_2"
-						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "c_2"."id"
+					"UpdatedEntities" "t3"
+						INNER JOIN "NewEntities" "t_1" ON "t_1"."id" = "t3"."id"
 				WHERE
 					"t_1"."id" <> @someId
 				ORDER BY
-					"c_2"."id"
+					"t3"."id"
 				OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
-			) "t2"
+			) "t4"
 		WHERE
-			"UpdatedEntities"."id" = "t2"."id"
+			"UpdatedEntities"."id" = "t4"."id"
 	)
 WHERE
 	EXISTS(
@@ -44,18 +44,18 @@ WHERE
 		FROM
 			(
 				SELECT
-					"c_1"."id"
+					"t1"."id"
 				FROM
-					"UpdatedEntities" "c_1"
-						INNER JOIN "NewEntities" "t" ON "t"."id" = "c_1"."id"
+					"UpdatedEntities" "t1"
+						INNER JOIN "NewEntities" "t" ON "t"."id" = "t1"."id"
 				WHERE
 					"t"."id" <> @someId
 				ORDER BY
-					"c_1"."id"
+					"t1"."id"
 				OFFSET 1 ROWS FETCH NEXT @take ROWS ONLY 
-			) "t1"
+			) "t2"
 		WHERE
-			"UpdatedEntities"."id" = "t1"."id"
+			"UpdatedEntities"."id" = "t2"."id"
 	)
 
 -- DB2 DB2.LUW DB2LUW
