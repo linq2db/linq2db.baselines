@@ -1,9 +1,9 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DELETE   `p`
+DELETE   `t1`
 FROM
-	`Parent` `p`
-		LEFT JOIN `Child` `ch` ON `p`.`ParentID` = `ch`.`ParentID`
+	`Parent` `t1`
+		LEFT JOIN `Child` `ch` ON `t1`.`ParentID` = `ch`.`ParentID`
 WHERE
-	`ch`.`ParentID` = -1 OR `ch`.`ParentID` IS NULL AND `p`.`ParentID` = -1
+	`ch`.`ParentID` = -1 OR `ch`.`ParentID` IS NULL AND `t1`.`ParentID` = -1
 

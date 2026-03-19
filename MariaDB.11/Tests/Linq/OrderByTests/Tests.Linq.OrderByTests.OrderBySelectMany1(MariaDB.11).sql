@@ -1,15 +1,15 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`p`.`ParentID`,
+	`t1`.`ParentID`,
 	`c_1`.`ChildID`
 FROM
-	`Parent` `p`
+	`Parent` `t1`
 		CROSS JOIN `Child` `c_1`
 		INNER JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
 WHERE
-	`p`.`ParentID` = `a_Parent`.`ParentID` AND (`p`.`Value1` = `a_Parent`.`Value1` OR `p`.`Value1` IS NULL AND `a_Parent`.`Value1` IS NULL)
+	`t1`.`ParentID` = `a_Parent`.`ParentID` AND (`t1`.`Value1` = `a_Parent`.`Value1` OR `t1`.`Value1` IS NULL AND `a_Parent`.`Value1` IS NULL)
 ORDER BY
-	`p`.`ParentID`,
+	`t1`.`ParentID`,
 	`c_1`.`ChildID`
 

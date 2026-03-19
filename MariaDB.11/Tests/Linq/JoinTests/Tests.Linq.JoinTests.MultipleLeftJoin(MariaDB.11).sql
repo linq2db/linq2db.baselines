@@ -1,11 +1,11 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`parent_1`.`ParentID`,
+	`t1`.`ParentID`,
 	`childLeftJoin`.`ChildID`,
 	`grandChildLeftJoin`.`GrandChildID`
 FROM
-	`Parent` `parent_1`
-		LEFT JOIN `GrandChild` `grandChildLeftJoin` ON `parent_1`.`ParentID` = `grandChildLeftJoin`.`ParentID`
-		LEFT JOIN `Child` `childLeftJoin` ON `parent_1`.`ParentID` = `childLeftJoin`.`ParentID`
+	`Parent` `t1`
+		LEFT JOIN `GrandChild` `grandChildLeftJoin` ON `t1`.`ParentID` = `grandChildLeftJoin`.`ParentID`
+		LEFT JOIN `Child` `childLeftJoin` ON `t1`.`ParentID` = `childLeftJoin`.`ParentID`
 

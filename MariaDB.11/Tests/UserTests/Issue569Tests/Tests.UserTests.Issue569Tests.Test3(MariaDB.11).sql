@@ -1,15 +1,15 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`p`.`PersonID`,
+	`t1`.`PersonID`,
 	`pt`.`PersonID`,
 	`d`.`Taxonomy`
 FROM
-	`Person` `p`
+	`Person` `t1`
 		CROSS JOIN `Patient` `pt`
 		CROSS JOIN `Doctor` `d`
 ORDER BY
-	`p`.`PersonID`,
+	`t1`.`PersonID`,
 	`pt`.`PersonID`,
 	`d`.`Taxonomy`
 

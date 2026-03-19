@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`p`.`ParentID`
+	`t1`.`ParentID`
 FROM
-	`Parent` `p`
+	`Parent` `t1`
 
