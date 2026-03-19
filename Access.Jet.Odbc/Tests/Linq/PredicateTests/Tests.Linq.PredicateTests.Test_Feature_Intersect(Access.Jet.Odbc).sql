@@ -5,13 +5,5 @@ SELECT
 FROM
 	[FeatureTable] [r]
 WHERE
-	EXISTS(
-		SELECT DISTINCT
-			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
-	)
+	EXISTS[r].[One]
 
