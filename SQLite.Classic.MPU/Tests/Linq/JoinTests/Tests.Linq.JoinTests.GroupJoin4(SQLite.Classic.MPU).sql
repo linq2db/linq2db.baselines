@@ -7,21 +7,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t1]
 		WHERE
-			[p].[ParentID] = 3
+			[t1].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 WHERE
-	[p].[ParentID] = 3
+	[t1].[ParentID] = 3
 

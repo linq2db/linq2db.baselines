@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID]
+	[t1].[ParentID]
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 

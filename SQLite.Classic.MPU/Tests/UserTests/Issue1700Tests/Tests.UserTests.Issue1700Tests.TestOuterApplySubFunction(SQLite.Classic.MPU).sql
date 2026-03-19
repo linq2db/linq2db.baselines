@@ -9,11 +9,11 @@ SELECT
 		SELECT
 			[subtype_1].[Description]
 		FROM
-			[ItemAppType] [itemtype]
-				INNER JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [itemtype].[AppTypeId]
+			[ItemAppType] [t1]
+				INNER JOIN [AppType] [type_1] ON [type_1].[AppTypeId] = [t1].[AppTypeId]
 				INNER JOIN [AppSubType] [subtype_1] ON [subtype_1].[AppTypeId] = [type_1].[AppTypeId]
 		WHERE
-			[itemtype].[ItemId] = [i].[ItemId] AND [type_1].[AppTypeId] = [itemtype].[AppTypeId] AND
+			[t1].[ItemId] = [i].[ItemId] AND [type_1].[AppTypeId] = [t1].[AppTypeId] AND
 			[subtype_1].[AppTypeId] = [type_1].[AppTypeId]
 		GROUP BY
 			[subtype_1].[Description],

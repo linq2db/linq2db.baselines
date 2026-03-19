@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1],
+	[t1].[ParentID],
+	[t1].[Value1],
 	[ch].[ParentID],
 	[ch].[ChildID]
 FROM
-	[Parent] [p]
-		LEFT JOIN [Child] [ch] ON [p].[ParentID] = [ch].[ParentID]
+	[Parent] [t1]
+		LEFT JOIN [Child] [ch] ON [t1].[ParentID] = [ch].[ParentID]
 

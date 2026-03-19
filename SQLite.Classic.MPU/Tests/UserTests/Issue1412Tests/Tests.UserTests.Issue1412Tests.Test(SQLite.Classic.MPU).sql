@@ -1,31 +1,31 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t2].[Id],
-	[t2].[Status],
-	[t2].[ResourceLabel],
-	[t2].[ResourceLabelNVE],
-	[t2].[ParentResourceID],
-	[t2].[TypeID],
-	[t2].[HeightClass],
-	[t2].[CurrentWeightOfResource],
-	[t2].[WidthClass],
-	[t2].[LengthClass],
-	[t2].[OriginalResourceID],
-	[t2].[LastGlobalTaskID],
-	[t2].[WashingDate],
-	[t2].[ResourcePointID],
-	[t2].[Height],
-	[t2].[Width],
-	[t2].[Length_1],
-	[t2].[TechnicalValues],
-	[t2].[RearrangementCount],
-	[t2].[IsVirtual],
-	[t2].[ErrorMessage],
-	[t2].[FillingDegree],
-	[t2].[LastInventoryCheckTimeStamp],
-	[t2].[Segmentation],
-	[t2].[DontTouch],
+	[t3].[Id],
+	[t3].[Status],
+	[t3].[ResourceLabel],
+	[t3].[ResourceLabelNVE],
+	[t3].[ParentResourceID],
+	[t3].[TypeID],
+	[t3].[HeightClass],
+	[t3].[CurrentWeightOfResource],
+	[t3].[WidthClass],
+	[t3].[LengthClass],
+	[t3].[OriginalResourceID],
+	[t3].[LastGlobalTaskID],
+	[t3].[WashingDate],
+	[t3].[ResourcePointID],
+	[t3].[Height],
+	[t3].[Width],
+	[t3].[Length_1],
+	[t3].[TechnicalValues],
+	[t3].[RearrangementCount],
+	[t3].[IsVirtual],
+	[t3].[ErrorMessage],
+	[t3].[FillingDegree],
+	[t3].[LastInventoryCheckTimeStamp],
+	[t3].[Segmentation],
+	[t3].[DontTouch],
 	[tp].[Id],
 	[tp].[Name],
 	[tp].[ShortName],
@@ -34,35 +34,6 @@ SELECT
 	[tp].[Width]
 FROM
 	(
-		SELECT
-			[res].[Id],
-			[res].[Status],
-			[res].[ResourceLabel],
-			[res].[ResourceLabelNVE],
-			[res].[ParentResourceID],
-			[res].[TypeID],
-			[res].[HeightClass],
-			[res].[CurrentWeightOfResource],
-			[res].[WidthClass],
-			[res].[LengthClass],
-			[res].[OriginalResourceID],
-			[res].[LastGlobalTaskID],
-			[res].[WashingDate],
-			[res].[ResourcePointID],
-			[res].[Height],
-			[res].[Width],
-			[res].[Length] as [Length_1],
-			[res].[TechnicalValues],
-			[res].[RearrangementCount],
-			[res].[IsVirtual],
-			[res].[ErrorMessage],
-			[res].[FillingDegree],
-			[res].[LastInventoryCheckTimeStamp],
-			[res].[Segmentation],
-			[res].[DontTouch]
-		FROM
-			[WmsLoadCarrierDTO] [res]
-		UNION
 		SELECT
 			[t1].[Id],
 			[t1].[Status],
@@ -90,7 +61,36 @@ FROM
 			[t1].[Segmentation],
 			[t1].[DontTouch]
 		FROM
-			[WMS_ResourceA] [t1]
-	) [t2]
-		LEFT JOIN [WmsResourceTypeDTO] [tp] ON [t2].[TypeID] = [tp].[Id]
+			[WmsLoadCarrierDTO] [t1]
+		UNION
+		SELECT
+			[t2].[Id],
+			[t2].[Status],
+			[t2].[ResourceLabel],
+			[t2].[ResourceLabelNVE],
+			[t2].[ParentResourceID],
+			[t2].[TypeID],
+			[t2].[HeightClass],
+			[t2].[CurrentWeightOfResource],
+			[t2].[WidthClass],
+			[t2].[LengthClass],
+			[t2].[OriginalResourceID],
+			[t2].[LastGlobalTaskID],
+			[t2].[WashingDate],
+			[t2].[ResourcePointID],
+			[t2].[Height],
+			[t2].[Width],
+			[t2].[Length] as [Length_1],
+			[t2].[TechnicalValues],
+			[t2].[RearrangementCount],
+			[t2].[IsVirtual],
+			[t2].[ErrorMessage],
+			[t2].[FillingDegree],
+			[t2].[LastInventoryCheckTimeStamp],
+			[t2].[Segmentation],
+			[t2].[DontTouch]
+		FROM
+			[WMS_ResourceA] [t2]
+	) [t3]
+		LEFT JOIN [WmsResourceTypeDTO] [tp] ON [t3].[TypeID] = [tp].[Id]
 

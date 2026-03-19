@@ -14,13 +14,13 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[a_1].[Id],
+	[t1].[Id],
 	[bc].[AId],
 	[bc].[Id],
 	[c_1].[Id]
 FROM
-	[A] [a_1]
+	[A] [t1]
 		LEFT JOIN ([B] [bc]
 			INNER JOIN [C] [c_1] ON [bc].[Id] = [c_1].[BId])
-		ON [a_1].[Id] = [bc].[AId]
+		ON [t1].[Id] = [bc].[AId]
 

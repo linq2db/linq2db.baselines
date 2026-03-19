@@ -4,8 +4,8 @@ SELECT
 	[ch].[ParentID],
 	[ch].[ChildID]
 FROM
-	[Parent] [p],
+	[Parent] [t1],
 	[Child] [ch]
 WHERE
-	[p].[ParentID] = [ch].[ParentID]
+	[t1].[ParentID] = [ch].[ParentID]
 
