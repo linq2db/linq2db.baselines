@@ -2,34 +2,34 @@
 
 SELECT
 	[m_2].[DetailId],
-	[d_1].[SubDetailId],
-	[d_1].[DetailId],
-	[d_1].[SubDetailValue],
+	[d].[SubDetailId],
+	[d].[DetailId],
+	[d].[SubDetailValue],
 	[a_Detail].[SubDetailId],
 	[a_Detail].[DetailId],
 	[a_Detail].[SubDetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[d].[DetailId]
+			[t1].[DetailId]
 		FROM
-			[DetailClass] [d]
-				INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [d].[MasterId]
+			[DetailClass] [t1]
+				INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [t1].[MasterId]
 		WHERE
 			[m_1].[Id1] IN (1, 2)
 	) [m_2]
-		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
+		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
+		LEFT JOIN [SubDetailClass] [a_Detail] ON [d].[DetailId] = [a_Detail].[DetailId] OR [d].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 -- SQLite.MS SQLite
 
 SELECT
-	[d].[DetailId],
-	[d].[MasterId],
-	[d].[DetailValue]
+	[t1].[DetailId],
+	[t1].[MasterId],
+	[t1].[DetailValue]
 FROM
-	[DetailClass] [d]
-		INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [d].[MasterId]
+	[DetailClass] [t1]
+		INNER JOIN [MasterClass] [m_1] ON [m_1].[Id1] = [t1].[MasterId]
 WHERE
 	[m_1].[Id1] IN (1, 2)
 

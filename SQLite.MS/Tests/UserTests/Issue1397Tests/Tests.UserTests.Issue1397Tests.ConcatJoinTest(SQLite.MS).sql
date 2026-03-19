@@ -24,10 +24,10 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[ParentID],
-	[m_1].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [m_1],
+	[Parent] [t1],
 	(
 		SELECT
 			[id].[ParentID] as [id]
@@ -44,5 +44,5 @@ FROM
 			[t].[ParentID] = 2
 	) [id_1]
 WHERE
-	[id_1].[id] = [m_1].[ParentID]
+	[id_1].[id] = [t1].[ParentID]
 

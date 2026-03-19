@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	[p1].[PersonID],
-	[p1].[Diagnosis],
+	[t1].[PersonID],
+	[t1].[Diagnosis],
 	[p2].[PersonID],
 	[p2].[Diagnosis],
 	[p3].[FirstName],
@@ -11,7 +11,7 @@ SELECT
 	[p3].[MiddleName],
 	[p3].[Gender]
 FROM
-	[Patient] [p1]
-		INNER JOIN [Patient] [p2] ON [p1].[Diagnosis] = [p2].[Diagnosis] OR [p1].[Diagnosis] IS NULL AND [p2].[Diagnosis] IS NULL
+	[Patient] [t1]
+		INNER JOIN [Patient] [p2] ON [t1].[Diagnosis] = [p2].[Diagnosis] OR [t1].[Diagnosis] IS NULL AND [p2].[Diagnosis] IS NULL
 		INNER JOIN [Person] [p3] ON [p2].[PersonID] = [p3].[PersonID]
 

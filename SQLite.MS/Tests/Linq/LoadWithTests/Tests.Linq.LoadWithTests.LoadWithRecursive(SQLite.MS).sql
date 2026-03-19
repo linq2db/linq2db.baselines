@@ -1,8 +1,8 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	[m_2].[Id],
-	[m_2].[Id_1],
+	[m_1].[Id],
+	[m_1].[Id_1],
 	[d_1].[Id],
 	[d_1].[Value],
 	[d_1].[ParentId],
@@ -13,76 +13,76 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t1].[Id] as [Id_1]
+			[t2].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[m_1].[Id]
+					[t1].[Id]
 				FROM
-					[MainItem] [m_1]
-						INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
+					[MainItem] [t1]
+						INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
 				WHERE
-					[m_1].[Id] > 1
-			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
-	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
+					[t1].[Id] > 1
+			) [t2]
+				INNER JOIN [SubItem1] [d] ON [t2].[Id] = [d].[ParentId]
+	) [m_1]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[m_2].[Id],
+	[m_1].[Id],
 	[d].[Id],
 	[d].[Value],
 	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id]
+			[t1].[Id]
 		FROM
-			[MainItem] [m_1]
-				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
+			[MainItem] [t1]
+				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
 		WHERE
-			[m_1].[Id] > 1
-	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.MS SQLite
-
-SELECT
-	[m_2].[Id],
-	[d].[Id],
-	[d].[Value],
-	[d].[ParentId]
-FROM
-	(
-		SELECT DISTINCT
-			[m_1].[Id]
-		FROM
-			[MainItem] [m_1]
-				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
-		WHERE
-			[m_1].[Id] > 1
-	) [m_2]
-		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
+			[t1].[Id] > 1
+	) [m_1]
+		INNER JOIN [SubItem1] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Value]
+	[d].[Id],
+	[d].[Value],
+	[d].[ParentId]
 FROM
-	[MainItem] [m_1]
-		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
-WHERE
-	[m_1].[Id] > 1
+	(
+		SELECT DISTINCT
+			[t1].[Id]
+		FROM
+			[MainItem] [t1]
+				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
+		WHERE
+			[t1].[Id] > 1
+	) [m_1]
+		INNER JOIN [SubItem2] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[m_2].[Id],
-	[m_2].[Id_1],
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[MainItem] [t1]
+		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
+WHERE
+	[t1].[Id] > 1
+
+-- SQLite.MS SQLite
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Id_1],
 	[d_1].[Id],
 	[d_1].[Value],
 	[d_1].[ParentId],
@@ -93,49 +93,49 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t1].[Id] as [Id_1]
+			[t2].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[m_1].[Id]
+					[t1].[Id]
 				FROM
-					[MainItem] [m_1]
-						INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
+					[MainItem] [t1]
+						INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
 				WHERE
-					[m_1].[Id] > 1
-			) [t1]
-				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
-	) [m_2]
-		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
+					[t1].[Id] > 1
+			) [t2]
+				INNER JOIN [SubItem1] [d] ON [t2].[Id] = [d].[ParentId]
+	) [m_1]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[m_2].[Id],
+	[m_1].[Id],
 	[d].[Id],
 	[d].[Value],
 	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id]
+			[t1].[Id]
 		FROM
-			[MainItem] [m_1]
-				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
+			[MainItem] [t1]
+				INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
 		WHERE
-			[m_1].[Id] > 1
-	) [m_2]
-		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+			[t1].[Id] > 1
+	) [m_1]
+		INNER JOIN [SubItem1] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[m_1].[Id],
-	[m_1].[Value]
+	[t1].[Id],
+	[t1].[Value]
 FROM
-	[MainItem] [m_1]
-		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [m_1].[Id]
+	[MainItem] [t1]
+		INNER JOIN [MainItem2] [mm] ON [mm].[Id] = [t1].[Id]
 WHERE
-	[m_1].[Id] > 1
+	[t1].[Id] > 1
 

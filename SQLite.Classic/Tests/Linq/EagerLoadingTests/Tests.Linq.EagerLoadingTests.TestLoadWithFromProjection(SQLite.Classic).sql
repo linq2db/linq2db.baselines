@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	[m_2].[DetailId],
-	[m_2].[Id1],
+	[m_1].[DetailId],
+	[m_1].[Id1],
 	[d_2].[SubDetailId],
 	[d_2].[DetailId],
 	[d_2].[SubDetailValue]
@@ -10,40 +10,40 @@ FROM
 	(
 		SELECT DISTINCT
 			[d_1].[DetailId],
-			[t1].[Id1]
+			[t2].[Id1]
 		FROM
 			(
 				SELECT DISTINCT
-					[m_1].[Id1]
+					[t1].[Id1]
 				FROM
-					[MasterClass] [m_1]
-						INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-			) [t1]
-				INNER JOIN [DetailClass] [d_1] ON [t1].[Id1] = [d_1].[MasterId]
-	) [m_2]
-		INNER JOIN [SubDetailClass] [d_2] ON [m_2].[DetailId] = [d_2].[DetailId]
+					[MasterClass] [t1]
+						INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+			) [t2]
+				INNER JOIN [DetailClass] [d_1] ON [t2].[Id1] = [d_1].[MasterId]
+	) [m_1]
+		INNER JOIN [SubDetailClass] [d_2] ON [m_1].[DetailId] = [d_2].[DetailId]
 
 -- SQLite.Classic SQLite
 
 SELECT
-	[m_2].[Id1],
+	[m_1].[Id1],
 	[d_1].[DetailId],
 	[d_1].[MasterId],
 	[d_1].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[m_1].[Id1]
+			[t1].[Id1]
 		FROM
-			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-	) [m_2]
-		INNER JOIN [DetailClass] [d_1] ON [m_2].[Id1] = [d_1].[MasterId]
+			[MasterClass] [t1]
+				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+	) [m_1]
+		INNER JOIN [DetailClass] [d_1] ON [m_1].[Id1] = [d_1].[MasterId]
 
 -- SQLite.Classic SQLite
 
 SELECT
-	[m_2].[DetailId],
+	[m_1].[DetailId],
 	[d_1].[SubDetailId],
 	[d_1].[DetailId],
 	[d_1].[SubDetailValue],
@@ -55,10 +55,10 @@ FROM
 		SELECT DISTINCT
 			[d].[DetailId]
 		FROM
-			[MasterClass] [m_1]
-				INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-	) [m_2]
-		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
+			[MasterClass] [t1]
+				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+	) [m_1]
+		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
 		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 -- SQLite.Classic SQLite

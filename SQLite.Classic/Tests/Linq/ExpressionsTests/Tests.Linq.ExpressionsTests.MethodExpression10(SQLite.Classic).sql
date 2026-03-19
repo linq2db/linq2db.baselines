@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	[ch].[ParentID],
-	[ch].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Child] [ch]
-		INNER JOIN [Parent] [p] ON [p].[ParentID] = CAST(Floor(CAST([ch].[ChildID] AS Float) / 10) AS INTEGER)
+	[Child] [t1]
+		INNER JOIN [Parent] [p] ON [p].[ParentID] = CAST(Floor(CAST([t1].[ChildID] AS Float) / 10) AS INTEGER)
 WHERE
-	[ch].[ParentID] = [p].[ParentID]
+	[t1].[ParentID] = [p].[ParentID]
 

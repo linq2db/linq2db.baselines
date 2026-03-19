@@ -7,29 +7,29 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID]
+			[t2].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t2]
 				INNER JOIN (
 					SELECT
 						ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn],
 						[ch].[ParentID]
 					FROM
 						[Child] [ch]
-				) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] = 1
+				) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] = 1
 		WHERE
-			[p].[ParentID] = 1
+			[t2].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.MS SQLite
 
 SELECT
-	[p].[ParentID],
+	[t2].[ParentID],
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Parent] [t2]
 		INNER JOIN (
 			SELECT
 				[ch].[ParentID],
@@ -37,7 +37,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn]
 			FROM
 				[Child] [ch]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] = 1
+		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] = 1
 WHERE
-	[p].[ParentID] = 1
+	[t2].[ParentID] = 1
 
