@@ -7,7 +7,7 @@ SELECT
 		FROM
 			`Child` `ch`
 		WHERE
-			`p`.`ParentID` = `ch`.`ParentID`
+			`t1`.`ParentID` = `ch`.`ParentID`
 		ORDER BY
 			`ch`.`ChildID`
 		LIMIT 1
@@ -18,15 +18,15 @@ SELECT
 		FROM
 			`Child` `ch_1`
 		WHERE
-			`p`.`ParentID` = `ch_1`.`ParentID`
+			`t1`.`ParentID` = `ch_1`.`ParentID`
 		ORDER BY
 			`ch_1`.`ChildID`
 		LIMIT 1
 	)
 FROM
-	`Parent` `p`
+	`Parent` `t1`
 WHERE
-	`p`.`ParentID` >= 1
+	`t1`.`ParentID` >= 1
 ORDER BY
-	`p`.`ParentID`
+	`t1`.`ParentID`
 

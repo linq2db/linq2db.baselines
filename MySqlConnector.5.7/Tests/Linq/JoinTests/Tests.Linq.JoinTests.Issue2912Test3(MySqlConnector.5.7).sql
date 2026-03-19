@@ -7,10 +7,10 @@ SELECT
 		FROM
 			`Child` `a_Children`
 		WHERE
-			`employee`.`ParentID` = `a_Children`.`ParentID`
+			`t1`.`ParentID` = `a_Children`.`ParentID`
 		LIMIT 1
 	)
 FROM
-	`Parent` `employee`
-		LEFT JOIN `GrandChild` `names_1` ON `employee`.`ParentID` = `names_1`.`ParentID`
+	`Parent` `t1`
+		LEFT JOIN `GrandChild` `names_1` ON `t1`.`ParentID` = `names_1`.`ParentID`
 
