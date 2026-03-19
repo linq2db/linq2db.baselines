@@ -64,10 +64,10 @@ ORDER BY
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"tupledArg"."Id",
-	"tupledArg"."Name"
+	"after_1"."Id",
+	"after_1"."Name"
 FROM
-	"Names" "tupledArg"
+	"Names" "after_1"
 ORDER BY
-	"tupledArg"."Id"
+	"after_1"."Id"
 

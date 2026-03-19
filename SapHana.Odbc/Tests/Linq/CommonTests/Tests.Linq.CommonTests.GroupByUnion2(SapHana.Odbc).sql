@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"p"."ParentID"
+	"t1"."ParentID"
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 

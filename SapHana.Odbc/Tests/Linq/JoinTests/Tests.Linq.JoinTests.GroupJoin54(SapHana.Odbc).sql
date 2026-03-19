@@ -7,12 +7,12 @@ SELECT
 		FROM
 			"Child" "ch_1"
 		WHERE
-			"p"."ParentID" = "ch_1"."ParentID"
+			"t2"."ParentID" = "ch_1"."ParentID"
 	),
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
-	"Parent" "p"
+	"Parent" "t2"
 		INNER JOIN LATERAL (
 			SELECT
 				"ch"."ParentID",
@@ -20,9 +20,9 @@ FROM
 			FROM
 				"Child" "ch"
 			WHERE
-				"p"."ParentID" = "ch"."ParentID"
+				"t2"."ParentID" = "ch"."ParentID"
 			LIMIT 1
 		) "t1" ON 1=1
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 
