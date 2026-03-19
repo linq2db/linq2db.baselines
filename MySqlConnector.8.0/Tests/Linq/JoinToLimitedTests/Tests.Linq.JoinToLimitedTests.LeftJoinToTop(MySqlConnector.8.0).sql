@@ -1,12 +1,12 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`o`.`ParentID`,
-	`o`.`Value1`,
+	`t1`.`ParentID`,
+	`t1`.`Value1`,
 	`c_2`.`ParentID`,
 	`c_2`.`ChildID`
 FROM
-	`Parent` `o`
+	`Parent` `t1`
 		LEFT JOIN LATERAL (
 			SELECT
 				`c_1`.`ParentID`,
@@ -14,7 +14,7 @@ FROM
 			FROM
 				`Child` `c_1`
 			WHERE
-				`o`.`ParentID` = `c_1`.`ParentID`
+				`t1`.`ParentID` = `c_1`.`ParentID`
 			ORDER BY
 				`c_1`.`ChildID` DESC
 			LIMIT 1

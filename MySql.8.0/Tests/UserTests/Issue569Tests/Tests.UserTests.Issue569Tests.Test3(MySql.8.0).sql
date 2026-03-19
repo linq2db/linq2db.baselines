@@ -1,15 +1,15 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`p`.`PersonID`,
+	`t1`.`PersonID`,
 	`pt`.`PersonID`,
 	`d`.`Taxonomy`
 FROM
-	`Person` `p`
+	`Person` `t1`
 		CROSS JOIN `Patient` `pt`
 		CROSS JOIN `Doctor` `d`
 ORDER BY
-	`p`.`PersonID`,
+	`t1`.`PersonID`,
 	`pt`.`PersonID`,
 	`d`.`Taxonomy`
 

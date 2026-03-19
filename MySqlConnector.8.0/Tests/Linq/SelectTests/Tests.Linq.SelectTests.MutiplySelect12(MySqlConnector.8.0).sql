@@ -1,12 +1,12 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`grandChild_1`.`ParentID`,
-	`grandChild_1`.`ChildID`,
-	`grandChild_1`.`GrandChildID`
+	`t1`.`ParentID`,
+	`t1`.`ChildID`,
+	`t1`.`GrandChildID`
 FROM
-	`GrandChild` `grandChild_1`
+	`GrandChild` `t1`
 		CROSS JOIN `Child` `child_1`
 WHERE
-	`grandChild_1`.`ChildID` IS NOT NULL
+	`t1`.`ChildID` IS NOT NULL
 
