@@ -37,10 +37,10 @@ WHERE
 		SELECT
 			*
 		FROM
-			"Parent" "t1"
-				INNER JOIN "Child" "parent_1" ON "parent_1"."ParentID" = "t1"."ParentID"
+			"Parent" "child_1"
+				INNER JOIN "Child" "parent_1" ON "parent_1"."ParentID" = "child_1"."ParentID"
 		WHERE
-			"t1"."Value1" = 20000 AND "Child"."ParentID" = "parent_1"."ParentID" AND
+			"child_1"."Value1" = 20000 AND "Child"."ParentID" = "parent_1"."ParentID" AND
 			"Child"."ChildID" = "parent_1"."ChildID"
 	)
 

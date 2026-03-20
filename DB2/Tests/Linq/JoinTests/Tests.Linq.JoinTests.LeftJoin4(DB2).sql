@@ -1,12 +1,12 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."ParentID",
-	"t2"."Value1",
+	"Parent_1"."ParentID",
+	"Parent_1"."Value1",
 	"t1"."ParentID",
 	"t1"."ChildID"
 FROM
-	"Parent" "t2"
+	"Parent" "Parent_1"
 		LEFT JOIN (
 			SELECT
 				"y1"."ParentID",
@@ -14,10 +14,10 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY "y1"."ParentID" ORDER BY "y1"."ParentID") as "rn"
 			FROM
 				"Child" "y1"
-		) "t1" ON "t2"."ParentID" = "t1"."ParentID" AND "t2"."Value1" = "t1"."ParentID" AND "t1"."rn" = 1
-		LEFT JOIN "Child" "y4" ON "t2"."ParentID" = "y4"."ParentID" AND "t2"."Value1" = "y4"."ParentID"
+		) "t1" ON "Parent_1"."ParentID" = "t1"."ParentID" AND "Parent_1"."Value1" = "t1"."ParentID" AND "t1"."rn" = 1
+		LEFT JOIN "Child" "y4" ON "Parent_1"."ParentID" = "y4"."ParentID" AND "Parent_1"."Value1" = "y4"."ParentID"
 WHERE
-	"t2"."ParentID" = 1 AND "t2"."Value1" IS NOT NULL
+	"Parent_1"."ParentID" = 1 AND "Parent_1"."Value1" IS NOT NULL
 ORDER BY
-	"t2"."ParentID"
+	"Parent_1"."ParentID"
 

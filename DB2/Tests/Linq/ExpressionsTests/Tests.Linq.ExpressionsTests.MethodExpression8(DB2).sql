@@ -1,11 +1,11 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"ch"."ParentID",
+	"ch"."ChildID"
 FROM
-	"Child" "t1"
-		INNER JOIN "Parent" "p" ON "p"."ParentID" = CAST(Floor(CAST("t1"."ChildID" AS Float) / 10) AS Int)
+	"Child" "ch"
+		INNER JOIN "Parent" "p" ON "p"."ParentID" = CAST(Floor(CAST("ch"."ChildID" AS Float) / 10) AS Int)
 WHERE
-	"t1"."ParentID" = "p"."ParentID"
+	"ch"."ParentID" = "p"."ParentID"
 

@@ -6,7 +6,7 @@ SELECT
 		ELSE 0
 	END
 FROM
-	"Parent" "t2"
+	"Parent" "employee"
 		LEFT JOIN (
 			SELECT
 				"a_Children"."ParentID",
@@ -14,6 +14,6 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentID" ORDER BY "a_Children"."ParentID") as "rn"
 			FROM
 				"Child" "a_Children"
-		) "t1" ON "t2"."ParentID" = "t1"."ParentID" AND "t1"."rn" = 1
-		LEFT JOIN "GrandChild" "names_1" ON "t2"."ParentID" = "names_1"."ParentID"
+		) "t1" ON "employee"."ParentID" = "t1"."ParentID" AND "t1"."rn" = 1
+		LEFT JOIN "GrandChild" "names_1" ON "employee"."ParentID" = "names_1"."ParentID"
 
