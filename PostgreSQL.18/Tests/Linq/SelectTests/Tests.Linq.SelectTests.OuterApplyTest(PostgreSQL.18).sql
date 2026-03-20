@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT DISTINCT
-	t6."ParentID",
-	t6."Value1",
+	p."ParentID",
+	p."Value1",
 	c1_1."ParentID",
 	c1_1."ChildID",
 	EXISTS(
@@ -26,7 +26,7 @@ SELECT DISTINCT
 	t5."ChildDictionary2_2",
 	t5."ChildDictionary2_3"
 FROM
-	"Parent" t6
+	"Parent" p
 		LEFT JOIN LATERAL (
 			SELECT
 				c1."ParentID",
@@ -34,7 +34,7 @@ FROM
 			FROM
 				"Child" c1
 			WHERE
-				c1."ParentID" = t6."ParentID"
+				c1."ParentID" = p."ParentID"
 			LIMIT 1
 		) c1_1 ON 1=1
 		LEFT JOIN LATERAL (
@@ -44,7 +44,7 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				c_1."ChildID" > 2 AND c_1."ParentID" >= t6."ParentID"
+				c_1."ChildID" > 2 AND c_1."ParentID" >= p."ParentID"
 			LIMIT 1
 		) t1 ON 1=1
 		LEFT JOIN (
@@ -64,7 +64,7 @@ FROM
 			FROM
 				"Child" c_3
 			WHERE
-				c_3."ChildID" > 2 AND c_3."ParentID" >= t6."ParentID"
+				c_3."ChildID" > 2 AND c_3."ParentID" >= p."ParentID"
 			LIMIT 1
 		) t3 ON 1=1
 		LEFT JOIN LATERAL (
@@ -74,7 +74,7 @@ FROM
 			FROM
 				"Child" c_4
 			WHERE
-				c_4."ChildID" > 2 AND c_4."ParentID" >= t6."ParentID"
+				c_4."ChildID" > 2 AND c_4."ParentID" >= p."ParentID"
 			LIMIT 1
 		) t4 ON 1=1
 		LEFT JOIN LATERAL (
@@ -86,9 +86,9 @@ FROM
 			FROM
 				"Child" c_5
 			WHERE
-				c_5."ChildID" > 2 AND c_5."ParentID" >= t6."ParentID"
+				c_5."ChildID" > 2 AND c_5."ParentID" >= p."ParentID"
 			LIMIT 1
 		) t5 ON 1=1
 ORDER BY
-	t6."ParentID"
+	p."ParentID"
 
