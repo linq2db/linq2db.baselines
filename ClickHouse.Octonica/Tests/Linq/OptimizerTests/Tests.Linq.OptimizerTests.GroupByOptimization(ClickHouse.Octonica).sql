@@ -1,19 +1,19 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.Key1,
-	t1.Key2,
-	t1.DataKey11,
-	t1.DataKey21,
-	t1.DataKey22,
-	t1.DataKey31,
-	t1.DataKey32,
-	t1.DataKey33,
-	t1.ValueStr,
+	s.Key1,
+	s.Key2,
+	s.DataKey11,
+	s.DataKey21,
+	s.DataKey22,
+	s.DataKey31,
+	s.DataKey32,
+	s.DataKey33,
+	s.ValueStr,
 	u.UCount,
 	nu.Count_1
 FROM
-	SecondOptimizerData t1
+	SecondOptimizerData s
 		LEFT JOIN (
 			SELECT
 				g_1.DataKey21 as DataKey21,
@@ -28,7 +28,7 @@ FROM
 				g_1.Key2,
 				g_1.DataKey21,
 				g_1.DataKey22
-		) u ON u.DataKey21 = t1.DataKey21 AND u.DataKey22 = t1.DataKey22 AND u.Key1 = t1.Key1 AND u.Key2 = t1.Key2
+		) u ON u.DataKey21 = s.DataKey21 AND u.DataKey22 = s.DataKey22 AND u.Key1 = s.Key1 AND u.Key2 = s.Key2
 		LEFT JOIN (
 			SELECT
 				g_2.DataKey21 as DataKey21,
@@ -40,7 +40,7 @@ FROM
 				g_2.Key2,
 				g_2.DataKey21,
 				g_2.DataKey22
-		) nu ON nu.DataKey21 = t1.DataKey21 AND nu.DataKey21 = t1.DataKey22
+		) nu ON nu.DataKey21 = s.DataKey21 AND nu.DataKey21 = s.DataKey22
 
 -- ClickHouse.Octonica ClickHouse
 

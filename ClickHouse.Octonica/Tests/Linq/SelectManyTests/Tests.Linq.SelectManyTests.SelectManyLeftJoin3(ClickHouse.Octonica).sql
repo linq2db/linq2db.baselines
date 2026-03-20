@@ -4,8 +4,8 @@ SELECT
 	ch.ParentID,
 	ch.ChildID
 FROM
-	Parent t1,
+	Parent p,
 	Child ch
 WHERE
-	t1.ParentID = ch.ParentID
+	p.ParentID = ch.ParentID
 

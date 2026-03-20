@@ -1,14 +1,14 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.FirstName,
-	t1.PersonID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	p1.FirstName,
+	p1.PersonID,
+	p1.LastName,
+	p1.MiddleName,
+	p1.Gender
 FROM
-	Person t1,
+	Person p1,
 	Person p2
 WHERE
-	t1.PersonID = p2.PersonID AND startsWith(Replace(t1.FirstName, 'J', '%'), Replace(p2.FirstName, 'J', '%'))
+	p1.PersonID = p2.PersonID AND startsWith(Replace(p1.FirstName, 'J', '%'), Replace(p2.FirstName, 'J', '%'))
 
