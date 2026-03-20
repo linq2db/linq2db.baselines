@@ -1,11 +1,11 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ParentID",
+	p."ParentID",
 	c_2."Item1",
 	c_2."ChildID"
 FROM
-	"Parent" t1
+	"Parent" p
 		INNER JOIN LATERAL (
 			SELECT
 				ROW_NUMBER() OVER (ORDER BY c_1."ChildID") - 1 as "Item1",
@@ -13,7 +13,7 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				t1."ParentID" = c_1."ParentID"
+				p."ParentID" = c_1."ParentID"
 		) c_2 ON 1=1
 WHERE
 	c_2."Item1" < 15

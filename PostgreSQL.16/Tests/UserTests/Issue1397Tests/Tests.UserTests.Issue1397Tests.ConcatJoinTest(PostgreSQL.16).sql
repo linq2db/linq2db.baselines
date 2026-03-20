@@ -24,10 +24,10 @@ FROM
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."Value1"
+	m_1."ParentID",
+	m_1."Value1"
 FROM
-	"Parent" t1,
+	"Parent" m_1,
 	(
 		SELECT
 			id."ParentID" as id
@@ -44,5 +44,5 @@ FROM
 			t."ParentID" = 2
 	) id_1
 WHERE
-	id_1.id = t1."ParentID"
+	id_1.id = m_1."ParentID"
 
