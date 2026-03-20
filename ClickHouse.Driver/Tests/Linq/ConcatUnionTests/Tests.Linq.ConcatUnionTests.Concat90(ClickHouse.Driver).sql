@@ -48,11 +48,11 @@ SELECT
 	toInt32(NULL) as Id_2,
 	toInt32(NULL) as Id_3,
 	toString(NULL) as Field1_2,
-	t3.Id as Id_4,
-	t3.Field1 as Field1_3
+	t2_1.Id as Id_4,
+	t2_1.Field1 as Field1_3
 FROM
-	TestEntity2 t3
-		LEFT JOIN TestEntity1 t1_1 ON t3.Id = t1_1.Id
+	TestEntity2 t2_1
+		LEFT JOIN TestEntity1 t1_1 ON t2_1.Id = t1_1.Id
 WHERE
 	t1_1.Id IS NULL
 
