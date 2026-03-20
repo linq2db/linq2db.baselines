@@ -7,7 +7,7 @@ SELECT
 		FROM
 			"Child" "ch"
 		WHERE
-			"t1"."ParentID" = "ch"."ParentID"
+			"p"."ParentID" = "ch"."ParentID"
 		ORDER BY
 			"ch"."ChildID"
 	),
@@ -17,14 +17,14 @@ SELECT
 		FROM
 			"Child" "ch_1"
 		WHERE
-			"t1"."ParentID" = "ch_1"."ParentID"
+			"p"."ParentID" = "ch_1"."ParentID"
 		ORDER BY
 			"ch_1"."ChildID"
 	)
 FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."ParentID" >= 1
+	"p"."ParentID" >= 1
 ORDER BY
-	"t1"."ParentID"
+	"p"."ParentID"
 

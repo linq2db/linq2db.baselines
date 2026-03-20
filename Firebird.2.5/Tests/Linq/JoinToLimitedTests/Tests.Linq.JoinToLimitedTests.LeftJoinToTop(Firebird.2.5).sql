@@ -1,15 +1,15 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1",
+	"o"."ParentID",
+	"o"."Value1",
 	(
 		SELECT FIRST 1
 			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"
 		WHERE
-			"t1"."ParentID" = "c_1"."ParentID"
+			"o"."ParentID" = "c_1"."ParentID"
 		ORDER BY
 			"c_1"."ChildID" DESC
 	),
@@ -19,10 +19,10 @@ SELECT
 		FROM
 			"Child" "c_2"
 		WHERE
-			"t1"."ParentID" = "c_2"."ParentID"
+			"o"."ParentID" = "c_2"."ParentID"
 		ORDER BY
 			"c_2"."ChildID" DESC
 	)
 FROM
-	"Parent" "t1"
+	"Parent" "o"
 

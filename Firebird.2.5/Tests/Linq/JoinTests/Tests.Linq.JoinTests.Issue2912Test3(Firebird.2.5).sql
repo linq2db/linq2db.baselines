@@ -7,9 +7,9 @@ SELECT
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"t1"."ParentID" = "a_Children"."ParentID"
+			"employee"."ParentID" = "a_Children"."ParentID"
 	)
 FROM
-	"Parent" "t1"
-		LEFT JOIN "GrandChild" "names_1" ON "t1"."ParentID" = "names_1"."ParentID"
+	"Parent" "employee"
+		LEFT JOIN "GrandChild" "names_1" ON "employee"."ParentID" = "names_1"."ParentID"
 

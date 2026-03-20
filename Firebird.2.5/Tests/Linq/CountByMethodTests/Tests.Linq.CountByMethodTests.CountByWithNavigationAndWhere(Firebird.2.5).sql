@@ -1,10 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"t1"."ParentID",
+	"p"."ParentID",
 	"c_2"."Value_1"
 FROM
-	"Parent" "t1"
+	"Parent" "p"
 		INNER JOIN (
 			SELECT
 				COUNT(*) as "Value_1",
@@ -13,7 +13,7 @@ FROM
 				"Child" "c_1"
 			GROUP BY
 				"c_1"."ParentID"
-		) "c_2" ON "t1"."ParentID" = "c_2"."ParentID"
+		) "c_2" ON "p"."ParentID" = "c_2"."ParentID"
 WHERE
 	"c_2"."Value_1" > 0
 

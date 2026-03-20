@@ -15,41 +15,41 @@ SET
 		SELECT
 			("UpdatedEntities"."Value1" * "t_1"."Value1") * CAST(@int1 AS Int)
 		FROM
-			"UpdatedEntities" "t2",
+			"UpdatedEntities" "c_2",
 			"NewEntities" "t_1"
 		WHERE
-			"t_1"."id" = "t2"."id" AND "t_1"."id" <> @someId AND
-			"UpdatedEntities"."id" = "t2"."id"
+			"t_1"."id" = "c_2"."id" AND "t_1"."id" <> @someId AND
+			"UpdatedEntities"."id" = "c_2"."id"
 	),
 	"Value2" = (
 		SELECT
 			("UpdatedEntities"."Value2" * "t_2"."Value2") * CAST(@int2 AS Int)
 		FROM
-			"UpdatedEntities" "t3",
+			"UpdatedEntities" "c_3",
 			"NewEntities" "t_2"
 		WHERE
-			"t_2"."id" = "t3"."id" AND "t_2"."id" <> @someId AND
-			"UpdatedEntities"."id" = "t3"."id"
+			"t_2"."id" = "c_3"."id" AND "t_2"."id" <> @someId AND
+			"UpdatedEntities"."id" = "c_3"."id"
 	),
 	"Value3" = (
 		SELECT
 			("UpdatedEntities"."Value3" * "t_3"."Value3") * CAST(@int3 AS Int)
 		FROM
-			"UpdatedEntities" "t4",
+			"UpdatedEntities" "c_4",
 			"NewEntities" "t_3"
 		WHERE
-			"t_3"."id" = "t4"."id" AND "t_3"."id" <> @someId AND
-			"UpdatedEntities"."id" = "t4"."id"
+			"t_3"."id" = "c_4"."id" AND "t_3"."id" <> @someId AND
+			"UpdatedEntities"."id" = "c_4"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"UpdatedEntities" "t1",
+			"UpdatedEntities" "c_1",
 			"NewEntities" "t"
 		WHERE
-			"t"."id" = "t1"."id" AND "t"."id" <> @someId AND "UpdatedEntities"."id" = "t1"."id"
+			"t"."id" = "c_1"."id" AND "t"."id" <> @someId AND "UpdatedEntities"."id" = "c_1"."id"
 	)
 
 -- Firebird.2.5 Firebird
