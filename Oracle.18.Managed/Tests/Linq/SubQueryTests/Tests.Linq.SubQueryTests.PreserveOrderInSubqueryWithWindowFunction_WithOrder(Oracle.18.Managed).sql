@@ -9,11 +9,7 @@ FROM
 	(
 		SELECT
 			r."PersonID" as ID,
-			ROW_NUMBER() OVER(ORDER BY (
-				SELECT
-					'unordered'
-				FROM SYS.DUAL
-			)) as "RowNumber"
+			ROW_NUMBER() OVER(ORDER BY 'unordered') as "RowNumber"
 		FROM
 			"Person" r
 		ORDER BY
