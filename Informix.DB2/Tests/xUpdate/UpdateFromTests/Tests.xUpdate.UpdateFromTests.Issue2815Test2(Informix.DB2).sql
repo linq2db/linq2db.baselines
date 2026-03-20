@@ -3,9 +3,9 @@
 UPDATE
 	Issue2815Table1
 SET
-	TRANS_CHANNEL = (
+	TRANS_CHANNEL = Nvl((
 		SELECT
-			Nvl(channel_1.Trans_Channel, 1)
+			channel_1.Trans_Channel
 		FROM
 			Issue2815Table1 ext_1
 				LEFT JOIN Issue2815Table2 source_1 ON source_1.ISO = ext_1.SRC_BIC
@@ -21,10 +21,10 @@ SET
 		WHERE
 			ext_1.NOT_HANDLED = 2 AND ext_1.TRANS_CHANNEL IS NULL AND
 			Issue2815Table1.Id = ext_1.Id
-	),
-	IDF = (
+	), 1),
+	IDF = Nvl((
 		SELECT
-			Nvl(channel_2.Idf, 0)
+			channel_2.Idf
 		FROM
 			Issue2815Table1 ext_2
 				LEFT JOIN Issue2815Table2 source_2 ON source_2.ISO = ext_2.SRC_BIC
@@ -40,7 +40,7 @@ SET
 		WHERE
 			ext_2.NOT_HANDLED = 2 AND ext_2.TRANS_CHANNEL IS NULL AND
 			Issue2815Table1.Id = ext_2.Id
-	)
+	), 0)
 WHERE
 	EXISTS(
 		SELECT
