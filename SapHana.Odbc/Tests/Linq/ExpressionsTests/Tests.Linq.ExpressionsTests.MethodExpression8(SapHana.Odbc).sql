@@ -1,11 +1,11 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ParentID",
-	"t1"."ChildID"
+	"ch"."ParentID",
+	"ch"."ChildID"
 FROM
-	"Child" "t1"
-		INNER JOIN "Parent" "p" ON "p"."ParentID" = CAST(Floor(CAST("t1"."ChildID" AS Double) / 10) AS Integer)
+	"Child" "ch"
+		INNER JOIN "Parent" "p" ON "p"."ParentID" = CAST(Floor(CAST("ch"."ChildID" AS Double) / 10) AS Integer)
 WHERE
-	"t1"."ParentID" = "p"."ParentID"
+	"ch"."ParentID" = "p"."ParentID"
 

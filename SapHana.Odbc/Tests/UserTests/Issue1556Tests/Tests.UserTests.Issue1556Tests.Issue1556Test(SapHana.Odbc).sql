@@ -20,21 +20,21 @@ FROM
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1",
+	"p"."ParentID",
+	"p"."Value1",
 	"c_1"."ParentID",
 	"c_1"."ChildID"
 FROM
-	"Parent" "t1",
+	"Parent" "p",
 	"Child" "c_1"
 WHERE
-	"t1"."ParentID" = "c_1"."ParentID" OR EXISTS(
+	"p"."ParentID" = "c_1"."ParentID" OR EXISTS(
 		SELECT
 			*
 		FROM
 			"GrandChild" "y"
 		WHERE
 			"c_1"."ParentID" = "y"."ParentID" AND "c_1"."ChildID" = "y"."ChildID" AND
-			"y"."ParentID" = "t1"."ParentID"
+			"y"."ParentID" = "p"."ParentID"
 	)
 
