@@ -1,12 +1,12 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`Value1`,
+	`o`.`ParentID`,
+	`o`.`Value1`,
 	`c_2`.`ParentID`,
 	`c_2`.`ChildID`
 FROM
-	`Parent` `t1`
+	`Parent` `o`
 		LEFT JOIN LATERAL (
 			SELECT DISTINCT
 				`c_1`.`ParentID`,
@@ -14,6 +14,6 @@ FROM
 			FROM
 				`Child` `c_1`
 			WHERE
-				`t1`.`ParentID` = `c_1`.`ParentID`
+				`o`.`ParentID` = `c_1`.`ParentID`
 		) `c_2` ON 1=1
 

@@ -18,13 +18,13 @@ AS
 		`OrgGroup` `parent`
 	UNION
 	SELECT
-		`t1`.`Id`,
-		`t1`.`ParentId`,
-		`t1`.`GroupName`,
+		`child`.`Id`,
+		`child`.`ParentId`,
+		`child`.`GroupName`,
 		`parent_1`.`Depth_1` + 1
 	FROM
-		`OrgGroup` `t1`
-			INNER JOIN `previous` `parent_1` ON `parent_1`.`OrgGroup_Id` = `t1`.`ParentId`
+		`OrgGroup` `child`
+			INNER JOIN `previous` `parent_1` ON `parent_1`.`OrgGroup_Id` = `child`.`ParentId`
 )
 SELECT
 	`wrapper`.`OrgGroup_Id`,

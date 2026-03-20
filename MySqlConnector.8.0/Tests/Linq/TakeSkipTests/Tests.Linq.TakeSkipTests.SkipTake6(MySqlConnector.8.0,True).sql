@@ -1,10 +1,10 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`c_1`.`ParentID`,
+	`c_1`.`ChildID`
 FROM
-	`Child` `t1`,
+	`Child` `c_1`,
 	(
 		SELECT
 			`p`.`ParentID`
@@ -13,15 +13,15 @@ FROM
 		LIMIT 3
 	) `p_1`
 WHERE
-	`t1`.`ParentID` = `p_1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`ChildID`
+	`c_1`.`ParentID`,
+	`c_1`.`ChildID`
 FROM
-	`Child` `t1`,
+	`Child` `c_1`,
 	(
 		SELECT
 			`p`.`ParentID`
@@ -30,5 +30,5 @@ FROM
 		LIMIT 12, 3
 	) `p_1`
 WHERE
-	`t1`.`ParentID` = `p_1`.`ParentID`
+	`c_1`.`ParentID` = `p_1`.`ParentID`
 

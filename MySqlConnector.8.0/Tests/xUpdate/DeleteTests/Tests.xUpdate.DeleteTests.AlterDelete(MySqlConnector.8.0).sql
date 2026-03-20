@@ -1,9 +1,9 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DELETE   `t1`
+DELETE   `p`
 FROM
-	`Parent` `t1`
-		LEFT JOIN `Child` `ch` ON `t1`.`ParentID` = `ch`.`ParentID`
+	`Parent` `p`
+		LEFT JOIN `Child` `ch` ON `p`.`ParentID` = `ch`.`ParentID`
 WHERE
-	`ch`.`ParentID` = -1 OR `ch`.`ParentID` IS NULL AND `t1`.`ParentID` = -1
+	`ch`.`ParentID` = -1 OR `ch`.`ParentID` IS NULL AND `p`.`ParentID` = -1
 

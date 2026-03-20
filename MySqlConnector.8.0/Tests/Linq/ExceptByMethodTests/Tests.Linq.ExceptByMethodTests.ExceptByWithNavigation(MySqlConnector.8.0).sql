@@ -1,10 +1,10 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ParentID`,
+	`p`.`ParentID`,
 	`c_2`.`ChildID`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 		INNER JOIN LATERAL (
 			SELECT
 				`c_1`.`ChildID`
@@ -16,7 +16,7 @@ FROM
 					FROM
 						`Child` `e`
 					WHERE
-						`t1`.`ParentID` = `e`.`ParentID` AND `e`.`ChildID` NOT IN (2)
+						`p`.`ParentID` = `e`.`ParentID` AND `e`.`ChildID` NOT IN (2)
 				) `c_1`
 			WHERE
 				`c_1`.`RowNumber` = 1

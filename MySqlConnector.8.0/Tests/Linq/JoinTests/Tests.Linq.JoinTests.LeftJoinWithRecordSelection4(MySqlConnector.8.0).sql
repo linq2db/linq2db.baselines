@@ -1,15 +1,15 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`Id`,
+	`fact_1`.`Id`,
 	`leftTag`.`Id`,
 	`leftTag`.`FactId`,
 	`leftTag`.`Name`
 FROM
-	`Fact` `t1`
-		LEFT JOIN `Tag` `leftTag` ON `leftTag`.`FactId` = `t1`.`Id`
+	`Fact` `fact_1`
+		LEFT JOIN `Tag` `leftTag` ON `leftTag`.`FactId` = `fact_1`.`Id`
 WHERE
-	`t1`.`Id` > 3
+	`fact_1`.`Id` > 3
 ORDER BY
-	`t1`.`Id`
+	`fact_1`.`Id`
 
