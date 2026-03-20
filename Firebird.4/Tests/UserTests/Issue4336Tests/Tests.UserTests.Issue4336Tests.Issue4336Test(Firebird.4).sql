@@ -15,14 +15,14 @@ SELECT
 FROM
 	(
 		SELECT
-			"t1"."Id" as "OrderPeriodId",
+			"op"."Id" as "OrderPeriodId",
 			"vpc"."CategoryId",
 			"pop"."ProductId",
 			COALESCE("pcc"."PeriodOrderLimit",0) as "MaxCapacity",
 			COALESCE(COALESCE("vsp"."Quantity",0),0) as "Quantity"
 		FROM
-			"OrderPeriod" "t1"
-				INNER JOIN "ProductsPerOrderPeriod" "pop" ON "t1"."Id" = "pop"."OrderPeriodId"
+			"OrderPeriod" "op"
+				INNER JOIN "ProductsPerOrderPeriod" "pop" ON "op"."Id" = "pop"."OrderPeriodId"
 				LEFT JOIN "Product" "vpc" ON "vpc"."Id" = "pop"."ProductId"
 				LEFT JOIN "ProductCategory" "pcc" ON "pcc"."Id" = "vpc"."CategoryId"
 				LEFT JOIN (
@@ -37,7 +37,7 @@ FROM
 					GROUP BY
 						"agroup"."Id",
 						"oi"."ProductId"
-				) "vsp" ON "vsp"."Id" = "t1"."Id" AND "vsp"."ProductId" = "pop"."ProductId"
+				) "vsp" ON "vsp"."Id" = "op"."Id" AND "vsp"."ProductId" = "pop"."ProductId"
 	) "r"
 		LEFT JOIN "OrderPeriod" "v2"
 			INNER JOIN "ProductCategory" "vpcc" ON 1=1
