@@ -3,9 +3,17 @@
 UPDATE
 	"UpdatedEntities"
 SET
-	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"Value3" = 1
+	"Value3" = 1,
+	("Value1", "Value2") = (
+		SELECT
+			v_1."Value1" + v_1."Value2" + v_1."Value3",
+			v_1."Value1" + v_1."Value2" + v_1."Value3"
+		FROM
+			"UpdatedEntities" v_1
+				INNER JOIN "UpdateRelation" a_Relation_1 ON v_1."RelationId" = a_Relation_1."id"
+		WHERE
+			a_Relation_1."RelatedValue1" = 11 AND "UpdatedEntities"."id" = v_1."id"
+	)
 WHERE
 	EXISTS(
 		SELECT
