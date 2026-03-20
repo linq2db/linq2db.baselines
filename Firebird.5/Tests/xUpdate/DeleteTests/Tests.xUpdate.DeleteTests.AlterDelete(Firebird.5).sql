@@ -7,10 +7,10 @@ WHERE
 		SELECT
 			1
 		FROM
-			"Parent" "t2"
-				LEFT JOIN "Child" "ch" ON "t2"."ParentID" = "ch"."ParentID"
+			"Parent" "p"
+				LEFT JOIN "Child" "ch" ON "p"."ParentID" = "ch"."ParentID"
 		WHERE
-			("ch"."ParentID" = -1 OR "ch"."ParentID" IS NULL AND "t2"."ParentID" = -1) AND
-			"t1"."ParentID" = "t2"."ParentID" AND "t1"."Value1" = "t2"."Value1"
+			("ch"."ParentID" = -1 OR "ch"."ParentID" IS NULL AND "p"."ParentID" = -1) AND
+			"t1"."ParentID" = "p"."ParentID" AND "t1"."Value1" = "p"."Value1"
 	)
 

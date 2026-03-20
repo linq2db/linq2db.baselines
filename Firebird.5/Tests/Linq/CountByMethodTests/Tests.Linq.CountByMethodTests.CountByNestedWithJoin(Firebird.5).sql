@@ -4,18 +4,18 @@ SELECT
 	"p2"."ParentID",
 	"c_2"."ChildIDCount"
 FROM
-	"Parent" "t1"
+	"Parent" "p"
 		CROSS JOIN LATERAL (
 			SELECT
 				COUNT(*) as "ChildIDCount"
 			FROM
 				"Child" "c_1"
 			WHERE
-				"t1"."ParentID" = "c_1"."ParentID"
+				"p"."ParentID" = "c_1"."ParentID"
 			GROUP BY
 				"c_1"."ChildID"
 		) "c_2"
-		INNER JOIN "Parent" "p2" ON "t1"."ParentID" = "p2"."ParentID"
+		INNER JOIN "Parent" "p2" ON "p"."ParentID" = "p2"."ParentID"
 
 -- Firebird.5 Firebird4
 
