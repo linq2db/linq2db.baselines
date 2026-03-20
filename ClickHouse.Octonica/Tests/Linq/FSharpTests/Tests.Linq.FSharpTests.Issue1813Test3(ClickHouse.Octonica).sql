@@ -40,13 +40,13 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	tupledArg.Id,
-	tupledArg.Name,
+	after_1.Id,
+	after_1.Name,
 	arg2.Id,
 	arg2.Text
 FROM
-	Names tupledArg
-		LEFT JOIN Addresses arg2 ON tupledArg.Id = arg2.Id
+	Names after_1
+		LEFT JOIN Addresses arg2 ON after_1.Id = arg2.Id
 ORDER BY
-	tupledArg.Id
+	after_1.Id
 
