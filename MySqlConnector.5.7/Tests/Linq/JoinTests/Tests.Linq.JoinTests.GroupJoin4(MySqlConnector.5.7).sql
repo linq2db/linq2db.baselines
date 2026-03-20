@@ -7,21 +7,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			`t1`.`ParentID`
+			`p`.`ParentID`
 		FROM
-			`Parent` `t1`
+			`Parent` `p`
 		WHERE
-			`t1`.`ParentID` = 3
+			`p`.`ParentID` = 3
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`Value1`
+	`p`.`ParentID`,
+	`p`.`Value1`
 FROM
-	`Parent` `t1`
+	`Parent` `p`
 WHERE
-	`t1`.`ParentID` = 3
+	`p`.`ParentID` = 3
 

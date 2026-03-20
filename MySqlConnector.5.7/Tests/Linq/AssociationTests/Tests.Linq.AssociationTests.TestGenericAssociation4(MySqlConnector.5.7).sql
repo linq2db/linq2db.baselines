@@ -1,11 +1,11 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`t1`.`ParentID`,
-	`t1`.`Value1`
+	`t`.`ParentID`,
+	`t`.`Value1`
 FROM
-	`Parent` `t1`
-		INNER JOIN `Child` `g_1` ON `t1`.`ParentID` = `g_1`.`ParentID`
+	`Parent` `t`
+		INNER JOIN `Child` `g_1` ON `t`.`ParentID` = `g_1`.`ParentID`
 WHERE
 	Abs(`g_1`.`ChildID`) > 3
 ORDER BY

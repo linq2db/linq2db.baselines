@@ -30,9 +30,9 @@ SET     @ParentID = 20000
 
 UPDATE
 	`Child` `parent_1`,
-	`Parent` `t1`
+	`Parent` `child_1`
 SET
 	`parent_1`.`ParentID` = @ParentID
 WHERE
-	`t1`.`Value1` = 20000 AND `parent_1`.`ParentID` = `t1`.`ParentID`
+	`child_1`.`Value1` = 20000 AND `parent_1`.`ParentID` = `child_1`.`ParentID`
 
