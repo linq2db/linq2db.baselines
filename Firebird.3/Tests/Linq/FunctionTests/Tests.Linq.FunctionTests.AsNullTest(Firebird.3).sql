@@ -1,11 +1,11 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1"
+	"p1"."ParentID",
+	"p1"."Value1"
 FROM
-	"Parent" "t1",
+	"Parent" "p1",
 	"Parent" "p2"
 WHERE
-	"t1"."Value1" = "p2"."Value1" OR "t1"."Value1" IS NULL AND "p2"."Value1" IS NULL
+	"p1"."Value1" = "p2"."Value1" OR "p1"."Value1" IS NULL AND "p2"."Value1" IS NULL
 
