@@ -1,11 +1,11 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
-	t1."ParentID",
+	p."ParentID",
 	"IndexedParent_1"."Item1",
 	"IndexedParent_1"."Value1"
 FROM
-	"Parent" t1,
+	"Parent" p,
 	(
 		SELECT
 			ROW_NUMBER() OVER (ORDER BY "IndexedParent"."ParentID") - 1 as "Item1",

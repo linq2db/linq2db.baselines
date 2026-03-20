@@ -1,17 +1,17 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
-	t1."PersonID",
+	p."PersonID",
 	Coalesce(m_2."MiddleName", 'default2')
 FROM
-	"Person" t1
+	"Person" p
 		LEFT JOIN (
 			SELECT
 				Coalesce(m_1."MiddleName", 'default1') as "MiddleName",
 				m_1."PersonID" + 1 as c1
 			FROM
 				"Person" m_1
-		) m_2 ON t1."PersonID" = m_2.c1
+		) m_2 ON p."PersonID" = m_2.c1
 
 -- PostgreSQL.13 PostgreSQL
 
