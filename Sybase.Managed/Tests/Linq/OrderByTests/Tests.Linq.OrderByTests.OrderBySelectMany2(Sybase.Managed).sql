@@ -7,10 +7,10 @@ FROM
 	(
 		SELECT
 			[c_1].[ParentID],
-			[t1].[ParentID] as [ParentID_1],
+			[p].[ParentID] as [ParentID_1],
 			[c_1].[ChildID]
 		FROM
-			[Parent] [t1],
+			[Parent] [p],
 			[Child] [c_1]
 	) [sub]
 		INNER JOIN [Parent] [a_Parent1] ON [sub].[ParentID] = [a_Parent1].[ParentID]

@@ -6,9 +6,9 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1],
+			[Parent] [p],
 			[Parent] [c_1]
 	) [sub]
 		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID]
@@ -24,9 +24,9 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1],
+			[Parent] [p],
 			[Parent] [c_1]
 	) [sub]
 		INNER JOIN [GrandChild] [g_1] ON [sub].[ParentID] = [g_1].[ParentID]
