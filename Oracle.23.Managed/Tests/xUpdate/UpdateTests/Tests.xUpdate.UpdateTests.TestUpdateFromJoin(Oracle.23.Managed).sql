@@ -5,16 +5,16 @@ UPDATE
 SET
 	("col1", "col2", "col3", "col4", "col5", "col6") = (
 		SELECT
-			"gt_s_one"."col1",
-			"gt_s_one"."col2",
-			Replace("gt_s_one"."col3", 'auth.', ''),
-			"gt_s_one"."col4",
+			x_1."col1",
+			x_1."col2",
+			Replace(x_1."col3", 'auth.', ''),
+			x_1."col4",
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN '1'
+				WHEN x_1."col3" = 'empty' THEN '1'
 				ELSE '0'
 			END,
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				WHEN x_1."col3" = 'empty' THEN ''
 				ELSE CAST(y1_1."id" AS VarChar(100))
 			END
 		FROM

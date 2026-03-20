@@ -13,7 +13,16 @@ WHERE
 UPDATE
 	"Child"
 SET
-	"ParentID" = "Child"."ParentID"
+	"ParentID" = (
+		SELECT
+			child_2."ParentID"
+		FROM
+			"Child" child_2
+				INNER JOIN "Parent" parent_2 ON parent_2."ParentID" = child_2."ParentID"
+		WHERE
+			parent_2."ParentID" < 5 AND "Child"."ParentID" = child_2."ParentID" AND
+			"Child"."ChildID" = child_2."ChildID"
+	)
 WHERE
 	EXISTS(
 		SELECT
