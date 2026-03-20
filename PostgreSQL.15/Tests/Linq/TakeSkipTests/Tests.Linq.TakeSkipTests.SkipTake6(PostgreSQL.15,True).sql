@@ -1,10 +1,10 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
-	"Child" t1,
+	"Child" c_1,
 	(
 		SELECT
 			p."ParentID"
@@ -13,15 +13,15 @@ FROM
 		LIMIT 3
 	) p_1
 WHERE
-	t1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
-	"Child" t1,
+	"Child" c_1,
 	(
 		SELECT
 			p."ParentID"
@@ -30,5 +30,5 @@ FROM
 		LIMIT 3 OFFSET 12 
 	) p_1
 WHERE
-	t1."ParentID" = p_1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 
