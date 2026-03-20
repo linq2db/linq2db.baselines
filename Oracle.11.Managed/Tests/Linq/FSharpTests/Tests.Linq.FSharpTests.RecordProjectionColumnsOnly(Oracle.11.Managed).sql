@@ -3,7 +3,10 @@
 SELECT
 	p."PersonID",
 	p."FirstName",
-	p."LastName"
+	p."LastName",
+	'ибн Алёша'
 FROM
 	"Person" p
+WHERE
+	p."PersonID" = 1 AND ROWNUM <= 2
 
