@@ -6,7 +6,7 @@ SELECT
 		ELSE 0
 	END
 FROM
-	"Parent" t2
+	"Parent" employee
 		LEFT JOIN LATERAL (
 			SELECT
 				"a_Children"."ParentID",
@@ -14,8 +14,8 @@ FROM
 			FROM
 				"Child" "a_Children"
 			WHERE
-				t2."ParentID" = "a_Children"."ParentID"
+				employee."ParentID" = "a_Children"."ParentID"
 			LIMIT 1
 		) t1 ON 1=1
-		LEFT JOIN "GrandChild" names_1 ON t2."ParentID" = names_1."ParentID"
+		LEFT JOIN "GrandChild" names_1 ON employee."ParentID" = names_1."ParentID"
 

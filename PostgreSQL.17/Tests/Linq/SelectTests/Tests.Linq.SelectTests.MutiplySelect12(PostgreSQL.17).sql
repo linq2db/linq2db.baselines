@@ -1,12 +1,12 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."ParentID",
-	t1."ChildID",
-	t1."GrandChildID"
+	"grandChild_1"."ParentID",
+	"grandChild_1"."ChildID",
+	"grandChild_1"."GrandChildID"
 FROM
-	"GrandChild" t1
+	"GrandChild" "grandChild_1"
 		CROSS JOIN "Child" child_1
 WHERE
-	t1."ChildID" IS NOT NULL
+	"grandChild_1"."ChildID" IS NOT NULL
 
