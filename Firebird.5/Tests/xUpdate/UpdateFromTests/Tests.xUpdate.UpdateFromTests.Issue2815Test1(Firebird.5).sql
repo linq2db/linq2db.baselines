@@ -3,9 +3,9 @@
 UPDATE
 	"Issue2815Table1"
 SET
-	TRANS_CHANNEL = (
+	TRANS_CHANNEL = Coalesce((
 		SELECT
-			Coalesce("channel_1"."Trans_Channel", 1)
+			"channel_1"."Trans_Channel"
 		FROM
 			"Issue2815Table1" "ext_1"
 				LEFT JOIN "Issue2815Table2" "source_1" ON "source_1".ISO = "ext_1".SRC_BIC
@@ -20,7 +20,7 @@ SET
 				END
 		WHERE
 			"ext_1".NOT_HANDLED = 2 AND "ext_1".TRANS_CHANNEL IS NULL
-	),
+	), 1),
 	IDF = (
 		SELECT
 			"channel_2"."Idf"
