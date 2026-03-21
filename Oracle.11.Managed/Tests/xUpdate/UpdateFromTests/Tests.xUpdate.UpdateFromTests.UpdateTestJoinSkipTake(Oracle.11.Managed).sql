@@ -17,30 +17,39 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * t6."Value1") * :int1,
-			("UpdatedEntities"."Value2" * t6."Value2") * :int2,
-			("UpdatedEntities"."Value3" * t6."Value3") * :int3
+			(t6."Value1" * t6."Value1_1") * :int1,
+			(t6."Value2" * t6."Value2_1") * :int2,
+			(t6."Value3" * t6."Value3_1") * :int3
 		FROM
 			(
 				SELECT
 					t5."Value1",
+					t5."Value1_1",
 					t5."Value2",
+					t5."Value2_1",
 					t5."Value3",
+					t5."Value3_1",
 					t5."id"
 				FROM
 					(
 						SELECT
 							t4."Value1",
+							t4."Value1_1",
 							t4."Value2",
+							t4."Value2_1",
 							t4."Value3",
+							t4."Value3_1",
 							t4."id",
 							ROWNUM as RN
 						FROM
 							(
 								SELECT
-									t_1."Value1",
-									t_1."Value2",
-									t_1."Value3",
+									c_2."Value1",
+									t_1."Value1" as "Value1_1",
+									c_2."Value2",
+									t_1."Value2" as "Value2_1",
+									c_2."Value3",
+									t_1."Value3" as "Value3_1",
 									c_2."id"
 								FROM
 									"UpdatedEntities" c_2
