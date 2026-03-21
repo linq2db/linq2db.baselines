@@ -3,18 +3,18 @@
 UPDATE
 	"gt_s_one"
 SET
-	("col1", "col2", "col3", "col4", "col5", "col6") = (
+	"col1" = "gt_s_one"."col1",
+	"col2" = "gt_s_one"."col2",
+	"col3" = Replace("gt_s_one"."col3", 'auth.', ''),
+	"col4" = "gt_s_one"."col4",
+	"col5" = CASE
+		WHEN "gt_s_one"."col3" = 'empty' THEN '1'
+		ELSE '0'
+	END,
+	"col6" = (
 		SELECT
-			"gt_s_one"."col1",
-			"gt_s_one"."col2",
-			Replace("gt_s_one"."col3", 'auth.', ''),
-			"gt_s_one"."col4",
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN '1'
-				ELSE '0'
-			END,
-			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				WHEN "x_1"."col3" = 'empty' THEN ''
 				ELSE RTrim(Char("y1_1"."id"))
 			END
 		FROM
