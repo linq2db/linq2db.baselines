@@ -1,0 +1,25 @@
+﻿-- SQLite.MS SQLite
+
+INSERT INTO [Issue5427Table]
+(
+	[Id],
+	[ParentId],
+	[Name]
+)
+VALUES
+('BC7B663D-0FDE-4327-8F92-5D8CC3A11D11',NULL,'Item 1'),
+('A948600D-DE21-4F74-8AC2-9516B287076E','BC7B663D-0FDE-4327-8F92-5D8CC3A11D11','Item 2')
+
+
+
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[ParentId],
+	[t1].[Name]
+FROM
+	[Issue5427Table] [t1]
+
+
+
