@@ -21,15 +21,15 @@ SET
 		WHERE
 			"x_2"."id" = "gt_s_one_target"."id"
 	),
-	"col3" = (
+	"col3" = Replace((
 		SELECT
-			Replace("x_3"."col3", 'auth.', '')
+			"x_3"."col3"
 		FROM
 			"gt_s_one" "x_3"
 				LEFT JOIN "access_mode" "y1_3" ON Upper(Replace("x_3"."col3", 'auth.', '')) = Upper("y1_3"."code") OR "x_3"."col3" IS NULL AND "y1_3"."code" IS NULL
 		WHERE
 			"x_3"."id" = "gt_s_one_target"."id"
-	),
+	), 'auth.', ''),
 	"col4" = (
 		SELECT
 			"x_4"."col4"
@@ -39,30 +39,40 @@ SET
 		WHERE
 			"x_4"."id" = "gt_s_one_target"."id"
 	),
-	"col5" = (
-		SELECT
-			CASE
-				WHEN "x_5"."col3" = 'empty' THEN '1'
-				ELSE '0'
-			END
-		FROM
-			"gt_s_one" "x_5"
-				LEFT JOIN "access_mode" "y1_5" ON Upper(Replace("x_5"."col3", 'auth.', '')) = Upper("y1_5"."code") OR "x_5"."col3" IS NULL AND "y1_5"."code" IS NULL
-		WHERE
-			"x_5"."id" = "gt_s_one_target"."id"
-	),
-	"col6" = (
-		SELECT
-			CASE
-				WHEN "x_6"."col3" = 'empty' THEN ''
-				ELSE "y1_6"."id"
-			END
-		FROM
-			"gt_s_one" "x_6"
-				LEFT JOIN "access_mode" "y1_6" ON Upper(Replace("x_6"."col3", 'auth.', '')) = Upper("y1_6"."code") OR "x_6"."col3" IS NULL AND "y1_6"."code" IS NULL
-		WHERE
-			"x_6"."id" = "gt_s_one_target"."id"
-	)
+	"col5" = CASE
+		WHEN (
+			SELECT
+				"x_5"."col3"
+			FROM
+				"gt_s_one" "x_5"
+					LEFT JOIN "access_mode" "y1_5" ON Upper(Replace("x_5"."col3", 'auth.', '')) = Upper("y1_5"."code") OR "x_5"."col3" IS NULL AND "y1_5"."code" IS NULL
+			WHERE
+				"x_5"."id" = "gt_s_one_target"."id"
+		) = 'empty'
+			THEN '1'
+		ELSE '0'
+	END,
+	"col6" = CASE
+		WHEN (
+			SELECT
+				"x_6"."col3"
+			FROM
+				"gt_s_one" "x_6"
+					LEFT JOIN "access_mode" "y1_6" ON Upper(Replace("x_6"."col3", 'auth.', '')) = Upper("y1_6"."code") OR "x_6"."col3" IS NULL AND "y1_6"."code" IS NULL
+			WHERE
+				"x_6"."id" = "gt_s_one_target"."id"
+		) = 'empty'
+			THEN ''
+		ELSE (
+			SELECT
+				"y1_7"."id"
+			FROM
+				"gt_s_one" "x_7"
+					LEFT JOIN "access_mode" "y1_7" ON Upper(Replace("x_7"."col3", 'auth.', '')) = Upper("y1_7"."code") OR "x_7"."col3" IS NULL AND "y1_7"."code" IS NULL
+			WHERE
+				"x_7"."id" = "gt_s_one_target"."id"
+		)
+	END
 WHERE
 	EXISTS(
 		SELECT
