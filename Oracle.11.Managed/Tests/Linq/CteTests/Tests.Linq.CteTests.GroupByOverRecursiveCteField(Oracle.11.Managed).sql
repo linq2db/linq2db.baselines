@@ -29,11 +29,11 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			Coalesce(t1."ParentID", -1) as "Key_1"
+			Nvl(t1."ParentID", -1) as "Key_1"
 		FROM
 			"cte" t1
 	) m_1
-		INNER JOIN "cte" d ON m_1."Key_1" = Coalesce(d."ParentID", -1)
+		INNER JOIN "cte" d ON m_1."Key_1" = Nvl(d."ParentID", -1)
 
 -- Oracle.11.Managed Oracle11
 
@@ -59,7 +59,7 @@ AS
 		ct."GrandChildID" <= 10
 )
 SELECT DISTINCT
-	Coalesce(t1."ParentID", -1)
+	Nvl(t1."ParentID", -1)
 FROM
 	"cte" t1
 

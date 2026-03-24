@@ -14,8 +14,8 @@ FROM
 			gr."ParentID" < 4
 		UNION ALL
 		SELECT
-			Coalesce(g_1."ParentID", 0) as "Key_1",
-			Coalesce(g_1."GrandChildID", 0) as "ChildID"
+			Nvl(g_1."ParentID", 0) as "Key_1",
+			Nvl(g_1."GrandChildID", 0) as "ChildID"
 		FROM
 			"GrandChild" g_1
 		WHERE

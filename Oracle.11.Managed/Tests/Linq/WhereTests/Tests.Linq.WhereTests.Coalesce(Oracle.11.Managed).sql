@@ -9,6 +9,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND Coalesce(p."MiddleName", 'None') = 'None' AND
+	p."PersonID" = 1 AND Nvl(p."MiddleName", 'None') = 'None' AND
 	p."FirstName" = 'John'
 
