@@ -3,34 +3,35 @@
 UPDATE
 	"LinqDataTypes"
 SET
-	"BoolValue" = (
-		SELECT
-			CASE
-				WHEN NOT EXISTS(
+	"BoolValue" = CASE
+		WHEN NOT EXISTS(
+			SELECT
+				*
+			FROM
+				"Parent" "x_1"
+			WHERE
+				(
 					SELECT
-						*
+						"t1".ID
 					FROM
-						"Parent" "x_2"
+						(
+							SELECT DISTINCT
+								"a_Table1_1".ID,
+								"a_Table1_1"."BoolValue"
+							FROM
+								"Parent" "x_2"
+									INNER JOIN "LinqDataTypes" "a_Table1_1" ON "x_2"."ParentID" = "a_Table1_1".ID
+							WHERE
+								"x_2"."ParentID" IN (10000, 20000)
+						) "t1"
 					WHERE
-						"t1".ID = "x_2"."ParentID" AND ("x_2"."Value1" <> 1 OR "x_2"."Value1" IS NULL)
-				)
-					THEN '1'
-				ELSE '0'
-			END
-		FROM
-			(
-				SELECT DISTINCT
-					"a_Table1_1".ID,
-					"a_Table1_1"."BoolValue"
-				FROM
-					"Parent" "x_1"
-						INNER JOIN "LinqDataTypes" "a_Table1_1" ON "x_1"."ParentID" = "a_Table1_1".ID
-				WHERE
-					"x_1"."ParentID" IN (10000, 20000)
-			) "t1"
-		WHERE
-			"LinqDataTypes".ID = "t1".ID AND "LinqDataTypes"."BoolValue" = "t1"."BoolValue"
-	)
+						"LinqDataTypes".ID = "t1".ID AND "LinqDataTypes"."BoolValue" = "t1"."BoolValue"
+				) = "x_1"."ParentID" AND
+				("x_1"."Value1" <> 1 OR "x_1"."Value1" IS NULL)
+		)
+			THEN '1'
+		ELSE '0'
+	END
 WHERE
 	EXISTS(
 		SELECT

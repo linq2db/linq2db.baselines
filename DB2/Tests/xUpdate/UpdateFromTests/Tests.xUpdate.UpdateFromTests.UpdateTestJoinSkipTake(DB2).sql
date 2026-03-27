@@ -15,15 +15,18 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t2"."Value1") * @int1,
-			("UpdatedEntities"."Value2" * "t2"."Value2") * @int2,
-			("UpdatedEntities"."Value3" * "t2"."Value3") * @int3
+			("t2"."Value1" * "t2"."Value1_1") * @int1,
+			("t2"."Value2" * "t2"."Value2_1") * @int2,
+			("t2"."Value3" * "t2"."Value3_1") * @int3
 		FROM
 			(
 				SELECT
-					"t_1"."Value1",
-					"t_1"."Value2",
-					"t_1"."Value3",
+					"c_2"."Value1",
+					"t_1"."Value1" as "Value1_1",
+					"c_2"."Value2",
+					"t_1"."Value2" as "Value2_1",
+					"c_2"."Value3",
+					"t_1"."Value3" as "Value3_1",
 					"c_2"."id"
 				FROM
 					"UpdatedEntities" "c_2"

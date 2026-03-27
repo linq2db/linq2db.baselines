@@ -3,29 +3,30 @@
 UPDATE
 	"LinqDataTypes"
 SET
-	"BoolValue" = (
+	"BoolValue" = NOT EXISTS(
 		SELECT
-			NOT EXISTS(
-				SELECT
-					*
-				FROM
-					"Parent" "x_2"
-				WHERE
-					"t1".ID = "x_2"."ParentID" AND ("x_2"."Value1" <> 1 OR "x_2"."Value1" IS NULL)
-			)
+			*
 		FROM
-			(
-				SELECT DISTINCT
-					"a_Table1_1".ID,
-					"a_Table1_1"."BoolValue"
-				FROM
-					"Parent" "x_1"
-						INNER JOIN "LinqDataTypes" "a_Table1_1" ON "x_1"."ParentID" = "a_Table1_1".ID
-				WHERE
-					"x_1"."ParentID" IN (10000, 20000)
-			) "t1"
+			"Parent" "x_1"
 		WHERE
-			"LinqDataTypes".ID = "t1".ID AND "LinqDataTypes"."BoolValue" = "t1"."BoolValue"
+			(
+				SELECT
+					"t1".ID
+				FROM
+					(
+						SELECT DISTINCT
+							"a_Table1_1".ID,
+							"a_Table1_1"."BoolValue"
+						FROM
+							"Parent" "x_2"
+								INNER JOIN "LinqDataTypes" "a_Table1_1" ON "x_2"."ParentID" = "a_Table1_1".ID
+						WHERE
+							"x_2"."ParentID" IN (10000, 20000)
+					) "t1"
+				WHERE
+					"LinqDataTypes".ID = "t1".ID AND "LinqDataTypes"."BoolValue" = "t1"."BoolValue"
+			) = "x_1"."ParentID" AND
+			("x_1"."Value1" <> 1 OR "x_1"."Value1" IS NULL)
 	)
 WHERE
 	EXISTS(

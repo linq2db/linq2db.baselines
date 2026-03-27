@@ -9,12 +9,6 @@ WHERE
 		SELECT
 			"r"."One"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird
@@ -28,12 +22,6 @@ WHERE
 		SELECT
 			"r"."Zero"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird
@@ -47,12 +35,6 @@ WHERE
 		SELECT
 			"r"."Null"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird
@@ -129,12 +111,6 @@ WHERE
 		SELECT
 			"r"."One"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird
@@ -148,12 +124,6 @@ WHERE
 		SELECT
 			"r"."Zero"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird
@@ -167,12 +137,6 @@ WHERE
 		SELECT
 			"r"."Null"
 		FROM rdb$database
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM rdb$database
-			)
 	)
 
 -- Firebird.2.5 Firebird

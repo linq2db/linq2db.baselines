@@ -13,9 +13,9 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * t_1."Value1") * :int1,
-			("UpdatedEntities"."Value2" * t_1."Value2") * :int2,
-			("UpdatedEntities"."Value3" * t_1."Value3") * :int3
+			(c_2."Value1" * t_1."Value1") * :int1,
+			(c_2."Value2" * t_1."Value2") * :int2,
+			(c_2."Value3" * t_1."Value3") * :int3
 		FROM
 			"UpdatedEntities" c_2
 				INNER JOIN "NewEntities" t_1 ON t_1."id" = c_2."id"
