@@ -7,7 +7,7 @@ SELECT
 	c_1."ChildID"
 FROM
 	"Parent" p
-		RIGHT JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID" AND Coalesce(p."Value1", 0) = c_1."ParentID"
+		RIGHT JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID" AND Nvl(p."Value1", 0) = c_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
 

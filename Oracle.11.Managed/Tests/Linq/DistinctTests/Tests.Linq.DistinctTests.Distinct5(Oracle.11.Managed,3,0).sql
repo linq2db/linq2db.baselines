@@ -3,7 +3,7 @@ DECLARE @Value1 Int32
 SET     @Value1 = 4
 
 SELECT DISTINCT
-	Coalesce(p."Value1", MOD(p."ParentID", 2)),
+	Nvl(p."Value1", MOD(p."ParentID", 2)),
 	:Value1
 FROM
 	"Parent" p
@@ -21,7 +21,7 @@ DECLARE @Value1 Int32
 SET     @Value1 = 4
 
 SELECT DISTINCT
-	Coalesce(p."Value1", MOD(p."ParentID", 2)),
+	Nvl(p."Value1", MOD(p."ParentID", 2)),
 	:Value1
 FROM
 	"Parent" p

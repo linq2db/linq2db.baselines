@@ -2,9 +2,9 @@
 
 SELECT
 	CASE
-		WHEN t."EnumValue" = 'F' THEN CAST('First' AS NVarChar2(255))
-		WHEN t."EnumValue" = 'S' THEN CAST('Second' AS NVarChar2(255))
-		WHEN t."EnumValue" = 'T' THEN CAST('Third' AS NVarChar2(255))
+		WHEN t."EnumValue" = 'F' THEN To_NChar('First')
+		WHEN t."EnumValue" = 'S' THEN To_NChar('Second')
+		WHEN t."EnumValue" = 'T' THEN To_NChar('Third')
 		ELSE t."EnumValue"
 	END
 FROM
