@@ -40,6 +40,6 @@ SELECT
 FROM
 	[InfeedAdvicePositionDTO] [infeed]
 WHERE
-	(REGEXP_LIKE([infeed].[Text], 'aa.*', ''))
+	REGEXP_LIKE([infeed].[Text], 'aa.*')
 LIMIT 2
 
