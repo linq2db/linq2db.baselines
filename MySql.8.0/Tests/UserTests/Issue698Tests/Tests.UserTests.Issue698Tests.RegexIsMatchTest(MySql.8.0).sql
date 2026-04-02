@@ -40,6 +40,6 @@ SELECT
 FROM
 	`InfeedAdvicePositionDTO` `infeed`
 WHERE
-	REGEXP_LIKE(`infeed`.`Text`, 'aa.*')
+	`infeed`.`Text` REGEXP 'aa.*'
 LIMIT 2
 
