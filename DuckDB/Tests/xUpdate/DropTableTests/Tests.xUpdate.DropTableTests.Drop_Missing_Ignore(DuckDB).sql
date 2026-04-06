@@ -1,0 +1,4 @@
+﻿-- DuckDB
+
+DROP TABLE IF EXISTS "Table"
+

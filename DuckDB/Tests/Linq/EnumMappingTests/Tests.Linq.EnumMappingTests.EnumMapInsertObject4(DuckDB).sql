@@ -1,0 +1,48 @@
+﻿-- DuckDB
+DECLARE $p  -- Int32
+SET     $p = 102
+
+DELETE FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID < CAST($p AS INTEGER)
+
+-- DuckDB
+DECLARE $Id  -- Int32
+SET     $Id = 101
+DECLARE $TestField  -- Int64
+SET     $TestField = 12
+DECLARE $Int32Field  -- Object
+SET     $Int32Field = NULL
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	BigIntValue,
+	IntValue
+)
+VALUES
+(
+	CAST($Id AS INTEGER),
+	CAST($TestField AS BIGINT),
+	CAST($Int32Field AS INTEGER)
+)
+
+-- DuckDB
+
+SELECT
+	COUNT(*)
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 101 AND r.BigIntValue = 12
+
+-- DuckDB
+DECLARE $p  -- Int32
+SET     $p = 102
+
+DELETE FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID < CAST($p AS INTEGER)
+

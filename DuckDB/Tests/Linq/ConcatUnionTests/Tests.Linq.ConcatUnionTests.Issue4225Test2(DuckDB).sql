@@ -1,0 +1,24 @@
+﻿-- DuckDB
+
+SELECT
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender,
+	CAST(NULL AS INTEGER),
+	CAST(NULL AS VARCHAR)
+FROM
+	Person x
+UNION ALL
+SELECT
+	CAST(NULL AS VARCHAR),
+	CAST(NULL AS INTEGER),
+	CAST(NULL AS VARCHAR),
+	CAST(NULL AS VARCHAR),
+	CAST(NULL AS VARCHAR(1)),
+	x_1.PersonID,
+	x_1.Diagnosis
+FROM
+	Patient x_1
+

@@ -1,0 +1,42 @@
+﻿-- DuckDB
+DECLARE $p  -- Int32
+SET     $p = 102
+
+DELETE FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID < CAST($p AS INTEGER)
+
+-- DuckDB
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	BigIntValue
+)
+VALUES
+(
+	101,
+	12
+)
+
+-- DuckDB
+
+SELECT
+	entity.ID,
+	entity.BigIntValue,
+	entity.IntValue
+FROM
+	LinqDataTypes entity
+WHERE
+	entity.BigIntValue = 12
+
+-- DuckDB
+DECLARE $p  -- Int32
+SET     $p = 102
+
+DELETE FROM
+	LinqDataTypes r
+WHERE
+	r.ID >= 101 AND r.ID < CAST($p AS INTEGER)
+

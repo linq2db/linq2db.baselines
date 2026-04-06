@@ -1,0 +1,32 @@
+﻿-- DuckDB
+DECLARE $menuId  -- Int32
+SET     $menuId = 1
+
+WITH RECURSIVE cteQueryable (Id1)
+AS
+(
+	SELECT
+		item_1.Id
+	FROM
+		Issue4968Item item_1
+	WHERE
+		item_1.MenuId = CAST($menuId AS INTEGER)
+	UNION ALL
+	SELECT
+		item_2.Id
+	FROM
+		Issue4968Item item_2
+			INNER JOIN cteQueryable cte ON item_2.ParentItemId = cte.Id1
+)
+DELETE FROM
+	Issue4968Item i
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			cteQueryable tuple
+		WHERE
+			tuple.Id1 = i.Id
+	)
+

@@ -1,0 +1,72 @@
+﻿-- DuckDB
+DECLARE $Id  -- Int32
+SET     $Id = 1
+DECLARE $Name NVarChar(3) -- String
+SET     $Name = 'Max'
+DECLARE $Age  -- Int32
+SET     $Age = 20
+DECLARE $Gender NVarChar(4) -- String
+SET     $Gender = 'Male'
+
+INSERT INTO PR_1598_Insert_Enum_Table
+(
+	Id,
+	Name,
+	Age,
+	Gender
+)
+VALUES
+(
+	CAST($Id AS INTEGER),
+	CAST($Name AS VARCHAR),
+	CAST($Age AS INTEGER),
+	CAST($Gender AS VARCHAR)
+)
+
+-- DuckDB
+
+SELECT
+	t.Id,
+	t.Name,
+	t.Age,
+	t.Gender
+FROM
+	PR_1598_Insert_Enum_Table t
+WHERE
+	t.Id = 1
+LIMIT 1
+
+-- DuckDB
+DECLARE $Id  -- Int32
+SET     $Id = 2
+DECLARE $Name NVarChar(5) -- String
+SET     $Name = 'Jenny'
+DECLARE $Age  -- Int32
+SET     $Age = 25
+
+INSERT INTO PR_1598_Insert_Enum_Table
+(
+	Id,
+	Name,
+	Age
+)
+VALUES
+(
+	CAST($Id AS INTEGER),
+	CAST($Name AS VARCHAR),
+	CAST($Age AS INTEGER)
+)
+
+-- DuckDB
+
+SELECT
+	t.Id,
+	t.Name,
+	t.Age,
+	t.Gender
+FROM
+	PR_1598_Insert_Enum_Table t
+WHERE
+	t.Id = 2
+LIMIT 1
+

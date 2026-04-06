@@ -1,0 +1,43 @@
+﻿-- DuckDB
+DECLARE $Gender NVarChar(1) -- String
+SET     $Gender = 'M'
+DECLARE $FirstName NVarChar(12) -- String
+SET     $FirstName = 'FirstName307'
+DECLARE $MiddleName  -- Object
+SET     $MiddleName = NULL
+DECLARE $LastName NVarChar(11) -- String
+SET     $LastName = 'LastName307'
+
+INSERT INTO Person
+(
+	Gender,
+	FirstName,
+	MiddleName,
+	LastName
+)
+VALUES
+(
+	CAST($Gender AS VARCHAR),
+	CAST($FirstName AS VARCHAR),
+	CAST($MiddleName AS VARCHAR),
+	CAST($LastName AS VARCHAR)
+)
+RETURNING 
+	PersonID
+
+-- DuckDB
+DECLARE $id  -- Int32
+SET     $id = 5
+
+SELECT
+	t1.PersonID,
+	t1.Gender,
+	t1.FirstName,
+	t1.MiddleName,
+	t1.LastName
+FROM
+	Person t1
+WHERE
+	t1.PersonID = CAST($id AS INTEGER)
+LIMIT 1
+
