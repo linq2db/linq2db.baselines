@@ -11,12 +11,14 @@ AS
 		[c_1].[ParentID] % 2 = 0
 )
 UPDATE
-	[c_2]
+	[u]
 SET
-	[c_2].[ParentID] = [c_2].[ChildID]
+	[u].[ParentID] = [u].[ChildID]
 FROM
-	[CteChild] [c_2]
-		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
+	[CteChild] [u],
+	[CTE_1] [ct]
+WHERE
+	[ct].[ParentID] = [u].[ParentID]
 
 -- SqlServer.2005.MS SqlServer.2005
 

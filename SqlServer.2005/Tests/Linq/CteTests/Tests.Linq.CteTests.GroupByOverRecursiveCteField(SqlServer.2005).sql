@@ -17,7 +17,7 @@ AS
 	FROM
 		[GrandChild] [gc]
 			INNER JOIN [Parent] [p] ON [p].[ParentID] = [gc].[ParentID]
-			INNER JOIN [cte] [ct] ON [ct].[ChildID] = [gc].[ChildID]
+			INNER JOIN [cte] [ct] ON [ct].[ChildID] = [gc].[ChildID] OR [ct].[ChildID] IS NULL AND [gc].[ChildID] IS NULL
 	WHERE
 		[ct].[GrandChildID] <= 10
 )
@@ -33,7 +33,7 @@ FROM
 		FROM
 			[cte] [t1]
 	) [m_1]
-		INNER JOIN [cte] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
+		INNER JOIN [cte] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 -- SqlServer.2005
 
@@ -54,7 +54,7 @@ AS
 	FROM
 		[GrandChild] [gc]
 			INNER JOIN [Parent] [p] ON [p].[ParentID] = [gc].[ParentID]
-			INNER JOIN [cte] [ct] ON [ct].[ChildID] = [gc].[ChildID]
+			INNER JOIN [cte] [ct] ON [ct].[ChildID] = [gc].[ChildID] OR [ct].[ChildID] IS NULL AND [gc].[ChildID] IS NULL
 	WHERE
 		[ct].[GrandChildID] <= 10
 )
