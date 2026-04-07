@@ -36,9 +36,15 @@ AS
 			INNER JOIN `CTE_2` `t_1` ON `t_1`.`ParentId` = `t3`.`Id`
 )
 SELECT
-	`t4`.`Id`,
-	`t4`.`Level_1`
+	`t5`.`Id`,
+	`t5`.`Level_1`
 FROM
-	`hierarchyDown` `t4`
-		INNER JOIN `HierarchyTree` `data1` ON `data1`.`Id` = `t4`.`Id`
+	(
+		SELECT
+			`t4`.`Id`,
+			`t4`.`Level_1`
+		FROM
+			`hierarchyDown` `t4`
+	) `t5`
+		INNER JOIN `HierarchyTree` `data1` ON `data1`.`Id` = `t5`.`Id`
 
