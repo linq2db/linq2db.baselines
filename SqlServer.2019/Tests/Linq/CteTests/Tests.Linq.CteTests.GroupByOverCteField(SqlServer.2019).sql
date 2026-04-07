@@ -22,7 +22,7 @@ FROM
 		FROM
 			[CTE_1] [t1]
 	) [m_1]
-		INNER JOIN [CTE_1] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
+		INNER JOIN [CTE_1] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 -- SqlServer.2019
 
