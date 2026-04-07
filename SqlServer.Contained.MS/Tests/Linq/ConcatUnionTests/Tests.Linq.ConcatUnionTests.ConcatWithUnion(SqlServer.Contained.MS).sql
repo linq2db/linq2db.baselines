@@ -1,7 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t1].[ParentID]
+	[t2].[ParentID]
 FROM
 	(
 		SELECT
@@ -13,20 +13,20 @@ FROM
 			[c_2].[ParentID]
 		FROM
 			[Parent] [c_2]
-	) [t1]
-UNION ALL
-SELECT
-	[t2].[ParentID]
-FROM
-	(
+		UNION ALL
 		SELECT
-			[c_3].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [c_3]
-		UNION
-		SELECT
-			[c_4].[ParentID]
-		FROM
-			[Parent] [c_4]
+			(
+				SELECT
+					[c_3].[ParentID]
+				FROM
+					[Parent] [c_3]
+				UNION
+				SELECT
+					[c_4].[ParentID]
+				FROM
+					[Parent] [c_4]
+			) [t1]
 	) [t2]
 

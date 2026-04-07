@@ -66,16 +66,30 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
-	[CTE_1] [q]
+	(
+		SELECT
+			[t1].[RowNumber],
+			[t1].[Cursor_1],
+			[t1].[Data_ServiceDate] as [ServiceDate],
+			[t1].[Data_Value] as [Value_1]
+		FROM
+			[CTE_1] [t1]
+	) [q]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[CTE_1] [c_1]
+			(
+				SELECT
+					[t2].[Cursor_1],
+					[t2].[RowNumber]
+				FROM
+					[CTE_1] [t2]
+			) [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
@@ -109,16 +123,30 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
-	[CTE_1] [q]
+	(
+		SELECT
+			[t1].[RowNumber],
+			[t1].[Cursor_1],
+			[t1].[Data_ServiceDate] as [ServiceDate],
+			[t1].[Data_Value] as [Value_1]
+		FROM
+			[CTE_1] [t1]
+	) [q]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[CTE_1] [c_1]
+			(
+				SELECT
+					[t2].[Cursor_1],
+					[t2].[RowNumber]
+				FROM
+					[CTE_1] [t2]
+			) [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
@@ -152,16 +180,30 @@ AS
 SELECT
 	[q].[RowNumber],
 	[q].[Cursor_1],
-	[q].[Data_ServiceDate],
-	[q].[Data_Value]
+	[q].[ServiceDate],
+	[q].[Value_1]
 FROM
-	[CTE_1] [q]
+	(
+		SELECT
+			[t1].[RowNumber],
+			[t1].[Cursor_1],
+			[t1].[Data_ServiceDate] as [ServiceDate],
+			[t1].[Data_Value] as [Value_1]
+		FROM
+			[CTE_1] [t1]
+	) [q]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[CTE_1] [c_1]
+			(
+				SELECT
+					[t2].[Cursor_1],
+					[t2].[RowNumber]
+				FROM
+					[CTE_1] [t2]
+			) [c_1]
 		WHERE
 			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
