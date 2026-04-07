@@ -18,7 +18,14 @@ SELECT
 	[p_1].[CategoryName],
 	[p_1].[UnitPrice]
 FROM
-	[ProductAndCategoryNamesOverTenDollars] [p_1]
+	(
+		SELECT
+			[t1].[CategoryName],
+			[t1].[UnitPrice],
+			[t1].[ProductName]
+		FROM
+			[ProductAndCategoryNamesOverTenDollars] [t1]
+	) [p_1]
 ORDER BY
 	[p_1].[CategoryName],
 	[p_1].[UnitPrice],
