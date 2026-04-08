@@ -21,7 +21,12 @@ WITH CTE_1 AS
 SELECT
 	t1.EnumValue
 FROM
-	CTE_1 t1
+	(
+		SELECT
+			r.EnumValue as EnumValue
+		FROM
+			CTE_1 r
+	) t1
 ORDER BY
 	t1.EnumValue
 

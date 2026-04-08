@@ -32,17 +32,30 @@ WITH RECURSIVE cte AS
 			INNER JOIN cte parent ON r_1.Id = parent.Id + 2
 )
 SELECT
-	t1.Id,
-	t1.Byte,
-	t1.ByteN,
-	t1.Guid,
-	t1.GuidN,
-	t1.Enum,
-	t1.EnumN,
-	t1.Bool,
-	t1.BoolN
+	t2.Id,
+	t2.Byte,
+	t2.ByteN,
+	t2.Guid,
+	t2.GuidN,
+	t2.Enum,
+	t2.EnumN,
+	t2.Bool,
+	t2.BoolN
 FROM
-	cte t1
+	(
+		SELECT
+			t1.Id as Id,
+			t1.Byte as Byte,
+			t1.ByteN as ByteN,
+			t1.Guid as Guid,
+			t1.GuidN as GuidN,
+			t1.Enum as Enum,
+			t1.EnumN as EnumN,
+			t1.Bool as Bool,
+			t1.BoolN as BoolN
+		FROM
+			cte t1
+	) t2
 ORDER BY
-	t1.Id
+	t2.Id
 
