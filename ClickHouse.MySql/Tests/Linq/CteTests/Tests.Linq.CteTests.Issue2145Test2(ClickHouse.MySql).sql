@@ -21,7 +21,16 @@ SELECT
 	p.MiddleName,
 	p.Gender
 FROM
-	CTE_1 p
+	(
+		SELECT
+			t2.ID as ID,
+			t2.FirstName as FirstName,
+			t2.LastName as LastName,
+			t2.MiddleName as MiddleName,
+			t2.Gender as Gender
+		FROM
+			CTE_1 t2
+	) p
 WHERE
 	p.ID = 11
 

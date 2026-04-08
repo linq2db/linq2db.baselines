@@ -24,10 +24,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t2.Id as Id
+			t3.Id as Id
 		FROM
-			cte t2
-				INNER JOIN Patient p_1 ON t2.Id = p_1.PersonID
+			(
+				SELECT
+					t2.Id as Id
+				FROM
+					cte t2
+			) t3
+				INNER JOIN Patient p_1 ON t3.Id = p_1.PersonID
 	) m_1
 		INNER JOIN Person d ON d.PersonID = m_1.Id
 
@@ -50,6 +55,11 @@ WITH RECURSIVE cte AS
 SELECT
 	r.Id
 FROM
-	cte r
+	(
+		SELECT
+			t2.Id as Id
+		FROM
+			cte t2
+	) r
 		INNER JOIN Patient p_1 ON r.Id = p_1.PersonID
 

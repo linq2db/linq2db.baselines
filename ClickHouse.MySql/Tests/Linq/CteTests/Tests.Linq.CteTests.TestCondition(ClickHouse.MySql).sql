@@ -12,7 +12,13 @@ SELECT
 	t.ParentID,
 	t.ChildID
 FROM
-	CTE_1 t
+	(
+		SELECT
+			t2.ChildID as ChildID,
+			t2.ParentID as ParentID
+		FROM
+			CTE_1 t2
+	) t
 WHERE
 	t.ChildID = 1
 
