@@ -9,12 +9,6 @@ WHERE
 		SELECT
 			`r`.`One`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -28,12 +22,6 @@ WHERE
 		SELECT
 			`r`.`Zero`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -47,12 +35,6 @@ WHERE
 		SELECT
 			`r`.`Null`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -129,12 +111,6 @@ WHERE
 		SELECT
 			`r`.`One`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -148,12 +124,6 @@ WHERE
 		SELECT
 			`r`.`Zero`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -167,12 +137,6 @@ WHERE
 		SELECT
 			`r`.`Null`
 		FROM DUAL
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM DUAL
-			)
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
