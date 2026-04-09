@@ -20,15 +20,24 @@ AS
 		"Person" person_1
 )
 SELECT
-	x."entry_FirstName",
-	x."entry_ID",
-	x."entry_LastName",
-	x."entry_MiddleName",
-	x."entry_Gender"
+	x."FirstName",
+	x.ID,
+	x."LastName",
+	x."MiddleName",
+	x."Gender"
 FROM
-	CTE_1 x
+	(
+		SELECT
+			t1."entry_ID" as ID,
+			t1."entry_FirstName" as "FirstName",
+			t1."entry_LastName" as "LastName",
+			t1."entry_MiddleName" as "MiddleName",
+			t1."entry_Gender" as "Gender"
+		FROM
+			CTE_1 t1
+	) x
 WHERE
-	x."entry_ID" = 1
+	x.ID = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
