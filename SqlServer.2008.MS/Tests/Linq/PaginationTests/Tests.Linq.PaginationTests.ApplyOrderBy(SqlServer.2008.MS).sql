@@ -77,14 +77,13 @@ SELECT
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([x_1].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
-			[x_1].[RowNumber]
+			[h].[RowNumber]
 		FROM
-			[pagination_cte] [x_1]
+			[pagination_cte] [h]
 		WHERE
-			[x_1].[Data_Id] = @Id
+			[h].[Data_Id] = @Id
 	) [page]
-		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST((CAST([page].[RowNumber] - 1 AS Int) / 20) * 20 + 1 AS BigInt) AND CAST((CAST([page].[RowNumber] - 1 AS Int) / 20 + 1) * 20 AS BigInt)
 ORDER BY
 	[t1].[RowNumber]
 
@@ -121,14 +120,13 @@ SELECT
 FROM
 	(
 		SELECT TOP (@take)
-			CAST([x_1].[RowNumber] - 1 AS Int) / 20 + 1 as [c1],
-			[x_1].[RowNumber]
+			[h].[RowNumber]
 		FROM
-			[pagination_cte] [x_1]
+			[pagination_cte] [h]
 		WHERE
-			[x_1].[Data_Id] = @Id
+			[h].[Data_Id] = @Id
 	) [page]
-		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST((CAST([page].[RowNumber] - 1 AS Int) / 20) * 20 + 1 AS BigInt) AND CAST((CAST([page].[RowNumber] - 1 AS Int) / 20 + 1) * 20 AS BigInt)
 ORDER BY
 	[t1].[RowNumber]
 
