@@ -154,6 +154,12 @@ SELECT
 			"wp_1"."WarehouseId" = "source"."WarehouseId"
 	)
 FROM
-	CTE_1 "source"
+	(
+		SELECT
+			"t1"."ProductId",
+			"t1"."WarehouseId"
+		FROM
+			CTE_1 "t1"
+	) "source"
 		INNER JOIN "Issue4717ProductIncludedProductMapping" "includedProductMapping" ON "source"."ProductId" = "includedProductMapping"."ProductId"
 
