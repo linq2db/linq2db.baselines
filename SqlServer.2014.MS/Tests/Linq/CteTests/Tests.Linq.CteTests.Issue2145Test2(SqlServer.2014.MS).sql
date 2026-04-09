@@ -29,7 +29,16 @@ SELECT
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
-	[CTE_1] [p]
+	(
+		SELECT
+			[t2].[ID],
+			[t2].[FirstName],
+			[t2].[LastName],
+			[t2].[MiddleName],
+			[t2].[Gender]
+		FROM
+			[CTE_1] [t2]
+	) [p]
 WHERE
 	[p].[ID] = 11
 

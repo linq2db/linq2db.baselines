@@ -22,10 +22,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[Id]
+			[t3].[Id]
 		FROM
-			[cte] [t2]
-				INNER JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
+			(
+				SELECT
+					[t2].[Id]
+				FROM
+					[cte] [t2]
+			) [t3]
+				INNER JOIN [StackOverflowTable4] [r3_1] ON [t3].[Id] = [r3_1].[Id]
 		WHERE
 			[r3_1].[Value] IS NOT NULL
 	) [m_1]
@@ -49,10 +54,15 @@ AS
 			INNER JOIN [StackOverflowTable3] [r3] ON [t1].[Id] = [r3].[Value2]
 )
 SELECT
-	[t2].[Id]
+	[t3].[Id]
 FROM
-	[cte] [t2]
-		INNER JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
+	(
+		SELECT
+			[t2].[Id]
+		FROM
+			[cte] [t2]
+	) [t3]
+		INNER JOIN [StackOverflowTable4] [r3_1] ON [t3].[Id] = [r3_1].[Id]
 WHERE
 	[r3_1].[Value] IS NOT NULL
 
