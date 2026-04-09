@@ -179,18 +179,18 @@ SELECT
 	[m1].[CategoryDimensions],
 	[m1].[CategoryQuality],
 	[m1].[CategoryTemperature],
-	[i1].[IR_Id],
-	[i1].[IR_BatchNumber],
-	[i1].[IR_BundleUnit],
-	[i1].[IR_ProductStatus],
-	[i1].[IR_CustomField1],
-	[i1].[IR_CustomField2],
-	[i1].[IR_CustomField3],
+	[i1_1].[Id],
+	[i1_1].[BatchNumber],
+	[i1_1].[BundleUnit],
+	[i1_1].[ProductStatus],
+	[i1_1].[CustomField1],
+	[i1_1].[CustomField2],
+	[i1_1].[CustomField3],
 	[a1].[Status],
 	[a1].[CategoryABC],
 	[a1].[HeightClass],
-	[i1].[Count_1],
-	[i1].[CountLocked],
+	[i1_1].[Count_1],
+	[i1_1].[CountLocked],
 	EXISTS(
 		SELECT
 			*
@@ -203,15 +203,21 @@ SELECT
 		SELECT
 			*
 		FROM
-			[CTE_1] [x_2]
+			(
+				SELECT
+					[t1].[IR_ResourceID] as [ResourceID],
+					[t1].[IR_InfeedAdviceID] as [InfeedAdviceID]
+				FROM
+					[CTE_1] [t1]
+			) [x_2]
 		WHERE
-			[x_2].[IR_ResourceID] = [c1].[Id] AND ([x_2].[IR_InfeedAdviceID] IS NULL OR EXISTS(
+			[x_2].[ResourceID] = [c1].[Id] AND ([x_2].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_2].[IR_InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
+					[y].[Id] = [x_2].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 1
 			))
 	)
 FROM
@@ -221,8 +227,36 @@ FROM
 		LEFT JOIN [StorageShelfDTO] [a1] ON [x].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [b1].[ResourceID]
-		LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [b1].[ResourceID] AND [i1].[RN] = 1
-		LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
+		LEFT JOIN (
+			SELECT
+				[i1].[Count_1],
+				[i1].[IR_Id] as [Id],
+				[i1].[IR_BatchNumber] as [BatchNumber],
+				[i1].[IR_BundleUnit] as [BundleUnit],
+				[i1].[IR_ProductStatus] as [ProductStatus],
+				[i1].[IR_CustomField1] as [CustomField1],
+				[i1].[IR_CustomField2] as [CustomField2],
+				[i1].[IR_CustomField3] as [CustomField3],
+				[i1].[CountLocked],
+				[i1].[IR_MaterialID] as [c1],
+				[i1].[IR_ResourceID] as [c2]
+			FROM
+				[CTE_1] [i1]
+			WHERE
+				[i1].[RN] = 1
+		) [i1_1] ON [i1_1].[c2] = [b1].[ResourceID]
+		LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1_1].[c1]
+		LEFT JOIN [StorageShelfDTO] [a2] ON [x].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
+		LEFT JOIN (
+			SELECT
+				[i2].[IR_MaterialID] as [c1],
+				[i2].[IR_ResourceID] as [c2]
+			FROM
+				[CTE_1] [i2]
+			WHERE
+				[i2].[RN] = 1
+		) [i2_1] ON [i2_1].[c2] = [b2].[ResourceID]
 
 -- SQLite.Classic SQLite
 

@@ -14,15 +14,22 @@ AS
 		[p].[UnitPrice] > 10
 )
 SELECT
-	[t1].[ProductName],
-	[t1].[CategoryName],
-	[t1].[UnitPrice]
+	[t2].[ProductName],
+	[t2].[CategoryName],
+	[t2].[UnitPrice]
 FROM
-	[ProductAndCategoryNamesOverTenDollars] [t1]
+	(
+		SELECT
+			[t1].[CategoryName],
+			[t1].[UnitPrice],
+			[t1].[ProductName]
+		FROM
+			[ProductAndCategoryNamesOverTenDollars] [t1]
+	) [t2]
 ORDER BY
-	[t1].[CategoryName],
-	[t1].[UnitPrice],
-	[t1].[ProductName]
+	[t2].[CategoryName],
+	[t2].[UnitPrice],
+	[t2].[ProductName]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 

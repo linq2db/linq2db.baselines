@@ -56,14 +56,25 @@ AS
 		)
 )
 SELECT
-	[c3].[ParentID],
-	[c3].[Value1]
+	[t3].[ParentID],
+	[t3].[Value1]
 FROM
-	[CTE2_] [t1]
-		INNER JOIN [CTE1_] [c_4] ON [t1].[ParentID] = [c_4].[ParentID]
-		INNER JOIN [CTE2_] [c2] ON [t1].[ParentID] = [c2].[ParentID]
-		INNER JOIN [CTE3_] [c3] ON [t1].[ParentID] = [c3].[ParentID]
-		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [c3].[ParentID]
+	(
+		SELECT
+			[c3].[ParentID],
+			[c3].[Value1]
+		FROM
+			(
+				SELECT
+					[t1].[ParentID]
+				FROM
+					[CTE2_] [t1]
+			) [t2]
+				INNER JOIN [CTE1_] [c_4] ON [t2].[ParentID] = [c_4].[ParentID]
+				INNER JOIN [CTE2_] [c2] ON [t2].[ParentID] = [c2].[ParentID]
+				INNER JOIN [CTE3_] [c3] ON [t2].[ParentID] = [c3].[ParentID]
+	) [t3]
+		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [t3].[ParentID]
 
 -- SQLite.Classic SQLite
 
