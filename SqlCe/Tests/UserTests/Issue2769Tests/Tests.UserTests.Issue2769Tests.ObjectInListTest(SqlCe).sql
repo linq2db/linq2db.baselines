@@ -1,21 +1,11 @@
 ﻿-- SqlCe
 
 SELECT
-	[a_1].[Id],
-	[a_1].[NullValue]
+	[a].[Id],
+	[a].[NullValue]
 FROM
-	(
-		SELECT
-			[a].[Id],
-			CASE
-				WHEN [a].[NullValue] IS NOT NULL THEN [a].[NullValue]
-				ELSE 0
-			END as [KEYNUMB],
-			[a].[NullValue]
-		FROM
-			[SampleClass] [a]
-	) [a_1]
+	[SampleClass] [a]
 WHERE
-	[a_1].[Id] = 0 AND [a_1].[KEYNUMB] = 0 OR [a_1].[Id] = 1 AND [a_1].[KEYNUMB] = 1 OR
-	[a_1].[Id] = 2 AND [a_1].[KEYNUMB] = 2
+	[a].[Id] = 0 AND ([a].[NullValue] IS NULL OR [a].[NullValue] = 0) OR
+	[a].[Id] = 1 AND [a].[NullValue] = 1 OR [a].[Id] = 2 AND [a].[NullValue] = 2
 

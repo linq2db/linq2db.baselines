@@ -1,17 +1,12 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[c1]
+	CASE
+		WHEN [p].[MoneyValue] <> 0 THEN 1
+		ELSE 0
+	END as [c1]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [t].[MoneyValue] <> 0 THEN 1
-				ELSE 0
-			END as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [p]
+	[LinqDataTypes] [p]
 WHERE
-	[p].[c1] = 1
+	[p].[MoneyValue] <> 0
 

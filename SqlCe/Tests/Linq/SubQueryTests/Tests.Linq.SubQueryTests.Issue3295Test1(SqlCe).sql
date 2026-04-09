@@ -1,31 +1,25 @@
 ﻿-- SqlCe
 
 SELECT
-	[x_1].[Id],
-	[x_1].[StatusName]
+	CASE
+		WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID]
+		ELSE [x].[PersonID]
+	END as [Id],
+	CASE
+		WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[Diagnosis]
+		ELSE 'abc'
+	END as [StatusName]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[Diagnosis]
-				ELSE 'abc'
-			END as [StatusName],
-			CASE
-				WHEN [t1].[PersonID] IS NOT NULL THEN [t1].[PersonID]
-				ELSE [x].[PersonID]
-			END as [Id]
-		FROM
-			[Person] [x]
-				OUTER APPLY (
-					SELECT TOP (1)
-						[y].[PersonID],
-						[y].[Diagnosis]
-					FROM
-						[Patient] [y]
-					WHERE
-						[y].[PersonID] = [x].[PersonID]
-				) [t1]
-	) [x_1]
+	[Person] [x]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[y].[PersonID],
+				[y].[Diagnosis]
+			FROM
+				[Patient] [y]
+			WHERE
+				[y].[PersonID] = [x].[PersonID]
+		) [t1]
 WHERE
-	[x_1].[StatusName] = 'abc'
+	[t1].[PersonID] IS NULL OR [t1].[Diagnosis] = 'abc'
 

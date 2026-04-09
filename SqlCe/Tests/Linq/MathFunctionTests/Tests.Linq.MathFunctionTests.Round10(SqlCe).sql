@@ -1,18 +1,22 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN [t].[MoneyValue] * 2 = ROUND([t].[MoneyValue] * 2, 1) AND [t].[MoneyValue] <> ROUND([t].[MoneyValue], 1)
+			THEN ROUND([t].[MoneyValue] / 2, 1) * 2
+		ELSE ROUND([t].[MoneyValue], 1)
+	END as [c1]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 1)
-					THEN ROUND([p].[MoneyValue] / 2, 1) * 2
-				ELSE ROUND([p].[MoneyValue], 1)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0 AND [t].[c1] <> 7
+	CASE
+		WHEN [t].[MoneyValue] * 2 = ROUND([t].[MoneyValue] * 2, 1) AND [t].[MoneyValue] <> ROUND([t].[MoneyValue], 1)
+			THEN ROUND([t].[MoneyValue] / 2, 1) * 2
+		ELSE ROUND([t].[MoneyValue], 1)
+	END <> 0 AND
+	CASE
+		WHEN [t].[MoneyValue] * 2 = ROUND([t].[MoneyValue] * 2, 1) AND [t].[MoneyValue] <> ROUND([t].[MoneyValue], 1)
+			THEN ROUND([t].[MoneyValue] / 2, 1) * 2
+		ELSE ROUND([t].[MoneyValue], 1)
+	END <> 7
 

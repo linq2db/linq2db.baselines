@@ -1,17 +1,13 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN [t].[MoneyValue] <= 5 THEN [t].[MoneyValue]
+		ELSE 5
+	END as [c1]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [p].[MoneyValue] <= 5 THEN [p].[MoneyValue]
-				ELSE 5
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0
+	[t].[MoneyValue] <> 0 AND [t].[MoneyValue] <= 5 OR
+	[t].[MoneyValue] > 5
 

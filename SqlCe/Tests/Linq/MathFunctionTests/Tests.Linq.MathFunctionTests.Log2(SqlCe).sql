@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value_1]
+	Floor(Log(CAST([t].[MoneyValue] AS Float)) / 0.69314718055994529) as [Value_1]
 FROM
-	(
-		SELECT
-			Floor(Log(CAST([p].[MoneyValue] AS Float)) / 0.69314718055994529) as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[Value_1] <> 0.10000000000000001
+	Floor(Log(CAST([t].[MoneyValue] AS Float)) / 0.69314718055994529) <> 0.10000000000000001
 

@@ -1,21 +1,18 @@
 ﻿-- SqlCe
 
 SELECT
-	[s].[ID],
-	[s].[FirstName]
+	[s].[PersonID] as [ID],
+	CASE
+		WHEN LEN([s].[FirstName] + '.') - 1 >= [s].[PersonID] THEN [s].[FirstName]
+		ELSE REPLICATE('.', [s].[PersonID] - (LEN([s].[FirstName] + '.') - 1)) + [s].[FirstName]
+	END as [FirstName]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN LEN([p].[FirstName] + '.') - 1 >= [p].[PersonID] THEN [p].[FirstName]
-				ELSE REPLICATE('.', [p].[PersonID] - (LEN([p].[FirstName] + '.') - 1)) + [p].[FirstName]
-			END as [FirstName],
-			[p].[PersonID] as [ID]
-		FROM
-			[Person] [p]
-	) [s]
+	[Person] [s]
 WHERE
-	[s].[FirstName] <> ''
+	CASE
+		WHEN LEN([s].[FirstName] + '.') - 1 >= [s].[PersonID] THEN [s].[FirstName]
+		ELSE REPLICATE('.', [s].[PersonID] - (LEN([s].[FirstName] + '.') - 1)) + [s].[FirstName]
+	END <> ''
 
 -- SqlCe
 

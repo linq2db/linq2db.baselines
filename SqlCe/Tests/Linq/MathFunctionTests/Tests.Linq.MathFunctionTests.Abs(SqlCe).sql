@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	Abs([t].[MoneyValue]) as [c1]
 FROM
-	(
-		SELECT
-			Abs([p].[MoneyValue]) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] > 0
+	Abs([t].[MoneyValue]) > 0
 

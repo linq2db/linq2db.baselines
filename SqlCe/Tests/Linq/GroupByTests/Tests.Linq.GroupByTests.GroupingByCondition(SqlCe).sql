@@ -1,28 +1,28 @@
 ﻿-- SqlCe
 
 SELECT
-	[g_1].[isValueAvailable],
-	[g_1].[ParentID],
-	[g_1].[Value_1],
+	[g_2].[isValueAvailable],
+	[g_2].[ParentID],
+	[g_2].[Value_1],
 	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT
-			[c_1].[ParentID],
 			CASE
-				WHEN [c_1].[ChildID] % 2 = 0 THEN 1
+				WHEN [g_1].[ChildID] % 2 = 0 THEN 1
 				ELSE 0
 			END as [isValueAvailable],
+			[g_1].[ParentID],
 			NULL as [Value_1]
 		FROM
-			[Child] [c_1]
-	) [g_1]
-WHERE
-	[g_1].[isValueAvailable] = 1
+			[Child] [g_1]
+		WHERE
+			[g_1].[ChildID] % 2 = 0
+	) [g_2]
 GROUP BY
-	[g_1].[isValueAvailable],
-	[g_1].[ParentID],
-	[g_1].[Value_1]
+	[g_2].[isValueAvailable],
+	[g_2].[ParentID],
+	[g_2].[Value_1]
 
 -- SqlCe
 

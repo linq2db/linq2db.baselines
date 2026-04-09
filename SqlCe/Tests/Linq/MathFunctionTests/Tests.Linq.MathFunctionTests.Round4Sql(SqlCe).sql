@@ -2,21 +2,40 @@
 
 SELECT
 	CASE
-		WHEN [t].[c1] * 2 = ROUND([t].[c1] * 2, 5) AND [t].[c1] <> ROUND([t].[c1], 5)
-			THEN ROUND([t].[c1] / 2, 5) * 2
-		ELSE ROUND([t].[c1], 5)
+		WHEN CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END * 2 = ROUND(CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END * 2, 5) AND CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END <> ROUND(CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END, 5)
+			THEN ROUND(CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END / 2, 5) * 2
+		ELSE ROUND(CASE
+			WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+				THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+			ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+		END, 5)
 	END as [c1]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN CAST([p].[MoneyValue] AS Float) * 2 = ROUND(CAST([p].[MoneyValue] AS Float) * 2, 1) AND CAST([p].[MoneyValue] AS Float) <> ROUND(CAST([p].[MoneyValue] AS Float), 1)
-					THEN ROUND(CAST([p].[MoneyValue] AS Float) / 2, 1) * 2
-				ELSE ROUND(CAST([p].[MoneyValue] AS Float), 1)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0
+	CASE
+		WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
+			THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+		ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
+	END <> 0
 

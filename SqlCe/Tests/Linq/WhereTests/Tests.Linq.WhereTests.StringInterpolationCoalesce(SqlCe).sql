@@ -1,24 +1,17 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[FirstName],
-	[t1].[LastName],
-	[t1].[FullName]
+	[p].[FirstName],
+	[p].[LastName] + ', ' + [p].[FirstName] as [LastName],
+	((([p].[LastName] + ', ' + [p].[FirstName]) + ' (' + Coalesce([p].[MiddleName], '')) + ' + ' + Coalesce([p].[MiddleName], '')) + ')' as [FullName]
 FROM
-	(
-		SELECT
-			[p].[FirstName],
-			[p].[LastName] + ', ' + [p].[FirstName] as [LastName],
-			((([p].[LastName] + ', ' + [p].[FirstName]) + ' (' + Coalesce([p].[MiddleName], '')) + ' + ' + Coalesce([p].[MiddleName], '')) + ')' as [FullName]
-		FROM
-			[Person] [p]
-	) [t1]
+	[Person] [p]
 WHERE
-	[t1].[FirstName] <> '' OR [t1].[LastName] <> '' OR
-	[t1].[FullName] <> ''
+	[p].[FirstName] <> '' OR ([p].[LastName] + ', ' + [p].[FirstName]) <> '' OR
+	((([p].[LastName] + ', ' + [p].[FirstName]) + ' (' + Coalesce([p].[MiddleName], '')) + ' + ' + Coalesce([p].[MiddleName], '')) + ')' <> ''
 ORDER BY
-	[t1].[FirstName],
-	[t1].[LastName]
+	[p].[FirstName],
+	[p].[LastName] + ', ' + [p].[FirstName]
 
 -- SqlCe
 

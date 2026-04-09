@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value_1]
+	Floor(Degrees([t].[MoneyValue])) as [Value_1]
 FROM
-	(
-		SELECT
-			Floor(Degrees([p].[MoneyValue])) as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[Value_1] <> 0.1
+	Floor(Degrees([t].[MoneyValue])) <> 0.1
 

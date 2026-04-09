@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value_1]
+	Ceiling(-([t].[MoneyValue] + 1)) as [Value_1]
 FROM
-	(
-		SELECT
-			Ceiling(-([p].[MoneyValue] + 1)) as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[Value_1] <> 0
+	Ceiling(-([t].[MoneyValue] + 1)) <> 0
 

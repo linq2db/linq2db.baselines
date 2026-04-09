@@ -1,18 +1,17 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN [t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (CAST(FLOOR([t].[MoneyValue]) AS Int) % 2) = 0
+			THEN FLOOR([t].[MoneyValue])
+		ELSE ROUND([t].[MoneyValue], 0)
+	END as [c1]
 FROM
-	(
-		SELECT
-			CASE
-				WHEN [p].[MoneyValue] - FLOOR([p].[MoneyValue]) = 0.5 AND (CAST(FLOOR([p].[MoneyValue]) AS Int) % 2) = 0
-					THEN FLOOR([p].[MoneyValue])
-				ELSE ROUND([p].[MoneyValue], 0)
-			END as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0
+	CASE
+		WHEN [t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (CAST(FLOOR([t].[MoneyValue]) AS Int) % 2) = 0
+			THEN FLOOR([t].[MoneyValue])
+		ELSE ROUND([t].[MoneyValue], 0)
+	END <> 0
 

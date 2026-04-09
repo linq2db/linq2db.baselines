@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value_1]
+	Round([t].[MoneyValue], 0, 1) as [Value_1]
 FROM
-	(
-		SELECT
-			Round([p].[MoneyValue], 0, 1) as [Value_1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[Value_1] <> 0.1
+	Round([t].[MoneyValue], 0, 1) <> 0.1
 

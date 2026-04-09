@@ -1,14 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	ROUND([t].[MoneyValue], 1) as [c1]
 FROM
-	(
-		SELECT
-			ROUND([p].[MoneyValue], 1) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	[t].[c1] <> 0 AND [t].[c1] <> 7
+	ROUND([t].[MoneyValue], 1) <> 0 AND ROUND([t].[MoneyValue], 1) <> 7
 

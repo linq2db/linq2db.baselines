@@ -1,15 +1,10 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[ID]
+	[t].[ParentID] + [p].[ParentID] as [ID]
 FROM
-	(
-		SELECT
-			[ch].[ParentID] + [p].[ParentID] as [ID]
-		FROM
-			[Child] [ch]
-				INNER JOIN [Parent] [p] ON [ch].[ParentID] = [p].[ParentID]
-	) [t]
+	[Child] [t]
+		INNER JOIN [Parent] [p] ON [t].[ParentID] = [p].[ParentID]
 WHERE
-	[t].[ID] > 2
+	[t].[ParentID] + [p].[ParentID] > 2
 
