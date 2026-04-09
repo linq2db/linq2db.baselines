@@ -30,10 +30,21 @@ SELECT
 	r."LastName",
 	r."MiddleName",
 	r."Gender",
-	r."Patient_PersonID",
-	r."Patient_Diagnosis"
+	r."PersonID",
+	r."Diagnosis"
 FROM
-	CTE_1 r
+	(
+		SELECT
+			t2.ID,
+			t2."FirstName",
+			t2."LastName",
+			t2."MiddleName",
+			t2."Gender",
+			t2."Patient_PersonID" as "PersonID",
+			t2."Patient_Diagnosis" as "Diagnosis"
+		FROM
+			CTE_1 t2
+	) r
 WHERE
 	r.ID = 2
 
