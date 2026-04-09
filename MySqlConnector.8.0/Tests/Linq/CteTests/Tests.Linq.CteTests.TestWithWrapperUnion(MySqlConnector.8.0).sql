@@ -58,13 +58,21 @@ AS
 			LEFT JOIN `Parent` `a_Parent` ON `child_1`.`ParentID` = `a_Parent`.`ParentID`
 )
 SELECT
-	`t1`.`Child_ParentID`,
-	`t1`.`Child_ChildID`,
-	`t1`.`Parent_ParentID`,
-	`t1`.`Parent_ParentID`,
-	`t1`.`Parent_Value1`
+	`t2`.`ParentID`,
+	`t2`.`ChildID`,
+	`t2`.`ParentID_1`,
+	`t2`.`ParentID_1`,
+	`t2`.`Value1`
 FROM
-	`CTE_1` `t1`
+	(
+		SELECT
+			`t1`.`Child_ParentID` as `ParentID`,
+			`t1`.`Child_ChildID` as `ChildID`,
+			`t1`.`Parent_ParentID` as `ParentID_1`,
+			`t1`.`Parent_Value1` as `Value1`
+		FROM
+			`CTE_1` `t1`
+	) `t2`
 UNION
 SELECT
 	`child_2`.`ParentID`,

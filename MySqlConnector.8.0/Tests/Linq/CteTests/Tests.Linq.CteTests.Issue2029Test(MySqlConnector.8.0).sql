@@ -23,7 +23,14 @@ SELECT
 	`item_1`.`NcCode`,
 	`item_1`.`NcCodeDescription`
 FROM
-	`AllowedNcCode` `item_1`
+	(
+		SELECT
+			`t1`.`NcCodeBo`,
+			`t1`.`NcCode`,
+			`t1`.`NcCodeDescription`
+		FROM
+			`AllowedNcCode` `t1`
+	) `item_1`
 WHERE
 	`item_1`.`NcCodeBo` = @ncCodeBo
 
