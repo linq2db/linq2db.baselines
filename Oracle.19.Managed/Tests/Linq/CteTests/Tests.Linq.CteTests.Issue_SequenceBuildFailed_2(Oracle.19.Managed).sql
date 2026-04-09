@@ -19,10 +19,15 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1."PersonID"
+			t2."PersonID"
 		FROM
-			CTE_1 t1
-				INNER JOIN "Patient" p ON t1."PersonID" = p."PersonID"
+			(
+				SELECT
+					t1."PersonID"
+				FROM
+					CTE_1 t1
+			) t2
+				INNER JOIN "Patient" p ON t2."PersonID" = p."PersonID"
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."PersonID"
 
@@ -40,6 +45,11 @@ AS
 SELECT
 	r."PersonID"
 FROM
-	CTE_1 r
+	(
+		SELECT
+			t1."PersonID"
+		FROM
+			CTE_1 t1
+	) r
 		INNER JOIN "Patient" p ON r."PersonID" = p."PersonID"
 
