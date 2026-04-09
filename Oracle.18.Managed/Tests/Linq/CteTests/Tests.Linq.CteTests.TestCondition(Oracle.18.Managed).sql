@@ -15,7 +15,13 @@ SELECT
 	t."ParentID",
 	t."ChildID"
 FROM
-	CTE_1 t
+	(
+		SELECT
+			t2."ChildID",
+			t2."ParentID"
+		FROM
+			CTE_1 t2
+	) t
 WHERE
 	t."ChildID" = :var3
 
