@@ -44,10 +44,11 @@ FROM
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
-WITH RECURSIVE cte ("Field2", "Field3")
+WITH RECURSIVE cte ("Field1", "Field2", "Field3")
 AS
 (
 	SELECT
+		le."Id",
 		le."Field1",
 		le."Field2"
 	FROM
@@ -57,6 +58,7 @@ AS
 		le."Field1" = :id
 	UNION ALL
 	SELECT
+		suble."Id",
 		suble."Field1",
 		suble."Field2"
 	FROM

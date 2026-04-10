@@ -7,11 +7,12 @@ FROM
 
 -- PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" (c1)
+WITH "CTE1_" ("ParentID", "ChildID")
 AS
 (
 	SELECT
-		1
+		t1."ParentID",
+		t1."ChildID"
 	FROM
 		"Child" t1
 )
@@ -22,11 +23,11 @@ FROM
 
 -- PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" (c1)
+WITH "CTE1_" ("C_ChildID")
 AS
 (
 	SELECT
-		1
+		c_1."ChildID"
 	FROM
 		"Child" c_1
 )
@@ -37,11 +38,11 @@ FROM
 
 -- PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" (c1)
+WITH "CTE1_" ("C_ChildID")
 AS
 (
 	SELECT
-		1
+		c_1."ChildID"
 	FROM
 		"Child" c_1
 )
