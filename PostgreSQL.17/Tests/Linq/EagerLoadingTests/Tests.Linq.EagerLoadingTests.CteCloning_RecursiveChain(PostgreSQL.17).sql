@@ -1,65 +1,130 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-WITH RECURSIVE cte ("Value2")
+WITH RECURSIVE cte
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
-		r."Value2"
+		r."Id",
+		r."Value1",
+		r."Value2",
+		r."Value3",
+		r."Value4",
+		r."Value5"
 	FROM
 		"CteTable" r
 	UNION ALL
 	SELECT
-		r_1."Value1"
+		r_1."Id",
+		r_1."Value1",
+		r_1."Value1",
+		r_1."Value3",
+		r_1."Value1",
+		r_1."Value5"
 	FROM
 		cte t1
 			INNER JOIN "CteTable" r_1 ON t1."Value2" = r_1."Value3"
 ),
-cte0 ("Value2")
+cte0
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
-		r_2."Value2"
+		r_2."Id",
+		r_2."Value1",
+		r_2."Value2",
+		r_2."Value3",
+		r_2."Value4",
+		r_2."Id"
 	FROM
 		"CteTable" r_2
 	UNION ALL
 	SELECT
-		r_3."Value2"
+		r_3."Id",
+		r_3."Value1",
+		r_3."Value2",
+		r_3."Value2",
+		r_3."Id",
+		r_3."Value5"
 	FROM
 		cte t2
 			INNER JOIN "CteTable" r_3 ON t2."Value2" = r_3."Value3"
 	UNION ALL
 	SELECT
-		r_4."Value2"
+		r_4."Id",
+		r_4."Value1",
+		r_4."Value2",
+		r_4."Id",
+		r_4."Value2",
+		r_4."Value5"
 	FROM
 		cte0 t3
 			INNER JOIN "CteTable" r_4 ON t3."Value2" = r_4."Value3"
 ),
-cte1 ("Value2", "Value4")
+cte1
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
+		r_5."Value4",
+		r_5."Value1",
 		r_5."Value2",
-		r_5."Value4"
+		r_5."Value3",
+		r_5."Value4",
+		r_5."Value5"
 	FROM
 		"CteTable" r_5
 	UNION ALL
 	SELECT
+		r_6."Id",
+		r_6."Value1",
 		r_6."Value2",
-		r_6."Id"
+		r_6."Value3",
+		r_6."Id",
+		r_6."Value4"
 	FROM
 		cte0 t4
 			INNER JOIN "CteTable" r_6 ON t4."Value2" = r_6."Value3"
 	UNION ALL
 	SELECT
 		r_7."Id",
-		r_7."Value4"
+		r_7."Value4",
+		r_7."Id",
+		r_7."Value3",
+		r_7."Value4",
+		r_7."Value5"
 	FROM
 		cte t5
 			INNER JOIN "CteTable" r_7 ON t5."Value2" = r_7."Value3"
 	UNION ALL
 	SELECT
+		r_8."Id",
+		r_8."Value1",
 		r_8."Value2",
-		r_8."Value4"
+		r_8."Id",
+		r_8."Value4",
+		r_8."Value5"
 	FROM
 		cte1 t6
 			INNER JOIN "CteTable" r_8 ON t6."Value2" = r_8."Value3"
@@ -84,36 +149,77 @@ FROM
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-WITH RECURSIVE cte ("Value2")
+WITH RECURSIVE cte
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
-		r."Value2"
+		r."Id",
+		r."Value1",
+		r."Value2",
+		r."Value3",
+		r."Value4",
+		r."Value5"
 	FROM
 		"CteTable" r
 	UNION ALL
 	SELECT
-		r_1."Value1"
+		r_1."Id",
+		r_1."Value1",
+		r_1."Value1",
+		r_1."Value3",
+		r_1."Value1",
+		r_1."Value5"
 	FROM
 		cte t1
 			INNER JOIN "CteTable" r_1 ON t1."Value2" = r_1."Value3"
 ),
-cte0 ("Value2")
+cte0
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
-		r_2."Value2"
+		r_2."Id",
+		r_2."Value1",
+		r_2."Value2",
+		r_2."Value3",
+		r_2."Value4",
+		r_2."Id"
 	FROM
 		"CteTable" r_2
 	UNION ALL
 	SELECT
-		r_3."Value2"
+		r_3."Id",
+		r_3."Value1",
+		r_3."Value2",
+		r_3."Value2",
+		r_3."Id",
+		r_3."Value5"
 	FROM
 		cte t2
 			INNER JOIN "CteTable" r_3 ON t2."Value2" = r_3."Value3"
 	UNION ALL
 	SELECT
-		r_4."Value2"
+		r_4."Id",
+		r_4."Value1",
+		r_4."Value2",
+		r_4."Id",
+		r_4."Value2",
+		r_4."Value5"
 	FROM
 		cte0 t3
 			INNER JOIN "CteTable" r_4 ON t3."Value2" = r_4."Value3"
