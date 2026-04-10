@@ -1,10 +1,23 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-WITH "CTE_1" ("Value4")
+WITH "CTE_1"
+(
+	"Value4",
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value5"
+)
 AS
 (
 	SELECT
-		r."Value4"
+		r."Value4",
+		r."Id",
+		r."Value1",
+		r."Value2",
+		r."Value3",
+		r."Value5"
 	FROM
 		"CteTable" r
 )
