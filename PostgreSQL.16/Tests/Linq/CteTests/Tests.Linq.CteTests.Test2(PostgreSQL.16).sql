@@ -1,10 +1,11 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-WITH "CTE1_" ("ParentID")
+WITH "CTE1_" ("ParentID", "ChildID")
 AS
 (
 	SELECT
-		c_1."ParentID"
+		c_1."ParentID",
+		c_1."ChildID"
 	FROM
 		"Child" c_1
 	WHERE
@@ -20,11 +21,12 @@ AS
 	WHERE
 		(c4."ParentID"::decimal % 2)::decimal = 0
 ),
-"CTE2_" ("ParentID")
+"CTE2_" ("ParentID", "Value1")
 AS
 (
 	SELECT
-		p."ParentID"
+		p."ParentID",
+		p."Value1"
 	FROM
 		"Parent" p
 	WHERE

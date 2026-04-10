@@ -39,11 +39,11 @@ WHERE
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-WITH "CTE_1" (c1)
+WITH "CTE_1" ("ID")
 AS
 (
 	SELECT
-		1
+		t1."PersonID"
 	FROM
 		"Person" t1
 )

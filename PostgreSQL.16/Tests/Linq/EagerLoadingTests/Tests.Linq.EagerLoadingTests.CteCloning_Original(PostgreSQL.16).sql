@@ -1,17 +1,33 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-WITH RECURSIVE cte ("Value2", "Value4")
+WITH RECURSIVE cte
+(
+	"Id",
+	"Value1",
+	"Value2",
+	"Value3",
+	"Value4",
+	"Value5"
+)
 AS
 (
 	SELECT
+		r."Id",
+		r."Value1",
 		r."Value2",
-		r."Value4"
+		r."Value3",
+		r."Value4",
+		r."Value5"
 	FROM
 		"CteTable" r
 	UNION ALL
 	SELECT
+		r_1."Id",
+		r_1."Value1",
 		r_1."Value2",
-		r_1."Value4"
+		r_1."Value3",
+		r_1."Value4",
+		r_1."Value5"
 	FROM
 		cte t1
 			INNER JOIN "CteTable" r_1 ON t1."Value2" = r_1."Value3"
