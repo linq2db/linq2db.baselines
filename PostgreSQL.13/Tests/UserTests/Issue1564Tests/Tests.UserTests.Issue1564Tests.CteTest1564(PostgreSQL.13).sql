@@ -43,6 +43,7 @@ FROM
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",
+	"CategoryId",
 	"ParentCategoryId",
 	"Name",
 	"Level_1"
@@ -50,6 +51,7 @@ WITH RECURSIVE "categoryHierarchy"
 AS
 (
 	SELECT
+		"innerC"."Id",
 		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
@@ -59,6 +61,7 @@ AS
 	UNION ALL
 	SELECT
 		ch."RootCategoryId",
+		t1."Id",
 		t1."ParentId",
 		t1."Name",
 		ch."Level_1" + 1
