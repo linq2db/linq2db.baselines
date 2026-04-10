@@ -10,13 +10,19 @@ AS
 		"Issue3360Table" p
 	UNION ALL
 	SELECT
-		t1."Id",
+		t1."Id_1",
 		'Str'::VarChar
 	FROM
-		cte t1,
-		"Issue3360Table" r
+		(
+			SELECT
+				r."Id",
+				p_1."Id" as "Id_1"
+			FROM
+				cte p_1
+					CROSS JOIN "Issue3360Table" r
+		) t1
 	WHERE
-		t1."Id" = r."Id" + 1
+		t1."Id_1" = t1."Id" + 1
 )
 SELECT
 	t2."Id",

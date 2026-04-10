@@ -10,15 +10,20 @@ AS
 		"Issue3360Table" p
 	UNION ALL
 	SELECT
-		t1."Id",
+		t2."Id",
 		'Str2'::VarChar
 	FROM
-		cte t1
-			INNER JOIN "Issue3360Table" r ON t1."Id" = r."Id" + 1
+		(
+			SELECT
+				t1."Id"
+			FROM
+				cte t1
+		) t2
+			INNER JOIN "Issue3360Table" r ON t2."Id" = r."Id" + 1
 )
 SELECT
-	t2."Id",
-	t2."Str"
+	t3."Id",
+	t3."Str"
 FROM
-	cte t2
+	cte t3
 
