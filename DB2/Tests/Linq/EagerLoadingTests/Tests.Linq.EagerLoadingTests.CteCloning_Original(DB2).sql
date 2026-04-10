@@ -73,14 +73,24 @@ AS
 		"t1"."Value2" = "r_1"."Value3"
 )
 SELECT
-	"t2"."Id",
-	"t2"."Value1",
-	"t2"."Value2",
-	"t2"."Value3",
-	"t2"."Value4",
-	"t2"."Value5",
+	"t3"."Id",
+	"t3"."Value1",
+	"t3"."Value2",
+	"t3"."Value3",
+	"t3"."Value4",
+	"t3"."Value5",
 	"d"."Id"
 FROM
-	"cte" "t2"
-		LEFT JOIN "CteChildTable" "d" ON "t2"."Value4" = "d"."Id"
+	(
+		SELECT
+			"t2"."Id",
+			"t2"."Value1",
+			"t2"."Value2",
+			"t2"."Value3",
+			"t2"."Value4",
+			"t2"."Value5"
+		FROM
+			"cte" "t2"
+	) "t3"
+		LEFT JOIN "CteChildTable" "d" ON "t3"."Value4" = "d"."Id"
 

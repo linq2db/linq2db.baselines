@@ -10,13 +10,19 @@ AS
 		"Issue3360WithEnum" "p"
 	UNION ALL
 	SELECT
-		"t1"."Id",
+		"t1"."Id_1",
 		VarChar('THIS_IS_TWO', 50)
 	FROM
-		"cte" "t1",
-		"Issue3360WithEnum" "r"
+		(
+			SELECT
+				"r"."Id",
+				"p_1"."Id" as "Id_1"
+			FROM
+				"cte" "p_1",
+				"Issue3360WithEnum" "r"
+		) "t1"
 	WHERE
-		"t1"."Id" = "r"."Id" + 1
+		"t1"."Id_1" = "t1"."Id" + 1
 )
 SELECT
 	"t2"."Id",
