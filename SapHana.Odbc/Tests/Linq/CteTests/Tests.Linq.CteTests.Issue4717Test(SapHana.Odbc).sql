@@ -136,7 +136,7 @@ AS
 )
 SELECT
 	"source"."ProductId",
-	"t1"."StockOnHand",
+	"t2"."StockOnHand",
 	(
 		SELECT
 			SUM("wp_1"."StockOnHand")
@@ -146,7 +146,13 @@ SELECT
 			"wp_1"."WarehouseId" = "source"."WarehouseId"
 	)
 FROM
-	"CTE_1" "source"
+	(
+		SELECT
+			"t1"."ProductId",
+			"t1"."WarehouseId"
+		FROM
+			"CTE_1" "t1"
+	) "source"
 		INNER JOIN "Issue4717ProductIncludedProductMapping" "includedProductMapping" ON "source"."ProductId" = "includedProductMapping"."ProductId"
 		LEFT JOIN LATERAL (
 			SELECT
@@ -156,5 +162,5 @@ FROM
 			WHERE
 				"wp"."WarehouseId" = "source"."WarehouseId"
 			LIMIT 1
-		) "t1" ON 1=1
+		) "t2" ON 1=1
 
