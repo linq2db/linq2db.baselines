@@ -10,15 +10,20 @@ AS
 		"Issue3360NullInAnchor" p
 	UNION ALL
 	SELECT
-		t1."Id",
+		t2."Id",
 		r."Guid"
 	FROM
-		cte t1
-			INNER JOIN "Issue3360NullInAnchor" r ON t1."Id" = r."Id" + 100
+		(
+			SELECT
+				t1."Id"
+			FROM
+				cte t1
+		) t2
+			INNER JOIN "Issue3360NullInAnchor" r ON t2."Id" = r."Id" + 100
 )
 SELECT
-	t2."Id",
-	t2."Guid"
+	t3."Id",
+	t3."Guid"
 FROM
-	cte t2
+	cte t3
 

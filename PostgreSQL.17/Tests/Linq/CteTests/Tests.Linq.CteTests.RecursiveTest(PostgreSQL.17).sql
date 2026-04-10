@@ -11,20 +11,26 @@ AS
 		"GrandChild" gc1
 	UNION ALL
 	SELECT
-		ct."ChildID",
-		ct."ParentID",
-		ct."ChildID" + 1
+		t1."ChildID",
+		t1."ParentID",
+		t1."ChildID" + 1
 	FROM
-		"GrandChild" gc
-			INNER JOIN "Parent" p ON p."ParentID" = gc."ParentID"
-			INNER JOIN "MY_CTE" ct ON ct."ChildID" = gc."ChildID"
-	WHERE
-		ct."GrandChildID" <= 10
+		(
+			SELECT
+				ct."ChildID",
+				ct."ParentID"
+			FROM
+				"GrandChild" gc
+					INNER JOIN "Parent" p ON p."ParentID" = gc."ParentID"
+					INNER JOIN "MY_CTE" ct ON ct."ChildID" = gc."ChildID"
+			WHERE
+				ct."GrandChildID" <= 10
+		) t1
 )
 SELECT
-	t1."ChildID",
-	t1."ParentID",
-	t1."GrandChildID"
+	t2."ChildID",
+	t2."ParentID",
+	t2."GrandChildID"
 FROM
-	"MY_CTE" t1
+	"MY_CTE" t2
 
