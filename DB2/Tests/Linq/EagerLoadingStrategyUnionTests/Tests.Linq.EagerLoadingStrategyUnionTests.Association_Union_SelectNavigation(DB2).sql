@@ -1,0 +1,86 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+WITH CTE_1 ("Id", "field_1", "Name")
+AS
+(
+	SELECT
+		"c_1"."Id",
+		ROW_NUMBER() OVER (ORDER BY "c_1"."Id"),
+		"c_1"."Name"
+	FROM
+		"Company" "c_1"
+	ORDER BY
+		"c_1"."Id"
+),
+CTE_2
+(
+	"Detail_Id",
+	"Detail_CompanyId",
+	"Detail_Name",
+	"Detail_IsActive",
+	"field_1",
+	"Key_1"
+)
+AS
+(
+	SELECT
+		"d"."Id",
+		"d"."CompanyId",
+		"d"."Name",
+		"d"."IsActive",
+		ROW_NUMBER() OVER (ORDER BY "d"."Id"),
+		"kd"."v0Id"
+	FROM
+		(
+			SELECT DISTINCT
+				"t1"."Id" as "v0Id"
+			FROM
+				CTE_1 "t1"
+		) "kd"
+			INNER JOIN "Department" "d" ON "kd"."v0Id" = "d"."CompanyId"
+	ORDER BY
+		"d"."Id"
+)
+SELECT
+	"t4"."Item1",
+	"t4"."Item2",
+	"t4"."Item3",
+	"t4"."Item4",
+	"t4"."Item5",
+	"t4"."Item6",
+	"t4"."Item7",
+	"t4"."Item1_1",
+	"t4"."Item2_1"
+FROM
+	(
+		SELECT
+			CAST(0 AS Int) as "Item1",
+			"t2"."Key_1" as "Item2",
+			"t2"."field_1" as "Item3",
+			"t2"."Detail_Id" as "Item4",
+			"t2"."Detail_CompanyId" as "Item5",
+			"t2"."Detail_Name" as "Item6",
+			"t2"."Detail_IsActive" as "Item7",
+			CAST(NULL AS Int) as "Item1_1",
+			CAST(NULL AS NVarChar(255)) as "Item2_1"
+		FROM
+			CTE_2 "t2"
+		UNION ALL
+		SELECT
+			CAST(1 AS Int) as "Item1",
+			"t3"."Id" as "Item2",
+			"t3"."field_1" as "Item3",
+			CAST(NULL AS Int) as "Item4",
+			CAST(NULL AS Int) as "Item5",
+			CAST(NULL AS NVarChar(255)) as "Item6",
+			CAST(NULL AS smallint) as "Item7",
+			"t3"."Id" as "Item1_1",
+			"t3"."Name" as "Item2_1"
+		FROM
+			CTE_1 "t3"
+	) "t4"
+ORDER BY
+	"t4"."Item1",
+	"t4"."Item2",
+	"t4"."Item3"
+
