@@ -8,7 +8,7 @@ FROM
 UNION
 SELECT
 	`p2`.`ParentID`,
-	NULL
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `p2`
 

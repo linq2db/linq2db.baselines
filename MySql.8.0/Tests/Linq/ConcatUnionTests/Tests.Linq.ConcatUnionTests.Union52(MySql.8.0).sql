@@ -2,7 +2,7 @@
 
 SELECT
 	`p1`.`ParentID`,
-	NULL
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `p1`
 UNION
