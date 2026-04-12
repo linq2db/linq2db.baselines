@@ -21,9 +21,9 @@ FROM
 			`t1`.`LastName`,
 			`t1`.`MiddleName`,
 			`t1`.`Gender`,
-			NULL as `Patient`,
-			NULL as `PersonID`,
-			NULL as `Diagnosis`
+			CAST(NULL AS SIGNED) as `Patient`,
+			CAST(NULL AS SIGNED) as `PersonID`,
+			CAST(NULL AS CHAR(255)) as `Diagnosis`
 		FROM
 			(
 				SELECT

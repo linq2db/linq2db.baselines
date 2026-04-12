@@ -9,8 +9,8 @@ FROM
 UNION ALL
 SELECT
 	Coalesce(`p2`.`Value1`, 0),
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `p2`
 
