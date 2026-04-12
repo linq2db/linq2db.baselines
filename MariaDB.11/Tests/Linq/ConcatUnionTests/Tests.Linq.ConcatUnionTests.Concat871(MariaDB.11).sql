@@ -2,12 +2,12 @@
 
 SELECT
 	`c_1`.`Value1`,
-	NULL
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `c_1`
 UNION ALL
 SELECT
-	NULL,
+	CAST(NULL AS SIGNED),
 	`c_2`.`ParentID`
 FROM
 	`Child` `c_2`
