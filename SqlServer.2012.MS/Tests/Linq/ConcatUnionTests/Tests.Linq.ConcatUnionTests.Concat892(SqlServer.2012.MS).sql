@@ -1,22 +1,16 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[Value1],
-	[t1].[ParentID]
+	[c_1].[ParentID],
+	[c_1].[ParentID]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID] as [Value1],
-			[c_1].[ParentID]
-		FROM
-			[Child] [c_1]
-		UNION
-		SELECT
-			NULL as [Value1],
-			[c_2].[ParentID]
-		FROM
-			[Parent] [c_2]
-	) [t1]
+	[Child] [c_1]
+UNION
+SELECT
+	NULL,
+	[c_2].[ParentID]
+FROM
+	[Parent] [c_2]
 UNION ALL
 SELECT
 	[c_3].[ParentID],

@@ -1,22 +1,17 @@
 ﻿-- SqlServer.2012
 
 SELECT
-	[t1].[ParentID]
+	[c_1].[ParentID]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID]
-		FROM
-			[Parent] [c_1]
-		UNION
-		SELECT
-			[c_2].[ParentID]
-		FROM
-			[Parent] [c_2]
-	) [t1]
+	[Parent] [c_1]
+UNION
+SELECT
+	[c_2].[ParentID]
+FROM
+	[Parent] [c_2]
 UNION ALL
 SELECT
-	[t2].[ParentID]
+	[t1].[ParentID]
 FROM
 	(
 		SELECT
@@ -28,5 +23,5 @@ FROM
 			[c_4].[ParentID]
 		FROM
 			[Parent] [c_4]
-	) [t2]
+	) [t1]
 
