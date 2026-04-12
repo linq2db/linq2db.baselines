@@ -1,22 +1,17 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	t1.ParentID
+	c_1.ParentID
 FROM
-	(
-		SELECT
-			c_1.ParentID as ParentID
-		FROM
-			Parent c_1
-		UNION DISTINCT
-		SELECT
-			c_2.ParentID as ParentID
-		FROM
-			Parent c_2
-	) t1
+	Parent c_1
+UNION DISTINCT
+SELECT
+	c_2.ParentID as ParentID
+FROM
+	Parent c_2
 UNION ALL
 SELECT
-	t2.ParentID as ParentID
+	t1.ParentID as ParentID
 FROM
 	(
 		SELECT
@@ -28,5 +23,5 @@ FROM
 			c_4.ParentID as ParentID
 		FROM
 			Parent c_4
-	) t2
+	) t1
 
