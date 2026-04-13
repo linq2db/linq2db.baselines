@@ -27,7 +27,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -93,9 +93,13 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
+
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -290,9 +294,5 @@ DECLARE @inputOutputStr VarChar(50) -- AnsiString
 SET     @inputOutputStr = N''
 
 [TestDataMS].[dbo].[OutRefEnumTest]
-
--- SqlServer.2005.MS SqlServer.2005
-
-SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 RollbackTransaction
