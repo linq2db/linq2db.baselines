@@ -29,7 +29,6 @@ FROM
 		FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
-				LEFT JOIN [sys].[tables] [a_Table] ON [o].[object_id] = [a_Table].[object_id]
 				INNER JOIN [sys].[schemas] [a_Schema_1] ON [o].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
 			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'U', N'V') AND
@@ -109,8 +108,7 @@ FROM
 		INNER JOIN [sys].[objects] [a_Object_1] ON [c_1].[object_id] = [a_Object_1].[object_id]
 		INNER JOIN [sys].[schemas] [a_Schema] ON [a_Object_1].[schema_id] = [a_Schema].[schema_id]
 		INNER JOIN [sys].[schemas] [a_Schema_1] ON [a_Object_1].[schema_id] = [a_Schema_1].[schema_id]
-		INNER JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
-		INNER JOIN [sys].[tables] [a_Table_1] ON [c_1].[object_id] = [a_Table_1].[object_id]
+		LEFT JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
 		LEFT JOIN [sys].[types] [a_Type] ON [c_1].[user_type_id] = [a_Type].[user_type_id]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [c_1].[object_id] AND [ep].[minor_id] = [c_1].[column_id] AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 WHERE
@@ -183,7 +181,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -249,9 +247,13 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
+
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -453,10 +455,6 @@ SET     @inputOutputStr = N''
 
 [TestDataMS].[dbo].[OutRefEnumTest]
 
--- SqlServer.2008.MS SqlServer.2008
-
-SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
-
 RollbackTransaction
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -489,7 +487,6 @@ FROM
 		FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
-				LEFT JOIN [sys].[tables] [a_Table] ON [o].[object_id] = [a_Table].[object_id]
 				INNER JOIN [sys].[schemas] [a_Schema_1] ON [o].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
 			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'U', N'V') AND
@@ -569,8 +566,7 @@ FROM
 		INNER JOIN [sys].[objects] [a_Object_1] ON [c_1].[object_id] = [a_Object_1].[object_id]
 		INNER JOIN [sys].[schemas] [a_Schema] ON [a_Object_1].[schema_id] = [a_Schema].[schema_id]
 		INNER JOIN [sys].[schemas] [a_Schema_1] ON [a_Object_1].[schema_id] = [a_Schema_1].[schema_id]
-		INNER JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
-		INNER JOIN [sys].[tables] [a_Table_1] ON [c_1].[object_id] = [a_Table_1].[object_id]
+		LEFT JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
 		LEFT JOIN [sys].[types] [a_Type] ON [c_1].[user_type_id] = [a_Type].[user_type_id]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [c_1].[object_id] AND [ep].[minor_id] = [c_1].[column_id] AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 WHERE
@@ -643,7 +639,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -709,7 +705,7 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
 
@@ -745,7 +741,6 @@ FROM
 		FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
-				LEFT JOIN [sys].[tables] [a_Table] ON [o].[object_id] = [a_Table].[object_id]
 				INNER JOIN [sys].[schemas] [a_Schema_1] ON [o].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
 			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'U', N'V') AND
@@ -825,8 +820,7 @@ FROM
 		INNER JOIN [sys].[objects] [a_Object_1] ON [c_1].[object_id] = [a_Object_1].[object_id]
 		INNER JOIN [sys].[schemas] [a_Schema] ON [a_Object_1].[schema_id] = [a_Schema].[schema_id]
 		INNER JOIN [sys].[schemas] [a_Schema_1] ON [a_Object_1].[schema_id] = [a_Schema_1].[schema_id]
-		INNER JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
-		INNER JOIN [sys].[tables] [a_Table_1] ON [c_1].[object_id] = [a_Table_1].[object_id]
+		LEFT JOIN [sys].[tables] [a_Table] ON [c_1].[object_id] = [a_Table].[object_id]
 		LEFT JOIN [sys].[types] [a_Type] ON [c_1].[user_type_id] = [a_Type].[user_type_id]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [c_1].[object_id] AND [ep].[minor_id] = [c_1].[column_id] AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 WHERE
@@ -899,7 +893,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -965,7 +959,7 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
 
