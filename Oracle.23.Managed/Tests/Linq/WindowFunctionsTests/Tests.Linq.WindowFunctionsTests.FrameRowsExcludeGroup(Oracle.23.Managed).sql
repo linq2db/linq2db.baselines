@@ -1,0 +1,7 @@
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
+
+SELECT
+	SUM(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id" ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE GROUP)
+FROM
+	"WindowFunctionTestEntity" t
+
