@@ -14,14 +14,14 @@ FROM
 	(
 		SELECT
 			`r`.`Id`,
-			NULL as `Byte`,
-			NULL as `Byte_1`,
-			NULL as `Guid`,
-			NULL as `Guid_1`,
-			NULL as `Enum`,
-			NULL as `EnumN`,
-			NULL as `Bool`,
-			NULL as `Bool_1`
+			CAST(NULL AS UNSIGNED) as `Byte`,
+			CAST(NULL AS UNSIGNED) as `Byte_1`,
+			CAST(NULL AS CHAR(36)) as `Guid`,
+			CAST(NULL AS CHAR(36)) as `Guid_1`,
+			CAST(NULL AS CHAR(11)) as `Enum`,
+			CAST(NULL AS CHAR(11)) as `EnumN`,
+			CAST(NULL AS SIGNED) as `Bool`,
+			CAST(NULL AS SIGNED) as `Bool_1`
 		FROM
 			`Issue3360Table1` `r`
 		WHERE

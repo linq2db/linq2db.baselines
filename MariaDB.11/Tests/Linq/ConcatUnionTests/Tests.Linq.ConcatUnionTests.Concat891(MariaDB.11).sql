@@ -12,7 +12,7 @@ FROM
 			`Child` `c_1`
 		UNION
 		SELECT
-			NULL as `Value1`,
+			CAST(NULL AS SIGNED) as `Value1`,
 			`c_2`.`ParentID`
 		FROM
 			`Parent` `c_2`

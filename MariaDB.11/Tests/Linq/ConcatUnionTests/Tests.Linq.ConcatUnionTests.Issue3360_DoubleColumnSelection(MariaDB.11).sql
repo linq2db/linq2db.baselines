@@ -18,8 +18,8 @@ FROM
 			`r`.`Byte` as `Byte_1`,
 			`r`.`Guid`,
 			`r`.`Guid` as `Guid_1`,
-			NULL as `Enum`,
-			NULL as `EnumN`,
+			CAST(NULL AS CHAR(11)) as `Enum`,
+			CAST(NULL AS CHAR(11)) as `EnumN`,
 			`r`.`Bool`,
 			`r`.`Bool` as `Bool_1`
 		FROM

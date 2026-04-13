@@ -6,17 +6,17 @@ SELECT
 	`x`.`LastName`,
 	`x`.`MiddleName`,
 	`x`.`Gender`,
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255))
 FROM
 	`Person` `x`
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
+	CAST(NULL AS CHAR(255)),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255)),
+	CAST(NULL AS CHAR(255)),
+	CAST(NULL AS CHAR),
 	`x_1`.`PersonID`,
 	`x_1`.`Diagnosis`
 FROM

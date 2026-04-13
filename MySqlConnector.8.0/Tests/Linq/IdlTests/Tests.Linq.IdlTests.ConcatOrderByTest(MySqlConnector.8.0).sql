@@ -8,8 +8,8 @@ FROM
 	(
 		SELECT
 			CAST(0 AS SIGNED) as `Rank`,
-			NULL as `FirstName`,
-			NULL as `LastName`
+			CAST(NULL AS CHAR(255)) as `FirstName`,
+			CAST(NULL AS CHAR(255)) as `LastName`
 		FROM
 			`Person` `p`
 		WHERE

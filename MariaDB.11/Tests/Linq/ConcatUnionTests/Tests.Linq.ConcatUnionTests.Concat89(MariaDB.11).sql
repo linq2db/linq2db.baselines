@@ -7,7 +7,7 @@ FROM
 	`Child` `c_1`
 UNION ALL
 SELECT
-	NULL,
+	CAST(NULL AS SIGNED),
 	`c_2`.`ParentID`
 FROM
 	`Parent` `c_2`

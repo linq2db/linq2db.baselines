@@ -27,27 +27,27 @@ WHERE
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
-	NULL,
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255)),
 	`t2`.`Id`,
 	`t2`.`Id`,
 	`t2`.`Field1`,
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255))
 FROM
 	`TestEntity1` `t1`
 		LEFT JOIN `TestEntity2` `t2` ON `t1`.`Id` = `t2`.`Id`
 UNION ALL
 SELECT
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255)),
 	`t1_1`.`Id`,
 	`t1_1`.`Id`,
 	`t1_1`.`Field1`,
-	NULL,
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255)),
 	`t2_1`.`Id`,
 	`t2_1`.`Field1`
 FROM

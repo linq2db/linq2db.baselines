@@ -6,7 +6,7 @@ FROM
 	(
 		SELECT
 			`p`.`ParentID`,
-			NULL as `Value1`
+			CAST(NULL AS SIGNED) as `Value1`
 		FROM
 			`Parent` `p`
 		UNION
