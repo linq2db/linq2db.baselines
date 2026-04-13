@@ -7,9 +7,5 @@ FROM
 
 -- SqlServer.SA.MS SqlServer.2019
 
-select @@version
-
--- SqlServer.SA.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
