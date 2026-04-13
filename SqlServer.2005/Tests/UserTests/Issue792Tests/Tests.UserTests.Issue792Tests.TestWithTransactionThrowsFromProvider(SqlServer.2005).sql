@@ -7,9 +7,5 @@ FROM
 
 -- SqlServer.2005
 
-select @@version
-
--- SqlServer.2005
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
