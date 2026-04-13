@@ -24,7 +24,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -72,9 +72,55 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
+
+-- SqlServer.2012.MS SqlServer.2012
+
+[TestDataMS].[dbo].[Issue1897]
+
+-- SqlServer.2012.MS SqlServer.2012
+
+SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+
+[TestDataMS].[dbo].[QueryProcParameters]
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+DECLARE @output3 Int -- Int32
+SET     @output3 = 0
+
+[TestDataMS].[dbo].[QueryProcMultipleParameters]
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcIntParameters]
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @id Int -- Int32
@@ -234,52 +280,6 @@ SET     @nameFilter = N''
 
 [TestDataMS].[dbo].[PersonSearch]
 
--- SqlServer.2012.MS SqlServer.2012
-
-[TestDataMS].[dbo].[Issue1897]
-
--- SqlServer.2012.MS SqlServer.2012
-
-SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-
-[TestDataMS].[dbo].[QueryProcParameters]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-DECLARE @output3 Int -- Int32
-SET     @output3 = 0
-
-[TestDataMS].[dbo].[QueryProcMultipleParameters]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcIntParameters]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcStringParameters]
-
 RollbackTransaction
 -- SqlServer.2012.MS SqlServer.2012
 
@@ -307,7 +307,7 @@ FROM
 			[sys].[objects] [o]
 				INNER JOIN [sys].[schemas] [a_Schema] ON [o].[schema_id] = [a_Schema].[schema_id]
 		WHERE
-			[o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[o].[is_ms_shipped] = 0 AND [o].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[object_id] AND [ep].[minor_id] = 0 AND [ep].[class] = 1 AND [ep].[name] = N'MS_Description'
 
@@ -355,9 +355,53 @@ FROM
 				LEFT JOIN [sys].[types] [a_Type] ON [p].[user_type_id] = [a_Type].[user_type_id]
 				LEFT JOIN [sys].[schemas] [a_Schema_1] ON [a_Type].[schema_id] = [a_Schema_1].[schema_id]
 		WHERE
-			[a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
+			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2012.MS SqlServer.2012
+
+SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcParameters] @input, @output1, @output2'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output1 int, @output2 int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcIntParameters] @input, @output'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2012.MS SqlServer.2012
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcStringParameters] @input, @output'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output int'
+
+sp_describe_first_result_set
 
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @tsql NVarChar(4000) -- String
@@ -544,49 +588,5 @@ DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMS].[dbo].[PersonSearch]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2012.MS SqlServer.2012
-
-SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcParameters] @input, @output1, @output2'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output1 int, @output2 int'
-
-sp_describe_first_result_set
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
-
-sp_describe_first_result_set
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcIntParameters] @input, @output'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output int'
-
-sp_describe_first_result_set
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcStringParameters] @input, @output'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output int'
-
-sp_describe_first_result_set
 
 RollbackTransaction
