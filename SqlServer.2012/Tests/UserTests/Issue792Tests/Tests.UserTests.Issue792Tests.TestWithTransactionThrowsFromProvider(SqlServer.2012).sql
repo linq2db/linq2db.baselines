@@ -7,9 +7,5 @@ FROM
 
 -- SqlServer.2012
 
-select @@version
-
--- SqlServer.2012
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
