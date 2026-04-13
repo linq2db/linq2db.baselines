@@ -7,9 +7,5 @@ FROM
 
 -- SqlServer.2022
 
-select @@version
-
--- SqlServer.2022
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
