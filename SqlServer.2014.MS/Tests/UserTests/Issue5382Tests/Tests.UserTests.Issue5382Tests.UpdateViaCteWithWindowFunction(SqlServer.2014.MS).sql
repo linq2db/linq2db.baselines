@@ -19,12 +19,14 @@ AS
 		[x].[RowNum_1] = 1
 )
 UPDATE
-	[target]
+	[u]
 SET
-	[target].[Value] = [target].[Value] * 10
+	[u].[Value] = [u].[Value] * 10
 FROM
-	[SampleTable] [target]
-		INNER JOIN [CTE_1] [source] ON [target].[IntColumn] = [source].[Sample_IntColumn] AND [target].[DateColumn] = [source].[Sample_DateColumn]
+	[SampleTable] [u],
+	[CTE_1] [source]
+WHERE
+	[u].[IntColumn] = [source].[Sample_IntColumn] AND [u].[DateColumn] = [source].[Sample_DateColumn]
 
 -- SqlServer.2014.MS SqlServer.2014
 
