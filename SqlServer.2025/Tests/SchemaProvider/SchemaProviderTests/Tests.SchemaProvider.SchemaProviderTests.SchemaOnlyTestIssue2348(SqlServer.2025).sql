@@ -78,6 +78,18 @@ FROM
 
 -- SqlServer.2025
 
+EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
+
+-- SqlServer.2025
+
+[TestData].[dbo].[SelectImplicitColumn]
+
+-- SqlServer.2025
+
+[TestData].[dbo].[DuplicateColumnNames]
+
+-- SqlServer.2025
+
 [TestData].[dbo].[AddIssue792Record]
 
 -- SqlServer.2025
@@ -268,18 +280,6 @@ SET     @inputOutputStr = N''
 
 [TestData].[dbo].[OutRefEnumTest]
 
--- SqlServer.2025
-
-EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
-
--- SqlServer.2025
-
-[TestData].[dbo].[SelectImplicitColumn]
-
--- SqlServer.2025
-
-[TestData].[dbo].[DuplicateColumnNames]
-
 RollbackTransaction
 -- SqlServer.2025
 
@@ -358,6 +358,26 @@ FROM
 			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
+
+-- SqlServer.2025
+
+EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
+
+-- SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestData].[dbo].[SelectImplicitColumn] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestData].[dbo].[DuplicateColumnNames] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
 
 -- SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
@@ -566,26 +586,6 @@ DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[OutRefEnumTest] @str, @outputStr, @inputOutputStr'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@str varchar(50), @outputStr varchar(50), @inputOutputStr varchar(50)'
-
-sp_describe_first_result_set
-
--- SqlServer.2025
-
-EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
-
--- SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestData].[dbo].[SelectImplicitColumn] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestData].[dbo].[DuplicateColumnNames] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
 
 sp_describe_first_result_set
 

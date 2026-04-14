@@ -77,76 +77,6 @@ FROM
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
 
 -- SqlServer.2025.MS SqlServer.2025
-
-[TestDataMS].[dbo].[AddIssue792Record]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = NULL
-
-[TestDataMS].[dbo].[TableTypeTestProc]
-
--- SqlServer.2025.MS SqlServer.2025
-
-[TestDataMS].[TestSchema].[TestProcedure]
-
--- SqlServer.2025.MS SqlServer.2025
-
-EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @nameFilter NVarChar(512) -- String
-SET     @nameFilter = N''
-
-[TestDataMS].[dbo].[PersonSearch]
-
--- SqlServer.2025.MS SqlServer.2025
-
-[TestDataMS].[dbo].[Issue1897]
-
--- SqlServer.2025.MS SqlServer.2025
-
-EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-
-[TestDataMS].[dbo].[QueryProcParameters]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output1 Int -- Int32
-SET     @output1 = 0
-DECLARE @output2 Int -- Int32
-SET     @output2 = 0
-DECLARE @output3 Int -- Int32
-SET     @output3 = 0
-
-[TestDataMS].[dbo].[QueryProcMultipleParameters]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcIntParameters]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @input Int -- Int32
-SET     @input = 0
-DECLARE @output Int -- Int32
-SET     @output = 0
-
-[TestDataMS].[dbo].[ExecuteProcStringParameters]
-
--- SqlServer.2025.MS SqlServer.2025
 DECLARE @id Int -- Int32
 SET     @id = 0
 
@@ -280,6 +210,76 @@ EXEC('SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)')
 
 [TestDataMS].[dbo].[DuplicateColumnNames]
 
+-- SqlServer.2025.MS SqlServer.2025
+
+[TestDataMS].[dbo].[AddIssue792Record]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = NULL
+
+[TestDataMS].[dbo].[TableTypeTestProc]
+
+-- SqlServer.2025.MS SqlServer.2025
+
+[TestDataMS].[TestSchema].[TestProcedure]
+
+-- SqlServer.2025.MS SqlServer.2025
+
+EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @nameFilter NVarChar(512) -- String
+SET     @nameFilter = N''
+
+[TestDataMS].[dbo].[PersonSearch]
+
+-- SqlServer.2025.MS SqlServer.2025
+
+[TestDataMS].[dbo].[Issue1897]
+
+-- SqlServer.2025.MS SqlServer.2025
+
+EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+
+[TestDataMS].[dbo].[QueryProcParameters]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output1 Int -- Int32
+SET     @output1 = 0
+DECLARE @output2 Int -- Int32
+SET     @output2 = 0
+DECLARE @output3 Int -- Int32
+SET     @output3 = 0
+
+[TestDataMS].[dbo].[QueryProcMultipleParameters]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcIntParameters]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @input Int -- Int32
+SET     @input = 0
+DECLARE @output Int -- Int32
+SET     @output = 0
+
+[TestDataMS].[dbo].[ExecuteProcStringParameters]
+
 RollbackTransaction
 -- SqlServer.2025.MS SqlServer.2025
 
@@ -358,98 +358,6 @@ FROM
 			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[AddIssue792Record] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[TableTypeTestProc] @table'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@table [dbo].[TestTableType]'
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = NULL
-
-[TestDataMS].[dbo].[TableTypeTestProc]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[TestSchema].[TestProcedure] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-
-EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[PersonSearch] @nameFilter'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@nameFilter nvarchar(512)'
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @nameFilter NVarChar(512) -- String
-SET     @nameFilter = N''
-
-[TestDataMS].[dbo].[PersonSearch]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-
-EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcParameters] @input, @output1, @output2'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output1 int, @output2 int'
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcIntParameters] @input, @output'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output int'
-
-sp_describe_first_result_set
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcStringParameters] @input, @output'
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N'@input int, @output int'
-
-sp_describe_first_result_set
 
 -- SqlServer.2025.MS SqlServer.2025
 DECLARE @tsql NVarChar(4000) -- String
@@ -586,6 +494,98 @@ DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[DuplicateColumnNames] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[AddIssue792Record] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[TableTypeTestProc] @table'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@table [dbo].[TestTableType]'
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @table [dbo].[TestTableType] -- Structured -- Object
+SET     @table = NULL
+
+[TestDataMS].[dbo].[TableTypeTestProc]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[TestSchema].[TestProcedure] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+
+EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[PersonSearch] @nameFilter'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@nameFilter nvarchar(512)'
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @nameFilter NVarChar(512) -- String
+SET     @nameFilter = N''
+
+[TestDataMS].[dbo].[PersonSearch]
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+
+EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcParameters] @input, @output1, @output2'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output1 int, @output2 int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[QueryProcMultipleParameters] @input, @output1, @output2, @output3'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output1 int, @output2 int, @output3 int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcIntParameters] @input, @output'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output int'
+
+sp_describe_first_result_set
+
+-- SqlServer.2025.MS SqlServer.2025
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestDataMS].[dbo].[ExecuteProcStringParameters] @input, @output'
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N'@input int, @output int'
 
 sp_describe_first_result_set
 
