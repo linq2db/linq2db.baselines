@@ -7,9 +7,5 @@ FROM
 
 -- SqlServer.2016.MS SqlServer.2016
 
-select @@version
-
--- SqlServer.2016.MS SqlServer.2016
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
