@@ -77,10 +77,6 @@ FROM
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
 
 -- SqlServer.2017
-
-[TestData].[dbo].[AddIssue792Record]
-
--- SqlServer.2017
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
@@ -280,6 +276,10 @@ EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
 
 [TestData].[dbo].[DuplicateColumnNames]
 
+-- SqlServer.2017
+
+[TestData].[dbo].[AddIssue792Record]
+
 RollbackTransaction
 -- SqlServer.2017
 
@@ -358,14 +358,6 @@ FROM
 			[a_Object].[is_ms_shipped] = 0 AND [a_Object].[type] IN (N'P', N'FN', N'TF', N'IF', N'AF', N'FT', N'IS', N'PC', N'FS')
 	) [t1]
 		LEFT JOIN [sys].[extended_properties] [ep] ON [ep].[major_id] = [t1].[ObjectId] AND [ep].[minor_id] = [t1].[ParameterId] AND [ep].[class] = 2 AND [ep].[name] = N'MS_Description'
-
--- SqlServer.2017
-DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestData].[dbo].[AddIssue792Record] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
 
 -- SqlServer.2017
 DECLARE @tsql NVarChar(4000) -- String
@@ -584,6 +576,14 @@ sp_describe_first_result_set
 -- SqlServer.2017
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[DuplicateColumnNames] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2017
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestData].[dbo].[AddIssue792Record] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 

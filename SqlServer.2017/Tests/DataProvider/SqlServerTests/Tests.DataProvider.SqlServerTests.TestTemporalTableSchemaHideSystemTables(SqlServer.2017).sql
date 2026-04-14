@@ -287,14 +287,6 @@ FROM
 
 -- SqlServer.2017
 DECLARE @tsql NVarChar(4000) -- String
-SET     @tsql = N'exec [TestData].[dbo].[AddIssue792Record] '
-DECLARE @params NVarChar(4000) -- String
-SET     @params = N''
-
-sp_describe_first_result_set
-
--- SqlServer.2017
-DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[TableTypeTestProc] @table'
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N'@table [dbo].[TestTableType]'
@@ -510,6 +502,14 @@ sp_describe_first_result_set
 -- SqlServer.2017
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestData].[dbo].[DuplicateColumnNames] '
+DECLARE @params NVarChar(4000) -- String
+SET     @params = N''
+
+sp_describe_first_result_set
+
+-- SqlServer.2017
+DECLARE @tsql NVarChar(4000) -- String
+SET     @tsql = N'exec [TestData].[dbo].[AddIssue792Record] '
 DECLARE @params NVarChar(4000) -- String
 SET     @params = N''
 
