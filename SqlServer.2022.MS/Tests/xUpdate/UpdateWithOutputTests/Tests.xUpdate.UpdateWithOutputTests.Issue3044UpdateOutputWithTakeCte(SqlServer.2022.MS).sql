@@ -17,10 +17,10 @@ AS
 		[i].[Id]
 )
 UPDATE
-	[CTE_1]
+	[u]
 SET
-	[Value_1] = 20,
-	[ValueStr] = [CTE_1].[ValueStr]
+	[u].[Value_1] = 20,
+	[u].[ValueStr] = [u].[ValueStr]
 OUTPUT
 	DELETED.[Id],
 	DELETED.[Value_1],
@@ -28,4 +28,7 @@ OUTPUT
 	INSERTED.[Id],
 	INSERTED.[Value_1],
 	INSERTED.[ValueStr]
+FROM
+	[CTE_1] [u],
+	[CTE_1] [t1]
 
