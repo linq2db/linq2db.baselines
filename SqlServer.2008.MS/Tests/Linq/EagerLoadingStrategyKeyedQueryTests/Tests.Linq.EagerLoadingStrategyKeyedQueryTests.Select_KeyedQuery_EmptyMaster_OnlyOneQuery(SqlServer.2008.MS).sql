@@ -1,0 +1,10 @@
+﻿-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[c_1].[Id],
+	[c_1].[Name]
+FROM
+	[Company] [c_1]
+ORDER BY
+	[c_1].[Id]
+
