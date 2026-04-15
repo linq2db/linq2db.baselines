@@ -30,12 +30,20 @@ SELECT
 	[employee].[LastName],
 	[employee].[FirstName],
 	[employee].[NumberOfSubordinates],
-	[manager].[LastName],
-	[manager].[FirstName],
-	[manager].[NumberOfSubordinates]
+	[manager_1].[ManagerLastName],
+	[manager_1].[ManagerFirstName],
+	[manager_1].[ManagerNumberOfSubordinates]
 FROM
 	[EmployeeSubordinatesReport] [employee]
-		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
+		LEFT JOIN (
+			SELECT
+				[manager].[LastName] as [ManagerLastName],
+				[manager].[FirstName] as [ManagerFirstName],
+				[manager].[NumberOfSubordinates] as [ManagerNumberOfSubordinates],
+				[manager].[EmployeeID] as [c1]
+			FROM
+				[EmployeeSubordinatesReport] [manager]
+		) [manager_1] ON [employee].[ReportsTo] = [manager_1].[c1]
 
 -- SqlServer.Northwind.MS SqlServer.2019
 
