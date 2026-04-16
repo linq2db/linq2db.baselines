@@ -8,11 +8,6 @@ WHERE
 	EXISTS(
 		SELECT DISTINCT
 			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
@@ -25,11 +20,6 @@ WHERE
 	EXISTS(
 		SELECT DISTINCT
 			[r].[Zero]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
@@ -42,11 +32,6 @@ WHERE
 	EXISTS(
 		SELECT DISTINCT
 			[r].[Null]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
@@ -116,11 +101,6 @@ WHERE
 	NOT EXISTS(
 		SELECT DISTINCT
 			[r].[One]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
@@ -133,11 +113,6 @@ WHERE
 	NOT EXISTS(
 		SELECT DISTINCT
 			[r].[Zero]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
@@ -150,11 +125,6 @@ WHERE
 	NOT EXISTS(
 		SELECT DISTINCT
 			[r].[Null]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-			)
 	)
 
 -- SqlCe
