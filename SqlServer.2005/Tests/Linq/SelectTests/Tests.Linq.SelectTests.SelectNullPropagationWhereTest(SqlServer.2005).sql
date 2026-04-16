@@ -18,11 +18,14 @@ FROM
 		INNER JOIN [Child] [c_1] ON [c_1].[ParentID] = [t1].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 WHERE
-	[t1].[ParentID] > 0 OR [t1].[Value1] > 0 OR [a_Parent].[Value1] > 0
+	[t1].[ParentID] > 0 OR [t1].[Value1] > 0 OR [a_Parent].[Value1] > 0 AND [a_Parent].[ParentID] IS NOT NULL
 ORDER BY
 	[t1].[ParentID],
 	[t1].[Value1],
-	[a_Parent].[Value1]
+	CASE
+		WHEN [a_Parent].[ParentID] IS NOT NULL THEN [a_Parent].[Value1]
+		ELSE NULL
+	END
 
 -- SqlServer.2005
 
