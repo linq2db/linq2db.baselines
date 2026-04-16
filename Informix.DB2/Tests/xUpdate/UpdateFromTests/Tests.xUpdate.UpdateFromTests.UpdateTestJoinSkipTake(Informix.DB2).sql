@@ -1,12 +1,12 @@
 ﻿-- Informix.DB2 Informix
-DECLARE @int1 Integer(4) -- Int32
-SET     @int1 = 11
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
 DECLARE @take Integer(4) -- Int32
 SET     @take = 2
 DECLARE @someId Integer(4) -- Int32
 SET     @someId = 100
+DECLARE @int1 Integer(4) -- Int32
+SET     @int1 = 11
 DECLARE @int2 Integer(4) -- Int32
 SET     @int2 = 22
 DECLARE @int3 Integer(4) -- Int32
@@ -15,13 +15,13 @@ SET     @int3 = 33
 UPDATE
 	UpdatedEntities
 SET
-	Value1 = (
+	Value1 = ((
 		SELECT
-			(UpdatedEntities.Value1 * t2.Value1) * @int1::Int
+			t2.Value1
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take
-					t_1.Value1,
+					c_2.Value1,
 					c_2.id
 				FROM
 					UpdatedEntities c_2
@@ -33,14 +33,13 @@ SET
 			) t2
 		WHERE
 			UpdatedEntities.id = t2.id
-	),
-	Value2 = (
+	) * (
 		SELECT
-			(UpdatedEntities.Value2 * t3.Value2) * @int2::Int
+			t3.Value1
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take
-					t_2.Value2,
+					t_2.Value1,
 					c_3.id
 				FROM
 					UpdatedEntities c_3
@@ -52,14 +51,14 @@ SET
 			) t3
 		WHERE
 			UpdatedEntities.id = t3.id
-	),
-	Value3 = (
+	)) * @int1::Int,
+	Value2 = ((
 		SELECT
-			(UpdatedEntities.Value3 * t4.Value3) * @int3::Int
+			t4.Value2
 		FROM
 			(
 				SELECT SKIP @skip FIRST @take
-					t_3.Value3,
+					c_4.Value2,
 					c_4.id
 				FROM
 					UpdatedEntities c_4
@@ -71,7 +70,62 @@ SET
 			) t4
 		WHERE
 			UpdatedEntities.id = t4.id
-	)
+	) * (
+		SELECT
+			t5.Value2
+		FROM
+			(
+				SELECT SKIP @skip FIRST @take
+					t_4.Value2,
+					c_5.id
+				FROM
+					UpdatedEntities c_5
+						INNER JOIN NewEntities t_4 ON t_4.id = c_5.id
+				WHERE
+					t_4.id <> @someId
+				ORDER BY
+					c_5.id
+			) t5
+		WHERE
+			UpdatedEntities.id = t5.id
+	)) * @int2::Int,
+	Value3 = ((
+		SELECT
+			t6.Value3
+		FROM
+			(
+				SELECT SKIP @skip FIRST @take
+					c_6.Value3,
+					c_6.id
+				FROM
+					UpdatedEntities c_6
+						INNER JOIN NewEntities t_5 ON t_5.id = c_6.id
+				WHERE
+					t_5.id <> @someId
+				ORDER BY
+					c_6.id
+			) t6
+		WHERE
+			UpdatedEntities.id = t6.id
+	) * (
+		SELECT
+			t7.Value3
+		FROM
+			(
+				SELECT SKIP @skip FIRST @take
+					t_6.Value3,
+					c_7.id
+				FROM
+					UpdatedEntities c_7
+						INNER JOIN NewEntities t_6 ON t_6.id = c_7.id
+				WHERE
+					t_6.id <> @someId
+				ORDER BY
+					c_7.id
+			) t7
+		WHERE
+			UpdatedEntities.id = t7.id
+	)) * @int3::Int
 WHERE
 	EXISTS(
 		SELECT
