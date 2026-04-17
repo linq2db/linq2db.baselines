@@ -1,11 +1,11 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
-DECLARE @p -2147483639 -- Object
-SET     @p = {1,2,3}
+DECLARE @value -2147483639 -- Object
+SET     @value = {1,2,3}
 
 SELECT
 	a_1."Id"
 FROM
-	UNNEST(:p) i(value)
+	UNNEST(:value) i(value)
 		INNER JOIN LATERAL (
 			SELECT
 				a."Id"
