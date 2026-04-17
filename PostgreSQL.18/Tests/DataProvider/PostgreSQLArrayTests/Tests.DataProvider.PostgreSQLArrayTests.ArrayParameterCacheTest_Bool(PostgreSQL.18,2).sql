@@ -1,0 +1,21 @@
+﻿-- PostgreSQL.18 PostgreSQL
+DECLARE @arr -2147483646 -- Object
+SET     @arr = {False}
+
+SELECT
+	t."Id",
+	t."IntValue",
+	t."LongValue",
+	t."DoubleValue",
+	t."DecimalValue",
+	t."StrValue",
+	t."BoolValue",
+	t."ShortValue",
+	t."FloatValue",
+	t."GuidValue",
+	t."DateValue"
+FROM
+	"AllTypesValueTable" t
+WHERE
+	t."BoolValue" = ANY(:arr)
+
