@@ -13,16 +13,23 @@ WITH CTE_1 AS
 		g_1.InvestorId
 )
 SELECT
-	ip.InvestorId,
-	b.Units,
-	SUM(ip.NetPayment)
+	p.InvestorId,
+	p.Units,
+	SUM(p.NetPayment)
 FROM
-	PaymentEvent p
-		INNER JOIN InvestorPayment ip ON p.Id = ip.Id
-		INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
-		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND p.Id = pc.EventId
-		INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND p.SecurityClass = b.SecurityClass
+	(
+		SELECT
+			ip.InvestorId as InvestorId,
+			b.Units as Units,
+			ip.NetPayment as NetPayment
+		FROM
+			PaymentEvent g_2
+				INNER JOIN InvestorPayment ip ON g_2.Id = ip.Id
+				INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
+				INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND g_2.Id = pc.EventId
+				INNER JOIN CTE_1 b ON ip.InvestorId = b.InvestorId AND g_2.SecurityClass = b.SecurityClass
+	) p
 GROUP BY
-	ip.InvestorId,
-	b.Units
+	p.InvestorId,
+	p.Units
 
