@@ -35,11 +35,12 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t2"."Value1") * ?
+			("t2"."Value1" * "t2"."Value1_1") * ?
 		FROM
 			(
 				SELECT
-					"t_1"."Value1",
+					"c_2"."Value1",
+					"t_1"."Value1" as "Value1_1",
 					"c_2"."id"
 				FROM
 					"UpdatedEntities" "c_2"
@@ -55,11 +56,12 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("UpdatedEntities"."Value2" * "t3"."Value2") * ?
+			("t3"."Value2" * "t3"."Value2_1") * ?
 		FROM
 			(
 				SELECT
-					"t_2"."Value2",
+					"c_3"."Value2",
+					"t_2"."Value2" as "Value2_1",
 					"c_3"."id"
 				FROM
 					"UpdatedEntities" "c_3"
@@ -75,11 +77,12 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("UpdatedEntities"."Value3" * "t4"."Value3") * ?
+			("t4"."Value3" * "t4"."Value3_1") * ?
 		FROM
 			(
 				SELECT
-					"t_3"."Value3",
+					"c_4"."Value3",
+					"t_3"."Value3" as "Value3_1",
 					"c_4"."id"
 				FROM
 					"UpdatedEntities" "c_4"

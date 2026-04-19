@@ -14,7 +14,7 @@ SET
 	"col6" = (
 		SELECT
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				WHEN "x_1"."col3" = 'empty' THEN ''
 				ELSE CAST("y1_1"."id" AS NVarChar(11))
 			END
 		FROM
