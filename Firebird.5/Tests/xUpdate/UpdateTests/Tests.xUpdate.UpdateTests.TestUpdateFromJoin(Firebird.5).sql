@@ -14,7 +14,7 @@ SET
 	"col6" = (
 		SELECT
 			CASE
-				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				WHEN "x_1"."col3" = 'empty' THEN ''
 				ELSE "y1_1"."id"
 			END
 		FROM
