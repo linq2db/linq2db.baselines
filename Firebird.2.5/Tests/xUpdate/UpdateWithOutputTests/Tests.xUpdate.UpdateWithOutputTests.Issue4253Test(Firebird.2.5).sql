@@ -5,7 +5,7 @@ UPDATE
 SET
 	"Name" = (
 		SELECT
-			"Issue4193Person"."Name" || "r_1"."SalaryId"
+			"p_1"."Name" || "r_1"."SalaryId"
 		FROM
 			"Issue4193Person" "p_1"
 				INNER JOIN "Issue4193Employee" "r_1" ON "p_1"."EmployeeId" = "r_1"."Id"
