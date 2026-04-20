@@ -13,7 +13,7 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t_1"."Value1") * CAST(@int1 AS Int)
+			("c_2"."Value1" * "t_1"."Value1") * CAST(@int1 AS Int)
 		FROM
 			"UpdatedEntities" "c_2",
 			"NewEntities" "t_1"
@@ -23,7 +23,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("UpdatedEntities"."Value2" * "t_2"."Value2") * CAST(@int2 AS Int)
+			("c_3"."Value2" * "t_2"."Value2") * CAST(@int2 AS Int)
 		FROM
 			"UpdatedEntities" "c_3",
 			"NewEntities" "t_2"
@@ -33,7 +33,7 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("UpdatedEntities"."Value3" * "t_3"."Value3") * CAST(@int3 AS Int)
+			("c_4"."Value3" * "t_3"."Value3") * CAST(@int3 AS Int)
 		FROM
 			"UpdatedEntities" "c_4",
 			"NewEntities" "t_3"

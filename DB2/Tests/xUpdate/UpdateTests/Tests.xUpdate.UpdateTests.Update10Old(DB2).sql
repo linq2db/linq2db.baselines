@@ -31,9 +31,9 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	("ChildID", "ParentID") = (
+	"ChildID" = "Child"."ChildID" + 1,
+	"ParentID" = (
 		SELECT
-			"Child"."ChildID" + 1,
 			"p_1"."ParentID"
 		FROM
 			"Parent" "p_1"
