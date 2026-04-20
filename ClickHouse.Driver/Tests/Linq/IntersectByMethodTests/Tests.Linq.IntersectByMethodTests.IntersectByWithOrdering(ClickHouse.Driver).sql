@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id) as RowNumber,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.TestId ORDER BY e.Id)) as RowNumber,
 			e.Id as Id,
 			e.TestId as TestId
 		FROM
