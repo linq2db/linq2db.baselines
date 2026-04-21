@@ -901,15 +901,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") = 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") = 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") = 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") = 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -985,15 +985,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") > 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") > 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") > 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") > 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1069,15 +1069,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") >= 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") >= 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") >= 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") >= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1153,15 +1153,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") < 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") < 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") < 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") < 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1237,15 +1237,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") <= 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") <= 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") <= 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") <= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1326,15 +1326,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") = 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") = 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") = 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") = 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1410,15 +1410,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") > 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") > 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") > 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") > 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1494,15 +1494,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") >= 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") >= 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") >= 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") >= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1578,15 +1578,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") < 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") < 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") < 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") < 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -1662,15 +1662,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") <= 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") <= 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") <= 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") <= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -2610,15 +2610,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") = 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") = 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") = 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") = 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -2694,15 +2694,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") > 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") > 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") > 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") > 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -2778,15 +2778,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") >= 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") >= 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") >= 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") >= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -2862,15 +2862,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") < 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") < 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") < 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") < 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -2946,15 +2946,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."Int32N", r."Int32") <= 0 THEN 1
+		WHEN Nvl(r."Int32N", r."Int32") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DecimalN", r."Decimal") <= 0 THEN 1
+		WHEN Nvl(r."DecimalN", r."Decimal") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r."DoubleN", r."Double") <= 0D THEN 1
+		WHEN Nvl(r."DoubleN", r."Double") <= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -3035,15 +3035,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") = 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") = 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") = 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") = 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") = 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -3119,15 +3119,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") > 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") > 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") > 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") > 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") > 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -3203,15 +3203,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") >= 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") >= 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") >= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") >= 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") >= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -3287,15 +3287,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") < 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") < 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") < 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") < 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") < 0D THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -3371,15 +3371,15 @@ SELECT
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."Int32N", r_1."Int32") <= 0 THEN 1
+		WHEN Nvl(r_1."Int32N", r_1."Int32") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DecimalN", r_1."Decimal") <= 0 THEN 1
+		WHEN Nvl(r_1."DecimalN", r_1."Decimal") <= 0 THEN 1
 		ELSE 0
 	END,
 	CASE
-		WHEN Coalesce(r_1."DoubleN", r_1."Double") <= 0D THEN 1
+		WHEN Nvl(r_1."DoubleN", r_1."Double") <= 0D THEN 1
 		ELSE 0
 	END,
 	CASE
