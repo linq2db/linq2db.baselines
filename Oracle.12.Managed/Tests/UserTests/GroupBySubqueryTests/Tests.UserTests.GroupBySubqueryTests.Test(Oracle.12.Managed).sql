@@ -3,7 +3,7 @@
 SELECT DISTINCT
 	a_Ref4."Field6",
 	a_Ref3."Field4",
-	Coalesce(a_Ref5."Field8", '')
+	Nvl(a_Ref5."Field8", '')
 FROM
 	"Table1" t1
 		INNER JOIN "Table3" a_Ref1 ON t1."Field1" = a_Ref1."Field1"
@@ -25,7 +25,7 @@ FROM
 		SELECT DISTINCT
 			a_Ref4."Field6",
 			a_Ref3."Field4",
-			Coalesce(a_Ref5."Field8", '') as "Field1"
+			Nvl(a_Ref5."Field8", '') as "Field1"
 		FROM
 			"Table1" g_1
 				INNER JOIN "Table3" a_Ref1 ON g_1."Field1" = a_Ref1."Field1"

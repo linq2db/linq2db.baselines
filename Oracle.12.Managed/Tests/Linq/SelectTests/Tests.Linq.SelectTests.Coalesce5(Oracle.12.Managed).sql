@@ -1,7 +1,7 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Coalesce((
+	Nvl((
 		SELECT
 			MAX(a_Children."ChildID")
 		FROM
