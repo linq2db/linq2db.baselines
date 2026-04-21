@@ -9,7 +9,7 @@ FROM
 		SELECT
 			p."FirstName",
 			p."LastName" || ', ' || p."FirstName" as "LastName",
-			(((p."LastName" || ', ' || p."FirstName") || ' (' || Coalesce(p."MiddleName", '')) || ' + ' || Coalesce(p."MiddleName", '')) || ')' as "FullName"
+			(((p."LastName" || ', ' || p."FirstName") || ' (' || Nvl(p."MiddleName", '')) || ' + ' || Nvl(p."MiddleName", '')) || ')' as "FullName"
 		FROM
 			"Person" p
 	) t1

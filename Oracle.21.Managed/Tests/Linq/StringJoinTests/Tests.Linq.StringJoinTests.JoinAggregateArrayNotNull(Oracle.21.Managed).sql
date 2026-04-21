@@ -1,36 +1,36 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Coalesce((
+	Nvl((
 		SELECT
-			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
+			Nvl(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
 		FROM
 			(
-				SELECT CAST(t."NullableValue" AS NVarChar2(50)) AS "item" FROM sys.dual
+				SELECT To_NChar(t."NullableValue") AS "item" FROM sys.dual
 				UNION ALL
-				SELECT CAST(t."NotNullableValue" AS NVarChar2(50)) FROM sys.dual
+				SELECT To_NChar(t."NotNullableValue") FROM sys.dual
 				UNION ALL
-				SELECT CAST(t."VarcharValue" AS NVarChar2(50)) FROM sys.dual
+				SELECT To_NChar(t."VarcharValue") FROM sys.dual
 				UNION ALL
 				SELECT t."NVarcharValue" FROM sys.dual) t4
 	), ''),
-	Coalesce(t3."NotNullDistinctValue", '')
+	Nvl(t3."NotNullDistinctValue", '')
 FROM
 	"SampleClass" t
 		OUTER APPLY (
 			SELECT
-				LISTAGG(CAST(Coalesce(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
+				LISTAGG(CAST(Nvl(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
 			FROM
 				(
 					SELECT DISTINCT
 						t1."item" as "NotNullDistinctValue"
 					FROM
 						(
-							SELECT CAST(t."NullableValue" AS NVarChar2(50)) AS "item" FROM sys.dual
+							SELECT To_NChar(t."NullableValue") AS "item" FROM sys.dual
 							UNION ALL
-							SELECT CAST(t."NotNullableValue" AS NVarChar2(50)) FROM sys.dual
+							SELECT To_NChar(t."NotNullableValue") FROM sys.dual
 							UNION ALL
-							SELECT CAST(t."VarcharValue" AS NVarChar2(50)) FROM sys.dual
+							SELECT To_NChar(t."VarcharValue") FROM sys.dual
 							UNION ALL
 							SELECT t."NVarcharValue" FROM sys.dual) t1
 					WHERE

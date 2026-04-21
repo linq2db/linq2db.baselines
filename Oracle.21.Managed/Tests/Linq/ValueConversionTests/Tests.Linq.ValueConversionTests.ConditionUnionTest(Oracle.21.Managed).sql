@@ -2,7 +2,7 @@
 
 SELECT
 	CASE
-		WHEN t1."EnumNullable" IS NOT NULL THEN CAST(t1."EnumNullable" AS NVarChar2(50))
+		WHEN t1."EnumNullable" IS NOT NULL THEN To_NChar(t1."EnumNullable")
 		ELSE t1."Enum"
 	END
 FROM
@@ -10,7 +10,7 @@ FROM
 UNION ALL
 SELECT
 	CASE
-		WHEN t1_1."EnumNullable" IS NOT NULL THEN CAST(t1_1."EnumNullable" AS NVarChar2(50))
+		WHEN t1_1."EnumNullable" IS NOT NULL THEN To_NChar(t1_1."EnumNullable")
 		ELSE t1_1."Enum"
 	END
 FROM
