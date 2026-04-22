@@ -1,11 +1,11 @@
 ﻿-- PostgreSQL.15 PostgreSQL
-DECLARE @value -2147483639 -- Object
-SET     @value = {1,2,3}
+DECLARE @array -2147483639 -- Object
+SET     @array = {1,2,3}
 
 SELECT
 	a_1."Id"
 FROM
-	UNNEST(:value) i(value)
+	UNNEST(:array) i(value)
 		INNER JOIN LATERAL (
 			SELECT
 				a."Id"
