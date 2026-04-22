@@ -20,14 +20,8 @@ SELECT
 	"x"."NullableShortValue",
 	"x"."ByteValue",
 	"x"."NullableByteValue",
-	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY CASE
-		WHEN "x"."Timestamp" IS NULL THEN 0
-		ELSE 1
-	END, "x"."Timestamp"),
-	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY CASE
-		WHEN "x"."Timestamp" IS NULL THEN 1
-		ELSE 0
-	END, "x"."Timestamp" DESC)
+	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."Timestamp" NULLS FIRST),
+	RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."Timestamp" DESC NULLS LAST)
 FROM
 	"WindowFunctionTestEntity" "x"
 ORDER BY
