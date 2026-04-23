@@ -19,13 +19,14 @@ FROM
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE TABLE "TempTable"
-(
-	ID Int NOT NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TempTable"
+		(
+			ID Int NOT NULL,
 
-	CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
-)
-';
+			CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
+		)
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
