@@ -1,14 +1,13 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "DisposableTable"
-		(
-			ID Int NOT NULL,
+	EXECUTE IMMEDIATE 'CREATE TABLE "DisposableTable"
+(
+	ID Int NOT NULL,
 
-			CONSTRAINT "PK_DisposableTable" PRIMARY KEY (ID)
-		)
-	';
+	CONSTRAINT "PK_DisposableTable" PRIMARY KEY (ID)
+)
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
