@@ -1,16 +1,15 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
-		(
-			"Id"    Int NOT NULL,
-			"Value" Int NOT NULL,
+	EXECUTE IMMEDIATE 'CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
+(
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL,
 
-			CONSTRAINT "PK_IsTemporaryTable" PRIMARY KEY ("Id")
-		)
-		ON COMMIT PRESERVE ROWS
-	';
+	CONSTRAINT "PK_IsTemporaryTable" PRIMARY KEY ("Id")
+)
+ON COMMIT PRESERVE ROWS
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -29,6 +28,12 @@ FROM
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'TRUNCATE TABLE "IsTemporaryTable"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			NULL;
+	END;
 	EXECUTE IMMEDIATE 'DROP TABLE "IsTemporaryTable"';
 EXCEPTION
 	WHEN OTHERS THEN
