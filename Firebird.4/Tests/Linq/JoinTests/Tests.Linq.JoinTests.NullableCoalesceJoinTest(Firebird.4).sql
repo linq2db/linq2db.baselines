@@ -2,15 +2,16 @@
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'tmptbl1')) THEN
-		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
-(
-	ID      Int                                    NOT NULL,
-	"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+		EXECUTE STATEMENT '
+			CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
+			(
+				ID      Int                                    NOT NULL,
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+				CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
+			)
+			ON COMMIT PRESERVE ROWS
+		';
 END
 
 -- Firebird.4 Firebird4
@@ -27,15 +28,16 @@ SELECT 2,NULL FROM rdb$database
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'tmptbl2')) THEN
-		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
-(
-	ID      Int                                    NOT NULL,
-	"Value" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+		EXECUTE STATEMENT '
+			CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
+			(
+				ID      Int                                    NOT NULL,
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
 
-	CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+				CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
+			)
+			ON COMMIT PRESERVE ROWS
+		';
 END
 
 -- Firebird.4 Firebird4
@@ -52,15 +54,16 @@ SELECT 3,'Value2' FROM rdb$database
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'tmptbl3')) THEN
-		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
-(
-	ID      Int                                    NOT NULL,
-	"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+		EXECUTE STATEMENT '
+			CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
+			(
+				ID      Int                                    NOT NULL,
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
 
-	CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+				CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
+			)
+			ON COMMIT PRESERVE ROWS
+		';
 END
 
 -- Firebird.4 Firebird4
