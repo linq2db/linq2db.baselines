@@ -2,16 +2,15 @@
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IsTemporaryTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
-			(
-				"Id"    Int NOT NULL,
-				"Value" Int NOT NULL,
+		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
+(
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL,
 
-				CONSTRAINT "PK_IsTemporaryTable" PRIMARY KEY ("Id")
-			)
-			ON COMMIT PRESERVE ROWS
-		';
+	CONSTRAINT "PK_IsTemporaryTable" PRIMARY KEY ("Id")
+)
+ON COMMIT PRESERVE ROWS
+';
 END
 
 -- Firebird.3 Firebird3

@@ -9,14 +9,13 @@ END
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TempTable"
-			(
-				"Name" VarChar(20) CHARACTER SET UNICODE_FSS NOT NULL,
+		EXECUTE STATEMENT 'CREATE TABLE "TempTable"
+(
+	"Name" VarChar(20) CHARACTER SET UNICODE_FSS NOT NULL,
 
-				CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
-			)
-		';
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
+)
+';
 END
 
 -- Firebird.3 Firebird3
