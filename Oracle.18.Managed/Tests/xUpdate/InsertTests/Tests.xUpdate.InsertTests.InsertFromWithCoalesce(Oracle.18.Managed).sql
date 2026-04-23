@@ -7,7 +7,7 @@ INSERT INTO "Thing"
 )
 SELECT
 	1,
-	Coalesce(t2."c1", 0) + 1
+	Nvl(t2."c1", 0) + 1
 FROM
 	(
 		SELECT DISTINCT

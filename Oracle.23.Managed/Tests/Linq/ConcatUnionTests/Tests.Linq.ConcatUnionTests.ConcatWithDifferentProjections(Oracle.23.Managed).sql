@@ -8,7 +8,7 @@ FROM
 	"Parent" p1
 UNION ALL
 SELECT
-	Coalesce(p2."Value1", 0),
+	Nvl(p2."Value1", 0),
 	NULL,
 	NULL
 FROM

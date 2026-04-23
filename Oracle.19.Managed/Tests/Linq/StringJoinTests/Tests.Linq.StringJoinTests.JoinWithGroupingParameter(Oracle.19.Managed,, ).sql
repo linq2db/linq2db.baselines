@@ -4,8 +4,8 @@ SET     @separator = ', '
 
 SELECT
 	g_1."Id",
-	Coalesce(LISTAGG(Coalesce(g_1."NullableValue", ''), :separator) WITHIN GROUP (ORDER BY g_1."NullableValue"), ''),
-	Coalesce(LISTAGG(g_1."NotNullableValue", :separator) WITHIN GROUP (ORDER BY g_1."NotNullableValue"), '')
+	Nvl(LISTAGG(Nvl(g_1."NullableValue", ''), :separator) WITHIN GROUP (ORDER BY g_1."NullableValue"), ''),
+	Nvl(LISTAGG(g_1."NotNullableValue", :separator) WITHIN GROUP (ORDER BY g_1."NotNullableValue"), '')
 FROM
 	"SampleClass" g_1
 GROUP BY

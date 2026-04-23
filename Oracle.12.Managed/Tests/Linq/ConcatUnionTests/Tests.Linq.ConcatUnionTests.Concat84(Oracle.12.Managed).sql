@@ -10,7 +10,7 @@ UNION ALL
 SELECT
 	c_2."ParentID",
 	c_2."ParentID",
-	Coalesce(c_2."Value1", 0)
+	Nvl(c_2."Value1", 0)
 FROM
 	"Parent" c_2
 

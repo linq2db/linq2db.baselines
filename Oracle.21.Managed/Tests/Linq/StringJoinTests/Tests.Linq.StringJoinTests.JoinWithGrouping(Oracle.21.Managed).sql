@@ -2,7 +2,7 @@
 
 SELECT
 	g_1."Id",
-	LISTAGG(Coalesce(g_1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY g_1."NullableValue"),
+	LISTAGG(Nvl(g_1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY g_1."NullableValue"),
 	LISTAGG(g_1."NotNullableValue", ', ') WITHIN GROUP (ORDER BY g_1."NotNullableValue")
 FROM
 	"SampleClass" g_1

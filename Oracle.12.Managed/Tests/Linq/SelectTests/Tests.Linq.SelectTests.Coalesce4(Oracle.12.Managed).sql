@@ -1,7 +1,7 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	Coalesce((
+	Nvl((
 		SELECT
 			a_Parent."Value1"
 		FROM

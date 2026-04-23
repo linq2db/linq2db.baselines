@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN "Parent" y ON a_2."ParentID" = y."ParentID"
 		LEFT JOIN "Parent" a ON a_2."ParentID" = a."ParentID"
 		LEFT JOIN "Parent" z ON a_2."ParentID" = z."ParentID"
-		LEFT JOIN "Parent" z_1 ON a_2."ParentID" = Coalesce(z_1."Value1", 1)
+		LEFT JOIN "Parent" z_1 ON a_2."ParentID" = Nvl(z_1."Value1", 1)
 		LEFT JOIN "Parent" a_1 ON a_2."ParentID" = a_1."ParentID"
 
 -- Oracle.11.Managed Oracle11

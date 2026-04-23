@@ -10,7 +10,7 @@ FROM
 			"Person" ch
 	) t1
 ORDER BY
-	Coalesce(t1."MiddleName", '-1')
+	Nvl(t1."MiddleName", '-1')
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
