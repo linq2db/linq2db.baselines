@@ -9,13 +9,12 @@ END
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "CreateIfNotExistsTable"
-		(
-			"Id"    Int NOT NULL,
-			"Value" Int NOT NULL
-		)
-	';
+	EXECUTE IMMEDIATE 'CREATE TABLE "CreateIfNotExistsTable"
+(
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL
+)
+';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -43,13 +42,12 @@ FROM
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "CreateIfNotExistsTable"
-		(
-			"Id"    Int NOT NULL,
-			"Value" Int NOT NULL
-		)
-	';
+	EXECUTE IMMEDIATE 'CREATE TABLE "CreateIfNotExistsTable"
+(
+	"Id"    Int NOT NULL,
+	"Value" Int NOT NULL
+)
+';
 END
 
 -- DB2 DB2.LUW DB2LUW
