@@ -1,31 +1,26 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"Ints"
+	"Ints" i
 SET
-	"One" = "Ints"."Two" * 5,
-	"Two" = "Ints"."Two" * 10,
-	"Four" = "Ints"."One" * "Ints"."Four",
-	"Nil" = 600,
-	"Three" = (
+	"One" = i."Two" * 5,
+	("Two", "Three") = (
 		SELECT
-			j_1."Three" * 100
+			i."Two" * 10,
+			j."Three" * 100
 		FROM
-			"Ints" i_1
-				LEFT JOIN "Ints" j_1 ON j_1."One" = 1
+			"Ints" j
 		WHERE
-			i_1."One" = 10 AND "Ints"."Id" = i_1."Id"
+			j."One" = 1
+	),
+	("Four", "Nil") = (
+		SELECT
+			i."One" * i."Four",
+			600
+		FROM SYS.DUAL
 	)
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Ints" i
-				LEFT JOIN "Ints" j ON j."One" = 1
-		WHERE
-			i."One" = 10 AND "Ints"."Id" = i."Id"
-	)
+	i."One" = 10
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
