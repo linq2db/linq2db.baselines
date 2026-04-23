@@ -15,14 +15,15 @@ VALUES
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE 'CREATE TABLE "TempTable"
-(
-	"Id"      Int           NOT NULL,
-	"Renamed" NVarChar(255)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "TempTable"
+		(
+			"Id"      Int           NOT NULL,
+			"Renamed" NVarChar(255)     NULL,
 
-	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
-)
-';
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
+		)
+	';
 END
 
 -- DB2 DB2.LUW DB2LUW

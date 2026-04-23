@@ -2,15 +2,16 @@
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
-(
-	ID         Int          NOT NULL,
-	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "FluentTemp"
+		(
+			ID         Int          NOT NULL,
+			"Value"    NVarChar(20)     NULL,
+			"LastName" NVarChar(20)     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-)
-';
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+		)
+	';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -56,15 +57,16 @@ END
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
-(
-	ID         Int          NOT NULL,
-	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "FluentTemp"
+		(
+			ID         Int          NOT NULL,
+			"Value"    NVarChar(20)     NULL,
+			"LastName" NVarChar(20)     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-)
-';
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+		)
+	';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -110,15 +112,16 @@ END
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
-(
-	ID         Int          NOT NULL,
-	"Column"   NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "FluentTemp"
+		(
+			ID         Int          NOT NULL,
+			"Column"   NVarChar(20)     NULL,
+			"LastName" NVarChar(20)     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-)
-';
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+		)
+	';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -164,15 +167,16 @@ END
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
-(
-	ID         Int          NOT NULL,
-	"Column"   NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "FluentTemp"
+		(
+			ID         Int          NOT NULL,
+			"Column"   NVarChar(20)     NULL,
+			"LastName" NVarChar(20)     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-)
-';
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+		)
+	';
 END
 
 -- DB2 DB2.LUW DB2LUW
