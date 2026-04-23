@@ -1,16 +1,15 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
-		(
-			ID         Int         NOT NULL,
-			"Value"    VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL,
+	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
+(
+	ID         Int         NOT NULL,
+	"Value"    VarChar(20)     NULL,
+	"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-		)
-	';
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+)
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -64,16 +63,15 @@ END;
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
-		(
-			ID         Int         NOT NULL,
-			"Value"    VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL,
+	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
+(
+	ID         Int         NOT NULL,
+	"Value"    VarChar(20)     NULL,
+	"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-		)
-	';
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+)
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -127,16 +125,15 @@ END;
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
-		(
-			ID         Int         NOT NULL,
-			"Column"   VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL,
+	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
+(
+	ID         Int         NOT NULL,
+	"Column"   VarChar(20)     NULL,
+	"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-		)
-	';
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+)
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -190,16 +187,15 @@ END;
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
-		(
-			ID         Int         NOT NULL,
-			"Column"   VarChar(20)     NULL,
-			"LastName" VarChar(20)     NULL,
+	EXECUTE IMMEDIATE 'CREATE TABLE "FluentTemp"
+(
+	ID         Int         NOT NULL,
+	"Column"   VarChar(20)     NULL,
+	"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-		)
-	';
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+)
+';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
