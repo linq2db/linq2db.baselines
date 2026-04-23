@@ -12,13 +12,14 @@ END;
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE GLOBAL TEMPORARY TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-ON COMMIT PRESERVE ROWS
-';
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE "CreateIfNotExistsTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+		ON COMMIT PRESERVE ROWS
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -37,12 +38,13 @@ FROM
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-';
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CreateIfNotExistsTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
