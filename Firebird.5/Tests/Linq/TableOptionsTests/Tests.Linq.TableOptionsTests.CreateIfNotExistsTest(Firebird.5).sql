@@ -9,12 +9,13 @@ END
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateIfNotExistsTable')) THEN
-		EXECUTE STATEMENT 'CREATE TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-';
+		EXECUTE STATEMENT '
+			CREATE TABLE "CreateIfNotExistsTable"
+			(
+				"Id"    Int NOT NULL,
+				"Value" Int NOT NULL
+			)
+		';
 END
 
 -- Firebird.5 Firebird4
@@ -42,12 +43,13 @@ FROM
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CreateIfNotExistsTable')) THEN
-		EXECUTE STATEMENT 'CREATE TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-';
+		EXECUTE STATEMENT '
+			CREATE TABLE "CreateIfNotExistsTable"
+			(
+				"Id"    Int NOT NULL,
+				"Value" Int NOT NULL
+			)
+		';
 END
 
 -- Firebird.5 Firebird4
