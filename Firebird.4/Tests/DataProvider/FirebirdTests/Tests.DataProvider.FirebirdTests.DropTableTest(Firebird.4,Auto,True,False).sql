@@ -23,22 +23,17 @@ END
 -- Firebird.4 Firebird4
 
 EXECUTE BLOCK AS BEGIN
-	EXECUTE STATEMENT '
-		CREATE TABLE "TestIdentityDropTable"
-		(
-			"Field" Int  NOT NULL
-		)
-	';
-	EXECUTE STATEMENT '
-		CREATE GENERATOR "GIDENTITY_TestIdentityDropTable"
-	';
-	EXECUTE STATEMENT '
-		CREATE TRIGGER "TIDENTITY_TestIdentityDropTable" FOR "TestIdentityDropTable"
-		BEFORE INSERT POSITION 0
-		AS BEGIN
-			NEW."Field" = GEN_ID("GIDENTITY_TestIdentityDropTable", 1);
-		END
-	';
+	EXECUTE STATEMENT 'CREATE TABLE "TestIdentityDropTable"
+(
+	"Field" Int  NOT NULL
+)
+';
+	EXECUTE STATEMENT 'CREATE GENERATOR "GIDENTITY_TestIdentityDropTable"';
+	EXECUTE STATEMENT 'CREATE TRIGGER "TIDENTITY_TestIdentityDropTable" FOR "TestIdentityDropTable"
+BEFORE INSERT POSITION 0
+AS BEGIN
+	NEW."Field" = GEN_ID("GIDENTITY_TestIdentityDropTable", 1);
+END';
 END
 
 -- Firebird.4 Firebird4
