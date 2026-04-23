@@ -12,12 +12,13 @@ END;
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-';
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CreateIfNotExistsTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -49,12 +50,13 @@ FROM
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE TABLE "CreateIfNotExistsTable"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-';
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "CreateIfNotExistsTable"
+		(
+			"Id"    Int NOT NULL,
+			"Value" Int NOT NULL
+		)
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN

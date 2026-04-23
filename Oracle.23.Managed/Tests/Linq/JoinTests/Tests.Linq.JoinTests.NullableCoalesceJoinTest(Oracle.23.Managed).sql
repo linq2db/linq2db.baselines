@@ -1,15 +1,16 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
-(
-	ID      Int          NOT NULL,
-	"Value" VarChar(255)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
+		(
+			ID      Int          NOT NULL,
+			"Value" VarChar(255)     NULL,
 
-	CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+			CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
+		)
+		ON COMMIT PRESERVE ROWS
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -27,15 +28,16 @@ SELECT * FROM dual
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
-(
-	ID      Int          NOT NULL,
-	"Value" VarChar(255) NOT NULL,
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
+		(
+			ID      Int          NOT NULL,
+			"Value" VarChar(255) NOT NULL,
 
-	CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+			CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
+		)
+		ON COMMIT PRESERVE ROWS
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
@@ -53,15 +55,16 @@ SELECT * FROM dual
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
-(
-	ID      Int          NOT NULL,
-	"Value" VarChar(255)     NULL,
+	EXECUTE IMMEDIATE '
+		CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
+		(
+			ID      Int          NOT NULL,
+			"Value" VarChar(255)     NULL,
 
-	CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
-)
-ON COMMIT PRESERVE ROWS
-';
+			CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
+		)
+		ON COMMIT PRESERVE ROWS
+	';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -955 THEN
