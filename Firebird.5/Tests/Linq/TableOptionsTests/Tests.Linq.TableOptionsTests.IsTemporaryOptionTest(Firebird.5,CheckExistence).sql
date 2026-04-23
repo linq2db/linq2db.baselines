@@ -2,16 +2,15 @@
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table1')) THEN
-		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "temp_table1"
-			(
-				ID      Int NOT NULL,
-				"Value" Int NOT NULL,
+		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "temp_table1"
+(
+	ID      Int NOT NULL,
+	"Value" Int NOT NULL,
 
-				CONSTRAINT "PK_temp_table1" PRIMARY KEY (ID)
-			)
-			ON COMMIT PRESERVE ROWS
-		';
+	CONSTRAINT "PK_temp_table1" PRIMARY KEY (ID)
+)
+ON COMMIT PRESERVE ROWS
+';
 END
 
 -- Firebird.5 Firebird4
@@ -27,16 +26,15 @@ SELECT 1,2 FROM rdb$database
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'temp_table2')) THEN
-		EXECUTE STATEMENT '
-			CREATE GLOBAL TEMPORARY TABLE "temp_table2"
-			(
-				ID      Int NOT NULL,
-				"Value" Int NOT NULL,
+		EXECUTE STATEMENT 'CREATE GLOBAL TEMPORARY TABLE "temp_table2"
+(
+	ID      Int NOT NULL,
+	"Value" Int NOT NULL,
 
-				CONSTRAINT "PK_temp_table2" PRIMARY KEY (ID)
-			)
-			ON COMMIT PRESERVE ROWS
-		';
+	CONSTRAINT "PK_temp_table2" PRIMARY KEY (ID)
+)
+ON COMMIT PRESERVE ROWS
+';
 END
 
 -- Firebird.5 Firebird4

@@ -2,16 +2,15 @@
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
-			(
-				ID         Int                                   NOT NULL,
-				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+		EXECUTE STATEMENT 'CREATE TABLE "FluentTemp"
+(
+	ID         Int                                   NOT NULL,
+	"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
+	"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
-			)
-		';
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+)
+';
 END
 
 -- Firebird.5 Firebird4
