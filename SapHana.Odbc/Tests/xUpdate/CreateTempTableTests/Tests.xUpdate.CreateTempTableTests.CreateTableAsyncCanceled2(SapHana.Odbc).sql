@@ -1,9 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-DO BEGIN
-	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
-END
+DROP TABLE "TempTable"
 
 -- SapHana.Odbc SapHanaOdbc
 
@@ -27,10 +24,7 @@ FROM
 
 -- SapHana.Odbc SapHanaOdbc
 
-DO BEGIN
-	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
-END
+DROP TABLE "TempTable"
 
 -- SapHana.Odbc SapHanaOdbc
 

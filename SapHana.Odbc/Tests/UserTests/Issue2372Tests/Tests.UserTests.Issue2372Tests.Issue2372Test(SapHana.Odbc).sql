@@ -1,9 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-DO BEGIN
-	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "InventoryResource"';
-END
+DROP TABLE "InventoryResource"
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Id Char(36) -- AnsiStringFixedLength
