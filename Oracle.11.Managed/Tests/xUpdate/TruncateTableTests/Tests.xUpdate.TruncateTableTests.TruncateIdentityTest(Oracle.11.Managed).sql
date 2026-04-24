@@ -118,7 +118,7 @@ BEGIN
 	EXECUTE IMMEDIATE 'ALTER SEQUENCE "SIDENTITY_TestIdTrun" INCREMENT BY -' || l_value || ' MINVALUE 0';
 
 	-- Select once from the sequence, to take its current value back to 0
-	EXECUTE IMMEDIATE 'SELECT "SIDENTITY_TestIdTrun".NEXTVAL FROM dual' INTO l_value;
+	EXECUTE IMMEDIATE 'select "SIDENTITY_TestIdTrun".NEXTVAL FROM dual' INTO l_value;
 
 	-- Set the increment back to 1
 	EXECUTE IMMEDIATE 'ALTER SEQUENCE "SIDENTITY_TestIdTrun" INCREMENT BY 1 MINVALUE 0';
