@@ -1,6 +1,9 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "DropTableTestID"
+DO BEGIN
+	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "DropTableTestID"';
+END
 
 -- SapHana.Odbc SapHanaOdbc
 
