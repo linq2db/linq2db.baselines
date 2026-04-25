@@ -48,7 +48,7 @@ FROM
 					SELECT
 						al_group_2."AlertCode",
 						al_group_2."Id",
-						Nvl(MAX(au_1."TransactionDate"), al_group_2."CreationDate") as "LastUpdate",
+						Coalesce(MAX(au_1."TransactionDate"), al_group_2."CreationDate") as "LastUpdate",
 						al_group_2."AlertKey"
 					FROM
 						"Alert" al_group_2

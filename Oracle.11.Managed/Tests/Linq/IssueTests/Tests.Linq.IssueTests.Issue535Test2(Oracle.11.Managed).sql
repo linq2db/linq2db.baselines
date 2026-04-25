@@ -8,7 +8,7 @@ SELECT
 	q."Id",
 	q."Name",
 	q."ContactEmail",
-	Nvl(q."Enabled", 0)
+	Coalesce(q."Enabled", 0)
 FROM
 	"CustomerBase" q
 WHERE

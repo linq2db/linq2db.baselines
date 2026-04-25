@@ -3,17 +3,17 @@
 UPDATE
 	"SampleClass" t
 SET
-	"VarcharValue" = Nvl((
+	"VarcharValue" = Coalesce((
 		SELECT
-			LISTAGG(Nvl(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
+			LISTAGG(Coalesce(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
 		FROM
 			"SampleClass" a_Children
 		WHERE
 			t."Id" = a_Children."Id"
 	), ''),
-	"NVarcharValue" = Nvl((
+	"NVarcharValue" = Coalesce((
 		SELECT
-			LISTAGG(Nvl(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
+			LISTAGG(Coalesce(a_Children."VarcharValue", ''), ', ') WITHIN GROUP (ORDER BY a_Children."VarcharValue")
 		FROM
 			"SampleClass" a_Children
 		WHERE
