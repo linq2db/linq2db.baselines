@@ -22,13 +22,13 @@ FROM
 			FROM
 				"LinqDataTypes" t
 			WHERE
-				Nvl(t."DateTimeValue", t."DateTimeValue2") <= :currentDate AND
+				Coalesce(t."DateTimeValue", t."DateTimeValue2") <= :currentDate AND
 				(t."DateTimeValue2" IS NULL OR t."DateTimeValue2" >= :currentDate)
 			GROUP BY
 				t.ID
 		) t1 ON o.ID = t1.ID AND (o."DateTimeValue2" = t1."c1" OR o."DateTimeValue2" IS NULL AND t1."c1" IS NULL)
 WHERE
-	Nvl(o."DateTimeValue", o."DateTimeValue2") <= :currentDate AND
+	Coalesce(o."DateTimeValue", o."DateTimeValue2") <= :currentDate AND
 	(o."DateTimeValue2" IS NULL OR o."DateTimeValue2" >= :currentDate)
 ORDER BY
 	o."DateTimeValue2"
