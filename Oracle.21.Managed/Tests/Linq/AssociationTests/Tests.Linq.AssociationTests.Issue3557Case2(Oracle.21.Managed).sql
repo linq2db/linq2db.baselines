@@ -2,7 +2,7 @@
 
 SELECT
 	i."Id",
-	Nvl((
+	Coalesce((
 		SELECT
 			a_SubDatas."Reason"
 		FROM
