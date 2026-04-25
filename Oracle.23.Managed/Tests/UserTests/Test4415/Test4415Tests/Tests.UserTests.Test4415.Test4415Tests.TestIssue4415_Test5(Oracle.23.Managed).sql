@@ -16,7 +16,7 @@ FROM
 WHERE
 	x."LanguageID" IN (
 		SELECT
-			Nvl(MAX(x_1."LanguageID"), '') || 'test'
+			Coalesce(MAX(x_1."LanguageID"), '') || 'test'
 		FROM
 			"Common_Language" x_1
 		GROUP BY
