@@ -17,8 +17,8 @@ FROM
 	[Table404One] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
+DECLARE @p  -- Int32
+SET     @p = 0
 
 SELECT
 	[m_1].[Id],
@@ -29,7 +29,7 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @p
 
 -- SQLite.Classic SQLite
 
@@ -39,8 +39,8 @@ FROM
 	[Table404One] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @p  -- Int32
+SET     @p = 1
 
 SELECT
 	[m_1].[Id],
@@ -51,7 +51,7 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @p
 
 -- SQLite.Classic SQLite
 
@@ -79,30 +79,8 @@ FROM
 	[Table404One] [t1]
 
 -- SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
-
-SELECT
-	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
-	[d].[FirstTableId]
-FROM
-	[Table404One] [m_1]
-		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
-WHERE
-	[d].[Usage] = @Usage
-
--- SQLite.Classic SQLite
-
-SELECT
-	[t1].[Id]
-FROM
-	[Table404One] [t1]
-
--- SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @p  -- Int32
+SET     @p = 0
 
 SELECT
 	[m_1].[Id],
@@ -113,7 +91,29 @@ FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @p
+
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id]
+FROM
+	[Table404One] [t1]
+
+-- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 1
+
+SELECT
+	[m_1].[Id],
+	[d].[Id],
+	[d].[Usage],
+	[d].[FirstTableId]
+FROM
+	[Table404One] [m_1]
+		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
+WHERE
+	[d].[Usage] = @p
 
 -- SQLite.Classic SQLite
 
