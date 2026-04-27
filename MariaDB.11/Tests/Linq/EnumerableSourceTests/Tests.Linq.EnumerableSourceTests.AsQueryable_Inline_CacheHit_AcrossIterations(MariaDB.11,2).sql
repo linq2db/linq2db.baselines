@@ -1,0 +1,13 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Data`
+FROM
+	(
+		SELECT 20 AS `Id`, 'Data 20' AS `Data`
+		UNION ALL
+		SELECT 21, 'Data 21'
+		UNION ALL
+		SELECT 22, 'Data 22') `t1`
+
