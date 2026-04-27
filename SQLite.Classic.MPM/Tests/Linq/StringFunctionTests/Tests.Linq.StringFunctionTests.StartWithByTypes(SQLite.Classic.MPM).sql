@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 NChar(5) -- StringFixedLength
+DECLARE @str_1 Char(5) -- AnsiStringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- AnsiString
+DECLARE @str_2 Char(5) -- AnsiStringFixedLength
 SET     @str_2 = 'some%'
-DECLARE @str_3 NVarChar(5) -- String
+DECLARE @str_3 Char(5) -- AnsiStringFixedLength
 SET     @str_3 = 'some%'
 
 SELECT

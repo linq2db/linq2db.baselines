@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @pageNumber  -- Int32
 SET     @pageNumber = 9
-DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
+DECLARE @serialNumber NVarChar(11) -- String
 SET     @serialNumber = '12345678901'
 
 INSERT INTO [Issue3927Table]

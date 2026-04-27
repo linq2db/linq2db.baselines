@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @fm Char(1) -- AnsiStringFixedLength
+DECLARE @fm NChar(1) -- StringFixedLength
 SET     @fm = 'F'
 
 SELECT

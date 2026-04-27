@@ -28,11 +28,11 @@ VALUES
 SELECT last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @PersonID  -- Int32
-SET     @PersonID = 5
+DECLARE @p  -- Int32
+SET     @p = 5
 
 DELETE FROM
 	[Person]
 WHERE
-	[Person].[PersonID] = @PersonID
+	[Person].[PersonID] = @p
 
