@@ -3,9 +3,9 @@ DECLARE @str Char(5) -- StringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 Char(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- String
+DECLARE @str_2 Char(5) -- StringFixedLength
 SET     @str_2 = 'some%'
-DECLARE @str_3 VarChar(5) -- String
+DECLARE @str_3 Char(5) -- StringFixedLength
 SET     @str_3 = 'some%'
 
 SELECT

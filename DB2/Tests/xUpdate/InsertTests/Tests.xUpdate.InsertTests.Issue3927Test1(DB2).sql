@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @PageNumber Integer(4) -- Int32
 SET     @PageNumber = 9
-DECLARE @serialNumber Char(11) -- StringFixedLength
+DECLARE @serialNumber VarChar(11) -- String
 SET     @serialNumber = '12345678901'
 
 INSERT INTO "Issue3927Table"
