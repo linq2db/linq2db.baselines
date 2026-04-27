@@ -17,8 +17,8 @@ FROM
 	"Table404One" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @p Int -- Int32
+SET     @p = 0
 
 SELECT
 	"m_1"."Id",
@@ -39,8 +39,8 @@ FROM
 	"Table404One" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	"m_1"."Id",
@@ -79,8 +79,8 @@ FROM
 	"Table404One" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @p Int -- Int32
+SET     @p = 0
 
 SELECT
 	"m_1"."Id",
@@ -101,8 +101,8 @@ FROM
 	"Table404One" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	"m_1"."Id",
