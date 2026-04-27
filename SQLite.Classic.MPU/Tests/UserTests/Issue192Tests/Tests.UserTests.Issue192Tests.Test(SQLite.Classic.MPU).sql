@@ -67,15 +67,15 @@ WHERE
 	[t1].[BoolValue] = 'Y'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p NVarChar(36) -- String
-SET     @p = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- AnsiString
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @p
+	[t1].[GuidValue] = @GuidValue
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

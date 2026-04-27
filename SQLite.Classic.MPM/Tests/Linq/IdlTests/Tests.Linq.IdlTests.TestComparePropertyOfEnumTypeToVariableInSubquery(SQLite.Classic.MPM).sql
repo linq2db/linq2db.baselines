@@ -1,5 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @gender NChar(1) -- StringFixedLength
+DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'O'
 
 SELECT
