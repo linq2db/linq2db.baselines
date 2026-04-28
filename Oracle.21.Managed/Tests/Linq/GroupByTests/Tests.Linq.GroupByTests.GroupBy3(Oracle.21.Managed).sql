@@ -1,7 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT
-	Nvl(gr."Value1", c_1."ChildID")
+	Coalesce(gr."Value1", c_1."ChildID")
 FROM
 	"Parent" gr
 		INNER JOIN "Child" c_1 ON gr."ParentID" = c_1."ParentID"

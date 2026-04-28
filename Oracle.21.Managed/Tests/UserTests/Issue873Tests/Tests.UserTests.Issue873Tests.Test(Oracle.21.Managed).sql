@@ -1,7 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	' ' || CAST(Nvl(f."Value1", 0) AS VarChar(255)),
+	' ' || CAST(Coalesce(f."Value1", 0) AS VarChar(255)),
 	t1."SubSum",
 	CASE
 		WHEN EXISTS(
@@ -37,6 +37,6 @@ FROM
 				a_Parent."ParentID" = f."ParentID" AND (a_Parent."Value1" = f."Value1" OR a_Parent."Value1" IS NULL AND f."Value1" IS NULL)
 		) t1
 WHERE
-	' ' || CAST(Nvl(f."Value1", 0) AS VarChar(255)) LIKE '%1%' ESCAPE '~' AND
+	' ' || CAST(Coalesce(f."Value1", 0) AS VarChar(255)) LIKE '%1%' ESCAPE '~' AND
 	t1."SubSum" > 0
 

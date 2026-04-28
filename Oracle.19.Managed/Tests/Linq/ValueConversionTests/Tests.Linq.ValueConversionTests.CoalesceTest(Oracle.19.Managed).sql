@@ -1,7 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Nvl(t1."EnumNullable", t1."Enum")
+	Coalesce(To_NChar(t1."EnumNullable"), t1."Enum")
 FROM
 	"ValueConversion" t1
 

@@ -13,7 +13,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	Nvl(r."BooleanN", 1) = 1
+	Coalesce(r."BooleanN", 1) = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
@@ -45,7 +45,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	Nvl(r."BooleanN", 0) = 1
+	Coalesce(r."BooleanN", 0) = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
@@ -77,7 +77,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	Nvl(r."BooleanN", CASE
+	Coalesce(r."BooleanN", CASE
 		WHEN MOD(r."Id", 2) = 1 THEN 1
 		ELSE 0
 	END) = 1

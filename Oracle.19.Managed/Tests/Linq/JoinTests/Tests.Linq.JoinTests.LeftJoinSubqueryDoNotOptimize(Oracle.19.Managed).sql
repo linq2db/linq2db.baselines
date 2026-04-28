@@ -2,12 +2,12 @@
 
 SELECT
 	p."PersonID",
-	Nvl(m_2."MiddleName", 'default2')
+	Coalesce(m_2."MiddleName", 'default2')
 FROM
 	"Person" p
 		LEFT JOIN (
 			SELECT
-				Nvl(m_1."MiddleName", 'default1') as "MiddleName",
+				Coalesce(m_1."MiddleName", 'default1') as "MiddleName",
 				m_1."PersonID" + 1 as "c1"
 			FROM
 				"Person" m_1

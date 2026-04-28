@@ -1,9 +1,9 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Nvl((
+	Coalesce((
 		SELECT
-			Nvl(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
+			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
 		FROM
 			(
 				SELECT To_NChar(t."NullableValue") AS "item" FROM sys.dual
@@ -14,12 +14,12 @@ SELECT
 				UNION ALL
 				SELECT t."NVarcharValue" FROM sys.dual) t4
 	), ''),
-	Nvl(t3."NotNullDistinctValue", '')
+	Coalesce(t3."NotNullDistinctValue", '')
 FROM
 	"SampleClass" t
 		OUTER APPLY (
 			SELECT
-				LISTAGG(CAST(Nvl(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
+				LISTAGG(CAST(Coalesce(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
 			FROM
 				(
 					SELECT DISTINCT

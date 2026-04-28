@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Nvl(NULLIF(p."FinalCustomerId", 0), p."CustomerId") as "FinalCustomerId",
+			Coalesce(NULLIF(p."FinalCustomerId", 0), p."CustomerId") as "FinalCustomerId",
 			0 as "IsActive",
 			t."Volume" * p."Price" as "c1"
 		FROM

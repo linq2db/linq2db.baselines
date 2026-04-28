@@ -7,7 +7,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	Nvl(x."Value1", :Value1) > 10
+	Coalesce(x."Value1", :Value1) > 10
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
