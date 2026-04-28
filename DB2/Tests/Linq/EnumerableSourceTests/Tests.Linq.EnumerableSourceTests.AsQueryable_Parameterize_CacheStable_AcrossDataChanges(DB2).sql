@@ -1,0 +1,38 @@
+﻿-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 0
+DECLARE @Data VarChar(6) -- String
+SET     @Data = 'Data 0'
+DECLARE @Id_1 Integer(4) -- Int32
+SET     @Id_1 = 1
+DECLARE @Data_1 VarChar(6) -- String
+SET     @Data_1 = 'Data 1'
+
+SELECT
+	"t1"."Id",
+	"t1"."Data"
+FROM
+	(VALUES
+		(CAST(@Id AS Int),CAST(@Data AS NVarChar(255))),
+		(CAST(@Id_1 AS Int),CAST(@Data_1 AS NVarChar(255)))
+	) "t1"("Id", "Data")
+
+-- DB2 DB2.LUW DB2LUW
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 100
+DECLARE @Data VarChar(8) -- String
+SET     @Data = 'Data 100'
+DECLARE @Id_1 Integer(4) -- Int32
+SET     @Id_1 = 101
+DECLARE @Data_1 VarChar(8) -- String
+SET     @Data_1 = 'Data 101'
+
+SELECT
+	"t1"."Id",
+	"t1"."Data"
+FROM
+	(VALUES
+		(CAST(@Id AS Int),CAST(@Data AS NVarChar(255))),
+		(CAST(@Id_1 AS Int),CAST(@Data_1 AS NVarChar(255)))
+	) "t1"("Id", "Data")
+
