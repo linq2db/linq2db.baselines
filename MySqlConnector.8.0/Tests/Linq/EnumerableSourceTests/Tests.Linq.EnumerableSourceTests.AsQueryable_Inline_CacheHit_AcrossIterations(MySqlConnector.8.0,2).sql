@@ -1,0 +1,13 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Data`
+FROM
+	(
+		SELECT 20 AS `Id`, 'Data 20' AS `Data`
+		UNION ALL
+		SELECT 21, 'Data 21'
+		UNION ALL
+		SELECT 22, 'Data 22') `t1`
+
