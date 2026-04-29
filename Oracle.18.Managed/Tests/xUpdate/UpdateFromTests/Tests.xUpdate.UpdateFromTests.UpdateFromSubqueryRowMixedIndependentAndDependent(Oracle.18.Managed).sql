@@ -3,14 +3,18 @@
 UPDATE
 	"UpdateSubquerySourceTable" x
 SET
-	"FirstName" = 'literalFirst',
-	"LastName" = (
+	("FirstName", "LastName") = (
 		SELECT
-			t."LastName"
-		FROM
-			"UpdateSubquerySourceTable" t
-		WHERE
-			t."Id" = x."Id" + 1 AND ROWNUM <= 1
+			'literalFirst',
+			(
+				SELECT
+					t."LastName"
+				FROM
+					"UpdateSubquerySourceTable" t
+				WHERE
+					t."Id" = x."Id" + 1 AND ROWNUM <= 1
+			)
+		FROM SYS.DUAL
 	)
 WHERE
 	x."Id" = 1
