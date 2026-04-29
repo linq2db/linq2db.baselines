@@ -74,7 +74,7 @@ FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id2 Int32
-SET     @id2 = 25
+SET     @id2 = 6
 
 SELECT
 	t1."PersonID" as ID,
