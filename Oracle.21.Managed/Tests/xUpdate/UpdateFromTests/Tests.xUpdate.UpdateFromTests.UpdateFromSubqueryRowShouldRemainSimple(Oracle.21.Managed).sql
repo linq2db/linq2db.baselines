@@ -5,13 +5,20 @@ UPDATE
 SET
 	("Value1", "Value2") = (
 		SELECT
-			n2."Value1",
+			n3."RelatedValue1",
 			n3."RelatedValue2"
 		FROM
-			"UpdatedEntities" n2
-				INNER JOIN "UpdateRelation" n3 ON n2."RelationId" = n3."id"
+			"UpdateRelation" n3
 		WHERE
-			n2."id" = "NewEntities"."id" AND n3."RelatedValue3" < 1000
+			(
+				SELECT
+					n2."id"
+				FROM
+					"UpdatedEntities" n2
+				WHERE
+					n2."id" = "NewEntities"."id" AND ROWNUM <= 1
+			) IS NOT NULL AND
+			"NewEntities"."Value1" = n3."id" AND ROWNUM <= 1
 	)
 WHERE
 	"NewEntities"."id" = 7
