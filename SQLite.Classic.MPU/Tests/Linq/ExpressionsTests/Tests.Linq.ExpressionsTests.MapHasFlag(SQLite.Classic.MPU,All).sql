@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @flag  -- Int32
-SET     @flag = 1
+SET     @flag = 7
 
 SELECT
 	[t].[Id],
