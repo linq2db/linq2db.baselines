@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @flag  -- Int32
-SET     @flag = 4
+SET     @flag = 7
 
 SELECT
 	[t].[Id],
