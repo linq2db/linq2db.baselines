@@ -7,5 +7,5 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	bitAnd(t.Flags, 4) = 4
+	bitAnd(t.Flags, 7) = 7
 
