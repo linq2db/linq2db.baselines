@@ -2,9 +2,9 @@
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08'
 DECLARE @SomeNullableDateTimeOffset  -- DateTimeOffset
-SET     @SomeNullableDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeNullableDateTimeOffset = '2019-08-08 08:08:08'
 
 INSERT INTO [Issue1855Table]
 (
@@ -23,7 +23,7 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08'
 
 INSERT INTO [Issue1855Table]
 (
@@ -38,7 +38,7 @@ VALUES
 
 -- SQLite.MS SQLite
 DECLARE @clientSideIn  -- DateTimeOffset
-SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
+SET     @clientSideIn = '2019-08-08 08:08:18'
 
 SELECT
 	[r].[Id],
