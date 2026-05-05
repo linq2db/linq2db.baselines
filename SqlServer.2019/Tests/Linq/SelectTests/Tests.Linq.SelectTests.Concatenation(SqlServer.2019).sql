@@ -1,10 +1,18 @@
 ﻿-- SqlServer.2019
 
 SELECT
-	[p].[PersonID],
-	N'123' + [p].[FirstName] + N'456'
+	[p_1].[ID],
+	[p_1].[FirstName]
 FROM
-	[Person] [p]
+	(
+		SELECT
+			N'123' + [p].[FirstName] + N'456' as [FirstName],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [p_1]
 WHERE
-	[p].[PersonID] = 1 AND N'123' + [p].[FirstName] + N'456' = N'123John456'
+	[p_1].[FirstName] = N'123John456'
 
