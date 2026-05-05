@@ -6,12 +6,12 @@ SELECT
 FROM
 	"Item" x
 ORDER BY
-	(
+	Coalesce((
 		SELECT
-			SUM(a_Values."Value")
+			Coalesce(SUM(a_Values."Value"), 0)
 		FROM
 			"ItemValue" a_Values
 		WHERE
 			x."Id" = a_Values."ItemId"
-	)
+	), 0)
 

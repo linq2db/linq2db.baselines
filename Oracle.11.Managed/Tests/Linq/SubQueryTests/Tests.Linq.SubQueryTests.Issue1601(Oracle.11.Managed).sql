@@ -9,12 +9,12 @@ SELECT
 FROM
 	(
 		SELECT
-			(
+			Coalesce((
 				SELECT
-					SUM(t1."MoneyValue")
+					Coalesce(SUM(t1."MoneyValue"), 0)
 				FROM
 					"LinqDataTypes" t1
-			) as "x"
+			), 0) as "x"
 		FROM
 			"LinqDataTypes" q
 	) t2

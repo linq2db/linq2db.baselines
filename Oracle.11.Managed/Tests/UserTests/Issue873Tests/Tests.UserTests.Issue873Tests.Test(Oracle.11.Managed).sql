@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)),
-	t1."SubSum",
+	Coalesce(t1."SubSum", 0),
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -31,7 +31,7 @@ FROM
 			f."Value1",
 			(
 				SELECT
-					SUM(c_1."ChildID")
+					Coalesce(SUM(c_1."ChildID"), 0)
 				FROM
 					"Child" c_1
 						LEFT JOIN "Parent" a_Parent ON c_1."ParentID" = a_Parent."ParentID"
@@ -44,5 +44,5 @@ FROM
 	) t1
 WHERE
 	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)) LIKE '%1%' ESCAPE '~' AND
-	t1."SubSum" > 0
+	Coalesce(t1."SubSum", 0) > 0
 
