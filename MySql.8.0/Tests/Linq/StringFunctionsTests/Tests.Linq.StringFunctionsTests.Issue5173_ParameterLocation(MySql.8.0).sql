@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	GROUP_CONCAT(Concat('test:', CAST(`grp_1`.`ch` AS CHAR(11))) SEPARATOR ';')
+	GROUP_CONCAT(CONCAT_WS('', 'test:', `grp_1`.`ch`) SEPARATOR ';')
 FROM
 	(
 		SELECT
