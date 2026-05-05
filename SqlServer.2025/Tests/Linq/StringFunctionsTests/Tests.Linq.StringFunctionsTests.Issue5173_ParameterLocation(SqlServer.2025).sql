@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025
 
 SELECT
-	STRING_AGG(N'test:' + CAST([grp_1].[ch] AS VarChar(11)), N';')
+	STRING_AGG(CONCAT_WS(N'', N'test:', [grp_1].[ch]), N';')
 FROM
 	(
 		SELECT

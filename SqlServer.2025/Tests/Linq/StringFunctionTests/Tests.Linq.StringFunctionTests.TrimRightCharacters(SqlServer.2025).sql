@@ -1,10 +1,18 @@
 ﻿-- SqlServer.2025
 
 SELECT
-	[pp].[PersonID],
-	N'  ' + [pp].[FirstName] + N' '
+	[pp].[ID],
+	[pp].[Name]
 FROM
-	[Person] [pp]
+	(
+		SELECT
+			N'  ' + [p].[FirstName] + N' ' as [Name],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [pp]
 WHERE
-	[pp].[PersonID] = 1 AND RTRIM((N'  ' + [pp].[FirstName] + N' '), N' n') = N'  Joh'
+	RTRIM([pp].[Name], N' n') = N'  Joh'
 
