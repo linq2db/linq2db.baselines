@@ -10,14 +10,14 @@ SELECT
 		WHERE
 			`o`.`ParentID` = `a_Children`.`ParentID`
 	),
-	(
+	Coalesce((
 		SELECT
-			SUM(`a_Children_1`.`ParentID`)
+			Coalesce(SUM(`a_Children_1`.`ParentID`), 0)
 		FROM
 			`Child` `a_Children_1`
 		WHERE
 			`o`.`ParentID` = `a_Children_1`.`ParentID`
-	)
+	), 0)
 FROM
 	`Parent` `o`
 
@@ -46,14 +46,14 @@ FROM
 					`o`.`ParentID` = `a_Children`.`ParentID`
 			) as `CountResult`,
 			`o`.`ParentID`,
-			(
+			Coalesce((
 				SELECT
-					SUM(`a_Children_1`.`ParentID`)
+					Coalesce(SUM(`a_Children_1`.`ParentID`), 0)
 				FROM
 					`Child` `a_Children_1`
 				WHERE
 					`o`.`ParentID` = `a_Children_1`.`ParentID`
-			) as `SumResult`
+			), 0) as `SumResult`
 		FROM
 			`Parent` `o`
 	) `x`

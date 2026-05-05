@@ -1,14 +1,14 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	(
+	Coalesce((
 		SELECT
-			SUM(`a_Children`.`ChildID`)
+			Coalesce(SUM(`a_Children`.`ChildID`), 0)
 		FROM
 			`Child` `a_Children`
 		WHERE
 			`g_2`.`ParentID` = `a_Children`.`ParentID`
-	)
+	), 0)
 FROM
 	(
 		SELECT DISTINCT
