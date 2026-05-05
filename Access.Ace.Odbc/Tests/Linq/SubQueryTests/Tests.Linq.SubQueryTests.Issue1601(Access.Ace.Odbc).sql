@@ -8,7 +8,7 @@ FROM
 		SELECT
 			(
 				SELECT
-					SUM([t1].[MoneyValue])
+					IIF(SUM([t1].[MoneyValue]) IS NULL, 0, SUM([t1].[MoneyValue]))
 				FROM
 					[LinqDataTypes] [t1]
 			) as [x]

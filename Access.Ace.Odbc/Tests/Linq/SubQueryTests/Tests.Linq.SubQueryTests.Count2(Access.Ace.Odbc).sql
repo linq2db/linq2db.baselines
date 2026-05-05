@@ -6,17 +6,23 @@ SELECT
 FROM
 	(
 		SELECT
+			IIF([t1].[Value1] IS NULL, 0, [t1].[Value1]) / 2 as [Value1],
+			[t1].[ParentID]
+		FROM
 			(
 				SELECT
-					SUM([a_Children].[ParentID])
+					(
+						SELECT
+							IIF(SUM([a_Children].[ParentID]) IS NULL, 0, SUM([a_Children].[ParentID]))
+						FROM
+							[Child] [a_Children]
+						WHERE
+							[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 0
+					) as [Value1],
+					[p].[ParentID]
 				FROM
-					[Child] [a_Children]
-				WHERE
-					[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 0
-			) / 2 as [Value1],
-			[p].[ParentID]
-		FROM
-			[Parent] [p]
+					[Parent] [p]
+			) [t1]
 	) [p_1]
 WHERE
 	[p_1].[Value1] > 1
