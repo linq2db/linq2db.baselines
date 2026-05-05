@@ -23,9 +23,9 @@ FROM
 							COUNT(*) as [Conditional]
 						FROM
 							[SomeItem] [t1]
-					), 0)),
-					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),NULL,[a_Style].[Name],0)
-				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional])
+					), 0),[a_Style].[Name]),
+					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),NULL,[a_Style].[Name],0,[a_Style].[Name])
+				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional], [StyleName1])
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]
