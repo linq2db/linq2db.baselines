@@ -1,14 +1,19 @@
 ﻿-- SqlServer.2022
 
 SELECT
-	[p].[Key_1] + N'2'
+	[p].[c1]
 FROM
 	(
-		SELECT DISTINCT
-			IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, N'1', N'2'), N'3') as [Key_1]
+		SELECT
+			[ch].[Key_1] + N'2' as [c1]
 		FROM
-			[Child] [g_1]
+			(
+				SELECT DISTINCT
+					IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, N'1', N'2'), N'3') as [Key_1]
+				FROM
+					[Child] [g_1]
+			) [ch]
 	) [p]
 WHERE
-	[p].[Key_1] + N'2' = N'22'
+	[p].[c1] = N'22'
 
