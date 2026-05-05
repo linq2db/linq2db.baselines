@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[Sum_1]
+	Coalesce([t1].[Sum_1], 0) as [Sum_1]
 FROM
 	(
 		SELECT DISTINCT
@@ -13,7 +13,7 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children].[ChildID]) as [Sum_1]
+				Coalesce(SUM([a_Children].[ChildID]), 0) as [Sum_1]
 			FROM
 				[Child] [a_Children]
 			WHERE

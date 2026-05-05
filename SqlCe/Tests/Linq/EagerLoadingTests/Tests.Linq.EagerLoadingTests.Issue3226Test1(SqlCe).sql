@@ -7,12 +7,12 @@ FROM
 	[Item] [x]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Values].[Value]) as [Sum_1]
+				Coalesce(SUM([a_Values].[Value]), 0) as [Sum_1]
 			FROM
 				[ItemValue] [a_Values]
 			WHERE
 				[x].[Id] = [a_Values].[ItemId]
 		) [t1]
 ORDER BY
-	[t1].[Sum_1]
+	Coalesce([t1].[Sum_1], 0)
 

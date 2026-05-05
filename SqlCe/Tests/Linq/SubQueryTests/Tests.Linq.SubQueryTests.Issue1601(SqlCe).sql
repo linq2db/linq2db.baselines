@@ -2,16 +2,21 @@
 
 SELECT
 	CASE
-		WHEN [t2].[x] < 0 THEN 9
-		ELSE [t2].[x] + 8
+		WHEN [t3].[x] < 0 THEN 9
+		ELSE [t3].[x] + 8
 	END as [Y1],
-	[t2].[x] + [t2].[x] as [Y2]
+	[t3].[x] + [t3].[x] as [Y2]
 FROM
-	[LinqDataTypes] [q]
-		LEFT JOIN (
-			SELECT
-				SUM([t1].[MoneyValue]) as [x]
-			FROM
-				[LinqDataTypes] [t1]
-		) [t2] ON 1=1
+	(
+		SELECT
+			Coalesce([t2].[x], 0) as [x]
+		FROM
+			[LinqDataTypes] [q]
+				LEFT JOIN (
+					SELECT
+						Coalesce(SUM([t1].[MoneyValue]), 0) as [x]
+					FROM
+						[LinqDataTypes] [t1]
+				) [t2] ON 1=1
+	) [t3]
 

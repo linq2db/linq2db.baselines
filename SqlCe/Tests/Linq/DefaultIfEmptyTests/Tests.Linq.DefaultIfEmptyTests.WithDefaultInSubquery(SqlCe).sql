@@ -1,15 +1,15 @@
 ﻿-- SqlCe
 
 SELECT
-	[t2].[Sum_1]
+	Coalesce([t2].[Sum_1], 0) as [Sum_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				SUM(CASE
+				Coalesce(SUM(CASE
 					WHEN [d].[ParentID] IS NOT NULL THEN [d].[ParentID]
 					ELSE -100
-				END) as [Sum_1]
+				END), 0) as [Sum_1]
 			FROM
 				(
 					SELECT

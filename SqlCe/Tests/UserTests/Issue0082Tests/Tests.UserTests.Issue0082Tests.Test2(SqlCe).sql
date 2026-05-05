@@ -3,7 +3,7 @@
 SELECT
 	[o].[ParentID],
 	[t1].[CountResult],
-	[t2].[SumResult]
+	Coalesce([t2].[SumResult], 0) as [SumResult]
 FROM
 	[Parent] [o]
 		OUTER APPLY (
@@ -16,7 +16,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children_1].[ParentID]) as [SumResult]
+				Coalesce(SUM([a_Children_1].[ParentID]), 0) as [SumResult]
 			FROM
 				[Child] [a_Children_1]
 			WHERE
@@ -35,7 +35,7 @@ FROM
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],
-	[t2].[SumResult]
+	Coalesce([t2].[SumResult], 0) as [SumResult]
 FROM
 	[Parent] [x]
 		OUTER APPLY (
@@ -48,7 +48,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children_1].[ParentID]) as [SumResult]
+				Coalesce(SUM([a_Children_1].[ParentID]), 0) as [SumResult]
 			FROM
 				[Child] [a_Children_1]
 			WHERE

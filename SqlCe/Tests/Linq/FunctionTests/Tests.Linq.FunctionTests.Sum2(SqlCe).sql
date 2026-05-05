@@ -1,12 +1,12 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[ChildCount]
+	Coalesce([t1].[ChildCount], 0) as [ChildCount]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children].[ParentID] * [a_Children].[ChildID]) as [ChildCount]
+				Coalesce(SUM([a_Children].[ParentID] * [a_Children].[ChildID]), 0) as [ChildCount]
 			FROM
 				[Child] [a_Children]
 			WHERE

@@ -2,12 +2,12 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[count_1]
+	Coalesce([t1].[count_1], 0) as [count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				SUM([c_1].[ChildID]) as [count_1]
+				Coalesce(SUM([c_1].[ChildID]), 0) as [count_1]
 			FROM
 				[Child] [c_1]
 			WHERE
