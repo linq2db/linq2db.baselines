@@ -10,7 +10,7 @@ FROM
 			[x].[Text],
 			(
 				SELECT
-					SUM([a_Values].[Value])
+					IIF(SUM([a_Values].[Value]) IS NULL, 0, SUM([a_Values].[Value]))
 				FROM
 					[ItemValue] [a_Values]
 				WHERE
@@ -20,5 +20,5 @@ FROM
 			[Item] [x]
 	) [x_1]
 ORDER BY
-	[x_1].[Sum_1]
+	IIF([x_1].[Sum_1] IS NULL, 0, [x_1].[Sum_1])
 

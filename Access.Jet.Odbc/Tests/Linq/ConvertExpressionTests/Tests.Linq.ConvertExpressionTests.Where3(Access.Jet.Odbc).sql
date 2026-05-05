@@ -1,17 +1,23 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
+	IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
+FROM
 	(
 		SELECT
-			SUM([a_Children].[ChildID])
+			(
+				SELECT
+					IIF(SUM([a_Children].[ChildID]) IS NULL, 0, SUM([a_Children].[ChildID]))
+				FROM
+					[Child] [a_Children]
+				WHERE
+					[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 1 AND
+					[a_Children].[ParentID] < 10
+			) as [Sum_1],
+			[p].[ParentID]
 		FROM
-			[Child] [a_Children]
-		WHERE
-			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] > 1 AND
-			[a_Children].[ParentID] < 10
-	)
-FROM
-	[Parent] [p]
+			[Parent] [p]
+	) [t1]
 WHERE
 	EXISTS(
 		SELECT
@@ -19,7 +25,7 @@ WHERE
 		FROM
 			[Child] [c_1]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1 AND
+			[t1].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] > 1 AND
 			[c_1].[ParentID] < 10
 	)
 
