@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	STRING_AGG('test:' || grp_1.ch::VarChar(11), ';')
+	STRING_AGG(CONCAT_WS('', 'test:', grp_1.ch), ';')
 FROM
 	(
 		SELECT
