@@ -12,23 +12,23 @@ FROM
 		FROM
 			`Issue4629Posts` `p`
 		WHERE
-			(
+			Coalesce((
 				SELECT
-					SUM(`a_Tags`.`Weight`)
+					Coalesce(SUM(`a_Tags`.`Weight`), 0)
 				FROM
 					`Issue4629Tags` `a_Tags`
 				WHERE
 					`p`.`Id` = `a_Tags`.`PostId` AND `a_Tags`.`Weight` > 1
-			) > 5
+			), 0) > 5
 		ORDER BY
-			(
+			Coalesce((
 				SELECT
-					SUM(`a_Tags_1`.`Weight`)
+					Coalesce(SUM(`a_Tags_1`.`Weight`), 0)
 				FROM
 					`Issue4629Tags` `a_Tags_1`
 				WHERE
 					`p`.`Id` = `a_Tags_1`.`PostId`
-			)
+			), 0)
 		LIMIT @take
 	) `id`
 
