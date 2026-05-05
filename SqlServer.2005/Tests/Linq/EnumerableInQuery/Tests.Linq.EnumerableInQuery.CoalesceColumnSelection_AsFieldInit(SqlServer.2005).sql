@@ -33,12 +33,12 @@ FROM
 							[SomeItem] [t1]
 					)
 					ELSE 0
-				END AS [Conditional]
+				END AS [Conditional], [a_Style].[Name] AS [StyleName1]
 					UNION ALL
 					SELECT NULL, [a_Style].[Name], Coalesce(CASE
 					WHEN [a_Color_1].[Id] IS NULL THEN NULL
 					ELSE [t2].[ColorId]
-				END, 0), NULL, [a_Style].[Name], 0) [it]
+				END, 0), NULL, [a_Style].[Name], 0, [a_Style].[Name]) [it]
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]

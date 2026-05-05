@@ -22,7 +22,7 @@ WHERE
 				SELECT [p].[Date3]
 				UNION ALL
 				SELECT [p].[Date4]) [t1]
-	) > CAST('2023-01-01' AS DateTime)
+	) > CAST(N'2023-01-01' AS DateTime)
 
 -- SqlServer.2005
 
