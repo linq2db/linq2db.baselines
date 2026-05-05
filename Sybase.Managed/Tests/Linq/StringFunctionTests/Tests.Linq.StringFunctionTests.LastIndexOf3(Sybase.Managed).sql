@@ -1,11 +1,19 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	[p].[PersonID],
-	'123' + [p].[FirstName] + '0123451234'
+	[p_1].[ID],
+	[p_1].[FirstName]
 FROM
-	[Person] [p]
+	(
+		SELECT
+			'123' + [p].[FirstName] + '0123451234' as [FirstName],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [p_1]
 WHERE
-	[p].[PersonID] = 1 AND 1 = CharIndex('321', Reverse(Substring('123' + [p].[FirstName] + '0123451234', 6, 6))) AND
-	CharIndex('123', Substring(Left('123' + [p].[FirstName] + '0123451234', 11), 6, Len(Left('123' + [p].[FirstName] + '0123451234', 11)))) <> -5
+	1 = CharIndex('321', Reverse(Substring([p_1].[FirstName], 6, 6))) AND
+	CharIndex('123', Substring(Left([p_1].[FirstName], 11), 6, Len(Left([p_1].[FirstName], 11)))) <> -5
 

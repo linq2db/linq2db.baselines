@@ -1,10 +1,18 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	[pp].[PersonID],
-	'  ' + [pp].[FirstName] + ' '
+	[pp].[ID],
+	[pp].[Name]
 FROM
-	[Person] [pp]
+	(
+		SELECT
+			'  ' + [p].[FirstName] + ' ' as [Name],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [pp]
 WHERE
-	[pp].[PersonID] = 1 AND LTrim(RTrim('  ' + [pp].[FirstName] + ' ')) = 'John'
+	LTrim(RTrim([pp].[Name])) = 'John'
 
