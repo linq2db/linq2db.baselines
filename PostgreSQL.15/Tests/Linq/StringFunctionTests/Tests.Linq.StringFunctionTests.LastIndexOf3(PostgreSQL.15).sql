@@ -1,11 +1,19 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	p."PersonID",
-	'123' || p."FirstName" || '0123451234'
+	p_1."ID",
+	p_1."FirstName"
 FROM
-	"Person" p
+	(
+		SELECT
+			'123' || p."FirstName" || '0123451234' as "FirstName",
+			p."PersonID" as "ID"
+		FROM
+			"Person" p
+		WHERE
+			p."PersonID" = 1
+	) p_1
 WHERE
-	p."PersonID" = 1 AND 1 = Position('321' in Reverse(Substring('123' || p."FirstName" || '0123451234', 6, 6))) AND
-	Position('123' in Substring(Substring('123' || p."FirstName" || '0123451234', 1, 11), 6, Length(Substring('123' || p."FirstName" || '0123451234', 1, 11)) - 6)) + 5 <> 0
+	1 = Position('321' in Reverse(Substring(p_1."FirstName", 6, 6))) AND
+	Position('123' in Substring(Substring(p_1."FirstName", 1, 11), 6, Length(Substring(p_1."FirstName", 1, 11)) - 6)) + 5 <> 0
 
