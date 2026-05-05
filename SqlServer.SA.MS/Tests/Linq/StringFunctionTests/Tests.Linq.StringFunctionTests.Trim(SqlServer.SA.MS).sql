@@ -1,10 +1,18 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[pp].[PersonID],
-	N'  ' + [pp].[FirstName] + N' '
+	[pp].[ID],
+	[pp].[Name]
 FROM
-	[Person] [pp]
+	(
+		SELECT
+			N'  ' + [p].[FirstName] + N' ' as [Name],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [pp]
 WHERE
-	[pp].[PersonID] = 1 AND LTrim(RTrim(N'  ' + [pp].[FirstName] + N' ')) = N'John'
+	LTrim(RTrim([pp].[Name])) = N'John'
 

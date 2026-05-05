@@ -1,11 +1,19 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[p].[PersonID],
-	N'123' + [p].[FirstName] + N'0123451234'
+	[p_1].[ID],
+	[p_1].[FirstName]
 FROM
-	[Person] [p]
+	(
+		SELECT
+			N'123' + [p].[FirstName] + N'0123451234' as [FirstName],
+			[p].[PersonID] as [ID]
+		FROM
+			[Person] [p]
+		WHERE
+			[p].[PersonID] = 1
+	) [p_1]
 WHERE
-	[p].[PersonID] = 1 AND 1 = CharIndex(N'321', Reverse(Substring(N'123' + [p].[FirstName] + N'0123451234', 6, 6))) AND
-	CharIndex(N'123', Left(N'123' + [p].[FirstName] + N'0123451234', 11), 6) <> 0
+	1 = CharIndex(N'321', Reverse(Substring([p_1].[FirstName], 6, 6))) AND
+	CharIndex(N'123', Left([p_1].[FirstName], 11), 6) <> 0
 
