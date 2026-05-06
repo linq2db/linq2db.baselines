@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || CAST(Coalesce([t1].[Value1], 0) AS NVarChar(11)),
-	[t1].[SubSum],
+	Coalesce([t1].[SubSum], 0),
 	EXISTS(
 		SELECT
 			*
@@ -40,5 +40,5 @@ FROM
 	) [t1]
 WHERE
 	' ' || CAST(Coalesce([t1].[Value1], 0) AS NVarChar(11)) LIKE '%1%' ESCAPE '~' AND
-	[t1].[SubSum] > 0
+	Coalesce([t1].[SubSum], 0) > 0
 
