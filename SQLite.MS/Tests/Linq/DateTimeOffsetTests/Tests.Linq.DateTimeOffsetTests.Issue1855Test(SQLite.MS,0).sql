@@ -2,9 +2,9 @@
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08 08:08:08'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
 DECLARE @SomeNullableDateTimeOffset  -- DateTimeOffset
-SET     @SomeNullableDateTimeOffset = '2019-08-08 08:08:08'
+SET     @SomeNullableDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
 
 INSERT INTO [Issue1855Table]
 (
@@ -23,7 +23,7 @@ VALUES
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08 08:08:08'
+SET     @SomeDateTimeOffset = '2019-08-08 08:08:08.000+00:00'
 
 INSERT INTO [Issue1855Table]
 (
@@ -40,7 +40,7 @@ VALUES
 DECLARE @interval  -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn  -- DateTimeOffset
-SET     @clientSideIn = '2019-08-08 08:08:18'
+SET     @clientSideIn = '2019-08-08 08:08:18.000+00:00'
 
 SELECT
 	[r].[Id],
