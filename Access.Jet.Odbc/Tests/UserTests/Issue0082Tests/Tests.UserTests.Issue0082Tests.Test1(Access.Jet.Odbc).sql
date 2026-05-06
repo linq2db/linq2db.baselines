@@ -1,25 +1,31 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[t1].[ParentID],
+	[t2].[ParentID],
 	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [od]
-		WHERE
-			[t1].[ParentID] = [od].[ParentID]
-	),
-	(
-		SELECT
-			SUM([od_1].[ParentID])
-		FROM
 			[Child] [od_1]
 		WHERE
-			[t1].[ParentID] = [od_1].[ParentID]
-	)
+			[t2].[ParentID] = [od_1].[ParentID]
+	),
+	IIF([t2].[SumResult] IS NULL, 0, [t2].[SumResult])
 FROM
-	[Parent] [t1]
+	(
+		SELECT
+			[t1].[ParentID],
+			(
+				SELECT
+					SUM([od].[ParentID])
+				FROM
+					[Child] [od]
+				WHERE
+					[t1].[ParentID] = [od].[ParentID]
+			) as [SumResult]
+		FROM
+			[Parent] [t1]
+	) [t2]
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -41,21 +47,27 @@ FROM
 				SELECT
 					COUNT(*)
 				FROM
-					[Child] [od]
-				WHERE
-					[x].[ParentID] = [od].[ParentID]
-			) as [CountResult],
-			[x].[ParentID],
-			(
-				SELECT
-					SUM([od_1].[ParentID])
-				FROM
 					[Child] [od_1]
 				WHERE
-					[x].[ParentID] = [od_1].[ParentID]
-			) as [SumResult]
+					[t1].[ParentID] = [od_1].[ParentID]
+			) as [CountResult],
+			[t1].[ParentID],
+			IIF([t1].[SumResult] IS NULL, 0, [t1].[SumResult]) as [SumResult]
 		FROM
-			[Parent] [x]
+			(
+				SELECT
+					[x].[ParentID],
+					(
+						SELECT
+							SUM([od].[ParentID])
+						FROM
+							[Child] [od]
+						WHERE
+							[x].[ParentID] = [od].[ParentID]
+					) as [SumResult]
+				FROM
+					[Parent] [x]
+			) [t1]
 	) [x_1]
 WHERE
 	[x_1].[CountResult] > 0
