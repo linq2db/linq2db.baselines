@@ -18,7 +18,7 @@ WHERE
 
 -- Firebird.2.5 Firebird
 DECLARE @dt TimeStamp -- DateTime
-SET     @dt = CAST('2010-12-14 05:00:07.425' AS timestamp)
+SET     @dt = TIMESTAMP '2010-12-14 05:00:07.4250'
 
 UPDATE
 	"LinqDataTypes" "t"
@@ -47,7 +47,7 @@ WHERE
 
 -- Firebird.2.5 Firebird
 DECLARE @pdt TimeStamp -- DateTime
-SET     @pdt = CAST('2001-01-11 01:11:21.100' AS timestamp)
+SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.1000'
 
 UPDATE
 	"LinqDataTypes" "t"
