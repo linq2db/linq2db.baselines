@@ -40,7 +40,7 @@ LIMIT 1
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.100'
+SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.1000000'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -98,7 +98,7 @@ LIMIT 1
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.100'
+SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.1000000'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte

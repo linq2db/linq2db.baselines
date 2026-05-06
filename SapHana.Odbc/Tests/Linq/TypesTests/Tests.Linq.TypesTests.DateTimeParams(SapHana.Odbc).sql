@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @dateTime DateTime
-SET     @dateTime = '1992-01-11 01:11:21.100'
+SET     @dateTime = TIMESTAMP '1992-01-11 01:11:21.1000000'
 
 SELECT
 	"t"."DateTimeValue"
@@ -12,7 +12,7 @@ LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @dateTime DateTime
-SET     @dateTime = '1993-01-11 01:11:21.100'
+SET     @dateTime = TIMESTAMP '1993-01-11 01:11:21.1000000'
 
 SELECT
 	"t"."DateTimeValue"

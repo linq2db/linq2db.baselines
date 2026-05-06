@@ -334,19 +334,19 @@ SELECT "dateDataType" FROM "AllTypes" WHERE "ID" = 2
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p Date
-SET     @p = '2012-12-12'
+SET     @p = TIMESTAMP '2012-12-12 00:00:00.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12'
+SET     @p = TIMESTAMP '2012-12-12 00:00:00.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12'
+SET     @p = TIMESTAMP '2012-12-12 00:00:00.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
 
@@ -422,19 +422,19 @@ SELECT "seconddateDataType" FROM "AllTypes" WHERE "ID" = 2
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000000'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
 
@@ -466,19 +466,19 @@ SELECT "timestampDataType" FROM "AllTypes" WHERE "ID" = 2
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p NVarChar -- String
-SET     @p = '2012-12-12 12:12:12.123'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.1230000'
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12.123'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.1230000'
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12.123'
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.1230000'
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
 
