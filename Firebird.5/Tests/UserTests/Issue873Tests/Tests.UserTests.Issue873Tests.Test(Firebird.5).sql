@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || Coalesce("f"."Value1", 0),
-	"t1"."SubSum",
+	Coalesce("t1"."SubSum", 0),
 	EXISTS(
 		SELECT
 			*
@@ -34,5 +34,5 @@ FROM
 		) "t1" ON 1=1
 WHERE
 	' ' || Coalesce("f"."Value1", 0) LIKE '%1%' ESCAPE '~' AND
-	"t1"."SubSum" > 0
+	Coalesce("t1"."SubSum", 0) > 0
 
