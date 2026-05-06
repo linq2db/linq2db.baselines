@@ -1,12 +1,12 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "FluentTemp"
+CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
 	"LastName" text     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
+	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Value",
@@ -37,23 +37,23 @@ SELECT
 	t."Value",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t."ID" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Cache"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "FluentTemp"
+CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
 	"LastName" text     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
+	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -64,7 +64,7 @@ SET     @Name = 'John'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Value",
@@ -84,23 +84,23 @@ SELECT
 	t."Value",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t."ID" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Cache"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "FluentTemp"
+CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
 	"LastName" text     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
+	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -111,7 +111,7 @@ SET     @Name = 'John'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Column",
@@ -131,23 +131,23 @@ SELECT
 	t."Column",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t."ID" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Cache"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "FluentTemp"
+CREATE TABLE IF NOT EXISTS "FluentTemp_Cache"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
 	"LastName" text     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
+	CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -158,7 +158,7 @@ SET     @Name = 'John'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Column",
@@ -178,11 +178,11 @@ SELECT
 	t."Column",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t."ID" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Cache"
 

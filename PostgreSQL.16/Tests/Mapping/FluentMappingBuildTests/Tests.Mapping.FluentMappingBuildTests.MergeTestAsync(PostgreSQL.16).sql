@@ -1,15 +1,15 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Merge"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "FluentTemp"
+CREATE TABLE IF NOT EXISTS "FluentTemp_Merge"
 (
 	"ID"   Int  NOT NULL,
 	"Name" text     NULL,
 
-	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
+	CONSTRAINT "PK_FluentTemp_Merge" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name Text(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Merge"
 (
 	"ID",
 	"Name"
@@ -31,7 +31,7 @@ VALUES
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-MERGE INTO "FluentTemp" "Target"
+MERGE INTO "FluentTemp_Merge" "Target"
 USING (VALUES
 	(1,'John II')
 ) "Source"
@@ -60,5 +60,5 @@ VALUES
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentTemp"
+DROP TABLE IF EXISTS "FluentTemp_Merge"
 
