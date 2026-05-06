@@ -1,12 +1,12 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-CREATE TABLE IF NOT EXISTS `FluentTemp`
+CREATE TABLE IF NOT EXISTS `FluentTemp_Update`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
 	`LastName` VARCHAR(20)     NULL,
 
-	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
+	CONSTRAINT `PK_FluentTemp_Update` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO `FluentTemp`
+INSERT INTO `FluentTemp_Update`
 (
 	`ID`,
 	`Value`,
@@ -37,7 +37,7 @@ DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	`FluentTemp` `t`
+	`FluentTemp_Update` `t`
 SET
 	`t`.`Value` = @Name,
 	`t`.`LastName` = @LastName
@@ -46,5 +46,5 @@ WHERE
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `FluentTemp`
+DROP TABLE IF EXISTS `FluentTemp_Update`
 
