@@ -137,14 +137,14 @@ AS
 SELECT
 	source.ProductId,
 	t1.StockOnHand,
-	(
+	Nvl((
 		SELECT
 			SUM(wp_1.StockOnHand)
 		FROM
 			Issue4717WarehouseProductMapping wp_1
 		WHERE
 			wp_1.WarehouseId = source.WarehouseId
-	)
+	), NULL)
 FROM
 	CTE_1 source
 		INNER JOIN Issue4717ProductIncludedProductMapping includedProductMapping ON source.ProductId = includedProductMapping.ProductId
