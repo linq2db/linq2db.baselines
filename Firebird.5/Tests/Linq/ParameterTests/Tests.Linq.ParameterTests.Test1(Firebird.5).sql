@@ -1,6 +1,6 @@
 ﻿-- Firebird.5 Firebird4
 DECLARE @dt TimeStamp -- DateTime
-SET     @dt = CAST('2020-02-29 17:54:55.123' AS timestamp)
+SET     @dt = TIMESTAMP '2020-02-29 17:54:55.1231'
 
 SELECT
 	"t".ID,
