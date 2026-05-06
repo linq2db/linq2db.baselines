@@ -2,7 +2,7 @@
 
 SELECT
 	N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),
-	[t2].[SubSum],
+	Coalesce([t2].[SubSum], 0),
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -43,5 +43,5 @@ FROM
 		) [t2]
 WHERE
 	N' ' + CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)) LIKE N'%1%' ESCAPE N'~' AND
-	[t2].[SubSum] > 0
+	Coalesce([t2].[SubSum], 0) > 0
 
