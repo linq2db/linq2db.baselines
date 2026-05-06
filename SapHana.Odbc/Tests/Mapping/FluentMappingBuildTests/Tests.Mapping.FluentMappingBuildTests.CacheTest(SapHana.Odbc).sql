@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Value",
@@ -37,7 +37,7 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t"."ID" = 1
 
@@ -45,12 +45,12 @@ WHERE
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
@@ -67,7 +67,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Value",
@@ -87,7 +87,7 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t"."ID" = 1
 
@@ -95,12 +95,12 @@ WHERE
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
 	"Column"   NVarChar(20)     NULL,
@@ -117,7 +117,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Column",
@@ -137,7 +137,7 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t"."ID" = 1
 
@@ -145,12 +145,12 @@ WHERE
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
 	"Column"   NVarChar(20)     NULL,
@@ -167,7 +167,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	"ID",
 	"Column",
@@ -187,7 +187,7 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t"."ID" = 1
 
@@ -195,6 +195,6 @@ WHERE
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
