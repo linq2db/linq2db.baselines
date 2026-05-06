@@ -2,9 +2,9 @@
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeDateTimeOffset = CONVERT_TZ('2019-08-08 08:08:08.000000', '+00:00', 'UTC')
 DECLARE @SomeNullableDateTimeOffset Datetime -- DateTimeOffset
-SET     @SomeNullableDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeNullableDateTimeOffset = CONVERT_TZ('2019-08-08 08:08:08.000000', '+00:00', 'UTC')
 
 INSERT INTO `Issue1855Table`
 (
@@ -23,7 +23,7 @@ VALUES
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
-SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
+SET     @SomeDateTimeOffset = CONVERT_TZ('2019-08-08 08:08:08.000000', '+00:00', 'UTC')
 
 INSERT INTO `Issue1855Table`
 (
@@ -38,7 +38,7 @@ VALUES
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @clientSideIn Datetime -- DateTimeOffset
-SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
+SET     @clientSideIn = CONVERT_TZ('2019-08-08 08:08:18.000000', '+00:00', 'UTC')
 
 SELECT
 	`r`.`Id`,
