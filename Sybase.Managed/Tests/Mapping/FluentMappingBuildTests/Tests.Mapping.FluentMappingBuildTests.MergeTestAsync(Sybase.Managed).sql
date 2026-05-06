@@ -1,18 +1,18 @@
 ﻿-- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Merge') IS NOT NULL)
+	DROP TABLE [FluentTemp_Merge]
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Merge') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Merge]
 		(
 			[ID]   Int          NOT NULL,
 			[Name] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Merge] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -22,7 +22,7 @@ SET     @ID = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Merge]
 (
 	[ID],
 	[Name]
@@ -35,7 +35,7 @@ VALUES
 
 -- Sybase.Managed Sybase
 
-MERGE INTO [FluentTemp] [Target]
+MERGE INTO [FluentTemp_Merge] [Target]
 USING (
 	SELECT 1 AS [ID], 'John II' AS [Name]) [Source]
 (
@@ -63,6 +63,6 @@ VALUES
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Merge') IS NOT NULL)
+	DROP TABLE [FluentTemp_Merge]
 
