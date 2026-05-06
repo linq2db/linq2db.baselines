@@ -4,7 +4,7 @@ INSERT INTO "DateOnlyTable"
 (
 	"Date"
 )
-SELECT CAST('2021-01-01' AS date) FROM rdb$database
+SELECT DATE '2021-01-01' FROM rdb$database
 
 -- Firebird.3 Firebird3
 

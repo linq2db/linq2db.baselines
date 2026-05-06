@@ -1,6 +1,6 @@
 ﻿-- Firebird.3 Firebird3
 DECLARE @Date TimeStamp -- DateTime
-SET     @Date = CAST('2009-09-20' AS timestamp)
+SET     @Date = TIMESTAMP '2009-09-20 00:00:00.0000'
 
 SELECT
 	"t".ID,
