@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	[e].[StrReq] + ' I' = 'Programmer I'
+	Coalesce([e].[StrReq], '') + ' I' = 'Programmer I'
 
 -- SqlCe
 

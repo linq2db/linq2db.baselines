@@ -1,18 +1,10 @@
 ﻿-- SqlCe
 
 SELECT
-	[pp].[ID],
-	[pp].[Name]
+	[pp].[PersonID] as [ID],
+	'  ' + [pp].[FirstName] + ' ' as [Name]
 FROM
-	(
-		SELECT
-			'  ' + [p].[FirstName] + ' ' as [Name],
-			[p].[PersonID] as [ID]
-		FROM
-			[Person] [p]
-		WHERE
-			[p].[PersonID] = 1
-	) [pp]
+	[Person] [pp]
 WHERE
-	LTRIM([pp].[Name]) = 'John '
+	[pp].[PersonID] = 1 AND LTRIM('  ' + [pp].[FirstName] + ' ') = 'John '
 
