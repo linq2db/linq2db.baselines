@@ -1,21 +1,21 @@
 ﻿-- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_InsertOrUpdate"';
 END
 
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
+			CREATE TABLE "FluentTemp_InsertOrUpdate"
 			(
 				ID     Int                                   NOT NULL,
 				"Name" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+				CONSTRAINT "PK_FluentTemp_InsertOrUpdate" PRIMARY KEY (ID)
 			)
 		';
 END
@@ -26,7 +26,7 @@ SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_InsertOrUpdate"
 (
 	ID,
 	"Name"
@@ -39,7 +39,7 @@ VALUES
 
 -- Firebird.3 Firebird3
 
-MERGE INTO "FluentTemp" "t1"
+MERGE INTO "FluentTemp_InsertOrUpdate" "t1"
 USING (SELECT 1 AS ID FROM rdb$database) "s" ON
 (
 	"t1".ID = "s".ID
@@ -64,7 +64,7 @@ WHEN NOT MATCHED THEN
 -- Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_InsertOrUpdate"';
 END
 
