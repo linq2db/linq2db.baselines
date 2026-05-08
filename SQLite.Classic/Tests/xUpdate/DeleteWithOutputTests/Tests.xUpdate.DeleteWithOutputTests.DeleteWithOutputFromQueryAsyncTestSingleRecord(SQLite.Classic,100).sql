@@ -22,5 +22,5 @@ WHERE
 RETURNING
 	[TableWithData].[Id] + @param,
 	[TableWithData].[Value] + @param,
-	[TableWithData].[ValueStr] || @ValueStr
+	Coalesce([TableWithData].[ValueStr], '') || Coalesce(@ValueStr, '')
 
