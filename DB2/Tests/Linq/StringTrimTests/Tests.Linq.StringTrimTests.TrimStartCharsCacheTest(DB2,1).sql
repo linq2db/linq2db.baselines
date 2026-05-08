@@ -1,0 +1,7 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	LTRIM("t"."VarCharColumn", '.+')
+FROM
+	"StringTrimTable" "t"
+
