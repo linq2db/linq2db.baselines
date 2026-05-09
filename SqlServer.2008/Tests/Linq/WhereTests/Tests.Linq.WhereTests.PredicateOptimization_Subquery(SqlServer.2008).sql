@@ -17,7 +17,7 @@ WHERE
 			(VALUES
 				([p].[Date1]), ([p].[Date2]), ([p].[Date3]), ([p].[Date4])
 			) [t1]([item])
-	) > CAST('2023-01-01' AS DateTime2)
+	) > CAST(N'2023-01-01' AS DateTime2)
 
 -- SqlServer.2008
 
