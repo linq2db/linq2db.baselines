@@ -24,8 +24,8 @@ ON ("Target"."PersonID" = "Source"."ID" AND "Source"."FirstName" = 'first 4')
 WHEN MATCHED THEN
 UPDATE
 SET
-	"MiddleName" = 'first ' || "Source"."Patient_Diagnosis",
-	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
+	"MiddleName" = 'first ' || Coalesce("Source"."Patient_Diagnosis", ''),
+	"LastName" = 'last ' || Coalesce("Source"."Patient_Diagnosis_1", '')
 
 -- PostgreSQL.15 PostgreSQL
 
