@@ -19,7 +19,7 @@ VALUES
 
 SELECT
 	[r].[Id],
-	[r].[FirstName] + ' ' + [r].[LastName]
+	IIF([r].[FirstName] IS NULL, '', [r].[FirstName]) + ' ' + IIF([r].[LastName] IS NULL, '', [r].[LastName])
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -39,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	[r_1].[FirstName] + ' ' + [r_1].[LastName]
+	IIF([r_1].[FirstName] IS NULL, '', [r_1].[FirstName]) + ' ' + IIF([r_1].[LastName] IS NULL, '', [r_1].[LastName])
 FROM
 	[Issue3323Table] [r_1]
 
