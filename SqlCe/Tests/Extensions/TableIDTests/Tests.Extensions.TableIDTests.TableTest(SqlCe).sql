@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	'*** p ***' + '4' as [alias2],
+	'*** p ***' + '4' as [c1],
 	'*** p ***' as [alias1],
 	'*** [Parent] ***' as [alias3],
 	'*** p_1.p ***' as [alias4]

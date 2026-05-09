@@ -7,19 +7,32 @@ SELECT
 	[t].[LastName],
 	[t].[MiddleName],
 	[t].[Gender],
-	[t].[LastName] + ', ' + [t].[FirstName] as [FullName],
-	[t].[LastName] + ', ' + [t].[FirstName] as [AsSqlFullName],
-	[t1].[DoctorCount]
+	[t].[FullName],
+	[t].[FullName] as [AsSqlFullName],
+	[t].[DoctorCount]
 FROM
-	[Person] [t]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [DoctorCount]
-			FROM
-				[Doctor] [d]
-			WHERE
-				[d].[PersonID] = [t].[PersonID]
-		) [t1]
+	(
+		SELECT
+			[i].[PersonID],
+			[i].[FirstName],
+			[i].[LastName],
+			[i].[MiddleName],
+			[i].[Gender],
+			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+			[t1].[DoctorCount]
+		FROM
+			[Person] [i]
+				OUTER APPLY (
+					SELECT
+						COUNT(*) as [DoctorCount]
+					FROM
+						[Doctor] [d]
+					WHERE
+						[d].[PersonID] = [i].[PersonID]
+				) [t1]
+		WHERE
+			[i].[FirstName] <> 'John'
+	) [t]
 		OUTER APPLY (
 			SELECT
 				COUNT(*) as [cnt]
@@ -28,6 +41,4 @@ FROM
 			WHERE
 				[d_1].[PersonID] = [t].[PersonID]
 		) [t2]
-WHERE
-	[t].[FirstName] <> 'John'
 
