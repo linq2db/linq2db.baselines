@@ -22,5 +22,5 @@ WHERE
 RETURNING
 	OLD."Id" + :param,
 	OLD."Value" + :param,
-	OLD."ValueStr" || :ValueStr
+	Coalesce(OLD."ValueStr", '') || Coalesce(:ValueStr, '')
 

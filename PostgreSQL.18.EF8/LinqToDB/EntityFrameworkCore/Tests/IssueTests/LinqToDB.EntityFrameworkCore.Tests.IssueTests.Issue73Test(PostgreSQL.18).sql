@@ -7,7 +7,7 @@ WHERE i."Name" = 'Name1_3'
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
-	"a_Parent"."Name" || '>' || x."Name"
+	Coalesce("a_Parent"."Name", '') || '>' || x."Name"
 FROM
 	"Issue73Entities" x
 		LEFT JOIN "Issue73Entities" "a_Parent" ON x."ParentId" = "a_Parent"."Id"
