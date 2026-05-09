@@ -3,7 +3,7 @@
 SELECT
 	[t].[Str],
 	Len([t].[Str]),
-	'original-' + [t].[Str]
+	'original-' + IIF([t].[Str] IS NULL, '', [t].[Str])
 FROM
 	[TestLengthModel] [t]
 

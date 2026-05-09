@@ -8,7 +8,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + '1' = 'StrValue1'
+	IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1' = 'StrValue1'
 
 -- Access.Jet.OleDb AccessOleDb
 
