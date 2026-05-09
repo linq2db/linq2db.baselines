@@ -1,0 +1,21 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`t`.`Id`,
+	Concat(`t`.`Str1`, `t`.`Str2`, `t`.`StrReq`)
+FROM
+	`SqlConcatTestEntity` `t`
+ORDER BY
+	`t`.`Id`
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Str1`,
+	`t1`.`Str2`,
+	`t1`.`StrReq`,
+	`t1`.`Num`
+FROM
+	`SqlConcatTestEntity` `t1`
+
