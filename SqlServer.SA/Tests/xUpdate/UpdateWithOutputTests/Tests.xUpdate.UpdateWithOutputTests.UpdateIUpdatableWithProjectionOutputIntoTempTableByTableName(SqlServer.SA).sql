@@ -15,7 +15,7 @@ UPDATE
 	[TableWithData_source]
 SET
 	[Value] = [TableWithData_source].[Value] + 1,
-	[ValueStr] = [TableWithData_source].[ValueStr] + N'Upd'
+	[ValueStr] = Coalesce([TableWithData_source].[ValueStr], N'') + N'Upd'
 OUTPUT
 	INSERTED.[Id],
 	DELETED.[Value],
