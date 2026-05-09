@@ -18,7 +18,7 @@ INSERT INTO [TestFolder]
 )
 SELECT
 	X'3D667BBCDE0F27438F925D8CC3A11D11',
-	[parent].[Label] || '/' || [child].[Label]
+	Coalesce([parent].[Label], '') || '/' || Coalesce([child].[Label], '')
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]
