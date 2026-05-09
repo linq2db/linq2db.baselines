@@ -1,5 +1,5 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	N'''' + SPACE(3) + N''''
+	N'''' + Coalesce(SPACE(3), N'') + N''''
 

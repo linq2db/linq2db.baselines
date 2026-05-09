@@ -14,7 +14,7 @@ WHERE
 DELETE [s]
 OUTPUT
 	DELETED.[Id] + 1,
-	DELETED.[ValueStr] + N'1',
+	Coalesce(DELETED.[ValueStr], N'') + N'1',
 	IIF(DELETED.[ValueStr] IS NOT NULL, 1, 0)
 FROM
 	[TableWithData] [s]
