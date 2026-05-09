@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	DAY(CAST('2022-02-22' AS DateTime))
+	DAY(CAST(N'2022-02-22' AS DateTime))
 

@@ -12,5 +12,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = CAST('2009-09-27' AS DateTime)
+	[t1].[DateTimeValue] = CAST(N'2009-09-27' AS DateTime)
 
