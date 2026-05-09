@@ -8,7 +8,7 @@ FROM
 		CROSS APPLY (
 			SELECT TOP (1)
 				[o].[Id],
-				[o].[StrValue] + N'_A' as [StrValue]
+				Coalesce([o].[StrValue], N'') + N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [o]
 			WHERE
