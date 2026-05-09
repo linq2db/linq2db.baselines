@@ -3,7 +3,7 @@
 SELECT
 	t.Str,
 	lengthUTF8(t.Str),
-	concat('original-', t.Str)
+	concat('original-', Coalesce(t.Str, ''))
 FROM
 	TestLengthModel t
 
