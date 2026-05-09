@@ -4,7 +4,7 @@ UPDATE
 	"TableWithData" "s"
 SET
 	"Value" = "s"."Value" + 1,
-	"ValueStr" = "s"."ValueStr" || 'Upd'
+	"ValueStr" = Coalesce("s"."ValueStr", '') || 'Upd'
 WHERE
 	"s"."Id" > 3
 RETURNING
