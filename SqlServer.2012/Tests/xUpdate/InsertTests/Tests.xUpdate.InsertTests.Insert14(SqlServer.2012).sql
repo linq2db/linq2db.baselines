@@ -16,14 +16,14 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'Insert14' + (
+	N'Insert14' + Coalesce((
 		SELECT
 			[p].[FirstName]
 		FROM
 			[Person] [p]
 		WHERE
 			[p].[PersonID] = 1
-	),
+	), N''),
 	N'Shepard',
 	'M'
 )

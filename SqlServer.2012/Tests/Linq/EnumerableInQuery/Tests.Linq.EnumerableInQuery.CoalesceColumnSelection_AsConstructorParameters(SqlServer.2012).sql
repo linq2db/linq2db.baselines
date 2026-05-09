@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))) as [StrValue],
+			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],
 			[it].[Conditional]
