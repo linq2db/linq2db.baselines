@@ -1,0 +1,4 @@
+﻿-- DuckDB
+
+SELECT 1
+

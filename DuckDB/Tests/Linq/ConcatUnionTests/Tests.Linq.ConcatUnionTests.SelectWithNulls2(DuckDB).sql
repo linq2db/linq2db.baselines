@@ -1,0 +1,30 @@
+﻿-- DuckDB
+
+SELECT
+	t1.ID,
+	t1.MoneyValue,
+	t1.DateTimeValue,
+	t1.DateTimeValue2,
+	t1.BoolValue,
+	t1.GuidValue,
+	t1.SmallIntValue,
+	t1.IntValue,
+	t1.BigIntValue,
+	t1.StringValue
+FROM
+	LinqDataTypes t1
+UNION ALL
+SELECT
+	CAST(NULL AS INTEGER),
+	CAST(NULL AS DECIMAL),
+	CAST(NULL AS TIMESTAMP),
+	CAST(NULL AS TIMESTAMP),
+	CAST(NULL AS BOOLEAN),
+	CAST(NULL AS UUID),
+	CAST(NULL AS SMALLINT),
+	CAST(NULL AS INTEGER),
+	CAST(NULL AS BIGINT),
+	CAST(NULL AS VARCHAR)
+FROM
+	LinqDataTypes d
+
