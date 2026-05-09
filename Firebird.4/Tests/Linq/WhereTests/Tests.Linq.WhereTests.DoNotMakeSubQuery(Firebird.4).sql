@@ -2,7 +2,7 @@
 
 SELECT
 	"p2"."PersonID",
-	TRIM(TRAILING '' FROM ("p2"."FirstName" || ''))
+	"p2"."FirstName" || ''
 FROM
 	"Person" "p2"
 WHERE
