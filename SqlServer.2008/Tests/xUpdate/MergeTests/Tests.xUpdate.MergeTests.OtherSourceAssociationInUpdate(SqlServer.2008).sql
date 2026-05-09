@@ -24,8 +24,8 @@ ON ([Target].[PersonID] = [Source].[ID] AND [Source].[FirstName] = N'first 4')
 WHEN MATCHED THEN
 UPDATE
 SET
-	[MiddleName] = N'first ' + [Source].[Patient_Diagnosis],
-	[LastName] = N'last ' + [Source].[Patient_Diagnosis_1]
+	[MiddleName] = N'first ' + Coalesce([Source].[Patient_Diagnosis], N''),
+	[LastName] = N'last ' + Coalesce([Source].[Patient_Diagnosis_1], N'')
 ;
 
 -- SqlServer.2008
