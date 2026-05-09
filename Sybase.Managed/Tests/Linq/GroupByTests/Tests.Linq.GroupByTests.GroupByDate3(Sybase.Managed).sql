@@ -7,7 +7,13 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + '-01' AS DateTime) as [c1],
+			CAST(RIGHT(CASE
+				WHEN [grp].[DateTimeValue] IS NULL THEN NULL
+				ELSE '0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4))
+			END, 4) + '-' + RIGHT(CASE
+				WHEN [grp].[DateTimeValue] IS NULL THEN NULL
+				ELSE '0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2))
+			END, 2) + '-01' AS DateTime) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
@@ -24,7 +30,13 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + '-01' AS DateTime) as [c1],
+			CAST(RIGHT(CASE
+				WHEN [grp].[DateTimeValue] IS NULL THEN NULL
+				ELSE '0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4))
+			END, 4) + '-' + RIGHT(CASE
+				WHEN [grp].[DateTimeValue] IS NULL THEN NULL
+				ELSE '0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2))
+			END, 2) + '-01' AS DateTime) as [c1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
