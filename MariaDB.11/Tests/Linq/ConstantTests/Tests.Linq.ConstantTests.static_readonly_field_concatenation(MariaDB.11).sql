@@ -8,7 +8,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(`e`.`StringValue`, '1') = 'StrValue1'
+	Concat(Coalesce(`e`.`StringValue`, ''), '1') = 'StrValue1'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
