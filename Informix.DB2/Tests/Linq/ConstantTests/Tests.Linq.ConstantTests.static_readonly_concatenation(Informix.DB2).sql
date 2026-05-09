@@ -10,7 +10,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	e.StringValue || '1' = @p
+	Nvl(e.StringValue, '') || '1' = @p
 
 -- Informix.DB2 Informix
 

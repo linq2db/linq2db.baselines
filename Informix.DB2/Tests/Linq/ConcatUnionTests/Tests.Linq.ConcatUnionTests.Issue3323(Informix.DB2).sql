@@ -20,14 +20,14 @@ VALUES
 SELECT
 	t1.Id,
 	t1.Text,
-	t1.FirstName || ' ' || t1.LastName
+	Nvl(t1.FirstName, '') || ' ' || Nvl(t1.LastName, '')
 FROM
 	Issue3323Table t1
 UNION ALL
 SELECT
 	t2.Id,
 	t2.Text,
-	t2.FirstName || ' ' || t2.LastName
+	Nvl(t2.FirstName, '') || ' ' || Nvl(t2.LastName, '')
 FROM
 	Issue3323Table t2
 
