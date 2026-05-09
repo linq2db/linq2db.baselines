@@ -18,7 +18,7 @@ INSERT INTO [TestFolder]
 )
 SELECT
 	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',
-	[parent].[Label] + N'/' + [child].[Label]
+	Coalesce([parent].[Label], N'') + N'/' + Coalesce([child].[Label], N'')
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]
