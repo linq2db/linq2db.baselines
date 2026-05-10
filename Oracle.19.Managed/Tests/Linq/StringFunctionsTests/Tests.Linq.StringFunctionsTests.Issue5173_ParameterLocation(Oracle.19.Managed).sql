@@ -1,7 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG('test:' || CAST(grp_1."ch" AS VarChar(11)), ';') WITHIN GROUP (ORDER BY 'test:' || CAST(grp_1."ch" AS VarChar(11)))
+	LISTAGG('test:' || CAST(grp_1."ch" AS VarChar(255)), ';') WITHIN GROUP (ORDER BY 'test:' || CAST(grp_1."ch" AS VarChar(255)))
 FROM
 	(
 		SELECT
