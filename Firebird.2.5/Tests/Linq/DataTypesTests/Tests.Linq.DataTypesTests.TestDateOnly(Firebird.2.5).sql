@@ -1,8 +1,8 @@
 ﻿-- Firebird.2.5 Firebird
 DECLARE @Column Date
-SET     @Column = DATE '2020-02-29'
+SET     @Column = CAST('2020-02-29' AS date)
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = DATE '2020-01-01'
+SET     @ColumnNullable = CAST('2020-01-01' AS date)
 
 SELECT
 	"r"."Id",
@@ -22,7 +22,7 @@ SELECT
 FROM
 	"DateOnlyTable" "r"
 WHERE
-	"r"."Column" = DATE '2020-02-29' AND "r"."ColumnNullable" = DATE '2020-01-01'
+	"r"."Column" = CAST('2020-02-29' AS date) AND "r"."ColumnNullable" = CAST('2020-01-01' AS date)
 
 -- Firebird.2.5 Firebird
 
@@ -33,7 +33,7 @@ DELETE FROM
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = DATE '1980-01-01'
+SET     @Column = CAST('1980-01-01' AS date)
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -54,9 +54,9 @@ VALUES
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Date
-SET     @Column = DATE '2020-02-29'
+SET     @Column = CAST('2020-02-29' AS date)
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = DATE '2020-01-01'
+SET     @ColumnNullable = CAST('2020-01-01' AS date)
 
 INSERT INTO "DateOnlyTable"
 (
@@ -95,8 +95,8 @@ INSERT INTO "DateOnlyTable"
 	"Column",
 	"ColumnNullable"
 )
-SELECT 1,DATE '1980-01-01',NULL FROM rdb$database UNION ALL
-SELECT 2,DATE '2020-02-29',DATE '2020-01-01' FROM rdb$database
+SELECT 1,CAST('1980-01-01' AS date),NULL FROM rdb$database UNION ALL
+SELECT 2,CAST('2020-02-29' AS date),CAST('2020-01-01' AS date) FROM rdb$database
 
 -- Firebird.2.5 Firebird
 
@@ -122,8 +122,8 @@ INSERT INTO "DateOnlyTable"
 	"Column",
 	"ColumnNullable"
 )
-SELECT 1,DATE '1980-01-01',NULL FROM rdb$database UNION ALL
-SELECT 2,DATE '2020-02-29',DATE '2020-01-01' FROM rdb$database
+SELECT 1,CAST('1980-01-01' AS date),NULL FROM rdb$database UNION ALL
+SELECT 2,CAST('2020-02-29' AS date),CAST('2020-01-01' AS date) FROM rdb$database
 
 -- Firebird.2.5 Firebird
 

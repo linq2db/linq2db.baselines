@@ -8,7 +8,7 @@ SELECT FIRST @take
 FROM
 	(
 		SELECT
-			CAST(CURRENT_TIMESTAMP AS Date) as "Key_1"
+			CAST(LOCALTIMESTAMP AS Date) as "Key_1"
 		FROM
 			"Parent" "g_1"
 				INNER JOIN "Child" "s" ON "g_1"."ParentID" = "s"."ParentID"

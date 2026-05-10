@@ -97,13 +97,13 @@ SET     @FieldNChar = _utf8 x'D191'
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2000-11-12 21:14:15.1670'
+SET     @FieldDateTime = CAST('2000-11-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'00000000000000000000000000000000'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2000-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2000-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar(5) -- String
 SET     @FieldEnumString = 'FIRST'
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -167,13 +167,13 @@ SET     @FieldNChar = '>'
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670'
+SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2123-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar(1) -- String
 SET     @FieldEnumString = _utf8 x'00'
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -237,13 +237,13 @@ SET     @FieldNChar = '
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9970'
+SET     @FieldDateTime = CAST('2098-10-12 21:14:15.997' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2110-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2110-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = ''
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -306,13 +306,13 @@ SET     @FieldNChar = ''
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9070'
+SET     @FieldDateTime = CAST('2098-10-12 21:14:15.907' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2111-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2111-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -376,13 +376,13 @@ SET     @FieldNChar = ' '
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670'
+SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2123-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar(1) -- String
 SET     @FieldEnumString = _utf8 x'00'
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -445,13 +445,13 @@ SET     @FieldNChar = ' '
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9130'
+SET     @FieldDateTime = CAST('2098-10-12 21:14:15.913' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2010-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2010-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber Integer -- Int32
@@ -515,13 +515,13 @@ SET     @FieldNChar = '~'
 DECLARE @FieldFloat Float -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDateTime TimeStamp -- DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670'
+SET     @FieldDateTime = CAST('2001-10-12 21:14:15.167' AS timestamp)
 DECLARE @FieldGuid Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate TimeStamp -- DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000'
+SET     @FieldDate = CAST('2123-11-23' AS timestamp)
 DECLARE @FieldEnumString VarChar(1) -- String
 SET     @FieldEnumString = _utf8 x'00'
 DECLARE @FieldEnumNumber Integer -- Int32

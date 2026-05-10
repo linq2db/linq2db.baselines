@@ -1,6 +1,6 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	CURRENT_TIMESTAMP
+	LOCALTIMESTAMP
 FROM rdb$database
 

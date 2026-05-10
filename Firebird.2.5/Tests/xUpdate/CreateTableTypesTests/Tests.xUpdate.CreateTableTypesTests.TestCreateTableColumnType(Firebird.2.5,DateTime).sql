@@ -2,7 +2,7 @@
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DateTime TimeStamp -- DateTime
-SET     @DateTime = TIMESTAMP '2000-01-01 00:00:00.0000'
+SET     @DateTime = CAST('2000-01-01' AS timestamp)
 
 INSERT INTO "CreateTableTypes"
 (
@@ -19,7 +19,7 @@ VALUES
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @DateTime TimeStamp -- DateTime
-SET     @DateTime = TIMESTAMP '2018-11-24 01:02:03.0000'
+SET     @DateTime = CAST('2018-11-24 01:02:03' AS timestamp)
 
 INSERT INTO "CreateTableTypes"
 (
