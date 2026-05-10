@@ -1,6 +1,6 @@
 ﻿-- Sybase.Managed Sybase
 DECLARE @Date Date
-SET     @Date = '2021-01-01 00:00:00.000'
+SET     @Date = '2021-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
