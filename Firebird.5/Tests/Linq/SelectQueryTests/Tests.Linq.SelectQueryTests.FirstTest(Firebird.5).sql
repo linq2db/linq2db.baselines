@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	CURRENT_TIMESTAMP
+	LOCALTIMESTAMP
 FROM rdb$database
 FETCH NEXT 1 ROWS ONLY
 

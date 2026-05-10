@@ -89,7 +89,7 @@ SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
 DECLARE @CreateDate TimeStamp -- DateTime
-SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.1231'
+SET     @CreateDate = CAST('2020-02-28 17:54:55.123' AS timestamp)
 DECLARE @SourceInstrumentCode VarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
 
@@ -114,7 +114,7 @@ SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
 DECLARE @CreateDate TimeStamp -- DateTime
-SET     @CreateDate = TIMESTAMP '2020-02-28 17:54:55.1231'
+SET     @CreateDate = CAST('2020-02-28 17:54:55.123' AS timestamp)
 DECLARE @SourceInstrumentCode VarChar -- String
 SET     @SourceInstrumentCode = NULL
 
@@ -135,7 +135,7 @@ VALUES
 
 -- Firebird.5 Firebird4
 DECLARE @uptoDate TimeStamp -- DateTime
-SET     @uptoDate = TIMESTAMP '2020-02-29 17:54:55.1231'
+SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT DISTINCT
 	"ins"."SourceInstrumentCode"
