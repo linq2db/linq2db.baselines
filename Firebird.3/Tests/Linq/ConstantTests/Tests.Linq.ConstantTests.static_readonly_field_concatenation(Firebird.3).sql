@@ -8,7 +8,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."StringValue" || '1' = 'StrValue1'
+	Coalesce("e"."StringValue", '') || '1' = 'StrValue1'
 
 -- Firebird.3 Firebird3
 

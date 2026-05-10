@@ -1,7 +1,7 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	LIST('test:' || CAST("grp_1"."ch" AS VarChar(11) CHARACTER SET UNICODE_FSS), ';')
+	LIST('test:' || "grp_1"."ch", ';')
 FROM
 	(
 		SELECT
