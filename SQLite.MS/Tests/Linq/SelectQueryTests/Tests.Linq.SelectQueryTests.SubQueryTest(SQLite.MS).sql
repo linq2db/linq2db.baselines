@@ -14,16 +14,16 @@ FROM
 			FROM
 				(
 					SELECT
-						strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), CAST([t].[Value] AS NVarChar(11)) || ' Day') as [Value1],
-						strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), '2 Day') as [Value2]
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, CAST([t].[Value] AS NVarChar(11)) || ' Day') as [Value1],
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '2 Day') as [Value2]
 					FROM
 						[SampleClass] [t]
 					WHERE
 						[t].[Value] = 1
 					UNION
 					SELECT
-						strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), '3 Day') as [Value1],
-						strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), '4 Day') as [Value2]
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '3 Day') as [Value1],
+						strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP, '4 Day') as [Value2]
 				) [t1]
 			LIMIT 1
 		) [t2] ON 1=1

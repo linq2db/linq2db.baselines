@@ -8,8 +8,8 @@ INSERT INTO [InsertTable]
 )
 SELECT
 	[c_1].[Id] + 10,
-	DATETIME('now', 'localtime'),
-	DATETIME('now', 'localtime')
+	CURRENT_TIMESTAMP,
+	CURRENT_TIMESTAMP
 FROM
 	[InsertTable] [c_1]
 WHERE

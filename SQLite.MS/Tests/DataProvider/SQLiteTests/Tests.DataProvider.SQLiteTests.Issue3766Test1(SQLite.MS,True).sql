@@ -1,4 +1,6 @@
 ﻿-- SQLite.MS SQLite
+DECLARE @Id  -- DateTimeOffset
+SET     @Id = '2020-02-29T17:09:55.1231234+00:00'
 
 INSERT INTO [Issue3766Table] AS [t1]
 (
@@ -7,13 +9,15 @@ INSERT INTO [Issue3766Table] AS [t1]
 )
 VALUES
 (
-	'2020-02-29 17:09:55.123+00:00',
+	@Id,
 	0
 )
 ON CONFLICT ([Id]) DO UPDATE SET
 	[Value] = 0
 
 -- SQLite.MS SQLite
+DECLARE @Id  -- DateTimeOffset
+SET     @Id = '2020-02-29T17:09:55.1231234+00:00'
 
 INSERT INTO [Issue3766Table] AS [t1]
 (
@@ -22,7 +26,7 @@ INSERT INTO [Issue3766Table] AS [t1]
 )
 VALUES
 (
-	'2020-02-29 17:09:55.123+00:00',
+	@Id,
 	0
 )
 ON CONFLICT ([Id]) DO UPDATE SET
