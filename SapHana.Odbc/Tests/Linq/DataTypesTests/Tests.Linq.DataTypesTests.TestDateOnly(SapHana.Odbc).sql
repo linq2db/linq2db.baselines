@@ -1,8 +1,8 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '2020-02-29 00:00:00.0000000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.0000000'
+SET     @ColumnNullable = '2020-01-01'
 
 SELECT
 	"r"."Id",
@@ -33,7 +33,7 @@ DELETE FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '1980-01-01 00:00:00.0000000'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -54,9 +54,9 @@ VALUES
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '2020-02-29 00:00:00.0000000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.0000000'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO "DateOnlyTable"
 (
@@ -91,7 +91,7 @@ DELETE FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '1980-01-01 00:00:00.0000000'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -112,9 +112,9 @@ VALUES
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '2020-02-29 00:00:00.0000000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.0000000'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO "DateOnlyTable"
 (
@@ -149,7 +149,7 @@ DELETE FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '1980-01-01 00:00:00.0000000'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -170,9 +170,9 @@ VALUES
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Date
-SET     @Column = TIMESTAMP '2020-02-29 00:00:00.0000000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = TIMESTAMP '2020-01-01 00:00:00.0000000'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO "DateOnlyTable"
 (

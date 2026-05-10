@@ -19,7 +19,7 @@ LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @dt DateTime
-SET     @dt = TIMESTAMP '2010-12-14 05:00:07.4250141'
+SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
 	"LinqDataTypes" "t"
@@ -49,7 +49,7 @@ LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @pdt DateTime
-SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.1000000'
+SET     @pdt = '2001-01-11 01:11:21.100'
 
 UPDATE
 	"LinqDataTypes" "t"

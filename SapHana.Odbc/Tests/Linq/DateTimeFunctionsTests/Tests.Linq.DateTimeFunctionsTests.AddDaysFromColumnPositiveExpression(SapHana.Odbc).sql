@@ -4,7 +4,7 @@ SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2018-01-03 00:00:00.0000000'
+SET     @DateTimeValue = '2018-01-03'
 DECLARE @BoolValue TinyInt(1) -- Byte
 SET     @BoolValue = 0
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength

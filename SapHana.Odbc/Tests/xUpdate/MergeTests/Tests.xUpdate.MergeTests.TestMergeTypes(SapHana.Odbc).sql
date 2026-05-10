@@ -111,7 +111,7 @@ SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2000-11-12 21:14:15.1670000'
+SET     @FieldDateTime = '2000-11-12 21:14:15.167'
 DECLARE @FieldBinary VarBinary(0) -- Binary
 SET     @FieldBinary = x''
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -119,7 +119,7 @@ SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 12345678.9012345678
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2000-11-23 00:00:00.0000000'
+SET     @FieldDate = '2000-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 09:44:34.6534321
 DECLARE @FieldEnumString NVarChar(5) -- String
@@ -194,7 +194,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670000'
+SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'000102030004'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -202,7 +202,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000000'
+SET     @FieldDate = '2123-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 00:44:34.6414321
 DECLARE @FieldEnumString NVarChar(1) -- String
@@ -276,7 +276,7 @@ SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = -2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9970000'
+SET     @FieldDateTime = '2098-10-12 21:14:15.997'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'FFC864321400'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -284,7 +284,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = 99999999.9999999999
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2110-11-23 00:00:00.0000000'
+SET     @FieldDate = '2110-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 00:00:00
 DECLARE @FieldEnumString NVarChar -- String
@@ -357,7 +357,7 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9070000'
+SET     @FieldDateTime = '2098-10-12 21:14:15.907'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'FFC864321400'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -365,7 +365,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2111-11-23 00:00:00.0000000'
+SET     @FieldDate = '2111-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString NVarChar -- String
@@ -440,7 +440,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670000'
+SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'000102030004'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -448,7 +448,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000000'
+SET     @FieldDate = '2123-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 14:44:33.2340000
 DECLARE @FieldEnumString NVarChar(1) -- String
@@ -521,7 +521,7 @@ SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 2.2250738585072014E-308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2098-10-12 21:14:15.9130000'
+SET     @FieldDateTime = '2098-10-12 21:14:15.913'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'FFC864321400'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -529,7 +529,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(3, 3)
 SET     @FieldDecimal = -0.123
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2010-11-23 00:00:00.0000000'
+SET     @FieldDate = '2010-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 23:59:59.9999999
 DECLARE @FieldEnumString NVarChar -- String
@@ -604,7 +604,7 @@ SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double
 SET     @FieldDouble = 1.7976931348623157E+308
 DECLARE @FieldDateTime DateTime
-SET     @FieldDateTime = TIMESTAMP '2001-10-12 21:14:15.1670000'
+SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = x'000102030004'
 DECLARE @FieldGuid Char(36) -- AnsiStringFixedLength
@@ -612,7 +612,7 @@ SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'
 DECLARE @FieldDecimal Decimal(18, 10)
 SET     @FieldDecimal = -99999999.9999999999
 DECLARE @FieldDate DateTime
-SET     @FieldDate = TIMESTAMP '2123-11-23 00:00:00.0000000'
+SET     @FieldDate = '2123-11-23'
 DECLARE @FieldTime Time
 SET     @FieldTime = 22:44:33
 DECLARE @FieldEnumString NVarChar(1) -- String

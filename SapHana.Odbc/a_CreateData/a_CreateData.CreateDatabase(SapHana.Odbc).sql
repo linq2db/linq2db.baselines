@@ -920,7 +920,7 @@ SET     @ID = 1
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.1000000'
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -969,7 +969,7 @@ SET     @ID = 2
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 2.49
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2005-05-15 05:15:25.5000000'
+SET     @DateTimeValue = '2005-05-15 05:15:25.500'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1018,7 +1018,7 @@ SET     @ID = 3
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 3.99
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-19 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-19 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1067,7 +1067,7 @@ SET     @ID = 4
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 4.50
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-20 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-20 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1116,7 +1116,7 @@ SET     @ID = 5
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 5.50
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-20 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-20 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1165,7 +1165,7 @@ SET     @ID = 6
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 6.55
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-22 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-22 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1214,7 +1214,7 @@ SET     @ID = 7
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 7.00
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-23 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-23 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1263,7 +1263,7 @@ SET     @ID = 8
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 8.99
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-24 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-24 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1312,7 +1312,7 @@ SET     @ID = 9
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 9.63
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-25 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-25 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1361,7 +1361,7 @@ SET     @ID = 10
 DECLARE @MoneyValue Decimal(4, 2)
 SET     @MoneyValue = 10.77
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-26 09:19:29.0900000'
+SET     @DateTimeValue = '2009-09-26 09:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1410,7 +1410,7 @@ SET     @ID = 11
 DECLARE @MoneyValue Decimal(4, 2)
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2009-09-27 00:00:00.0000000'
+SET     @DateTimeValue = '2009-09-27'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte
@@ -1459,7 +1459,7 @@ SET     @ID = 12
 DECLARE @MoneyValue Decimal(4, 2)
 SET     @MoneyValue = 11.45
 DECLARE @DateTimeValue DateTime
-SET     @DateTimeValue = TIMESTAMP '2012-11-07 19:19:29.0900000'
+SET     @DateTimeValue = '2012-11-07 19:19:29.090'
 DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue TinyInt(1) -- Byte

@@ -1,12 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @currentDate DateTime
-SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate DateTime
-SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate DateTime
-SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate DateTime
-SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @currentDate = '2020-02-29 17:54:55.123'
 
 SELECT
 	"o"."ID",

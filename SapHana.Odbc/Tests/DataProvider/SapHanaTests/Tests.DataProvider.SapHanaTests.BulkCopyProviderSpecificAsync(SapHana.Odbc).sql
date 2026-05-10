@@ -16,13 +16,13 @@ SET     @floatDataType = 7700
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7600
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -129,13 +129,13 @@ SET     @floatDataType = 7701
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7601
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -242,13 +242,13 @@ SET     @floatDataType = 7702
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7602
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -355,13 +355,13 @@ SET     @floatDataType = 7703
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7603
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -468,13 +468,13 @@ SET     @floatDataType = 7704
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7604
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -581,13 +581,13 @@ SET     @floatDataType = 7705
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7605
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -694,13 +694,13 @@ SET     @floatDataType = 7706
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7606
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -807,13 +807,13 @@ SET     @floatDataType = 7707
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7607
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -920,13 +920,13 @@ SET     @floatDataType = 7708
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7608
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1033,13 +1033,13 @@ SET     @floatDataType = 7709
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7609
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1146,13 +1146,13 @@ SET     @floatDataType = 7710
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7610
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1259,13 +1259,13 @@ SET     @floatDataType = 7711
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7611
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1372,13 +1372,13 @@ SET     @floatDataType = 7712
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7612
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1485,13 +1485,13 @@ SET     @floatDataType = 7713
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7613
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1598,13 +1598,13 @@ SET     @floatDataType = 7714
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7614
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1711,13 +1711,13 @@ SET     @floatDataType = 7715
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7615
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1824,13 +1824,13 @@ SET     @floatDataType = 7716
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7616
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -1937,13 +1937,13 @@ SET     @floatDataType = 7717
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7617
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2050,13 +2050,13 @@ SET     @floatDataType = 7718
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7618
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2163,13 +2163,13 @@ SET     @floatDataType = 7719
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7619
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2276,13 +2276,13 @@ SET     @floatDataType = 7720
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7620
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2389,13 +2389,13 @@ SET     @floatDataType = 7721
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7621
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2502,13 +2502,13 @@ SET     @floatDataType = 7722
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7622
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2615,13 +2615,13 @@ SET     @floatDataType = 7723
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7623
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2728,13 +2728,13 @@ SET     @floatDataType = 7724
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7624
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2841,13 +2841,13 @@ SET     @floatDataType = 7725
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7625
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -2954,13 +2954,13 @@ SET     @floatDataType = 7726
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7626
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3067,13 +3067,13 @@ SET     @floatDataType = 7727
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7627
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3180,13 +3180,13 @@ SET     @floatDataType = 7728
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7628
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3293,13 +3293,13 @@ SET     @floatDataType = 7729
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7629
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3406,13 +3406,13 @@ SET     @floatDataType = 7730
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7630
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3519,13 +3519,13 @@ SET     @floatDataType = 7731
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7631
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3632,13 +3632,13 @@ SET     @floatDataType = 7732
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7632
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3745,13 +3745,13 @@ SET     @floatDataType = 7733
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7633
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3858,13 +3858,13 @@ SET     @floatDataType = 7734
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7634
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -3971,13 +3971,13 @@ SET     @floatDataType = 7735
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7635
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4084,13 +4084,13 @@ SET     @floatDataType = 7736
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7636
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4197,13 +4197,13 @@ SET     @floatDataType = 7737
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7637
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4310,13 +4310,13 @@ SET     @floatDataType = 7738
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7638
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4423,13 +4423,13 @@ SET     @floatDataType = 7739
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7639
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4536,13 +4536,13 @@ SET     @floatDataType = 7740
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7640
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4649,13 +4649,13 @@ SET     @floatDataType = 7741
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7641
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4762,13 +4762,13 @@ SET     @floatDataType = 7742
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7642
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4875,13 +4875,13 @@ SET     @floatDataType = 7743
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7643
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -4988,13 +4988,13 @@ SET     @floatDataType = 7744
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7644
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5101,13 +5101,13 @@ SET     @floatDataType = 7745
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7645
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5214,13 +5214,13 @@ SET     @floatDataType = 7746
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7646
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5327,13 +5327,13 @@ SET     @floatDataType = 7747
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7647
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5440,13 +5440,13 @@ SET     @floatDataType = 7748
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7648
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5553,13 +5553,13 @@ SET     @floatDataType = 7749
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7649
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5666,13 +5666,13 @@ SET     @floatDataType = 7750
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7650
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5779,13 +5779,13 @@ SET     @floatDataType = 7751
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7651
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -5892,13 +5892,13 @@ SET     @floatDataType = 7752
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7652
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6005,13 +6005,13 @@ SET     @floatDataType = 7753
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7653
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6118,13 +6118,13 @@ SET     @floatDataType = 7754
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7654
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6231,13 +6231,13 @@ SET     @floatDataType = 7755
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7655
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6344,13 +6344,13 @@ SET     @floatDataType = 7756
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7656
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6457,13 +6457,13 @@ SET     @floatDataType = 7757
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7657
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6570,13 +6570,13 @@ SET     @floatDataType = 7758
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7658
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6683,13 +6683,13 @@ SET     @floatDataType = 7759
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7659
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6796,13 +6796,13 @@ SET     @floatDataType = 7760
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7660
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -6909,13 +6909,13 @@ SET     @floatDataType = 7761
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7661
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7022,13 +7022,13 @@ SET     @floatDataType = 7762
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7662
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7135,13 +7135,13 @@ SET     @floatDataType = 7763
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7663
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7248,13 +7248,13 @@ SET     @floatDataType = 7764
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7664
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7361,13 +7361,13 @@ SET     @floatDataType = 7765
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7665
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7474,13 +7474,13 @@ SET     @floatDataType = 7766
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7666
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7587,13 +7587,13 @@ SET     @floatDataType = 7767
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7667
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7700,13 +7700,13 @@ SET     @floatDataType = 7768
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7668
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7813,13 +7813,13 @@ SET     @floatDataType = 7769
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7669
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -7926,13 +7926,13 @@ SET     @floatDataType = 7770
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7670
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8039,13 +8039,13 @@ SET     @floatDataType = 7771
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7671
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8152,13 +8152,13 @@ SET     @floatDataType = 7772
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7672
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8265,13 +8265,13 @@ SET     @floatDataType = 7773
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7673
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8378,13 +8378,13 @@ SET     @floatDataType = 7774
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7674
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8491,13 +8491,13 @@ SET     @floatDataType = 7775
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7675
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8604,13 +8604,13 @@ SET     @floatDataType = 7776
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7676
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8717,13 +8717,13 @@ SET     @floatDataType = 7777
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7677
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8830,13 +8830,13 @@ SET     @floatDataType = 7778
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7678
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -8943,13 +8943,13 @@ SET     @floatDataType = 7779
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7679
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9056,13 +9056,13 @@ SET     @floatDataType = 7780
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7680
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9169,13 +9169,13 @@ SET     @floatDataType = 7781
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7681
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9282,13 +9282,13 @@ SET     @floatDataType = 7782
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7682
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9395,13 +9395,13 @@ SET     @floatDataType = 7783
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7683
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9508,13 +9508,13 @@ SET     @floatDataType = 7784
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7684
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9621,13 +9621,13 @@ SET     @floatDataType = 7785
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7685
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9734,13 +9734,13 @@ SET     @floatDataType = 7786
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7686
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9847,13 +9847,13 @@ SET     @floatDataType = 7787
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7687
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -9960,13 +9960,13 @@ SET     @floatDataType = 7788
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7688
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10073,13 +10073,13 @@ SET     @floatDataType = 7789
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7689
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10186,13 +10186,13 @@ SET     @floatDataType = 7790
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7690
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10299,13 +10299,13 @@ SET     @floatDataType = 7791
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7691
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10412,13 +10412,13 @@ SET     @floatDataType = 7792
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7692
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10525,13 +10525,13 @@ SET     @floatDataType = 7793
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7693
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10638,13 +10638,13 @@ SET     @floatDataType = 7794
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7694
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10751,13 +10751,13 @@ SET     @floatDataType = 7795
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7695
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10864,13 +10864,13 @@ SET     @floatDataType = 7796
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7696
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -10977,13 +10977,13 @@ SET     @floatDataType = 7797
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7697
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -11090,13 +11090,13 @@ SET     @floatDataType = 7798
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7698
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String
@@ -11203,13 +11203,13 @@ SET     @floatDataType = 7799
 DECLARE @realDataType Real -- Single
 SET     @realDataType = 7699
 DECLARE @dateDataType DateTime
-SET     @dateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timeDataType Time
 SET     @timeDataType = 17:54:55.1231234
 DECLARE @seconddateDataType DateTime
-SET     @seconddateDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @seconddateDataType = '2020-02-29 17:54:55.123'
 DECLARE @timestampDataType DateTime
-SET     @timestampDataType = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @timestampDataType = '2020-02-29 17:54:55.123'
 DECLARE @charDataType NChar(1) -- StringFixedLength
 SET     @charDataType = 'A'
 DECLARE @char20DataType NVarChar -- String

@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 DECLARE @dt DateTime
-SET     @dt = TIMESTAMP '2020-02-29 17:54:55.1231234'
+SET     @dt = '2020-02-29 17:54:55.123'
 
 SELECT
 	"t"."ID",

@@ -14,5 +14,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."DateTimeValue" IN (TIMESTAMP '2001-01-11 01:11:21.1000000')
+	"t"."DateTimeValue" IN ('2001-01-11 01:11:21.100')
 

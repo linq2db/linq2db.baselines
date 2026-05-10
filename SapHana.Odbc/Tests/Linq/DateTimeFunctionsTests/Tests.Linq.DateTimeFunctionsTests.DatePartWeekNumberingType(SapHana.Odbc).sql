@@ -1,72 +1,72 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2018-12-28 00:00:00.0000000')
+	Week('2018-12-28')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2018-12-29 00:00:00.0000000')
+	Week('2018-12-29')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2018-12-30 00:00:00.0000000')
+	Week('2018-12-30')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2018-12-31 00:00:00.0000000')
+	Week('2018-12-31')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-01 00:00:00.0000000')
+	Week('2019-01-01')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-02 00:00:00.0000000')
+	Week('2019-01-02')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-03 00:00:00.0000000')
+	Week('2019-01-03')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-04 00:00:00.0000000')
+	Week('2019-01-04')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-05 00:00:00.0000000')
+	Week('2019-01-05')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-06 00:00:00.0000000')
+	Week('2019-01-06')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-07 00:00:00.0000000')
+	Week('2019-01-07')
 FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Week(TIMESTAMP '2019-01-08 00:00:00.0000000')
+	Week('2019-01-08')
 FROM DUMMY
 
