@@ -9,5 +9,5 @@ SELECT
 FROM
 	`MappingTestClass` `t`
 WHERE
-	`t`.`Flags` & @flag = @flag
+	(`t`.`Flags` & @flag) = @flag
 
