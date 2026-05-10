@@ -1,8 +1,9 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`p`.`PersonID`,
-	Concat(`p`.`FirstName`, '1')
+	`t`.`VarCharColumn`
 FROM
-	`Person` `p`
+	`StringTrimTable` `t`
+ORDER BY
+	`t`.`Id`
 
