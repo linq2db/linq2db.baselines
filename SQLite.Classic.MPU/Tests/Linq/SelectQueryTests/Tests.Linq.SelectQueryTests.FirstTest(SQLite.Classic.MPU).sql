@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	DATETIME('now', 'localtime')
+	CURRENT_TIMESTAMP
 LIMIT 1
 
