@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Date(CURRENT_TIMESTAMP) as [Key_1]
+			Date(DATETIME('now', 'localtime')) as [Key_1]
 		FROM
 			[Parent] [g_1]
 				INNER JOIN [Child] [s] ON [g_1].[ParentID] = [s].[ParentID]

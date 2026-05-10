@@ -40,7 +40,7 @@ FETCH NEXT 1 ROWS ONLY
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
-SET     @DateTimeValue = CAST('2001-01-11 01:11:21.100' AS timestamp)
+SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.1000'
 DECLARE @DateTimeValue2 TimeStamp -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean
@@ -98,7 +98,7 @@ FETCH NEXT 1 ROWS ONLY
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
-SET     @DateTimeValue = CAST('2001-01-11 01:11:21.100' AS timestamp)
+SET     @DateTimeValue = TIMESTAMP '2001-01-11 01:11:21.1000'
 DECLARE @DateTimeValue2 TimeStamp -- DateTime
 SET     @DateTimeValue2 = NULL
 DECLARE @BoolValue Boolean

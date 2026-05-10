@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	CURRENT_TIMESTAMP
+	DATETIME('now', 'localtime')
 LIMIT 1
 

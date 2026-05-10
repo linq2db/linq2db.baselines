@@ -210,7 +210,7 @@ VALUES
 
 -- Firebird.3 Firebird3
 DECLARE @param TimeStamp -- DateTime
-SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
+SET     @param = TIMESTAMP '2020-02-29 17:54:55.1231'
 
 MERGE INTO "TestMerge1" "Target"
 USING (

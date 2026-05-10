@@ -1,8 +1,8 @@
 ﻿-- Sybase.Managed Sybase
 DECLARE @Column Date
-SET     @Column = '2020-02-29'
+SET     @Column = '2020-02-29 00:00:00.000'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2020-01-01'
+SET     @ColumnNullable = '2020-01-01 00:00:00.000'
 
 SELECT
 	[r].[Id],
@@ -34,7 +34,7 @@ FROM
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = '1980-01-01'
+SET     @Column = '1980-01-01 00:00:00.000'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -55,9 +55,9 @@ VALUES
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Date
-SET     @Column = '2020-02-29'
+SET     @Column = '2020-02-29 00:00:00.000'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2020-01-01'
+SET     @ColumnNullable = '2020-01-01 00:00:00.000'
 
 INSERT INTO [DateOnlyTable]
 (
