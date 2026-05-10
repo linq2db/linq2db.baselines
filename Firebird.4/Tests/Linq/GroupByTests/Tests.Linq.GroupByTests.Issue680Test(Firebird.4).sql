@@ -2,7 +2,7 @@
 
 SELECT
 	COUNT(CASE
-		WHEN "g_1"."TimeStamp" > TIMESTAMP '2020-02-29 17:54:55.1231'
+		WHEN "g_1"."TimeStamp" > CAST('2020-02-29 17:54:55.123' AS timestamp)
 			THEN 1
 		ELSE NULL
 	END)

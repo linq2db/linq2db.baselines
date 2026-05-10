@@ -4,7 +4,7 @@ UPDATE
 	"LinqDataTypes" "p"
 SET
 	"BoolValue" = TRUE,
-	"DateTimeValue" = CURRENT_TIMESTAMP
+	"DateTimeValue" = LOCALTIMESTAMP
 WHERE
 	"p".ID = 100000
 

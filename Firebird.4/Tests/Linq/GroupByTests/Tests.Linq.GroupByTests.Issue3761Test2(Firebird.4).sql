@@ -9,11 +9,11 @@ FROM
 		SELECT
 			Extract(year from CASE
 				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
-				ELSE TIMESTAMP '0001-01-01 00:00:00.0000'
+				ELSE CAST('0001-01-01' AS timestamp)
 			END) as "Year_1",
 			Extract(month from CASE
 				WHEN "n".DATUM IS NOT NULL THEN "n".DATUM
-				ELSE TIMESTAMP '0001-01-01 00:00:00.0000'
+				ELSE CAST('0001-01-01' AS timestamp)
 			END) as "Month_1",
 			"n".SKUPAJ
 		FROM
@@ -34,11 +34,11 @@ FROM
 		SELECT
 			Extract(year from CASE
 				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
-				ELSE TIMESTAMP '0001-01-01 00:00:00.0000'
+				ELSE CAST('0001-01-01' AS timestamp)
 			END) as "Year_1",
 			Extract(month from CASE
 				WHEN "n_1".DATUM IS NOT NULL THEN "n_1".DATUM
-				ELSE TIMESTAMP '0001-01-01 00:00:00.0000'
+				ELSE CAST('0001-01-01' AS timestamp)
 			END) as "Month_1",
 			"n_1".SKUPAJ
 		FROM
