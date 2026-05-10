@@ -2,7 +2,7 @@
 
 SELECT
 	[p2].[PersonID],
-	RTRIM(([p2].[FirstName] + N''), N'')
+	RTRIM([p2].[FirstName] + N'', N'')
 FROM
 	[Person] [p2]
 WHERE
