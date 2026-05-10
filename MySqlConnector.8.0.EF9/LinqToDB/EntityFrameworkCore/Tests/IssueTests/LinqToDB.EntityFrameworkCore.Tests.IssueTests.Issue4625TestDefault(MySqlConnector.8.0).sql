@@ -1,8 +1,8 @@
 ﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @DateTimeOffset Datetime -- DateTimeOffset
-SET     @DateTimeOffset = TIMESTAMP '2020-02-29 17:54:55.123123+00:00'
+SET     @DateTimeOffset = '2020-02-29T17:54:55.1231234+00:00'
 DECLARE @DateTimeOffsetN Datetime -- DateTimeOffset
-SET     @DateTimeOffsetN = TIMESTAMP '2020-02-29 17:54:55.123123+00:00'
+SET     @DateTimeOffsetN = '2020-02-29T17:54:55.1231234+00:00'
 
 UPDATE
 	`Types` `x`
