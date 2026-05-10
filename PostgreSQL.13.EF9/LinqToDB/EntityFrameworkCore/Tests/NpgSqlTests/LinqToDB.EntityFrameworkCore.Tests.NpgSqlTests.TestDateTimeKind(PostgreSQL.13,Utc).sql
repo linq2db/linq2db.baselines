@@ -54,7 +54,7 @@ WHERE
 
 -- PostgreSQL.13 PostgreSQL
 DECLARE @dto TimestampTz -- DateTime
-SET     @dto = '2020-02-29 17:14:55.123123+00:00'::timestamptz
+SET     @dto = '2020-02-29T17:14:55.1231234+00:00'
 
 SELECT
 	e."Id",
