@@ -35,7 +35,7 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."TimestampTZ" = timezone('UTC', now())::TimeStampTZ
+	r."TimestampTZ" = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."TimestampTZN" = timezone('UTC', now())::TimeStampTZ
+	r."TimestampTZN" = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -61,7 +61,7 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."Timestamp"::TimeStampTZ = now()
+	r."Timestamp"::TimeStampTZ = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -74,7 +74,7 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."TimestampN"::TimeStampTZ = now()
+	r."TimestampN"::TimeStampTZ = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -87,7 +87,7 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."TimestampTZ" = now()
+	r."TimestampTZ" = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -100,5 +100,5 @@ SELECT
 FROM
 	"Issue5325Table" r
 WHERE
-	r."TimestampTZN" = now()
+	r."TimestampTZN" = timezone('UTC', now())
 
