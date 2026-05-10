@@ -6,5 +6,5 @@ SELECT
 FROM
 	`Person` `pp`
 WHERE
-	`pp`.`PersonID` = 1 AND (TRIM(TRAILING FROM Concat('  ', `pp`.`FirstName`, ' '))) = '  John'
+	`pp`.`PersonID` = 1 AND RTRIM(Concat('  ', `pp`.`FirstName`, ' ')) = '  John'
 
