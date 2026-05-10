@@ -400,19 +400,19 @@ SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 
 -- SqlCe
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12.000'
+SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 -- SqlCe
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12.000'
+SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 -- SqlCe
 DECLARE @p DateTime
-SET     @p = '2012-12-12 12:12:12.000'
+SET     @p = '2012-12-12 12:12:12'
 
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 

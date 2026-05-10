@@ -1,6 +1,6 @@
 ﻿-- SqlCe
 DECLARE @minValue DateTime
-SET     @minValue = '1753-01-01 00:00:00.000'
+SET     @minValue = '1753-01-01'
 
 SELECT
 	[t1].[datetimeDataType] as [DateTimeValue]

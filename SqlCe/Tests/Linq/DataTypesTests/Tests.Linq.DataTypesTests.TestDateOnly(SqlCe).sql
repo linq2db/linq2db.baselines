@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 DECLARE @Column DateTime
-SET     @Column = '2020-02-29 00:00:00.000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = '2020-01-01 00:00:00.000'
+SET     @ColumnNullable = '2020-01-01'
 
 SELECT
 	[r].[Id],
@@ -33,7 +33,7 @@ DELETE FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column DateTime
-SET     @Column = '1980-01-01 00:00:00.000'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = NULL
 
@@ -54,9 +54,9 @@ VALUES
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column DateTime
-SET     @Column = '2020-02-29 00:00:00.000'
+SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = '2020-01-01 00:00:00.000'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
