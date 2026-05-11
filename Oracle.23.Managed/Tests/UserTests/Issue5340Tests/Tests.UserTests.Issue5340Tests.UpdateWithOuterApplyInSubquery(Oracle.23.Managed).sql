@@ -5,20 +5,30 @@ UPDATE
 SET
 	"Field1" = (
 		SELECT
-			t2."Field4"
+			b_1."Field4"
 		FROM
 			(
 				SELECT
-					b."Field4"
-				FROM
-					"InnerTable" b
-				WHERE
-					t1."Field2" = b."Field3"
-				ORDER BY
-					b."Field4"
-			) t2
-		WHERE
-			ROWNUM <= 1
+					1 as "c1"
+				FROM SYS.DUAL
+			) t3
+				CROSS APPLY (
+					SELECT
+						t2."Field4"
+					FROM
+						(
+							SELECT
+								b."Field4"
+							FROM
+								"InnerTable" b
+							WHERE
+								t1."Field2" = b."Field3"
+							ORDER BY
+								b."Field4"
+						) t2
+					WHERE
+						ROWNUM <= 1
+				) b_1
 	)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
