@@ -1,10 +1,10 @@
 ﻿-- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 
 -- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_InsertOrUpdate
 (
 	ID   INTEGER,
 	Name VARCHAR,
@@ -18,7 +18,7 @@ SET     $ID = 1
 DECLARE $Name NVarChar(4) -- String
 SET     $Name = 'John'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_InsertOrUpdate
 (
 	ID,
 	Name
@@ -31,7 +31,7 @@ VALUES
 
 -- DuckDB
 
-INSERT INTO FluentTemp AS t1
+INSERT INTO FluentTemp_InsertOrUpdate AS t1
 (
 	ID,
 	Name
@@ -47,5 +47,5 @@ ON CONFLICT (ID) DO UPDATE SET
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 

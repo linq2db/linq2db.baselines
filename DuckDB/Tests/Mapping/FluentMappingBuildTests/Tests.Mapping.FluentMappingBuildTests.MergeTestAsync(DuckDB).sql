@@ -1,10 +1,10 @@
 ﻿-- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Merge
 
 -- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Merge
 (
 	ID   INTEGER,
 	Name VARCHAR,
@@ -18,7 +18,7 @@ SET     $ID = 1
 DECLARE $Name NVarChar(4) -- String
 SET     $Name = 'John'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Merge
 (
 	ID,
 	Name
@@ -31,7 +31,7 @@ VALUES
 
 -- DuckDB
 
-MERGE INTO FluentTemp Target
+MERGE INTO FluentTemp_Merge Target
 USING (VALUES
 	(1,'John II')
 ) Source
@@ -60,5 +60,5 @@ VALUES
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Merge
 

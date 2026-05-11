@@ -1,6 +1,6 @@
 ﻿-- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
 	"Value"  VARCHAR,
@@ -17,7 +17,7 @@ SET     $Name = 'John'
 DECLARE $LastName NVarChar(3) -- String
 SET     $LastName = 'Doe'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	"Value",
@@ -37,17 +37,17 @@ SELECT
 	t."Value",
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
 	"Value"  VARCHAR,
@@ -64,7 +64,7 @@ SET     $Name = 'John'
 DECLARE $LastName NVarChar(3) -- String
 SET     $LastName = 'Doe'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	"Value",
@@ -84,17 +84,17 @@ SELECT
 	t."Value",
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
 	"Column" VARCHAR,
@@ -111,7 +111,7 @@ SET     $Name = 'John'
 DECLARE $LastName NVarChar(3) -- String
 SET     $LastName = 'Doe'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	"Column",
@@ -131,17 +131,17 @@ SELECT
 	t."Column",
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
 	"Column" VARCHAR,
@@ -158,7 +158,7 @@ SET     $Name = 'John'
 DECLARE $LastName NVarChar(3) -- String
 SET     $LastName = 'Doe'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Cache
 (
 	ID,
 	"Column",
@@ -178,11 +178,11 @@ SELECT
 	t."Column",
 	t.LastName
 FROM
-	FluentTemp t
+	FluentTemp_Cache t
 WHERE
 	t.ID = 1
 
 -- DuckDB
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Cache
 
