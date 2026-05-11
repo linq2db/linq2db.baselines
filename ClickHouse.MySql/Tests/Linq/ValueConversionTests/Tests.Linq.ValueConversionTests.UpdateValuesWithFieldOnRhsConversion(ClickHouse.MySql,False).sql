@@ -1,0 +1,38 @@
+﻿-- ClickHouse.MySql ClickHouse
+
+ALTER TABLE
+	TableWithConverterValue
+UPDATE
+	Test1 = CASE
+		WHEN Test2 IS NULL THEN 'X'
+		ELSE NULL
+	END
+WHERE
+	Id = 1
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	x.Id,
+	x.NoConversion,
+	x.Test1,
+	x.Test2
+FROM
+	TableWithConverterValue x
+WHERE
+	x.Id = 1
+LIMIT 2
+
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	x.Id,
+	x.NoConversion,
+	x.Test1,
+	x.Test2
+FROM
+	TableWithConverterValue x
+WHERE
+	x.Id = 1
+LIMIT 2
+
