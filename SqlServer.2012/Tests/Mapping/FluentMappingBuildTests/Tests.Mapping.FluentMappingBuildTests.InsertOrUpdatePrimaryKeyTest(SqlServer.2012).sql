@@ -1,17 +1,17 @@
 ﻿-- SqlServer.2012
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_InsertOrUpdate]
 	(
 		[ID]   Int          NOT NULL,
 		[Name] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2012
@@ -20,7 +20,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
 SET     @Name = N'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_InsertOrUpdate]
 (
 	[ID],
 	[Name]
@@ -33,7 +33,7 @@ VALUES
 
 -- SqlServer.2012
 
-MERGE INTO [FluentTemp] [t1]
+MERGE INTO [FluentTemp_InsertOrUpdate] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
 (
 	[t1].[ID] = [s].[ID]
@@ -57,6 +57,6 @@ WHEN NOT MATCHED THEN
 
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_InsertOrUpdate]
 

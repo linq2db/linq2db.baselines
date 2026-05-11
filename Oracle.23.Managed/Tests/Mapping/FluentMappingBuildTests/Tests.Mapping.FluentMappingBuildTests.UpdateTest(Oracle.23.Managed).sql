@@ -2,13 +2,13 @@
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Update"
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
 			"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Update" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -26,7 +26,7 @@ SET     @Name = 'John'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Update"
 (
 	ID,
 	"Value",
@@ -46,7 +46,7 @@ DECLARE @LastName Varchar2(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	"FluentTemp" t
+	"FluentTemp_Update" t
 SET
 	"Value" = :Name,
 	"LastName" = :LastName
@@ -56,7 +56,7 @@ WHERE
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Update"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

@@ -2,12 +2,12 @@
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_InsertOrUpdate"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_InsertOrUpdate"
 (
 	"ID"   Integer      NOT NULL,
 	"Name" NVarChar(20)     NULL,
@@ -21,7 +21,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_InsertOrUpdate"
 (
 	"ID",
 	"Name"
@@ -35,7 +35,7 @@ VALUES
 -- SapHana.Odbc SapHanaOdbc
 
 UPDATE
-	"FluentTemp" "t1"
+	"FluentTemp_InsertOrUpdate" "t1"
 SET
 	"ID" = "t1"."ID",
 	"Name" = "t1"."Name"
@@ -46,6 +46,6 @@ WHERE
 
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_InsertOrUpdate"';
 END
 

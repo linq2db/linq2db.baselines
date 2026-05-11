@@ -1,15 +1,15 @@
 ﻿-- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [FluentTemp]
+CREATE TABLE IF NOT EXISTS [FluentTemp_InsertOrUpdate]
 (
 	[ID]   INTEGER      NOT NULL,
 	[Name] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY ([ID])
 )
 
 -- SQLite.MS SQLite
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_InsertOrUpdate]
 (
 	[ID],
 	[Name]
@@ -31,7 +31,7 @@ VALUES
 
 -- SQLite.MS SQLite
 
-INSERT INTO [FluentTemp] AS [t1]
+INSERT INTO [FluentTemp_InsertOrUpdate] AS [t1]
 (
 	[ID],
 	[Name]
@@ -47,5 +47,5 @@ ON CONFLICT ([ID]) DO UPDATE SET
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_InsertOrUpdate]
 

@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_UpdateAsync]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_UpdateAsync]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_UpdateAsync] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2012.MS SqlServer.2012
@@ -18,7 +18,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_UpdateAsync]
 (
 	[ID],
 	[Value],
@@ -38,15 +38,15 @@ DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Dory'
 
 UPDATE
-	[FluentTemp]
+	[FluentTemp_UpdateAsync]
 SET
 	[Value] = @Name,
 	[LastName] = @LastName
 WHERE
-	[FluentTemp].[ID] = 1
+	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_UpdateAsync]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_UpdateAsync]
 

@@ -1,14 +1,14 @@
 ﻿-- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Cache]
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
 			[LastName] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -20,7 +20,7 @@ SET     @Name = 'John'
 DECLARE @LastName UniVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -40,26 +40,26 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Cache]
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
 			[LastName] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -71,7 +71,7 @@ SET     @Name = 'John'
 DECLARE @LastName UniVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -91,26 +91,26 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Cache]
 		(
 			[ID]       Int          NOT NULL,
 			[Column]   NVarChar(20)     NULL,
 			[LastName] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -122,7 +122,7 @@ SET     @Name = 'John'
 DECLARE @LastName UniVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -142,26 +142,26 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Cache]
 		(
 			[ID]       Int          NOT NULL,
 			[Column]   NVarChar(20)     NULL,
 			[LastName] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -173,7 +173,7 @@ SET     @Name = 'John'
 DECLARE @LastName UniVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -193,12 +193,12 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 

@@ -2,13 +2,13 @@
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
 			"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -26,7 +26,7 @@ SET     @Name = 'John'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -46,14 +46,14 @@ SELECT
 	t."Value",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -65,13 +65,13 @@ END;
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int         NOT NULL,
 			"Value"    VarChar(20)     NULL,
 			"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -89,7 +89,7 @@ SET     @Name = 'John'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -109,14 +109,14 @@ SELECT
 	t."Value",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -128,13 +128,13 @@ END;
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int         NOT NULL,
 			"Column"   VarChar(20)     NULL,
 			"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -152,7 +152,7 @@ SET     @Name = 'John'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -172,14 +172,14 @@ SELECT
 	t."Column",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -191,13 +191,13 @@ END;
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int         NOT NULL,
 			"Column"   VarChar(20)     NULL,
 			"LastName" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -215,7 +215,7 @@ SET     @Name = 'John'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -235,14 +235,14 @@ SELECT
 	t."Column",
 	t."LastName"
 FROM
-	"FluentTemp" t
+	"FluentTemp_Cache" t
 WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

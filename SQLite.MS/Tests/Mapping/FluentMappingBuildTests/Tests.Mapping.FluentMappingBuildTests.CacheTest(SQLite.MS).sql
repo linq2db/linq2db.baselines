@@ -1,12 +1,12 @@
 ﻿-- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [FluentTemp]
+CREATE TABLE IF NOT EXISTS [FluentTemp_Cache]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Value]    NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SQLite.MS SQLite
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -37,23 +37,23 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_Cache]
 
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [FluentTemp]
+CREATE TABLE IF NOT EXISTS [FluentTemp_Cache]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Value]    NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SQLite.MS SQLite
@@ -64,7 +64,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -84,23 +84,23 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_Cache]
 
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [FluentTemp]
+CREATE TABLE IF NOT EXISTS [FluentTemp_Cache]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Column]   NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SQLite.MS SQLite
@@ -111,7 +111,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -131,23 +131,23 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_Cache]
 
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [FluentTemp]
+CREATE TABLE IF NOT EXISTS [FluentTemp_Cache]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Column]   NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SQLite.MS SQLite
@@ -158,7 +158,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -178,11 +178,11 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_Cache]
 

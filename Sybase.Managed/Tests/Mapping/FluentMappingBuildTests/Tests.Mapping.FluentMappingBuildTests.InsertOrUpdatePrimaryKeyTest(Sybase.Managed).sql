@@ -1,18 +1,18 @@
 ﻿-- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NOT NULL)
+	DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_InsertOrUpdate]
 		(
 			[ID]   Int          NOT NULL,
 			[Name] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -22,7 +22,7 @@ SET     @ID = 1
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_InsertOrUpdate]
 (
 	[ID],
 	[Name]
@@ -36,18 +36,18 @@ VALUES
 -- Sybase.Managed Sybase
 
 UPDATE
-	[FluentTemp]
+	[FluentTemp_InsertOrUpdate]
 SET
 	[ID] = [t1].[ID],
 	[Name] = [t1].[Name]
 FROM
-	[FluentTemp] [t1]
+	[FluentTemp_InsertOrUpdate] [t1]
 WHERE
 	[t1].[ID] = 1
 
 IF @@ROWCOUNT = 0
 BEGIN
-	INSERT INTO [FluentTemp]
+	INSERT INTO [FluentTemp_InsertOrUpdate]
 	(
 		[ID],
 		[Name]
@@ -61,6 +61,6 @@ END
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_InsertOrUpdate') IS NOT NULL)
+	DROP TABLE [FluentTemp_InsertOrUpdate]
 

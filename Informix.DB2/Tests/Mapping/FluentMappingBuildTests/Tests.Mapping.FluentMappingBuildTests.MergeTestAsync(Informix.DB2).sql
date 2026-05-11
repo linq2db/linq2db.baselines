@@ -1,10 +1,10 @@
 ﻿-- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Merge
 
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Merge
 (
 	ID   Int          NOT NULL,
 	Name NVarChar(20)     NULL,
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Merge
 (
 	ID,
 	Name
@@ -31,7 +31,7 @@ VALUES
 
 -- Informix.DB2 Informix
 
-MERGE INTO FluentTemp Target
+MERGE INTO FluentTemp_Merge Target
 USING (
 	SELECT 1::Int AS ID, 'John II'::NVarChar(20) AS Name FROM table(set{1})) Source
 (
@@ -59,5 +59,5 @@ VALUES
 
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Merge
 

@@ -1,10 +1,10 @@
 ﻿-- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 
 -- Informix.DB2 Informix
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_InsertOrUpdate
 (
 	ID   Int          NOT NULL,
 	Name NVarChar(20)     NULL,
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_InsertOrUpdate
 (
 	ID,
 	Name
@@ -32,7 +32,7 @@ VALUES
 -- Informix.DB2 Informix
 
 UPDATE
-	FluentTemp t1
+	FluentTemp_InsertOrUpdate t1
 SET
 	ID = t1.ID,
 	Name = t1.Name
@@ -41,5 +41,5 @@ WHERE
 
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 

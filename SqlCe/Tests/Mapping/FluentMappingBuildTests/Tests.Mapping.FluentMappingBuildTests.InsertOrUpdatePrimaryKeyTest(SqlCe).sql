@@ -1,15 +1,15 @@
 ﻿-- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- SqlCe
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_InsertOrUpdate]
 (
 	[ID]   Int          NOT NULL,
 	[Name] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY ([ID])
 )
 
 -- SqlCe
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_InsertOrUpdate]
 (
 	[ID],
 	[Name]
@@ -32,14 +32,14 @@ VALUES
 -- SqlCe
 
 UPDATE
-	[FluentTemp]
+	[FluentTemp_InsertOrUpdate]
 SET
-	[ID] = [FluentTemp].[ID],
-	[Name] = [FluentTemp].[Name]
+	[ID] = [FluentTemp_InsertOrUpdate].[ID],
+	[Name] = [FluentTemp_InsertOrUpdate].[Name]
 WHERE
-	[FluentTemp].[ID] = 1
+	[FluentTemp_InsertOrUpdate].[ID] = 1
 
 -- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_InsertOrUpdate]
 

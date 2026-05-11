@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
-CREATE TABLE IF NOT EXISTS FluentTemp
+CREATE TABLE IF NOT EXISTS FluentTemp_Update
 (
 	ID       Int32,
 	Value    Nullable(String),
@@ -13,7 +13,7 @@ ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 
-INSERT INTO FluentTemp
+INSERT INTO FluentTemp_Update
 (
 	ID,
 	Value,
@@ -29,7 +29,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 ALTER TABLE
-	FluentTemp
+	FluentTemp_Update
 UPDATE
 	Value = 'John II',
 	LastName = 'Dory'
@@ -38,5 +38,5 @@ WHERE
 
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS FluentTemp
+DROP TABLE IF EXISTS FluentTemp_Update
 

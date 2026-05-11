@@ -1,12 +1,12 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_Update]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+	CONSTRAINT [PK_FluentTemp_Update] PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- Access.Ace.OleDb AccessOleDb
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarWChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Update]
 (
 	[ID],
 	[Value],
@@ -37,7 +37,7 @@ DECLARE @LastName VarWChar(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	[FluentTemp] [t]
+	[FluentTemp_Update] [t]
 SET
 	[t].[Value] = @Name,
 	[t].[LastName] = @LastName
@@ -46,5 +46,5 @@ WHERE
 
 -- Access.Ace.OleDb AccessOleDb
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_Update]
 

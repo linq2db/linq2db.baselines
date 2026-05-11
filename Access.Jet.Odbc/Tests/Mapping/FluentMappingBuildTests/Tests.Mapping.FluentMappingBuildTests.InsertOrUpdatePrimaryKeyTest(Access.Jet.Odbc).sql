@@ -1,15 +1,15 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- Access.Jet.Odbc AccessODBC
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_InsertOrUpdate]
 (
 	[ID]   Int          NOT NULL,
 	[Name] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+	CONSTRAINT [PK_FluentTemp_InsertOrUpdate] PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- Access.Jet.Odbc AccessODBC
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_InsertOrUpdate]
 (
 	[ID],
 	[Name]
@@ -32,7 +32,7 @@ VALUES
 -- Access.Jet.Odbc AccessODBC
 
 UPDATE
-	[FluentTemp] [t1]
+	[FluentTemp_InsertOrUpdate] [t1]
 SET
 	[t1].[ID] = [t1].[ID],
 	[t1].[Name] = [t1].[Name]
@@ -41,5 +41,5 @@ WHERE
 
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_InsertOrUpdate]
 
