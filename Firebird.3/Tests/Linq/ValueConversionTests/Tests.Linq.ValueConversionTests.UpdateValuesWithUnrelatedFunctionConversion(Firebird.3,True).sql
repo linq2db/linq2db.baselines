@@ -1,0 +1,25 @@
+﻿-- Firebird.3 Firebird3
+
+UPDATE
+	"TableWithConverterValue" "x"
+SET
+	"Test1" = CASE
+		WHEN ("x"."Id" > 0) THEN 'X'
+		ELSE NULL
+	END
+WHERE
+	"x"."Id" = 1
+
+-- Firebird.3 Firebird3
+
+SELECT
+	"x"."Id",
+	"x"."NoConversion",
+	"x"."Test1",
+	"x"."Test2"
+FROM
+	"TableWithConverterValue" "x"
+WHERE
+	"x"."Id" = 1
+FETCH NEXT 2 ROWS ONLY
+
