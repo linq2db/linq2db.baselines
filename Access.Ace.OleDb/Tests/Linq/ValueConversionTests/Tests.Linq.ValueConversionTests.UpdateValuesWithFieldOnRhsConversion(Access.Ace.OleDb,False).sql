@@ -1,15 +1,13 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-DECLARE @false_value Char -- AnsiStringFixedLength
-SET     @false_value = NULL
-DECLARE @yes Char -- AnsiStringFixedLength
-SET     @yes = NULL
-DECLARE @no Char -- AnsiStringFixedLength
+DECLARE @yes VarWChar(1) -- String
+SET     @yes = 'X'
+DECLARE @no VarWChar -- String
 SET     @no = NULL
 
 UPDATE
 	[TableWithConverterValue] [x]
 SET
-	[x].[Test1] = IIF([x].[Test2] = @false_value OR [x].[Test2] IS NULL, @yes, @no)
+	[x].[Test1] = IIF([x].[Test2] IS NULL, @yes, @no)
 WHERE
 	[x].[Id] = 1
 
