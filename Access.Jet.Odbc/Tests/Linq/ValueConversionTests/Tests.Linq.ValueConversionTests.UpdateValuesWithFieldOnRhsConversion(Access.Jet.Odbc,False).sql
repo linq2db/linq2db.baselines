@@ -1,15 +1,13 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @false_value Char -- AnsiStringFixedLength
-SET     @false_value = NULL
-DECLARE @yes Char -- AnsiStringFixedLength
-SET     @yes = NULL
-DECLARE @no Char -- AnsiStringFixedLength
+DECLARE @yes NVarChar(1) -- String
+SET     @yes = 'X'
+DECLARE @no NVarChar -- String
 SET     @no = NULL
 
 UPDATE
 	[TableWithConverterValue] [x]
 SET
-	[x].[Test1] = IIF([x].[Test2] = ? OR [x].[Test2] IS NULL, ?, ?)
+	[x].[Test1] = IIF([x].[Test2] IS NULL, ?, ?)
 WHERE
 	[x].[Id] = 1
 
