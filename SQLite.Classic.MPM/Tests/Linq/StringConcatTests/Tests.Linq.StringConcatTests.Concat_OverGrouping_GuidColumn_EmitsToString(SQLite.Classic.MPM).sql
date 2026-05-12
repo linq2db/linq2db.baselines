@@ -1,28 +1,31 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[m_1].[Key_1],
-	[d].[GuidV]
+	[g_2].[Key_1],
+	Coalesce((
+		SELECT
+			GROUP_CONCAT(Lower(substr(hex([t1].[GuidV]), 7, 2) || substr(hex([t1].[GuidV]), 5, 2) || substr(hex([t1].[GuidV]), 3, 2) || substr(hex([t1].[GuidV]), 1, 2) || '-' || substr(hex([t1].[GuidV]), 11, 2) || substr(hex([t1].[GuidV]), 9, 2) || '-' || substr(hex([t1].[GuidV]), 15, 2) || substr(hex([t1].[GuidV]), 13, 2) || '-' || substr(hex([t1].[GuidV]), 17, 4) || '-' || substr(hex([t1].[GuidV]), 21, 12)), '')
+		FROM
+			(
+				SELECT
+					[e].[GuidV]
+				FROM
+					[ConcatGroupedTypedEntity] [e]
+				WHERE
+					[g_2].[Key_1] = [e].[GrpId]
+				ORDER BY
+					[e].[PK]
+			) [t1]
+	), '')
 FROM
 	(
 		SELECT DISTINCT
 			[g_1].[GrpId] as [Key_1]
 		FROM
 			[ConcatGroupedTypedEntity] [g_1]
-	) [m_1]
-		INNER JOIN [ConcatGroupedTypedEntity] [d] ON [m_1].[Key_1] = [d].[GrpId]
+	) [g_2]
 ORDER BY
-	[d].[PK],
-	[m_1].[Key_1]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT DISTINCT
-	[g_1].[GrpId]
-FROM
-	[ConcatGroupedTypedEntity] [g_1]
-ORDER BY
-	[g_1].[GrpId]
+	[g_2].[Key_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
