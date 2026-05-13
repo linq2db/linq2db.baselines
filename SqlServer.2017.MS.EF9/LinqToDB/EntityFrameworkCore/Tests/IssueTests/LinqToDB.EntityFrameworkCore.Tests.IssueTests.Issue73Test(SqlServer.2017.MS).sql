@@ -7,7 +7,7 @@ WHERE [i].[Name] = N'Name1_3'
 -- SqlServer.2017
 
 SELECT
-	[a_Parent].[Name] + N'>' + [x].[Name]
+	Coalesce([a_Parent].[Name], N'') + N'>' + [x].[Name]
 FROM
 	[Issue73Entities] [x]
 		LEFT JOIN [Issue73Entities] [a_Parent] ON [x].[ParentId] = [a_Parent].[Id]
