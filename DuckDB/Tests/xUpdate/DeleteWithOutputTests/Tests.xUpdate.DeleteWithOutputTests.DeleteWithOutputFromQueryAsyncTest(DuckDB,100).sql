@@ -18,5 +18,5 @@ WHERE
 RETURNING
 	s.Id + 100,
 	s."Value" + 100,
-	Coalesce(s.ValueStr, '') || Coalesce('100', '')
+	Coalesce(s.ValueStr, '') || '100'
 

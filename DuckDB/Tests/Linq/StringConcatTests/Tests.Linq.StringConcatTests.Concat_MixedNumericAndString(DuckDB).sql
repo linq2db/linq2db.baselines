@@ -5,7 +5,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	CAST(e.Num AS VARCHAR) || '-' || Coalesce(e.StrReq, '') = '100-Programmer'
+	(CAST(e.Num AS VARCHAR) || '-' || Coalesce(e.StrReq, '')) = '100-Programmer'
 
 -- DuckDB
 
