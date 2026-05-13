@@ -8,11 +8,11 @@ SELECT
 FROM
 	(
 		SELECT
-			CONCAT_WS(',', '', it."StyleName") || ':' || CASE
+			CONCAT_WS(',', '', it."StyleName") || ':' || Coalesce(CASE
 				WHEN it."ColorId" IS NULL OR Length(it."ColorId"::text) >= 4
 					THEN it."ColorId"::text
 				ELSE LPAD(it."ColorId"::text, 4, '0')
-			END as "StrValue",
+			END, '') as "StrValue",
 			it."ColorName",
 			it."StyleName",
 			it."Conditional"
