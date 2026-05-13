@@ -3,7 +3,7 @@
 SELECT
 	"t"."Str",
 	CHAR_LENGTH("t"."Str"),
-	'original-' || "t"."Str"
+	'original-' || Coalesce("t"."Str", '')
 FROM
 	"TestLengthModel" "t"
 
