@@ -13,7 +13,7 @@ INSERT INTO DestinationTable
 SELECT
 	s.Id + $param,
 	s."Value" + $param,
-	s.ValueStr || $ValueStr
+	Coalesce(s.ValueStr, '') || Coalesce($ValueStr, '')
 FROM
 	TableWithData s
 WHERE
@@ -32,7 +32,7 @@ SET     $ValueStr = '100'
 SELECT
 	s.Id + $param,
 	s."Value" + $param,
-	s.ValueStr || $ValueStr
+	Coalesce(s.ValueStr, '') || Coalesce($ValueStr, '')
 FROM
 	TableWithData s
 WHERE
