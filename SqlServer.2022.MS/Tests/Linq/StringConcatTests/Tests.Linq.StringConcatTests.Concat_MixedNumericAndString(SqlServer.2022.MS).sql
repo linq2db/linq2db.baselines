@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	CAST([e].[Num] AS NVarChar(11)) + N'-' + Coalesce([e].[StrReq], N'') = N'100-Programmer'
+	(CAST([e].[Num] AS NVarChar(11)) + N'-' + Coalesce([e].[StrReq], N'')) = N'100-Programmer'
 
 -- SqlServer.2022.MS SqlServer.2022
 
