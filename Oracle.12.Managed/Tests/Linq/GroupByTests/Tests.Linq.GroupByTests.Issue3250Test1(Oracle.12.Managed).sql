@@ -1,7 +1,7 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	(CAST(g_2."Message" AS VarChar(255)) || ' items have not been processed, e.g. #' || Coalesce(CAST(g_2."Message_1" AS VarChar(255)), '')) || '.'
+	CAST(g_2."Message" AS VarChar(255)) || ' items have not been processed, e.g. #' || Coalesce(CAST(g_2."Message_1" AS VarChar(255)), '') || '.'
 FROM
 	(
 		SELECT
