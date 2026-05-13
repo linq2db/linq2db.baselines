@@ -1,5 +1,5 @@
 ﻿Parameters:
-@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p11='?' (DbType = Boolean), @ef_filter__p7='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p11='?' (DbType = Boolean), @ef_filter__p15='?' (DbType = Boolean), @ef_filter__p7='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT o."OrderID", o."CustomerID", o."EmployeeID", o."Freight", o."IsDeleted", o."OrderDate", o."RequiredDate", o."ShipAddress", o."ShipCity", o."ShipCountry", o."ShipName", o."ShipPostalCode", o."ShipRegion", o."ShipVia", o."ShippedDate", e0."EmployeeID", e0."Address", e0."BirthDate", e0."City", e0."Country", e0."Extension", e0."FirstName", e0."HireDate", e0."HomePhone", e0."IsDeleted", e0."LastName", e0."Notes", e0."Photo", e0."PhotoPath", e0."PostalCode", e0."Region", e0."ReportsTo", e0."Title", e0."TitleOfCourtesy", s."EmployeeID", s."TerritoryID", s."IsDeleted", s."TerritoryID0", s."IsDeleted0", s."RegionID", s."TerritoryDescription", s0."OrderID", s0."ProductID", s0."Discount", s0."IsDeleted", s0."Quantity", s0."UnitPrice", s0."ProductID0", s0."CategoryID", s0."Discontinued", s0."IsDeleted0", s0."ProductName", s0."QuantityPerUnit", s0."ReorderLevel", s0."SupplierID", s0."UnitPrice0", s0."UnitsInStock", s0."UnitsOnOrder"
 FROM "Orders" AS o
@@ -24,7 +24,7 @@ LEFT JOIN (
     INNER JOIN (
         SELECT p."ProductID", p."CategoryID", p."Discontinued", p."IsDeleted", p."ProductName", p."QuantityPerUnit", p."ReorderLevel", p."SupplierID", p."UnitPrice", p."UnitsInStock", p."UnitsOnOrder"
         FROM "Products" AS p
-        WHERE @ef_filter__p11 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
+        WHERE (@ef_filter__p11 OR p."ProductID" > 2) AND (@ef_filter__p11 OR NOT (p."Discontinued")) AND (@ef_filter__p15 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted"))
     ) AS p0 ON o0."ProductID" = p0."ProductID"
     WHERE @ef_filter__p7 OR NOT (o0."IsDeleted") OR NOT (o0."IsDeleted")
 ) AS s0 ON o."OrderID" = s0."OrderID"

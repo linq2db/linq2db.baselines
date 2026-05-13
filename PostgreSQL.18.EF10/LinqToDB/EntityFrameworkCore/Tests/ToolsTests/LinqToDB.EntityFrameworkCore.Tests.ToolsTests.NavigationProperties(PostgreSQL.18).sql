@@ -1,5 +1,5 @@
 ﻿Parameters:
-@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT o."OrderID", o1."OrderID", o1."ProductID", p0."ProductID", o3."OrderId", o3."ProductId", o3."Quantity", o1."Quantity", p0."ProductName"
 FROM "Orders" AS o
@@ -11,7 +11,7 @@ INNER JOIN (
 INNER JOIN (
     SELECT p."ProductID", p."ProductName"
     FROM "Products" AS p
-    WHERE @ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
+    WHERE (@ef_filter__p5 OR p."ProductID" > 2) AND (@ef_filter__p5 OR NOT (p."Discontinued")) AND (@ef_filter__p9 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted"))
 ) AS p0 ON o1."ProductID" = p0."ProductID"
 LEFT JOIN (
     SELECT o2."OrderID" AS "OrderId", o2."ProductID" AS "ProductId", o2."Quantity"

@@ -32,16 +32,16 @@ WHERE
 
 
 Parameters:
-@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p7='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
 
 SELECT p."ProductID", p."CategoryID", p."Discontinued", p."IsDeleted", p."ProductName", p."QuantityPerUnit", p."ReorderLevel", p."SupplierID", p."UnitPrice", p."UnitsInStock", p."UnitsOnOrder", o0."OrderID", o0."ProductID", o0."Discount", o0."IsDeleted", o0."Quantity", o0."UnitPrice"
 FROM "Products" AS p
 INNER JOIN (
     SELECT o."OrderID", o."ProductID", o."Discount", o."IsDeleted", o."Quantity", o."UnitPrice"
     FROM "Order Details" AS o
-    WHERE @ef_filter__p3 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")
+    WHERE @ef_filter__p7 OR NOT (o."IsDeleted") OR NOT (o."IsDeleted")
 ) AS o0 ON p."ProductID" = o0."ProductID"
-WHERE @ef_filter__p1 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
+WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Discontinued")) AND (@ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted"))
 
 
 -- PostgreSQL.18 PostgreSQL
