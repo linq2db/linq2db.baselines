@@ -18,7 +18,7 @@ AS
 )
 SELECT
 	X'BC7B663D0FDE43278F925D8CC3A11D11',
-	"parent"."Label" || '/' || "child"."Label"
+	Coalesce("parent"."Label", '') || '/' || Coalesce("child"."Label", '')
 FROM
 	CTE "child"
 		INNER JOIN "TestFolder" "parent" ON "child"."ParentId" = "parent"."Id"
