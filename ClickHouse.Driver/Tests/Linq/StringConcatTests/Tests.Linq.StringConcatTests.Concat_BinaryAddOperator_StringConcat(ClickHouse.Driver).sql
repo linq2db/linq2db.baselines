@@ -5,7 +5,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	concat(Coalesce(e.StrReq, ''), ' I') = 'Programmer I'
+	(concat(Coalesce(e.StrReq, ''), ' I')) = 'Programmer I'
 
 -- ClickHouse.Driver ClickHouse
 

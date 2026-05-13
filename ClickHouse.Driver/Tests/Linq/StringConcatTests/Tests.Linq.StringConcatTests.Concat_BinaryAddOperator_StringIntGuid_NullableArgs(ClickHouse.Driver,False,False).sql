@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	concat(t.Value1, toString(t.Value2), lowerUTF8(toString(t.Value3)))
+	concat(concat(t.Value1, toString(t.Value2)), lowerUTF8(toString(t.Value3)))
 FROM
 	StringConcatIntGuidNullEntity t
 ORDER BY
