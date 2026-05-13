@@ -20,7 +20,7 @@ AS
 		`a`.`parent_id` IS NULL
 	UNION ALL
 	SELECT
-		Concat(`recur`.`FullName`, ' > ', `t1`.`name`),
+		Concat(Coalesce(`recur`.`FullName`, ''), ' > ', Coalesce(`t1`.`name`, '')),
 		`t1`.`id`,
 		`t1`.`parent_id`,
 		`t1`.`name`
