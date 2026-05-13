@@ -5,5 +5,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."LastName" || ', ' || p."FirstName" = 'Pupkin, John'
+	(p."LastName" || ', ' || p."FirstName") = 'Pupkin, John'
 
