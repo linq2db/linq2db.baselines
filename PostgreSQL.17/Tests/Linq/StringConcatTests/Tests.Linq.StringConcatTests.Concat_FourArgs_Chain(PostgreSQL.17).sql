@@ -5,7 +5,7 @@ SELECT
 FROM
 	"ConcatTestEntity" e
 WHERE
-	Coalesce(e."Str1", '') || ' ' || Coalesce(e."StrReq", '') || '!' = 'John Programmer!'
+	(Coalesce(e."Str1", '') || ' ' || Coalesce(e."StrReq", '') || '!') = 'John Programmer!'
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
