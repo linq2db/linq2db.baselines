@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	Coalesce([e].[StrReq], '') || ' I' = 'Programmer I'
+	(Coalesce([e].[StrReq], '') || ' I') = 'Programmer I'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
