@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005
 
 SELECT
-	DATENAME(Month, CAST('2022-03-22' AS DateTime))
+	DATENAME(Month, CAST(N'2022-03-22' AS DateTime))
 
