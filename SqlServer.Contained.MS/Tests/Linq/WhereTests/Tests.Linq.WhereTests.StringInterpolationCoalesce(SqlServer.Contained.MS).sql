@@ -9,7 +9,7 @@ FROM
 		SELECT
 			[p].[FirstName],
 			[p].[LastName] + N', ' + [p].[FirstName] as [LastName],
-			((([p].[LastName] + N', ' + [p].[FirstName]) + N' (' + Coalesce([p].[MiddleName], N'')) + N' + ' + Coalesce([p].[MiddleName], N'')) + N')' as [FullName]
+			[p].[LastName] + N', ' + [p].[FirstName] + N' (' + Coalesce([p].[MiddleName], N'') + N' + ' + Coalesce([p].[MiddleName], N'') + N')' as [FullName]
 		FROM
 			[Person] [p]
 	) [t1]

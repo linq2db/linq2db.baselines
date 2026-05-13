@@ -10,7 +10,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + N'1' = @p
+	Coalesce([e].[StringValue], N'') + N'1' = @p
 
 -- SqlServer.Contained.MS SqlServer.2019
 
