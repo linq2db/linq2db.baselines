@@ -5,7 +5,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	e.StrReq IS NOT NULL
+	(concat(e.StrReq, e.StrReq)) IS NOT NULL
 
 -- ClickHouse.MySql ClickHouse
 

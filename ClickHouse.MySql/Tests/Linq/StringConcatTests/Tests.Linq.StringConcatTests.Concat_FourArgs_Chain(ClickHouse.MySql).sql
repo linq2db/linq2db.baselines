@@ -5,7 +5,7 @@ SELECT
 FROM
 	ConcatTestEntity e
 WHERE
-	concat(Coalesce(e.Str1, ''), ' ', Coalesce(e.StrReq, ''), '!') = 'John Programmer!'
+	(concat(Coalesce(e.Str1, ''), ' ', Coalesce(e.StrReq, ''), '!')) = 'John Programmer!'
 
 -- ClickHouse.MySql ClickHouse
 

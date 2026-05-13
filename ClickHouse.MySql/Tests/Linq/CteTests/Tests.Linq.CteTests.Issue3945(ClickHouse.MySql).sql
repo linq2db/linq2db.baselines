@@ -17,7 +17,7 @@ WITH CTE AS
 )
 SELECT
 	toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),
-	concat(Coalesce(parent.Label, ''), '/', Coalesce(child.Label, ''))
+	concat(concat(Coalesce(parent.Label, ''), '/'), Coalesce(child.Label, ''))
 FROM
 	CTE child
 		INNER JOIN TestFolder parent ON child.ParentId = parent.Id

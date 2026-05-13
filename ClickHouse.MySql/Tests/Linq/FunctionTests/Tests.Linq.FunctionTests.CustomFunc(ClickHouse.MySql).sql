@@ -1,9 +1,9 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	concat(p.LastName, ', ', p.FirstName)
+	concat(concat(p.LastName, ', '), p.FirstName)
 FROM
 	Person p
 WHERE
-	concat(p.LastName, ', ', p.FirstName) = 'Pupkin, John'
+	(concat(concat(p.LastName, ', '), p.FirstName)) = 'Pupkin, John'
 
