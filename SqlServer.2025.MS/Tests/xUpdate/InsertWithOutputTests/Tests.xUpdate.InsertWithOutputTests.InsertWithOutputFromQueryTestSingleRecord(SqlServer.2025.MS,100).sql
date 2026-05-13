@@ -17,7 +17,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') || Coalesce(@ValueStr, N'')
 FROM
 	[TableWithData] [s]
 WHERE
@@ -32,7 +32,7 @@ SET     @ValueStr = N'100'
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') || Coalesce(@ValueStr, N'')
 FROM
 	[TableWithData] [s]
 WHERE

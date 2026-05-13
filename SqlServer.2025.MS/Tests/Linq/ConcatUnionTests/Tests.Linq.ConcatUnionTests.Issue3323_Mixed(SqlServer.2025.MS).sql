@@ -19,7 +19,7 @@ VALUES
 
 SELECT
 	[r].[Id],
-	Coalesce([r].[FirstName], N'') + N' ' + Coalesce([r].[LastName], N'')
+	Coalesce([r].[FirstName], N'') || N' ' || Coalesce([r].[LastName], N'')
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -39,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	Coalesce([r_1].[FirstName], N'') + N' ' + Coalesce([r_1].[LastName], N'')
+	Coalesce([r_1].[FirstName], N'') || N' ' || Coalesce([r_1].[LastName], N'')
 FROM
 	[Issue3323Table] [r_1]
 

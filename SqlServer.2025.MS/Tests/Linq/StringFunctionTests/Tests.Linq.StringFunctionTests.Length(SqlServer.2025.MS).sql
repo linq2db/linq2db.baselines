@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LEN([p].[FirstName] + N'.') = 5 AND [p].[PersonID] = 1
+	LEN([p].[FirstName] || N'.') = 5 AND [p].[PersonID] = 1
 

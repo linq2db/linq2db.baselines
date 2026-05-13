@@ -10,11 +10,11 @@ INSERT INTO [DestinationTable]
 )
 OUTPUT
 	INSERTED.[Id] + 1,
-	Coalesce(INSERTED.[ValueStr], N'') + N'1'
+	Coalesce(INSERTED.[ValueStr], N'') || N'1'
 SELECT
 	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
-	Coalesce([s].[ValueStr], N'') + N'100'
+	Coalesce([s].[ValueStr], N'') || N'100'
 FROM
 	[TableWithData] [s]
 WHERE
@@ -33,7 +33,7 @@ FROM
 
 SELECT
 	[t].[Id] + 1,
-	Coalesce([t].[ValueStr], N'') + N'1'
+	Coalesce([t].[ValueStr], N'') || N'1'
 FROM
 	[DestinationTable] [t]
 

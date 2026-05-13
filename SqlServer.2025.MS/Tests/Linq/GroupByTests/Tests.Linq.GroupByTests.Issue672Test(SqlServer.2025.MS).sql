@@ -76,7 +76,7 @@ FROM
 			[Stone] [sG]
 		WHERE
 			[sG].[Enabled] = 1 AND [sG].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-			LEN([sG].[ImageFullUrl] + N'.') - 1 > 0
+			LEN([sG].[ImageFullUrl] || N'.') - 1 > 0
 	) [sG_1]
 		CROSS APPLY (
 			SELECT TOP (1)
@@ -89,7 +89,7 @@ FROM
 			WHERE
 				[s].[Enabled] = 1 AND
 				[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-				LEN([s].[ImageFullUrl] + N'.') - 1 > 0 AND
+				LEN([s].[ImageFullUrl] || N'.') - 1 > 0 AND
 				[sG_1].[Key_1] = [s].[Name]
 		) [t1]
 

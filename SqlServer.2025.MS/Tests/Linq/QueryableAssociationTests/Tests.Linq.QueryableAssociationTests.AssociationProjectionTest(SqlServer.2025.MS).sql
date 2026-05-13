@@ -1,15 +1,15 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	Coalesce([t1].[StrValue], N'') + N'_B',
-	Coalesce([t1].[StrValue], N'') + N'_C',
+	Coalesce([t1].[StrValue], N'') || N'_B',
+	Coalesce([t1].[StrValue], N'') || N'_C',
 	[t1].[Id],
 	[t1].[StrValue]
 FROM
 	[SomeEntity] [e]
 		OUTER APPLY (
 			SELECT TOP (1)
-				Coalesce([a_Other].[StrValue], N'') + N'_A' as [StrValue],
+				Coalesce([a_Other].[StrValue], N'') || N'_A' as [StrValue],
 				[a_Other].[Id]
 			FROM
 				[SomeOtherEntity] [a_Other]

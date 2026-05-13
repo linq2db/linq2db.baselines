@@ -349,9 +349,9 @@ VALUES
 
 -- SqlServer.2025.MS SqlServer.2025
 DECLARE @NString NVarChar(4000) -- String
-SET     @NString = N'test21' + char(0) + N' '
+SET     @NString = N'test21' || char(0) || N' '
 DECLARE @String NVarChar(4000) -- String
-SET     @String = N'test21' + char(0) + N'   '
+SET     @String = N'test21' || char(0) || N'   '
 
 INSERT INTO [AllTypes]
 (

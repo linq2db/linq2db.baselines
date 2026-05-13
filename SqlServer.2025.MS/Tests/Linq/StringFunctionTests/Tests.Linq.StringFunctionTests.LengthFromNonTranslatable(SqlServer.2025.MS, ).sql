@@ -2,8 +2,8 @@
 
 SELECT
 	[t].[Str],
-	LEN([t].[Str] + N'.') - 1,
-	N'original-' + Coalesce([t].[Str], N'')
+	LEN([t].[Str] || N'.') - 1,
+	N'original-' || Coalesce([t].[Str], N'')
 FROM
 	[TestLengthModel] [t]
 

@@ -36,7 +36,7 @@ FROM
 		CROSS APPLY (
 			SELECT TOP (1)
 				[d].[Id],
-				Coalesce([d].[StrValue], N'') + N'_A' as [StrValue]
+				Coalesce([d].[StrValue], N'') || N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [d]
 			WHERE
@@ -79,7 +79,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Other].[Id],
-				Coalesce([a_Other].[StrValue], N'') + N'_A' as [StrValue]
+				Coalesce([a_Other].[StrValue], N'') || N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]
 			WHERE

@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	[t].[Value1] + [t].[Value2] + [t].[Value3]
+	[t].[Value1] || [t].[Value2] || [t].[Value3]
 FROM
 	[StringConcatThreeNullEntity] [t]
 ORDER BY

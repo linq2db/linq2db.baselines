@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	Coalesce([e].[Str1], N'') + N'/' + Coalesce([e].[StrReq], N'')
+	Coalesce([e].[Str1], N'') || N'/' || Coalesce([e].[StrReq], N'')
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY

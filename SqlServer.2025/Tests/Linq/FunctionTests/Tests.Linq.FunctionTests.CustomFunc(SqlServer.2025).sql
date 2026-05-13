@@ -5,5 +5,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[LastName] || N', ' || [p].[FirstName] = N'Pupkin, John'
+	([p].[LastName] || N', ' || [p].[FirstName]) = N'Pupkin, John'
 

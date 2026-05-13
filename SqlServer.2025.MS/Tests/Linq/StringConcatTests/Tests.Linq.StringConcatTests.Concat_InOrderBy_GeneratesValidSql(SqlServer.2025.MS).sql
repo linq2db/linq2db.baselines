@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
-	Coalesce([e].[StrReq], N'') + N'X'
+	Coalesce([e].[StrReq], N'') || N'X'
 
 -- SqlServer.2025.MS SqlServer.2025
 

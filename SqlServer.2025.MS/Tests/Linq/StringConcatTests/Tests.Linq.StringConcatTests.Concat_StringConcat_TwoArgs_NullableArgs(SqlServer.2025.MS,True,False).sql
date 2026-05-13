@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	Coalesce([t].[Value1], N'') + [t].[Value2]
+	Coalesce([t].[Value1], N'') || [t].[Value2]
 FROM
 	[StringConcatNullEntity] [t]
 ORDER BY

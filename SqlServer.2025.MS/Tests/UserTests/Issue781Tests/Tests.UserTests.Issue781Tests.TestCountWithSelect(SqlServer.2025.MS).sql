@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			N'test' + Coalesce([a_Patient].[Diagnosis], N'') as [Key_1]
+			N'test' || Coalesce([a_Patient].[Diagnosis], N'') as [Key_1]
 		FROM
 			[Person] [t1]
 				LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]

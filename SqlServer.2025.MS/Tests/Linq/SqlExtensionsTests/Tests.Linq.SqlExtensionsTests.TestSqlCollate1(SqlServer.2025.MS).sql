@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	N'1' + [t1].[FirstName] COLLATE Albanian_CI_AS + N'2'
+	N'1' || [t1].[FirstName] COLLATE Albanian_CI_AS || N'2'
 

@@ -16,7 +16,7 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	N'Insert14' + Coalesce((
+	N'Insert14' || Coalesce((
 		SELECT
 			[p].[FirstName]
 		FROM

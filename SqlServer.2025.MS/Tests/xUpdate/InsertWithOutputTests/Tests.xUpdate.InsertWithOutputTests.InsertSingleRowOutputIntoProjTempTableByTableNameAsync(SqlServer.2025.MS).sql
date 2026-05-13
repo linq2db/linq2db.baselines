@@ -20,7 +20,7 @@ INSERT INTO [TableWithData_source]
 OUTPUT
 	INSERTED.[Value] * 2,
 	INSERTED.[Id] + 1,
-	N'Foo' + Coalesce(INSERTED.[ValueStr], N'')
+	N'Foo' || Coalesce(INSERTED.[ValueStr], N'')
 INTO [tempdb]..[#DestinationTable_output]
 (
 	[Value],
