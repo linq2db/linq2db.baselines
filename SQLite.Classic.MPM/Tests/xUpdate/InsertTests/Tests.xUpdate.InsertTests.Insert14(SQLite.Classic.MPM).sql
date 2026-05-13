@@ -15,14 +15,14 @@ INSERT INTO [Person]
 )
 VALUES
 (
-	'Insert14' || (
+	'Insert14' || Coalesce((
 		SELECT
 			[p].[FirstName]
 		FROM
 			[Person] [p]
 		WHERE
 			[p].[PersonID] = 1
-	),
+	), ''),
 	'Shepard',
 	'M'
 )
