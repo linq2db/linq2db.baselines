@@ -1,5 +1,5 @@
 ﻿Parameters:
-@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p7='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p3='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p13='?' (DbType = Boolean), @ef_filter__p7='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT [o].[OrderID], [o].[CustomerID], [o].[EmployeeID], [o].[Freight], [o].[IsDeleted], [o].[OrderDate], [o].[RequiredDate], [o].[ShipAddress], [o].[ShipCity], [o].[ShipCountry], [o].[ShipName], [o].[ShipPostalCode], [o].[ShipRegion], [o].[ShipVia], [o].[ShippedDate], [e0].[EmployeeID], [e0].[Address], [e0].[BirthDate], [e0].[City], [e0].[Country], [e0].[Extension], [e0].[FirstName], [e0].[HireDate], [e0].[HomePhone], [e0].[IsDeleted], [e0].[LastName], [e0].[Notes], [e0].[Photo], [e0].[PhotoPath], [e0].[PostalCode], [e0].[Region], [e0].[ReportsTo], [e0].[Title], [e0].[TitleOfCourtesy], [e2].[EmployeeID], [e2].[TerritoryID], [e2].[IsDeleted], [s].[OrderID], [s].[ProductID], [s].[Discount], [s].[IsDeleted], [s].[Quantity], [s].[UnitPrice], [s].[ProductID0], [s].[CategoryID], [s].[Discontinued], [s].[IsDeleted0], [s].[PeriodEnd], [s].[PeriodStart], [s].[ProductName], [s].[QuantityPerUnit], [s].[ReorderLevel], [s].[SupplierID], [s].[UnitPrice0], [s].[UnitsInStock], [s].[UnitsOnOrder]
 FROM [Orders] AS [o]
@@ -19,7 +19,7 @@ LEFT JOIN (
     INNER JOIN (
         SELECT [p].[ProductID], [p].[CategoryID], [p].[Discontinued], [p].[IsDeleted], [p].[PeriodEnd], [p].[PeriodStart], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierID], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
         FROM [Products] AS [p]
-        WHERE @ef_filter__p9 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
+        WHERE (@ef_filter__p9 = CAST(1 AS bit) OR [p].[ProductID] > 2) AND (@ef_filter__p9 = CAST(1 AS bit) OR [p].[Discontinued] = CAST(0 AS bit)) AND (@ef_filter__p13 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit))
     ) AS [p0] ON [o0].[ProductID] = [p0].[ProductID]
     WHERE @ef_filter__p7 = CAST(1 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit) OR [o0].[IsDeleted] = CAST(0 AS bit)
 ) AS [s] ON [o].[OrderID] = [s].[OrderID]

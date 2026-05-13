@@ -1,5 +1,5 @@
 ﻿Parameters:
-@ef_filter__p5='?' (DbType = Boolean), @ef_filter__p3='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p5='?' (DbType = Boolean), @ef_filter__p9='?' (DbType = Boolean), @ef_filter__p3='?' (DbType = Boolean), @ef_filter__p1='?' (DbType = Boolean)
 
 SELECT [o].[OrderID], [o].[CustomerID], [o].[EmployeeID], [o].[Freight], [o].[IsDeleted], [o].[OrderDate], [o].[RequiredDate], [o].[ShipAddress], [o].[ShipCity], [o].[ShipCountry], [o].[ShipName], [o].[ShipPostalCode], [o].[ShipRegion], [o].[ShipVia], [o].[ShippedDate], [s].[OrderID], [s].[ProductID], [s].[Discount], [s].[IsDeleted], [s].[Quantity], [s].[UnitPrice], [s].[ProductID0], [s].[CategoryID], [s].[Discontinued], [s].[IsDeleted0], [s].[PeriodEnd], [s].[PeriodStart], [s].[ProductName], [s].[QuantityPerUnit], [s].[ReorderLevel], [s].[SupplierID], [s].[UnitPrice0], [s].[UnitsInStock], [s].[UnitsOnOrder], [s].[OrderID0], [s].[ProductID1], [s].[Discount0], [s].[IsDeleted1], [s].[Quantity0], [s].[UnitPrice1]
 FROM [Orders] AS [o]
@@ -9,7 +9,7 @@ LEFT JOIN (
     INNER JOIN (
         SELECT [p].[ProductID], [p].[CategoryID], [p].[Discontinued], [p].[IsDeleted], [p].[PeriodEnd], [p].[PeriodStart], [p].[ProductName], [p].[QuantityPerUnit], [p].[ReorderLevel], [p].[SupplierID], [p].[UnitPrice], [p].[UnitsInStock], [p].[UnitsOnOrder]
         FROM [Products] AS [p]
-        WHERE @ef_filter__p5 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)
+        WHERE (@ef_filter__p5 = CAST(1 AS bit) OR [p].[ProductID] > 2) AND (@ef_filter__p5 = CAST(1 AS bit) OR [p].[Discontinued] = CAST(0 AS bit)) AND (@ef_filter__p9 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit))
     ) AS [p0] ON [o0].[ProductID] = [p0].[ProductID]
     LEFT JOIN (
         SELECT [o1].[OrderID], [o1].[ProductID], [o1].[Discount], [o1].[IsDeleted], [o1].[Quantity], [o1].[UnitPrice]
