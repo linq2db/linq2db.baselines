@@ -13,5 +13,5 @@ SELECT
 	[p2].[Gender] as [Gender_1]
 FROM
 	[Person] [p1]
-		INNER JOIN [Person] [p2] ON [p1].[MiddleName] = Coalesce([p2].[MiddleName], '') + ' Jr.'
+		INNER JOIN [Person] [p2] ON [p1].[MiddleName] = (Coalesce([p2].[MiddleName], '') + ' Jr.')
 

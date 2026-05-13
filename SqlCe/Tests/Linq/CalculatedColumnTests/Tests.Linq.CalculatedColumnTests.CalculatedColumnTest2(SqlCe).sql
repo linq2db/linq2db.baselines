@@ -53,5 +53,5 @@ FROM
 				) [t1]
 	) [i_1]
 WHERE
-	[i_1].[LastName] + ', ' + [i_1].[FirstName] <> 'Pupkin, John'
+	([i_1].[LastName] + ', ' + [i_1].[FirstName]) <> 'Pupkin, John'
 

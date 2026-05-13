@@ -9,9 +9,9 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
+	(CASE
 		WHEN LEN([p].[FirstName] + '.') > 7 THEN [p].[FirstName]
 		ELSE [p].[FirstName] + Replicate(' ', 6 - (LEN([p].[FirstName] + '.') - 1))
-	END + '123' = 'John  123' AND
+	END + '123') = 'John  123' AND
 	[p].[PersonID] = 1
 
