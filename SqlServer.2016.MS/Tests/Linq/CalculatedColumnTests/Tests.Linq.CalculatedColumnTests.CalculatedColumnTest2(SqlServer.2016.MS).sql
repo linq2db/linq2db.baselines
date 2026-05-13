@@ -51,5 +51,5 @@ FROM
 			[Person] [i]
 	) [i_1]
 WHERE
-	[i_1].[LastName] + N', ' + [i_1].[FirstName] <> N'Pupkin, John'
+	([i_1].[LastName] + N', ' + [i_1].[FirstName]) <> N'Pupkin, John'
 
