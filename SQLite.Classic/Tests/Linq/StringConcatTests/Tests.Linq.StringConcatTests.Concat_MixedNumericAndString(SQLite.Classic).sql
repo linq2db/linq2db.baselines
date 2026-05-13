@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	CAST([e].[Num] AS NVarChar(11)) || '-' || Coalesce([e].[StrReq], '') = '100-Programmer'
+	(CAST([e].[Num] AS NVarChar(11)) || '-' || Coalesce([e].[StrReq], '')) = '100-Programmer'
 
 -- SQLite.Classic SQLite
 
