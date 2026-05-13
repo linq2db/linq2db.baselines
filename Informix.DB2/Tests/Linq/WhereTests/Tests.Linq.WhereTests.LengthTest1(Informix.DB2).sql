@@ -5,7 +5,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	CHAR_LENGTH(nm.MiddleName || '.') <> 1 OR nm.MiddleName IS NULL
+	CHAR_LENGTH(nm.MiddleName || '.') - 1 <> 0 OR (nm.MiddleName || '.') IS NULL
 
 -- Informix.DB2 Informix
 

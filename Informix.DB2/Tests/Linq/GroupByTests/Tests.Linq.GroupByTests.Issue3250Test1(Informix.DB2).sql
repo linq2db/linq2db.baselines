@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	(To_Char(g_2.Message) || ' items have not been processed, e.g. #' || Nvl(To_Char(g_2.Message_1), '')) || '.'
+	To_Char(g_2.Message) || ' items have not been processed, e.g. #' || Nvl(To_Char(g_2.Message_1), '') || '.'
 FROM
 	(
 		SELECT
