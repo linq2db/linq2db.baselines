@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	Coalesce([e].[Str1], N'') + N' ' + Coalesce([e].[StrReq], N'') + N'!' = N'John Programmer!'
+	(Coalesce([e].[Str1], N'') + N' ' + Coalesce([e].[StrReq], N'') + N'!') = N'John Programmer!'
 
 -- SqlServer.2005
 
