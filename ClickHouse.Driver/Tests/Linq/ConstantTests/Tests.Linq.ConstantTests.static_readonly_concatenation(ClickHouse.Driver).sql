@@ -8,7 +8,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	concat(e.StringValue, '1') = 'StrValue1'
+	concat(Coalesce(e.StringValue, ''), '1') = 'StrValue1'
 
 -- ClickHouse.Driver ClickHouse
 

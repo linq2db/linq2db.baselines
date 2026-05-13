@@ -9,7 +9,7 @@ SELECT
 	END,
 	x.StringProp,
 	1,
-	concat(x.StringProp, '2'),
+	concat(Coalesce(x.StringProp, ''), '2'),
 	2
 FROM
 	ConditionalData x
@@ -17,7 +17,7 @@ WHERE
 	endsWith(CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
 		WHEN x.StringProp = '2' THEN x.StringProp
-		ELSE concat(x.StringProp, '2')
+		ELSE concat(Coalesce(x.StringProp, ''), '2')
 	END, '2') AND
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
