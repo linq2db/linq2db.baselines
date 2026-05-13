@@ -10,7 +10,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] || '1' = @p
+	Coalesce([e].[StringValue], '') || '1' = @p
 
 -- SQLite.MS SQLite
 

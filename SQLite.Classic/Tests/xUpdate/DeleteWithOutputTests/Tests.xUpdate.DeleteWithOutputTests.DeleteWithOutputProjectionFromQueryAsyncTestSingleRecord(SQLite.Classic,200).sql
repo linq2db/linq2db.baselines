@@ -17,5 +17,5 @@ WHERE
 	[TableWithData].[Id] = 3
 RETURNING
 	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || '1'
+	Coalesce([TableWithData].[ValueStr], '') || '1'
 
