@@ -43,6 +43,6 @@ FROM
 			"Parent" f
 	) t1
 WHERE
-	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)) LIKE '%1%' ESCAPE '~' AND
+	(' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255))) LIKE '%1%' ESCAPE '~' AND
 	t1."SubSum" > 0
 
