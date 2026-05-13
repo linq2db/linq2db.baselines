@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	[e].[StrReq] IS NOT NULL
+	([e].[StrReq] + [e].[StrReq]) IS NOT NULL
 
 -- SqlServer.SA.MS SqlServer.2019
 

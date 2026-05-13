@@ -1,19 +1,19 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
-	CAST(CAST([c_1].[Id] AS NVarChar(11)) AS NVarChar(4000)),
+	CAST([c_1].[Id] AS NVarChar(11)),
 	[c_1].[Name]
 FROM
 	[Issue4654Customer] [c_1]
 UNION
 SELECT
-	CAST(CAST([o].[Id] AS NVarChar(11)) AS NVarChar(4000)),
+	CAST([o].[Id] AS NVarChar(11)),
 	[o].[ProductName]
 FROM
 	[Issue4654Order] [o]
 UNION
 SELECT
-	CAST(CAST([p].[Id] AS NVarChar(11)) AS NVarChar(4000)),
+	CAST([p].[Id] AS NVarChar(11)),
 	[p].[Name]
 FROM
 	[Issue4654Product] [p]
