@@ -7,8 +7,8 @@ SET     @id = 1
 UPDATE
 	[TextData]
 SET
-	[Items1] = Coalesce([TextData].[Items1], N'') + Coalesce(@str, N''),
-	[Items2] = Coalesce([TextData].[Items2], N'') + Coalesce(@str, N'')
+	[Items1] = Coalesce([TextData].[Items1], N'') || Coalesce(@str, N''),
+	[Items2] = Coalesce([TextData].[Items2], N'') || Coalesce(@str, N'')
 WHERE
 	[TextData].[Id] >= @id
 

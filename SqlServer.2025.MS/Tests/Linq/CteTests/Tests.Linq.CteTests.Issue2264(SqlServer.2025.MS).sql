@@ -29,7 +29,7 @@ AS
 		[r].[Level_1] + 1,
 		[t1].[Id],
 		[t1].[ParentId],
-		[r].[Label] + N'/' + [t1].[Label],
+		Coalesce([r].[Label], N'') + N'/' + Coalesce([t1].[Label], N''),
 		[t1].[Id],
 		[t1].[Label],
 		[t1].[ParentId]
