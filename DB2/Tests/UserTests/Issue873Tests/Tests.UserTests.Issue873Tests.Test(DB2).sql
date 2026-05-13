@@ -39,6 +39,6 @@ FROM
 			"Parent" "f"
 	) "t1"
 WHERE
-	' ' || RTrim(Char(Coalesce("t1"."Value1", 0))) LIKE '%1%' ESCAPE '~' AND
+	(' ' || RTrim(Char(Coalesce("t1"."Value1", 0)))) LIKE '%1%' ESCAPE '~' AND
 	"t1"."SubSum" > 0
 
