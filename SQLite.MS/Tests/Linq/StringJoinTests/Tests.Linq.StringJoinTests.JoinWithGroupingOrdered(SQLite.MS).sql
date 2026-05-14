@@ -20,10 +20,10 @@ SELECT
 	), ''),
 	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(CASE
+			GROUP_CONCAT(CASE
 				WHEN [t3].[NullableValue] <> '' THEN [t3].[NullableValue]
 				ELSE NULL
-			END, ', '), '')
+			END, ', ')
 		FROM
 			(
 				SELECT
