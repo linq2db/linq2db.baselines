@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	(
+	Nvl((
 		SELECT
 			SUM(CASE
 				WHEN d.ParentID IS NOT NULL THEN d.ParentID
@@ -14,7 +14,7 @@ SELECT
 				FROM table(set{1})
 			) t1
 				LEFT JOIN Child d ON p.ParentID = d.ParentID
-	)
+	), 0)
 FROM
 	Parent p
 
