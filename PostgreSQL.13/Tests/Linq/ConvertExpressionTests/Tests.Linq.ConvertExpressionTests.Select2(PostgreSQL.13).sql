@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM("a_Children"."ChildID")
 		FROM
@@ -9,7 +9,7 @@ SELECT
 		WHERE
 			p."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" > 1 AND
 			"a_Children"."ParentID" < 10
-	)
+	), 0)
 FROM
 	"Parent" p
 
