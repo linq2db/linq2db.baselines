@@ -1,7 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM([t2].[ParentID])
 		FROM
@@ -15,7 +15,7 @@ SELECT
 					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
 			) [t2]
-	)
+	), 0)
 FROM
 	[Parent] [p]
 
