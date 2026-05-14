@@ -49,14 +49,14 @@ VALUES
 
 SELECT TOP (1)
 	[infeed].[Id],
-	(
+	Coalesce((
 		SELECT
 			SUM([x].[Quantity])
 		FROM
 			[InventoryResourceDTO] [x]
 		WHERE
 			[x].[InfeedAdviceID] = [infeed].[Id]
-	),
+	), 0),
 	[t1].[Id],
 	[t1].[Nr]
 FROM
