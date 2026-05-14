@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM([t3].[Sum_1])
 		FROM
@@ -26,7 +26,7 @@ SELECT
 				WHERE
 					[t2].[RN] > 1 AND [t2].[RN] <= 6
 			) [t3]
-	),
+	), 0),
 	(
 		SELECT
 			COUNT(*)
