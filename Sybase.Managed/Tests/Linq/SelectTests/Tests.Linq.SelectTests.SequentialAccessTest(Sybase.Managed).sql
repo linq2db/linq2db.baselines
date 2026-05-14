@@ -5,7 +5,7 @@ SELECT
 	[p].[PersonID],
 	[p].[PersonID],
 	[p].[LastName],
-	[p].[FirstName] + ' ' + [p].[LastName]
+	CASE WHEN [p].[FirstName] IS NULL OR ' ' IS NULL OR [p].[LastName] IS NULL THEN NULL ELSE [p].[FirstName] + ' ' + [p].[LastName] END
 FROM
 	[Person] [p]
 
