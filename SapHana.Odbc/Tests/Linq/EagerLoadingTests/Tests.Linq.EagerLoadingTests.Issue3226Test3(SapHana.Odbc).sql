@@ -15,12 +15,12 @@ SELECT
 FROM
 	"Item" "x"
 ORDER BY
-	(
+	Coalesce((
 		SELECT
 			SUM("a_Values"."Value")
 		FROM
 			"ItemValue" "a_Values"
 		WHERE
 			"x"."Id" = "a_Values"."ItemId"
-	)
+	), 0)
 
