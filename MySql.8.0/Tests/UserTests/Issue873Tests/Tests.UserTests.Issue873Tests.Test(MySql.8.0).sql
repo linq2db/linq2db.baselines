@@ -2,7 +2,7 @@
 
 SELECT
 	Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))),
-	`t1`.`SubSum`,
+	Coalesce(`t1`.`SubSum`, 0),
 	EXISTS(
 		SELECT
 			*
@@ -34,5 +34,5 @@ FROM
 		) `t1` ON 1=1
 WHERE
 	LOCATE('1', Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11)))) > 0 AND
-	`t1`.`SubSum` > 0
+	Coalesce(`t1`.`SubSum`, 0) > 0
 

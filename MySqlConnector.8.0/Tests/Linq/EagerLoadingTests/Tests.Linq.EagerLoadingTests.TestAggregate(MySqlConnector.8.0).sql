@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM(`t1`.`Sum_1`)
 		FROM
@@ -16,7 +16,7 @@ SELECT
 					`a_Details`.`DetailId`
 				LIMIT 1, 5
 			) `t1`
-	),
+	), 0),
 	(
 		SELECT
 			COUNT(*)

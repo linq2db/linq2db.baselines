@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(', ', `t`.`NullableValue`, `t`.`NotNullableValue`, `t`.`VarcharValue`, `t`.`NVarcharValue`),
 	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', '), '')
+			GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', ')
 		FROM
 			(
 				SELECT `t`.`NullableValue` AS `item`
