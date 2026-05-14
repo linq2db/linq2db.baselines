@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat('*** p ***', '4'),
+	CONCAT('*** p ***', '4'),
 	'*** p ***',
 	'*** `Parent` ***',
 	'*** p_1.p ***'

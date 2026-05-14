@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat(`t`.`Value1`, CAST(`t`.`Value2` AS CHAR(11)), Lower(CAST(`t`.`Value3` AS CHAR(36))))
+	CONCAT(`t`.`Value1`, CAST(`t`.`Value2` AS CHAR(11)), Lower(CAST(`t`.`Value3` AS CHAR(36))))
 FROM
 	`StringConcatIntGuidNullEntity` `t`
 ORDER BY

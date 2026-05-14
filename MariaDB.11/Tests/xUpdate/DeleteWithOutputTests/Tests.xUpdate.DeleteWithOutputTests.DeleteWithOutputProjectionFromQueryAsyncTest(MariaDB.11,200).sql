@@ -18,5 +18,5 @@ WHERE
 	`TableWithData`.`Id` > 3
 RETURNING
 	`TableWithData`.`Id` + 1,
-	Concat(Coalesce(`TableWithData`.`ValueStr`, ''), '1')
+	CONCAT(Coalesce(`TableWithData`.`ValueStr`, ''), '1')
 

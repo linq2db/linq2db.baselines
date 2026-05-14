@@ -5,7 +5,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 WHERE
-	`e`.`StrReq` IS NOT NULL
+	(CONCAT(`e`.`StrReq`, `e`.`StrReq`)) IS NOT NULL
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

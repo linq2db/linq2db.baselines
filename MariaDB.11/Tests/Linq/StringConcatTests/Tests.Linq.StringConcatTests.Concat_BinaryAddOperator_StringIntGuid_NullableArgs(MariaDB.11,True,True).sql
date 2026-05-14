@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat(Coalesce(`t`.`Value1`, ''), Coalesce(CAST(`t`.`Value2` AS CHAR(11)), ''), Coalesce(Lower(CAST(`t`.`Value3` AS CHAR(36))), ''))
+	CONCAT(Coalesce(`t`.`Value1`, ''), Coalesce(CAST(`t`.`Value2` AS CHAR(11)), ''), Coalesce(Lower(CAST(`t`.`Value3` AS CHAR(36))), ''))
 FROM
 	`StringConcatIntGuidNullEntity` `t`
 ORDER BY

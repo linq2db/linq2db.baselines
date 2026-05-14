@@ -23,5 +23,5 @@ WHERE
 RETURNING
 	`TableWithData`.`Id` + @param,
 	`TableWithData`.`Value` + @param,
-	Concat(Coalesce(`TableWithData`.`ValueStr`, ''), Coalesce(@ValueStr, ''))
+	CONCAT(Coalesce(`TableWithData`.`ValueStr`, ''), Coalesce(@ValueStr, ''))
 

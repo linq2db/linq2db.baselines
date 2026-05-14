@@ -6,14 +6,14 @@ FROM
 	`Person` `p`
 UNION ALL
 SELECT
-	Concat(`p_1`.`FirstName`, '/', `p_1`.`LastName`)
+	CONCAT(`p_1`.`FirstName`, '/', `p_1`.`LastName`)
 FROM
 	`Person` `p_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat(`p`.`FirstName`, '/', `p`.`LastName`)
+	CONCAT(`p`.`FirstName`, '/', `p`.`LastName`)
 FROM
 	`Person` `p`
 UNION ALL

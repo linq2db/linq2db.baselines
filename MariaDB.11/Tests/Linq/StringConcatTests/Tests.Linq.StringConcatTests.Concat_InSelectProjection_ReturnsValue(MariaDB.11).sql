@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
+	CONCAT(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
 FROM
 	`ConcatTestEntity` `e`
 ORDER BY

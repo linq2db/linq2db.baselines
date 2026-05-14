@@ -10,7 +10,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(Coalesce(`e`.`StringValue`, ''), '1') = @p
+	(CONCAT(Coalesce(`e`.`StringValue`, ''), '1')) = @p
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

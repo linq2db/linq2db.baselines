@@ -8,8 +8,8 @@ FROM
 	(
 		SELECT
 			`p`.`FirstName`,
-			Concat(`p`.`LastName`, ', ', `p`.`FirstName`) as `LastName`,
-			Concat(`p`.`LastName`, ', ', `p`.`FirstName`, ' (', Coalesce(`p`.`MiddleName`, ''), ' + ', Coalesce(`p`.`MiddleName`, ''), ')') as `FullName`
+			CONCAT(`p`.`LastName`, ', ', `p`.`FirstName`) as `LastName`,
+			CONCAT(`p`.`LastName`, ', ', `p`.`FirstName`, ' (', Coalesce(`p`.`MiddleName`, ''), ' + ', Coalesce(`p`.`MiddleName`, ''), ')') as `FullName`
 		FROM
 			`Person` `p`
 	) `t1`

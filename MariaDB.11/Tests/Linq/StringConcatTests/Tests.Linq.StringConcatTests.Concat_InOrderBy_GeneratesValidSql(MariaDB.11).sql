@@ -5,7 +5,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 ORDER BY
-	Concat(Coalesce(`e`.`StrReq`, ''), 'X')
+	CONCAT(Coalesce(`e`.`StrReq`, ''), 'X')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
