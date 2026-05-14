@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(', ', Coalesce(`t`.`NullableValue`, ''), `t`.`NotNullableValue`, Coalesce(`t`.`VarcharValue`, ''), Coalesce(`t`.`NVarcharValue`, '')),
 	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', '), '')
+			GROUP_CONCAT(DISTINCT `t1`.`item` ORDER BY `t1`.`item` SEPARATOR ', ')
 		FROM
 			(
 				SELECT `t`.`NotNullableValue` AS `item`
@@ -17,13 +17,13 @@ SELECT
 	), ''),
 	Coalesce((
 		SELECT
-			Coalesce(GROUP_CONCAT(DISTINCT CASE
+			GROUP_CONCAT(DISTINCT CASE
 				WHEN `t2`.`item` <> 'A' OR `t2`.`item` IS NULL THEN Coalesce(`t2`.`item`, '')
 				ELSE NULL
 			END ORDER BY CASE
 				WHEN `t2`.`item` IS NULL THEN 0
 				ELSE 1
-			END, `t2`.`item` SEPARATOR ', '), '')
+			END, `t2`.`item` SEPARATOR ', ')
 		FROM
 			(
 				SELECT `t`.`NotNullableValue` AS `item`

@@ -1,0 +1,9 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	SUM(`i`.`DecimalValue`)
+FROM
+	`Inner` `i`
+WHERE
+	`i`.`Group` = 1
+
