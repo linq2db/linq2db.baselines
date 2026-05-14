@@ -10,7 +10,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1' = ?
+	(IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1') = ?
 
 -- Access.Jet.Odbc AccessODBC
 

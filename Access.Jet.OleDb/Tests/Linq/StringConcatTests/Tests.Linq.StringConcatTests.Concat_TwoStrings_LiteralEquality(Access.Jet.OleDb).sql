@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + ' I' = 'Programmer I'
+	(IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) + ' I') = 'Programmer I'
 
 -- Access.Jet.OleDb AccessOleDb
 
