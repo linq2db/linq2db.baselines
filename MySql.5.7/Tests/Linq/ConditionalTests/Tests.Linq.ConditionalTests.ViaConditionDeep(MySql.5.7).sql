@@ -9,7 +9,7 @@ SELECT
 	END,
 	`x`.`StringProp`,
 	1,
-	Concat(Coalesce(`x`.`StringProp`, ''), '2'),
+	CONCAT(Coalesce(`x`.`StringProp`, ''), '2'),
 	2
 FROM
 	`ConditionalData` `x`
@@ -17,7 +17,7 @@ WHERE
 	CASE
 		WHEN `x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL THEN '2'
 		WHEN `x`.`StringProp` = '2' THEN `x`.`StringProp`
-		ELSE Concat(Coalesce(`x`.`StringProp`, ''), '2')
+		ELSE CONCAT(Coalesce(`x`.`StringProp`, ''), '2')
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN `x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL THEN NULL

@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Concat(Coalesce(`t`.`Value1`, ''), Coalesce(`t`.`Value2`, ''), `t`.`Value3`)
+	CONCAT(Coalesce(`t`.`Value1`, ''), Coalesce(`t`.`Value2`, ''), `t`.`Value3`)
 FROM
 	`StringConcatThreeNullEntity` `t`
 ORDER BY

@@ -1,7 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat(`t`.`Value1`, `t`.`Value2`, `t`.`Value3`)
+	CONCAT(`t`.`Value1`, `t`.`Value2`, `t`.`Value3`)
 FROM
 	`StringConcatThreeNullEntity` `t`
 ORDER BY

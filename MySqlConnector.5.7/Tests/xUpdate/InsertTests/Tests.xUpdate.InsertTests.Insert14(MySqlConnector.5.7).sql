@@ -16,7 +16,7 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	Concat('Insert14', Coalesce((
+	CONCAT('Insert14', Coalesce((
 		SELECT
 			`p`.`FirstName`
 		FROM

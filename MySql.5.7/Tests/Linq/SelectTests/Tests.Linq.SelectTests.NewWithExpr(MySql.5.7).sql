@@ -2,7 +2,7 @@
 
 SELECT
 	`p`.`PersonID`,
-	TRIM(TRAILING '' FROM Concat(`p`.`FirstName`, '1'))
+	TRIM(TRAILING '' FROM (CONCAT(`p`.`FirstName`, '1')))
 FROM
 	`Person` `p`
 

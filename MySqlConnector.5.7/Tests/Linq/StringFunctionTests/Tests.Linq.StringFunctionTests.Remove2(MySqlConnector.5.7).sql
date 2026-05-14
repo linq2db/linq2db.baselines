@@ -9,6 +9,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Concat(Left(`p`.`FirstName`, 1), RIGHT(`p`.`FirstName`, CHAR_LENGTH(`p`.`FirstName`) - 3)) = 'Jn' AND
+	(CONCAT(Left(`p`.`FirstName`, 1), RIGHT(`p`.`FirstName`, CHAR_LENGTH(`p`.`FirstName`) - 3))) = 'Jn' AND
 	`p`.`PersonID` = 1
 

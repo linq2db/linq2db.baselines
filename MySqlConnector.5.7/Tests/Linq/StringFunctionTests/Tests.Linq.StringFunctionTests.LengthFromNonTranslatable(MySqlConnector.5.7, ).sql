@@ -3,7 +3,7 @@
 SELECT
 	`t`.`Str`,
 	CHAR_LENGTH(`t`.`Str`),
-	Concat('original-', Coalesce(`t`.`Str`, ''))
+	CONCAT('original-', Coalesce(`t`.`Str`, ''))
 FROM
 	`TestLengthModel` `t`
 

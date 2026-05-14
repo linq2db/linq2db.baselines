@@ -5,7 +5,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 ORDER BY
-	Concat(Coalesce(`e`.`StrReq`, ''), 'X')
+	CONCAT(Coalesce(`e`.`StrReq`, ''), 'X')
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
