@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM([t1].[Sum_1])
 		FROM
@@ -16,7 +16,7 @@ SELECT
 					[a_Details].[DetailId]
 				OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
 			) [t1]
-	),
+	), 0),
 	(
 		SELECT
 			COUNT(*)
