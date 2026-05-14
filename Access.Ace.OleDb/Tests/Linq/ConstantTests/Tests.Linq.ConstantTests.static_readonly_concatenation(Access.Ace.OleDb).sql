@@ -10,7 +10,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1' = @p
+	(IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1') = @p
 
 -- Access.Ace.OleDb AccessOleDb
 

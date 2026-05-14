@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	CStr([e].[Num]) + '-' + IIF([e].[StrReq] IS NULL, '', [e].[StrReq]) = '100-Programmer'
+	(CStr([e].[Num]) + '-' + IIF([e].[StrReq] IS NULL, '', [e].[StrReq])) = '100-Programmer'
 
 -- Access.Ace.Odbc AccessODBC
 
