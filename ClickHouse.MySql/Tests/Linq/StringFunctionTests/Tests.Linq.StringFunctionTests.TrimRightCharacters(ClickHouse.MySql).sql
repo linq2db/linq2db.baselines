@@ -2,9 +2,9 @@
 
 SELECT
 	pp.PersonID,
-	concat(concat('  ', pp.FirstName), ' ')
+	concat('  ', pp.FirstName, ' ')
 FROM
 	Person pp
 WHERE
-	pp.PersonID = 1 AND trim(TRAILING ' n' FROM (concat(concat('  ', pp.FirstName), ' '))) = '  Joh'
+	pp.PersonID = 1 AND trim(TRAILING ' n' FROM (concat('  ', pp.FirstName, ' '))) = '  Joh'
 

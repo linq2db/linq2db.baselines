@@ -13,7 +13,7 @@ WITH RECURSIVE d AS
 		a.parent_id IS NULL
 	UNION ALL
 	SELECT
-		concat(concat(Coalesce(recur.FullName, ''), ' > '), Coalesce(t1.name, '')) as FullName,
+		concat(Coalesce(recur.FullName, ''), ' > ', Coalesce(t1.name, '')) as FullName,
 		t1.id as id,
 		t1.parent_id as parent_id,
 		t1.name as name

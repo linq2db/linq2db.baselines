@@ -5,10 +5,10 @@ SELECT
 FROM
 	Person p
 WHERE
-	(concat(concat(p.LastName, ', '), p.FirstName)) = (concat(p.LastName, ', ', p.FirstName)) AND
-	(concat(concat(concat(concat('<', p.LastName), ', '), p.FirstName), '>')) = (concat('<', p.LastName, ', ', p.FirstName, '>')) AND
-	(concat(concat(concat('<', p.LastName), p.FirstName), '>')) = (concat('<', p.LastName, p.FirstName, '>')) AND
-	(concat(concat(concat(concat(concat('<{p.LastName}, ', p.FirstName), ' {'), p.LastName), '}'), '>')) = (concat('<{p.LastName}, ', p.FirstName, ' {', p.LastName, '}>')) AND
+	(concat(p.LastName, ', ', p.FirstName)) = (concat(p.LastName, ', ', p.FirstName)) AND
+	(concat('<', p.LastName, ', ', p.FirstName, '>')) = (concat('<', p.LastName, ', ', p.FirstName, '>')) AND
+	(concat('<', p.LastName, p.FirstName, '>')) = (concat('<', p.LastName, p.FirstName, '>')) AND
+	(concat('<{p.LastName}, ', p.FirstName, ' {', p.LastName, '}>')) = (concat('<{p.LastName}, ', p.FirstName, ' {', p.LastName, '}>')) AND
 	(concat('{}', p.LastName)) = (concat('{}', p.LastName))
 
 -- ClickHouse.MySql ClickHouse

@@ -20,14 +20,14 @@ VALUES
 SELECT
 	t1.Id,
 	t1.Text,
-	concat(concat(Coalesce(t1.FirstName, ''), ' '), Coalesce(t1.LastName, '')) as FullName
+	concat(Coalesce(t1.FirstName, ''), ' ', Coalesce(t1.LastName, '')) as FullName
 FROM
 	Issue3323Table t1
 UNION ALL
 SELECT
 	t2.Id as Id,
 	t2.Text as Text,
-	concat(concat(Coalesce(t2.FirstName, ''), ' '), Coalesce(t2.LastName, '')) as FullName
+	concat(Coalesce(t2.FirstName, ''), ' ', Coalesce(t2.LastName, '')) as FullName
 FROM
 	Issue3323Table t2
 
