@@ -29,7 +29,7 @@ AS
 		`r`.`Level_1` + 1,
 		`t1`.`Id`,
 		`t1`.`ParentId`,
-		Concat(Coalesce(`r`.`Label`, ''), '/', Coalesce(`t1`.`Label`, '')),
+		CONCAT(Coalesce(`r`.`Label`, ''), '/', Coalesce(`t1`.`Label`, '')),
 		`t1`.`Id`,
 		`t1`.`Label`,
 		`t1`.`ParentId`

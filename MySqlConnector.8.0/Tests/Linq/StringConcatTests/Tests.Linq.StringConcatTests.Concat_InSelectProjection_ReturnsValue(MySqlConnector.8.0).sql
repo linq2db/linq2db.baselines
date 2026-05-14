@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
+	CONCAT(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
 FROM
 	`ConcatTestEntity` `e`
 ORDER BY

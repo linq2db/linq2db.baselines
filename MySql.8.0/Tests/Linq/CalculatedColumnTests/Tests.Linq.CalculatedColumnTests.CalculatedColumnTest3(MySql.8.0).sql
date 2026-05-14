@@ -25,7 +25,7 @@ FROM
 			`i`.`LastName`,
 			`i`.`MiddleName`,
 			`i`.`Gender`,
-			Concat(`i`.`LastName`, ', ', `i`.`FirstName`) as `FullName`,
+			CONCAT(`i`.`LastName`, ', ', `i`.`FirstName`) as `FullName`,
 			(
 				SELECT
 					COUNT(*)

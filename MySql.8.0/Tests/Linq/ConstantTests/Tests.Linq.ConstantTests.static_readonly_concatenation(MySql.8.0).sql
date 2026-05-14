@@ -10,7 +10,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(Coalesce(`e`.`StringValue`, ''), '1') = @p
+	(CONCAT(Coalesce(`e`.`StringValue`, ''), '1')) = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 

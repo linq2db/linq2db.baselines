@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Concat(Coalesce(`t`.`Value1`, ''), CAST(`t`.`Value2` AS CHAR(11)), Lower(CAST(`t`.`Value3` AS CHAR(36))))
+	CONCAT(Coalesce(`t`.`Value1`, ''), CAST(`t`.`Value2` AS CHAR(11)), Lower(CAST(`t`.`Value3` AS CHAR(36))))
 FROM
 	`StringConcatIntGuidNullEntity` `t`
 ORDER BY

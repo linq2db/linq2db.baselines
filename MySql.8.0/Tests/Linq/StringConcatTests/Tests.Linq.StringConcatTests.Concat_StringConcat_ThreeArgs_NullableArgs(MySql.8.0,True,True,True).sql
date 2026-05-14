@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Concat(Coalesce(`t`.`Value1`, ''), Coalesce(`t`.`Value2`, ''), Coalesce(`t`.`Value3`, ''))
+	CONCAT(Coalesce(`t`.`Value1`, ''), Coalesce(`t`.`Value2`, ''), Coalesce(`t`.`Value3`, ''))
 FROM
 	`StringConcatThreeNullEntity` `t`
 ORDER BY

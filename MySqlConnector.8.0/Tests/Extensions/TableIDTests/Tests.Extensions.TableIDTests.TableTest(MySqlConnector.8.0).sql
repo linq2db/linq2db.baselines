@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat('*** p ***', '4'),
+	CONCAT('*** p ***', '4'),
 	'*** p ***',
 	'*** `Parent` ***',
 	'*** p_1.p ***'

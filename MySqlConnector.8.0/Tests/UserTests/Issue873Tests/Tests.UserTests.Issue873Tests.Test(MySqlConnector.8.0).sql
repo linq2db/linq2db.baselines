@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))),
+	CONCAT(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))),
 	`t1`.`SubSum`,
 	EXISTS(
 		SELECT
@@ -33,6 +33,6 @@ FROM
 				`a_Parent`.`ParentID` = `f`.`ParentID` AND (`a_Parent`.`Value1` = `f`.`Value1` OR `a_Parent`.`Value1` IS NULL AND `f`.`Value1` IS NULL)
 		) `t1` ON 1=1
 WHERE
-	LOCATE('1', Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11)))) > 0 AND
+	LOCATE('1', CONCAT(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11)))) > 0 AND
 	`t1`.`SubSum` > 0
 

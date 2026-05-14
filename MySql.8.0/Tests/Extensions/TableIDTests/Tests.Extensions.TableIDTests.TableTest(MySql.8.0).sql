@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Concat('*** p ***', '4'),
+	CONCAT('*** p ***', '4'),
 	'*** p ***',
 	'*** `Parent` ***',
 	'*** p_1.p ***'
