@@ -1,25 +1,31 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[o].[ParentID],
+	[t1].[ParentID],
 	(
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [a_Children]
-		WHERE
-			[o].[ParentID] = [a_Children].[ParentID]
-	),
-	(
-		SELECT
-			SUM([a_Children_1].[ParentID])
-		FROM
 			[Child] [a_Children_1]
 		WHERE
-			[o].[ParentID] = [a_Children_1].[ParentID]
-	)
+			[t1].[ParentID] = [a_Children_1].[ParentID]
+	),
+	IIF([t1].[SumResult] IS NULL, 0, [t1].[SumResult])
 FROM
-	[Parent] [o]
+	(
+		SELECT
+			[o].[ParentID],
+			(
+				SELECT
+					SUM([a_Children].[ParentID])
+				FROM
+					[Child] [a_Children]
+				WHERE
+					[o].[ParentID] = [a_Children].[ParentID]
+			) as [SumResult]
+		FROM
+			[Parent] [o]
+	) [t1]
 
 -- Access.Ace.OleDb AccessOleDb
 
@@ -41,21 +47,27 @@ FROM
 				SELECT
 					COUNT(*)
 				FROM
-					[Child] [a_Children]
-				WHERE
-					[o].[ParentID] = [a_Children].[ParentID]
-			) as [CountResult],
-			[o].[ParentID],
-			(
-				SELECT
-					SUM([a_Children_1].[ParentID])
-				FROM
 					[Child] [a_Children_1]
 				WHERE
-					[o].[ParentID] = [a_Children_1].[ParentID]
-			) as [SumResult]
+					[t1].[ParentID] = [a_Children_1].[ParentID]
+			) as [CountResult],
+			[t1].[ParentID],
+			IIF([t1].[SumResult] IS NULL, 0, [t1].[SumResult]) as [SumResult]
 		FROM
-			[Parent] [o]
+			(
+				SELECT
+					[o].[ParentID],
+					(
+						SELECT
+							SUM([a_Children].[ParentID])
+						FROM
+							[Child] [a_Children]
+						WHERE
+							[o].[ParentID] = [a_Children].[ParentID]
+					) as [SumResult]
+				FROM
+					[Parent] [o]
+			) [t1]
 	) [x]
 WHERE
 	[x].[CountResult] > 0

@@ -1,18 +1,23 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	IIF([t2].[x] < 0, 9, [t2].[x] + 8),
-	[t2].[x] + [t2].[x]
+	IIF([t3].[x] < 0, 9, [t3].[x] + 8),
+	[t3].[x] + [t3].[x]
 FROM
 	(
 		SELECT
+			IIF([t2].[x] IS NULL, 0, [t2].[x]) as [x]
+		FROM
 			(
 				SELECT
-					SUM([t1].[MoneyValue])
+					(
+						SELECT
+							SUM([t1].[MoneyValue])
+						FROM
+							[LinqDataTypes] [t1]
+					) as [x]
 				FROM
-					[LinqDataTypes] [t1]
-			) as [x]
-		FROM
-			[LinqDataTypes] [q]
-	) [t2]
+					[LinqDataTypes] [q]
+			) [t2]
+	) [t3]
 
