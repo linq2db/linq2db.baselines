@@ -1,7 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM(CASE
 				WHEN "d"."ParentID" IS NOT NULL THEN "d"."ParentID"
@@ -14,7 +14,7 @@ SELECT
 				FROM rdb$database
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"
-	)
+	), 0)
 FROM
 	"Parent" "p"
 
