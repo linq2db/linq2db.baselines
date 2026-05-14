@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || RTrim(Char(Coalesce("t1"."Value1", 0))),
-	"t1"."SubSum",
+	Coalesce("t1"."SubSum", 0),
 	CAST(EXISTS(
 		SELECT
 			*
@@ -40,5 +40,5 @@ FROM
 	) "t1"
 WHERE
 	' ' || RTrim(Char(Coalesce("t1"."Value1", 0))) LIKE '%1%' ESCAPE '~' AND
-	"t1"."SubSum" > 0
+	Coalesce("t1"."SubSum", 0) > 0
 
