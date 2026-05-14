@@ -6,14 +6,14 @@ FROM
 	Person p
 UNION ALL
 SELECT
-	concat(concat(p_1.FirstName, '/'), p_1.LastName) as FirstName
+	concat(p_1.FirstName, '/', p_1.LastName) as FirstName
 FROM
 	Person p_1
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	concat(concat(p.FirstName, '/'), p.LastName) as FirstName
+	concat(p.FirstName, '/', p.LastName) as FirstName
 FROM
 	Person p
 UNION ALL
