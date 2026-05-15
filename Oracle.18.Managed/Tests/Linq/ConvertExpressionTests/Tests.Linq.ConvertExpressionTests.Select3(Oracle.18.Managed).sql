@@ -1,7 +1,7 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM(a_Children."ChildID")
 		FROM
@@ -9,7 +9,7 @@ SELECT
 		WHERE
 			t."ParentID" = a_Children."ParentID" AND a_Children."ParentID" > 1 AND
 			a_Children."ParentID" < 10
-	)
+	), 0)
 FROM
 	"Parent" t
 

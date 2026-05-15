@@ -1,14 +1,14 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM([a_Children].[ChildID])
 		FROM
 			[Child] [a_Children]
 		WHERE
 			[g_2].[ParentID] = [a_Children].[ParentID]
-	)
+	), 0)
 FROM
 	(
 		SELECT DISTINCT

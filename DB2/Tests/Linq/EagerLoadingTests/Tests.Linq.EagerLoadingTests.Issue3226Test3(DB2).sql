@@ -29,5 +29,5 @@ FROM
 			"Item" "x"
 	) "x_1"
 ORDER BY
-	"x_1"."Sum_1"
+	Coalesce("x_1"."Sum_1", 0)
 

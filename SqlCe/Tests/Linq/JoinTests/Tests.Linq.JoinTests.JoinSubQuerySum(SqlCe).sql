@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[count_1]
+	Coalesce([t1].[count_1], 0) as [count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (

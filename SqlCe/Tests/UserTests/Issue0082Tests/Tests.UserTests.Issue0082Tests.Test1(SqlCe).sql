@@ -3,7 +3,7 @@
 SELECT
 	[t3].[ParentID],
 	[t1].[CountResult],
-	[t2].[SumResult]
+	Coalesce([t2].[SumResult], 0) as [SumResult]
 FROM
 	[Parent] [t3]
 		OUTER APPLY (
@@ -35,7 +35,7 @@ FROM
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],
-	[t2].[SumResult]
+	Coalesce([t2].[SumResult], 0) as [SumResult]
 FROM
 	[Parent] [x]
 		OUTER APPLY (

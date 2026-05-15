@@ -3,8 +3,8 @@
 SELECT
 	t1.Key_1,
 	t1.NullableDistinct,
-	t1.NullableDistinctNotNullDistinct,
-	t1.NullableDistinctNotNullDistinctOrdered,
+	Coalesce(t1.NullableDistinctNotNullDistinct, ''),
+	Coalesce(t1.NullableDistinctNotNullDistinctOrdered, ''),
 	t1.NotNullableDistinct,
 	Coalesce((
 		SELECT
@@ -24,8 +24,8 @@ FROM
 		SELECT
 			g_1.Id as Key_1,
 			STRING_AGG(DISTINCT Coalesce(g_1.NullableValue, ''), ', ') as NullableDistinct,
-			Coalesce(STRING_AGG(DISTINCT g_1.NullableValue, ', '), '') as NullableDistinctNotNullDistinct,
-			Coalesce(STRING_AGG(DISTINCT g_1.NullableValue, ', ' ORDER BY g_1.NullableValue DESC), '') as NullableDistinctNotNullDistinctOrdered,
+			STRING_AGG(DISTINCT g_1.NullableValue, ', ') as NullableDistinctNotNullDistinct,
+			STRING_AGG(DISTINCT g_1.NullableValue, ', ' ORDER BY g_1.NullableValue DESC) as NullableDistinctNotNullDistinctOrdered,
 			STRING_AGG(DISTINCT g_1.NotNullableValue, ', ') as NotNullableDistinct
 		FROM
 			SampleClass g_1

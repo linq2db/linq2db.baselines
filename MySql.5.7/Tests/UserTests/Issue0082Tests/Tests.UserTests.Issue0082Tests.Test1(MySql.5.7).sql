@@ -10,14 +10,14 @@ SELECT
 		WHERE
 			`t1`.`ParentID` = `od`.`ParentID`
 	),
-	(
+	Coalesce((
 		SELECT
 			SUM(`od_1`.`ParentID`)
 		FROM
 			`Child` `od_1`
 		WHERE
 			`t1`.`ParentID` = `od_1`.`ParentID`
-	)
+	), 0)
 FROM
 	`Parent` `t1`
 
@@ -46,14 +46,14 @@ FROM
 					`x`.`ParentID` = `od`.`ParentID`
 			) as `CountResult`,
 			`x`.`ParentID`,
-			(
+			Coalesce((
 				SELECT
 					SUM(`od_1`.`ParentID`)
 				FROM
 					`Child` `od_1`
 				WHERE
 					`x`.`ParentID` = `od_1`.`ParentID`
-			) as `SumResult`
+			), 0) as `SumResult`
 		FROM
 			`Parent` `x`
 	) `x_1`
