@@ -1,0 +1,7 @@
+﻿-- Oracle.11.Managed Oracle11
+
+SELECT
+	RTRIM(t."CharColumn", '.+')
+FROM
+	"StringTrimTable" t
+
