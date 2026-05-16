@@ -13,7 +13,7 @@ INSERT INTO "DestinationTable"
 SELECT
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@ValueStr AS VARCHAR(3))
+	Coalesce("s"."ValueStr", '') || Coalesce(CAST(@ValueStr AS VARCHAR(3)), '')
 FROM
 	"TableWithData" "s"
 WHERE
@@ -32,7 +32,7 @@ SET     @ValueStr = '200'
 SELECT
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@ValueStr AS VARCHAR(3))
+	Coalesce("s"."ValueStr", '') || Coalesce(CAST(@ValueStr AS VARCHAR(3)), '')
 FROM
 	"TableWithData" "s"
 WHERE
