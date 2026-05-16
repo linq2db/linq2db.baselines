@@ -8,7 +8,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."StringValue" || '1' = 'StrValue1'
+	(e."StringValue" || '1') = 'StrValue1'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 

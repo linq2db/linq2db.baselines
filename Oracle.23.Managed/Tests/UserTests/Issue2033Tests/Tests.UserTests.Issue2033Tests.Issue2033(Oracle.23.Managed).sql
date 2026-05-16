@@ -13,10 +13,9 @@ AS
 		NC_CODE ncCode
 			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' OR
-		ncGroupMember.NC_GROUP_BO IS NULL AND ncCode.SITE IS NULL OR
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' OR
-		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL'
+		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO') OR
+		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_MAN') OR
+		ncGroupMember.NC_GROUP_BO = ('NCGroupBO:' || ncCode.SITE || ',CATAN_ALL')
 ),
 "FindProductionFailedNcData"
 (
@@ -115,7 +114,7 @@ AS
 			INNER JOIN SFC_ROUTER sfcRouter ON sfcRouting.HANDLE = sfcRouter.SFC_ROUTING_BO
 			INNER JOIN SFC_STEP sfcStep ON sfcRouter.HANDLE = sfcStep.SFC_ROUTER_BO
 			INNER JOIN ROUTER_STEP routerStep ON (sfcRouter.ROUTER_BO = routerStep.ROUTER_BO OR sfcRouter.ROUTER_BO IS NULL AND routerStep.ROUTER_BO IS NULL) AND (sfcStep.STEP_ID = routerStep.STEP_ID OR sfcStep.STEP_ID IS NULL AND routerStep.STEP_ID IS NULL)
-			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND (t1."CurrentOperationBo" = routerOperation.OPERATION_BO OR t1."CurrentOperationBo" IS NULL AND routerOperation.OPERATION_BO IS NULL)
+			INNER JOIN ROUTER_OPERATION routerOperation ON routerStep.HANDLE = routerOperation.ROUTER_STEP_BO AND t1."CurrentOperationBo" = routerOperation.OPERATION_BO
 			INNER JOIN CUSTOM_FIELDS customFields_1 ON routerOperation.HANDLE = customFields_1.HANDLE AND 'OPERATION_TYPE' = customFields_1.ATTRIBUTE AND 'T' = customFields_1.VALUE
 			INNER JOIN ROUTER router_1 ON sfcRouter.ROUTER_BO = router_1.HANDLE
 	WHERE
