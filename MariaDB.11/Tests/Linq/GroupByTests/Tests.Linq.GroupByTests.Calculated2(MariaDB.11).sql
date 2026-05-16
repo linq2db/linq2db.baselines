@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	Concat(`p`.`Key_1`, '2')
+	CONCAT(`p`.`Key_1`, '2')
 FROM
 	(
 		SELECT DISTINCT
@@ -16,5 +16,5 @@ FROM
 			`Child` `g_1`
 	) `p`
 WHERE
-	Concat(`p`.`Key_1`, '2') = '22'
+	(CONCAT(`p`.`Key_1`, '2')) = '22'
 

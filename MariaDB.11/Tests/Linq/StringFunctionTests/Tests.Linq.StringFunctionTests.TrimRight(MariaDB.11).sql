@@ -2,9 +2,9 @@
 
 SELECT
 	`pp`.`PersonID`,
-	Concat('  ', `pp`.`FirstName`, ' ')
+	CONCAT('  ', `pp`.`FirstName`, ' ')
 FROM
 	`Person` `pp`
 WHERE
-	`pp`.`PersonID` = 1 AND RTRIM(Concat('  ', `pp`.`FirstName`, ' ')) = '  John'
+	`pp`.`PersonID` = 1 AND RTRIM(CONCAT('  ', `pp`.`FirstName`, ' ')) = '  John'
 

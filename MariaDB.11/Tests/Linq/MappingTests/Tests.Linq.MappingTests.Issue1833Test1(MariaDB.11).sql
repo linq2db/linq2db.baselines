@@ -4,7 +4,7 @@ SELECT
 	`e`.`PersonID`,
 	`e`.`FirstName`,
 	`e`.`LastName`,
-	Concat(`e`.`FirstName`, ':', `e`.`LastName`)
+	CONCAT(`e`.`FirstName`, ':', `e`.`LastName`)
 FROM
 	`Person` `e`
 WHERE

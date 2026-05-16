@@ -2,7 +2,7 @@
 
 SELECT
 	`p`.`PersonID`,
-	REGEXP_REPLACE(Concat(`p`.`FirstName`, '1'), '(?-i)[]+$', '')
+	REGEXP_REPLACE((CONCAT(`p`.`FirstName`, '1')), '(?-i)[]+$', '')
 FROM
 	`Person` `p`
 

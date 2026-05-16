@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	RTRIM(Concat(`t`.`VarCharColumn`, '   '))
+	RTRIM(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), '   '))
 FROM
 	`StringTrimTable` `t`
 
