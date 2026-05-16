@@ -1,7 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t].[VarCharColumn] + '...++'
+	IIF([t].[VarCharColumn] IS NULL, '', [t].[VarCharColumn]) + '...++'
 FROM
 	[StringTrimTable] [t]
 

@@ -43,5 +43,5 @@ SELECT
 FROM
 	[TableWithGuid] [t]
 WHERE
-	LCase(Mid(CStr([t].[Id]), 2, 36)) LIKE '8f4[-]53%'
+	LCase(LCase(Mid(CStr([t].[Id]), 2, 36))) LIKE '8f4[-]53%'
 
