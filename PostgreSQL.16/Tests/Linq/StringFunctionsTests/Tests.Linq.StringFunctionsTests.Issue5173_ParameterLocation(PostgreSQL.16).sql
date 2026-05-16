@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	STRING_AGG('test:' || grp_1.ch::VarChar(11), ';')
+	STRING_AGG('test:' || grp_1.ch::text, ';')
 FROM
 	(
 		SELECT
