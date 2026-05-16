@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	(RTrim(Char("g_2"."Message")) || ' items have not been processed, e.g. #' || Coalesce(RTrim(Char("g_2"."Message_1")), '')) || '.'
+	RTrim(Char("g_2"."Message")) || ' items have not been processed, e.g. #' || Coalesce(RTrim(Char("g_2"."Message_1")), '') || '.'
 FROM
 	(
 		SELECT

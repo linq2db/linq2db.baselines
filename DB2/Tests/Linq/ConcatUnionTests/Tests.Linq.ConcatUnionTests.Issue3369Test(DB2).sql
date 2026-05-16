@@ -11,7 +11,7 @@ FROM
 	(
 		SELECT
 			"x"."PersonID" as ID,
-			Char('A', 255) as "FirstName",
+			VarChar('A', 255) as "FirstName",
 			CASE
 				WHEN "x"."FirstName" = '123' THEN 'Y'
 				ELSE 'N'
@@ -24,7 +24,7 @@ FROM
 		SELECT
 			"x_1"."PersonID" as ID,
 			"x_1"."FirstName",
-			Char('N', 255) as OK
+			VarChar('N', 255) as OK
 		FROM
 			"Person" "x_1"
 		WHERE
