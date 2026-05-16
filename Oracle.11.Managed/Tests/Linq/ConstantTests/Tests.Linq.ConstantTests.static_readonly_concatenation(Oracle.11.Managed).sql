@@ -10,7 +10,7 @@ SELECT
 FROM
 	"TestConstantsData" e
 WHERE
-	e."StringValue" || '1' = :p
+	(e."StringValue" || '1') = :p
 
 -- Oracle.11.Managed Oracle11
 
