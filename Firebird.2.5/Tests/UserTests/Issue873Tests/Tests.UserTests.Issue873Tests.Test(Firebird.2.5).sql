@@ -43,6 +43,6 @@ FROM
 			"Parent" "f"
 	) "t1"
 WHERE
-	' ' || Coalesce("t1"."Value1", 0) LIKE '%1%' ESCAPE '~' AND
+	(' ' || Coalesce("t1"."Value1", 0)) LIKE '%1%' ESCAPE '~' AND
 	Coalesce("t1"."SubSum", 0) > 0
 
