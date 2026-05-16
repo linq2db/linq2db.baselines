@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	trimRight(concat(t.VarCharColumn, '   '))
+	trimRight(concat(Coalesce(t.VarCharColumn, ''), '   '))
 FROM
 	StringTrimTable t
 
