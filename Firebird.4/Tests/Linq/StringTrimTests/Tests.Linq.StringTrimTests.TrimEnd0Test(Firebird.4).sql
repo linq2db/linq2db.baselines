@@ -1,7 +1,7 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
-	TRIM(TRAILING FROM ("t"."VarCharColumn" || '   '))
+	TRIM(TRAILING FROM (Coalesce("t"."VarCharColumn", '') || '   '))
 FROM
 	"StringTrimTable" "t"
 
