@@ -39,6 +39,6 @@ FROM
 			Parent f
 	) t1
 WHERE
-	' ' || To_Char(Nvl(t1.Value1, 0)) LIKE '%1%' ESCAPE '~' AND
+	(' ' || To_Char(Nvl(t1.Value1, 0))) LIKE '%1%' ESCAPE '~' AND
 	Nvl(t1.SubSum, 0) > 0
 

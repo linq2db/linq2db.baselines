@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	RTRIM(t.VarCharColumn || '...++', '.+')
+	RTRIM(Nvl(t.VarCharColumn, '') || '...++', '.+')
 FROM
 	StringTrimTable t
 

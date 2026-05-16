@@ -8,7 +8,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	e.StringValue || '1' = 'StrValue1'
+	(Nvl(e.StringValue, '') || '1') = 'StrValue1'
 
 -- Informix.DB2 Informix
 

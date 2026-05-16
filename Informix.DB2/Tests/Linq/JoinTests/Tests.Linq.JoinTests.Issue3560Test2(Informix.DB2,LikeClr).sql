@@ -13,5 +13,5 @@ SELECT
 	p2.Gender
 FROM
 	Person p1
-		INNER JOIN Person p2 ON p1.MiddleName = p2.MiddleName || ' Jr.'
+		INNER JOIN Person p2 ON p1.MiddleName = (Nvl(p2.MiddleName, '') || ' Jr.')
 

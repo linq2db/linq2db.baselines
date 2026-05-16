@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	LTRIM('...' || t.VarCharColumn, '.')
+	LTRIM('...' || Nvl(t.VarCharColumn, ''), '.')
 FROM
 	StringTrimTable t
 
