@@ -1,7 +1,7 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 
 SELECT
-	RTRIM([t].[VarCharColumn] + '   ')
+	RTRIM(Coalesce([t].[VarCharColumn], '') + N'   ')
 FROM
 	[StringTrimTable] [t]
 
