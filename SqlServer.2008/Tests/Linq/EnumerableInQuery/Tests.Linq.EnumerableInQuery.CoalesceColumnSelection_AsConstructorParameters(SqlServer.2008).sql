@@ -8,11 +8,11 @@ SELECT
 FROM
 	(
 		SELECT
-			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + CASE
+			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
 				WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
 					THEN CAST([it].[ColorId] AS NVarChar(11))
 				ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
-			END as [StrValue],
+			END, N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],
 			[it].[Conditional]
