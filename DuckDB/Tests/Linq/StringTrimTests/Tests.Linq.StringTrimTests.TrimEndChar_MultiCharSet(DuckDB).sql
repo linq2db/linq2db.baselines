@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 
 SELECT
-	RTRIM(t.CharColumn || '...++', '.+')
+	RTRIM(Coalesce(t.CharColumn, '') || '...++', '.+')
 FROM
 	StringTrimTable t
 
