@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2022
 
 SELECT
-	RTRIM([t].[NVarCharColumn] + N'...++', N'.+')
+	RTRIM(Coalesce([t].[NVarCharColumn], N'') + N'...++', N'.+')
 FROM
 	[StringTrimTable] [t]
 
