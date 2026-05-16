@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG('test:' || CAST("grp_1"."ch" AS VarChar(11)), ';')
+	STRING_AGG('test:' || CAST("grp_1"."ch" AS NVarChar(11)), ';')
 FROM
 	(
 		SELECT

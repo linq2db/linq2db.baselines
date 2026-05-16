@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	RTRIM("t"."NVarCharColumn" || '...++', '.+')
+	RTRIM(Coalesce("t"."NVarCharColumn", '') || '...++', '.+')
 FROM
 	"StringTrimTable" "t"
 
