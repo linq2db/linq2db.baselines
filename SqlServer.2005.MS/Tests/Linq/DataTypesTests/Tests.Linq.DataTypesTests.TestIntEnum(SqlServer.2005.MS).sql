@@ -117,7 +117,16 @@ DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
-INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [IntEnumTable]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT 1,1,NULL UNION ALL
+SELECT 2,2,3
 
 -- SqlServer.2005.MS SqlServer.2005
 

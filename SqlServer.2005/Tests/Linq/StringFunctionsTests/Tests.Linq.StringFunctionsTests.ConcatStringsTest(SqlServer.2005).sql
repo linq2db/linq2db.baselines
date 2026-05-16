@@ -19,7 +19,7 @@ ORDER BY
 -- SqlServer.2005
 
 SELECT
-	SUBSTRING(Coalesce(N' -> ' + [t].[Value3], '') + Coalesce(N' -> ' + [t].[Value1], '') + Coalesce(N' -> ' + [t].[Value2], ''), 5, 2147483647)
+	SUBSTRING(Coalesce(N' -> ' + [t].[Value3], N'') + Coalesce(N' -> ' + [t].[Value1], N'') + Coalesce(N' -> ' + [t].[Value2], N''), 5, 2147483647)
 FROM
 	[SampleClass] [t]
 ORDER BY

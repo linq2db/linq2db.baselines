@@ -1,4 +1,12 @@
-﻿INSERT BULK [BulkCopyTable](Id, Value)
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -16,7 +24,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -34,7 +50,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -52,7 +76,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -70,7 +102,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -88,7 +128,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -106,7 +154,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -124,7 +180,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -142,7 +206,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -160,7 +232,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -178,7 +258,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -196,7 +284,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -214,7 +310,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -232,7 +336,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -250,7 +362,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -268,7 +388,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -286,7 +414,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -304,7 +440,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -322,7 +466,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -340,7 +492,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -358,7 +518,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -376,7 +544,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -394,7 +570,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -412,7 +596,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -430,7 +622,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -448,7 +648,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -466,7 +674,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -484,7 +700,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -502,7 +726,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -520,7 +752,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -538,7 +778,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -556,7 +804,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -574,7 +830,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -592,7 +856,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -610,7 +882,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -628,7 +908,15 @@ DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
 
-INSERT ASYNC BULK [BulkCopyTable](Id, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+SELECT 1,10 UNION ALL
+SELECT 2,20
 
 -- SqlServer.2005.MS SqlServer.2005
 

@@ -117,7 +117,16 @@ DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
-INSERT BULK [ByteTable](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [ByteTable]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT 1,1,NULL UNION ALL
+SELECT 2,255,2
 
 -- SqlServer.2005.MS SqlServer.2005
 

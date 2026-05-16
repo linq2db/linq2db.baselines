@@ -13,7 +13,7 @@ SELECT
 	END,
 	[x].[StringProp],
 	1,
-	[x].[StringProp] + N'2',
+	Coalesce([x].[StringProp], N'') + N'2',
 	2
 FROM
 	[ConditionalData] [x]
@@ -22,7 +22,7 @@ WHERE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
 			THEN N'2'
 		WHEN [x].[StringProp] = N'2' THEN [x].[StringProp]
-		ELSE [x].[StringProp] + N'2'
+		ELSE Coalesce([x].[StringProp], N'') + N'2'
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
 		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL

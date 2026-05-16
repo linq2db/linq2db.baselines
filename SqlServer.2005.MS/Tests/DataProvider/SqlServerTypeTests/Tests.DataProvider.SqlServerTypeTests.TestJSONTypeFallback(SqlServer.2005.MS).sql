@@ -97,7 +97,21 @@ DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
-INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1
+DECLARE @p2 NVarChar(4000) -- String
+SET     @p2 = N'{ }'
+DECLARE @p3 NVarChar(4000) -- String
+SET     @p3 = NULL
+
+INSERT INTO [TypeTable`2]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT @p1,@p2,@p3
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -116,7 +130,21 @@ DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
-INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1
+DECLARE @p2 NVarChar(4000) -- String
+SET     @p2 = N'{ }'
+DECLARE @p3 NVarChar(4000) -- String
+SET     @p3 = NULL
+
+INSERT INTO [TypeTable`2]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT @p1,@p2,@p3
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -220,7 +248,21 @@ DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
-INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1
+DECLARE @p2 NVarChar(4000) -- String
+SET     @p2 = N'{ "prop1": 123 }'
+DECLARE @p3 NVarChar(4000) -- String
+SET     @p3 = N'{ "prop1": 321 }'
+
+INSERT INTO [TypeTable`2]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT @p1,@p2,@p3
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -237,7 +279,21 @@ DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
 
-INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+DECLARE @p1 Int -- Int32
+SET     @p1 = 1
+DECLARE @p2 NVarChar(4000) -- String
+SET     @p2 = N'{ "prop1": 123 }'
+DECLARE @p3 NVarChar(4000) -- String
+SET     @p3 = N'{ "prop1": 321 }'
+
+INSERT INTO [TypeTable`2]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT @p1,@p2,@p3
 
 -- SqlServer.2005.MS SqlServer.2005
 

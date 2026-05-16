@@ -6,7 +6,15 @@ FROM
 WHERE
 	[c_1].[ParentID] >= 1000
 
-INSERT BULK [Parent](ParentID, Value1)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [Parent]
+(
+	[ParentID],
+	[Value1]
+)
+SELECT 1000,NULL UNION ALL
+SELECT 1001,NULL
 
 -- SqlServer.2005.MS SqlServer.2005
 

@@ -6,7 +6,62 @@ FROM
 WHERE
 	[p].[ID] >= 700
 
-INSERT ASYNC BULK [AllTypes](ID, bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType, smallmoneyDataType, intDataType, tinyintDataType, moneyDataType, floatDataType, realDataType, datetimeDataType, smalldatetimeDataType, charDataType, varcharDataType, textDataType, ncharDataType, nvarcharDataType, ntextDataType, binaryDataType, varbinaryDataType, imageDataType, uniqueidentifierDataType, sql_variantDataType, nvarchar_max_DataType, varchar_max_DataType, varbinary_max_DataType, xmlDataType, datetime2DataType, datetimeoffsetDataType, datetimeoffset0DataType, datetimeoffset1DataType, datetimeoffset2DataType, datetimeoffset3DataType, datetimeoffset4DataType, datetimeoffset5DataType, datetimeoffset6DataType, datetimeoffset7DataType, dateDataType, timeDataType)
+-- SqlServer.2005.MS SqlServer.2005
+
+SET IDENTITY_INSERT [AllTypes] ON
+
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [AllTypes]
+(
+	[ID],
+	[bigintDataType],
+	[numericDataType],
+	[bitDataType],
+	[smallintDataType],
+	[decimalDataType],
+	[smallmoneyDataType],
+	[intDataType],
+	[tinyintDataType],
+	[moneyDataType],
+	[floatDataType],
+	[realDataType],
+	[datetimeDataType],
+	[smalldatetimeDataType],
+	[charDataType],
+	[varcharDataType],
+	[textDataType],
+	[ncharDataType],
+	[nvarcharDataType],
+	[ntextDataType],
+	[binaryDataType],
+	[varbinaryDataType],
+	[imageDataType],
+	[uniqueidentifierDataType],
+	[sql_variantDataType],
+	[nvarchar_max_DataType],
+	[varchar_max_DataType],
+	[varbinary_max_DataType],
+	[xmlDataType],
+	[datetime2DataType],
+	[datetimeoffsetDataType],
+	[datetimeoffset0DataType],
+	[datetimeoffset1DataType],
+	[datetimeoffset2DataType],
+	[datetimeoffset3DataType],
+	[datetimeoffset4DataType],
+	[datetimeoffset5DataType],
+	[datetimeoffset6DataType],
+	[datetimeoffset7DataType],
+	[dateDataType],
+	[timeDataType]
+)
+SELECT 700,1,1.1,1,1,1.1,1.1,1,1,1.1,1.1000000000000001,1.10000002,CAST('2014-12-17T21:02:58.123' AS DATETIME),CAST('2014-12-17T21:03:00.000' AS SMALLDATETIME),'E','E','E',N'Ё',N'Ё',N'Ё',0x01,0x01,0x0102030405,'00000001-0001-0001-0101-010101010101',N'1',N'1','1',0x0102030432,N'<xml />','2014-12-17T21:02:58.123','2014-12-17T21:02:58.1230000+05:00','2014-12-17T21:02:58.0000000+05:00','2014-12-17T21:02:58.1000000+05:00','2014-12-17T21:02:58.1200000+05:00','2014-12-17T21:02:58.1230000+05:00','2014-12-17T21:02:58.1230000+05:00','2014-12-17T21:02:58.1230000+05:00','2014-12-17T21:02:58.1230000+05:00','2014-12-17T21:02:58.1230000+05:00','2014-12-17','10:11:12.5670000' UNION ALL
+SELECT 701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+
+-- SqlServer.2005.MS SqlServer.2005
+
+SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlServer.2005.MS SqlServer.2005
 

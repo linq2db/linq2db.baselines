@@ -118,7 +118,16 @@ DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
-INSERT BULK [GuidTable](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [GuidTable]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
+SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 -- SqlServer.2005.MS SqlServer.2005
 

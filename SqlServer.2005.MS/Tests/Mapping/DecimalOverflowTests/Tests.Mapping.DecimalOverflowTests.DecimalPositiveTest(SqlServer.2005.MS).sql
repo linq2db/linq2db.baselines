@@ -5,7 +5,13 @@ CREATE TABLE [tempdb]..[#dtmp]
 	[Value] Decimal(38, 37) NOT NULL
 )
 
-INSERT BULK [tempdb]..[#dtmp](Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#dtmp]
+(
+	[Value]
+)
+SELECT 0.1
 
 -- SqlServer.2005.MS SqlServer.2005
 
