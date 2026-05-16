@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	IIF(LEN([t1].[FirstName] + N'.') > 2, 1, 0)
+	IIF(LEN([t1].[FirstName] || N'.') > 2, 1, 0)
 
 -- SqlServer.2025
 

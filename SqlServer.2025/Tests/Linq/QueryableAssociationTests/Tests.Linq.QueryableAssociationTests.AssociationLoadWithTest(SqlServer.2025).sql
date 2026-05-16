@@ -12,7 +12,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				[a_Other].[Id],
-				[a_Other].[StrValue] + N'_A' as [StrValue]
+				Coalesce([a_Other].[StrValue], N'') || N'_A' as [StrValue]
 			FROM
 				[SomeOtherEntity] [a_Other]
 			WHERE

@@ -5,7 +5,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	LEN([nm].[FirstName] + N'.') <> 1
+	LEN([nm].[FirstName] || N'.') <> 1
 
 -- SqlServer.2025
 

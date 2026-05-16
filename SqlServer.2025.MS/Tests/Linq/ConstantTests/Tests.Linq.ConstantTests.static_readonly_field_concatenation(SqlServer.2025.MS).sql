@@ -8,7 +8,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[StringValue] + N'1' = N'StrValue1'
+	(Coalesce([e].[StringValue], N'') || N'1') = N'StrValue1'
 
 -- SqlServer.2025.MS SqlServer.2025
 

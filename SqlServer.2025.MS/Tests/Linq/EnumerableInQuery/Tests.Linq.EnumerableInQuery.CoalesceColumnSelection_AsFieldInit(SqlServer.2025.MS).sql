@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CONCAT_WS(N',', N'', [it].[StyleName]) + N':' + IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))) as [StrValue],
+			CONCAT_WS(N',', N'', [it].[StyleName]) || N':' || Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) || N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) || N'.') - 1)) || CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],
 			[it].[Conditional]
@@ -23,9 +23,9 @@ FROM
 							COUNT(*) as [Conditional]
 						FROM
 							[SomeItem] [t1]
-					), 0)),
-					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),NULL,[a_Style].[Name],0)
-				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional])
+					), 0),[a_Style].[Name]),
+					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),NULL,[a_Style].[Name],0,[a_Style].[Name])
+				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional], [StyleName1])
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]

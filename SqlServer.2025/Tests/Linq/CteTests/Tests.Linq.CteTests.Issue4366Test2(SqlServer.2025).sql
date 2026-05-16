@@ -22,7 +22,7 @@ AS
 		[a].[parent_id] IS NULL
 	UNION ALL
 	SELECT
-		[recur].[FullName] + N' > ' + [t1].[name],
+		Coalesce([recur].[FullName], N'') || N' > ' || Coalesce([t1].[name], N''),
 		[t1].[id],
 		[t1].[name],
 		[t1].[parent_id],

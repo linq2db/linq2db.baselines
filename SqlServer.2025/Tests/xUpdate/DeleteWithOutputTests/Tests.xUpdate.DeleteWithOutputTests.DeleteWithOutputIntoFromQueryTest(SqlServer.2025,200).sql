@@ -19,7 +19,7 @@ DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	DELETED.[ValueStr] + @ValueStr
+	Coalesce(DELETED.[ValueStr], N'') || Coalesce(@ValueStr, N'')
 INTO [DestinationTable]
 (
 	[Id],

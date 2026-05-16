@@ -20,14 +20,14 @@ VALUES
 SELECT
 	[t1].[Id],
 	[t1].[Text],
-	[t1].[FirstName] + N' ' + [t1].[LastName]
+	Coalesce([t1].[FirstName], N'') || N' ' || Coalesce([t1].[LastName], N'')
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
 	[t2].[Text],
-	[t2].[FirstName] + N' ' + [t2].[LastName]
+	Coalesce([t2].[FirstName], N'') || N' ' || Coalesce([t2].[LastName], N'')
 FROM
 	[Issue3323Table] [t2]
 

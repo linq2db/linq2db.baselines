@@ -4,7 +4,7 @@ UPDATE
 	[TableWithData]
 SET
 	[Value] = [TableWithData].[Value] + 1,
-	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
+	[ValueStr] = Coalesce([TableWithData].[ValueStr], N'') || N'Upd'
 OUTPUT
 	INSERTED.[Id],
 	INSERTED.[Value],

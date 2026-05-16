@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	'*** p ***' + N'4',
+	'*** p ***' || N'4',
 	'*** p ***',
 	'*** [Parent] ***',
 	'*** p_1.p ***'
