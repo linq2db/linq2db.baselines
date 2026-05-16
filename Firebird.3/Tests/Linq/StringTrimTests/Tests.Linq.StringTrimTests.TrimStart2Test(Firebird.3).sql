@@ -1,7 +1,7 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	'...++' || "t"."VarCharColumn"
+	'...++' || Coalesce("t"."VarCharColumn", '')
 FROM
 	"StringTrimTable" "t"
 

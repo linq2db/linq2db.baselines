@@ -1,7 +1,7 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	TRIM(LEADING FROM ('   ' || "t"."VarCharColumn"))
+	TRIM(LEADING FROM ('   ' || Coalesce("t"."VarCharColumn", '')))
 FROM
 	"StringTrimTable" "t"
 
