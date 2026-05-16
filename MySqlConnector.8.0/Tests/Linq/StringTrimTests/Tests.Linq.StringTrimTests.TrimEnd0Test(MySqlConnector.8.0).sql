@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	RTRIM(Concat(`t`.`VarCharColumn`, '   '))
+	RTRIM(CONCAT(Coalesce(`t`.`VarCharColumn`, ''), '   '))
 FROM
 	`StringTrimTable` `t`
 

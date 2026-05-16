@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat(`p`.`Key_1`, '2')
+	CONCAT(`p`.`Key_1`, '2')
 FROM
 	(
 		SELECT DISTINCT
@@ -16,5 +16,5 @@ FROM
 			`Child` `g_1`
 	) `p`
 WHERE
-	Concat(`p`.`Key_1`, '2') = '22'
+	(CONCAT(`p`.`Key_1`, '2')) = '22'
 

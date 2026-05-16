@@ -19,7 +19,7 @@ VALUES
 
 SELECT
 	`r`.`Id`,
-	Concat(`r`.`FirstName`, ' ', `r`.`LastName`)
+	CONCAT(Coalesce(`r`.`FirstName`, ''), ' ', Coalesce(`r`.`LastName`, ''))
 FROM
 	`Issue3323Table` `r`
 UNION ALL
@@ -39,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	`r_1`.`Id`,
-	Concat(`r_1`.`FirstName`, ' ', `r_1`.`LastName`)
+	CONCAT(Coalesce(`r_1`.`FirstName`, ''), ' ', Coalesce(`r_1`.`LastName`, ''))
 FROM
 	`Issue3323Table` `r_1`
 

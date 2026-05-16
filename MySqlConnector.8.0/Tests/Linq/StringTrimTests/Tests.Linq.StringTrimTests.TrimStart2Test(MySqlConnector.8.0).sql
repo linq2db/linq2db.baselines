@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	REGEXP_REPLACE(Concat('...++', `t`.`VarCharColumn`), '(?-i)^[.+]+', '')
+	REGEXP_REPLACE((CONCAT('...++', Coalesce(`t`.`VarCharColumn`, ''))), '(?-i)^[.+]+', '')
 FROM
 	`StringTrimTable` `t`
 

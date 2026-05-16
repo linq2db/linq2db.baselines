@@ -6,8 +6,8 @@ SELECT
 	`a_PersonDoctor`.`LastName`,
 	`a_PersonDoctor`.`MiddleName`,
 	`a_PersonDoctor`.`Gender`,
-	Concat(`a_PersonDoctor`.`LastName`, ', ', `a_PersonDoctor`.`FirstName`),
-	Concat(`a_PersonDoctor`.`LastName`, ', ', `a_PersonDoctor`.`FirstName`),
+	CONCAT(`a_PersonDoctor`.`LastName`, ', ', `a_PersonDoctor`.`FirstName`),
+	CONCAT(`a_PersonDoctor`.`LastName`, ', ', `a_PersonDoctor`.`FirstName`),
 	(
 		SELECT
 			COUNT(*)

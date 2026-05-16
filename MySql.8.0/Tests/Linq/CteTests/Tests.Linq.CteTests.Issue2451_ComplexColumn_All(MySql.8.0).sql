@@ -9,7 +9,7 @@ AS
 		`Person` `p`
 	UNION ALL
 	SELECT
-		Concat(`r`.`FirstName`, '/', `r`.`LastName`)
+		CONCAT(`r`.`FirstName`, '/', `r`.`LastName`)
 	FROM
 		`cte` `t1`
 			INNER JOIN `Person` `r` ON `t1`.`FirstName` = `r`.`LastName`
