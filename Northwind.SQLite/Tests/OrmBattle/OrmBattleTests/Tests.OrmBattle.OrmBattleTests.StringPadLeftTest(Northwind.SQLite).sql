@@ -15,9 +15,9 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	'123' || CASE
+	('123' || Coalesce(CASE
 		WHEN [c_1].[City] IS NULL OR Length([c_1].[City]) >= 8 THEN [c_1].[City]
 		ELSE SUBSTR(REPLACE(HEX(ZEROBLOB(8)), '0', ' '), 1, 8 - Length([c_1].[City])) || [c_1].[City]
-	END = '123 Seattle'
+	END, '')) = '123 Seattle'
 LIMIT 1
 
