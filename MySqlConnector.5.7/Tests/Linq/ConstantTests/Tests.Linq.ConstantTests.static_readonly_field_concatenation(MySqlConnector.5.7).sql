@@ -8,7 +8,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	Concat(`e`.`StringValue`, '1') = 'StrValue1'
+	(CONCAT(Coalesce(`e`.`StringValue`, ''), '1')) = 'StrValue1'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 

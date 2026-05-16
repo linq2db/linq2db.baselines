@@ -20,14 +20,14 @@ VALUES
 SELECT
 	`t1`.`Id`,
 	`t1`.`Text`,
-	Concat(`t1`.`FirstName`, ' ', `t1`.`LastName`)
+	CONCAT(Coalesce(`t1`.`FirstName`, ''), ' ', Coalesce(`t1`.`LastName`, ''))
 FROM
 	`Issue3323Table` `t1`
 UNION ALL
 SELECT
 	`t2`.`Id`,
 	`t2`.`Text`,
-	Concat(`t2`.`FirstName`, ' ', `t2`.`LastName`)
+	CONCAT(Coalesce(`t2`.`FirstName`, ''), ' ', Coalesce(`t2`.`LastName`, ''))
 FROM
 	`Issue3323Table` `t2`
 

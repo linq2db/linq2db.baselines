@@ -1,7 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat('...++', `t`.`VarCharColumn`)
+	CONCAT('...++', Coalesce(`t`.`VarCharColumn`, ''))
 FROM
 	`StringTrimTable` `t`
 

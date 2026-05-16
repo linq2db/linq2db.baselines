@@ -1,7 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat('*** p ***', '4'),
+	CONCAT('*** p ***', '4'),
 	'*** p ***',
 	'*** `Parent` ***',
 	'*** p_1.p ***'

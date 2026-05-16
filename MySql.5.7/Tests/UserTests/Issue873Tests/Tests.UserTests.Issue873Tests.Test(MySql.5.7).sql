@@ -1,7 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
+	CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
 	Coalesce(`t1`.`SubSum`, 0),
 	EXISTS(
 		SELECT
@@ -39,6 +39,6 @@ FROM
 			`Parent` `f`
 	) `t1`
 WHERE
-	LOCATE('1', Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
+	LOCATE('1', CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
 	Coalesce(`t1`.`SubSum`, 0) > 0
 

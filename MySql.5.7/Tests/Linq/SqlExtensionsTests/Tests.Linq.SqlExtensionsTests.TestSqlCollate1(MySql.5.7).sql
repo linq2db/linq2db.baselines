@@ -9,5 +9,5 @@ SELECT
 FROM
 	`Person` `t1`
 ORDER BY
-	Concat('1', `t1`.`FirstName` COLLATE utf8_bin, '2')
+	CONCAT('1', `t1`.`FirstName` COLLATE utf8_bin, '2')
 

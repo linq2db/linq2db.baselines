@@ -5,7 +5,7 @@ SELECT
 	`p`.`PersonID`,
 	`p`.`PersonID`,
 	`p`.`LastName`,
-	Concat(`p`.`FirstName`, ' ', `p`.`LastName`)
+	CONCAT(`p`.`FirstName`, ' ', `p`.`LastName`)
 FROM
 	`Person` `p`
 

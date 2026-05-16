@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	LTRIM(Concat('   ', `t`.`VarCharColumn`))
+	LTRIM(CONCAT('   ', Coalesce(`t`.`VarCharColumn`, '')))
 FROM
 	`StringTrimTable` `t`
 
