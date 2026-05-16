@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	RTRIM([t].[NCharColumn] || '...++', '.+')
+	RTRIM(Coalesce([t].[NCharColumn], '') || '...++', '.+')
 FROM
 	[StringTrimTable] [t]
 
