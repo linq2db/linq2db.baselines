@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			'test' + [a_Patient].[Diagnosis] as [Key_1]
+			CASE WHEN 'test' IS NULL OR [a_Patient].[Diagnosis] IS NULL THEN NULL ELSE 'test' + [a_Patient].[Diagnosis] END as [Key_1]
 		FROM
 			[Person] [t1]
 				LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
