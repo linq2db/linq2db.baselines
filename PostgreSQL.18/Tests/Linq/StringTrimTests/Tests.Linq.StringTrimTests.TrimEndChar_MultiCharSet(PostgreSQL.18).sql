@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	RTRIM(t."CharColumn" || '...++', '.+')
+	RTRIM(Coalesce(t."CharColumn", '') || '...++', '.+')
 FROM
 	"StringTrimTable" t
 
