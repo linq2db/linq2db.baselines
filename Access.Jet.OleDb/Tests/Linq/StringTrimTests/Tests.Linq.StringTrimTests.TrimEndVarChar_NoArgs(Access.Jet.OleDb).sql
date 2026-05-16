@@ -1,7 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	RTRIM([t].[VarCharColumn] + '   ')
+	RTRIM(IIF([t].[VarCharColumn] IS NULL, '', [t].[VarCharColumn]) + '   ')
 FROM
 	[StringTrimTable] [t]
 
