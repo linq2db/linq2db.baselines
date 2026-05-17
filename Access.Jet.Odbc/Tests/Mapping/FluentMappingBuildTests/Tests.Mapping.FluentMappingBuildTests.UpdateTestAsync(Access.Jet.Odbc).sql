@@ -1,0 +1,50 @@
+﻿-- Access.Jet.Odbc AccessODBC
+
+CREATE TABLE [FluentTemp_UpdateAsync]
+(
+	[ID]       Int          NOT NULL,
+	[Value]    NVarChar(20)     NULL,
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp_UpdateAsync] PRIMARY KEY CLUSTERED ([ID])
+)
+
+-- Access.Jet.Odbc AccessODBC
+DECLARE @ID Int -- Int32
+SET     @ID = 1
+DECLARE @Name NVarChar(4) -- String
+SET     @Name = 'John'
+DECLARE @LastName NVarChar(3) -- String
+SET     @LastName = 'Doe'
+
+INSERT INTO [FluentTemp_UpdateAsync]
+(
+	[ID],
+	[Value],
+	[LastName]
+)
+VALUES
+(
+	?,
+	?,
+	?
+)
+
+-- Access.Jet.Odbc AccessODBC
+DECLARE @Name NVarChar(7) -- String
+SET     @Name = 'John II'
+DECLARE @LastName NVarChar(4) -- String
+SET     @LastName = 'Dory'
+
+UPDATE
+	[FluentTemp_UpdateAsync] [t]
+SET
+	[t].[Value] = ?,
+	[t].[LastName] = ?
+WHERE
+	[t].[ID] = 1
+
+-- Access.Jet.Odbc AccessODBC
+
+DROP TABLE [FluentTemp_UpdateAsync]
+
