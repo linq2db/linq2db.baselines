@@ -9,11 +9,11 @@ FROM
 		SELECT
 			DatePart(year, CASE
 				WHEN [n].[DATUM] IS NOT NULL THEN [n].[DATUM]
-				ELSE '1753-01-01'
+				ELSE '1753-01-01 00:00:00.000'
 			END) as [Year_1],
 			DatePart(month, CASE
 				WHEN [n].[DATUM] IS NOT NULL THEN [n].[DATUM]
-				ELSE '1753-01-01'
+				ELSE '1753-01-01 00:00:00.000'
 			END) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
@@ -34,11 +34,11 @@ FROM
 		SELECT
 			DatePart(year, CASE
 				WHEN [n_1].[DATUM] IS NOT NULL THEN [n_1].[DATUM]
-				ELSE '1753-01-01'
+				ELSE '1753-01-01 00:00:00.000'
 			END) as [Year_1],
 			DatePart(month, CASE
 				WHEN [n_1].[DATUM] IS NOT NULL THEN [n_1].[DATUM]
-				ELSE '1753-01-01'
+				ELSE '1753-01-01 00:00:00.000'
 			END) as [Month_1],
 			[n_1].[SKUPAJ]
 		FROM

@@ -3,13 +3,13 @@
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
 			"LastName" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -22,7 +22,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -42,7 +42,7 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
@@ -50,7 +50,7 @@ WHERE
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -58,13 +58,13 @@ END
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
 			"LastName" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -77,7 +77,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -97,7 +97,7 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
@@ -105,7 +105,7 @@ WHERE
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -113,13 +113,13 @@ END
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int          NOT NULL,
 			"Column"   NVarChar(20)     NULL,
 			"LastName" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -132,7 +132,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -152,7 +152,7 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
@@ -160,7 +160,7 @@ WHERE
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -168,13 +168,13 @@ END
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Cache"
 		(
 			ID         Int          NOT NULL,
 			"Column"   NVarChar(20)     NULL,
 			"LastName" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -187,7 +187,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -207,7 +207,7 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
@@ -215,6 +215,6 @@ WHERE
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 

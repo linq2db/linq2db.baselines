@@ -1,9 +1,12 @@
 ﻿-- Sybase.Managed Sybase
 
-SELECT
+SELECT TOP 2
 	[p].[PersonID],
 	[p].[FirstName],
-	[p].[LastName]
+	[p].[LastName],
+	'ибн Алёша'
 FROM
 	[Person] [p]
+WHERE
+	[p].[PersonID] = 1
 

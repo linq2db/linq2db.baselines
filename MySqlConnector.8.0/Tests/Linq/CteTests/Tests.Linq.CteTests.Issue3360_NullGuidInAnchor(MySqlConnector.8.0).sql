@@ -5,7 +5,7 @@ AS
 (
 	SELECT
 		`p`.`Id`,
-		NULL
+		CAST(NULL AS CHAR(36))
 	FROM
 		`Issue3360NullInAnchor` `p`
 	UNION ALL

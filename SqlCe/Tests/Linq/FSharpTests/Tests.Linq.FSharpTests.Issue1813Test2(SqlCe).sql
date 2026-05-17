@@ -64,10 +64,10 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[tupledArg].[Id],
-	[tupledArg].[Name] as [Item2]
+	[after_1].[Id] as [Item1],
+	[after_1].[Name] as [Item2]
 FROM
-	[Names] [tupledArg]
+	[Names] [after_1]
 ORDER BY
-	[tupledArg].[Id]
+	[after_1].[Id]
 

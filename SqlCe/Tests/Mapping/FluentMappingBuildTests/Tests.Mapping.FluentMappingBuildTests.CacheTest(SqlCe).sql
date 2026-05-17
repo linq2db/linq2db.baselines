@@ -1,12 +1,12 @@
 ﻿-- SqlCe
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SqlCe
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -37,23 +37,23 @@ SELECT
 	[t].[Value] as [Name],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
 	[Value]    NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SqlCe
@@ -64,7 +64,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -84,23 +84,23 @@ SELECT
 	[t].[Value] as [Name],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
 	[Column]   NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SqlCe
@@ -111,7 +111,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -131,23 +131,23 @@ SELECT
 	[t].[Column] as [Name],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_Cache]
 
 -- SqlCe
 
-CREATE TABLE [FluentTemp]
+CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
 	[Column]   NVarChar(20)     NULL,
 	[LastName] NVarChar(20)     NULL,
 
-	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY ([ID])
 )
 
 -- SqlCe
@@ -158,7 +158,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -178,11 +178,11 @@ SELECT
 	[t].[Column] as [Name],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlCe
 
-DROP TABLE [FluentTemp]
+DROP TABLE [FluentTemp_Cache]
 

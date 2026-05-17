@@ -13,7 +13,13 @@ IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 		PRIMARY KEY CLUSTERED ([Name])
 	)
 
-INSERT ASYNC BULK [tempdb]..[#TempTable](Name)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#TempTable]
+(
+	[Name]
+)
+SELECT N'John'
 
 -- SqlServer.2005.MS SqlServer.2005
 

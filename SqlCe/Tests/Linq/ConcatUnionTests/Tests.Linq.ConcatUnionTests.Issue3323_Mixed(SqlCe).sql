@@ -19,7 +19,7 @@ VALUES
 
 SELECT
 	[r].[Id],
-	[r].[FirstName] + ' ' + [r].[LastName] as [Text]
+	Coalesce([r].[FirstName], '') + ' ' + Coalesce([r].[LastName], '') as [Text]
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -39,7 +39,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	[r_1].[FirstName] + ' ' + [r_1].[LastName] as [Text]
+	Coalesce([r_1].[FirstName], '') + ' ' + Coalesce([r_1].[LastName], '') as [Text]
 FROM
 	[Issue3323Table] [r_1]
 

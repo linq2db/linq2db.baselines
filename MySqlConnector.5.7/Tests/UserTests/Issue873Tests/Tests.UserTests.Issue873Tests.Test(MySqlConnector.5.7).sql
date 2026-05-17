@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
-	`t1`.`SubSum`,
+	CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
+	Coalesce(`t1`.`SubSum`, 0),
 	EXISTS(
 		SELECT
 			*
@@ -39,6 +39,6 @@ FROM
 			`Parent` `f`
 	) `t1`
 WHERE
-	LOCATE('1', Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
-	`t1`.`SubSum` > 0
+	LOCATE('1', CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
+	Coalesce(`t1`.`SubSum`, 0) > 0
 

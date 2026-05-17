@@ -132,7 +132,7 @@ AS
 			LEFT JOIN [RateLines] [rateLine] ON [rateLine].[TL_TI] = [s].[TI_PK]
 			LEFT JOIN [RateLineItem] [rateLineItem_1] ON [rateLineItem_1].[TM_TL] = [rateLine].[TL_PK]
 	WHERE
-		([s].[TI_RateEndDate] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [s].[TI_RateEndDate]) > strftime('%Y-%m-%d %H:%M:%f', CURRENT_TIMESTAMP)) AND
+		([s].[TI_RateEndDate] IS NULL OR strftime('%Y-%m-%d %H:%M:%f', [s].[TI_RateEndDate]) > strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'))) AND
 		[rateLineItem_1].[TM_Type] IN ('MIN', 'FLT', 'BAS', 'UNT')
 	GROUP BY
 		[s].[TI_PK],

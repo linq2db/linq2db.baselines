@@ -3,7 +3,7 @@
 SELECT
 	"t1"."Key_1",
 	"t1"."NullableDistinct",
-	"t1"."NullableDistinctNotNullDistinct",
+	Coalesce("t1"."NullableDistinctNotNullDistinct", ''),
 	Coalesce((
 		SELECT
 			LIST(Coalesce("t2"."NullableDistinctNotNullDistinctOrdered", ''), ', ')
@@ -40,7 +40,7 @@ FROM
 		SELECT
 			"g_1"."Id" as "Key_1",
 			LIST(DISTINCT Coalesce("g_1"."NullableValue", ''), ', ') as "NullableDistinct",
-			Coalesce(LIST(DISTINCT "g_1"."NullableValue", ', '), '') as "NullableDistinctNotNullDistinct",
+			LIST(DISTINCT "g_1"."NullableValue", ', ') as "NullableDistinctNotNullDistinct",
 			LIST(DISTINCT "g_1"."NotNullableValue", ', ') as "NotNullableDistinct"
 		FROM
 			"SampleClass" "g_1"

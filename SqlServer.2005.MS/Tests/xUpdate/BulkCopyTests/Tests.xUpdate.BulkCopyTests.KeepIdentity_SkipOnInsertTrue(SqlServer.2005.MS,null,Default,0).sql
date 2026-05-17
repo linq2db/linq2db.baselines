@@ -13,7 +13,14 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-INSERT BULK [AllTypes](intDataType)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [AllTypes]
+(
+	[intDataType]
+)
+SELECT 200 UNION ALL
+SELECT 300
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @lastId Int -- Int32

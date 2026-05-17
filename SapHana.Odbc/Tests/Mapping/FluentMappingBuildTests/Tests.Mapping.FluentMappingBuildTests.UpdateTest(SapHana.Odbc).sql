@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Update"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
@@ -17,7 +17,7 @@ SET     @Name = 'John'
 DECLARE @LastName NVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Update"
 (
 	"ID",
 	"Value",
@@ -37,7 +37,7 @@ DECLARE @LastName NVarChar(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	"FluentTemp" "t"
+	"FluentTemp_Update" "t"
 SET
 	"Value" = ?,
 	"LastName" = ?
@@ -46,5 +46,8 @@ WHERE
 
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "FluentTemp"
+DO BEGIN
+	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Update"';
+END
 

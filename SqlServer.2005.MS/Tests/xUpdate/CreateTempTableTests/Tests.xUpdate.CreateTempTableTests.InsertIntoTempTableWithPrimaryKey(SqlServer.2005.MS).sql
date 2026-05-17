@@ -7,7 +7,13 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 	PRIMARY KEY CLUSTERED ([Key])
 )
 
-INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#TableWithPrimaryKey2]
+(
+	[Key]
+)
+SELECT 1
 
 -- SqlServer.2005.MS SqlServer.2005
 

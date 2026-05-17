@@ -1,6 +1,18 @@
-﻿INSERT BULK [SimpleBulkCopyTable](Id)
+﻿-- SqlServer.2005.MS SqlServer.2005
 
-INSERT BULK [SimpleBulkCopyTable](Id)
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 1
+
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 2
 
 -- SqlServer.2005.MS SqlServer.2005
 

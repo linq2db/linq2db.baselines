@@ -1,15 +1,15 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `FluentTemp`
+DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-CREATE TABLE IF NOT EXISTS `FluentTemp`
+CREATE TABLE IF NOT EXISTS `FluentTemp_InsertOrUpdate`
 (
 	`ID`   INT         NOT NULL,
 	`Name` VARCHAR(20)     NULL,
 
-	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
+	CONSTRAINT `PK_FluentTemp_InsertOrUpdate` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -18,7 +18,7 @@ SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO `FluentTemp`
+INSERT INTO `FluentTemp_InsertOrUpdate`
 (
 	`ID`,
 	`Name`
@@ -31,7 +31,7 @@ VALUES
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-INSERT INTO `FluentTemp`
+INSERT INTO `FluentTemp_InsertOrUpdate`
 (
 	`ID`,
 	`Name`
@@ -47,5 +47,5 @@ ON DUPLICATE KEY UPDATE
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `FluentTemp`
+DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 

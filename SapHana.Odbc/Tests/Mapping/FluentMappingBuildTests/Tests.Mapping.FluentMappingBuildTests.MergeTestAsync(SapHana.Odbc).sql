@@ -1,10 +1,13 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "FluentTemp"
+DO BEGIN
+	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
+END
 
 -- SapHana.Odbc SapHanaOdbc
 
-CREATE COLUMN TABLE "FluentTemp"
+CREATE COLUMN TABLE "FluentTemp_Merge"
 (
 	"ID"   Integer      NOT NULL,
 	"Name" NVarChar(20)     NULL,
@@ -18,7 +21,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Merge"
 (
 	"ID",
 	"Name"
@@ -31,7 +34,7 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-MERGE INTO "FluentTemp" "Target"
+MERGE INTO "FluentTemp_Merge" "Target"
 USING (
 	SELECT 1 AS "ID", 'John II' AS "Name" FROM DUMMY) "Source"
 ON ("Target"."ID" = "Source"."ID")
@@ -55,5 +58,8 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "FluentTemp"
+DO BEGIN
+	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
+END
 

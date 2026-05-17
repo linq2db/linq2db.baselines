@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
 
 SELECT
-	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS NVarChar(11)) + N'-01-01 00:20:00' AS DateTime)
+	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS NVarChar(11)) || N'-01-01 00:20:00' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 

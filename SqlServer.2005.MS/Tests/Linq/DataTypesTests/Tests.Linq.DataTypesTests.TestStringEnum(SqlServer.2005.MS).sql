@@ -117,7 +117,16 @@ DELETE [t1]
 FROM
 	[StringEnumTable] [t1]
 
-INSERT BULK [StringEnumTable](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [StringEnumTable]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT 1,N'val=1',NULL UNION ALL
+SELECT 2,N'value=2',N'value=33'
 
 -- SqlServer.2005.MS SqlServer.2005
 

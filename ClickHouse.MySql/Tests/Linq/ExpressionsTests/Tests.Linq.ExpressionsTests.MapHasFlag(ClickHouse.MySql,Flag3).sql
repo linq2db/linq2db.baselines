@@ -7,5 +7,5 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	bitAnd(t.Flags, 4) <> 0
+	bitAnd(t.Flags, 4) = 4
 

@@ -3,17 +3,17 @@
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`,
-	NULL,
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
 UNION ALL
 SELECT
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
 	`a_Parent`.`ParentID`,
 	`a_Parent`.`ParentID`,
 	`a_Parent`.`Value1`

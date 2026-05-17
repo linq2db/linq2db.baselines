@@ -3,7 +3,7 @@
 SELECT
 	t.Str,
 	CHAR_LENGTH(t.Str || '.') - 1,
-	'original-' || t.Str
+	'original-' || Nvl(t.Str, '')
 FROM
 	TestLengthModel t
 

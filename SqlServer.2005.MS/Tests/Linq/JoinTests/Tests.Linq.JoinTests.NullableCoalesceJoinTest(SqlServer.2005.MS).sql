@@ -8,7 +8,15 @@ CREATE TABLE [tempdb]..[#tmptbl1]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-INSERT BULK [tempdb]..[#tmptbl1](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#tmptbl1]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,N'Value1' UNION ALL
+SELECT 2,NULL
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -20,7 +28,15 @@ CREATE TABLE [tempdb]..[#tmptbl2]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-INSERT BULK [tempdb]..[#tmptbl2](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#tmptbl2]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,N'Value1' UNION ALL
+SELECT 3,N'Value2'
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -32,7 +48,15 @@ CREATE TABLE [tempdb]..[#tmptbl3]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-INSERT BULK [tempdb]..[#tmptbl3](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#tmptbl3]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,N'Value1' UNION ALL
+SELECT 2,NULL
 
 -- SqlServer.2005.MS SqlServer.2005
 

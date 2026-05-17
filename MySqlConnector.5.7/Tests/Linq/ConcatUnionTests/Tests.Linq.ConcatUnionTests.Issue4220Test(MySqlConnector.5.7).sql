@@ -37,14 +37,14 @@ VALUES
 SELECT
 	`e`.`Id`,
 	`e`.`AOnly`,
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255))
 FROM
 	`ConcreteA` `e`
 UNION ALL
 SELECT
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255)),
 	`e_1`.`Id`,
 	`e_1`.`BOnly`
 FROM

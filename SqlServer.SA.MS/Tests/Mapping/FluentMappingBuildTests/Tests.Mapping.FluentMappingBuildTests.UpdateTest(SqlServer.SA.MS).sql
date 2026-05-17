@@ -1,13 +1,13 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Update]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Update] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -18,7 +18,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Update]
 (
 	[ID],
 	[Value],
@@ -38,14 +38,14 @@ DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Dory'
 
 UPDATE
-	[FluentTemp]
+	[FluentTemp_Update]
 SET
 	[Value] = @Name,
 	[LastName] = @LastName
 WHERE
-	[FluentTemp].[ID] = 1
+	[FluentTemp_Update].[ID] = 1
 
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [FluentTemp]
+DROP TABLE IF EXISTS [FluentTemp_Update]
 

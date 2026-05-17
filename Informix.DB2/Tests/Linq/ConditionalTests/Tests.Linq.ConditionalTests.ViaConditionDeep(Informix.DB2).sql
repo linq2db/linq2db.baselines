@@ -9,7 +9,7 @@ SELECT
 	END::BOOLEAN,
 	x.StringProp,
 	1,
-	x.StringProp || '2',
+	Nvl(x.StringProp, '') || '2',
 	2
 FROM
 	ConditionalData x
@@ -17,7 +17,7 @@ WHERE
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN '2'
 		WHEN x.StringProp = '2' THEN x.StringProp
-		ELSE x.StringProp || '2'
+		ELSE Nvl(x.StringProp, '') || '2'
 	END LIKE '%2' ESCAPE '~' AND
 	CASE
 		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL

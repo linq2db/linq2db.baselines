@@ -1,9 +1,9 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)
+	CAST(CASE WHEN '2010-' IS NULL OR RIGHT(CASE WHEN '0' IS NULL OR CAST([t].[ID] AS VarChar(2)) IS NULL THEN NULL ELSE '0' + CAST([t].[ID] AS VarChar(2)) END, 2) IS NULL OR '-01' IS NULL THEN NULL ELSE '2010-' + RIGHT(CASE WHEN '0' IS NULL OR CAST([t].[ID] AS VarChar(2)) IS NULL THEN NULL ELSE '0' + CAST([t].[ID] AS VarChar(2)) END, 2) + '-01' END AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)) = 2010
+	DatePart(year, CAST(CASE WHEN '2010-' IS NULL OR RIGHT(CASE WHEN '0' IS NULL OR CAST([t].[ID] AS VarChar(2)) IS NULL THEN NULL ELSE '0' + CAST([t].[ID] AS VarChar(2)) END, 2) IS NULL OR '-01' IS NULL THEN NULL ELSE '2010-' + RIGHT(CASE WHEN '0' IS NULL OR CAST([t].[ID] AS VarChar(2)) IS NULL THEN NULL ELSE '0' + CAST([t].[ID] AS VarChar(2)) END, 2) + '-01' END AS DateTime)) = 2010
 

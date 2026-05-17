@@ -1,7 +1,7 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2."Sum_1"
+	Coalesce(t2."Sum_1", 0)
 FROM
 	"Parent" p
 		OUTER APPLY (

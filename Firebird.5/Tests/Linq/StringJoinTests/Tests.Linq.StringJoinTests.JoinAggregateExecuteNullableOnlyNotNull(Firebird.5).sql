@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	Coalesce(LIST("t2"."NullableValue", ', '), '')
+	LIST("t2"."NullableValue", ', ')
 FROM
 	(
 		SELECT

@@ -1,7 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM("t1"."Sum_1")
 		FROM
@@ -15,7 +15,7 @@ SELECT
 				ORDER BY
 					"a_Details"."DetailId"
 			) "t1"
-	),
+	), 0),
 	(
 		SELECT
 			COUNT(*)

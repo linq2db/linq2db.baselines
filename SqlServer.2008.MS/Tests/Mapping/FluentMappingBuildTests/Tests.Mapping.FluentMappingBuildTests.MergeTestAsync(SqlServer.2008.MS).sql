@@ -1,17 +1,17 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Merge]
 
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Merge]
 	(
 		[ID]   Int          NOT NULL,
 		[Name] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Merge] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -20,7 +20,7 @@ SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
 SET     @Name = N'John'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Merge]
 (
 	[ID],
 	[Name]
@@ -33,7 +33,7 @@ VALUES
 
 -- SqlServer.2008.MS SqlServer.2008
 
-MERGE INTO [FluentTemp] [Target]
+MERGE INTO [FluentTemp_Merge] [Target]
 USING (VALUES
 	(1,N'John II')
 ) [Source]
@@ -63,6 +63,6 @@ VALUES
 
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Merge]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Merge]
 

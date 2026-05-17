@@ -1,15 +1,15 @@
 ﻿-- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
+			CREATE TABLE "FluentTemp_Cache"
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
 				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+				CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 			)
 		';
 END
@@ -22,7 +22,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -42,29 +42,29 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
+			CREATE TABLE "FluentTemp_Cache"
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
 				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+				CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 			)
 		';
 END
@@ -77,7 +77,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Value",
@@ -97,29 +97,29 @@ SELECT
 	"t"."Value",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
+			CREATE TABLE "FluentTemp_Cache"
 			(
 				ID         Int                                   NOT NULL,
 				"Column"   VarChar(20) CHARACTER SET UNICODE_FSS,
 				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+				CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 			)
 		';
 END
@@ -132,7 +132,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -152,29 +152,29 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
 		EXECUTE STATEMENT '
-			CREATE TABLE "FluentTemp"
+			CREATE TABLE "FluentTemp_Cache"
 			(
 				ID         Int                                   NOT NULL,
 				"Column"   VarChar(20) CHARACTER SET UNICODE_FSS,
 				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
 
-				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+				CONSTRAINT "PK_FluentTemp_Cache" PRIMARY KEY (ID)
 			)
 		';
 END
@@ -187,7 +187,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Cache"
 (
 	ID,
 	"Column",
@@ -207,14 +207,14 @@ SELECT
 	"t"."Column",
 	"t"."LastName"
 FROM
-	"FluentTemp" "t"
+	"FluentTemp_Cache" "t"
 WHERE
 	"t".ID = 1
 
 -- Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "FluentTemp"';
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Cache')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_Cache"';
 END
 

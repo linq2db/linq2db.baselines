@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Cache]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2014
@@ -18,7 +18,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -38,25 +38,25 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Cache]
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2014
@@ -67,7 +67,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Value],
@@ -87,25 +87,25 @@ SELECT
 	[t].[Value],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Cache]
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2014
@@ -116,7 +116,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -136,25 +136,25 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
-	CREATE TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
+	CREATE TABLE [FluentTemp_Cache]
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
 		[LastName] NVarChar(20)     NULL,
 
-		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+		CONSTRAINT [PK_FluentTemp_Cache] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2014
@@ -165,7 +165,7 @@ SET     @Name = N'John'
 DECLARE @LastName NVarChar(20) -- String
 SET     @LastName = N'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Cache]
 (
 	[ID],
 	[Column],
@@ -185,12 +185,12 @@ SELECT
 	[t].[Column],
 	[t].[LastName]
 FROM
-	[FluentTemp] [t]
+	[FluentTemp_Cache] [t]
 WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
+	DROP TABLE [FluentTemp_Cache]
 

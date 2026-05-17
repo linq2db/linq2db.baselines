@@ -52,9 +52,9 @@ SET     @DateTime = '2123-02-03 11:22:33'
 DECLARE @DateTime3 Datetime -- DateTime
 SET     @DateTime3 = '2123-02-03 11:22:33.123'
 DECLARE @TimeStamp Datetime -- DateTimeOffset
-SET     @TimeStamp = '2023-02-03T11:22:33.0000000+01:00'
+SET     @TimeStamp = CONVERT_TZ('2023-02-03 11:22:33.000000', '+01:00', '+00:00')
 DECLARE @TimeStamp5 Datetime -- DateTimeOffset
-SET     @TimeStamp5 = '2013-02-03T11:22:33.1275000-01:00'
+SET     @TimeStamp5 = CONVERT_TZ('2013-02-03 11:22:33.127500', '-01:00', '+00:00')
 DECLARE @Time Time
 SET     @Time = -04:03:53
 DECLARE @Time2 Time

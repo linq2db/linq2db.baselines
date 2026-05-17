@@ -41,7 +41,7 @@ INTO [tempdb]..[#TableWithData_output]
 SELECT
 	[p].[PersonID],
 	[p].[PersonID] * 10,
-	[p].[FirstName] + N' ' + [p].[LastName]
+	[p].[FirstName] || N' ' || [p].[LastName]
 FROM
 	[Person] [p]
 WHERE

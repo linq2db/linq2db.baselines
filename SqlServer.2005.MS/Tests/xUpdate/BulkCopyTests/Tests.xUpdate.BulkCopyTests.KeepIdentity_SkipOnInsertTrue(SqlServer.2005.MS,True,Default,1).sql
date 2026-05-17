@@ -13,7 +13,23 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
-INSERT ASYNC BULK [AllTypes](ID, intDataType)
+-- SqlServer.2005.MS SqlServer.2005
+
+SET IDENTITY_INSERT [AllTypes] ON
+
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [AllTypes]
+(
+	[ID],
+	[intDataType]
+)
+SELECT 13,200 UNION ALL
+SELECT 23,300
+
+-- SqlServer.2005.MS SqlServer.2005
+
+SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @lastId Int -- Int32

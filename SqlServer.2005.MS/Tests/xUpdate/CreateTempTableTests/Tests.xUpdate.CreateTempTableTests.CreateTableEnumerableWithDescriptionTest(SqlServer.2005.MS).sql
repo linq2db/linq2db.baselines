@@ -13,7 +13,13 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Name])
 	)
 
-INSERT BULK [TempTable](Name)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [TempTable]
+(
+	[Name]
+)
+SELECT N'John'
 
 -- SqlServer.2005.MS SqlServer.2005
 

@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	LEN(CAST([p].[MoneyValue] AS NVarChar(31)) + N'.') > 1
+	LEN(CAST([p].[MoneyValue] AS NVarChar(31)) || N'.') > 1
 

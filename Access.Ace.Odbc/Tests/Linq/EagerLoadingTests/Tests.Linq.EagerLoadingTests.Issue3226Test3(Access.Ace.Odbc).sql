@@ -29,5 +29,5 @@ FROM
 			[Item] [x]
 	) [x_1]
 ORDER BY
-	[x_1].[Sum_1]
+	IIF([x_1].[Sum_1] IS NULL, 0, [x_1].[Sum_1])
 

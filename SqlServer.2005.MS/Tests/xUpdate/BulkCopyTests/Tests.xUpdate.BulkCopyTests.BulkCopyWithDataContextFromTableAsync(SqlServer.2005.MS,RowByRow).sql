@@ -1,6 +1,18 @@
-﻿INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
+﻿-- SqlServer.2005.MS SqlServer.2005
 
-INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 1
+
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 2
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32
@@ -15,9 +27,21 @@ VALUES
 	@Id
 )
 
-INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
+-- SqlServer.2005.MS SqlServer.2005
 
-INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 10
+
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [SimpleBulkCopyTable]
+(
+	[Id]
+)
+SELECT 20
 
 -- SqlServer.2005.MS SqlServer.2005
 DECLARE @Id Int -- Int32

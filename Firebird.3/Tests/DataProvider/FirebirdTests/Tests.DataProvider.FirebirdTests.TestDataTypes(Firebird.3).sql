@@ -290,19 +290,19 @@ SELECT "timestampDataType" FROM "AllTypes" WHERE ID = 2
 
 -- Firebird.3 Firebird3
 DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2012-12-12 12:12:12' AS timestamp)
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000'
 
 SELECT ID FROM "AllTypes" WHERE "timestampDataType" = @p
 
 -- Firebird.3 Firebird3
 DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2012-12-12 12:12:12' AS timestamp)
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000'
 
 SELECT ID FROM "AllTypes" WHERE "timestampDataType" = @p
 
 -- Firebird.3 Firebird3
 DECLARE @p TimeStamp -- DateTime
-SET     @p = CAST('2012-12-12 12:12:12' AS timestamp)
+SET     @p = TIMESTAMP '2012-12-12 12:12:12.0000'
 
 SELECT ID FROM "AllTypes" WHERE "timestampDataType" = @p
 

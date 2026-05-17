@@ -23,5 +23,5 @@ FROM
 				[x].[Id] = [a_Values].[ItemId]
 		) [t1]
 ORDER BY
-	[t1].[Sum_1]
+	Coalesce([t1].[Sum_1], 0)
 

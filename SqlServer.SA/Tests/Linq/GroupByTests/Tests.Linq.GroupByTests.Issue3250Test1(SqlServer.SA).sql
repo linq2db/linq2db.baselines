@@ -1,7 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
 
 SELECT
-	(CAST([g_2].[Message] AS NVarChar(11)) + N' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), N'')) + N'.'
+	CAST([g_2].[Message] AS NVarChar(11)) + N' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), N'') + N'.'
 FROM
 	(
 		SELECT

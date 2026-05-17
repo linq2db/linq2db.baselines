@@ -5,41 +5,18 @@ UPDATE
 SET
 	"VarcharValue" = (
 		SELECT
-			(
-				SELECT
-					STRING_AGG("a_Children"."VarcharValue", ' | ')
-				FROM
-					"SampleClass" "a_Children"
-				WHERE
-					"t_1"."Id" = "a_Children"."Id"
-			)
+			STRING_AGG("a_Children"."VarcharValue", ' | ')
 		FROM
-			"SampleClass" "t_1"
+			"SampleClass" "a_Children"
 		WHERE
-			"SampleClass"."PK" = "t_1"."PK"
+			"SampleClass"."Id" = "a_Children"."Id"
 	),
 	"NVarcharValue" = (
 		SELECT
-			(
-				SELECT
-					STRING_AGG("a_Children_1"."VarcharValue", ' | ')
-				FROM
-					"SampleClass" "a_Children_1"
-				WHERE
-					"t_2"."Id" = "a_Children_1"."Id"
-			)
+			STRING_AGG("a_Children_1"."VarcharValue", ' | ')
 		FROM
-			"SampleClass" "t_2"
+			"SampleClass" "a_Children_1"
 		WHERE
-			"SampleClass"."PK" = "t_2"."PK"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"SampleClass" "t"
-		WHERE
-			"SampleClass"."PK" = "t"."PK"
+			"SampleClass"."Id" = "a_Children_1"."Id"
 	)
 

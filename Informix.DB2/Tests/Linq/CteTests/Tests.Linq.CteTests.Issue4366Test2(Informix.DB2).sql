@@ -22,7 +22,7 @@ AS
 		a.parent_id IS NULL
 	UNION ALL
 	SELECT
-		recur.FullName || ' > ' || t1.name,
+		Nvl(recur.FullName, '') || ' > ' || Nvl(t1.name, ''),
 		t1.id,
 		t1.name,
 		t1.parent_id,

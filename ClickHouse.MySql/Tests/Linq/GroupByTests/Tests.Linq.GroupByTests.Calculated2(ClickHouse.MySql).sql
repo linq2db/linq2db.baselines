@@ -16,5 +16,5 @@ FROM
 			Child g_1
 	) p
 WHERE
-	concat(p.Key_1, '2') = '22'
+	(concat(p.Key_1, '2')) = '22'
 

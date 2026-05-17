@@ -1,6 +1,6 @@
 ﻿-- Firebird.2.5 Firebird
 DECLARE @Date Date
-SET     @Date = CAST('2021-01-01' AS date)
+SET     @Date = DATE '2021-01-01'
 
 INSERT INTO "DateOnlyTable"
 (

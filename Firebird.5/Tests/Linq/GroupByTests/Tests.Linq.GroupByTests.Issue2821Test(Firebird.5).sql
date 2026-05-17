@@ -1,6 +1,6 @@
 ﻿-- Firebird.5 Firebird4
 DECLARE @currentDate TimeStamp -- DateTime
-SET     @currentDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
+SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.1231'
 
 SELECT
 	"o".ID,

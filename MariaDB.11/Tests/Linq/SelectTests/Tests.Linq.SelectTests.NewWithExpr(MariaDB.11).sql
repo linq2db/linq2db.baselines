@@ -2,7 +2,7 @@
 
 SELECT
 	`p`.`PersonID`,
-	TRIM(TRAILING '' FROM Concat(`p`.`FirstName`, '1'))
+	REGEXP_REPLACE((CONCAT(`p`.`FirstName`, '1')), '(?-i)[]+$', '')
 FROM
 	`Person` `p`
 

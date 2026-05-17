@@ -64,10 +64,10 @@ ORDER BY
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	`tupledArg`.`Id`,
-	`tupledArg`.`Name`
+	`after_1`.`Id`,
+	`after_1`.`Name`
 FROM
-	`Names` `tupledArg`
+	`Names` `after_1`
 ORDER BY
-	`tupledArg`.`Id`
+	`after_1`.`Id`
 

@@ -19,7 +19,7 @@ UPDATE
 SET
 	"Value1" = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t_1"."Value1") * ?
+			("c_2"."Value1" * "t_1"."Value1") * ?
 		FROM
 			"UpdatedEntities" "c_2",
 			"NewEntities" "t_1"
@@ -28,7 +28,7 @@ SET
 	),
 	"Value2" = (
 		SELECT
-			("UpdatedEntities"."Value2" * "t_2"."Value2") * ?
+			("c_3"."Value2" * "t_2"."Value2") * ?
 		FROM
 			"UpdatedEntities" "c_3",
 			"NewEntities" "t_2"
@@ -37,7 +37,7 @@ SET
 	),
 	"Value3" = (
 		SELECT
-			("UpdatedEntities"."Value3" * "t_3"."Value3") * ?
+			("c_4"."Value3" * "t_3"."Value3") * ?
 		FROM
 			"UpdatedEntities" "c_4",
 			"NewEntities" "t_3"

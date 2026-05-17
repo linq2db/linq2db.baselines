@@ -64,10 +64,10 @@ ORDER BY
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	tupledArg."Id",
-	tupledArg."Name"
+	after_1."Id",
+	after_1."Name"
 FROM
-	"Names" tupledArg
+	"Names" after_1
 ORDER BY
-	tupledArg."Id"
+	after_1."Id"
 

@@ -19,7 +19,7 @@ WITH RECURSIVE CTE AS
 		r.Level_1 + 1 as Level_1,
 		t1.Id as Id,
 		t1.ParentId as ParentId,
-		concat(r.Label, '/', t1.Label) as Label,
+		concat(Coalesce(r.Label, ''), '/', Coalesce(t1.Label, '')) as Label,
 		t1.Id as Entity_Id,
 		t1.Label as Entity_Label,
 		t1.ParentId as Entity_ParentId

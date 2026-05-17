@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM(CASE
 				WHEN "d"."ParentID" IS NOT NULL THEN "d"."ParentID"
@@ -14,7 +14,7 @@ SELECT
 				FROM SYSIBM.SYSDUMMY1
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"
-	)
+	), 0)
 FROM
 	"Parent" "p"
 

@@ -5,5 +5,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	LEN(CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3)) + N'.') > 1
+	LEN(CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3)) || N'.') > 1
 

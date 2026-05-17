@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || Coalesce("f"."Value1", 0),
-	"t1"."SubSum",
+	Coalesce("t1"."SubSum", 0),
 	EXISTS(
 		SELECT
 			*
@@ -33,6 +33,6 @@ FROM
 				"a_Parent"."ParentID" = "f"."ParentID" AND ("a_Parent"."Value1" = "f"."Value1" OR "a_Parent"."Value1" IS NULL AND "f"."Value1" IS NULL)
 		) "t1" ON 1=1
 WHERE
-	' ' || Coalesce("f"."Value1", 0) LIKE '%1%' ESCAPE '~' AND
-	"t1"."SubSum" > 0
+	(' ' || Coalesce("f"."Value1", 0)) LIKE '%1%' ESCAPE '~' AND
+	Coalesce("t1"."SubSum", 0) > 0
 

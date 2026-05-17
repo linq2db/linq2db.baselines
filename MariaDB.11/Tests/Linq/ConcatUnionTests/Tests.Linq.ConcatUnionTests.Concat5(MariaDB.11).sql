@@ -15,7 +15,7 @@ FROM
 		UNION ALL
 		SELECT
 			`c_2`.`ChildID` + 1000 as `ChildID`,
-			NULL as `ParentID`
+			CAST(NULL AS SIGNED) as `ParentID`
 		FROM
 			`Child` `c_2`
 		WHERE

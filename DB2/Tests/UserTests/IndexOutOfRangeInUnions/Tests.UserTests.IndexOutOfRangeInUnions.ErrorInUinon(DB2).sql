@@ -6,7 +6,7 @@ SELECT
 		WHEN "doSap"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	Char('Manual/Externo', 255)
+	VarChar('Manual/Externo', 255)
 FROM
 	O1 "doSap"
 UNION
@@ -16,7 +16,7 @@ SELECT
 		WHEN "doSap_1"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	Char('Manual/Externo', 255)
+	VarChar('Manual/Externo', 255)
 FROM
 	O2 "doSap_1"
 UNION
@@ -26,7 +26,7 @@ SELECT
 		WHEN "doSap_2"."DocStatus" = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	Char('Manual/Externo', 255)
+	VarChar('Manual/Externo', 255)
 FROM
 	O3 "doSap_2"
 

@@ -1,7 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN
@@ -13,12 +13,12 @@ END;
 
 BEGIN
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Merge"
 		(
 			ID     Int         NOT NULL,
 			"Name" VarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Merge" PRIMARY KEY (ID)
 		)
 	';
 EXCEPTION
@@ -34,7 +34,7 @@ SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Merge"
 (
 	ID,
 	"Name"
@@ -47,7 +47,7 @@ VALUES
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-MERGE INTO "FluentTemp" Target
+MERGE INTO "FluentTemp_Merge" Target
 USING (
 	SELECT 1 AS ID, 'John II' AS "Name" FROM sys.dual) "Source"
 ON (Target.ID = "Source".ID)
@@ -72,7 +72,7 @@ VALUES
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 EXCEPTION
 	WHEN OTHERS THEN
 		IF SQLCODE != -942 THEN

@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	(CAST([g_2].[Message] AS NVarChar(11)) + ' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), '')) + '.'
+	CASE WHEN CAST([g_2].[Message] AS NVarChar(11)) IS NULL OR ' items have not been processed, e.g. #' IS NULL OR Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), '') IS NULL OR '.' IS NULL THEN NULL ELSE CAST([g_2].[Message] AS NVarChar(11)) + ' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), '') + '.' END
 FROM
 	(
 		SELECT

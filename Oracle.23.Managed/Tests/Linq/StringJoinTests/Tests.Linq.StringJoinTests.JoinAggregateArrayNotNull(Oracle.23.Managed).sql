@@ -1,42 +1,38 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
+	SUBSTR(CASE
+		WHEN t."NullableValue" IS NULL THEN N''
+		ELSE To_NChar(', ' || t."NullableValue")
+	END || ', ' || t."NotNullableValue" || CASE
+		WHEN t."VarcharValue" IS NULL THEN N''
+		ELSE To_NChar(', ' || t."VarcharValue")
+	END || CASE
+		WHEN t."NVarcharValue" IS NULL THEN N''
+		ELSE To_NChar(', ' || t."NVarcharValue")
+	END, 3),
 	Coalesce((
 		SELECT
-			Coalesce(LISTAGG(CAST(t4."item" AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t4."item"), '')
+			LISTAGG(CAST(Coalesce(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue")
 		FROM
 			(
-				SELECT CAST(t."NullableValue" AS NVarChar2(50)) AS "item" FROM sys.dual
-				UNION ALL
-				SELECT CAST(t."NotNullableValue" AS NVarChar2(50)) FROM sys.dual
-				UNION ALL
-				SELECT CAST(t."VarcharValue" AS NVarChar2(50)) FROM sys.dual
-				UNION ALL
-				SELECT t."NVarcharValue" FROM sys.dual) t4
-	), ''),
-	Coalesce(t3."NotNullDistinctValue", '')
+				SELECT DISTINCT
+					t1."item" as "NotNullDistinctValue"
+				FROM
+					(
+						SELECT To_NChar(t."NullableValue") AS "item" FROM sys.dual
+						UNION ALL
+						SELECT To_NChar(t."NotNullableValue") FROM sys.dual
+						UNION ALL
+						SELECT To_NChar(t."VarcharValue") FROM sys.dual
+						UNION ALL
+						SELECT t."NVarcharValue" FROM sys.dual) t1
+				WHERE
+					t1."item" IS NOT NULL
+			) t2
+	), '')
 FROM
 	"SampleClass" t
-		OUTER APPLY (
-			SELECT
-				LISTAGG(CAST(Coalesce(t2."NotNullDistinctValue", N'') AS VarChar(50)), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
-			FROM
-				(
-					SELECT DISTINCT
-						t1."item" as "NotNullDistinctValue"
-					FROM
-						(
-							SELECT CAST(t."NullableValue" AS NVarChar2(50)) AS "item" FROM sys.dual
-							UNION ALL
-							SELECT CAST(t."NotNullableValue" AS NVarChar2(50)) FROM sys.dual
-							UNION ALL
-							SELECT CAST(t."VarcharValue" AS NVarChar2(50)) FROM sys.dual
-							UNION ALL
-							SELECT t."NVarcharValue" FROM sys.dual) t1
-					WHERE
-						t1."item" IS NOT NULL
-				) t2
-		) t3
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 

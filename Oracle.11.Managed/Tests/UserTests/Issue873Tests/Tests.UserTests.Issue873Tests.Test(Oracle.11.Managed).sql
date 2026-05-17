@@ -2,7 +2,7 @@
 
 SELECT
 	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)),
-	t1."SubSum",
+	Coalesce(t1."SubSum", 0),
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -43,6 +43,6 @@ FROM
 			"Parent" f
 	) t1
 WHERE
-	' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255)) LIKE '%1%' ESCAPE '~' AND
-	t1."SubSum" > 0
+	(' ' || CAST(Coalesce(t1."Value1", 0) AS VarChar(255))) LIKE '%1%' ESCAPE '~' AND
+	Coalesce(t1."SubSum", 0) > 0
 

@@ -8,11 +8,11 @@ SELECT
 FROM
 	(
 		SELECT
-			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + CASE
+			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
 				WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
 					THEN CAST([it].[ColorId] AS NVarChar(11))
 				ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
-			END as [StrValue],
+			END, N'') as [StrValue],
 			[it].[ColorName],
 			[it].[StyleName],
 			[it].[Conditional]
@@ -33,12 +33,12 @@ FROM
 								[SomeItem] [t1]
 						)
 						ELSE 0
-					END),
+					END,[a_Style].[Name]),
 					(NULL,[a_Style].[Name],Coalesce(CASE
 						WHEN [a_Color_1].[Id] IS NULL THEN NULL
 						ELSE [t2].[ColorId]
-					END, 0),NULL,[a_Style].[Name],0)
-				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional])
+					END, 0),NULL,[a_Style].[Name],0,[a_Style].[Name])
+				) [it]([ColorName], [StyleName], [ColorId], [ColorName0], [StyleName0], [Conditional], [StyleName1])
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]

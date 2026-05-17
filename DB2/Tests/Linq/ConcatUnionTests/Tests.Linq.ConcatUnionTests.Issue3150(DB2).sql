@@ -3,7 +3,7 @@
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
-	Char('id=1', 255)
+	VarChar('id=1', 255)
 FROM
 	"Person" "p"
 WHERE
@@ -12,7 +12,7 @@ UNION ALL
 SELECT
 	"p_1"."PersonID",
 	"p_1"."FirstName",
-	Char('id=2', 255)
+	VarChar('id=2', 255)
 FROM
 	"Person" "p_1"
 WHERE

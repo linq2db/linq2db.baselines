@@ -81,12 +81,12 @@ SELECT
 	`t1`.`ItemCode`,
 	`t1`.`Name`,
 	NULL,
-	NULL,
+	CAST(NULL AS CHAR(255)),
 	`t1`.`ItemCode_1`,
 	`t1`.`Name_1`,
 	NULL,
 	NULL,
-	NULL
+	CAST(NULL AS CHAR(255))
 FROM
 	(
 		SELECT
@@ -106,11 +106,11 @@ SELECT
 	`t2`.`Bottom`,
 	NULL,
 	NULL,
-	NULL,
+	CAST(NULL AS CHAR(255)),
 	`t2`.`ItemCode`,
 	`t2`.`Color`,
 	NULL,
-	NULL,
+	CAST(NULL AS CHAR(255)),
 	`t2`.`Size_1`,
 	`t2`.`ItemCode_1`,
 	`t2`.`Style_1`
@@ -164,10 +164,10 @@ FROM
 			`x`.`ItemCode_1`,
 			`x`.`Style_1` as `Name_1`,
 			NULL as `ItemCode_2`,
-			NULL as `Name_2`,
+			CAST(NULL AS CHAR(255)) as `Name_2`,
 			NULL as `Size_1`,
 			NULL as `ItemCode_3`,
-			NULL as `Name_3`
+			CAST(NULL AS CHAR(255)) as `Name_3`
 		FROM
 			(
 				SELECT
@@ -187,9 +187,9 @@ FROM
 			`t1`.`Bottom` as `Color`,
 			NULL as `Color_1`,
 			NULL as `ItemCode`,
-			NULL as `Name`,
+			CAST(NULL AS CHAR(255)) as `Name`,
 			NULL as `ItemCode_1`,
-			NULL as `Name_1`,
+			CAST(NULL AS CHAR(255)) as `Name_1`,
 			`t1`.`ItemCode` as `ItemCode_2`,
 			`t1`.`Color` as `Name_2`,
 			`t1`.`Size_1`,
@@ -248,10 +248,10 @@ FROM
 			`x`.`ItemCode_1`,
 			`x`.`Style_1` as `Name_1`,
 			NULL as `ItemCode_2`,
-			NULL as `Name_2`,
+			CAST(NULL AS CHAR(255)) as `Name_2`,
 			NULL as `Size_1`,
 			NULL as `ItemCode_3`,
-			NULL as `Name_3`
+			CAST(NULL AS CHAR(255)) as `Name_3`
 		FROM
 			(
 				SELECT
@@ -271,9 +271,9 @@ FROM
 			`t1`.`Bottom` as `Color`,
 			NULL as `Color_1`,
 			NULL as `ItemCode`,
-			NULL as `Name`,
+			CAST(NULL AS CHAR(255)) as `Name`,
 			NULL as `ItemCode_1`,
-			NULL as `Name_1`,
+			CAST(NULL AS CHAR(255)) as `Name_1`,
 			`t1`.`ItemCode` as `ItemCode_2`,
 			`t1`.`Color` as `Name_2`,
 			`t1`.`Size_1`,
@@ -333,10 +333,10 @@ FROM
 			`x`.`ItemCode_1`,
 			`x`.`Style_1` as `Name_1`,
 			NULL as `ItemCode_2`,
-			NULL as `Name_2`,
+			CAST(NULL AS CHAR(255)) as `Name_2`,
 			NULL as `Size_2`,
 			NULL as `ItemCode_3`,
-			NULL as `Name_3`
+			CAST(NULL AS CHAR(255)) as `Name_3`
 		FROM
 			(
 				SELECT
@@ -356,9 +356,9 @@ FROM
 			`t1`.`Bottom` as `Size_1`,
 			NULL as `Color`,
 			NULL as `ItemCode`,
-			NULL as `Name`,
+			CAST(NULL AS CHAR(255)) as `Name`,
 			NULL as `ItemCode_1`,
-			NULL as `Name_1`,
+			CAST(NULL AS CHAR(255)) as `Name_1`,
 			`t1`.`ItemCode` as `ItemCode_2`,
 			`t1`.`Color` as `Name_2`,
 			`t1`.`Size_1` as `Size_2`,
@@ -417,10 +417,10 @@ FROM
 			`x`.`ItemCode_1`,
 			`x`.`Style_1` as `Name_1`,
 			NULL as `ItemCode_2`,
-			NULL as `Name_2`,
+			CAST(NULL AS CHAR(255)) as `Name_2`,
 			NULL as `Size_2`,
 			NULL as `ItemCode_3`,
-			NULL as `Name_3`
+			CAST(NULL AS CHAR(255)) as `Name_3`
 		FROM
 			(
 				SELECT
@@ -440,9 +440,9 @@ FROM
 			`t1`.`Bottom` as `Size_1`,
 			NULL as `Color`,
 			NULL as `ItemCode`,
-			NULL as `Name`,
+			CAST(NULL AS CHAR(255)) as `Name`,
 			NULL as `ItemCode_1`,
-			NULL as `Name_1`,
+			CAST(NULL AS CHAR(255)) as `Name_1`,
 			`t1`.`ItemCode` as `ItemCode_2`,
 			`t1`.`Color` as `Name_2`,
 			`t1`.`Size_1` as `Size_2`,

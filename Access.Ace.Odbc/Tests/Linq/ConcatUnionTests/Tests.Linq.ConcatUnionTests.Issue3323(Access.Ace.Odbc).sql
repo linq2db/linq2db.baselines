@@ -20,14 +20,14 @@ VALUES
 SELECT
 	[t1].[Id],
 	[t1].[Text],
-	[t1].[FirstName] + ' ' + [t1].[LastName]
+	IIF([t1].[FirstName] IS NULL, '', [t1].[FirstName]) + ' ' + IIF([t1].[LastName] IS NULL, '', [t1].[LastName])
 FROM
 	[Issue3323Table] [t1]
 UNION ALL
 SELECT
 	[t2].[Id],
 	[t2].[Text],
-	[t2].[FirstName] + ' ' + [t2].[LastName]
+	IIF([t2].[FirstName] IS NULL, '', [t2].[FirstName]) + ' ' + IIF([t2].[LastName] IS NULL, '', [t2].[LastName])
 FROM
 	[Issue3323Table] [t2]
 

@@ -117,7 +117,16 @@ DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
-INSERT BULK [BooleanTable](Id, Column, ColumnNullable)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [BooleanTable]
+(
+	[Id],
+	[Column],
+	[ColumnNullable]
+)
+SELECT 1,1,NULL UNION ALL
+SELECT 2,0,1
 
 -- SqlServer.2005.MS SqlServer.2005
 

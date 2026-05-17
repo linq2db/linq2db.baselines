@@ -1,7 +1,7 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM([t1].[Sum_1])
 		FROM
@@ -16,7 +16,7 @@ SELECT
 					[a_Details].[DetailId]
 				LIMIT 5 OFFSET 1
 			) [t1]
-	),
+	), 0),
 	(
 		SELECT
 			COUNT(*)

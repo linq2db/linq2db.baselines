@@ -16,14 +16,14 @@ INSERT INTO `Person`
 )
 VALUES
 (
-	Concat('Insert14', (
+	CONCAT('Insert14', Coalesce((
 		SELECT
 			`p`.`FirstName`
 		FROM
 			`Person` `p`
 		WHERE
 			`p`.`PersonID` = 1
-	)),
+	), '')),
 	'Shepard',
 	'M'
 )

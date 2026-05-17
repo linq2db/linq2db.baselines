@@ -64,10 +64,10 @@ ORDER BY
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	`tupledArg`.`Id`,
-	`tupledArg`.`Name`
+	`after_1`.`Id`,
+	`after_1`.`Name`
 FROM
-	`Names` `tupledArg`
+	`Names` `after_1`
 ORDER BY
-	`tupledArg`.`Id`
+	`after_1`.`Id`
 

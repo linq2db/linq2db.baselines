@@ -8,7 +8,14 @@ CREATE TABLE [tempdb]..[#temp_table1]
 	PRIMARY KEY CLUSTERED ([ID])
 )
 
-INSERT BULK [tempdb]..[#temp_table1](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#temp_table1]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,2
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -75,7 +82,14 @@ VALUES
 	@Value
 )
 
-INSERT BULK [tempdb]..[#temp_table1](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [tempdb]..[#temp_table1]
+(
+	[ID],
+	[Value]
+)
+SELECT 4,5
 
 -- SqlServer.2005.MS SqlServer.2005
 

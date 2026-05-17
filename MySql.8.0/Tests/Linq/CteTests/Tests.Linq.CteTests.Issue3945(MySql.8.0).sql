@@ -18,7 +18,7 @@ AS
 )
 SELECT
 	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',
-	Concat(`parent`.`Label`, '/', `child`.`Label`)
+	CONCAT(Coalesce(`parent`.`Label`, ''), '/', Coalesce(`child`.`Label`, ''))
 FROM
 	`CTE` `child`
 		INNER JOIN `TestFolder` `parent` ON `child`.`ParentId` = `parent`.`Id`

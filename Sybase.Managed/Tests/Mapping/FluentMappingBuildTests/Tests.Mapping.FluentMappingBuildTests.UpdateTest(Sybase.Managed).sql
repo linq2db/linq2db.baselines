@@ -1,14 +1,14 @@
 ﻿-- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NULL)
+IF (OBJECT_ID(N'FluentTemp_Update') IS NULL)
 	EXECUTE('
-		CREATE TABLE [FluentTemp]
+		CREATE TABLE [FluentTemp_Update]
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
 			[LastName] NVarChar(20)     NULL,
 
-			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
+			CONSTRAINT [PK_FluentTemp_Update] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 
@@ -20,7 +20,7 @@ SET     @Name = 'John'
 DECLARE @LastName UniVarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO [FluentTemp]
+INSERT INTO [FluentTemp_Update]
 (
 	[ID],
 	[Value],
@@ -40,15 +40,15 @@ DECLARE @LastName UniVarChar(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	[FluentTemp]
+	[FluentTemp_Update]
 SET
 	[Value] = @Name,
 	[LastName] = @LastName
 WHERE
-	[FluentTemp].[ID] = 1
+	[FluentTemp_Update].[ID] = 1
 
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
-	DROP TABLE [FluentTemp]
+IF (OBJECT_ID(N'FluentTemp_Update') IS NOT NULL)
+	DROP TABLE [FluentTemp_Update]
 

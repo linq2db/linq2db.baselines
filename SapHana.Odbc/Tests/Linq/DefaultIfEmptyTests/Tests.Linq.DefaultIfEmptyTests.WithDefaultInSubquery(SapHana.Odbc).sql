@@ -1,7 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	(
+	Coalesce((
 		SELECT
 			SUM(CASE
 				WHEN "d"."ParentID" IS NOT NULL THEN "d"."ParentID"
@@ -14,7 +14,7 @@ SELECT
 FROM DUMMY
 			) "t1"
 				LEFT JOIN "Child" "d" ON "p"."ParentID" = "d"."ParentID"
-	)
+	), 0)
 FROM
 	"Parent" "p"
 

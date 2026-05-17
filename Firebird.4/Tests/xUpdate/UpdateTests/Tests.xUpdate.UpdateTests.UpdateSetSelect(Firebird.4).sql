@@ -12,21 +12,12 @@ UPDATE
 SET
 	"ParentID" = (
 		SELECT
-			(
-				SELECT
-					"c_3"."ParentID"
-				FROM
-					"Child" "c_3"
-				WHERE
-					"c_3"."ChildID" = 11
-			) + 1000
+			"c_2"."ParentID"
 		FROM
-			"Parent" "p_1"
-				INNER JOIN "Child" "c_2" ON "p_1"."ParentID" = "c_2"."ParentID"
+			"Child" "c_2"
 		WHERE
-			"p_1"."ParentID" = 1 AND "Parent"."ParentID" = "p_1"."ParentID" AND
-			("Parent"."Value1" = "p_1"."Value1" OR "Parent"."Value1" IS NULL AND "p_1"."Value1" IS NULL)
-	)
+			"c_2"."ChildID" = 11
+	) + 1000
 WHERE
 	EXISTS(
 		SELECT

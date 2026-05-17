@@ -1,4 +1,11 @@
-﻿INSERT BULK [TrimTestTable](ID, Data)
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [TrimTestTable]
+(
+	[ID],
+	[Data]
+)
+SELECT 1,N'***OOO***'
 
 -- SqlServer.2005.MS SqlServer.2005
 

@@ -3,13 +3,13 @@
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_UpdateAsync"
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
 			"LastName" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_UpdateAsync" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -22,7 +22,7 @@ SET     @Name = 'John'
 DECLARE @LastName VarChar(3) -- String
 SET     @LastName = 'Doe'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_UpdateAsync"
 (
 	ID,
 	"Value",
@@ -42,7 +42,7 @@ DECLARE @LastName VarChar(4) -- String
 SET     @LastName = 'Dory'
 
 UPDATE
-	"FluentTemp" "t"
+	"FluentTemp_UpdateAsync" "t"
 SET
 	"Value" = CAST(@Name AS NVarChar(7)),
 	"LastName" = CAST(@LastName AS NVarChar(4))
@@ -53,6 +53,6 @@ WHERE
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_UpdateAsync"';
 END
 

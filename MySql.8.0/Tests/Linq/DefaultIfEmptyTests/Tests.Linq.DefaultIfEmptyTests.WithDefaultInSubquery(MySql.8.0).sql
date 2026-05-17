@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t2`.`Sum_1`
+	Coalesce(`t2`.`Sum_1`, 0)
 FROM
 	`Parent` `p`
 		LEFT JOIN LATERAL (

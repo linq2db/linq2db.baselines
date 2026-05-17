@@ -8,7 +8,14 @@ CREATE TABLE [temp_table_1]
 	CONSTRAINT [PK_temp_table_1] PRIMARY KEY CLUSTERED ([ID])
 )
 
-INSERT BULK [temp_table_1](ID, Value)
+-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [temp_table_1]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,N'Value'
 
 -- SqlServer.2005.MS SqlServer.2005
 

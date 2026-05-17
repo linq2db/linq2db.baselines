@@ -19,7 +19,7 @@ FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.4 Firebird4
 DECLARE @dt TimeStamp -- DateTime
-SET     @dt = CAST('2010-12-14 05:00:07.425' AS timestamp)
+SET     @dt = TIMESTAMP '2010-12-14 05:00:07.4250'
 
 UPDATE
 	"LinqDataTypes" "t"
@@ -49,7 +49,7 @@ FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.4 Firebird4
 DECLARE @pdt TimeStamp -- DateTime
-SET     @pdt = CAST('2001-01-11 01:11:21.100' AS timestamp)
+SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.1000'
 
 UPDATE
 	"LinqDataTypes" "t"

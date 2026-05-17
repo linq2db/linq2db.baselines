@@ -4,16 +4,16 @@ SELECT
 	`p`.`ParentID`,
 	`p`.`ParentID`,
 	`p`.`Value1`,
-	NULL,
-	NULL,
-	NULL
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED)
 FROM
 	`Parent` `p`
 UNION
 SELECT
 	Coalesce(`t1`.`Value1`, 0),
-	NULL,
-	NULL,
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
 	`t1`.`ParentID`,
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

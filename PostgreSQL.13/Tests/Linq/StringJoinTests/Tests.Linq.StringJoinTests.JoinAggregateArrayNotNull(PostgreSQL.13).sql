@@ -4,7 +4,7 @@ SELECT
 	CONCAT_WS(', ', t."NullableValue", t."NotNullableValue", t."VarcharValue", t."NVarcharValue"),
 	Coalesce((
 		SELECT
-			Coalesce(STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item), '')
+			STRING_AGG(DISTINCT t1.item, ', ' ORDER BY t1.item)
 		FROM
 			(VALUES
 				(t."NullableValue"), (t."NotNullableValue"),

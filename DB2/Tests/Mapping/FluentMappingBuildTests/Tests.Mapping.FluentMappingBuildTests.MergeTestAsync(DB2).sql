@@ -2,7 +2,7 @@
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 END
 
 -- DB2 DB2.LUW DB2LUW
@@ -10,12 +10,12 @@ END
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
 	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentTemp"
+		CREATE TABLE "FluentTemp_Merge"
 		(
 			ID     Int          NOT NULL,
 			"Name" NVarChar(20)     NULL,
 
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			CONSTRAINT "PK_FluentTemp_Merge" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -26,7 +26,7 @@ SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 
-INSERT INTO "FluentTemp"
+INSERT INTO "FluentTemp_Merge"
 (
 	ID,
 	"Name"
@@ -39,7 +39,7 @@ VALUES
 
 -- DB2 DB2.LUW DB2LUW
 
-MERGE INTO "FluentTemp" "Target"
+MERGE INTO "FluentTemp_Merge" "Target"
 USING (VALUES
 	(1,'John II')
 ) "Source"
@@ -70,6 +70,6 @@ VALUES
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
+	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Merge"';
 END
 
