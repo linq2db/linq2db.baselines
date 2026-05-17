@@ -1,0 +1,18 @@
+﻿-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	IIF([t].[Value1] IS NULL, '', [t].[Value1]) + IIF([t].[Value2] IS NULL, '', [t].[Value2])
+FROM
+	[StringConcatNullEntity] [t]
+ORDER BY
+	[t].[ID]
+
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	[t1].[ID],
+	[t1].[Value1],
+	[t1].[Value2]
+FROM
+	[StringConcatNullEntity] [t1]
+
