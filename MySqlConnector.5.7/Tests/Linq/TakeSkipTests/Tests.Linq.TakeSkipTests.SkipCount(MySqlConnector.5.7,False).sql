@@ -1,0 +1,13 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as `c1`
+		FROM
+			`Child` `t1`
+		LIMIT 2, 9223372036854775807
+	) `t2`
+

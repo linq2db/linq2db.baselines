@@ -1,0 +1,14 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`p1`.`Value1`,
+	CAST(NULL AS SIGNED)
+FROM
+	`Parent` `p1`
+UNION
+SELECT
+	`p2`.`Value1`,
+	`p2`.`ParentID`
+FROM
+	`Parent` `p2`
+

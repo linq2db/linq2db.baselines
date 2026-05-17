@@ -1,0 +1,17 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	(
+		SELECT
+			SUM(`i`.`IntValueN`)
+		FROM
+			`Inner` `i`
+		WHERE
+			`i`.`Group` = `o`.`Group`
+	)
+FROM
+	`Outer` `o`
+WHERE
+	`o`.`Id` = 2
+LIMIT 1
+
