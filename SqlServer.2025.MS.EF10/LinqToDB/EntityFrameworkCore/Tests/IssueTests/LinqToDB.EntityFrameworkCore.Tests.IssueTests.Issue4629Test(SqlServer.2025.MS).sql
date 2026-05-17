@@ -1,0 +1,35 @@
+﻿-- SqlServer.2025
+DECLARE @take Int -- Int32
+SET     @take = 10
+
+SELECT
+	COUNT(*) OVER(),
+	[id].[Id]
+FROM
+	(
+		SELECT TOP (@take)
+			[p].[Id]
+		FROM
+			[Issue4629Posts] [p]
+		WHERE
+			Coalesce((
+				SELECT
+					SUM([a_Tags].[Weight])
+				FROM
+					[Issue4629Tags] [a_Tags]
+				WHERE
+					[p].[Id] = [a_Tags].[PostId] AND [a_Tags].[Weight] > 1
+			), 0) > 5
+		ORDER BY
+			Coalesce((
+				SELECT
+					SUM([a_Tags_1].[Weight])
+				FROM
+					[Issue4629Tags] [a_Tags_1]
+				WHERE
+					[p].[Id] = [a_Tags_1].[PostId]
+			), 0)
+	) [id]
+
+
+
