@@ -1,0 +1,17 @@
+﻿-- SqlServer.2012
+
+SELECT
+	[t].[Str],
+	LEN([t].[Str] + N'.') - 1,
+	N'original-' + Coalesce([t].[Str], N'')
+FROM
+	[TestLengthModel] [t]
+
+-- SqlServer.2012
+
+SELECT
+	[t1].[Id],
+	[t1].[Str]
+FROM
+	[TestLengthModel] [t1]
+
