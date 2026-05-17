@@ -1,0 +1,9 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+INSERT INTO [Issue1107TB]
+(
+	[Id],
+	[TestDate]
+)
+SELECT 0,CAST('2018-01-01T00:00:00.000' AS DATETIME)
+
