@@ -1,0 +1,25 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+UPDATE
+	"TableWithConverterValue" "x"
+SET
+	"Test1" = CASE
+		WHEN ("x"."Id" > 0) THEN 'X'
+		ELSE NULL
+	END
+WHERE
+	"x"."Id" = 1
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."Id",
+	"x"."NoConversion",
+	"x"."Test1",
+	"x"."Test2"
+FROM
+	"TableWithConverterValue" "x"
+WHERE
+	"x"."Id" = 1
+FETCH NEXT 2 ROWS ONLY
+
