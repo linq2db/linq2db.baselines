@@ -1,0 +1,25 @@
+﻿-- ClickHouse.Driver ClickHouse
+
+SELECT
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
+FROM
+	(
+		SELECT DISTINCT
+			a_Parent1.ParentID as ParentID
+		FROM
+			Child t1
+				INNER JOIN Parent a_Parent1 ON t1.ParentID = a_Parent1.ParentID
+	) m_1
+		CROSS JOIN Child d
+		INNER JOIN Parent a_Parent1_1 ON d.ParentID = a_Parent1_1.ParentID AND m_1.ParentID = a_Parent1_1.ParentID
+
+-- ClickHouse.Driver ClickHouse
+
+SELECT DISTINCT
+	a_Parent1.ParentID
+FROM
+	Child t1
+		INNER JOIN Parent a_Parent1 ON t1.ParentID = a_Parent1.ParentID
+
