@@ -1,0 +1,39 @@
+﻿-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
+
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
+	CREATE TABLE [TempTable]
+	(
+		[ID] Int NOT NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
+	)
+
+-- SqlServer.2012
+
+INSERT INTO [TempTable]
+(
+	[ID]
+)
+SELECT
+	[p].[ParentID]
+FROM
+	[Parent] [p]
+
+-- SqlServer.2012
+
+SELECT
+	[t].[ID]
+FROM
+	[Parent] [p]
+		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
+
+-- SqlServer.2012
+
+IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
+	DROP TABLE [TempTable]
+

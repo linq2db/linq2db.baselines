@@ -1,0 +1,10 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`pp`.`PersonID`,
+	CONCAT('  ', `pp`.`FirstName`, ' ')
+FROM
+	`Person` `pp`
+WHERE
+	`pp`.`PersonID` = 1 AND Trim(CONCAT('  ', `pp`.`FirstName`, ' ')) = 'John'
+

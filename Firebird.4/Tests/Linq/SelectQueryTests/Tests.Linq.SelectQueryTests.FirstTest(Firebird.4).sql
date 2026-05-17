@@ -1,0 +1,7 @@
+﻿-- Firebird.4 Firebird4
+
+SELECT
+	CURRENT_TIMESTAMP
+FROM rdb$database
+FETCH NEXT 1 ROWS ONLY
+

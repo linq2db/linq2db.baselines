@@ -1,0 +1,62 @@
+﻿-- Firebird.5 Firebird4
+
+SELECT
+	"t1"."Key_1",
+	Coalesce((
+		SELECT
+			LIST(DISTINCT Coalesce("t2"."NullableValue", ''), ', ')
+		FROM
+			(
+				SELECT
+					"t"."NullableValue"
+				FROM
+					"SampleClass" "t"
+				WHERE
+					"t1"."Key_1" = "t"."Id" AND "t"."NullableValue" IS NOT NULL
+				ORDER BY
+					"t"."NullableValue",
+					"t"."Id"
+			) "t2"
+	), ''),
+	Coalesce((
+		SELECT
+			LIST(DISTINCT "t4"."NotNullableOrderedNulls", ', ')
+		FROM
+			(
+				SELECT
+					"t3"."NotNullableOrderedNulls"
+				FROM
+					(
+						SELECT
+							Coalesce("x"."NullableValue", '') as "NotNullableOrderedNulls"
+						FROM
+							"SampleClass" "x"
+						WHERE
+							"t1"."Key_1" = "x"."Id"
+					) "t3"
+				ORDER BY
+					"t3"."NotNullableOrderedNulls"
+			) "t4"
+	), '')
+FROM
+	(
+		SELECT DISTINCT
+			"g_1"."Id" as "Key_1"
+		FROM
+			"SampleClass" "g_1"
+	) "t1"
+ORDER BY
+	"t1"."Key_1"
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"t1".PK,
+	"t1"."Id",
+	"t1"."NullableValue",
+	"t1"."NotNullableValue",
+	"t1"."VarcharValue",
+	"t1"."NVarcharValue"
+FROM
+	"SampleClass" "t1"
+

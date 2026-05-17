@@ -1,0 +1,14 @@
+﻿-- DuckDB
+
+SELECT
+	c_1.ParentID,
+	CAST(NULL AS INTEGER)
+FROM
+	Child c_1
+UNION ALL
+SELECT
+	CAST(NULL AS INTEGER),
+	c_2.Value1
+FROM
+	Parent c_2
+

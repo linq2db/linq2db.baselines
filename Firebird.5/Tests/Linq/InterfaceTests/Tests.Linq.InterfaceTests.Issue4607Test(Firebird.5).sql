@@ -1,0 +1,25 @@
+﻿-- Firebird.5 Firebird4
+
+INSERT INTO "SomeTable"
+(
+	"Id",
+	"ClassProp",
+	"Interface"
+)
+VALUES
+(
+	1,
+	TRUE,
+	FALSE
+)
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"t1"."Id",
+	"t1"."ClassProp",
+	"t1"."Interface"
+FROM
+	"SomeTable" "t1"
+FETCH NEXT 2 ROWS ONLY
+

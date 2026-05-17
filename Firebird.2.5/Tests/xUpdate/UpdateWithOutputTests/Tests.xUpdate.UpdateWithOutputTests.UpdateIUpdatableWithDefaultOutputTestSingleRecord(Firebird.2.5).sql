@@ -1,0 +1,17 @@
+﻿-- Firebird.2.5 Firebird
+
+UPDATE
+	"TableWithData" "s"
+SET
+	"Value" = "s"."Value" + 1,
+	"ValueStr" = Coalesce("s"."ValueStr", '') || 'Upd'
+WHERE
+	"s"."Id" = 3
+RETURNING
+	OLD."Id",
+	OLD."Value",
+	OLD."ValueStr",
+	NEW."Id",
+	NEW."Value",
+	NEW."ValueStr"
+

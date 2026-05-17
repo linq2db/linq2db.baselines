@@ -1,0 +1,9 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT
+	i."PersonID"
+FROM
+	"Person" i
+WHERE
+	i."PersonID" IN (1, 2, 3)
+

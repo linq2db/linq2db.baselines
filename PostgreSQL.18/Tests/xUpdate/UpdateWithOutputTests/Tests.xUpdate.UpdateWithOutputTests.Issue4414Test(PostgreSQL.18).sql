@@ -1,0 +1,28 @@
+﻿-- PostgreSQL.18 PostgreSQL
+DECLARE @take Integer -- Int32
+SET     @take = 3
+
+UPDATE
+	"Issue4193Person"
+SET
+	"Name" = 'new_name'
+FROM
+	(
+		SELECT
+			x."Name",
+			x."EmployeeId",
+			x."Id"
+		FROM
+			"Issue4193Person" x
+		WHERE
+			x."EmployeeId" = 1
+		ORDER BY
+			x."EmployeeId"
+		LIMIT :take
+	) t1
+WHERE
+	"Issue4193Person"."Id" = t1."Id"
+RETURNING
+	NEW."EmployeeId",
+	NEW."Name"
+

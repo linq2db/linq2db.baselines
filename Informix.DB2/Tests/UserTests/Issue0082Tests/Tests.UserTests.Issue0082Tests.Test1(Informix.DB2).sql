@@ -1,0 +1,62 @@
+﻿-- Informix.DB2 Informix
+
+SELECT
+	t1.ParentID,
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			Child od
+		WHERE
+			t1.ParentID = od.ParentID
+	),
+	Nvl((
+		SELECT
+			SUM(od_1.ParentID)
+		FROM
+			Child od_1
+		WHERE
+			t1.ParentID = od_1.ParentID
+	), 0)
+FROM
+	Parent t1
+
+-- Informix.DB2 Informix
+
+SELECT
+	COUNT(*)
+FROM
+	Parent t1
+
+-- Informix.DB2 Informix
+
+SELECT
+	x_1.ParentID,
+	x_1.CountResult,
+	x_1.SumResult
+FROM
+	(
+		SELECT
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					Child od
+				WHERE
+					x.ParentID = od.ParentID
+			) as CountResult,
+			x.ParentID,
+			Nvl((
+				SELECT
+					SUM(od_1.ParentID)
+				FROM
+					Child od_1
+				WHERE
+					x.ParentID = od_1.ParentID
+			), 0) as SumResult
+		FROM
+			Parent x
+	) x_1
+WHERE
+	x_1.CountResult > 0
+

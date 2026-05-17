@@ -1,0 +1,59 @@
+﻿-- Informix.DB2 Informix
+
+INSERT INTO TrimTestTable
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	1,
+	'***OOO***'
+)
+
+-- Informix.DB2 Informix
+
+INSERT INTO TrimTestTable
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	2,
+	'***HHH***'
+)
+
+-- Informix.DB2 Informix
+
+INSERT INTO TrimTestTable
+(
+	ID,
+	"Data"
+)
+VALUES
+(
+	3,
+	'***VVV***'
+)
+
+-- Informix.DB2 Informix
+
+SELECT
+	r.ID,
+	r."Data"
+FROM
+	TrimTestTable r
+ORDER BY
+	r.ID
+
+-- Informix.DB2 Informix
+
+SELECT
+	r.ID,
+	r."Data"
+FROM
+	TrimTestTable r
+ORDER BY
+	r.ID
+

@@ -1,0 +1,7 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT DISTINCT
+	Extract(year from `g_1`.`DateTimeValue`)
+FROM
+	`LinqDataTypes` `g_1`
+

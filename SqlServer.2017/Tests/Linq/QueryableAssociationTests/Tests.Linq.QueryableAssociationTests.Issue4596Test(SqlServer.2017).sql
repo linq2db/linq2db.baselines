@@ -1,0 +1,34 @@
+﻿-- SqlServer.2017
+
+SELECT
+	[m_1].[Id],
+	[m_1].[C1],
+	[d].[Id],
+	[d].[FormId],
+	[d].[OrderIndex],
+	[d].[Name1],
+	[d].[Name2],
+	[d].[Name3]
+FROM
+	(
+		SELECT TOP (1)
+			[t1].[Id],
+			[t1].[C1]
+		FROM
+			[Issue4596Form] [t1]
+	) [m_1]
+		INNER JOIN [Issue4596Item] [d] ON [d].[FormId] = [m_1].[Id]
+ORDER BY
+	IIF([m_1].[C1] = N'T', [d].[OrderIndex], 0),
+	IIF([m_1].[C1] <> N'T', [d].[Name1], N''),
+	IIF([m_1].[C1] <> N'T', [d].[Name2], N''),
+	IIF([m_1].[C1] <> N'T', [d].[Name3], N'')
+
+-- SqlServer.2017
+
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[C1]
+FROM
+	[Issue4596Form] [t1]
+

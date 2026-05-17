@@ -1,0 +1,38 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @Id Int32
+SET     @Id = 100
+DECLARE @CharColumn String -- AnsiStringFixedLength
+SET     @CharColumn = NULL
+DECLARE @NCharColumn String -- StringFixedLength
+SET     @NCharColumn = NULL
+DECLARE @VarCharColumn VarChar -- AnsiString
+SET     @VarCharColumn = NULL
+DECLARE @NVarCharColumn VarChar -- String
+SET     @NVarCharColumn = NULL
+
+INSERT INTO `StringTrimTable`
+(
+	`Id`,
+	`CharColumn`,
+	`NCharColumn`,
+	`VarCharColumn`,
+	`NVarCharColumn`
+)
+VALUES
+(
+	@Id,
+	@CharColumn,
+	@NCharColumn,
+	@VarCharColumn,
+	@NVarCharColumn
+)
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t`.`VarCharColumn`
+FROM
+	`StringTrimTable` `t`
+WHERE
+	`t`.`Id` = 100
+

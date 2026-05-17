@@ -1,0 +1,25 @@
+﻿-- Firebird.2.5 Firebird
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Value Integer -- Int32
+SET     @Value = 200
+DECLARE @ValueStr VarChar(8) -- String
+SET     @ValueStr = 'SomeStr2'
+
+INSERT INTO "TableWithDataAndSchema"
+(
+	"Id",
+	"Value",
+	"ValueStr"
+)
+VALUES
+(
+	CAST(@Id AS Int),
+	CAST(@Value AS Int),
+	CAST(@ValueStr AS VARCHAR(8))
+)
+RETURNING
+	"TableWithDataAndSchema"."Id",
+	"TableWithDataAndSchema"."Value",
+	"TableWithDataAndSchema"."ValueStr"
+

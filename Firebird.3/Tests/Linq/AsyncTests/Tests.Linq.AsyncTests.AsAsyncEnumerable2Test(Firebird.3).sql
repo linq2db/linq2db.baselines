@@ -1,0 +1,10 @@
+﻿-- Firebird.3 Firebird3
+
+SELECT
+	"x"."ParentID",
+	"x"."Value1"
+FROM
+	"Parent" "x"
+WHERE
+	"x"."ParentID" > 1
+

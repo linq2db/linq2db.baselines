@@ -1,0 +1,30 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`t1`.`ID`,
+	`t1`.`MoneyValue`,
+	`t1`.`DateTimeValue`,
+	`t1`.`DateTimeValue2`,
+	`t1`.`BoolValue`,
+	`t1`.`GuidValue`,
+	`t1`.`SmallIntValue`,
+	`t1`.`IntValue`,
+	`t1`.`BigIntValue`,
+	`t1`.`StringValue`
+FROM
+	`LinqDataTypes` `t1`
+UNION ALL
+SELECT
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS DECIMAL(29, 10)),
+	CAST(NULL AS DATETIME),
+	CAST(NULL AS DATETIME),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(36)),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS SIGNED),
+	CAST(NULL AS CHAR(255))
+FROM
+	`LinqDataTypes` `d`
+

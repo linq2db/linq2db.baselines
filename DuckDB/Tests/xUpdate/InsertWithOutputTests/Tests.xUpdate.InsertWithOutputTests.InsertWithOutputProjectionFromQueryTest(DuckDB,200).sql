@@ -1,0 +1,39 @@
+﻿-- DuckDB
+DECLARE $param  -- Int32
+SET     $param = 200
+
+INSERT INTO DestinationTable
+(
+	Id,
+	"Value",
+	ValueStr
+)
+SELECT
+	s.Id + 100 + $param,
+	s."Value" + 100,
+	Coalesce(s.ValueStr, '') || '100'
+FROM
+	TableWithData s
+WHERE
+	s.Id > 3
+RETURNING
+	DestinationTable.Id + 1,
+	Coalesce(DestinationTable.ValueStr, '') || '1'
+
+-- DuckDB
+
+SELECT
+	t1.Id,
+	t1."Value",
+	t1.ValueStr
+FROM
+	DestinationTable t1
+
+-- DuckDB
+
+SELECT
+	t.Id + 1,
+	Coalesce(t.ValueStr, '') || '1'
+FROM
+	DestinationTable t
+

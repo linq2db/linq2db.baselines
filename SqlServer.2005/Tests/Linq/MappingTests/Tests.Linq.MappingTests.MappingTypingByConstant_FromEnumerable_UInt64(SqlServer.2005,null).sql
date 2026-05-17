@@ -1,0 +1,20 @@
+﻿-- SqlServer.2005
+
+SELECT
+	[arg].[Id],
+	[arg].[Value]
+FROM
+	[Person] [entity]
+		INNER JOIN (
+			SELECT 1 AS [Id], CAST(NULL AS Decimal) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
+
+-- SqlServer.2005
+
+SELECT
+	[arg].[Id],
+	[arg].[Value]
+FROM
+	[Person] [entity]
+		INNER JOIN (
+			SELECT 1 AS [Id], CAST(2147483648 AS Decimal) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
+
