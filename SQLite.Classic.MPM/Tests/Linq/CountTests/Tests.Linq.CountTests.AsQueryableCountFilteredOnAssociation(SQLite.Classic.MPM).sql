@@ -1,0 +1,46 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[p].[ParentID],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ChildID] > 20
+	),
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children_1]
+		WHERE
+			[p].[ParentID] = [a_Children_1].[ParentID] AND [a_Children_1].[ChildID] > 20
+	)
+FROM
+	[Parent] [p]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			[Parent] [t1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+
