@@ -1,0 +1,7 @@
+﻿-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Drop''ApostropheTest')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "Drop''ApostropheTest"';
+END
+

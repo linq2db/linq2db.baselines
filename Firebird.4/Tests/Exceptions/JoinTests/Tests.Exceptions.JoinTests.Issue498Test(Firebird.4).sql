@@ -1,0 +1,16 @@
+﻿-- Firebird.4 Firebird4
+
+SELECT
+	"x"."ParentID"
+FROM
+	"Parent" "x"
+		INNER JOIN "Child" "y" ON "x"."ParentID" = "y"."ParentID"
+
+-- Firebird.4 Firebird4
+
+SELECT DISTINCT
+	"g_1"."ParentID"
+FROM
+	"Parent" "g_1"
+		INNER JOIN "Child" "y" ON "g_1"."ParentID" = "y"."ParentID"
+
