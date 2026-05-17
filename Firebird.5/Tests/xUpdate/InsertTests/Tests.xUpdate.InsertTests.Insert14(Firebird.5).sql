@@ -1,0 +1,45 @@
+﻿-- Firebird.5 Firebird4
+
+DELETE FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" STARTING WITH 'Insert14'
+
+-- Firebird.5 Firebird4
+
+INSERT INTO "Person"
+(
+	"FirstName",
+	"LastName",
+	"Gender"
+)
+VALUES
+(
+	'Insert14' || Coalesce((
+		SELECT
+			"p"."FirstName"
+		FROM
+			"Person" "p"
+		WHERE
+			"p"."PersonID" = 1
+	), ''),
+	'Shepard',
+	'M'
+)
+
+-- Firebird.5 Firebird4
+
+SELECT
+	COUNT(*)
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" STARTING WITH 'Insert14'
+
+-- Firebird.5 Firebird4
+
+DELETE FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" STARTING WITH 'Insert14'
+
