@@ -1,0 +1,7 @@
+﻿-- SqlServer.2017.MS SqlServer.2017
+
+SELECT DISTINCT
+	MONTH([t1].[DateTimeValue])
+FROM
+	[LinqDataTypes] [t1]
+
