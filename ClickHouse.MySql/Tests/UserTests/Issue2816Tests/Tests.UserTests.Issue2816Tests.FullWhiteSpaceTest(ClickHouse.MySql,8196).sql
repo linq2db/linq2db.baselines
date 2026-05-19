@@ -6,6 +6,6 @@ SELECT
 FROM
 	Issue2816Table p
 WHERE
-	NOT empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
+	NOT empty(replaceRegexpAll(Coalesce(p.Text, ''), '	|
 |||| || | | | | | | | | | | | | | | | |　', ''))
 
