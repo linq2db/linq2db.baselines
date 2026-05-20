@@ -4,14 +4,7 @@ SELECT
 	x.PersonID + y.item
 FROM
 	Person x
-		CROSS JOIN (
-			SELECT 0 AS item
-			UNION ALL
-			SELECT 1
-			UNION ALL
-			SELECT 2
-			UNION ALL
-			SELECT 3) y
+		CROSS JOIN VALUES('item Nullable(Int32)', (0), (1), (2), (3)) y
 
 -- ClickHouse.MySql ClickHouse
 

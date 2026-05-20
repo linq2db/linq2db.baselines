@@ -9,10 +9,7 @@ SELECT
 	t1.Id,
 	t1.Value
 FROM
-	(
-		SELECT 3 AS Id, 'Janet' AS Value
-		UNION ALL
-		SELECT 4, 'Doe') t1
+	VALUES('Id Nullable(Int32), Value Nullable(String)', (3, 'Janet'), (4, 'Doe')) t1
 		LEFT JOIN TableToInsert t ON t.Id = t1.Id
 WHERE
 	t.Id IS NULL
@@ -28,10 +25,7 @@ SELECT
 	t1.Id,
 	t1.Value
 FROM
-	(
-		SELECT 3 AS Id, 'Janet' AS Value
-		UNION ALL
-		SELECT 4, 'Doe') t1
+	VALUES('Id Nullable(Int32), Value Nullable(String)', (3, 'Janet'), (4, 'Doe')) t1
 		LEFT JOIN TableToInsert t ON t.Id = t1.Id
 WHERE
 	t.Id IS NULL

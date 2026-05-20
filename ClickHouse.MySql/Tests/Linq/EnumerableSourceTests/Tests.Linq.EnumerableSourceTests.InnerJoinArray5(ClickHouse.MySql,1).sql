@@ -7,13 +7,6 @@ SELECT
 	p.MiddleName,
 	p.Gender
 FROM
-	(
-		SELECT 'Janet' AS item
-		UNION ALL
-		SELECT 'Doe'
-		UNION ALL
-		SELECT 'John'
-		UNION ALL
-		SELECT 'Doe') n
+	VALUES('item Nullable(String)', ('Janet'), ('Doe'), ('John'), ('Doe')) n
 		INNER JOIN Person p ON n.item = p.LastName
 
