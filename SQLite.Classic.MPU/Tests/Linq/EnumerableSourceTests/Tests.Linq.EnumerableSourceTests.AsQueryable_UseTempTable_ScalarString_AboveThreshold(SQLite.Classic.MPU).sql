@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[T_0d49c8a3d6aa]
+CREATE TEMPORARY TABLE temp.[T_eb1ae98dcf2f]
 (
 	[item] NVarChar(255)     NULL
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO temp.[T_0d49c8a3d6aa]
+INSERT INTO temp.[T_eb1ae98dcf2f]
 (
 	[item]
 )
@@ -28,7 +28,7 @@ VALUES
 SELECT
 	[t1].[item]
 FROM
-	temp.[T_0d49c8a3d6aa] [t1]
+	temp.[T_eb1ae98dcf2f] [t1]
 WHERE
 	[t1].[item] = 'alpha' OR [t1].[item] = 'iota' OR [t1].[item] = 'zeta'
 ORDER BY
@@ -36,5 +36,5 @@ ORDER BY
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[T_0d49c8a3d6aa]
+DROP TABLE IF EXISTS temp.[T_eb1ae98dcf2f]
 
