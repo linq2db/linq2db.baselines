@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[T_21c36ccd6c4f]
+CREATE TEMPORARY TABLE temp.[T_21ff77b185e4]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Data] NVarChar(255)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[T_21c36ccd6c4f]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO temp.[T_21c36ccd6c4f]
+INSERT INTO temp.[T_21ff77b185e4]
 (
 	[Id],
 	[Data]
@@ -41,8 +41,8 @@ SELECT
 	[t1].[Id],
 	[b].[Id]
 FROM
-	temp.[T_21c36ccd6c4f] [t1],
-	temp.[T_21c36ccd6c4f] [b]
+	temp.[T_21ff77b185e4] [t1],
+	temp.[T_21ff77b185e4] [b]
 WHERE
 	[t1].[Id] < [b].[Id]
 ORDER BY
@@ -51,5 +51,5 @@ ORDER BY
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[T_21c36ccd6c4f]
+DROP TABLE IF EXISTS temp.[T_21ff77b185e4]
 
