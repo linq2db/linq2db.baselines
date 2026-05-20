@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE temp.[T_cf89f83ad77d]
+CREATE TEMPORARY TABLE temp.[T_eeff3d5c5acf]
 (
 	[item] NVarChar(255)     NULL
 )
 
 -- SQLite.MS SQLite
 
-INSERT INTO temp.[T_cf89f83ad77d]
+INSERT INTO temp.[T_eeff3d5c5acf]
 (
 	[item]
 )
@@ -28,7 +28,7 @@ VALUES
 SELECT
 	[t1].[item]
 FROM
-	temp.[T_cf89f83ad77d] [t1]
+	temp.[T_eeff3d5c5acf] [t1]
 WHERE
 	[t1].[item] = 'alpha' OR [t1].[item] = 'iota' OR [t1].[item] = 'zeta'
 ORDER BY
@@ -36,5 +36,5 @@ ORDER BY
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS temp.[T_cf89f83ad77d]
+DROP TABLE IF EXISTS temp.[T_eeff3d5c5acf]
 
