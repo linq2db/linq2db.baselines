@@ -12,9 +12,6 @@ WHERE
 			t1.Item1,
 			t1.Item2
 		FROM
-			(
-				SELECT 'US' AS Item1, 'CA' AS Item2
-				UNION ALL
-				SELECT 'US', 'NY') t1
+			VALUES('Item1 Nullable(String), Item2 Nullable(String)', ('US', 'CA'), ('US', 'NY')) t1
 	)
 

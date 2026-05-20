@@ -4,14 +4,7 @@ SELECT
 	y.item
 FROM
 	Person x
-		CROSS JOIN (
-			SELECT 'M' AS item
-			UNION ALL
-			SELECT 'F'
-			UNION ALL
-			SELECT 'U'
-			UNION ALL
-			SELECT 'O') y
+		CROSS JOIN VALUES('item Nullable(FixedString(1))', ('M'), ('F'), ('U'), ('O')) y
 
 -- ClickHouse.Driver ClickHouse
 

@@ -7,10 +7,7 @@ SELECT
 	x.MiddleName,
 	x.Gender
 FROM
-	(
-		SELECT 1 AS Patient_PersonID, 'Janet' AS FirstName, 2 AS ID, NULL AS LastName, NULL AS MiddleName, 'M' AS Gender
-		UNION ALL
-		SELECT NULL, 'Doe', 3, NULL, NULL, 'M') x
+	VALUES('Patient_PersonID Nullable(Int32), FirstName Nullable(String), ID Nullable(Int32), LastName Nullable(String), MiddleName Nullable(String), Gender Nullable(FixedString(1))', (1, 'Janet', 2, NULL, NULL, 'M'), (NULL, 'Doe', 3, NULL, NULL, 'M')) x
 WHERE
 	x.Patient_PersonID = 1
 

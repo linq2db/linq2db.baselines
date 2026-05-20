@@ -8,8 +8,5 @@ SELECT
 	p.Gender
 FROM
 	Person p
-		INNER JOIN (
-			SELECT 1 AS ID
-			UNION ALL
-			SELECT 2) n ON p.PersonID = n.ID
+		INNER JOIN VALUES('ID Nullable(Int32)', (1), (2)) n ON p.PersonID = n.ID
 

@@ -7,8 +7,5 @@ SELECT
 	t1.MiddleName,
 	t1.Gender
 FROM
-	(
-		SELECT 'Janet' AS FirstName, 3 AS ID, NULL AS LastName, NULL AS MiddleName, 'M' AS Gender
-		UNION ALL
-		SELECT 'Doe', 4, NULL, NULL, 'M') t1
+	VALUES('FirstName Nullable(String), ID Nullable(Int32), LastName Nullable(String), MiddleName Nullable(String), Gender Nullable(FixedString(1))', ('Janet', 3, NULL, NULL, 'M'), ('Doe', 4, NULL, NULL, 'M')) t1
 

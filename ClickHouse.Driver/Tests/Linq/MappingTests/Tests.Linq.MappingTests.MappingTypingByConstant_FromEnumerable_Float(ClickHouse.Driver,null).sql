@@ -5,8 +5,7 @@ SELECT
 	arg.Value
 FROM
 	Person entity
-		INNER JOIN (
-			SELECT 1 AS Id, NULL AS Value) arg ON entity.PersonID = arg.Id
+		INNER JOIN VALUES('Id Nullable(Int32), Value Nullable(Float32)', (1, NULL)) arg ON entity.PersonID = arg.Id
 
 -- ClickHouse.Driver ClickHouse
 
@@ -15,6 +14,5 @@ SELECT
 	arg.Value
 FROM
 	Person entity
-		INNER JOIN (
-			SELECT 1 AS Id, toFloat32(3.14748365E+09) AS Value) arg ON entity.PersonID = arg.Id
+		INNER JOIN VALUES('Id Nullable(Int32), Value Nullable(Float32)', (1, toFloat32(3.14748365E+09))) arg ON entity.PersonID = arg.Id
 

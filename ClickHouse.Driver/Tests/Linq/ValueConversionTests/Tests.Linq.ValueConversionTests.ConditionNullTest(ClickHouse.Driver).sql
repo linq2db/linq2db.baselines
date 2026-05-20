@@ -13,10 +13,7 @@ FROM
 			p.Value1 as Value1
 		FROM
 			Parent p
-				CROSS JOIN (
-					SELECT 0 AS item
-					UNION ALL
-					SELECT 1) i
+				CROSS JOIN VALUES('item Nullable(Int32)', (0), (1)) i
 	) p_1
 WHERE
 	p_1.ID = p_1.Value1 OR p_1.ID IS NULL AND p_1.Value1 IS NULL

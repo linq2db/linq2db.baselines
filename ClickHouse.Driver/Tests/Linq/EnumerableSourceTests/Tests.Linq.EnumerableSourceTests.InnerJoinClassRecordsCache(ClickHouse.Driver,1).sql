@@ -8,10 +8,7 @@ SELECT
 	p.Gender
 FROM
 	Person p
-		INNER JOIN (
-			SELECT 2 AS ID
-			UNION ALL
-			SELECT 3) n ON p.PersonID = n.ID
+		INNER JOIN VALUES('ID Nullable(Int32)', (2), (3)) n ON p.PersonID = n.ID
 
 -- ClickHouse.Driver ClickHouse
 
@@ -23,8 +20,5 @@ SELECT
 	p.Gender
 FROM
 	Person p
-		INNER JOIN (
-			SELECT 4 AS ID
-			UNION ALL
-			SELECT 5) n ON p.PersonID = n.ID
+		INNER JOIN VALUES('ID Nullable(Int32)', (4), (5)) n ON p.PersonID = n.ID
 
