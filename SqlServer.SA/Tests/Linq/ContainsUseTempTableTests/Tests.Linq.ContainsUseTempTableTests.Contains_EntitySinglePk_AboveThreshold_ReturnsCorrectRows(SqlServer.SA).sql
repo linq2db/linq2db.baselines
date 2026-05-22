@@ -1,6 +1,6 @@
 ﻿-- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_20b1508ff3ce]
+CREATE TABLE [tempdb]..[#T_28bc08c09fb3]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#T_20b1508ff3ce]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
-INSERT BULK [tempdb]..[#T_20b1508ff3ce](Id, Name, Tag)
+INSERT BULK [tempdb]..[#T_28bc08c09fb3](Id, Name, Tag)
 
 -- SqlServer.SA SqlServer.2019
 
@@ -24,7 +24,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			[tempdb]..[#T_20b1508ff3ce] [t1]
+			[tempdb]..[#T_28bc08c09fb3] [t1]
 		WHERE
 			[r].[Id] = [t1].[Id]
 	)
@@ -33,5 +33,5 @@ ORDER BY
 
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_20b1508ff3ce]
+DROP TABLE IF EXISTS [tempdb]..[#T_28bc08c09fb3]
 

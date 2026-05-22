@@ -1,20 +1,20 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_4e3073366939]
+CREATE TABLE [tempdb]..[#T_e92b0d8408d3]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_4e3073366939](item)
+INSERT BULK [tempdb]..[#T_e92b0d8408d3](item)
 
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
-	[tempdb]..[#T_4e3073366939] [t1]
+	[tempdb]..[#T_e92b0d8408d3] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_4e3073366939]
+DROP TABLE IF EXISTS [tempdb]..[#T_e92b0d8408d3]
 

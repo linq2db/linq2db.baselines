@@ -1,6 +1,6 @@
 ﻿-- SqlServer.SA SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_efbb2ec758ee]
+CREATE TABLE [tempdb]..[#T_783dbbb2e8f5]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_efbb2ec758ee]
 
 -- SqlServer.SA SqlServer.2019
 
-INSERT INTO [tempdb]..[#T_efbb2ec758ee]
+INSERT INTO [tempdb]..[#T_783dbbb2e8f5]
 (
 	[Id],
 	[Data]
@@ -27,7 +27,7 @@ VALUES
 
 -- SqlServer.SA SqlServer.2019
 
-INSERT INTO [tempdb]..[#T_efbb2ec758ee]
+INSERT INTO [tempdb]..[#T_783dbbb2e8f5]
 (
 	[Id],
 	[Data]
@@ -50,11 +50,11 @@ SELECT
 	[t1].[Id],
 	[t1].[Data]
 FROM
-	[tempdb]..[#T_efbb2ec758ee] [t1]
+	[tempdb]..[#T_783dbbb2e8f5] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_efbb2ec758ee]
+DROP TABLE IF EXISTS [tempdb]..[#T_783dbbb2e8f5]
 
