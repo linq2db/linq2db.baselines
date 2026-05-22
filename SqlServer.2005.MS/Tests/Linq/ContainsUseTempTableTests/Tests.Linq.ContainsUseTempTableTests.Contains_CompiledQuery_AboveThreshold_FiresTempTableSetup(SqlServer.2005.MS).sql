@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [tempdb]..[#T_11e0c64d2d3f]
+CREATE TABLE [tempdb]..[#T_7c335298c636]
 (
 	[item] Int NOT NULL
 )
 
 -- SqlServer.2005.MS SqlServer.2005
 
-INSERT INTO [tempdb]..[#T_11e0c64d2d3f]
+INSERT INTO [tempdb]..[#T_7c335298c636]
 (
 	[item]
 )
@@ -47,10 +47,10 @@ SELECT 30
 SELECT
 	COUNT(*)
 FROM
-	[tempdb]..[#T_11e0c64d2d3f] [t1]
+	[tempdb]..[#T_7c335298c636] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb]..[#T_11e0c64d2d3f]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_11e0c64d2d3f]
+IF (OBJECT_ID(N'[tempdb]..[#T_7c335298c636]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_7c335298c636]
 

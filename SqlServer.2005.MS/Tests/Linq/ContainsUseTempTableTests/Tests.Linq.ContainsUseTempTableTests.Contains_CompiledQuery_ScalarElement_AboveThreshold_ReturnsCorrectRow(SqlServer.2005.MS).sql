@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [tempdb]..[#T_05fa0e7710c9]
+CREATE TABLE [tempdb]..[#T_e4361eae5fbd]
 (
 	[item] Int NOT NULL
 )
 
 -- SqlServer.2005.MS SqlServer.2005
 
-INSERT INTO [tempdb]..[#T_05fa0e7710c9]
+INSERT INTO [tempdb]..[#T_e4361eae5fbd]
 (
 	[item]
 )
@@ -47,12 +47,12 @@ SELECT 49
 SELECT TOP (1)
 	[t1].[item]
 FROM
-	[tempdb]..[#T_05fa0e7710c9] [t1]
+	[tempdb]..[#T_e4361eae5fbd] [t1]
 ORDER BY
 	[t1].[item]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb]..[#T_05fa0e7710c9]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_05fa0e7710c9]
+IF (OBJECT_ID(N'[tempdb]..[#T_e4361eae5fbd]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_e4361eae5fbd]
 

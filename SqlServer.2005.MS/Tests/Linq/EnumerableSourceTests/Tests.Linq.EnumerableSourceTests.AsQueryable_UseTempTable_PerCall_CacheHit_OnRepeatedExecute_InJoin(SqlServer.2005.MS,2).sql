@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [tempdb]..[#T_c979d4b9124d]
+CREATE TABLE [tempdb]..[#T_84ef12d9ad5b]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_c979d4b9124d]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-INSERT INTO [tempdb]..[#T_c979d4b9124d]
+INSERT INTO [tempdb]..[#T_84ef12d9ad5b]
 (
 	[Id],
 	[Data]
@@ -27,10 +27,10 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN [tempdb]..[#T_c979d4b9124d] [r] ON [p].[PersonID] = [r].[Id]
+		INNER JOIN [tempdb]..[#T_84ef12d9ad5b] [r] ON [p].[PersonID] = [r].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb]..[#T_c979d4b9124d]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_c979d4b9124d]
+IF (OBJECT_ID(N'[tempdb]..[#T_84ef12d9ad5b]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_84ef12d9ad5b]
 

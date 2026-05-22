@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [tempdb]..[#T_1f34666338ec]
+CREATE TABLE [tempdb]..[#T_ada6acf25275]
 (
 	[item] Int NOT NULL
 )
 
 -- SqlServer.2005.MS SqlServer.2005
 
-INSERT INTO [tempdb]..[#T_1f34666338ec]
+INSERT INTO [tempdb]..[#T_ada6acf25275]
 (
 	[item]
 )
@@ -40,18 +40,18 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_1f34666338ec] [t1]
+			[tempdb]..[#T_ada6acf25275] [t1]
 	) AND
 	[b].[Id] IN (
 		SELECT
 			[t2].[item]
 		FROM
-			[tempdb]..[#T_1f34666338ec] [t2]
+			[tempdb]..[#T_ada6acf25275] [t2]
 	) AND
 	[a].[Id] < [b].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb]..[#T_1f34666338ec]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_1f34666338ec]
+IF (OBJECT_ID(N'[tempdb]..[#T_ada6acf25275]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_ada6acf25275]
 

@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-CREATE TABLE [tempdb]..[#T_6ad670d08b2f]
+CREATE TABLE [tempdb]..[#T_f6fbcf930449]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL,
@@ -11,7 +11,7 @@ CREATE TABLE [tempdb]..[#T_6ad670d08b2f]
 
 -- SqlServer.2005.MS SqlServer.2005
 
-INSERT INTO [tempdb]..[#T_6ad670d08b2f]
+INSERT INTO [tempdb]..[#T_f6fbcf930449]
 (
 	[Id],
 	[Name],
@@ -51,7 +51,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			[tempdb]..[#T_6ad670d08b2f] [t1]
+			[tempdb]..[#T_f6fbcf930449] [t1]
 		WHERE
 			[r].[Id] = [t1].[Id]
 	)
@@ -60,6 +60,6 @@ ORDER BY
 
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[tempdb]..[#T_6ad670d08b2f]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_6ad670d08b2f]
+IF (OBJECT_ID(N'[tempdb]..[#T_f6fbcf930449]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_f6fbcf930449]
 
