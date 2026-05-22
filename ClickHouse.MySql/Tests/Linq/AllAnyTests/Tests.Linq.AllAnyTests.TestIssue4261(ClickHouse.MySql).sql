@@ -13,10 +13,10 @@ WHERE
 		SELECT
 			*
 		FROM
-			(
-				SELECT 'John' AS item
-				UNION ALL
-				SELECT 'Not John') y
+			VALUES(
+				'item Nullable(String)',
+				('John'), ('Not John')
+			) y
 		WHERE
 			y.item = x.FirstName
 	)

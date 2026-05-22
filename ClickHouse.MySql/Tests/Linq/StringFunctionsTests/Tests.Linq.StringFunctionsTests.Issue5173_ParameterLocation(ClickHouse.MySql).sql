@@ -9,10 +9,10 @@ FROM
 			ch.item as ch
 		FROM
 			Parent grp
-				CROSS JOIN (
-					SELECT 11 AS item
-					UNION ALL
-					SELECT 13) ch
+				CROSS JOIN VALUES(
+					'item Nullable(Int32)',
+					(11), (13)
+				) ch
 	) grp_1
 GROUP BY
 	grp_1.Key_1
