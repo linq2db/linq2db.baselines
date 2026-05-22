@@ -1,6 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @One Int32
-SET     @One = 1
 
 SELECT
 	`r`.`Id`,
@@ -10,8 +8,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	@One IN (0, 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -25,8 +21,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Zero Int32
-SET     @Zero = 0
 
 SELECT
 	`r`.`Id`,
@@ -36,8 +30,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	@Zero IN (0, 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -51,8 +43,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @OneN Int32
-SET     @OneN = 1
 
 SELECT
 	`r`.`Id`,
@@ -62,8 +52,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	@OneN IN (0, 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -77,8 +65,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ZeroN Int32
-SET     @ZeroN = 0
 
 SELECT
 	`r`.`Id`,
@@ -88,8 +74,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	@ZeroN IN (0, 1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -103,8 +87,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Null Int32
-SET     @Null = NULL
 
 SELECT
 	`r`.`Id`,
@@ -115,7 +97,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	@Null IN (0, 1)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -129,8 +111,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @One Int32
-SET     @One = 1
 
 SELECT
 	`r`.`Id`,
@@ -140,8 +120,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@One IN (0, 1) OR @One IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -155,8 +133,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Zero Int32
-SET     @Zero = 0
 
 SELECT
 	`r`.`Id`,
@@ -166,8 +142,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@Zero IN (0, 1) OR @Zero IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -181,8 +155,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @OneN Int32
-SET     @OneN = 1
 
 SELECT
 	`r`.`Id`,
@@ -192,8 +164,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@OneN IN (0, 1) OR @OneN IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -207,8 +177,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ZeroN Int32
-SET     @ZeroN = 0
 
 SELECT
 	`r`.`Id`,
@@ -218,8 +186,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@ZeroN IN (0, 1) OR @ZeroN IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -233,8 +199,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Null Int32
-SET     @Null = NULL
 
 SELECT
 	`r`.`Id`,
@@ -244,8 +208,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@Null IN (0, 1) OR @Null IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -259,8 +221,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @One Int32
-SET     @One = 1
 
 SELECT
 	`r`.`Id`,
@@ -271,7 +231,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	@One NOT IN (0, 1)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -285,8 +245,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Zero Int32
-SET     @Zero = 0
 
 SELECT
 	`r`.`Id`,
@@ -297,7 +255,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	@Zero NOT IN (0, 1)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -311,8 +269,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @OneN Int32
-SET     @OneN = 1
 
 SELECT
 	`r`.`Id`,
@@ -323,7 +279,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@OneN NOT IN (0, 1) OR @OneN IS NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -337,8 +293,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ZeroN Int32
-SET     @ZeroN = 0
 
 SELECT
 	`r`.`Id`,
@@ -349,7 +303,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@ZeroN NOT IN (0, 1) OR @ZeroN IS NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -363,8 +317,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Null Int32
-SET     @Null = NULL
 
 SELECT
 	`r`.`Id`,
@@ -374,8 +326,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	(@Null NOT IN (0, 1) OR @Null IS NULL)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -389,8 +339,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @One Int32
-SET     @One = 1
 
 SELECT
 	`r`.`Id`,
@@ -401,7 +349,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@One NOT IN (0, 1) AND @One IS NOT NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -415,8 +363,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Zero Int32
-SET     @Zero = 0
 
 SELECT
 	`r`.`Id`,
@@ -427,7 +373,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@Zero NOT IN (0, 1) AND @Zero IS NOT NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -441,8 +387,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @OneN Int32
-SET     @OneN = 1
 
 SELECT
 	`r`.`Id`,
@@ -453,7 +397,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@OneN NOT IN (0, 1) AND @OneN IS NOT NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -467,8 +411,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ZeroN Int32
-SET     @ZeroN = 0
 
 SELECT
 	`r`.`Id`,
@@ -479,7 +421,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@ZeroN NOT IN (0, 1) AND @ZeroN IS NOT NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
@@ -493,8 +435,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Null Int32
-SET     @Null = NULL
 
 SELECT
 	`r`.`Id`,
@@ -505,7 +445,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(@Null NOT IN (0, 1) AND @Null IS NOT NULL)
+	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
