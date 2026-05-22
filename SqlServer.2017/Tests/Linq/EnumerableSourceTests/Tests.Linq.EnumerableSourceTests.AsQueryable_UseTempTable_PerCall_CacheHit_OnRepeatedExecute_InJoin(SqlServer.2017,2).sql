@@ -1,12 +1,12 @@
 ﻿-- SqlServer.2017
 
-CREATE TABLE [tempdb]..[#T_b3ed8557fac6]
+CREATE TABLE [tempdb]..[#T_684fd50552f0]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
 )
 
-INSERT BULK [tempdb]..[#T_b3ed8557fac6](Id, Data)
+INSERT BULK [tempdb]..[#T_684fd50552f0](Id, Data)
 
 -- SqlServer.2017
 
@@ -18,9 +18,9 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN [tempdb]..[#T_b3ed8557fac6] [r] ON [p].[PersonID] = [r].[Id]
+		INNER JOIN [tempdb]..[#T_684fd50552f0] [r] ON [p].[PersonID] = [r].[Id]
 
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [tempdb]..[#T_b3ed8557fac6]
+DROP TABLE IF EXISTS [tempdb]..[#T_684fd50552f0]
 
