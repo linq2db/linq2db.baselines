@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[T_9660464c62d0]
+CREATE TEMPORARY TABLE temp.[T_343fe6cd10d6]
 (
 	[item] INTEGER NOT NULL
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO temp.[T_9660464c62d0]
+INSERT INTO temp.[T_343fe6cd10d6]
 (
 	[item]
 )
@@ -48,9 +48,9 @@ VALUES
 SELECT
 	COUNT(*)
 FROM
-	temp.[T_9660464c62d0] [t1]
+	temp.[T_343fe6cd10d6] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[T_9660464c62d0]
+DROP TABLE IF EXISTS temp.[T_343fe6cd10d6]
 
