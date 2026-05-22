@@ -1,11 +1,11 @@
 ﻿-- SqlServer.2022
 
-CREATE TABLE [tempdb]..[#T_ca336657a048]
+CREATE TABLE [tempdb]..[#T_321b15703638]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_ca336657a048](item)
+INSERT BULK [tempdb]..[#T_321b15703638](item)
 
 -- SqlServer.2022
 
@@ -20,12 +20,12 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_ca336657a048] [t1]
+			[tempdb]..[#T_321b15703638] [t1]
 	)
 ORDER BY
 	[r].[Id]
 
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [tempdb]..[#T_ca336657a048]
+DROP TABLE IF EXISTS [tempdb]..[#T_321b15703638]
 

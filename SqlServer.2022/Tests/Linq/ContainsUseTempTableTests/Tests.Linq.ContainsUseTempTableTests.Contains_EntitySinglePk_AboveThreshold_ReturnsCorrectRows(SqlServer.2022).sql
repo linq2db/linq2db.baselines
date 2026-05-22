@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2022
 
-CREATE TABLE [tempdb]..[#T_c8fff72cf8af]
+CREATE TABLE [tempdb]..[#T_2c8b67223d00]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#T_c8fff72cf8af]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
-INSERT BULK [tempdb]..[#T_c8fff72cf8af](Id, Name, Tag)
+INSERT BULK [tempdb]..[#T_2c8b67223d00](Id, Name, Tag)
 
 -- SqlServer.2022
 
@@ -24,7 +24,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			[tempdb]..[#T_c8fff72cf8af] [t1]
+			[tempdb]..[#T_2c8b67223d00] [t1]
 		WHERE
 			[r].[Id] = [t1].[Id]
 	)
@@ -33,5 +33,5 @@ ORDER BY
 
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [tempdb]..[#T_c8fff72cf8af]
+DROP TABLE IF EXISTS [tempdb]..[#T_2c8b67223d00]
 
