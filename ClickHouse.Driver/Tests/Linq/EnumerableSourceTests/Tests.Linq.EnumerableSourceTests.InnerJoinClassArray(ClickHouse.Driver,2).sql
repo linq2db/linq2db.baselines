@@ -8,8 +8,8 @@ SELECT
 	p.Gender
 FROM
 	Person p
-		INNER JOIN (
-			SELECT 'Janet' AS Name
-			UNION ALL
-			SELECT 'Doe') n ON p.LastName = n.Name
+		INNER JOIN VALUES(
+			'Name Nullable(String)',
+			('Janet'), ('Doe')
+		) n ON p.LastName = n.Name
 

@@ -20,8 +20,10 @@ CTE_2 AS
 		t2.Value1 as Value1,
 		t2.Value2 as Value2
 	FROM
-		(
-			SELECT 'Somebody' AS Value1, 'Unimportant' AS Value2) t2
+		VALUES(
+			'Value1 Nullable(String), Value2 Nullable(String)',
+			('Somebody', 'Unimportant')
+		) t2
 )
 SELECT
 	t3.Value1,

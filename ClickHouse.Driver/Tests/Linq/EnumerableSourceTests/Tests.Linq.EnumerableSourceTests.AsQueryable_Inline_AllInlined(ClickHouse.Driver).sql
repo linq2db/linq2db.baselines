@@ -6,6 +6,8 @@ SELECT
 FROM
 	VALUES(
 		'Id Nullable(Int32), Data Nullable(String)',
-		(20, 'Data 20'), (21, 'Data 21'), (22, 'Data 22')
+		(0, 'Data 0'), (1, 'Data 1')
 	) t1
+ORDER BY
+	t1.Id
 

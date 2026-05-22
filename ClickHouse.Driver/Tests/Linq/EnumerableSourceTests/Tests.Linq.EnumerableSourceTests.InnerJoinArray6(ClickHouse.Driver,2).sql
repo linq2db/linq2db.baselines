@@ -8,6 +8,8 @@ SELECT
 	p.Gender
 FROM
 	Person p
-		INNER JOIN (
-			SELECT 'Doe' AS item) n ON p.LastName = n.item
+		INNER JOIN VALUES(
+			'item Nullable(String)',
+			('Doe')
+		) n ON p.LastName = n.item
 
