@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE temp.[T_369bbdf423c9]
+CREATE TEMPORARY TABLE temp.[T_a01a8a4c565a]
 (
 	[item] NVarChar(255)     NULL
 )
 
 -- SQLite.MS SQLite
 
-INSERT INTO temp.[T_369bbdf423c9]
+INSERT INTO temp.[T_a01a8a4c565a]
 (
 	[item]
 )
@@ -36,7 +36,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			temp.[T_369bbdf423c9] [t1]
+			temp.[T_a01a8a4c565a] [t1]
 		WHERE
 			[r].[Name] = [t1].[item] OR [r].[Name] IS NULL AND [t1].[item] IS NULL
 	)
@@ -45,5 +45,5 @@ ORDER BY
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS temp.[T_369bbdf423c9]
+DROP TABLE IF EXISTS temp.[T_a01a8a4c565a]
 
