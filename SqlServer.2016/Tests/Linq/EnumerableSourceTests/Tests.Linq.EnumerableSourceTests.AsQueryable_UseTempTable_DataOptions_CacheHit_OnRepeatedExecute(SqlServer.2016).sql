@@ -1,0 +1,48 @@
+﻿-- SqlServer.2016
+
+CREATE TABLE [tempdb]..[#T_9c482c71864a]
+(
+	[Id]   Int            NOT NULL,
+	[Data] NVarChar(4000)     NULL
+)
+
+INSERT BULK [tempdb]..[#T_9c482c71864a](Id, Data)
+
+-- SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Data]
+FROM
+	[tempdb]..[#T_9c482c71864a] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#T_9c482c71864a]
+
+-- SqlServer.2016
+
+CREATE TABLE [tempdb]..[#T_9c482c71864a]
+(
+	[Id]   Int            NOT NULL,
+	[Data] NVarChar(4000)     NULL
+)
+
+INSERT BULK [tempdb]..[#T_9c482c71864a](Id, Data)
+
+-- SqlServer.2016
+
+SELECT
+	[t1].[Id],
+	[t1].[Data]
+FROM
+	[tempdb]..[#T_9c482c71864a] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#T_9c482c71864a]
+
