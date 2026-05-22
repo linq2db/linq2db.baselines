@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_69d73199748e"
+CREATE TEMPORARY TABLE "T_9480c8db2bca"
 (
 	"K1"   Int  NOT NULL,
 	"K2"   text NOT NULL,
 	"Data" text     NULL,
 
-	CONSTRAINT "PK_T_69d73199748e" PRIMARY KEY ("K1", "K2")
+	CONSTRAINT "PK_T_9480c8db2bca" PRIMARY KEY ("K1", "K2")
 )
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.13 PostgreSQL
 
-INSERT INTO "T_69d73199748e"
+INSERT INTO "T_9480c8db2bca"
 (
 	"K1",
 	"K2",
@@ -48,7 +48,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			"T_69d73199748e" t1
+			"T_9480c8db2bca" t1
 		WHERE
 			r."K1" = t1."K1" AND r."K2" = t1."K2"
 	)
@@ -57,5 +57,5 @@ ORDER BY
 
 -- PostgreSQL.13 PostgreSQL
 
-DROP TABLE IF EXISTS "T_69d73199748e"
+DROP TABLE IF EXISTS "T_9480c8db2bca"
 
