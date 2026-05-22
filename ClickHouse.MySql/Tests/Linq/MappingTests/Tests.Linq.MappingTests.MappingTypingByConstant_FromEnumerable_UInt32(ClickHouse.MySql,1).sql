@@ -5,8 +5,10 @@ SELECT
 	arg.Value
 FROM
 	Person entity
-		INNER JOIN (
-			SELECT 1 AS Id, toUInt32(1) AS Value) arg ON entity.PersonID = arg.Id
+		INNER JOIN VALUES(
+			'Id Nullable(Int32), Value Nullable(UInt32)',
+			(1, toUInt32(1))
+		) arg ON entity.PersonID = arg.Id
 
 -- ClickHouse.MySql ClickHouse
 
@@ -15,6 +17,8 @@ SELECT
 	arg.Value
 FROM
 	Person entity
-		INNER JOIN (
-			SELECT 1 AS Id, toUInt32(2147483648) AS Value) arg ON entity.PersonID = arg.Id
+		INNER JOIN VALUES(
+			'Id Nullable(Int32), Value Nullable(UInt32)',
+			(1, toUInt32(2147483648))
+		) arg ON entity.PersonID = arg.Id
 

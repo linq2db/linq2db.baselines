@@ -17,20 +17,10 @@ FROM
 		FROM
 			Parent t1
 	) m_1
-		INNER JOIN (
-			SELECT 1 AS ParentID
-			UNION ALL
-			SELECT 2
-			UNION ALL
-			SELECT 3
-			UNION ALL
-			SELECT 4
-			UNION ALL
-			SELECT 5
-			UNION ALL
-			SELECT 6
-			UNION ALL
-			SELECT 7) d ON d.ParentID = m_1.ParentID
+		INNER JOIN VALUES(
+			'ParentID Nullable(Int32)',
+			(1), (2), (3), (4), (5), (6), (7)
+		) d ON d.ParentID = m_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
 

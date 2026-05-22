@@ -9,10 +9,10 @@ WITH CTE_1 AS
 		t1.MiddleName as MiddleName,
 		t1.Gender as Gender
 	FROM
-		(
-			SELECT 10 AS ID, 'FN1' AS FirstName, 'LN1' AS LastName, NULL AS MiddleName, 'M' AS Gender
-			UNION ALL
-			SELECT 11, 'FN2', NULL, NULL, 'F') t1
+		VALUES(
+			'ID Nullable(Int32), FirstName Nullable(String), LastName Nullable(String), MiddleName Nullable(String), Gender Nullable(FixedString(1))',
+			(10, 'FN1', 'LN1', NULL, 'M'), (11, 'FN2', NULL, NULL, 'F')
+		) t1
 )
 SELECT
 	p.FirstName,
