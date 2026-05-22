@@ -1,6 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @One Int -- Int32
-SET     @One = 1
 
 SELECT
 	[r].[Id],
@@ -10,8 +8,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	? IN (0, 1)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -25,8 +21,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
 
 SELECT
 	[r].[Id],
@@ -36,8 +30,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	? IN (0, 1)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -51,8 +43,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
 
 SELECT
 	[r].[Id],
@@ -62,8 +52,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	? IN (0, 1)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -77,8 +65,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
 
 SELECT
 	[r].[Id],
@@ -88,8 +74,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	? IN (0, 1)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -103,8 +87,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
 
 SELECT
 	[r].[Id],
@@ -115,7 +97,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	? IN (0, 1)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -129,10 +111,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @One Int -- Int32
-SET     @One = 1
-DECLARE @One Int -- Int32
-SET     @One = 1
 
 SELECT
 	[r].[Id],
@@ -142,8 +120,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -157,10 +133,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
 
 SELECT
 	[r].[Id],
@@ -170,8 +142,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -185,10 +155,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
 
 SELECT
 	[r].[Id],
@@ -198,8 +164,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -213,10 +177,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
 
 SELECT
 	[r].[Id],
@@ -226,8 +186,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -241,10 +199,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
 
 SELECT
 	[r].[Id],
@@ -254,8 +208,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -269,8 +221,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @One Int -- Int32
-SET     @One = 1
 
 SELECT
 	[r].[Id],
@@ -281,7 +231,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	? NOT IN (0, 1)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -295,8 +245,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
 
 SELECT
 	[r].[Id],
@@ -307,7 +255,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	? NOT IN (0, 1)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -321,10 +269,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
 
 SELECT
 	[r].[Id],
@@ -335,7 +279,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) OR ? IS NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -349,10 +293,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
 
 SELECT
 	[r].[Id],
@@ -363,7 +303,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) OR ? IS NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -377,10 +317,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
 
 SELECT
 	[r].[Id],
@@ -390,8 +326,6 @@ SELECT
 	[r].[Value5]
 FROM
 	[BooleanTable] [r]
-WHERE
-	(? NOT IN (0, 1) OR ? IS NULL)
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -405,10 +339,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @One Int -- Int32
-SET     @One = 1
-DECLARE @One Int -- Int32
-SET     @One = 1
 
 SELECT
 	[r].[Id],
@@ -419,7 +349,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) AND ? IS NOT NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -433,10 +363,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
-DECLARE @Zero Int -- Int32
-SET     @Zero = 0
 
 SELECT
 	[r].[Id],
@@ -447,7 +373,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) AND ? IS NOT NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -461,10 +387,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
-DECLARE @OneN Int -- Int32
-SET     @OneN = 1
 
 SELECT
 	[r].[Id],
@@ -475,7 +397,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) AND ? IS NOT NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -489,10 +411,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
-DECLARE @ZeroN Int -- Int32
-SET     @ZeroN = 0
 
 SELECT
 	[r].[Id],
@@ -503,7 +421,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) AND ? IS NOT NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -517,10 +435,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
-DECLARE @Null Int -- Int32
-SET     @Null = NULL
 
 SELECT
 	[r].[Id],
@@ -531,7 +445,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(? NOT IN (0, 1) AND ? IS NOT NULL)
+	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
 
