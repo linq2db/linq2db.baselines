@@ -1,0 +1,60 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TEMPORARY TABLE temp.[T_cd5f6ffab73a]
+(
+	[K1]   INTEGER       NOT NULL,
+	[K2]   NVarChar(32)  NOT NULL,
+	[Data] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_T_cd5f6ffab73a] PRIMARY KEY ([K1], [K2])
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+INSERT INTO temp.[T_cd5f6ffab73a]
+(
+	[K1],
+	[K2],
+	[Data]
+)
+VALUES
+(1,'k1','data1'),
+(2,'k2','data2'),
+(3,'k3','data3'),
+(4,'k4','data4'),
+(5,'k5','data5'),
+(6,'k6','data6'),
+(7,'k7','data7'),
+(8,'k8','data8'),
+(9,'k9','data9'),
+(10,'k10','data10'),
+(11,'k11','data11'),
+(12,'k12','data12'),
+(13,'k13','data13'),
+(14,'k14','data14'),
+(15,'k15','data15')
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[r].[K1],
+	[r].[K2],
+	[r].[Data]
+FROM
+	[ContainsTempTableComposite] [r]
+WHERE
+	NOT EXISTS(
+		SELECT
+			*
+		FROM
+			temp.[T_cd5f6ffab73a] [t1]
+		WHERE
+			[r].[K1] = [t1].[K1] AND [r].[K2] = [t1].[K2]
+	)
+ORDER BY
+	[r].[K1]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS temp.[T_cd5f6ffab73a]
+
