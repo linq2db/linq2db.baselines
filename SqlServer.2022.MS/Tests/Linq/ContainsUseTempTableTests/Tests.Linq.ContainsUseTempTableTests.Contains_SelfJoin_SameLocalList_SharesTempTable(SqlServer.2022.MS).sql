@@ -1,11 +1,11 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
-CREATE TABLE [tempdb]..[#T_88772c4b419b]
+CREATE TABLE [tempdb]..[#T_144c781079b8]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_88772c4b419b](item)
+INSERT BULK [tempdb]..[#T_144c781079b8](item)
 
 -- SqlServer.2022.MS SqlServer.2022
 
@@ -20,17 +20,17 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_88772c4b419b] [t1]
+			[tempdb]..[#T_144c781079b8] [t1]
 	) AND
 	[b].[Id] IN (
 		SELECT
 			[t2].[item]
 		FROM
-			[tempdb]..[#T_88772c4b419b] [t2]
+			[tempdb]..[#T_144c781079b8] [t2]
 	) AND
 	[a].[Id] < [b].[Id]
 
 -- SqlServer.2022.MS SqlServer.2022
 
-DROP TABLE IF EXISTS [tempdb]..[#T_88772c4b419b]
+DROP TABLE IF EXISTS [tempdb]..[#T_144c781079b8]
 

@@ -1,20 +1,20 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
-CREATE TABLE [tempdb]..[#T_07090d48525c]
+CREATE TABLE [tempdb]..[#T_4524acbaab1f]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_07090d48525c](item)
+INSERT BULK [tempdb]..[#T_4524acbaab1f](item)
 
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	COUNT(*)
 FROM
-	[tempdb]..[#T_07090d48525c] [t1]
+	[tempdb]..[#T_4524acbaab1f] [t1]
 
 -- SqlServer.2022.MS SqlServer.2022
 
-DROP TABLE IF EXISTS [tempdb]..[#T_07090d48525c]
+DROP TABLE IF EXISTS [tempdb]..[#T_4524acbaab1f]
 
