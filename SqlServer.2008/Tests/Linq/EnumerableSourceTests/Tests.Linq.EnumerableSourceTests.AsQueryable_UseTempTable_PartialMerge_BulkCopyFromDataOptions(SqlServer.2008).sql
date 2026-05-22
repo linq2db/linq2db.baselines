@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008
 
-CREATE TABLE [tempdb]..[#T_389d20750381]
+CREATE TABLE [tempdb]..[#T_470d551f433a]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_389d20750381]
 
 -- SqlServer.2008
 
-INSERT INTO [tempdb]..[#T_389d20750381]
+INSERT INTO [tempdb]..[#T_470d551f433a]
 (
 	[Id],
 	[Data]
@@ -27,7 +27,7 @@ VALUES
 
 -- SqlServer.2008
 
-INSERT INTO [tempdb]..[#T_389d20750381]
+INSERT INTO [tempdb]..[#T_470d551f433a]
 (
 	[Id],
 	[Data]
@@ -50,12 +50,12 @@ SELECT
 	[t1].[Id],
 	[t1].[Data]
 FROM
-	[tempdb]..[#T_389d20750381] [t1]
+	[tempdb]..[#T_470d551f433a] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#T_389d20750381]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_389d20750381]
+IF (OBJECT_ID(N'[tempdb]..[#T_470d551f433a]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_470d551f433a]
 

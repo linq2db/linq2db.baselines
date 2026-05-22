@@ -1,11 +1,11 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
-CREATE TABLE [tempdb]..[#T_b58a7258d081]
+CREATE TABLE [tempdb]..[#T_8ac395a58f96]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_b58a7258d081](item)
+INSERT BULK [tempdb]..[#T_8ac395a58f96](item)
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -20,13 +20,13 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_b58a7258d081] [t1]
+			[tempdb]..[#T_8ac395a58f96] [t1]
 	)
 ORDER BY
 	[r].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#T_b58a7258d081]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_b58a7258d081]
+IF (OBJECT_ID(N'[tempdb]..[#T_8ac395a58f96]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_8ac395a58f96]
 

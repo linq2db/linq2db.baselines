@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008
 
-CREATE TABLE [tempdb]..[#T_d3f1634c2f8b]
+CREATE TABLE [tempdb]..[#T_7c7c88d2f9f6]
 (
 	[Id]   Int            NOT NULL,
 	[Name] NVarChar(4000)     NULL,
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#T_d3f1634c2f8b]
 	PRIMARY KEY CLUSTERED ([Id])
 )
 
-INSERT BULK [tempdb]..[#T_d3f1634c2f8b](Id, Name, Tag)
+INSERT BULK [tempdb]..[#T_7c7c88d2f9f6](Id, Name, Tag)
 
 -- SqlServer.2008
 
@@ -24,7 +24,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			[tempdb]..[#T_d3f1634c2f8b] [t1]
+			[tempdb]..[#T_7c7c88d2f9f6] [t1]
 		WHERE
 			[r].[Id] = [t1].[Id]
 	)
@@ -33,6 +33,6 @@ ORDER BY
 
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[tempdb]..[#T_d3f1634c2f8b]', N'U') IS NOT NULL)
-	DROP TABLE [tempdb]..[#T_d3f1634c2f8b]
+IF (OBJECT_ID(N'[tempdb]..[#T_7c7c88d2f9f6]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#T_7c7c88d2f9f6]
 
