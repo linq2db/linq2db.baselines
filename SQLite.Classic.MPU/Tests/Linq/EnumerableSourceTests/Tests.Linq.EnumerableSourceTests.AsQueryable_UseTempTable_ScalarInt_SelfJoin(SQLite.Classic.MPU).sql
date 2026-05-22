@@ -1,13 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[T_afd671875b54]
+CREATE TEMPORARY TABLE temp.[T_9ec9f032045d]
 (
 	[item] INTEGER NOT NULL
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO temp.[T_afd671875b54]
+INSERT INTO temp.[T_9ec9f032045d]
 (
 	[item]
 )
@@ -34,8 +34,8 @@ SELECT
 	[t1].[item],
 	[b].[item]
 FROM
-	temp.[T_afd671875b54] [t1],
-	temp.[T_afd671875b54] [b]
+	temp.[T_9ec9f032045d] [t1],
+	temp.[T_9ec9f032045d] [b]
 WHERE
 	[t1].[item] < [b].[item]
 ORDER BY
@@ -44,5 +44,5 @@ ORDER BY
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[T_afd671875b54]
+DROP TABLE IF EXISTS temp.[T_9ec9f032045d]
 
