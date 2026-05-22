@@ -1,13 +1,13 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-CREATE TEMPORARY TABLE `T_44fc20426699`
+CREATE TEMPORARY TABLE `T_04afa9d81d37`
 (
 	`item` VARCHAR(4000)     NULL
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-INSERT INTO `T_44fc20426699`
+INSERT INTO `T_04afa9d81d37`
 (
 	`item`
 )
@@ -32,7 +32,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_44fc20426699` `t1`
+			`T_04afa9d81d37` `t1`
 		WHERE
 			`r`.`Tag` = `t1`.`item` OR `r`.`Tag` IS NULL AND `t1`.`item` IS NULL
 	) AND
@@ -42,5 +42,5 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_44fc20426699`
+DROP TEMPORARY TABLE IF EXISTS `T_04afa9d81d37`
 

@@ -1,6 +1,6 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-CREATE TEMPORARY TABLE `T_b226db28f798`
+CREATE TEMPORARY TABLE `T_72abd2204476`
 (
 	`Id`   INT           NOT NULL,
 	`Data` VARCHAR(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `T_b226db28f798`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `T_b226db28f798`
+INSERT INTO `T_72abd2204476`
 (
 	`Id`,
 	`Data`
@@ -41,17 +41,17 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`Data`
 FROM
-	`T_b226db28f798` `t1`
+	`T_72abd2204476` `t1`
 ORDER BY
 	`t1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_b226db28f798`
+DROP TEMPORARY TABLE IF EXISTS `T_72abd2204476`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-CREATE TEMPORARY TABLE `T_b226db28f798`
+CREATE TEMPORARY TABLE `T_72abd2204476`
 (
 	`Id`   INT           NOT NULL,
 	`Data` VARCHAR(4000)     NULL
@@ -59,7 +59,7 @@ CREATE TEMPORARY TABLE `T_b226db28f798`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `T_b226db28f798`
+INSERT INTO `T_72abd2204476`
 (
 	`Id`,
 	`Data`
@@ -92,11 +92,11 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`Data`
 FROM
-	`T_b226db28f798` `t1`
+	`T_72abd2204476` `t1`
 ORDER BY
 	`t1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_b226db28f798`
+DROP TEMPORARY TABLE IF EXISTS `T_72abd2204476`
 

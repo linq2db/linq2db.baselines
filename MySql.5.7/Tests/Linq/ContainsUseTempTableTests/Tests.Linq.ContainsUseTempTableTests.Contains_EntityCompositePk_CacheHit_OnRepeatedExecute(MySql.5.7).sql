@@ -1,17 +1,17 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-CREATE TEMPORARY TABLE `T_017fed75add3`
+CREATE TEMPORARY TABLE `T_23b34b4197d7`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_017fed75add3` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_23b34b4197d7` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `T_017fed75add3`
+INSERT INTO `T_23b34b4197d7`
 (
 	`K1`,
 	`K2`,
@@ -42,7 +42,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_017fed75add3` `t1`
+			`T_23b34b4197d7` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -51,22 +51,22 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_017fed75add3`
+DROP TEMPORARY TABLE IF EXISTS `T_23b34b4197d7`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-CREATE TEMPORARY TABLE `T_017fed75add3`
+CREATE TEMPORARY TABLE `T_23b34b4197d7`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_017fed75add3` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_23b34b4197d7` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `T_017fed75add3`
+INSERT INTO `T_23b34b4197d7`
 (
 	`K1`,
 	`K2`,
@@ -97,7 +97,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_017fed75add3` `t1`
+			`T_23b34b4197d7` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -106,5 +106,5 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_017fed75add3`
+DROP TEMPORARY TABLE IF EXISTS `T_23b34b4197d7`
 

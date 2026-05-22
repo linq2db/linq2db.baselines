@@ -1,17 +1,17 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-CREATE TEMPORARY TABLE `T_cbbe30d49f7c`
+CREATE TEMPORARY TABLE `T_d051592e1091`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_cbbe30d49f7c` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_d051592e1091` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-INSERT INTO `T_cbbe30d49f7c`
+INSERT INTO `T_d051592e1091`
 (
 	`K1`,
 	`K2`,
@@ -47,7 +47,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_cbbe30d49f7c` `t1`
+			`T_d051592e1091` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -56,5 +56,5 @@ ORDER BY
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_cbbe30d49f7c`
+DROP TEMPORARY TABLE IF EXISTS `T_d051592e1091`
 

@@ -1,17 +1,17 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-CREATE TEMPORARY TABLE `T_2251ca9bd8ea`
+CREATE TEMPORARY TABLE `T_d80633c2ffa9`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_2251ca9bd8ea` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_d80633c2ffa9` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-INSERT INTO `T_2251ca9bd8ea`
+INSERT INTO `T_d80633c2ffa9`
 (
 	`K1`,
 	`K2`,
@@ -47,7 +47,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_2251ca9bd8ea` `t1`
+			`T_d80633c2ffa9` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -56,5 +56,5 @@ ORDER BY
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TEMPORARY TABLE IF EXISTS `T_2251ca9bd8ea`
+DROP TEMPORARY TABLE IF EXISTS `T_d80633c2ffa9`
 
