@@ -1,0 +1,37 @@
+﻿-- SqlServer.2025
+
+CREATE TABLE [tempdb]..[#T_9b01d221488b]
+(
+	[Id]   Int            NOT NULL,
+	[Name] NVarChar(4000)     NULL,
+	[Tag]  NVarChar(4000)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
+)
+
+INSERT BULK [tempdb]..[#T_9b01d221488b](Id, Name, Tag)
+
+-- SqlServer.2025
+
+SELECT
+	[r].[Id],
+	[r].[Name],
+	[r].[Tag]
+FROM
+	[ContainsTempTableTestRow] [r]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[tempdb]..[#T_9b01d221488b] [t1]
+		WHERE
+			[r].[Id] = [t1].[Id]
+	)
+ORDER BY
+	[r].[Id]
+
+-- SqlServer.2025
+
+DROP TABLE IF EXISTS [tempdb]..[#T_9b01d221488b]
+
