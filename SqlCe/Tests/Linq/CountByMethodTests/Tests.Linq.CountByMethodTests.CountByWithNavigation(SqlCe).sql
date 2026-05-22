@@ -26,13 +26,13 @@ FROM
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	[c_2].[Value_1]
+	[c_2].[Count_1]
 FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
 				[c_1].[ParentID] as [Key_1],
-				COUNT(*) as [Value_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c_1]
 			WHERE

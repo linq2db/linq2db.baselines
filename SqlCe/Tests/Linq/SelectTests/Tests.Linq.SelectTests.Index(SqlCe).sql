@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[a_Parent].[ParentID],
+	CAST([a_Parent].[ParentID] AS NVarChar(11)) as [c1],
 	[m_1].[ChildID]
 FROM
 	[Child] [m_1]
@@ -14,7 +14,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[a_Parent].[ParentID],
+	CAST([a_Parent].[ParentID] AS NVarChar(11)) as [c1],
 	[m_1].[ChildID]
 FROM
 	[Child] [m_1]

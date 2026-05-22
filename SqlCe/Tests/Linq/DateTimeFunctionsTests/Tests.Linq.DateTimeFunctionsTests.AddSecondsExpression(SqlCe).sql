@@ -1,9 +1,9 @@
 ﻿-- SqlCe
-DECLARE @Second Int -- Int32
-SET     @Second = -35
+DECLARE @p Int -- Int32
+SET     @p = -35
 
 SELECT
-	DatePart(second, DateAdd(second, @Second, [t].[DateTimeValue])) as [Second_1]
+	DatePart(second, DateAdd(second, @p, [t].[DateTimeValue])) as [Second_1]
 FROM
 	[LinqDataTypes] [t]
 

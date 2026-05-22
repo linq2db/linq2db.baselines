@@ -5,7 +5,11 @@ SELECT
 		WHEN [t3].[x] < 0 THEN 9
 		ELSE [t3].[x] + 8
 	END as [Y1],
-	[t3].[x] + [t3].[x] as [Y2]
+	CASE
+		WHEN ([t3].[x] + [t3].[x]) - FLOOR([t3].[x] + [t3].[x]) = 0.5 AND (CAST(FLOOR([t3].[x] + [t3].[x]) AS Int) % 2) = 0
+			THEN FLOOR([t3].[x] + [t3].[x])
+		ELSE ROUND([t3].[x] + [t3].[x], 0)
+	END as [Y2]
 FROM
 	(
 		SELECT

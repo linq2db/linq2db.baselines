@@ -50,12 +50,13 @@ FROM
 				[trade_2].[DealId],
 				[trade_2].[ParcelId],
 				[trade_2].[CounterParty],
-				[t1].[LastUpdate]
+				Coalesce([t1].[LastUpdate], [t1].[CreationDate]) as [LastUpdate]
 			FROM
 				(
 					SELECT
 						[al_group_2].[Id],
-						Coalesce(MAX([au_1].[TransactionDate]), [al_group_2].[CreationDate]) as [LastUpdate],
+						MAX([au_1].[TransactionDate]) as [LastUpdate],
+						[al_group_2].[CreationDate],
 						[al_group_2].[AlertKey],
 						[al_group_2].[AlertCode]
 					FROM

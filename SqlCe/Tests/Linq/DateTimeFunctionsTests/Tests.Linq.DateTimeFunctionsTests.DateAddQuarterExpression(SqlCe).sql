@@ -1,9 +1,9 @@
 ﻿-- SqlCe
-DECLARE @Value Int -- Int32
-SET     @Value = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
-	CAST(CONVERT(NVarChar(10), DateAdd(quarter, @Value, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
+	CAST(CONVERT(NVarChar(10), DateAdd(quarter, @p, [t].[DateTimeValue]), 101) AS DateTime) as [Date_1]
 FROM
 	[LinqDataTypes] [t]
 

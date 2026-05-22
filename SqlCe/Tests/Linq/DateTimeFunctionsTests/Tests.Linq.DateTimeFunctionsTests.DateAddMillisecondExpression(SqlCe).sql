@@ -10,7 +10,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[t].[DateTimeValue]
+	DateAdd(millisecond, 226, [t].[DateTimeValue]) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

@@ -1,7 +1,11 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[c1]
+	CASE
+		WHEN [t].[c1] * 2 = ROUND([t].[c1] * 2, 5) AND [t].[c1] <> ROUND([t].[c1], 5)
+			THEN ROUND([t].[c1] / 2, 5) * 2
+		ELSE ROUND([t].[c1], 5)
+	END as [c1]
 FROM
 	(
 		SELECT

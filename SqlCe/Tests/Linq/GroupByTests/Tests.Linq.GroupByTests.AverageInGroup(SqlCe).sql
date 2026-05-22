@@ -6,7 +6,11 @@ SELECT
 	[g_2].[Projection],
 	[g_2].[Filter_1],
 	[g_2].[FilterProjection],
-	[t2].[Distinct_1],
+	CASE
+		WHEN (CAST([t2].[Distinct_1] AS Decimal(18, 10)) * 2 = ROUND(CAST([t2].[Distinct_1] AS Decimal(18, 10)) * 2, 4) OR [t2].[Distinct_1] IS NULL) AND CAST([t2].[Distinct_1] AS Decimal(18, 10)) <> ROUND(CAST([t2].[Distinct_1] AS Decimal(18, 10)), 4)
+			THEN ROUND(CAST([t2].[Distinct_1] AS Decimal(18, 10)) / 2, 4) * 2
+		ELSE ROUND(CAST([t2].[Distinct_1] AS Decimal(18, 10)), 4)
+	END as [Distinct_1],
 	[t4].[FilterDistinct1],
 	[t6].[FilterDistinct2]
 FROM
