@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-CREATE TEMPORARY TABLE `T_b2bcd0e1f991`
+CREATE TEMPORARY TABLE `T_8ae02bd089df`
 (
 	`Id`   INT           NOT NULL,
 	`Data` VARCHAR(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `T_b2bcd0e1f991`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-INSERT INTO `T_b2bcd0e1f991`
+INSERT INTO `T_8ae02bd089df`
 (
 	`Id`,
 	`Data`
@@ -24,11 +24,11 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`Data`
 FROM
-	`T_b2bcd0e1f991` `t1`
+	`T_8ae02bd089df` `t1`
 ORDER BY
 	`t1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_b2bcd0e1f991`
+DROP TEMPORARY TABLE IF EXISTS `T_8ae02bd089df`
 

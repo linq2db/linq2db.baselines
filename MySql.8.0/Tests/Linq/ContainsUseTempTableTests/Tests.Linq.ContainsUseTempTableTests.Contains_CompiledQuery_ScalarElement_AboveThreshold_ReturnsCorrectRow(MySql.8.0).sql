@@ -1,13 +1,13 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-CREATE TEMPORARY TABLE `T_b21ebc77748c`
+CREATE TEMPORARY TABLE `T_b810d20ae40d`
 (
 	`item` INT NOT NULL
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-INSERT INTO `T_b21ebc77748c`
+INSERT INTO `T_b810d20ae40d`
 (
 	`item`
 )
@@ -48,12 +48,12 @@ VALUES
 SELECT
 	`t1`.`item`
 FROM
-	`T_b21ebc77748c` `t1`
+	`T_b810d20ae40d` `t1`
 ORDER BY
 	`t1`.`item`
 LIMIT 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_b21ebc77748c`
+DROP TEMPORARY TABLE IF EXISTS `T_b810d20ae40d`
 

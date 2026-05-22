@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-CREATE TEMPORARY TABLE `T_6e229cfa36b3`
+CREATE TEMPORARY TABLE `T_d36543a0bfe6`
 (
 	`Id`   INT           NOT NULL,
 	`Data` VARCHAR(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `T_6e229cfa36b3`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-INSERT INTO `T_6e229cfa36b3`
+INSERT INTO `T_d36543a0bfe6`
 (
 	`Id`,
 	`Data`
@@ -27,7 +27,7 @@ VALUES
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-INSERT INTO `T_6e229cfa36b3`
+INSERT INTO `T_d36543a0bfe6`
 (
 	`Id`,
 	`Data`
@@ -50,11 +50,11 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`Data`
 FROM
-	`T_6e229cfa36b3` `t1`
+	`T_d36543a0bfe6` `t1`
 ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_6e229cfa36b3`
+DROP TEMPORARY TABLE IF EXISTS `T_d36543a0bfe6`
 

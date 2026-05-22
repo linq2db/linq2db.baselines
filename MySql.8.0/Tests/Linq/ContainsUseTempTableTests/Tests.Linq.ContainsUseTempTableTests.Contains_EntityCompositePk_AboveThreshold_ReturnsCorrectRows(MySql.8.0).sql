@@ -1,17 +1,17 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-CREATE TEMPORARY TABLE `T_af2934be0730`
+CREATE TEMPORARY TABLE `T_66ed8de8293e`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_af2934be0730` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_66ed8de8293e` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-INSERT INTO `T_af2934be0730`
+INSERT INTO `T_66ed8de8293e`
 (
 	`K1`,
 	`K2`,
@@ -47,7 +47,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_af2934be0730` `t1`
+			`T_66ed8de8293e` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -56,5 +56,5 @@ ORDER BY
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_af2934be0730`
+DROP TEMPORARY TABLE IF EXISTS `T_66ed8de8293e`
 

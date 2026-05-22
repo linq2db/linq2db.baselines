@@ -1,17 +1,17 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-CREATE TEMPORARY TABLE `T_70f2ba28a5d5`
+CREATE TEMPORARY TABLE `T_f2b57fe97616`
 (
 	`Id`   INT           NOT NULL,
 	`Name` VARCHAR(4000)     NULL,
 	`Tag`  VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_70f2ba28a5d5` PRIMARY KEY CLUSTERED (`Id`)
+	CONSTRAINT `PK_T_f2b57fe97616` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-INSERT INTO `T_70f2ba28a5d5`
+INSERT INTO `T_f2b57fe97616`
 (
 	`Id`,
 	`Name`,
@@ -52,7 +52,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_70f2ba28a5d5` `t1`
+			`T_f2b57fe97616` `t1`
 		WHERE
 			`r`.`Id` = `t1`.`Id`
 	)
@@ -61,5 +61,5 @@ ORDER BY
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_70f2ba28a5d5`
+DROP TEMPORARY TABLE IF EXISTS `T_f2b57fe97616`
 

@@ -1,13 +1,13 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-CREATE TEMPORARY TABLE `T_02151a7c55a2`
+CREATE TEMPORARY TABLE `T_66faf404caaf`
 (
 	`item` INT NOT NULL
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-INSERT INTO `T_02151a7c55a2`
+INSERT INTO `T_66faf404caaf`
 (
 	`item`
 )
@@ -48,12 +48,12 @@ VALUES
 SELECT
 	`t1`.`item`
 FROM
-	`T_02151a7c55a2` `t1`
+	`T_66faf404caaf` `t1`
 ORDER BY
 	`t1`.`item`
 LIMIT 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TEMPORARY TABLE IF EXISTS `T_02151a7c55a2`
+DROP TEMPORARY TABLE IF EXISTS `T_66faf404caaf`
 
