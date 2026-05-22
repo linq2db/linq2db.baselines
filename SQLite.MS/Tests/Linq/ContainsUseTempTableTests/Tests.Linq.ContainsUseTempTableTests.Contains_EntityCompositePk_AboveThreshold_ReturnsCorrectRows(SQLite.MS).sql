@@ -1,17 +1,17 @@
 ﻿-- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE temp.[T_f081178d41b0]
+CREATE TEMPORARY TABLE temp.[T_06f611cf4f79]
 (
 	[K1]   INTEGER       NOT NULL,
 	[K2]   NVarChar(32)  NOT NULL,
 	[Data] NVarChar(255)     NULL,
 
-	CONSTRAINT [PK_T_f081178d41b0] PRIMARY KEY ([K1], [K2])
+	CONSTRAINT [PK_T_06f611cf4f79] PRIMARY KEY ([K1], [K2])
 )
 
 -- SQLite.MS SQLite
 
-INSERT INTO temp.[T_f081178d41b0]
+INSERT INTO temp.[T_06f611cf4f79]
 (
 	[K1],
 	[K2],
@@ -47,7 +47,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			temp.[T_f081178d41b0] [t1]
+			temp.[T_06f611cf4f79] [t1]
 		WHERE
 			[r].[K1] = [t1].[K1] AND [r].[K2] = [t1].[K2]
 	)
@@ -56,5 +56,5 @@ ORDER BY
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS temp.[T_f081178d41b0]
+DROP TABLE IF EXISTS temp.[T_06f611cf4f79]
 

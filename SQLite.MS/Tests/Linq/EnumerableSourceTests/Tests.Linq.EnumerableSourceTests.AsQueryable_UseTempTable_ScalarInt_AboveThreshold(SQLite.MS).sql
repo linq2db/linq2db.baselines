@@ -1,13 +1,13 @@
 ﻿-- SQLite.MS SQLite
 
-CREATE TEMPORARY TABLE temp.[T_cb739602c189]
+CREATE TEMPORARY TABLE temp.[T_149c4194c266]
 (
 	[item] INTEGER NOT NULL
 )
 
 -- SQLite.MS SQLite
 
-INSERT INTO temp.[T_cb739602c189]
+INSERT INTO temp.[T_149c4194c266]
 (
 	[item]
 )
@@ -48,7 +48,7 @@ VALUES
 SELECT
 	[t1].[item]
 FROM
-	temp.[T_cb739602c189] [t1]
+	temp.[T_149c4194c266] [t1]
 WHERE
 	[t1].[item] > 20
 ORDER BY
@@ -56,5 +56,5 @@ ORDER BY
 
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS temp.[T_cb739602c189]
+DROP TABLE IF EXISTS temp.[T_149c4194c266]
 
