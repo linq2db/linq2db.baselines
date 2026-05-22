@@ -1,22 +1,22 @@
 ﻿-- SqlServer.2017
 
-CREATE TABLE [tempdb]..[#T_02fd4715b722]
+CREATE TABLE [tempdb]..[#T_9b1f6c13327c]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_02fd4715b722](item)
+INSERT BULK [tempdb]..[#T_9b1f6c13327c](item)
 
 -- SqlServer.2017
 
 SELECT TOP (1)
 	[t1].[item]
 FROM
-	[tempdb]..[#T_02fd4715b722] [t1]
+	[tempdb]..[#T_9b1f6c13327c] [t1]
 ORDER BY
 	[t1].[item]
 
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [tempdb]..[#T_02fd4715b722]
+DROP TABLE IF EXISTS [tempdb]..[#T_9b1f6c13327c]
 
