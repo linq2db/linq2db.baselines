@@ -1,0 +1,62 @@
+﻿-- SqlServer.2016.MS SqlServer.2016
+
+CREATE TABLE [tempdb]..[#T_65866945e5fe]
+(
+	[item] Int NOT NULL
+)
+
+INSERT BULK [tempdb]..[#T_65866945e5fe](item)
+
+-- SqlServer.2016.MS SqlServer.2016
+
+SELECT
+	[r].[Id],
+	[r].[Name],
+	[r].[Tag]
+FROM
+	[ContainsTempTableTestRow] [r]
+WHERE
+	[r].[Id] IN (
+		SELECT
+			[t1].[item]
+		FROM
+			[tempdb]..[#T_65866945e5fe] [t1]
+	)
+ORDER BY
+	[r].[Id]
+
+-- SqlServer.2016.MS SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#T_65866945e5fe]
+
+-- SqlServer.2016.MS SqlServer.2016
+
+CREATE TABLE [tempdb]..[#T_65866945e5fe]
+(
+	[item] Int NOT NULL
+)
+
+INSERT BULK [tempdb]..[#T_65866945e5fe](item)
+
+-- SqlServer.2016.MS SqlServer.2016
+
+SELECT
+	[r].[Id],
+	[r].[Name],
+	[r].[Tag]
+FROM
+	[ContainsTempTableTestRow] [r]
+WHERE
+	[r].[Id] IN (
+		SELECT
+			[t1].[item]
+		FROM
+			[tempdb]..[#T_65866945e5fe] [t1]
+	)
+ORDER BY
+	[r].[Id]
+
+-- SqlServer.2016.MS SqlServer.2016
+
+DROP TABLE IF EXISTS [tempdb]..[#T_65866945e5fe]
+
