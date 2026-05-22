@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2025
 
-CREATE TABLE [tempdb]..[#T_0c8643ee4802]
+CREATE TABLE [tempdb]..[#T_52043dfd7adc]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_0c8643ee4802]
 
 -- SqlServer.2025
 
-INSERT INTO [tempdb]..[#T_0c8643ee4802]
+INSERT INTO [tempdb]..[#T_52043dfd7adc]
 (
 	[Id],
 	[Data]
@@ -27,7 +27,7 @@ VALUES
 
 -- SqlServer.2025
 
-INSERT INTO [tempdb]..[#T_0c8643ee4802]
+INSERT INTO [tempdb]..[#T_52043dfd7adc]
 (
 	[Id],
 	[Data]
@@ -50,11 +50,11 @@ SELECT
 	[t1].[Id],
 	[t1].[Data]
 FROM
-	[tempdb]..[#T_0c8643ee4802] [t1]
+	[tempdb]..[#T_52043dfd7adc] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025
 
-DROP TABLE IF EXISTS [tempdb]..[#T_0c8643ee4802]
+DROP TABLE IF EXISTS [tempdb]..[#T_52043dfd7adc]
 
