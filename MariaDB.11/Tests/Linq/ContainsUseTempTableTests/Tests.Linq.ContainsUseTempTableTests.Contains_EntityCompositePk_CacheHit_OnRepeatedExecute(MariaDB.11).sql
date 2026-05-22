@@ -1,17 +1,17 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TEMPORARY TABLE `T_05b17f31eb53`
+CREATE TEMPORARY TABLE `T_54de5bb8483b`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_05b17f31eb53` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_54de5bb8483b` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_05b17f31eb53`
+INSERT INTO `T_54de5bb8483b`
 (
 	`K1`,
 	`K2`,
@@ -42,7 +42,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_05b17f31eb53` `t1`
+			`T_54de5bb8483b` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -51,22 +51,22 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TEMPORARY TABLE IF EXISTS `T_05b17f31eb53`
+DROP TEMPORARY TABLE IF EXISTS `T_54de5bb8483b`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TEMPORARY TABLE `T_05b17f31eb53`
+CREATE TEMPORARY TABLE `T_54de5bb8483b`
 (
 	`K1`   INT           NOT NULL,
 	`K2`   VARCHAR(32)   NOT NULL,
 	`Data` VARCHAR(4000)     NULL,
 
-	CONSTRAINT `PK_T_05b17f31eb53` PRIMARY KEY CLUSTERED (`K1`, `K2`)
+	CONSTRAINT `PK_T_54de5bb8483b` PRIMARY KEY CLUSTERED (`K1`, `K2`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_05b17f31eb53`
+INSERT INTO `T_54de5bb8483b`
 (
 	`K1`,
 	`K2`,
@@ -97,7 +97,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			`T_05b17f31eb53` `t1`
+			`T_54de5bb8483b` `t1`
 		WHERE
 			`r`.`K1` = `t1`.`K1` AND `r`.`K2` = `t1`.`K2`
 	)
@@ -106,5 +106,5 @@ ORDER BY
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TEMPORARY TABLE IF EXISTS `T_05b17f31eb53`
+DROP TEMPORARY TABLE IF EXISTS `T_54de5bb8483b`
 

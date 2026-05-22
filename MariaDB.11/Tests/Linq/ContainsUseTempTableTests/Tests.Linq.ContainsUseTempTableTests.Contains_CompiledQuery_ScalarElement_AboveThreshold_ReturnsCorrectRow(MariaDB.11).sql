@@ -1,13 +1,13 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TEMPORARY TABLE `T_7f42741f2068`
+CREATE TEMPORARY TABLE `T_d5a7474d65d5`
 (
 	`item` INT NOT NULL
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_7f42741f2068`
+INSERT INTO `T_d5a7474d65d5`
 (
 	`item`
 )
@@ -48,12 +48,12 @@ VALUES
 SELECT
 	`t1`.`item`
 FROM
-	`T_7f42741f2068` `t1`
+	`T_d5a7474d65d5` `t1`
 ORDER BY
 	`t1`.`item`
 LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TEMPORARY TABLE IF EXISTS `T_7f42741f2068`
+DROP TEMPORARY TABLE IF EXISTS `T_d5a7474d65d5`
 

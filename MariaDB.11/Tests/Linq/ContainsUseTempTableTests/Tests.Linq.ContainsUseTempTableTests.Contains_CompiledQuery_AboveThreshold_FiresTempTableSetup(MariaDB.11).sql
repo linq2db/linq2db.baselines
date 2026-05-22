@@ -1,13 +1,13 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TEMPORARY TABLE `T_c98f7aaccd13`
+CREATE TEMPORARY TABLE `T_8648b0c25602`
 (
 	`item` INT NOT NULL
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_c98f7aaccd13`
+INSERT INTO `T_8648b0c25602`
 (
 	`item`
 )
@@ -48,9 +48,9 @@ VALUES
 SELECT
 	COUNT(*)
 FROM
-	`T_c98f7aaccd13` `t1`
+	`T_8648b0c25602` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TEMPORARY TABLE IF EXISTS `T_c98f7aaccd13`
+DROP TEMPORARY TABLE IF EXISTS `T_8648b0c25602`
 

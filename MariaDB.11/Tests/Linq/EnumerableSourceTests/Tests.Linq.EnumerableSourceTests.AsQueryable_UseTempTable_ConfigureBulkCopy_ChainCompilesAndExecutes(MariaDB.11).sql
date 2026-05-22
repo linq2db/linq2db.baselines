@@ -1,6 +1,6 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TEMPORARY TABLE `T_75c43686c9f7`
+CREATE TEMPORARY TABLE `T_37c1c5fd8237`
 (
 	`Id`   INT           NOT NULL,
 	`Data` VARCHAR(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE `T_75c43686c9f7`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_75c43686c9f7`
+INSERT INTO `T_37c1c5fd8237`
 (
 	`Id`,
 	`Data`
@@ -27,7 +27,7 @@ VALUES
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-INSERT INTO `T_75c43686c9f7`
+INSERT INTO `T_37c1c5fd8237`
 (
 	`Id`,
 	`Data`
@@ -50,11 +50,11 @@ SELECT
 	`t1`.`Id`,
 	`t1`.`Data`
 FROM
-	`T_75c43686c9f7` `t1`
+	`T_37c1c5fd8237` `t1`
 ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TEMPORARY TABLE IF EXISTS `T_75c43686c9f7`
+DROP TEMPORARY TABLE IF EXISTS `T_37c1c5fd8237`
 
