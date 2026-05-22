@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[T_86c493ccd027]
+CREATE TEMPORARY TABLE temp.[T_3f9a5d6e8dd6]
 (
 	[Id]   INTEGER       NOT NULL,
 	[Data] NVarChar(255)     NULL
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[T_86c493ccd027]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-INSERT INTO temp.[T_86c493ccd027]
+INSERT INTO temp.[T_3f9a5d6e8dd6]
 (
 	[Id],
 	[Data]
@@ -28,9 +28,9 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN temp.[T_86c493ccd027] [r] ON [p].[PersonID] = [r].[Id]
+		INNER JOIN temp.[T_3f9a5d6e8dd6] [r] ON [p].[PersonID] = [r].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[T_86c493ccd027]
+DROP TABLE IF EXISTS temp.[T_3f9a5d6e8dd6]
 
