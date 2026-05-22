@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_921278a10238"
+CREATE TEMPORARY TABLE "T_c2d4ece35cd3"
 (
 	item Int NOT NULL
 )
@@ -8,7 +8,7 @@ ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-INSERT INTO "T_921278a10238"
+INSERT INTO "T_c2d4ece35cd3"
 (
 	item
 )
@@ -42,17 +42,17 @@ WHERE
 		SELECT
 			t1.item
 		FROM
-			"T_921278a10238" t1
+			"T_c2d4ece35cd3" t1
 	) AND
 	b."Id" IN (
 		SELECT
 			t2.item
 		FROM
-			"T_921278a10238" t2
+			"T_c2d4ece35cd3" t2
 	) AND
 	a."Id" < b."Id"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-DROP TABLE IF EXISTS "T_921278a10238"
+DROP TABLE IF EXISTS "T_c2d4ece35cd3"
 
