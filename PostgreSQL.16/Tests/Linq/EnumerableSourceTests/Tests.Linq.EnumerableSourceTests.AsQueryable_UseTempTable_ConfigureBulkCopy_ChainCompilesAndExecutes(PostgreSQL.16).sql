@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_f8abb740f6a4"
+CREATE TEMPORARY TABLE "T_efe2425a7417"
 (
 	"Id"   Int  NOT NULL,
 	"Data" text     NULL
@@ -9,7 +9,7 @@ ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-INSERT INTO "T_f8abb740f6a4"
+INSERT INTO "T_efe2425a7417"
 (
 	"Id",
 	"Data"
@@ -28,7 +28,7 @@ VALUES
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-INSERT INTO "T_f8abb740f6a4"
+INSERT INTO "T_efe2425a7417"
 (
 	"Id",
 	"Data"
@@ -51,11 +51,11 @@ SELECT
 	t1."Id",
 	t1."Data"
 FROM
-	"T_f8abb740f6a4" t1
+	"T_efe2425a7417" t1
 ORDER BY
 	t1."Id"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "T_f8abb740f6a4"
+DROP TABLE IF EXISTS "T_efe2425a7417"
 

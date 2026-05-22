@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_f4575ad5bb8b"
+CREATE TEMPORARY TABLE "T_59e6e2f6eb01"
 (
 	item Int NOT NULL
 )
@@ -8,7 +8,7 @@ ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-INSERT INTO "T_f4575ad5bb8b"
+INSERT INTO "T_59e6e2f6eb01"
 (
 	item
 )
@@ -49,9 +49,9 @@ VALUES
 SELECT
 	COUNT(*)
 FROM
-	"T_f4575ad5bb8b" t1
+	"T_59e6e2f6eb01" t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "T_f4575ad5bb8b"
+DROP TABLE IF EXISTS "T_59e6e2f6eb01"
 
