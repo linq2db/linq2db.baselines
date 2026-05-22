@@ -1,0 +1,65 @@
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+CREATE TEMPORARY TABLE `T_70f2ba28a5d5`
+(
+	`Id`   INT           NOT NULL,
+	`Name` VARCHAR(4000)     NULL,
+	`Tag`  VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_T_70f2ba28a5d5` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+INSERT INTO `T_70f2ba28a5d5`
+(
+	`Id`,
+	`Name`,
+	`Tag`
+)
+VALUES
+(1,'row1','tag1'),
+(2,'row2','tag2'),
+(3,'row3',NULL),
+(4,'row4','tag4'),
+(5,'row5','tag5'),
+(6,'row6',NULL),
+(7,'row7','tag7'),
+(8,'row8','tag8'),
+(9,'row9',NULL),
+(10,'row10','tag10'),
+(11,'row11','tag11'),
+(12,'row12',NULL),
+(13,'row13','tag13'),
+(14,'row14','tag14'),
+(15,'row15',NULL),
+(16,'row16','tag16'),
+(17,'row17','tag17'),
+(18,'row18',NULL),
+(19,'row19','tag19'),
+(20,'row20','tag20')
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`r`.`Id`,
+	`r`.`Name`,
+	`r`.`Tag`
+FROM
+	`ContainsTempTableTestRow` `r`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`T_70f2ba28a5d5` `t1`
+		WHERE
+			`r`.`Id` = `t1`.`Id`
+	)
+ORDER BY
+	`r`.`Id`
+
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TEMPORARY TABLE IF EXISTS `T_70f2ba28a5d5`
+
