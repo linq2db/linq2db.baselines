@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [tempdb]..[#T_098270e10741]
+CREATE TABLE [tempdb]..[#T_6129d6394872]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_098270e10741]
 
 -- SqlServer.2016.MS SqlServer.2016
 
-INSERT INTO [tempdb]..[#T_098270e10741]
+INSERT INTO [tempdb]..[#T_6129d6394872]
 (
 	[Id],
 	[Data]
@@ -27,7 +27,7 @@ VALUES
 
 -- SqlServer.2016.MS SqlServer.2016
 
-INSERT INTO [tempdb]..[#T_098270e10741]
+INSERT INTO [tempdb]..[#T_6129d6394872]
 (
 	[Id],
 	[Data]
@@ -50,11 +50,11 @@ SELECT
 	[t1].[Id],
 	[t1].[Data]
 FROM
-	[tempdb]..[#T_098270e10741] [t1]
+	[tempdb]..[#T_6129d6394872] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [tempdb]..[#T_098270e10741]
+DROP TABLE IF EXISTS [tempdb]..[#T_6129d6394872]
 

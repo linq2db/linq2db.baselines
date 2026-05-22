@@ -1,11 +1,11 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
 
-CREATE TABLE [tempdb]..[#T_5755e4a3982c]
+CREATE TABLE [tempdb]..[#T_cc8122274e8f]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_5755e4a3982c](item)
+INSERT BULK [tempdb]..[#T_cc8122274e8f](item)
 
 -- SqlServer.2016.MS SqlServer.2016
 
@@ -20,17 +20,17 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_5755e4a3982c] [t1]
+			[tempdb]..[#T_cc8122274e8f] [t1]
 	) AND
 	[b].[Id] IN (
 		SELECT
 			[t2].[item]
 		FROM
-			[tempdb]..[#T_5755e4a3982c] [t2]
+			[tempdb]..[#T_cc8122274e8f] [t2]
 	) AND
 	[a].[Id] < [b].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
 
-DROP TABLE IF EXISTS [tempdb]..[#T_5755e4a3982c]
+DROP TABLE IF EXISTS [tempdb]..[#T_cc8122274e8f]
 
