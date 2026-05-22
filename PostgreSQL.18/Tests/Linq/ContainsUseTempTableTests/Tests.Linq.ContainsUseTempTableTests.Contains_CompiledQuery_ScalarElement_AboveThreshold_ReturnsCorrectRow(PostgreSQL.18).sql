@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_279822cedd1a"
+CREATE TEMPORARY TABLE "T_8f4ea09d4831"
 (
 	item Int NOT NULL
 )
@@ -8,7 +8,7 @@ ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL
 
-INSERT INTO "T_279822cedd1a"
+INSERT INTO "T_8f4ea09d4831"
 (
 	item
 )
@@ -49,12 +49,12 @@ VALUES
 SELECT
 	t1.item
 FROM
-	"T_279822cedd1a" t1
+	"T_8f4ea09d4831" t1
 ORDER BY
 	t1.item
 LIMIT 1
 
 -- PostgreSQL.18 PostgreSQL
 
-DROP TABLE IF EXISTS "T_279822cedd1a"
+DROP TABLE IF EXISTS "T_8f4ea09d4831"
 

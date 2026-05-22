@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_20d20a536368"
+CREATE TEMPORARY TABLE "T_e830516c5dbd"
 (
 	"K1"   Int  NOT NULL,
 	"K2"   text NOT NULL,
 	"Data" text     NULL,
 
-	CONSTRAINT "PK_T_20d20a536368" PRIMARY KEY ("K1", "K2")
+	CONSTRAINT "PK_T_e830516c5dbd" PRIMARY KEY ("K1", "K2")
 )
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL
 
-INSERT INTO "T_20d20a536368"
+INSERT INTO "T_e830516c5dbd"
 (
 	"K1",
 	"K2",
@@ -48,7 +48,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			"T_20d20a536368" t1
+			"T_e830516c5dbd" t1
 		WHERE
 			a."K1" = t1."K1" AND a."K2" = t1."K2"
 	) AND
@@ -56,7 +56,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			"T_20d20a536368" t2
+			"T_e830516c5dbd" t2
 		WHERE
 			b."K1" = t2."K1" AND b."K2" = t2."K2"
 	) AND
@@ -64,5 +64,5 @@ WHERE
 
 -- PostgreSQL.18 PostgreSQL
 
-DROP TABLE IF EXISTS "T_20d20a536368"
+DROP TABLE IF EXISTS "T_e830516c5dbd"
 

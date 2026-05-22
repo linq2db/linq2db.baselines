@@ -1,18 +1,18 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_675f5e3f966d"
+CREATE TEMPORARY TABLE "T_e87dd41992b3"
 (
 	"K1"   Int  NOT NULL,
 	"K2"   text NOT NULL,
 	"Data" text     NULL,
 
-	CONSTRAINT "PK_T_675f5e3f966d" PRIMARY KEY ("K1", "K2")
+	CONSTRAINT "PK_T_e87dd41992b3" PRIMARY KEY ("K1", "K2")
 )
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL
 
-INSERT INTO "T_675f5e3f966d"
+INSERT INTO "T_e87dd41992b3"
 (
 	"K1",
 	"K2",
@@ -43,7 +43,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			"T_675f5e3f966d" t1
+			"T_e87dd41992b3" t1
 		WHERE
 			r."K1" = t1."K1" AND r."K2" = t1."K2"
 	)
@@ -52,23 +52,23 @@ ORDER BY
 
 -- PostgreSQL.18 PostgreSQL
 
-DROP TABLE IF EXISTS "T_675f5e3f966d"
+DROP TABLE IF EXISTS "T_e87dd41992b3"
 
 -- PostgreSQL.18 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_675f5e3f966d"
+CREATE TEMPORARY TABLE "T_e87dd41992b3"
 (
 	"K1"   Int  NOT NULL,
 	"K2"   text NOT NULL,
 	"Data" text     NULL,
 
-	CONSTRAINT "PK_T_675f5e3f966d" PRIMARY KEY ("K1", "K2")
+	CONSTRAINT "PK_T_e87dd41992b3" PRIMARY KEY ("K1", "K2")
 )
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL
 
-INSERT INTO "T_675f5e3f966d"
+INSERT INTO "T_e87dd41992b3"
 (
 	"K1",
 	"K2",
@@ -99,7 +99,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			"T_675f5e3f966d" t1
+			"T_e87dd41992b3" t1
 		WHERE
 			r."K1" = t1."K1" AND r."K2" = t1."K2"
 	)
@@ -108,5 +108,5 @@ ORDER BY
 
 -- PostgreSQL.18 PostgreSQL
 
-DROP TABLE IF EXISTS "T_675f5e3f966d"
+DROP TABLE IF EXISTS "T_e87dd41992b3"
 

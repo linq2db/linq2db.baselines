@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-CREATE TEMPORARY TABLE "T_e82eb964b541"
+CREATE TEMPORARY TABLE "T_4ad03aa9f35a"
 (
 	"Id"   Int  NOT NULL,
 	"Data" text     NULL
@@ -9,7 +9,7 @@ ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL
 
-INSERT INTO "T_e82eb964b541"
+INSERT INTO "T_4ad03aa9f35a"
 (
 	"Id",
 	"Data"
@@ -29,9 +29,9 @@ SELECT
 	p."Gender"
 FROM
 	"Person" p
-		INNER JOIN "T_e82eb964b541" r ON p."PersonID" = r."Id"
+		INNER JOIN "T_4ad03aa9f35a" r ON p."PersonID" = r."Id"
 
 -- PostgreSQL.18 PostgreSQL
 
-DROP TABLE IF EXISTS "T_e82eb964b541"
+DROP TABLE IF EXISTS "T_4ad03aa9f35a"
 
