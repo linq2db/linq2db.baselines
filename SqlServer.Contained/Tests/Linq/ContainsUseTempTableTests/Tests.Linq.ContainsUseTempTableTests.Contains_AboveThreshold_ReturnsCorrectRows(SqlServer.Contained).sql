@@ -1,11 +1,11 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_c8bbcc591523]
+CREATE TABLE [tempdb]..[#T_0a666583c7e5]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_c8bbcc591523](item)
+INSERT BULK [tempdb]..[#T_0a666583c7e5](item)
 
 -- SqlServer.Contained SqlServer.2019
 
@@ -20,12 +20,12 @@ WHERE
 		SELECT
 			[t1].[item]
 		FROM
-			[tempdb]..[#T_c8bbcc591523] [t1]
+			[tempdb]..[#T_0a666583c7e5] [t1]
 	)
 ORDER BY
 	[r].[Id]
 
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_c8bbcc591523]
+DROP TABLE IF EXISTS [tempdb]..[#T_0a666583c7e5]
 

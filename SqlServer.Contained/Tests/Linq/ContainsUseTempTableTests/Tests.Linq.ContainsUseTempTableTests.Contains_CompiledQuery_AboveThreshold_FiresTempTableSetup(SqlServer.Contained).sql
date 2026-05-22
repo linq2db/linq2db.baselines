@@ -1,20 +1,20 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_883678115523]
+CREATE TABLE [tempdb]..[#T_3ca2d69bfa65]
 (
 	[item] Int NOT NULL
 )
 
-INSERT BULK [tempdb]..[#T_883678115523](item)
+INSERT BULK [tempdb]..[#T_3ca2d69bfa65](item)
 
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
 	COUNT(*)
 FROM
-	[tempdb]..[#T_883678115523] [t1]
+	[tempdb]..[#T_3ca2d69bfa65] [t1]
 
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_883678115523]
+DROP TABLE IF EXISTS [tempdb]..[#T_3ca2d69bfa65]
 
