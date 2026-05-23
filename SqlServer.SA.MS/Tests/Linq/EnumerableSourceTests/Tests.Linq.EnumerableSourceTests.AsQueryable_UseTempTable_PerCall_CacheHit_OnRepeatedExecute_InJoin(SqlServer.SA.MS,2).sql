@@ -1,12 +1,12 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_0def96dc65c9]
+CREATE TABLE [tempdb]..[#T_45b4e4dd9ace]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
 )
 
-INSERT BULK [tempdb]..[#T_0def96dc65c9](Id, Data)
+INSERT BULK [tempdb]..[#T_45b4e4dd9ace](Id, Data)
 
 -- SqlServer.SA.MS SqlServer.2019
 
@@ -18,9 +18,9 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		INNER JOIN [tempdb]..[#T_0def96dc65c9] [r] ON [p].[PersonID] = [r].[Id]
+		INNER JOIN [tempdb]..[#T_45b4e4dd9ace] [r] ON [p].[PersonID] = [r].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_0def96dc65c9]
+DROP TABLE IF EXISTS [tempdb]..[#T_45b4e4dd9ace]
 

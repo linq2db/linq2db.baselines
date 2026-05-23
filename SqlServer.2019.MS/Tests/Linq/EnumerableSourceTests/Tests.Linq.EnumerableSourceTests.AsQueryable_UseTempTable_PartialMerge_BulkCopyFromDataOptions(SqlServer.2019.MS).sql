@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
 
-CREATE TABLE [tempdb]..[#T_071e96eed473]
+CREATE TABLE [tempdb]..[#T_473e1e1952ee]
 (
 	[Id]   Int            NOT NULL,
 	[Data] NVarChar(4000)     NULL
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#T_071e96eed473]
 
 -- SqlServer.2019.MS SqlServer.2019
 
-INSERT INTO [tempdb]..[#T_071e96eed473]
+INSERT INTO [tempdb]..[#T_473e1e1952ee]
 (
 	[Id],
 	[Data]
@@ -27,7 +27,7 @@ VALUES
 
 -- SqlServer.2019.MS SqlServer.2019
 
-INSERT INTO [tempdb]..[#T_071e96eed473]
+INSERT INTO [tempdb]..[#T_473e1e1952ee]
 (
 	[Id],
 	[Data]
@@ -50,11 +50,11 @@ SELECT
 	[t1].[Id],
 	[t1].[Data]
 FROM
-	[tempdb]..[#T_071e96eed473] [t1]
+	[tempdb]..[#T_473e1e1952ee] [t1]
 ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2019.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [tempdb]..[#T_071e96eed473]
+DROP TABLE IF EXISTS [tempdb]..[#T_473e1e1952ee]
 
