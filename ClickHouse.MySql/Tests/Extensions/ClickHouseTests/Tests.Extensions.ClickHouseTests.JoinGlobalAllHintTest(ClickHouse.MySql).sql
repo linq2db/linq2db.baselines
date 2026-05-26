@@ -5,5 +5,5 @@ SELECT
 	p.Value1
 FROM
 	Child t1
-		LEFT ANY JOIN Parent p ON t1.ParentID = p.ParentID
+		GLOBAL LEFT ALL JOIN Parent p ON t1.ParentID = p.ParentID
 
