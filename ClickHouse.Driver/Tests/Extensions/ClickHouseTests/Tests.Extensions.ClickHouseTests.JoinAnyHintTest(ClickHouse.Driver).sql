@@ -4,6 +4,6 @@ SELECT
 	p.ParentID,
 	p.Value1
 FROM
-	Child c_1
-		INNER ANY JOIN Parent p ON c_1.ParentID = p.ParentID
+	Child t1
+		LEFT ANY JOIN Parent p ON t1.ParentID = p.ParentID
 
