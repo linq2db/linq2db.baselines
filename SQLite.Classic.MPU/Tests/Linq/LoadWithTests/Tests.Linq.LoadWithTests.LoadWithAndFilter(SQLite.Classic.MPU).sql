@@ -29,8 +29,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
-ORDER BY
-	[m_2].[Id_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -121,8 +119,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
-ORDER BY
-	[m_2].[Id_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
@@ -216,8 +212,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
-ORDER BY
-	[m_2].[Id_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
