@@ -29,5 +29,5 @@ FROM
 			"Item" x
 	) x_1
 ORDER BY
-	Nvl(x_1.Sum_1, Nvl(NULL, 0))
+	Nvl(x_1.Sum_1, 0)
 
