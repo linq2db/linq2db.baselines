@@ -6,8 +6,8 @@ SELECT
 	[a_PersonDoctor].[LastName],
 	[a_PersonDoctor].[MiddleName],
 	[a_PersonDoctor].[Gender],
-	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName],
-	[a_PersonDoctor].[LastName] + ', ' + [a_PersonDoctor].[FirstName],
+	[a_PersonDoctor].[LastName] || ', ' || [a_PersonDoctor].[FirstName],
+	[a_PersonDoctor].[LastName] || ', ' || [a_PersonDoctor].[FirstName],
 	(
 		SELECT
 			COUNT(*)

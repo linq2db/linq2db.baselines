@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	RTRIM(Coalesce([t].[VarCharColumn], '') + '   ')
+	RTRIM(Coalesce([t].[VarCharColumn], '') || '   ')
 FROM
 	[StringTrimTable] [t]
 

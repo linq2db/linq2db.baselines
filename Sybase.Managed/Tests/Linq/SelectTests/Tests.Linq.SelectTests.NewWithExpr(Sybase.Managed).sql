@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[PersonID],
-	[p].[FirstName] + '1'
+	[p].[FirstName] || '1'
 FROM
 	[Person] [p]
 
