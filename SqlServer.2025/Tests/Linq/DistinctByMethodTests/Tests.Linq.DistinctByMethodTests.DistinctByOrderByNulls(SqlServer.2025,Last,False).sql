@@ -11,22 +11,24 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[Id], [e].[Name] ORDER BY [e].[Name], [e].[Date] DESC) as [RowNumber],
-			[e].[Name],
-			[e].[Date] as [Date_1],
+			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id], [e].[Date]) as [RowNumber],
+			[e].[Priority],
 			[e].[Id],
+			[e].[Date] as [Date_1],
+			[e].[Name],
 			[e].[Group] as [Group_1],
 			[e].[Amount],
-			[e].[IsActive],
-			[e].[Priority]
+			[e].[IsActive]
 		FROM
 			[TestData] [e]
 	) [t1]
 WHERE
 	[t1].[RowNumber] = 1
 ORDER BY
-	[t1].[Name],
-	[t1].[Date_1] DESC
+	IIF([t1].[Priority] IS NULL, 1, 0),
+	[t1].[Priority],
+	[t1].[Id],
+	[t1].[Date_1]
 
 -- SqlServer.2025
 
