@@ -2,7 +2,6 @@
 
 SELECT
 	t1."Id",
-	t1."ExpressionMethod",
 	(
 		SELECT
 			se."Value"
