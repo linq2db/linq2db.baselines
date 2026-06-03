@@ -2,6 +2,7 @@
 
 SELECT
 	"t3"."Id",
+	"t3"."ExpressionMethod",
 	"t1"."ExpressionMethod",
 	"t2"."Association"
 FROM
