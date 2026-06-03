@@ -19,6 +19,8 @@ SELECT
 	[cu].[Id],
 	[cu].[Name],
 	[cu].[CountOfCards],
+	[cu].[CountOfCards2],
+	[cu].[CountOfCards3],
 	(
 		SELECT
 			COUNT(*)
@@ -44,6 +46,8 @@ SELECT
 	[cu].[Id],
 	[cu].[Name],
 	[cu].[CountOfCards],
+	[cu].[CountOfCards2],
+	[cu].[CountOfCards3],
 	(
 		SELECT
 			COUNT(*)
