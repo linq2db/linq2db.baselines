@@ -2,7 +2,8 @@
 
 SELECT
 	[t2].[Id],
-	[t1].[ExpressionMethod]
+	[t2].[ExpressionMethod],
+	[t1].[ExpressionMethod] as [ExpressionMethod_1]
 FROM
 	[Issue4723Table1] [t2]
 		OUTER APPLY (
