@@ -3,7 +3,6 @@
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
-	"t1"."Lics",
 	(
 		SELECT
 			LIST("x"."Id")
