@@ -2,6 +2,7 @@
 
 SELECT
 	"t1"."Id",
+	"t1"."ExpressionMethod",
 	(
 		SELECT FIRST 1
 			"se"."Value"

@@ -3,6 +3,7 @@
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
+	"t1"."Lics",
 	(
 		SELECT FIRST 1
 			LIST("x"."Id")
