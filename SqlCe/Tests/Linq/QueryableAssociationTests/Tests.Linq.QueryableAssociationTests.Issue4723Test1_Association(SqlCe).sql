@@ -2,8 +2,7 @@
 
 SELECT
 	[t3].[Id],
-	[t3].[ExpressionMethod],
-	[t1].[ExpressionMethod] as [ExpressionMethod_1],
+	[t1].[ExpressionMethod],
 	[t2].[Association]
 FROM
 	[Issue4723Table1] [t3]
