@@ -4,7 +4,7 @@ SELECT TOP 2
 	[e].[PersonID],
 	[e].[FirstName],
 	[e].[LastName],
-	CASE WHEN [e].[FirstName] IS NULL OR ':' IS NULL OR [e].[LastName] IS NULL THEN NULL ELSE [e].[FirstName] + ':' + [e].[LastName] END
+	[e].[FirstName] + ':' + [e].[LastName]
 FROM
 	[Person] [e]
 WHERE
