@@ -12,10 +12,6 @@ FROM
 			[Parent] [p]
 	) [t1]
 ORDER BY
-	CASE
-		WHEN [t1].[Value1] IS NULL THEN 1
-		ELSE 0
-	END,
 	[t1].[Value1] DESC
 
 -- SqlServer.2008
