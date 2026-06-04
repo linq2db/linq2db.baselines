@@ -9,10 +9,6 @@ SELECT TOP (@take)
 FROM
 	[NullsTable] [t1]
 ORDER BY
-	CASE
-		WHEN [t1].[Value] IS NULL THEN 1
-		ELSE 0
-	END,
 	[t1].[Value] DESC,
 	[t1].[Id]
 

@@ -10,10 +10,6 @@ FROM
 	[NullsTable] [t1]
 ORDER BY
 	[t1].[Grp],
-	CASE
-		WHEN [t1].[Value] IS NULL THEN 1
-		ELSE 0
-	END,
 	[t1].[Value] DESC,
 	[t1].[Id]
 

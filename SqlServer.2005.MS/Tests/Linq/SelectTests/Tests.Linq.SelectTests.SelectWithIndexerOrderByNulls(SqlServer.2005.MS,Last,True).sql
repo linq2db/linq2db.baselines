@@ -6,15 +6,8 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY CASE
-				WHEN [p].[MiddleName] IS NULL THEN 1
-				ELSE 0
-			END, [p].[MiddleName] DESC, [p].[PersonID]) - 1 as [Index_1],
+			ROW_NUMBER() OVER (ORDER BY [p].[MiddleName] DESC, [p].[PersonID]) - 1 as [Index_1],
 			[p].[PersonID] as [ID],
-			CASE
-				WHEN [p].[MiddleName] IS NULL THEN 1
-				ELSE 0
-			END as [c1],
 			[p].[MiddleName]
 		FROM
 			[Person] [p]
@@ -22,7 +15,6 @@ FROM
 WHERE
 	[x].[Index_1] >= 0
 ORDER BY
-	[x].[c1],
 	[x].[MiddleName] DESC,
 	[x].[ID]
 
