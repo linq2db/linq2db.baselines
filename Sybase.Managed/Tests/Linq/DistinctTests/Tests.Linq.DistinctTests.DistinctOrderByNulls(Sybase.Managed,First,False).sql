@@ -1,20 +1,11 @@
 ﻿-- Sybase.Managed Sybase
 
-SELECT TOP 3
-	[t1].[Value1]
+SELECT DISTINCT TOP 3
+	[p].[Value1]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
 ORDER BY
-	CASE
-		WHEN [t1].[Value1] IS NULL THEN 0
-		ELSE 1
-	END,
-	[t1].[Value1]
+	[p].[Value1]
 
 -- Sybase.Managed Sybase
 

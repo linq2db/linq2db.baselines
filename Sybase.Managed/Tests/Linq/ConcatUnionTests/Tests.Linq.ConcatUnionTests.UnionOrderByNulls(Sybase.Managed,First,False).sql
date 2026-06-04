@@ -22,10 +22,6 @@ FROM
 			[p_1].[ParentID] >= 3
 	) [t1]
 ORDER BY
-	CASE
-		WHEN [t1].[Value1] IS NULL THEN 0
-		ELSE 1
-	END,
 	[t1].[Value1],
 	[t1].[ParentID]
 

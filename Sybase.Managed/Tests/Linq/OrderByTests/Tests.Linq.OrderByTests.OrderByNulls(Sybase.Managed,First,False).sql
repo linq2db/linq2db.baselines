@@ -7,10 +7,6 @@ SELECT TOP 3
 FROM
 	[NullsTable] [t1]
 ORDER BY
-	CASE
-		WHEN [t1].[Value] IS NULL THEN 0
-		ELSE 1
-	END,
 	[t1].[Value],
 	[t1].[Id]
 
