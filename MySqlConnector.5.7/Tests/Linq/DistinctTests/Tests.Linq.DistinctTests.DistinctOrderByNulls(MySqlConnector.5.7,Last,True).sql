@@ -2,21 +2,12 @@
 DECLARE @take Int32
 SET     @take = 3
 
-SELECT
-	`t1`.`Value1`
+SELECT DISTINCT
+	`p`.`Value1`
 FROM
-	(
-		SELECT DISTINCT
-			`p`.`Value1`
-		FROM
-			`Parent` `p`
-	) `t1`
+	`Parent` `p`
 ORDER BY
-	CASE
-		WHEN `t1`.`Value1` IS NULL THEN 1
-		ELSE 0
-	END,
-	`t1`.`Value1` DESC
+	`p`.`Value1` DESC
 LIMIT @take
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
