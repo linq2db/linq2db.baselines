@@ -7,7 +7,7 @@ SELECT
 FROM
 	NullsTable x
 ORDER BY
-	x."Value" NULLS LAST,
+	x."Value",
 	x.Id
 LIMIT $take
 
@@ -20,7 +20,7 @@ SELECT
 FROM
 	NullsTable x
 ORDER BY
-	x."Value" NULLS LAST,
+	x."Value",
 	x.Id
 LIMIT $take
 
