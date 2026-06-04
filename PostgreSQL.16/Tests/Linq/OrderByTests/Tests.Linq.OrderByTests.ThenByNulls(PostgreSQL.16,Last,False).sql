@@ -10,7 +10,7 @@ FROM
 	"NullsTable" t1
 ORDER BY
 	t1."Grp",
-	t1."Value" NULLS LAST,
+	t1."Value",
 	t1."Id"
 LIMIT :take
 
