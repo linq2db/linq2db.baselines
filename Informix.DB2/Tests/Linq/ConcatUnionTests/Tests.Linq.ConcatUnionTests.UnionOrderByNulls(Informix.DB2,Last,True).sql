@@ -24,10 +24,6 @@ FROM
 			p_1.ParentID >= 3
 	) t1
 ORDER BY
-	CASE
-		WHEN t1.Value1 IS NULL THEN 1
-		ELSE 0
-	END,
 	t1.Value1 DESC,
 	t1.ParentID
 

@@ -11,10 +11,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY CASE
-				WHEN e.Priority IS NULL THEN 1
-				ELSE 0
-			END, e.Priority DESC, e.Id, e."Date") as RowNumber,
+			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e.Priority DESC, e.Id, e."Date") as RowNumber,
 			e.Priority,
 			e.Id,
 			e."Date" as Date_1,
@@ -28,10 +25,6 @@ FROM
 WHERE
 	t1.RowNumber = 1
 ORDER BY
-	CASE
-		WHEN t1.Priority IS NULL THEN 1
-		ELSE 0
-	END,
 	t1.Priority DESC,
 	t1.Id,
 	t1.Date_1
