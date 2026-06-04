@@ -9,7 +9,7 @@ SELECT
 FROM
 	"NullsTable" t1
 ORDER BY
-	t1."Value" DESC NULLS FIRST,
+	t1."Value" DESC,
 	t1."Id"
 FETCH NEXT :take ROWS ONLY
 

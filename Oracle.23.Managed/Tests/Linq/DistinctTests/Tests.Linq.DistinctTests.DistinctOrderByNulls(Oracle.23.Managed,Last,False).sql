@@ -7,7 +7,7 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 ORDER BY
-	p."Value1" NULLS LAST
+	p."Value1"
 FETCH NEXT :take ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
