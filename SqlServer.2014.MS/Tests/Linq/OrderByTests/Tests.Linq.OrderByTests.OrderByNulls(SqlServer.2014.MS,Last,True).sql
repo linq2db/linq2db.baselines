@@ -9,7 +9,6 @@ SELECT TOP (@take)
 FROM
 	[NullsTable] [t1]
 ORDER BY
-	IIF([t1].[Value] IS NULL, 1, 0),
 	[t1].[Value] DESC,
 	[t1].[Id]
 
