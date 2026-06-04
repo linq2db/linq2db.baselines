@@ -7,7 +7,7 @@ SELECT DISTINCT
 FROM
 	"Parent" "p"
 ORDER BY
-	"p"."Value1" NULLS FIRST
+	"p"."Value1"
 FETCH NEXT @take ROWS ONLY
 
 -- Firebird.4 Firebird4
