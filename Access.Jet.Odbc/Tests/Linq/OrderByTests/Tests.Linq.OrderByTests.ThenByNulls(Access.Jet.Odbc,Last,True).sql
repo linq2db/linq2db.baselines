@@ -8,7 +8,6 @@ FROM
 	[NullsTable] [t1]
 ORDER BY
 	[t1].[Grp],
-	IIF([t1].[Value] IS NULL, 1, 0),
 	[t1].[Value] DESC,
 	[t1].[Id]
 

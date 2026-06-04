@@ -1,17 +1,11 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
-SELECT TOP 3
-	[t1].[Value1]
+SELECT DISTINCT TOP 3
+	[p].[Value1]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
 ORDER BY
-	IIF([t1].[Value1] IS NULL, 0, 1),
-	[t1].[Value1]
+	[p].[Value1]
 
 -- Access.Jet.OleDb AccessOleDb
 

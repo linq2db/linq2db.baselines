@@ -22,7 +22,6 @@ FROM
 			[p_1].[ParentID] >= 3
 	) [t1]
 ORDER BY
-	IIF([t1].[Value1] IS NULL, 1, 0),
 	[t1].[Value1] DESC,
 	[t1].[ParentID]
 
