@@ -29,13 +29,13 @@ FROM
 					p_1."ParentID" >= 3
 			) t1
 		ORDER BY
-			t1."Value1" DESC NULLS FIRST,
+			t1."Value1" DESC,
 			t1."ParentID"
 	) t2
 WHERE
 	ROWNUM <= :take
 ORDER BY
-	t2."Value1" DESC NULLS FIRST,
+	t2."Value1" DESC,
 	t2."ParentID"
 
 -- Oracle.11.Managed Oracle11

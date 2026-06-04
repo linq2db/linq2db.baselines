@@ -11,12 +11,12 @@ FROM
 		FROM
 			"Parent" p
 		ORDER BY
-			p."Value1" NULLS LAST
+			p."Value1"
 	) t1
 WHERE
 	ROWNUM <= :take
 ORDER BY
-	t1."Value1" NULLS LAST
+	t1."Value1"
 
 -- Oracle.11.Managed Oracle11
 

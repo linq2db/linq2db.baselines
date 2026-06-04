@@ -16,14 +16,14 @@ FROM
 			"NullsTable" t1
 		ORDER BY
 			t1."Grp",
-			t1."Value" NULLS LAST,
+			t1."Value",
 			t1."Id"
 	) t2
 WHERE
 	ROWNUM <= :take
 ORDER BY
 	t2."Grp",
-	t2."Value_1" NULLS LAST,
+	t2."Value_1",
 	t2."Id"
 
 -- Oracle.11.Managed Oracle11

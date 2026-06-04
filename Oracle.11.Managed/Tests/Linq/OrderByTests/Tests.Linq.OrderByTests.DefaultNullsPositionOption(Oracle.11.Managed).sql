@@ -11,7 +11,7 @@ FROM
 		FROM
 			"NullsTable" x
 		ORDER BY
-			x."Value" NULLS LAST,
+			x."Value",
 			x."Id"
 	) t1
 WHERE
@@ -32,7 +32,7 @@ FROM
 		FROM
 			"NullsTable" x
 		ORDER BY
-			x."Value" NULLS LAST,
+			x."Value",
 			x."Id"
 	) t1
 WHERE

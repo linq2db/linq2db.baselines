@@ -11,12 +11,12 @@ FROM
 		FROM
 			"Parent" p
 		ORDER BY
-			p."Value1" DESC NULLS FIRST
+			p."Value1" DESC
 	) t1
 WHERE
 	ROWNUM <= :take
 ORDER BY
-	t1."Value1" DESC NULLS FIRST
+	t1."Value1" DESC
 
 -- Oracle.11.Managed Oracle11
 

@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority" NULLS LAST, e."Id") as "RowNumber",
+			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
 			e."Priority",
 			e."Id",
 			e."Group" as "Group_1"
@@ -15,8 +15,8 @@ FROM
 WHERE
 	x."RowNumber" = 1
 ORDER BY
-	x."Group_1" NULLS LAST,
-	x."Priority" NULLS LAST,
+	x."Group_1",
+	x."Priority",
 	x."Id"
 
 -- Oracle.11.Managed Oracle11
@@ -26,7 +26,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority" NULLS LAST, e."Id") as "RowNumber",
+			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
 			e."Priority",
 			e."Id",
 			e."Group" as "Group_1"
@@ -36,7 +36,7 @@ FROM
 WHERE
 	x."RowNumber" = 1
 ORDER BY
-	x."Group_1" NULLS LAST,
-	x."Priority" NULLS LAST,
+	x."Group_1",
+	x."Priority",
 	x."Id"
 
