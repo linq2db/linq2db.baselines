@@ -7,7 +7,7 @@ SELECT
 FROM
 	"NullsTable" x
 ORDER BY
-	x."Value" NULLS LAST,
+	x."Value",
 	x."Id"
 FETCH NEXT :take ROWS ONLY
 
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"NullsTable" x
 ORDER BY
-	x."Value" NULLS LAST,
+	x."Value",
 	x."Id"
 FETCH NEXT :take ROWS ONLY
 
