@@ -11,7 +11,7 @@ SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 -- Oracle.11.Managed Oracle11
 DECLARE @:p1 Int32
-SET     @:p1 = {29,30,31,32}
+SET     @:p1 = {35,36,37,38}
 DECLARE @:p2 Varchar2 -- String
 SET     @:p2 = {'Value','Value','Value','Value'}
 
