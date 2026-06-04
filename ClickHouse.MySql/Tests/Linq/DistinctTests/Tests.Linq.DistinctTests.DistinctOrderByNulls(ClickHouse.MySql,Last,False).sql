@@ -5,7 +5,7 @@ SELECT DISTINCT
 FROM
 	Parent p
 ORDER BY
-	p.Value1 NULLS LAST
+	p.Value1
 LIMIT 3
 
 -- ClickHouse.MySql ClickHouse

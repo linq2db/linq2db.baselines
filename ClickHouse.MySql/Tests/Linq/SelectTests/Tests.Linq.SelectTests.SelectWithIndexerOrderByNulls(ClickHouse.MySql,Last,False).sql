@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY p.MiddleName NULLS LAST, p.PersonID) - toInt64(1) as Index_1,
+			ROW_NUMBER() OVER (ORDER BY p.MiddleName, p.PersonID) - toInt64(1) as Index_1,
 			p.PersonID as ID,
 			p.MiddleName as MiddleName
 		FROM
@@ -15,7 +15,7 @@ FROM
 WHERE
 	x.Index_1 >= toInt64(0)
 ORDER BY
-	x.MiddleName NULLS LAST,
+	x.MiddleName,
 	x.ID
 
 -- ClickHouse.MySql ClickHouse

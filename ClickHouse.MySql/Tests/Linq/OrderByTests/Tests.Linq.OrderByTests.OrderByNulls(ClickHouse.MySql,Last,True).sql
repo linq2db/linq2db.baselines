@@ -7,7 +7,7 @@ SELECT
 FROM
 	NullsTable t1
 ORDER BY
-	t1.Value DESC NULLS LAST,
+	t1.Value DESC,
 	t1.Id
 LIMIT 3
 

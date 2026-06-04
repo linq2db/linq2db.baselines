@@ -24,18 +24,11 @@ WHERE
 	) OR
 	t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			t2.In_1
+			minOrNull(g_2.ID)
 		FROM
-			(
-				SELECT
-					minOrNull(g_2.ID) as In_1
-				FROM
-					test_in_2 g_2
-				GROUP BY
-					g_2.GV
-			) t2
-		WHERE
-			t2.In_1 IS NOT NULL
+			test_in_2 g_2
+		GROUP BY
+			g_2.GV
 	)
 
 -- ClickHouse.MySql ClickHouse
