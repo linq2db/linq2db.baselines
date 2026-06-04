@@ -7,7 +7,7 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 ORDER BY
-	p."Value1" NULLS LAST
+	p."Value1"
 LIMIT :take
 
 -- PostgreSQL.15 PostgreSQL
