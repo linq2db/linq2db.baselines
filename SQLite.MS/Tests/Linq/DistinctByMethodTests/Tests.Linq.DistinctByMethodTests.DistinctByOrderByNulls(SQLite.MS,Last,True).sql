@@ -11,7 +11,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY [e].[Priority] DESC NULLS LAST, [e].[Id], [e].[Date]) as [RowNumber],
+			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY [e].[Priority] DESC, [e].[Id], [e].[Date]) as [RowNumber],
 			[e].[Priority],
 			[e].[Id],
 			[e].[Date] as [Date_1],
@@ -25,7 +25,7 @@ FROM
 WHERE
 	[t1].[RowNumber] = 1
 ORDER BY
-	[t1].[Priority] DESC NULLS LAST,
+	[t1].[Priority] DESC,
 	[t1].[Id],
 	[t1].[Date_1]
 

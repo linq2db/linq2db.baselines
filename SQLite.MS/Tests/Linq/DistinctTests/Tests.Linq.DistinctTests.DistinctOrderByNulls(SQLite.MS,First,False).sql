@@ -7,7 +7,7 @@ SELECT DISTINCT
 FROM
 	[Parent] [p]
 ORDER BY
-	[p].[Value1] NULLS FIRST
+	[p].[Value1]
 LIMIT @take
 
 -- SQLite.MS SQLite
