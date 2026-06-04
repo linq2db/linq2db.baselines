@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY p."MiddleName" DESC NULLS FIRST, p."PersonID") - 1 as "Index_1",
+			ROW_NUMBER() OVER (ORDER BY p."MiddleName" DESC, p."PersonID") - 1 as "Index_1",
 			p."PersonID" as "ID",
 			p."MiddleName"
 		FROM
@@ -15,7 +15,7 @@ FROM
 WHERE
 	x."Index_1" >= 0
 ORDER BY
-	x."MiddleName" DESC NULLS FIRST,
+	x."MiddleName" DESC,
 	x."ID"
 
 -- PostgreSQL.18 PostgreSQL
