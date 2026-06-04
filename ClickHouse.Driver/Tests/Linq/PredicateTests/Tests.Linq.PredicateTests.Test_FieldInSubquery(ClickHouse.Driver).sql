@@ -109,8 +109,6 @@ WHERE
 			r_2.Value4
 		FROM
 			BooleanTable r_2
-		WHERE
-			r_2.Value4 IS NOT NULL
 	)
 
 -- ClickHouse.Driver ClickHouse
@@ -234,8 +232,6 @@ WHERE
 			r_2.Value4
 		FROM
 			BooleanTable r_2
-		WHERE
-			r_2.Value4 IS NOT NULL
 	))
 
 -- ClickHouse.Driver ClickHouse

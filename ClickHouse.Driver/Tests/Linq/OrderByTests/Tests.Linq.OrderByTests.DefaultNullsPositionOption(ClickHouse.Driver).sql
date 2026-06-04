@@ -5,7 +5,7 @@ SELECT
 FROM
 	NullsTable x
 ORDER BY
-	x.Value NULLS LAST,
+	x.Value,
 	x.Id
 LIMIT 3
 
@@ -16,7 +16,7 @@ SELECT
 FROM
 	NullsTable x
 ORDER BY
-	x.Value NULLS LAST,
+	x.Value,
 	x.Id
 LIMIT 3
 

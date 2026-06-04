@@ -19,8 +19,6 @@ WHERE
 			p_1.ID
 		FROM
 			test_in_2 p_1
-		WHERE
-			p_1.ID IS NOT NULL
 	))
 
 -- ClickHouse.Driver ClickHouse
