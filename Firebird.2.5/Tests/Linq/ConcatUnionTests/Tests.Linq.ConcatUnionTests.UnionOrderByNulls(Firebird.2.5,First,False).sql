@@ -24,7 +24,7 @@ FROM
 			"p_1"."ParentID" >= 3
 	) "t1"
 ORDER BY
-	"t1"."Value1" NULLS FIRST,
+	"t1"."Value1",
 	"t1"."ParentID"
 
 -- Firebird.2.5 Firebird

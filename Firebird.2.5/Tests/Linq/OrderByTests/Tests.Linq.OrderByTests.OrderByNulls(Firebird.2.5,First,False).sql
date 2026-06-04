@@ -9,7 +9,7 @@ SELECT FIRST @take
 FROM
 	"NullsTable" "t1"
 ORDER BY
-	"t1"."Value" NULLS FIRST,
+	"t1"."Value",
 	"t1"."Id"
 
 -- Firebird.2.5 Firebird

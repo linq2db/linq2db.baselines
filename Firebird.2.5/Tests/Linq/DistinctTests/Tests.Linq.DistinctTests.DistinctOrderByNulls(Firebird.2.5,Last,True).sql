@@ -7,7 +7,7 @@ SELECT FIRST @take DISTINCT
 FROM
 	"Parent" "p"
 ORDER BY
-	"p"."Value1" DESC NULLS LAST
+	"p"."Value1" DESC
 
 -- Firebird.2.5 Firebird
 
