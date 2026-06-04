@@ -2,18 +2,12 @@
 DECLARE @take Int -- Int32
 SET     @take = 3
 
-SELECT TOP (@take)
-	[t1].[Value1]
+SELECT DISTINCT TOP (@take)
+	[p].[Value1]
 FROM
-	(
-		SELECT DISTINCT
-			[p].[Value1]
-		FROM
-			[Parent] [p]
-	) [t1]
+	[Parent] [p]
 ORDER BY
-	IIF([t1].[Value1] IS NULL, 1, 0),
-	[t1].[Value1] DESC
+	[p].[Value1] DESC
 
 -- SqlServer.2019.MS SqlServer.2019
 
