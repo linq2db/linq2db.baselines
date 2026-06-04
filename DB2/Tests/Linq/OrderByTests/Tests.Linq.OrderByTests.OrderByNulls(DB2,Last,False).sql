@@ -7,7 +7,7 @@ SELECT
 FROM
 	"NullsTable" "t1"
 ORDER BY
-	"t1"."Value" NULLS LAST,
+	"t1"."Value",
 	"t1"."Id"
 FETCH NEXT 3 ROWS ONLY
 

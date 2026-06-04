@@ -5,7 +5,7 @@ SELECT
 FROM
 	"NullsTable" "x"
 ORDER BY
-	"x"."Value" NULLS LAST,
+	"x"."Value",
 	"x"."Id"
 FETCH NEXT 3 ROWS ONLY
 
@@ -16,7 +16,7 @@ SELECT
 FROM
 	"NullsTable" "x"
 ORDER BY
-	"x"."Value" NULLS LAST,
+	"x"."Value",
 	"x"."Id"
 FETCH NEXT 3 ROWS ONLY
 

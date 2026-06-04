@@ -5,7 +5,7 @@ SELECT DISTINCT
 FROM
 	"Parent" "p"
 ORDER BY
-	"p"."Value1" NULLS LAST
+	"p"."Value1"
 FETCH NEXT 3 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW

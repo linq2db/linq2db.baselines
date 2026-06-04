@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LISTAGG("t1"."Value2", ' -> ') WITHIN GROUP (ORDER BY CASE WHEN "t1"."Value1" IS NULL THEN 1 ELSE 0 END, "t1"."Value1")
+	LISTAGG("t1"."Value2", ' -> ') WITHIN GROUP (ORDER BY "t1"."Value1")
 FROM
 	"SampleClass" "t1"
 

@@ -8,7 +8,7 @@ FROM
 	"NullsTable" "t1"
 ORDER BY
 	"t1"."Grp",
-	"t1"."Value" DESC NULLS FIRST,
+	"t1"."Value" DESC,
 	"t1"."Id"
 FETCH NEXT 3 ROWS ONLY
 
