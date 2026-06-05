@@ -24,11 +24,18 @@ WHERE
 	) OR
 	t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			minOrNull(g_2.ID)
+			t2.In_1
 		FROM
-			test_in_2 g_2
-		GROUP BY
-			g_2.GV
+			(
+				SELECT
+					minOrNull(g_2.ID) as In_1
+				FROM
+					test_in_2 g_2
+				GROUP BY
+					g_2.GV
+			) t2
+		WHERE
+			t2.In_1 IS NOT NULL
 	)
 
 -- ClickHouse.Driver ClickHouse
