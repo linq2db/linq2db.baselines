@@ -1,0 +1,64 @@
+﻿-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[x].[Id]
+FROM
+	(
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY CASE
+				WHEN [e].[Priority] IS NULL THEN 1
+				ELSE 0
+			END, [e].[Priority], [e].[Id]) as [RowNumber],
+			[e].[Priority],
+			[e].[Id],
+			[e].[Group] as [Group_1]
+		FROM
+			[TestData] [e]
+	) [x]
+WHERE
+	[x].[RowNumber] = 1
+ORDER BY
+	CASE
+		WHEN [x].[Group_1] IS NULL THEN 1
+		ELSE 0
+	END,
+	[x].[Group_1],
+	CASE
+		WHEN [x].[Priority] IS NULL THEN 1
+		ELSE 0
+	END,
+	[x].[Priority],
+	[x].[Id]
+
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[x].[Id]
+FROM
+	(
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY CASE
+				WHEN [e].[Priority] IS NULL THEN 1
+				ELSE 0
+			END, [e].[Priority], [e].[Id]) as [RowNumber],
+			[e].[Priority],
+			[e].[Id],
+			[e].[Group] as [Group_1]
+		FROM
+			[TestData] [e]
+	) [x]
+WHERE
+	[x].[RowNumber] = 1
+ORDER BY
+	CASE
+		WHEN [x].[Group_1] IS NULL THEN 1
+		ELSE 0
+	END,
+	[x].[Group_1],
+	CASE
+		WHEN [x].[Priority] IS NULL THEN 1
+		ELSE 0
+	END,
+	[x].[Priority],
+	[x].[Id]
+
