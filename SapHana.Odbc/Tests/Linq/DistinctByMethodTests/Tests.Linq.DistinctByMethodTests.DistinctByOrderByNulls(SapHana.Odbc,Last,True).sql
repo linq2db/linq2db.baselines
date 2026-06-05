@@ -12,13 +12,13 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Group" ORDER BY "e"."Priority" DESC, "e"."Id", "e"."Date") as "RowNumber",
-			"e"."Priority",
 			"e"."Id",
-			"e"."Date" as "Date_1",
 			"e"."Name",
 			"e"."Group" as "Group_1",
+			"e"."Date" as "Date_1",
 			"e"."Amount",
-			"e"."IsActive"
+			"e"."IsActive",
+			"e"."Priority"
 		FROM
 			"TestData" "e"
 	) "t1"
