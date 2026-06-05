@@ -11,11 +11,11 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.Id, e.Name ORDER BY e.Name, e.Date DESC) as RowNumber,
-			e.Name as Name,
-			e.Date as Date_1,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Id, e.Name ORDER BY e.Name, e.Date DESC)) as RowNumber,
 			e.Id as Id,
+			e.Name as Name,
 			e.Group as Group_1,
+			e.Date as Date_1,
 			e.Amount as Amount,
 			e.IsActive as IsActive,
 			e.Priority as Priority
