@@ -14,7 +14,6 @@ VALUES
 -- SqlCe
 
 SELECT TOP (2)
-	[t1].[Id],
 	[t1].[Date] as [Date_1]
 FROM
 	[DateOnlyTable] [t1]
