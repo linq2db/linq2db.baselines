@@ -43,6 +43,8 @@ FROM
 		INNER JOIN "Employee" "d" ON "k_1"."Item1" = "d"."DepartmentId" AND "k_1"."Item2" = 'Active'
 WHERE
 	"d"."Salary" > 45000
+ORDER BY
+	"d"."Id"
 
 -- DB2 DB2.LUW DB2LUW
 
@@ -59,4 +61,6 @@ FROM
 		(303,'Active'), (305,'Active')
 	) "k_1"("Item1", "Item2")
 		INNER JOIN "Contractor" "d" ON "k_1"."Item1" = "d"."DepartmentId" AND "k_1"."Item2" = 'Inactive'
+ORDER BY
+	"d"."Id"
 
