@@ -64,6 +64,8 @@ FROM
 		INNER JOIN "Employee" "d" ON "k_1"."Item1" = "d"."DepartmentId" AND "k_1"."Item2" = 'Active'
 WHERE
 	"d"."Salary" > 45000
+ORDER BY
+	"d"."Id"
 
 -- Firebird.2.5 Firebird
 
@@ -98,4 +100,6 @@ FROM
 		UNION ALL
 		SELECT 304, CAST('Inactive' AS VARCHAR(8)) FROM rdb$database) "k_1"
 		INNER JOIN "Contractor" "d" ON "k_1"."Item1" = "d"."DepartmentId" AND "k_1"."Item2" = 'Inactive'
+ORDER BY
+	"d"."Id"
 
