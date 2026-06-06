@@ -64,6 +64,8 @@ FROM
 		INNER JOIN "Employee" d ON k_1."Item1" = d."DepartmentId" AND k_1."Item2" = 'Active'
 WHERE
 	d."Salary" > 45000
+ORDER BY
+	d."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
@@ -98,4 +100,6 @@ FROM
 		UNION ALL
 		SELECT 304, 'Inactive' FROM sys.dual) k_1
 		INNER JOIN "Contractor" d ON k_1."Item1" = d."DepartmentId" AND k_1."Item2" = 'Inactive'
+ORDER BY
+	d."Id"
 
