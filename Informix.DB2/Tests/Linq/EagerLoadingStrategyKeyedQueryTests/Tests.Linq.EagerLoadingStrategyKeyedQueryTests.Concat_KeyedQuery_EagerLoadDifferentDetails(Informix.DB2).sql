@@ -61,6 +61,8 @@ FROM
 		INNER JOIN Employee d ON k_1.Item1 = d.DepartmentId AND k_1.Item2 = 'Active'
 WHERE
 	d.Salary > 45000
+ORDER BY
+	d.Id
 
 -- Informix.DB2 Informix
 
@@ -95,4 +97,6 @@ FROM
 		UNION ALL
 		SELECT 304::Int, 'Inactive'::NVarChar(255) FROM table(set{1})) k_1
 		INNER JOIN Contractor d ON k_1.Item1 = d.DepartmentId AND k_1.Item2 = 'Inactive'
+ORDER BY
+	d.Id
 
