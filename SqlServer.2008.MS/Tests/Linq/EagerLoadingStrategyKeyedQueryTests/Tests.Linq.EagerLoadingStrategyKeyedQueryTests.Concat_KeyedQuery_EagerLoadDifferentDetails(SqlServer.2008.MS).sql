@@ -46,6 +46,8 @@ FROM
 		INNER JOIN [Employee] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Active'
 WHERE
 	[d].[Salary] > 45000
+ORDER BY
+	[d].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
 
@@ -62,4 +64,6 @@ FROM
 		(204,N'Inactive'), (302,N'Inactive'), (304,N'Inactive')
 	) [k_1]([Item1], [Item2])
 		INNER JOIN [Contractor] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Inactive'
+ORDER BY
+	[d].[Id]
 
