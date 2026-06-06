@@ -64,6 +64,8 @@ FROM
 		INNER JOIN [Employee] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Active'
 WHERE
 	[d].[Salary] > 45000
+ORDER BY
+	[d].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
 
@@ -98,4 +100,6 @@ FROM
 		UNION ALL
 		SELECT 304, N'Inactive') [k_1]
 		INNER JOIN [Contractor] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Inactive'
+ORDER BY
+	[d].[Id]
 
