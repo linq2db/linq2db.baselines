@@ -2,7 +2,7 @@
 DECLARE @ClosedAt TimestampTz -- DateTime
 SET     @ClosedAt = NULL
 DECLARE @CreatedAt TimestampTz -- DateTime
-SET     @CreatedAt = 2026-06-05T19:46:22Z
+SET     @CreatedAt = 2026-06-06T18:07:54Z
 
 INSERT INTO "Issue5549Table"
 (
@@ -17,9 +17,9 @@ VALUES
 
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ClosedAt TimestampTz -- DateTime
-SET     @ClosedAt = 2026-06-05T18:46:22Z
+SET     @ClosedAt = 2026-06-06T17:07:54Z
 DECLARE @CreatedAt TimestampTz -- DateTime
-SET     @CreatedAt = 2026-06-05T17:46:22Z
+SET     @CreatedAt = 2026-06-06T16:07:54Z
 
 INSERT INTO "Issue5549Table"
 (
@@ -34,7 +34,7 @@ VALUES
 
 -- PostgreSQL.15 PostgreSQL
 DECLARE @fromDate TimestampTz -- DateTime
-SET     @fromDate = 2026-05-29T19:46:22Z
+SET     @fromDate = 2026-05-30T18:07:54Z
 
 SELECT
 	e."Id",
