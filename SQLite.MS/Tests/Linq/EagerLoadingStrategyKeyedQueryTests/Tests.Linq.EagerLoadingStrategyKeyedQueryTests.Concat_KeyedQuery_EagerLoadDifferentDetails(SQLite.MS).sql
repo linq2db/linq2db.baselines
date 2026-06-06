@@ -46,6 +46,8 @@ FROM
 		INNER JOIN [Employee] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = 'Active'
 WHERE
 	[d].[Salary] > 45000
+ORDER BY
+	[d].[Id]
 
 -- SQLite.MS SQLite
 
@@ -65,4 +67,6 @@ FROM
 			(304,'Inactive')
 		) [k_1]
 		INNER JOIN [Contractor] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = 'Inactive'
+ORDER BY
+	[d].[Id]
 
