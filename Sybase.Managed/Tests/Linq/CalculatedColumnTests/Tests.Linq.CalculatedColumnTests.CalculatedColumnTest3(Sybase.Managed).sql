@@ -25,7 +25,7 @@ FROM
 			[i].[LastName],
 			[i].[MiddleName],
 			[i].[Gender],
-			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+			[i].[LastName] || ', ' || [i].[FirstName] as [FullName],
 			(
 				SELECT
 					COUNT(*)

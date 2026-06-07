@@ -2,9 +2,9 @@
 
 SELECT
 	[pp].[PersonID],
-	'  ' + [pp].[FirstName] + ' '
+	'  ' || [pp].[FirstName] || ' '
 FROM
 	[Person] [pp]
 WHERE
-	[pp].[PersonID] = 1 AND RTRIM('  ' + [pp].[FirstName] + ' ') = '  John'
+	[pp].[PersonID] = 1 AND RTRIM('  ' || [pp].[FirstName] || ' ') = '  John'
 

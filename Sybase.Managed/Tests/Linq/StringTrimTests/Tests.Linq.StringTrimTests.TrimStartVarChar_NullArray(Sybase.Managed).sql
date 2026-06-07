@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	LTRIM('   ' + Coalesce([t].[VarCharColumn], ''))
+	LTRIM('   ' || Coalesce([t].[VarCharColumn], ''))
 FROM
 	[StringTrimTable] [t]
 
