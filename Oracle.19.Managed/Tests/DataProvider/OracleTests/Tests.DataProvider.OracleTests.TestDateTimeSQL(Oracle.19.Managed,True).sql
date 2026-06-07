@@ -201,7 +201,7 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 03:20:06.789123 +00:00'
+	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 04:05:06.789123 +00:45'
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
@@ -220,7 +220,7 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 03:20:06 +00:00'
+	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 04:05:06 +00:45'
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
@@ -239,7 +239,7 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 03:20:06.7 +00:00'
+	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 04:05:06.7 +00:45'
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
@@ -258,5 +258,5 @@ SELECT
 FROM
 	"Test0431" r
 WHERE
-	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 03:20:06.7891234 +00:00'
+	r."DateTimeOffset_9" = TIMESTAMP '2020-01-03 04:05:06.7891234 +00:45'
 

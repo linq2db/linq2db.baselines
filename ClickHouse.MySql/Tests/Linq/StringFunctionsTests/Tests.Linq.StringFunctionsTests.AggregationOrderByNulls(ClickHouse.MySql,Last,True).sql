@@ -1,0 +1,7 @@
+﻿-- ClickHouse.MySql ClickHouse
+
+SELECT
+	arrayStringConcat(arrayMap((t) -> tupleElement(t, 2), arrayReverse(arraySort((t) -> (if(isNull(t.1), 0, 1), t.1), groupArray((t1.Value1, toString(t1.Value2)))))), ' -> ')
+FROM
+	SampleClass t1
+

@@ -5,7 +5,7 @@ SELECT
 FROM
 	`ConcatTestEntity` `e`
 WHERE
-	(CONCAT(`e`.`StrReq`, `e`.`StrReq`)) IS NOT NULL
+	`e`.`StrReq` IS NOT NULL
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 

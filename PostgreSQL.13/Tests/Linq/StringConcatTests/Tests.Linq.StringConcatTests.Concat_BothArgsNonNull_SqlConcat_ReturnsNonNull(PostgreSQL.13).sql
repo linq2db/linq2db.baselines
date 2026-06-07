@@ -5,7 +5,7 @@ SELECT
 FROM
 	"ConcatTestEntity" e
 WHERE
-	(e."StrReq" || e."StrReq") IS NOT NULL
+	e."StrReq" IS NOT NULL
 
 -- PostgreSQL.13 PostgreSQL
 
