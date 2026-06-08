@@ -14,7 +14,7 @@ FROM
 		WHERE
 			left_1.ParentID <> 2 AND left2.ParentID <> 1
 	) t1
-		FULL JOIN (
+		RIGHT JOIN (
 			SELECT
 				right_1.ParentID as Right_1,
 				right_1.Value1 + 2 as c1
