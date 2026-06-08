@@ -1,408 +1,475 @@
 ﻿-- Sybase.Managed Sybase
-
-SELECT
-	MAX([t1].[ID])
-FROM
-	[AllTypes] [t1]
-
--- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(6) -- String
-SET     @NString = 'test01'
-DECLARE @String UniVarChar(6) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @String Char(6) -- AnsiStringFixedLength
 SET     @String = 'test01'
+DECLARE @NString UniChar(6) -- StringFixedLength
+SET     @NString = 'test01'
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test02  '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test02  '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test02  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test03	 '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 3
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test03	 '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test03	 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test04
- '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 4
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test04
  '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test04
+ '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test05 '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 5
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test05 '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test05 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test06 '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 6
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test06 '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test06 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test07 '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 7
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test07 '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test07 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test08  '
-DECLARE @String UniVarChar(8) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 8
+DECLARE @String Char(8) -- AnsiStringFixedLength
 SET     @String = 'test08  '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test08  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test09  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 9
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test09     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test09  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test10  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 10
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test10     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test10  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test11  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 11
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test11     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test11  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test12  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 12
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test12     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test12  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test13  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 13
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test13     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test13  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test14  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 14
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test14     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test14  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test15  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 15
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test15     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test15  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test16  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 16
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test16     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test16  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test17  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 17
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test17     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test17  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test18  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 18
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test18     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test18  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test19  '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 19
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test19     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test19  '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test20　 '
-DECLARE @String UniVarChar(11) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 20
+DECLARE @String Char(11) -- AnsiStringFixedLength
 SET     @String = 'test20     '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test20　 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar(8) -- String
-SET     @NString = 'test21' + char(0) + ' '
-DECLARE @String UniVarChar(10) -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 21
+DECLARE @String Char(10) -- AnsiStringFixedLength
 SET     @String = 'test21' + char(0) + '   '
+DECLARE @NString UniChar(8) -- StringFixedLength
+SET     @NString = 'test21' + char(0) + ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @NString UniVarChar -- String
-SET     @NString = NULL
-DECLARE @String UniVarChar -- String
+DECLARE @Id Integer -- Int32
+SET     @Id = 22
+DECLARE @String Char -- AnsiStringFixedLength
 SET     @String = NULL
+DECLARE @NString UniChar -- StringFixedLength
+SET     @NString = NULL
 
-INSERT INTO [AllTypes]
+INSERT INTO [StringTestTable]
 (
-	[ncharDataType],
-	[char20DataType]
+	[Id],
+	[String],
+	[NString]
 )
 VALUES
 (
-	@NString,
-	@String
+	@Id,
+	@String,
+	@NString
 )
 
 -- Sybase.Managed Sybase
-DECLARE @lastId Integer -- Int32
-SET     @lastId = 2
 
 SELECT
-	[t1].[ID],
-	[t1].[char20DataType],
-	[t1].[ncharDataType]
+	[t1].[Id],
+	[t1].[String],
+	[t1].[NString]
 FROM
-	[AllTypes] [t1]
-WHERE
-	[t1].[ID] > @lastId
+	[StringTestTable] [t1]
 ORDER BY
-	[t1].[ID]
-
--- Sybase.Managed Sybase
-DECLARE @lastId Integer -- Int32
-SET     @lastId = 2
-
-DELETE FROM [AllTypes]
-FROM
-	[AllTypes] [t1]
-WHERE
-	[t1].[ID] > @lastId
+	[t1].[Id]
 
