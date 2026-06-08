@@ -1,6 +1,6 @@
 ﻿-- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
-SET     @p = 103
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
@@ -30,7 +30,7 @@ INSERT INTO "LinqDataTypes"
 	"BigIntValue"
 )
 SELECT
-	"r".ID + 1,
+	"r".ID,
 	CAST(@param AS BigInt)
 FROM
 	"LinqDataTypes" "r"
@@ -44,11 +44,11 @@ SELECT
 FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID = 102 AND "r"."BigIntValue" = 11
+	"r".ID = 101 AND "r"."BigIntValue" = 11
 
 -- Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
-SET     @p = 103
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
