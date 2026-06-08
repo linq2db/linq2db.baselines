@@ -12,6 +12,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Date
 FROM
 	DateOnlyTable t1
