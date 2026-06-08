@@ -1,6 +1,6 @@
 ﻿-- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
-SET     @p = 103
+SET     @p = 102
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -31,7 +31,7 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID] + 1,
+	[r].[ID],
 	@param
 FROM
 	[LinqDataTypes] [r]
@@ -45,11 +45,11 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 102 AND [r].[BigIntValue] = 11
+	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
-SET     @p = 103
+SET     @p = 102
 
 DELETE FROM [LinqDataTypes]
 FROM
