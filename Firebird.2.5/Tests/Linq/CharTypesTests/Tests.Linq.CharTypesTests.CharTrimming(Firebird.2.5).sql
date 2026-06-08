@@ -1,351 +1,291 @@
 ﻿-- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
+
+SELECT
+	MAX("t1".ID)
+FROM
+	"AllTypes" "t1"
+
+-- Firebird.2.5 Firebird
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
 DECLARE @Char Char -- String
 SET     @Char = '	'
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 3
 DECLARE @Char Char -- String
 SET     @Char = '
 '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 4
 DECLARE @Char Char -- String
 SET     @Char = ''
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 5
 DECLARE @Char Char -- String
 SET     @Char = ''
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 6
 DECLARE @Char Char -- String
 SET     @Char = ''
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 7
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 8
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 9
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 10
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 11
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 12
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 13
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 14
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 15
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 16
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 17
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 18
 DECLARE @Char Char -- String
 SET     @Char = ' '
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 19
 DECLARE @Char Char -- String
 SET     @Char = _utf8 x'00'
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
-DECLARE @Id Integer -- Int32
-SET     @Id = 20
 DECLARE @Char Char -- String
 SET     @Char = NULL
 
-INSERT INTO "CharTestTable"
+INSERT INTO "AllTypes"
 (
-	"Id",
-	"Char"
+	"char20DataType"
 )
 VALUES
 (
-	@Id,
-	@Char
+	CAST(@Char AS CHAR(1))
 )
 
 -- Firebird.2.5 Firebird
+DECLARE @lastId Integer -- Int32
+SET     @lastId = 2
 
 SELECT
-	"t1"."Id",
-	"t1"."Char"
+	"t1".ID,
+	"t1"."char20DataType"
 FROM
-	"CharTestTable" "t1"
+	"AllTypes" "t1"
+WHERE
+	"t1".ID > @lastId
 ORDER BY
-	"t1"."Id"
+	"t1".ID
+
+-- Firebird.2.5 Firebird
+DECLARE @lastId Integer -- Int32
+SET     @lastId = 2
+
+DELETE FROM
+	"AllTypes" "t1"
+WHERE
+	"t1".ID > @lastId
 
