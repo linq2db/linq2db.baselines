@@ -1,475 +1,408 @@
 ﻿-- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @String Char(6) -- AnsiStringFixedLength
-SET     @String = N'test01'
-DECLARE @NString NChar(6) -- StringFixedLength
-SET     @NString = N'test01'
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test02  '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test02  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 3
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test03	 '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test03	 '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 4
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test04
- '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test04
- '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 5
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test05 '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test05 '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 6
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test06 '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test06 '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 7
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test07 '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test07 '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 8
-DECLARE @String Char(8) -- AnsiStringFixedLength
-SET     @String = N'test08  '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test08  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 9
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test09     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test09  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 10
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test10     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test10  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 11
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test11     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test11  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 12
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test12     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test12  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 13
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test13     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test13  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 14
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test14     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test14  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 15
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test15     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test15  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 16
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test16     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test16  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 17
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test17     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test17  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 18
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test18     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test18  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 19
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test19     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test19  '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 20
-DECLARE @String Char(11) -- AnsiStringFixedLength
-SET     @String = N'test20     '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test20　 '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 21
-DECLARE @String Char(10) -- AnsiStringFixedLength
-SET     @String = N'test21' + char(0) + N'   '
-DECLARE @NString NChar(8) -- StringFixedLength
-SET     @NString = N'test21' + char(0) + N' '
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 22
-DECLARE @String Char -- AnsiStringFixedLength
-SET     @String = NULL
-DECLARE @NString NChar -- StringFixedLength
-SET     @NString = NULL
-
-INSERT INTO [StringTestTable]
-(
-	[Id],
-	[String],
-	[NString]
-)
-VALUES
-(
-	@Id,
-	@String,
-	@NString
-)
-
--- SqlServer.2019
 
 SELECT
-	[t1].[Id],
-	[t1].[String],
-	[t1].[NString]
+	MAX([t1].[ID])
 FROM
-	[StringTestTable] [t1]
+	[AllTypes] [t1]
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test01'
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test01'
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test02  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test02  '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test03	 '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test03	 '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test04
+ '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test04
+ '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test05 '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test05 '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test06 '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test06 '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test07 '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test07 '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test08  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test08  '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test09  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test09     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test10  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test10     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test11  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test11     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test12  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test12     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test13  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test13     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test14  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test14     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test15  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test15     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test16  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test16     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test17  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test17     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test18  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test18     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test19  '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test19     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test20　 '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test20     '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = N'test21' + char(0) + N' '
+DECLARE @String NVarChar(4000) -- String
+SET     @String = N'test21' + char(0) + N'   '
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @NString NVarChar(4000) -- String
+SET     @NString = NULL
+DECLARE @String NVarChar(4000) -- String
+SET     @String = NULL
+
+INSERT INTO [AllTypes]
+(
+	[ncharDataType],
+	[char20DataType]
+)
+VALUES
+(
+	@NString,
+	@String
+)
+
+-- SqlServer.2019
+DECLARE @lastId Int -- Int32
+SET     @lastId = 2
+
+SELECT
+	[t1].[ID],
+	[t1].[char20DataType],
+	[t1].[ncharDataType]
+FROM
+	[AllTypes] [t1]
+WHERE
+	[t1].[ID] > @lastId
 ORDER BY
-	[t1].[Id]
+	[t1].[ID]
+
+-- SqlServer.2019
+DECLARE @lastId Int -- Int32
+SET     @lastId = 2
+
+DELETE [t1]
+FROM
+	[AllTypes] [t1]
+WHERE
+	[t1].[ID] > @lastId
 
