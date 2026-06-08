@@ -5,7 +5,7 @@ DECLARE $Name NVarChar(3) -- String
 SET     $Name = 'Max'
 DECLARE $Age  -- Int32
 SET     $Age = 20
-DECLARE $Gender NVarChar(4) -- String
+DECLARE $Gender NVarChar(6) -- String
 SET     $Gender = 'Male'
 
 INSERT INTO PR_1598_Insert_Enum_Table

@@ -3,7 +3,7 @@ DECLARE $Id  -- Int32
 SET     $Id = 1
 DECLARE $Discriminator  -- Int32
 SET     $Discriminator = 1
-DECLARE $Value1 NVarChar(4) -- String
+DECLARE $Value1 NVarChar(50) -- String
 SET     $Value1 = 'Str1'
 
 INSERT INTO TPHTable
@@ -24,7 +24,7 @@ DECLARE $Id  -- Int32
 SET     $Id = 2
 DECLARE $Discriminator  -- Int32
 SET     $Discriminator = 2
-DECLARE $Value2 NVarChar(4) -- String
+DECLARE $Value2 NVarChar(50) -- String
 SET     $Value2 = 'Str2'
 
 INSERT INTO TPHTable
@@ -45,7 +45,7 @@ DECLARE $Id  -- Int32
 SET     $Id = 3
 DECLARE $Discriminator  -- Int32
 SET     $Discriminator = 3
-DECLARE $Value3 NVarChar(4) -- String
+DECLARE $Value3 NVarChar(50) -- String
 SET     $Value3 = 'Str3'
 DECLARE $NullableBool VarChar(1) -- AnsiString
 SET     $NullableBool = 'Y'

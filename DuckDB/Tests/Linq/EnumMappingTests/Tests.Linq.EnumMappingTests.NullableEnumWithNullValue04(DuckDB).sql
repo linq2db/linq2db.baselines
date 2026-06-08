@@ -44,7 +44,7 @@ VALUES
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 103
-DECLARE $Value NChar -- StringFixedLength
+DECLARE $Value NChar(2) -- StringFixedLength
 SET     $Value = NULL
 
 INSERT INTO LinqDataTypes
@@ -61,7 +61,7 @@ VALUES
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 104
-DECLARE $Value NChar -- StringFixedLength
+DECLARE $Value NChar(2) -- StringFixedLength
 SET     $Value = NULL
 
 INSERT INTO LinqDataTypes

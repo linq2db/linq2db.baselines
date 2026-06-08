@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $StringEnumNullable NVarChar -- String
+DECLARE $StringEnumNullable NVarChar(2) -- String
 SET     $StringEnumNullable = NULL
 
 INSERT INTO CreateTableTypes

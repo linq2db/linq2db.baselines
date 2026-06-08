@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Data NVarChar(9) -- String
+DECLARE $Data NVarChar(50) -- String
 SET     $Data = '***III***'
 DECLARE $ID  -- Int32
 SET     $ID = 3
@@ -12,7 +12,7 @@ WHERE
 	TrimTestTable.ID = $ID
 
 -- DuckDB
-DECLARE $Data NVarChar(9) -- String
+DECLARE $Data NVarChar(50) -- String
 SET     $Data = '***OOO***'
 
 UPDATE
@@ -23,9 +23,9 @@ WHERE
 	TrimTestTable."Data" = '***XXX***'
 
 -- DuckDB
-DECLARE $Data NVarChar(9) -- String
+DECLARE $Data NVarChar(50) -- String
 SET     $Data = '***SSS***'
-DECLARE $p NVarChar(9) -- String
+DECLARE $p NVarChar(50) -- String
 SET     $p = '***HHH***'
 
 UPDATE

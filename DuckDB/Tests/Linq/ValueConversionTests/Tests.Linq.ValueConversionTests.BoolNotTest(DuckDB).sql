@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $false_value VarChar -- AnsiString
+DECLARE $false_value VarChar(1) -- AnsiString
 SET     $false_value = 'N'
 
 SELECT

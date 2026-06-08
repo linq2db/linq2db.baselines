@@ -3,7 +3,7 @@ DECLARE $Value  -- Int32
 SET     $Value = 100
 DECLARE $value_1  -- Int32
 SET     $value_1 = 1
-DECLARE $ValueStr NVarChar(8) -- String
+DECLARE $ValueStr NVarChar(50) -- String
 SET     $ValueStr = 'SomeStr1'
 
 INSERT INTO TableWithData

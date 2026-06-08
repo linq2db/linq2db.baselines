@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $true_value VarChar -- AnsiString
+DECLARE $true_value VarChar(1) -- AnsiString
 SET     $true_value = 'Y'
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $S1 NVarChar(2) -- String
+DECLARE $S1 NVarChar(50) -- String
 SET     $S1 = 's1'
 
 INSERT INTO Projection1
@@ -12,7 +12,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $S1 NVarChar(2) -- String
+DECLARE $S1 NVarChar(50) -- String
 SET     $S1 = 's1'
 
 INSERT INTO Projection2

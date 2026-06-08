@@ -1,9 +1,9 @@
 ﻿-- DuckDB
-DECLARE $Value2 NVarChar(21) -- String
+DECLARE $Value2 NVarChar(200) -- String
 SET     $Value2 = '[{"Value":"updated"}]'
-DECLARE $EnumWithNull VarChar -- AnsiString
+DECLARE $EnumWithNull VarChar(50) -- AnsiString
 SET     $EnumWithNull = NULL
-DECLARE $EnumWithNullDeclarative VarChar -- AnsiString
+DECLARE $EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     $EnumWithNullDeclarative = NULL
 
 UPDATE
@@ -36,21 +36,21 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $Value1 NVarChar(20) -- String
+DECLARE $Value1 NVarChar(200) -- String
 SET     $Value1 = '{"some":"updated2}"}'
-DECLARE $Value2 NVarChar(22) -- String
+DECLARE $Value2 NVarChar(200) -- String
 SET     $Value2 = '[{"Value":"updated2"}]'
-DECLARE $Enum NVarChar(6) -- String
+DECLARE $Enum NVarChar(50) -- String
 SET     $Enum = 'Value1'
-DECLARE $EnumNullable VarChar -- AnsiString
+DECLARE $EnumNullable VarChar(50) -- AnsiString
 SET     $EnumNullable = NULL
-DECLARE $EnumWithNull VarChar(6) -- AnsiString
+DECLARE $EnumWithNull VarChar(50) -- AnsiString
 SET     $EnumWithNull = 'Value2'
-DECLARE $EnumWithNullDeclarative VarChar(6) -- AnsiString
+DECLARE $EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     $EnumWithNullDeclarative = 'Value2'
-DECLARE $BoolValue VarChar -- AnsiString
+DECLARE $BoolValue VarChar(1) -- AnsiString
 SET     $BoolValue = 'N'
-DECLARE $AnotherBoolValue VarChar -- AnsiString
+DECLARE $AnotherBoolValue VarChar(1) -- AnsiString
 SET     $AnotherBoolValue = 'F'
 DECLARE $DateTimeNullable  -- DateTime2
 SET     $DateTimeNullable = NULL
@@ -92,21 +92,21 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $Value1 NVarChar -- String
+DECLARE $Value1 NVarChar(200) -- String
 SET     $Value1 = NULL
-DECLARE $Value2 NVarChar -- String
+DECLARE $Value2 NVarChar(200) -- String
 SET     $Value2 = NULL
-DECLARE $Enum NVarChar(6) -- String
+DECLARE $Enum NVarChar(50) -- String
 SET     $Enum = 'Value1'
-DECLARE $EnumNullable VarChar -- AnsiString
+DECLARE $EnumNullable VarChar(50) -- AnsiString
 SET     $EnumNullable = NULL
-DECLARE $EnumWithNull VarChar -- AnsiString
+DECLARE $EnumWithNull VarChar(50) -- AnsiString
 SET     $EnumWithNull = NULL
-DECLARE $EnumWithNullDeclarative VarChar -- AnsiString
+DECLARE $EnumWithNullDeclarative VarChar(50) -- AnsiString
 SET     $EnumWithNullDeclarative = NULL
-DECLARE $BoolValue VarChar -- AnsiString
+DECLARE $BoolValue VarChar(1) -- AnsiString
 SET     $BoolValue = 'N'
-DECLARE $AnotherBoolValue VarChar -- AnsiString
+DECLARE $AnotherBoolValue VarChar(1) -- AnsiString
 SET     $AnotherBoolValue = 'F'
 DECLARE $DateTimeNullable  -- DateTime2
 SET     $DateTimeNullable = NULL

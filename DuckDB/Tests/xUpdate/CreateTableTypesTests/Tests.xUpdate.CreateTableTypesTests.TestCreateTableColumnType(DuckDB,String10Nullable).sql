@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $String NVarChar -- String
+DECLARE $String NVarChar(10) -- String
 SET     $String = NULL
 
 INSERT INTO CreateTableTypes
@@ -18,7 +18,7 @@ VALUES
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 2
-DECLARE $String NVarChar(9) -- String
+DECLARE $String NVarChar(10) -- String
 SET     $String = 'test 10 n'
 
 INSERT INTO CreateTableTypes

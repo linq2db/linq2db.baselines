@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $In VarChar -- AnsiString
+DECLARE $In VarChar(20) -- AnsiString
 SET     $In = NULL
 
 SELECT
@@ -10,7 +10,7 @@ WHERE
 	s.CEnum IN ($In, $In)
 
 -- DuckDB
-DECLARE $NotIn VarChar -- AnsiString
+DECLARE $NotIn VarChar(20) -- AnsiString
 SET     $NotIn = NULL
 
 SELECT

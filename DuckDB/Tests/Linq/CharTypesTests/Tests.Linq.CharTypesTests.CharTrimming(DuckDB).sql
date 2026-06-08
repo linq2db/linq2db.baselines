@@ -6,9 +6,9 @@ FROM
 	AllTypes t1
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -23,9 +23,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = '	'
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = '	'
 
 INSERT INTO AllTypes
@@ -40,10 +40,10 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = '
 '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = '
 '
 
@@ -59,9 +59,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ''
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ''
 
 INSERT INTO AllTypes
@@ -76,9 +76,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ''
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ''
 
 INSERT INTO AllTypes
@@ -93,9 +93,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ''
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ''
 
 INSERT INTO AllTypes
@@ -110,9 +110,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -127,9 +127,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -144,9 +144,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -161,9 +161,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -178,9 +178,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -195,9 +195,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -212,9 +212,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -229,9 +229,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -246,9 +246,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -263,9 +263,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -280,9 +280,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -297,9 +297,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = ' '
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -314,9 +314,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = '　'
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = ' '
 
 INSERT INTO AllTypes
@@ -331,9 +331,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = chr(0)
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = chr(0)
 
 INSERT INTO AllTypes
@@ -348,9 +348,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $NChar NChar -- StringFixedLength
+DECLARE $NChar NChar(1) -- StringFixedLength
 SET     $NChar = NULL
-DECLARE $Char NChar -- StringFixedLength
+DECLARE $Char NChar(1) -- StringFixedLength
 SET     $Char = NULL
 
 INSERT INTO AllTypes

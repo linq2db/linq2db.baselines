@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Data NVarChar(9) -- String
+DECLARE $Data NVarChar(50) -- String
 SET     $Data = '***OOO***'
 
 INSERT INTO TrimTestTable

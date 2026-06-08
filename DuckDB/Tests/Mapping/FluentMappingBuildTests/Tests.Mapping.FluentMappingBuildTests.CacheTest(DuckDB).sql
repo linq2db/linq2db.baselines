@@ -12,9 +12,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
-DECLARE $LastName NVarChar(3) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Doe'
 
 INSERT INTO FluentTemp_Cache
@@ -59,9 +59,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
-DECLARE $LastName NVarChar(3) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Doe'
 
 INSERT INTO FluentTemp_Cache
@@ -106,9 +106,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
-DECLARE $LastName NVarChar(3) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Doe'
 
 INSERT INTO FluentTemp_Cache
@@ -153,9 +153,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
-DECLARE $LastName NVarChar(3) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Doe'
 
 INSERT INTO FluentTemp_Cache

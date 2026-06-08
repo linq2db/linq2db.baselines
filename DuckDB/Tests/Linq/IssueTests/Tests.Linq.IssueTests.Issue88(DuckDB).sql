@@ -25,7 +25,7 @@ WHERE
 	t1.PersonID = 1 AND 'M' = t1.Gender
 
 -- DuckDB
-DECLARE $gender NChar -- StringFixedLength
+DECLARE $gender NChar(1) -- StringFixedLength
 SET     $gender = 'M'
 
 SELECT
@@ -40,7 +40,7 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = $gender
 
 -- DuckDB
-DECLARE $gender NChar -- StringFixedLength
+DECLARE $gender NChar(1) -- StringFixedLength
 SET     $gender = 'M'
 
 SELECT

@@ -586,9 +586,9 @@ WHERE
 	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
-DECLARE $value NVarChar(11) -- String
+DECLARE $value NVarChar(10) -- String
 SET     $value = '1234567890x'
-DECLARE $nullableValue NVarChar(11) -- String
+DECLARE $nullableValue NVarChar(10) -- String
 SET     $nullableValue = '0123456789q'
 
 SELECT
@@ -619,9 +619,9 @@ DELETE FROM
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $Column NVarChar(11) -- String
+DECLARE $Column NVarChar(10) -- String
 SET     $Column = '1234567890x'
-DECLARE $ColumnNullable NVarChar(11) -- String
+DECLARE $ColumnNullable NVarChar(10) -- String
 SET     $ColumnNullable = '0123456789q'
 
 INSERT INTO "TypeTable`2"
@@ -638,9 +638,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value NVarChar(11) -- String
+DECLARE $value NVarChar(10) -- String
 SET     $value = '1234567890x'
-DECLARE $nullableValue NVarChar(11) -- String
+DECLARE $nullableValue NVarChar(10) -- String
 SET     $nullableValue = '0123456789q'
 
 SELECT
@@ -675,9 +675,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value NVarChar(11) -- String
+DECLARE $value NVarChar(10) -- String
 SET     $value = '1234567890x'
-DECLARE $nullableValue NVarChar(11) -- String
+DECLARE $nullableValue NVarChar(10) -- String
 SET     $nullableValue = '0123456789q'
 
 SELECT
@@ -710,9 +710,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NVarChar(11) -- String
+DECLARE $value NVarChar(10) -- String
 SET     $value = '1234567890x'
-DECLARE $nullableValue NVarChar(11) -- String
+DECLARE $nullableValue NVarChar(10) -- String
 SET     $nullableValue = '0123456789q'
 
 SELECT
@@ -745,9 +745,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NVarChar(11) -- String
+DECLARE $value NVarChar(10) -- String
 SET     $value = '1234567890x'
-DECLARE $nullableValue NVarChar(11) -- String
+DECLARE $nullableValue NVarChar(10) -- String
 SET     $nullableValue = '0123456789q'
 
 SELECT
@@ -760,7 +760,7 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
 
 SELECT
@@ -791,9 +791,9 @@ DELETE FROM
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $Column NChar -- StringFixedLength
+DECLARE $Column NChar(1) -- StringFixedLength
 SET     $Column = 'A'
-DECLARE $ColumnNullable NChar -- StringFixedLength
+DECLARE $ColumnNullable NChar(1) -- StringFixedLength
 SET     $ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -810,7 +810,7 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
 
 SELECT
@@ -843,7 +843,7 @@ VALUES
 ($p1,$p2,NULL)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
 
 SELECT
@@ -876,7 +876,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
 
 SELECT
@@ -909,7 +909,7 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
 
 SELECT
@@ -922,9 +922,9 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
-DECLARE $nullableValue NChar -- StringFixedLength
+DECLARE $nullableValue NChar(1) -- StringFixedLength
 SET     $nullableValue = 'я'
 
 SELECT
@@ -955,9 +955,9 @@ DELETE FROM
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $Column NChar -- StringFixedLength
+DECLARE $Column NChar(1) -- StringFixedLength
 SET     $Column = 'A'
-DECLARE $ColumnNullable NChar -- StringFixedLength
+DECLARE $ColumnNullable NChar(1) -- StringFixedLength
 SET     $ColumnNullable = 'я'
 
 INSERT INTO "TypeTable`2"
@@ -974,9 +974,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
-DECLARE $nullableValue NChar -- StringFixedLength
+DECLARE $nullableValue NChar(1) -- StringFixedLength
 SET     $nullableValue = 'я'
 
 SELECT
@@ -1011,9 +1011,9 @@ VALUES
 ($p1,$p2,$p3)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
-DECLARE $nullableValue NChar -- StringFixedLength
+DECLARE $nullableValue NChar(1) -- StringFixedLength
 SET     $nullableValue = 'я'
 
 SELECT
@@ -1046,9 +1046,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
-DECLARE $nullableValue NChar -- StringFixedLength
+DECLARE $nullableValue NChar(1) -- StringFixedLength
 SET     $nullableValue = 'я'
 
 SELECT
@@ -1081,9 +1081,9 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-DECLARE $value NChar -- StringFixedLength
+DECLARE $value NChar(1) -- StringFixedLength
 SET     $value = 'A'
-DECLARE $nullableValue NChar -- StringFixedLength
+DECLARE $nullableValue NChar(1) -- StringFixedLength
 SET     $nullableValue = 'я'
 
 SELECT

@@ -1,15 +1,15 @@
 ﻿-- DuckDB
 DECLARE $iteration  -- Int32
 SET     $iteration = 1
-DECLARE $Value1 NVarChar(2) -- String
+DECLARE $Value1 NVarChar(200) -- String
 SET     $Value1 = '[]'
-DECLARE $Enum NVarChar(6) -- String
+DECLARE $Enum NVarChar(50) -- String
 SET     $Enum = 'Value1'
-DECLARE $inserted NVarChar(22) -- String
+DECLARE $inserted NVarChar(200) -- String
 SET     $inserted = '[{"Value":"inserted"}]'
-DECLARE $boolValue VarChar -- AnsiString
+DECLARE $boolValue VarChar(1) -- AnsiString
 SET     $boolValue = 'N'
-DECLARE $boolValue_1 VarChar -- AnsiString
+DECLARE $boolValue_1 VarChar(1) -- AnsiString
 SET     $boolValue_1 = 'F'
 
 INSERT INTO ValueConversion

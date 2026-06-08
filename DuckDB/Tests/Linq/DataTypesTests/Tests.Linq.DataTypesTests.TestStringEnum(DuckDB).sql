@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Column NVarChar(7) -- String
+DECLARE $Column NVarChar(8) -- String
 SET     $Column = 'value=2'
 DECLARE $ColumnNullable NVarChar(8) -- String
 SET     $ColumnNullable = 'value=33'
@@ -32,9 +32,9 @@ DELETE FROM
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $Column NVarChar(5) -- String
+DECLARE $Column NVarChar(8) -- String
 SET     $Column = 'val=1'
-DECLARE $ColumnNullable NVarChar -- String
+DECLARE $ColumnNullable NVarChar(8) -- String
 SET     $ColumnNullable = NULL
 
 INSERT INTO StringEnumTable
@@ -53,7 +53,7 @@ VALUES
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 2
-DECLARE $Column NVarChar(7) -- String
+DECLARE $Column NVarChar(8) -- String
 SET     $Column = 'value=2'
 DECLARE $ColumnNullable NVarChar(8) -- String
 SET     $ColumnNullable = 'value=33'

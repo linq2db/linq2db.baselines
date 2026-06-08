@@ -1,9 +1,9 @@
 ﻿-- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 0
-DECLARE $ClaimedKeyType NVarChar(2) -- String
+DECLARE $ClaimedKeyType NVarChar(3) -- String
 SET     $ClaimedKeyType = 'EC'
-DECLARE $ClaimedKeyTypeN NVarChar(2) -- String
+DECLARE $ClaimedKeyTypeN NVarChar(3) -- String
 SET     $ClaimedKeyTypeN = 'EC'
 
 INSERT INTO Issue1554Table

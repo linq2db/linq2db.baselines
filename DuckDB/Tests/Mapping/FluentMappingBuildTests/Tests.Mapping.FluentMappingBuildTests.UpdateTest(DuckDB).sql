@@ -12,9 +12,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp_Update
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
-DECLARE $LastName NVarChar(3) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Doe'
 
 INSERT INTO FluentTemp_Update
@@ -31,9 +31,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $Name NVarChar(7) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John II'
-DECLARE $LastName NVarChar(4) -- String
+DECLARE $LastName NVarChar(20) -- String
 SET     $LastName = 'Dory'
 
 UPDATE

@@ -1,13 +1,13 @@
 ﻿-- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 100
-DECLARE $CharColumn Char -- AnsiStringFixedLength
+DECLARE $CharColumn Char(50) -- AnsiStringFixedLength
 SET     $CharColumn = NULL
-DECLARE $NCharColumn NChar -- StringFixedLength
+DECLARE $NCharColumn NChar(50) -- StringFixedLength
 SET     $NCharColumn = NULL
-DECLARE $VarCharColumn VarChar -- AnsiString
+DECLARE $VarCharColumn VarChar(50) -- AnsiString
 SET     $VarCharColumn = NULL
-DECLARE $NVarCharColumn NVarChar -- String
+DECLARE $NVarCharColumn NVarChar(50) -- String
 SET     $NVarCharColumn = NULL
 
 INSERT INTO StringTrimTable

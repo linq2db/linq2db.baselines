@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp_InsertOrUpdate
 -- DuckDB
 DECLARE $ID  -- Int32
 SET     $ID = 1
-DECLARE $Name NVarChar(4) -- String
+DECLARE $Name NVarChar(20) -- String
 SET     $Name = 'John'
 
 INSERT INTO FluentTemp_InsertOrUpdate

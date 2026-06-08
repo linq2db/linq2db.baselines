@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $CharFld NChar -- StringFixedLength
+DECLARE $CharFld NChar(1) -- StringFixedLength
 SET     $CharFld = 'P'
 
 INSERT INTO Issue1279Table

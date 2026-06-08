@@ -9,21 +9,21 @@ DECLARE $IntClassRequiredWithNull  -- Int32
 SET     $IntClassRequiredWithNull = -1
 DECLARE $IntClassNullableWithNull  -- Int32
 SET     $IntClassNullableWithNull = -1
-DECLARE $StringStructRequired VarChar(8) -- AnsiString
+DECLARE $StringStructRequired VarChar(10) -- AnsiString
 SET     $StringStructRequired = 'must_set'
-DECLARE $StringStructNullable VarChar -- AnsiString
+DECLARE $StringStructNullable VarChar(10) -- AnsiString
 SET     $StringStructNullable = NULL
-DECLARE $StringStructRequiredWithNull VarChar(2) -- AnsiString
+DECLARE $StringStructRequiredWithNull VarChar(10) -- AnsiString
 SET     $StringStructRequiredWithNull = '-1'
-DECLARE $StringStructNullableWithNull VarChar(2) -- AnsiString
+DECLARE $StringStructNullableWithNull VarChar(10) -- AnsiString
 SET     $StringStructNullableWithNull = '-1'
-DECLARE $StringClassRequired VarChar(8) -- AnsiString
+DECLARE $StringClassRequired VarChar(10) -- AnsiString
 SET     $StringClassRequired = 'must_set'
-DECLARE $StringClassNullable VarChar -- AnsiString
+DECLARE $StringClassNullable VarChar(10) -- AnsiString
 SET     $StringClassNullable = NULL
-DECLARE $StringClassRequiredWithNull VarChar(2) -- AnsiString
+DECLARE $StringClassRequiredWithNull VarChar(10) -- AnsiString
 SET     $StringClassRequiredWithNull = '-1'
-DECLARE $StringClassNullableWithNull VarChar(2) -- AnsiString
+DECLARE $StringClassNullableWithNull VarChar(10) -- AnsiString
 SET     $StringClassNullableWithNull = '-1'
 DECLARE $IntStructRequired  -- Int32
 SET     $IntStructRequired = 0
@@ -86,21 +86,21 @@ DECLARE $IntClassRequiredWithNull  -- Int32
 SET     $IntClassRequiredWithNull = 1
 DECLARE $IntClassNullableWithNull  -- Int32
 SET     $IntClassNullableWithNull = 1
-DECLARE $StringStructRequired VarChar(3) -- AnsiString
+DECLARE $StringStructRequired VarChar(10) -- AnsiString
 SET     $StringStructRequired = 'one'
-DECLARE $StringStructNullable VarChar(3) -- AnsiString
+DECLARE $StringStructNullable VarChar(10) -- AnsiString
 SET     $StringStructNullable = 'one'
-DECLARE $StringStructRequiredWithNull VarChar(3) -- AnsiString
+DECLARE $StringStructRequiredWithNull VarChar(10) -- AnsiString
 SET     $StringStructRequiredWithNull = 'one'
-DECLARE $StringStructNullableWithNull VarChar(3) -- AnsiString
+DECLARE $StringStructNullableWithNull VarChar(10) -- AnsiString
 SET     $StringStructNullableWithNull = 'one'
-DECLARE $StringClassRequired VarChar(3) -- AnsiString
+DECLARE $StringClassRequired VarChar(10) -- AnsiString
 SET     $StringClassRequired = 'one'
-DECLARE $StringClassNullable VarChar(3) -- AnsiString
+DECLARE $StringClassNullable VarChar(10) -- AnsiString
 SET     $StringClassNullable = 'one'
-DECLARE $StringClassRequiredWithNull VarChar(3) -- AnsiString
+DECLARE $StringClassRequiredWithNull VarChar(10) -- AnsiString
 SET     $StringClassRequiredWithNull = 'one'
-DECLARE $StringClassNullableWithNull VarChar(3) -- AnsiString
+DECLARE $StringClassNullableWithNull VarChar(10) -- AnsiString
 SET     $StringClassNullableWithNull = 'one'
 DECLARE $IntStructRequired  -- Int32
 SET     $IntStructRequired = 1

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $testedList NVarChar(20) -- String
+DECLARE $testedList NVarChar(200) -- String
 SET     $testedList = '[{"Value":"Value1"}]'
 
 SELECT

@@ -1,5 +1,5 @@
 ﻿-- DuckDB
-DECLARE $Test1 Char -- AnsiStringFixedLength
+DECLARE $Test1 Char(1) -- AnsiStringFixedLength
 SET     $Test1 = NULL
 
 UPDATE

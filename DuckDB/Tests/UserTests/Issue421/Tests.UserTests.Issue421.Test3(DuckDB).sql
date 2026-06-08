@@ -1,7 +1,7 @@
 ﻿-- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 1
-DECLARE $BlobValue Binary(3)
+DECLARE $BlobValue Binary(100)
 SET     $BlobValue = '\x01\x02\x03'::BLOB
 
 INSERT INTO BlobClass

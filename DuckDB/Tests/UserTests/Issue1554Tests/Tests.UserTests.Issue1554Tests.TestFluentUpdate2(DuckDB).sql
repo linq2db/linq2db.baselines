@@ -20,9 +20,9 @@ VALUES
 )
 
 -- DuckDB
-DECLARE $ClaimedKeyType NVarChar(2) -- String
+DECLARE $ClaimedKeyType NVarChar(3) -- String
 SET     $ClaimedKeyType = 'EC'
-DECLARE $ClaimedKeyTypeN NVarChar(2) -- String
+DECLARE $ClaimedKeyTypeN NVarChar(3) -- String
 SET     $ClaimedKeyTypeN = 'EC'
 
 UPDATE

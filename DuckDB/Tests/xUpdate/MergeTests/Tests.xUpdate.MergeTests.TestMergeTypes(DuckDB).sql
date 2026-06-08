@@ -21,9 +21,9 @@ DECLARE $FieldString NVarChar -- String
 SET     $FieldString = NULL
 DECLARE $FieldNString NVarChar -- String
 SET     $FieldNString = NULL
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = NULL
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = NULL
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = NULL
@@ -43,7 +43,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = NULL
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = NULL
-DECLARE $FieldEnumString NVarChar -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = NULL
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = NULL
@@ -106,9 +106,9 @@ DECLARE $FieldString NVarChar(13) -- String
 SET     $FieldString = 'normal strinG'
 DECLARE $FieldNString NVarChar(13) -- String
 SET     $FieldNString = 'всЁ нормально'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = '*'
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = 'ё'
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '-3.40282002E+38'::FLOAT
@@ -193,9 +193,9 @@ SET     $FieldString = 'test
 DECLARE $FieldNString NVarChar(14) -- String
 SET     $FieldNString = 'ЙЦУКЩывапрм
 q'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = '&'
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = '>'
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '3.40282002E+38'::FLOAT
@@ -215,7 +215,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2123-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '00:44:34.000432'::TIME
-DECLARE $FieldEnumString NVarChar(1) -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = 0
@@ -278,9 +278,9 @@ DECLARE $FieldString NVarChar(20) -- String
 SET     $FieldString = '`~!@#$%^&*()_+{}|[]\'
 DECLARE $FieldNString NVarChar(12) -- String
 SET     $FieldNString = '<>?/.,;''щЩ":'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = ''
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = '
 '
 DECLARE $FieldFloat  -- Single
@@ -301,7 +301,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2110-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '00:00:00'::TIME
-DECLARE $FieldEnumString NVarChar -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = 2147483647
@@ -364,9 +364,9 @@ DECLARE $FieldString NVarChar(12) -- String
 SET     $FieldString = '<>?/.,;''zZ":'
 DECLARE $FieldNString NVarChar(20) -- String
 SET     $FieldNString = '`~!@#$%^&*()_+{}|[]\'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = ''
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = ''
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '-1.17549996E-38'::FLOAT
@@ -386,7 +386,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2111-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '23:59:59.000999'::TIME
-DECLARE $FieldEnumString NVarChar -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = NULL
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = -2147483647
@@ -451,9 +451,9 @@ SET     $FieldString = 'test
 DECLARE $FieldNString NVarChar(14) -- String
 SET     $FieldNString = 'ЙЦУКЩывапрм
 q'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = '1'
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = ' '
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '3.40282002E+38'::FLOAT
@@ -473,7 +473,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2123-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '14:44:33'::TIME
-DECLARE $FieldEnumString NVarChar(1) -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = 0
@@ -536,9 +536,9 @@ DECLARE $FieldString NVarChar(12) -- String
 SET     $FieldString = '<>?/.,;''zZ":'
 DECLARE $FieldNString NVarChar(20) -- String
 SET     $FieldNString = '`~!@#$%^&*()_+{}|[]\'
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = ' '
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = ' '
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '-1.17549996E-38'::FLOAT
@@ -558,7 +558,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2010-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '23:59:59.000999'::TIME
-DECLARE $FieldEnumString NVarChar -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = NULL
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = -2147483647
@@ -623,9 +623,9 @@ SET     $FieldString = 'test
 DECLARE $FieldNString NVarChar(17) -- String
 SET     $FieldNString = 'ЙЦУКЩывапрм
 q  '
-DECLARE $FieldChar NChar -- StringFixedLength
+DECLARE $FieldChar NChar(1) -- StringFixedLength
 SET     $FieldChar = '-'
-DECLARE $FieldNChar NChar -- StringFixedLength
+DECLARE $FieldNChar NChar(1) -- StringFixedLength
 SET     $FieldNChar = '~'
 DECLARE $FieldFloat  -- Single
 SET     $FieldFloat = '3.40282002E+38'::FLOAT
@@ -645,7 +645,7 @@ DECLARE $FieldDate  -- DateTime2
 SET     $FieldDate = '2123-11-23 00:00:00.000000'::TIMESTAMP
 DECLARE $FieldTime  -- Time
 SET     $FieldTime = '22:44:33'::TIME
-DECLARE $FieldEnumString NVarChar(1) -- String
+DECLARE $FieldEnumString NVarChar(5) -- String
 SET     $FieldEnumString = ''
 DECLARE $FieldEnumNumber  -- Int32
 SET     $FieldEnumNumber = 0

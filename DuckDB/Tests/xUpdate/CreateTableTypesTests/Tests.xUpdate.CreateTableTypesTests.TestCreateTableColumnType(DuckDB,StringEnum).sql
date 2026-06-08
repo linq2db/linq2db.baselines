@@ -18,7 +18,7 @@ VALUES
 -- DuckDB
 DECLARE $Id  -- Int32
 SET     $Id = 2
-DECLARE $StringEnum NVarChar(1) -- String
+DECLARE $StringEnum NVarChar(2) -- String
 SET     $StringEnum = '4'
 
 INSERT INTO CreateTableTypes

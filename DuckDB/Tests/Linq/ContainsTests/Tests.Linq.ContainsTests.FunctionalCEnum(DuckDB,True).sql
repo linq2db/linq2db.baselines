@@ -1,7 +1,7 @@
 ﻿-- DuckDB
-DECLARE $In VarChar(12) -- AnsiString
+DECLARE $In VarChar(20) -- AnsiString
 SET     $In = '___Value3___'
-DECLARE $In_1 VarChar(12) -- AnsiString
+DECLARE $In_1 VarChar(20) -- AnsiString
 SET     $In_1 = '___Value4___'
 
 SELECT
@@ -13,7 +13,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $In VarChar(12) -- AnsiString
+DECLARE $In VarChar(20) -- AnsiString
 SET     $In = '___Value3___'
 
 SELECT
@@ -25,9 +25,9 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $In VarChar(12) -- AnsiString
+DECLARE $In VarChar(20) -- AnsiString
 SET     $In = '___Value3___'
-DECLARE $In_1 VarChar(12) -- AnsiString
+DECLARE $In_1 VarChar(20) -- AnsiString
 SET     $In_1 = '___Value2___'
 
 SELECT
@@ -39,7 +39,7 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $NotIn VarChar(12) -- AnsiString
+DECLARE $NotIn VarChar(20) -- AnsiString
 SET     $NotIn = '___Value2___'
 
 SELECT
@@ -51,9 +51,9 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-DECLARE $NotIn VarChar(12) -- AnsiString
+DECLARE $NotIn VarChar(20) -- AnsiString
 SET     $NotIn = '___Value3___'
-DECLARE $NotIn_1 VarChar(12) -- AnsiString
+DECLARE $NotIn_1 VarChar(20) -- AnsiString
 SET     $NotIn_1 = '___Value2___'
 
 SELECT

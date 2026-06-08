@@ -41,7 +41,7 @@ DECLARE $Name NVarChar(4) -- String
 SET     $Name = 'Jack'
 DECLARE $Age  -- Int32
 SET     $Age = 2
-DECLARE $Gender NVarChar(4) -- String
+DECLARE $Gender NVarChar(6) -- String
 SET     $Gender = 'Male'
 DECLARE $Id  -- Int32
 SET     $Id = 1
