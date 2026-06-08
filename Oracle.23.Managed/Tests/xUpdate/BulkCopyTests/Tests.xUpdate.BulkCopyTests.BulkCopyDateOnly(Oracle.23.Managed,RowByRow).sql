@@ -14,7 +14,6 @@ VALUES
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Id",
 	t1."Date" as "Date_1"
 FROM
 	"DateOnlyTable" t1
