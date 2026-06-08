@@ -1,291 +1,433 @@
 ﻿-- SqlCe
-
-SELECT
-	MAX([t1].[ID]) as [Max_1]
-FROM
-	[AllTypes] [t1]
-
--- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Char NVarChar -- String
+SET     @Char = '	'
 DECLARE @NChar NVarChar -- String
 SET     @NChar = '	'
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @Char NVarChar -- String
+SET     @Char = '
+'
 DECLARE @NChar NVarChar -- String
 SET     @NChar = '
 '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 4
+DECLARE @Char NVarChar -- String
+SET     @Char = ''
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ''
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 5
+DECLARE @Char NVarChar -- String
+SET     @Char = ''
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ''
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 6
+DECLARE @Char NVarChar -- String
+SET     @Char = ''
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ''
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 7
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 8
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 9
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 10
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 11
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 12
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 13
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 14
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 15
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 16
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 17
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 18
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = ' '
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 19
+DECLARE @Char NVarChar -- String
+SET     @Char = ' '
 DECLARE @NChar NVarChar -- String
 SET     @NChar = '　'
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 20
+DECLARE @Char NVarChar -- String
+SET     @Char = NULL
 DECLARE @NChar NVarChar -- String
 SET     @NChar = NULL
 
-INSERT INTO [AllTypes]
+INSERT INTO [CharTestTable]
 (
-	[ncharDataType]
+	[Id],
+	[Char],
+	[NChar]
 )
 VALUES
 (
+	@Id,
+	@Char,
 	@NChar
 )
 
 -- SqlCe
-DECLARE @lastId Int -- Int32
-SET     @lastId = 2
 
 SELECT
-	[t1].[ID] as [Id],
-	[t1].[ncharDataType] as [NChar_1]
+	[t1].[Id],
+	[t1].[Char] as [Char_1],
+	[t1].[NChar] as [NChar_1]
 FROM
-	[AllTypes] [t1]
-WHERE
-	[t1].[ID] > @lastId
+	[CharTestTable] [t1]
 ORDER BY
-	[t1].[ID]
-
--- SqlCe
-DECLARE @lastId Int -- Int32
-SET     @lastId = 2
-
-DELETE FROM
-	[AllTypes]
-WHERE
-	[AllTypes].[ID] > @lastId
+	[t1].[Id]
 
