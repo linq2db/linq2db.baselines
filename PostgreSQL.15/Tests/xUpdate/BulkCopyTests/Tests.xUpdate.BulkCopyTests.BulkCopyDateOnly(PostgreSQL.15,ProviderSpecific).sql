@@ -3,6 +3,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Date"
 FROM
 	"DateOnlyTable" t1
