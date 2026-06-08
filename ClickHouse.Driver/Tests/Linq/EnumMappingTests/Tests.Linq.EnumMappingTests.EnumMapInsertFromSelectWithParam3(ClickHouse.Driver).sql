@@ -3,7 +3,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= 101 AND ID < 103
+	ID >= 101 AND ID < 102
 
 -- ClickHouse.Driver ClickHouse
 
@@ -26,7 +26,7 @@ INSERT INTO LinqDataTypes
 	BigIntValue
 )
 SELECT
-	r.ID + 1,
+	r.ID,
 	toInt64(11)
 FROM
 	LinqDataTypes r
@@ -40,12 +40,12 @@ SELECT
 FROM
 	LinqDataTypes r
 WHERE
-	r.ID = 102 AND r.BigIntValue = toInt64(11)
+	r.ID = 101 AND r.BigIntValue = toInt64(11)
 
 -- ClickHouse.Driver ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= 101 AND ID < 103
+	ID >= 101 AND ID < 102
 
