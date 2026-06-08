@@ -11,19 +11,11 @@ WHERE
 ORDER BY
 	c_1.ordinal_position
 
--- DuckDB
-
-INSERT INTO DateOnlyTable
-(
-	"Date"
-)
-VALUES
-('2021-01-01'::DATE)
+INSERT BULK DateOnlyTable(Date)
 
 -- DuckDB
 
 SELECT
-	t1.Id,
 	t1."Date"
 FROM
 	DateOnlyTable t1
