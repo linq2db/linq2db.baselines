@@ -1,6 +1,6 @@
 ﻿-- SqlCe
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes]
@@ -30,8 +30,8 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID],
-	@param as [c1]
+	[r].[ID] + 1 as [c1],
+	@param as [c2]
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -44,11 +44,11 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- SqlCe
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes]
