@@ -1,5 +1,7 @@
 ﻿-- SqlCe
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	5 as [c1]
+	@p as [c1]
 

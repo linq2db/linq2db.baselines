@@ -6,8 +6,8 @@ SELECT
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender],
-	[t1].[LastName] + ', ' + [t1].[FirstName],
-	[t1].[LastName] + ', ' + [t1].[FirstName],
+	[t1].[LastName] || ', ' || [t1].[FirstName],
+	[t1].[LastName] || ', ' || [t1].[FirstName],
 	(
 		SELECT
 			COUNT(*)
@@ -38,7 +38,7 @@ FROM
 			[i].[PersonID],
 			[i].[MiddleName],
 			[i].[Gender],
-			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+			[i].[LastName] || ', ' || [i].[FirstName] as [FullName],
 			(
 				SELECT
 					COUNT(*)
@@ -51,5 +51,5 @@ FROM
 			[Person] [i]
 	) [i_1]
 WHERE
-	([i_1].[LastName] + ', ' + [i_1].[FirstName]) <> 'Pupkin, John'
+	([i_1].[LastName] || ', ' || [i_1].[FirstName]) <> 'Pupkin, John'
 

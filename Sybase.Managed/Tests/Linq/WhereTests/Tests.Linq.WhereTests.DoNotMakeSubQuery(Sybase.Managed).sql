@@ -2,7 +2,7 @@
 
 SELECT
 	[p2].[PersonID],
-	[p2].[FirstName] + ''
+	[p2].[FirstName] || ''
 FROM
 	[Person] [p2]
 WHERE
