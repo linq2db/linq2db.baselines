@@ -6,8 +6,8 @@ SELECT
 FROM
 	[Issue2816Table] [p]
 WHERE
-	[p].[Text] IS NULL OR TRIM(N'	
-                  　' FROM [p].[Text]) = N''
+	[p].[Text] IS NULL OR (TRIM(N'	
+                 　' FROM [p].[Text])) = N''
 
 -- SqlServer.SA.MS SqlServer.2019
 
