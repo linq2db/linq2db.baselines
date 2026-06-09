@@ -7,7 +7,7 @@ FROM
 	"Issue2816Table" p
 WHERE
 	p."Text" IS NULL OR LTRIM(p."Text", '	
-                  　') = ''
+                 　') = ''
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
