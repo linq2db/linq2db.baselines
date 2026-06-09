@@ -6,8 +6,8 @@ SELECT
 FROM
 	Issue2816Table p
 WHERE
-	empty(replaceRegexpAll(Coalesce(p.Text, ''), '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 
 -- ClickHouse.Driver ClickHouse
 

@@ -3,8 +3,8 @@
 SELECT
 	r.name,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -46,8 +46,8 @@ SELECT
 		ELSE NULL
 	END,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -74,8 +74,8 @@ SELECT version()
 SELECT
 	r.name,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -117,8 +117,8 @@ SELECT
 		ELSE NULL
 	END,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -145,8 +145,8 @@ SELECT version()
 SELECT
 	r.name,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -188,8 +188,8 @@ SELECT
 		ELSE NULL
 	END,
 	CASE
-		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | | |　', ''))
+		WHEN empty(replaceRegexpAll(coalesce(r.comment, ''), '	|
+|||| || | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
