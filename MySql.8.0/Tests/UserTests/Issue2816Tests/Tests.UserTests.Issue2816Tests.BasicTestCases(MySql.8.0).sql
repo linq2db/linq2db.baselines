@@ -6,8 +6,8 @@ SELECT
 FROM
 	`Issue2816Table` `p`
 WHERE
-	`p`.`Text` IS NULL OR `p`.`Text` NOT RLIKE '[^	
-                  　]'
+	`p`.`Text` IS NULL OR NOT `p`.`Text` RLIKE '[^	
+                 　]'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
