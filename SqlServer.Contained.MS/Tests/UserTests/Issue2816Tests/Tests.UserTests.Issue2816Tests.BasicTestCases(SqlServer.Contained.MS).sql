@@ -7,7 +7,7 @@ FROM
 	[Issue2816Table] [p]
 WHERE
 	[p].[Text] IS NULL OR TRIM(N'	
-                 　' FROM [p].[Text]) = N''
+                  　' FROM [p].[Text]) = N''
 
 -- SqlServer.Contained.MS SqlServer.2019
 
