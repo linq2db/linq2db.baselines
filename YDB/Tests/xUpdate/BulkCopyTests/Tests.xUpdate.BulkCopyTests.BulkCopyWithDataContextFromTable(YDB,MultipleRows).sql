@@ -1,0 +1,13 @@
+﻿INSERT ASYNC BULK SimpleBulkCopyTable(Id)
+
+INSERT ASYNC BULK SimpleBulkCopyTable(Id)
+
+-- YDB Ydb
+
+INSERT INTO SimpleBulkCopyTable
+(
+	Id
+)
+VALUES
+(3)
+

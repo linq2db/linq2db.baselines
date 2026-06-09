@@ -1,0 +1,18 @@
+﻿-- YDB Ydb
+
+SELECT
+	p.FirstName as FirstName,
+	p.PersonID as ID,
+	p.LastName as LastName,
+	p.MiddleName as MiddleName,
+	p.Gender as Gender
+FROM
+	Person p
+WHERE
+	CASE
+		WHEN Unwrap(CAST(Unicode::GetLength(p.FirstName) AS Int32)) = 2
+			THEN p.FirstName || '123'u
+		ELSE Unicode::Substring(p.FirstName, 0, 3 - 1) || '123'u || Unicode::Substring(p.FirstName, 3 + 0 - 1)
+	END = 'Jo123hn'u AND
+	p.PersonID = 1
+

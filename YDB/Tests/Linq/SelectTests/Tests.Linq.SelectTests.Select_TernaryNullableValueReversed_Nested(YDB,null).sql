@@ -1,0 +1,5 @@
+﻿-- YDB Ydb
+
+SELECT
+	CAST(NULL AS Int32) as c1
+

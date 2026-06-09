@@ -1,0 +1,12 @@
+﻿-- YDB Ydb
+
+SELECT
+	data_1.ParentID as ParentID,
+	data_1.ChildID as ChildID,
+	MAX(data_1.ChildID) as LastChild
+FROM
+	Child data_1
+GROUP BY
+	data_1.ParentID,
+	data_1.ChildID
+

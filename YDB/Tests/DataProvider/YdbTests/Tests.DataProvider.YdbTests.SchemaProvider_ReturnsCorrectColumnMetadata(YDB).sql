@@ -1,0 +1,4 @@
+﻿-- YDB Ydb
+
+SELECT Version();
+

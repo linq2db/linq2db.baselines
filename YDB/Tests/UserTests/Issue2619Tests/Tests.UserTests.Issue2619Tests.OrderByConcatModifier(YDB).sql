@@ -1,0 +1,46 @@
+﻿-- YDB Ydb
+DECLARE $take Int32
+SET     $take = 1
+
+SELECT
+	t2.FirstName as FirstName,
+	t2.ID as ID,
+	t2.LastName as LastName,
+	t2.MiddleName as MiddleName,
+	t2.Gender as Gender
+FROM
+	(
+		SELECT
+			t1.FirstName as FirstName,
+			t1.PersonID as ID,
+			t1.LastName as LastName,
+			t1.MiddleName as MiddleName,
+			t1.Gender as Gender
+		FROM
+			Person t1
+		ORDER BY
+			t1.LastName
+		LIMIT $take
+	) t2
+UNION ALL
+SELECT
+	t4.FirstName as FirstName,
+	t4.ID as ID,
+	t4.LastName as LastName,
+	t4.MiddleName as MiddleName,
+	t4.Gender as Gender
+FROM
+	(
+		SELECT
+			t3.FirstName as FirstName,
+			t3.PersonID as ID,
+			t3.LastName as LastName,
+			t3.MiddleName as MiddleName,
+			t3.Gender as Gender
+		FROM
+			Person t3
+		ORDER BY
+			t3.LastName
+		LIMIT $take
+	) t4
+

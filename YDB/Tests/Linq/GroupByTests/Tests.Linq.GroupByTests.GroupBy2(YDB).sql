@@ -1,0 +1,14 @@
+﻿-- YDB Ydb
+
+SELECT
+	gr_1.ID as ID,
+	gr_1.ID + 1 as ID1
+FROM
+	(
+		SELECT DISTINCT
+			Coalesce(gr.Value1, c_1.ChildID) as ID
+		FROM
+			Parent gr
+				INNER JOIN Child c_1 ON gr.ParentID = c_1.ParentID
+	) gr_1
+

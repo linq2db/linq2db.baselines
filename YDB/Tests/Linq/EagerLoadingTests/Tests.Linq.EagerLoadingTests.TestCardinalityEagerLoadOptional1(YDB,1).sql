@@ -1,0 +1,14 @@
+﻿-- YDB Ydb
+
+SELECT
+	t1.Id as Id,
+	t1.FK as FK,
+	a_ObjectBOptional.Id as Id_1,
+	a_ObjectBOptional.FK as FK_1,
+	a_ObjectC.Id as Id_2,
+	a_ObjectC.FK as FK_2
+FROM
+	EntityA t1
+		LEFT JOIN EntityB a_ObjectBOptional ON t1.FK = a_ObjectBOptional.Id
+		LEFT JOIN EntityC a_ObjectC ON a_ObjectBOptional.FK = a_ObjectC.Id
+

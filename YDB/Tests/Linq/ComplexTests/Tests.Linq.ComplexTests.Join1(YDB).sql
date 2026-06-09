@@ -1,0 +1,18 @@
+﻿-- YDB Ydb
+
+SELECT
+	x.ParentID as ParentID,
+	x.Value1 as Value1,
+	c_1.ParentID as ParentID_1,
+	c_1.ChildID as ChildID,
+	g_1.ParentID as ParentID_2,
+	g_1.ChildID as ChildID_1,
+	g_1.GrandChildID as GrandChildID
+FROM
+	Parent x
+		INNER JOIN Child c_1 ON x.ParentID = c_1.ParentID
+		INNER JOIN GrandChild g_1 ON x.ParentID = g_1.ParentID
+WHERE
+	(c_1.ParentID = 2 OR c_1.ParentID = 3) AND (g_1.ChildID <> 21 OR g_1.ChildID IS NULL) AND (g_1.ChildID <> 33 OR g_1.ChildID IS NULL) OR
+	g_1.ParentID = 3 AND g_1.ChildID = 32 OR g_1.ChildID = 11
+

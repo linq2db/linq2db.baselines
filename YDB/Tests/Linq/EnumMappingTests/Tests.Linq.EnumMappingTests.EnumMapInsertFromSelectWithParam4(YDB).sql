@@ -1,0 +1,57 @@
+﻿-- YDB Ydb
+DECLARE $p Int32
+SET     $p = 103
+
+DELETE FROM
+	LinqDataTypes
+WHERE
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
+
+-- YDB Ydb
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	BigIntValue
+)
+VALUES
+(
+	101,
+	12l
+)
+
+-- YDB Ydb
+DECLARE $param Int64
+SET     $param = 11l
+
+INSERT INTO LinqDataTypes
+(
+	ID,
+	BigIntValue
+)
+SELECT
+	r.ID + 1 as Id,
+	$param as TestField
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 101 AND r.BigIntValue = 12l
+
+-- YDB Ydb
+
+SELECT
+	COUNT(*) as Count_1
+FROM
+	LinqDataTypes r
+WHERE
+	r.ID = 102 AND r.BigIntValue = 11l
+
+-- YDB Ydb
+DECLARE $p Int32
+SET     $p = 103
+
+DELETE FROM
+	LinqDataTypes
+WHERE
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
+
