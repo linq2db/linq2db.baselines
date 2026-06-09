@@ -7,7 +7,7 @@ FROM
 	"Issue2816Table" p
 WHERE
 	p."Text" IS NULL OR LTRIM(p."Text", '	
-                  　') IS NULL
+                 　') IS NULL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
