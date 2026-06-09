@@ -7,5 +7,5 @@ FROM
 	Issue2816Table p
 WHERE
 	NOT empty(replaceRegexpAll(Coalesce(p.Text, ''), '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 

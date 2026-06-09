@@ -4,7 +4,7 @@ SELECT
 	r.name,
 	CASE
 		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,
@@ -47,7 +47,7 @@ SELECT
 	END,
 	CASE
 		WHEN empty(replaceRegexpAll(r.comment, '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 			THEN NULL
 		ELSE r.comment
 	END,

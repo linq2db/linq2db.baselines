@@ -7,7 +7,7 @@ FROM
 	Issue2816Table p
 WHERE
 	empty(replaceRegexpAll(Coalesce(p.Text, ''), '	|
-|||| || | | | | | | | | | | | | | | | |　', ''))
+|||| || | | | | | | | | | | | | | | | | |　', ''))
 
 -- ClickHouse.MySql ClickHouse
 
