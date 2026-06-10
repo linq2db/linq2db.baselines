@@ -7,7 +7,7 @@ FROM
 	[Issue2816Table] [p]
 WHERE
 	[p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
-                 　]%'
+                  　]%'
 
 -- SqlServer.2016.MS SqlServer.2016
 

@@ -7,7 +7,7 @@ FROM
 	[Issue2816Table] [p]
 WHERE
 	[p].[Text] IS NULL OR LTRIM([p].[Text], '	
-                 　') = ''
+                  　') = ''
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
