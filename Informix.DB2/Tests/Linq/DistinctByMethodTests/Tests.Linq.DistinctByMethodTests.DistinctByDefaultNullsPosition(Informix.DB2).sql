@@ -8,7 +8,7 @@ FROM
 			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY CASE
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
-			END, e.Priority, e.Id) as RowNumber,
+			END, e.Priority, 0, e.Id) as RowNumber,
 			e.Priority,
 			e.Id,
 			e."Group" as Group_1
@@ -40,7 +40,7 @@ FROM
 			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY CASE
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
-			END, e.Priority, e.Id) as RowNumber,
+			END, e.Priority, 0, e.Id) as RowNumber,
 			e.Priority,
 			e.Id,
 			e."Group" as Group_1
