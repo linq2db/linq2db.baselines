@@ -12,7 +12,7 @@ FROM
 		SELECT
 			[x].[EventUser] as [User_1],
 			[x].[ProcessID],
-			round((julianday([x].[EventTime]) - julianday(LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]))) * 1440) as [Diff]
+			round((julianday([x].[EventTime]) - julianday(LAG([x].[EventTime]) OVER (PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]))) * 1440) as [Diff]
 		FROM
 			[Issue1799Table1] [x]
 	) [g_1]
