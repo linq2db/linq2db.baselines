@@ -15,7 +15,7 @@ FROM
 		FROM
 			(
 				SELECT
-					MAX("lastThingInSequence"."ThingCounter") OVER(PARTITION BY "lastThingInSequence"."ThingSequence") as c1
+					MAX("lastThingInSequence"."ThingCounter") OVER (PARTITION BY "lastThingInSequence"."ThingSequence") as c1
 				FROM
 					(
 						SELECT
