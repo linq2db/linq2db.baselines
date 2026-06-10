@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 WHERE
-	(Coalesce([e].[StrReq], '') + ' 1') = 'Programmer 1'
+	(Coalesce([e].[StrReq], '') || ' 1') = 'Programmer 1'
 
 -- Sybase.Managed Sybase
 

@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	Coalesce([e].[Str1], '') + '/' + Coalesce([e].[StrReq], '')
+	Coalesce([e].[Str1], '') || '/' || Coalesce([e].[StrReq], '')
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY

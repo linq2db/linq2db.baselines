@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	'...++' + Coalesce([t].[VarCharColumn], '')
+	'...++' || Coalesce([t].[VarCharColumn], '')
 FROM
 	[StringTrimTable] [t]
 

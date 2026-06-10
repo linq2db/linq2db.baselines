@@ -1,6 +1,8 @@
 ﻿-- Firebird.4 Firebird4
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT
-	5
+	CAST(@p AS Int)
 FROM rdb$database
 
