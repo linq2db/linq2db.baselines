@@ -3,7 +3,7 @@ DECLARE @take  -- Int32
 SET     @take = 10
 
 SELECT
-	COUNT(*) OVER(),
+	COUNT(*) OVER (),
 	[id].[Id]
 FROM
 	(
