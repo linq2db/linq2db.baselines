@@ -9,6 +9,13 @@ $CTE_1 = 	SELECT
 	WHERE
 		r.Id = $id1
 ;
+$CTE_2 = 	SELECT
+		r.Value3 as Value1
+	FROM
+		InsertFromWithConstantsTable r
+	WHERE
+		r.Id = $id1
+;
 
 $set_value1 = (
 		SELECT

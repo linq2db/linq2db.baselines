@@ -19,37 +19,27 @@ $CTE_2 = 	SELECT
 		t2.PersonID = $personId_1
 ;
 $CTE_3 = 	SELECT
-		t3.PersonID as PersonID
+		COUNT(t3.PersonID) as cte_value
 	FROM
-		$CTE_1 t3
+		Patient t3
+	WHERE
+		t3.PersonID = $personId_1 AND t3.PersonID NOT IN (
+			SELECT
+				t4.PersonID
+			FROM
+				$CTE_1 t4
+		)
 ;
 $CTE_4 = 	SELECT
-		t4.PersonID as PersonID
-	FROM
-		$CTE_2 t4
-;
-$CTE_5 = 	SELECT
 		COUNT(t5.PersonID) as cte_value
 	FROM
 		Patient t5
 	WHERE
-		t5.PersonID = $personId_1 AND t5.PersonID NOT IN (
+		t5.PersonID = $personId AND t5.PersonID NOT IN (
 			SELECT
 				t6.PersonID
 			FROM
-				$CTE_3 t6
-		)
-;
-$CTE_6 = 	SELECT
-		COUNT(t7.PersonID) as cte_value
-	FROM
-		Patient t7
-	WHERE
-		t7.PersonID = $personId AND t7.PersonID NOT IN (
-			SELECT
-				t8.PersonID
-			FROM
-				$CTE_4 t8
+				$CTE_2 t6
 		)
 ;
 
@@ -58,19 +48,19 @@ SELECT
 		SELECT
 			1
 		FROM
-			Person t9
+			Person t7
 		WHERE
 			0 IN (
 				SELECT
-					t10.cte_value
+					t8.cte_value
 				FROM
-					$CTE_5 t10
+					$CTE_3 t8
 			) AND
 			0 IN (
 				SELECT
-					t11.cte_value
+					t9.cte_value
 				FROM
-					$CTE_6 t11
+					$CTE_4 t9
 			)
 	) as c1
 

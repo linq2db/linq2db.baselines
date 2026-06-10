@@ -6,5 +6,5 @@ SELECT
 FROM
 	Issue2816Table p
 WHERE
-	NOT (p.Text IS NULL OR LENGTH(Unicode::Strip(Unicode::ReplaceAll(p.Text, ''u, ' 'u))) = 0)
+	NOT (p.Text IS NULL OR Length(Unicode::Strip(Unicode::ReplaceAll(p.Text, ''u, ' 'u))) = 0)
 

@@ -6,7 +6,7 @@ SELECT
 FROM
 	Issue2816Table p
 WHERE
-	p.Text IS NULL OR LENGTH(Unicode::Strip(Unicode::ReplaceAll(p.Text, ''u, ' 'u))) = 0
+	p.Text IS NULL OR Length(Unicode::Strip(Unicode::ReplaceAll(p.Text, ''u, ' 'u))) = 0
 
 -- YDB Ydb
 

@@ -10,6 +10,14 @@ $CTE_1 = 	SELECT
 		r.Id = $id1
 	LIMIT 1
 ;
+$CTE_2 = 	SELECT
+		r.Value3 as Value1
+	FROM
+		InsertFromWithConstantsTable r
+	WHERE
+		r.Id = $id1
+	LIMIT 1
+;
 
 $set_value1 = (
 		SELECT

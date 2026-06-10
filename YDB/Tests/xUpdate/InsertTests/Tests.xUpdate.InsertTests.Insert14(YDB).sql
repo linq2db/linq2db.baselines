@@ -14,13 +14,6 @@ $CTE_1 = 	SELECT
 	WHERE
 		p.PersonID = 1
 ;
-$CTE_2 = 	SELECT
-		p.FirstName as FirstName
-	FROM
-		Person p
-	WHERE
-		p.PersonID = 1
-;
 
 INSERT INTO Person
 (
@@ -30,7 +23,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	'Insert14'u || Coalesce($CTE_2, ''u),
+	'Insert14'u || Coalesce($CTE_1, ''u),
 	'Shepard'u,
 	'M'u
 )

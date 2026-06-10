@@ -20,6 +20,20 @@ $CTE_2 = 	SELECT
 	WHERE
 		r.Id = $id2
 ;
+$CTE_3 = 	SELECT
+		r.Value4 as Value1
+	FROM
+		InsertFromWithConstantsTable r
+	WHERE
+		r.Id = $id2
+;
+$CTE_4 = 	SELECT
+		r.Value4 as Value1
+	FROM
+		InsertFromWithConstantsTable r
+	WHERE
+		r.Id = $id2
+;
 
 INSERT INTO InsertFromWithConstantsTable
 (
@@ -34,8 +48,8 @@ VALUES
 (
 	$id1,
 	$id3,
-	$CTE_2,
-	$CTE_2,
+	$CTE_3,
+	$CTE_4,
 	'string 1'u,
 	'string 2'u
 )
