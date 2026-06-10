@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@str LIKE (Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace([p].[FirstName], '~', '~~'), '_', '~_'), '%', '~%'), '[', '~['), ']', '~]'), '^', '~^') + '%') ESCAPE '~'
+	@str LIKE (Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace(Str_Replace([p].[FirstName], '~', '~~'), '_', '~_'), '%', '~%'), '[', '~['), ']', '~]'), '^', '~^') || '%') ESCAPE '~'
 

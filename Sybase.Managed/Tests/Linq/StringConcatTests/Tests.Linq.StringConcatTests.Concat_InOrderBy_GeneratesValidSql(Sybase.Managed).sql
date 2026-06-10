@@ -5,7 +5,7 @@ SELECT
 FROM
 	[ConcatTestEntity] [e]
 ORDER BY
-	Coalesce([e].[StrReq], '') + 'X'
+	Coalesce([e].[StrReq], '') || 'X'
 
 -- Sybase.Managed Sybase
 

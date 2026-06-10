@@ -1,7 +1,7 @@
 ﻿-- Sybase.Managed Sybase
 
 SELECT
-	'*** p ***' + '4',
+	'*** p ***' || '4',
 	'*** p ***',
 	'*** [Parent] ***',
 	'*** p_1.p ***'

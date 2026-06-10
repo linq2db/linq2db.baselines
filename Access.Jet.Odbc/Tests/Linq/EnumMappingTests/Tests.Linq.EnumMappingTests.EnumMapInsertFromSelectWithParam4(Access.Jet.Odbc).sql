@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes] [r]
@@ -30,7 +30,7 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID],
+	[r].[ID] + 1,
 	?
 FROM
 	[LinqDataTypes] [r]
@@ -44,11 +44,11 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[r].[ID] = 102 AND [r].[BigIntValue] = 11
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
-SET     @p = 102
+SET     @p = 103
 
 DELETE FROM
 	[LinqDataTypes] [r]

@@ -5,7 +5,7 @@ SELECT
 	[p].[PersonID],
 	[p].[PersonID],
 	[p].[LastName],
-	[p].[FirstName] + ' ' + [p].[LastName]
+	[p].[FirstName] || ' ' || [p].[LastName]
 FROM
 	[Person] [p]
 

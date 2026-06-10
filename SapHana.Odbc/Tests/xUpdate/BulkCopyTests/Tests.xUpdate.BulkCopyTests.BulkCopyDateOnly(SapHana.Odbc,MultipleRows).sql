@@ -14,7 +14,6 @@ VALUES
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."Id",
 	"t1"."Date"
 FROM
 	"DateOnlyTable" "t1"
