@@ -9,13 +9,6 @@ $CTE_1 = 	SELECT
 	WHERE
 		1 = 0
 ;
-$CTE_2 = 	SELECT
-		t1.required_field as Optional
-	FROM
-		Issue1363 t1
-	WHERE
-		1 = 0
-;
 
 INSERT INTO Issue1363
 (
@@ -25,7 +18,7 @@ INSERT INTO Issue1363
 VALUES
 (
 	$id,
-	$CTE_2
+	$CTE_1
 )
 
 -- YDB Ydb
@@ -41,13 +34,6 @@ $CTE_1 = 	SELECT
 	WHERE
 		t1.required_field = $testId
 ;
-$CTE_2 = 	SELECT
-		t1.required_field as Optional
-	FROM
-		Issue1363 t1
-	WHERE
-		t1.required_field = $testId
-;
 
 INSERT INTO Issue1363
 (
@@ -57,7 +43,7 @@ INSERT INTO Issue1363
 VALUES
 (
 	$id,
-	$CTE_2
+	$CTE_1
 )
 
 -- YDB Ydb

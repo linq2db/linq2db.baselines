@@ -10,7 +10,7 @@ SET     $StrVal = 'hello'u
 DECLARE $BoolVal Bool -- Boolean
 SET     $BoolVal = true
 DECLARE $DtVal Timestamp -- DateTime2
-SET     $DtVal = Timestamp('2026-06-10T01:19:48.511067Z')
+SET     $DtVal = Timestamp('2020-02-29T17:54:55.123123Z')
 
 INSERT INTO SimpleEntity
 (

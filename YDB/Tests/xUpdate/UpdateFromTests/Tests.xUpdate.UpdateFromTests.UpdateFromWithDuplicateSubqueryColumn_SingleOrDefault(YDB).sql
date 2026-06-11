@@ -9,28 +9,12 @@ $CTE_1 = 	SELECT
 	WHERE
 		r.Id = $id1
 ;
-$CTE_2 = 	SELECT
-		r.Value3 as Value1
-	FROM
-		InsertFromWithConstantsTable r
-	WHERE
-		r.Id = $id1
-;
-
-$set_value1 = (
-		SELECT
-			r.Value3
-		FROM
-			InsertFromWithConstantsTable r
-		WHERE
-			r.Id = $id1
-	);
 
 UPDATE
 	InsertFromWithConstantsTable
 SET
-	Value1 = $set_value1,
-	Value2 = $set_value1,
+	Value1 = $CTE_1,
+	Value2 = $CTE_1,
 	Value3 = 'string 1'u,
 	Value4 = 'string 1'u
 
