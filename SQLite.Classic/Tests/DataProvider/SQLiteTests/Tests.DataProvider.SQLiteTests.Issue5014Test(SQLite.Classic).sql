@@ -21,6 +21,7 @@ CREATE TABLE "Issue5014TestTable" (
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -75,6 +76,7 @@ CREATE TABLE "Issue5014TestTable" (
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite

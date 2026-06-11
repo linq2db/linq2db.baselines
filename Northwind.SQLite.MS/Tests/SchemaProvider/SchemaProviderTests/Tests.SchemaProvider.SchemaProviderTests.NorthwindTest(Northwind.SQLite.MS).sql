@@ -10,6 +10,7 @@
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
@@ -64,23 +65,8 @@
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND t.schema = 'main'
+				ORDER BY t.schema, t.name
 			
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Products by Category]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Summary of Sales by Year]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Summary of Sales by Quarter]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Order Subtotals]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
@@ -88,15 +74,7 @@ SELECT * FROM [Alphabetical list of products]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
-SELECT * FROM [Products Above Average Price]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Orders Qry]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
-SELECT * FROM [Order Details Extended]
+SELECT * FROM [Current Product List]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
@@ -104,7 +82,31 @@ SELECT * FROM [Customer and Suppliers by City]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
-SELECT * FROM [Current Product List]
+SELECT * FROM [Order Details Extended]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Order Subtotals]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Orders Qry]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Products Above Average Price]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Products by Category]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Summary of Sales by Quarter]
+
+-- Northwind.SQLite.MS SQLite.MS SQLite
+
+SELECT * FROM [Summary of Sales by Year]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
