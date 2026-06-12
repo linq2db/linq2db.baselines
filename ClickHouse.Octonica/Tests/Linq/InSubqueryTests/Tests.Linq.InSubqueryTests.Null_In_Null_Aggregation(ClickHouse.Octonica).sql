@@ -1,0 +1,58 @@
+﻿-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t.PK,
+	t.ID,
+	t.GV
+FROM
+	test_in_1 t
+WHERE
+	t.ID IS NULL AND 1 IN (
+		SELECT
+			1
+		FROM
+			(
+				SELECT
+					minOrNull(g_1.ID) as In_1
+				FROM
+					test_in_2 g_1
+				GROUP BY
+					g_1.GV
+			) t1
+		WHERE
+			t1.In_1 IS NULL
+	) OR
+	t.ID IS NOT NULL AND t.ID IN (
+		SELECT
+			t2.In_1
+		FROM
+			(
+				SELECT
+					minOrNull(g_2.ID) as In_1
+				FROM
+					test_in_2 g_2
+				GROUP BY
+					g_2.GV
+			) t2
+		WHERE
+			t2.In_1 IS NOT NULL
+	)
+
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.PK,
+	t1.ID,
+	t1.GV
+FROM
+	test_in_1 t1
+
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.PK,
+	t1.ID,
+	t1.GV
+FROM
+	test_in_2 t1
+
