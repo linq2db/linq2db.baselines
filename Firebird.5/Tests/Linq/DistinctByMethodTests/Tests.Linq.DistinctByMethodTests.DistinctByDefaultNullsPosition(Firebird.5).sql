@@ -6,9 +6,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Group" ORDER BY "e"."Priority" NULLS LAST, "e"."Id") as "RowNumber",
-			"e"."Priority",
+			"e"."Group" as "Group_1",
 			"e"."Id",
-			"e"."Group" as "Group_1"
+			"e"."Priority"
 		FROM
 			"TestData" "e"
 	) "x"
@@ -27,9 +27,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY "e"."Group" ORDER BY "e"."Priority" NULLS LAST, "e"."Id") as "RowNumber",
-			"e"."Priority",
+			"e"."Group" as "Group_1",
 			"e"."Id",
-			"e"."Group" as "Group_1"
+			"e"."Priority"
 		FROM
 			"TestData" "e"
 	) "x"
