@@ -9,13 +9,19 @@ SELECT
 FROM
 	(
 		SELECT
-			g_1.ParentID as Key_1,
-			COUNT(*) as aggregate_1,
-			COUNT(*) OVER() as window_1
+			g_2.Key_1,
+			g_2.aggregate_1,
+			COUNT(*) OVER () as window_1
 		FROM
-			Child g_1
-		GROUP BY
-			g_1.ParentID
+			(
+				SELECT
+					g_1.ParentID as Key_1,
+					COUNT(*) as aggregate_1
+				FROM
+					Child g_1
+				GROUP BY
+					g_1.ParentID
+			) g_2
 	) t1
 ORDER BY
 	t1.Key_1 DESC
