@@ -1,12 +1,18 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	(CAST(COUNT(*) AS Float) * 100) / SUM(COUNT(*)) OVER(),
-	SUM([g_1].[ParentID])
+	(CAST([g_2].[CountPercents] AS Float) * 100) / SUM([g_2].[CountPercents]) OVER (),
+	[g_2].[Sum_1]
 FROM
-	[Child] [g_1]
-GROUP BY
-	[g_1].[ParentID]
-HAVING
-	SUM([g_1].[ParentID]) <> 36
+	(
+		SELECT
+			COUNT(*) as [CountPercents],
+			SUM([g_1].[ParentID]) as [Sum_1]
+		FROM
+			[Child] [g_1]
+		GROUP BY
+			[g_1].[ParentID]
+		HAVING
+			SUM([g_1].[ParentID]) <> 36
+	) [g_2]
 
