@@ -10,7 +10,6 @@
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -65,7 +64,6 @@
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -101,7 +99,6 @@ SELECT * FROM [AllTypesView]
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -156,7 +153,6 @@ SELECT * FROM [AllTypesView]
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -192,7 +188,6 @@ SELECT * FROM [AllTypesView]
 					t.type = 'view'            AS IsView
 				FROM pragma_table_list() t
 				WHERE t.type IN ('table', 'view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
@@ -247,7 +242,6 @@ SELECT * FROM [AllTypesView]
 					t.name   AS TableName
 				FROM pragma_table_list() t
 				WHERE t.type IN ('view') AND t.name NOT IN ('sqlite_sequence', 'sqlite_schema')
-				ORDER BY t.schema, t.name
 			
 
 -- SQLite.Classic SQLite
