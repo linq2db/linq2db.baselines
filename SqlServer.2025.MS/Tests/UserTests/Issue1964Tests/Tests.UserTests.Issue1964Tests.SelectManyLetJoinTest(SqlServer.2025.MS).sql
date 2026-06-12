@@ -12,7 +12,7 @@ FROM
 	[dbo].[BranchInfo] [m_1]
 		LEFT JOIN (
 			SELECT
-				ROW_NUMBER() OVER(PARTITION BY [temp_1].[ItemId] ORDER BY [temp_1].[CreateTime]) as [Index_1],
+				ROW_NUMBER() OVER (PARTITION BY [temp_1].[ItemId] ORDER BY [temp_1].[CreateTime]) as [Index_1],
 				[temp_1].[ItemId],
 				[temp_1].[Url] as [BranchPic]
 			FROM
