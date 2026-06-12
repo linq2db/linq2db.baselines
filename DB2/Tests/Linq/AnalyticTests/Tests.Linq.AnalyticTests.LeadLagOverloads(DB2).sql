@@ -1,28 +1,28 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LEAD("p"."ProcessName", 2) OVER(ORDER BY "p"."ProcessID")
+	LEAD("p"."ProcessName", 2) OVER (ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LEAD("p"."ProcessName") OVER(ORDER BY "p"."ProcessID")
+	LEAD("p"."ProcessName") OVER (ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LAG("p"."ProcessName", 2) OVER(ORDER BY "p"."ProcessID")
+	LAG("p"."ProcessName", 2) OVER (ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LAG("p"."ProcessName") OVER(ORDER BY "p"."ProcessID")
+	LAG("p"."ProcessName") OVER (ORDER BY "p"."ProcessID")
 FROM
 	"Issue1799Table3" "p"
 
