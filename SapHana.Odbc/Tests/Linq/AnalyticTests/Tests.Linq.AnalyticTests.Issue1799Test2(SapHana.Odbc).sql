@@ -12,7 +12,7 @@ FROM
 		SELECT
 			"x"."EventUser" as "User_1",
 			"x"."ProcessID",
-			Seconds_Between(LAG("x"."EventTime") OVER(PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") / 60 as "Diff"
+			Seconds_Between(LAG("x"."EventTime") OVER (PARTITION BY "x"."EventUser", "x"."ProcessID" ORDER BY "x"."EventTime"), "x"."EventTime") / 60 as "Diff"
 		FROM
 			"Issue1799Table1" "x"
 	) "g_1"
