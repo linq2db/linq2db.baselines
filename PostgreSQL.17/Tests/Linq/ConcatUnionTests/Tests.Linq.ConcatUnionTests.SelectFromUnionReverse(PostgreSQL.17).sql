@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	DENSE_RANK() OVER(ORDER BY t_1."ID"),
+	DENSE_RANK() OVER (ORDER BY t_1."ID"),
 	t_1."ID"
 FROM
 	(
