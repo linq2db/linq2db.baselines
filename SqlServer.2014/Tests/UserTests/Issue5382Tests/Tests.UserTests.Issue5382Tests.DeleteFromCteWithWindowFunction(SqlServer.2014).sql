@@ -5,7 +5,7 @@ AS
 (
 	SELECT
 		[sample_1].[IntColumn],
-		ROW_NUMBER() OVER(PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]),
+		ROW_NUMBER() OVER (PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]),
 		[sample_1].[Value]
 	FROM
 		[SampleTable] [sample_1]
