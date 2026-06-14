@@ -14,16 +14,16 @@ FROM
 			FROM
 				(
 					SELECT
-						CURRENT_TIMESTAMP + t."Value" * Interval '1 Day' as Value1,
-						CURRENT_TIMESTAMP + 2 * Interval '1 Day' as Value2
+						now() + t."Value" * Interval '1 Day' as Value1,
+						now() + 2 * Interval '1 Day' as Value2
 					FROM
 						SampleClass t
 					WHERE
 						t."Value" = 1
 					UNION
 					SELECT
-						CURRENT_TIMESTAMP + 3 * Interval '1 Day' as Value1,
-						CURRENT_TIMESTAMP + 4 * Interval '1 Day' as Value2
+						now() + 3 * Interval '1 Day' as Value1,
+						now() + 4 * Interval '1 Day' as Value2
 				) t1
 			LIMIT 1
 		) t2 ON 1=1

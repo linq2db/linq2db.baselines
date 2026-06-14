@@ -1,0 +1,33 @@
+﻿-- SqlCe
+DECLARE @Name NVarChar(5) -- String
+SET     @Name = 'async'
+DECLARE @Version Int -- Int32
+SET     @Version = 3
+DECLARE @UpdatedAt DateTime
+SET     @UpdatedAt = NULL
+DECLARE @UpdatedBy NVarChar -- String
+SET     @UpdatedBy = NULL
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+UPDATE
+	[EntityUpdateTest]
+SET
+	[Name] = @Name,
+	[Version] = @Version,
+	[UpdatedAt] = @UpdatedAt,
+	[UpdatedBy] = @UpdatedBy
+WHERE
+	[EntityUpdateTest].[Id] = @Id
+
+-- SqlCe
+
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Name],
+	[t1].[Version] as [Version_1],
+	[t1].[UpdatedAt],
+	[t1].[UpdatedBy]
+FROM
+	[EntityUpdateTest] [t1]
+

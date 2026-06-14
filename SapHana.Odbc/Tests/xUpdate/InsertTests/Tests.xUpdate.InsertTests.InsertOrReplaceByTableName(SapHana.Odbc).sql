@@ -1,23 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC1'
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 1
-
-UPDATE
-	"xxPatient" "t1"
-SET
-	"Diagnosis" = ?
-WHERE
-	"t1"."PersonID" = ?
-
--- SapHana.Odbc SapHanaOdbc
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
-INSERT INTO "xxPatient"
+UPSERT "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -27,19 +14,7 @@ VALUES
 	?,
 	?
 )
-
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC2'
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 2
-
-UPDATE
-	"xxPatient" "t1"
-SET
-	"Diagnosis" = ?
-WHERE
-	"t1"."PersonID" = ?
+WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @PersonID Int -- Int32
@@ -47,7 +22,7 @@ SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
-INSERT INTO "xxPatient"
+UPSERT "xxPatient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -57,6 +32,7 @@ VALUES
 	?,
 	?
 )
+WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
 
@@ -66,30 +42,40 @@ FROM
 	"xxPatient" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'ABC1'
 
-UPDATE
-	"xxPatient" "t1"
-SET
-	"Diagnosis" = ?
-WHERE
-	"t1"."PersonID" = ?
+UPSERT "xxPatient"
+(
+	"PersonID",
+	"Diagnosis"
+)
+VALUES
+(
+	?,
+	?
+)
+WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Diagnosis NVarChar(4) -- String
-SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'ABC2'
 
-UPDATE
-	"xxPatient" "t1"
-SET
-	"Diagnosis" = ?
-WHERE
-	"t1"."PersonID" = ?
+UPSERT "xxPatient"
+(
+	"PersonID",
+	"Diagnosis"
+)
+VALUES
+(
+	?,
+	?
+)
+WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
 
