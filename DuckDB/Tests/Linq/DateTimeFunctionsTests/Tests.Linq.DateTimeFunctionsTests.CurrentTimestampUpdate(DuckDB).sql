@@ -4,7 +4,7 @@ UPDATE
 	LinqDataTypes
 SET
 	BoolValue = True,
-	DateTimeValue = now()
+	DateTimeValue = CURRENT_TIMESTAMP
 WHERE
 	LinqDataTypes.ID = 100000
 

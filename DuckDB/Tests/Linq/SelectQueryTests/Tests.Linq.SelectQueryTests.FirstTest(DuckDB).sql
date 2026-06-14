@@ -1,6 +1,6 @@
 ﻿-- DuckDB
 
 SELECT
-	now()
+	CURRENT_TIMESTAMP
 LIMIT 1
 
