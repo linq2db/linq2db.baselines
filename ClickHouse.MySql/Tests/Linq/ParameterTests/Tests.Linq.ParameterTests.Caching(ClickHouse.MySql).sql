@@ -42,7 +42,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	x.ParentID = 1 OR x.ParentID = 1
+	x.ParentID = 1
 
 -- ClickHouse.MySql ClickHouse
 
