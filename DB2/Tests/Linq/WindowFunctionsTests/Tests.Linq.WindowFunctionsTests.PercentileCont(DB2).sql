@@ -1,0 +1,14 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY "t1"."DecimalValue" DESC)
+FROM
+	"WindowFunctionTestEntity" "t1"
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY "t1"."IntValue" DESC)
+FROM
+	"WindowFunctionTestEntity" "t1"
+
