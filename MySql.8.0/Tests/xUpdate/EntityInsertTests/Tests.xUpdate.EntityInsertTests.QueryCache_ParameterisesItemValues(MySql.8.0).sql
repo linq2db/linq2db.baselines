@@ -1,0 +1,71 @@
+﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @Id Int32
+SET     @Id = 1
+DECLARE @Name VarChar(5) -- String
+SET     @Name = 'first'
+DECLARE @Version Int32
+SET     @Version = 11
+DECLARE @CreatedAt Datetime -- DateTime
+SET     @CreatedAt = NULL
+DECLARE @CreatedBy VarChar(2) -- String
+SET     @CreatedBy = 'u1'
+
+INSERT INTO `EntityInsertTest`
+(
+	`Id`,
+	`Name`,
+	`Version`,
+	`CreatedAt`,
+	`CreatedBy`
+)
+VALUES
+(
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
+	@CreatedBy
+)
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @Id Int32
+SET     @Id = 2
+DECLARE @Name VarChar(6) -- String
+SET     @Name = 'second'
+DECLARE @Version Int32
+SET     @Version = 21
+DECLARE @CreatedAt Datetime -- DateTime
+SET     @CreatedAt = NULL
+DECLARE @CreatedBy VarChar(2) -- String
+SET     @CreatedBy = 'u2'
+
+INSERT INTO `EntityInsertTest`
+(
+	`Id`,
+	`Name`,
+	`Version`,
+	`CreatedAt`,
+	`CreatedBy`
+)
+VALUES
+(
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
+	@CreatedBy
+)
+
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Name`,
+	`t1`.`Version`,
+	`t1`.`CreatedAt`,
+	`t1`.`CreatedBy`
+FROM
+	`EntityInsertTest` `t1`
+ORDER BY
+	`t1`.`Id`
+
