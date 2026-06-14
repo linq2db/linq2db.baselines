@@ -25,7 +25,7 @@ FROM
 					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], Coalesce(CASE
 					WHEN [a_Color_1].[Id] IS NULL THEN NULL
 					ELSE [t2].[ColorId]
-				END, 0) AS [ColorId], [a_Color].[Name] AS [ColorName0], [a_Style].[Name] AS [StyleName0], CASE
+				END, 0) AS [ColorId], CASE
 					WHEN [a_Color].[Name] = N'Red' THEN (
 						SELECT
 							COUNT(*) as [Conditional]
@@ -33,12 +33,12 @@ FROM
 							[SomeItem] [t1]
 					)
 					ELSE 0
-				END AS [Conditional], [a_Style].[Name] AS [StyleName1]
+				END AS [Conditional]
 					UNION ALL
 					SELECT NULL, [a_Style].[Name], Coalesce(CASE
 					WHEN [a_Color_1].[Id] IS NULL THEN NULL
 					ELSE [t2].[ColorId]
-				END, 0), NULL, [a_Style].[Name], 0, [a_Style].[Name]) [it]
+				END, 0), 0) [it]
 		WHERE
 			[it].[ColorName] = N'Red'
 	) [t3]
