@@ -16,16 +16,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -37,16 +27,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue <= right_1.StrValue
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -66,16 +46,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -87,16 +57,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue < right_1.StrValue
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -116,16 +76,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -137,16 +87,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue <> right_1.StrValue
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -166,16 +106,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -187,16 +117,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue <= right_1.StrValueNullable
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -216,16 +136,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -237,16 +147,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue < right_1.StrValueNullable
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -266,16 +166,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -287,16 +177,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValue <> right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -316,16 +196,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -337,16 +207,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValueNullable <= right_1.StrValueNullable OR i.StrValueNullable IS NULL
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -366,16 +226,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -387,16 +237,6 @@ FROM
 	Isue2424Table right_1
 WHERE
 	i.StrValueNullable < right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 
 -- ClickHouse.MySql ClickHouse
 
@@ -416,16 +256,6 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable,
@@ -438,14 +268,4 @@ FROM
 WHERE
 	i.StrValueNullable <> right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL OR
 	i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
-
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t1.Pk,
-	t1.Id,
-	t1.StrValue,
-	t1.StrValueNullable
-FROM
-	Isue2424Table t1
 

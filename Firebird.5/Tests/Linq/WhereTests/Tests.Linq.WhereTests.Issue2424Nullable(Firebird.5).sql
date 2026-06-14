@@ -11,16 +11,6 @@ FROM
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -29,16 +19,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" >= '1'
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -55,16 +35,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -77,16 +47,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -95,16 +55,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" IS NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -121,16 +71,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -139,16 +79,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" <= '3' OR "i"."StrValueNullable" IS NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -165,16 +95,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -183,16 +103,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" IS NOT NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -209,16 +119,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -227,16 +127,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" > '3'
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -253,16 +143,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -271,16 +151,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	1 = 0
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -297,16 +167,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -315,16 +175,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" < '3' OR "i"."StrValueNullable" IS NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -341,16 +191,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -359,16 +199,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" IS NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -385,16 +215,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -403,16 +223,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" = '3'
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -429,16 +239,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -447,16 +247,6 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" IS NOT NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
 -- Firebird.5 Firebird4
 
@@ -473,16 +263,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -495,16 +275,6 @@ WHERE
 -- Firebird.5 Firebird4
 
 SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
-
--- Firebird.5 Firebird4
-
-SELECT
 	"i"."Pk",
 	"i"."Id",
 	"i"."StrValue",
@@ -513,14 +283,4 @@ FROM
 	"Isue2424Table" "i"
 WHERE
 	"i"."StrValueNullable" <> '5' OR "i"."StrValueNullable" IS NULL
-
--- Firebird.5 Firebird4
-
-SELECT
-	"t1"."Pk",
-	"t1"."Id",
-	"t1"."StrValue",
-	"t1"."StrValueNullable"
-FROM
-	"Isue2424Table" "t1"
 
