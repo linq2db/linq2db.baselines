@@ -1,0 +1,24 @@
+﻿-- YDB Ydb
+
+SELECT
+	p.ParentID as ParentID,
+	p.Value1 as Value1
+FROM
+	Parent p
+		LEFT JOIN (
+			SELECT
+				t1.ParentID as ParentID
+			FROM
+				(
+					SELECT
+						a_Children.ParentID as ParentID,
+						ROW_NUMBER() OVER (PARTITION BY a_Children.ParentID ORDER BY a_Children.ParentID) as rn
+					FROM
+						Child a_Children
+				) t1
+			WHERE
+				t1.rn = 1
+		) t2 ON p.ParentID = t2.ParentID
+WHERE
+	t2.ParentID IS NOT NULL
+

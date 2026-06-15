@@ -1,0 +1,13 @@
+﻿-- YDB Ydb
+
+SELECT
+	COUNT(*) as LongCount
+FROM
+	(
+		SELECT DISTINCT
+			'test'u || Coalesce(a_Patient.Diagnosis, ''u) as c1
+		FROM
+			Person t1
+				LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
+	) t2
+
