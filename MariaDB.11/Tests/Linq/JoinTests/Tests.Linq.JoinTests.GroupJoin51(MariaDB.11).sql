@@ -12,7 +12,7 @@ FROM
 			`Parent` `p`
 				INNER JOIN (
 					SELECT
-						ROW_NUMBER() OVER (PARTITION BY `ch`.`ParentID` ORDER BY `ch`.`ChildID` DESC) as `rn`,
+						ROW_NUMBER() OVER(PARTITION BY `ch`.`ParentID` ORDER BY `ch`.`ChildID` DESC) as `rn`,
 						`ch`.`ParentID`
 					FROM
 						`Child` `ch`
@@ -34,7 +34,7 @@ FROM
 			SELECT
 				`ch`.`ParentID`,
 				`ch`.`ChildID`,
-				ROW_NUMBER() OVER (PARTITION BY `ch`.`ParentID` ORDER BY `ch`.`ChildID` DESC) as `rn`
+				ROW_NUMBER() OVER(PARTITION BY `ch`.`ParentID` ORDER BY `ch`.`ChildID` DESC) as `rn`
 			FROM
 				`Child` `ch`
 		) `t1` ON `p`.`ParentID` = `t1`.`ParentID` AND `t1`.`rn` = 1

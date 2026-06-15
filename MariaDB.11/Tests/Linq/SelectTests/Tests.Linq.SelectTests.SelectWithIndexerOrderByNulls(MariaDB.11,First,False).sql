@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY `p`.`MiddleName`, `p`.`PersonID`) - 1 as `Index_1`,
+			ROW_NUMBER() OVER(ORDER BY `p`.`MiddleName`, `p`.`PersonID`) - 1 as `Index_1`,
 			`p`.`PersonID` as `ID`,
 			`p`.`MiddleName`
 		FROM

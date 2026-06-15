@@ -40,7 +40,7 @@ FROM
 			SELECT
 				1 as `not_null`,
 				`a_Email_1`.`Id`,
-				ROW_NUMBER() OVER (PARTITION BY `a_EmailAdminAssociations`.`AdminId` ORDER BY `a_EmailAdminAssociations`.`AdminId`) as `rn`,
+				ROW_NUMBER() OVER(PARTITION BY `a_EmailAdminAssociations`.`AdminId` ORDER BY `a_EmailAdminAssociations`.`AdminId`) as `rn`,
 				`a_EmailAdminAssociations`.`AdminId`
 			FROM
 				`EmailAdminAssociation` `a_EmailAdminAssociations`

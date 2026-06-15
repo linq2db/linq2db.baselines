@@ -13,7 +13,7 @@ FROM
 				`c_1`.`ChildID`,
 				`a_Parent`.`ParentID` as `ParentID_1`,
 				`a_Parent`.`Value1`,
-				ROW_NUMBER() OVER (PARTITION BY `c_1`.`ChildID` ORDER BY `c_1`.`ChildID`) as `rn`
+				ROW_NUMBER() OVER(PARTITION BY `c_1`.`ChildID` ORDER BY `c_1`.`ChildID`) as `rn`
 			FROM
 				`Child` `c_1`
 					LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`

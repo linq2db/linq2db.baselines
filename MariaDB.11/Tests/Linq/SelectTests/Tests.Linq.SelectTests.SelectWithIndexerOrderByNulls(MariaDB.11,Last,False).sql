@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY CASE
+			ROW_NUMBER() OVER(ORDER BY CASE
 				WHEN `p`.`MiddleName` IS NULL THEN 1
 				ELSE 0
 			END, `p`.`MiddleName`, `p`.`PersonID`) - 1 as `Index_1`,

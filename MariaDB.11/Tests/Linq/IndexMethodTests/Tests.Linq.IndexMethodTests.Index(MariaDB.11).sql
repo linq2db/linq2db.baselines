@@ -1,7 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
-	ROW_NUMBER() OVER (ORDER BY `item_1`.`Id`) - 1,
+	ROW_NUMBER() OVER(ORDER BY `item_1`.`Id`) - 1,
 	`item_1`.`Id`,
 	`item_1`.`TestId`
 FROM

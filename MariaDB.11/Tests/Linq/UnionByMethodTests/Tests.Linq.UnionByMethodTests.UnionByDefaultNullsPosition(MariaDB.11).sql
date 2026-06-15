@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY `e_2`.`Key_1` ORDER BY `e_2`.`SourceIndex`, CASE
+			ROW_NUMBER() OVER(PARTITION BY `e_2`.`Key_1` ORDER BY `e_2`.`SourceIndex`, CASE
 				WHEN `e_2`.`Priority` IS NULL THEN 1
 				ELSE 0
 			END, `e_2`.`Priority`) as `RowNumber`,
@@ -42,7 +42,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY `e_2`.`Key_1` ORDER BY `e_2`.`SourceIndex`, CASE
+			ROW_NUMBER() OVER(PARTITION BY `e_2`.`Key_1` ORDER BY `e_2`.`SourceIndex`, CASE
 				WHEN `e_2`.`Priority` IS NULL THEN 1
 				ELSE 0
 			END, `e_2`.`Priority`) as `RowNumber`,
