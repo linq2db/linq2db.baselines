@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	ROW_NUMBER() OVER (ORDER BY "item_1"."Id") - 1,
+	ROW_NUMBER() OVER(ORDER BY "item_1"."Id") - 1,
 	"item_1"."Id",
 	"item_1"."TestId"
 FROM

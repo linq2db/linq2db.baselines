@@ -11,7 +11,7 @@ FROM
 			FROM
 				(
 					SELECT
-						ROW_NUMBER() OVER (PARTITION BY "e"."ChildID" ORDER BY "e"."ChildID") as "RowNumber",
+						ROW_NUMBER() OVER(PARTITION BY "e"."ChildID" ORDER BY "e"."ChildID") as "RowNumber",
 						"e"."ChildID"
 					FROM
 						"Child" "e"

@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY "p"."PersonID" DESC) - 1 as "Index_1",
+			ROW_NUMBER() OVER(ORDER BY "p"."PersonID" DESC) - 1 as "Index_1",
 			"p"."FirstName",
 			"p"."LastName",
 			"p"."PersonID"

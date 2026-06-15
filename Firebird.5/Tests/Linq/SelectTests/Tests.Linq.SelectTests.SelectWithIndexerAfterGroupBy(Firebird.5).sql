@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY "g_1"."PersonID" DESC) - 1 as "Index_1",
+			ROW_NUMBER() OVER(ORDER BY "g_1"."PersonID" DESC) - 1 as "Index_1",
 			"g_1"."PersonID" as "Key_1"
 		FROM
 			"Person" "g_1"
