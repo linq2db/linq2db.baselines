@@ -8,7 +8,7 @@ FROM
 	"Parent" "p"
 		CROSS JOIN LATERAL (
 			SELECT
-				ROW_NUMBER() OVER (ORDER BY "c_1"."ChildID") - 1 as "Index_1",
+				ROW_NUMBER() OVER(ORDER BY "c_1"."ChildID") - 1 as "Index_1",
 				"c_1"."ChildID"
 			FROM
 				"Child" "c_1"
