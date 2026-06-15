@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY IIF([p].[MiddleName] IS NULL, 0, 1), [p].[MiddleName] DESC, [p].[PersonID]) - 1 as [Index_1],
+			ROW_NUMBER() OVER(ORDER BY IIF([p].[MiddleName] IS NULL, 0, 1), [p].[MiddleName] DESC, [p].[PersonID]) - 1 as [Index_1],
 			[p].[PersonID] as [ID],
 			IIF([p].[MiddleName] IS NULL, 0, 1) as [c1],
 			[p].[MiddleName]

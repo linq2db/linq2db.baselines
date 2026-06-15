@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			RANK() OVER(PARTITION BY [dr].[Id], [dr].[TemplateId] ORDER BY [dr].[Id] DESC) as [Rank],
+			CAST(RANK() OVER(PARTITION BY [dr].[Id], [dr].[TemplateId] ORDER BY [dr].[Id] DESC) AS BigInt) as [Rank],
 			[dr].[EmployerNumber],
 			[dr].[Id],
 			[dr].[TemplateId],

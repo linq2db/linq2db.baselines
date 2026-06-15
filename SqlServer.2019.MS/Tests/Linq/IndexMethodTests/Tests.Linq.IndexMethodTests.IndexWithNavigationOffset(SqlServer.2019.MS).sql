@@ -8,7 +8,7 @@ FROM
 	[Parent] [p]
 		CROSS APPLY (
 			SELECT
-				ROW_NUMBER() OVER (ORDER BY [c_1].[ChildID]) - 1 as [Item1],
+				ROW_NUMBER() OVER(ORDER BY [c_1].[ChildID]) - 1 as [Item1],
 				[c_1].[ChildID]
 			FROM
 				[Child] [c_1]
