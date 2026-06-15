@@ -1,13 +1,14 @@
 ﻿-- SqlServer.2012
 
 SELECT
-	[sq].[Rank],
+	CAST([sq].[Rank_1] AS BigInt),
 	[sq].[RowNumber],
 	[sq].[DenseRank]
 FROM
 	(
 		SELECT
-			RANK() OVER(PARTITION BY [p].[Value1], [c_1].[ChildID] ORDER BY [p].[Value1], [c_1].[ChildID], [c_1].[ParentID]) as [Rank],
+			CAST(RANK() OVER(PARTITION BY [p].[Value1], [c_1].[ChildID] ORDER BY [p].[Value1], [c_1].[ChildID], [c_1].[ParentID]) AS BigInt) as [Rank],
+			RANK() OVER(PARTITION BY [p].[Value1], [c_1].[ChildID] ORDER BY [p].[Value1], [c_1].[ChildID], [c_1].[ParentID]) as [Rank_1],
 			ROW_NUMBER() OVER(PARTITION BY [p].[Value1], [c_1].[ChildID] ORDER BY [p].[Value1] DESC, [c_1].[ChildID], [c_1].[ParentID] DESC) as [RowNumber],
 			DENSE_RANK() OVER(PARTITION BY [p].[Value1], [c_1].[ChildID] ORDER BY [p].[Value1]) as [DenseRank]
 		FROM
