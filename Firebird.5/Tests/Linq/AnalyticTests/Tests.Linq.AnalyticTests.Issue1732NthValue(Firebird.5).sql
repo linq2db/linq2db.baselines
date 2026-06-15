@@ -4,7 +4,7 @@ SET     @group = 7
 
 SELECT
 	"p"."Id",
-	NTH_VALUE("p"."Id", 2) FROM FIRST OVER(ORDER BY "p"."Order" DESC)
+	NTH_VALUE("p"."Id", 2) OVER (ORDER BY "p"."Order" DESC)
 FROM
 	"Position" "p"
 WHERE
