@@ -48,7 +48,7 @@ FROM
 					SELECT
 						"c_1"."ParentID",
 						"c_1"."ChildID",
-						ROW_NUMBER() OVER (PARTITION BY "c_1"."ParentID" ORDER BY "c_1"."ChildID") as "rn"
+						ROW_NUMBER() OVER(PARTITION BY "c_1"."ParentID" ORDER BY "c_1"."ChildID") as "rn"
 					FROM
 						"Child" "c_1"
 					WHERE

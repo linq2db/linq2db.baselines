@@ -9,7 +9,7 @@ FROM
 			SELECT
 				"a_Metrics"."Value" as "Value_1",
 				CAST("a_Metrics"."Value" IS NOT NULL AS smallint) as "Value_2",
-				ROW_NUMBER() OVER (PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
+				ROW_NUMBER() OVER(PARTITION BY "a_Metrics"."RequestId" ORDER BY "a_Metrics"."RequestId") as "rn",
 				"a_Metrics"."RequestId"
 			FROM
 				"Metric" "a_Metrics"
