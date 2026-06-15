@@ -111,7 +111,7 @@ FROM
 			SELECT
 				[c1].[ParentID],
 				[c1].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [c1].[ParentID] ORDER BY [c1].[ParentID]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [c1].[ParentID] ORDER BY [c1].[ParentID]) as [rn]
 			FROM
 				[Child] [c1]
 		) [c1_1] ON [c1_1].[ParentID] = [p].[ParentID] AND [c1_1].[rn] = 1

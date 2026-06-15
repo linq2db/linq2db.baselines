@@ -55,7 +55,7 @@ FROM
 				[d].[SubDetailId],
 				[d].[DetailId],
 				[d].[SubDetailValue],
-				ROW_NUMBER() OVER (PARTITION BY [d].[DetailId] ORDER BY [d].[SubDetailValue]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[DetailId] ORDER BY [d].[SubDetailValue]) as [rn]
 			FROM
 				[SubDetailClass] [d]
 		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
@@ -94,7 +94,7 @@ FROM
 				[d].[Id2],
 				[d].[Value] as [Value_1],
 				[d].[ByteValues],
-				ROW_NUMBER() OVER (PARTITION BY [d].[Id1] ORDER BY [d].[Value]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[Id1] ORDER BY [d].[Value]) as [rn]
 			FROM
 				[MasterClass] [d]
 		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10

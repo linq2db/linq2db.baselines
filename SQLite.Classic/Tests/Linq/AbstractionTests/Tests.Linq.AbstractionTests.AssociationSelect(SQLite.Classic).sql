@@ -21,7 +21,7 @@ FROM
 				[d].[Id] as [Id_1],
 				[d].[ParentId],
 				[d].[SubId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
@@ -62,7 +62,7 @@ FROM
 				[d].[Id] as [Id_1],
 				[d].[ParentId],
 				[d].[SubId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]

@@ -19,7 +19,7 @@ FROM
 				[d].[Id],
 				[d].[Value] as [Value_1],
 				[d].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
 			FROM
 				[SubItem1] [d]
 			WHERE
@@ -62,7 +62,7 @@ FROM
 				[d].[Id],
 				[d].[Value] as [Value_1],
 				[d].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
 			FROM
 				[SubItem1] [d]
 			WHERE
@@ -114,7 +114,7 @@ FROM
 				[d_1].[Id],
 				[d_1].[Value] as [Value_1],
 				[d_1].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
 			FROM
 				[SubItem2] [d_1]
 			WHERE
@@ -189,7 +189,7 @@ FROM
 				[d_1].[Id],
 				[d_1].[Value] as [Value_1],
 				[d_1].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[Id]) as [rn]
 			FROM
 				[SubItem2] [d_1]
 			WHERE

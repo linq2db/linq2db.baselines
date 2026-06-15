@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT
 			[m_1].[ChildID],
-			ROW_NUMBER() OVER (ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
+			ROW_NUMBER() OVER(ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
 			[a_Parent].[ParentID]
 		FROM
 			[Child] [m_1]
@@ -31,7 +31,7 @@ FROM
 	(
 		SELECT
 			[m_1].[ChildID],
-			ROW_NUMBER() OVER (ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
+			ROW_NUMBER() OVER(ORDER BY [m_1].[ChildID] DESC) - 1 as [c1],
 			[a_Parent].[ParentID]
 		FROM
 			[Child] [m_1]

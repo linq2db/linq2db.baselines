@@ -36,7 +36,7 @@ FROM
 				[mm].[Id2],
 				[mm].[Value] as [Value_1],
 				[mm].[ByteValues],
-				ROW_NUMBER() OVER (PARTITION BY [mm].[Id1] ORDER BY [mm].[Id1]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [mm].[Id1] ORDER BY [mm].[Id1]) as [rn]
 			FROM
 				[MasterClass] [mm]
 		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Key_1] = [t3].[Id1] AND [t3].[rn] = 1

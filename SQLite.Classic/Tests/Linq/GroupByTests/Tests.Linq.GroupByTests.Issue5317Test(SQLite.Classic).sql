@@ -7,7 +7,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				[a_Reference].[Name] as [ReferenceName],
-				ROW_NUMBER() OVER (PARTITION BY [t1].[Id] ORDER BY [t1].[Id]) as [rn],
+				ROW_NUMBER() OVER(PARTITION BY [t1].[Id] ORDER BY [t1].[Id]) as [rn],
 				[t1].[Id]
 			FROM
 				[TestTable] [t1]

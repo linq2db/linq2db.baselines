@@ -8,7 +8,7 @@ FROM
 	[Parent] [p],
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY [IndexedParent].[ParentID]) - 1 as [Item1],
+			ROW_NUMBER() OVER(ORDER BY [IndexedParent].[ParentID]) - 1 as [Item1],
 			[IndexedParent].[Value1],
 			[IndexedParent].[ParentID]
 		FROM

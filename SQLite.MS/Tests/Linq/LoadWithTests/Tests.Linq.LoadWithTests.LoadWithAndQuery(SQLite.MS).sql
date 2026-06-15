@@ -57,7 +57,7 @@ FROM
 				[d_1].[Id],
 				[d_1].[Value] as [Value_1],
 				[d_1].[ParentId],
-				ROW_NUMBER() OVER (PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[ParentId]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d_1].[ParentId] ORDER BY [d_1].[ParentId]) as [rn]
 			FROM
 				[SubItem1_Sub] [d_1]
 			WHERE
