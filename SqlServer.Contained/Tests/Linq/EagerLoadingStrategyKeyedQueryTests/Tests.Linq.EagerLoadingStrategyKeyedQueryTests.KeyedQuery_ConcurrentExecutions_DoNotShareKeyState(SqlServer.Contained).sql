@@ -54,51 +54,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
 SET     @maxId = 3
 
@@ -122,686 +77,6 @@ SELECT
 FROM
 	(VALUES
 		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
 	) [k_1]([item])
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
@@ -882,32 +157,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[k_1].[item],
@@ -922,863 +171,6 @@ FROM
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
 	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
@@ -1824,167 +216,6 @@ ORDER BY
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
 SET     @maxId = 1
 
 SELECT
@@ -2048,159 +279,11 @@ SELECT
 	[d].[IsActive]
 FROM
 	(VALUES
-		(1)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
 		(1), (2)
 	) [k_1]([item])
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
 	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
 
@@ -2241,13 +324,13 @@ SELECT
 	[d].[IsActive]
 FROM
 	(VALUES
-		(1), (2)
+		(1), (2), (3)
 	) [k_1]([item])
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
 	[d].[Id]
 
--- SqlServer.Contained SqlServer.2019
+2019
 DECLARE @maxId Int -- Int32
 SET     @maxId = 1
 
@@ -2307,6 +390,52 @@ ORDER BY
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+ad)
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
 SET     @maxId = 1
 
 SELECT
@@ -2321,6 +450,19 @@ ORDER BY
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
 SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
 
 SELECT
 	[c_1].[Id]
@@ -2364,19 +506,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 2
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
 
 SELECT
 	[k_1].[item],
@@ -2386,36 +515,7 @@ SELECT
 	[d].[IsActive]
 FROM
 	(VALUES
-		(1), (2)
-	) [k_1]([item])
-		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
-ORDER BY
-	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 3
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[k_1].[item],
-	[d].[Id],
-	[d].[CompanyId],
-	[d].[Name],
-	[d].[IsActive]
-FROM
-	(VALUES
-		(1), (2), (3)
+		(1)
 	) [k_1]([item])
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
@@ -2510,6 +610,48 @@ ORDER BY
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
 SET     @maxId = 1
 
 SELECT
@@ -2532,6 +674,1762 @@ SELECT
 FROM
 	(VALUES
 		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
 	) [k_1]([item])
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
@@ -2597,7 +2495,7 @@ ORDER BY
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
-SET     @maxId = 1
+SET     @maxId = 3
 
 SELECT
 	[c_1].[Id]
@@ -2609,8 +2507,24 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2), (3)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
-SET     @maxId = 3
+SET     @maxId = 1
 
 SELECT
 	[c_1].[Id]
@@ -2655,6 +2569,119 @@ ORDER BY
 
 -- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1)
+	) [k_1]([item])
+		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 2
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
 SET     @maxId = 2
 
 SELECT
@@ -2683,8 +2710,40 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.Contained SqlServer.2019
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[CompanyId],
+	[d].[Name],
+	[d].[IsActive]
+FROM
+	(VALUES
+		(1), (2)
+	) [k_1]([item])
+		IN
+		INNER JOIN [Department] [d] O.[CompanyId] = [k_1].[item]
+ORDER BY
+	[d].[Id]
+
+Id]
+
+-- SqlServer.Contained SqlServer.2019
 DECLARE @maxId Int -- Int32
 SET     @maxId = 3
+
+SELECT
+	[c_1].[Id]
+FROM
+	[Company] [c_1]
+WHERE
+	[c_1].[Id] <= @maxId
+ORDER BY
+	[c_1].[Id]
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @maxId Int -- Int32
+SET     @maxId = 1
 
 SELECT
 	[c_1].[Id]
@@ -2710,19 +2769,6 @@ FROM
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
 	[d].[Id]
-
--- SqlServer.Contained SqlServer.2019
-DECLARE @maxId Int -- Int32
-SET     @maxId = 1
-
-SELECT
-	[c_1].[Id]
-FROM
-	[Company] [c_1]
-WHERE
-	[c_1].[Id] <= @maxId
-ORDER BY
-	[c_1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
 
