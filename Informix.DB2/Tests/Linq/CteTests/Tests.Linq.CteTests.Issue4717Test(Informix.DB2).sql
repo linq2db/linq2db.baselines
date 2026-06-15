@@ -151,7 +151,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				wp.StockOnHand,
-				ROW_NUMBER() OVER (PARTITION BY wp.WarehouseId ORDER BY wp.WarehouseId) as rn,
+				ROW_NUMBER() OVER(PARTITION BY wp.WarehouseId ORDER BY wp.WarehouseId) as rn,
 				wp.WarehouseId
 			FROM
 				Issue4717WarehouseProductMapping wp

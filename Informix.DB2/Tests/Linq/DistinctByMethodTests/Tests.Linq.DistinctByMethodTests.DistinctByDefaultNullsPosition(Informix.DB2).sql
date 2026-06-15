@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY CASE
+			ROW_NUMBER() OVER(PARTITION BY e."Group" ORDER BY CASE
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
 			END, e.Priority, e.Id) as RowNumber,
@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY CASE
+			ROW_NUMBER() OVER(PARTITION BY e."Group" ORDER BY CASE
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
 			END, e.Priority, e.Id) as RowNumber,

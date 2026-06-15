@@ -7,7 +7,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				a_GrandChildren.ParentID as Assignee,
-				ROW_NUMBER() OVER (PARTITION BY a_GrandChildren.ParentID, a_GrandChildren.ChildID ORDER BY a_GrandChildren.ParentID) as rn,
+				ROW_NUMBER() OVER(PARTITION BY a_GrandChildren.ParentID, a_GrandChildren.ChildID ORDER BY a_GrandChildren.ParentID) as rn,
 				a_GrandChildren.ChildID
 			FROM
 				GrandChild a_GrandChildren

@@ -14,7 +14,7 @@ WHERE
 				INNER JOIN (
 					SELECT
 						d.PersonID as ID,
-						ROW_NUMBER() OVER (PARTITION BY d.PersonID ORDER BY d.PersonID) as rn
+						ROW_NUMBER() OVER(PARTITION BY d.PersonID ORDER BY d.PersonID) as rn
 					FROM
 						Person d
 				) t1 ON t1.ID = patient_1.PersonID AND t1.rn = 1
@@ -29,7 +29,7 @@ WHERE
 				INNER JOIN (
 					SELECT
 						d_1.PersonID as ID,
-						ROW_NUMBER() OVER (PARTITION BY d_1.PersonID ORDER BY d_1.PersonID) as rn
+						ROW_NUMBER() OVER(PARTITION BY d_1.PersonID ORDER BY d_1.PersonID) as rn
 					FROM
 						Person d_1
 				) t2 ON t2.ID = patient_1.PersonID AND t2.rn = 1

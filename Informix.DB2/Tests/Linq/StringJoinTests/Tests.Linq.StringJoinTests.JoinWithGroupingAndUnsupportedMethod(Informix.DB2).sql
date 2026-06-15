@@ -13,7 +13,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				d.NullableValue,
-				ROW_NUMBER() OVER (PARTITION BY d.Id ORDER BY d.NotNullableValue) as rn,
+				ROW_NUMBER() OVER(PARTITION BY d.Id ORDER BY d.NotNullableValue) as rn,
 				d.Id,
 				d.NotNullableValue
 			FROM
@@ -38,7 +38,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				d.NotNullableValue,
-				ROW_NUMBER() OVER (PARTITION BY d.Id ORDER BY d.NotNullableValue) as rn,
+				ROW_NUMBER() OVER(PARTITION BY d.Id ORDER BY d.NotNullableValue) as rn,
 				d.Id
 			FROM
 				SampleClass d

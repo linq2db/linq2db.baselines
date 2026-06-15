@@ -13,7 +13,7 @@ SET
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER (PARTITION BY t.Id ORDER BY t.Id) as rn,
+					ROW_NUMBER() OVER(PARTITION BY t.Id ORDER BY t.Id) as rn,
 					t.Id
 				FROM
 					UpdateSubquerySourceTable t
@@ -32,7 +32,7 @@ SET
 			(
 				SELECT
 					t_1.LastName,
-					ROW_NUMBER() OVER (PARTITION BY t_1.Id ORDER BY t_1.Id) as rn,
+					ROW_NUMBER() OVER(PARTITION BY t_1.Id ORDER BY t_1.Id) as rn,
 					t_1.Id
 				FROM
 					UpdateSubquerySourceTable t_1

@@ -12,7 +12,7 @@ FROM
 			SELECT
 				a_Children.ParentID,
 				a_Children.ChildID,
-				ROW_NUMBER() OVER (PARTITION BY a_Children.ParentID ORDER BY a_Children.ChildID) as rn
+				ROW_NUMBER() OVER(PARTITION BY a_Children.ParentID ORDER BY a_Children.ChildID) as rn
 			FROM
 				Child a_Children
 		) t1 ON p.ParentID = t1.ParentID AND t1.rn = 1
@@ -20,7 +20,7 @@ FROM
 			SELECT
 				a_Children_1.ParentID,
 				a_Children_1.ChildID,
-				ROW_NUMBER() OVER (PARTITION BY a_Children_1.ParentID ORDER BY a_Children_1.ChildID) as rn
+				ROW_NUMBER() OVER(PARTITION BY a_Children_1.ParentID ORDER BY a_Children_1.ChildID) as rn
 			FROM
 				Child a_Children_1
 		) t2 ON p.ParentID = t2.ParentID AND t2.rn = 1

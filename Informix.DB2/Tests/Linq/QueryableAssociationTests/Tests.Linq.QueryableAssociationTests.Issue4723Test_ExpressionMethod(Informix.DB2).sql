@@ -8,7 +8,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				se."Value" as ExpressionMethod,
-				ROW_NUMBER() OVER (PARTITION BY se.Id ORDER BY se.Id) as rn,
+				ROW_NUMBER() OVER(PARTITION BY se.Id ORDER BY se.Id) as rn,
 				se.Id
 			FROM
 				Issue4723Table2 se

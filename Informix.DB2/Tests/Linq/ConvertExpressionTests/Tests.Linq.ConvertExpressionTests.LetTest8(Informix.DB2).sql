@@ -28,7 +28,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				c_1.ParentID,
-				ROW_NUMBER() OVER (PARTITION BY c_1.ParentID ORDER BY c_1.ChildID) as rn
+				ROW_NUMBER() OVER(PARTITION BY c_1.ParentID ORDER BY c_1.ChildID) as rn
 			FROM
 				Child c_1
 			WHERE
@@ -38,7 +38,7 @@ FROM
 			SELECT
 				c_2.ParentID,
 				c_2.ChildID,
-				ROW_NUMBER() OVER (PARTITION BY c_2.ParentID ORDER BY c_2.ChildID) as rn
+				ROW_NUMBER() OVER(PARTITION BY c_2.ParentID ORDER BY c_2.ChildID) as rn
 			FROM
 				Child c_2
 			WHERE

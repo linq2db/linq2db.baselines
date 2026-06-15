@@ -10,7 +10,7 @@ SET
 			(
 				SELECT
 					y.Field4,
-					ROW_NUMBER() OVER (PARTITION BY y.Field3 ORDER BY y.Field4) as rn,
+					ROW_NUMBER() OVER(PARTITION BY y.Field3 ORDER BY y.Field4) as rn,
 					y.Field3
 				FROM
 					InnerTable y

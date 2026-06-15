@@ -13,7 +13,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				d."Value" as Value_1,
-				ROW_NUMBER() OVER (PARTITION BY d.GrpId ORDER BY d.PK) as rn,
+				ROW_NUMBER() OVER(PARTITION BY d.GrpId ORDER BY d.PK) as rn,
 				d.GrpId,
 				d.PK
 			FROM

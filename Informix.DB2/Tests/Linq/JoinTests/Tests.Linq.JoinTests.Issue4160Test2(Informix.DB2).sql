@@ -7,7 +7,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				cc.Name,
-				ROW_NUMBER() OVER (PARTITION BY cc.Code ORDER BY cc.Code) as rn,
+				ROW_NUMBER() OVER(PARTITION BY cc.Code ORDER BY cc.Code) as rn,
 				cc.Code
 			FROM
 				Issue4160City cc

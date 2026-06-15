@@ -9,7 +9,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				a_PetIds.Name as PetName,
-				ROW_NUMBER() OVER (PARTITION BY a_PetIds.PersonId ORDER BY a_PetIds.PersonId) as rn,
+				ROW_NUMBER() OVER(PARTITION BY a_PetIds.PersonId ORDER BY a_PetIds.PersonId) as rn,
 				a_PetIds.PersonId
 			FROM
 				Issue2933Pet a_PetIds

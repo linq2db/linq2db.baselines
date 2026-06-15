@@ -8,7 +8,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				a_Association."Value" as Association,
-				ROW_NUMBER() OVER (PARTITION BY a_Association.Id ORDER BY a_Association.Id) as rn,
+				ROW_NUMBER() OVER(PARTITION BY a_Association.Id ORDER BY a_Association.Id) as rn,
 				a_Association.Id
 			FROM
 				Issue4723Table2 a_Association

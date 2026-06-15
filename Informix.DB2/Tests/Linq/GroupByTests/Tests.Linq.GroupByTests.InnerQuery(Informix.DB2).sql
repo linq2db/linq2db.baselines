@@ -12,7 +12,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				s_1.Taxonomy,
-				ROW_NUMBER() OVER (PARTITION BY s_1.PersonID ORDER BY s_1.PersonID) as rn,
+				ROW_NUMBER() OVER(PARTITION BY s_1.PersonID ORDER BY s_1.PersonID) as rn,
 				s_1.PersonID
 			FROM
 				Doctor s_1

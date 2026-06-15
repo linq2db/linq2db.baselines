@@ -7,7 +7,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				ch.ChildID,
-				ROW_NUMBER() OVER (PARTITION BY ch.ParentID ORDER BY ch.ParentID) as rn,
+				ROW_NUMBER() OVER(PARTITION BY ch.ParentID ORDER BY ch.ParentID) as rn,
 				ch.ParentID
 			FROM
 				Child ch

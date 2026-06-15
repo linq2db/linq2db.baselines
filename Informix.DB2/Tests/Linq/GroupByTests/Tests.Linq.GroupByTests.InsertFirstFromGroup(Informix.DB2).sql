@@ -32,7 +32,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				c_1."Value" as Value_1,
-				ROW_NUMBER() OVER (PARTITION BY c_1.ID ORDER BY c_1.ID) as rn,
+				ROW_NUMBER() OVER(PARTITION BY c_1.ID ORDER BY c_1.ID) as rn,
 				c_1.ID
 			FROM
 				temp_table_1 c_1
