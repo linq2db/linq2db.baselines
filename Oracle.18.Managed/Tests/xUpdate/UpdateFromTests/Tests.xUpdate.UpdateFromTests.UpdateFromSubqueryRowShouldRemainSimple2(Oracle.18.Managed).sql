@@ -1,7 +1,7 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"NewEntities"
+	"NewEntities" t1
 SET
 	("Value1", "Value2") = (
 		SELECT
@@ -9,8 +9,8 @@ SET
 			n3."RelatedValue2"
 		FROM
 			"UpdatedEntities" n2
-				LEFT JOIN "UpdateRelation" n3 ON n3."id" = n2."RelationId"
+				LEFT JOIN "UpdateRelation" n3 ON n3."RelatedValue1" = n2."RelationId"
 		WHERE
-			n2."id" = "NewEntities"."id"
+			n2."id" = t1."id"
 	)
 
