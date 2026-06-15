@@ -51,7 +51,7 @@ FROM
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
 				"t1"."LastUpdate",
-				ROW_NUMBER() OVER (PARTITION BY "t1"."Id" ORDER BY "t1"."Id") as "rn",
+				ROW_NUMBER() OVER(PARTITION BY "t1"."Id" ORDER BY "t1"."Id") as "rn",
 				"t1"."Id"
 			FROM
 				(

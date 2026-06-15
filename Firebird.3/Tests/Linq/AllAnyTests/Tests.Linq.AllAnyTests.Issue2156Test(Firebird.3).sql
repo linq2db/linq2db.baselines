@@ -46,7 +46,7 @@ FROM
 				"e"."LastName",
 				"e"."MiddleName",
 				"e"."Gender",
-				ROW_NUMBER() OVER (PARTITION BY "e"."PersonID" ORDER BY "e"."PersonID") as "rn"
+				ROW_NUMBER() OVER(PARTITION BY "e"."PersonID" ORDER BY "e"."PersonID") as "rn"
 			FROM
 				"Person" "e"
 		) "e_1" ON "u"."PersonID" = "e_1".ID AND "e_1"."rn" = 1

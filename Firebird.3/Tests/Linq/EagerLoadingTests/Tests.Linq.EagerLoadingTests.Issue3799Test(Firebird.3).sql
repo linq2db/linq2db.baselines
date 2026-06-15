@@ -32,7 +32,7 @@ FROM
 			SELECT
 				"a_Children"."Name",
 				"a_Children"."Id",
-				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentId" ORDER BY "a_Children"."ParentId") as "rn",
+				ROW_NUMBER() OVER(PARTITION BY "a_Children"."ParentId" ORDER BY "a_Children"."ParentId") as "rn",
 				"a_Children"."ParentId"
 			FROM
 				"Test3799Item" "a_Children"
