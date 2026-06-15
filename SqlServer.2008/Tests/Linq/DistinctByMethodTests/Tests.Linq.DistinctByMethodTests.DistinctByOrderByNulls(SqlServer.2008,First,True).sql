@@ -11,7 +11,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY CASE
+			ROW_NUMBER() OVER(PARTITION BY [e].[Group] ORDER BY CASE
 				WHEN [e].[Priority] IS NULL THEN 0
 				ELSE 1
 			END, [e].[Priority] DESC, [e].[Id], [e].[Date]) as [RowNumber],
