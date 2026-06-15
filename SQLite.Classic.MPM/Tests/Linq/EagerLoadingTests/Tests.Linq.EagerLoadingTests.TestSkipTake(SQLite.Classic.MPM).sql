@@ -33,7 +33,7 @@ FROM
 				[d].[DetailId],
 				[d].[MasterId],
 				[d].[DetailValue],
-				ROW_NUMBER() OVER (PARTITION BY [d].[MasterId] ORDER BY [d].[DetailId]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [d].[MasterId] ORDER BY [d].[DetailId]) as [rn]
 			FROM
 				[DetailClass] [d]
 		) [d_1] ON [m_2].[Id1] = [d_1].[MasterId] AND [d_1].[rn] > 1 AND [d_1].[rn] <= 3

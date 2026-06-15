@@ -84,7 +84,7 @@ FROM
 				[s].[Name],
 				[s].[Enabled],
 				[s].[ImageFullUrl],
-				ROW_NUMBER() OVER (PARTITION BY [s].[Name] ORDER BY [s].[Name]) as [rn]
+				ROW_NUMBER() OVER(PARTITION BY [s].[Name] ORDER BY [s].[Name]) as [rn]
 			FROM
 				[Stone] [s]
 			WHERE
