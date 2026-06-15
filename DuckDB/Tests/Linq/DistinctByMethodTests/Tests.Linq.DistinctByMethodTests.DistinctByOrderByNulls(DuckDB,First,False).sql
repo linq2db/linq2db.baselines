@@ -11,7 +11,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e.Priority NULLS FIRST, e.Id, e."Date") as RowNumber,
+			ROW_NUMBER() OVER(PARTITION BY e."Group" ORDER BY e.Priority NULLS FIRST, e.Id, e."Date") as RowNumber,
 			e.Priority,
 			e.Id,
 			e."Date" as Date_1,
