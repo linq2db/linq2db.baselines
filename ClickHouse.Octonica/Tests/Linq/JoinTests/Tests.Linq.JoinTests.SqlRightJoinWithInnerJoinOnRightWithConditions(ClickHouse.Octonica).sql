@@ -6,22 +6,22 @@ SELECT
 FROM
 	(
 		SELECT
-			p.Value1 as Value1,
-			p.ParentID as Left_1
+			left_1.ParentID as Left_1,
+			left_1.Value1 as Value1
 		FROM
-			Parent p
+			Parent left_1
+				INNER JOIN Parent left2 ON left_1.Value1 = left2.Value1 + 2
 		WHERE
-			p.ParentID <> 1
+			left_1.ParentID <> 2 AND left2.ParentID <> 1
 	) t1
-		FULL JOIN (
+		RIGHT JOIN (
 			SELECT
 				right_1.ParentID as Right_1,
 				right_1.Value1 + 2 as c1
 			FROM
 				Parent right_1
-					INNER JOIN Parent right2 ON right_1.Value1 = right2.Value1 + 2
 			WHERE
-				right_1.ParentID <> 2 AND right2.ParentID <> 1
+				right_1.ParentID <> 1
 		) right_2 ON right_2.c1 = t1.Value1
 ORDER BY
 	t1.Left_1
