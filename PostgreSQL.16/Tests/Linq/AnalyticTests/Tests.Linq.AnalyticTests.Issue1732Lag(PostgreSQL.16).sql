@@ -4,7 +4,7 @@ SET     @group = 7
 
 SELECT
 	p."Id",
-	LAG(p."Id", 1, -1) OVER(ORDER BY p."Order")
+	LAG(p."Id", 1, -1) OVER (ORDER BY p."Order")
 FROM
 	"Position" p
 WHERE
