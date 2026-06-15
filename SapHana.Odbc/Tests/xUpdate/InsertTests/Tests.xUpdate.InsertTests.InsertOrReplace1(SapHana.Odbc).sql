@@ -28,12 +28,25 @@ VALUES
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @Diagnosis NVarChar(4) -- String
+SET     @Diagnosis = 'abc0'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+
+UPDATE
+	"Patient" "t1"
+SET
+	"Diagnosis" = ?
+WHERE
+	"t1"."PersonID" = ?
+
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 
-UPSERT "Patient"
+INSERT INTO "Patient"
 (
 	"PersonID",
 	"Diagnosis"
@@ -43,43 +56,32 @@ VALUES
 	?,
 	?
 )
-WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @PersonID Int -- Int32
-SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
-
-UPSERT "Patient"
-(
-	"PersonID",
-	"Diagnosis"
-)
-VALUES
-(
-	?,
-	?
-)
-WITH PRIMARY KEY
-
--- SapHana.Odbc SapHanaOdbc
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
+
+UPDATE
+	"Patient" "t1"
+SET
+	"Diagnosis" = ?
+WHERE
+	"t1"."PersonID" = ?
+
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
 
-UPSERT "Patient"
-(
-	"PersonID",
-	"Diagnosis"
-)
-VALUES
-(
-	?,
-	?
-)
-WITH PRIMARY KEY
+UPDATE
+	"Patient" "t1"
+SET
+	"Diagnosis" = ?
+WHERE
+	"t1"."PersonID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32

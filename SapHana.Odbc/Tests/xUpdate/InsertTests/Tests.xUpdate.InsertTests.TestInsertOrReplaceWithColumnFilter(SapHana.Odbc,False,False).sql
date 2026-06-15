@@ -1,4 +1,23 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
+DECLARE @FirstName NVarChar(27) -- String
+SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName NVarChar(8) -- String
+SET     @LastName = 'whatever'
+DECLARE @MiddleName NVarChar(15) -- String
+SET     @MiddleName = 'som middle name'
+DECLARE @ID Int -- Int32
+SET     @ID = 0
+
+UPDATE
+	"TestInsertOrReplaceTable" "t1"
+SET
+	"FirstName" = ?,
+	"LastName" = ?,
+	"MiddleName" = ?
+WHERE
+	"t1"."ID" = ?
+
+-- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
@@ -8,7 +27,7 @@ SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(15) -- String
 SET     @MiddleName = 'som middle name'
 
-UPSERT "TestInsertOrReplaceTable"
+INSERT INTO "TestInsertOrReplaceTable"
 (
 	"ID",
 	"FirstName",
@@ -22,7 +41,6 @@ VALUES
 	?,
 	?
 )
-WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String
@@ -40,26 +58,20 @@ WHERE
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID Int -- Int32
-SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
+DECLARE @ID Int -- Int32
+SET     @ID = 0
 
-UPSERT "TestInsertOrReplaceTable"
-(
-	"ID",
-	"FirstName",
-	"LastName"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-WITH PRIMARY KEY
+UPDATE
+	"TestInsertOrReplaceTable" "t1"
+SET
+	"FirstName" = ?,
+	"LastName" = ?
+WHERE
+	"t1"."ID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String

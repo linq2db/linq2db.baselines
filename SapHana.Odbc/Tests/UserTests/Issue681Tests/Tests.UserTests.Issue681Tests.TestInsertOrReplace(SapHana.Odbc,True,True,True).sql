@@ -7,22 +7,17 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID Int -- Int32
-SET     @ID = 5
 DECLARE @Value Int -- Int32
 SET     @Value = 10
+DECLARE @ID Int -- Int32
+SET     @ID = 5
 
-UPSERT "LINKED_DB"."TESTDB"."Issue681Table"
-(
-	"ID",
-	"Value"
-)
-VALUES
-(
-	?,
-	?
-)
-WITH PRIMARY KEY
+UPDATE
+	"LINKED_DB"."TESTDB"."Issue681Table" "t1"
+SET
+	"Value" = ?
+WHERE
+	"t1"."ID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
@@ -30,7 +25,7 @@ SET     @ID = 5
 DECLARE @Value Int -- Int32
 SET     @Value = 10
 
-UPSERT "LINKED_DB"."TESTDB"."Issue681Table"
+INSERT INTO "LINKED_DB"."TESTDB"."Issue681Table"
 (
 	"ID",
 	"Value"
@@ -40,5 +35,17 @@ VALUES
 	?,
 	?
 )
-WITH PRIMARY KEY
+
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @Value Int -- Int32
+SET     @Value = 10
+DECLARE @ID Int -- Int32
+SET     @ID = 5
+
+UPDATE
+	"LINKED_DB"."TESTDB"."Issue681Table" "t1"
+SET
+	"Value" = ?
+WHERE
+	"t1"."ID" = ?
 

@@ -5,7 +5,16 @@ DELETE FROM
 
 -- SapHana.Odbc SapHanaOdbc
 
-UPSERT "InheritanceParent"
+UPDATE
+	"InheritanceParent" "t1"
+SET
+	"TypeDiscriminator" = 1
+WHERE
+	"t1"."InheritanceParentId" = 143 AND "t1"."Name" IS NULL
+
+-- SapHana.Odbc SapHanaOdbc
+
+INSERT INTO "InheritanceParent"
 (
 	"InheritanceParentId",
 	"Name",
@@ -17,7 +26,6 @@ VALUES
 	NULL,
 	1
 )
-WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
 
@@ -28,19 +36,12 @@ FROM
 
 -- SapHana.Odbc SapHanaOdbc
 
-UPSERT "InheritanceParent"
-(
-	"InheritanceParentId",
-	"Name",
-	"TypeDiscriminator"
-)
-VALUES
-(
-	143,
-	NULL,
-	1
-)
-WITH PRIMARY KEY
+UPDATE
+	"InheritanceParent" "t1"
+SET
+	"TypeDiscriminator" = 1
+WHERE
+	"t1"."InheritanceParentId" = 143 AND "t1"."Name" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
 
