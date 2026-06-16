@@ -1,0 +1,9 @@
+﻿-- ClickHouse.Driver ClickHouse
+
+SELECT
+	p.ParentID,
+	p.Value1
+FROM
+	Child c_1
+		GLOBAL INNER ALL JOIN Parent p ON c_1.ParentID = p.ParentID
+
