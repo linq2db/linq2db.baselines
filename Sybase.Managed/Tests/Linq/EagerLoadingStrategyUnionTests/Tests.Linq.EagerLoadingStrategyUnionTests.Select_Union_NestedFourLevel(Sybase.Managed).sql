@@ -1,0 +1,111 @@
+﻿-- Sybase.Managed Sybase
+
+SELECT
+	[c_1].[Id],
+	[c_1].[Name]
+FROM
+	[Company] [c_1]
+ORDER BY
+	[c_1].[Id]
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[d].[CompanyId],
+	[d].[Id],
+	[d].[Name]
+FROM
+	[Department] [d]
+WHERE
+	[d].[CompanyId] IN (1, 2, 3)
+ORDER BY
+	[d].[Id]
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[e].[DepartmentId],
+	[e].[Id],
+	[e].[Name],
+	[e].[Salary]
+FROM
+	[Employee] [e]
+WHERE
+	[e].[DepartmentId] IN (101, 102, 103, 201, 202, 203, 204, 301, 302, 303, 304, 305)
+ORDER BY
+	[e].[Id]
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[k_1].[item],
+	[d].[Id],
+	[d].[EmployeeId],
+	[d].[Title]
+FROM
+	(
+		SELECT 10101 AS [item]
+		UNION ALL
+		SELECT 10201
+		UNION ALL
+		SELECT 10202
+		UNION ALL
+		SELECT 10301
+		UNION ALL
+		SELECT 10302
+		UNION ALL
+		SELECT 10303
+		UNION ALL
+		SELECT 20101
+		UNION ALL
+		SELECT 20201
+		UNION ALL
+		SELECT 20202
+		UNION ALL
+		SELECT 20301
+		UNION ALL
+		SELECT 20302
+		UNION ALL
+		SELECT 20303
+		UNION ALL
+		SELECT 20401
+		UNION ALL
+		SELECT 20402
+		UNION ALL
+		SELECT 20403
+		UNION ALL
+		SELECT 20404
+		UNION ALL
+		SELECT 30101
+		UNION ALL
+		SELECT 30201
+		UNION ALL
+		SELECT 30202
+		UNION ALL
+		SELECT 30301
+		UNION ALL
+		SELECT 30302
+		UNION ALL
+		SELECT 30303
+		UNION ALL
+		SELECT 30401
+		UNION ALL
+		SELECT 30402
+		UNION ALL
+		SELECT 30403
+		UNION ALL
+		SELECT 30404
+		UNION ALL
+		SELECT 30501
+		UNION ALL
+		SELECT 30502
+		UNION ALL
+		SELECT 30503
+		UNION ALL
+		SELECT 30504
+		UNION ALL
+		SELECT 30505) [k_1]
+		INNER JOIN [EmployeeTask] [d] ON [k_1].[item] = [d].[EmployeeId]
+ORDER BY
+	[d].[Id]
+
