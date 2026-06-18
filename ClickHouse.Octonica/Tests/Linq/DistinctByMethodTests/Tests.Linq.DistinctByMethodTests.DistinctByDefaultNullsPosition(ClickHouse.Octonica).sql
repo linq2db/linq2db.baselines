@@ -5,10 +5,10 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.Group ORDER BY e.Priority, e.Id) as RowNumber,
-			e.Priority as Priority,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Group ORDER BY e.Priority, e.Id)) as RowNumber,
+			e.Group as Group_1,
 			e.Id as Id,
-			e.Group as Group_1
+			e.Priority as Priority
 		FROM
 			TestData e
 	) x
@@ -26,10 +26,10 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e.Group ORDER BY e.Priority, e.Id) as RowNumber,
-			e.Priority as Priority,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Group ORDER BY e.Priority, e.Id)) as RowNumber,
+			e.Group as Group_1,
 			e.Id as Id,
-			e.Group as Group_1
+			e.Priority as Priority
 		FROM
 			TestData e
 	) x
