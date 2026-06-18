@@ -12,8 +12,6 @@ FROM
 	"TestData" t1
 ORDER BY
 	t1."Group",
-	t1."Priority",
-	t1."Id",
 	t1."Date"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
