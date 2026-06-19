@@ -12,7 +12,8 @@ FROM
 			"Person" "x"
 	) "x_1"
 ORDER BY
-	Coalesce("x_1"."MiddleName", '-2') DESC
+	Coalesce("x_1"."MiddleName", '-2') DESC,
+	Coalesce("x_1"."LastName", '-1')
 
 -- Firebird.4 Firebird4
 
