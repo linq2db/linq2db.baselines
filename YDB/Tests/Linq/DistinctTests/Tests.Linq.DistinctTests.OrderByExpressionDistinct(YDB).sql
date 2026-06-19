@@ -15,7 +15,8 @@ FROM
 			Person x
 	) x_1
 ORDER BY
-	Coalesce(x_1.MiddleName, '-2'u) DESC
+	Coalesce(x_1.MiddleName, '-2'u) DESC,
+	Coalesce(x_1.LastName, '-1'u)
 
 -- YDB Ydb
 
