@@ -43,6 +43,8 @@ FROM
 -- Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 1
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 
 SELECT
 	[x].[ParentID],
@@ -50,7 +52,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = @p
+	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 -- Sybase.Managed Sybase
 
