@@ -43,6 +43,8 @@ FROM
 -- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 1
 
 SELECT
 	x.ParentID,
@@ -50,7 +52,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	x.ParentID = @p
+	x.ParentID = @p OR x.ParentID = @p_1
 
 -- Informix.DB2 Informix
 
