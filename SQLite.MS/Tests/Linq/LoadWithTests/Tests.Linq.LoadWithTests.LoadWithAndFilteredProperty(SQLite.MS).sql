@@ -121,7 +121,6 @@ FROM
 				[d_1].[ParentId] % 2 = 0
 		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
 ORDER BY
-	[m_2].[Id_1],
 	[d_2].[Id]
 
 -- SQLite.MS SQLite
@@ -196,7 +195,6 @@ FROM
 				[d_1].[ParentId] % 2 = 0
 		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
 ORDER BY
-	[m_2].[Id_1],
 	[d_2].[Id]
 
 -- SQLite.MS SQLite
