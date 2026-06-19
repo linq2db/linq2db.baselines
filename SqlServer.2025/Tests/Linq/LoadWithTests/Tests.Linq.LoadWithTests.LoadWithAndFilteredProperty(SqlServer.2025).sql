@@ -139,8 +139,6 @@ FROM
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
-ORDER BY
-	[m_2].[Id_1]
 
 -- SqlServer.2025
 
@@ -223,8 +221,6 @@ FROM
 			WHERE
 				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 		) [d_2]
-ORDER BY
-	[m_2].[Id_1]
 
 -- SqlServer.2025
 

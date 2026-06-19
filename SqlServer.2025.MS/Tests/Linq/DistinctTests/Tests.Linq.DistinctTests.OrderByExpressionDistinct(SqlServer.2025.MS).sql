@@ -12,7 +12,8 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	Coalesce([x_1].[MiddleName], N'-2') DESC
+	Coalesce([x_1].[MiddleName], N'-2') DESC,
+	Coalesce([x_1].[LastName], N'-1')
 
 -- SqlServer.2025.MS SqlServer.2025
 
