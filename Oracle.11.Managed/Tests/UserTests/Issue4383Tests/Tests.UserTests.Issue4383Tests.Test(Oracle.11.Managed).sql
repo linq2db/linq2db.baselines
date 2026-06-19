@@ -21,8 +21,6 @@ FROM
 				LEFT JOIN CHAINS a_Chain ON d.CHAIN_ID = a_Chain.CHAIN_ID
 	) m_1
 		INNER JOIN CHAINPOINTS d_1 ON m_1."Id" = d_1.CHAIN_ID
-ORDER BY
-	m_1."Id_1"
 
 -- Oracle.11.Managed Oracle11
 
