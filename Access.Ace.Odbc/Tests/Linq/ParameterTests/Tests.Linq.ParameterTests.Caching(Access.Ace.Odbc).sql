@@ -43,6 +43,8 @@ FROM
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	[x].[ParentID],
@@ -50,7 +52,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = ?
+	[x].[ParentID] = ? OR [x].[ParentID] = ?
 
 -- Access.Ace.Odbc AccessODBC
 
