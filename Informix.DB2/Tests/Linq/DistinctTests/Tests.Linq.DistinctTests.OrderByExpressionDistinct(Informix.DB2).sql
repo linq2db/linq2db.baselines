@@ -12,7 +12,8 @@ FROM
 			Person x
 	) x_1
 ORDER BY
-	Nvl(x_1.MiddleName, '-2') DESC
+	Nvl(x_1.MiddleName, '-2') DESC,
+	Nvl(x_1.LastName, '-1')
 
 -- Informix.DB2 Informix
 
