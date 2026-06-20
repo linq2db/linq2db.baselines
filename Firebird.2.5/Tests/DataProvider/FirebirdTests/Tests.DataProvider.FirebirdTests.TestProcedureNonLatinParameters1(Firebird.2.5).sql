@@ -14,7 +14,7 @@ SET     @PERSONID = NULL
 
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
-SET     @id = 5
+SET     @id = 6
 
 SELECT FIRST 2
 	"p"."FirstName",
@@ -29,7 +29,7 @@ WHERE
 
 -- Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
-SET     @id = 5
+SET     @id = 6
 
 DELETE FROM
 	"Person" "p"
