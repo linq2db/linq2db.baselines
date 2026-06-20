@@ -12,7 +12,8 @@ FROM
 			[Person] [x]
 	) [x_1]
 ORDER BY
-	IIF([x_1].[MiddleName] IS NULL, '-2', [x_1].[MiddleName]) DESC
+	IIF([x_1].[MiddleName] IS NULL, '-2', [x_1].[MiddleName]) DESC,
+	IIF([x_1].[LastName] IS NULL, '-1', [x_1].[LastName])
 
 -- Access.Jet.Odbc AccessODBC
 
