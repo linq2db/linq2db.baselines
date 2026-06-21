@@ -60,8 +60,8 @@ RETURNING
 	ID INTO :IDENTITY_PARAMETER
 
 -- Oracle.11.Managed Oracle11
-DECLARE @id2 Decimal(2, 0)
-SET     @id2 = 23
+DECLARE @id2 Decimal(1, 0)
+SET     @id2 = 4
 
 SELECT
 	t."longDataType"
