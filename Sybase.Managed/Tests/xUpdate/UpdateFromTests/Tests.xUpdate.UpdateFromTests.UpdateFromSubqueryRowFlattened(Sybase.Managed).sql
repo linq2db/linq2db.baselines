@@ -5,36 +5,20 @@ UPDATE
 SET
 	[FirstName] = (
 		SELECT
-			(
-				SELECT
-					[t_1].[FirstName]
-			)
+			[t].[FirstName]
 		FROM
-			[UpdateSubquerySourceTable] [x_1]
-				LEFT JOIN [UpdateSubquerySourceTable] [t_1] ON [t_1].[Id] = [x_1].[Id] + 1
+			[UpdateSubquerySourceTable] [t]
 		WHERE
-			[x_1].[Id] = 1 AND [UpdateSubquerySourceTable].[Id] = [x_1].[Id]
+			[t].[Id] = [UpdateSubquerySourceTable].[Id] + 1
 	),
 	[LastName] = (
 		SELECT
-			(
-				SELECT
-					[t_2].[LastName]
-			)
+			[t_1].[LastName]
 		FROM
-			[UpdateSubquerySourceTable] [x_2]
-				LEFT JOIN [UpdateSubquerySourceTable] [t_2] ON [t_2].[Id] = [x_2].[Id] + 1
+			[UpdateSubquerySourceTable] [t_1]
 		WHERE
-			[x_2].[Id] = 1 AND [UpdateSubquerySourceTable].[Id] = [x_2].[Id]
+			[t_1].[Id] = [UpdateSubquerySourceTable].[Id] + 1
 	)
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			[UpdateSubquerySourceTable] [x]
-				LEFT JOIN [UpdateSubquerySourceTable] [t] ON [t].[Id] = [x].[Id] + 1
-		WHERE
-			[x].[Id] = 1 AND [UpdateSubquerySourceTable].[Id] = [x].[Id]
-	)
+	[UpdateSubquerySourceTable].[Id] = 1
 
