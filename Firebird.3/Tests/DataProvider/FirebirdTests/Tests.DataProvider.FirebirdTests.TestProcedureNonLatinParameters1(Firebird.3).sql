@@ -14,7 +14,7 @@ SET     @PERSONID = NULL
 
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
-SET     @id = 5
+SET     @id = 6
 
 SELECT
 	"p"."FirstName",
@@ -30,7 +30,7 @@ FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
-SET     @id = 5
+SET     @id = 6
 
 DELETE FROM
 	"Person" "p"
