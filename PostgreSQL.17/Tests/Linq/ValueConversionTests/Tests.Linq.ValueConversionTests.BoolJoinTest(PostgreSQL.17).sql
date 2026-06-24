@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @true_value Varchar -- String
 SET     @true_value = 'Y'
 

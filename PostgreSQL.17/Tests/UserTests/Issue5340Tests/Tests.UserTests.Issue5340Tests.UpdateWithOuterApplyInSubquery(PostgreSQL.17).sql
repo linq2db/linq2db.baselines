@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 UPDATE
 	"OuterTable"
@@ -24,7 +24,7 @@ SET
 				) b_1 ON 1=1
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

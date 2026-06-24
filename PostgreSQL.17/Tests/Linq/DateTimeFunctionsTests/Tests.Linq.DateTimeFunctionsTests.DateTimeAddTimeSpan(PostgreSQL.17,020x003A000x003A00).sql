@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ts Interval -- Object
 SET     @ts = 02:00:00
 
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"DateTypes" t_1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

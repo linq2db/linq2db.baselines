@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT DISTINCT
 	pmp."ParentID"
 FROM
 	"Child" pmp
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ParentID",

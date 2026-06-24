@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE "WithIdentity"
 (
@@ -11,7 +11,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE "NoIdentity"
 (
@@ -24,13 +24,13 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "NoIdentity"
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "WithIdentity"
 

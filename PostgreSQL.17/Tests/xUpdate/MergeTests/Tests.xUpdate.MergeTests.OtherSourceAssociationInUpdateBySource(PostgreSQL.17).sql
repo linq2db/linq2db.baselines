@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "Person" "Target"
 USING (
@@ -26,7 +26,7 @@ SET
 			"Target"."PersonID" = "a_Patient_1"."PersonID"
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

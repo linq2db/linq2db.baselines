@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -7,7 +7,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -16,7 +16,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (2)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -25,7 +25,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (3)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -34,7 +34,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (10)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -43,7 +43,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (20)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "SimpleBulkCopyTable"
 (

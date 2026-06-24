@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t."ParentID",
@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Parent" t
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @param Integer -- Int32
 SET     @param = 1
 

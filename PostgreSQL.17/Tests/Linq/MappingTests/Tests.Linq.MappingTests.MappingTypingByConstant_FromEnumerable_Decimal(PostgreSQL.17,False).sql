@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	arg."Id",
@@ -9,7 +9,7 @@ FROM
 			(1,1::decimal)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	arg."Id",

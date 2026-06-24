@@ -1,6 +1,6 @@
 ﻿INSERT BULK "Issue4460Table"(Id, Code, Name, Surname)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Code",

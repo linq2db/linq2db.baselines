@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Issue1373Tests"
 (
@@ -11,7 +11,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Issue1373Tests"
 (
@@ -24,7 +24,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Issue1373Tests"
 (
@@ -37,7 +37,7 @@ VALUES
 	'test'
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
