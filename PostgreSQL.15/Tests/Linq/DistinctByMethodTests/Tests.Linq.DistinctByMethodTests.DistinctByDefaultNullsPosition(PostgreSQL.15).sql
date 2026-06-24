@@ -1,42 +1,38 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
 SELECT
-	x."Id"
+	x_1."Id"
 FROM
 	(
-		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
-			e."Priority",
-			e."Id",
-			e."Group" as "Group_1"
+		SELECT DISTINCT ON (x."Group")
+			x."Group" as "Group_1",
+			x."Id"
 		FROM
-			"TestData" e
-	) x
-WHERE
-	x."RowNumber" = 1
+			"TestData" x
+		ORDER BY
+			x."Group",
+			x."Priority",
+			x."Id"
+	) x_1
 ORDER BY
-	x."Group_1",
-	x."Priority",
-	x."Id"
+	x_1."Group_1"
 
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	x."Id"
+	x_1."Id"
 FROM
 	(
-		SELECT
-			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
-			e."Priority",
-			e."Id",
-			e."Group" as "Group_1"
+		SELECT DISTINCT ON (x."Group")
+			x."Group" as "Group_1",
+			x."Id"
 		FROM
-			"TestData" e
-	) x
-WHERE
-	x."RowNumber" = 1
+			"TestData" x
+		ORDER BY
+			x."Group",
+			x."Priority",
+			x."Id"
+	) x_1
 ORDER BY
-	x."Group_1",
-	x."Priority",
-	x."Id"
+	x_1."Group_1"
 
