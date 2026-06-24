@@ -6,7 +6,7 @@ FROM "Products" AS p
 WHERE (@ef_filter__p1 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."ProductName" LIKE 'U%'
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	MAX(e."QuantityPerUnit")
@@ -17,7 +17,7 @@ WHERE
 
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 DELETE FROM
 	"Products" e

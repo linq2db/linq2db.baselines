@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
@@ -17,7 +17,7 @@ FROM
 	) p_1
 		RIGHT JOIN "Child" c_1 ON p_1."ParentID" = c_1."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ParentID",
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ParentID",

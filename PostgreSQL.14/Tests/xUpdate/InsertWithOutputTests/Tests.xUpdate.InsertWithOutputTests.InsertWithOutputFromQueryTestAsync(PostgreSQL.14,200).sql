@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @param Integer -- Int32
 SET     @param = 200
 DECLARE @ValueStr Text(3) -- String
@@ -23,7 +23,7 @@ RETURNING
 	"DestinationTable"."Value",
 	"DestinationTable"."ValueStr"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @param Integer -- Int32
 SET     @param = 200
 DECLARE @ValueStr Text(3) -- String

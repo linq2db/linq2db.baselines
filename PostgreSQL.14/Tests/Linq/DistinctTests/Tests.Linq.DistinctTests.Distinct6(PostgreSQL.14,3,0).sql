@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 DECLARE @Value1 Integer -- Int32
@@ -10,7 +10,7 @@ SELECT DISTINCT
 FROM
 	"Parent" p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ParentID",

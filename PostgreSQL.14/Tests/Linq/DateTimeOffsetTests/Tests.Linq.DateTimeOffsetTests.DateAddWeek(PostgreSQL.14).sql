@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	Date_Trunc('day', (t."TransactionDate" + -Interval '1 Day' * 7) AT TIME ZONE 'UTC')::Date
