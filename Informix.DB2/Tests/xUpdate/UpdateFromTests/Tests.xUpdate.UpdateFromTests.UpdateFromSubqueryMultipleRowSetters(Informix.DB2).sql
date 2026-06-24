@@ -5,11 +5,7 @@ UPDATE
 SET
 	Value1 = (
 		SELECT
-			(
-				SELECT
-					r.RelatedValue1
-				FROM table(set{1})
-			)
+			r.RelatedValue1
 		FROM
 			UpdateRelation r
 		WHERE
@@ -17,11 +13,7 @@ SET
 	),
 	Value2 = (
 		SELECT
-			(
-				SELECT
-					r_1.RelatedValue2
-				FROM table(set{1})
-			)
+			r_1.RelatedValue2
 		FROM
 			UpdateRelation r_1
 		WHERE
@@ -29,11 +21,7 @@ SET
 	),
 	Value3 = (
 		SELECT
-			(
-				SELECT
-					r_2.RelatedValue3
-				FROM table(set{1})
-			)
+			r_2.RelatedValue3
 		FROM
 			UpdateRelation r_2
 		WHERE
@@ -41,11 +29,7 @@ SET
 	),
 	RelationId = (
 		SELECT
-			(
-				SELECT
-					r_3.id
-				FROM table(set{1})
-			)
+			r_3.id
 		FROM
 			UpdateRelation r_3
 		WHERE
