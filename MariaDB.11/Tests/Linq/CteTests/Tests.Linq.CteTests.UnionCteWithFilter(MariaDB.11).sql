@@ -16,7 +16,7 @@ SELECT
 FROM
 	(
 		SELECT
-			NULL as `Name`,
+			CAST(NULL AS CHAR(255)) as `Name`,
 			`r`.`Book_Title` as `Title`,
 			`r`.`Book_Id` as `Id`
 		FROM
@@ -24,8 +24,8 @@ FROM
 		UNION ALL
 		SELECT
 			`t1`.`Author_Name` as `Name`,
-			NULL as `Title`,
-			NULL as `Id`
+			CAST(NULL AS CHAR(255)) as `Title`,
+			CAST(NULL AS SIGNED) as `Id`
 		FROM
 			`BooksCte` `t1`
 	) `b_1`
