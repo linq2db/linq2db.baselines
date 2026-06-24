@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 WITH cte
 (
@@ -28,7 +28,7 @@ SELECT
 FROM
 	cte t1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x."FirstName",

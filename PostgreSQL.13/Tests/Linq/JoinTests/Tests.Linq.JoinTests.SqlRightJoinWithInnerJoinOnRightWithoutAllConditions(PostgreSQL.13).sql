@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	left_1."ParentID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1002
 DECLARE @ParentID Integer -- Int32
@@ -28,7 +28,7 @@ SET
 WHERE
 	"Parent"."ParentID" = :ParentID
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 

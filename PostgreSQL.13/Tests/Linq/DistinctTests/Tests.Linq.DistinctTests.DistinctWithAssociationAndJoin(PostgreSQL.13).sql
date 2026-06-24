@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ChildID",
@@ -20,7 +20,7 @@ FROM
 ORDER BY
 	t1."ChildID"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ParentID",
@@ -31,7 +31,7 @@ FROM
 	"Child" t1
 		LEFT JOIN "Parent" "a_Parent" ON t1."ParentID" = "a_Parent"."ParentID"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ParentID",

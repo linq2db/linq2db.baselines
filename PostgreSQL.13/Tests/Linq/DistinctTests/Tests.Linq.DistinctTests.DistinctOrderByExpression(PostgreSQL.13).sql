@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."MiddleName"
@@ -12,7 +12,7 @@ FROM
 ORDER BY
 	Coalesce(t1."MiddleName", '-1')
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."FirstName",

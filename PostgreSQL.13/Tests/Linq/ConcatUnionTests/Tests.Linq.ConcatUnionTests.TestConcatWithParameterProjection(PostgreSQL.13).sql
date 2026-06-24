@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @someValue Integer -- Int32
 SET     @someValue = 3
 

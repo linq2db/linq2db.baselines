@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @testedList Varchar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

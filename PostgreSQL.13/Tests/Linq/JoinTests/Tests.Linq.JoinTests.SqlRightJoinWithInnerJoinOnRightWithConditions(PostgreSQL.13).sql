@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 DECLARE @id1 Integer -- Int32

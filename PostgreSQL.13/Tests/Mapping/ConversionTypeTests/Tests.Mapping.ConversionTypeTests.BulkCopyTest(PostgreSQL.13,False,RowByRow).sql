@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data Text(9) -- String
@@ -15,7 +15,7 @@ VALUES
 	:Data
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."ID",
@@ -25,7 +25,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."ID",

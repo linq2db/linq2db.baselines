@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	r."Diagnosis" LIKE '%Persecution' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	r."Diagnosis" LIKE '%persecution' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	r."Diagnosis" ILIKE '%persecution' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)

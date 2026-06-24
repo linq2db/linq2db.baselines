@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "Issue5289Table" AS t1
 (
@@ -15,7 +15,7 @@ VALUES
 ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -27,7 +27,7 @@ WHERE
 	NOT r."Deleted" AND r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "Issue5289Table" AS t1
 (
@@ -44,7 +44,7 @@ VALUES
 ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."Id",

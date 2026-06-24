@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" t1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @param Smallint -- Int16
 SET     @param = 1
 
@@ -25,7 +25,7 @@ FROM
 WHERE
 	:param = t1."SmallIntValue"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ID",

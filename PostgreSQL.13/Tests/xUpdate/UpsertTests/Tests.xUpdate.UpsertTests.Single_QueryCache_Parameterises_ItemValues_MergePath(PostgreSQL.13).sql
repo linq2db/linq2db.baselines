@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 42
 DECLARE @Name Text(4) -- String
