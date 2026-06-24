@@ -6,9 +6,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Priority],
+			[e].[Group] as [Group_1],
 			[e].[Id],
-			[e].[Group] as [Group_1]
+			[e].[Priority]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -29,9 +29,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Priority],
+			[e].[Group] as [Group_1],
 			[e].[Id],
-			[e].[Group] as [Group_1]
+			[e].[Priority]
 		FROM
 			[TestData] [e]
 	) [x]
