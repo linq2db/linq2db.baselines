@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2014
 
 SELECT
-	CONVERT(varchar(4), 123, 1)
+	CONVERT(varchar(max), 123, 1)
 
