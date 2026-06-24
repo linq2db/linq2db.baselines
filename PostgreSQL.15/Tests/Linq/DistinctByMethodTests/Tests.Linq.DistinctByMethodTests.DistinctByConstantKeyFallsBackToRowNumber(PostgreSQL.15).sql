@@ -11,17 +11,16 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY 1 ORDER BY e_1."Group", e_1."Date") as "RowNumber",
-			e_1."Group" as "Group_1",
-			e_1."Date" as "Date_1",
-			e_1."Id",
-			e_1."Name",
-			e_1."Amount",
-			e_1."IsActive",
-			e_1."Priority"
+			ROW_NUMBER() OVER (PARTITION BY 1 ORDER BY e."Group", e."Date") as "RowNumber",
+			e."Group" as "Group_1",
+			e."Date" as "Date_1",
+			e."Id",
+			e."Name",
+			e."Amount",
+			e."IsActive",
+			e."Priority"
 		FROM
-			"TestData" e,
-			"TestData" e_1
+			"TestData" e
 	) t1
 WHERE
 	t1."RowNumber" = 1
