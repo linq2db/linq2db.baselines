@@ -21,7 +21,7 @@ $CTE_4 = 	SELECT DISTINCT
 		$CTE_3 t3
 ;
 $CTE_5 = 	SELECT
-		t4.NotIn as NotIn
+		t4.NotIn as cte_value
 	FROM
 		$CTE_4 t4
 ;
@@ -34,7 +34,7 @@ FROM
 WHERE
 	w.ChildID NOT IN (
 		SELECT
-			t5.NotIn
+			t5.cte_value
 		FROM
 			$CTE_5 t5
 	)

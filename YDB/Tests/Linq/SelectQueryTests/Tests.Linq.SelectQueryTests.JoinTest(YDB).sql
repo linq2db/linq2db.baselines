@@ -7,4 +7,6 @@ SELECT
 	3 as SecondValue
 FROM
 	SampleClass t
+WHERE
+	1 = t.Id
 

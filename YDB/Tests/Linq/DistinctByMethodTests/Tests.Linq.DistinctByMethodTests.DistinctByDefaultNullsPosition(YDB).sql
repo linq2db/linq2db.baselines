@@ -9,9 +9,9 @@ FROM
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
 			END, e.Priority, e.Id) as RowNumber,
-			e.Priority as Priority,
+			e.`Group` as Group_1,
 			e.Id as Id,
-			e.`Group` as Group_1
+			e.Priority as Priority
 		FROM
 			TestData e
 	) x
@@ -41,9 +41,9 @@ FROM
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
 			END, e.Priority, e.Id) as RowNumber,
-			e.Priority as Priority,
+			e.`Group` as Group_1,
 			e.Id as Id,
-			e.`Group` as Group_1
+			e.Priority as Priority
 		FROM
 			TestData e
 	) x
