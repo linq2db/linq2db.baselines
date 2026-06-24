@@ -124,11 +124,11 @@ AS
 (
 	SELECT
 		[ir].[ResourceID],
-		ROW_NUMBER() OVER(PARTITION BY [ir].[ResourceID] ORDER BY [ir].[ResourceID]),
+		ROW_NUMBER() OVER (PARTITION BY [ir].[ResourceID] ORDER BY [ir].[ResourceID]),
 		[ir].[MaterialID],
 		[ir].[InfeedAdviceID],
-		COUNT(*) OVER(PARTITION BY [ir].[ResourceID]),
-		COUNT(([ir].[ProductStatus] > 0)) OVER(PARTITION BY [ir].[ResourceID]),
+		COUNT(*) OVER (PARTITION BY [ir].[ResourceID]),
+		COUNT([ir].[ProductStatus] > 0) OVER (PARTITION BY [ir].[ResourceID]),
 		[ir].[Id],
 		[ir].[ProductStatus],
 		[ir].[BatchNumber],
