@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @skip Integer -- Int32
@@ -22,7 +22,7 @@ ORDER BY
 	r_1."FirstName"
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

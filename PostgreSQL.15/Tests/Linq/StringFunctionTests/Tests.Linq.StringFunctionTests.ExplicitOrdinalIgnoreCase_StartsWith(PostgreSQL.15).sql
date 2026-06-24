@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"CollatedTable" t1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive Text(10) -- String
@@ -24,7 +24,7 @@ VALUES
 	:CaseInsensitive
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ FROM
 WHERE
 	r."CaseSensitive" ILIKE 'TestSt%' ESCAPE '~'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -42,7 +42,7 @@ FROM
 WHERE
 	r."CaseInsensitive" ILIKE 'TestSt%' ESCAPE '~'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ FROM
 WHERE
 	r."CaseSensitive" ILIKE 'testst%' ESCAPE '~'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)

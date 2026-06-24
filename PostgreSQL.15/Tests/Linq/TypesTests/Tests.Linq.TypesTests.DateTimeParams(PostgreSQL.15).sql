@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @dateTime Timestamp -- DateTime2
 SET     @dateTime = '1992-01-11 01:11:21.100'::timestamp
 
@@ -10,7 +10,7 @@ WHERE
 	t."DateTimeValue" > :dateTime
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @dateTime Timestamp -- DateTime2
 SET     @dateTime = '1993-01-11 01:11:21.100'::timestamp
 

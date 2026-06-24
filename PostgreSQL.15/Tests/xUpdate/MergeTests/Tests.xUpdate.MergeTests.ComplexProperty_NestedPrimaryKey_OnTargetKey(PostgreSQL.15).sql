@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @Code Text(5) -- String
 SET     @Code = 'first'
 DECLARE @Key_Value Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:Key_Value
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Code Text(7) -- String
 SET     @Code = 'skipped'
 DECLARE @Key_Value Integer -- Int32
@@ -32,7 +32,7 @@ VALUES
 	:Key_Value
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "NestedKeyTarget" "Target"
 USING (VALUES
@@ -49,7 +49,7 @@ UPDATE
 SET
 	"Code" = "Source"."Code"
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Code",
