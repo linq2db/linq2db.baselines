@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t."TransactionDate" + -Interval '1 Month' * 3

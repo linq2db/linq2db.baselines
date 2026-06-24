@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @flag Integer -- Int32
 SET     @flag = 4
 

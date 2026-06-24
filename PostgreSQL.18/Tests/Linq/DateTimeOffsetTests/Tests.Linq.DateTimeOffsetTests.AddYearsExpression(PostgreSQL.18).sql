@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Date Integer -- Int32
 SET     @Date = 1
 

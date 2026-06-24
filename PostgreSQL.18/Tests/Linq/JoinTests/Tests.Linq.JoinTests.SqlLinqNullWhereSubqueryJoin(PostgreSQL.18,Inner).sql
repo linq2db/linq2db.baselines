@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 10
 DECLARE @take_1 Integer -- Int32

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	g_1."GrpId",
@@ -10,7 +10,7 @@ GROUP BY
 ORDER BY
 	g_1."GrpId"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."PK",

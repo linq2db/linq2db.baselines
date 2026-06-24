@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	m_1."Id",
@@ -26,7 +26,7 @@ FROM
 
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	c_1."Id"

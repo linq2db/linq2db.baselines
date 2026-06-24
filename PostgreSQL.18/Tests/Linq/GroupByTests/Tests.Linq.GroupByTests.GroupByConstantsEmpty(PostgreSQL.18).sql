@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	g_2."ChildId",
@@ -18,7 +18,7 @@ GROUP BY
 	g_2."ChildId",
 	g_2."ParentId"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ParentID",

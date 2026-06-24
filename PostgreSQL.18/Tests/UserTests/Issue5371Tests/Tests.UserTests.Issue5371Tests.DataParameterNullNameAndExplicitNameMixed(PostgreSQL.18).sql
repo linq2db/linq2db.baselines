@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @p1 Varchar(3) -- String
 SET     @p1 = 'ONE'
 DECLARE @p2 Varchar(3) -- String

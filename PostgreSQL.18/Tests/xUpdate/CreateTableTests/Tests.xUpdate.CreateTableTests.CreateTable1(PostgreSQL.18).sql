@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 DROP TABLE IF EXISTS "TestTable"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 CREATE TABLE "TestTable"
 (
@@ -14,7 +14,7 @@ CREATE TABLE "TestTable"
 	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ID",
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"TestTable" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 DROP TABLE "TestTable"
 

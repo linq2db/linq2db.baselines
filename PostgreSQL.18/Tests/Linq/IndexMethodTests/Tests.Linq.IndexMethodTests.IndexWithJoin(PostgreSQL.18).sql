@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."ParentID",
@@ -19,7 +19,7 @@ WHERE
 ORDER BY
 	"IndexedParent_1"."ParentID"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ParentID",

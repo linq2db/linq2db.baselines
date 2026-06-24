@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -8,7 +8,7 @@ FROM
 WHERE
 	"a_Parent"."ParentID" = 1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	"a_Parent"."ParentID"

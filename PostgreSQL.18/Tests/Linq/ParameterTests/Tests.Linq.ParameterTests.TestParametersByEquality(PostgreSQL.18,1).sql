@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32
@@ -20,7 +20,7 @@ FROM
 WHERE
 	p."PersonID" = :personId AND p."PersonID" = :personId_1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32

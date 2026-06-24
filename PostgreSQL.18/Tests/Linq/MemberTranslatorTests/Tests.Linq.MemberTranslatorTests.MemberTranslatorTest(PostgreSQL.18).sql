@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."FirstName",
@@ -11,7 +11,7 @@ FROM
 WHERE
 	p."FirstName" ~ 'Jo.*'
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."FirstName",

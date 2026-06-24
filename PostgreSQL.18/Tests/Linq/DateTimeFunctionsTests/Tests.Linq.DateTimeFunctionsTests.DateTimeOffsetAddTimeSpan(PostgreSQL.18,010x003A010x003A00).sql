@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @ts Interval -- Object
 SET     @ts = 01:01:00
 
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"DateTypesOffset" t_1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

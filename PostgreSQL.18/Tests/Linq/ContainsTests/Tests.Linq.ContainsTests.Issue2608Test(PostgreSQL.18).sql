@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @code Integer -- Int32
 SET     @code = 1
 DECLARE @site Integer -- Int32

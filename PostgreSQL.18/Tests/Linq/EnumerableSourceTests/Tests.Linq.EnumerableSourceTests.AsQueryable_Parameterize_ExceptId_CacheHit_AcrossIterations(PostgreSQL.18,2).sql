@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Data Text(7) -- String
 SET     @Data = 'Data 20'
 DECLARE @Data_1 Text(7) -- String

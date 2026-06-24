@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."Id",
@@ -9,7 +9,7 @@ WHERE
 	p."Text" IS NULL OR LTRIM(p."Text", '	
                   　') = ''
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

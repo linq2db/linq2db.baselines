@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StringConverted Varchar(4) -- String
@@ -15,7 +15,7 @@ VALUES
 	:StringConverted
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @StringConverted Varchar(53) -- String
@@ -32,7 +32,7 @@ VALUES
 	:StringConverted
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

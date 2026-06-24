@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @ClosedAt TimestampTz -- DateTime
 SET     @ClosedAt = NULL
 DECLARE @CreatedAt TimestampTz -- DateTime
@@ -15,7 +15,7 @@ VALUES
 	:CreatedAt
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @ClosedAt TimestampTz -- DateTime
 SET     @ClosedAt = 2019-12-31T23:00:00Z
 DECLARE @CreatedAt TimestampTz -- DateTime
@@ -32,7 +32,7 @@ VALUES
 	:CreatedAt
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @fromDate Unknown -- Object
 SET     @fromDate = 2019-12-25T00:00:00Z
 

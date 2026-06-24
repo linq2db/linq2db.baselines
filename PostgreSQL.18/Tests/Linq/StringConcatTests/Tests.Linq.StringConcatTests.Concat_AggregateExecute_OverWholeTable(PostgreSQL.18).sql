@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	STRING_AGG(Coalesce(t1."Value", ''), '' ORDER BY t1."PK" NULLS FIRST)

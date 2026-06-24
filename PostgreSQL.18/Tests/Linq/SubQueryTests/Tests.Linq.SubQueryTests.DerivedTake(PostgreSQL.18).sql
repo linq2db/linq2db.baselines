@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 1
 
@@ -15,7 +15,7 @@ FROM
 		LIMIT :take
 	) t2
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ParentID",

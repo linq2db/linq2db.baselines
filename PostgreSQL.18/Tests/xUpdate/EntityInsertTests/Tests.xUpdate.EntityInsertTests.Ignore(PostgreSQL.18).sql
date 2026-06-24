@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(1) -- String
@@ -23,7 +23,7 @@ VALUES
 	:CreatedAt
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

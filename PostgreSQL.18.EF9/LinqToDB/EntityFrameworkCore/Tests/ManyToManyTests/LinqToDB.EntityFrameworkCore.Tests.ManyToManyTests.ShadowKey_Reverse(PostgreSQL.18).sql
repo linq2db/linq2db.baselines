@@ -8,7 +8,7 @@ WHERE EXISTS (
 ORDER BY t."Label"
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t."Label"
