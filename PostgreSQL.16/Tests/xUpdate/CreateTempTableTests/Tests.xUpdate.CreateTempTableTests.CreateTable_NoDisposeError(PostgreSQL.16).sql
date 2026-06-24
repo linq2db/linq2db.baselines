@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "TempTable"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE "TempTable"
 (
@@ -12,11 +12,11 @@ CREATE TEMPORARY TABLE "TempTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE "TempTable"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "TempTable"
 
