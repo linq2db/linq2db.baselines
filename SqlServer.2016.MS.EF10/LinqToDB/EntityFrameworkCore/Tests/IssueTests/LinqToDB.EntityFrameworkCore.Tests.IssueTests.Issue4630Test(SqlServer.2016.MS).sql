@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id]) as [Index_1]
+			ROW_NUMBER() OVER (ORDER BY [x].[Id]) as [Index_1]
 		FROM
 			[Parents] [x]
 	) [t1]
