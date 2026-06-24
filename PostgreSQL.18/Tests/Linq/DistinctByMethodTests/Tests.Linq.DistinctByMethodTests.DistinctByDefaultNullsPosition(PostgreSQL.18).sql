@@ -1,38 +1,42 @@
 ﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
-	x_1."Id"
+	x."Id"
 FROM
 	(
-		SELECT DISTINCT ON (x."Group")
-			x."Group" as "Group_1",
-			x."Id"
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
+			e."Priority",
+			e."Id",
+			e."Group" as "Group_1"
 		FROM
-			"TestData" x
-		ORDER BY
-			x."Group",
-			x."Priority",
-			x."Id"
-	) x_1
+			"TestData" e
+	) x
+WHERE
+	x."RowNumber" = 1
 ORDER BY
-	x_1."Group_1"
+	x."Group_1",
+	x."Priority",
+	x."Id"
 
 -- PostgreSQL.18 PostgreSQL13
 
 SELECT
-	x_1."Id"
+	x."Id"
 FROM
 	(
-		SELECT DISTINCT ON (x."Group")
-			x."Group" as "Group_1",
-			x."Id"
+		SELECT
+			ROW_NUMBER() OVER (PARTITION BY e."Group" ORDER BY e."Priority", e."Id") as "RowNumber",
+			e."Priority",
+			e."Id",
+			e."Group" as "Group_1"
 		FROM
-			"TestData" x
-		ORDER BY
-			x."Group",
-			x."Priority",
-			x."Id"
-	) x_1
+			"TestData" e
+	) x
+WHERE
+	x."RowNumber" = 1
 ORDER BY
-	x_1."Group_1"
+	x."Group_1",
+	x."Priority",
+	x."Id"
 
