@@ -6,4 +6,6 @@ SELECT
 	1 as s
 FROM
 	SampleClass t
+WHERE
+	1 = t.Id
 

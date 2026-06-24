@@ -1,11 +1,18 @@
 ﻿-- YDB Ydb
 
 SELECT
-	t2.ParentID as ParentID,
-	t2.ChildID as ChildID,
-	t2.GrandChildID as GrandChildID
+	t3.ParentID as ParentID,
+	t3.ChildID as ChildID,
+	t3.GrandChildID as GrandChildID
 FROM
 	Parent p
-		CROSS JOIN Child t1
-		CROSS JOIN GrandChild t2
+		CROSS JOIN (
+			SELECT
+				t1.ParentID as ParentID,
+				t1.ChildID as ChildID,
+				t1.GrandChildID as GrandChildID
+			FROM
+				Child t2
+					CROSS JOIN GrandChild t1
+		) t3
 
