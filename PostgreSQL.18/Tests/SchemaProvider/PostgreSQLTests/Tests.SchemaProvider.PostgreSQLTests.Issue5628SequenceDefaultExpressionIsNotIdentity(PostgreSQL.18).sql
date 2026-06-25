@@ -1,10 +1,22 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
-SELECT
-	current_schema()
-FROM
-	"LinqDataTypes" t1
-LIMIT 1
+CREATE SEQUENCE issue5628_code_seq_20
+
+-- PostgreSQL.18 PostgreSQL
+
+CREATE SEQUENCE issue5628_item_id_seq_20
+
+-- PostgreSQL.18 PostgreSQL
+
+CREATE TABLE issue5628_sample_messages_20 (
+	code character varying(255) DEFAULT ('PREFIX_'::text || nextval('issue5628_code_seq_20'::regclass)) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_20'::regclass) NOT NULL,
+	status smallint DEFAULT 0 NOT NULL,
+	locale_id integer NOT NULL,
+	item_type integer DEFAULT 1 NOT NULL,
+	CONSTRAINT issue5628_sample_messages_20_pkey PRIMARY KEY (item_id, item_type),
+	CONSTRAINT issue5628_sample_messages_20_code_key UNIQUE (code)
+)
 
 -- PostgreSQL.18 PostgreSQL
 
@@ -305,3 +317,15 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction
+-- PostgreSQL.18 PostgreSQL
+
+DROP TABLE IF EXISTS issue5628_sample_messages_20
+
+-- PostgreSQL.18 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_code_seq_20
+
+-- PostgreSQL.18 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_20
+
