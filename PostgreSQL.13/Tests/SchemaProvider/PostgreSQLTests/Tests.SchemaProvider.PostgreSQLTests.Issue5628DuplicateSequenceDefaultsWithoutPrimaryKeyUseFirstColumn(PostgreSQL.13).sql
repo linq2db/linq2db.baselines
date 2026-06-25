@@ -1,85 +1,17 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 
-INSERT INTO "UIntTable"
-(
-	"Field16",
-	"Field32",
-	"Field64",
-	"Field16N",
-	"Field32N",
-	"Field64N"
-)
-VALUES
-(
-	65535,
-	4294967295,
-	18446744073709551615,
-	65535,
-	4294967295,
-	18446744073709551615
-)
+CREATE SEQUENCE issue5628_code_seq_17
 
 -- PostgreSQL.13 PostgreSQL
 
-SELECT
-	t1."Field16",
-	t1."Field32",
-	t1."Field64",
-	t1."Field16N",
-	t1."Field32N",
-	t1."Field64N"
-FROM
-	"UIntTable" t1
+CREATE SEQUENCE issue5628_item_id_seq_17
 
 -- PostgreSQL.13 PostgreSQL
 
-DELETE FROM
-	"UIntTable" t1
-
--- PostgreSQL.13 PostgreSQL
-DECLARE @value16 Integer -- Int32
-SET     @value16 = 65535
-DECLARE @value32 Bigint -- Int64
-SET     @value32 = 4294967295
-DECLARE @value64 Numeric(20, 0) -- Decimal
-SET     @value64 = 18446744073709551615
-DECLARE @value16N Integer -- Int32
-SET     @value16N = 65535
-DECLARE @value32N Bigint -- Int64
-SET     @value32N = 4294967295
-DECLARE @value64N Numeric(20, 0) -- Decimal
-SET     @value64N = 18446744073709551615
-
-INSERT INTO "UIntTable"
-(
-	"Field16",
-	"Field32",
-	"Field64",
-	"Field16N",
-	"Field32N",
-	"Field64N"
+CREATE TABLE issue5628_two_defaults_no_pk_17 (
+	code integer DEFAULT nextval('issue5628_code_seq_17'::regclass) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_17'::regclass) NOT NULL
 )
-VALUES
-(
-	:value16,
-	:value32,
-	:value64,
-	:value16N,
-	:value32N,
-	:value64N
-)
-
--- PostgreSQL.13 PostgreSQL
-
-SELECT
-	t1."Field16",
-	t1."Field32",
-	t1."Field64",
-	t1."Field16N",
-	t1."Field32N",
-	t1."Field64N"
-FROM
-	"UIntTable" t1
 
 -- PostgreSQL.13 PostgreSQL
 
@@ -111,7 +43,7 @@ LEFT JOIN pg_inherits i ON (
     JOIN pg_namespace n ON c.relnamespace = n.oid
     WHERE c.relname = t.table_name AND n.nspname = t.table_schema
 ) = i.inhrelid
-WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog')
+WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog') AND table_schema IN ('public')
 UNION ALL
 	SELECT
 		current_database() || '.' || v.schemaname || '.' || v.matviewname          as TableID,
@@ -130,7 +62,7 @@ UNION ALL
 		)                                                                          as Description,
 		false                                                                      as IsProviderSpecific
 	FROM pg_matviews v
-	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
+	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog') AND v.schemaname IN ('public')
 
 -- PostgreSQL.13 PostgreSQL
 
@@ -146,7 +78,7 @@ UNION ALL
 			JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
 	WHERE
 		pg_constraint.contype = 'p'
-	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
+	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('public')
 
 -- PostgreSQL.13 PostgreSQL
 
@@ -277,7 +209,7 @@ FROM
 				JOIN pg_namespace nt ON typ.typnamespace = nt.oid
 				LEFT JOIN
 					(pg_type bt JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid) ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
+			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog') AND ns.nspname IN ('public')
 		) columns
 	) columns
 ) columns;
@@ -328,5 +260,67 @@ FROM
 			JOIN pg_namespace as other_schema ON other_table.relnamespace = other_schema.oid
 WHERE
 	pg_constraint.contype = 'f'
-	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
+	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('public')
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT	r.ROUTINE_CATALOG,
+		r.ROUTINE_SCHEMA,
+		r.ROUTINE_NAME,
+		r.ROUTINE_DEFINITION,
+		r.SPECIFIC_NAME,
+		p.prokind,
+		p.proretset,
+		r.DATA_TYPE,
+		outp.cnt
+	FROM INFORMATION_SCHEMA.ROUTINES r
+		LEFT JOIN pg_catalog.pg_namespace n ON r.ROUTINE_SCHEMA = n.nspname
+		LEFT JOIN pg_catalog.pg_proc p ON p.pronamespace = n.oid AND r.SPECIFIC_NAME = p.proname || '_' || p.oid
+		LEFT JOIN (SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, COUNT(*)as cnt FROM INFORMATION_SCHEMA.parameters WHERE parameter_mode IN('OUT', 'INOUT') GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME) as outp
+			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
+		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE
+FROM INFORMATION_SCHEMA.parameters
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
+	FROM INFORMATION_SCHEMA.ROUTINES r
+		LEFT JOIN pg_catalog.pg_namespace n ON r.ROUTINE_SCHEMA = n.nspname
+		LEFT JOIN pg_catalog.pg_proc p ON p.pronamespace = n.oid AND r.SPECIFIC_NAME = p.proname || '_' || p.oid
+		LEFT JOIN (SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, COUNT(*)as cnt FROM INFORMATION_SCHEMA.parameters WHERE parameter_mode IN('OUT', 'INOUT') GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME) as outp
+			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
+	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT * FROM testdata.public."TestTableFunctionSchema"()
+
+-- PostgreSQL.13 PostgreSQL
+
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
+
+RollbackTransaction
+-- PostgreSQL.13 PostgreSQL
+
+DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_17
+
+-- PostgreSQL.13 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_code_seq_17
+
+-- PostgreSQL.13 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_17
 
