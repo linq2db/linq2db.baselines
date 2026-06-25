@@ -6,11 +6,11 @@ SET     @Value = 123
 DECLARE @Value2 VarChar -- String
 SET     @Value2 = NULL
 
-INSERT INTO `Issue3726Table`
+INSERT INTO `issue3726table`
 (
-	`Id`,
-	`Value`,
-	`Value2`
+	`id`,
+	`value`,
+	`value2`
 )
 VALUES
 (
@@ -26,9 +26,9 @@ DECLARE @bar Int32
 SET     @bar = 123
 
 UPDATE
-	`Issue3726Table` `f`
+	`issue3726table` `f`
 SET
-	`f`.`Value2` = @Value2
+	`f`.`value2` = @Value2
 WHERE
-	CAST(`f`.`Value` AS SIGNED) = @bar
+	CAST(`f`.`value` AS SIGNED) = @bar
 
