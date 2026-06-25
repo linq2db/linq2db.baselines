@@ -1,10 +1,19 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-SELECT
-	current_schema()
-FROM
-	"LinqDataTypes" t1
-LIMIT 1
+CREATE SEQUENCE issue5628_item_id_seq_18
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+CREATE TABLE issue5628_parenthesized_default_18 (
+	item_id integer DEFAULT (nextval('issue5628_item_id_seq_18'::regclass)) NOT NULL
+)
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+SELECT pg_get_expr(adbin, adrelid)
+FROM pg_attrdef
+WHERE adrelid = 'issue5628_parenthesized_default_18'::regclass
+AND adnum = 1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
@@ -305,3 +314,11 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP TABLE IF EXISTS issue5628_parenthesized_default_18
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_18
+
