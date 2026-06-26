@@ -25,7 +25,7 @@ FROM
 					("a_Color"."Name","a_Style"."Name",Coalesce(CASE
 						WHEN "a_Color_1"."Id" IS NULL THEN NULL
 						ELSE t2."ColorId"
-					END, 0),CASE
+					END, 0),"a_Color"."Name","a_Style"."Name",CASE
 						WHEN "a_Color"."Name" = 'Red' THEN (
 							SELECT
 								COUNT(*) as "Conditional"
@@ -33,12 +33,12 @@ FROM
 								"SomeItem" t1
 						)
 						ELSE 0
-					END),
+					END,"a_Style"."Name"),
 					(NULL,"a_Style"."Name",Coalesce(CASE
 						WHEN "a_Color_1"."Id" IS NULL THEN NULL
 						ELSE t2."ColorId"
-					END, 0),0)
-				) it("ColorName", "StyleName", "ColorId", "Conditional") ON 1=1
+					END, 0),NULL,"a_Style"."Name",0,"a_Style"."Name")
+				) it("ColorName", "StyleName", "ColorId", "ColorName0", "StyleName0", "Conditional", "StyleName1") ON 1=1
 		WHERE
 			it."ColorName" = 'Red'
 	) t3
