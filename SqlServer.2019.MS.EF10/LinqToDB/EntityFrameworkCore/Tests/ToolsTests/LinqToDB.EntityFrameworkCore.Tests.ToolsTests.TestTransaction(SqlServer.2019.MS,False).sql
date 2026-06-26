@@ -1,9 +1,9 @@
 ﻿Parameters:
-@ef_filter__p1='?' (DbType = Boolean)
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
 
 SELECT MAX([p].[QuantityPerUnit])
 FROM [Products] AS [p]
-WHERE (@ef_filter__p1 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)) AND [p].[ProductName] LIKE N'U%'
+WHERE (@ef_filter__p1 = CAST(1 AS bit) OR [p].[ProductID] > 2) AND (@ef_filter__p1 = CAST(1 AS bit) OR [p].[Discontinued] = CAST(0 AS bit)) AND (@ef_filter__p5 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)) AND [p].[ProductName] LIKE N'U%'
 
 
 -- SqlServer.2019
