@@ -4,7 +4,7 @@ SET     $take = 1000
 
 SELECT
 	a_Patient.Diagnosis as Diagnosis,
-	a_Patient.PersonID as PersonID,
+	a_Patient.PersonID as id,
 	AVG(auto16031.PersonID) as y
 FROM
 	Person auto16031
