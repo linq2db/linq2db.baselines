@@ -1,0 +1,9 @@
+﻿-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	SUM([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id] ROWS BETWEEN 5 PRECEDING AND 2 PRECEDING),
+	SUM([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id] ROWS BETWEEN 1 FOLLOWING AND 3 FOLLOWING),
+	SUM([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id] ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING)
+FROM
+	[WindowFunctionTestEntity] [t]
+
