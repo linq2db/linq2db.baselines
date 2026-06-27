@@ -1,10 +1,19 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-SELECT
-	current_database()
-FROM
-	"LinqDataTypes" t1
-LIMIT 1
+CREATE SEQUENCE issue5628_item_id_seq_18
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+CREATE TABLE issue5628_parenthesized_default_18 (
+	item_id integer DEFAULT (nextval('issue5628_item_id_seq_18'::regclass)) NOT NULL
+)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT pg_get_expr(adbin, adrelid)
+FROM pg_attrdef
+WHERE adrelid = 'issue5628_parenthesized_default_18'::regclass
+AND adnum = 1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -36,7 +45,7 @@ LEFT JOIN pg_inherits i ON (
     JOIN pg_namespace n ON c.relnamespace = n.oid
     WHERE c.relname = t.table_name AND n.nspname = t.table_schema
 ) = i.inhrelid
-WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog')
+WHERE i.inhrelid IS NULL AND table_schema NOT IN ('information_schema', 'pg_catalog') AND table_schema IN ('public')
 UNION ALL
 	SELECT
 		current_database() || '.' || v.schemaname || '.' || v.matviewname          as TableID,
@@ -55,7 +64,7 @@ UNION ALL
 		)                                                                          as Description,
 		false                                                                      as IsProviderSpecific
 	FROM pg_matviews v
-	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
+	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog') AND v.schemaname IN ('public')
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -71,7 +80,7 @@ UNION ALL
 			JOIN pg_namespace  ON pg_class.relnamespace = pg_namespace.oid
 	WHERE
 		pg_constraint.contype = 'p'
-	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
+	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('public')
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -202,7 +211,7 @@ FROM
 				JOIN pg_namespace nt ON typ.typnamespace = nt.oid
 				LEFT JOIN
 					(pg_type bt JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid) ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
+			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog') AND ns.nspname IN ('public')
 		) columns
 	) columns
 ) columns;
@@ -253,7 +262,7 @@ FROM
 			JOIN pg_namespace as other_schema ON other_table.relnamespace = other_schema.oid
 WHERE
 	pg_constraint.contype = 'f'
-	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
+	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('public')
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -271,7 +280,7 @@ SELECT	r.ROUTINE_CATALOG,
 		LEFT JOIN pg_catalog.pg_proc p ON p.pronamespace = n.oid AND r.SPECIFIC_NAME = p.proname || '_' || p.oid
 		LEFT JOIN (SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, COUNT(*)as cnt FROM INFORMATION_SCHEMA.parameters WHERE parameter_mode IN('OUT', 'INOUT') GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME) as outp
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
-		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
+		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
@@ -305,3 +314,11 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS issue5628_parenthesized_default_18
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_18
+
