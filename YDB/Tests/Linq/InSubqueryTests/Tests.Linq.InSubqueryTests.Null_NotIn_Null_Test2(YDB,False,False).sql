@@ -17,16 +17,16 @@ WHERE
 		SELECT
 			1
 		FROM
-			$CTE_1 t1
+			$CTE_1 t1_1
 		WHERE
-			t1.ID IS NULL
+			t1_1.ID IS NULL
 	) OR t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			t2.ID
+			t1_1.ID
 		FROM
-			$CTE_1 t2
+			$CTE_1 t1_1
 		WHERE
-			t2.ID IS NOT NULL
+			t1_1.ID IS NOT NULL
 	))
 
 -- YDB Ydb

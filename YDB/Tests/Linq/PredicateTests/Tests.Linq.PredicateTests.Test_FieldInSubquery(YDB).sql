@@ -124,17 +124,17 @@ WHERE
 		SELECT
 			1
 		FROM
-			$CTE_1 t1
+			$CTE_1 t1_1
 		WHERE
-			t1.Value4 IS NULL
+			t1_1.Value4 IS NULL
 	) OR
 	r_1.Value5 IS NOT NULL AND r_1.Value5 IN (
 		SELECT
-			t2.Value4
+			t1_1.Value4
 		FROM
-			$CTE_1 t2
+			$CTE_1 t1_1
 		WHERE
-			t2.Value4 IS NOT NULL
+			t1_1.Value4 IS NOT NULL
 	)
 
 -- YDB Ydb
@@ -274,16 +274,16 @@ WHERE
 		SELECT
 			1
 		FROM
-			$CTE_1 t1
+			$CTE_1 t1_1
 		WHERE
-			t1.Value4 IS NULL
+			t1_1.Value4 IS NULL
 	) OR r_1.Value5 IS NOT NULL AND r_1.Value5 IN (
 		SELECT
-			t2.Value4
+			t1_1.Value4
 		FROM
-			$CTE_1 t2
+			$CTE_1 t1_1
 		WHERE
-			t2.Value4 IS NOT NULL
+			t1_1.Value4 IS NOT NULL
 	))
 
 -- YDB Ydb
