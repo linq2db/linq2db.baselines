@@ -1,10 +1,18 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
-SELECT
-	current_schema()
-FROM
-	"LinqDataTypes" t1
-LIMIT 1
+CREATE SEQUENCE issue5628_code_seq_16
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+CREATE SEQUENCE issue5628_item_id_seq_16
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+CREATE TABLE issue5628_two_defaults_pk_16 (
+	code integer DEFAULT nextval('issue5628_code_seq_16'::regclass) NOT NULL,
+	item_id integer DEFAULT nextval('issue5628_item_id_seq_16'::regclass) NOT NULL,
+	CONSTRAINT issue5628_two_defaults_pk_16_pkey PRIMARY KEY (item_id)
+)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
@@ -305,3 +313,15 @@ SELECT * FROM testdata.public."TestTableFunctionSchema"()
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP TABLE IF EXISTS issue5628_two_defaults_pk_16
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_code_seq_16
+
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+
+DROP SEQUENCE IF EXISTS issue5628_item_id_seq_16
+
