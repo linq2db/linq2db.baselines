@@ -67,90 +67,137 @@ UNION ALL
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-SELECT columns.TableID,
-       columns.Name,
-       columns.IsNullable,
-       columns.Ordinal,
-       columns.DataType,
-       columns.ArrayDimensions,
-       columns.Length,
-       columns.Precision,
-       columns.Scale,
-       columns.IsIdentity OR COALESCE(columns.DefaultValue ~* 'nextval', false) AS IsIdentity,
-       columns.SkipOnInsert,
-       columns.SkipOnUpdate,
-       columns.Description,
-       columns.IsCustomEnum,
-       columns.IsCustomRange
-FROM (
-         SELECT current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
-                attr.attname                                                                             AS Name,
-                NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
-                attr.attnum                                                                              AS Ordinal,
-                CASE
-                    WHEN typ.typtype = 'd'::"char" THEN
-                        CASE
-                            WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    ELSE
-                        CASE
-                            WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    END                                                                                  AS DataType,
-                typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
-                typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
-                attr.attndims                                                                            AS ArrayDimensions,
-                information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
-                                                       information_schema._pg_truetypmod(attr.*, typ.*)) AS Length,
-                COALESCE(information_schema._pg_numeric_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*)),
-                         information_schema._pg_datetime_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*))
-                    )                                                                                    AS Precision,
-                information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
-                attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
-                cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
-                NOT (cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char"
-                    AND (EXISTS(SELECT 1
-                                FROM pg_rewrite
-                                WHERE pg_rewrite.ev_class = cls.oid
-                                  AND pg_rewrite.ev_type = '2'::"char"
-                                  AND pg_rewrite.is_instead))
-                    AND
-                                                  (EXISTS(SELECT 1
-                                                          FROM pg_rewrite
-                                                          WHERE pg_rewrite.ev_class = cls.oid
-                                                            AND pg_rewrite.ev_type = '4'::"char"
-                                                            AND pg_rewrite.is_instead))
-                    )                                                                                    AS SkipOnUpdate,
-                des.description                                                                          AS Description,
-                CASE
-                    WHEN atthasdef THEN (SELECT pg_get_expr(adbin, cls.oid)
-                                         FROM pg_attrdef
-                                         WHERE adrelid = cls.oid
-                                           AND adnum = attr.attnum)
-                    END                                                                                  AS DefaultValue
+SELECT
+	columns.TableID,
+	columns.Name,
+	columns.IsNullable,
+	columns.Ordinal,
+	columns.DataType,
+	columns.ArrayDimensions,
+	columns.Length,
+	columns.Precision,
+	columns.Scale,
+	-- Prefer native PostgreSQL identity metadata. Use sequence-default fallback only when
+	-- the table has no native identity column and only for the selected fallback column.
+	-- This intentionally selects one linq2db identity-like candidate, not every PostgreSQL
+	-- column that can get a value from DEFAULT nextval(...), as scaffold expects one identity.
+	columns.IsIdentity
+		OR NOT columns.HasIdentity
+			AND columns.IsSequenceDefault
+			AND columns.Ordinal = columns.IdentityFallbackOrdinal AS IsIdentity,
+	columns.SkipOnInsert,
+	columns.SkipOnUpdate,
+	columns.Description,
+	columns.IsCustomEnum,
+	columns.IsCustomRange
+FROM
+(
+	SELECT
+		columns.*,
+		-- If several direct DEFAULT nextval(...) columns exist, prefer a primary-key column.
+		-- Without a primary-key candidate, keep the first sequence-default column.
+		min
+		(
+			CASE
+				WHEN columns.IsSequenceDefault
+				AND (columns.IsPrimaryKey OR NOT columns.HasPrimaryKeySequenceDefault)
+				THEN columns.Ordinal
+			END
+		) OVER (PARTITION BY columns.TableID) AS IdentityFallbackOrdinal
+	FROM
+	(
+		SELECT
+			columns.*,
+			bool_or(columns.IsIdentity) OVER (PARTITION BY columns.TableID) AS HasIdentity,
+			-- Treat only direct DEFAULT nextval(...) expressions as PostgreSQL serial-style identity.
+			COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AS IsSequenceDefault,
+			bool_or(COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AND columns.IsPrimaryKey) OVER (PARTITION BY columns.TableID) AS HasPrimaryKeySequenceDefault
+		FROM
+		(
+			SELECT
+				current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
+				attr.attname                                                                             AS Name,
+				NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
+				attr.attnum                                                                              AS Ordinal,
+				CASE
+					WHEN typ.typtype = 'd'::"char" THEN
+					CASE
+						WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+					ELSE
+					CASE
+						WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+				END                                                                                      AS DataType,
+				typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
+				typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
+				attr.attndims                                                                            AS ArrayDimensions,
+				information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
+					information_schema._pg_truetypmod(attr.*, typ.*))                                    AS Length,
+				COALESCE
+				(
+					information_schema._pg_numeric_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*)),
+						information_schema._pg_datetime_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*))
+				)                                                                                        AS Precision,
+				information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
+				attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
+				EXISTS
+				(
+					SELECT 1
+					FROM pg_constraint con
+					-- Used only to choose one serial-style identity candidate when several defaults call nextval(...).
+					WHERE con.conrelid = cls.oid AND con.contype = 'p' AND attr.attnum = ANY(con.conkey)
+				)                                                                                        AS IsPrimaryKey,
+				cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
+				NOT
+				(
+					cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char" AND
+					(
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '2'::"char" AND pg_rewrite.is_instead
+						)
+					) AND (
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '4'::"char" AND pg_rewrite.is_instead
+						)
+					)
+				)                                                                                        AS SkipOnUpdate,
+				des.description                                                                          AS Description,
+				CASE
+					WHEN atthasdef THEN
+					(
+						SELECT pg_get_expr(adbin, cls.oid)
+						FROM pg_attrdef
+						WHERE adrelid = cls.oid
+						AND adnum = attr.attnum
+					) END                                                                                AS DefaultValue
 
-         FROM pg_catalog.pg_class cls
-                  JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
-                  LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
-                  LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
-                  LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
-                  LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
-                  LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
-                  JOIN pg_namespace nt ON typ.typnamespace = nt.oid
-                  LEFT JOIN (pg_type bt
-                 JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid)
-                            ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-         WHERE cls.relkind IN ('r', 'v', 'm', 'p')
-           AND attr.attnum > 0
-           AND NOT attr.attisdropped
-           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
-     ) columns;
+			FROM pg_catalog.pg_class cls
+				JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+				LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
+				LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
+				LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
+				LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
+				LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
+				JOIN pg_namespace nt ON typ.typnamespace = nt.oid
+				LEFT JOIN
+					(pg_type bt JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid) ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
+			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
+		) columns
+	) columns
+) columns;
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
@@ -319,90 +366,137 @@ UNION ALL
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-SELECT columns.TableID,
-       columns.Name,
-       columns.IsNullable,
-       columns.Ordinal,
-       columns.DataType,
-       columns.ArrayDimensions,
-       columns.Length,
-       columns.Precision,
-       columns.Scale,
-       columns.IsIdentity OR COALESCE(columns.DefaultValue ~* 'nextval', false) AS IsIdentity,
-       columns.SkipOnInsert,
-       columns.SkipOnUpdate,
-       columns.Description,
-       columns.IsCustomEnum,
-       columns.IsCustomRange
-FROM (
-         SELECT current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
-                attr.attname                                                                             AS Name,
-                NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
-                attr.attnum                                                                              AS Ordinal,
-                CASE
-                    WHEN typ.typtype = 'd'::"char" THEN
-                        CASE
-                            WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    ELSE
-                        CASE
-                            WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    END                                                                                  AS DataType,
-                typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
-                typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
-                attr.attndims                                                                            AS ArrayDimensions,
-                information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
-                                                       information_schema._pg_truetypmod(attr.*, typ.*)) AS Length,
-                COALESCE(information_schema._pg_numeric_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*)),
-                         information_schema._pg_datetime_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*))
-                    )                                                                                    AS Precision,
-                information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
-                attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
-                cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
-                NOT (cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char"
-                    AND (EXISTS(SELECT 1
-                                FROM pg_rewrite
-                                WHERE pg_rewrite.ev_class = cls.oid
-                                  AND pg_rewrite.ev_type = '2'::"char"
-                                  AND pg_rewrite.is_instead))
-                    AND
-                                                  (EXISTS(SELECT 1
-                                                          FROM pg_rewrite
-                                                          WHERE pg_rewrite.ev_class = cls.oid
-                                                            AND pg_rewrite.ev_type = '4'::"char"
-                                                            AND pg_rewrite.is_instead))
-                    )                                                                                    AS SkipOnUpdate,
-                des.description                                                                          AS Description,
-                CASE
-                    WHEN atthasdef THEN (SELECT pg_get_expr(adbin, cls.oid)
-                                         FROM pg_attrdef
-                                         WHERE adrelid = cls.oid
-                                           AND adnum = attr.attnum)
-                    END                                                                                  AS DefaultValue
+SELECT
+	columns.TableID,
+	columns.Name,
+	columns.IsNullable,
+	columns.Ordinal,
+	columns.DataType,
+	columns.ArrayDimensions,
+	columns.Length,
+	columns.Precision,
+	columns.Scale,
+	-- Prefer native PostgreSQL identity metadata. Use sequence-default fallback only when
+	-- the table has no native identity column and only for the selected fallback column.
+	-- This intentionally selects one linq2db identity-like candidate, not every PostgreSQL
+	-- column that can get a value from DEFAULT nextval(...), as scaffold expects one identity.
+	columns.IsIdentity
+		OR NOT columns.HasIdentity
+			AND columns.IsSequenceDefault
+			AND columns.Ordinal = columns.IdentityFallbackOrdinal AS IsIdentity,
+	columns.SkipOnInsert,
+	columns.SkipOnUpdate,
+	columns.Description,
+	columns.IsCustomEnum,
+	columns.IsCustomRange
+FROM
+(
+	SELECT
+		columns.*,
+		-- If several direct DEFAULT nextval(...) columns exist, prefer a primary-key column.
+		-- Without a primary-key candidate, keep the first sequence-default column.
+		min
+		(
+			CASE
+				WHEN columns.IsSequenceDefault
+				AND (columns.IsPrimaryKey OR NOT columns.HasPrimaryKeySequenceDefault)
+				THEN columns.Ordinal
+			END
+		) OVER (PARTITION BY columns.TableID) AS IdentityFallbackOrdinal
+	FROM
+	(
+		SELECT
+			columns.*,
+			bool_or(columns.IsIdentity) OVER (PARTITION BY columns.TableID) AS HasIdentity,
+			-- Treat only direct DEFAULT nextval(...) expressions as PostgreSQL serial-style identity.
+			COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AS IsSequenceDefault,
+			bool_or(COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AND columns.IsPrimaryKey) OVER (PARTITION BY columns.TableID) AS HasPrimaryKeySequenceDefault
+		FROM
+		(
+			SELECT
+				current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
+				attr.attname                                                                             AS Name,
+				NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
+				attr.attnum                                                                              AS Ordinal,
+				CASE
+					WHEN typ.typtype = 'd'::"char" THEN
+					CASE
+						WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+					ELSE
+					CASE
+						WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+				END                                                                                      AS DataType,
+				typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
+				typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
+				attr.attndims                                                                            AS ArrayDimensions,
+				information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
+					information_schema._pg_truetypmod(attr.*, typ.*))                                    AS Length,
+				COALESCE
+				(
+					information_schema._pg_numeric_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*)),
+						information_schema._pg_datetime_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*))
+				)                                                                                        AS Precision,
+				information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
+				attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
+				EXISTS
+				(
+					SELECT 1
+					FROM pg_constraint con
+					-- Used only to choose one serial-style identity candidate when several defaults call nextval(...).
+					WHERE con.conrelid = cls.oid AND con.contype = 'p' AND attr.attnum = ANY(con.conkey)
+				)                                                                                        AS IsPrimaryKey,
+				cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
+				NOT
+				(
+					cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char" AND
+					(
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '2'::"char" AND pg_rewrite.is_instead
+						)
+					) AND (
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '4'::"char" AND pg_rewrite.is_instead
+						)
+					)
+				)                                                                                        AS SkipOnUpdate,
+				des.description                                                                          AS Description,
+				CASE
+					WHEN atthasdef THEN
+					(
+						SELECT pg_get_expr(adbin, cls.oid)
+						FROM pg_attrdef
+						WHERE adrelid = cls.oid
+						AND adnum = attr.attnum
+					) END                                                                                AS DefaultValue
 
-         FROM pg_catalog.pg_class cls
-                  JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
-                  LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
-                  LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
-                  LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
-                  LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
-                  LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
-                  JOIN pg_namespace nt ON typ.typnamespace = nt.oid
-                  LEFT JOIN (pg_type bt
-                 JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid)
-                            ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-         WHERE cls.relkind IN ('r', 'v', 'm', 'p')
-           AND attr.attnum > 0
-           AND NOT attr.attisdropped
-           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
-     ) columns;
+			FROM pg_catalog.pg_class cls
+				JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+				LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
+				LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
+				LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
+				LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
+				LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
+				JOIN pg_namespace nt ON typ.typnamespace = nt.oid
+				LEFT JOIN
+					(pg_type bt JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid) ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
+			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
+		) columns
+	) columns
+) columns;
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
@@ -555,90 +649,137 @@ UNION ALL
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-SELECT columns.TableID,
-       columns.Name,
-       columns.IsNullable,
-       columns.Ordinal,
-       columns.DataType,
-       columns.ArrayDimensions,
-       columns.Length,
-       columns.Precision,
-       columns.Scale,
-       columns.IsIdentity OR COALESCE(columns.DefaultValue ~* 'nextval', false) AS IsIdentity,
-       columns.SkipOnInsert,
-       columns.SkipOnUpdate,
-       columns.Description,
-       columns.IsCustomEnum,
-       columns.IsCustomRange
-FROM (
-         SELECT current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
-                attr.attname                                                                             AS Name,
-                NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
-                attr.attnum                                                                              AS Ordinal,
-                CASE
-                    WHEN typ.typtype = 'd'::"char" THEN
-                        CASE
-                            WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    ELSE
-                        CASE
-                            WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
-                            ELSE 'USER-DEFINED'::text
-                        END
-                    END                                                                                  AS DataType,
-                typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
-                typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
-                attr.attndims                                                                            AS ArrayDimensions,
-                information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
-                                                       information_schema._pg_truetypmod(attr.*, typ.*)) AS Length,
-                COALESCE(information_schema._pg_numeric_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*)),
-                         information_schema._pg_datetime_precision(
-                                 information_schema._pg_truetypid(attr.*, typ.*),
-                                 information_schema._pg_truetypmod(attr.*, typ.*))
-                    )                                                                                    AS Precision,
-                information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
-                attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
-                cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
-                NOT (cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char"
-                    AND (EXISTS(SELECT 1
-                                FROM pg_rewrite
-                                WHERE pg_rewrite.ev_class = cls.oid
-                                  AND pg_rewrite.ev_type = '2'::"char"
-                                  AND pg_rewrite.is_instead))
-                    AND
-                                                  (EXISTS(SELECT 1
-                                                          FROM pg_rewrite
-                                                          WHERE pg_rewrite.ev_class = cls.oid
-                                                            AND pg_rewrite.ev_type = '4'::"char"
-                                                            AND pg_rewrite.is_instead))
-                    )                                                                                    AS SkipOnUpdate,
-                des.description                                                                          AS Description,
-                CASE
-                    WHEN atthasdef THEN (SELECT pg_get_expr(adbin, cls.oid)
-                                         FROM pg_attrdef
-                                         WHERE adrelid = cls.oid
-                                           AND adnum = attr.attnum)
-                    END                                                                                  AS DefaultValue
+SELECT
+	columns.TableID,
+	columns.Name,
+	columns.IsNullable,
+	columns.Ordinal,
+	columns.DataType,
+	columns.ArrayDimensions,
+	columns.Length,
+	columns.Precision,
+	columns.Scale,
+	-- Prefer native PostgreSQL identity metadata. Use sequence-default fallback only when
+	-- the table has no native identity column and only for the selected fallback column.
+	-- This intentionally selects one linq2db identity-like candidate, not every PostgreSQL
+	-- column that can get a value from DEFAULT nextval(...), as scaffold expects one identity.
+	columns.IsIdentity
+		OR NOT columns.HasIdentity
+			AND columns.IsSequenceDefault
+			AND columns.Ordinal = columns.IdentityFallbackOrdinal AS IsIdentity,
+	columns.SkipOnInsert,
+	columns.SkipOnUpdate,
+	columns.Description,
+	columns.IsCustomEnum,
+	columns.IsCustomRange
+FROM
+(
+	SELECT
+		columns.*,
+		-- If several direct DEFAULT nextval(...) columns exist, prefer a primary-key column.
+		-- Without a primary-key candidate, keep the first sequence-default column.
+		min
+		(
+			CASE
+				WHEN columns.IsSequenceDefault
+				AND (columns.IsPrimaryKey OR NOT columns.HasPrimaryKeySequenceDefault)
+				THEN columns.Ordinal
+			END
+		) OVER (PARTITION BY columns.TableID) AS IdentityFallbackOrdinal
+	FROM
+	(
+		SELECT
+			columns.*,
+			bool_or(columns.IsIdentity) OVER (PARTITION BY columns.TableID) AS HasIdentity,
+			-- Treat only direct DEFAULT nextval(...) expressions as PostgreSQL serial-style identity.
+			COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AS IsSequenceDefault,
+			bool_or(COALESCE(columns.DefaultValue ~* '^[[:space:]]*nextval[[:space:]]*\(', false) AND columns.IsPrimaryKey) OVER (PARTITION BY columns.TableID) AS HasPrimaryKeySequenceDefault
+		FROM
+		(
+			SELECT
+				current_database() || '.' || ns.nspname || '.' || cls.relname                            AS TableID,
+				attr.attname                                                                             AS Name,
+				NOT (attr.attnotnull OR typ.typtype = 'd'::"char" AND typ.typnotnull)                    AS IsNullable,
+				attr.attnum                                                                              AS Ordinal,
+				CASE
+					WHEN typ.typtype = 'd'::"char" THEN
+					CASE
+						WHEN nbt.nspname = 'pg_catalog'::name THEN format_type(typ.typbasetype, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+					ELSE
+					CASE
+						WHEN nt.nspname = 'pg_catalog'::name or typ.typtype = 'e'::"char" or typ.typtype = 'r'::"char" THEN format_type(attr.atttypid, attr.atttypmod)
+						ELSE 'USER-DEFINED'::text
+					END
+				END                                                                                      AS DataType,
+				typ.typtype = 'e'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomEnum,
+				typ.typtype = 'r'::"char" and nt.nspname <> 'pg_catalog'::name                           AS IsCustomRange,
+				attr.attndims                                                                            AS ArrayDimensions,
+				information_schema._pg_char_max_length(information_schema._pg_truetypid(attr.*, typ.*),
+					information_schema._pg_truetypmod(attr.*, typ.*))                                    AS Length,
+				COALESCE
+				(
+					information_schema._pg_numeric_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*)),
+						information_schema._pg_datetime_precision(
+						information_schema._pg_truetypid(attr.*, typ.*),
+						information_schema._pg_truetypmod(attr.*, typ.*))
+				)                                                                                        AS Precision,
+				information_schema._pg_numeric_scale(attr.atttypid, attr.atttypmod)                      AS Scale,
+				attr.attidentity IN ('a', 'd')                                                                         AS IsIdentity,
+				EXISTS
+				(
+					SELECT 1
+					FROM pg_constraint con
+					-- Used only to choose one serial-style identity candidate when several defaults call nextval(...).
+					WHERE con.conrelid = cls.oid AND con.contype = 'p' AND attr.attnum = ANY(con.conkey)
+				)                                                                                        AS IsPrimaryKey,
+				cls.relkind IN ('v', 'm')                                                                AS SkipOnInsert,
+				NOT
+				(
+					cls.relkind = 'r'::"char" OR cls.relkind = 'v'::"char" AND
+					(
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '2'::"char" AND pg_rewrite.is_instead
+						)
+					) AND (
+						EXISTS
+						(
+							SELECT 1
+							FROM pg_rewrite
+							WHERE pg_rewrite.ev_class = cls.oid AND pg_rewrite.ev_type = '4'::"char" AND pg_rewrite.is_instead
+						)
+					)
+				)                                                                                        AS SkipOnUpdate,
+				des.description                                                                          AS Description,
+				CASE
+					WHEN atthasdef THEN
+					(
+						SELECT pg_get_expr(adbin, cls.oid)
+						FROM pg_attrdef
+						WHERE adrelid = cls.oid
+						AND adnum = attr.attnum
+					) END                                                                                AS DefaultValue
 
-         FROM pg_catalog.pg_class cls
-                  JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
-                  LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
-                  LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
-                  LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
-                  LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
-                  LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
-                  JOIN pg_namespace nt ON typ.typnamespace = nt.oid
-                  LEFT JOIN (pg_type bt
-                 JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid)
-                            ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
-         WHERE cls.relkind IN ('r', 'v', 'm', 'p')
-           AND attr.attnum > 0
-           AND NOT attr.attisdropped
-           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
-     ) columns;
+			FROM pg_catalog.pg_class cls
+				JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+				LEFT JOIN pg_attribute AS attr ON attr.attrelid = cls.oid
+				LEFT JOIN pg_type AS typ ON attr.atttypid = typ.oid
+				LEFT JOIN pg_proc ON pg_proc.oid = typ.typreceive
+				LEFT JOIN pg_description AS des ON des.objoid = cls.oid AND des.objsubid = attr.attnum
+				LEFT JOIN pg_collation AS coll ON coll.oid = attr.attcollation
+				JOIN pg_namespace nt ON typ.typnamespace = nt.oid
+				LEFT JOIN
+					(pg_type bt JOIN pg_namespace nbt ON bt.typnamespace = nbt.oid) ON typ.typtype = 'd'::"char" AND typ.typbasetype = bt.oid
+			WHERE cls.relkind IN ('r', 'v', 'm', 'p') AND attr.attnum > 0 AND NOT attr.attisdropped AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
+		) columns
+	) columns
+) columns;
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
