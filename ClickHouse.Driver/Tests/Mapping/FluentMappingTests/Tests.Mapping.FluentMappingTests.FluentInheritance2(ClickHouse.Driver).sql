@@ -4,6 +4,7 @@ SELECT
 	t1.Gender,
 	t1.PersonID,
 	t1.LastName,
+	t1.FirstName,
 	t1.FirstName
 FROM
 	Person t1
@@ -17,6 +18,7 @@ SELECT
 	t1.Gender,
 	t1.PersonID,
 	t1.LastName,
+	t1.FirstName,
 	t1.FirstName
 FROM
 	Person t1
