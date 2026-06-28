@@ -2,10 +2,10 @@
 
 SELECT TOP (2)
 	[u].[Id],
-	[u].[user_name] as [Name],
-	[u].[city] as [City],
-	[u].[street] as [Street],
-	[u].[building_number] as [Building]
+	[u].[user_name],
+	[u].[city],
+	[u].[street],
+	[u].[building_number]
 FROM
 	[User] [u]
 WHERE

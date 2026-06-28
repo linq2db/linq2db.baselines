@@ -671,7 +671,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[g_1].[Id] as [Key_1],
+	[g_1].[Id],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
@@ -2380,7 +2380,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[g_1].[Id] as [Key_1],
+	[g_1].[Id],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL

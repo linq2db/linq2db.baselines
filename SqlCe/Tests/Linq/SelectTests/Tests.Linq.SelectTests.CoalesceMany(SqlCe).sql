@@ -6,7 +6,7 @@ SELECT
 	Coalesce([t].[Nullable2], [t].[Nullable3], [t].[Nullable1], [t].[Id]) as [Value3],
 	Coalesce([t].[Nullable3], [t].[Nullable1], [t].[Nullable2], [t].[Id]) as [Value4],
 	Coalesce([t].[Nullable3], [t].[Nullable2], [t].[Nullable1], [t].[Id]) as [Value5],
-	[t].[Id] as [OptimalValue1],
+	[t].[Id],
 	Coalesce([t].[Nullable1], [t].[Id]) as [OptimalValue2],
 	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Id]) as [OptimalValue3]
 FROM

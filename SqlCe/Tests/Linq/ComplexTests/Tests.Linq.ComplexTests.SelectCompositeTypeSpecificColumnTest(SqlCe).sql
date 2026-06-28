@@ -1,14 +1,14 @@
 ﻿-- SqlCe
 
 SELECT
-	[u].[city] as [City]
+	[u].[city]
 FROM
 	[User] [u]
 
 -- SqlCe
 
 SELECT
-	[u].[street] as [Street]
+	[u].[street]
 FROM
 	[User] [u]
 

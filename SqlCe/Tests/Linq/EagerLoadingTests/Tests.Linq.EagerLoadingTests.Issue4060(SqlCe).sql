@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -13,7 +13,7 @@ WHERE
 UNION ALL
 SELECT
 	[p_1].[FirstName],
-	[p_1].[PersonID] as [ID],
+	[p_1].[PersonID],
 	[p_1].[LastName],
 	[p_1].[MiddleName],
 	[p_1].[Gender]

@@ -5,7 +5,7 @@ SET     @Date = '2009-09-20 00:00:00.000'
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],
-	[t].[DateTimeValue] as [Value_1],
+	[t].[DateTimeValue],
 	[t].[DateTimeValue2],
 	[t].[BoolValue],
 	[t].[GuidValue],

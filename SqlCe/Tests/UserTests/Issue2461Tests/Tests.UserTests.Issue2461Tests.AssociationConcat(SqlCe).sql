@@ -2,7 +2,7 @@
 
 SELECT
 	[i_1].[ReceiptNo],
-	[a_Customer].[BILLGROUP] as [a]
+	[a_Customer].[BILLGROUP]
 FROM
 	(
 		SELECT

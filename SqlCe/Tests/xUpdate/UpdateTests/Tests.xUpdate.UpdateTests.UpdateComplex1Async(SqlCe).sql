@@ -32,7 +32,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT TOP (1)
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[Gender],
 	[t1].[FirstName],
 	[t1].[MiddleName],
@@ -69,7 +69,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT TOP (1)
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[Gender],
 	[t1].[FirstName],
 	[t1].[MiddleName],

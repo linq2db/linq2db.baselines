@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[i].[Id] as [Value_1]
+	[i].[Id]
 FROM
 	[Tender] [i]
 
@@ -16,7 +16,7 @@ FROM
 -- SqlCe
 
 SELECT TOP (1)
-	[i].[Id] as [Value_1]
+	[i].[Id]
 FROM
 	[Tender] [i]
 

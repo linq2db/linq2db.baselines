@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[MiddleName] as [Key_1],
+	[t1].[MiddleName],
 	COUNT(*) as [Count_1]
 FROM
 	[Person] [t1]

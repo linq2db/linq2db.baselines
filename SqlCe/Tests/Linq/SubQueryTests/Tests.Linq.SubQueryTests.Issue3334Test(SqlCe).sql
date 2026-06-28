@@ -2,12 +2,12 @@
 
 SELECT TOP (1)
 	[entity1].[FirstName],
-	[entity1].[PersonID] as [ID],
+	[entity1].[PersonID],
 	[entity1].[LastName],
 	[entity1].[MiddleName],
 	[entity1].[Gender],
 	[t1].[FirstName] as [FirstName_1],
-	[t1].[ID] as [ID_1],
+	[t1].[ID],
 	[t1].[LastName] as [LastName_1],
 	[t1].[MiddleName] as [MiddleName_1],
 	[t1].[Gender] as [Gender_1]

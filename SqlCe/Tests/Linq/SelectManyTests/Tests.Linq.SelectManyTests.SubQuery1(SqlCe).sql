@@ -3,7 +3,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	[p1].[PersonID] as [ID],
+	[p1].[PersonID],
 	[p2].[FirstName]
 FROM
 	[Person] [p1],

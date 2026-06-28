@@ -40,7 +40,7 @@ SET     @p = 'John0'
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -84,7 +84,7 @@ SET     @p = 'John1'
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

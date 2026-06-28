@@ -6,7 +6,7 @@ SET     @p = 14
 
 SELECT
 	[c_1].[value] as [Value_1],
-	[c_1].[id] as [Id]
+	[c_1].[id]
 FROM
 	(
 		SELECT * FROM
@@ -26,7 +26,7 @@ SET     @endId = 14
 
 SELECT
 	[t].[value] as [Value_1],
-	[t].[id] as [Id]
+	[t].[id]
 FROM
 	[sample_class] [t]
 WHERE

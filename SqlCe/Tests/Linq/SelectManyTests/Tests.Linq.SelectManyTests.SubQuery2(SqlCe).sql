@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p2].[FirstName]
 FROM
 	[Person] [p],
@@ -13,7 +13,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p2].[FirstName]
 FROM
 	[Person] [p],

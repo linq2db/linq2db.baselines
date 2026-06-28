@@ -30,8 +30,8 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as [c1],
-	[t1].[BigIntValue] as [TargetType],
-	[t1].[IntValue] as [TargetID]
+	[t1].[BigIntValue],
+	[t1].[IntValue]
 FROM
 	[LinqDataTypes] [t1]
 WHERE

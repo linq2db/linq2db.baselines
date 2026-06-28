@@ -52,9 +52,9 @@ VALUES
 -- SqlCe
 
 SELECT
-	[after_1].[Id] as [Item1],
-	[after_1].[Name] as [Item2],
-	[arg2].[Id],
+	[after_1].[Id],
+	[after_1].[Name],
+	[arg2].[Id] as [Id_1],
 	[arg2].[Text]
 FROM
 	[Names] [after_1]

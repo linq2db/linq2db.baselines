@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[ChildID] as [Key_1],
+	[t1].[ChildID],
 	AVG([t1].[ParentID]) as [y]
 FROM
 	[Child] [t1]

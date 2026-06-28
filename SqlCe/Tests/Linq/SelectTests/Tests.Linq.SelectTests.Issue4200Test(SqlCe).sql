@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[i].[PersonID] as [ID]
+	[i].[PersonID]
 FROM
 	[Person] [i]
 WHERE

@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
-	[pt].[PersonID],
+	[p].[PersonID],
+	[pt].[PersonID] as [PersonID_1],
 	[d].[Taxonomy]
 FROM
 	[Person] [p]

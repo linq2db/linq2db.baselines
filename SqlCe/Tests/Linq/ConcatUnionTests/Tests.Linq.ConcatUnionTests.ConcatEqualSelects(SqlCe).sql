@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[ParentID] + 1 as [IntValue],
-	[p].[ParentID] as [Id]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 WHERE
@@ -10,7 +10,7 @@ WHERE
 UNION ALL
 SELECT
 	NULL as [IntValue],
-	[p_1].[ParentID] as [Id]
+	[p_1].[ParentID]
 FROM
 	[Parent] [p_1]
 WHERE

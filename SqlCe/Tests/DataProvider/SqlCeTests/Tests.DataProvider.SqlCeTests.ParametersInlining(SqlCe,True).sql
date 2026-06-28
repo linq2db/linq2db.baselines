@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[datetimeDataType] as [DateTimeValue]
+	[t1].[datetimeDataType]
 FROM
 	[AllTypes] [t1]
 WHERE

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName] + '1' as [FirstName]
 FROM
 	[Person] [p]

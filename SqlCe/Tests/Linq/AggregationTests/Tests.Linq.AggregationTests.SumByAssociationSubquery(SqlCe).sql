@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[g_1].[Id] as [Key_1],
+	[g_1].[Id],
 	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0)) as [Value1Sum]
 FROM
 	[Item] [g_1]

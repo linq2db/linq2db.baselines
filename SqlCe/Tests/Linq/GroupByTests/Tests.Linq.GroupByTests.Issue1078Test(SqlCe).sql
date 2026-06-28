@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[grp].[SiteID] as [Key_1],
+	[grp].[SiteID],
 	COUNT(*) as [Total],
 	COUNT(CASE
 		WHEN [grp].[Active] = 0 THEN 1
