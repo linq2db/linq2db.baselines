@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(8) -- String
@@ -37,7 +37,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :modified,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -51,7 +51,7 @@ FROM
 	"UpsertTest" t1
 LIMIT 2
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(8) -- String
@@ -90,7 +90,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :modified,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

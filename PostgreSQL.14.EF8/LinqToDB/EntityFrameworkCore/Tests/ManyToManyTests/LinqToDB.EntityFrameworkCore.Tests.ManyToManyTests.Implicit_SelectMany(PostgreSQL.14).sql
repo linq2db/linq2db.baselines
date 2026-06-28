@@ -7,7 +7,7 @@ INNER JOIN (
 ) AS t ON s."Id" = t."StudentsId"
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	o."Id"

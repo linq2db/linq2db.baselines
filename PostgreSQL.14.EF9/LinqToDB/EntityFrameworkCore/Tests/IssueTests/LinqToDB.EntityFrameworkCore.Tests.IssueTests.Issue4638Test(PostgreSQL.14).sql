@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."Key_1",
@@ -20,7 +20,7 @@ ORDER BY
 
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."AclNameId"

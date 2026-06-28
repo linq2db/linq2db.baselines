@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Boolean
@@ -19,7 +19,7 @@ VALUES
 	:ImageFullUrl
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Boolean
@@ -40,7 +40,7 @@ VALUES
 	:ImageFullUrl
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Boolean
@@ -61,7 +61,7 @@ VALUES
 	:ImageFullUrl
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 WITH "CTE_1" ("ParentID", "ChildID", "GrandChildID")
 AS
@@ -24,7 +24,7 @@ FROM
 	) m_1
 		INNER JOIN "CTE_1" d ON m_1."Key_1" = Coalesce(d."ParentID", -1)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 WITH "CTE_1" ("ParentID")
 AS
