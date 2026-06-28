@@ -3,7 +3,7 @@ DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
 
 SELECT
-	t."PersonID" as ID,
+	t."PersonID",
 	t."FirstName",
 	t."LastName",
 	t."MiddleName",
@@ -19,7 +19,7 @@ DECLARE @p Varchar2(6) -- String
 SET     @p = 'Tester'
 
 SELECT
-	t."PersonID" as ID,
+	t."PersonID",
 	t."FirstName",
 	t."LastName",
 	t."MiddleName",
