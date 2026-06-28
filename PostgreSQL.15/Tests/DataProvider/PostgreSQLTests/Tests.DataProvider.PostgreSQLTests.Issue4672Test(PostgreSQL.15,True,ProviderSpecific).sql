@@ -1,6 +1,6 @@
 ﻿INSERT BULK "Issue4672Table"(Interval)
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

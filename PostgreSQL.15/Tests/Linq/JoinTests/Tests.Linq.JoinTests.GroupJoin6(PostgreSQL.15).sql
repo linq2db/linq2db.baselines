@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -17,7 +17,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID",

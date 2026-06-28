@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	p."PersonID" = :id AND p."MiddleName" IS NULL
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

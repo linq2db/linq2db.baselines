@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 WITH "CTE_1" ("ParentID")
 AS NOT MATERIALIZED

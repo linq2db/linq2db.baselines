@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -13,7 +13,7 @@ VALUES
 	:id
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 

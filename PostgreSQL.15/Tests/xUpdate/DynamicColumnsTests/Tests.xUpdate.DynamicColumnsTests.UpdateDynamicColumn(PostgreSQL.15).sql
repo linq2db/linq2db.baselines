@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Person"
 (
@@ -13,7 +13,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -22,7 +22,7 @@ FROM
 WHERE
 	c_1."LastName" = 'Limonadovy'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 UPDATE
 	"Person"
@@ -31,7 +31,7 @@ SET
 WHERE
 	"Person"."LastName" = 'Limonadovy'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)

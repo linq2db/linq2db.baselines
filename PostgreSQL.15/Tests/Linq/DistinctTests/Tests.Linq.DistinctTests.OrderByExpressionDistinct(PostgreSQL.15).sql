@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x_1."MiddleName",
@@ -15,7 +15,7 @@ ORDER BY
 	Coalesce(x_1."MiddleName", '-2') DESC,
 	Coalesce(x_1."LastName", '-1')
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

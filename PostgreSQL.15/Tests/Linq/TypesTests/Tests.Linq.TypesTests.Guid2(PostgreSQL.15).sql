@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ID",
@@ -15,7 +15,7 @@ WHERE
 	p."GuidValue" = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ID",

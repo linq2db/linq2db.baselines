@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*) FILTER (WHERE g_1."ChildID" < 30 AND g_1."ChildID" >= 20)
