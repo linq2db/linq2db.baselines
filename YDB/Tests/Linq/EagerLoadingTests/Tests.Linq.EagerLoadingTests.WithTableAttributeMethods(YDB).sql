@@ -45,5 +45,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	$CTE_1 > 0
+	($CTE_1) > 0
 

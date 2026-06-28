@@ -46,5 +46,5 @@ UPDATE
 SET
 	Value1 = $ParentID
 WHERE
-	Parent.ParentID = $id AND $CTE_1 > 0
+	Parent.ParentID = $id AND ($CTE_1) > 0
 

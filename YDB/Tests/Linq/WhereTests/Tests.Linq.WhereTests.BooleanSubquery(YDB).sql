@@ -14,5 +14,5 @@ SELECT
 FROM
 	WhereWithBool t
 WHERE
-	$CTE_1
+	($CTE_1)
 

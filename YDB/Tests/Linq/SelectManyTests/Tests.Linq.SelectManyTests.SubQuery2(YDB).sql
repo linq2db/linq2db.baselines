@@ -2,23 +2,37 @@
 
 SELECT
 	p.PersonID as ID,
-	p2.FirstName as FirstName
+	p2_1.FirstName as FirstName
 FROM
 	Person p
-		CROSS JOIN Person p2
+		CROSS JOIN (
+			SELECT
+				p2.PersonID as ID,
+				p2.FirstName as FirstName
+			FROM
+				Person p2
+			WHERE
+				p2.PersonID <> 2
+		) p2_1
 WHERE
-	(p.PersonID = 1 OR p.PersonID = 2) AND p2.PersonID <> 2 AND
-	p.PersonID = p2.PersonID
+	(p.PersonID = 1 OR p.PersonID = 2) AND p.PersonID = p2_1.ID
 
 -- YDB Ydb
 
 SELECT
 	p.PersonID as ID,
-	p2.FirstName as FirstName
+	p2_1.FirstName as FirstName
 FROM
 	Person p
-		CROSS JOIN Person p2
+		CROSS JOIN (
+			SELECT
+				p2.PersonID as ID,
+				p2.FirstName as FirstName
+			FROM
+				Person p2
+			WHERE
+				p2.PersonID <> 2
+		) p2_1
 WHERE
-	(p.PersonID = 1 OR p.PersonID = 2) AND p2.PersonID <> 2 AND
-	p.PersonID = p2.PersonID
+	(p.PersonID = 1 OR p.PersonID = 2) AND p.PersonID = p2_1.ID
 

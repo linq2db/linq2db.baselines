@@ -2,14 +2,20 @@
 
 SELECT
 	p.ParentID as ParentID,
-	c_1.ChildID as ChildID
+	t1.ChildID as ChildID
 FROM
 	Parent p
-		CROSS JOIN Child c_1
-		INNER JOIN Parent a_Parent1 ON c_1.ParentID = a_Parent1.ParentID
+		CROSS JOIN (
+			SELECT
+				c_1.ChildID as ChildID,
+				a_Parent1.ParentID as ParentID
+			FROM
+				Child c_1
+					INNER JOIN Parent a_Parent1 ON c_1.ParentID = a_Parent1.ParentID
+		) t1
 WHERE
-	p.ParentID = a_Parent1.ParentID
+	p.ParentID = t1.ParentID
 ORDER BY
 	p.ParentID,
-	c_1.ChildID
+	t1.ChildID
 
