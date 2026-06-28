@@ -1,16 +1,16 @@
 ﻿-- YDB Ydb
 
 SELECT
-	x.Value1 as Item2,
-	x.ParentID as Item1
+	x.Value1 as Value1,
+	x.ParentID as ParentID
 FROM
 	Parent x
 WHERE
 	x.ParentID > 3
 UNION ALL
 SELECT
-	CAST(NULL AS Int32) as Item2,
-	CAST(NULL AS Int32) as Item1
+	CAST(NULL AS Int32) as Value1,
+	CAST(NULL AS Int32) as ParentID
 FROM
 	Parent p2
 WHERE

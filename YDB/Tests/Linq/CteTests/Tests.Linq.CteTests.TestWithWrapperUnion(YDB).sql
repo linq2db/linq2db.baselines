@@ -42,20 +42,20 @@ $CTE_1 = 	SELECT
 ;
 
 SELECT
-	t1.Child_ParentID as ParentID,
-	t1.Child_ChildID as ChildID,
+	t1.Child_ParentID as Child_ParentID,
+	t1.Child_ChildID as Child_ChildID,
+	t1.Parent_ParentID as Parent_ParentID,
 	t1.Parent_ParentID as ParentID_1,
-	t1.Parent_ParentID as ParentID_2,
-	t1.Parent_Value1 as Value1
+	t1.Parent_Value1 as Parent_Value1
 FROM
 	$CTE_1 t1
 UNION
 SELECT
-	child_2.ParentID as ParentID,
-	child_2.ChildID as ChildID,
+	child_2.ParentID as Child_ParentID,
+	child_2.ChildID as Child_ChildID,
+	a_Parent_1.ParentID as Parent_ParentID,
 	a_Parent_1.ParentID as ParentID_1,
-	a_Parent_1.ParentID as ParentID_2,
-	a_Parent_1.Value1 as Value1
+	a_Parent_1.Value1 as Parent_Value1
 FROM
 	Child child_2
 		LEFT JOIN Parent a_Parent_1 ON child_2.ParentID = a_Parent_1.ParentID

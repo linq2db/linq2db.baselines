@@ -51,8 +51,8 @@ DECLARE $id2 Uuid -- Guid
 SET     $id2 = Uuid('a948600d-de21-4f74-8ac2-9516b287076e')
 
 SELECT
-	t1.required_field as Required,
-	t1.optional_field as Optional
+	t1.required_field as required_field,
+	t1.optional_field as optional_field
 FROM
 	Issue1363 t1
 WHERE

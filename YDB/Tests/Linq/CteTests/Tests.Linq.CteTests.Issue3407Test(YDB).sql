@@ -19,8 +19,8 @@ SELECT
 	r.LastName as LastName,
 	r.MiddleName as MiddleName,
 	r.Gender as Gender,
-	r.Patient_PersonID as PersonID,
-	r.Patient_Diagnosis as Diagnosis
+	r.Patient_PersonID as Patient_PersonID,
+	r.Patient_Diagnosis as Patient_Diagnosis
 FROM
 	$CTE_1 r
 WHERE

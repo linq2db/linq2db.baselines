@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	pa.Diagnosis as Diagnosis
 FROM
 	Person p

@@ -6,7 +6,7 @@ SET     $name = 'John'u
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender

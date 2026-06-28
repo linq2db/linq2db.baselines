@@ -3,7 +3,7 @@ DECLARE $p Text(3) -- String
 SET     $p = 'abc'u
 
 SELECT
-	t.PersonID as ID,
+	t.PersonID as PersonID,
 	t.FirstName as FirstName,
 	t.LastName as LastName,
 	t.MiddleName as MiddleName,

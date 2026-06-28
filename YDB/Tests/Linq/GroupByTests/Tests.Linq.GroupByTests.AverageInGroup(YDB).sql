@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	g_1.GroupId as Key_1,
+	g_1.GroupId as GroupId,
 	AVG(g_1.DataValue) as Simple_1,
 	AVG(g_1.DataValue) as Projection,
 	AVG(CASE

@@ -2,7 +2,7 @@
 
 SELECT
 	current_1.Field1 as Field1,
-	previous.Field1 as Field2
+	previous.Field1 as Field2_1
 FROM
 	Table1 current_1
 		CROSS JOIN Table1 previous

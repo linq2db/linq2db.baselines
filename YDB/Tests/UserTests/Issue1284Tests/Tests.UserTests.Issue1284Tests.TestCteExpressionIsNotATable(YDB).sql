@@ -11,11 +11,11 @@ $CTE_1 = 	SELECT
 ;
 
 SELECT
-	x.entry_FirstName as FirstName,
-	x.entry_ID as ID,
-	x.entry_LastName as LastName,
-	x.entry_MiddleName as MiddleName,
-	x.entry_Gender as Gender
+	x.entry_FirstName as entry_FirstName,
+	x.entry_ID as entry_ID,
+	x.entry_LastName as entry_LastName,
+	x.entry_MiddleName as entry_MiddleName,
+	x.entry_Gender as entry_Gender
 FROM
 	$CTE_1 x
 WHERE
@@ -25,7 +25,7 @@ WHERE
 
 SELECT
 	x.FirstName as FirstName,
-	x.PersonID as ID,
+	x.PersonID as PersonID,
 	x.LastName as LastName,
 	x.MiddleName as MiddleName,
 	x.Gender as Gender

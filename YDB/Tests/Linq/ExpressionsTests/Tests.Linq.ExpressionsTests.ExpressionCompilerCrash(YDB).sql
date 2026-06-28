@@ -8,7 +8,7 @@ SET     $Ids0_3 = 3
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender

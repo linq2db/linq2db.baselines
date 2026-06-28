@@ -13,7 +13,7 @@ $CTE_1 = 	SELECT
 
 SELECT
 	ip.InvestorId as InvestorId,
-	b.Units as TotalUnits,
+	b.Units as Units,
 	SUM(ip.NetPayment) as TotalAmount
 FROM
 	PaymentEvent p

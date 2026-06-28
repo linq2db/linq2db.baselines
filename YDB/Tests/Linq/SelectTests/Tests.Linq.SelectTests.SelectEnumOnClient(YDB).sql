@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	person_1.PersonID as ID
+	person_1.PersonID as PersonID
 FROM
 	Person person_1
 LIMIT 1

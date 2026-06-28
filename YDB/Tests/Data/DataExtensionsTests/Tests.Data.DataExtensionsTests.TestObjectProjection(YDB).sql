@@ -3,7 +3,7 @@ DECLARE $take Int32
 SET     $take = 1
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.FirstName as FirstName,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,

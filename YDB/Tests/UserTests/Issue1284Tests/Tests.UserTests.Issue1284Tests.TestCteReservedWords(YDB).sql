@@ -7,7 +7,7 @@ $CTE_1 = 	SELECT
 ;
 
 SELECT
-	t1.Obj_Operator as Operator_1
+	t1.Obj_Operator as Obj_Operator
 FROM
 	$CTE_1 t1
 LIMIT 1

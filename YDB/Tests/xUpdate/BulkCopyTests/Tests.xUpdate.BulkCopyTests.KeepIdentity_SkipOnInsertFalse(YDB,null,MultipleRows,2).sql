@@ -29,7 +29,7 @@ SET     $lastId = 3
 
 SELECT
 	t1.ID as ID,
-	t1.intDataType as Value_1
+	t1.intDataType as intDataType
 FROM
 	AllTypes t1
 WHERE

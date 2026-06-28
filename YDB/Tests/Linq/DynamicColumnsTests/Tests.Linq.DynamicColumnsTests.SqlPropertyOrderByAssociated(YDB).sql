@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	x.PersonID as ID
+	x.PersonID as PersonID
 FROM
 	Person x
 		LEFT JOIN Patient a_Patient ON x.PersonID = a_Patient.PersonID

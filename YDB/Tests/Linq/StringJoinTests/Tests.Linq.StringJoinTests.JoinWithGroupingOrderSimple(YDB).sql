@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	Unicode::JoinFromList(ListMap(ListSort(AGGREGATE_LIST((g_1.NullableValue, g_1.Id, g_1.NullableValue)), ($t) -> { return (if($t.0 IS NULL, 0, 1), $t.0, if($t.1 IS NULL, 0, 1), $t.1) }), ($t) -> { return $t.2 }), ', 'u) as NotNullableeOrderedNoNulls,
 	Unicode::JoinFromList(ListMap(ListSort(AGGREGATE_LIST((g_1.NullableValue, Coalesce(g_1.NullableValue, ''u))), ($t) -> { return (if($t.0 IS NULL, 0, 1), $t.0) }), ($t) -> { return $t.1 }), ', 'u) as NotNullableeOrderedNulls
 FROM
@@ -9,7 +9,7 @@ FROM
 GROUP BY
 	g_1.Id
 ORDER BY
-	Key_1
+	Id
 
 -- YDB Ydb
 

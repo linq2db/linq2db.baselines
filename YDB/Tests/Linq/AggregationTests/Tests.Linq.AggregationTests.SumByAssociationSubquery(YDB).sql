@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	SUM(Coalesce(CAST(t1.Value_1 AS Int32), 0)) as Value1Sum
 FROM
 	Item g_1

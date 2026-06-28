@@ -671,7 +671,7 @@ FROM
 -- YDB Ydb
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	COUNT(CASE
 		WHEN g_1.`Boolean` THEN 1
 		ELSE NULL
@@ -2201,7 +2201,7 @@ FROM
 -- YDB Ydb
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	COUNT(CASE
 		WHEN g_1.`Boolean` THEN 1
 		ELSE NULL

@@ -82,7 +82,7 @@ WHERE
 -- YDB Ydb
 
 SELECT
-	a_Book.BookId as Id,
+	a_Book.BookId as BookId,
 	a_Book.BookName as BookName,
 	Unwrap(CAST(0 AS Int32)) as projection__set_id__
 FROM
@@ -93,7 +93,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'u
 UNION ALL
 SELECT
-	a_Book_1.BookId as Id,
+	a_Book_1.BookId as BookId,
 	a_Book_1.BookName as BookName,
 	Unwrap(CAST(1 AS Int32)) as projection__set_id__
 FROM

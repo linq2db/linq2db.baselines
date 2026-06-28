@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	grp.SiteID as Key_1,
+	grp.SiteID as SiteID,
 	COUNT(*) as Total,
 	COUNT(CASE
 		WHEN NOT grp.Active THEN 1

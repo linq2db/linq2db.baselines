@@ -2,7 +2,7 @@
 
 SELECT
 	p.PersonID as PersonID,
-	p.FirstName as Name
+	p.FirstName as FirstName
 FROM
 	Person p
 

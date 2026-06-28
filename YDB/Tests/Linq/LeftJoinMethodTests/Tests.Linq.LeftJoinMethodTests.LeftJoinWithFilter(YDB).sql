@@ -2,7 +2,7 @@
 
 SELECT
 	c_1.Name as Name,
-	o.Name as OrderName
+	o.Name as OrderName_1
 FROM
 	Customer c_1
 		LEFT JOIN `Order` o ON c_1.Id = o.CustomerId

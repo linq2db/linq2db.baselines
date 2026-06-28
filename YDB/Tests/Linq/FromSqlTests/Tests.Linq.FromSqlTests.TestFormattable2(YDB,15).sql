@@ -6,7 +6,7 @@ SET     $p = 15
 
 SELECT
 	c_1.`value` as Value_1,
-	c_1.id as Id
+	c_1.id as id
 FROM
 	(
 		SELECT * FROM sample_class where id >= $startId and id < $p
@@ -24,7 +24,7 @@ SET     $endId = 15
 
 SELECT
 	t.`value` as Value_1,
-	t.id as Id
+	t.id as id
 FROM
 	sample_class t
 WHERE

@@ -25,11 +25,11 @@ WHERE
 	) OR
 	t.ID IS NOT NULL AND t.ID IN (
 		SELECT
-			t2.In_1
+			t1.In_1
 		FROM
-			$CTE_1 t2
+			$CTE_1 t1
 		WHERE
-			t2.In_1 IS NOT NULL
+			t1.In_1 IS NOT NULL
 	)
 
 -- YDB Ydb

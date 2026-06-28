@@ -10,8 +10,8 @@ $CTE_1 = 	SELECT
 SELECT
 	p.ParentID as ParentID,
 	p.Value1 as Value1,
-	c_1.Child_ParentID as ParentID_1,
-	c_1.Child_ChildID as ChildID
+	c_1.Child_ParentID as Child_ParentID,
+	c_1.Child_ChildID as Child_ChildID
 FROM
 	Parent p
 		INNER JOIN $CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID

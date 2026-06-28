@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	a_Parent_1.ParentID as Key_1,
+	a_Parent_1.ParentID as ParentID,
 	COUNT(*) as Count_1
 FROM
 	(
@@ -18,7 +18,7 @@ FROM
 GROUP BY
 	a_Parent_1.ParentID
 ORDER BY
-	Key_1
+	ParentID
 
 -- YDB Ydb
 

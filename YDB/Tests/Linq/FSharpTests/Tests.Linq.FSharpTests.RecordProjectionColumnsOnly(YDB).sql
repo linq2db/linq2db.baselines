@@ -1,9 +1,9 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as Item1,
-	p.FirstName as Item2,
-	p.LastName as Item3,
+	p.PersonID as PersonID,
+	p.FirstName as FirstName,
+	p.LastName as LastName,
 	'ибн Алёша'u as Item4
 FROM
 	Person p

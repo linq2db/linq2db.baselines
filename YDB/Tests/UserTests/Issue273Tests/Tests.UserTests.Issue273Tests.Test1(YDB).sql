@@ -5,8 +5,8 @@ DECLARE $Ids0_2 Int32
 SET     $Ids0_2 = 1
 
 SELECT
-	x.ID as Id,
-	x.BigIntValue as TestField
+	x.ID as ID,
+	x.BigIntValue as BigIntValue
 FROM
 	LinqDataTypes x
 WHERE

@@ -3,8 +3,8 @@ DECLARE $testedList Text(20) -- String
 SET     $testedList = '[{"Value":"Value1"}]'u
 
 SELECT
-	m_1.Id as Key_1,
 	m_1.Id as Id,
+	m_1.Id as Id_1,
 	m_1.Value1 as Value1,
 	m_1.Value2 as Value2,
 	m_1.`Enum` as `Enum`,
@@ -24,7 +24,7 @@ DECLARE $testedList Text(20) -- String
 SET     $testedList = '[{"Value":"Value1"}]'u
 
 SELECT
-	g_1.Id as Key_1
+	g_1.Id as Id
 FROM
 	ValueConversion g_1
 WHERE

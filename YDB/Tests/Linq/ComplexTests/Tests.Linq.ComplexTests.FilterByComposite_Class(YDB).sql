@@ -2,10 +2,10 @@
 
 SELECT
 	u.Id as Id,
-	u.user_name as Name,
-	u.city as City,
-	u.street as Street,
-	u.building_number as Building
+	u.user_name as user_name,
+	u.city as city,
+	u.street as street,
+	u.building_number as building_number
 FROM
 	`User` u
 WHERE

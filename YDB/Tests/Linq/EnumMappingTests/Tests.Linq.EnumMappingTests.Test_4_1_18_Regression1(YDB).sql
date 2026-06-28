@@ -26,8 +26,8 @@ VALUES
 
 SELECT
 	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL as c1,
-	t1.BigIntValue as TargetType,
-	t1.IntValue as TargetID
+	t1.BigIntValue as BigIntValue,
+	t1.IntValue as IntValue
 FROM
 	LinqDataTypes t1
 WHERE

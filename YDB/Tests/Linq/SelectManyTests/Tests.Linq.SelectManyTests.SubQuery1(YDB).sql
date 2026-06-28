@@ -3,7 +3,7 @@ DECLARE $id Int32
 SET     $id = 1
 
 SELECT
-	p1.PersonID as ID,
+	p1.PersonID as PersonID,
 	p2.FirstName as FirstName
 FROM
 	Person p1

@@ -3,7 +3,7 @@ DECLARE $separator Text(2) -- String
 SET     $separator = ': 'u
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	Coalesce(Unicode::JoinFromList(AGGREGATE_LIST(Coalesce(g_1.NullableValue, ''u)), $separator), ''u) as Nullable_1,
 	Coalesce(Unicode::JoinFromList(AGGREGATE_LIST(g_1.NotNullableValue), $separator), ''u) as NotNullable
 FROM
@@ -11,7 +11,7 @@ FROM
 GROUP BY
 	g_1.Id
 ORDER BY
-	Key_1
+	Id
 
 -- YDB Ydb
 
