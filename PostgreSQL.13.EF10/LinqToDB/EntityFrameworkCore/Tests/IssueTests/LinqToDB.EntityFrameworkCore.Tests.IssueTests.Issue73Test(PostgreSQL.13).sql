@@ -4,7 +4,7 @@ LEFT JOIN "Issue73Entities" AS i0 ON i."ParentId" = i0."Id"
 WHERE i."Name" = 'Name1_3'
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	Coalesce("a_Parent"."Name", '') || '>' || x."Name"

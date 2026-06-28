@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."ParentID",
@@ -9,7 +9,7 @@ WHERE
 	p."ParentID" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."ParentID",

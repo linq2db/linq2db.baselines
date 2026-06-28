@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(p."PersonID")
@@ -8,7 +8,7 @@ WHERE
 	p."PersonID" IN (1, 2)
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(p."PersonID")

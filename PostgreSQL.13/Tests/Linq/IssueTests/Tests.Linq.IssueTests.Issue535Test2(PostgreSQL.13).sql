@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @filter Text(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 Text(6) -- String

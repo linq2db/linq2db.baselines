@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	CONCAT_WS(', ', t."NullableValue", t."NotNullableValue", t."VarcharValue", t."NVarcharValue"),
@@ -14,7 +14,7 @@ SELECT
 FROM
 	"SampleClass" t
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."PK",

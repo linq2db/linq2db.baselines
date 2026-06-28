@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 WITH RECURSIVE "MY_CTE" ("ChildID", "ParentID", "GrandChildID")
 AS

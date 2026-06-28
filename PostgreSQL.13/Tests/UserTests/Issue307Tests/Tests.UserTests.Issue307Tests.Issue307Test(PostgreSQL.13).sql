@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(12) -- String
@@ -25,7 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

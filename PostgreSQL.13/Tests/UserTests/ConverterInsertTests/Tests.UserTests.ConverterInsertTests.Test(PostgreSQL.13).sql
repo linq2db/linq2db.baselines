@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
@@ -25,7 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -41,7 +41,7 @@ WHERE
 	t."PersonID" = :id
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

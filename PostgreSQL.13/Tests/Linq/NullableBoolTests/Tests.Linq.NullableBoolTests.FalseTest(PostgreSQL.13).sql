@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."Id",
@@ -8,7 +8,7 @@ FROM
 WHERE
 	t."Value" = False
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."Id",
@@ -18,7 +18,7 @@ FROM
 WHERE
 	t."Value" = False
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."Id",
@@ -28,7 +28,7 @@ FROM
 WHERE
 	t."Value" = True OR t."Value" IS NULL
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."Id",

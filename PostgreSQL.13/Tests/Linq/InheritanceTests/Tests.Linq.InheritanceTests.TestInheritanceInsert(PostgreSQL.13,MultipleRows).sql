@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "InheritanceFilter"
 (
@@ -19,7 +19,7 @@ VALUES
 (5,21,0,25,0,0,15,0),
 (6,22,0,26,0,0,0,16)
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Code",

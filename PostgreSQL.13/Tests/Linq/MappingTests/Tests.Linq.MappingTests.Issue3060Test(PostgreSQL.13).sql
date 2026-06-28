@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @Uid Bytea(16) -- Binary
 SET     @Uid = E'\\x3D667BBCDE0F27438F925D8CC3A11D11'::bytea
 DECLARE @Id Bigint -- Int64

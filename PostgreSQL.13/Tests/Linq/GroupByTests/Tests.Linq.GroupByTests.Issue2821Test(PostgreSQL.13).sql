@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @currentDate Timestamp -- DateTime2
 SET     @currentDate = '2020-02-29 17:54:55.123'::timestamp
 

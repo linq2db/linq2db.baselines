@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."FirstName",
@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Person" t1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
