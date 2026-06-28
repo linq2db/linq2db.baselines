@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 UPDATE
-	"UpdateSubquerySourceTable"
+	"UpdateSubquerySourceTable" "x"
 SET
 	"FirstName" = 'literalFirst',
 	"LastName" = (
@@ -10,11 +10,11 @@ SET
 		FROM
 			"UpdateSubquerySourceTable" "t"
 		WHERE
-			"t"."Id" = "UpdateSubquerySourceTable"."Id" + 1
+			"t"."Id" = "x"."Id" + 1
 		FETCH NEXT 1 ROWS ONLY
 	)
 WHERE
-	"UpdateSubquerySourceTable"."Id" = 1
+	"x"."Id" = 1
 
 -- Firebird.5 Firebird4
 
