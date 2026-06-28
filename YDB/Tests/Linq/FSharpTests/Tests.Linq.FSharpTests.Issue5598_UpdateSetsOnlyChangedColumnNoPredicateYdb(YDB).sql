@@ -9,7 +9,7 @@ INSERT INTO Issue4132Table
 VALUES
 (
 	1,
-	1,
+	5,
 	'before'u
 )
 
@@ -18,9 +18,7 @@ VALUES
 UPDATE
 	Issue4132Table
 SET
-	Text = 'updated recently'u
-WHERE
-	Issue4132Table.`Number` = 1
+	Text = 'after'u
 
 -- YDB Ydb
 
