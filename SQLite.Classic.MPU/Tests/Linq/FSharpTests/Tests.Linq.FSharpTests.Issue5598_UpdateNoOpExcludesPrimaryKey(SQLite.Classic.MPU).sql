@@ -9,7 +9,7 @@ INSERT INTO [Issue4132Table]
 VALUES
 (
 	1,
-	1,
+	5,
 	'before'
 )
 
@@ -18,9 +18,10 @@ VALUES
 UPDATE
 	[Issue4132Table]
 SET
-	[Text] = 'updated recently'
+	[Number] = [Issue4132Table].[Number],
+	[Text] = [Issue4132Table].[Text]
 WHERE
-	[Issue4132Table].[Number] = 1
+	[Issue4132Table].[Id] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
