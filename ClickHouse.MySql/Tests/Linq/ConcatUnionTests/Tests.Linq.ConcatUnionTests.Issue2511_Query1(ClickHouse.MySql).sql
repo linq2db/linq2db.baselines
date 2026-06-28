@@ -2,12 +2,12 @@
 
 SELECT
 	t1.FirstName,
-	t1.PersonID as ID,
+	t1.PersonID,
 	t1.LastName,
 	t1.MiddleName,
 	t1.Gender,
-	a_Patient.PersonID,
 	a_Patient.PersonID as PersonID_1,
+	a_Patient.PersonID as PersonID_2,
 	a_Patient.Diagnosis
 FROM
 	Person t1
@@ -15,12 +15,12 @@ FROM
 UNION ALL
 SELECT
 	t3.FirstName as FirstName,
-	t3.ID as ID,
+	t3.ID as PersonID,
 	t3.LastName as LastName,
 	t3.MiddleName as MiddleName,
 	t3.Gender as Gender,
-	t3.PersonID as PersonID,
 	t3.PersonID as PersonID_1,
+	t3.PersonID as PersonID_2,
 	t3.Diagnosis as Diagnosis
 FROM
 	(
