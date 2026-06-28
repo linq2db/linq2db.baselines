@@ -1,4 +1,4 @@
-﻿-- SQLite.Classic SQLite
+﻿-- SQLite.MS SQLite
 
 INSERT INTO [Issue4132Table]
 (
@@ -9,20 +9,18 @@ INSERT INTO [Issue4132Table]
 VALUES
 (
 	1,
-	1,
+	5,
 	'before'
 )
 
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 UPDATE
 	[Issue4132Table]
 SET
-	[Text] = 'updated recently'
-WHERE
-	[Issue4132Table].[Number] = 1
+	[Text] = 'after'
 
--- SQLite.Classic SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[r].[Id],
