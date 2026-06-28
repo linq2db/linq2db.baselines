@@ -1,0 +1,11 @@
+﻿-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	g_1."CategoryId",
+	PERCENT_RANK(1000) WITHIN GROUP (ORDER BY g_1."IntValue"),
+	PERCENT_RANK(1000, 2000) WITHIN GROUP (ORDER BY g_1."IntValue", g_1."LongValue")
+FROM
+	"WindowFunctionTestEntity" g_1
+GROUP BY
+	g_1."CategoryId"
+
