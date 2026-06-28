@@ -31,8 +31,8 @@ VALUES
 
 SELECT
 	t1."Id",
-	t1."Prop1" as "ImplicitPropertyRW",
-	t1."Prop3" as "TestsLinqInterfaceTestsIExplicitInterfaceTestsLinqInterfaceTestsIssue4715TableExplicitPropertyRW"
+	t1."Prop1",
+	t1."Prop3"
 FROM
 	"Issue4715Table" t1
 FETCH NEXT 2 ROWS ONLY

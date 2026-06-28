@@ -1,7 +1,7 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."PersonID" as "Item1",
+	p."PersonID",
 	p."FirstName",
 	p."LastName"
 FROM
