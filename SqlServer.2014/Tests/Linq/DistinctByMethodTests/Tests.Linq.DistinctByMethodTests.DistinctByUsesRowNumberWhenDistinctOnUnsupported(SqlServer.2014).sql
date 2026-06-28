@@ -12,10 +12,10 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY [e].[Group], [e].[Date]) as [RowNumber],
-			[e].[Group] as [Group_1],
-			[e].[Date] as [Date_1],
 			[e].[Id],
 			[e].[Name],
+			[e].[Group] as [Group_1],
+			[e].[Date] as [Date_1],
 			[e].[Amount],
 			[e].[IsActive],
 			[e].[Priority]
