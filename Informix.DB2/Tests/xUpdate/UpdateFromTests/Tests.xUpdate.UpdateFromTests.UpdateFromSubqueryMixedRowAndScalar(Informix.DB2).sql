@@ -8,11 +8,7 @@ SET
 	Value3 = @Value3,
 	Value1 = (
 		SELECT
-			(
-				SELECT
-					r.RelatedValue1
-				FROM table(set{1})
-			)
+			r.RelatedValue1
 		FROM
 			UpdateRelation r
 		WHERE
@@ -20,11 +16,7 @@ SET
 	),
 	Value2 = (
 		SELECT
-			(
-				SELECT
-					r_1.RelatedValue2
-				FROM table(set{1})
-			)
+			r_1.RelatedValue2
 		FROM
 			UpdateRelation r_1
 		WHERE
