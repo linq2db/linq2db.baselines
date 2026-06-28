@@ -22,11 +22,11 @@ AS
 		"Person" x
 )
 SELECT
-	t1."entry_FirstName" as "FirstName",
-	t1."entry_ID" as ID,
-	t1."entry_LastName" as "LastName",
-	t1."entry_MiddleName" as "MiddleName",
-	t1."entry_Gender" as "Gender",
+	t1."entry_FirstName",
+	t1."entry_ID",
+	t1."entry_LastName",
+	t1."entry_MiddleName",
+	t1."entry_Gender",
 	t1."rn"
 FROM
 	CTE_1 t1
@@ -36,7 +36,7 @@ FETCH NEXT 1 ROWS ONLY
 
 SELECT
 	person_1."FirstName",
-	person_1."PersonID" as ID,
+	person_1."PersonID",
 	person_1."LastName",
 	person_1."MiddleName",
 	person_1."Gender"
