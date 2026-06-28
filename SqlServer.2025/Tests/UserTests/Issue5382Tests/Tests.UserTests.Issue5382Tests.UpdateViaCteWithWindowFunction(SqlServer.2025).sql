@@ -9,7 +9,7 @@ AS
 	FROM
 		(
 			SELECT
-				ROW_NUMBER() OVER(PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]) as [RowNum_1],
+				ROW_NUMBER() OVER (PARTITION BY [sample_1].[IntColumn] ORDER BY [sample_1].[DateColumn]) as [RowNum_1],
 				[sample_1].[IntColumn],
 				[sample_1].[DateColumn]
 			FROM
