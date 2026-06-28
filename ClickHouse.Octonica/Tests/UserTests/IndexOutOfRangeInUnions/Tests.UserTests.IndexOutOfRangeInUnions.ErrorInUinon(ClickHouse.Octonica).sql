@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	doSap.DocEntry as NumeroInterno,
+	doSap.DocEntry,
 	CASE
 		WHEN doSap.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
@@ -11,7 +11,7 @@ FROM
 	O1 doSap
 UNION DISTINCT
 SELECT
-	doSap_1.DocEntry as NumeroInterno,
+	doSap_1.DocEntry as DocEntry,
 	CASE
 		WHEN doSap_1.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
@@ -21,7 +21,7 @@ FROM
 	O2 doSap_1
 UNION DISTINCT
 SELECT
-	doSap_2.DocEntry as NumeroInterno,
+	doSap_2.DocEntry as DocEntry,
 	CASE
 		WHEN doSap_2.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
