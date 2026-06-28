@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 MERGE INTO "Person" "Target"
 USING (
@@ -36,7 +36,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."FirstName",

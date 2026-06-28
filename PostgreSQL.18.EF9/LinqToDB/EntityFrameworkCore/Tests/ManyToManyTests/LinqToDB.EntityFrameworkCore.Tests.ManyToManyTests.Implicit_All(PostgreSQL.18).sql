@@ -8,7 +8,7 @@ WHERE NOT EXISTS (
 ORDER BY s."Id"
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	s."Id"

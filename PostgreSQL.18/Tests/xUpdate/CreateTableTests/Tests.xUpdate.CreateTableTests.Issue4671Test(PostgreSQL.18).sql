@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 CREATE TEMPORARY TABLE "Issue4671EntityTMP"
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE "Issue4671EntityTMP"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Issue4671Entity"
 (
@@ -20,7 +20,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Issue4671EntityTMP"
 (
@@ -31,7 +31,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -40,7 +40,7 @@ FROM
 	"Issue4671Entity" t1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -49,7 +49,7 @@ FROM
 	"Issue4671EntityTMP" t1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 DROP TABLE IF EXISTS "Issue4671EntityTMP"
 

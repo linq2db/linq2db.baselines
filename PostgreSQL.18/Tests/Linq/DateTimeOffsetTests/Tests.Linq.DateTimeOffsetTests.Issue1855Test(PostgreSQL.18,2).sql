@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
@@ -19,7 +19,7 @@ VALUES
 	:SomeNullableDateTimeOffset
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
@@ -36,7 +36,7 @@ VALUES
 	:SomeDateTimeOffset
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @clientSideIn TimestampTz -- DateTimeOffset
 SET     @clientSideIn = '2019-08-08 08:08:18.000000+00:00'::timestamptz
 

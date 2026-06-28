@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @s Text(7) -- String
 SET     @s = '123[456'
 DECLARE @ps Text(4) -- String

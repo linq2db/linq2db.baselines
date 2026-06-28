@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue Text(9) -- String
@@ -15,7 +15,7 @@ VALUES
 	:StringValue
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @Type Text(9) -- String
 SET     @Type = 'Child564B'
 DECLARE @IntValue Integer -- Int32
@@ -32,7 +32,7 @@ VALUES
 	:IntValue
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)

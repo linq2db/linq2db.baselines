@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -11,7 +11,7 @@ VALUES
 	:ID
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = 5
 

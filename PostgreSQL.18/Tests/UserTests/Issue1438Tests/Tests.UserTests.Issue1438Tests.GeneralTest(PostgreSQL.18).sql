@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Has Boolean
 SET     @Has = True
 
@@ -13,7 +13,7 @@ VALUES
 RETURNING 
 	"Id"
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

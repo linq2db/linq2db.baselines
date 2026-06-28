@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 MERGE INTO "TestNullableParameterTarget" "Target"
 USING (
@@ -28,7 +28,7 @@ VALUES
 	"Source"."Id2"
 )
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

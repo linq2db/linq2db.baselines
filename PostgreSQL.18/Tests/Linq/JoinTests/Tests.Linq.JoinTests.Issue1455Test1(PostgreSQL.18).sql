@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @cpty Text(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 Text(3) -- String

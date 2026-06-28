@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @arr -2147483635 -- Object
 SET     @arr = {1.1,2.2}
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @int2 Integer -- Int32
@@ -19,7 +19,7 @@ FROM
 WHERE
 	t.id <> :someId AND t.id = "UpdatedEntities".id
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	v.id,

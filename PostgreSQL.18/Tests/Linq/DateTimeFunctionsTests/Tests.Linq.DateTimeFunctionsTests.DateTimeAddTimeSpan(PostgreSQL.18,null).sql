@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @ts Interval -- Object
 SET     @ts = NULL
 
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"DateTypes" t_1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
