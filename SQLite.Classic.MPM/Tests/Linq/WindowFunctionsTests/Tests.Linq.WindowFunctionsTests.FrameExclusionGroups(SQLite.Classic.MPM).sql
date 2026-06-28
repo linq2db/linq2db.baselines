@@ -1,0 +1,7 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	SUM([t].[IntValue]) OVER (ORDER BY [t].[Id] GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE TIES)
+FROM
+	[WindowFunctionTestEntity] [t]
+
