@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @value Boolean
 SET     @value = False
 
@@ -10,7 +10,7 @@ FROM
 WHERE
 	t."Value" = :value
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @value Boolean
 SET     @value = False
 
@@ -22,7 +22,7 @@ FROM
 WHERE
 	t."Value" = :value
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @value Boolean
 SET     @value = False
 
@@ -34,7 +34,7 @@ FROM
 WHERE
 	t."Value" <> :value OR t."Value" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @value Boolean
 SET     @value = False
 

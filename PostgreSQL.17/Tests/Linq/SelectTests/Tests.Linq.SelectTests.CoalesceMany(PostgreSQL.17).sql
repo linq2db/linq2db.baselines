@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	Coalesce(t."Nullable1", t."Nullable2", t."Nullable3", t."Id"),
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"CoalesceNullableFields" t
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

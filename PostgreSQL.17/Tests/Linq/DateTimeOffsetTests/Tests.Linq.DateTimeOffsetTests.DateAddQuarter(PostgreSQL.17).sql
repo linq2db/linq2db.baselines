@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	Date_Trunc('day', (t."TransactionDate" + -Interval '1 Month' * 3) AT TIME ZONE 'UTC')::Date

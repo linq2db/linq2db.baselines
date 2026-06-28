@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Child"
 (
@@ -24,7 +24,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 20000
 

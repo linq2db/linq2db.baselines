@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	"a_Book"."BookId",
@@ -28,7 +28,7 @@ FROM
 WHERE
 	"a_Book_1"."Discriminator" = 'Roman'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	m_1."AuthorId",
@@ -42,7 +42,7 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkAuthorId" = m_1."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."AuthorId",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Text(5) -- String
@@ -19,7 +19,7 @@ VALUES
 	:Nested_Field
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Code Text(7) -- String
@@ -40,7 +40,7 @@ VALUES
 	:Nested_Field
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (VALUES
@@ -59,7 +59,7 @@ SET
 	"Code" = "Source"."Code",
 	"Field" = "Source"."Nested_Field"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -8,7 +8,7 @@ WHERE EXISTS (
 ORDER BY s."Id"
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"

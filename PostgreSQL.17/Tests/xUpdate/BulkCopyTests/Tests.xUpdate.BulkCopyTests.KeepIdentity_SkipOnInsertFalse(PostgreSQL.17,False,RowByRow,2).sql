@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -13,7 +13,7 @@ VALUES
 RETURNING 
 	"ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 
@@ -26,7 +26,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 300
 
@@ -39,7 +39,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -53,7 +53,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "Person" "Target"
 USING (
@@ -27,7 +27,7 @@ SET
 	"MiddleName" = 'first ' || Coalesce("Source"."Patient_Diagnosis", ''),
 	"LastName" = 'last ' || Coalesce("Source"."Patient_Diagnosis_1", '')
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

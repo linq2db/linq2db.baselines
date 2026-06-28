@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -27,7 +27,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"LastName" = :LastName,
 	"MiddleName" = :MiddleName
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
@@ -42,7 +42,7 @@ WHERE
 	x."FirstName" = :FirstName
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -66,7 +66,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"FirstName" = :FirstName,
 	"LastName" = :LastName
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
