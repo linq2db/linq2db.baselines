@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO temp_table1
 (
@@ -19,7 +19,7 @@ INSERT INTO temp_table1
 VALUES
 (1,2)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
@@ -30,7 +30,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO temp_table2
 (
@@ -43,7 +43,7 @@ SELECT
 FROM
 	temp_table1 t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ID",
@@ -51,7 +51,7 @@ SELECT
 FROM
 	temp_table1 t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ID",
@@ -59,7 +59,7 @@ SELECT
 FROM
 	temp_table2 t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO temp_table1
 (
@@ -69,7 +69,7 @@ INSERT INTO temp_table1
 VALUES
 (2,3)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -88,19 +88,19 @@ VALUES
 
 INSERT BULK temp_table1(ID, Value)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 TRUNCATE TABLE temp_table1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 TRUNCATE TABLE temp_table2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS temp_table2
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS temp_table1
 

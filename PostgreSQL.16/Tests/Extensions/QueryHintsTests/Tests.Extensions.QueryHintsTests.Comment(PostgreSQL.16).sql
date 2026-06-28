@@ -6,7 +6,7 @@ FROM
 ---
 ----
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID",
@@ -23,7 +23,7 @@ FROM
 	"Parent" p
 ---
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID",

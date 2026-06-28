@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t."DateTimeValue" + 226 * Interval '1 Millisecond'
 FROM
 	"LinqDataTypes" t
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t."DateTimeValue"
