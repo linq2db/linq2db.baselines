@@ -1,0 +1,8 @@
+﻿-- YDB Ydb
+
+SELECT
+	t.Id as Id,
+	NTH_VALUE(t.IntValue, 2l) OVER (PARTITION BY t.CategoryId ORDER BY t.Id ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) as c1
+FROM
+	WindowFunctionTestEntity t
+
