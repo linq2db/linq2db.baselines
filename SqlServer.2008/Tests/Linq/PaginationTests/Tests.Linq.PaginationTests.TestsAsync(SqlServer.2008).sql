@@ -37,7 +37,7 @@ SELECT
 FROM
 	(
 		SELECT
-			COUNT(*) OVER() as [TotalCount],
+			COUNT(*) OVER () as [TotalCount],
 			[q].[Id],
 			[q].[Value] as [Value_1],
 			ROW_NUMBER() OVER (ORDER BY [q].[Id], [q].[Value] DESC) as [RN]
@@ -63,7 +63,7 @@ AS
 (
 	SELECT
 		[x].[Id],
-		ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC),
+		ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC),
 		[x].[Value]
 	FROM
 		[PaginationData] [x]
@@ -105,9 +105,9 @@ AS
 (
 	SELECT
 		[x].[Id],
-		ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC),
+		ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC),
 		[x].[Value],
-		COUNT(*) OVER()
+		COUNT(*) OVER ()
 	FROM
 		[PaginationData] [x]
 	WHERE
@@ -142,7 +142,7 @@ FROM
 	(
 		SELECT
 			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
 		FROM
 			[PaginationData] [x]
 		WHERE
@@ -161,7 +161,7 @@ FROM
 	(
 		SELECT
 			[x].[Id],
-			ROW_NUMBER() OVER(ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
+			ROW_NUMBER() OVER (ORDER BY [x].[Id], [x].[Value] DESC) as [RowNumber]
 		FROM
 			[PaginationData] [x]
 		WHERE
