@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ID",
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 15
 

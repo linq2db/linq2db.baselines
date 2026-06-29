@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Table2"
 (
@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Table1" t
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ID",

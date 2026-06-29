@@ -1,14 +1,14 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"TestMerge2" t1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @FieldInt32 Integer -- Int32
@@ -93,7 +93,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @FieldInt32 Integer -- Int32
@@ -178,7 +178,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
@@ -265,7 +265,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
@@ -351,7 +351,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
@@ -436,7 +436,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
@@ -523,7 +523,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @FieldInt32 Integer -- Int32
@@ -608,7 +608,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @FieldInt32 Integer -- Int32
@@ -695,7 +695,7 @@ VALUES
 	:FieldEnumNumber
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -722,7 +722,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."Id",
@@ -10,7 +10,7 @@ FROM
 WHERE
 	(Coalesce(e."StringValue", '') || '1') = 'StrValue1'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

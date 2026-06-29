@@ -7,7 +7,7 @@ FROM "Students" AS s
 ORDER BY s."Id"
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	(

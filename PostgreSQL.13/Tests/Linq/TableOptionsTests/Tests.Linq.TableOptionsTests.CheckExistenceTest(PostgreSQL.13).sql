@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "DisposableTable"
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS "DisposableTable"
 	CONSTRAINT "PK_DisposableTable" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 DROP TABLE IF EXISTS "DisposableTable"
 

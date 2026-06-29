@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Customer_Name Text(5) -- String
@@ -19,7 +19,7 @@ VALUES
 	:CustomerOther_Name
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

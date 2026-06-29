@@ -23,7 +23,7 @@ SELECT EXISTS (
     WHERE (@ef_filter__p1 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."ProductName" LIKE '%a%')
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."IsDeleted",
@@ -44,7 +44,7 @@ WHERE
 
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."IsDeleted",
@@ -65,7 +65,7 @@ WHERE
 
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."IsDeleted",
@@ -86,7 +86,7 @@ WHERE
 
 
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	EXISTS(

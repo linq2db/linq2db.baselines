@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t."Id",
@@ -17,7 +17,7 @@ WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

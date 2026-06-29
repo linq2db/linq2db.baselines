@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Issue3323Table"
 (
@@ -15,7 +15,7 @@ VALUES
 	'text'
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

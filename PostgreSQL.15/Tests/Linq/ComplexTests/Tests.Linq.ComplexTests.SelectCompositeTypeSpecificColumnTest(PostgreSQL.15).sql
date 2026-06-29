@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	u.city
 FROM
 	"User" u
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	u.street

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @parentId Integer -- Int32
 SET     @parentId = 1
 

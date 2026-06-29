@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Key_1",
@@ -44,7 +44,7 @@ FROM
 ORDER BY
 	t1."Key_1"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."PK",

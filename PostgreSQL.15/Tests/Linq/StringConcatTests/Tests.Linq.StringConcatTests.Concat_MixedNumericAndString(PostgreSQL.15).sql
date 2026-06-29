@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	e."Id"
@@ -7,7 +7,7 @@ FROM
 WHERE
 	(e."Num"::text || '-' || Coalesce(e."StrReq", '')) = '100-Programmer'
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

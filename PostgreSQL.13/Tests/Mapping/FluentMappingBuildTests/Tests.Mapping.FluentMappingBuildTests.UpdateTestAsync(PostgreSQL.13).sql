@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "FluentTemp_UpdateAsync"
 (
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_UpdateAsync"
 	CONSTRAINT "PK_FluentTemp_UpdateAsync" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -30,7 +30,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Name Text(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Text(4) -- String
@@ -44,7 +44,7 @@ SET
 WHERE
 	"FluentTemp_UpdateAsync"."ID" = 1
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 DROP TABLE IF EXISTS "FluentTemp_UpdateAsync"
 

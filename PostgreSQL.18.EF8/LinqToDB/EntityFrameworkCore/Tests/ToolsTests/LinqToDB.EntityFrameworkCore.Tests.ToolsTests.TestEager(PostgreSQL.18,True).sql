@@ -34,7 +34,7 @@ ORDER BY o."OrderID", t."EmployeeID", t1."EmployeeID", t1."TerritoryID", t1."Ter
 
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	m_1."EmployeeId",
@@ -62,7 +62,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	m_1."OrderId",
@@ -101,7 +101,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	"a_Employee"."IsDeleted",

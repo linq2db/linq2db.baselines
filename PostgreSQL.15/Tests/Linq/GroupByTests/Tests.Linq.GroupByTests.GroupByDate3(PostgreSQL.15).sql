@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	SUM(grp_1."MoneyValue"),
@@ -15,7 +15,7 @@ FROM
 GROUP BY
 	grp_1.c1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	SUM(grp_1."MoneyValue"),

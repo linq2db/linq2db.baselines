@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	Coalesce((
@@ -17,7 +17,7 @@ SELECT
 FROM
 	"Parent" p
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	m_1."ParentID",
@@ -32,7 +32,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ParentID",

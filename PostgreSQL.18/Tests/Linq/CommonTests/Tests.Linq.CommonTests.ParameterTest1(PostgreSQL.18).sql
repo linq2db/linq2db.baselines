@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -16,7 +16,7 @@ WHERE
 			t."ParentID" = :id AND t."ParentID" = g_1."ParentID"
 	)
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

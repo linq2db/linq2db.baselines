@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -11,7 +11,7 @@ ORDER BY
 	x."Id"
 LIMIT :take
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

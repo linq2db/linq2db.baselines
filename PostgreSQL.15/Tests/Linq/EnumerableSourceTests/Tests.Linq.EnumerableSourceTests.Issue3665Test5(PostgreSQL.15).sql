@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	y.item
@@ -8,7 +8,7 @@ FROM
 			('M'), ('F'), ('U'), ('O')
 		) y(item)
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

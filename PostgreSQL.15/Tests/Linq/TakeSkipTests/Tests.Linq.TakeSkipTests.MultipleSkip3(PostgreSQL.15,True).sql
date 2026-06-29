@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @skip Integer -- Int32
 SET     @skip = 6
 

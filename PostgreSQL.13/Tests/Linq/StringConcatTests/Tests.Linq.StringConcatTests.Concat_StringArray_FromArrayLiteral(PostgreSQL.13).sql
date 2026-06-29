@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."Id"
@@ -7,7 +7,7 @@ FROM
 WHERE
 	CONCAT_WS('', Coalesce(e."StrReq", ''), ' ', 'I') = 'Programmer I'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

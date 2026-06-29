@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
@@ -25,7 +25,7 @@ SET
 	"UpdatedAt" = "Source"."UpdatedAt",
 	"UpdatedBy" = "Source"."UpdatedBy"
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",

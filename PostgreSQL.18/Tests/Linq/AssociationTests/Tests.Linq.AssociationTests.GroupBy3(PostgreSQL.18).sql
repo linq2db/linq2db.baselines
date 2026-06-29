@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT DISTINCT
 	Floor(Extract(year From "a_Types"."DateTimeValue"))::Int

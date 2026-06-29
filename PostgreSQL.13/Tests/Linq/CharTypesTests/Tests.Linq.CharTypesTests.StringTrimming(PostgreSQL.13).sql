@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @String Char(6) -- String
@@ -19,7 +19,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @String Char(8) -- String
@@ -40,7 +40,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @String Char(8) -- String
@@ -61,7 +61,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @String Char(8) -- String
@@ -84,7 +84,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @String Char(8) -- String
@@ -105,7 +105,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @String Char(8) -- String
@@ -126,7 +126,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 7
 DECLARE @String Char(8) -- String
@@ -147,7 +147,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 8
 DECLARE @String Char(8) -- String
@@ -168,7 +168,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 9
 DECLARE @String Char(11) -- String
@@ -189,7 +189,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @String Char(11) -- String
@@ -210,7 +210,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
 DECLARE @String Char(11) -- String
@@ -231,7 +231,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 12
 DECLARE @String Char(11) -- String
@@ -252,7 +252,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 13
 DECLARE @String Char(11) -- String
@@ -273,7 +273,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 14
 DECLARE @String Char(11) -- String
@@ -294,7 +294,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 15
 DECLARE @String Char(11) -- String
@@ -315,7 +315,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 16
 DECLARE @String Char(11) -- String
@@ -336,7 +336,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 17
 DECLARE @String Char(11) -- String
@@ -357,7 +357,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 18
 DECLARE @String Char(11) -- String
@@ -378,7 +378,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 19
 DECLARE @String Char(11) -- String
@@ -399,7 +399,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
 DECLARE @String Char(11) -- String
@@ -420,7 +420,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 21
 DECLARE @String Char -- String
@@ -441,7 +441,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

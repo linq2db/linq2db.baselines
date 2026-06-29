@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID",
@@ -17,7 +17,7 @@ FROM
 				y."ParentID" = p."ParentID"
 		)
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "FluentTemp_Update"
 (
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_Update"
 	CONSTRAINT "PK_FluentTemp_Update" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -30,7 +30,7 @@ VALUES
 	:LastName
 )
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Name Text(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Text(4) -- String
@@ -44,7 +44,7 @@ SET
 WHERE
 	"FluentTemp_Update"."ID" = 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "FluentTemp_Update"
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -12,10 +12,10 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY 1 ORDER BY e."Group", e."Date") as "RowNumber",
-			e."Group" as "Group_1",
-			e."Date" as "Date_1",
 			e."Id",
 			e."Name",
+			e."Group" as "Group_1",
+			e."Date" as "Date_1",
 			e."Amount",
 			e."IsActive",
 			e."Priority"
@@ -28,7 +28,7 @@ ORDER BY
 	t1."Group_1",
 	t1."Date_1"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

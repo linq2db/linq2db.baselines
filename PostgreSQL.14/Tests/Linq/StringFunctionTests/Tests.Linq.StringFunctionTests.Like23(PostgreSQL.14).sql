@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @pattern Text(6) -- String
 SET     @pattern = '%h~%n%'
 

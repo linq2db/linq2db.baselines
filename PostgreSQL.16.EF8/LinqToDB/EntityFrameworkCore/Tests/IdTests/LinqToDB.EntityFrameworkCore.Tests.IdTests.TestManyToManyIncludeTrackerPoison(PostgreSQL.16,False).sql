@@ -10,7 +10,7 @@ ORDER BY e.id, t.entity_id, t.item_id
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	m_1.id,
@@ -27,7 +27,7 @@ FROM
 
 
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1.id,

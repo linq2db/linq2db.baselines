@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	nm."MiddleName"
@@ -7,7 +7,7 @@ FROM
 WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

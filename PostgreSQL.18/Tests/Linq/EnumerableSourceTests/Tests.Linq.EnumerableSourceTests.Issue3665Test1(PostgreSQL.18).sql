@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	x."PersonID" + y.item
@@ -8,7 +8,7 @@ FROM
 			(0), (1), (2), (3)
 		) y(item)
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."FirstName",

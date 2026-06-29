@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @PageNumber Integer -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- String

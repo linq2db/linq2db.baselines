@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 DELETE FROM
 	"Person" p
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "Person"
 (
@@ -27,7 +27,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -36,7 +36,7 @@ FROM
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 DELETE FROM
 	"Person" p

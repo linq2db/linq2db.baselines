@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @value Real -- Single
 SET     @value = NULL
 
@@ -14,7 +14,7 @@ FROM
 			"Person" r
 	) t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @value Real -- Single
 SET     @value = 3.14748365E+09
 

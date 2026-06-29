@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	nm."FirstName"
@@ -7,7 +7,7 @@ FROM
 WHERE
 	Length(nm."FirstName") <> 0
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."FirstName",

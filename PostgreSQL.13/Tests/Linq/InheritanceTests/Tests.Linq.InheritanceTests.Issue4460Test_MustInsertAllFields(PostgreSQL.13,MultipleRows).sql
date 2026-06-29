@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "Issue4460Table"
 (
@@ -10,7 +10,7 @@ INSERT INTO "Issue4460Table"
 VALUES
 (1,'GrandChild','Tom','Black')
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Code",

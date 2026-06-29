@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -14,7 +14,7 @@ ORDER BY
 	t1."Id"
 LIMIT :take
 
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

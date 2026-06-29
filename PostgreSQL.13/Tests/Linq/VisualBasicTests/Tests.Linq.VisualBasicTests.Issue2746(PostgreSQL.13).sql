@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @VBLocal_SelectedValue Integer -- Int32
 SET     @VBLocal_SelectedValue = 1
 

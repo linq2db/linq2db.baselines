@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -13,7 +13,7 @@ VALUES
 RETURNING 
 	"ID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

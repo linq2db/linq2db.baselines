@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id2 Integer -- Int32
@@ -15,7 +15,7 @@ ORDER BY
 	p."ParentID"
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
 DECLARE @id2 Integer -- Int32

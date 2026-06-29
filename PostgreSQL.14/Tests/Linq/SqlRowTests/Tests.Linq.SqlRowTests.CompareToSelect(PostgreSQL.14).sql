@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ WHERE
 			y."Nil" IS NULL
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)

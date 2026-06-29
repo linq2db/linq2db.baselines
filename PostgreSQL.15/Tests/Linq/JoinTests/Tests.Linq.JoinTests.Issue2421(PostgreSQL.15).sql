@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	m_1."SectorId",
@@ -11,7 +11,7 @@ FROM
 WHERE
 	"a_UserPosition"."PositionId" = 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."SectorId"

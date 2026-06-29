@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	m_1."Id",
@@ -7,7 +7,7 @@ FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Id",

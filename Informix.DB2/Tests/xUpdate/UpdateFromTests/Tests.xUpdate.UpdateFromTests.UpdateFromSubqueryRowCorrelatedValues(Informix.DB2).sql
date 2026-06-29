@@ -8,26 +8,38 @@ WHERE
 -- Informix.DB2 Informix
 
 UPDATE
-	UpdateSubquerySourceTable
+	UpdateSubquerySourceTable x
 SET
 	FirstName = (
 		SELECT
-			canChange.FirstName
+			CASE
+				WHEN canChange.Id IS NOT NULL THEN canChange.FirstName
+				ELSE x.FirstName
+			END
 		FROM
-			UpdateSubquerySourceTable canChange
-		WHERE
-			canChange.Id = UpdateSubquerySourceTable.Id + 1
+			(
+				SELECT
+					1 as c1
+				FROM table(set{1})
+			) t1
+				LEFT JOIN UpdateSubquerySourceTable canChange ON canChange.Id = x.Id + 1
 	),
 	LastName = (
 		SELECT
-			canChange_1.LastName
+			CASE
+				WHEN canChange_1.Id IS NOT NULL THEN canChange_1.LastName
+				ELSE x.LastName
+			END
 		FROM
-			UpdateSubquerySourceTable canChange_1
-		WHERE
-			canChange_1.Id = UpdateSubquerySourceTable.Id + 1
+			(
+				SELECT
+					1 as c1
+				FROM table(set{1})
+			) t2
+				LEFT JOIN UpdateSubquerySourceTable canChange_1 ON canChange_1.Id = x.Id + 1
 	)
 WHERE
-	UpdateSubquerySourceTable.Id = 1
+	x.Id = 1
 
 -- Informix.DB2 Informix
 

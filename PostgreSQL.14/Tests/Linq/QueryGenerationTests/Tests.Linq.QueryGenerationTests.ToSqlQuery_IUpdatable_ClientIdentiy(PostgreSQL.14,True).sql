@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -11,7 +11,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 UPDATE
 	"TableWithIdentity"
@@ -19,7 +19,7 @@ SET
 	"Id" = 492,
 	"Value" = 123
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

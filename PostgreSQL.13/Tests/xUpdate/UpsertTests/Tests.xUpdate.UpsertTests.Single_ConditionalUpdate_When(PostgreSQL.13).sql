@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -44,7 +44,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 WHERE
 	:Version > t1."Version"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -60,7 +60,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -106,7 +106,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 WHERE
 	:Version > t1."Version"
 
--- PostgreSQL.13 PostgreSQL
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."Id",

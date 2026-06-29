@@ -5,11 +5,7 @@ UPDATE
 SET
 	"FirstName" = (
 		SELECT
-			(
-				SELECT
-					"t"."FirstName"
-				FROM rdb$database
-			)
+			"t"."FirstName"
 		FROM
 			"UpdateSubquerySourceTable" "t"
 		WHERE
@@ -17,11 +13,7 @@ SET
 	),
 	"LastName" = (
 		SELECT
-			(
-				SELECT
-					"t_1"."LastName"
-				FROM rdb$database
-			)
+			"t_1"."LastName"
 		FROM
 			"UpdateSubquerySourceTable" "t_1"
 		WHERE

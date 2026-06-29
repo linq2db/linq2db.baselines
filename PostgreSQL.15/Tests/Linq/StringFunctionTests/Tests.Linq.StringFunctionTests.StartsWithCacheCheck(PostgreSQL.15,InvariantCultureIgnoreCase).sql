@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."FirstName"
@@ -8,7 +8,7 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -19,7 +19,7 @@ FROM
 WHERE
 	p."FirstName" ILIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @nameToCheck Text(4) -- String
 SET     @nameToCheck = 'JOH%'
 

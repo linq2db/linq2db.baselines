@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	Floor(Extract(minute From (t."DateTimeValue" + 5 * Interval '1 Minute')))::Int
