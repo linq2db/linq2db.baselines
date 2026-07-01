@@ -20,9 +20,9 @@ FROM
 	(
 		SELECT 1 AS [item]
 		UNION ALL
-		SELECT 3 AS [item]
+		SELECT 2 AS [item]
 		UNION ALL
-		SELECT 2 AS [item]) [k_1]
+		SELECT 3 AS [item]) [k_1]
 		INNER JOIN [Department] [d] ON [d].[CompanyId] = [k_1].[item]
 ORDER BY
 	[d].[Id]
