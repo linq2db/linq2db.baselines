@@ -37,27 +37,27 @@ FROM
 	(
 		SELECT 101::Int AS Item1, 'Active'::NVarChar(255) AS Item2 FROM table(set{1})
 		UNION ALL
+		SELECT 102::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
 		SELECT 103::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
 		SELECT 201::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
-		SELECT 203::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 301::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 303::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 305::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 102::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
-		UNION ALL
 		SELECT 202::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 203::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
 		SELECT 204::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
 		UNION ALL
+		SELECT 301::Int, 'Active'::NVarChar(255) FROM table(set{1})
+		UNION ALL
 		SELECT 302::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
 		UNION ALL
-		SELECT 304::Int, 'Inactive'::NVarChar(255) FROM table(set{1})) k_1
+		SELECT 303::Int, 'Active'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 304::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 305::Int, 'Active'::NVarChar(255) FROM table(set{1})) k_1
 		INNER JOIN Employee d ON k_1.Item1 = d.DepartmentId AND k_1.Item2 = 'Active'
 WHERE
 	d.Salary > 45000
@@ -75,27 +75,27 @@ FROM
 	(
 		SELECT 101::Int AS Item1, 'Active'::NVarChar(255) AS Item2 FROM table(set{1})
 		UNION ALL
+		SELECT 102::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
 		SELECT 103::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
 		SELECT 201::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
-		SELECT 203::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 301::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 303::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 305::Int, 'Active'::NVarChar(255) FROM table(set{1})
-		UNION ALL
-		SELECT 102::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
-		UNION ALL
 		SELECT 202::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 203::Int, 'Active'::NVarChar(255) FROM table(set{1})
 		UNION ALL
 		SELECT 204::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
 		UNION ALL
+		SELECT 301::Int, 'Active'::NVarChar(255) FROM table(set{1})
+		UNION ALL
 		SELECT 302::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
 		UNION ALL
-		SELECT 304::Int, 'Inactive'::NVarChar(255) FROM table(set{1})) k_1
+		SELECT 303::Int, 'Active'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 304::Int, 'Inactive'::NVarChar(255) FROM table(set{1})
+		UNION ALL
+		SELECT 305::Int, 'Active'::NVarChar(255) FROM table(set{1})) k_1
 		INNER JOIN Contractor d ON k_1.Item1 = d.DepartmentId AND k_1.Item2 = 'Inactive'
 ORDER BY
 	d.Id
