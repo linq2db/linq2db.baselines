@@ -35,10 +35,10 @@ SELECT
 	d.Name as Name
 FROM
 	(VALUES
-		(102,'Inactive'u), (202,'Inactive'u), (204,'Inactive'u),
-		(302,'Inactive'u), (304,'Inactive'u), (101,'Active'u),
-		(103,'Active'u), (201,'Active'u), (203,'Active'u),
-		(301,'Active'u), (303,'Active'u), (305,'Active'u)
+		(101,'Active'u), (102,'Inactive'u), (103,'Active'u),
+		(201,'Active'u), (202,'Inactive'u), (203,'Active'u),
+		(204,'Inactive'u), (301,'Active'u), (302,'Inactive'u),
+		(303,'Active'u), (304,'Inactive'u), (305,'Active'u)
 	) k_1(Item1, Item2)
 		INNER JOIN Employee d ON k_1.Item1 = d.DepartmentId
 WHERE
@@ -55,10 +55,10 @@ SELECT
 	d.Name as Name
 FROM
 	(VALUES
-		(102,'Inactive'u), (202,'Inactive'u), (204,'Inactive'u),
-		(302,'Inactive'u), (304,'Inactive'u), (101,'Active'u),
-		(103,'Active'u), (201,'Active'u), (203,'Active'u),
-		(301,'Active'u), (303,'Active'u), (305,'Active'u)
+		(101,'Active'u), (102,'Inactive'u), (103,'Active'u),
+		(201,'Active'u), (202,'Inactive'u), (203,'Active'u),
+		(204,'Inactive'u), (301,'Active'u), (302,'Inactive'u),
+		(303,'Active'u), (304,'Inactive'u), (305,'Active'u)
 	) k_1(Item1, Item2)
 		INNER JOIN Contractor d ON k_1.Item1 = d.DepartmentId
 WHERE
