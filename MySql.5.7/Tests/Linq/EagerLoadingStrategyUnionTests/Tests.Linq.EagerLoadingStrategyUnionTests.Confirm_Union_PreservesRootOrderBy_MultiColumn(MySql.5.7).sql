@@ -19,13 +19,13 @@ SELECT
 	`d`.`IsActive`
 FROM
 	(
-		SELECT 1 AS `item`
+		SELECT 2 AS `item`
 		UNION ALL
-		SELECT 2
+		SELECT 4
 		UNION ALL
-		SELECT 3
+		SELECT 1
 		UNION ALL
-		SELECT 4) `k_1`
+		SELECT 3) `k_1`
 		INNER JOIN `Department` `d` ON `d`.`CompanyId` = `k_1`.`item`
 ORDER BY
 	`d`.`Id`
