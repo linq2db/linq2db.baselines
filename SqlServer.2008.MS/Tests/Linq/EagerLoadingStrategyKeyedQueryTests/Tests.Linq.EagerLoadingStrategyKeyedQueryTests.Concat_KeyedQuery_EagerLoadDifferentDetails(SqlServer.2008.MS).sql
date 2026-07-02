@@ -38,10 +38,10 @@ SELECT
 	[d].[Name]
 FROM
 	(VALUES
-		(101,N'Active'), (103,N'Active'), (201,N'Active'),
-		(203,N'Active'), (301,N'Active'), (303,N'Active'),
-		(305,N'Active'), (102,N'Inactive'), (202,N'Inactive'),
-		(204,N'Inactive'), (302,N'Inactive'), (304,N'Inactive')
+		(101,N'Active'), (102,N'Inactive'), (103,N'Active'),
+		(201,N'Active'), (202,N'Inactive'), (203,N'Active'),
+		(204,N'Inactive'), (301,N'Active'), (302,N'Inactive'),
+		(303,N'Active'), (304,N'Inactive'), (305,N'Active')
 	) [k_1]([Item1], [Item2])
 		INNER JOIN [Employee] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Active'
 WHERE
@@ -58,10 +58,10 @@ SELECT
 	[d].[Name]
 FROM
 	(VALUES
-		(101,N'Active'), (103,N'Active'), (201,N'Active'),
-		(203,N'Active'), (301,N'Active'), (303,N'Active'),
-		(305,N'Active'), (102,N'Inactive'), (202,N'Inactive'),
-		(204,N'Inactive'), (302,N'Inactive'), (304,N'Inactive')
+		(101,N'Active'), (102,N'Inactive'), (103,N'Active'),
+		(201,N'Active'), (202,N'Inactive'), (203,N'Active'),
+		(204,N'Inactive'), (301,N'Active'), (302,N'Inactive'),
+		(303,N'Active'), (304,N'Inactive'), (305,N'Active')
 	) [k_1]([Item1], [Item2])
 		INNER JOIN [Contractor] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Inactive'
 ORDER BY

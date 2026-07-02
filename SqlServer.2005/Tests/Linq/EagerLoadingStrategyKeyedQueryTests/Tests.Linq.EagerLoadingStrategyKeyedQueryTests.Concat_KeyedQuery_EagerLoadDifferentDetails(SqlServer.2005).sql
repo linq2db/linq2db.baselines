@@ -40,27 +40,27 @@ FROM
 	(
 		SELECT 101 AS [Item1], N'Active' AS [Item2]
 		UNION ALL
+		SELECT 102, N'Inactive'
+		UNION ALL
 		SELECT 103, N'Active'
 		UNION ALL
 		SELECT 201, N'Active'
 		UNION ALL
-		SELECT 203, N'Active'
-		UNION ALL
-		SELECT 301, N'Active'
-		UNION ALL
-		SELECT 303, N'Active'
-		UNION ALL
-		SELECT 305, N'Active'
-		UNION ALL
-		SELECT 102, N'Inactive'
-		UNION ALL
 		SELECT 202, N'Inactive'
+		UNION ALL
+		SELECT 203, N'Active'
 		UNION ALL
 		SELECT 204, N'Inactive'
 		UNION ALL
+		SELECT 301, N'Active'
+		UNION ALL
 		SELECT 302, N'Inactive'
 		UNION ALL
-		SELECT 304, N'Inactive') [k_1]
+		SELECT 303, N'Active'
+		UNION ALL
+		SELECT 304, N'Inactive'
+		UNION ALL
+		SELECT 305, N'Active') [k_1]
 		INNER JOIN [Employee] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Active'
 WHERE
 	[d].[Salary] > 45000
@@ -78,27 +78,27 @@ FROM
 	(
 		SELECT 101 AS [Item1], N'Active' AS [Item2]
 		UNION ALL
+		SELECT 102, N'Inactive'
+		UNION ALL
 		SELECT 103, N'Active'
 		UNION ALL
 		SELECT 201, N'Active'
 		UNION ALL
-		SELECT 203, N'Active'
-		UNION ALL
-		SELECT 301, N'Active'
-		UNION ALL
-		SELECT 303, N'Active'
-		UNION ALL
-		SELECT 305, N'Active'
-		UNION ALL
-		SELECT 102, N'Inactive'
-		UNION ALL
 		SELECT 202, N'Inactive'
+		UNION ALL
+		SELECT 203, N'Active'
 		UNION ALL
 		SELECT 204, N'Inactive'
 		UNION ALL
+		SELECT 301, N'Active'
+		UNION ALL
 		SELECT 302, N'Inactive'
 		UNION ALL
-		SELECT 304, N'Inactive') [k_1]
+		SELECT 303, N'Active'
+		UNION ALL
+		SELECT 304, N'Inactive'
+		UNION ALL
+		SELECT 305, N'Active') [k_1]
 		INNER JOIN [Contractor] [d] ON [k_1].[Item1] = [d].[DepartmentId] AND [k_1].[Item2] = N'Inactive'
 ORDER BY
 	[d].[Id]
