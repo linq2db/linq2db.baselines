@@ -3,7 +3,6 @@
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
-	`p`.`PersonID`,
 	`p`.`LastName`,
 	CONCAT(`p`.`FirstName`, ' ', `p`.`LastName`)
 FROM
