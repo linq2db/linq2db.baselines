@@ -40,27 +40,27 @@ FROM
 	(
 		SELECT 101 AS "Item1", 'Active' AS "Item2" FROM sys.dual
 		UNION ALL
-		SELECT 102, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 103, 'Active' FROM sys.dual
 		UNION ALL
 		SELECT 201, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 202, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 203, 'Active' FROM sys.dual
-		UNION ALL
-		SELECT 204, 'Inactive' FROM sys.dual
 		UNION ALL
 		SELECT 301, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 302, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 303, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 304, 'Inactive' FROM sys.dual
+		SELECT 305, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 305, 'Active' FROM sys.dual) k_1
+		SELECT 102, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 202, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 204, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 302, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 304, 'Inactive' FROM sys.dual) k_1
 		INNER JOIN "Employee" d ON k_1."Item1" = d."DepartmentId" AND k_1."Item2" = 'Active'
 WHERE
 	d."Salary" > 45000
@@ -78,27 +78,27 @@ FROM
 	(
 		SELECT 101 AS "Item1", 'Active' AS "Item2" FROM sys.dual
 		UNION ALL
-		SELECT 102, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 103, 'Active' FROM sys.dual
 		UNION ALL
 		SELECT 201, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 202, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 203, 'Active' FROM sys.dual
-		UNION ALL
-		SELECT 204, 'Inactive' FROM sys.dual
 		UNION ALL
 		SELECT 301, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 302, 'Inactive' FROM sys.dual
-		UNION ALL
 		SELECT 303, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 304, 'Inactive' FROM sys.dual
+		SELECT 305, 'Active' FROM sys.dual
 		UNION ALL
-		SELECT 305, 'Active' FROM sys.dual) k_1
+		SELECT 102, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 202, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 204, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 302, 'Inactive' FROM sys.dual
+		UNION ALL
+		SELECT 304, 'Inactive' FROM sys.dual) k_1
 		INNER JOIN "Contractor" d ON k_1."Item1" = d."DepartmentId" AND k_1."Item2" = 'Inactive'
 ORDER BY
 	d."Id"
