@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	COUNT(*) OVER(),
+	COUNT(*) OVER (),
 	x.Key_1,
 	x.Count_1,
 	x.HighestFirstName

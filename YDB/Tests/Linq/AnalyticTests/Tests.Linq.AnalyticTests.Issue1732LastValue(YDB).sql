@@ -4,7 +4,7 @@ SET     $group = 7
 
 SELECT
 	p.Id as Id,
-	LAST_VALUE(p.Id) OVER(ORDER BY p.`Order`) as PreviousId
+	LAST_VALUE(p.Id) OVER (ORDER BY p.`Order`) as c1
 FROM
 	`Position` p
 WHERE

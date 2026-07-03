@@ -1,0 +1,8 @@
+﻿-- SQLite.MS SQLite
+
+SELECT
+	[t].[Id],
+	SUM([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id] RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE CURRENT ROW)
+FROM
+	[WindowFunctionTestEntity] [t]
+

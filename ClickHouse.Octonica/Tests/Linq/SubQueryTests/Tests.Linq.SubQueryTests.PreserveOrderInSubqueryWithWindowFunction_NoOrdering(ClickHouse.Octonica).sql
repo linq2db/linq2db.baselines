@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			r.PersonID as ID,
-			ROW_NUMBER() OVER(ORDER BY r.FirstName) as RowNumber
+			toInt64(ROW_NUMBER() OVER (ORDER BY r.FirstName)) as RowNumber
 		FROM
 			Person r
 	) t1

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER(PARTITION BY p.PersonID ORDER BY p.PersonID) as Rank,
+			toInt64(ROW_NUMBER() OVER (PARTITION BY p.PersonID ORDER BY p.PersonID)) as Rank,
 			p.PersonID as Id,
 			p.FirstName as Name
 		FROM
@@ -26,7 +26,7 @@ FROM
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER(PARTITION BY p_1.PersonID ORDER BY p_1.PersonID) as Rank,
+					toInt64(ROW_NUMBER() OVER (PARTITION BY p_1.PersonID ORDER BY p_1.PersonID)) as Rank,
 					p_1.PersonID as ID,
 					p_1.FirstName as Name
 				FROM
@@ -50,7 +50,7 @@ FROM
 		FROM
 			(
 				SELECT
-					ROW_NUMBER() OVER(PARTITION BY p_2.PersonID ORDER BY p_2.PersonID) as Rank,
+					toInt64(ROW_NUMBER() OVER (PARTITION BY p_2.PersonID ORDER BY p_2.PersonID)) as Rank,
 					p_2.PersonID as ID,
 					p_2.FirstName as Name
 				FROM

@@ -1,15 +1,11 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	VARIANCE(p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),
-	VARIANCE(ALL p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),
-	VARIANCE(DISTINCT p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),
-	VARIANCE(p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),
-	VARIANCE(p."Value1") OVER(),
-	VARIANCE(ALL p."Value1") OVER(),
-	VARIANCE(DISTINCT p."Value1") OVER(),
-	VARIANCE(p."Value1") OVER(),
-	VARIANCE(ALL p."Value1") OVER(PARTITION BY c_1."ChildID" ORDER BY p."Value1" RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+	VARIANCE(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
+	VARIANCE(DISTINCT p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
+	VARIANCE(p."Value1") OVER (),
+	VARIANCE(DISTINCT p."Value1") OVER (),
+	VARIANCE(p."Value1") OVER (PARTITION BY c_1."ChildID" ORDER BY p."Value1" RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 FROM
 	"Parent" p
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"

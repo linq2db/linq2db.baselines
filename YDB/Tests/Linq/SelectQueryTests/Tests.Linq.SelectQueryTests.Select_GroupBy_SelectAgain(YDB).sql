@@ -5,9 +5,9 @@ DECLARE $skip Int32
 SET     $skip = 1
 
 SELECT
-	COUNT(*) OVER() as Count_1,
+	COUNT(*) OVER () as c1,
 	x.Key_1 as Key_1,
-	x.Count_1 as Count_2,
+	x.Count_1 as Count_1,
 	x.HighestFirstName as HighestFirstName
 FROM
 	(

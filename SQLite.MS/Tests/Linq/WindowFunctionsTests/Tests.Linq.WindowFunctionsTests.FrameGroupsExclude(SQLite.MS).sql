@@ -1,0 +1,8 @@
+﻿-- SQLite.MS SQLite
+
+SELECT
+	[t].[Id],
+	SUM([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id] GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE TIES)
+FROM
+	[WindowFunctionTestEntity] [t]
+
