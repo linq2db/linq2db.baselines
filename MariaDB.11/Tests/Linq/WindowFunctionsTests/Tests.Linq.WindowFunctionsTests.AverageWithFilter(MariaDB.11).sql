@@ -1,6 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t`.`Id`,
 	AVG(CASE
 		WHEN `t`.`CategoryId` = 1 THEN `t`.`DoubleValue`
 		ELSE NULL
