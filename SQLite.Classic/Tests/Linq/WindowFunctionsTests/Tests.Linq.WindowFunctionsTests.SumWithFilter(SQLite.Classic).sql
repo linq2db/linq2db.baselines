@@ -1,6 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	SUM(CASE
 		WHEN [t].[CategoryId] = 1 THEN [t].[IntValue]
 		ELSE NULL
