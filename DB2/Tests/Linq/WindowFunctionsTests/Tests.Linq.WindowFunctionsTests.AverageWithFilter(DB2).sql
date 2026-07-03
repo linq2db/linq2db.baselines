@@ -1,6 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	AVG(CASE
 		WHEN "t"."CategoryId" = 1 THEN "t"."DoubleValue"
 		ELSE NULL
