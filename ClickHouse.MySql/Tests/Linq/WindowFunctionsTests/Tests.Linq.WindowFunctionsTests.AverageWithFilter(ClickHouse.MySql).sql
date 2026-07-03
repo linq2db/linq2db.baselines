@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	t.Id,
 	AVG(CASE
 		WHEN t.CategoryId = 1 THEN t.DoubleValue
 		ELSE NULL

@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	t.Id,
 	SUM(CASE
 		WHEN t.CategoryId = 1 THEN t.IntValue
 		ELSE NULL
