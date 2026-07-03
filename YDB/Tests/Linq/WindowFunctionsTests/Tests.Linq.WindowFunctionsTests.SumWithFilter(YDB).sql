@@ -1,6 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
+	t.Id as Id,
 	SUM(CASE
 		WHEN t.CategoryId = 1 THEN t.IntValue
 		ELSE NULL

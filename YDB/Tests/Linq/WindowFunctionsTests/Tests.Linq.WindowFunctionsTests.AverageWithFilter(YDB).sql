@@ -1,6 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
+	t.Id as Id,
 	AVG(CASE
 		WHEN t.CategoryId = 1 THEN t.DoubleValue
 		ELSE NULL
