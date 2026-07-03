@@ -1,6 +1,7 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
+	"t"."Id",
 	AVG(CASE
 		WHEN "t"."CategoryId" = 1 THEN "t"."DoubleValue"
 		ELSE NULL
