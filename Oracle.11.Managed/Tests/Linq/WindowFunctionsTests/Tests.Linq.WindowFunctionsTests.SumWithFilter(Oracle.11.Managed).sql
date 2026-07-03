@@ -1,6 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
+	t."Id",
 	SUM(CASE
 		WHEN t."CategoryId" = 1 THEN t."IntValue"
 		ELSE NULL

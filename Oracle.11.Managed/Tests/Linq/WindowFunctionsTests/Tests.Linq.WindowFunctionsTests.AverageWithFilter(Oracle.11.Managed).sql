@@ -1,6 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
+	t."Id",
 	AVG(CASE
 		WHEN t."CategoryId" = 1 THEN t."DoubleValue"
 		ELSE NULL
