@@ -3,7 +3,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT DISTINCT
-	[g_1].[ParentID] as [Key_1]
+	[g_1].[ParentID]
 FROM
 	[Child] [g_1]
 WHERE
@@ -21,7 +21,7 @@ DECLARE @id Int -- Int32
 SET     @id = 2
 
 SELECT DISTINCT
-	[g_1].[ParentID] as [Key_1]
+	[g_1].[ParentID]
 FROM
 	[Child] [g_1]
 WHERE

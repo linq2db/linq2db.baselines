@@ -58,7 +58,7 @@ VALUES
 SELECT
 	[p].[Id],
 	[p].[TargetName],
-	[a_ActualStage].[Id] as [ActualStageId]
+	[a_ActualStage].[Id] as [ActualStageId_1]
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1

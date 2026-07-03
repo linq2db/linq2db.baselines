@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[v].[inId] as [InId],
-	[t].[inIdState] as [InIdState]
+	[v].[inId],
+	[t].[inIdState]
 FROM
 	[stVersions] [v]
 		INNER JOIN [stMain] [a_Main] ON [v].[inIdMain] = [a_Main].[inId]

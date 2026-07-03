@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	[e].[PersonID] as [ID],
+	[e].[PersonID],
 	[e].[FirstName],
 	[e].[LastName],
 	[e].[FirstName] + ':' + [e].[LastName] as [MiddleName]

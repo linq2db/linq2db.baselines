@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[PersonID],
-	[p].[FirstName] as [Name]
+	[p].[FirstName]
 FROM
 	[Person] [p]
 

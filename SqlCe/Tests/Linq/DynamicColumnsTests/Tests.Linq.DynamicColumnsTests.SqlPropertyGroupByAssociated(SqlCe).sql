@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[a_Patient].[Diagnosis] as [Key_1],
+	[a_Patient].[Diagnosis],
 	COUNT(*) as [Count_1]
 FROM
 	[Person] [p]

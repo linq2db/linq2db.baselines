@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	[t1].[InId] as [LinkId],
+	[t1].[InId],
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
 		ELSE [e].[InMinQuantity]
@@ -19,7 +19,7 @@ WHERE
 -- SqlCe
 
 SELECT TOP (2)
-	[t1].[InId] as [LinkId],
+	[t1].[InId],
 	CASE
 		WHEN [e].[InId] IS NULL THEN [t1].[InMinQuantity]
 		ELSE [e].[InMinQuantity]

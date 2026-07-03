@@ -79,7 +79,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName],
 	CAST(0 AS Int) as [projection__set_id__]
 FROM
@@ -90,7 +90,7 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION ALL
 SELECT
-	[a_Book_1].[BookId] as [Id],
+	[a_Book_1].[BookId],
 	[a_Book_1].[BookName],
 	CAST(1 AS Int) as [projection__set_id__]
 FROM

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -9,7 +9,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -17,7 +17,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -25,7 +25,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -33,7 +33,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]

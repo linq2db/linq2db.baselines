@@ -3,7 +3,7 @@
 SELECT
 	[c_1].[Id],
 	[c_1].[Name],
-	[c_1].[Id] as [f01],
+	[c_1].[Id] as [f01_1],
 	[c_1].[Id] * 2 as [f02],
 	[c_1].[Id] * 3 as [f03],
 	[c_1].[Id] * 4 as [f04],

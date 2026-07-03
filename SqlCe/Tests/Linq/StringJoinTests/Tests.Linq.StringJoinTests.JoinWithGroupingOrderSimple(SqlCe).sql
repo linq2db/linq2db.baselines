@@ -38,7 +38,7 @@ ORDER BY
 -- SqlCe
 
 SELECT DISTINCT
-	[g_1].[Id] as [Key_1]
+	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
 ORDER BY

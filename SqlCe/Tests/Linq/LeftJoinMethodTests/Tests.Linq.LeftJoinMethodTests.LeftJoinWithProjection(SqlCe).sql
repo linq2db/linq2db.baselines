@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[x].[Name] as [CustomerName],
-	[o].[Id] as [OrderId]
+	[x].[Name],
+	[o].[Id]
 FROM
 	[Customer] [x]
 		LEFT JOIN [Order] [o] ON [x].[Id] = [o].[CustomerId]

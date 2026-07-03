@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[left_1].[ParentID] as [Left_1],
+	[left_1].[ParentID],
 	[right_1].[ParentID] as [Right_1]
 FROM
 	[Parent] [left_1]

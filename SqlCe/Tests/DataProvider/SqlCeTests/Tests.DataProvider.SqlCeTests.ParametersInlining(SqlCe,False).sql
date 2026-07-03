@@ -3,7 +3,7 @@ DECLARE @minValue DateTime
 SET     @minValue = '1753-01-01 00:00:00.000'
 
 SELECT
-	[t1].[datetimeDataType] as [DateTimeValue]
+	[t1].[datetimeDataType]
 FROM
 	[AllTypes] [t1]
 WHERE

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[FirstName],
 	[x].[LastName],
 	[x].[MiddleName]

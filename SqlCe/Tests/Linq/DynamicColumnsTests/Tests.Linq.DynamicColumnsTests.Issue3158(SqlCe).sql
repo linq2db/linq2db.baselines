@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[pa].[Diagnosis]
 FROM
 	[Person] [p]

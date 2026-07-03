@@ -26,7 +26,7 @@ ORDER BY
 -- SqlCe
 
 SELECT DISTINCT
-	[g_1].[GrpId] as [Key_1]
+	[g_1].[GrpId]
 FROM
 	[ConcatGroupedEntity] [g_1]
 ORDER BY

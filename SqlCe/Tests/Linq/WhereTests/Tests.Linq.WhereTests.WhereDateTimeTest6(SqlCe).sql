@@ -3,7 +3,7 @@
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
-	[t1].[DateTimeValue] as [Value_1],
+	[t1].[DateTimeValue],
 	[t1].[DateTimeValue2],
 	[t1].[BoolValue],
 	[t1].[GuidValue],

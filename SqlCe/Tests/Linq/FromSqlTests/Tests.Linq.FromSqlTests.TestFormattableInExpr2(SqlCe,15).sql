@@ -6,7 +6,7 @@ SET     @endId = 15
 
 SELECT
 	[s].[value] as [Value_1],
-	[s].[id] as [Id]
+	[s].[id]
 FROM
 	[sample_class] [t1]
 		INNER JOIN (
@@ -25,7 +25,7 @@ SET     @endId = 15
 
 SELECT
 	[t].[value] as [Value_1],
-	[t].[id] as [Id]
+	[t].[id]
 FROM
 	[sample_class] [t]
 WHERE

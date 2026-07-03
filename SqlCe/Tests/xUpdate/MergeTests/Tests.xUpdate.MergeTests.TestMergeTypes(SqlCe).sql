@@ -603,7 +603,7 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[t1].[Field1] as [FieldInt32],
+	[t1].[Field1],
 	[t1].[FieldInt64],
 	[t1].[FieldBoolean],
 	[t1].[FieldString],
@@ -627,7 +627,7 @@ ORDER BY
 
 SELECT
 	[t1].[Id],
-	[t1].[Field1] as [FieldInt32],
+	[t1].[Field1],
 	[t1].[FieldInt64],
 	[t1].[FieldBoolean],
 	[t1].[FieldString],

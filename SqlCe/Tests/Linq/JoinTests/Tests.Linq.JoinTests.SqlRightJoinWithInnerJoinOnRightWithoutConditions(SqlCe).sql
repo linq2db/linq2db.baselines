@@ -3,7 +3,7 @@ DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 
 SELECT
-	[left_1].[ParentID] as [Left_1],
+	[left_1].[ParentID],
 	[right_2].[Right_1]
 FROM
 	[Parent] [left_1]

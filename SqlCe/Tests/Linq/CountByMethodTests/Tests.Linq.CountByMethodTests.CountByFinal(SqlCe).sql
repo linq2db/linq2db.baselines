@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[g_1].[TestId] as [Key_1],
+	[g_1].[TestId],
 	COUNT(*) as [Count_1]
 FROM
 	[TestTable] [g_1]

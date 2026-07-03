@@ -52,7 +52,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	[r].[Guid] as [CampaignGuid],
+	[r].[Guid],
 	[lc].[Count] as [Count_1],
 	CASE
 		WHEN [lc].[Count] IS NOT NULL THEN (CAST([lc].[Count] AS Decimal(18, 10)) / [r].[Sold]) * 100
