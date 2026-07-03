@@ -1,6 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
+	"t"."Id",
 	SUM(CASE
 		WHEN "t"."CategoryId" = 1 THEN "t"."IntValue"
 		ELSE NULL
