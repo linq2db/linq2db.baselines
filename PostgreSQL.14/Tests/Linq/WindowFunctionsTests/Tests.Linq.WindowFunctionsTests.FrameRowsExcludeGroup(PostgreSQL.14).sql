@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
+	t."Id",
 	SUM(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id" ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE GROUP)
 FROM
 	"WindowFunctionTestEntity" t
