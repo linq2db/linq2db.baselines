@@ -36,7 +36,7 @@ VALUES
 
 SELECT TOP (2)
 	[r].[Id],
-	[r].[Value] as [Value_1]
+	[r].[Value]
 FROM
 	[OptionDecimalTable] [r]
 WHERE
@@ -46,7 +46,7 @@ WHERE
 
 SELECT TOP (2)
 	[r].[Id],
-	[r].[Value] as [Value_1]
+	[r].[Value]
 FROM
 	[OptionDecimalTable] [r]
 WHERE
