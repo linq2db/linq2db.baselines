@@ -2,7 +2,7 @@
 
 SELECT
 	x."Id",
-	x."Value" as "BaseValue"
+	x."Value" as "BaseValue_1"
 FROM
 	"BaseTable" x
 WHERE
@@ -13,7 +13,7 @@ FETCH NEXT 1 ROWS ONLY
 
 SELECT
 	x."Id",
-	x."Value" as "BaseValue"
+	x."Value" as "BaseValue_1"
 FROM
 	"BaseTable" x
 WHERE
