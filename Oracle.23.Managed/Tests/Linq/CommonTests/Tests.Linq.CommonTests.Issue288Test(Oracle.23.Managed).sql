@@ -1,7 +1,7 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."FirstName" as ID
+	p."FirstName"
 FROM
 	"Person" p
 WHERE
@@ -13,7 +13,7 @@ DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
 
 SELECT
-	p."FirstName" as ID
+	p."FirstName"
 FROM
 	"Person" p
 WHERE
