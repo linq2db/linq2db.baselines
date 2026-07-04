@@ -34,7 +34,7 @@ VALUES
 
 SELECT
 	t.ID as ID,
-	t.`Value` as Name,
+	t.`Value` as Name_1,
 	t.LastName as LastName
 FROM
 	FluentTemp_Cache t
@@ -81,7 +81,7 @@ VALUES
 
 SELECT
 	t.ID as ID,
-	t.`Value` as Name,
+	t.`Value` as Name_1,
 	t.LastName as LastName
 FROM
 	FluentTemp_Cache t
@@ -128,7 +128,7 @@ VALUES
 
 SELECT
 	t.ID as ID,
-	t.`Column` as Name,
+	t.`Column` as Name_1,
 	t.LastName as LastName
 FROM
 	FluentTemp_Cache t
@@ -175,7 +175,7 @@ VALUES
 
 SELECT
 	t.ID as ID,
-	t.`Column` as Name,
+	t.`Column` as Name_1,
 	t.LastName as LastName
 FROM
 	FluentTemp_Cache t

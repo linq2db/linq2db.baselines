@@ -26,7 +26,7 @@ LIMIT 1
 
 SELECT
 	person_1.FirstName as FirstName,
-	person_1.PersonID as ID,
+	person_1.PersonID as PersonID,
 	person_1.LastName as LastName,
 	person_1.MiddleName as MiddleName,
 	person_1.Gender as Gender

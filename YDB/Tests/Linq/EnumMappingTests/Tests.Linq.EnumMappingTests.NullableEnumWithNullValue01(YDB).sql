@@ -61,8 +61,8 @@ VALUES
 -- YDB Ydb
 
 SELECT
-	r.ID as Id,
-	r.IntValue as Value_1
+	r.ID as ID,
+	r.IntValue as IntValue
 FROM
 	LinqDataTypes r
 WHERE
@@ -73,9 +73,9 @@ ORDER BY
 -- YDB Ydb
 
 SELECT
-	r.ID as Id,
-	r.IntValue as Int32,
-	r.StringValue as String
+	r.ID as ID,
+	r.IntValue as IntValue,
+	r.StringValue as StringValue
 FROM
 	LinqDataTypes r
 WHERE

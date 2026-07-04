@@ -64,8 +64,8 @@ ORDER BY
 -- YDB Ydb
 
 SELECT
-	after_1.Id as Item1,
-	after_1.Name as Item2
+	after_1.Id as Id,
+	after_1.Name as Name
 FROM
 	`Names` after_1
 ORDER BY

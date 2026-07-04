@@ -2,7 +2,7 @@
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender
@@ -13,7 +13,7 @@ WHERE
 UNION ALL
 SELECT
 	p_1.FirstName as FirstName,
-	p_1.PersonID as ID,
+	p_1.PersonID as PersonID,
 	p_1.LastName as LastName,
 	p_1.MiddleName as MiddleName,
 	p_1.Gender as Gender

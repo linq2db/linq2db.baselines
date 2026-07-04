@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	a_Patient.Diagnosis as Key_1,
+	a_Patient.Diagnosis as Diagnosis,
 	COUNT(*) as Count_1
 FROM
 	Person p

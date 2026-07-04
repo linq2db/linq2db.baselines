@@ -74,7 +74,7 @@ ORDER BY
 
 SELECT
 	t1.Id as Id,
-	t1.Renamed as Value_1
+	t1.Renamed as Renamed
 FROM
 	TempTable t1
 ORDER BY

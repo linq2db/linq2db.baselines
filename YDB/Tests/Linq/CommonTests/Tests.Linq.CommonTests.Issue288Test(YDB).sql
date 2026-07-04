@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.FirstName as ID
+	p.FirstName as FirstName
 FROM
 	Person p
 WHERE
@@ -13,7 +13,7 @@ DECLARE $p Text(4) -- String
 SET     $p = 'John'u
 
 SELECT
-	p.FirstName as ID
+	p.FirstName as FirstName
 FROM
 	Person p
 WHERE

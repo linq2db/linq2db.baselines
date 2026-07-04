@@ -23,9 +23,9 @@ VALUES
 -- YDB Ydb
 
 SELECT
-	entity.ID as Id,
-	entity.BigIntValue as TestField,
-	entity.IntValue as Int32Field
+	entity.ID as ID,
+	entity.BigIntValue as BigIntValue,
+	entity.IntValue as IntValue
 FROM
 	LinqDataTypes entity
 WHERE

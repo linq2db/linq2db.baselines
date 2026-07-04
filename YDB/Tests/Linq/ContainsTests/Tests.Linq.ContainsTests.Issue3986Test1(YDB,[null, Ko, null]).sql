@@ -4,7 +4,7 @@ SET     $Ids0_1 = 'Ko'u
 
 SELECT
 	r.FirstName as FirstName,
-	r.PersonID as ID,
+	r.PersonID as PersonID,
 	r.LastName as LastName,
 	r.MiddleName as MiddleName,
 	r.Gender as Gender

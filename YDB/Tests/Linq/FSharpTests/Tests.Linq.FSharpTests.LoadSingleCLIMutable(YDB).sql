@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.FirstName as FirstName,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender,
-	a_Patient.PersonID as PersonID,
+	a_Patient.PersonID as PersonID_1,
 	a_Patient.Diagnosis as Diagnosis
 FROM
 	Person p
@@ -18,12 +18,12 @@ LIMIT 2
 -- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.FirstName as FirstName,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender,
-	a_Patient.PersonID as PersonID,
+	a_Patient.PersonID as PersonID_1,
 	a_Patient.Diagnosis as Diagnosis
 FROM
 	Person p

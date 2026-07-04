@@ -35,7 +35,7 @@ DECLARE $id Int32
 SET     $id = 4
 
 SELECT
-	p2.PersonID as ID,
+	p2.PersonID as PersonID,
 	p2.Gender as Gender,
 	p2.FirstName as FirstName,
 	p2.MiddleName as MiddleName,

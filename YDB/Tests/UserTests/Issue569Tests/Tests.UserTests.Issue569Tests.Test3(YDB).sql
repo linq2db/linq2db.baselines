@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
-	pt.PersonID as PersonID,
+	p.PersonID as PersonID,
+	pt.PersonID as PersonID_1,
 	d.Taxonomy as Taxonomy
 FROM
 	Person p

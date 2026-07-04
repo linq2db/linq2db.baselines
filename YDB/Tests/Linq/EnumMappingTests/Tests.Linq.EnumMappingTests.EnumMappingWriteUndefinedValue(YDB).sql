@@ -23,8 +23,8 @@ VALUES
 -- YDB Ydb
 
 SELECT
-	r.ID as Id,
-	r.BigIntValue as TestField
+	r.ID as ID,
+	r.BigIntValue as BigIntValue
 FROM
 	LinqDataTypes r
 WHERE

@@ -3,7 +3,7 @@ DECLARE $p Int32
 SET     $p = 1
 
 SELECT
-	p.LastName as Value_1
+	p.LastName as LastName
 FROM
 	Person p
 WHERE

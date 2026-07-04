@@ -5,7 +5,7 @@ SET     $Date = Timestamp('2009-09-20T00:00:00.000000Z')
 SELECT
 	t.ID as ID,
 	t.MoneyValue as MoneyValue,
-	t.DateTimeValue as Value_1,
+	t.DateTimeValue as DateTimeValue,
 	t.DateTimeValue2 as DateTimeValue2,
 	t.BoolValue as BoolValue,
 	t.GuidValue as GuidValue,

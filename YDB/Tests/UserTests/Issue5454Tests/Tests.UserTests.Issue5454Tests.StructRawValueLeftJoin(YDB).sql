@@ -2,7 +2,7 @@
 
 SELECT
 	g_1.StatsTypeId as StatsTypeId,
-	st.FullName as StatsTypeName,
+	st.FullName as FullName,
 	g_1.GroupId as GroupId
 FROM
 	GroupStatsType g_1

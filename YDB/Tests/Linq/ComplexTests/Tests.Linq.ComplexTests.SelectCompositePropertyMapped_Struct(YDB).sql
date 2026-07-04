@@ -1,9 +1,9 @@
 ﻿-- YDB Ydb
 
 SELECT DISTINCT
-	u.city as City,
-	u.street as Street,
-	u.building_number as Building
+	u.city as city,
+	u.street as street,
+	u.building_number as building_number
 FROM
 	UserStruct u
 LIMIT 2

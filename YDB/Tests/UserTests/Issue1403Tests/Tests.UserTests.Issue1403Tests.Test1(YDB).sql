@@ -14,8 +14,8 @@ VALUES
 -- YDB Ydb
 
 SELECT
-	t1.event_id as EventId,
-	t1.event_description as EventDescription
+	t1.event_id as event_id,
+	t1.event_description as event_description
 FROM
 	Issue1403Tests_1 t1
 LIMIT 1

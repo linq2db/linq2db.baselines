@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 
 SELECT
-	x.Name as CustomerName,
-	o.Id as OrderId
+	x.Name as Name,
+	o.Id as Id
 FROM
 	Customer x
 		LEFT JOIN `Order` o ON x.Id = o.CustomerId

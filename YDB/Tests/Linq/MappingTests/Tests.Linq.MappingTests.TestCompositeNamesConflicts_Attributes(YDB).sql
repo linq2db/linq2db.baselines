@@ -23,8 +23,8 @@ VALUES
 
 SELECT
 	t1.Id as Id,
-	t1.child1_name as Name,
-	t1.child2_name as Name_1
+	t1.child1_name as child1_name,
+	t1.child2_name as child2_name
 FROM
 	Issue5266Table t1
 LIMIT 2

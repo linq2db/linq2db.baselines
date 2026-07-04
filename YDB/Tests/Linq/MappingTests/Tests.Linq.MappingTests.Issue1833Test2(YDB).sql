@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	e.PersonID as ID,
+	e.PersonID as PersonID,
 	e.FirstName as FirstName,
 	e.LastName as LastName,
 	e.FirstName || ':'u || e.LastName as MiddleName

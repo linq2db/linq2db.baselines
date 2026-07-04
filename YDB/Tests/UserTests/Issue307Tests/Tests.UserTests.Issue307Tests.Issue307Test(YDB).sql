@@ -30,7 +30,7 @@ DECLARE $id Int32
 SET     $id = 5
 
 SELECT
-	t1.PersonID as ID,
+	t1.PersonID as PersonID,
 	t1.Gender as Gender,
 	t1.FirstName as FirstName,
 	t1.MiddleName as MiddleName,

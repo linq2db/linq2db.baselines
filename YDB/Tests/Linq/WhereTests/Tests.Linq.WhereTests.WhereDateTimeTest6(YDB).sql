@@ -3,7 +3,7 @@
 SELECT
 	t1.ID as ID,
 	t1.MoneyValue as MoneyValue,
-	t1.DateTimeValue as Value_1,
+	t1.DateTimeValue as DateTimeValue,
 	t1.DateTimeValue2 as DateTimeValue2,
 	t1.BoolValue as BoolValue,
 	t1.GuidValue as GuidValue,

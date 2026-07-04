@@ -3,7 +3,7 @@
 SELECT
 	m_1.Key_1 as Key_1,
 	d.FirstName as FirstName,
-	d.PersonID as ID,
+	d.PersonID as PersonID,
 	d.LastName as LastName,
 	d.MiddleName as MiddleName,
 	d.Gender as Gender

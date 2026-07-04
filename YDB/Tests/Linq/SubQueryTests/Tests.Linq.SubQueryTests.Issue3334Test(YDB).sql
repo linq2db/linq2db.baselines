@@ -2,12 +2,12 @@
 
 SELECT
 	entity1.FirstName as FirstName,
-	entity1.PersonID as ID,
+	entity1.PersonID as PersonID,
 	entity1.LastName as LastName,
 	entity1.MiddleName as MiddleName,
 	entity1.Gender as Gender,
 	t2.FirstName as FirstName_1,
-	t2.ID as ID_1,
+	t2.ID as ID,
 	t2.LastName as LastName_1,
 	t2.MiddleName as MiddleName_1,
 	t2.Gender as Gender_1

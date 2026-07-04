@@ -52,7 +52,7 @@ VALUES
 -- YDB Ydb
 
 SELECT
-	r.Guid as CampaignGuid,
+	r.Guid as Guid,
 	lc.`Count` as Count_1,
 	CASE
 		WHEN lc.`Count` IS NOT NULL THEN (CAST(lc.`Count` AS Decimal(22,9)) / r.Sold) * Decimal('100', 22, 9)

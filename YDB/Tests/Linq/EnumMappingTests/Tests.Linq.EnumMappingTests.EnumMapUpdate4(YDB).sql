@@ -32,7 +32,7 @@ WHERE
 -- YDB Ydb
 
 SELECT
-	r.BigIntValue as TestField
+	r.BigIntValue as BigIntValue
 FROM
 	LinqDataTypes r
 WHERE

@@ -3,9 +3,9 @@
 SELECT
 	p.ParentID as ParentID,
 	p.Value1 as Value1,
-	c1.ChildID as c1Key,
-	c2.GrandChildID as c2Key,
-	c3.GrandChildID as c3Key
+	c1.ChildID as ChildID,
+	c2.GrandChildID as GrandChildID,
+	c3.GrandChildID as c3Key_1
 FROM
 	Parent p
 		INNER JOIN Child c1 ON p.ParentID = c1.ParentID

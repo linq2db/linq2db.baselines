@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	'123'u || p.FirstName || '0123451234'u as FirstName
 FROM
 	Person p

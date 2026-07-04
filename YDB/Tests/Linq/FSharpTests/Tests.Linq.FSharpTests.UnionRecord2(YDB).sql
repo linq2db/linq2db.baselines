@@ -1,20 +1,20 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
-	p.FirstName as id_1,
-	p.LastName as Id_2,
-	p.MiddleName as iD_3
+	p.PersonID as PersonID,
+	p.FirstName as FirstName,
+	p.LastName as LastName,
+	p.MiddleName as MiddleName
 FROM
 	Person p
 WHERE
 	p.PersonID = 1
 UNION
 SELECT
-	p_1.PersonID as ID,
-	p_1.FirstName as id_1,
-	p_1.LastName as Id_2,
-	p_1.MiddleName as iD_3
+	p_1.PersonID as PersonID,
+	p_1.FirstName as FirstName,
+	p_1.LastName as LastName,
+	p_1.MiddleName as MiddleName
 FROM
 	Person p_1
 WHERE

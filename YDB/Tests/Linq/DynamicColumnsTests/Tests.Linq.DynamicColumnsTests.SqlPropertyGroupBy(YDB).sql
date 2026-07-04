@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.FirstName as Key_1,
+	p.FirstName as FirstName,
 	COUNT(*) as Count_1
 FROM
 	Person p
