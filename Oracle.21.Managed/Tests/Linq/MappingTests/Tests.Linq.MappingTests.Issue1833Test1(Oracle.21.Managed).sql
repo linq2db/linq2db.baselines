@@ -1,7 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	e."PersonID" as ID,
+	e."PersonID",
 	e."FirstName",
 	e."LastName",
 	e."FirstName" || ':' || e."LastName" as "MiddleName"
