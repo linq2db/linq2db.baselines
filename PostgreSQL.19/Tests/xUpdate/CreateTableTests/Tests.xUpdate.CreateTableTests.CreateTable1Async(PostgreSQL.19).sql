@@ -1,0 +1,30 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+DROP TABLE IF EXISTS "TestTable"
+
+-- PostgreSQL.19 PostgreSQL13
+
+CREATE TABLE "TestTable"
+(
+	"ID"        SERIAL     NOT NULL,
+	"Field1"    text           NULL,
+	"Field2"    text           NULL,
+	"CreatedOn" TimeStamp      NULL,
+
+	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
+)
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	t1."ID",
+	t1."Field1",
+	t1."Field2",
+	t1."CreatedOn"
+FROM
+	"TestTable" t1
+
+-- PostgreSQL.19 PostgreSQL13
+
+DROP TABLE "TestTable"
+

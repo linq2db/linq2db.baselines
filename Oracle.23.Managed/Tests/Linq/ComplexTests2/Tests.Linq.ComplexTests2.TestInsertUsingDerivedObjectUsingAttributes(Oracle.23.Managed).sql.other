@@ -1,0 +1,29 @@
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @FirstName Varchar2(21) -- String
+SET     @FirstName = 'test_inherited_insert'
+DECLARE @LastName Varchar2(4) -- String
+SET     @LastName = 'test'
+DECLARE @MiddleName Varchar2(4) -- String
+SET     @MiddleName = 'test'
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'U'
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "Person"
+(
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
+)
+VALUES
+(
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
+)
+RETURNING 
+	"PersonID" INTO :IDENTITY_PARAMETER
+

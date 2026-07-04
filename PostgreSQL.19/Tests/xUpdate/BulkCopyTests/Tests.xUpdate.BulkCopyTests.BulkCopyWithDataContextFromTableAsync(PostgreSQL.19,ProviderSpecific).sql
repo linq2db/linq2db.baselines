@@ -1,0 +1,40 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(1)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(2)
+
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(10)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(20)
+
+INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
+

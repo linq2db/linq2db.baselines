@@ -1,0 +1,7 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	Floor(Extract(hour From (t."DateTimeValue" + 22 * Interval '1 Hour')))::Int
+FROM
+	"LinqDataTypes" t
+

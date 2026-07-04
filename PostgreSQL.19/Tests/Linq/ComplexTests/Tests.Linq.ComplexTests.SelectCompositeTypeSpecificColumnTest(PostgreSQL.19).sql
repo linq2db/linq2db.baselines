@@ -1,0 +1,14 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	u.city
+FROM
+	"User" u
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	u.street
+FROM
+	"User" u
+

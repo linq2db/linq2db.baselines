@@ -1,0 +1,7 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	STRING_AGG(Coalesce(t1."NullableValue", ''), ', ' ORDER BY t1."NotNullableValue" NULLS FIRST)
+FROM
+	"SampleClass" t1
+

@@ -1,0 +1,102 @@
+﻿Parameters:
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
+
+SELECT p."ProductID", p."CategoryID", p."Discontinued", p."IsDeleted", p."ProductName", p."QuantityPerUnit", p."ReorderLevel", p."SupplierID", p."UnitPrice", p."UnitsInStock", p."UnitsOnOrder"
+FROM "Products" AS p
+WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Discontinued")) AND (@ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."ProductName" LIKE '%a%'
+
+
+Parameters:
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
+
+SELECT p."ProductID", p."CategoryID", p."Discontinued", p."IsDeleted", p."ProductName", p."QuantityPerUnit", p."ReorderLevel", p."SupplierID", p."UnitPrice", p."UnitsInStock", p."UnitsOnOrder"
+FROM "Products" AS p
+WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Discontinued")) AND (@ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."ProductName" LIKE '%a%'
+
+
+Parameters:
+@ef_filter__p1='?' (DbType = Boolean), @ef_filter__p5='?' (DbType = Boolean)
+
+SELECT EXISTS (
+    SELECT 1
+    FROM "Products" AS p
+    WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Discontinued")) AND (@ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."ProductName" LIKE '%a%')
+
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	e."IsDeleted",
+	e."ProductID",
+	e."ProductName",
+	e."SupplierID",
+	e."CategoryID",
+	e."QuantityPerUnit",
+	e."UnitPrice",
+	e."UnitsInStock",
+	e."UnitsOnOrder",
+	e."ReorderLevel",
+	e."Discontinued"
+FROM
+	"Products" e
+WHERE
+	e."ProductName" LIKE '%a%' ESCAPE '~'
+
+
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	e."IsDeleted",
+	e."ProductID",
+	e."ProductName",
+	e."SupplierID",
+	e."CategoryID",
+	e."QuantityPerUnit",
+	e."UnitPrice",
+	e."UnitsInStock",
+	e."UnitsOnOrder",
+	e."ReorderLevel",
+	e."Discontinued"
+FROM
+	"Products" e
+WHERE
+	e."ProductName" LIKE '%a%' ESCAPE '~'
+
+
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	e."IsDeleted",
+	e."ProductID",
+	e."ProductName",
+	e."SupplierID",
+	e."CategoryID",
+	e."QuantityPerUnit",
+	e."UnitPrice",
+	e."UnitsInStock",
+	e."UnitsOnOrder",
+	e."ReorderLevel",
+	e."Discontinued"
+FROM
+	"Products" e
+WHERE
+	e."ProductName" LIKE '%a%' ESCAPE '~'
+
+
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Products" e
+		WHERE
+			e."ProductName" LIKE '%a%' ESCAPE '~'
+	)
+
+
+

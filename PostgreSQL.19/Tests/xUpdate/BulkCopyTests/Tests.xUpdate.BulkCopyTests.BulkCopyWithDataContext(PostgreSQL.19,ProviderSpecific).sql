@@ -1,0 +1,2 @@
+﻿INSERT BULK "SimpleBulkCopyTable"(Id)
+

@@ -1,0 +1,10 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value3" DESC NULLS FIRST, g_1."Value1" NULLS FIRST)
+FROM
+	"SampleClass" g_1
+GROUP BY
+	g_1."Id",
+	g_1."Value1"
+
