@@ -1,0 +1,20 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	p."ParentID",
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" IN (1, 2)
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	p."ParentID",
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	p."ParentID" IN (1, 2, 4)
+

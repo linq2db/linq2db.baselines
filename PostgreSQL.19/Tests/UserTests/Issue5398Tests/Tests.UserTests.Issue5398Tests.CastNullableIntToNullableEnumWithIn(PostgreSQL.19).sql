@@ -1,0 +1,9 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	i."Id"
+FROM
+	"TestEnumTable" i
+WHERE
+	i."Value" IN (1)
+

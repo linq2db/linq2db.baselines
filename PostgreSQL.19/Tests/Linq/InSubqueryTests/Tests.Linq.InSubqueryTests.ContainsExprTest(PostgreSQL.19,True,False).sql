@@ -1,0 +1,35 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+DECLARE @n Integer -- Int32
+SET     @n = 1
+
+SELECT
+	p."ParentID",
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_1
+		WHERE
+			p."ParentID" + :n = c_1."ParentID"
+	)
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+
+-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+

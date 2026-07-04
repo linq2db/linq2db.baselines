@@ -1,0 +1,10 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	r."Id",
+	r."Json"
+FROM
+	"Issue2431Table" r
+WHERE
+	r."Json"::json #>> '{json, text}' = 'test'
+

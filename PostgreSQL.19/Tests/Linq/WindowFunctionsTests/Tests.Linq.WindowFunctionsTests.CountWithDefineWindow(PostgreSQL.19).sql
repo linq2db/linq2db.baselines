@@ -1,0 +1,7 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+SELECT
+	COUNT(*) OVER (PARTITION BY t."CategoryId" ORDER BY t."Id")
+FROM
+	"WindowFunctionTestEntity" t
+

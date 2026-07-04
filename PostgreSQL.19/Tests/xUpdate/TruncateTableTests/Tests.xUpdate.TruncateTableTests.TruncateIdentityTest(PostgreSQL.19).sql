@@ -1,0 +1,92 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+
+DROP TABLE IF EXISTS "TestIdTrun"
+
+-- PostgreSQL.19 PostgreSQL13
+
+CREATE TABLE "TestIdTrun"
+(
+	"ID"     SERIAL   NOT NULL,
+	"Field1" decimal  NOT NULL,
+
+	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY ("ID")
+)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+-- PostgreSQL.19 PostgreSQL13
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+
+SELECT
+	t1."ID",
+	t1."Field1"
+FROM
+	"TestIdTrun" t1
+ORDER BY
+	t1."ID"
+LIMIT 2 OFFSET :skip 
+
+-- PostgreSQL.19 PostgreSQL13
+
+TRUNCATE TABLE "TestIdTrun" RESTART IDENTITY
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+-- PostgreSQL.19 PostgreSQL13
+
+INSERT INTO "TestIdTrun"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+-- PostgreSQL.19 PostgreSQL13
+DECLARE @skip Integer -- Int32
+SET     @skip = 1
+
+SELECT
+	t1."ID",
+	t1."Field1"
+FROM
+	"TestIdTrun" t1
+ORDER BY
+	t1."ID"
+LIMIT 2 OFFSET :skip 
+
+-- PostgreSQL.19 PostgreSQL13
+
+DROP TABLE "TestIdTrun"
+

@@ -1,0 +1,26 @@
+﻿-- PostgreSQL.19 PostgreSQL13
+DECLARE @Value Numeric(1, 0) -- Decimal
+SET     @Value = 1
+
+SELECT
+	arg."Id",
+	arg."Value"
+FROM
+	"Person" entity
+		INNER JOIN (VALUES
+			(1,:Value)
+		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
+
+-- PostgreSQL.19 PostgreSQL13
+DECLARE @Value Numeric(10, 0) -- Decimal
+SET     @Value = 2147483648
+
+SELECT
+	arg."Id",
+	arg."Value"
+FROM
+	"Person" entity
+		INNER JOIN (VALUES
+			(1,:Value)
+		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
+
