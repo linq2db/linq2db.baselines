@@ -16,7 +16,7 @@ FROM
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	i."Id" as "Value_1"
+	i."Id"
 FROM
 	"Tender" i
 FETCH NEXT 1 ROWS ONLY
