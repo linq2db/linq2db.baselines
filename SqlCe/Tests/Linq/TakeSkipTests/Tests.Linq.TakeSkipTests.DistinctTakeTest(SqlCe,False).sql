@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT DISTINCT TOP (3)
-	[r].[Value] as [Value_1]
+	[r].[Value]
 FROM
 	[TakeSkipClass] [r]
 

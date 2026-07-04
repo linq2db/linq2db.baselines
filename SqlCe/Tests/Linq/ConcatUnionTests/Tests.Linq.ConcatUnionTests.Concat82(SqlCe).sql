@@ -8,7 +8,7 @@ FROM
 UNION ALL
 SELECT
 	[c_2].[ParentID],
-	[c_2].[ParentID] as [ChildID]
+	[c_2].[ParentID]
 FROM
 	[Parent] [c_2]
 

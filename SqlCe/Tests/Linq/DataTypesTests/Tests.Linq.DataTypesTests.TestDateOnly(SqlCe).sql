@@ -6,7 +6,7 @@ SET     @ColumnNullable = '2020-01-01 00:00:00.000'
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
@@ -17,7 +17,7 @@ WHERE
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[DateOnlyTable] [r]
@@ -75,7 +75,7 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
@@ -102,7 +102,7 @@ SELECT 2,'2020-02-29','2020-01-01'
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]
@@ -129,7 +129,7 @@ SELECT 2,'2020-02-29','2020-01-01'
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[DateOnlyTable] [t1]

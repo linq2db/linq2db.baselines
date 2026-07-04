@@ -8,7 +8,7 @@ SELECT
 	[t].[MiddleName],
 	[t].[Gender],
 	[t].[FullName],
-	[t].[FullName] as [AsSqlFullName],
+	[t].[FullName],
 	[t].[DoctorCount]
 FROM
 	(

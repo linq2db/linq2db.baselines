@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	MIN([gr].[ParentID]) as [Min_1],
-	MAX([gr].[ParentID]) as [Max_1]
+	MIN([gr].[ParentID]),
+	MAX([gr].[ParentID])
 FROM
 	[Parent] [gr]
 

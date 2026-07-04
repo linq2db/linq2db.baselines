@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -10,7 +10,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -19,7 +19,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -28,7 +28,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
@@ -37,7 +37,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE

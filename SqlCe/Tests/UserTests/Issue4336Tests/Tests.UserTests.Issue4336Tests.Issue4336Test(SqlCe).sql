@@ -8,10 +8,10 @@ SELECT TOP (@take)
 	[r].[CategoryId],
 	[r].[MaxCapacity],
 	[r].[Quantity],
-	[r].[MaxCapacity] - [r].[Quantity] as [FreeCapacity],
-	COALESCE([vpcc].[PeriodOrderLimit],0) as [MaxCapacity_1],
-	[vsopc].[Quantity] as [Quantity_1],
-	COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity] as [FreeCapacity_1]
+	[r].[MaxCapacity] - [r].[Quantity],
+	COALESCE([vpcc].[PeriodOrderLimit],0),
+	[vsopc].[Quantity],
+	COALESCE([vpcc].[PeriodOrderLimit],0) - [vsopc].[Quantity]
 FROM
 	(
 		SELECT

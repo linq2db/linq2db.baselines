@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [Total],
+	SUM([grp_1].[MoneyValue]),
 	[grp_1].[Year_1],
 	[grp_1].[Month_1]
 FROM

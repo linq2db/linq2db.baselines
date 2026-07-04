@@ -2,7 +2,7 @@
 
 SELECT
 	[a_Patient].[Diagnosis],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]

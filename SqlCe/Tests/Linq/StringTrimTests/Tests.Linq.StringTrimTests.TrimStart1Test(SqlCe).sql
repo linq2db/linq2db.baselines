@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	'...' + Coalesce([t].[VarCharColumn], '') as [c1]
+	'...' + Coalesce([t].[VarCharColumn], '')
 FROM
 	[StringTrimTable] [t]
 

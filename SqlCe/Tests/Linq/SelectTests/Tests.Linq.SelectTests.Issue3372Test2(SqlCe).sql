@@ -6,7 +6,7 @@ SELECT
 		WHEN [a_Person].[PersonID] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL
 			THEN 1
 		ELSE 0
-	END as [c1],
+	END,
 	[a_Person].[MiddleName]
 FROM
 	[Person] [e]

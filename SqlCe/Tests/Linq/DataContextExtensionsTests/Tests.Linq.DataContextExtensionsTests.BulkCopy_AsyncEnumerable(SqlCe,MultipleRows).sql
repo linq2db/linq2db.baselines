@@ -12,7 +12,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -37,7 +37,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -62,7 +62,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -87,7 +87,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -112,7 +112,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -137,7 +137,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -162,7 +162,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -187,7 +187,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -212,7 +212,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -237,7 +237,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -262,7 +262,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -287,7 +287,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -312,7 +312,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -337,7 +337,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -362,7 +362,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -387,7 +387,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -412,7 +412,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY
@@ -437,7 +437,7 @@ SELECT 2,20
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[BulkCopyTable] [t1]
 ORDER BY

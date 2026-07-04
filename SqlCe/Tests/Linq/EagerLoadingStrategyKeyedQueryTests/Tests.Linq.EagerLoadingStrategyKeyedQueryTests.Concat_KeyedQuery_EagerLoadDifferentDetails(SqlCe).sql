@@ -7,7 +7,7 @@ SELECT
 	CASE
 		WHEN [t1].[Kind] = 'Active' THEN 1
 		ELSE 0
-	END as [c1]
+	END
 FROM
 	(
 		SELECT

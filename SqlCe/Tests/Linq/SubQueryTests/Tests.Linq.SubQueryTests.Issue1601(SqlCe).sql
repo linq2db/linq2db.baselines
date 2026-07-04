@@ -4,8 +4,8 @@ SELECT
 	CASE
 		WHEN [t3].[x] < 0 THEN 9
 		ELSE [t3].[x] + 8
-	END as [Y1],
-	[t3].[x] + [t3].[x] as [Y2]
+	END,
+	[t3].[x] + [t3].[x]
 FROM
 	(
 		SELECT

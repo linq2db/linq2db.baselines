@@ -53,7 +53,7 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[d].[Id],
 	[d].[CustomInvoiceId]
 FROM
 	(
@@ -101,7 +101,7 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[d].[Id],
 	[d].[CustomInvoiceId]
 FROM
 	(

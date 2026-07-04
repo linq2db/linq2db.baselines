@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	MAX([t1].[PersonID]) as [Max_1]
+	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 

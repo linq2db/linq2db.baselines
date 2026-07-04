@@ -4,7 +4,7 @@ SET     @n = 1
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(

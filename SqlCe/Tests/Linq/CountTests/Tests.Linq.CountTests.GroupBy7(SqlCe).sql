@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [ID1],
-	MAX([g_1].[ChildID]) as [ID2]
+	COUNT(*),
+	MAX([g_1].[ChildID])
 FROM
 	[Child] [g_1]
 GROUP BY

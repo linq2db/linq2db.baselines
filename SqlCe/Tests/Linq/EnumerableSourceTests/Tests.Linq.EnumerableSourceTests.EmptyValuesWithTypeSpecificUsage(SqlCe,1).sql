@@ -2,7 +2,7 @@
 
 SELECT
 	[g_1].[Id],
-	SUM([g_1].[Id]) as [Count_1]
+	SUM([g_1].[Id])
 FROM
 	(SELECT CAST(NULL AS Int) [Id] WHERE 1 = 0) [g_1]
 GROUP BY

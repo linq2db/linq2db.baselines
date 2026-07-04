@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	Coalesce([t2].[Sum_1], 0) as [Sum_1]
+	Coalesce([t2].[Sum_1], 0)
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -22,7 +22,7 @@ FROM
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(

@@ -3,7 +3,7 @@
 SELECT DISTINCT
 	[a_Ref4].[Field6],
 	[a_Ref3].[Field4],
-	Coalesce([a_Ref5].[Field8], '') as [Field1]
+	Coalesce([a_Ref5].[Field8], '')
 FROM
 	[Table1] [t1]
 		INNER JOIN [Table3] [a_Ref1] ON [t1].[Field1] = [a_Ref1].[Field1]
@@ -19,7 +19,7 @@ WHERE
 SELECT
 	[g_2].[Field6],
 	[g_2].[Field4],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT

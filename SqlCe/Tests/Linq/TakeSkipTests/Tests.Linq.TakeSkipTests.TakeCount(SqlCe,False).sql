@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT TOP (5)

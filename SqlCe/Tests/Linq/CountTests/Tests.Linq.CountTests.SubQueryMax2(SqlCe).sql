@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	MAX([t1].[Count_1]) as [Max_1]
+	MAX([t1].[Count_1])
 FROM
 	[Parent] [t2]
 		OUTER APPLY (

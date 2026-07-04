@@ -6,7 +6,7 @@ SELECT
 	CASE
 		WHEN [t1].[FirstName] = 'ddd' THEN [y].[FirstName]
 		ELSE [t1].[FirstName]
-	END as [FirstName]
+	END
 FROM
 	(
 		SELECT

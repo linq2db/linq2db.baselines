@@ -14,7 +14,7 @@ SELECT
 			WHEN [p].[ParentID] < 5 THEN 1
 			ELSE 0
 		END
-	END as [Value_1]
+	END
 FROM
 	[Parent] [p]
 
@@ -22,7 +22,7 @@ FROM
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(

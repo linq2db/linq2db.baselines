@@ -26,7 +26,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -53,7 +53,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

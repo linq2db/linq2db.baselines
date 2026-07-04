@@ -3,7 +3,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 SELECT
-	1 as [c1]
+	1
 FROM
 	[UpsertTest] [t1]
 WHERE
@@ -14,7 +14,7 @@ WHERE
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
-	[r].[Version] as [Version_1],
+	[r].[Version],
 	[r].[CreatedAt],
 	[r].[CreatedBy],
 	[r].[UpdatedAt],

@@ -5,7 +5,7 @@ DECLARE @p Int -- Int32
 SET     @p = 15
 
 SELECT
-	[c_1].[value] as [Value_1],
+	[c_1].[value],
 	[c_1].[id]
 FROM
 	(
@@ -23,7 +23,7 @@ DECLARE @endId Int -- Int32
 SET     @endId = 15
 
 SELECT
-	[t].[value] as [Value_1],
+	[t].[value],
 	[t].[id]
 FROM
 	[sample_class] [t]

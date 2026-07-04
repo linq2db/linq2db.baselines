@@ -2,7 +2,7 @@
 
 SELECT
 	[tt].[Key_1],
-	SUM([tt].[ChildID]) as [Sum_1]
+	SUM([tt].[ChildID])
 FROM
 	(
 		SELECT

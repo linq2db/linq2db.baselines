@@ -5,8 +5,8 @@ SELECT
 	CASE
 		WHEN [doSap].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
-	END as [StatusValor],
-	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]
+	END,
+	CAST('Manual/Externo' AS NVarChar(255))
 FROM
 	[O1] [doSap]
 UNION
@@ -15,8 +15,8 @@ SELECT
 	CASE
 		WHEN [doSap_1].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
-	END as [StatusValor],
-	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]
+	END,
+	CAST('Manual/Externo' AS NVarChar(255))
 FROM
 	[O2] [doSap_1]
 UNION
@@ -25,8 +25,8 @@ SELECT
 	CASE
 		WHEN [doSap_2].[DocStatus] = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
-	END as [StatusValor],
-	CAST('Manual/Externo' AS NVarChar(255)) as [DescricaoStatus]
+	END,
+	CAST('Manual/Externo' AS NVarChar(255))
 FROM
 	[O3] [doSap_2]
 

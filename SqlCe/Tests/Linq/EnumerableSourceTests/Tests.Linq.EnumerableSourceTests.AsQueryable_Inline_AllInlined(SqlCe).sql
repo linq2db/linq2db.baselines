@@ -2,7 +2,7 @@
 
 SELECT
 	[t1].[Id],
-	[t1].[Data] as [Data_1]
+	[t1].[Data]
 FROM
 	(
 		SELECT 0 AS [Id], 'Data 0' AS [Data]

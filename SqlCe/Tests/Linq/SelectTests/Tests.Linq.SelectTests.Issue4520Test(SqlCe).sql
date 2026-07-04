@@ -5,7 +5,7 @@ SELECT
 		WHEN ([i].[BoolValue] IS NULL OR [i].[BoolValue] = 0) AND ([i].[IntValue] = [t1].[IntValue] OR [i].[IntValue] IS NULL AND [t1].[IntValue] IS NULL)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 FROM
 	[LinqDataTypes] [i]
 		LEFT JOIN (

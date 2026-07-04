@@ -20,7 +20,7 @@ INSERT INTO [TableWithIdentity]
 	[Value]
 )
 SELECT
-	[t1].[Value] + @addition as [c1]
+	[t1].[Value] + @addition
 FROM
 	[TableWithIdentitySrc] [t1]
 
@@ -28,7 +28,7 @@ FROM
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TableWithIdentity] [t1]
 

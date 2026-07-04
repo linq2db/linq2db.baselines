@@ -18,7 +18,7 @@ SELECT
 	[d].[Id],
 	[d].[ParentRegion],
 	[d].[ParentCode],
-	[d].[Value] as [Value_1]
+	[d].[Value]
 FROM
 	(
 		SELECT 1 AS [Item1], 10 AS [Item2]

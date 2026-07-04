@@ -9,7 +9,7 @@ SELECT
 	[t3].[RPDestinationID],
 	[t3].[RPOrigDestinationID],
 	[t3].[OutfeedTransportOrderID],
-	[res_1].[Id] as [Id_1]
+	[res_1].[Id]
 FROM
 	(
 		SELECT

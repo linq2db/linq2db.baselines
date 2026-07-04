@@ -6,7 +6,7 @@ SELECT TOP (1)
 		WHEN [t].[EnumValue] = 'S' THEN 'Second'
 		WHEN [t].[EnumValue] = 'T' THEN 'Third'
 		ELSE [t].[EnumValue]
-	END as [c1]
+	END
 FROM
 	[MapValueTable] [t]
 

@@ -7,7 +7,7 @@ SELECT
 	[cp].[Street_Number],
 	[cp].[Street_Name],
 	[c_1].[City_Name],
-	[cp].[State] as [State_1],
+	[cp].[State],
 	[cp].[Zip_Code],
 	[cp].[Zip_Plus_4],
 	[cd].[Effective_Date]

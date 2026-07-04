@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value1] + [t].[Value2] + [t].[Value3] as [c1]
+	[t].[Value1] + [t].[Value2] + [t].[Value3]
 FROM
 	[StringConcatThreeNullEntity] [t]
 ORDER BY

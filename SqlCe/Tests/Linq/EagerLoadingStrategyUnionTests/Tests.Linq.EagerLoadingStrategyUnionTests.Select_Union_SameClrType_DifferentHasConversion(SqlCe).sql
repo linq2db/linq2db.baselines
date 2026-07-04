@@ -10,10 +10,10 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[DepartmentId],
-	[d].[Value] as [Value_1]
+	[d].[Value]
 FROM
 	(
 		SELECT 101 AS [item]
@@ -28,10 +28,10 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[DepartmentId],
-	[d].[Value] as [Value_1]
+	[d].[Value]
 FROM
 	(
 		SELECT 101 AS [item]

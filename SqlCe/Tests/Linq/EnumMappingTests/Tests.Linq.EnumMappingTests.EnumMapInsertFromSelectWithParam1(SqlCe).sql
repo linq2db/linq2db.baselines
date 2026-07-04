@@ -30,8 +30,8 @@ INSERT INTO [LinqDataTypes]
 	[BigIntValue]
 )
 SELECT
-	[r].[ID] + 1 as [c1],
-	@param as [c2]
+	[r].[ID] + 1,
+	@param
 FROM
 	[LinqDataTypes] [r]
 WHERE
@@ -40,7 +40,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE

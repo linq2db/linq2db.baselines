@@ -9,8 +9,8 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[PersonID],
-	[p_1].[LastName] as [FirstName],
-	[p_1].[FirstName] as [LastName]
+	[p_1].[LastName],
+	[p_1].[FirstName]
 FROM
 	[Person] [p_1]
 

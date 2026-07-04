@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	DateAdd(second, [t].[SmallIntValue], [t].[DateTimeValue]) as [c1]
+	DateAdd(second, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

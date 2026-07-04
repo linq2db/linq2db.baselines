@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id] as [Id_2],
+	[d_1].[Id],
 	[d_1].[FK]
 FROM
 	(

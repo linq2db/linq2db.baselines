@@ -2,7 +2,7 @@
 
 SELECT
 	[t_1].[Id],
-	[t_1].[Value] as [Value_1],
+	[t_1].[Value],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM

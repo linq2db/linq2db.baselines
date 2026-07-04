@@ -12,7 +12,7 @@ DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -23,7 +23,7 @@ DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

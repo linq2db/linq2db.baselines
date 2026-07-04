@@ -4,7 +4,7 @@ SELECT
 	[g_1].[isValueAvailable],
 	[g_1].[ParentID],
 	[g_1].[Value_1],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT

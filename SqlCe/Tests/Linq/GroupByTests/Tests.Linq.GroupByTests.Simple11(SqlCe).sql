@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
-	[d].[ChildID] as [ChildID_1]
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
@@ -17,7 +17,7 @@ FROM
 -- SqlCe
 
 SELECT DISTINCT
-	[t1].[ParentID] + 1 as [ParentID],
+	[t1].[ParentID] + 1,
 	[t1].[ChildID]
 FROM
 	[GrandChild] [t1]

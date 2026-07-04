@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	CAST([p].[MoneyValue] AS Float) as [c1]
+	CAST([p].[MoneyValue] AS Float)
 FROM
 	[LinqDataTypes] [p]
 WHERE

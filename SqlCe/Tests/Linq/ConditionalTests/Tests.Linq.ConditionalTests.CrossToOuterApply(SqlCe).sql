@@ -2,10 +2,10 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[ParentID] as [ParentID_1],
+	[t1].[ParentID],
 	[t1].[ChildID],
-	[t2].[ParentID] as [ParentID_2],
-	[t2].[ChildID] as [ChildID_1]
+	[t2].[ParentID],
+	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -35,7 +35,7 @@ FROM
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(

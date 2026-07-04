@@ -2,7 +2,7 @@
 
 SELECT
 	[pp].[PersonID],
-	'  ' + [pp].[FirstName] + ' ' as [Name]
+	'  ' + [pp].[FirstName] + ' '
 FROM
 	[Person] [pp]
 WHERE

@@ -2,7 +2,7 @@
 
 SELECT
 	[source_2].[Id],
-	[year_1].[Year] as [Year_1],
+	[year_1].[Year],
 	[year_1].[StartDate],
 	[year_1].[EndDate]
 FROM

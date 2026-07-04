@@ -2,7 +2,7 @@
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[Value1]
 FROM
 	(

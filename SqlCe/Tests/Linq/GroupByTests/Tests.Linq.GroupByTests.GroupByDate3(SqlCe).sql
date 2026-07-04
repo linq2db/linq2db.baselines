@@ -1,9 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [Total],
-	DatePart(year, [grp_1].[c1]) as [Year_1],
-	DatePart(month, [grp_1].[c1]) as [Month_1]
+	SUM([grp_1].[MoneyValue]),
+	DatePart(year, [grp_1].[c1]),
+	DatePart(month, [grp_1].[c1])
 FROM
 	(
 		SELECT
@@ -18,9 +18,9 @@ GROUP BY
 -- SqlCe
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [Total],
-	DatePart(year, [grp_1].[c1]) as [Year_1],
-	DatePart(month, [grp_1].[c1]) as [Month_1]
+	SUM([grp_1].[MoneyValue]),
+	DatePart(year, [grp_1].[c1]),
+	DatePart(month, [grp_1].[c1])
 FROM
 	(
 		SELECT

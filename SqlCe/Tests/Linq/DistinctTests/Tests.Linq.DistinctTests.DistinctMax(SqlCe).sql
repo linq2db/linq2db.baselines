@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	MAX([t1].[ParentID]) as [Max_1]
+	MAX([t1].[ParentID])
 FROM
 	(
 		SELECT DISTINCT

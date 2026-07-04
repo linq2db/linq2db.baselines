@@ -4,7 +4,7 @@ SET     @take = 10
 
 SELECT
 	[c_2].[Id],
-	[o].[Id] as [OrderId_1]
+	[o].[Id]
 FROM
 	(
 		SELECT TOP (@take)

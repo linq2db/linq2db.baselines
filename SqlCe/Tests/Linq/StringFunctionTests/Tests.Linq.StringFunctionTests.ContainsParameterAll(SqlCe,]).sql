@@ -5,7 +5,7 @@ DECLARE @toTest NVarChar(3) -- String
 SET     @toTest = '%]%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

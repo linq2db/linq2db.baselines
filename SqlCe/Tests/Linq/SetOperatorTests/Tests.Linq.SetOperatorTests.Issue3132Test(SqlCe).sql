@@ -2,7 +2,7 @@
 
 SELECT
 	[x].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x]
 WHERE
@@ -12,7 +12,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_1].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_1]
 WHERE
@@ -22,7 +22,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_2].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_2]
 WHERE
@@ -32,7 +32,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_3].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_3]
 WHERE
@@ -42,7 +42,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_4].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_4]
 WHERE
@@ -52,7 +52,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_5].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_5]
 WHERE
@@ -62,7 +62,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_6].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_6]
 WHERE
@@ -72,7 +72,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_7].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_7]
 WHERE
@@ -82,7 +82,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_8].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_8]
 WHERE
@@ -92,7 +92,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_9].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_9]
 WHERE
@@ -102,7 +102,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_10].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_10]
 WHERE
@@ -112,7 +112,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_11].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_11]
 WHERE
@@ -122,7 +122,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_12].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_12]
 WHERE
@@ -132,7 +132,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_13].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_13]
 WHERE
@@ -142,7 +142,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_14].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_14]
 WHERE
@@ -152,7 +152,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_15].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_15]
 WHERE
@@ -162,7 +162,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_16].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_16]
 WHERE
@@ -172,7 +172,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_17].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_17]
 WHERE
@@ -182,7 +182,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_18].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_18]
 WHERE
@@ -192,7 +192,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_19].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_19]
 WHERE
@@ -202,7 +202,7 @@ GROUP BY
 UNION ALL
 SELECT
 	[x_20].[MiddleName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [x_20]
 WHERE

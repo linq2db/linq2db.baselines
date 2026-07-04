@@ -2,8 +2,8 @@
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1],
-	[s].[c1] as [s]
+	[t].[Value],
+	[s].[c1]
 FROM
 	[SampleClass] [t]
 		INNER JOIN (

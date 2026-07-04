@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN [s].[Int] = 2 THEN NULL
 		ELSE [s].[Int]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -13,7 +13,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -22,7 +22,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -34,7 +34,7 @@ SELECT
 	CASE
 		WHEN [s].[Int] = 4 THEN NULL
 		ELSE [s].[Int]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -43,7 +43,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -52,7 +52,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -61,7 +61,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	[s].[Int] as [Int_1]
+	[s].[Int]
 FROM
 	[Src] [s]
 ORDER BY
@@ -70,7 +70,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -79,7 +79,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 
@@ -89,7 +89,7 @@ SELECT
 	CASE
 		WHEN [s].[NullableInt] = 2 THEN NULL
 		ELSE [s].[NullableInt]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -98,7 +98,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -107,7 +107,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -119,7 +119,7 @@ SELECT
 	CASE
 		WHEN [s].[NullableInt] = 4 THEN NULL
 		ELSE [s].[NullableInt]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -128,7 +128,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -137,7 +137,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -155,7 +155,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -164,7 +164,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

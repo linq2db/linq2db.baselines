@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [count_1]
+	COUNT(*)
 FROM
 	[Child] [c_1]
 GROUP BY

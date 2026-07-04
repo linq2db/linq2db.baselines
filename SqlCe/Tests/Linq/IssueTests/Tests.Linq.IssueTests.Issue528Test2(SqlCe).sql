@@ -20,7 +20,7 @@ FROM
 
 SELECT
 	[t2].[Key_1],
-	[t2].[Key_1] as [Key_2]
+	[t2].[Key_1]
 FROM
 	(
 		SELECT DISTINCT

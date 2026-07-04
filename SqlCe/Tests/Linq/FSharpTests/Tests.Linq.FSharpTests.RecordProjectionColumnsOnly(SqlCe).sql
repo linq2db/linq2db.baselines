@@ -4,7 +4,7 @@ SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
-	'ибн Алёша' as [Item4]
+	'ибн Алёша'
 FROM
 	[Person] [p]
 WHERE

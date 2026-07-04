@@ -20,8 +20,8 @@ ORDER BY
 
 SELECT
 	[t1].[Id],
-	[t1].[Key] as [Key_1],
-	[t1].[Value] as [Value_1]
+	[t1].[Key],
+	[t1].[Value]
 FROM
 	[Issue5327Table] [t1]
 

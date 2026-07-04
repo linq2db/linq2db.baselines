@@ -2,7 +2,7 @@
 
 SELECT
 	[g_2].[Key_1],
-	SUM([g_2].[c1]) as [Sum_1]
+	SUM([g_2].[c1])
 FROM
 	(
 		SELECT

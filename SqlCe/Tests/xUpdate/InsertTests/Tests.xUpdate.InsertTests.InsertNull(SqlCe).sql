@@ -18,7 +18,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

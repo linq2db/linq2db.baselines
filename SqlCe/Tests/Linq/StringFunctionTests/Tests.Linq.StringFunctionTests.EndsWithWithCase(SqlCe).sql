@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -11,7 +11,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -21,7 +21,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -31,7 +31,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE

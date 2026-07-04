@@ -6,8 +6,8 @@ SELECT
 	[t2].[LastName],
 	[t2].[MiddleName],
 	[t2].[Gender],
-	[t2].[LastName] + ', ' + [t2].[FirstName] as [FullName],
-	[t2].[LastName] + ', ' + [t2].[FirstName] as [AsSqlFullName],
+	[t2].[LastName] + ', ' + [t2].[FirstName],
+	[t2].[LastName] + ', ' + [t2].[FirstName],
 	[t1].[DoctorCount]
 FROM
 	[Person] [t2]
@@ -29,7 +29,7 @@ SELECT
 	[i_1].[MiddleName],
 	[i_1].[Gender],
 	[i_1].[FullName],
-	[i_1].[FullName] as [AsSqlFullName],
+	[i_1].[FullName],
 	[i_1].[DoctorCount]
 FROM
 	(

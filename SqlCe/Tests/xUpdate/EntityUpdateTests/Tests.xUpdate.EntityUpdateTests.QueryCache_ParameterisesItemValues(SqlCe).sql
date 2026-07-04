@@ -47,7 +47,7 @@ WHERE
 SELECT
 	[t1].[Id],
 	[t1].[Name],
-	[t1].[Version] as [Version_1],
+	[t1].[Version],
 	[t1].[UpdatedAt],
 	[t1].[UpdatedBy]
 FROM

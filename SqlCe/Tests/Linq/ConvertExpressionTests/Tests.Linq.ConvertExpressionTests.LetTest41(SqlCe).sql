@@ -12,12 +12,12 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [Any_1],
+	END,
 	[t1].[Count_1],
 	[t2].[ParentID],
 	[t2].[ChildID],
-	[t3].[ParentID] as [ParentID_1],
-	[t3].[ChildID] as [ChildID_1]
+	[t3].[ParentID],
+	[t3].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (

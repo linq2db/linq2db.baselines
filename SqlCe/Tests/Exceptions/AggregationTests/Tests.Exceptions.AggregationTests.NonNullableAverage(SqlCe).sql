@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	AVG([t1].[ParentID]) as [Average]
+	AVG([t1].[ParentID])
 FROM
 	[Parent] [t1]
 WHERE

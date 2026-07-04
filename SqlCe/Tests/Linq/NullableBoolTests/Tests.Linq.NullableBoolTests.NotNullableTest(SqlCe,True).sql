@@ -2,7 +2,7 @@
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -12,7 +12,7 @@ WHERE
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -22,7 +22,7 @@ WHERE
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -32,7 +32,7 @@ WHERE
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -42,7 +42,7 @@ WHERE
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE
@@ -52,7 +52,7 @@ WHERE
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
 WHERE

@@ -1,13 +1,13 @@
 ﻿-- SqlCe
 
 SELECT
-	CAST('First' AS NVarChar(255)) as [Label],
+	CAST('First' AS NVarChar(255)),
 	[c_1].[Id]
 FROM
 	[Company] [c_1]
 UNION ALL
 SELECT
-	CAST('Second' AS NVarChar(255)) as [Label],
+	CAST('Second' AS NVarChar(255)),
 	[c_2].[Id]
 FROM
 	[Company] [c_2]
@@ -28,7 +28,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[DepartmentId],
 	[d].[Name],

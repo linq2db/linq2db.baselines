@@ -4,23 +4,23 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[ChildID] > 30 THEN 1
 		ELSE NULL
-	END) as [Cnt],
+	END),
 	SUM(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [Sum_1],
+	END),
 	MIN(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [Min_1],
+	END),
 	MAX(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [Max_1],
+	END),
 	AVG(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [Avg_1]
+	END)
 FROM
 	[Child] [g_1]
 WHERE

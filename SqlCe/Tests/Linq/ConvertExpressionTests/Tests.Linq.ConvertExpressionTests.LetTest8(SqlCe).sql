@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN [t1].[ParentID] IS NULL THEN 0
 		ELSE [t1].[ParentID]
-	END as [First1],
+	END,
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -16,7 +16,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [Any_1],
+	END,
 	[t2].[Count_1],
 	[t3].[ParentID],
 	[t3].[ChildID]

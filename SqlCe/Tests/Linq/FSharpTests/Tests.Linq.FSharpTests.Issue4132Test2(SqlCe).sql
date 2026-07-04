@@ -26,7 +26,7 @@ WHERE
 
 SELECT TOP (2)
 	[r].[Id],
-	[r].[Number] as [Number_1],
+	[r].[Number],
 	[r].[Text]
 FROM
 	[Issue4132Table] [r]

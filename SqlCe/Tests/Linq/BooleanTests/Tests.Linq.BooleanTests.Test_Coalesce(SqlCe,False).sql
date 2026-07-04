@@ -4,13 +4,13 @@ SET     @True = 1
 
 SELECT
 	[r].[Id],
-	[r].[Boolean] as [Boolean_1],
+	[r].[Boolean],
 	[r].[BooleanN],
 	[r].[Int32],
 	[r].[Int32N],
-	[r].[Decimal] as [Decimal_1],
+	[r].[Decimal],
 	[r].[DecimalN],
-	[r].[Double] as [Double_1],
+	[r].[Double],
 	[r].[DoubleN]
 FROM
 	[BooleanTable] [r]
@@ -21,13 +21,13 @@ WHERE
 
 SELECT
 	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1],
+	[t1].[Boolean],
 	[t1].[BooleanN],
 	[t1].[Int32],
 	[t1].[Int32N],
-	[t1].[Decimal] as [Decimal_1],
+	[t1].[Decimal],
 	[t1].[DecimalN],
-	[t1].[Double] as [Double_1],
+	[t1].[Double],
 	[t1].[DoubleN]
 FROM
 	[BooleanTable] [t1]
@@ -38,13 +38,13 @@ SET     @False = 0
 
 SELECT
 	[r].[Id],
-	[r].[Boolean] as [Boolean_1],
+	[r].[Boolean],
 	[r].[BooleanN],
 	[r].[Int32],
 	[r].[Int32N],
-	[r].[Decimal] as [Decimal_1],
+	[r].[Decimal],
 	[r].[DecimalN],
-	[r].[Double] as [Double_1],
+	[r].[Double],
 	[r].[DoubleN]
 FROM
 	[BooleanTable] [r]
@@ -55,13 +55,13 @@ WHERE
 
 SELECT
 	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1],
+	[t1].[Boolean],
 	[t1].[BooleanN],
 	[t1].[Int32],
 	[t1].[Int32N],
-	[t1].[Decimal] as [Decimal_1],
+	[t1].[Decimal],
 	[t1].[DecimalN],
-	[t1].[Double] as [Double_1],
+	[t1].[Double],
 	[t1].[DoubleN]
 FROM
 	[BooleanTable] [t1]
@@ -70,13 +70,13 @@ FROM
 
 SELECT
 	[r].[Id],
-	[r].[Boolean] as [Boolean_1],
+	[r].[Boolean],
 	[r].[BooleanN],
 	[r].[Int32],
 	[r].[Int32N],
-	[r].[Decimal] as [Decimal_1],
+	[r].[Decimal],
 	[r].[DecimalN],
-	[r].[Double] as [Double_1],
+	[r].[Double],
 	[r].[DoubleN]
 FROM
 	[BooleanTable] [r]
@@ -90,13 +90,13 @@ WHERE
 
 SELECT
 	[t1].[Id],
-	[t1].[Boolean] as [Boolean_1],
+	[t1].[Boolean],
 	[t1].[BooleanN],
 	[t1].[Int32],
 	[t1].[Int32N],
-	[t1].[Decimal] as [Decimal_1],
+	[t1].[Decimal],
 	[t1].[DecimalN],
-	[t1].[Double] as [Double_1],
+	[t1].[Double],
 	[t1].[DoubleN]
 FROM
 	[BooleanTable] [t1]

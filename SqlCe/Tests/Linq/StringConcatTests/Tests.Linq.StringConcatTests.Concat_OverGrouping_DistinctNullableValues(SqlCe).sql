@@ -36,7 +36,7 @@ ORDER BY
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[ConcatGroupedEntity] [t1]
 

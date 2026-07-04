@@ -24,7 +24,7 @@ FROM
 
 SELECT
 	[item_1].[Name],
-	[t1].[Name] as [Name_1],
+	[t1].[Name],
 	[t1].[Id]
 FROM
 	[Test3799Item] [item_1]

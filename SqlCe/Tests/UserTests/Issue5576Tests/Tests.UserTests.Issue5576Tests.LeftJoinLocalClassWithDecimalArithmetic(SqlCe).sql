@@ -53,11 +53,11 @@ VALUES
 
 SELECT
 	[r].[Guid],
-	[lc].[Count] as [Count_1],
+	[lc].[Count],
 	CASE
 		WHEN [lc].[Count] IS NOT NULL THEN (CAST([lc].[Count] AS Decimal(18, 10)) / [r].[Sold]) * 100
 		ELSE NULL
-	END as [Rate]
+	END
 FROM
 	[Campaign] [r]
 		LEFT JOIN (

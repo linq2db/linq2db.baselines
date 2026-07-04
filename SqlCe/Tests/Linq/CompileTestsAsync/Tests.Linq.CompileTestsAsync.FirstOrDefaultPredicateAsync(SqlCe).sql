@@ -3,8 +3,8 @@ DECLARE @p Int -- Int32
 SET     @p = 2
 
 SELECT TOP (1)
-	@p as [Id],
-	[c_1].[Id] as [Id_1]
+	@p,
+	[c_1].[Id]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

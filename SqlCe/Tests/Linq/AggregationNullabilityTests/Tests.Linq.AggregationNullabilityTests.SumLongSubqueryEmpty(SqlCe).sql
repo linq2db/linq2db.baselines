@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (1)
-	1000 - Coalesce([t1].[Sum_1], 0) as [c1]
+	1000 - Coalesce([t1].[Sum_1], 0)
 FROM
 	[Outer] [o]
 		OUTER APPLY (

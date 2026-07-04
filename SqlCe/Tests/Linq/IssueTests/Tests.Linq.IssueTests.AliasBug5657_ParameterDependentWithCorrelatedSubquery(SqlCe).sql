@@ -75,7 +75,7 @@ SET     @minValue = 15
 
 SELECT
 	[o].[Id],
-	[o].[Value] as [Value_1],
+	[o].[Value],
 	[t1].[InnerCount]
 FROM
 	[IssueAliasBugT1] [o]

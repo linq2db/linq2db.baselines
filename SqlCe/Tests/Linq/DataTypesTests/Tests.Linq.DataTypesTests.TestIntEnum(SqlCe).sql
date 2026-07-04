@@ -6,7 +6,7 @@ SET     @ColumnNullable = 3
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -17,7 +17,7 @@ WHERE
 
 SELECT
 	[r].[Id],
-	[r].[Column] as [Column_1],
+	[r].[Column],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -75,7 +75,7 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -102,7 +102,7 @@ SELECT 2,2,3
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -129,7 +129,7 @@ SELECT 2,2,3
 
 SELECT
 	[t1].[Id],
-	[t1].[Column] as [Column_1],
+	[t1].[Column],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]

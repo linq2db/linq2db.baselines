@@ -2,7 +2,7 @@
 
 SELECT
 	[i].[Id],
-	Coalesce([t1].[Reason], '') as [Reason]
+	Coalesce([t1].[Reason], '')
 FROM
 	[Data] [i]
 		LEFT JOIN [SubData1] [a_SubData] ON [i].[Id] = [a_SubData].[Id]

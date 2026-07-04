@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[PersonID],
-	'123' + [p].[FirstName] + '456' as [FirstName]
+	'123' + [p].[FirstName] + '456'
 FROM
 	[Person] [p]
 WHERE

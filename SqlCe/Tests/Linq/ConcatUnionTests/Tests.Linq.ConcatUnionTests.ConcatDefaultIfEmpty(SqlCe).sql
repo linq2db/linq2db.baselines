@@ -1,9 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	CAST(0 AS Int) as [projection__set_id__],
+	CAST(0 AS Int),
 	[t1].[ParentID],
-	[t1].[ParentID] as [ParentID_1],
+	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
 	[Parent] [p]
@@ -20,10 +20,10 @@ WHERE
 	[p].[ParentID] = 1
 UNION ALL
 SELECT
-	CAST(1 AS Int) as [projection__set_id__],
-	NULL as [ParentID],
-	NULL as [ParentID_1],
-	NULL as [ChildID]
+	CAST(1 AS Int),
+	NULL,
+	NULL,
+	NULL
 FROM
 	[Parent] [p_1]
 WHERE
@@ -33,7 +33,7 @@ WHERE
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID] as [ParentID_1],
+	[d].[ParentID],
 	[d].[ChildID]
 FROM
 	(

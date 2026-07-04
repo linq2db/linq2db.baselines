@@ -2,7 +2,7 @@
 
 SELECT
 	[g_1].[TestId],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[TestTable] [g_1]
 GROUP BY

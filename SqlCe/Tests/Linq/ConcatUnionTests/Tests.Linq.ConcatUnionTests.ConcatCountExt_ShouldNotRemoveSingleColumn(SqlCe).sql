@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT([t3].[PersonID]) as [CountExt]
+	COUNT([t3].[PersonID])
 FROM
 	(
 		SELECT

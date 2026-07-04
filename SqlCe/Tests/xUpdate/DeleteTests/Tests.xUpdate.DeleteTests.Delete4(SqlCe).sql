@@ -38,7 +38,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -66,7 +66,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

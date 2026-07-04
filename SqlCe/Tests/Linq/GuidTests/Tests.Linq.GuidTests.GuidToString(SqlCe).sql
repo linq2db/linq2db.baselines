@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (1)
-	Lower(CAST([t].[Id] AS NChar(36))) as [c1]
+	Lower(CAST([t].[Id] AS NChar(36)))
 FROM
 	[TableWithGuid] [t]
 

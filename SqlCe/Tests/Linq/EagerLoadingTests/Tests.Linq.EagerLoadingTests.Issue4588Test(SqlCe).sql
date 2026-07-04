@@ -7,10 +7,10 @@ SET     @take = 10
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id] as [Id_2],
+	[d_1].[Id],
 	[d_1].[SubOrderId],
 	[d_1].[Code],
-	[d_1].[Date] as [Date_1],
+	[d_1].[Date],
 	[d_1].[IsActive]
 FROM
 	(
@@ -46,7 +46,7 @@ SET     @take = 10
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1],
+	[d].[Id],
 	[d].[OrderId]
 FROM
 	(

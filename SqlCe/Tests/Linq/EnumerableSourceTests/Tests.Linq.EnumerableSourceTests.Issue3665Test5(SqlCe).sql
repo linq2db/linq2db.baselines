@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[y].[item] as [item_1]
+	[y].[item]
 FROM
 	[Person] [x]
 		CROSS JOIN (

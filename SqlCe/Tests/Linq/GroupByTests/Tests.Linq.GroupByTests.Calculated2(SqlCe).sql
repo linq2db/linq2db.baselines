@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[Key_1] + '2' as [c1]
+	[p].[Key_1] + '2'
 FROM
 	(
 		SELECT DISTINCT

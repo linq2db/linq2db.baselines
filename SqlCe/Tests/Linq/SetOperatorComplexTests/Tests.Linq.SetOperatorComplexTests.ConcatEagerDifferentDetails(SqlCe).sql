@@ -81,7 +81,7 @@ FROM
 SELECT
 	[a_Book].[BookId],
 	[a_Book].[BookName],
-	CAST(0 AS Int) as [projection__set_id__]
+	CAST(0 AS Int)
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -92,7 +92,7 @@ UNION ALL
 SELECT
 	[a_Book_1].[BookId],
 	[a_Book_1].[BookName],
-	CAST(1 AS Int) as [projection__set_id__]
+	CAST(1 AS Int)
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -105,7 +105,7 @@ WHERE
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
-	[a_Author].[AuthorId] as [AuthorId_1],
+	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(

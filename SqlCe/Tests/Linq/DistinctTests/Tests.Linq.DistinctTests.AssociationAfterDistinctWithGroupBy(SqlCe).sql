@@ -2,7 +2,7 @@
 
 SELECT
 	[a_Parent_1].[ParentID],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT

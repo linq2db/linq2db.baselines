@@ -30,7 +30,7 @@ VALUES
 -- SqlCe
 
 SELECT TOP (2)
-	[t1].[Type] as [Type_1],
+	[t1].[Type],
 	[t1].[Id],
 	[t1].[Test_ChildId],
 	[t1].[Name_First],
@@ -63,7 +63,7 @@ WHERE
 -- SqlCe
 
 SELECT TOP (2)
-	[t1].[Type] as [Type_1],
+	[t1].[Type],
 	[t1].[Id],
 	[t1].[Test_ChildId],
 	[t1].[Name_First],

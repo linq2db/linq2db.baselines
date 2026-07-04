@@ -7,7 +7,7 @@ SELECT
 			ELSE '2'
 		END
 		ELSE '3'
-	END as [a]
+	END
 FROM
 	[Parent] [p]
 		LEFT JOIN (

@@ -61,7 +61,7 @@ WHERE
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
-	[a_Author].[AuthorId] as [AuthorId_1],
+	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(

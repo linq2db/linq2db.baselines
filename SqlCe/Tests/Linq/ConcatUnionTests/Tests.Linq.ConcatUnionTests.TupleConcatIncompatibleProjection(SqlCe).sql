@@ -9,8 +9,8 @@ WHERE
 	[x].[ParentID] > 3
 UNION ALL
 SELECT
-	NULL as [Value1],
-	NULL as [ParentID]
+	NULL,
+	NULL
 FROM
 	[Parent] [p2]
 WHERE

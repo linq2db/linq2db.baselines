@@ -56,7 +56,7 @@ FROM
 
 SELECT
 	[e].[Value1],
-	ABS([e].[Value2]) as [c1]
+	ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 

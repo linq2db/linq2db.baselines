@@ -2,7 +2,7 @@
 
 SELECT
 	[g_1].[FirstName],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Person] [g_1]
 GROUP BY

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[Count1] + [t1].[Count1] as [Count1]
+	[t1].[Count1] + [t1].[Count1]
 FROM
 	[Parent] [t2]
 		OUTER APPLY (

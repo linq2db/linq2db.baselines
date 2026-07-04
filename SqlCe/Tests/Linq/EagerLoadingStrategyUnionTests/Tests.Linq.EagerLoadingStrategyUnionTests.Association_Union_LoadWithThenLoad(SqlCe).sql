@@ -12,7 +12,7 @@ ORDER BY
 
 SELECT
 	[m_1].[Id],
-	[d_1].[Id] as [Id_1],
+	[d_1].[Id],
 	[d_1].[DepartmentId],
 	[d_1].[Name],
 	[d_1].[Salary]
@@ -34,7 +34,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[CompanyId],
 	[d].[Name],

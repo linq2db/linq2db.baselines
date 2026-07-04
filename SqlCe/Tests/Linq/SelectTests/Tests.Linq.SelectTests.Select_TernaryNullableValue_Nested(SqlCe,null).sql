@@ -1,5 +1,5 @@
 ﻿-- SqlCe
 
 SELECT
-	NULL as [c1]
+	NULL
 

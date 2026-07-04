@@ -6,11 +6,11 @@ SELECT TOP (1)
 	[entity1].[LastName],
 	[entity1].[MiddleName],
 	[entity1].[Gender],
-	[t1].[FirstName] as [FirstName_1],
+	[t1].[FirstName],
 	[t1].[ID],
-	[t1].[LastName] as [LastName_1],
-	[t1].[MiddleName] as [MiddleName_1],
-	[t1].[Gender] as [Gender_1]
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
 	[Person] [entity1]
 		OUTER APPLY (
