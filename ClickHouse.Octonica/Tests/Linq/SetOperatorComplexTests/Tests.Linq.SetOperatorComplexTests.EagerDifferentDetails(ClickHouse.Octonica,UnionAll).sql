@@ -79,7 +79,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	a_Book.BookId as Id,
+	a_Book.BookId,
 	a_Book.BookName,
 	toInt32(0) as projection__set_id__
 FROM
@@ -90,7 +90,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 UNION ALL
 SELECT
-	a_Book_1.BookId as Id,
+	a_Book_1.BookId as BookId,
 	a_Book_1.BookName as BookName,
 	toInt32(1) as projection__set_id__
 FROM
