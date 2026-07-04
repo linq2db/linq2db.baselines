@@ -18,8 +18,8 @@ FROM
 
 SELECT
 	[e].[Id],
-	[a_ObjectB].[Id],
-	[a_ObjectC].[Id],
+	[a_ObjectB].[Id] as [Id_1],
+	[a_ObjectC].[Id] as [Id_2],
 	[a_ObjectC].[FK]
 FROM
 	([EntityA] [e]

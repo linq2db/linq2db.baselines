@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[ID],
 	[m_1].[ValS],
-	[d].[ID],
+	[d].[ID] as [Id_1],
 	[d].[ValB],
 	[d].[ValInt]
 FROM

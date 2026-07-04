@@ -6,7 +6,7 @@ SELECT TOP 2
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]
@@ -22,7 +22,7 @@ SELECT TOP 2
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [p]

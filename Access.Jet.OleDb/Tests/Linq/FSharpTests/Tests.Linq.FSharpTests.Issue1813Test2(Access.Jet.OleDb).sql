@@ -53,7 +53,7 @@ VALUES
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[Text]
 FROM
 	[Names] [m_1]

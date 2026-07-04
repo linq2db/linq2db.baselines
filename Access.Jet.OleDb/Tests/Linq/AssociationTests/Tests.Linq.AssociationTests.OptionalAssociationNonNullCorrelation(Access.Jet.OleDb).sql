@@ -29,9 +29,9 @@ FROM
 SELECT
 	[r].[ID],
 	[r].[ID2],
-	[a_Table2].[ID],
+	[a_Table2].[ID] as [ID_1],
 	[a_Table2].[ID3],
-	[a_Table3].[ID]
+	[a_Table3].[ID] as [ID_2]
 FROM
 	([Table1] [r]
 		LEFT JOIN [Table2] [a_Table2] ON ([r].[ID2] = [a_Table2].[ID]))
@@ -68,9 +68,9 @@ FROM
 SELECT
 	[t1].[ID],
 	[t1].[ID2],
-	[a_Table2].[ID],
+	[a_Table2].[ID] as [ID_1],
 	[a_Table2].[ID3],
-	[a_Table3].[ID]
+	[a_Table3].[ID] as [ID_2]
 FROM
 	([Table1] [t1]
 		LEFT JOIN [Table2] [a_Table2] ON ([t1].[ID2] = [a_Table2].[ID]))

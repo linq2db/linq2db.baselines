@@ -3,10 +3,10 @@
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID],
-	[cInfo].[ParentID],
-	[cInfo].[Value1]
+	[cInfo].[ParentID] as [ParentID_2],
+	[cInfo].[Value1] as [Value1_1]
 FROM
 	([Parent] [tupledArg]
 		INNER JOIN [Child] [c_1] ON ([tupledArg].[ParentID] = [c_1].[ParentID]))

@@ -2,12 +2,12 @@
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[ProductUnitId],
 	[d].[InvoiceId],
 	[d].[ProductId],
-	[a_ProductUnit].[Id],
-	[a_Product].[Id]
+	[a_ProductUnit].[Id] as [Id_2],
+	[a_Product].[Id] as [Id_3]
 FROM
 	(((
 		SELECT DISTINCT
@@ -29,10 +29,10 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[InvoiceId],
 	[d].[TaxId],
-	[a_Tax].[Id]
+	[a_Tax].[Id] as [Id_2]
 FROM
 	((
 		SELECT DISTINCT
@@ -74,12 +74,12 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[CustomInvoiceId],
 	[d].[MeasuresSourceId],
 	[d].[PreviousSourceId],
-	[a_Source].[Id],
-	[a_PreviousSource].[Id]
+	[a_Source].[Id] as [Id_2],
+	[a_PreviousSource].[Id] as [Id_3]
 FROM
 	(((
 		SELECT DISTINCT
@@ -127,34 +127,34 @@ SELECT
 	[f].[ServicePointId],
 	[f].[AccessTariffId],
 	[f].[PriceListId],
-	[a_Invoice].[Id],
+	[a_Invoice].[Id] as [Id_1],
 	[a_Invoice].[PendingStateId],
 	[a_Invoice].[RectifyingInvoiceId],
 	[a_Invoice].[RefundByInvoiceId],
-	[a_Rectifying].[Id],
-	[a_Rectifying].[PendingStateId],
-	[a_Rectifying].[RectifyingInvoiceId],
-	[a_Rectifying].[RefundByInvoiceId],
-	[a_RefundBy].[Id],
-	[a_RefundBy].[PendingStateId],
-	[a_RefundBy].[RectifyingInvoiceId],
-	[a_RefundBy].[RefundByInvoiceId],
-	[a_PendingState].[Id],
-	[a_Invoice].[Id],
-	[a_Contract].[Id],
-	[a_AccessTariff].[Id],
-	[a_ServicePoint].[Id],
+	[a_Rectifying].[Id] as [Id_2],
+	[a_Rectifying].[PendingStateId] as [PendingStateId_1],
+	[a_Rectifying].[RectifyingInvoiceId] as [RectifyingInvoiceId_1],
+	[a_Rectifying].[RefundByInvoiceId] as [RefundByInvoiceId_1],
+	[a_RefundBy].[Id] as [Id_3],
+	[a_RefundBy].[PendingStateId] as [PendingStateId_2],
+	[a_RefundBy].[RectifyingInvoiceId] as [RectifyingInvoiceId_2],
+	[a_RefundBy].[RefundByInvoiceId] as [RefundByInvoiceId_2],
+	[a_PendingState].[Id] as [Id_4],
+	[a_Invoice].[Id] as [Id_5],
+	[a_Contract].[Id] as [Id_6],
+	[a_AccessTariff].[Id] as [Id_7],
+	[a_ServicePoint].[Id] as [Id_8],
 	[a_ServicePoint].[TownId],
 	[a_ServicePoint].[StreetTypeId],
-	[a_Town].[Id],
+	[a_Town].[Id] as [Id_9],
 	[a_Town].[StateId],
-	[a_State].[Id],
+	[a_State].[Id] as [Id_10],
 	[a_State].[CountryId],
 	[a_State].[AutonomousCommunityId],
-	[a_Community].[Id],
-	[a_StreetType].[Id],
-	[f].[Id],
-	[a_PriceList].[Id]
+	[a_Community].[Id] as [Id_11],
+	[a_StreetType].[Id] as [Id_12],
+	[f].[Id] as [Id_13],
+	[a_PriceList].[Id] as [Id_14]
 FROM
 	((((((((((([CustomInvoice] [f]
 		INNER JOIN [Invoice] [a_Invoice] ON ([f].[InvoiceId] = [a_Invoice].[Id]))

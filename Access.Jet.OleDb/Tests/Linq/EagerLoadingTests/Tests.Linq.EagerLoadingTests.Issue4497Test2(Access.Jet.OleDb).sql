@@ -6,7 +6,7 @@ SELECT
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [i]

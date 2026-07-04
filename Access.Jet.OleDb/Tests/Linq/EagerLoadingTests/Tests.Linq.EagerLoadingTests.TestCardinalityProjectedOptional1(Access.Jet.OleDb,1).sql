@@ -2,9 +2,9 @@
 
 SELECT
 	[e].[Id],
-	[a_ObjectBOptional].[Id],
-	[a_ObjectBOptional].[Id],
-	[a_ObjectC].[Id],
+	[a_ObjectBOptional].[Id] as [Id_1],
+	[a_ObjectBOptional].[Id] as [Id_2],
+	[a_ObjectC].[Id] as [Id_3],
 	[a_ObjectC].[FK]
 FROM
 	([EntityA] [e]
