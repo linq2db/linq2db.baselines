@@ -5,7 +5,7 @@ SELECT
 	[cross_1].[Value1],
 	[cross_1].[ParentID_1],
 	[cross_1].[Value1_1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_2],
 	[c_1].[ChildID]
 FROM
 	(
@@ -21,11 +21,11 @@ FROM
 		INNER JOIN [Child] [c_1] ON ([cross_1].[ParentID] = [c_1].[ParentID])
 UNION
 SELECT
-	[cross_2].[ParentID_1],
+	[cross_2].[ParentID_1] as [ParentID],
 	[cross_2].[Value1],
-	[cross_2].[ParentID],
+	[cross_2].[ParentID] as [ParentID_1],
 	[cross_2].[Value1_1],
-	[c_2].[ParentID],
+	[c_2].[ParentID] as [ParentID_2],
 	[c_2].[ChildID]
 FROM
 	(

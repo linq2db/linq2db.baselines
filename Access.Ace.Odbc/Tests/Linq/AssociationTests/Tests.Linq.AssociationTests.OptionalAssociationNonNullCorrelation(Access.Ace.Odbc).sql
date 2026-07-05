@@ -2,7 +2,7 @@
 
 SELECT
 	[m_1].[ID],
-	[d].[ID],
+	[d].[ID] as [ID_1],
 	[d].[ID3]
 FROM
 	(
@@ -50,7 +50,7 @@ WHERE
 
 SELECT
 	[m_1].[ID],
-	[d].[ID],
+	[d].[ID] as [ID_1],
 	[d].[ID3]
 FROM
 	(

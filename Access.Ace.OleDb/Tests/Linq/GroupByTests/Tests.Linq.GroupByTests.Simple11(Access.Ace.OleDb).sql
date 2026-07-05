@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
-	[d].[ChildID]
+	[d].[ChildID] as [ChildID_1]
 FROM
 	(
 		SELECT DISTINCT

@@ -8,8 +8,8 @@ INSERT INTO [InsertIssueTest]
 )
 SELECT
 	[t2].[ID],
-	123,
-	[t2].[ID]
+	123 as [c1],
+	[t2].[ID] as [ID_1]
 FROM
 	(
 		SELECT DISTINCT
@@ -33,8 +33,8 @@ INSERT INTO [InsertIssueTest]
 )
 SELECT
 	[t2].[ID],
-	123,
-	[t2].[ID]
+	123 as [c1],
+	[t2].[ID] as [ID_1]
 FROM
 	(
 		SELECT DISTINCT
