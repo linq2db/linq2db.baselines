@@ -3,7 +3,7 @@
 SELECT
 	[p].[ParentID],
 	[gc3_1].[not_null],
-	[gc3_1].[ParentID],
+	[gc3_1].[ParentID] as [ParentID_1],
 	[gc3_1].[ChildID],
 	[gc3_1].[GrandChildID]
 FROM

@@ -2,8 +2,8 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id],
-	[m_1].[Id_1],
+	[m_1].[Id] as [Id_1],
+	[m_1].[Id_1] as [Id_2],
 	[d_1].[CHAIN_ID]
 FROM
 	(

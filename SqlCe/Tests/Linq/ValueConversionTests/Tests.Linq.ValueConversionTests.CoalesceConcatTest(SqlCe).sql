@@ -3,7 +3,7 @@
 SELECT
 	[t2].[Converted1],
 	[t2].[Converted2],
-	[t2].[Converted1]
+	[t2].[Converted1] as [Converted1_1]
 FROM
 	(
 		SELECT
@@ -14,9 +14,9 @@ FROM
 	) [t2]
 UNION
 SELECT
-	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]),
-	[t1_1].[Value1],
-	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum])
+	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]) as [Converted1],
+	[t1_1].[Value1] as [Converted2],
+	Coalesce([t1_1].[EnumNullable], [t1_1].[Enum]) as [Converted1_1]
 FROM
 	[ValueConversion] [t1_1]
 

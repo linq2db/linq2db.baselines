@@ -2,7 +2,7 @@
 
 SELECT
 	[u].[PersonID],
-	[x].[PersonID]
+	[x].[PersonID] as [x]
 FROM
 	[Person] [u]
 		CROSS APPLY (

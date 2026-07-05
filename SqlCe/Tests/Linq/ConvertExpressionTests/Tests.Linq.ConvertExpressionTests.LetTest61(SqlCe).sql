@@ -13,10 +13,10 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END,
+	END as [Any_1],
 	[t1].[Count_1],
-	[t2].[ParentID],
-	[t3].[ParentID],
+	[t2].[ParentID] as [ParentID_1],
+	[t3].[ParentID] as [ParentID_2],
 	[t3].[ChildID]
 FROM
 	[Parent] [t]
