@@ -25,7 +25,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY as [c1]
 
 -- SqlCe
 DECLARE @i Int -- Int32

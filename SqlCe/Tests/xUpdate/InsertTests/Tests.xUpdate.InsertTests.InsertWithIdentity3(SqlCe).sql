@@ -28,7 +28,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY as [c1]
 
 -- SqlCe
 

@@ -13,7 +13,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY as [c1]
 
 -- SqlCe
 DECLARE @Value Int -- Int32
