@@ -16,9 +16,7 @@ FROM
 			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
 	) [m_1]
 		INNER JOIN [EmailAttachments] [d] ON [m_1].[Id] = [d].[EmailId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[p].[Id],
 	[p].[AddTime]

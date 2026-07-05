@@ -40,11 +40,7 @@ FROM
 			FROM
 				[MasterClass] [mm]
 		) [t3] ON [t3].[Id1] = [m_2].[MasterId] AND [d].[Key_1] = [t3].[Id1] AND [t3].[rn] = 1
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
