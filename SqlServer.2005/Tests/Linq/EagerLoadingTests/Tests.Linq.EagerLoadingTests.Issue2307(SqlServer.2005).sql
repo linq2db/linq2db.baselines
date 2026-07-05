@@ -7,9 +7,7 @@ SELECT
 FROM
 	[AttendanceSheet] [m_1]
 		INNER JOIN [AttendanceSheetRow] [d] ON [m_1].[Id] = [d].[AttendanceSheetId]
-
--- SqlServer.2005
-
+;
 SELECT
 	[t1].[Id]
 FROM

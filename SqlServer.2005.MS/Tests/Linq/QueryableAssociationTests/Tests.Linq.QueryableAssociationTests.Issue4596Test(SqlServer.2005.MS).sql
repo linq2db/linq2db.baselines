@@ -1,6 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[m_1].[C1],
 	[d].[Id],
@@ -35,9 +33,7 @@ ORDER BY
 		WHEN [m_1].[C1] <> N'T' THEN [d].[Name3]
 		ELSE N''
 	END
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]

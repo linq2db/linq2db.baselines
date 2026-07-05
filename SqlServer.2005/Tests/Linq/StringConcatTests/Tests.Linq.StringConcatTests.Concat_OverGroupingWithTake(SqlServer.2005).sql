@@ -22,9 +22,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005
-
+;
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM

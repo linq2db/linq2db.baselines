@@ -1,6 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[Value]
 FROM
@@ -16,9 +14,7 @@ WHERE
 ORDER BY
 	[d].[PK],
 	[m_1].[Key_1]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM

@@ -13,9 +13,7 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -29,9 +27,7 @@ FROM
 		INNER JOIN [SampleClass] [d] ON [m_1].[Key_1] = [d].[Id]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005
-
+;
 SELECT DISTINCT
 	[g_1].[Id]
 FROM

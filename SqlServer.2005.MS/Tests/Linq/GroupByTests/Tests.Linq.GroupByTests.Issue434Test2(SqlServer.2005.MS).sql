@@ -1,6 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-
-SELECT
+﻿SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
 	[d].[Diagnosis]
@@ -9,9 +7,7 @@ FROM
 		INNER JOIN [Patient] [d] ON [m_1].[PersonID] = [d].[PersonID]
 WHERE
 	Lower([m_1].[FirstName]) LIKE N'%test%' ESCAPE N'~'
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
 FROM
@@ -20,9 +18,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -43,9 +39,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -67,9 +61,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1],
 	[d_1].[NullableValue] DESC
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -90,9 +82,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -114,9 +104,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue] DESC
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT DISTINCT
 	[g_1].[Id]
 FROM

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -13,9 +11,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[r_1].[ParentID],
 	[r_1].[ChildID],
@@ -44,8 +40,6 @@ FROM
 ORDER BY
 	[t1].[Count_1]
 
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -59,9 +53,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2005.MS SqlServer.2005
-
+;
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

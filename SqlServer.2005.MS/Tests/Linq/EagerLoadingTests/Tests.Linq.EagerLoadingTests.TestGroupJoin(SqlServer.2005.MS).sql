@@ -1,8 +1,4 @@
-﻿-- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 20
-
-SELECT
+﻿SELECT
 	[m_2].[DetailId],
 	[d].[SubDetailId],
 	[d].[DetailId],
@@ -23,11 +19,7 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
-
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -60,11 +52,7 @@ FROM
 			ORDER BY
 				[d].[SubDetailValue]
 		) [d_1]
-
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_2].[MasterId],
 	[d_1].[Id1],
@@ -99,11 +87,7 @@ FROM
 			ORDER BY
 				[d].[Value]
 		) [d_1]
-
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
