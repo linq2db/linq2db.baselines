@@ -8,9 +8,9 @@ LIMIT 1
 
 
 -- SQLite.MS SQLite
-DECLARE @CompanyName NVarChar(19) -- String
+DECLARE @CompanyName VarChar(19) -- AnsiString
 SET     @CompanyName = 'Alfreds Futterkiste'
-DECLARE @CustomerId NVarChar(5) -- String
+DECLARE @CustomerId VarChar(5) -- AnsiString
 SET     @CustomerId = 'ALFKI'
 
 UPDATE

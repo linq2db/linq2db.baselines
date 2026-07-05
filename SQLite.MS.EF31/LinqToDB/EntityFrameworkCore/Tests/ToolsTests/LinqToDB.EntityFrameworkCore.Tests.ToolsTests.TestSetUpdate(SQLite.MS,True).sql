@@ -7,9 +7,9 @@ WHERE @__ef_filter__p_0 OR NOT ("c"."IsDeleted")
 
 
 -- SQLite.MS SQLite
-DECLARE @CompanyName NVarChar(13) -- String
+DECLARE @CompanyName VarChar(13) -- AnsiString
 SET     @CompanyName = 'Rancho grande'
-DECLARE @CustomerId NVarChar(5) -- String
+DECLARE @CustomerId VarChar(5) -- AnsiString
 SET     @CustomerId = 'RANCH'
 
 UPDATE
