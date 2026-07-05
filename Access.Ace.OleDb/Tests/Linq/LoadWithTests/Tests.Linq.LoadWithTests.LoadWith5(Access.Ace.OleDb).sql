@@ -4,12 +4,12 @@ SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
 	[m_1].[ParentID_1],
-	[d_1].[ParentID],
-	[d_1].[ChildID],
+	[d_1].[ParentID] as [ParentID_2],
+	[d_1].[ChildID] as [ChildID_1],
 	[d_1].[GrandChildID],
-	[a_Child].[ParentID],
-	[a_Child].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Child].[ParentID] as [ParentID_3],
+	[a_Child].[ChildID] as [ChildID_2],
+	[a_Parent].[ParentID] as [ParentID_4],
 	[a_Parent].[Value1]
 FROM
 	(((

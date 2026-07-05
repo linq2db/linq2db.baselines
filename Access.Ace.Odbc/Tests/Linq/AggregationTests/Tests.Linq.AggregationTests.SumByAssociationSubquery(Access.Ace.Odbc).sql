@@ -13,10 +13,10 @@ GROUP BY
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[ItemId],
 	[d].[ValueName],
-	[d].[Value]
+	[d].[Value] as [Value_1]
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])

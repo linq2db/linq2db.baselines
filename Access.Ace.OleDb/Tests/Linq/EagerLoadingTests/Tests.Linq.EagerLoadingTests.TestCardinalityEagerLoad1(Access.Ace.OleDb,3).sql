@@ -19,11 +19,11 @@ FROM
 SELECT
 	[t1].[Id],
 	[t1].[FK],
-	[a_ObjectB].[Id],
-	[a_ObjectB].[FK],
-	[a_ObjectC].[Id],
-	[a_ObjectC].[FK],
-	[a_ObjectB].[Id]
+	[a_ObjectB].[Id] as [Id_1],
+	[a_ObjectB].[FK] as [FK_1],
+	[a_ObjectC].[Id] as [Id_2],
+	[a_ObjectC].[FK] as [FK_2],
+	[a_ObjectB].[Id] as [Id_3]
 FROM
 	([EntityA] [t1]
 		INNER JOIN [EntityB] [a_ObjectB] ON ([t1].[FK] = [a_ObjectB].[Id]))

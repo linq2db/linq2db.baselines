@@ -9,11 +9,11 @@ SELECT
 	[t2].[RPDestinationID],
 	[t2].[RPOrigDestinationID],
 	[t2].[OutfeedTransportOrderID],
-	[source].[Id],
-	[sourceShelf].[Id],
-	[dest].[Id],
-	[destShelf].[Id],
-	[origdest].[Id]
+	[source].[Id] as [Id_1],
+	[sourceShelf].[Id] as [Id_2],
+	[dest].[Id] as [Id_3],
+	[destShelf].[Id] as [Id_4],
+	[origdest].[Id] as [Id_5]
 FROM
 	(((((
 		SELECT

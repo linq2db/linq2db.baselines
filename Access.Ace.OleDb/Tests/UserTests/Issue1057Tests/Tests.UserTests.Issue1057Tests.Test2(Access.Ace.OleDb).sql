@@ -58,7 +58,7 @@ VALUES
 SELECT
 	[p].[Id],
 	[p].[TargetName],
-	[a_ActualStage].[Id]
+	[a_ActualStage].[Id] as [ActualStageId_1]
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
@@ -70,7 +70,7 @@ WHERE
 SELECT
 	[p].[TargetName],
 	[p].[Id],
-	[a_ActualStage].[Id]
+	[a_ActualStage].[Id] as [Id_1]
 FROM
 	[Task] [p]
 		LEFT JOIN [TaskStage] [a_ActualStage] ON ([p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)

@@ -14,7 +14,7 @@ SET     @minSalary = 45000
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[DepartmentId],
 	[d].[Name],
 	[d].[Salary]

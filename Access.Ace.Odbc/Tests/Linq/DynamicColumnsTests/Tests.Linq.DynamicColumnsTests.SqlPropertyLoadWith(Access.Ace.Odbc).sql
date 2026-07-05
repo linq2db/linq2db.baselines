@@ -5,7 +5,7 @@ SELECT
 	[t1].[FirstName],
 	[t1].[LastName],
 	[t1].[MiddleName],
-	[a_Patient].[PersonID],
+	[a_Patient].[PersonID] as [PersonID_1],
 	[a_Patient].[Diagnosis]
 FROM
 	[Person] [t1]

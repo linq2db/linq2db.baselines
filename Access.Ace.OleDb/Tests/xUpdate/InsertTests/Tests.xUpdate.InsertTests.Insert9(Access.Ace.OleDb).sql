@@ -40,7 +40,7 @@ INSERT INTO [Child]
 )
 SELECT
 	[p].[ParentID],
-	[p].[ParentID]
+	[p].[ParentID] as [ParentID_1]
 FROM
 	[Parent] [p]
 WHERE
