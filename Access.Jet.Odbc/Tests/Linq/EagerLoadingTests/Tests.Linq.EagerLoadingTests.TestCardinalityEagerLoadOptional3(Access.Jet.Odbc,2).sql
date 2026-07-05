@@ -2,8 +2,8 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id],
-	[d].[Id],
+	[m_1].[Id] as [Id_1],
+	[d].[Id] as [Id_2],
 	[d].[FK]
 FROM
 	(

@@ -28,7 +28,7 @@ SELECT
 	[i_1].[MiddleName],
 	[i_1].[Gender],
 	[i_1].[FullName],
-	[i_1].[FullName],
+	[i_1].[FullName] as [AsSqlFullName],
 	[i_1].[DoctorCount]
 FROM
 	(
