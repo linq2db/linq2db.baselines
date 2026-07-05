@@ -17,9 +17,7 @@ WHERE
 		WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
 	)
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

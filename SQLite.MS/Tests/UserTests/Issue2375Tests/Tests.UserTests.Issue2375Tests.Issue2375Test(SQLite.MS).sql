@@ -96,9 +96,7 @@ FROM
 	) [m_1]
 		INNER JOIN [InventoryResourceDTO] [d] ON [m_1].[Status] = [d].[Status]
 		INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id] AND ([m_1].[ResourceLabel] = [lc_1].[ResourceLabel] OR [m_1].[ResourceLabel] IS NULL AND [lc_1].[ResourceLabel] IS NULL)
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[grp].[Status],
 	[lc].[ResourceLabel]

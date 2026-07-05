@@ -21,11 +21,7 @@ WHERE
 			[m_1].[ID] = [c_1].[ParentId] AND [m_1].[ValS] LIKE @TypedProperty ESCAPE '~' AND
 			[m_1].[ValS] IS NOT NULL
 	)
-
--- SQLite.Classic SQLite
-DECLARE @TypedProperty NVarChar(4) -- String
-SET     @TypedProperty = '%de%'
-
+;
 SELECT
 	[it].[ID],
 	[it].[ValB],

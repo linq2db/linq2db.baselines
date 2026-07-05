@@ -19,9 +19,7 @@ FROM
 			[Test3799Item] [item_1]
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[item_1].[Name],
 	[t1].[Name],

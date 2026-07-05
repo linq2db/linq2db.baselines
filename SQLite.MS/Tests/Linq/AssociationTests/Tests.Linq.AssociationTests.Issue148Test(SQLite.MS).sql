@@ -12,9 +12,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -27,9 +25,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -42,9 +38,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[n].[ParentID]
 FROM

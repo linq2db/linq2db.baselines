@@ -47,9 +47,7 @@ FROM
 				THEN 1
 			ELSE 0
 		END)
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN [t2].[Average] = 33.25 THEN 1

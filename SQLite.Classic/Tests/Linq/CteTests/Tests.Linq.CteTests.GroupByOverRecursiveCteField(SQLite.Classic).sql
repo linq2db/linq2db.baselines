@@ -34,9 +34,7 @@ FROM
 			[cte] [t1]
 	) [m_1]
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
-
--- SQLite.Classic SQLite
-
+;
 WITH [cte] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

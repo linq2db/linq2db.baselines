@@ -14,9 +14,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id1]
 FROM
@@ -41,9 +39,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id1]
 FROM
@@ -73,9 +69,7 @@ FROM
 			) [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id1]
 FROM

@@ -25,11 +25,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [t1].[Id1]
 	) [m_1]
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_1].[DetailId]
-
--- SQLite.MS SQLite
-DECLARE @masterFilter  -- Int32
-SET     @masterFilter = 5
-
+;
 SELECT
 	[m_1].[DetailId],
 	[m_1].[Id1],
@@ -53,11 +49,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [t1].[Id1]
 	) [m_1]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_1].[DetailId] = [d_1].[DetailId]
-
--- SQLite.MS SQLite
-DECLARE @masterFilter  -- Int32
-SET     @masterFilter = 5
-
+;
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId]
@@ -71,11 +63,7 @@ FROM
 			[master_1].[Id1] > @masterFilter
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
-
--- SQLite.MS SQLite
-DECLARE @masterFilter  -- Int32
-SET     @masterFilter = 5
-
+;
 SELECT
 	[master_1].[Id1]
 FROM

@@ -25,9 +25,7 @@ FROM
 		INNER JOIN [GrandChild] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID] AND [m_1].[ChildID] = [d_1].[ChildID]
 ORDER BY
 	[m_1].[ParentID_1]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -42,9 +40,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
 	[m_1].[ParentID]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

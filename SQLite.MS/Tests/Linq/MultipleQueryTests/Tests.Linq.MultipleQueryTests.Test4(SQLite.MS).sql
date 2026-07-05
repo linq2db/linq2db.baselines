@@ -13,9 +13,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
 	[m_1].[ParentID]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[p].[ParentID]
 FROM
