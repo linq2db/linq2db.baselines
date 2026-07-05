@@ -1,6 +1,4 @@
-﻿-- SqlServer.2012.MS SqlServer.2012
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[a_ObjectD].[Id],
@@ -9,9 +7,7 @@ FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
-
--- SqlServer.2012.MS SqlServer.2012
-
+;
 SELECT
 	[e].[Id]
 FROM

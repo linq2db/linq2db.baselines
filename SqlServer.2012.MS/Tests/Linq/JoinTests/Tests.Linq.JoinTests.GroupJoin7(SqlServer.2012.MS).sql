@@ -1,8 +1,4 @@
-﻿-- SqlServer.2012.MS SqlServer.2012
-DECLARE @n Int -- Int32
-SET     @n = 1
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -16,9 +12,7 @@ FROM
 			[p].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID] - @n
-
--- SqlServer.2012.MS SqlServer.2012
-
+;
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

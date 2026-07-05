@@ -1,6 +1,4 @@
-﻿-- SqlServer.2012.MS SqlServer.2012
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[ItemId],
 	[d].[UserId],
@@ -20,9 +18,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SqlServer.2012.MS SqlServer.2012
-
+;
 SELECT
 	[i].[Id],
 	(

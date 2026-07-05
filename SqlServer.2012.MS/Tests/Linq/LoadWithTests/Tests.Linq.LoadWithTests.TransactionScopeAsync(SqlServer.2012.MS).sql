@@ -1,6 +1,4 @@
-﻿-- SqlServer.2012.MS SqlServer.2012
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
 FROM
@@ -13,9 +11,7 @@ FROM
 			[x].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2012.MS SqlServer.2012
-
+;
 SELECT TOP (1)
 	[x].[ParentID]
 FROM

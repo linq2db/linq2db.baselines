@@ -1,10 +1,4 @@
-﻿-- SqlServer.2012.MS SqlServer.2012
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
 	[d_1].[Id],
@@ -37,13 +31,7 @@ FROM
 				INNER JOIN [SubOrder] [d] ON [t2].[Id] = [d].[OrderId]
 	) [m_1]
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -66,13 +54,7 @@ FROM
 			) [t1]
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
-
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
+;
 SELECT
 	[x].[Id],
 	[x].[Name]
