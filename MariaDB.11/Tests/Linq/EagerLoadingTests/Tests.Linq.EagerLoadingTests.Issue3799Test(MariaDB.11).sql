@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Name`
 FROM
@@ -19,9 +17,7 @@ FROM
 			`Test3799Item` `item_1`
 	) `m_1`
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Id` = `d`.`ParentId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`item_1`.`Name`,
 	`t1`.`Name`,

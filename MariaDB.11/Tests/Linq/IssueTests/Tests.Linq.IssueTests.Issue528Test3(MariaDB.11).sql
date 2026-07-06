@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Key_1`,
 	`d`.`FirstName`,
 	`d`.`PersonID`,
@@ -15,9 +13,7 @@ FROM
 			`Person` `t1`
 	) `m_1`
 		INNER JOIN `Person` `d` ON `m_1`.`Key_1` = `d`.`FirstName`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t2`.`Key_1`,
 	`t2`.`Key_1`

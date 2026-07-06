@@ -15,8 +15,6 @@ FROM
 ORDER BY
 	`p`.`Id`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -25,9 +23,7 @@ SELECT
 FROM
 	`ConcatParent` `m_1`
 		INNER JOIN `ConcatChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

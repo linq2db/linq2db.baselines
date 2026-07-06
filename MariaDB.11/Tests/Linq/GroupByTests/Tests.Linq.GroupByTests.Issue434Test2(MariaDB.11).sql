@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
 	`d`.`Diagnosis`
@@ -9,9 +7,7 @@ FROM
 		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

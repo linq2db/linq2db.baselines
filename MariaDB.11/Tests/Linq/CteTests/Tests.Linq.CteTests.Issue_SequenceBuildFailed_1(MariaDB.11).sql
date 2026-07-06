@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-WITH RECURSIVE `cte` (`Id`)
+﻿WITH RECURSIVE `cte` (`Id`)
 AS
 (
 	SELECT
@@ -31,9 +29,7 @@ FROM
 				INNER JOIN `Patient` `p_1` ON `t2`.`Id` = `p_1`.`PersonID`
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 WITH RECURSIVE `cte` (`Id`)
 AS
 (

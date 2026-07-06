@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`C1`,
 	`d`.`Id`,
@@ -36,9 +34,7 @@ ORDER BY
 		WHEN `m_1`.`C1` <> 'T' THEN `d`.`Name3`
 		ELSE ''
 	END
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`C1`

@@ -19,8 +19,6 @@ VALUES
 	@Text
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
@@ -35,9 +33,7 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,

@@ -1,8 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
 	`m_1`.`Value1`,
@@ -18,11 +14,7 @@ FROM
 	`ValueConversion` `m_1`
 WHERE
 	@testedList = `m_1`.`Value2`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+;
 SELECT
 	`g_1`.`Id`
 FROM

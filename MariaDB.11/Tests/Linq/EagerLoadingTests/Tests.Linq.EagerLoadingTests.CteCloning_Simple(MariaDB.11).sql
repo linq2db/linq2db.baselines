@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-WITH `CTE_1` (`Value4`)
+﻿WITH `CTE_1` (`Value4`)
 AS
 (
 	SELECT
@@ -25,9 +23,7 @@ FROM
 				LEFT JOIN `CteChildTable` `d` ON `t1`.`Value4` = `d`.`Id`
 	) `m_1`
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 WITH `CTE_1`
 (
 	`Value4`,

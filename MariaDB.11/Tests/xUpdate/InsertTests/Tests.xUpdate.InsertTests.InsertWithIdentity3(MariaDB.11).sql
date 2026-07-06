@@ -6,14 +6,6 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -26,10 +18,9 @@ VALUES
 	@LastName,
 	@Gender
 )
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 

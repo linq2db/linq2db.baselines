@@ -1,8 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @Has Bool -- Boolean
-SET     @Has = 1
-
-INSERT INTO `Issue1438`
+﻿INSERT INTO `Issue1438`
 (
 	`Has`
 )
@@ -10,10 +6,9 @@ VALUES
 (
 	@Has
 )
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32

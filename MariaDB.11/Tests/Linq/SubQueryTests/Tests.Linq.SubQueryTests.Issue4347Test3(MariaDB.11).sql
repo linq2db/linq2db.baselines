@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`d`.`Amount`,
@@ -8,9 +6,7 @@ SELECT
 FROM
 	`TransactionEntity` `m_1`
 		INNER JOIN `LineEntity` `d` ON `m_1`.`Id` = `d`.`TransactionId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`x`.`Id`,
 	`x`.`ValidOn`

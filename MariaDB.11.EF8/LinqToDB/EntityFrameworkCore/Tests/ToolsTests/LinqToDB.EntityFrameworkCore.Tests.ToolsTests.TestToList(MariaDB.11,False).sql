@@ -1,7 +1,5 @@
 ﻿
 
--- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -25,13 +23,7 @@ FROM
 	`Orders` `m_1`
 		INNER JOIN `Order Details` `d` ON `m_1`.`OrderID` = `d`.`OrderID`
 		INNER JOIN `Products` `a_Product` ON `d`.`ProductID` = `a_Product`.`ProductID`
-
-
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,
@@ -50,6 +42,8 @@ SELECT
 	`e`.`ShipCountry`
 FROM
 	`Orders` `e`
+
+
 
 
 

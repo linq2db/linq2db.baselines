@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -13,9 +11,7 @@ FROM
 				LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT DISTINCT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,
@@ -27,8 +23,6 @@ FROM
 ORDER BY
 	`t1`.`ChildID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -42,9 +36,7 @@ FROM
 				LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,

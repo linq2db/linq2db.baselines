@@ -1,14 +1,24 @@
-﻿-- MariaDB.10.MySqlConnector MariaDB
-DECLARE @Id Int64
-SET     @Id = 1
-DECLARE @PermanentId Guid
-SET     @PermanentId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @Code VarChar(2) -- String
-SET     @Code = 'C1'
-DECLARE @Name VarChar(2) -- String
-SET     @Name = 'N1'
-DECLARE @IsDeleted Bool -- Boolean
-SET     @IsDeleted = NULL
+﻿INSERT INTO `Subdivisions`
+(
+	`Id`,
+	`PermanentId`,
+	`Code`,
+	`Name`,
+	`IsDeleted`
+)
+VALUES
+(
+	@Id,
+	@PermanentId,
+	@Code,
+	@Name,
+	@IsDeleted
+)
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
+
+
 
 INSERT INTO `Subdivisions`
 (
@@ -26,26 +36,11 @@ VALUES
 	@Name,
 	@IsDeleted
 )
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 
-
--- MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-DECLARE @Id Int64
-SET     @Id = 2
-DECLARE @PermanentId Guid
-SET     @PermanentId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @Code VarChar(2) -- String
-SET     @Code = 'C2'
-DECLARE @Name VarChar(2) -- String
-SET     @Name = 'N2'
-DECLARE @IsDeleted Bool -- Boolean
-SET     @IsDeleted = NULL
 
 INSERT INTO `Subdivisions`
 (
@@ -63,49 +58,9 @@ VALUES
 	@Name,
 	@IsDeleted
 )
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-DECLARE @Id Int64
-SET     @Id = 3
-DECLARE @PermanentId Guid
-SET     @PermanentId = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
-DECLARE @Code VarChar(2) -- String
-SET     @Code = 'C3'
-DECLARE @Name VarChar(2) -- String
-SET     @Name = 'N3'
-DECLARE @IsDeleted Bool -- Boolean
-SET     @IsDeleted = NULL
-
-INSERT INTO `Subdivisions`
-(
-	`Id`,
-	`PermanentId`,
-	`Code`,
-	`Name`,
-	`IsDeleted`
-)
-VALUES
-(
-	@Id,
-	@PermanentId,
-	@Code,
-	@Name,
-	@IsDeleted
-)
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 
 

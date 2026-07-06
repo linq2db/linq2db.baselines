@@ -18,8 +18,6 @@ FROM
 				`c_1`.`ParentID`
 		) `c_2` ON `p`.`ParentID` = `c_2`.`Key_1`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -32,9 +30,7 @@ FROM
 			`Parent` `t1`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

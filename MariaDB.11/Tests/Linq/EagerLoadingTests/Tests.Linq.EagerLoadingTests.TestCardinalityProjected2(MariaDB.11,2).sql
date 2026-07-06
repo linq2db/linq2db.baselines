@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`a_ObjectD`.`Id`,
@@ -9,9 +7,7 @@ FROM
 	`EntityMA` `m_1`
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`e`.`Id`
 FROM

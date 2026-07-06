@@ -6,16 +6,6 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -30,10 +20,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p VarChar(5) -- String
@@ -51,16 +40,6 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -75,10 +54,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p VarChar(5) -- String

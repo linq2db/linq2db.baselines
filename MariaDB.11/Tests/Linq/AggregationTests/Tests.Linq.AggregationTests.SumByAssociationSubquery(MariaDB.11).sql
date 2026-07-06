@@ -9,8 +9,6 @@ FROM
 GROUP BY
 	`g_1`.`Id`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -20,9 +18,7 @@ SELECT
 FROM
 	`Item` `m_1`
 		INNER JOIN `ItemValue` `d` ON `m_1`.`Id` = `d`.`ItemId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

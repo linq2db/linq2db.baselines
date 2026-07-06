@@ -1,8 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @minId Int32
-SET     @minId = 2
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`d`.`DepartmentId`,
@@ -16,9 +12,7 @@ WHERE
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`d`.`Id`,
 	`d`.`Name`

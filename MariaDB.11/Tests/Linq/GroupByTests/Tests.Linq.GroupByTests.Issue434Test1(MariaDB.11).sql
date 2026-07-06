@@ -1,8 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
-SELECT
+﻿SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
 	`d`.`Diagnosis`
@@ -11,11 +7,7 @@ FROM
 		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
+;
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

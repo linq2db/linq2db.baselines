@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`d`.`ParentId`,
@@ -11,9 +9,7 @@ FROM
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`p`.`Id`,
 	`p`.`Name`

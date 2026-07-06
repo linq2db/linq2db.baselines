@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_2`.`Id1`,
 	`d`.`DetailId`,
 	`d`.`MasterId`,
@@ -13,9 +11,7 @@ FROM
 			`MasterClass` `m_1`
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`m_2`.`Id1`,
 	`d_1`.`DetailId`,
@@ -39,9 +35,7 @@ FROM
 		) `d_1` ON `m_2`.`Id1` = `d_1`.`MasterId` AND `d_1`.`rn` > 1 AND `d_1`.`rn` <= 3
 ORDER BY
 	`d_1`.`DetailId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`m_1`.`Id1`,
 	`m_1`.`Id2`,
@@ -49,8 +43,6 @@ SELECT
 	`m_1`.`ByteValues`
 FROM
 	`MasterClass` `m_1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`m_1`.`Id1`,
@@ -65,9 +57,7 @@ FROM
 			`MasterClass` `t1`
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,

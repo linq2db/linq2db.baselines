@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`
 FROM
@@ -13,9 +11,7 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 ORDER BY
 	`m_1`.`ParentID`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`p`.`ParentID`
 FROM

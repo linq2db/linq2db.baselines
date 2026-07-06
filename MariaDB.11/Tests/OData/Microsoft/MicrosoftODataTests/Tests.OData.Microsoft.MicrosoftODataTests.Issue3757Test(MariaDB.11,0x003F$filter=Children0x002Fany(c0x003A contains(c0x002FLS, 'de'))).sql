@@ -1,8 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @TypedProperty VarChar(2) -- String
-SET     @TypedProperty = 'de'
-
-SELECT
+﻿SELECT
 	`m_1`.`ID`,
 	`m_1`.`ValS`,
 	`d`.`ID`,
@@ -21,11 +17,7 @@ WHERE
 			`m_1`.`ID` = `c_1`.`ParentId` AND LOCATE(@TypedProperty, `m_1`.`ValS`) > 0 AND
 			`m_1`.`ValS` IS NOT NULL
 	)
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @TypedProperty VarChar(2) -- String
-SET     @TypedProperty = 'de'
-
+;
 SELECT
 	`it`.`ID`,
 	`it`.`ValB`,

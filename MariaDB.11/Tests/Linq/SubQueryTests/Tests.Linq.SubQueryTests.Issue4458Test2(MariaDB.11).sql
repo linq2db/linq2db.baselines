@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
 	`d`.`UserId`,
@@ -17,9 +15,7 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
 	)
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`

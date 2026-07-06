@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`,
 	`d_1`.`Children`
@@ -20,9 +18,7 @@ FROM
 			GROUP BY
 				`d`.`ParentID`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`c_1`.`ParentID`
 FROM

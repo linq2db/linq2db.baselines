@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
 	`d`.`UserId`,
@@ -20,9 +18,7 @@ WHERE
 ORDER BY
 	`d`.`ItemId`,
 	`d`.`UserId`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`

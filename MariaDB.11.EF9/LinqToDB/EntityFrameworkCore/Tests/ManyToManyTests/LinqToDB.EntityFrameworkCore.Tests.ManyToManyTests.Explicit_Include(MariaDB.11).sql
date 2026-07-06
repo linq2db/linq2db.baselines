@@ -10,8 +10,6 @@ ORDER BY `o`.`Id`, `s`.`OrderId`, `s`.`ProductId`
 
 
 
--- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -22,13 +20,7 @@ FROM
 		INNER JOIN `Products` `o` ON `o`.`Id` = `d`.`ProductId`
 ORDER BY
 	`m_1`.`Id`
-
-
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Number`
@@ -36,6 +28,8 @@ FROM
 	`Orders` `t1`
 ORDER BY
 	`t1`.`Id`
+
+
 
 
 

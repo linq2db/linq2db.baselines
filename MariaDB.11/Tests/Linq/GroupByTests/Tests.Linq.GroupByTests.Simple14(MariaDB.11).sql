@@ -1,6 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`
 FROM
@@ -16,9 +14,7 @@ FROM
 			FROM
 				`Child` `d`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+;
 SELECT
 	`p`.`ParentID`
 FROM

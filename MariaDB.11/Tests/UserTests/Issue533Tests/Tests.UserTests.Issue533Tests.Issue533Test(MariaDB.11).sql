@@ -1,14 +1,4 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @FirstName VarChar(12) -- String
-SET     @FirstName = 'FirstName533'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @LastName VarChar(11) -- String
-SET     @LastName = 'LastName533'
-
-INSERT INTO `Person`
+﻿INSERT INTO `Person`
 (
 	`Gender`,
 	`FirstName`,
@@ -22,10 +12,9 @@ VALUES
 	@MiddleName,
 	@LastName
 )
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id Int32
