@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 1
 SELECT
 	[m_2].[Id1],
 	[d].[DetailId],
@@ -14,8 +14,7 @@ FROM
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
--- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 2
 SELECT
 	[m_2].[Id1],
 	[d_1].[DetailId],
@@ -42,8 +41,7 @@ FROM
 			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 		) [d_1]
 
--- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 3
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -51,9 +49,8 @@ SELECT
 	[m_1].[ByteValues]
 FROM
 	[MasterClass] [m_1]
-
 -- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 1
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -68,8 +65,7 @@ FROM
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
--- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 2
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
@@ -77,4 +73,3 @@ SELECT
 	[t1].[ByteValues]
 FROM
 	[MasterClass] [t1]
-

@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
@@ -13,10 +13,8 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
--- SqlServer.2017.MS SqlServer.2017
-
+-- Batch 2
 SELECT DISTINCT
 	[t1].[ParentID]
 FROM
 	[Child] [t1]
-
