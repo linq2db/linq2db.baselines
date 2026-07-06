@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -17,12 +17,10 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- Batch 2
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`
 FROM
 	`Parent` `t`
 LIMIT 1
-

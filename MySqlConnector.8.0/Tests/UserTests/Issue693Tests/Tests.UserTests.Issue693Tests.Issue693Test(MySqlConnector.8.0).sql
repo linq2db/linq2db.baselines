@@ -1,13 +1,9 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = 'a'
-DECLARE @MiddleName VarChar(1) -- String
-SET     @MiddleName = 'A'
-DECLARE @LastName VarChar(1) -- String
-SET     @LastName = 'b'
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- Gender = M
+-- FirstName = a
+-- MiddleName = A
+-- LastName = b
 INSERT INTO `Person`
 (
 	`Gender`,
@@ -23,20 +19,15 @@ VALUES
 	@LastName
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = 'c'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @LastName VarChar(1) -- String
-SET     @LastName = 'd'
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- Gender = M
+-- FirstName = c
+-- MiddleName = NULL
+-- LastName = d
 INSERT INTO `Person`
 (
 	`Gender`,
@@ -52,10 +43,9 @@ VALUES
 	@LastName
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id1 Int32
 SET     @id1 = 5

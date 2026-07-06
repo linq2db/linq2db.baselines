@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- input = test
 SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
@@ -12,10 +11,8 @@ FROM
 WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
+-- Batch 2
+-- input = test
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`
@@ -23,4 +20,3 @@ FROM
 	`Person` `p`
 WHERE
 	LOCATE(@input, Lower(`p`.`FirstName`)) > 0
-

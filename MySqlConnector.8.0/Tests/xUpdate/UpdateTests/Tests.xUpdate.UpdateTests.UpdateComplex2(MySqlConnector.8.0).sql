@@ -1,13 +1,9 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @Name_FirstName VarChar(13) -- String
-SET     @Name_FirstName = 'UpdateComplex'
-DECLARE @Name_MiddleName VarChar -- String
-SET     @Name_MiddleName = NULL
-DECLARE @Name_LastName VarChar(5) -- String
-SET     @Name_LastName = 'Empty'
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- Gender = M
+-- Name_FirstName = UpdateComplex
+-- Name_MiddleName = NULL
+-- Name_LastName = Empty
 INSERT INTO `Person`
 (
 	`Gender`,
@@ -23,10 +19,9 @@ VALUES
 	@Name_LastName
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 UPDATE

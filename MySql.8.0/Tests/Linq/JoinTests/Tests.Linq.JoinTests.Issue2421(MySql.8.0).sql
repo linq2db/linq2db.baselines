@@ -10,9 +10,7 @@ FROM
 		INNER JOIN `UserDTO` `a_User` ON `a_UserPosition`.`UserId` = `a_User`.`UserId`
 WHERE
 	`a_UserPosition`.`PositionId` = 1
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`x`.`SectorId`
 FROM

@@ -6,14 +6,11 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @FirstName VarChar(4) -- String
-SET     @FirstName = 'John'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- FirstName = John
+-- LastName = Shepard
+-- Gender = M
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -27,10 +24,9 @@ VALUES
 	@Gender
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

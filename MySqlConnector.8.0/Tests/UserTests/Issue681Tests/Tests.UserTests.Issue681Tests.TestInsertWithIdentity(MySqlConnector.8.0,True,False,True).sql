@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Value Int32
-SET     @Value = 10
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- Value = 10
 INSERT INTO `Issue681Table4`
 (
 	`Value`
@@ -11,7 +10,6 @@ VALUES
 	@Value
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`

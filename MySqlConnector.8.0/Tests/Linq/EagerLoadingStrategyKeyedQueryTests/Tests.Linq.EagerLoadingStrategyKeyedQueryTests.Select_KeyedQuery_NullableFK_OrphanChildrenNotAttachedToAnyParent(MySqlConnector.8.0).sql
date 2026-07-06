@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -12,8 +12,7 @@ ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- Batch 2
 SELECT
 	`p`.`Id`,
 	`p`.`Name`
@@ -21,7 +20,6 @@ FROM
 	`NullableParent` `p`
 ORDER BY
 	`p`.`Id`
-
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 WITH `CTE_1` (`Id`, `field`, `Name`)

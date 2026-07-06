@@ -20,8 +20,8 @@ FROM
 WHERE
 	`a_Book_1`.`Discriminator` = 'Novel'
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`AuthorId`,
 	`a_Book`.`BookId`,
@@ -34,11 +34,9 @@ FROM
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkAuthorId` = `m_1`.`AuthorId`
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- Batch 2
 SELECT
 	`t1`.`AuthorId`,
 	`t1`.`AuthorName`
 FROM
 	`Author` `t1`
-
