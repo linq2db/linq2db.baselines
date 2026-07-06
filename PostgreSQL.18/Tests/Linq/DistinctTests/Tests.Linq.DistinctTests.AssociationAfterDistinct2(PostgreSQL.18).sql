@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -14,8 +14,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	r_1."ParentID",
 	r_1."ChildID",
@@ -43,9 +42,8 @@ FROM
 		) t1 ON 1=1
 ORDER BY
 	t1."Count_1"
-
--- PostgreSQL.18 PostgreSQL13
-
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -60,8 +58,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."ParentID",
 	t1."ChildID",
@@ -70,4 +67,3 @@ SELECT
 FROM
 	"Child" t1
 		LEFT JOIN "Parent" "a_Parent" ON t1."ParentID" = "a_Parent"."ParentID"
-

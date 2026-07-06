@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-
+﻿-- PostgreSQL.18
+-- Batch 1
 WITH RECURSIVE cte ("Value2", "Value4")
 AS
 (
@@ -34,8 +34,7 @@ FROM
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 WITH RECURSIVE cte
 (
 	"Id",
@@ -79,4 +78,3 @@ SELECT
 FROM
 	cte t2
 		LEFT JOIN "CteChildTable" d ON t2."Value4" = d."Id"
-

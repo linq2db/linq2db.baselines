@@ -49,8 +49,8 @@ VALUES
 	:Text
 )
 
--- PostgreSQL.18 PostgreSQL13
-
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -61,8 +61,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	after_1."Id",
 	after_1."Name"
@@ -70,4 +69,3 @@ FROM
 	"Names" after_1
 ORDER BY
 	after_1."Id"
-
