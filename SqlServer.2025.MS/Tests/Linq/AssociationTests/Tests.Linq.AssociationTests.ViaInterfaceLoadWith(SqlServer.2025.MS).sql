@@ -1,15 +1,11 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[MainEntityId]
 FROM
 	[MainEntity] [m_1]
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT
 	[t1].[Id]
 FROM

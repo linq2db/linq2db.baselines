@@ -10,9 +10,7 @@ FROM
 		INNER JOIN [UserDTO] [a_User] ON [a_UserPosition].[UserId] = [a_User].[UserId]
 WHERE
 	[a_UserPosition].[PositionId] = 1
-
--- SqlServer.2025
-
+;
 SELECT
 	[x].[SectorId]
 FROM

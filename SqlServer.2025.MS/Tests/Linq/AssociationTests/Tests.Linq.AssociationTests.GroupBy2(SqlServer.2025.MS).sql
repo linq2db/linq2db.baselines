@@ -1,6 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -14,9 +12,7 @@ FROM
 	) [m_1]
 		CROSS JOIN [Child] [d]
 		INNER JOIN [Parent] [a_Parent1_1] ON [d].[ParentID] = [a_Parent1_1].[ParentID] AND [m_1].[ParentID] = [a_Parent1_1].[ParentID]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT DISTINCT
 	[a_Parent1].[ParentID]
 FROM

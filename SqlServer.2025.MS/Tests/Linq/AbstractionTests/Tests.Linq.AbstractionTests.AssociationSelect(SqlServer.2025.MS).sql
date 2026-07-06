@@ -1,6 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
 	[d_1].[ParentId],
@@ -29,16 +27,12 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[SampleClass1] [t1]
-
--- SqlServer.2025.MS SqlServer.2025
 
 SELECT
 	[m_1].[Id],
@@ -69,9 +63,7 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]

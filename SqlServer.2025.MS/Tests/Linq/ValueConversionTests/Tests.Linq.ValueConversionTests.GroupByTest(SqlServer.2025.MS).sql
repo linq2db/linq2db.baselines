@@ -1,8 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[m_1].[Id],
 	[m_1].[Value1],
@@ -18,11 +14,7 @@ FROM
 	[ValueConversion] [m_1]
 WHERE
 	@testedList = [m_1].[Value2]
-
--- SqlServer.2025.MS SqlServer.2025
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
+;
 SELECT
 	[g_1].[Id]
 FROM

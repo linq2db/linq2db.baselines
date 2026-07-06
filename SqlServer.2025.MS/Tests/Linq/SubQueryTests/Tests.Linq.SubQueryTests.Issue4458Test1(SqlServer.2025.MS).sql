@@ -1,6 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[ItemId],
 	[d].[UserId],
@@ -20,9 +18,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT
 	[i].[Id],
 	(

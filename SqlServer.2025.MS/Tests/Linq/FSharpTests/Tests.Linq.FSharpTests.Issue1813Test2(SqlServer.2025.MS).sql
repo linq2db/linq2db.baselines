@@ -49,8 +49,6 @@ VALUES
 	@Text
 )
 
--- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -60,9 +58,7 @@ FROM
 		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2025.MS SqlServer.2025
-
+;
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]
