@@ -1,6 +1,4 @@
-﻿-- SqlServer.2022.MS SqlServer.2022
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -14,9 +12,7 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]

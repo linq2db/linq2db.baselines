@@ -1,6 +1,4 @@
-﻿-- SqlServer.2022.MS SqlServer.2022
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[Amount],
@@ -24,9 +22,7 @@ WHERE
 				(N'A'), (N'B')
 			) [t1]([item])
 	)
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

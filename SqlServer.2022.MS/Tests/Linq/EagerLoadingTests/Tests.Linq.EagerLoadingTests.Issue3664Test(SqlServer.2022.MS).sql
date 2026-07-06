@@ -11,10 +11,6 @@ VALUES
 	@Id
 )
 
--- SqlServer.2022.MS SqlServer.2022
-DECLARE @id Int -- Int32
-SET     @id = 11
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -24,18 +20,12 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
 
--- SqlServer.2022.MS SqlServer.2022
-DECLARE @id Int -- Int32
-SET     @id = 12
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -45,9 +35,7 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT
 	[t1].[Id]
 FROM

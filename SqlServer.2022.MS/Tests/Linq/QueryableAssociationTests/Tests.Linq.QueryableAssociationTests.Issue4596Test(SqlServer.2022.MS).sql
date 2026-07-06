@@ -1,6 +1,4 @@
-﻿-- SqlServer.2022.MS SqlServer.2022
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[m_1].[C1],
 	[d].[Id],
@@ -23,9 +21,7 @@ ORDER BY
 	IIF([m_1].[C1] <> N'T', [d].[Name1], N''),
 	IIF([m_1].[C1] <> N'T', [d].[Name2], N''),
 	IIF([m_1].[C1] <> N'T', [d].[Name3], N'')
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2022.MS SqlServer.2022
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -12,9 +10,7 @@ FROM
 			[Child] [g_1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
-
--- SqlServer.2022.MS SqlServer.2022
-
+;
 SELECT DISTINCT
 	[g_1].[ParentID]
 FROM
