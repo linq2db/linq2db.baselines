@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -12,8 +12,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	p."Id",
 	p."Name"
@@ -21,7 +20,6 @@ FROM
 	"NullableParent" p
 ORDER BY
 	p."Id"
-
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 WITH "CTE_1" ("Id", field, "Name")
