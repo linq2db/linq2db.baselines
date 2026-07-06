@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -24,8 +24,7 @@ FROM
 ORDER BY
 	`m_1`.`Id_1`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
@@ -39,8 +38,7 @@ FROM
 ORDER BY
 	`m_1`.`LINE_ID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 3
 SELECT
 	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`
@@ -48,4 +46,3 @@ FROM
 	`PUMPLINES` `t1`
 ORDER BY
 	`t1`.`LINE_ID`
-

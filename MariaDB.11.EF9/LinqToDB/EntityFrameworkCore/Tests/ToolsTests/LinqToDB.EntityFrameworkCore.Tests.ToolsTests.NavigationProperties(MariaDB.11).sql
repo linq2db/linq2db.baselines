@@ -24,8 +24,8 @@ ORDER BY `o`.`OrderID`, `o1`.`OrderID`, `o1`.`ProductID`, `p0`.`ProductID`, `o3`
 
 
 
--- MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ProductId`,
 	`d`.`OrderID`,
@@ -42,12 +42,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Order Details` `d` ON `m_1`.`ProductId` = `d`.`ProductID`
 
-
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`a_Product`.`ProductID`,
 	`od`.`OrderID`,
@@ -58,6 +53,7 @@ FROM
 	`Orders` `o`
 		INNER JOIN `Order Details` `od` ON `o`.`OrderID` = `od`.`OrderID`
 		INNER JOIN `Products` `a_Product` ON `od`.`ProductID` = `a_Product`.`ProductID`
+
 
 
 

@@ -25,8 +25,8 @@ FROM
 				`Child` `a_Children_1`
 		) `t2` ON `p`.`ParentID` = `t2`.`ParentID` AND `t2`.`rn` = 1
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -40,11 +40,9 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`
 FROM
 	`Parent` `t1`
-

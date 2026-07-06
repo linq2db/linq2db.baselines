@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`SectorId`,
 	`a_User`.`UserId`
@@ -11,10 +11,8 @@ FROM
 WHERE
 	`a_UserPosition`.`PositionId` = 1
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`x`.`SectorId`
 FROM
 	`SectorDTO` `x`
-

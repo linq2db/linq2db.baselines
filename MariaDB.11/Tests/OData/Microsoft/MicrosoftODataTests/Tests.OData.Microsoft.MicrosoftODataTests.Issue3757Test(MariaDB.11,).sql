@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ID`,
 	`m_1`.`ValS`,
@@ -10,8 +10,7 @@ FROM
 	`Issue3757Level1` `m_1`
 		INNER JOIN `Issue3757Level2` `d` ON `m_1`.`ID` = `d`.`ParentId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`l1`.`ID`,
 	`l1`.`ValB`,
@@ -19,4 +18,3 @@ SELECT
 	`l1`.`ValInt`
 FROM
 	`Issue3757Level1` `l1`
-

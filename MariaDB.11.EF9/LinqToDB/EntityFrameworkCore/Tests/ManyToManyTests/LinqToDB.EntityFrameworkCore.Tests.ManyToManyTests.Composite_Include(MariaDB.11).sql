@@ -10,8 +10,8 @@ ORDER BY `p`.`Code`, `p`.`OrgId`, `s`.`MemberId`, `s`.`OrgId`, `s`.`Code`
 
 
 
--- MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`OrgId`,
 	`m_1`.`Code`,
@@ -24,12 +24,7 @@ FROM
 ORDER BY
 	`m_1`.`Code`
 
-
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`t1`.`OrgId`,
 	`t1`.`Code`,
@@ -38,6 +33,7 @@ FROM
 	`Projects` `t1`
 ORDER BY
 	`t1`.`Code`
+
 
 
 

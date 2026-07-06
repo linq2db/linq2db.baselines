@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 WITH `CTE_1` (`PersonID`)
 AS
 (
@@ -26,8 +26,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`PersonID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 WITH `CTE_1` (`PersonID`)
 AS
 (
@@ -42,4 +41,3 @@ SELECT
 FROM
 	`CTE_1` `r`
 		INNER JOIN `Patient` `p` ON `r`.`PersonID` = `p`.`PersonID`
-
