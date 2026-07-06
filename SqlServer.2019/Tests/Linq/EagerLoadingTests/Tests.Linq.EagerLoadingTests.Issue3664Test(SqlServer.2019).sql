@@ -24,9 +24,7 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-
--- SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -45,9 +43,7 @@ FROM
 		INNER JOIN [Test3664Item] [d] ON [m_1].[Id] = [d].[TestId]
 WHERE
 	[d].[Id] = @id
-
--- SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2019.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_2].[Id],
 	[d_1].[Id],
 	[d_1].[Value_1],
@@ -28,9 +26,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -40,8 +36,6 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_2].[Id],
@@ -80,9 +74,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -92,8 +84,6 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_2].[Id],
@@ -141,9 +131,7 @@ FROM
 		) [d_2]
 ORDER BY
 	[m_2].[Id_1]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -164,9 +152,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -176,8 +162,6 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_2].[Id],
@@ -225,9 +209,7 @@ FROM
 		) [d_2]
 ORDER BY
 	[m_2].[Id_1]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -248,9 +230,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -260,8 +240,6 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_2].[Id],
@@ -282,9 +260,7 @@ WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

@@ -1,8 +1,4 @@
-﻿-- SqlServer.2019.MS SqlServer.2019
-DECLARE @minId Int -- Int32
-SET     @minId = 2
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[DepartmentId],
@@ -16,9 +12,7 @@ WHERE
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[d].[Id],
 	[d].[Name]

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2019.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
 FROM
@@ -15,17 +13,13 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL
 WHERE
 	[d].[ParentID] IN (2)
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-
--- SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -42,9 +36,7 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL
 WHERE
 	[d].[ParentID] IN (3)
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT DISTINCT
 	[x].[ChildID]
 FROM

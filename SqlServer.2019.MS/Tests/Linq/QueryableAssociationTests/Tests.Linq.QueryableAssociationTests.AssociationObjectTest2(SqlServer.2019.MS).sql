@@ -28,8 +28,6 @@ WHERE
 			dbo.fn_SomeFunction([x].[Id]) [t1]
 	)
 
--- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -42,9 +40,7 @@ FROM
 			[SomeTable] [t1] WITH (NOLOCK)
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
-
--- SqlServer.2019.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[OwnerStr]
