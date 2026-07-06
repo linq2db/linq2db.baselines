@@ -50,7 +50,9 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(6) -- String
@@ -79,7 +81,9 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 
