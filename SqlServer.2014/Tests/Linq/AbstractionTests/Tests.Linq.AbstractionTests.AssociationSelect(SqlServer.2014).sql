@@ -29,9 +29,7 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.2014
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -69,9 +67,7 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.2014
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -77,13 +77,7 @@ WHERE
 			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 			[y_1].[expires_at] > @now
 	)
-
--- SqlServer.2014
-DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-
+;
 SELECT
 	[x].[id],
 	IIF(EXISTS(
@@ -147,13 +141,7 @@ WHERE
 			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 			[y_1].[expires_at] > @now
 	)
-
--- SqlServer.2014
-DECLARE @now DateTime2
-SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-
+;
 SELECT
 	[x].[id],
 	IIF(EXISTS(

@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-DECLARE @TypedProperty NVarChar(4000) -- String
-SET     @TypedProperty = N'%de%'
-
+-- Batch 1
+-- TypedProperty = %de%
 SELECT
 	[m_1].[ID],
 	[m_1].[ValS],
@@ -22,10 +21,8 @@ WHERE
 			[m_1].[ValS] IS NOT NULL
 	)
 
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @TypedProperty NVarChar(4000) -- String
-SET     @TypedProperty = N'%de%'
-
+-- Batch 2
+-- TypedProperty = %de%
 SELECT
 	[it].[ID],
 	[it].[ValB],
@@ -43,4 +40,3 @@ WHERE
 			[it].[ID] = [c_1].[ParentId] AND [it].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
 			[it].[ValS] IS NOT NULL
 	)
-

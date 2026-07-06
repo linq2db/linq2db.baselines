@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -18,8 +18,7 @@ WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
 	)
 
--- SqlServer.2014.MS SqlServer.2014
-
+-- Batch 2
 SELECT
 	[i].[Id],
 	(
@@ -43,4 +42,3 @@ WHERE
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
-
