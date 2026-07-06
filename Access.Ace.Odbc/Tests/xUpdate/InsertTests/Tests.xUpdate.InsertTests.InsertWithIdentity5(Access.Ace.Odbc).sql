@@ -32,7 +32,8 @@ VALUES
 
 -- Access.Ace.Odbc AccessODBC
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String
@@ -76,7 +77,8 @@ VALUES
 
 -- Access.Ace.Odbc AccessODBC
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p NVarChar(5) -- String

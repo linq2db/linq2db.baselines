@@ -13,5 +13,6 @@ VALUES
 
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 

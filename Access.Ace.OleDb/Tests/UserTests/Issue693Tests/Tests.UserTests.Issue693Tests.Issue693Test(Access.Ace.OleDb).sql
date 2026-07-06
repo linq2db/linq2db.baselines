@@ -25,7 +25,8 @@ VALUES
 
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @Gender WChar(1) -- StringFixedLength
@@ -54,7 +55,8 @@ VALUES
 
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id1 Integer -- Int32
