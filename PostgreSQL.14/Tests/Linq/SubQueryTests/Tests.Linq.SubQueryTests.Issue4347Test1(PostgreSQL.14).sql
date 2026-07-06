@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	d."Id",
 	d."Amount",
@@ -24,9 +22,7 @@ WHERE
 				('A'), ('B')
 			) t1(item)
 	)
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	x."Id",
 	x."ValidOn"

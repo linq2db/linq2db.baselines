@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @input Text(6) -- String
-SET     @input = '%test%'
-
-SELECT
+﻿SELECT
 	m_1."PersonID",
 	d."PersonID",
 	d."Diagnosis"
@@ -11,11 +7,7 @@ FROM
 		INNER JOIN "Patient" d ON m_1."PersonID" = d."PersonID"
 WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @input Text(6) -- String
-SET     @input = '%test%'
-
+;
 SELECT
 	p."FirstName",
 	p."PersonID"

@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @minId Integer -- Int32
-SET     @minId = 2
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	d."Id",
 	d."DepartmentId",
@@ -16,9 +12,7 @@ WHERE
 ORDER BY
 	d."Id",
 	m_1."Id"
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	d."Id",
 	d."Name"

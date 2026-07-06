@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."ParentID",
 	d_1."Key_1",
 	d_1."Children"
@@ -22,9 +20,7 @@ FROM
 			GROUP BY
 				d."ParentID"
 		) d_1 ON 1=1
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	c_1."ParentID"
 FROM

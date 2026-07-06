@@ -10,8 +10,6 @@ ORDER BY p."Code", p."OrgId", s."MemberId", s."OrgId", s."Code"
 
 
 
--- PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1."OrgId",
 	m_1."Code",
@@ -23,13 +21,7 @@ FROM
 		INNER JOIN "Members" o ON o."Id" = d."MemberId"
 ORDER BY
 	m_1."Code"
-
-
-
-
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1."OrgId",
 	t1."Code",
@@ -38,6 +30,8 @@ FROM
 	"Projects" t1
 ORDER BY
 	t1."Code"
+
+
 
 
 

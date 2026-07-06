@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."ParentID",
 	d."ChildID"
 FROM
@@ -13,9 +11,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 ORDER BY
 	m_1."ParentID"
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	p."ParentID"
 FROM

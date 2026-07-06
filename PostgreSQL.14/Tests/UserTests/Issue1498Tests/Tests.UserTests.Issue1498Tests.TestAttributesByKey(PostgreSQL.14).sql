@@ -19,8 +19,6 @@ VALUES
 	:Text
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	d."Id"
@@ -35,9 +33,7 @@ FROM
 		LIMIT 1
 	) m_1
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	x."Id",
 	x."Title",

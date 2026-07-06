@@ -10,8 +10,6 @@ ORDER BY s."Id", s0."CoursesId", s0."StudentsId"
 
 
 
--- PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	o."Id",
@@ -22,13 +20,7 @@ FROM
 		INNER JOIN "Courses" o ON o."Id" = d."CoursesId"
 ORDER BY
 	m_1."Id"
-
-
-
-
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Name"
@@ -36,6 +28,8 @@ FROM
 	"Students" t1
 ORDER BY
 	t1."Id"
+
+
 
 
 

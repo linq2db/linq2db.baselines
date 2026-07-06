@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	"a_Documents"."Name"
 FROM
@@ -26,9 +24,7 @@ FROM
 		INNER JOIN "EmailAttachmentAssociation" d ON m_1."Id" = d."EmailId"
 		INNER JOIN "Attachment" "a_Attachment" ON d."AttachmentId" = "a_Attachment"."Id"
 		INNER JOIN "Document" "a_Documents" ON "a_Attachment"."Id" = "a_Documents"."AttachmentId"
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1.not_null,
 	t1."Id"

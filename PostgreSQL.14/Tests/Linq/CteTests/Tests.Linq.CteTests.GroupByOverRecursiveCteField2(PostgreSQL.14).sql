@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
-WITH RECURSIVE cte ("Field1", "Field2", "Field3")
+﻿WITH RECURSIVE cte ("Field1", "Field2", "Field3")
 AS
 (
 	SELECT
@@ -39,11 +35,7 @@ FROM
 			cte t2
 	) m_1
 		INNER JOIN cte d ON m_1."Key_1" = d."Field2"
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
+;
 WITH RECURSIVE cte ("Field2", "Field3")
 AS
 (

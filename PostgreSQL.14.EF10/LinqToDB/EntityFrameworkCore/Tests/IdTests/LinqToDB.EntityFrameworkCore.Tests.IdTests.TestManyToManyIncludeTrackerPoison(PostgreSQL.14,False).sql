@@ -10,8 +10,6 @@ ORDER BY e.id, s.entity_id, s.item_id
 
 
 
--- PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1.id,
 	d.entity_id,
@@ -22,18 +20,14 @@ FROM
 	entities m_1
 		INNER JOIN entity2_item d ON m_1.id = d.entity_id
 		INNER JOIN items "a_Item" ON d.item_id = "a_Item".id
-
-
-
-
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1.id,
 	t1.name
 FROM
 	entities t1
+
+
 
 
 
