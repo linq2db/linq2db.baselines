@@ -1,7 +1,7 @@
 ﻿
 
--- PostgreSQL.19 PostgreSQL13
-
+-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."OrderID",
 	d."IsDeleted",
@@ -26,12 +26,7 @@ FROM
 		INNER JOIN "Order Details" d ON m_1."OrderID" = d."OrderID"
 		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 
-
-
-
-
--- PostgreSQL.19 PostgreSQL13
-
+-- Batch 2
 SELECT
 	e."IsDeleted",
 	e."OrderID",
@@ -50,6 +45,7 @@ SELECT
 	e."ShipCountry"
 FROM
 	"Orders" e
+
 
 
 

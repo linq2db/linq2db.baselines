@@ -10,8 +10,8 @@ ORDER BY e.id, s.entity_id, s.item_id
 
 
 
--- PostgreSQL.19 PostgreSQL13
-
+-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1.id,
 	d.entity_id,
@@ -23,17 +23,13 @@ FROM
 		INNER JOIN entity2_item d ON m_1.id = d.entity_id
 		INNER JOIN items "a_Item" ON d.item_id = "a_Item".id
 
-
-
-
-
--- PostgreSQL.19 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1.id,
 	t1.name
 FROM
 	entities t1
+
 
 
 
