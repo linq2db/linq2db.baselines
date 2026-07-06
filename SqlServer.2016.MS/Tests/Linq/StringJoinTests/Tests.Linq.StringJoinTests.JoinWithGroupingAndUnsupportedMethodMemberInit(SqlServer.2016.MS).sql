@@ -1,6 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d_1].[Name]
 FROM
@@ -22,9 +20,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -47,9 +43,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_1].[Key_1]
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 SELECT DISTINCT
 	[g_1].[Id]
 FROM

@@ -16,9 +16,7 @@ WHERE
 ORDER BY
 	[d].[PK],
 	[m_1].[Key_1]
-
--- SqlServer.2016
-
+;
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM

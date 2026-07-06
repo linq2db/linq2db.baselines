@@ -11,9 +11,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2016
-
+;
 SELECT
 	[p].[Id],
 	[p].[Name]

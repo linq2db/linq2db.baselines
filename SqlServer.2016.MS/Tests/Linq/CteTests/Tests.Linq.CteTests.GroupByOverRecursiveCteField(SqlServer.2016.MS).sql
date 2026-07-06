@@ -1,6 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-
-WITH [cte] ([ChildID], [ParentID], [GrandChildID])
+﻿WITH [cte] ([ChildID], [ParentID], [GrandChildID])
 AS
 (
 	SELECT
@@ -34,9 +32,7 @@ FROM
 			[cte] [t1]
 	) [m_1]
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 WITH [cte] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

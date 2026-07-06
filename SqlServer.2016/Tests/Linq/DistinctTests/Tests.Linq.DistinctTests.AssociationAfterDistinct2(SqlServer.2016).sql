@@ -13,9 +13,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2016
-
+;
 SELECT
 	[r_1].[ParentID],
 	[r_1].[ChildID],
@@ -59,9 +57,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2016
-
+;
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

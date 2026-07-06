@@ -1,8 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-DECLARE @eventId Int -- Int32
-SET     @eventId = 1
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[EventSchedulePersonId],
 	[d].[Id],
@@ -13,11 +9,7 @@ FROM
 		LEFT JOIN [EventSchedulePerson] [a_Person] ON [d].[EventSchedulePersonId] = [a_Person].[Id]
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
-
--- SqlServer.2016.MS SqlServer.2016
-DECLARE @eventId Int -- Int32
-SET     @eventId = 1
-
+;
 SELECT
 	[p].[Id]
 FROM

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[Amount],
@@ -8,9 +6,7 @@ SELECT
 FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

@@ -1,8 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-DECLARE @skip Int -- Int32
-SET     @skip = 6
-
-SELECT
+﻿SELECT
 	[m_1].[c1],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
@@ -42,11 +38,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2016.MS SqlServer.2016
-DECLARE @skip Int -- Int32
-SET     @skip = 6
-
+;
 SELECT
 	[t1].[BookType],
 	IIF([t1].[BookType] = N'Roman', 1, 0),
@@ -73,8 +65,6 @@ ORDER BY
 	[t1].[BookType] DESC
 OFFSET @skip ROWS
 
--- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -83,9 +73,7 @@ FROM
 	[Book] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 SELECT
 	[t1].[Discriminator],
 	[t1].[BookId],

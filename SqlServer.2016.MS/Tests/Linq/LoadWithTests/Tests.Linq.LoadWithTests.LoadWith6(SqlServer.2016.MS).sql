@@ -1,6 +1,4 @@
-﻿-- SqlServer.2016.MS SqlServer.2016
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
 	[d].[ParentID],
@@ -15,9 +13,7 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[ParentID] = [d].[ParentID] AND [m_1].[ChildID] = [d].[ChildID]
 		LEFT JOIN [Child] [a_Child] ON [d].[ParentID] = [a_Child].[ParentID] AND [d].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
-
--- SqlServer.2016.MS SqlServer.2016
-
+;
 SELECT
 	(
 		SELECT
