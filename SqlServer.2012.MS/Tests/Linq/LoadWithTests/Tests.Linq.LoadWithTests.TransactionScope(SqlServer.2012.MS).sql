@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -14,12 +14,10 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2012.MS SqlServer.2012
-
+-- Batch 2
 SELECT TOP (1)
 	[x].[ParentID]
 FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 1
-

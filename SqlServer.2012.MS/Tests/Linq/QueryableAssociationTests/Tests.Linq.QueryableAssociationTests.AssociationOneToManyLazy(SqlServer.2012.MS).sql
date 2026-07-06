@@ -14,9 +14,8 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 1
+-- take = 2
 SELECT
 	[m_1].[Id],
 	[d_1].[Id],
@@ -43,10 +42,8 @@ FROM
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
 
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 2
+-- take = 2
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -65,10 +62,8 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 3
+-- take = 2
 SELECT TOP (@take)
 	[t2].[Id],
 	[t2].[OwnerStr],
@@ -85,7 +80,6 @@ FROM
 			WHERE
 				[a_Other].[Id] = [t2].[Id]
 		) [t1]
-
 -- SqlServer.2012.MS SqlServer.2012
 
 

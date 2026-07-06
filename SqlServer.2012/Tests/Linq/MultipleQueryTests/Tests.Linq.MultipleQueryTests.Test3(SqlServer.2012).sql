@@ -5,9 +5,7 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
-
--- SqlServer.2012
-
+;
 SELECT
 	1
 FROM
