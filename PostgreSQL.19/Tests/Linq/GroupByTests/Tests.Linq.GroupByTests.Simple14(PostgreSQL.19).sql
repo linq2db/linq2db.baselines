@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."ParentID",
 	d_1."Key_1"
 FROM
@@ -18,9 +16,7 @@ FROM
 			WHERE
 				m_1."ParentID" = d."ParentID"
 		) d_1 ON 1=1
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	p."ParentID"
 FROM

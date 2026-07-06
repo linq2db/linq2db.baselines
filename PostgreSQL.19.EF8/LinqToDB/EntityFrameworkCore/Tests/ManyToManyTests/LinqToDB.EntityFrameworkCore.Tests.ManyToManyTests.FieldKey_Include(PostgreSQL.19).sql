@@ -10,8 +10,6 @@ ORDER BY r."Id", t."AccountsAccountId", t."RolesId"
 
 
 
--- PostgreSQL.19 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	o."Name"
@@ -21,13 +19,7 @@ FROM
 		INNER JOIN "Accounts" o ON o.account_id_col = d."AccountsAccountId"
 ORDER BY
 	m_1."Id"
-
-
-
-
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Name"
@@ -35,6 +27,8 @@ FROM
 	"Roles" t1
 ORDER BY
 	t1."Id"
+
+
 
 
 

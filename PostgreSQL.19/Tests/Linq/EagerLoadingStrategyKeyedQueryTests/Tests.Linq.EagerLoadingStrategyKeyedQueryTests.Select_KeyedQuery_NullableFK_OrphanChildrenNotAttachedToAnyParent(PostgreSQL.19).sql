@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	d."Id",
 	d."ParentId",
@@ -11,9 +9,7 @@ FROM
 ORDER BY
 	d."Id",
 	m_1."Id"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	p."Id",
 	p."Name"

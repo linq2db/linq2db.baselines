@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-WITH RECURSIVE cte ("Id")
+﻿WITH RECURSIVE cte ("Id")
 AS
 (
 	SELECT
@@ -31,9 +29,7 @@ FROM
 				INNER JOIN "Patient" p_1 ON t2."Id" = p_1."PersonID"
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Id"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 WITH RECURSIVE cte ("Id")
 AS
 (

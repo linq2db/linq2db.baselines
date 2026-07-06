@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Key_1",
 	d."ParentID",
 	d."ChildID"
@@ -24,9 +22,7 @@ FROM
 			END
 			ELSE '3'
 		END
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN g_1."ParentID" > 2 THEN CASE

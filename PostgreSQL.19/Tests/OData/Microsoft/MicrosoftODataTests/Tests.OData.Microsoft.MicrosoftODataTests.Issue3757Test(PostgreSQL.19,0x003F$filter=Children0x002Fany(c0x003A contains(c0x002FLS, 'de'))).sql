@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-DECLARE @TypedProperty Text(4) -- String
-SET     @TypedProperty = '%de%'
-
-SELECT
+﻿SELECT
 	m_1."ID",
 	m_1."ValS",
 	d."ID",
@@ -21,11 +17,7 @@ WHERE
 			m_1."ID" = c_1."ParentId" AND m_1."ValS" LIKE :TypedProperty ESCAPE '~' AND
 			m_1."ValS" IS NOT NULL
 	)
-
--- PostgreSQL.19 PostgreSQL13
-DECLARE @TypedProperty Text(4) -- String
-SET     @TypedProperty = '%de%'
-
+;
 SELECT
 	it."ID",
 	it."ValB",

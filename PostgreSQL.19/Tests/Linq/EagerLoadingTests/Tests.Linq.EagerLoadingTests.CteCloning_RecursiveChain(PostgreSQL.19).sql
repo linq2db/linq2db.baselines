@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-WITH RECURSIVE cte ("Value2")
+﻿WITH RECURSIVE cte ("Value2")
 AS
 (
 	SELECT
@@ -81,9 +79,7 @@ FROM
 				LEFT JOIN "CteChildTable" d ON t7."Value4" = d."Id"
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 WITH RECURSIVE cte ("Value2")
 AS
 (

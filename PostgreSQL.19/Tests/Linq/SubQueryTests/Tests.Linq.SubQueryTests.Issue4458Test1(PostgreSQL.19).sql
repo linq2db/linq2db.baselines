@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	d."ItemId",
 	d."UserId",
@@ -20,9 +18,7 @@ WHERE
 ORDER BY
 	d."ItemId",
 	d."UserId"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	i."Id",
 	(

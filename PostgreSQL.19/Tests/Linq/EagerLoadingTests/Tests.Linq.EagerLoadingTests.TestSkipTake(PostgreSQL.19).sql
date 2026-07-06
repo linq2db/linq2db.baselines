@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_2."Id1",
 	d."DetailId",
 	d."MasterId",
@@ -13,9 +11,7 @@ FROM
 			"MasterClass" m_1
 	) m_2
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	m_2."Id1",
 	d_1."DetailId",
@@ -41,9 +37,7 @@ FROM
 				d."DetailId"
 			LIMIT 2 OFFSET 1 
 		) d_1 ON 1=1
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	m_1."Id1",
 	m_1."Id2",
@@ -51,8 +45,6 @@ SELECT
 	m_1."ByteValues"
 FROM
 	"MasterClass" m_1
-
--- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	m_1."Id1",
@@ -67,9 +59,7 @@ FROM
 			"MasterClass" t1
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
-
--- PostgreSQL.19 PostgreSQL13
-
+;
 SELECT
 	t1."Id1",
 	t1."Id2",
