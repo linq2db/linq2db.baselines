@@ -1,7 +1,7 @@
 ﻿
 
 -- SqlServer.2022
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d_1].[Key_1],
@@ -22,16 +22,12 @@ FROM
 				[d].[ParentId]
 		) [d_1]
 
-
-
-
-
--- SqlServer.2022
-
+-- Batch 2
 SELECT
 	[c_1].[Id]
 FROM
 	[Parents] [c_1]
+
 
 
 

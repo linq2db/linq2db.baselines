@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[m_1].[C1],
@@ -24,11 +24,9 @@ ORDER BY
 	IIF([m_1].[C1] <> N'T', [d].[Name2], N''),
 	IIF([m_1].[C1] <> N'T', [d].[Name3], N'')
 
--- SqlServer.2022.MS SqlServer.2022
-
+-- Batch 2
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]
 FROM
 	[Issue4596Form] [t1]
-

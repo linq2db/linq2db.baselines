@@ -22,13 +22,7 @@ FROM
 		INNER JOIN [Courses] [o] ON [o].[Id] = [d].[CoursesId]
 ORDER BY
 	[m_1].[Id]
-
-
-
-
-
--- SqlServer.2022
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -36,6 +30,8 @@ FROM
 	[Students] [t1]
 ORDER BY
 	[t1].[Id]
+
+
 
 
 

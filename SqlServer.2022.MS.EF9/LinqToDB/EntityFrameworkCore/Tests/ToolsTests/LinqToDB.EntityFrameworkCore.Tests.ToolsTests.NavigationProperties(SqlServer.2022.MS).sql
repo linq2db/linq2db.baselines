@@ -41,13 +41,7 @@ FROM
 				INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
 	) [m_1]
 		INNER JOIN [Order Details] [d] ON [m_1].[ProductId] = [d].[ProductID]
-
-
-
-
-
--- SqlServer.2022
-
+;
 SELECT
 	[a_Product].[ProductID],
 	[od].[OrderID],
@@ -58,6 +52,8 @@ FROM
 	[Orders] [o]
 		INNER JOIN [Order Details] [od] ON [o].[OrderID] = [od].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]
+
+
 
 
 
