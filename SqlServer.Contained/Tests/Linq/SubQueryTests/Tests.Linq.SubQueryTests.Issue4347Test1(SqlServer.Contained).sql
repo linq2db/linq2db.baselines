@@ -24,9 +24,7 @@ WHERE
 				(N'A'), (N'B')
 			) [t1]([item])
 	)
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

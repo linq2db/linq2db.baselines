@@ -24,9 +24,7 @@ FROM
 			[p].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[p].[ParentID],
 	[t1].[ParentID],

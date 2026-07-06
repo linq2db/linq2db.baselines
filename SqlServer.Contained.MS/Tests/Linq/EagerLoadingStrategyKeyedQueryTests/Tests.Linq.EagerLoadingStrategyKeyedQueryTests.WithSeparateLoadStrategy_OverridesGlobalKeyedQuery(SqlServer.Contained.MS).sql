@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -22,8 +22,7 @@ ORDER BY
 	[m_1].[Id],
 	[m_1].[Id_1]
 
--- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -35,8 +34,7 @@ ORDER BY
 	[d].[Id],
 	[m_1].[Id]
 
--- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 3
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -44,4 +42,3 @@ FROM
 	[Company] [c_1]
 ORDER BY
 	[c_1].[Id]
-

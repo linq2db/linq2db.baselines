@@ -32,7 +32,7 @@ FROM
 		) [t2]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -46,11 +46,9 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
-

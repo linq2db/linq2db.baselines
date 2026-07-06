@@ -22,9 +22,7 @@ FROM
 			GROUP BY
 				[d].[ParentID]
 		) [d_1]
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[c_1].[ParentID]
 FROM

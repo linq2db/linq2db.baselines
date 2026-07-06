@@ -23,13 +23,7 @@ FROM
 		INNER JOIN [Members] [o] ON [o].[Id] = [d].[MemberId]
 ORDER BY
 	[m_1].[Code]
-
-
-
-
-
--- SqlServer.2019
-
+;
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],
@@ -38,6 +32,8 @@ FROM
 	[Projects] [t1]
 ORDER BY
 	[t1].[Code]
+
+
 
 
 

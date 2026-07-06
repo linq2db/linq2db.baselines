@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
@@ -23,10 +23,8 @@ FROM
 				[d].[ParentID]
 		) [d_1]
 
--- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[c_1].[ParentID]
 FROM
 	[Parent] [c_1]
-
