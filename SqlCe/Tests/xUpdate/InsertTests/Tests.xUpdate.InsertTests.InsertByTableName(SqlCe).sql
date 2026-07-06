@@ -50,7 +50,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY as [c1]
 
 -- SqlCe
 DECLARE @FirstName NVarChar(6) -- String
@@ -79,7 +80,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY as [c1]
 
 -- SqlCe
 
