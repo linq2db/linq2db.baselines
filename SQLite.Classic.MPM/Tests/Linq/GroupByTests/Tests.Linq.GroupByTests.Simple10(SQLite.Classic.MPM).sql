@@ -12,9 +12,7 @@ FROM
 			[Child] [g_1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT DISTINCT
 	[g_1].[ParentID]
 FROM

@@ -96,9 +96,7 @@ FROM
 		INNER JOIN [KChild] [d] ON [d].[F1] = [m_1].[K1] AND [d].[F2] = [m_1].[K2] AND [d].[F3] = [m_1].[K3] AND [d].[F4] = [m_1].[K4] AND [d].[F5] = [m_1].[K5] AND [d].[F6] = [m_1].[K6] AND [d].[F7] = [m_1].[K7] AND [d].[F8] = [m_1].[K8] AND [d].[F9] = [m_1].[K9]
 ORDER BY
 	[d].[Id]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[p].[Id],
 	[p].[K8],

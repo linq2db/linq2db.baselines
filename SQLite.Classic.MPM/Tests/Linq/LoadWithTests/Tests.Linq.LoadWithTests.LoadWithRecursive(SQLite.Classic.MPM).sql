@@ -28,9 +28,7 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -47,9 +45,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -66,9 +62,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -108,9 +102,7 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -127,9 +119,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

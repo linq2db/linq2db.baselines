@@ -13,9 +13,7 @@ FROM
 			[MasterClass] [m_1]
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[m_2].[Id1],
 	[d_1].[DetailId],
@@ -39,9 +37,7 @@ FROM
 		) [d_1] ON [m_2].[Id1] = [d_1].[MasterId] AND [d_1].[rn] > 1 AND [d_1].[rn] <= 3
 ORDER BY
 	[d_1].[DetailId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -65,9 +61,7 @@ FROM
 			[MasterClass] [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

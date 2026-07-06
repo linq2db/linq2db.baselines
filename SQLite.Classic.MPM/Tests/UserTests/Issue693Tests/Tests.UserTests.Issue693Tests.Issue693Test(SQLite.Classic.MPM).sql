@@ -22,10 +22,9 @@ VALUES
 	@MiddleName,
 	@LastName
 )
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
@@ -51,10 +50,9 @@ VALUES
 	@MiddleName,
 	@LastName
 )
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id1  -- Int32
