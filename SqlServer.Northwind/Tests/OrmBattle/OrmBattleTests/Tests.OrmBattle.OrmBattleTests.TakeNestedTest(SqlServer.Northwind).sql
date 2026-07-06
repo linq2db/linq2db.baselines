@@ -41,9 +41,7 @@ FROM
 			ORDER BY
 				[d].[OrderDate] DESC
 		) [d_1]
-
--- SqlServer.Northwind SqlServer.2019
-
+;
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],

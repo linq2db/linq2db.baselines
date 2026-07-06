@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[SupplierID],
 	[d].[CompanyName]
@@ -13,8 +13,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[p].[Discontinued],
 	[p].[ProductID],
@@ -30,4 +29,3 @@ SELECT
 FROM
 	[Products] [p]
 		LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
-

@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Region],
 	[m_1].[City],
@@ -24,11 +24,9 @@ FROM
 	) [m_1]
 		INNER JOIN [Customers] [d] ON ([m_1].[Region] = [d].[Region] OR [m_1].[Region] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[City] = [d].[City] OR [m_1].[City] IS NULL AND [d].[City] IS NULL)
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT DISTINCT
 	[t1].[Region],
 	[t1].[City]
 FROM
 	[Customers] [t1]
-

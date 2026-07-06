@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[CustomerID],
 	[d].[OrderID],
@@ -20,10 +20,8 @@ FROM
 	[Customers] [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[i].[CustomerID]
 FROM
 	[Customers] [i]
-

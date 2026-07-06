@@ -35,9 +35,7 @@ FROM
 			WHERE
 				[d].[CustomerID] = [a_Orders_1].[CustomerID]
 		) >= 80, 1, 0)
-
--- SqlServer.Northwind SqlServer.2019
-
+;
 SELECT DISTINCT
 	IIF((
 		SELECT
