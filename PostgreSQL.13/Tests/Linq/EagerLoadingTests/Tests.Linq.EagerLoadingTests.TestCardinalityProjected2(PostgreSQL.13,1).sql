@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.13 PostgreSQL13
-
+﻿-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -16,8 +16,7 @@ FROM
 	) m_1
 		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1."FK"
 
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	m_1."Id",
 	d."Id"
@@ -25,10 +24,8 @@ FROM
 	"EntityMA" m_1
 		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK"
 
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 3
 SELECT
 	e."Id"
 FROM
 	"EntityMA" e
-

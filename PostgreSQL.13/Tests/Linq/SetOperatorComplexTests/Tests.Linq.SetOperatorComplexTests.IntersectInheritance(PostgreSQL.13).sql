@@ -20,8 +20,8 @@ FROM
 WHERE
 	"a_Book_1"."Discriminator" = 'Novel'
 
--- PostgreSQL.13 PostgreSQL13
-
+-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."AuthorId",
 	"a_Book"."BookId",
@@ -34,11 +34,9 @@ FROM
 		INNER JOIN "BookAuthor" d ON d."FkAuthorId" = m_1."AuthorId"
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."AuthorId",
 	t1."AuthorName"
 FROM
 	"Author" t1
-
