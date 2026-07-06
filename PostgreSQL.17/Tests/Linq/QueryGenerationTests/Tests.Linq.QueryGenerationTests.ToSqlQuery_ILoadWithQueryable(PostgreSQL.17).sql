@@ -8,8 +8,8 @@ FROM
 WHERE
 	p."ParentID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -31,8 +31,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -41,4 +40,3 @@ FROM
 WHERE
 	p."ParentID" = 1
 LIMIT 2
-

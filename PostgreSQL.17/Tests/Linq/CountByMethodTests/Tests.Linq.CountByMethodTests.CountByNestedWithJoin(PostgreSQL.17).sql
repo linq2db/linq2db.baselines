@@ -17,8 +17,8 @@ FROM
 		) c_2 ON 1=1
 		INNER JOIN "Parent" p2 ON p."ParentID" = p2."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -32,14 +32,12 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."ParentID",
 	t1."Value1"
 FROM
 	"Parent" t1
-
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
