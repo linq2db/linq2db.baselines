@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 6
-
+-- Batch 1
+-- skip = 6
 SELECT
 	[m_1].[c1],
 	[a_Author].[AuthorId],
@@ -49,10 +48,8 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 6
-
+-- Batch 2
+-- skip = 6
 SELECT
 	[t2].[BookType],
 	[t2].[Authors],
@@ -90,9 +87,8 @@ WHERE
 	[t2].[RN] > @skip
 ORDER BY
 	[t2].[BookType] DESC
-
 -- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 1
 SELECT
 	[m_1].[BookId],
 	[a_Author].[AuthorId],
@@ -102,8 +98,7 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 2
 SELECT
 	[t1].[Discriminator],
 	[t1].[BookId],
@@ -112,4 +107,3 @@ SELECT
 	[t1].[RomanScore]
 FROM
 	[Book] [t1]
-

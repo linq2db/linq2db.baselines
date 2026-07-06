@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -14,8 +14,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2008
-
+-- Batch 2
 SELECT TOP (1)
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -24,4 +23,3 @@ SELECT TOP (1)
 FROM
 	[Child] [t1]
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-

@@ -21,9 +21,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1],
 	[d_1].[Value_1]
-
--- SqlServer.2008
-
+;
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM
