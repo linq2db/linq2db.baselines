@@ -11,7 +11,7 @@ ORDER BY [a].[Id], [s].[ArticlesId], [s].[TagsTagId]
 
 
 -- SqlServer.2016
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[o].[Label]
@@ -22,12 +22,7 @@ FROM
 ORDER BY
 	[m_1].[Id]
 
-
-
-
-
--- SqlServer.2016
-
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[Title]
@@ -35,6 +30,7 @@ FROM
 	[Articles] [t1]
 ORDER BY
 	[t1].[Id]
+
 
 
 

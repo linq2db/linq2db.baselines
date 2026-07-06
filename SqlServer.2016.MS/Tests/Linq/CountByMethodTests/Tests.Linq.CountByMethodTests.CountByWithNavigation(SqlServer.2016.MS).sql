@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -21,8 +21,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 2
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
@@ -42,9 +41,8 @@ FROM
 		) [c_2]
 ORDER BY
 	[c_2].[Key_1]
-
 -- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -58,11 +56,9 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 2
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
-

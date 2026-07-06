@@ -21,13 +21,7 @@ FROM
 		INNER JOIN [Tags] [o] ON [o].[tag_id_col] = [d].[TagsTagId]
 ORDER BY
 	[m_1].[Id]
-
-
-
-
-
--- SqlServer.2016
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Title]
@@ -35,6 +29,8 @@ FROM
 	[Articles] [t1]
 ORDER BY
 	[t1].[Id]
+
+
 
 
 
