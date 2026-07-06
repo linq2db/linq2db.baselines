@@ -1,10 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @name Text(4) -- String
-SET     @name = 'test'
-
-SELECT
+﻿SELECT
 	m_1."PersonID",
 	m_1."FirstName",
 	m_1."PersonID",
@@ -16,13 +10,7 @@ FROM
 WHERE
 	m_1."PersonID" = :id AND m_1."LastName" <> :name OR
 	m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @name Text(4) -- String
-SET     @name = 'test'
-
+;
 SELECT
 	x."PersonID"
 FROM

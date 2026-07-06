@@ -16,8 +16,6 @@ FROM
 WHERE
 	s."Value_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -30,9 +28,7 @@ FROM
 			"Parent" t1
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."ParentID",
 	t1."Value1"

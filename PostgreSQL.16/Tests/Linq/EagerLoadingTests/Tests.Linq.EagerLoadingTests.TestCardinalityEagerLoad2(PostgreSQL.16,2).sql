@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	d."Id",
 	d."FK",
@@ -11,9 +9,7 @@ FROM
 	"EntityMA" m_1
 		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK"
 		LEFT JOIN "EntityMD" "a_ObjectD" ON d."FKD" = "a_ObjectD"."Id"
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."FK",

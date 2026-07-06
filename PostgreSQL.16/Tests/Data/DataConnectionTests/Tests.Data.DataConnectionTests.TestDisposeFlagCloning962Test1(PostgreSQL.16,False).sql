@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."CategoryID",
 	d."ProductID",
 	d."ProductName",
@@ -9,9 +7,7 @@ SELECT
 FROM
 	"Categories" m_1
 		INNER JOIN "Products" d ON m_1."CategoryID" = d."CategoryID"
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."CategoryID",
 	t1."CategoryName",

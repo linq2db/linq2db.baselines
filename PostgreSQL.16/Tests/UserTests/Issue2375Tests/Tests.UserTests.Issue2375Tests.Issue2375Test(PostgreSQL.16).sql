@@ -65,8 +65,6 @@ VALUES
 	:ModifiedTimeStamp
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
 SELECT
 	m_1."Status",
 	m_1."ResourceLabel",
@@ -96,9 +94,7 @@ FROM
 	) m_1
 		INNER JOIN "InventoryResourceDTO" d ON m_1."Status" = d."Status"
 		INNER JOIN "WmsLoadCarrierDTO" lc_1 ON d."ResourceID" = lc_1."Id" AND (m_1."ResourceLabel" = lc_1."ResourceLabel" OR m_1."ResourceLabel" IS NULL AND lc_1."ResourceLabel" IS NULL)
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	grp."Status",
 	lc."ResourceLabel"

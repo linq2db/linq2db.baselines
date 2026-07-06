@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	m_1."Name",
 	d."Id",
@@ -10,9 +8,7 @@ FROM
 		INNER JOIN "Department" d ON d."CompanyId" = m_1."Id"
 ORDER BY
 	m_1."Id"
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	c_1."Id",
 	c_1."Name"
