@@ -47,10 +47,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(6) -- String
@@ -76,10 +75,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 

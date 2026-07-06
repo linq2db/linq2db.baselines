@@ -28,13 +28,7 @@ FROM
 WHERE
 	NOT [m_1].[IsDeleted] AND NOT [a_Product].[IsDeleted] AND
 	NOT [d].[IsDeleted]
-
-
-
-
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],
@@ -55,6 +49,8 @@ FROM
 	[Orders] [e]
 WHERE
 	NOT [e].[IsDeleted]
+
+
 
 
 

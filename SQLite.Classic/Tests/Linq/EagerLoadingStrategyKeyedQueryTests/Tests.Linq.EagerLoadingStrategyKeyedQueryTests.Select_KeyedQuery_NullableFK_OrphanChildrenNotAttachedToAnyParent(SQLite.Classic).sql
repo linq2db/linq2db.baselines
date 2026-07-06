@@ -11,9 +11,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[p].[Id],
 	[p].[Name]

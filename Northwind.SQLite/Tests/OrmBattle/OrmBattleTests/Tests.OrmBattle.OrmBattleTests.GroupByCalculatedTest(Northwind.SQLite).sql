@@ -36,9 +36,7 @@ FROM
 			END
 			ELSE 'cheap'
 		END
-
--- Northwind.SQLite SQLite.Classic SQLite
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[Freight] > 50 THEN CASE

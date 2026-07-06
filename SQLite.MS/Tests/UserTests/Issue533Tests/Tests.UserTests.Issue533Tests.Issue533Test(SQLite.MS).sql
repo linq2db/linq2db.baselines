@@ -22,10 +22,9 @@ VALUES
 	@MiddleName,
 	@LastName
 )
-
--- SQLite.MS SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
