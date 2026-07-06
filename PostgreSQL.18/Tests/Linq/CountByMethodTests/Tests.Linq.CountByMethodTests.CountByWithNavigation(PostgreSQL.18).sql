@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."ParentID",
 	d."ParentID",
 	d."ChildID"
@@ -20,9 +18,7 @@ FROM
 				) c_2 ON 1=1
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
-
--- PostgreSQL.18 PostgreSQL13
-
+;
 SELECT
 	p."ParentID",
 	p."Value1",
@@ -43,8 +39,6 @@ FROM
 ORDER BY
 	c_2."Key_1"
 
--- PostgreSQL.18 PostgreSQL13
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -57,9 +51,7 @@ FROM
 			"Parent" t1
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
-
--- PostgreSQL.18 PostgreSQL13
-
+;
 SELECT
 	t1."ParentID",
 	t1."Value1"

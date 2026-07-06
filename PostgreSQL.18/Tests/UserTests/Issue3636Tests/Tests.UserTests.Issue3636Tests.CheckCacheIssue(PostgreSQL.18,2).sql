@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-DECLARE @myId Integer -- Int32
-SET     @myId = 2
-
-SELECT
+﻿SELECT
 	m_1."Key_1",
 	d.id,
 	d.id2,
@@ -26,11 +22,7 @@ FROM
 		LEFT JOIN "T2" order_2 ON d.id = order_2.id AND order_2.id2 = :myId
 WHERE
 	d.id2 = :myId
-
--- PostgreSQL.18 PostgreSQL13
-DECLARE @myId Integer -- Int32
-SET     @myId = 2
-
+;
 SELECT DISTINCT
 	x.id
 FROM
