@@ -7,19 +7,19 @@ FROM
 	[Parent] [m_1]
 		INNER JOIN (
 			SELECT
-				[id].[ParentID]
+				[id].[ParentID] as [set_col_0__]
 			FROM
 				[Parent] [id]
 			WHERE
 				[id].[ParentID] = 1
 			UNION ALL
 			SELECT
-				[t].[ParentID]
+				[t].[ParentID] as [set_col_0__]
 			FROM
 				[Parent] [t]
 			WHERE
 				[t].[ParentID] = 2
-		) [id_1] ON [id_1].[ParentID] = [m_1].[ParentID]
+		) [id_1] ON [id_1].[set_col_0__] = [m_1].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 

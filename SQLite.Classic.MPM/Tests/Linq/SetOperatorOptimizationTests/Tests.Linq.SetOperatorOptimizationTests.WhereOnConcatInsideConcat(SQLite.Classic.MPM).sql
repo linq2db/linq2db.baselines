@@ -1,11 +1,11 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t2].[ItemNumber]
+	[t2].[set_col_0__]
 FROM
 	(
 		SELECT
-			[t1].[ItemNumber]
+			[t1].[ItemNumber] as [set_col_0__]
 		FROM
 			(
 				SELECT
@@ -28,14 +28,14 @@ FROM
 			[t1].[ItemNumber] IS NOT NULL
 		UNION ALL
 		SELECT
-			[t_1].[ItemNumber]
+			[t_1].[ItemNumber] as [set_col_0__]
 		FROM
 			[Thing] [t_1]
 		WHERE
 			[t_1].[ItemNumber] IS NOT NULL
 	) [t2]
 ORDER BY
-	[t2].[ItemNumber]
+	[t2].[set_col_0__]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
