@@ -23,9 +23,7 @@ ORDER BY
 	IIF([m_1].[C1] <> N'T', [d].[Name1], N''),
 	IIF([m_1].[C1] <> N'T', [d].[Name2], N''),
 	IIF([m_1].[C1] <> N'T', [d].[Name3], N'')
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]

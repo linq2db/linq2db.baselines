@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[Usage],
@@ -8,17 +6,11 @@ SELECT
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -30,17 +22,11 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
@@ -52,15 +38,11 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
--- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -70,17 +52,11 @@ SELECT
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -92,17 +68,11 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
@@ -114,9 +84,7 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[Id]
 FROM

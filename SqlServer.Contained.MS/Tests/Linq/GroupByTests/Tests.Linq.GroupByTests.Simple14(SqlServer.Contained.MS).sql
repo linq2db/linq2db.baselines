@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1]
 FROM
@@ -18,9 +16,7 @@ FROM
 			WHERE
 				[m_1].[ParentID] = [d].[ParentID]
 		) [d_1]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[p].[ParentID]
 FROM

@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
 	[d_1].[Children]
@@ -22,9 +20,7 @@ FROM
 			GROUP BY
 				[d].[ParentID]
 		) [d_1]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[c_1].[ParentID]
 FROM

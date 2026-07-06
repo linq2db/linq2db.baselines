@@ -1,10 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
-
-SELECT
+﻿SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
 	[m_1].[PersonID],
@@ -16,13 +10,7 @@ FROM
 WHERE
 	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
-
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
-
+;
 SELECT
 	[x].[PersonID]
 FROM

@@ -30,9 +30,7 @@ FROM
 			[r3_1].[Value] IS NOT NULL
 	) [m_1]
 		INNER JOIN [StackOverflowTable5] [d] ON [d].[Value] = [m_1].[Id]
-
--- SqlServer.Contained SqlServer.2019
-
+;
 WITH [cte] ([Id])
 AS
 (

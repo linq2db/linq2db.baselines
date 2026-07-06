@@ -1,7 +1,5 @@
 ﻿
 
--- SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Key_1],
@@ -21,17 +19,13 @@ FROM
 			GROUP BY
 				[d].[ParentId]
 		) [d_1]
-
-
-
-
-
--- SqlServer.2019
-
+;
 SELECT
 	[c_1].[Id]
 FROM
 	[Parents] [c_1]
+
+
 
 
 

@@ -10,8 +10,6 @@ ORDER BY [a].[Id], [s].[ArticlesId], [s].[TagsTagId]
 
 
 
--- SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[o].[Label]
@@ -21,13 +19,7 @@ FROM
 		INNER JOIN [Tags] [o] ON [o].[tag_id_col] = [d].[TagsTagId]
 ORDER BY
 	[m_1].[Id]
-
-
-
-
-
--- SqlServer.2019
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Title]
@@ -35,6 +27,8 @@ FROM
 	[Articles] [t1]
 ORDER BY
 	[t1].[Id]
+
+
 
 
 

@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -24,9 +22,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
 	[d].[ChildID]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID]

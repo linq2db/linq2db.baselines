@@ -19,8 +19,6 @@ VALUES
 	@Text
 )
 
--- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -34,9 +32,7 @@ FROM
 			[x].[Id] = 6
 	) [m_1]
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],

@@ -35,9 +35,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[m_1].[Id],
 	[a_Author].[AuthorId],
@@ -75,9 +73,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 WHERE
 	[a_Author].[AuthorName] <> N'A' OR [a_Author].[AuthorName] IS NULL
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[a_Book].[BookId],
 	[a_Book].[BookName],
@@ -119,9 +115,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -133,9 +127,7 @@ FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
-
--- SqlServer.Contained SqlServer.2019
-
+;
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

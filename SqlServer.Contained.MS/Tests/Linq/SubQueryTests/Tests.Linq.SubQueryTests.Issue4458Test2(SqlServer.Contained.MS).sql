@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[ItemId],
 	[d].[UserId],
@@ -17,9 +15,7 @@ WHERE
 		WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
 	)
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[i].[Id],
 	(

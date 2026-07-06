@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[CategoryID],
 	[d].[ProductID],
 	[d].[ProductName],
@@ -9,9 +7,7 @@ SELECT
 FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[t1].[CategoryID],
 	[t1].[CategoryName],

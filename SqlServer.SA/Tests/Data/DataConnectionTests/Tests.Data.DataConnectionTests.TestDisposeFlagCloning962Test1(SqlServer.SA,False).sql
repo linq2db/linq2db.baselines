@@ -9,9 +9,7 @@ SELECT
 FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[t1].[CategoryID],
 	[t1].[CategoryName],

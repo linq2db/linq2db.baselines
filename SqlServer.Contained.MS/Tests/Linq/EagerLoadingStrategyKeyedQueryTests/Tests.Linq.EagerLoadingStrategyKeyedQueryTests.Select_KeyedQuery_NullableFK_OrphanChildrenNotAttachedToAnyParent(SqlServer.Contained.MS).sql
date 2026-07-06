@@ -1,6 +1,4 @@
-﻿-- SqlServer.Contained.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[ParentId],
@@ -11,9 +9,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.Contained.MS SqlServer.2019
-
+;
 SELECT
 	[p].[Id],
 	[p].[Name]
