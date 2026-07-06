@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -15,11 +15,9 @@ FROM
 		CROSS JOIN [Child] [d]
 		INNER JOIN [Parent] [a_Parent1_1] ON [d].[ParentID] = [a_Parent1_1].[ParentID] AND [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
--- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 2
 SELECT DISTINCT
 	[a_Parent1].[ParentID]
 FROM
 	[Child] [t1]
 		INNER JOIN [Parent] [a_Parent1] ON [t1].[ParentID] = [a_Parent1].[ParentID]
-

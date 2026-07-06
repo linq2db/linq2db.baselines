@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
@@ -25,8 +25,7 @@ FROM
 			ELSE N'3'
 		END
 
--- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 2
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[ParentID] > 2 THEN CASE
@@ -37,4 +36,3 @@ SELECT DISTINCT
 	END
 FROM
 	[Child] [g_1]
-

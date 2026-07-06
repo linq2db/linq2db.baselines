@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,8 +26,7 @@ WHERE
 				SELECT N'B') [t1]
 	)
 
--- SqlServer.2005.MS SqlServer.2005
-
+-- Batch 2
 SELECT
 	[x].[Id],
 	[x].[ValidOn]
@@ -52,4 +51,3 @@ WHERE
 	)
 ORDER BY
 	[x].[ValidOn]
-

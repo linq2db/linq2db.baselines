@@ -13,9 +13,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2005
-
+;
 SELECT TOP (1)
 	[t1].[ParentID],
 	[t1].[ChildID],

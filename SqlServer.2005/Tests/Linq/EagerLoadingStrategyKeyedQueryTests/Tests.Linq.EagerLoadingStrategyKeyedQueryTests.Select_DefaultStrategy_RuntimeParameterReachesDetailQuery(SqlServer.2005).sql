@@ -16,9 +16,7 @@ WHERE
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2005
-
+;
 SELECT
 	[d].[Id],
 	[d].[Name]

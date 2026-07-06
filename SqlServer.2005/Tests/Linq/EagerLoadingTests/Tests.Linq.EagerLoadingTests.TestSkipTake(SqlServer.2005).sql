@@ -13,9 +13,7 @@ FROM
 			[MasterClass] [m_1]
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
-
--- SqlServer.2005
-
+;
 SELECT
 	[m_2].[Id1],
 	[d_1].[DetailId],
@@ -48,9 +46,7 @@ FROM
 			WHERE
 				[t1].[RN] > 1 AND [t1].[RN] <= 3
 		) [d_1]
-
--- SqlServer.2005
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -74,9 +70,7 @@ FROM
 			[MasterClass] [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SqlServer.2005
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
