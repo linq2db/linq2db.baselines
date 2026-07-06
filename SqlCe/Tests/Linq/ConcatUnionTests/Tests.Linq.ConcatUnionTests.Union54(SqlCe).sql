@@ -4,7 +4,7 @@ SELECT
 	[p1].[ParentID],
 	[p1].[ParentID] as [ParentID_1],
 	[p1].[Value1],
-	NULL as [c1],
+	NULL as [set_col_3__],
 	NULL as [ParentID_2],
 	NULL as [ChildID]
 FROM
@@ -14,7 +14,7 @@ SELECT
 	Coalesce([p2].[Value1], 0) as [ParentID],
 	NULL as [ParentID_1],
 	NULL as [Value1],
-	[t1].[ParentID] as [c1],
+	[t1].[ParentID] as [set_col_3__],
 	[t1].[ParentID] as [ParentID_2],
 	[t1].[ChildID]
 FROM

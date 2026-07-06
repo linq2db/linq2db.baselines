@@ -85,7 +85,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[t1].[Top],
+	[t1].[Top] as [set_col_0__],
 	[t1].[Color],
 	[t1].[ItemCode],
 	[t1].[Name],
@@ -93,7 +93,7 @@ SELECT
 	NULL as [Name_1],
 	[t1].[ItemCode_1] as [ItemCode_2],
 	[t1].[Name_1] as [Name_2],
-	NULL as [c1],
+	NULL as [set_col_8__],
 	NULL as [ItemCode_3],
 	NULL as [Name_3]
 FROM
@@ -118,7 +118,7 @@ WHERE
 	[t1].[Top] = 1
 UNION ALL
 SELECT
-	[t2].[Bottom] as [Top],
+	[t2].[Bottom] as [set_col_0__],
 	NULL as [Color],
 	NULL as [ItemCode],
 	NULL as [Name],
@@ -126,7 +126,7 @@ SELECT
 	[t2].[Color] as [Name_1],
 	NULL as [ItemCode_2],
 	NULL as [Name_2],
-	[t2].[Size_1] as [c1],
+	[t2].[Size_1] as [set_col_8__],
 	[t2].[ItemCode_1] as [ItemCode_3],
 	[t2].[Style_1] as [Name_3]
 FROM

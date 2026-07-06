@@ -5,7 +5,7 @@ DECLARE @pattern NVarChar(3) -- String
 SET     @pattern = '%1%'
 
 SELECT TOP (@take)
-	[t1].[FirstName]
+	[t1].[FirstName] as [set_col_0__]
 FROM
 	(
 		SELECT

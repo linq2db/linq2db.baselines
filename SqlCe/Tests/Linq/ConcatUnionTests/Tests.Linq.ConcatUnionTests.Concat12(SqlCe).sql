@@ -3,7 +3,7 @@
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
-	NULL as [c1],
+	NULL as [set_col_2__],
 	NULL as [ParentID_1],
 	NULL as [Value1_1]
 FROM
@@ -14,7 +14,7 @@ UNION ALL
 SELECT
 	NULL as [ParentID],
 	NULL as [Value1],
-	[a_Parent].[ParentID] as [c1],
+	[a_Parent].[ParentID] as [set_col_2__],
 	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1] as [Value1_1]
 FROM

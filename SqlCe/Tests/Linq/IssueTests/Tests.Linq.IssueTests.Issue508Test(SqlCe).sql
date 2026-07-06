@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[ParentID]
+	[p].[ParentID] as [set_col_0__]
 FROM
 	[Child] [c_1]
 		INNER JOIN [Parent] [p] ON [c_1].[ParentID] = [p].[ParentID]
@@ -9,7 +9,7 @@ WHERE
 	[c_1].[ChildID] = 11
 UNION
 SELECT
-	[c_2].[ParentID]
+	[c_2].[ParentID] as [set_col_0__]
 FROM
 	[Child] [c_2]
 WHERE

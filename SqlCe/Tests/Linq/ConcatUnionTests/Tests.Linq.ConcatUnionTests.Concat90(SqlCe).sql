@@ -27,7 +27,7 @@ WHERE
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
-	NULL as [c1],
+	NULL as [set_col_5__],
 	NULL as [Id_1],
 	NULL as [Field1_1],
 	[t2].[Id] as [Id_2],
@@ -42,7 +42,7 @@ UNION ALL
 SELECT
 	NULL as [Id],
 	NULL as [Field1],
-	[t1_1].[Id] as [c1],
+	[t1_1].[Id] as [set_col_5__],
 	[t1_1].[Id] as [Id_1],
 	[t1_1].[Field1] as [Field1_1],
 	NULL as [Id_2],
