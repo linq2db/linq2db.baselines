@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."PersonID",
 	m_1."FirstName",
 	m_1."PersonID",
@@ -9,16 +7,12 @@ SELECT
 	m_1."Gender"
 FROM
 	"Person" m_1
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1."PersonID"
 FROM
 	"Person" t1
 
--- PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1."PersonID",
 	m_1."FirstName",
@@ -28,9 +22,7 @@ SELECT
 	m_1."Gender"
 FROM
 	"Person" m_1
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1."PersonID"
 FROM

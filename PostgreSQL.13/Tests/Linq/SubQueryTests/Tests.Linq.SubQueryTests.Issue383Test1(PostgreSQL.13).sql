@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."City_Code",
 	d_1."City_Name"
 FROM
@@ -24,9 +22,7 @@ FROM
 			dcp."Distributor_Type_Code" = 'RE'
 	) m_1
 		INNER JOIN "Cities" d_1 ON d_1."City_Code" = m_1."City_Code"
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	a."First_Name",
 	a."Last_Name",

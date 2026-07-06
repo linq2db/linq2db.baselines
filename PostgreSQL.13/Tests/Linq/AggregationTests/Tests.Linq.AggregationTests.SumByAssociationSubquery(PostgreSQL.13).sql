@@ -9,8 +9,6 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.13 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -20,9 +18,7 @@ SELECT
 FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
-
--- PostgreSQL.13 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Name"
