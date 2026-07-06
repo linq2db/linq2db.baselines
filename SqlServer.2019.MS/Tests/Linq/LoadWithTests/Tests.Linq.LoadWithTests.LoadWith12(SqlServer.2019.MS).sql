@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ParentID_1],
@@ -24,8 +24,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
 
--- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -44,8 +43,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
--- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 3
 SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]
@@ -53,4 +51,3 @@ FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] < 2
-

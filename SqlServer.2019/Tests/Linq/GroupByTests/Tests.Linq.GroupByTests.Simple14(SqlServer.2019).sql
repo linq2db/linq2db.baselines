@@ -18,9 +18,7 @@ FROM
 			WHERE
 				[m_1].[ParentID] = [d].[ParentID]
 		) [d_1]
-
--- SqlServer.2019
-
+;
 SELECT
 	[p].[ParentID]
 FROM
