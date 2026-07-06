@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."C1",
@@ -37,12 +37,10 @@ ORDER BY
 		ELSE ''
 	END
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."C1"
 FROM
 	"Issue4596Form" t1
 LIMIT 1
-

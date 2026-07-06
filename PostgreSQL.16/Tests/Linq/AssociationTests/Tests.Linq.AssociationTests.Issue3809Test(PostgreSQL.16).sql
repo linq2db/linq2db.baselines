@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -25,8 +25,7 @@ FROM
 ORDER BY
 	d."ChildID"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	a."ParentID",
 	"a_ParentTest"."ParentID"
@@ -42,4 +41,3 @@ WHERE
 		WHERE
 			"a_ParentTest"."ParentID" = a_1."ParentID" AND a_1."ChildID" = 11
 	)
-
