@@ -29,9 +29,7 @@ FROM
 		INNER JOIN [GrandChild] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID] AND [m_1].[ChildID] = [d_1].[ChildID]
 		LEFT JOIN [Child] [a_Child] ON [d_1].[ParentID] = [a_Child].[ParentID] AND [d_1].[ChildID] = [a_Child].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
-
--- SqlServer.2014
-
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -44,9 +42,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2014
-
+;
 SELECT
 	(
 		SELECT

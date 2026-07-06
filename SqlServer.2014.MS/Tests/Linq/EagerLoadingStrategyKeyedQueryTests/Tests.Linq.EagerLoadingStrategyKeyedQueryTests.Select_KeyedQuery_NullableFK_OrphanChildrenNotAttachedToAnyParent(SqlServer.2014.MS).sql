@@ -1,6 +1,4 @@
-﻿-- SqlServer.2014.MS SqlServer.2014
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Id],
 	[d].[ParentId],
@@ -11,9 +9,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2014.MS SqlServer.2014
-
+;
 SELECT
 	[p].[Id],
 	[p].[Name]

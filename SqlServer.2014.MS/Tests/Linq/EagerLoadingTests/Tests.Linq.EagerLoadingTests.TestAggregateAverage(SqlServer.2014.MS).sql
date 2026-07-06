@@ -29,8 +29,6 @@ WHERE
 			[m_1].[Id1] = [a_Details_1].[MasterId]
 	) > 1
 
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -44,9 +42,7 @@ FROM
 			[MasterClass] [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SqlServer.2014.MS SqlServer.2014
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

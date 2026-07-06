@@ -1,6 +1,4 @@
-﻿-- SqlServer.2014.MS SqlServer.2014
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[IntV]
 FROM
@@ -14,9 +12,7 @@ FROM
 ORDER BY
 	[d].[PK],
 	[m_1].[Key_1]
-
--- SqlServer.2014.MS SqlServer.2014
-
+;
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM
