@@ -46,12 +46,6 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 	CONSTRAINT [PK_issue_4254_media_item_to_media_item_categories] PRIMARY KEY CLUSTERED ([id])
 )
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
-
 SELECT
 	[m_1].[id],
 	[d].[category_id]
@@ -77,13 +71,7 @@ WHERE
 			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 			[y_1].[expires_at] > @now
 	)
-
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-
+;
 SELECT
 	[x].[id],
 	CASE
@@ -120,12 +108,6 @@ WHERE
 			[y_2].[expires_at] > @now
 	)
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
-
 SELECT
 	[m_1].[id],
 	[d].[category_id]
@@ -151,13 +133,7 @@ WHERE
 			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
 			[y_1].[expires_at] > @now
 	)
-
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-
+;
 SELECT
 	[x].[id],
 	CASE

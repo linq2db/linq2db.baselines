@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1]
 FROM
@@ -18,9 +16,7 @@ FROM
 			WHERE
 				[m_1].[ParentID] = [d].[ParentID]
 		) [d_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[p].[ParentID]
 FROM

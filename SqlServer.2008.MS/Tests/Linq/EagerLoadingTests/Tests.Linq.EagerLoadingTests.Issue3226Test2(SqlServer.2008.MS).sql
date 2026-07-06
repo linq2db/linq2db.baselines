@@ -1,14 +1,10 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[d].[Value]
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[x].[Id],
 	[x].[Text]

@@ -28,9 +28,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -80,9 +78,7 @@ FROM
 		) [d_1]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -141,9 +137,7 @@ FROM
 		) [d_2]
 ORDER BY
 	[m_2].[Id_1]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -164,9 +158,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -225,9 +217,7 @@ FROM
 		) [d_2]
 ORDER BY
 	[m_2].[Id_1]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -248,9 +238,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -282,9 +270,7 @@ WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE N'Sub1~_%' ESCAPE N'~'
 ORDER BY
 	[m_2].[Id]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
 FROM
@@ -15,9 +13,7 @@ ORDER BY
 	[d].[NotNullableValue],
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -35,9 +31,7 @@ ORDER BY
 	[d].[NotNullableValue],
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -53,9 +47,7 @@ ORDER BY
 	[d].[NotNullableValue] DESC,
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -71,9 +63,7 @@ ORDER BY
 	[d].[NotNullableValue] DESC,
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -89,9 +79,7 @@ ORDER BY
 	[d].[NotNullableValue] DESC,
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -111,9 +99,7 @@ ORDER BY
 	[d].[NotNullableValue] DESC,
 	[d].[NullableValue],
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT DISTINCT
 	[g_1].[Id]
 FROM

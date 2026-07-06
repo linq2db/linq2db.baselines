@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[SectorId],
 	[a_User].[UserId]
 FROM
@@ -10,9 +8,7 @@ FROM
 		INNER JOIN [UserDTO] [a_User] ON [a_UserPosition].[UserId] = [a_User].[UserId]
 WHERE
 	[a_UserPosition].[PositionId] = 1
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[x].[SectorId]
 FROM

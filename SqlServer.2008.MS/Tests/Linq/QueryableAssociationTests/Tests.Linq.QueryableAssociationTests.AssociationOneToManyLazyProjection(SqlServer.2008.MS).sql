@@ -13,10 +13,6 @@ AS RETURN
   UNION ALL
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id],
@@ -42,11 +38,7 @@ FROM
 			WHERE
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
-
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -64,11 +56,7 @@ FROM
 			) [t1]
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
-
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+;
 SELECT TOP (@take)
 	[e].[Id],
 	[t1].[Id],

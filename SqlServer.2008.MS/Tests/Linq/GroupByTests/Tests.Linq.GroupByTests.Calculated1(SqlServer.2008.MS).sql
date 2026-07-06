@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -24,9 +22,7 @@ FROM
 			END
 			ELSE N'3'
 		END
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[ParentID] > 2 THEN CASE

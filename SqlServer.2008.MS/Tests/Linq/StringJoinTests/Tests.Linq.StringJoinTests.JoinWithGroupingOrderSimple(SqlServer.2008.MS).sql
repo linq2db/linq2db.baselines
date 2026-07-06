@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
 FROM
@@ -17,9 +15,7 @@ ORDER BY
 	[d].[NullableValue],
 	[d].[Id],
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -34,9 +30,7 @@ FROM
 ORDER BY
 	[d].[NullableValue],
 	[m_1].[Key_1]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT DISTINCT
 	[g_1].[Id]
 FROM

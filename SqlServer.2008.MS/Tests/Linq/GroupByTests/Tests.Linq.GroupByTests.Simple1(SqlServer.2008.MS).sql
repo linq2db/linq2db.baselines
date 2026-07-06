@@ -1,6 +1,4 @@
-﻿-- SqlServer.2008.MS SqlServer.2008
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
 	[d].[ChildID]
@@ -12,9 +10,7 @@ FROM
 			[Child] [t1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
-
--- SqlServer.2008.MS SqlServer.2008
-
+;
 SELECT DISTINCT
 	[t1].[ParentID]
 FROM
