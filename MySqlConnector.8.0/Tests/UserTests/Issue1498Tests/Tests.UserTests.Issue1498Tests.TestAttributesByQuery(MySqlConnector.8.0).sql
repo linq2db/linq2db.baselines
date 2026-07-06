@@ -19,8 +19,6 @@ VALUES
 	@Text
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
@@ -35,9 +33,7 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,

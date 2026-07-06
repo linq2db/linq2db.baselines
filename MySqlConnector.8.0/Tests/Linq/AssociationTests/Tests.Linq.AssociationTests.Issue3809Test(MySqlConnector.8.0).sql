@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -24,9 +22,7 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 ORDER BY
 	`d`.`ChildID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`a`.`ParentID`,
 	`a_ParentTest`.`ParentID`

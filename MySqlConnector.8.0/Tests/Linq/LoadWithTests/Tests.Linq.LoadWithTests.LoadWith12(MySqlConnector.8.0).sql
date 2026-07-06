@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`ParentID_1`,
 	`d_1`.`ParentID`,
@@ -24,9 +22,7 @@ FROM
 				LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
 	) `m_1`
 		INNER JOIN `Child` `d_1` ON `m_1`.`ParentID` = `d_1`.`ParentID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -45,9 +41,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`

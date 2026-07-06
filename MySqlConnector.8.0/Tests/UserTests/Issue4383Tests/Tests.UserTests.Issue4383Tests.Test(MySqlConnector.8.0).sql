@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
 	`m_1`.`Id_1`,
@@ -23,9 +21,7 @@ FROM
 		INNER JOIN `CHAINPOINTS` `d_1` ON `m_1`.`Id` = `d_1`.`CHAIN_ID`
 ORDER BY
 	`m_1`.`Id_1`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
@@ -38,9 +34,7 @@ FROM
 		LEFT JOIN `CHAINS` `a_Chain` ON `d`.`CHAIN_ID` = `a_Chain`.`CHAIN_ID`
 ORDER BY
 	`m_1`.`LINE_ID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`

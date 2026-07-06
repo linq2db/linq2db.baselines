@@ -31,9 +31,7 @@ FROM
 				INNER JOIN `Patient` `p_1` ON `t2`.`Id` = `p_1`.`PersonID`
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 WITH RECURSIVE `cte` (`Id`)
 AS
 (

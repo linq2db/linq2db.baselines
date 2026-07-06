@@ -24,9 +24,7 @@ FROM
 		INNER JOIN `InvoiceLine` `d` ON `m_1`.`Id` = `d`.`InvoiceId`
 		LEFT JOIN `ProductUnit` `a_ProductUnit` ON `d`.`ProductUnitId` = `a_ProductUnit`.`Id`
 		LEFT JOIN `Product` `a_Product` ON `d`.`ProductId` = `a_Product`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -48,9 +46,7 @@ FROM
 	) `m_1`
 		INNER JOIN `InvoiceTaxLine` `d` ON `m_1`.`Id` = `d`.`InvoiceId`
 		INNER JOIN `AccountTax` `a_Tax` ON `d`.`TaxId` = `a_Tax`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -69,9 +65,7 @@ FROM
 			`f`.`Id` = 1
 	) `m_1`
 		INNER JOIN `CustomInvoiceLine` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -96,9 +90,7 @@ FROM
 		INNER JOIN `TypeAMeasures` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
 		LEFT JOIN `MeasureSource` `a_Source` ON `d`.`MeasuresSourceId` = `a_Source`.`Id`
 		LEFT JOIN `MeasureSource` `a_PreviousSource` ON `d`.`PreviousSourceId` = `a_PreviousSource`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -117,9 +109,7 @@ FROM
 			`f`.`Id` = 1
 	) `m_1`
 		INNER JOIN `TypeBMeasures` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`f`.`Id`,
 	`f`.`ContractId`,

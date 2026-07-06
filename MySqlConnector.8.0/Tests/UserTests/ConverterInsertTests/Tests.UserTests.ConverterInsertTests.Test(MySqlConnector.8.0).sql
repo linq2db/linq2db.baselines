@@ -1,14 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @FirstName VarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName VarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName VarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender VarChar(1) -- String
-SET     @Gender = 'M'
-
-INSERT INTO `Person`
+﻿INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
@@ -22,10 +12,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int32

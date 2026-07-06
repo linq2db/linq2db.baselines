@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
 	`d`.`UserId`,
@@ -20,9 +18,7 @@ WHERE
 ORDER BY
 	`d`.`ItemId`,
 	`d`.`UserId`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`i`.`Id`,
 	(

@@ -15,9 +15,7 @@ FROM
 				INNER JOIN `EntityMB` `d` ON `e`.`Id` = `d`.`FK`
 	) `m_1`
 		INNER JOIN `EntityMC` `d_1` ON `m_1`.`Id` = `d_1`.`FK`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -27,9 +25,7 @@ FROM
 	`EntityMA` `m_1`
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`e`.`Id`
 FROM

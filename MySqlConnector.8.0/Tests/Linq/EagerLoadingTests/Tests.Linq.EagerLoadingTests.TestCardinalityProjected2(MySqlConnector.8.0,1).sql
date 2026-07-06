@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id_1`,
 	`d_1`.`Id`,
@@ -15,18 +13,14 @@ FROM
 				INNER JOIN `EntityMB` `d` ON `e`.`Id` = `d`.`FK`
 	) `m_1`
 		INNER JOIN `EntityMC` `d_1` ON `m_1`.`Id` = `d_1`.`FK`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
 FROM
 	`EntityMA` `m_1`
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`e`.`Id`
 FROM

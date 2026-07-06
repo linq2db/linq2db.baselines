@@ -1,8 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @minId Int32
-SET     @minId = 2
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`d`.`DepartmentId`,
@@ -16,9 +12,7 @@ WHERE
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`d`.`Id`,
 	`d`.`Name`

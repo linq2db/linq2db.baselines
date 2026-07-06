@@ -1,7 +1,5 @@
 ﻿
 
--- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -28,13 +26,7 @@ FROM
 WHERE
 	NOT `m_1`.`IsDeleted` AND NOT `a_Product`.`IsDeleted` AND
 	NOT `d`.`IsDeleted`
-
-
-
-
-
--- MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,
@@ -55,6 +47,8 @@ FROM
 	`Orders` `e`
 WHERE
 	NOT `e`.`IsDeleted`
+
+
 
 
 

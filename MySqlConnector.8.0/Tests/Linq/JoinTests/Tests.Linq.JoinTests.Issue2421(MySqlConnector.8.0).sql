@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`SectorId`,
 	`a_User`.`UserId`
 FROM
@@ -10,9 +8,7 @@ FROM
 		INNER JOIN `UserDTO` `a_User` ON `a_UserPosition`.`UserId` = `a_User`.`UserId`
 WHERE
 	`a_UserPosition`.`PositionId` = 1
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`x`.`SectorId`
 FROM

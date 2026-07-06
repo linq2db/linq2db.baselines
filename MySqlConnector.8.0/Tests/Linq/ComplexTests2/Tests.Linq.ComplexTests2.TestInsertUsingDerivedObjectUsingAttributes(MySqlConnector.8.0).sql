@@ -1,14 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @FirstName VarChar(21) -- String
-SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName VarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @MiddleName VarChar(4) -- String
-SET     @MiddleName = 'test'
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'U'
-
-INSERT INTO `Person`
+﻿INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
@@ -22,10 +12,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 

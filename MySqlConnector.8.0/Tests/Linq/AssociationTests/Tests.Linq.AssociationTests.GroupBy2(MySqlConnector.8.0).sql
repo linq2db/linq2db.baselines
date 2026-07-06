@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -14,9 +12,7 @@ FROM
 	) `m_1`
 		CROSS JOIN `Child` `d`
 		INNER JOIN `Parent` `a_Parent1_1` ON `d`.`ParentID` = `a_Parent1_1`.`ParentID` AND `m_1`.`ParentID` = `a_Parent1_1`.`ParentID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT DISTINCT
 	`a_Parent1`.`ParentID`
 FROM

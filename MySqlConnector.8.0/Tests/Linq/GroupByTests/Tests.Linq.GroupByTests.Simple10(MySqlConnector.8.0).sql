@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT
+﻿SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -12,9 +10,7 @@ FROM
 			`Child` `g_1`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`Key_1` = `d`.`ParentID`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT DISTINCT
 	`g_1`.`ParentID`
 FROM

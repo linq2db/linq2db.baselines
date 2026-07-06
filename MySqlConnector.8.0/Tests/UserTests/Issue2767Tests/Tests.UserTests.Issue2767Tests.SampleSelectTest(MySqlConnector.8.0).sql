@@ -1,14 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @language VarChar(2) -- String
-SET     @language = 'en'
-DECLARE @Exercise VarChar(1) -- String
-SET     @Exercise = '1'
-DECLARE @currentLanguage VarChar(2) -- String
-SET     @currentLanguage = 'en'
-DECLARE @Equipment VarChar(1) -- String
-SET     @Equipment = '2'
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`equipment`.`id`,
 	`equipment`.`parent_id`,
@@ -36,13 +26,7 @@ FROM
 		LEFT JOIN `ext_translations` `description` ON CAST(`equipment`.`id` AS CHAR(11)) = `description`.`foreign_key` AND `description`.`locale` = @currentLanguage AND `description`.`object_class` = @Equipment AND `description`.`field` = 'name'
 ORDER BY
 	`m_1`.`Id` DESC
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @language VarChar(2) -- String
-SET     @language = 'en'
-DECLARE @Exercise VarChar(1) -- String
-SET     @Exercise = '1'
-
+;
 SELECT
 	`exercise_1`.`id`,
 	`exercise_1`.`is_private`,

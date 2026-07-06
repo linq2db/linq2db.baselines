@@ -10,8 +10,6 @@ ORDER BY `o`.`Id`, `t`.`OrderId`, `t`.`ProductId`
 
 
 
--- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -22,13 +20,7 @@ FROM
 		INNER JOIN `Products` `o` ON `o`.`Id` = `d`.`ProductId`
 ORDER BY
 	`m_1`.`Id`
-
-
-
-
-
--- MySql.8.0.MySqlConnector MySql80
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Number`
@@ -36,6 +28,8 @@ FROM
 	`Orders` `t1`
 ORDER BY
 	`t1`.`Id`
+
+
 
 
 

@@ -1,8 +1,4 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
 	`m_1`.`Value1`,
@@ -18,11 +14,7 @@ FROM
 	`ValueConversion` `m_1`
 WHERE
 	@testedList = `m_1`.`Value2`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+;
 SELECT
 	`g_1`.`Id`
 FROM
