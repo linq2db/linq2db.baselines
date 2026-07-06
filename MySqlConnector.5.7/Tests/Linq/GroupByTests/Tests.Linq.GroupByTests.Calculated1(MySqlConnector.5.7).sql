@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -24,9 +22,7 @@ FROM
 			END
 			ELSE '3'
 		END
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN `g_1`.`ParentID` > 2 THEN CASE

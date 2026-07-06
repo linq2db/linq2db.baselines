@@ -10,8 +10,6 @@ ORDER BY `r`.`Id`, `t`.`AccountsAccountId`, `t`.`RolesId`
 
 
 
--- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Name`
@@ -21,13 +19,7 @@ FROM
 		INNER JOIN `Accounts` `o` ON `o`.`account_id_col` = `d`.`AccountsAccountId`
 ORDER BY
 	`m_1`.`Id`
-
-
-
-
-
--- MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -35,6 +27,8 @@ FROM
 	`Roles` `t1`
 ORDER BY
 	`t1`.`Id`
+
+
 
 
 

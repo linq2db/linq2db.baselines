@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`C1`,
 	`d`.`Id`,
@@ -36,9 +34,7 @@ ORDER BY
 		WHEN `m_1`.`C1` <> 'T' THEN `d`.`Name3`
 		ELSE ''
 	END
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`C1`

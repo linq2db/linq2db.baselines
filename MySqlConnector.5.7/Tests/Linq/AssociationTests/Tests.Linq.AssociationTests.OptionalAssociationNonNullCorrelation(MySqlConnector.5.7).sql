@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`ID`,
 	`d`.`ID`,
 	`d`.`ID3`
@@ -23,9 +21,7 @@ FROM
 			)
 	) `m_1`
 		INNER JOIN `Table4` `d` ON `m_1`.`ID` = `d`.`ID3`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`r`.`ID`,
 	`r`.`ID2`,
@@ -46,8 +42,6 @@ WHERE
 			`a_Table3`.`ID` = `id`.`ID3` AND `id`.`ID` = `r`.`ID`
 	)
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ID`,
 	`d`.`ID`,
@@ -62,9 +56,7 @@ FROM
 				LEFT JOIN `Table3` `a_Table3` ON `a_Table2`.`ID3` = `a_Table3`.`ID`
 	) `m_1`
 		INNER JOIN `Table4` `d` ON `m_1`.`ID` = `d`.`ID3`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`ID`,
 	`t1`.`ID2`,

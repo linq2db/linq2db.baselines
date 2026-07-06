@@ -20,9 +20,7 @@ WHERE
 ORDER BY
 	`d`.`ItemId`,
 	`d`.`UserId`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
+;
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`

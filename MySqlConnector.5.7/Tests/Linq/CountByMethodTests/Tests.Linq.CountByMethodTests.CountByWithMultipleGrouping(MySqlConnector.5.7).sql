@@ -18,8 +18,6 @@ FROM
 				`c_1`.`ParentID`
 		) `c_2` ON `p`.`ParentID` = `c_2`.`Key_1`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -32,9 +30,7 @@ FROM
 			`Parent` `t1`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

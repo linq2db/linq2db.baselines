@@ -1,8 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
-SELECT
+﻿SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
 	`d`.`Diagnosis`
@@ -11,11 +7,7 @@ FROM
 		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @input VarChar(4) -- String
-SET     @input = 'test'
-
+;
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

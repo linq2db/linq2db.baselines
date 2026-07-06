@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id_1`,
 	`d_1`.`Id`,
@@ -21,9 +19,7 @@ ORDER BY
 	`d_1`.`Id`,
 	`m_1`.`Id`,
 	`m_1`.`Id_1`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -34,9 +30,7 @@ FROM
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`

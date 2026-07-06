@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
 	`d`.`UserId`,
@@ -17,9 +15,7 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
 	)
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`

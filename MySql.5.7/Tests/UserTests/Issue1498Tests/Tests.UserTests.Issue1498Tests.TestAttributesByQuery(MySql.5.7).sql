@@ -35,9 +35,7 @@ FROM
 		LIMIT 1
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
+;
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,

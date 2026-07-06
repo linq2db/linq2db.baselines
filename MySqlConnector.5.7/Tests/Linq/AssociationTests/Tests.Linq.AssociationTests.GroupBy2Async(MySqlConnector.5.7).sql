@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -14,9 +12,7 @@ FROM
 	) `m_1`
 		CROSS JOIN `Child` `d`
 		INNER JOIN `Parent` `a_Parent1_1` ON `d`.`ParentID` = `a_Parent1_1`.`ParentID` AND `m_1`.`ParentID` = `a_Parent1_1`.`ParentID`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT DISTINCT
 	`a_Parent1`.`ParentID`
 FROM

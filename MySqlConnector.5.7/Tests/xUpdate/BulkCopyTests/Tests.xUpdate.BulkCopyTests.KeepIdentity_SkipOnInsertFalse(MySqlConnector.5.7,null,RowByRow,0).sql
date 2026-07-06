@@ -1,8 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Value Int32
-SET     @Value = 0
-
-INSERT INTO `KeepIdentityTest`
+﻿INSERT INTO `KeepIdentityTest`
 (
 	`Value`
 )
@@ -10,10 +6,9 @@ VALUES
 (
 	@Value
 )
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Value Int32

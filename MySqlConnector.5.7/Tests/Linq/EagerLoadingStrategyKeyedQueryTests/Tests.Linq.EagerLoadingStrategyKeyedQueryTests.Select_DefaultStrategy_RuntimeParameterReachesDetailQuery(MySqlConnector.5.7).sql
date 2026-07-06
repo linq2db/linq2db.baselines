@@ -1,8 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @minId Int32
-SET     @minId = 2
-
-SELECT
+﻿SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
 	`d`.`DepartmentId`,
@@ -16,9 +12,7 @@ WHERE
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`d`.`Id`,
 	`d`.`Name`

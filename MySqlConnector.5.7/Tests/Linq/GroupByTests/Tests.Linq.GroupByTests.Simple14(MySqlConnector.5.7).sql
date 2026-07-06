@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`
 FROM
@@ -16,9 +14,7 @@ FROM
 			FROM
 				`Child` `d`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`p`.`ParentID`
 FROM

@@ -10,8 +10,6 @@ ORDER BY `s`.`Id`, `t`.`CoursesId`, `t`.`StudentsId`
 
 
 
--- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -22,13 +20,7 @@ FROM
 		INNER JOIN `Courses` `o` ON `o`.`Id` = `d`.`CoursesId`
 ORDER BY
 	`m_1`.`Id`
-
-
-
-
-
--- MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -36,6 +28,8 @@ FROM
 	`Students` `t1`
 ORDER BY
 	`t1`.`Id`
+
+
 
 
 

@@ -1,14 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(3) -- String
-SET     @FirstName = '123'
-DECLARE @LastName VarChar(3) -- String
-SET     @LastName = '456'
-DECLARE @MiddleName VarChar(3) -- String
-SET     @MiddleName = '789'
-DECLARE @Gender VarChar(1) -- String
-SET     @Gender = 'M'
-
-INSERT INTO `Person`
+﻿INSERT INTO `Person`
 (
 	`FirstName`,
 	`LastName`,
@@ -22,10 +12,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT LAST_INSERT_ID()
+;
+SELECT
+	LAST_INSERT_ID() as `c1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32

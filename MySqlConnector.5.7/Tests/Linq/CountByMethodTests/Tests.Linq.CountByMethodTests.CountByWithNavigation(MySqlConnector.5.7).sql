@@ -1,6 +1,4 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
+﻿SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
 	`d`.`ChildID`
@@ -18,9 +16,7 @@ FROM
 				) `c_2` ON `p`.`ParentID` = `c_2`.`Key_1`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`,
@@ -39,8 +35,6 @@ FROM
 ORDER BY
 	`c_2`.`Key_1`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -53,9 +47,7 @@ FROM
 			`Parent` `t1`
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+;
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`
