@@ -10,8 +10,6 @@ ORDER BY p."Id", s."FriendId", s."PersonId"
 
 
 
--- PostgreSQL.15 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	o."Id",
@@ -22,13 +20,7 @@ FROM
 		INNER JOIN "People" o ON o."Id" = d."FriendId"
 ORDER BY
 	m_1."Id"
-
-
-
-
-
--- PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Name"
@@ -36,6 +28,8 @@ FROM
 	"People" t1
 ORDER BY
 	t1."Id"
+
+
 
 
 

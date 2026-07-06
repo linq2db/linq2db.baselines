@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."ParentID",
 	m_1."ChildID",
 	d."ChildID"
@@ -13,9 +11,7 @@ FROM
 			"GrandChild" t1
 	) m_1
 		INNER JOIN "GrandChild" d ON (m_1."ParentID" = d."ParentID" + 1 OR m_1."ParentID" IS NULL AND d."ParentID" IS NULL) AND (m_1."ChildID" = d."ChildID" OR m_1."ChildID" IS NULL AND d."ChildID" IS NULL)
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT DISTINCT
 	t1."ParentID" + 1,
 	t1."ChildID"

@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	m_1."Name",
 	d."Id"
@@ -10,9 +8,7 @@ FROM
 ORDER BY
 	d."Id",
 	m_1."Id"
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,9 +21,7 @@ FROM
 ORDER BY
 	d."Id",
 	m_1."Id"
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	c_1."Id",
 	c_1."Name"

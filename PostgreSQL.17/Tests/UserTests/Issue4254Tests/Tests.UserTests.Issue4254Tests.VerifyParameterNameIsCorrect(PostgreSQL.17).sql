@@ -43,12 +43,6 @@ CREATE TABLE issue_4254_media_item_to_media_item_categories
 	CONSTRAINT "PK_issue_4254_media_item_to_media_item_categories" PRIMARY KEY (id)
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-
 SELECT
 	m_1.id,
 	d.category_id
@@ -74,13 +68,7 @@ WHERE
 			m_1.id = y_1.media_item_id AND y_1.created_by_id = :userId AND
 			y_1.expires_at > :now
 	)
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
-
+;
 SELECT
 	x.id,
 	EXISTS(
@@ -113,12 +101,6 @@ WHERE
 			y_2.expires_at > :now
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-
 SELECT
 	m_1.id,
 	d.category_id
@@ -144,13 +126,7 @@ WHERE
 			m_1.id = y_1.media_item_id AND y_1.created_by_id = :userId AND
 			y_1.expires_at > :now
 	)
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
-
+;
 SELECT
 	x.id,
 	EXISTS(

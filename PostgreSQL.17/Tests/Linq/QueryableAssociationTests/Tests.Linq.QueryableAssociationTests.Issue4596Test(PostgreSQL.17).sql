@@ -1,6 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	m_1."C1",
 	d."Id",
@@ -36,9 +34,7 @@ ORDER BY
 		WHEN m_1."C1" <> 'T' THEN d."Name3"
 		ELSE ''
 	END
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."C1"

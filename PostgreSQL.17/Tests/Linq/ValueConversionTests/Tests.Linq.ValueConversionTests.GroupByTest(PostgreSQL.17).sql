@@ -1,8 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @testedList Varchar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
-SELECT
+﻿SELECT
 	m_1."Id",
 	m_1."Id",
 	m_1."Value1",
@@ -18,11 +14,7 @@ FROM
 	"ValueConversion" m_1
 WHERE
 	:testedList = m_1."Value2"
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-DECLARE @testedList Varchar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+;
 SELECT
 	g_1."Id"
 FROM
