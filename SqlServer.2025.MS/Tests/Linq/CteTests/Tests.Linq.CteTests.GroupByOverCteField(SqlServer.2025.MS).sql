@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
+-- Batch 1
 WITH [CTE_1] ([ParentID], [ChildID], [GrandChildID])
 AS
 (
@@ -24,8 +24,7 @@ FROM
 	) [m_1]
 		INNER JOIN [CTE_1] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
 
--- SqlServer.2025.MS SqlServer.2025
-
+-- Batch 2
 WITH [CTE_1] ([ParentID])
 AS
 (
@@ -38,4 +37,3 @@ SELECT DISTINCT
 	Coalesce([t1].[ParentID], -1)
 FROM
 	[CTE_1] [t1]
-
