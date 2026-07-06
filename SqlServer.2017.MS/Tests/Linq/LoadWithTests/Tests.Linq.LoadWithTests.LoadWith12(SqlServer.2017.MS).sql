@@ -1,6 +1,4 @@
-﻿-- SqlServer.2017.MS SqlServer.2017
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[m_1].[ParentID_1],
 	[d_1].[ParentID],
@@ -23,9 +21,7 @@ FROM
 				LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 	) [m_1]
 		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -43,9 +39,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]

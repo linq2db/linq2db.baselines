@@ -1,6 +1,4 @@
-﻿-- SqlServer.2017.MS SqlServer.2017
-
-SELECT
+﻿SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
 	[d].[ParentID]
@@ -12,9 +10,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[p].[ParentID]
 FROM

@@ -40,10 +40,6 @@ VALUES
 	@DateTime
 )
 
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @tz NVarChar(4000) -- String
-SET     @tz = N'UTC'
-
 SELECT
 	[m_1].[key_1],
 	[d].[Id],
@@ -89,9 +85,7 @@ FROM
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[group_1].[key_1]
 FROM

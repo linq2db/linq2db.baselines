@@ -16,11 +16,7 @@ FROM
 		INNER JOIN [Issue4624Items] [d] ON [m_1].[Key_1] = [d].[AclNameId]
 ORDER BY
 	[d].[DateFrom]
-
-
-
--- SqlServer.2017
-
+;
 SELECT TOP (1)
 	[p].[AclNameId]
 FROM

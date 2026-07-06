@@ -8,8 +8,6 @@ FROM
 WHERE
 	[p].[ParentID] = 1
 
--- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -29,9 +27,7 @@ FROM
 			) [t1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]

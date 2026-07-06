@@ -1,6 +1,4 @@
-﻿-- SqlServer.2017.MS SqlServer.2017
-
-SELECT
+﻿SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
 	[a_Author].[AuthorId],
@@ -38,9 +36,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[m_1].[AuthorId],
 	[a_Book_1].[BookId],
@@ -73,9 +69,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[m_1].[BookId],
 	[m_1].[c1],
@@ -123,9 +117,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_2] ON [d_2].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_2].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[m_1].[c1],
 	[d_1].[BookId],
@@ -171,9 +163,7 @@ FROM
 			WHERE
 				[d].[FkAuthorId] = [m_1].[c1]
 		) [d_1]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[a].[AuthorName],
 	[a].[AuthorId],
@@ -192,8 +182,6 @@ FROM
 WHERE
 	[a_Book].[Discriminator] = N'Novel'
 
--- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
@@ -211,9 +199,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -225,9 +211,7 @@ FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

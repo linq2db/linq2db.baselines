@@ -1,6 +1,4 @@
-﻿-- SqlServer.2017.MS SqlServer.2017
-
-SELECT
+﻿SELECT
 	[m_1].[Id],
 	[m_1].[Name],
 	[d].[Id],
@@ -11,9 +9,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2017.MS SqlServer.2017
-
+;
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

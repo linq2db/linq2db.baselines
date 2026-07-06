@@ -1,8 +1,4 @@
-﻿-- SqlServer.2017.MS SqlServer.2017
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
-
-SELECT
+﻿SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
 	[d].[Diagnosis]
@@ -11,11 +7,7 @@ FROM
 		INNER JOIN [Patient] [d] ON [m_1].[PersonID] = [d].[PersonID]
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE N'~'
-
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
-
+;
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]
