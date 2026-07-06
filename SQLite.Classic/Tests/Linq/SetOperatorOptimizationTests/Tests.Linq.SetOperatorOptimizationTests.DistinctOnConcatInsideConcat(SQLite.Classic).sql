@@ -1,19 +1,19 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	[t3].[ItemNumber]
+	[t3].[set_col_0__]
 FROM
 	(
 		SELECT
-			[t2].[ItemNumber]
+			[t2].[set_col_0__]
 		FROM
 			(
 				SELECT DISTINCT
-					[t1].[ItemNumber]
+					[t1].[set_col_0__]
 				FROM
 					(
 						SELECT
-							[itm].[ItemNumber]
+							[itm].[ItemNumber] as [set_col_0__]
 						FROM
 							[Thing] [t],
 							[Item] [itm]
@@ -21,7 +21,7 @@ FROM
 							[itm].[ItemId] = [t].[ItemId]
 						UNION ALL
 						SELECT
-							[itm_1].[ItemNumber]
+							[itm_1].[ItemNumber] as [set_col_0__]
 						FROM
 							[Thing] [t_1],
 							[Item] [itm_1]
@@ -31,12 +31,12 @@ FROM
 			) [t2]
 		UNION ALL
 		SELECT
-			[t_2].[ItemNumber]
+			[t_2].[ItemNumber] as [set_col_0__]
 		FROM
 			[Thing] [t_2]
 	) [t3]
 ORDER BY
-	[t3].[ItemNumber]
+	[t3].[set_col_0__]
 
 -- SQLite.Classic SQLite
 
