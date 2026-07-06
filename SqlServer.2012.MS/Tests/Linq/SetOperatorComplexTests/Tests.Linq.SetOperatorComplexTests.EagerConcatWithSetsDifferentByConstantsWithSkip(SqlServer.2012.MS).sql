@@ -3,23 +3,23 @@ DECLARE @skip Int -- Int32
 SET     @skip = 6
 
 SELECT
-	[m_1].[c1],
+	[m_1].[set_col_1__],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[set_col_1__]
 		FROM
 			(
 				SELECT
 					[t1].[BookType],
-					[t1].[c1]
+					[t1].[set_col_1__]
 				FROM
 					(
 						SELECT
 							CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-							NULL as [c1]
+							NULL as [set_col_1__]
 						FROM
 							[Book] [b]
 						WHERE
@@ -27,7 +27,7 @@ FROM
 						UNION ALL
 						SELECT
 							CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-							[b_1].[BookId] as [c1]
+							[b_1].[BookId] as [set_col_1__]
 						FROM
 							[Book] [b_1]
 						WHERE
@@ -40,7 +40,7 @@ FROM
 		WHERE
 			[t2].[BookType] = N'Novel'
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[set_col_1__]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- SqlServer.2012.MS SqlServer.2012
@@ -50,12 +50,12 @@ SET     @skip = 6
 SELECT
 	[t1].[BookType],
 	IIF([t1].[BookType] = N'Roman', 1, 0),
-	[t1].[c1]
+	[t1].[set_col_1__]
 FROM
 	(
 		SELECT
 			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-			NULL as [c1]
+			NULL as [set_col_1__]
 		FROM
 			[Book] [b]
 		WHERE
@@ -63,7 +63,7 @@ FROM
 		UNION ALL
 		SELECT
 			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-			[b_1].[BookId] as [c1]
+			[b_1].[BookId] as [set_col_1__]
 		FROM
 			[Book] [b_1]
 		WHERE

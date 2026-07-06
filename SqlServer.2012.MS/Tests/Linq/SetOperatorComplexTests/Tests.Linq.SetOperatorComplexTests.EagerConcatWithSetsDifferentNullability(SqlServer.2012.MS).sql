@@ -78,29 +78,29 @@ FROM
 
 SELECT
 	[m_1].[BookId],
-	[m_1].[c1],
+	[m_1].[set_col_2__],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
 			[d_1].[BookId],
-			[t3].[c1]
+			[t3].[set_col_2__]
 		FROM
 			(
 				SELECT DISTINCT
-					[t2].[c1]
+					[t2].[set_col_2__]
 				FROM
 					(
 						SELECT
 							[a].[AuthorId],
-							NULL as [c1]
+							NULL as [set_col_2__]
 						FROM
 							[Author] [a]
 						UNION ALL
 						SELECT
 							NULL as [AuthorId],
-							[t1].[AuthorId] as [c1]
+							[t1].[AuthorId] as [set_col_2__]
 						FROM
 							[Author] [t1]
 								INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -118,7 +118,7 @@ FROM
 						[BookAuthor] [d]
 							LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]
 					WHERE
-						[d].[FkAuthorId] = [t3].[c1]
+						[d].[FkAuthorId] = [t3].[set_col_2__]
 				) [d_1]
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_2] ON [d_2].[FkBookId] = [m_1].[BookId]
@@ -127,7 +127,7 @@ FROM
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[m_1].[c1],
+	[m_1].[set_col_2__],
 	[d_1].[BookId],
 	[d_1].[Discriminator],
 	[d_1].[BookName],
@@ -136,18 +136,18 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[c1]
+			[t2].[set_col_2__]
 		FROM
 			(
 				SELECT
 					[a].[AuthorId],
-					NULL as [c1]
+					NULL as [set_col_2__]
 				FROM
 					[Author] [a]
 				UNION ALL
 				SELECT
 					NULL as [AuthorId],
-					[t1].[AuthorId] as [c1]
+					[t1].[AuthorId] as [set_col_2__]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -169,7 +169,7 @@ FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Book] [a_Book_1] ON [d].[FkBookId] = [a_Book_1].[BookId]
 			WHERE
-				[d].[FkAuthorId] = [m_1].[c1]
+				[d].[FkAuthorId] = [m_1].[set_col_2__]
 		) [d_1]
 
 -- SqlServer.2012.MS SqlServer.2012

@@ -2,8 +2,8 @@
 
 WITH [CTE_1]
 (
-	[Id],
-	[Label],
+	[set_col_1__],
+	[set_col_0__],
 	[field],
 	[field_1]
 )
@@ -47,17 +47,17 @@ AS
 		[d].[Name],
 		[d].[IsActive],
 		ROW_NUMBER() OVER (ORDER BY [d].[Id]),
-		[kd].[v0Id],
-		[kd].[v1Label]
+		[kd].[v0__set_col_1__],
+		[kd].[v1__set_col_0__]
 	FROM
 		(
 			SELECT DISTINCT
-				[t2].[Id] as [v0Id],
-				[t2].[Label] as [v1Label]
+				[t2].[set_col_1__] as [v0__set_col_1__],
+				[t2].[set_col_0__] as [v1__set_col_0__]
 			FROM
 				[CTE_1] [t2]
 		) [kd]
-			INNER JOIN [Department] [d] ON [kd].[v0Id] = [d].[CompanyId]
+			INNER JOIN [Department] [d] ON [kd].[v0__set_col_1__] = [d].[CompanyId]
 	WHERE
 		[d].[IsActive] = 1
 ),
@@ -79,17 +79,17 @@ AS
 		[d_1].[Name],
 		[d_1].[IsActive],
 		ROW_NUMBER() OVER (ORDER BY [d_1].[Id]),
-		[kd_1].[v0Id],
-		[kd_1].[v1Label]
+		[kd_1].[v0__set_col_1__],
+		[kd_1].[v1__set_col_0__]
 	FROM
 		(
 			SELECT DISTINCT
-				[t3].[Id] as [v0Id],
-				[t3].[Label] as [v1Label]
+				[t3].[set_col_1__] as [v0__set_col_1__],
+				[t3].[set_col_0__] as [v1__set_col_0__]
 			FROM
 				[CTE_1] [t3]
 		) [kd_1]
-			INNER JOIN [Department] [d_1] ON [kd_1].[v0Id] = [d_1].[CompanyId]
+			INNER JOIN [Department] [d_1] ON [kd_1].[v0__set_col_1__] = [d_1].[CompanyId]
 )
 SELECT
 	[t7].[Item1],
@@ -132,13 +132,13 @@ FROM
 		SELECT
 			CAST(2 AS Int) as [Item1],
 			[t6].[field] as [Item3],
-			[t6].[Id] as [Item1_1],
-			[t6].[Label] as [Item2],
-			[t6].[Id] as [Item4],
-			[t6].[Id] as [Item5],
-			[t6].[Label] as [Item6],
+			[t6].[set_col_1__] as [Item1_1],
+			[t6].[set_col_0__] as [Item2],
+			[t6].[set_col_1__] as [Item4],
+			[t6].[set_col_1__] as [Item5],
+			[t6].[set_col_0__] as [Item6],
 			[t6].[field_1] as [Item7],
-			[t6].[Label] as [Item1_2]
+			[t6].[set_col_0__] as [Item1_2]
 		FROM
 			[CTE_1] [t6]
 	) [t7]

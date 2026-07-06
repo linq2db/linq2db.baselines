@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
-WITH [CTE_1] ([Id], [field], [Label])
+WITH [CTE_1] ([set_col_1__], [field], [Label])
 AS
 (
 	SELECT
@@ -35,15 +35,15 @@ AS
 		[d].[Id],
 		[d].[Name],
 		ROW_NUMBER() OVER (ORDER BY [d].[Id]),
-		[kd].[v0Id]
+		[kd].[v0__set_col_1__]
 	FROM
 		(
 			SELECT DISTINCT
-				[t2].[Id] as [v0Id]
+				[t2].[set_col_1__] as [v0__set_col_1__]
 			FROM
 				[CTE_1] [t2]
 		) [kd]
-			INNER JOIN [Department] [d] ON [kd].[v0Id] = [d].[CompanyId]
+			INNER JOIN [Department] [d] ON [kd].[v0__set_col_1__] = [d].[CompanyId]
 ),
 [CTE_3]
 (
@@ -107,10 +107,10 @@ FROM
 		SELECT
 			CAST(2 AS Int) as [Item1],
 			[t6].[field] as [Item3],
-			[t6].[Id] as [Item2],
-			[t6].[Id] as [Item4],
+			[t6].[set_col_1__] as [Item2],
+			[t6].[set_col_1__] as [Item4],
 			[t6].[Label] as [Item5],
-			[t6].[Id] as [Item6],
+			[t6].[set_col_1__] as [Item6],
 			NULL as [Item7]
 		FROM
 			[CTE_1] [t6]
