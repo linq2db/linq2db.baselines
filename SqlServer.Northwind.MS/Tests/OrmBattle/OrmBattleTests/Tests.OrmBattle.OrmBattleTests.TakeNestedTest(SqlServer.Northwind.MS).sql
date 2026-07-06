@@ -1,6 +1,4 @@
-﻿-- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[CustomerID],
 	[d_1].[OrderID],
 	[d_1].[CustomerID],
@@ -41,9 +39,7 @@ FROM
 			ORDER BY
 				[d].[OrderDate] DESC
 		) [d_1]
-
--- SqlServer.Northwind.MS SqlServer.2019
-
+;
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],

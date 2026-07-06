@@ -1,6 +1,4 @@
-﻿-- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[Key_1],
 	[d].[CustomerID],
 	[d].[CompanyName],
@@ -35,9 +33,7 @@ FROM
 			WHERE
 				[d].[CustomerID] = [a_Orders_1].[CustomerID]
 		) = 33.25, 1, 0)
-
--- SqlServer.Northwind.MS SqlServer.2019
-
+;
 SELECT DISTINCT
 	IIF((
 		SELECT

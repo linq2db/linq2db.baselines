@@ -1,6 +1,4 @@
-﻿-- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
+﻿SELECT
 	[m_1].[CustomerID],
 	[d].[OrderID],
 	[d].[CustomerID],
@@ -19,9 +17,7 @@ SELECT
 FROM
 	[Customers] [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
-
--- SqlServer.Northwind.MS SqlServer.2019
-
+;
 SELECT
 	[i].[CustomerID]
 FROM
