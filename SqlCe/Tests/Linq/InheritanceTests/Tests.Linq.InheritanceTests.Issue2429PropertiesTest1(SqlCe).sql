@@ -2,7 +2,7 @@
 
 SELECT TOP (1)
 	[x].[Id],
-	[x].[Value] as [BaseValue]
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE
@@ -12,7 +12,7 @@ WHERE
 
 SELECT TOP (1)
 	[x].[Id],
-	[x].[Value] as [BaseValue]
+	[x].[Value]
 FROM
 	[BaseTable] [x]
 WHERE

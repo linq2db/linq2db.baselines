@@ -424,8 +424,8 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[t1].[Char] as [Char_1],
-	[t1].[NChar] as [NChar_1]
+	[t1].[Char],
+	[t1].[NChar]
 FROM
 	[CharTestTable] [t1]
 ORDER BY

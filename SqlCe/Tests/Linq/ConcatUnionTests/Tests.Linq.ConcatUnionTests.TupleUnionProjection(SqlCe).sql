@@ -1,16 +1,16 @@
 ﻿-- SqlCe
 
 SELECT
-	[x].[Value1] as [Item2],
-	[x].[ParentID] as [Item1]
+	[x].[Value1],
+	[x].[ParentID]
 FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] > 3
 UNION
 SELECT
-	[p2].[ParentID] as [Item2],
-	[p2].[Value1] as [Item1]
+	[p2].[ParentID],
+	[p2].[Value1]
 FROM
 	[Parent] [p2]
 WHERE

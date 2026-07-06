@@ -29,7 +29,7 @@ SET     @FirstName = 'UpdateColumnFilter'
 
 SELECT TOP (2)
 	[x].[FirstName],
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -57,7 +57,7 @@ SET     @ID = 5
 
 SELECT TOP (2)
 	[x].[FirstName],
-	[x].[PersonID] as [ID],
+	[x].[PersonID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -94,7 +94,7 @@ SET     @ID = 5
 
 SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]

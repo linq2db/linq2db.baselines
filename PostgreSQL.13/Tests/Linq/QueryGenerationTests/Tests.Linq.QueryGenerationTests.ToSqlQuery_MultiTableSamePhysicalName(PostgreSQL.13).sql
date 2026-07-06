@@ -1,0 +1,18 @@
+﻿-- PostgreSQL.13 PostgreSQL13
+
+SELECT
+	p."PersonID",
+	d."PersonID"
+FROM
+	"Person" p
+		INNER JOIN "Doctor" d ON p."PersonID" = d."PersonID"
+
+-- PostgreSQL.13 PostgreSQL13
+
+SELECT
+	p."PersonID",
+	d."PersonID"
+FROM
+	"Person" p
+		INNER JOIN "Doctor" d ON p."PersonID" = d."PersonID"
+

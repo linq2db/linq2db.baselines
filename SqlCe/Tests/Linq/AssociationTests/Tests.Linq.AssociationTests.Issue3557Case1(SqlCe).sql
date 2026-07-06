@@ -5,7 +5,7 @@ SELECT
 	CASE
 		WHEN [a_SubData].[Id] IS NULL THEN NULL
 		ELSE [t1].[Reason]
-	END as [Reason]
+	END
 FROM
 	[Data] [i]
 		LEFT JOIN [SubData1] [a_SubData] ON [i].[Id] = [a_SubData].[Id]

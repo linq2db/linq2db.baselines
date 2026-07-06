@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id],
+	[d_1].[Id] as [Id_2],
 	[d_1].[FK]
 FROM
 	(
@@ -20,8 +20,8 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[a_ObjectD].[Id],
+	[d].[Id] as [Id_1],
+	[a_ObjectD].[Id] as [Id_2],
 	[a_ObjectD].[FK]
 FROM
 	([EntityMA] [m_1]

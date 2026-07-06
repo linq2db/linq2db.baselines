@@ -6,7 +6,7 @@ SELECT
 	CASE
 		WHEN [t1].[Label] = 'ActiveOnly' THEN 1
 		ELSE 0
-	END as [c1]
+	END
 FROM
 	(
 		SELECT

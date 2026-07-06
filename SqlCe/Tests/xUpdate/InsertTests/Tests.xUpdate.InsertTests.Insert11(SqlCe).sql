@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	MAX([t1].[PersonID]) as [Max_1]
+	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
@@ -35,7 +35,7 @@ DECLARE @id Int -- Int32
 SET     @id = 4
 
 SELECT TOP (2)
-	[p2].[PersonID] as [ID],
+	[p2].[PersonID],
 	[p2].[Gender],
 	[p2].[FirstName],
 	[p2].[MiddleName],

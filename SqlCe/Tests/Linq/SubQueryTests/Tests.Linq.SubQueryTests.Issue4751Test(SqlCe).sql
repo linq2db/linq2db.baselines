@@ -57,7 +57,7 @@ OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT

@@ -2,9 +2,9 @@
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_2],
 	[a_Parent].[Value1]
 FROM
 	((

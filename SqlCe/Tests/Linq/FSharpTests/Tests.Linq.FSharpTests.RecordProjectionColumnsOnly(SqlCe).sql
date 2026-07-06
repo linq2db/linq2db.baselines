@@ -1,10 +1,10 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	[p].[PersonID] as [Item1],
-	[p].[FirstName] as [Item2],
-	[p].[LastName] as [Item3],
-	'ибн Алёша' as [Item4]
+	[p].[PersonID],
+	[p].[FirstName],
+	[p].[LastName],
+	'ибн Алёша'
 FROM
 	[Person] [p]
 WHERE

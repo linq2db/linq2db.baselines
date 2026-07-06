@@ -8,7 +8,7 @@ FROM
 UNION ALL
 SELECT
 	[p_1].[Id],
-	CAST('str' AS NVarChar) as [Str]
+	CAST('str' AS NVarChar)
 FROM
 	[Issue3360Table] [p_1]
 
@@ -16,7 +16,7 @@ FROM
 
 SELECT
 	[p].[Id],
-	CAST('str' AS NVarChar) as [Str]
+	CAST('str' AS NVarChar)
 FROM
 	[Issue3360Table] [p]
 UNION ALL

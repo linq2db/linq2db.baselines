@@ -35,7 +35,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName]
 FROM
 	[Author] [t1]
@@ -45,7 +45,7 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION ALL
 SELECT
-	[a_Book_1].[BookId] as [Id],
+	[a_Book_1].[BookId],
 	[a_Book_1].[BookName]
 FROM
 	[Author] [t2]

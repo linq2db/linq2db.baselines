@@ -61,7 +61,7 @@ VALUES
 SELECT
 	[t1].[Id],
 	[t1].[Name],
-	[t1].[Version] as [Version_1],
+	[t1].[Version],
 	[t1].[CreatedAt],
 	[t1].[CreatedBy]
 FROM

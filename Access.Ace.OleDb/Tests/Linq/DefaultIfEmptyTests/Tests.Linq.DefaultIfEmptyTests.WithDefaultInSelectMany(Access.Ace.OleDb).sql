@@ -2,7 +2,7 @@
 
 SELECT
 	[s].[ParentID],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID]
 FROM
 	[Parent] [s]
@@ -14,7 +14,7 @@ WHERE
 
 SELECT
 	[m_1].[ParentID],
-	[d].[ParentID],
+	[d].[ParentID] as [ParentID_1],
 	[d].[ChildID]
 FROM
 	(

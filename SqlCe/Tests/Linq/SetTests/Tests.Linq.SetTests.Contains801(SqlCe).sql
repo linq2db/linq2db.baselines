@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	2 as [ParentID],
+	2,
 	[ch].[ChildID],
 	[gc].[GrandChildID]
 FROM

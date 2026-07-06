@@ -30,7 +30,7 @@ INSERT INTO [TempTable]
 )
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TestTempTable] [t1]
 
@@ -64,7 +64,7 @@ VALUES
 
 SELECT
 	[t1].[Id],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[TestTempTable] [t1]
 ORDER BY
@@ -74,7 +74,7 @@ ORDER BY
 
 SELECT
 	[t1].[Id],
-	[t1].[Renamed] as [Value_1]
+	[t1].[Renamed]
 FROM
 	[TempTable] [t1]
 ORDER BY

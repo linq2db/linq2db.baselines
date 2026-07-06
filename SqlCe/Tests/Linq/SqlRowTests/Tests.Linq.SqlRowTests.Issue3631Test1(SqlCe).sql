@@ -3,7 +3,7 @@
 SELECT
 	[x].[Id],
 	[x].[Country],
-	[x].[State] as [State_1]
+	[x].[State]
 FROM
 	[Issue3631Table] [x]
 WHERE

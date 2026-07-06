@@ -1,10 +1,10 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	p."PersonID" as ID,
-	p."FirstName" as "id_1",
-	p."LastName" as "Id_2",
-	p."MiddleName" as "iD_3"
+	p."PersonID",
+	p."FirstName",
+	p."LastName",
+	p."MiddleName"
 FROM
 	"Person" p
 WHERE

@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[a_Parent_1].[ParentID] as [Key_1],
-	COUNT(*) as [Count_1]
+	[a_Parent_1].[ParentID],
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT

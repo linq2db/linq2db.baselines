@@ -62,7 +62,7 @@ SELECT 2,NULL
 
 SELECT
 	[t4].[ID],
-	[t4].[Value] as [Value_1]
+	[t4].[Value]
 FROM
 	[tmptbl1] [t2]
 		LEFT JOIN [tmptbl2] [t3] ON [t2].[ID] = [t3].[ID]
@@ -72,7 +72,7 @@ FROM
 
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[tmptbl1] [t1]
 
@@ -80,7 +80,7 @@ FROM
 
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[tmptbl2] [t1]
 
@@ -88,7 +88,7 @@ FROM
 
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[tmptbl3] [t1]
 

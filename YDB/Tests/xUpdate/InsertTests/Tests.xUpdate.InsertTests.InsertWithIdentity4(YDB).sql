@@ -38,7 +38,7 @@ SET     $p = 'John0'u
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender
@@ -81,7 +81,7 @@ SET     $p = 'John1'u
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.LastName as LastName,
 	p.MiddleName as MiddleName,
 	p.Gender as Gender

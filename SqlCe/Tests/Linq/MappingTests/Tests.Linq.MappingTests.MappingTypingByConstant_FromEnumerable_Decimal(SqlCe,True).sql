@@ -2,7 +2,7 @@
 
 SELECT
 	[arg].[Id],
-	[arg].[Value] as [Value_1]
+	[arg].[Value]
 FROM
 	[Person] [entity]
 		INNER JOIN (
@@ -12,7 +12,7 @@ FROM
 
 SELECT
 	[arg].[Id],
-	[arg].[Value] as [Value_1]
+	[arg].[Value]
 FROM
 	[Person] [entity]
 		INNER JOIN (

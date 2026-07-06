@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	Coalesce([t].[Value1], '') + [t].[Value2] + [t].[Value3] as [c1]
+	Coalesce([t].[Value1], '') + [t].[Value2] + [t].[Value3]
 FROM
 	[StringConcatThreeNullEntity] [t]
 ORDER BY

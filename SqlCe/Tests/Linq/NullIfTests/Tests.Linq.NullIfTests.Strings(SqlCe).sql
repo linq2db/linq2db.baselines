@@ -4,7 +4,7 @@ SELECT
 	CASE
 		WHEN [s].[String] = 'abc' THEN NULL
 		ELSE [s].[String]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -13,7 +13,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -22,7 +22,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -34,7 +34,7 @@ SELECT
 	CASE
 		WHEN [s].[String] = 'xyz' THEN NULL
 		ELSE [s].[String]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -43,7 +43,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -52,7 +52,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -70,7 +70,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -79,7 +79,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -91,7 +91,7 @@ SELECT
 	CASE
 		WHEN [s].[NullableString] = 'abc' THEN NULL
 		ELSE [s].[NullableString]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -100,7 +100,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -109,7 +109,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -121,7 +121,7 @@ SELECT
 	CASE
 		WHEN [s].[NullableString] = 'xyz' THEN NULL
 		ELSE [s].[NullableString]
-	END as [c1]
+	END
 FROM
 	[Src] [s]
 ORDER BY
@@ -130,7 +130,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -139,7 +139,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -157,7 +157,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -166,7 +166,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

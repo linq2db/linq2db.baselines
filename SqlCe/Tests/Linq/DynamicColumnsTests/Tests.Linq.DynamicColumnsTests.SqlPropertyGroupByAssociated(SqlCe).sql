@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[a_Patient].[Diagnosis] as [Key_1],
-	COUNT(*) as [Count_1]
+	[a_Patient].[Diagnosis],
+	COUNT(*)
 FROM
 	[Person] [p]
 		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]

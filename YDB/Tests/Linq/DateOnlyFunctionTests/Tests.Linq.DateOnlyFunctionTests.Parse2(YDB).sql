@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	d.TransactionDate as Day_1
+	d.TransactionDate as TransactionDate
 FROM
 	Transactions d
 WHERE

@@ -3,7 +3,7 @@ DECLARE @parentId Int -- Int32
 SET     @parentId = 111
 
 SELECT
-	[version_1].[inIdMain] as [MainId]
+	[version_1].[inIdMain]
 FROM
 	(
 		SELECT

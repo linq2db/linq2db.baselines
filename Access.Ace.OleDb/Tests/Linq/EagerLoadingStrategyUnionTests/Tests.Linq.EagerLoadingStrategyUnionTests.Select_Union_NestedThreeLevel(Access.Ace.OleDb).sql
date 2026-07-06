@@ -12,7 +12,7 @@ ORDER BY
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[DepartmentId],
 	[d].[Name],
 	[d].[Salary]
@@ -29,7 +29,7 @@ ORDER BY
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[DepartmentId],
 	[d].[Name],
 	[d].[Rate]

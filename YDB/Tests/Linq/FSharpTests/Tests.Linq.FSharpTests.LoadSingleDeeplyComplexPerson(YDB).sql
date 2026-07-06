@@ -3,10 +3,10 @@ DECLARE $p Int32
 SET     $p = 1
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.FirstName as FirstName,
 	p.MiddleName as MiddleName,
-	p.LastName as Value_1,
+	p.LastName as LastName,
 	p.Gender as Gender
 FROM
 	Person p

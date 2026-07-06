@@ -2,7 +2,7 @@
 
 SELECT
 	[g_2].[c1],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT

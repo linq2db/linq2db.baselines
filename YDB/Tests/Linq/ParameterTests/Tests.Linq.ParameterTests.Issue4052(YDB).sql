@@ -4,7 +4,7 @@ SET     $ID = 1
 
 SELECT
 	c_1.FirstName as FirstName,
-	c_1.PersonID as ID,
+	c_1.PersonID as PersonID,
 	c_1.LastName as LastName,
 	c_1.MiddleName as MiddleName,
 	c_1.Gender as Gender

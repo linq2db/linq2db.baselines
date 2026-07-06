@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	t1.InId as LinkId,
+	t1.InId as InId,
 	CASE
 		WHEN e.InId IS NULL THEN t1.InMinQuantity
 		ELSE e.InMinQuantity
@@ -20,7 +20,7 @@ LIMIT 2
 -- YDB Ydb
 
 SELECT
-	t1.InId as LinkId,
+	t1.InId as InId,
 	CASE
 		WHEN e.InId IS NULL THEN t1.InMinQuantity
 		ELSE e.InMinQuantity

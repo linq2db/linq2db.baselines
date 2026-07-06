@@ -50,7 +50,7 @@ VALUES
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
-	[r].[Version] as [Version_1],
+	[r].[Version],
 	[r].[CreatedAt],
 	[r].[CreatedBy],
 	[r].[UpdatedAt],
@@ -85,7 +85,7 @@ WHERE
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
-	[r].[Version] as [Version_1],
+	[r].[Version],
 	[r].[CreatedAt],
 	[r].[CreatedBy],
 	[r].[UpdatedAt],

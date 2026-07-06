@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
-	[d_1].[Id],
+	[d_1].[Id] as [Id_2],
 	[d_1].[FK]
 FROM
 	(
@@ -20,10 +20,10 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[FK],
 	[d].[FKD],
-	[d].[Id]
+	[d].[Id] as [Id_2]
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON ([m_1].[Id] = [d].[FK])
@@ -33,7 +33,7 @@ FROM
 SELECT
 	[t1].[Id],
 	[t1].[FK],
-	[t1].[Id]
+	[t1].[Id] as [Id_1]
 FROM
 	[EntityMA] [t1]
 

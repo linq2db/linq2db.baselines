@@ -1,8 +1,8 @@
 ﻿-- YDB Ydb
 
 SELECT
-	x.ID as Id,
-	x.BigIntValue as TestField
+	x.ID as ID,
+	x.BigIntValue as BigIntValue
 FROM
 	LinqDataTypes x
 WHERE

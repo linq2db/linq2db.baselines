@@ -14,7 +14,7 @@ SET     @id = 2
 
 SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

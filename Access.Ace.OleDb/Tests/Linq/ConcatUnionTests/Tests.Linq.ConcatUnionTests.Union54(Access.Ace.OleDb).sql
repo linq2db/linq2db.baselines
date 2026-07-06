@@ -2,20 +2,20 @@
 
 SELECT
 	[p1].[ParentID],
-	[p1].[ParentID],
+	[p1].[ParentID] as [ParentID_1],
 	[p1].[Value1],
-	IIF(False, 0, NULL),
-	IIF(False, 0, NULL),
-	IIF(False, 0, NULL)
+	IIF(False, 0, NULL) as [c1],
+	IIF(False, 0, NULL) as [ParentID_2],
+	IIF(False, 0, NULL) as [ChildID]
 FROM
 	[Parent] [p1]
 UNION
 SELECT
-	IIF([t1].[Value1] IS NULL, 0, [t1].[Value1]),
-	IIF(False, 0, NULL),
-	IIF(False, 0, NULL),
-	[t1].[ParentID],
-	[t1].[ParentID],
+	IIF([t1].[Value1] IS NULL, 0, [t1].[Value1]) as [ParentID],
+	IIF(False, 0, NULL) as [ParentID_1],
+	IIF(False, 0, NULL) as [Value1],
+	[t1].[ParentID] as [c1],
+	[t1].[ParentID] as [ParentID_2],
 	[t1].[ChildID]
 FROM
 	(

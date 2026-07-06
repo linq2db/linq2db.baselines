@@ -2,13 +2,13 @@
 
 SELECT
 	[p].[Id],
-	CAST('str1' AS NVarChar) as [Str]
+	CAST('str1' AS NVarChar)
 FROM
 	[Issue3360Table] [p]
 UNION ALL
 SELECT
 	[p_1].[Id],
-	CAST('str2' AS NVarChar) as [Str]
+	CAST('str2' AS NVarChar)
 FROM
 	[Issue3360Table] [p_1]
 
@@ -16,13 +16,13 @@ FROM
 
 SELECT
 	[p].[Id],
-	CAST('str2' AS NVarChar) as [Str]
+	CAST('str2' AS NVarChar)
 FROM
 	[Issue3360Table] [p]
 UNION ALL
 SELECT
 	[p_1].[Id],
-	CAST('str1' AS NVarChar) as [Str]
+	CAST('str1' AS NVarChar)
 FROM
 	[Issue3360Table] [p_1]
 

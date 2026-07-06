@@ -29,7 +29,7 @@ WHERE
 
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
@@ -39,7 +39,7 @@ ORDER BY
 
 SELECT
 	[r].[ID],
-	[r].[Data] as [Data_1]
+	[r].[Data]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

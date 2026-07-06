@@ -5,103 +5,103 @@ SELECT
 	CASE
 		WHEN [r].[Value1] = [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value11],
+	END,
 	CASE
 		WHEN [r].[Value1] <> [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value12],
+	END,
 	CASE
 		WHEN [r].[Value1] > [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value13],
+	END,
 	CASE
 		WHEN [r].[Value1] < [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value14],
+	END,
 	CASE
 		WHEN [r].[Value1] >= [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value15],
+	END,
 	CASE
 		WHEN [r].[Value1] <= [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value16],
+	END,
 	CASE
 		WHEN [r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL
 			THEN 1
 		ELSE 0
-	END as [Value21],
+	END,
 	CASE
 		WHEN [r].[Value4] <> [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 			THEN 1
 		ELSE 0
-	END as [Value22],
+	END,
 	CASE
 		WHEN [r].[Value4] > [r].[Value5] THEN 1
 		ELSE 0
-	END as [Value23],
+	END,
 	CASE
 		WHEN [r].[Value4] < [r].[Value5] THEN 1
 		ELSE 0
-	END as [Value24],
+	END,
 	CASE
 		WHEN [r].[Value4] >= [r].[Value5] THEN 1
 		ELSE 0
-	END as [Value25],
+	END,
 	CASE
 		WHEN [r].[Value4] <= [r].[Value5] THEN 1
 		ELSE 0
-	END as [Value26],
+	END,
 	CASE
 		WHEN [r].[Value1] = [r].[Value4] THEN 1
 		ELSE 0
-	END as [Value31],
+	END,
 	CASE
 		WHEN [r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 			THEN 1
 		ELSE 0
-	END as [Value32],
+	END,
 	CASE
 		WHEN [r].[Value1] > [r].[Value4] THEN 1
 		ELSE 0
-	END as [Value33],
+	END,
 	CASE
 		WHEN [r].[Value1] < [r].[Value4] THEN 1
 		ELSE 0
-	END as [Value34],
+	END,
 	CASE
 		WHEN [r].[Value1] >= [r].[Value4] THEN 1
 		ELSE 0
-	END as [Value35],
+	END,
 	CASE
 		WHEN [r].[Value1] <= [r].[Value4] THEN 1
 		ELSE 0
-	END as [Value36],
+	END,
 	CASE
 		WHEN [r].[Value5] = [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value41],
+	END,
 	CASE
 		WHEN [r].[Value5] <> [r].[Value2] OR [r].[Value5] IS NULL
 			THEN 1
 		ELSE 0
-	END as [Value42],
+	END,
 	CASE
 		WHEN [r].[Value5] > [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value43],
+	END,
 	CASE
 		WHEN [r].[Value5] < [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value44],
+	END,
 	CASE
 		WHEN [r].[Value5] >= [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value45],
+	END,
 	CASE
 		WHEN [r].[Value5] <= [r].[Value2] THEN 1
 		ELSE 0
-	END as [Value46]
+	END
 FROM
 	[BooleanTable] [r]
 WHERE

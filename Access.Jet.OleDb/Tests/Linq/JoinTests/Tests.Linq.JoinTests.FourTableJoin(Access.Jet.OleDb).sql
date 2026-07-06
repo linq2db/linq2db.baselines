@@ -5,7 +5,7 @@ SELECT
 	[p].[Value1],
 	[c1].[ChildID],
 	[c2].[GrandChildID],
-	[c3].[GrandChildID]
+	[c3].[GrandChildID] as [c3Key_1]
 FROM
 	(([Parent] [p]
 		INNER JOIN [Child] [c1] ON ([p].[ParentID] = [c1].[ParentID]))

@@ -5,8 +5,8 @@ DECLARE @p_1 Int -- Int32
 SET     @p_1 = 15
 
 SELECT
-	[c_1].[value] as [Value_1],
-	[c_1].[id] as [Id]
+	[c_1].[value],
+	[c_1].[id]
 FROM
 	(
 		SELECT * FROM [sample_class] where [id] >= @p and [id] < @p_1
@@ -23,8 +23,8 @@ DECLARE @endId Int -- Int32
 SET     @endId = 15
 
 SELECT
-	[t].[value] as [Value_1],
-	[t].[id] as [Id]
+	[t].[value],
+	[t].[id]
 FROM
 	[sample_class] [t]
 WHERE

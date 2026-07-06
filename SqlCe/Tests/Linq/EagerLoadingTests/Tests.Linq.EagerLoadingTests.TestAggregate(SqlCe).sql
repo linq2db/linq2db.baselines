@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	Coalesce([t2].[Sum_1], 0) as [Sum_1],
+	Coalesce([t2].[Sum_1], 0),
 	[t4].[Count_1]
 FROM
 	[MasterClass] [m_1]
@@ -59,7 +59,7 @@ FROM
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
-	[t1].[Value] as [Value_1],
+	[t1].[Value],
 	[t1].[ByteValues]
 FROM
 	[MasterClass] [t1]

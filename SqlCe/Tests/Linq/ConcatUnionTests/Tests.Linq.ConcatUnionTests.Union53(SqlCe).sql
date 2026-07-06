@@ -2,12 +2,12 @@
 
 SELECT
 	[p1].[ParentID],
-	NULL as [Value1]
+	NULL
 FROM
 	[Parent] [p1]
 UNION
 SELECT
-	NULL as [ParentID],
+	NULL,
 	[p2].[Value1]
 FROM
 	[Parent] [p2]

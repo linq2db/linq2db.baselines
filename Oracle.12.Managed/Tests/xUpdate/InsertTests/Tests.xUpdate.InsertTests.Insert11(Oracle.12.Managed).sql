@@ -35,7 +35,7 @@ DECLARE @id Int32
 SET     @id = 4
 
 SELECT
-	p2."PersonID" as ID,
+	p2."PersonID",
 	p2."Gender",
 	p2."FirstName",
 	p2."MiddleName",

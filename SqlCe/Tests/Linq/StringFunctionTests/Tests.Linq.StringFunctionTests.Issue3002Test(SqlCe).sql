@@ -46,7 +46,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 
 -- SqlCe
 DECLARE @test NVarChar(4) -- String
@@ -55,7 +55,7 @@ DECLARE @test_1 NVarChar(6) -- String
 SET     @test_1 = '%Test%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -79,7 +79,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 
 -- SqlCe
 DECLARE @test NVarChar(5) -- String
@@ -88,7 +88,7 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Value%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
@@ -112,7 +112,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1]
+	END
 
 -- SqlCe
 DECLARE @test NVarChar(5) -- String
@@ -121,7 +121,7 @@ DECLARE @test_1 NVarChar(7) -- String
 SET     @test_1 = '%Class%'
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE

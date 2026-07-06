@@ -15,7 +15,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[CompanyId],
 	[d].[Name],
@@ -34,7 +34,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[DepartmentId],
 	[d].[Name],

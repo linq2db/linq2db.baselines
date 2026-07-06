@@ -38,7 +38,7 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	[k_1].[item] as [item_1],
+	[k_1].[item],
 	[d].[Id],
 	[d].[EmployeeId],
 	[d].[Title]

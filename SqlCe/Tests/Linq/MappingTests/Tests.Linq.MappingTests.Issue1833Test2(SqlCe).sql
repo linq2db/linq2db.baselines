@@ -1,10 +1,10 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	[e].[PersonID] as [ID],
+	[e].[PersonID],
 	[e].[FirstName],
 	[e].[LastName],
-	[e].[FirstName] + ':' + [e].[LastName] as [MiddleName]
+	[e].[FirstName] + ':' + [e].[LastName]
 FROM
 	[Person] [e]
 WHERE

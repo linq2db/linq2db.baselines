@@ -23,7 +23,7 @@ DECLARE @UserId Int32
 SET     @UserId = 2
 
 SELECT
-	x."Id" as "UserId"
+	x."Id"
 FROM
 	"TransactionLine" x
 WHERE

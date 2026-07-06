@@ -10,7 +10,7 @@ SET     @Data_1 = 'Data 1'
 
 SELECT
 	[t1].[Id],
-	[t1].[Data] as [Data_1]
+	[t1].[Data]
 FROM
 	(
 		SELECT @Id AS [Id], @Data AS [Data]
@@ -31,7 +31,7 @@ SET     @Data_1 = 'Data 101'
 
 SELECT
 	[t1].[Id],
-	[t1].[Data] as [Data_1]
+	[t1].[Data]
 FROM
 	(
 		SELECT @Id AS [Id], @Data AS [Data]

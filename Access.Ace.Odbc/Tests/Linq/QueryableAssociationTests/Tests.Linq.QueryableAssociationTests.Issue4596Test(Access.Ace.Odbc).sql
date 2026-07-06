@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[Id],
 	[m_1].[C1],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[FormId],
 	[d].[OrderIndex],
 	[d].[Name1],

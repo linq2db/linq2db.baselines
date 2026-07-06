@@ -16,7 +16,7 @@ INSERT INTO [Child]
 )
 SELECT
 	[c_1].[ParentID],
-	@ChildID as [c1]
+	@ChildID
 FROM
 	[Child] [c_1]
 WHERE
@@ -27,7 +27,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

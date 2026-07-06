@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	COUNT([p].[PersonID]) as [c1]
+	COUNT([p].[PersonID])
 FROM
 	[Person] [p]
 WHERE
@@ -17,7 +17,7 @@ WHERE
 -- SqlCe
 
 SELECT TOP (2)
-	COUNT([p].[PersonID]) as [c1]
+	COUNT([p].[PersonID])
 FROM
 	[Person] [p]
 WHERE

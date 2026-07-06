@@ -54,7 +54,7 @@ VALUES
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],
-	[arg2].[Id],
+	[arg2].[Id] as [Id_1],
 	[arg2].[Text]
 FROM
 	[Names] [after_1]

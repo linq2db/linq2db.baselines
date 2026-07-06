@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[x].[Type] as [Type_1],
+	[x].[Type],
 	[x].[OwnerId],
 	[a_Owner].[Id],
 	[a_Owner].[Name]

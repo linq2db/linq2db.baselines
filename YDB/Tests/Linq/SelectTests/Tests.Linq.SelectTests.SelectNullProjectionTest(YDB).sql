@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.Value1 as V1
+	p.Value1 as Value1
 FROM
 	Parent p
 

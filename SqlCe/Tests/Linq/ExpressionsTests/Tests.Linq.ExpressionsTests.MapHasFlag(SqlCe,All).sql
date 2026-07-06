@@ -4,7 +4,7 @@ SET     @flag = 7
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1],
+	[t].[Value],
 	[t].[Flags]
 FROM
 	[MappingTestClass] [t]

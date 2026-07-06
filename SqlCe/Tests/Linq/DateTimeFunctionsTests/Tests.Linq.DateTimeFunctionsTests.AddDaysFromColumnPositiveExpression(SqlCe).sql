@@ -46,7 +46,7 @@ DECLARE @part2 Int -- Int32
 SET     @part2 = 4
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE

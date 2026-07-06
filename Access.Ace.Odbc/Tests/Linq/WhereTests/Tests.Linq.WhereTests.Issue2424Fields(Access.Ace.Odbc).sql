@@ -4,9 +4,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -19,9 +19,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -34,9 +34,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -49,9 +49,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -64,9 +64,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -79,9 +79,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -94,9 +94,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -109,9 +109,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -124,9 +124,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -139,9 +139,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -154,9 +154,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -169,9 +169,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -184,9 +184,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -200,9 +200,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -216,9 +216,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -232,9 +232,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -248,9 +248,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
@@ -264,9 +264,9 @@ SELECT
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable],
-	[right_1].[Id],
-	[right_1].[StrValue],
-	[right_1].[StrValueNullable]
+	[right_1].[Id] as [Id_1],
+	[right_1].[StrValue] as [StrValue_1],
+	[right_1].[StrValueNullable] as [StrValueNullable_1]
 FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]

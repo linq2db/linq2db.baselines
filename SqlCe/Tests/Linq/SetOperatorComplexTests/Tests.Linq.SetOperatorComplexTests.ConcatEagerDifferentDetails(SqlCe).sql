@@ -79,9 +79,9 @@ FROM
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName],
-	CAST(0 AS Int) as [projection__set_id__]
+	CAST(0 AS Int)
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -90,9 +90,9 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 UNION ALL
 SELECT
-	[a_Book_1].[BookId] as [Id],
+	[a_Book_1].[BookId],
 	[a_Book_1].[BookName],
-	CAST(1 AS Int) as [projection__set_id__]
+	CAST(1 AS Int)
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]

@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[m_1].[PersonID] as [ID],
-	[d].[PersonID],
+	[m_1].[PersonID],
+	[d].[PersonID] as [PersonID_1],
 	[d].[Diagnosis]
 FROM
 	[Person] [m_1]
@@ -14,7 +14,7 @@ WHERE
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID] as [ID]
+	[p].[PersonID]
 FROM
 	[Person] [p]
 WHERE

@@ -2,7 +2,7 @@
 
 SELECT DISTINCT
 	[i].[FirstName],
-	[i].[PersonID] as [ID],
+	[i].[PersonID],
 	[i].[LastName],
 	[i].[MiddleName],
 	[i].[Gender],
@@ -22,7 +22,7 @@ SELECT DISTINCT
 	[i].[MiddleName] as [MiddleName_3],
 	[i].[Gender] as [Gender_3],
 	[e_1].[FirstName] as [FirstName_4],
-	[e_1].[ID] as [ID_4],
+	[e_1].[ID],
 	[e_1].[LastName] as [LastName_4],
 	[e_1].[MiddleName] as [MiddleName_4],
 	[e_1].[Gender] as [Gender_4],

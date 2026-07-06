@@ -2,7 +2,7 @@
 
 SELECT
 	t1.RowNumber as RowNumber,
-	n.PersonID as ID
+	n.PersonID as PersonID
 FROM
 	(
 		SELECT

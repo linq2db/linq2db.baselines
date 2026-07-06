@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	SUM([g_1].[ParentID]) as [Sum_1]
+	SUM([g_1].[ParentID])
 FROM
 	[Child] [g_1]
 		LEFT JOIN [Parent] [p] ON [g_1].[ParentID] = [p].[ParentID]

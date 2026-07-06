@@ -7,7 +7,7 @@ DECLARE $Ids0_3 Int32
 SET     $Ids0_3 = 3
 
 SELECT
-	i.PersonID as ID
+	i.PersonID as PersonID
 FROM
 	Person i
 WHERE

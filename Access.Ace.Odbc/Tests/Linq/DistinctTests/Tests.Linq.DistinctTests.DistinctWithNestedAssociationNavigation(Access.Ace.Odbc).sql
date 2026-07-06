@@ -16,9 +16,9 @@ SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
 	[t1].[GrandChildID],
-	[a_Child].[ParentID],
-	[a_Child].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Child].[ParentID] as [ParentID_1],
+	[a_Child].[ChildID] as [ChildID_1],
+	[a_Parent].[ParentID] as [ParentID_2],
 	[a_Parent].[Value1]
 FROM
 	([GrandChild] [t1]

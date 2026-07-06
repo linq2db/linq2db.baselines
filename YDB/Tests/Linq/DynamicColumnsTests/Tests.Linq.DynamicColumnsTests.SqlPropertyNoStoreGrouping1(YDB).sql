@@ -1,12 +1,12 @@
 ﻿-- YDB Ydb
 
 SELECT
-	g_1.FirstName as Key_1,
+	g_1.FirstName as FirstName,
 	COUNT(*) as Count_1
 FROM
 	Person g_1
 GROUP BY
 	g_1.FirstName
 ORDER BY
-	Key_1
+	FirstName
 

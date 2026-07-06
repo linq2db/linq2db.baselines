@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (1)
-	[o].[Anchor] - Coalesce([t1].[Sum_1], 0) as [c1]
+	[o].[Anchor] - Coalesce([t1].[Sum_1], 0)
 FROM
 	[Outer] [o]
 		OUTER APPLY (

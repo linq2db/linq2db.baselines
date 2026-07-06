@@ -3,10 +3,10 @@
 SELECT
 	[c_1].[Id],
 	[c_1].[LocationId],
-	[subcc].[CountCondoCategories],
+	[subcc].[CountCondoCategories] as [CategoriesCount],
 	[subct].[TagsCount],
 	[l].[LocationName],
-	[l].[Id]
+	[l].[Id] as [LocationId_1]
 FROM
 	(([Condos] [c_1]
 		INNER JOIN [Locations] [l] ON ([c_1].[LocationId] = [l].[Id]))

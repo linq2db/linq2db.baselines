@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT TOP (2)
-	[p].[PersonID] as [Item1],
+	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName]
 FROM

@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[Value1] as [Value1_]
+	[p].[Value1]
 FROM
 	[Parent] [p]
 

@@ -3,7 +3,7 @@
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	(
 		SELECT

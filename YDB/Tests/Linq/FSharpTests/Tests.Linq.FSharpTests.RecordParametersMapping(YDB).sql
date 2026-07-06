@@ -1,10 +1,10 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
-	p.FirstName as id_1,
-	p.LastName as Id_2,
-	p.MiddleName as iD_3
+	p.PersonID as PersonID,
+	p.FirstName as FirstName,
+	p.LastName as LastName,
+	p.MiddleName as MiddleName
 FROM
 	Person p
 WHERE

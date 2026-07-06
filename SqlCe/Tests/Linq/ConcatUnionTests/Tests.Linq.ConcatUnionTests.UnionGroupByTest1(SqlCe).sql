@@ -3,7 +3,7 @@
 SELECT
 	[t2].[month_1],
 	[t2].[year_1],
-	CAST(1 AS Int) as [int_1]
+	CAST(1 AS Int)
 FROM
 	(
 		SELECT DISTINCT
@@ -14,16 +14,16 @@ FROM
 	) [t2]
 UNION
 SELECT
-	[t3].[SmallIntValue] as [month_1],
-	[t3].[SmallIntValue] as [year_1],
-	CAST(3 AS Int) as [int_1]
+	[t3].[SmallIntValue],
+	[t3].[SmallIntValue],
+	CAST(3 AS Int)
 FROM
 	[LinqDataTypes] [t3]
 UNION
 SELECT
-	DatePart(year, [t4].[DateTimeValue]) as [month_1],
-	DatePart(year, [t4].[DateTimeValue]) as [year_1],
-	CAST(2 AS Int) as [int_1]
+	DatePart(year, [t4].[DateTimeValue]),
+	DatePart(year, [t4].[DateTimeValue]),
+	CAST(2 AS Int)
 FROM
 	[LinqDataTypes] [t4]
 

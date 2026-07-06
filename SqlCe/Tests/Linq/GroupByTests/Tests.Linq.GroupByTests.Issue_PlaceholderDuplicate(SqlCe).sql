@@ -3,7 +3,7 @@ DECLARE @take Int -- Int32
 SET     @take = 100
 
 SELECT TOP (@take)
-	[r].[PersonID] as [ID]
+	[r].[PersonID]
 FROM
 	[Person] [r]
 ORDER BY

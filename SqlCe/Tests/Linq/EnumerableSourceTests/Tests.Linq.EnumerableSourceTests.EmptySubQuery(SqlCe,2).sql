@@ -2,7 +2,7 @@
 
 SELECT
 	[t].[Id],
-	[t].[Value] as [Value_1]
+	[t].[Value]
 FROM
 	[TableToInsert] [t]
 WHERE

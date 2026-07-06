@@ -2,8 +2,8 @@
 
 SELECT
 	[ip].[InvestorId],
-	[t1].[Units] as [TotalUnits],
-	SUM([ip].[NetPayment]) as [TotalAmount]
+	[t1].[Units],
+	SUM([ip].[NetPayment])
 FROM
 	[PaymentEvent] [p]
 		INNER JOIN [InvestorPayment] [ip] ON [p].[Id] = [ip].[Id]

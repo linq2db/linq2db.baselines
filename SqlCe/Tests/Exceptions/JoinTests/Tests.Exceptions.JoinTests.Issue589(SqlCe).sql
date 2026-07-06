@@ -3,7 +3,7 @@
 SELECT
 	[grandChild_1].[GrandChildID],
 	[child_1].[ChildID],
-	[a_Parent].[ParentID] as [ParentParentId],
+	[a_Parent].[ParentID],
 	[pf_1].[Tmp]
 FROM
 	[GrandChild] [grandChild_1]

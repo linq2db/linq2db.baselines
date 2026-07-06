@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p.PersonID as ID,
+	p.PersonID as PersonID,
 	p.FirstName as FirstName,
 	Unwrap(CAST('id=1'u AS Text)) as Marker
 FROM
@@ -10,7 +10,7 @@ WHERE
 	p.PersonID = 1
 UNION ALL
 SELECT
-	p_1.PersonID as ID,
+	p_1.PersonID as PersonID,
 	p_1.FirstName as FirstName,
 	Unwrap(CAST('id=2'u AS Text)) as Marker
 FROM

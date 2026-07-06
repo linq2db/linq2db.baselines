@@ -26,7 +26,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -34,7 +34,7 @@ FROM
 
 SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
@@ -67,7 +67,7 @@ WHERE
 
 SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID] as [ID],
+	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]

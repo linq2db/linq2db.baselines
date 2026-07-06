@@ -32,7 +32,7 @@ WHERE
 -- SqlCe
 
 SELECT TOP (1)
-	[r].[BigIntValue] as [TestField]
+	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]
 WHERE

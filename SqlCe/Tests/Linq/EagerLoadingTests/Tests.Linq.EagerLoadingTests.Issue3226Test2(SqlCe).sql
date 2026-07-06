@@ -2,7 +2,7 @@
 
 SELECT
 	[m_1].[Id],
-	[d].[Value] as [Value_1]
+	[d].[Value]
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]

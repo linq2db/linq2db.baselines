@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	DatePart(month, [t].[DateTimeValue]) as [c1]
+	DatePart(month, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

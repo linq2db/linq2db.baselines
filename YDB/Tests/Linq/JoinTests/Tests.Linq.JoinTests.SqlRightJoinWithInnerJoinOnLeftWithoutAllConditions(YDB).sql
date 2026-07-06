@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	t2.ParentID as Left_1,
+	t2.ParentID as ParentID,
 	t1.ParentID as Right_1
 FROM
 	Parent t2

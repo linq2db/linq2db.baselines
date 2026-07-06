@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[t].[Value1] + Coalesce(CAST([t].[Value2] AS NVarChar(11)), '') + Coalesce(Lower(CAST([t].[Value3] AS NChar(36))), '') as [c1]
+	[t].[Value1] + Coalesce(CAST([t].[Value2] AS NVarChar(11)), '') + Coalesce(Lower(CAST([t].[Value3] AS NChar(36))), '')
 FROM
 	[StringConcatIntGuidNullEntity] [t]
 ORDER BY

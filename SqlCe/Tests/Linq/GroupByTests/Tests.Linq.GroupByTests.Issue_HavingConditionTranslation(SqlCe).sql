@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[MiddleName] as [Key_1],
-	COUNT(*) as [Count_1]
+	[t1].[MiddleName],
+	COUNT(*)
 FROM
 	[Person] [t1]
 GROUP BY

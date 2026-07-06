@@ -17,8 +17,8 @@ VALUES
 
 SELECT TOP (2)
 	[t1].[ID],
-	[t1].[Array] as [Array_1],
-	[t1].[Binary] as [Binary_1]
+	[t1].[Array],
+	[t1].[Binary]
 FROM
 	[Issue1303] [t1]
 WHERE
@@ -28,8 +28,8 @@ WHERE
 
 SELECT TOP (2)
 	[t1].[ID],
-	[t1].[Array] as [Array_1],
-	[t1].[Binary] as [Binary_1]
+	[t1].[Array],
+	[t1].[Binary]
 FROM
 	[Issue1303] [t1]
 WHERE
@@ -39,8 +39,8 @@ WHERE
 
 SELECT TOP (2)
 	[t1].[ID],
-	[t1].[Array] as [Array_1],
-	[t1].[Binary] as [Binary_1]
+	[t1].[Array],
+	[t1].[Binary]
 FROM
 	[Issue1303] [t1]
 WHERE

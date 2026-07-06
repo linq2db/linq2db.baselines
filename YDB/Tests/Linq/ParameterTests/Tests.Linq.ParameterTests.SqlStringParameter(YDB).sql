@@ -3,7 +3,7 @@ DECLARE $p Text(4) -- String
 SET     $p = 'John'u
 
 SELECT
-	t.PersonID as ID,
+	t.PersonID as PersonID,
 	t.FirstName as FirstName,
 	t.LastName as LastName,
 	t.MiddleName as MiddleName,
@@ -19,7 +19,7 @@ DECLARE $p Text(6) -- String
 SET     $p = 'Tester'u
 
 SELECT
-	t.PersonID as ID,
+	t.PersonID as PersonID,
 	t.FirstName as FirstName,
 	t.LastName as LastName,
 	t.MiddleName as MiddleName,

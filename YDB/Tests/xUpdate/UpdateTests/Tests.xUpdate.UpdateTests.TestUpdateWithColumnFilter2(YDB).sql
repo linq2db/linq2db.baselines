@@ -29,7 +29,7 @@ SET     $FirstName = 'UpdateColumnFilter'u
 
 SELECT
 	x.FirstName as FirstName,
-	x.PersonID as ID,
+	x.PersonID as PersonID,
 	x.LastName as LastName,
 	x.MiddleName as MiddleName,
 	x.Gender as Gender
@@ -58,7 +58,7 @@ SET     $ID = 5
 
 SELECT
 	x.FirstName as FirstName,
-	x.PersonID as ID,
+	x.PersonID as PersonID,
 	x.LastName as LastName,
 	x.MiddleName as MiddleName,
 	x.Gender as Gender
@@ -96,7 +96,7 @@ SET     $ID = 5
 
 SELECT
 	t1.FirstName as FirstName,
-	t1.PersonID as ID,
+	t1.PersonID as PersonID,
 	t1.LastName as LastName,
 	t1.MiddleName as MiddleName,
 	t1.Gender as Gender

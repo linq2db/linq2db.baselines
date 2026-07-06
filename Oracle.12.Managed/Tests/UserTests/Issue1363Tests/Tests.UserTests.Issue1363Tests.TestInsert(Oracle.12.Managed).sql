@@ -49,8 +49,8 @@ DECLARE @id2 Raw(16) -- Binary
 SET     @id2 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 
 SELECT
-	t1."required_field" as "Required",
-	t1."optional_field" as "Optional"
+	t1."required_field",
+	t1."optional_field"
 FROM
 	"Issue1363" t1
 WHERE

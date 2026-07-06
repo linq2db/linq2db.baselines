@@ -23,8 +23,8 @@ VALUES
 -- SqlCe
 
 SELECT
-	[entity].[ID] as [Id],
-	[entity].[BigIntValue] as [TestField]
+	[entity].[ID],
+	[entity].[BigIntValue]
 FROM
 	[LinqDataTypes] [entity]
 WHERE

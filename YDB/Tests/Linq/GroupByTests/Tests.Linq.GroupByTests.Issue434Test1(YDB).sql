@@ -3,8 +3,8 @@ DECLARE $input Text(6) -- String
 SET     $input = '%test%'u
 
 SELECT
-	m_1.PersonID as ID,
-	d.PersonID as PersonID,
+	m_1.PersonID as PersonID,
+	d.PersonID as PersonID_1,
 	d.Diagnosis as Diagnosis
 FROM
 	Person m_1
@@ -18,7 +18,7 @@ SET     $input = '%test%'u
 
 SELECT
 	p.FirstName as FirstName,
-	p.PersonID as ID
+	p.PersonID as PersonID
 FROM
 	Person p
 WHERE

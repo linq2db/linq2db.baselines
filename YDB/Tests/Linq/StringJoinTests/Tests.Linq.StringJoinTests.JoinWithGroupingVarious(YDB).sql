@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	g_1.Id as Key_1,
+	g_1.Id as Id,
 	Unicode::JoinFromList(AGGREGATE_LIST(DISTINCT Coalesce(g_1.NullableValue, ''u)), ', 'u) as NullableDistinct,
 	Coalesce(Unicode::JoinFromList(AGGREGATE_LIST(DISTINCT g_1.NullableValue), ', 'u), ''u) as NullableDistinctNotNullDistinct,
 	Unicode::JoinFromList(ListMap(ListReverse(ListSort(ListUniq(AGGREGATE_LIST(DISTINCT (g_1.NullableValue, g_1.NullableValue))), ($t) -> { return (if($t.0 IS NULL, 1, 0), $t.0) })), ($t) -> { return $t.1 }), ', 'u) as NullableDistinctNotNullDistinctOrdered,
@@ -12,7 +12,7 @@ FROM
 GROUP BY
 	g_1.Id
 ORDER BY
-	Key_1
+	Id
 
 -- YDB Ydb
 

@@ -2,8 +2,8 @@
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -22,8 +22,8 @@ SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -44,8 +44,8 @@ SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -64,8 +64,8 @@ FROM
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -84,8 +84,8 @@ SET     @Usage = 0
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]
@@ -106,8 +106,8 @@ SET     @Usage = 1
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
-	[d].[Usage],
+	[d].[Id] as [Id_1],
+	[d].[Usage] as [Usage_1],
 	[d].[FirstTableId]
 FROM
 	[Table404One] [m_1]

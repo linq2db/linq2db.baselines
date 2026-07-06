@@ -27,7 +27,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -36,7 +36,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -45,7 +45,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -54,7 +54,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE

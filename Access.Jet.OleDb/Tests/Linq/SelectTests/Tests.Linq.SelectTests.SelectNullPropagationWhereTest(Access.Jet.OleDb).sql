@@ -3,13 +3,13 @@
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1],
-	[c_1].[ParentID],
+	[c_1].[ParentID] as [ParentID_1],
 	[c_1].[ChildID],
-	[a_Parent].[ParentID],
-	[a_Parent].[Value1],
-	[t1].[ParentID],
-	[t1].[Value1],
-	IIF([a_Parent].[ParentID] IS NOT NULL, [a_Parent].[Value1], NULL)
+	[a_Parent].[ParentID] as [ParentID_2],
+	[a_Parent].[Value1] as [Value1_1],
+	[t1].[ParentID] as [ParentID_3],
+	[t1].[Value1] as [Value1_2],
+	IIF([a_Parent].[ParentID] IS NOT NULL, [a_Parent].[Value1], NULL) as [Value1_3]
 FROM
 	([Parent] [t1]
 		INNER JOIN [Child] [c_1] ON ([c_1].[ParentID] = [t1].[ParentID]))
@@ -34,7 +34,7 @@ FROM
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]

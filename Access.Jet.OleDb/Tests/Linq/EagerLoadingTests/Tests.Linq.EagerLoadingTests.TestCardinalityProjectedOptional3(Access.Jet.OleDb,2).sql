@@ -2,8 +2,8 @@
 
 SELECT
 	[m_1].[Id],
-	[m_1].[Id],
-	[d].[Id],
+	[m_1].[Id] as [Id_1],
+	[d].[Id] as [Id_2],
 	[d].[FK]
 FROM
 	(
@@ -19,8 +19,8 @@ FROM
 
 SELECT
 	[e].[Id],
-	[a_ObjectBOptional].[Id],
-	[a_ObjectBOptional].[Id]
+	[a_ObjectBOptional].[Id] as [Id_1],
+	[a_ObjectBOptional].[Id] as [Id_2]
 FROM
 	[EntityA] [e]
 		LEFT JOIN [EntityB] [a_ObjectBOptional] ON ([e].[FK] = [a_ObjectBOptional].[Id])

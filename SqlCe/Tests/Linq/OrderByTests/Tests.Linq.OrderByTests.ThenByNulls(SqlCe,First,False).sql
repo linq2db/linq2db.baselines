@@ -5,7 +5,7 @@ SET     @take = 3
 SELECT TOP (@take)
 	[t1].[Id],
 	[t1].[Grp],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[NullsTable] [t1]
 ORDER BY
@@ -18,7 +18,7 @@ ORDER BY
 SELECT
 	[t1].[Id],
 	[t1].[Grp],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[NullsTable] [t1]
 

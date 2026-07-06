@@ -2,7 +2,7 @@
 
 SELECT
 	[t].[FirstName],
-	[t].[PersonID] as [ID],
+	[t].[PersonID],
 	[t].[LastName],
 	[t].[MiddleName],
 	[t].[Gender]

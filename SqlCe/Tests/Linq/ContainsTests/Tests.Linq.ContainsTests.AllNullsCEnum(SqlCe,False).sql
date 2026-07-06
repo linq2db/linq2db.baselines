@@ -3,7 +3,7 @@ DECLARE @In NVarChar -- String
 SET     @In = NULL
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -14,7 +14,7 @@ DECLARE @NotIn NVarChar -- String
 SET     @NotIn = NULL
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

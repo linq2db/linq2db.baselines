@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[g_1].[Id] as [Key_1],
-	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0)) as [Value1Sum]
+	[g_1].[Id],
+	SUM(Coalesce(CAST([a_Values].[Value] AS Int), 0))
 FROM
 	[Item] [g_1]
 		LEFT JOIN [ItemValue] [a_Values] ON [g_1].[Id] = [a_Values].[ItemId] AND [a_Values].[ValueName] = 'Value1'

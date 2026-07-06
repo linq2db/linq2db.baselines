@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	p2.PersonID as p2,
+	p2.PersonID as PersonID,
 	p1.FirstName as FirstName
 FROM
 	Person p1

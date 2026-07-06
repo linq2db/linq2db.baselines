@@ -16,7 +16,7 @@ FROM
 -- YDB Ydb
 
 SELECT DISTINCT
-	g_1.ParentID as Key_1
+	g_1.ParentID as ParentID
 FROM
 	Child g_1
 

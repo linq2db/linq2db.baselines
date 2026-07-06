@@ -13,7 +13,7 @@ SELECT
 	END, '') + Coalesce(', ' + CASE
 		WHEN [x].[NVarcharValue] LIKE '%A%' ESCAPE '~' THEN [x].[NVarcharValue]
 		ELSE NULL
-	END, ''), 3, 2147483647) as [c1]
+	END, ''), 3, 2147483647)
 FROM
 	[SampleClass] [x]
 WHERE

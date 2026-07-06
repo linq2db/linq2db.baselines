@@ -1,9 +1,9 @@
 ﻿-- SqlCe
 
 SELECT
-	[k_1].[ID] as [Id],
-	[k_1].[NAME] as [Name],
-	'2020-02-29 17:54:55.123' as [ToDelete]
+	[k_1].[ID],
+	[k_1].[NAME],
+	'2020-02-29 17:54:55.123'
 FROM
 	[Issue1189Customer] [k_1]
 

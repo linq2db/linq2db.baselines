@@ -1,9 +1,9 @@
 ﻿-- YDB Ydb
 
 SELECT
-	v.inId as InId,
-	t.inIdState as InIdState,
-	a_Main.inIdType as InIdType
+	v.inId as inId,
+	t.inIdState as inIdState,
+	a_Main.inIdType as inIdType
 FROM
 	stVersions v
 		INNER JOIN stMain a_Main ON v.inIdMain = a_Main.inId

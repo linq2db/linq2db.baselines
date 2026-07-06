@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[Value_2] as [Value_1],
-	[t1].[Value_1] as [Value_2]
+	[t1].[Value_2],
+	[t1].[Value_1]
 FROM
 	[Request] [a]
 		OUTER APPLY (

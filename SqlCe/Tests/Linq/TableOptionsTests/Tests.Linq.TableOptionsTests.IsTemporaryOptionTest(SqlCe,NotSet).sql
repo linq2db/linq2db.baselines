@@ -36,7 +36,7 @@ INSERT INTO [temp_table2]
 )
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[temp_table1] [t1]
 
@@ -44,7 +44,7 @@ FROM
 
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[temp_table1] [t1]
 
@@ -52,7 +52,7 @@ FROM
 
 SELECT
 	[t1].[ID],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[temp_table2] [t1]
 

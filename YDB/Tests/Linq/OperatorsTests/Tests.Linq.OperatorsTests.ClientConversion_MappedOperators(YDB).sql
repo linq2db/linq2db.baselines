@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 
 SELECT
-	i.Id as Value_1
+	i.Id as Id
 FROM
 	Tender i
 
@@ -16,7 +16,7 @@ FROM
 -- YDB Ydb
 
 SELECT
-	i.Id as Value_1
+	i.Id as Id
 FROM
 	Tender i
 LIMIT 1

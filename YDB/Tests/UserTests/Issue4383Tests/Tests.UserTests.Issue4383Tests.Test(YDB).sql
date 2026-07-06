@@ -4,7 +4,7 @@ SELECT
 	m_1.Id as Id,
 	m_1.Id as Id_1,
 	m_1.Id_1 as Id_2,
-	d_1.CHAIN_ID as ElementId
+	d_1.CHAIN_ID as CHAIN_ID
 FROM
 	(
 		SELECT DISTINCT
@@ -27,9 +27,9 @@ ORDER BY
 -- YDB Ydb
 
 SELECT
-	m_1.LINE_ID as Id,
-	d.LINE_ID as LineId,
-	d.CHAIN_ID as ChainId,
+	m_1.LINE_ID as LINE_ID,
+	d.LINE_ID as LineId_1,
+	d.CHAIN_ID as CHAIN_ID,
 	a_Chain.CHAIN_ID as Id_1,
 	a_Chain.CHAIN_ID as Id_2
 FROM
@@ -42,7 +42,7 @@ ORDER BY
 -- YDB Ydb
 
 SELECT
-	t1.LINE_ID as Id,
+	t1.LINE_ID as LINE_ID,
 	t1.LINE_ID as Id_1
 FROM
 	PUMPLINES t1

@@ -46,7 +46,7 @@ SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
-	[a_ActualStage].[Id],
+	[a_ActualStage].[Id] as [Id_1],
 	[a_ActualStage].[TaskId],
 	[a_ActualStage].[Actual]
 FROM

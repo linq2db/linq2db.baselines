@@ -3,7 +3,7 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT TOP (2)
-	[p].[PersonID] as [ID],
+	[p].[PersonID],
 	[p].[FirstName],
 	[p].[MiddleName],
 	[p].[LastName],

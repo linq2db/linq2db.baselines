@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[ChildID] as [Key_1],
-	AVG([t1].[ParentID]) as [y]
+	[t1].[ChildID],
+	AVG([t1].[ParentID])
 FROM
 	[Child] [t1]
 GROUP BY

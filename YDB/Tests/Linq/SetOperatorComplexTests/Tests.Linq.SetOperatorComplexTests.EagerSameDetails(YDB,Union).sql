@@ -39,7 +39,7 @@ WHERE
 -- YDB Ydb
 
 SELECT
-	a_Book.BookId as Id,
+	a_Book.BookId as BookId,
 	a_Book.BookName as BookName
 FROM
 	Author t1
@@ -49,7 +49,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'u
 UNION
 SELECT
-	a_Book_1.BookId as Id,
+	a_Book_1.BookId as BookId,
 	a_Book_1.BookName as BookName
 FROM
 	Author t2

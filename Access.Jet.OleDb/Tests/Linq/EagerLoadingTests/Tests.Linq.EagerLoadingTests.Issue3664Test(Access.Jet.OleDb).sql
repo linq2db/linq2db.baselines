@@ -17,7 +17,7 @@ SET     @id = 11
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]
@@ -38,7 +38,7 @@ SET     @id = 12
 
 SELECT
 	[m_1].[Id],
-	[d].[Id],
+	[d].[Id] as [Id_1],
 	[d].[TestId]
 FROM
 	[Test3664] [m_1]

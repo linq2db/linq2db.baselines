@@ -3,8 +3,8 @@
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
-	[d].[ParentID],
-	[d].[ChildID],
+	[d].[ParentID] as [ParentID_1],
+	[d].[ChildID] as [ChildID_1],
 	[d].[GrandChildID]
 FROM
 	(

@@ -2,7 +2,7 @@
 
 SELECT
 	[m_1].[Key_1],
-	[d].[Value] as [Value_1]
+	[d].[Value]
 FROM
 	(
 		SELECT DISTINCT
@@ -20,7 +20,7 @@ ORDER BY
 -- SqlCe
 
 SELECT DISTINCT
-	[g_1].[GrpId] as [Key_1]
+	[g_1].[GrpId]
 FROM
 	[ConcatGroupedEntity] [g_1]
 ORDER BY
@@ -31,7 +31,7 @@ ORDER BY
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],
-	[t1].[Value] as [Value_1]
+	[t1].[Value]
 FROM
 	[ConcatGroupedEntity] [t1]
 

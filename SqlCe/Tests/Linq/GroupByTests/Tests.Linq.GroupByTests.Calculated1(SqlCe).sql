@@ -34,7 +34,7 @@ SELECT DISTINCT
 			ELSE '2'
 		END
 		ELSE '3'
-	END as [Key_1]
+	END
 FROM
 	[Child] [g_1]
 

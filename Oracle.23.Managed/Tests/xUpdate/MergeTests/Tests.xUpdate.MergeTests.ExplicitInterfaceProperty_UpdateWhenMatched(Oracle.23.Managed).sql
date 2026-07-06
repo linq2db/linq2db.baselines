@@ -31,7 +31,7 @@ SET
 
 SELECT
 	t1."Id",
-	t1."Field" as "TestsxUpdateMergeTestsIExplicitComplexPropertyField"
+	t1."Field"
 FROM
 	"ExplicitComplexPropertyTarget" t1
 FETCH NEXT 2 ROWS ONLY

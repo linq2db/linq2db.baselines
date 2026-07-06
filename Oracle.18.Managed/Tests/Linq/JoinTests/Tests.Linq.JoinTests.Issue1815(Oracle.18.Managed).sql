@@ -1,7 +1,7 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."InId" as "LinkId",
+	t1."InId",
 	CASE
 		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
 		ELSE e."InMinQuantity"
@@ -20,7 +20,7 @@ FETCH NEXT 2 ROWS ONLY
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."InId" as "LinkId",
+	t1."InId",
 	CASE
 		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
 		ELSE e."InMinQuantity"

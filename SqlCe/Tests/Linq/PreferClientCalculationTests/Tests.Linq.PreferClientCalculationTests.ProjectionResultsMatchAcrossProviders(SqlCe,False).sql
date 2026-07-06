@@ -2,7 +2,7 @@
 
 SELECT
 	[e].[Id],
-	[e].[Value1] + 12345 as [Calc]
+	[e].[Value1] + 12345
 FROM
 	[ClientCalcEntity] [e]
 
@@ -22,7 +22,7 @@ SELECT
 	CASE
 		WHEN [e].[Id] > 1 THEN [e].[Value1]
 		ELSE [e].[Value2]
-	END as [c1]
+	END
 FROM
 	[ClientCalcEntity] [e]
 
@@ -39,7 +39,7 @@ FROM
 -- SqlCe
 
 SELECT
-	-[e].[Value1] as [c1]
+	-[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
@@ -56,7 +56,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[e].[Value1] + ABS([e].[Value2]) as [c1]
+	[e].[Value1] + ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 

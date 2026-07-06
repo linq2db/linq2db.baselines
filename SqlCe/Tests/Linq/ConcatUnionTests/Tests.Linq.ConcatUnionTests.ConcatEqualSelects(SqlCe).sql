@@ -1,16 +1,16 @@
 ﻿-- SqlCe
 
 SELECT
-	[p].[ParentID] + 1 as [IntValue],
-	[p].[ParentID] as [Id]
+	[p].[ParentID] + 1,
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 1
 UNION ALL
 SELECT
-	NULL as [IntValue],
-	[p_1].[ParentID] as [Id]
+	NULL,
+	[p_1].[ParentID]
 FROM
 	[Parent] [p_1]
 WHERE

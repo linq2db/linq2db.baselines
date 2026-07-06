@@ -21,7 +21,7 @@ DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
 SELECT TOP (2)
-	[x].[Id] as [UserId]
+	[x].[Id]
 FROM
 	[TransactionLine] [x]
 WHERE

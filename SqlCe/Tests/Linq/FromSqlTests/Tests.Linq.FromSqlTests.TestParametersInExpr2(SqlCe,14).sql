@@ -5,8 +5,8 @@ DECLARE @p Int -- Int32
 SET     @p = 14
 
 SELECT
-	[s].[value] as [Value_1],
-	[s].[id] as [Id]
+	[s].[value],
+	[s].[id]
 FROM
 	[sample_class] [t1]
 		INNER JOIN (
@@ -24,8 +24,8 @@ DECLARE @endId Int -- Int32
 SET     @endId = 14
 
 SELECT
-	[t].[value] as [Value_1],
-	[t].[id] as [Id]
+	[t].[value],
+	[t].[id]
 FROM
 	[sample_class] [t]
 WHERE

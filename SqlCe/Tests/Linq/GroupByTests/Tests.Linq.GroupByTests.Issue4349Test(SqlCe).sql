@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	0 as [A],
+	0,
 	[f1].[ParentID]
 FROM
 	[Parent] [f1]

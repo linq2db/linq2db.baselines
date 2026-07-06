@@ -17,7 +17,7 @@ VALUES
 
 SELECT TOP (2)
 	[t].[ID],
-	[t].[Data] as [Data_1]
+	[t].[Data]
 FROM
 	[StringTestTable] [t]
 WHERE

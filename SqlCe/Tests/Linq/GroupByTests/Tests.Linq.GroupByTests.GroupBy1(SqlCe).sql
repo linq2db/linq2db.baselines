@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT DISTINCT
-	[p].[ParentID] as [Key_1]
+	[p].[ParentID]
 FROM
 	[Child] [p]
 

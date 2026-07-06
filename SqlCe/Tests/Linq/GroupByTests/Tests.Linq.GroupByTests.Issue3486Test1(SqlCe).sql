@@ -3,7 +3,7 @@
 SELECT
 	[gr].[FirstName],
 	[gr].[LastName],
-	SUM([gr].[PersonID]) as [Sum_1]
+	SUM([gr].[PersonID])
 FROM
 	[Person] [gr]
 GROUP BY

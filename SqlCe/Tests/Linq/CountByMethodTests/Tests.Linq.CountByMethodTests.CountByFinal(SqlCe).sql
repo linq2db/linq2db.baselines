@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[g_1].[TestId] as [Key_1],
-	COUNT(*) as [Count_1]
+	[g_1].[TestId],
+	COUNT(*)
 FROM
 	[TestTable] [g_1]
 GROUP BY

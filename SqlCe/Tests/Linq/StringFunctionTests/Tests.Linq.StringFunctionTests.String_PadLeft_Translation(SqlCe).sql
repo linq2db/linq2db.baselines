@@ -1,35 +1,35 @@
 ﻿-- SqlCe
 
 SELECT
-	'test' as [c1]
+	'test'
 
 -- SqlCe
 
 SELECT
-	'test' as [c1]
+	'test'
 
 -- SqlCe
 
 SELECT
-	'test' as [c1]
+	'test'
 
 -- SqlCe
 
 SELECT
-	REPLICATE('.', 1) + 'test' as [c1]
+	REPLICATE('.', 1) + 'test'
 
 -- SqlCe
 
 SELECT
-	REPLICATE(' ', 2) + 'test' as [c1]
+	REPLICATE(' ', 2) + 'test'
 
 -- SqlCe
 
 SELECT
-	REPLICATE(' ', 2) + 'test' as [c1]
+	REPLICATE(' ', 2) + 'test'
 
 -- SqlCe
 
 SELECT
-	REPLICATE('.', 12) + 'test' as [c1]
+	REPLICATE('.', 12) + 'test'
 

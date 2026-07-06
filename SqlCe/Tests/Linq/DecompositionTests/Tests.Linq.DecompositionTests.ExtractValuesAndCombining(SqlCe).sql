@@ -4,7 +4,7 @@ SELECT
 	[x].[Color],
 	[x].[Kind],
 	[x].[ItemCode],
-	[x].[Color_2] as [Color_1],
+	[x].[Color_2],
 	[x].[ItemCode_1],
 	[x].[Style_1]
 FROM
@@ -37,7 +37,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -77,7 +77,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -89,13 +89,13 @@ SELECT
 	[t1].[Color],
 	[t1].[ItemCode],
 	[t1].[Name],
-	NULL as [ItemCode_1],
-	NULL as [Name_1],
-	[t1].[ItemCode_1] as [ItemCode_2],
-	[t1].[Name_1] as [Name_2],
-	NULL as [c1],
-	NULL as [ItemCode_3],
-	NULL as [Name_3]
+	NULL,
+	NULL,
+	[t1].[ItemCode_1],
+	[t1].[Name_1],
+	NULL,
+	NULL,
+	NULL
 FROM
 	(
 		SELECT
@@ -118,17 +118,17 @@ WHERE
 	[t1].[Top] = 1
 UNION ALL
 SELECT
-	[t2].[Bottom] as [Top],
-	NULL as [Color],
-	NULL as [ItemCode],
-	NULL as [Name],
-	[t2].[ItemCode] as [ItemCode_1],
-	[t2].[Color] as [Name_1],
-	NULL as [ItemCode_2],
-	NULL as [Name_2],
-	[t2].[Size_1] as [c1],
-	[t2].[ItemCode_1] as [ItemCode_3],
-	[t2].[Style_1] as [Name_3]
+	[t2].[Bottom],
+	NULL,
+	NULL,
+	NULL,
+	[t2].[ItemCode],
+	[t2].[Color],
+	NULL,
+	NULL,
+	[t2].[Size_1],
+	[t2].[ItemCode_1],
+	[t2].[Style_1]
 FROM
 	(
 		SELECT
@@ -156,7 +156,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -168,10 +168,10 @@ SELECT
 	[x_1].[Color_1],
 	[x_1].[ItemCode],
 	[x_1].[Name],
-	[x_1].[ItemCode_2] as [ItemCode_1],
-	[x_1].[Name_2] as [Name_1],
-	[x_1].[ItemCode_1] as [ItemCode_2],
-	[x_1].[Name_1] as [Name_2],
+	[x_1].[ItemCode_2],
+	[x_1].[Name_2],
+	[x_1].[ItemCode_1],
+	[x_1].[Name_1],
 	[x_1].[Size_1],
 	[x_1].[ItemCode_3],
 	[x_1].[Name_3]
@@ -252,7 +252,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -264,10 +264,10 @@ SELECT
 	[x_1].[Color_1],
 	[x_1].[ItemCode],
 	[x_1].[Name],
-	[x_1].[ItemCode_2] as [ItemCode_1],
-	[x_1].[Name_2] as [Name_1],
-	[x_1].[ItemCode_1] as [ItemCode_2],
-	[x_1].[Name_1] as [Name_2],
+	[x_1].[ItemCode_2],
+	[x_1].[Name_2],
+	[x_1].[ItemCode_1],
+	[x_1].[Name_1],
 	[x_1].[Size_1],
 	[x_1].[ItemCode_3],
 	[x_1].[Name_3]
@@ -348,7 +348,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -360,10 +360,10 @@ SELECT
 	[x_1].[Color],
 	[x_1].[ItemCode],
 	[x_1].[Name],
-	[x_1].[ItemCode_2] as [ItemCode_1],
-	[x_1].[Name_2] as [Name_1],
-	[x_1].[ItemCode_1] as [ItemCode_2],
-	[x_1].[Name_1] as [Name_2],
+	[x_1].[ItemCode_2],
+	[x_1].[Name_2],
+	[x_1].[ItemCode_1],
+	[x_1].[Name_1],
 	[x_1].[Size_2],
 	[x_1].[ItemCode_3],
 	[x_1].[Name_3]
@@ -444,7 +444,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]
@@ -456,10 +456,10 @@ SELECT
 	[x_1].[Color],
 	[x_1].[ItemCode],
 	[x_1].[Name],
-	[x_1].[ItemCode_2] as [ItemCode_1],
-	[x_1].[Name_2] as [Name_1],
-	[x_1].[ItemCode_1] as [ItemCode_2],
-	[x_1].[Name_1] as [Name_2],
+	[x_1].[ItemCode_2],
+	[x_1].[Name_2],
+	[x_1].[ItemCode_1],
+	[x_1].[Name_1],
 	[x_1].[Size_2],
 	[x_1].[ItemCode_3],
 	[x_1].[Name_3]
@@ -541,7 +541,7 @@ SELECT
 	[t1].[ItemId],
 	[t1].[Kind],
 	[t1].[ItemCode],
-	[t1].[Style] as [Style_1],
+	[t1].[Style],
 	[t1].[Color]
 FROM
 	[Item] [t1]

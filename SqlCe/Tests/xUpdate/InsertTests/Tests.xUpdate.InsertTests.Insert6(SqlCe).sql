@@ -13,7 +13,7 @@ INSERT INTO [Parent]
 	[Value1]
 )
 SELECT
-	[c_1].[ParentID] + 1000 as [c1],
+	[c_1].[ParentID] + 1000,
 	[c_1].[ChildID]
 FROM
 	[Child] [c_1]
@@ -23,7 +23,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [Count_1]
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

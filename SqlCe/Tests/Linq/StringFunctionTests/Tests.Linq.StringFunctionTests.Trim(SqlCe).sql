@@ -1,8 +1,8 @@
 ﻿-- SqlCe
 
 SELECT
-	[pp].[PersonID] as [ID],
-	'  ' + [pp].[FirstName] + ' ' as [Name]
+	[pp].[PersonID],
+	'  ' + [pp].[FirstName] + ' '
 FROM
 	[Person] [pp]
 WHERE

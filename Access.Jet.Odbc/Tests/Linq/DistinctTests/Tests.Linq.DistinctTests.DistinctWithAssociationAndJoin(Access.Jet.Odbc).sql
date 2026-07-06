@@ -3,7 +3,7 @@
 SELECT
 	[t1].[ChildID],
 	[a_Parent_1].[ParentID],
-	[p].[ParentID]
+	[p].[ParentID] as [ParentID_1]
 FROM
 	((
 		SELECT DISTINCT
@@ -25,7 +25,7 @@ ORDER BY
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
-	[a_Parent].[ParentID],
+	[a_Parent].[ParentID] as [ParentID_1],
 	[a_Parent].[Value1]
 FROM
 	[Child] [t1]
