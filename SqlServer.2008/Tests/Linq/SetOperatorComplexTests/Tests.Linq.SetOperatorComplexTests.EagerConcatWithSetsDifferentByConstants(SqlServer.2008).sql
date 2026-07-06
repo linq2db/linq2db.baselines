@@ -39,18 +39,18 @@ FROM
 -- SqlServer.2008
 
 SELECT
-	[m_1].[c1],
+	[m_1].[set_col_2__],
 	[d_1].[AuthorId],
 	[d_1].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[c1]
+			[t3].[set_col_2__]
 		FROM
 			(
 				SELECT
 					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-					NULL as [c1]
+					NULL as [set_col_2__]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -60,7 +60,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-					[a_Book_1].[BookId] as [c1]
+					[a_Book_1].[BookId] as [set_col_2__]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -79,7 +79,7 @@ FROM
 				[BookAuthor] [d]
 					LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 			WHERE
-				[d].[FkBookId] = [m_1].[c1]
+				[d].[FkBookId] = [m_1].[set_col_2__]
 		) [d_1]
 
 -- SqlServer.2008
