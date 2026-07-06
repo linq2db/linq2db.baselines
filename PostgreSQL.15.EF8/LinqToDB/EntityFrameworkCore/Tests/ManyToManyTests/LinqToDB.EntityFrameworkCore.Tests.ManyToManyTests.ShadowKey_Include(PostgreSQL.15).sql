@@ -10,8 +10,6 @@ ORDER BY a."Id", t0."ArticlesId", t0."TagsTagId"
 
 
 
--- PostgreSQL.15 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	o."Label"
@@ -21,13 +19,7 @@ FROM
 		INNER JOIN "Tags" o ON o.tag_id_col = d."TagsTagId"
 ORDER BY
 	m_1."Id"
-
-
-
-
-
--- PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Title"
@@ -35,6 +27,8 @@ FROM
 	"Articles" t1
 ORDER BY
 	t1."Id"
+
+
 
 
 

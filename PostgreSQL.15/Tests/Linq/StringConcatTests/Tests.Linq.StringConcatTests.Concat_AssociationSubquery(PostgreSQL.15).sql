@@ -15,8 +15,6 @@ FROM
 ORDER BY
 	p."Id"
 
--- PostgreSQL.15 PostgreSQL13
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,9 +23,7 @@ SELECT
 FROM
 	"ConcatParent" m_1
 		INNER JOIN "ConcatChild" d ON m_1."Id" = d."ParentId"
-
--- PostgreSQL.15 PostgreSQL13
-
+;
 SELECT
 	t1."Id",
 	t1."Name"
