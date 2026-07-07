@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[OrderID],
@@ -25,10 +25,8 @@ FROM
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = IIF([d].[Freight] > 50, IIF([d].[Freight] > 100, N'expensive', N'average'), N'cheap')
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT DISTINCT
 	IIF([g_1].[Freight] > 50, IIF([g_1].[Freight] > 100, N'expensive', N'average'), N'cheap')
 FROM
 	[Orders] [g_1]
-

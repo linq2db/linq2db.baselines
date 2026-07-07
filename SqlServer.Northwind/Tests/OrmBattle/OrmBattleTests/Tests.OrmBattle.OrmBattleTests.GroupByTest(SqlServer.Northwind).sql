@@ -24,9 +24,7 @@ FROM
 			[Orders] [t1]
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
-
--- SqlServer.Northwind SqlServer.2019
-
+;
 SELECT DISTINCT
 	[t1].[OrderDate]
 FROM

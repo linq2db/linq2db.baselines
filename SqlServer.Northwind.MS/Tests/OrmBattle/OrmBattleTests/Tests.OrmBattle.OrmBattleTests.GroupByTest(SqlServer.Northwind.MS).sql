@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[OrderID],
@@ -25,10 +25,8 @@ FROM
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = [d].[OrderDate] OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT DISTINCT
 	[t1].[OrderDate]
 FROM
 	[Orders] [t1]
-

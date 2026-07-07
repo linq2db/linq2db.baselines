@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[CustomerID],
 	[d].[OrderID],
@@ -27,11 +27,9 @@ FROM
 		CROSS JOIN [Orders] [d]
 		INNER JOIN [Customers] [a_Customer_1] ON [d].[CustomerID] = [a_Customer_1].[CustomerID] AND [m_1].[CustomerID] = [a_Customer_1].[CustomerID]
 
--- SqlServer.Northwind.MS SqlServer.2019
-
+-- Batch 2
 SELECT DISTINCT
 	[a_Customer].[CustomerID]
 FROM
 	[Orders] [t1]
 		INNER JOIN [Customers] [a_Customer] ON [t1].[CustomerID] = [a_Customer].[CustomerID]
-
