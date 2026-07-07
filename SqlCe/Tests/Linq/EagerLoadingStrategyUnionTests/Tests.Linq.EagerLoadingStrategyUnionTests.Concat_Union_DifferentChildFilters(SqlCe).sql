@@ -35,13 +35,13 @@ FROM
 	(
 		SELECT 1 AS [Item1], 'ActiveOnly' AS [Item2]
 		UNION ALL
-		SELECT 2 AS [Item1], 'ActiveOnly' AS [Item2]
-		UNION ALL
-		SELECT 3 AS [Item1], 'ActiveOnly' AS [Item2]
-		UNION ALL
 		SELECT 1 AS [Item1], 'All' AS [Item2]
 		UNION ALL
+		SELECT 2 AS [Item1], 'ActiveOnly' AS [Item2]
+		UNION ALL
 		SELECT 2 AS [Item1], 'All' AS [Item2]
+		UNION ALL
+		SELECT 3 AS [Item1], 'ActiveOnly' AS [Item2]
 		UNION ALL
 		SELECT 3 AS [Item1], 'All' AS [Item2]) [k_1]
 		INNER JOIN [Department] [d] ON [k_1].[Item1] = [d].[CompanyId] AND [k_1].[Item2] = 'ActiveOnly'
@@ -63,13 +63,13 @@ FROM
 	(
 		SELECT 1 AS [Item1], 'ActiveOnly' AS [Item2]
 		UNION ALL
-		SELECT 2 AS [Item1], 'ActiveOnly' AS [Item2]
-		UNION ALL
-		SELECT 3 AS [Item1], 'ActiveOnly' AS [Item2]
-		UNION ALL
 		SELECT 1 AS [Item1], 'All' AS [Item2]
 		UNION ALL
+		SELECT 2 AS [Item1], 'ActiveOnly' AS [Item2]
+		UNION ALL
 		SELECT 2 AS [Item1], 'All' AS [Item2]
+		UNION ALL
+		SELECT 3 AS [Item1], 'ActiveOnly' AS [Item2]
 		UNION ALL
 		SELECT 3 AS [Item1], 'All' AS [Item2]) [k_1]
 		INNER JOIN [Department] [d] ON [k_1].[Item1] = [d].[CompanyId] AND [k_1].[Item2] = 'All'
