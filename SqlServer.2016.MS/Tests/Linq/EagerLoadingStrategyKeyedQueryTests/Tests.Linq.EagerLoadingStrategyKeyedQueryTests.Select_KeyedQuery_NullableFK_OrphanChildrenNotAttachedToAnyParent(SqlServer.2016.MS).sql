@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -12,8 +12,7 @@ ORDER BY
 	[d].[Id],
 	[m_1].[Id]
 
--- SqlServer.2016.MS SqlServer.2016
-
+-- Batch 2
 SELECT
 	[p].[Id],
 	[p].[Name]
@@ -21,7 +20,6 @@ FROM
 	[NullableParent] [p]
 ORDER BY
 	[p].[Id]
-
 -- SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE_1] ([Id], [field], [Name])

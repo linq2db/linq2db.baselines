@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-DECLARE @id Int -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
-
+-- Batch 1
+-- id = 1
+-- name = test
 SELECT
 	[m_1].[PersonID],
 	[m_1].[FirstName],
@@ -17,12 +15,9 @@ WHERE
 	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
 
--- SqlServer.2016.MS SqlServer.2016
-DECLARE @id Int -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
-
+-- Batch 2
+-- id = 1
+-- name = test
 SELECT
 	[x].[PersonID]
 FROM
@@ -30,4 +25,3 @@ FROM
 WHERE
 	[x].[PersonID] = @id AND [x].[LastName] <> @name OR
 	[x].[FirstName] <> @name AND [x].[PersonID] - 1 = @id
-
