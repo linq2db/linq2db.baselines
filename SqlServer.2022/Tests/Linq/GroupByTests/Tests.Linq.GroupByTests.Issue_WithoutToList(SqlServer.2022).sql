@@ -89,9 +89,7 @@ FROM
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
-
--- SqlServer.2022
-
+;
 SELECT
 	[group_1].[key_1]
 FROM
