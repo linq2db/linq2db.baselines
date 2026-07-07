@@ -1,7 +1,7 @@
 ﻿
 
--- PostgreSQL.15 PostgreSQL13
-
+-- PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1.id,
 	d.entity_id,
@@ -13,17 +13,13 @@ FROM
 		INNER JOIN entity2_item d ON m_1.id = d.entity_id
 		INNER JOIN items "a_Item" ON d.item_id = "a_Item".id
 
-
-
-
-
--- PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1.id,
 	t1.name
 FROM
 	entities t1
+
 
 
 

@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+﻿-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -9,8 +9,7 @@ FROM
 	"TransactionEntity" m_1
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	x."Id",
 	x."ValidOn"
@@ -18,4 +17,3 @@ FROM
 	"TransactionEntity" x
 ORDER BY
 	x."ValidOn"
-
