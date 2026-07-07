@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -19,8 +19,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 2
 SELECT
 	[item_1].[Name],
 	[t1].[Name],
@@ -36,4 +35,3 @@ FROM
 			WHERE
 				[item_1].[Id] = [a_Children].[ParentId]
 		) [t1]
-

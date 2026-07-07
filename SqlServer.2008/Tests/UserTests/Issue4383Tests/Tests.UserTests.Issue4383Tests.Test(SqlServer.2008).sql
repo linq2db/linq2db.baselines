@@ -23,9 +23,7 @@ FROM
 		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[Id] = [d_1].[CHAIN_ID]
 ORDER BY
 	[m_1].[Id_1]
-
--- SqlServer.2008
-
+;
 SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
@@ -38,9 +36,7 @@ FROM
 		LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
 ORDER BY
 	[m_1].[LINE_ID]
-
--- SqlServer.2008
-
+;
 SELECT
 	[t1].[LINE_ID],
 	[t1].[LINE_ID]

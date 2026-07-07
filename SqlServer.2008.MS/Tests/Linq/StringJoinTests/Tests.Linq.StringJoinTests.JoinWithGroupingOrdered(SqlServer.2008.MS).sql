@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -16,8 +16,7 @@ ORDER BY
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 2
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -36,8 +35,7 @@ ORDER BY
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 3
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -54,8 +52,7 @@ ORDER BY
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 4
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -72,8 +69,7 @@ ORDER BY
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 5
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -90,8 +86,7 @@ ORDER BY
 	[d].[NullableValue] DESC,
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 6
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -112,15 +107,13 @@ ORDER BY
 	[d].[NullableValue],
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
-
+-- Batch 7
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
 ORDER BY
 	[g_1].[Id]
-
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT

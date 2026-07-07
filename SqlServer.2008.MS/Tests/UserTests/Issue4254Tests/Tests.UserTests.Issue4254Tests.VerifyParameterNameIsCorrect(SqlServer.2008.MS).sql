@@ -47,11 +47,9 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
-
+-- Batch 1
+-- userId = bc7b663d-0fde-4327-8f92-5d8cc3a11d11
+-- now = 02/29/2020 17:54:55
 SELECT
 	[m_1].[id],
 	[d].[category_id]
@@ -78,12 +76,9 @@ WHERE
 			[y_1].[expires_at] > @now
 	)
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-
+-- Batch 2
+-- now = 02/29/2020 17:54:55
+-- userId = bc7b663d-0fde-4327-8f92-5d8cc3a11d11
 SELECT
 	[x].[id],
 	CASE
@@ -119,13 +114,10 @@ WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
 			[y_2].[expires_at] > @now
 	)
-
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
-
+-- Batch 1
+-- userId = a948600d-de21-4f74-8ac2-9516b287076e
+-- now = 02/29/2020 17:54:55
 SELECT
 	[m_1].[id],
 	[d].[category_id]
@@ -152,12 +144,9 @@ WHERE
 			[y_1].[expires_at] > @now
 	)
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @now DateTime2
-SET     @now = CAST('2020-02-29T17:54:55.1230000' AS DATETIME2)
-DECLARE @userId UniqueIdentifier -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
-
+-- Batch 2
+-- now = 02/29/2020 17:54:55
+-- userId = a948600d-de21-4f74-8ac2-9516b287076e
 SELECT
 	[x].[id],
 	CASE
@@ -193,7 +182,6 @@ WHERE
 			[x].[id] = [y_2].[media_item_id] AND [y_2].[created_by_id] = @userId AND
 			[y_2].[expires_at] > @now
 	)
-
 -- SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[issue_4254_media_item_to_media_item_categories]', N'U') IS NOT NULL)
