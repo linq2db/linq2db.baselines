@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`,
@@ -23,10 +23,8 @@ FROM
 				`d`.`ParentID`
 		) `d_1` ON 1=1
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- Batch 2
 SELECT
 	`c_1`.`ParentID`
 FROM
 	`Parent` `c_1`
-

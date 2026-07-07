@@ -6,8 +6,8 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -21,10 +21,9 @@ VALUES
 	'M'
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT

@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -18,8 +18,7 @@ WHERE
 			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
 	)
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
+-- Batch 2
 SELECT
 	`i`.`Id`,
 	(
@@ -43,4 +42,3 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `i`.`Id` AND `r`.`Score` > 95
 	)
-

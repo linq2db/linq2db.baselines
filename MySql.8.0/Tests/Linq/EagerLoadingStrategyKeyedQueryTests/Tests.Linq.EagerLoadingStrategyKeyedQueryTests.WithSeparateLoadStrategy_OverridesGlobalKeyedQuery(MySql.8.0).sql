@@ -21,9 +21,7 @@ ORDER BY
 	`d_1`.`Id`,
 	`m_1`.`Id`,
 	`m_1`.`Id_1`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -34,9 +32,7 @@ FROM
 ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`

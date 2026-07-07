@@ -17,9 +17,7 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
 	)
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
+;
 SELECT
 	`i`.`Id`,
 	(

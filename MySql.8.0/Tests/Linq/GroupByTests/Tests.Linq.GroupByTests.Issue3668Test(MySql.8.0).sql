@@ -16,13 +16,7 @@ FROM
 WHERE
 	`m_1`.`PersonID` = @id AND `m_1`.`LastName` <> @name OR
 	`m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @id Int32
-SET     @id = 1
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
-
+;
 SELECT
 	`x`.`PersonID`
 FROM
