@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
+-- id = 1
 WITH RECURSIVE cte ("Field1", "Field2", "Field3")
 AS
 (
@@ -40,10 +39,8 @@ FROM
 	) m_1
 		INNER JOIN cte d ON m_1."Key_1" = d."Field2"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-
+-- Batch 2
+-- id = 1
 WITH RECURSIVE cte ("Field2", "Field3")
 AS
 (
@@ -70,4 +67,3 @@ SELECT DISTINCT
 	t2."Field2"
 FROM
 	cte t2
-

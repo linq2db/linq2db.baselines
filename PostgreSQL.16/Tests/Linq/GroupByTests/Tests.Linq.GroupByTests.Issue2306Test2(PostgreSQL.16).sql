@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."PersonID",
 	m_1."FirstName",
@@ -10,15 +10,13 @@ SELECT
 FROM
 	"Person" m_1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."PersonID"
 FROM
 	"Person" t1
-
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."PersonID",
 	m_1."FirstName",
@@ -29,10 +27,8 @@ SELECT
 FROM
 	"Person" m_1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."PersonID"
 FROM
 	"Person" t1
-

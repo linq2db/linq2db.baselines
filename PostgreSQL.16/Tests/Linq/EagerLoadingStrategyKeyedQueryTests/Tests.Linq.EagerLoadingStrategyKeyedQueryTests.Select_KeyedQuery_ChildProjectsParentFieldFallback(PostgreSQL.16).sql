@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Name",
@@ -12,8 +12,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -21,4 +20,3 @@ FROM
 	"Company" c_1
 ORDER BY
 	c_1."Id"
-
