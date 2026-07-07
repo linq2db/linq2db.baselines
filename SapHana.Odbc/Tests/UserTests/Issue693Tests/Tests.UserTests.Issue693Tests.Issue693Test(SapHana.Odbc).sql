@@ -25,7 +25,9 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Gender NChar(1) -- StringFixedLength
@@ -54,7 +56,9 @@ VALUES
 
 -- SapHana.Odbc SapHanaOdbc
 
-SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
+SELECT
+	CURRENT_IDENTITY_VALUE()
+FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id1 Int -- Int32
