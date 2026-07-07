@@ -9,9 +9,7 @@ FROM
 		INNER JOIN `Patient` `d` ON `m_1`.`PersonID` = `d`.`PersonID`
 WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
+;
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

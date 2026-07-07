@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`a_Documents`.`Name`
@@ -27,8 +27,7 @@ FROM
 		INNER JOIN `Attachment` `a_Attachment` ON `d`.`AttachmentId` = `a_Attachment`.`Id`
 		INNER JOIN `Document` `a_Documents` ON `a_Attachment`.`Id` = `a_Documents`.`AttachmentId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	(
 		SELECT
@@ -55,4 +54,3 @@ FROM
 	`Request` `r`
 		LEFT JOIN `User` `a_User` ON `r`.`UserId` = `a_User`.`Id`
 		LEFT JOIN `Admin` `a_Admin` ON `a_User`.`Id` = `a_Admin`.`Id`
-

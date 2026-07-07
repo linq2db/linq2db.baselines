@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`,
@@ -21,10 +21,8 @@ FROM
 				`d`.`ParentID`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`c_1`.`ParentID`
 FROM
 	`Parent` `c_1`
-

@@ -20,8 +20,8 @@ WHERE
 			(`a_Book`.`BookName` = `a_Book_1`.`BookName` OR `a_Book`.`BookName` IS NULL AND `a_Book_1`.`BookName` IS NULL)
 	)
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`BookId`,
 	`m_1`.`AuthorId`,
@@ -40,8 +40,7 @@ FROM
 		INNER JOIN `BookAuthor` `d_1` ON `d_1`.`FkBookId` = `m_1`.`BookId`
 		LEFT JOIN `Author` `a_Author` ON `d_1`.`FkAuthorId` = `a_Author`.`AuthorId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`m_1`.`AuthorId`,
 	`a_Book`.`BookId`,
@@ -54,11 +53,9 @@ FROM
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkAuthorId` = `m_1`.`AuthorId`
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 3
 SELECT
 	`t1`.`AuthorId`,
 	`t1`.`AuthorName`
 FROM
 	`Author` `t1`
-

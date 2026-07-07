@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -28,8 +28,7 @@ WHERE
 			)
 	)
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`x`.`Id`,
 	`x`.`ValidOn`
@@ -54,4 +53,3 @@ WHERE
 					`a_Lines`.`Currency` = `t1`.`item` OR `a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
 			)
 	)
-

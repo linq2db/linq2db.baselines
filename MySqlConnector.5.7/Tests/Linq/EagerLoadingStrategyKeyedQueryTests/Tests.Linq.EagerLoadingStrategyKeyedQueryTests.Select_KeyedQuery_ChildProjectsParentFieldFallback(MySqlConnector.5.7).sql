@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Name`,
@@ -12,8 +12,7 @@ ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`
@@ -21,4 +20,3 @@ FROM
 	`Company` `c_1`
 ORDER BY
 	`c_1`.`Id`
-

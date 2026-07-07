@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`C1`,
@@ -37,12 +37,10 @@ ORDER BY
 		ELSE ''
 	END
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`C1`
 FROM
 	`Issue4596Form` `t1`
 LIMIT 1
-

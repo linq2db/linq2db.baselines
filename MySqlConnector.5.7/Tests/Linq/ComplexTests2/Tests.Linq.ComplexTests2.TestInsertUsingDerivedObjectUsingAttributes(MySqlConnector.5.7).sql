@@ -1,13 +1,9 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(21) -- String
-SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName VarChar(4) -- String
-SET     @LastName = 'test'
-DECLARE @MiddleName VarChar(4) -- String
-SET     @MiddleName = 'test'
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'U'
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- FirstName = test_inherited_insert
+-- LastName = test
+-- MiddleName = test
+-- Gender = U
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -23,10 +19,9 @@ VALUES
 	@Gender
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

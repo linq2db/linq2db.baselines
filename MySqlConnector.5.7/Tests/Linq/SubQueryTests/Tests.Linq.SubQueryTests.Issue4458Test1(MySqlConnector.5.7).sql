@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -21,8 +21,7 @@ ORDER BY
 	`d`.`ItemId`,
 	`d`.`UserId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`
@@ -46,7 +45,6 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `i`.`Id` AND `r`.`Score` > 95
 	)
-
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT

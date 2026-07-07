@@ -1,5 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`SectorId`,
 	`a_User`.`UserId`
@@ -11,10 +11,8 @@ FROM
 WHERE
 	`a_UserPosition`.`PositionId` = 1
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
+-- Batch 2
 SELECT
 	`x`.`SectorId`
 FROM
 	`SectorDTO` `x`
-
