@@ -1,7 +1,7 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL13
-
+-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Key_1",
 	d."CfAllowValue",
@@ -18,16 +18,12 @@ FROM
 ORDER BY
 	d."DateFrom"
 
-
-
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	p."AclNameId"
 FROM
 	"Issue4624Items" p
 LIMIT 1
-
 
 
 

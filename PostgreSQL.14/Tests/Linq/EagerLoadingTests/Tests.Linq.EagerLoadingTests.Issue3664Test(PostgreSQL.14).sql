@@ -11,10 +11,9 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 11
-
+-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
+-- id = 11
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,17 +24,14 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 12
-
+-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
+-- id = 12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -46,10 +42,8 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-
