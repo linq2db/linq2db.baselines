@@ -10,8 +10,8 @@ ORDER BY a."Id", s."ArticlesId", s."TagsTagId"
 
 
 
--- PostgreSQL.15 PostgreSQL13
-
+-- PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	o."Label"
@@ -22,12 +22,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
-
-
-
-
--- PostgreSQL.15 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."Title"
@@ -35,6 +30,7 @@ FROM
 	"Articles" t1
 ORDER BY
 	t1."Id"
+
 
 
 
