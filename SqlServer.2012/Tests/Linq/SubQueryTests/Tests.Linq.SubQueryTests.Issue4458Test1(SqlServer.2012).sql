@@ -20,9 +20,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SqlServer.2012
-
+;
 SELECT
 	[i].[Id],
 	(
