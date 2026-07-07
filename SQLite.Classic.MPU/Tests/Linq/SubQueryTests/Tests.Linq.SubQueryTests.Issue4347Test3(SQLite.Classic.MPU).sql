@@ -8,9 +8,7 @@ SELECT
 FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

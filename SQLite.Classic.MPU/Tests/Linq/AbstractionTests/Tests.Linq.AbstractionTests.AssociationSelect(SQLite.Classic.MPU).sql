@@ -30,9 +30,7 @@ FROM
 		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 ORDER BY
 	[d_1].[Id_1]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -71,9 +69,7 @@ FROM
 		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 ORDER BY
 	[d_1].[Id_1]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]

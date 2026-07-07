@@ -12,9 +12,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS INTEGER) = [d].[ParentID]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[p].[ParentID]
 FROM

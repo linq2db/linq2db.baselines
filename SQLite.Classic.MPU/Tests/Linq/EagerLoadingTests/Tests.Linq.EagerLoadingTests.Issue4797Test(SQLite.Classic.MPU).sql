@@ -21,9 +21,7 @@ FROM
 				LEFT JOIN [Issue4797Parent] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_1]
 		INNER JOIN [Issue4797Child] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -38,9 +36,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Issue4797Child] [d] ON [m_1].[Id] = [d].[ParentId]
 		LEFT JOIN [Issue4797Parent] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[t1].[Id]
 FROM

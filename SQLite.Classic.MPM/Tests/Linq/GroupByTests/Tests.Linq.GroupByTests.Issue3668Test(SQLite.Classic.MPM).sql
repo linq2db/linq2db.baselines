@@ -16,13 +16,7 @@ FROM
 WHERE
 	[m_1].[PersonID] = @id AND [m_1].[LastName] <> @name OR
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4) -- String
-SET     @name = 'test'
-
+;
 SELECT
 	[x].[PersonID]
 FROM

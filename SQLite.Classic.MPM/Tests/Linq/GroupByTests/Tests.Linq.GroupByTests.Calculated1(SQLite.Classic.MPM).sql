@@ -24,9 +24,7 @@ FROM
 			END
 			ELSE '3'
 		END
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
+;
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[ParentID] > 2 THEN CASE

@@ -4,9 +4,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[t].[Id]
 FROM
@@ -18,9 +16,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id]
 FROM
@@ -34,9 +30,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[x].[Id]
 FROM
@@ -50,9 +44,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
+;
 SELECT
 	[e].[Id]
 FROM
