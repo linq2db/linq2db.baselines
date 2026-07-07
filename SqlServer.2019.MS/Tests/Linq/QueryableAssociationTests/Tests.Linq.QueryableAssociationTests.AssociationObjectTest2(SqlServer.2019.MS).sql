@@ -29,7 +29,7 @@ WHERE
 	)
 
 -- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -43,14 +43,12 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
--- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[OwnerStr]
 FROM
 	[SomeTable] [t1] WITH (NOLOCK)
-
 -- SqlServer.2019.MS SqlServer.2019
 
 

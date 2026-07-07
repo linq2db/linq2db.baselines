@@ -16,7 +16,7 @@ ORDER BY
 	[p].[Id]
 
 -- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,11 +26,9 @@ FROM
 	[ConcatParent] [m_1]
 		INNER JOIN [ConcatChild] [d] ON [m_1].[Id] = [d].[ParentId]
 
--- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[Name]
 FROM
 	[ConcatParent] [t1]
-

@@ -1,5 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 1
 WITH [cte] ([Value2])
 AS
 (
@@ -82,8 +82,7 @@ FROM
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
 
--- SqlServer.2019.MS SqlServer.2019
-
+-- Batch 2
 WITH [cte] ([Value2])
 AS
 (
@@ -183,4 +182,3 @@ SELECT
 FROM
 	[cte1] [t7]
 		LEFT JOIN [CteChildTable] [d] ON [t7].[Value4] = [d].[Id]
-
