@@ -14,9 +14,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 WHERE
 	[d].[ParentID] <> 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[p].[ParentID]
 FROM
@@ -38,9 +36,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 WHERE
 	[d].[ParentID] <> 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[p].[ParentID]
 FROM

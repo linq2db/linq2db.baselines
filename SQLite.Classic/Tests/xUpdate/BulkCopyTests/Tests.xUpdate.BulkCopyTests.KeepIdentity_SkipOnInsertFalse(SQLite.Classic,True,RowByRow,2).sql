@@ -10,10 +10,9 @@ VALUES
 (
 	@Value
 )
-
--- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 DECLARE @lastId  -- Int32

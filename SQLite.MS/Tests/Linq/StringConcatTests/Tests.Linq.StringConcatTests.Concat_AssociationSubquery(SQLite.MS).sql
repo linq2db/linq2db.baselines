@@ -32,9 +32,7 @@ SELECT
 FROM
 	[ConcatParent] [m_1]
 		INNER JOIN [ConcatChild] [d] ON [m_1].[Id] = [d].[ParentId]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]

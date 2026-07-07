@@ -11,9 +11,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -25,9 +23,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -37,9 +33,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
 	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2]

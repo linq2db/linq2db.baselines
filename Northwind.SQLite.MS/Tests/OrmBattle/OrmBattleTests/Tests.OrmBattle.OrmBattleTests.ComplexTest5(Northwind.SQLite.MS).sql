@@ -19,9 +19,7 @@ SELECT
 FROM
 	[Customers] [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[CustomerID] = [d].[CustomerID]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
+;
 SELECT
 	[i].[CustomerID]
 FROM

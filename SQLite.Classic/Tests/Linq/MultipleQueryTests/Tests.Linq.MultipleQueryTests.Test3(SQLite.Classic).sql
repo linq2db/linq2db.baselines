@@ -5,9 +5,7 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	1
 FROM

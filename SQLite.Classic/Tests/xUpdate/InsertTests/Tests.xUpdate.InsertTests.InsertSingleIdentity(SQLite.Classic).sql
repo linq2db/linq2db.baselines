@@ -6,10 +6,9 @@ DELETE FROM
 -- SQLite.Classic SQLite
 
 INSERT INTO [TestIdentity] DEFAULT VALUES
-
--- SQLite.Classic SQLite
-
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic SQLite
 

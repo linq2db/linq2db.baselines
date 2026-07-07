@@ -15,9 +15,7 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL
 WHERE
 	[d].[ParentID] IN (2)
-
--- SQLite.MS SQLite
-
+;
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
@@ -42,9 +40,7 @@ FROM
 		INNER JOIN [GrandChild] [d] ON [m_1].[Key_1] = [d].[ChildID] OR [m_1].[Key_1] IS NULL AND [d].[ChildID] IS NULL
 WHERE
 	[d].[ParentID] IN (3)
-
--- SQLite.MS SQLite
-
+;
 SELECT DISTINCT
 	[x].[ChildID]
 FROM

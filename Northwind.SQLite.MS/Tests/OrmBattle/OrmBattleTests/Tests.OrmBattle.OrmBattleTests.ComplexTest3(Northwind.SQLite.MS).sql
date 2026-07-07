@@ -12,9 +12,7 @@ FROM
 				LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
 	) [m_1]
 		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
-
--- Northwind.SQLite.MS SQLite.MS SQLite
-
+;
 SELECT
 	[p].[Discontinued],
 	[p].[ProductID],

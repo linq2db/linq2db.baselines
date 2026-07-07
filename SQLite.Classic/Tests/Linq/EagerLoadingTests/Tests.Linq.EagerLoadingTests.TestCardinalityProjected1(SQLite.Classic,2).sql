@@ -13,9 +13,7 @@ FROM
 				INNER JOIN [EntityB] [a_ObjectB] ON [e].[FK] = [a_ObjectB].[Id]
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[e].[Id],
 	[a_ObjectB].[Id]

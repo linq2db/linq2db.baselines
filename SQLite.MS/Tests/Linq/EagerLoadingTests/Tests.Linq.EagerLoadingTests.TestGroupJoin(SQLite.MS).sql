@@ -24,11 +24,7 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
-
--- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -61,11 +57,7 @@ FROM
 		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
 ORDER BY
 	[d_1].[SubDetailValue]
-
--- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_2].[MasterId],
 	[d_1].[Id1],
@@ -100,11 +92,7 @@ FROM
 		) [d_1] ON [d_1].[Id1] = [m_2].[MasterId] AND [d_1].[rn] <= 10
 ORDER BY
 	[d_1].[Value_1]
-
--- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

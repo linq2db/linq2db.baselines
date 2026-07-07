@@ -17,9 +17,7 @@ FROM
 		INNER JOIN [MainItem2] [mm] ON [d].[Id] / 10 = [mm].[Id]
 WHERE
 	[d].[Id] % 2 = 0
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -63,9 +61,7 @@ FROM
 			WHERE
 				[d_1].[Id] = 1
 		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -81,9 +77,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.MS SQLite
-
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

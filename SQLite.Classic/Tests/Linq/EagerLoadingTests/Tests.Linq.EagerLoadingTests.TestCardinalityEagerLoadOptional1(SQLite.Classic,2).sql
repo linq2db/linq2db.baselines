@@ -14,9 +14,7 @@ FROM
 				LEFT JOIN [EntityB] [a_ObjectBOptional] ON [t1].[FK] = [a_ObjectBOptional].[Id]
 	) [m_1]
 		INNER JOIN [EntityD] [d] ON [m_1].[Id] = [d].[FK]
-
--- SQLite.Classic SQLite
-
+;
 SELECT
 	[t1].[Id],
 	[t1].[FK],
