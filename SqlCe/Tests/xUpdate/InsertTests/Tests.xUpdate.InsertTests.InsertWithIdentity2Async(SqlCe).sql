@@ -22,7 +22,8 @@ VALUES
 
 -- SqlCe
 
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- SqlCe
 
