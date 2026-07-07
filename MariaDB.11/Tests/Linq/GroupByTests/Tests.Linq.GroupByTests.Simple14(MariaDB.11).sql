@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`
@@ -17,10 +17,8 @@ FROM
 				`Child` `d`
 		) `d_1` ON `m_1`.`ParentID` = `d_1`.`Key_1`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
-

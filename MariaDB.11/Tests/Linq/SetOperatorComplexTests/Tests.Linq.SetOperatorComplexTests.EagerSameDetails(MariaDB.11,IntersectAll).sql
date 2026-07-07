@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`a_Author`.`AuthorId`,
@@ -34,8 +34,7 @@ FROM
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkBookId` = `m_1`.`Id`
 		LEFT JOIN `Author` `a_Author` ON `d`.`FkAuthorId` = `a_Author`.`AuthorId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`a_Book`.`BookId`,
 	`a_Book`.`BookName`
@@ -55,9 +54,8 @@ FROM
 		LEFT JOIN `Book` `a_Book_1` ON `b_1`.`FkBookId` = `a_Book_1`.`BookId`
 WHERE
 	`a_Book_1`.`Discriminator` = 'Novel'
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`BookId`,
 	`m_1`.`AuthorId`,
@@ -76,8 +74,7 @@ FROM
 		INNER JOIN `BookAuthor` `d_1` ON `d_1`.`FkBookId` = `m_1`.`BookId`
 		LEFT JOIN `Author` `a_Author` ON `d_1`.`FkAuthorId` = `a_Author`.`AuthorId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`m_1`.`AuthorId`,
 	`a_Book`.`BookId`,
@@ -90,11 +87,9 @@ FROM
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkAuthorId` = `m_1`.`AuthorId`
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 3
 SELECT
 	`t1`.`AuthorId`,
 	`t1`.`AuthorName`
 FROM
 	`Author` `t1`
-

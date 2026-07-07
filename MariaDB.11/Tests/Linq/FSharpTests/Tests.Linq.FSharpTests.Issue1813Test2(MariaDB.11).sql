@@ -49,8 +49,8 @@ VALUES
 	@Text
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -61,8 +61,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`
@@ -70,4 +69,3 @@ FROM
 	`Names` `after_1`
 ORDER BY
 	`after_1`.`Id`
-

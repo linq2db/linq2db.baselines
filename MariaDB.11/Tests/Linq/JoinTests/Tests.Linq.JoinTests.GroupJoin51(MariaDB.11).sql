@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -22,8 +22,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`p`.`ParentID`,
 	`t1`.`ParentID`,
@@ -40,4 +39,3 @@ FROM
 		) `t1` ON `p`.`ParentID` = `t1`.`ParentID` AND `t1`.`rn` = 1
 WHERE
 	`p`.`ParentID` = 1
-

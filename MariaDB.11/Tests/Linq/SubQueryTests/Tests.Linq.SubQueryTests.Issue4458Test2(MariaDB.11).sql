@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -18,8 +18,7 @@ WHERE
 			`r`.`ItemId` = `m_1`.`Id` AND `r`.`Score` > 95
 	)
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`
@@ -43,4 +42,3 @@ WHERE
 		WHERE
 			`r`.`ItemId` = `i`.`Id` AND `r`.`Score` > 95
 	)
-

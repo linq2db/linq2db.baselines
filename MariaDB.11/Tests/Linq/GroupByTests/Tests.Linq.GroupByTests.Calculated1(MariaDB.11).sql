@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
@@ -25,8 +25,7 @@ FROM
 			ELSE '3'
 		END
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT DISTINCT
 	CASE
 		WHEN `g_1`.`ParentID` > 2 THEN CASE
@@ -37,4 +36,3 @@ SELECT DISTINCT
 	END
 FROM
 	`Child` `g_1`
-

@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
@@ -10,8 +10,7 @@ FROM
 WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`
@@ -19,4 +18,3 @@ FROM
 	`Person` `p`
 WHERE
 	LOCATE('test', Lower(`p`.`FirstName`)) > 0
-

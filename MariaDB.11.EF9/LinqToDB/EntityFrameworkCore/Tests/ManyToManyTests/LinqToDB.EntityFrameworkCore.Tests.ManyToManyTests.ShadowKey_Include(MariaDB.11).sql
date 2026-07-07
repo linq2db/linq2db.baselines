@@ -10,8 +10,8 @@ ORDER BY `a`.`Id`, `s`.`ArticlesId`, `s`.`TagsTagId`
 
 
 
--- MariaDB.10.MySqlConnector MariaDB
-
+-- MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`o`.`Label`
@@ -22,12 +22,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
-
-
-
-
--- MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`Title`
@@ -35,6 +30,7 @@ FROM
 	`Articles` `t1`
 ORDER BY
 	`t1`.`Id`
+
 
 
 

@@ -1,5 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`ChildID`,
@@ -16,8 +16,7 @@ FROM
 		LEFT JOIN `Child` `a_Child` ON `d`.`ParentID` = `a_Child`.`ParentID` AND `d`.`ChildID` = `a_Child`.`ChildID`
 		LEFT JOIN `Parent` `a_Parent` ON `a_Child`.`ParentID` = `a_Parent`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
+-- Batch 2
 SELECT
 	(
 		SELECT
@@ -31,4 +30,3 @@ SELECT
 	`p`.`ChildID`
 FROM
 	`Child` `p`
-

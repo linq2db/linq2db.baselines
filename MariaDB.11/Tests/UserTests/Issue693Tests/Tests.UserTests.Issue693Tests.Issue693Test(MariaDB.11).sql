@@ -1,13 +1,9 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = 'a'
-DECLARE @MiddleName VarChar(1) -- String
-SET     @MiddleName = 'A'
-DECLARE @LastName VarChar(1) -- String
-SET     @LastName = 'b'
-
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
+-- Gender = M
+-- FirstName = a
+-- MiddleName = A
+-- LastName = b
 INSERT INTO `Person`
 (
 	`Gender`,
@@ -23,20 +19,15 @@ VALUES
 	@LastName
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @Gender String(1) -- StringFixedLength
-SET     @Gender = 'M'
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = 'c'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @LastName VarChar(1) -- String
-SET     @LastName = 'd'
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
+-- Gender = M
+-- FirstName = c
+-- MiddleName = NULL
+-- LastName = d
 INSERT INTO `Person`
 (
 	`Gender`,
@@ -52,10 +43,9 @@ VALUES
 	@LastName
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @id1 Int32
 SET     @id1 = 5
