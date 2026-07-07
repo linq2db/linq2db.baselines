@@ -60,9 +60,7 @@ FROM
 		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]

@@ -16,9 +16,7 @@ WHERE
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[d].[Id],
 	[d].[Name]

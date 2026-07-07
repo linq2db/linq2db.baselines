@@ -14,9 +14,8 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 1
+-- take = 2
 SELECT
 	[m_1].[Id],
 	[d_1].[Id],
@@ -43,10 +42,8 @@ FROM
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
 
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 2
+-- take = 2
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -65,10 +62,8 @@ FROM
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
--- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+-- Batch 3
+-- take = 2
 SELECT TOP (@take)
 	[e].[Id],
 	[t1].[Id],
@@ -93,7 +88,6 @@ FROM
 			FROM
 				dbo.fn_SomeFunction([e].[Id]) [a_OtherFromSql]
 		) [t2]
-
 -- SqlServer.Contained.MS SqlServer.2019
 
 

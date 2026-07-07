@@ -9,9 +9,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[t1].[PersonID]
 FROM
@@ -28,9 +26,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SqlServer.SA SqlServer.2019
-
+;
 SELECT
 	[t1].[PersonID]
 FROM

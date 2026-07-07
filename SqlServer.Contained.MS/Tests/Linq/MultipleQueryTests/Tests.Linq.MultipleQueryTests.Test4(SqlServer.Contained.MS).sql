@@ -1,5 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -14,12 +14,10 @@ FROM
 ORDER BY
 	[m_1].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
-
+-- Batch 2
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 ORDER BY
 	[p].[ParentID]
-
