@@ -30,18 +30,18 @@ SELECT
 	[t1].[Name],
 	(
 		SELECT
-			MAX([t4].[OperDate])
+			MAX([t4].[set_col_0__])
 		FROM
 			(
 				SELECT
-					[t2].[OperDate]
+					[t2].[OperDate] as [set_col_0__]
 				FROM
 					[Transaction] [t2]
 				WHERE
 					[t2].[DebitAccountId] = [t1].[Id]
 				UNION
 				SELECT
-					[t3].[OperDate]
+					[t3].[OperDate] as [set_col_0__]
 				FROM
 					[Transaction] [t3]
 				WHERE
