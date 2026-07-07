@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
+﻿-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Id",
@@ -15,8 +15,7 @@ FROM
 	) m_1
 		INNER JOIN "EntityD" d ON m_1."Id" = d."FK"
 
--- PostgreSQL.19 PostgreSQL13
-
+-- Batch 2
 SELECT
 	e."Id",
 	"a_ObjectBOptional"."Id",
@@ -27,4 +26,3 @@ FROM
 	"EntityA" e
 		LEFT JOIN "EntityB" "a_ObjectBOptional" ON e."FK" = "a_ObjectBOptional"."Id"
 		LEFT JOIN "EntityC" "a_ObjectC" ON "a_ObjectBOptional"."FK" = "a_ObjectC"."Id"
-

@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.19 PostgreSQL13
-
+﻿-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,8 +25,7 @@ WHERE
 			) t1(item)
 	)
 
--- PostgreSQL.19 PostgreSQL13
-
+-- Batch 2
 SELECT
 	x."Id",
 	x."ValidOn"
@@ -48,4 +47,3 @@ WHERE
 				('A'), ('B')
 			) t1(item)
 	)
-

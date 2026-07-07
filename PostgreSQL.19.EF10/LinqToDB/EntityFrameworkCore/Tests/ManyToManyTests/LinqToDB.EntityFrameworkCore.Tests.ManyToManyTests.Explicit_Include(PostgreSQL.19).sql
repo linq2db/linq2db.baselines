@@ -10,8 +10,8 @@ ORDER BY o."Id", s."OrderId", s."ProductId"
 
 
 
--- PostgreSQL.19 PostgreSQL13
-
+-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	o."Id",
@@ -23,12 +23,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
-
-
-
-
--- PostgreSQL.19 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."Number"
@@ -36,6 +31,7 @@ FROM
 	"Orders" t1
 ORDER BY
 	t1."Id"
+
 
 
 
