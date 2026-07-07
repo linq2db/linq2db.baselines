@@ -13,7 +13,7 @@ FROM
 			[mails] [p]
 				INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 		WHERE
-			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
+			strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.1231234')
 	) [m_1]
 		INNER JOIN [EmailAttachments] [d] ON [m_1].[Id] = [d].[EmailId]
 
@@ -26,7 +26,7 @@ FROM
 	[mails] [p]
 		INNER JOIN [IIRs] [i] ON [p].[Id] = [i].[Id]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
+	strftime('%Y-%m-%d %H:%M:%f', [p].[AddTime]) > strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.1231234')
 ORDER BY
 	[p].[AddTime]
 

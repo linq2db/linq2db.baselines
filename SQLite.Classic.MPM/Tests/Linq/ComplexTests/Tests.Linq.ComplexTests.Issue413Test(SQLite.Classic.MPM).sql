@@ -88,8 +88,8 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate VarChar(23) -- AnsiString
-SET     @CreateDate = '2020-02-28 17:54:55.123'
+DECLARE @CreateDate VarChar(27) -- AnsiString
+SET     @CreateDate = '2020-02-28 17:54:55.1231234'
 DECLARE @SourceInstrumentCode NVarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
 
@@ -113,8 +113,8 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate VarChar(23) -- AnsiString
-SET     @CreateDate = '2020-02-28 17:54:55.123'
+DECLARE @CreateDate VarChar(27) -- AnsiString
+SET     @CreateDate = '2020-02-28 17:54:55.1231234'
 DECLARE @SourceInstrumentCode NVarChar -- String
 SET     @SourceInstrumentCode = NULL
 
@@ -136,8 +136,8 @@ VALUES
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'aaa%'
-DECLARE @uptoDate VarChar(23) -- AnsiString
-SET     @uptoDate = '2020-02-29 17:54:55.123'
+DECLARE @uptoDate VarChar(27) -- AnsiString
+SET     @uptoDate = '2020-02-29 17:54:55.1231234'
 
 SELECT DISTINCT
 	[ins].[SourceInstrumentCode]

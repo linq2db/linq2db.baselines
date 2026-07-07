@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @dt VarChar(23) -- AnsiString
-SET     @dt = '2020-02-29 17:54:55.123'
+DECLARE @dt VarChar(27) -- AnsiString
+SET     @dt = '2020-02-29 17:54:55.1231234'
 
 SELECT
 	[t].[ID],
