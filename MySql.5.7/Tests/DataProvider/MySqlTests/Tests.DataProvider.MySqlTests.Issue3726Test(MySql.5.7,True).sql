@@ -6,11 +6,11 @@ SET     @Value = 123
 DECLARE @Value2 VarChar -- String
 SET     @Value2 = NULL
 
-INSERT INTO `issue3726table`
+INSERT INTO `Issue3726Table`
 (
-	`id`,
-	`value`,
-	`value2`
+	`Id`,
+	`Value`,
+	`Value2`
 )
 VALUES
 (
@@ -22,9 +22,9 @@ VALUES
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
-	`issue3726table` `f`
+	`Issue3726Table` `f`
 SET
-	`f`.`value2` = 'Baz'
+	`f`.`Value2` = 'Baz'
 WHERE
-	CAST(`f`.`value` AS SIGNED) = 123
+	CAST(`f`.`Value` AS SIGNED) = 123
 
