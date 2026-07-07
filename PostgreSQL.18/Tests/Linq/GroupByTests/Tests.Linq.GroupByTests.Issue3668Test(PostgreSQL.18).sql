@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @name Text(4) -- String
-SET     @name = 'test'
-
+﻿-- PostgreSQL.18
+-- Batch 1
+-- id = 1
+-- name = test
 SELECT
 	m_1."PersonID",
 	m_1."FirstName",
@@ -17,16 +15,12 @@ WHERE
 	m_1."PersonID" = :id AND m_1."LastName" <> :name OR
 	m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id
 
--- PostgreSQL.18 PostgreSQL13
-DECLARE @id Integer -- Int32
-SET     @id = 1
-DECLARE @name Text(4) -- String
-SET     @name = 'test'
-
+-- Batch 2
+-- id = 1
+-- name = test
 SELECT
 	x."PersonID"
 FROM
 	"Person" x
 WHERE
 	x."PersonID" = :id AND x."LastName" <> :name OR x."FirstName" <> :name AND x."PersonID" - 1 = :id
-

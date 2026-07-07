@@ -1,7 +1,7 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL13
-
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."OrderID",
 	d."IsDeleted",
@@ -29,12 +29,7 @@ WHERE
 	NOT m_1."IsDeleted" AND NOT "a_Product"."IsDeleted" AND
 	NOT d."IsDeleted"
 
-
-
-
-
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	e."IsDeleted",
 	e."OrderID",
@@ -55,6 +50,7 @@ FROM
 	"Orders" e
 WHERE
 	NOT e."IsDeleted"
+
 
 
 

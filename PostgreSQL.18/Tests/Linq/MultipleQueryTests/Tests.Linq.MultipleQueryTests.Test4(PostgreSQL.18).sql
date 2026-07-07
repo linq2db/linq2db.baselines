@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ChildID"
@@ -14,12 +14,10 @@ FROM
 ORDER BY
 	m_1."ParentID"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	p."ParentID"
 FROM
 	"Parent" p
 ORDER BY
 	p."ParentID"
-

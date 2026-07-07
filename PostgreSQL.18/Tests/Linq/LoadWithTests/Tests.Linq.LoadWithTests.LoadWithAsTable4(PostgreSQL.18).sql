@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL13
-
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -17,12 +17,10 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON d."ParentID" = "a_Parent"."ParentID"
 
--- PostgreSQL.18 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t."ParentID",
 	t."Value1"
 FROM
 	"Parent" t
 LIMIT 1
-
