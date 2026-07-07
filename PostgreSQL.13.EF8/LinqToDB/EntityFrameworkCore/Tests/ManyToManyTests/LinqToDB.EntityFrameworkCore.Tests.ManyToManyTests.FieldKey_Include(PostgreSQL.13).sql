@@ -10,8 +10,8 @@ ORDER BY r."Id", t."AccountsAccountId", t."RolesId"
 
 
 
--- PostgreSQL.13 PostgreSQL13
-
+-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	o."Name"
@@ -22,12 +22,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
-
-
-
-
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."Name"
@@ -35,6 +30,7 @@ FROM
 	"Roles" t1
 ORDER BY
 	t1."Id"
+
 
 
 

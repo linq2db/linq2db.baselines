@@ -1,5 +1,5 @@
-﻿-- PostgreSQL.13 PostgreSQL13
-
+﻿-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,8 +25,7 @@ WHERE
 			) t1(item)
 	)
 
--- PostgreSQL.13 PostgreSQL13
-
+-- Batch 2
 SELECT
 	x."Id",
 	x."ValidOn"
@@ -50,4 +49,3 @@ WHERE
 	)
 ORDER BY
 	x."ValidOn"
-
