@@ -1,5 +1,5 @@
 ﻿SELECT
-	[p].[FIRST_NAME],
+	[p].[FIRST_NAME] as [Name],
 	5 as [AGE]
 FROM
 	[PERSON] [p]
@@ -7,7 +7,7 @@ WHERE
 	[p].[FIRST_NAME] <> '' OR [p].[FIRST_NAME] IS NULL
 
 SELECT
-	[q].[FIRST_NAME],
+	[q].[FIRST_NAME] as [Name],
 	5 as [AGE]
 FROM
 	[PERSON] [q]
