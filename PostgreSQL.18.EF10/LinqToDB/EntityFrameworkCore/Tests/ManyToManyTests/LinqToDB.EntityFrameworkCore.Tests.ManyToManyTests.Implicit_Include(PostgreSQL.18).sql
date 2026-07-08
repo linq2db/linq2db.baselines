@@ -10,7 +10,7 @@ ORDER BY s."Id", s0."CoursesId", s0."StudentsId"
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -27,7 +27,7 @@ ORDER BY
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",

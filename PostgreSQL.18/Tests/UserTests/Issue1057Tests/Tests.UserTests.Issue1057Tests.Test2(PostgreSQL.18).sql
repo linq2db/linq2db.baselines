@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName Text(12) -- String
@@ -15,7 +15,7 @@ VALUES
 	:TargetName
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TargetName Text(4) -- String
@@ -32,7 +32,7 @@ VALUES
 	:TargetName
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
@@ -53,7 +53,7 @@ VALUES
 	:Actual
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."Id",
@@ -65,7 +65,7 @@ FROM
 WHERE
 	p."TargetName" = 'bda.Requests'
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."TargetName",

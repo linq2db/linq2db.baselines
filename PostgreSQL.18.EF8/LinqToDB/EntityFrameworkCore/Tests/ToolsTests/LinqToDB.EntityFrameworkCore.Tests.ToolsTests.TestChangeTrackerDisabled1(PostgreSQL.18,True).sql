@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."ProductId",
@@ -30,7 +30,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."OrderID",
@@ -63,7 +63,7 @@ WHERE
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	e."IsDeleted",

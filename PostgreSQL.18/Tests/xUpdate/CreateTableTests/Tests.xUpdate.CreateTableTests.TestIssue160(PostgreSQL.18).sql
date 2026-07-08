@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 CREATE TABLE aa
 (
@@ -8,7 +8,7 @@ CREATE TABLE aa
 	CONSTRAINT "PK_aa" PRIMARY KEY (bb)
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc Text(5) -- String
@@ -25,7 +25,7 @@ VALUES
 	:cc
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1.bb,
@@ -33,7 +33,7 @@ SELECT
 FROM
 	aa t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 DROP TABLE aa
 

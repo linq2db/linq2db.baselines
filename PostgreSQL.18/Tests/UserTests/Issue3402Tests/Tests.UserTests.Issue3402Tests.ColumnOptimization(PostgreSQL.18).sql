@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	ess."ID"
@@ -14,7 +14,7 @@ WHERE
 			ess."ID" = y."ID" AND y."IS_ACTIVE"
 	)
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	ess."ID"

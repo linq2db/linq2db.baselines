@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	Floor(Extract(minute From (t."TransactionDate" + 5 * Interval '1 Minute')))::Int

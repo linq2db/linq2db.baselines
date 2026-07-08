@@ -10,7 +10,7 @@ ORDER BY p."Code", p."OrgId", t."MemberId", t."OrgId", t."Code"
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."OrgId",
@@ -28,7 +28,7 @@ ORDER BY
 
 
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."OrgId",

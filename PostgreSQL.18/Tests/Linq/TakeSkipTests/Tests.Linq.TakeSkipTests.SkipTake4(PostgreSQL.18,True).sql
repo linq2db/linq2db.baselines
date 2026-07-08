@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 7
 DECLARE @skip Integer -- Int32

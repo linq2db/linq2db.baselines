@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."FirstName",
@@ -12,7 +12,7 @@ FROM
 			('Janet'), ('Doe'), ('John'), ('Doe')
 		) n(item) ON p."LastName" = n.item
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."FirstName",

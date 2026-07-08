@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 100500
 DECLARE @Value1 Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 
@@ -27,7 +27,7 @@ WHERE
 	p."ParentID" = :id
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 100500
 DECLARE @id Integer -- Int32

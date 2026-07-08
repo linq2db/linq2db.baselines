@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT DISTINCT
 	True,
@@ -6,7 +6,7 @@ SELECT DISTINCT
 FROM
 	"LinqDataTypes" it
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ID",

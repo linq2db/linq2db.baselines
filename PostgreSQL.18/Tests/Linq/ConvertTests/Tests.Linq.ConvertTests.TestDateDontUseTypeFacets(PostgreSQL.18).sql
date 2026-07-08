@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	g_2."Date_1",
@@ -13,7 +13,7 @@ FROM
 GROUP BY
 	g_2."Date_1"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."CreatedOnUtc"
