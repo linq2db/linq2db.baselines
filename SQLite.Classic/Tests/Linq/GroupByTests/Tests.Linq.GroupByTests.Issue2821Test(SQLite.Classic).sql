@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic SQLite
-DECLARE @currentDate VarChar(23) -- AnsiString
-SET     @currentDate = '2020-02-29 17:54:55.123'
+DECLARE @currentDate VarChar(27) -- AnsiString
+SET     @currentDate = '2020-02-29 17:54:55.1231234'
 
 SELECT
 	[o].[ID],

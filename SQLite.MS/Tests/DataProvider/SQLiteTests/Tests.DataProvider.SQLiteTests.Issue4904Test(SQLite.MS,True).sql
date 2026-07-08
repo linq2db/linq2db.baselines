@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @RecordDate  -- DateTime
-SET     @RecordDate = '2020-02-28 17:54:55.123'
+SET     @RecordDate = '2020-02-28 17:54:55.1231234'
 
 INSERT INTO [Issue4904Table]
 (
@@ -13,7 +13,7 @@ VALUES
 
 -- SQLite.MS SQLite
 DECLARE @RecordDate  -- DateTime
-SET     @RecordDate = '2020-02-29 17:54:55.123'
+SET     @RecordDate = '2020-02-29 17:54:55.1231234'
 
 INSERT INTO [Issue4904Table]
 (
@@ -26,7 +26,7 @@ VALUES
 
 -- SQLite.MS SQLite
 DECLARE @RecordDate  -- DateTime
-SET     @RecordDate = '2020-03-01 17:54:55.123'
+SET     @RecordDate = '2020-03-01 17:54:55.1231234'
 
 INSERT INTO [Issue4904Table]
 (
@@ -44,7 +44,7 @@ SELECT
 FROM
 	[Issue4904Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.999')
+	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.9999999')
 
 -- SQLite.MS SQLite
 
@@ -53,5 +53,5 @@ SELECT
 FROM
 	[Issue4904Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.998')
+	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.9989999')
 

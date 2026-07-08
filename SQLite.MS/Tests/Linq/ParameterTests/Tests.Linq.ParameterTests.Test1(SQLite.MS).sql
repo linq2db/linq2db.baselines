@@ -1,6 +1,6 @@
 ﻿-- SQLite.MS SQLite
 DECLARE @dt  -- DateTime
-SET     @dt = '2020-02-29 17:54:55.123'
+SET     @dt = '2020-02-29 17:54:55.1231234'
 
 SELECT
 	[t].[ID],

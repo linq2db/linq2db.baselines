@@ -23,7 +23,7 @@ SET     @Status = 40
 DECLARE @ResourceID  -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp  -- DateTime
-SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
+SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.1231234'
 
 INSERT INTO [InventoryResourceDTO]
 (
@@ -48,7 +48,7 @@ SET     @Status = 40
 DECLARE @ResourceID  -- Guid
 SET     @ResourceID = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ModifiedTimeStamp  -- DateTime
-SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.123'
+SET     @ModifiedTimeStamp = '2020-02-29 15:54:55.1231234'
 
 INSERT INTO [InventoryResourceDTO]
 (
