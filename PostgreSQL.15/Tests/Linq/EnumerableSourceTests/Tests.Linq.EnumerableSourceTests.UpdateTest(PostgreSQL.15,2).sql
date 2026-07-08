@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 UPDATE
 	"TableToInsert"
@@ -11,7 +11,7 @@ FROM
 WHERE
 	"TableToInsert"."Id" = r."Id"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

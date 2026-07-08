@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 10
 
@@ -17,7 +17,7 @@ FROM
 	) c_2
 		LEFT JOIN "Order" o ON c_2."Id" = o."CustomerId"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"Customer" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

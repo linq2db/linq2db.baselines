@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."PersonID",
@@ -10,7 +10,7 @@ WHERE
 	(p."PersonID" = 1 OR p."PersonID" = 2) AND p2."PersonID" <> 2 AND
 	p."PersonID" = p2."PersonID"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."PersonID",

@@ -1,15 +1,15 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 DROP TABLE IF EXISTS "TempTable"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."ParentID"
 FROM
 	"Parent" p
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 CREATE TEMPORARY TABLE "TempTable"
 (
@@ -19,7 +19,7 @@ CREATE TEMPORARY TABLE "TempTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 DROP TABLE "TempTable"
 

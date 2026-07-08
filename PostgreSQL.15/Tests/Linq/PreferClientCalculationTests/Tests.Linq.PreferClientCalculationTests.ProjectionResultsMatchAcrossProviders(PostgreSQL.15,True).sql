@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	e."Id",
@@ -6,7 +6,7 @@ SELECT
 FROM
 	"ClientCalcEntity" e
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -16,7 +16,7 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	e."Id",
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"ClientCalcEntity" e
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -35,14 +35,14 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	e."Value1"
 FROM
 	"ClientCalcEntity" e
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"ClientCalcEntity" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	e."Value1",
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"ClientCalcEntity" e
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

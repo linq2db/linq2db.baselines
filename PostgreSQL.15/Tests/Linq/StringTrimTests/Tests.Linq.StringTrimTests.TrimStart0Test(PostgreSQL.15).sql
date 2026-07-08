@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	LTRIM('   ' || Coalesce(t."VarCharColumn", ''))
 FROM
 	"StringTrimTable" t
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

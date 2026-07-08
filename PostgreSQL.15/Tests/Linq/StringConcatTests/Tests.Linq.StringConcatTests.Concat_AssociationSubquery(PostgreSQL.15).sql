@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."Id",
@@ -15,7 +15,7 @@ FROM
 ORDER BY
 	p."Id"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -26,7 +26,7 @@ FROM
 	"ConcatParent" m_1
 		INNER JOIN "ConcatChild" d ON m_1."Id" = d."ParentId"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

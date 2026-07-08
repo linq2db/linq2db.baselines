@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	c_1."Name",
@@ -7,7 +7,7 @@ FROM
 	"Customer" c_1
 		LEFT JOIN "Order" o ON c_1."Id" = o."CustomerId"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -15,7 +15,7 @@ SELECT
 FROM
 	"Customer" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
