@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @ids -2147483639 -- Object
 SET     @ids = {10,20}
 

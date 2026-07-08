@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	g_2."Key_1",
@@ -16,7 +16,7 @@ FROM
 GROUP BY
 	g_2."Key_1"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ParentID",

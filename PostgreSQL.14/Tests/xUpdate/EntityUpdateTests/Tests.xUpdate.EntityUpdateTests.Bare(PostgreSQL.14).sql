@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Name Text(7) -- String
 SET     @Name = 'updated'
 DECLARE @Version Integer -- Int32
@@ -20,7 +20,7 @@ SET
 WHERE
 	"EntityUpdateTest"."Id" = :Id
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id",

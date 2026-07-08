@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 UPDATE
 	"TrimTestTable"
@@ -7,7 +7,7 @@ SET
 WHERE
 	"TrimTestTable"."ID" = 3
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 UPDATE
 	"TrimTestTable"
@@ -16,7 +16,7 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 UPDATE
 	"TrimTestTable"
@@ -25,7 +25,7 @@ SET
 WHERE
 	"TrimTestTable"."Data" = '***HHH***'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -35,7 +35,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."ID",

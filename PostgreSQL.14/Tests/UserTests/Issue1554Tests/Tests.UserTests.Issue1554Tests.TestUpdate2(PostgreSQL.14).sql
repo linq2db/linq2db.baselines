@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Text(3) -- String
@@ -19,7 +19,7 @@ VALUES
 	:ClaimedKeyTypeN
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @ClaimedKeyType Text(2) -- String
 SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN Text(2) -- String
@@ -33,7 +33,7 @@ SET
 WHERE
 	"Issue1554Table"."Id" = 0
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id",

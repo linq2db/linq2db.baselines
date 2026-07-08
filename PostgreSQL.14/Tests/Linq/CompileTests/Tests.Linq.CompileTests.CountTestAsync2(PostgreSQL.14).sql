@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	c_1."ParentID" = :p
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

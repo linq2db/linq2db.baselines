@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DROP TABLE IF EXISTS "TestTrun"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 CREATE TABLE "TestTrun"
 (
@@ -12,11 +12,11 @@ CREATE TABLE "TestTrun"
 	CONSTRAINT "PK_TestTrun" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 TRUNCATE TABLE "TestTrun"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DROP TABLE "TestTrun"
 

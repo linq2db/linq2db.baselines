@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 CREATE TEMPORARY TABLE "TestTable"
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE "TestTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DROP TABLE IF EXISTS "TestTable"
 

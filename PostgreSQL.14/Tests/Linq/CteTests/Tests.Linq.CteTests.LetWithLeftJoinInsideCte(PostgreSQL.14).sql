@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @S1 Text(2) -- String
 SET     @S1 = 's1'
 
@@ -11,7 +11,7 @@ VALUES
 	:S1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @S1 Text(2) -- String
 SET     @S1 = 's1'
 
@@ -24,7 +24,7 @@ VALUES
 	:S1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 WITH "CTE_1" ("S1")
 AS

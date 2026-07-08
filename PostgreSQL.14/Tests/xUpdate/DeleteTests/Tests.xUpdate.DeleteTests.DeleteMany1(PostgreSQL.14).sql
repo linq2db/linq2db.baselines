@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "Parent"
 (
@@ -9,7 +9,7 @@ VALUES
 	1001
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "Child"
 (
@@ -22,7 +22,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "Child"
 (
@@ -35,7 +35,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DELETE FROM
 	"Child" t1
@@ -51,14 +51,14 @@ WHERE
 			t1."ChildID" = "a_Children"."ChildID"
 	)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 DELETE FROM
 	"Parent" c_1
