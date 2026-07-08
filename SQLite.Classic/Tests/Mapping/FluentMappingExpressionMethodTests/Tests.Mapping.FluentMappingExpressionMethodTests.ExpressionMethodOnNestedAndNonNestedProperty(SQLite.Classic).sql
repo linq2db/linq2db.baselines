@@ -32,9 +32,9 @@ VALUES
 SELECT
 	[t1].[Id],
 	[t1].[TopSource],
-	Upper([t1].[TopSource]),
 	[t1].[Source],
-	Upper([t1].[Source])
+	Upper([t1].[Source]),
+	Upper([t1].[TopSource])
 FROM
 	[MixedExpr] [t1]
 LIMIT 2
