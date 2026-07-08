@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String
@@ -25,7 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @diagnosis Integer -- Int32
@@ -46,7 +46,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @diagnosis Integer -- Int32
@@ -67,7 +67,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @diagnosis Integer -- Int32
@@ -88,7 +88,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

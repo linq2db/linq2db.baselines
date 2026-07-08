@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t2."ReferenceName"
@@ -15,7 +15,7 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -27,7 +27,7 @@ FROM
 	"TestTable" t1
 		INNER JOIN "Reference" "a_Reference" ON t1."ReferenceId" = "a_Reference"."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

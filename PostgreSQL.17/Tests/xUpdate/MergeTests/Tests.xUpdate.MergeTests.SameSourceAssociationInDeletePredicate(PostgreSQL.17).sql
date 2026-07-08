@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -22,7 +22,7 @@ USING (
 ON ("Target"."PersonID" = "Source"."PersonID" AND "Source"."Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND "Source"."Person_FirstName" = 'first 4' AND "Source"."Person_FirstName_1" = 'first 4' THEN DELETE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."PersonID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 
@@ -11,7 +11,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @UserId Integer -- Int32
 SET     @UserId = 10
 DECLARE @Age Integer -- Int32
@@ -28,7 +28,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

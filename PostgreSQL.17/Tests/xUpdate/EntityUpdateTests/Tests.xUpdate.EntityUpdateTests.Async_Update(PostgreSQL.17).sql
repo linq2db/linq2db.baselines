@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Name Text(5) -- String
 SET     @Name = 'async'
 DECLARE @Version Integer -- Int32
@@ -20,7 +20,7 @@ SET
 WHERE
 	"EntityUpdateTest"."Id" = :Id
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

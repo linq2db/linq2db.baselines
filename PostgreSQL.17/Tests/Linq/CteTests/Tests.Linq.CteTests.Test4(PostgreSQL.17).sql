@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 WITH "CTE1_" ("ParentID")
 AS
@@ -28,7 +28,7 @@ FROM
 	"CTE1_" p
 		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = p."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	c4."ParentID",

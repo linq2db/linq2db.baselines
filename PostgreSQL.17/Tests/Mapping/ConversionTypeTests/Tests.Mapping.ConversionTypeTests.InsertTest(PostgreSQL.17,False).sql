@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data Text(9) -- String
@@ -15,7 +15,7 @@ VALUES
 	:Data
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
 DECLARE @Data Text(9) -- String
@@ -32,7 +32,7 @@ VALUES
 	:Data
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "TrimTestTable"
 (
@@ -45,7 +45,7 @@ VALUES
 	'***VVV***'
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -55,7 +55,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",

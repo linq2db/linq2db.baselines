@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "IssueAliasBugT1"
 (
@@ -11,7 +11,7 @@ VALUES
 	10
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "IssueAliasBugT1"
 (
@@ -24,7 +24,7 @@ VALUES
 	20
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "IssueAliasBugT2"
 (
@@ -39,7 +39,7 @@ VALUES
 	3
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "IssueAliasBugT2"
 (
@@ -54,7 +54,7 @@ VALUES
 	5
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "IssueAliasBugT2"
 (
@@ -69,7 +69,7 @@ VALUES
 	7
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @minValue Integer -- Int32
 SET     @minValue = 15
 

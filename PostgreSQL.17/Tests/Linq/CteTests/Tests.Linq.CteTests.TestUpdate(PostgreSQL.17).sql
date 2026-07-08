@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 WITH "CTE_1" ("ParentID")
 AS
@@ -19,7 +19,7 @@ FROM
 WHERE
 	ct."ParentID" = "CteChild"."ParentID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	c_1."ChildID",
@@ -29,7 +29,7 @@ FROM
 WHERE
 	(c_1."ParentID"::decimal % 2)::decimal = 0
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	c_1."ChildID"
