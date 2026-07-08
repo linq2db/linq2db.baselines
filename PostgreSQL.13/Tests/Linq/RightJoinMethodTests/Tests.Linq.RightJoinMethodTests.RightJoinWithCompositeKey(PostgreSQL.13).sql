@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	p."ParentID",
@@ -9,7 +9,7 @@ FROM
 	"Parent" p
 		RIGHT JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID" AND Coalesce(p."Value1", 0) = c_1."ParentID"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ParentID",
@@ -17,7 +17,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ParentID",

@@ -1,6 +1,6 @@
 ﻿INSERT BULK "TrimTestTable"(ID, Data)
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -10,7 +10,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."ID",

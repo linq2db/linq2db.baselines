@@ -1,23 +1,23 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 CREATE SEQUENCE issue5628_code_seq_17
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 CREATE SEQUENCE issue5628_item_id_seq_17
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 CREATE TABLE issue5628_two_defaults_no_pk_17 (
 	code integer DEFAULT nextval('issue5628_code_seq_17'::regclass) NOT NULL,
 	item_id integer DEFAULT nextval('issue5628_item_id_seq_17'::regclass) NOT NULL
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SHOW server_version_num
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t.table_catalog || '.' || t.table_schema || '.' || t.table_name            as TableID,
@@ -64,7 +64,7 @@ UNION ALL
 	FROM pg_matviews v
 	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog') AND v.schemaname IN ('public')
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
@@ -80,7 +80,7 @@ UNION ALL
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog') AND pg_namespace.nspname IN ('public')
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	columns.TableID,
@@ -214,7 +214,7 @@ FROM
 	) columns
 ) columns;
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	pg_constraint.conname,
@@ -262,7 +262,7 @@ WHERE
 	pg_constraint.contype = 'f'
 	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog') AND this_schema.nspname IN ('public')
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT	r.ROUTINE_CATALOG,
 		r.ROUTINE_SCHEMA,
@@ -280,12 +280,12 @@ SELECT	r.ROUTINE_CATALOG,
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE
 FROM INFORMATION_SCHEMA.parameters
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
@@ -295,32 +295,32 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 			ON r.SPECIFIC_SCHEMA = outp.SPECIFIC_SCHEMA AND r.SPECIFIC_NAME = outp.SPECIFIC_NAME
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 DROP TABLE IF EXISTS issue5628_two_defaults_no_pk_17
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 DROP SEQUENCE IF EXISTS issue5628_code_seq_17
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 DROP SEQUENCE IF EXISTS issue5628_item_id_seq_17
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName Text(8) -- String
@@ -23,7 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -39,7 +39,7 @@ WHERE
 	x."FirstName" = :FirstName
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @newName Text(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

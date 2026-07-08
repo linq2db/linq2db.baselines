@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Value Bigint -- Int64
 SET     @Value = NULL
 
@@ -11,7 +11,7 @@ FROM
 			(1,:Value)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Value Bigint -- Int64
 SET     @Value = 2147483648
 

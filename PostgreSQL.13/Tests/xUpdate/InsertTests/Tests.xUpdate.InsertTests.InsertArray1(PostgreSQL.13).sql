@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" > 1000
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "LinqDataTypes"
 (
@@ -20,7 +20,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t."ID",
@@ -36,7 +36,7 @@ WHERE
 	t."ID" = 1001
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t

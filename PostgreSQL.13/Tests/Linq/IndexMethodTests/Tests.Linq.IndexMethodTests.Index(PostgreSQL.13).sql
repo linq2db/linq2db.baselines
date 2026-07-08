@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	ROW_NUMBER() OVER (ORDER BY item_1."Id") - 1,
@@ -9,7 +9,7 @@ FROM
 ORDER BY
 	item_1."Id"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id",
