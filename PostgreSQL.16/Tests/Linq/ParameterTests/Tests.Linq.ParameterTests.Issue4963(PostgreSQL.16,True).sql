@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 UPDATE
 	"Issue4963Table"
 SET
 	"Field" = ("Issue4963Table"."Field"::Int + -1)::SmallInt
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

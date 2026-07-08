@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -9,7 +9,7 @@ FROM
 	"TransactionEntity" m_1
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	x."Id",

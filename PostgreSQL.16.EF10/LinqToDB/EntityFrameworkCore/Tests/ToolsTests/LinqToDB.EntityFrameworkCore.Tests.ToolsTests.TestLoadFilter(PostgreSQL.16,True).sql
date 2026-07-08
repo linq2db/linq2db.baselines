@@ -34,7 +34,7 @@ ORDER BY p."ProductID", s1."OrderID0", s1."ProductID", s1."OrderID", s1."Product
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."SupplierId",
@@ -69,7 +69,7 @@ WHERE
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."ProductID",
@@ -102,7 +102,7 @@ WHERE
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."ProductName",

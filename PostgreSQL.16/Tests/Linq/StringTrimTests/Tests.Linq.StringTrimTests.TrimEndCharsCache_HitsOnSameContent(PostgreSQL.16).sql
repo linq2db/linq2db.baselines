@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	RTRIM(t."VarCharColumn", '.+')
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	RTRIM(t."VarCharColumn", '.+')

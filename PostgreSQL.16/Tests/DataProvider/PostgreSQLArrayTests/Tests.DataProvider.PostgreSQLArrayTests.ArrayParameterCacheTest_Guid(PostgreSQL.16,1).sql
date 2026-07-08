@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @arr -2147483621 -- Object
 SET     @arr = {'00000001-0000-0000-0000-000000000000'::uuid,'00000002-0000-0000-0000-000000000000'::uuid}
 
