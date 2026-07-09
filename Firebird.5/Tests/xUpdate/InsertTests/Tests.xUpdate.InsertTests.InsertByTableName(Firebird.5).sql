@@ -82,14 +82,12 @@ RETURNING
 	"PersonID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

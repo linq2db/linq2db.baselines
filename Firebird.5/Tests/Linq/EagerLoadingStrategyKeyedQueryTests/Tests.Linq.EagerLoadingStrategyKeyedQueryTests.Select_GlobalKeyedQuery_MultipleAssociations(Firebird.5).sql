@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"d"."Id",
 	"d"."Name"
@@ -9,7 +8,6 @@ ORDER BY
 	"d"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"k_1"."item",
 	"d"."Id",
@@ -28,7 +26,6 @@ ORDER BY
 	"d"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	@param = "t1"."SmallIntValue"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",

@@ -1,12 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	"t1"."ParentID" > 1000
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" IN (1001, 1002)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

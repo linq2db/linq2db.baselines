@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	SUM(CASE
 		WHEN "t"."CategoryId" = 1 THEN "t"."IntValue"

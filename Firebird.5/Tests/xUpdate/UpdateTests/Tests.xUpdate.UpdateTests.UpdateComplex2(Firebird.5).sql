@@ -30,7 +30,6 @@ RETURNING
 	"PersonID"
 
 -- Firebird.5 Firebird4
-
 UPDATE
 	"Person" "t1"
 SET

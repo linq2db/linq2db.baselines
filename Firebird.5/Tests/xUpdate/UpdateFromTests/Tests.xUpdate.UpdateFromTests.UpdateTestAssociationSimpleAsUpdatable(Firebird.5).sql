@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 UPDATE
 	"UpdatedEntities"
 SET
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"v"."Value1",
 	"v"."Value2",

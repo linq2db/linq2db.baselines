@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "ReviewIndexes" "Target"
 USING (
 	SELECT

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	MAX(CASE
 		WHEN "g_1"."ChildID" > 0 THEN "g_1"."ChildID"

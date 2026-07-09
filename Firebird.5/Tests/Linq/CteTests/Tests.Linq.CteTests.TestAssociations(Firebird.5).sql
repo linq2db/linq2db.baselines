@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH "BooksCte" ("AuthorId", "Title")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -9,7 +8,6 @@ WHERE
 	"p"."Value1" IS NULL OR "p"."Value1" <> 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

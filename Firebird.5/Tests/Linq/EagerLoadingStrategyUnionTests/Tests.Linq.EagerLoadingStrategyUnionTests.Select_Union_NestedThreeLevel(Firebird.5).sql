@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH CTE_1 ("Id", "field", "CompanyName")
 AS
 (

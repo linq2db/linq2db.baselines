@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"x"."Id"
 FROM
@@ -20,7 +19,6 @@ ORDER BY
 	"x"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."Id"
 FROM

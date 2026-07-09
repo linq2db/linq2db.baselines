@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d_1"."Key_1"
@@ -20,7 +19,6 @@ FROM
 		) "d_1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"p"."ParentID"
 FROM

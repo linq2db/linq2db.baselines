@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 UPDATE
 	"UpdateSubquerySourceTable" "x"
 SET
@@ -17,7 +16,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."FirstName",

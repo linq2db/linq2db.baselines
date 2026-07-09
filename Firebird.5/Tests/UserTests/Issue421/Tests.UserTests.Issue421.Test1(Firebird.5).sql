@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"
@@ -38,7 +37,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"

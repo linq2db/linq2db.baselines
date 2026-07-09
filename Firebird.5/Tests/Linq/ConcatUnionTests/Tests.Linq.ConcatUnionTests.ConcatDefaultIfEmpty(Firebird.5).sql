@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CAST(0 AS Int),
 	"t1"."ParentID",
@@ -31,7 +30,6 @@ WHERE
 	"p_1"."ParentID" <> 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -46,7 +44,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -54,7 +51,6 @@ FROM
 	"Parent" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
