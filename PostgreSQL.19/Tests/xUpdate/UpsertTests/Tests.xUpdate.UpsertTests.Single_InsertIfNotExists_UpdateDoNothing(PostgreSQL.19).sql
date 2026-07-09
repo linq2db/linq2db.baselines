@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(8) -- String
@@ -36,7 +36,7 @@ VALUES
 )
 ON CONFLICT ("Id") DO NOTHING
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	r."Id",

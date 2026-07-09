@@ -1,18 +1,18 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
@@ -27,7 +27,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
 
@@ -42,7 +42,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -51,14 +51,14 @@ FROM
 WHERE
 	t1."ParentID" > 1000
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" IN (1001, 1002)
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	COUNT(*)

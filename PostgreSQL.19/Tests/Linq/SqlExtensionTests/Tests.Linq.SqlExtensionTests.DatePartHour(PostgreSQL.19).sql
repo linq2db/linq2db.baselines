@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	Extract(hour from t."DateTimeValue")

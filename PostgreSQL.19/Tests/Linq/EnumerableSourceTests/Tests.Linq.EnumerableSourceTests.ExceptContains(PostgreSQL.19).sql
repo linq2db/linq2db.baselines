@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	r."PersonID" IN (1, 2, 3)

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @param Numeric(2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 Numeric(2, 0) -- Decimal

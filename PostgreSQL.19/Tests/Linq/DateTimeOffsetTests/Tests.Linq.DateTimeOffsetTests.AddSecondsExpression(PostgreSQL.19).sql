@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Second Integer -- Int32
 SET     @Second = -35
 

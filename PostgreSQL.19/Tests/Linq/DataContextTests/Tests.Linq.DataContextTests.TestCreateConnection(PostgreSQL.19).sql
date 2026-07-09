@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."FirstName",
@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Person" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."FirstName",
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Person" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."FirstName",

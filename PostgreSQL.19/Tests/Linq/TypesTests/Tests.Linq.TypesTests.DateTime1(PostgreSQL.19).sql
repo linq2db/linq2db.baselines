@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Date Timestamp -- DateTime2
 SET     @Date = '2009-09-20'::date
 

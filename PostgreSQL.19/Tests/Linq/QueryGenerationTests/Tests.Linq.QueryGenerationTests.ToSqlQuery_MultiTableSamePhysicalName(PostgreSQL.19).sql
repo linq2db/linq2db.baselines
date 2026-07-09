@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	p."PersonID",
@@ -7,7 +7,7 @@ FROM
 	"Person" p
 		INNER JOIN "Doctor" d ON p."PersonID" = d."PersonID"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	p."PersonID",

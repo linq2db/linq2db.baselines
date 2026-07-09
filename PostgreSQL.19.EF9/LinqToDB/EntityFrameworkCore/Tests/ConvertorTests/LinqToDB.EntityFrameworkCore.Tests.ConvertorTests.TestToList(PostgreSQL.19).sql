@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 DECLARE @PermanentId Uuid -- Guid
@@ -31,7 +31,7 @@ RETURNING
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @Id Bigint -- Int64
 SET     @Id = 2
 DECLARE @PermanentId Uuid -- Guid
@@ -64,7 +64,7 @@ RETURNING
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @Id Bigint -- Int64
 SET     @Id = 3
 DECLARE @PermanentId Uuid -- Guid
@@ -102,7 +102,7 @@ FROM "Subdivisions" AS s
 WHERE s."Id"::bigint = 1
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 
@@ -119,7 +119,7 @@ WHERE
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Bigint -- Int64
 SET     @id = 1
 
@@ -136,7 +136,7 @@ WHERE
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	s."Id",
@@ -151,7 +151,7 @@ WHERE
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",

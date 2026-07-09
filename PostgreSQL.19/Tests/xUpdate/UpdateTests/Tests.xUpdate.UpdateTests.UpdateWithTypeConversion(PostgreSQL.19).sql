@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 
@@ -15,7 +15,7 @@ VALUES
 	200
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -39,7 +39,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 

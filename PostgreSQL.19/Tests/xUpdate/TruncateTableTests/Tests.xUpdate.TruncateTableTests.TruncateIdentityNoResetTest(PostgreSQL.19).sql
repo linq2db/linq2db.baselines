@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO test_temp
 (
@@ -13,7 +13,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO test_temp
 (
@@ -24,7 +24,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -37,11 +37,11 @@ ORDER BY
 	t1."ID"
 LIMIT 2 OFFSET :skip 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO test_temp
 (
@@ -52,7 +52,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO test_temp
 (
@@ -63,7 +63,7 @@ VALUES
 	1
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

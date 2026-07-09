@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO "Issue1403Tests_3"
 (
@@ -11,7 +11,7 @@ VALUES
 	'New event'
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1.event_id,

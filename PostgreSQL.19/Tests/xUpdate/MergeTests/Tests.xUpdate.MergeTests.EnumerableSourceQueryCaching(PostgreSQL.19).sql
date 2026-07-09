@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
@@ -33,7 +33,7 @@ VALUES
 	"Source"."Field4"
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -47,12 +47,12 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
@@ -82,7 +82,7 @@ VALUES
 	"Source"."Field4"
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -96,12 +96,12 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
@@ -131,7 +131,7 @@ VALUES
 	"Source"."Field4"
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",

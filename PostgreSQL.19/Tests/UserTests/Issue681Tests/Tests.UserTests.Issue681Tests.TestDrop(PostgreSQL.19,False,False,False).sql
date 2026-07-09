@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "Issue681Table2"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 CREATE TABLE "Issue681Table2"
 (
@@ -12,7 +12,7 @@ CREATE TABLE "Issue681Table2"
 	CONSTRAINT "PK_Issue681Table2" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE "Issue681Table2"
 

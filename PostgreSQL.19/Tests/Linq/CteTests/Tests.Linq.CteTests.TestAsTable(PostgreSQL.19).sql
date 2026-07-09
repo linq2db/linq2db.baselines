@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 WITH "CTE1_" ("ParentID", "ChildID")
 AS
@@ -15,7 +15,7 @@ SELECT
 FROM
 	"CTE1_" t2
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."ParentID",

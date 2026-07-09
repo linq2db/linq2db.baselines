@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "TestTable"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 CREATE TEMPORARY TABLE "TestTable"
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE "TestTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -29,7 +29,7 @@ FROM
 WHERE
 	t1."Id" = t2."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "TestTable"
 

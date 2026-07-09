@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	m_1."Key_1",
@@ -25,7 +25,7 @@ FROM
 			ELSE '3'
 		END
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT DISTINCT
 	CASE

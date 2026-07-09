@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 CREATE TEMPORARY TABLE "CreateIfNotExistsTable"
 (
@@ -11,7 +11,7 @@ CREATE TEMPORARY TABLE "CreateIfNotExistsTable"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -19,7 +19,7 @@ SELECT
 FROM
 	"CreateIfNotExistsTable" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -27,11 +27,11 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 	"Value" Int NOT NULL
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

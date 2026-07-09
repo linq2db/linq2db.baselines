@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	SUM(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

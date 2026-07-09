@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t."PK",
@@ -15,7 +15,7 @@ WHERE
 ORDER BY
 	t."PK"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."PK",
@@ -23,7 +23,7 @@ SELECT
 FROM
 	test_in_1 t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."PK",

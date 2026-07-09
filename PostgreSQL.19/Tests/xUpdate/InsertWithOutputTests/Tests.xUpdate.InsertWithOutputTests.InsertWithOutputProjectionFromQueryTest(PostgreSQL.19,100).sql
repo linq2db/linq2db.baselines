@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -20,7 +20,7 @@ RETURNING
 	NEW."Id" + 1,
 	Coalesce(NEW."ValueStr", '') || '1'
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -29,7 +29,7 @@ SELECT
 FROM
 	"DestinationTable" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t."Id" + 1,

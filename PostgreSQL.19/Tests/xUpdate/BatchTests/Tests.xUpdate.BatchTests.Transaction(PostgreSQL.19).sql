@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
@@ -7,7 +7,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
@@ -16,7 +16,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
@@ -25,7 +25,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 
@@ -34,7 +34,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO "Parent"
 (
@@ -48,7 +48,7 @@ VALUES
 (4111,4111)
 
 CommitTransaction
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1111
 
@@ -57,7 +57,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2111
 
@@ -66,7 +66,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3111
 
@@ -75,7 +75,7 @@ DELETE FROM
 WHERE
 	p."ParentID" = :ParentID
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 4111
 

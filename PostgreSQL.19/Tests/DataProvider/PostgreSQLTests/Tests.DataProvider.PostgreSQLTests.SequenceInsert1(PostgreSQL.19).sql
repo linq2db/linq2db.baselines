@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" = 'SeqValue'
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @Value Text(8) -- String
 SET     @Value = 'SeqValue'
 
@@ -20,7 +20,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."ID",
@@ -31,7 +31,7 @@ WHERE
 	t1."Value" = 'SeqValue'
 LIMIT 2
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -40,7 +40,7 @@ DELETE FROM
 WHERE
 	t1."ID" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	COUNT(*)

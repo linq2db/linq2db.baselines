@@ -10,7 +10,7 @@ ORDER BY r."Id", s."AccountsAccountId", s."RolesId"
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	m_1."Id",
@@ -24,9 +24,7 @@ ORDER BY
 
 
 
-
-
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",

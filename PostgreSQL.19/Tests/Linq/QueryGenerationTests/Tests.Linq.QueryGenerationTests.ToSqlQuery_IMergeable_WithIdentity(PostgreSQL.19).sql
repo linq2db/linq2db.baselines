@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 MERGE INTO "TableWithIdentity" "Target"
 USING (VALUES

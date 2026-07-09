@@ -11,7 +11,7 @@ WHERE EXISTS (
 ORDER BY i."Id"
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	c_1."Id"

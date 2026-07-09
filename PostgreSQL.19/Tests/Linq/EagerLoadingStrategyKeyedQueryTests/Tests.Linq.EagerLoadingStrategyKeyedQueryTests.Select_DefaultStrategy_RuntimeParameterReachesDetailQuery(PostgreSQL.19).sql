@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @minId Integer -- Int32
 SET     @minId = 2
 
@@ -17,7 +17,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	d."Id",

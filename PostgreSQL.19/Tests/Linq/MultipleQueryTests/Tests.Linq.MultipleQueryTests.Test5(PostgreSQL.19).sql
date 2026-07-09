@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	m_1."ParentID",
@@ -14,7 +14,7 @@ FROM
 	) m_1
 		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	"a_Parent"."ParentID"

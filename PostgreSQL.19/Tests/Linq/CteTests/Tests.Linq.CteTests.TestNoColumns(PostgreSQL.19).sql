@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	COUNT(*)
 FROM
 	"Child" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 WITH "CTE1_" (c1)
 AS
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"CTE1_" t2
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 WITH "CTE1_" (c1)
 AS
@@ -35,7 +35,7 @@ SELECT
 FROM
 	"CTE1_" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 WITH "CTE1_" (c1)
 AS

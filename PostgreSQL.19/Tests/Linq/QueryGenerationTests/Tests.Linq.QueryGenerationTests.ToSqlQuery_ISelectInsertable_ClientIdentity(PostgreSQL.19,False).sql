@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -11,7 +11,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @addition Integer -- Int32
 SET     @addition = 123
 
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"TableWithIdentitySrc" t1
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @addMask Integer -- Int32
 SET     @addMask = 3
 DECLARE @removeMask Integer -- Int32
@@ -9,7 +9,7 @@ UPDATE
 SET
 	"Value" = "WarehouseTableDto"."Value" | :addMask & ~:removeMask
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."Id",

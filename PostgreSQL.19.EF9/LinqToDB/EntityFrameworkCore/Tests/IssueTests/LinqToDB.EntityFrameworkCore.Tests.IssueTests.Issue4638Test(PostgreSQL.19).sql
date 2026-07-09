@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	m_1."Key_1",
@@ -20,15 +20,13 @@ ORDER BY
 
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	p."AclNameId"
 FROM
 	"Issue4624Items" p
 LIMIT 1
-
-
 
 
 

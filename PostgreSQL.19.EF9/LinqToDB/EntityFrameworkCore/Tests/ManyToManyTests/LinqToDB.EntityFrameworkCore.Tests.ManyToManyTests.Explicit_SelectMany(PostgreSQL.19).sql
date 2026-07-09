@@ -7,7 +7,7 @@ INNER JOIN (
 ) AS s ON o."Id" = s."OrderId"
 
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	o."Id"

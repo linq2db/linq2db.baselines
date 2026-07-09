@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @pattern Text(3) -- String
 SET     @pattern = '%1%'
 DECLARE @take Integer -- Int32

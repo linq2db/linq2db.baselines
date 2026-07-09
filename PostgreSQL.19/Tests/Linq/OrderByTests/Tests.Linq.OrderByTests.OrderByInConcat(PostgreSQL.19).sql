@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t2."ParentID",
@@ -28,7 +28,7 @@ FROM
 			t3."ChildID" DESC
 	) t4
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t1."ParentID",
@@ -50,7 +50,7 @@ FROM
 			t2."ChildID" DESC
 	) t3
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	t5."ParentID",

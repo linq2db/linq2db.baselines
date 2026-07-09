@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 3
 DECLARE @Value1 Integer -- Int32

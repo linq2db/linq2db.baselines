@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ChildID" > 1000
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -20,7 +20,7 @@ VALUES
 	:id
 )
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -48,7 +48,7 @@ WHERE
 	"Child"."ParentID" = c_1."ParentID" AND
 	"Child"."ChildID" = c_1."ChildID"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = 1002
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -15,7 +15,7 @@ RETURNING
 
 INSERT BULK "AllTypes"(intDataType)
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -29,7 +29,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 SELECT
 	LEAD(p."Value1") IGNORE NULLS OVER (PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1"),

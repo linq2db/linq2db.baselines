@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19 PostgreSQL13
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 UPDATE
 	"Test3697Item"
@@ -15,7 +15,7 @@ WHERE
 RETURNING
 	NEW."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19 PostgreSQL13
 
 UPDATE
 	"Test3697Item"
