@@ -18,7 +18,6 @@ ORDER BY
 	m_1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	d."Id",
 	d."Name"

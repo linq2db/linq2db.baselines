@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestTable" Target
 USING (
 	SELECT

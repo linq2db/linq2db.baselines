@@ -11,7 +11,6 @@ WHERE
 	r."ParentID" = :p
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

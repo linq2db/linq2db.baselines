@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"InheritanceParent" t1
 
@@ -36,7 +35,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -75,7 +73,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

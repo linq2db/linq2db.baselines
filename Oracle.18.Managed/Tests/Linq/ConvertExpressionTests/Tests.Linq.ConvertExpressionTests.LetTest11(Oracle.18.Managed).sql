@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN t1."ParentID" IS NULL THEN 0

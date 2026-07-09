@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	MAX(DISTINCT p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
@@ -12,7 +11,6 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(ALL p."Value1")
 FROM

@@ -18,7 +18,6 @@ WHERE
 	"ConvertedInts"."Id" = 2
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."Cents",

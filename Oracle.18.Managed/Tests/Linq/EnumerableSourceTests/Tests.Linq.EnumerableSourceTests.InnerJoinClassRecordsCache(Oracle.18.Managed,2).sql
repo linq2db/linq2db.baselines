@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -14,7 +13,6 @@ FROM
 			SELECT 4 FROM sys.dual) n ON p."PersonID" = n.ID
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."FirstName",
 	p."PersonID",

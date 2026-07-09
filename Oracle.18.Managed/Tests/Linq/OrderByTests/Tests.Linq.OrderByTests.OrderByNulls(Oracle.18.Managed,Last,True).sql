@@ -14,7 +14,6 @@ ORDER BY
 FETCH NEXT :take ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Grp",

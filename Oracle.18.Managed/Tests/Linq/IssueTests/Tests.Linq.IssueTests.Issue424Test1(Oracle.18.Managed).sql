@@ -12,7 +12,6 @@ ORDER BY
 FETCH NEXT :take ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

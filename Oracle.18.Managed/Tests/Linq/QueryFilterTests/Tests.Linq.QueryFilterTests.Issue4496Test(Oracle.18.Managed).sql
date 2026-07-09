@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	x."ParentID",
 	x."ChildID"
@@ -10,7 +9,6 @@ WHERE
 	x."ChildID" > 30
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	x."ParentID",
 	x."ChildID"

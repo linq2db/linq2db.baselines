@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."IntValue",
@@ -53,7 +52,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."IntValue",

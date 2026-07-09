@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_GrandChildren2."ParentID",
 	a_GrandChildren2."ChildID",

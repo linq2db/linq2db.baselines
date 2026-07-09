@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO STG_TRADE_INFORMATION
 (
 	STG_TRADE_ID,

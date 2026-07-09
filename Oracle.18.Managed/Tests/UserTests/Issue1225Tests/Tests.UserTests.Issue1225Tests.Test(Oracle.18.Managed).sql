@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	'Id',
 	it."Id",
