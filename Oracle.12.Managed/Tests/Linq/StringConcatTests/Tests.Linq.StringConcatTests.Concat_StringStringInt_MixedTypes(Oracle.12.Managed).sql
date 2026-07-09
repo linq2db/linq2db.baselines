@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."StrReq"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(e."StrReq" || ' 1') = 'Programmer 1'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Str1",

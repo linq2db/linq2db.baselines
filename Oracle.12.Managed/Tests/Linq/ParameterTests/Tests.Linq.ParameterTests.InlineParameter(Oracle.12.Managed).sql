@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -10,7 +9,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID",
 	p."Value1"

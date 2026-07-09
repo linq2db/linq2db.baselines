@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "NestedKeyTarget" Target
 USING (
 	SELECT 1 AS "Key_Value", 'first-updated' AS "Code" FROM sys.dual) "Source"
@@ -45,7 +44,6 @@ SET
 	"Code" = "Source"."Code"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Code",
 	t1."Id"

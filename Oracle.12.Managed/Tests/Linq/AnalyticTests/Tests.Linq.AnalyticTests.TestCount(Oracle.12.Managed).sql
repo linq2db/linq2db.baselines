@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*),
 	COUNT(c_1."ChildID"),
@@ -13,28 +12,24 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"Child" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(ALL t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(DISTINCT t1."ParentID")
 FROM

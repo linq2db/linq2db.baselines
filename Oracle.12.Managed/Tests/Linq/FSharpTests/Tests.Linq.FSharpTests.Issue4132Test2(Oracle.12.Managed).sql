@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Issue4132Table" row_1
 SET
@@ -23,7 +21,6 @@ WHERE
 	row_1."Number" = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Number" as "Number_1",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value1"
@@ -7,7 +6,6 @@ FROM
 	"Table1788" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	l."Value1"
 FROM

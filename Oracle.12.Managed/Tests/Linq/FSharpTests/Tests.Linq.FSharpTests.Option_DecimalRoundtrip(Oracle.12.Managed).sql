@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Value" as "Value_1"
@@ -44,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Value" as "Value_1"

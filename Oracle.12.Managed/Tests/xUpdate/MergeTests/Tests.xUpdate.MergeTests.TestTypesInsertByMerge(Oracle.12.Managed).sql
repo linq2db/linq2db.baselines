@@ -1,15 +1,12 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestMerge2" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDouble", NULL AS "FieldDateTime", NULL AS "FieldDateTime2", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM sys.dual
@@ -65,7 +62,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestMerge2" Target
 USING (
 	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308D AS "FieldDouble", TIMESTAMP '2098-10-12 21:14:15.907000' AS "FieldDateTime", TIMESTAMP '2001-11-22 13:14:14.1233457 -01:39' AS "FieldDateTime2", HEXTORAW('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF') AS "FieldGuid", -0.123 AS "FieldDecimal", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM sys.dual
@@ -122,7 +118,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -146,7 +141,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field1",

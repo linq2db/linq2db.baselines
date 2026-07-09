@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT /*+ MONITOR */
 	p."ParentID",
 	p."Value1"
