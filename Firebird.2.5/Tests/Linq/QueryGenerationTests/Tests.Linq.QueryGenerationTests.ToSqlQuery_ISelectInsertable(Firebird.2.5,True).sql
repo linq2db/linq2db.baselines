@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TableWithIdentity"
 (
 	"Value"
@@ -23,7 +22,6 @@ FROM
 	"TableWithIdentitySrc" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"
@@ -26,7 +25,6 @@ WHERE
 	"e"."SomeText" = 'Value1_suffix'
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"e"."Id",
 	"e"."SomeText"

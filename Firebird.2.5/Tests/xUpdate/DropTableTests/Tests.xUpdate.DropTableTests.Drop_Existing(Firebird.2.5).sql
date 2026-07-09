@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 CREATE TABLE "Table"
 (
 	ID Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE "Table"
 )
 
 -- Firebird.2.5 Firebird
-
 DROP TABLE "Table"
 

@@ -16,7 +16,6 @@ RETURNING
 	"Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id"
 FROM
@@ -34,7 +33,6 @@ WHERE
 	"u"."Id" = @userId
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"u"."Id"
 FROM

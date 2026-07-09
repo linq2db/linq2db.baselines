@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"g_2".ID1,
 	"g_2".ID2 + 1,

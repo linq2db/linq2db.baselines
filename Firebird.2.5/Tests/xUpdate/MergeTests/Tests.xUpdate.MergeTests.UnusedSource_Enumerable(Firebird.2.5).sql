@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 FROM rdb$database) "Source"
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Value"

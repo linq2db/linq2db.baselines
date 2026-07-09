@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"g_2"."Date_1",
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	"g_2"."Date_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."CreatedOnUtc"
 FROM

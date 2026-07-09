@@ -38,7 +38,6 @@ WHERE
 	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Name",
@@ -92,7 +91,6 @@ WHERE
 	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Name",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_TestIdTrun')) THEN
 		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
@@ -10,7 +9,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT '
 		CREATE TABLE "TestIdTrun"
@@ -34,7 +32,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -45,7 +42,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -68,15 +64,12 @@ ORDER BY
 	"t1".ID
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM "TestIdTrun"
 
 -- Firebird.2.5 Firebird
-
 SET GENERATOR "GIDENTITY_TestIdTrun" TO 0
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -87,7 +80,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -110,7 +102,6 @@ ORDER BY
 	"t1".ID
 
 -- Firebird.2.5 Firebird
-
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
 	EXECUTE STATEMENT 'DROP GENERATOR "GIDENTITY_TestIdTrun"';

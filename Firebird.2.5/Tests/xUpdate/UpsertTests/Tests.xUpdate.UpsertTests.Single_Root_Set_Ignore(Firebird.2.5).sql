@@ -46,7 +46,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Name",
@@ -106,7 +105,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Name",

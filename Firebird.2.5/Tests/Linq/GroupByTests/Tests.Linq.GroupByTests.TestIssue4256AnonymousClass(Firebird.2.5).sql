@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	'1',
 	CASE
@@ -10,7 +9,6 @@ FROM
 	"LinqDataTypes" "it"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",

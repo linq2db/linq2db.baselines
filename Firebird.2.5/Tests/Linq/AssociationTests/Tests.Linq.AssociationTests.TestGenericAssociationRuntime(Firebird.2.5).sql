@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"a_MiddleRuntime"."ParentID",
 	"a_Bottom"."ParentID",

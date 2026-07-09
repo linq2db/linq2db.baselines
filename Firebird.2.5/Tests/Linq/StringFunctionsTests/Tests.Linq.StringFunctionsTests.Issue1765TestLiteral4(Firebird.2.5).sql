@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	MAX("g_1"."Value4"),
 	LIST("g_1"."Value4", ' -> ')

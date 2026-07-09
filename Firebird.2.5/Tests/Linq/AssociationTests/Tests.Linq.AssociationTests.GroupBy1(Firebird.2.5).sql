@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."City_Code",
 	"d_1"."City_Name"
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN "Cities" "d_1" ON "d_1"."City_Code" = "m_1"."City_Code"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"a"."First_Name",
 	"a"."Last_Name",

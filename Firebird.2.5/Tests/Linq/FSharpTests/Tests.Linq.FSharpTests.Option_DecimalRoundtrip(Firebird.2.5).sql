@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Value"
@@ -43,7 +42,6 @@ WHERE
 	"r"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Value"

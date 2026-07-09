@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -26,7 +25,6 @@ WHERE
 	"r"."ColumnNullable" = X'BD3973A543234DD89F4FDF9F93E2A627'
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GuidTable" "t1"
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -84,12 +81,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GuidTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "GuidTable"
 (
 	"Id",
@@ -100,7 +95,6 @@ SELECT 1,X'BC7B663D0FDE43278F925D8CC3A11D11',NULL FROM rdb$database UNION ALL
 SELECT 2,X'A948600DDE214F748AC29516B287076E',X'BD3973A543234DD89F4FDF9F93E2A627' FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -111,12 +105,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GuidTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "GuidTable"
 (
 	"Id",
@@ -127,7 +119,6 @@ SELECT 1,X'BC7B663D0FDE43278F925D8CC3A11D11',NULL FROM rdb$database UNION ALL
 SELECT 2,X'A948600DDE214F748AC29516B287076E',X'BD3973A543234DD89F4FDF9F93E2A627' FROM rdb$database
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

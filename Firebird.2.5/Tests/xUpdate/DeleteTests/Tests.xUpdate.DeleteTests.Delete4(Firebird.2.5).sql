@@ -1,12 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GrandChild" "gc"
 WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +41,6 @@ WHERE
 	"gc"."ParentID" = 1
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"GrandChild" "t1"
 WHERE
@@ -64,7 +59,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

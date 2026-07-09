@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "Parent"
 (
 	"ParentID"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Child" "t1"
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

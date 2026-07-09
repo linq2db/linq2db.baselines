@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	Extract(year from "a_Types"."DateTimeValue")
 FROM

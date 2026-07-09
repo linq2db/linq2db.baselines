@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Key_1",
 	"d"."FirstName",
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN "Person" "d" ON "m_1"."Key_1" = "d"."FirstName"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t2"."Key_1",
 	"t2"."Key_1"
