@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],

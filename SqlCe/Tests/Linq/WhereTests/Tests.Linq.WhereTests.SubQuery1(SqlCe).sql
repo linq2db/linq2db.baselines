@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[pp].[Value_1]
 FROM

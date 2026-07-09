@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [temp_table1]
 (
 	[ID]    Int NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [temp_table1]
 )
 
 -- SqlCe
-
 INSERT INTO [temp_table1]
 (
 	[ID],
@@ -18,7 +16,6 @@ INSERT INTO [temp_table1]
 SELECT 1,2
 
 -- SqlCe
-
 CREATE TABLE [temp_table2]
 (
 	[ID]    Int NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE [temp_table2]
 )
 
 -- SqlCe
-
 INSERT INTO [temp_table2]
 (
 	[ID],
@@ -41,7 +37,6 @@ FROM
 	[temp_table1] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -49,7 +44,6 @@ FROM
 	[temp_table1] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -57,7 +51,6 @@ FROM
 	[temp_table2] [t1]
 
 -- SqlCe
-
 INSERT INTO [temp_table1]
 (
 	[ID],
@@ -83,7 +76,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [temp_table1]
 (
 	[ID],
@@ -92,18 +84,14 @@ INSERT INTO [temp_table1]
 SELECT 4,5
 
 -- SqlCe
-
 DELETE FROM [temp_table1]
 
 -- SqlCe
-
 DELETE FROM [temp_table2]
 
 -- SqlCe
-
 DROP TABLE [temp_table2]
 
 -- SqlCe
-
 DROP TABLE [temp_table1]
 

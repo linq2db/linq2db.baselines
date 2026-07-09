@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],
@@ -61,7 +60,6 @@ WHERE
 	[Base].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	Coalesce([e].[StrReq], '') + 'X'
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

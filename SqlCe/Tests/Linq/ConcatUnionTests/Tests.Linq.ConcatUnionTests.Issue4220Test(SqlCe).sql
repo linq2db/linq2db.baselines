@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

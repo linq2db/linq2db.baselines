@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[Id],
 	CAST('str1' AS NVarChar)
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
 	CAST('str2' AS NVarChar)

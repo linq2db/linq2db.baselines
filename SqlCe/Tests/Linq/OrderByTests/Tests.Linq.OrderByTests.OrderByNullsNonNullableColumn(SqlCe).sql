@@ -12,7 +12,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

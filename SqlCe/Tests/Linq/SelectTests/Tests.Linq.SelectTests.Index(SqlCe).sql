@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Parent].[ParentID],
 	[m_1].[ChildID]
@@ -12,7 +11,6 @@ ORDER BY
 	[m_1].[ChildID] DESC
 
 -- SqlCe
-
 SELECT
 	[a_Parent].[ParentID],
 	[m_1].[ChildID]

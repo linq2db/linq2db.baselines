@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TempTable]
 
 -- SqlCe
-
 CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE [TempTable]
 )
 
 -- SqlCe
-
 INSERT INTO [TempTable]
 (
 	[ID]
@@ -23,7 +20,6 @@ FROM
 	[Parent] [p]
 
 -- SqlCe
-
 SELECT
 	[t].[ID]
 FROM
@@ -31,6 +27,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 -- SqlCe
-
 DROP TABLE [TempTable]
 

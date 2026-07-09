@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[c_1].[Id]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -28,7 +26,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],

@@ -24,11 +24,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 UPDATE
 	[Person]
 SET

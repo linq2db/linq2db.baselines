@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	SUM([c2].[ChildID])
 FROM

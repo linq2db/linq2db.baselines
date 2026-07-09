@@ -13,7 +13,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -30,7 +29,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

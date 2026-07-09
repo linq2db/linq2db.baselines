@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[a_Details].[UserId],

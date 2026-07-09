@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	Lower([p].[Taxonomy])
 FROM

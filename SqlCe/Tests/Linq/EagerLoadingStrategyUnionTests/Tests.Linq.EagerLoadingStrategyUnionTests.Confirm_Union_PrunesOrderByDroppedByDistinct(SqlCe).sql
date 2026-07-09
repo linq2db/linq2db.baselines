@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
 	[x].[CompanyId]
 FROM
 	[Department] [x]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

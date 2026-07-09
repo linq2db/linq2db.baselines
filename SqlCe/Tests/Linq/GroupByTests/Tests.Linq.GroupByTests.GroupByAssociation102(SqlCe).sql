@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Parent].[Value1]
 FROM

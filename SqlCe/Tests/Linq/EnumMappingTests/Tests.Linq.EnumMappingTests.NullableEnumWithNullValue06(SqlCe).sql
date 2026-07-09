@@ -76,7 +76,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -88,7 +87,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

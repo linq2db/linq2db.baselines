@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [temp_table_1]
 (
 	[ID]    Int           NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [temp_table_1]
 )
 
 -- SqlCe
-
 INSERT INTO [temp_table_1]
 (
 	[ID],
@@ -18,7 +16,6 @@ INSERT INTO [temp_table_1]
 SELECT 1,'Value'
 
 -- SqlCe
-
 CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
@@ -27,7 +24,6 @@ CREATE TABLE [temp_table_2]
 )
 
 -- SqlCe
-
 INSERT INTO [temp_table_2]
 (
 	[Value]
@@ -46,10 +42,8 @@ FROM
 		) [t1]
 
 -- SqlCe
-
 DROP TABLE [temp_table_2]
 
 -- SqlCe
-
 DROP TABLE [temp_table_1]
 

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -29,7 +28,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

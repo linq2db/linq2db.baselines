@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1]
@@ -20,7 +19,6 @@ FROM
 		) [d_1]
 
 -- SqlCe
-
 SELECT
 	[p].[ParentID]
 FROM

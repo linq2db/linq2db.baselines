@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],

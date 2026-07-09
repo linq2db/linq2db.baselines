@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 -- SqlCe
-
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 -- SqlCe

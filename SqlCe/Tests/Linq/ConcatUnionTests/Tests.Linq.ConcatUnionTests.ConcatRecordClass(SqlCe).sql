@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
@@ -15,7 +14,6 @@ FROM
 	[Person] [p_1]
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

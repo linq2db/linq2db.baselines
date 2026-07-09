@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t2].[ReferenceName]
 FROM
@@ -15,7 +14,6 @@ FROM
 		) [t2]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN [Reference] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

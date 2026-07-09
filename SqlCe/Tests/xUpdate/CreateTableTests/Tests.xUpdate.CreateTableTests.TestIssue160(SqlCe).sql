@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [aa]
 (
 	[bb] Int           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[bb],
 	[t1].[cc]
@@ -34,6 +32,5 @@ FROM
 	[aa] [t1]
 
 -- SqlCe
-
 DROP TABLE [aa]
 

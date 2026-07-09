@@ -49,7 +49,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	MAX([t1].[PersonID])
 FROM

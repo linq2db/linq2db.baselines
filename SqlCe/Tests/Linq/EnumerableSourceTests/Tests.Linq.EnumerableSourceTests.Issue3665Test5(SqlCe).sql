@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[y].[item]
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 'O' AS [item]) [y]
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

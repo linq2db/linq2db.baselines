@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	SUM([i].[DecimalValue])
 FROM

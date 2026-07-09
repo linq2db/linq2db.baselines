@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

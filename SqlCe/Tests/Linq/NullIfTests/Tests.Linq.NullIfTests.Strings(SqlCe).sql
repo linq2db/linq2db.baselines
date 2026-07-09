@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN [s].[String] = 'abc' THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -20,7 +18,6 @@ WHERE
 	[s].[String] = 'abc' OR [s].[String] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	NOT ([s].[String] = 'abc' OR [s].[String] IS NULL)
 
 -- SqlCe
-
 SELECT
 	CASE
 		WHEN [s].[String] = 'xyz' THEN NULL
@@ -41,7 +37,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -50,7 +45,6 @@ WHERE
 	[s].[String] = 'xyz' OR [s].[String] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -59,7 +53,6 @@ WHERE
 	NOT ([s].[String] = 'xyz' OR [s].[String] IS NULL)
 
 -- SqlCe
-
 SELECT
 	[s].[String]
 FROM
@@ -68,7 +61,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -77,7 +69,6 @@ WHERE
 	[s].[String] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -86,7 +77,6 @@ WHERE
 	[s].[String] IS NOT NULL
 
 -- SqlCe
-
 SELECT
 	CASE
 		WHEN [s].[NullableString] = 'abc' THEN NULL
@@ -98,7 +88,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -107,7 +96,6 @@ WHERE
 	[s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -116,7 +104,6 @@ WHERE
 	NOT ([s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL)
 
 -- SqlCe
-
 SELECT
 	CASE
 		WHEN [s].[NullableString] = 'xyz' THEN NULL
@@ -128,7 +115,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -137,7 +123,6 @@ WHERE
 	[s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -146,7 +131,6 @@ WHERE
 	NOT ([s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL)
 
 -- SqlCe
-
 SELECT
 	[s].[NullableString]
 FROM
@@ -155,7 +139,6 @@ ORDER BY
 	[s].[Int]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -164,7 +147,6 @@ WHERE
 	[s].[NullableString] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

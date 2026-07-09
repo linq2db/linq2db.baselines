@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[t].[Value] = 0
 
 -- SqlCe
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -19,7 +17,6 @@ WHERE
 	[t].[Value] = 0
 
 -- SqlCe
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -29,7 +26,6 @@ WHERE
 	[t].[Value] = 1 OR [t].[Value] IS NULL
 
 -- SqlCe
-
 SELECT
 	[t].[Id],
 	[t].[Value]

@@ -18,7 +18,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[d].[Id],
 	[d].[Name]

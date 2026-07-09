@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Patient].[Diagnosis]
 FROM

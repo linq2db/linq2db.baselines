@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE

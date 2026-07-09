@@ -35,7 +35,6 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],

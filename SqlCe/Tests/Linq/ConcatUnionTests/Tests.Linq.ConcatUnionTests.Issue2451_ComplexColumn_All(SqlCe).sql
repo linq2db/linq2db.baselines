@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName] + '/' + [p].[LastName]
 FROM

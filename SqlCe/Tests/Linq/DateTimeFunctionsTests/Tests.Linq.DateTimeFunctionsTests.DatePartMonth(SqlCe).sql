@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	DatePart(month, [t].[DateTimeValue])
 FROM

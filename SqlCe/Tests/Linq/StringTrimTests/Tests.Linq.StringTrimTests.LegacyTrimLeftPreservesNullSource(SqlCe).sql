@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t].[VarCharColumn]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	DatePart(millisecond, [t].[DateTimeValue])
 FROM

@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- SqlCe
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

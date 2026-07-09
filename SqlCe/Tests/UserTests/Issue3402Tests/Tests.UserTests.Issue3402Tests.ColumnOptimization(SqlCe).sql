@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[ess].[ID]
 FROM

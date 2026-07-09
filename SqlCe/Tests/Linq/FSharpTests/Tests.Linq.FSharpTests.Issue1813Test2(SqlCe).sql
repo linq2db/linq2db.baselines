@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -62,7 +61,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]

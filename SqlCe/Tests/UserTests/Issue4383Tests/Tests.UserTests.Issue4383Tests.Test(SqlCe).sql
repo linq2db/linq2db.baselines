@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id] as [Id_1],
@@ -25,7 +24,6 @@ ORDER BY
 	[m_1].[Id_1]
 
 -- SqlCe
-
 SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID] as [LineId_1],
@@ -40,7 +38,6 @@ ORDER BY
 	[m_1].[LINE_ID]
 
 -- SqlCe
-
 SELECT
 	[t1].[LINE_ID],
 	[t1].[LINE_ID] as [Id_1]

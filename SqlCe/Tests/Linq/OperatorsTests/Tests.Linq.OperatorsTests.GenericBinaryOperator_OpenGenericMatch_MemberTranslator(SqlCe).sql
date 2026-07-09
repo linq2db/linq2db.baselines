@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[IntHolder],

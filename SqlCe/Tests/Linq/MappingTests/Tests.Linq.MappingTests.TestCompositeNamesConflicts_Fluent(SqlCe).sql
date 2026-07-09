@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[child1_name],

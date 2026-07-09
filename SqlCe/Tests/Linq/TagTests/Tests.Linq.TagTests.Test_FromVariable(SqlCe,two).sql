@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 /* two */
 SELECT
 	[x].[FirstName],

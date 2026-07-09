@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	DatePart(weekday, [t].[DateTimeValue])
 FROM

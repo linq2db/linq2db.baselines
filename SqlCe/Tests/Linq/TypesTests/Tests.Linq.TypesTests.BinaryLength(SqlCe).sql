@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlCe
-
 SELECT TOP (1)
 	DataLength([t].[BinaryValue])
 FROM

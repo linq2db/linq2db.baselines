@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[LinqDataTypes]
 SET

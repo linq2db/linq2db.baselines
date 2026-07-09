@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	'Id',
 	[it].[Id],

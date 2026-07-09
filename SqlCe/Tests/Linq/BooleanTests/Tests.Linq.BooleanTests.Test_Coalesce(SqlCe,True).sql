@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -16,7 +15,6 @@ WHERE
 	Coalesce([r].[BooleanN], 1) = 1
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -31,7 +29,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -48,7 +45,6 @@ WHERE
 	Coalesce([r].[BooleanN], 0) = 1
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -63,7 +59,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -83,7 +78,6 @@ WHERE
 	END) = 1
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	MAX([c_1].[ChildID])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

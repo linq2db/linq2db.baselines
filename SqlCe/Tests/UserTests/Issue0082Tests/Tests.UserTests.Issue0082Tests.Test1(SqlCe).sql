@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t3].[ParentID],
 	[t1].[CountResult],
@@ -24,14 +23,12 @@ FROM
 		) [t2]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [t1]
 
 -- SqlCe
-
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],

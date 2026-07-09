@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CAST('First' AS NVarChar(255)),
 	[c_1].[Id]
@@ -13,7 +12,6 @@ FROM
 	[Company] [c_2]
 
 -- SqlCe
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],
@@ -26,7 +24,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

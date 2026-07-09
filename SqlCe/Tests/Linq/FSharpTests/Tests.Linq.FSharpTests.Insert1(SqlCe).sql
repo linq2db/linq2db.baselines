@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 -- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_1].[Id],
 	SUM([g_1].[Id])

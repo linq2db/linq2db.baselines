@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[UpdatedEntities]
 SET
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT TOP (1)
 	[v].[Value1],
 	[v].[Value2],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[Value1],
 	[c_1].[ChildID],

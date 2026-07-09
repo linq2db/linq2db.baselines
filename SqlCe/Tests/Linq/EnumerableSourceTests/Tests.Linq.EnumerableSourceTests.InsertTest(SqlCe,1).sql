@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -18,7 +17,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SqlCe
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

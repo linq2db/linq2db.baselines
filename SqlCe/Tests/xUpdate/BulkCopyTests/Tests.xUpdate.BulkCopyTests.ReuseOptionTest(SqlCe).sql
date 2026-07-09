@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -8,7 +7,6 @@ INSERT INTO [Parent]
 SELECT 111001,NULL
 
 -- SqlCe
-
 INSERT INTO [Child]
 (
 	[ParentID],

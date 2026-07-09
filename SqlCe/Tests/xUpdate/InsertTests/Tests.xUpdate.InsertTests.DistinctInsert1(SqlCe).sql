@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
 	[LinqDataTypes].[ID] > 1000
 
 -- SqlCe
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -26,7 +24,6 @@ FROM
 	) [t2]
 
 -- SqlCe
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

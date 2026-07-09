@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	DatePart(quarter, [t].[DateTimeValue])
 FROM

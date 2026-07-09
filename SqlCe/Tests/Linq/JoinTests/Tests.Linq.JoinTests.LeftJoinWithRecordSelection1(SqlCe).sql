@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id] as [Id_1],

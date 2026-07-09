@@ -1,13 +1,10 @@
 ﻿-- SqlCe
-
 DROP TABLE [TestTrun]
 
 -- SqlCe
-
 DROP TABLE [TestTrunDetail]
 
 -- SqlCe
-
 CREATE TABLE [TestTrunDetail]
 (
 	[ID]         Int NOT NULL,
@@ -18,7 +15,6 @@ CREATE TABLE [TestTrunDetail]
 )
 
 -- SqlCe
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -28,14 +24,11 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlCe
-
 DELETE FROM [TestTrun]
 
 -- SqlCe
-
 DROP TABLE [TestTrun]
 
 -- SqlCe
-
 DROP TABLE [TestTrunDetail]
 
