@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

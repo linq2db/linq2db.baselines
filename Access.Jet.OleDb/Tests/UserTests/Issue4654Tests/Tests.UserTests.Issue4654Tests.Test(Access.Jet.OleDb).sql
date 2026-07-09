@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	CStr([c_1].[Id]),
 	[c_1].[Name]

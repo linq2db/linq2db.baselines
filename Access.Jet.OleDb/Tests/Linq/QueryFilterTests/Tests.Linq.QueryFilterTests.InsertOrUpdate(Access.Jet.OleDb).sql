@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Issue5289Table] [t1]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue5289Table]
 (
 	[Id],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],
@@ -34,7 +31,6 @@ WHERE
 	NOT [r].[Deleted] AND [r].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Issue5289Table] [t1]
 SET
@@ -43,7 +39,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],

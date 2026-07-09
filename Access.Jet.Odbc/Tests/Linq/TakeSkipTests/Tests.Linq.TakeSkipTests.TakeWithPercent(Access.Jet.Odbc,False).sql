@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 50 PERCENT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -10,7 +9,6 @@ FROM
 	[Person] [p]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

@@ -1,12 +1,10 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE
 	[t].[ID] > 1000
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[MoneyValue],
@@ -36,7 +33,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

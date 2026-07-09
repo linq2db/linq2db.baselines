@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[g_1].[TestId],
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[TestId]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

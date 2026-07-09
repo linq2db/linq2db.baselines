@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[c_1].[Name],
 	[o].[Name] as [OrderName_1]
@@ -8,7 +7,6 @@ FROM
 		LEFT JOIN [Order] [o] ON ([c_1].[Id] = [o].[CustomerId])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -16,7 +14,6 @@ FROM
 	[Customer] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

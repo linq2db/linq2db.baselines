@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -28,7 +27,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],

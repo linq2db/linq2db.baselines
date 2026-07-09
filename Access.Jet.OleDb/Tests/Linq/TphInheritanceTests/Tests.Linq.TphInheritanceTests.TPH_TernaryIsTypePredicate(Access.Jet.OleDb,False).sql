@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[Code],
 	[e].[Id],

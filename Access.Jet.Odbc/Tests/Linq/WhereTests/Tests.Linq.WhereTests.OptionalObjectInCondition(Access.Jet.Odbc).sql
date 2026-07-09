@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

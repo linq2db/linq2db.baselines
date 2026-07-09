@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[c_1].[ChildID],
 	[testaLi_asParent].[Value1]

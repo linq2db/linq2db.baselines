@@ -18,7 +18,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] + @n = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

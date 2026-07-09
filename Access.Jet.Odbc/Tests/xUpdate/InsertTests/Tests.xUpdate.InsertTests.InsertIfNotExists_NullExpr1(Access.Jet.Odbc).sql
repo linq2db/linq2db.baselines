@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[t1].[id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [test_insert_or_replace]
 (
 	[id],
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	1
 FROM

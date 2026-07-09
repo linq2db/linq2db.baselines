@@ -25,7 +25,6 @@ WHERE
 	[t].[ID] = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

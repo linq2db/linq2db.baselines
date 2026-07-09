@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Parent] [t]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[t].[ParentID] = 1010
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

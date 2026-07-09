@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[MoneyValue],
@@ -38,7 +36,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t]
 WHERE

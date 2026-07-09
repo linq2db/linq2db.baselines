@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t3].[ParentID],
 	[t3].[ChildID]
@@ -30,7 +29,6 @@ ORDER BY
 	[t3].[Count_1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN [SubEntity] [d] ON ([m_1].[Id] = [d].[MainEntityId])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[x].[Id]
 FROM

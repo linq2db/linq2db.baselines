@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[cross_1].[ParentID_1],
 	[cross_1].[ChildID],

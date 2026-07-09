@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -26,7 +24,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -43,7 +40,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],

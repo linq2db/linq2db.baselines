@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	(
@@ -28,14 +27,12 @@ FROM
 	) [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [o]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[ParentID],
 	[x].[CountResult],

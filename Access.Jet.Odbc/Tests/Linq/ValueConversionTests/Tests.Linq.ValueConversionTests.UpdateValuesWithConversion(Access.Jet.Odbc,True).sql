@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[TableWithConverterValue] [x]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],
@@ -20,7 +18,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[TableWithConverterValue] [x]
 SET
@@ -29,7 +26,6 @@ WHERE
 	[x].[Id] = 2
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],
@@ -41,7 +37,6 @@ WHERE
 	[x].[Id] = 2
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

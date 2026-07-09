@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[p].[ParentID]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[ParentID] = 2
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[p].[ParentID]
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[p].[ParentID] = 2
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[p].[ParentID]
 FROM

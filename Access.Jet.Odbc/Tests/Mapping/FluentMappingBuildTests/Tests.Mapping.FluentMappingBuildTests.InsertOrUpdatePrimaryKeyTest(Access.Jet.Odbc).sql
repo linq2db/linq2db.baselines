@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE [FluentTemp_InsertOrUpdate]
 (
 	[ID]   Int          NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[FluentTemp_InsertOrUpdate] [t1]
 SET
@@ -40,6 +37,5 @@ WHERE
 	[t1].[ID] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [FluentTemp_InsertOrUpdate]
 

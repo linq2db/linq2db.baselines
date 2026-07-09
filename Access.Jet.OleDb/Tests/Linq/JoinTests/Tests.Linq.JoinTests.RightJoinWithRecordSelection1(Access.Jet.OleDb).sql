@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[fact_1].[Id],
 	[t1].[Id] as [Id_1],

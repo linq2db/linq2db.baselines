@@ -169,7 +169,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Parent] [x]
 SET
@@ -178,7 +177,6 @@ WHERE
 	[x].[ParentID] > 1000
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Value1]
 FROM

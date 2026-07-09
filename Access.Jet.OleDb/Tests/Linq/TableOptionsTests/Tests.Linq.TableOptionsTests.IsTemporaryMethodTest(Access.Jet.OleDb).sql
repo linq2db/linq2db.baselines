@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [TestTable]
 
 -- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [TestTable]
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Value] as [Value_1],
@@ -25,6 +22,5 @@ FROM
 	[TestTable] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [TestTable]
 

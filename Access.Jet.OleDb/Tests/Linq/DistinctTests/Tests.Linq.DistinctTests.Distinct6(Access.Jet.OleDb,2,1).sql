@@ -11,7 +11,6 @@ FROM
 	[Parent] [p]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT CStr('12345')
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT NULL
 
 -- Access.Jet.Odbc AccessODBC

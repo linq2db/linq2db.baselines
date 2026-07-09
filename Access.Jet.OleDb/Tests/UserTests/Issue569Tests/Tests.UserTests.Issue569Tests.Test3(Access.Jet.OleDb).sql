@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[PersonID],
 	[pt].[PersonID] as [PersonID_1],

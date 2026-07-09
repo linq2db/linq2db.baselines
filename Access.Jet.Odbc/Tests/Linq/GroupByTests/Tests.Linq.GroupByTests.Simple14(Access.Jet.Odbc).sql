@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1]
@@ -18,7 +17,6 @@ FROM
 		) [d_1] ON ([m_1].[ParentID] = [d_1].[Key_1])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID]
 FROM

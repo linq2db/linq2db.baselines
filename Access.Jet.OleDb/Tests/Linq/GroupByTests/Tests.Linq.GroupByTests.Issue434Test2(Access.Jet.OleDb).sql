@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID] as [PersonID_1],
@@ -11,7 +10,6 @@ WHERE
 	LCase([m_1].[FirstName]) LIKE '%test%'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[e].[PersonID],
 	[e].[FirstName],

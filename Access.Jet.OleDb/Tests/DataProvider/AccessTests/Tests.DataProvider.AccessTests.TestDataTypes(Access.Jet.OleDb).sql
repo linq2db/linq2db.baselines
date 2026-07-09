@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT bitDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -21,7 +20,6 @@ SET     @p = False
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT bitDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -43,7 +41,6 @@ SET     @p = True
 SELECT ID FROM [AllTypes] WHERE bitDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT smallintDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -65,7 +62,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT smallintDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -87,7 +83,6 @@ SET     @p = 25555
 SELECT ID FROM [AllTypes] WHERE smallintDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT decimalDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -109,7 +104,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT decimalDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -131,7 +125,6 @@ SET     @p = 2222222
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT intDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -153,7 +146,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT intDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -175,7 +167,6 @@ SET     @p = 7777777
 SELECT ID FROM [AllTypes] WHERE intDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT tinyintDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -197,7 +188,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT tinyintDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -219,7 +209,6 @@ SET     @p = 100
 SELECT ID FROM [AllTypes] WHERE tinyintDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT moneyDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -241,7 +230,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NOT NULL AND moneyDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT moneyDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -263,7 +251,6 @@ SET     @p = 100000
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT floatDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -285,7 +272,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT floatDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -307,7 +293,6 @@ SET     @p = 20.309999999999999
 SELECT ID FROM [AllTypes] WHERE floatDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT realDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -329,7 +314,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND realDataType IS NULL OR @p IS NOT NULL AND realDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT realDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -351,7 +335,6 @@ SET     @p = 16.2000008
 SELECT ID FROM [AllTypes] WHERE realDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT datetimeDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -373,7 +356,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT datetimeDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -395,7 +377,6 @@ SET     @p = #2012-12-12 12:12:12#
 SELECT ID FROM [AllTypes] WHERE datetimeDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT charDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -417,7 +398,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT charDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -439,7 +419,6 @@ SET     @p = '1'
 SELECT ID FROM [AllTypes] WHERE charDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT varcharDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -461,7 +440,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT varcharDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -483,7 +461,6 @@ SET     @p = '234'
 SELECT ID FROM [AllTypes] WHERE varcharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT textDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -505,7 +482,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT textDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -527,7 +503,6 @@ SET     @p = '567'
 SELECT ID FROM [AllTypes] WHERE textDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT ncharDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -549,7 +524,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ncharDataType IS NULL OR @p IS NOT NULL AND ncharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT ncharDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -571,7 +545,6 @@ SET     @p = '23233'
 SELECT ID FROM [AllTypes] WHERE ncharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT nvarcharDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -593,7 +566,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND nvarcharDataType IS NULL OR @p IS NOT NULL AND nvarcharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT nvarcharDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -615,7 +587,6 @@ SET     @p = '3323'
 SELECT ID FROM [AllTypes] WHERE nvarcharDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT ntextDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -637,7 +608,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND ntextDataType IS NULL OR @p IS NOT NULL AND ntextDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT ntextDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -659,7 +629,6 @@ SET     @p = '111'
 SELECT ID FROM [AllTypes] WHERE ntextDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT binaryDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -681,7 +650,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT binaryDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -703,7 +671,6 @@ SET     @p = 0x01020304000000000000
 SELECT ID FROM [AllTypes] WHERE binaryDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT varbinaryDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -725,7 +692,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT varbinaryDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -747,7 +713,6 @@ SET     @p = 0x01020305
 SELECT ID FROM [AllTypes] WHERE varbinaryDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT imageDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -769,7 +734,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND imageDataType IS NULL OR @p IS NOT NULL AND imageDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT imageDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -791,7 +755,6 @@ SET     @p = 0x03040506
 SELECT ID FROM [AllTypes] WHERE imageDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT oleobjectDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -813,7 +776,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND oleobjectDataType IS NULL OR @p IS NOT NULL AND oleobjectDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT oleobjectDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb
@@ -829,7 +791,6 @@ SET     @p = 0x05060708
 SELECT ID FROM [AllTypes] WHERE oleobjectDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 1
 
 -- Access.Jet.OleDb AccessOleDb
@@ -851,7 +812,6 @@ SET     @p = NULL
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND uniqueidentifierDataType IS NULL OR @p IS NOT NULL AND uniqueidentifierDataType = @p
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT uniqueidentifierDataType FROM [AllTypes] WHERE ID = 2
 
 -- Access.Jet.OleDb AccessOleDb

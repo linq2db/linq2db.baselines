@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Parent] [t]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

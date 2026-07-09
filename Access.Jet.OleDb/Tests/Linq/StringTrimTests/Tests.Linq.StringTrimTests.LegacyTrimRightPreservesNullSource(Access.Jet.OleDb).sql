@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t].[VarCharColumn]
 FROM

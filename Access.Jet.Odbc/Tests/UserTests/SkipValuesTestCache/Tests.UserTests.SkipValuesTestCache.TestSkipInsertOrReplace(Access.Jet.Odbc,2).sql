@@ -36,7 +36,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -63,7 +62,6 @@ WHERE
 	[t1].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],

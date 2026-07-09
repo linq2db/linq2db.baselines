@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -15,7 +14,6 @@ WHERE
 	[s].[FirstName] <> ''
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

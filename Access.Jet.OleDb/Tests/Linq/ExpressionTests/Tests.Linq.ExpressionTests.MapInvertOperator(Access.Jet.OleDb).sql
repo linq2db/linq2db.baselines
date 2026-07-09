@@ -10,7 +10,6 @@ SET
 	[t1].[Value] = ([t1].[Value] BOR @addMask) BAND (-1 - @removeMask)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

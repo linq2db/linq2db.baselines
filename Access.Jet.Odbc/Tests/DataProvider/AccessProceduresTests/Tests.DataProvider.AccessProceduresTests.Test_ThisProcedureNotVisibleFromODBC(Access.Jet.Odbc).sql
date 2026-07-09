@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,11 +7,9 @@ WHERE
 	[t1].[char20DataType] = 'issue792'
 
 -- Access.Jet.Odbc AccessODBC
-
 { CALL ThisProcedureNotVisibleFromODBC() }
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

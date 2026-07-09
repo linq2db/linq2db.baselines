@@ -10,7 +10,6 @@ WHERE
 	[t1].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],
@@ -73,14 +72,12 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],

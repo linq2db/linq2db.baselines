@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [Issue681Table2]
 
 -- Access.Jet.OleDb AccessOleDb
-
 CREATE TABLE [Database\TestData].[Issue681Table2]
 (
 	[ID]    Int NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE [Database\TestData].[Issue681Table2]
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 DROP TABLE [Issue681Table2]
 

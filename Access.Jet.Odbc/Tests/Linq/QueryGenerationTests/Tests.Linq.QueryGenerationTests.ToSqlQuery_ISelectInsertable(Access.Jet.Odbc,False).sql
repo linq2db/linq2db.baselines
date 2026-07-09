@@ -25,7 +25,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Child] [c_1]
 WHERE

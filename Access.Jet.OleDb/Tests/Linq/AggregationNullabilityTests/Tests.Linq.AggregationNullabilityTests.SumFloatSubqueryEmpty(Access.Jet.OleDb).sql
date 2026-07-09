@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	1000 - IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
 FROM
