@@ -61,8 +61,6 @@ WHERE
 
 
 
-
-
 -- SqlServer.2022
 
 SELECT
