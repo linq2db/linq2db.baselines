@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = N'Limonadovy'
 
 -- SqlServer.2005
-
 UPDATE
 	[Person]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[Person].[LastName] = N'Limonadovy'
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

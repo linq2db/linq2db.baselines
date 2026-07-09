@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -54,7 +51,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -62,7 +58,6 @@ WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

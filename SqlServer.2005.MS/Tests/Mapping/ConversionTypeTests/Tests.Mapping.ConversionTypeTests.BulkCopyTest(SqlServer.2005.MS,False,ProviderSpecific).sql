@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -8,7 +7,6 @@ INSERT INTO [TrimTestTable]
 SELECT 1,N'***OOO***'
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -18,7 +16,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -107,7 +107,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

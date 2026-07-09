@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT TOP (1)
 	[t1].[ParentID],
 	[t1].[ChildID],

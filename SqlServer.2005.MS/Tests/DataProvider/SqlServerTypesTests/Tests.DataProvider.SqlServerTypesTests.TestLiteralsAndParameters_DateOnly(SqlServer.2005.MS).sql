@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -20,7 +19,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -41,7 +39,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -62,7 +59,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -83,7 +79,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -104,7 +99,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -125,7 +119,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM
@@ -146,7 +139,6 @@ FROM
 			SELECT @value AS [Value]) [y]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Value]
 FROM

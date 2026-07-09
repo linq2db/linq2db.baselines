@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[x].[PersonID],
 	[x].[FirstName]
@@ -14,7 +12,6 @@ FROM
 	[Person] [x]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[x].[PersonID],
 	[person_1].[PersonID],

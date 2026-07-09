@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -22,7 +21,6 @@ ORDER BY
 	[d].[UserId]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[i].[Id],
 	(
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id]
 FROM
 	[Issue4458Item] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ItemId],
 	[t1].[QuantityAvailable],
@@ -64,7 +60,6 @@ FROM
 	[WarehouseStock] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ItemId],
 	[t1].[UserId],

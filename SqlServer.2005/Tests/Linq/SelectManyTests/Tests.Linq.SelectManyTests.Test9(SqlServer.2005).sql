@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]

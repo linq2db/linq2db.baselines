@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	MAX(CASE
 		WHEN [g_1].[ParentID] < 3 THEN [g_1].[ChildID]

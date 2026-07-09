@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[g_2].[Min_2]
 FROM

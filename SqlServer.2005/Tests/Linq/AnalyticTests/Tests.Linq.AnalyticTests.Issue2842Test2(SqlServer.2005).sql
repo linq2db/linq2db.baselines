@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[x].[FirstName],
 	RANK() OVER (ORDER BY CASE

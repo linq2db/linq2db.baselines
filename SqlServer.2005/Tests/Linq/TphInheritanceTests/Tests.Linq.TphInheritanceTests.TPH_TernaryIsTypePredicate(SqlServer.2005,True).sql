@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[e].[Code],
 	[e].[Id],

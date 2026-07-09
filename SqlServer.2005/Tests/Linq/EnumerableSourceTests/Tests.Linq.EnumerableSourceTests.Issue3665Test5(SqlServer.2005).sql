@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[y].[item]
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT N'O') [y]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

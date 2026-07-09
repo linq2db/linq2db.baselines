@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	MAX([t1].[ParentID])
 FROM

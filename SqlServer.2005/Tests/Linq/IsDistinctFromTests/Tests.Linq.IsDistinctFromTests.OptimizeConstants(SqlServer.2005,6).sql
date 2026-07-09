@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	COUNT(*)
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

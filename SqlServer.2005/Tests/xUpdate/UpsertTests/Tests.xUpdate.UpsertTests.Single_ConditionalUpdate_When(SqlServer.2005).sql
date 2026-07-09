@@ -38,7 +38,6 @@ WHERE
 	[UpsertTest].[Id] = @Id AND @Version > [UpsertTest].[Version]
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -92,7 +91,6 @@ WHERE
 	[UpsertTest].[Id] = @Id AND @Version > [UpsertTest].[Version]
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

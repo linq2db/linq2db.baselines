@@ -40,7 +40,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST(N'2018-01-02' AS DateTime)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

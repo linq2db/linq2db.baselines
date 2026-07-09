@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
 	(
@@ -10,7 +9,6 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -19,7 +17,6 @@ INSERT INTO [tempdb]..[#temp_table1]
 SELECT 1,2
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
 	(
@@ -30,7 +27,6 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [tempdb]..[#temp_table2]
 (
 	[ID],
@@ -43,7 +39,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -51,7 +46,6 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -59,7 +53,6 @@ FROM
 	[tempdb]..[#temp_table2] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -85,7 +78,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [tempdb]..[#temp_table1]
 (
 	[ID],
@@ -94,20 +86,16 @@ INSERT INTO [tempdb]..[#temp_table1]
 SELECT 4,5
 
 -- SqlServer.2005.MS SqlServer.2005
-
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#temp_table2]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#temp_table1]
 

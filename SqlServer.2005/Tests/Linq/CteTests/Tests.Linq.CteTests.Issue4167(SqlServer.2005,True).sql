@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 WITH [CTE_1] ([EnumValue])
 AS
 (

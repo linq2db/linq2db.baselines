@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

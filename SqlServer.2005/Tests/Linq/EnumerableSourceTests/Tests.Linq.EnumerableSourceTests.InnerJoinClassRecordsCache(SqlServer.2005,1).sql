@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -14,7 +13,6 @@ FROM
 			SELECT 3) [n] ON [p].[PersonID] = [n].[ID]
 
 -- SqlServer.2005
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

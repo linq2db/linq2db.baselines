@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- SqlServer.2005
-
 DROP TABLE [Table]
 

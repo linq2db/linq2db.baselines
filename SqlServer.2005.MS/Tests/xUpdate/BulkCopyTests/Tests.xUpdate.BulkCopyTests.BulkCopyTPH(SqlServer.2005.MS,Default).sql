@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [TPHTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ SELECT 2,2,NULL,N'Str2',NULL,NULL UNION ALL
 SELECT 3,3,NULL,NULL,N'Str3','Y'
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -28,7 +26,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -42,7 +39,6 @@ WHERE
 	[x].[Discriminator] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -56,7 +52,6 @@ WHERE
 	[x].[Discriminator] = 2
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -70,7 +65,6 @@ WHERE
 	[x].[Discriminator] = 3
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -84,7 +78,6 @@ WHERE
 	[x].[Value1] = N'Str1'
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
@@ -98,7 +91,6 @@ WHERE
 	[x].[Value2] = N'Str2'
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[x].[Discriminator],
 	[x].[Id],
