@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	person_1.PersonID,
 	patient_1.PersonID

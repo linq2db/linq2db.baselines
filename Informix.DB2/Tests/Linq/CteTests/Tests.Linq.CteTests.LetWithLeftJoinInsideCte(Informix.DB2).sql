@@ -25,7 +25,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 WITH CTE_1 (S1)
 AS
 (

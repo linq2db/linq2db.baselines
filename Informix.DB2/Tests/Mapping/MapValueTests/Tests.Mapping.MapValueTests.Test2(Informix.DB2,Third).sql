@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	CASE
 		WHEN t.EnumValue = 'F' THEN 'First'

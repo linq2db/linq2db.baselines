@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -17,7 +16,6 @@ FROM
 		LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t.ParentID,
 	t.Value1

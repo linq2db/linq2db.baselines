@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -13,7 +12,6 @@ FROM
 		LEFT JOIN EntityMD a_ObjectD ON d.FKD = a_ObjectD.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.FK,

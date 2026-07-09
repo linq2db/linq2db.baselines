@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO TableWithIdentity
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1."Value"

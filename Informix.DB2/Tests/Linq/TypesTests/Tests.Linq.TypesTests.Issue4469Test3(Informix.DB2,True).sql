@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 2
 	v."Integer"::Float / 33,
 	v."Decimal"::Float / 33,

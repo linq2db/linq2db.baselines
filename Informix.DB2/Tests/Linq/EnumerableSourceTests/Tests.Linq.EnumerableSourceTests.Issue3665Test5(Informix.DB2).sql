@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	y."item"
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 'O'::NChar(1) FROM table(set{1})) y
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

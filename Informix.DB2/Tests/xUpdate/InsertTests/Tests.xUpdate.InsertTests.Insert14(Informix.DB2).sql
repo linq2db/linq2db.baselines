@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE
 	Person.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 INSERT INTO Person
 (
 	FirstName,
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +34,6 @@ WHERE
 	p.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

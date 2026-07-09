@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	SUM(p.Value1) OVER (ORDER BY p.Value1)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Name
@@ -9,7 +8,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	k_1."item",
 	d.Id,

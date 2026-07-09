@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO ReviewIndexes Target
 USING (
 	SELECT

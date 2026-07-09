@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	Nvl(gr.Value1, c_1.ChildID)
 FROM

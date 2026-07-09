@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.Id
 FROM
 	ConcatTestEntity e
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Str1,

@@ -13,7 +13,6 @@ WHERE
 	e.GuidValue = @GuidNonReadonly AND e.GuidNullableValue = @GuidNonReadonly
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

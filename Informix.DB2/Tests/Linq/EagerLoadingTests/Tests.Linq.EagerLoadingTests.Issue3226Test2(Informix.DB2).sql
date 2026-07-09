@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.Id,
 	x.Text

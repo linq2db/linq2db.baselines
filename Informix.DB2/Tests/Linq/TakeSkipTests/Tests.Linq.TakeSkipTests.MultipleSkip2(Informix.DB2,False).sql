@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT SKIP 3
 	t1.Id,
 	t1."Value"
@@ -9,7 +8,6 @@ ORDER BY
 	t1."Value"
 
 -- Informix.DB2 Informix
-
 SELECT SKIP 4
 	t1.Id,
 	t1."Value"

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(To_Char(e.Num) || '-' || Nvl(e.StrReq, '')) = '100-Programmer'
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Str1,

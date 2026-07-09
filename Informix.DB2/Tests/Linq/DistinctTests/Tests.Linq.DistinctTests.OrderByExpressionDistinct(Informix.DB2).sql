@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x_1.MiddleName,
 	x_1.LastName
@@ -16,7 +15,6 @@ ORDER BY
 	Nvl(x_1.LastName, '-1')
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

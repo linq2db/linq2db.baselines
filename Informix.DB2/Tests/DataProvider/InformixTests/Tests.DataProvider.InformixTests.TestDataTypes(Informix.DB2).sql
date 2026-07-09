@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT bigintDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT bigintDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -25,11 +23,9 @@ SET     @p = 1000000
 SELECT ID FROM AllTypes WHERE bigintDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT int8DataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT int8DataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -51,11 +47,9 @@ SET     @p = 1000001
 SELECT ID FROM AllTypes WHERE int8DataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT intDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT intDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -77,11 +71,9 @@ SET     @p = 7777777
 SELECT ID FROM AllTypes WHERE intDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT smallintDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT smallintDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -103,11 +95,9 @@ SET     @p = 100
 SELECT ID FROM AllTypes WHERE smallintDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT decimalDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT decimalDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -129,11 +119,9 @@ SET     @p = 9999999
 SELECT ID FROM AllTypes WHERE decimalDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT moneyDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT moneyDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -155,11 +143,9 @@ SET     @p = 8888888.00
 SELECT ID FROM AllTypes WHERE moneyDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT realDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT realDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -181,11 +167,9 @@ SET     @p = 20.3099995
 SELECT ID FROM AllTypes WHERE realDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT floatDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT floatDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -207,11 +191,9 @@ SET     @p = 16.199999999999999
 SELECT ID FROM AllTypes WHERE floatDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT boolDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT boolDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -233,11 +215,9 @@ SET     @p = 't'
 SELECT ID FROM AllTypes WHERE boolDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT charDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT charDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -259,11 +239,9 @@ SET     @p = '1'
 SELECT ID FROM AllTypes WHERE charDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT varcharDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT varcharDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -285,11 +263,9 @@ SET     @p = '234'
 SELECT ID FROM AllTypes WHERE varcharDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT ncharDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT ncharDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -311,11 +287,9 @@ SET     @p = '55645'
 SELECT ID FROM AllTypes WHERE ncharDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT nvarcharDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT nvarcharDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -337,11 +311,9 @@ SET     @p = '6687'
 SELECT ID FROM AllTypes WHERE nvarcharDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT lvarcharDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT lvarcharDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -363,11 +335,9 @@ SET     @p = 'AAAAA'
 SELECT ID FROM AllTypes WHERE lvarcharDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT dateDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT dateDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -389,11 +359,9 @@ SET     @p = TO_DATE('2012-12-12', '%Y-%m-%d')
 SELECT ID FROM AllTypes WHERE dateDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT datetimeDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT datetimeDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
@@ -415,34 +383,26 @@ SET     @p = TO_DATE('2012-12-12 12:12:12', '%Y-%m-%d %H:%M:%S')
 SELECT ID FROM AllTypes WHERE datetimeDataType = ?
 
 -- Informix.DB2 Informix
-
 SELECT textDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT textDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
-
 SELECT textDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT textDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
-
 SELECT byteDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT byteDataType FROM AllTypes WHERE ID = 2
 
 -- Informix.DB2 Informix
-
 SELECT byteDataType FROM AllTypes WHERE ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT byteDataType FROM AllTypes WHERE ID = 2
 

@@ -10,7 +10,6 @@ WHERE
 	x.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	x.Id,
 	x.NoConversion,
@@ -33,7 +32,6 @@ WHERE
 	x.Id = 2
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	x.Id,
 	x.NoConversion,

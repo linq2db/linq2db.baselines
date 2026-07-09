@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO NestedKeyTarget Target
 USING (
 	SELECT 1::Int AS Key_Value, 'first-updated'::NVarChar(50) AS Code FROM table(set{1})) Source
@@ -49,7 +48,6 @@ SET
 	Code = Source.Code
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Code,
 	t1.Id

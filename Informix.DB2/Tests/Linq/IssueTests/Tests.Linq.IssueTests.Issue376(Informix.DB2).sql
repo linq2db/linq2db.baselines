@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.PersonID,
 	a_Doctor.PersonID,

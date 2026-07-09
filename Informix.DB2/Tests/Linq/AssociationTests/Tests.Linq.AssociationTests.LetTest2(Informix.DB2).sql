@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t.ParentID,
 	(
@@ -14,7 +13,6 @@ FROM
 	Parent t
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.ParentID,
 	(

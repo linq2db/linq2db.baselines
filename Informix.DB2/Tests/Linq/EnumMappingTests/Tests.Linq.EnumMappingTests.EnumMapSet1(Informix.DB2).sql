@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 -- Informix.DB2 Informix
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -32,7 +31,6 @@ WHERE
 	r.ID = 101 AND r.BigIntValue = 11
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	r.BigIntValue
 FROM

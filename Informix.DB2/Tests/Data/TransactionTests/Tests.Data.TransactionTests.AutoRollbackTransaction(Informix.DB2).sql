@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 UPDATE
 	Parent t
 SET
@@ -25,7 +24,6 @@ WHERE
 	t.ParentID = 1010
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t.ParentID,
 	t.Value1

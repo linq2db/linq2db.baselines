@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

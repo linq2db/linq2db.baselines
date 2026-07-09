@@ -45,7 +45,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.DeviceType,
 	t1.Id,
@@ -92,7 +91,6 @@ WHERE
 	t1.Id = @Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.DeviceType,
 	t1.Id,

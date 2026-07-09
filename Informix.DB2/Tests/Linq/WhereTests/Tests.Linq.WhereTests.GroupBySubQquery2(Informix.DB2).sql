@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.ParentID,
 	x.ChildID
@@ -23,7 +22,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.ParentID,
 	x.ChildID

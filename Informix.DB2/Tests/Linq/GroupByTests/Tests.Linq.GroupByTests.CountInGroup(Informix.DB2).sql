@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t.GroupId,
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	t.GroupId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GroupId,

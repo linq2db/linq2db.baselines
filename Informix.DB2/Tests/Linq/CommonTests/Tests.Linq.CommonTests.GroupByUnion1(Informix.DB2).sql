@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	tt.Key_1,
 	SUM(tt.ChildID)

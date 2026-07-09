@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN Message d ON m_1.Id = d.TopicId
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	x.Id,
 	x.Title,

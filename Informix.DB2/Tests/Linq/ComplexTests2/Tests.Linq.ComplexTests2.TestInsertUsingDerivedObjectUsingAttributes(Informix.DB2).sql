@@ -24,11 +24,9 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t1.FirstName,
 	t1.PersonID,
@@ -63,7 +61,6 @@ WHERE
 	t1.PersonID = @ID
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t1.FirstName,
 	t1.PersonID,

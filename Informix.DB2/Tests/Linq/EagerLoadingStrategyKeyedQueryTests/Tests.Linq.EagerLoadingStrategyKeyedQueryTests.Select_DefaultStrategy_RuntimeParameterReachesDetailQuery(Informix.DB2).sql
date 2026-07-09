@@ -18,7 +18,6 @@ ORDER BY
 	m_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	d.Id,
 	d.Name

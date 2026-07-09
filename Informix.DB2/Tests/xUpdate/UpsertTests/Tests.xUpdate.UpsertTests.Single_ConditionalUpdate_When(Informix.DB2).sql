@@ -38,7 +38,6 @@ WHERE
 	t1.Id = @Id::Int AND @Version::Int > t1.Version
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.Name,
@@ -92,7 +91,6 @@ WHERE
 	t1.Id = @Id::Int AND @Version::Int > t1.Version
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.Name,

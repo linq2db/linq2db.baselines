@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s.Enum IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

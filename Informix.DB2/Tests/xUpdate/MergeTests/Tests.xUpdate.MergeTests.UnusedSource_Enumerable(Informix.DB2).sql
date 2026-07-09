@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO UnusedSourceTable Target
 USING (
 	SELECT 1 FROM table(set{1})) Source
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r."Value"

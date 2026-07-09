@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	SUM(CASE
 		WHEN t.ParentID IN (3) THEN t.ChildID

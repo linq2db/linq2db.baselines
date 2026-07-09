@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO UpsertTest Target
 USING (
 	SELECT 1::Int AS Id, 'inc'::NVarChar(255) AS Name, 3::Int AS Version_1, NULL::datetime year to fraction AS CreatedAt, NULL::NVarChar(255) AS CreatedBy, NULL::datetime year to fraction AS UpdatedAt, NULL::NVarChar(255) AS UpdatedBy FROM table(set{1})
@@ -49,7 +48,6 @@ SET
 	UpdatedBy = Source.UpdatedBy
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Name,

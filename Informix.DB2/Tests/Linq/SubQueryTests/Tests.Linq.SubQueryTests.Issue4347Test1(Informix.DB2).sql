@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -27,7 +26,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.Id,
 	x.ValidOn

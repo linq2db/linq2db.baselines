@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	NVL(t1.ID, NULL),
 	NVL(t1.MoneyValue, NULL),

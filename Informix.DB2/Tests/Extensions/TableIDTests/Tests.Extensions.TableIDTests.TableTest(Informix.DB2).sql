@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	'*** p ***' || '4',
 	'*** p ***',

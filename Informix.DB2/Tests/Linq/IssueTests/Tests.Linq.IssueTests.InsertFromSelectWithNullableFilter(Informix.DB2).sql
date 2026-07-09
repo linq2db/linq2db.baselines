@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO InsertIssueTest
 (
 	Pk,
@@ -47,7 +46,6 @@ FROM
 	) t2
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Pk,
 	t1.ID,

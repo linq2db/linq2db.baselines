@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge2
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT 3::Int AS Id, NULL::Int AS Field1, 3::Int AS Field2, NULL::Int AS Field4 FROM table(set{1})
@@ -244,7 +241,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,

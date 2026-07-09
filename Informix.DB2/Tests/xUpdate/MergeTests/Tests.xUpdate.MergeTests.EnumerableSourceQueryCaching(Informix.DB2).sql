@@ -1,10 +1,8 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
 -- Informix.DB2 Informix
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT 0::Int AS Id, 1::Int AS Field1, 2::Int AS Field2, 4::Int AS Field4 FROM table(set{1})) Source
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -47,12 +44,10 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
 -- Informix.DB2 Informix
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT 10::Int AS Id, 11::Int AS Field1, 12::Int AS Field2, 14::Int AS Field4 FROM table(set{1})) Source
@@ -81,7 +76,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -95,12 +89,10 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
 -- Informix.DB2 Informix
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT 20::Int AS Id, 21::Int AS Field1, 22::Int AS Field2, 24::Int AS Field4 FROM table(set{1})
@@ -131,7 +123,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,

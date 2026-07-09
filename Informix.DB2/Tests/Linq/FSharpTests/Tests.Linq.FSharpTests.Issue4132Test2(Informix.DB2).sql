@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Issue4132Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 UPDATE
 	Issue4132Table row_1
 SET
@@ -23,7 +21,6 @@ WHERE
 	row_1."Number" = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r."Number",

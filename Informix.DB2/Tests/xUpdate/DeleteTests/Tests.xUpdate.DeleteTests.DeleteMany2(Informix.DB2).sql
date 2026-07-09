@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO Parent
 (
 	ParentID
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Child
 (
 	ParentID,
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -53,7 +49,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -68,7 +63,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Child
 (
 	ParentID,
@@ -81,7 +75,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -96,7 +89,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -111,7 +103,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -126,7 +117,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GrandChild
 WHERE
@@ -145,7 +135,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
@@ -161,21 +150,18 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GrandChild
 WHERE
 	GrandChild.ParentID >= 1000
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID >= 1000
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE

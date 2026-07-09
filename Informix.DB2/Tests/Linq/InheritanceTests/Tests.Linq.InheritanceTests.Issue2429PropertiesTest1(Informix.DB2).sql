@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	x.Id,
 	x."Value"
@@ -9,7 +8,6 @@ WHERE
 	x.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	x.Id,
 	x."Value"

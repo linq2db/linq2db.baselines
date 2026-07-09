@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO PKOnlyTable Target
 USING (
 	SELECT 1::Int AS ID FROM table(set{1})
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO ReviewIndexes Target
 USING (
 	SELECT 1::Int AS Id, '2'::NVarChar(255) AS Value_1 FROM table(set{1})) Source

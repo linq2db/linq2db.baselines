@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 INSERT INTO ValueItem
 (
 	"Value"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	row_1."Value"
 FROM
