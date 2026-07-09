@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -8,7 +7,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -21,7 +19,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -30,7 +27,6 @@ WHERE
 	"x"."Id" = 2
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -43,7 +39,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

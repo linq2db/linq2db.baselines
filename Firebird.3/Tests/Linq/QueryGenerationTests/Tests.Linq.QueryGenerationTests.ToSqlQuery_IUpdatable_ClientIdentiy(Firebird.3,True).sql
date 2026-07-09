@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"TableWithIdentity" "t1"
 SET
@@ -20,7 +19,6 @@ SET
 	"Value" = 123
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

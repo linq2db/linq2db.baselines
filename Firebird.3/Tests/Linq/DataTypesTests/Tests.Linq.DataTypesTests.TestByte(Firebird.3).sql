@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = 255 AND "r"."ColumnNullable" = 2
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"ByteTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"ByteTable" "t1"
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "ByteTable"
 (
 	"Id",
@@ -99,7 +94,6 @@ SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,255,2 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -110,12 +104,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"ByteTable" "t1"
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "ByteTable"
 (
 	"Id",
@@ -126,7 +118,6 @@ SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,255,2 FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

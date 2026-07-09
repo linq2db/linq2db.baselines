@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	CASE
 		WHEN "t2"."ParentID" IS NULL THEN 0

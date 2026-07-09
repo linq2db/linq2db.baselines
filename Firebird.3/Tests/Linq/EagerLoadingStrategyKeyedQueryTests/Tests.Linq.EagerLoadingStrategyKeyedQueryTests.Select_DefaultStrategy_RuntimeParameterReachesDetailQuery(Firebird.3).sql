@@ -18,7 +18,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"d"."Id",
 	"d"."Name"

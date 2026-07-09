@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t2"."month_1",
 	"t2"."year_1",

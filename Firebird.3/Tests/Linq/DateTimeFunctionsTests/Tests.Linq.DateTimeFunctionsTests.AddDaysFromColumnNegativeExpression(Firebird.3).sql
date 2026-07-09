@@ -40,7 +40,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	"t".ID = 5000 AND DateAdd(Day, "t"."SmallIntValue", "t"."DateTimeValue") < CAST('2018-01-02' AS TimeStamp)
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

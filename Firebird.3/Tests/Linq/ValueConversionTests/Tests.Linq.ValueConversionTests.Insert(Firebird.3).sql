@@ -32,7 +32,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -171,7 +168,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "DateOnlyTable"
 (
 	"Date"
@@ -7,7 +6,6 @@ INSERT INTO "DateOnlyTable"
 SELECT DATE '2021-01-01' FROM rdb$database
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Date"
 FROM

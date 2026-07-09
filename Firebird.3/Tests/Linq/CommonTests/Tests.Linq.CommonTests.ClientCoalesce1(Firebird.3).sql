@@ -10,7 +10,6 @@ WHERE
 	Coalesce("x"."Value1", CAST(@Value1 AS Int)) > 10
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."Value1"
 FROM

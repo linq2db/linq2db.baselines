@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 /* query 1
 query 2 */
 SELECT

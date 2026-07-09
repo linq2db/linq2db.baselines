@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t_1"."FinalCustomerId",
 	"t_1"."IsActive",

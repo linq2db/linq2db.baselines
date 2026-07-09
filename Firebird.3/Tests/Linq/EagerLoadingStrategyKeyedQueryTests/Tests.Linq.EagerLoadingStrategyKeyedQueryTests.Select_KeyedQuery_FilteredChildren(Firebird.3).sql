@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"c_1"."Id"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"c_1"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

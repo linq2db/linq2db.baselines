@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -221,7 +218,6 @@ FROM
 	"TestMerge2" "t1"
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT 3 AS "Key_1", CAST(NULL AS Int) AS "Field01", 3 AS "Field02", CAST(NULL AS Int) AS "Field03", CAST(NULL AS Int) AS "Field04", CAST(NULL AS Int) AS "Field05" FROM rdb$database
@@ -251,7 +247,6 @@ SET
 	"Field5" = "Source"."Field05"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

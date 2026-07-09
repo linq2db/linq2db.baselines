@@ -8,7 +8,6 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE

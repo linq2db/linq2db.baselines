@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 MERGE INTO "PKOnlyTable" "Target"
 USING (
 	SELECT 1 AS ID FROM rdb$database
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".ID
 FROM

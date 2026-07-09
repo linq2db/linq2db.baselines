@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"a_Parent_1"."ParentID",
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	"a_Parent_1"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

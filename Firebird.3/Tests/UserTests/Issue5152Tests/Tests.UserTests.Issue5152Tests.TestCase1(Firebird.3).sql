@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 UPDATE
 	"SampleClass" "sample_1"
 SET

@@ -36,7 +36,6 @@ WHERE
 	"t"."Data" = @p
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r".ID,
 	"r"."Data"

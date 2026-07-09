@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	COUNT("p"."PersonID")
 FROM
@@ -16,7 +15,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT("p"."PersonID")
 FROM

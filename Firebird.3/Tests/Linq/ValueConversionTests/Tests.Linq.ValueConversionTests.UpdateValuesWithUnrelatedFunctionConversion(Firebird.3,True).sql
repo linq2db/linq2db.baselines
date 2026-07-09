@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 UPDATE
 	"TableWithConverterValue" "x"
 SET
@@ -11,7 +10,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

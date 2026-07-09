@@ -1,9 +1,7 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "Test3697" DEFAULT VALUES
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"Test3697Item"
 SET
@@ -22,7 +20,6 @@ RETURNING
 	NEW."Id"
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"Test3697Item"
 SET

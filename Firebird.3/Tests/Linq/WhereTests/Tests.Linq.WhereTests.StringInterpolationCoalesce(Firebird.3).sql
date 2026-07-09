@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."LastName",
@@ -21,7 +20,6 @@ ORDER BY
 	"t1"."LastName"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

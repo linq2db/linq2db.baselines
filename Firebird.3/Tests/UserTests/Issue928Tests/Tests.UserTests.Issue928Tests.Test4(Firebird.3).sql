@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Key_1",
 	"t1"."Sum_1",

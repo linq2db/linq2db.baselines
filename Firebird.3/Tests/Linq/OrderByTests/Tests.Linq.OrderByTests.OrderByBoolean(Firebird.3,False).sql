@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -12,7 +11,6 @@ ORDER BY
 	CHAR_LENGTH("t1"."FirstName") > 4
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

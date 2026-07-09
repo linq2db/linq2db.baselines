@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	'*** p ***' || '4',
 	'*** p ***',

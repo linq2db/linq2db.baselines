@@ -18,7 +18,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" + CAST(@n AS Int) = "d"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

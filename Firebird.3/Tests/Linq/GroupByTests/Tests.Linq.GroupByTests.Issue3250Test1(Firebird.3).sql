@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"g_2"."Message" || ' items have not been processed, e.g. #' || Coalesce("g_2"."Message_1", '') || '.'
 FROM

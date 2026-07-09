@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

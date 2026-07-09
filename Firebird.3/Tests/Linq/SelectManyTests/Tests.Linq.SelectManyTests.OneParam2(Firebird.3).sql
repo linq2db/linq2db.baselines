@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"a_Children"."ParentID",
 	"a_Children"."ChildID"

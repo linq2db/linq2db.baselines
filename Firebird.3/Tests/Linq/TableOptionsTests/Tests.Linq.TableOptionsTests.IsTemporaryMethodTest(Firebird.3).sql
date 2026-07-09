@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TestTable"';
 END
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
 		EXECUTE STATEMENT '
@@ -22,7 +20,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Value",
@@ -34,7 +31,6 @@ FROM
 	"TestTable" "t1"
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TestTable"';

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"g_2"."ChildId",
 	"g_2"."ParentId",
@@ -19,7 +18,6 @@ GROUP BY
 	"g_2"."ParentId"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

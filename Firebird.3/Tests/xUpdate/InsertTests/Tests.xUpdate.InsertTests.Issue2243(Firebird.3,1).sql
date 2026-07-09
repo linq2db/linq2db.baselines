@@ -33,7 +33,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."id",
 	"t1"."name",
@@ -78,7 +77,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."id",
 	"t1"."name",

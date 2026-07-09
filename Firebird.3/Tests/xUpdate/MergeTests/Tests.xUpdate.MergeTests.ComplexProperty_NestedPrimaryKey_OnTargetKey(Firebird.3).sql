@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "NestedKeyTarget" "Target"
 USING (
 	SELECT 1 AS "Key_Value", CAST('first-updated' AS VARCHAR(13)) AS "Code" FROM rdb$database) "Source"
@@ -49,7 +48,6 @@ SET
 	"Code" = "Source"."Code"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Code",
 	"t1"."Id"
