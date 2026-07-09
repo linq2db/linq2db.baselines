@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -21,7 +19,6 @@ WHERE
 	p.ParentID = 1001 AND p.Value1 = 1
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Parent
 UPDATE
@@ -30,7 +27,6 @@ WHERE
 	ParentID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -39,7 +35,6 @@ WHERE
 	p.ParentID = 1001 AND p.Value1 = 2
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Parent
 UPDATE
@@ -48,7 +43,6 @@ WHERE
 	ParentID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

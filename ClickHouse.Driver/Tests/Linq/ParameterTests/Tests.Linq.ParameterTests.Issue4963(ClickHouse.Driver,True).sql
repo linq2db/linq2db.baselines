@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Issue4963Table
 UPDATE
@@ -7,7 +6,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field

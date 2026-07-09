@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	CORR(p.Value1, c_1.ChildID) OVER (PARTITION BY p.Value1, c_1.ChildID),
 	CORR(p.Value1, c_1.ChildID) OVER (),
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	CORR(c_1.ParentID, c_1.ChildID)
 FROM
@@ -20,7 +18,6 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	CORR(t1.ParentID, t1.ChildID)
 FROM

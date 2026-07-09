@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	trimLeft(concat('   ', Coalesce(t.VarCharColumn, '')))
 FROM
 	StringTrimTable t
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.CharColumn,

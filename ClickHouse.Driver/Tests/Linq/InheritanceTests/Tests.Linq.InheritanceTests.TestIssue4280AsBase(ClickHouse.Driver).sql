@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Issue4280
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Issue4280
 (
 	Id,
@@ -31,7 +29,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.DeviceType,
 	t1.Id,
@@ -43,7 +40,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Issue4280
 UPDATE
@@ -54,7 +50,6 @@ WHERE
 	Id = 2
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Issue4280
 UPDATE
@@ -64,7 +59,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.DeviceType,
 	t1.Id,

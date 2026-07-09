@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.GroupId,
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	t.GroupId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GroupId,

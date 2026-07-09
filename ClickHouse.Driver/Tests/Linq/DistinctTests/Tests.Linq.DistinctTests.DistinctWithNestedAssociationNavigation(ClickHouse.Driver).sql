@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	gc.GrandChildID,
 	a_Parent.Value1
@@ -11,7 +10,6 @@ ORDER BY
 	gc.GrandChildID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,

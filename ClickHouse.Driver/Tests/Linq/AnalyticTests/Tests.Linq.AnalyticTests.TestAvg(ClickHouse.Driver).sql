@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	AVG(c_1.ChildID),
 	AVG(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	avgOrNull(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	AVG(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	AVG(DISTINCT t1.ParentID)
 FROM

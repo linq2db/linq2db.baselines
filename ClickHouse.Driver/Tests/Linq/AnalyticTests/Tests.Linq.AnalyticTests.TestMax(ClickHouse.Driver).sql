@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	MAX(c_1.ChildID),
 	MAX(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	MAX(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	MAX(DISTINCT t1.ParentID)
 FROM

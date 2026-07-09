@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id1,
 	m_1.Id2,
@@ -13,7 +12,6 @@ WHERE
 	m_1.Id1 >= 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_2.Id1,
 	d.DetailId,
@@ -33,7 +31,6 @@ WHERE
 	d.MasterId % 2 = 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id1,
 	m_1.Id2

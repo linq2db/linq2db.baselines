@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	sumOrNull(toFloat64(c_1.Id))
 FROM

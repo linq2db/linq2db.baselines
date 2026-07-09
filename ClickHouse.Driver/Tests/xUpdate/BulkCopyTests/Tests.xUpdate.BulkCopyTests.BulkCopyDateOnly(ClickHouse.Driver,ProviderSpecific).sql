@@ -1,7 +1,6 @@
 ﻿INSERT ASYNC BULK DateOnlyTable(Date)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Date
 FROM

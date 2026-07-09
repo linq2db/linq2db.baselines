@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO T3
 (
 	InstrumentId,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T3
 (
 	InstrumentId,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T3
 (
 	InstrumentId,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T2
 (
 	InstrumentId,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T2
 (
 	InstrumentId,
@@ -64,7 +59,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T1
 (
 	InstrumentId,
@@ -81,7 +75,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO T1
 (
 	InstrumentId,
@@ -98,7 +91,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	ins.SourceInstrumentCode
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Parent
 UPDATE
@@ -21,7 +19,6 @@ WHERE
 	ParentID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.ParentID,
 	p.Value1

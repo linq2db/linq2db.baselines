@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE TestTable
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE TestTable
 (
 	ID        Int32,
@@ -14,7 +12,6 @@ CREATE TABLE TestTable
 ENGINE = Memory()
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Field1,
@@ -24,6 +21,5 @@ FROM
 	TestTable t1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE TestTable
 

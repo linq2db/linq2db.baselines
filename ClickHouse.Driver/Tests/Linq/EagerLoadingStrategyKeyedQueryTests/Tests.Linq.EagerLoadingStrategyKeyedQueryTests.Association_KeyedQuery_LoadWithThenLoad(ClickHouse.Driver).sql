@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name
@@ -9,7 +8,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d_1.Id,
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN Employee d_1 ON m_1.Id = d_1.DepartmentId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	k_1.item,
 	d.Id,

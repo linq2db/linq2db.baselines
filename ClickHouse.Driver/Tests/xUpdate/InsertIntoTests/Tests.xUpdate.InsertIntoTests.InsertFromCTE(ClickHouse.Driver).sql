@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO InsertTestClassDest
 (
 	Id,
@@ -23,7 +22,6 @@ FROM
 	CTE_1 t2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,
@@ -33,7 +31,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,

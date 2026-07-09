@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	g_1.ParentID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	g_1.ParentID
 FROM

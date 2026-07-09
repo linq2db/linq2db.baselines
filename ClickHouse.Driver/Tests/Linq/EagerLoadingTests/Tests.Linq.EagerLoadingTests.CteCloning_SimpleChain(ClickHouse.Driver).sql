@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -40,7 +39,6 @@ FROM
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
 -- ClickHouse.Driver ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT

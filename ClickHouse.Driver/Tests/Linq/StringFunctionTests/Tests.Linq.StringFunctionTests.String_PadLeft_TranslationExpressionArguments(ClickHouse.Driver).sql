@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	s.ID,
 	s.FirstName
@@ -18,7 +17,6 @@ WHERE
 	s.FirstName <> ''
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

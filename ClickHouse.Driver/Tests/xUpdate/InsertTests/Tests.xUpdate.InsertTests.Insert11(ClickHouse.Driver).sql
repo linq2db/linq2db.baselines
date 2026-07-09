@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(t1.PersonID)
 FROM
 	Person t1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p2.PersonID,
 	p2.Gender,

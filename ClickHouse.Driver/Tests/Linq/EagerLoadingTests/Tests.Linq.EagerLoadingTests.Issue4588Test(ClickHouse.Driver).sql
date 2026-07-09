@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Id_1,
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN SubOrderDetail d_1 ON m_1.Id = d_1.SubOrderId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -60,7 +58,6 @@ FROM
 		INNER JOIN SubOrder d ON m_1.Id = d.OrderId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.Name

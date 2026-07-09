@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ParentID,
 	r.Value1
@@ -9,7 +8,6 @@ WHERE
 	r.ParentID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

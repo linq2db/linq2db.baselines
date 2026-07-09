@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	addYears(t.DateTimeValue, t.SmallIntValue)
 FROM

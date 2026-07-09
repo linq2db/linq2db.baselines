@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	SUM(g_2.ParentID - 3)
 FROM

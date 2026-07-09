@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.name,
 	CASE
@@ -15,7 +14,6 @@ WHERE
 	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.name,
 	r.primary_key
@@ -26,7 +24,6 @@ WHERE
 	r.primary_key <> ''
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.table,
 	r.name,
@@ -58,14 +55,11 @@ WHERE
 	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.Driver ClickHouse
-
 select hostName()
 
 -- ClickHouse.Driver ClickHouse
-
 select database()
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT version()
 

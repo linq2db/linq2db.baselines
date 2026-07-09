@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.Id,
 	c_1.Name
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	k_1.item,
 	d.Id,
