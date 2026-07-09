@@ -11,7 +11,6 @@ WHERE
 	[p].[Id] = ? AND [p].[Id] = [a_MainRequired].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

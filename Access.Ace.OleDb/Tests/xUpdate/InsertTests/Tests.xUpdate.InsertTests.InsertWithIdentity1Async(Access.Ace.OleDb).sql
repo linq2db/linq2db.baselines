@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE
 	[t1].[PersonID] > 4
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -21,11 +19,9 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],
@@ -38,7 +34,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE

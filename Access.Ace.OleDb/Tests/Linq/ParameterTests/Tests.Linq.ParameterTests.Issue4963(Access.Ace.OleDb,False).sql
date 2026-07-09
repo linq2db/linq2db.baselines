@@ -8,7 +8,6 @@ SET
 	[t1].[Field] = [t1].[Field] + @offset
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Field]

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [c_1]
 WHERE
@@ -40,14 +39,12 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [c_1]
 WHERE

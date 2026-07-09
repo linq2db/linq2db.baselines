@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTable]
 
 -- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [TestTable]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[cross_1].[Id_1] as [Id],
 	[cross_1].[Value_1],
@@ -37,6 +34,5 @@ WHERE
 	[cross_1].[Id_1] = [cross_1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TestTable]
 

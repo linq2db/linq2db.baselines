@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[IntValue],
@@ -52,7 +51,6 @@ WHERE
 	[r].[Id] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[IntValue],

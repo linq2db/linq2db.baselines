@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[g_1].[Id],
 	SUM(IIF([a_Values].[Value] IS NULL, 0, [a_Values].[Value]))
@@ -10,7 +9,6 @@ GROUP BY
 	[g_1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -22,7 +20,6 @@ FROM
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

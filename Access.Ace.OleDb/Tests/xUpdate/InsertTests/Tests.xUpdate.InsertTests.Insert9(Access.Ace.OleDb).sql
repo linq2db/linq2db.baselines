@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [p]
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] > 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [p]
 WHERE

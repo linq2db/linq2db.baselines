@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id] as [Id_1],

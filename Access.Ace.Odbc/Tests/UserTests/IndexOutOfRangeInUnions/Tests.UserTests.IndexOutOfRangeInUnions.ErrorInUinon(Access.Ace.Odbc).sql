@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado'),

@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TableWithPrimaryKey2]
 (
 	[Key] Int NOT NULL,
@@ -21,6 +20,5 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TableWithPrimaryKey2]
 

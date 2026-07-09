@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[MoneyValue],

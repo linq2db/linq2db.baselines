@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[BoolValue],
@@ -8,7 +7,6 @@ FROM
 	[WhereCases] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -19,7 +17,6 @@ WHERE
 	NOT [t].[BoolValue] AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -30,7 +27,6 @@ WHERE
 	NOT (NOT [t].[BoolValue] AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -41,7 +37,6 @@ WHERE
 	[t].[BoolValue] = True AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -52,7 +47,6 @@ WHERE
 	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -63,7 +57,6 @@ WHERE
 	[t].[BoolValue] = True AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -74,7 +67,6 @@ WHERE
 	NOT ([t].[BoolValue] = True AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -85,7 +77,6 @@ WHERE
 	[t].[BoolValue] = False AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -96,7 +87,6 @@ WHERE
 	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -107,7 +97,6 @@ WHERE
 	[t].[BoolValue] = False AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -118,7 +107,6 @@ WHERE
 	NOT ([t].[BoolValue] = False AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -130,7 +118,6 @@ WHERE
 	[t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -141,7 +128,6 @@ WHERE
 	NOT (([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -152,7 +138,6 @@ WHERE
 	[t].[NullableBoolValue] = True AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -163,7 +148,6 @@ WHERE
 	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -174,7 +158,6 @@ WHERE
 	[t].[NullableBoolValue] = True AND [t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -185,7 +168,6 @@ WHERE
 	NOT ([t].[NullableBoolValue] = True AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -197,7 +179,6 @@ WHERE
 	[t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -208,7 +189,6 @@ WHERE
 	NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL) AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -220,7 +200,6 @@ WHERE
 	[t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -231,7 +210,6 @@ WHERE
 	NOT (NOT (NOT [t].[BoolValue] AND ([t].[NullableBoolValue] = False OR [t].[NullableBoolValue] IS NULL)) AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -243,7 +221,6 @@ WHERE
 	[t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -254,7 +231,6 @@ WHERE
 	NOT (NOT [t].[BoolValue] AND [t].[NullableBoolValue] = False AND [t].[NullableBoolValue] IS NOT NULL AND [t].[Id] > 0)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],
@@ -266,7 +242,6 @@ WHERE
 	[t].[Id] > 0
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue],

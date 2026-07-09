@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

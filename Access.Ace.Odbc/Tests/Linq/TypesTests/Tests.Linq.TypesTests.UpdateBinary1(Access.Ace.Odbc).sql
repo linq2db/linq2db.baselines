@@ -10,7 +10,6 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[BinaryValue]
 FROM

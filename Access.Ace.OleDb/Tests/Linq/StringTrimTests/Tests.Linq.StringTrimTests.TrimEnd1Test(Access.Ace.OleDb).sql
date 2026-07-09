@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	IIF([t].[VarCharColumn] IS NULL, '', [t].[VarCharColumn]) + '...'
 FROM
 	[StringTrimTable] [t]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

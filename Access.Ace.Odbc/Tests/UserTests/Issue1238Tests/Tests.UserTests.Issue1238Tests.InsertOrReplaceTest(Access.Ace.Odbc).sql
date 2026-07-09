@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[InheritanceParent] [t1]
 
@@ -38,7 +37,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ WHERE
 	[t1].[InheritanceParentId] = ? AND [t1].[Name] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

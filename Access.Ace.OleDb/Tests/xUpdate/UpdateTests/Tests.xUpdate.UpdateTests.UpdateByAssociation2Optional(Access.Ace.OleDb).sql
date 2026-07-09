@@ -11,7 +11,6 @@ WHERE
 	[p].[Id] = @id AND [p].[Id] = [a_MainOptional].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

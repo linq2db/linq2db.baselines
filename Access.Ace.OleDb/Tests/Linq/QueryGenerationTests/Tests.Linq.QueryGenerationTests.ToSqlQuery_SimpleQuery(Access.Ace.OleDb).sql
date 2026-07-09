@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],

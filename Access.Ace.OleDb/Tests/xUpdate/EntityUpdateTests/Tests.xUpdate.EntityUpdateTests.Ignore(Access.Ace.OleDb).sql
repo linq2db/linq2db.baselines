@@ -18,7 +18,6 @@ WHERE
 	[t].[Id] = @Id
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Name],

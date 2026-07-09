@@ -13,7 +13,6 @@ WHERE
 	(IIF([e].[StringValue] IS NULL, '', [e].[StringValue]) + '1') = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

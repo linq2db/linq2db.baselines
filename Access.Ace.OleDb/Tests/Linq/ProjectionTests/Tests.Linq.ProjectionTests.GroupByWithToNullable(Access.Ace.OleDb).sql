@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1000
 	[a_Patient].[Diagnosis],
 	[a_Patient].[PersonID],

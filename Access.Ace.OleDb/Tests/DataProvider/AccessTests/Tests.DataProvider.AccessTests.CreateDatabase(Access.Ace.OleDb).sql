@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [TestDatabase.accdb].[CreateTableTest]
 (
 	[Id] Int  NOT NULL IDENTITY,
@@ -8,6 +7,5 @@ CREATE TABLE [TestDatabase.accdb].[CreateTableTest]
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TestDatabase.accdb].[CreateTableTest]
 

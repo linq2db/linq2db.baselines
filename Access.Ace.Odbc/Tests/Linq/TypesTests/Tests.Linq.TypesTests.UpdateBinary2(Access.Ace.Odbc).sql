@@ -25,7 +25,6 @@ WHERE
 	[t].[ID] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

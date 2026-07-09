@@ -48,7 +48,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -64,7 +63,6 @@ WHERE
 	[t1].[ID] = 1000
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

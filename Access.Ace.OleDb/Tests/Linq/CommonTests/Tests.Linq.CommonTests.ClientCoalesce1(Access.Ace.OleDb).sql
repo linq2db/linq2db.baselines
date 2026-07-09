@@ -10,7 +10,6 @@ WHERE
 	IIF([x].[Value1] IS NULL, @Value1, [x].[Value1]) > 10
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[Value1]
 FROM

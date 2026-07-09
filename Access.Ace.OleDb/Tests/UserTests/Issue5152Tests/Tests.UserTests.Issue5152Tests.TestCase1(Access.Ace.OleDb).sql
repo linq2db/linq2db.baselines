@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 UPDATE
 	[SampleClass] [sample_1]
 SET

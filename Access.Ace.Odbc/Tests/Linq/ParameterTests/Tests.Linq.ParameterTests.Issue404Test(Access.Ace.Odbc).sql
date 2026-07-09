@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [Table404Two] [d] ON ([m_1].[Id] = [d].[FirstTableId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
@@ -32,7 +30,6 @@ WHERE
 	[d].[Usage] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
@@ -54,14 +51,12 @@ WHERE
 	[d].[Usage] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -72,7 +67,6 @@ FROM
 		INNER JOIN [Table404Two] [d] ON ([m_1].[Id] = [d].[FirstTableId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
@@ -94,7 +88,6 @@ WHERE
 	[d].[Usage] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM
@@ -116,7 +109,6 @@ WHERE
 	[d].[Usage] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id]
 FROM

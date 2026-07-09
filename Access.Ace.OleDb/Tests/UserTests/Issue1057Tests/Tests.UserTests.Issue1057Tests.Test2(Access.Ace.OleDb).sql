@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = 'bda.Requests'
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

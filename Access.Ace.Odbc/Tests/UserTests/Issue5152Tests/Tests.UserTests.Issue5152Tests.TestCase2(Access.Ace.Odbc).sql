@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[SampleClass] [sample_1]
 SET

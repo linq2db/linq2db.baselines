@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < ?
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL,
 	[t1].[BigIntValue],

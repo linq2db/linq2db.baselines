@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-10-01 20:35:44')
 FROM

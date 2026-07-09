@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],
