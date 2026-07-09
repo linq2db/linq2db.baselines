@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @p1 TimestampTz -- DateTimeOffset
 SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 

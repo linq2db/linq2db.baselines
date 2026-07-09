@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	Coalesce(t."Value1", '') || t."Value2" || Coalesce(t."Value3", '')
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	t."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ID",

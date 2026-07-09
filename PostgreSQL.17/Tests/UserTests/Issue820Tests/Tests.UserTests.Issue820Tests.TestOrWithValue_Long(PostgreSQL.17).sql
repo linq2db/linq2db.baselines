@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
 FROM
 	"LinqDataTypes" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @param Bigint -- Int64
 SET     @param = 1
 
@@ -25,7 +25,7 @@ FROM
 WHERE
 	:param = t1."BigIntValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ID",

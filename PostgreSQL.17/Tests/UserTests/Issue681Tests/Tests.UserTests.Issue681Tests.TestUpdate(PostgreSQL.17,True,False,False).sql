@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
 DECLARE @ID Integer -- Int32

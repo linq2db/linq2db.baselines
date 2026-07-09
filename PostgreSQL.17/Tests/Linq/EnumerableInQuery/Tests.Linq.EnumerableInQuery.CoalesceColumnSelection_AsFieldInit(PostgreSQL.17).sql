@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t3."ColorName",
@@ -45,7 +45,7 @@ FROM
 ORDER BY
 	t3."StrValue"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -60,7 +60,7 @@ FROM
 		LEFT JOIN "SomeColor" "a_Color" ON t1."ColorId" = "a_Color"."Id"
 		LEFT JOIN "SomeStyle" "a_Style" ON t1."StyleId" = "a_Style"."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

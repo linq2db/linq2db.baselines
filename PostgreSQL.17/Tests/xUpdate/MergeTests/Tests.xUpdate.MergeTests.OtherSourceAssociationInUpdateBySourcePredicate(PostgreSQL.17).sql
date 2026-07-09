@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "Person" "Target"
 USING (
@@ -26,7 +26,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 SET
 	"FirstName" = 'Updated'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

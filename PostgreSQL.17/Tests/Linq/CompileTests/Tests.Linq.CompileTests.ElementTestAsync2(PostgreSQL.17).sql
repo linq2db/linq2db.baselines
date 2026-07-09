@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -11,7 +11,7 @@ WHERE
 	c_1."ParentID" = :p
 LIMIT 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

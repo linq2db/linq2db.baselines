@@ -1,6 +1,6 @@
 ﻿INSERT BULK "DataTypeBinaryMapping"(Binary)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Binary"

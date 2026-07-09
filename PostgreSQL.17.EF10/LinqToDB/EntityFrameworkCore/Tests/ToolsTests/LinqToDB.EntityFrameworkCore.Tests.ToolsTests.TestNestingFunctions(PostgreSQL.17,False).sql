@@ -18,7 +18,7 @@ WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Disco
 ORDER BY p."ProductID"
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	e."IsDeleted",

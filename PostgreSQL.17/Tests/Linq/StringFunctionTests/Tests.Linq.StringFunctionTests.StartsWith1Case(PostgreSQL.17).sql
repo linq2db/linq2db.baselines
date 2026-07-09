@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	p."FirstName" LIKE 'Jo%' ESCAPE '~' AND p."PersonID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	p."FirstName" LIKE 'jo%' ESCAPE '~' AND p."PersonID" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)

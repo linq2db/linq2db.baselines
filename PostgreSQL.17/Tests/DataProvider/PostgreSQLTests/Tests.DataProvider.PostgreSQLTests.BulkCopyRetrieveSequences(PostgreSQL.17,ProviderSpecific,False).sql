@@ -1,17 +1,17 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT Max("ID") FROM "SequenceTest1"
 
 INSERT BULK "SequenceTest1"(ID, Value)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"SequenceTest1" t1

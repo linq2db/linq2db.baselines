@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 UPDATE
 	"Issue2815Table1"
@@ -21,7 +21,7 @@ WHERE
 	ext."NOT_HANDLED" = 2 AND ext."TRANS_CHANNEL" IS NULL AND
 	"Issue2815Table1"."Id" = ext."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

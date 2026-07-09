@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	ch."ParentID",
@@ -7,7 +7,7 @@ FROM
 	"Child" ch
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	ch."ParentID",
@@ -16,7 +16,7 @@ FROM
 	"Child" ch
 LIMIT 3
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	ch."ParentID",
@@ -25,7 +25,7 @@ FROM
 	"Child" ch
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	ch."ParentID",

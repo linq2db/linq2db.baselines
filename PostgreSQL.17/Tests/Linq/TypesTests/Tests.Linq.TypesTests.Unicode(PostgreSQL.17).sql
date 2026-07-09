@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName Text(9) -- String
@@ -23,7 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."FirstName",

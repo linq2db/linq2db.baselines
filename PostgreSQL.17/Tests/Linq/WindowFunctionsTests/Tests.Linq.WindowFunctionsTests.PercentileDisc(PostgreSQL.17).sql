@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY t1."IntValue")
 FROM
 	"WindowFunctionTestEntity" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	PERCENTILE_DISC(0.5) WITHIN GROUP (ORDER BY t1."IntValue")

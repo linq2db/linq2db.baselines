@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -10,7 +10,7 @@ ORDER BY
 	p."Value1" NULLS FIRST
 LIMIT :take
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ParentID",

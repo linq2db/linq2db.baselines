@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -27,7 +27,7 @@ VALUES
 	:CreatedBy
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(6) -- String
@@ -56,7 +56,7 @@ VALUES
 	:CreatedBy
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

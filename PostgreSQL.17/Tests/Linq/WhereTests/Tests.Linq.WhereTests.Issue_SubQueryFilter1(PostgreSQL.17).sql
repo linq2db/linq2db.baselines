@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @filter1 Text(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 Text(8) -- String
@@ -41,7 +41,7 @@ WHERE
 ORDER BY
 	t1."PersonID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."PersonID",
@@ -49,7 +49,7 @@ SELECT
 FROM
 	"Patient" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."FirstName",

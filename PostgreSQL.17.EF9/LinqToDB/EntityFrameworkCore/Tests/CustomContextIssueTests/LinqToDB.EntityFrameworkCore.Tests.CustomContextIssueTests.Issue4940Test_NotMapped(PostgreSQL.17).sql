@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 CREATE TEMPORARY TABLE "Issue4940RecordNotMapped"
 (
@@ -11,7 +11,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "Issue4940RecordNotMapped"
 (
@@ -26,7 +26,7 @@ VALUES
 
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Source Text(6) -- String
@@ -57,7 +57,7 @@ INSERT BULK "Issue4940RecordNotMapped"(Id, Source, Status, NullableStatus)
 
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "Issue4940RecordNotMapped" "Target"
 USING (VALUES
@@ -98,7 +98,7 @@ SET
 
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -112,7 +112,7 @@ ORDER BY
 
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "Issue4940RecordNotMapped"
 

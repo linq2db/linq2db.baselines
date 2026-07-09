@@ -1,15 +1,15 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "TempTable"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	p."ParentID"
 FROM
 	"Parent" p
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 	CONSTRAINT "PK_TempTable" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "TempTable"
 (
@@ -33,7 +33,7 @@ VALUES
 (1),
 (7)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t."ID"
@@ -41,7 +41,7 @@ FROM
 	"Parent" p
 		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DROP TABLE IF EXISTS "TempTable"
 

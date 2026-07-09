@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111001
 DECLARE @:p2 Integer -- Int32
@@ -257,7 +257,7 @@ VALUES
 (:p97,:p98),
 (:p99,:p100)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111051
 DECLARE @:p2 Integer -- Int32
@@ -516,7 +516,7 @@ VALUES
 (:p97,:p98),
 (:p99,:p100)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @:p1 Integer -- Int32
 SET     @:p1 = 111101
 DECLARE @:p2 Integer -- Int32
@@ -770,7 +770,7 @@ VALUES
 (:p95,:p96),
 (:p97,:p98)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 111001
 DECLARE @ParentID_1 Integer -- Int32

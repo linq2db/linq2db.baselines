@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 UPDATE
 	"UpdateSubquerySourceTable"
@@ -30,7 +30,7 @@ SET
 WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -41,7 +41,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"Person" t1

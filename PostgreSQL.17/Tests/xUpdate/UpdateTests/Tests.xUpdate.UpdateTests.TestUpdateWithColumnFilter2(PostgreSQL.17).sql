@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName Text(8) -- String
@@ -23,7 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
@@ -39,7 +39,7 @@ WHERE
 	x."FirstName" = :FirstName
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer -- Int32
@@ -52,7 +52,7 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -68,7 +68,7 @@ WHERE
 	x."PersonID" = :ID
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Text(25) -- String
@@ -90,7 +90,7 @@ SET
 WHERE
 	"Person"."PersonID" = :ID
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

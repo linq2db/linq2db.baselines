@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
@@ -25,14 +25,14 @@ SET
 	"UpdatedAt" = "Source"."UpdatedAt",
 	"UpdatedBy" = "Source"."UpdatedBy"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -48,7 +48,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
@@ -75,7 +75,7 @@ SET
 	"UpdatedAt" = "Source"."UpdatedAt",
 	"UpdatedBy" = "Source"."UpdatedBy"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",

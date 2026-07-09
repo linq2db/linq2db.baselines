@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
@@ -25,7 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

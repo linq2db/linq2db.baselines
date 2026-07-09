@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 42
 DECLARE @Name Text(4) -- String
@@ -35,7 +35,7 @@ VALUES
 	:UpdatedBy
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
@@ -62,7 +62,7 @@ SET
 	"UpdatedAt" = "Source"."UpdatedAt",
 	"UpdatedBy" = "Source"."UpdatedBy"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
@@ -89,7 +89,7 @@ SET
 	"UpdatedAt" = "Source"."UpdatedAt",
 	"UpdatedBy" = "Source"."UpdatedBy"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",

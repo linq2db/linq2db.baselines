@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @start Integer -- Int32
 SET     @start = 1
 DECLARE @stop Integer -- Int32
@@ -9,7 +9,7 @@ SELECT
 FROM
 	GENERATE_SERIES(:start, :stop) t1(value)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @start Integer -- Int32
 SET     @start = 1
 DECLARE @stop Integer -- Int32
@@ -22,7 +22,7 @@ SELECT
 FROM
 	GENERATE_SERIES(:start, :stop, :step) t1(value)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @start Timestamp -- DateTime2
 SET     @start = '2020-02-19 17:54:55.123'::timestamp
 DECLARE @stop Timestamp -- DateTime2
@@ -35,7 +35,7 @@ SELECT
 FROM
 	GENERATE_SERIES(:start, :stop, :step) t1(value)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
 DECLARE @start Integer -- Int32
 SET     @start = 1
 DECLARE @stop Integer -- Int32
