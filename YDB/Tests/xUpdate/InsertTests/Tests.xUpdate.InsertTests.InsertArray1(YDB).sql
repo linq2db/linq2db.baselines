@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE
 	LinqDataTypes.ID > 1000
 
 -- YDB Ydb
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.MoneyValue as MoneyValue,
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE

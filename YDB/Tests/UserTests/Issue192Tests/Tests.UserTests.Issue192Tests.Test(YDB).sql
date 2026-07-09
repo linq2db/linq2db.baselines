@@ -49,7 +49,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -58,7 +57,6 @@ WHERE
 	t1.BoolValue = 'N'u
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -78,7 +76,6 @@ WHERE
 	t1.GuidValue = $GuidValue
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -91,7 +88,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -104,7 +100,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -117,7 +112,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -130,7 +124,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -143,7 +136,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -156,7 +148,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -169,7 +160,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -182,7 +172,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -195,7 +184,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,

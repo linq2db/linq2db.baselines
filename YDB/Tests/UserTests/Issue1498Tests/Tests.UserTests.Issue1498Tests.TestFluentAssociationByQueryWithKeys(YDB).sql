@@ -62,7 +62,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1
@@ -79,7 +78,6 @@ FROM
 		INNER JOIN Message d ON d.TopicId = m_1.Id
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.Title as Title,

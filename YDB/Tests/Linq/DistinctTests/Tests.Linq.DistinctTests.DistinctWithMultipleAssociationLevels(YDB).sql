@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.GrandChildID as GrandChildID,
 	a_Child_1.ChildID as ChildID,
@@ -27,7 +26,6 @@ ORDER BY
 	t1.GrandChildID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,

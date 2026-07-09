@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.MoneyValue as MoneyValue,
@@ -59,7 +57,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE

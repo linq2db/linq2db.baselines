@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.c1 as c1,
 	COUNT(*) as Count_1

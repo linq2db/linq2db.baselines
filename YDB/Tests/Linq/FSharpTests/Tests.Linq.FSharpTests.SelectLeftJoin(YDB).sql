@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Item1.ParentID as ParentID,
 	Item1.ChildID as ChildID

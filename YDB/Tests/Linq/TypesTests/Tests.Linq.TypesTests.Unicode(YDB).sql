@@ -24,7 +24,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,

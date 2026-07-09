@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -9,7 +8,6 @@ WHERE
 	a_Parent.ParentID = 1
 
 -- YDB Ydb
-
 SELECT
 	a_Parent.ParentID as ParentID
 FROM

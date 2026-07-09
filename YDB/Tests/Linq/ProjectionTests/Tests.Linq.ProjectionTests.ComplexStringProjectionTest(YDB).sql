@@ -14,7 +14,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.`Data` as Data_1

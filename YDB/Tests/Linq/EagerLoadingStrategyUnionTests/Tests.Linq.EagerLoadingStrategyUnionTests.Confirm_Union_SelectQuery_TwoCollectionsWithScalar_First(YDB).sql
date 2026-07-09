@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		d.Id as Detail_Id,
 		d.Name as Detail_Name,

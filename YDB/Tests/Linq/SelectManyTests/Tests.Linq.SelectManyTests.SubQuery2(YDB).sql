@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	p2_1.FirstName as FirstName
@@ -18,7 +17,6 @@ WHERE
 	(p.PersonID = 1 OR p.PersonID = 2) AND p.PersonID = p2_1.ID
 
 -- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	p2_1.FirstName as FirstName

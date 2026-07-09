@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p1.ParentID as ParentID,
 	p1.Value1 as Value1
@@ -17,7 +16,6 @@ WHERE
 	p2.ParentID <= 3
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

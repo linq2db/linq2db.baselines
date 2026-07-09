@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
 
 -- YDB Ydb
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL as c1,
 	t1.BigIntValue as BigIntValue,

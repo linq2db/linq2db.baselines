@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO SampleClass
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO SampleClass
 (
 	Id,

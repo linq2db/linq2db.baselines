@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Key_1 || '2'u as c1
 FROM

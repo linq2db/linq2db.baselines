@@ -1,16 +1,13 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS TempTable
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID
 FROM
 	Parent p
 
 -- YDB Ydb
-
 CREATE TABLE TempTable
 (
 	ID Int32,
@@ -21,7 +18,6 @@ CREATE TABLE TempTable
 INSERT ASYNC BULK TempTable(ID)
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID
 FROM
@@ -29,6 +25,5 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS TempTable
 

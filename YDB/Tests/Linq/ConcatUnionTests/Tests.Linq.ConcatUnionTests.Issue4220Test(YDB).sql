@@ -33,7 +33,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.AOnly as AOnly,

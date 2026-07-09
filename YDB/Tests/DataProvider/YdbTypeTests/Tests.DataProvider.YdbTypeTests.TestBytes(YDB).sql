@@ -12,7 +12,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -23,7 +22,6 @@ WHERE
 	r.`Column` = ''s AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -62,7 +60,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -97,7 +94,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -117,7 +113,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -152,7 +147,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -163,7 +157,6 @@ WHERE
 	r.`Column` = '\x00\x01\x02\x03\x04\x00's AND r.ColumnNullable = '\x01\x02\x03\x04\x00\x00's
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -204,7 +197,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -241,7 +233,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -263,7 +254,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -298,7 +288,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -309,7 +298,6 @@ WHERE
 	r.`Column` = ''s AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -348,7 +336,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -383,7 +370,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -403,7 +389,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -440,7 +425,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -454,7 +438,6 @@ WHERE
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ's
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -499,7 +482,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -540,7 +522,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -564,7 +545,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -601,7 +581,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -612,7 +591,6 @@ WHERE
 	r.`Column` = '\x00's AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -651,7 +629,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -686,7 +663,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -706,7 +682,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -741,7 +716,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -752,7 +726,6 @@ WHERE
 	r.`Column` = '\x00's AND r.ColumnNullable = '1's
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -793,7 +766,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -830,7 +802,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -852,7 +823,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -887,7 +857,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -898,7 +867,6 @@ WHERE
 	r.`Column` = ''s AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -937,7 +905,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -972,7 +939,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -992,7 +958,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1029,7 +994,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -1043,7 +1007,6 @@ WHERE
  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ's
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1088,7 +1051,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1129,7 +1091,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1153,7 +1114,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1190,7 +1150,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -1201,7 +1160,6 @@ WHERE
 	r.`Column` = '\x00's AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1240,7 +1198,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1275,7 +1232,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1295,7 +1251,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1330,7 +1285,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -1341,7 +1295,6 @@ WHERE
 	r.`Column` = ''s AND r.ColumnNullable = ''s
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1382,7 +1335,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1419,7 +1371,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1441,7 +1392,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1476,7 +1426,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -1487,7 +1436,6 @@ WHERE
 	r.`Column` = ''s AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1526,7 +1474,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1561,7 +1508,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1581,7 +1527,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1616,7 +1561,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -1627,7 +1571,6 @@ WHERE
 	r.`Column` = '\x00\x01\x02\x03\x04\x00's AND r.ColumnNullable = '\x01\x02\x03\x04\x00\x00's
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1668,7 +1611,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1705,7 +1647,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -1727,7 +1668,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 

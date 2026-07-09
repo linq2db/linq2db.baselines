@@ -55,7 +55,6 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

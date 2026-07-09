@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_1.ParentID as ParentID,
 	c_1.ChildID as ChildID
@@ -16,7 +15,6 @@ WHERE
 	c_1.ParentID = p_1.ParentID
 
 -- YDB Ydb
-
 SELECT
 	c_1.ParentID as ParentID,
 	c_1.ChildID as ChildID

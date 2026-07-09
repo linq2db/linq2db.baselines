@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -10,7 +9,6 @@ FROM
 	Person p
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,

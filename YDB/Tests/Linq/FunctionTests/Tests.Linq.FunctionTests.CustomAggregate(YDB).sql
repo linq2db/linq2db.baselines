@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(g_1.Value1) as sum1,
 	SUM(g_1.Value1) as sum2

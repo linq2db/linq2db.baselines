@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 UPDATE
 	TableWithConverterValue
 SET
@@ -8,7 +7,6 @@ WHERE
 	TableWithConverterValue.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.NoConversion as NoConversion,
@@ -21,7 +19,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 UPDATE
 	TableWithConverterValue
 SET
@@ -30,7 +27,6 @@ WHERE
 	TableWithConverterValue.Id = 2
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.NoConversion as NoConversion,
@@ -43,7 +39,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.NoConversion as NoConversion,

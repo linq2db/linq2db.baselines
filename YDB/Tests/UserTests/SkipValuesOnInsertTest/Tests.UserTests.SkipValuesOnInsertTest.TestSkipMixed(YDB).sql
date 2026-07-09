@@ -20,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,
@@ -45,7 +44,6 @@ WHERE
 	PR_1598_Mixed_Table.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,
@@ -74,7 +72,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,
@@ -102,7 +99,6 @@ WHERE
 	PR_1598_Mixed_Table.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,

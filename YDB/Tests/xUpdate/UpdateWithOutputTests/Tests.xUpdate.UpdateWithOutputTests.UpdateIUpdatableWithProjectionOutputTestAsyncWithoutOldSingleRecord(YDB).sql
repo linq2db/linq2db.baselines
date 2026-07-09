@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 UPDATE
 	TableWithData
 SET

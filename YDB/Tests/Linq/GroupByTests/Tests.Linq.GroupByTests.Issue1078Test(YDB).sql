@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	grp.SiteID as SiteID,
 	COUNT(*) as Total,

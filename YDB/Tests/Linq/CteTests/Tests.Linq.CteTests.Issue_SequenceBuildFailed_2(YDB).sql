@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		a_Patient.PersonID as PersonID
 	FROM
@@ -25,7 +24,6 @@ FROM
 		INNER JOIN Person d ON d.PersonID = m_1.PersonID
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		a_Patient.PersonID as PersonID
 	FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT DISTINCT
 		c_1.ParentID as ParentID,
 		c_1.ChildID as ChildID

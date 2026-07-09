@@ -19,7 +19,6 @@ ORDER BY
 LIMIT $take
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Grp as Grp,

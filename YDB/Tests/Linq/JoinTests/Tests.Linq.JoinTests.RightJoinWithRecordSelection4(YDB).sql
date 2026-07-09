@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	f.Id as Id,
 	t1.Id as Id_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO MessageEventDTOTb2
 (
 	Id

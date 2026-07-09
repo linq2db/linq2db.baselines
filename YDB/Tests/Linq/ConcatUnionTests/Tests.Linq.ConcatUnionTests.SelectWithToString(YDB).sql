@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x_1.StrValue as StrValue
 FROM

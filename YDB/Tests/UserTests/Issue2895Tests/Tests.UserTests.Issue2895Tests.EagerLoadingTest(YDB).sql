@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	a_Documents.Name as Name
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN Document a_Documents ON a_Attachment.Id = a_Documents.AttachmentId
 
 -- YDB Ydb
-
 SELECT
 	t2.not_null as not_null,
 	t2.Id as Id

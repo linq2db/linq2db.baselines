@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.InId as InId,
 	CASE
@@ -18,7 +17,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	t1.InId as InId,
 	CASE

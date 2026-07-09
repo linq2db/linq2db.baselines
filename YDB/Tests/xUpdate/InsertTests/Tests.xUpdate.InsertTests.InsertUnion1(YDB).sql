@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
 	Parent.ParentID > 1000
 
 -- YDB Ydb
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -31,7 +29,6 @@ FROM
 	) t1
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -40,7 +37,6 @@ WHERE
 	c_1.ParentID > 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

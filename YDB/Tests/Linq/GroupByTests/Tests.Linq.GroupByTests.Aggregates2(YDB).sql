@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(g_1.ChildID) as Sum_1,
 	MIN(g_1.ChildID) as Min_1,

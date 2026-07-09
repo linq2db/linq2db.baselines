@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO TestBool
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -21,14 +19,12 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-
 UPDATE
 	TestBool
 SET
 	`Value` = NOT TestBool.`Value`
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -37,7 +33,6 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-
 UPDATE
 	TestBool
 SET
@@ -46,7 +41,6 @@ WHERE
 	TestBool.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1

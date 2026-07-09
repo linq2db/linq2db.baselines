@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID > 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	c_1.ParentID = $id
 
 -- YDB Ydb
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID > 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

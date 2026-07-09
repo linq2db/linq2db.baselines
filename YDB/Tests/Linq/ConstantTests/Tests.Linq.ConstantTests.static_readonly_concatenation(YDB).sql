@@ -13,7 +13,6 @@ WHERE
 	(Coalesce(e.StringValue, ''u) || '1'u) = $p
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,

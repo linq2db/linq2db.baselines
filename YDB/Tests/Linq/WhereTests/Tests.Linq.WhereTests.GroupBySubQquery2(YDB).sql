@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		MAX(x.ChildID) as Max_1
 	FROM
@@ -22,7 +21,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		MAX(x.ChildID) as Max_1
 	FROM

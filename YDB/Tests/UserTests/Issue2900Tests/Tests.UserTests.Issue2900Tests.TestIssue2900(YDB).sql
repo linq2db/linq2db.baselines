@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.Value_2 as Value_1,
 	t2.Value_1 as Value_2

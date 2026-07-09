@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 /* My Test */
 SELECT
 	t1.Id as Id,

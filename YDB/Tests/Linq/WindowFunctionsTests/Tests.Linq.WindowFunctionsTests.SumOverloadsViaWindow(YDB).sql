@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(t.IntValue) OVER (PARTITION BY t.CategoryId ORDER BY t.Id) as c1,
 	SUM(t.NullableIntValue) OVER (PARTITION BY t.CategoryId ORDER BY t.Id) as c2,

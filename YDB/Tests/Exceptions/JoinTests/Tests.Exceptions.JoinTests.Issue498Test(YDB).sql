@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.ParentID as ParentID
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN Child y ON x.ParentID = y.ParentID
 
 -- YDB Ydb
-
 SELECT DISTINCT
 	g_1.ParentID as ParentID
 FROM

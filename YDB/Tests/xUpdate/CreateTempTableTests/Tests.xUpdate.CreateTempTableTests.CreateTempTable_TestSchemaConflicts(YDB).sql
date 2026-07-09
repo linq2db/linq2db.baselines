@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 CREATE TABLE TempTable
 (
 	Id      Int32,
@@ -22,7 +20,6 @@ CREATE TABLE TempTable
 )
 
 -- YDB Ydb
-
 INSERT INTO TempTable
 (
 	Id,
@@ -35,7 +32,6 @@ FROM
 	TestTempTable t1
 
 -- YDB Ydb
-
 INSERT INTO TestTempTable
 (
 	Id,
@@ -48,7 +44,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO TempTable
 (
 	Id,
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -71,7 +65,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Renamed as Renamed
@@ -81,6 +74,5 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS TempTable
 

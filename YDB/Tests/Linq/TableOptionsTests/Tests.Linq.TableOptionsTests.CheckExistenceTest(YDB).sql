@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE DisposableTable
 (
 	ID Int32,
@@ -8,6 +7,5 @@ CREATE TABLE DisposableTable
 )
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS DisposableTable
 

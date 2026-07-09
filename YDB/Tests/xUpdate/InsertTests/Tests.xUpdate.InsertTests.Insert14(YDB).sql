@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE
 	Person.FirstName LIKE 'Insert14%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.FirstName as FirstName
 	FROM
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -38,7 +35,6 @@ WHERE
 	p.FirstName LIKE 'Insert14%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

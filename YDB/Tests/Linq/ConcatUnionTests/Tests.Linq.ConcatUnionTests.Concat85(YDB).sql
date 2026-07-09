@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_1.ParentID as ParentID,
 	Coalesce(c_1.Value1, 0) as ID2,

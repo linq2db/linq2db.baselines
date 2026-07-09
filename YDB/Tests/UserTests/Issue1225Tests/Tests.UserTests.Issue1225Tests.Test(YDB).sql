@@ -46,7 +46,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	'Id'u as Name,
 	it.Id as Id,

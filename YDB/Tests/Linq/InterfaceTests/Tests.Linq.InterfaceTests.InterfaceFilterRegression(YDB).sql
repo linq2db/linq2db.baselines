@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM

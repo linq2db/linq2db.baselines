@@ -36,7 +36,6 @@ WHERE
 	TrimTestTable.`Data` = $p
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.`Data` as Data_1
@@ -46,7 +45,6 @@ ORDER BY
 	r.ID
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.`Data` as Data_1

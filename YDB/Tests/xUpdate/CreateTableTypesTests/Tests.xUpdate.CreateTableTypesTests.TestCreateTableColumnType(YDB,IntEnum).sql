@@ -33,7 +33,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.IntEnum as IntEnum

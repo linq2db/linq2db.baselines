@@ -16,7 +16,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.BlobValue as BlobValue
@@ -27,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.BlobValue as BlobValue

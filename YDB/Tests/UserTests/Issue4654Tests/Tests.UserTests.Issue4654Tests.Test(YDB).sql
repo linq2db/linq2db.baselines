@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(c_1.Id AS Text)) as Id,
 	c_1.Name as Name

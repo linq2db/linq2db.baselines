@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.ID as ID,
 	COUNT(*) as Count_1,

@@ -1,16 +1,13 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS TempTable
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID
 FROM
 	Parent p
 
 -- YDB Ydb
-
 CREATE TEMPORARY TABLE TempTable
 (
 	ID Int32,
@@ -19,6 +16,5 @@ CREATE TEMPORARY TABLE TempTable
 )
 
 -- YDB Ydb
-
 DROP TABLE TempTable
 

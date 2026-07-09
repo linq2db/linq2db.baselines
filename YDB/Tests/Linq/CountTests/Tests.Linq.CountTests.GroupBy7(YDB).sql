@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as ID1,
 	MAX(g_1.ChildID) as ID2

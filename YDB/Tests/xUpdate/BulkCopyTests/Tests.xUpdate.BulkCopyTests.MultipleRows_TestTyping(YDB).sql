@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO MultipleRowsTable
 (
 	Id,
@@ -11,7 +10,6 @@ VALUES
 (2,Decimal('1.5', 22, 9),Decimal('-2.6', 22, 9))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.DecimalValue1 as DecimalValue1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	'I-'u || Unwrap(CAST(x.PersonID AS Text)) as Id,
 	x.FirstName as FirstName

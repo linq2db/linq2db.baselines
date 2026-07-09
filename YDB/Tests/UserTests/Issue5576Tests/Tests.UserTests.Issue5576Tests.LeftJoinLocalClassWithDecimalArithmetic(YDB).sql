@@ -50,7 +50,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.Guid as Guid,
 	lc.`Count` as Count_1,

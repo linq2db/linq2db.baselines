@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE `Table`
 (
 	ID Int32,
@@ -8,6 +7,5 @@ CREATE TABLE `Table`
 )
 
 -- YDB Ydb
-
 DROP TABLE `Table`
 

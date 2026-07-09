@@ -16,7 +16,6 @@ WHERE
 	r.Value2 IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -44,7 +43,6 @@ WHERE
 	(r.Value2 IN ($Ids0_1, $Ids0_2) OR r.Value2 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -72,7 +70,6 @@ WHERE
 	r.Value5 IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -100,7 +97,6 @@ WHERE
 	(r.Value5 IN ($Ids0_1, $Ids0_2) OR r.Value5 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -128,7 +124,6 @@ WHERE
 	r.Value2 NOT IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -156,7 +151,6 @@ WHERE
 	(r.Value2 NOT IN ($Ids0_1, $Ids0_2) AND r.Value2 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -184,7 +178,6 @@ WHERE
 	(r.Value5 NOT IN ($Ids0_1, $Ids0_2) OR r.Value5 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -212,7 +205,6 @@ WHERE
 	(r.Value5 NOT IN ($Ids0_1, $Ids0_2) AND r.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	'Element 'u || Coalesce(r.VarCharTextNullable, ''u) || ' Text1'u as Text1,

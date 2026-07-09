@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t_1.FinalCustomerId as FinalCustomerId,
 	t_1.IsActive as IsActive,

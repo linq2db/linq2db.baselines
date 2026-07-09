@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
 
 -- YDB Ydb
-
 INSERT INTO LinqDataTypes
 (
 	ID
@@ -19,7 +18,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.BigIntValue as BigIntValue
 FROM

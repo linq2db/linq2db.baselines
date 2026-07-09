@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -14,7 +13,6 @@ WHERE
 	i.StrValue >= right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -29,7 +27,6 @@ WHERE
 	i.StrValue <= right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -44,7 +41,6 @@ WHERE
 	i.StrValue > right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -59,7 +55,6 @@ WHERE
 	i.StrValue < right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -74,7 +69,6 @@ WHERE
 	i.StrValue = right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -89,7 +83,6 @@ WHERE
 	i.StrValue <> right_1.StrValue
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -104,7 +97,6 @@ WHERE
 	i.StrValue >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -119,7 +111,6 @@ WHERE
 	i.StrValue <= right_1.StrValueNullable
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -134,7 +125,6 @@ WHERE
 	i.StrValue > right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -149,7 +139,6 @@ WHERE
 	i.StrValue < right_1.StrValueNullable
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -164,7 +153,6 @@ WHERE
 	i.StrValue = right_1.StrValueNullable
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -179,7 +167,6 @@ WHERE
 	i.StrValue <> right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -194,7 +181,6 @@ WHERE
 	i.StrValueNullable >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -209,7 +195,6 @@ WHERE
 	i.StrValueNullable <= right_1.StrValueNullable OR i.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -224,7 +209,6 @@ WHERE
 	i.StrValueNullable > right_1.StrValueNullable OR i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -239,7 +223,6 @@ WHERE
 	i.StrValueNullable < right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,
@@ -254,7 +237,6 @@ WHERE
 	i.StrValueNullable = right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	i.StrValue as StrValue,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.ParentID as ParentID,
 	t2.ChildID as ChildID
@@ -29,7 +28,6 @@ FROM
 	) t4
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID
@@ -51,7 +49,6 @@ FROM
 	) t3
 
 -- YDB Ydb
-
 SELECT
 	t5.ParentID as ParentID,
 	t5.ChildID as ChildID

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.ParentID + 1 as IntValue,
 	p.ParentID as ParentID
@@ -17,7 +16,6 @@ WHERE
 	p_1.ParentID = 2
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
 	Parent.Value1 = 11
 
 -- YDB Ydb
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -21,7 +19,6 @@ WHERE
 	c_1.ChildID = 11
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -30,7 +27,6 @@ WHERE
 	p.Value1 = 11
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

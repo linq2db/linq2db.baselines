@@ -41,7 +41,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT DISTINCT
 	t.Pk as Pk,
 	t.Id as Id,

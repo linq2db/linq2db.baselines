@@ -14,7 +14,6 @@ ORDER BY
 	Id
 
 -- YDB Ydb
-
 SELECT
 	t1.PK as PK,
 	t1.Id as Id,

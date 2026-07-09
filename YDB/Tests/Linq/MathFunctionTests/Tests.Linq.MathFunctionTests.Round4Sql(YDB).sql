@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Math::NearbyInt(t.c1 * Double('100000'), Math::RoundToNearest()) / Double('100000') as c1
 FROM

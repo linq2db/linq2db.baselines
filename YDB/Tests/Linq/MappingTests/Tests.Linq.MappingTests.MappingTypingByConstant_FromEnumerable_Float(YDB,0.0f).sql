@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	arg.Id as Id,
 	arg.`Value` as Value_1
@@ -10,7 +9,6 @@ FROM
 		) arg(Id, `Value`) ON entity.PersonID = arg.Id
 
 -- YDB Ydb
-
 SELECT
 	arg.Id as Id,
 	arg.`Value` as Value_1

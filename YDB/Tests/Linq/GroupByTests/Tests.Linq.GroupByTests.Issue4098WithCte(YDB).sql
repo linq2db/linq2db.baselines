@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		g_1.InvestorId as InvestorId,
 		g_1.SecurityClass as SecurityClass,

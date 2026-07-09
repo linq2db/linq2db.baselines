@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	pmp1.ChildID as ChildID
 FROM
@@ -12,7 +11,6 @@ FROM
 		) pmp_1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID

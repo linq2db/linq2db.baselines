@@ -28,7 +28,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	CASE
 		WHEN t.VarCharColumn IS NOT NULL THEN CAST(Re2::Replace('[.+]+$'u)(CAST(t.VarCharColumn AS String?), '') AS Utf8?)

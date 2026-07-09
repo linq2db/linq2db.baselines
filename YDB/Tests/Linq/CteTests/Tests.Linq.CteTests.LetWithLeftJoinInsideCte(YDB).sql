@@ -25,7 +25,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		projection2_1.S1 as S1
 	FROM

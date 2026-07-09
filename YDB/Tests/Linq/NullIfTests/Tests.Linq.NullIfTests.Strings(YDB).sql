@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CASE
 		WHEN s.String = 'abc'u THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -20,7 +18,6 @@ WHERE
 	s.String = 'abc'u OR s.String IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -29,7 +26,6 @@ WHERE
 	NOT (s.String = 'abc'u OR s.String IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	CASE
 		WHEN s.String = 'xyz'u THEN NULL
@@ -41,7 +37,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -50,7 +45,6 @@ WHERE
 	s.String = 'xyz'u OR s.String IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -59,7 +53,6 @@ WHERE
 	NOT (s.String = 'xyz'u OR s.String IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	s.String as String
 FROM
@@ -68,7 +61,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -77,7 +69,6 @@ WHERE
 	s.String IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -86,7 +77,6 @@ WHERE
 	s.String IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	CASE
 		WHEN s.NullableString = 'abc'u THEN NULL
@@ -98,7 +88,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -107,7 +96,6 @@ WHERE
 	s.NullableString = 'abc'u OR s.NullableString IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -116,7 +104,6 @@ WHERE
 	NOT (s.NullableString = 'abc'u OR s.NullableString IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	CASE
 		WHEN s.NullableString = 'xyz'u THEN NULL
@@ -128,7 +115,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -137,7 +123,6 @@ WHERE
 	s.NullableString = 'xyz'u OR s.NullableString IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -146,7 +131,6 @@ WHERE
 	NOT (s.NullableString = 'xyz'u OR s.NullableString IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	s.NullableString as NullableString
 FROM
@@ -155,7 +139,6 @@ ORDER BY
 	s.`Int`
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -164,7 +147,6 @@ WHERE
 	s.NullableString IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

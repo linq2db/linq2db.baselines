@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	MAX(g_1.ParentID) as Max_1
 FROM

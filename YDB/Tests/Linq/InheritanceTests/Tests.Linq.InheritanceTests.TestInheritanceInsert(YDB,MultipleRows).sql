@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO InheritanceFilter
 (
 	Id,
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- YDB Ydb
-
 SELECT
 	t1.Code as Code,
 	t1.Id as Id,

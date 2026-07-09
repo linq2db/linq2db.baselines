@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}'u || p.LastName) = ('{}'u || p.LastName)
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

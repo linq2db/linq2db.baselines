@@ -76,7 +76,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.StringValue as StringValue
@@ -88,7 +87,6 @@ ORDER BY
 	r.ID
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.IntValue as IntValue,

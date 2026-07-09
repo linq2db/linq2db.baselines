@@ -33,7 +33,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Value` as Value_1
@@ -44,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Value` as Value_1

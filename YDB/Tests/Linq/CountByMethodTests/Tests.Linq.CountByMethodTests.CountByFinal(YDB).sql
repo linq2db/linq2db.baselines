@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.TestId as TestId,
 	COUNT(*) as Count_1
@@ -11,7 +10,6 @@ ORDER BY
 	TestId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.TestId as TestId

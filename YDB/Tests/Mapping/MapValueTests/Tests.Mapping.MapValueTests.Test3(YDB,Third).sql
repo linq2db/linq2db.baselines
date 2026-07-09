@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CASE
 		WHEN t.EnumValue = 'S'u THEN 'Second'u

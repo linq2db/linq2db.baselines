@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	MAX(t1.PersonID) as Max_1
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	p.FirstName as FirstName,
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

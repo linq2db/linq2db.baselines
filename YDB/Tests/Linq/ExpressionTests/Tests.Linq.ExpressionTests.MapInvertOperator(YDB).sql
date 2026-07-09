@@ -10,7 +10,6 @@ SET
 	`Value` = Unwrap(CAST(Unwrap(CAST(WarehouseTableDto.`Value` AS Uint32)) | Unwrap(CAST($addMask AS Uint32)) AS Uint32)) & Unwrap(CAST(~Unwrap(CAST($removeMask AS Uint32)) AS Uint32))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1

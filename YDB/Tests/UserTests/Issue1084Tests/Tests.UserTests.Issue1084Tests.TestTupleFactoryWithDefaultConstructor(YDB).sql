@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(k_1.StatusBitmask AS Uint32)) & Unwrap(CAST(128 AS Uint32)) as IsBlocked,
 	CAST(g_1.StatusBitmask AS Uint32) & Unwrap(CAST(128 AS Uint32)) as IsBlockedStudent

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.ChildId as ChildId,
 	g_2.ParentId as ParentId,
@@ -19,7 +18,6 @@ GROUP BY
 	g_2.ParentId
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT DISTINCT
 		x.TestId as TestId
 	FROM
@@ -33,7 +32,6 @@ ORDER BY
 	t2.Id DESC
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.TestId as TestId

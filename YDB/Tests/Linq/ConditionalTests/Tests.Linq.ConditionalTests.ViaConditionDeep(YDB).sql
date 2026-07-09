@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.StringProp = '1'u OR x.StringProp IS NULL as child,
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.StringProp as StringProp

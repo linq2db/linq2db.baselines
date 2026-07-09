@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	Coalesce(t2.Reason, ''u) as Reason

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.IntHolder as IntHolder,

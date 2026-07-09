@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.StatsTypeId as StatsTypeId,
 	st.FullName as FullName,

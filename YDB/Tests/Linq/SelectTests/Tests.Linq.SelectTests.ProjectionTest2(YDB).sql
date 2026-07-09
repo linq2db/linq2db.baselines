@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Patient.PersonID as PersonID,
 	a_Patient.Diagnosis as Diagnosis

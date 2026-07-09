@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.ID as ID
 	FROM
@@ -21,7 +20,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.PK as PK,
 	t1.ID as ID,
@@ -30,7 +28,6 @@ FROM
 	test_in_1 t1
 
 -- YDB Ydb
-
 SELECT
 	t1.PK as PK,
 	t1.ID as ID

@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
 	Parent.ParentID > 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -63,7 +60,6 @@ WHERE
 	Parent.ParentID IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

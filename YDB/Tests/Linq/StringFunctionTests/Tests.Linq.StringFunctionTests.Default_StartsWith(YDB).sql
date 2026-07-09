@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	CollatedTable
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -34,7 +32,6 @@ WHERE
 	r.CaseSensitive LIKE 'TestSt%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -43,7 +40,6 @@ WHERE
 	r.CaseInsensitive LIKE 'TestSt%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -52,7 +48,6 @@ WHERE
 	r.CaseSensitive LIKE 'testst%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

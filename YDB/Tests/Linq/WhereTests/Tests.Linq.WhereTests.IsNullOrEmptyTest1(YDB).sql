@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	nm.MiddleName as MiddleName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	NOT (nm.MiddleName IS NULL OR CAST(Unicode::GetLength(nm.MiddleName) AS Int32) = 0)
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

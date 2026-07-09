@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	a_ObjectBOptional.Id as Id_1,

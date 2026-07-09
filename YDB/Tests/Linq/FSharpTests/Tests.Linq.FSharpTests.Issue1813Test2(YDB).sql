@@ -50,7 +50,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -62,7 +61,6 @@ ORDER BY
 	m_1.Id
 
 -- YDB Ydb
-
 SELECT
 	after_1.Id as Id,
 	after_1.Name as Name

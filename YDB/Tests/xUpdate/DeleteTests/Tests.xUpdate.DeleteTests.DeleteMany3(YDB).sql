@@ -1,26 +1,22 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	GrandChild
 WHERE
 	GrandChild.ParentID >= 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID >= 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
 	Parent.ParentID >= 1000
 
 -- YDB Ydb
-
 INSERT INTO Parent
 (
 	ParentID
@@ -31,7 +27,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Child
 (
 	ParentID,
@@ -44,7 +39,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -59,7 +53,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -74,21 +67,18 @@ VALUES
 )
 
 -- YDB Ydb
-
 DELETE FROM
 	GrandChild
 WHERE
 	GrandChild.ParentID >= 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID >= 1000
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

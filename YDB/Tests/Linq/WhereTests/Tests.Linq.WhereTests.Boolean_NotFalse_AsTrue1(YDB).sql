@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.MoneyValue as MoneyValue,

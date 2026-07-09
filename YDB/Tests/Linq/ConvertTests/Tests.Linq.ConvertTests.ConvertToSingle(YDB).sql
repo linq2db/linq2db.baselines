@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(p.MoneyValue AS Float)) as c1
 FROM

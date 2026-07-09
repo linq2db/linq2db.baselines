@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID,
 	Unwrap(CAST(true AS Bool)) as val

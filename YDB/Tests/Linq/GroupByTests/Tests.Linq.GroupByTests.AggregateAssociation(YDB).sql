@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(Coalesce(a_Parent.Value1, 0)) as Value_1
 FROM

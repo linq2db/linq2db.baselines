@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.PersonID as PersonID
 FROM

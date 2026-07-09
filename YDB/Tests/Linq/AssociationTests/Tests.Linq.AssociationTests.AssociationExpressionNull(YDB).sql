@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_ChildOuter.ParentID as ParentID
 FROM

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.BlobValue as BlobValue
@@ -38,7 +37,6 @@ WHERE
 	BlobClass.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.BlobValue as BlobValue

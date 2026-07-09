@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.MiddleName as MiddleName
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce(t1.MiddleName, '-1'u)
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

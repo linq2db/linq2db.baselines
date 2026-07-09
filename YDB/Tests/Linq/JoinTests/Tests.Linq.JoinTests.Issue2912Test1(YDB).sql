@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CASE
 		WHEN t2.ParentID IS NOT NULL THEN t2.ChildID

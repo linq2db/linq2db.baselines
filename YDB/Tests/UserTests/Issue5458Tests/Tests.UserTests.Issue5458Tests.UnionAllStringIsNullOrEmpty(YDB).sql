@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value_1 IS NULL OR CAST(Unicode::GetLength(t1.Value_1) AS Int32) = 0 as IsEmpty

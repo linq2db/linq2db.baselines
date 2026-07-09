@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unicode::ToLower(p.Taxonomy) as c1
 FROM

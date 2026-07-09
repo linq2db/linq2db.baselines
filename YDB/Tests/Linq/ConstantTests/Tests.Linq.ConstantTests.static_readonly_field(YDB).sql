@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.GuidValue as GuidValue,
@@ -12,7 +11,6 @@ WHERE
 	e.GuidNullableValue = Uuid('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,

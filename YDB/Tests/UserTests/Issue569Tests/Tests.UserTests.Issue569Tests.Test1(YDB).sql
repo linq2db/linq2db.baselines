@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	patient_1.PersonID as PersonID,
 	person_1.FirstName as FirstName,

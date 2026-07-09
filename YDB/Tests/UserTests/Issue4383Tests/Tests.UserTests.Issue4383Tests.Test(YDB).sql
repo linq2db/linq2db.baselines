@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	m_1.Id as Id_1,
@@ -25,7 +24,6 @@ ORDER BY
 	m_1.Id_1
 
 -- YDB Ydb
-
 SELECT
 	m_1.LINE_ID as LINE_ID,
 	d.LINE_ID as LineId_1,
@@ -40,7 +38,6 @@ ORDER BY
 	m_1.LINE_ID
 
 -- YDB Ydb
-
 SELECT
 	t1.LINE_ID as LINE_ID,
 	t1.LINE_ID as Id_1

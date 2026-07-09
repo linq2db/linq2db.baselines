@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id
 FROM
 	ConcatTestEntity e
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Str1 as Str1,

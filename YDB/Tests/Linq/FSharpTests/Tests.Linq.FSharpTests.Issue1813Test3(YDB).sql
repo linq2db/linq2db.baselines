@@ -50,7 +50,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	after_1.Id as Id,
 	after_1.Name as Name,

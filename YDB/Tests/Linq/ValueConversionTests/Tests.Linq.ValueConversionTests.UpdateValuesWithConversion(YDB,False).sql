@@ -10,7 +10,6 @@ WHERE
 	TableWithConverterValue.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.NoConversion as NoConversion,
@@ -34,7 +33,6 @@ WHERE
 	TableWithConverterValue.Id = 2
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.NoConversion as NoConversion,

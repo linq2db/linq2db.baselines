@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p1.Value1 as Value1,
 	CAST(NULL AS Int32) as ParentID

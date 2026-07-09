@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	b_1.Date_1 as Date_1,
 	COUNT(*) as Count_1

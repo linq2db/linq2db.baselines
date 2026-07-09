@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	s.ParentID as ParentID,
 	c_1.ParentID as ParentID_1,
@@ -11,7 +10,6 @@ WHERE
 	c_1.ChildID < 0 OR c_1.ParentID IS NULL
 
 -- YDB Ydb
-
 SELECT
 	m_1.ParentID as ParentID,
 	d.ParentID as ParentID_1,
@@ -21,7 +19,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(0 AS Int32)) as projection__set_id__,
 	t2.ParentID as ParentID,
@@ -37,7 +36,6 @@ WHERE
 	p_1.ParentID <> 1
 
 -- YDB Ydb
-
 SELECT
 	m_1.ParentID as ParentID,
 	d.ParentID as ParentID_1,
@@ -47,7 +45,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1
@@ -55,7 +52,6 @@ FROM
 	Parent t1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

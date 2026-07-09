@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	Unicode::JoinFromList(AGGREGATE_LIST(DISTINCT Coalesce(g_1.NullableValue, ''u)), ', 'u) as NullableDistinct,
@@ -15,7 +14,6 @@ ORDER BY
 	Id
 
 -- YDB Ydb
-
 SELECT
 	t1.PK as PK,
 	t1.Id as Id,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(grp_1.MoneyValue) as Total,
 	DateTime::GetYear(grp_1.c1) as Year_1,
@@ -16,7 +15,6 @@ GROUP BY
 	grp_1.c1
 
 -- YDB Ydb
-
 SELECT
 	SUM(grp_1.MoneyValue) as Total,
 	DateTime::GetYear(grp_1.c1) as Year_1,

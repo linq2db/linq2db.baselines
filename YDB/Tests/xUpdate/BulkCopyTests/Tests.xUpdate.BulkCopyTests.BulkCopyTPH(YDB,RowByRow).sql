@@ -66,7 +66,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Discriminator as Discriminator,
 	t1.Id as Id,
@@ -80,7 +79,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -95,7 +93,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -110,7 +107,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -125,7 +121,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -140,7 +135,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -155,7 +149,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,

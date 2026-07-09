@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.MoneyValue as MoneyValue
 FROM

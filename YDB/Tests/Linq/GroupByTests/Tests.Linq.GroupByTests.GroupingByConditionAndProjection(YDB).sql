@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.Key_1 as Key_1,
 	COUNT(*) as Count_1
@@ -17,7 +16,6 @@ GROUP BY
 	g_2.Key_1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID

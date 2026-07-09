@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.City_Code as City_Code,
 	d_1.City_Name as City_Name
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN Cities d_1 ON d_1.City_Code = m_1.City_Code
 
 -- YDB Ydb
-
 SELECT
 	a.First_Name as First_Name,
 	a.Last_Name as Last_Name,

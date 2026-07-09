@@ -1,69 +1,52 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS Parent;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS Child;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS GrandChild;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS InheritanceParent;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS InheritanceChild;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS Doctor;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS Patient;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS Person;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS LinqDataTypes;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS AllTypes;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS CollatedTable;
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS TestMerge1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS TestMerge2;
 
 -- YDB Ydb
-
 CREATE TABLE Parent      (ParentID Int32 NOT NULL, Value1 Int32, PRIMARY KEY (ParentID));
 
 -- YDB Ydb
-
 CREATE TABLE Child       (ParentID Int32 NOT NULL, ChildID Int32 NOT NULL, PRIMARY KEY (ChildID));
 
 -- YDB Ydb
-
 CREATE TABLE GrandChild  (ParentID Int32, ChildID Int32, GrandChildID Int32, PRIMARY KEY (GrandChildID));
 
 -- YDB Ydb
-
 CREATE TABLE LinqDataTypes
 (
 	ID             SERIAL NOT NULL,
@@ -81,7 +64,6 @@ CREATE TABLE LinqDataTypes
 );
 
 -- YDB Ydb
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId Int32 NOT NULL,
@@ -91,7 +73,6 @@ CREATE TABLE InheritanceParent
 );
 
 -- YDB Ydb
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  Int32 NOT NULL,
@@ -102,7 +83,6 @@ CREATE TABLE InheritanceChild
 );
 
 -- YDB Ydb
-
 CREATE TABLE Person
 (
 	PersonID   SERIAL NOT NULL,
@@ -114,7 +94,6 @@ CREATE TABLE Person
 );
 
 -- YDB Ydb
-
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	VALUES
 	(1, 'John',   'Pupkin',    NULL, 'M'),
@@ -123,7 +102,6 @@ INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	(4, 'Jürgen', 'König',     'Ko', 'M');
 
 -- YDB Ydb
-
 CREATE TABLE Doctor
 (
 	PersonID Int32 NOT NULL,
@@ -132,11 +110,9 @@ CREATE TABLE Doctor
 );
 
 -- YDB Ydb
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry');
 
 -- YDB Ydb
-
 CREATE TABLE Patient
 (
 	PersonID  Int32 NOT NULL,
@@ -145,11 +121,9 @@ CREATE TABLE Patient
 );
 
 -- YDB Ydb
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs\' Delirium of Persecution');
 
 -- YDB Ydb
-
 CREATE TABLE AllTypes
 (
 	ID                       SERIAL NOT NULL,
@@ -171,7 +145,6 @@ CREATE TABLE AllTypes
 );
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -185,7 +158,6 @@ VALUES(1,
 		CAST(NULL AS Text), CAST(NULL AS Text), CAST(NULL AS Text), CAST(NULL AS Text));
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -199,7 +171,6 @@ VALUES(2,
 		'23233', 'тест', '234', '1');
 
 -- YDB Ydb
-
 CREATE TABLE CollatedTable
 (
 	Id              Int32 NOT NULL,
@@ -209,7 +180,6 @@ CREATE TABLE CollatedTable
 );
 
 -- YDB Ydb
-
 CREATE TABLE TestMerge1
 (
 	Id              Int32 NOT NULL,
@@ -240,7 +210,6 @@ CREATE TABLE TestMerge1
 );
 
 -- YDB Ydb
-
 CREATE TABLE TestMerge2
 (
 	Id              Int32 NOT NULL,

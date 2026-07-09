@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Key_1 as Key_1,
 	d.FirstName as FirstName,
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN Person d ON m_1.Key_1 = d.FirstName
 
 -- YDB Ydb
-
 SELECT
 	t2.Key_1 as Key_1,
 	t2.Key_1 as Key_2

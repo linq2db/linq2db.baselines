@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE FluentTemp_Cache
 (
 	ID       Int32,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.`Value` as Name_1,
@@ -42,11 +40,9 @@ WHERE
 	t.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- YDB Ydb
-
 CREATE TABLE FluentTemp_Cache
 (
 	ID       Int32,
@@ -78,7 +74,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.`Value` as Name_1,
@@ -89,11 +84,9 @@ WHERE
 	t.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- YDB Ydb
-
 CREATE TABLE FluentTemp_Cache
 (
 	ID       Int32,
@@ -125,7 +118,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.`Column` as Name_1,
@@ -136,11 +128,9 @@ WHERE
 	t.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- YDB Ydb
-
 CREATE TABLE FluentTemp_Cache
 (
 	ID       Int32,
@@ -172,7 +162,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.`Column` as Name_1,
@@ -183,6 +172,5 @@ WHERE
 	t.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 

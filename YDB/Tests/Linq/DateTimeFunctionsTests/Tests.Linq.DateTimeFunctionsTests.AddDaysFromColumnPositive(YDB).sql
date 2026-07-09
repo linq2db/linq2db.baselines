@@ -40,7 +40,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -49,7 +48,6 @@ WHERE
 	t.ID = 5000 AND t.DateTimeValue + DateTime::IntervalFromDays(t.SmallIntValue) > DateTime::MakeTimestamp(DateTime::ParseIso8601(Unicode::ReplaceAll('2018-'u || Unicode::Substring(Unwrap(CAST(101 AS Text)), 1, 2) || '-'u || Unicode::Substring(Unwrap(CAST(102 AS Text)), 1, 2) || ' 'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2) || ':'u || Unicode::Substring(Unwrap(CAST(100 AS Text)), 1, 2), ' 'u, 'T'u) || 'Z'u))
 
 -- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE

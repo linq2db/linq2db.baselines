@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	tt.Key_1 as Key_1,
 	SUM(tt.ChildID) as Sum_1

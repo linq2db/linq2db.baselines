@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.MiddleName as MiddleName,
 	COUNT(*) as Count_1

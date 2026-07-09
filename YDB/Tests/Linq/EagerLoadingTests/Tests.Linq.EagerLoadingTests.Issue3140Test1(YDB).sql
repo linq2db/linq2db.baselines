@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Id as Id,
 	a_Child.Id as Id_1,

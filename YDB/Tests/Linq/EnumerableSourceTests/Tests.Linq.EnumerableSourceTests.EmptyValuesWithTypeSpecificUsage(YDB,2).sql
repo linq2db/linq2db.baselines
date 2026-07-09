@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	SUM(g_1.Id) as Count_1

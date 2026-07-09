@@ -14,7 +14,6 @@ RETURNING
 	ID
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,

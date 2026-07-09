@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		c_1.Id as Id,
 		ROW_NUMBER() OVER (ORDER BY c_1.Name DESC) as field,

@@ -3,7 +3,6 @@
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
 -- YDB Ydb
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id

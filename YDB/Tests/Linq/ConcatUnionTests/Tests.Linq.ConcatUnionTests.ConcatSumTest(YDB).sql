@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(t3.PersonID) as Sum_1
 FROM

@@ -1,9 +1,7 @@
 ﻿-- YDB Ydb
-
 DELETE FROM test_temp
 
 -- YDB Ydb
-
 INSERT INTO test_temp
 (
 	Field1
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO test_temp
 (
 	Field1
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT 2 OFFSET $skip 
 
 -- YDB Ydb
-
 DELETE FROM test_temp
 
 -- YDB Ydb
-
 INSERT INTO test_temp
 (
 	Field1
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO test_temp
 (
 	Field1

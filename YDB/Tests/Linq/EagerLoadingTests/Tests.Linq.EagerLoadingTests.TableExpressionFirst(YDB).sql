@@ -29,7 +29,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	a_Details.UserId as UserId,

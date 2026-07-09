@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(g_1.ParentID) as Sum_1
 FROM

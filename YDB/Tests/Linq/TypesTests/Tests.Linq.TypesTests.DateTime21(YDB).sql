@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.MoneyValue as MoneyValue,
@@ -29,7 +28,6 @@ WHERE
 	LinqDataTypes.ID = 1
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.MoneyValue as MoneyValue,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.`Value` as BaseValue_1
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.`Value` as BaseValue_1

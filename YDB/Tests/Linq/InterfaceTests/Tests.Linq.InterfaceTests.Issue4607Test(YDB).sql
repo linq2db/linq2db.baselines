@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO SomeTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.ClassProp as ClassProp,
