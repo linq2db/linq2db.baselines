@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceParentId",
@@ -8,7 +7,6 @@ FROM
 	"InheritanceParent" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceParentId",

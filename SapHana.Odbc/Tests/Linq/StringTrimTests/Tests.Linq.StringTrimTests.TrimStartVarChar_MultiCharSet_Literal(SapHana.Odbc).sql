@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	LTRIM("t"."VarCharColumn", '.+')
 FROM
 	"StringTrimTable" "t"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."CharColumn",

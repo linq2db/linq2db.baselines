@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("Child_ParentID", "Child_ChildID")
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN "CTE_1" "c_1" ON "p"."ParentID" = "c_1"."Child_ParentID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1",

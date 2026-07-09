@@ -17,7 +17,6 @@ VALUES
 WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -47,7 +46,6 @@ VALUES
 WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",

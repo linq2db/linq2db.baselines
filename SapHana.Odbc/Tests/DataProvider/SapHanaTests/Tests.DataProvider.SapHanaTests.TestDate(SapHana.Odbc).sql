@@ -1,9 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('2012-12-12' as date) from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('2012-12-12' as date) from dummy
 
 -- SapHana.Odbc SapHanaOdbc

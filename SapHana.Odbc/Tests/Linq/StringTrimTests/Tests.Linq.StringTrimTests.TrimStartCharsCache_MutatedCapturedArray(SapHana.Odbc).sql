@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	LTRIM("t"."VarCharColumn", '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"t"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	LTRIM("t"."VarCharColumn", 'ab')
 FROM

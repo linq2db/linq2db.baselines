@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	Coalesce("t"."Str1", '') || Coalesce("t"."Str2", '') || Coalesce("t"."StrReq", '')
@@ -9,7 +8,6 @@ ORDER BY
 	"t"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

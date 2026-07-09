@@ -26,7 +26,6 @@ WHERE
 	"d"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id"
 FROM
@@ -47,7 +46,6 @@ WHERE
 	"d"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id"
 FROM

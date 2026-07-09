@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "TableWithIdentity"
 (
 	"Value"
@@ -23,7 +22,6 @@ FROM
 	"TableWithIdentitySrc" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

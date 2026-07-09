@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"after_1"."Id",
 	"after_1"."Name",

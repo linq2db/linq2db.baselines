@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 /* My Test */
 MERGE INTO "TestMerge1" "Target"
 USING (

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_1"."Id",
 	Coalesce(STRING_AGG("g_1"."NullableValue", ', ' ORDER BY "g_1"."NullableValue", "g_1"."Id"), ''),
@@ -12,7 +11,6 @@ ORDER BY
 	"g_1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."Id",

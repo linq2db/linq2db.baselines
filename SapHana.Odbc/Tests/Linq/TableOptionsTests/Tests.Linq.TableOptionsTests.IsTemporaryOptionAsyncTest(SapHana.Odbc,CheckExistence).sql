@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "temp_table1"
 (
 	"ID"    Integer NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "temp_table2"
 (
 	"ID"    Integer NOT NULL,
@@ -36,7 +34,6 @@ CREATE COLUMN TABLE "temp_table2"
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "temp_table2"
 (
 	"ID",
@@ -49,7 +46,6 @@ FROM
 	"temp_table1" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value"
@@ -57,7 +53,6 @@ FROM
 	"temp_table1" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value"
@@ -116,22 +111,18 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM "temp_table1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM "temp_table2"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table2"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table1"';

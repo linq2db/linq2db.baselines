@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS "Id", CAST(1 AS Decimal) AS "Value" FROM DUMMY) "arg" ON "entity"."PersonID" = "arg"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"

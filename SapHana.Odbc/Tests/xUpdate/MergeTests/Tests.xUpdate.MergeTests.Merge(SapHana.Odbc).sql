@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "LinqDataTypes" "Target"
 USING (
 	SELECT

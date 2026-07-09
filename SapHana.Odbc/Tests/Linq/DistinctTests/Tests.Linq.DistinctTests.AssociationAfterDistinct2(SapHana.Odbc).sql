@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r_1"."ParentID",
 	"r_1"."ChildID",
@@ -45,7 +43,6 @@ ORDER BY
 	"t1"."Count_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -61,7 +58,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

@@ -141,7 +141,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Code",
 	"t1"."Id",

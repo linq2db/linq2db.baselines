@@ -12,7 +12,6 @@ SET
 	"Value" = BITAND(("t1"."Value" + ?) - BITAND("t1"."Value", ?), BITNOT(?))
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

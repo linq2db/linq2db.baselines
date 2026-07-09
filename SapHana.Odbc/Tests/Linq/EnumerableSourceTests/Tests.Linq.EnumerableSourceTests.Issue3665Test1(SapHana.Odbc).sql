@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."PersonID" + "y"."item"
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 3 FROM DUMMY) "y"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

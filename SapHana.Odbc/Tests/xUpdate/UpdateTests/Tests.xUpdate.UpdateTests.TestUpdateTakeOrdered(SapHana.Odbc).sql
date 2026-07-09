@@ -198,7 +198,6 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Value1"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Key_1",
 	"x"."Index_1"
@@ -17,7 +16,6 @@ ORDER BY
 	"x"."Key_1" DESC
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

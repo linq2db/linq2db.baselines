@@ -1,9 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast('12345' as char(20)) from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT Cast(NULL    as char(20)) from dummy
 
 -- SapHana.Odbc SapHanaOdbc

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM DUMMY
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -35,7 +33,6 @@ ORDER BY
 	"t1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM DUMMY
@@ -63,7 +60,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

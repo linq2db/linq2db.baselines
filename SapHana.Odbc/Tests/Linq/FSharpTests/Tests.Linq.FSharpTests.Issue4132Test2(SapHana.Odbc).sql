@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Issue4132Table" "row_1"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"row_1"."Number" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Number",

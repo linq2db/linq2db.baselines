@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	LEAD("t"."DoubleValue") OVER (ORDER BY "t"."Id"),
 	LAG("t"."DecimalValue") OVER (ORDER BY "t"."Id"),

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	MAX("t1"."PersonID")
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t"
 WHERE

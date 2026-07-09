@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Issue5289Table" "t1"
 SET
@@ -8,7 +7,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue5289Table"
 (
 	"Id",
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."PictureId",
@@ -35,7 +32,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Issue5289Table" "t1"
 SET
@@ -44,7 +40,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."PictureId",

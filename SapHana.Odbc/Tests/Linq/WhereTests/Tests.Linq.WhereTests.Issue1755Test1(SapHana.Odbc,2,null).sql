@@ -11,7 +11,6 @@ WHERE
 	"c_1"."ParentID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

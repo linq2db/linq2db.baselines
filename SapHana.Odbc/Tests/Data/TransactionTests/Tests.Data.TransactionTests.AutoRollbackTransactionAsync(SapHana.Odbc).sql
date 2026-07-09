@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Parent" "t"
 SET
@@ -25,7 +24,6 @@ WHERE
 	"t"."ParentID" = 1010
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"
