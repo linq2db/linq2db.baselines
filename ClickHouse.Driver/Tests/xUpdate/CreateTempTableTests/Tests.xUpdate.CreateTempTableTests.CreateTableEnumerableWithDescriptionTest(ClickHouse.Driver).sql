@@ -4,16 +4,13 @@ DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.Driver ClickHouse
 
-CREATE TABLE IF NOT EXISTS TempTable
+CREATE TABLE IF NOT EXISTS `<>f__AnonymousType224``1`
 (
-	Name String,
-
-	PRIMARY KEY (Name)
+	Name Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY Name
+ENGINE = Memory()
 
-INSERT ASYNC BULK TempTable(Name)
+INSERT ASYNC BULK `<>f__AnonymousType224``1`(Name)
 
 -- ClickHouse.Driver ClickHouse
 
@@ -21,9 +18,9 @@ SELECT
 	t.Name
 FROM
 	Person p
-		INNER JOIN TempTable t ON p.FirstName = t.Name
+		INNER JOIN `<>f__AnonymousType224``1` t ON p.FirstName = t.Name
 
 -- ClickHouse.Driver ClickHouse
 
-DROP TABLE IF EXISTS TempTable
+DROP TABLE IF EXISTS `<>f__AnonymousType224``1`
 

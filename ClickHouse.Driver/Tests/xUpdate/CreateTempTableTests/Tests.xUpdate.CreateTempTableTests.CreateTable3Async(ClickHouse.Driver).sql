@@ -2,12 +2,9 @@
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	ID Int32,
-
-	PRIMARY KEY (ID)
+	ID Int32
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.Driver ClickHouse
 

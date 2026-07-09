@@ -6,12 +6,9 @@ DROP TABLE IF EXISTS TempTable
 
 CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 (
-	Name String,
-
-	PRIMARY KEY (Name)
+	Name Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY Name
+ENGINE = Memory()
 
 INSERT ASYNC BULK TempTable(Name)
 
