@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."Name",

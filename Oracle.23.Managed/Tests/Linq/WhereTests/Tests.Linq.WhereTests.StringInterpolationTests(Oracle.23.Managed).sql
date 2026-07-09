@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || p."LastName") = ('{}' || p."LastName")
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

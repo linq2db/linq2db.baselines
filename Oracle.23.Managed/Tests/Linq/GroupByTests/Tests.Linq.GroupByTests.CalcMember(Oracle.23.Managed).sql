@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	groupedData_1."Key_1",
 	COUNT(*)

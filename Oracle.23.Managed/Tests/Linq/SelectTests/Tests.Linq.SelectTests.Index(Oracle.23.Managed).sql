@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",
@@ -21,7 +20,6 @@ ORDER BY
 	m_2."ChildID" DESC
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",

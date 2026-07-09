@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "CacheTestTable" Target
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM sys.dual
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -35,7 +33,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "CacheTestTable" Target
 USING (
 	SELECT 1 AS "Id", 1 AS "Value_1" FROM sys.dual
@@ -63,7 +60,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value"

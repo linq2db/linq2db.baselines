@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ CONTAINERS(DEFAULT_PDB_HINT='NO_PARALLEL') */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "UnusedSourceTable" Target
 USING (
 	SELECT 1 FROM sys.dual) "Source"
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Value" as "Value_1"

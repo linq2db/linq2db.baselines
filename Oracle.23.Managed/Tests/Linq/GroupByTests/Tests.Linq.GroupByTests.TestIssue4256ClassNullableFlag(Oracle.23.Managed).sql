@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	1,
 	CASE
@@ -10,7 +9,6 @@ FROM
 	"LinqDataTypes" it
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",

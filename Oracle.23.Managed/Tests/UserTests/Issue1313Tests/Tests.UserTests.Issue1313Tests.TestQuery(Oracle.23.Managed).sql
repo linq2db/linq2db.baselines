@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "ValueItem"
 (
 	"Value"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	row_1."Value"
 FROM

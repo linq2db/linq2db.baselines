@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PQ_CONCURRENT_UNION */
 	p."ParentID",
 	p."Value1"

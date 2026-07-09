@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Parent" t
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."ParentID",
 	t."Value1"

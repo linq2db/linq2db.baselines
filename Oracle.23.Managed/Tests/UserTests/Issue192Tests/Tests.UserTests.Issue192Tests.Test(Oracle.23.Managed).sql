@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +57,6 @@ WHERE
 	t1."BoolValue" = 'N'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -78,7 +76,6 @@ WHERE
 	t1."GuidValue" = :GuidValue
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -91,7 +88,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -104,7 +100,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -117,7 +112,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -130,7 +124,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -143,7 +136,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -156,7 +148,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -169,7 +160,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -182,7 +172,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -195,7 +184,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",

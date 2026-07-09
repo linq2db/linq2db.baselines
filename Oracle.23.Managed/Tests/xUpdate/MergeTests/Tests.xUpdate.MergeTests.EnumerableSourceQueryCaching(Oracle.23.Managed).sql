@@ -1,10 +1,8 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT 0 AS "Id", 1 AS "Field1", 2 AS "Field2", 4 AS "Field4" FROM sys.dual) "Source"
@@ -27,7 +25,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -41,12 +38,10 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT 10 AS "Id", 11 AS "Field1", 12 AS "Field2", 14 AS "Field4" FROM sys.dual) "Source"
@@ -69,7 +64,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -83,12 +77,10 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT 20 AS "Id", 21 AS "Field1", 22 AS "Field2", 24 AS "Field4" FROM sys.dual
@@ -113,7 +105,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field1",

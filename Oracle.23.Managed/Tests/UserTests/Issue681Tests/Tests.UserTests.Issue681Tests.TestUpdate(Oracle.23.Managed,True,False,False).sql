@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL

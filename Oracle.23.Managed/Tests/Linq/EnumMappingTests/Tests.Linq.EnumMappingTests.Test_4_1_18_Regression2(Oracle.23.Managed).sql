@@ -8,7 +8,6 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN t1."BigIntValue" IS NOT NULL AND t1."IntValue" IS NOT NULL

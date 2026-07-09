@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	p1."PersonID",
 	p1."Gender",

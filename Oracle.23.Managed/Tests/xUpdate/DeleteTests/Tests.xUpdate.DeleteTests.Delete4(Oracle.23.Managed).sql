@@ -1,12 +1,10 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"GrandChild" gc
 WHERE
 	gc."GrandChildID" IN (1001, 1002)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "GrandChild"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +41,6 @@ WHERE
 	gc."ParentID" = 1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"GrandChild" t1
 WHERE
@@ -64,7 +59,6 @@ WHERE
 	)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

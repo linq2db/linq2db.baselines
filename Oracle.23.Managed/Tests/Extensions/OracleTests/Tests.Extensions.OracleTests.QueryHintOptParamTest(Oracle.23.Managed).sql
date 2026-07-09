@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ OPT_PARAM('star_transformation_enabled' 'true') */
 	p."ParentID",
 	p."Value1"

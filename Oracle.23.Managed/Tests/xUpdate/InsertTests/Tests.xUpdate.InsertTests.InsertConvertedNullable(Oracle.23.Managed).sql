@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."BigIntValue"
@@ -32,7 +30,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE

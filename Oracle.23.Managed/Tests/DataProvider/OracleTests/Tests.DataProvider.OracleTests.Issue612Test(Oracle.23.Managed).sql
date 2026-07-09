@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "DateTimeOffsetTable"
 (
 	"DateTimeOffsetValue" timestamp with time zone NOT NULL
@@ -19,7 +18,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."DateTimeOffsetValue"
 FROM
@@ -27,6 +25,5 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DROP TABLE "DateTimeOffsetTable"
 

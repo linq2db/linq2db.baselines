@@ -1,9 +1,7 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE FUNCTION ISSUE3742(myParameter IN VARCHAR2) RETURN BOOLEAN AS BEGIN RETURN TRUE; END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH
 FUNCTION convert_bool(i IN VARCHAR2) RETURN NUMBER AS
 BEGIN
@@ -14,6 +12,5 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 DROP FUNCTION ISSUE3742
 

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."PersonID",
 	t1."Diagnosis"
@@ -9,7 +8,6 @@ ORDER BY
 	t1."PersonID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."PersonID",
 	t1."Taxonomy"
@@ -19,7 +17,6 @@ ORDER BY
 	t1."PersonID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

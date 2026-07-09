@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	c_1."LastName" = 'Limonadovy'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Person" c_1
 SET
@@ -32,7 +29,6 @@ WHERE
 	c_1."LastName" = 'Limonadovy'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

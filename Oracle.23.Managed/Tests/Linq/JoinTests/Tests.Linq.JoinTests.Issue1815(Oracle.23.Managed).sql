@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."InId",
 	CASE
@@ -18,7 +17,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."InId",
 	CASE
