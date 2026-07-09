@@ -26,8 +26,6 @@ ORDER BY
 
 
 
-
-
 -- SqlServer.2019
 
 SELECT
