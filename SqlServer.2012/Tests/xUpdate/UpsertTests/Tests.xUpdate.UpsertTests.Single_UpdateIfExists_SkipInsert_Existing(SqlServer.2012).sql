@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'updated',2,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -27,7 +26,6 @@ SET
 ;
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

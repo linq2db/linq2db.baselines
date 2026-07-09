@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[##TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[##TestTable]
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[##TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[##TestTable]
 

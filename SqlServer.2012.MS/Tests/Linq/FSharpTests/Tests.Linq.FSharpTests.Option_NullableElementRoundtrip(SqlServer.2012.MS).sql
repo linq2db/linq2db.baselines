@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]
@@ -43,7 +42,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

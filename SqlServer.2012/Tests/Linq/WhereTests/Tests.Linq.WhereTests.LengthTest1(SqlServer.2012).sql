@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	LEN([nm].[MiddleName] + N'.') <> 1 OR [nm].[MiddleName] IS NULL
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

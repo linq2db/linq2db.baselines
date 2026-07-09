@@ -13,7 +13,6 @@ WHERE
 	(Coalesce([e].[StringValue], N'') + N'1') = @p
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

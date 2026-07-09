@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
 	(1,N'***OOO***'), (2,N'***SSS***')
@@ -29,7 +28,6 @@ VALUES
 ;
 
 -- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
 	(3,N'***III***')
@@ -59,7 +57,6 @@ VALUES
 ;
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -69,7 +66,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

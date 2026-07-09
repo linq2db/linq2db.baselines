@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TInserted]
 (
 	[ParentID] Int NOT NULL,
@@ -44,7 +42,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SqlServer.2012
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -52,7 +49,6 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 -- SqlServer.2012
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -62,12 +58,10 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#TInserted]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TInserted]
 
 -- SqlServer.2012
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

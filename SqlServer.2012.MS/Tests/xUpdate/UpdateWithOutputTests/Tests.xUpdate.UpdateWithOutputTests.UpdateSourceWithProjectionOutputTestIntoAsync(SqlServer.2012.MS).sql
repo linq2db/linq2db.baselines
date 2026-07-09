@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 UPDATE
 	[TableWithData]
 SET
@@ -20,7 +19,6 @@ WHERE
 	[TableWithData].[Id] > 3
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

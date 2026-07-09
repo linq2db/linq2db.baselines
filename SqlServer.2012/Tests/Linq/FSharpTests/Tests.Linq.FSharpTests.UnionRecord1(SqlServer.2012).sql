@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[p].[PersonID],
 	[p].[MiddleName],

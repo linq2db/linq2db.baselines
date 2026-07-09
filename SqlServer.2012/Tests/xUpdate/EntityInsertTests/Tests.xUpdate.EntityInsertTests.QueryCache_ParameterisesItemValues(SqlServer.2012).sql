@@ -57,7 +57,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -92,7 +91,6 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

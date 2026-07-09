@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 -- SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
@@ -21,7 +19,6 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 -- SqlServer.2012
-
 INSERT INTO [tempdb]..[#TableWithData_target]
 (
 	[Id],
@@ -48,7 +45,6 @@ WHERE
 	[p].[Gender] = 'F'
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -57,7 +53,6 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -66,12 +61,10 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 -- SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_output]
 
 -- SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_target]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_target]
 

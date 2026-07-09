@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[Id],
 	Coalesce([r].[FirstName], N'') + N' ' + Coalesce([r].[LastName], N'')
@@ -30,7 +28,6 @@ FROM
 	[Issue3323Table] [r_1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]

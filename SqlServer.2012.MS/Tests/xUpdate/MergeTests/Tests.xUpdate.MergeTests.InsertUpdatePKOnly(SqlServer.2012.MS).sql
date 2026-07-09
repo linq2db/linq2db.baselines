@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
 	(1), (2), (3)
@@ -21,7 +20,6 @@ VALUES
 ;
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID]
 FROM

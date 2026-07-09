@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 UPDATE
 	[OuterTable]
 SET
@@ -15,7 +14,6 @@ SET
 	)
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
