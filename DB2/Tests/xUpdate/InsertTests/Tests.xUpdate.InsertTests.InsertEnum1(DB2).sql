@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -34,7 +33,6 @@ WHERE
 	"t1"."ParentID" = @id AND "t1"."Value1" = @Value1
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

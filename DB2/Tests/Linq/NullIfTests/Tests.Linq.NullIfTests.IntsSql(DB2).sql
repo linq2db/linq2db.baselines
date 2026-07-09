@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "s"."Int" = 2 THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -20,7 +18,6 @@ WHERE
 	"s"."Int" = 2
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	"s"."Int" <> 2
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "s"."Int" = 4 THEN NULL
@@ -41,7 +37,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -50,7 +45,6 @@ WHERE
 	"s"."Int" = 4
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -59,7 +53,6 @@ WHERE
 	"s"."Int" <> 4
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"s"."Int"
 FROM
@@ -68,7 +61,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -77,14 +69,12 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
 	"Src" "s"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "s"."NullableInt" = 2 THEN NULL
@@ -96,7 +86,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -105,7 +94,6 @@ WHERE
 	"s"."NullableInt" = 2 OR "s"."NullableInt" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -114,7 +102,6 @@ WHERE
 	NOT ("s"."NullableInt" = 2 OR "s"."NullableInt" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "s"."NullableInt" = 4 THEN NULL
@@ -126,7 +113,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -135,7 +121,6 @@ WHERE
 	"s"."NullableInt" = 4 OR "s"."NullableInt" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -144,7 +129,6 @@ WHERE
 	NOT ("s"."NullableInt" = 4 OR "s"."NullableInt" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"s"."NullableInt"
 FROM
@@ -153,7 +137,6 @@ ORDER BY
 	"s"."Int"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -162,7 +145,6 @@ WHERE
 	"s"."NullableInt" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

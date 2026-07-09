@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",
@@ -27,7 +26,6 @@ FROM
 	) "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"k_1"."Item1",
 	"k_1"."Item2",
@@ -47,7 +45,6 @@ ORDER BY
 	"d"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"k_1"."Item1",
 	"k_1"."Item2",

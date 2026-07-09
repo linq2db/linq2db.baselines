@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -13,7 +12,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Id",
 	"p"."Name"
@@ -23,7 +21,6 @@ ORDER BY
 	"p"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1 ("Id", "field", "Name")
 AS
 (

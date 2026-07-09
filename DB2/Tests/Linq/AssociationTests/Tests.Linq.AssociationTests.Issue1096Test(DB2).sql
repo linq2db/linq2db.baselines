@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	"t"."Pk",
 	"t"."Id",

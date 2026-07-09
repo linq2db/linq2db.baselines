@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."GuidValue",
@@ -11,7 +10,6 @@ WHERE
 	"e"."Id" = 1 AND "e"."Id" = 2
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",
@@ -21,7 +19,6 @@ FROM
 	"TestConstantsData" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."GuidValue",
@@ -33,7 +30,6 @@ WHERE
 	"e"."Id" = 1 AND "e"."Id" = 2
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

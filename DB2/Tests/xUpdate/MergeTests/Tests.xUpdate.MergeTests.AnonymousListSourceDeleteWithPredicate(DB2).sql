@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -221,7 +218,6 @@ FROM
 	"TestMerge2" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(3), (4), (5), (6)
@@ -233,7 +229,6 @@ ON ("Source"."Key_1" = "Target"."Id")
 WHEN MATCHED AND "Source"."Key_1" = 4 THEN DELETE
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

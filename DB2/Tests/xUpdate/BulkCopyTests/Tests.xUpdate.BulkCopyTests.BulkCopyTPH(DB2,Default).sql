@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -15,7 +14,6 @@ VALUES
 (3,3,NULL,NULL,'Str3','Y')
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Discriminator",
 	"t1"."Id",
@@ -29,7 +27,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -44,7 +41,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -59,7 +55,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -74,7 +69,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -89,7 +83,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",
@@ -104,7 +97,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Discriminator",
 	"x"."Id",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -39,7 +37,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."GrandChildID",
 	"a_Child_1"."ParentID",
@@ -25,7 +24,6 @@ ORDER BY
 	"t1"."GrandChildID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

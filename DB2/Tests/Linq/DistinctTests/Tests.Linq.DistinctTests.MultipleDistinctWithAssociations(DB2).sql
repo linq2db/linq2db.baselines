@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	"p"."ParentID",
 	"p"."Value1"
@@ -17,7 +16,6 @@ ORDER BY
 	"p"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -25,7 +23,6 @@ FROM
 	"Parent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

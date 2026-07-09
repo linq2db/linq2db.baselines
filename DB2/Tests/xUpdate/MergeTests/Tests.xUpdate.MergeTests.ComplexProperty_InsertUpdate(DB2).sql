@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,'alpha-new',1), (3,'gamma',1)
@@ -74,7 +73,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

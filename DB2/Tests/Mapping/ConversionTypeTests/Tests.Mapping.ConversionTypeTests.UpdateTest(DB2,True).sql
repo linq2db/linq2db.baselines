@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TrimTestTable" "t1"
 SET
@@ -8,7 +7,6 @@ WHERE
 	"t1".ID = 3
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TrimTestTable" "t"
 SET
@@ -17,7 +15,6 @@ WHERE
 	"t"."Data" = '***XXX***'
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"TrimTestTable" "t"
 SET
@@ -26,7 +23,6 @@ WHERE
 	"t"."Data" = '***HHH***'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -36,7 +32,6 @@ ORDER BY
 	"r".ID
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r".ID,
 	"r"."Data"

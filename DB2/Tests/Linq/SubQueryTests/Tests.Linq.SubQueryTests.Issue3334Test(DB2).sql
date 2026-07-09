@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"entity1"."FirstName",
 	"entity1"."PersonID",

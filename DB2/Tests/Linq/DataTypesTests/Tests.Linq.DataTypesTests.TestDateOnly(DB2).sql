@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = '2020-02-29' AND "r"."ColumnNullable" = '2020-01-01'
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "DateOnlyTable"
 (
 	"Id",
@@ -100,7 +95,6 @@ VALUES
 (2,'2020-02-29','2020-01-01')
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -111,14 +105,12 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 INSERT BULK "DateOnlyTable"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ChildID",
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN "Child" "d" ON CAST("m_1"."ParentID" AS BigInt) = "d"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID"
 FROM

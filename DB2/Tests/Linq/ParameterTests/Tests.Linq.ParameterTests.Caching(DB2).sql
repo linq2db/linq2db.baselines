@@ -11,7 +11,6 @@ WHERE
 	"x"."ParentID" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -33,7 +32,6 @@ WHERE
 	"x"."ParentID" = @p OR "x"."ParentID" = @p_1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -53,7 +51,6 @@ WHERE
 	"x"."ParentID" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

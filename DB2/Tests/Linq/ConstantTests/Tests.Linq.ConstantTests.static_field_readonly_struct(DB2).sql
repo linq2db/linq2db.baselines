@@ -15,7 +15,6 @@ WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",
@@ -41,7 +40,6 @@ WHERE
 	"e"."Id" = @Id AND "e"."Id" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

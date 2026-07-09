@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1 ("Obj_Operator")
 AS
 (
@@ -15,7 +14,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"person_1"."LastName"
 FROM

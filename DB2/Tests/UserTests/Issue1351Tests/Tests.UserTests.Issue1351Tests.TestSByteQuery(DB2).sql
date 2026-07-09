@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."TestField",
@@ -10,7 +9,6 @@ WHERE
 	"t1"."TestField" = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."TestField",

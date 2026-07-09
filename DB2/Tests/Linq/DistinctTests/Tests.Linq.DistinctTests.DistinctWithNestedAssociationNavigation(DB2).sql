@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	"gc"."GrandChildID",
 	"a_Parent"."Value1"
@@ -11,7 +10,6 @@ ORDER BY
 	"gc"."GrandChildID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID",

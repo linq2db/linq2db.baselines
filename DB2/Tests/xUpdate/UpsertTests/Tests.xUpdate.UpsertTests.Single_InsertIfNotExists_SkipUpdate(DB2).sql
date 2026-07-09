@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Name",
@@ -101,14 +100,12 @@ WHEN NOT MATCHED THEN
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Name",

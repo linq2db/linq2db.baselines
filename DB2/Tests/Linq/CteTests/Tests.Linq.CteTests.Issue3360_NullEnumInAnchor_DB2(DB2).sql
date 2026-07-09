@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH "cte" ("Id", "Enum1")
 AS
 (

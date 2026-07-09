@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p1"."ParentID",
 	"p1"."Value1"
@@ -17,7 +16,6 @@ WHERE
 	"p2"."ParentID" <= 3
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

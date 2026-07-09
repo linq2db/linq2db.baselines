@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_1"."GroupId",
 	MAX("g_1"."DataValue"),
@@ -27,7 +26,6 @@ GROUP BY
 	"g_1"."GroupId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GroupId",

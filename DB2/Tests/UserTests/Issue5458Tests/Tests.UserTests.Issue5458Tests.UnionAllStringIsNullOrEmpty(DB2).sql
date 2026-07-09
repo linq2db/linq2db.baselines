@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	CAST("t1"."Value_1" IS NULL OR CHAR_LENGTH("t1"."Value_1") = 0 AS smallint)

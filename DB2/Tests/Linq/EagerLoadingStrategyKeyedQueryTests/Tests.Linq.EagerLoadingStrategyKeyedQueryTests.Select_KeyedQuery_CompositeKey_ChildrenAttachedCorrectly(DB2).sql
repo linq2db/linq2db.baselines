@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."Region",
 	"p"."Code",
@@ -11,7 +10,6 @@ ORDER BY
 	"p"."Code"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"k_1"."Item1",
 	"k_1"."Item2",

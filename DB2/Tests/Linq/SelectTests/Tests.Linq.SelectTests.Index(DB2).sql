@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_2"."ParentID",
 	"m_2"."ChildID",
@@ -21,7 +20,6 @@ ORDER BY
 	"m_2"."ChildID" DESC
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_2"."ParentID",
 	"m_2"."ChildID",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."GuidValue",
@@ -12,7 +11,6 @@ WHERE
 	"e"."GuidNullableValue" = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

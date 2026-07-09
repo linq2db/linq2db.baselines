@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT
@@ -57,7 +56,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

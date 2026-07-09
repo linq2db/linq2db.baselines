@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."Key_1",
 	"d"."ParentID",
@@ -26,7 +25,6 @@ FROM
 		END
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	CASE
 		WHEN "g_1"."ParentID" > 2 THEN CASE
