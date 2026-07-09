@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'TempTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [TempTable]
@@ -25,7 +23,6 @@ IF (OBJECT_ID(N'TempTable') IS NULL)
 	')
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -38,7 +35,6 @@ FROM
 	[TestTempTable] [t1]
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [TestTempTable]
 (
 	[Id],
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [TempTable]
 (
 	[Id],
@@ -64,7 +59,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -74,7 +68,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Renamed]
@@ -84,7 +77,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 

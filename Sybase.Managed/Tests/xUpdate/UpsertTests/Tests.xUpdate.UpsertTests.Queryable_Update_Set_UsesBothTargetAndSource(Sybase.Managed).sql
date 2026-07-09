@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT
@@ -57,7 +56,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

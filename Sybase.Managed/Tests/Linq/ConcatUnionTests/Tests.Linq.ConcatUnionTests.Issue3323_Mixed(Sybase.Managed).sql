@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	Coalesce([r].[FirstName], '') || ' ' || Coalesce([r].[LastName], '')
@@ -30,7 +28,6 @@ FROM
 	[Issue3323Table] [r_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]

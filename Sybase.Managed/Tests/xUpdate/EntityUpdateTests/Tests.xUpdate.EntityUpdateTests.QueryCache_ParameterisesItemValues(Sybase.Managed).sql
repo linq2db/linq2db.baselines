@@ -43,7 +43,6 @@ WHERE
 	[EntityUpdateTest].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

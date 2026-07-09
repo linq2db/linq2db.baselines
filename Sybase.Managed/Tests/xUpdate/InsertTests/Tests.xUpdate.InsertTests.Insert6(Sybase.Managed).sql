@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -22,7 +20,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +28,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]

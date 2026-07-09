@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -17,7 +16,6 @@ ORDER BY
 	[r].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

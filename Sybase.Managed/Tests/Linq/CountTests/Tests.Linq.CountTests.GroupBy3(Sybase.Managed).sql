@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[g_2].[ParentID],
 	MIN([g_2].[ChildID]),

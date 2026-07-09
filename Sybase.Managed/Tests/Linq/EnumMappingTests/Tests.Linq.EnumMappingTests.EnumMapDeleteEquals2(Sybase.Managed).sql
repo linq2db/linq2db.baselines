@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [r]

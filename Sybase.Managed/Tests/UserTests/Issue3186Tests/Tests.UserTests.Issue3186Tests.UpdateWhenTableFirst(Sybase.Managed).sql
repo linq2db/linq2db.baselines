@@ -16,7 +16,6 @@ WHERE
 	[cm].[is_deleted] = 0
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -27,7 +26,6 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x].[id],
 	[x].[service_id],

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IN (NULL, NULL)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

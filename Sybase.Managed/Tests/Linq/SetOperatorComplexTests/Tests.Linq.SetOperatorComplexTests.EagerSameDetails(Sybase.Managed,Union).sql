@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[a_Author].[AuthorId],
@@ -35,7 +34,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[a_Book].[BookId],
 	[a_Book].[BookName]
@@ -57,7 +55,6 @@ WHERE
 	[a_Book_1].[Discriminator] = 'Novel'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[BookId],
 	[m_1].[AuthorId],
@@ -77,7 +74,6 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -91,7 +87,6 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

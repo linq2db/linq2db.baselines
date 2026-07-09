@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]

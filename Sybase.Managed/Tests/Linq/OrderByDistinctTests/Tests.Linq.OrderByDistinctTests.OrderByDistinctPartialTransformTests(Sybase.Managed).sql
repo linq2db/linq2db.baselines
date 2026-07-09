@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData],
 	[x].[OrderData2]

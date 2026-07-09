@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -11,7 +10,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],

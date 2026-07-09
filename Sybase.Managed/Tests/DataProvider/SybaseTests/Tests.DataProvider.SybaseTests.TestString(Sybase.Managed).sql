@@ -1,69 +1,52 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast('12345' as char)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as char(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as char(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as char(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as varchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as varchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as varchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as text)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as text)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as nchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as nchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as nchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as nvarchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as nvarchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as nvarchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12345' as unitext)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(NULL    as unitext)
 
 -- Sybase.Managed Sybase

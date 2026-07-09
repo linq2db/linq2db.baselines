@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]
 USING (

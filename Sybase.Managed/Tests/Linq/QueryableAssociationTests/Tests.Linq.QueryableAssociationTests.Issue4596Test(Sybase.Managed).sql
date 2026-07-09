@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[m_1].[C1],
@@ -37,7 +36,6 @@ ORDER BY
 	END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[C1]

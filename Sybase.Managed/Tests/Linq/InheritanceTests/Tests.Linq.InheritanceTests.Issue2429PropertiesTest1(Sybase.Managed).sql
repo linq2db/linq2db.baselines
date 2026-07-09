@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Value]

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 1 AS [Id], 'skip' AS [Name], 0 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]) [Source]
@@ -47,7 +46,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN EXISTS(
@@ -61,7 +59,6 @@ SELECT
 	END
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 2 AS [Id], 'keep' AS [Name], 5 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]) [Source]
@@ -109,7 +106,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Name],

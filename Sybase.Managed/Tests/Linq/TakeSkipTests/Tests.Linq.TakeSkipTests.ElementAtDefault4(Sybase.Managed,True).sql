@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 300001
 	[p].[ParentID],
 	[p].[Value1]

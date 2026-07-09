@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN [Message] [d] ON [m_1].[Id] = [d].[TopicId]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Title],

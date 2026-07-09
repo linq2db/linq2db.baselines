@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2020-01-01'
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [DateOnlyTable]
 FROM
 	[DateOnlyTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [DateOnlyTable]
 FROM
 	[DateOnlyTable] [t1]
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [DateOnlyTable]
 (
 	[Id],
@@ -101,7 +96,6 @@ SELECT 1,'1980-01-01',NULL UNION ALL
 SELECT 2,'2020-02-29','2020-01-01'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -112,13 +106,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [DateOnlyTable]
 FROM
 	[DateOnlyTable] [t1]
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [DateOnlyTable]
 (
 	[Id],
@@ -129,7 +121,6 @@ SELECT 1,'1980-01-01',NULL UNION ALL
 SELECT 2,'2020-02-29','2020-01-01'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

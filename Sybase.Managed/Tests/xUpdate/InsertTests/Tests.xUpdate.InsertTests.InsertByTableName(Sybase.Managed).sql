@@ -78,14 +78,12 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT /* qb */
 	[t].[PersonID],
 	[t].[Diagnosis]

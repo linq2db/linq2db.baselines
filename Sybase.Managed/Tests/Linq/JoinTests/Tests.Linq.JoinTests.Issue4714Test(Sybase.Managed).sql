@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[sub].[SampleId],
 	[sub].[Year_1],

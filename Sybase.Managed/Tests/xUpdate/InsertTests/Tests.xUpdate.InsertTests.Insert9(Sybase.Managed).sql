@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]
@@ -60,7 +58,6 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [c_1]
@@ -68,7 +65,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [p]

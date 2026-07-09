@@ -17,7 +17,6 @@ WHERE
 	[ValueConversion].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -72,7 +71,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -127,7 +125,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],

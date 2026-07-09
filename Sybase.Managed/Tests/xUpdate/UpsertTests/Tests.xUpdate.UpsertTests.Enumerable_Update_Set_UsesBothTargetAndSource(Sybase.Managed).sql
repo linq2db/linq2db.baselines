@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 1 AS [Id], 'inc' AS [Name], 3 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]
@@ -49,7 +48,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [NestedKeyTarget] [Target]
 USING (
 	SELECT 1 AS [Key_Value], 'first-updated' AS [Code]) [Source]
@@ -49,7 +48,6 @@ SET
 	[Code] = [Source].[Code]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Code],
 	[t1].[Id]

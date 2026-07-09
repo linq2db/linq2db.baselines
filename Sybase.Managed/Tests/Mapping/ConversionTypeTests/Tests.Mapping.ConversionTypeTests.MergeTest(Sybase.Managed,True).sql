@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [TrimTestTable] [Target]
 USING (
 	SELECT 1 AS [ID], '***OOO***' AS [Data_1]
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TrimTestTable] [Target]
 USING (
 	SELECT 3 AS [ID], '***III***' AS [Data_1]) [Source]
@@ -57,7 +55,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -67,7 +64,6 @@ ORDER BY
 	[r].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]

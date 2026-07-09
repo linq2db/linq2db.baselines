@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id],

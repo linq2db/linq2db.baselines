@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -48,7 +47,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO ExplicitComplexPropertyTarget [Target]
 USING (
 	SELECT 1 AS [Id], 1 AS TestsxUpdateMergeTestsIExplicitComplexPropertyField) [Source]
@@ -32,7 +31,6 @@ SET
 	[Field] = [Source].TestsxUpdateMergeTestsIExplicitComplexPropertyField
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Field]

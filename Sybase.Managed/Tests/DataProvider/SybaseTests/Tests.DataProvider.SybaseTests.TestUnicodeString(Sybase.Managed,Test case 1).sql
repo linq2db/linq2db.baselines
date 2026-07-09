@@ -1,25 +1,19 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as char)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as varchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as text)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as nchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as nvarchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast(u&'''\2000\2001\2002\2003\abab\03bctst тест' as unitext)
 
 -- Sybase.Managed Sybase
@@ -65,12 +59,10 @@ SET     @p = '''    ꮫμtst тест'
 SELECT @p
 
 -- Sybase.Managed Sybase
-
 SELECT
 	1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	1
 

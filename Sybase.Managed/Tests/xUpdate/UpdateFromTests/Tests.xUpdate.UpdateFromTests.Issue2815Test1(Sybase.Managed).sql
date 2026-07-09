@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 UPDATE
 	[Issue2815Table1]
 SET

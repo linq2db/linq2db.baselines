@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	1,
 	CASE
@@ -10,7 +9,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

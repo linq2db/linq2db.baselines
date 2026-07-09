@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[ip].[InvestorId],
 	[t1].[Units],

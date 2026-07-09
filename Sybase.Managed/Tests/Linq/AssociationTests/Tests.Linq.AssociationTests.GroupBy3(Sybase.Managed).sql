@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	DatePart(year, [a_Types].[DateTimeValue])
 FROM

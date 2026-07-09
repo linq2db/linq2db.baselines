@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
@@ -17,7 +16,6 @@ GROUP BY
 	[g_2].[ParentId]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

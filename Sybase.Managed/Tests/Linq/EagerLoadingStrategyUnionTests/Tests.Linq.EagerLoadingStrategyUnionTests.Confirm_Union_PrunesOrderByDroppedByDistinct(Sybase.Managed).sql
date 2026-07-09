@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[x].[CompanyId]
 FROM
 	[Department] [x]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

@@ -10,7 +10,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[BinaryValue]
 FROM

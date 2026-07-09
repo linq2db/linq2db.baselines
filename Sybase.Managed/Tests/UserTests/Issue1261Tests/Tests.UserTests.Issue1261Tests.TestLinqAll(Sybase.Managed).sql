@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -15,7 +14,6 @@ SELECT
 	END
 
 -- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

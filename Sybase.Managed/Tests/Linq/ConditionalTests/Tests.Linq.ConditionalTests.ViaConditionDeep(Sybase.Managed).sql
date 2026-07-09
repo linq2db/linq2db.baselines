@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[x].[Id],
 	CASE
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

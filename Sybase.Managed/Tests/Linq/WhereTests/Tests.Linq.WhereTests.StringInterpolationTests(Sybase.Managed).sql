@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || [p].[LastName]) = ('{}' || [p].[LastName])
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

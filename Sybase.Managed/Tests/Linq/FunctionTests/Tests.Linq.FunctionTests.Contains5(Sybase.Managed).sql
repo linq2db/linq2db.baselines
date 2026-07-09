@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] IN (1, 2)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

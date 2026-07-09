@@ -1,13 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT '<xml/>'
 
 -- Sybase.Managed Sybase
-
 SELECT '<xml/>'
 
 -- Sybase.Managed Sybase
-
 SELECT '<xml/>'
 
 -- Sybase.Managed Sybase

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [CacheTestTable] [Target]
 USING (
 	SELECT 1 AS [Id], 1 AS [Value_1]
@@ -29,7 +28,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +37,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [CacheTestTable] [Target]
 USING (
 	SELECT 1 AS [Id], 1 AS [Value_1]
@@ -71,7 +68,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
