@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @TestName Integer -- Int32
 SET     @TestName = 2
 

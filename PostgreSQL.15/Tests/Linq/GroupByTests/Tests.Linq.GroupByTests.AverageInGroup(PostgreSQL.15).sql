@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	g_1."GroupId",
@@ -16,7 +16,7 @@ WHERE
 GROUP BY
 	g_1."GroupId"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

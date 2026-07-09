@@ -1,6 +1,6 @@
 ﻿INSERT BULK "DateOnlyTable"(Date)
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Date"

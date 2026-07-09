@@ -1,19 +1,19 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"Parent" t1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"Child" t1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"GrandChild" t1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -26,7 +26,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 
@@ -39,7 +39,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 
@@ -52,7 +52,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 20
 
@@ -65,7 +65,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 11
 DECLARE @LeftId Integer -- Int32
@@ -86,7 +86,7 @@ VALUES
 	:RightId
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "GrandChild" "Target"
 USING (
@@ -119,7 +119,7 @@ VALUES
 	"Source"."RightId"
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."GrandChildID",

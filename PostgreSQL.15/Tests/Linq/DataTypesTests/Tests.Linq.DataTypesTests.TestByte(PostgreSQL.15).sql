@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @Column Smallint -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable Smallint -- Byte
@@ -13,7 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -24,12 +24,12 @@ FROM
 WHERE
 	r."Column" = 255 AND r."ColumnNullable" = 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"ByteTable" t1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Smallint -- Byte
@@ -50,7 +50,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Smallint -- Byte
@@ -71,7 +71,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -82,12 +82,12 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"ByteTable" t1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "ByteTable"
 (
@@ -99,7 +99,7 @@ VALUES
 (1,1,NULL),
 (2,255,2)
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -110,14 +110,14 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 DELETE FROM
 	"ByteTable" t1
 
 INSERT BULK "ByteTable"(Id, Column, ColumnNullable)
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

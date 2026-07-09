@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 INSERT INTO "TPHTable"
 (
@@ -14,7 +14,7 @@ VALUES
 (2,2,NULL,'Str2',NULL,NULL),
 (3,3,NULL,NULL,'Str3','Y')
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Discriminator",
@@ -28,7 +28,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",
@@ -43,7 +43,7 @@ WHERE
 	x."Discriminator" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",
@@ -58,7 +58,7 @@ WHERE
 	x."Discriminator" = 2
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",
@@ -73,7 +73,7 @@ WHERE
 	x."Discriminator" = 3
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",
@@ -88,7 +88,7 @@ WHERE
 	x."Value1" = 'Str1'
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",
@@ -103,7 +103,7 @@ WHERE
 	x."Value2" = 'Str2'
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	x."Discriminator",

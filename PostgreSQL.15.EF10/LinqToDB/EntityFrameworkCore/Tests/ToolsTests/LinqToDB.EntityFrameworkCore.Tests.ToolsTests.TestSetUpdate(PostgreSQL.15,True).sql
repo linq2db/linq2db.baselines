@@ -7,7 +7,7 @@ WHERE @ef_filter__p1 OR NOT (c."IsDeleted") OR NOT (c."IsDeleted")
 LIMIT 1
 
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @CompanyName Varchar(19) -- String
 SET     @CompanyName = 'Alfreds Futterkiste'
 DECLARE @CustomerId Varchar(5) -- String

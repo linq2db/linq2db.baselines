@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT DISTINCT ON (t1."Group")
 	t1."Id",
@@ -14,7 +14,7 @@ ORDER BY
 	t1."Group",
 	t1."Date"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

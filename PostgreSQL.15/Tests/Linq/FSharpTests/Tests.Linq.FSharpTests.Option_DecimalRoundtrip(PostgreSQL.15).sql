@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value Numeric(4, 2) -- Decimal
@@ -15,7 +15,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value Numeric -- Decimal
@@ -32,7 +32,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -43,7 +43,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	r."Id",

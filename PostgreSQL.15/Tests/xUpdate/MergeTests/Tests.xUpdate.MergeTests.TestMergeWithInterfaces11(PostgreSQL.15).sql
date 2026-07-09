@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (VALUES

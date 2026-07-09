@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -26,7 +26,7 @@ FROM
 WHERE
 	p."ParentID" = :id AND p."Value1" = 1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 2
 DECLARE @id Integer -- Int32
@@ -39,7 +39,7 @@ SET
 WHERE
 	"Parent"."ParentID" = :id
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -50,7 +50,7 @@ FROM
 WHERE
 	p."ParentID" = :id AND p."Value1" = 2
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 DECLARE @id Integer -- Int32
@@ -63,7 +63,7 @@ SET
 WHERE
 	"Parent"."ParentID" = :id
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 

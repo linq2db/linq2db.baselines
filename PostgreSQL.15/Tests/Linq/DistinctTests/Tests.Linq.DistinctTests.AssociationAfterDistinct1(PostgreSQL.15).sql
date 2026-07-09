@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t2."ParentID",
@@ -22,7 +22,7 @@ ORDER BY
 			"a_Parent"."ParentID" = "a_Children"."ParentID"
 	)
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."ParentID",

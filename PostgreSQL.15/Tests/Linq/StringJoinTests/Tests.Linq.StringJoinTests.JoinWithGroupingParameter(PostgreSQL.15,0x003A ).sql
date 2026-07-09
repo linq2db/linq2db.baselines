@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @separator Text(2) -- String
 SET     @separator = ': '
 
@@ -13,7 +13,7 @@ GROUP BY
 ORDER BY
 	g_1."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."PK",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -9,7 +9,7 @@ FROM
 	"TestEntity1" t1
 		LEFT JOIN "TestEntity2" t2 ON t1."Id" = t2."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -22,7 +22,7 @@ FROM
 WHERE
 	t1."Id" IS NULL
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	t1."Id",

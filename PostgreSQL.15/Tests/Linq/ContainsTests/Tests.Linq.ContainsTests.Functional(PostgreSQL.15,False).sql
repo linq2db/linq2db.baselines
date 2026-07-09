@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"
@@ -8,7 +8,7 @@ WHERE
 	s."Int" IN (-1, -2)
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"
@@ -18,7 +18,7 @@ WHERE
 	s."Int" IN (-1, NULL)
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"
@@ -28,7 +28,7 @@ WHERE
 	s."Int" IN (-1, 2)
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"
@@ -38,7 +38,7 @@ WHERE
 	s."Int" NOT IN (NULL, 2)
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.15 PostgreSQL13
 
 SELECT
 	s."Id"

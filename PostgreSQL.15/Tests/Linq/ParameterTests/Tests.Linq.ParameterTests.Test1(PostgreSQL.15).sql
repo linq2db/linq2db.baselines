@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15 PostgreSQL13
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2020-02-29 17:54:55.123'::timestamp
 
