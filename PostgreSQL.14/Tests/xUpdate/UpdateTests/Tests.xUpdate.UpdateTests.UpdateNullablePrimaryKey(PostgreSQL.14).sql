@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Integer -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	"GrandChild"."ParentID" = :ParentID AND "GrandChild"."ChildID" IS NULL
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @GrandChildID Integer -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Integer -- Int32

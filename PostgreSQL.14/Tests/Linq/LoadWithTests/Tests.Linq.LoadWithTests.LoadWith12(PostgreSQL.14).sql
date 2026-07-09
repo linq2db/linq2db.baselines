@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."ParentID",
@@ -25,7 +25,7 @@ FROM
 	) m_1
 		INNER JOIN "Child" d_1 ON m_1."ParentID" = d_1."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."ParentID",
@@ -46,7 +46,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 		LEFT JOIN "Parent" "a_Parent" ON d."ParentID" = "a_Parent"."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."ParentID",

@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 DROP TABLE IF EXISTS "DropTableTest"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 CREATE TABLE "DropTableTest"
 (
@@ -11,7 +11,7 @@ CREATE TABLE "DropTableTest"
 	CONSTRAINT "PK_DropTableTest" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "DropTableTest"
 (
@@ -22,18 +22,18 @@ VALUES
 	123
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ID"
 FROM
 	"DropTableTest" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 DROP TABLE "DropTableTest"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ID"

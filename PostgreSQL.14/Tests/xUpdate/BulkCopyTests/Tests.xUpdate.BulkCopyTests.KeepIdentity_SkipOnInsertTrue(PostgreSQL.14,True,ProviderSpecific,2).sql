@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -15,7 +15,7 @@ RETURNING
 
 INSERT ASYNC BULK "AllTypes"(ID, intDataType)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -29,7 +29,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

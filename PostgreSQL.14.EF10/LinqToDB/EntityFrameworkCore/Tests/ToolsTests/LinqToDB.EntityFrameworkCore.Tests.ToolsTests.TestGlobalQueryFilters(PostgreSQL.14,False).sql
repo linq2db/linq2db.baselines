@@ -3,7 +3,7 @@ FROM "Products" AS p
 INNER JOIN "Order Details" AS o ON p."ProductID" = o."ProductID"
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."IsDeleted",
@@ -42,7 +42,7 @@ INNER JOIN (
 WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Discontinued")) AND (@ef_filter__p5 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted"))
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."IsDeleted",

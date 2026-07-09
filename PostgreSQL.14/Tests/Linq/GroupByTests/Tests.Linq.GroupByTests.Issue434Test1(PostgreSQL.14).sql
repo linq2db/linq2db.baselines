@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 
@@ -12,7 +12,7 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 

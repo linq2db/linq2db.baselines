@@ -3,7 +3,7 @@ FROM views."EventsView" AS e
 WHERE e."Name" LIKE 'any%'
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."Name"

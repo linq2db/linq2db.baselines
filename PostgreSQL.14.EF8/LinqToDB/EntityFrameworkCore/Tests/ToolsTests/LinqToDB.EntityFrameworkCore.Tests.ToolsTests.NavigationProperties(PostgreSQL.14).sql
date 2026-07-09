@@ -24,7 +24,7 @@ ORDER BY o."OrderID", t."OrderID", t."ProductID", t0."ProductID", t1."OrderId"
 
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."ProductId",
@@ -44,9 +44,7 @@ FROM
 
 
 
-
-
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	"a_Product"."ProductID",

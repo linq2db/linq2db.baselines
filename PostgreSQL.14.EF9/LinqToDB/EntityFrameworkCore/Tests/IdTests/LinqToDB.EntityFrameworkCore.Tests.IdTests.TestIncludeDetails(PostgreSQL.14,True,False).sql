@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."Id",
@@ -23,7 +23,7 @@ FROM
 
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1.id,
@@ -38,7 +38,7 @@ WHERE
 
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1.id,
@@ -53,9 +53,7 @@ WHERE
 
 
 
-
-
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e.id,

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 DECLARE @timestampDataType Timestamp -- DateTime2
 SET     @timestampDataType = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @timestampTZDataType TimestampTz -- DateTime

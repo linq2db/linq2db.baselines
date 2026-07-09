@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."OrderID",
@@ -30,7 +30,7 @@ FROM
 
 
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	e."IsDeleted",

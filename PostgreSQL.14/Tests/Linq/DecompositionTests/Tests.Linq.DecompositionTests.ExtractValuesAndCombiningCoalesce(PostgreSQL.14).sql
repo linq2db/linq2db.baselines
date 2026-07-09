@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."Kind" = 1 OR t."Kind" = 2,
@@ -13,7 +13,7 @@ SELECT
 FROM
 	"Item" t
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ItemId",
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x_1."Color_1",
@@ -56,7 +56,7 @@ FROM
 WHERE
 	NOT (x_1."Color" AND (x_1."Color_1" AND x_1."Color_2" OR NOT x_1."Color_1") OR NOT x_1."Color" AND NOT x_1."Color_4")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ItemId",
@@ -67,7 +67,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x_1."Color_1",
@@ -100,7 +100,7 @@ WHERE
 	x_1."Color" AND (x_1."Color_1" AND x_1."Color_2" OR NOT x_1."Color_1") OR
 	NOT x_1."Color" AND NOT x_1."Color_4"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ItemId",
@@ -111,7 +111,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x_1."Size_2",
@@ -143,7 +143,7 @@ FROM
 WHERE
 	NOT (NOT x_1."Size_1" AND (x_1."Size_3" AND x_1."Size_4" OR NOT x_1."Size_3"))
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ItemId",
@@ -154,7 +154,7 @@ SELECT
 FROM
 	"Item" t1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x_1."Size_2",
@@ -186,7 +186,7 @@ FROM
 WHERE
 	NOT x_1."Size_1" AND (x_1."Size_3" AND x_1."Size_4" OR NOT x_1."Size_3")
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."ItemId",
