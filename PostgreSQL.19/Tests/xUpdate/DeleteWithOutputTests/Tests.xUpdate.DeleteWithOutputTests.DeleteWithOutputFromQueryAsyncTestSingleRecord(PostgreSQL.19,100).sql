@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	s."Id",
@@ -9,7 +9,7 @@ FROM
 WHERE
 	s."Id" = 3
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 100
 DECLARE @ValueStr Text(3) -- String

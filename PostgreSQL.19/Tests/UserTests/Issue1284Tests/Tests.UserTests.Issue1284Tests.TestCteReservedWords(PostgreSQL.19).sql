@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 WITH "CTE_1" ("Obj_Operator")
 AS
@@ -14,7 +14,7 @@ FROM
 	"CTE_1" t1
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	person_1."LastName"

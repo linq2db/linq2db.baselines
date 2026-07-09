@@ -6,7 +6,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
 RETURNING "ID";
 
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @field64 Numeric(1, 0) -- Decimal
 SET     @field64 = 5
 

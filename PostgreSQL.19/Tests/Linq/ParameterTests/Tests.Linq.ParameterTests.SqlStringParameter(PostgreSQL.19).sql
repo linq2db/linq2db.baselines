@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Text(4) -- String
 SET     @p = 'John'
 
@@ -14,7 +14,7 @@ WHERE
 	t."FirstName" = :p
 LIMIT 2
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Text(6) -- String
 SET     @p = 'Tester'
 

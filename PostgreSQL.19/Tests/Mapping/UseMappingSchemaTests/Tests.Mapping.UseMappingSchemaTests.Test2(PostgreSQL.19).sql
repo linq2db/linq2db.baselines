@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Field1",
@@ -7,7 +7,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Field1",
@@ -16,7 +16,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Column1",
@@ -25,7 +25,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable2" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Field1",
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Field1",
@@ -43,7 +43,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Field1",

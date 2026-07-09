@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -12,7 +12,7 @@ FROM
 WHERE
 	p."ParentID" = :p AND p."Value1" = :p_1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

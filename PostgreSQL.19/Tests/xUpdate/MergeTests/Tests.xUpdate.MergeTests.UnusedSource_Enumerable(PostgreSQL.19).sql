@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 MERGE INTO "UnusedSourceTable" "Target"
 USING (VALUES
@@ -21,7 +21,7 @@ VALUES
 	5
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	r."Id",

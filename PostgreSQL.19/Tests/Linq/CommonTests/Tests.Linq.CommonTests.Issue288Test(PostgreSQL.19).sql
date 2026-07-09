@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	p."FirstName"
@@ -8,7 +8,7 @@ WHERE
 	p."FirstName" IS NULL
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Text(4) -- String
 SET     @p = 'John'
 

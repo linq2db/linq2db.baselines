@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @Interval Interval -- Object
 SET     @Interval = P-4DT-6H-5M-4S-876s-876600n
 
@@ -11,7 +11,7 @@ VALUES
 	:Interval
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

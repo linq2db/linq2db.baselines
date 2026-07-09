@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 MERGE INTO "Issue4556Table1" "Target"
 USING (
@@ -31,7 +31,7 @@ VALUES
 	"Source"."HeadersJsonB"
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @value Json -- Object
 SET     @value = {[key1, value1]}
 DECLARE @value_1 Jsonb -- Object

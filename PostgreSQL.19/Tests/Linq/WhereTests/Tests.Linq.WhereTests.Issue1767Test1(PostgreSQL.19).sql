@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	p."ParentID",
@@ -8,7 +8,7 @@ FROM
 WHERE
 	p."Value1" IS NOT NULL AND p."Value1" <> 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."ParentID",

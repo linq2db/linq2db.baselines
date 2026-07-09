@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE
 	t1."ID" > 1000
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @data Bytea -- Binary
 SET     @data = NULL
 
@@ -22,7 +22,7 @@ VALUES
 	True
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t1

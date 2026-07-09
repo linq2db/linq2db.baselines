@@ -29,7 +29,7 @@ ORDER BY o."OrderID", e0."EmployeeID", e2."EmployeeID", e2."TerritoryID", s."Ord
 
 
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1."EmployeeId",
@@ -52,7 +52,7 @@ WHERE
 
 
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1."OrderId",
@@ -91,7 +91,7 @@ WHERE
 
 
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	e."IsDeleted",

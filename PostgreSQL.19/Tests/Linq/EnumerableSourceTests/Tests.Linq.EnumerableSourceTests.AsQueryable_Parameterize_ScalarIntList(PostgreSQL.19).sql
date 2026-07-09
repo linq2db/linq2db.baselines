@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @item Integer -- Int32
 SET     @item = 10
 DECLARE @item_1 Integer -- Int32

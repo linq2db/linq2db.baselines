@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	(Floor(Extract(second From t."DateTimeValue"))::Int::decimal % 7)::decimal

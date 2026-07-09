@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 Varchar(2) -- String
@@ -31,7 +31,7 @@ VALUES
 	:AnotherBoolValue
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	e."Id",
@@ -50,7 +50,7 @@ WHERE
 	e."Id" = 1
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Value1 Varchar -- String
@@ -83,7 +83,7 @@ VALUES
 	:AnotherBoolValue
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	e."Id",
@@ -102,7 +102,7 @@ WHERE
 	e."Id" = 2
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Value1 Varchar(21) -- String
@@ -151,7 +151,7 @@ VALUES
 	:DateTimeNullable
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	e."Id",
@@ -170,7 +170,7 @@ WHERE
 	e."Id" = 3
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	COUNT(*)
