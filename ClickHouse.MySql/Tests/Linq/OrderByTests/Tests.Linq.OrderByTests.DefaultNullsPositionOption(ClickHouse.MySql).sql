@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 3
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id
 FROM

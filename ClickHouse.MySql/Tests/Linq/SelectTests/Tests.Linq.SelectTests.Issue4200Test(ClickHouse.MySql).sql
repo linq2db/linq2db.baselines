@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	i.PersonID
 FROM

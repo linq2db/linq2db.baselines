@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH cte AS
 (
 	SELECT
@@ -21,7 +20,6 @@ FROM
 	cte t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,

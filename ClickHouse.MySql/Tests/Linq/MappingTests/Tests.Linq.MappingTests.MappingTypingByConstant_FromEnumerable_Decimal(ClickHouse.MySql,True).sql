@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	arg.Id,
 	arg.Value
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS Id, NULL AS Value) arg ON entity.PersonID = arg.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	arg.Id,
 	arg.Value

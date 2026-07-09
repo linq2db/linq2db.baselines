@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	sq_1.Sum_1
 FROM

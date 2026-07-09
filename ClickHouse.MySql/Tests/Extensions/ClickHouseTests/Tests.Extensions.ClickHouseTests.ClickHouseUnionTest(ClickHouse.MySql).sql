@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ID,
 	p.TS

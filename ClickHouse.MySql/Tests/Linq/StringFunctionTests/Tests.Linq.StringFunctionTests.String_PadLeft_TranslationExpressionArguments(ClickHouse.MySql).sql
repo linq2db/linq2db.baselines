@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	s.ID,
 	s.FirstName
@@ -18,7 +17,6 @@ WHERE
 	s.FirstName <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

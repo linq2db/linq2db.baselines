@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.C1,
@@ -38,7 +37,6 @@ ORDER BY
 	END
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.C1

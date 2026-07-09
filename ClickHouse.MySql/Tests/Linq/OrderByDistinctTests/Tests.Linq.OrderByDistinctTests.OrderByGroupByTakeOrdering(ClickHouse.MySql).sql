@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_1.OrderData1 * 100 + g_1.OrderData2,
 	COUNT(*)

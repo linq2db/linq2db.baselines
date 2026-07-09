@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_1.Id,
 	Coalesce(arrayStringConcat(groupArray(toString(Coalesce(g_1.NullableValue, ''))), ', '), ''),
@@ -12,7 +11,6 @@ ORDER BY
 	g_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.PK,
 	t1.Id,

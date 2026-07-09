@@ -1,19 +1,16 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ParentID > 1000
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID > 1000
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -26,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Child
 (
 	ParentID,
@@ -41,7 +37,6 @@ WHERE
 	p.ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -50,14 +45,12 @@ WHERE
 	c_1.ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ParentID > 1000
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE

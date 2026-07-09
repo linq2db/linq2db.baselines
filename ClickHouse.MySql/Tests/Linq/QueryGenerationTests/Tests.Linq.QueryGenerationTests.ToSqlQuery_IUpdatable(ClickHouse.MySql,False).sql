@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO TableWithIdentity
 (
 	Value
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	TableWithIdentity
 UPDATE
@@ -18,7 +16,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value

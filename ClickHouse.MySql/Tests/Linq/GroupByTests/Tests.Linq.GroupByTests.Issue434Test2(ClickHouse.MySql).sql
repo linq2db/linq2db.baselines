@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.PersonID,
 	d.PersonID,
@@ -11,7 +10,6 @@ WHERE
 	position(lowerUTF8(m_1.FirstName), 'test') > 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID

@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	LinqDataTypes t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,
@@ -24,7 +22,6 @@ WHERE
 	toInt16(1) = t1.SmallIntValue
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

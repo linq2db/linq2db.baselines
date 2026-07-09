@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -10,7 +9,6 @@ FROM
 	Person t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	s.FirstName
 FROM

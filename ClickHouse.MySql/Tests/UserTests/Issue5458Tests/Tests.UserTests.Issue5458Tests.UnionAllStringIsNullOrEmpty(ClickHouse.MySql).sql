@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value_1 IS NULL OR lengthUTF8(t1.Value_1) = 0

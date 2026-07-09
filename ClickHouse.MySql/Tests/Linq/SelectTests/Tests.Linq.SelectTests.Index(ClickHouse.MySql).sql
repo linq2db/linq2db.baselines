@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.ParentID,
 	m_2.ChildID,
@@ -21,7 +20,6 @@ ORDER BY
 	m_2.ChildID DESC
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_2.ParentID,
 	m_2.ChildID,

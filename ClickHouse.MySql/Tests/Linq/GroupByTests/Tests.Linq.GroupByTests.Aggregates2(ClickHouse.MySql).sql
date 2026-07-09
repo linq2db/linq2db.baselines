@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	SUM(g_1.ChildID),
 	MIN(g_1.ChildID),

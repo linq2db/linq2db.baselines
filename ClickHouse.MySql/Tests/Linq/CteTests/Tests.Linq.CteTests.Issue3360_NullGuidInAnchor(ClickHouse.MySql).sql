@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT

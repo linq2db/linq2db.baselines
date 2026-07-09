@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Campaign
 (
 	Guid,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Campaign
 (
 	Guid,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Campaign
 (
 	Guid,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Guid,
 	lc.Count,

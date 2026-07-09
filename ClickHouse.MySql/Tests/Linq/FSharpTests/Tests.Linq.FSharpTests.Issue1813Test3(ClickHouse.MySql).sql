@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Addresses
 (
 	Id,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	after_1.Id,
 	after_1.Name,

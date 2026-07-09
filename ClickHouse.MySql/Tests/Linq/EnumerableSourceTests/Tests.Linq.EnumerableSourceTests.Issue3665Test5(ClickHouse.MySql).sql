@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	y.item
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT 'O') y
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

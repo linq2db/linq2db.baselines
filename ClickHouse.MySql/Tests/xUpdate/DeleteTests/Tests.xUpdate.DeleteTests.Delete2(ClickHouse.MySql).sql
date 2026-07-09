@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -28,14 +25,12 @@ WHERE
 	p.ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

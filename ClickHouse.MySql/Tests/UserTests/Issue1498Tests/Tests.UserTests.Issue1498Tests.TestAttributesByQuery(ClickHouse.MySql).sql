@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Topic
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN Message d ON d.TopicId = m_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id,
 	x.Title,

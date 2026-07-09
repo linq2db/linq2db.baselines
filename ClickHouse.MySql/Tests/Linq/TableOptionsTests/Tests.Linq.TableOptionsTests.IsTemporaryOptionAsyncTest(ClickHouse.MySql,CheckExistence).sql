@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
 	ID    Int32,
@@ -11,7 +10,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table1
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 (1,2)
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
 	ID    Int32,
@@ -33,7 +30,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table2
 (
 	ID,
@@ -46,7 +42,6 @@ FROM
 	temp_table1 t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Value
@@ -54,7 +49,6 @@ FROM
 	temp_table1 t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Value
@@ -62,7 +56,6 @@ FROM
 	temp_table2 t1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table1
 (
 	ID,
@@ -72,7 +65,6 @@ VALUES
 (2,3)
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table1
 (
 	ID,
@@ -85,7 +77,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table1
 (
 	ID,
@@ -95,18 +86,14 @@ VALUES
 (4,5)
 
 -- ClickHouse.MySql ClickHouse
-
 TRUNCATE TABLE temp_table1
 
 -- ClickHouse.MySql ClickHouse
-
 TRUNCATE TABLE temp_table2
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS temp_table2
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS temp_table1
 

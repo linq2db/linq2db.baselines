@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	g_1.Id,
 	maxOrNull(g_1.Value1),

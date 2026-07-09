@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4646Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4646Table
 (
 	Id,
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.IntValue,
@@ -41,7 +38,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.IntValue,

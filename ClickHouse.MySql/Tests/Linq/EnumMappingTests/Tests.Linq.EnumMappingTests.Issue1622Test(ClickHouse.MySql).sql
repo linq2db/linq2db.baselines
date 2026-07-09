@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue1622Table
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	e.SomeText
@@ -23,7 +21,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	e.SomeText

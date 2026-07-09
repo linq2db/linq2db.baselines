@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -25,7 +23,6 @@ VALUES
 (1004,toDecimal128('0', 10),NULL,NULL,true,toUUID('ef129165-6ffe-4df9-bb6b-bb16e413c883'),NULL,NULL,NULL,NULL)
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

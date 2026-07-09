@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	concat(Coalesce(e.StrReq, ''), 'X')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

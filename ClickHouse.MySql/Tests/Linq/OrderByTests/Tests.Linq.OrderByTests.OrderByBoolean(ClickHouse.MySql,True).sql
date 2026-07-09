@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -12,7 +11,6 @@ ORDER BY
 	lengthUTF8(t1.FirstName) > 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

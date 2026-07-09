@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	SUM(CASE
 		WHEN t.CategoryId = 1 THEN t.IntValue

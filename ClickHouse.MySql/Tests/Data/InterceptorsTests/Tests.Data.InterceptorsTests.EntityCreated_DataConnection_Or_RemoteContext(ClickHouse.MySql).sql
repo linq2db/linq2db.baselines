@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

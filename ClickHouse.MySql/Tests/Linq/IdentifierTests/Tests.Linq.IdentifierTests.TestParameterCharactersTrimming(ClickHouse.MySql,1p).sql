@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	testparams
 UPDATE

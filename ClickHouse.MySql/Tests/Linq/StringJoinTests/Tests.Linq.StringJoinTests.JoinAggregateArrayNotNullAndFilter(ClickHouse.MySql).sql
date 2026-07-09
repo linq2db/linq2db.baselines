@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	arrayStringConcat([CASE
 		WHEN position(x.NullableValue, 'A') > 0 THEN x.NullableValue
@@ -32,7 +31,6 @@ WHERE
 	END], ', ')) <> 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.PK,
 	t1.Id,

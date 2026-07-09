@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO xxPerson
 (
 	FirstName,
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -37,7 +34,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	xxPerson
 UPDATE
@@ -49,7 +45,6 @@ WHERE
 	PersonID = 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

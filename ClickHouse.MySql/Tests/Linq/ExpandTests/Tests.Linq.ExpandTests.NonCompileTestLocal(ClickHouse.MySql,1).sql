@@ -8,7 +8,6 @@ WHERE
 	t2.Value > 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	t.Value

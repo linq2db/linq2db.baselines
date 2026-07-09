@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue1096Task
 (
 	Pk,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue1096TaskStage
 (
 	Id,
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	t.Pk,
 	t.Id,

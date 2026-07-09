@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Id,
 	LAG(t.IntValue, 2, 0) OVER (ORDER BY t.Id)

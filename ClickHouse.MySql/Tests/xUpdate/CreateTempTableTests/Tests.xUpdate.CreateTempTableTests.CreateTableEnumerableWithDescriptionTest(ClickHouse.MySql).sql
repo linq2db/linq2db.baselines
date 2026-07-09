@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Name String,
@@ -14,7 +12,6 @@ ENGINE = MergeTree()
 ORDER BY Name
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO TempTable
 (
 	Name
@@ -23,7 +20,6 @@ VALUES
 ('John')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Name
 FROM
@@ -31,6 +27,5 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	CASE
@@ -15,7 +14,6 @@ WHERE
 	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	r.primary_key
@@ -26,7 +24,6 @@ WHERE
 	r.primary_key <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.table,
 	r.name,
@@ -58,19 +55,15 @@ WHERE
 	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
-
 select hostName()
 
 -- ClickHouse.MySql ClickHouse
-
 select database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT version()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	CASE
@@ -86,7 +79,6 @@ WHERE
 	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	r.primary_key
@@ -97,7 +89,6 @@ WHERE
 	r.primary_key <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.table,
 	r.name,
@@ -129,19 +120,15 @@ WHERE
 	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
-
 select hostName()
 
 -- ClickHouse.MySql ClickHouse
-
 select database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT version()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	CASE
@@ -157,7 +144,6 @@ WHERE
 	NOT r.is_temporary AND r.database = database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.name,
 	r.primary_key
@@ -168,7 +154,6 @@ WHERE
 	r.primary_key <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.table,
 	r.name,
@@ -200,14 +185,11 @@ WHERE
 	r.database = database() AND r.default_kind <> 'ALIAS'
 
 -- ClickHouse.MySql ClickHouse
-
 select hostName()
 
 -- ClickHouse.MySql ClickHouse
-
 select database()
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT version()
 

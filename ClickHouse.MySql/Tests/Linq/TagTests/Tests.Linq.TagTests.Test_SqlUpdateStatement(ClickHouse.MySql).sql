@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 /* My Test */
 ALTER TABLE
 	TestTable

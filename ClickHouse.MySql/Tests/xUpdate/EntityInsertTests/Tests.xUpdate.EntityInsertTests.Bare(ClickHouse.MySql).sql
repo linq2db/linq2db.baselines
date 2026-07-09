@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO EntityInsertTest
 (
 	Id,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,

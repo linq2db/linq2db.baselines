@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	CASE
 		WHEN t.EnumValue = 'F' THEN 'First'

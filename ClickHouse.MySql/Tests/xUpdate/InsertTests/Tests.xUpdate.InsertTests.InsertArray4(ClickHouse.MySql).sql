@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,
@@ -45,7 +42,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

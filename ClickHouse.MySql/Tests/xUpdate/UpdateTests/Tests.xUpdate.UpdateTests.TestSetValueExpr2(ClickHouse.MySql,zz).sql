@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	TextData
 UPDATE
@@ -9,7 +8,6 @@ WHERE
 	Id >= 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Items1,

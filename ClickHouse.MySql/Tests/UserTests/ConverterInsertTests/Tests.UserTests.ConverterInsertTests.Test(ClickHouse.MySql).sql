@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.PersonID,
 	t.FirstName,

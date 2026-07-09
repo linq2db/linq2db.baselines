@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id,
 	x.StringProp = '1' OR x.StringProp IS NULL,
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.StringProp

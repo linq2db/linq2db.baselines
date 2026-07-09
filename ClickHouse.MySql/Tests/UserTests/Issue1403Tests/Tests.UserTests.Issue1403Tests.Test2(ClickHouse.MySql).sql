@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue1403Tests_2
 (
 	event_id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.event_id,
 	t1.event_description

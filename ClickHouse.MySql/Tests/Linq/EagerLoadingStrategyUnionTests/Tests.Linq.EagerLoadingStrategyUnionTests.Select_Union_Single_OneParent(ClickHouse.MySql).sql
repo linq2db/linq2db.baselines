@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH CTE_1 AS MATERIALIZED
 (
 	SELECT

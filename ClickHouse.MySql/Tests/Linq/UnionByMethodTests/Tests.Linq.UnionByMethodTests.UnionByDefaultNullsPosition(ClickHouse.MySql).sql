@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	x.Key_1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.Id
 FROM

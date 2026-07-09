@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM (concat(Coalesce(t.NVarCharColumn, ''), '...++')))
 FROM
 	StringTrimTable t
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.CharColumn,
