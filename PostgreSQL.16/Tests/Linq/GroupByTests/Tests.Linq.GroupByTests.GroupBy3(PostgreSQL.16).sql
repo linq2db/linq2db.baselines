@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT DISTINCT
 	Coalesce(gr."Value1", c_1."ChildID")

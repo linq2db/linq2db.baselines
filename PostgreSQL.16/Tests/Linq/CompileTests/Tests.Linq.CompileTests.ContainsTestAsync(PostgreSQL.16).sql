@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -14,7 +14,7 @@ SELECT
 		ELSE False
 	END
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	g_2."Message"::text || ' items have not been processed, e.g. #' || Coalesce(g_2."Message_1"::text, '') || '.'

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 SELECT
 	SUM(t."IntValue") OVER (ORDER BY t."Id" RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW),

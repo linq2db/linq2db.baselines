@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
@@ -11,7 +11,7 @@ ORDER BY
 	t1."Value"
 OFFSET :skip 
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 DECLARE @skip Integer -- Int32
 SET     @skip = 4
 

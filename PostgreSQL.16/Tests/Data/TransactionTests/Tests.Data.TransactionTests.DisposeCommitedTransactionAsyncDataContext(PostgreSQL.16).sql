@@ -1,5 +1,5 @@
 ﻿BeginTransactionAsync
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
 
 commit;
 SELECT
