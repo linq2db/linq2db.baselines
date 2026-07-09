@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
@@ -197,7 +196,6 @@ FROM
 	) [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

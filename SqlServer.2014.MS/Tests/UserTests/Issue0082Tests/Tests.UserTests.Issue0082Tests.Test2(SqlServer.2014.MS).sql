@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[o].[ParentID],
 	(
@@ -22,14 +21,12 @@ FROM
 	[Parent] [o]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [o]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[ParentID],
 	[x].[CountResult],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,7 +12,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[a_A1].[ID],
 	[a_A2].[ID]

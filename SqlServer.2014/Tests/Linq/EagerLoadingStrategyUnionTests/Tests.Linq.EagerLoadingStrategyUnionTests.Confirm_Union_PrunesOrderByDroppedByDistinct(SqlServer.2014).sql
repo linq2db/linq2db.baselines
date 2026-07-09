@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 WITH [CTE_1] ([CompanyId], [field])
 AS
 (

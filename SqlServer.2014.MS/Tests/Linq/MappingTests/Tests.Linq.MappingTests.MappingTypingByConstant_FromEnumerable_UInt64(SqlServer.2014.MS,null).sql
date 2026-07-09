@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -10,7 +9,6 @@ FROM
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

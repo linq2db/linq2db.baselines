@@ -81,7 +81,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Int1],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	EOMONTH(N'2022-02-24')
 

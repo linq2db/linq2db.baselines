@@ -24,7 +24,6 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

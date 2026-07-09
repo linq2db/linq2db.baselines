@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]
@@ -9,7 +8,6 @@ WHERE
 	[p].[ParentID] = 1
 
 -- SqlServer.2014
-
 SELECT TOP (1)
 	[p].[ParentID],
 	[p].[Value1]

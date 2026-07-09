@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[t1].[ChildID],
 	AVG([t1].[ParentID])

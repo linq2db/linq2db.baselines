@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[Id]
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	[x].[Key_1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[Id]
 FROM

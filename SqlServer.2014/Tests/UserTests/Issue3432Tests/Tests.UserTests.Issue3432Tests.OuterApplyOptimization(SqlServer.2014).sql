@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[task_1].[Description],
 	[party_1].[Name]

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -48,7 +47,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

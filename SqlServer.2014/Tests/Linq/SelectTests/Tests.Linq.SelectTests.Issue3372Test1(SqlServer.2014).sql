@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[e].[FirstName],
 	IIF([a_Person].[PersonID] IS NOT NULL AND [a_Person].[LastName] IS NOT NULL, 1, 0),

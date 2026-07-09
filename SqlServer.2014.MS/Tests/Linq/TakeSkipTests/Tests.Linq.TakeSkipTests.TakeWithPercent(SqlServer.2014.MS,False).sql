@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT TOP (50) PERCENT
 	[t1].[FirstName],
 	[t1].[PersonID],
