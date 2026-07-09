@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	u.Id,
 	u.user_name,

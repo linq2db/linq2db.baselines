@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT ON (t2.Name)
 	t2.Id,
 	t2.Name,
@@ -29,7 +28,6 @@ ORDER BY
 	t2.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name,

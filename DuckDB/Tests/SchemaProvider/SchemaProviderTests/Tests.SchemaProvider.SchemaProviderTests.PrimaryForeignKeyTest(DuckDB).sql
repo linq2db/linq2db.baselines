@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	current_schema()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	t.table_catalog || '.' || t.table_schema || '.' || t."table_name",
 	t.table_catalog,
@@ -25,7 +23,6 @@ ORDER BY
 	t."table_name"
 
 -- DuckDB
-
 SELECT
 	kcu.table_catalog || '.' || kcu.table_schema || '.' || kcu."table_name",
 	tc_1.ConstraintName,
@@ -46,7 +43,6 @@ FROM
 		INNER JOIN information_schema.key_column_usage kcu ON tc_1.TableCatalog = kcu.table_catalog AND tc_1.TableSchema = kcu.table_schema AND tc_1.TableName = kcu."table_name" AND tc_1.ConstraintName = kcu."constraint_name"
 
 -- DuckDB
-
 SELECT
 	c_1.table_catalog || '.' || c_1.table_schema || '.' || c_1."table_name",
 	c_1."column_name",
@@ -67,7 +63,6 @@ ORDER BY
 	c_1.ordinal_position
 
 -- DuckDB
-
 SELECT
 	t1.ConstraintName,
 	fk.table_catalog || '.' || fk.table_schema || '.' || fk."table_name",
@@ -94,6 +89,5 @@ FROM
 		INNER JOIN information_schema.key_column_usage pk ON map_1.unique_constraint_catalog = pk."constraint_catalog" AND map_1.unique_constraint_schema = pk."constraint_schema" AND map_1.unique_constraint_name = pk."constraint_name" AND fk.ordinal_position = pk.ordinal_position
 
 -- DuckDB
-
 SELECT current_database()
 

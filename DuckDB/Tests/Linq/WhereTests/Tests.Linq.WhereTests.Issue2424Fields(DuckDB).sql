@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -14,7 +13,6 @@ WHERE
 	i.StrValue >= right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -29,7 +27,6 @@ WHERE
 	i.StrValue <= right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -44,7 +41,6 @@ WHERE
 	i.StrValue > right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -59,7 +55,6 @@ WHERE
 	i.StrValue < right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -74,7 +69,6 @@ WHERE
 	i.StrValue = right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -89,7 +83,6 @@ WHERE
 	i.StrValue <> right_1.StrValue
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -104,7 +97,6 @@ WHERE
 	i.StrValue >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -119,7 +111,6 @@ WHERE
 	i.StrValue <= right_1.StrValueNullable
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -134,7 +125,6 @@ WHERE
 	i.StrValue > right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -149,7 +139,6 @@ WHERE
 	i.StrValue < right_1.StrValueNullable
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -164,7 +153,6 @@ WHERE
 	i.StrValue = right_1.StrValueNullable
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -179,7 +167,6 @@ WHERE
 	i.StrValue <> right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -194,7 +181,6 @@ WHERE
 	i.StrValueNullable >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -209,7 +195,6 @@ WHERE
 	i.StrValueNullable <= right_1.StrValueNullable OR i.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -224,7 +209,6 @@ WHERE
 	i.StrValueNullable > right_1.StrValueNullable OR i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -239,7 +223,6 @@ WHERE
 	i.StrValueNullable < right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,
@@ -254,7 +237,6 @@ WHERE
 	i.StrValueNullable = right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	i.StrValue,

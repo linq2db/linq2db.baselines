@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Extract(hour from t.DateTimeValue)
 FROM

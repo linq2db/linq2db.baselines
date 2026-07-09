@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x."Type",
 	x.OwnerId,

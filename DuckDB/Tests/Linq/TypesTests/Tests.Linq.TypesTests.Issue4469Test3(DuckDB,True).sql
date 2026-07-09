@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(v."Integer" AS DOUBLE) / 33,
 	CAST(v."Decimal" AS DOUBLE) / 33,

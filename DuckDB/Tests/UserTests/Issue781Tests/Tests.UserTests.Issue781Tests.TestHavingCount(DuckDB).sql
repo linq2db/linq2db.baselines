@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

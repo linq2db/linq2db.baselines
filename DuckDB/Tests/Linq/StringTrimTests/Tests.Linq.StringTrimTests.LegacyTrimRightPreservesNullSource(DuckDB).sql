@@ -28,7 +28,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	CASE
 		WHEN t.VarCharColumn IS NOT NULL THEN RTRIM(t.VarCharColumn, '.+')

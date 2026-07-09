@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	r.ID,
 	r.Bool

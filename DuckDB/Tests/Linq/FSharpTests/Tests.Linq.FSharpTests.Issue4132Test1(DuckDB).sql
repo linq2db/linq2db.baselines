@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO Issue4132Table
 (
 	Id,

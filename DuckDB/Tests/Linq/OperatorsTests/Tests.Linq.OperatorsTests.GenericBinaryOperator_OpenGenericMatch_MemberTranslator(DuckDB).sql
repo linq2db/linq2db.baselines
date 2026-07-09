@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	r.Id,
 	r.IntHolder,

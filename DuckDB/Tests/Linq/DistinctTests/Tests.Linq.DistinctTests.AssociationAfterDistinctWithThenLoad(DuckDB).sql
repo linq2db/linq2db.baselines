@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-
 SELECT DISTINCT
 	t1.ParentID,
 	t1.ChildID,
@@ -28,7 +26,6 @@ ORDER BY
 	t1.ChildID
 
 -- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -44,7 +41,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,

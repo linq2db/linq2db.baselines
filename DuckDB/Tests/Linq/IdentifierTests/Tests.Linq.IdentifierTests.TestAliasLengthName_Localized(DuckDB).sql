@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	z.FirstName,
 	z.PersonID,

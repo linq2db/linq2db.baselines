@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	STDDEV(c_1.ChildID),
 	STDDEV(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- DuckDB
-
 SELECT
 	STDDEV(t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	STDDEV(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	STDDEV(DISTINCT t1.ParentID)
 FROM

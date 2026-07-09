@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO UpsertTest Target
 USING (VALUES
 	(1,'updated',2,NULL,NULL,NULL,NULL)
@@ -26,7 +25,6 @@ SET
 	UpdatedBy = Source.UpdatedBy
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,

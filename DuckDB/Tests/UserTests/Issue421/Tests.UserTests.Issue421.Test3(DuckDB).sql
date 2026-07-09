@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.BlobValue
@@ -27,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.BlobValue

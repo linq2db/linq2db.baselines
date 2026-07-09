@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	e.ID,
 	p.SmallIntValue

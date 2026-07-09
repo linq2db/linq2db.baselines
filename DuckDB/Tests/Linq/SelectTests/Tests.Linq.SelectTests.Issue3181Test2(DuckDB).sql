@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t2.FirstName
 FROM

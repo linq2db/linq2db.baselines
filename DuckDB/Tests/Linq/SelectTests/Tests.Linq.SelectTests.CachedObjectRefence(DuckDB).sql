@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -10,7 +9,6 @@ FROM
 	Person p
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,

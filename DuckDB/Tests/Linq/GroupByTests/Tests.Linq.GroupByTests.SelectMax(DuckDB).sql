@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(g_1.ChildID)
 FROM

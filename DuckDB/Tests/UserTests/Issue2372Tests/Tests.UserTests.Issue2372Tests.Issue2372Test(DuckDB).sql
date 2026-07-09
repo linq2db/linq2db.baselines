@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS InventoryResource
 
 -- DuckDB

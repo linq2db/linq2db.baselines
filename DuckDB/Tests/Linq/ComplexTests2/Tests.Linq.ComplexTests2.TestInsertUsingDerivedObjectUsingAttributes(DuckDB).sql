@@ -26,7 +26,6 @@ RETURNING
 	PersonID
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -62,7 +61,6 @@ WHERE
 	Person.PersonID = $ID
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	LTRIM(t.VarCharColumn, '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.Id
 
 -- DuckDB
-
 SELECT
 	LTRIM(t.VarCharColumn, 'ab')
 FROM

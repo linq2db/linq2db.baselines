@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH cte
 (
 	FirstName,
@@ -29,7 +28,6 @@ FROM
 	cte t1
 
 -- DuckDB
-
 SELECT
 	x.FirstName,
 	x.PersonID,

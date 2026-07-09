@@ -18,7 +18,6 @@ ORDER BY
 	m_1.Id
 
 -- DuckDB
-
 SELECT
 	d.Id,
 	d.Name

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	d.Id,
 	d.Name
@@ -9,7 +8,6 @@ ORDER BY
 	d.Id
 
 -- DuckDB
-
 SELECT
 	k_1."item",
 	d.Id,
@@ -25,7 +23,6 @@ ORDER BY
 	d.Id
 
 -- DuckDB
-
 SELECT
 	k_1."item",
 	d.Id,

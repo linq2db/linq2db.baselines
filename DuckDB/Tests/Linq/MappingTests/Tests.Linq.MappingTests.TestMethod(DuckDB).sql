@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	s.Id
 FROM

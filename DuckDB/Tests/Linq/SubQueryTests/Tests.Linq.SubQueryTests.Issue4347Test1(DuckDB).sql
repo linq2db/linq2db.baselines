@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -26,7 +25,6 @@ WHERE
 	)
 
 -- DuckDB
-
 SELECT
 	x.Id,
 	x.ValidOn

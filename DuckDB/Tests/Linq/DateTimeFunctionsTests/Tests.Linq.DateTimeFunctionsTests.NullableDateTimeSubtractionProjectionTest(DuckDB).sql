@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.FinishedOn,
 	t.StartedOn

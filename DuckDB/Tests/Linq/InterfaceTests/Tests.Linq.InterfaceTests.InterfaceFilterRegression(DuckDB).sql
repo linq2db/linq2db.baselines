@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t1.Id
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	t1.Id
 FROM

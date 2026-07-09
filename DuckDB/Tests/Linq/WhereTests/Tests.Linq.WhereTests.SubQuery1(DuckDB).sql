@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	pp.Value_1
 FROM

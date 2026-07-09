@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(t1.PersonID)
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	p.PersonID,
 	p.FirstName,
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 DELETE FROM
 	Person t
 WHERE

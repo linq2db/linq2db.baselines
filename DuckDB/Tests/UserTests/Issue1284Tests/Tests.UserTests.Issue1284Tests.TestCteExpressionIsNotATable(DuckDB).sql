@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH CTE_1
 (
 	entry_ID,
@@ -31,7 +30,6 @@ WHERE
 	x.entry_ID = 1
 
 -- DuckDB
-
 SELECT
 	x.FirstName,
 	x.PersonID,

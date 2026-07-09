@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.PersonID,
 	'123' || p.FirstName || '012345'

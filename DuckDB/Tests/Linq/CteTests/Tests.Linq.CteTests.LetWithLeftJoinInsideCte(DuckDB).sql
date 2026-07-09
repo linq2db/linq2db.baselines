@@ -25,7 +25,6 @@ VALUES
 )
 
 -- DuckDB
-
 WITH CTE_1 (S1)
 AS
 (

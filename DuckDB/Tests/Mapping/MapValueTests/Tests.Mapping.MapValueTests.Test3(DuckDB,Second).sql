@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CASE
 		WHEN t.EnumValue = 'S' THEN 'Second'

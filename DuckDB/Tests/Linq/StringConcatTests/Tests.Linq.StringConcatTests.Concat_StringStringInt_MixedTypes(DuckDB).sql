@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	e.StrReq
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce(e.StrReq, '') || ' 1') = 'Programmer 1'
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Str1,

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Value"
@@ -44,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Value"

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	gr.ParentID,
 	gr.ChildID

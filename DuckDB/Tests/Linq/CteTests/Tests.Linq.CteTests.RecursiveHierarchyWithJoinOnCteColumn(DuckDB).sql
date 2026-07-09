@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE cte (ParentID, ChildID, Level_1)
 AS
 (

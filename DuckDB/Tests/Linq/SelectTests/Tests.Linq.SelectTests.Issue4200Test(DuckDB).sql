@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	i.PersonID
 FROM

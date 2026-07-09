@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Floor(t.Value_1)
 FROM

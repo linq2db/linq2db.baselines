@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MIN(c_1.ChildID),
 	MIN(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- DuckDB
-
 SELECT
 	MIN(t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	MIN(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	MIN(DISTINCT t1.ParentID)
 FROM

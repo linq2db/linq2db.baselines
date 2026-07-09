@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || p.LastName) = ('{}' || p.LastName)
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

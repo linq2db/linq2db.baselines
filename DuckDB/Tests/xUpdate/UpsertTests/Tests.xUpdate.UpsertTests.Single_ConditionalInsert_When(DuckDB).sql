@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO UpsertTest Target
 USING (VALUES
 	(1,'skip',0,NULL,NULL,NULL,NULL)
@@ -48,7 +47,6 @@ SET
 	UpdatedBy = Source.UpdatedBy
 
 -- DuckDB
-
 SELECT
 	EXISTS(
 		SELECT
@@ -58,7 +56,6 @@ SELECT
 	)
 
 -- DuckDB
-
 MERGE INTO UpsertTest Target
 USING (VALUES
 	(2,'keep',5,NULL,NULL,NULL,NULL)
@@ -107,7 +104,6 @@ SET
 	UpdatedBy = Source.UpdatedBy
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name,

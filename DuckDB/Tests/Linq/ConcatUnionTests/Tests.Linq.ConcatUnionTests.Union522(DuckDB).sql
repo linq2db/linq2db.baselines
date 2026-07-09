@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p1.Value1,
 	CAST(NULL AS INTEGER)

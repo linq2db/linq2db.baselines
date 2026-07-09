@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	g_1.CategoryId,
 	PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY g_1.IntValue DESC),

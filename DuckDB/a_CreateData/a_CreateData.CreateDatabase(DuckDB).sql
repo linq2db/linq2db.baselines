@@ -1,29 +1,22 @@
 ﻿-- DuckDB
-
 DROP SCHEMA IF EXISTS "TestSchema" CASCADE
 
 -- DuckDB
-
 CREATE SCHEMA "TestSchema"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "Doctor"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "Patient"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "Person"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "InheritanceParent"
 
 -- DuckDB
-
 CREATE TABLE "InheritanceParent"
 (
 	"InheritanceParentId" INTEGER       PRIMARY KEY,
@@ -32,11 +25,9 @@ CREATE TABLE "InheritanceParent"
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "InheritanceChild"
 
 -- DuckDB
-
 CREATE TABLE "InheritanceChild"
 (
 	"InheritanceChildId"  INTEGER      PRIMARY KEY,
@@ -46,15 +37,12 @@ CREATE TABLE "InheritanceChild"
 )
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS "Person_PersonID_seq"
 
 -- DuckDB
-
 CREATE SEQUENCE "Person_PersonID_seq" START 1
 
 -- DuckDB
-
 CREATE TABLE "Person"
 (
 	"PersonID"   INTEGER PRIMARY KEY DEFAULT NEXTVAL('"Person_PersonID_seq"'),
@@ -65,23 +53,18 @@ CREATE TABLE "Person"
 )
 
 -- DuckDB
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('John',   'Pupkin',    'M')
 
 -- DuckDB
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Tester', 'Testerson', 'M')
 
 -- DuckDB
-
 INSERT INTO "Person" ("FirstName", "LastName", "Gender") VALUES ('Jane',   'Doe',       'F')
 
 -- DuckDB
-
 INSERT INTO "Person" ("FirstName", "LastName", "MiddleName", "Gender") VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- DuckDB
-
 -- Doctor Table Extension
 
 CREATE TABLE "Doctor"
@@ -92,11 +75,9 @@ CREATE TABLE "Doctor"
 )
 
 -- DuckDB
-
 INSERT INTO "Doctor" ("PersonID", "Taxonomy") VALUES (1, 'Psychiatry')
 
 -- DuckDB
-
 -- Patient Table Extension
 
 CREATE TABLE "Patient"
@@ -107,39 +88,30 @@ CREATE TABLE "Patient"
 )
 
 -- DuckDB
-
 INSERT INTO "Patient" ("PersonID", "Diagnosis") VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "Parent"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "Child"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "GrandChild"
 
 -- DuckDB
-
 CREATE TABLE "Parent"      ("ParentID" int, "Value1" int)
 
 -- DuckDB
-
 CREATE TABLE "Child"       ("ParentID" int, "ChildID" int)
 
 -- DuckDB
-
 CREATE TABLE "GrandChild"  ("ParentID" int, "ChildID" int, "GrandChildID" int)
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "LinqDataTypes"
 
 -- DuckDB
-
 CREATE TABLE "LinqDataTypes"
 (
 	"ID"             int,
@@ -156,35 +128,27 @@ CREATE TABLE "LinqDataTypes"
 )
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS SequenceTestSeq
 
 -- DuckDB
-
 CREATE SEQUENCE SequenceTestSeq INCREMENT BY 1 START 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "SequenceTest1"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "SequenceTest2"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "SequenceTest3"
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS "SequenceTest2_ID_seq"
 
 -- DuckDB
-
 CREATE SEQUENCE "SequenceTest2_ID_seq" INCREMENT BY 1 START 1
 
 -- DuckDB
-
 CREATE TABLE "SequenceTest1"
 (
 	"ID"    INTEGER PRIMARY KEY,
@@ -192,7 +156,6 @@ CREATE TABLE "SequenceTest1"
 )
 
 -- DuckDB
-
 CREATE TABLE "SequenceTest2"
 (
 	"ID"    INTEGER PRIMARY KEY DEFAULT NEXTVAL('"SequenceTest2_ID_seq"'),
@@ -200,7 +163,6 @@ CREATE TABLE "SequenceTest2"
 )
 
 -- DuckDB
-
 CREATE TABLE "SequenceTest3"
 (
 	"ID"    INTEGER PRIMARY KEY DEFAULT NEXTVAL('SequenceTestSeq'),
@@ -208,37 +170,29 @@ CREATE TABLE "SequenceTest3"
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "TestIdentity"
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS "TestIdentity_ID_seq"
 
 -- DuckDB
-
 CREATE SEQUENCE "TestIdentity_ID_seq" START 1
 
 -- DuckDB
-
 CREATE TABLE "TestIdentity" (
 	"ID" INTEGER PRIMARY KEY DEFAULT NEXTVAL('"TestIdentity_ID_seq"')
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "AllTypes"
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS "AllTypes_ID_seq"
 
 -- DuckDB
-
 CREATE SEQUENCE "AllTypes_ID_seq" START 1
 
 -- DuckDB
-
 CREATE TABLE "AllTypes"
 (
 	"ID"                  INTEGER      NOT NULL PRIMARY KEY DEFAULT NEXTVAL('"AllTypes_ID_seq"'),
@@ -276,7 +230,6 @@ CREATE TABLE "AllTypes"
 )
 
 -- DuckDB
-
 INSERT INTO "AllTypes"
 (
 	"bigintDataType",
@@ -345,15 +298,12 @@ SELECT
 	true
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "TestMerge1"
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "TestMerge2"
 
 -- DuckDB
-
 CREATE TABLE "TestMerge1"
 (
 	"Id"		INTEGER	PRIMARY KEY,
@@ -383,7 +333,6 @@ CREATE TABLE "TestMerge1"
 )
 
 -- DuckDB
-
 CREATE TABLE "TestMerge2"
 (
 	"Id"		INTEGER	PRIMARY KEY,
@@ -413,11 +362,9 @@ CREATE TABLE "TestMerge2"
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "CollatedTable"
 
 -- DuckDB
-
 CREATE TABLE "CollatedTable"
 (
 	"Id"				INT NOT NULL,
@@ -426,19 +373,15 @@ CREATE TABLE "CollatedTable"
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "TestMergeIdentity"
 
 -- DuckDB
-
 DROP SEQUENCE IF EXISTS "TestMergeIdentity_Id_seq"
 
 -- DuckDB
-
 CREATE SEQUENCE "TestMergeIdentity_Id_seq" START 1
 
 -- DuckDB
-
 CREATE TABLE "TestMergeIdentity"
 (
 	"Id"     INTEGER NOT NULL PRIMARY KEY DEFAULT NEXTVAL('"TestMergeIdentity_Id_seq"'),
@@ -446,11 +389,9 @@ CREATE TABLE "TestMergeIdentity"
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS "AllScaffoldTypes"
 
 -- DuckDB
-
 CREATE TABLE "AllScaffoldTypes"
 (
 	"ID"            INTEGER      NOT NULL PRIMARY KEY,
@@ -503,7 +444,6 @@ ORDER BY
 	c_1.ordinal_position
 
 -- DuckDB
-
 INSERT INTO LinqDataTypes
 (
 	ID,

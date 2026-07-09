@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Coalesce(t.Value1, '') || CAST(t.Value2 AS VARCHAR) || CAST(t.Value3 AS VARCHAR)
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1.Value1,

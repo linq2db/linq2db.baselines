@@ -20,7 +20,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,
@@ -49,7 +48,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,

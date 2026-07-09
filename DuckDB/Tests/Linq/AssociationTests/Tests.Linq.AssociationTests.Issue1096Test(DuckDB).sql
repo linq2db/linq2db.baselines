@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT DISTINCT
 	t.Pk,
 	t.Id,

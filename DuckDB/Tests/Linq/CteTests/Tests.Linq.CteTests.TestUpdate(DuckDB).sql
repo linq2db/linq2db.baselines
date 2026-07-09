@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH CTE_1 (ParentID)
 AS
 (
@@ -20,7 +19,6 @@ WHERE
 	ct.ParentID = CteChild.ParentID
 
 -- DuckDB
-
 SELECT
 	c_1.ChildID,
 	c_1.ParentID
@@ -30,7 +28,6 @@ WHERE
 	c_1.ParentID % 2 = 0
 
 -- DuckDB
-
 SELECT
 	c_1.ChildID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_UpdateAsync
 (
 	ID       INTEGER,
@@ -45,6 +44,5 @@ WHERE
 	FluentTemp_UpdateAsync.ID = 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_UpdateAsync
 

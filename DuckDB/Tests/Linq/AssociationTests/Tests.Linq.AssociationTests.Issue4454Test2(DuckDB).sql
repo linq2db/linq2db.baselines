@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	a_Client2.Name
 FROM

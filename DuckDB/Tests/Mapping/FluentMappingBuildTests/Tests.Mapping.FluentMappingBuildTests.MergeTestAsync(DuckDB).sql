@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Merge
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Merge
 (
 	ID   INTEGER,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO FluentTemp_Merge Target
 USING (VALUES
 	(1,'John II')
@@ -59,6 +56,5 @@ VALUES
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Merge
 

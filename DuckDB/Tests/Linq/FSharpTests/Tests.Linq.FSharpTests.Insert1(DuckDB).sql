@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	c_1.ChildID = 1001
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE

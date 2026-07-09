@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO ValueItem
 (
 	"Value"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	row_1."Value"
 FROM

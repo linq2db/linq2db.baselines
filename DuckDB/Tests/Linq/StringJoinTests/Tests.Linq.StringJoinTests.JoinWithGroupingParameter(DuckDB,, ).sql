@@ -14,7 +14,6 @@ ORDER BY
 	g_1.Id
 
 -- DuckDB
-
 SELECT
 	t1.PK,
 	t1.Id,

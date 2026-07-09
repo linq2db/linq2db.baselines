@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO Child
 (
 	ChildID,

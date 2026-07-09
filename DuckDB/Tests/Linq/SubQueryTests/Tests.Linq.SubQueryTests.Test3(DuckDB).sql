@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	ch.ChildID
 FROM

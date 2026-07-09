@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.PersonID,
 	p.FirstName,
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	p.PersonID,
 	p.FirstName,

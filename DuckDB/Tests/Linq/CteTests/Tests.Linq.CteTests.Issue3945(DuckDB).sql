@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH CTE (ParentId, Label)
 AS
 (

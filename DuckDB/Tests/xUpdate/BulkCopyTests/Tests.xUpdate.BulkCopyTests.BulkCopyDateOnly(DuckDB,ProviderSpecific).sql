@@ -14,7 +14,6 @@ ORDER BY
 INSERT BULK DateOnlyTable(Date)
 
 -- DuckDB
-
 SELECT
 	t1."Date"
 FROM

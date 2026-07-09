@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	SUM(p.Value1) OVER (PARTITION BY p.Value1, c_1.ChildID),
 	SUM(p.Value1) OVER (ORDER BY p.Value1),
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- DuckDB
-
 SELECT
 	SUM(p.Value1)
 FROM

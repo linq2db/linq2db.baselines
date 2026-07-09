@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CONCAT_WS(', ', Coalesce(t.NullableValue, ''), t.NotNullableValue, Coalesce(t.VarcharValue, ''), Coalesce(t.NVarcharValue, '')),
 	Coalesce((
@@ -34,7 +33,6 @@ FROM
 	SampleClass t
 
 -- DuckDB
-
 SELECT
 	t1.PK,
 	t1.Id,

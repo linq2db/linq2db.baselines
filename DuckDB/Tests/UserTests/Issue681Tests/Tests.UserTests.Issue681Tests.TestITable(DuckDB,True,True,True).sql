@@ -1,10 +1,8 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
 -- DuckDB
-
 SELECT
 	current_schema()
 FROM
@@ -12,7 +10,6 @@ FROM
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1."Value"

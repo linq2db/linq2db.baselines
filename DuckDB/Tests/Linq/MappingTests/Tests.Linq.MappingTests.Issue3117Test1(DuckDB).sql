@@ -14,7 +14,6 @@ RETURNING
 	Id
 
 -- DuckDB
-
 SELECT
 	t1.Id
 FROM

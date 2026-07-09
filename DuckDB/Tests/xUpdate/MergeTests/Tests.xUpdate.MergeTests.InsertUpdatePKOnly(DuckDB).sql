@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO PKOnlyTable Target
 USING (VALUES
 	(1), (2), (3)
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.ID
 FROM

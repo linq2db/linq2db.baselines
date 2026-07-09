@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
 	c_1.ParentID > 1000
 
 -- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	c_1.ParentID = $id
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
 	c_1.ParentID > 1000
 
 -- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE

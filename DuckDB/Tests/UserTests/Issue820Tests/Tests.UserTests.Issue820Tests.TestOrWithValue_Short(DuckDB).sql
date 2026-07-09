@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	$param = t1.SmallIntValue
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

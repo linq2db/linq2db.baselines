@@ -50,7 +50,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1

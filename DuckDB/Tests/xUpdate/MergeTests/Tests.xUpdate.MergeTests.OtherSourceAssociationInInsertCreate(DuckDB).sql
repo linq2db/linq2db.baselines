@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO Person Target
 USING (
 	SELECT
@@ -30,7 +29,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
