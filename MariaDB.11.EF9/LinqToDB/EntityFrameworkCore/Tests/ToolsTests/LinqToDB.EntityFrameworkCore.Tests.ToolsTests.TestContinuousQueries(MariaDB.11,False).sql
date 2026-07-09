@@ -77,8 +77,6 @@ FROM
 
 
 
-
-
 -- MariaDB.10.MySqlConnector MariaDB
 
 SELECT

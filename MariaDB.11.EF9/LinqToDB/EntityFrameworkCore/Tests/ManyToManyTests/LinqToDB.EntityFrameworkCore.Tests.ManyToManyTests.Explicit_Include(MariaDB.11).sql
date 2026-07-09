@@ -25,8 +25,6 @@ ORDER BY
 
 
 
-
-
 -- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
