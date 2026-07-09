@@ -14,7 +14,6 @@ ORDER BY
 	g_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.PK,
 	t1."Id",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -72,7 +71,6 @@ WHERE
 	END IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -147,7 +145,6 @@ WHERE
 	END IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -196,7 +193,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -245,7 +241,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -326,7 +321,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -407,7 +401,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -463,7 +456,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -519,7 +511,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -619,7 +610,6 @@ WHERE
 	END IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -719,7 +709,6 @@ WHERE
 	END IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -772,7 +761,6 @@ WHERE
 	END = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -825,7 +813,6 @@ WHERE
 	END = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -930,7 +917,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1035,7 +1021,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1091,7 +1076,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1147,7 +1131,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1180,7 +1163,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1213,7 +1195,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1246,7 +1227,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1279,7 +1259,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1312,7 +1291,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1345,7 +1323,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1378,7 +1355,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1411,7 +1387,6 @@ WHERE
 	) + r."Value5")
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1451,7 +1426,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1491,7 +1465,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1531,7 +1504,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1571,7 +1543,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1611,7 +1582,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1651,7 +1621,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1691,7 +1660,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1731,7 +1699,6 @@ WHERE
 	END
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value1",

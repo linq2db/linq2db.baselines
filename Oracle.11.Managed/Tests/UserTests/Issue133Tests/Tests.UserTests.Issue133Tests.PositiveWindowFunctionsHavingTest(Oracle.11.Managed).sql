@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	(CAST(g_2."CountPercents" AS Float) * 100D) / SUM(g_2."CountPercents") OVER (),
 	g_2."Sum_1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CAST(t1."SmallIntValue" AS Int),
 	CAST(t1."SmallIntValue" AS Int),

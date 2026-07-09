@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 1 AS "Id", 'inc' AS "Name", 3 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual
@@ -40,7 +39,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Name",

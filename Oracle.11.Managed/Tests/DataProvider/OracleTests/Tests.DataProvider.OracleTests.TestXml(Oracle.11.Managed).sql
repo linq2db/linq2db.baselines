@@ -1,13 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT XMLTYPE('<xml/>') FROM sys.dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT XMLTYPE('<xml/>') FROM sys.dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT XMLTYPE('<xml/>') FROM sys.dual
 
 -- Oracle.11.Managed Oracle11

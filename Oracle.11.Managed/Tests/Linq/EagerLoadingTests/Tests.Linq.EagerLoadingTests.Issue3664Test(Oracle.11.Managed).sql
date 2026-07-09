@@ -26,7 +26,6 @@ WHERE
 	d."Id" = :id
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id"
 FROM
@@ -47,7 +46,6 @@ WHERE
 	d."Id" = :id
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id"
 FROM

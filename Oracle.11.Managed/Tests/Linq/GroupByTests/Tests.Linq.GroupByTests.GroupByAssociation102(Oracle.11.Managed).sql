@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	a_Parent."Value1"
 FROM

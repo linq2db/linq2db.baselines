@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ PARALLEL_INDEX(p, index1, 3) */
 	p."ParentID",
 	p."Value1"

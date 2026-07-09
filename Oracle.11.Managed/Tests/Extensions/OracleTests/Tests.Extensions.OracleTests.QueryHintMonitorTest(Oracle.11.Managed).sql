@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ MONITOR */
 	p."ParentID",
 	p."Value1"

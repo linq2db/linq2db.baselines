@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	STDDEV_SAMP(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	STDDEV_SAMP(p."Value1") OVER (ORDER BY p."Value1"),
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	STDDEV_SAMP(c_1."ParentID")
 FROM
@@ -20,7 +18,6 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	STDDEV_SAMP(t1."ParentID")
 FROM

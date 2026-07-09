@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	t1."Id" = 2 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id"
 FROM

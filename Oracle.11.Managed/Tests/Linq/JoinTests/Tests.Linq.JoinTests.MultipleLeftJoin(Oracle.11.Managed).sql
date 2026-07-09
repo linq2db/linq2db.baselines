@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	parent_1."ParentID",
 	childLeftJoin."ChildID",

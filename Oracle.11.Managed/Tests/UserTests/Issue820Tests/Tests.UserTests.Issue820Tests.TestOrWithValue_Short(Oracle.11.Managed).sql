@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	:param = t1."SmallIntValue"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",

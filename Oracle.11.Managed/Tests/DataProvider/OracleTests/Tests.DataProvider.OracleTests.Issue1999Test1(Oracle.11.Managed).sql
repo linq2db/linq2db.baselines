@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE OR REPLACE PROCEDURE ISSUE1999(pIn IN BLOB, pOut OUT BLOB) AS BEGIN pOut := pIn; END;
 
 -- Oracle.11.Managed Oracle11
@@ -12,6 +11,5 @@ SET     @pOut = NULL
 ISSUE1999
 
 -- Oracle.11.Managed Oracle11
-
 DROP PROCEDURE ISSUE1999
 

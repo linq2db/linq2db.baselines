@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	AVG(DISTINCT t."IntValue") OVER (PARTITION BY t."CategoryId")

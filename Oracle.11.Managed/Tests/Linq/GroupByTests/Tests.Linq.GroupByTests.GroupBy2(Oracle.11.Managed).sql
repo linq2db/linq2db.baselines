@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	gr_1.ID,
 	gr_1.ID + 1

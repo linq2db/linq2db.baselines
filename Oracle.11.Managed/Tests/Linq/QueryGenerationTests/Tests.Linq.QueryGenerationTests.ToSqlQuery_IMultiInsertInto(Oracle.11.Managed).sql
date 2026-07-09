@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "Dest1"
 	(
@@ -37,14 +36,12 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"Dest1" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM

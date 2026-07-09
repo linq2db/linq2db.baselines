@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."datetimeoffsetDataType"
@@ -20,7 +19,6 @@ WHERE
 	mt.ID = :ID
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"AllTypes" mt
 SET

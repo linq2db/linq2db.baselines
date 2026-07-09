@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "TPHTable" ("Id", "Discriminator", "Value1", "Value2", "Value3", "NullableBool") VALUES (1,1,'Str1',NULL,NULL,NULL)
 	INTO "TPHTable" ("Id", "Discriminator", "Value1", "Value2", "Value3", "NullableBool") VALUES (2,2,NULL,'Str2',NULL,NULL)
@@ -7,7 +6,6 @@ INSERT ALL
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Discriminator",
 	t1."Id",
@@ -21,7 +19,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -35,7 +32,6 @@ WHERE
 	x."Discriminator" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -49,7 +45,6 @@ WHERE
 	x."Discriminator" = 2 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -63,7 +58,6 @@ WHERE
 	x."Discriminator" = 3 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -77,7 +71,6 @@ WHERE
 	x."Value1" = 'Str1' AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -91,7 +84,6 @@ WHERE
 	x."Value2" = 'Str2' AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Discriminator",
 	x."Id",

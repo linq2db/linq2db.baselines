@@ -62,7 +62,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id"
@@ -78,7 +77,6 @@ FROM
 		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id",
 	x."Title",

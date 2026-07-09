@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ FULL(p_2.p_1.p) LEADING(p_2.p_1.p p_2.p_1.c_1) */
 	p_2."ParentID",
 	p_2."Value1"

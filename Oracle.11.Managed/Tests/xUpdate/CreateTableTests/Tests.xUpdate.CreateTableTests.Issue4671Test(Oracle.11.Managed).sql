@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "Issue4671EntityTMP"
@@ -19,11 +18,9 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 CREATE SEQUENCE "SIDENTITY_Issue4671EntityTMP"
 
 -- Oracle.11.Managed Oracle11
-
 CREATE OR REPLACE TRIGGER "TIDENTITY_Issue4671EntityTMP"
 BEFORE INSERT ON "Issue4671EntityTMP" FOR EACH ROW
 BEGIN
@@ -31,7 +28,6 @@ BEGIN
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue4671Entity"
 (
 	"Value"
@@ -42,7 +38,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Issue4671EntityTMP"
 (
 	"Value"
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -63,7 +57,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -73,7 +66,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "Issue4671EntityTMP"';

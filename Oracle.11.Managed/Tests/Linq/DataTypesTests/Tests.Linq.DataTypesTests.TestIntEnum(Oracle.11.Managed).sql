@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 2 AND r."ColumnNullable" = 3
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"IntEnumTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,19 +80,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"IntEnumTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
 	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -106,19 +100,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"IntEnumTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (1,1,NULL)
 	INTO "IntEnumTable" ("Id", "Column", "ColumnNullable") VALUES (2,2,3)
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Column",

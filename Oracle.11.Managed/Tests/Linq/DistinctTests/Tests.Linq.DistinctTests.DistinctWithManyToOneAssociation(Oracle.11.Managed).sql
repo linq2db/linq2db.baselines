@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	c_1."ChildID",
 	a_Parent."ParentID",
@@ -11,7 +10,6 @@ ORDER BY
 	c_1."ChildID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."ParentID",
 	t1."ChildID",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -16,7 +15,6 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
 	"Id"    Int NOT NULL,
@@ -8,7 +7,6 @@ CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 ON COMMIT PRESERVE ROWS
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -16,7 +14,6 @@ FROM
 	"IsGlobalTemporaryTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "IsGlobalTemporaryTable"';

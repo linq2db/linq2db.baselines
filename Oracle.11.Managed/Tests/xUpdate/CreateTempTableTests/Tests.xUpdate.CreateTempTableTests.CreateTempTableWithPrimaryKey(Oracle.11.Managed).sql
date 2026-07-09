@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TableWithPrimaryKey"
@@ -18,7 +17,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TableWithPrimaryKey"';

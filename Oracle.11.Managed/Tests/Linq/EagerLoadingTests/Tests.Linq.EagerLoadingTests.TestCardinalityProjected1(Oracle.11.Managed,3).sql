@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "EntityD" d ON m_1."Id" = d.FK
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	a_ObjectB."Id",

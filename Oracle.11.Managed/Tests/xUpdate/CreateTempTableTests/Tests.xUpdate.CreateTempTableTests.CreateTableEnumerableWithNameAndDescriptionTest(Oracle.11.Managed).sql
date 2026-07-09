@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
@@ -28,13 +26,11 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "TempTable" ("Name") VALUES ('John')
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Name"
 FROM
@@ -42,7 +38,6 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION

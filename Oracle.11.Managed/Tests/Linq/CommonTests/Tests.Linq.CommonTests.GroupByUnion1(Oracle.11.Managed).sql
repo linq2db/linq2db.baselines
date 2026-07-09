@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	tt."Key_1",
 	SUM(tt."ChildID")

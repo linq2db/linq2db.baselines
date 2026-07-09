@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	LEAD(t."DoubleValue") OVER (ORDER BY t."Id"),
 	LAG(t."DecimalValue") OVER (ORDER BY t."Id"),

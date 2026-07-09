@@ -33,7 +33,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."id",
 	t1."name",
@@ -79,7 +78,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."id",
 	t1."name",

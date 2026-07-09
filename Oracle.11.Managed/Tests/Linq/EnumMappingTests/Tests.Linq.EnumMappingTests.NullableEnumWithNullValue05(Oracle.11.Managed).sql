@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."IntValue"
@@ -71,7 +70,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r.ID,
 	r."IntValue",

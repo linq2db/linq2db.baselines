@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	c_1."Id"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	c_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	k_1."item",
 	d."Id",

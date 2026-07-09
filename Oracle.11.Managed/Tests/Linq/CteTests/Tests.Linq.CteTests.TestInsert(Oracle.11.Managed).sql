@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "CteChild"
 (
 	"ChildID",
@@ -34,7 +33,6 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1."ParentID" = t1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."ChildID",
 	t1."ParentID"
@@ -45,7 +43,6 @@ ORDER BY
 	t1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	c4."ChildID",
 	c4."ParentID"

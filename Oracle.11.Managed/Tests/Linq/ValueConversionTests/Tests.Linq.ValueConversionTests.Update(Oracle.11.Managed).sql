@@ -17,7 +17,6 @@ WHERE
 	e."Id" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -72,7 +71,6 @@ WHERE
 	t1."Id" = :Id
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -127,7 +125,6 @@ WHERE
 	t1."Id" = :Id
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."Value1",

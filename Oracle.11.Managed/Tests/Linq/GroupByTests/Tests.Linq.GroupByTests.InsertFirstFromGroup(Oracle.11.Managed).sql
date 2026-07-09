@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 CREATE TABLE "temp_table_1"
 (
 	ID      Int          NOT NULL,
@@ -9,13 +8,11 @@ CREATE TABLE "temp_table_1"
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "temp_table_1" (ID, "Value") VALUES (1,'Value')
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE "temp_table_2"
 (
 	"Value" VarChar(50) NOT NULL,
@@ -24,7 +21,6 @@ CREATE TABLE "temp_table_2"
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "temp_table_2"
 (
 	"Value"
@@ -43,7 +39,6 @@ FROM
 		) t1 ON gr.ID = t1.ID AND t1."rn" = 1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_2"';
 EXCEPTION
@@ -54,7 +49,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_1"';
 EXCEPTION

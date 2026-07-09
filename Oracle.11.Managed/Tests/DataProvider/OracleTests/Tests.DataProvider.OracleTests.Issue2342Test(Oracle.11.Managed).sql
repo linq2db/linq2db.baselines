@@ -9,6 +9,5 @@ SET     @:p2 = {'Name_1','Name_2','Name_3','Name_4','Name_5','Name_6','Name_7','
 INSERT INTO "Issue2342Entity" ("Id", "Name") VALUES (:p1, :p2)
 
 -- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "Issue2342Entity"
 

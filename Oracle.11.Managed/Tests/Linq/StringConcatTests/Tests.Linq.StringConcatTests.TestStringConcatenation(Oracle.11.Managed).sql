@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	'Element ' || r."VarCharTextNullable" || ' Text1',

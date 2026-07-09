@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TempTable"';
@@ -16,7 +15,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TempTable"
@@ -35,13 +33,11 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT ALL
 	INTO "TempTable" ("Name") VALUES ('John')
 SELECT * FROM dual
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Name"
 FROM
@@ -49,7 +45,6 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TempTable"';

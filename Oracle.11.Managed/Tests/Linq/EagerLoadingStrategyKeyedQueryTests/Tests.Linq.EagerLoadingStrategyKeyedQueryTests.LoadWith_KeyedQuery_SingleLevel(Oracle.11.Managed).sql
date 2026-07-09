@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -9,7 +8,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	k_1."item",
 	d."Id",

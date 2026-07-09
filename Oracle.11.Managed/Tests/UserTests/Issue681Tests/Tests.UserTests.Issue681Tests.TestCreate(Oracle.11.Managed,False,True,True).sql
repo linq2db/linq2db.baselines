@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	sys_context('userenv', 'current_schema')
 FROM
@@ -8,7 +7,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 EXCEPTION
@@ -19,7 +17,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE TEST."Issue681Table2"
 (
 	ID      Int NOT NULL,
@@ -29,7 +26,6 @@ CREATE TABLE TEST."Issue681Table2"
 )
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
 EXCEPTION

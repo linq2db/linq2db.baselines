@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "LinqDataTypes" Target
 USING (
 	SELECT

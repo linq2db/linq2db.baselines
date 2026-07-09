@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "IsTemporaryTable"
@@ -19,7 +18,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -27,7 +25,6 @@ FROM
 	"IsTemporaryTable" t1
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "IsTemporaryTable"';

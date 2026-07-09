@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Name",
@@ -47,7 +46,6 @@ WHERE
 	t1."Id" = :Id
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Id",
 	t."Name",

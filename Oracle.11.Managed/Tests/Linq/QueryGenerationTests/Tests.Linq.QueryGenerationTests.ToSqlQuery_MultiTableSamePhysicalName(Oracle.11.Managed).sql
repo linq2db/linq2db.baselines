@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	p."PersonID",
 	d."PersonID"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "Doctor" d ON p."PersonID" = d."PersonID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	p."PersonID",
 	d."PersonID"

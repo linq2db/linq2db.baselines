@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CASE
 		WHEN t2."x" < 0 THEN 9

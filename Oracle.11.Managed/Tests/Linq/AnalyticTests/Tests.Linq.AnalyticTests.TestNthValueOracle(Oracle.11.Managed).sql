@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	NTH_VALUE(c_1."ChildID", 1) OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	NTH_VALUE(c_1."ChildID", CAST(p."ParentID" AS Number(19))) OVER (PARTITION BY p."Value1", c_1."ChildID"),

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(g_1."ChildID"),
 	MAX(g_1."ChildID" + g_1."ParentID")

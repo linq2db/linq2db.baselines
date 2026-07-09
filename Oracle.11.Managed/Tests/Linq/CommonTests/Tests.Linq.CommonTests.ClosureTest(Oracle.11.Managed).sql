@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	1
 FROM
