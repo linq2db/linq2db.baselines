@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."IntValue"
@@ -71,7 +70,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r".ID,
 	"r"."IntValue",

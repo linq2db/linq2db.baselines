@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN "TestEntity2" "t2" ON "t1"."Id" = "t2"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -23,7 +21,6 @@ WHERE
 	"t1"."Id" IS NULL
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

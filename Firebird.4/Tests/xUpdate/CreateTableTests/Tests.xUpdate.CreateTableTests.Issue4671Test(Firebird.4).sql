@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4671EntityTMP')) THEN
 		EXECUTE STATEMENT '
@@ -27,7 +26,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "Issue4671Entity"
 (
 	"Value"
@@ -38,7 +36,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "Issue4671EntityTMP"
 (
 	"Value"
@@ -49,7 +46,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -58,7 +54,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -67,7 +62,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_Issue4671EntityTMP')) THEN
 		EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_Issue4671EntityTMP"';

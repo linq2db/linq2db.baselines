@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 UPDATE
 	"Parent" "t"
 SET
@@ -25,7 +24,6 @@ WHERE
 	"t"."ParentID" = 1010
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE
@@ -176,14 +175,12 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "x"
 WHERE
 	"x"."ParentID" > 1000
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Value1"
 FROM
@@ -194,7 +191,6 @@ ORDER BY
 	"r"."ParentID"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

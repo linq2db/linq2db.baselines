@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"s"."Id",
 	"s"."Value",
@@ -10,7 +9,6 @@ WHERE
 	"s"."Id" = 3
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"TableWithData" "s"
 WHERE

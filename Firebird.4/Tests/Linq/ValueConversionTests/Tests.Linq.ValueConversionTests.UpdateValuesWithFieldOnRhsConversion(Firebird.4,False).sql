@@ -15,7 +15,6 @@ WHERE
 	"x"."Id" = 1
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -28,7 +27,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

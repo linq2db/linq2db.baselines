@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "SomeTable"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."ClassProp",

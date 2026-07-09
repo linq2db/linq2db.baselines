@@ -14,7 +14,6 @@ ORDER BY
 FETCH NEXT @take ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Grp",

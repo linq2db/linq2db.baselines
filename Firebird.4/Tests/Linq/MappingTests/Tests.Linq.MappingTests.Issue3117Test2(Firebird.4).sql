@@ -16,7 +16,6 @@ RETURNING
 	"Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM
@@ -35,7 +34,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"u"."Id"
 FROM

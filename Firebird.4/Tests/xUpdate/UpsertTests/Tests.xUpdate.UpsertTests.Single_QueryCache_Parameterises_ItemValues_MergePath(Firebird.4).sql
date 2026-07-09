@@ -36,7 +36,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 42 AS "Id", CAST('first-update' AS VARCHAR(12)) AS "Name", 50 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -62,7 +61,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 42 AS "Id", CAST('second-update' AS VARCHAR(13)) AS "Name", 99 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -88,7 +86,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Name",

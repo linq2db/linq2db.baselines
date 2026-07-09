@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	CAST(CAST(Floor("t"."MoneyValue") AS Int) AS DOUBLE PRECISION) * 57.295779513082323
 FROM

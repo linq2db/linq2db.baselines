@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 UPDATE
 	"Parent" "t"
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- Firebird.4 Firebird4
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"

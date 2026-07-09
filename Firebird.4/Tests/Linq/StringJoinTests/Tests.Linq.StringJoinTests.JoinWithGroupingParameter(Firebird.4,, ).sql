@@ -14,7 +14,6 @@ ORDER BY
 	"g_1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1".PK,
 	"t1"."Id",
