@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	current_schema()
@@ -6,7 +6,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32

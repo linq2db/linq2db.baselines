@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	i."Id"
 FROM
 	"Tender" i
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -13,7 +13,7 @@ SELECT
 FROM
 	"Tender" t1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	r."Id"
@@ -23,7 +23,7 @@ WHERE
 	r."Id" = '00000000-0000-0000-0000-000000000000'::uuid
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	i."Id"

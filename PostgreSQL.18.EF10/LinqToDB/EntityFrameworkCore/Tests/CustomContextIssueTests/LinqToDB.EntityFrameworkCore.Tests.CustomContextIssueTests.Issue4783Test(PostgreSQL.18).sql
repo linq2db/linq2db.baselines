@@ -12,7 +12,7 @@ VALUES (@p6, @p7, @p8)
 RETURNING "Id";
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Issue4783DBRecords"
 (
@@ -27,7 +27,7 @@ VALUES
 
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

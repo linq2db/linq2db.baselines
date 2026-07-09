@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @false_value Varchar -- String
 SET     @false_value = 'N'
 

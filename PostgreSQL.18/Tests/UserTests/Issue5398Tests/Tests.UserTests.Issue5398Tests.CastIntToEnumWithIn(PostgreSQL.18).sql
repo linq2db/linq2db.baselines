@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	i."Id"
@@ -9,7 +9,7 @@ WHERE
 ORDER BY
 	i."Id"
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

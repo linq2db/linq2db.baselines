@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PK",
@@ -19,7 +19,7 @@ WHERE
 			) t1(item)
 	) > make_timestamp(2023, 1, 1, 0, 0, 0)
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PK",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @arr -2147483646 -- Object
 SET     @arr = {True}
 

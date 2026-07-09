@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 MERGE INTO "Person" "Target"
 USING (
@@ -29,7 +29,7 @@ VALUES
 	'U'
 )
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."FirstName",

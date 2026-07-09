@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 ALTER TABLE pgtimestamptest ALTER COLUMN updatedon TYPE timestamptz;
 

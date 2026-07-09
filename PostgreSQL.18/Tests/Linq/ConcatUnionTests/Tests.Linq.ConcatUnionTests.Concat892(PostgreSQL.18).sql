@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Value1",
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"Child" c_3
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ParentID",
@@ -32,7 +32,7 @@ SELECT
 FROM
 	"Child" t1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ParentID",

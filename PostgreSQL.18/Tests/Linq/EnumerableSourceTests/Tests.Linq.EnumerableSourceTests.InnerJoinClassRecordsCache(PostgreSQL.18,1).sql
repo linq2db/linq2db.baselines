@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."FirstName",
@@ -12,7 +12,7 @@ FROM
 			(2), (3)
 		) n("ID") ON p."PersonID" = n."ID"
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."FirstName",

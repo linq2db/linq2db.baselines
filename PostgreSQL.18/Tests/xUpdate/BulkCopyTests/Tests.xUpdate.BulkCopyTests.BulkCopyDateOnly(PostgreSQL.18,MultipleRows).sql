@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "DateOnlyTable"
 (
@@ -7,7 +7,7 @@ INSERT INTO "DateOnlyTable"
 VALUES
 ('2021-01-01'::date)
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Date"

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(6) -- String
@@ -42,7 +42,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :UpdatedAt,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -58,7 +58,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(6) -- String
@@ -102,7 +102,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = CURRENT_TIMESTAMP,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	r."Id",
@@ -118,7 +118,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(7) -- String
@@ -160,7 +160,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :UpdatedAt,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	r."Id",

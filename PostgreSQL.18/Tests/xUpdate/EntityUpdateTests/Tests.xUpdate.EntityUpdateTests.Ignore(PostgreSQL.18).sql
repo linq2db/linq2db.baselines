@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @Version Integer -- Int32
 SET     @Version = 99
 DECLARE @UpdatedAt Timestamp -- DateTime2
@@ -17,7 +17,7 @@ SET
 WHERE
 	"EntityUpdateTest"."Id" = :Id
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PersonID",
@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" p
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PersonID",
@@ -14,7 +14,7 @@ SELECT
 FROM
 	"Person" p
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PersonID",
@@ -22,7 +22,7 @@ SELECT
 FROM
 	"Person" p
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PersonID",
@@ -30,7 +30,7 @@ SELECT
 FROM
 	"Person" p
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."PersonID",

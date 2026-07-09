@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
@@ -16,7 +16,7 @@ SELECT
 		ELSE False
 	END
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
 

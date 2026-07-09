@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	(i."One", i."Two") BETWEEN (i."One", i."One" * 2) AND (i."One", i."One" + i."One")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	(i."One", i."Three") BETWEEN (i."One", i."One") AND (i."One", i."Four")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	(i."One", i."Two") BETWEEN (i."One", i."Three") AND (i."One", i."Two")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ FROM
 WHERE
 	(i."Two", i."Five") BETWEEN (i."One", i."One") AND (i."Three", i."Two")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 WHERE
 	(i."Two", i."Five") BETWEEN (i."One", i."One") AND (i."Two", i."Two")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") BETWEEN (i."One", i."One") AND (i."Three", i."One")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -61,7 +61,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") BETWEEN (i."Two", i."One") AND (i."Two", i."Three")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -70,7 +70,7 @@ FROM
 WHERE
 	(i."Two", i."Five") BETWEEN (i."One", i."Nil") AND (i."Three", i."Nil")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)
@@ -79,7 +79,7 @@ FROM
 WHERE
 	(i."Two", i."Nil") BETWEEN (i."One", i."Nil") AND (i."Three", i."Nil")
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	COUNT(*)

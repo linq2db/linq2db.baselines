@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Person"
 (
@@ -15,7 +15,7 @@ VALUES
 	'M'
 )
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 DELETE FROM
 	"Person" p

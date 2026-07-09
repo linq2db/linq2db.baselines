@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @filter Text(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 Text(8) -- String
@@ -45,7 +45,7 @@ WHERE
 ORDER BY
 	patient_1."PersonID"
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."PersonID",
@@ -53,7 +53,7 @@ SELECT
 FROM
 	"Patient" t1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."FirstName",

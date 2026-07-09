@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @personId Integer -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Integer -- Int32

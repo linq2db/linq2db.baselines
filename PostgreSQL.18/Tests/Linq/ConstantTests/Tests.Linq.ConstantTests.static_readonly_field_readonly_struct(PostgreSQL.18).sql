@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	e."Id",
@@ -10,7 +10,7 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"TestConstantsData" t1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	e."Id",
@@ -32,7 +32,7 @@ FROM
 WHERE
 	e."Id" = 1 AND e."Id" = 2
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

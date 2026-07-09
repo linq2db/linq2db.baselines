@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "BlobClass"
 (
@@ -11,7 +11,7 @@ VALUES
 	E'\\x010203'::bytea
 )
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",
@@ -22,7 +22,7 @@ WHERE
 	t1."Id" = 1
 LIMIT 1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."Id",

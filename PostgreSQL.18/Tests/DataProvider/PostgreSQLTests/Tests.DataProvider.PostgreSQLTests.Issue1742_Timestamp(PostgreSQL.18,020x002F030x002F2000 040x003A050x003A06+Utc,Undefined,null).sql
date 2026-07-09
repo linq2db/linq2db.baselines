@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @p1 Timestamp -- DateTime2
 SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
 

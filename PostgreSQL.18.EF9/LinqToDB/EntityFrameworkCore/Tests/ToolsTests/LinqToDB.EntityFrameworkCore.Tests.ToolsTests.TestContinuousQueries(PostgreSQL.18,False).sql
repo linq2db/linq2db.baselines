@@ -24,7 +24,7 @@ ORDER BY o."OrderID", s."OrderID", s."ProductID", s."ProductID0", s."OrderID0"
 
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	m_1."ProductId",
@@ -49,7 +49,7 @@ FROM
 
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	m_1."OrderID",
@@ -77,9 +77,7 @@ FROM
 
 
 
-
-
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	e."IsDeleted",

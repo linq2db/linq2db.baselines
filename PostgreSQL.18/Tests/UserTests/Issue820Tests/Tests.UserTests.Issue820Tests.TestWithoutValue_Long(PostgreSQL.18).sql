@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @param Bigint -- Int64
 SET     @param = 1
 
@@ -18,7 +18,7 @@ FROM
 WHERE
 	:param = t1."BigIntValue"
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."ID",

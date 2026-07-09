@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 WITH "CTE_1" ("PersonID")
 AS
@@ -26,7 +26,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."PersonID"
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 WITH "CTE_1" ("PersonID")
 AS

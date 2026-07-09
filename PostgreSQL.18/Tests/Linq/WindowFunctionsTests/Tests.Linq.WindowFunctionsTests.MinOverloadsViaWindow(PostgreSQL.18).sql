@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	MIN(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

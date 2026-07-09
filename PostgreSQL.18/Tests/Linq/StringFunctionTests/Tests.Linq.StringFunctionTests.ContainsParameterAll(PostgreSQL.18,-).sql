@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @s Text(7) -- String
 SET     @s = '123-456'
 DECLARE @toTest Text(3) -- String

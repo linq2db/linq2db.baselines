@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t."PK",
@@ -16,7 +16,7 @@ WHERE
 			t."ID" = p."ID" OR t."ID" IS NULL AND p."ID" IS NULL
 	)
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."PK",
@@ -25,7 +25,7 @@ SELECT
 FROM
 	test_in_1 t1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	t1."PK",

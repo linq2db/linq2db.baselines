@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String

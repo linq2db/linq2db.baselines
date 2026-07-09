@@ -8,7 +8,7 @@ WHERE EXISTS (
 ORDER BY p."Code"
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	p."Code"

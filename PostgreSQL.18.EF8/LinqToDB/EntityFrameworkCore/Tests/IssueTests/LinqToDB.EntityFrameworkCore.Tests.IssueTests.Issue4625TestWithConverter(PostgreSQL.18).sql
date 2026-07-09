@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 DECLARE @DateTimeOffsetWithConverter Bigint -- Int64
 SET     @DateTimeOffsetWithConverter = 1304956839836121088
 DECLARE @DateTimeOffsetNWithConverter Bigint -- Int64

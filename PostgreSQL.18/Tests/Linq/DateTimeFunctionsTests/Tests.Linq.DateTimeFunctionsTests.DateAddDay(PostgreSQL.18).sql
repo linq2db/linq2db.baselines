@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 SELECT
 	Date_Trunc('day', t."DateTimeValue" + 5 * Interval '1 Day')

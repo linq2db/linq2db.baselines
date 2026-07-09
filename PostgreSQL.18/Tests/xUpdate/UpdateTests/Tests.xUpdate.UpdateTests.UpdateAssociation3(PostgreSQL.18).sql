@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 INSERT INTO "Child"
 (
@@ -24,7 +24,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18 PostgreSQL13
 
 UPDATE
 	"Parent"
