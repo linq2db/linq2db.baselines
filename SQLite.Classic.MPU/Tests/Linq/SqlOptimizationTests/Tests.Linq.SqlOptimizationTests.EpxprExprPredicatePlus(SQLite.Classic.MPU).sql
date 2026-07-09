@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[IntValue],
@@ -10,7 +9,6 @@ WHERE
 	[t].[Id] > 4
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[IntValue],
@@ -21,7 +19,6 @@ WHERE
 	4 < [t].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[IntValue],
@@ -32,7 +29,6 @@ WHERE
 	[t].[Id] > 4
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[IntValue],

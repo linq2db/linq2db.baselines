@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2020-01-01'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[DateOnlyTable]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,12 +80,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[DateOnlyTable]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [DateOnlyTable]
 (
 	[Id],
@@ -100,7 +95,6 @@ VALUES
 (2,'2020-02-29','2020-01-01')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -111,12 +105,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[DateOnlyTable]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [DateOnlyTable]
 (
 	[Id],
@@ -128,7 +120,6 @@ VALUES
 (2,'2020-02-29','2020-01-01')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

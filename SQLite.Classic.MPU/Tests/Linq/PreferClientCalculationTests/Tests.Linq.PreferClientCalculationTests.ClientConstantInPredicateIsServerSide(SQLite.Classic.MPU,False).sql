@@ -13,7 +13,6 @@ WHERE
 	[e].[Id] = @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

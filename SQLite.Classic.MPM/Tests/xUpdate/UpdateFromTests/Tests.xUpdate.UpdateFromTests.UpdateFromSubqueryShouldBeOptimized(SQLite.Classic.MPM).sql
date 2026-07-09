@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[UpdateSubquerySourceTable]
 SET
@@ -25,7 +23,6 @@ WHERE
 	[x].[Id] = 1 AND [UpdateSubquerySourceTable].[Id] = [x].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -36,7 +33,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE

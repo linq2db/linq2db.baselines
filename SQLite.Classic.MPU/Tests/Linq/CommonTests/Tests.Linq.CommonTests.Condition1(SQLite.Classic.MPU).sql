@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN Length([p].[FirstName]) <> 0 THEN [p].[FirstName]

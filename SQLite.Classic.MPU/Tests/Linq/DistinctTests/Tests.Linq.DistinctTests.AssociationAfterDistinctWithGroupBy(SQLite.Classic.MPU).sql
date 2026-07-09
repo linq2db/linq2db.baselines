@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[a_Parent_1].[ParentID],
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	[a_Parent_1].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [Parent] [a_Parent1_1] ON [d].[ParentID] = [a_Parent1_1].[ParentID] AND [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[a_Parent1].[ParentID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -9,7 +8,6 @@ VALUES
 (111001,NULL)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Child]
 (
 	[ParentID],

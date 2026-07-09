@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],

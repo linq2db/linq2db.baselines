@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
@@ -10,7 +9,6 @@ FROM
 		RIGHT JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID] AND Coalesce([p].[Value1], 0) = [c_1].[ParentID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -18,7 +16,6 @@ FROM
 	[Parent] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

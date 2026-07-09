@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[item_1].[Id],
 	[a_PayRate].[Id],
@@ -11,7 +10,6 @@ WHERE
 	[a_PayRate].[Name] = 'test'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[item_1].[Id],
 	[item_1].[PayRateId],

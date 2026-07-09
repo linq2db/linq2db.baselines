@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[itm_3].[ItemId]
 FROM
@@ -27,7 +26,6 @@ WHERE
 	[entity_1].[Applicable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[ItemId]
@@ -35,7 +33,6 @@ FROM
 	[Thing] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[ItemId],
 	[t1].[AltItemId],
@@ -45,7 +42,6 @@ FROM
 	[Item] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[EntityId],
 	[t1].[Applicable]
@@ -53,7 +49,6 @@ FROM
 	[Entity] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[itm_3].[ItemId]
 FROM

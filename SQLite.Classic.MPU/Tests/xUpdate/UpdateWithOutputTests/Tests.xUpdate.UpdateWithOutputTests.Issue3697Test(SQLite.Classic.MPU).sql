@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Test3697] DEFAULT VALUES
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 UPDATE
 	[Test3697Item]
 SET
@@ -16,7 +14,6 @@ RETURNING
 	[Test3697Item].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 UPDATE
 	[Test3697Item]
 SET

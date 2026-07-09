@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 'value=2' AND [r].[ColumnNullable] = 'value=33'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[StringEnumTable]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,12 +80,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[StringEnumTable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [StringEnumTable]
 (
 	[Id],
@@ -100,7 +95,6 @@ VALUES
 (2,'value=2','value=33')
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -111,12 +105,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[StringEnumTable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [StringEnumTable]
 (
 	[Id],
@@ -128,7 +120,6 @@ VALUES
 (2,'value=2','value=33')
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -14,14 +13,12 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[Issue4132Table]
 SET
 	[Text] = 'after'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Number],

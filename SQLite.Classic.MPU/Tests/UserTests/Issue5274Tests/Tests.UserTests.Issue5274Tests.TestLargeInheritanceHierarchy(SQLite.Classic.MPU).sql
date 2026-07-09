@@ -424,7 +424,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[EntityType],
 	[t1].[Id],
@@ -451,7 +450,6 @@ FROM
 	[Issue5274Entity] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[EntityType],
@@ -465,7 +463,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[EntityType],
 	[e].[Id],
@@ -494,7 +491,6 @@ WHERE
 	[e].[EntityType] = 'Type05'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[EntityType],
 	[e].[Id],
@@ -526,7 +522,6 @@ ORDER BY
 	[e].[Name]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],

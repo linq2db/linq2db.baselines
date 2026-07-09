@@ -45,7 +45,6 @@ WHERE
 	@Version > [t1].[Version]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],
@@ -107,7 +106,6 @@ WHERE
 	@Version > [t1].[Version]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

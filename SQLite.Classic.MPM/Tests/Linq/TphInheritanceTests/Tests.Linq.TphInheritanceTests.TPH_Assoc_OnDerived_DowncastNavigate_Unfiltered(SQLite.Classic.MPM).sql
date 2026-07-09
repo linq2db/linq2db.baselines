@@ -79,7 +79,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[a_Company].[Name]
 FROM

@@ -79,7 +79,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Kind],
 	[t1].[Id],

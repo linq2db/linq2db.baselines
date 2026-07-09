@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value],
@@ -11,7 +10,6 @@ WHERE
 	NOT [e].[IsDeleted] AND [e].[Id] < 500
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value],
@@ -23,7 +21,6 @@ WHERE
 	[e].[Id] < 500
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value],

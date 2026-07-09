@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TestPersons2]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 /* THIS IS HEADER*/ CREATE TABLE temp.[TestPersons2]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
@@ -15,7 +13,6 @@ DROP TABLE IF EXISTS [TestPersons2]
 /* THIS IS FOOTER*/
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO temp.[TestPersons2]
 (
 	[FirstName],
@@ -34,20 +31,17 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	temp.[TestPersons2] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[TestPersons2]
 

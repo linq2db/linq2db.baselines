@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[u].[street]
 FROM

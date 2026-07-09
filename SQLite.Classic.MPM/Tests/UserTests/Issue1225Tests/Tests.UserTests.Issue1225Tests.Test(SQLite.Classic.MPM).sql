@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	'Id',
 	[it].[Id],

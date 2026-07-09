@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	RTRIM(Coalesce([t].[NCharColumn], '') || '...++', '.+')
 FROM
 	[StringTrimTable] [t]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

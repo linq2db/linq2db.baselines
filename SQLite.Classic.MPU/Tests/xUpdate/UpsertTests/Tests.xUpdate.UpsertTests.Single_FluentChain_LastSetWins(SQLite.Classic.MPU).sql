@@ -41,7 +41,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[UpdatedBy] = @UpdatedBy
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

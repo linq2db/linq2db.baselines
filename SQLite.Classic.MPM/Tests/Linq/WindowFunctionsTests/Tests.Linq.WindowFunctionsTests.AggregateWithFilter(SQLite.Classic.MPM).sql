@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	SUM(CASE
 		WHEN [t].[CategoryId] = 1 THEN [t].[IntValue]

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -11,7 +10,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

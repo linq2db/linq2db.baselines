@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [KParent]
 (
 	[Id],
@@ -24,7 +23,6 @@ VALUES
 (2,1,1,1,1,1,1,1,2,1,0,0,0,0,0,0)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [KChild]
 (
 	[Id],
@@ -50,7 +48,6 @@ VALUES
 (2,1,1,1,1,1,1,1,2,1,0,0,0,0,0,0,'p2')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[K1],
 	[m_1].[K2],
@@ -98,7 +95,6 @@ ORDER BY
 	[d].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[K8],

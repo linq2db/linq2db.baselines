@@ -1,17 +1,13 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT Cast(1 as Object)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

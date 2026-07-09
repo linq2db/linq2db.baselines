@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT ([Id]) DO NOTHING
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [cte] ([ParentID], [ChildID], [Level_1])
 AS
 (

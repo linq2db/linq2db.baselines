@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	MAX(CASE
 		WHEN [g_1].[ParentID] < 3 THEN [g_1].[ChildID]

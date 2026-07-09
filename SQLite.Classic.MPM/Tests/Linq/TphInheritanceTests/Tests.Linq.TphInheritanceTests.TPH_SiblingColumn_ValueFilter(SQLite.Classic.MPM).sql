@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[EventCode],
 	[t].[Id],
@@ -57,7 +56,6 @@ WHERE
 	[t].[TicketChildCode] = 'shared'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[EventCode],
 	[t].[Id],

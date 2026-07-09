@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[EventCode],
 	[t1].[Id],

@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

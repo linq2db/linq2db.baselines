@@ -1,21 +1,16 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT    binaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT varbinaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT    binaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT varbinaryDataType FROM AllTypes WHERE ID = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT Cast(NULL as image)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

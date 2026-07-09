@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	snippet([r].[FTS4_TABLE], '_')
 FROM

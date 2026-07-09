@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[PK],
 	[t].[ID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]
@@ -24,7 +22,6 @@ FROM
 	[test_in_1] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[ID],

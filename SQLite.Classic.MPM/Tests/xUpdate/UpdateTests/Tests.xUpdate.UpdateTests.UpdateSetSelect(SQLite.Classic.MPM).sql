@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[Parent]
 SET
