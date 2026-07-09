@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 MERGE INTO "Person" "Target"
 USING (
@@ -30,7 +30,7 @@ UPDATE
 SET
 	"MiddleName" = 'R.I.P.'
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."FirstName",

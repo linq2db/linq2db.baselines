@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1."City_Code",
@@ -25,7 +25,7 @@ FROM
 	) m_1
 		INNER JOIN "Cities" d_1 ON d_1."City_Code" = m_1."City_Code"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	a."First_Name",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @isActive Boolean
 SET     @isActive = True
 DECLARE @warehouseIds -2147483639 -- Object

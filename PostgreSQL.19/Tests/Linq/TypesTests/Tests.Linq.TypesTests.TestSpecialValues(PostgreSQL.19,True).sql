@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "AllTypes"
 (
@@ -20,7 +20,7 @@ VALUES
 	'NaN'::float8
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "AllTypes"
 (
@@ -35,7 +35,7 @@ VALUES
 	'-Infinity'::float8
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "AllTypes"
 (
@@ -50,7 +50,7 @@ VALUES
 	'Infinity'::float8
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."realDataType",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	COUNT(*) FILTER (WHERE g_1."TimeStamp" > '2020-02-29 17:54:55.123'::timestamp)

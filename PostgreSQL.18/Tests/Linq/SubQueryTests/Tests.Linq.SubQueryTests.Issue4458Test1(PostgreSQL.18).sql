@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -21,7 +21,7 @@ ORDER BY
 	d."ItemId",
 	d."UserId"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	i."Id",
@@ -47,14 +47,14 @@ WHERE
 			r."ItemId" = i."Id" AND r."Score" > 95
 	)
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Issue4458Item" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ItemId",
@@ -63,7 +63,7 @@ SELECT
 FROM
 	"WarehouseStock" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ItemId",

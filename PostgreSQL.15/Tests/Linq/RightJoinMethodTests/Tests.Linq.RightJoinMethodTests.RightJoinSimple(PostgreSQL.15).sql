@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	p."ParentID",
@@ -7,7 +7,7 @@ FROM
 	"Parent" p
 		RIGHT JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."ParentID",
@@ -15,7 +15,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."ParentID",

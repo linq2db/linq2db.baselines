@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	(Floor(Extract(year From t."DateTimeValue"))::Int::text || '-01-01')::Date

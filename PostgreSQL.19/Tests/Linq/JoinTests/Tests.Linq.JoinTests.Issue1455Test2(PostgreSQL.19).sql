@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @DeliveryCounterParty Text(3) -- String
 SET     @DeliveryCounterParty = '%C%'
 

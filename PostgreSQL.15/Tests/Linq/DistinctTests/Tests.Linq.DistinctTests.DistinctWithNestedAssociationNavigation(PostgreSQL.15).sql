@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT DISTINCT
 	gc."GrandChildID",
@@ -10,7 +10,7 @@ FROM
 ORDER BY
 	gc."GrandChildID"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."ParentID",

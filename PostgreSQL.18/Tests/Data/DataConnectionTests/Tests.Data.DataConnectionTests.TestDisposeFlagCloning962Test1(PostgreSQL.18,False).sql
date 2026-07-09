@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	m_1."CategoryID",
@@ -10,7 +10,7 @@ FROM
 	"Categories" m_1
 		INNER JOIN "Products" d ON m_1."CategoryID" = d."CategoryID"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."CategoryID",

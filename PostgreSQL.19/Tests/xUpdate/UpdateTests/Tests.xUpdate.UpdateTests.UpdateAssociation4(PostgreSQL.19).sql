@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "Child"
 (
@@ -24,7 +24,7 @@ VALUES
 	20000
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 5
 

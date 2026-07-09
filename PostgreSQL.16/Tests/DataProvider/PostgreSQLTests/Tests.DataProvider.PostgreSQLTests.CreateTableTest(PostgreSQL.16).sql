@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @TimeOffset TimestampTz -- DateTimeOffset
 SET     @TimeOffset = '2017-06-17 19:40:33.000000+00:00'::timestamptz
 DECLARE @Guid Uuid -- Guid
@@ -15,7 +15,7 @@ VALUES
 	:Guid
 )
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @Guid Uuid -- Guid
 SET     @Guid = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 

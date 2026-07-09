@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Value2 Integer -- Int32
 SET     @Value2 = 11
 DECLARE @id Integer -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	"UpdateSetTest"."Id" = :id
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -23,7 +23,7 @@ WHERE
 	t1."Id" = :id
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Value2 Integer -- Int32
 SET     @Value2 = 12
 DECLARE @id Integer -- Int32
@@ -36,7 +36,7 @@ SET
 WHERE
 	"UpdateSetTest"."Id" = :id
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

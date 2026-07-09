@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."PersonID",
@@ -8,7 +8,7 @@ FROM
 ORDER BY
 	t1."PersonID"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."PersonID",
@@ -18,7 +18,7 @@ FROM
 ORDER BY
 	t1."PersonID"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."FirstName",

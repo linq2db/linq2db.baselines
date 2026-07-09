@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -22,7 +22,7 @@ ORDER BY
 	m_1."Id",
 	m_1."Id_1"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -35,7 +35,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	c_1."Id",

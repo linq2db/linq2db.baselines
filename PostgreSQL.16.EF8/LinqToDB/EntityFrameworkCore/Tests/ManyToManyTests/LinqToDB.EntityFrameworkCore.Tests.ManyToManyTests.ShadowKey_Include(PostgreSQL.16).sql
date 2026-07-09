@@ -10,7 +10,7 @@ ORDER BY a."Id", t0."ArticlesId", t0."TagsTagId"
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -26,7 +26,7 @@ ORDER BY
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -32,7 +32,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :updateTime,
 	"UpdatedBy" = 'system'
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."Id",
@@ -48,7 +48,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(6) -- String
@@ -82,7 +82,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :updateTime,
 	"UpdatedBy" = 'system'
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."Id",

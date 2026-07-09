@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "Issue4132Table"
 (
@@ -13,7 +13,7 @@ VALUES
 	'before'
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 UPDATE
 	"Issue4132Table"
@@ -22,7 +22,7 @@ SET
 WHERE
 	"Issue4132Table"."Number" = 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	r."Id",

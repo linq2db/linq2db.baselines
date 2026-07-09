@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
@@ -39,7 +39,7 @@ VALUES
 	:StringValue
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 WHERE
 	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' < make_timestamp(2018, 1, 2, 0, 0, 0)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @param Smallint -- Int16
 SET     @param = 1
 
@@ -18,7 +18,7 @@ FROM
 WHERE
 	:param = t1."SmallIntValue"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ID",

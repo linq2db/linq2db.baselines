@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 226
 
@@ -7,7 +7,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t."DateTimeValue"

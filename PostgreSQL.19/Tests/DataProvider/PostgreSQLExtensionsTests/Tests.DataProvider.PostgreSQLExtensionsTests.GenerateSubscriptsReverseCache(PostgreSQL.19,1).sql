@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @array -2147483639 -- Object
 SET     @array = {1,5,42}
 DECLARE @dimension Integer -- Int32

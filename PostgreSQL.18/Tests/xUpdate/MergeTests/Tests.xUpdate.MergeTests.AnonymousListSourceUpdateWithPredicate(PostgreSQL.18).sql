@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 DELETE FROM
 	"TestMerge1" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Field1 Integer -- Int32
@@ -28,7 +28,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Field1 Integer -- Int32
@@ -53,7 +53,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Field1 Integer -- Int32
@@ -78,7 +78,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @Field1 Integer -- Int32
@@ -103,12 +103,12 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 DELETE FROM
 	"TestMerge2" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Field1 Integer -- Int32
@@ -133,7 +133,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @Field1 Integer -- Int32
@@ -158,7 +158,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 5
 DECLARE @Field1 Integer -- Int32
@@ -183,7 +183,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Field1 Integer -- Int32
@@ -208,7 +208,7 @@ VALUES
 	:Field4
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -220,7 +220,7 @@ SELECT
 FROM
 	"TestMerge2" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
@@ -247,7 +247,7 @@ SET
 	"Field4" = "Source"."Field04",
 	"Field5" = "Source"."Field05"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",

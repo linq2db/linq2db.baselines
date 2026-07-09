@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	nm."MiddleName"
@@ -7,7 +7,7 @@ FROM
 WHERE
 	nm."MiddleName" IS NOT NULL
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."FirstName",

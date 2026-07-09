@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @start Timestamp -- DateTime2
 SET     @start = '2024-01-01'::date
 DECLARE @stop Timestamp -- DateTime2

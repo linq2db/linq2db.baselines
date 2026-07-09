@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
@@ -19,7 +19,7 @@ VALUES
 	:SomeNullableDateTimeOffset
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
@@ -36,7 +36,7 @@ VALUES
 	:SomeDateTimeOffset
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @interval Integer -- Int32
 SET     @interval = 10
 DECLARE @clientSideIn TimestampTz -- DateTimeOffset

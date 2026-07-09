@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	p."FirstName" = :firstName OR p."LastName" = :firstName
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

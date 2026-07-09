@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Field1",
@@ -7,7 +7,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Column1",
@@ -16,7 +16,7 @@ SELECT
 FROM
 	"UseMappingSchemaTestTable" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Field1",

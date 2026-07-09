@@ -2,7 +2,7 @@
 FROM "Products" AS p
 
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."IsDeleted",

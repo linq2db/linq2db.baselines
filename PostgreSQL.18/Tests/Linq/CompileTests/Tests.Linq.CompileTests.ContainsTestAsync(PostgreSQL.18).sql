@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -14,7 +14,7 @@ SELECT
 		ELSE False
 	END
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

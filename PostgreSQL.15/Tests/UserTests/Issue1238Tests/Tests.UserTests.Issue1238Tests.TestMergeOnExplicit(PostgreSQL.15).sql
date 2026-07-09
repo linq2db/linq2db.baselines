@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 DELETE FROM
 	"InheritanceParent" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
@@ -36,14 +36,14 @@ VALUES
 	"Source"."Data_1"
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
@@ -76,7 +76,7 @@ VALUES
 	"Source"."Data_1"
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)

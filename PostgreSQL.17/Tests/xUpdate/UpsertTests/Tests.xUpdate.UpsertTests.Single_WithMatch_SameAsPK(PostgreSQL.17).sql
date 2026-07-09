@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(2) -- String
@@ -42,7 +42,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :UpdatedAt,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(2) -- String
@@ -86,7 +86,7 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedAt" = :UpdatedAt,
 	"UpdatedBy" = :UpdatedBy
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

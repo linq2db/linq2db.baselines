@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @:p1 Interval -- Object
 SET     @:p1 = P-4DT-6H-5M-4S-876s-876600n
 
@@ -9,7 +9,7 @@ INSERT INTO "Issue4672Table"
 VALUES
 (:p1)
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",

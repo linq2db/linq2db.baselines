@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 200
 DECLARE @ValueStr Text(3) -- String
@@ -23,7 +23,7 @@ RETURNING
 	NEW."Value",
 	NEW."ValueStr"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 200
 DECLARE @ValueStr Text(3) -- String

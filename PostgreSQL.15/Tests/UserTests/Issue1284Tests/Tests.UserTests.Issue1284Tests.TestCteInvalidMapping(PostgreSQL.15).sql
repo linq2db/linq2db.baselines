@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 WITH "CTE_1"
 (
@@ -32,7 +32,7 @@ FROM
 	"CTE_1" t1
 LIMIT 1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	person_1."FirstName",

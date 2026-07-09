@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 5
 DECLARE @skip Integer -- Int32
@@ -13,7 +13,7 @@ ORDER BY
 	t1."ChildID"
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 5
 DECLARE @skip Integer -- Int32

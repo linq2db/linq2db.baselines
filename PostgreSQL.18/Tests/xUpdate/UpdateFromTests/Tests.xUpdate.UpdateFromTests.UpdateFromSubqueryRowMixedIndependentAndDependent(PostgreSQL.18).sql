@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 UPDATE
 	"UpdateSubquerySourceTable"
@@ -15,7 +15,7 @@ SET
 WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",

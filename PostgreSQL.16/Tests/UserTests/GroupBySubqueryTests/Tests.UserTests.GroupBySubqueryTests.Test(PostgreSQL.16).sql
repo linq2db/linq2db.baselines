@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT DISTINCT
 	"a_Ref4"."Field6",
@@ -14,7 +14,7 @@ FROM
 WHERE
 	t1."Field3" IS NOT NULL
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	g_2."Field6",

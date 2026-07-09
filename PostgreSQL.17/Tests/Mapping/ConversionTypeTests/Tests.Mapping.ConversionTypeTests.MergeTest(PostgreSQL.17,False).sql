@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 MERGE INTO "TrimTestTable" "Target"
 USING (VALUES
@@ -27,7 +27,7 @@ VALUES
 	"Source"."Data_1"
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 MERGE INTO "TrimTestTable" "Target"
 USING (VALUES
@@ -56,7 +56,7 @@ VALUES
 	"Source"."Data_1"
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -66,7 +66,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",

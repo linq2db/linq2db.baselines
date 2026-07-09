@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @IntValue Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 	:StrValue
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @IntValue Integer -- Int32
@@ -40,7 +40,7 @@ VALUES
 	:StrValue
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."Id",
@@ -52,7 +52,7 @@ WHERE
 	r."Id" = 1
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	r."Id",

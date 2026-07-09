@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "TrimTestTable"
 (
@@ -8,7 +8,7 @@ INSERT INTO "TrimTestTable"
 VALUES
 (1,'***OOO***')
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -18,7 +18,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	r."ID",
