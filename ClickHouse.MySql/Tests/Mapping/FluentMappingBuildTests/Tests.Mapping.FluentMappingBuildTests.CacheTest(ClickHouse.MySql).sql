@@ -3,20 +3,17 @@
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
-	Value    Nullable(String),
-	LastName Nullable(String),
-
-	PRIMARY KEY (ID)
+	Name     Nullable(String),
+	LastName Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO FluentTemp_Cache
 (
 	ID,
-	Value,
+	Name,
 	LastName
 )
 VALUES
@@ -30,7 +27,7 @@ VALUES
 
 SELECT
 	t.ID,
-	t.Value,
+	t.Name,
 	t.LastName
 FROM
 	FluentTemp_Cache t
@@ -46,20 +43,17 @@ DROP TABLE IF EXISTS FluentTemp_Cache
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
-	Value    Nullable(String),
-	LastName Nullable(String),
-
-	PRIMARY KEY (ID)
+	Name     Nullable(String),
+	LastName Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO FluentTemp_Cache
 (
 	ID,
-	Value,
+	Name,
 	LastName
 )
 VALUES
@@ -73,7 +67,7 @@ VALUES
 
 SELECT
 	t.ID,
-	t.Value,
+	t.Name,
 	t.LastName
 FROM
 	FluentTemp_Cache t
@@ -89,20 +83,17 @@ DROP TABLE IF EXISTS FluentTemp_Cache
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
-	Column   Nullable(String),
-	LastName Nullable(String),
-
-	PRIMARY KEY (ID)
+	Name     Nullable(String),
+	LastName Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO FluentTemp_Cache
 (
 	ID,
-	Column,
+	Name,
 	LastName
 )
 VALUES
@@ -116,7 +107,7 @@ VALUES
 
 SELECT
 	t.ID,
-	t.Column,
+	t.Name,
 	t.LastName
 FROM
 	FluentTemp_Cache t
@@ -132,20 +123,17 @@ DROP TABLE IF EXISTS FluentTemp_Cache
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
-	Column   Nullable(String),
-	LastName Nullable(String),
-
-	PRIMARY KEY (ID)
+	Name     Nullable(String),
+	LastName Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
 INSERT INTO FluentTemp_Cache
 (
 	ID,
-	Column,
+	Name,
 	LastName
 )
 VALUES
@@ -159,7 +147,7 @@ VALUES
 
 SELECT
 	t.ID,
-	t.Column,
+	t.Name,
 	t.LastName
 FROM
 	FluentTemp_Cache t

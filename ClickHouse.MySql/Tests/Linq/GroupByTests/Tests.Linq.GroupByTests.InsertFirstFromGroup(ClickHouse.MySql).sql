@@ -3,12 +3,9 @@
 CREATE TABLE temp_table_1
 (
 	ID    Int32,
-	Value Nullable(String),
-
-	PRIMARY KEY (ID)
+	Value Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY ID
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
@@ -24,12 +21,9 @@ VALUES
 
 CREATE TABLE temp_table_2
 (
-	Value String,
-
-	PRIMARY KEY (Value)
+	Value Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY Value
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
@@ -40,7 +34,12 @@ INSERT INTO temp_table_2
 SELECT
 	t1.Value_1
 FROM
-	temp_table_1 gr
+	(
+		SELECT DISTINCT
+			gr.ID as Key_1
+		FROM
+			temp_table_1 gr
+	) gr_1
 		INNER JOIN (
 			SELECT
 				c_1.Value as Value_1,
@@ -48,7 +47,7 @@ FROM
 				c_1.ID as ID
 			FROM
 				temp_table_1 c_1
-		) t1 ON gr.ID = t1.ID AND t1.rn = 1
+		) t1 ON gr_1.Key_1 = t1.ID AND t1.rn = 1
 
 -- ClickHouse.MySql ClickHouse
 

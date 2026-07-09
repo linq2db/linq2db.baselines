@@ -4,18 +4,15 @@ DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.MySql ClickHouse
 
-CREATE TABLE IF NOT EXISTS TempTable
+CREATE TABLE IF NOT EXISTS `<>f__AnonymousType224``1`
 (
-	Name String,
-
-	PRIMARY KEY (Name)
+	Name Nullable(String)
 )
-ENGINE = MergeTree()
-ORDER BY Name
+ENGINE = Memory()
 
 -- ClickHouse.MySql ClickHouse
 
-INSERT INTO TempTable
+INSERT INTO `<>f__AnonymousType224``1`
 (
 	Name
 )
@@ -28,9 +25,9 @@ SELECT
 	t.Name
 FROM
 	Person p
-		INNER JOIN TempTable t ON p.FirstName = t.Name
+		INNER JOIN `<>f__AnonymousType224``1` t ON p.FirstName = t.Name
 
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS TempTable
+DROP TABLE IF EXISTS `<>f__AnonymousType224``1`
 
