@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	sumOrNull(toFloat32(c_1.Id))
 FROM

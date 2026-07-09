@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	ka.PersonId,
 	ka.ValidationEnd,

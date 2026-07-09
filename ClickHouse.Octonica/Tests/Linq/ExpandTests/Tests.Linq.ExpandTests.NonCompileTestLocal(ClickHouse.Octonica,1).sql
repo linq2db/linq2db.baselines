@@ -8,7 +8,6 @@ WHERE
 	t2.Value > 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.Id,
 	t.Value

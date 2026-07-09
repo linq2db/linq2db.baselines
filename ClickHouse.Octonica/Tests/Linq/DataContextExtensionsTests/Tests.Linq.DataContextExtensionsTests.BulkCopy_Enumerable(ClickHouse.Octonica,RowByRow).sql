@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -35,13 +32,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -54,7 +49,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -67,7 +61,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -77,13 +70,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -96,7 +87,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -109,7 +99,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -119,13 +108,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -138,7 +125,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -151,7 +137,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -161,13 +146,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -180,7 +163,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -193,7 +175,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -203,13 +184,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -222,7 +201,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -235,7 +213,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -245,13 +222,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -264,7 +239,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -277,7 +251,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -287,13 +260,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -306,7 +277,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -319,7 +289,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -329,13 +298,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -348,7 +315,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -361,7 +327,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -371,13 +336,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -390,7 +353,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -403,7 +365,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -413,13 +374,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -432,7 +391,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -445,7 +403,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -455,13 +412,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -474,7 +429,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -487,7 +441,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -497,13 +450,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -516,7 +467,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -529,7 +479,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -539,13 +488,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -558,7 +505,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -571,7 +517,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -581,13 +526,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -600,7 +543,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -613,7 +555,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -623,13 +564,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -642,7 +581,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -655,7 +593,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -665,13 +602,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -684,7 +619,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -697,7 +631,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -707,13 +640,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -726,7 +657,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -739,7 +669,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -749,13 +678,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -768,7 +695,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -781,7 +707,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -791,13 +716,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -810,7 +733,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -823,7 +745,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -833,13 +754,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -852,7 +771,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -865,7 +783,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -875,13 +792,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -894,7 +809,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -907,7 +821,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -917,13 +830,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -936,7 +847,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -949,7 +859,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -959,13 +868,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -978,7 +885,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -991,7 +897,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1001,13 +906,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1020,7 +923,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1033,7 +935,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1043,13 +944,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1062,7 +961,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1075,7 +973,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1085,13 +982,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1104,7 +999,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1117,7 +1011,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1127,13 +1020,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1146,7 +1037,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1159,7 +1049,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1169,13 +1058,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1188,7 +1075,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1201,7 +1087,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1211,13 +1096,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1230,7 +1113,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1243,7 +1125,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1253,13 +1134,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1272,7 +1151,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1285,7 +1163,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1295,13 +1172,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1314,7 +1189,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1327,7 +1201,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1337,13 +1210,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1356,7 +1227,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1369,7 +1239,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1379,13 +1248,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1398,7 +1265,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1411,7 +1277,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1421,13 +1286,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1440,7 +1303,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1453,7 +1315,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1463,13 +1324,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1482,7 +1341,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO BulkCopyTable
 (
 	Id,
@@ -1495,7 +1353,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -1505,7 +1362,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	BulkCopyTable
 DELETE WHERE 1

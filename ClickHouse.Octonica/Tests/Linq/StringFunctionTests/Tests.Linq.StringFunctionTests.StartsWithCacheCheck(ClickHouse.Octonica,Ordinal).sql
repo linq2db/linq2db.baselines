@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.FirstName
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -27,7 +24,6 @@ WHERE
 	NOT startsWith(p.FirstName, 'Joh') AND p.PersonID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -36,7 +32,6 @@ WHERE
 	startsWith(p.FirstName, 'JOH') AND p.PersonID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_1.ParentID,
 	Coalesce(c_1.Value1, 0) as ID2,

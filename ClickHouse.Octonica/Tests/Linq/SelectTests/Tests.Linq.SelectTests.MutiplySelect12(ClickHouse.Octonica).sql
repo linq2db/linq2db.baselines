@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	grandChild_1.ParentID,
 	grandChild_1.ChildID,

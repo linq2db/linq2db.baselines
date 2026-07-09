@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Region,
 	p.Code,
@@ -11,7 +10,6 @@ ORDER BY
 	p.Code
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	k_1.Item1,
 	k_1.Item2,

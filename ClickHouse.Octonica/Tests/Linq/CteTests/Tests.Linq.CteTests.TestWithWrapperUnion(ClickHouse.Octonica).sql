@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -31,7 +30,6 @@ FROM
 	CTE_1 t1
 
 -- ClickHouse.Octonica ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT

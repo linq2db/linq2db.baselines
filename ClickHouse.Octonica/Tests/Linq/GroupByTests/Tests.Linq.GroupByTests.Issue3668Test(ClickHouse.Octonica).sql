@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.PersonID,
 	m_1.FirstName,
@@ -13,7 +12,6 @@ WHERE
 	m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.PersonID
 FROM

@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.Octonica ClickHouse
-
 CREATE TEMPORARY TABLE TempTable
 (
 	ID Int32,
@@ -14,7 +12,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TempTable
 (
 	ID
@@ -25,10 +22,8 @@ FROM
 	Parent p
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE TempTable
 

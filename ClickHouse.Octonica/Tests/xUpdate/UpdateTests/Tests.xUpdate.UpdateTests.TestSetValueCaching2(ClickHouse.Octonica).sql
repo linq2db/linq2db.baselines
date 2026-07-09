@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	UpdateSetTest
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Value2
 FROM
@@ -18,7 +16,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	UpdateSetTest
 UPDATE
@@ -27,7 +24,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Value2
 FROM

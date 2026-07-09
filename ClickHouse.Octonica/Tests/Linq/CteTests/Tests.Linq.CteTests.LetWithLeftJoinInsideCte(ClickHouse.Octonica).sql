@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Projection1
 (
 	S1
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Projection2
 (
 	S1
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT

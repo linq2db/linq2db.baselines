@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_UpdateAsync
 (
 	ID       Int32,
@@ -12,7 +11,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO FluentTemp_UpdateAsync
 (
 	ID,
@@ -27,7 +25,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	FluentTemp_UpdateAsync
 UPDATE
@@ -37,6 +34,5 @@ WHERE
 	ID = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_UpdateAsync
 

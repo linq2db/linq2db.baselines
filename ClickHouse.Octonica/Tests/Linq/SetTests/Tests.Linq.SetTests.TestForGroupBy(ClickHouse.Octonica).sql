@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.ParentID,
 	x.ChildID,
@@ -10,7 +9,6 @@ WHERE
 	x.ParentID IN (2)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.ParentID,
 	x.ChildID,

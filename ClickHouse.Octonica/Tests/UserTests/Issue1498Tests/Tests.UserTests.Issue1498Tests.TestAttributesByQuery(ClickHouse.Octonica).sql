@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Topic
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN Message d ON d.TopicId = m_1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.Title,

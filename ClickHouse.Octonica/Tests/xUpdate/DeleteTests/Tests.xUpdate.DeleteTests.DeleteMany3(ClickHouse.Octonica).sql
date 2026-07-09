@@ -1,26 +1,22 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GrandChild
 DELETE WHERE
 	ParentID >= 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ParentID >= 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE
 	ParentID >= 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Parent
 (
 	ParentID
@@ -31,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Child
 (
 	ParentID,
@@ -44,7 +39,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -59,7 +53,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -74,21 +67,18 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GrandChild
 DELETE WHERE
 	ParentID >= 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ParentID >= 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Parent
 DELETE WHERE

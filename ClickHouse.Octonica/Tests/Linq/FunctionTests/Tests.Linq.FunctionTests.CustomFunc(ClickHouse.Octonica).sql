@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	concat(p.LastName, ', ', p.FirstName)
 FROM
