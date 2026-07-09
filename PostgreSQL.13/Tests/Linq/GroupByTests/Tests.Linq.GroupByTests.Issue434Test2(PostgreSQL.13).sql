@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."PersonID",
@@ -10,7 +10,7 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	p."FirstName",

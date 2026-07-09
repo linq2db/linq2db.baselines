@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(t."NullableIntValue") OVER (ORDER BY t."Id" ROWS BETWEEN 2 PRECEDING AND 2 FOLLOWING)

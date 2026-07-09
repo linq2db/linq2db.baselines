@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."ID",
@@ -17,7 +17,7 @@ WHERE
 	r."ID" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."ID",
@@ -36,7 +36,7 @@ WHERE
 	r."ID" = 1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp -- DateTime2
@@ -73,7 +73,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -94,7 +94,7 @@ WHERE
 	r."ID" = :ID
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @MoneyValue Numeric(5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp -- DateTime2
@@ -131,7 +131,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :ID
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	r."ID",

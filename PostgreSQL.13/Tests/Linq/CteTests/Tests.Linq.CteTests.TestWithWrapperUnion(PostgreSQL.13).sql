@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 WITH "CTE_1"
 (
@@ -37,7 +37,7 @@ SELECT
 FROM
 	"CTE_1" t1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 WITH "CTE_1"
 (

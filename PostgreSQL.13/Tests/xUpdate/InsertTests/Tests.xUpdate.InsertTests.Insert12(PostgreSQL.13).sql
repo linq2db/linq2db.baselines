@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @FirstName Text(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender Text(1) -- String

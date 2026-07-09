@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	Date_Trunc('day', t."DateTimeValue" + -Interval '1 Month' * 3)

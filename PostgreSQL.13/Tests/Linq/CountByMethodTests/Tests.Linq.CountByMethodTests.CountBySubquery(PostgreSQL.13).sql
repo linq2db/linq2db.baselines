@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t."TestId",
@@ -15,7 +15,7 @@ FROM
 				g_1."TestId"
 		) t1 ON t1."Key_1" = t."TestId"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	c_1."Key"
@@ -9,7 +9,7 @@ GROUP BY
 ORDER BY
 	SUM(c_1."Value") DESC
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

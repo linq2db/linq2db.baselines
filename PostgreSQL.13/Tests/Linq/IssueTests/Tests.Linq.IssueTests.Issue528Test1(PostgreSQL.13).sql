@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	m_1."Key_1",
@@ -16,7 +16,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON m_1."Key_1" = d."FirstName"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t2."Key_1",

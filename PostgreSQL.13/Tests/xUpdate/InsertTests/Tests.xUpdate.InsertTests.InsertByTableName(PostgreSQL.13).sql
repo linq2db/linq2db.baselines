@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -23,34 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.13 PostgreSQL12
-DECLARE @FirstName Text(6) -- String
-SET     @FirstName = 'Steven'
-DECLARE @LastName Text(4) -- String
-SET     @LastName = 'King'
-DECLARE @MiddleName Text -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
-
-INSERT INTO "xxPerson"
-(
-	"FirstName",
-	"LastName",
-	"MiddleName",
-	"Gender"
-)
-VALUES
-(
-	:FirstName,
-	:LastName,
-	:MiddleName,
-	:Gender
-)
-RETURNING 
-	"PersonID"
-
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -77,14 +50,41 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
+DECLARE @FirstName Text(6) -- String
+SET     @FirstName = 'Steven'
+DECLARE @LastName Text(4) -- String
+SET     @LastName = 'King'
+DECLARE @MiddleName Text -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
+
+INSERT INTO "xxPerson"
+(
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
+)
+VALUES
+(
+	:FirstName,
+	:LastName,
+	:MiddleName,
+	:Gender
+)
+RETURNING 
+	"PersonID"
+
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" t1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)

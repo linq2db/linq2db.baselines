@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 UPDATE
 	"TableWithConverterValue"
@@ -7,7 +7,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 1
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x."Id",
@@ -20,7 +20,7 @@ WHERE
 	x."Id" = 1
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 UPDATE
 	"TableWithConverterValue"
@@ -29,7 +29,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 2
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x."Id",
@@ -42,7 +42,7 @@ WHERE
 	x."Id" = 2
 LIMIT 2
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	x."Id",

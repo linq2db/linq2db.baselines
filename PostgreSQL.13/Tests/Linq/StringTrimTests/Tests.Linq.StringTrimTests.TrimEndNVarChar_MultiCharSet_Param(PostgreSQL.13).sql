@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	RTRIM(Coalesce(t."NVarCharColumn", '') || '...++', '.+')
 FROM
 	"StringTrimTable" t
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	t1."Id",

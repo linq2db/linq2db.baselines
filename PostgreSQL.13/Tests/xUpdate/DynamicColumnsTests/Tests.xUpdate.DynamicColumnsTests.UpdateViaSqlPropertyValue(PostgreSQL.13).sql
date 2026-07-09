@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -13,7 +13,7 @@ VALUES
 	:id
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -24,7 +24,7 @@ FROM
 WHERE
 	c_1."ChildID" = :id
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 5000
 DECLARE @id Integer -- Int32
@@ -43,7 +43,7 @@ WHERE
 	"Child"."ParentID" = c_1."ParentID" AND
 	"Child"."ChildID" = c_1."ChildID"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 SELECT
 	COUNT(*)

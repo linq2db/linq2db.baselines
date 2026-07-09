@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.13 PostgreSQL13
 
 DROP TABLE IF EXISTS "FluentTemp_InsertOrUpdate"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 CREATE TABLE IF NOT EXISTS "FluentTemp_InsertOrUpdate"
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp_InsertOrUpdate"
 	CONSTRAINT "PK_FluentTemp_InsertOrUpdate" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -29,7 +29,7 @@ VALUES
 	:Name
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 INSERT INTO "FluentTemp_InsertOrUpdate" AS t1
 (
@@ -45,7 +45,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"ID" = t1."ID",
 	"Name" = t1."Name"
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13 PostgreSQL13
 
 DROP TABLE IF EXISTS "FluentTemp_InsertOrUpdate"
 
