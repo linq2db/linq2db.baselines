@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -96,7 +95,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE

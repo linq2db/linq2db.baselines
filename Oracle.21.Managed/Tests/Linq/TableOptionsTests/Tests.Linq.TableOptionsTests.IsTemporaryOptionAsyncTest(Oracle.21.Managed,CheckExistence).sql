@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "temp_table1"
@@ -19,13 +18,11 @@ EXCEPTION
 END;
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (1,2)
 SELECT * FROM dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "temp_table2"
@@ -45,7 +42,6 @@ EXCEPTION
 END;
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "temp_table2"
 (
 	ID,
@@ -58,7 +54,6 @@ FROM
 	"temp_table1" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -66,7 +61,6 @@ FROM
 	"temp_table1" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -74,7 +68,6 @@ FROM
 	"temp_table2" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (2,3)
 SELECT * FROM dual
@@ -97,21 +90,17 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (4,5)
 SELECT * FROM dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "temp_table1"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "temp_table2"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "temp_table2"';
@@ -128,7 +117,6 @@ EXCEPTION
 END;
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "temp_table1"';

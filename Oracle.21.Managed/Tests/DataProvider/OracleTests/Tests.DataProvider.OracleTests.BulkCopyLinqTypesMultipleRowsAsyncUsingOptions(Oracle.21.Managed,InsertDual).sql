@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -24,7 +23,6 @@ INSERT INTO "LinqDataTypes"
 	SELECT 4009,1009,TIMESTAMP '2001-01-11 01:11:21.100000',1,HEXTORAW('99F33B231097794E873D2EC7BF1E0009'),NULL,9,NULL FROM DUAL 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" p
 WHERE

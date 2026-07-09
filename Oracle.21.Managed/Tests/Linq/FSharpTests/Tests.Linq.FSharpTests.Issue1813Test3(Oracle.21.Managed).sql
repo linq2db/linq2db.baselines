@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	after_1."Id",
 	after_1."Name",

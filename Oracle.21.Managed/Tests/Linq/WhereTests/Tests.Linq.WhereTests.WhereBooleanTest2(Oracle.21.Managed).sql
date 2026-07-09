@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BoolValue",
@@ -8,7 +7,6 @@ FROM
 	"WhereCases" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -19,7 +17,6 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -30,7 +27,6 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -41,7 +37,6 @@ WHERE
 	t."BoolValue" = 1 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -52,7 +47,6 @@ WHERE
 	NOT (t."BoolValue" = 1 AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -63,7 +57,6 @@ WHERE
 	t."BoolValue" = 1 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -74,7 +67,6 @@ WHERE
 	NOT (t."BoolValue" = 1 AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -85,7 +77,6 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -96,7 +87,6 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -107,7 +97,6 @@ WHERE
 	t."BoolValue" = 0 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -118,7 +107,6 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -130,7 +118,6 @@ WHERE
 	t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -141,7 +128,6 @@ WHERE
 	NOT ((t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -152,7 +138,6 @@ WHERE
 	t."NullableBoolValue" = 1 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -163,7 +148,6 @@ WHERE
 	NOT (t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -174,7 +158,6 @@ WHERE
 	t."NullableBoolValue" = 1 AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -185,7 +168,6 @@ WHERE
 	NOT (t."NullableBoolValue" = 1 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -196,7 +178,6 @@ WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -207,7 +188,6 @@ WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -218,7 +198,6 @@ WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -229,7 +208,6 @@ WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -240,7 +218,6 @@ WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -251,7 +228,6 @@ WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -262,7 +238,6 @@ WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -273,7 +248,6 @@ WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -285,7 +259,6 @@ WHERE
 	t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -296,7 +269,6 @@ WHERE
 	NOT (t."BoolValue" = 0 AND (t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -308,7 +280,6 @@ WHERE
 	t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -319,7 +290,6 @@ WHERE
 	NOT (NOT (t."BoolValue" = 0 AND (t."NullableBoolValue" = 0 OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -331,7 +301,6 @@ WHERE
 	t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -342,7 +311,6 @@ WHERE
 	NOT (t."BoolValue" = 0 AND t."NullableBoolValue" = 0 AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",
@@ -354,7 +322,6 @@ WHERE
 	t."Id" > 0
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	t."BoolValue",

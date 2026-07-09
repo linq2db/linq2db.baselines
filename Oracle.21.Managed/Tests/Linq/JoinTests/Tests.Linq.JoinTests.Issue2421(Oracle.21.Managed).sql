@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."SectorId",
 	a_User."UserId"
@@ -12,7 +11,6 @@ WHERE
 	a_UserPosition."PositionId" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."SectorId"
 FROM

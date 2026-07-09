@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_Bottom1."ParentID",
 	a_Bottom1."ChildID",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	NTH_VALUE(c_1."ChildID", CAST(p."ParentID" AS Number(19))) FROM LAST IGNORE NULLS OVER (PARTITION BY p."Value1", c_1."ChildID")
 FROM

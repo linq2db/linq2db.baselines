@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = DATE '2020-02-29' AND r."ColumnNullable" = DATE '2020-01-01'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,19 +80,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1980-01-01',NULL)
 	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2020-01-01')
 SELECT * FROM dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -106,19 +100,16 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1980-01-01',NULL)
 	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2020-01-01')
 SELECT * FROM dual
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Column",

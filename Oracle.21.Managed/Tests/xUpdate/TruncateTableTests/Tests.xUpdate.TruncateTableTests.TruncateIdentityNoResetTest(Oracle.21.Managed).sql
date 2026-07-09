@@ -1,9 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "test_temp"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -38,11 +35,9 @@ ORDER BY
 OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "test_temp"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT INTO "test_temp"
 (
 	"Field1"

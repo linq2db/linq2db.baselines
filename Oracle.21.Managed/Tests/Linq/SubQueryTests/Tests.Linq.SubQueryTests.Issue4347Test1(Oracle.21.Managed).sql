@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -27,7 +26,6 @@ WHERE
 	)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."ValidOn"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Value1",
 	x."ParentID"
@@ -17,7 +16,6 @@ WHERE
 	p2."ParentID" <= 3
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

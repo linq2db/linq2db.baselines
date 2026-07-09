@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."Id"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	c_1."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	k_1."item",
 	d."Id",
