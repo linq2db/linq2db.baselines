@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",
@@ -30,7 +29,6 @@ FROM
 	) t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	k_1."Item1",
 	k_1."Item2",
@@ -68,7 +66,6 @@ ORDER BY
 	d."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	k_1."Item1",
 	k_1."Item2",

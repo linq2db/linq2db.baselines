@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PUSH_SUBQ */
 	p."ParentID",
 	p."Value1"

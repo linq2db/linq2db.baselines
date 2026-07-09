@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"gt_s_one_target"
 SET

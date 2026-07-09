@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(CASE
 		WHEN g_1."TimeStamp" > TIMESTAMP '2020-02-29 17:54:55.123123'

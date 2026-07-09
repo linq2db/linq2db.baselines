@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_MiddleGeneric."ParentID",
 	a_Bottom."ParentID",

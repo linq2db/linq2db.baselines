@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ PQ_DISTRIBUTE(p PARTITION, NONE) */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	SUM(g_1."Value1"),
 	SUM(g_1."Value1")

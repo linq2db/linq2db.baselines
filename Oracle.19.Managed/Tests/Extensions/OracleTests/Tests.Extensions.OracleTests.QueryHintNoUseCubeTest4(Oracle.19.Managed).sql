@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_USE_CUBE(c_1 p) */
 	p."ParentID",
 	p."Value1"

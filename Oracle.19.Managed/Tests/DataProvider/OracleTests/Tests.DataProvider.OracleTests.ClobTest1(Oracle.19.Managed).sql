@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "ClobEntity"
 (
 	"Id"         Int   NOT NULL,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."ClobValue",
@@ -43,6 +41,5 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DROP TABLE "ClobEntity"
 

@@ -52,7 +52,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -121,7 +120,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Name",

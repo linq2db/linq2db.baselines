@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ INMEMORY_PRUNING(p) INMEMORY_PRUNING(c_1) */
 	p."ParentID",
 	p."Value1"

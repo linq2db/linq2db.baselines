@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."GroupId",
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	t."GroupId"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."GroupId",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_MERGE(p) NO_MERGE(c_1) */
 	p."ParentID",
 	p."Value1"

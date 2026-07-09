@@ -36,7 +36,6 @@ WHERE
 	t."Data" = :p
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"

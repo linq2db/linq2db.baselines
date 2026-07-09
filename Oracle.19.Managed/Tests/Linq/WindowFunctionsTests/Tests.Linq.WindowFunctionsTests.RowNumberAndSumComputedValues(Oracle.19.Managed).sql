@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	ROW_NUMBER() OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

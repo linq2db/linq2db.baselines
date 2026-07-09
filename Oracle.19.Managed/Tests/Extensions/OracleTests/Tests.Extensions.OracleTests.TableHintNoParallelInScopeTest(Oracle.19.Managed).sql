@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_PARALLEL(p) NO_PARALLEL(c_1) */
 	p."ParentID",
 	p."Value1"

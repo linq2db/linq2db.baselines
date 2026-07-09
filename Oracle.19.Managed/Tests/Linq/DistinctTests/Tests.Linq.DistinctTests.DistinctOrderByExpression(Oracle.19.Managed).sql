@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."MiddleName"
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce(t1."MiddleName", '-1')
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

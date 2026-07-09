@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."FirstName" || ' ' || r."LastName"
@@ -30,7 +28,6 @@ FROM
 	"Issue3323Table" r_1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id" + 1,
 	r."Text"

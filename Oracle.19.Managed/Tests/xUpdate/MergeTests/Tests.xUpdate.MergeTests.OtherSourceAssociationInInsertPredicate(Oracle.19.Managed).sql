@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "Person" Target
 USING (
 	SELECT
@@ -27,7 +26,6 @@ VALUES
  WHERE "Source"."Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
