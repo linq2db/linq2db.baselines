@@ -256,7 +256,9 @@ CREATE TABLE "DataTypeTest"
 
 
 
+
 	"Boolean_"        CHAR(1),
+
 
 
 
@@ -317,7 +319,9 @@ VALUES
 
 
 
+
 	'1'
+
 
 
 
@@ -366,7 +370,9 @@ CREATE TABLE "LinqDataTypes"
 
 
 
+
 	"BoolValue"      char(1),
+
 
 
 
@@ -917,7 +923,9 @@ CREATE TABLE "TestMerge1"
 
 
 
+
 	"FieldBoolean"    CHAR(1),
+
 
 
 
@@ -953,7 +961,9 @@ CREATE TABLE "TestMerge2"
 
 
 
+
 	"FieldBoolean"    CHAR(1),
+
 
 
 
