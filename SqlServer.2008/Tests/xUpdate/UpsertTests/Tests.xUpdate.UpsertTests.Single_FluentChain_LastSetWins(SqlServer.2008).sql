@@ -49,7 +49,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2008
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

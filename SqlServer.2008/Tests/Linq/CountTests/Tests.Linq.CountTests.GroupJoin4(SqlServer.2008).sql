@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t1].[Count1] + [t1].[Count1]
 FROM

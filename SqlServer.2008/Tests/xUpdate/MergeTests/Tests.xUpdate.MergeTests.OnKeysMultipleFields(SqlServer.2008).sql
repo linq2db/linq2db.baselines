@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -236,7 +233,6 @@ SET
 ;
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

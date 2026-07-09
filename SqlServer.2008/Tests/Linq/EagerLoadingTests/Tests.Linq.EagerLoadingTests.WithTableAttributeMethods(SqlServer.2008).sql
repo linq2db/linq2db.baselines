@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	Lower(CAST([t].[Id] AS Char(36)))
 FROM
 	[TableWithGuid] [t]
 
 -- SqlServer.2008
-
 SELECT
 	[t].[Id]
 FROM

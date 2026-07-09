@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t].[geographyDataType].STSrid,
 	[t].[geographyDataType].Lat,

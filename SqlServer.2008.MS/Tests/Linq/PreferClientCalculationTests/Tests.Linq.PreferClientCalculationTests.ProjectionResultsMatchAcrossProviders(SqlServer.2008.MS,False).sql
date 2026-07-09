@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Id],
 	[e].[Value1] + 12345
@@ -7,7 +6,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -17,7 +15,6 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	CASE
 		WHEN [e].[Id] > 1 THEN [e].[Value1]
@@ -27,7 +24,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -37,14 +33,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	-[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -54,14 +48,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[e].[Value1] + ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

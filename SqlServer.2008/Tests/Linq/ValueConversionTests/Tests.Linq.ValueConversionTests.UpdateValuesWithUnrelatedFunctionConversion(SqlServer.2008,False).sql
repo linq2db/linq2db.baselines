@@ -15,7 +15,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.2008
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

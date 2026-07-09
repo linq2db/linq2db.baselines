@@ -1,25 +1,19 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(12345 as binary(2))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(12345 as binary(4))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(12345 as varbinary(2))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(12345 as varbinary(4))
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(NULL as image)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT Cast(12345 as varbinary(max))
 
 -- SqlServer.2008.MS SqlServer.2008

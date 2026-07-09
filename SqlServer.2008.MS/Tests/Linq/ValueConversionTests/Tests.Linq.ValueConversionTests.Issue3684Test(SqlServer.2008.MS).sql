@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstAppointmentTime],

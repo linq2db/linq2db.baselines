@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 UPDATE
 	[c_1]
 SET

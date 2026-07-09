@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT TOP (2)
 	[c_1].[Id],
 	[c_1].[Name]
@@ -9,7 +8,6 @@ WHERE
 	[c_1].[Id] = 1
 
 -- SqlServer.2008
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

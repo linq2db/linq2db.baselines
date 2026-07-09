@@ -21,7 +21,6 @@ WHERE
 	[t].[id] <> @someId
 
 -- SqlServer.2008
-
 SELECT
 	[v].[id],
 	[v].[Value1],

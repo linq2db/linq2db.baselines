@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT DISTINCT
 	1,
 	CASE
@@ -10,7 +9,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

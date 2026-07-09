@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -15,7 +14,6 @@ SELECT
 	END
 
 -- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

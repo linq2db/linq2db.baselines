@@ -13,7 +13,6 @@ WHERE
 	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],
