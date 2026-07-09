@@ -24,8 +24,6 @@ ORDER BY
 
 
 
-
-
 -- SQLite.MS SQLite
 
 SELECT
