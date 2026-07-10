@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @In Varchar -- String
 SET     @In = NULL
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	s."CEnum" IN (:In, :In)
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @NotIn Varchar -- String
 SET     @NotIn = NULL
 

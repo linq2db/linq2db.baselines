@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 UPDATE
 	"ParentTable"
@@ -9,7 +9,7 @@ FROM
 WHERE
 	"ParentTable"."Id" = 2 AND c_1."ParentId" = "ParentTable"."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 
 SELECT
 	p."Id",
