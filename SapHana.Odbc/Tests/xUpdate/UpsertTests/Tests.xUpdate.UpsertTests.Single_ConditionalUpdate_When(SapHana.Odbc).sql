@@ -40,7 +40,6 @@ WHERE
 	"t1"."Id" = ? AND ? > "t1"."Version"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Name",
@@ -97,7 +96,6 @@ WHERE
 	"t1"."Id" = ? AND ? > "t1"."Version"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."Name",

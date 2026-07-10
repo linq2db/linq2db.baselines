@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "TrimTestTable" "Target"
 USING (
 	SELECT 1 AS "ID", '***OOO***' AS "Data_1" FROM DUMMY
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "TrimTestTable" "Target"
 USING (
 	SELECT 3 AS "ID", '***III***' AS "Data_1" FROM DUMMY) "Source"
@@ -49,7 +47,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."Data"
@@ -59,7 +56,6 @@ ORDER BY
 	"r"."ID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."Data"

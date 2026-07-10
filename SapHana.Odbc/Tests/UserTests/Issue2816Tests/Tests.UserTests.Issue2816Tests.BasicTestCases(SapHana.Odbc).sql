@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	"p"."Text"
@@ -10,7 +9,6 @@ WHERE
                   　') = ''
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Text"

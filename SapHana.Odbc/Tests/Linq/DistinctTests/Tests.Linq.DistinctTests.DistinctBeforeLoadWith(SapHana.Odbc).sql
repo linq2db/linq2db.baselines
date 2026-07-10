@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
@@ -11,7 +10,6 @@ ORDER BY
 	"c_1"."ChildID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"c_1"."ParentID",
 	"c_1"."ChildID"

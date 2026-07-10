@@ -10,7 +10,6 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	Length("t"."BinaryValue")
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	LEAD("t"."IntValue", 2, 0) OVER (ORDER BY "t"."Id")

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	' ' || CAST(Coalesce("f"."Value1", 0) AS NVarChar(11)),
 	Coalesce("t1"."SubSum", 0),

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Name",

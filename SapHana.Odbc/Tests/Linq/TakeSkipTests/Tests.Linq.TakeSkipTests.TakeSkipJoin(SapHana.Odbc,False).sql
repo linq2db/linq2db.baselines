@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."MoneyValue",
@@ -13,7 +12,6 @@ FROM
 	"LinqDataTypes" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."ID",
 	"p"."SmallIntValue"

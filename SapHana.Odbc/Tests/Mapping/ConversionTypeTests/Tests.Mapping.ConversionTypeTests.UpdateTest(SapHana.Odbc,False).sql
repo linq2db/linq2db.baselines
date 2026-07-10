@@ -36,7 +36,6 @@ WHERE
 	"t"."Data" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	"r"."ID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."Data"

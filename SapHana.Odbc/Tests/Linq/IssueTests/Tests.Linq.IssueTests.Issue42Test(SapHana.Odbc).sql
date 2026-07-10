@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."MoneyValue",
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."MoneyValue",
@@ -132,7 +130,6 @@ WHERE
 	"t1"."ID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."ID",
 	"r"."MoneyValue",

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	CASE
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."StringProp"

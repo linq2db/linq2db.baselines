@@ -14,7 +14,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."Data"

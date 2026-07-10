@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "NestedKeyTarget" "Target"
 USING (
 	SELECT 1 AS "Key_Value", 'first-updated' AS "Code" FROM DUMMY) "Source"
@@ -45,7 +44,6 @@ SET
 	"Code" = "Source"."Code"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Code",
 	"t1"."Id"

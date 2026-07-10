@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Value"
@@ -9,7 +8,6 @@ WHERE
 	"t"."Value" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	"t"."Value"

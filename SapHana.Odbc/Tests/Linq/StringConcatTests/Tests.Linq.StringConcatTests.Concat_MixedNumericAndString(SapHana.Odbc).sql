@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CAST("e"."Num" AS NVarChar(11)) || '-' || Coalesce("e"."StrReq", '')) = '100-Programmer'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

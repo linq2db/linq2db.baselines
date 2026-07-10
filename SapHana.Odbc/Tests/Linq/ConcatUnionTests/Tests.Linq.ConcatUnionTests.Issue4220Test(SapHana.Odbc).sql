@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"e"."Id",
 	"e"."AOnly",

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "cte"
 (
 	"FirstName",
@@ -29,7 +28,6 @@ FROM
 	"cte" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

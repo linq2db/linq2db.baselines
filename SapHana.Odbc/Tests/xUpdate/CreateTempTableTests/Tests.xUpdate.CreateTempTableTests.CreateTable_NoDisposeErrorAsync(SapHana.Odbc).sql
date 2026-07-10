@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "TempTable"
 (
 	"ID" Integer NOT NULL,
@@ -15,11 +13,9 @@ CREATE COLUMN TABLE "TempTable"
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "TempTable"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';

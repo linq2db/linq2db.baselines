@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"s"."CEnum" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

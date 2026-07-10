@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe' FROM DUMMY) "n" ON "p"."LastName" = "n"."item"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

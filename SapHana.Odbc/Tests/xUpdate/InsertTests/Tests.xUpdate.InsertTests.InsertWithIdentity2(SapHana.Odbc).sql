@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -21,11 +19,9 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -39,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Person" "t1"
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"
@@ -8,7 +7,6 @@ FROM
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

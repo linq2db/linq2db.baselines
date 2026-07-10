@@ -18,7 +18,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"d"."Id",
 	"d"."Name"

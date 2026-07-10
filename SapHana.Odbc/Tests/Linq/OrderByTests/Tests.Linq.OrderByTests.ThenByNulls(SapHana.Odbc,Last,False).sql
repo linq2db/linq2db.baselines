@@ -15,7 +15,6 @@ ORDER BY
 LIMIT ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Grp",

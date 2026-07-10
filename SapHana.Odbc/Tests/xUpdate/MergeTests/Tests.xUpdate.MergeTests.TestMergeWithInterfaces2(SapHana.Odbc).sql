@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "ReviewIndexes" "Target"
 USING (
 	SELECT

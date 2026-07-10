@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"LinqDataTypes" "p"
 SET

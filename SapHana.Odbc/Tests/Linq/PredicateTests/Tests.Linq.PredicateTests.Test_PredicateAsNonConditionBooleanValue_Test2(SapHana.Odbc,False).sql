@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -17,7 +16,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -28,7 +26,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -46,7 +43,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -57,7 +53,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -75,7 +70,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -86,7 +80,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -104,7 +97,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -115,7 +107,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -133,7 +124,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -144,7 +134,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -162,7 +151,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -173,7 +161,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -192,7 +179,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -203,7 +189,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -222,7 +207,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -233,7 +217,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -251,7 +234,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -262,7 +244,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -280,7 +261,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -291,7 +271,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -309,7 +288,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -320,7 +298,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -338,7 +315,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -349,7 +325,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -367,7 +342,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -378,7 +352,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -397,7 +370,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -408,7 +380,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -426,7 +397,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -437,7 +407,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -455,7 +424,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -466,7 +434,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -484,7 +451,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -495,7 +461,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -513,7 +478,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -524,7 +488,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -542,7 +505,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -553,7 +515,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -572,7 +533,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -583,7 +543,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -601,7 +560,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -612,7 +570,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -630,7 +587,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -641,7 +597,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -659,7 +614,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -670,7 +624,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -688,7 +641,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

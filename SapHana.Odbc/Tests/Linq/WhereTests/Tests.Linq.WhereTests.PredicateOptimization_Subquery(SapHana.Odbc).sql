@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PK",
 	"p"."Id",
@@ -25,7 +24,6 @@ WHERE
 	) > To_Timestamp('2023-01-01 00:00:00.000')
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PK",
 	"p"."Id",

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"tt"."Key_1",
 	SUM("tt"."ChildID")

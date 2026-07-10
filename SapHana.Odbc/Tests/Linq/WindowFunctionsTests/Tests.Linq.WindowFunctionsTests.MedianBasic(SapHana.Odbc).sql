@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."Id",
 	MEDIAN("t"."IntValue") OVER (PARTITION BY "t"."CategoryId")

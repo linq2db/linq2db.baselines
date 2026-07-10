@@ -1,12 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	STRING_AGG("t1"."Value2", ' -> ' ORDER BY "t1"."Id" NULLS FIRST)
 FROM
 	"SampleClass" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	STRING_AGG("t1"."Value2", ' -> ' ORDER BY "t1"."Id" NULLS FIRST)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"i"."FirstName",
 	"i"."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "Table"
 (
 	"ID" Integer NOT NULL,
@@ -8,6 +7,5 @@ CREATE COLUMN TABLE "Table"
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "Table"
 

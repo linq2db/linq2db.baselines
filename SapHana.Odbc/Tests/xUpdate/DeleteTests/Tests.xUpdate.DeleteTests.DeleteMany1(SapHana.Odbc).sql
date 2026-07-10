@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Parent"
 (
 	"ParentID"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Child" "t1"
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Child" "c_1"
 WHERE
 	"c_1"."ParentID" >= 1000
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

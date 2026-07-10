@@ -15,7 +15,6 @@ WHERE
 	"e"."Id" = ? AND "e"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",
@@ -41,7 +40,6 @@ WHERE
 	"e"."Id" = ? AND "e"."Id" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

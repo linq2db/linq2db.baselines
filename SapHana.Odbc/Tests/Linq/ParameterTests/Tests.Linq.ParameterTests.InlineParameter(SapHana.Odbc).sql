@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."Value"
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."Value"

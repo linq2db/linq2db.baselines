@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."ParentID",
 	"IndexedParent_1"."Item1",
@@ -20,7 +19,6 @@ ORDER BY
 	"IndexedParent_1"."ParentID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

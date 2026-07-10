@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"a_Child"."ID"
 FROM

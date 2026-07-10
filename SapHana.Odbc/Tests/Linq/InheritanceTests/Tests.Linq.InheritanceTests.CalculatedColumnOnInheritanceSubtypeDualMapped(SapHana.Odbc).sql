@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Type",
 	"t1"."Id",

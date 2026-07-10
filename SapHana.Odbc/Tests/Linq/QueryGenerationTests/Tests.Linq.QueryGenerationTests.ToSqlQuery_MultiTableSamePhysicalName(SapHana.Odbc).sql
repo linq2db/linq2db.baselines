@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	"d"."PersonID"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "Doctor" "d" ON "p"."PersonID" = "d"."PersonID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."PersonID",
 	"d"."PersonID"

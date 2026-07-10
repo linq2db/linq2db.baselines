@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

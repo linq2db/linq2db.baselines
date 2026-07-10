@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	Coalesce("t2"."Sum_1", 0),
 	"t4"."Count_1"
@@ -39,7 +38,6 @@ FROM
 		) "t4" ON 1=1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id1",
 	"d"."DetailId",
@@ -55,7 +53,6 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id1",
 	"t1"."Id2",

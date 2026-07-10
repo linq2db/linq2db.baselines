@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	SUM("grp_1"."MoneyValue"),
 	Year("grp_1"."c1"),
@@ -16,7 +15,6 @@ GROUP BY
 	"grp_1"."c1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	SUM("grp_1"."MoneyValue"),
 	Year("grp_1"."c1"),

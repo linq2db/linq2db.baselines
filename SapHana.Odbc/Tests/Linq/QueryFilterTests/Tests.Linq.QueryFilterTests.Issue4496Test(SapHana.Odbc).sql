@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"
@@ -10,7 +9,6 @@ WHERE
 	"x"."ChildID" > 30
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"

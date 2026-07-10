@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",

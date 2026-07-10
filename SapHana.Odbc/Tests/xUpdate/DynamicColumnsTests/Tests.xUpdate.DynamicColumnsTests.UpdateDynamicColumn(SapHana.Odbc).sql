@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"Person" "c_1"
 SET
@@ -32,7 +29,6 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

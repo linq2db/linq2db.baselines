@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."IntValue",
@@ -53,7 +52,6 @@ WHERE
 LIMIT 2
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	"r"."IntValue",

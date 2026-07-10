@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("Obj_Operator")
 AS
 (
@@ -15,7 +14,6 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"person_1"."LastName"
 FROM

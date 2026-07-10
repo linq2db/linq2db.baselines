@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Id",
 	CASE
@@ -108,7 +107,6 @@ WHERE
 	"r"."Id" <> -1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

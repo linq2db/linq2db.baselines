@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."Value",
@@ -42,14 +40,12 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
@@ -81,7 +77,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."Value",
@@ -92,14 +87,12 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
@@ -131,7 +124,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."Column",
@@ -142,14 +134,12 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 END
 
 -- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "FluentTemp_Cache"
 (
 	"ID"       Integer      NOT NULL,
@@ -181,7 +171,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."Column",
@@ -192,7 +181,6 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 DO BEGIN
 	DECLARE EXIT HANDLER FOR SQL_ERROR_CODE 259 BEGIN END;
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';

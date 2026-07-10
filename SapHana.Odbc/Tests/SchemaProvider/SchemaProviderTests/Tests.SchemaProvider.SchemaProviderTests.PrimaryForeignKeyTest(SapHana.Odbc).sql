@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	current_schema
 FROM
@@ -7,15 +6,12 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	s.SCHEMA_NAME,
 	TABLE_NAME,
@@ -60,7 +56,6 @@ JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	SCHEMA_NAME,
 	TABLE_NAME,
@@ -71,7 +66,6 @@ SELECT
 FROM INDEX_COLUMNS
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	combined.SCHEMA_NAME,
 	TABLE_NAME,
@@ -116,7 +110,6 @@ JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	CONSTRAINT_NAME AS "Name",
 	SCHEMA_NAME || '.' || TABLE_NAME AS "ThisTableID",
@@ -128,7 +121,6 @@ FROM REFERENTIAL_CONSTRAINTS
 WHERE SCHEMA_NAME IN ('TESTDB')
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	v.SCHEMA_NAME,
 	v.VIEW_NAME,
@@ -143,7 +135,6 @@ WHERE c.CATALOG_NAME = p.CATALOG_NAME AND v.VIEW_TYPE = 'CALC' AND v.SCHEMA_NAME
 ORDER BY v.VIEW_NAME, p."ORDER"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	v.SCHEMA_NAME,
 	v.VIEW_NAME AS TABLE_NAME,
@@ -159,7 +150,6 @@ WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME
 IN ('TESTDB')
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	combined.SCHEMA_NAME,
 	TABLE_NAME,
@@ -204,7 +194,6 @@ JOIN SYS.SCHEMAS AS s ON combined.SCHEMA_NAME = s.SCHEMA_NAME
 WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	SCHEMA_NAME,
 	PROCEDURE_NAME,
@@ -224,7 +213,6 @@ FROM FUNCTIONS AS F
 WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	SCHEMA_NAME,
 	PROCEDURE_NAME,
@@ -255,7 +243,6 @@ WHERE NOT (PARAMETER_TYPE = 'RETURN' AND DATA_TYPE_NAME = 'TABLE_TYPE') AND SCHE
 ORDER BY SCHEMA_NAME, PROCEDURE_NAME, POSITION
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."AddIssue792Record" () }
 
 -- SapHana.Odbc SapHanaOdbc
@@ -301,7 +288,6 @@ SET     @SCHEMANAME = ''
 { CALL "TESTDB"."DROPEXISTINGVIEW" (?,?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."DuplicateColumnNames" () }
 
 -- SapHana.Odbc SapHanaOdbc
@@ -331,7 +317,6 @@ SET     @INPUTOUTPUTSTR = ''
 { CALL "TESTDB"."OutRefTest" (?,?,?,?,?,?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."Patient_SelectAll" () }
 
 -- SapHana.Odbc SapHanaOdbc
@@ -375,7 +360,6 @@ SET     @PERSONID = 0
 { CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."Person_SelectAll" () }
 
 -- SapHana.Odbc SapHanaOdbc
@@ -415,7 +399,6 @@ SET     @GENDER = char(0)
 { CALL "TESTDB"."Person_Update" (?,?,?,?,?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."SelectImplicitColumn" () }
 
 -- SapHana.Odbc SapHanaOdbc
@@ -425,15 +408,12 @@ SET     @I = 0
 { CALL "TESTDB"."TEST_PROCEDURE" (?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT * FROM "TESTDB"."GetParentByID"(0)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 RollbackTransaction

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	Coalesce((
@@ -49,7 +48,6 @@ FROM
 	"SampleClass" "t"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."Id",
