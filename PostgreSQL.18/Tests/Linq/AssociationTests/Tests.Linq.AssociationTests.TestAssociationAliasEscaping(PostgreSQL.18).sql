@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	c_1."ChildID",
 	"testaLi_asParent"."Value1"

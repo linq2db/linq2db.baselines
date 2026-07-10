@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	p."Id",
 	p."Text"
@@ -10,7 +9,6 @@ WHERE
                   　') = ''
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Text"

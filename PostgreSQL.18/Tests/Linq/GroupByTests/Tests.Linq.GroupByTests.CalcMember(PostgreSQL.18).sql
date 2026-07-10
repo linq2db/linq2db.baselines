@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	"groupedData_1"."Key_1",
 	COUNT(*)

@@ -41,7 +41,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."IntValue",
@@ -53,7 +52,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."IntValue",

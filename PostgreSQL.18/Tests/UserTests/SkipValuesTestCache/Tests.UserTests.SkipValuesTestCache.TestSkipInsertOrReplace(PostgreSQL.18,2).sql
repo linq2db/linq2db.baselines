@@ -23,7 +23,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"Age" = :Age
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -59,7 +58,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"Age" = :Age
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

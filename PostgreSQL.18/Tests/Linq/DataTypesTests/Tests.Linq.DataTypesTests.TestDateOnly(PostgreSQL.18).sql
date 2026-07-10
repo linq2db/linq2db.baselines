@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = '2020-02-29'::date AND r."ColumnNullable" = '2020-01-01'::date
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "DateOnlyTable"
 (
 	"Id",
@@ -100,7 +95,6 @@ VALUES
 (2,'2020-02-29'::date,'2020-01-01'::date)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -111,14 +105,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"DateOnlyTable" t1
 
 INSERT BULK "DateOnlyTable"(Id, Column, ColumnNullable)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",

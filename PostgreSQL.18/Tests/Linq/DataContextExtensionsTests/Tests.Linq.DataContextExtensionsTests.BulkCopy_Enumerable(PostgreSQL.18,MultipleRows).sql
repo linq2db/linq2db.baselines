@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -10,7 +9,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -20,12 +18,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -36,7 +32,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -46,12 +41,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -62,7 +55,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -72,12 +64,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -88,7 +78,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -98,12 +87,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -114,7 +101,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -124,12 +110,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -140,7 +124,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -150,12 +133,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -166,7 +147,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -176,12 +156,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -192,7 +170,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -202,12 +179,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -218,7 +193,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -228,12 +202,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -244,7 +216,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -254,12 +225,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -270,7 +239,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -280,12 +248,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -296,7 +262,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -306,12 +271,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -322,7 +285,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -332,12 +294,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -348,7 +308,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -358,12 +317,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -374,7 +331,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -384,12 +340,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -400,7 +354,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -410,12 +363,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -426,7 +377,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -436,12 +386,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -452,7 +400,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -462,12 +409,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -478,7 +423,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -488,12 +432,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -504,7 +446,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -514,12 +455,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -530,7 +469,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -540,12 +478,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -556,7 +492,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -566,12 +501,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -582,7 +515,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -592,12 +524,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -608,7 +538,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -618,12 +547,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -634,7 +561,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -644,12 +570,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -660,7 +584,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -670,12 +593,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -686,7 +607,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -696,12 +616,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -712,7 +630,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -722,12 +639,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -738,7 +653,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -748,12 +662,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -764,7 +676,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -774,12 +685,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -790,7 +699,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -800,12 +708,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -816,7 +722,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -826,12 +731,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -842,7 +745,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -852,12 +754,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -868,7 +768,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -878,12 +777,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -894,7 +791,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -904,12 +800,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "BulkCopyTable"
 (
 	"Id",
@@ -920,7 +814,6 @@ VALUES
 (2,20)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -930,7 +823,6 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 

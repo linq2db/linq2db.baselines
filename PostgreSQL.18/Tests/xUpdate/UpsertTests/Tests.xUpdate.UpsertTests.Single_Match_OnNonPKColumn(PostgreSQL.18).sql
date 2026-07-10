@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	('alice',99,42,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -47,7 +46,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -63,7 +61,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

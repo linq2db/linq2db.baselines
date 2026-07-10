@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "TableWithIdentity" "Target"
 USING (VALUES
 	(1,2)

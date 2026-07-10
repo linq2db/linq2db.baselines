@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	Date_Trunc('day', d."DateTimeValue")
 FROM

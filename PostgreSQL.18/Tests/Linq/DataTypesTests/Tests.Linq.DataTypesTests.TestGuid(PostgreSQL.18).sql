@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -26,7 +25,6 @@ WHERE
 	r."ColumnNullable" = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"GuidTable" t1
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -84,12 +81,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"GuidTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "GuidTable"
 (
 	"Id",
@@ -101,7 +96,6 @@ VALUES
 (2,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -112,14 +106,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"GuidTable" t1
 
 INSERT BULK "GuidTable"(Id, Column, ColumnNullable)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",

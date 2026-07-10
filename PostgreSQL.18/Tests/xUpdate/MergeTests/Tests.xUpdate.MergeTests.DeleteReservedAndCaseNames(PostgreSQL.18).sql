@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"TestMerge1" t1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"TestMerge2" t1
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
@@ -224,7 +221,6 @@ ON ("Source".select_1 = "Target"."Id")
 WHEN MATCHED AND "Source".select_1 = 4 THEN DELETE
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",

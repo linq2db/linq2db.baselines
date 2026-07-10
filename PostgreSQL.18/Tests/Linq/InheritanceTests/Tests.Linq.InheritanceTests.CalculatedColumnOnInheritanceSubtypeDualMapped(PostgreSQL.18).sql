@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Type",
 	t1."Id",

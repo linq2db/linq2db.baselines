@@ -19,7 +19,6 @@ ORDER BY p."ProductID"
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	e."IsDeleted",
 	e."ProductID",

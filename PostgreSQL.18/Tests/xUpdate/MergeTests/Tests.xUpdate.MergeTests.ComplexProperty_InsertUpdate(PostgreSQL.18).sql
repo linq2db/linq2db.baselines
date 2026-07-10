@@ -41,7 +41,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,'alpha-new',True), (3,'gamma',True)
@@ -74,7 +73,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Code",

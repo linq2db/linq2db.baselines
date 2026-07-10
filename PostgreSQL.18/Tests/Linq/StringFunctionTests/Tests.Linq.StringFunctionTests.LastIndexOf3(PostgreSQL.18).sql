@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	'123' || p."FirstName" || '0123451234'

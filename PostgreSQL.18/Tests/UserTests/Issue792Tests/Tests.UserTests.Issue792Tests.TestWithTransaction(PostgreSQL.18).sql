@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"AllTypes" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	current_schema()
 FROM
@@ -14,11 +12,9 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SHOW server_version_num
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT	r.ROUTINE_CATALOG,
 		r.ROUTINE_SCHEMA,
 		r.ROUTINE_NAME,
@@ -36,12 +32,10 @@ SELECT	r.ROUTINE_CATALOG,
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE
 FROM INFORMATION_SCHEMA.parameters
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
 		LEFT JOIN pg_catalog.pg_namespace n ON r.ROUTINE_SCHEMA = n.nspname
@@ -51,23 +45,18 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

@@ -14,7 +14,6 @@ RETURNING
 	"ID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "AllTypes"
 (
 	"intDataType"

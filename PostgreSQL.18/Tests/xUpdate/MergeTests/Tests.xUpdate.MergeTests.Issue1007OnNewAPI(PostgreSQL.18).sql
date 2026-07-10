@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"TestMergeIdentity" t1
 
@@ -17,14 +16,12 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	MAX(t1."Id")
 FROM
 	"TestMergeIdentity" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "TestMergeIdentity" "Target"
 USING (VALUES
 	(10)
@@ -50,7 +47,6 @@ SET
 	"Field" = "Source"."Field"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field"

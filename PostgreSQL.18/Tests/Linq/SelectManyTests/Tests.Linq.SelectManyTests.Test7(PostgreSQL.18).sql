@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	"a_Child"."ParentID",
 	"a_Child"."ChildID"
@@ -12,7 +11,6 @@ WHERE
 	p."ParentID" = g_1."ParentID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	"a_Child"."ParentID",
 	"a_Child"."ChildID"

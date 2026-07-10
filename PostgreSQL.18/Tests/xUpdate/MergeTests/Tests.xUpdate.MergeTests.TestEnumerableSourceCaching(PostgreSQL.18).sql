@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,2)
@@ -28,7 +27,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -38,7 +36,6 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -67,7 +64,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"

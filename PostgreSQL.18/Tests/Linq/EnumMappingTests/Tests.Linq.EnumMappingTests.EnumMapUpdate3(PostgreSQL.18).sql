@@ -8,7 +8,6 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 UPDATE
 	"LinqDataTypes"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."BigIntValue"
 FROM
