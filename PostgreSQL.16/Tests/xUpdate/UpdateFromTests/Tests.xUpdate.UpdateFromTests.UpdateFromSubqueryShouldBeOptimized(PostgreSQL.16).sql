@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 UPDATE
 	"UpdateSubquerySourceTable"
@@ -24,7 +24,7 @@ FROM
 WHERE
 	x."Id" = 1 AND "UpdateSubquerySourceTable"."Id" = x."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -35,7 +35,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 DELETE FROM
 	"Person" t1

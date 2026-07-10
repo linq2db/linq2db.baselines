@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -28,7 +28,7 @@ ORDER BY
 	t1."Group_1",
 	t1."Date_1"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

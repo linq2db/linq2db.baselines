@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 10
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -37,7 +37,7 @@ ORDER BY
 		ELSE ''
 	END
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

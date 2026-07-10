@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	g_1."Id",
@@ -9,7 +9,7 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -21,7 +21,7 @@ FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
