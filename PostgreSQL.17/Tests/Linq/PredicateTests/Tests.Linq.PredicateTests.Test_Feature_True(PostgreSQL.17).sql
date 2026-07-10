@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	(r."One" = r."One") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	(r."Zero" = r."Zero") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	(r."Null" = r."Null") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ FROM
 WHERE
 	(r."One" = r."Zero") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 WHERE
 	(r."One" = r."Null") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 WHERE
 	(r."Zero" = r."Null") = TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -61,7 +61,7 @@ FROM
 WHERE
 	(r."One" = r."One") <> TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -70,7 +70,7 @@ FROM
 WHERE
 	(r."Zero" = r."Zero") <> TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -79,7 +79,7 @@ FROM
 WHERE
 	(r."Null" = r."Null") <> TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -88,7 +88,7 @@ FROM
 WHERE
 	(r."One" = r."Zero") <> TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -97,7 +97,7 @@ FROM
 WHERE
 	(r."One" = r."Null") <> TRUE
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)

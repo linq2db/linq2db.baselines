@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -8,7 +8,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -28,7 +28,7 @@ FROM
 	) m_1
 		INNER JOIN "Employee" d_1 ON m_1."Id" = d_1."DepartmentId"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	k_1.item,

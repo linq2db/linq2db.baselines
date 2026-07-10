@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 WHERE
 	s."String" IS NOT NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ FROM
 WHERE
 	s."NullableString" IS NOT NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 WHERE
 	s."String" IS NULL
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	COUNT(*)

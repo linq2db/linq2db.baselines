@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @Data Text(7) -- String

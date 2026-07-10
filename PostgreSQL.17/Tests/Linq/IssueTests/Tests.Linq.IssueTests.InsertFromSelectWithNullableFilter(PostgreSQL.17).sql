@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "InsertIssueTest"
 (
@@ -21,7 +21,7 @@ FROM
 			1 = 0
 	) t2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @p Smallint -- Int16
 SET     @p = 1234
 
@@ -46,7 +46,7 @@ FROM
 			t1."ID" = :p
 	) t2
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Pk",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "BulkCopyIdentityTable"
 (
@@ -10,7 +10,7 @@ VALUES
 
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

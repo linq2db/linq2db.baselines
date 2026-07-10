@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "TrimTestTable"
 (
@@ -14,7 +14,7 @@ RETURNING
 	"TrimTestTable"."ID",
 	"TrimTestTable"."Data"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",
@@ -24,7 +24,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	r."ID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -11,7 +11,7 @@ VALUES
 	:Value
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 INSERT INTO "TableWithIdentity"
 (
@@ -24,7 +24,7 @@ SELECT
 FROM
 	"TableWithIdentitySrc" t1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",

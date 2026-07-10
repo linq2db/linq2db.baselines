@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DECLARE @yes Text(1) -- String
 SET     @yes = 'X'
 DECLARE @no Text -- String
@@ -14,7 +14,7 @@ SET
 WHERE
 	"TableWithConverterValue"."Id" = 1
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 
 SELECT
 	x."Id",
