@@ -1,6 +1,5 @@
 ﻿BeginTransactionAsync
 -- PostgreSQL.15 PostgreSQL12
-
 commit;
 SELECT
 	COUNT(*)

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	entity1."FirstName",
 	entity1."PersonID",

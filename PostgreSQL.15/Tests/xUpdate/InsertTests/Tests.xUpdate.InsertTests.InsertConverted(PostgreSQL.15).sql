@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."BigIntValue"
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE

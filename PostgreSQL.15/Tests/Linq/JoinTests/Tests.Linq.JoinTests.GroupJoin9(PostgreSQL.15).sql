@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	a_2."ParentID",
 	a_2."Value1",
@@ -22,7 +21,6 @@ FROM
 		LEFT JOIN "Parent" a_1 ON a_2."ParentID" = a_1."ParentID"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

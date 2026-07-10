@@ -1,10 +1,8 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(0,1,2,4)
@@ -34,7 +32,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -48,12 +45,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(10,11,12,14)
@@ -83,7 +78,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -97,12 +91,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"TestMerge1" t1
 
 -- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(20,21,22,24), (30,31,32,34)
@@ -132,7 +124,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",

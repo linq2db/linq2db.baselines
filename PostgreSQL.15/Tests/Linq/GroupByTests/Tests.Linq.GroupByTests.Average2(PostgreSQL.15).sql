@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	AVG(c_1."ChildID")
 FROM

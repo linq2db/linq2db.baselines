@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO test_temp
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO test_temp
 (
 	"Field1"
@@ -38,11 +35,9 @@ ORDER BY
 LIMIT 2 OFFSET :skip 
 
 -- PostgreSQL.15 PostgreSQL12
-
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO test_temp
 (
 	"Field1"
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO test_temp
 (
 	"Field1"

@@ -48,7 +48,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."MoneyValue",
@@ -65,7 +64,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE

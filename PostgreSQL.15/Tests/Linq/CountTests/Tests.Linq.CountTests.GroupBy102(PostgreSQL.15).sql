@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	g_2."ID1",
 	g_2."ID2" + 1,

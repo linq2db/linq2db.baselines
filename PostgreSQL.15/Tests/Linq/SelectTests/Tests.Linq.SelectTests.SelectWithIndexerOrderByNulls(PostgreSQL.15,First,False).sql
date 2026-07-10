@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."ID",
 	x."Index_1"
@@ -19,7 +18,6 @@ ORDER BY
 	x."ID"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

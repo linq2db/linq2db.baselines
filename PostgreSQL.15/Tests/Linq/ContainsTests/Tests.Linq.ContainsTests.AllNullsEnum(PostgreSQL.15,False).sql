@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s."Enum" IN (NULL, NULL)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

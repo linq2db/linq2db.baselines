@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."ParentID"
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT DISTINCT
 	g_1."ParentID"
 FROM

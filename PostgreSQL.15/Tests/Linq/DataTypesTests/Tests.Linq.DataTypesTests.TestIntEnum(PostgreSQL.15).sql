@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 2 AND r."ColumnNullable" = 3
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"IntEnumTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"IntEnumTable" t1
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "IntEnumTable"
 (
 	"Id",
@@ -100,7 +95,6 @@ VALUES
 (2,2,3)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -111,14 +105,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"IntEnumTable" t1
 
 INSERT BULK "IntEnumTable"(Id, Column, ColumnNullable)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",

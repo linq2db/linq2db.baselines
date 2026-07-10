@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -26,7 +25,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

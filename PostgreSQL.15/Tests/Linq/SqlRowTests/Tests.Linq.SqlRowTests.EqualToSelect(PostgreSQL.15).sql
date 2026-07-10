@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +16,6 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +50,6 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -71,7 +67,6 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

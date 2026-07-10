@@ -195,7 +195,6 @@ WHERE
 	"Parent"."ParentID" = t1."ParentID" AND ("Parent"."Value1" = t1."Value1" OR "Parent"."Value1" IS NULL AND t1."Value1" IS NULL)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Value1"
 FROM

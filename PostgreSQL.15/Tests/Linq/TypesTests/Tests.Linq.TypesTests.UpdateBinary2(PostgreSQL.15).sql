@@ -25,7 +25,6 @@ WHERE
 	"LinqDataTypes"."ID" = :p
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."MoneyValue",

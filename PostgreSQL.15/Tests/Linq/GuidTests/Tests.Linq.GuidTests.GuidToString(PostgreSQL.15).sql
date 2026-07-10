@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id"::VarChar(36)
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -17,7 +15,6 @@ WHERE
 	t."Id"::VarChar(36) LIKE '%63d-0f%' ESCAPE '~'
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -27,7 +24,6 @@ WHERE
 	t."Id"::VarChar(36) LIKE 'bc7b6%' ESCAPE '~'
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."NullableGuid"
@@ -37,7 +33,6 @@ WHERE
 	t."Id"::VarChar(36) LIKE '%8f4-53%' ESCAPE '~'
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."NullableGuid"

@@ -50,7 +50,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Guid",
 	lc."Count",

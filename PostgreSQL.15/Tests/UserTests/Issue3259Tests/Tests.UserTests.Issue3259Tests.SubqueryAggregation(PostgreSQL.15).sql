@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t5."WithParentReference",
 	t5."WithParentReferenceCustom1",

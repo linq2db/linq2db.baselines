@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 -- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE

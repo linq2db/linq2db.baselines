@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -45,7 +44,6 @@ WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -74,7 +72,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -102,7 +99,6 @@ WHERE
 	"PR_1598_Mixed_Table"."Id" = :Id
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

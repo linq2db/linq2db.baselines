@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -26,7 +25,6 @@ FROM
 		LEFT JOIN "Product" "a_Product" ON d."ProductId" = "a_Product"."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -50,7 +48,6 @@ FROM
 		INNER JOIN "AccountTax" "a_Tax" ON d."TaxId" = "a_Tax"."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -71,7 +68,6 @@ FROM
 		INNER JOIN "CustomInvoiceLine" d ON m_1."Id" = d."CustomInvoiceId"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -98,7 +94,6 @@ FROM
 		LEFT JOIN "MeasureSource" "a_PreviousSource" ON d."PreviousSourceId" = "a_PreviousSource"."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -119,7 +114,6 @@ FROM
 		INNER JOIN "TypeBMeasures" d ON m_1."Id" = d."CustomInvoiceId"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	f."Id",
 	f."ContractId",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -26,7 +25,6 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."ValidOn"
