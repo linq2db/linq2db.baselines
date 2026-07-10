@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	MAX(IIF([g_1].[ParentID] < 3, [g_1].[ChildID], NULL))
 FROM

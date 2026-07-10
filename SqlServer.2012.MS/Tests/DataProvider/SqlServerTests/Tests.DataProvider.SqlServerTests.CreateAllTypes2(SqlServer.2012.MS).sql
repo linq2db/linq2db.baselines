@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 DROP TABLE [AllType2CreateTest]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [AllType2CreateTest]
 (
 	[ID]                     int                NOT NULL IDENTITY,
@@ -19,7 +17,6 @@ CREATE TABLE [AllType2CreateTest]
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[dateDataType],
@@ -33,6 +30,5 @@ FROM
 	[AllType2CreateTest] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DROP TABLE [AllType2CreateTest]
 

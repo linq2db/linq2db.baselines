@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Key_1],
 	[t1].[Sum_1]
@@ -17,7 +16,6 @@ ORDER BY
 	[t1].[Sum_1] DESC
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Key],

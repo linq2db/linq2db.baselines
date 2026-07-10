@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

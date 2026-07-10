@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[e].[Id],
 	[e].[Date]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 DELETE [p]
 FROM
 	[Person] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -29,7 +27,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +35,6 @@ WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DELETE [p]
 FROM
 	[Person] [p]

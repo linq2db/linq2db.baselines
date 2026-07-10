@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2012
-
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 -- SqlServer.2012
-
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 -- SqlServer.2012

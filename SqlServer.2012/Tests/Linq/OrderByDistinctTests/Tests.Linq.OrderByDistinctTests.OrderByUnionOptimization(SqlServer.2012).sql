@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT DISTINCT
 	[t1].[Id]
 FROM

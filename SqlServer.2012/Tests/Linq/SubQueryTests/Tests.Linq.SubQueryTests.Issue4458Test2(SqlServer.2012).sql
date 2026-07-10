@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SqlServer.2012
-
 SELECT
 	[i].[Id],
 	(

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[g_2].[Key_1]
 FROM

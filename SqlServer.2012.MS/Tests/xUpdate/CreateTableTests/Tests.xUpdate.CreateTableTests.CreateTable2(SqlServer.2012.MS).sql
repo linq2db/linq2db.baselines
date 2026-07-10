@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Field1]  Int         NOT NULL,
@@ -12,6 +11,5 @@ CREATE TABLE [tempdb]..[#TestTable]
 INSERT BULK [tempdb]..[#TestTable](Field1, Field11, Field2, Field21, Field3)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DROP TABLE [tempdb]..[#TestTable]
 

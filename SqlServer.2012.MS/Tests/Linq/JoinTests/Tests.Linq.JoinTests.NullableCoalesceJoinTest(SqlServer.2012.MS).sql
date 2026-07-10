@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[#tmptbl1]
 (
 	[ID]    Int            NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#tmptbl1]
 INSERT BULK [tempdb]..[#tmptbl1](ID, Value)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[#tmptbl2]
 (
 	[ID]    Int            NOT NULL,
@@ -23,7 +21,6 @@ CREATE TABLE [tempdb]..[#tmptbl2]
 INSERT BULK [tempdb]..[#tmptbl2](ID, Value)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [tempdb]..[#tmptbl3]
 (
 	[ID]    Int            NOT NULL,
@@ -35,7 +32,6 @@ CREATE TABLE [tempdb]..[#tmptbl3]
 INSERT BULK [tempdb]..[#tmptbl3](ID, Value)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t4].[ID],
 	[t4].[Value]
@@ -45,7 +41,6 @@ FROM
 		LEFT JOIN [tempdb]..[#tmptbl3] [t4] ON Coalesce([t3].[Value], [t2].[Value]) = [t4].[Value] OR [t3].[Value] IS NULL AND [t2].[Value] IS NULL AND [t4].[Value] IS NULL
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -53,7 +48,6 @@ FROM
 	[tempdb]..[#tmptbl1] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -61,7 +55,6 @@ FROM
 	[tempdb]..[#tmptbl2] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ID],
 	[t1].[Value]
@@ -69,17 +62,14 @@ FROM
 	[tempdb]..[#tmptbl3] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#tmptbl3]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmptbl3]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#tmptbl2]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmptbl2]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[tempdb]..[#tmptbl1]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#tmptbl1]
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(3,CAST(NULL AS Int),CAST(NULL AS Int),3,CAST(NULL AS Int),113),
@@ -250,7 +247,6 @@ VALUES
 ;
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

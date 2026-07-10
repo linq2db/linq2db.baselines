@@ -103,7 +103,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

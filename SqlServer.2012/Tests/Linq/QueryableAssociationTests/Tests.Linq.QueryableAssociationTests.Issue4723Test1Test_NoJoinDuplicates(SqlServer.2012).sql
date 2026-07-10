@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[x_1].[Id],
 	[x_1].[Association]

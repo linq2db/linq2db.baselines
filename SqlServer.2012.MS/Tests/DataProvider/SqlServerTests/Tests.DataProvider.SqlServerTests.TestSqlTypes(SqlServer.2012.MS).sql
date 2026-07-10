@@ -1,57 +1,43 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(12345    as binary(2))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as bit)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as tinyint)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as decimal)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as float)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as smallint)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as int)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as bigint)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as money)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast(1        as real)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast('12345'  as char(6))
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast('2012-12-12 12:12:12' as datetime)
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
 
 -- SqlServer.2012.MS SqlServer.2012

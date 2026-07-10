@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2012
-
 DROP TABLE [TestEnumTable]
 
 -- SqlServer.2012
-
 CREATE TABLE [TestEnumTable]
 (
 	[Field1]  Int         NOT NULL,
@@ -14,7 +12,6 @@ CREATE TABLE [TestEnumTable]
 )
 
 -- SqlServer.2012
-
 INSERT INTO [TestEnumTable]
 (
 	[Field1],
@@ -33,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Field1],
 	[t1].[Field11],
@@ -44,6 +40,5 @@ FROM
 	[TestEnumTable] [t1]
 
 -- SqlServer.2012
-
 DROP TABLE [TestEnumTable]
 

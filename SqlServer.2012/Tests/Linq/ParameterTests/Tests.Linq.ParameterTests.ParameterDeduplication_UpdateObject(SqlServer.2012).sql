@@ -61,7 +61,6 @@ WHERE
 	[ParameterDeduplication].[Id] = @Id
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Int1],

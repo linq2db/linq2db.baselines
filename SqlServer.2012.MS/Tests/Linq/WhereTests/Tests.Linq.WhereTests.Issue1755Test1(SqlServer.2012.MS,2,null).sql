@@ -11,7 +11,6 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
