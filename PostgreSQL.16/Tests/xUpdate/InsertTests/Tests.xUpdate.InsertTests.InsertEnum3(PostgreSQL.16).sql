@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" t1
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	t1."ParentID" = :id
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" t1
 WHERE

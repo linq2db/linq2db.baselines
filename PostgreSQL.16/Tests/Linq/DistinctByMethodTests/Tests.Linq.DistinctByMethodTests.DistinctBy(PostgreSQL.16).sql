@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT DISTINCT ON (t1."Id", t1."Name")
 	t1."Id",
 	t1."Name",
@@ -16,7 +15,6 @@ ORDER BY
 	t1."Date" DESC
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name",

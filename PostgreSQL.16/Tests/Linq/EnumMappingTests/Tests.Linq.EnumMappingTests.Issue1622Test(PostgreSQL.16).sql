@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."SomeText"
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."SomeText"

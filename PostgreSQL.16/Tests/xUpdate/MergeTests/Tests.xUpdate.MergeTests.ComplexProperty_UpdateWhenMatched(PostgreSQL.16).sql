@@ -41,7 +41,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,'first-updated',True)
@@ -60,7 +59,6 @@ SET
 	"Field" = "Source"."Nested_Field"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Code",

@@ -8,7 +8,6 @@ ORDER BY s."Id"
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	(
 		SELECT

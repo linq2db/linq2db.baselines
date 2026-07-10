@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -92,7 +91,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE

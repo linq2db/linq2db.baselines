@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "Issue1303"
 (
 	"ID",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Array",
@@ -26,7 +24,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Array",
@@ -38,7 +35,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Array",

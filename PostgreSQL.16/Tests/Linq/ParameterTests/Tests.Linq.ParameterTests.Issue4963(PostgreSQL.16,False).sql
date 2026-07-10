@@ -8,7 +8,6 @@ SET
 	"Field" = ("Issue4963Table"."Field"::Int + :offset)::SmallInt
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Value"
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Value"

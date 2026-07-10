@@ -33,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."AOnly",

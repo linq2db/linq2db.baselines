@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"Issue5505Table"
 SET
@@ -25,7 +24,6 @@ WHERE
 	"Issue5505Table"."Id" = 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Data"

@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT ("Id") DO NOTHING
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

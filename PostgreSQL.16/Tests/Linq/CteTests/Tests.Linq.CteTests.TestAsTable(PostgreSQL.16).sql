@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE1_" ("ParentID", "ChildID")
 AS
 (
@@ -16,7 +15,6 @@ FROM
 	"CTE1_" t2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"

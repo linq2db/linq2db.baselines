@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT nextval('sequencetestseq') FROM generate_series(1, 40)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
@@ -610,7 +608,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE

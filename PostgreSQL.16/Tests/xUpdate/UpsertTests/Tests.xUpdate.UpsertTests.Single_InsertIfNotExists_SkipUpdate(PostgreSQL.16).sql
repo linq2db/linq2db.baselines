@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT ("Id") DO NOTHING
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -91,14 +90,12 @@ VALUES
 ON CONFLICT ("Id") DO NOTHING
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

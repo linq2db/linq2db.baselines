@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -48,7 +47,6 @@ WHERE
 	"PR_1598_Update_Fluent_Table"."Id" = :Id
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -73,7 +71,6 @@ WHERE
 	"PR_1598_Update_Fluent_Table"."Id" = :Id
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
