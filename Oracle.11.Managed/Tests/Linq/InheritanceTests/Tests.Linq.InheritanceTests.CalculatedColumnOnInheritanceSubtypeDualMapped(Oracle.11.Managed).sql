@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Type",
 	t1."Id",
