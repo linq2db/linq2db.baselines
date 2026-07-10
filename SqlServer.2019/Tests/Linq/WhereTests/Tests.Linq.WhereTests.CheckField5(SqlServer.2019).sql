@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[p].[Value1] + 1,
 	[p].[ParentID],

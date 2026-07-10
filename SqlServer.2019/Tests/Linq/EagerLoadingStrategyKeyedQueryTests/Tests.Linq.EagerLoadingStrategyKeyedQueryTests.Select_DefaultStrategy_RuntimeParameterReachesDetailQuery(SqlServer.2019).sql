@@ -18,7 +18,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.2019
-
 SELECT
 	[d].[Id],
 	[d].[Name]

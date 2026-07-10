@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 INSERT INTO [SampleClass]
 (
 	[Id],

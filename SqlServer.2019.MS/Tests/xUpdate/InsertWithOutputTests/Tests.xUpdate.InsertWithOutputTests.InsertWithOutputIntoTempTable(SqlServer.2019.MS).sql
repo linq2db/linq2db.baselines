@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -34,7 +33,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -42,7 +40,6 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -52,7 +49,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

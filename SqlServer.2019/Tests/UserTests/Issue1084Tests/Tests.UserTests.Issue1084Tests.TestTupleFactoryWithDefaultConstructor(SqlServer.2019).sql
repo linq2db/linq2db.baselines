@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[k_1].[StatusBitmask] & 128,
 	[g_1].[StatusBitmask] & 128

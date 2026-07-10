@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -13,7 +12,6 @@ FROM
 		) [n]([ID]) ON [p].[PersonID] = [n].[ID]
 
 -- SqlServer.2019
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

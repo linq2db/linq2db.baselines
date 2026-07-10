@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	COUNT(*),
 	SUM([g_1].[ChildID]),

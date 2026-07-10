@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -27,7 +24,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -85,7 +81,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2019.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.2019.MS SqlServer.2019
@@ -97,7 +92,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2019.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
 
 -- SqlServer.2019.MS SqlServer.2019
@@ -271,7 +265,6 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.2019.MS SqlServer.2019

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 UPDATE
 	[u]
 SET
@@ -13,7 +12,6 @@ WHERE
 	[u].[Id] = [r].[Id]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

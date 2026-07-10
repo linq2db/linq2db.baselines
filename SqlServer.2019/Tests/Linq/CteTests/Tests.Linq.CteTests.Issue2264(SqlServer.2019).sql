@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 WITH [CTE]
 (
 	[Level_1],
