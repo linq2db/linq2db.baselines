@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	Trunc((-t."MoneyValue"), 0)
 FROM

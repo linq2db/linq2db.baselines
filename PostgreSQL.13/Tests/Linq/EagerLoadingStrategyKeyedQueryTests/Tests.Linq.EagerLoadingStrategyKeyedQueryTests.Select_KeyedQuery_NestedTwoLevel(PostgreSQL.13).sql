@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -9,7 +8,6 @@ ORDER BY
 	c_1."Id"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -26,7 +24,6 @@ ORDER BY
 	m_1."Id"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	d."CompanyId",
 	d."Id",

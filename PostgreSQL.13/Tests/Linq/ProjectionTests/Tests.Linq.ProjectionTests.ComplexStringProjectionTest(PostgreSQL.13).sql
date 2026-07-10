@@ -14,7 +14,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."Data"

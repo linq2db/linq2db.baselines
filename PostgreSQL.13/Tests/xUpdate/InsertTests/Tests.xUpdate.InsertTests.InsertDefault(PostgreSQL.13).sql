@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"Person" p
 WHERE

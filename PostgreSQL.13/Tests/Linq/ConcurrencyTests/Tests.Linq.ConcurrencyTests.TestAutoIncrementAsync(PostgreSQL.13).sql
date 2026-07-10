@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -45,7 +44,6 @@ WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -70,7 +68,6 @@ WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -95,7 +92,6 @@ WHERE
 	"ConcurrencyAutoIncrement"."Id" = :Id AND "ConcurrencyAutoIncrement"."Stamp" = :Stamp
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -115,7 +111,6 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",
@@ -135,7 +130,6 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Stamp",

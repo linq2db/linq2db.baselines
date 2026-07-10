@@ -17,7 +17,6 @@ WHERE
 	"ValueConversion"."Id" = 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -73,7 +72,6 @@ WHERE
 	"ValueConversion"."Id" = :Id
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -129,7 +127,6 @@ WHERE
 	"ValueConversion"."Id" = :Id
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",

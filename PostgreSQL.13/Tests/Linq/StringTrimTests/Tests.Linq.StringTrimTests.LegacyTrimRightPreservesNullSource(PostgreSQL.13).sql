@@ -28,7 +28,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t."VarCharColumn" IS NOT NULL THEN RTRIM(t."VarCharColumn", '.+')

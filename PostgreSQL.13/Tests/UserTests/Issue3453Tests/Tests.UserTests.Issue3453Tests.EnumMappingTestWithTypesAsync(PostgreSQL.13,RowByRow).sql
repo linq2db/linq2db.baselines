@@ -1,6 +1,5 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
 
-
 DROP TABLE IF EXISTS schedule;
 DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
@@ -90,7 +89,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.unit,
@@ -142,7 +140,6 @@ WHERE
 	x.unit_nullable = :unitNullable
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x.id,
 	x.unit,
@@ -154,7 +151,6 @@ WHERE
 	x.unit_nullable = 'day'
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x.id,
 	x.unit,
@@ -166,7 +162,6 @@ WHERE
 	x.unit_nullable IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.unit,

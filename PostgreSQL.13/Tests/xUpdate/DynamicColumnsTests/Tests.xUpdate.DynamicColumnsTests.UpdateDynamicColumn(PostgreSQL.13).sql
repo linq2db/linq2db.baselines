@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	c_1."LastName" = 'Limonadovy'
 
 -- PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"Person"
 SET
@@ -32,7 +29,6 @@ WHERE
 	"Person"."LastName" = 'Limonadovy'
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

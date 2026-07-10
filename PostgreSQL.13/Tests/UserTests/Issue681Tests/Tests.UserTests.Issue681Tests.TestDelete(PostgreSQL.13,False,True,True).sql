@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	current_database()
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	current_schema()
 FROM

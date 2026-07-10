@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 WITH RECURSIVE cte ("ParentID", "ChildID", "Level_1")
 AS
 (

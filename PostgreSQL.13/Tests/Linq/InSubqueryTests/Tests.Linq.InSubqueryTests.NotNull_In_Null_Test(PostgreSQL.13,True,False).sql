@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."PK",
 	t."ID"
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."ID"
@@ -24,7 +22,6 @@ FROM
 	test_in_1 t1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."ID",

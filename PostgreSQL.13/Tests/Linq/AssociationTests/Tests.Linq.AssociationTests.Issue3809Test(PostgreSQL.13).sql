@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -26,7 +25,6 @@ ORDER BY
 	d."ChildID"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	a."ParentID",
 	"a_ParentTest"."ParentID"

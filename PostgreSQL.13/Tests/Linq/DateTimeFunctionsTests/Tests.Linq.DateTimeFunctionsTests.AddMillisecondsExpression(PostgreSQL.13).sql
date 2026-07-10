@@ -8,7 +8,6 @@ FROM
 	"LinqDataTypes" t
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."DateTimeValue"
 FROM

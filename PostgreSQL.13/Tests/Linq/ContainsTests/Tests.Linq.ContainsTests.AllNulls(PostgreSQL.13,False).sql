@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s."Int" IN (NULL, NULL)
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

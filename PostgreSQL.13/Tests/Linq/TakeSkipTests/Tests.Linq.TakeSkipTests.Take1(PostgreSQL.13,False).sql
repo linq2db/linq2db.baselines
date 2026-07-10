@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	ch."ParentID",
 	ch."ChildID"
@@ -8,7 +7,6 @@ FROM
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	ch."ParentID",
 	ch."ChildID"
@@ -17,7 +15,6 @@ FROM
 LIMIT 3
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	ch."ParentID",
 	ch."ChildID"
@@ -26,7 +23,6 @@ FROM
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	ch."ParentID",
 	ch."ChildID"

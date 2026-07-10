@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	g_1."GroupId",
 	AVG(g_1."DataValue"),
@@ -17,7 +16,6 @@ GROUP BY
 	g_1."GroupId"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GroupId",

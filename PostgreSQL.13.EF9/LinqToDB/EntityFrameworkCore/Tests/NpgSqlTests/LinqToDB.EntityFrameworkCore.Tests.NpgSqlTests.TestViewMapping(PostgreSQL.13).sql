@@ -4,7 +4,6 @@ WHERE e."Name" LIKE 'any%'
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Name"
 FROM

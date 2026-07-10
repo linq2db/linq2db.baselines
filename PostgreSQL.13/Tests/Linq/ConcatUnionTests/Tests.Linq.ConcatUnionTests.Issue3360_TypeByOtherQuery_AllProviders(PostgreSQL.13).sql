@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Id",
 	p."Str"
@@ -13,7 +12,6 @@ FROM
 	"Issue3360Table" p_1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Id",
 	'str'::VarChar
