@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"g_1"."GroupId",
 	MIN("g_1"."DataValue"),
@@ -27,7 +26,6 @@ GROUP BY
 	"g_1"."GroupId"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."GroupId",

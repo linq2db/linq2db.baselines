@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Value"
@@ -44,7 +43,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Value"

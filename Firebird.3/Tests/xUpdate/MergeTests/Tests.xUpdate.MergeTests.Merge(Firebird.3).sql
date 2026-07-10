@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 MERGE INTO "LinqDataTypes" "Target"
 USING (
 	SELECT

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -33,7 +32,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -42,7 +40,6 @@ WHERE
 	"t1"."FirstName" STARTING WITH 'Insert15'
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE

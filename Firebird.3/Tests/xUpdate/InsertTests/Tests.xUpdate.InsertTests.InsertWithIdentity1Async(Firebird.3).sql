@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -25,7 +24,6 @@ RETURNING
 	"PersonID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -39,7 +37,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t1"
 WHERE

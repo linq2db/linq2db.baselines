@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"CollatedTable" "t1"
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	CAST("r"."CaseSensitive" AS BLOB) LIKE '%stString' ESCAPE '~'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	CAST("r"."CaseInsensitive" AS BLOB) LIKE '%stString' ESCAPE '~'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	CAST("r"."CaseSensitive" AS BLOB) LIKE '%ststring' ESCAPE '~'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

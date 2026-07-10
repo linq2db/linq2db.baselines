@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 /* My custom
 wonderful multiline
 query tag */

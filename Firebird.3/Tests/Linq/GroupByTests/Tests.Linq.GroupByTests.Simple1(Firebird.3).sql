@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."Key_1",
 	"d"."ParentID",
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."Key_1" = "d"."ParentID"
 
 -- Firebird.3 Firebird3
-
 SELECT DISTINCT
 	"t1"."ParentID"
 FROM

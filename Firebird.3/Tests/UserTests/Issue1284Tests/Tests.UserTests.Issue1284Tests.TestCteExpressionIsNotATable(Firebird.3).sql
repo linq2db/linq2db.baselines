@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 WITH CTE_1
 (
 	"entry_ID",
@@ -31,7 +30,6 @@ WHERE
 	"x"."entry_ID" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"x"."FirstName",
 	"x"."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 WITH CTE1_ ("ParentID", "ChildID")
 AS
 (
@@ -16,7 +15,6 @@ FROM
 	CTE1_ "t2"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

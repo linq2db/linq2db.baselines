@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 MERGE INTO "UnusedSourceTable" "Target"
 USING (
 	SELECT 1 AS "Unused"
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Value"

@@ -11,7 +11,6 @@ ORDER BY
 FETCH NEXT @take ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

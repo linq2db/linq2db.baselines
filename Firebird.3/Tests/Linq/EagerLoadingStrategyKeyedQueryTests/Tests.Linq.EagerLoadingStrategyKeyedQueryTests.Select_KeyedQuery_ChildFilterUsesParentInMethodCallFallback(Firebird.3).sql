@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"m_1"."Id",
 	"m_1"."Name",
@@ -15,7 +14,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"

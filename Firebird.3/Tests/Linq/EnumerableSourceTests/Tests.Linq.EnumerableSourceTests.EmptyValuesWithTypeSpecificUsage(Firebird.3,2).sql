@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"g_1"."Id",
 	SUM("g_1"."Id")

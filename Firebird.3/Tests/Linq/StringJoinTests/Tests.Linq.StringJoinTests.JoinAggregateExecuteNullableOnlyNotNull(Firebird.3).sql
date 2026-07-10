@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	LIST("t2"."NullableValue", ', ')
 FROM

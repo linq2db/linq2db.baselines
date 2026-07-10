@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"entity1"."FirstName",
 	"entity1"."PersonID",

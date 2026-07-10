@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Name",
@@ -101,14 +100,12 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Name",

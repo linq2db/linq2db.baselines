@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"r".ID,
 	"r"."MoneyValue",
@@ -18,7 +17,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r".ID,
 	"r"."MoneyValue",
@@ -132,7 +130,6 @@ WHERE
 	"t1".ID = @ID
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r".ID,
 	"r"."MoneyValue",

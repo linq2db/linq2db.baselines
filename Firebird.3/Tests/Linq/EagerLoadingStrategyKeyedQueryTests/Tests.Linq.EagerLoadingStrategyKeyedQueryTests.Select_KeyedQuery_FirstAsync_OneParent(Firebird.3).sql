@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"
@@ -10,7 +9,6 @@ ORDER BY
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

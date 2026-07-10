@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 UPDATE
 	"ParentTable"
 SET
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."Id",
 	"p"."Value"

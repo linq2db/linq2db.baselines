@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."Id",
 	"p"."TargetName",
@@ -66,7 +65,6 @@ WHERE
 	"p"."TargetName" = 'bda.Requests'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."TargetName",
 	"p"."Id",

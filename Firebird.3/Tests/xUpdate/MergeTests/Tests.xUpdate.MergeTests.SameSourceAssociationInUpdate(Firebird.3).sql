@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -28,7 +27,6 @@ SET
 	"LastName" = 'last ' || Coalesce("Source"."Patient_Diagnosis_1", '')
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

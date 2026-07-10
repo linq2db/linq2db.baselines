@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	LEAD("t"."DoubleValue") OVER (ORDER BY "t"."Id"),
 	LAG("t"."DecimalValue") OVER (ORDER BY "t"."Id"),

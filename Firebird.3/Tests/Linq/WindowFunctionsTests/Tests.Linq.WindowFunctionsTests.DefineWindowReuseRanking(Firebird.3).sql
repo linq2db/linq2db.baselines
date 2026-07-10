@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	ROW_NUMBER() OVER (PARTITION BY "t"."CategoryId" ORDER BY "t"."Id"),
 	RANK() OVER (PARTITION BY "t"."CategoryId" ORDER BY "t"."Id"),

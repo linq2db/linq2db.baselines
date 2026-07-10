@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -29,7 +28,6 @@ WHERE
 	"t".ID = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",

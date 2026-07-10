@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"x".ID,
 	"x"."Index_1"
@@ -19,7 +18,6 @@ ORDER BY
 	"x".ID
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

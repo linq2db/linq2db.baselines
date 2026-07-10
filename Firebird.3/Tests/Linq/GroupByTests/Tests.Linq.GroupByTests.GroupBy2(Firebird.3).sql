@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"gr_1".ID,
 	"gr_1".ID + 1

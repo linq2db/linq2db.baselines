@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"e"."Id"
 FROM
 	"ConcatTestEntity" "e"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

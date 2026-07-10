@@ -35,7 +35,6 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 -- Firebird.3 Firebird3
-
 INSERT INTO "Parent"
 (
 	"ParentID",
