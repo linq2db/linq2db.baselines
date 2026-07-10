@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast('2012-12-12' as date)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('2012-12-12' as date)
 
 -- Sybase.Managed Sybase

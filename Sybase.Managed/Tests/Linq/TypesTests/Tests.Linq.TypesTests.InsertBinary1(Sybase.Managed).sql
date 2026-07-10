@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [t1]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [t1]

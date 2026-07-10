@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [UnusedSourceTable] [Target]
 USING (
 	SELECT 1 AS [Unused]
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Value]

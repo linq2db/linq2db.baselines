@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 3
 	[x].[FirstName],
 	[x].[PersonID],

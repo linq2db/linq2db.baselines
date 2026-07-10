@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN CHAR_LENGTH([p].[FirstName]) <> 0 THEN [p].[FirstName]

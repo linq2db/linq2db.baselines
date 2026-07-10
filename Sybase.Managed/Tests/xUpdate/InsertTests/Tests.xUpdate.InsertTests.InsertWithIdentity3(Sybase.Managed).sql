@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]
@@ -30,7 +29,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],
@@ -43,7 +41,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]

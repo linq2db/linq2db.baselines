@@ -1,25 +1,19 @@
 ﻿-- Sybase.Managed Sybase
-
 USE master
 
 -- Sybase.Managed Sybase
-
 DROP DATABASE TestDataCore
 
 -- Sybase.Managed Sybase
-
 CREATE DATABASE TestDataCore ON default = '102400K'
 
 -- Sybase.Managed Sybase
-
 USE TestDataCore
 
 -- Sybase.Managed Sybase
-
 sp_configure 'enable unicode normalization', 0
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL,
@@ -30,7 +24,6 @@ CREATE TABLE InheritanceParent
 )
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL,
@@ -42,7 +35,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- Sybase.Managed Sybase
-
 -- Person Table
 
 CREATE TABLE Person
@@ -56,23 +48,18 @@ CREATE TABLE Person
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- Sybase.Managed Sybase
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -85,11 +72,9 @@ CREATE TABLE Doctor
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- Sybase.Managed Sybase
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -102,23 +87,18 @@ CREATE TABLE Patient
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE Parent      (ParentID INT NULL, Value1 int NULL)
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE Child       (ParentID int NULL, ChildID INT NULL)
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE GrandChild  (ParentID INT NULL, ChildID INT NULL, GrandChildID INT NULL)
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -135,14 +115,12 @@ CREATE TABLE LinqDataTypes
 )
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE TestIdentity
 (
 	ID int IDENTITY CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED
 )
 
 -- Sybase.Managed Sybase
-
 -- AllTypes
 
 CREATE TABLE AllTypes
@@ -185,7 +163,6 @@ CREATE TABLE AllTypes
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO AllTypes
 (
 	bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType, smallmoneyDataType,
@@ -216,7 +193,6 @@ SELECT
 	        1,         2, Cast(3 as varbinary)
 
 -- Sybase.Managed Sybase
-
 -- merge test tables
 CREATE TABLE TestMerge1
 (
@@ -247,7 +223,6 @@ CREATE TABLE TestMerge1
 )
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE TestMerge2
 (
 	Id     int NOT NULL,
@@ -277,7 +252,6 @@ CREATE TABLE TestMerge2
 )
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE TestMergeIdentity
 (
 	Id     int IDENTITY,
@@ -287,27 +261,23 @@ CREATE TABLE TestMergeIdentity
 )
 
 -- Sybase.Managed Sybase
-
 CREATE OR REPLACE PROCEDURE AddIssue792Record AS
 	INSERT INTO dbo.AllTypes(char20DataType) VALUES('issue792')
 RETURN
 
 -- Sybase.Managed Sybase
-
 CREATE Procedure Person_SelectAll
 AS
 
 SELECT * FROM Person
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE KeepIdentityTest (
 	ID    INT IDENTITY,
 	Value INT NULL
 )
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE CollatedTable
 (
 	Id				INT NOT NULL,
@@ -316,7 +286,6 @@ CREATE TABLE CollatedTable
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -344,7 +313,6 @@ SELECT 11,11.45,'2009-09-27 00:00:00.000',NULL,1,'d3021d18-97f0-4dc0-98d0-f0c7df
 SELECT 12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0'
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -359,7 +327,6 @@ SELECT 6,6 UNION ALL
 SELECT 7,1
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -384,7 +351,6 @@ SELECT 6,66 UNION ALL
 SELECT 7,77
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -415,7 +381,6 @@ SELECT 4,42,423 UNION ALL
 SELECT 4,42,424
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
@@ -427,7 +392,6 @@ SELECT 2,1,NULL UNION ALL
 SELECT 3,2,'InheritanceParent2'
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],

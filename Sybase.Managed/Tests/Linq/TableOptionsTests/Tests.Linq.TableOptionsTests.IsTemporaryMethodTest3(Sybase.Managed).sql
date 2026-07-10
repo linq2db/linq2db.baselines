@@ -1,10 +1,8 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE #TestTable
 (
 	[Id]    Int NOT NULL,
@@ -14,7 +12,6 @@ CREATE TABLE #TestTable
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -29,7 +26,6 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable
 

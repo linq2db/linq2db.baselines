@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS [Id], CAST(NULL AS DECIMAL(18, 10)) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

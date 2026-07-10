@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast('12:12:12' as time)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('12:12:12' as time)
 
 -- Sybase.Managed Sybase

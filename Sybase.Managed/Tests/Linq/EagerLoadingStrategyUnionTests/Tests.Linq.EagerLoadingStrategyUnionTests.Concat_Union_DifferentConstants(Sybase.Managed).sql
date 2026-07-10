@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	CAST('Small' AS NVarChar(255)),
 	[c_1].[Id],
@@ -15,7 +14,6 @@ FROM
 	[Company] [c_2]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

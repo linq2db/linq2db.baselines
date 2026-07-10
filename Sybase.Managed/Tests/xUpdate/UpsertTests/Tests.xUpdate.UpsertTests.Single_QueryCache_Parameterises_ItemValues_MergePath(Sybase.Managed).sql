@@ -36,7 +36,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 42 AS [Id], 'first-update' AS [Name], 50 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]) [Source]
@@ -62,7 +61,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 42 AS [Id], 'second-update' AS [Name], 99 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]) [Source]
@@ -88,7 +86,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],

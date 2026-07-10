@@ -26,7 +26,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Person]
 SET

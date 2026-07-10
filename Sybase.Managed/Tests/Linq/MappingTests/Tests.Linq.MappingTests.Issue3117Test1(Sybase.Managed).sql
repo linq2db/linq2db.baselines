@@ -14,7 +14,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id]
 FROM

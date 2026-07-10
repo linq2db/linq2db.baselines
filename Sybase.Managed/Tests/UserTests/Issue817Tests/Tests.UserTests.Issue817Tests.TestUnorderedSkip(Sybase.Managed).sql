@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	1
 FROM

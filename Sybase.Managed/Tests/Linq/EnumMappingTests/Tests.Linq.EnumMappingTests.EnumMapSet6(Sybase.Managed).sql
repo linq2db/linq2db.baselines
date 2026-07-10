@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[LinqDataTypes]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

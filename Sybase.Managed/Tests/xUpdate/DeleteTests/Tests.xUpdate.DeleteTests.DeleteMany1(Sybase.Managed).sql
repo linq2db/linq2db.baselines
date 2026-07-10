@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Parent] [p]
@@ -45,7 +41,6 @@ WHERE
 	[p].[ParentID] >= 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Child]
 FROM
 	[Child] [c_1]
@@ -53,7 +48,6 @@ WHERE
 	[c_1].[ParentID] >= 1000
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [c_1]

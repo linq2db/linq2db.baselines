@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[r_1].[Diagnosis],
 	[a_Person].[FirstName]

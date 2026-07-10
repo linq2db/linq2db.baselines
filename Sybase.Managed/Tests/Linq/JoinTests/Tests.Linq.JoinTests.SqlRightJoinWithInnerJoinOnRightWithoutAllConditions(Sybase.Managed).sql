@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[left_1].[ParentID],
 	[right_1].[ParentID]

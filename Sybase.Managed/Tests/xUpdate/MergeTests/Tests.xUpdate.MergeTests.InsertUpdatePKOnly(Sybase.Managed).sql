@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [PKOnlyTable] [Target]
 USING (
 	SELECT 1 AS [ID]
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID]
 FROM

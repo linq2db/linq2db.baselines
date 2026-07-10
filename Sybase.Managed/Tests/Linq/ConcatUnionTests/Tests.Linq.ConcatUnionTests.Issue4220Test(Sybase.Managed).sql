@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

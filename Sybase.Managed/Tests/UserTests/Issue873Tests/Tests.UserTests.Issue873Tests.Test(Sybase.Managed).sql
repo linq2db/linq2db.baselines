@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	' ' || CAST(Coalesce([t1].[Value1], 0) AS NVarChar(11)),
 	Coalesce([t1].[SubSum], 0),

@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

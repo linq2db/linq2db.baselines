@@ -13,7 +13,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -32,7 +31,6 @@ ORDER BY
 	[d].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[a_Ref_1].[Prop]
 FROM

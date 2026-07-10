@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[InId],
 	CASE
@@ -17,7 +16,6 @@ WHERE
 	[t1].[InId] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[InId],
 	CASE

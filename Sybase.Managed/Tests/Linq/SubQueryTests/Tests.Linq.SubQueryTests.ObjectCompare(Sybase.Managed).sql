@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[sub].[ParentID_1],
 	[sub].[ChildID] + 1

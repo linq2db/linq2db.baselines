@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	'*** p ***' || '4',
 	'*** p ***',

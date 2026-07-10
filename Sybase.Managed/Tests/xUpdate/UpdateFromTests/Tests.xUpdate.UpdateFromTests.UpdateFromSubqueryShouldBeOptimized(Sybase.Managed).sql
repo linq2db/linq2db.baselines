@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[PersonID] > 4
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[UpdateSubquerySourceTable]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[UpdateSubquerySourceTable].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -42,7 +39,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [Person]
 FROM
 	[Person] [t1]

@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 DROP TABLE [AllTypeCreateTest]
 
 -- Sybase.Managed Sybase
-
 CREATE TABLE [AllTypeCreateTest]
 (
 	[ID]                    Int             IDENTITY NOT NULL,
@@ -41,7 +39,6 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ID],
 	[t1].[bigintDataType],
@@ -77,6 +74,5 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 -- Sybase.Managed Sybase
-
 DROP TABLE [AllTypeCreateTest]
 

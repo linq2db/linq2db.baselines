@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT 'alice' AS [Name], 99 AS [Id], 42 AS [Version_1], CAST(NULL AS DateTime) AS [CreatedAt], CAST(NULL AS NVarChar(255)) AS [CreatedBy], CAST(NULL AS DateTime) AS [UpdatedAt], CAST(NULL AS NVarChar(255)) AS [UpdatedBy]) [Source]
@@ -46,7 +45,6 @@ SET
 	[UpdatedBy] = [Source].[UpdatedBy]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],
@@ -61,7 +59,6 @@ WHERE
 	[r].[Name] = 'alice'
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],

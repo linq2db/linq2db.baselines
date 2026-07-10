@@ -28,7 +28,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[VarCharColumn]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(CASE
 		WHEN [g_1].[TimeStamp] > '2020-02-29 17:54:55.123' THEN 1

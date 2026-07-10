@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

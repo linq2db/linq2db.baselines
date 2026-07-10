@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[gr].[FirstName],
 	[gr].[LastName],

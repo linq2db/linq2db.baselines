@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -18,7 +17,6 @@ WHERE
 	[s].[FirstName] <> ''
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

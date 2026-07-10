@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (
 	SELECT 1 AS [Id], 'alpha-new' AS [Code], 1 AS [Nested_Field]
@@ -75,7 +74,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Code],

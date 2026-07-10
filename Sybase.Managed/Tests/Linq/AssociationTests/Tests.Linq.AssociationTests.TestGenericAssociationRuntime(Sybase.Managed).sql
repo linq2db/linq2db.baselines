@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[a_MiddleRuntime].[ParentID],
 	[a_Bottom].[ParentID],

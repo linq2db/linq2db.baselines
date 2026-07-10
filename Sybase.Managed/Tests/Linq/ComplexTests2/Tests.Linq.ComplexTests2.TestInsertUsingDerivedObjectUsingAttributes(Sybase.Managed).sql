@@ -26,7 +26,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -61,7 +60,6 @@ WHERE
 	[Person].[PersonID] = @ID
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],

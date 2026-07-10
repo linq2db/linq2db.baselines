@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 UPDATE
 	[Issue5289Table]
 SET
@@ -26,7 +25,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],
@@ -37,7 +35,6 @@ WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Issue5289Table]
 SET
@@ -64,7 +61,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],

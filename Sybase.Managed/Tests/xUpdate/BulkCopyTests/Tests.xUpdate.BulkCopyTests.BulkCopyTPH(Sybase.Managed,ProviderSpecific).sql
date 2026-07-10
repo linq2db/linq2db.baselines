@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [TPHTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ SELECT 2,2,NULL,'Str2',NULL,NULL UNION ALL
 SELECT 3,3,NULL,NULL,'Str3','Y'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id],
@@ -28,7 +26,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -42,7 +39,6 @@ WHERE
 	[x].[Discriminator] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -56,7 +52,6 @@ WHERE
 	[x].[Discriminator] = 2
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -70,7 +65,6 @@ WHERE
 	[x].[Discriminator] = 3
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -84,7 +78,6 @@ WHERE
 	[x].[Value1] = 'Str1'
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],
@@ -98,7 +91,6 @@ WHERE
 	[x].[Value2] = 'Str2'
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[x].[Discriminator],
 	[x].[Id],

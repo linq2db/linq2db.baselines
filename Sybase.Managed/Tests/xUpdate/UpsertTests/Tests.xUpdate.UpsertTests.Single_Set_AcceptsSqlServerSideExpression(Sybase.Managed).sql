@@ -53,7 +53,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],
@@ -122,7 +121,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],
@@ -189,7 +187,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],

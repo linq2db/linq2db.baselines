@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
@@ -15,7 +14,6 @@ FROM
 	[Person] [p_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

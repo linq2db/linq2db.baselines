@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -17,7 +15,6 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -26,7 +23,6 @@ WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -36,7 +32,6 @@ ORDER BY
 	[r].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]

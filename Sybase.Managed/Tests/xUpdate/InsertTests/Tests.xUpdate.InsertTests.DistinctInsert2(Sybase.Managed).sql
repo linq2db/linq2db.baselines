@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ID] > 1000
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -27,7 +25,6 @@ FROM
 	) [t2]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [LinqDataTypes]
 FROM
 	[LinqDataTypes] [c_1]

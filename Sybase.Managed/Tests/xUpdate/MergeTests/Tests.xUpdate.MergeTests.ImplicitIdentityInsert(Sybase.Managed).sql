@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -44,7 +42,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
