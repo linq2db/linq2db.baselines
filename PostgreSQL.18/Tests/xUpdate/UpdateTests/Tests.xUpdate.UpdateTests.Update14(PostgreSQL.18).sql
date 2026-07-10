@@ -37,7 +37,6 @@ WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

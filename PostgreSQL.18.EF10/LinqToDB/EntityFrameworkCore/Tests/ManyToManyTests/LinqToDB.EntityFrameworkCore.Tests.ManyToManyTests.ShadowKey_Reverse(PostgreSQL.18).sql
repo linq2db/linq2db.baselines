@@ -9,7 +9,6 @@ ORDER BY t."Label"
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Label"
 FROM

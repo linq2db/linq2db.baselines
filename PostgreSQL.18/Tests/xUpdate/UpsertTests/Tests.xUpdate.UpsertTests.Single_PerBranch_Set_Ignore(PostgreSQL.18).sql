@@ -33,7 +33,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = 'system'
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -83,7 +82,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = 'system'
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

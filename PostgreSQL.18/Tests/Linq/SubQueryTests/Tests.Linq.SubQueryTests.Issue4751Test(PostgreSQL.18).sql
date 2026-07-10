@@ -55,7 +55,6 @@ ORDER BY
 LIMIT :take OFFSET :skip 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	Coalesce(e."Str1", '') || '/' || Coalesce(e."StrReq", '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	e."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Str1",

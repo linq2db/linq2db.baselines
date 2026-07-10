@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	g_2.n,
 	SUM(g_2."ParentID")

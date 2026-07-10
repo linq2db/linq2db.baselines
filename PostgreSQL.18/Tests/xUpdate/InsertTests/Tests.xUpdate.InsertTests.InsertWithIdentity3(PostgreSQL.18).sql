@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -29,7 +28,6 @@ RETURNING
 	"PersonID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -43,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Person" t1
 WHERE

@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"ID" Int NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "TempTable"
 (
 	"ID"
@@ -23,14 +20,12 @@ FROM
 	"Parent" p
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."ID"
 FROM
 	"TempTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."ID"
 FROM
@@ -38,6 +33,5 @@ FROM
 		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 

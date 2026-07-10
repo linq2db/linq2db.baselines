@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "Issue5289Table" AS t1
 (
 	"Id",
@@ -16,7 +15,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."PictureId",
@@ -28,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "Issue5289Table" AS t1
 (
 	"Id",
@@ -45,7 +42,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"PictureId" = 3
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."PictureId",

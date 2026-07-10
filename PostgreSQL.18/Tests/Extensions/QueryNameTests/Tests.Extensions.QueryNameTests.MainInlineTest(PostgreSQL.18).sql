@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT /* Main */
 	p."ParentID",
 	p."Value1",

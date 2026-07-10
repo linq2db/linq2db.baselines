@@ -7,7 +7,6 @@ WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Disco
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	MAX(e."QuantityPerUnit")
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Products" e
 WHERE

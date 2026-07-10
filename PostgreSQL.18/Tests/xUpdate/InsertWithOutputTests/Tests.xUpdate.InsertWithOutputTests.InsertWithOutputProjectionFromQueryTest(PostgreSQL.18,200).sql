@@ -21,7 +21,6 @@ RETURNING
 	Coalesce(NEW."ValueStr", '') || '1'
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value",
@@ -30,7 +29,6 @@ FROM
 	"DestinationTable" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id" + 1,
 	Coalesce(t."ValueStr", '') || '1'

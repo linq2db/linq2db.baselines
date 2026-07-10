@@ -49,7 +49,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	e."Code",
 	e."Id",

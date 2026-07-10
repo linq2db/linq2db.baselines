@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	AVG(Coalesce(g_1."doubleDataType", 0)),
 	test_avg(Coalesce(g_1."doubleDataType", 0))

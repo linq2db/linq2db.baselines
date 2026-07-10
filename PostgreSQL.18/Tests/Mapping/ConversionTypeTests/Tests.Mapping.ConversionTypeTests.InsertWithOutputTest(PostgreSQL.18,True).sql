@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "TrimTestTable"
 (
 	"ID",
@@ -15,7 +14,6 @@ RETURNING
 	NEW."Data"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -25,7 +23,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

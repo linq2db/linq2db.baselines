@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -48,7 +47,6 @@ WHERE
 	"PR_1598_Update_Null_Table"."Id" = :Id
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -73,7 +71,6 @@ WHERE
 	"PR_1598_Update_Null_Table"."Id" = :Id
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

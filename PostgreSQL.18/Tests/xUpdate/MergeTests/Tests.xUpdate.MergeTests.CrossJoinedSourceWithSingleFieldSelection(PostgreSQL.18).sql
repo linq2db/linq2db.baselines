@@ -1,15 +1,12 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Parent" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Child" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"GrandChild" t1
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
@@ -112,7 +108,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."GrandChildID",
 	t1."ParentID",

@@ -9,7 +9,6 @@ ORDER BY a."Name"
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	a."Name"
 FROM

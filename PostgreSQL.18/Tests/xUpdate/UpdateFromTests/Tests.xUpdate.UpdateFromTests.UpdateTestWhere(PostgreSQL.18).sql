@@ -20,7 +20,6 @@ WHERE
 	t.id = "UpdatedEntities".id AND t.id <> :someId
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	v.id,
 	v."Value1",

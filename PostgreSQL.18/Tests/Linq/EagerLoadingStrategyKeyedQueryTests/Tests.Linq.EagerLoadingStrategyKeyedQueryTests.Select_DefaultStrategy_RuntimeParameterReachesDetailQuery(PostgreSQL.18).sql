@@ -18,7 +18,6 @@ ORDER BY
 	m_1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	d."Id",
 	d."Name"

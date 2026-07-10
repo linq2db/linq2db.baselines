@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT DISTINCT
 	c2."ParentID"
 FROM

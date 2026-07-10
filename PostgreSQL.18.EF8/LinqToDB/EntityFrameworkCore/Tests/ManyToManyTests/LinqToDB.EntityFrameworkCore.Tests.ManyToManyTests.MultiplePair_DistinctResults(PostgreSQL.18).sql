@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	u."Id"
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	u."Id"
 FROM

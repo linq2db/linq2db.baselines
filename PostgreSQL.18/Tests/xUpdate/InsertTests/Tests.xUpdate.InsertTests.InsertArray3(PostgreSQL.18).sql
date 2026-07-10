@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -39,7 +37,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

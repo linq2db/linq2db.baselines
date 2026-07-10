@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	MAX(g_1."Value1"),
 	STRING_AGG(g_1."Value1", ' -> ')

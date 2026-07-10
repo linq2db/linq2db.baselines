@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 CREATE TEMPORARY TABLE my_entities
 (
 	id        Int  NOT NULL,
@@ -48,6 +47,5 @@ WHERE
 	:p @> t1."Template_ValidFrom"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS my_entities
 

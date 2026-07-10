@@ -12,7 +12,6 @@ ORDER BY
 LIMIT :take
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

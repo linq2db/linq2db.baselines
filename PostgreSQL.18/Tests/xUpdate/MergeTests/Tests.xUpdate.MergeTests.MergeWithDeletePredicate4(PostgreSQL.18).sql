@@ -24,7 +24,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

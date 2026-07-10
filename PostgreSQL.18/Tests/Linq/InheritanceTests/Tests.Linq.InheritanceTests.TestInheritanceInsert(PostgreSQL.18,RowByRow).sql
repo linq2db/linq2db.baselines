@@ -141,7 +141,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Code",
 	t1."Id",

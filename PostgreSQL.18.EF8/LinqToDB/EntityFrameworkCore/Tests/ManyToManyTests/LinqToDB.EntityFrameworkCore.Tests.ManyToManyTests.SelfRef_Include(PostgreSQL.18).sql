@@ -11,7 +11,6 @@ ORDER BY p."Id", t."FriendId", t."PersonId"
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	o."Id",
@@ -28,7 +27,6 @@ ORDER BY
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name"

@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	RTRIM(Coalesce(t."NCharColumn", '') || '...++', '.+')
 FROM
 	"StringTrimTable" t
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."CharColumn",

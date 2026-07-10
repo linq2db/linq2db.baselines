@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	'Element ' || Coalesce(r."VarCharTextNullable", '') || ' Text1',

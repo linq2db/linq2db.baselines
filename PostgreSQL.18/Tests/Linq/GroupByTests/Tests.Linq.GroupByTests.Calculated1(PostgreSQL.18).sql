@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	m_1."Key_1",
 	d."ParentID",
@@ -26,7 +25,6 @@ FROM
 		END
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT DISTINCT
 	CASE
 		WHEN g_1."ParentID" > 2 THEN CASE

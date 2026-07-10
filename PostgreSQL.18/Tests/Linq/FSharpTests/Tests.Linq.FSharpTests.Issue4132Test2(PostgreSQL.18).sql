@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 UPDATE
 	"Issue4132Table"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"Issue4132Table"."Number" = 1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Number",
