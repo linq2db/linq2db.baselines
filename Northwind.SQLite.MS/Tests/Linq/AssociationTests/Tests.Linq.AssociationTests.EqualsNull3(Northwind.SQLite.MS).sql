@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[a_ReportsToEmployee].[EmployeeID],
 	[a_ReportsToEmployee].[LastName],

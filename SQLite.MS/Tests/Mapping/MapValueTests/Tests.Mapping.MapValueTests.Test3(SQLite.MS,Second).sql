@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [t].[EnumValue] = 'S' THEN 'Second'

@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[o].[Id]
 FROM

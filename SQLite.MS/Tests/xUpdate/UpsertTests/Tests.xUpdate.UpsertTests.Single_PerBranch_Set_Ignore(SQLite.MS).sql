@@ -33,7 +33,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[UpdatedBy] = 'system'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],
@@ -83,7 +82,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[UpdatedBy] = 'system'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

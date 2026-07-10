@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Person]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[Person].[LastName] = 'Limonadovy'
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[g_1].[Id],
 	GROUP_CONCAT(Coalesce([g_1].[NullableValue], ''), ', '),
@@ -12,7 +11,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

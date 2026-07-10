@@ -8,7 +8,6 @@ ORDER BY "s"."Id"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	(
 		SELECT

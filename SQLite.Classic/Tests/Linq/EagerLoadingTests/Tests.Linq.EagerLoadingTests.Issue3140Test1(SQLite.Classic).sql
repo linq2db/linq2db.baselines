@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[a_Child].[Id],

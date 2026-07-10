@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[Issue2815Table1]
 SET
@@ -22,7 +21,6 @@ WHERE
 	[Issue2815Table1].[Id] = [ext].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SRC_BIC],

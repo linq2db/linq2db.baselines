@@ -9,7 +9,6 @@ ORDER BY "a"."Name"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a].[Name]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 UPDATE
 	[TableWithData]
 SET

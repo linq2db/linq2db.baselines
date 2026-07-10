@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[row_1].[Value]
 FROM

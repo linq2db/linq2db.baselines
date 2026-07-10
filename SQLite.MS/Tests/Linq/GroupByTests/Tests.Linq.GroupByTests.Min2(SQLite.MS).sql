@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	MIN([c_1].[ChildID])
 FROM

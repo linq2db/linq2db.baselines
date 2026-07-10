@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	CASE
@@ -13,7 +12,6 @@ WHERE
 	NULLIF([x].[StringProp], '1') LIKE '%2%' ESCAPE '~'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

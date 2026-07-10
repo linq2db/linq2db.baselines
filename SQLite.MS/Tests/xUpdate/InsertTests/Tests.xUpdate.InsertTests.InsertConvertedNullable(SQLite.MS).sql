@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ID],
 	[t].[BigIntValue]
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[LinqDataTypes]
 WHERE

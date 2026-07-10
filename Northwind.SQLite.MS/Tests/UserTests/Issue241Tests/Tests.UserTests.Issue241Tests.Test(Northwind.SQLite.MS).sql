@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[m_1].[CustomerID],
 	[m_1].[CustomerID],
@@ -19,7 +18,6 @@ WHERE
 	[m_1].[CompanyName] LIKE '%t%' ESCAPE '~'
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[o].[CustomerID]
 FROM

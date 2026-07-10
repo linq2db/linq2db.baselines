@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [CTE]
 (
 	[Level_1],

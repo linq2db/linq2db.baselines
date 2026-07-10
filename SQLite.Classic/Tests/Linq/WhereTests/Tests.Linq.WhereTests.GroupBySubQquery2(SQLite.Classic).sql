@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]

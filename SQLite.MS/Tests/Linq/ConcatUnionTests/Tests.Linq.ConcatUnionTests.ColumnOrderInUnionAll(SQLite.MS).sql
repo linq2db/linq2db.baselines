@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID],
 	CAST(222 AS INTEGER),
@@ -29,7 +28,6 @@ FROM
 	[Parent] [p_3]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

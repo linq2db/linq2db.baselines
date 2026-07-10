@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE_1] ([ParentID], [field])
 AS MATERIALIZED
 (
@@ -66,7 +65,6 @@ ORDER BY
 	[t4].[Item2]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
@@ -75,7 +73,6 @@ ORDER BY
 	[p].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[ParentID],
@@ -90,7 +87,6 @@ FROM
 		INNER JOIN [Child] [d] ON [k_1].[item] = [d].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -107,7 +103,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

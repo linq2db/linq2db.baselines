@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE_1]
 (
 	[entry_ID],
@@ -31,7 +30,6 @@ WHERE
 	[x].[entry_ID] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

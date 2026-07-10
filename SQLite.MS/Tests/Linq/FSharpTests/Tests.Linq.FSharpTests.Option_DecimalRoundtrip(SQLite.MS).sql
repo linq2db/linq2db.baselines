@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -44,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value]

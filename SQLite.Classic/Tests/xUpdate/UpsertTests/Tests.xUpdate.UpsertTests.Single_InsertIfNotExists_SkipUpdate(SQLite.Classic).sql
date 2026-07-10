@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT ([Id]) DO NOTHING
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],
@@ -91,14 +90,12 @@ VALUES
 ON CONFLICT ([Id]) DO NOTHING
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

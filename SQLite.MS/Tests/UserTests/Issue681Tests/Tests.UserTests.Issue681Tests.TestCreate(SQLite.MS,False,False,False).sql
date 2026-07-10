@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [Issue681Table2]
 
 -- SQLite.MS SQLite
-
 CREATE TABLE [Issue681Table2]
 (
 	[ID]    INTEGER NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE [Issue681Table2]
 )
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [Issue681Table2]
 

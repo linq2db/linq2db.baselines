@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN Ln(CAST([t].[MoneyValue] AS Float)) / 0.69314718055994529 > 0

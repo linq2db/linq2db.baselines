@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Value],

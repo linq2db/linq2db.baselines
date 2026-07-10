@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [t].[EnumValue] = 'F' THEN 'First'

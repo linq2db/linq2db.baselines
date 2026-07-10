@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [CTE_1]
 (
 	[entry_FirstName],
@@ -55,7 +54,6 @@ FROM
 LIMIT 1
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[ID],

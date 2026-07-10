@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Parent]
 SET

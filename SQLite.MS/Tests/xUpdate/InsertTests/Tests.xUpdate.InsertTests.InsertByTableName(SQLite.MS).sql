@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
@@ -78,18 +77,15 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

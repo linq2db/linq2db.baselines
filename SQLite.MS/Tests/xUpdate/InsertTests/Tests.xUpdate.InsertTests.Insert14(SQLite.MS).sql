@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[FirstName] LIKE 'Insert14%' ESCAPE '~'
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +34,6 @@ WHERE
 	[p].[FirstName] LIKE 'Insert14%' ESCAPE '~'
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	'*** p ***' || '4',
 	'*** p ***',

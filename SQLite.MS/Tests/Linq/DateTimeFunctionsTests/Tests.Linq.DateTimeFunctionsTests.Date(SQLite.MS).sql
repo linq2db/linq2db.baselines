@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	Date([t].[DateTimeValue])
 FROM

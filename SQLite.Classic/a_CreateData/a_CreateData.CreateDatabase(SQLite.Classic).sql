@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 --
 -- Helper table
 --
@@ -102,21 +101,17 @@ CREATE TABLE LinqDataTypes
 DROP TABLE IF EXISTS TestIdentity
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
 -- SQLite.Classic SQLite
-
 DROP VIEW IF EXISTS AllTypesView
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS AllTypes
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE AllTypes
 (
 	ID                       integer          NOT NULL CONSTRAINT PK_AllTypes PRIMARY KEY AUTOINCREMENT,
@@ -151,7 +146,6 @@ CREATE TABLE AllTypes
 )
 
 -- SQLite.Classic SQLite
-
 CREATE VIEW AllTypesView
 AS
 SELECT
@@ -160,7 +154,6 @@ SELECT
 FROM AllTypes
 
 -- SQLite.Classic SQLite
-
 INSERT INTO AllTypes
 (
 	bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType,
@@ -182,7 +175,6 @@ SELECT
 		   10
 
 -- SQLite.Classic SQLite
-
 --
 -- Demonstration Tables for Issue #784
 --
@@ -191,7 +183,6 @@ SELECT
 DROP TABLE IF EXISTS PrimaryKeyTable
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE PrimaryKeyTable
 (
 	ID           integer      NOT NULL PRIMARY KEY,
@@ -199,12 +190,10 @@ CREATE TABLE PrimaryKeyTable
 )
 
 -- SQLite.Classic SQLite
-
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE ForeignKeyTable
 (
 	PrimaryKeyTableID integer      NOT NULL,
@@ -216,12 +205,10 @@ CREATE TABLE ForeignKeyTable
 )
 
 -- SQLite.Classic SQLite
-
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE FKTestPosition
 (
 	Company      integer      NOT NULL,
@@ -237,7 +224,6 @@ CREATE TABLE FKTestPosition
 )
 
 -- SQLite.Classic SQLite
-
 -- merge test tables
 DROP TABLE IF EXISTS TestMerge1;
 DROP TABLE IF EXISTS TestMerge2;
@@ -328,7 +314,6 @@ CREATE TABLE CollatedTable
 );
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -357,7 +342,6 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -373,7 +357,6 @@ VALUES
 (7,1)
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -399,7 +382,6 @@ VALUES
 (7,77)
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -431,7 +413,6 @@ VALUES
 (4,42,424)
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
@@ -444,7 +425,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],
@@ -477,7 +457,6 @@ SET     @uniqueidentifierDataType = X'FF19966F868B11D0B42D00C04FC964FF'
 				WHERE ID = 2
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 --
 -- Helper table
 --
@@ -580,21 +559,17 @@ CREATE TABLE LinqDataTypes
 DROP TABLE IF EXISTS TestIdentity
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 DROP VIEW IF EXISTS AllTypesView
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS AllTypes
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE TABLE AllTypes
 (
 	ID                       integer          NOT NULL CONSTRAINT PK_AllTypes PRIMARY KEY AUTOINCREMENT,
@@ -629,7 +604,6 @@ CREATE TABLE AllTypes
 )
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE VIEW AllTypesView
 AS
 SELECT
@@ -638,7 +612,6 @@ SELECT
 FROM AllTypes
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO AllTypes
 (
 	bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType,
@@ -660,7 +633,6 @@ SELECT
 		   10
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 --
 -- Demonstration Tables for Issue #784
 --
@@ -669,7 +641,6 @@ SELECT
 DROP TABLE IF EXISTS PrimaryKeyTable
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE TABLE PrimaryKeyTable
 (
 	ID           integer      NOT NULL PRIMARY KEY,
@@ -677,12 +648,10 @@ CREATE TABLE PrimaryKeyTable
 )
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE TABLE ForeignKeyTable
 (
 	PrimaryKeyTableID integer      NOT NULL,
@@ -694,12 +663,10 @@ CREATE TABLE ForeignKeyTable
 )
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 CREATE TABLE FKTestPosition
 (
 	Company      integer      NOT NULL,
@@ -715,7 +682,6 @@ CREATE TABLE FKTestPosition
 )
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 -- merge test tables
 DROP TABLE IF EXISTS TestMerge1;
 DROP TABLE IF EXISTS TestMerge2;
@@ -806,7 +772,6 @@ CREATE TABLE CollatedTable
 );
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -835,7 +800,6 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -851,7 +815,6 @@ VALUES
 (7,1)
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -877,7 +840,6 @@ VALUES
 (7,77)
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [GrandChild]
 (
 	[ParentID],
@@ -909,7 +871,6 @@ VALUES
 (4,42,424)
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [InheritanceParent]
 (
 	[InheritanceParentId],
@@ -922,7 +883,6 @@ VALUES
 (3,2,'InheritanceParent2')
 
 -- SQLite.Classic.Data SQLite.Classic SQLite
-
 INSERT INTO [InheritanceChild]
 (
 	[InheritanceChildId],

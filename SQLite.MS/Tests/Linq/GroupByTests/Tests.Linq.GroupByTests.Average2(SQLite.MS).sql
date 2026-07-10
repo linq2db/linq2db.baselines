@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	AVG([c_1].[ChildID])
 FROM

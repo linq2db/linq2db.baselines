@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[infeed].[Id],
 	Coalesce((

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t].[GroupId],
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	[t].[GroupId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

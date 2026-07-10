@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[u].[Id]
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[u].[Id]
 FROM

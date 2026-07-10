@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]
@@ -21,7 +20,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

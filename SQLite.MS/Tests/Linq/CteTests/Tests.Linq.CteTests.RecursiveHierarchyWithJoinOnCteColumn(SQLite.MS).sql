@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [cte] ([ParentID], [ChildID], [Level_1])
 AS
 (

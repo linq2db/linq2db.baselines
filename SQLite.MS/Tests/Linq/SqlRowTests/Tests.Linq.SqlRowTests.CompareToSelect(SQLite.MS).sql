@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +16,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +50,6 @@ WHERE
 	)
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

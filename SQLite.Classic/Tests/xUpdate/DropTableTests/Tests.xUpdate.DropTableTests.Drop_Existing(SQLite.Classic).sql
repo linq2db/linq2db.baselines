@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 CREATE TABLE [Table]
 (
 	[ID] INTEGER NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- SQLite.Classic SQLite
-
 DROP TABLE [Table]
 

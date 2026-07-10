@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -24,7 +23,6 @@ ORDER BY
 	[t1].[ChildID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

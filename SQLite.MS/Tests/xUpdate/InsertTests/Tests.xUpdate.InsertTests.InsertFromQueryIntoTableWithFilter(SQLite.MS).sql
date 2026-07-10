@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [InsertEntity]
 (
 	[Id],
@@ -16,7 +15,6 @@ WHERE
 	NOT [e].[IsDeleted]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],

@@ -62,7 +62,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Kind],
 	[t1].[Id],

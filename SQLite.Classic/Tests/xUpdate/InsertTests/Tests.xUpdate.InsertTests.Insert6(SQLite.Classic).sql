@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[Value1] = 11
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -21,7 +19,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

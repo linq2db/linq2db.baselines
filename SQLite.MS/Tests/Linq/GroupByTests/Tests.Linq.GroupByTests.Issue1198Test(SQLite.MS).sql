@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(CASE
 		WHEN [t].[Status] = 3 THEN 1

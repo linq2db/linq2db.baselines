@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[t1].[CustomerID],
 	[t1].[CompanyName],

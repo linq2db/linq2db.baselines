@@ -7,7 +7,6 @@ WHERE (@ef_filter__p1 OR "p"."ProductID" > 2) AND (@ef_filter__p1 OR NOT ("p"."D
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[QuantityPerUnit]
 FROM

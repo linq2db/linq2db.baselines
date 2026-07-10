@@ -13,7 +13,6 @@ ORDER BY
 LIMIT @take
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

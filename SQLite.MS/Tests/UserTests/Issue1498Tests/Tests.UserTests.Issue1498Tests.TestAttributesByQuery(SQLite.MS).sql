@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Title],

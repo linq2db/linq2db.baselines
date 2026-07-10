@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[g_2].[EmployeeID],
 	(

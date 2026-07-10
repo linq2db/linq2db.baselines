@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	Coalesce([t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || ', ' || Coalesce([t].[VarcharValue], '') || ', ' || Coalesce([t].[NVarcharValue], ''),
 	Coalesce((
@@ -57,7 +56,6 @@ FROM
 	[SampleClass] [t]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

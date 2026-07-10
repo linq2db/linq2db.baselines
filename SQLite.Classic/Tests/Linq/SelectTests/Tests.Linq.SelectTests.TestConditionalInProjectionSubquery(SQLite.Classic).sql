@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c_1].[Id],
 	CASE

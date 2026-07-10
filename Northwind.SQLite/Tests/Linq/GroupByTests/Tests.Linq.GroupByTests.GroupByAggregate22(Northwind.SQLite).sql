@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[CustomerID],
@@ -46,7 +45,6 @@ FROM
 		END)
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[t2].[Average] <> 33.25 OR [t2].[Average] IS NULL
 FROM

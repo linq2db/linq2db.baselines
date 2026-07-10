@@ -11,7 +11,6 @@ WHERE
 	[TphThingBase].[Id] = 3
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Type],
 	[x].[Id],

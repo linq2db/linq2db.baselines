@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[Code],
 	[p].[Name]
@@ -7,7 +6,6 @@ FROM
 	[StringKeyParent] [p]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

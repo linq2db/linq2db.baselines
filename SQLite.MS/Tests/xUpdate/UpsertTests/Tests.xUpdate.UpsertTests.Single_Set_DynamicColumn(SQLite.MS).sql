@@ -16,7 +16,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Name] = 'dyn-insert'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name]
@@ -44,7 +43,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Name] = 'dyn-update'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name]

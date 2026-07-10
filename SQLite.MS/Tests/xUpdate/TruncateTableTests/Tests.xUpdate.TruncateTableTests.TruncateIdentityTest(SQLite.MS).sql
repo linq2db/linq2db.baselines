@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TestIdTrun]
 
 -- SQLite.MS SQLite
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -11,7 +9,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -22,7 +19,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -46,15 +42,12 @@ ORDER BY
 LIMIT 2 OFFSET @skip
 
 -- SQLite.MS SQLite
-
 DELETE FROM [TestIdTrun]
 
 -- SQLite.MS SQLite
-
 UPDATE SQLITE_SEQUENCE SET SEQ=0 WHERE NAME='TestIdTrun'
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -65,7 +58,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -89,6 +81,5 @@ ORDER BY
 LIMIT 2 OFFSET @skip
 
 -- SQLite.MS SQLite
-
 DROP TABLE [TestIdTrun]
 

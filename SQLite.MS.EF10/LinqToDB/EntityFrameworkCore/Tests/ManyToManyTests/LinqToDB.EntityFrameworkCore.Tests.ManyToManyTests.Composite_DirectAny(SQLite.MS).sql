@@ -9,7 +9,6 @@ ORDER BY "p"."Code"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[Code]
 FROM

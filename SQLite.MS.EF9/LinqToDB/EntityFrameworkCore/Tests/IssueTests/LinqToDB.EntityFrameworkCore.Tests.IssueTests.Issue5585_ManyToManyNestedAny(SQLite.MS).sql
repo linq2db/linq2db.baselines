@@ -12,7 +12,6 @@ ORDER BY "i"."Id"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[c_1].[Id]
 FROM

@@ -8,7 +8,6 @@ SET
 	[Value] = @p + [SampleClass].[Value] * 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

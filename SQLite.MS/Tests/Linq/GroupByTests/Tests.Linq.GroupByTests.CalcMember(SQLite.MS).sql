@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[groupedData_1].[Key_1],
 	COUNT(*)

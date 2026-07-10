@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 UPDATE
 	[TableWithConverterValue]
 SET
@@ -11,7 +10,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],
@@ -24,7 +22,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

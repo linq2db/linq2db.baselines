@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID],
 	[gc3_1].[not_null],

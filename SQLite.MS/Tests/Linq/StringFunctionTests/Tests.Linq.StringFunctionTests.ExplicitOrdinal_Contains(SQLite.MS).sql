@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[CollatedTable]
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stSt%' ESCAPE '~' AND InStr([r].[CaseSensitive], 'stSt') > 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	InStr([r].[CaseInsensitive], 'stSt') > 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stst%' ESCAPE '~' AND InStr([r].[CaseSensitive], 'stst') > 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

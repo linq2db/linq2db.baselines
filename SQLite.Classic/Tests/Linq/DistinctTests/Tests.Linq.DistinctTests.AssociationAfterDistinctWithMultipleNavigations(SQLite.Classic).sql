@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[GrandChildID],
 	[a_Child_1].[ParentID],
@@ -25,7 +24,6 @@ ORDER BY
 	[t1].[GrandChildID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

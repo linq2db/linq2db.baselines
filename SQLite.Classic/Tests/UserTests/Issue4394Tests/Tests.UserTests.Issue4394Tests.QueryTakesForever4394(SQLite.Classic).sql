@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],
@@ -182,7 +181,6 @@ FROM
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],

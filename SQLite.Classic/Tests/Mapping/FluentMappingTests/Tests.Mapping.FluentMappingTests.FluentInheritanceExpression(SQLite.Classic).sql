@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[e].[Id] = 1
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id]
 FROM

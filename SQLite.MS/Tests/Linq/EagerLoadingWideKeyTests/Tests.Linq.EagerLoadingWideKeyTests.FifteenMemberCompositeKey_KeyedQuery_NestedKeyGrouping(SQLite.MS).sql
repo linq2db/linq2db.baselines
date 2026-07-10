@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [KParent]
 (
 	[Id],
@@ -24,7 +23,6 @@ VALUES
 (2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2)
 
 -- SQLite.MS SQLite
-
 INSERT INTO [KChild]
 (
 	[Id],
@@ -50,7 +48,6 @@ VALUES
 (2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,'p2')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[Id],
 	[p].[K15],
@@ -74,7 +71,6 @@ ORDER BY
 	[p].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

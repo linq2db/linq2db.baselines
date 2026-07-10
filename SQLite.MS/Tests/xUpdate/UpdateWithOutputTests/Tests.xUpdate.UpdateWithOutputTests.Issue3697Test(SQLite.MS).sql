@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Test3697] DEFAULT VALUES
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Test3697Item]
 SET
@@ -16,7 +14,6 @@ RETURNING
 	[Test3697Item].[Id]
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Test3697Item]
 SET

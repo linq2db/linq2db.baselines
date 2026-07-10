@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MaxCol5 SQLite
-
 SELECT
 	[p].[Id],
 	ROW_NUMBER() OVER (ORDER BY [p].[Id]),
@@ -12,7 +11,6 @@ ORDER BY
 	[p].[Id]
 
 -- SQLite.Classic.MaxCol5 SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -31,7 +29,6 @@ ORDER BY
 	[d].[Id]
 
 -- SQLite.Classic.MaxCol5 SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

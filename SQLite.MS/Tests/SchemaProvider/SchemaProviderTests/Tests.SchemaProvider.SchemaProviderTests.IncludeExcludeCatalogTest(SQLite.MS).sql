@@ -1,6 +1,5 @@
 ﻿-- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -15,7 +14,6 @@
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -28,7 +26,6 @@
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -59,7 +56,6 @@
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -69,11 +65,9 @@
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -91,7 +85,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -106,7 +99,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -119,7 +111,6 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -150,7 +141,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -160,11 +150,9 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -182,7 +170,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -197,7 +184,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -210,7 +196,6 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -241,7 +226,6 @@ SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -251,11 +235,9 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.MS SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,

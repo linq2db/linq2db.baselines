@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* My Test */
 SELECT
 	[t1].[Id],

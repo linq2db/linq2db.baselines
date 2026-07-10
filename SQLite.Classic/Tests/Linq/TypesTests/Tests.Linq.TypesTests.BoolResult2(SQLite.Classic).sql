@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[a_Patient].[PersonID] IS NOT NULL
 FROM

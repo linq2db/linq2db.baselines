@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t].[Year],
 	[a].[Count_1]
@@ -15,14 +14,12 @@ FROM
 		INNER JOIN [SmallerDateRanges] [t] ON [a].[MinYear] <= [t].[Year] AND [a].[MaxYear] >= [t].[Year]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Year]
 FROM
 	[DateRanges] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Year]
 FROM

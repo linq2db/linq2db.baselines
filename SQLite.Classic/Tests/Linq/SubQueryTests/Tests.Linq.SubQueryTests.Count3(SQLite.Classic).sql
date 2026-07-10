@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[p_1].[ParentID],
 	[p_1].[Sum_1]

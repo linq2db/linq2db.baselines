@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [SampleClass]
 (
 	[Id],

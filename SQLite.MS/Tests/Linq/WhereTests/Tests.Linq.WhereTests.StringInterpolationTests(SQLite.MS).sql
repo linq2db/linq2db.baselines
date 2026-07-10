@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || [p].[LastName]) = ('{}' || [p].[LastName])
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

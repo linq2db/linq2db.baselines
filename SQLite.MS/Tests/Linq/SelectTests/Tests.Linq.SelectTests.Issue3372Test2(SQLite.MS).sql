@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[FirstName],
 	[a_Person].[PersonID] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL,

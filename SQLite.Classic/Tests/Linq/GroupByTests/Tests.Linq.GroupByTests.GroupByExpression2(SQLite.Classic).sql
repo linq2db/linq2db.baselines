@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ChildID],
 	AVG([t1].[ParentID])

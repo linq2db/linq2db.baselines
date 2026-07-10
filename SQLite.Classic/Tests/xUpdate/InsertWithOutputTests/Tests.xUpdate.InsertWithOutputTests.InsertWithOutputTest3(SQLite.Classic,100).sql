@@ -31,7 +31,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[Child]
 WHERE

@@ -76,7 +76,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[StringValue]
@@ -88,7 +87,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

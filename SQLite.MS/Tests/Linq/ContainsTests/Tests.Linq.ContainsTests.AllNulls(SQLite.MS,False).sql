@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Int] IN (NULL, NULL)
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -11,7 +10,6 @@ WHERE
 	ABS([e].[Value1]) = 20
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

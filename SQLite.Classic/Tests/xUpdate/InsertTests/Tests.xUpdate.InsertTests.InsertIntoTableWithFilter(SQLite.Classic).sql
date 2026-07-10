@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [InsertEntity]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Name],

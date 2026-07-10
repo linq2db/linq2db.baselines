@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[gc].[ParentID],
 	[gc].[ChildID],

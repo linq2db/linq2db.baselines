@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[Ints]
 SET
@@ -18,7 +17,6 @@ WHERE
 	[Ints].[One] = 10
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[One],

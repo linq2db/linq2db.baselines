@@ -12,7 +12,6 @@ WHERE @__ef_filter__p_0 OR NOT ("e"."IsDeleted")
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[EmployeeID],

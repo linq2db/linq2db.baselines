@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Issue1403Tests_1]
 (
 	[event_id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[event_id],
 	[t1].[event_description]

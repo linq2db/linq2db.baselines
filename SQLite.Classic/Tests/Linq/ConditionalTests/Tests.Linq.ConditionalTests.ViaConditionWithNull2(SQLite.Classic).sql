@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	CASE
@@ -16,7 +15,6 @@ WHERE
 	END LIKE '%2%' ESCAPE '~'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

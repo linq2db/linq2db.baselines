@@ -4,7 +4,6 @@ INNER JOIN "Order Details" AS "o" ON "p"."ProductID" = "o"."ProductID"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[IsDeleted],
 	[p].[ProductID],
@@ -45,7 +44,6 @@ WHERE (@ef_filter__p1 OR "p"."ProductID" > 2) AND (@ef_filter__p1 OR NOT ("p"."D
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[IsDeleted],
 	[p].[ProductID],

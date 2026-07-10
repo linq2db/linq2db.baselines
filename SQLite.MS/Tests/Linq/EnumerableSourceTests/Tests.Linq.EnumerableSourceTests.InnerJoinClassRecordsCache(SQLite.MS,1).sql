@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -16,7 +15,6 @@ FROM
 			) [n] ON [p].[PersonID] = [n].[ID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

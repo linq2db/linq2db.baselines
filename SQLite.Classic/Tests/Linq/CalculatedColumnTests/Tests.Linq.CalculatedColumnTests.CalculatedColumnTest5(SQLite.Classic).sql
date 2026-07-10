@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[a_PersonDoctor].[FirstName]
 FROM

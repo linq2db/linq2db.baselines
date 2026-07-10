@@ -10,7 +10,6 @@ WHERE
 	[TphThingBase].[Type] IN (102, 101) AND [TphThingBase].[Id] = 3
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[Type],
 	[x].[Id],

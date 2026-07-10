@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],

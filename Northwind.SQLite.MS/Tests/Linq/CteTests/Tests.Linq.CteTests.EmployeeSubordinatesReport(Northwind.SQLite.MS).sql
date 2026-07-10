@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 WITH [EmployeeSubordinatesReport]
 (
 	[ReportsTo],
@@ -38,7 +37,6 @@ FROM
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[employee].[LastName],
 	[employee].[FirstName],

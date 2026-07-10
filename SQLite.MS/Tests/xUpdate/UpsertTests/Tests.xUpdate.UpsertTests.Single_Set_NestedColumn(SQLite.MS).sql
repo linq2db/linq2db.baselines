@@ -21,7 +21,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Last] = @Last
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[First],
@@ -55,7 +54,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Last] = @Last
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[First],

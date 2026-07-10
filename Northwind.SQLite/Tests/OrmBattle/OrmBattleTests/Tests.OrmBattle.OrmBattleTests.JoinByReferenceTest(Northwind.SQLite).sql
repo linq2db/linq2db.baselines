@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[c_1].[ContactName],
 	[o].[OrderDate]

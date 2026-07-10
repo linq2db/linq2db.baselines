@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[a_Details].[UserId],

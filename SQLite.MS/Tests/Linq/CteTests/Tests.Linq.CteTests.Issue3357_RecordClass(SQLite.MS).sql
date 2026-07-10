@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [cte] ([Id], [FirstName], [LastName])
 AS
 (

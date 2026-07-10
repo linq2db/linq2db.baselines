@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [t].[Value_1] > 0 THEN CAST([t].[Value_1] AS INTEGER)

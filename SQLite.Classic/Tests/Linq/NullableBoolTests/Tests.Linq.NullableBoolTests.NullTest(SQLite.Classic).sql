@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[t].[Value] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Value]

@@ -11,7 +11,6 @@ ORDER BY "p"."Code", "p"."OrgId", "t"."MemberId", "t"."OrgId", "t"."Code"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrgId],
 	[m_1].[Code],
@@ -29,7 +28,6 @@ ORDER BY
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* one */
 SELECT
 	[x].[FirstName],

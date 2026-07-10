@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN NOT [p].[Discontinued] THEN 'NULL'

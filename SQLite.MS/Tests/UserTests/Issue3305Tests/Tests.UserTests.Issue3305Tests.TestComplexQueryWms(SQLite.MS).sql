@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[ChannelDTO]
 (
 	[Id]         INTEGER NOT NULL,
@@ -8,7 +7,6 @@ CREATE TEMPORARY TABLE temp.[ChannelDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
 (
 	[Id]             INTEGER NOT NULL,
@@ -25,7 +23,6 @@ CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[MaterialDTO]
 (
 	[Id]                    INTEGER       NOT NULL,
@@ -41,7 +38,6 @@ CREATE TEMPORARY TABLE temp.[MaterialDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
 (
 	[Id]            INTEGER NOT NULL,
@@ -56,7 +52,6 @@ CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
 (
 	[Id]             INTEGER NOT NULL,
@@ -65,7 +60,6 @@ CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[AisleDTO]
 (
 	[Id]          INTEGER       NOT NULL,
@@ -75,7 +69,6 @@ CREATE TEMPORARY TABLE temp.[AisleDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
 (
 	[Id]         INTEGER NOT NULL,
@@ -83,7 +76,6 @@ CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
 (
 	[Id]               INTEGER NOT NULL,
@@ -91,7 +83,6 @@ CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
 )
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 (
 	[Id]              INTEGER NOT NULL,
@@ -103,7 +94,6 @@ CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 )
 
 -- SQLite.MS SQLite
-
 WITH [CTE_1]
 (
 	[IR_ResourceID],
@@ -225,38 +215,29 @@ FROM
 		LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[StorageShelfDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[InfeedAdvicePositionDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[RefOutfeedTransportOrderResourceDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[AisleDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[RefResourceStorageShelfDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[WmsLoadCarrierDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[MaterialDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[InventoryResourceDTO]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS temp.[ChannelDTO]
 

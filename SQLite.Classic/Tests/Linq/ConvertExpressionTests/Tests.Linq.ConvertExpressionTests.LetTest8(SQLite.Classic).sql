@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [t2].[ParentID] IS NULL THEN 0
