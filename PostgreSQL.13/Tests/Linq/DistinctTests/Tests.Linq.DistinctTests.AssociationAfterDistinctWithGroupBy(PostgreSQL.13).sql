@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	"a_Parent_1"."ParentID",
@@ -20,7 +20,7 @@ GROUP BY
 ORDER BY
 	"a_Parent_1"."ParentID"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ParentID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 UPDATE
 	"UpdatedEntities"
@@ -11,7 +11,7 @@ FROM
 WHERE
 	"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."RelationId" = "a_Relation".id
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	v."Value1",

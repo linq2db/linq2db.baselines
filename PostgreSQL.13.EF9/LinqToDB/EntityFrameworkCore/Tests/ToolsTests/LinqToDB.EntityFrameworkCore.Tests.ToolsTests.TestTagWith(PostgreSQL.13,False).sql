@@ -13,7 +13,7 @@ LEFT JOIN (
 WHERE @__ef_filter__p_0 OR NOT (e."IsDeleted") OR NOT (e."IsDeleted")
 
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 /* Tagged query */
 SELECT

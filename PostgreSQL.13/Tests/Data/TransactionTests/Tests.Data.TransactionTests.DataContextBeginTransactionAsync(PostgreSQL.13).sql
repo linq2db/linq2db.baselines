@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ParentID",
@@ -7,7 +7,7 @@ FROM
 	"Parent" t1
 
 BeginTransactionAsync
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32

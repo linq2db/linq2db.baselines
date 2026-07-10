@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0102030405'::bytea
 DECLARE @p Integer -- Int32
@@ -11,7 +11,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :p
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @BinaryValue Bytea(5) -- Binary
 SET     @BinaryValue = E'\\x0504030201'::bytea
 DECLARE @p Integer -- Int32
@@ -24,7 +24,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :p
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t."ID",

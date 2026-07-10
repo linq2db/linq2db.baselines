@@ -7,7 +7,7 @@ INNER JOIN (
 ) AS t ON p."OrgId" = t."OrgId" AND p."Code" = t."Code"
 
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	o."Id"

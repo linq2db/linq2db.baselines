@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "MultipleRowsTable"
 (
@@ -10,7 +10,7 @@ VALUES
 (1,NULL,1),
 (2,1.5,-2.6)
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id",

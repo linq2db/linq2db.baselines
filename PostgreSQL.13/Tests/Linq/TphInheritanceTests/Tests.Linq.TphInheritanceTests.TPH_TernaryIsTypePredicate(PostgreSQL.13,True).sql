@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @Code Text(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -23,7 +23,7 @@ VALUES
 	:IsMale
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Code Text(6) -- String
 SET     @Code = 'Child2'
 DECLARE @Id Integer -- Int32
@@ -48,7 +48,7 @@ VALUES
 	:Age
 )
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	e."Code",

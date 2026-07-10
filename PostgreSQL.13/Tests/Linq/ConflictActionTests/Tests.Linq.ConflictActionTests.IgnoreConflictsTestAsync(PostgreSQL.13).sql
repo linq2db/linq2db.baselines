@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "IgnoreConflictsTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1,'original1'),
 (2,'original2')
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 INSERT INTO "IgnoreConflictsTable"
 (
@@ -22,7 +22,7 @@ VALUES
 (3,'new3')
 ON CONFLICT DO NOTHING
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."ID",

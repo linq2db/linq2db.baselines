@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 DECLARE @startId Bigint -- Int64
 SET     @startId = 5
 DECLARE @p Integer -- Int32
@@ -17,7 +17,7 @@ WHERE
 ORDER BY
 	s.id
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @startId Integer -- Int32
 SET     @startId = 5
 DECLARE @endId Integer -- Int32

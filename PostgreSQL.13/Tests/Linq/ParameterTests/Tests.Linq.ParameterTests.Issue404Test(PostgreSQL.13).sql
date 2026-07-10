@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -9,14 +9,14 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 0
 
@@ -31,14 +31,14 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 1
 
@@ -53,14 +53,14 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -71,14 +71,14 @@ FROM
 	"Table404One" m_1
 		INNER JOIN "Table404Two" d ON m_1."Id" = d."FirstTableId"
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 0
 
@@ -93,14 +93,14 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Table404One" t1
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 DECLARE @Usage Integer -- Int32
 SET     @Usage = 1
 
@@ -115,7 +115,7 @@ FROM
 WHERE
 	d."Usage" = :Usage
 
--- PostgreSQL.13 PostgreSQL13
+-- PostgreSQL.13 PostgreSQL12
 
 SELECT
 	t1."Id"
