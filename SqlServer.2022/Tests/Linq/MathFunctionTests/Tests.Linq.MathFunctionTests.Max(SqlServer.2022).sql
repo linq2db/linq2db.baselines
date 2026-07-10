@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[t].[c1]
 FROM

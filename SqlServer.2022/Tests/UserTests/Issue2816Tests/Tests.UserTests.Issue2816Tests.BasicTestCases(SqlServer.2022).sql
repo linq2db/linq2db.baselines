@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -10,7 +9,6 @@ WHERE
                   　' FROM [p].[Text]) = N''
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Text]

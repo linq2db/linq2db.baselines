@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[InId],
 	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
@@ -11,7 +10,6 @@ WHERE
 	[t1].[InId] = 1
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[InId],
 	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),

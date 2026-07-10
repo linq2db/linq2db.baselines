@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	MAX([id].[ChildID])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]
@@ -12,7 +11,6 @@ WHERE
 	[p].[ParentID] = [g_1].[ParentID]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]

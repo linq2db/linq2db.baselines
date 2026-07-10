@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT DISTINCT
 	[a_Reference].[Id],
 	[t1].[ReferenceId]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 UPDATE
 	[u]
 SET

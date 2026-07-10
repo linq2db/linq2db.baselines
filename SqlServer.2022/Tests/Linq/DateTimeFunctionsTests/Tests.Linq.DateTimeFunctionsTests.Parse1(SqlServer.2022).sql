@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	CAST([d].[DateTimeValue] AS Date)
 FROM

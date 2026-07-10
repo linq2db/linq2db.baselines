@@ -7,7 +7,6 @@ WHERE (@ef_filter__p1 = CAST(1 AS bit) OR [p].[ProductID] > 2) AND (@ef_filter__
 
 
 -- SqlServer.2022
-
 SELECT
 	[p].[QuantityPerUnit]
 FROM

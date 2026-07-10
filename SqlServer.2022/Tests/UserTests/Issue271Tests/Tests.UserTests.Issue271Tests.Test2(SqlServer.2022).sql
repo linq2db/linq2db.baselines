@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[e].[CharValue],
 	[e].[VarCharValue],

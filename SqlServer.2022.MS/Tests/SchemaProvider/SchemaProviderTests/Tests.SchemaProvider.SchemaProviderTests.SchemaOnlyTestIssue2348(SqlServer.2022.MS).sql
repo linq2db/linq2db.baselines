@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 select @@version
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -27,7 +24,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -53,11 +49,9 @@ FROM
 			x.name = 'MS_Description' AND x.class = 2
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[AddIssue792Record]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[DuplicateColumnNames]
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -77,15 +71,12 @@ SET     @output = 0
 [TestDataMS].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[Issue1897]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -115,7 +106,6 @@ SET     @inputOutputStr = N''
 [TestDataMS].[dbo].[OutRefTest]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[Patient_SelectAll]
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -159,7 +149,6 @@ SET     @PersonID = 0
 [TestDataMS].[dbo].[Person_Insert_OutputParameter]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[Person_SelectAll]
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -233,7 +222,6 @@ SET     @output2 = 0
 [TestDataMS].[dbo].[QueryProcParameters]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[dbo].[SelectImplicitColumn]
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -249,24 +237,19 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022
-
 [TestDataMS].[TestSchema].[TestProcedure]
 
 RollbackTransaction
 -- SqlServer.2022.MS SqlServer.2022
-
 select @@version
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -286,7 +269,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -344,7 +326,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -356,7 +337,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -530,7 +510,6 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	LTRIM([t].[NVarCharColumn], N'.+')
 FROM
 	[StringTrimTable] [t]
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

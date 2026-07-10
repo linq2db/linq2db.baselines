@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	IIF(11 IN (
 		SELECT

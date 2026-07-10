@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	SUM([g_1].[ParentID])
 FROM

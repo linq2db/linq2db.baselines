@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	CONCAT_WS(N', ', [t].[NullableValue], [t].[NotNullableValue], [t].[VarcharValue], [t].[NVarcharValue]),
 	Coalesce((
@@ -22,7 +21,6 @@ FROM
 	[SampleClass] [t]
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

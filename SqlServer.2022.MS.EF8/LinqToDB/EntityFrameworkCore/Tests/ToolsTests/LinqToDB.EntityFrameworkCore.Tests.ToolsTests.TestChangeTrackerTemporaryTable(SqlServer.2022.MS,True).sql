@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 CREATE TABLE [tempdb]..[#Orders]
 (
 	[IsDeleted]      bit          NOT NULL,
@@ -24,7 +23,6 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 -- SqlServer.2022
-
 INSERT INTO [tempdb]..[#Orders]
 (
 	[IsDeleted],
@@ -94,7 +92,6 @@ WHERE
 
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 
 

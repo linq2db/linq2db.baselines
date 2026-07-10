@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SqlServer.2022
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

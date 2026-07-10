@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -247,7 +245,6 @@ SET
 ;
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

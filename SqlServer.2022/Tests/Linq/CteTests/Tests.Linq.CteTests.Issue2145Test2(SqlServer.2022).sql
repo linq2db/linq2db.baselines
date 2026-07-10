@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 WITH [CTE_1]
 (
 	[ID],

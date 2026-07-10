@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 /* two */
 SELECT
 	[x].[FirstName],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 INSERT INTO [MultipleRowsTable]
 (
 	[Id],
@@ -11,7 +10,6 @@ VALUES
 (2,1.5,-2.6)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[DecimalValue1],

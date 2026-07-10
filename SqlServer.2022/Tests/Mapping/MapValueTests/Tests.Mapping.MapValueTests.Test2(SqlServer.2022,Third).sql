@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT TOP (1)
 	CASE
 		WHEN [t].[EnumValue] = N'F' THEN N'First'

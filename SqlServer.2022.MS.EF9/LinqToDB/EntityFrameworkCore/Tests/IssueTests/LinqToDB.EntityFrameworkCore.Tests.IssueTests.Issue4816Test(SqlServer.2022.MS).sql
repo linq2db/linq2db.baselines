@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[g_1].[Id],
 	STRING_AGG([g_1].[ValueVarChar], ','),

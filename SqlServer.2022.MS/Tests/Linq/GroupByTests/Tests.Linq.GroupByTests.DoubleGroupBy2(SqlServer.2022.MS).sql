@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[g_2].[Key_1],
 	SUM([g_2].[c1])

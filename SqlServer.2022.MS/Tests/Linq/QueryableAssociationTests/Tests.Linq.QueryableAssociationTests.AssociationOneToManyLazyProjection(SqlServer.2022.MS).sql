@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
-
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 -- SqlServer.2022.MS SqlServer.2022
-
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
 AS RETURN
@@ -95,7 +93,6 @@ FROM
 		) [t2]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction

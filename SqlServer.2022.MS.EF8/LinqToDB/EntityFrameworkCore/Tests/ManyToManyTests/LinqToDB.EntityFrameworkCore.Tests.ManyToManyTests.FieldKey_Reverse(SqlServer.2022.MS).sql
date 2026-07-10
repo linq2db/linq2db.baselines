@@ -9,7 +9,6 @@ ORDER BY [r].[Id]
 
 
 -- SqlServer.2022
-
 SELECT
 	[r].[Id]
 FROM

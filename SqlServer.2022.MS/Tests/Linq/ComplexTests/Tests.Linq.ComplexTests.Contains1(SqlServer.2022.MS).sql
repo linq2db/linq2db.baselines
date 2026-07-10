@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[p].[ParentID],
 	[gc3_1].[not_null],
