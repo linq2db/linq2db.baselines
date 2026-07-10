@@ -11,7 +11,6 @@ ORDER BY e.id, s.entity_id, s.item_id
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1.id,
 	d.entity_id,
@@ -26,7 +25,6 @@ FROM
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.name

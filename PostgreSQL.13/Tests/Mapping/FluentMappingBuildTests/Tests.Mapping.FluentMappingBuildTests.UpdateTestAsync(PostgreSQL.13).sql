@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 CREATE TABLE IF NOT EXISTS "FluentTemp_UpdateAsync"
 (
 	"ID"       Int  NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	"FluentTemp_UpdateAsync"."ID" = 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "FluentTemp_UpdateAsync"
 

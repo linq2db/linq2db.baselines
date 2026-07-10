@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	c_1."Key"
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM(c_1."Value") DESC
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Key",

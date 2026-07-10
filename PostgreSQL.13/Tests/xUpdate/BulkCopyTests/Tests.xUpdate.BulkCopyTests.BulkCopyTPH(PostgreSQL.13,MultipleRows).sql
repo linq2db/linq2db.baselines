@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -15,7 +14,6 @@ VALUES
 (3,3,NULL,NULL,'Str3','Y')
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Discriminator",
 	t1."Id",
@@ -29,7 +27,6 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -44,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -59,7 +55,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -74,7 +69,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -89,7 +83,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",
@@ -104,7 +97,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Discriminator",
 	x."Id",

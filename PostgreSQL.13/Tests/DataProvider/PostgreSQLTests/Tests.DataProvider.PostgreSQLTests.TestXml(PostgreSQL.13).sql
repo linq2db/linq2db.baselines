@@ -1,13 +1,10 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT XMLPARSE (DOCUMENT'<xml/>')
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT XMLPARSE (DOCUMENT'<xml/>')
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT XMLPARSE (DOCUMENT'<xml/>')
 
 -- PostgreSQL.13 PostgreSQL12

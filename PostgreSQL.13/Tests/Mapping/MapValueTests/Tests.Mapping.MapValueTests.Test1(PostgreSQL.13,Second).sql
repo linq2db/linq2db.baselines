@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t."EnumValue" = 'F' THEN 'First'

@@ -36,7 +36,6 @@ WHERE
 	"UpdatedEntities".id = t1.id
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	v.id,
 	v."Value1",

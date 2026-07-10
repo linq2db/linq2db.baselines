@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Text",

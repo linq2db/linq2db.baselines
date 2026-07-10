@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."ItemId",
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	i."Id",
 	(

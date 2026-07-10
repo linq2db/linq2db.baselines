@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -13,7 +12,6 @@ FROM
 		) n(item) ON p."LastName" = n.item
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",

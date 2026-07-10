@@ -10,7 +10,6 @@ WHERE
 	"TableWithConverterValue"."Id" = 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."NoConversion",
@@ -34,7 +33,6 @@ WHERE
 	"TableWithConverterValue"."Id" = 2
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."NoConversion",

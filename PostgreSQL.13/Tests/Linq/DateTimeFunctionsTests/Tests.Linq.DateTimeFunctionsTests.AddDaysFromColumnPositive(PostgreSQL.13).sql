@@ -40,7 +40,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	t."ID" = 5000 AND t."DateTimeValue" + t."SmallIntValue" * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0)
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	1
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	1
 FROM

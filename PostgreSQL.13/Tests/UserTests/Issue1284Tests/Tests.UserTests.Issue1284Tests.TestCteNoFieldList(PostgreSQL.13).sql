@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 WITH cte
 (
 	"FirstName",
@@ -29,7 +28,6 @@ FROM
 	cte t1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."FirstName",
 	x."PersonID",

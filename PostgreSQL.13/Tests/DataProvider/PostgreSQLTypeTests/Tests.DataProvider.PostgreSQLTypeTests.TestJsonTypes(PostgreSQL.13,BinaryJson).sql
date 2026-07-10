@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = 'null' AND r."ColumnNullable" = 'null'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -66,7 +64,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -103,7 +100,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -125,7 +121,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -162,7 +157,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -173,7 +167,6 @@ WHERE
 	r."Column" = 'true' AND r."ColumnNullable" = 'false'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -214,7 +207,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -251,7 +243,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -273,7 +264,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -310,7 +300,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -321,7 +310,6 @@ WHERE
 	r."Column" = '12' AND r."ColumnNullable" = '-34'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -362,7 +350,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -399,7 +386,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -421,7 +407,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -458,7 +443,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -469,7 +453,6 @@ WHERE
 	r."Column" = '-12e34' AND r."ColumnNullable" = '34.12'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -510,7 +493,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -547,7 +529,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -569,7 +550,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -606,7 +586,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -617,7 +596,6 @@ WHERE
 	r."Column" = '"тест"' AND r."ColumnNullable" = '""'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -658,7 +636,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -695,7 +672,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -717,7 +693,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -752,7 +727,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -763,7 +737,6 @@ WHERE
 	r."Column" = 'null' AND r."ColumnNullable" IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -802,7 +775,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -837,7 +809,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -857,7 +828,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" IS NULL
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -892,7 +862,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -903,7 +872,6 @@ WHERE
 	r."Column" = '[1, 2, 3]' AND r."ColumnNullable" = '[true, false]'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -944,7 +912,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -981,7 +948,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1003,7 +969,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1040,7 +1005,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -1052,7 +1016,6 @@ WHERE
 	r."ColumnNullable" = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1093,7 +1056,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1130,7 +1092,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1152,7 +1113,6 @@ WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TypeTable`2" t1
 

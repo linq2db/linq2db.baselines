@@ -18,7 +18,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"Name" = :Name
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -49,7 +48,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"Name" = :Name
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

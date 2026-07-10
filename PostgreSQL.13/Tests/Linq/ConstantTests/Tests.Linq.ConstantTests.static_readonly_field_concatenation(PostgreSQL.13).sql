@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -11,7 +10,6 @@ WHERE
 	(Coalesce(e."StringValue", '') || '1') = 'StrValue1'
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

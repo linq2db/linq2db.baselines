@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."ParentID",
 	x."ChildID"
@@ -33,7 +32,6 @@ WHERE
 	END
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."ParentID",
 	x."ChildID"

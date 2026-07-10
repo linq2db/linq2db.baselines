@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	o."Id"
 FROM

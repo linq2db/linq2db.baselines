@@ -8,7 +8,6 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -38,7 +37,6 @@ WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

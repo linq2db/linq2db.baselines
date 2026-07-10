@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestIdTrun"
 
 -- PostgreSQL.13 PostgreSQL12
-
 CREATE TABLE "TestIdTrun"
 (
 	"ID"     SERIAL   NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE "TestIdTrun"
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -48,11 +44,9 @@ ORDER BY
 LIMIT 2 OFFSET :skip 
 
 -- PostgreSQL.13 PostgreSQL12
-
 TRUNCATE TABLE "TestIdTrun" RESTART IDENTITY
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -63,7 +57,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -87,6 +80,5 @@ ORDER BY
 LIMIT 2 OFFSET :skip 
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE "TestIdTrun"
 

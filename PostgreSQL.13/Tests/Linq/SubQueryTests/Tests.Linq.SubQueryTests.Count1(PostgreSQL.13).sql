@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p_1."ParentID",
 	p_1."Sum_1"

@@ -26,7 +26,6 @@ WHERE
 	d."Id" = :id
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id"
 FROM
@@ -47,7 +46,6 @@ WHERE
 	d."Id" = :id
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id"
 FROM

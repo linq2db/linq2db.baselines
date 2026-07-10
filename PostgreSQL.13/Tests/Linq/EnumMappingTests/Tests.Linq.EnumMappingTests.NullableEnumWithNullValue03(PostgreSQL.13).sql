@@ -59,7 +59,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."StringValue"
@@ -71,7 +70,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."IntValue",

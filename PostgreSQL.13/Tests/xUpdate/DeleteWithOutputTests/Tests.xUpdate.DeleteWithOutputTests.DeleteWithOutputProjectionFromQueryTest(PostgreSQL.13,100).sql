@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	s."Id",
 	s."Value",
@@ -10,7 +9,6 @@ WHERE
 	s."Id" > 3
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"TableWithData" s
 WHERE

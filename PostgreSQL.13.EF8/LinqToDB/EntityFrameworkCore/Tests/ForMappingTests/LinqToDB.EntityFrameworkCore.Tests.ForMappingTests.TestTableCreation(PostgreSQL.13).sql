@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 CREATE TEMPORARY TABLE "WithIdentity"
 (
 	"Id"   integer  NOT NULL,
@@ -12,7 +11,6 @@ ON COMMIT PRESERVE ROWS
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 CREATE TEMPORARY TABLE "NoIdentity"
 (
 	"Id"   uuid NOT NULL,
@@ -25,13 +23,11 @@ ON COMMIT PRESERVE ROWS
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "NoIdentity"
 
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "WithIdentity"
 
 

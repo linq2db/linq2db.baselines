@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p2."PersonID",
 	RTRIM(p2."FirstName" || '', '')
