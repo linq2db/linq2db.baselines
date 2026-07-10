@@ -46,7 +46,6 @@ ORDER BY
 	`patient_1`.`PersonID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`PersonID`,
 	`t1`.`Diagnosis`
@@ -54,7 +53,6 @@ FROM
 	`Patient` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

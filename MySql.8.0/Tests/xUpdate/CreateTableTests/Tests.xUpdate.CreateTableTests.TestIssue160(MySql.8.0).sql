@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `aa`
 (
 	`bb` INT           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`bb`,
 	`t1`.`cc`
@@ -34,6 +32,5 @@ FROM
 	`aa` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE `aa`
 

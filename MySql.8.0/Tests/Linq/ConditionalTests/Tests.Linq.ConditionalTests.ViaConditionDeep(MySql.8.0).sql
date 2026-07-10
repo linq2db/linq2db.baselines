@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`Id`,
 	`x`.`StringProp` = '1' OR `x`.`StringProp` IS NULL,
@@ -26,7 +25,6 @@ WHERE
 	END = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`StringProp`

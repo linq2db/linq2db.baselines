@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`nm`.`FirstName`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH(`nm`.`FirstName`) <> 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

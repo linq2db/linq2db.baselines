@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `InsertIssueTest`
 (
 	`Pk`,
@@ -47,7 +46,6 @@ FROM
 	) `t2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`ID`,

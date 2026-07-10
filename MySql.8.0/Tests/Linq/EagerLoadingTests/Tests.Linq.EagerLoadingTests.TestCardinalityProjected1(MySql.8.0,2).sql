@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN `EntityD` `d` ON `m_1`.`Id` = `d`.`FK`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`Id`,
 	`a_ObjectB`.`Id`

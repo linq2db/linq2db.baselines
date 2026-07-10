@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`
@@ -8,7 +7,6 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

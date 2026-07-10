@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`e`.`FirstName`,
 	`a_Person`.`PersonID` IS NOT NULL AND `a_Person`.`MiddleName` IS NOT NULL,

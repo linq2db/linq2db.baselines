@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`a_Parent_1`.`ParentID`,
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	`a_Parent_1`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,

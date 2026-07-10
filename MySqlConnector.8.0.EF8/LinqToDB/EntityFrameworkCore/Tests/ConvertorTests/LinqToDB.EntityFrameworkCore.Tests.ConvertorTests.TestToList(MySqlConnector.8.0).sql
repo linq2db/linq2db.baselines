@@ -30,7 +30,6 @@ VALUES
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT LAST_INSERT_ID()
 
 
@@ -67,7 +66,6 @@ VALUES
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT LAST_INSERT_ID()
 
 
@@ -104,7 +102,6 @@ VALUES
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT LAST_INSERT_ID()
 
 
@@ -149,7 +146,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`s`.`Id`,
 	`s`.`PermanentId`,
@@ -164,7 +160,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`PermanentId`,

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1`
 (
 	`ID`,
@@ -38,7 +37,6 @@ WHERE
 	`r`.`ID` = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`c1`)
 AS
 (

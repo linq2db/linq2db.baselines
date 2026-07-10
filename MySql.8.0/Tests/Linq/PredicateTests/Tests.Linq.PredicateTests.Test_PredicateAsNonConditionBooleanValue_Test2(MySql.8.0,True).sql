@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -25,7 +23,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -40,7 +37,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -51,7 +47,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -66,7 +61,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -77,7 +71,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -92,7 +85,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -103,7 +95,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -118,7 +109,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -129,7 +119,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -144,7 +133,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -155,7 +143,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -174,7 +161,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -185,7 +171,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -204,7 +189,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -215,7 +199,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -233,7 +216,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -244,7 +226,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -262,7 +243,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -273,7 +253,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -291,7 +270,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -302,7 +280,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -320,7 +297,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -331,7 +307,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -349,7 +324,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -360,7 +334,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -375,7 +348,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -386,7 +358,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -404,7 +375,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -415,7 +385,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -433,7 +402,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -444,7 +412,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -462,7 +429,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -473,7 +439,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -491,7 +456,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -502,7 +466,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -520,7 +483,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -531,7 +493,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -546,7 +507,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -557,7 +517,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -575,7 +534,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -586,7 +544,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -604,7 +561,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -615,7 +571,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -633,7 +588,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,
@@ -644,7 +598,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_2`.`Key_1`,
 	COUNT(*)
@@ -662,7 +615,6 @@ GROUP BY
 	`g_2`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,

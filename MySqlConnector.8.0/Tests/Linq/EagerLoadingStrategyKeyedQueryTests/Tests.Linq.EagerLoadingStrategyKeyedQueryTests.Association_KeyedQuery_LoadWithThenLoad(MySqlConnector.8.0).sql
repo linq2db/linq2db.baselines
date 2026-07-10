@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d_1`.`Id`,
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN `Employee` `d_1` ON `m_1`.`Id` = `d_1`.`DepartmentId`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

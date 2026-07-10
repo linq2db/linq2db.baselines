@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT bigintDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -21,7 +20,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bigintDataType IS NULL OR @p IS NOT NULL AND bigintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT bigintDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -43,7 +41,6 @@ SET     @p = 1000000
 SELECT ID FROM `AllTypes` WHERE bigintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT smallintDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -65,7 +62,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND smallintDataType IS NULL OR @p IS NOT NULL AND smallintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT smallintDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -87,7 +83,6 @@ SET     @p = 25555
 SELECT ID FROM `AllTypes` WHERE smallintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT tinyintDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -109,7 +104,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND tinyintDataType IS NULL OR @p IS NOT NULL AND tinyintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT tinyintDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -131,7 +125,6 @@ SET     @p = 111
 SELECT ID FROM `AllTypes` WHERE tinyintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT mediumintDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -153,7 +146,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND mediumintDataType IS NULL OR @p IS NOT NULL AND mediumintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT mediumintDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -175,7 +167,6 @@ SET     @p = 5555
 SELECT ID FROM `AllTypes` WHERE mediumintDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT intDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -197,7 +188,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND intDataType IS NULL OR @p IS NOT NULL AND intDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT intDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -219,7 +209,6 @@ SET     @p = 7777777
 SELECT ID FROM `AllTypes` WHERE intDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT numericDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -241,7 +230,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND numericDataType IS NULL OR @p IS NOT NULL AND numericDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT numericDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -263,7 +251,6 @@ SET     @p = 9999999
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT decimalDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -285,7 +272,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT decimalDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -307,7 +293,6 @@ SET     @p = 8888888
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT doubleDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -329,7 +314,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND doubleDataType IS NULL OR @p IS NOT NULL AND doubleDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT doubleDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -351,7 +335,6 @@ SET     @p = 20.309999999999999
 SELECT ID FROM `AllTypes` WHERE doubleDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT floatDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -373,7 +356,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND floatDataType IS NULL OR @p IS NOT NULL AND floatDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT floatDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -395,7 +377,6 @@ SET     @p = 16
 SELECT ID FROM `AllTypes` WHERE floatDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT dateDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -417,7 +398,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND dateDataType IS NULL OR @p IS NOT NULL AND dateDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT dateDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -439,7 +419,6 @@ SET     @p = '2012-12-12'
 SELECT ID FROM `AllTypes` WHERE dateDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -461,7 +440,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT datetimeDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -483,7 +461,6 @@ SET     @p = '2012-12-12 12:12:12'
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT datetimeDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -505,7 +482,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND datetimeDataType IS NULL OR @p IS NOT NULL AND datetimeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT datetimeDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -527,7 +503,6 @@ SET     @p = '2012-12-12 12:12:12'
 SELECT ID FROM `AllTypes` WHERE datetimeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT timestampDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -549,7 +524,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timestampDataType IS NULL OR @p IS NOT NULL AND timestampDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT timestampDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -571,7 +545,6 @@ SET     @p = '2012-12-12 12:12:12'
 SELECT ID FROM `AllTypes` WHERE timestampDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT timeDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -593,7 +566,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND timeDataType IS NULL OR @p IS NOT NULL AND timeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT timeDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -615,7 +587,6 @@ SET     @p = 12:12:12
 SELECT ID FROM `AllTypes` WHERE timeDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT yearDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -637,7 +608,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND yearDataType IS NULL OR @p IS NOT NULL AND yearDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT yearDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -659,7 +629,6 @@ SET     @p = 1998
 SELECT ID FROM `AllTypes` WHERE yearDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -681,7 +650,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -703,7 +671,6 @@ SET     @p = '1'
 SELECT ID FROM `AllTypes` WHERE charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -725,7 +692,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -747,7 +713,6 @@ SET     @p = '1'
 SELECT ID FROM `AllTypes` WHERE charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -769,7 +734,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT charDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -791,7 +755,6 @@ SET     @p = '1'
 SELECT ID FROM `AllTypes` WHERE charDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varcharDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -813,7 +776,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varcharDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -835,7 +797,6 @@ SET     @p = '234'
 SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varcharDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -857,7 +818,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varcharDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -879,7 +839,6 @@ SET     @p = '234'
 SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT textDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -901,7 +860,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT textDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -923,7 +881,6 @@ SET     @p = '567'
 SELECT ID FROM `AllTypes` WHERE textDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -945,7 +902,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT binaryDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -967,7 +923,6 @@ SET     @p = 0x616263
 SELECT ID FROM `AllTypes` WHERE binaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -989,7 +944,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT binaryDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1011,7 +965,6 @@ SET     @p = 0x616263
 SELECT ID FROM `AllTypes` WHERE binaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1033,7 +986,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1055,7 +1007,6 @@ SET     @p = 0x636465
 SELECT ID FROM `AllTypes` WHERE varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1077,7 +1028,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1099,7 +1049,6 @@ SET     @p = 0x636465
 SELECT ID FROM `AllTypes` WHERE varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1121,7 +1070,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1143,7 +1091,6 @@ SET     @p = 0x636465
 SELECT ID FROM `AllTypes` WHERE varbinaryDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1165,7 +1112,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1187,7 +1133,6 @@ SET     @p = 0x646566
 SELECT ID FROM `AllTypes` WHERE blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1209,7 +1154,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1231,7 +1175,6 @@ SET     @p = 0x646566
 SELECT ID FROM `AllTypes` WHERE blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1253,7 +1196,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT blobDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1275,7 +1217,6 @@ SET     @p = 0x646566
 SELECT ID FROM `AllTypes` WHERE blobDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT bitDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1291,7 +1232,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND bitDataType IS NULL OR @p IS NOT NULL AND bitDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT bitDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1307,7 +1247,6 @@ SET     @p = 5
 SELECT ID FROM `AllTypes` WHERE bitDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT enumDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1323,7 +1262,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT NULL AND enumDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT enumDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1339,7 +1277,6 @@ SET     @p = 'Green'
 SELECT ID FROM `AllTypes` WHERE enumDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT setDataType FROM `AllTypes` WHERE ID = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -1355,7 +1292,6 @@ SET     @p = NULL
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT NULL AND setDataType = @p
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT setDataType FROM `AllTypes` WHERE ID = 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

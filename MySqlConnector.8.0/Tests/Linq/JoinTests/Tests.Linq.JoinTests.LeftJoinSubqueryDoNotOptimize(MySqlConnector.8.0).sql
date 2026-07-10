@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`PersonID`,
 	Coalesce(`m_2`.`MiddleName`, 'default2')
@@ -14,7 +13,6 @@ FROM
 		) `m_2` ON `p`.`PersonID` = `m_2`.`c1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

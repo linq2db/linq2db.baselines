@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Child`
@@ -7,7 +6,6 @@ WHERE
 	`Child`.`ChildID` IN (1001, 1002)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Child`
 (
 	`ParentID`,
@@ -33,7 +30,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM
@@ -42,7 +38,6 @@ WHERE
 	`c_1`.`ParentID` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE   `c_1`
 FROM
 	`Child` `c_1`
@@ -51,7 +46,6 @@ WHERE
 	`a_Parent`.`ParentID` = 1 AND `c_1`.`ChildID` IN (1001, 1002)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM

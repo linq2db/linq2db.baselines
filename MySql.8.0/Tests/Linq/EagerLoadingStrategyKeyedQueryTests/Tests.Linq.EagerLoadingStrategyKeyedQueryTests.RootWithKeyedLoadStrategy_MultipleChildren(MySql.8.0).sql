@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`d`.`Id`,
 	`d`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,
@@ -28,7 +26,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	COUNT(`t`.`NullableIntValue`) OVER (ORDER BY `t`.`Id` ROWS BETWEEN 2 PRECEDING AND 2 FOLLOWING)
 FROM

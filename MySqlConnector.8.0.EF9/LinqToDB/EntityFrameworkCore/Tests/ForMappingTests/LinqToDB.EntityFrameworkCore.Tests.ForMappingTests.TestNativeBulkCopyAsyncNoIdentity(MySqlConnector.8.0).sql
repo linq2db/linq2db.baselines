@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `NoIdentity`
 (
 	`Id`   char(36) NOT NULL,
@@ -15,7 +14,6 @@ INSERT ASYNC BULK `NoIdentity`(Id, Name)
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -25,7 +23,6 @@ FROM
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 

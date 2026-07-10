@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	CONCAT(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))),
 	Coalesce(`t1`.`SubSum`, 0),

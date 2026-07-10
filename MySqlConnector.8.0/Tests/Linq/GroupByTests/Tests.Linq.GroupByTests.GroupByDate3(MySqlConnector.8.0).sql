@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),
@@ -16,7 +15,6 @@ GROUP BY
 	`grp_1`.`c1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	SUM(`grp_1`.`MoneyValue`),
 	Extract(year from `grp_1`.`c1`),

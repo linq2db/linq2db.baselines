@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `temp_table_1`
 (
 	`ID`    INT           NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE `temp_table_1`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `temp_table_1`
 (
 	`ID`,
@@ -19,7 +17,6 @@ VALUES
 (1,'Value')
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `temp_table_2`
 (
 	`Value` VARCHAR(50) NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE `temp_table_2`
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `temp_table_2`
 (
 	`Value`
@@ -48,10 +44,8 @@ FROM
 		) `t1` ON 1=1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `temp_table_2`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE IF EXISTS `temp_table_1`
 

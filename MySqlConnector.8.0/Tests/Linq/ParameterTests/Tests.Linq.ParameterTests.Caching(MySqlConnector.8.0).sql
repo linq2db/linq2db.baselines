@@ -11,7 +11,6 @@ WHERE
 	`x`.`ParentID` = @p
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`
@@ -33,7 +32,6 @@ WHERE
 	`x`.`ParentID` = @p OR `x`.`ParentID` = @p_1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`
@@ -53,7 +51,6 @@ WHERE
 	`x`.`ParentID` = @p
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

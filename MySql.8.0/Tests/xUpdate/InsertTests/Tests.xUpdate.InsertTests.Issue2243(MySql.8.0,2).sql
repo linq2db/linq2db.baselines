@@ -25,7 +25,6 @@ ON DUPLICATE KEY UPDATE
 	`updated_by` = @UpdatedBy
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`id`,
 	`t1`.`name`,
@@ -62,7 +61,6 @@ ON DUPLICATE KEY UPDATE
 	`updated_by` = @UpdatedBy
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`id`,
 	`t1`.`name`,

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	CASE
 		WHEN `t2`.`x` < 0 THEN 9
