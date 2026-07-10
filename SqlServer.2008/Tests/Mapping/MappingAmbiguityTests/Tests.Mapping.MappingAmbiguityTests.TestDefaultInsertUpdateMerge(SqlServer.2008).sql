@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 MERGE INTO [TestTable] [Target]
 USING (
 	SELECT

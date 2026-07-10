@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 /* two */
 SELECT
 	[x].[FirstName],

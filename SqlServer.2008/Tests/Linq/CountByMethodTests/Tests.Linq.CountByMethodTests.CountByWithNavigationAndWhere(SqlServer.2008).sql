@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[p].[ParentID],
 	[c_2].[Value_1]
@@ -19,7 +18,6 @@ WHERE
 	[c_2].[Value_1] > 0
 
 -- SqlServer.2008
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

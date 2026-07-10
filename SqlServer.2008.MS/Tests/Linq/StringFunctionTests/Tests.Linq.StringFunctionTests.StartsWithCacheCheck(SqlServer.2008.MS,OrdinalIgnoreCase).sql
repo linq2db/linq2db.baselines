@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (2)
 	[p].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM
@@ -18,7 +16,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM

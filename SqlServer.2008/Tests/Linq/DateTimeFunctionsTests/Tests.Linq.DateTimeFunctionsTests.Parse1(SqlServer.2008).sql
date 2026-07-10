@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	CAST([d].[DateTimeValue] AS Date)
 FROM

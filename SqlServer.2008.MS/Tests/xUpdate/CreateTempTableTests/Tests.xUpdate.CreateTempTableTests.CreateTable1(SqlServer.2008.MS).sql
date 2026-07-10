@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -14,7 +12,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [TempTable]
 (
 	[ID]
@@ -25,14 +22,12 @@ FROM
 	[Parent] [p]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ID]
 FROM
 	[TempTable] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t].[ID]
 FROM
@@ -40,7 +35,6 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 

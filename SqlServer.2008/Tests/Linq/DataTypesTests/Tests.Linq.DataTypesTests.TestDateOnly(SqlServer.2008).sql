@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2008
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = CAST('2020-02-29' AS DATE) AND [r].[ColumnNullable] = CAST('2020-01-01' AS DATE)
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[DateOnlyTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[DateOnlyTable] [t1]
 
 -- SqlServer.2008
-
 INSERT INTO [DateOnlyTable]
 (
 	[Id],
@@ -102,7 +97,6 @@ VALUES
 (2,CAST('2020-02-29' AS DATE),CAST('2020-01-01' AS DATE))
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -113,7 +107,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[DateOnlyTable] [t1]
@@ -121,7 +114,6 @@ FROM
 INSERT BULK [DateOnlyTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

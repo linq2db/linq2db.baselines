@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'x',1,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -27,7 +26,6 @@ SET
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	CASE
 		WHEN EXISTS(

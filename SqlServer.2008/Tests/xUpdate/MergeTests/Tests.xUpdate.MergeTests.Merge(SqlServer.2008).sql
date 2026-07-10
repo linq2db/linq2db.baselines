@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT

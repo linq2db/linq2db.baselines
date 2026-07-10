@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[item_1].[FirstName],
 	[item_1].[PersonID],

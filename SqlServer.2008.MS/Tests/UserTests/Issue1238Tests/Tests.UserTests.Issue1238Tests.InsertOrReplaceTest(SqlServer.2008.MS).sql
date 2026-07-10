@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
@@ -37,7 +36,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM
@@ -76,7 +74,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM

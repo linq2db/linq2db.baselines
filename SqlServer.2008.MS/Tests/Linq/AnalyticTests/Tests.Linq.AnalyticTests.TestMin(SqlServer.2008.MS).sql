@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	MIN([c_1].[ChildID]),
 	MIN([c_1].[ChildID]),
@@ -12,21 +11,18 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	MIN([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	MIN(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	MIN(DISTINCT [t1].[ParentID])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
@@ -36,7 +35,6 @@ VALUES
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

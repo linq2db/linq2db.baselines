@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[x].[Id]
 FROM
@@ -31,7 +30,6 @@ ORDER BY
 	[x].[Id]
 
 -- SqlServer.2008
-
 SELECT
 	[x].[Id]
 FROM

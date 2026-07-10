@@ -1,20 +1,16 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_item_to_media_item_categories]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_to_media_item_categories]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_item_user_share]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_user_share]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_items]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_items]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 CREATE TABLE [issue_4254_media_items]
 (
 	[id] UniqueIdentifier NOT NULL,
@@ -23,7 +19,6 @@ CREATE TABLE [issue_4254_media_items]
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 CREATE TABLE [issue_4254_media_item_user_share]
 (
 	[id]            UniqueIdentifier NOT NULL,
@@ -36,7 +31,6 @@ CREATE TABLE [issue_4254_media_item_user_share]
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 (
 	[id]            UniqueIdentifier NOT NULL,
@@ -195,17 +189,14 @@ WHERE
 	)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_item_to_media_item_categories]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_to_media_item_categories]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_item_user_share]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_item_user_share]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[issue_4254_media_items]', N'U') IS NOT NULL)
 	DROP TABLE [issue_4254_media_items]
 

@@ -1,17 +1,14 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(1,CAST(NULL AS Int),CAST(NULL AS BigInt),CAST(NULL AS Bit),CAST(NULL AS NVarChar(4000)),CAST(NULL AS NVarChar(4000)),CAST(NULL AS NChar(1)),CAST(NULL AS NChar(1)),CAST(NULL AS Real),CAST(NULL AS Float),CAST(NULL AS DateTime2),CAST(NULL AS DateTimeOffset),CAST(NULL AS VarBinary(Max)),CAST(NULL AS UniqueIdentifier),CAST(NULL AS Decimal(18, 10)),CAST(NULL AS DateTime2),CAST(NULL AS Time),CAST(NULL AS NVarChar(5)),CAST(NULL AS Int)),
@@ -93,7 +90,6 @@ VALUES
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [TestMerge2] [Target]
 USING (VALUES
 	(3,-123,CAST(987 AS BigInt),CAST(NULL AS Bit),N'<>?/.,;''zZ":',N'`~!@#$%^&*()_+{}|[]\',N'',N'',CAST(-1.17549996E-38 AS Real),CAST(2.2250738585072014E-308 AS Float),CAST('2098-10-12T21:14:15.9070000' AS DATETIME2),CAST('2001-11-22T13:14:14.1233457-01:39' AS DATETIMEOFFSET),0xFFC864321400,'ffffffff-ffff-ffff-ffff-ffffffffffff',CAST(-0.123 AS Decimal(3, 3)),CAST('2111-11-23T00:00:00.0000000' AS DATETIME2),CAST('23:59:59.9999999' AS TIME),CAST(NULL AS NVarChar(5)),-2147483647),
@@ -176,7 +172,6 @@ VALUES
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -203,7 +198,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

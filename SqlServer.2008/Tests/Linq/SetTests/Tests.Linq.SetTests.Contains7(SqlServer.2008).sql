@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	CASE
 		WHEN 11 IN (

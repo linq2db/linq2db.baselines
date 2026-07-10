@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_InsertOrUpdate]
 	(
@@ -32,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [FluentTemp_InsertOrUpdate] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
 (
@@ -56,7 +53,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2008.MS SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 

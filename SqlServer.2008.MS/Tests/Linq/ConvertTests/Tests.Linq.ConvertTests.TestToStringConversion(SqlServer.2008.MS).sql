@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
 	CAST([x].[Prop_byte] AS NVarChar(3)),
@@ -35,7 +34,6 @@ FROM
 	[ToStringConvertibleTypes] [x]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	CASE
 		WHEN [x].[Prop_bool] = 1 THEN N'1'

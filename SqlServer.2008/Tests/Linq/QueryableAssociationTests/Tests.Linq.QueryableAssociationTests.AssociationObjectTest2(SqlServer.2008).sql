@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2008
 
-
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 -- SqlServer.2008
-
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
 AS RETURN
@@ -14,7 +12,6 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 -- SqlServer.2008
-
 SELECT
 	[x].[Id],
 	[x].[OwnerStr]
@@ -29,7 +26,6 @@ WHERE
 	)
 
 -- SqlServer.2008
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -44,7 +40,6 @@ FROM
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[OwnerStr]
@@ -52,7 +47,6 @@ FROM
 	[SomeTable] [t1] WITH (NOLOCK)
 
 -- SqlServer.2008
-
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 DELETE [a_GrandChildren]
 FROM
 	[Parent] [x]

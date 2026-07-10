@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 /* query 1
 query 2 */
 SELECT
