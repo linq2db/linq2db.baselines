@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ChildID,
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN Child d ON toInt64(m_1.ParentID) = d.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID
 FROM

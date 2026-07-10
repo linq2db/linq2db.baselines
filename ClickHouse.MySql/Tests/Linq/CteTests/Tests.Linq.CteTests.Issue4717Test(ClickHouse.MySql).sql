@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717Address
 (
 	Id,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717Warehouse
 (
 	Id,
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717UnitOfMeasure
 (
 	Id,
@@ -48,7 +45,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717Product
 (
 	Id,
@@ -65,7 +61,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717Product
 (
 	Id,
@@ -82,7 +77,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717ProductIncludedProductMapping
 (
 	ProductId,
@@ -97,7 +91,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4717WarehouseProductMapping
 (
 	WarehouseId,

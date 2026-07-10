@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -38,7 +37,6 @@ FROM
 		INNER JOIN cte d ON m_1.Key_1 = d.Field2
 
 -- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT

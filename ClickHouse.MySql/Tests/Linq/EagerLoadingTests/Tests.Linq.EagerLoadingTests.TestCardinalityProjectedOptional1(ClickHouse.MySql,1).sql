@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	e.Id,
 	a_ObjectBOptional.Id,

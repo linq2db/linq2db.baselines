@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p1.ParentID,
 	toInt32(NULL) as Value1

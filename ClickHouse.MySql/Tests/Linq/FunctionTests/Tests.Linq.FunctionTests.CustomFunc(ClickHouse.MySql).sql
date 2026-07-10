@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	concat(p.LastName, ', ', p.FirstName)
 FROM

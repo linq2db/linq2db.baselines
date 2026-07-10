@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -24,7 +22,6 @@ WHERE
 	ID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -34,7 +31,6 @@ WHERE
 	ID = 1001
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,

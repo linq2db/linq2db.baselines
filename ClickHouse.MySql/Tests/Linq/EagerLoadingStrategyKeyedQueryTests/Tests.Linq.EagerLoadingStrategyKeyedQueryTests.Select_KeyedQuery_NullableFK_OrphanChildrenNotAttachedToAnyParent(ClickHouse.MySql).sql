@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -13,7 +12,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.Id,
 	p.Name
@@ -23,7 +21,6 @@ ORDER BY
 	p.Id
 
 -- ClickHouse.MySql ClickHouse
-
 WITH CTE_1 AS MATERIALIZED
 (
 	SELECT

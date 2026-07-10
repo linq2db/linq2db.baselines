@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	ess.ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	ess.ID
 FROM

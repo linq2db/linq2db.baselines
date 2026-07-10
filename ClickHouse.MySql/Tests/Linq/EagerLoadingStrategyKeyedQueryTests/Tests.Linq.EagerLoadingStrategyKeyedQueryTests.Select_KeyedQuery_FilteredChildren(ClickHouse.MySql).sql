@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	c_1.Id
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	c_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	k_1.item,
 	d.Id,

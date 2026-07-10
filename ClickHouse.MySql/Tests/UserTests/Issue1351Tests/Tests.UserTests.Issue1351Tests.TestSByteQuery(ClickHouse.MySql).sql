@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.TestField,
@@ -10,7 +9,6 @@ WHERE
 	t1.TestField = toInt8(0)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID,
 	t1.TestField,

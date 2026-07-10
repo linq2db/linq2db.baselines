@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -28,7 +27,6 @@ WHERE
 	r.ID = 2
 
 -- ClickHouse.MySql ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT

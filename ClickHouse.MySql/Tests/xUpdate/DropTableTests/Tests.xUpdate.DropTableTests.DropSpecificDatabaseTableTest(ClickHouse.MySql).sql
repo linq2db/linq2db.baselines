@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS DropTableTest
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -11,7 +9,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE DropTableTest
 (
 	ID Int32,
@@ -22,7 +19,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO testdb3.DropTableTest
 (
 	ID
@@ -33,18 +29,15 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID
 FROM
 	testdb3.DropTableTest t1
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE testdb3.DropTableTest
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ID
 FROM

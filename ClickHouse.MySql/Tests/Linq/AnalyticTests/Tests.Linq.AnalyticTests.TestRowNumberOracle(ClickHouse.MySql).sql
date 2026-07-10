@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	toInt64(ROW_NUMBER() OVER (PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1)),
 	toInt64(ROW_NUMBER() OVER (ORDER BY p.Value1, c_1.ChildID DESC))

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.Str,
 	lengthUTF8(t.Str),
@@ -8,7 +7,6 @@ FROM
 	TestLengthModel t
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	1 = 0
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.FirstName,
 	r.PersonID,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	concat(Coalesce(r.FirstName, ''), ' ', Coalesce(r.LastName, '')) as Text
@@ -30,7 +28,6 @@ FROM
 	Issue3323Table r_1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id + 1 as Id,
 	r.Text

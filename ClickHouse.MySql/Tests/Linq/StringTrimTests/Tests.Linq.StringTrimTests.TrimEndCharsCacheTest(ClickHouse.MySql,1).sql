@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM t.VarCharColumn)
 FROM

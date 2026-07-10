@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 CREATE TABLE temp_table_1
 (
 	ID    Int32,
@@ -11,7 +10,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table_1
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 (1,'Value')
 
 -- ClickHouse.MySql ClickHouse
-
 CREATE TABLE temp_table_2
 (
 	Value String,
@@ -32,7 +29,6 @@ ENGINE = MergeTree()
 ORDER BY Value
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO temp_table_2
 (
 	Value
@@ -51,10 +47,8 @@ FROM
 		) t1 ON gr.ID = t1.ID AND t1.rn = 1
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS temp_table_1
 

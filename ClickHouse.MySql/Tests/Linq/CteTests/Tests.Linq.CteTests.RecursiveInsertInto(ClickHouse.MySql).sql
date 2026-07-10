@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO HierarchyData
 (
 	Id,
@@ -44,7 +43,6 @@ FROM
 	hierarchyDown t4
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Level

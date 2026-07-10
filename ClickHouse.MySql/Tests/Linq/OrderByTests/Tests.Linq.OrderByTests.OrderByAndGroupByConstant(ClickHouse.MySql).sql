@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*),
 	1 + minOrNull(g_1.ChildID),
@@ -9,7 +8,6 @@ FROM
 LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

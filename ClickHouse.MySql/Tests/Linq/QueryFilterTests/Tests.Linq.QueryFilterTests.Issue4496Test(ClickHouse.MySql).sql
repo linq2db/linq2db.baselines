@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	x.ParentID,
 	x.ChildID
@@ -10,7 +9,6 @@ WHERE
 	x.ChildID > 30
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	x.ParentID,
 	x.ChildID

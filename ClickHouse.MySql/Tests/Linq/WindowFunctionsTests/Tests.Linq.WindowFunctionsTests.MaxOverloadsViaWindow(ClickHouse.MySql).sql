@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	MAX(t.IntValue) OVER (PARTITION BY t.CategoryId ORDER BY t.Id),
 	MAX(t.NullableIntValue) OVER (PARTITION BY t.CategoryId ORDER BY t.Id),
