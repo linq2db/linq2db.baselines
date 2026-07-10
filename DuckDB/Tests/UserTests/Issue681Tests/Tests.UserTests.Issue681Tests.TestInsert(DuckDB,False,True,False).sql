@@ -8,7 +8,7 @@ SET     $ID = 5
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.Issue681Table
+INSERT INTO memory.Issue681Table
 (
 	ID,
 	"Value"

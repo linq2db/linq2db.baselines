@@ -6,7 +6,7 @@ SELECT
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.Issue681Table4
+INSERT INTO memory.Issue681Table4
 (
 	"Value"
 )
