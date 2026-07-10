@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	ROW_NUMBER() OVER (ORDER BY item_1."Id") - 1,
 	item_1."Id",
@@ -12,7 +11,6 @@ ORDER BY
 	item_1."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."TestId"

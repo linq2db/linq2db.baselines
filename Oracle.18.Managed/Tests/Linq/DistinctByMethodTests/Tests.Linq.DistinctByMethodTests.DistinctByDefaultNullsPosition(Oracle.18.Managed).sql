@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM
@@ -20,7 +19,6 @@ ORDER BY
 	x."Id"
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM

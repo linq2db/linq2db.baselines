@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 /* My bad Test */
 SELECT
 	x."FirstName",

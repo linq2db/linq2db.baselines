@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	BITAND(k_1."StatusBitmask", 128),
 	BITAND(g_1."StatusBitmask", 128)

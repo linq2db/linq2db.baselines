@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(t."NullableIntValue") OVER (ORDER BY t."Id" ROWS BETWEEN 2 PRECEDING AND 2 FOLLOWING)
 FROM

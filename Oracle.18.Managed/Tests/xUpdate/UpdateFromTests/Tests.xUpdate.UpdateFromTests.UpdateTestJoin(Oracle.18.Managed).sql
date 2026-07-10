@@ -34,7 +34,6 @@ WHERE
 	)
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	v."id",
 	v."Value1",

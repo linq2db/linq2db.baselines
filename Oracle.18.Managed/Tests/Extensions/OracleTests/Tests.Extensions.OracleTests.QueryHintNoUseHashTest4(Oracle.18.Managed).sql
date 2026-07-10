@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NO_USE_HASH(c_1 p) */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."TypeDiscriminator",
 	t1."InheritanceParentId",
@@ -8,7 +7,6 @@ FROM
 	"InheritanceParent" t1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."TypeDiscriminator",
 	t1."InheritanceParentId",

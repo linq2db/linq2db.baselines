@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."Value" as "BaseValue_1"
@@ -10,7 +9,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."Value" as "BaseValue_1"

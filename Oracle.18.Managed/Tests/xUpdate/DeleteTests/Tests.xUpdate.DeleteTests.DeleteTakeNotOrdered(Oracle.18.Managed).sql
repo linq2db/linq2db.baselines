@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Parent" c_1
 WHERE
@@ -185,7 +184,6 @@ WHERE
 	p."ParentID" >= 1000 AND ROWNUM <= :take
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Parent" c_1
 WHERE

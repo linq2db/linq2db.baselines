@@ -14,7 +14,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."Data" as "Data_1"
