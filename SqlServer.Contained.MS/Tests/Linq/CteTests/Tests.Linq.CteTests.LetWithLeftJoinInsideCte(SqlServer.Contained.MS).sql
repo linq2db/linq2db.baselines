@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1] ([S1])
 AS
 (

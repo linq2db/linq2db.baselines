@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	CONCAT_WS(N', ', IIF([x].[NullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NullableValue], NULL), IIF([x].[NotNullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NotNullableValue], NULL), IIF([x].[VarcharValue] LIKE '%A%' ESCAPE N'~', [x].[VarcharValue], NULL), IIF([x].[NVarcharValue] LIKE N'%A%' ESCAPE N'~', [x].[NVarcharValue], NULL))
 FROM
@@ -8,7 +7,6 @@ WHERE
 	LEN(CONCAT_WS(N', ', IIF([x].[NullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NullableValue], NULL), IIF([x].[NotNullableValue] LIKE N'%A%' ESCAPE N'~', [x].[NotNullableValue], NULL), IIF([x].[VarcharValue] LIKE '%A%' ESCAPE N'~', [x].[VarcharValue], NULL), IIF([x].[NVarcharValue] LIKE N'%A%' ESCAPE N'~', [x].[NVarcharValue], NULL)) + N'.') <> 1
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

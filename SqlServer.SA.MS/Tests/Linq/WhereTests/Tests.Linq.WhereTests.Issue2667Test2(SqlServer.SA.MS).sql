@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[a_Ref].[Id],
 	[a_Ref].[Bit01]

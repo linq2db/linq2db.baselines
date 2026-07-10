@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	STDEV([c_1].[ChildID]),
 	STDEV([c_1].[ChildID]),
@@ -12,21 +11,18 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	STDEV([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	STDEV(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	STDEV(DISTINCT [t1].[ParentID])
 FROM

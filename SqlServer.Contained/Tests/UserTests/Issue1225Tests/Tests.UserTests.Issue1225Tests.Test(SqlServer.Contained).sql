@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	N'Id',
 	[it].[Id],

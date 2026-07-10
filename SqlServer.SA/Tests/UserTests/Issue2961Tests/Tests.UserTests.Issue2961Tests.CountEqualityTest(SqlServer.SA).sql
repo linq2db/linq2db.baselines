@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[c_1].[Id],
 	[c_1].[LocationId],

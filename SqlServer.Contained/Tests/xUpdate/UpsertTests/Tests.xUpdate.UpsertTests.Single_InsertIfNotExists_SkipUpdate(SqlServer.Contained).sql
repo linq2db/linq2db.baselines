@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -100,14 +99,12 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

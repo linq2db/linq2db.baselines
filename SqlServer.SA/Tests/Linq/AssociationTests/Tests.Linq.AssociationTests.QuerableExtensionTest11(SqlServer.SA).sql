@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[a_QueryableChildren].[ParentID],
 	[a_QueryableChildren].[ChildID]

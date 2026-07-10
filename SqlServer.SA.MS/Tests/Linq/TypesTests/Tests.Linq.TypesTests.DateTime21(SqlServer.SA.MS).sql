@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -28,7 +27,6 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t].[ID],
 	[t].[MoneyValue],

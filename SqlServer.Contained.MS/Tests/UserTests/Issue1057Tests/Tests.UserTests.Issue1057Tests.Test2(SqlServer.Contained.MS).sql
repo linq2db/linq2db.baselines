@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = N'bda.Requests'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

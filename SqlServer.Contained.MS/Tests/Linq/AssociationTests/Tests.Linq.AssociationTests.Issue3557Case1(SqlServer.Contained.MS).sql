@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[i].[Id],
 	IIF([a_SubData].[Id] IS NULL, NULL, (

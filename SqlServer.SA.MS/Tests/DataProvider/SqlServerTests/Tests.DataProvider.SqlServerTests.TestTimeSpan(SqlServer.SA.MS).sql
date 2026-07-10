@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.SA.MS SqlServer.2019

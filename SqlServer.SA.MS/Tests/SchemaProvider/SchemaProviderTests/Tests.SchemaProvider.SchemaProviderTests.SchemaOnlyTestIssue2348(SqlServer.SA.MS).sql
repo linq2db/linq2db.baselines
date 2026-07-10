@@ -1,13 +1,10 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -27,7 +24,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -53,11 +49,9 @@ FROM
 			x.name = 'MS_Description' AND x.class = 2
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[AddIssue792Record]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[DuplicateColumnNames]
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -77,15 +71,12 @@ SET     @output = 0
 [TestDataMSSA].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[Issue1897]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1921]()')
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -115,7 +106,6 @@ SET     @inputOutputStr = N''
 [TestDataMSSA].[dbo].[OutRefTest]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[Patient_SelectAll]
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -159,7 +149,6 @@ SET     @PersonID = 0
 [TestDataMSSA].[dbo].[Person_Insert_OutputParameter]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[Person_SelectAll]
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -233,7 +222,6 @@ SET     @output2 = 0
 [TestDataMSSA].[dbo].[QueryProcParameters]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[dbo].[SelectImplicitColumn]
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -249,24 +237,19 @@ SET     @ReturnFullRow = 0
 [TestDataMSSA].[dbo].[VariableResults]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.SA.MS SqlServer.2019
-
 [TestDataMSSA].[TestSchema].[TestProcedure]
 
 RollbackTransaction
 -- SqlServer.SA.MS SqlServer.2019
-
 select @@version
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -286,7 +269,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -344,7 +326,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -356,7 +337,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1921]()')
 
 -- SqlServer.SA.MS SqlServer.2019
@@ -530,7 +510,6 @@ SET     @ReturnFullRow = 0
 [TestDataMSSA].[dbo].[VariableResults]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 EXEC('SELECT * FROM [TestDataMSSA].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.SA.MS SqlServer.2019

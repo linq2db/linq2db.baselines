@@ -8,7 +8,6 @@ ORDER BY [s].[Id]
 
 
 -- SqlServer.2019
-
 SELECT
 	(
 		SELECT

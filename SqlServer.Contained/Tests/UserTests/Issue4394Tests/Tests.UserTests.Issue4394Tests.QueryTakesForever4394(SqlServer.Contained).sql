@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],
@@ -174,7 +173,6 @@ FROM
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],

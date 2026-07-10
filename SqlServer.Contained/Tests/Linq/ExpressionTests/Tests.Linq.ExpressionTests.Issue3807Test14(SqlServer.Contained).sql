@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[ArrayString],
 	[d].[value]
@@ -22,7 +21,6 @@ FROM
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[Id],
 	[r].[ArrayString]

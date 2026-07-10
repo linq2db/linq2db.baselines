@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[g_1].[Id],
 	STRING_AGG([g_1].[Value1], N', ')

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 /* My Test */
 SELECT
 	[t1].[Id],

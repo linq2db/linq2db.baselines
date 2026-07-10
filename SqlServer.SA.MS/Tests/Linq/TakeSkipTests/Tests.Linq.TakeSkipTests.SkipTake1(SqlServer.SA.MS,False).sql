@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -10,7 +9,6 @@ ORDER BY
 OFFSET 2 ROWS FETCH NEXT 5 ROWS ONLY 
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

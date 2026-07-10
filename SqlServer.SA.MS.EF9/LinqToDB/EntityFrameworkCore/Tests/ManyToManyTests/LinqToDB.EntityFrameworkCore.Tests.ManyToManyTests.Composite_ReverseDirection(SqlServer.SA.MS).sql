@@ -9,7 +9,6 @@ ORDER BY [m].[Id]
 
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IN (NULL, NULL)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

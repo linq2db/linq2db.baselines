@@ -10,7 +10,6 @@ WHERE
 	Coalesce([x].[Value1], @Value1) > 10
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[p].[Value1]
 FROM

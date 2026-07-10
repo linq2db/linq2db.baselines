@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*),
 	MAX([g_1].[ChildID])

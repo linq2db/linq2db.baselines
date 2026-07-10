@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -26,7 +25,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]

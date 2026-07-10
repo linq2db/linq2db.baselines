@@ -51,7 +51,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -118,7 +117,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -183,7 +181,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

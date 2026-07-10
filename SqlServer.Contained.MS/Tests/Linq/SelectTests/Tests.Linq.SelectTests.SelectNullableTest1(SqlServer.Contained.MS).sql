@@ -48,7 +48,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -66,7 +65,6 @@ WHERE
 	[t1].[ID] = 1000
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]

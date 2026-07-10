@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 /* My Test */
 MERGE INTO [TestMerge1] [Target]
 USING (

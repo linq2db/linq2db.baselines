@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 MERGE INTO [UnusedSourceTable] [Target]
 USING (
 	SELECT 1 AS [Unused]
@@ -25,7 +24,6 @@ VALUES
 ;
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

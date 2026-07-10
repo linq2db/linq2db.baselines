@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT TOP (1)
 	[x].[Id],
 	[t1].[LanguageId],

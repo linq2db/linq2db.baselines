@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
 	[ID]   Int          NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
 	SELECT
@@ -49,6 +47,5 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]
 

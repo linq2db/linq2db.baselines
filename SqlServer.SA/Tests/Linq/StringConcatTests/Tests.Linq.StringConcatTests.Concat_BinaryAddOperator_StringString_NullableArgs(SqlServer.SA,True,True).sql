@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	Coalesce([t].[Value1], N'') + Coalesce([t].[Value2], N'')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

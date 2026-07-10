@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
@@ -187,7 +186,6 @@ WHERE
 	[p].[ParentID] >= 1000
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

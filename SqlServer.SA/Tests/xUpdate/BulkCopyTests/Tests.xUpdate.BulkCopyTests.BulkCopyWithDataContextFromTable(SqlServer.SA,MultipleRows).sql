@@ -3,7 +3,6 @@
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 -- SqlServer.SA SqlServer.2019
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

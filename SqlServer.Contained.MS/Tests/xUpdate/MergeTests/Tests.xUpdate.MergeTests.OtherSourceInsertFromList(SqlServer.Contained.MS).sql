@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(3,CAST(NULL AS Int),CAST(NULL AS Int),3,CAST(NULL AS Int),113),
@@ -250,7 +247,6 @@ VALUES
 ;
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

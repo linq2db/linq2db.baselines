@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[e].[Code],
 	[e].[Id],

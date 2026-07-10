@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_2].[ParentID],
 	[m_2].[ChildID],
@@ -21,7 +20,6 @@ ORDER BY
 	[m_2].[ChildID] DESC
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_2].[ParentID],
 	[m_2].[ChildID],

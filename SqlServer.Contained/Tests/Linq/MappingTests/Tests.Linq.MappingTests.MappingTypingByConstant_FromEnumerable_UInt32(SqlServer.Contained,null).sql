@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]
@@ -10,7 +9,6 @@ FROM
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[arg].[Id],
 	[arg].[Value]

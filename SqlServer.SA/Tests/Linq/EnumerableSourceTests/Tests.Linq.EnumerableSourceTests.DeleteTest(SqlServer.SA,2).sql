@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DELETE [t]
 FROM
 	[TableToInsert] [t]
