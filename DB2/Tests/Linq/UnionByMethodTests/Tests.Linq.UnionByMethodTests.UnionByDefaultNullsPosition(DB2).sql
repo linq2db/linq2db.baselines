@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id"
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	"x"."Key_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id"
 FROM

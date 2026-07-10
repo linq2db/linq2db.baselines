@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TableToInsert" "t1"
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	SUM("grp_1"."MoneyValue"),
 	Extract(year from "grp_1"."c1"),
@@ -16,7 +15,6 @@ GROUP BY
 	"grp_1"."c1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	SUM("grp_1"."MoneyValue"),
 	Extract(year from "grp_1"."c1"),

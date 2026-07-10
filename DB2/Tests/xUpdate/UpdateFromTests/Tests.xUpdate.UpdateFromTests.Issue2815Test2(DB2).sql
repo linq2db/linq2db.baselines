@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Issue2815Table1"
 SET
@@ -45,7 +44,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1".SRC_BIC,

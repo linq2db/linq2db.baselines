@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue4717Address"
 (
 	"Id",
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue4717Warehouse"
 (
 	"Id",
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue4717UnitOfMeasure"
 (
 	"Id",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."PersonID" + "y"."item"
 FROM
@@ -9,7 +8,6 @@ FROM
 	) "y"("item")
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

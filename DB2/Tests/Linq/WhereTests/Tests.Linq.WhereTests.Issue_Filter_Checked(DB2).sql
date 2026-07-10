@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t4"."Count_1",
 	"t3"."Count_1"

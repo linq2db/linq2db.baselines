@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"s".ID,
 	"s"."FirstName"
@@ -18,7 +17,6 @@ WHERE
 	"s"."FirstName" <> ''
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -12,7 +11,6 @@ WHERE
 	"r"."Value5" = 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -23,7 +21,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -37,7 +34,6 @@ WHERE
 	"r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -48,7 +44,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -62,7 +57,6 @@ WHERE
 	"r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -73,7 +67,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -87,7 +80,6 @@ WHERE
 	"r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -98,7 +90,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -111,7 +102,6 @@ WHERE
 	"r"."Value5" < 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -122,7 +112,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -135,7 +124,6 @@ WHERE
 	"r"."Value5" <= 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -146,7 +134,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -160,7 +147,6 @@ WHERE
 	"r"."Value5" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -171,7 +157,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -184,7 +169,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" AND ("r"."Value5" <> 1 OR "r"."Value5" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -195,7 +179,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -208,7 +191,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" AND "r"."Value5" > 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -219,7 +201,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -233,7 +214,6 @@ WHERE
 	"r"."Value5" >= 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -244,7 +224,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -257,7 +236,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" AND "r"."Value5" < 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -268,7 +246,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -282,7 +259,6 @@ WHERE
 	"r"."Value5" <= 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -293,7 +269,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -306,7 +281,6 @@ WHERE
 	"r"."Value5" = 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -317,7 +291,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -331,7 +304,6 @@ WHERE
 	"r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -342,7 +314,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -355,7 +326,6 @@ WHERE
 	"r"."Value5" > 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -366,7 +336,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -379,7 +348,6 @@ WHERE
 	"r"."Value5" >= 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -390,7 +358,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -403,7 +370,6 @@ WHERE
 	"r"."Value5" < 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -414,7 +380,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -427,7 +392,6 @@ WHERE
 	"r"."Value5" <= 0 AND "r"."Value1" > "r"."Value4"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -438,7 +402,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -452,7 +415,6 @@ WHERE
 	"r"."Value4" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -463,7 +425,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -476,7 +437,6 @@ WHERE
 	NOT ("r"."Value5" IS NULL OR "r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -487,7 +447,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -500,7 +459,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -511,7 +469,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -524,7 +481,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -535,7 +491,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -548,7 +503,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -559,7 +513,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -572,7 +525,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -583,7 +535,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -599,7 +550,6 @@ WHERE
 	END IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -610,7 +560,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -626,7 +575,6 @@ WHERE
 	END IS NOT NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -637,7 +585,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -650,7 +597,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -661,7 +607,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -674,7 +619,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -685,7 +629,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -698,7 +641,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -709,7 +651,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -722,7 +663,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -733,7 +673,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -746,7 +685,6 @@ WHERE
 	"r"."Value5" = 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -757,7 +695,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -770,7 +707,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR ("r"."Value5" <> 0 OR "r"."Value5" IS NULL) AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -781,7 +717,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -794,7 +729,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" > 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -805,7 +739,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -818,7 +751,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" >= 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -829,7 +761,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -842,7 +773,6 @@ WHERE
 	"r"."Value5" < 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -853,7 +783,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -866,7 +795,6 @@ WHERE
 	"r"."Value5" <= 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -877,7 +805,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -890,7 +817,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -901,7 +827,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -915,7 +840,6 @@ WHERE
 	("r"."Value5" <> 1 OR "r"."Value5" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -926,7 +850,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -940,7 +863,6 @@ WHERE
 	"r"."Value5" > 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -951,7 +873,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -964,7 +885,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" >= 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -975,7 +895,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -989,7 +908,6 @@ WHERE
 	"r"."Value5" < 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1000,7 +918,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1013,7 +930,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" <= 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1024,7 +940,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1037,7 +952,6 @@ WHERE
 	"r"."Value5" = 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1048,7 +962,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1061,7 +974,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR ("r"."Value5" <> 0 OR "r"."Value5" IS NULL) AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1072,7 +984,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1085,7 +996,6 @@ WHERE
 	"r"."Value5" > 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1096,7 +1006,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1109,7 +1018,6 @@ WHERE
 	"r"."Value5" >= 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1120,7 +1028,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1133,7 +1040,6 @@ WHERE
 	"r"."Value5" < 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1144,7 +1050,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1157,7 +1062,6 @@ WHERE
 	"r"."Value5" <= 0 AND ("r"."Value1" <= "r"."Value4" OR "r"."Value4" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1168,7 +1072,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1181,7 +1084,6 @@ WHERE
 	"r"."Value1" > "r"."Value4" OR "r"."Value5" IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1192,7 +1094,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1205,7 +1106,6 @@ WHERE
 	NOT ("r"."Value1" > "r"."Value4" AND "r"."Value4" IS NOT NULL OR "r"."Value5" IS NULL)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1216,7 +1116,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1229,7 +1128,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1240,7 +1138,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1253,7 +1150,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1264,7 +1160,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1277,7 +1172,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1288,7 +1182,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1301,7 +1194,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1312,7 +1204,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1328,7 +1219,6 @@ WHERE
 	END IS NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1339,7 +1229,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1355,7 +1244,6 @@ WHERE
 	END IS NOT NULL
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1366,7 +1254,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1379,7 +1266,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1390,7 +1276,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1403,7 +1288,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1414,7 +1298,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1427,7 +1310,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -1438,7 +1320,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -1451,7 +1332,6 @@ WHERE
 	1 = 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

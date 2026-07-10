@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "p"
 WHERE
 	"p"."ParentID" > 1000
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -31,7 +29,6 @@ FROM
 	) "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	"c_1"."ParentID" > 1000
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "p"
 WHERE

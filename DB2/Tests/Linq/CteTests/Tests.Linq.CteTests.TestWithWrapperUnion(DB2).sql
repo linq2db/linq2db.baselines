@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1
 (
 	"Child_ParentID",
@@ -38,7 +37,6 @@ FROM
 	CTE_1 "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 WITH CTE_1
 (
 	"Child_ParentID",

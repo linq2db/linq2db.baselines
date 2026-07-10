@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	"t1"."ParentID" > 1000
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" IN (1001, 1002)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

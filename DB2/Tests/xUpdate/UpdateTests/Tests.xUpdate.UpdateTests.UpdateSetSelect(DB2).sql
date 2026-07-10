@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Parent"
 SET

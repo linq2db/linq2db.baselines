@@ -15,7 +15,6 @@ WHERE
 	"x"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",
@@ -28,7 +27,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Id",
 	"x"."NoConversion",

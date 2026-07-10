@@ -20,7 +20,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -45,7 +44,6 @@ WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -70,7 +68,6 @@ WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -95,7 +92,6 @@ WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -115,7 +111,6 @@ WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",
@@ -135,7 +130,6 @@ WHERE
 	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Stamp",

@@ -28,7 +28,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "t"."VarCharColumn" IS NOT NULL THEN RTRIM("t"."VarCharColumn", '.+')

@@ -49,7 +49,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Name",

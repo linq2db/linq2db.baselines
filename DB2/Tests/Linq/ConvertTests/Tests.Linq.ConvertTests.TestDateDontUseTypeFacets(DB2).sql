@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_2"."Date_1",
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	"g_2"."Date_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."CreatedOnUtc"
 FROM

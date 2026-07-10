@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Text",

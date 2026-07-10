@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE
 	"t1"."PersonID" > 4
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"UpdateSubquerySourceTable"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."FirstName",
@@ -34,7 +31,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "t1"
 WHERE

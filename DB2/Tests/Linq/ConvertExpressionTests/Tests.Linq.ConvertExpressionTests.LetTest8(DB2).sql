@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN "t2"."ParentID" IS NULL THEN 0

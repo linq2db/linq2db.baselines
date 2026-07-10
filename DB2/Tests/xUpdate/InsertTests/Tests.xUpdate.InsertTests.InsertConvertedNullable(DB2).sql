@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID,
 	"t"."BigIntValue"
@@ -32,7 +30,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE

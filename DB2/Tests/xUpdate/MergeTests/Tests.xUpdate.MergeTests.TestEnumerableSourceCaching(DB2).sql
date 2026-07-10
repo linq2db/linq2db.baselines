@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,2)
@@ -28,7 +27,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -38,7 +36,6 @@ ORDER BY
 	"t1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "CacheTestTable" "Target"
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -67,7 +64,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

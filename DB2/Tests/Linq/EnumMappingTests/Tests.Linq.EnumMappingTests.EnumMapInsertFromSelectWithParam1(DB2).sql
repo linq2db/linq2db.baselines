@@ -8,7 +8,6 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -38,7 +37,6 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 12
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

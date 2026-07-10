@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -12,7 +11,6 @@ ORDER BY
 	CHAR_LENGTH("t1"."FirstName") > 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Grp",
@@ -12,7 +11,6 @@ ORDER BY
 FETCH NEXT 3 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Grp",

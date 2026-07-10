@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"
@@ -10,7 +9,6 @@ WHERE
 	"x"."ChildID" > 30
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"

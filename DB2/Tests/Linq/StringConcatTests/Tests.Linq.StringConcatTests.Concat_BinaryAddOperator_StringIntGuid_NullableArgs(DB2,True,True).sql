@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	Coalesce("t"."Value1", '') || Coalesce(RTrim(Char("t"."Value2")), '') || Coalesce(CASE
 		WHEN "t"."Value3" IS NULL THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	"t".ID
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."Value1",

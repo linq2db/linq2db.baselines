@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CASE
 		WHEN CHAR_LENGTH("p"."FirstName") <> 0 THEN "p"."FirstName"

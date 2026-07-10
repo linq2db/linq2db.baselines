@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	RTRIM("t"."VarCharColumn", '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"t"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	RTRIM("t"."VarCharColumn", '.+')
 FROM

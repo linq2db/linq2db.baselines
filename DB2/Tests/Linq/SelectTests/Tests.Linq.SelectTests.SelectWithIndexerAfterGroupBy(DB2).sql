@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."Key_1",
 	"x"."Index_1"
@@ -17,7 +16,6 @@ ORDER BY
 	"x"."Key_1" DESC
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

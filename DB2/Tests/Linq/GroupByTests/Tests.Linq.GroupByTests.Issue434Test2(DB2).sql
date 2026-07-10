@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."PersonID",
 	"d"."PersonID",
@@ -11,7 +10,6 @@ WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID"

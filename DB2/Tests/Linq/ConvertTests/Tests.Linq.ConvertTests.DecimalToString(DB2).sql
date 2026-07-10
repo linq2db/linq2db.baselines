@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	RTRIM(Replace(RTrim(Char("p"."MoneyValue")), RTrim(Char(',')), RTrim(Char('.'))), '0.')
 FROM

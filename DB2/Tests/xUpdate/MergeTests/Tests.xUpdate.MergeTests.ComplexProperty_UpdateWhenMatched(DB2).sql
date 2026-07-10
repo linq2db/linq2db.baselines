@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,'first-updated',1)
@@ -60,7 +59,6 @@ SET
 	"Field" = "Source"."Nested_Field"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

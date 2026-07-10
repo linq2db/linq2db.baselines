@@ -32,7 +32,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -171,7 +168,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM

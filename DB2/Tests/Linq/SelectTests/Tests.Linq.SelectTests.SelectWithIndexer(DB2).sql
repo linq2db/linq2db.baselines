@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."FirstName",
 	"x"."LastName",
@@ -20,7 +19,6 @@ ORDER BY
 	"x"."PersonID" DESC
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

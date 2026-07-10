@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c_1"."ParentID",
 	"g_1"."GrandChildID"
@@ -10,7 +9,6 @@ FROM
 		ON "c_1"."ParentID" = "a_Child"."ParentID" AND "c_1"."ChildID" = "a_Child"."ChildID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c_1"."ParentID",
 	"g_1"."GrandChildID"

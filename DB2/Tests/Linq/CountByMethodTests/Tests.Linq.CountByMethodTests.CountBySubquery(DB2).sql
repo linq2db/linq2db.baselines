@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t"."TestId",
 	"t1"."count_1"
@@ -16,7 +15,6 @@ FROM
 		) "t1" ON "t1"."Key_1" = "t"."TestId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

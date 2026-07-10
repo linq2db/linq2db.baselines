@@ -1,10 +1,8 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestIdentity" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	ID
 FROM
@@ -14,7 +12,6 @@ FROM
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"TestIdentity" "t1"
 

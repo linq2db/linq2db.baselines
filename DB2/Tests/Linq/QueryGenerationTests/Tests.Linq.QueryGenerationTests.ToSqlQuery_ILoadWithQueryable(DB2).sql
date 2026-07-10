@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -9,7 +8,6 @@ WHERE
 	"p"."ParentID" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"

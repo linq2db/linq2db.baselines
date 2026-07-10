@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceParentId",
@@ -8,7 +7,6 @@ FROM
 	"InheritanceParent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."TypeDiscriminator",
 	"t1"."InheritanceParentId",

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	LISTAGG('test:' || RTrim(Char("grp_1"."ch")), ';')
 FROM
