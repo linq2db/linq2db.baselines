@@ -1,25 +1,19 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('12345' as char(20))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast(NULL    as char(20))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('12345' as varchar(20))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast(NULL    as varchar(20))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('12345' as text)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast(NULL    as text)
 
 -- PostgreSQL.19 PostgreSQL12

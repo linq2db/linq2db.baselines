@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	x."Id"
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	x."Key_1"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	x."Id"
 FROM

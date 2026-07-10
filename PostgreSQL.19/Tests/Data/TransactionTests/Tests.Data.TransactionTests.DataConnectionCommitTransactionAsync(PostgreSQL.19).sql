@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"Parent" t1
 WHERE

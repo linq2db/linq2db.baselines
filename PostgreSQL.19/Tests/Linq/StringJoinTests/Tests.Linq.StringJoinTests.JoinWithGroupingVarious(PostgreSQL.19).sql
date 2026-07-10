@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Key_1",
 	t1."NullableDistinct",
@@ -36,7 +35,6 @@ ORDER BY
 	t1."Key_1"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."Id",

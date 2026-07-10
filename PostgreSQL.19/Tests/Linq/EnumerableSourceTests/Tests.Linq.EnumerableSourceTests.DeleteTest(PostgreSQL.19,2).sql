@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"TableToInsert" t1
 WHERE

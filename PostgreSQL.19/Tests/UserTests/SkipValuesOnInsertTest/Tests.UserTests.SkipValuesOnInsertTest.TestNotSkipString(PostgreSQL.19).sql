@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -53,7 +52,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

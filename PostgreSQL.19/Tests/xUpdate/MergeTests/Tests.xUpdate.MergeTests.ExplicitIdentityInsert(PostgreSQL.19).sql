@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	MAX(t1."PersonID")
 FROM
@@ -41,7 +40,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

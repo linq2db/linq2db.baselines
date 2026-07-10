@@ -50,7 +50,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	after_1."Id",
 	after_1."Name",

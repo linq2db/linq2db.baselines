@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 CREATE TEMPORARY TABLE issue_4940_temp_table
 (
 	"Id"             integer                     NOT NULL,
@@ -12,7 +11,6 @@ ON COMMIT PRESERVE ROWS
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO issue_4940_temp_table
 (
 	"Id",
@@ -85,7 +83,6 @@ INSERT BULK "Issue4940DBRecords"(Id, Source, Status, NullableStatus)
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "Issue4940DBRecords" "Target"
 USING (VALUES
 	('Merge',5,'open'::issue4940db_status,'open'::issue4940db_nullable_status),
@@ -126,7 +123,6 @@ SET
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Source",
@@ -140,7 +136,6 @@ ORDER BY
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Source",
@@ -154,7 +149,6 @@ ORDER BY
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4940_temp_table
 
 

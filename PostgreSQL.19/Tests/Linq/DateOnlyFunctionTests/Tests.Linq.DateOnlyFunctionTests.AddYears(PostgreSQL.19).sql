@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."TransactionDate" + 12 * Interval '1 Year'
 FROM

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -29,7 +28,6 @@ SET
 	"LastName" = 'Updated'
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	NOT EXISTS(
 		SELECT

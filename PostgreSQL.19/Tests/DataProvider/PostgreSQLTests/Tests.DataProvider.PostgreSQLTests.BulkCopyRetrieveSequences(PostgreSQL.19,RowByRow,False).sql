@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Max("ID") FROM "SequenceTest1"
 
 -- PostgreSQL.19 PostgreSQL12
@@ -610,7 +608,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE

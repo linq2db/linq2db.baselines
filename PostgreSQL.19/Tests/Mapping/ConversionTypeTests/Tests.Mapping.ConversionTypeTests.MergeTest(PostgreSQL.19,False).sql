@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "TrimTestTable" "Target"
 USING (VALUES
 	(1,'***OOO***'), (2,'***SSS***')
@@ -28,7 +27,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "TrimTestTable" "Target"
 USING (VALUES
 	(3,'***III***')
@@ -57,7 +55,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -67,7 +64,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

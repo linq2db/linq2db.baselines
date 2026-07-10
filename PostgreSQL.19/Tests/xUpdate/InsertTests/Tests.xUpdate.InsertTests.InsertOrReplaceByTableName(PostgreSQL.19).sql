@@ -37,7 +37,6 @@ ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -82,7 +81,6 @@ ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

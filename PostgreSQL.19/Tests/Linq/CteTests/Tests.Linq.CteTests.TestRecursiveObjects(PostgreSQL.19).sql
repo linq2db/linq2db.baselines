@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 WITH RECURSIVE previous
 (
 	"OrgGroup_Id",

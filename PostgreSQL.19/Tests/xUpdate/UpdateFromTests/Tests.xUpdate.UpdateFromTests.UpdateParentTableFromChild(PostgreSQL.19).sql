@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 UPDATE
 	"ParentTable"
 SET
@@ -10,7 +9,6 @@ WHERE
 	"ParentTable"."Id" = 2 AND c_1."ParentId" = "ParentTable"."Id"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."Id",
 	p."Value"

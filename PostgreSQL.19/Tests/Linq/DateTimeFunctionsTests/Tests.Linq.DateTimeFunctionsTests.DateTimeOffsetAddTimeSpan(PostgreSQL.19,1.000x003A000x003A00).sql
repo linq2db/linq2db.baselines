@@ -25,7 +25,6 @@ FROM
 	"DateTypesOffset" t_1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."DateTimeOffset",

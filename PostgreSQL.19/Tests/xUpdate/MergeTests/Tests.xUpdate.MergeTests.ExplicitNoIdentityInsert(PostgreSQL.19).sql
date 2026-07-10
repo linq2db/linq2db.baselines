@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	MAX(t1."PersonID")
 FROM
 	"Person" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
@@ -37,7 +35,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

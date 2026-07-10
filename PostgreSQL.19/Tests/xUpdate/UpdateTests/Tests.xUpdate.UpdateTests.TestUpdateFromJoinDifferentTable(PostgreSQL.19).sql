@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 UPDATE
 	gt_s_one_target
 SET

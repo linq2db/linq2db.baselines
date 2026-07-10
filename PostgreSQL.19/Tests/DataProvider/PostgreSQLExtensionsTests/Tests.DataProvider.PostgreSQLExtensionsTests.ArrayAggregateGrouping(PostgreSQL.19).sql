@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	g_2."Key_1",
 	ARRAY_AGG(ALL g_2.v ORDER BY g_2."Id"),
@@ -19,7 +18,6 @@ GROUP BY
 	g_2."Key_1"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	ARRAY_AGG(v.value)
 FROM
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	ARRAY_AGG(DISTINCT v.value)
 FROM
@@ -35,7 +32,6 @@ FROM
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	ARRAY_AGG(v.value ORDER BY v.value)
 FROM

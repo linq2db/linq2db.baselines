@@ -51,7 +51,6 @@ ORDER BY
 LIMIT :take
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"AllTypes" t1
 WHERE

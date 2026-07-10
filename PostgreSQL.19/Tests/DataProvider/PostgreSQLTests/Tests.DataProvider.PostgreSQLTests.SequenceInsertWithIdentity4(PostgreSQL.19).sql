@@ -1,10 +1,8 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	test_schema."TestSchemaIdentity" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO test_schema."TestSchemaIdentity"
 (
 	"ID"
@@ -17,7 +15,6 @@ RETURNING
 	"ID"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID"
 FROM
@@ -25,7 +22,6 @@ FROM
 LIMIT 2
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	test_schema."TestSchemaIdentity" t1
 

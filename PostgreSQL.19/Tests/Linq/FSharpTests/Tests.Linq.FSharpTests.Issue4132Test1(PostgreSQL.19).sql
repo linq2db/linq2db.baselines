@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",

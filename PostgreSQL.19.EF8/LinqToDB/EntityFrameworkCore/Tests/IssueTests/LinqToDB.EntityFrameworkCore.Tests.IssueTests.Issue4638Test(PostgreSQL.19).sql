@@ -1,7 +1,6 @@
 ﻿
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."Key_1",
 	d."CfAllowValue",
@@ -21,7 +20,6 @@ ORDER BY
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."AclNameId"
 FROM

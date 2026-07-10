@@ -18,7 +18,6 @@ WHERE
 	Coalesce(r."BooleanN", :True)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -52,7 +51,6 @@ WHERE
 	Coalesce(r."BooleanN", :False)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -67,7 +65,6 @@ FROM
 	"BooleanTable" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Boolean",
@@ -84,7 +81,6 @@ WHERE
 	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Boolean",
