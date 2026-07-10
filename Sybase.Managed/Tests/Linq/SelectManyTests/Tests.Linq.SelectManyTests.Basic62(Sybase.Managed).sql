@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[a_Children].[ParentID] + [p].[ParentID]
 FROM

@@ -24,14 +24,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -51,7 +49,6 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

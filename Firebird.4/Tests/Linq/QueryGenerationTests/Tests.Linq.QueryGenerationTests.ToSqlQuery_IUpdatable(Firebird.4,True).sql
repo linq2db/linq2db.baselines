@@ -12,14 +12,12 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 UPDATE
 	"TableWithIdentity" "t1"
 SET
 	"Value" = 123
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

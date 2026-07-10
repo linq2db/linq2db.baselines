@@ -7,7 +7,6 @@ WHERE (@__ef_filter__p_0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND p."P
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	MAX(e."QuantityPerUnit")
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"Products" e
 WHERE

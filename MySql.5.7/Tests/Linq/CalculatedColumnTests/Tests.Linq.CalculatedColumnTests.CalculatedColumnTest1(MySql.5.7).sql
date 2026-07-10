@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`i_1`.`PersonID`,
 	`i_1`.`FirstName`,

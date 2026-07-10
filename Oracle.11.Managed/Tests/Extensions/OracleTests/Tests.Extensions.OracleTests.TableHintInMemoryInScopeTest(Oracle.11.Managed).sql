@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NMEMORY(p) NMEMORY(c_1) */
 	p."ParentID",
 	p."Value1"

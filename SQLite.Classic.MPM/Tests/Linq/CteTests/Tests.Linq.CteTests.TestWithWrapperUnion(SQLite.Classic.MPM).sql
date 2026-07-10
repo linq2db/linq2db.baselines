@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1]
 (
 	[Child_ParentID],
@@ -38,7 +37,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1]
 (
 	[Child_ParentID],

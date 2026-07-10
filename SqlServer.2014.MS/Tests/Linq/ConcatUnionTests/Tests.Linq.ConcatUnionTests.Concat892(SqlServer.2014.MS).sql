@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Value1],
 	[t1].[ParentID]
@@ -25,7 +24,6 @@ FROM
 	[Child] [c_3]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -33,7 +31,6 @@ FROM
 	[Child] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

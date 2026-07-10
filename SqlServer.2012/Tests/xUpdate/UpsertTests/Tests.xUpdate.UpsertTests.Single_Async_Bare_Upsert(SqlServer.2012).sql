@@ -51,7 +51,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -118,7 +117,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

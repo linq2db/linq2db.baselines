@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t"."Id",
 	Coalesce("t"."Str1", '') || Coalesce("t"."Str2", '') || Coalesce("t"."StrReq", '')
@@ -9,7 +8,6 @@ ORDER BY
 	"t"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

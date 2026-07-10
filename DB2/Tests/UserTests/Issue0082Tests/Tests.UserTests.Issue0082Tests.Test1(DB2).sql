@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	(
@@ -22,14 +21,12 @@ FROM
 	"Parent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
 	"Parent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x_1"."ParentID",
 	"x_1"."CountResult",

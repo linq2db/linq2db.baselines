@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t.ID,
 	t.MoneyValue,
@@ -28,7 +27,6 @@ WHERE
 	t.ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	t.ID,
 	t.MoneyValue,

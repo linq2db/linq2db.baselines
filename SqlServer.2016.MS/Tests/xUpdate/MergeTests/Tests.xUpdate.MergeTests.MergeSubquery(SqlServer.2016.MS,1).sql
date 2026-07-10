@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
 	[ID]   Int          NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE [tempdb]..[#MergeTemp]
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
 	SELECT
@@ -49,6 +47,5 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]
 

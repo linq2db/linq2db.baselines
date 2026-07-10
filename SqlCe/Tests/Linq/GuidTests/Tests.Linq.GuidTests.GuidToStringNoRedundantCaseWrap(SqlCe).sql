@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 SELECT
 	Lower(CAST([t].[Id] AS NChar(36)))
 FROM
 	[TableWithGuid] [t]
 
 -- SqlCe
-
 SELECT
 	[t].[Id]
 FROM

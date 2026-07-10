@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[u].[PersonID],
 	[x].[PersonID] as [x]

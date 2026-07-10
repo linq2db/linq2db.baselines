@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t11].[GroupId],
 	[t11].[Simple_1],
@@ -103,7 +102,6 @@ FROM
 		) [t10]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

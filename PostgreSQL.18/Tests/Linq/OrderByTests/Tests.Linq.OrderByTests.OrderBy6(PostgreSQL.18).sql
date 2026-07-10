@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	person_1."PersonID",
 	patient_1."PersonID"

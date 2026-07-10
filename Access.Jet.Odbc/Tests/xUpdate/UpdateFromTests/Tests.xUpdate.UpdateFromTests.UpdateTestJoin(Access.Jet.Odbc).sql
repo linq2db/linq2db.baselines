@@ -19,7 +19,6 @@ WHERE
 	[t].[id] <> ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[v].[id],
 	[v].[Value1],

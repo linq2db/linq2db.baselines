@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- SqlServer.2019
-
 SELECT
 	[o].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Table2"
 (
 	ID
@@ -10,7 +9,6 @@ FROM
 	"Table1" t
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Date"

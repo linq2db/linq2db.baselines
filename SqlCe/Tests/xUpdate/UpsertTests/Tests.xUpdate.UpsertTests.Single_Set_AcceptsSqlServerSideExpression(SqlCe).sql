@@ -62,7 +62,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -103,7 +102,6 @@ WHERE
 	[UpsertTest].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -179,7 +177,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

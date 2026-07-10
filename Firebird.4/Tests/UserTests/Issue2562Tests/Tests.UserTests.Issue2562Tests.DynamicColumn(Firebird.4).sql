@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
@@ -17,7 +16,6 @@ FROM
 	"Person2562" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"person"."CardNumber",
 	"person"."CardTypeId",

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH rateCost AS
 (
 	SELECT

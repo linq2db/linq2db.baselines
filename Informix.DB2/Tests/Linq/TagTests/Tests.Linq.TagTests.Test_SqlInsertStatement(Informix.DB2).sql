@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 /* My Test */
 INSERT INTO TestTable
 (

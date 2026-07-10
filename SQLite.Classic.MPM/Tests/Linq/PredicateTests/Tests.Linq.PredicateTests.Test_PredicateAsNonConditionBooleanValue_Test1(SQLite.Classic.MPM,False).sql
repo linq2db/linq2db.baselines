@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value1] = [r].[Value2],
@@ -82,7 +81,6 @@ WHERE
 	[r].[Id] <> -1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

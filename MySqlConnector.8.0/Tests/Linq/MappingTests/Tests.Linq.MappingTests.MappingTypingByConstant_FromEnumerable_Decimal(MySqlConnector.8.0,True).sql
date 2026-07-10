@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`arg`.`Id`,
 	`arg`.`Value`
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS `Id`, CAST(NULL AS DECIMAL(29, 10)) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`arg`.`Id`,
 	`arg`.`Value`

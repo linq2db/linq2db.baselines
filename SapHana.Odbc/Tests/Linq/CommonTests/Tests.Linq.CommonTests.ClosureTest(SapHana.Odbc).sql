@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	1
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	1
 FROM

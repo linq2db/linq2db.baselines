@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],

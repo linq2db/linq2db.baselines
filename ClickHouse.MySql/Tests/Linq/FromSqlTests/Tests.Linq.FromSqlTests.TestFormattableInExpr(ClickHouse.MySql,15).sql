@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	s.value,
 	s.id
@@ -14,7 +13,6 @@ ORDER BY
 	s.id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t.value,
 	t.id

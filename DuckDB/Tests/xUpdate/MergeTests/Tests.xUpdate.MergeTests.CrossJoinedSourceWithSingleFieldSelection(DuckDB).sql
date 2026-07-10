@@ -1,15 +1,12 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent t1
 
 -- DuckDB
-
 DELETE FROM
 	Child t1
 
 -- DuckDB
-
 DELETE FROM
 	GrandChild t1
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO GrandChild Target
 USING (
 	SELECT
@@ -112,7 +108,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.GrandChildID,
 	t1.ParentID,

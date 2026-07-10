@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2025
-
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
 -- SqlServer.2025
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -25,6 +22,5 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 -- SqlServer.2025
-
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

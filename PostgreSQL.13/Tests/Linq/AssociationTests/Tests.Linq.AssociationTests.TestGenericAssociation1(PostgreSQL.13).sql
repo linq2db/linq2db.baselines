@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	"a_MiddleGeneric"."ParentID",
 	"a_Bottom"."ParentID",

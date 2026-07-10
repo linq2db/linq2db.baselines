@@ -17,7 +17,6 @@ WHERE
 	"e"."Id" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -73,7 +72,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -129,7 +127,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e"."Id",
 	"e"."Value1",

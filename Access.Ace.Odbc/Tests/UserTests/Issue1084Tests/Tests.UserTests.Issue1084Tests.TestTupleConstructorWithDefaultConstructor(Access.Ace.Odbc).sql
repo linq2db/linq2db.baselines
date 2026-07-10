@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[k_1].[StatusBitmask] BAND 128,
 	[g_1].[StatusBitmask] BAND 128

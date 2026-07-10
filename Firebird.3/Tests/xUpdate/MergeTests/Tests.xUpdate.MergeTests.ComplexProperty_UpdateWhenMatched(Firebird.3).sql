@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (
 	SELECT 1 AS "Id", CAST('first-updated' AS VARCHAR(13)) AS "Code", TRUE AS "Nested_Field" FROM rdb$database) "Source"
@@ -59,7 +58,6 @@ SET
 	"Field" = "Source"."Nested_Field"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

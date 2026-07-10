@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -28,7 +27,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -37,7 +35,6 @@ WHERE
 	ID = 100500
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.SmallIntValue
 FROM

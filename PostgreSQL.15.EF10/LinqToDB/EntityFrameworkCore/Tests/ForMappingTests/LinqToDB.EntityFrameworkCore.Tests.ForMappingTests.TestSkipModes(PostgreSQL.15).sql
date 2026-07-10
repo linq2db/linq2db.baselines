@@ -25,7 +25,6 @@ VALUES
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."InsertOnly",
@@ -61,7 +60,6 @@ WHERE
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."InsertOnly",

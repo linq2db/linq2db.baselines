@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 UPDATE
 	Parent
 SET
@@ -25,7 +24,6 @@ WHERE
 	Parent.ParentID = 1010
 
 -- DuckDB
-
 SELECT
 	t.ParentID,
 	t.Value1

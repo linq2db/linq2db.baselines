@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT NULL, NULL, NULL, NULL, NULL

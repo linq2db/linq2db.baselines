@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DROP TYPE IF EXISTS "item_type_enum";
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TYPE "item_type_enum" AS ENUM (
   'type1',
   'type2',
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 insert into "Issue4487Table"("Id", "Values") values (2, '{type3,type2}')
 
 -- PostgreSQL.18 PostgreSQL12
@@ -49,7 +46,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value",
@@ -60,6 +56,5 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TYPE IF EXISTS "item_type_enum";
 

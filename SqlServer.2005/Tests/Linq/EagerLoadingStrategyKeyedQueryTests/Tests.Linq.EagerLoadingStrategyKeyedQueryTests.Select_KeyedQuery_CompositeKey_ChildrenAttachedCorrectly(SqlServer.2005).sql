@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[p].[Region],
 	[p].[Code],
@@ -11,7 +10,6 @@ ORDER BY
 	[p].[Code]
 
 -- SqlServer.2005
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

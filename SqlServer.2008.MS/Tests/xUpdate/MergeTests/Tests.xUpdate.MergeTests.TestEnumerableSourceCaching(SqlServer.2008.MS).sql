@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,2)
@@ -29,7 +28,6 @@ VALUES
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +37,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,4), (3,3)
@@ -69,7 +66,6 @@ VALUES
 ;
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

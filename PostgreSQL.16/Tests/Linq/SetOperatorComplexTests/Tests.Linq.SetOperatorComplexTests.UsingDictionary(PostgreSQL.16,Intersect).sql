@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	'Discriminator'::text,
 	"a_Book"."Discriminator",
@@ -25,7 +24,6 @@ WHERE
 	"a_Book_1"."Discriminator" = 'Novel'
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."BookId",
 	m_1."AuthorId",
@@ -45,7 +43,6 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON d_1."FkAuthorId" = "a_Author"."AuthorId"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."AuthorId",
 	"a_Book"."BookId",
@@ -59,7 +56,6 @@ FROM
 		LEFT JOIN "Book" "a_Book" ON d."FkBookId" = "a_Book"."BookId"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."AuthorId",
 	t1."AuthorName"

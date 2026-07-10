@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[FirstName] LIKE '%jOh%' ESCAPE '~' AND [p].[PersonID] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

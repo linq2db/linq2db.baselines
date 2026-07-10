@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[g_1].[Count_1]
 FROM

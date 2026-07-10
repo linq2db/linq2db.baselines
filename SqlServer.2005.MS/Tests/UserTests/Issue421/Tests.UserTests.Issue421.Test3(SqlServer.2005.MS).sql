@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -26,7 +25,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

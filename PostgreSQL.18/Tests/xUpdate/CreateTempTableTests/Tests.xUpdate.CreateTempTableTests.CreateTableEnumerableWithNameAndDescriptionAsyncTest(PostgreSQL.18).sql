@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
 	"Name" text NOT NULL,
@@ -13,7 +11,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "TempTable"
 (
 	"Name"
@@ -22,7 +19,6 @@ VALUES
 ('John')
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Name"
 FROM
@@ -30,6 +26,5 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 

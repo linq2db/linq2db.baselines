@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	concat(Coalesce(r.FirstName, ''), ' ', Coalesce(r.LastName, '')) as Text
@@ -30,7 +28,6 @@ FROM
 	Issue3323Table r_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id + 1 as Id,
 	r.Text

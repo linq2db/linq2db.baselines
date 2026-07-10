@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[text1],
 	offsets([r].[FTS4_TABLE])

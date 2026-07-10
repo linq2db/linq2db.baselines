@@ -39,7 +39,6 @@ SET     @:p2 = {75,76,77,78,79,80,81,82}
 INSERT INTO "UseAlternativeBulkCopy" ("Id", "Value") VALUES (:p1, :p2)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	STDDEV(c_1."ChildID"),
 	STDDEV(c_1."ChildID"),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	STDDEV(t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	STDDEV(ALL t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	STDDEV(DISTINCT t1."ParentID")
 FROM

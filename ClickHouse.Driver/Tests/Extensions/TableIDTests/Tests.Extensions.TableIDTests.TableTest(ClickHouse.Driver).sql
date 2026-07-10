@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	concat('*** p ***', '4'),
 	'*** p ***',

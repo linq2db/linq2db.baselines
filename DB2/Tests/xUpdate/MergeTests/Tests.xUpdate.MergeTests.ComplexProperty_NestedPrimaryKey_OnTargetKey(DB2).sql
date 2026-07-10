@@ -33,7 +33,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "NestedKeyTarget" "Target"
 USING (VALUES
 	(1,'first-updated')
@@ -50,7 +49,6 @@ SET
 	"Code" = "Source"."Code"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Code",
 	"t1"."Id"

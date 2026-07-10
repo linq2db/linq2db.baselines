@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
 	[Id]   int            NOT NULL IDENTITY,
@@ -15,7 +14,6 @@ INSERT BULK [tempdb]..[#WithIdentity](Name)
 
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -25,7 +23,6 @@ FROM
 
 
 -- SqlServer.2025
-
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 
 

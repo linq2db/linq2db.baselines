@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Person] [t1]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
@@ -75,7 +73,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
@@ -94,7 +91,6 @@ WHERE
 	[p].[FirstName] = ? AND [p].[LastName] = 'Shepard'
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Person] [t1]
 WHERE

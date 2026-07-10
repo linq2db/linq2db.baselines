@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 /* one */
 SELECT
 	x."FirstName",

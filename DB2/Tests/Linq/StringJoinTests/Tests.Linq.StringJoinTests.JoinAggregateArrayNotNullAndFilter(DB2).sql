@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	SUBSTRING(Coalesce(', ' || CASE
 		WHEN "x"."NullableValue" LIKE '%A%' ESCAPE '~' THEN "x"."NullableValue"
@@ -32,7 +31,6 @@ WHERE
 	END, ''), 3)) <> 0
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

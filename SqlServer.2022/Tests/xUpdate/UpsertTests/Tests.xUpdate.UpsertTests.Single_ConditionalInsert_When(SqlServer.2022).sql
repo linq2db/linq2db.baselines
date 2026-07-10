@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'skip',0,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -49,7 +48,6 @@ SET
 ;
 
 -- SqlServer.2022
-
 SELECT
 	IIF(EXISTS(
 		SELECT
@@ -59,7 +57,6 @@ SELECT
 	), 1, 0)
 
 -- SqlServer.2022
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(2,N'keep',5,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -109,7 +106,6 @@ SET
 ;
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Name],

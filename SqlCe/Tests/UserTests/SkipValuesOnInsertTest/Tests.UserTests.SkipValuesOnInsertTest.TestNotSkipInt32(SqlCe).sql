@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -52,7 +51,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
 	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day)
@@ -13,7 +12,6 @@ SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval 4 Day)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`v_1`.`Value2`
 FROM

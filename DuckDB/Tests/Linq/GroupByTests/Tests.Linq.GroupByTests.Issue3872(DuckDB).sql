@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MAX(r.PersonID)
 FROM

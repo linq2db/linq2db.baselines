@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE

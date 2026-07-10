@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"e_1"."Id",
 	"e_1"."TestId"
@@ -20,7 +19,6 @@ ORDER BY
 	"e_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."TestId"

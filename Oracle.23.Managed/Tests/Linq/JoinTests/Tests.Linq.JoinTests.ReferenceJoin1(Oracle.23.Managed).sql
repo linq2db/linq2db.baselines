@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."ParentID",
 	g_1."GrandChildID"
@@ -10,7 +9,6 @@ FROM
 		ON c_1."ParentID" = a_Child."ParentID" AND c_1."ChildID" = a_Child."ChildID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."ParentID",
 	g_1."GrandChildID"

@@ -43,7 +43,6 @@ WHERE
 	[EntityUpdateTest].[Id] = @Id
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

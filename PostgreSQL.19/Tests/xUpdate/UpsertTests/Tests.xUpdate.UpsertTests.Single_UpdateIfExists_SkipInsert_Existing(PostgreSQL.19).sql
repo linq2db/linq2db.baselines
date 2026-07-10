@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(1,'updated',2,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -26,7 +25,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

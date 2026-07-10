@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 
 -- DuckDB
-
 CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 (
 	Name VARCHAR,
@@ -27,7 +25,6 @@ ORDER BY
 INSERT BULK TempTable(Name)
 
 -- DuckDB
-
 SELECT
 	t.Name
 FROM
@@ -35,6 +32,5 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TempTable
 

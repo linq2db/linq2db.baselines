@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	STRING_AGG(t1."Value", '' ORDER BY t1.PK)
 FROM

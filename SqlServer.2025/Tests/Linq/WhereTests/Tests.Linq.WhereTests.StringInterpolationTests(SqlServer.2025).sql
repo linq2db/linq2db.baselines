@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	(N'{}' || [p].[LastName]) = (N'{}' || [p].[LastName])
 
 -- SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM

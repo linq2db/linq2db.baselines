@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."MoneyValue",
@@ -59,7 +57,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

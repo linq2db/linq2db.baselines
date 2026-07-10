@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2014.MS SqlServer.2014
-
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,N'first-updated',1)
@@ -61,7 +60,6 @@ SET
 ;
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Code],

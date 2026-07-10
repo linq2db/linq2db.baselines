@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_Cache]
@@ -34,7 +33,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -45,12 +43,10 @@ WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_Cache]
@@ -85,7 +81,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -96,12 +91,10 @@ WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_Cache]
@@ -136,7 +129,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -147,12 +139,10 @@ WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NULL)
 	EXECUTE('
 		CREATE TABLE [FluentTemp_Cache]
@@ -187,7 +177,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -198,7 +187,6 @@ WHERE
 	[t].[ID] = 1
 
 -- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'FluentTemp_Cache') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 

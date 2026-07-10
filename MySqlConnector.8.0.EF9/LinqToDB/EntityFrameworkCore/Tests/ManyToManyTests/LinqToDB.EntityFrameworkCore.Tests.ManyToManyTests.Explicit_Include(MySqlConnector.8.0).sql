@@ -11,7 +11,6 @@ ORDER BY `o`.`Id`, `s`.`OrderId`, `s`.`ProductId`
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -26,7 +25,6 @@ ORDER BY
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Number`

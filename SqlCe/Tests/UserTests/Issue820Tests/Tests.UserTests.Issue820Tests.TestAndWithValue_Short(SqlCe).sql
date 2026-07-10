@@ -19,7 +19,6 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

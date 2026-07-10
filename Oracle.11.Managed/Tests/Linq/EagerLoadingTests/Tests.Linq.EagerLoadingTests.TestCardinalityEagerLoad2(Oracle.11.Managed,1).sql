@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1.FK
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -29,7 +27,6 @@ FROM
 		INNER JOIN "EntityMB" d ON m_1."Id" = d.FK
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1.FK,

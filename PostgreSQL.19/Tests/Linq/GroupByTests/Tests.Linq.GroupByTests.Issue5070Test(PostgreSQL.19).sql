@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t_1."FinalCustomerId",
 	t_1."IsActive",

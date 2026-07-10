@@ -7,7 +7,6 @@ WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p3 OR NOT (p."IsDel
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."IsDeleted",
 	e."ProductID",

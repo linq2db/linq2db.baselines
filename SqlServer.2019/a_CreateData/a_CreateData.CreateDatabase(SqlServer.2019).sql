@@ -1,20 +1,16 @@
 ﻿-- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.SameTableName END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.TestSchema_SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.TestSchema_SameTableName END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE TestSchema.SameTableName END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Doctor') AND type in (N'U'))
 BEGIN DROP TABLE Doctor END
 
@@ -28,18 +24,15 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('InheritanceChi
 BEGIN DROP TABLE InheritanceChild END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TestProcedure' AND schema_id = SCHEMA_ID('TestSchema'))
 	DROP PROCEDURE TestSchema.TestProcedure
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'SchemaTableFunction' AND schema_id = SCHEMA_ID('TestSchema'))
 BEGIN DROP FUNCTION TestSchema.SchemaTableFunction
 END
 
 -- SqlServer.2019
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL CONSTRAINT PK_InheritanceParent PRIMARY KEY CLUSTERED,
@@ -49,7 +42,6 @@ CREATE TABLE InheritanceParent
 ON [PRIMARY]
 
 -- SqlServer.2019
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL CONSTRAINT PK_InheritanceChild PRIMARY KEY CLUSTERED,
@@ -60,7 +52,6 @@ CREATE TABLE InheritanceChild
 ON [PRIMARY]
 
 -- SqlServer.2019
-
 -- Person Table
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Person') AND type in (N'U'))
@@ -78,23 +69,18 @@ CREATE TABLE Person
 ON [PRIMARY]
 
 -- SqlServer.2019
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- SqlServer.2019
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- SqlServer.2019
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- SqlServer.2019
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES (N'Jürgen', N'König', 'Ko', 'M')
 
 -- SqlServer.2019
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -110,11 +96,9 @@ CREATE TABLE Doctor
 ON [PRIMARY]
 
 -- SqlServer.2019
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- SqlServer.2019
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -130,11 +114,9 @@ CREATE TABLE Patient
 ON [PRIMARY]
 
 -- SqlServer.2019
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- SqlServer.2019
-
 -- Person_SelectByKey
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectByKey')
@@ -142,7 +124,6 @@ BEGIN DROP Procedure Person_SelectByKey
 END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_SelectByKey
 	@id int
 AS
@@ -150,11 +131,9 @@ AS
 SELECT * FROM Person WHERE PersonID = @id
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectByKey TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_SelectByKeyLowercase
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectByKeyLowercase')
@@ -162,7 +141,6 @@ BEGIN DROP Procedure Person_SelectByKeyLowercase
 END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_SelectByKeyLowercase
 	@id int
 AS
@@ -170,36 +148,30 @@ AS
 SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectByKeyLowercase TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_SelectAll
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectAll')
 BEGIN DROP Procedure Person_SelectAll END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_SelectAll
 AS
 
 SELECT * FROM Person
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectAll TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_SelectByName
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectByName')
 BEGIN DROP Procedure Person_SelectByName END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_SelectByName
 	@firstName nvarchar(50),
 	@lastName  nvarchar(50)
@@ -213,11 +185,9 @@ WHERE
 	FirstName = @firstName AND LastName = @lastName
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_SelectListByName
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectListByName')
@@ -225,7 +195,6 @@ BEGIN DROP Procedure Person_SelectListByName
 END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_SelectListByName
 	@firstName nvarchar(50),
 	@lastName  nvarchar(50)
@@ -239,18 +208,15 @@ WHERE
 	FirstName like @firstName AND LastName like @lastName
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_Insert
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert')
 BEGIN DROP Procedure Person_Insert END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_Insert
 	@FirstName  nvarchar(50),
 	@LastName   nvarchar(50),
@@ -266,18 +232,15 @@ VALUES
 SELECT Cast(SCOPE_IDENTITY() as int) PersonID
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_Insert TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_Insert_OutputParameter
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert_OutputParameter')
 BEGIN DROP Procedure Person_Insert_OutputParameter END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_Insert_OutputParameter
 	@FirstName  nvarchar(50),
 	@LastName   nvarchar(50),
@@ -294,18 +257,15 @@ VALUES
 SET @PersonID = Cast(SCOPE_IDENTITY() as int)
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_Insert_OutputParameter TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_Update
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Update')
 BEGIN DROP Procedure Person_Update END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_Update
 	@PersonID   int,
 	@FirstName  nvarchar(50),
@@ -325,18 +285,15 @@ WHERE
 	PersonID = @PersonID
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_Update TO PUBLIC
 
 -- SqlServer.2019
-
 -- Person_Delete
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Delete')
 BEGIN DROP Procedure Person_Delete END
 
 -- SqlServer.2019
-
 CREATE Procedure Person_Delete
 	@PersonID int
 AS
@@ -344,18 +301,15 @@ AS
 DELETE FROM Person WHERE PersonID = @PersonID
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_Delete TO PUBLIC
 
 -- SqlServer.2019
-
 -- Patient_SelectAll
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_SelectAll')
 BEGIN DROP Procedure Patient_SelectAll END
 
 -- SqlServer.2019
-
 CREATE Procedure Patient_SelectAll
 AS
 
@@ -367,18 +321,15 @@ WHERE
 	Patient.PersonID = Person.PersonID
 
 -- SqlServer.2019
-
 GRANT EXEC ON Patient_SelectAll TO PUBLIC
 
 -- SqlServer.2019
-
 -- Patient_SelectByName
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_SelectByName')
 BEGIN DROP Procedure Patient_SelectByName END
 
 -- SqlServer.2019
-
 CREATE Procedure Patient_SelectByName
 	@firstName nvarchar(50),
 	@lastName  nvarchar(50)
@@ -393,18 +344,15 @@ WHERE
 	AND FirstName = @firstName AND LastName = @lastName
 
 -- SqlServer.2019
-
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 -- SqlServer.2019
-
 -- VariableResults
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'VariableResults')
 BEGIN DROP Procedure VariableResults END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE VariableResults
 	@ReturnFullRow bit = 1
 AS
@@ -423,14 +371,12 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 -- OutRefTest
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefTest')
 BEGIN DROP Procedure OutRefTest END
 
 -- SqlServer.2019
-
 CREATE Procedure OutRefTest
 	@ID             int,
 	@outputID       int output,
@@ -446,14 +392,12 @@ SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
 -- SqlServer.2019
-
 -- OutRefEnumTest
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefEnumTest')
 BEGIN DROP Procedure OutRefEnumTest END
 
 -- SqlServer.2019
-
 CREATE Procedure OutRefEnumTest
 	@str            varchar(50),
 	@outputStr      varchar(50) output,
@@ -464,14 +408,12 @@ SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
 -- SqlServer.2019
-
 -- Data Types test
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes') AND type in (N'U'))
 BEGIN DROP TABLE AllTypes END
 
 -- SqlServer.2019
-
 CREATE TABLE AllTypes
 (
 	ID                       int           NOT NULL IDENTITY(1,1) CONSTRAINT PK_AllTypes PRIMARY KEY CLUSTERED,
@@ -582,7 +524,6 @@ CREATE TABLE AllTypes
 ) ON [PRIMARY]
 
 -- SqlServer.2019
-
 INSERT INTO AllTypes
 (
 	bigintDataType, numericDataType, bitDataType, smallintDataType, decimalDataType, smallmoneyDataType,
@@ -621,12 +562,10 @@ SELECT
 	'<root><element strattr="strvalue" intattr="12345"/></root>'
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes2') AND type in (N'U'))
 BEGIN DROP TABLE AllTypes2 END
 
 -- SqlServer.2019
-
 CREATE TABLE AllTypes2
 (
 	ID                     int        NOT NULL IDENTITY(1,1) CONSTRAINT PK_AllTypes2 PRIMARY KEY CLUSTERED,
@@ -642,7 +581,6 @@ CREATE TABLE AllTypes2
 ) ON [PRIMARY]
 
 -- SqlServer.2019
-
 INSERT INTO AllTypes2
 SELECT
 	NULL, NULL, NULL, NULL, NULL, NULL, NULL
@@ -657,63 +595,50 @@ SELECT
 	Cast(geometry::STGeomFromText('LINESTRING (100 100, 20 180, 180 180)', 0) as geometry)
 
 -- SqlServer.2019
-
 -- GetParentByID function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'GetParentByID')
 BEGIN DROP FUNCTION GetParentByID
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentView') AND type in (N'V'))
 BEGIN DROP VIEW ParentView END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentChildView') AND type in (N'V'))
 BEGIN DROP VIEW ParentChildView END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Parent') AND type in (N'U'))
 BEGIN DROP TABLE Parent END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Child') AND type in (N'U'))
 BEGIN DROP TABLE Child END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('GrandChild') AND type in (N'U'))
 BEGIN DROP TABLE GrandChild END
 
 -- SqlServer.2019
-
 CREATE TABLE Parent     (ParentID int, Value1 int,  _ID INT IDENTITY PRIMARY KEY)
 
 -- SqlServer.2019
-
 CREATE TABLE Child      (ParentID int, ChildID int, _ID INT IDENTITY PRIMARY KEY)
 
 -- SqlServer.2019
-
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
 -- SqlServer.2019
-
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT IDENTITY PRIMARY KEY)
 
 -- SqlServer.2019
-
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This <тест> is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
 -- SqlServer.2019
-
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This <тест> ChildID column', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'TABLE', @level1name=N'Child', @level2type=N'COLUMN', @level2name=N'ChildID'
 
 -- SqlServer.2019
-
 CREATE FUNCTION GetParentByID(@id int)
 RETURNS TABLE
 AS
@@ -723,7 +648,6 @@ RETURN
 )
 
 -- SqlServer.2019
-
 -- ParentView
 
 CREATE VIEW ParentView
@@ -731,7 +655,6 @@ AS
 	SELECT * FROM Parent
 
 -- SqlServer.2019
-
 -- ParentChildView
 
 CREATE VIEW ParentChildView
@@ -744,14 +667,12 @@ AS
 		LEFT JOIN Child ch ON p.ParentID = ch.ParentID
 
 -- SqlServer.2019
-
 -- LinqDataTypes
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('LinqDataTypes') AND type in (N'U'))
 BEGIN DROP TABLE LinqDataTypes END
 
 -- SqlServer.2019
-
 CREATE TABLE LinqDataTypes
 (
 	_ID            int IDENTITY PRIMARY KEY,
@@ -769,29 +690,24 @@ CREATE TABLE LinqDataTypes
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
 
 -- SqlServer.2019
-
 CREATE TABLE TestIdentity (
 	ID int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 
 -- SqlServer.2019
-
 -- IndexTable
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable2') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable2 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable END
 
 -- SqlServer.2019
-
 CREATE TABLE IndexTable
 (
 	PKField1    int NOT NULL,
@@ -803,7 +719,6 @@ CREATE TABLE IndexTable
 )
 
 -- SqlServer.2019
-
 CREATE TABLE IndexTable2
 (
 	PKField1 int NOT NULL,
@@ -816,13 +731,11 @@ CREATE TABLE IndexTable2
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SelectImplicitColumn')
 BEGIN DROP Procedure SelectImplicitColumn
 END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE SelectImplicitColumn
 AS
 BEGIN
@@ -830,13 +743,11 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'DuplicateColumnNames')
 BEGIN DROP Procedure DuplicateColumnNames
 END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE DuplicateColumnNames
 AS
 BEGIN
@@ -844,12 +755,10 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'Name.Test')
 BEGIN DROP TABLE [Name.Test] END
 
 -- SqlServer.2019
-
 CREATE TABLE [Name.Test]
 (
 --	ID INT IDENTITY PRIMARY KEY CLUSTERED,
@@ -857,12 +766,10 @@ CREATE TABLE [Name.Test]
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID')
 BEGIN DROP TABLE [GuidID] END
 
 -- SqlServer.2019
-
 CREATE TABLE [GuidID]
 (
 	ID uniqueidentifier default(NewID()) PRIMARY KEY CLUSTERED,
@@ -870,24 +777,20 @@ CREATE TABLE [GuidID]
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID2')
 BEGIN DROP TABLE [GuidID2] END
 
 -- SqlServer.2019
-
 CREATE TABLE [GuidID2]
 (
 	ID uniqueidentifier default(NewID()) PRIMARY KEY CLUSTERED
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'DecimalOverflow')
 BEGIN DROP TABLE [DecimalOverflow] END
 
 -- SqlServer.2019
-
 CREATE TABLE [DecimalOverflow]
 (
 	Decimal1 decimal(38,20) NOT NULL PRIMARY KEY CLUSTERED,
@@ -898,7 +801,6 @@ CREATE TABLE [DecimalOverflow]
 )
 
 -- SqlServer.2019
-
 INSERT INTO [DecimalOverflow]
 SELECT  123456789012345.12345678901234567890,  1234567890123456789.91,  12.345678901234512345678901234567890,  1234567890123456789,  .12345678901234512345678901234567890 UNION ALL
 SELECT -123456789012345.12345678901234567890, -1234567890123456789.91, -12.345678901234512345678901234567890, -1234567890123456789, -.12345678901234512345678901234567890 UNION ALL
@@ -910,12 +812,10 @@ SELECT  12345678901234.5678901234567,                            NULL,          
 SELECT -12345678901234.5678901234567,                            NULL,                                  NULL,                 NULL,                                  NULL
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'SqlTypes')
 BEGIN DROP TABLE [SqlTypes] END
 
 -- SqlServer.2019
-
 CREATE TABLE [SqlTypes]
 (
 	ID  int NOT NULL PRIMARY KEY CLUSTERED,
@@ -923,7 +823,6 @@ CREATE TABLE [SqlTypes]
 )
 
 -- SqlServer.2019
-
 INSERT INTO [SqlTypes]
 SELECT 1, hierarchyid::Parse('/')      UNION ALL
 SELECT 2, hierarchyid::Parse('/1/')    UNION ALL
@@ -935,23 +834,19 @@ SELECT 7, hierarchyid::Parse('/2/2/')  UNION ALL
 SELECT 8, hierarchyid::Parse('/2/1/1/')
 
 -- SqlServer.2019
-
 -- merge test tables
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge1') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge1 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge2') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge2 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMergeIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestMergeIdentity END
 
 -- SqlServer.2019
-
 CREATE TABLE TestMerge1
 (
 	Id     int NOT NULL CONSTRAINT PK_TestMerge1 PRIMARY KEY CLUSTERED,
@@ -989,7 +884,6 @@ CREATE TABLE TestMerge1
 )
 
 -- SqlServer.2019
-
 CREATE TABLE TestMerge2
 (
 	Id     int NOT NULL CONSTRAINT PK_TestMerge2 PRIMARY KEY CLUSTERED,
@@ -1027,7 +921,6 @@ CREATE TABLE TestMerge2
 )
 
 -- SqlServer.2019
-
 CREATE TABLE TestMergeIdentity
 (
 	Id     int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestMergeIdentity PRIMARY KEY CLUSTERED,
@@ -1035,37 +928,31 @@ CREATE TABLE TestMergeIdentity
 )
 
 -- SqlServer.2019
-
 -- Generate schema
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaY') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaY END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaX') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaX END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaB') AND type in (N'U'))
 BEGIN DROP TABLE TestSchema.TestSchemaB END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaA') AND type in (N'U'))
 BEGIN
 	DROP TABLE TestSchema.TestSchemaA
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT  SCHEMA_NAME FROM    INFORMATION_SCHEMA.SCHEMATA WHERE   SCHEMA_NAME = 'TestSchema')
 BEGIN
 	DROP SCHEMA [TestSchema]
 END
 
 -- SqlServer.2019
-
 EXEC('CREATE SCHEMA [TestSchema] AUTHORIZATION [dbo]');
 
 CREATE TABLE [dbo].[TestSchemaX]
@@ -1075,7 +962,6 @@ CREATE TABLE [dbo].[TestSchemaX]
 );
 
 -- SqlServer.2019
-
 CREATE TABLE [dbo].[TestSchemaY]
 (
 	[TestSchemaXID]       INT NOT NULL,
@@ -1087,7 +973,6 @@ CREATE TABLE [dbo].[TestSchemaY]
 );
 
 -- SqlServer.2019
-
 CREATE TABLE [TestSchema].[TestSchemaA]
 (
 	[TestSchemaAID] int NOT NULL CONSTRAINT [PK_TestSchema_TestSchemaA] PRIMARY KEY,
@@ -1095,7 +980,6 @@ CREATE TABLE [TestSchema].[TestSchemaA]
 );
 
 -- SqlServer.2019
-
 CREATE TABLE [TestSchema].[TestSchemaB]
 (
 	[TestSchemaBID]           INT NOT NULL,
@@ -1109,12 +993,10 @@ CREATE TABLE [TestSchema].[TestSchemaB]
 );
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'AddIssue792Record')
 	DROP Procedure AddIssue792Record
 
 -- SqlServer.2019
-
 CREATE Procedure AddIssue792Record
 AS
 BEGIN
@@ -1122,16 +1004,13 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 GRANT EXEC ON AddIssue792Record TO PUBLIC
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Issue1144') AND type in (N'U'))
 BEGIN DROP TABLE Issue1144 END
 
 -- SqlServer.2019
-
 CREATE TABLE Issue1144
 (
 	id	INT
@@ -1139,38 +1018,32 @@ CREATE TABLE Issue1144
 )
 
 -- SqlServer.2019
-
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Column <тест> description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'COLUMN',@level2name=N'id'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Index <тест> description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'INDEX',@level2name=N'PK_Issue1144'
 
 -- SqlServer.2019
-
 CREATE TABLE dbo.SameTableName
 (
 	id	INT
 )
 
 -- SqlServer.2019
-
 CREATE TABLE dbo.TestSchema_SameTableName
 (
 	id	INT
 )
 
 -- SqlServer.2019
-
 CREATE TABLE TestSchema.SameTableName
 (
 	id	INT
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.Issue1115') AND type in (N'U'))
 BEGIN DROP TABLE dbo.Issue1115 END
 
 -- SqlServer.2019
-
 CREATE TABLE Issue1115
 (
 	id    hierarchyid    NOT NULL CONSTRAINT PK_Issue1115 PRIMARY KEY CLUSTERED
@@ -1178,17 +1051,14 @@ CREATE TABLE Issue1115
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TableTypeTestProc')
 DROP PROC TableTypeTestProc
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'TestTableType')
 DROP TYPE TestTableType
 
 -- SqlServer.2019
-
 CREATE TYPE TestTableType AS TABLE
 (
 	Id   INT,
@@ -1196,7 +1066,6 @@ CREATE TYPE TestTableType AS TABLE
 )
 
 -- SqlServer.2019
-
 CREATE PROC TableTypeTestProc (
 	@table TestTableType READONLY
 )
@@ -1206,7 +1075,6 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
 BEGIN
@@ -1214,7 +1082,6 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 CREATE FUNCTION TestSchema.SchemaTableFunction(@id int)
 RETURNS TABLE
 AS
@@ -1224,14 +1091,12 @@ RETURN
 )
 
 -- SqlServer.2019
-
 -- PersonSearch
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'PersonSearch')
 BEGIN DROP Procedure PersonSearch END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE PersonSearch
 	@nameFilter	nvarchar(512)
 AS
@@ -1285,12 +1150,10 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Issue1897')
 BEGIN DROP Procedure Issue1897 END
 
 -- SqlServer.2019
-
 CREATE PROCEDURE dbo.Issue1897
 AS
 BEGIN
@@ -1298,12 +1161,10 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'TF' AND name = 'Issue1921')
 BEGIN DROP FUNCTION Issue1921 END
 
 -- SqlServer.2019
-
 CREATE FUNCTION dbo.Issue1921()
 RETURNS @table table (name sysname, objid    int)
 AS
@@ -1314,12 +1175,10 @@ RETURN
 END
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcParameters')
 BEGIN DROP Procedure QueryProcParameters END
 
 -- SqlServer.2019
-
 CREATE Procedure QueryProcParameters
 	@input          int,
 	@output1        int output,
@@ -1331,12 +1190,10 @@ SELECT * FROM Person
 SET @output2 = @input + 2
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcMultipleParameters')
 BEGIN DROP Procedure QueryProcMultipleParameters END
 
 -- SqlServer.2019
-
 CREATE Procedure QueryProcMultipleParameters
 	@input   int,
 	@output1 int output,
@@ -1351,12 +1208,10 @@ SELECT * FROM Doctor
 SET @output3 = @input + 3
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcIntParameters')
 BEGIN DROP Procedure ExecuteProcIntParameters END
 
 -- SqlServer.2019
-
 CREATE Procedure ExecuteProcIntParameters
 	@input          int,
 	@output         int output
@@ -1366,12 +1221,10 @@ SET @output = @input + 1
 UPDATE Person SET FirstName = N'John' WHERE FirstName = N'John'
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcStringParameters')
 BEGIN DROP Procedure ExecuteProcStringParameters END
 
 -- SqlServer.2019
-
 CREATE Procedure ExecuteProcStringParameters
 	@input          int,
 	@output         int output
@@ -1381,14 +1234,12 @@ SET @output = @input + 1
 SELECT N'издрасте'
 
 -- SqlServer.2019
-
 -- ScalarFunction function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'ScalarFunction')
 BEGIN DROP FUNCTION ScalarFunction
 END
 
 -- SqlServer.2019
-
 CREATE FUNCTION ScalarFunction(@value INT)
 RETURNS INT
 AS
@@ -1397,7 +1248,6 @@ BEGIN
 END
 
 -- SqlServer.2019
-
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <тест> procedure!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <тест> procedure parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters', @level2type=N'PARAMETER', @level2name=N'@input'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <тест> table function!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'FUNCTION', @level1name=N'GetParentByID'
@@ -1406,24 +1256,20 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <те�
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <тест> scalar function parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'FUNCTION', @level1name=N'ScalarFunction', @level2type=N'PARAMETER', @level2name=N'@value'
 
 -- SqlServer.2019
-
 -- test T4 name conflict
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.DataType') AND type in (N'U'))
 BEGIN DROP TABLE dbo.DataType END
 
 -- SqlServer.2019
-
 CREATE TABLE DataType
 (
 	id INT NOT NULL
 )
 
 -- SqlServer.2019
-
 DROP TABLE CollatedTable
 
 -- SqlServer.2019
-
 CREATE TABLE CollatedTable
 (
 	Id              INT NOT NULL,
@@ -1432,30 +1278,24 @@ CREATE TABLE CollatedTable
 )
 
 -- SqlServer.2019
-
 IF EXISTS (SELECT name FROM sys.sequences  WHERE name = N'TestSequence')
 	DROP SEQUENCE dbo.TestSequence
 
 -- SqlServer.2019
-
 CREATE SEQUENCE dbo.TestSequence
 	START WITH 1
 	INCREMENT BY 1;
 
 -- SqlServer.2019
-
 -- one-to-one (by primary key) relation for scaffold testing
 
 -- SqlServer.2019
-
 DROP TABLE Provider
 
 -- SqlServer.2019
-
 DROP TABLE Member
 
 -- SqlServer.2019
-
 CREATE TABLE Member(
 	MemberId INT IDENTITY(1,1) NOT NULL,
 	Alias    NVARCHAR(50)      NOT NULL,
@@ -1463,7 +1303,6 @@ CREATE TABLE Member(
 )
 
 -- SqlServer.2019
-
 CREATE TABLE Provider(
 	ProviderId INT           NOT NULL,
 	Test       NVARCHAR(MAX) NOT NULL,
@@ -1471,7 +1310,6 @@ CREATE TABLE Provider(
 )
 
 -- SqlServer.2019
-
 ALTER TABLE Provider WITH CHECK ADD CONSTRAINT FK_Provider_Member FOREIGN KEY(ProviderId) REFERENCES Member (MemberId)
 
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)

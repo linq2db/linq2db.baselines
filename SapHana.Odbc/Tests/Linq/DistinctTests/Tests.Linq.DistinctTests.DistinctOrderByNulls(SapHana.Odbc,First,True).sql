@@ -11,7 +11,6 @@ ORDER BY
 LIMIT ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

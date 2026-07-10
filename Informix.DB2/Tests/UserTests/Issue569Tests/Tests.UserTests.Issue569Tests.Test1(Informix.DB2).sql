@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	sub.PersonID_1,
 	sub.FirstName,

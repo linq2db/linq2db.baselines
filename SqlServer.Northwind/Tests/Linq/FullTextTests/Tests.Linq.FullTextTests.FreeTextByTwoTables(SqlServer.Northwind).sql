@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[c1].[CategoryID],
 	[c1].[CategoryName],

@@ -1,21 +1,16 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE Doctor
 
 -- Informix.DB2 Informix
-
 DROP TABLE Patient
 
 -- Informix.DB2 Informix
-
 DROP TABLE Person
 
 -- Informix.DB2 Informix
-
 DROP TABLE InheritanceParent
 
 -- Informix.DB2 Informix
-
 CREATE TABLE InheritanceParent
 (
 	InheritanceParentId int          NOT NULL,
@@ -26,11 +21,9 @@ CREATE TABLE InheritanceParent
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE InheritanceChild
 
 -- Informix.DB2 Informix
-
 CREATE TABLE InheritanceChild
 (
 	InheritanceChildId  int          NOT NULL,
@@ -42,7 +35,6 @@ CREATE TABLE InheritanceChild
 )
 
 -- Informix.DB2 Informix
-
 CREATE TABLE Person
 (
 	PersonID   SERIAL       NOT NULL,
@@ -55,23 +47,18 @@ CREATE TABLE Person
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 -- Informix.DB2 Informix
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 -- Informix.DB2 Informix
-
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 -- Informix.DB2 Informix
-
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 -- Informix.DB2 Informix
-
 -- Doctor Table Extension
 
 CREATE TABLE Doctor
@@ -84,11 +71,9 @@ CREATE TABLE Doctor
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 -- Informix.DB2 Informix
-
 -- Patient Table Extension
 
 CREATE TABLE Patient
@@ -101,39 +86,30 @@ CREATE TABLE Patient
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 -- Informix.DB2 Informix
-
 DROP TABLE Parent
 
 -- Informix.DB2 Informix
-
 DROP TABLE Child
 
 -- Informix.DB2 Informix
-
 DROP TABLE GrandChild
 
 -- Informix.DB2 Informix
-
 CREATE TABLE Parent      (ParentID int, Value1 int)
 
 -- Informix.DB2 Informix
-
 CREATE TABLE Child       (ParentID int, ChildID int)
 
 -- Informix.DB2 Informix
-
 CREATE TABLE GrandChild  (ParentID int, ChildID int, GrandChildID int)
 
 -- Informix.DB2 Informix
-
 DROP TABLE LinqDataTypes
 
 -- Informix.DB2 Informix
-
 CREATE TABLE LinqDataTypes
 (
 	ID             int,
@@ -150,22 +126,18 @@ CREATE TABLE LinqDataTypes
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestIdentity
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestIdentity (
 	ID SERIAL NOT NULL,
 	PRIMARY KEY(ID)
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE AllTypes
 
 -- Informix.DB2 Informix
-
 CREATE TABLE AllTypes
 (
 	ID   SERIAL                          NOT NULL,
@@ -199,11 +171,9 @@ CREATE TABLE AllTypes
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO AllTypes (bigintDataType) VALUES (NULL)
 
 -- Informix.DB2 Informix
-
 INSERT INTO AllTypes
 (
 	bigintDataType,
@@ -252,21 +222,17 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DROP VIEW PersonView
 
 -- Informix.DB2 Informix
-
 CREATE VIEW PersonView
 AS
 SELECT * FROM Person
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestUnique
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestUnique (
 	ID1 INT NOT NULL,
 	ID2 INT NOT NULL,
@@ -277,11 +243,9 @@ CREATE TABLE TestUnique (
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestFKUnique
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestFKUnique (
 	ID1 INT NOT NULL,
 	ID2 INT NOT NULL,
@@ -292,15 +256,12 @@ CREATE TABLE TestFKUnique (
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestMerge1
 
 -- Informix.DB2 Informix
-
 DROP TABLE TestMerge2
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestMerge1
 (
 	Id       int          NOT NULL,
@@ -328,7 +289,6 @@ CREATE TABLE TestMerge1
 )
 
 -- Informix.DB2 Informix
-
 CREATE TABLE TestMerge2
 (
 	Id       int          NOT NULL,
@@ -356,21 +316,17 @@ CREATE TABLE TestMerge2
 )
 
 -- Informix.DB2 Informix
-
 DROP PROCEDURE IF EXISTS AddIssue792Record
 
 -- Informix.DB2 Informix
-
 CREATE PROCEDURE AddIssue792Record()
 	INSERT INTO AllTypes(char20DataType) VALUES('issue792');
 END PROCEDURE
 
 -- Informix.DB2 Informix
-
 DROP TABLE CollatedTable
 
 -- Informix.DB2 Informix
-
 CREATE TABLE CollatedTable
 (
 	Id				INT NOT NULL,

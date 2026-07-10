@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "CteChild"
 (
 	"ChildID",
@@ -34,7 +33,6 @@ FROM
 		INNER JOIN LAST0 "c4_1" ON "c4_1"."ParentID" = "t1"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ChildID",
 	"t1"."ParentID"
@@ -45,7 +43,6 @@ ORDER BY
 	"t1"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"c4"."ChildID",
 	"c4"."ParentID"

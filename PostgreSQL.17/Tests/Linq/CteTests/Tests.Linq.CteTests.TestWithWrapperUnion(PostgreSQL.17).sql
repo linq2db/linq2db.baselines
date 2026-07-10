@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"Child_ParentID",
@@ -38,7 +37,6 @@ FROM
 	"CTE_1" t1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"Child_ParentID",

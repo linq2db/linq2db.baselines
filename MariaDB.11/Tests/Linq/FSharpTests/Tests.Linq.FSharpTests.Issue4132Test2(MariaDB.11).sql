@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4132Table`
 (
 	`Id`,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Issue4132Table` `row_1`
 SET
@@ -23,7 +21,6 @@ WHERE
 	`row_1`.`Number` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Number`,

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 'alice' AS "Name", 99 AS "Id", 42 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -37,7 +36,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -53,7 +51,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Name",

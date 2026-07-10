@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	SUM(CASE
 		WHEN "t"."CategoryId" = 1 THEN "t"."IntValue"

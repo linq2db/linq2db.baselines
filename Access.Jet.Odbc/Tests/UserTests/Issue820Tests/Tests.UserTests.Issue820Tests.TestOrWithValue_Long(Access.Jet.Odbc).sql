@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	? = [t1].[BigIntValue]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

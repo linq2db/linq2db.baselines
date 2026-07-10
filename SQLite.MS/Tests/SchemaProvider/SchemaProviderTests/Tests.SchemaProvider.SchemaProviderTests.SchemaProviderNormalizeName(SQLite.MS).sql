@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 create table Customer
 					(
 						ID int not null primary key,
@@ -7,7 +6,6 @@ create table Customer
 					)
 
 -- SQLite.MS SQLite
-
 create table Purchase
 					(
 						ID int not null primary key,
@@ -18,7 +16,6 @@ create table Purchase
 					)
 
 -- SQLite.MS SQLite
-
 create table PurchaseItem
 					(
 						ID int not null primary key,
@@ -28,7 +25,6 @@ create table PurchaseItem
 					)
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -44,7 +40,6 @@ create table PurchaseItem
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -57,7 +52,6 @@ create table PurchaseItem
 			
 
 -- SQLite.MS SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -88,7 +82,6 @@ create table PurchaseItem
 
 -- SQLite.MS SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -98,7 +91,6 @@ create table PurchaseItem
 			
 
 -- SQLite.MS SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,

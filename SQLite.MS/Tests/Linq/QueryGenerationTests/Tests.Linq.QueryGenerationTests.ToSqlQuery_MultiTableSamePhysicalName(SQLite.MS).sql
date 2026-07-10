@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[PersonID],
 	[d].[PersonID]
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN [Doctor] [d] ON [p].[PersonID] = [d].[PersonID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[PersonID],
 	[d].[PersonID]

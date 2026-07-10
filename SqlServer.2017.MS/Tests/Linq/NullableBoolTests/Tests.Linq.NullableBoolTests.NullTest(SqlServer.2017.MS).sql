@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[t].[Value] IS NULL
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t].[Id],
 	[t].[Value]

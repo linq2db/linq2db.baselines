@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	MAX(CASE
 		WHEN t1."ChildID" > 20 THEN 1

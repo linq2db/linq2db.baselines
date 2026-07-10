@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	nm.MiddleName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	lengthUTF8(nm.MiddleName) <> 0 OR nm.MiddleName IS NULL
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

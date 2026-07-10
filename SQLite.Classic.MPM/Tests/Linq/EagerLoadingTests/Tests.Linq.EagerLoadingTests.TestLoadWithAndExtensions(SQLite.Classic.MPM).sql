@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -22,7 +21,6 @@ FROM
 		LEFT JOIN [SubDetailClass] [a_Detail] ON [d_1].[DetailId] = [a_Detail].[DetailId] OR [d_1].[DetailId] IS NULL AND [a_Detail].[DetailId] IS NULL
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[d].[DetailId],
 	[d].[MasterId],

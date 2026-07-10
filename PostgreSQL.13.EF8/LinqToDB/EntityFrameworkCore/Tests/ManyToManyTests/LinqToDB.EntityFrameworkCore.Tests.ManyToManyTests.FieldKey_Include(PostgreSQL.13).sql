@@ -11,7 +11,6 @@ ORDER BY r."Id", t."AccountsAccountId", t."RolesId"
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	o."Name"
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name"

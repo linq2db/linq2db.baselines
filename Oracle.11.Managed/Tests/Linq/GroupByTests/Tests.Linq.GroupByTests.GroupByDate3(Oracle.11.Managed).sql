@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	SUM(grp_1."MoneyValue"),
 	EXTRACT(YEAR FROM grp_1."c1"),
@@ -16,7 +15,6 @@ GROUP BY
 	grp_1."c1"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	SUM(grp_1."MoneyValue"),
 	EXTRACT(YEAR FROM grp_1."c1"),

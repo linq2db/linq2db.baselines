@@ -12,7 +12,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -23,7 +22,6 @@ WHERE
 	r."Column" = '02:03:04.123456'::INTERVAL AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -62,7 +60,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -95,7 +92,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -128,7 +124,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -176,7 +171,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -188,7 +182,6 @@ WHERE
 	r.ColumnNullable = '02:03:04.123456'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -229,7 +222,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -266,7 +258,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -301,7 +292,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -336,7 +326,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -348,7 +337,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -360,7 +348,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -382,7 +369,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -394,7 +380,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -412,7 +397,6 @@ VALUES
 ($p1,'2 days 23456789012 microseconds'::INTERVAL,'30 days 12345678901 microseconds'::INTERVAL)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -424,7 +408,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -444,7 +427,6 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -456,7 +438,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -476,7 +457,6 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -488,7 +468,6 @@ WHERE
 	r.ColumnNullable = '30 days 12345678901 microseconds'::INTERVAL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -500,7 +479,6 @@ WHERE
 	r.ColumnNullable = '56789012 microseconds'::INTERVAL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -512,7 +490,6 @@ WHERE
 	r.ColumnNullable = '56789012 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -534,7 +511,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -546,7 +522,6 @@ WHERE
 	r.ColumnNullable = '56789012 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -564,7 +539,6 @@ VALUES
 ($p1,'56789012 microseconds'::INTERVAL,'56789012 microseconds'::INTERVAL)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -576,7 +550,6 @@ WHERE
 	r.ColumnNullable = '56789012 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -596,7 +569,6 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -608,7 +580,6 @@ WHERE
 	r.ColumnNullable = '56789012 microseconds'::INTERVAL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -628,7 +599,6 @@ ORDER BY
 INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",

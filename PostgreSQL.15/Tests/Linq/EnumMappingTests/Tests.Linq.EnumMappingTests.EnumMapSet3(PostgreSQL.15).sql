@@ -8,7 +8,6 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"LinqDataTypes"
 SET
@@ -30,7 +28,6 @@ WHERE
 	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."IntValue" = 3
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

@@ -35,7 +35,6 @@ ORDER BY `p`.`ProductID`, `s1`.`OrderID0`, `s1`.`ProductID`, `s1`.`OrderID`, `s1
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`SupplierId`,
 	`m_1`.`ProductId`,
@@ -70,7 +69,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ProductID`,
 	`d`.`Discount`,
@@ -101,7 +99,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ProductName`,
 	`p`.`ProductID`

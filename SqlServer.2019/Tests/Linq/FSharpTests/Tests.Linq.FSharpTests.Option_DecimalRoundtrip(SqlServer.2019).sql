@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]
@@ -43,7 +42,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

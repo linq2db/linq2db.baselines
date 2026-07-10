@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	ess.ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	ess.ID
 FROM

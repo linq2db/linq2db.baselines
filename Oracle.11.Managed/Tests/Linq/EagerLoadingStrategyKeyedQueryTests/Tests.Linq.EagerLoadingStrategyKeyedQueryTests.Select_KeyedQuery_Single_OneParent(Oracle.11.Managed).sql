@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -9,7 +8,6 @@ WHERE
 	c_1."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	k_1."item",
 	d."Id",

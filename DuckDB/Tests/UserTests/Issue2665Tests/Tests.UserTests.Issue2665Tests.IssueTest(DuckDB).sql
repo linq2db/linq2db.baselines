@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	pa.Id
 FROM

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."TestId"
@@ -20,7 +19,6 @@ ORDER BY
 	t1."TestId"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."TestId"

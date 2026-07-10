@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT([x_1].[Key2]),
 	COUNT([x_1].[Key1])

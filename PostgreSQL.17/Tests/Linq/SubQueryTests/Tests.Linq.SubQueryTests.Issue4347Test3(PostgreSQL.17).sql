@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN "LineEntity" d ON m_1."Id" = d."TransactionId"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."ValidOn"

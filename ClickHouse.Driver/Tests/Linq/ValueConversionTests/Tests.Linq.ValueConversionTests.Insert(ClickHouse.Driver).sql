@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO ValueConversion
 (
 	Id,
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,
@@ -39,7 +37,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO ValueConversion
 (
 	Id,
@@ -60,7 +57,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,
@@ -79,7 +75,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO ValueConversion
 (
 	Id,
@@ -108,7 +103,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	e.Id,
 	e.Value1,
@@ -127,7 +121,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

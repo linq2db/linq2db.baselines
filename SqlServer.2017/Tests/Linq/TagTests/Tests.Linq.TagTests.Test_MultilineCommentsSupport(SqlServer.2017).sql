@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 /* My custom
 wonderful multiline
 query tag */

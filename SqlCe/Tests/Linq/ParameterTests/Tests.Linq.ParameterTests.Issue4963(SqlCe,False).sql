@@ -8,7 +8,6 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + @offset AS TinyInt)
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Field]

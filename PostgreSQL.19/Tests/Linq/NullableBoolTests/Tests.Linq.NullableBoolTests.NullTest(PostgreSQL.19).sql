@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Value"
@@ -9,7 +8,6 @@ WHERE
 	t."Value" IS NULL
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Value"

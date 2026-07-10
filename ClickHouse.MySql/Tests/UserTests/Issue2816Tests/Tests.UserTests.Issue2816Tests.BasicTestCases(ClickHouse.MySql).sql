@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.Id,
 	p.Text
@@ -10,7 +9,6 @@ WHERE
 |||| || | | | | | | | | | | | | | | | | |　', ''))
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Text

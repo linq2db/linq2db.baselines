@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	a_Book.BookId,
 	a_Book.BookName
@@ -21,7 +20,6 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.AuthorId,
 	a_Book.BookId,
@@ -35,7 +33,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.AuthorId,
 	t1.AuthorName

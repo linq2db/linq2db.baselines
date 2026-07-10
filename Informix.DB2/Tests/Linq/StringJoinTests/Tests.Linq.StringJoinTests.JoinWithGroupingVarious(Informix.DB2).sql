@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Key_1,
 	d.NullableValue
@@ -15,7 +14,6 @@ ORDER BY
 	m_1.Key_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.Key_1,
 	d.NullableValue
@@ -33,7 +31,6 @@ ORDER BY
 	m_1.Key_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.Key_1,
 	d.NotNullableValue
@@ -49,7 +46,6 @@ ORDER BY
 	m_1.Key_1
 
 -- Informix.DB2 Informix
-
 SELECT DISTINCT
 	g_1.Id
 FROM
@@ -58,7 +54,6 @@ ORDER BY
 	g_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PK,
 	t1.Id,

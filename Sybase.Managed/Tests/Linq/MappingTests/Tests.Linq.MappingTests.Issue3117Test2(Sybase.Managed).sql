@@ -14,7 +14,6 @@ VALUES
 SELECT @@IDENTITY
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id]
 FROM
@@ -32,7 +31,6 @@ WHERE
 	[u].[Id] = @userId
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[u].[Id]
 FROM

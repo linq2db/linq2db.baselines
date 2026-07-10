@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	SUM(Coalesce("a_Parent"."Value1", 0))
 FROM

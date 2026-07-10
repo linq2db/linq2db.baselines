@@ -37,7 +37,6 @@ WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

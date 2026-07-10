@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[m_1].[Value] = 'Frau'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

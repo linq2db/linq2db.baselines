@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

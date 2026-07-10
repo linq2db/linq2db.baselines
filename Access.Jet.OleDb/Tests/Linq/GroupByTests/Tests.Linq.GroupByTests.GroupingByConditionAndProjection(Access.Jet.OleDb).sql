@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

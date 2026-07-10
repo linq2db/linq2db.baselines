@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_Update`
 (
 	`ID`       INT         NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `FluentTemp_Update`
 

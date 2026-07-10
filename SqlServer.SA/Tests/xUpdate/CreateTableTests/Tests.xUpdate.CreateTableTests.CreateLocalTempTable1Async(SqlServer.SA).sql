@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 DROP TABLE [tempdb]..[#TestTable]
 
 -- SqlServer.SA SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[ID]        Int            NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -23,6 +20,5 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE [tempdb]..[#TestTable]
 

@@ -28,7 +28,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Type",
 	t1."Id",
@@ -62,7 +61,6 @@ WHERE
 	"Base2"."Id" = :Id
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Type",
 	t1."Id",

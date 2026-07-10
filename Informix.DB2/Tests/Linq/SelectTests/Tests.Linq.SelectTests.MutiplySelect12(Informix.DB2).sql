@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	grandChild_1.ParentID,
 	grandChild_1.ChildID,

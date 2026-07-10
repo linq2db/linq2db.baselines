@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[d].[Id],
 	[d].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[d].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -28,7 +26,6 @@ ORDER BY
 	[d].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

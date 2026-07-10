@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "ComplexPropertyTarget" Target
 USING (
 	SELECT 1 AS "Id", 'first-updated' AS "Code", 1 AS "Nested_Field" FROM sys.dual) "Source"
@@ -54,7 +53,6 @@ SET
 	"Field" = "Source"."Nested_Field"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Code",

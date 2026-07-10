@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -16,7 +14,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 INSERT ASYNC BULK [TempTable](Name)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t].[Name]
 FROM
@@ -24,7 +21,6 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 

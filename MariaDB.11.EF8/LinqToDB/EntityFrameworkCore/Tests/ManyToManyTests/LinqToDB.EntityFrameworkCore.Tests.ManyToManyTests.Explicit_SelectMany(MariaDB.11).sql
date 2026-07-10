@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`o`.`Id`
 FROM

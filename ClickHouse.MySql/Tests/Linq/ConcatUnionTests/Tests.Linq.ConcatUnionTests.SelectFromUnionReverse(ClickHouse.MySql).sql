@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	DENSE_RANK() OVER (ORDER BY t_1.ID),
 	t_1.ID

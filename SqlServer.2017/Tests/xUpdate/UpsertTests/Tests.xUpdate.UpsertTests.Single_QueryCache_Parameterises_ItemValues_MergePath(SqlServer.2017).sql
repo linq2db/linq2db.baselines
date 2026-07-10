@@ -36,7 +36,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(42,N'first-update',50,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -64,7 +63,6 @@ SET
 ;
 
 -- SqlServer.2017
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(42,N'second-update',99,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -92,7 +90,6 @@ SET
 ;
 
 -- SqlServer.2017
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."PersonID" + y.item
 FROM
@@ -9,7 +8,6 @@ FROM
 		) y(item)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN "a_Patient"."PersonID" IS NOT NULL THEN '1'

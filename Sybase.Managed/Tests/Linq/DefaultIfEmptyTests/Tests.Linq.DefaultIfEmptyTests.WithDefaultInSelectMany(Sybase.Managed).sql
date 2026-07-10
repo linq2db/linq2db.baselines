@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[s].[ParentID],
 	[c_1].[ParentID],
@@ -11,7 +10,6 @@ WHERE
 	[c_1].[ChildID] < 0 OR [c_1].[ParentID] IS NULL
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +24,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

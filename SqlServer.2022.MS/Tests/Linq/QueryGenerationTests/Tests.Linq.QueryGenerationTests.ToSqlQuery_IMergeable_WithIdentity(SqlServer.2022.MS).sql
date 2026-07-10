@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES
 	(1,2)

@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	maxOrNull(t1.ID)
 FROM
 	AllTypes t1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.floatDataType,
 	t1.doubleDataType

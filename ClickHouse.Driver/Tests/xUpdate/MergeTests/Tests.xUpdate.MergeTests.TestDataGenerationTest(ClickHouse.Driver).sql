@@ -1,11 +1,9 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TestMerge1
 DELETE WHERE 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge1
 (
 	Id,
@@ -22,7 +20,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge1
 (
 	Id,
@@ -39,7 +36,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge1
 (
 	Id,
@@ -56,7 +52,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge1
 (
 	Id,
@@ -73,13 +68,11 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TestMerge2
 DELETE WHERE 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge2
 (
 	Id,
@@ -96,7 +89,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge2
 (
 	Id,
@@ -113,7 +105,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge2
 (
 	Id,
@@ -130,7 +121,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TestMerge2
 (
 	Id,
@@ -147,7 +137,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -161,7 +150,6 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Field1,

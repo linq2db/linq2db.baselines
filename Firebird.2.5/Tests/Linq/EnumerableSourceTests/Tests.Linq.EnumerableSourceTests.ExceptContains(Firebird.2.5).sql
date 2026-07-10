@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN "r"."PersonID" IN (1, 2, 3) THEN '1'

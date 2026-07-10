@@ -35,7 +35,6 @@ ORDER BY "o"."OrderID", "e0"."EmployeeID", "s"."EmployeeID", "s"."TerritoryID", 
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[EmployeeId],
 	[d].[IsDeleted],
@@ -63,7 +62,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrderId],
 	[d].[IsDeleted],
@@ -100,7 +98,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a_Employee].[IsDeleted],
 	[a_Employee].[EmployeeID],

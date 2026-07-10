@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	e.Id,
 	e.RecSrc,

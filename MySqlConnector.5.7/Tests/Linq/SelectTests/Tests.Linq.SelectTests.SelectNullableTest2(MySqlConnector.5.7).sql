@@ -48,7 +48,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,
@@ -65,7 +64,6 @@ WHERE
 LIMIT 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`

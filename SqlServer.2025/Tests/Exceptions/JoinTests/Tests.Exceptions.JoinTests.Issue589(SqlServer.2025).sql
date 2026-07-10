@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[grandChild_1].[GrandChildID],
 	[child_1].[ChildID],

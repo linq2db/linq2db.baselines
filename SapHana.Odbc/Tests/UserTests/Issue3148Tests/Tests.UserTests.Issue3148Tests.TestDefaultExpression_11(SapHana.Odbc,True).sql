@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."commonMiscConstantId",
 	"t1"."intmandatory",

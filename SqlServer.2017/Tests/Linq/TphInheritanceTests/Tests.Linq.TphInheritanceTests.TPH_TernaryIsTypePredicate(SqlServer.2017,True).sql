@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[e].[Code],
 	[e].[Id],

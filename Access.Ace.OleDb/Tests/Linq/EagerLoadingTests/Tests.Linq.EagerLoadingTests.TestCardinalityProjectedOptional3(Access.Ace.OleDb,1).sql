@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id] as [Id_1],

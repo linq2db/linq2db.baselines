@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe' AS [item]) [n] ON [p].[LastName] = [n].[item]
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

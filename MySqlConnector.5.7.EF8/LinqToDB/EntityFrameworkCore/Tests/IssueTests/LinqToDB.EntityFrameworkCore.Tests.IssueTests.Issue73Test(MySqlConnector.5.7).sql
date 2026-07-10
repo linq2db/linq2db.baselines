@@ -5,7 +5,6 @@ WHERE `i`.`Name` = 'Name1_3'
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CONCAT(Coalesce(`a_Parent`.`Name`, ''), '>', `x`.`Name`)
 FROM

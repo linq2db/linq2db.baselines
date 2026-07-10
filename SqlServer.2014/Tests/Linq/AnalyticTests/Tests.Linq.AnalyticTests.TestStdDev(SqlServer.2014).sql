@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	STDEV([c_1].[ChildID]),
 	STDEV([c_1].[ChildID]),
@@ -12,21 +11,18 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.2014
-
 SELECT
 	STDEV([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2014
-
 SELECT
 	STDEV(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2014
-
 SELECT
 	STDEV(DISTINCT [t1].[ParentID])
 FROM

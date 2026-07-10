@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"
@@ -56,7 +54,6 @@ ORDER BY
 	r.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 WITH [CTE_1] ([ParentID], [Value1])
 AS
 (

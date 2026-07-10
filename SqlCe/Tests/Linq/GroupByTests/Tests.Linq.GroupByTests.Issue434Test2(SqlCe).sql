@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID] as [PersonID_1],
@@ -11,7 +10,6 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

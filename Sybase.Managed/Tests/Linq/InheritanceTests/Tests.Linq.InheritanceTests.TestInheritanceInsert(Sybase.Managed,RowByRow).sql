@@ -141,7 +141,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

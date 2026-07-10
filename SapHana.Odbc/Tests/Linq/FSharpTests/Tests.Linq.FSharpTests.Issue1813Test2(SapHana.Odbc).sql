@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -62,7 +61,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"after_1"."Id",
 	"after_1"."Name"

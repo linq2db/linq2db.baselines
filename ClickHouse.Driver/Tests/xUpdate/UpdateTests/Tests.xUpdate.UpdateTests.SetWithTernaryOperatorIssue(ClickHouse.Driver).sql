@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO Person
 (
 	PersonID,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	Person
 UPDATE
@@ -27,7 +25,6 @@ WHERE
 	startsWith(FirstName, 'UpdateComplex')
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.PersonID,
 	t1.Gender,

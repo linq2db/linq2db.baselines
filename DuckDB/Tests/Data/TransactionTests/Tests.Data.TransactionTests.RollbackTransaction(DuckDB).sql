@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 UPDATE
 	Parent
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- DuckDB
-
 SELECT
 	t.ParentID,
 	t.Value1

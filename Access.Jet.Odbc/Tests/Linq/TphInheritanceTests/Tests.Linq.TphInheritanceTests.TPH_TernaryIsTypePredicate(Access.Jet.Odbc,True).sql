@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[e].[Code],
 	[e].[Id],

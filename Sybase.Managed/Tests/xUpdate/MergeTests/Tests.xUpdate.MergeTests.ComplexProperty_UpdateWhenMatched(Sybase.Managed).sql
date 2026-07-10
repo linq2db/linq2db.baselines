@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (
 	SELECT 1 AS [Id], 'first-updated' AS [Code], 1 AS [Nested_Field]) [Source]
@@ -59,7 +58,6 @@ SET
 	[Field] = [Source].[Nested_Field]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Code],

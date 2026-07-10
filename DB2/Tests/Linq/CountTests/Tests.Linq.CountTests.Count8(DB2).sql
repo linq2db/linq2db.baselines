@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"a_Parent"."ParentID"
 FROM

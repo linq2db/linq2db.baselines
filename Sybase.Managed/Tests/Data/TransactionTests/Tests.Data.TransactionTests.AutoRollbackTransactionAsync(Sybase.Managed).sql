@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Parent]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t].[ParentID],
 	[t].[Value1]

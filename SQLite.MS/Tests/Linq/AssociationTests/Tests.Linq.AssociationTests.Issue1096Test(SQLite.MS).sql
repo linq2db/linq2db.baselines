@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

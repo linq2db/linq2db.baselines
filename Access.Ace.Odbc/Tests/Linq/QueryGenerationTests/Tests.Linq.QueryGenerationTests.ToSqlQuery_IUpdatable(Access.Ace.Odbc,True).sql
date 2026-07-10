@@ -12,14 +12,12 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[TableWithIdentity] [t1]
 SET
 	[t1].[Value] = 123
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

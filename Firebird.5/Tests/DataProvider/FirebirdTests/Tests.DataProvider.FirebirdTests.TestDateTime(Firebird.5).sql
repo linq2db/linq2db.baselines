@@ -1,9 +1,7 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT Cast('2012-12-12 12:12:12' as timestamp) FROM "Dual"
 
 -- Firebird.5 Firebird4
-
 SELECT Cast('2012-12-12 12:12:12' as timestamp) FROM "Dual"
 
 -- Firebird.5 Firebird4

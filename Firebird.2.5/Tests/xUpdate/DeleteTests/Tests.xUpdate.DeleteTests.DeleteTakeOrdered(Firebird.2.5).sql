@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE
@@ -188,7 +187,6 @@ ORDER BY
 ROWS @take
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Value1"
 FROM
@@ -199,7 +197,6 @@ ORDER BY
 	"r"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

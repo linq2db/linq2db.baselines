@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE1_` (`ParentID`)
 AS
 (
@@ -29,7 +28,6 @@ FROM
 		INNER JOIN `LAST0` `c4_1` ON `c4_1`.`ParentID` = `p`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`c4`.`ParentID`,
 	`c4`.`ChildID`

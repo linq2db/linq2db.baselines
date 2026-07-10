@@ -41,7 +41,6 @@ WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

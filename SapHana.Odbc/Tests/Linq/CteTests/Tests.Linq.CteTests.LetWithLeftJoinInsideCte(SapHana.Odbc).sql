@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("S1")
 AS
 (

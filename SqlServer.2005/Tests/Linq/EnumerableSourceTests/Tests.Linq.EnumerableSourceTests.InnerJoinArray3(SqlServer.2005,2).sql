@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -18,7 +17,6 @@ FROM
 			SELECT N'Doe') [n] ON [p].[LastName] = [n].[item]
 
 -- SqlServer.2005
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

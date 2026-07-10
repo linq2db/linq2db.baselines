@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID]
@@ -19,7 +18,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[BigIntValue]
 FROM

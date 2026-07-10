@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TABLE temp_table_1
 (
 	ID      Int           NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE temp_table_1
 INSERT BULK temp_table_1
 
 -- Informix.DB2 Informix
-
 CREATE TABLE temp_table_2
 (
 	"Value" NVarChar(50) NOT NULL,
@@ -20,7 +18,6 @@ CREATE TABLE temp_table_2
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO temp_table_2
 (
 	"Value"
@@ -39,10 +36,8 @@ FROM
 		) t1 ON gr.ID = t1.ID AND t1.rn = 1
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS temp_table_1
 

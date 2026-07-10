@@ -14,7 +14,6 @@ WHERE
 	[ct].[id] = N'TestProcessService'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -25,7 +24,6 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[x].[id],
 	[x].[service_id],

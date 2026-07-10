@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],

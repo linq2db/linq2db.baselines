@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	TestMerge2
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO TestMerge1 Target
 USING (
 	SELECT
@@ -224,7 +221,6 @@ ON (Target.Id = Source.Id)
 WHEN MATCHED THEN DELETE
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,

@@ -14,7 +14,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t."Data"

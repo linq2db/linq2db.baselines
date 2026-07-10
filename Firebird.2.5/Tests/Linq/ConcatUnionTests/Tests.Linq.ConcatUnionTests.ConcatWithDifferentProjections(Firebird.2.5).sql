@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p1"."ParentID",
 	"p1"."ParentID",
@@ -15,7 +14,6 @@ FROM
 	"Parent" "p2"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

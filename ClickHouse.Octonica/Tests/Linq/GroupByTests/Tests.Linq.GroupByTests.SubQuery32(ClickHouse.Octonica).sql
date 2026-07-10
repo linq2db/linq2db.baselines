@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	g_2.Key_1,
 	SUM(g_2.ParentID)

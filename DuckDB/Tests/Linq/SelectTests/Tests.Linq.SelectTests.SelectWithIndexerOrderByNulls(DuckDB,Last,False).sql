@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x.ID,
 	x.Index_1
@@ -19,7 +18,6 @@ ORDER BY
 	x.ID
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

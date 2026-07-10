@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t3"."Id",
 	"t3"."ResourceID",

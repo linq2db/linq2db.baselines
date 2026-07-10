@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x_1."MiddleName",
 	x_1."LastName"
@@ -16,7 +15,6 @@ ORDER BY
 	Coalesce(x_1."LastName", '-1')
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

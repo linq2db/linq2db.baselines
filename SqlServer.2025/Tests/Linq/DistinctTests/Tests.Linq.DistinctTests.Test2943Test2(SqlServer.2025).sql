@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT DISTINCT
 	[r].[F1],
 	[r].[F2]

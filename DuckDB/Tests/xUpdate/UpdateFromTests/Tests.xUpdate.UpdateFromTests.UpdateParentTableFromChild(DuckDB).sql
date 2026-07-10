@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	ParentTable
 SET
@@ -10,7 +9,6 @@ WHERE
 	ParentTable.Id = 2 AND c_1.ParentId = ParentTable.Id
 
 -- DuckDB
-
 SELECT
 	p.Id,
 	p."Value"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	arg."Id",
 	arg."Value"
@@ -10,7 +9,6 @@ FROM
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	arg."Id",
 	arg."Value"

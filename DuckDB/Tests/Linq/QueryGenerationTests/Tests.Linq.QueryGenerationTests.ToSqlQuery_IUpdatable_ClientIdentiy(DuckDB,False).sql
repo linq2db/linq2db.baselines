@@ -22,7 +22,6 @@ SET
 	"Value" = $newValue
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

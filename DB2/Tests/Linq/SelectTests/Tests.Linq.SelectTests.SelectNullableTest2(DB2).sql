@@ -48,7 +48,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",
@@ -65,7 +64,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"LinqDataTypes" "t1"
 WHERE

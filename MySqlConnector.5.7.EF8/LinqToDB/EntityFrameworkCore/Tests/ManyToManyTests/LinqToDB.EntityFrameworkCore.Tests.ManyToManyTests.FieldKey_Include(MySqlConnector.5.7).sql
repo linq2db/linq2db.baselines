@@ -11,7 +11,6 @@ ORDER BY `r`.`Id`, `t`.`AccountsAccountId`, `t`.`RolesId`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Name`
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

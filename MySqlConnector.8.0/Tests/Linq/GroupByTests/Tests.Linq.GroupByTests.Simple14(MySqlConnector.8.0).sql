@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`ParentID`,
 	`d_1`.`Key_1`
@@ -20,7 +19,6 @@ FROM
 		) `d_1` ON 1=1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`ParentID`
 FROM

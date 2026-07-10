@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 UPDATE
 	[t2]
 SET

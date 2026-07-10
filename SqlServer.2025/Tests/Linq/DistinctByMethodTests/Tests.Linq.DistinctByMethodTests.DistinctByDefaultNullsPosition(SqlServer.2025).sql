@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[x].[Id]
 FROM
@@ -22,7 +21,6 @@ ORDER BY
 	[x].[Id]
 
 -- SqlServer.2025
-
 SELECT
 	[x].[Id]
 FROM

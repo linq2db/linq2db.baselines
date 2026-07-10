@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"t"."VarCharColumn"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"t"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."VarCharColumn"
 FROM

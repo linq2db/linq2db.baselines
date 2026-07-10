@@ -1,16 +1,13 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL,
@@ -19,7 +16,6 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[ID]
@@ -34,7 +30,6 @@ VALUES
 (7)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[ID]
 FROM
@@ -42,6 +37,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

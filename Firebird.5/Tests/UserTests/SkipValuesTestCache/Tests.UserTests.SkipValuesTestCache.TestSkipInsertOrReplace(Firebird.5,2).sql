@@ -31,7 +31,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",
@@ -75,7 +74,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."Name",

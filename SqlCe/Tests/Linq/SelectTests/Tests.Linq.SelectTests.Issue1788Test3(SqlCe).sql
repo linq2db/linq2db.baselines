@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1]
@@ -7,7 +6,6 @@ FROM
 	[Table1788] [t1]
 
 -- SqlCe
-
 SELECT
 	[l].[Value1]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.Id,
 	concat('Element ', Coalesce(r.VarCharTextNullable, ''), ' Text1'),

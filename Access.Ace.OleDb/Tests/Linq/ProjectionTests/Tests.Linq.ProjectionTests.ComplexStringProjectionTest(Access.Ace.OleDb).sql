@@ -14,7 +14,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t].[ID],
 	[t].[Data]

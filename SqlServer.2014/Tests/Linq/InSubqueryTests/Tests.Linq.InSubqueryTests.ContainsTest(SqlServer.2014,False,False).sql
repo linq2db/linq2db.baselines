@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	IIF(1 IN (
 		SELECT

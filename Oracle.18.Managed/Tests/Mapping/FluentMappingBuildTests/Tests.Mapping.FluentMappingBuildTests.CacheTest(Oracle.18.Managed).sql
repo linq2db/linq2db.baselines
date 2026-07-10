@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Cache"
@@ -40,7 +39,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."Value",
@@ -51,7 +49,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
@@ -62,7 +59,6 @@ EXCEPTION
 END;
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Cache"
@@ -103,7 +99,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."Value",
@@ -114,7 +109,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
@@ -125,7 +119,6 @@ EXCEPTION
 END;
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Cache"
@@ -166,7 +159,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."Column",
@@ -177,7 +169,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION
@@ -188,7 +179,6 @@ EXCEPTION
 END;
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp_Cache"
@@ -229,7 +219,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."Column",
@@ -240,7 +229,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp_Cache"';
 EXCEPTION

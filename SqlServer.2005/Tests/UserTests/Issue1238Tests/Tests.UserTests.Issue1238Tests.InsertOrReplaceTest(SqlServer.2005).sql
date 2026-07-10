@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
@@ -39,7 +38,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -80,7 +78,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

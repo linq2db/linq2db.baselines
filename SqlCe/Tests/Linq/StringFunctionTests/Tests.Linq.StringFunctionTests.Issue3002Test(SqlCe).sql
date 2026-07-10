@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [SampleClass]
 (
 	[Id],

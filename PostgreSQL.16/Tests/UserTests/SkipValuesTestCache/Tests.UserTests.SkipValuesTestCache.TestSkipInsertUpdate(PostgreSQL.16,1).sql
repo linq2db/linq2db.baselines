@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -41,7 +40,6 @@ WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = :Id
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

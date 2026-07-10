@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	CAST(DateAdd(year, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)
 FROM

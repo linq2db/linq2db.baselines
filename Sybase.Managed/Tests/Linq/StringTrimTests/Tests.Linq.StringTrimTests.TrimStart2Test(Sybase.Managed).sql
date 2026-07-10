@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	'...++' || Coalesce([t].[VarCharColumn], '')
 FROM
 	[StringTrimTable] [t]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

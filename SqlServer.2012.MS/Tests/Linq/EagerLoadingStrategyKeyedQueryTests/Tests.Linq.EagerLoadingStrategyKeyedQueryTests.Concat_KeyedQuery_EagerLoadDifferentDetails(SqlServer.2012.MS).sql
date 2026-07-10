@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -27,7 +26,6 @@ FROM
 	) [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],
@@ -47,7 +45,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

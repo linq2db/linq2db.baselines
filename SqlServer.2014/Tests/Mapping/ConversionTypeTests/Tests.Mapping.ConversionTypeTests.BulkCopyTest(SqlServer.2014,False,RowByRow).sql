@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -26,7 +25,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2014
-
 SELECT
 	[r].[ID],
 	[r].[Data]

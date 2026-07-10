@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [Person]
 (
 	[FirstName],

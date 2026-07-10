@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.IntValue,
@@ -53,7 +52,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.IntValue,

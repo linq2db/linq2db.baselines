@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	SUM(grp_1."MoneyValue"),
 	grp_1."Year_1",

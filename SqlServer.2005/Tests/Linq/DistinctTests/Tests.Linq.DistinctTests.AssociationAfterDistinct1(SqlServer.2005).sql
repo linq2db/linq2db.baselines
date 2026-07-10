@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t2].[ParentID],
 	[t2].[ChildID]
@@ -23,7 +22,6 @@ ORDER BY
 	)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

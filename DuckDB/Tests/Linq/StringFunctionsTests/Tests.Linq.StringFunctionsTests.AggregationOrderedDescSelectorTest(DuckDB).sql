@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	STRING_AGG(g_1.Value1, ' -> ' ORDER BY g_1.Value3 DESC NULLS FIRST, g_1.Value1 NULLS FIRST)
 FROM

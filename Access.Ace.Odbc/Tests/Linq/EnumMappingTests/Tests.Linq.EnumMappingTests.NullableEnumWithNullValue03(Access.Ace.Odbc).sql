@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[StringValue]
@@ -71,7 +70,6 @@ ORDER BY
 	[r].[ID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

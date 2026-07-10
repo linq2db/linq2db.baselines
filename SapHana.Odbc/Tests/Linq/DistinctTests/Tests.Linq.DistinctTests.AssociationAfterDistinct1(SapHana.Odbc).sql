@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t2"."ParentID",
 	"t2"."ChildID"
@@ -23,7 +22,6 @@ ORDER BY
 	)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

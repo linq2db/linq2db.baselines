@@ -14,7 +14,6 @@ ORDER BY
 INSERT BULK TPHTable(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
 -- DuckDB
-
 SELECT
 	t1.Discriminator,
 	t1.Id,
@@ -28,7 +27,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -43,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -58,7 +55,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -73,7 +69,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -88,7 +83,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,
@@ -103,7 +97,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	x.Discriminator,
 	x.Id,

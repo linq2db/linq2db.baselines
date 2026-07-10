@@ -48,7 +48,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",
@@ -67,7 +66,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 1 SKIP 1
 	"p"."ParentID",
 	"p"."Value1"

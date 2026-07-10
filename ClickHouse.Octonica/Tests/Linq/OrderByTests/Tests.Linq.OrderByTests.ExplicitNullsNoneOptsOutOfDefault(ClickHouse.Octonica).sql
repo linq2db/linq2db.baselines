@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 3
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id
 FROM

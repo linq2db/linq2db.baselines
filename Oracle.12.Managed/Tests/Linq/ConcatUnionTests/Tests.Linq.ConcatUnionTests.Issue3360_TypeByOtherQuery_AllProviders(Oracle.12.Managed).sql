@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	p."Str"
@@ -13,7 +12,6 @@ FROM
 	"Issue3360Table" p_1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	CAST('str' AS VarChar(255))

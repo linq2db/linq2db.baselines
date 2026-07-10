@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE `tmptbl1`
 (
 	`ID`    INT           NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE `tmptbl1`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `tmptbl1`
 (
 	`ID`,
@@ -20,7 +18,6 @@ VALUES
 (2,NULL)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE `tmptbl2`
 (
 	`ID`    INT           NOT NULL,
@@ -30,7 +27,6 @@ CREATE TEMPORARY TABLE `tmptbl2`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `tmptbl2`
 (
 	`ID`,
@@ -41,7 +37,6 @@ VALUES
 (3,'Value2')
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE `tmptbl3`
 (
 	`ID`    INT           NOT NULL,
@@ -51,7 +46,6 @@ CREATE TEMPORARY TABLE `tmptbl3`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `tmptbl3`
 (
 	`ID`,
@@ -62,7 +56,6 @@ VALUES
 (2,NULL)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t4`.`ID`,
 	`t4`.`Value`
@@ -72,7 +65,6 @@ FROM
 		LEFT JOIN `tmptbl3` `t4` ON Coalesce(`t3`.`Value`, `t2`.`Value`) = `t4`.`Value` OR `t3`.`Value` IS NULL AND `t2`.`Value` IS NULL AND `t4`.`Value` IS NULL
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -80,7 +72,6 @@ FROM
 	`tmptbl1` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -88,7 +79,6 @@ FROM
 	`tmptbl2` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -96,14 +86,11 @@ FROM
 	`tmptbl3` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `tmptbl3`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `tmptbl2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `tmptbl1`
 

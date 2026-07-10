@@ -24,7 +24,6 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

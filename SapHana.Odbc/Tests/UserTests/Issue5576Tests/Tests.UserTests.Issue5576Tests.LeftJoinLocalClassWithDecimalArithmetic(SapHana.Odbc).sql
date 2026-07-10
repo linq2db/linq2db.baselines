@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"r"."Guid",
 	"lc"."Count",

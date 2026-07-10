@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,N'alpha-new',1), (3,N'gamma',1)
@@ -75,7 +74,6 @@ VALUES
 ;
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Code],

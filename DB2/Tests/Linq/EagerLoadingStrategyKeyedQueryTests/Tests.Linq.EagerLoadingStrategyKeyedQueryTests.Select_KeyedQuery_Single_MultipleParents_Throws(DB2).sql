@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"
@@ -8,7 +7,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

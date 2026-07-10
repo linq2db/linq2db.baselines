@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t2"."ParentID",
 	"t2"."ChildID"
@@ -23,7 +22,6 @@ ORDER BY
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

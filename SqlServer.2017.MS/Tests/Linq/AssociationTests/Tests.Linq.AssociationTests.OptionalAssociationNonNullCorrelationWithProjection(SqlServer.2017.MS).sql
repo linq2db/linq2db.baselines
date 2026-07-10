@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],

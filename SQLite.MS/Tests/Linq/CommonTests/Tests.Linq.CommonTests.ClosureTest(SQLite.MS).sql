@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	1
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	1
 FROM

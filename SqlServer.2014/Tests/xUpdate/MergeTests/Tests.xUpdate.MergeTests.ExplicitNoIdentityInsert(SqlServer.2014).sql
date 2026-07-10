@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
 -- SqlServer.2014
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -38,7 +36,6 @@ VALUES
 ;
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

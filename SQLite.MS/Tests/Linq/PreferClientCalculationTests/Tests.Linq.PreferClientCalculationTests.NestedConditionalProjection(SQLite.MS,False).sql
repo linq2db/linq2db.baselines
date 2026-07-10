@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	CASE
@@ -17,7 +16,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"p"."PersonID",
 	"d"."PersonID"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "Doctor" "d" ON "p"."PersonID" = "d"."PersonID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."PersonID",
 	"d"."PersonID"

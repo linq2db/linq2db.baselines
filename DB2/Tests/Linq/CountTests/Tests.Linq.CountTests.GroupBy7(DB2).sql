@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*),
 	MAX("g_1"."ChildID")

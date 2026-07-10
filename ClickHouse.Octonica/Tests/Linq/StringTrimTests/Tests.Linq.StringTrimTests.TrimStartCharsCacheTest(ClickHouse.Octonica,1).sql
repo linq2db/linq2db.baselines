@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	trim(LEADING '.+' FROM t.VarCharColumn)
 FROM

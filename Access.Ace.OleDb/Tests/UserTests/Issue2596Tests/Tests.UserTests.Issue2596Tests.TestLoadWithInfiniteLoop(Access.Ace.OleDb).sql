@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -26,7 +25,6 @@ FROM
 		LEFT JOIN [Product] [a_Product] ON ([d].[ProductId] = [a_Product].[Id])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -50,7 +48,6 @@ FROM
 		INNER JOIN [AccountTax] [a_Tax] ON ([d].[TaxId] = [a_Tax].[Id])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -71,7 +68,6 @@ FROM
 		INNER JOIN [CustomInvoiceLine] [d] ON ([m_1].[Id] = [d].[CustomInvoiceId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -98,7 +94,6 @@ FROM
 		LEFT JOIN [MeasureSource] [a_PreviousSource] ON ([d].[PreviousSourceId] = [a_PreviousSource].[Id])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -119,7 +114,6 @@ FROM
 		INNER JOIN [TypeBMeasures] [d] ON ([m_1].[Id] = [d].[CustomInvoiceId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[f].[Id],
 	[f].[ContractId],

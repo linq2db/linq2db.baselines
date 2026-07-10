@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*) OVER (),
 	x.Key_1,

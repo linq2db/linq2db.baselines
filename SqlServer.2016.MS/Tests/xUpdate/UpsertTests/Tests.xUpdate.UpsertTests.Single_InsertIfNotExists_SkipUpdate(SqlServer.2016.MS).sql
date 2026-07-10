@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -100,14 +99,12 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

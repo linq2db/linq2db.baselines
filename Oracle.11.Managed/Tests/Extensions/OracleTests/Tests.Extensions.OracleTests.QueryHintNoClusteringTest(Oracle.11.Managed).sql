@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_CLUSTERING */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	nm.FirstName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Length(nm.FirstName) <> 0
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

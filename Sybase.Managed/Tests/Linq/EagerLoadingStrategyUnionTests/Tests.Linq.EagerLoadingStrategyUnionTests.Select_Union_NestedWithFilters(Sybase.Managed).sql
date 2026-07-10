@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[c_1].[Id]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -28,7 +26,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],

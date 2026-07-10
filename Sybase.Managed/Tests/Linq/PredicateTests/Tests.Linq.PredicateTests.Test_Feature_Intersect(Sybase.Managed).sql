@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -11,7 +10,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +32,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -54,7 +50,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -73,7 +68,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -92,7 +86,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -104,7 +97,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -116,7 +108,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -128,7 +119,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -147,7 +137,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -166,7 +155,6 @@ WHERE
 	)
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TableWithIdentity]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

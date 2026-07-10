@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"p"."ParentID",
 	"p"."Value1"
@@ -9,7 +8,6 @@ WHERE
 	"p"."Value1" IS NOT NULL AND "p"."Value1" <> 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

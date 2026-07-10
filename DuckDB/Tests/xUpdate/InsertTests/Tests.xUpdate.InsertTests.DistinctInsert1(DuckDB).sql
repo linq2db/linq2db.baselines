@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	LinqDataTypes c_1
 WHERE
 	c_1.ID > 1000
 
 -- DuckDB
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -26,7 +24,6 @@ FROM
 	) t2
 
 -- DuckDB
-
 DELETE FROM
 	LinqDataTypes c_1
 WHERE

@@ -50,7 +50,6 @@ WHERE
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"v"."id",
 	"v"."Value1",

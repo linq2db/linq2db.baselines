@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS INTEGER) = [d].[ParentID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

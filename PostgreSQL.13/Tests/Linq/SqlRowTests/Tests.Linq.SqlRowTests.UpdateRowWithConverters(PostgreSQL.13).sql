@@ -13,7 +13,6 @@ WHERE
 	x."Id" = 2 AND "ConvertedInts"."Id" = x."Id"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Cents",

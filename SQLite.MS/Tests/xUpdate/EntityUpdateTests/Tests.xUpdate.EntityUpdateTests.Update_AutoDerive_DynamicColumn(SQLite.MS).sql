@@ -12,7 +12,6 @@ WHERE
 	[EntityUpdateDynamicTest].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name]

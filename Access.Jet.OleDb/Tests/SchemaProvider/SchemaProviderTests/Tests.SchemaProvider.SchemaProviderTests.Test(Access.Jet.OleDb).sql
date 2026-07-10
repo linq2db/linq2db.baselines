@@ -67,7 +67,6 @@ SET     @Gender = chr(0)
 [Person_Update]
 
 -- Access.Jet.OleDb AccessOleDb
-
 [ThisProcedureNotVisibleFromODBC]
 
 RollbackTransaction

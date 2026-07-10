@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON
 (
@@ -24,7 +23,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."PictureId",
@@ -35,7 +33,6 @@ WHERE
 	"r"."Deleted" = '0' AND "r"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 MERGE INTO "Issue5289Table" "t1"
 USING (SELECT 1 AS "Id" FROM rdb$database) "s" ON
 (
@@ -60,7 +57,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."PictureId",

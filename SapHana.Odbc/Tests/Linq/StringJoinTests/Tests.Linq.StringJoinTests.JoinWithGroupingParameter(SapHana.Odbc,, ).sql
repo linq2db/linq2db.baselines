@@ -16,7 +16,6 @@ ORDER BY
 	"g_1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."Id",

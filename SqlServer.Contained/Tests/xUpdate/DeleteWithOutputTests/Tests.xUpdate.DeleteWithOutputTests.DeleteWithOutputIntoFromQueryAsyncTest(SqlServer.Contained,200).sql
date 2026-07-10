@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -32,7 +31,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

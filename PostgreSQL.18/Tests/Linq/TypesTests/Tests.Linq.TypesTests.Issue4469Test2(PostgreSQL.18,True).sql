@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	v."Integer"::decimal / 33,
 	v."Decimal" / 33,

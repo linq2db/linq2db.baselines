@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "MessageEventDTOTb2"
 (
 	"Id"

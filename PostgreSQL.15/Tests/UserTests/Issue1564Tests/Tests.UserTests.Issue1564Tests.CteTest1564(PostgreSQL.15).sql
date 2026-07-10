@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",
@@ -39,7 +38,6 @@ FROM
 	"categoryHierarchy" t2
 
 -- PostgreSQL.15 PostgreSQL12
-
 WITH RECURSIVE "categoryHierarchy"
 (
 	"RootCategoryId",

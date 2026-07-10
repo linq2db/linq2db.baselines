@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.FirstName,
 	a_Person.PersonID IS NOT NULL AND a_Person.LastName IS NOT NULL,

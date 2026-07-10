@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Src s
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	s.NullableInt IS NOT NULL
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -24,7 +21,6 @@ WHERE
 	1 = 0
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

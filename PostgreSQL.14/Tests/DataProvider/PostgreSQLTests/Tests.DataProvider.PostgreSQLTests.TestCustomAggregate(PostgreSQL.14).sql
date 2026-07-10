@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	AVG(g_1."doubleDataType"),
 	test_avg(g_1."doubleDataType")

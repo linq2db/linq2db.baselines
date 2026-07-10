@@ -14,7 +14,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ID],
 	[t].[Data]

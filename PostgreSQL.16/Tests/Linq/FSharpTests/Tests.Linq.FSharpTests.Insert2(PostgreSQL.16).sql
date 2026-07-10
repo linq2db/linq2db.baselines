@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	MAX(t1."PersonID")
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	p."FirstName",
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Person" t
 WHERE

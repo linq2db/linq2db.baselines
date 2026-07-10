@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	COUNT(CASE
 		WHEN "t"."IntValue" > 20 THEN 1

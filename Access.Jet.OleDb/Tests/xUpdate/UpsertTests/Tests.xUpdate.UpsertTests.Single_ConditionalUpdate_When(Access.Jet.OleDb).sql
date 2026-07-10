@@ -40,7 +40,6 @@ WHERE
 	[t1].[Id] = @Id AND @Version_1 > [t1].[Version]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],
@@ -96,7 +95,6 @@ WHERE
 	[t1].[Id] = @Id AND @Version_1 > [t1].[Version]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Name],

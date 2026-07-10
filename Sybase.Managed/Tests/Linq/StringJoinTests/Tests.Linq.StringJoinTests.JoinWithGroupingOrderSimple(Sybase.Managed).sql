@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -19,7 +18,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -36,7 +34,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- Sybase.Managed Sybase
-
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
@@ -45,7 +42,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

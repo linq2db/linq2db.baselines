@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."InId",
 	CASE
@@ -17,7 +16,6 @@ WHERE
 	t1."InId" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."InId",
 	CASE

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT DISTINCT TOP 2
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -9,7 +8,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

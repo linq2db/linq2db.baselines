@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`City_Code`,
 	`d_1`.`City_Name`
@@ -26,7 +25,6 @@ FROM
 		INNER JOIN `Cities` `d_1` ON `d_1`.`City_Code` = `m_1`.`City_Code`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`a`.`First_Name`,
 	`a`.`Last_Name`,

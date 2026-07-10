@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

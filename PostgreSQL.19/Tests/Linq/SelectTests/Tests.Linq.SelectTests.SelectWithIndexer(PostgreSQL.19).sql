@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	x."FirstName",
 	x."LastName",
@@ -20,7 +19,6 @@ ORDER BY
 	x."PersonID" DESC
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

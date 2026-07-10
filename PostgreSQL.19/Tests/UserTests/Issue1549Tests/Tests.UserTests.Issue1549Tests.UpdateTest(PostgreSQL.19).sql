@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 UPDATE
 	"billing_TempReading"
 SET
@@ -12,7 +11,6 @@ WHERE
 	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
 
 -- PostgreSQL.19 PostgreSQL12
-
 UPDATE
 	"billing_TempReading"
 SET

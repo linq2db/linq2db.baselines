@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE
@@ -176,7 +175,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "x"
 WHERE
@@ -186,7 +184,6 @@ ORDER BY
 FETCH NEXT 5 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Value1"
 FROM
@@ -197,7 +194,6 @@ ORDER BY
 	"r"."ParentID"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

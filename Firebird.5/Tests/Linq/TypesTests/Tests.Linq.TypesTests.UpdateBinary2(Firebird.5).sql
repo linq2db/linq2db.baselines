@@ -25,7 +25,6 @@ WHERE
 	"t".ID = @p
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",

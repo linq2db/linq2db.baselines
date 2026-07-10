@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1` (`Value1`, `Value2`)
 AS
 (

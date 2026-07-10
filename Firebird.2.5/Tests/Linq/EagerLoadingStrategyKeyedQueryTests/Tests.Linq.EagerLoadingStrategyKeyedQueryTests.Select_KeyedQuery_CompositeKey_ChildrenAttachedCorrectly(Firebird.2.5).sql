@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p"."Region",
 	"p"."Code",
@@ -11,7 +10,6 @@ ORDER BY
 	"p"."Code"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"k_1"."Item1",
 	"k_1"."Item2",

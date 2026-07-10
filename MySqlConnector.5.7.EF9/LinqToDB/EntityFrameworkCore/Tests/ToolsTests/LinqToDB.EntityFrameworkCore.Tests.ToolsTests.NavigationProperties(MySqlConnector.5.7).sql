@@ -25,7 +25,6 @@ ORDER BY `o`.`OrderID`, `o1`.`OrderID`, `o1`.`ProductID`, `p0`.`ProductID`, `o3`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ProductId`,
 	`d`.`OrderID`,
@@ -45,7 +44,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`a_Product`.`ProductID`,
 	`od`.`OrderID`,

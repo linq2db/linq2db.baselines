@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	e.Code,
 	e.Id,

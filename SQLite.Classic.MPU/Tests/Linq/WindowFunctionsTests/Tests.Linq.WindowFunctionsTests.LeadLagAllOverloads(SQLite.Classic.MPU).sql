@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	LEAD([t].[IntValue]) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id]),
 	LEAD([t].[IntValue], 2) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id]),

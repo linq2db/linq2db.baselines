@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t.Value1 || Nvl(To_Char(t.Value2), '') || Nvl(Lower(To_Char(t.Value3)), '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.Value1,

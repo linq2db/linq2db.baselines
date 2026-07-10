@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[grandChild_1].[GrandChildID],
 	[child_1].[ChildID],

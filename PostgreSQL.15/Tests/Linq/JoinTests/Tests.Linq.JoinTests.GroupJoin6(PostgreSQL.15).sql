@@ -18,7 +18,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" + :n = d."ParentID"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."ParentID",
 	p."Value1"

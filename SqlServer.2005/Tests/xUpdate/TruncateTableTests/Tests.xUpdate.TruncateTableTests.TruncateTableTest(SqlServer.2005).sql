@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2005
-
 IF (OBJECT_ID(N'[TestTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestTrun]
 
 -- SqlServer.2005
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -14,10 +12,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlServer.2005
-
 TRUNCATE TABLE [TestTrun]
 
 -- SqlServer.2005
-
 DROP TABLE [TestTrun]
 

@@ -14,7 +14,6 @@ WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = False AND r."ColumnNullable" = True
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"BooleanTable" t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"BooleanTable" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "BooleanTable"
 (
 	"Id",
@@ -100,7 +95,6 @@ VALUES
 (2,False,True)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",
@@ -111,14 +105,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"BooleanTable" t1
 
 INSERT BULK "BooleanTable"(Id, Column, ColumnNullable)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Column",

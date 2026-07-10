@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	c_1."ChildID" = 1001
 
 -- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE

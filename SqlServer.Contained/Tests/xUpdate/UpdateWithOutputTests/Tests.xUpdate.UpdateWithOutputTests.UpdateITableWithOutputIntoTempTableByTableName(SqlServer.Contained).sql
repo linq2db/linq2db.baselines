@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 UPDATE
 	[t]
 SET
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -41,7 +38,6 @@ FROM
 	[DestinationTable_target] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -50,6 +46,5 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

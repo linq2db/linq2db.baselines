@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[SectorId],
 	[a_User].[UserId]
@@ -12,7 +11,6 @@ WHERE
 	[a_UserPosition].[PositionId] = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x].[SectorId]
 FROM

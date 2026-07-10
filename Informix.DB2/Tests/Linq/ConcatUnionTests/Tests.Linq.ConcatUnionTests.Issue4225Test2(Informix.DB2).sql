@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	NVL(x.FirstName, NULL),
 	NVL(x.PersonID, NULL),

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`tt`.`Key_1`,
 	SUM(`tt`.`ChildID`)

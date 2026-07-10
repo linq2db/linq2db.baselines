@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Table]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Struct],
@@ -24,7 +22,6 @@ FROM
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 UPDATE
 	[Table]
 SET
@@ -33,7 +30,6 @@ SET
 	[Class] = -8
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Struct],

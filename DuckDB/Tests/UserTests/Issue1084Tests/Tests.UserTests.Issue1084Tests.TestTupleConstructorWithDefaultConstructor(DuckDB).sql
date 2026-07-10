@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	k_1.StatusBitmask & 128,
 	g_1.StatusBitmask & 128

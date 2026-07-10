@@ -31,7 +31,6 @@ ORDER BY
 LIMIT $take
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name,

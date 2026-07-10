@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[Name]
@@ -24,7 +23,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -49,7 +47,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
@@ -58,7 +55,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

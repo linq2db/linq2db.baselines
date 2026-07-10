@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[data_1].[ParentID],
 	[data_1].[ChildID],

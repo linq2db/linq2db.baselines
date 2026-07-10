@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_Parent."ParentID"
 FROM

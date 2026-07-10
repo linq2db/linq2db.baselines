@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

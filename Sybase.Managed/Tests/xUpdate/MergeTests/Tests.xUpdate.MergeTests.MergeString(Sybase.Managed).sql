@@ -1,12 +1,10 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [AllTypes] [Target]
 USING (
 	SELECT 3 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], 'test' + char(0) + 'it' AS [nvarcharDataType]) [Source]
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[ID],
 	[t1].[charDataType],

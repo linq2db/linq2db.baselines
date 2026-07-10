@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	d.Id,
 	d.Name
@@ -9,7 +8,6 @@ ORDER BY
 	d.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	k_1.item,
 	d.Id,
@@ -28,7 +26,6 @@ ORDER BY
 	d.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	k_1.item,
 	d.Id,

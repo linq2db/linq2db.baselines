@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
 	[Ints] [i]
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

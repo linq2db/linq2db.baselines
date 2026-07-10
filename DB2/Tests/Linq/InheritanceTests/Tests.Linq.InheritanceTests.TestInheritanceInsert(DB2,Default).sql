@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "InheritanceFilter"
 (
 	"Id",
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Code",
 	"t1"."Id",

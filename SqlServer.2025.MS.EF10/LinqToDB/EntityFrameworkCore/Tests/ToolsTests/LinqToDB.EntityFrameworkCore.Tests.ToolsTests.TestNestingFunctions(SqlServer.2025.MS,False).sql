@@ -19,7 +19,6 @@ ORDER BY [p].[ProductID]
 
 
 -- SqlServer.2025
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -47,7 +46,6 @@ WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -71,7 +69,6 @@ WHERE
 	[PR_1598_Update_Table].[Id] = @Id
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

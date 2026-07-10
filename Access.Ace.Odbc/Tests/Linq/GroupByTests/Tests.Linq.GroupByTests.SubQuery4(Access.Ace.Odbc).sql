@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[g_2].[n],
 	SUM([g_2].[ParentID])

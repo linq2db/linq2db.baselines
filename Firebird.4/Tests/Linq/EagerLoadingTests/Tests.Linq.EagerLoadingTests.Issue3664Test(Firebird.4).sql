@@ -26,7 +26,6 @@ WHERE
 	"d"."Id" = @id
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM
@@ -47,7 +46,6 @@ WHERE
 	"d"."Id" = @id
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id"
 FROM

@@ -25,7 +25,6 @@ WHERE
 	"t"."ID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."ID",
 	"t"."MoneyValue",

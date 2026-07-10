@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.Id,
 	e.GuidValue,
@@ -11,7 +10,6 @@ WHERE
 	(concat(Coalesce(e.StringValue, ''), '1')) = 'StrValue1'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

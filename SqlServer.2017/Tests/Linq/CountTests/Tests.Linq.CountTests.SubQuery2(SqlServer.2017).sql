@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	IIF([p].[Value1] IS NULL, (
 		SELECT

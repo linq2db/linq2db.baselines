@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`gr_1`.`ID`,
 	`gr_1`.`ID` + 1

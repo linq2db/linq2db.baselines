@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
 	"t1"."ParentID" > 1000
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"Parent"
 SET

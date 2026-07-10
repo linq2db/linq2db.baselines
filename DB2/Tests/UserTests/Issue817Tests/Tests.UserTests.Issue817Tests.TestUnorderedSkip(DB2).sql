@@ -1,12 +1,10 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(*)
 FROM
 	"Person" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	1
 FROM

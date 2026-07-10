@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [CTE_1] ([S1])
 AS
 (

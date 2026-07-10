@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE
@@ -28,7 +27,6 @@ SET     @:p9 = {NULL,NULL,NULL,NULL}
 INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9)
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE

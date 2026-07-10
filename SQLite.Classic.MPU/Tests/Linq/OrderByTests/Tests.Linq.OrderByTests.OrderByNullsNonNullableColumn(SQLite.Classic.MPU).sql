@@ -13,7 +13,6 @@ ORDER BY
 LIMIT @take
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

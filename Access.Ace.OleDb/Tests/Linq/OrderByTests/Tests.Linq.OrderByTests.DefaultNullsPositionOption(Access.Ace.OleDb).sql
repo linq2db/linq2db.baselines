@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 3
 	[x].[Id]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	[x].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 3
 	[x].[Id]
 FROM

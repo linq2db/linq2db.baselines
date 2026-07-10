@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

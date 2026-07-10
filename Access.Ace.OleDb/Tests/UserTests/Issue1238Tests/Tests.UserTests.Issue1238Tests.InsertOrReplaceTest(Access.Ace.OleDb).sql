@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[InheritanceParent] [t1]
 
@@ -38,7 +37,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ WHERE
 	[t1].[InheritanceParentId] = @Key1 AND [t1].[Name] IS NULL
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

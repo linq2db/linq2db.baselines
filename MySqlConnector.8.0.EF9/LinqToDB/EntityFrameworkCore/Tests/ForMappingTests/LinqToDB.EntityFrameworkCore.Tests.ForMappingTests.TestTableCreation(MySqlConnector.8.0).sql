@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `WithIdentity`
 (
 	`Id`   int      AUTO_INCREMENT NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `WithIdentity`
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `NoIdentity`
 (
 	`Id`   char(36) NOT NULL,
@@ -23,13 +21,11 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 

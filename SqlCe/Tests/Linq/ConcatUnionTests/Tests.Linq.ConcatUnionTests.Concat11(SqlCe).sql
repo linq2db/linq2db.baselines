@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Parent].[ParentID],
 	[a_Parent].[ParentID] as [ParentID_1],

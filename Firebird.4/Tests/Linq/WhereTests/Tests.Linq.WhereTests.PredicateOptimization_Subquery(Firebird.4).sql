@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p".PK,
 	"p"."Id",
@@ -25,7 +24,6 @@ WHERE
 	) > CAST('2023-01-01' AS TimeStamp)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"p".PK,
 	"p"."Id",

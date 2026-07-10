@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[contract].[Id],
 	[servProj].[IdContract]

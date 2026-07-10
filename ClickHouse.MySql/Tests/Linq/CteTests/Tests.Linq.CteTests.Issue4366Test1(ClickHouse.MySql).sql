@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE d AS
 (
 	SELECT

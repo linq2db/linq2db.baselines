@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	CASE
 		WHEN 1 IN (
@@ -13,7 +12,6 @@ SELECT
 	END
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	CASE
 		WHEN -1 IN (

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	c_1.ParentID,
 	c_1.ChildID
@@ -16,7 +15,6 @@ WHERE
 	c_1.ParentID = p_1.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	c_1.ParentID,
 	c_1.ChildID

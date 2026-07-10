@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -10,7 +9,6 @@ WHERE
 	r.Column = false AND r.ColumnNullable = true
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -21,13 +19,11 @@ WHERE
 	r.Column = false AND r.ColumnNullable = true
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -42,7 +38,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -57,7 +52,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -68,13 +62,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -86,7 +78,6 @@ VALUES
 (2,false,true)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -97,13 +88,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	BooleanTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -115,7 +104,6 @@ VALUES
 (2,false,true)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,

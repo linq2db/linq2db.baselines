@@ -25,7 +25,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1` (`S1`)
 AS
 (

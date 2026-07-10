@@ -1,12 +1,10 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE
 	t1."PersonID" > 4
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"UpdateSubquerySourceTable"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"UpdateSubquerySourceTable"."Id" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."FirstName",
@@ -34,7 +31,6 @@ ORDER BY
 	t1."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Person" t1
 WHERE

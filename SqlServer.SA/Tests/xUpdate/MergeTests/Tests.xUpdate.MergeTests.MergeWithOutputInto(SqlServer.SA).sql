@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 CREATE TABLE [tempdb]..[#InsertTempTable]
 (
 	[Action]    NVarChar(4000)     NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[#InsertTempTable]
 )
 
 -- SqlServer.SA SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -115,7 +113,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -221,7 +218,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -272,7 +268,6 @@ INTO [tempdb]..[#InsertTempTable]
 ;
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
@@ -282,6 +277,5 @@ FROM
 	[tempdb]..[#InsertTempTable] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable]
 

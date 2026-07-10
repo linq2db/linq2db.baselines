@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT TOP (2)
 	[t1].[Type],
 	[t1].[Id],

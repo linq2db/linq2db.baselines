@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

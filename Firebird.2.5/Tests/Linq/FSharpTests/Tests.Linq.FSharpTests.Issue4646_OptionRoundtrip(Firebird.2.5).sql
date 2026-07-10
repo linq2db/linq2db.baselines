@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."IntValue",
@@ -52,7 +51,6 @@ WHERE
 	"r"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."IntValue",

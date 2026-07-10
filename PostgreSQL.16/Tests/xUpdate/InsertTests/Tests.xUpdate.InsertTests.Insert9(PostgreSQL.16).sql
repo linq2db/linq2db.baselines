@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" > 1000
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" p
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	c_1."ParentID" = :id
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" > 1000
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" p
 WHERE

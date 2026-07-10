@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	i_1.ReceiptNo,
 	a_Customer.BILLGROUP

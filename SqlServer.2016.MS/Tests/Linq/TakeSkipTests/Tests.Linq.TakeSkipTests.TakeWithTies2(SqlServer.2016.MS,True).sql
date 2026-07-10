@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (50) PERCENT WITH TIES
 	[t1].[FirstName],
 	[t1].[PersonID],

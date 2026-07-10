@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado'),

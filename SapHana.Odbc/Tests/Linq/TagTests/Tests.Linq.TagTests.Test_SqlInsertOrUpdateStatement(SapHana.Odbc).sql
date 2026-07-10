@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 /* My Test */
 UPSERT "TestTable"
 (

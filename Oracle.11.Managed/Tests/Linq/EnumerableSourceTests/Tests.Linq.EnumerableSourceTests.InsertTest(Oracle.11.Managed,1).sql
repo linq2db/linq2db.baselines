@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -18,7 +17,6 @@ WHERE
 	t."Id" IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TableToInsert"
 (
 	"Id",

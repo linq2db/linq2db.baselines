@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	Coalesce([t2].[Sum_1], 0)
 FROM
@@ -19,7 +18,6 @@ FROM
 		) [t2]
 
 -- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

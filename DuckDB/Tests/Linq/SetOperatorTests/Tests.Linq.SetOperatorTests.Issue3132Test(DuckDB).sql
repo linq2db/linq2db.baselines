@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x.MiddleName,
 	COUNT(*)

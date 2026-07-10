@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TrimTestTable" Target
 USING (
 	SELECT 1 AS ID, '***OOO***' AS "Data_1" FROM sys.dual
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TrimTestTable" Target
 USING (
 	SELECT 3 AS ID, '***III***' AS "Data_1" FROM sys.dual) "Source"
@@ -49,7 +47,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"
@@ -59,7 +56,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"

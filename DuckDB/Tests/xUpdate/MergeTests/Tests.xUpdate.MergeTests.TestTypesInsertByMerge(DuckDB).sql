@@ -1,15 +1,12 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	TestMerge1 t1
 
 -- DuckDB
-
 DELETE FROM
 	TestMerge2 t1
 
 -- DuckDB
-
 MERGE INTO TestMerge1 Target
 USING (VALUES
 	(1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
@@ -90,7 +87,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO TestMerge2 Target
 USING (VALUES
 	(3,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','','-1.17549996E-38'::FLOAT,2.2250738585072014E-308,'2098-10-12 21:14:15.907000'::TIMESTAMP,'2001-11-22 14:53:14.123345+00'::TIMESTAMPTZ,'\xFF\xC8\x64\x32\x14\x00'::BLOB,'ffffffff-ffff-ffff-ffff-ffffffffffff'::UUID,-0.123,'2111-11-23 00:00:00.000000'::TIMESTAMP,'23:59:59.999999'::TIME,NULL,-2147483647),
@@ -172,7 +168,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -199,7 +194,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field1,

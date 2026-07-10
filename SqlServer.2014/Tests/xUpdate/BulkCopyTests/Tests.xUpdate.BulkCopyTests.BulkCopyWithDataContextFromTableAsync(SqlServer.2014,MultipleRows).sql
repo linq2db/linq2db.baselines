@@ -3,7 +3,6 @@
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 -- SqlServer.2014
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -16,7 +15,6 @@ INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 -- SqlServer.2014
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

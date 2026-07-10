@@ -24,14 +24,12 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
 	`xxPerson` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,
@@ -65,7 +63,6 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

@@ -1,17 +1,13 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast('1' as char)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast('1' as char)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast('1' as char(1))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT Cast('1' as char(1))
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

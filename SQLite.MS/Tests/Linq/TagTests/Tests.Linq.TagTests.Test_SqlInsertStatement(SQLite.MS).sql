@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* My Test */
 INSERT INTO [TestTable]
 (

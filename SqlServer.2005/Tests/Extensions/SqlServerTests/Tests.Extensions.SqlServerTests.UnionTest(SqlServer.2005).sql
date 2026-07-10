@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT /* qb_1 */
 	[p].[ParentID],
 	[p].[Value1]

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO ExplicitComplexPropertyTarget Target
 USING (VALUES
 	(1,True)
@@ -33,7 +32,6 @@ SET
 	Field = Source.TestsxUpdateMergeTestsIExplicitComplexPropertyField
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Field

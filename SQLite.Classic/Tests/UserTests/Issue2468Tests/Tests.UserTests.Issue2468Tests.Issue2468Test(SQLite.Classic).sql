@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[Status],

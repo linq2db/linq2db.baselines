@@ -16,7 +16,6 @@ ORDER BY
 	[t1].[Value1] DESC
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

@@ -32,7 +32,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,
@@ -171,7 +168,6 @@ WHERE
 LIMIT 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

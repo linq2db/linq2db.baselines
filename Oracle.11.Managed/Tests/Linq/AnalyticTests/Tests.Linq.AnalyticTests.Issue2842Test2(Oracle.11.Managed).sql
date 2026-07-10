@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."FirstName",
 	RANK() OVER (ORDER BY CASE

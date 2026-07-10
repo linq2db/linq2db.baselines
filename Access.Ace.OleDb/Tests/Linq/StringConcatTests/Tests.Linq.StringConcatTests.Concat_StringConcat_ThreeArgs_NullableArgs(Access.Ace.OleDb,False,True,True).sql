@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Value1] + IIF([t].[Value2] IS NULL, '', [t].[Value2]) + IIF([t].[Value3] IS NULL, '', [t].[Value3])
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

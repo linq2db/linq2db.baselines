@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +30,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -65,7 +63,6 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -98,7 +95,6 @@ WHERE
 	) = ([r].[Value5] + ?))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -131,7 +127,6 @@ WHERE
 	) = ([r].[Value5] + ?))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -164,7 +159,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -197,7 +191,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -230,7 +223,6 @@ WHERE
 	) = ([r].[Value5] + ?)), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -263,7 +255,6 @@ WHERE
 	) = ([r].[Value5] + ?)), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -298,7 +289,6 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -333,7 +323,6 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -366,7 +355,6 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -399,7 +387,6 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -432,7 +419,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -465,7 +451,6 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -498,7 +483,6 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -531,7 +515,6 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -564,7 +547,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -597,7 +579,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -630,7 +611,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -663,7 +643,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -696,7 +675,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -729,7 +707,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -762,7 +739,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -795,7 +771,6 @@ WHERE
 	) + [r].[Value5])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -828,7 +803,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -861,7 +835,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -894,7 +867,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -927,7 +899,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -960,7 +931,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -993,7 +963,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1026,7 +995,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1059,7 +1027,6 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

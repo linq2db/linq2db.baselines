@@ -1,9 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 DELETE FROM [test_temp]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -38,11 +35,9 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE FROM [test_temp]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [test_temp]
 (
 	[Field1]

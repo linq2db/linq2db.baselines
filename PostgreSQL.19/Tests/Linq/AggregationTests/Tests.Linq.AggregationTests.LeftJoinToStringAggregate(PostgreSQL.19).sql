@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	u."Id",
 	u."Name",
@@ -20,7 +19,6 @@ FROM
 		) aq ON aq."Key_1" = u."Id"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -28,7 +26,6 @@ FROM
 	"User" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."UserId",
 	t1."MachineId",

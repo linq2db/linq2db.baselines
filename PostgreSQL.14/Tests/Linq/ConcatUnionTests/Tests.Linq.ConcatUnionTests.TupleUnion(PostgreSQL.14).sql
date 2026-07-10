@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p1."ParentID",
 	p1."Value1"
@@ -17,7 +16,6 @@ WHERE
 	p2."ParentID" <= 3
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

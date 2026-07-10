@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -19,7 +18,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2005
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -36,7 +34,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2005
-
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
@@ -45,7 +42,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

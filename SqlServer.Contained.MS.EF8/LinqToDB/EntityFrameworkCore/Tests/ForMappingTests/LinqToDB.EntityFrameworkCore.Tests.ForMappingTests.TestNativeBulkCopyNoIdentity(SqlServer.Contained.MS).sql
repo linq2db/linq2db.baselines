@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
 	[Id]   uniqueidentifier NOT NULL,
@@ -15,7 +14,6 @@ INSERT BULK [tempdb]..[#NoIdentity](Id, Name)
 
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -25,7 +23,6 @@ FROM
 
 
 -- SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 
 

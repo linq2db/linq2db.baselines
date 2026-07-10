@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[Value_1]
@@ -23,7 +22,6 @@ ORDER BY
 	[d_1].[Value_1]
 
 -- SqlServer.2008
-
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM
@@ -32,7 +30,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

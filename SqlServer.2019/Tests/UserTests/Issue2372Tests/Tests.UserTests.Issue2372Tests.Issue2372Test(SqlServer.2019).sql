@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 DROP TABLE IF EXISTS [InventoryResource]
 
 -- SqlServer.2019

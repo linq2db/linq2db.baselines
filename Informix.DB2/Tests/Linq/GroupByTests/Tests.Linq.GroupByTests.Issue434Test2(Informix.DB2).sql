@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.PersonID,
 	d.PersonID,
@@ -11,7 +10,6 @@ WHERE
 	Lower(m_1.FirstName) LIKE '%test%' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.FirstName,
 	p.PersonID

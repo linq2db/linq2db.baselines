@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[TrimTestTable] [t1]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[t1].[ID] = 3
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[TrimTestTable] [t]
 SET
@@ -17,7 +15,6 @@ WHERE
 	[t].[Data] = '***XXX***'
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[TrimTestTable] [t]
 SET
@@ -26,7 +23,6 @@ WHERE
 	[t].[Data] = '***HHH***'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -36,7 +32,6 @@ ORDER BY
 	[r].[ID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[Data]

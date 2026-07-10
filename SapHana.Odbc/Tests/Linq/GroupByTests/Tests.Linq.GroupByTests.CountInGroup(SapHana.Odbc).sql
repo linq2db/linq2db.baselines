@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."GroupId",
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	"t"."GroupId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."GroupId",

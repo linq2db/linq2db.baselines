@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	author.Id,
 	author.Name

@@ -19,7 +19,6 @@ WHERE
 	@param = t1.BigIntValue
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

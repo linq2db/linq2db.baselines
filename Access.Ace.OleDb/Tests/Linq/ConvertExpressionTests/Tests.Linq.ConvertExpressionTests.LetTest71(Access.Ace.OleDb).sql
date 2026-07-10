@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 5000
 	[t].[ParentID],
 	EXISTS(

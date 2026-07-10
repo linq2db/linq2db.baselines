@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Value]
@@ -43,7 +42,6 @@ WHERE
 	[r].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Value]

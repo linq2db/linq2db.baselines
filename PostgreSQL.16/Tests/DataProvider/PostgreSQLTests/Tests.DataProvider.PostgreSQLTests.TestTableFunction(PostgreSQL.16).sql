@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."bigintDataType",
@@ -44,7 +43,6 @@ FROM
 	"TestTableFunctionSchema"() t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."bigintDataType",
@@ -91,7 +89,6 @@ ORDER BY
 	t1."ID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."bigintDataType",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	(N'{}' + [p].[LastName]) = (N'{}' + [p].[LastName])
 
 -- SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

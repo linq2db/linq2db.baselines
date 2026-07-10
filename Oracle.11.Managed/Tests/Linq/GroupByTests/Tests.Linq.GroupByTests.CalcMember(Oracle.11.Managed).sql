@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	groupedData_1."Key_1",
 	COUNT(*)

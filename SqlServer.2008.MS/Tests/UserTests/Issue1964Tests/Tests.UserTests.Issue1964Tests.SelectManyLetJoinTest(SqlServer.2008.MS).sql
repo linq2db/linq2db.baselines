@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[m_1].[BranchAddress],
 	[m_1].[BranchId],

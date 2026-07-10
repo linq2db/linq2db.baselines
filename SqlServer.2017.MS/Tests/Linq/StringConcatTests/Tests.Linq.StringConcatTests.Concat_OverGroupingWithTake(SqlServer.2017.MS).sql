@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Key_1],
 	Coalesce((
@@ -28,7 +27,6 @@ ORDER BY
 	[t1].[Key_1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

@@ -1,7 +1,6 @@
 ﻿INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -11,14 +10,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -28,14 +25,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -45,14 +40,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -62,14 +55,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -79,14 +70,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -96,14 +85,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -113,14 +100,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -130,14 +115,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -147,14 +130,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -164,14 +145,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -181,14 +160,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -198,14 +175,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -215,14 +190,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -232,14 +205,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -249,14 +220,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -266,14 +235,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -283,14 +250,12 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 
 INSERT ASYNC BULK "BulkCopyTable"(Id, Value)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -300,7 +265,6 @@ ORDER BY
 	t1."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"BulkCopyTable" t1
 

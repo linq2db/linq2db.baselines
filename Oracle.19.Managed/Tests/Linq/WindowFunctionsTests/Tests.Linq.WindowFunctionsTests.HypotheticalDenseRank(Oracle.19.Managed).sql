@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_1."CategoryId",
 	DENSE_RANK(1000) WITHIN GROUP (ORDER BY g_1."IntValue"),

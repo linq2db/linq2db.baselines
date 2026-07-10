@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	ip.InvestorId,
 	t1.Units,

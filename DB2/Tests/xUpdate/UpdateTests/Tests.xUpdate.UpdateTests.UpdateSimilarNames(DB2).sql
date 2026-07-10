@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Child"
 (
 	"ChildID",

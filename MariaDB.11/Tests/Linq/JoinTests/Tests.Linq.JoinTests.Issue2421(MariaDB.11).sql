@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`SectorId`,
 	`a_User`.`UserId`
@@ -12,7 +11,6 @@ WHERE
 	`a_UserPosition`.`PositionId` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`SectorId`
 FROM

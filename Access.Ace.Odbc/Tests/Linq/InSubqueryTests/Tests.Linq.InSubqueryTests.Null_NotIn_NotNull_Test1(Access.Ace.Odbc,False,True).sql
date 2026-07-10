@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[PK],
 	[t].[ID],
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[PK],
 	[t1].[ID],
@@ -24,7 +22,6 @@ FROM
 	[test_in_1] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[PK],
 	[t1].[ID]

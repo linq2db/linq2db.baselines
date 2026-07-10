@@ -21,7 +21,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -54,7 +53,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -87,7 +85,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -120,7 +117,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -153,7 +149,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -186,7 +181,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -219,7 +213,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -252,7 +245,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -285,7 +277,6 @@ WHERE
 	)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -296,7 +287,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -307,7 +297,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

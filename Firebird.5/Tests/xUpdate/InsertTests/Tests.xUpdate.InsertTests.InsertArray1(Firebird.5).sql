@@ -1,12 +1,10 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID > 1000
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "LinqDataTypes"
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t".ID,
 	"t"."MoneyValue",
@@ -37,7 +34,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

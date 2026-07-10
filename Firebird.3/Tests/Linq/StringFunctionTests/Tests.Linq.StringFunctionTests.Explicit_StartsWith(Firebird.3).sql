@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'Hall'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) STARTING WITH 'hall'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	Lower("r"."Diagnosis") STARTING WITH 'hall'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

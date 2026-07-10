@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT DISTINCT
 	DatePart(year, [g_1].[DateTimeValue])
 FROM

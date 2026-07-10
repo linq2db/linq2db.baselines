@@ -36,7 +36,6 @@ WHERE
 	"TrimTestTable"."Data" = :p
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

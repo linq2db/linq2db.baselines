@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -37,7 +36,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]

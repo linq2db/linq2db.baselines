@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -22,7 +20,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

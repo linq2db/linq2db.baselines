@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(t1.ID)
 FROM
 	AllTypes t1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.floatDataType,
 	t1.doubleDataType

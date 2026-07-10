@@ -20,7 +20,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN `Message` `d` ON `m_1`.`Id` = `d`.`TopicId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,

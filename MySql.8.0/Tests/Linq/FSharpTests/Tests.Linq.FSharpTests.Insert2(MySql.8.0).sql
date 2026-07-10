@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	MAX(`t1`.`PersonID`)
 FROM
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`p`.`PersonID`,
 	`p`.`FirstName`,
@@ -45,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`Person`

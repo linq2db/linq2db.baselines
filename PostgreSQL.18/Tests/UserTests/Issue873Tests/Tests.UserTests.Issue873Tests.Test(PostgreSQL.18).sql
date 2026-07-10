@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	' ' || Coalesce(f."Value1", 0)::text,
 	Coalesce(t1."SubSum", 0),

@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 TRUNCATE TABLE test_temp
 
 -- Informix.DB2 Informix
-
 INSERT INTO test_temp
 (
 	Field1
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO test_temp
 (
 	Field1
@@ -37,11 +34,9 @@ ORDER BY
 	t1.ID
 
 -- Informix.DB2 Informix
-
 TRUNCATE TABLE test_temp
 
 -- Informix.DB2 Informix
-
 INSERT INTO test_temp
 (
 	Field1
@@ -52,7 +47,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 INSERT INTO test_temp
 (
 	Field1

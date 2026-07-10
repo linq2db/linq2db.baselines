@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_Merge
 
 -- Informix.DB2 Informix
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Merge
 (
 	ID   Int          NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO FluentTemp_Merge Target
 USING (
 	SELECT 1::Int AS ID, 'John II'::NVarChar(20) AS Name FROM table(set{1})) Source
@@ -58,6 +55,5 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_Merge
 

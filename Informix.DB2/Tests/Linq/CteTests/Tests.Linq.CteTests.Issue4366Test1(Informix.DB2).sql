@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH d
 (
 	FullName,

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	o.ParentID,
 	(
@@ -22,14 +21,12 @@ FROM
 	Parent o
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	Parent o
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.ParentID,
 	x.CountResult,

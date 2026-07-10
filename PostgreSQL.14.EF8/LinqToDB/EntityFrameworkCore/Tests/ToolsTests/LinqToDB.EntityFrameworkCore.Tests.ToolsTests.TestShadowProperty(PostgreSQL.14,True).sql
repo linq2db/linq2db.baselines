@@ -7,7 +7,6 @@ WHERE @__ef_filter__p_0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."QuantityPerUnit"
 FROM

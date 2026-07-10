@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.Id,
 	toInt64(ROW_NUMBER() OVER (PARTITION BY t.CategoryId ORDER BY t.Id)),

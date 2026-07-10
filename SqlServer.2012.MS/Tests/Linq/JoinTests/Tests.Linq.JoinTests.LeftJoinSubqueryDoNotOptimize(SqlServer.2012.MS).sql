@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[p].[PersonID],
 	Coalesce([m_2].[MiddleName], N'default2')
@@ -14,7 +13,6 @@ FROM
 		) [m_2] ON [p].[PersonID] = [m_2].[c1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

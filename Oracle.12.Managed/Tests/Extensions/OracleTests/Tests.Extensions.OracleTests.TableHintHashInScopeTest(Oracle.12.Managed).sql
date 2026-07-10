@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT /*+ HASH(p) HASH(c_1) */
 	p."ParentID",
 	p."Value1"

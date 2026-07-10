@@ -49,7 +49,6 @@ WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id]

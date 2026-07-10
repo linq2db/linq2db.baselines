@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[z].[FirstName],
 	[z].[PersonID],

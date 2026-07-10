@@ -1,15 +1,12 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Parent" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Child" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"GrandChild" "t1"
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
@@ -112,7 +108,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."GrandChildID",
 	"t1"."ParentID",

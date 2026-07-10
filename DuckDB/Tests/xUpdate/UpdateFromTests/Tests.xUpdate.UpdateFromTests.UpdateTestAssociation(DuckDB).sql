@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	UpdatedEntities
 SET
@@ -10,7 +9,6 @@ WHERE
 	a_Relation.RelatedValue1 = 11 AND UpdatedEntities.RelationId = a_Relation.id
 
 -- DuckDB
-
 SELECT
 	v.Value1
 FROM

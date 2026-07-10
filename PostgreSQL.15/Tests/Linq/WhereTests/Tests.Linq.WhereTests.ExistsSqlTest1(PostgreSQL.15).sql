@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" p
 WHERE

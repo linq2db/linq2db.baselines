@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -8,7 +7,6 @@ INSERT INTO [TrimTestTable]
 SELECT 1,'***OOO***'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -18,7 +16,6 @@ ORDER BY
 	[r].[ID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[r].[ID],
 	[r].[Data]

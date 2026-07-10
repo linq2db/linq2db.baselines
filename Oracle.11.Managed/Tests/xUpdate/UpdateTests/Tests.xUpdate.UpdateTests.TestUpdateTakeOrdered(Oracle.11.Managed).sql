@@ -205,7 +205,6 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Value1"
 FROM

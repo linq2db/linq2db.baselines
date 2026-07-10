@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 -- SqlServer.SA SqlServer.2019
-
 UPDATE
 	[TableWithData_source]
 SET
@@ -30,7 +28,6 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -39,6 +36,5 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

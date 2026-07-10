@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[patient_1].[PersonID],
 	[person_1].[FirstName],

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `CteChild`
 (
 	`ChildID`,
@@ -34,7 +33,6 @@ FROM
 		INNER JOIN `LAST0` `c4_1` ON `c4_1`.`ParentID` = `t1`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ChildID`,
 	`t1`.`ParentID`
@@ -45,7 +43,6 @@ ORDER BY
 	`t1`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	`c4`.`ChildID`,
 	`c4`.`ParentID`

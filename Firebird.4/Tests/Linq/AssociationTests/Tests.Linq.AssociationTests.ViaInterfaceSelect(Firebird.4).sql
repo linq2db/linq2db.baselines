@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN "SubEntity" "d" ON "m_1"."Id" = "d"."MainEntityId"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id"
 FROM

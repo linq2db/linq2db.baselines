@@ -10,7 +10,6 @@ WHERE
 	Coalesce(x."Value1", :Value1) > 10
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Value1"
 FROM

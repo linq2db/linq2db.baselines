@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] > 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- SqlCe
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] > 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

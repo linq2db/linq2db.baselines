@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -66,7 +65,6 @@ FROM
 		INNER JOIN [LATEST] [c4_1] ON [c4_1].[ParentID] = [c3].[ParentID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[c3].[ParentID],
 	[c3].[Value1]

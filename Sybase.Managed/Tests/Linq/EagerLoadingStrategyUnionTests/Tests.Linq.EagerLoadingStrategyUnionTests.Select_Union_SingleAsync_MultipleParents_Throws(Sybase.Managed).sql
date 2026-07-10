@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[c_1].[Id],
 	[c_1].[Name]
@@ -7,7 +6,6 @@ FROM
 	[Company] [c_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

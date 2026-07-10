@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.ItemId,
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	i.Id,
 	stock_1.TotalAvailable

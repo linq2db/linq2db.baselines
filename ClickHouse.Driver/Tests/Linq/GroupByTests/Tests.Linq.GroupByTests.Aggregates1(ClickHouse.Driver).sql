@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*),
 	SUM(g_1.ChildID),

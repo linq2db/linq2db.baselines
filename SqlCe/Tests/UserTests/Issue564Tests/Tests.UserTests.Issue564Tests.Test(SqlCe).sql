@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

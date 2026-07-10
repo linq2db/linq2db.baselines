@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 MERGE INTO [TestTable] [Target]
 USING (
 	SELECT

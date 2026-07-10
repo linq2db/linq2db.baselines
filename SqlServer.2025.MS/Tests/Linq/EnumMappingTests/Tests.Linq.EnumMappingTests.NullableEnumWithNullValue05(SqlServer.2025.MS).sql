@@ -60,7 +60,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -72,7 +71,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

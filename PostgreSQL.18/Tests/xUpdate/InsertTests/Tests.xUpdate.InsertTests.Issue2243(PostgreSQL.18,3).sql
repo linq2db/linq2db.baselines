@@ -25,7 +25,6 @@ ON CONFLICT (id) DO UPDATE SET
 	updated_by = :UpdatedBy
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.name,
@@ -62,7 +61,6 @@ ON CONFLICT (id) DO UPDATE SET
 	updated_by = :UpdatedBy
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.name,

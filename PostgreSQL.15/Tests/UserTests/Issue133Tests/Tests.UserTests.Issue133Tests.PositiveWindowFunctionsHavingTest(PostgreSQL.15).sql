@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	(g_2."CountPercents"::Float * 100) / SUM(g_2."CountPercents") OVER (),
 	g_2."Sum_1"

@@ -18,7 +18,6 @@ FROM
 		LEFT JOIN [Order] [o] ON [c_2].[Id] = [o].[CustomerId]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -26,7 +25,6 @@ FROM
 	[Customer] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[CustomerId],

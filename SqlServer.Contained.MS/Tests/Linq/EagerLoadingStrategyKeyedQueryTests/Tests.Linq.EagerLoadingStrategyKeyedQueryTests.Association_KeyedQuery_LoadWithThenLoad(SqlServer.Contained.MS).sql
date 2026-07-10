@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id],
@@ -29,7 +27,6 @@ FROM
 		INNER JOIN [Employee] [d_1] ON [m_1].[Id] = [d_1].[DepartmentId]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

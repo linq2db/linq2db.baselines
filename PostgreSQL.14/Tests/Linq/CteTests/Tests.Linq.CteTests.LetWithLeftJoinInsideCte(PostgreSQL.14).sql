@@ -25,7 +25,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 WITH "CTE_1" ("S1")
 AS
 (

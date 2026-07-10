@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "Issue1303"
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Array" as "Array_1",
@@ -26,7 +24,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Array" as "Array_1",
@@ -38,7 +35,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Array" as "Array_1",

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CAST([g_2].[Message] AS NVarChar(11)) + ' items have not been processed, e.g. #' + Coalesce(CAST([g_2].[Message_1] AS NVarChar(11)), '') + '.'
 FROM

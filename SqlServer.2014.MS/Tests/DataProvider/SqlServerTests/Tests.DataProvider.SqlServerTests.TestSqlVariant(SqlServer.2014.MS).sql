@@ -1,17 +1,13 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2014.MS SqlServer.2014

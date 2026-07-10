@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[Key_1],
 	[d].[Value]
@@ -18,7 +17,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM
@@ -27,7 +25,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

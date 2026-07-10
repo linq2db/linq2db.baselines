@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[PersonID],
 	[x].[FirstName]
@@ -14,7 +12,6 @@ FROM
 	[Person] [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[PersonID],
 	[person_1].[PersonID],

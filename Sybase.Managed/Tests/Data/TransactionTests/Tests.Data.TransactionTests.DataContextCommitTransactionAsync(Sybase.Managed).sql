@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- Sybase.Managed Sybase
-
 DELETE FROM [Parent]
 FROM
 	[Parent] [t1]

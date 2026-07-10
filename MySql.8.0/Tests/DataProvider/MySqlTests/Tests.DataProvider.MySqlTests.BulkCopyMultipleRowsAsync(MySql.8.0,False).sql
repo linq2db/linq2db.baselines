@@ -3061,7 +3061,6 @@ VALUES
 (3999,4999,111,6999,7999,8999,9999,9799,8699,'2020-02-29','2020-02-29 17:54:55','2020-02-29 17:54:55',@p500,'A','_btest','test',0x060F04,0x7B16,0x010203,7,'Green','one',5999,99)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	COUNT(*)
 FROM
@@ -3108,7 +3107,6 @@ ORDER BY
 LIMIT @take
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`AllTypes`
@@ -3116,7 +3114,6 @@ WHERE
 	`AllTypes`.`varcharDataType` = '_btest'
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`AllTypesNoYear`

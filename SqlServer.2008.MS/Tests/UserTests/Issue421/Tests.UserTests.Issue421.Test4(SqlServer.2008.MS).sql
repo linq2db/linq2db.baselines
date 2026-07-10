@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -22,7 +20,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[BlobValue]

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TrimTestTable"
 (
 	"ID",
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -56,7 +54,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

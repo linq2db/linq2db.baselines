@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[c_1].[Value1],
 	IIF(False, 0, NULL)

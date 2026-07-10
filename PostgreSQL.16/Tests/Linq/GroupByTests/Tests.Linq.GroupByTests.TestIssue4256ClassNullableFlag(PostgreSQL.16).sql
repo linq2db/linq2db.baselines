@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT DISTINCT
 	True,
 	it."SmallIntValue" <> 0
@@ -7,7 +6,6 @@ FROM
 	"LinqDataTypes" it
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."MoneyValue",

@@ -1,12 +1,10 @@
 ﻿-- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_InsertOrUpdate"';
 END
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
 		EXECUTE STATEMENT '
@@ -38,7 +36,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "FluentTemp_InsertOrUpdate" "t1"
 USING (SELECT 1 AS ID FROM rdb$database) "s" ON
 (
@@ -62,7 +59,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_InsertOrUpdate')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_InsertOrUpdate"';

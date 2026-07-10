@@ -1,6 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
-
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
 IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)
 IF OBJECT_ID('dbo.TemporalTable3', 'U') IS NOT NULL ALTER TABLE TemporalTable3 SET ( SYSTEM_VERSIONING = OFF)
@@ -14,7 +13,6 @@ DROP TABLE IF EXISTS TemporalTable2History
 DROP TABLE IF EXISTS TemporalTable3History
 
 -- SqlServer.2022.MS SqlServer.2022
-
 
 -- simple temporal table
 CREATE TABLE TemporalTable1
@@ -66,15 +64,12 @@ CREATE TABLE TemporalTable4
 ) WITH (SYSTEM_VERSIONING = ON)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 select @@version
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2022.MS SqlServer.2022
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -113,7 +108,6 @@ WHERE
 					) AND t.temporal_type <> 1
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -131,7 +125,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2022.MS SqlServer.2022
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -168,7 +161,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -187,7 +179,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -207,7 +198,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -265,7 +255,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -277,7 +266,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[dbo].[Issue1921]()')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -451,7 +439,6 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 EXEC('SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)')
 
 -- SqlServer.2022.MS SqlServer.2022
@@ -464,7 +451,6 @@ sp_describe_first_result_set
 
 RollbackTransaction
 -- SqlServer.2022.MS SqlServer.2022
-
 
 IF OBJECT_ID('dbo.TemporalTable1', 'U') IS NOT NULL ALTER TABLE TemporalTable1 SET ( SYSTEM_VERSIONING = OFF)
 IF OBJECT_ID('dbo.TemporalTable2', 'U') IS NOT NULL ALTER TABLE TemporalTable2 SET ( SYSTEM_VERSIONING = OFF)

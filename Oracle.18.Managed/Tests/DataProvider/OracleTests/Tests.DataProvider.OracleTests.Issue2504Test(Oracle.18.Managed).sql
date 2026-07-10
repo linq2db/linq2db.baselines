@@ -1,9 +1,7 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE SEQ_A START WITH 1 MINVALUE 0
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 
 CREATE TABLE "TABLE_A"(
 	"COLUMN_A" NUMBER(20, 0) NOT NULL,
@@ -59,10 +57,8 @@ RETURNING
 	COLUMN_C INTO :IDENTITY_PARAMETER
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DROP SEQUENCE SEQ_A
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TABLE_A"
 

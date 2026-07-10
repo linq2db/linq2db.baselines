@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [Parent] [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 -- SqlServer.2008
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

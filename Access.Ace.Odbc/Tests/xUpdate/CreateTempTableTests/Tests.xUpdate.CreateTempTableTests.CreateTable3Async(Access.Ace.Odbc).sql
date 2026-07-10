@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [TempTable]
 (
 	[ID] Int NOT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE [TempTable]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TempTable]
 (
 	[ID]
@@ -19,7 +17,6 @@ FROM
 	[Parent] [p]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[ID]
 FROM
@@ -27,6 +24,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 

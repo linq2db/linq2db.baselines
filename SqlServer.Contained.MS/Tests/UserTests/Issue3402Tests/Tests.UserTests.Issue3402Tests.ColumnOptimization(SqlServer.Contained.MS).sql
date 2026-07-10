@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[ess].[ID]
 FROM

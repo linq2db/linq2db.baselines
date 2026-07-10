@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"Issue2815Table1"
 SET
@@ -22,7 +21,6 @@ WHERE
 	"Issue2815Table1"."Id" = ext."Id"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."SRC_BIC",

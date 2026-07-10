@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "ComplexPropertyTarget" Target
 USING (
 	SELECT 1 AS "Id", 'keep-updated' AS "Code", 1 AS "Nested_Field" FROM sys.dual
@@ -60,7 +59,6 @@ DELETE WHERE
 	"Source"."Code" = 'remove-updated'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Code",

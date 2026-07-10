@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."ID",
 	p."MoneyValue",
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."ID",
 	p."MoneyValue",

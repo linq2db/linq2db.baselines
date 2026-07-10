@@ -1,9 +1,7 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM "test_temp"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -38,11 +35,9 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- Firebird.4 Firebird4
-
 DELETE FROM "test_temp"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -53,7 +48,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "test_temp"
 (
 	"Field1"

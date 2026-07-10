@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[ParentID] as [ParentID_1],

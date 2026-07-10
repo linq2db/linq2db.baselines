@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -17,7 +16,6 @@ WHERE
 	[r].[ID] = 1
 
 -- SqlCe
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -129,7 +127,6 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SqlCe
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],

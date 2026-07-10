@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	sumOrNull(toDecimal128(c_1.Id, 10))
 FROM

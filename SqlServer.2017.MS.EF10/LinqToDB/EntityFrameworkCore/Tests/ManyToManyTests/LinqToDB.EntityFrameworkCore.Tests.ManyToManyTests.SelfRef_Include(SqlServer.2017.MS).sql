@@ -11,7 +11,6 @@ ORDER BY [p].[Id], [s].[FriendId], [s].[PersonId]
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -26,7 +25,6 @@ ORDER BY
 
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

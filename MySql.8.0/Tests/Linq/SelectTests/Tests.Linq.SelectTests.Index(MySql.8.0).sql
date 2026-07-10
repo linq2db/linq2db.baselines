@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_2`.`ParentID`,
 	`m_2`.`ChildID`,
@@ -21,7 +20,6 @@ ORDER BY
 	`m_2`.`ChildID` DESC
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_2`.`ParentID`,
 	`m_2`.`ChildID`,

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"
@@ -26,7 +25,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"

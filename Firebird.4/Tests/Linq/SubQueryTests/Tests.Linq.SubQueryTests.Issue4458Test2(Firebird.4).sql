@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."ItemId",
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"i"."Id",
 	(

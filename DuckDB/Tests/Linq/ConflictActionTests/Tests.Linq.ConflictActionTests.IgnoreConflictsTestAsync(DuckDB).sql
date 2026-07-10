@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO IgnoreConflictsTable
 (
 	ID,
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- DuckDB
-
 INSERT INTO IgnoreConflictsTable
 (
 	ID,
@@ -23,7 +21,6 @@ VALUES
 ON CONFLICT DO NOTHING
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1."Value"

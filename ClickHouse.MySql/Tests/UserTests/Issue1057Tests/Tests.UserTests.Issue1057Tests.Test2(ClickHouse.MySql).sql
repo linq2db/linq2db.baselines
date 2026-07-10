@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Task
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Task
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO TaskStage
 (
 	Id,
@@ -40,7 +37,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.Id,
 	p.TargetName,
@@ -52,7 +48,6 @@ WHERE
 	p.TargetName = 'bda.Requests'
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.TargetName,
 	p.Id,

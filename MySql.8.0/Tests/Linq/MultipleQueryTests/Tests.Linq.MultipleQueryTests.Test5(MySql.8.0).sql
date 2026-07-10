@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN `Parent` `d` ON `d`.`ParentID` = `m_1`.`ParentID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`a_Parent`.`ParentID`
 FROM

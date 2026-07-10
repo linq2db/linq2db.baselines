@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT DISTINCT
 	[a_Child].[ID]
 FROM

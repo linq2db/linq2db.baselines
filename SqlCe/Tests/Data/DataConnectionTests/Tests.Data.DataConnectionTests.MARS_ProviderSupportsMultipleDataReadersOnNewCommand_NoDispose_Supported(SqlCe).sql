@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

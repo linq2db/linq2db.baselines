@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `InsertIssueTest`
 (
 	`Pk`,
@@ -47,7 +46,6 @@ FROM
 	) `t2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`ID`,

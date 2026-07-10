@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[t1].[id] = 1
 
 -- SqlCe
-
 INSERT INTO [test_insert_or_replace]
 (
 	[id],
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	1
 FROM

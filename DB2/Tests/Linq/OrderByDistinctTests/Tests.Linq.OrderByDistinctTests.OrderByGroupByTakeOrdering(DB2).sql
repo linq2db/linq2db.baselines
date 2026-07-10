@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_1"."OrderData1" * 100 + "g_1"."OrderData2",
 	COUNT(*)

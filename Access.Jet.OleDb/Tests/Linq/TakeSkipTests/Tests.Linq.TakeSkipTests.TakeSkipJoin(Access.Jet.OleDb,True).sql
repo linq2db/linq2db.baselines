@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,7 +12,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]

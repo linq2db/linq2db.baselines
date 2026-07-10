@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 /* My bad Test */
 SELECT
 	x.FirstName,

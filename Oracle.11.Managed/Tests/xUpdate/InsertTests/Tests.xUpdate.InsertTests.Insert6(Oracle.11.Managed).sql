@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" p
 WHERE
 	p."Value1" = 11
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -21,7 +19,6 @@ WHERE
 	c_1."ChildID" = 11
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	p."Value1" = 11
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Parent" p
 WHERE

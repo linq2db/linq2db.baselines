@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 DELETE FROM
 	[CollatedTable]
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	Substr([r].[CaseSensitive], -8) = 'stString'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -45,7 +42,6 @@ WHERE
 	Substr([r].[CaseInsensitive], -8) = 'stString'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -55,7 +51,6 @@ WHERE
 	Substr([r].[CaseSensitive], -8) = 'ststring'
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

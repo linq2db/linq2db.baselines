@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT /* Main */
 	p.ParentID,
 	p.Value1,

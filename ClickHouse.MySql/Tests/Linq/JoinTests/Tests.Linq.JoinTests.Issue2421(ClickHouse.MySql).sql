@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.SectorId,
 	a_User.UserId
@@ -12,7 +11,6 @@ WHERE
 	a_UserPosition.PositionId = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.SectorId
 FROM

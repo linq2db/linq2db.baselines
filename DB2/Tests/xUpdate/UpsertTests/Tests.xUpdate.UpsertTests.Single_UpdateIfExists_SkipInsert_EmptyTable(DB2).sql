@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(1,'x',1,CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)),CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)))
@@ -26,7 +25,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CAST(EXISTS(
 		SELECT

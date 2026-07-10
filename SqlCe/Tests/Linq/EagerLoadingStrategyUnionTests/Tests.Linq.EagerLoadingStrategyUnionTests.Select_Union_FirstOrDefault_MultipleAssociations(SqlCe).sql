@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[d].[Id],
 	[d].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -24,7 +22,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

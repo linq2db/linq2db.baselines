@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert15%'
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE

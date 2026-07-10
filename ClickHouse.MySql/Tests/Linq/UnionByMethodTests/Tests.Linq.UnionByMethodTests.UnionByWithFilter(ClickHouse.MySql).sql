@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Key_1,
@@ -42,7 +41,6 @@ ORDER BY
 	t1.Key_1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Key,
@@ -52,7 +50,6 @@ FROM
 	UnionByLeft t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Key,

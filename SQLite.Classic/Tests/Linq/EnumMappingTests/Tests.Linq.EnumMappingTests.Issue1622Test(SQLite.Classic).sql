@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[SomeText]
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[SomeText]

@@ -11,7 +11,6 @@ ORDER BY [a].[Id], [t0].[ArticlesId], [t0].[TagsTagId]
 
 
 -- SqlServer.2022
-
 SELECT
 	[m_1].[Id],
 	[o].[Label]
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Title]

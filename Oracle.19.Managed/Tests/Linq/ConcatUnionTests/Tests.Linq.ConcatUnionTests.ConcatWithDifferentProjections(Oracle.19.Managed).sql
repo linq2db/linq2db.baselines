@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	p1."ParentID",
 	p1."ParentID",
@@ -15,7 +14,6 @@ FROM
 	"Parent" p2
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

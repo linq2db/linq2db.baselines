@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE
@@ -92,7 +91,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 DELETE FROM
 	Person t1
 WHERE

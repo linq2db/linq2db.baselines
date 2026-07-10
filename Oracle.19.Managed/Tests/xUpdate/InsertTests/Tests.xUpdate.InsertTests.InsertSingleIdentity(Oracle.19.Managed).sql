@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestIdentity" t1
 
@@ -12,7 +11,6 @@ RETURNING
 	ID INTO :IDENTITY_PARAMETER
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"TestIdentity" t1
 

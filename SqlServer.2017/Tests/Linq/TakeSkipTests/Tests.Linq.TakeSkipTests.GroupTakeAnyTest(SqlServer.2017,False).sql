@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	IIF(EXISTS(
 		SELECT TOP (1)

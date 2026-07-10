@@ -1,16 +1,13 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 1
 	user
 FROM
 	LinqDataTypes t1
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS Issue681Table2
 
 -- Informix.DB2 Informix
-
 CREATE TABLE informix.Issue681Table2
 (
 	ID      Int NOT NULL,
@@ -20,6 +17,5 @@ CREATE TABLE informix.Issue681Table2
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS Issue681Table2
 

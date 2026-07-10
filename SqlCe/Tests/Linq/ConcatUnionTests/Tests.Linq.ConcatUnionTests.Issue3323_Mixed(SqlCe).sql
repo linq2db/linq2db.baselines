@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
 	Coalesce([r].[FirstName], '') + ' ' + Coalesce([r].[LastName], '')
@@ -30,7 +28,6 @@ FROM
 	[Issue3323Table] [r_1]
 
 -- SqlCe
-
 SELECT
 	[r].[Id] + 1,
 	[r].[Text]

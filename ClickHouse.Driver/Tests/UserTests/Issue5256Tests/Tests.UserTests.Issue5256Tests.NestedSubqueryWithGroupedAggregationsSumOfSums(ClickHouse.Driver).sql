@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	product_1.Id,
 	(
@@ -19,7 +18,6 @@ FROM
 	Product product_1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name
@@ -27,7 +25,6 @@ FROM
 	Product t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.ProductId,

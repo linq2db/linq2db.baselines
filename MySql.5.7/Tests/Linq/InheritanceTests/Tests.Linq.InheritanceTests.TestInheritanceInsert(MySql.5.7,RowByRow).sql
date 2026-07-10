@@ -141,7 +141,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Code`,
 	`t1`.`Id`,

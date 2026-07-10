@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 UPDATE
 	`Parent` `t`
 SET
@@ -25,7 +24,6 @@ WHERE
 	`t`.`ParentID` = 1010
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

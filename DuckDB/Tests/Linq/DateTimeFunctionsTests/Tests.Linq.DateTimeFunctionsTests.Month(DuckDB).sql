@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	EXTRACT(month FROM t.DateTimeValue)
 FROM

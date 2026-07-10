@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -8,7 +7,6 @@ FROM
 	[MasterClass] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value],

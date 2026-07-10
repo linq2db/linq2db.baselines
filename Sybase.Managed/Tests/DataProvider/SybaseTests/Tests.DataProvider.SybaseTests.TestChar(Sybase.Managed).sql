@@ -1,65 +1,49 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT Cast('1' as char)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as char)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as char(1))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as char(1))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as varchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as varchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as varchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as varchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nvarchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nvarchar)
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nvarchar(20))
 
 -- Sybase.Managed Sybase
-
 SELECT Cast('1' as nvarchar(20))
 
 -- Sybase.Managed Sybase

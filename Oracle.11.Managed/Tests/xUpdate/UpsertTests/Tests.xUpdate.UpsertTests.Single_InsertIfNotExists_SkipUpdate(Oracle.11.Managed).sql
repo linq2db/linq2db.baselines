@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",
@@ -100,14 +99,12 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",

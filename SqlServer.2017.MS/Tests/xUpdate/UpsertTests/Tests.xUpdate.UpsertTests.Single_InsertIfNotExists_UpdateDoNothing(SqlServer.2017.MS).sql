@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

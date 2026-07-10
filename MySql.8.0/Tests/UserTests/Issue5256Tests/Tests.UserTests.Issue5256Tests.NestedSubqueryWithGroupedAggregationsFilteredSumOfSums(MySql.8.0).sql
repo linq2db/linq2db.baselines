@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`product_1`.`Id`,
 	(
@@ -21,7 +20,6 @@ FROM
 	`Product` `product_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -29,7 +27,6 @@ FROM
 	`Product` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`ProductId`,

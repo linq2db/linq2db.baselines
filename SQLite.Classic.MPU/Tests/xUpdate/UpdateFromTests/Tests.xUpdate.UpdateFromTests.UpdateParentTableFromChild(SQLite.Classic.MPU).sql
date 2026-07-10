@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 UPDATE
 	[ParentTable]
 SET
@@ -10,7 +9,6 @@ WHERE
 	[ParentTable].[Id] = 2 AND [c_1].[ParentId] = [ParentTable].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[Value]

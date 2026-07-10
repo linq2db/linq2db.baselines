@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",
@@ -45,7 +44,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t."Id",
 	t."Name",

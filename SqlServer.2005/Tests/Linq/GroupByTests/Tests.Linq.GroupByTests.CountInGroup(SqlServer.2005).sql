@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t].[GroupId],
 	COUNT(*),
@@ -38,7 +37,6 @@ GROUP BY
 	[t].[GroupId]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 5
 	[t1].[Id],
 	[t1].[Value]

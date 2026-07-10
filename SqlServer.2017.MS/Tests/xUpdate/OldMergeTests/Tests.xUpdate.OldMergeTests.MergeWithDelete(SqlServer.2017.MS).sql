@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -15,7 +14,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT

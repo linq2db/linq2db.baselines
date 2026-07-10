@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`Region`,
 	`p`.`Code`,
@@ -11,7 +10,6 @@ ORDER BY
 	`p`.`Code`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`k_1`.`Item1`,
 	`k_1`.`Item2`,

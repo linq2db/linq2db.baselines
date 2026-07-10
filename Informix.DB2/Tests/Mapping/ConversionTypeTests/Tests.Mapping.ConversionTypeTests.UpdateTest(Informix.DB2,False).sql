@@ -36,7 +36,6 @@ WHERE
 	t."Data" = @p
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	r.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r."Data"

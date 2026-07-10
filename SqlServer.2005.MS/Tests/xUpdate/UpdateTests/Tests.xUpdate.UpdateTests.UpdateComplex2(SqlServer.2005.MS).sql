@@ -26,7 +26,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[Person]
 SET

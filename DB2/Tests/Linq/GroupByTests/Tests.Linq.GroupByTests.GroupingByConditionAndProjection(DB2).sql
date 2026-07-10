@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"g_2"."Key_1",
 	COUNT(*)
@@ -17,7 +16,6 @@ GROUP BY
 	"g_2"."Key_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

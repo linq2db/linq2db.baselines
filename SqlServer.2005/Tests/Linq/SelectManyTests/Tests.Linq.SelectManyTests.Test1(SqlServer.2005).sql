@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t].[PersonID],
 	[p2].[FirstName]

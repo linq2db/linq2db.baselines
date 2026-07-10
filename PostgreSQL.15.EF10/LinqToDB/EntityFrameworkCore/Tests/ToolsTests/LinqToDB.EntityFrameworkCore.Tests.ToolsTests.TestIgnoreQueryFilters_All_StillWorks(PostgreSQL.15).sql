@@ -3,7 +3,6 @@ FROM "Products" AS p
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."IsDeleted",
 	t1."ProductID",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
@@ -15,7 +14,6 @@ FROM
 	[Person] [p_1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

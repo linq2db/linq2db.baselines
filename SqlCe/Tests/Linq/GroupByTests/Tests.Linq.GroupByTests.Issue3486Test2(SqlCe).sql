@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[gr].[FirstName],
 	[gr].[LastName],

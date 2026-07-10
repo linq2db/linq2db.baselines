@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"SampleClass" sample_1
 SET

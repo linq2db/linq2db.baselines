@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 /* My bad Test */
 SELECT
 	x."FirstName",

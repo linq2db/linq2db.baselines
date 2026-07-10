@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] > 1000
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- Access.Ace.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

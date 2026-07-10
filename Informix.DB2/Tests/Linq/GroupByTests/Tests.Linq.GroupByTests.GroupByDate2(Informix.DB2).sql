@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	SUM(grp_1.MoneyValue),
 	grp_1.Year_1,

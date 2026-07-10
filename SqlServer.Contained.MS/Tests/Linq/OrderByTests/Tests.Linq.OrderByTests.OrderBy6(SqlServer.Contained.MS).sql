@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[person_1].[PersonID],
 	[patient_1].[PersonID]

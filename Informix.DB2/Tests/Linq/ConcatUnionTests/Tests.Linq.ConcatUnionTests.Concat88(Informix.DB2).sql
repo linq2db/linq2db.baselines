@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	NVL(c_1.ChildID, NULL),
 	c_1.ParentID

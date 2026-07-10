@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	CAST(DateAdd(year, 11, [t].[TransactionDate]) AS Date)
 FROM

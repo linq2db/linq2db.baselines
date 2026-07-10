@@ -76,7 +76,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -88,7 +87,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

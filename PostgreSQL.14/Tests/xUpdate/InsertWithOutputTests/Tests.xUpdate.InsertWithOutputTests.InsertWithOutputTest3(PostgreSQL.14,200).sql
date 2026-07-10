@@ -31,7 +31,6 @@ WHERE
 	c_1."ChildID" > 1000
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT /* aa */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [SomeTable]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClassProp],

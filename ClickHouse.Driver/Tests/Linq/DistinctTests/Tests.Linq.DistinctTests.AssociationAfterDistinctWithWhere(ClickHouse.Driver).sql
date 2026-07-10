@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,
@@ -24,7 +23,6 @@ ORDER BY
 	t1.ChildID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,

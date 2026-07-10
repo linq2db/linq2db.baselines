@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ MERGE(p) */
 	`p`.`ParentID`,
 	`p`.`Value1`

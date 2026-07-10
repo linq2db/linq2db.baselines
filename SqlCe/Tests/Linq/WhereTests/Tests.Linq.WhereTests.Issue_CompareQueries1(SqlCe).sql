@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 -- SqlCe
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM

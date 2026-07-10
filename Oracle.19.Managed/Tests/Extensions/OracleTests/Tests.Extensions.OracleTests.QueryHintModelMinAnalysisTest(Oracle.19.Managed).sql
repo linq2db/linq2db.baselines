@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT /*+ MODEL_MIN_ANALYSIS */
 	p."ParentID",
 	p."Value1"

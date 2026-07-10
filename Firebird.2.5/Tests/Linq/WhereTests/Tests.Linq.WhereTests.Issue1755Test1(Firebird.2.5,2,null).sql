@@ -11,7 +11,6 @@ WHERE
 	"c_1"."ParentID" = @id
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

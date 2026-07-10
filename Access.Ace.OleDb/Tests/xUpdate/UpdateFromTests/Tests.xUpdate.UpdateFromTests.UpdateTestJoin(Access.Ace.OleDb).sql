@@ -19,7 +19,6 @@ WHERE
 	[t].[id] <> @someId
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[v].[id],
 	[v].[Value1],

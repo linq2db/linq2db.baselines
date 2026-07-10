@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[it_1].[not_null],
 	[it_1].[ColorName],
@@ -23,7 +22,6 @@ WHERE
 	[it_1].[ColorName] = N'Red'
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[ColorId],

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id_1`,
@@ -23,7 +22,6 @@ ORDER BY
 	`m_1`.`Id_1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -36,7 +34,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`

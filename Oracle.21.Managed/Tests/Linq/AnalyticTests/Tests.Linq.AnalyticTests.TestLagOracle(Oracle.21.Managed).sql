@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	LAG(p."Value1", 1, 0) OVER (PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1"),
 	LAG(p."Value1", 1, 0) IGNORE NULLS OVER (ORDER BY p."Value1", c_1."ChildID" DESC),

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[f].[Id],
 	[t].[Id] as [Id_1],

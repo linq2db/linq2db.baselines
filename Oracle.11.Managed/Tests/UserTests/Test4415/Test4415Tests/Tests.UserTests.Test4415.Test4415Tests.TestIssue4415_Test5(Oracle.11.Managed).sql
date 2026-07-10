@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."LanguageID",
 	t1."Name"
@@ -7,7 +6,6 @@ FROM
 	"Common_Language" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."LanguageID",
 	x."Name"

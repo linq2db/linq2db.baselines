@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 /* My bad Test */
 SELECT
 	[x].[FirstName],

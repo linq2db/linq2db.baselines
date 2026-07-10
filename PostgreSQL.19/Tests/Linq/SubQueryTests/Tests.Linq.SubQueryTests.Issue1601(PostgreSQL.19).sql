@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t2.x < 0 THEN 9

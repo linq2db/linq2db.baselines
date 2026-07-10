@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Ints i
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -15,7 +13,6 @@ WHERE
 	1 = 0
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

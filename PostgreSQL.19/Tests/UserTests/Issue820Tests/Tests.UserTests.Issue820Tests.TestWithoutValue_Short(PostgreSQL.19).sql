@@ -19,7 +19,6 @@ WHERE
 	:param = t1."SmallIntValue"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."MoneyValue",

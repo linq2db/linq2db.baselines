@@ -1,11 +1,9 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO CollatedTable
 (
 	Id,
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	endsWith(r.CaseSensitive, 'stString')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +34,6 @@ WHERE
 	endsWith(r.CaseInsensitive, 'stString')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -47,7 +42,6 @@ WHERE
 	endsWith(r.CaseSensitive, 'ststring')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

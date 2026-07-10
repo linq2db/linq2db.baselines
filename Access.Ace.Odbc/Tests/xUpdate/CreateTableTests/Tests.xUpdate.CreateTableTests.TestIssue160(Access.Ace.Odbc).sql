@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [aa]
 (
 	[bb] Int           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[bb],
 	[t1].[cc]
@@ -34,6 +32,5 @@ FROM
 	[aa] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [aa]
 

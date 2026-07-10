@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x_1`.`MiddleName`,
 	`x_1`.`LastName`
@@ -16,7 +15,6 @@ ORDER BY
 	Coalesce(`x_1`.`LastName`, '-1')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

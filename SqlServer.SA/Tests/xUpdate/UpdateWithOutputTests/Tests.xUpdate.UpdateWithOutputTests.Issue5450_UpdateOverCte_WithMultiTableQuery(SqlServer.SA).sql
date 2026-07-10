@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 WITH [CTE_1] ([Value_1], [Id])
 AS
 (
@@ -24,7 +23,6 @@ SET
 	)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[s].[Id],
 	[s].[Value],

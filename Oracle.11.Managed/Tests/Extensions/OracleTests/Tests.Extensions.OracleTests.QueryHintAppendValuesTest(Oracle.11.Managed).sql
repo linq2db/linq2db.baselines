@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ APPEND_VALUES */
 	p."ParentID",
 	p."Value1"

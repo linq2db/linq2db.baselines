@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -47,7 +46,6 @@ FROM
 	) [t2]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

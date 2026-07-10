@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(CASE
 		WHEN [g_1].[ChildID] > 20 THEN 1

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[rTable1].[Id_1],
 	[rTable1].[Description],

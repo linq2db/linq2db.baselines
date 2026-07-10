@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`d`.`Id`,
 	`d`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,
@@ -28,7 +26,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

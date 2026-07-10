@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -16,7 +15,6 @@ ORDER BY
 	IIF([x_1].[LastName] IS NULL, '-1', [x_1].[LastName])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

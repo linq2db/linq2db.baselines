@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[TableWithConverterValue] [x]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],

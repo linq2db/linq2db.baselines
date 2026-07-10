@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -27,7 +26,6 @@ WHERE
 	), 0, 1) = 1
 
 -- SqlServer.2025
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID]

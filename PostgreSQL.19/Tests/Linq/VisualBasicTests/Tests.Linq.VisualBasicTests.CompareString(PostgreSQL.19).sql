@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",
@@ -12,7 +11,6 @@ WHERE
 	p."FirstName" = 'John'
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",

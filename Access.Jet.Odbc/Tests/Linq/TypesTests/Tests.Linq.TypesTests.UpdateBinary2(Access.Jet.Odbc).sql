@@ -25,7 +25,6 @@ WHERE
 	[t].[ID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

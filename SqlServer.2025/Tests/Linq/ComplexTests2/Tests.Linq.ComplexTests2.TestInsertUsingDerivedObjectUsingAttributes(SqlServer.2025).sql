@@ -26,7 +26,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2025
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -61,7 +60,6 @@ WHERE
 	[Person].[PersonID] = @ID
 
 -- SqlServer.2025
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],

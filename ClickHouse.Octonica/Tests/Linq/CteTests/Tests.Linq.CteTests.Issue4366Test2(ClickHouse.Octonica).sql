@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH RECURSIVE d AS
 (
 	SELECT

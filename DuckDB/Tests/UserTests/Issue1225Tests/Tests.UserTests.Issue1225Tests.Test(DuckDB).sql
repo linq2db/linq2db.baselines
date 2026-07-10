@@ -46,7 +46,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	'Id',
 	it.Id,

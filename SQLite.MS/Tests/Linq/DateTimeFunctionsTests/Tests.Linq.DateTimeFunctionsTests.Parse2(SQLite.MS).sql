@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y', [d].[DateTimeValue]) || '-02-24 00:00:00')
 FROM

@@ -17,7 +17,6 @@ SET     @i = 1
 { CALL TEST_PACKAGE2:TEST_PROCEDURE (?) }
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	TEST_FUNCTION(1)
 FROM
@@ -25,7 +24,6 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	TEST_PACKAGE1:TEST_FUNCTION(1)
 FROM
@@ -33,7 +31,6 @@ FROM
 LIMIT 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	TEST_PACKAGE2:TEST_FUNCTION(1)
 FROM

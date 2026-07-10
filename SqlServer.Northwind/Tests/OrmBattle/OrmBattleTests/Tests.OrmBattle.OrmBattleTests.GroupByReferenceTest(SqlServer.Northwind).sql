@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[m_1].[CustomerID],
 	[d].[OrderID],
@@ -28,7 +27,6 @@ FROM
 		INNER JOIN [Customers] [a_Customer_1] ON [d].[CustomerID] = [a_Customer_1].[CustomerID] AND [m_1].[CustomerID] = [a_Customer_1].[CustomerID]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT DISTINCT
 	[a_Customer].[CustomerID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	GROUPING([g_2].[Id1]),
 	[g_2].[Id1],

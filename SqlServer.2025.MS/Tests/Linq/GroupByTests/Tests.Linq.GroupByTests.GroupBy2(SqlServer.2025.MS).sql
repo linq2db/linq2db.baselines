@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[gr_1].[ID],
 	[gr_1].[ID] + 1

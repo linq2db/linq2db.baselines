@@ -14,7 +14,6 @@ WHERE
 	"r"."FirstName" = @p
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."FirstName",
 	"r"."PersonID",

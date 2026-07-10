@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x].[Id]
 FROM

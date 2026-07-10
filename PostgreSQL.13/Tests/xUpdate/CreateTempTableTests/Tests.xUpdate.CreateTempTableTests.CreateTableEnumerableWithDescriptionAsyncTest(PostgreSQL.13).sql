@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 
 -- PostgreSQL.13 PostgreSQL12
-
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"Name" text NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "TempTable"
 (
 	"Name"
@@ -21,7 +18,6 @@ VALUES
 ('John')
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."Name"
 FROM
@@ -29,6 +25,5 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TempTable"
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT DISTINCT
 	[c_1].[ChildID]
 FROM

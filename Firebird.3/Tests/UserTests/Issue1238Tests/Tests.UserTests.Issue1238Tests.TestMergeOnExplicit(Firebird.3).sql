@@ -1,10 +1,8 @@
 ﻿-- Firebird.3 Firebird3
-
 DELETE FROM
 	"InheritanceParent" "t1"
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "InheritanceParent" "Target"
 USING (
 	SELECT 143 AS "Key1", CAST(NULL AS VARCHAR(1)) AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
@@ -36,14 +34,12 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" "t1"
 
 -- Firebird.3 Firebird3
-
 MERGE INTO "InheritanceParent" "Target"
 USING (
 	SELECT 143 AS "Key1", CAST(NULL AS VARCHAR(1)) AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
@@ -75,7 +71,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

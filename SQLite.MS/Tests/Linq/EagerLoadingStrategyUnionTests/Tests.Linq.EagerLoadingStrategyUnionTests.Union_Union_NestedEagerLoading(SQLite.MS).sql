@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [CTE_1] ([Id], [field], [Label])
 AS MATERIALIZED
 (

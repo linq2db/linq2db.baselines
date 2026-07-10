@@ -27,7 +27,6 @@ WHERE
 	[UpsertTest].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

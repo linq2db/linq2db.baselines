@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -16,7 +15,6 @@ ORDER BY
 	Coalesce([x_1].[LastName], N'-1')
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

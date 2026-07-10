@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[e].[Id]
 FROM

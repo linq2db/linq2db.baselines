@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 10
 	[r].[OrderPeriodId],
 	[r].[ProductId],

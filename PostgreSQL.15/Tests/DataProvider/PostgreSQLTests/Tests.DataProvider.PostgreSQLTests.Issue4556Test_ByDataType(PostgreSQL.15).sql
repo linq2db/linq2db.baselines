@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "Issue4556Table1" "Target"
 USING (
 	SELECT NULL::Int, NULL::json, NULL::jsonb, NULL::json, NULL::jsonb

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 IF (OBJECT_ID(N'InventoryResource') IS NOT NULL)
 	DROP TABLE [InventoryResource]
 

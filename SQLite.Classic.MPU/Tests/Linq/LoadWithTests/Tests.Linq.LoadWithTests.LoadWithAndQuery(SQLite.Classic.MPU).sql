@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -19,7 +18,6 @@ WHERE
 	[d].[Id] % 2 = 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -29,7 +27,6 @@ WHERE
 	[m_1].[Id] > 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_2].[Id],
 	[m_2].[Id_1],
@@ -65,7 +62,6 @@ FROM
 		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -83,7 +79,6 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -93,7 +88,6 @@ WHERE
 	[m_1].[Id] > 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[s].[Id],
 	[s].[Value],

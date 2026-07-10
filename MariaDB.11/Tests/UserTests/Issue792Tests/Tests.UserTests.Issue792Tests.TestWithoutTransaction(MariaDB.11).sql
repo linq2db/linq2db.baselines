@@ -1,24 +1,20 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
 	`AllTypes` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT
 FROM INFORMATION_SCHEMA.routines
 WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER
 FROM INFORMATION_SCHEMA.parameters
 WHERE SPECIFIC_SCHEMA = database()
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 `testdata`.`AddIssue792Record`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -255,14 +251,12 @@ SET     @i = NULL
 
 RollbackTransaction
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
 	`AllTypes` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`AllTypes`

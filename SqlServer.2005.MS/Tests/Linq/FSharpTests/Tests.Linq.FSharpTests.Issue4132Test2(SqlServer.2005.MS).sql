@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[Issue4132Table]
 SET
@@ -23,7 +21,6 @@ WHERE
 	[Issue4132Table].[Number] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Number],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t2].[Id],
 	[t2].[OwnerStr],

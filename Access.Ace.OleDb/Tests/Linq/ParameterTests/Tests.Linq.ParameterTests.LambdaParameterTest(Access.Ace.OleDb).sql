@@ -11,7 +11,6 @@ WHERE
 	[r].[ParentID] = @p
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

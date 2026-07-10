@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	contract.Id,
 	servProj.IdContract

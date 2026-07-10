@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Id,
 	p.Str
@@ -13,7 +12,6 @@ FROM
 	Issue3360Table p_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Id,
 	toString('str') as Str

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -13,7 +12,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	"p"."Name"
@@ -23,7 +21,6 @@ ORDER BY
 	"p"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("Id", "field", "Name")
 AS
 (

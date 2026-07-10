@@ -39,7 +39,6 @@ RETURNING "Id";
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Discriminator],
 	[t1].[Id]

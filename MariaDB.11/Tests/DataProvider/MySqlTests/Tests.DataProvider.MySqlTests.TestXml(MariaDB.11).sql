@@ -1,13 +1,10 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT '<xml/>'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT '<xml/>'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT '<xml/>'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

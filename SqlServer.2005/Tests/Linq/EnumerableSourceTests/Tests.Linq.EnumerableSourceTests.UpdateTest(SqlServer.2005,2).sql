@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 UPDATE
 	[u]
 SET
@@ -14,7 +13,6 @@ WHERE
 	[u].[Id] = [r].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

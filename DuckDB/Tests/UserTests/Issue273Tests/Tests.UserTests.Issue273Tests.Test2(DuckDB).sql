@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x.ID,
 	x.BigIntValue

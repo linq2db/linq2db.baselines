@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[e].[Code],
 	[e].[Id],

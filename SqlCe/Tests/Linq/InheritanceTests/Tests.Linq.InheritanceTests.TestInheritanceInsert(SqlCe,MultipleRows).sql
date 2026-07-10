@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -19,7 +18,6 @@ SELECT 5,21,0,25,0,0,15,0 UNION ALL
 SELECT 6,22,0,26,0,0,0,16
 
 -- SqlCe
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

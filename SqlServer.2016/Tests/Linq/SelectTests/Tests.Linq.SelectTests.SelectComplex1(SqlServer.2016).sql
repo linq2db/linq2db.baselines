@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[PersonID],
 	[t1].[Gender],

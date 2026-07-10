@@ -1,12 +1,9 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT 1 UNION ALL SELECT 2
 

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[Id]
 FROM

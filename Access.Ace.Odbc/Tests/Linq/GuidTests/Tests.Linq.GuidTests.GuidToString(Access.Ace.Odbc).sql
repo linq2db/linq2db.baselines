@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	LCase(Mid(CStr([t].[Id]), 2, 36))
 FROM
 	[TableWithGuid] [t]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Id],
 	[t].[NullableGuid]
@@ -16,7 +14,6 @@ WHERE
 	LCase(Mid(CStr([t].[Id]), 2, 36)) LIKE '%63d[-]0f%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Id],
 	[t].[NullableGuid]
@@ -26,7 +23,6 @@ WHERE
 	LCase(Mid(CStr([t].[Id]), 2, 36)) LIKE 'bc7b6%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Id],
 	[t].[NullableGuid]
@@ -36,7 +32,6 @@ WHERE
 	LCase(Mid(CStr([t].[Id]), 2, 36)) LIKE '%8f4[-]53%'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[Id],
 	[t].[NullableGuid]

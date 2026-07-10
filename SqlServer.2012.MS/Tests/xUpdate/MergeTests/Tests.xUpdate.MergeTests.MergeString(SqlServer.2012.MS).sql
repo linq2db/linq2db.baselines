@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	MAX([t1].[ID])
 FROM
 	[AllTypes] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
 	(3,char(0),char(0),N'test' + char(0) + N'it')

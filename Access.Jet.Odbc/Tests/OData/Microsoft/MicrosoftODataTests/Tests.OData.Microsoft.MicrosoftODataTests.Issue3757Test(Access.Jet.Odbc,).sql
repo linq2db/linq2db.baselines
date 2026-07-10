@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ID],
 	[m_1].[ValS],
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON ([m_1].[ID] = [d].[ParentId])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[l1].[ID],
 	[l1].[ValB],

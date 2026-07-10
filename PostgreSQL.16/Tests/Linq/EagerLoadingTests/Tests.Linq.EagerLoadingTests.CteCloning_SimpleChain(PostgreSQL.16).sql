@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1" ("Id")
 AS
 (
@@ -43,7 +42,6 @@ FROM
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"Id",

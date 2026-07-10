@@ -44,7 +44,6 @@ ORDER BY
 	p."PersonID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."PersonID",
 	t1."Diagnosis"
@@ -52,7 +51,6 @@ FROM
 	"Patient" t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

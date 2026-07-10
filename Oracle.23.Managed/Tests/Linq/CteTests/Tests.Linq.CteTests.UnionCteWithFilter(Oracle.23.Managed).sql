@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS
 (

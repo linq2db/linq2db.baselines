@@ -169,7 +169,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Parent" x
 SET
@@ -180,7 +179,6 @@ ORDER BY
 	x."ParentID" DESC
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Value1"
 FROM

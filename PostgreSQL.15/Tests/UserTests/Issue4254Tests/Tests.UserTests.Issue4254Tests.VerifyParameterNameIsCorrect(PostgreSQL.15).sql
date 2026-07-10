@@ -1,17 +1,13 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_item_to_media_item_categories
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_item_user_share
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_items
 
 -- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE issue_4254_media_items
 (
 	id uuid NOT NULL,
@@ -20,7 +16,6 @@ CREATE TABLE issue_4254_media_items
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE issue_4254_media_item_user_share
 (
 	id            uuid      NOT NULL,
@@ -33,7 +28,6 @@ CREATE TABLE issue_4254_media_item_user_share
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE issue_4254_media_item_to_media_item_categories
 (
 	id            uuid NOT NULL,
@@ -184,14 +178,11 @@ WHERE
 	)
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_item_to_media_item_categories
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_item_user_share
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS issue_4254_media_items
 

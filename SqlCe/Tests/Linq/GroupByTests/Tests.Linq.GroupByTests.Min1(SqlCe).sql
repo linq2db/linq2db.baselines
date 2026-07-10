@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	MIN([t1].[ChildID])
 FROM

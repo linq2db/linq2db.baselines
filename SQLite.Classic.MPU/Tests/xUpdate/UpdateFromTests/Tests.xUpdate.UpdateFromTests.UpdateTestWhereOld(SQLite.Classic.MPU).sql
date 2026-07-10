@@ -20,7 +20,6 @@ WHERE
 	[t].[id] = [UpdatedEntities].[id] AND [t].[id] <> @someId
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[v].[id],
 	[v].[Value1],

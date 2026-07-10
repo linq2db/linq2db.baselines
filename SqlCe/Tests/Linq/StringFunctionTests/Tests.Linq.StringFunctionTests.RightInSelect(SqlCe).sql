@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	Substring([p].[FirstName], LEN([p].[FirstName] + '.') - 3, 3)
 FROM

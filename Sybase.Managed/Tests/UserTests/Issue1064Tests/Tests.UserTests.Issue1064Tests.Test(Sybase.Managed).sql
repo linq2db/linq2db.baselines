@@ -1,9 +1,7 @@
 ﻿-- Sybase.Managed Sybase
-
 sp_configure 'allow updates', 1
 
 -- Sybase.Managed Sybase
-
 UPDATE syscolumns SET name = '#Column1064' where name = 'Column1064'
 
 -- Sybase.Managed Sybase
@@ -20,13 +18,11 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].#Column1064
 FROM
 	[TableTest1064] [t1]
 
 -- Sybase.Managed Sybase
-
 sp_configure 'allow updates', 0
 

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	InheritanceParent
 
@@ -38,7 +37,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ WHERE
 	t1.InheritanceParentId = @Key1 AND t1.Name IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

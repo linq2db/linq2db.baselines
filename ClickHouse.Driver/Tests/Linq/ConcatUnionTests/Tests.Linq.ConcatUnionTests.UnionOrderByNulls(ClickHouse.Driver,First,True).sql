@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1
@@ -27,7 +26,6 @@ ORDER BY
 LIMIT 3
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

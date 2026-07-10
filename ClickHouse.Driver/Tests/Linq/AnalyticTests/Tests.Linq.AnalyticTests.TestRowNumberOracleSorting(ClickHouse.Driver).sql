@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	toInt64(ROW_NUMBER() OVER (ORDER BY p.Value1, c_1.ChildID DESC, p.ParentID))
 FROM

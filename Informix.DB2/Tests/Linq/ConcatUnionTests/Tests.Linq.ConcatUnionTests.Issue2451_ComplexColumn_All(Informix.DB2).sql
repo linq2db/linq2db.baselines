@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.FirstName
 FROM
@@ -11,7 +10,6 @@ FROM
 	Person p_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.FirstName || '/' || p.LastName
 FROM

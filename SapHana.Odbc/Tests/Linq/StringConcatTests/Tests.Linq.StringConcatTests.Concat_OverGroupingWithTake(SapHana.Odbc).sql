@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t3"."Key_1",
 	Coalesce("t2"."Value_1", '')
@@ -30,7 +29,6 @@ ORDER BY
 	"t3"."Key_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PK",
 	"t1"."GrpId",

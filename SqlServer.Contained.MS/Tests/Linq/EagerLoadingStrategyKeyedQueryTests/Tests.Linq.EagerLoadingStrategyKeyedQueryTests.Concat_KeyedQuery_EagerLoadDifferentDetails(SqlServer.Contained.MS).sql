@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -27,7 +26,6 @@ FROM
 	) [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],
@@ -47,7 +45,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

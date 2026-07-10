@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"pmp1"."ChildID"
 FROM
@@ -12,7 +11,6 @@ FROM
 		CROSS JOIN "Child" "pmp1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

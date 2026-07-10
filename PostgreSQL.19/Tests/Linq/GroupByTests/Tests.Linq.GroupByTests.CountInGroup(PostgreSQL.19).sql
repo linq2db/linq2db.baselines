@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."GroupId",
 	COUNT(*),
@@ -20,7 +19,6 @@ GROUP BY
 	t."GroupId"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GroupId",

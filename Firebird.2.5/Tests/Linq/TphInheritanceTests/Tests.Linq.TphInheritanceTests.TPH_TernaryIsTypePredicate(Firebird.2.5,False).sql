@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"e"."Code",
 	"e"."Id",

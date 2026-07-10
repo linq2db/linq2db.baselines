@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	Coalesce((
@@ -59,7 +58,6 @@ FROM
 	"SampleClass" "t"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".PK,
 	"t1"."Id",

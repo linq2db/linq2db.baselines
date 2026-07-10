@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 /* My Test */
 SELECT
 	t1."Id",

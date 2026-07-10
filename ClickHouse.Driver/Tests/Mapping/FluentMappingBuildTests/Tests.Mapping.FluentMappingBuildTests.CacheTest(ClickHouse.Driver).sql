@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
@@ -12,7 +11,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO FluentTemp_Cache
 (
 	ID,
@@ -27,7 +25,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID,
 	t.Value,
@@ -38,11 +35,9 @@ WHERE
 	t.ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
@@ -55,7 +50,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO FluentTemp_Cache
 (
 	ID,
@@ -70,7 +64,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID,
 	t.Value,
@@ -81,11 +74,9 @@ WHERE
 	t.ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
@@ -98,7 +89,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO FluentTemp_Cache
 (
 	ID,
@@ -113,7 +103,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID,
 	t.Column,
@@ -124,11 +113,9 @@ WHERE
 	t.ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       Int32,
@@ -141,7 +128,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO FluentTemp_Cache
 (
 	ID,
@@ -156,7 +142,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID,
 	t.Column,
@@ -167,6 +152,5 @@ WHERE
 	t.ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 

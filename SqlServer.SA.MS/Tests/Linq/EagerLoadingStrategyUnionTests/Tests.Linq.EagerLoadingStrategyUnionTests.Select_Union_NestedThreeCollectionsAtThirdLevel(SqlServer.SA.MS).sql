@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 WITH [CTE_1] ([Id], [field], [CompanyName])
 AS
 (

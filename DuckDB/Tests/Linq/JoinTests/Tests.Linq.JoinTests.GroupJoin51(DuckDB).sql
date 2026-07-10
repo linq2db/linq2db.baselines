@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- DuckDB
-
 SELECT
 	p.ParentID,
 	t1.ParentID,

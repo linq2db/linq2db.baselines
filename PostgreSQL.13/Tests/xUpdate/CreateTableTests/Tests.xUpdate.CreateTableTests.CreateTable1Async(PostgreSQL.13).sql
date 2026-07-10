@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestTable"
 
 -- PostgreSQL.13 PostgreSQL12
-
 CREATE TABLE "TestTable"
 (
 	"ID"        SERIAL     NOT NULL,
@@ -15,7 +13,6 @@ CREATE TABLE "TestTable"
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Field1",
@@ -25,6 +22,5 @@ FROM
 	"TestTable" t1
 
 -- PostgreSQL.13 PostgreSQL12
-
 DROP TABLE "TestTable"
 

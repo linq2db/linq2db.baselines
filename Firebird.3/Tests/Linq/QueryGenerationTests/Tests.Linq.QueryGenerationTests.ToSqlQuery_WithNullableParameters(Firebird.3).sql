@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -12,7 +11,6 @@ WHERE
 	"p"."MiddleName" IS NOT NULL
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

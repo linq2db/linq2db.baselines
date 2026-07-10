@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%Paranoid%' ESCAPE '~'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%paranoid%' ESCAPE '~'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	"r"."Diagnosis" CONTAINING 'paranoid'
 
 -- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM

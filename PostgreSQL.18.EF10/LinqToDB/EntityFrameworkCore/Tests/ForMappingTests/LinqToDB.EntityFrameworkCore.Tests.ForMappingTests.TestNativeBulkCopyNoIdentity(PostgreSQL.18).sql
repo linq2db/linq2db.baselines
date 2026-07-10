@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 CREATE TEMPORARY TABLE "NoIdentity"
 (
 	"Id"   uuid NOT NULL,
@@ -16,7 +15,6 @@ INSERT BULK "NoIdentity"(Id, Name)
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -26,7 +24,6 @@ FROM
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "NoIdentity"
 
 

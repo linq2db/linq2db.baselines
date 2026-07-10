@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[product_1].[Id],
 	(
@@ -19,7 +18,6 @@ FROM
 	[Product] [product_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -27,7 +25,6 @@ FROM
 	[Product] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[ProductId],

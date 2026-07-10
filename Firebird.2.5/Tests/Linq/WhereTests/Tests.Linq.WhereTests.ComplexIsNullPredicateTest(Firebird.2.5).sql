@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value"
@@ -17,7 +16,6 @@ ORDER BY
 	"r"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

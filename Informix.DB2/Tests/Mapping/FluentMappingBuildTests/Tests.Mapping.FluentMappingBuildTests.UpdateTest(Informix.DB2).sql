@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Update
 (
 	ID       Int          NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	t.ID = 1
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_Update
 

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	IIF([a_SubData].[Id] IS NULL, NULL, (

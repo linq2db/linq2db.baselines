@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CAST("p"."MoneyValue" AS Real)
 FROM

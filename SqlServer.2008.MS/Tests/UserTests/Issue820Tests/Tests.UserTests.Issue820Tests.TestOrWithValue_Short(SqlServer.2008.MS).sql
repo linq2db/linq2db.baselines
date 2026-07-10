@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

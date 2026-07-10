@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 UPDATE
 	"SUG001NonPkKey" "t1"
 SET
@@ -30,7 +29,6 @@ WHERE
 	"t1"."Code" = 100
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

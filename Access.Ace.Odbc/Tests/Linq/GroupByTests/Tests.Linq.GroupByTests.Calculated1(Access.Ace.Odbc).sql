@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Key_1],
 	[d].[ParentID],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[Key_1] = IIF([d].[ParentID] > 2, IIF([d].[ParentID] > 3, '1', '2'), '3'))
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT
 	IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.Id,
 	d.ItemId,
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- DuckDB
-
 SELECT
 	i.Id,
 	(

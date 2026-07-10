@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(CASE
 		WHEN t."IntValue" > 20 THEN 1

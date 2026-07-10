@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.ID,
 	r.Data
@@ -22,7 +20,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.ID,
 	r.Data

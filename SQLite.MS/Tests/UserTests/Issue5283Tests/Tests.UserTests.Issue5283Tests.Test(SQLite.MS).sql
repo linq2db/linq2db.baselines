@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [u].[UserNumber] >= 0 AND Length(CAST([u].[UserNumber] AS NVarChar(11))) < Length(CAST(Coalesce(CAST([a_Settings].[SettingValue] AS INTEGER), 9000) AS NVarChar(11)))

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2005
-
 UPDATE
 	[Person]
 SET
 	[FirstName] = [Person].[FirstName]
 
 -- SqlServer.2005
-
 UPDATE
 	[t1]
 SET

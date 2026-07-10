@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Date_1]
 
 -- SqlCe
-
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

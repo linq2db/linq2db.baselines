@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Value"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Text"

@@ -1,6 +1,5 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -15,7 +14,6 @@
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -28,7 +26,6 @@
 			
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -59,7 +56,6 @@
 
 -- Northwind.SQLite SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -69,47 +65,36 @@
 			
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Alphabetical list of products]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Current Product List]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Customer and Suppliers by City]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Order Details Extended]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Order Subtotals]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Orders Qry]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Products Above Average Price]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Products by Category]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Summary of Sales by Quarter]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT * FROM [Summary of Sales by Year]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,

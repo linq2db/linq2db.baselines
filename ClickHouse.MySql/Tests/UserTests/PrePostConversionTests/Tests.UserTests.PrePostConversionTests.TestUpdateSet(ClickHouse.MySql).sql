@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO ValuesTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ValuesTable
 UPDATE
@@ -23,7 +21,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,
@@ -33,7 +30,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	ValuesTable
 UPDATE
@@ -41,7 +37,6 @@ UPDATE
 WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,

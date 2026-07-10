@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	CAST("v"."Integer" AS DOUBLE PRECISION) / 33,
 	CAST("v"."Decimal" AS DOUBLE PRECISION) / 33,

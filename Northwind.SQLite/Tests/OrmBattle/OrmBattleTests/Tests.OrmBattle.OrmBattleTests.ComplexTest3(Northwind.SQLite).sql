@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[SupplierID],
 	[d].[CompanyName]
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Suppliers] [d] ON [d].[SupplierID] = [m_1].[SupplierID]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[p].[Discontinued],
 	[p].[ProductID],

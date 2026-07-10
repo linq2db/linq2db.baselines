@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 MERGE INTO [Parent] [Target]
 USING (
 	SELECT

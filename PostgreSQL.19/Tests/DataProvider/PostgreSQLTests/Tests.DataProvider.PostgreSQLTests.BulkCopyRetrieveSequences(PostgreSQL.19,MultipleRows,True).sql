@@ -1,16 +1,13 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT nextval('sequencetestseq') FROM generate_series(1, 40)
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -29,7 +26,6 @@ VALUES
 (10,'SeqValue10')
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -48,7 +44,6 @@ VALUES
 (20,'SeqValue20')
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -67,7 +62,6 @@ VALUES
 (30,'SeqValue30')
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "SequenceTest1"
 (
 	"ID",
@@ -86,7 +80,6 @@ VALUES
 (40,'SeqValue40')
 
 -- PostgreSQL.19 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest1" t1
 WHERE

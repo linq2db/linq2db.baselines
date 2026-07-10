@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -62,7 +61,6 @@ ORDER BY
 	m_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	after_1."Id",
 	after_1."Name"

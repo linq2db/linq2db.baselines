@@ -50,7 +50,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`,

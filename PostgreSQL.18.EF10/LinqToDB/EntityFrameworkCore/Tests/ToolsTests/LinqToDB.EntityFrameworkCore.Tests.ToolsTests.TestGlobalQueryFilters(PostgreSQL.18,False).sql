@@ -4,7 +4,6 @@ INNER JOIN "Order Details" AS o ON p."ProductID" = o."ProductID"
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	p."IsDeleted",
 	p."ProductID",
@@ -43,7 +42,6 @@ WHERE (@ef_filter__p1 OR p."ProductID" > 2) AND (@ef_filter__p1 OR NOT (p."Disco
 
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	p."IsDeleted",
 	p."ProductID",

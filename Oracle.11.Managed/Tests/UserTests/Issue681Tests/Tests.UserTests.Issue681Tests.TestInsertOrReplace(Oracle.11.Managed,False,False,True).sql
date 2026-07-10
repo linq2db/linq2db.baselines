@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	sys_context('userenv', 'current_schema')
 FROM

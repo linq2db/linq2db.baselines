@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	Coalesce("t"."Value1", '') || CAST("t"."Value2" AS NVarChar(11)) || Lower(CAST("t"."Value3" AS NVarChar(36)))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"t"."ID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ID",
 	"t1"."Value1",

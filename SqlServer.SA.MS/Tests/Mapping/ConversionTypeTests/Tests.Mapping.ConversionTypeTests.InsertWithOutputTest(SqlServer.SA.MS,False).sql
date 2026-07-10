@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -15,7 +14,6 @@ FROM
 	[TrimTestTable] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -25,7 +23,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]

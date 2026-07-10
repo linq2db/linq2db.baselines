@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"a_Documents"."Name"
@@ -28,7 +27,6 @@ FROM
 		INNER JOIN "Document" "a_Documents" ON "a_Attachment"."Id" = "a_Documents"."AttachmentId"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."not_null",
 	"t1"."Id"

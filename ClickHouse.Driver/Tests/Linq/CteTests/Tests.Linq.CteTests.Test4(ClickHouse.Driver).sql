@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH CTE1_ AS
 (
 	SELECT
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	c4.ParentID,
 	c4.ChildID

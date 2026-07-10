@@ -11,7 +11,6 @@ WHERE
 	"x"."ParentID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -33,7 +32,6 @@ WHERE
 	"x"."ParentID" = ? OR "x"."ParentID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"
@@ -53,7 +51,6 @@ WHERE
 	"x"."ParentID" = ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

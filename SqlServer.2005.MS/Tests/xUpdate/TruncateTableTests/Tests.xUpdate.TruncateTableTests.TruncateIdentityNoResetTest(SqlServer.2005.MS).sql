@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 DELETE FROM [test_temp]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -46,11 +43,9 @@ ORDER BY
 	[t2].[ID]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE FROM [test_temp]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [test_temp]
 (
 	[Field1]
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [test_temp]
 (
 	[Field1]

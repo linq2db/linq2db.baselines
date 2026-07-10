@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"c_2"."Key_1"
 FROM
@@ -16,7 +15,6 @@ ORDER BY
 	"c_2"."Sum_1" DESC
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Key",

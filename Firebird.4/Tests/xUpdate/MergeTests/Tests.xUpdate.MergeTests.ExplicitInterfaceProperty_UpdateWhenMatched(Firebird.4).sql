@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "ExplicitComplexPropertyTarget" "Target"
 USING (
 	SELECT 1 AS "Id", TRUE AS "TestsxUpdateMergeTestsIExplicitComplexPropertyField" FROM rdb$database) "Source"
@@ -32,7 +31,6 @@ SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExplicitComplexPropertyField"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field"

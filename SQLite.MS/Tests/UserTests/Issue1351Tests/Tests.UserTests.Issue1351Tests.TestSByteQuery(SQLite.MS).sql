@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[TestField],
@@ -10,7 +9,6 @@ WHERE
 	[t1].[TestField] = 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[TestField],

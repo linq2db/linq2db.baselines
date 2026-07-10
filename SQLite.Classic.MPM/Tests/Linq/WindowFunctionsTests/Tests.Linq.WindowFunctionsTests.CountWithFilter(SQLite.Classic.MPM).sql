@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(CASE
 		WHEN [t].[IntValue] > 20 THEN 1

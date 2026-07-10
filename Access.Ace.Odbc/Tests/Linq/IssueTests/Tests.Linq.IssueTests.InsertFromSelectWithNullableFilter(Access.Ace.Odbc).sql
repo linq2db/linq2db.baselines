@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [InsertIssueTest]
 (
 	[Pk],
@@ -47,7 +46,6 @@ FROM
 	) [t2]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Pk],
 	[t1].[ID],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM
@@ -21,7 +20,6 @@ BEGIN
 END
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF NOT EXISTS(
 	SELECT 1 
 	FROM

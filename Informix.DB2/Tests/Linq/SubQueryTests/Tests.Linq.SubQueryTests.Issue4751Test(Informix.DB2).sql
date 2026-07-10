@@ -54,7 +54,6 @@ ORDER BY
 	x.CarNo
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

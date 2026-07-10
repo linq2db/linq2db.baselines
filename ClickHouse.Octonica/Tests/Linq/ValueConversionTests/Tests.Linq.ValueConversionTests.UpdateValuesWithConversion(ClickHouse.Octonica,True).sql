@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TableWithConverterValue
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,
@@ -21,7 +19,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TableWithConverterValue
 UPDATE
@@ -30,7 +27,6 @@ WHERE
 	Id = 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,
@@ -43,7 +39,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,

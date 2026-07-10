@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
 	(143,CAST(NULL AS NVarChar(4000)),1)
@@ -39,14 +37,12 @@ VALUES
 ;
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
 	(143,CAST(NULL AS NVarChar(4000)),1)
@@ -80,7 +76,6 @@ VALUES
 ;
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

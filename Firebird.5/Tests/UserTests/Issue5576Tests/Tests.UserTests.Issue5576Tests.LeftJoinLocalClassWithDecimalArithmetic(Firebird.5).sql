@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."Guid",
 	"lc"."Count",

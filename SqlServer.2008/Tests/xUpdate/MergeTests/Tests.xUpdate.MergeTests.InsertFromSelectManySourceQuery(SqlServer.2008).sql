@@ -1,17 +1,14 @@
 ﻿-- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[Child] [t1]
 
 -- SqlServer.2008
-
 DELETE [t1]
 FROM
 	[GrandChild] [t1]
@@ -90,7 +87,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 MERGE INTO [GrandChild] [Target]
 USING (
 	SELECT
@@ -124,7 +120,6 @@ VALUES
 ;
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[GrandChildID],
 	[t1].[ParentID],

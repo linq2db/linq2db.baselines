@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN p."Value1" IS NULL THEN (

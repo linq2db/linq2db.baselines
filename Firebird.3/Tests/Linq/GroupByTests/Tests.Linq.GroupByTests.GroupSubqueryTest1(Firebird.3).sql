@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"pmp1"."ChildID"
 FROM
@@ -12,7 +11,6 @@ FROM
 		CROSS JOIN "Child" "pmp1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."ParentID",
 	"t1"."ChildID"

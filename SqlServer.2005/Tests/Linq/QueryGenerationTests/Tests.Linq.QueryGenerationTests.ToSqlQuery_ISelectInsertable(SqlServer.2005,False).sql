@@ -25,7 +25,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

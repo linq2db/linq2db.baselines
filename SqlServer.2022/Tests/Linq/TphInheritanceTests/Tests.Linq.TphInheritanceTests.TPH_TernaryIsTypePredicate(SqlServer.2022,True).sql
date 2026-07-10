@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[e].[Code],
 	[e].[Id],

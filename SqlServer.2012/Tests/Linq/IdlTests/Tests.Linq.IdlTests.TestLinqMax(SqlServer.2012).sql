@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[x].[PersonID] < 0
 
 -- SqlServer.2012
-
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[x].[PersonID] < 0
 
 -- SqlServer.2012
-
 SELECT
 	MAX([x].[PersonID])
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[x].[PersonID] < 0
 
 -- SqlServer.2012
-
 SELECT
 	MAX([x].[PersonID])
 FROM

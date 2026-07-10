@@ -9,7 +9,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`LinqDataTypes` `r`
 SET
@@ -31,7 +29,6 @@ WHERE
 	`r`.`ID` = 101 AND `r`.`IntValue` = 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

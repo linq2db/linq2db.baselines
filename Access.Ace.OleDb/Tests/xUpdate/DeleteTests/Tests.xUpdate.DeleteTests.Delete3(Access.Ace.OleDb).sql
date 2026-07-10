@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] IN (1001, 1002)
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -32,7 +29,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +37,6 @@ WHERE
 	[c_1].[ParentID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [t1]
 WHERE
@@ -59,7 +54,6 @@ WHERE
 	)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

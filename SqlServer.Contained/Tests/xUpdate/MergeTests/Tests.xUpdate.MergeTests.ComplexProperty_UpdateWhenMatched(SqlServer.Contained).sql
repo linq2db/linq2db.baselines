@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 MERGE INTO [ComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,N'first-updated',1)
@@ -61,7 +60,6 @@ SET
 ;
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Code],

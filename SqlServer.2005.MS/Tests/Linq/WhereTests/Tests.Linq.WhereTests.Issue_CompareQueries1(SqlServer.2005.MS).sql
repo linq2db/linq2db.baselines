@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM

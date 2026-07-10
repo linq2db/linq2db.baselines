@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < ?
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -38,7 +37,6 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

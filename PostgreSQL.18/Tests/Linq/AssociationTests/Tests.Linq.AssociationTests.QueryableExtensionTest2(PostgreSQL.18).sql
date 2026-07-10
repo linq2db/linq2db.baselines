@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	"a_QueryableParent"."ParentID",
 	"a_QueryableParent"."Value1"

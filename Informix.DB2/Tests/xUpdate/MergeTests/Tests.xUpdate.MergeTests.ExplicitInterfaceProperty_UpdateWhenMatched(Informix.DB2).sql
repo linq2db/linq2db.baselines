@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO ExplicitComplexPropertyTarget Target
 USING (
 	SELECT 1::Int AS Id, 't'::BOOLEAN::BOOLEAN AS TestsxUpdateMergeTestsIExplicitComplexPropertyField FROM table(set{1})) Source
@@ -32,7 +31,6 @@ SET
 	Field = Source.TestsxUpdateMergeTestsIExplicitComplexPropertyField
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	t1.Id,
 	t1.Field

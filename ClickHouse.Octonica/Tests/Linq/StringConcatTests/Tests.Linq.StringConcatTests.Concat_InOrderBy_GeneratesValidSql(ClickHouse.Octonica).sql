@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	concat(Coalesce(e.StrReq, ''), 'X')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

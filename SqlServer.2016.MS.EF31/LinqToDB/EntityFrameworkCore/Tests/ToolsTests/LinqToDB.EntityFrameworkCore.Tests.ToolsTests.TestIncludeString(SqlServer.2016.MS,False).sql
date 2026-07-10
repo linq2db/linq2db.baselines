@@ -30,7 +30,6 @@ ORDER BY [o].[OrderID], [t0].[EmployeeID], [t0].[TerritoryID], [t2].[OrderID], [
 
 
 -- SqlServer.2016
-
 SELECT
 	[m_1].[EmployeeId],
 	[d].[IsDeleted],
@@ -49,7 +48,6 @@ FROM
 
 
 -- SqlServer.2016
-
 SELECT
 	[m_1].[OrderId],
 	[d].[IsDeleted],
@@ -82,7 +80,6 @@ FROM
 
 
 -- SqlServer.2016
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

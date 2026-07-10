@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [cte] ([Id], [Enum1])
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 CREATE COLUMN TABLE "aa"
 (
 	"bb" Integer       NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."bb",
 	"t1"."cc"
@@ -34,6 +32,5 @@ FROM
 	"aa" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 DROP TABLE "aa"
 

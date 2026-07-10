@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[r].[Id],
 	N'Element ' + CAST([r].[NText] AS NVarChar(Max)) + N' Text1',

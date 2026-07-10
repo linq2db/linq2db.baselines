@@ -11,7 +11,6 @@ WHERE
 	c_1."ParentID" = :id AND c_1."Value1" IS NULL
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

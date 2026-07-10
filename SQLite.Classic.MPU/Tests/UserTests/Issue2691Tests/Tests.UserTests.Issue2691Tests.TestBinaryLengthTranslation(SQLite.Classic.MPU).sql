@@ -20,28 +20,24 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Length([x].[Data])
 FROM
 	[Issue2691Table] [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Length([x].[Data])
 FROM
 	[Issue2691Table] [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Length([x].[DataB])
 FROM
 	[Issue2691Table] [x]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Length([x].[DataB])
 FROM

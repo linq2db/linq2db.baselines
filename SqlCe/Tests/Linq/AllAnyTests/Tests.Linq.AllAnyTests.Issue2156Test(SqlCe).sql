@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	Lower(CAST([t].[Id] AS Char(36)))
 FROM
 	[TableWithGuid] [t]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t].[Id]
 FROM

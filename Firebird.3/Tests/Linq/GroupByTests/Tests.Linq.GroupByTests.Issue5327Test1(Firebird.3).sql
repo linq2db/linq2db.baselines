@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"c_1"."Key"
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM("c_1"."Value") DESC
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Id",
 	"t1"."Key",

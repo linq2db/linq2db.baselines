@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `TempTable`
 (
 	`Name` VARCHAR(20) NOT NULL,
@@ -12,7 +10,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `TempTable`
 (
 	`Name`
@@ -21,7 +18,6 @@ VALUES
 ('John')
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Name`
 FROM
@@ -29,6 +25,5 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

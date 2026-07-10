@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."Id",
 	LEAD(t."IntValue") OVER (ORDER BY t."Id")

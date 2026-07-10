@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID],
 	[c_1].[ChildID]
@@ -8,7 +7,6 @@ FROM
 		RIGHT JOIN [Child] [c_1] ON ([p].[ParentID] = [c_1].[ParentID])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -16,7 +14,6 @@ FROM
 	[Parent] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

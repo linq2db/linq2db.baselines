@@ -25,7 +25,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 WITH CTE_1 (S1)
 AS
 (

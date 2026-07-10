@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

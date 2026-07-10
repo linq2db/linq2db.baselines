@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[Key_1],
 	Coalesce((
@@ -43,7 +42,6 @@ ORDER BY
 	[t1].[Key_1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

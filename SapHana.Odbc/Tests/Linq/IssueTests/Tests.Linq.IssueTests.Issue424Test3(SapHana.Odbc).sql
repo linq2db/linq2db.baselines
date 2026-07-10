@@ -14,7 +14,6 @@ ORDER BY
 LIMIT ? OFFSET ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

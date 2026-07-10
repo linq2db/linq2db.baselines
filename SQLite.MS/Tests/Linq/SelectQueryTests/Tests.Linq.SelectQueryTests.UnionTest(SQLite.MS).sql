@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), CAST([t].[Value] AS NVarChar(11)) || ' Day'),
 	strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), '2 Day')
@@ -13,7 +12,6 @@ SELECT
 	strftime('%Y-%m-%d %H:%M:%f', DATETIME('now', 'localtime'), '4 Day')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[v_1].[Value2]
 FROM

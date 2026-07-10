@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
@@ -13,7 +12,6 @@ SELECT
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[v_1].[Value2]
 FROM

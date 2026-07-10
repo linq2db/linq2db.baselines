@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[a_Documents].[Name]
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN [Document] [a_Documents] ON ([a_Attachment].[Id] = [a_Documents].[AttachmentId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	(
 		SELECT TOP 1

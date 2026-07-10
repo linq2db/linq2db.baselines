@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 DELETE [t1]
 FROM
 	[EventScheduleItem] [t1]
@@ -17,7 +16,6 @@ VALUES (@p0, @p1, @p2, @p3);
 
 
 -- SqlServer.2017
-
 SELECT TOP (1)
 	[p].[Id],
 	[p].[NameLocalized_JSON],

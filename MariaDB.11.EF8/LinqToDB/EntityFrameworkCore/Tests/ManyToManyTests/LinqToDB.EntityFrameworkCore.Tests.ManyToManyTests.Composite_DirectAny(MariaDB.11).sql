@@ -9,7 +9,6 @@ ORDER BY `p`.`Code`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`Code`
 FROM

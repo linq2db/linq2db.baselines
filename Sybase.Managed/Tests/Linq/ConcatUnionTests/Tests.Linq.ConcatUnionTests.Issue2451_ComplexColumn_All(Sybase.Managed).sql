@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[p].[FirstName] || '/' || [p].[LastName]
 FROM

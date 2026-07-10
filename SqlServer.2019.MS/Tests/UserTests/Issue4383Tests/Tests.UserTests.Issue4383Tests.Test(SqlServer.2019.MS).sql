@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id],
@@ -25,7 +24,6 @@ ORDER BY
 	[m_1].[Id_1]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
@@ -40,7 +38,6 @@ ORDER BY
 	[m_1].[LINE_ID]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[LINE_ID],
 	[t1].[LINE_ID]

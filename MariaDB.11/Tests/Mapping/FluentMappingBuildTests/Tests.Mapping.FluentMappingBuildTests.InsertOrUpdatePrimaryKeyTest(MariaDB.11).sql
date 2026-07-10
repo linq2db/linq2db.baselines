@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_InsertOrUpdate`
 (
 	`ID`   INT         NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `FluentTemp_InsertOrUpdate`
 (
 	`ID`,
@@ -46,6 +43,5 @@ ON DUPLICATE KEY UPDATE
 	`Name` = `Name`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 

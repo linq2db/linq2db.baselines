@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH cte (ParentID, ChildID)
 AS
 (

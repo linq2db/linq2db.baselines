@@ -17,7 +17,6 @@ WHERE
 	[ValueConversion].[Id] = 1
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -72,7 +71,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
@@ -127,7 +125,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- SqlServer.2016
-
 SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],

@@ -18,7 +18,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, @True)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,
@@ -52,7 +51,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, @False)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,
@@ -67,7 +65,6 @@ FROM
 	`BooleanTable` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Boolean`,
@@ -84,7 +81,6 @@ WHERE
 	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Boolean`,

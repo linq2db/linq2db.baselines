@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -14,14 +13,12 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID
 FROM
 	Parent p
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -36,7 +33,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	p.ParentID
 FROM

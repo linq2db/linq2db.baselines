@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	current_schema()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS Issue681Table2
 
 -- DuckDB
-
 CREATE TABLE main.Issue681Table2
 (
 	ID      INTEGER,
@@ -21,6 +18,5 @@ CREATE TABLE main.Issue681Table2
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS Issue681Table2
 

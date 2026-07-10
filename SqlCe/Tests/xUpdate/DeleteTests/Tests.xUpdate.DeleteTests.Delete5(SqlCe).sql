@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] IN (1001, 1002)
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

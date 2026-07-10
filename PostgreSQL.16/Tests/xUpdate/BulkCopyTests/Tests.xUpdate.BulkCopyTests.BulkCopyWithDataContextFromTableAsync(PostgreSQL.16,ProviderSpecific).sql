@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -8,7 +7,6 @@ VALUES
 (1)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -19,7 +17,6 @@ VALUES
 INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"
@@ -28,7 +25,6 @@ VALUES
 (10)
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "SimpleBulkCopyTable"
 (
 	"Id"

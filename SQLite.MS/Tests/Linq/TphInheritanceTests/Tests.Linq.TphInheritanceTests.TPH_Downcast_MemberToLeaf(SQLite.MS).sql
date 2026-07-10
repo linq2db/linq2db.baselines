@@ -66,7 +66,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a_DValue].[Id],
 	[a_DValue].[Code],

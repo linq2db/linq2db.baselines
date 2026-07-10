@@ -51,7 +51,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",
@@ -118,7 +117,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",

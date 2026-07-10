@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	"p"."Str"
@@ -13,7 +12,6 @@ FROM
 	"Issue3360Table" "p_1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"p"."Id",
 	CAST('str' AS VarChar(5000))

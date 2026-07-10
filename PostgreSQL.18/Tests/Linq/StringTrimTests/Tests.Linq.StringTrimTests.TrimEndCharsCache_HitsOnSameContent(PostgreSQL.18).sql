@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	RTRIM(t."VarCharColumn", '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t."Id"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	RTRIM(t."VarCharColumn", '.+')
 FROM

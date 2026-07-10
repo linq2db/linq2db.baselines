@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 WITH [CTE_1] ([Value1], [Value2])
 AS
 (

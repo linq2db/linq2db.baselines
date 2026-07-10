@@ -19,7 +19,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."id",
 	"x"."service_id",
@@ -30,7 +29,6 @@ WHERE
 	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"x"."id",
 	"x"."service_id",

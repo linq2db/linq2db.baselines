@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 WITH [CTE_1] ([Value_1], [Id])
 AS
 (
@@ -24,7 +23,6 @@ SET
 	)
 
 -- SqlServer.2008
-
 SELECT TOP (2)
 	[s].[Id],
 	[s].[Value],

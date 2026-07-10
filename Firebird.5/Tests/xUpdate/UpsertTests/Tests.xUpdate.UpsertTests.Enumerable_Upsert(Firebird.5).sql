@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 1 AS "Id", CAST('one' AS VARCHAR(3)) AS "Name", 2 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database
@@ -49,7 +48,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

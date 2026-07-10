@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	AVG(c_1."ChildID"),
 	AVG(c_1."ChildID"),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	AVG(t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	AVG(ALL t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	AVG(DISTINCT t1."ParentID")
 FROM

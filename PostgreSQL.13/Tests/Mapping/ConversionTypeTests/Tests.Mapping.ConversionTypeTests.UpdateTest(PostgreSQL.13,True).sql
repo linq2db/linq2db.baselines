@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"TrimTestTable"
 SET
@@ -8,7 +7,6 @@ WHERE
 	"TrimTestTable"."ID" = 3
 
 -- PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"TrimTestTable"
 SET
@@ -17,7 +15,6 @@ WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
 -- PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"TrimTestTable"
 SET
@@ -26,7 +23,6 @@ WHERE
 	"TrimTestTable"."Data" = '***HHH***'
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"
@@ -36,7 +32,6 @@ ORDER BY
 	r."ID"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."Data"

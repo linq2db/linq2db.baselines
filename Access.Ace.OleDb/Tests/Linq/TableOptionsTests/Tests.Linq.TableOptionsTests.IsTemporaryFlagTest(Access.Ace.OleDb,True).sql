@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [IsTemporaryTable]
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -17,6 +15,5 @@ FROM
 	[IsTemporaryTable] [t1]
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [IsTemporaryTable]
 

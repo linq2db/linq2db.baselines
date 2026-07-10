@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[gc3_1].[ParentID] as [ParentID_1],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 WITH [CTE_1]
 (
 	[entry_FirstName],
@@ -32,7 +31,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.2012
-
 SELECT TOP (1)
 	[person_1].[FirstName],
 	[person_1].[PersonID],

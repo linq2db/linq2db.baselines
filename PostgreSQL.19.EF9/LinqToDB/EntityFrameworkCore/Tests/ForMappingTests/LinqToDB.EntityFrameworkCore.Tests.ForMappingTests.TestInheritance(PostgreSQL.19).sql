@@ -19,7 +19,6 @@ RETURNING "Id";
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Discriminator",
 	t1."Id"

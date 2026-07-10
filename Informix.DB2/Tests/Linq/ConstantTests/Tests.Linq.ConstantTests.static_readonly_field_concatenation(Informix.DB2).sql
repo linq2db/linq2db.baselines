@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e.Id,
 	e.GuidValue,
@@ -11,7 +10,6 @@ WHERE
 	(Nvl(e.StringValue, '') || '1') = 'StrValue1'
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

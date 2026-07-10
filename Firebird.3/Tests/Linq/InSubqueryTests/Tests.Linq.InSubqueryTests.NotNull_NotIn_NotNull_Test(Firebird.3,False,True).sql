@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"t".PK,
 	"t".ID
@@ -18,7 +17,6 @@ ORDER BY
 	"t".PK
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".PK,
 	"t1".ID
@@ -26,7 +24,6 @@ FROM
 	"test_in_1" "t1"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1".PK,
 	"t1".ID

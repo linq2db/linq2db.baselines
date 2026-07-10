@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[product_1].[Id],
 	(
@@ -19,7 +18,6 @@ FROM
 	[Product] [product_1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -27,7 +25,6 @@ FROM
 	[Product] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[ProductId],

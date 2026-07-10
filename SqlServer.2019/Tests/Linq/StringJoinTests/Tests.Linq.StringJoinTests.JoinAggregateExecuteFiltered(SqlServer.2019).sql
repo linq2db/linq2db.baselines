@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	STRING_AGG(Coalesce([x].[NullableValue], N''), N', ')
 FROM

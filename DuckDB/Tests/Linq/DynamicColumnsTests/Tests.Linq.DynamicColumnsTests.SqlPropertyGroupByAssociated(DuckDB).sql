@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	a_Patient.Diagnosis,
 	COUNT(*)

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[p].[ParentID],
 	CASE
@@ -18,7 +17,6 @@ FROM
 		) [c_2]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	COUNT(*)
 FROM

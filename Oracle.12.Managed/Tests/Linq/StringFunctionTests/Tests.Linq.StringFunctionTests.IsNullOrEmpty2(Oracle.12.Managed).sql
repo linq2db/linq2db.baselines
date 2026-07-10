@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN Length(p."FirstName") = 0 THEN 1

@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE

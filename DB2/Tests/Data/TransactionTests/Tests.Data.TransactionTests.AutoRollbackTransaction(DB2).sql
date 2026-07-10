@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Parent" "t"
 SET
@@ -25,7 +24,6 @@ WHERE
 	"t"."ParentID" = 1010
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t"."ParentID",
 	"t"."Value1"

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -44,7 +43,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,
@@ -60,7 +58,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`LinqDataTypes`

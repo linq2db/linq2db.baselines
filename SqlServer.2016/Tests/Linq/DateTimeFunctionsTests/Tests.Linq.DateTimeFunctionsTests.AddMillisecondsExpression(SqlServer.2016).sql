@@ -8,7 +8,6 @@ FROM
 	[LinqDataTypes] [t]
 
 -- SqlServer.2016
-
 SELECT
 	[t].[DateTimeValue]
 FROM

@@ -35,7 +35,6 @@ WHERE
 	p."ParentID" = :ParentID
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "Parent" ("ParentID", "Value1") VALUES (1111,1111)
 	INTO "Parent" ("ParentID", "Value1") VALUES (2111,2111)

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[x].[Id]
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	[x].[Key_1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[x].[Id]
 FROM

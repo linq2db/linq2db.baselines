@@ -183,7 +183,6 @@ ORDER BY
 LIMIT @take
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Value1`
 FROM

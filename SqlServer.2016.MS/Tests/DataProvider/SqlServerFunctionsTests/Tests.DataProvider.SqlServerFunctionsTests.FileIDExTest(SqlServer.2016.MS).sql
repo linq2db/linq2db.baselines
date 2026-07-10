@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[file_id],
 	[t1].[file_guid],

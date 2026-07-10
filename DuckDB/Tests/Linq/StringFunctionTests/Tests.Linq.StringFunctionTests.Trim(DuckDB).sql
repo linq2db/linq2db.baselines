@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	pp.PersonID,
 	'  ' || pp.FirstName || ' '

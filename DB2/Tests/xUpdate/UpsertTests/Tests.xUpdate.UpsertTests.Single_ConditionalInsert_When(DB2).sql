@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(1,'skip',0,CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)),CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)))
@@ -48,7 +47,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	CAST(EXISTS(
 		SELECT
@@ -59,7 +57,6 @@ SELECT
 FROM SYSIBM.SYSDUMMY1
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(2,'keep',5,CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)),CAST(NULL AS timestamp),CAST(NULL AS NVarChar(255)))
@@ -108,7 +105,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

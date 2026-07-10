@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	Coalesce(t."Value1", '') || Coalesce(t."Value2"::VarChar(11), '') || Coalesce(t."Value3"::VarChar(36), '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t."ID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value1",

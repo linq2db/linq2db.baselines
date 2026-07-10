@@ -1,7 +1,6 @@
 ﻿
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -34,7 +33,6 @@ WHERE
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

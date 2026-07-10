@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[c_2].[ChildID]
 FROM

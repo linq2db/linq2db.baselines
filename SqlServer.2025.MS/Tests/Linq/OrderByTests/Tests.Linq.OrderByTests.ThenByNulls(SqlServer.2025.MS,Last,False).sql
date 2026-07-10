@@ -15,7 +15,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

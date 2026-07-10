@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 3
 	[x].[Id]
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	[x].[Id]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 3
 	[x].[Id]
 FROM

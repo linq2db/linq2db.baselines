@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[TestId],
 	[t1].[count_1]
@@ -16,7 +15,6 @@ FROM
 		) [t1] ON ([t1].[Key_1] = [t].[TestId])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

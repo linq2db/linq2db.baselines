@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Value]
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN [ItemValue] [d] ON ([m_1].[Id] = [d].[ItemId])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[x].[Id],
 	[x].[Text]

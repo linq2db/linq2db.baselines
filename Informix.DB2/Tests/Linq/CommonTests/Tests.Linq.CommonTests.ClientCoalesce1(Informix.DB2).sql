@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.Value1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Nvl(x.Value1, 100) > 10
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.Value1
 FROM

@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
 -- Informix.DB2 Informix
-
 WITH CTE1_ (c1)
 AS
 (
@@ -21,7 +19,6 @@ FROM
 	CTE1_ t2
 
 -- Informix.DB2 Informix
-
 WITH CTE1_ (c1)
 AS
 (
@@ -36,7 +33,6 @@ FROM
 	CTE1_ t1
 
 -- Informix.DB2 Informix
-
 WITH CTE1_ (c1)
 AS
 (

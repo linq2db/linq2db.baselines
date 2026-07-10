@@ -26,7 +26,6 @@ WHERE
 	[d].[Id] = @id
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id]
 FROM
@@ -47,7 +46,6 @@ WHERE
 	[d].[Id] = @id
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id]
 FROM

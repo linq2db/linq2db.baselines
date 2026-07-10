@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[v].[inId],
 	[t].[inIdState],

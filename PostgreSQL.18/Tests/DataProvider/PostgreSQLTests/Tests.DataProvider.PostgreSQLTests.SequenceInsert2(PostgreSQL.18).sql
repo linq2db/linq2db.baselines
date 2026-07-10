@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DELETE FROM
 	"SequenceTest2" t1
 WHERE
@@ -19,7 +18,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value"
@@ -39,7 +37,6 @@ WHERE
 	t1."ID" = :id
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

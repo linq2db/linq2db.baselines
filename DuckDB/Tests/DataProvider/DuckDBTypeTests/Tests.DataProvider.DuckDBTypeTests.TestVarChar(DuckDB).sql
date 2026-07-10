@@ -12,7 +12,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -23,7 +22,6 @@ WHERE
 	r."Column" = '' AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -62,7 +60,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -95,7 +92,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -128,7 +124,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -176,7 +171,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -187,7 +181,6 @@ WHERE
 	r."Column" = 'test string  ' AND r.ColumnNullable = 'другая строка  '
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -228,7 +221,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -265,7 +257,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -300,7 +291,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -351,7 +341,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -363,7 +352,6 @@ WHERE
 '
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -406,7 +394,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -445,7 +432,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -481,7 +467,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -517,7 +502,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -528,12 +512,10 @@ WHERE
 	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-
 INSERT INTO "TypeTable`2"
 (
 	Id,
@@ -548,7 +530,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -559,12 +540,10 @@ WHERE
 	r."Column" = '1' || chr(0) || '2' AND r.ColumnNullable = '3' || chr(1) || '4'
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-
 INSERT INTO "TypeTable`2"
 (
 	Id,
@@ -575,7 +554,6 @@ VALUES
 (1,'1' || chr(0) || '2','3' || chr(1) || '4')
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -601,7 +579,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -612,7 +589,6 @@ WHERE
 	r."Column" = '1234567890x' AND r.ColumnNullable = '0123456789q'
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -653,7 +629,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -690,7 +665,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -725,7 +699,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -773,7 +746,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -784,7 +756,6 @@ WHERE
 	r."Column" = 'A' AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -823,7 +794,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -856,7 +826,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -889,7 +858,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable IS NULL
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -937,7 +905,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -948,7 +915,6 @@ WHERE
 	r."Column" = 'A' AND r.ColumnNullable = 'я'
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -989,7 +955,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1026,7 +991,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1061,7 +1025,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
@@ -1096,7 +1059,6 @@ WHERE
 	r."Column" = $value AND r.ColumnNullable = $nullableValue
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -1107,12 +1069,10 @@ WHERE
 	r."Column" = chr(0) AND r.ColumnNullable = ''
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-
 INSERT INTO "TypeTable`2"
 (
 	Id,
@@ -1127,7 +1087,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -1138,12 +1097,10 @@ WHERE
 	r."Column" = chr(0) AND r.ColumnNullable = ''
 
 -- DuckDB
-
 DELETE FROM
 	"TypeTable`2" t1
 
 -- DuckDB
-
 INSERT INTO "TypeTable`2"
 (
 	Id,
@@ -1154,7 +1111,6 @@ VALUES
 (1,chr(0),'')
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",

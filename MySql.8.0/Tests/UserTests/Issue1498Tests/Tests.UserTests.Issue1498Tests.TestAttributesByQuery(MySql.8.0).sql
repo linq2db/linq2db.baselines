@@ -20,7 +20,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	STRING_AGG(g_1."Value1", ' -> ')
 FROM

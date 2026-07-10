@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	CHARINDEX(N'34', N'123456340', 4)
 

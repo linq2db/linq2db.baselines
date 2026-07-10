@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[p].[Region],
 	[p].[Code],
@@ -11,7 +10,6 @@ ORDER BY
 	[p].[Code]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

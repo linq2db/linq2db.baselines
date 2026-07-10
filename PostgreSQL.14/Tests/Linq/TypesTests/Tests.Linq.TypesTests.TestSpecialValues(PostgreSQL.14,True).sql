@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "AllTypes"
 (
 	"ID",
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "AllTypes"
 (
 	"ID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "AllTypes"
 (
 	"ID",
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."realDataType",
 	t1."doubleDataType"

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Key_1,
 	d.id,
@@ -26,7 +25,6 @@ WHERE
 	d.id2 = 85
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT DISTINCT
 	x.id
 FROM

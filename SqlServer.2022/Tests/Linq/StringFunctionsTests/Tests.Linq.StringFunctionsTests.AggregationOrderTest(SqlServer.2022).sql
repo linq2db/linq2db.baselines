@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[g_1].[Id],
 	MAX([g_1].[Value1]),

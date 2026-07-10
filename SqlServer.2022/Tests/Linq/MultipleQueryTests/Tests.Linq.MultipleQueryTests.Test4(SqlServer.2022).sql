@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- SqlServer.2022
-
 SELECT
 	[p].[ParentID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	g_2.Key_1,
 	sumOrNull(g_2.c1)

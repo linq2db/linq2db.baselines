@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -13,7 +12,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p].[Id],
 	[p].[Name]
@@ -23,7 +21,6 @@ ORDER BY
 	[p].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 WITH [CTE_1] ([Id], [field], [Name])
 AS
 (

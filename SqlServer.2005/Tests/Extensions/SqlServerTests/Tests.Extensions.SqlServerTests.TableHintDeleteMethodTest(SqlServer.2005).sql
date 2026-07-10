@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 DELETE [p]
 FROM
 	[Child] [p] WITH (NoLock)

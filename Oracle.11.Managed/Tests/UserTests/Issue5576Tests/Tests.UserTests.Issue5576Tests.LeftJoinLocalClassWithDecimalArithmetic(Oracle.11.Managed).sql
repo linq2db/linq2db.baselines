@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Guid",
 	lc."Count",

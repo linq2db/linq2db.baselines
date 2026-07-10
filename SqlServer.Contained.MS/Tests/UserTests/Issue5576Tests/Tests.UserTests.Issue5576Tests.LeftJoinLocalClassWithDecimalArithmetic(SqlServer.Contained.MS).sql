@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

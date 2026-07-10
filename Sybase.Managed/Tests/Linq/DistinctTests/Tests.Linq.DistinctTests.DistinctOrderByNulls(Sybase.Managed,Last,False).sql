@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 3
 	[t1].[Value1]
 FROM
@@ -17,7 +16,6 @@ ORDER BY
 	[t1].[Value1]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

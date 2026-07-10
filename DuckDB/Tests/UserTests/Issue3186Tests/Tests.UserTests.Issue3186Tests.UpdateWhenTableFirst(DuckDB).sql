@@ -16,7 +16,6 @@ WHERE
 	NOT cm.is_deleted
 
 -- DuckDB
-
 SELECT
 	x.id,
 	x.service_id,
@@ -27,7 +26,6 @@ WHERE
 	x.is_deleted AND x.service_id = 'TestProcessService'
 
 -- DuckDB
-
 SELECT
 	x.id,
 	x.service_id,

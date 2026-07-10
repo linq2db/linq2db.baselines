@@ -44,7 +44,6 @@ ORDER BY
 	"p"."PersonID"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."PersonID",
 	"t1"."Diagnosis"
@@ -52,7 +51,6 @@ FROM
 	"Patient" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

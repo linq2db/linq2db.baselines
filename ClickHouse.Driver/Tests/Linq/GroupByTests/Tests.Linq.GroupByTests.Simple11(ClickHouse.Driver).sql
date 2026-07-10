@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.ParentID,
 	m_1.ChildID,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN GrandChild d ON m_1.ParentID = d.ParentID + 1 AND m_1.ChildID = d.ChildID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	t1.ParentID + 1,
 	t1.ChildID

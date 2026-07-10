@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- SqlCe
-
 DROP TABLE [Table]
 

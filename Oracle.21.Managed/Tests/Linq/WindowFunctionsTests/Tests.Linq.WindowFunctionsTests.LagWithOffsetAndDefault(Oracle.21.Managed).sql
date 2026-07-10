@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t."Id",
 	LAG(t."IntValue", 2, 0) OVER (ORDER BY t."Id")

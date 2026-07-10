@@ -8,7 +8,6 @@ FROM
 	[LinqDataTypes] [t]
 
 -- SqlCe
-
 SELECT
 	[t].[DateTimeValue]
 FROM

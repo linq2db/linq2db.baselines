@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* My bad Test */
 SELECT
 	x.FirstName,

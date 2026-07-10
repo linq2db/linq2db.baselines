@@ -10,7 +10,6 @@ WHERE
 	"t"."ID" = 1
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t"."BinaryValue"
 FROM

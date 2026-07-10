@@ -12,7 +12,6 @@ ORDER BY i."Id"
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	c_1."Id"
 FROM

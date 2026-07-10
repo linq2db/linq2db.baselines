@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	Coalesce([t1].[StrValue], N'') + N'_B',
 	Coalesce([t1].[StrValue], N'') + N'_C',

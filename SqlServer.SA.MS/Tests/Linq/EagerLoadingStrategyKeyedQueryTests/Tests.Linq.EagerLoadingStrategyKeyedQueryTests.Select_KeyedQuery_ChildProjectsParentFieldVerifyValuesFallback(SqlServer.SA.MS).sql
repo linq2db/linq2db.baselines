@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Name],
@@ -12,7 +11,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

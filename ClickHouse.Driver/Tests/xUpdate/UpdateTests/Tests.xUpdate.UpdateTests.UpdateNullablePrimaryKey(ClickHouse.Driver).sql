@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	GrandChild
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	ParentID = 10000 AND ChildID IS NULL
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	GrandChild
 UPDATE

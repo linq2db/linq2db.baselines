@@ -30,7 +30,6 @@ ORDER BY `o`.`OrderID`, `t`.`EmployeeID`, `t0`.`EmployeeID`, `t0`.`TerritoryID`,
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`EmployeeId`,
 	`d`.`IsDeleted`,
@@ -53,7 +52,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`OrderId`,
 	`d`.`IsDeleted`,
@@ -90,7 +88,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

@@ -29,7 +29,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	"a_Details"."UserId",

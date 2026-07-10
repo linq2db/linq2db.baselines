@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`PersonID`,
 	Coalesce(`m_2`.`MiddleName`, 'default2')
@@ -14,7 +13,6 @@ FROM
 		) `m_2` ON `p`.`PersonID` = `m_2`.`c1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

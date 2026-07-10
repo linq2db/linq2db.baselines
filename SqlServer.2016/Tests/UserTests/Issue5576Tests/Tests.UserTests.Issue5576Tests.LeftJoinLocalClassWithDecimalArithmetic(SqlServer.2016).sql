@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

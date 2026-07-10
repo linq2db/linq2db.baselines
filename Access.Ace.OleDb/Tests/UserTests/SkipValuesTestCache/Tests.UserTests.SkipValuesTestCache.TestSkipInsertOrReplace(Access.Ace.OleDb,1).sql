@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],
@@ -53,7 +52,6 @@ WHERE
 	[t1].[Id] = @Id
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t].[Id],
 	[t].[Name],

@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	LTRIM(N'   ' + Coalesce([t].[VarCharColumn], ''))
 FROM
 	[StringTrimTable] [t]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

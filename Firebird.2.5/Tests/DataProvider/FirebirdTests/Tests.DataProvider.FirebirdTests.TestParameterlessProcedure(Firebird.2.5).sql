@@ -1,13 +1,10 @@
 ﻿-- Firebird.2.5 Firebird
-
 "Person_SelectAll"
 
 -- Firebird.2.5 Firebird
-
 "Person_SelectAll"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".PERSONID,
 	"t1".FIRSTNAME,

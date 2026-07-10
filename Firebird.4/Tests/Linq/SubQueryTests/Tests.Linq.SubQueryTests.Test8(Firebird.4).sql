@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"c_1"."ParentID",
 	"c_1"."ChildID"

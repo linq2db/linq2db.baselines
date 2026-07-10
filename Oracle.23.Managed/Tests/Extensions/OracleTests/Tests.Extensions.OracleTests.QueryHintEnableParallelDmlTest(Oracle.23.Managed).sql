@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT /*+ ENABLE_PARALLEL_DML */
 	p."ParentID",
 	p."Value1"

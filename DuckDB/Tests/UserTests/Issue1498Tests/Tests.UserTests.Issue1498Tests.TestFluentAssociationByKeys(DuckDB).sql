@@ -20,7 +20,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	m_1.Id,
 	d.Id
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN Message d ON m_1.Id = d.TopicId
 
 -- DuckDB
-
 SELECT
 	x.Id,
 	x.Title,

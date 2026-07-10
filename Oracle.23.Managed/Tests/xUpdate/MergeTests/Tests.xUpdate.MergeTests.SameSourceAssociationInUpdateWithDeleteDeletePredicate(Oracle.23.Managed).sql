@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "Person" Target
 USING (
 	SELECT
@@ -26,7 +25,6 @@ DELETE WHERE
 	"Source"."Patient_Diagnosis" = 'very sick' AND "Source"."Patient_Diagnosis_1" = 'very sick'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

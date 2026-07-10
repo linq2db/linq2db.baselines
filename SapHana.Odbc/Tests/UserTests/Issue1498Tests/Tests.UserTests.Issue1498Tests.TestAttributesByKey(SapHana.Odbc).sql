@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"m_1"."Id",
 	"d"."Id"
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN "Message" "d" ON "m_1"."Id" = "d"."TopicId"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."Title",

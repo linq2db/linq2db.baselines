@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	VAR_SAMP(p.Value1) OVER (PARTITION BY p.Value1, c_1.ChildID),
 	VAR_SAMP(p.Value1) OVER (ORDER BY p.Value1),
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	VAR_SAMP(c_1.ParentID)
 FROM
@@ -20,7 +18,6 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	VAR_SAMP(t1.ParentID)
 FROM

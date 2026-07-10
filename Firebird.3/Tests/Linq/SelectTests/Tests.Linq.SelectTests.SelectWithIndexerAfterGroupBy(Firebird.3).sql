@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"x"."Key_1",
 	"x"."Index_1"
@@ -17,7 +16,6 @@ ORDER BY
 	"x"."Key_1" DESC
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

@@ -1,13 +1,10 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT '<xml/>' from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT '<xml/>' from dummy
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT '<xml/>' from dummy
 
 -- SapHana.Odbc SapHanaOdbc

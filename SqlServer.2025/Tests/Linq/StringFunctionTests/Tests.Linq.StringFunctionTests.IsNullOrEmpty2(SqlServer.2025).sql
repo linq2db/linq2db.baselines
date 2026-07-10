@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	IIF(LEN([p].[FirstName] || N'.') = 1, 1, 0)
 FROM

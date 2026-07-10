@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	CAST("p".ID AS SmallInt)
 FROM

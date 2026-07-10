@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -11,13 +10,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -32,7 +29,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -44,13 +40,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -61,7 +55,6 @@ VALUES
 (1,toUUID('00000000-0000-0000-0000-000000000000'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -73,7 +66,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -81,7 +73,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -93,7 +84,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -101,7 +91,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -113,7 +102,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -125,13 +113,11 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -146,7 +132,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -158,13 +143,11 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -175,7 +158,6 @@ VALUES
 (1,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),toUUID('a948600d-de21-4f74-8ac2-9516b287076e'))
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -187,7 +169,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -195,7 +176,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -207,7 +187,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -215,7 +194,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -227,7 +205,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -239,13 +216,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -260,7 +235,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -272,13 +246,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -289,7 +261,6 @@ VALUES
 (1,toUUID('00000000-0000-0000-0000-000000000000'),NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -301,7 +272,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -309,7 +279,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -321,7 +290,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -329,7 +297,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -341,7 +308,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -353,13 +319,11 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -374,7 +338,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -386,13 +349,11 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -403,7 +364,6 @@ VALUES
 (1,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),toUUID('a948600d-de21-4f74-8ac2-9516b287076e'))
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -415,7 +375,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -423,7 +382,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -435,7 +393,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -443,7 +400,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -455,7 +411,6 @@ WHERE
 	r.ColumnNullable = toUUID('a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -467,13 +422,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -488,7 +441,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -500,13 +452,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -517,7 +467,6 @@ VALUES
 (1,'00000000-0000-0000-0000-000000000000',NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -529,7 +478,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -537,7 +485,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -549,7 +496,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -557,7 +503,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -569,7 +514,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -581,13 +525,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -602,7 +544,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -614,13 +555,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -631,7 +570,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -643,7 +581,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -651,7 +588,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -663,7 +599,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -671,7 +606,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -683,7 +617,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -695,13 +628,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -716,7 +647,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -728,13 +658,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -745,7 +673,6 @@ VALUES
 (1,'00000000-0000-0000-0000-000000000000',NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -757,7 +684,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -765,7 +691,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -777,7 +702,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -785,7 +709,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -797,7 +720,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -809,13 +731,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -830,7 +750,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -842,13 +761,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -859,7 +776,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -871,7 +787,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -879,7 +794,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -891,7 +805,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -899,7 +812,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -911,7 +823,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -923,13 +834,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -944,7 +853,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -956,13 +864,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -973,7 +879,6 @@ VALUES
 (1,'00000000-0000-0000-0000-000000000000',NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -985,7 +890,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -993,7 +897,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1005,7 +908,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1013,7 +915,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1025,7 +926,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1037,13 +937,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1058,7 +956,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1070,13 +967,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1087,7 +982,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1099,7 +993,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1107,7 +1000,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1119,7 +1011,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1127,7 +1018,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1139,7 +1029,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1151,13 +1040,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1172,7 +1059,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1184,13 +1070,11 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1201,7 +1085,6 @@ VALUES
 (1,'00000000-0000-0000-0000-000000000000',NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1213,7 +1096,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1221,7 +1103,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1233,7 +1114,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1241,7 +1121,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1253,7 +1132,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1265,13 +1143,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1286,7 +1162,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1298,13 +1173,11 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO `TypeTable``2`
 (
 	Id,
@@ -1315,7 +1188,6 @@ VALUES
 (1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','a948600d-de21-4f74-8ac2-9516b287076e')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1327,7 +1199,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1335,7 +1206,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -1347,7 +1217,6 @@ WHERE
 	r.ColumnNullable = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
@@ -1355,7 +1224,6 @@ DELETE WHERE 1
 INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,

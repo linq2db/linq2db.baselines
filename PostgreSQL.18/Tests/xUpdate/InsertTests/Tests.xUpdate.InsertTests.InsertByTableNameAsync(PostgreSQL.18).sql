@@ -78,14 +78,12 @@ RETURNING
 	"PersonID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

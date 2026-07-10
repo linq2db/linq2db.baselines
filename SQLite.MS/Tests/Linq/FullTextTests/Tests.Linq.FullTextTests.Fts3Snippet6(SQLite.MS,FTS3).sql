@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	snippet([r].[FTS3_TABLE], '>', '<', '[zzz]', 1, 1)
 FROM

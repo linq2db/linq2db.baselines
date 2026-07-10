@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id"
 FROM
@@ -20,7 +19,6 @@ ORDER BY
 	"x"."Id"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id"
 FROM

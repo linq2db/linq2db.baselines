@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
@@ -8,7 +7,6 @@ FROM
 	[InheritanceParent] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],

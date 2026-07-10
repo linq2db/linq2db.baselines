@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[ParentID],
@@ -12,7 +11,6 @@ FROM
 		LEFT JOIN [GrandParent_3230] [a_GrandParent] ON [a_Parent].[GrandParentID] = [a_GrandParent].[ID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[ParentID],

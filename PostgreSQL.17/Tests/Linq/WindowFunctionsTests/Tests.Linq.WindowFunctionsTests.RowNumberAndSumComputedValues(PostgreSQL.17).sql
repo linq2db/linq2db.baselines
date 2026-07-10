@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	ROW_NUMBER() OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

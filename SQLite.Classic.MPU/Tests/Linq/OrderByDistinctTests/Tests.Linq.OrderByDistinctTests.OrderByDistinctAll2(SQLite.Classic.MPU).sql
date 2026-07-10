@@ -24,7 +24,6 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

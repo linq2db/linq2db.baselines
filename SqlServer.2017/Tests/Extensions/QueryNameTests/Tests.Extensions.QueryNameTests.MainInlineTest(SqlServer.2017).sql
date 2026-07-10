@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT /* Main */
 	[p].[ParentID],
 	[p].[Value1],

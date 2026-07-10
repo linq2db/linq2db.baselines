@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES
 	(1,2)

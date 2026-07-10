@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON ([d].[FKD] = [a_ObjectD].[Id])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[e].[Id]
 FROM

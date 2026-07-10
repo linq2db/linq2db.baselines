@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	CAST([d].[DateTimeValue] AS Date)
 FROM

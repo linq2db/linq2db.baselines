@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p2.PersonID,
 	trim(TRAILING '' FROM (concat(p2.FirstName, '')))

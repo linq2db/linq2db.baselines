@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ChildID],

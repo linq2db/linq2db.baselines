@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."TestField",
@@ -10,7 +9,6 @@ WHERE
 	t1."TestField" = 0
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."TestField",

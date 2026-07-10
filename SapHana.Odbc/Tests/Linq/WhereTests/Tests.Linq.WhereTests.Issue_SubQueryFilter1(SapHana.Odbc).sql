@@ -42,7 +42,6 @@ ORDER BY
 	"t1"."PersonID"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."PersonID",
 	"t1"."Diagnosis"
@@ -50,7 +49,6 @@ FROM
 	"Patient" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

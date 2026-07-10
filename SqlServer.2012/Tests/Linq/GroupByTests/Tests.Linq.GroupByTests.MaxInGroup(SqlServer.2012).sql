@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[g_1].[GroupId],
 	MAX([g_1].[DataValue]),
@@ -15,7 +14,6 @@ GROUP BY
 	[g_1].[GroupId]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[GroupId],

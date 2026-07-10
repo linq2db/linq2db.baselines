@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -101,7 +96,6 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -112,13 +106,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -129,7 +121,6 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

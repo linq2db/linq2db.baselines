@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	tt."Key_1",
 	SUM(tt."ChildID")

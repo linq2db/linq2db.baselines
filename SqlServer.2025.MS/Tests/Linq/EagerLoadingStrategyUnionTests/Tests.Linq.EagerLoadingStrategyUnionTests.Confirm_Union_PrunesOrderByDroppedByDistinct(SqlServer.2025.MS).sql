@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 WITH [CTE_1] ([CompanyId], [field])
 AS
 (

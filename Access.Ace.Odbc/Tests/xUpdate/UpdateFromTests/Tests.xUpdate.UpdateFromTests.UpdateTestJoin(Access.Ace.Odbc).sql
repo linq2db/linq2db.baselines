@@ -19,7 +19,6 @@ WHERE
 	[t].[id] <> ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[v].[id],
 	[v].[Value1],

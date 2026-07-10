@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE
@@ -186,7 +185,6 @@ WHERE
 ROWS @take
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

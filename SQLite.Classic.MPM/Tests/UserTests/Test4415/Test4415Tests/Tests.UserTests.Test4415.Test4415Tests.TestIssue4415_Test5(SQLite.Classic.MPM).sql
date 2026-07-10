@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[LanguageID],
 	[t1].[Name]
@@ -7,7 +6,6 @@ FROM
 	[Common_Language] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[LanguageID],
 	[x].[Name]

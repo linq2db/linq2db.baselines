@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT (Id) DO NOTHING
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,

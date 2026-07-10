@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN EntityD d ON m_1.Id = d.FK
 
 -- Informix.DB2 Informix
-
 SELECT
 	e.Id,
 	a_ObjectB.Id

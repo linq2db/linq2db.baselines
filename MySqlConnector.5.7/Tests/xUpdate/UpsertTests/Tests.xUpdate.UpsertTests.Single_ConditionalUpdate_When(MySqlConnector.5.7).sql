@@ -38,7 +38,6 @@ WHERE
 	`t1`.`Id` = @Id AND @Version > `t1`.`Version`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,
@@ -93,7 +92,6 @@ WHERE
 	`t1`.`Id` = @Id AND @Version > `t1`.`Version`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,

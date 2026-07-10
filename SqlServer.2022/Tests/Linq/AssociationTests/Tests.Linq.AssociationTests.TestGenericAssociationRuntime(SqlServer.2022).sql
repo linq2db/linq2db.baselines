@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[a_MiddleRuntime].[ParentID],
 	[a_Bottom].[ParentID],

@@ -23,7 +23,6 @@ SET     @O = 2
 TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	TEST_FUNCTION(1) as "c1"
 FROM
@@ -31,7 +30,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	TEST_PACKAGE1.TEST_FUNCTION(1) as "c1"
 FROM
@@ -39,7 +37,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	TEST_PACKAGE2.TEST_FUNCTION(1) as "c1"
 FROM

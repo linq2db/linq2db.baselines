@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[cross_1].[PersonID_1],
 	[cross_1].[FirstName],

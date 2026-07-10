@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval `t`.`Value` Day),
 	Date_Add(CURRENT_TIMESTAMP, Interval 2 Day)
@@ -13,7 +12,6 @@ SELECT
 	Date_Add(CURRENT_TIMESTAMP, Interval 4 Day)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`v_1`.`Value2`
 FROM

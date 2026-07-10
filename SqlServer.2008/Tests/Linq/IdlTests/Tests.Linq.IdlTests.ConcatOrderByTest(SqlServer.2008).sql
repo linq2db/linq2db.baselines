@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t1].[Rank],
 	[t1].[FirstName],

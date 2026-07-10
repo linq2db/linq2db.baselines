@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	concat('I-', toString(x.PersonID)) as Id,
 	x.FirstName

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 2 AS "Id", CAST('ignored' AS VARCHAR(7)) AS "Name", 1 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -25,14 +24,12 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Name",
@@ -48,7 +45,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 1 AS "Id", CAST('updated' AS VARCHAR(7)) AS "Name", 2 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -74,7 +70,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Name",

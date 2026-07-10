@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

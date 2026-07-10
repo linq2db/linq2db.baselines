@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([t1].[Sum_1] IS NULL, 0, [t1].[Sum_1])
 FROM

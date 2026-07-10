@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	(
@@ -22,14 +21,12 @@ FROM
 	[Parent] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[x_1].[ParentID],
 	[x_1].[CountResult],

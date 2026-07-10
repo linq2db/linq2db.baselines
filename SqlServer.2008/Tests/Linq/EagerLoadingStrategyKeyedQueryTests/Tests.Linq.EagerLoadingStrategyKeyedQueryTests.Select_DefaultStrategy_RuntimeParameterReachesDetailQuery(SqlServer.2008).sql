@@ -18,7 +18,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.2008
-
 SELECT
 	[d].[Id],
 	[d].[Name]

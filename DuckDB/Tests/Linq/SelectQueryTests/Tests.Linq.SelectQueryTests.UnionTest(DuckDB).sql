@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	now() + t."Value" * Interval '1 Day',
 	now() + 2 * Interval '1 Day'
@@ -13,7 +12,6 @@ SELECT
 	now() + 4 * Interval '1 Day'
 
 -- DuckDB
-
 SELECT
 	v_1.Value2
 FROM

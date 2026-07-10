@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	r.Diagnosis LIKE 'Hall%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	r.Diagnosis LIKE 'hall%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	r.Diagnosis ILIKE 'hall%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

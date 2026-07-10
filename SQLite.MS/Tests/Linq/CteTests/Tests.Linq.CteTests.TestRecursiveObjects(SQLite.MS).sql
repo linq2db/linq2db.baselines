@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [previous]
 (
 	[OrgGroup_Id],

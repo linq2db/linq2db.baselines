@@ -1,11 +1,9 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT 0 AS [Id], 1 AS [Field1], 2 AS [Field2], 4 AS [Field4]) [Source]
@@ -34,7 +32,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -48,13 +45,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT 10 AS [Id], 11 AS [Field1], 12 AS [Field2], 14 AS [Field4]) [Source]
@@ -83,7 +78,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -97,13 +91,11 @@ ORDER BY
 	[t1].[Id]
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 -- Sybase.Managed Sybase
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT 20 AS [Id], 21 AS [Field1], 22 AS [Field2], 24 AS [Field4]
@@ -134,7 +126,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

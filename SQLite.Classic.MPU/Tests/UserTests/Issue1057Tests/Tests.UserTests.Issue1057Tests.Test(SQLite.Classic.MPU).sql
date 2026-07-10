@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

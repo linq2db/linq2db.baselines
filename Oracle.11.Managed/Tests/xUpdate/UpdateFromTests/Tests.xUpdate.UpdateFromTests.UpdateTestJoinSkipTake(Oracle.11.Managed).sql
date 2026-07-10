@@ -104,7 +104,6 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	v."id",
 	v."Value1",

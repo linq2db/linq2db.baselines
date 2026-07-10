@@ -17,7 +17,6 @@ WHERE
 	[ValueConversion].[Id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -73,7 +72,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -129,7 +127,6 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],

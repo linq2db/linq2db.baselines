@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[p].[ParentID],
 	(
@@ -16,7 +15,6 @@ ORDER BY
 	[p].[ParentID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

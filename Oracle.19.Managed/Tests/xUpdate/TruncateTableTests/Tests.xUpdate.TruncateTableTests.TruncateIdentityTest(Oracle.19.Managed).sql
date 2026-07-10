@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
@@ -28,7 +27,6 @@ BEGIN
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestIdTrun"
 (
 	ID       Int              NOT NULL,
@@ -38,11 +36,9 @@ CREATE TABLE "TestIdTrun"
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE "SIDENTITY_TestIdTrun"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestIdTrun"
 BEFORE INSERT ON "TestIdTrun" FOR EACH ROW
 BEGIN
@@ -50,7 +46,6 @@ BEGIN
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -85,11 +79,9 @@ ORDER BY
 OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "TestIdTrun"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DECLARE
 	l_value number;
 BEGIN
@@ -107,7 +99,6 @@ BEGIN
 END;
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -118,7 +109,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -142,7 +132,6 @@ ORDER BY
 OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
 	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TestIdTrun"';

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id" / 3,
 	ARRAY_AGG(v.value) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),

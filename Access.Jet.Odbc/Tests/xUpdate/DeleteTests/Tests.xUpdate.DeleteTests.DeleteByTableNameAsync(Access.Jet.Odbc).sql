@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -51,7 +49,6 @@ WHERE
 	[t1].[PersonID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

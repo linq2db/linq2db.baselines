@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO InsertTestClassDest
 (
 	Id,
@@ -23,7 +22,6 @@ FROM
 	CTE_1 t2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,
@@ -33,7 +31,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value,

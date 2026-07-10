@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Value1" = r."Value2",
@@ -82,7 +81,6 @@ WHERE
 	r."Id" <> -1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",

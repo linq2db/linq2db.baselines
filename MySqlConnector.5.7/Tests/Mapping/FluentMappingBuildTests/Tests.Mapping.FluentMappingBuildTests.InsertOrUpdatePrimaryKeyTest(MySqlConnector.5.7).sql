@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE IF NOT EXISTS `FluentTemp_InsertOrUpdate`
 (
 	`ID`   INT         NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `FluentTemp_InsertOrUpdate`
 (
 	`ID`,
@@ -46,6 +43,5 @@ ON DUPLICATE KEY UPDATE
 	`Name` = `Name`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `FluentTemp_InsertOrUpdate`
 

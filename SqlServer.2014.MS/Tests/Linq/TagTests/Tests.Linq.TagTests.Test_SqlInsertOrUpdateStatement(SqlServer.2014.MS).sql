@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 /* My Test */
 MERGE INTO [TestTable] [t1]
 USING (SELECT 1 AS [Id]) [s] ON

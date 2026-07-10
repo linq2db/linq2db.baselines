@@ -28,7 +28,6 @@ RETURNING
 	"PersonID"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",
@@ -64,7 +63,6 @@ WHERE
 	"t1"."PersonID" = @ID
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

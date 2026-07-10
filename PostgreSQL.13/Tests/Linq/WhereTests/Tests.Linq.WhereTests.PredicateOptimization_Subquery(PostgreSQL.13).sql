@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."PK",
 	p."Id",
@@ -20,7 +19,6 @@ WHERE
 	) > make_timestamp(2023, 1, 1, 0, 0, 0)
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."PK",
 	p."Id",

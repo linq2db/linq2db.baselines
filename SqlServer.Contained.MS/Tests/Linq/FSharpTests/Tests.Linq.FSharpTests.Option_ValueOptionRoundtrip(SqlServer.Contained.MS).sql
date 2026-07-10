@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],
@@ -52,7 +51,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],

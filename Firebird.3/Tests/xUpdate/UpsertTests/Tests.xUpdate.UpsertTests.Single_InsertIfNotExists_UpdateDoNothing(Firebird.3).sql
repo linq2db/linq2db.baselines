@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Name",

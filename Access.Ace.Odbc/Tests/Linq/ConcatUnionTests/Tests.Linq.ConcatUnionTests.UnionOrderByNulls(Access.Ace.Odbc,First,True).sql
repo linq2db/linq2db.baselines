@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 3
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -27,7 +26,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

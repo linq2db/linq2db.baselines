@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (1)
 	N'[database].[schema].[table_name]',
 	N'[database].[schema].[table_name]',

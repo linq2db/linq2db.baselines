@@ -25,7 +25,6 @@ ORDER BY o."OrderID", t1."OrderID", t1."ProductID", t1."ProductID0", t1."OrderID
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."ProductId",
 	m_1."OrderId",
@@ -55,7 +54,6 @@ WHERE
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."OrderID",
 	d."IsDeleted",
@@ -86,7 +84,6 @@ WHERE
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	e."IsDeleted",
 	e."OrderID",

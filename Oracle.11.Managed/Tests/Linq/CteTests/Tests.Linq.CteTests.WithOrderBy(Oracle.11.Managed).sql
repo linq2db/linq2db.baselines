@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH CTE_1 ("ParentID", "Value1")
 AS
 (

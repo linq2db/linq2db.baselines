@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.Id,
 	'str1'::VarChar
@@ -13,7 +12,6 @@ FROM
 	Issue3360Table p_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.Id,
 	'str2'::VarChar

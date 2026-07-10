@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.FirstName,
 	RANK() OVER (ORDER BY CASE

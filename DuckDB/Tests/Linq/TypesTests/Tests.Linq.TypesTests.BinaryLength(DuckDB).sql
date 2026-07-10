@@ -10,7 +10,6 @@ WHERE
 	LinqDataTypes.ID = 1
 
 -- DuckDB
-
 SELECT
 	Octet_Length(t.BinaryValue)
 FROM

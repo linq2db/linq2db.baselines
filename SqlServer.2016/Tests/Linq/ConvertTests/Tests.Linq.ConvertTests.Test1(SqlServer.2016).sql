@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],

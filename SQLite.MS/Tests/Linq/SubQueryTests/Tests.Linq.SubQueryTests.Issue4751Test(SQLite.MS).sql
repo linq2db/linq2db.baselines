@@ -55,7 +55,6 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

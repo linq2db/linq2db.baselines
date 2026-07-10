@@ -1,9 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM "test_temp"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -37,11 +34,9 @@ ORDER BY
 	"t1".ID
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM "test_temp"
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -52,7 +47,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "test_temp"
 (
 	"Field1"

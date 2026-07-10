@@ -35,7 +35,6 @@ WHERE
 	p."ParentID" = :ParentID
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO "Parent"
 (
 	"ParentID",

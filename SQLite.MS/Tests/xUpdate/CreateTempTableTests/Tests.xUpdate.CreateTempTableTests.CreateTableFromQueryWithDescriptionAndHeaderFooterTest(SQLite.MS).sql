@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.MS SQLite
-
 /* THIS IS HEADER*/ CREATE TABLE [TempTable]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
@@ -15,7 +13,6 @@ DROP TABLE IF EXISTS [TempTable]
 /* THIS IS FOOTER*/
 
 -- SQLite.MS SQLite
-
 INSERT INTO [TempTable]
 (
 	[FirstName],
@@ -34,20 +31,17 @@ FROM
 	[Person] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

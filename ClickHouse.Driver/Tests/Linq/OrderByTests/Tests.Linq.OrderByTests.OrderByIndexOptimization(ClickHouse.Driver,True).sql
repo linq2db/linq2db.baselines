@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	s.PersonID,
 	Substring(s.LastName, 1, 3)

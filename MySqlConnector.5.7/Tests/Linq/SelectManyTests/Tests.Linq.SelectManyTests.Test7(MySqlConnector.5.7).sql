@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`a_Child`.`ParentID`,
 	`a_Child`.`ChildID`
@@ -12,7 +11,6 @@ WHERE
 	`p`.`ParentID` = `g_1`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`a_Child`.`ParentID`,
 	`a_Child`.`ChildID`

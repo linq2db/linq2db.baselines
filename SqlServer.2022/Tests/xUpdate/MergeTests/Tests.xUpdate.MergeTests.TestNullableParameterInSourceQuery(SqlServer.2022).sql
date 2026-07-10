@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT

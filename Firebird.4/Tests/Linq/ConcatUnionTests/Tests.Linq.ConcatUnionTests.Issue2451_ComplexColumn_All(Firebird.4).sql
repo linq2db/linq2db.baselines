@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p"."FirstName"
 FROM
@@ -11,7 +10,6 @@ FROM
 	"Person" "p_1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"p"."FirstName" || '/' || "p"."LastName"
 FROM

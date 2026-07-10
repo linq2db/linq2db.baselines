@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`Parent_1`.`ParentID`,
 	`Parent_1`.`Value1`,

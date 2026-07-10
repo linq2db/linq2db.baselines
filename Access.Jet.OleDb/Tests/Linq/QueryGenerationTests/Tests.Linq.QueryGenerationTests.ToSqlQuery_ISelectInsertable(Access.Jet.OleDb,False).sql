@@ -25,7 +25,6 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

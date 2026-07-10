@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	a_Patient.PersonID IS NOT NULL
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.ParentID,
 	x.Value1
@@ -9,7 +8,6 @@ WHERE
 	x.ParentID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1
@@ -17,7 +15,6 @@ FROM
 	Parent t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.ParentID,
 	x.Value1
@@ -27,7 +24,6 @@ WHERE
 	x.ParentID = 3 OR x.ParentID = 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1
@@ -35,7 +31,6 @@ FROM
 	Parent t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.ParentID,
 	x.Value1
@@ -45,7 +40,6 @@ WHERE
 	x.ParentID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

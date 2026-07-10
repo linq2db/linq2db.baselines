@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -13,7 +12,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"p"."Id",
 	"p"."Name"
@@ -23,7 +21,6 @@ ORDER BY
 	"p"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -37,7 +34,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"p"."Id",
 	"p"."Name"

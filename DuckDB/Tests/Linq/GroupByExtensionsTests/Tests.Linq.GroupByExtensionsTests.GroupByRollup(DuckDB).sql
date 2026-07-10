@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	g_2.Id1,
 	COUNT(*)

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH RECURSIVE "MY_CTE" ("ChildID", "ParentID", "GrandChildID")
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "InsertIssueTest"
 (
 	"Pk",
@@ -47,7 +46,6 @@ FROM
 	) t2
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Pk",
 	t1."ID",

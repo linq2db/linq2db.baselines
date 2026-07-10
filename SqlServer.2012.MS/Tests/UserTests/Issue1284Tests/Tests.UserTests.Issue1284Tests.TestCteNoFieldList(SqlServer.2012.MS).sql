@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 WITH [cte]
 (
 	[FirstName],
@@ -29,7 +28,6 @@ FROM
 	[cte] [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

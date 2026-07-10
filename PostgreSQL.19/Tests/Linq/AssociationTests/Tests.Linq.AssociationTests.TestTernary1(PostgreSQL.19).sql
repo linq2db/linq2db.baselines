@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	"a_Middle"."ParentID",
 	"a_Bottom"."ParentID",

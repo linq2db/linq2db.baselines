@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t].[Value1]
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[ID]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

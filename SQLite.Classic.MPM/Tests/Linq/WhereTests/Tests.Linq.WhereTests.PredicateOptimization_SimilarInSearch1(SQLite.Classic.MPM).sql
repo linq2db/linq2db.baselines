@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -13,7 +12,6 @@ WHERE
 	[x].[FirstName] = 'Jane'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -24,7 +22,6 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -37,7 +34,6 @@ WHERE
 	[x].[PersonID] > 3 AND ([x].[FirstName] = 'John' OR [x].[FirstName] = 'Jane')
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

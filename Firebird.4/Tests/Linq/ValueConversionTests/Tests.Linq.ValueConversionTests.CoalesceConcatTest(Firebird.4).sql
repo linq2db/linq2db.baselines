@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t2"."Converted1",
 	"t2"."Converted2",

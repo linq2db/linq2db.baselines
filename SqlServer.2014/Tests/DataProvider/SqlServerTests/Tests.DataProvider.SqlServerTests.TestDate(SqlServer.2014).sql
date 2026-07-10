@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2014
-
 SELECT Cast('2012-12-12' as date)
 
 -- SqlServer.2014
-
 SELECT Cast('2012-12-12' as date)
 
 -- SqlServer.2014

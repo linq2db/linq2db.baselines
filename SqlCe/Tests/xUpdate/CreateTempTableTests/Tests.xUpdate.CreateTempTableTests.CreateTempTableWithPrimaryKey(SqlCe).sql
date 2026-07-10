@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [TableWithPrimaryKey]
 )
 
 -- SqlCe
-
 DROP TABLE [TableWithPrimaryKey]
 

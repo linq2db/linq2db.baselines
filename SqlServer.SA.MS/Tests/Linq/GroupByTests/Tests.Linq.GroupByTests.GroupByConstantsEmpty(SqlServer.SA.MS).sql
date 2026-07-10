@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[g_2].[ChildId],
 	[g_2].[ParentId],
@@ -19,7 +18,6 @@ GROUP BY
 	[g_2].[ParentId]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

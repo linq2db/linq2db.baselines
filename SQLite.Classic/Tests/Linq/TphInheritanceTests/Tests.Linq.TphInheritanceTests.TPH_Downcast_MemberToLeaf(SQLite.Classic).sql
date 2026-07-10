@@ -66,7 +66,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[a_DValue].[Id],
 	[a_DValue].[Code],

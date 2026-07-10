@@ -421,7 +421,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Char],

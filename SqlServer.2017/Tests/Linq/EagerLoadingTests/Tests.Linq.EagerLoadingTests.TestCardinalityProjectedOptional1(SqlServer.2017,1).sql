@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id],

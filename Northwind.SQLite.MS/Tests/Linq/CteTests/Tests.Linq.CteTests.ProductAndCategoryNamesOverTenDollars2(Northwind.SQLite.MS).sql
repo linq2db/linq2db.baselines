@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 WITH [ProductAndCategoryNamesOverTenDollars] ([CategoryName], [UnitPrice], [ProductName])
 AS
 (
@@ -25,7 +24,6 @@ ORDER BY
 	[p_1].[ProductName]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[p].[ProductName],
 	[a_Category].[CategoryName],

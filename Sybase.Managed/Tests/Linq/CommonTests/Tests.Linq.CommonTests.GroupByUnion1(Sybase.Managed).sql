@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[tt].[Key_1],
 	SUM([tt].[ChildID])

@@ -10,7 +10,6 @@ WHERE
 	"LinqDataTypes"."ID" = 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."BinaryValue"
 FROM

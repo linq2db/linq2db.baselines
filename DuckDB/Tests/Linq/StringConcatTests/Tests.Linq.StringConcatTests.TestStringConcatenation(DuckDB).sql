@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	r.Id,
 	'Element ' || Coalesce(r.VarCharTextNullable, '') || ' Text1',

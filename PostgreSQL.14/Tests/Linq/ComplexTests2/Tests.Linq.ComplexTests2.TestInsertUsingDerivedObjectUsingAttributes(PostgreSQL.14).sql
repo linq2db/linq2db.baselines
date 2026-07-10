@@ -26,7 +26,6 @@ RETURNING
 	"PersonID"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -62,7 +61,6 @@ WHERE
 	"Person"."PersonID" = :ID
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

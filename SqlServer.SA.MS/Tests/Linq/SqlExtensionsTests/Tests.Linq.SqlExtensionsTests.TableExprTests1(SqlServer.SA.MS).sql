@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT TOP (1)
 	'[database].[schema].[table_name]',
 	'[database].[schema].[table_name]',

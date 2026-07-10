@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	e_1.Id,
 	e_1.TestId
@@ -20,7 +19,6 @@ ORDER BY
 	e_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.TestId

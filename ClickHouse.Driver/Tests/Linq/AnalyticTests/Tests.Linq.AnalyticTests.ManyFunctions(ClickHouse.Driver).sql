@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	RANK() OVER (PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1, c_1.ChildID, c_1.ParentID),
 	toInt64(ROW_NUMBER() OVER (PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1 DESC, c_1.ChildID DESC, c_1.ParentID DESC)),

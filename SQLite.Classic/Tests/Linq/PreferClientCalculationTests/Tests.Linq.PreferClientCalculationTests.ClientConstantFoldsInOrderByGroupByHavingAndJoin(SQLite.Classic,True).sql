@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -11,7 +10,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -21,14 +19,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[ClientCalcEntity] [g_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -51,7 +47,6 @@ HAVING
 	COUNT(*) > @p
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -72,7 +67,6 @@ FROM
 		INNER JOIN [ClientCalcEntity] [j] ON [e].[Id] + @Id = [j].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

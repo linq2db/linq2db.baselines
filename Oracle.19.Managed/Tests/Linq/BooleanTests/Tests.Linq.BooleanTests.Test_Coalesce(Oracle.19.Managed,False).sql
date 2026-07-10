@@ -18,7 +18,6 @@ WHERE
 	Coalesce(r."BooleanN", :True) = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -52,7 +51,6 @@ WHERE
 	Coalesce(r."BooleanN", :False) = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Boolean",
@@ -67,7 +65,6 @@ FROM
 	"BooleanTable" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Boolean",
@@ -87,7 +84,6 @@ WHERE
 	END) = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Boolean",

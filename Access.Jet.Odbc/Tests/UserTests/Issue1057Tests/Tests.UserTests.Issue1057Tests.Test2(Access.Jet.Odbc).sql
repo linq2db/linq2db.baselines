@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = 'bda.Requests'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

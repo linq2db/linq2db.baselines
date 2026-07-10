@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "InsertIssueTest"
 (
 	"Pk",
@@ -47,7 +46,6 @@ FROM
 	) "t2"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Pk",
 	"t1".ID,

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"Parent"
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	t."Value1"

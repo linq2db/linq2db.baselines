@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	CAST([p].[MoneyValue] AS Float)
 FROM

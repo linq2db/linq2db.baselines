@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 WITH CTE_1 ("Value1", "Value2")
 AS
 (

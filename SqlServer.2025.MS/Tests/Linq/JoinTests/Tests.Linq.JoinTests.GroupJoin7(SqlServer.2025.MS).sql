@@ -18,7 +18,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID] - @n
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

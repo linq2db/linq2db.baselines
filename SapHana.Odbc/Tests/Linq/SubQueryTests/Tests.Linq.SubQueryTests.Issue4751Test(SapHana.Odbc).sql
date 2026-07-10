@@ -55,7 +55,6 @@ ORDER BY
 LIMIT ? OFFSET ?
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

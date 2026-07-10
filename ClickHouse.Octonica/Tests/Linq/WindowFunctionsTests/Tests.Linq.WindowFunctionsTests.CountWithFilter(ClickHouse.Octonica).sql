@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(CASE
 		WHEN t.IntValue > 20 THEN 1

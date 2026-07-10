@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."TestField",
@@ -10,7 +9,6 @@ WHERE
 	"t1"."TestField" = 0
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."TestField",

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[r_1].[Diagnosis],
 	[a_Person].[FirstName]

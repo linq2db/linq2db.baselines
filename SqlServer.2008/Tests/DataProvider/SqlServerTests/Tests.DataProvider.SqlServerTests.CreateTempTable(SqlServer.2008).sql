@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
@@ -8,11 +7,9 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 -- SqlServer.2008
-
 DROP TABLE [tempdb]..[#TempTable]
 
 -- SqlServer.2008
-
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,

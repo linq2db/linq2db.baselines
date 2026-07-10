@@ -1,10 +1,8 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
 -- DuckDB
-
 SELECT
 	current_schema()
 FROM

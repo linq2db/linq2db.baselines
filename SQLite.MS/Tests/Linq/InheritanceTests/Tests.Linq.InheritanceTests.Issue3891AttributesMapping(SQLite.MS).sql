@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Type],
 	[t1].[Id],
@@ -62,7 +61,6 @@ WHERE
 	[Base].[Id] = @Id
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Type],
 	[t1].[Id],

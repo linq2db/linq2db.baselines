@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[sq].[Rank],
 	[sq].[RowNumber],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[t9].[WithParentReference],
 	[t9].[WithParentReferenceCustom1],

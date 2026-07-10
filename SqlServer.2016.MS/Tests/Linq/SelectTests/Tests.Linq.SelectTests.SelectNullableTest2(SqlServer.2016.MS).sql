@@ -48,7 +48,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -64,7 +63,6 @@ WHERE
 	[t1].[ID] = 1000
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [t1]
 FROM
 	[LinqDataTypes] [t1]

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH CTE_1
 (
 	"Child_ParentID",
@@ -38,7 +37,6 @@ FROM
 	CTE_1 t1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH CTE_1
 (
 	"Child_ParentID",

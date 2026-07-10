@@ -37,7 +37,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[id],
 	[t1].[name],
@@ -85,7 +84,6 @@ BEGIN
 END
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[id],
 	[t1].[name],

@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t2"."Id",
 	"t1"."ExpressionMethod"

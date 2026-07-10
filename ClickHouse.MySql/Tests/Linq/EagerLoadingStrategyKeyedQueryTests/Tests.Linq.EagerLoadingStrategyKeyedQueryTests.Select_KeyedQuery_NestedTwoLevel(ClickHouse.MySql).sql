@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	c_1.Id,
 	c_1.Name
@@ -9,7 +8,6 @@ ORDER BY
 	c_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -26,7 +24,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	d.CompanyId,
 	d.Id,

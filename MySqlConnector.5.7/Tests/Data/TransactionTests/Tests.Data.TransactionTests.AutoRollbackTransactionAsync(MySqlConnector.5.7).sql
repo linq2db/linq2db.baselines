@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 UPDATE
 	`Parent` `t`
 SET
@@ -25,7 +24,6 @@ WHERE
 	`t`.`ParentID` = 1010
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

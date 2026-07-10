@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" p
 WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +34,6 @@ WHERE
 	p."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" p
 WHERE

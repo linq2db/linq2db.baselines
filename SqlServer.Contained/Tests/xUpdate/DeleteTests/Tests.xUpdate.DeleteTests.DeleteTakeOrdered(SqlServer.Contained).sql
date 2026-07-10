@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]
@@ -194,7 +193,6 @@ FROM
 	) [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[Value1]
 FROM
@@ -205,7 +203,6 @@ ORDER BY
 	[r].[ParentID]
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

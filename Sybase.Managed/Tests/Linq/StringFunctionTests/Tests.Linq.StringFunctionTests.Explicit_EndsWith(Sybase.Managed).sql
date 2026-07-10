@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[r].[Diagnosis] LIKE '%Persecution' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[r].[Diagnosis] LIKE '%persecution' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	Lower([r].[Diagnosis]) LIKE '%persecution' ESCAPE '~'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

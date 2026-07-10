@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"
@@ -10,7 +9,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

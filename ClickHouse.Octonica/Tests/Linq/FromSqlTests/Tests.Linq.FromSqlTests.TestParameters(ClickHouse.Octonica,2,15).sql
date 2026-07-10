@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_1.value,
 	c_1.id
@@ -15,7 +14,6 @@ ORDER BY
 	c_1.id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.value,
 	t.id

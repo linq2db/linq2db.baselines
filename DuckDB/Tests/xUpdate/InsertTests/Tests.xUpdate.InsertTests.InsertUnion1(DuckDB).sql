@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE
 	p.ParentID > 1000
 
 -- DuckDB
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -31,7 +29,6 @@ FROM
 	) t1
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	c_1.ParentID > 1000
 
 -- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE

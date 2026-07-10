@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -31,7 +30,6 @@ RETURNING
 	"PersonID"
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."FirstName",
 	"p"."PersonID",
@@ -44,7 +42,6 @@ WHERE
 	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE

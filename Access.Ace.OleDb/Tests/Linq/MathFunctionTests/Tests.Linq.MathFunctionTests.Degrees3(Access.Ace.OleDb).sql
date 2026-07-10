@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	Int(Int([t].[MoneyValue]) * 57.295779513082323)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	LEAD("t"."DoubleValue") OVER (ORDER BY "t"."Id"),
 	LAG("t"."DecimalValue") OVER (ORDER BY "t"."Id"),

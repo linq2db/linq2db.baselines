@@ -183,7 +183,6 @@ ORDER BY
 ROWS @take
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Value1"
 FROM

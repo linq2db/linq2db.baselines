@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[row_1].[Value]
 FROM

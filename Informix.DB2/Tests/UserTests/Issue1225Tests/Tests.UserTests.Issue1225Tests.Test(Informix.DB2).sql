@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	'Id',
 	it.Id,

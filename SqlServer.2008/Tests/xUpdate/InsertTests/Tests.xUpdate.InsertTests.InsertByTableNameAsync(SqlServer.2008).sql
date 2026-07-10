@@ -78,14 +78,12 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	COUNT(*)
 FROM

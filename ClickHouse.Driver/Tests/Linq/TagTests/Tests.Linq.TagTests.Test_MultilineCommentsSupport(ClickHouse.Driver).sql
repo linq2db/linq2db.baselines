@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 /* My custom
 wonderful multiline
 query tag */

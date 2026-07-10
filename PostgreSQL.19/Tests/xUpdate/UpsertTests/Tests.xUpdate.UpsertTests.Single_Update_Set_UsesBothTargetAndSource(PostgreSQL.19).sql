@@ -43,7 +43,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = :UpdatedBy
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

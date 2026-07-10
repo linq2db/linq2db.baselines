@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(c_1.Id AS VARCHAR),
 	c_1.Name

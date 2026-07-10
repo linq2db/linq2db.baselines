@@ -14,7 +14,6 @@ WHERE
 	r."FirstName" = :p
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."FirstName",
 	r."PersonID",

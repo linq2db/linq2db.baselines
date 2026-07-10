@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -10,7 +9,6 @@ WHERE
 	[s].[Id] = 3
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [s]
 OUTPUT
 	DELETED.[Id],

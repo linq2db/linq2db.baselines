@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO ComplexPropertyTarget Target
 USING (
 	SELECT 1::Int AS Id, 'first-updated'::NVarChar(50) AS Code, 't'::BOOLEAN::BOOLEAN AS Nested_Field FROM table(set{1})) Source
@@ -59,7 +58,6 @@ SET
 	Field = Source.Nested_Field
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Code,

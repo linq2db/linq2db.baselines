@@ -59,7 +59,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -92,7 +91,6 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

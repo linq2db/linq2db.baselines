@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -132,7 +130,6 @@ WHERE
 	`t1`.`ID` = @ID
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,

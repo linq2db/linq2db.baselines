@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -17,7 +16,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -37,7 +35,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -55,7 +52,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NullableValue]
@@ -73,7 +69,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -91,7 +86,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT
 	[m_1].[Key_1],
 	[d].[NotNullableValue]
@@ -110,7 +104,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2012
-
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
@@ -119,7 +112,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SqlServer.2012
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

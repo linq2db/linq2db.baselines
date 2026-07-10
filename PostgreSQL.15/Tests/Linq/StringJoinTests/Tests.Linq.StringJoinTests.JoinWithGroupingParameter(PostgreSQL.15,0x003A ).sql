@@ -14,7 +14,6 @@ ORDER BY
 	g_1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."Id",

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [a_Children]
 FROM
 	[Parent] [p]
@@ -45,7 +41,6 @@ WHERE
 	[p].[ParentID] >= 1000
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -53,7 +48,6 @@ WHERE
 	[c_1].[ParentID] >= 1000
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

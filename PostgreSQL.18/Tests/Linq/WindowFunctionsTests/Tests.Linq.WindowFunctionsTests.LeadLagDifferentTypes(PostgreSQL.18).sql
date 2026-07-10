@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	LEAD(t."DoubleValue") OVER (ORDER BY t."Id"),
 	LAG(t."DecimalValue") OVER (ORDER BY t."Id"),

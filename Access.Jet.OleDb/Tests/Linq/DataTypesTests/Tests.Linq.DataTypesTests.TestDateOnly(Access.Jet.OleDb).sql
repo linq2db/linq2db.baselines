@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = #2020-02-29# AND [r].[ColumnNullable] = #2020-01-01#
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[DateOnlyTable] [t1]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,7 +80,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[DateOnlyTable] [t1]
 
@@ -130,7 +126,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -141,7 +136,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[DateOnlyTable] [t1]
 
@@ -188,7 +182,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

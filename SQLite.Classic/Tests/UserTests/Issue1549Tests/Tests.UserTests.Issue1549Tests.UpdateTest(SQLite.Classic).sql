@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[billing_TempReading]
 SET
@@ -12,7 +11,6 @@ WHERE
 	[drt].[DevTypeId] = [billing_TempReading].[Devtypeid]
 
 -- SQLite.Classic SQLite
-
 UPDATE
 	[billing_TempReading]
 SET

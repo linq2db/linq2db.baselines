@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`c_1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`d`.`CompanyId`,
 	`d`.`Id`,
@@ -22,7 +20,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

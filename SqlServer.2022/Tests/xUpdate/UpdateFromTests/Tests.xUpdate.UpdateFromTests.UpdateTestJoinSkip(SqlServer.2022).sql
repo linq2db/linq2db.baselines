@@ -37,7 +37,6 @@ WHERE
 	[u].[id] = [t1].[id]
 
 -- SqlServer.2022
-
 SELECT
 	[v].[id],
 	[v].[Value1],

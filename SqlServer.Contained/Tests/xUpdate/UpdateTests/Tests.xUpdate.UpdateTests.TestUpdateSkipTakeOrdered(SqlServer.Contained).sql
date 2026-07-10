@@ -196,7 +196,6 @@ WHERE
 	[u].[ParentID] = [t1].[ParentID] AND ([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[Value1]
 FROM

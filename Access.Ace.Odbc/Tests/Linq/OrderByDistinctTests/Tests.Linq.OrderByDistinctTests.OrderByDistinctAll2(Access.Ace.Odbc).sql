@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 3
 	[r_1].[ID],
 	[r_1].[LastName],
@@ -19,7 +18,6 @@ ORDER BY
 	[r_1].[FirstName]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

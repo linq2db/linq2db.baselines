@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	arg.Id,
 	arg.Value
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS Id, toFloat32(0) AS Value) arg ON entity.PersonID = arg.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	arg.Id,
 	arg.Value

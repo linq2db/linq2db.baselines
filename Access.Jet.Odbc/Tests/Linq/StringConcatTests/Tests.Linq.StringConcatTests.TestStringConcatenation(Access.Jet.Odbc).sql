@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	'Element ' + IIF([r].[VarCharTextNullable] IS NULL, '', [r].[VarCharTextNullable]) + ' Text1',

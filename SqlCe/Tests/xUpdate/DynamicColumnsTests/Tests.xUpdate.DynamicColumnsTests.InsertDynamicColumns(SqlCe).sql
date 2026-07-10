@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

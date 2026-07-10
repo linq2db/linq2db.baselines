@@ -28,7 +28,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

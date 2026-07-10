@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 3
 	[t1].[Id],
 	[t1].[Grp],
@@ -11,7 +10,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

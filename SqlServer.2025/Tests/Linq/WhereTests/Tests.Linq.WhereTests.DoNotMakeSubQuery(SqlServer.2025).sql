@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[p2].[PersonID],
 	RTRIM([p2].[FirstName] || N'', N'')

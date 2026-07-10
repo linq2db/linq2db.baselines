@@ -1,9 +1,7 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT Cast('23' as blob) FROM "Dual"
 
 -- Firebird.5 Firebird4
-
 SELECT Cast('1234' as blob) FROM "Dual"
 
 -- Firebird.5 Firebird4

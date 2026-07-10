@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 CREATE TEMPORARY TABLE temp_table1
 (
 	"ID"    Int NOT NULL,
@@ -10,7 +9,6 @@ CREATE TEMPORARY TABLE temp_table1
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO temp_table1
 (
 	"ID",
@@ -20,7 +18,6 @@ VALUES
 (1,2)
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TEMPORARY TABLE temp_table2
 (
 	"ID"    Int NOT NULL,
@@ -31,7 +28,6 @@ CREATE TEMPORARY TABLE temp_table2
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO temp_table2
 (
 	"ID",
@@ -44,7 +40,6 @@ FROM
 	temp_table1 t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value"
@@ -52,7 +47,6 @@ FROM
 	temp_table1 t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value"
@@ -60,7 +54,6 @@ FROM
 	temp_table2 t1
 
 -- PostgreSQL.18 PostgreSQL12
-
 INSERT INTO temp_table1
 (
 	"ID",
@@ -89,18 +82,14 @@ VALUES
 INSERT ASYNC BULK temp_table1(ID, Value)
 
 -- PostgreSQL.18 PostgreSQL12
-
 TRUNCATE TABLE temp_table1
 
 -- PostgreSQL.18 PostgreSQL12
-
 TRUNCATE TABLE temp_table2
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS temp_table2
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS temp_table1
 

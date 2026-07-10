@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2005
-
 IF (OBJECT_ID(N'[AllTypeCreateTest]', N'U') IS NOT NULL)
 	DROP TABLE [AllTypeCreateTest]
 
 -- SqlServer.2005
-
 CREATE TABLE [AllTypeCreateTest]
 (
 	[ID]                       Int               NOT NULL IDENTITY,
@@ -52,7 +50,6 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[ID],
 	[t1].[bigintDataType],
@@ -100,6 +97,5 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 -- SqlServer.2005
-
 DROP TABLE [AllTypeCreateTest]
 

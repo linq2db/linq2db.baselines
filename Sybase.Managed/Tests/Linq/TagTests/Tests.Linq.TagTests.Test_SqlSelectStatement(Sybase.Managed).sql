@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 /* My Test */
 SELECT
 	[t1].[Id],

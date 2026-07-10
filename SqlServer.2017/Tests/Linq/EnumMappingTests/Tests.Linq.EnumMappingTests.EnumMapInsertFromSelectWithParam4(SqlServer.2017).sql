@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2017
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -39,7 +38,6 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 -- SqlServer.2017
-
 SELECT
 	COUNT(*)
 FROM

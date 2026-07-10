@@ -20,7 +20,6 @@ WHERE
 	[cross_1].[id] = 'TestProcessService' AND [cross_1].[id_1] = [ctg_1].[id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x].[id],
 	[x].[service_id],
@@ -31,7 +30,6 @@ WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[x].[id],
 	[x].[service_id],

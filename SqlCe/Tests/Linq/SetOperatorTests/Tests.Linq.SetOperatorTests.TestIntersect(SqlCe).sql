@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
 	[t1].[Id],
 	[t1].[Value1],

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 MERGE INTO "ExplicitComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,1)
@@ -33,7 +32,6 @@ SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExplicitComplexPropertyField"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Field"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	"a_ChildPredicate"."ParentID",
 	"a_ChildPredicate"."ChildID"

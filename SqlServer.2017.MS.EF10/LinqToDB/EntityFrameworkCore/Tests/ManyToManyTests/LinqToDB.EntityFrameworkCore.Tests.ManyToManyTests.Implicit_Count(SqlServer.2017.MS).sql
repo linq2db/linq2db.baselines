@@ -8,7 +8,6 @@ ORDER BY [s].[Id]
 
 
 -- SqlServer.2017
-
 SELECT
 	(
 		SELECT

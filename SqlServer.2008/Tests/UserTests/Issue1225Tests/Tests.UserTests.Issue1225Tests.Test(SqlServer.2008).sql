@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	N'Id',
 	[it].[Id],

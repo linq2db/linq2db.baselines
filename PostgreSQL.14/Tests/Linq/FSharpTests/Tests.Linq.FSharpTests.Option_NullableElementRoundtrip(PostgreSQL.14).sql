@@ -33,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Value"
@@ -44,7 +43,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Value"

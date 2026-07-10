@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Name",
 	o."Id"
@@ -8,7 +7,6 @@ FROM
 		LEFT JOIN "Order" o ON x."Id" = o."CustomerId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Name"
@@ -16,7 +14,6 @@ FROM
 	"Customer" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."CustomerId",

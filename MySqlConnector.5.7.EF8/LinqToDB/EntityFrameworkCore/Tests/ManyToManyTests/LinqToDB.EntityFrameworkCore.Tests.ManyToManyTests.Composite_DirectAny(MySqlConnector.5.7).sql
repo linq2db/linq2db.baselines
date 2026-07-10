@@ -9,7 +9,6 @@ ORDER BY `p`.`Code`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`Code`
 FROM

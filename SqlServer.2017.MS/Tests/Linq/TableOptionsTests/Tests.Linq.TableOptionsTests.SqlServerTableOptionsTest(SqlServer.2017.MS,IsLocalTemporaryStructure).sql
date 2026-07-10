@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -9,6 +8,5 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

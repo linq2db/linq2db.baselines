@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[Value1] = 11
 
 -- SqlCe
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -21,7 +19,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- SqlCe
-
 DELETE FROM
 	[Parent]
 WHERE

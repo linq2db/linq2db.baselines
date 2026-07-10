@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = FALSE AND "r"."ColumnNullable" = TRUE
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"BooleanTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"BooleanTable" "t1"
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "BooleanTable"
 (
 	"Id",
@@ -99,7 +94,6 @@ SELECT 1,TRUE,NULL FROM rdb$database UNION ALL
 SELECT 2,FALSE,TRUE FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -110,12 +104,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"BooleanTable" "t1"
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "BooleanTable"
 (
 	"Id",
@@ -126,7 +118,6 @@ SELECT 1,TRUE,NULL FROM rdb$database UNION ALL
 SELECT 2,FALSE,TRUE FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

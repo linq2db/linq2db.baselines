@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -21,7 +20,6 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 -- Firebird.3 Firebird3
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -61,23 +59,18 @@ SELECT
 WHERE p.RDB$SYSTEM_FLAG = 0
 
 -- Firebird.3 Firebird3
-
 "AddIssue792Record"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "OutRefEnumTest"(NULL,NULL)
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Patient_SelectAll"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 -- Firebird.3 Firebird3
@@ -87,23 +80,18 @@ SET     @PersonID = 0
 "Person_Delete"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Person_Insert"(NULL,NULL,NULL,NULL)
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Person_SelectAll"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Person_SelectByKey"(NULL)
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 -- Firebird.3 Firebird3
@@ -121,15 +109,12 @@ SET     @GENDER = _utf8 x'00'
 "Person_Update"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Scalar_DataReader"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Scalar_OutputParameter"
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM "Scalar_ReturnParameter"
 
 -- Firebird.3 Firebird3
@@ -141,7 +126,6 @@ SET     @O = 0
 TEST_PROCEDURE
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM TEST_TABLE_FUNCTION(NULL)
 
 -- Firebird.3 Firebird3
@@ -153,7 +137,6 @@ SET     @O = 0
 TEST_PACKAGE1.TEST_PROCEDURE
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
 
 -- Firebird.3 Firebird3
@@ -165,12 +148,10 @@ SET     @O = 0
 TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Firebird.3 Firebird3
-
 SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 RollbackTransaction
 -- Firebird.3 Firebird3
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -192,7 +173,6 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 -- Firebird.3 Firebird3
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -233,7 +213,6 @@ WHERE p.RDB$SYSTEM_FLAG = 0
 
 RollbackTransaction
 -- Firebird.3 Firebird3
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -255,7 +234,6 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 -- Firebird.3 Firebird3
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,

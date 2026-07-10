@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 MERGE INTO [LinqDataTypes] [Target]
 USING (
 	SELECT

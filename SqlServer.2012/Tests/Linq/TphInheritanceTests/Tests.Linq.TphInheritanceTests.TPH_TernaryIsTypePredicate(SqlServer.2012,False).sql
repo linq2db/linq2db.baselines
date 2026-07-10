@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT
 	[e].[Code],
 	[e].[Id],

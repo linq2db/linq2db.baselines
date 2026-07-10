@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[x].[ID],
 	[x].[Index_1]
@@ -21,7 +20,6 @@ ORDER BY
 	[x].[ID]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

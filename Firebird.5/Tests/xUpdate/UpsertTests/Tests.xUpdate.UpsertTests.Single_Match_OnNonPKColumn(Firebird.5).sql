@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT CAST('alice' AS VARCHAR(5)) AS "Name", 99 AS "Id", 42 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -46,7 +45,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Name",
@@ -62,7 +60,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Name",

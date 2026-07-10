@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Child" c_1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	c_1."ChildID" = 1001
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Child" c_1
 WHERE

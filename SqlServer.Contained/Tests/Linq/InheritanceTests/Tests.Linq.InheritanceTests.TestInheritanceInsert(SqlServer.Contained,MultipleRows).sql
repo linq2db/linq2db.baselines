@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [InheritanceFilter]
 (
 	[Id],
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

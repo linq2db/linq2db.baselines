@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -10,7 +9,6 @@ WHERE
                   　') = ''
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Text]

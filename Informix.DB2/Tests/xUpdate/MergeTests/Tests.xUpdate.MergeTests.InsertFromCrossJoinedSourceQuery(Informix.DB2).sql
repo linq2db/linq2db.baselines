@@ -1,15 +1,12 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	GrandChild
 
@@ -87,7 +84,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO GrandChild Target
 USING (
 	SELECT
@@ -120,7 +116,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.GrandChildID,
 	t1.ParentID,

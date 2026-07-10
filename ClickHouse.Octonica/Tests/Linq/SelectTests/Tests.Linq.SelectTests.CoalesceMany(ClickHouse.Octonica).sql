@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	Coalesce(t.Nullable1, t.Nullable2, t.Nullable3, t.Id),
 	Coalesce(t.Nullable2, t.Nullable1, t.Nullable3, t.Id),
@@ -13,7 +12,6 @@ FROM
 	CoalesceNullableFields t
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Nullable1,

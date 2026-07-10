@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Child`
@@ -7,7 +6,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Parent`
@@ -60,7 +58,6 @@ WHERE
 	`c_1`.`ParentID` = @id
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Child`
@@ -68,7 +65,6 @@ WHERE
 	`Child`.`ParentID` > 1000
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`Parent`

@@ -1,13 +1,10 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestTrun"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestTrunDetail"
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TABLE "TestTrunDetail"
 (
 	"ID"         Int     NOT NULL,
@@ -18,7 +15,6 @@ CREATE TABLE "TestTrunDetail"
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 CREATE TABLE "TestTrun"
 (
 	"ID"     Int     NOT NULL,
@@ -28,14 +24,11 @@ CREATE TABLE "TestTrun"
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 TRUNCATE TABLE "TestTrun"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE "TestTrun"
 
 -- PostgreSQL.18 PostgreSQL12
-
 DROP TABLE "TestTrunDetail"
 

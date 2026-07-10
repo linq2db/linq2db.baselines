@@ -1,9 +1,7 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT to_date('2012-12-12 12:12:12', 'YYYY-MM-DD HH:MI:SS') FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT to_date('2012-12-12 12:12:12', 'YYYY-MM-DD HH:MI:SS') FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12

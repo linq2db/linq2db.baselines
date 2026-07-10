@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[IntValue],
@@ -52,7 +51,6 @@ WHERE
 	[r].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[IntValue],

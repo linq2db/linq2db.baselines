@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p2."ParentID",
 	c_2."ChildIDCount"
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN "Parent" p2 ON p."ParentID" = p2."ParentID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -33,7 +31,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"
@@ -41,7 +38,6 @@ FROM
 	"Parent" t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -12,7 +11,6 @@ SELECT
 FROM table(set{1})
 
 -- Informix.DB2 Informix
-
 SELECT
 	NOT EXISTS(
 		SELECT

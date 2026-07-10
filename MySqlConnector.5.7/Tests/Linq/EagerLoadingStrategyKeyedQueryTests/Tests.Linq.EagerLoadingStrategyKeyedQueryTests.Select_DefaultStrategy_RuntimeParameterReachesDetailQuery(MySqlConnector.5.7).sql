@@ -18,7 +18,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`d`.`Id`,
 	`d`.`Name`

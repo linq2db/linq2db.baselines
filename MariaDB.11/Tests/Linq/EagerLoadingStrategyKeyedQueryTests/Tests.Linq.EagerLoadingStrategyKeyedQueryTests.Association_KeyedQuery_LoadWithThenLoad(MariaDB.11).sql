@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`d_1`.`Id`,
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN `Employee` `d_1` ON `m_1`.`Id` = `d_1`.`DepartmentId`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(2,N'ignored',1,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -27,14 +26,12 @@ SET
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -49,7 +46,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'updated',2,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -77,7 +73,6 @@ SET
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

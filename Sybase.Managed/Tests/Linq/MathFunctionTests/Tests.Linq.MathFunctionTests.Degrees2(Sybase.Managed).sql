@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	Floor(CAST([t].[MoneyValue] AS Float) * 57.295779513082323)
 FROM

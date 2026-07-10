@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -16,14 +15,12 @@ WHERE
 	d.ParentID <> 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.ParentID
 FROM
 	Parent p
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -40,7 +37,6 @@ WHERE
 	d.ParentID <> 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.ParentID
 FROM

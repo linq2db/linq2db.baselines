@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN [p].[Value1] IS NULL THEN [t1].[Count_1]

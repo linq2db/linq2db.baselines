@@ -11,7 +11,6 @@ ORDER BY o."Id", s."OrderId", s."ProductId"
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	o."Id",
@@ -26,7 +25,6 @@ ORDER BY
 
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Number"

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Key_1`,
 	Coalesce((
@@ -29,7 +28,6 @@ ORDER BY
 	`t1`.`Key_1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`GrpId`,

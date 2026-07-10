@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 UPDATE
 	"billing_TempReading"
 SET
@@ -33,7 +32,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"billing_TempReading" "t1"
 SET

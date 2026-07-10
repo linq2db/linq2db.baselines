@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(1,N'inc',3,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000))),
@@ -50,7 +49,6 @@ SET
 ;
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

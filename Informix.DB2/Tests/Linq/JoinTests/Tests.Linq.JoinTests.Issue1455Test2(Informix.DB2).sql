@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	al_group_3.Id,
 	t2.LastUpdate,

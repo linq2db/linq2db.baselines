@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
 	1,
 	CASE
@@ -10,7 +9,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

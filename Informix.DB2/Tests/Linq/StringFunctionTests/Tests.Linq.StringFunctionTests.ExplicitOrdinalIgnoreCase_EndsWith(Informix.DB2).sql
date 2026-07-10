@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	CollatedTable
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	Lower(r.CaseSensitive) LIKE '%ststring' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	Lower(r.CaseInsensitive) LIKE '%ststring' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	Lower(r.CaseSensitive) LIKE '%ststring' ESCAPE '~'
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

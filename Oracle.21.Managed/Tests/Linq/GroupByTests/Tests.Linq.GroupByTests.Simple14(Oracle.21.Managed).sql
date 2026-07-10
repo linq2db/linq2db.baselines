@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."ParentID",
 	d_1."Key_1"
@@ -20,7 +19,6 @@ FROM
 		) d_1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID"
 FROM

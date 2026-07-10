@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],
@@ -22,7 +20,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

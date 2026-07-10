@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- Sybase.Managed Sybase
-
 UPDATE
 	[Person]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[Person].[LastName] = 'Limonadovy'
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

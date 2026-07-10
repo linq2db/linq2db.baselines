@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -38,7 +37,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]

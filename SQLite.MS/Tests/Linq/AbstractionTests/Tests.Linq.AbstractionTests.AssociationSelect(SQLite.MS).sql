@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -32,7 +31,6 @@ ORDER BY
 	[d_1].[Id_1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -40,7 +38,6 @@ FROM
 	[SampleClass1] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -73,7 +70,6 @@ ORDER BY
 	[d_1].[Id_1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

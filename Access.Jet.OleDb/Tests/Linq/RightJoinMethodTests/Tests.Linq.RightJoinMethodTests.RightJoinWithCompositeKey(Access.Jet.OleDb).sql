@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1],
@@ -10,7 +9,6 @@ FROM
 		RIGHT JOIN [Child] [c_1] ON ([p].[ParentID] = [c_1].[ParentID] AND IIF([p].[Value1] IS NULL, 0, [p].[Value1]) = [c_1].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -18,7 +16,6 @@ FROM
 	[Parent] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

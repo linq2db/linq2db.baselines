@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[od].[OrderID],
 	[o1].[OrderDate],
@@ -13,7 +12,6 @@ ORDER BY
 	[od].[OrderID]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[v].[OrderID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.ParentID,
 	c_1.ParentID + 1 as ID2,

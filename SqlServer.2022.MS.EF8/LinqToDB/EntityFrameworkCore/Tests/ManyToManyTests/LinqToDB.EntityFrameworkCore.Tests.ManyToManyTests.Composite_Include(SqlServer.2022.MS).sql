@@ -11,7 +11,6 @@ ORDER BY [p].[Code], [p].[OrgId], [t].[MemberId], [t].[OrgId], [t].[Code]
 
 
 -- SqlServer.2022
-
 SELECT
 	[m_1].[OrgId],
 	[m_1].[Code],
@@ -27,7 +26,6 @@ ORDER BY
 
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],

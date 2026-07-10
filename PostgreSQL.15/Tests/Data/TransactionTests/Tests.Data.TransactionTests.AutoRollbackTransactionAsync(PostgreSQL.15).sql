@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"Parent"
 SET
@@ -25,7 +24,6 @@ WHERE
 	"Parent"."ParentID" = 1010
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	t."Value1"

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 -- SqlCe
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

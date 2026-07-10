@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

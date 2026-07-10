@@ -44,7 +44,6 @@ WHERE
 	"Child"."ChildID" = c_1."ChildID"
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

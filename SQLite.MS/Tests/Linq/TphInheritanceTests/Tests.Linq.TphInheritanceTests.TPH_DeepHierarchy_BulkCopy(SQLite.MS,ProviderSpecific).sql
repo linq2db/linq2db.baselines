@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [TphDeepPerson]
 (
 	[Id],
@@ -11,7 +10,6 @@ VALUES
 (1,'GrandChild','Tom','Black')
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

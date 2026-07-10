@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	SUM(CASE
 		WHEN t."ParentID" IN (3) THEN t."ChildID"

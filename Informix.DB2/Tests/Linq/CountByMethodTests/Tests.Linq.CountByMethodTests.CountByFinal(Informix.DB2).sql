@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	g_1.TestId,
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1.TestId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.TestId

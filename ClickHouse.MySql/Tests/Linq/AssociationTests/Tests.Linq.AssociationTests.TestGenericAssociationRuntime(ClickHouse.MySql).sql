@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_MiddleRuntime.ParentID,
 	a_Bottom.ParentID,

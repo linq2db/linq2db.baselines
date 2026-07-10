@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	MAX([x].[Value])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[x].[Id] = 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	MAX([x].[Value])
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[x].[Id] = 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	MAX(CASE
 		WHEN [d].[Value] IS NOT NULL THEN [d].[Value]
@@ -31,7 +28,6 @@ FROM
 		LEFT JOIN [TestClass] [d] ON [d].[Id] = 0
 
 -- SQLite.MS SQLite
-
 SELECT
 	MAX(CASE
 		WHEN [d].[Value] IS NOT NULL THEN [d].[Value]

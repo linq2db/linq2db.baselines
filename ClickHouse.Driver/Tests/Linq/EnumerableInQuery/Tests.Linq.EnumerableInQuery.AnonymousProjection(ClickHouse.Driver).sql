@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID
 FROM
 	Parent t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ParentID
@@ -33,14 +31,12 @@ FROM
 			SELECT 7) d ON d.ParentID = m_1.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID
 FROM
 	Parent t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

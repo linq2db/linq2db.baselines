@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT
 	c_1.ChildID,
 	a_Parent.ParentID,
@@ -11,7 +10,6 @@ ORDER BY
 	c_1.ChildID
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,

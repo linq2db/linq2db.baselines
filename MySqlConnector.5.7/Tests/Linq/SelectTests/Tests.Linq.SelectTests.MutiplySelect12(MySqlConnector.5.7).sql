@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`grandChild_1`.`ParentID`,
 	`grandChild_1`.`ChildID`,

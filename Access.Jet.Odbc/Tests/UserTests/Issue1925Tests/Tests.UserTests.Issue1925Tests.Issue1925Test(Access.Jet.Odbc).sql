@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[r].[Value] LIKE '%]'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id]
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[r].[Value] LIKE ']%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id]
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[r].[Value] LIKE '%[-]%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -36,7 +32,6 @@ WHERE
 	[r].[Value] LIKE '%[[]]%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -58,7 +53,6 @@ WHERE
 	[r].[Value] LIKE ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -68,7 +62,6 @@ WHERE
 	[r].[Value] LIKE '%[[]0[-]9]%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -78,7 +71,6 @@ WHERE
 	[r].[Value] LIKE '%6%'
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -100,7 +92,6 @@ WHERE
 	[r].[Value] LIKE ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Value]

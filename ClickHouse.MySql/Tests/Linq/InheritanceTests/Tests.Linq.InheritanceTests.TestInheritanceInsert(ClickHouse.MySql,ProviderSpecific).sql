@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO InheritanceFilter
 (
 	Id,
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Code,
 	t1.Id,

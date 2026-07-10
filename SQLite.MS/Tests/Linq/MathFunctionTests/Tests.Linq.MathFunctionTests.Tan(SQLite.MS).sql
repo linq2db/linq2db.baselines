@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN Tan(CAST([t].[MoneyValue] AS Float) / 15) * 15 > 0 THEN CAST(Tan(CAST([t].[MoneyValue] AS Float) / 15) * 15 AS INTEGER)

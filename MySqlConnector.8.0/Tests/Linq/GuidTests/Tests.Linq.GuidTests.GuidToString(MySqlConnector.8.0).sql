@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	Lower(CAST(`t`.`Id` AS CHAR(36)))
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 1
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`NullableGuid`
@@ -17,7 +15,6 @@ WHERE
 	LOCATE('63d-0f', Lower(CAST(`t`.`Id` AS CHAR(36)))) > 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`NullableGuid`
@@ -27,7 +24,6 @@ WHERE
 	Lower(CAST(`t`.`Id` AS CHAR(36))) LIKE 'bc7b6%' ESCAPE '~'
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`NullableGuid`
@@ -37,7 +33,6 @@ WHERE
 	LOCATE('8f4-53', Lower(CAST(`t`.`Id` AS CHAR(36)))) > 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t`.`Id`,
 	`t`.`NullableGuid`

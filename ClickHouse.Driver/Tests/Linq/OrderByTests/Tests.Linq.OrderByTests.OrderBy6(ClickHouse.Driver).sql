@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	person_1.PersonID,
 	patient_1.PersonID

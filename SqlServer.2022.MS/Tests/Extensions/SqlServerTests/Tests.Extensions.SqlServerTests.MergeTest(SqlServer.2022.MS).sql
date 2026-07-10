@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 MERGE INTO [Parent] [Target]
 USING (
 	SELECT

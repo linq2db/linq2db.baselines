@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	pmp1.ChildID
 FROM
@@ -12,7 +11,6 @@ FROM
 		) pmp_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

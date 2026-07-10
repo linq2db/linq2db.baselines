@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,
@@ -13,7 +12,6 @@ WHERE
 	1 = 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,

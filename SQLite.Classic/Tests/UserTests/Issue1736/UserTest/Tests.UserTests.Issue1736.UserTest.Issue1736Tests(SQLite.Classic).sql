@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[cr_1].[Id],
 	[cr_1].[Status],

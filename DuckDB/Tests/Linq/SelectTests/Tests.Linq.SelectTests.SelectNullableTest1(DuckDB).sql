@@ -48,7 +48,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,
@@ -67,7 +66,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 DELETE FROM
 	LinqDataTypes t1
 WHERE

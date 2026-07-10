@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	COUNT(CASE
 		WHEN "g_1"."ParentID" < 2 THEN 1

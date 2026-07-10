@@ -18,7 +18,6 @@ INSERT ASYNC BULK [Issue4783Records](Source, StatusRaw, StatusString, StatusConv
 
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Source],

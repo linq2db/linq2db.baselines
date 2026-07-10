@@ -11,7 +11,6 @@ WHERE
 	c_1."ParentID" = :id AND c_1."Value1" IS NULL
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

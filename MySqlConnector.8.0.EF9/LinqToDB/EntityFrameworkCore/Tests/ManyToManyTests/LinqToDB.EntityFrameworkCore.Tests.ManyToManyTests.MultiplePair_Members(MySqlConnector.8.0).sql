@@ -9,7 +9,6 @@ ORDER BY `u`.`Id`
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`u`.`Id`
 FROM

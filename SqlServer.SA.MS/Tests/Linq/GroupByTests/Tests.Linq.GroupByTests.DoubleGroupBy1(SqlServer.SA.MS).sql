@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	SUM([g_2].[c1])

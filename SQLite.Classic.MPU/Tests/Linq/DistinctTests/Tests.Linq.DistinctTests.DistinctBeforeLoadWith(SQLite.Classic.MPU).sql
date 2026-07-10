@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -11,7 +10,6 @@ ORDER BY
 	[c_1].[ChildID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

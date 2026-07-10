@@ -35,7 +35,6 @@ VALUES
 WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM
@@ -78,7 +77,6 @@ VALUES
 WITH PRIMARY KEY
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	COUNT(*)
 FROM

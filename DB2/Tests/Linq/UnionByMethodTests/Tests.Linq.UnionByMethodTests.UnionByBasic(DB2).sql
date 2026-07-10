@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Key_1",
@@ -40,7 +39,6 @@ ORDER BY
 	"t1"."Key_1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Key",
@@ -50,7 +48,6 @@ FROM
 	"UnionByLeft" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."Id",
 	"t1"."Key",

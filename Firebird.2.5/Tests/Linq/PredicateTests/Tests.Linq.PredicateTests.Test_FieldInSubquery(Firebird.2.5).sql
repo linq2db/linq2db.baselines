@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -30,7 +28,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -50,7 +47,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -61,7 +57,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -81,7 +76,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -92,7 +86,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -112,7 +105,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -123,7 +115,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -143,7 +134,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -154,7 +144,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -174,7 +163,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -185,7 +173,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -205,7 +192,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",
@@ -216,7 +202,6 @@ FROM
 	"BooleanTable" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r"."Id",
 	"r"."Value1",
@@ -236,7 +221,6 @@ WHERE
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Value1",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id",
 	"a_Documents"."Name"
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN "Document" "a_Documents" ON "a_Attachment"."Id" = "a_Documents"."AttachmentId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	(
 		SELECT FIRST 1

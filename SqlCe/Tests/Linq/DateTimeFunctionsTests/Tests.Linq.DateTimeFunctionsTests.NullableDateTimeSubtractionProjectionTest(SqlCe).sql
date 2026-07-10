@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[FinishedOn],
 	[t].[StartedOn]

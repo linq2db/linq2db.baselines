@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x_8].[Id],
 	[x_8].[AisleID],

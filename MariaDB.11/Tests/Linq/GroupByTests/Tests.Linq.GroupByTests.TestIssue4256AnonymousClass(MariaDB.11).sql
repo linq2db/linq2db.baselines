@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	1,
 	`it`.`SmallIntValue` <> 0
@@ -7,7 +6,6 @@ FROM
 	`LinqDataTypes` `it`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,

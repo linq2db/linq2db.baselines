@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	STRING_AGG('test:' || CAST(grp_1.ch AS VARCHAR), ';')
 FROM

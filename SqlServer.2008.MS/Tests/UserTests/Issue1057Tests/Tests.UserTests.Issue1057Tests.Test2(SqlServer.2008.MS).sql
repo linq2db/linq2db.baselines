@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = N'bda.Requests'
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

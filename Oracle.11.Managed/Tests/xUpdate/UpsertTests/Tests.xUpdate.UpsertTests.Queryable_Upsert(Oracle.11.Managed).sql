@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT
@@ -48,7 +47,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Name",

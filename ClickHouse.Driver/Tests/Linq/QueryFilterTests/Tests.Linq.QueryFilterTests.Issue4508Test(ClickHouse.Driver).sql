@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -12,7 +11,6 @@ WHERE
 	p.PersonID > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -25,7 +23,6 @@ WHERE
 	p.PersonID > 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -38,7 +35,6 @@ WHERE
 	p.PersonID > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -51,7 +47,6 @@ WHERE
 	p.PersonID > 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -64,7 +59,6 @@ WHERE
 	p.PersonID > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -77,7 +71,6 @@ WHERE
 	p.PersonID > 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,
@@ -90,7 +83,6 @@ WHERE
 	p.PersonID > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.FirstName,
 	p.PersonID,

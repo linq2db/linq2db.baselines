@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 CREATE TEMPORARY TABLE "MergeTemp"
 (
 	"ID"   Int  NOT NULL,
@@ -10,7 +9,6 @@ CREATE TEMPORARY TABLE "MergeTemp"
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "MergeTemp"
 (
 	"ID",
@@ -20,7 +18,6 @@ VALUES
 (1,'John')
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "MergeTemp" AS t1
 (
 	"ID",
@@ -43,6 +40,5 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"Name" = t1."Name"
 
 -- PostgreSQL.19 PostgreSQL12
-
 DROP TABLE IF EXISTS "MergeTemp"
 

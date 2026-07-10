@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH CTE_1 (CompanyId, field)
 AS MATERIALIZED
 (

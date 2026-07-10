@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO "Child"
 (
 	"ChildID",

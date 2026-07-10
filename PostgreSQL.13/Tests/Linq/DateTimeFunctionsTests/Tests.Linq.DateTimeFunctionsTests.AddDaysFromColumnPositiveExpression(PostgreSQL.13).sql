@@ -53,7 +53,6 @@ WHERE
 	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0)
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	TableWithConverterValue
 UPDATE
@@ -11,7 +10,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,

@@ -9,7 +9,6 @@ ORDER BY `m`.`Id`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`
 FROM

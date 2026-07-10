@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -10,7 +9,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	k_1.item,
 	d."Id",

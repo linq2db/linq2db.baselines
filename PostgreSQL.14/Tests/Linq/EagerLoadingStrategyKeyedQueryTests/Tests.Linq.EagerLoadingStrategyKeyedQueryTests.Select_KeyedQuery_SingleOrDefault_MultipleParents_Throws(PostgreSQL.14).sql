@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -8,7 +7,6 @@ FROM
 LIMIT 2
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	k_1.item,
 	d."Id",

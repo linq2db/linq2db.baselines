@@ -37,7 +37,6 @@ WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

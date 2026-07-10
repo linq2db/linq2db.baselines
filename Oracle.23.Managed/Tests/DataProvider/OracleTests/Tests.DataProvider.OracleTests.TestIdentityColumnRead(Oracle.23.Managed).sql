@@ -1,13 +1,10 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT USER FROM DUAL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 select user from dual
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -40,7 +37,6 @@ FROM
 ORDER BY TableID, isView
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
 	FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
@@ -58,7 +54,6 @@ WHERE
 IN ('SYSTEM')
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,
 	c.COLUMN_NAME                                  as Name,
@@ -77,7 +72,6 @@ FROM USER_TAB_COLUMNS c
 		c.COLUMN_NAME = cc.COLUMN_NAME
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 
 	FKCON.CONSTRAINT_NAME                    as Name,

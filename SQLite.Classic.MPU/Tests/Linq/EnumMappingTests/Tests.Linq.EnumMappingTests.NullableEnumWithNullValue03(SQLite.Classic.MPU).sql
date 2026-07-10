@@ -59,7 +59,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[StringValue]
@@ -71,7 +70,6 @@ ORDER BY
 	[r].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

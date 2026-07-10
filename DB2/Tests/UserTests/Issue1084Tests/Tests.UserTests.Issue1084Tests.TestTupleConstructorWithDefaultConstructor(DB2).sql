@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	BitAnd("k_1"."StatusBitmask", 128),
 	BitAnd("g_1"."StatusBitmask", 128)

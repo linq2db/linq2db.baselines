@@ -1,5 +1,4 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	a_PersonDoctor."PersonID",
 	a_PersonDoctor."FirstName",

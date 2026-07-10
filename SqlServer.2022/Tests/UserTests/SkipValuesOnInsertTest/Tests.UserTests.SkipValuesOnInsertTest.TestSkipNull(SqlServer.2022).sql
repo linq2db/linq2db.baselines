@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[r].[Value1]
 FROM

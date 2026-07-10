@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	MAX([g_1].[Value1]),
 	STRING_AGG([g_1].[Value1], N' -> ')

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",
@@ -21,7 +20,6 @@ ORDER BY
 	m_2."ChildID" DESC
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_2."ParentID",
 	m_2."ChildID",

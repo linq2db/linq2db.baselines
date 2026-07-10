@@ -43,7 +43,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = :UpdatedBy
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -103,7 +102,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = :UpdatedBy
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -161,7 +159,6 @@ ON CONFLICT ("Id") DO UPDATE SET
 	"UpdatedBy" = :UpdatedBy
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

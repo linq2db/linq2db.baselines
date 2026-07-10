@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Value1` = `r`.`Value2`,
@@ -82,7 +81,6 @@ WHERE
 	`r`.`Id` <> -1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	c_1.ParentID,
 	c_1.Value1
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

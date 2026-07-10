@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
@@ -8,7 +7,6 @@ FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceChildId],

@@ -25,7 +25,6 @@ WHERE
 	`t`.`ID` = @p
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,

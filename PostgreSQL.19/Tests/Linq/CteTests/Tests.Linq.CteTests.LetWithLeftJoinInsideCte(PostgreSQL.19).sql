@@ -25,7 +25,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 WITH "CTE_1" ("S1")
 AS
 (

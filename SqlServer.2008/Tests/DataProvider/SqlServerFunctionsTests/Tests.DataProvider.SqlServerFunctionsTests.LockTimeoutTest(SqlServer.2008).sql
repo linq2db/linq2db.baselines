@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2008
-
 SET LOCK_TIMEOUT 1000
 
 -- SqlServer.2008
-
 SELECT
 	@@LOCK_TIMEOUT
 

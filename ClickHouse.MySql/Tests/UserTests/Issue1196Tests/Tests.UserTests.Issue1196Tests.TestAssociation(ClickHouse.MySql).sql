@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 INSERT INTO Requests
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO FirmInfo
 (
 	Id
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO Assignments
 (
 	DirectionId,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_Requests.Id,
 	a_Requests.FirmId,
@@ -55,7 +51,6 @@ WHERE
 	r.Id = 1002
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_Requests.Id,
 	a_Requests.FirmId,

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	snippet([r].[FTS4_TABLE], '>', '<', '[zzz]')
 FROM

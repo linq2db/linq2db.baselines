@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	ess."ID"
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	ess."ID"
 FROM

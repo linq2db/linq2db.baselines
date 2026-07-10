@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 -- SqlServer.2019
-
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
@@ -21,7 +19,6 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 -- SqlServer.2019
-
 INSERT INTO [tempdb]..[#TableWithData_target]
 (
 	[Id],
@@ -48,7 +45,6 @@ WHERE
 	[p].[Gender] = 'F'
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -57,7 +53,6 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -66,10 +61,8 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 -- SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]
 
 -- SqlServer.2019
-
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

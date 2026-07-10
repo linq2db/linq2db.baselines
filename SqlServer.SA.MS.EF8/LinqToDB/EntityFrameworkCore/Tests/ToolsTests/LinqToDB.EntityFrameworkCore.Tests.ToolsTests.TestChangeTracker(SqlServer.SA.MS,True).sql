@@ -1,7 +1,6 @@
 ﻿
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -31,7 +30,6 @@ WHERE
 
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -62,7 +60,6 @@ WHERE
 
 
 -- SqlServer.2019
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

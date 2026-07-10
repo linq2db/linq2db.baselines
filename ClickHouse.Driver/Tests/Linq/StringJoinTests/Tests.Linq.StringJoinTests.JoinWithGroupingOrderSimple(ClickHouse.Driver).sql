@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	g_1.Id,
 	arrayStringConcat(arrayMap((t) -> tupleElement(t, 3), arraySort((t) -> (if(isNull(t.1), 0, 1), t.1, if(isNull(t.2), 0, 1), t.2), groupArrayIf((g_1.NullableValue, g_1.Id, toString(g_1.NullableValue)), g_1.NullableValue IS NOT NULL))), ', '),
@@ -12,7 +11,6 @@ ORDER BY
 	g_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.PK,
 	t1.Id,

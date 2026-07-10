@@ -14,7 +14,6 @@ WHERE
 	r."Column" = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -26,7 +25,6 @@ WHERE
 	r.ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::UUID
 
 -- DuckDB
-
 DELETE FROM
 	GuidTable t1
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -84,12 +81,10 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	GuidTable t1
 
 -- DuckDB
-
 INSERT INTO GuidTable
 (
 	Id,
@@ -101,7 +96,6 @@ VALUES
 (2,'a948600d-de21-4f74-8ac2-9516b287076e'::UUID,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::UUID)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -112,7 +106,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	GuidTable t1
 
@@ -132,7 +125,6 @@ ORDER BY
 INSERT BULK GuidTable(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",

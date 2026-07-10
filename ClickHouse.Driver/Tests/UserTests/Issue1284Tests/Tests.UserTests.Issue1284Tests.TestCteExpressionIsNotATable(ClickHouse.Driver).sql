@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -23,7 +22,6 @@ WHERE
 	x.entry_ID = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.FirstName,
 	x.PersonID,

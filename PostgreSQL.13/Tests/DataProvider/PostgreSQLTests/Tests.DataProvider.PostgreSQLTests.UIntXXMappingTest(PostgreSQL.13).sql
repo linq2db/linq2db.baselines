@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "UIntTable"
 (
 	"Field16",
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Field16",
 	t1."Field32",
@@ -32,7 +30,6 @@ FROM
 	"UIntTable" t1
 
 -- PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"UIntTable" t1
 
@@ -70,7 +67,6 @@ VALUES
 )
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Field16",
 	t1."Field32",
@@ -82,11 +78,9 @@ FROM
 	"UIntTable" t1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SHOW server_version_num
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t.table_catalog || '.' || t.table_schema || '.' || t.table_name            as TableID,
 	t.table_catalog                                                            as CatalogName,
@@ -133,7 +127,6 @@ UNION ALL
 	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.13 PostgreSQL12
-
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
 		pg_constraint.conname                                                        as PrimaryKeyName,
@@ -149,7 +142,6 @@ UNION ALL
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	columns.TableID,
 	columns.Name,
@@ -283,7 +275,6 @@ FROM
 ) columns;
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	pg_constraint.conname,
 	current_database() || '.' || this_schema.nspname  || '.' || this_table.relname,

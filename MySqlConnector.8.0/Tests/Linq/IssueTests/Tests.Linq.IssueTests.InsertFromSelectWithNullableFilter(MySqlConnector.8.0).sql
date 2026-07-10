@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `InsertIssueTest`
 (
 	`Pk`,
@@ -47,7 +46,6 @@ FROM
 	) `t2`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`ID`,

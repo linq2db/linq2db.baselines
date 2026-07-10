@@ -8,7 +8,6 @@ SET
 	"Field" = CAST(CAST("t1"."Field" AS Integer) + ? AS TinyInt)
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field"

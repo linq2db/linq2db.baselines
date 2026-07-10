@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	To_Char(t."DateTimeValue", 'MS')::Int
 FROM

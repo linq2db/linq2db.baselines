@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 2, 5
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

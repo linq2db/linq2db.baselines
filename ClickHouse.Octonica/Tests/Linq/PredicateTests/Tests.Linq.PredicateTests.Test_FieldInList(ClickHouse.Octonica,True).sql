@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -12,7 +11,6 @@ WHERE
 	r.Value2 IN (0, 1)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -23,7 +21,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -36,7 +33,6 @@ WHERE
 	(r.Value2 IN (0, 1) OR r.Value2 IS NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -47,7 +43,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -60,7 +55,6 @@ WHERE
 	r.Value5 IN (0, 1)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -71,7 +65,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -84,7 +77,6 @@ WHERE
 	(r.Value5 IN (0, 1) OR r.Value5 IS NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -95,7 +87,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -108,7 +99,6 @@ WHERE
 	r.Value2 NOT IN (0, 1)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -119,7 +109,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -132,7 +121,6 @@ WHERE
 	(r.Value2 NOT IN (0, 1) AND r.Value2 IS NOT NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -143,7 +131,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -156,7 +143,6 @@ WHERE
 	(r.Value5 NOT IN (0, 1) OR r.Value5 IS NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -167,7 +153,6 @@ FROM
 	BooleanTable t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Value1,
@@ -180,7 +165,6 @@ WHERE
 	(r.Value5 NOT IN (0, 1) AND r.Value5 IS NOT NULL)
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value1,

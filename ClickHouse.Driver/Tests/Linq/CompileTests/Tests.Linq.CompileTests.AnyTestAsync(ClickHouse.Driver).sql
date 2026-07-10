@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	EXISTS(
 		SELECT

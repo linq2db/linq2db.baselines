@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
@@ -24,7 +23,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."PictureId",
@@ -35,7 +33,6 @@ WHERE
 	r."Deleted" = 0 AND r."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "Issue5289Table" t1
 USING (SELECT 1 AS "Id" FROM SYS.DUAL) s ON
 (
@@ -60,7 +57,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."PictureId",

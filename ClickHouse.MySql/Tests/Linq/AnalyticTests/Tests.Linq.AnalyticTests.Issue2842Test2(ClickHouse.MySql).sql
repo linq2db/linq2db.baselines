@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	x.FirstName,
 	RANK() OVER (ORDER BY CASE

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],

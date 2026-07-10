@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -10,7 +9,6 @@ WHERE
 	r.Column = toDate32('2020-02-29') AND r.ColumnNullable = toDate32('2020-01-01')
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -21,13 +19,11 @@ WHERE
 	r.Column = toDate32('2020-02-29') AND r.ColumnNullable = toDate32('2020-01-01')
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	DateOnlyTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO DateOnlyTable
 (
 	Id,
@@ -42,7 +38,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO DateOnlyTable
 (
 	Id,
@@ -57,7 +52,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -68,13 +62,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	DateOnlyTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO DateOnlyTable
 (
 	Id,
@@ -86,7 +78,6 @@ VALUES
 (2,toDate32('2020-02-29'),toDate32('2020-01-01'))
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,
@@ -97,13 +88,11 @@ ORDER BY
 	t1.Id
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	DateOnlyTable
 DELETE WHERE 1
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO DateOnlyTable
 (
 	Id,
@@ -115,7 +104,6 @@ VALUES
 (2,toDate32('2020-02-29'),toDate32('2020-01-01'))
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Column,

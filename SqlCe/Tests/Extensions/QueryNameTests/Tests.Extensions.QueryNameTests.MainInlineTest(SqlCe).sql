@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT /* Main */
 	[p].[ParentID],
 	[p].[Value1],

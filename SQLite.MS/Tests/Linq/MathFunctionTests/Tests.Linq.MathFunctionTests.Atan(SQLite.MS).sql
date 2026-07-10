@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN Atan(CAST([t].[MoneyValue] AS Float) / 15) * 15 > 0

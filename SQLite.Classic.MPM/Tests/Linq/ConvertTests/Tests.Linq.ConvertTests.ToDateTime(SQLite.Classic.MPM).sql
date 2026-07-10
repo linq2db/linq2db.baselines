@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', strftime('%Y', [p].[DateTimeValue]) || '-01-01 00:00:00')
 FROM

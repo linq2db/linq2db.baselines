@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[x].[Id],
 	CASE
@@ -32,7 +31,6 @@ WHERE
 	END = 2
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

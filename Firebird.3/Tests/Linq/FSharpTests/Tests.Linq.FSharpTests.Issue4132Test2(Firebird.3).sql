@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 UPDATE
 	"Issue4132Table" "row_1"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"row_1"."Number" = 1
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"r"."Id",
 	"r"."Number",

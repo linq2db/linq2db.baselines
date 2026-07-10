@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"t1"."Type",
 	"t1"."Id",

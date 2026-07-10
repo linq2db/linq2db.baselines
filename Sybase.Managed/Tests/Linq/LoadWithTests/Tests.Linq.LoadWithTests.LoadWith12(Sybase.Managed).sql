@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ParentID_1],
@@ -25,7 +24,6 @@ FROM
 		INNER JOIN [Child] [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -45,7 +43,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 1
 	[p].[ParentID],
 	[p].[Value1]

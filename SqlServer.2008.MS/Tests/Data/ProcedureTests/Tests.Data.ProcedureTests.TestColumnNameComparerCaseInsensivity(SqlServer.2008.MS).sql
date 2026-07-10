@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	DB_NAME()
 FROM
@@ -18,7 +17,6 @@ SET     @id = 1
 SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	DB_NAME()
 FROM

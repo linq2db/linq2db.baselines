@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ID,
 	m_1.ValS,
@@ -21,7 +20,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	it.ID,
 	it.ValB,

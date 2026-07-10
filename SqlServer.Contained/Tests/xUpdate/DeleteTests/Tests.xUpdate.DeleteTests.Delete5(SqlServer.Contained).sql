@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -54,7 +51,6 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Parent] [t1]
@@ -62,7 +58,6 @@ WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

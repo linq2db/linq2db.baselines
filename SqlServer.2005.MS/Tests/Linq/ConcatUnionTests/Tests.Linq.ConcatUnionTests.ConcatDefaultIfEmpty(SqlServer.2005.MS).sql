@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	CAST(0 AS Int),
 	[t1].[ParentID],
@@ -30,7 +29,6 @@ WHERE
 	[p_1].[ParentID] <> 1
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -45,7 +43,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -53,7 +50,6 @@ FROM
 	[Parent] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

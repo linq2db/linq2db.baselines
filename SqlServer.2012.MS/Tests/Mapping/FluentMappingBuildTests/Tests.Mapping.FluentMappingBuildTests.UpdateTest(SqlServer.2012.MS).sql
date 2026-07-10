@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Update]
 	(
@@ -46,7 +45,6 @@ WHERE
 	[FluentTemp_Update].[ID] = 1
 
 -- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[FluentTemp_Update]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Update]
 

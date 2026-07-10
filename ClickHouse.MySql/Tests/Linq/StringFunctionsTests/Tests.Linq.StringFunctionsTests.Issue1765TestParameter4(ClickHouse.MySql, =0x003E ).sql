@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	maxOrNull(g_1.Value4),
 	arrayStringConcat(groupArray(toString(g_1.Value4)), ' => ')

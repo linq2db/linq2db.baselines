@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	pat.PersonID,
 	pat.Diagnosis

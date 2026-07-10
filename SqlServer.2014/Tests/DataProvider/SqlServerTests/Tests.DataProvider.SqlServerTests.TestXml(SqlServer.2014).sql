@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2014
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2014
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2014
-
 SELECT Cast('<xml/>' as xml)
 
 -- SqlServer.2014

@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[BooleanTable]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,12 +80,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[BooleanTable]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -100,7 +95,6 @@ VALUES
 (2,0,1)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -111,12 +105,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic SQLite
-
 DELETE FROM
 	[BooleanTable]
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -128,7 +120,6 @@ VALUES
 (2,0,1)
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

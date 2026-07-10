@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 CREATE TABLE "aa"
 (
 	"bb" Int           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."bb",
 	"t1"."cc"
@@ -34,6 +32,5 @@ FROM
 	"aa" "t1"
 
 -- DB2 DB2.LUW DB2LUW
-
 DROP TABLE "aa"
 

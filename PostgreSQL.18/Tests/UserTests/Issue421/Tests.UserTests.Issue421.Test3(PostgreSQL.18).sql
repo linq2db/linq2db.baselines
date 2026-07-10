@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -27,7 +26,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

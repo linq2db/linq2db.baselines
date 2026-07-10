@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -14,7 +13,6 @@ WHERE
 	[i].[StrValue] >= [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -29,7 +27,6 @@ WHERE
 	[i].[StrValue] <= [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -44,7 +41,6 @@ WHERE
 	[i].[StrValue] > [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -59,7 +55,6 @@ WHERE
 	[i].[StrValue] < [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -74,7 +69,6 @@ WHERE
 	[i].[StrValue] = [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -89,7 +83,6 @@ WHERE
 	[i].[StrValue] <> [right_1].[StrValue]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -104,7 +97,6 @@ WHERE
 	[i].[StrValue] >= [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -119,7 +111,6 @@ WHERE
 	[i].[StrValue] <= [right_1].[StrValueNullable]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -134,7 +125,6 @@ WHERE
 	[i].[StrValue] > [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -149,7 +139,6 @@ WHERE
 	[i].[StrValue] < [right_1].[StrValueNullable]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -164,7 +153,6 @@ WHERE
 	[i].[StrValue] = [right_1].[StrValueNullable]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -179,7 +167,6 @@ WHERE
 	[i].[StrValue] <> [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -195,7 +182,6 @@ WHERE
 	[right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -211,7 +197,6 @@ WHERE
 	[i].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -227,7 +212,6 @@ WHERE
 	[i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -243,7 +227,6 @@ WHERE
 	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],
@@ -259,7 +242,6 @@ WHERE
 	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[i].[Id],
 	[i].[StrValue],

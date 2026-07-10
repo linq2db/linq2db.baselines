@@ -17,7 +17,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

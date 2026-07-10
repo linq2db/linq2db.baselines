@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 2
 	COUNT(p.PersonID)
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	COUNT(p.PersonID)
 FROM

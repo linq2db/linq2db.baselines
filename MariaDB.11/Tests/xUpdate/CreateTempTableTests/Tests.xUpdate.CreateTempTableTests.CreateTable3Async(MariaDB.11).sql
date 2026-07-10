@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`ID` INT NOT NULL,
@@ -8,7 +7,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TempTable`
 (
 	`ID`
@@ -19,7 +17,6 @@ FROM
 	`Parent` `p`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`
 FROM
@@ -27,6 +24,5 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TempTable`
 

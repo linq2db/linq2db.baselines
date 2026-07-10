@@ -12,7 +12,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Date" as "Date_1"
 FROM

@@ -18,7 +18,6 @@ WHERE
 	Coalesce([r].[BooleanN], @True) = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -52,7 +51,6 @@ WHERE
 	Coalesce([r].[BooleanN], @False) = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -67,7 +65,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -84,7 +81,6 @@ WHERE
 	Coalesce([r].[BooleanN], IIF([r].[Id] % 2 = 1, 1, 0)) = 1
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

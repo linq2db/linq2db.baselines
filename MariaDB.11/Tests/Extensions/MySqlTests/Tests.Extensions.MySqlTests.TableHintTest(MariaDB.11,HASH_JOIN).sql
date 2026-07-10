@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ HASH_JOIN(p) */
 	`p`.`ParentID`,
 	`p`.`Value1`

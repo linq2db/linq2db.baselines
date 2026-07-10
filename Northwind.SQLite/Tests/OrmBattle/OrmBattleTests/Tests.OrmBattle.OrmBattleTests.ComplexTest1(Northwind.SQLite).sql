@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ProductID],
 	[m_1].[SupplierID],
@@ -27,7 +26,6 @@ FROM
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[m_1].[SupplierID],
 	[d].[ProductID]
@@ -36,7 +34,6 @@ FROM
 		CROSS JOIN [Products] [d]
 
 -- Northwind.SQLite SQLite.Classic SQLite
-
 SELECT
 	[supplier].[SupplierID]
 FROM

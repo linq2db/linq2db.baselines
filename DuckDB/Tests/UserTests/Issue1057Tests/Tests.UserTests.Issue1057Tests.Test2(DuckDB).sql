@@ -54,7 +54,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	p.Id,
 	p.TargetName,
@@ -66,7 +65,6 @@ WHERE
 	p.TargetName = 'bda.Requests'
 
 -- DuckDB
-
 SELECT
 	p.TargetName,
 	p.Id,

@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

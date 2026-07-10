@@ -32,7 +32,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

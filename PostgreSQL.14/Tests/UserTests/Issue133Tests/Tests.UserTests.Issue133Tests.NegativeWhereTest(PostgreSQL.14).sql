@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
 	SUM(t1."ParentID")

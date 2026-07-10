@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	GROUPING(g_2."Id1"),
 	g_2."Id1",

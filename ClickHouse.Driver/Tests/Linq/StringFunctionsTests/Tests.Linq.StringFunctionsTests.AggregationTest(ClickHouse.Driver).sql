@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	maxOrNull(g_1.Value1),
 	arrayStringConcat(groupArray(toString(g_1.Value1)), ' -> ')

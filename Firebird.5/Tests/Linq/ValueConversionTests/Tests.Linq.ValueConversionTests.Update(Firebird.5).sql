@@ -17,7 +17,6 @@ WHERE
 	"e"."Id" = 1
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -73,7 +72,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"e"."Id",
 	"e"."Value1",
@@ -129,7 +127,6 @@ WHERE
 	"t1"."Id" = @Id
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"e"."Id",
 	"e"."Value1",

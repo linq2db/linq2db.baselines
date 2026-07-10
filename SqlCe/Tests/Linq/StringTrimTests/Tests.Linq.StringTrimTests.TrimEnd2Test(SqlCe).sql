@@ -1,12 +1,10 @@
 ﻿-- SqlCe
-
 SELECT
 	Coalesce([t].[VarCharColumn], '') + '...++'
 FROM
 	[StringTrimTable] [t]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

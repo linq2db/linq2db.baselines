@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2022
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

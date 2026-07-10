@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2008
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.2008
-
 SELECT Cast('12:12:12' as time)
 
 -- SqlServer.2008

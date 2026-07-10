@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	AVG(p."Value1") OVER (),
 	AVG(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1" RANGE BETWEEN 0 PRECEDING AND 1 FOLLOWING),

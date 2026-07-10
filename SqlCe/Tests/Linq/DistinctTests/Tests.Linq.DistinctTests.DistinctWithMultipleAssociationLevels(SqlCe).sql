@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[GrandChildID],
 	[a_Child_1].[ChildID],
@@ -27,7 +26,6 @@ ORDER BY
 	[t1].[GrandChildID]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

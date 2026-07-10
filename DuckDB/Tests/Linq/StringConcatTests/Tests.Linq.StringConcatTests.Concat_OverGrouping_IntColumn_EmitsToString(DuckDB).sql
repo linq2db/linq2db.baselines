@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	g_1.GrpId,
 	STRING_AGG(CAST(g_1.IntV AS VARCHAR), '' ORDER BY g_1.PK NULLS FIRST)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1.GrpId
 
 -- DuckDB
-
 SELECT
 	t1.PK,
 	t1.GrpId,

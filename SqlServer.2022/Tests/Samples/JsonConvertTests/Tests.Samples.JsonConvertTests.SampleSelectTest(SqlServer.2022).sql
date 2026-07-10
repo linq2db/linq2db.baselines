@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t].[Id],
 	[t].[Data]

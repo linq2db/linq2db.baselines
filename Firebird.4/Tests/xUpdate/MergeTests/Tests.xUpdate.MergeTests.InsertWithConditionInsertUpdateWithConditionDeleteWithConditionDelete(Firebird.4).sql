@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestMerge1" "t1"
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"TestMerge2" "t1"
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",
@@ -221,7 +218,6 @@ FROM
 	"TestMerge2" "t1"
 
 -- Firebird.4 Firebird4
-
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT 1 AS "Id", 123 AS "Field1", CAST(NULL AS Int) AS "Field2", CAST(NULL AS Int) AS "Field4", CAST(NULL AS Int) AS "Field3" FROM rdb$database
@@ -284,7 +280,6 @@ WHEN MATCHED AND "Target"."Id" = 4 THEN DELETE
 WHEN MATCHED THEN DELETE
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Field1",

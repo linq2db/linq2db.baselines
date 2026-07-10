@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT /* qb_1 */
 	[p].[ParentID],
 	[p].[Value1]

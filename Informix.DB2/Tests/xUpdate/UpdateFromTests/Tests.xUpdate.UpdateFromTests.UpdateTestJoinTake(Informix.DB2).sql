@@ -86,7 +86,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	v.id,
 	v.Value1,

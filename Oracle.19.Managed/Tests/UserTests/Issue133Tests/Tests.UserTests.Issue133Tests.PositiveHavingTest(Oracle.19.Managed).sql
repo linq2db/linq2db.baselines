@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
 	SUM(t1."ParentID")

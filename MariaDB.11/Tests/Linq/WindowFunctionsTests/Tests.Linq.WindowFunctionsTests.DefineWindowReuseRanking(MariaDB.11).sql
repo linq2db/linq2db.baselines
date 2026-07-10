@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	ROW_NUMBER() OVER (PARTITION BY `t`.`CategoryId` ORDER BY `t`.`Id`),
 	RANK() OVER (PARTITION BY `t`.`CategoryId` ORDER BY `t`.`Id`),

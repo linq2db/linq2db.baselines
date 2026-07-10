@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"a_QueryableParent"."ParentID",
 	"a_QueryableParent"."Value1"

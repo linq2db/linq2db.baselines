@@ -12,14 +12,12 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[TableWithIdentity]
 SET
 	[Value] = 123
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "Parent"
 (
 	"ParentID",
@@ -8,7 +7,6 @@ INSERT INTO "Parent"
 SELECT 111001,NULL FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 INSERT INTO "Child"
 (
 	"ParentID",

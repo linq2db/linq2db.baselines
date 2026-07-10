@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN Log10(CAST([t].[MoneyValue] AS Float)) > 0 THEN CAST(Log10(CAST([t].[MoneyValue] AS Float)) AS INTEGER)

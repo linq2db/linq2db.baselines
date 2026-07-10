@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	EntityUpdateTest
 UPDATE
@@ -10,7 +9,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,

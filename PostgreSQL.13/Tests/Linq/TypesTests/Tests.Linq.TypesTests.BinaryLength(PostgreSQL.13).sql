@@ -10,7 +10,6 @@ WHERE
 	"LinqDataTypes"."ID" = 1
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	Length(t."BinaryValue")
 FROM

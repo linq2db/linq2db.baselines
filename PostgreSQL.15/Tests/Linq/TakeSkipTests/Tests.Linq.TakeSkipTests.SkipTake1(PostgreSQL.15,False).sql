@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 5 OFFSET 2 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"

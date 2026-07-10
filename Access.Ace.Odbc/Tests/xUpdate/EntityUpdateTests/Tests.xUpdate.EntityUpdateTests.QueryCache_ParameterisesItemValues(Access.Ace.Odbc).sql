@@ -43,7 +43,6 @@ WHERE
 	[t].[Id] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

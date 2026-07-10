@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ChildID,
 	a_Parent_1.ParentID,
@@ -21,7 +20,6 @@ ORDER BY
 	t1.ChildID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.ChildID,
@@ -32,7 +30,6 @@ FROM
 		LEFT JOIN Parent a_Parent ON t1.ParentID = a_Parent.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ParentID,
 	t1.Value1

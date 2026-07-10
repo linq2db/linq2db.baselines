@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[nm].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Len([nm].[FirstName]) <> 0
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

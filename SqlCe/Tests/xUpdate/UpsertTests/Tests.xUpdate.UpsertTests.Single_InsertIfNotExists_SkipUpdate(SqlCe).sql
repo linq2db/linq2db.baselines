@@ -10,7 +10,6 @@ WHERE
 	[t1].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -73,14 +72,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
 	[UpsertTest] [t1]
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

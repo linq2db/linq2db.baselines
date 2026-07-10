@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"r_1"."Diagnosis",
 	"a_Person"."FirstName"

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	g_2.Date_1,
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	g_2.Date_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.CreatedOnUtc
 FROM

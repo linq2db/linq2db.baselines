@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	LISTAGG(Coalesce(t1."NullableValue", ''), ', ') WITHIN GROUP (ORDER BY t1."NullableValue")
 FROM

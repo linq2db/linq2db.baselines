@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(p."PersonID")
 FROM
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(p."PersonID")
 FROM

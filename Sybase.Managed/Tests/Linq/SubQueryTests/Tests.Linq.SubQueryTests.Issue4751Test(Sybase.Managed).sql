@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 30
 	[x].[Id],
 	[x].[CarNo],
@@ -50,7 +49,6 @@ ORDER BY
 	[x].[CarNo]
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM

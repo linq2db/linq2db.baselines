@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	r.F1,
 	r.F2

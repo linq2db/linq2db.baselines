@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `InsertIssueTest`
 (
 	`Pk`,
@@ -47,7 +46,6 @@ FROM
 	) `t2`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Pk`,
 	`t1`.`ID`,

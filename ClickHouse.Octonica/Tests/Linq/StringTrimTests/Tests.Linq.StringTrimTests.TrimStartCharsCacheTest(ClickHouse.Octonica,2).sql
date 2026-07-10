@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	trim(LEADING 'ab' FROM t.VarCharColumn)
 FROM

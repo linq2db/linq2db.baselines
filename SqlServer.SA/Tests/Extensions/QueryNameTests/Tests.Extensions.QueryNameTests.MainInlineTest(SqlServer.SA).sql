@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT /* Main */
 	[p].[ParentID],
 	[p].[Value1],

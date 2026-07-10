@@ -24,14 +24,12 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -64,7 +62,6 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -46,7 +46,6 @@ VALUES
 )
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	'Id',
 	it."Id",

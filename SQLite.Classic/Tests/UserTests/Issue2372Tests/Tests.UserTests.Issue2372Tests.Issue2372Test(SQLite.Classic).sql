@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [InventoryResource]
 
 -- SQLite.Classic SQLite

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[r].[ID],
 	[r].[MoneyValue],
@@ -17,7 +16,6 @@ WHERE
 	[r].[ID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[r].[ID],
 	[r].[MoneyValue],
@@ -129,7 +127,6 @@ WHERE
 	[t1].[ID] = ?
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[r].[ID],
 	[r].[MoneyValue],

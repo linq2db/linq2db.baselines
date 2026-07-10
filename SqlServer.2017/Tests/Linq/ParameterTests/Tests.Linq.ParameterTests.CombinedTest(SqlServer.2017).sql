@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[VarBinary],
 	[t1].[VarChar],

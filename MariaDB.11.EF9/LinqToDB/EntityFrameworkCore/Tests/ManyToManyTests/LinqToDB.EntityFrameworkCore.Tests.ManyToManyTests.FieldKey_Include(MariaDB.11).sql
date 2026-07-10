@@ -11,7 +11,6 @@ ORDER BY `r`.`Id`, `s`.`AccountsAccountId`, `s`.`RolesId`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Name`
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

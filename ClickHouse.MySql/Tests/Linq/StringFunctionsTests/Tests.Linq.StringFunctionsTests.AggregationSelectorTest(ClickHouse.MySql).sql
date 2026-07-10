@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	arrayStringConcat(groupArray(toString(g_1.Value1)), ' -> ')
 FROM

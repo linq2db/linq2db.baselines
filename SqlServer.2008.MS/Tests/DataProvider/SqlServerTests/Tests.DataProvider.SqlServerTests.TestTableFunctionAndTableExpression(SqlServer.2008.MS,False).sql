@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -11,13 +10,11 @@ FROM
 
 -- SqlServer.2008.MS SqlServer.2008
 
-
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
 	BEGIN DROP FUNCTION PersonTableFunction
 END
 
 -- SqlServer.2008.MS SqlServer.2008
-
 
 CREATE FUNCTION dbo.PersonTableFunction( @ID int, @FirstName varchar(50))
 RETURNS TABLE
@@ -104,7 +101,6 @@ FROM
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
 	BEGIN DROP FUNCTION PersonTableFunction

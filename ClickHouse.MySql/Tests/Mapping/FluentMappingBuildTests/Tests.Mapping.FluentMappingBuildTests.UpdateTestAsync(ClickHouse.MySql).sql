@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 CREATE TABLE IF NOT EXISTS FluentTemp_UpdateAsync
 (
 	ID       Int32,
@@ -12,7 +11,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
-
 INSERT INTO FluentTemp_UpdateAsync
 (
 	ID,
@@ -27,7 +25,6 @@ VALUES
 )
 
 -- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	FluentTemp_UpdateAsync
 UPDATE
@@ -37,6 +34,5 @@ WHERE
 	ID = 1
 
 -- ClickHouse.MySql ClickHouse
-
 DROP TABLE IF EXISTS FluentTemp_UpdateAsync
 

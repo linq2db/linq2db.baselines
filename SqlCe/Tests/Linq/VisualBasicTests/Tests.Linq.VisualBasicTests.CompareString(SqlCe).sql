@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[FirstName] = 'John'
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

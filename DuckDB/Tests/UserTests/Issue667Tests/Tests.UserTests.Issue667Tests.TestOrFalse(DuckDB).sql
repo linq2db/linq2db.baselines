@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	f.ParentID,
 	f.Value1

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	CASE
 		WHEN [t].[EnumValue] = 'F' THEN 'First'

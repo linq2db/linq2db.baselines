@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(CASE
 		WHEN g_1."ChildID" < 30 AND g_1."ChildID" >= 20 THEN 1

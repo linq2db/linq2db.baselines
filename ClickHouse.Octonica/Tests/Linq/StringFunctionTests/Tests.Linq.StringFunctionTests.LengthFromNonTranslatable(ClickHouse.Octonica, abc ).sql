@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.Str,
 	lengthUTF8(t.Str),
@@ -8,7 +7,6 @@ FROM
 	TestLengthModel t
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str

@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 DELETE FROM [TestMerge2]
 FROM
 	[TestMerge2] [t1]
@@ -234,7 +232,6 @@ SET
 	[Field1] = [Source].[Val] + 111
 
 -- Sybase.Managed Sybase
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

@@ -15,7 +15,6 @@ WHERE
 	x."Id" = 1
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",

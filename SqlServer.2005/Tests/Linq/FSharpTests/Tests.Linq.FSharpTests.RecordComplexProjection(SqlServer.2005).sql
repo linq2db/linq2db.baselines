@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],

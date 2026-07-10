@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -32,7 +31,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -43,12 +41,10 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -81,7 +77,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -92,12 +87,10 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -130,7 +123,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -141,12 +133,10 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_Cache]
 	(
@@ -179,7 +169,6 @@ VALUES
 )
 
 -- SqlServer.2008
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -190,7 +179,6 @@ WHERE
 	[t].[ID] = 1
 
 -- SqlServer.2008
-
 IF (OBJECT_ID(N'[FluentTemp_Cache]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_Cache]
 

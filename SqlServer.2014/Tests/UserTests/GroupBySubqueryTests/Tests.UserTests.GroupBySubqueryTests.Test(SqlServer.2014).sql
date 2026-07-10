@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT DISTINCT
 	[a_Ref4].[Field6],
 	[a_Ref3].[Field4],
@@ -15,7 +14,6 @@ WHERE
 	[t1].[Field3] IS NOT NULL
 
 -- SqlServer.2014
-
 SELECT
 	[g_2].[Field6],
 	[g_2].[Field4],

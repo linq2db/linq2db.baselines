@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -14,14 +13,12 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Issue4132Table]
 SET
 	[Text] = 'after'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Number],

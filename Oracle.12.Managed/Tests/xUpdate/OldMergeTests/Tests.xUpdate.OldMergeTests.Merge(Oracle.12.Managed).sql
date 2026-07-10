@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."MoneyValue",
@@ -15,7 +14,6 @@ FROM
 	"LinqDataTypes" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "LinqDataTypes" Target
 USING (
 	SELECT

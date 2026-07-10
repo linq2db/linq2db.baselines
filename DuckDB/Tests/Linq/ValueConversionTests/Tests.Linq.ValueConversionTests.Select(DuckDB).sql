@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -17,7 +16,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Value1,
@@ -28,7 +26,6 @@ ORDER BY
 	t.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Value1,
@@ -46,7 +43,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 SELECT
 	t2.Id,
 	t2.Value1,

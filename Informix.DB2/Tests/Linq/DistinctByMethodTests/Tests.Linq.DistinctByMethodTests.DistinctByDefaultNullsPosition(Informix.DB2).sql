@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.Id
 FROM
@@ -31,7 +30,6 @@ ORDER BY
 	x.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.Id
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -14,7 +13,6 @@ FROM
 			SELECT 3 AS [ID]) [n] ON [p].[PersonID] = [n].[ID]
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

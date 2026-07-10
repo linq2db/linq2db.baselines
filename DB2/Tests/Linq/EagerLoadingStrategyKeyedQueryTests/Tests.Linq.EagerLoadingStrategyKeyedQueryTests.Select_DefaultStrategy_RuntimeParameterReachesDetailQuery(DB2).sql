@@ -18,7 +18,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"d"."Id",
 	"d"."Name"

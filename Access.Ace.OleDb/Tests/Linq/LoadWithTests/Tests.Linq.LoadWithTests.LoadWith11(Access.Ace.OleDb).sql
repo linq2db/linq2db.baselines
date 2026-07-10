@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -34,7 +32,6 @@ FROM
 		INNER JOIN [GrandChild] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[ParentID],
 	[p].[Value1]

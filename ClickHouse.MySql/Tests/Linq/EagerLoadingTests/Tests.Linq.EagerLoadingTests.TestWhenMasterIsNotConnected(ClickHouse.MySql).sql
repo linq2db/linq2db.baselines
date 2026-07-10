@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.MySql ClickHouse
-
 SELECT
 	t1.DetailId,
 	t1.MasterId,
@@ -8,7 +7,6 @@ FROM
 	DetailClass t1
 
 -- ClickHouse.MySql ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

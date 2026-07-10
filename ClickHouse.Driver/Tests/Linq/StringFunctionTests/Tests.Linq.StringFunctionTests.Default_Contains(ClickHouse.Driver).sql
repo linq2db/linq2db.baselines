@@ -1,11 +1,9 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO CollatedTable
 (
 	Id,
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	position(r.CaseSensitive, 'stSt') > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -38,7 +34,6 @@ WHERE
 	position(r.CaseInsensitive, 'stSt') > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -47,7 +42,6 @@ WHERE
 	position(r.CaseSensitive, 'stst') > 0
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM

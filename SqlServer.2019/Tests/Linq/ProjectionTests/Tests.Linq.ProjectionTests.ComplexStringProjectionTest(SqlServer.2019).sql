@@ -14,7 +14,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[Data]

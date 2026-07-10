@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -24,7 +23,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],
@@ -35,7 +33,6 @@ WHERE
 	[r].[Deleted] = 0 AND [r].[Id] = 1
 
 -- SqlServer.2019.MS SqlServer.2019
-
 MERGE INTO [Issue5289Table] [t1]
 USING (SELECT 1 AS [Id]) [s] ON
 (
@@ -60,7 +57,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[PictureId],

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(CASE
 		WHEN "g_1"."TimeStamp" > TIMESTAMP '2020-02-29 17:54:55.1231'

@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
-
 IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     Int              NOT NULL IDENTITY,
@@ -14,7 +12,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -25,7 +22,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -49,11 +45,9 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlServer.2012.MS SqlServer.2012
-
 TRUNCATE TABLE [TestIdTrun]
 
 -- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -64,7 +58,6 @@ VALUES
 )
 
 -- SqlServer.2012.MS SqlServer.2012
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -88,6 +81,5 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlServer.2012.MS SqlServer.2012
-
 DROP TABLE [TestIdTrun]
 

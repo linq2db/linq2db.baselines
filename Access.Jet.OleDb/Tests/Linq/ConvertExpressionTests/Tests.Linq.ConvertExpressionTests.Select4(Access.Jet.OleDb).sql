@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	IIF([t_1].[Sum_1] IS NULL, 0, [t_1].[Sum_1])
 FROM

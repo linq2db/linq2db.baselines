@@ -1,4 +1,3 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 commit;
 

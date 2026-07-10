@@ -14,7 +14,6 @@ WHERE
 	[r].[FirstName] = @p
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

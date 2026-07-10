@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_target]
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -43,7 +41,6 @@ WHERE
 	[s].[Id] > 3
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -52,6 +49,5 @@ FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_target]
 

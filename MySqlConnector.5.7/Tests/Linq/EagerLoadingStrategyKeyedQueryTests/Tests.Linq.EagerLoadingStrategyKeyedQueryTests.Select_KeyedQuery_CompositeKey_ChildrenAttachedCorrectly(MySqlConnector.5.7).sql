@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`Region`,
 	`p`.`Code`,
@@ -11,7 +10,6 @@ ORDER BY
 	`p`.`Code`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`k_1`.`Item1`,
 	`k_1`.`Item2`,

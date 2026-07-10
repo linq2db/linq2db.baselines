@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue5289Table] AS [t1]
 (
 	[Id],
@@ -16,7 +15,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[PictureId] = 3
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[PictureId],
@@ -28,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue5289Table] AS [t1]
 (
 	[Id],
@@ -45,7 +42,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[PictureId] = 3
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[PictureId],

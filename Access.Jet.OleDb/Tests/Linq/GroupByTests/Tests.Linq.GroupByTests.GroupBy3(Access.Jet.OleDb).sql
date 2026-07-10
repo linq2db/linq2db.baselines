@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT DISTINCT
 	IIF([gr].[Value1] IS NULL, [c_1].[ChildID], [gr].[Value1])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
 	[Id]       Int          NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-
 UPDATE
 	[t]
 SET
@@ -32,7 +30,6 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -41,7 +38,6 @@ FROM
 	[DestinationTable_target] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -50,7 +46,6 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 -- SqlServer.2005.MS SqlServer.2005
-
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_destination]
 

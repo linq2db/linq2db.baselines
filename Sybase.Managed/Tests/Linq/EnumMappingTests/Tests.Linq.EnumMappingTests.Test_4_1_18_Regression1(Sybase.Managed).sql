@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Sybase.Managed Sybase
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-
 SELECT
 	CASE
 		WHEN [t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL

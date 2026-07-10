@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT DISTINCT
 	`gc`.`GrandChildID`,
 	`a_Parent`.`Value1`
@@ -11,7 +10,6 @@ ORDER BY
 	`gc`.`GrandChildID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,

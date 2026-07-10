@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 WITH RECURSIVE "cte" ("Id", "FirstName", "LastName")
 AS
 (

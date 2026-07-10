@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	g_1."GrpId",
 	STRING_AGG(g_1."GuidV"::VarChar(36), '' ORDER BY g_1."PK" NULLS FIRST)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1."GrpId"
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."GrpId",

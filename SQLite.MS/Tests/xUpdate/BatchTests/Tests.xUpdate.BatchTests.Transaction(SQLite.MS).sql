@@ -35,7 +35,6 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],

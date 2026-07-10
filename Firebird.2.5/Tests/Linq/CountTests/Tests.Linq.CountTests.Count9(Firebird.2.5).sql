@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"a_Parent"."ParentID"
 FROM

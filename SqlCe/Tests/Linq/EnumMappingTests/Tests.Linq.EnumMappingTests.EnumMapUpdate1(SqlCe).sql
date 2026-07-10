@@ -8,7 +8,6 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 -- SqlCe
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- SqlCe
-
 UPDATE
 	[LinqDataTypes]
 SET
@@ -30,7 +28,6 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 -- SqlCe
-
 SELECT TOP (1)
 	[r].[BigIntValue]
 FROM

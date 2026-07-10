@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN "EntityMD" a_ObjectD ON d.FKD = a_ObjectD."Id"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id"
 FROM

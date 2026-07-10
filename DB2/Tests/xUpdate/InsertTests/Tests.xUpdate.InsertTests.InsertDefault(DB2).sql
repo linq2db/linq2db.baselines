@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 DELETE FROM
 	"Person" "p"
 WHERE

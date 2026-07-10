@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	"a_GrandChildren2"."ParentID",
 	"a_GrandChildren2"."ChildID",

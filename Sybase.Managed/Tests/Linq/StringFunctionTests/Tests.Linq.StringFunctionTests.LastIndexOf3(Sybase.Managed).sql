@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT
 	[p].[PersonID],
 	'123' || [p].[FirstName] || '0123451234'

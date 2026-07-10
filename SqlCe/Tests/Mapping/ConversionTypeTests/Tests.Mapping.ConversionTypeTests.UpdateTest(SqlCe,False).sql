@@ -36,7 +36,6 @@ WHERE
 	[TrimTestTable].[Data] = @p
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -46,7 +45,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlCe
-
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"GrandChild" t1
 WHERE

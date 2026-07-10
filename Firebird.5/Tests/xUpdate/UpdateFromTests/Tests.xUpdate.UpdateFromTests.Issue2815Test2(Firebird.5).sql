@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 UPDATE
 	"Issue2815Table1"
 SET
@@ -63,7 +62,6 @@ WHERE
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1".SRC_BIC,

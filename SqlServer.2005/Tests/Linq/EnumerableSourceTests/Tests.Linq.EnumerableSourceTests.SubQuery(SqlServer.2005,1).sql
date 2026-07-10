@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

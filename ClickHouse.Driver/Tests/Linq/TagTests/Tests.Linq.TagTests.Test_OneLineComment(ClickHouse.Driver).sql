@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 /* My Test */
 SELECT
 	x.FirstName,

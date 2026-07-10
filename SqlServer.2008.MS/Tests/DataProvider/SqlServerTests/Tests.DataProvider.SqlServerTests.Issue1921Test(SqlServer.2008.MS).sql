@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 select @@version
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -27,7 +24,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -53,11 +49,9 @@ FROM
 			x.name = 'MS_Description' AND x.class = 2
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[AddIssue792Record]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[DuplicateColumnNames]
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -77,15 +71,12 @@ SET     @output = 0
 [TestDataMS].[dbo].[ExecuteProcStringParameters]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[Issue1897]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -115,7 +106,6 @@ SET     @inputOutputStr = N''
 [TestDataMS].[dbo].[OutRefTest]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[Patient_SelectAll]
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -159,7 +149,6 @@ SET     @PersonID = 0
 [TestDataMS].[dbo].[Person_Insert_OutputParameter]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[Person_SelectAll]
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -233,7 +222,6 @@ SET     @output2 = 0
 [TestDataMS].[dbo].[QueryProcParameters]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[dbo].[SelectImplicitColumn]
 
 -- SqlServer.2008.MS SqlServer.2008
@@ -249,11 +237,9 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2008.MS SqlServer.2008
-
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
 -- SqlServer.2008.MS SqlServer.2008
-
 [TestDataMS].[TestSchema].[TestProcedure]
 
 RollbackTransaction

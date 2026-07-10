@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	RTRIM(Coalesce(t.NVarCharColumn, '') || '...++', '.+')
 FROM
 	StringTrimTable t
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.CharColumn,

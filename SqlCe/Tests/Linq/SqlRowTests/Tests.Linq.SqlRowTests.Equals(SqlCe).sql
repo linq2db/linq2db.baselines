@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[i].[Two] = [i].[One] * 2 AND [i].[Three] = [i].[Four] - 1
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	[i].[Four] = [i].[Three]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +23,6 @@ WHERE
 	[i].[Nil] = [i].[Two]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +31,6 @@ WHERE
 	1 = [i].[One] AND [i].[Nil] = [i].[Nil] AND 3 = [i].[Three]
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

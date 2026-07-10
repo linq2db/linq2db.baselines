@@ -16,7 +16,6 @@ RETURNING
 	ID
 
 -- Firebird.2.5 Firebird
-
 INSERT INTO "AllTypes"
 (
 	"intDataType"

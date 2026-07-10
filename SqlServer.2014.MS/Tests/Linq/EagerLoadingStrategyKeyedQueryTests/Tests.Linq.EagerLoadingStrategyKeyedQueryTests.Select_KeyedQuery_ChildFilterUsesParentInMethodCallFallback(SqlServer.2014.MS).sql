@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Name],
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

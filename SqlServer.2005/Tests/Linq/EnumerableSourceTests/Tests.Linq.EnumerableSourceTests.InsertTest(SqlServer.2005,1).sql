@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [TableToInsert]
 (
 	[Id],
@@ -18,7 +17,6 @@ WHERE
 	[t].[Id] IS NULL
 
 -- SqlServer.2005
-
 INSERT INTO [TableToInsert]
 (
 	[Id],

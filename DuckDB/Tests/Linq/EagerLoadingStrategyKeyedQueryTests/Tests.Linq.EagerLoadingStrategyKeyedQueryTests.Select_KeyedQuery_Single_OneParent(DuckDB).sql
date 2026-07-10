@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	c_1.Id,
 	c_1.Name
@@ -10,7 +9,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	k_1."item",
 	d.Id,

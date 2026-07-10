@@ -54,7 +54,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

@@ -34,7 +34,6 @@ WHERE
 	`p`.`Id` = 0
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`ClaimedKeyType`,

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(CAST(EXTRACT(year FROM d.DateTimeValue) AS VARCHAR) || '-02-24 00:00:00' AS TIMESTAMP)
 FROM

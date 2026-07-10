@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "ExplicitComplexPropertyTarget" "Target"
 USING (
 	SELECT 1 AS "Id", 1 AS "TestsxUpdateMergeTestsIExplicitComplexPropertyField" FROM DUMMY) "Source"
@@ -28,7 +27,6 @@ SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExplicitComplexPropertyField"
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Field"

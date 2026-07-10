@@ -15,7 +15,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

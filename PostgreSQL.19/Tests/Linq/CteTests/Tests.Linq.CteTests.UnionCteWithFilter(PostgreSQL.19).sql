@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS
 (

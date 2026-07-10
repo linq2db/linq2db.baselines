@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 WITH "CTE_1" ("ParentID")
 AS MATERIALIZED
 (

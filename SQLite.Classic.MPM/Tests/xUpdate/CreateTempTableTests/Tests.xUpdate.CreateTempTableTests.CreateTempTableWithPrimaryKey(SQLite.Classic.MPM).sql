@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
 (
 	[Key] INTEGER NOT NULL,
@@ -8,6 +7,5 @@ CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS temp.[TableWithPrimaryKey]
 

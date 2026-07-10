@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[a_GrandChildren2].[ParentID],
 	[a_GrandChildren2].[ChildID],

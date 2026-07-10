@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],
@@ -66,7 +65,6 @@ WHERE
 	[p].[TargetName] = 'bda.Requests'
 
 -- SqlCe
-
 SELECT
 	[p].[TargetName],
 	[p].[Id],

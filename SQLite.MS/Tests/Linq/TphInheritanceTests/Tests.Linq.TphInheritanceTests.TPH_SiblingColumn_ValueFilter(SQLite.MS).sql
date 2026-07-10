@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[EventCode],
 	[t].[Id],
@@ -57,7 +56,6 @@ WHERE
 	[t].[TicketChildCode] = 'shared'
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[EventCode],
 	[t].[Id],

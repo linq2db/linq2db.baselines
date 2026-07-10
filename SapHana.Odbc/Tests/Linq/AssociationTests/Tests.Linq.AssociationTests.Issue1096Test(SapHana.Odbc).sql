@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT DISTINCT
 	"t"."Pk",
 	"t"."Id",

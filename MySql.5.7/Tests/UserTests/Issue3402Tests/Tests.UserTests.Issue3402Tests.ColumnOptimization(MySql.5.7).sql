@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`ess`.`ID`
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`ess`.`ID`
 FROM

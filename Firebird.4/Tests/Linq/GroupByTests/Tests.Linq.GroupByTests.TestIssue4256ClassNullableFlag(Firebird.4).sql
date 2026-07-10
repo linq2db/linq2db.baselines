@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT DISTINCT
 	TRUE,
 	"it"."SmallIntValue" <> 0
@@ -7,7 +6,6 @@ FROM
 	"LinqDataTypes" "it"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",

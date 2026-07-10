@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Person`
@@ -7,7 +6,6 @@ WHERE
 	`Person`.`PersonID` > 4
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -22,11 +20,9 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT LAST_INSERT_ID()
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -40,7 +36,6 @@ WHERE
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Person`

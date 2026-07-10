@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 DELETE FROM [GrandChild]
 FROM
 	[Parent] [x]

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Issue5289Table] [t1]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Issue5289Table]
 (
 	[Id],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],
@@ -34,7 +31,6 @@ WHERE
 	NOT [r].[Deleted] AND [r].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 UPDATE
 	[Issue5289Table] [t1]
 SET
@@ -43,7 +39,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[PictureId],

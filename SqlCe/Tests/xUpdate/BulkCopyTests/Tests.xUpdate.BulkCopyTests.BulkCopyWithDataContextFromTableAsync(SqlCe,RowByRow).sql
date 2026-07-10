@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -7,7 +6,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -36,7 +33,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 10
 
 -- SqlCe
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

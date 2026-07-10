@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	'Id',
 	"it"."Id",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE
@@ -188,7 +187,6 @@ WHERE
 ROWS @skip + 1 TO @skip + @take
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "c_1"
 WHERE

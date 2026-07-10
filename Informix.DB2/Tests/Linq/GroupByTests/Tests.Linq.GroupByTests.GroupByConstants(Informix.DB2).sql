@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	g_2.ChildId,
 	g_2.ParentId,
@@ -17,7 +16,6 @@ GROUP BY
 	g_2.ParentId
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

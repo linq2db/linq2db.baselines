@@ -1,7 +1,6 @@
 ﻿INSERT INTO InheritanceFilter(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Code,
 	t1.Id,

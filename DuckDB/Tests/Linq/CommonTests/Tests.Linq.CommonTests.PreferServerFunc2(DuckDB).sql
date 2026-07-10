@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	Length(p.FirstName)
 FROM

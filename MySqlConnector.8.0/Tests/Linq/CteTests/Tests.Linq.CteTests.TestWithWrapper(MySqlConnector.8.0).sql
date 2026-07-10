@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1` (`Child_ParentID`, `Child_ChildID`)
 AS
 (
@@ -19,7 +18,6 @@ FROM
 		INNER JOIN `CTE_1` `c_1` ON `p`.`ParentID` = `c_1`.`Child_ParentID`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`,

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"t1".ID,
 	"t1"."MoneyValue",
@@ -13,7 +12,6 @@ FROM
 	"LinqDataTypes" "t1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"e".ID,
 	"p"."SmallIntValue"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"
@@ -9,7 +8,6 @@ FROM
 			SELECT 1 AS "Id", CAST(1 AS BigInt) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"arg"."Id",
 	"arg"."Value"

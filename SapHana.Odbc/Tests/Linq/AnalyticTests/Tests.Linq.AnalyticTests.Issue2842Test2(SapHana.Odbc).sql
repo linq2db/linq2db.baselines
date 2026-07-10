@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."FirstName",
 	RANK() OVER (ORDER BY CASE

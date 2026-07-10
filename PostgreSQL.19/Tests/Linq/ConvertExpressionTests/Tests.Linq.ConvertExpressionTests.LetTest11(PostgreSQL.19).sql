@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t1."ParentID" IS NULL THEN 0

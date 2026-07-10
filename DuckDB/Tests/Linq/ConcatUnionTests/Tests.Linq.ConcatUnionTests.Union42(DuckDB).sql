@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p_1.val
 FROM

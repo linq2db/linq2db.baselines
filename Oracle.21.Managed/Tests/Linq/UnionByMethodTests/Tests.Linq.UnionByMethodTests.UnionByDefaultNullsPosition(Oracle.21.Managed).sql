@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	x."Key_1"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id"
 FROM

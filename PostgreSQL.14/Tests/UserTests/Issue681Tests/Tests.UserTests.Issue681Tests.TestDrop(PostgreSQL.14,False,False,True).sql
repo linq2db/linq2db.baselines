@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	current_schema()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "Issue681Table2"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 CREATE TABLE "Issue681Table2"
 (
 	"ID"    Int NOT NULL,
@@ -21,6 +18,5 @@ CREATE TABLE "Issue681Table2"
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DROP TABLE public."Issue681Table2"
 

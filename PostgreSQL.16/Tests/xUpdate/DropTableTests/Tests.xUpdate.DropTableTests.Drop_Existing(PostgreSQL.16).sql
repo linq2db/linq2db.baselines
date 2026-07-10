@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE "Table"
 (
 	"ID" Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE "Table"
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DROP TABLE "Table"
 

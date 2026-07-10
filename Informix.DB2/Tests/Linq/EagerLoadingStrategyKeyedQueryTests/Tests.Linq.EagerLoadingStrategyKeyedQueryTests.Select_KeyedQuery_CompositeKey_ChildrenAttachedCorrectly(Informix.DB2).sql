@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.Region,
 	p.Code,
@@ -11,7 +10,6 @@ ORDER BY
 	p.Code
 
 -- Informix.DB2 Informix
-
 SELECT
 	k_1.Item1,
 	k_1.Item2,

@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`i`.`Id`,
 	(

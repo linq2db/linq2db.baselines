@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 UPDATE
 	`Parent` `t`
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

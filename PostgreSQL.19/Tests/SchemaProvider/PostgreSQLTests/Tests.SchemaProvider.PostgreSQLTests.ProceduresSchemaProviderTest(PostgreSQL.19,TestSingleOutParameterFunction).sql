@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	current_database()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SHOW server_version_num
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t.table_catalog || '.' || t.table_schema || '.' || t.table_name            as TableID,
 	t.table_catalog                                                            as CatalogName,
@@ -58,7 +55,6 @@ UNION ALL
 	WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.19 PostgreSQL12
-
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
 		pg_constraint.conname                                                        as PrimaryKeyName,
@@ -74,7 +70,6 @@ UNION ALL
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	columns.TableID,
 	columns.Name,
@@ -208,7 +203,6 @@ FROM
 ) columns;
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	pg_constraint.conname,
 	current_database() || '.' || this_schema.nspname  || '.' || this_table.relname,
@@ -256,7 +250,6 @@ WHERE
 	AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT	r.ROUTINE_CATALOG,
 		r.ROUTINE_SCHEMA,
 		r.ROUTINE_NAME,
@@ -274,12 +267,10 @@ SELECT	r.ROUTINE_CATALOG,
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE
 FROM INFORMATION_SCHEMA.parameters
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
 		LEFT JOIN pg_catalog.pg_namespace n ON r.ROUTINE_SCHEMA = n.nspname
@@ -289,19 +280,15 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	WHERE r.DATA_TYPE <> 'record' AND r.DATA_TYPE <> 'void' AND p.proretset = false AND (outp.cnt IS NULL OR outp.cnt = 0)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 RollbackTransaction

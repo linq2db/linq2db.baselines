@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH "cte"
 (
 	"FirstName",
@@ -29,7 +28,6 @@ FROM
 	"cte" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."FirstName",
 	x."PersonID",

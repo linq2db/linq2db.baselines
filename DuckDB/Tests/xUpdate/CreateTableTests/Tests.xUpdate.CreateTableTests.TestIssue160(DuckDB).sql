@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE aa
 (
 	bb INTEGER,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.bb,
 	t1.cc
@@ -34,6 +32,5 @@ FROM
 	aa t1
 
 -- DuckDB
-
 DROP TABLE aa
 

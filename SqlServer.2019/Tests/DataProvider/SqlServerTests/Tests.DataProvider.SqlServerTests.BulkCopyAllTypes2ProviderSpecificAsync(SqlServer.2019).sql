@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 DELETE [p]
 FROM
 	[AllTypes2] [p]
@@ -9,7 +8,6 @@ WHERE
 INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
 -- SqlServer.2019
-
 SELECT
 	[p].[ID],
 	[p].[dateDataType],

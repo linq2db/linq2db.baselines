@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	MIN([c_1].[ChildID])
 FROM

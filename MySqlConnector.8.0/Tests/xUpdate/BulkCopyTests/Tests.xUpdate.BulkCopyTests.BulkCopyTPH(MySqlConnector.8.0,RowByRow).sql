@@ -66,7 +66,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Discriminator`,
 	`t1`.`Id`,
@@ -80,7 +79,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -95,7 +93,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -110,7 +107,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -125,7 +121,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -140,7 +135,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -155,7 +149,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[cb].[Id],
 	[cb].[Name],

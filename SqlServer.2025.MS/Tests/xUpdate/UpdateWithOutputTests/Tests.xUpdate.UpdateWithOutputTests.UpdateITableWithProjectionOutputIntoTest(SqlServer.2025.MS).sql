@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 UPDATE
 	[t]
 SET
@@ -21,7 +20,6 @@ FROM
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],

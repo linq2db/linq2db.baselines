@@ -65,7 +65,6 @@ WHERE
 	"t1"."TimeTZ" = @TimeTZ
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

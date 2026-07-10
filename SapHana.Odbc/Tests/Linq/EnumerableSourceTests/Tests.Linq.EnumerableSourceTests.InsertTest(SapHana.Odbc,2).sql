@@ -1,5 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -18,7 +17,6 @@ WHERE
 	"t"."Id" IS NULL
 
 -- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "TableToInsert"
 (
 	"Id",

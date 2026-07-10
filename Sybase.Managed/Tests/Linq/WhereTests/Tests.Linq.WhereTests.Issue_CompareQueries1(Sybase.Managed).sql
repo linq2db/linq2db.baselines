@@ -1,5 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 -- Sybase.Managed Sybase
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM

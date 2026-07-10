@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x].[Id],
 	CASE
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

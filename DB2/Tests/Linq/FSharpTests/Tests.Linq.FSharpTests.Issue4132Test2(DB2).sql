@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-
 UPDATE
 	"Issue4132Table" "row_1"
 SET
@@ -23,7 +21,6 @@ WHERE
 	"row_1"."Number" = 1
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"r"."Id",
 	"r"."Number",

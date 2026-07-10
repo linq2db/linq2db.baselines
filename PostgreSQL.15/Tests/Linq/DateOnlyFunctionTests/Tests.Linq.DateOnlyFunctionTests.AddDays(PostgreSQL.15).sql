@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."TransactionDate" + 5 * Interval '1 Day'
 FROM

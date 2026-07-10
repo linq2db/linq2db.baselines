@@ -1,5 +1,4 @@
 ﻿-- Firebird.3 Firebird3
-
 SELECT
 	MAX("t1"."PersonID")
 FROM
@@ -33,7 +32,6 @@ VALUES
 )
 
 -- Firebird.3 Firebird3
-
 SELECT
 	"p"."PersonID",
 	"p"."FirstName",
@@ -47,7 +45,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.3 Firebird3
-
 DELETE FROM
 	"Person" "t"
 WHERE

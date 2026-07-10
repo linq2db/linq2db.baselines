@@ -1,5 +1,4 @@
 ﻿-- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."BookId",
 	"a_Author"."AuthorId",
@@ -29,7 +28,6 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON "d"."FkAuthorId" = "a_Author"."AuthorId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"a_Book"."BookId",
 	"a_Book"."BookName"
@@ -51,7 +49,6 @@ WHERE
 	)
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."BookId",
 	"m_1"."AuthorId",
@@ -71,7 +68,6 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON "d_1"."FkAuthorId" = "a_Author"."AuthorId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"m_1"."AuthorId",
 	"a_Book"."BookId",
@@ -85,7 +81,6 @@ FROM
 		LEFT JOIN "Book" "a_Book" ON "d"."FkBookId" = "a_Book"."BookId"
 
 -- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t1"."AuthorId",
 	"t1"."AuthorName"

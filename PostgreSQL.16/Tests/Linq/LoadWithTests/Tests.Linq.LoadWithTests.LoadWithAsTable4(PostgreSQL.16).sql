@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON d."ParentID" = "a_Parent"."ParentID"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	t."Value1"

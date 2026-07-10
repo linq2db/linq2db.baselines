@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -13,7 +12,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`Id`,
 	`p`.`Name`
@@ -23,7 +21,6 @@ ORDER BY
 	`p`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -37,7 +34,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`Id`,
 	`p`.`Name`

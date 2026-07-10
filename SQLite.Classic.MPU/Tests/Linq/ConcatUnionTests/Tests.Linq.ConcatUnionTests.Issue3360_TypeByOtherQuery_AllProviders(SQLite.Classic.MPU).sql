@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[Str]
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	CAST('str' AS VarChar)

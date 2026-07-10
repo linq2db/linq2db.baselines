@@ -9,7 +9,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- SqlServer.2017.MS SqlServer.2017
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	IIF([t1].[BigIntValue] IS NOT NULL AND [t1].[IntValue] IS NOT NULL, 1, 0),
 	[t1].[BigIntValue],

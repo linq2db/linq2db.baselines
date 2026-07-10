@@ -13,7 +13,6 @@ WHERE
 	[t1].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (
 	SELECT 1 AS "Id", 'alpha-new' AS "Code", 1 AS "Nested_Field" FROM DUMMY
@@ -70,7 +69,6 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

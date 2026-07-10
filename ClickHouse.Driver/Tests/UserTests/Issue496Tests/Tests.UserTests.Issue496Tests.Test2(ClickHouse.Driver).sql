@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d.ChildID,
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.ParentID
 FROM

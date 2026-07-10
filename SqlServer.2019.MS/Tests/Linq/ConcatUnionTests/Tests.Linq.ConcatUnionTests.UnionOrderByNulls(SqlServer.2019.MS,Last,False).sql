@@ -29,7 +29,6 @@ ORDER BY
 	[t1].[ParentID]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

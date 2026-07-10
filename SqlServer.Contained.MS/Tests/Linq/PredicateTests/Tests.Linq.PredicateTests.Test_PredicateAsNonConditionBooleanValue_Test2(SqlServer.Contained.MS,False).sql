@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -25,7 +23,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -40,7 +37,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -51,7 +47,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -66,7 +61,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -77,7 +71,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -92,7 +85,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -103,7 +95,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -118,7 +109,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -129,7 +119,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -144,7 +133,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -155,7 +143,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -170,7 +157,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -181,7 +167,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -196,7 +181,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -207,7 +191,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -222,7 +205,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -233,7 +215,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -248,7 +229,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -259,7 +239,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -274,7 +253,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -285,7 +263,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -300,7 +277,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -311,7 +287,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -326,7 +301,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -337,7 +311,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -352,7 +325,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -363,7 +335,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -378,7 +349,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -389,7 +359,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -404,7 +373,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -415,7 +383,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -430,7 +397,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -441,7 +407,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -456,7 +421,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -467,7 +431,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -482,7 +445,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -493,7 +455,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -508,7 +469,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -519,7 +479,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -534,7 +493,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -545,7 +503,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -560,7 +517,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -571,7 +527,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -586,7 +541,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -597,7 +551,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -612,7 +565,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

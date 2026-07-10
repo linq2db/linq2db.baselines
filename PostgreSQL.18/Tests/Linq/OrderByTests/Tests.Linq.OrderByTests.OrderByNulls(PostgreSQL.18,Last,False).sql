@@ -14,7 +14,6 @@ ORDER BY
 LIMIT :take
 
 -- PostgreSQL.18 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Grp",

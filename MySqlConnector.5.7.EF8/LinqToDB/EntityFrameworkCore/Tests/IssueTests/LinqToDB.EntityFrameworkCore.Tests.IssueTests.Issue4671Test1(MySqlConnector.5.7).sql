@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
 	`Id`    int AUTO_INCREMENT NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Issue4671Entity1`
 (
 	`Value`
@@ -24,7 +22,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Issue4671Entity1TMP`
 (
 	`Value`
@@ -37,7 +34,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -48,7 +44,6 @@ LIMIT 2
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -59,7 +54,6 @@ LIMIT 2
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `Issue4671Entity1TMP`
 
 
