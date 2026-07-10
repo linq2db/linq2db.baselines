@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -13,7 +12,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
 	[p].[Name]
@@ -23,7 +21,6 @@ ORDER BY
 	[p].[Id]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -37,7 +34,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[p].[Id],
 	[p].[Name]

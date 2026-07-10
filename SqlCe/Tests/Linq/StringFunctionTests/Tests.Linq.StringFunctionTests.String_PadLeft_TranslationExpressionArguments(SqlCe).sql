@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -18,7 +17,6 @@ WHERE
 	[s].[FirstName] <> ''
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

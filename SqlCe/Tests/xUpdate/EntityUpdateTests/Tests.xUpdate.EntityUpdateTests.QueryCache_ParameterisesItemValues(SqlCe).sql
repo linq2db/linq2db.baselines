@@ -43,7 +43,6 @@ WHERE
 	[EntityUpdateTest].[Id] = @Id
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

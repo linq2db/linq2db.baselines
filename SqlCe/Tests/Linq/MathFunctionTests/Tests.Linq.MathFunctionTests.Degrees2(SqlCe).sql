@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	Floor([t].[Value_1])
 FROM

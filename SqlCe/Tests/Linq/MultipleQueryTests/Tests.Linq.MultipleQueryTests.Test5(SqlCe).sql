@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [Parent] [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 -- SqlCe
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

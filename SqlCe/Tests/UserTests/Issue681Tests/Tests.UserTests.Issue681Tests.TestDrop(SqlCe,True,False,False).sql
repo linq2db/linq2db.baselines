@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [Issue681Table2]
 
 -- SqlCe
-
 CREATE TABLE [Issue681Table2]
 (
 	[ID]    Int NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE [Issue681Table2]
 )
 
 -- SqlCe
-
 DROP TABLE [Issue681Table2]
 

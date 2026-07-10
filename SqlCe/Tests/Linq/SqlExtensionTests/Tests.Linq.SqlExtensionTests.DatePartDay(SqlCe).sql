@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	DatePart(day, [t].[DateTimeValue])
 FROM

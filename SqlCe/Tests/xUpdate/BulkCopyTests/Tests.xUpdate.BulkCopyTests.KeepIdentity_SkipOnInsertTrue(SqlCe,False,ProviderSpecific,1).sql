@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 INSERT INTO [AllTypes]
 (
 	[intDataType]

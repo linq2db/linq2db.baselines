@@ -197,7 +197,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[r].[Value1]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 UPDATE
 	[ParentTable]
 SET
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT TOP (1)
 	[p].[Id],
 	[p].[Value]

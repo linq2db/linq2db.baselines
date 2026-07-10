@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (2)
 	[u].[Id],
 	[u].[user_name],

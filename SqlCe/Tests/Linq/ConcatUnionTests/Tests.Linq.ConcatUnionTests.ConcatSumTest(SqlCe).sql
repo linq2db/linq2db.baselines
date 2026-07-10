@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	SUM([t3].[PersonID])
 FROM

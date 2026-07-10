@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	MAX([t1].[Count_1])
 FROM

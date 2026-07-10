@@ -12,6 +12,5 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 

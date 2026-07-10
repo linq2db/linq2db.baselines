@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	Coalesce([t1].[ChildCount], 0)
 FROM

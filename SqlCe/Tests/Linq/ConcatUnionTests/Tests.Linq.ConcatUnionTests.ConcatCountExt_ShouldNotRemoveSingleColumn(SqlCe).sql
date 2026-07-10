@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT([t3].[PersonID])
 FROM

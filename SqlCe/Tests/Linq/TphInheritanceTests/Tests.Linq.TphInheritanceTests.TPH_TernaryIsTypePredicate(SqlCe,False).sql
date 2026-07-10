@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[e].[Code],
 	[e].[Id],

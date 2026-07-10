@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Child]
 (
 	[ChildID]

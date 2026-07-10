@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[nm].[MiddleName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[nm].[MiddleName] IS NOT NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[FirstName],
 	[t].[PersonID],

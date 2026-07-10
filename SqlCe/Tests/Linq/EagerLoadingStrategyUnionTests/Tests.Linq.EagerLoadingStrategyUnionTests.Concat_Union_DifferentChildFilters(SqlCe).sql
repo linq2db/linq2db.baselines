@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Label],
 	[t1].[Id],
@@ -23,7 +22,6 @@ FROM
 	) [t1]
 
 -- SqlCe
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],
@@ -51,7 +49,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlCe
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

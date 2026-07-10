@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlCe
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 -- SqlCe
-
 DELETE FROM
 	[BooleanTable]
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -83,12 +80,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[BooleanTable]
 
 -- SqlCe
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -99,7 +94,6 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -110,12 +104,10 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 DELETE FROM
 	[BooleanTable]
 
 -- SqlCe
-
 INSERT INTO [BooleanTable]
 (
 	[Id],
@@ -126,7 +118,6 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

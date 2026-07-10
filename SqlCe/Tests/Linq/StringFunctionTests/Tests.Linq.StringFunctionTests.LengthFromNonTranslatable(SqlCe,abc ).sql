@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[Str],
 	LEN([t].[Str] + '.') - 1,
@@ -8,7 +7,6 @@ FROM
 	[TestLengthModel] [t]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Str]

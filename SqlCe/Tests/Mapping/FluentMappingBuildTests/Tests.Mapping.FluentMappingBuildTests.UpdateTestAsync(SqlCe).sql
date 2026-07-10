@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 CREATE TABLE [FluentTemp_UpdateAsync]
 (
 	[ID]       Int          NOT NULL,
@@ -45,6 +44,5 @@ WHERE
 	[FluentTemp_UpdateAsync].[ID] = 1
 
 -- SqlCe
-
 DROP TABLE [FluentTemp_UpdateAsync]
 

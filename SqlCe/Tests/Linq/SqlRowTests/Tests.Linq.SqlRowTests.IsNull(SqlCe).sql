@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	1 = 0
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -17,7 +15,6 @@ WHERE
 	1 = 0
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

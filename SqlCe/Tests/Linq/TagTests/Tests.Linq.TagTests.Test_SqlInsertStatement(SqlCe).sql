@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 /* My Test */
 INSERT INTO [TestTable]
 (

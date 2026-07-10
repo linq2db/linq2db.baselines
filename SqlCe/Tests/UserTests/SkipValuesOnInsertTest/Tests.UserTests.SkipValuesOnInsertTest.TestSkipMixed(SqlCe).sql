@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -44,7 +43,6 @@ WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
@@ -99,7 +96,6 @@ WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],

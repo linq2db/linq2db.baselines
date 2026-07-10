@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +38,6 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
 -- SqlCe
-
 DELETE FROM
 	[Person]
 WHERE

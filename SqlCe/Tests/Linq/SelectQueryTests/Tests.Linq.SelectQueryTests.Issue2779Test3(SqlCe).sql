@@ -1,4 +1,3 @@
 ﻿-- SqlCe
-
 SELECT 1
 

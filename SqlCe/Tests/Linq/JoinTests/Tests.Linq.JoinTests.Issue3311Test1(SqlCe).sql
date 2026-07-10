@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x].[PersonID] + 1
 FROM

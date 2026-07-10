@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x].[ID],
 	[x].[BigIntValue]

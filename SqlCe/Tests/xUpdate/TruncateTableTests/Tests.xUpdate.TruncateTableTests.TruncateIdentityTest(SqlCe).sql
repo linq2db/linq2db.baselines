@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TestIdTrun]
 
 -- SqlCe
-
 CREATE TABLE [TestIdTrun]
 (
 	[ID]     Int              NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [TestIdTrun]
 )
 
 -- SqlCe
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -48,15 +44,12 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlCe
-
 DELETE FROM [TestIdTrun]
 
 -- SqlCe
-
 ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] IDENTITY(1, 1)
 
 -- SqlCe
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -67,7 +60,6 @@ VALUES
 )
 
 -- SqlCe
-
 INSERT INTO [TestIdTrun]
 (
 	[Field1]
@@ -91,6 +83,5 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 -- SqlCe
-
 DROP TABLE [TestIdTrun]
 

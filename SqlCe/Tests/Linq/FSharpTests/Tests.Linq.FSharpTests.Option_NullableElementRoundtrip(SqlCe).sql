@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]
@@ -43,7 +42,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

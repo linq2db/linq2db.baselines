@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*),
 	MAX([g_1].[ChildID])

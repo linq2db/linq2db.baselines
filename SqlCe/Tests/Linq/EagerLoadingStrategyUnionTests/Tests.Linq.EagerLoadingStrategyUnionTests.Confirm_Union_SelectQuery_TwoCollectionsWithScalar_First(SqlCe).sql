@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[CompanyId],
@@ -21,7 +19,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t2].[Count_1]
 FROM

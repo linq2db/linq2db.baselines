@@ -11,7 +11,6 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

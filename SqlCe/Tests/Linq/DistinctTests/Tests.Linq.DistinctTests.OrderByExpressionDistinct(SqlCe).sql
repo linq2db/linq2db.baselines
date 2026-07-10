@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[x_1].[MiddleName],
 	[x_1].[LastName]
@@ -19,7 +18,6 @@ ORDER BY
 	Coalesce([x_1].[LastName], '-1')
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

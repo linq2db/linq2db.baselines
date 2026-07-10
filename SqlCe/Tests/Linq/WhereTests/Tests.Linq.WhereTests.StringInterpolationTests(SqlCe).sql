@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' + [p].[LastName]) = ('{}' + [p].[LastName])
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

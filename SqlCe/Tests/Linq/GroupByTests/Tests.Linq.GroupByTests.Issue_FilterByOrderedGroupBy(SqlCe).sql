@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t].[ParentID],
 	[t].[ChildID]
@@ -24,7 +23,6 @@ WHERE
 	)
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

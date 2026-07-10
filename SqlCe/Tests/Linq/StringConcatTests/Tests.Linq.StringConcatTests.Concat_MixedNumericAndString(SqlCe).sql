@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CAST([e].[Num] AS NVarChar(11)) + '-' + Coalesce([e].[StrReq], '')) = '100-Programmer'
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[ParentID],
 	MIN([g_2].[ChildID]),

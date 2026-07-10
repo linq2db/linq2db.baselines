@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -15,7 +14,6 @@ ORDER BY
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -23,7 +21,6 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 -- SqlCe
-
 UPDATE
 	[Person]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[Person].[LastName] = 'Limonadovy'
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

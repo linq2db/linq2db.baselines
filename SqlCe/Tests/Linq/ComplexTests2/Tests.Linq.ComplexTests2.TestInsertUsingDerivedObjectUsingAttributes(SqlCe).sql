@@ -24,11 +24,9 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -63,7 +61,6 @@ WHERE
 	[Person].[PersonID] = @ID
 
 -- SqlCe
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],

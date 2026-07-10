@@ -36,7 +36,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
@@ -62,7 +61,6 @@ WHERE
 	[test_insert_or_replace].[id] = @Id
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],

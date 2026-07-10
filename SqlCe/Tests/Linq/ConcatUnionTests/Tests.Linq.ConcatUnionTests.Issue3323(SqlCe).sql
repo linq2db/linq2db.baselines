@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Text],

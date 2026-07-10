@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -22,7 +21,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -45,7 +43,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NullableValue]
@@ -69,7 +66,6 @@ ORDER BY
 	[d_1].[NullableValue] DESC
 
 -- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -92,7 +88,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlCe
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -116,7 +111,6 @@ ORDER BY
 	[d_1].[NotNullableValue] DESC
 
 -- SqlCe
-
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
@@ -125,7 +119,6 @@ ORDER BY
 	[g_1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

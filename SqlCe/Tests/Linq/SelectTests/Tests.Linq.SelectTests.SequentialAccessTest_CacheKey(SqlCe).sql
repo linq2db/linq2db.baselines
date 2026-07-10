@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
@@ -8,7 +7,6 @@ FROM
 	[InheritanceParent] [t1]
 
 -- SqlCe
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],

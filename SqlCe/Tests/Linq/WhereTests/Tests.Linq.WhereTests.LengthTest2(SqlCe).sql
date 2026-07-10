@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[nm].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	LEN([nm].[FirstName] + '.') <> 1
 
 -- SqlCe
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

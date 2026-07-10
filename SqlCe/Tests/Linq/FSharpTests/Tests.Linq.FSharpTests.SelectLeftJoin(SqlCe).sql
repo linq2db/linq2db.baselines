@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT TOP (1)
 	[Item1].[ParentID],
 	[Item1].[ChildID]

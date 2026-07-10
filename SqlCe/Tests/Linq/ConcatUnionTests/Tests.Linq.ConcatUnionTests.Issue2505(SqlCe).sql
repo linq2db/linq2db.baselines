@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[i_2].[LastName]
 FROM

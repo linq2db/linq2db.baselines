@@ -14,7 +14,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[Data]

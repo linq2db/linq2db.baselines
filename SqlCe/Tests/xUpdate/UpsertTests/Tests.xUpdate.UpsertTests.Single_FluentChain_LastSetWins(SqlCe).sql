@@ -58,7 +58,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

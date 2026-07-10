@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -48,7 +47,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -99,7 +97,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -140,7 +137,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -181,7 +177,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -238,7 +233,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -295,7 +289,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -343,7 +336,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -391,7 +383,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -451,7 +442,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -511,7 +501,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -557,7 +546,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -603,7 +591,6 @@ WHERE
 	END IS NULL
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -668,7 +655,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -733,7 +719,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -785,7 +770,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -837,7 +821,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -871,7 +854,6 @@ WHERE
 	([r_1].[Value4] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -905,7 +887,6 @@ WHERE
 	([r_1].[Value4] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -939,7 +920,6 @@ WHERE
 	([r_1].[Value4] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -973,7 +953,6 @@ WHERE
 	([r_1].[Value4] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1007,7 +986,6 @@ WHERE
 	([r_1].[Value2] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1041,7 +1019,6 @@ WHERE
 	([r_1].[Value2] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1075,7 +1052,6 @@ WHERE
 	([r_1].[Value2] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1109,7 +1085,6 @@ WHERE
 	([r_1].[Value2] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1150,7 +1125,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1191,7 +1165,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1232,7 +1205,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1273,7 +1245,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1314,7 +1285,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1355,7 +1325,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1396,7 +1365,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1437,7 +1405,6 @@ WHERE
 	END
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

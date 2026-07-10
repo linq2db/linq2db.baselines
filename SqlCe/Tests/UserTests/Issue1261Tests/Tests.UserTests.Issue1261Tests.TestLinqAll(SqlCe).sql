@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(
@@ -15,7 +14,6 @@ SELECT
 	END
 
 -- SqlCe
-
 SELECT
 	CASE
 		WHEN NOT EXISTS(

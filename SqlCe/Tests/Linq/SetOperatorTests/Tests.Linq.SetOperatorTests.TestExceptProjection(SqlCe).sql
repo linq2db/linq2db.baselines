@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT DISTINCT
 	[r].[Value1]
 FROM

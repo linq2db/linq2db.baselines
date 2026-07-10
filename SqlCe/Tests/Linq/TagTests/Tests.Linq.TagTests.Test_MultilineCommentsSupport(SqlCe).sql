@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 /* My custom
 wonderful multiline
 query tag */

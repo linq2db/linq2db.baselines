@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_Children].[ParentID] + 1
 FROM

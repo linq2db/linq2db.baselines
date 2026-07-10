@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	2,
 	[ch].[ChildID],

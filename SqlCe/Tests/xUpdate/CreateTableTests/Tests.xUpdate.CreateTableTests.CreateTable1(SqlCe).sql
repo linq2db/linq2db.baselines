@@ -1,9 +1,7 @@
 ﻿-- SqlCe
-
 DROP TABLE [TestTable]
 
 -- SqlCe
-
 CREATE TABLE [TestTable]
 (
 	[ID]        Int            NOT NULL IDENTITY,
@@ -15,7 +13,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -25,6 +22,5 @@ FROM
 	[TestTable] [t1]
 
 -- SqlCe
-
 DROP TABLE [TestTable]
 

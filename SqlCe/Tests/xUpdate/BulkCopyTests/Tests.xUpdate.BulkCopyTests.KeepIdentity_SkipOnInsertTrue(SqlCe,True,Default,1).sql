@@ -12,15 +12,12 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT @@IDENTITY
 
 -- SqlCe
-
 SET IDENTITY_INSERT [AllTypes] ON
 
 -- SqlCe
-
 INSERT INTO [AllTypes]
 (
 	[ID],
@@ -30,7 +27,6 @@ SELECT 13,200 UNION ALL
 SELECT 23,300
 
 -- SqlCe
-
 SET IDENTITY_INSERT [AllTypes] OFF
 
 -- SqlCe

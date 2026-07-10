@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[InheritanceParent]
 
@@ -39,7 +38,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -60,7 +58,6 @@ WHERE
 	[InheritanceParent].[Name] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

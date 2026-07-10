@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[g_2].[Key_1],
 	COUNT(*)
@@ -17,7 +16,6 @@ GROUP BY
 	[g_2].[Key_1]
 
 -- SqlCe
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

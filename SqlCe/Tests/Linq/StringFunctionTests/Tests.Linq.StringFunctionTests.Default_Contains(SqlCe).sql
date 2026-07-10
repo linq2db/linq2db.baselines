@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[CollatedTable]
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stSt%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	[r].[CaseInsensitive] LIKE '%stSt%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stst%' ESCAPE '~'
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM

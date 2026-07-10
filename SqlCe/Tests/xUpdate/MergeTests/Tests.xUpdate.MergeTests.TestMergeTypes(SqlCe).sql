@@ -1,10 +1,8 @@
 ﻿-- SqlCe
-
 DELETE FROM
 	[TestMerge1]
 
 -- SqlCe
-
 DELETE FROM
 	[TestMerge2]
 
@@ -600,7 +598,6 @@ VALUES
 )
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -624,7 +621,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

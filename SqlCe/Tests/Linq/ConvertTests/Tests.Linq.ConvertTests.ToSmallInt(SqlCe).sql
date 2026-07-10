@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CAST([t].[MoneyValue] AS SmallInt)
 FROM

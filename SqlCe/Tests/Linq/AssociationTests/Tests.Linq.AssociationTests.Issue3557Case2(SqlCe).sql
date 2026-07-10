@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[i].[Id],
 	Coalesce([t1].[Reason], '')

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	[a_MiddleGeneric].[ParentID],
 	[a_Bottom].[ParentID] as [ParentID_1],

@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	CASE
 		WHEN LEN([p].[FirstName] + '.') = 1 THEN 1

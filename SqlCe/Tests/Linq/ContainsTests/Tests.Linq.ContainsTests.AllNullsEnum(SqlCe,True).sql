@@ -1,5 +1,4 @@
 ﻿-- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IS NULL
 
 -- SqlCe
-
 SELECT
 	COUNT(*)
 FROM
