@@ -9,7 +9,6 @@ WHERE @ef_filter__p1 = CAST(1 AS bit) OR [l].[IsDeleted] = CAST(0 AS bit) OR [l]
 
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[IsDeleted],
 	[t1].[CategoryID],

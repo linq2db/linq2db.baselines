@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado'),

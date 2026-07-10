@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 UPDATE
 	[ext]
 SET
@@ -14,7 +13,6 @@ WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[SRC_BIC],

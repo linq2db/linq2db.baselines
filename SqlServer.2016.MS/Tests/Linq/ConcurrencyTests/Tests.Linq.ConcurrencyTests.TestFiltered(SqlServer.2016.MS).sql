@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -46,7 +45,6 @@ WHERE
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -72,7 +70,6 @@ WHERE
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -93,7 +90,6 @@ WHERE
 	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
@@ -114,7 +110,6 @@ WHERE
 	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],

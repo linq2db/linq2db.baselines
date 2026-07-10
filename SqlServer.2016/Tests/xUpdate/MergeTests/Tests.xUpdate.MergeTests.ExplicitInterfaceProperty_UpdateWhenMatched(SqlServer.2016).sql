@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 MERGE INTO [ExplicitComplexPropertyTarget] [Target]
 USING (VALUES
 	(1,1)
@@ -34,7 +33,6 @@ SET
 ;
 
 -- SqlServer.2016
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Field]

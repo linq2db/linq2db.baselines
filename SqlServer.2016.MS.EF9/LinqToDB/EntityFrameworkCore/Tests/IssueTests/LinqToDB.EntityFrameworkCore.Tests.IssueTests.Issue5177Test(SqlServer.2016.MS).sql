@@ -8,7 +8,6 @@ VALUES (@p0, @p1);
 
 
 -- SqlServer.2016
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Value]

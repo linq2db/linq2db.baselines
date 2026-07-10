@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT DISTINCT
 	1,
 	IIF([it].[SmallIntValue] <> 0, 1, 0)
@@ -7,7 +6,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

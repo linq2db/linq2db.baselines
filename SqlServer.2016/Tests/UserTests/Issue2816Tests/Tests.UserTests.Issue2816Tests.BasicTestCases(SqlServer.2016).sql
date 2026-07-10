@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[p].[Id],
 	[p].[Text]
@@ -10,7 +9,6 @@ WHERE
                   　]%'
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Text]

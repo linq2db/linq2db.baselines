@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[o_1].[StrValue]
 FROM

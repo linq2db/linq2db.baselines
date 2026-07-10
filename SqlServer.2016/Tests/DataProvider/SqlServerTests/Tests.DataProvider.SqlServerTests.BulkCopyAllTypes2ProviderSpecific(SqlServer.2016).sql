@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 DELETE [p]
 FROM
 	[AllTypes2] [p]
@@ -9,7 +8,6 @@ WHERE
 INSERT BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
 -- SqlServer.2016
-
 SELECT
 	[p].[ID],
 	[p].[dateDataType],

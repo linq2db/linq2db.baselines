@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	N'I-' + CAST([x].[PersonID] AS NVarChar(11)),
 	[x].[FirstName]

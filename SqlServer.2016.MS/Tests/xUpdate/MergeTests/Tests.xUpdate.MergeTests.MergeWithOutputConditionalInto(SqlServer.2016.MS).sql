@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#InsertTempTable]
 (
 	[Action]    NVarChar(4000)     NULL,
@@ -9,7 +8,6 @@ CREATE TABLE [tempdb]..[#InsertTempTable]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -115,7 +113,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -221,7 +218,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
@@ -276,7 +272,6 @@ INTO [tempdb]..[#InsertTempTable]
 ;
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Action],
 	[t1].[NewId],
@@ -286,6 +281,5 @@ FROM
 	[tempdb]..[#InsertTempTable] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#InsertTempTable]
 

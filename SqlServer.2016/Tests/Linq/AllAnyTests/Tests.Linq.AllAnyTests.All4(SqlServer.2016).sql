@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	IIF(NOT EXISTS(
 		SELECT

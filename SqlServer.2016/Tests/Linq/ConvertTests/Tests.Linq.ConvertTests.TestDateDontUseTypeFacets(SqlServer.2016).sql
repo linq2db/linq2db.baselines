@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[g_2].[Date_1],
 	COUNT(*)
@@ -14,7 +13,6 @@ GROUP BY
 	[g_2].[Date_1]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[CreatedOnUtc]
 FROM

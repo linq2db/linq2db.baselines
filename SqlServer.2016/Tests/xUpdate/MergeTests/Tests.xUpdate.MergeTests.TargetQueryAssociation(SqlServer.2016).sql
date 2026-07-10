@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -22,7 +21,6 @@ WHEN NOT MATCHED BY SOURCE AND (
 ;
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

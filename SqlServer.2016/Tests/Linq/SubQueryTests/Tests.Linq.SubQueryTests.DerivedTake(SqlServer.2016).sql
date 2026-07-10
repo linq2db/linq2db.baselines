@@ -15,7 +15,6 @@ FROM
 	) [t2]
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

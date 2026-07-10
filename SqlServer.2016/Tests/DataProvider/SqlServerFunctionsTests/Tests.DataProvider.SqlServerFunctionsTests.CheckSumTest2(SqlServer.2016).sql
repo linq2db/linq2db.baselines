@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (1)
 	CHECKSUM([p].[PersonID], [p].[FirstName])
 FROM

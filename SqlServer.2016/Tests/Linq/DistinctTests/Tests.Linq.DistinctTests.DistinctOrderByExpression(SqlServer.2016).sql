@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t1].[MiddleName]
 FROM
@@ -13,7 +12,6 @@ ORDER BY
 	Coalesce([t1].[MiddleName], N'-1')
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

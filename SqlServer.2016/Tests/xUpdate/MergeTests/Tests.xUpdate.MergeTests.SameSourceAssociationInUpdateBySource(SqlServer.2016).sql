@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
@@ -26,7 +25,6 @@ SET
 ;
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

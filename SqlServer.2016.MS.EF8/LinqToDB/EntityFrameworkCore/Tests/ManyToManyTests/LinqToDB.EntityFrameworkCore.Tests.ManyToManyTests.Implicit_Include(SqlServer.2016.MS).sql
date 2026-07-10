@@ -11,7 +11,6 @@ ORDER BY [s].[Id], [t].[CoursesId], [t].[StudentsId]
 
 
 -- SqlServer.2016
-
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -28,7 +27,6 @@ ORDER BY
 
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

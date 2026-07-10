@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SqlServer.2016
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

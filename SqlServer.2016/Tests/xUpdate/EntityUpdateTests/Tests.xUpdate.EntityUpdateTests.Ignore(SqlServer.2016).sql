@@ -18,7 +18,6 @@ WHERE
 	[EntityUpdateTest].[Id] = @Id
 
 -- SqlServer.2016
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Name],

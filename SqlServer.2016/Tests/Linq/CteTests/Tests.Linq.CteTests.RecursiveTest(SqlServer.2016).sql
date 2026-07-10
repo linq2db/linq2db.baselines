@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

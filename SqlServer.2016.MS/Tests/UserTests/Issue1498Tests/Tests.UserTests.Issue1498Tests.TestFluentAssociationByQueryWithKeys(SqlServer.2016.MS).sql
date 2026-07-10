@@ -62,7 +62,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -78,7 +77,6 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],

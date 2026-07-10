@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[a_Parent_1].[ParentID],
 	COUNT(*)
@@ -21,7 +20,6 @@ ORDER BY
 	[a_Parent_1].[ParentID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

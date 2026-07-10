@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 WITH [CTE_1] ([Sample_IntColumn], [RowNum_1], [Sample_Value])
 AS
 (
@@ -18,7 +17,6 @@ WHERE
 	[prev].[Sample_Value] = [query].[Sample_Value]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[IntColumn],
 	[t1].[DateColumn],
