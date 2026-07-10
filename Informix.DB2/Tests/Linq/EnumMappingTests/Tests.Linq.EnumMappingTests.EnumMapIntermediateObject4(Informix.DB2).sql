@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 -- Informix.DB2 Informix
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN Parent d ON d.ParentID = m_1.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	a_Parent.ParentID
 FROM

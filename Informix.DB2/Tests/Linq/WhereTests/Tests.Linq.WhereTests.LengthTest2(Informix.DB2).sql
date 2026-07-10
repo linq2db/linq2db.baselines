@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	nm.FirstName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH(nm.FirstName || '.') <> 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

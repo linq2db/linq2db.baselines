@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 MERGE INTO ComplexPropertyTarget Target
 USING (
 	SELECT 1::Int AS Id, 'alpha-new'::NVarChar(50) AS Code, 't'::BOOLEAN::BOOLEAN AS Nested_Field FROM table(set{1})
@@ -75,7 +74,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Code,

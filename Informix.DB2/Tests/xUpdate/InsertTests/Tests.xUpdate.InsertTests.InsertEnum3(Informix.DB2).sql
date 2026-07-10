@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	t1.ParentID = @id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE

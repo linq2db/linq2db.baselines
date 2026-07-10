@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.PK,
 	p.Id,
@@ -25,7 +24,6 @@ WHERE
 	) > Mdy(1, 1, 2023)
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.PK,
 	p.Id,

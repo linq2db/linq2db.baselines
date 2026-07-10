@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT DISTINCT
 	't'::BOOLEAN,
 	it.SmallIntValue <> 0
@@ -7,7 +6,6 @@ FROM
 	LinqDataTypes it
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	Nvl(SUBSTRING(Nvl(', ' || CASE
 		WHEN x.NullableValue LIKE '%A%' ESCAPE '~' THEN x.NullableValue
@@ -32,7 +31,6 @@ WHERE
 	END, '') FROM 3), '') || '.') <> 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.PK,
 	t1.Id,

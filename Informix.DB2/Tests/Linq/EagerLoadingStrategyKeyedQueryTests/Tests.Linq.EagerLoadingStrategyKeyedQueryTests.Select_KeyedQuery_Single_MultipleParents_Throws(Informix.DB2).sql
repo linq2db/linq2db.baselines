@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT FIRST 2
 	c_1.Id,
 	c_1.Name
@@ -7,7 +6,6 @@ FROM
 	Company c_1
 
 -- Informix.DB2 Informix
-
 SELECT
 	k_1."item",
 	d.Id,

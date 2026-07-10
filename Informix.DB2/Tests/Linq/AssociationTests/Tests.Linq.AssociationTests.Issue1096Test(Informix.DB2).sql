@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT DISTINCT
 	t.Pk,
 	t.Id,

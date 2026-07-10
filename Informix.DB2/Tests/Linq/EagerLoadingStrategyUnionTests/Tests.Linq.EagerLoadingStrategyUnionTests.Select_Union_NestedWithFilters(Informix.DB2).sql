@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH CTE_1 (Id, field)
 AS
 (

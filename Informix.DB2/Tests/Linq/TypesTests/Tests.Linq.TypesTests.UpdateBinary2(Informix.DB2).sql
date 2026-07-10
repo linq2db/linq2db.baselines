@@ -25,7 +25,6 @@ WHERE
 	t.ID = @p
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.ID,
 	t.MoneyValue,

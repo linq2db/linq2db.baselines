@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -32,7 +30,6 @@ WHERE
 	c_1.ChildID = 1001
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE

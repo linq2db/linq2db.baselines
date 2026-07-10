@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	UpdateSubquerySourceTable
 SET
@@ -23,7 +22,6 @@ WHERE
 	UpdateSubquerySourceTable.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.FirstName,

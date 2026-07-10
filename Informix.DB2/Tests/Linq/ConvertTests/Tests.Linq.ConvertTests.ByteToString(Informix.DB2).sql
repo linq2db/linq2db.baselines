@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	To_Char(p.ID::SmallInt)
 FROM

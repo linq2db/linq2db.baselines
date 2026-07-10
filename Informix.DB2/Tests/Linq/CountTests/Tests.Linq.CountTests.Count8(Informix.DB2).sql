@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	a_Parent.ParentID = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	a_Parent.ParentID = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	a_Parent.ParentID
 FROM

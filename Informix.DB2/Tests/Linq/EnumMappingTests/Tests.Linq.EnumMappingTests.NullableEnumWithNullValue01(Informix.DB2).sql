@@ -59,7 +59,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r.IntValue
@@ -71,7 +70,6 @@ ORDER BY
 	r.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.ID,
 	r.IntValue,

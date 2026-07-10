@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.IntValue,
@@ -52,7 +51,6 @@ WHERE
 	r.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.IntValue,

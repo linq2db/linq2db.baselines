@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	c_1.ParentID,
 	c_1.ChildID
@@ -15,7 +14,6 @@ WHERE
 	c_1.ParentID = p_1.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	c_1.ParentID,
 	c_1.ChildID

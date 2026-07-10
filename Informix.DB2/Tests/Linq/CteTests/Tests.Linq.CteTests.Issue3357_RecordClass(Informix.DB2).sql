@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH cte (Id, FirstName, LastName)
 AS
 (

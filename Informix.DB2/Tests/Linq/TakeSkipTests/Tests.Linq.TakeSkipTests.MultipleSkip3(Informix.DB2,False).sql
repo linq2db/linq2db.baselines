@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT SKIP 6
 	t1.Id,
 	t1."Value"

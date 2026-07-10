@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	groupedData_1.Key_1,
 	COUNT(*)

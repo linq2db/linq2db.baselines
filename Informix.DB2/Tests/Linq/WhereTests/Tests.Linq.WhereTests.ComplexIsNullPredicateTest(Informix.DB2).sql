@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r."Value"
@@ -17,7 +16,6 @@ ORDER BY
 	r.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1."Value"

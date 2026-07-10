@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE
 	Person.PersonID > 4
 
 -- Informix.DB2 Informix
-
 UPDATE
 	UpdateSubquerySourceTable
 SET
@@ -30,7 +28,6 @@ WHERE
 	UpdateSubquerySourceTable.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.FirstName,
@@ -41,7 +38,6 @@ ORDER BY
 	t1.Id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Person
 WHERE

@@ -32,7 +32,6 @@ ORDER BY
 	t1.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

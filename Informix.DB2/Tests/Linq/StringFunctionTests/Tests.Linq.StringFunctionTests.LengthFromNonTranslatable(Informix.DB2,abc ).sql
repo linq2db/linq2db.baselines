@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t.Str,
 	CHAR_LENGTH(t.Str || '.') - 1,
@@ -8,7 +7,6 @@ FROM
 	TestLengthModel t
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Str

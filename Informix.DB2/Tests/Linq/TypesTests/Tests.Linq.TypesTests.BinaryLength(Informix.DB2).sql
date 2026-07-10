@@ -10,7 +10,6 @@ WHERE
 	t.ID = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 1
 	Length(t.BinaryValue)
 FROM

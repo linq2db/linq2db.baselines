@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN TestEntity2 t2 ON t1.Id = t2.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Field1,
@@ -23,7 +21,6 @@ WHERE
 	t1.Id IS NULL
 
 -- Informix.DB2 Informix
-
 SELECT
 	NVL(t1.Id, NULL),
 	t1.Field1,

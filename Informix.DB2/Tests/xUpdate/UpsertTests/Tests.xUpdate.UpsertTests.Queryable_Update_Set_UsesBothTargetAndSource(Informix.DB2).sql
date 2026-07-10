@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 MERGE INTO UpsertTest Target
 USING (
 	SELECT
@@ -57,7 +56,6 @@ SET
 	UpdatedBy = Source.UpdatedBy
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Name,

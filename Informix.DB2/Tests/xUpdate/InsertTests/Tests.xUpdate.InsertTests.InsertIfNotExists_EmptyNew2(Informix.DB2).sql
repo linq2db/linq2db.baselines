@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	t1.id = 1
 
 -- Informix.DB2 Informix
-
 INSERT INTO test_insert_or_replace
 (
 	id,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	1
 FROM

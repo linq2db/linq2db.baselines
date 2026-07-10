@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TABLE "Table"
 (
 	ID Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE "Table"
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE "Table"
 

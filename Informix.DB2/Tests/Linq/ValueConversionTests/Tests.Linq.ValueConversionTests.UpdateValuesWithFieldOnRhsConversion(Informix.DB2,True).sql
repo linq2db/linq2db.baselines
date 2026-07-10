@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 UPDATE
 	TableWithConverterValue x
 SET
@@ -11,7 +10,6 @@ WHERE
 	x.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	x.Id,
 	x.NoConversion,
@@ -23,7 +21,6 @@ WHERE
 	x.Id = 1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	x.Id,
 	x.NoConversion,

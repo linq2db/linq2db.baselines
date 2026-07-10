@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	r.Id,
 	r.Value1 = r.Value2,
@@ -82,7 +81,6 @@ WHERE
 	r.Id <> -1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.Id,
 	t1.Value1,

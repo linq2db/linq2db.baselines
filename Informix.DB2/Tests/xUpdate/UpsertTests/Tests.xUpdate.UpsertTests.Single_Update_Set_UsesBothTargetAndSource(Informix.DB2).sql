@@ -27,7 +27,6 @@ WHERE
 	t1.Id = @Id::Int
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.Name,

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -13,7 +12,6 @@ ORDER BY
 	m_1.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.Id,
 	p.Name
@@ -23,7 +21,6 @@ ORDER BY
 	p.Id
 
 -- Informix.DB2 Informix
-
 WITH CTE_1 (Id, field, Name)
 AS
 (

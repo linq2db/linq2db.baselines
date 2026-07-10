@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 CREATE TEMP TABLE TestTable
 (
 	Id      Int NOT NULL,
@@ -9,6 +8,5 @@ CREATE TEMP TABLE TestTable
 )
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS TestTable
 

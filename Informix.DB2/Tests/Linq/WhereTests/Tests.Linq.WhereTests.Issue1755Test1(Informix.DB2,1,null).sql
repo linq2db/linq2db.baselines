@@ -11,7 +11,6 @@ WHERE
 	c_1.ParentID = @id
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

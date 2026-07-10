@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	0::Int,
 	t1.ParentID,
@@ -29,7 +28,6 @@ WHERE
 	p_1.ParentID <> 1
 
 -- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -44,7 +42,6 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1
@@ -52,7 +49,6 @@ FROM
 	Parent t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ParentID,
 	t1.Value1

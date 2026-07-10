@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.ItemId,
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- Informix.DB2 Informix
-
 SELECT
 	i.Id,
 	stock_1.TotalAvailable

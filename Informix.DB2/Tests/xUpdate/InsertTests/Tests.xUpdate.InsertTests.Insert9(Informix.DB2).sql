@@ -1,12 +1,10 @@
 ﻿-- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID > 1000
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	c_1.ParentID = @id
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Child
 WHERE
 	Child.ParentID > 1000
 
 -- Informix.DB2 Informix
-
 DELETE FROM
 	Parent
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	p.PersonID,
 	d.PersonID
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN Doctor d ON p.PersonID = d.PersonID
 
 -- Informix.DB2 Informix
-
 SELECT
 	p.PersonID,
 	d.PersonID

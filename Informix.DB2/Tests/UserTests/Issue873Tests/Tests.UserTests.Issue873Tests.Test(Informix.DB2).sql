@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	' ' || To_Char(Nvl(t1.Value1, 0)),
 	Nvl(t1.SubSum, 0),

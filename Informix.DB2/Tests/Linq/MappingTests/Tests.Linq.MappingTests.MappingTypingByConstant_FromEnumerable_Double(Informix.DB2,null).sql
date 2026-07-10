@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	arg.Id,
 	arg."Value"
@@ -9,7 +8,6 @@ FROM
 			SELECT 1::Int AS Id, NULL::Float AS "Value" FROM table(set{1})) arg ON entity.PersonID = arg.Id
 
 -- Informix.DB2 Informix
-
 SELECT
 	arg.Id,
 	arg."Value"

@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 WITH cte
 (
 	FirstName,
@@ -29,7 +28,6 @@ FROM
 	cte t1
 
 -- Informix.DB2 Informix
-
 SELECT
 	x.FirstName,
 	x.PersonID,

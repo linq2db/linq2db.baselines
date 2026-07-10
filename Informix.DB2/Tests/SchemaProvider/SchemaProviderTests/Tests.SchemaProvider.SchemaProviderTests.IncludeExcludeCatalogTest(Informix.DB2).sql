@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	tabid              as TableID,
 	tabname            as TableName,
@@ -12,7 +11,6 @@ WHERE
 	tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.tabid,
 	x.idxname,
@@ -37,7 +35,6 @@ FROM systables t
 WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 -- Informix.DB2 Informix
-
 SELECT
 	c.tabid     as TableID,
 	c.colname   as Name,
@@ -49,7 +46,6 @@ FROM systables t
 WHERE t.tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.constrid    as ID,
 	tc.constrname as Name,
@@ -99,7 +95,6 @@ FROM
 			JOIN systables  ot ON oc.tabid   = ot.tabid
 
 -- Informix.DB2 Informix
-
 SELECT
 	tabid              as TableID,
 	tabname            as TableName,
@@ -112,7 +107,6 @@ WHERE
 	tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.tabid,
 	x.idxname,
@@ -137,7 +131,6 @@ FROM systables t
 WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 -- Informix.DB2 Informix
-
 SELECT
 	c.tabid     as TableID,
 	c.colname   as Name,
@@ -149,7 +142,6 @@ FROM systables t
 WHERE t.tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.constrid    as ID,
 	tc.constrname as Name,
@@ -199,7 +191,6 @@ FROM
 			JOIN systables  ot ON oc.tabid   = ot.tabid
 
 -- Informix.DB2 Informix
-
 SELECT
 	tabid              as TableID,
 	tabname            as TableName,
@@ -212,7 +203,6 @@ WHERE
 	tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	t.tabid,
 	x.idxname,
@@ -237,7 +227,6 @@ FROM systables t
 WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 -- Informix.DB2 Informix
-
 SELECT
 	c.tabid     as TableID,
 	c.colname   as Name,
@@ -249,7 +238,6 @@ FROM systables t
 WHERE t.tabid >= 100
 
 -- Informix.DB2 Informix
-
 SELECT
 	r.constrid    as ID,
 	tc.constrname as Name,

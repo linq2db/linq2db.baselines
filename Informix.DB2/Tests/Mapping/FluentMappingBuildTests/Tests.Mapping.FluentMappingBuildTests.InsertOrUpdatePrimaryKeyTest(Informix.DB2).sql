@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 
 -- Informix.DB2 Informix
-
 CREATE TABLE IF NOT EXISTS FluentTemp_InsertOrUpdate
 (
 	ID   Int          NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 UPDATE
 	FluentTemp_InsertOrUpdate t1
 SET
@@ -40,6 +37,5 @@ WHERE
 	t1.ID = 1
 
 -- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS FluentTemp_InsertOrUpdate
 

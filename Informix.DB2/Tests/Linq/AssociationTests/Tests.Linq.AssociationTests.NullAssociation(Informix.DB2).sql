@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	a_ParentTest.ParentID,
 	a_ParentTest.Value1

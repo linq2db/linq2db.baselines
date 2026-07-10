@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.Key_1,
 	d.FirstName,
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN Person d ON m_1.Key_1 = d.FirstName
 
 -- Informix.DB2 Informix
-
 SELECT
 	t2.Key_1,
 	t2.Key_1

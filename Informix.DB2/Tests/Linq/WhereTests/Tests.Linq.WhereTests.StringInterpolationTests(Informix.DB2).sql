@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || p.LastName) = ('{}' || p.LastName)
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM

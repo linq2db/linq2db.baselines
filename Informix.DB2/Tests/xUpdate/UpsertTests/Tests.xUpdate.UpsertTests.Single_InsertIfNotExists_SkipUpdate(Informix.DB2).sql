@@ -10,7 +10,6 @@ WHERE
 	t1.Id = @Id::Int
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.Name,
@@ -73,14 +72,12 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	COUNT(*)
 FROM
 	UpsertTest t1
 
 -- Informix.DB2 Informix
-
 SELECT FIRST 2
 	r.Id,
 	r.Name,

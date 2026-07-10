@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	m_1.ParentID,
 	d.ParentID,
@@ -26,7 +25,6 @@ ORDER BY
 	d.ChildID
 
 -- Informix.DB2 Informix
-
 SELECT
 	a.ParentID,
 	a_ParentTest.ParentID

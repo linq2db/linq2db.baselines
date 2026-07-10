@@ -1,9 +1,7 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE AllTypeCreateTest
 
 -- Informix.DB2 Informix
-
 CREATE TABLE AllTypeCreateTest
 (
 	ID               Int                          NOT NULL,
@@ -32,7 +30,6 @@ CREATE TABLE AllTypeCreateTest
 )
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.ID,
 	t1.bigintDataType,
@@ -59,6 +56,5 @@ FROM
 	AllTypeCreateTest t1
 
 -- Informix.DB2 Informix
-
 DROP TABLE AllTypeCreateTest
 

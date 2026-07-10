@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 SELECT
 	x.ID,
 	x.Index_1
@@ -19,7 +18,6 @@ ORDER BY
 	x.ID
 
 -- Informix.DB2 Informix
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

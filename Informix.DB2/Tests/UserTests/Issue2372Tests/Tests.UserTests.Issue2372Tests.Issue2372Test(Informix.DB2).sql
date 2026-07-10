@@ -1,5 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
 DROP TABLE IF EXISTS InventoryResource
 
 -- Informix.DB2 Informix
