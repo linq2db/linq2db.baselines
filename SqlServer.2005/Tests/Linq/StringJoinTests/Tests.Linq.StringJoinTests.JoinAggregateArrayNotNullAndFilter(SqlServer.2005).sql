@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	SUBSTRING(Coalesce(N', ' + CASE
 		WHEN [x].[NullableValue] LIKE N'%A%' ESCAPE N'~' THEN [x].[NullableValue]
@@ -32,7 +31,6 @@ WHERE
 	END, N''), 3, 2147483647) + N'.') <> 1
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

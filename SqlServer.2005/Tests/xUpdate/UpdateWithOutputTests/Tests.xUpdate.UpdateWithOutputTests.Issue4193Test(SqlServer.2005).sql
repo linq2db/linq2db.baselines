@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 UPDATE
 	[a_Salary]
 SET

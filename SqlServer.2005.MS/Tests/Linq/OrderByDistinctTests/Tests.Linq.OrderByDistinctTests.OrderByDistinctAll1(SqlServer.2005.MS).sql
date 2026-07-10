@@ -29,7 +29,6 @@ WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 
 -- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

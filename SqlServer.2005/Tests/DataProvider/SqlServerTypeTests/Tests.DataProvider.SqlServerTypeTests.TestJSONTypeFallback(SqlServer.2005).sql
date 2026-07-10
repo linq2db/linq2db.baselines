@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -10,7 +9,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -21,7 +19,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -48,7 +45,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -59,7 +55,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -81,7 +76,6 @@ INSERT INTO [TypeTable`2]
 SELECT @p1,@p2,@p3
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -92,7 +86,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -100,7 +93,6 @@ FROM
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -111,7 +103,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -119,7 +110,6 @@ FROM
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -130,7 +120,6 @@ WHERE
 	[r].[ColumnNullable] IS NULL
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -139,7 +128,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -148,7 +136,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -175,7 +162,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -184,7 +170,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -206,7 +191,6 @@ INSERT INTO [TypeTable`2]
 SELECT @p1,@p2,@p3
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -215,7 +199,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -223,7 +206,6 @@ FROM
 INSERT BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -232,7 +214,6 @@ FROM
 	[TypeTable`2] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TypeTable`2] [t1]
@@ -240,7 +221,6 @@ FROM
 INSERT ASYNC BULK [TypeTable`2](Id, Column, ColumnNullable)
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

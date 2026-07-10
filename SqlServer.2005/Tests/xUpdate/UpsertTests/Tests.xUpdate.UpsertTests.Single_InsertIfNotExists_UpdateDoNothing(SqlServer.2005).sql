@@ -45,7 +45,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

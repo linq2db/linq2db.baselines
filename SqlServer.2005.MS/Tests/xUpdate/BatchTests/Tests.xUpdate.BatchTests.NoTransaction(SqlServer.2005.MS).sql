@@ -39,7 +39,6 @@ WHERE
 	[p].[ParentID] = @ParentID
 
 -- SqlServer.2005.MS SqlServer.2005
-
 INSERT INTO [Parent]
 (
 	[ParentID],

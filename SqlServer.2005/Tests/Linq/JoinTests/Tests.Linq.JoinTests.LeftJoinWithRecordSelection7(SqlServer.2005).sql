@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id],

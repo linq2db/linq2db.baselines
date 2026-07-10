@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[r_3].[Value_1]
 FROM

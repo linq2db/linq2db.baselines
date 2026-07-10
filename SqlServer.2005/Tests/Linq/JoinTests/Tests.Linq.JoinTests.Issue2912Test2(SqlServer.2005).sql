@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[user_1].[ParentID]
 FROM

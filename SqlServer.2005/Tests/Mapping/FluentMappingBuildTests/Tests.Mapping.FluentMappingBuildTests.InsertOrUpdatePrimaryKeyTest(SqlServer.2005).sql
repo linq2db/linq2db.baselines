@@ -1,10 +1,8 @@
 ﻿-- SqlServer.2005
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 
 -- SqlServer.2005
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp_InsertOrUpdate]
 	(
@@ -32,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 UPDATE
 	[FluentTemp_InsertOrUpdate]
 SET
@@ -58,7 +55,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 IF (OBJECT_ID(N'[FluentTemp_InsertOrUpdate]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp_InsertOrUpdate]
 

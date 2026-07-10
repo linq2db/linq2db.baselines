@@ -1,11 +1,9 @@
 ﻿-- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 -- SqlServer.2005
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -602,7 +600,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -626,7 +623,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

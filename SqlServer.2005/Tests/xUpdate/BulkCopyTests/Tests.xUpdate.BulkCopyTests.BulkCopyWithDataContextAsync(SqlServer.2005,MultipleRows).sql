@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -7,7 +6,6 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 -- SqlServer.2005
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]

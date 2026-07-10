@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -11,7 +10,6 @@ ORDER BY
 	[c_1].[ChildID]
 
 -- SqlServer.2005
-
 SELECT DISTINCT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

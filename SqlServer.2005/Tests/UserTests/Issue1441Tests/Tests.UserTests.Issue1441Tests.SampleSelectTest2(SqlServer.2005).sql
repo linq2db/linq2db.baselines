@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[author].[Id],
 	[author].[Name]

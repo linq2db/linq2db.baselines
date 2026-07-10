@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	CASE
@@ -108,7 +107,6 @@ WHERE
 	[r].[Id] <> -1
 
 -- SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

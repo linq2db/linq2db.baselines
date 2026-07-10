@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[t4].[Id],
 	[t4].[ResourceID],

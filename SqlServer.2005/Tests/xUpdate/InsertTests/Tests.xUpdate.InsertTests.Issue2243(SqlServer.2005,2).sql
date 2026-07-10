@@ -35,7 +35,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
@@ -81,7 +80,6 @@ BEGIN
 END
 
 -- SqlServer.2005
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],

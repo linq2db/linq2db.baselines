@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2005
-
 SELECT
 	[e].[Id],
 	[e].[AOnly],

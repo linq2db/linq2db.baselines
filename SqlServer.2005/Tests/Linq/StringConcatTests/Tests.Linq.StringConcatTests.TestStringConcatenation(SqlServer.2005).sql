@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[r].[Id],
 	N'Element ' + Coalesce([r].[VarCharTextNullable], '') + N' Text1',

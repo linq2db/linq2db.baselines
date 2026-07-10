@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005
-
 SELECT
 	[d].[Id],
 	[d].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[k_1].[item],
 	[d].[Id],
@@ -28,7 +26,6 @@ ORDER BY
 	[d].[Id]
 
 -- SqlServer.2005
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

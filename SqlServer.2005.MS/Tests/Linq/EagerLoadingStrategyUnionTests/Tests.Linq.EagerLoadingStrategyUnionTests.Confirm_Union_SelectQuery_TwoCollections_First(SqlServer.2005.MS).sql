@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-
 WITH [CTE_1]
 (
 	[Detail_Id],
