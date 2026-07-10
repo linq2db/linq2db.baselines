@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`FirstName`
 FROM
@@ -11,7 +10,6 @@ FROM
 	`Person` `p_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CONCAT(`p`.`FirstName`, '/', `p`.`LastName`)
 FROM

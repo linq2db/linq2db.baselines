@@ -50,7 +50,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -62,7 +61,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`

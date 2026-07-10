@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -16,7 +15,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,
@@ -28,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -45,7 +42,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,

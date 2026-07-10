@@ -169,7 +169,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 UPDATE
 	`Parent` `x`
 SET
@@ -180,7 +179,6 @@ ORDER BY
 	`x`.`ParentID` DESC
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Value1`
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`a_Bottom`.`ParentID`,
 	`a_Bottom`.`ChildID`,

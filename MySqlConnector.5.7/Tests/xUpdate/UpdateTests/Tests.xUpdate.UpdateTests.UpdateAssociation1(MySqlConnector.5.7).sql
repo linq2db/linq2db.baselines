@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Child`
 (
 	`ChildID`,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 UPDATE
 	`Parent` `a_Parent`,
 	`Child` `child_1`

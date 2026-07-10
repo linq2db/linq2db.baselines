@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p1`.`ParentID`,
 	`p1`.`Value1`
@@ -17,7 +16,6 @@ WHERE
 	`p2`.`ParentID` <= 3
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

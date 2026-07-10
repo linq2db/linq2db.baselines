@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`CollatedTable`
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	LOCATE('stst', Lower(`r`.`CaseSensitive`)) > 0
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	LOCATE('stst', Lower(`r`.`CaseInsensitive`)) > 0
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	LOCATE('stst', Lower(`r`.`CaseSensitive`)) > 0
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM

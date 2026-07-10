@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`d`.`Id`
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,
@@ -26,7 +24,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

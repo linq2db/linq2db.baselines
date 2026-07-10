@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`TableWithIdentity` `t1`
 SET
@@ -20,7 +19,6 @@ SET
 	`t1`.`Value` = 123
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

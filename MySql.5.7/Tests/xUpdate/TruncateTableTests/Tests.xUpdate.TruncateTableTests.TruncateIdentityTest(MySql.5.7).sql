@@ -1,9 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE IF EXISTS `TestIdTrun`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 CREATE TABLE `TestIdTrun`
 (
 	`ID`     INT             AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `TestIdTrun`
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -48,11 +44,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 TRUNCATE TABLE `TestIdTrun`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -63,7 +57,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -87,6 +80,5 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE `TestIdTrun`
 

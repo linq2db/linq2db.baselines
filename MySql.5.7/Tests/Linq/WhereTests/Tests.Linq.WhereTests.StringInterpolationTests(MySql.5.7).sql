@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	(CONCAT('{}', `p`.`LastName`)) = (CONCAT('{}', `p`.`LastName`))
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM

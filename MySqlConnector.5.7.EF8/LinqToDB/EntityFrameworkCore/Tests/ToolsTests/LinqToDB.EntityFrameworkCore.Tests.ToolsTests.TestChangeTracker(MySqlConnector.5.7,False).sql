@@ -1,7 +1,6 @@
 ﻿
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ProductId`,
 	`m_1`.`OrderId`,
@@ -26,7 +25,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -56,7 +54,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

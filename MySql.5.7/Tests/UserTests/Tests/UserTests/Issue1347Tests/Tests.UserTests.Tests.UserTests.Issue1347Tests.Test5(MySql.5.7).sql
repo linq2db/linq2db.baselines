@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t3`.`Id`,
 	`t3`.`ResourceID`,

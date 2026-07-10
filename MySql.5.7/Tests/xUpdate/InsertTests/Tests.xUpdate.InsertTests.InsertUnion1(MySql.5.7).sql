@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -7,7 +6,6 @@ WHERE
 	`Parent`.`ParentID` > 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Parent`
 (
 	`ParentID`,
@@ -32,7 +30,6 @@ FROM
 	) `t1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +38,6 @@ WHERE
 	`c_1`.`ParentID` > 1000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`

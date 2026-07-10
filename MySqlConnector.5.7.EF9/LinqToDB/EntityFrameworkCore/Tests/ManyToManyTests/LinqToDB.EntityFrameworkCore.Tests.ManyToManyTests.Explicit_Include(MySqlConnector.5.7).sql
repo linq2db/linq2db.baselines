@@ -11,7 +11,6 @@ ORDER BY `o`.`Id`, `s`.`OrderId`, `s`.`ProductId`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -28,7 +27,6 @@ ORDER BY
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Number`

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`k_1`.`ID`,
 	`k_1`.`NAME`,

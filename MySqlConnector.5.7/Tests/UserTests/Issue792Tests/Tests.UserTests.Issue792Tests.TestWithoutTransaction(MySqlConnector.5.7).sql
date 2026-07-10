@@ -1,24 +1,20 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
 	`AllTypes` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT
 FROM INFORMATION_SCHEMA.routines
 WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER
 FROM INFORMATION_SCHEMA.parameters
 WHERE SPECIFIC_SCHEMA = database()
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 `testdataconnector`.`AddIssue792Record`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -249,14 +245,12 @@ SET     @param1 = NULL
 
 RollbackTransaction
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
 	`AllTypes` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`AllTypes`

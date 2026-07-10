@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN `Parent` `d` ON `d`.`ParentID` = `m_1`.`ParentID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`a_Parent`.`ParentID`
 FROM

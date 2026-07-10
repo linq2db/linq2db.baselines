@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
@@ -9,7 +8,6 @@ WHERE
 	`p`.`Value1` IS NULL OR `p`.`Value1` <> 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

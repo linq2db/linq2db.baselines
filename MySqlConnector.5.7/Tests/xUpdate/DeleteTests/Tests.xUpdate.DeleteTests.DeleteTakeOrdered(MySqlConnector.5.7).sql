@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -190,7 +189,6 @@ ORDER BY
 LIMIT @take
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Value1`
 FROM
@@ -201,7 +199,6 @@ ORDER BY
 	`r`.`ParentID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`

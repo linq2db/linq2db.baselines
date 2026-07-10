@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -26,7 +25,6 @@ ORDER BY
 	`d`.`ChildID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`a`.`ParentID`,
 	`a_ParentTest`.`ParentID`

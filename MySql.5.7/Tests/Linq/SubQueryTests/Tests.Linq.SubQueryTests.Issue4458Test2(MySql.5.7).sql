@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`ItemId`,
@@ -19,7 +18,6 @@ WHERE
 	)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`i`.`Id`,
 	`stock_1`.`TotalAvailable`

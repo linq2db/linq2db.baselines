@@ -9,7 +9,6 @@ ORDER BY `t`.`Label`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Label`
 FROM

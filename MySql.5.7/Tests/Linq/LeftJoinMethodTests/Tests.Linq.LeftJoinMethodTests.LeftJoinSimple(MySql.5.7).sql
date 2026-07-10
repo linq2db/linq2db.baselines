@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`Name`,
 	`o`.`Name`
@@ -8,7 +7,6 @@ FROM
 		LEFT JOIN `Order` `o` ON `c_1`.`Id` = `o`.`CustomerId`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -16,7 +14,6 @@ FROM
 	`Customer` `t1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`CustomerId`,

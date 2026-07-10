@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CASE
 		WHEN `p`.`Value1` IS NOT NULL THEN `p`.`Value1`

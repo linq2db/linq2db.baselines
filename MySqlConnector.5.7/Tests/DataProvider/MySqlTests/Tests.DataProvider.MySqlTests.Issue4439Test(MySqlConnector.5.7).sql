@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 (
 	`IDX`   INT         AUTO_INCREMENT NOT NULL,
@@ -22,7 +21,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -40,7 +38,6 @@ VALUES
 
 RollbackTransaction
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

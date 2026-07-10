@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `MultipleRowsTable`
 (
 	`Id`,
@@ -11,7 +10,6 @@ VALUES
 (2,1.5,-2.6)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`DecimalValue1`,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CONCAT(Coalesce(`t`.`Value1`, ''), `t`.`Value2`, `t`.`Value3`)
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`t`.`ID`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value1`,

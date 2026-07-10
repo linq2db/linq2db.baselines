@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`g_2`.`ID1`,
 	`g_2`.`ID2` + 1,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -9,7 +8,6 @@ WHERE
 	`t`.`Value` IS NULL
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -19,7 +17,6 @@ WHERE
 	1 = 0
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`
@@ -29,7 +26,6 @@ WHERE
 	`t`.`Value` IS NOT NULL
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t`.`Id`,
 	`t`.`Value`

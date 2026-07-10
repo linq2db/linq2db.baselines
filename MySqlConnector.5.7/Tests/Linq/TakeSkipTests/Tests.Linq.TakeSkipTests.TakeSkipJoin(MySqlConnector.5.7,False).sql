@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,
@@ -13,7 +12,6 @@ FROM
 	`LinqDataTypes` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`e`.`ID`,
 	`p`.`SmallIntValue`

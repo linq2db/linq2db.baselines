@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -17,7 +16,6 @@ WHERE
 	`d`.`ParentID` IN (2)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM
@@ -26,7 +24,6 @@ WHERE
 	`x`.`ParentID` IN (2)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -44,7 +41,6 @@ WHERE
 	`d`.`ParentID` IN (3)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -35,7 +34,6 @@ WHERE
 	`t1`.`ParentID` = @id AND `t1`.`Value1` = @Value1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`Parent`

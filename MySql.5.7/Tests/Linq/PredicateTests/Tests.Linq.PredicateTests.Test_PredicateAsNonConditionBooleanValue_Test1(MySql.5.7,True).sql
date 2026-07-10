@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Value1` = `r`.`Value2`,
@@ -82,7 +81,6 @@ WHERE
 	`r`.`Id` <> -1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value1`,

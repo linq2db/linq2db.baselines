@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT /*+ JOIN_PREFIX(p) JOIN_PREFIX(c_1) */
 	`p`.`ParentID`,
 	`p`.`Value1`

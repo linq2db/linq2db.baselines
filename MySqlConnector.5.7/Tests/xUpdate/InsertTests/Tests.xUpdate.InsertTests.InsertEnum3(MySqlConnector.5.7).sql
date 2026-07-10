@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`
@@ -33,7 +32,6 @@ WHERE
 	`t1`.`ParentID` = @id
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`Parent`

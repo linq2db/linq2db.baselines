@@ -12,7 +12,6 @@ ORDER BY `i`.`Id`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`c_1`.`Id`
 FROM

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`a_Table2`.`ID`,
 	`a_Table2`.`ID3`,

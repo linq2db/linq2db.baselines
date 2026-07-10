@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t2`.`ParentID`,
 	`t2`.`ChildID`
@@ -29,7 +28,6 @@ FROM
 	) `t4`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
@@ -51,7 +49,6 @@ FROM
 	) `t3`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t5`.`ParentID`,
 	`t5`.`ChildID`

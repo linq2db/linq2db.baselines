@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DELETE  
 FROM
 	`CollatedTable`
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	Lower(`r`.`CaseSensitive`) LIKE '%ststring' ESCAPE '~'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	Lower(`r`.`CaseInsensitive`) LIKE '%ststring' ESCAPE '~'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	Lower(`r`.`CaseSensitive`) LIKE '%ststring' ESCAPE '~'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,17 +1,13 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('1' as char)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('1' as char)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('1' as char(1))
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('1' as char(1))
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

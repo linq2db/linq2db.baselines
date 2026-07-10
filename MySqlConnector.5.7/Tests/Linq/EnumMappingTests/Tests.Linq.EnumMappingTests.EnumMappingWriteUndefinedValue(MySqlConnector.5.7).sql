@@ -9,7 +9,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`BigIntValue`

@@ -1,9 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -49,7 +47,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -59,7 +56,6 @@ FROM
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
@@ -101,7 +97,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -111,7 +106,6 @@ FROM
 LIMIT 2
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
@@ -159,7 +153,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,

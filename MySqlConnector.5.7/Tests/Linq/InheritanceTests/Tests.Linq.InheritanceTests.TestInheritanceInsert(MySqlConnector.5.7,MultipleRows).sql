@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `InheritanceFilter`
 (
 	`Id`,
@@ -20,7 +19,6 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Code`,
 	`t1`.`Id`,

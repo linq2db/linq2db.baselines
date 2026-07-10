@@ -43,7 +43,6 @@ ON DUPLICATE KEY UPDATE
 	`UpdatedBy` = @UpdatedBy
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,
@@ -103,7 +102,6 @@ ON DUPLICATE KEY UPDATE
 	`UpdatedBy` = @UpdatedBy
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,
@@ -161,7 +159,6 @@ ON DUPLICATE KEY UPDATE
 	`UpdatedBy` = @UpdatedBy
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,
