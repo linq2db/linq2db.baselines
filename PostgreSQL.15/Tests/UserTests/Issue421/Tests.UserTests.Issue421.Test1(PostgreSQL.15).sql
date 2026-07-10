@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -38,7 +37,6 @@ WHERE
 	"BlobClass"."Id" = 1
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

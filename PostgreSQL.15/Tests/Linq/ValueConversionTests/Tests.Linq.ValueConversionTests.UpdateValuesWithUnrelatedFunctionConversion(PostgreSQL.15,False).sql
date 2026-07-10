@@ -15,7 +15,6 @@ WHERE
 	"TableWithConverterValue"."Id" = 1
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."NoConversion",

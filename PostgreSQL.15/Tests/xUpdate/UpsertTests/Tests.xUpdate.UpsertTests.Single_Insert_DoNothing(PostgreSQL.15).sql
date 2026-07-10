@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(2,'ignored',1,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -26,14 +25,12 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" t1
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -49,7 +46,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(1,'updated',2,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -76,7 +72,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

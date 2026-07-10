@@ -13,7 +13,6 @@ WHERE
 	(Coalesce(e."StringValue", '') || '1') = :p
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

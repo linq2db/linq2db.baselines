@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"
@@ -10,7 +9,6 @@ ORDER BY
 OFFSET 3 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value"

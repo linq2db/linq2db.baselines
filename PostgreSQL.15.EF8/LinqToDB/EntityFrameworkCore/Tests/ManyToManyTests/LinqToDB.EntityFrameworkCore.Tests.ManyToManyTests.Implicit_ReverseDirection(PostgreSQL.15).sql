@@ -9,7 +9,6 @@ ORDER BY c."Id"
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	c_1."Id"
 FROM

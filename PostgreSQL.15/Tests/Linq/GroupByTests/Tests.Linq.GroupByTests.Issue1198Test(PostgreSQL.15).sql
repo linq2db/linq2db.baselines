@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*) FILTER (WHERE t."Status" = 3)
 FROM

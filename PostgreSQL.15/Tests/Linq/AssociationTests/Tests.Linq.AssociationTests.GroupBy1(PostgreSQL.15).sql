@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT DISTINCT
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"

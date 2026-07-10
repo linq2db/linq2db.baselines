@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"Detail_Id",

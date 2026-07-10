@@ -14,7 +14,6 @@ WHERE
 	ct.id = 'TestProcessService' AND component_categories.id = ctg.id
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x.id,
 	x.service_id,
@@ -25,7 +24,6 @@ WHERE
 	x.is_deleted AND x.service_id = 'TestProcessService'
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x.id,
 	x.service_id,

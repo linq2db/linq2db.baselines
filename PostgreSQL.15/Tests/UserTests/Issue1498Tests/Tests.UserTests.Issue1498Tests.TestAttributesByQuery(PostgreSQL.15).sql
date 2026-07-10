@@ -20,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id"
@@ -37,7 +36,6 @@ FROM
 		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x."Id",
 	x."Title",

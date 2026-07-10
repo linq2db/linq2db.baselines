@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "MyChildClass" "Target"
 USING (VALUES
 	(1,10), (2,20), (3,30), (4,40)

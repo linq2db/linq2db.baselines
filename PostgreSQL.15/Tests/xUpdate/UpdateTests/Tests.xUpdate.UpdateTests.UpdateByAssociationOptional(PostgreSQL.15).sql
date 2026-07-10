@@ -13,7 +13,6 @@ WHERE
 	t1."Id" = :id AND "a_AssociatedOptional"."Id" = "MainTable"."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field"

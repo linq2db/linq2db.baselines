@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +30,6 @@ WHERE
 	r."Value4" IS NULL AND r."Value5" IS NULL
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -65,7 +63,6 @@ WHERE
 	r."Value4" IS NULL AND r."Value5" IS NULL
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -98,7 +95,6 @@ WHERE
 	) = (r."Value5" + :cnt))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -131,7 +127,6 @@ WHERE
 	) = (r."Value5" + :cnt))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -164,7 +159,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -197,7 +191,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -234,7 +227,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -271,7 +263,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -305,7 +296,6 @@ WHERE
 	r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -339,7 +329,6 @@ WHERE
 	r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -376,7 +365,6 @@ WHERE
 	END
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -413,7 +401,6 @@ WHERE
 	END
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -446,7 +433,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NULL))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -479,7 +465,6 @@ WHERE
 	) = (r."Value5" + :cnt)) OR r."Value4" IS NULL AND r."Value5" IS NOT NULL OR r."Value4" IS NOT NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NULL))
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -516,7 +501,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -553,7 +537,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -586,7 +569,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -619,7 +601,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -652,7 +633,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -685,7 +665,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -718,7 +697,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -751,7 +729,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -784,7 +761,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -817,7 +793,6 @@ WHERE
 	) + r."Value5")
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -854,7 +829,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -891,7 +865,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -928,7 +901,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -965,7 +937,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1002,7 +973,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1039,7 +1009,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1076,7 +1045,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",
@@ -1113,7 +1081,6 @@ WHERE
 	END)
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value1",

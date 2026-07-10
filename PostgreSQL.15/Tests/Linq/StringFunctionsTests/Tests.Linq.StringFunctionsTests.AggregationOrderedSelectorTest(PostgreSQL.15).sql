@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value3" NULLS FIRST, g_1."Value1" DESC NULLS FIRST)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE temp_table_1
 (
 	"ID"    Int  NOT NULL,
@@ -9,7 +8,6 @@ CREATE TABLE temp_table_1
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO temp_table_1
 (
 	"ID",
@@ -19,7 +17,6 @@ VALUES
 (1,'Value')
 
 -- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE temp_table_2
 (
 	"Value" text NOT NULL,
@@ -28,7 +25,6 @@ CREATE TABLE temp_table_2
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO temp_table_2
 (
 	"Value"
@@ -48,10 +44,8 @@ FROM
 		) t1 ON 1=1
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS temp_table_1
 

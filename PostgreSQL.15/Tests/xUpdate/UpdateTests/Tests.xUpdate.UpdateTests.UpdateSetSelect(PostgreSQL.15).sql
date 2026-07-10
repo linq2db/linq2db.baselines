@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Parent" t1
 WHERE
 	t1."ParentID" > 1000
 
 -- PostgreSQL.15 PostgreSQL12
-
 UPDATE
 	"Parent"
 SET

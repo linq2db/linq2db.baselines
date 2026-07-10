@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	(
@@ -14,7 +13,6 @@ FROM
 	"Parent" t
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	(

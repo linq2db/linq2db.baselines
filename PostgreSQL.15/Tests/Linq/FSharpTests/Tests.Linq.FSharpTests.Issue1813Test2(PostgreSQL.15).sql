@@ -50,7 +50,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -62,7 +61,6 @@ ORDER BY
 	m_1."Id"
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	after_1."Id",
 	after_1."Name"

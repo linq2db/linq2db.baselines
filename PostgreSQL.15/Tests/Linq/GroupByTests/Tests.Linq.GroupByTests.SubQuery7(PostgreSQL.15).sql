@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 SELECT DISTINCT
 	c_1."ChildID"
 FROM

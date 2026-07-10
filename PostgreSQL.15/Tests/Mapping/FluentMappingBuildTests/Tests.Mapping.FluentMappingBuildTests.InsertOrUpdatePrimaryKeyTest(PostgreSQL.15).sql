@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS "FluentTemp_InsertOrUpdate"
 
 -- PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE IF NOT EXISTS "FluentTemp_InsertOrUpdate"
 (
 	"ID"   Int  NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "FluentTemp_InsertOrUpdate" AS t1
 (
 	"ID",
@@ -46,6 +43,5 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"Name" = t1."Name"
 
 -- PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS "FluentTemp_InsertOrUpdate"
 
