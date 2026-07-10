@@ -4,7 +4,6 @@ INNER JOIN [Order Details] AS [o] ON [p].[ProductID] = [o].[ProductID]
 
 
 -- SqlServer.2025
-
 SELECT
 	[p].[IsDeleted],
 	[p].[ProductID],
@@ -43,7 +42,6 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([p].[IsDeleted] <> CAST(1 AS bit)
 
 
 -- SqlServer.2025
-
 SELECT
 	[p].[IsDeleted],
 	[p].[ProductID],

@@ -1,7 +1,6 @@
 ﻿
 
 -- SqlServer.2025
-
 SELECT
 	[m_1].[Id],
 	[d_1].[Key_1],
@@ -27,7 +26,6 @@ FROM
 
 
 -- SqlServer.2025
-
 SELECT
 	[c_1].[Id]
 FROM

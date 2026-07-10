@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 INSERT INTO [Issue4717Address]
 (
 	[Id],
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 INSERT INTO [Issue4717Warehouse]
 (
 	[Id],
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 INSERT INTO [Issue4717UnitOfMeasure]
 (
 	[Id],

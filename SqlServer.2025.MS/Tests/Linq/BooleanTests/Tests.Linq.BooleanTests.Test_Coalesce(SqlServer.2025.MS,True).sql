@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -16,7 +15,6 @@ WHERE
 	Coalesce([r].[BooleanN], 1) = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -31,7 +29,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -48,7 +45,6 @@ WHERE
 	Coalesce([r].[BooleanN], 0) = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],
@@ -63,7 +59,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Boolean],
@@ -80,7 +75,6 @@ WHERE
 	Coalesce([r].[BooleanN], IIF([r].[Id] % 2 = 1, 1, 0)) = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Boolean],

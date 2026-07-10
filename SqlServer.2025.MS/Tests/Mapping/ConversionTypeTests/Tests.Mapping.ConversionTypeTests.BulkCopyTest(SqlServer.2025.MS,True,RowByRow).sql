@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -22,7 +20,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[ID],
 	[r].[Data]

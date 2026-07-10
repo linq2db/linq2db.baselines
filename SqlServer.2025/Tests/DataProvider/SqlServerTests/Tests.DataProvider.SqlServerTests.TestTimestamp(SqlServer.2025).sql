@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2025
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.2025
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.2025

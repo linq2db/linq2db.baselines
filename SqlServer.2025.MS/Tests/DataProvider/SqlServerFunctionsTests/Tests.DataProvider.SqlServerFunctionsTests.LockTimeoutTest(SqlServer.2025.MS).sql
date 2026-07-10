@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SET LOCK_TIMEOUT 1000
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	@@LOCK_TIMEOUT
 

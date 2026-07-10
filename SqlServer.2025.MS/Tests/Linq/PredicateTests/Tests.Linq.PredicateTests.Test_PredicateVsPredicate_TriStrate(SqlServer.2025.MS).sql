@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -16,7 +15,6 @@ WHERE
 	END
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -27,7 +25,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -57,7 +54,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -68,7 +64,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -90,7 +85,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -101,7 +95,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -140,7 +133,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -151,7 +143,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -164,7 +155,6 @@ WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) = IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -175,7 +165,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -188,7 +177,6 @@ WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) <> IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -199,7 +187,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -229,7 +216,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -240,7 +226,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -279,7 +264,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -290,7 +274,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -307,7 +290,6 @@ WHERE
 	END
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -318,7 +300,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -335,7 +316,6 @@ WHERE
 	END
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -346,7 +326,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -368,7 +347,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -379,7 +357,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -401,7 +378,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -412,7 +388,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -425,7 +400,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -436,7 +410,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -449,7 +422,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -460,7 +432,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -477,7 +448,6 @@ WHERE
 	END
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -488,7 +458,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -510,7 +479,6 @@ WHERE
 	END IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

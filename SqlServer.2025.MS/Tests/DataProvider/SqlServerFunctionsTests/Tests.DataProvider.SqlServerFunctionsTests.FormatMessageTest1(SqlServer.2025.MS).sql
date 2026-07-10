@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	FORMATMESSAGE(20009, N'ABC', N'CBA')
 

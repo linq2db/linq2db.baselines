@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t].[Vector],
 	VECTOR_NORM([t].[Vector], 'norm1'),

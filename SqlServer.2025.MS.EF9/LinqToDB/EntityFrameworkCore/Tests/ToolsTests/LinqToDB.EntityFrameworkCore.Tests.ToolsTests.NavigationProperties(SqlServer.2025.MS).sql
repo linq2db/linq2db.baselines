@@ -25,7 +25,6 @@ ORDER BY [o].[OrderID], [o1].[OrderID], [o1].[ProductID], [p0].[ProductID], [o3]
 
 
 -- SqlServer.2025
-
 SELECT
 	[m_1].[ProductId],
 	[d].[OrderID],
@@ -47,7 +46,6 @@ FROM
 
 
 -- SqlServer.2025
-
 SELECT
 	[a_Product].[ProductID],
 	[od].[OrderID],

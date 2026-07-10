@@ -20,7 +20,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
@@ -45,7 +44,6 @@ WHERE
 	[ValuesTable].[Id] = @Id
 
 -- SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],

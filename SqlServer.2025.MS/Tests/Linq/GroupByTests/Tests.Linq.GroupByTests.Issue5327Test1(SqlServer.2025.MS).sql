@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[c_1].[Key]
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	SUM([c_1].[Value]) DESC
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Key],

@@ -74,7 +74,6 @@ WHERE
 	)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM
@@ -83,7 +82,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DELETE [c_1]
 FROM
 	[Parent] [c_1]

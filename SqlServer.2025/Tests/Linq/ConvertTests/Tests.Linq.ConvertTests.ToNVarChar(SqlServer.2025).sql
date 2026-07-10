@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	CAST([t].[MoneyValue] AS NVarChar(20))
 FROM

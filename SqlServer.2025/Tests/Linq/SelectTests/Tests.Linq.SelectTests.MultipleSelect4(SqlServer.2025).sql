@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[p3].[PersonID],
 	[p3].[FirstName]

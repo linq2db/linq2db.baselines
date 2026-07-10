@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[e].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 MERGE INTO [UpsertTest] [Target]
 USING (
 	SELECT
@@ -58,7 +57,6 @@ SET
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

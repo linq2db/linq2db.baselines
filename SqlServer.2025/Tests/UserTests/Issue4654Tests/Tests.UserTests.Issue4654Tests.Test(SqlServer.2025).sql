@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	CAST([c_1].[Id] AS NVarChar(11)),
 	[c_1].[Name]

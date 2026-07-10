@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t].[Id],
 	LEAD([t].[IntValue], 2) OVER (ORDER BY [t].[Id])

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	IIF(NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	), 1, 0)
 
 -- SqlServer.2025
-
 SELECT
 	IIF(NOT EXISTS(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT TOP (1)
 	[t1].[file_id],
 	[t1].[file_guid],

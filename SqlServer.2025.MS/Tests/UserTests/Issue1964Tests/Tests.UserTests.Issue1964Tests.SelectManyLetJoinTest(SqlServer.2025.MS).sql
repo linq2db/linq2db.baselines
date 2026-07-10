@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[m_1].[BranchAddress],
 	[m_1].[BranchId],

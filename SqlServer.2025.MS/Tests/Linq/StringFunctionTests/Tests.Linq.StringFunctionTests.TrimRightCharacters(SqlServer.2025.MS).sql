@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[pp].[PersonID],
 	N'  ' || [pp].[FirstName] || N' '

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
@@ -20,7 +18,6 @@ FROM
 	[TestBool] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 UPDATE
 	[TestBool]
 SET
@@ -31,7 +28,6 @@ SET
 	END
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +35,6 @@ FROM
 	[TestBool] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 UPDATE
 	[TestBool]
 SET
@@ -48,7 +43,6 @@ WHERE
 	[TestBool].[Id] = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

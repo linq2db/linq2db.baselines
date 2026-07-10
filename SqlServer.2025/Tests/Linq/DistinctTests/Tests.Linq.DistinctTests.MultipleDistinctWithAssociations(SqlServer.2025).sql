@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT DISTINCT
 	[p].[ParentID],
 	[p].[Value1]
@@ -17,7 +16,6 @@ ORDER BY
 	[p].[ParentID]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -25,7 +23,6 @@ FROM
 	[Parent] [t1]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

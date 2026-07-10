@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -240,7 +238,6 @@ VALUES
 ;
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

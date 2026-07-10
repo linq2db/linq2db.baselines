@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -12,7 +11,6 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -38,7 +36,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -49,7 +46,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -62,7 +58,6 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -88,7 +83,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -99,7 +93,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -112,7 +105,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -123,7 +115,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -136,7 +127,6 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -162,7 +152,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -173,7 +162,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -186,7 +174,6 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -212,7 +199,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -223,7 +209,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -236,7 +221,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -247,7 +231,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -260,7 +243,6 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -286,7 +268,6 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -297,7 +278,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -311,7 +291,6 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -337,7 +316,6 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -348,7 +326,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -361,7 +338,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -372,7 +348,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -385,7 +360,6 @@ WHERE
 	[r].[Value1] <> [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -411,7 +385,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -422,7 +395,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -435,7 +407,6 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -461,7 +432,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -472,7 +442,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -483,7 +452,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -494,7 +462,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -507,7 +474,6 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -533,7 +499,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -544,7 +509,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -557,7 +521,6 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -583,7 +546,6 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -594,7 +556,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -605,7 +566,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -616,7 +576,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -630,7 +589,6 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -656,7 +614,6 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -667,7 +624,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -680,7 +636,6 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -706,7 +661,6 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -717,7 +671,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -728,7 +681,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -739,7 +691,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -752,7 +703,6 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -778,7 +728,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -789,7 +738,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -802,7 +750,6 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -828,7 +775,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -839,7 +785,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -852,7 +797,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -863,7 +807,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -876,7 +819,6 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -902,7 +844,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -913,7 +854,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -926,7 +866,6 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -952,7 +891,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -963,7 +901,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -976,7 +913,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -987,7 +923,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1000,7 +935,6 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1026,7 +960,6 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1037,7 +970,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1051,7 +983,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1077,7 +1008,6 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1088,7 +1018,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1101,7 +1030,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1112,7 +1040,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1125,7 +1052,6 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1151,7 +1077,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1162,7 +1087,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1175,7 +1099,6 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1201,7 +1124,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1212,7 +1134,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1223,7 +1144,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1234,7 +1154,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1247,7 +1166,6 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1273,7 +1191,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1284,7 +1201,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1297,7 +1213,6 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1323,7 +1238,6 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1334,7 +1248,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1345,7 +1258,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1356,7 +1268,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1370,7 +1281,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1396,7 +1306,6 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1407,7 +1316,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1420,7 +1328,6 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1446,7 +1353,6 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1457,7 +1363,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1468,7 +1373,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1479,7 +1383,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1492,7 +1395,6 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1518,7 +1420,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1529,7 +1430,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1542,7 +1442,6 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1568,7 +1467,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1579,7 +1477,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1592,7 +1489,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1603,7 +1499,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1616,7 +1511,6 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1642,7 +1536,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1653,7 +1546,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1666,7 +1558,6 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1692,7 +1583,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1703,7 +1593,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1716,7 +1605,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1727,7 +1615,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1740,7 +1627,6 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1766,7 +1652,6 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1777,7 +1662,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1791,7 +1675,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1817,7 +1700,6 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1828,7 +1710,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1841,7 +1722,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1852,7 +1732,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1865,7 +1744,6 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1891,7 +1769,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1902,7 +1779,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1915,7 +1791,6 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1941,7 +1816,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1952,7 +1826,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1963,7 +1836,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -1974,7 +1846,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -1987,7 +1858,6 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2013,7 +1883,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2024,7 +1893,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2037,7 +1905,6 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2063,7 +1930,6 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2074,7 +1940,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2085,7 +1950,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2096,7 +1960,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2110,7 +1973,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2136,7 +1998,6 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2147,7 +2008,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2160,7 +2020,6 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2186,7 +2045,6 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2197,7 +2055,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2208,7 +2065,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2219,7 +2075,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2232,7 +2087,6 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2258,7 +2112,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2269,7 +2122,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2282,7 +2134,6 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2308,7 +2159,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2319,7 +2169,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2332,7 +2181,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2343,7 +2191,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2356,7 +2203,6 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2382,7 +2228,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2393,7 +2238,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2406,7 +2250,6 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2432,7 +2275,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2443,7 +2285,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2456,7 +2297,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2467,7 +2307,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2480,7 +2319,6 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2506,7 +2344,6 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2517,7 +2354,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2531,7 +2367,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2557,7 +2392,6 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2568,7 +2402,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2581,7 +2414,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2592,7 +2424,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2605,7 +2436,6 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2631,7 +2461,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2642,7 +2471,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2655,7 +2483,6 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2681,7 +2508,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2692,7 +2518,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2703,7 +2528,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2714,7 +2538,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2727,7 +2550,6 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2753,7 +2575,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2764,7 +2585,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2777,7 +2597,6 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2803,7 +2622,6 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2814,7 +2632,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2825,7 +2642,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2836,7 +2652,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2850,7 +2665,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2876,7 +2690,6 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2887,7 +2700,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2900,7 +2712,6 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2926,7 +2737,6 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2937,7 +2747,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2948,7 +2757,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2959,7 +2767,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -2972,7 +2779,6 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -2998,7 +2804,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3009,7 +2814,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3022,7 +2826,6 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3048,7 +2851,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3059,7 +2861,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3072,7 +2873,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3083,7 +2883,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3096,7 +2895,6 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3122,7 +2920,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3133,7 +2930,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3146,7 +2942,6 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3172,7 +2967,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3183,7 +2977,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3196,7 +2989,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3207,7 +2999,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3220,7 +3011,6 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3246,7 +3036,6 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3257,7 +3046,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3271,7 +3059,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3297,7 +3084,6 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3308,7 +3094,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3321,7 +3106,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3332,7 +3116,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3345,7 +3128,6 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3371,7 +3153,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3382,7 +3163,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3395,7 +3175,6 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3421,7 +3200,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3432,7 +3210,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3443,7 +3220,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3454,7 +3230,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3467,7 +3242,6 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3493,7 +3267,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3504,7 +3277,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3517,7 +3289,6 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3543,7 +3314,6 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3554,7 +3324,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3565,7 +3334,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3576,7 +3344,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3590,7 +3357,6 @@ WHERE
 	[r].[Value4] IS NULL
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3616,7 +3382,6 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @TrueN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3627,7 +3392,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3640,7 +3404,6 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3666,7 +3429,6 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @FalseN
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -3677,7 +3439,6 @@ FROM
 	[BooleanTable] [t1]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[r].[Id],
 	[r].[Value1],
@@ -3688,7 +3449,6 @@ FROM
 	[BooleanTable] [r]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
