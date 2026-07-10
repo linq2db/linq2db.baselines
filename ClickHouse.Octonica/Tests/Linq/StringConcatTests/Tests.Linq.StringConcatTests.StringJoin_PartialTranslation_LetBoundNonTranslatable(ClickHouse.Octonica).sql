@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.Value1,
 	t.Value2
@@ -9,7 +8,6 @@ ORDER BY
 	t.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.ID,
 	t1.Value1,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 WITH RECURSIVE partHierarchy AS
 (
 	SELECT

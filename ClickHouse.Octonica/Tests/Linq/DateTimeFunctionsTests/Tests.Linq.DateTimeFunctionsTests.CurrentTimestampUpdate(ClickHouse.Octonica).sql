@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE

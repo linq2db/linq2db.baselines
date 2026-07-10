@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GrandChild
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	ParentID = 10000 AND ChildID IS NULL
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	GrandChild
 UPDATE

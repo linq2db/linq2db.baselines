@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	toInt32(3) as Value_1,
 	c_1.ChildID

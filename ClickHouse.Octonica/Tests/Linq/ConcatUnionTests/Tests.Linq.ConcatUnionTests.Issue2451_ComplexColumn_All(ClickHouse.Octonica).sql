@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.FirstName
 FROM
@@ -11,7 +10,6 @@ FROM
 	Person p_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	concat(p.FirstName, '/', p.LastName) as FirstName
 FROM

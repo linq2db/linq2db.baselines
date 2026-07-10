@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
 	ID > 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -26,7 +24,6 @@ FROM
 	) t2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE

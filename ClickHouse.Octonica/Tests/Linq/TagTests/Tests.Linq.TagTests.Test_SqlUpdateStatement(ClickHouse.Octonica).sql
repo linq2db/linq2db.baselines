@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 /* My Test */
 ALTER TABLE
 	TestTable

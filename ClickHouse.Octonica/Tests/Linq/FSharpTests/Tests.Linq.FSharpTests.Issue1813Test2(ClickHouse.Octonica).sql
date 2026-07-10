@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Names
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Addresses
 (
 	Id,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -50,7 +46,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	after_1.Id,
 	after_1.Name

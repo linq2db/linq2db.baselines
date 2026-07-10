@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.StrReq
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(concat(Coalesce(e.StrReq, ''), ' I')) = 'Programmer I'
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

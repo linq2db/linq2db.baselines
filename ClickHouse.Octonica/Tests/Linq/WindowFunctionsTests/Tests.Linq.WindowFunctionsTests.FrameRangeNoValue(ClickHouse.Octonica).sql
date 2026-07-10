@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.Id,
 	SUM(t.IntValue) OVER (PARTITION BY t.CategoryId ORDER BY t.Id RANGE BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING),

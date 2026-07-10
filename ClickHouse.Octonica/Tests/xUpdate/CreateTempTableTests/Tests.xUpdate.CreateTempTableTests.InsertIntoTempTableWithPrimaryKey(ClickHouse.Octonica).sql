@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
 	Key Int32,
@@ -12,6 +11,5 @@ ORDER BY Key
 INSERT INTO TableWithPrimaryKey2(Key) VALUES
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

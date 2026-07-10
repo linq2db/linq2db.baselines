@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -24,7 +22,6 @@ WHERE
 	ID = 1001
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,

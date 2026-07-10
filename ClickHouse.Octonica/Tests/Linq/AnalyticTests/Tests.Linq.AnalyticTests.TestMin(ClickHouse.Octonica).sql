@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MIN(c_1.ChildID),
 	MIN(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	minOrNull(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MIN(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	MIN(DISTINCT t1.ParentID)
 FROM

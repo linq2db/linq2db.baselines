@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	currentDatabase()
 FROM
@@ -7,11 +6,9 @@ FROM
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS Issue681Table2
 
 -- ClickHouse.Octonica ClickHouse
-
 CREATE TABLE Issue681Table2
 (
 	ID    Int32,
@@ -23,6 +20,5 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
-
 DROP TABLE testdb1.Issue681Table2
 

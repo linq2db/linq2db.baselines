@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.PersonID,
 	p.Diagnosis
@@ -40,7 +39,6 @@ ORDER BY
 	p.PersonID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis
@@ -48,7 +46,6 @@ FROM
 	Patient t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

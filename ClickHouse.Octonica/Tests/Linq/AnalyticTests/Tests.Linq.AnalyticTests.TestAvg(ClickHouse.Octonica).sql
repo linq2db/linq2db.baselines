@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	AVG(c_1.ChildID),
 	AVG(c_1.ChildID),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	avgOrNull(t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	AVG(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	AVG(DISTINCT t1.ParentID)
 FROM

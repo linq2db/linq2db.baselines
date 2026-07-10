@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 3, 18446744073709551615
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Value

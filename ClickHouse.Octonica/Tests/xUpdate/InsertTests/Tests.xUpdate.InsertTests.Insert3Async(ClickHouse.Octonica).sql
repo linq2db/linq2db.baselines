@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE
 	ChildID > 1000
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Child
 (
 	ParentID,
@@ -21,7 +19,6 @@ WHERE
 	c_1.ChildID = 11
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	c_1.ChildID = 1001
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	Child
 DELETE WHERE

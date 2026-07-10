@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.MasterId,
 	t3.Id1,
@@ -40,7 +39,6 @@ FROM
 		) t3 ON t3.Id1 = m_2.MasterId AND d.Key_1 = t3.Id1 AND t3.rn = 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id1,
 	t1.Id2,

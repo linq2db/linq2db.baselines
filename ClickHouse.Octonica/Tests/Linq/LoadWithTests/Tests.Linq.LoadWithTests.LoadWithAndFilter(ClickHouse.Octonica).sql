@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	m_2.Id_1,
@@ -33,7 +32,6 @@ ORDER BY
 	m_2.Id_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -55,7 +53,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -77,7 +74,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value
@@ -91,7 +87,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	m_2.Id_1,
@@ -125,7 +120,6 @@ ORDER BY
 	m_2.Id_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -147,7 +141,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -172,7 +165,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value
@@ -186,7 +178,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	m_2.Id_1,
@@ -220,7 +211,6 @@ ORDER BY
 	m_2.Id_1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -242,7 +232,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -267,7 +256,6 @@ ORDER BY
 	m_2.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -11,7 +10,6 @@ FROM
 		LEFT JOIN EntityMD a_ObjectD ON d.FKD = a_ObjectD.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	e.Id
 FROM

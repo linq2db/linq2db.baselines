@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	concat('I-', toString(x.PersonID)) as Id,
 	x.FirstName

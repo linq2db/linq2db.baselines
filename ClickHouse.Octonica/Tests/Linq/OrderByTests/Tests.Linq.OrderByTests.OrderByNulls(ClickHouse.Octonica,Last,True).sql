@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Grp,
@@ -12,7 +11,6 @@ ORDER BY
 LIMIT 3
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Grp,

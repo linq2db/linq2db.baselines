@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	p.Id,
 	FIRST_VALUE(p.Id) RESPECT NULLS OVER (ORDER BY p.Order DESC)

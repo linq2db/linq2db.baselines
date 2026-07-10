@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ FROM
 	) t2
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT DISTINCT
 	MONTH(t1.DateTimeValue),
 	YEAR(t1.DateTimeValue)

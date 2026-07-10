@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 DROP TABLE IF EXISTS InventoryResource
 
 -- ClickHouse.Octonica ClickHouse
-
 INSERT INTO InventoryResource
 (
 	Id,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailValue
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id1
 FROM
@@ -26,7 +24,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailValue
@@ -43,7 +40,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id1
 FROM
@@ -53,7 +49,6 @@ WHERE
 LIMIT 1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id1,
 	d.DetailValue
@@ -75,7 +70,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id1
 FROM

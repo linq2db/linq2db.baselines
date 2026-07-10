@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM t.VarCharColumn)
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.Id
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	trim(TRAILING '.+' FROM t.VarCharColumn)
 FROM

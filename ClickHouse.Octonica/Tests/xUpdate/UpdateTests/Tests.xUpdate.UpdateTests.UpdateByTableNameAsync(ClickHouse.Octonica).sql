@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO xxPerson
 (
 	FirstName,
@@ -18,14 +17,12 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -37,7 +34,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Octonica ClickHouse
-
 ALTER TABLE
 	xxPerson
 UPDATE
@@ -49,7 +45,6 @@ WHERE
 	PersonID = 0
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

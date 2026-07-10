@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COVAR_POP(p.Value1, c_1.ChildID) OVER (PARTITION BY p.Value1, c_1.ChildID),
 	COVAR_POP(p.Value1, c_1.ChildID) OVER (),
@@ -9,7 +8,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COVAR_POP(c_1.ParentID, c_1.ChildID)
 FROM
@@ -19,7 +17,6 @@ GROUP BY
 	g_1.ParentID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COVAR_POP(t1.ParentID, t1.ChildID)
 FROM

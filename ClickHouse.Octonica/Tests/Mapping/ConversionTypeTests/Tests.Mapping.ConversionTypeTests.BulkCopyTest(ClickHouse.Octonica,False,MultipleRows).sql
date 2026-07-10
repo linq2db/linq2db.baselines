@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -9,7 +8,6 @@ VALUES
 (1,'***OOO***')
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.Data
@@ -19,7 +17,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.ID,
 	r.Data

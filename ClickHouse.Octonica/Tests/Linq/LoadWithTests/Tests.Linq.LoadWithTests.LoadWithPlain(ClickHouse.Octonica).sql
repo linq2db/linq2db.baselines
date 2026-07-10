@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_2.Id,
 	d.Id,
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Value,

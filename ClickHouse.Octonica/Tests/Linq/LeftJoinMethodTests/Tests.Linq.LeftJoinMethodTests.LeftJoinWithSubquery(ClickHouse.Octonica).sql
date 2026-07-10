@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 SELECT
 	c_2.Id,
 	o.Id
@@ -16,7 +15,6 @@ FROM
 		LEFT JOIN Order o ON c_2.Id = o.CustomerId
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name
@@ -24,7 +22,6 @@ FROM
 	Customer t1
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Id,
 	t1.CustomerId,
