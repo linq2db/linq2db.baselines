@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 WITH CTE_1 ("Obj_Operator")
 AS
 (
@@ -15,7 +14,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	person_1."LastName"
 FROM

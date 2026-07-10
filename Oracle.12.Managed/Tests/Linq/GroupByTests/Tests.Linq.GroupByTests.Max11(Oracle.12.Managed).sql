@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(CASE
 		WHEN t1."ChildID" > 20 THEN 1

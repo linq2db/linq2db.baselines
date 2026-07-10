@@ -1,12 +1,10 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"AllTypes" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
 FROM
@@ -14,15 +12,12 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT USER FROM DUAL
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p.OWNER                                                                                                                              AS Owner,
 	CASE WHEN p.OWNER = USER THEN 1 ELSE 0 END                                                                                           AS IsDefault,
@@ -44,7 +39,6 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT	
 	OWNER          AS Owner,
 	PACKAGE_NAME   AS PackageName,
@@ -62,7 +56,6 @@ WHERE OWNER IN ('SYSTEM') AND SEQUENCE > 0 AND DATA_LEVEL = 0
 	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SYSTEM.ISSUE2132.TEST
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -74,7 +67,6 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE1.TEST_PROCEDURE
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -86,11 +78,9 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SYSTEM.ADDISSUE792RECORD
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -168,23 +158,18 @@ SET     @PINPUTOUTPUTSTRARRAY = NULL
 SYSTEM.ARRAYTEST
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$COL_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$GSBA_GG_TABF_PUBLIC(NULL,NULL,NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$KEY_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$SEQ_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$TAB_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -278,19 +263,16 @@ SET     @O = 0
 SYSTEM.TEST_PROCEDURE
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_TABLE_FUNCTION(NULL)
 
 RollbackTransaction
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
 	"AllTypes" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"AllTypes" t1
 WHERE

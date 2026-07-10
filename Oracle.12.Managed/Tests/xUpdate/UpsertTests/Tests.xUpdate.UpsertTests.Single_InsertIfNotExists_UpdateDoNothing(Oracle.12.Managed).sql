@@ -42,7 +42,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	r."Name",

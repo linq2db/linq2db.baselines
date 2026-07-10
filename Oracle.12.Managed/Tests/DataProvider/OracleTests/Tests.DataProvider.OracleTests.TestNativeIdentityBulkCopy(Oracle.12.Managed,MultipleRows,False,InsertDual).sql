@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT INTO "NativeIdentity"
 (
 	"Field"
@@ -9,7 +8,6 @@ INSERT INTO "NativeIdentity"
 	SELECT 12 FROM DUAL 
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Field"

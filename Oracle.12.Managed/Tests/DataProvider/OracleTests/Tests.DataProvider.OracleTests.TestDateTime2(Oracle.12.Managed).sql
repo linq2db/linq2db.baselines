@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT timestamp '2012-12-12 12:12:12.012' FROM sys.dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12

@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	fact_1."Id",
 	leftTag."Id",

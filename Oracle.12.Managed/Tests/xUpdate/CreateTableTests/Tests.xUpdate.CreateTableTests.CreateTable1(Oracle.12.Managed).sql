@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestTable"';
@@ -28,7 +27,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestTable"
 (
 	ID          Int           NOT NULL,
@@ -40,11 +38,9 @@ CREATE TABLE "TestTable"
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE "SIDENTITY_TestTable"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestTable"
 BEFORE INSERT ON "TestTable" FOR EACH ROW
 BEGIN
@@ -52,7 +48,6 @@ BEGIN
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Field1",
@@ -62,7 +57,6 @@ FROM
 	"TestTable" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestTable"';
 	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TestTable"';

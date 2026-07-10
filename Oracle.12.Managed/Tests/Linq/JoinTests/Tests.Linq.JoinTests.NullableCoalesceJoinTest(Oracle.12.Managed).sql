@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
@@ -19,14 +18,12 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "tmptbl1" (ID, "Value") VALUES (1,'Value1')
 	INTO "tmptbl1" (ID, "Value") VALUES (2,NULL)
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
@@ -46,14 +43,12 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "tmptbl2" (ID, "Value") VALUES (1,'Value1')
 	INTO "tmptbl2" (ID, "Value") VALUES (3,'Value2')
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
@@ -73,14 +68,12 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 INSERT ALL
 	INTO "tmptbl3" (ID, "Value") VALUES (1,'Value1')
 	INTO "tmptbl3" (ID, "Value") VALUES (2,NULL)
 SELECT * FROM dual
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t4.ID,
 	t4."Value"
@@ -90,7 +83,6 @@ FROM
 		LEFT JOIN "tmptbl3" t4 ON Coalesce(t3."Value", t2."Value") = t4."Value" OR t3."Value" IS NULL AND t2."Value" IS NULL AND t4."Value" IS NULL
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -98,7 +90,6 @@ FROM
 	"tmptbl1" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -106,7 +97,6 @@ FROM
 	"tmptbl2" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -114,7 +104,6 @@ FROM
 	"tmptbl3" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "tmptbl3"';
@@ -131,7 +120,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "tmptbl2"';
@@ -148,7 +136,6 @@ EXCEPTION
 END;
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "tmptbl1"';

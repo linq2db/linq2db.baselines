@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	person_1."PersonID",
 	patient_1."PersonID"

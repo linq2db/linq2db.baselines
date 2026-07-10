@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT /*+ FULL(p@qn) LEADING(p@qn p_2.c_1) */
 	p_2."ParentID",
 	p_2."Value1"

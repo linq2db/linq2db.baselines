@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT /*+ NATIVE_FULL_OUTER_JOIN */
 	p."ParentID",
 	p."Value1"

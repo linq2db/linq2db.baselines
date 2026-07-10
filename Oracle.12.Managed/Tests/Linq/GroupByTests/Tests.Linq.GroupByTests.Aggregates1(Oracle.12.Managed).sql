@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*),
 	SUM(g_1."ChildID"),

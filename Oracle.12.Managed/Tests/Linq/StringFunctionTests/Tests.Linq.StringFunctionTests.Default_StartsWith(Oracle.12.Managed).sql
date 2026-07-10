@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"CollatedTable" t1
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	r."CaseSensitive" LIKE 'TestSt%' ESCAPE '~'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	r."CaseInsensitive" LIKE 'TestSt%' ESCAPE '~'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	r."CaseSensitive" LIKE 'testst%' ESCAPE '~'
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	COUNT(*)
 FROM

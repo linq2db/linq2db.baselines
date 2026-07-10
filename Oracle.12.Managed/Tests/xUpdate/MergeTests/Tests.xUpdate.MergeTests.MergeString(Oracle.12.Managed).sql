@@ -1,12 +1,10 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "AllTypes" Target
 USING (
 	SELECT 3 AS ID, chr(0) AS "charDataType", chr(0) AS "ncharDataType", N'test' || chr(0) || N'it' AS "nvarcharDataType" FROM sys.dual) "Source"

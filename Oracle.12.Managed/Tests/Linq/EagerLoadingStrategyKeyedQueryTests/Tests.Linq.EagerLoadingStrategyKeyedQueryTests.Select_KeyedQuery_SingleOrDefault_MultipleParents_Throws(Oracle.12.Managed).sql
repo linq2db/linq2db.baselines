@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -8,7 +7,6 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	k_1."item",
 	d."Id",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."ParentID",
 	IndexedParent_1."Item1",
@@ -20,7 +19,6 @@ ORDER BY
 	IndexedParent_1."ParentID"
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

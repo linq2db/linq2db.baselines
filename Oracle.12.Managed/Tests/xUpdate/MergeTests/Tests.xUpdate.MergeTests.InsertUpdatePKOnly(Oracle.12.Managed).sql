@@ -1,5 +1,4 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "PKOnlyTable" Target
 USING (
 	SELECT 1 AS ID FROM sys.dual
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID
 FROM
