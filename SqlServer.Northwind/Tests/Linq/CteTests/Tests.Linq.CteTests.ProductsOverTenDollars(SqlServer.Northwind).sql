@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 WITH [ProductsOverTenDollars] ([CategoryID], [ProductName], [UnitPrice])
 AS
 (
@@ -41,7 +40,6 @@ ORDER BY
 	[t1].[ProductName]
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[c_1].[CategoryName],
 	(

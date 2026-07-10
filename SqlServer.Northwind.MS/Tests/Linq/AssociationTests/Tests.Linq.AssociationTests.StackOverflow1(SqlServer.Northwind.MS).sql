@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT TOP (1)
 	[employee].[EmployeeID],
 	[employee].[LastName],
