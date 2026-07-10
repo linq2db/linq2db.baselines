@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t."Value",
@@ -42,11 +40,9 @@ WHERE
 	t.ID = 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
@@ -78,7 +74,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t."Value",
@@ -89,11 +84,9 @@ WHERE
 	t.ID = 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
@@ -125,7 +118,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t."Column",
@@ -136,11 +128,9 @@ WHERE
 	t.ID = 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 
 -- DuckDB
-
 CREATE TABLE IF NOT EXISTS FluentTemp_Cache
 (
 	ID       INTEGER,
@@ -172,7 +162,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t.ID,
 	t."Column",
@@ -183,6 +172,5 @@ WHERE
 	t.ID = 1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS FluentTemp_Cache
 

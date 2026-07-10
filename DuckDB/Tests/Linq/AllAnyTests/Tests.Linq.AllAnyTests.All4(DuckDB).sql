@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	NOT EXISTS(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	y."item"
 FROM
@@ -9,7 +8,6 @@ FROM
 		) y("item")
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

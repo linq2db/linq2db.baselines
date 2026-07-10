@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	uuidv7()
 FROM

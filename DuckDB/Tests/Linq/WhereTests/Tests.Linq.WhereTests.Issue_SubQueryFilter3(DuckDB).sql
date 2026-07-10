@@ -46,7 +46,6 @@ ORDER BY
 	patient_1.PersonID
 
 -- DuckDB
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis
@@ -54,7 +53,6 @@ FROM
 	Patient t1
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

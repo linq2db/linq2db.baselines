@@ -49,7 +49,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	e.Code,
 	e.Id,

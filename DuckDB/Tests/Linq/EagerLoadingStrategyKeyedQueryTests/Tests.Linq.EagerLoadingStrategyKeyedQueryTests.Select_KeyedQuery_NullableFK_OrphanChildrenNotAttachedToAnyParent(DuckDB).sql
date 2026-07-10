@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -13,7 +12,6 @@ ORDER BY
 	m_1.Id
 
 -- DuckDB
-
 SELECT
 	p.Id,
 	p.Name
@@ -23,7 +21,6 @@ ORDER BY
 	p.Id
 
 -- DuckDB
-
 WITH CTE_1 (Id, field, Name)
 AS MATERIALIZED
 (

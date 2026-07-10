@@ -18,7 +18,6 @@ ON CONFLICT (Id) DO UPDATE SET
 	Name = $Name
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,
@@ -49,7 +48,6 @@ ON CONFLICT (Id) DO UPDATE SET
 	Name = $Name
 
 -- DuckDB
-
 SELECT
 	t.Id,
 	t.Name,

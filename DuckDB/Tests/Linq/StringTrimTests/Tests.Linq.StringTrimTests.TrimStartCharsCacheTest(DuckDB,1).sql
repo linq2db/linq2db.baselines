@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	LTRIM(t.VarCharColumn, '.+')
 FROM

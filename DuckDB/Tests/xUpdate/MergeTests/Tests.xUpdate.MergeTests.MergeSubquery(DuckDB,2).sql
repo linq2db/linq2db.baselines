@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TEMPORARY TABLE MergeTemp
 (
 	ID   INTEGER,
@@ -24,7 +23,6 @@ ORDER BY
 INSERT BULK MergeTemp(ID, Name)
 
 -- DuckDB
-
 INSERT INTO MergeTemp AS t1
 (
 	ID,
@@ -47,6 +45,5 @@ ON CONFLICT (ID) DO UPDATE SET
 	Name = t1.Name
 
 -- DuckDB
-
 DROP TABLE IF EXISTS MergeTemp
 

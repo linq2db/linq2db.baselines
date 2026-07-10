@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	m_1.ParentID,
 	d.ChildID
@@ -15,7 +14,6 @@ ORDER BY
 	m_1.ParentID
 
 -- DuckDB
-
 SELECT
 	p.ParentID
 FROM

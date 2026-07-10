@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	a_MiddleRuntime.ParentID,
 	a_Bottom.ParentID,

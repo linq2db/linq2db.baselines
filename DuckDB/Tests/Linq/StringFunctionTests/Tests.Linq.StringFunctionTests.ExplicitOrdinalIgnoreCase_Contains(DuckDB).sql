@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	CollatedTable t1
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	r.CaseSensitive ILIKE '%stSt%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	r.CaseInsensitive ILIKE '%stSt%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	r.CaseSensitive ILIKE '%stst%' ESCAPE '~'
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

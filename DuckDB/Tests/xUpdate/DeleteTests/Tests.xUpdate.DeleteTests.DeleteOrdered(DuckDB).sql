@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent c_1
 WHERE
@@ -176,14 +175,12 @@ VALUES
 )
 
 -- DuckDB
-
 DELETE FROM
 	Parent x
 WHERE
 	x.ParentID > 1000
 
 -- DuckDB
-
 SELECT
 	r.Value1
 FROM
@@ -194,7 +191,6 @@ ORDER BY
 	r.ParentID
 
 -- DuckDB
-
 DELETE FROM
 	Parent c_1
 WHERE

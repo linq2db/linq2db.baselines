@@ -50,7 +50,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Guid,
 	lc."Count",

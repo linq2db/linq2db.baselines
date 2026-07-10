@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* My Test */
 SELECT
 	t1.Id,

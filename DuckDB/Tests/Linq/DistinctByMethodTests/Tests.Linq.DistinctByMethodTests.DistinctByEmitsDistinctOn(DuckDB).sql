@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT DISTINCT ON (t1."Group")
 	t1.Id,
 	t1.Name,
@@ -15,7 +14,6 @@ ORDER BY
 	t1."Date"
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name,

@@ -29,7 +29,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	p.FirstName,
 	p.PersonID,

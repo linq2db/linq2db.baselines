@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.Id,
 	p.Text
@@ -10,7 +9,6 @@ WHERE
                   　') = ''
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Text

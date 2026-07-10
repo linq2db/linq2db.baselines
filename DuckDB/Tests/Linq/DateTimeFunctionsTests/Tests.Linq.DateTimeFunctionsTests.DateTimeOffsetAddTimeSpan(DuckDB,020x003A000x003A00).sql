@@ -25,7 +25,6 @@ FROM
 	DateTypesOffset t_1
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.DateTimeOffset,

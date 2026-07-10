@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	c_1.ChildID = $id
 
 -- DuckDB
-
 DELETE FROM
 	Child c_1
 WHERE

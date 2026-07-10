@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	x.PersonID
 FROM
 	Patient x
 
 -- DuckDB
-
 SELECT
 	x.PersonID,
 	x.FirstName
@@ -14,7 +12,6 @@ FROM
 	Person x
 
 -- DuckDB
-
 SELECT
 	x.PersonID,
 	person_1.PersonID,

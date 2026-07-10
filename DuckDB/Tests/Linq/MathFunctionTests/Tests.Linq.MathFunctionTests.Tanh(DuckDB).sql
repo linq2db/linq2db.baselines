@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.Value_1
 FROM

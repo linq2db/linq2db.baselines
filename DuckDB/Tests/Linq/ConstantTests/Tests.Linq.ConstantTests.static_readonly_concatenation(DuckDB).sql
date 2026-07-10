@@ -13,7 +13,6 @@ WHERE
 	(Coalesce(e.StringValue, '') || '1') = $p
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.GuidValue,

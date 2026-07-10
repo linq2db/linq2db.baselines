@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*),
 	COUNT(c_1.ChildID),
@@ -13,28 +12,24 @@ GROUP BY
 	g_1.ParentID
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	COUNT(t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	COUNT(ALL t1.ParentID)
 FROM
 	Child t1
 
 -- DuckDB
-
 SELECT
 	COUNT(DISTINCT t1.ParentID)
 FROM

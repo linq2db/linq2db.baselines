@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	x.Id,
 	x."Value"
@@ -10,7 +9,6 @@ WHERE
 LIMIT 1
 
 -- DuckDB
-
 SELECT
 	x.Id,
 	x."Value"

@@ -29,7 +29,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	a_Details.UserId,

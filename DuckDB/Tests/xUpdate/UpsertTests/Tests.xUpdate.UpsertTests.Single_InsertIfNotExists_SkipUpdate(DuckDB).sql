@@ -37,7 +37,6 @@ VALUES
 ON CONFLICT (Id) DO NOTHING
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,
@@ -91,14 +90,12 @@ VALUES
 ON CONFLICT (Id) DO NOTHING
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	UpsertTest t1
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,

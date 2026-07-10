@@ -20,7 +20,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1."Type",
 	t1.Id,

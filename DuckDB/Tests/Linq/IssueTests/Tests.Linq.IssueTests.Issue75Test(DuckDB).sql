@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	c_1.ChildID,
 	c_1.ParentID,

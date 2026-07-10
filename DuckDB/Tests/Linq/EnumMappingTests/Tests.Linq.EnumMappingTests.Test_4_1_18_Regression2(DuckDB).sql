@@ -8,7 +8,6 @@ WHERE
 	r.ID >= 101 AND r.ID < $p
 
 -- DuckDB
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL,
 	t1.BigIntValue,

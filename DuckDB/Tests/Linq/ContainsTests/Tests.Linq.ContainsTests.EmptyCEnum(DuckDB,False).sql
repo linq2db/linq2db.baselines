@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,14 +7,12 @@ WHERE
 	1 = 0
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	Src s
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	gr.FirstName,
 	gr.LastName,

@@ -14,7 +14,6 @@ WHERE
 	r."Column" = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Column",
@@ -25,7 +24,6 @@ WHERE
 	r."Column" = False AND r.ColumnNullable = True
 
 -- DuckDB
-
 DELETE FROM
 	BooleanTable t1
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	BooleanTable t1
 
 -- DuckDB
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -100,7 +95,6 @@ VALUES
 (2,False,True)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",
@@ -111,7 +105,6 @@ ORDER BY
 	t1.Id
 
 -- DuckDB
-
 DELETE FROM
 	BooleanTable t1
 
@@ -131,7 +124,6 @@ ORDER BY
 INSERT BULK BooleanTable(Id, Column, ColumnNullable)
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Column",

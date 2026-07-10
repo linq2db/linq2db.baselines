@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID
@@ -10,7 +9,6 @@ ORDER BY
 LIMIT 5 OFFSET 3 
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

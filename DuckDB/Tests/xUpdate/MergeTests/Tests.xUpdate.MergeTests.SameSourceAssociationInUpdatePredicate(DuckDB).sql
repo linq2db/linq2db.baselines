@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO Person Target
 USING (
 	SELECT
@@ -29,7 +28,6 @@ SET
 	MiddleName = 'Updated'
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

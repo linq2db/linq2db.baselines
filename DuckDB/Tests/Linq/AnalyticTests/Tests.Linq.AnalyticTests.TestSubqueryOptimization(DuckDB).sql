@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	sq.Rank,
 	sq.RowNumber,

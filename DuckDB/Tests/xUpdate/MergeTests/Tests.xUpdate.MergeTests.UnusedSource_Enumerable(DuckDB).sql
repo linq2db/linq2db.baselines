@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO UnusedSourceTable Target
 USING (VALUES
 	(1)
@@ -22,7 +21,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Value"

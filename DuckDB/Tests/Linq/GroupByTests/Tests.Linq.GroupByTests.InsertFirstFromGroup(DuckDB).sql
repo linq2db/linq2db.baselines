@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE temp_table_1
 (
 	ID      INTEGER,
@@ -24,7 +23,6 @@ ORDER BY
 INSERT BULK temp_table_1(ID, Value)
 
 -- DuckDB
-
 CREATE TABLE temp_table_2
 (
 	"Value" VARCHAR,
@@ -33,7 +31,6 @@ CREATE TABLE temp_table_2
 )
 
 -- DuckDB
-
 INSERT INTO temp_table_2
 (
 	"Value"
@@ -53,10 +50,8 @@ FROM
 		) t1 ON 1=1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- DuckDB
-
 DROP TABLE IF EXISTS temp_table_1
 

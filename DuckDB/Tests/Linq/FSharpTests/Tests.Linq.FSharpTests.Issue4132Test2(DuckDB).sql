@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO Issue4132Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- DuckDB
-
 UPDATE
 	Issue4132Table
 SET
@@ -23,7 +21,6 @@ WHERE
 	Issue4132Table."Number" = 1
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r."Number",

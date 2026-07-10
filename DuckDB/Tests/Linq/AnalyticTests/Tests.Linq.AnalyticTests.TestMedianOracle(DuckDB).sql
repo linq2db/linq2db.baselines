@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	MEDIAN(p.Value1) OVER (PARTITION BY p.Value1, c_1.ChildID),
 	MEDIAN(p.Value1) OVER ()
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 
 -- DuckDB
-
 SELECT
 	MEDIAN(c_1.ParentID)
 FROM
@@ -18,7 +16,6 @@ GROUP BY
 	g_1.ParentID
 
 -- DuckDB
-
 SELECT
 	MEDIAN(t1.ParentID)
 FROM

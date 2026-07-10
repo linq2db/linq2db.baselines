@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	SUM(g_1.ParentID)
 FROM

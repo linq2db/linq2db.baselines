@@ -43,7 +43,6 @@ ON CONFLICT (Id) DO UPDATE SET
 	UpdatedBy = $UpdatedBy
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,
@@ -103,7 +102,6 @@ ON CONFLICT (Id) DO UPDATE SET
 	UpdatedBy = $UpdatedBy
 
 -- DuckDB
-
 SELECT
 	r.Id,
 	r.Name,

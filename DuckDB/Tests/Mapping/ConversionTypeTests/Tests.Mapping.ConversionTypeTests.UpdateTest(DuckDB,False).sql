@@ -36,7 +36,6 @@ WHERE
 	TrimTestTable."Data" = $p
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -46,7 +45,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

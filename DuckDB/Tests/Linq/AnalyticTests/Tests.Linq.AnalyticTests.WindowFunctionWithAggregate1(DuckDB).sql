@@ -22,7 +22,6 @@ ORDER BY
 LIMIT $take
 
 -- DuckDB
-
 SELECT
 	t1.ParentID,
 	t1.ChildID

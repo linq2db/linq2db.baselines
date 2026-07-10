@@ -1,14 +1,11 @@
 ﻿-- DuckDB
-
 SELECT
 	current_database()
 
 -- DuckDB
-
 DROP TABLE IF EXISTS Issue681Table2
 
 -- DuckDB
-
 CREATE TABLE Issue681Table2
 (
 	ID      INTEGER,
@@ -18,6 +15,5 @@ CREATE TABLE Issue681Table2
 )
 
 -- DuckDB
-
 DROP TABLE TestData.Issue681Table2
 

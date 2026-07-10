@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
 	ID INTEGER,
@@ -8,6 +7,5 @@ CREATE TABLE IF NOT EXISTS DisposableTable
 )
 
 -- DuckDB
-
 DROP TABLE IF EXISTS DisposableTable
 

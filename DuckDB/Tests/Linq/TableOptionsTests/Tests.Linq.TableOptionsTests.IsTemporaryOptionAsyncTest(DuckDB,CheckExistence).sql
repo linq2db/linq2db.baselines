@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
 	ID      INTEGER,
@@ -24,7 +23,6 @@ ORDER BY
 INSERT BULK temp_table1(ID, Value)
 
 -- DuckDB
-
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
 	ID      INTEGER,
@@ -34,7 +32,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 )
 
 -- DuckDB
-
 INSERT INTO temp_table2
 (
 	ID,
@@ -47,7 +44,6 @@ FROM
 	temp_table1 t1
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -55,7 +51,6 @@ FROM
 	temp_table1 t1
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1."Value"
@@ -63,7 +58,6 @@ FROM
 	temp_table2 t1
 
 -- DuckDB
-
 INSERT INTO temp_table1
 (
 	ID,
@@ -105,18 +99,14 @@ ORDER BY
 INSERT BULK temp_table1(ID, Value)
 
 -- DuckDB
-
 TRUNCATE TABLE temp_table1;
 
 -- DuckDB
-
 TRUNCATE TABLE temp_table2;
 
 -- DuckDB
-
 DROP TABLE IF EXISTS temp_table2
 
 -- DuckDB
-
 DROP TABLE IF EXISTS temp_table1
 

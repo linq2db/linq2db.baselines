@@ -14,7 +14,6 @@ WHERE
 	r.FirstName = $p
 
 -- DuckDB
-
 SELECT
 	r.FirstName,
 	r.PersonID,

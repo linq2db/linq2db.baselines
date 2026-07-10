@@ -24,14 +24,12 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,
@@ -65,7 +63,6 @@ WHERE
 	xxPerson.PersonID = $ID
 
 -- DuckDB
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

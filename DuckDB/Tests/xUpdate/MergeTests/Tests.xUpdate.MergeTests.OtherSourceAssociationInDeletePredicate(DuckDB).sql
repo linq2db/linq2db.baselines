@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 MERGE INTO Patient Target
 USING (
 	SELECT
@@ -23,7 +22,6 @@ ON (Target.PersonID = Source.PersonID AND Source.Diagnosis LIKE '%very%' ESCAPE 
 WHEN MATCHED AND Source.Person_FirstName = 'first 4' AND Source.Person_FirstName_1 = 'first 4' THEN DELETE
 
 -- DuckDB
-
 SELECT
 	t1.PersonID,
 	t1.Diagnosis

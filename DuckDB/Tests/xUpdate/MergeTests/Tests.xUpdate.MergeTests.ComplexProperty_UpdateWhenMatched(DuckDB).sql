@@ -41,7 +41,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO ComplexPropertyTarget Target
 USING (VALUES
 	(1,'first-updated',True)
@@ -60,7 +59,6 @@ SET
 	Field = Source.Nested_Field
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Code,

@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	Lower(CAST(t.Id AS VARCHAR))
 FROM
 	TableWithGuid t
 
 -- DuckDB
-
 SELECT
 	t.Id
 FROM

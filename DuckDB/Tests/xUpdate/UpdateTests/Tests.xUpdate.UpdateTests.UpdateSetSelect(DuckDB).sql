@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent t1
 WHERE
 	t1.ParentID > 1000
 
 -- DuckDB
-
 UPDATE
 	Parent
 SET

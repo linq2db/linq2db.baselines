@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	p.Id,
 	p.MyEnum,

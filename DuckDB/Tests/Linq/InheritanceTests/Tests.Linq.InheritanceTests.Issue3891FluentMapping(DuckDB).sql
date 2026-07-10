@@ -28,7 +28,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1."Type",
 	t1.Id,
@@ -62,7 +61,6 @@ WHERE
 	Base2.Id = $Id
 
 -- DuckDB
-
 SELECT
 	t1."Type",
 	t1.Id,

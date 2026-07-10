@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t1_1.MoneyValue
 FROM

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	TableToInsert
 SET
@@ -12,7 +11,6 @@ WHERE
 	TableToInsert.Id = r.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value"

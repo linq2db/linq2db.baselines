@@ -12,7 +12,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	t1."Date"
 FROM

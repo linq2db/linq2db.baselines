@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	grp.SiteID,
 	COUNT(*),

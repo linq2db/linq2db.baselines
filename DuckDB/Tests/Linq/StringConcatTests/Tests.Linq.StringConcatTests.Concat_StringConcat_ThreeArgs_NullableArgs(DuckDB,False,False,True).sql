@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.Value1 || t.Value2 || Coalesce(t.Value3, '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- DuckDB
-
 SELECT
 	t1.ID,
 	t1.Value1,

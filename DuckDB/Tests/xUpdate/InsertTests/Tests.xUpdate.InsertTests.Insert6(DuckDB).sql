@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE
 	p.Value1 = 11
 
 -- DuckDB
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -21,7 +19,6 @@ WHERE
 	c_1.ChildID = 11
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	p.Value1 = 11
 
 -- DuckDB
-
 DELETE FROM
 	Parent p
 WHERE

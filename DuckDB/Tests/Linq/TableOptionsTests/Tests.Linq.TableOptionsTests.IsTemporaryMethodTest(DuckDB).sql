@@ -1,9 +1,7 @@
 ﻿-- DuckDB
-
 DROP TABLE IF EXISTS TestTable
 
 -- DuckDB
-
 CREATE TEMPORARY TABLE TestTable
 (
 	Id      INTEGER,
@@ -13,7 +11,6 @@ CREATE TEMPORARY TABLE TestTable
 )
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Value",
@@ -25,6 +22,5 @@ FROM
 	TestTable t1
 
 -- DuckDB
-
 DROP TABLE IF EXISTS TestTable
 

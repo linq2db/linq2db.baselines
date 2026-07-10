@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	AVG(t1.ChildID)
 FROM

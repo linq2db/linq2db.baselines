@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	e.StrReq IS NOT NULL
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Str1,

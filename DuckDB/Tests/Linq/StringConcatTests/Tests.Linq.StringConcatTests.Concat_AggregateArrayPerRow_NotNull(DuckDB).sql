@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	t.Id,
 	CONCAT_WS('', t.Str1, t.Str2, t.StrReq)
@@ -9,7 +8,6 @@ ORDER BY
 	t.Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Str1,

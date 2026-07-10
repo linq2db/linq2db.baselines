@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	e.Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CONCAT_WS('', Coalesce(e.StrReq, ''), ' ', 'I') = 'Programmer I'
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Str1,

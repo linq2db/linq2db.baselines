@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	CAST(g_2.Message AS VARCHAR) || ' items have not been processed, e.g. #' || Coalesce(CAST(g_2.Message_1 AS VARCHAR), '') || '.'
 FROM

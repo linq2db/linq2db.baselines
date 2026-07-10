@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 UPDATE
 	TrimTestTable
 SET
@@ -8,7 +7,6 @@ WHERE
 	TrimTestTable.ID = 3
 
 -- DuckDB
-
 UPDATE
 	TrimTestTable
 SET
@@ -17,7 +15,6 @@ WHERE
 	TrimTestTable."Data" = '***XXX***'
 
 -- DuckDB
-
 UPDATE
 	TrimTestTable
 SET
@@ -26,7 +23,6 @@ WHERE
 	TrimTestTable."Data" = '***HHH***'
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -36,7 +32,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

@@ -55,7 +55,6 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM

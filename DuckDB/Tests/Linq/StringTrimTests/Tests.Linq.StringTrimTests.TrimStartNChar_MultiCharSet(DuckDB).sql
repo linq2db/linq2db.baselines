@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 SELECT
 	LTRIM(t.NCharColumn, '.+')
 FROM
 	StringTrimTable t
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.CharColumn,

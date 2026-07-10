@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	v.inId,
 	t.inIdState

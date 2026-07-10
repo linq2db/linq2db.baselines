@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE CTE_1 (Id)
 AS
 (
@@ -47,7 +46,6 @@ FROM
 	hierarchyDown t4
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1."Level"

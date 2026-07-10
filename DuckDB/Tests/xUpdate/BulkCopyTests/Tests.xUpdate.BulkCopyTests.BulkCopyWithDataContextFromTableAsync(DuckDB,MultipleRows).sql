@@ -29,7 +29,6 @@ ORDER BY
 INSERT BULK SimpleBulkCopyTable(Id)
 
 -- DuckDB
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id
@@ -68,7 +67,6 @@ ORDER BY
 INSERT BULK SimpleBulkCopyTable(Id)
 
 -- DuckDB
-
 INSERT INTO SimpleBulkCopyTable
 (
 	Id

@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 /* two */
 SELECT
 	x.FirstName,

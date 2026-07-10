@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 SELECT
 	sq_1.Sum_1
 FROM

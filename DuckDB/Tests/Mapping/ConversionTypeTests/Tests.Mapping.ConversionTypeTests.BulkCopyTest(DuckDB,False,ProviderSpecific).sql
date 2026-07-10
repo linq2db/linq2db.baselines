@@ -14,7 +14,6 @@ ORDER BY
 INSERT BULK TrimTestTable(ID, Data)
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"
@@ -24,7 +23,6 @@ ORDER BY
 	r.ID
 
 -- DuckDB
-
 SELECT
 	r.ID,
 	r."Data"

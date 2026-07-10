@@ -34,7 +34,6 @@ WHERE
 	Issue1554Table.Id = 0
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.ClaimedKeyType,

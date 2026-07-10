@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 WITH RECURSIVE CTE_1 (Id)
 AS
 (

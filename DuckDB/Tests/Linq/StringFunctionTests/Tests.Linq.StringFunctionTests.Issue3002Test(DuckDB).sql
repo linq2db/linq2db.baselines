@@ -1,5 +1,4 @@
 ﻿-- DuckDB
-
 INSERT INTO SampleClass
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- DuckDB
-
 INSERT INTO SampleClass
 (
 	Id,

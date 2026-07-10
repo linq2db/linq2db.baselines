@@ -33,7 +33,6 @@ VALUES
 )
 
 -- DuckDB
-
 MERGE INTO NestedKeyTarget Target
 USING (VALUES
 	(1,'first-updated')
@@ -50,7 +49,6 @@ SET
 	Code = Source.Code
 
 -- DuckDB
-
 SELECT
 	t1.Code,
 	t1.Id

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	e.Id,
 	e.SomeText
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- DuckDB
-
 SELECT
 	e.Id,
 	e.SomeText

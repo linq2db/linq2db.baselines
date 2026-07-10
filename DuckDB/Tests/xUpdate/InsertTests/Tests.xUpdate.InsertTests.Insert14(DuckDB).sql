@@ -1,12 +1,10 @@
 ﻿-- DuckDB
-
 DELETE FROM
 	Person p
 WHERE
 	p.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 -- DuckDB
-
 INSERT INTO Person
 (
 	FirstName,
@@ -28,7 +26,6 @@ VALUES
 )
 
 -- DuckDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -37,7 +34,6 @@ WHERE
 	p.FirstName LIKE 'Insert14%' ESCAPE '~'
 
 -- DuckDB
-
 DELETE FROM
 	Person p
 WHERE

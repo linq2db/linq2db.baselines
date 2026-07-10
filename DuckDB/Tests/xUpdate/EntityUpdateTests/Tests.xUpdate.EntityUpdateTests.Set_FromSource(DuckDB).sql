@@ -19,7 +19,6 @@ WHERE
 	EntityUpdateTest.Id = $Id
 
 -- DuckDB
-
 SELECT
 	t1.Id,
 	t1.Name,
