@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 WITH [CTE_1]
 (
 	[Child_ParentID],
@@ -38,7 +37,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 WITH [CTE_1]
 (
 	[Child_ParentID],

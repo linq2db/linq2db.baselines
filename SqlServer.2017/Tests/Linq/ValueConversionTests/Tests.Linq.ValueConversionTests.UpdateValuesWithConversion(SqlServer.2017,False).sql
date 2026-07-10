@@ -10,7 +10,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SqlServer.2017
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],
@@ -33,7 +32,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 2
 
 -- SqlServer.2017
-
 SELECT TOP (2)
 	[x].[Id],
 	[x].[NoConversion],

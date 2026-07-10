@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES

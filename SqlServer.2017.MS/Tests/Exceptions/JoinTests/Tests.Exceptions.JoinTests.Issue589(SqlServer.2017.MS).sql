@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[grandChild_1].[GrandChildID],
 	[child_1].[ChildID],

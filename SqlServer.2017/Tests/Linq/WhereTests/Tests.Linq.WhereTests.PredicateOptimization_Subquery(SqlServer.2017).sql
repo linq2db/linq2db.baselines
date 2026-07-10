@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[p].[PK],
 	[p].[Id],
@@ -20,7 +19,6 @@ WHERE
 	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 3)
 
 -- SqlServer.2017
-
 SELECT
 	[p].[PK],
 	[p].[Id],

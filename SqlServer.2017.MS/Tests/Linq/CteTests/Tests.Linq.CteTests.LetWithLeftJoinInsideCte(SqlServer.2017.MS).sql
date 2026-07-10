@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2017.MS SqlServer.2017
-
 WITH [CTE_1] ([S1])
 AS
 (

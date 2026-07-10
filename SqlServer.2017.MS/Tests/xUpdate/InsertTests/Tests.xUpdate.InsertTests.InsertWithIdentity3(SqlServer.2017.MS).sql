@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -30,7 +29,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
@@ -43,7 +41,6 @@ WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[Person] [t1]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 MERGE INTO [ReviewIndexes] [Target]
 USING (
 	SELECT

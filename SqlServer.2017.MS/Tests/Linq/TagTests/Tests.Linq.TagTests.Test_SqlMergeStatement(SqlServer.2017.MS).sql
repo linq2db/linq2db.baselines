@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 /* My Test */
 MERGE INTO [TestMerge1] [Target]
 USING (

@@ -31,7 +31,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2017.MS SqlServer.2017
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

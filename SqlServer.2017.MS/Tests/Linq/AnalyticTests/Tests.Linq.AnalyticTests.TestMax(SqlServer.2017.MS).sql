@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	MAX([c_1].[ChildID]),
 	MAX([c_1].[ChildID]),
@@ -12,21 +11,18 @@ GROUP BY
 	[g_1].[ParentID]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	MAX([t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	MAX(ALL [t1].[ParentID])
 FROM
 	[Child] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	MAX(DISTINCT [t1].[ParentID])
 FROM

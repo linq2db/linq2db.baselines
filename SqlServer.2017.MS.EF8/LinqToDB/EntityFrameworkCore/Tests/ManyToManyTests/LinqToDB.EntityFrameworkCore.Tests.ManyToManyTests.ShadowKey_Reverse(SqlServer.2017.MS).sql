@@ -9,7 +9,6 @@ ORDER BY [t].[Label]
 
 
 -- SqlServer.2017
-
 SELECT
 	[t].[Label]
 FROM

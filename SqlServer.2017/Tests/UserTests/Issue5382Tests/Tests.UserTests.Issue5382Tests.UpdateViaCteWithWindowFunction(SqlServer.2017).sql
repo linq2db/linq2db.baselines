@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 WITH [CTE_1] ([Sample_IntColumn], [Sample_DateColumn])
 AS
 (
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN [CTE_1] [source] ON [target].[IntColumn] = [source].[Sample_IntColumn] AND [target].[DateColumn] = [source].[Sample_DateColumn]
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[IntColumn],
 	[t1].[DateColumn],

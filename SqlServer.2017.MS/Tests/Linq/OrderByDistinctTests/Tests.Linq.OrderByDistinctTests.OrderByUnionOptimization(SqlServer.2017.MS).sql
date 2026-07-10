@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT DISTINCT
 	[t1].[Id]
 FROM

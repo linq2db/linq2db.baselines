@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- SqlServer.2017
-
 SELECT
 	[o].[Id]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -22,7 +21,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -45,7 +43,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -68,7 +65,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -91,7 +87,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -114,7 +109,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -137,7 +131,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -160,7 +153,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -183,7 +175,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -206,7 +197,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -229,7 +219,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -252,7 +241,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -275,7 +263,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -298,7 +285,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -321,7 +307,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -344,7 +329,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -367,7 +351,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -390,7 +373,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -413,7 +395,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -436,7 +417,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -459,7 +439,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -482,7 +461,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -505,7 +483,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -528,7 +505,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -551,7 +527,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -574,7 +549,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -597,7 +571,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -620,7 +593,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -643,7 +615,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -666,7 +637,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -689,7 +659,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -712,7 +681,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -735,7 +703,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -758,7 +725,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -781,7 +747,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -804,7 +769,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -827,7 +791,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -850,7 +813,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -873,7 +835,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -896,7 +857,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -919,7 +879,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -942,7 +901,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -965,7 +923,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -988,7 +945,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1011,7 +967,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1034,7 +989,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1057,7 +1011,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1080,7 +1033,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1103,7 +1055,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1126,7 +1077,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1149,7 +1099,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1172,7 +1121,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1195,7 +1143,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1218,7 +1165,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1241,7 +1187,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1264,7 +1209,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1287,7 +1231,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1310,7 +1253,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1333,7 +1275,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1356,7 +1297,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1379,7 +1319,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1402,7 +1341,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1425,7 +1363,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1448,7 +1385,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1471,7 +1407,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1494,7 +1429,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1517,7 +1451,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1540,7 +1473,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1563,7 +1495,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1586,7 +1517,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1609,7 +1539,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1632,7 +1561,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1655,7 +1583,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1678,7 +1605,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1701,7 +1627,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1724,7 +1649,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1747,7 +1671,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1770,7 +1693,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1793,7 +1715,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1816,7 +1737,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1839,7 +1759,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1862,7 +1781,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1885,7 +1803,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1908,7 +1825,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1931,7 +1847,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1954,7 +1869,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -1977,7 +1891,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2000,7 +1913,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2023,7 +1935,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2046,7 +1957,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2069,7 +1979,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2092,7 +2001,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2115,7 +2023,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2138,7 +2045,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2161,7 +2067,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2184,7 +2089,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2207,7 +2111,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2230,7 +2133,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2253,7 +2155,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2276,7 +2177,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2299,7 +2199,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2322,7 +2221,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2345,7 +2243,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2368,7 +2265,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2391,7 +2287,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2414,7 +2309,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2437,7 +2331,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2460,7 +2353,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2483,7 +2375,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2506,7 +2397,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2529,7 +2419,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2552,7 +2441,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2575,7 +2463,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2598,7 +2485,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2621,7 +2507,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2644,7 +2529,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2667,7 +2551,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2690,7 +2573,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2713,7 +2595,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2736,7 +2617,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2759,7 +2639,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2782,7 +2661,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2805,7 +2683,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2828,7 +2705,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2851,7 +2727,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2874,7 +2749,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2897,7 +2771,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2920,7 +2793,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2943,7 +2815,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2966,7 +2837,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -2989,7 +2859,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3012,7 +2881,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3035,7 +2903,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3058,7 +2925,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3081,7 +2947,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3104,7 +2969,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3127,7 +2991,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3150,7 +3013,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3173,7 +3035,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3196,7 +3057,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3219,7 +3079,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3242,7 +3101,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3265,7 +3123,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3288,7 +3145,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3311,7 +3167,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3334,7 +3189,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3357,7 +3211,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3380,7 +3233,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3403,7 +3255,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3426,7 +3277,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3449,7 +3299,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3472,7 +3321,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3495,7 +3343,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3518,7 +3365,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3541,7 +3387,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3564,7 +3409,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3587,7 +3431,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3610,7 +3453,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3633,7 +3475,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3656,7 +3497,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3679,7 +3519,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3702,7 +3541,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3725,7 +3563,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3748,7 +3585,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3771,7 +3607,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3794,7 +3629,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3817,7 +3651,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3840,7 +3673,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3863,7 +3695,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3886,7 +3717,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3909,7 +3739,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3932,7 +3761,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3955,7 +3783,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -3978,7 +3805,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4001,7 +3827,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4024,7 +3849,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4047,7 +3871,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4070,7 +3893,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4093,7 +3915,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4116,7 +3937,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4139,7 +3959,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4162,7 +3981,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4185,7 +4003,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4208,7 +4025,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4231,7 +4047,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4254,7 +4069,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4277,7 +4091,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4300,7 +4113,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4323,7 +4135,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM
@@ -4346,7 +4157,6 @@ FROM
 		) [y]([Value])
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Value]
 FROM

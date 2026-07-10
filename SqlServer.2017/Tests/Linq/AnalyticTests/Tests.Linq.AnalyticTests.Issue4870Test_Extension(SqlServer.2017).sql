@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[g_1].[Id],
 	[g_1].[EmployerNumber],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[u].[Id]
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[u].[Id]
 FROM

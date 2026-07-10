@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -17,7 +16,6 @@ WHERE
 	[d].[ParentID] IN (2)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
@@ -26,7 +24,6 @@ WHERE
 	[x].[ParentID] IN (2)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -44,7 +41,6 @@ WHERE
 	[d].[ParentID] IN (3)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT DISTINCT
 	[x].[ChildID]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[p].[PersonID],
 	N'123' + [p].[FirstName] + N'456'

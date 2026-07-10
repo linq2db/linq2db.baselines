@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[c_1].[PersonID]
 FROM

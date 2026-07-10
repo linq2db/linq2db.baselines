@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t1].[PersonID],
 	[a_Doctor].[PersonID],

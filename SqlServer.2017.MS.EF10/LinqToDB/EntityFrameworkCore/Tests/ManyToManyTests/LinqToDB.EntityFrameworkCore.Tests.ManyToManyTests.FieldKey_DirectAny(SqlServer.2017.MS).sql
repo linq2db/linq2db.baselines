@@ -9,7 +9,6 @@ ORDER BY [a].[Name]
 
 
 -- SqlServer.2017
-
 SELECT
 	[a].[Name]
 FROM

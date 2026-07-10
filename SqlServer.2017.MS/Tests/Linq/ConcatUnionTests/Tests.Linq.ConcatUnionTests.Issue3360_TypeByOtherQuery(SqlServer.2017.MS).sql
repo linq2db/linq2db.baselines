@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p].[Id],
 	[p].[Str]
@@ -13,7 +12,6 @@ FROM
 	[Issue3360Table] [p_1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p].[Id],
 	CAST('str' AS VarChar(Max))

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -17,7 +16,6 @@ WHERE
 	[r].[ID] = 1
 
 -- SqlServer.2017
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
@@ -129,7 +127,6 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SqlServer.2017
-
 SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],

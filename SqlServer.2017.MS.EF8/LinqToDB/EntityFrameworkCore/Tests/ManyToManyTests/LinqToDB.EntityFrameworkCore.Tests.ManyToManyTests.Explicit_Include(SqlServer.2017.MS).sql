@@ -11,7 +11,6 @@ ORDER BY [o].[Id], [t].[OrderId], [t].[ProductId]
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -28,7 +27,6 @@ ORDER BY
 
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Number]

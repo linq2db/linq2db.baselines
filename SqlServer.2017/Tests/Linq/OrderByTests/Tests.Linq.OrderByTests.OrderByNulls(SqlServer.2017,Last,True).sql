@@ -13,7 +13,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

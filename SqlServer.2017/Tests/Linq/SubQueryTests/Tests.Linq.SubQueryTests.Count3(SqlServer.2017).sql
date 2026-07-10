@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[p_1].[ParentID],
 	[p_1].[Sum_1]

@@ -25,7 +25,6 @@ ORDER BY [o].[OrderID], [s].[OrderID], [s].[ProductID], [s].[ProductID0], [s].[O
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -55,7 +54,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -88,7 +86,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

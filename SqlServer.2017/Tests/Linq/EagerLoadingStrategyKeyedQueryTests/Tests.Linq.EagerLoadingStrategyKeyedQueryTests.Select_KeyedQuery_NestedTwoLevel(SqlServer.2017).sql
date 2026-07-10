@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,7 +24,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SqlServer.2017
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],

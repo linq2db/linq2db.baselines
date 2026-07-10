@@ -1,7 +1,6 @@
 ﻿
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -26,7 +25,6 @@ FROM
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -56,7 +54,6 @@ FROM
 
 
 -- SqlServer.2017
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],

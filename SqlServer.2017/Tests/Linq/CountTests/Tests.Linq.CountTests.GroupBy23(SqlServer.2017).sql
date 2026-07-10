@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	COUNT(IIF([g_1].[ParentID] < 2, 1, NULL))
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p2].[ParentID],
 	[c_2].[ChildIDCount]
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN [Parent] [p2] ON [p].[ParentID] = [p2].[ParentID]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -33,7 +31,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -41,7 +38,6 @@ FROM
 	[Parent] [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
