@@ -1,16 +1,13 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS Issue5014TestTable
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 CREATE TABLE "Issue5014TestTable" (
 	"Id" INTEGER NOT NULL PRIMARY KEY,
 	"Name" TEXT NOT NULL
 ) without rowid;
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -26,7 +23,6 @@ CREATE TABLE "Issue5014TestTable" (
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -39,7 +35,6 @@ CREATE TABLE "Issue5014TestTable" (
 			
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -70,7 +65,6 @@ CREATE TABLE "Issue5014TestTable" (
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -80,11 +74,9 @@ CREATE TABLE "Issue5014TestTable" (
 			
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -101,6 +93,5 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS Issue5014TestTable
 

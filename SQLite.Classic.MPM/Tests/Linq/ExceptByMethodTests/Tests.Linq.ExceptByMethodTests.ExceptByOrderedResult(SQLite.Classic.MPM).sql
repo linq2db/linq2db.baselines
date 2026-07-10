@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]
@@ -21,7 +20,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

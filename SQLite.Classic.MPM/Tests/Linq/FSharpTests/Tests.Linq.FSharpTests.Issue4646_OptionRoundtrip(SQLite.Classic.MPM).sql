@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[IntValue],
@@ -53,7 +52,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[IntValue],

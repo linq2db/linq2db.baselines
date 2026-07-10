@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1] ([Id2], [Id1])
 AS
 (

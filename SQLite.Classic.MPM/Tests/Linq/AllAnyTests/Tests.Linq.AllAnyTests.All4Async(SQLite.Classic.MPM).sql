@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	NOT EXISTS(
 		SELECT

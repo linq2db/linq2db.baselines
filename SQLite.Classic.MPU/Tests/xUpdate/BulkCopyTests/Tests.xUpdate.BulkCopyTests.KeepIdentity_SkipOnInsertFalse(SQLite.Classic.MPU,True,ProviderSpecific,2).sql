@@ -12,11 +12,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [AllTypes]
 (
 	[ID],

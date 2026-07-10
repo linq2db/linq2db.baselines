@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[r].[Value]
 FROM

@@ -38,7 +38,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[RecordDate]
 FROM
@@ -47,7 +46,6 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.999')
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[RecordDate]
 FROM

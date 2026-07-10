@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]
@@ -9,7 +8,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[d].[CompanyId],
 	[d].[Id],
@@ -22,7 +20,6 @@ ORDER BY
 	[d].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

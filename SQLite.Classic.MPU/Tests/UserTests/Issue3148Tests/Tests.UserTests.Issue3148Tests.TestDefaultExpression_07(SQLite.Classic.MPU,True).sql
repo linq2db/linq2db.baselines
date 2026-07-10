@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -17,14 +16,12 @@ WHERE
 	[a_Parent].[ParentID] IS NOT NULL
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -42,7 +39,6 @@ WHERE
 	[a_Parent].[ParentID] IS NOT NULL
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[p].[ParentID]
 FROM

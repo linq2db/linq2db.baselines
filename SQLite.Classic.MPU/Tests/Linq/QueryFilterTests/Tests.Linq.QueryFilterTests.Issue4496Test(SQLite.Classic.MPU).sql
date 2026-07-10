@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]
@@ -10,7 +9,6 @@ WHERE
 	[x].[ChildID] > 30
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[x].[ParentID],
 	[x].[ChildID]

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],
@@ -10,7 +9,6 @@ WHERE
 	[x].[ParentID] IN (2)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[ParentID],
 	[x].[ChildID],

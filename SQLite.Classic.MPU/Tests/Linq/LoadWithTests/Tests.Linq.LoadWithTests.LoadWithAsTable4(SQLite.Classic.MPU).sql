@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[ParentID],
 	[t].[Value1]

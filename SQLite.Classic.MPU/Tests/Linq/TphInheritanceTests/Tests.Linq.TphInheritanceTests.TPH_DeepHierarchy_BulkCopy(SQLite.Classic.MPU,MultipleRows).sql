@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [TphDeepPerson]
 (
 	[Id],
@@ -11,7 +10,6 @@ VALUES
 (1,'GrandChild','Tom','Black')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Code],
 	[t1].[Id],

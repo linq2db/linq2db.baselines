@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Issue1403Tests_3]
 (
 	[event_id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[event_id],
 	[t1].[event_description]

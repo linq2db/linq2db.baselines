@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[DetailId],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[DetailId],
@@ -31,7 +29,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*),
 	[g_1].[Id1]

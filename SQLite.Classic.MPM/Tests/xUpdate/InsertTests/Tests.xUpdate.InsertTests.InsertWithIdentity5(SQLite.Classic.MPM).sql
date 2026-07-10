@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -76,7 +74,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -96,7 +93,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Person]
 WHERE

@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

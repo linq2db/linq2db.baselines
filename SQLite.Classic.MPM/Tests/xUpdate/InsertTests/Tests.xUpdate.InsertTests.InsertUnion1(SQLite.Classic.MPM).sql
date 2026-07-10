@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -31,7 +29,6 @@ FROM
 	) [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,7 +37,6 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -10,7 +9,6 @@ WHERE
 	[p].[ParentID] = [c_1].[ParentID] AND ([p].[Value1] NOT IN (1, 2, 3) OR [p].[Value1] IS NULL)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -18,7 +16,6 @@ FROM
 	[Child] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

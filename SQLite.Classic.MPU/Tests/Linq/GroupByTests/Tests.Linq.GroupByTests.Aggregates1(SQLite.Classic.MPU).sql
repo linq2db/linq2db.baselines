@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*),
 	SUM([g_1].[ChildID]),

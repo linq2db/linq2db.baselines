@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[ess].[ID]
 FROM

@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],
@@ -92,7 +91,6 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[DeviceType],
 	[t1].[Id],

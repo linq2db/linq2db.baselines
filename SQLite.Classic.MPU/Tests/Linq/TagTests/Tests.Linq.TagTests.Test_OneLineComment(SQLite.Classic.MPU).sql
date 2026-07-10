@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 /* My Test */
 SELECT
 	[x].[FirstName],

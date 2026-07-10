@@ -30,7 +30,6 @@ SET
 	[SomeValue2] = 4
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],
@@ -49,7 +48,6 @@ SET
 	[SomeValue2] = @param
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[SomeValue1],

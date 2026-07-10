@@ -19,7 +19,6 @@ WHERE
 	[EntityUpdateTest].[Id] = @Id
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

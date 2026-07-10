@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid1]
@@ -10,16 +9,13 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid1) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid2]
@@ -30,16 +26,13 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid2) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid3]
@@ -50,16 +43,13 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid3) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid4]
@@ -70,16 +60,13 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid4) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[TextGuid1]
@@ -90,20 +77,16 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(TextGuid1) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT TextGuid1 FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[TextGuid2]
@@ -114,15 +97,12 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(TextGuid2) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT TextGuid2 FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -140,11 +120,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid1) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -162,11 +140,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid2) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -184,11 +160,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid3) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -206,11 +180,9 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(BlobGuid4) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -228,15 +200,12 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(TextGuid1) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT TextGuid1 FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -254,20 +223,16 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT typeof(TextGuid2) FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT TextGuid2 FROM GuidMapping
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid1],
@@ -281,7 +246,6 @@ VALUES
 (X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11',X'3D667BBCDE0F27438F925D8CC3A11D11','BC7B663D-0FDE-4327-8F92-5D8CC3A11D11','BC7B663D-0FDE-4327-8F92-5D8CC3A11D11')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[BlobGuid1],
 	[t1].[BlobGuid2],
@@ -293,12 +257,10 @@ FROM
 	[GuidMapping] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid1],
@@ -319,7 +281,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[BlobGuid1],
 	[t1].[BlobGuid2],
@@ -331,7 +292,6 @@ FROM
 	[GuidMapping] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
@@ -369,7 +329,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[BlobGuid1],
 	[t1].[BlobGuid2],
@@ -381,20 +340,16 @@ FROM
 	[GuidMapping] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[GuidMapping]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO GuidMapping(BlobGuid1, BlobGuid2, BlobGuid3, BlobGuid4, TextGuid1, TextGuid2) VALUES('BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11', 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO GuidMapping(BlobGuid1, BlobGuid2, BlobGuid3, BlobGuid4, TextGuid1, TextGuid2) VALUES(x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11', x'3D667BBCDE0F27438F925D8CC3A11D11')
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[BlobGuid1],
 	[t1].[BlobGuid2],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[l].[Id],
 	[dtoLocationMapping].[id],
@@ -11,7 +10,6 @@ WHERE
 	[dtoLocationMapping].[id] = 1
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[dtoPersonDto].[Id],
 	[dtoPersonDto].[Name]

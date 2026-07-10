@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[c2].[ParentID]
 FROM

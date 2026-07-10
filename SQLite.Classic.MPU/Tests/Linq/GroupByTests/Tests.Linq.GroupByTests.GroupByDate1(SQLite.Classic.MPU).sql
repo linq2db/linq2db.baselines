@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	SUM([grp_1].[MoneyValue]),
 	[grp_1].[Year_1],

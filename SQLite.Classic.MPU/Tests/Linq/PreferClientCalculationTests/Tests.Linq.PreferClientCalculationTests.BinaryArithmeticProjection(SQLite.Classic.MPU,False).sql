@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1] + 12345
@@ -7,7 +6,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

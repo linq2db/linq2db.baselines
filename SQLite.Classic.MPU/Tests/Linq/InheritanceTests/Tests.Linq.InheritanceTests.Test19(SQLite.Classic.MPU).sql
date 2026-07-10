@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT DISTINCT
 	[p1].[PersonID],
 	[p1].[Gender],

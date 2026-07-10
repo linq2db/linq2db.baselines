@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [Table_3056]
 (
 	[Name],

@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	MAX([g_1].[Value4]),
 	GROUP_CONCAT([g_1].[Value4], ' -> ')

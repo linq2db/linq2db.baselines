@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Type],

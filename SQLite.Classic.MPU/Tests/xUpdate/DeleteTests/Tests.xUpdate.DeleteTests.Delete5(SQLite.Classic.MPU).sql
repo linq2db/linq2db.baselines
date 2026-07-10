@@ -1,12 +1,10 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] > 1000
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -43,7 +41,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,14 +49,12 @@ WHERE
 	[t1].[ParentID] > 1000
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
 	[Parent].[ParentID] IN (1001, 1002)
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

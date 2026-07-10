@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[Id]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce([e].[StrReq], '') || ' I') = 'Programmer I'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

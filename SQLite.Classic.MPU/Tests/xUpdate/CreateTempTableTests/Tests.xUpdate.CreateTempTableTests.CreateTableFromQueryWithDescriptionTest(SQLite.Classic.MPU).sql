@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
@@ -10,7 +9,6 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[FirstName],
@@ -29,20 +27,17 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

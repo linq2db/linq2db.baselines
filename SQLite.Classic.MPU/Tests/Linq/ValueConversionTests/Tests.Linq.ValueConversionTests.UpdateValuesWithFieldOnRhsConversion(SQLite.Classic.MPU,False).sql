@@ -15,7 +15,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],
@@ -28,7 +27,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

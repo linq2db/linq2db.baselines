@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[EventCode],
 	[t1].[Id],

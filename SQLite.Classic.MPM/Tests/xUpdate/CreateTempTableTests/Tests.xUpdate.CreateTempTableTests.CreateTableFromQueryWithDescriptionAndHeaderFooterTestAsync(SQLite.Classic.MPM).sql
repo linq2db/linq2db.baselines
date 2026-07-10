@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 /* THIS IS ASYNC HEADER*/ CREATE TABLE [TempTable]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
@@ -15,7 +13,6 @@ DROP TABLE IF EXISTS [TempTable]
 /* THIS IS ASYNC FOOTER*/
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[FirstName],
@@ -34,20 +31,17 @@ FROM
 	[Person] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[TempTable] [t1]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

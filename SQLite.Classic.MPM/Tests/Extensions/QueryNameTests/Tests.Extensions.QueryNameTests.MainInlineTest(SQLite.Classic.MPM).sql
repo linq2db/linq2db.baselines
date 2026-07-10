@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT /* Main */
 	[p].[ParentID],
 	[p].[Value1],

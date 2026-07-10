@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[ParentID],
 	(
@@ -14,7 +13,6 @@ FROM
 	[Parent] [t]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[ParentID],
 	(

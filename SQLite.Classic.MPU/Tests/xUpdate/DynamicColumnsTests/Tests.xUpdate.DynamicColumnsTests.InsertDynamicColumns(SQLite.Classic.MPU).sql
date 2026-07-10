@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -13,7 +13,6 @@ WHERE
 	[d].[Lang] = @lang
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[item_1].[Name],
 	[item_1].[Id]

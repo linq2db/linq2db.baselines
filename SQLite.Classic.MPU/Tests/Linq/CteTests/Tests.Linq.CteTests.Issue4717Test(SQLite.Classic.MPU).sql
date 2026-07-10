@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue4717Address]
 (
 	[Id],
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue4717Warehouse]
 (
 	[Id],
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue4717UnitOfMeasure]
 (
 	[Id],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -26,7 +24,6 @@ FROM
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[e].[Id]
 FROM

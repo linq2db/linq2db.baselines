@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	CAST([c_1].[Id] AS NVarChar(11)),
 	[c_1].[Name]

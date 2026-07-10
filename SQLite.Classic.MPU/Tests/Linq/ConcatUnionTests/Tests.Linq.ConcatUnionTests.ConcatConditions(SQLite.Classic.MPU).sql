@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -30,7 +29,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Parent1],
 	[t1].[ParentID],
@@ -61,7 +59,6 @@ FROM
 		LEFT JOIN [Parent] [p_1] ON [p_1].[ParentID] = [t2].[ParentID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -69,7 +66,6 @@ FROM
 	[Child] [t1]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

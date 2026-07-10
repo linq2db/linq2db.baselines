@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[a_1].[Id],
 	[bc].[AId],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	Coalesce([t].[Value1], '') || Coalesce(CAST([t].[Value2] AS NVarChar(11)), '') || Coalesce(CASE
 		WHEN [t].[Value3] IS NULL THEN NULL
@@ -11,7 +10,6 @@ ORDER BY
 	[t].[ID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

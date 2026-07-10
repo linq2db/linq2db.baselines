@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[Id],
 	[p2].[Id],
@@ -11,7 +10,6 @@ WHERE
 	[p2].[Id] IS NULL OR [p2].[StringProp] = '-1'
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

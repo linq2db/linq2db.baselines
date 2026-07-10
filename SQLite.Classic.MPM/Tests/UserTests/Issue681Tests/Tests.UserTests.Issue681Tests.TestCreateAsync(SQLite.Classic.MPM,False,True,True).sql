@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [Issue681Table2]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 CREATE TABLE [main].[Issue681Table2]
 (
 	[ID]    INTEGER NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE [main].[Issue681Table2]
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [Issue681Table2]
 

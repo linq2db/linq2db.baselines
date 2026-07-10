@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[x].[ChildID],
 	[x].[ParentID],

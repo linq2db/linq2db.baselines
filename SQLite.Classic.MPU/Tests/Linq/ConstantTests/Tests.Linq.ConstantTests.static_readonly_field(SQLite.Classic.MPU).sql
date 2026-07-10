@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[e].[Id],
 	[e].[GuidValue],
@@ -12,7 +11,6 @@ WHERE
 	[e].[GuidNullableValue] = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

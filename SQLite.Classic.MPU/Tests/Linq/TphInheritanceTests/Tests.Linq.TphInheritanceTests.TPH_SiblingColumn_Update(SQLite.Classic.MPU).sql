@@ -56,7 +56,6 @@ WHERE
 	[Tickets].[EventCode] = 'TicketChild2' AND [Tickets].[Id] = 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[EventCode],
 	[t1].[Id],
@@ -68,7 +67,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[EventCode],
 	[t1].[Id],

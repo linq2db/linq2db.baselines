@@ -28,7 +28,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [t].[VarCharColumn] IS NOT NULL THEN LTRIM([t].[VarCharColumn], '.+')

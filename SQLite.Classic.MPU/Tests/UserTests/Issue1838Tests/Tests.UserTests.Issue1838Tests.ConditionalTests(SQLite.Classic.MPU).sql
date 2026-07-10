@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -28,7 +27,6 @@ FROM
 		) [ia] ON [ia].[InvoiceId] = [i].[InvoiceID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -41,7 +39,6 @@ FROM
 		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE

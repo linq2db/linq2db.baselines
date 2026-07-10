@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [cte] ([Id], [FirstName], [LastName])
 AS
 (

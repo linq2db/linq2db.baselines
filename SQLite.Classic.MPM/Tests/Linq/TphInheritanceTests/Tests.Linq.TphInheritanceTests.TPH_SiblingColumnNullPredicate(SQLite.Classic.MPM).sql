@@ -70,7 +70,6 @@ VALUES
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -79,7 +78,6 @@ WHERE
 	[t].[EventCode] = 'TicketChild2' AND [t].[TicketChild2Code] IS NULL
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

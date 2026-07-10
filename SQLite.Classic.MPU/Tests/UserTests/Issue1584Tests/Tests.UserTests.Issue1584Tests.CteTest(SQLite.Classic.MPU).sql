@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [rateCost]
 (
 	[RateEntry_TI_PK],

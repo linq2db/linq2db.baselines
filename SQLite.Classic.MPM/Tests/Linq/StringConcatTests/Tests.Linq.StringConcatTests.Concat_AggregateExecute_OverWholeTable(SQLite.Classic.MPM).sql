@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	GROUP_CONCAT(Coalesce([t2].[Value_1], ''), '')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[InId],
 	CASE
@@ -18,7 +17,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[InId],
 	CASE

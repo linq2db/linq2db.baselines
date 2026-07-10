@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	CASE
 		WHEN [t1].[EnumNullable] IS NOT NULL THEN [t1].[EnumNullable]

@@ -18,7 +18,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[d].[Id],
 	[d].[Name]

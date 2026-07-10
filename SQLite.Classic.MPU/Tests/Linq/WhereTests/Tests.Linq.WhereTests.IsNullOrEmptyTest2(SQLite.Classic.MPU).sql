@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[nm].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Length([nm].[FirstName]) <> 0
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

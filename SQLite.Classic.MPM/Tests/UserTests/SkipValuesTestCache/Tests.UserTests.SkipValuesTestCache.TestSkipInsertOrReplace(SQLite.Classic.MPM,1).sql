@@ -18,7 +18,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Name] = @Name
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],
@@ -49,7 +48,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Name] = @Name
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

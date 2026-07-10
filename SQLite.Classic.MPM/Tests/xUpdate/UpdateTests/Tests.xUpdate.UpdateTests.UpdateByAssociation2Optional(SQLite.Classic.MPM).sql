@@ -12,7 +12,6 @@ WHERE
 	[p].[Id] = @id AND [p].[Id] = [MainTable].[Id]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

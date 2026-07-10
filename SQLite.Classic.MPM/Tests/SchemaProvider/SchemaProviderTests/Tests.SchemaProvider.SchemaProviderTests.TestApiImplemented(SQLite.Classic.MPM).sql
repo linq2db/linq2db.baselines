@@ -1,6 +1,5 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					''                         AS CatalogName,
@@ -15,7 +14,6 @@
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -28,7 +26,6 @@
 			
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -59,7 +56,6 @@
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -69,11 +65,9 @@
 			
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
