@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 DECLARE @value_1 Integer -- Int32

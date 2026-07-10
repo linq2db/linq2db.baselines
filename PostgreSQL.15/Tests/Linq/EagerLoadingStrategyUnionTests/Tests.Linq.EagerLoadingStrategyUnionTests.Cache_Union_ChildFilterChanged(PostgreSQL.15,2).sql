@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @minSalary Integer -- Int32
 SET     @minSalary = 45000
 

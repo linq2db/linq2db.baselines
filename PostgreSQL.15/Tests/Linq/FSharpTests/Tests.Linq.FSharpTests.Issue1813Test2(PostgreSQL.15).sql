@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(5) -- String
@@ -15,7 +15,7 @@ VALUES
 	:Name
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name Text(5) -- String
@@ -32,7 +32,7 @@ VALUES
 	:Name
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Text Text(7) -- String
@@ -49,7 +49,7 @@ VALUES
 	:Text
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id",
@@ -61,7 +61,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	after_1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @arr -2147483629 -- Object
 SET     @arr = {'A','B'}
 

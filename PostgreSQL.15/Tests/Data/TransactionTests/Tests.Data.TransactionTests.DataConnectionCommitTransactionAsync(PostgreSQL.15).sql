@@ -1,5 +1,5 @@
 ﻿BeginTransactionAsync
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 CommitTransactionAsync
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 DELETE FROM
 	"Parent" t1

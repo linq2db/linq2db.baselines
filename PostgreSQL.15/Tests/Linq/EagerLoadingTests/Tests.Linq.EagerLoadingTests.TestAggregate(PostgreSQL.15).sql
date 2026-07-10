@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	Coalesce((
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"MasterClass" m_1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	m_1."Id1",
@@ -52,7 +52,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id1",

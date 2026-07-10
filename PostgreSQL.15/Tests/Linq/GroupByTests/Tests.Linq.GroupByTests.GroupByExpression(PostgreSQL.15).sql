@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @defValue Integer -- Int32
 SET     @defValue = 10
 

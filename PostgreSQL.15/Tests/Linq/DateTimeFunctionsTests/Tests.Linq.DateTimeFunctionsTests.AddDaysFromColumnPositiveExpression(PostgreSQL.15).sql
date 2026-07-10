@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
@@ -39,7 +39,7 @@ VALUES
 	:StringValue
 )
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
@@ -52,7 +52,7 @@ FROM
 WHERE
 	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0)
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t

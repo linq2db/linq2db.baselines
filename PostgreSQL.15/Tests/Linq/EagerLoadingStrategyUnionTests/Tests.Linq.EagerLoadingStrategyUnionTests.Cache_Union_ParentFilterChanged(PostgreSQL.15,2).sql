@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @maxCompanyId Integer -- Int32
 SET     @maxCompanyId = 2
 

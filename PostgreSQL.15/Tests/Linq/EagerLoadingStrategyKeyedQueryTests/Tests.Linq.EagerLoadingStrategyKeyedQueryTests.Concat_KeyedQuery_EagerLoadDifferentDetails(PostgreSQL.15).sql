@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -26,7 +26,7 @@ FROM
 			NOT d_1."IsActive"
 	) t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	k_1."Item1",
@@ -46,7 +46,7 @@ WHERE
 ORDER BY
 	d."Id"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	k_1."Item1",

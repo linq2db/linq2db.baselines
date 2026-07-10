@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 DECLARE @value Numeric(1, 0) -- Decimal
 SET     @value = 1
 
@@ -14,7 +14,7 @@ FROM
 			"Person" r
 	) t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 DECLARE @value Numeric(10, 0) -- Decimal
 SET     @value = 2147483648
 

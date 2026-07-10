@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.15 PostgreSQL13
+﻿-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	u."Id",
@@ -19,7 +19,7 @@ FROM
 				g_1."UserId"
 		) aq ON aq."Key_1" = u."Id"
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -27,7 +27,7 @@ SELECT
 FROM
 	"User" t1
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."UserId",

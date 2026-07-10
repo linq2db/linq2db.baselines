@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING "Id";
 
 
--- PostgreSQL.15 PostgreSQL13
+-- PostgreSQL.15 PostgreSQL12
 
 SELECT
 	t1."Discriminator",
