@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN r."PersonID" IN (1, 2, 3) THEN 1

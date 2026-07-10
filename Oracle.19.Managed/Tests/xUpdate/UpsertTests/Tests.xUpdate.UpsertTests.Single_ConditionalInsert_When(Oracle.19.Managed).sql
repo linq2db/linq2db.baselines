@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 1 AS "Id", 'skip' AS "Name", 0 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -38,7 +37,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN EXISTS(
@@ -53,7 +51,6 @@ SELECT
 FROM SYS.DUAL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 2 AS "Id", 'keep' AS "Name", 5 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -92,7 +89,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",

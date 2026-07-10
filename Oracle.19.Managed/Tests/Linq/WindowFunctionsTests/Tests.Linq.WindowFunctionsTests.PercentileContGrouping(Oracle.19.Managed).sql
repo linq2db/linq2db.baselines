@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_1."CategoryId",
 	PERCENTILE_CONT(0.5D) WITHIN GROUP (ORDER BY g_1."DecimalValue"),

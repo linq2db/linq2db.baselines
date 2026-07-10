@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "Person" Target
 USING (
 	SELECT
@@ -22,7 +21,6 @@ SET
 	"LastName" = 'last ' || "Source"."Patient_Diagnosis_1"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

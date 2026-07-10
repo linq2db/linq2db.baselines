@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 INSERT INTO "TrimTestTable"
 (
 	ID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"
@@ -22,7 +20,6 @@ ORDER BY
 	r.ID
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r.ID,
 	r."Data"

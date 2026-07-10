@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "Table"
 (
 	ID Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE "Table"
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 DROP TABLE "Table"
 

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	r."Id",
 	CASE
@@ -106,7 +105,6 @@ WHERE
 	r."Id" <> -1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Value1",

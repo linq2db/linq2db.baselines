@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	m_1."Name",
@@ -13,7 +12,6 @@ ORDER BY
 	m_1."Id"
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	c_1."Id",
 	c_1."Name"

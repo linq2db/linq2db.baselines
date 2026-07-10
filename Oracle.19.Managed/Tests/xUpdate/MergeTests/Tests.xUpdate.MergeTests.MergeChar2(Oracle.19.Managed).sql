@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 MERGE INTO "AllTypes" Target
 USING (
 	SELECT 10 AS ID, chr(0) AS "charDataType", chr(0) AS "ncharDataType", NULL AS "nvarcharDataType" FROM sys.dual) "Source"

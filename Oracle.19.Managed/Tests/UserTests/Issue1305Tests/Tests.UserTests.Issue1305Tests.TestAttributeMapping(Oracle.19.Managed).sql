@@ -1,13 +1,10 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT USER FROM DUAL
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 select user from dual
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -40,7 +37,6 @@ FROM
 ORDER BY TableID, isView
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
 	FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
@@ -58,7 +54,6 @@ WHERE
 IN ('SYSTEM')
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	(SELECT USER FROM DUAL) || '.' || c.TABLE_NAME as TableID,
 	c.COLUMN_NAME                                  as Name,
@@ -77,7 +72,6 @@ FROM USER_TAB_COLUMNS c
 		c.COLUMN_NAME = cc.COLUMN_NAME
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 
 	FKCON.CONSTRAINT_NAME                    as Name,
@@ -98,7 +92,6 @@ WHERE
 ORDER BY Ordinal, Name
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	USER                                                                                                                                 AS Owner,
 	1                                                                                                                                    AS IsDefault,
@@ -118,7 +111,6 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	USER           AS Owner,
 	PACKAGE_NAME   AS PackageName,
@@ -136,7 +128,6 @@ WHERE SEQUENCE > 0 AND DATA_LEVEL = 0 AND OWNER = USER
 	AND (DATA_TYPE <> 'TABLE' OR IN_OUT <> 'OUT' OR POSITION <> 0)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SYSTEM.ISSUE2132.TEST
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -148,7 +139,6 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE1.TEST_PROCEDURE
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -160,11 +150,9 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SYSTEM.ADDISSUE792RECORD
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -242,27 +230,21 @@ SET     @PINPUTOUTPUTSTRARRAY = NULL
 SYSTEM.ARRAYTEST
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$COL_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$GSBA_GG_TABF_PUBLIC(NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$KEY_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$SEQ_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$TAB_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.LOGMNR$USER_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -356,7 +338,6 @@ SET     @O = 0
 SYSTEM.TEST_PROCEDURE
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT * FROM SYSTEM.TEST_TABLE_FUNCTION(NULL)
 
 RollbackTransaction

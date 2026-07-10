@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	'I-' || CAST(x."PersonID" AS VarChar(255)),
 	x."FirstName"

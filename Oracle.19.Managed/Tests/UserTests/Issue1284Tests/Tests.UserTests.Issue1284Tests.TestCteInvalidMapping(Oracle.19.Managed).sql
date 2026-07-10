@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH CTE_1
 (
 	"entry_FirstName",
@@ -33,7 +32,6 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	person_1."FirstName",
 	person_1."PersonID",

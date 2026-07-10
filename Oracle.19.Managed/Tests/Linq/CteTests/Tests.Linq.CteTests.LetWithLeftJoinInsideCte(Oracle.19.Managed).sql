@@ -25,7 +25,6 @@ VALUES
 )
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
 WITH CTE_1 (S1)
 AS
 (

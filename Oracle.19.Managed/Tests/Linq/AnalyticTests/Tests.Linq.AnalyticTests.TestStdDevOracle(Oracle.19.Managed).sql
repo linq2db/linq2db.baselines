@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	STDDEV(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	STDDEV(DISTINCT p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),

@@ -1,5 +1,4 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1", a_ParentTest."Value1", c_1."ParentID" DESC),
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1" NULLS LAST, c_1."ParentID" DESC NULLS FIRST),
