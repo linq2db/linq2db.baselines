@@ -26,8 +26,6 @@ ORDER BY
 
 
 
-
-
 -- PostgreSQL.18 PostgreSQL12
 
 SELECT

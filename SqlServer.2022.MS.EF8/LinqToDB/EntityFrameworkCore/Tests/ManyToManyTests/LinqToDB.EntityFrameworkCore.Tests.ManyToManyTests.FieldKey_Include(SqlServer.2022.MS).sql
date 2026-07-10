@@ -24,8 +24,6 @@ ORDER BY
 
 
 
-
-
 -- SqlServer.2022
 
 SELECT

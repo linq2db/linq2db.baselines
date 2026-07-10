@@ -77,8 +77,6 @@ FROM
 
 
 
-
-
 -- SqlServer.2025
 
 SELECT

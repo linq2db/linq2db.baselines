@@ -91,8 +91,6 @@ FROM
 
 
 
-
-
 -- MySql.5.7.MySqlConnector MySql57
 
 SELECT

@@ -99,8 +99,6 @@ WHERE
 
 
 
-
-
 -- MariaDB.10.MySqlConnector MariaDB
 
 SELECT

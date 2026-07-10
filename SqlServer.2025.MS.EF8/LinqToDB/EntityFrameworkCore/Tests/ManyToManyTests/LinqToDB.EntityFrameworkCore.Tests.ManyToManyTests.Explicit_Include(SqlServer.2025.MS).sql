@@ -25,8 +25,6 @@ ORDER BY
 
 
 
-
-
 -- SqlServer.2025
 
 SELECT

@@ -77,8 +77,6 @@ FROM
 
 
 
-
-
 -- SqlServer.2016
 
 SELECT
