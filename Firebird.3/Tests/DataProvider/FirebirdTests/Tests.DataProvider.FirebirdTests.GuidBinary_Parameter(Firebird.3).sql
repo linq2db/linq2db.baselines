@@ -1,0 +1,8 @@
+﻿-- Firebird.3 Firebird3
+DECLARE @value Guid
+SET     @value = X'6F9619FF8B86D011B42D00C04FC964FF'
+
+SELECT
+	CAST(@value AS CHAR(16) CHARACTER SET OCTETS)
+FROM rdb$database
+
