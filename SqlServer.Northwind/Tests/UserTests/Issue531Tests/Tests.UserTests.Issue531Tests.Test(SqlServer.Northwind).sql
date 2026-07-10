@@ -27,7 +27,6 @@ WHERE
 	[e].[Extension] = @ext
 
 -- SqlServer.Northwind SqlServer.2019
-
 SELECT
 	[e].[EmployeeID],
 	[e].[LastName],

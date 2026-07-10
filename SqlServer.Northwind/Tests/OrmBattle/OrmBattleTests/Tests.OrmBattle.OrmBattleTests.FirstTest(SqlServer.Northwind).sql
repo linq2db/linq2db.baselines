@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[CustomerID],
 	[t1].[CompanyName],

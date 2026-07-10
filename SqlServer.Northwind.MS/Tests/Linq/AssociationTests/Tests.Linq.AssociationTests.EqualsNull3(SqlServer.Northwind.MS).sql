@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT
 	[a_ReportsToEmployee].[EmployeeID],
 	[a_ReportsToEmployee].[LastName],

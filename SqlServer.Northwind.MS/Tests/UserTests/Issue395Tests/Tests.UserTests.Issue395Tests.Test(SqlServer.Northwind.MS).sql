@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[Key_1],
 	SUM([t1].[Via1]),

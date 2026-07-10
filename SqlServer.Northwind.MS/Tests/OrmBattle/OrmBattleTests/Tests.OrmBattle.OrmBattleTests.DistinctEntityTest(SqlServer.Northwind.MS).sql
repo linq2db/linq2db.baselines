@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 SELECT DISTINCT
 	[t1].[CustomerID],
 	[t1].[CompanyName],

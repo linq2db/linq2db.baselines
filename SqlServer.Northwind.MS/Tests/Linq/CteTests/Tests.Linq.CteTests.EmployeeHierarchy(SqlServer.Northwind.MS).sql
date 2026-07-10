@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
-
 WITH [CTE_1]
 (
 	[ReportsTo],
