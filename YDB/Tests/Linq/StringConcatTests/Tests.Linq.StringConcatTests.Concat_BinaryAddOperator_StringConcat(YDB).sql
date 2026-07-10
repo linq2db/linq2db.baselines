@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.StrReq as StrReq
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Coalesce(e.StrReq, ''u) || ' I'u) = 'Programmer I'u
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Str1 as Str1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE
@@ -29,7 +28,6 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -43,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

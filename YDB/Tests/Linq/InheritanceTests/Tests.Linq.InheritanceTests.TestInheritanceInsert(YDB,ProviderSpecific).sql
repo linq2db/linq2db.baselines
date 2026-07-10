@@ -1,7 +1,6 @@
 ﻿INSERT ASYNC BULK InheritanceFilter(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
 -- YDB Ydb
-
 SELECT
 	t1.Code as Code,
 	t1.Id as Id,

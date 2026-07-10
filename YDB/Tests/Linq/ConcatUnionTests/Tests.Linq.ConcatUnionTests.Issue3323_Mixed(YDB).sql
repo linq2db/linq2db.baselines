@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	Coalesce(r.FirstName, ''u) || ' 'u || Coalesce(r.LastName, ''u) as Text
@@ -30,7 +28,6 @@ FROM
 	Issue3323Table r_1
 
 -- YDB Ydb
-
 SELECT
 	r.Id + 1 as Id,
 	r.Text as Text

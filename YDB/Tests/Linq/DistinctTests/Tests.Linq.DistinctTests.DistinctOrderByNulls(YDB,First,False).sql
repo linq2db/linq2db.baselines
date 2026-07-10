@@ -11,7 +11,6 @@ ORDER BY
 LIMIT $take
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

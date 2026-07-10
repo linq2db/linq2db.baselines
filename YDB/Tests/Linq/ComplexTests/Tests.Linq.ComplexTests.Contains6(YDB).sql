@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.ParentID as ParentID
 	FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID
 FROM
@@ -19,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID
 FROM

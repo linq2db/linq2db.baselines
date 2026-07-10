@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	m_1.C1 as C1,
@@ -38,7 +37,6 @@ ORDER BY
 	END
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.C1 as C1

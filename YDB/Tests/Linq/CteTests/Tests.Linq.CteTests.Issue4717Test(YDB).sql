@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue4717Address
 (
 	Id,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Issue4717Warehouse
 (
 	Id,
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Issue4717UnitOfMeasure
 (
 	Id,

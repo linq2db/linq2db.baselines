@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	MAX(r.PersonID) as c1
 FROM

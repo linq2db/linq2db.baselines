@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		CASE
 			WHEN g_2.EnumValue IS NOT NULL THEN g_2.EnumValue

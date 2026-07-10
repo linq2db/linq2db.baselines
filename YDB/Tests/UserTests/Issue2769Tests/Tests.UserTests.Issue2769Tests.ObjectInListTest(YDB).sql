@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_1.Id as Id,
 	a_1.NullValue as NullValue

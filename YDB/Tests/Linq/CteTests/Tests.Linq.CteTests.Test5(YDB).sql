@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		t1.ParentID as ParentID
 	FROM
@@ -22,7 +21,6 @@ FROM
 		INNER JOIN $CTE_1 c2 ON p.ParentID = c2.ParentID
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

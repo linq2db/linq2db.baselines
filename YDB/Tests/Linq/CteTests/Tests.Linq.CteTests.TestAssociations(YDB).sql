@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $BooksCte = 	SELECT
 		t1.AuthorId as AuthorId,
 		t1.Title as Title

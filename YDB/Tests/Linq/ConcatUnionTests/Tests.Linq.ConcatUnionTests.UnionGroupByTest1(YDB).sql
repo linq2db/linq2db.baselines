@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.month_1 as month_1,
 	t2.year_1 as year_1,

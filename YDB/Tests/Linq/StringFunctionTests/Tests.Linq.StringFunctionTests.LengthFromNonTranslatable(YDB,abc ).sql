@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.Str as Str,
 	CAST(Unicode::GetLength(t.Str) AS Int32) as Length_1,
@@ -8,7 +7,6 @@ FROM
 	TestLengthModel t
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Str as Str

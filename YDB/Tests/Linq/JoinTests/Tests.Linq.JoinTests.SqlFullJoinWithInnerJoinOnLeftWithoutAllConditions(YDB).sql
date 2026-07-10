@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.ParentID as ParentID,
 	t1.ParentID as Right_1

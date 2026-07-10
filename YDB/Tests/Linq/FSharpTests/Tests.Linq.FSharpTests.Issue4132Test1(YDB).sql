@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue4132Table
 (
 	Id,

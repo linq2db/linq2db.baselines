@@ -54,7 +54,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	p.Id as Id,
 	p.TargetName as TargetName,

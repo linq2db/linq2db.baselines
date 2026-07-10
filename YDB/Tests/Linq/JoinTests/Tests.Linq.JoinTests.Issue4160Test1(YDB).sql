@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	t2.Value_1 as Value_1
 FROM

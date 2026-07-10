@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_PersonDoctor.FirstName as FirstName
 FROM

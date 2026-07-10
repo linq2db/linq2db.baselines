@@ -59,7 +59,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.IntValue as IntValue
@@ -71,7 +70,6 @@ ORDER BY
 	r.ID
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.IntValue as IntValue,

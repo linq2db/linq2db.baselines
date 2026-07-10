@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Value1 as Value1,
 	p.Value1 * 100 as Value_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CAST(Re2::Replace('^[.+]+'u)(CAST(t.VarCharColumn AS String?), '') AS Utf8?) as c1
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.Id
 
 -- YDB Ydb
-
 SELECT
 	CAST(Re2::Replace('^[ab]+'u)(CAST(t.VarCharColumn AS String?), '') AS Utf8?) as c1
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.ParentID as ParentID
 	FROM
@@ -22,7 +21,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.ParentID as ParentID
 	FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	ROW_NUMBER() OVER (PARTITION BY t.CategoryId ORDER BY t.Id) as c1,
 	RANK() OVER (PARTITION BY t.CategoryId ORDER BY t.Id) as c2,

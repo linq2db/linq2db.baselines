@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_2.Id1 as Id1,
 	d.DetailId as DetailId,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 -- YDB Ydb
-
 SELECT
 	m_2.Id1 as Id1,
 	d_1.DetailId as DetailId,
@@ -43,7 +41,6 @@ ORDER BY
 	d_1.DetailId
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id1 as Id1,
 	m_1.Id2 as Id2,
@@ -53,7 +50,6 @@ FROM
 	MasterClass m_1
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id1 as Id1,
 	d.DetailId as DetailId,
@@ -69,7 +65,6 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id1 as Id1,
 	t1.Id2 as Id2,

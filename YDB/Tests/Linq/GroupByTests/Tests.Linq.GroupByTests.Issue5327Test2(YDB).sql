@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Key_1 as Key_1,
 	t1.Sum_1 as Sum_1
@@ -17,7 +16,6 @@ ORDER BY
 	t1.Sum_1 DESC
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Key` as Key_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	cc_1.Name as Name
 FROM

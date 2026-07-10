@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	ch.ParentID as ParentID,
 	ch.ChildID as ChildID
@@ -8,7 +7,6 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	ch.ParentID as ParentID,
 	ch.ChildID as ChildID
@@ -17,7 +15,6 @@ FROM
 LIMIT 3
 
 -- YDB Ydb
-
 SELECT
 	ch.ParentID as ParentID,
 	ch.ChildID as ChildID
@@ -26,7 +23,6 @@ FROM
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	ch.ParentID as ParentID,
 	ch.ChildID as ChildID

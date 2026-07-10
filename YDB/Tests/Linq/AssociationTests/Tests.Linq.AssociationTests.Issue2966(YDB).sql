@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r_1.Diagnosis as Diagnosis,
 	a_Person.FirstName as FirstName

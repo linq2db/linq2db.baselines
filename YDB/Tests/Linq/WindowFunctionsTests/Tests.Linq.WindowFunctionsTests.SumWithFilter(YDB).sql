@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	SUM(CASE

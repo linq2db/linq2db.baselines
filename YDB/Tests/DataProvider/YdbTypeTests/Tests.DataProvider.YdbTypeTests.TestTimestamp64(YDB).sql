@@ -12,7 +12,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -24,7 +23,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -63,7 +61,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -98,7 +95,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -118,7 +114,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -153,7 +148,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -165,7 +159,6 @@ WHERE
 	r.ColumnNullable = Timestamp64('9999-12-31T23:59:59.999999Z')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -206,7 +199,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -243,7 +235,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -265,7 +256,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -302,7 +292,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -314,7 +303,6 @@ WHERE
 	r.ColumnNullable = Timestamp64('9999-12-31T23:59:59.999999Z')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -355,7 +343,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -392,7 +379,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -414,7 +400,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -451,7 +436,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -463,7 +447,6 @@ WHERE
 	r.ColumnNullable = Timestamp64('9999-12-30T23:59:59.999999Z')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -504,7 +487,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -541,7 +523,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -563,7 +544,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -598,7 +578,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -610,7 +589,6 @@ WHERE
 	r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -649,7 +627,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -684,7 +661,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -704,7 +680,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -739,7 +714,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -751,7 +725,6 @@ WHERE
 	r.ColumnNullable = Timestamp64('9999-12-31T23:59:59.999999Z')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -792,7 +765,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -829,7 +801,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -851,7 +822,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -873,7 +843,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -884,7 +853,6 @@ WHERE
 	r.`Column` = Unwrap(CAST(0 as Timestamp64)) AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -895,7 +863,6 @@ WHERE
 	r.`Column` = Unwrap(CAST(0 as Timestamp64)) AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -917,7 +884,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -928,7 +894,6 @@ WHERE
 	r.`Column` = Unwrap(CAST(0 as Timestamp64)) AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -950,7 +915,6 @@ VALUES
 ($p1,$p2,$p3)
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -961,14 +925,12 @@ WHERE
 	r.`Column` = Unwrap(CAST(0 as Timestamp64)) AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -979,14 +941,12 @@ WHERE
 	r.`Column` = Unwrap(CAST(0 as Timestamp64)) AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
 INSERT ASYNC BULK TypeTable`2(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	d.DisTypeID as DisTypeID
 FROM

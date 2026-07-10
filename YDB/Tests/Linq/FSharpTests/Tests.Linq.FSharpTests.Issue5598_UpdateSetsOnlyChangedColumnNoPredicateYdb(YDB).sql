@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue4132Table
 (
 	Id,
@@ -14,14 +13,12 @@ VALUES
 )
 
 -- YDB Ydb
-
 UPDATE
 	Issue4132Table
 SET
 	Text = 'after'u
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Number` as Number_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	TestMerge1
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 DELETE FROM
 	TestMerge2
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1,
@@ -223,7 +220,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1,

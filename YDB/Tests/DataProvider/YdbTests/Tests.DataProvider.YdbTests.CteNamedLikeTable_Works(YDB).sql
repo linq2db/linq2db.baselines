@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $Parent = 	SELECT
 		c_1.ParentID as ParentID,
 		c_1.ChildID as ChildID

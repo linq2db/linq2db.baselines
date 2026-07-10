@@ -49,7 +49,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Code as Code,
 	e.Id as Id,

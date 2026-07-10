@@ -14,7 +14,6 @@ WHERE
 	r.`Column` = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -25,7 +24,6 @@ WHERE
 	r.`Column` = Date('2020-02-29') AND r.ColumnNullable = Date('2020-01-01')
 
 -- YDB Ydb
-
 DELETE FROM
 	DateOnlyTable
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -83,12 +80,10 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	DateOnlyTable
 
 -- YDB Ydb
-
 INSERT INTO DateOnlyTable
 (
 	Id,
@@ -100,7 +95,6 @@ VALUES
 (2,Date('2020-02-29'),Date('2020-01-01'))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -111,14 +105,12 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	DateOnlyTable
 
 INSERT ASYNC BULK DateOnlyTable(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,

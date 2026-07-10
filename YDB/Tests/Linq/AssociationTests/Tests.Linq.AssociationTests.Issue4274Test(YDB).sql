@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	serv.PersonID as PersonID
 FROM

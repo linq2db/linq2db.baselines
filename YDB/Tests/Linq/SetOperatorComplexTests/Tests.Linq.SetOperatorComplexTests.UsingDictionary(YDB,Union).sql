@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST('Discriminator'u AS Text)) as c1,
 	a_Book.Discriminator as Discriminator,
@@ -25,7 +24,6 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'u
 
 -- YDB Ydb
-
 SELECT
 	m_1.BookId as BookId,
 	m_1.AuthorId as AuthorId,
@@ -47,7 +45,6 @@ WHERE
 	m_1.BookId IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	m_1.AuthorId as AuthorId,
 	a_Book.BookId as BookId,
@@ -61,7 +58,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- YDB Ydb
-
 SELECT
 	t1.AuthorId as AuthorId,
 	t1.AuthorName as AuthorName

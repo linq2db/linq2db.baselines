@@ -18,7 +18,6 @@ ORDER BY
 	m_1.Id
 
 -- YDB Ydb
-
 SELECT
 	d.Id as Id,
 	d.Name as Name

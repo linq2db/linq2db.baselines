@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.PersonID as PersonID,
 	a_Doctor.PersonID as PersonID_1,

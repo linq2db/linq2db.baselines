@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.Value_1 as Value_1
@@ -13,7 +12,6 @@ FROM
 	) t1
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.Value_1 as Value_1

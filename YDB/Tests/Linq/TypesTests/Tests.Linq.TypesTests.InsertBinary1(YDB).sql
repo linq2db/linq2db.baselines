@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE

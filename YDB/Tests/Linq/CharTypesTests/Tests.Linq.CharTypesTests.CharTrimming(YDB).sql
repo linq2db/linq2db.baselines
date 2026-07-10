@@ -442,7 +442,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Char` as Char_1,

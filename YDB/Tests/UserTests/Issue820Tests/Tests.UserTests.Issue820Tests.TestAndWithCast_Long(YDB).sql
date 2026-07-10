@@ -19,7 +19,6 @@ WHERE
 	$param = t1.BigIntValue
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.MoneyValue as MoneyValue,

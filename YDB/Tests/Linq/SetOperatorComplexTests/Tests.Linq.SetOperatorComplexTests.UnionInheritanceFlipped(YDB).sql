@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Book.BookId as BookId,
 	a_Book.Discriminator as Discriminator,
@@ -29,7 +28,6 @@ WHERE
 	a_Book_1.Discriminator = 'Roman'u
 
 -- YDB Ydb
-
 SELECT
 	m_1.AuthorId as AuthorId,
 	a_Book.BookId as BookId,
@@ -43,7 +41,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- YDB Ydb
-
 SELECT
 	t1.AuthorId as AuthorId,
 	t1.AuthorName as AuthorName

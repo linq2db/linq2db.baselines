@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE temp_table_1
 (
 	ID      Int32,
@@ -11,7 +10,6 @@ CREATE TABLE temp_table_1
 INSERT ASYNC BULK temp_table_1(ID, Value)
 
 -- YDB Ydb
-
 CREATE TABLE temp_table_2
 (
 	`Value` Text,
@@ -20,7 +18,6 @@ CREATE TABLE temp_table_2
 )
 
 -- YDB Ydb
-
 INSERT INTO temp_table_2
 (
 	`Value`
@@ -41,10 +38,8 @@ WHERE
 	t1.rn = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS temp_table_2
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS temp_table_1
 

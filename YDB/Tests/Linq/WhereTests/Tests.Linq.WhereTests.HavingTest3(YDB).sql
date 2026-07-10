@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.Count_1 as Count_1
 FROM

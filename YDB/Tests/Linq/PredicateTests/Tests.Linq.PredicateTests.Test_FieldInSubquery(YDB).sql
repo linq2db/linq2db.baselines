@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value1 as Value1
 	FROM
@@ -23,7 +22,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -34,7 +32,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value4 as Value4
 	FROM
@@ -58,7 +55,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -69,7 +65,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value1 as Value1
 	FROM
@@ -93,7 +88,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -104,7 +98,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value4 as Value4
 	FROM
@@ -138,7 +131,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -149,7 +141,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value1 as Value1
 	FROM
@@ -173,7 +164,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -184,7 +174,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value4 as Value4
 	FROM
@@ -208,7 +197,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -219,7 +207,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value1 as Value1
 	FROM
@@ -243,7 +230,6 @@ WHERE
 	)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -254,7 +240,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Value4 as Value4
 	FROM
@@ -287,7 +272,6 @@ WHERE
 	))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,

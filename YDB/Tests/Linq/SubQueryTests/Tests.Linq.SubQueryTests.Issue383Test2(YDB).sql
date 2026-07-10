@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a.First_Name as First_Name,
 	a.Last_Name as Last_Name,

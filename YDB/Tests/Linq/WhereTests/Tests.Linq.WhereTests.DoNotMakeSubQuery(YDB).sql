@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p2.PersonID as PersonID,
 	CAST(Re2::Replace('[]+$'u)(CAST((p2.FirstName || ''u) AS String?), '') AS Utf8?) as FirstName

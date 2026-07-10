@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Children.ParentID + p.ParentID as c1
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.TestField as TestField,
@@ -10,7 +9,6 @@ WHERE
 	t1.TestField = 0t
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.TestField as TestField,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as count_1
 FROM

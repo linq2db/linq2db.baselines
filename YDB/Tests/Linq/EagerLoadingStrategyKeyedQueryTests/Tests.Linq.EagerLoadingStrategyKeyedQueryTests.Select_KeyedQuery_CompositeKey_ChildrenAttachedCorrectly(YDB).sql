@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Region as Region,
 	p.Code as Code,
@@ -11,7 +10,6 @@ ORDER BY
 	p.Code
 
 -- YDB Ydb
-
 SELECT
 	k_1.Item1 as Item1,
 	k_1.Item2 as Item2,

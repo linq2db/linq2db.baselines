@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.Min_2 as Min_1
 FROM

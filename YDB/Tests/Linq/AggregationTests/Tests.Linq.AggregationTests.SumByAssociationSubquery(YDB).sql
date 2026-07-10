@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	SUM(Coalesce(CAST(t1.Value_1 AS Int32), 0)) as Value1Sum
@@ -18,7 +17,6 @@ GROUP BY
 	g_1.Id
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -30,7 +28,6 @@ FROM
 		INNER JOIN ItemValue d ON m_1.Id = d.ItemId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name

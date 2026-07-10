@@ -39,7 +39,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	s.Id as Id
 FROM

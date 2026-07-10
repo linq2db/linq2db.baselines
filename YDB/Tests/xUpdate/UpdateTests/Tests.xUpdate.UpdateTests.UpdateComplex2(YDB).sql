@@ -26,7 +26,6 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-
 UPDATE
 	Person
 SET

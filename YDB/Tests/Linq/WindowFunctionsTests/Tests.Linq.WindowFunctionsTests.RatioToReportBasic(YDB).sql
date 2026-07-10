@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	Unwrap(CAST(t.IntValue AS Double)) / CASE

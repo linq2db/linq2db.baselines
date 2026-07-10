@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.charDataType as charDataType
 FROM

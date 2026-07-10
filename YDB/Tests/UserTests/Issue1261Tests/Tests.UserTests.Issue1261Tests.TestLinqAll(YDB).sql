@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	NOT EXISTS(
 		SELECT
@@ -11,7 +10,6 @@ SELECT
 	) as c1
 
 -- YDB Ydb
-
 SELECT
 	NOT EXISTS(
 		SELECT

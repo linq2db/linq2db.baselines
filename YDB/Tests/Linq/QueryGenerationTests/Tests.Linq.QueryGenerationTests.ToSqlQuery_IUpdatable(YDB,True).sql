@@ -12,14 +12,12 @@ VALUES
 )
 
 -- YDB Ydb
-
 UPDATE
 	TableWithIdentity
 SET
 	`Value` = 123
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1

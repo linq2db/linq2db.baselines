@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.ID as ID,
 	p.SmallIntValue as SmallIntValue

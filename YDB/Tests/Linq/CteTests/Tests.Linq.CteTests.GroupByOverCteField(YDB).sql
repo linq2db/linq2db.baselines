@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		gc1.ParentID as ParentID,
 		gc1.ChildID as ChildID,
@@ -23,7 +22,6 @@ FROM
 		INNER JOIN $CTE_1 d ON m_1.Key_1 = Coalesce(d.ParentID, -1)
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		gc1.ParentID as ParentID
 	FROM

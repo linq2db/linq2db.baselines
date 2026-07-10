@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE aa
 (
 	bb Int32,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.bb as bb,
 	t1.cc as cc
@@ -34,6 +32,5 @@ FROM
 	aa t1
 
 -- YDB Ydb
-
 DROP TABLE aa
 

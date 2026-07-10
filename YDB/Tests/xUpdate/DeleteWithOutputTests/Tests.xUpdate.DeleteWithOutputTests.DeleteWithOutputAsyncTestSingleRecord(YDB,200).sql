@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	s.Id as Id,
 	s.`Value` as Value_1,
@@ -10,7 +9,6 @@ WHERE
 	s.Id = 3
 
 -- YDB Ydb
-
 DELETE FROM
 	TableWithData
 WHERE

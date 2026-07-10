@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -12,7 +11,6 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,

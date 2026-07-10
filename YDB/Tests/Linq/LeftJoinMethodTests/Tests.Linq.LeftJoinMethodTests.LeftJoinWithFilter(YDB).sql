@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_1.Name as Name,
 	o.Name as OrderName_1
@@ -10,7 +9,6 @@ WHERE
 	c_1.Id >= 2
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name
@@ -18,7 +16,6 @@ FROM
 	Customer t1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.CustomerId as CustomerId,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	t1.Association as Association

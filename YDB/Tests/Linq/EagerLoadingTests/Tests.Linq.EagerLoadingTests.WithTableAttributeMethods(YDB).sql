@@ -29,7 +29,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		COUNT(*) as Count_1
 	FROM

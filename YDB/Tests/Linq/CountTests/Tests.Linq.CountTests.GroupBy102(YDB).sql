@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.ID1 as ID1,
 	g_2.ID2 + 1 as ID2,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName
 FROM
@@ -11,7 +10,6 @@ FROM
 	Person p_1
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName || '/'u || p.LastName as FirstName
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Name as Name
@@ -29,7 +28,6 @@ FROM
 		INNER JOIN Test3799Item d ON m_1.Id = d.ParentId
 
 -- YDB Ydb
-
 SELECT
 	item_1.Name as Name,
 	t2.Name as Name_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1,
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN TestEntity2 t2 ON t1.Id = t2.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1,
@@ -23,7 +21,6 @@ WHERE
 	t1.Id IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1,

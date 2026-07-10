@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CASE
 		WHEN Unwrap(CAST(Unicode::GetLength(p.FirstName) AS Int32)) <> 0

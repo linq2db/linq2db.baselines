@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE FluentTemp_UpdateAsync
 (
 	ID       Int32,
@@ -45,6 +44,5 @@ WHERE
 	FluentTemp_UpdateAsync.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_UpdateAsync
 

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

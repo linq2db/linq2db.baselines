@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Person
 (
 	FirstName,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -23,7 +21,6 @@ WHERE
 	c_1.LastName = 'Limonadovy'u
 
 -- YDB Ydb
-
 UPDATE
 	Person
 SET
@@ -32,7 +29,6 @@ WHERE
 	Person.LastName = 'Limonadovy'u
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

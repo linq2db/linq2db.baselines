@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		child_1.ParentID as Child_ParentID,
 		child_1.ChildID as Child_ChildID,
@@ -30,7 +29,6 @@ FROM
 	$CTE_1 t1
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		child_1.ParentID as Child_ParentID,
 		child_1.ChildID as Child_ChildID,

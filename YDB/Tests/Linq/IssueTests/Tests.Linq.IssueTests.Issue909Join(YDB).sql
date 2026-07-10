@@ -16,7 +16,6 @@ WHERE
 	p.ParentID = c_1.ParentID AND (p.Value1 NOT IN ($Ids0_1, $Ids0_2, $Ids0_3) OR p.Value1 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID
@@ -24,7 +23,6 @@ FROM
 	Child t1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

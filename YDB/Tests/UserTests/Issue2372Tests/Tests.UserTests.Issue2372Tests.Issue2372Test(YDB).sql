@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS InventoryResource
 
 -- YDB Ydb

@@ -22,7 +22,6 @@ ORDER BY
 	e_1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.TestId as TestId

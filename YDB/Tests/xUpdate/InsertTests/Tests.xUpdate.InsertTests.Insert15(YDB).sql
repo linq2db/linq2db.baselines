@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -40,7 +38,6 @@ WHERE
 	t1.FirstName LIKE 'Insert15%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

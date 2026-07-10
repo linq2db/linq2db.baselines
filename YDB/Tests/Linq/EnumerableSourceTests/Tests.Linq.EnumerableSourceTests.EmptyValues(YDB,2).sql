@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1

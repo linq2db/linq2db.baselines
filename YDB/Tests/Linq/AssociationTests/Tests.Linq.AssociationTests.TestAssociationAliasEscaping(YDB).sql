@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_1.ChildID as ChildID,
 	testaLi_asParent.Value1 as Value1

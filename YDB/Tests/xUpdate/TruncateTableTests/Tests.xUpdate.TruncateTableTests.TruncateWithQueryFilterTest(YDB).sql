@@ -1,13 +1,10 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS TestTrun
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS TestTrunDetail
 
 -- YDB Ydb
-
 CREATE TABLE TestTrunDetail
 (
 	ID         Int32,
@@ -18,7 +15,6 @@ CREATE TABLE TestTrunDetail
 )
 
 -- YDB Ydb
-
 CREATE TABLE TestTrun
 (
 	ID     Int32,
@@ -28,14 +24,11 @@ CREATE TABLE TestTrun
 )
 
 -- YDB Ydb
-
 DELETE FROM TestTrun
 
 -- YDB Ydb
-
 DROP TABLE TestTrun
 
 -- YDB Ydb
-
 DROP TABLE TestTrunDetail
 

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE1_ = 	SELECT
 		c_1.ParentID as ParentID
 	FROM
@@ -29,7 +28,6 @@ FROM
 		INNER JOIN $LAST0 c4_1 ON c4_1.ParentID = t1.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ChildID as ChildID,
 	t1.ParentID as ParentID
@@ -40,7 +38,6 @@ ORDER BY
 	t1.ParentID
 
 -- YDB Ydb
-
 SELECT DISTINCT
 	c4.ChildID as ChildID,
 	c4.ParentID as ParentID

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	'123'u || p.FirstName || '456'u as FirstName

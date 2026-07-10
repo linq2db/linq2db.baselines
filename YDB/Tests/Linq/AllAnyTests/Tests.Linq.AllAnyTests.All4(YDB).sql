@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	NOT EXISTS(
 		SELECT

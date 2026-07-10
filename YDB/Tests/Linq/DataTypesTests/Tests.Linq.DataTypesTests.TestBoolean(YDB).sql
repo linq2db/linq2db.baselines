@@ -14,7 +14,6 @@ WHERE
 	r.`Column` = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -25,7 +24,6 @@ WHERE
 	r.`Column` = false AND r.ColumnNullable = true
 
 -- YDB Ydb
-
 DELETE FROM
 	BooleanTable
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -83,12 +80,10 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BooleanTable
 
 -- YDB Ydb
-
 INSERT INTO BooleanTable
 (
 	Id,
@@ -100,7 +95,6 @@ VALUES
 (2,false,true)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -111,14 +105,12 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BooleanTable
 
 INSERT ASYNC BULK BooleanTable(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,

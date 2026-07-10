@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.SectorId as SectorId,
 	a_User.UserId as UserId
@@ -12,7 +11,6 @@ WHERE
 	a_UserPosition.PositionId = 1
 
 -- YDB Ydb
-
 SELECT
 	x.SectorId as SectorId
 FROM

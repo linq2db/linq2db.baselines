@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	serv.Id as Id
 FROM

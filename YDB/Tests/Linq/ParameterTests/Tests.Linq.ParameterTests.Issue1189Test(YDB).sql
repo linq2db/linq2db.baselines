@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	k_1.ID as ID,
 	k_1.NAME as NAME,

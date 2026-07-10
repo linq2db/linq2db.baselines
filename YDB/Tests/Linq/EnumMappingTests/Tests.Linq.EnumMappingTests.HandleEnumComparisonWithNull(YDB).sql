@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.`Type` as Type_1,
 	x.OwnerId as OwnerId,

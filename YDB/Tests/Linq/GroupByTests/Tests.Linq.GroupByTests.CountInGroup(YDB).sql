@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.GroupId as GroupId,
 	COUNT(*) as Simple_1,
@@ -38,7 +37,6 @@ GROUP BY
 	t.GroupId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GroupId as GroupId,

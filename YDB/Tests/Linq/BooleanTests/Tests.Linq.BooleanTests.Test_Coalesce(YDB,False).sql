@@ -18,7 +18,6 @@ WHERE
 	Coalesce(r.BooleanN, $True)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -52,7 +51,6 @@ WHERE
 	Coalesce(r.BooleanN, $False)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -67,7 +65,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -84,7 +81,6 @@ WHERE
 	Coalesce(r.BooleanN, r.Id % 2 = 1)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,

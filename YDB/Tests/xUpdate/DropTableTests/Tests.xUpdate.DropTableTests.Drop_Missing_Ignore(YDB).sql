@@ -1,4 +1,3 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS `Table`
 

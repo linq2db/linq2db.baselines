@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT /* qb */
 	t.PersonID as PersonID,
 	t.Diagnosis as Diagnosis

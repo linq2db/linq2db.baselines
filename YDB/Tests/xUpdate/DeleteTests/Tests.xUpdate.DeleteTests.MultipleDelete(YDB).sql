@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
@@ -19,7 +18,6 @@ WHERE
 	Parent.ParentID IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

@@ -10,7 +10,6 @@ WHERE
 	GrandChild.GrandChildID IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO GrandChild
 (
 	ParentID,
@@ -40,7 +38,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

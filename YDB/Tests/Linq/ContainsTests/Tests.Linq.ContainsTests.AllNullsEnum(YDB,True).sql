@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	s.`Enum` IS NULL
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

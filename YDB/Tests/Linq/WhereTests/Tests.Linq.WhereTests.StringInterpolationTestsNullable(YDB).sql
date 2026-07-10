@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.LastName as LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	t1.LastName
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

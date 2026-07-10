@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	Unicode::JoinFromList(ListMap(ListSort(ListUniq(AGGREGATE_LIST(DISTINCT (g_1.NullableValue, g_1.Id, g_1.NullableValue))), ($t) -> { return (if($t.0 IS NULL, 0, 1), $t.0, if($t.1 IS NULL, 0, 1), $t.1) }), ($t) -> { return $t.2 }), ', 'u) as NotNullableOrderedNoNulls,
@@ -12,7 +11,6 @@ ORDER BY
 	Id
 
 -- YDB Ydb
-
 SELECT
 	t1.PK as PK,
 	t1.Id as Id,

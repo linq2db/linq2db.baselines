@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.PersonID + y.item as c1
 FROM
@@ -9,7 +8,6 @@ FROM
 		) y(item)
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

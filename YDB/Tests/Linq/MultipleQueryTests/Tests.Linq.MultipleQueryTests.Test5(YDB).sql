@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.ParentID as ParentID,
 	d.ParentID as ParentID_1,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN Parent d ON d.ParentID = m_1.ParentID
 
 -- YDB Ydb
-
 SELECT
 	a_Parent.ParentID as ParentID
 FROM

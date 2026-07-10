@@ -10,7 +10,6 @@ WHERE
 	Child.ChildID IN ($Ids0_1, $Ids0_2)
 
 -- YDB Ydb
-
 INSERT INTO Child
 (
 	ParentID,
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Child
 (
 	ParentID,
@@ -36,7 +34,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

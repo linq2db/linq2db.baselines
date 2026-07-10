@@ -26,7 +26,6 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,
@@ -62,7 +61,6 @@ WHERE
 	Person.PersonID = $ID
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 CREATE TABLE FluentTemp_Update
 (
 	ID       Int32,
@@ -45,6 +44,5 @@ WHERE
 	FluentTemp_Update.ID = 1
 
 -- YDB Ydb
-
 DROP TABLE IF EXISTS FluentTemp_Update
 

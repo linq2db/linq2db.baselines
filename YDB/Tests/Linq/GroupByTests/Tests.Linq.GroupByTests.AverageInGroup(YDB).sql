@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.GroupId as GroupId,
 	AVG(g_1.DataValue) as Simple_1,
@@ -29,7 +28,6 @@ GROUP BY
 	g_1.GroupId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GroupId as GroupId,

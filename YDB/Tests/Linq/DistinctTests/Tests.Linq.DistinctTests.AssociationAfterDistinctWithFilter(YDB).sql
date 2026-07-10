@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,
@@ -23,7 +22,6 @@ ORDER BY
 	t1.ChildID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.SmallIntValue as SmallIntValue,
 	t1.SmallIntValue as year_1,

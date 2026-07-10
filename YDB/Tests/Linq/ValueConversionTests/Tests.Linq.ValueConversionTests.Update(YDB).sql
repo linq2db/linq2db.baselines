@@ -17,7 +17,6 @@ WHERE
 	ValueConversion.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,
@@ -73,7 +72,6 @@ WHERE
 	ValueConversion.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,
@@ -129,7 +127,6 @@ WHERE
 	ValueConversion.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,

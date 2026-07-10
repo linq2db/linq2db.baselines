@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Color as Color,
 	x.Kind as Kind,
@@ -26,7 +25,6 @@ WHERE
 	NOT (x.Color AND x.Color_1 OR NOT x.Color)
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -37,7 +35,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	x.Color as Color,
 	x.ItemCode as ItemCode,
@@ -63,7 +60,6 @@ WHERE
 	x.Color
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -74,7 +70,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	t1.Top as Top,
 	t1.Color as Color,
@@ -130,7 +125,6 @@ WHERE
 	t2.Bottom
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -141,7 +135,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	x_1.Color as Color,
 	x_1.Color_1 as Color_1,
@@ -214,7 +207,6 @@ WHERE
 	NOT (x_1.Color AND x_1.Color_1 IS NOT NULL AND x_1.Color_1 OR NOT x_1.Color)
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -225,7 +217,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	x_1.Color as Color,
 	x_1.Color_1 as Color_1,
@@ -299,7 +290,6 @@ WHERE
 	NOT x_1.Color
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -310,7 +300,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	x_1.Size_1 as Size_1,
 	x_1.Color as Color,
@@ -383,7 +372,6 @@ WHERE
 	NOT (x_1.Size_1 AND x_1.Color IS NULL AND x_1.Size_2 OR NOT x_1.Size_1)
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,
@@ -394,7 +382,6 @@ FROM
 	Item t1
 
 -- YDB Ydb
-
 SELECT
 	x_1.Size_1 as Size_1,
 	x_1.Color as Color,
@@ -468,7 +455,6 @@ WHERE
 	NOT x_1.Size_1
 
 -- YDB Ydb
-
 SELECT
 	t1.ItemId as ItemId,
 	t1.Kind as Kind,

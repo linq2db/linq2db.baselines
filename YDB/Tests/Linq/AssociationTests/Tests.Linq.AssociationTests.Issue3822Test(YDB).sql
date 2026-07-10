@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		a_WindowAtPosition.Id as Id
 	FROM

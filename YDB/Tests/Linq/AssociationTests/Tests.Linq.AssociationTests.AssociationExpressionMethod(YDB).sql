@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_ChildPredicate_1.ParentID as ParentID,
 	a_ChildPredicate_1.ChildID as ChildID

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER() as CountPercents,
 	SUM(t1.ParentID) as Sum_1

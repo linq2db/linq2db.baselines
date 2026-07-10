@@ -54,7 +54,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	p.Id as Id,
 	p.TargetName as TargetName,
@@ -74,7 +73,6 @@ WHERE
 	p.TargetName = 'bda.Requests'u
 
 -- YDB Ydb
-
 SELECT
 	p.TargetName as TargetName,
 	p.Id as Id,

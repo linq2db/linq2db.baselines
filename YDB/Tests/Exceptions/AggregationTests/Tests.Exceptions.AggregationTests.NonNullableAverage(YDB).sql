@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	AVG(t1.ParentID) as Average
 FROM

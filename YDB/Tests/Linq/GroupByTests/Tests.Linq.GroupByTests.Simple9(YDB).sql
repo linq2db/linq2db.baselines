@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.ChildID as ChildID
 FROM

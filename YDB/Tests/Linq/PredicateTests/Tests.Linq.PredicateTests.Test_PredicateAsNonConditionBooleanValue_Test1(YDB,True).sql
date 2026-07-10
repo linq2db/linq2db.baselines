@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.Value1 = r.Value2 as Value11,
@@ -82,7 +81,6 @@ WHERE
 	r.Id <> -1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,

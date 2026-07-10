@@ -32,7 +32,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.Value1 as Value1,
@@ -171,7 +168,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

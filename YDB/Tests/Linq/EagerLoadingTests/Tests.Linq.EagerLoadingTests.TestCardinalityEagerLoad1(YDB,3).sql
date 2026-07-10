@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN EntityD d ON m_1.Id = d.FK
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.FK as FK,

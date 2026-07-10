@@ -10,7 +10,6 @@ WHERE
 	LinqDataTypes.ID = 1
 
 -- YDB Ydb
-
 SELECT
 	Length(t.BinaryValue) as Value_1
 FROM

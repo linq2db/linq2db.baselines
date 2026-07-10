@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	gc.GrandChildID as GrandChildID,
 	a_Parent.Value1 as Value1
@@ -11,7 +10,6 @@ ORDER BY
 	GrandChildID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,

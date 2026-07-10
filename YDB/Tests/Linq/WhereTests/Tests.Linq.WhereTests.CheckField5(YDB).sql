@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Value1 + 1 as Value_1,
 	p.ParentID as ParentID,

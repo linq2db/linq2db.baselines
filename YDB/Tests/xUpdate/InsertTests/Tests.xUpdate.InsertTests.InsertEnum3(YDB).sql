@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	t1.ParentID = $id
 
 -- YDB Ydb
-
 DELETE FROM
 	Parent
 WHERE

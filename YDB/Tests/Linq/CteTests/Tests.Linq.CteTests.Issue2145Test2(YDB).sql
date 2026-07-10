@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		t1.ID as ID,
 		t1.FirstName as FirstName,

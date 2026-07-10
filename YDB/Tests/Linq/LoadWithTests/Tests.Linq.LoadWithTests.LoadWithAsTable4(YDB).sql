@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.ParentID as ParentID,
 	d.ParentID as ParentID_1,
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t.ParentID as ParentID,
 	t.Value1 as Value1

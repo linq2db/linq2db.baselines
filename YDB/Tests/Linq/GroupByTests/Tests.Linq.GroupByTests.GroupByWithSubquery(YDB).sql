@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.Key_1 as Key_1,
 	COUNT(*) as Count_1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Cnt,
 	SUM(g_1.ChildID) as Sum_1,

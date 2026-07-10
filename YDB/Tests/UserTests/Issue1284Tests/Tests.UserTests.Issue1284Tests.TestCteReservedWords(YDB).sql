@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		x.LastName as Obj_Operator
 	FROM
@@ -13,7 +12,6 @@ FROM
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	person_1.LastName as LastName
 FROM

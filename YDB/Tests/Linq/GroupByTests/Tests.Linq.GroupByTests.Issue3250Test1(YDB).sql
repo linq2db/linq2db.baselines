@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(g_2.Message AS Text)) || ' items have not been processed, e.g. #'u || Coalesce(CAST(g_2.Message_1 AS Text), ''u) || '.'u as Message
 FROM

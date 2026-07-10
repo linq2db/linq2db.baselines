@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	t1.Id as Id
 FROM

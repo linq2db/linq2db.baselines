@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.Name as Name,

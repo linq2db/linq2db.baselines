@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcd.FirstName as FirstName,
 	abcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcdefghijabcd.PersonID as PersonID,

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,
@@ -48,7 +47,6 @@ WHERE
 	PR_1598_Insert_Table_Cache.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,

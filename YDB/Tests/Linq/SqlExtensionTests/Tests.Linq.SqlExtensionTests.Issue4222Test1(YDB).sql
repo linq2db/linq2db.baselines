@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.RecSrc as RecSrc,

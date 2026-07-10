@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.Key_1 as Key_1
 FROM

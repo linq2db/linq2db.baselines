@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.FirstName as FirstName,
 	COUNT(*) as Count_1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO TPHTable
 (
 	Id,
@@ -15,7 +14,6 @@ VALUES
 (3,3,NULL,NULL,'Str3'u,'Y'u)
 
 -- YDB Ydb
-
 SELECT
 	t1.Discriminator as Discriminator,
 	t1.Id as Id,
@@ -29,7 +27,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -44,7 +41,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -59,7 +55,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -74,7 +69,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -89,7 +83,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,
@@ -104,7 +97,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	x.Discriminator as Discriminator,
 	x.Id as Id,

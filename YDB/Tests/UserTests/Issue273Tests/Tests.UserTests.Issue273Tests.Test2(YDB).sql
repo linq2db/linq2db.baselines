@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.ID as ID,
 	x.BigIntValue as BigIntValue

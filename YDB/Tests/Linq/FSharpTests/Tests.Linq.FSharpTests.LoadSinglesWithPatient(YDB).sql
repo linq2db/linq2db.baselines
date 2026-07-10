@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	p.FirstName as FirstName,
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	p.FirstName as FirstName,

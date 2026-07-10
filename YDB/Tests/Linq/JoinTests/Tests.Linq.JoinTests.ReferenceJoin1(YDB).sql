@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_1.ParentID as ParentID,
 	t1.GrandChildID as GrandChildID
@@ -16,7 +15,6 @@ FROM
 		) t1 ON c_1.ParentID = t1.ParentID AND c_1.ChildID = t1.ChildID
 
 -- YDB Ydb
-
 SELECT
 	c_1.ParentID as ParentID,
 	t1.GrandChildID as GrandChildID

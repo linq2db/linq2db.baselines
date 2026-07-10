@@ -12,7 +12,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -23,7 +22,6 @@ WHERE
 	r.`Column` = Date('2020-02-29') AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -62,7 +60,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -97,7 +94,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -117,7 +113,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -152,7 +147,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -163,7 +157,6 @@ WHERE
 	r.`Column` = Date('1970-01-01') AND r.ColumnNullable = Date('2105-12-31')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -204,7 +197,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -241,7 +233,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -263,7 +254,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -298,7 +288,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -309,7 +298,6 @@ WHERE
 	r.`Column` = Date('2020-02-29') AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -348,7 +336,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -383,7 +370,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -403,7 +389,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -438,7 +423,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -449,7 +433,6 @@ WHERE
 	r.`Column` = Date('1970-01-01') AND r.ColumnNullable = Date('2105-12-31')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -490,7 +473,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -527,7 +509,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -549,7 +530,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -584,7 +564,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -595,7 +574,6 @@ WHERE
 	r.`Column` = Date('2105-12-31') AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -634,7 +612,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -669,7 +646,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -689,7 +665,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable IS NULL
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -724,7 +699,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -735,7 +709,6 @@ WHERE
 	r.`Column` = Date('1970-01-01') AND r.ColumnNullable = Date('2105-12-31')
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -776,7 +749,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -813,7 +785,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 
@@ -835,7 +806,6 @@ WHERE
 	r.`Column` = $value AND r.ColumnNullable = $nullableValue
 
 -- YDB Ydb
-
 DELETE FROM
 	`TypeTable\`2`
 

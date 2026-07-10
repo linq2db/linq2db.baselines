@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	c_2.ChildID as ChildID
 FROM

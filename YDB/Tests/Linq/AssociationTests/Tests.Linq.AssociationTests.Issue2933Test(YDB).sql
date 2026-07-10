@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	t2.PetName as PetName

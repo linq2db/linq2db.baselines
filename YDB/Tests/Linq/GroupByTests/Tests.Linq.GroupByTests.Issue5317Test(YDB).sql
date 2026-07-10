@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.ReferenceName as ReferenceName
 FROM
@@ -17,7 +16,6 @@ WHERE
 	t2.rn = 1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -29,7 +27,6 @@ FROM
 		INNER JOIN Reference a_Reference ON t1.ReferenceId = a_Reference.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,

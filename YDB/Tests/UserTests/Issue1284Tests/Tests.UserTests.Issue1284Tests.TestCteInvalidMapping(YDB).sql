@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		x.FirstName as entry_FirstName,
 		x.PersonID as entry_ID,
@@ -23,7 +22,6 @@ FROM
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	person_1.FirstName as FirstName,
 	person_1.PersonID as PersonID,

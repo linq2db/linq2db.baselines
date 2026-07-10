@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	MIN(t1.ChildID) as Min_1
 FROM

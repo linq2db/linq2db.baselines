@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	doSap.DocEntry as DocEntry,
 	CASE

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.PersonID as PersonID,
 	t1.Gender as Gender,
