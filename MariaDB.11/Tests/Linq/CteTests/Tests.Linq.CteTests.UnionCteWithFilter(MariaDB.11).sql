@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `BooksCte` (`Book_Id`, `Book_Title`, `Author_Name`)
 AS
 (

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Parent`
@@ -190,7 +189,6 @@ ORDER BY
 LIMIT @take
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Value1`
 FROM
@@ -201,7 +199,6 @@ ORDER BY
 	`r`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`Parent`

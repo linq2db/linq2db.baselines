@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `HierarchyData`
 (
 	`Id`,
@@ -47,7 +46,6 @@ FROM
 	`hierarchyDown` `t4`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Level`

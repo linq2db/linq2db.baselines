@@ -17,7 +17,6 @@ WHERE
 	`e`.`Id` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,
@@ -73,7 +72,6 @@ WHERE
 	`t1`.`Id` = @Id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,
@@ -129,7 +127,6 @@ WHERE
 	`t1`.`Id` = @Id
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`,
 	`e`.`Value1`,

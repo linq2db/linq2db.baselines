@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`tp12`.`Id`,
 	`tp12`.`ResourceID`,

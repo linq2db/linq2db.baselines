@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 (
 	`IDX`   INT         AUTO_INCREMENT NOT NULL,
@@ -22,7 +21,6 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -40,7 +38,6 @@ VALUES
 
 RollbackTransaction
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

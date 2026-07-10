@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`g_2`.`n`,
 	SUM(`g_2`.`ParentID`)

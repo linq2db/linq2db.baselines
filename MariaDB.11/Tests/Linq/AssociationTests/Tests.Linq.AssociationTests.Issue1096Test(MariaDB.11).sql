@@ -41,7 +41,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	`t`.`Pk`,
 	`t`.`Id`,

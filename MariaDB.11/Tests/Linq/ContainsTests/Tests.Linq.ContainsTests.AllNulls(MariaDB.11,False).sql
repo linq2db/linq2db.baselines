@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	`s`.`Int` IN (NULL, NULL)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

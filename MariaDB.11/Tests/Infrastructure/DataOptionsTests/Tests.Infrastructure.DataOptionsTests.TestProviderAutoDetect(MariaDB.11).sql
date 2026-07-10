@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySql.Data MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

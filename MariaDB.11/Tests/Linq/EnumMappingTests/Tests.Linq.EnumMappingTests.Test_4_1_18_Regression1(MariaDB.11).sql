@@ -9,7 +9,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 101 AND `LinqDataTypes`.`ID` < @p
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -24,7 +23,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`BigIntValue` IS NOT NULL AND `t1`.`IntValue` IS NOT NULL,
 	`t1`.`BigIntValue`,

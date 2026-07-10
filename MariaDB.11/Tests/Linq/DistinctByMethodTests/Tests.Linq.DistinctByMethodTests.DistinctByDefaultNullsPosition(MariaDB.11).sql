@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`
 FROM
@@ -31,7 +30,6 @@ ORDER BY
 	`x`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`
 FROM

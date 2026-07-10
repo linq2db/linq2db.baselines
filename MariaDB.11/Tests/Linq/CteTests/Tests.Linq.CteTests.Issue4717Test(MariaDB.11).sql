@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4717Address`
 (
 	`Id`,
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4717Warehouse`
 (
 	`Id`,
@@ -33,7 +31,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4717UnitOfMeasure`
 (
 	`Id`,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`PersonID` + `y`.`item`
 FROM
@@ -10,7 +9,6 @@ FROM
 			SELECT 3) `y`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

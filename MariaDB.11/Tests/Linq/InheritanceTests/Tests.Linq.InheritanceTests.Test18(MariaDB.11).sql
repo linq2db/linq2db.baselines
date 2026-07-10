@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	`p1`.`PersonID`,
 	`p1`.`Gender`,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `ValueItem`
 (
 	`Value`
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`row_1`.`Value`
 FROM

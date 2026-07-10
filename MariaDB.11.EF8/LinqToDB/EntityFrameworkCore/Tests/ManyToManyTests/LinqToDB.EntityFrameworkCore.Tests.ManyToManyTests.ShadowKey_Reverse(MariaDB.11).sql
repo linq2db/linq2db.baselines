@@ -9,7 +9,6 @@ ORDER BY `t`.`Label`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Label`
 FROM

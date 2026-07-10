@@ -10,7 +10,6 @@ WHERE
 	`x`.`Id` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,
@@ -34,7 +33,6 @@ WHERE
 	`x`.`Id` = 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,

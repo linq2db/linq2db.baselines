@@ -48,7 +48,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,
@@ -65,7 +64,6 @@ WHERE
 LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`LinqDataTypes`

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `MultipleRowsTable`
 (
 	`Id`,
@@ -11,7 +10,6 @@ VALUES
 (2,1.5,-2.6)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`DecimalValue1`,

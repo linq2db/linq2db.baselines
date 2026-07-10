@@ -1,5 +1,4 @@
 ﻿-- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`a_Customer`.`Id`
 FROM

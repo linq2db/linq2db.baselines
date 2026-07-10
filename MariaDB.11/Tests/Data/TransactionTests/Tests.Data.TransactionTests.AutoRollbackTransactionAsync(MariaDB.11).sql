@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`Parent` `t`
 SET
@@ -25,7 +24,6 @@ WHERE
 	`t`.`ParentID` = 1010
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

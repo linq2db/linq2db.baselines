@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ NO_SEMIJOIN(@qq FIRSTMATCH, LOOSESCAN) */
 	`p_1`.`ParentID`,
 	`p_1`.`Value1`

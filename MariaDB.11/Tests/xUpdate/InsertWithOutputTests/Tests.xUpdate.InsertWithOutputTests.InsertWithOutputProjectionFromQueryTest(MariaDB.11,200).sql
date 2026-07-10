@@ -21,7 +21,6 @@ RETURNING
 	CONCAT(Coalesce(`DestinationTable`.`ValueStr`, ''), '1')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`,
@@ -30,7 +29,6 @@ FROM
 	`DestinationTable` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id` + 1,
 	CONCAT(Coalesce(`t`.`ValueStr`, ''), '1')

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	MAX(`g_1`.`Value4`),
 	GROUP_CONCAT(`g_1`.`Value4` SEPARATOR ' -> ')

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT /*+ BNL(c_1, p) */
 	`p`.`ParentID`,
 	`p`.`Value1`

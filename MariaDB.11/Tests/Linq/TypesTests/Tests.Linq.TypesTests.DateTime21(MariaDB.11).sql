@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,
@@ -29,7 +28,6 @@ WHERE
 	`t`.`ID` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`ID`,
 	`t`.`MoneyValue`,

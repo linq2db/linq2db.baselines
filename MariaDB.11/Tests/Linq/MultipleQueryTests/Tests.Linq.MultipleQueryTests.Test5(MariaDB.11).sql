@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN `Parent` `d` ON `d`.`ParentID` = `m_1`.`ParentID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`a_Parent`.`ParentID`
 FROM

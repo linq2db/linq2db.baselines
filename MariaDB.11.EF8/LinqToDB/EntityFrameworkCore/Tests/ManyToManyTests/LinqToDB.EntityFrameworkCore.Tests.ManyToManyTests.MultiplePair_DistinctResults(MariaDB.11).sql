@@ -1,5 +1,4 @@
 ﻿-- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`u`.`Id`
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`u`.`Id`
 FROM

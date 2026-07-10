@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT('I-', CAST(`x`.`PersonID` AS CHAR(11))),
 	`x`.`FirstName`

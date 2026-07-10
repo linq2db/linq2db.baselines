@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT DISTINCT
 	`p`.`LastName`
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN `Person` `p` ON `g_1`.`PersonID` = `p`.`PersonID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`PersonID`,
 	`t1`.`Taxonomy`
@@ -15,7 +13,6 @@ FROM
 	`Doctor` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

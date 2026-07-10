@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	MAX(CASE
 		WHEN `g_1`.`ParentID` < 3 THEN `g_1`.`ChildID`

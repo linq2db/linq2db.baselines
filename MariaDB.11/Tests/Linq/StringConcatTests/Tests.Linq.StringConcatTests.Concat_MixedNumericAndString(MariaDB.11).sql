@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`Id`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CONCAT(CAST(`e`.`Num` AS CHAR(11)), '-', Coalesce(`e`.`StrReq`, ''))) = '100-Programmer'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

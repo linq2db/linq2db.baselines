@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT(Coalesce(`e`.`Str1`, ''), '/', Coalesce(`e`.`StrReq`, ''))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`e`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(CASE
 		WHEN `t`.`Status` = 3 THEN 1

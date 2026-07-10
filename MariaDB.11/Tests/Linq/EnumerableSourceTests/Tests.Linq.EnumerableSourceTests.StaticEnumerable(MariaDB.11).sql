@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -24,7 +23,6 @@ WHERE
 	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

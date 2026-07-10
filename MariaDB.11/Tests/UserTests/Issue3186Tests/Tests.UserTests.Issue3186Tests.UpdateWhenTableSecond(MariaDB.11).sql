@@ -13,7 +13,6 @@ WHERE
 	`ct`.`id` = 'TestProcessService' AND `ctg`.`id` = `ctg_1`.`id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,
@@ -24,7 +23,6 @@ WHERE
 	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`id`,
 	`x`.`service_id`,

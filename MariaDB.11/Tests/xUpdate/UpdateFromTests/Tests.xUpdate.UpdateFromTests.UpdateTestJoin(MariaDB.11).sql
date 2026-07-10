@@ -19,7 +19,6 @@ WHERE
 	`t`.`id` <> @someId
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`v`.`id`,
 	`v`.`Value1`,

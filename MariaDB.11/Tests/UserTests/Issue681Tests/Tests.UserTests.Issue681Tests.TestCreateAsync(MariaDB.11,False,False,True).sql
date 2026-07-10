@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `Issue681Table2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `Issue681Table2`
 (
 	`ID`    INT NOT NULL,
@@ -13,6 +11,5 @@ CREATE TABLE `Issue681Table2`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `Issue681Table2`
 

@@ -19,7 +19,6 @@ WHERE
 	@param = `t1`.`BigIntValue`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`MoneyValue`,

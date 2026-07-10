@@ -25,7 +25,6 @@ ORDER BY `o`.`OrderID`, `t1`.`OrderID`, `t1`.`ProductID`, `t1`.`ProductID0`, `t1
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ProductId`,
 	`m_1`.`OrderId`,
@@ -50,7 +49,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`OrderID`,
 	`d`.`IsDeleted`,
@@ -80,7 +78,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

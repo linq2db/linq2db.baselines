@@ -23,7 +23,6 @@ ON DUPLICATE KEY UPDATE
 	`Age` = @Age
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Name`,
@@ -59,7 +58,6 @@ ON DUPLICATE KEY UPDATE
 	`Age` = @Age
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	`t`.`Name`,

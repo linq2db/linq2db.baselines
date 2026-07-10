@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH RECURSIVE `cte` (`Id`, `Enum1`)
 AS
 (

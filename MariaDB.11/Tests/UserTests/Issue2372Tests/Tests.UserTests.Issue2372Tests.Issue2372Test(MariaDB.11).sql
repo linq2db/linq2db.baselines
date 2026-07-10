@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `InventoryResource`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

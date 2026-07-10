@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ParentID`,
 	(
@@ -22,14 +21,12 @@ FROM
 	`Parent` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x_1`.`ParentID`,
 	`x_1`.`CountResult`,

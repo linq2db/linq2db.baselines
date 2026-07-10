@@ -10,7 +10,6 @@ SET
 	`t1`.`Value` = (`t1`.`Value` | @addMask) & ~@removeMask
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

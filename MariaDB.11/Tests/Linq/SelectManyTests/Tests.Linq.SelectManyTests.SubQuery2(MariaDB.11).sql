@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`PersonID`,
 	`p2`.`FirstName`
@@ -11,7 +10,6 @@ WHERE
 	`p`.`PersonID` = `p2`.`PersonID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`PersonID`,
 	`p2`.`FirstName`

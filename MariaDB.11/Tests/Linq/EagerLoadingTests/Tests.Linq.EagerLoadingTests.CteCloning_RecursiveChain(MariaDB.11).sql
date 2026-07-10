@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH RECURSIVE `cte` (`Value2`)
 AS
 (
@@ -83,7 +82,6 @@ FROM
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH RECURSIVE `cte` (`Value2`)
 AS
 (

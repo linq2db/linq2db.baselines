@@ -40,7 +40,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -49,7 +48,6 @@ WHERE
 	`t`.`ID` = 5000 AND Date_Add(`t`.`DateTimeValue`, Interval `t`.`SmallIntValue` Day) > STR_TO_DATE('2018-01-02 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`LinqDataTypes`

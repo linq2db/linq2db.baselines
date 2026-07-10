@@ -14,7 +14,6 @@ WHERE
 	`r`.`FirstName` = @p
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`FirstName`,
 	`r`.`PersonID`,

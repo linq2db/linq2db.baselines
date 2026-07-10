@@ -30,7 +30,6 @@ ORDER BY `o`.`OrderID`, `e0`.`EmployeeID`, `e2`.`EmployeeID`, `e2`.`TerritoryID`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`EmployeeId`,
 	`d`.`IsDeleted`,
@@ -49,7 +48,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`OrderId`,
 	`d`.`IsDeleted`,
@@ -84,7 +82,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`e`.`IsDeleted`,
 	`e`.`OrderID`,

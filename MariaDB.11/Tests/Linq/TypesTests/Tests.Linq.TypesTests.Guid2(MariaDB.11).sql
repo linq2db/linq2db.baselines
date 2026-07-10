@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ID`,
 	`p`.`MoneyValue`,
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`ID`,
 	`p`.`MoneyValue`,

@@ -1,7 +1,6 @@
 ﻿INSERT BULK `InheritanceFilter`(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Code`,
 	`t1`.`Id`,
