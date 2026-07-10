@@ -10,7 +10,6 @@ WHERE
 	IIF([x].[Value1] IS NULL, ?, [x].[Value1]) > 10
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[p].[Value1]
 FROM

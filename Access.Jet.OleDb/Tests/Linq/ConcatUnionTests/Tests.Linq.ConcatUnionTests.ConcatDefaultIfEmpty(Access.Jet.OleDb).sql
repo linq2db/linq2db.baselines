@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	0 as [projection__set_id__],
 	[t1].[ParentID],
@@ -42,7 +41,6 @@ WHERE
 	[p_1].[ParentID] <> 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -57,7 +55,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
@@ -65,7 +62,6 @@ FROM
 	[Parent] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

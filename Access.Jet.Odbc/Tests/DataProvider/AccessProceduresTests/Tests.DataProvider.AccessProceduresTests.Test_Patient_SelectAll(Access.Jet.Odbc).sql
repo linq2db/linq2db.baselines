@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 { CALL Patient_SelectAll() }
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[a_Person].[PersonID],
 	[a_Person].[FirstName],

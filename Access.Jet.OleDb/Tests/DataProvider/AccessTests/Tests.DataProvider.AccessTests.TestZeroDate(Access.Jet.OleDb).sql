@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [DateTable]
 (
 	[ID],
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[Date]

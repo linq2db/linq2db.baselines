@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

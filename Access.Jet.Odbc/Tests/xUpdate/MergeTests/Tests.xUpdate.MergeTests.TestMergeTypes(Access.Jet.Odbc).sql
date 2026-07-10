@@ -1,10 +1,8 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[TestMerge1] [t1]
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[TestMerge2] [t1]
 
@@ -632,7 +630,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -657,7 +654,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

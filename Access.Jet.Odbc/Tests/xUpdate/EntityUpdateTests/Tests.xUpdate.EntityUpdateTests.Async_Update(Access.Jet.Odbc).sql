@@ -21,7 +21,6 @@ WHERE
 	[t].[Id] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Name],

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	[t1].[ParentID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [t1]
 WHERE

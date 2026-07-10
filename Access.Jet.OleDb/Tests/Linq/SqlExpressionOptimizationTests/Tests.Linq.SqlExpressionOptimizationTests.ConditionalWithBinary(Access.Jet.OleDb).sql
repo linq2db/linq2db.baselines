@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -14,7 +13,6 @@ WHERE
 	[x].[IntVlaue] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -27,7 +25,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -42,7 +39,6 @@ WHERE
 	[x_with_not].[IntVlaue] <> 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -55,7 +51,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -70,7 +65,6 @@ WHERE
 	[swap].[IntVlaue] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -83,7 +77,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -98,7 +91,6 @@ WHERE
 	[swap_with_not].[IntVlaue] <> 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -111,7 +103,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -126,7 +117,6 @@ WHERE
 	1 = 0
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -139,7 +129,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -152,7 +141,6 @@ FROM
 	[OptimizationData] [x_with_not]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -165,7 +153,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -180,7 +167,6 @@ WHERE
 	1 = 0
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -193,7 +179,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -206,7 +191,6 @@ FROM
 	[OptimizationData] [swap_with_not]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -219,7 +203,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -234,7 +217,6 @@ WHERE
 	[x].[IntVlaue] <> 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -247,7 +229,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -262,7 +243,6 @@ WHERE
 	[x_with_not].[IntVlaue] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -275,7 +255,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -290,7 +269,6 @@ WHERE
 	[swap].[IntVlaue] <> 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -303,7 +281,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -318,7 +295,6 @@ WHERE
 	[swap_with_not].[IntVlaue] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -331,7 +307,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -346,7 +321,6 @@ WHERE
 	[x].[BoolValue] = True
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -359,7 +333,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -374,7 +347,6 @@ WHERE
 	[x_with_not].[BoolValue] = False
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -387,7 +359,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -402,7 +373,6 @@ WHERE
 	[swap].[BoolValue] = True
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -415,7 +385,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -430,7 +399,6 @@ WHERE
 	[swap_with_not].[BoolValue] = False
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -443,7 +411,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -458,7 +425,6 @@ WHERE
 	NOT [x].[BoolValue]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -471,7 +437,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -486,7 +451,6 @@ WHERE
 	[x_with_not].[BoolValue]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -499,7 +463,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -514,7 +477,6 @@ WHERE
 	NOT [swap].[BoolValue]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -527,7 +489,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -542,7 +503,6 @@ WHERE
 	[swap_with_not].[BoolValue]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -555,7 +515,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -570,7 +529,6 @@ WHERE
 	[x].[BoolValue] = True
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -583,7 +541,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -598,7 +555,6 @@ WHERE
 	[x_with_not].[BoolValue] = False
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -611,7 +567,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -626,7 +581,6 @@ WHERE
 	[swap].[BoolValue] = True
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -639,7 +593,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -654,7 +607,6 @@ WHERE
 	[swap_with_not].[BoolValue] = False
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -667,7 +619,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -682,7 +633,6 @@ WHERE
 	[x].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -695,7 +645,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -710,7 +659,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -723,7 +671,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -738,7 +685,6 @@ WHERE
 	[swap].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -751,7 +697,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -766,7 +711,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -779,7 +723,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -794,7 +737,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -807,7 +749,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -822,7 +763,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -835,7 +775,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -850,7 +789,6 @@ WHERE
 	[swap].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -863,7 +801,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -878,7 +815,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -891,7 +827,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -906,7 +841,6 @@ WHERE
 	1 = 0
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -919,7 +853,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -932,7 +865,6 @@ FROM
 	[OptimizationData] [x_with_not]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -945,7 +877,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -958,7 +889,6 @@ FROM
 	[OptimizationData] [x]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -971,7 +901,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -986,7 +915,6 @@ WHERE
 	1 = 0
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -999,7 +927,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1014,7 +941,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1027,7 +953,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1042,7 +967,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1055,7 +979,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1070,7 +993,6 @@ WHERE
 	[x].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1083,7 +1005,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1098,7 +1019,6 @@ WHERE
 	[x_with_not].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1111,7 +1031,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1126,7 +1045,6 @@ WHERE
 	[swap].[StringValueNullable] IS NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1139,7 +1057,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1154,7 +1071,6 @@ WHERE
 	[swap_with_not].[StringValueNullable] IS NOT NULL
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1167,7 +1083,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1182,7 +1097,6 @@ WHERE
 	IIF([x].[StringValueNullable] IS NOT NULL, IIF([x].[StringValueNullable] = '2', 2, 10), IIF([x].[StringValueNullable] IS NULL, 3, 1)) = 2
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1195,7 +1109,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1210,7 +1123,6 @@ WHERE
 	IIF([x_with_not].[StringValueNullable] IS NOT NULL, IIF([x_with_not].[StringValueNullable] = '2', 2, 10), IIF([x_with_not].[StringValueNullable] IS NULL, 3, 1)) <> 2
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1223,7 +1135,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1238,7 +1149,6 @@ WHERE
 	2 = IIF([swap].[StringValueNullable] IS NOT NULL, IIF([swap].[StringValueNullable] = '2', 2, 10), IIF([swap].[StringValueNullable] IS NULL, 3, 1))
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1251,7 +1161,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1266,7 +1175,6 @@ WHERE
 	2 <> IIF([swap_with_not].[StringValueNullable] IS NOT NULL, IIF([swap_with_not].[StringValueNullable] = '2', 2, 10), IIF([swap_with_not].[StringValueNullable] IS NULL, 3, 1))
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1279,7 +1187,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1294,7 +1201,6 @@ WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1307,7 +1213,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1322,7 +1227,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1335,7 +1239,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1350,7 +1253,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1363,7 +1265,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1378,7 +1279,6 @@ WHERE
 	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1391,7 +1291,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1406,7 +1305,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] < 4 OR [swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1419,7 +1317,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1434,7 +1331,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1447,7 +1343,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1462,7 +1357,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1475,7 +1369,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1490,7 +1383,6 @@ WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1503,7 +1395,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1518,7 +1409,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1531,7 +1421,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1546,7 +1435,6 @@ WHERE
 	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1559,7 +1447,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1574,7 +1461,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1587,7 +1473,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1602,7 +1487,6 @@ WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1615,7 +1499,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1630,7 +1513,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1643,7 +1525,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1658,7 +1539,6 @@ WHERE
 	[x].[IntVlaue] = 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1671,7 +1551,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1686,7 +1565,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] = 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1699,7 +1577,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1714,7 +1591,6 @@ WHERE
 	[swap].[IntVlaue] = 0 AND [swap].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1727,7 +1603,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1742,7 +1617,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] = 0 AND [swap_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1755,7 +1629,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1770,7 +1643,6 @@ WHERE
 	[x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1783,7 +1655,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1798,7 +1669,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1811,7 +1681,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap].[Id],
 	[swap].[IntVlaue],
@@ -1827,7 +1696,6 @@ WHERE
 	[swap].[IntVlaue] < 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1840,7 +1708,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[swap_with_not].[Id],
 	[swap_with_not].[IntVlaue],
@@ -1855,7 +1722,6 @@ WHERE
 	NOT ([swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4 OR [swap_with_not].[IntVlaue] < 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1868,7 +1734,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1883,7 +1748,6 @@ WHERE
 	[x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1896,7 +1760,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1911,7 +1774,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1924,7 +1786,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1939,7 +1800,6 @@ WHERE
 	[x].[IntVlaue] < 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1952,7 +1812,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -1967,7 +1826,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] < 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -1980,7 +1838,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -1995,7 +1852,6 @@ WHERE
 	[x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2008,7 +1864,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -2023,7 +1878,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2036,7 +1890,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	[x].[IntVlaue],
@@ -2051,7 +1904,6 @@ WHERE
 	[x].[IntVlaue] <= 0 AND [x].[IntVlaue] >= 4
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],
@@ -2064,7 +1916,6 @@ FROM
 	[OptimizationData] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[x_with_not].[Id],
 	[x_with_not].[IntVlaue],
@@ -2079,7 +1930,6 @@ WHERE
 	NOT ([x_with_not].[IntVlaue] <= 0 AND [x_with_not].[IntVlaue] >= 4)
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntVlaue],

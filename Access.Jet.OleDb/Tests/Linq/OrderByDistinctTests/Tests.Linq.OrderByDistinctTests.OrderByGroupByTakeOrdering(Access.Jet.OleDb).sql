@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 3
 	[g_1].[OrderData1] * 100 + [g_1].[OrderData2],
 	COUNT(*)

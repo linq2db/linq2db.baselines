@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*),
 	MAX([g_1].[ChildID])

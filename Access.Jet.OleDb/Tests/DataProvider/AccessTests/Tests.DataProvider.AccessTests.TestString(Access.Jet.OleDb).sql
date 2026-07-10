@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT CStr('12345')
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT NULL
 
 -- Access.Jet.OleDb AccessOleDb

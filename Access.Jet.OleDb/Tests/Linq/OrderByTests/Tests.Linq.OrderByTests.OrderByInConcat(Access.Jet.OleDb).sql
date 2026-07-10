@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t2].[ParentID],
 	[t2].[ChildID]
@@ -29,7 +28,6 @@ FROM
 	) [t4]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
@@ -51,7 +49,6 @@ FROM
 	) [t3]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t4].[ParentID],
 	[t4].[ChildID]

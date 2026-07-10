@@ -12,7 +12,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[x].[Id],
 	[x].[NoConversion],

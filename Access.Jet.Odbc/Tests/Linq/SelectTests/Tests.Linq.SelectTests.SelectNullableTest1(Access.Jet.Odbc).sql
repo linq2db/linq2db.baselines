@@ -48,7 +48,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 1
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -66,7 +65,6 @@ WHERE
 	[t1].[ID] = 1000
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[LinqDataTypes] [t1]
 WHERE

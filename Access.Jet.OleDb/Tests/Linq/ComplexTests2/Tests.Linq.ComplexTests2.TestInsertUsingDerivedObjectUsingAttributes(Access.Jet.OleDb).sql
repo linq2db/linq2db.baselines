@@ -24,11 +24,9 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -63,7 +61,6 @@ WHERE
 	[t1].[PersonID] = @ID
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[FirstName],
 	[t1].[PersonID],

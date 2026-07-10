@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -46,7 +45,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -56,7 +54,6 @@ ORDER BY
 	[r].[ID]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[r].[ID],
 	[r].[Data]

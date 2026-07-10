@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [t1]
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ParentID] >= 1000
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Parent] [c_1]
 WHERE

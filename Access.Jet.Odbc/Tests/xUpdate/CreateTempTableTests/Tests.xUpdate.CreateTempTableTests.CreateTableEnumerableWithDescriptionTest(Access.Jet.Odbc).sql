@@ -1,9 +1,7 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 
 -- Access.Jet.Odbc AccessODBC
-
 CREATE TABLE [TempTable]
 (
 	[Name] NVarChar(20) NOT NULL,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t].[Name]
 FROM
@@ -33,6 +30,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[FirstName] = [t].[Name])
 
 -- Access.Jet.Odbc AccessODBC
-
 DROP TABLE [TempTable]
 

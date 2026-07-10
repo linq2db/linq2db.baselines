@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[tp12].[Id],
 	[tp12].[ResourceID],

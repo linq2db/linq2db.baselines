@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	'Id',
 	[it].[Id],

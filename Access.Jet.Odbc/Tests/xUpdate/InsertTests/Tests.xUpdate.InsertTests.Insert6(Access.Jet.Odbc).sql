@@ -1,12 +1,10 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [p]
 WHERE
 	[p].[Value1] = 11
 
 -- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -21,7 +19,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- Access.Jet.Odbc AccessODBC
-
 DELETE FROM
 	[Parent] [p]
 WHERE

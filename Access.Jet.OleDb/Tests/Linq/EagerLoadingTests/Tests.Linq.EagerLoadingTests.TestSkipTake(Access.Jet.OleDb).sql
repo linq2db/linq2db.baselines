@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_2].[Id1],
 	[d].[DetailId],
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON ([m_2].[Id1] = [d].[MasterId])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_2].[Id1],
 	[d].[DetailId],
@@ -33,7 +31,6 @@ ORDER BY
 	[d].[DetailId]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -43,7 +40,6 @@ FROM
 	[MasterClass] [m_1]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -59,7 +55,6 @@ FROM
 		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

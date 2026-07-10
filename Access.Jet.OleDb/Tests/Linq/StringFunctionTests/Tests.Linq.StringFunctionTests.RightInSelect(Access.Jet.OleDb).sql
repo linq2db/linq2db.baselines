@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	RIGHT([p].[FirstName], 3)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ID],
 	[d].[ID] as [ID_1],
@@ -25,7 +24,6 @@ FROM
 		INNER JOIN [Table4] [d] ON ([m_1].[ID] = [d].[ID3])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[ID],
 	[r].[ID2],
@@ -47,7 +45,6 @@ WHERE
 	)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ID],
 	[d].[ID] as [ID_1],
@@ -64,7 +61,6 @@ FROM
 		INNER JOIN [Table4] [d] ON ([m_1].[ID] = [d].[ID3])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[ID2],

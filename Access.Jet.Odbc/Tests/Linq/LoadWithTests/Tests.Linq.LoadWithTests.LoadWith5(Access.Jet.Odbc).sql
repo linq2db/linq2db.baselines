@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
@@ -31,7 +30,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON ([a_Child].[ParentID] = [a_Parent].[ParentID])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -46,7 +44,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	(
 		SELECT

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -26,7 +25,6 @@ ORDER BY
 	[d].[ChildID]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID] as [ParentID_1]

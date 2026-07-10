@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Table2]
 (
 	[ID]
@@ -10,7 +9,6 @@ FROM
 	[Table1] [t]
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[Date]

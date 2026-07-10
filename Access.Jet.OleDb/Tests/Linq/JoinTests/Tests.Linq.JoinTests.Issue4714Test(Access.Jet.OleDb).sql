@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[cross_1].[Id],
 	[cross_1].[Year_1],

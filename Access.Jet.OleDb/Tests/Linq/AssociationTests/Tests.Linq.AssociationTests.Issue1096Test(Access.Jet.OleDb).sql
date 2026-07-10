@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[t].[Pk],
 	[t].[Id],

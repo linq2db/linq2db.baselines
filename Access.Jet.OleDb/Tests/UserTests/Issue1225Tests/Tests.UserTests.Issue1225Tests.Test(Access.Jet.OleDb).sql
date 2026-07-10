@@ -46,7 +46,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	'Id',
 	[it].[Id],

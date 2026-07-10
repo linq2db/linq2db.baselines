@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Value]
@@ -43,7 +42,6 @@ WHERE
 	[r].[Id] = 1
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Value]

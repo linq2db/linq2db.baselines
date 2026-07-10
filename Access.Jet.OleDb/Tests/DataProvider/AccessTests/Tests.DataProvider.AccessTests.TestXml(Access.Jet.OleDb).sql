@@ -1,13 +1,10 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT '<xml/>'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT '<xml/>'
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT '<xml/>'
 
 -- Access.Jet.OleDb AccessOleDb

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -37,7 +36,6 @@ WHERE
 	[t1].[Id] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[t1].[Id],
 	[t1].[BlobValue]

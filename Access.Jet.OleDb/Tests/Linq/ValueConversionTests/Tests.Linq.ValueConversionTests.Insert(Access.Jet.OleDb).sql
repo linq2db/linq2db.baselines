@@ -32,7 +32,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -83,7 +82,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -150,7 +148,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 1
 	[e].[Id],
 	[e].[Value1],
@@ -168,7 +165,6 @@ WHERE
 	[e].[Id] = 3
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -17,7 +16,6 @@ WHERE
 	[d].[ParentID] IN (2)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
@@ -26,7 +24,6 @@ WHERE
 	[x].[ParentID] IN (2)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -44,7 +41,6 @@ WHERE
 	[d].[ParentID] IN (3)
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT DISTINCT
 	[x].[ChildID]
 FROM

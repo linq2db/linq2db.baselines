@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 3
 	[x].[Id]
 FROM
@@ -9,7 +8,6 @@ ORDER BY
 	[x].[Id]
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT TOP 3
 	[x].[Id]
 FROM

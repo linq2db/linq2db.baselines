@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 UPDATE
 	[Issue4132Table] [row_1]
 SET
@@ -23,7 +21,6 @@ WHERE
 	[row_1].[Number] = 1
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[r].[Id],
 	[r].[Number],

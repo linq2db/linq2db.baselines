@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

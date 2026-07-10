@@ -15,7 +15,6 @@ WHERE
 	[e].[GuidValue] = ? AND [e].[GuidNullableValue] = ?
 
 -- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[GuidValue],

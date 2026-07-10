@@ -1,5 +1,4 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE
@@ -27,11 +26,9 @@ VALUES
 )
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Jet.OleDb AccessOleDb
-
 SELECT TOP 2
 	[p].[FirstName],
 	[p].[PersonID],
@@ -44,7 +41,6 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 -- Access.Jet.OleDb AccessOleDb
-
 DELETE FROM
 	[Person] [t1]
 WHERE
