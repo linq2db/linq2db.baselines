@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -18,7 +17,6 @@ FROM
 			SELECT 'Doe') `n` ON `p`.`LastName` = `n`.`item`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`TrimTestTable` `t1`
 SET
@@ -8,7 +7,6 @@ WHERE
 	`t1`.`ID` = 3
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`TrimTestTable` `t`
 SET
@@ -17,7 +15,6 @@ WHERE
 	`t`.`Data` = '***XXX***'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`TrimTestTable` `t`
 SET
@@ -26,7 +23,6 @@ WHERE
 	`t`.`Data` = '***HHH***'
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`
@@ -36,7 +32,6 @@ ORDER BY
 	`r`.`ID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`ID`,
 	`r`.`Data`

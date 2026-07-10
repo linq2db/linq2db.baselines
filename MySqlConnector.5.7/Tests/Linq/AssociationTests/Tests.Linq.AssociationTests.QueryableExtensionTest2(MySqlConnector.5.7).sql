@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`a_QueryableParent`.`ParentID`,
 	`a_QueryableParent`.`Value1`

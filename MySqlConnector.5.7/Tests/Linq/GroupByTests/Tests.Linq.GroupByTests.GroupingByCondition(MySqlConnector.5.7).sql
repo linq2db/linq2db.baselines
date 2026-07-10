@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_1`.`isValueAvailable`,
 	`g_1`.`ParentID`,
@@ -22,7 +21,6 @@ GROUP BY
 	`g_1`.`Value_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`

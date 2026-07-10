@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	SUM(Coalesce(`a_Parent`.`Value1`, 0))
 FROM

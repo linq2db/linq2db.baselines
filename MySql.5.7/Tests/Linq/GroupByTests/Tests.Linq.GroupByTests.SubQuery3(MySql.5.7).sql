@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`g_2`.`Key_1`,
 	SUM(`g_2`.`ParentID`)

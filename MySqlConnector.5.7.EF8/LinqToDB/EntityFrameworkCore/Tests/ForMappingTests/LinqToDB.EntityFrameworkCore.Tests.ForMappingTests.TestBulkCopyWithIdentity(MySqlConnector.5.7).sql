@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7.MySqlConnector MySql57
-
 CREATE TEMPORARY TABLE `WithIdentity`
 (
 	`Id`   int      AUTO_INCREMENT NOT NULL,
@@ -11,7 +10,6 @@ CREATE TEMPORARY TABLE `WithIdentity`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `WithIdentity`
 (
 	`Name`
@@ -23,7 +21,6 @@ VALUES
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -33,7 +30,6 @@ FROM
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 

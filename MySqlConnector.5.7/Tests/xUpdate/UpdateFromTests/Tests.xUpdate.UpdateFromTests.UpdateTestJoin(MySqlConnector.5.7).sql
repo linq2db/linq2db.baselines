@@ -19,7 +19,6 @@ WHERE
 	`t`.`id` <> @someId
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`v`.`id`,
 	`v`.`Value1`,

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`Id`,
 	`c_1`.`Name`
@@ -9,7 +8,6 @@ ORDER BY
 	`c_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`d`.`CompanyId`,
 	`d`.`Id`,
@@ -22,7 +20,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`e`.`DepartmentId`,
 	`e`.`Id`,
@@ -36,7 +33,6 @@ ORDER BY
 	`e`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

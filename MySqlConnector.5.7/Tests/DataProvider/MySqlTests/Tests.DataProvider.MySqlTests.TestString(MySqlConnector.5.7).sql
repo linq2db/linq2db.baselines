@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast('12345' as char(20))
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT Cast(NULL    as char(20))
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

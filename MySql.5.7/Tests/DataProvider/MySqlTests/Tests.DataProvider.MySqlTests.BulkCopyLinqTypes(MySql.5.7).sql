@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -24,7 +23,6 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`
@@ -32,7 +30,6 @@ WHERE
 	`LinqDataTypes`.`ID` >= 4000
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
@@ -57,7 +54,6 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL)
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DELETE  
 FROM
 	`LinqDataTypes`

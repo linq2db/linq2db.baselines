@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	CAST('Small' AS CHAR(255)),
 	`c_1`.`Id`,
@@ -15,7 +14,6 @@ FROM
 	`Company` `c_2`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`k_1`.`item`,
 	`d`.`Id`,

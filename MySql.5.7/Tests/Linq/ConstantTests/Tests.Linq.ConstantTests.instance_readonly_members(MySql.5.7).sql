@@ -15,7 +15,6 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @InitOnlyId
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,
@@ -41,7 +40,6 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @InitOnlyId
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GuidValue`,

@@ -15,7 +15,6 @@ WHERE
 	`x`.`Id` = 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`x`.`Id`,
 	`x`.`NoConversion`,

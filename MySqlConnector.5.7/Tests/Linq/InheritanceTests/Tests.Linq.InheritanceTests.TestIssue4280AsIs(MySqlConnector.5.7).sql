@@ -45,7 +45,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`DeviceType`,
 	`t1`.`Id`,
@@ -92,7 +91,6 @@ WHERE
 	`t1`.`Id` = @Id
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`DeviceType`,
 	`t1`.`Id`,

@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`nm`.`FirstName`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH(`nm`.`FirstName`) <> 0
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`,
@@ -27,7 +26,6 @@ FROM
 	) `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`k_1`.`Item1`,
 	`k_1`.`Item2`,
@@ -65,7 +63,6 @@ ORDER BY
 	`d`.`Id`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`k_1`.`Item1`,
 	`k_1`.`Item2`,

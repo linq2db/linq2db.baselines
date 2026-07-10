@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p2`.`PersonID`,
 	CONCAT(`p2`.`FirstName`, '')

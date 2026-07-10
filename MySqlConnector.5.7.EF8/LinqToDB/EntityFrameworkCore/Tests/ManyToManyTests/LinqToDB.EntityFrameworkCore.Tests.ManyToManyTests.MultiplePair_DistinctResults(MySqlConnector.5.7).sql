@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`u`.`Id`
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`u`.`Id`
 FROM

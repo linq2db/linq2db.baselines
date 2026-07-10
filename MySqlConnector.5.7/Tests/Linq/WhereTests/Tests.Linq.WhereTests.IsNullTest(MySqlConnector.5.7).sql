@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`nm`.`MiddleName`
 FROM
@@ -8,7 +7,6 @@ WHERE
 	`nm`.`MiddleName` IS NOT NULL
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

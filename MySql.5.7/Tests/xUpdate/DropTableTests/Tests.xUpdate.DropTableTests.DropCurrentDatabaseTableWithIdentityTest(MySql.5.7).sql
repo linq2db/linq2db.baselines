@@ -1,9 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE IF EXISTS `DropTableTestID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 CREATE TABLE `DropTableTestID`
 (
 	`ID`  INT AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `DropTableTestID`
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `DropTableTestID`
 (
 	`ID1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t`.`ID`,
 	`t`.`ID1`
@@ -32,11 +28,9 @@ FROM
 	`DropTableTestID` `t`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE `DropTableTestID`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`ID1`

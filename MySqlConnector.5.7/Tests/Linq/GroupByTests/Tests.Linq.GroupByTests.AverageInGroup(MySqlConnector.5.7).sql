@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`g_1`.`GroupId`,
 	AVG(`g_1`.`DataValue`),
@@ -29,7 +28,6 @@ GROUP BY
 	`g_1`.`GroupId`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`GroupId`,

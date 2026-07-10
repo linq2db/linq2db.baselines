@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT IGNORE INTO `test_insert_or_replace`
 (
 	`id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT IGNORE INTO `test_insert_or_replace`
 (
 	`id`,

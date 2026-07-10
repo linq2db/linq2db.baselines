@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Issue4132Table`
 (
 	`Id`,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`Issue4132Table` `row_1`
 SET
@@ -23,7 +21,6 @@ WHERE
 	`row_1`.`Number` = 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`r`.`Id`,
 	`r`.`Number`,

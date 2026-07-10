@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	CONCAT(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
 	Coalesce(`t1`.`SubSum`, 0),

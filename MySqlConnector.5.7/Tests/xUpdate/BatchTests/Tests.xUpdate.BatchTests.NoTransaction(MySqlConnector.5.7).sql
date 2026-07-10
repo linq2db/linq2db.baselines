@@ -39,7 +39,6 @@ WHERE
 	`Parent`.`ParentID` = @ParentID
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `Parent`
 (
 	`ParentID`,

@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -12,7 +11,6 @@ WHERE
 	`p`.`FirstName` = 'John'
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

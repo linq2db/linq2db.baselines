@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`c_1`.`Id`
 FROM
@@ -10,7 +9,6 @@ ORDER BY
 	`c_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -28,7 +26,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`d`.`CompanyId`,
 	`d`.`Id`,

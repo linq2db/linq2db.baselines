@@ -10,7 +10,6 @@ WHERE
 	`t`.`ID` = 1
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	Length(`t`.`BinaryValue`)
 FROM

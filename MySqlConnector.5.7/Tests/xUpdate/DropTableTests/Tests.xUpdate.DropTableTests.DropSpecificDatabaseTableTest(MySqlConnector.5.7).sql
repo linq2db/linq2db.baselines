@@ -1,9 +1,7 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE IF EXISTS `DropTableTest`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	DATABASE()
 FROM
@@ -11,7 +9,6 @@ FROM
 LIMIT 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 CREATE TABLE `DropTableTest`
 (
 	`ID` INT NOT NULL,
@@ -20,7 +17,6 @@ CREATE TABLE `DropTableTest`
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `testdataconnector`.`DropTableTest`
 (
 	`ID`
@@ -31,18 +27,15 @@ VALUES
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`
 FROM
 	`testdataconnector`.`DropTableTest` `t1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 DROP TABLE `testdataconnector`.`DropTableTest`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`ID`
 FROM

@@ -11,7 +11,6 @@ ORDER BY `a`.`Id`, `t0`.`ArticlesId`, `t0`.`TagsTagId`
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Label`
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Title`

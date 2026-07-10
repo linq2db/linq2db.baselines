@@ -1,5 +1,4 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`p1`.`ParentID`,
 	`p1`.`ParentID`,
@@ -15,7 +14,6 @@ FROM
 	`Parent` `p2`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`Value1`

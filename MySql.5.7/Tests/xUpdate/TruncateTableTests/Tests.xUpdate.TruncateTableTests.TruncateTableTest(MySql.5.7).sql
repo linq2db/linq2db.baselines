@@ -1,9 +1,7 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE IF EXISTS `TestTrun`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 CREATE TABLE `TestTrun`
 (
 	`ID`     INT             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE `TestTrun`
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 TRUNCATE TABLE `TestTrun`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 DROP TABLE `TestTrun`
 

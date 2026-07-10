@@ -8,7 +8,6 @@ INNER JOIN (
 
 
 -- MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`o`.`Id`
 FROM
