@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[c_1].[ChildID],
 	[a_ParentID2].[ParentID],

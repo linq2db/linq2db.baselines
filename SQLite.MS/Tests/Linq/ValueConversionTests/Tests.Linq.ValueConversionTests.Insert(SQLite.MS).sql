@@ -32,7 +32,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -171,7 +168,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

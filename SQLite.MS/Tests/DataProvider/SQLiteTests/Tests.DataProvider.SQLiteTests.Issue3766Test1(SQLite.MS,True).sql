@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Issue3766Table] AS [t1]
 (
 	[Id],
@@ -14,7 +13,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[Value] = 0
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Issue3766Table] AS [t1]
 (
 	[Id],

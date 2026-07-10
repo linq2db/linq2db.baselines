@@ -49,7 +49,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Name]
 FROM

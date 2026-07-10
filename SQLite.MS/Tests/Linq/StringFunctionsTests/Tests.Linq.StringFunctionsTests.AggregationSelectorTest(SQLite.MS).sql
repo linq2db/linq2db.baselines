@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	GROUP_CONCAT([g_1].[Value1], ' -> ')
 FROM

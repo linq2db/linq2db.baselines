@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 WITH [cte]
 (
 	[FirstName],
@@ -29,7 +28,6 @@ FROM
 	[cte] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

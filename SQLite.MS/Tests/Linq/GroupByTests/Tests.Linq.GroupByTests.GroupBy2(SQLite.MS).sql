@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[gr_1].[ID],
 	[gr_1].[ID] + 1

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Child]
 (
 	[ChildID],
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Parent]
 SET
@@ -34,14 +31,12 @@ WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [Parent].[ParentID]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ChildID] = 10000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

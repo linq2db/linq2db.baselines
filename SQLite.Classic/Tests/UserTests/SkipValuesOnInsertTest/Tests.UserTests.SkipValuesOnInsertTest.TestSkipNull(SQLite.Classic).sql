@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[Id],
 	[t].[Name],

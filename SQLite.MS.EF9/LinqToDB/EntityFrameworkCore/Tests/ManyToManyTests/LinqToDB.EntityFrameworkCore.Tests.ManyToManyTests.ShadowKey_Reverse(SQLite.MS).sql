@@ -9,7 +9,6 @@ ORDER BY "t"."Label"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[Label]
 FROM

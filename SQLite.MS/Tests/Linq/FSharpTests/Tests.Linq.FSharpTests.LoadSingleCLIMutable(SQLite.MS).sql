@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName],

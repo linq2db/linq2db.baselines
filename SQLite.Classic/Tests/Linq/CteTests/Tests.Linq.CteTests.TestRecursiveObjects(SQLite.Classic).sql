@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [previous]
 (
 	[OrgGroup_Id],

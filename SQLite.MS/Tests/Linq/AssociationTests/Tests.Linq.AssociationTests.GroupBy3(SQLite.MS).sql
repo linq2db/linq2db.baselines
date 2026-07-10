@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT DISTINCT
 	CAST(strftime('%Y', [a_Types].[DateTimeValue]) AS INTEGER)
 FROM

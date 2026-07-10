@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[g_1].[FirstName],
 	COUNT(*)

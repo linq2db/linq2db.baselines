@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -9,7 +8,6 @@ VALUES
 (111001,NULL)
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Child]
 (
 	[ParentID],

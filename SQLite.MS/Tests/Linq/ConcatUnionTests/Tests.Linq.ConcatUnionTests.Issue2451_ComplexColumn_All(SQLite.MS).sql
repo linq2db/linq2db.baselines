@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[FirstName] || '/' || [p].[LastName]
 FROM

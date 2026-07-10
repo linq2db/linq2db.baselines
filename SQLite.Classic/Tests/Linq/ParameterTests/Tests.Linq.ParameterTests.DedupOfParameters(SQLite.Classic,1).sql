@@ -20,7 +20,6 @@ SET
 	[Value5] = @Value_4
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -54,7 +53,6 @@ SET
 	[Value5] = @Value_4
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -88,7 +86,6 @@ SET
 	[Value5] = @Value_4
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -122,7 +119,6 @@ SET
 	[Value5] = @Value_4
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

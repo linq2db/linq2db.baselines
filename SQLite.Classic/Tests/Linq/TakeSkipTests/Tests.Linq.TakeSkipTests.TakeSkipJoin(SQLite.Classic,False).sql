@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],
@@ -13,7 +12,6 @@ FROM
 	[LinqDataTypes] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[e].[ID],
 	[p].[SmallIntValue]

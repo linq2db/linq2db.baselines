@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1] + 12345
@@ -7,7 +6,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -17,7 +15,6 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [e].[Id] > 1 THEN [e].[Value1]
@@ -27,7 +24,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -37,14 +33,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	-[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -54,14 +48,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Value1] + ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

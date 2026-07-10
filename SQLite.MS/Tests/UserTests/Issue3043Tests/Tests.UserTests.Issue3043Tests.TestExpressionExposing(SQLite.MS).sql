@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	Coalesce([a_City].[Name], '') || ' ' || Coalesce(CAST([a_City].[Population] AS NVarChar(11)), '')

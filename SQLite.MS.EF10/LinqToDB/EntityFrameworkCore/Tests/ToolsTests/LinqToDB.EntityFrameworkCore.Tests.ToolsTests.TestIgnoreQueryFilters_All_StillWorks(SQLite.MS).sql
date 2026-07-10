@@ -3,7 +3,6 @@ FROM "Products" AS "p"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[IsDeleted],
 	[t1].[ProductID],

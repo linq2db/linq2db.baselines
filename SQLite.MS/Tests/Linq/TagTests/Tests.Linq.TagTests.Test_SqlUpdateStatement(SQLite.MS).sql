@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* My Test */
 UPDATE
 	[TestTable]

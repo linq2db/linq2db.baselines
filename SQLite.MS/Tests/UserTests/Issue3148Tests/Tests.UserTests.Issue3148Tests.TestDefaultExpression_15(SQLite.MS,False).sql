@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[r].[PersonID] = -1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[FirstName],
 	[r].[PersonID],

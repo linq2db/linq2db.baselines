@@ -1,11 +1,9 @@
 ﻿-- SQLite.Classic SQLite
 
-
 CREATE TABLE FirstTable (PkField1 INT, PkField2 INT, AdditionalField INTEGER, PRIMARY KEY (PkField1, PkField2));
 CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkField2) REFERENCES FirstTable (PkField1, PkField2));
 
 -- SQLite.Classic SQLite
-
 
 				SELECT
 					t.schema || '..' || t.name AS TableID,
@@ -21,7 +19,6 @@ CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkF
 
 -- SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema || '..' || t.name AS TableID,
 					i.name                     AS PrimaryKeyName,
@@ -34,7 +31,6 @@ CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkF
 			
 
 -- SQLite.Classic SQLite
-
 
 					WITH pk_counts AS (
 						SELECT
@@ -65,7 +61,6 @@ CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkF
 
 -- SQLite.Classic SQLite
 
-
 				SELECT
 					t.schema AS SchemaName,
 					t.name   AS TableName
@@ -75,11 +70,9 @@ CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkF
 			
 
 -- SQLite.Classic SQLite
-
 SELECT * FROM [AllTypesView]
 
 -- SQLite.Classic SQLite
-
 
 				SELECT
 					'FK_' || tThis.name || '_' || f.id   AS Name,
@@ -96,7 +89,6 @@ SELECT * FROM [AllTypesView]
 			
 
 -- SQLite.Classic SQLite
-
 
 DROP TABLE FirstTable;
 DROP TABLE SecondTable;

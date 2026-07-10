@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

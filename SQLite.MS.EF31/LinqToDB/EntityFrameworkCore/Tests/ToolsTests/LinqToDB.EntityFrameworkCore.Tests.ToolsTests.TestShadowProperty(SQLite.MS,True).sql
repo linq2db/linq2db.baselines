@@ -7,7 +7,6 @@ WHERE @__ef_filter__p_0 OR NOT ("p"."IsDeleted")
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[QuantityPerUnit]
 FROM

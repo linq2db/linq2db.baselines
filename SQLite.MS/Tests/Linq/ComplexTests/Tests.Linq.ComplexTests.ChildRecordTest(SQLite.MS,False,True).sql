@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Table]
 (
 	[Id],
@@ -18,7 +17,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[struct_value1],
@@ -30,7 +28,6 @@ FROM
 LIMIT 2
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Table]
 SET
@@ -41,7 +38,6 @@ SET
 	[class_value2] = 5
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[struct_value1],

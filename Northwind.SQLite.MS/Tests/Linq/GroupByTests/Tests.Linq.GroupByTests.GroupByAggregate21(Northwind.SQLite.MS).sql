@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[CustomerID],
@@ -49,7 +48,6 @@ FROM
 		END)
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT DISTINCT
 	CASE
 		WHEN [t2].[Average] = 33.25 THEN 1

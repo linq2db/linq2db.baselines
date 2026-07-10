@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[ID] INTEGER NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 -- SQLite.Classic SQLite
-
 INSERT INTO [TempTable]
 (
 	[ID]
@@ -23,7 +20,6 @@ FROM
 	[Parent] [p]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[ID]
 FROM
@@ -31,6 +27,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 

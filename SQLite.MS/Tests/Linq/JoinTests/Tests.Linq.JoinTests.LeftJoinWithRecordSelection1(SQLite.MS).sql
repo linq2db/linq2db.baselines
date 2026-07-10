@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id],

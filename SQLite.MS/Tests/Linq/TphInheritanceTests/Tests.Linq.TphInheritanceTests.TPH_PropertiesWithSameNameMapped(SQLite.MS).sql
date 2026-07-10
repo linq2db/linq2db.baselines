@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[EventCode],
 	[t1].[Id],

@@ -11,7 +11,6 @@ ORDER BY "a"."Id", "t0"."ArticlesId", "t0"."TagsTagId"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[o].[Label]
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Title]

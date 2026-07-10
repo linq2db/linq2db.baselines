@@ -1,5 +1,4 @@
 ﻿-- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[t1].[Discontinued],
 	[t1].[ProductID],
@@ -15,7 +14,6 @@ FROM
 	[Products] [t1]
 
 -- Northwind.SQLite.MS SQLite.MS SQLite
-
 SELECT
 	[x].[Discontinued]
 FROM

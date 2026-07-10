@@ -11,7 +11,6 @@ ORDER BY "o"."Id", "s"."OrderId", "s"."ProductId"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -26,7 +25,6 @@ ORDER BY
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Number]

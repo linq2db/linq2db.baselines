@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[a_Patient].[PersonID],
 	[a_Patient].[Diagnosis]

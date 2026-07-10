@@ -24,14 +24,12 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -52,7 +50,6 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 UPDATE
 	[TableToInsert]
 SET
@@ -15,7 +14,6 @@ WHERE
 	[TableToInsert].[Id] = [r].[Id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

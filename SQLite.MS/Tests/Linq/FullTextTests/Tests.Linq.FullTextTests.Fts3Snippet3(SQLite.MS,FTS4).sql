@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	snippet([r].[FTS4_TABLE], '->', '<-')
 FROM

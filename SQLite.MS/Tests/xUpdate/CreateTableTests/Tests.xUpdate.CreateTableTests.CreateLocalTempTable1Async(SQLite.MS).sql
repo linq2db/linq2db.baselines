@@ -1,9 +1,7 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE [TestTable]
 
 -- SQLite.MS SQLite
-
 CREATE TABLE [TestTable]
 (
 	[ID]        INTEGER       NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [TestTable]
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[ID],
 	[t1].[Field1],
@@ -23,6 +20,5 @@ FROM
 	[TestTable] [t1]
 
 -- SQLite.MS SQLite
-
 DROP TABLE [TestTable]
 

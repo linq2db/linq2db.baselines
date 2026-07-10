@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	Lower([p].[Taxonomy])
 FROM

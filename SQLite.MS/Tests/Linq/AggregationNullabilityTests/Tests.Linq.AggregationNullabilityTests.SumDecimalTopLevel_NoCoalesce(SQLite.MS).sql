@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	SUM([i].[DecimalValue])
 FROM

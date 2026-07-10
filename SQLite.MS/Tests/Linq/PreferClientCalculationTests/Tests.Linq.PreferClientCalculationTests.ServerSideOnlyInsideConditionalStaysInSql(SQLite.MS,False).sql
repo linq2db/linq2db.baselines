@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN [e].[Id] > 1 THEN ABS([e].[Value1])

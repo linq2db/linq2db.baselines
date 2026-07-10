@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Parent]
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ParentID],
 	[t].[Value1]

@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-
 DROP TABLE IF EXISTS [TestTrun]
 
 -- SQLite.Classic SQLite
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     INTEGER NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- SQLite.Classic SQLite
-
 DELETE FROM [TestTrun]
 
 -- SQLite.Classic SQLite
-
 DROP TABLE [TestTrun]
 

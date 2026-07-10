@@ -13,7 +13,6 @@ WHERE
 	[t1].[Id] = @id AND [a_AssociatedRequired].[Id] = [MainTable].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field]

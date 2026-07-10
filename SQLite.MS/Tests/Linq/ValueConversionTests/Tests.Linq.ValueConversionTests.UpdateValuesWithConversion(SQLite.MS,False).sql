@@ -10,7 +10,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],
@@ -34,7 +33,6 @@ WHERE
 	[TableWithConverterValue].[Id] = 2
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id],
 	[x].[NoConversion],

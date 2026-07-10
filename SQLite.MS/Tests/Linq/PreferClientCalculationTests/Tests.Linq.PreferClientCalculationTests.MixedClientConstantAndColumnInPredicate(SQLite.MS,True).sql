@@ -13,7 +13,6 @@ WHERE
 	[e].[Id] = @p + [e].[Value1]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

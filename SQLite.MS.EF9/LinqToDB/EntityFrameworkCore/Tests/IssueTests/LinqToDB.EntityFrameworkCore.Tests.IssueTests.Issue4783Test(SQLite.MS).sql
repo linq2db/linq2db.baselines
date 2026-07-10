@@ -23,7 +23,6 @@ RETURNING "Id";
 
 
 -- SQLite.MS SQLite
-
 INSERT INTO [Issue4783Records]
 (
 	[Source],
@@ -42,7 +41,6 @@ VALUES
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Source],

@@ -10,7 +10,6 @@ WHERE
 	[TphThingBase].[Id] = 3
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[Type],
 	[x].[Id],

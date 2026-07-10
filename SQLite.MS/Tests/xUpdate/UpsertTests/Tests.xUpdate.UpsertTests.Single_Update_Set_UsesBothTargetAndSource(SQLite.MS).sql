@@ -43,7 +43,6 @@ ON CONFLICT ([Id]) DO UPDATE SET
 	[UpdatedBy] = @UpdatedBy
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Name],

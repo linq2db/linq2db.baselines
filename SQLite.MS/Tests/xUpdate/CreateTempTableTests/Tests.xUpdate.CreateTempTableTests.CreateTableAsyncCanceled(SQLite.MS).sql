@@ -1,16 +1,13 @@
 ﻿-- SQLite.MS SQLite
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[TempTable]
 (
 	[ID] INTEGER NOT NULL,
@@ -19,6 +16,5 @@ CREATE TEMPORARY TABLE temp.[TempTable]
 )
 
 -- SQLite.MS SQLite
-
 DROP TABLE [TempTable]
 

@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] > 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	[c_1].[ParentID] = @id
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Child]
 WHERE
 	[Child].[ParentID] > 1000
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Parent]
 WHERE

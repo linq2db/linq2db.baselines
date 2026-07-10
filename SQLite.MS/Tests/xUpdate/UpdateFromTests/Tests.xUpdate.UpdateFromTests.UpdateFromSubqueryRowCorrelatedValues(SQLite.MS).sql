@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE
 	[Person].[PersonID] > 4
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[UpdateSubquerySourceTable]
 SET
@@ -31,7 +29,6 @@ WHERE
 	[UpdateSubquerySourceTable].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -42,7 +39,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[Person]
 WHERE

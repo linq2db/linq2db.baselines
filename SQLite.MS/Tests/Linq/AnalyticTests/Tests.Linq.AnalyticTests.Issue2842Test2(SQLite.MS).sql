@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[FirstName],
 	RANK() OVER (ORDER BY CASE

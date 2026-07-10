@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name],
@@ -69,7 +68,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

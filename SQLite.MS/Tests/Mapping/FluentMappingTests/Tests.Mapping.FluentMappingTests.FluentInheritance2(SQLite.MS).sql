@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[t1].[Gender],
 	[t1].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Gender],
 	[t1].[PersonID],

@@ -24,7 +24,6 @@ SELECT EXISTS (
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -45,7 +44,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -66,7 +64,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[ProductID],
@@ -87,7 +84,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	EXISTS(
 		SELECT

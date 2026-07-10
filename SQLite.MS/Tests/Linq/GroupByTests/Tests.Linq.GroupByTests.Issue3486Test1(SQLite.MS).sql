@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[gr].[FirstName],
 	[gr].[LastName],

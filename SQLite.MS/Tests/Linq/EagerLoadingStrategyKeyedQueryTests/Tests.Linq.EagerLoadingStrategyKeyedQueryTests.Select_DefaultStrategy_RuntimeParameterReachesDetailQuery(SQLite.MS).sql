@@ -18,7 +18,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[d].[Id],
 	[d].[Name]

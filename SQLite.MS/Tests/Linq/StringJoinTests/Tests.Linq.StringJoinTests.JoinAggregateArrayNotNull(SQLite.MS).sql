@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	SUBSTR(Coalesce(', ' || [t].[NullableValue], '') || ', ' || [t].[NotNullableValue] || Coalesce(', ' || [t].[VarcharValue], '') || Coalesce(', ' || [t].[NVarcharValue], ''), 3),
 	Coalesce((
@@ -27,7 +26,6 @@ FROM
 	[SampleClass] [t]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[PK],
 	[t1].[Id],

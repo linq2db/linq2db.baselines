@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[e].[Id],
 	[e].[Value1],
@@ -11,7 +10,6 @@ WHERE
 	[e].[Id] = 10
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

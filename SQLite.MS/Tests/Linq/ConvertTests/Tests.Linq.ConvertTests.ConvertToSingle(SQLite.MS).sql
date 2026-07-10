@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CAST([p].[MoneyValue] AS Real)
 FROM

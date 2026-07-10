@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

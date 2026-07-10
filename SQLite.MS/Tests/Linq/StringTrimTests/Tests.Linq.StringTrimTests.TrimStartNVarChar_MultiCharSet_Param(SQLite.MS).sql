@@ -1,12 +1,10 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	LTRIM([t].[NVarCharColumn], '.+')
 FROM
 	[StringTrimTable] [t]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[CharColumn],

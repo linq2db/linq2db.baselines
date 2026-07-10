@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [BooksCte] ([AuthorId], [Title])
 AS
 (

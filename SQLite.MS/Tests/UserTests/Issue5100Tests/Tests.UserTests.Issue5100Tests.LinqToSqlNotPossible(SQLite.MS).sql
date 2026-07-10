@@ -66,7 +66,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[LanguageId],
 	[t1].[TextId],

@@ -66,7 +66,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Status],
 	[m_1].[ResourceLabel],
@@ -98,7 +97,6 @@ FROM
 		INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id] AND ([m_1].[ResourceLabel] = [lc_1].[ResourceLabel] OR [m_1].[ResourceLabel] IS NULL AND [lc_1].[ResourceLabel] IS NULL)
 
 -- SQLite.MS SQLite
-
 SELECT
 	[grp].[Status],
 	[lc].[ResourceLabel]

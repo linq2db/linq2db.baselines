@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Parent]
 SET
@@ -25,7 +24,6 @@ WHERE
 	[Parent].[ParentID] = 1010
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t].[ParentID],
 	[t].[Value1]

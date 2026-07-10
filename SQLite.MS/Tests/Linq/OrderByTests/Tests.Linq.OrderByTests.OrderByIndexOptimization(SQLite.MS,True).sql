@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[s].[PersonID],
 	Substr([s].[LastName], 1, 3)

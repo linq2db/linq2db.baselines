@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 WITH [CTE_1] ([Id], [field])
 AS MATERIALIZED
 (

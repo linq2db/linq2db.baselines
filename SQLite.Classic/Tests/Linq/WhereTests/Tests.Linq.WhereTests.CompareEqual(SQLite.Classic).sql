@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[NotNullable],
@@ -11,7 +10,6 @@ WHERE
 	[p].[Nullable] = [p].[OtherNullable] OR [p].[Nullable] IS NULL AND [p].[OtherNullable] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[NotNullable],
@@ -21,7 +19,6 @@ FROM
 	[WhereCompareData] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[NotNullable],
@@ -34,7 +31,6 @@ WHERE
 	[p].[Nullable] IS NOT NULL AND [p].[OtherNullable] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[NotNullable],
@@ -44,7 +40,6 @@ FROM
 	[WhereCompareData] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[NotNullable],
@@ -56,7 +51,6 @@ WHERE
 	[p].[OtherNullable] = [p].[Nullable] OR [p].[OtherNullable] IS NULL AND [p].[Nullable] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[NotNullable],
@@ -66,7 +60,6 @@ FROM
 	[WhereCompareData] [t1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[p].[Id],
 	[p].[NotNullable],
@@ -79,7 +72,6 @@ WHERE
 	[p].[OtherNullable] IS NOT NULL AND [p].[Nullable] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[NotNullable],

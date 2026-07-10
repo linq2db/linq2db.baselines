@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrderId],
 	[d].[OrderDetailId],
@@ -18,7 +17,6 @@ FROM
 		INNER JOIN [OrderDetail] [d] ON [m_1].[OrderId] = [d].[OrderId]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[o].[OrderType],
 	[o].[OrderId],

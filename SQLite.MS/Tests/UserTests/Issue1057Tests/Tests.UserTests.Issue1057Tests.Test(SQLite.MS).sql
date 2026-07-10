@@ -54,7 +54,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[Id],
 	[p].[TargetName],

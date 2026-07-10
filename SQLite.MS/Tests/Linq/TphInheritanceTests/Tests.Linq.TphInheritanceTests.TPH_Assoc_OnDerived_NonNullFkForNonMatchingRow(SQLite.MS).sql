@@ -58,7 +58,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[a_Company].[Name]
 FROM

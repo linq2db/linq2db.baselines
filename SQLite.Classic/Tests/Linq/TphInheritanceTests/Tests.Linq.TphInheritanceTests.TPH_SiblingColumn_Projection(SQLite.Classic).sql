@@ -45,7 +45,6 @@ VALUES
 )
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[TicketChildCode]
 FROM
@@ -55,7 +54,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[TicketChild2Code]
 FROM
@@ -65,7 +63,6 @@ WHERE
 LIMIT 2
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[t].[TicketChild2Code],
 	[t].[Price]

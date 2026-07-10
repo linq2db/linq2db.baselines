@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[FirstName],
 	[x].[LastName],
@@ -20,7 +19,6 @@ ORDER BY
 	[x].[PersonID] DESC
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

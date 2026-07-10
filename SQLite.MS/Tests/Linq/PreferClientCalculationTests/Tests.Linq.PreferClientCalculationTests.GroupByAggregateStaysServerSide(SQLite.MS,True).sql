@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[g_1].[Name],
 	SUM([g_1].[Value1])
@@ -9,7 +8,6 @@ GROUP BY
 	[g_1].[Name]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

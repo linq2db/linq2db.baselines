@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IS NULL
 
 -- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM

@@ -24,11 +24,9 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT last_insert_rowid()
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -64,7 +62,6 @@ WHERE
 	[Person].[PersonID] = @ID
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

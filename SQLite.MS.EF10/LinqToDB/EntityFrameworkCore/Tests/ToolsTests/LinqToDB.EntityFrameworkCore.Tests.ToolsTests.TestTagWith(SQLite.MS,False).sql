@@ -14,7 +14,6 @@ WHERE @ef_filter__p1 OR NOT ("e"."IsDeleted") OR NOT ("e"."IsDeleted")
 
 
 -- SQLite.MS SQLite
-
 /* Tagged query */
 SELECT
 	[e].[IsDeleted],

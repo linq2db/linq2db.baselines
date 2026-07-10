@@ -1,7 +1,6 @@
 ﻿
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Key_1],
 	[d].[CfAllowValue],
@@ -21,7 +20,6 @@ ORDER BY
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[p].[AclNameId]
 FROM

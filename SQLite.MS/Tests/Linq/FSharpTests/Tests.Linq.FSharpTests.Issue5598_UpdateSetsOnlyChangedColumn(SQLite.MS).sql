@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [Issue4132Table]
 (
 	[Id],
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[Issue4132Table]
 SET
@@ -23,7 +21,6 @@ WHERE
 	[Issue4132Table].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Number],

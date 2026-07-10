@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],
@@ -132,7 +130,6 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 -- SQLite.MS SQLite
-
 SELECT
 	[r].[ID],
 	[r].[MoneyValue],

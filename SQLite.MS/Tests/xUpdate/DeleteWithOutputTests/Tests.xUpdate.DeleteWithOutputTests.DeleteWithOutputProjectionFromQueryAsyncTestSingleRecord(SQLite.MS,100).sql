@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[s].[Id],
 	[s].[Value],
@@ -10,7 +9,6 @@ WHERE
 	[s].[Id] = 3
 
 -- SQLite.MS SQLite
-
 DELETE FROM
 	[TableWithData]
 WHERE

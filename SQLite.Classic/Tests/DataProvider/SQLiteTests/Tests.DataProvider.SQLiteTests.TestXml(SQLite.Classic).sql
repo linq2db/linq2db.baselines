@@ -1,9 +1,7 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.Classic SQLite
-
 SELECT '<xml/>'
 
 -- SQLite.Classic SQLite

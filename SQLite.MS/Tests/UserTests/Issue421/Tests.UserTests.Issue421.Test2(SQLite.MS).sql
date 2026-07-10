@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 INSERT INTO [BlobClass]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]
@@ -23,7 +21,6 @@ WHERE
 LIMIT 1
 
 -- SQLite.MS SQLite
-
 UPDATE
 	[BlobClass]
 SET
@@ -32,7 +29,6 @@ WHERE
 	[BlobClass].[Id] = 1
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[BlobValue]

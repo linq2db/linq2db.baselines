@@ -11,7 +11,6 @@ ORDER BY "r"."Id", "t"."AccountsAccountId", "t"."RolesId"
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[Id],
 	[o].[Name]
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

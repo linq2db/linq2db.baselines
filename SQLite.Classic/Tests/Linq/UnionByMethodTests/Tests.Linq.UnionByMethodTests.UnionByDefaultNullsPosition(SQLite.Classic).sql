@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	[x].[Id]
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	[x].[Key_1]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[x].[Id]
 FROM

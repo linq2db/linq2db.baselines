@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[Code],
 	[e].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -28,7 +27,6 @@ FROM
 		) [ia] ON [ia].[InvoiceId] = [i].[InvoiceID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -41,7 +39,6 @@ FROM
 		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE

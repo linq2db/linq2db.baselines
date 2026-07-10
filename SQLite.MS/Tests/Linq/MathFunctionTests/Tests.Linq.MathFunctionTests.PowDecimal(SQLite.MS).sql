@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	CASE
 		WHEN CAST(Power(CAST([t].[MoneyValue] AS Float), CAST(3 AS Float)) AS Decimal) > 0

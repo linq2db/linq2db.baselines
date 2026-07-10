@@ -38,7 +38,6 @@ WHERE
 	[UpdatedEntities].[id] = [t1].[id]
 
 -- SQLite.Classic SQLite
-
 SELECT
 	[v].[id],
 	[v].[Value1],

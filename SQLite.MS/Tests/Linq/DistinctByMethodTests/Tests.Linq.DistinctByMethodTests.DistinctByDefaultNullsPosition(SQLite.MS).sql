@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 SELECT
 	[x].[Id]
 FROM
@@ -20,7 +19,6 @@ ORDER BY
 	[x].[Id]
 
 -- SQLite.MS SQLite
-
 SELECT
 	[x].[Id]
 FROM

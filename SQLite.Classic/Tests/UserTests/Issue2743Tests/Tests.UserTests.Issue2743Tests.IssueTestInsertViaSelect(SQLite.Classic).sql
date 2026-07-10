@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 INSERT INTO [MessageEventDTOTb2]
 (
 	[Id]

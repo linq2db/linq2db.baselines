@@ -70,7 +70,6 @@ VALUES
 )
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -79,7 +78,6 @@ WHERE
 	[t].[EventCode] = 'TicketChild2' AND [t].[TicketChild2Code] IS NULL
 
 -- SQLite.MS SQLite
-
 SELECT
 	COUNT(*)
 FROM

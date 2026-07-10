@@ -1,5 +1,4 @@
 ﻿-- SQLite.MS SQLite
-
 /* My custom
 wonderful multiline
 query tag */

@@ -1,5 +1,4 @@
 ﻿-- SQLite.Classic SQLite
-
 SELECT
 	snippet([r].[FTS3_TABLE], '_')
 FROM

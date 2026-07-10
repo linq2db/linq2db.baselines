@@ -1,7 +1,6 @@
 ﻿
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[ProductId],
 	[m_1].[OrderId],
@@ -31,7 +30,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -62,7 +60,6 @@ WHERE
 
 
 -- SQLite.MS SQLite
-
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],
