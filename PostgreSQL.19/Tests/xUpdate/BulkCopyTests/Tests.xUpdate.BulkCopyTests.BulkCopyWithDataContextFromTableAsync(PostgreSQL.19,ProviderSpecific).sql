@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -7,7 +7,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (1)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -18,7 +18,7 @@ VALUES
 
 INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -27,7 +27,7 @@ INSERT INTO "SimpleBulkCopyTable"
 VALUES
 (10)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "SimpleBulkCopyTable"
 (

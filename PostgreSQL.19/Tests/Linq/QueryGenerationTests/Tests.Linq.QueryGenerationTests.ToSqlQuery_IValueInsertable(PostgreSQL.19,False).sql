@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @value Integer -- Int32
 SET     @value = 123
 
@@ -11,7 +11,7 @@ VALUES
 	:value
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

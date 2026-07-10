@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Не ASCII'
 DECLARE @LastName Text(9) -- String
@@ -23,7 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."FirstName",
@@ -35,7 +35,7 @@ FROM
 	"Person" t1
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Text(8) -- String
@@ -52,7 +52,7 @@ VALUES
 	:Diagnosis
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -65,7 +65,7 @@ WHERE
 	t1."PersonID" = :ID
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 

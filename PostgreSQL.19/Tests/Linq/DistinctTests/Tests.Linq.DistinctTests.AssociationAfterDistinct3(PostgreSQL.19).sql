@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	ch_1."ChildID",
@@ -17,7 +17,7 @@ FROM
 	) ch_1
 		LEFT JOIN "Parent" "a_Parent_1" ON ch_1."ParentID" = "a_Parent_1"."ParentID"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."ParentID",

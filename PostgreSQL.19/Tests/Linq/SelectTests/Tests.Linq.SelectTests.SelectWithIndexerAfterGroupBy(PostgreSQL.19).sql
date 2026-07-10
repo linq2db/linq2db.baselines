@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	x."Key_1",
@@ -16,7 +16,7 @@ WHERE
 ORDER BY
 	x."Key_1" DESC
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."FirstName",

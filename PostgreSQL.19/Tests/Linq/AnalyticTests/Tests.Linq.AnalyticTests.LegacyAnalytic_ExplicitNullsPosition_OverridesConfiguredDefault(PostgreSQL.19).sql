@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	SUM(p."Value1") OVER (ORDER BY p."Value1" NULLS FIRST)

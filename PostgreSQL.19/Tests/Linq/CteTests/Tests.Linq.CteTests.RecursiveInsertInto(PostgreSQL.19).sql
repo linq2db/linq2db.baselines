@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 WITH RECURSIVE "CTE_1" ("Id")
 AS
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"hierarchyDown" t4
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
@@ -47,7 +47,7 @@ VALUES
 	:StringValue
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."ID",
@@ -66,7 +66,7 @@ WHERE
 	t1."ID" = 1000
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DELETE FROM
 	"LinqDataTypes" t1

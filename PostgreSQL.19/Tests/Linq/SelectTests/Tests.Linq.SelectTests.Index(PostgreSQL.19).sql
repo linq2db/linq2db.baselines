@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_2."ParentID",
@@ -20,7 +20,7 @@ FROM
 ORDER BY
 	m_2."ChildID" DESC
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_2."ParentID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @gender Char(1) -- String
 SET     @gender = 'M'
 

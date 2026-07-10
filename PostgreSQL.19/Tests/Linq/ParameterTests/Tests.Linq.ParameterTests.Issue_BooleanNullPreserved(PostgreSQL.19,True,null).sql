@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 INSERT INTO "TestBool"
 (
@@ -11,7 +11,7 @@ VALUES
 	NULL
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -20,14 +20,14 @@ FROM
 	"TestBool" t1
 LIMIT 2
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 UPDATE
 	"TestBool"
 SET
 	"Value" = NOT "TestBool"."Value"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -36,7 +36,7 @@ FROM
 	"TestBool" t1
 LIMIT 2
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 UPDATE
 	"TestBool"
@@ -45,7 +45,7 @@ SET
 WHERE
 	"TestBool"."Id" = 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

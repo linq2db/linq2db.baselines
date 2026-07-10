@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -16,7 +16,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t."Id",
@@ -27,7 +27,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -45,7 +45,7 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t2."Id",
@@ -77,7 +77,7 @@ FROM
 ORDER BY
 	t2."Id"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

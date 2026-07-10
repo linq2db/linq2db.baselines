@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT DISTINCT
 	x."ParentID",
@@ -9,7 +9,7 @@ FROM
 WHERE
 	x."ChildID" > 30
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT DISTINCT
 	x."ParentID",

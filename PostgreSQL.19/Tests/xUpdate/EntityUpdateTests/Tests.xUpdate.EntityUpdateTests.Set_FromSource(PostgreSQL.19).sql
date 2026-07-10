@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @Name Text(5) -- String
 SET     @Name = 'alice'
 DECLARE @Version Integer -- Int32
@@ -18,7 +18,7 @@ SET
 WHERE
 	"EntityUpdateTest"."Id" = :Id
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

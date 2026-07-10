@@ -1,12 +1,12 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE IF EXISTS "TestTrun"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE IF EXISTS "TestTrunDetail"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 CREATE TABLE "TestTrunDetail"
 (
@@ -17,7 +17,7 @@ CREATE TABLE "TestTrunDetail"
 	CONSTRAINT "PK_TestTrunDetail" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 CREATE TABLE "TestTrun"
 (
@@ -27,15 +27,15 @@ CREATE TABLE "TestTrun"
 	CONSTRAINT "PK_TestTrun" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 TRUNCATE TABLE "TestTrun"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE "TestTrun"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE "TestTrunDetail"
 

@@ -1,9 +1,9 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 DELETE FROM
 	"TestMergeIdentity" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
 
@@ -16,14 +16,14 @@ VALUES
 	:Field
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	MAX(t1."Id")
 FROM
 	"TestMergeIdentity" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 MERGE INTO "TestMergeIdentity" "Target"
 USING (VALUES
@@ -49,7 +49,7 @@ UPDATE
 SET
 	"Field" = "Source"."Field"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @VBLocal_id Integer -- Int32
 SET     @VBLocal_id = 1
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	(Floor(Extract(month From t."DateTimeValue"))::Int::decimal % 7)::decimal

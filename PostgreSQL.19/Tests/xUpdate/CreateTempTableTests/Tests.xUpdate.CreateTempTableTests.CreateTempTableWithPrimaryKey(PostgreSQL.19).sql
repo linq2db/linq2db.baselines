@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE IF EXISTS "TableWithPrimaryKey"
 

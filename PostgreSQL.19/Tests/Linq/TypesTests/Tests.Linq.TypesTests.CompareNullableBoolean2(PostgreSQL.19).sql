@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."ID",
@@ -13,7 +13,7 @@ FROM
 	"LinqDataTypes" t1
 		INNER JOIN "LinqDataTypes" t2 ON t1."ID" = t2."ID"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @param2 Boolean
 SET     @param2 = False
 

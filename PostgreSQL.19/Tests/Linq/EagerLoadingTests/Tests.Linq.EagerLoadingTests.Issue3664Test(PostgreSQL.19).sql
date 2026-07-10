@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -11,7 +11,7 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 11
 
@@ -25,14 +25,14 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 12
 
@@ -46,7 +46,7 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."Id"

@@ -1,6 +1,6 @@
 ﻿
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	m_1.id,
@@ -15,7 +15,7 @@ FROM
 
 
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1.id,

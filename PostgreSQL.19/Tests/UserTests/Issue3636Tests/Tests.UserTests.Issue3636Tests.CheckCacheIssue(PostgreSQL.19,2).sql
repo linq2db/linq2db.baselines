@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @myId Integer -- Int32
 SET     @myId = 2
 
@@ -27,7 +27,7 @@ FROM
 WHERE
 	d.id2 = :myId
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @myId Integer -- Int32
 SET     @myId = 2
 

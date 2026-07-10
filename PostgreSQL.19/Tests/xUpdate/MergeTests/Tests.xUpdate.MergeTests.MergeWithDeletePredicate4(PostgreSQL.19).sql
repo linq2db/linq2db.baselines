@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Не ASCII'
 DECLARE @LastName Text(9) -- String
@@ -23,7 +23,7 @@ VALUES
 	:Gender
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 SELECT
 	t1."FirstName",
@@ -35,7 +35,7 @@ FROM
 	"Person" t1
 LIMIT 1
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Text(8) -- String
@@ -54,7 +54,7 @@ VALUES
 ON CONFLICT ("PersonID") DO UPDATE SET
 	"Diagnosis" = :Diagnosis
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @patient Integer -- Int32
 SET     @patient = 1
 
@@ -114,7 +114,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
 ) = :patient THEN DELETE
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @patient Integer -- Int32
 SET     @patient = 2
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 CREATE TEMPORARY TABLE my_entities
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE my_entities
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @:p1 Date
 SET     @:p1 = Sunday, 15 March 2026
 DECLARE @:p2 Date
@@ -27,7 +27,7 @@ VALUES
 (2,1,:p2),
 (3,1,:p3)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @p Unknown -- Object
 SET     @p = {Sunday, 01 March 2026,Monday, 02 March 2026,Tuesday, 03 March 2026,Wednesday, 04 March 2026,Thursday, 05 March 2026,Friday, 06 March 2026,Saturday, 07 March 2026,Sunday, 08 March 2026}
 -- value above truncated for logging
@@ -47,7 +47,7 @@ FROM
 WHERE
 	:p @> t1."Template_ValidFrom"
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE IF EXISTS my_entities
 

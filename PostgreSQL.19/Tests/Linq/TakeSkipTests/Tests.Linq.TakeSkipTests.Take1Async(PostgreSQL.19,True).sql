@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -9,7 +9,7 @@ FROM
 	"Child" ch
 LIMIT :take
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -20,7 +20,7 @@ FROM
 	"Child" ch
 LIMIT :take
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -31,7 +31,7 @@ FROM
 	"Child" ch
 LIMIT :take
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

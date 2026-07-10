@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 
 CREATE TABLE "Table"
 (
@@ -7,7 +7,7 @@ CREATE TABLE "Table"
 	CONSTRAINT "PK_Table" PRIMARY KEY ("ID")
 )
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 
 DROP TABLE "Table"
 

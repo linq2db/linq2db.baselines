@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.19 PostgreSQL13
+﻿-- PostgreSQL.19 PostgreSQL12
 DECLARE @TypedProperty Text(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -22,7 +22,7 @@ WHERE
 			m_1."ValS" IS NOT NULL
 	)
 
--- PostgreSQL.19 PostgreSQL13
+-- PostgreSQL.19 PostgreSQL12
 DECLARE @TypedProperty Text(4) -- String
 SET     @TypedProperty = '%de%'
 
