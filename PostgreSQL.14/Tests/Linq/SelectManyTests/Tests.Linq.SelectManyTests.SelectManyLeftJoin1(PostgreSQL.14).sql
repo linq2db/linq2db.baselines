@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Value1",
 	c_1."ChildID",

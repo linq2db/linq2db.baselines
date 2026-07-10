@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"Issue4193Person"
 SET

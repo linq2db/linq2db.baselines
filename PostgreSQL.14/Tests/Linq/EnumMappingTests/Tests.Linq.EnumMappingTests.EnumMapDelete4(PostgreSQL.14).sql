@@ -8,7 +8,6 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" r
 WHERE

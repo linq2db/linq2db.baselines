@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	current_1."Field1",
 	previous."Field1"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	"Item1"."ParentID",
 	"Item1"."ChildID"

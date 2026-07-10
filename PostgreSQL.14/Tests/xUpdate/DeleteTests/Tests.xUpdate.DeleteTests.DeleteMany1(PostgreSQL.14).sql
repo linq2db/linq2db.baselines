@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Parent"
 (
 	"ParentID"
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -23,7 +21,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"Child" t1
 WHERE
@@ -52,14 +48,12 @@ WHERE
 	)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" >= 1000
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"Parent" c_1
 WHERE

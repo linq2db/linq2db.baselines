@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*) FILTER (WHERE g_1."ChildID" > 30),
 	SUM(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 30)

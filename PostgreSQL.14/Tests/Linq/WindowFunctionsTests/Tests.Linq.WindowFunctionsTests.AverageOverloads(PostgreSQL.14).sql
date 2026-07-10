@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	AVG(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),
 	AVG(t."NullableIntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

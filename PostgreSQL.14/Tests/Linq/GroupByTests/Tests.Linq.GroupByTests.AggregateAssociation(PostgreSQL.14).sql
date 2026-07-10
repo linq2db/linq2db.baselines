@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	SUM(Coalesce("a_Parent"."Value1", 0))
 FROM

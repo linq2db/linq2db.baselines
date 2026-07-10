@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	m_1."Value1"
@@ -22,7 +21,6 @@ FROM
 		) id_1 ON id_1."ParentID" = m_1."ParentID"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	m_1."Value1"

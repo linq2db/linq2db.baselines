@@ -45,7 +45,6 @@ WHERE
 	:Version > t1."Version"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",
@@ -107,7 +106,6 @@ WHERE
 	:Version > t1."Version"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Name",

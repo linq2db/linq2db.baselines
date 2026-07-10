@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uuid)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uuid)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12

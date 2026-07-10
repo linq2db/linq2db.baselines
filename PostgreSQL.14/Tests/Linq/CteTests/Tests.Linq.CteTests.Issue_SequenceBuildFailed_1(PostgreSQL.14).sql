@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 WITH RECURSIVE cte ("Id")
 AS
 (
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Id"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 WITH RECURSIVE cte ("Id")
 AS
 (

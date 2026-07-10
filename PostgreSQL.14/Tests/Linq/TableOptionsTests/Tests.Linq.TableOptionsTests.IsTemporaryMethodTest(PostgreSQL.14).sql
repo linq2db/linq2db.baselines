@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestTable"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 CREATE TEMPORARY TABLE "TestTable"
 (
 	"Id"    Int NOT NULL,
@@ -14,7 +12,6 @@ CREATE TEMPORARY TABLE "TestTable"
 ON COMMIT PRESERVE ROWS
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value",
@@ -26,6 +23,5 @@ FROM
 	"TestTable" t1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "TestTable"
 

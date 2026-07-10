@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	CONCAT_WS(', ', Coalesce(t."NullableValue", ''), t."NotNullableValue", Coalesce(t."VarcharValue", ''), Coalesce(t."NVarcharValue", '')),
 	Coalesce((
@@ -34,7 +33,6 @@ FROM
 	"SampleClass" t
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."Id",

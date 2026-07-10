@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE
@@ -23,7 +22,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DELETE FROM
 	"LinqDataTypes" t1
 WHERE

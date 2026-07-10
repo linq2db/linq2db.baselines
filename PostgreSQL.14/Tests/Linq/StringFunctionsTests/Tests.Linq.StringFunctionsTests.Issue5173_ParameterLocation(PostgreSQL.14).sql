@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	STRING_AGG('test:' || grp_1.ch::text, ';')
 FROM

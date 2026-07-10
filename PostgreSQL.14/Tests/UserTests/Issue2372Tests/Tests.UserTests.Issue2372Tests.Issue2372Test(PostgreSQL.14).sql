@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 DROP TABLE IF EXISTS "InventoryResource"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12

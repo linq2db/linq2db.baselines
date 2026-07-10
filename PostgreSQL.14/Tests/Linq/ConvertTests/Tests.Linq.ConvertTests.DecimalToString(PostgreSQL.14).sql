@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	RTRIM(Replace(p."MoneyValue"::text, ',', '.'), '0.')
 FROM
