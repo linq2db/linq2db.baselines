@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Update')) THEN
 		EXECUTE STATEMENT '
@@ -50,7 +49,6 @@ WHERE
 	"t".ID = 1
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'FluentTemp_Update')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "FluentTemp_Update"';

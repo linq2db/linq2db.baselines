@@ -14,7 +14,6 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."Column",
@@ -25,7 +24,6 @@ WHERE
 	"r"."Column" = 'value=2' AND "r"."ColumnNullable" = 'value=33'
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -83,12 +80,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "StringEnumTable"
 (
 	"Id",
@@ -99,7 +94,6 @@ SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarC
 SELECT 2,'value=2','value=33' FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",
@@ -110,12 +104,10 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 DELETE FROM
 	"StringEnumTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "StringEnumTable"
 (
 	"Id",
@@ -126,7 +118,6 @@ SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarC
 SELECT 2,'value=2','value=33' FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Column",

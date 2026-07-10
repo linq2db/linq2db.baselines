@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	LEAD("t"."IntValue") OVER (PARTITION BY "t"."CategoryId" ORDER BY "t"."Id"),
 	LEAD("t"."IntValue", 2) OVER (PARTITION BY "t"."CategoryId" ORDER BY "t"."Id"),

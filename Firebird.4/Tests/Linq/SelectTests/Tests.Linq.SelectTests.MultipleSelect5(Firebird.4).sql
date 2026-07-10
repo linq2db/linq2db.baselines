@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"p4"."PersonID",
 	"p4"."FirstName"

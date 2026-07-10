@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"c_1"."Id",
 	"c_1"."Name"
@@ -9,7 +8,6 @@ ORDER BY
 	"c_1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -26,7 +24,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"d"."CompanyId",
 	"d"."Id",

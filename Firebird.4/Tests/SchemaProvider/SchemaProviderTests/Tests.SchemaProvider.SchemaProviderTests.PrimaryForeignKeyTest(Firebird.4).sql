@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT * FROM (
 	SELECT
 		RDB$PACKAGE_NAME                                        AS PackageName,
@@ -21,7 +20,6 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 -- Firebird.4 Firebird4
-
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -61,23 +59,18 @@ SELECT
 WHERE p.RDB$SYSTEM_FLAG = 0
 
 -- Firebird.4 Firebird4
-
 "AddIssue792Record"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "OutRefEnumTest"(NULL,NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Patient_SelectAll"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 -- Firebird.4 Firebird4
@@ -87,23 +80,18 @@ SET     @PersonID = 0
 "Person_Delete"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Person_Insert"(NULL,NULL,NULL,NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Person_SelectAll"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Person_SelectByKey"(NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 -- Firebird.4 Firebird4
@@ -121,15 +109,12 @@ SET     @GENDER = _utf8 x'00'
 "Person_Update"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Scalar_DataReader"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Scalar_OutputParameter"
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM "Scalar_ReturnParameter"
 
 -- Firebird.4 Firebird4
@@ -141,11 +126,9 @@ SET     @O = 0
 TEST_PROCEDURE
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM TEST_TABLE_FUNCTION(NULL)
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM TEST_V4_TYPES(NULL,NULL,NULL,NULL,NULL)
 
 -- Firebird.4 Firebird4
@@ -157,7 +140,6 @@ SET     @O = 0
 TEST_PACKAGE1.TEST_PROCEDURE
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
 
 -- Firebird.4 Firebird4
@@ -169,7 +151,6 @@ SET     @O = 0
 TEST_PACKAGE2.TEST_PROCEDURE
 
 -- Firebird.4 Firebird4
-
 SELECT * FROM TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 RollbackTransaction

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t1"."ParentID",
 	(
@@ -22,14 +21,12 @@ FROM
 	"Parent" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
 	"Parent" "t1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x_1"."ParentID",
 	"x_1"."CountResult",

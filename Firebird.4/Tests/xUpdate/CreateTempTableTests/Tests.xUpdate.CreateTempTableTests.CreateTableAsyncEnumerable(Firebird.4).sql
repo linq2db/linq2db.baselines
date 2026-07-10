@@ -1,19 +1,16 @@
 ﻿-- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';
 END
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"p"."ParentID"
 FROM
 	"Parent" "p"
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
@@ -27,7 +24,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "TempTable"
 (
 	ID
@@ -41,7 +37,6 @@ SELECT 6 FROM rdb$database UNION ALL
 SELECT 7 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t".ID
 FROM
@@ -49,7 +44,6 @@ FROM
 		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t".ID
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';

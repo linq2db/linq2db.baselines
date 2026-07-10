@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"e"."Id",
 	"e"."AOnly",

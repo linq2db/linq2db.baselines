@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT DISTINCT
 	"t"."Pk",
 	"t"."Id",

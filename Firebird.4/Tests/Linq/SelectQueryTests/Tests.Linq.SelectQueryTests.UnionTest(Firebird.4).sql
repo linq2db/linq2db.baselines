@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	DateAdd(Day, "t"."Value", CURRENT_TIMESTAMP),
 	DateAdd(Day, 2, CURRENT_TIMESTAMP)
@@ -14,7 +13,6 @@ SELECT
 FROM rdb$database
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"v_1"."Value2"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	SUM(CASE
 		WHEN "t"."ParentID" IN (3) THEN "t"."ChildID"

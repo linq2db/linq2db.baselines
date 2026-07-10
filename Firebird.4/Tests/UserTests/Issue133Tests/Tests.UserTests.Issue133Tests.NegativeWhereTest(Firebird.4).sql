@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
 	SUM("t1"."ParentID")

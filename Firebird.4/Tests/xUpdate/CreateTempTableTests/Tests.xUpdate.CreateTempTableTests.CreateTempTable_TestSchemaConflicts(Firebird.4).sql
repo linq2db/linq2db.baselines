@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "TestTempTable"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT '
@@ -27,7 +25,6 @@ EXECUTE BLOCK AS BEGIN
 END
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "TempTable"
 (
 	"Id",
@@ -40,7 +37,6 @@ FROM
 	"TestTempTable" "t1"
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "TestTempTable"
 (
 	"Id",
@@ -53,7 +49,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "TempTable"
 (
 	"Id",
@@ -66,7 +61,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"
@@ -76,7 +70,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Renamed"
@@ -86,7 +79,6 @@ ORDER BY
 	"t1"."Id"
 
 -- Firebird.4 Firebird4
-
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
 		EXECUTE STATEMENT 'DROP TABLE "TempTable"';

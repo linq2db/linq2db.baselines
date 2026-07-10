@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "Issue4132Table"
 (
 	"Id",

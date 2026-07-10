@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id"
 FROM
@@ -33,7 +32,6 @@ ORDER BY
 	"x"."Key_1"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"x"."Id"
 FROM

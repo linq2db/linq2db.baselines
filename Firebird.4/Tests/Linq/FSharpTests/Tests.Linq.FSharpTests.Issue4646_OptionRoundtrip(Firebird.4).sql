@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."IntValue",
@@ -53,7 +52,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"r"."Id",
 	"r"."IntValue",

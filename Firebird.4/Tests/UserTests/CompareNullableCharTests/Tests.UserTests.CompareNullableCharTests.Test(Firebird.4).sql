@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"current_1"."Field1",
 	"previous"."Field1"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' || "p"."LastName") = ('{}' || "p"."LastName")
 
 -- Firebird.4 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	SUM("t"."IntValue") OVER (PARTITION BY "t"."CategoryId" ORDER BY "t"."Id" ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING),

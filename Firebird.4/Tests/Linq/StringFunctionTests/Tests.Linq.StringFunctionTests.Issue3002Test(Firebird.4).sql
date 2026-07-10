@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 INSERT INTO "SampleClass"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-
 INSERT INTO "SampleClass"
 (
 	"Id",

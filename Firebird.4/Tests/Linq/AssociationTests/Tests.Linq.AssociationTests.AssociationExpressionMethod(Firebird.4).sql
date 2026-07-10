@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	"a_ChildPredicate"."ParentID",
 	"a_ChildPredicate"."ChildID"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.4 Firebird4
-
 SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", '') FROM 3),
 	Coalesce((
@@ -28,7 +27,6 @@ FROM
 	"SampleClass" "t"
 
 -- Firebird.4 Firebird4
-
 SELECT
 	"t1".PK,
 	"t1"."Id",
