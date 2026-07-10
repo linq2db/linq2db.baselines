@@ -74,18 +74,15 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
 	[Person] [t1]
 
 -- SqlServer.2019
-
 SELECT IDENT_CURRENT('Person')
 
 -- SqlServer.2019
-
 SELECT IDENT_INCR('Person')
 
 -- SqlServer.2019

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -15,7 +14,6 @@ WHERE
 	[c_1].[ParentID] = [p_1].[ParentID]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]

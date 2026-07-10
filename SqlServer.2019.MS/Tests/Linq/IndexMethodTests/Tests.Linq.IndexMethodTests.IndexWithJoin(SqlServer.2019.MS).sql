@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[p].[ParentID],
 	[IndexedParent_1].[Item1],
@@ -20,7 +19,6 @@ ORDER BY
 	[IndexedParent_1].[ParentID]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

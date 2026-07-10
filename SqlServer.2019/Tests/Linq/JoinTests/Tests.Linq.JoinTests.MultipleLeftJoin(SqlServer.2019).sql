@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[parent_1].[ParentID],
 	[childLeftJoin].[ChildID],

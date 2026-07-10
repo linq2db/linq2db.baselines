@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 INSERT INTO [User]
 (
 	[Id]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 INSERT INTO [User]
 (
 	[Id]
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[not_null],
 	[t1].[Data_1]

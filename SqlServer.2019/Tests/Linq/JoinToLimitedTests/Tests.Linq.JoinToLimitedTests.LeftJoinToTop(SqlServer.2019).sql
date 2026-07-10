@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[o].[ParentID],
 	[o].[Value1],

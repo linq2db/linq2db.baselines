@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[g_2].[Key_1],
 	SUM([g_2].[ParentID])

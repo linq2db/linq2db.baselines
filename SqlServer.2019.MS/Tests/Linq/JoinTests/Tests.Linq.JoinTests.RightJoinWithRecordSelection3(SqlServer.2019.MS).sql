@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[f].[Id],
 	[t1].[Id],

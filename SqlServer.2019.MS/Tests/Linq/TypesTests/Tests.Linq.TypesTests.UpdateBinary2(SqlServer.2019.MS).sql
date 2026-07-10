@@ -25,7 +25,6 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 -- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[t].[ID],
 	[t].[MoneyValue],

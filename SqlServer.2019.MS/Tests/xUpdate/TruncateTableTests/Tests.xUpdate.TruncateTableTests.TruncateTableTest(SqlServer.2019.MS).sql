@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 DROP TABLE IF EXISTS [TestTrun]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 CREATE TABLE [TestTrun]
 (
 	[ID]     Int             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE [TestTrun]
 )
 
 -- SqlServer.2019.MS SqlServer.2019
-
 TRUNCATE TABLE [TestTrun]
 
 -- SqlServer.2019.MS SqlServer.2019
-
 DROP TABLE [TestTrun]
 

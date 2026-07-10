@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2019
-
 SELECT
 	[a_Requests].[Id],
 	[a_Requests].[FirmId],
@@ -67,7 +66,6 @@ WHERE
 	[r].[Id] = 1002
 
 -- SqlServer.2019
-
 SELECT
 	[a_Requests].[Id],
 	[a_Requests].[FirmId],

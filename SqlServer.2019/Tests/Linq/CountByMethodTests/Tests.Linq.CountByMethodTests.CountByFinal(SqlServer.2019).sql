@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019
-
 SELECT
 	[g_1].[TestId],
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[TestId]
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[TestId]

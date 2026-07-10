@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
-
 SELECT
 	[g_1].[FirstName],
 	[g_1].[LastName],
