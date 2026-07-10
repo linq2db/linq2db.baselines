@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Type" as "Type_1",
 	t1."Id",
