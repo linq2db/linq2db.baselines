@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"e"."Id",
 	"e"."GuidValue",
@@ -11,7 +10,6 @@ WHERE
 	(Coalesce("e"."StringValue", '') || '1') = 'StrValue1'
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

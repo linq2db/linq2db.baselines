@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Value"
@@ -20,7 +18,6 @@ FROM
 	"TestBool" "t1"
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"TestBool" "t1"
 SET
@@ -31,7 +28,6 @@ SET
 	END
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Value"
@@ -39,7 +35,6 @@ FROM
 	"TestBool" "t1"
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"TestBool" "r"
 SET
@@ -48,7 +43,6 @@ WHERE
 	"r"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t1"."Id",
 	"t1"."Value"

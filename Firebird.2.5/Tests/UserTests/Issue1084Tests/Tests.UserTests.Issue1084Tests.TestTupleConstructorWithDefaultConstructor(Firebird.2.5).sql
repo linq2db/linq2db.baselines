@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Bin_And("k_1"."StatusBitmask", 128),
 	Bin_And("g_1"."StatusBitmask", 128)

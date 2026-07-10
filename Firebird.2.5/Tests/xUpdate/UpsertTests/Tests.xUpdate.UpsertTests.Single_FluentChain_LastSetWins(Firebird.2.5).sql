@@ -49,7 +49,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"r"."Id",
 	"r"."Name",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"s"."Int" IN (NULL, NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CAST("p"."MoneyValue" AS DOUBLE PRECISION)
 FROM

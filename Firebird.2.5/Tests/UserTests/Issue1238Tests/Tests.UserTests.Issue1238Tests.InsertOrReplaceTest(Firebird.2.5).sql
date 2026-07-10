@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"InheritanceParent" "t1"
 
@@ -36,7 +35,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM
@@ -75,7 +73,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	COUNT(*)
 FROM

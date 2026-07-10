@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -21,7 +20,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -57,23 +55,18 @@ FROM RDB$FUNCTION_ARGUMENTS p
 		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
 
 -- Firebird.2.5 Firebird
-
 "AddIssue792Record"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "OutRefEnumTest"(NULL,NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "OutRefTest"(NULL,NULL,NULL,NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Patient_SelectAll"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 -- Firebird.2.5 Firebird
@@ -83,23 +76,18 @@ SET     @PersonID = 0
 "Person_Delete"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Person_Insert"(NULL,NULL,NULL,NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Person_Insert_OutputParameter"(NULL,NULL,NULL,NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Person_SelectAll"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Person_SelectByKey"(NULL)
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Person_SelectByName"(NULL,NULL)
 
 -- Firebird.2.5 Firebird
@@ -117,20 +105,16 @@ SET     @GENDER = _utf8 x'00'
 "Person_Update"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Scalar_DataReader"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Scalar_OutputParameter"
 
 -- Firebird.2.5 Firebird
-
 SELECT * FROM "Scalar_ReturnParameter"
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -152,7 +136,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
@@ -189,7 +172,6 @@ FROM RDB$FUNCTION_ARGUMENTS p
 
 RollbackTransaction
 -- Firebird.2.5 Firebird
-
 SELECT * FROM (
 	SELECT
 		NULL                                                    AS PackageName,
@@ -211,7 +193,6 @@ SELECT * FROM (
 ) ORDER BY ProcedureName
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	NULL                                                 AS PackageName,
 	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,

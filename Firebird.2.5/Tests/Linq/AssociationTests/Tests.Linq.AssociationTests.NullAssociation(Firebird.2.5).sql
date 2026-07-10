@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"a_ParentTest"."ParentID",
 	"a_ParentTest"."Value1"

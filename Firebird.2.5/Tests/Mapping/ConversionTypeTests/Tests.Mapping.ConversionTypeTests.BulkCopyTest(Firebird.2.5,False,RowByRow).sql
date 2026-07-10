@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."Data"
@@ -26,7 +25,6 @@ ORDER BY
 	"r".ID
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"r".ID,
 	"r"."Data"

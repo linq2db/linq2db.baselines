@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"
@@ -10,7 +9,6 @@ WHERE
 	"x"."ChildID" > 30
 
 -- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"x"."ParentID",
 	"x"."ChildID"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"x"."Id",
 	CASE
@@ -29,7 +28,6 @@ WHERE
 	END = 2
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."StringProp"

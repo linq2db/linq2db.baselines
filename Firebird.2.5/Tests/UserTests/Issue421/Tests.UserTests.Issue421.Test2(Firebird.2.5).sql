@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"
@@ -22,7 +20,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 UPDATE
 	"BlobClass" "t1"
 SET
@@ -31,7 +28,6 @@ WHERE
 	"t1"."Id" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t1"."Id",
 	"t1"."BlobValue"

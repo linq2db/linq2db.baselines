@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."PersonID",
 	"p"."FirstName",
@@ -15,7 +14,6 @@ WHERE
 	"p"."PersonID" = 1
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."PersonID",
 	"p"."FirstName",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE
@@ -32,7 +31,6 @@ WHERE
 	"t1"."ParentID" = @id
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Parent" "t1"
 WHERE

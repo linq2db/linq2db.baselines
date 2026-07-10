@@ -43,7 +43,6 @@ WHERE
 	"t"."Id" = @Id
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

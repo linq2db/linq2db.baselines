@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 CREATE TABLE "aa"
 (
 	"bb" Int                                    NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."bb",
 	"t1"."cc"
@@ -34,6 +32,5 @@ FROM
 	"aa" "t1"
 
 -- Firebird.2.5 Firebird
-
 DROP TABLE "aa"
 

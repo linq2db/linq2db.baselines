@@ -141,7 +141,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Code",
 	"t1"."Id",

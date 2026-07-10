@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",
@@ -14,7 +13,6 @@ FROM
 			SELECT 3 FROM rdb$database) "n" ON "p"."PersonID" = "n".ID
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

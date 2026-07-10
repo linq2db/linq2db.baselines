@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"y"."item"
 FROM
@@ -14,7 +13,6 @@ FROM
 			SELECT CAST('O' AS CHAR(1)) FROM rdb$database) "y"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

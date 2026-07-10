@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE
@@ -94,7 +93,6 @@ WHERE
 	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Person" "t1"
 WHERE

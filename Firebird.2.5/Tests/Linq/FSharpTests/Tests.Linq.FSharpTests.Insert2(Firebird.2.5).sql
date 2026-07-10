@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	MAX("t1"."PersonID")
 FROM
@@ -33,7 +32,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"p"."PersonID",
 	"p"."FirstName",
@@ -46,7 +44,6 @@ WHERE
 	"p"."PersonID" > 4
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"Person" "t"
 WHERE

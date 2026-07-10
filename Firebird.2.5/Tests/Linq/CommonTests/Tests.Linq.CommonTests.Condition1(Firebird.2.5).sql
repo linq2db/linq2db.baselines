@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	CASE
 		WHEN CHAR_LENGTH("p"."FirstName") <> 0 THEN "p"."FirstName"

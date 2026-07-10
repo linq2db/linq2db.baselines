@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"c_1"."Id",
 	"c_1"."Name"
@@ -7,7 +6,6 @@ FROM
 	"Company" "c_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"k_1"."item",
 	"d"."Id",

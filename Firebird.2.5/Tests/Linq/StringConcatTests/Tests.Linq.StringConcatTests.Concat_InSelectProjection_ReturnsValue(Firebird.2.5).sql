@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Coalesce("e"."Str1", '') || '/' || Coalesce("e"."StrReq", '')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	"e"."Id"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Str1",

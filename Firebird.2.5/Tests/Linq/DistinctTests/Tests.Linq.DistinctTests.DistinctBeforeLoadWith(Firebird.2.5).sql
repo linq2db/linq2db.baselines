@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"c_1"."ParentID",
 	"c_1"."ChildID"
@@ -11,7 +10,6 @@ ORDER BY
 	"c_1"."ChildID"
 
 -- Firebird.2.5 Firebird
-
 SELECT DISTINCT
 	"c_1"."ParentID",
 	"c_1"."ChildID"

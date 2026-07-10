@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 2
 	"t".ID,
 	"t"."MoneyValue",
@@ -58,7 +56,6 @@ WHERE
 	"t".ID = 1001
 
 -- Firebird.2.5 Firebird
-
 DELETE FROM
 	"LinqDataTypes" "t"
 WHERE

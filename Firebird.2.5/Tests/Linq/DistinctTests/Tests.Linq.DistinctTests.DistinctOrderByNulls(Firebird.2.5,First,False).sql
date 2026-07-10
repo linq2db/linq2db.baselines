@@ -10,7 +10,6 @@ ORDER BY
 	"p"."Value1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."ParentID",
 	"t1"."Value1"

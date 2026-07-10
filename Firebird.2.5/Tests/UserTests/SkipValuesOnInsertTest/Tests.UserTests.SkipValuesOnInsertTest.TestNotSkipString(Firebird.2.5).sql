@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",
@@ -52,7 +51,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT FIRST 1
 	"t"."Id",
 	"t"."Name",

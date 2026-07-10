@@ -61,7 +61,6 @@ SET
 	"Field" = "Source"."Nested_Field"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

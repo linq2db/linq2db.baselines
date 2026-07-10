@@ -29,7 +29,6 @@ VALUES
 )
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"p"."FirstName",
 	"p"."PersonID",

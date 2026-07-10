@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."ParentID",
 	"d"."ParentID",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "Parent" "d" ON "d"."ParentID" = "m_1"."ParentID"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"a_Parent"."ParentID"
 FROM

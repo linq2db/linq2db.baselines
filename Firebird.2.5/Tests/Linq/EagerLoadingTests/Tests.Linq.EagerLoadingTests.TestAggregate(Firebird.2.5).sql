@@ -1,5 +1,4 @@
 ﻿-- Firebird.2.5 Firebird
-
 SELECT
 	Coalesce((
 		SELECT
@@ -35,7 +34,6 @@ FROM
 	"MasterClass" "m_1"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"m_1"."Id1",
 	"d"."DetailId",
@@ -51,7 +49,6 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 -- Firebird.2.5 Firebird
-
 SELECT
 	"t1"."Id1",
 	"t1"."Id2",
