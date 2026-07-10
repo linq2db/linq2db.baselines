@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -12,7 +11,6 @@ WHERE
 	[p].[MiddleName] IS NOT NULL
 
 -- SqlServer.2025
-
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],

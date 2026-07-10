@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	COUNT([p].[PersonID])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[inner_1].[Count_1]
 FROM
@@ -15,7 +14,6 @@ FROM
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

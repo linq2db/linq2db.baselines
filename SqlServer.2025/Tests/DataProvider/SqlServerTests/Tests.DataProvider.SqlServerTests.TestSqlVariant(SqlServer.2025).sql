@@ -1,17 +1,13 @@
 ﻿-- SqlServer.2025
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2025
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2025
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2025
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2025

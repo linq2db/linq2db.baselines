@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 UPDATE
 	[c_1]
 SET

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[m_1].[CategoryID],
 	[d].[ProductID],
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[CategoryID],
 	[t1].[CategoryName],

@@ -9,7 +9,6 @@ ORDER BY [i].[Id]
 
 
 -- SqlServer.2025
-
 SELECT
 	[s].[Id]
 FROM

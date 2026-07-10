@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[u].[city]
 FROM
 	[User] [u]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[u].[street]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[g_2].[Value1]
 FROM

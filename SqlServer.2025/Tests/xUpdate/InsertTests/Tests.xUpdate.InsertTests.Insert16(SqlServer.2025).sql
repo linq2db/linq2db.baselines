@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
 -- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[Person] [t1]

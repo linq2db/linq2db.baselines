@@ -41,7 +41,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],
@@ -52,7 +51,6 @@ WHERE
 	[r].[Id] = 1
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[IntValue],

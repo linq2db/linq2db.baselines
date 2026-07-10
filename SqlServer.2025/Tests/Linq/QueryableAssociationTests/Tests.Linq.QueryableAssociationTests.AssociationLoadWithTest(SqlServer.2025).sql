@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t2].[Id],
 	[t2].[OwnerStr],

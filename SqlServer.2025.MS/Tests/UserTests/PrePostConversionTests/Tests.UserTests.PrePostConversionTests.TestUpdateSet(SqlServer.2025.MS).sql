@@ -30,7 +30,6 @@ SET
 	[SomeValue2] = 4
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],
@@ -48,7 +47,6 @@ SET
 	[SomeValue2] = @param
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[SomeValue1],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	CURRENT_REQUEST_ID()
 

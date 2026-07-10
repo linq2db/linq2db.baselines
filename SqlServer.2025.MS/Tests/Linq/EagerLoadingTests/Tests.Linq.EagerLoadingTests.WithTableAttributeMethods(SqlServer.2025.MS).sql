@@ -29,7 +29,6 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],

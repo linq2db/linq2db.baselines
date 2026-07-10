@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	Floor([t].[Value_1])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	ROUND(RADIANS(-45.01), 4)
 

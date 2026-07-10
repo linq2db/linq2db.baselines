@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[r].[Id],
 	IIF([r].[Value1] = [r].[Value2], 1, 0),
@@ -32,7 +31,6 @@ WHERE
 	[r].[Id] <> -1
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

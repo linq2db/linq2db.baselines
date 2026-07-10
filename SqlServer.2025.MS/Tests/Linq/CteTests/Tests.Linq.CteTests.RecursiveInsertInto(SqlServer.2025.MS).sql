@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -47,7 +46,6 @@ FROM
 	[hierarchyDown] [t4]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Level]

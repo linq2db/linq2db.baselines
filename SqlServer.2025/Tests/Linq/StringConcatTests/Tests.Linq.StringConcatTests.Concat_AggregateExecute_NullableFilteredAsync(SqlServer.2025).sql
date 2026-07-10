@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	STRING_AGG([t1].[Value], N'') WITHIN GROUP (ORDER BY [t1].[PK])
 FROM

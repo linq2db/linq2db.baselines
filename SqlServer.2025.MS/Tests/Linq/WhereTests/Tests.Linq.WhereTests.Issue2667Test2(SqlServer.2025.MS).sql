@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[a_Ref].[Id],
 	[a_Ref].[Bit01]

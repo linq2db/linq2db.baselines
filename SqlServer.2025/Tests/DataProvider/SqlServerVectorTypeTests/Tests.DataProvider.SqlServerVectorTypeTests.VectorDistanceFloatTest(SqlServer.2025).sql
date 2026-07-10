@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[t].[Vector],
 	VECTOR_DISTANCE('cosine', [t].[Vector], CAST('[1, 2, 3]' AS VECTOR(3, float32))),

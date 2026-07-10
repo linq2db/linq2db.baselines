@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t].[Id],
 	CONCAT_WS(N'', [t].[Str1], [t].[Str2], [t].[StrReq])
@@ -9,7 +8,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlServer.2025.MS SqlServer.2025
-
 SELECT
 	[t1].[Id],
 	[t1].[Str1],

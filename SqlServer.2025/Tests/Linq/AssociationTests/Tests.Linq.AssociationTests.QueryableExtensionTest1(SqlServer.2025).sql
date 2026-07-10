@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[a_QueryableChildren].[ParentID],
 	[a_QueryableChildren].[ChildID]

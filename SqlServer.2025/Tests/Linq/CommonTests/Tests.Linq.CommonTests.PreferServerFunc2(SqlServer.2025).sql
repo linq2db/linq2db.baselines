@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	LEN([p].[FirstName] || N'.') - 1
 FROM

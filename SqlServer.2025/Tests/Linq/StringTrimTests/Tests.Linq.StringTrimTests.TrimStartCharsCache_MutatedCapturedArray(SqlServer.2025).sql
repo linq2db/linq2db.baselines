@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	LTRIM([t].[VarCharColumn], '.+')
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	[t].[Id]
 
 -- SqlServer.2025
-
 SELECT
 	LTRIM([t].[VarCharColumn], 'ab')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[o_1].[StrValue]
 FROM

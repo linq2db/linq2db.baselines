@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	@param = [t1].[BigIntValue]
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

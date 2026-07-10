@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID],
@@ -21,7 +20,6 @@ WHERE
 	)
 
 -- SqlServer.2025
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

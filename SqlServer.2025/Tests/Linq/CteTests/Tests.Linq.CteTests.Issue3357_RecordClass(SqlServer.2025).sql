@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 WITH [cte] ([Id], [FirstName], [LastName])
 AS
 (

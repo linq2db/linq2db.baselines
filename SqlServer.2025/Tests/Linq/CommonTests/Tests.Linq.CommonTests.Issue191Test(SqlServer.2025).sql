@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 SELECT
 	[user_1].[Id],
 	[user_1].[FirstName],

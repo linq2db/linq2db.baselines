@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[Person] [t1]
@@ -7,7 +6,6 @@ WHERE
 	[t1].[PersonID] > 4
 
 -- SqlServer.2025
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -24,7 +22,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2025
-
 SELECT TOP (2)
 	[p].[FirstName],
 	[p].[PersonID],
@@ -37,7 +34,6 @@ WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
 -- SqlServer.2025
-
 DELETE [t1]
 FROM
 	[Person] [t1]

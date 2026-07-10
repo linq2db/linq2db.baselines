@@ -25,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.2025
-
 WITH [CTE_1] ([S1])
 AS
 (
