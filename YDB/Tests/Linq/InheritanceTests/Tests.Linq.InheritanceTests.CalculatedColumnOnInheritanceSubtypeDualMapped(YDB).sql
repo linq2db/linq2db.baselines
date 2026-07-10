@@ -20,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.`Type` as Type_1,
 	t1.Id as Id,
