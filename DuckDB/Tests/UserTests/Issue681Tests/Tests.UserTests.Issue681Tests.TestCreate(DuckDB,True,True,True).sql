@@ -17,7 +17,7 @@ DROP TABLE IF EXISTS Issue681Table2
 
 -- DuckDB
 
-CREATE TABLE TestData.main.Issue681Table2
+CREATE TABLE memory.main.Issue681Table2
 (
 	ID      INTEGER,
 	"Value" INTEGER NOT NULL,

@@ -15,7 +15,7 @@ LIMIT 1
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.main.Issue681Table4
+INSERT INTO memory.main.Issue681Table4
 (
 	"Value"
 )

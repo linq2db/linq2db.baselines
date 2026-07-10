@@ -26,7 +26,7 @@ CREATE TABLE DropTableTest
 
 -- DuckDB
 
-INSERT INTO TestData.main.DropTableTest
+INSERT INTO memory.main.DropTableTest
 (
 	ID
 )
@@ -40,16 +40,16 @@ VALUES
 SELECT
 	t1.ID
 FROM
-	TestData.main.DropTableTest t1
+	memory.main.DropTableTest t1
 
 -- DuckDB
 
-DROP TABLE TestData.main.DropTableTest
+DROP TABLE memory.main.DropTableTest
 
 -- DuckDB
 
 SELECT
 	t1.ID
 FROM
-	TestData.main.DropTableTest t1
+	memory.main.DropTableTest t1
 

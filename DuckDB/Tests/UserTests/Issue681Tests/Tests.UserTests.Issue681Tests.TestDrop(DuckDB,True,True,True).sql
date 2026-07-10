@@ -27,5 +27,5 @@ CREATE TABLE Issue681Table2
 
 -- DuckDB
 
-DROP TABLE TestData.main.Issue681Table2
+DROP TABLE memory.main.Issue681Table2
 

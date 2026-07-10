@@ -17,7 +17,7 @@ SET     $ID = 5
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.main.Issue681Table AS t1
+INSERT INTO memory.main.Issue681Table AS t1
 (
 	ID,
 	"Value"
@@ -36,7 +36,7 @@ SET     $ID = 5
 DECLARE $Value  -- Int32
 SET     $Value = 10
 
-INSERT INTO TestData.main.Issue681Table AS t1
+INSERT INTO memory.main.Issue681Table AS t1
 (
 	ID,
 	"Value"
