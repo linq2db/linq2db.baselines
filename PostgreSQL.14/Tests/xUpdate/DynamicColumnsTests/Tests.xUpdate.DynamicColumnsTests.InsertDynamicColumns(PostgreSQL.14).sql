@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 INSERT INTO "Person"
 (
 	"FirstName",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

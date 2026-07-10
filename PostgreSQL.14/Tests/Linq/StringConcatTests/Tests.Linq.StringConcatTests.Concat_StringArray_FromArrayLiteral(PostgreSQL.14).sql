@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CONCAT_WS('', Coalesce(e."StrReq", ''), ' ', 'I') = 'Programmer I'
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Str1",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	o."ParentID",
 	(
@@ -22,14 +21,12 @@ FROM
 	"Parent" o
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"Parent" o
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	x."ParentID",
 	x."CountResult",

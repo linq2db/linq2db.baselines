@@ -26,7 +26,6 @@ RETURNING
 	"PersonID"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"Person"
 SET

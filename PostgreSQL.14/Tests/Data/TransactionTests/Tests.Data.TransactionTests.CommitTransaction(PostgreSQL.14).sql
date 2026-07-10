@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 UPDATE
 	"Parent"
 SET
@@ -26,7 +25,6 @@ WHERE
 
 CommitTransaction
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."ParentID",
 	t."Value1"

@@ -14,7 +14,6 @@ WHERE
 	r."FirstName" = :p
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	r."FirstName",
 	r."PersonID",

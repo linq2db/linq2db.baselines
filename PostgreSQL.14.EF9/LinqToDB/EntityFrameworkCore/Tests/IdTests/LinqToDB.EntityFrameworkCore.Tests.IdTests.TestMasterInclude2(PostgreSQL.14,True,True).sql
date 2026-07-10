@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1.id,
 	t1.master_id,

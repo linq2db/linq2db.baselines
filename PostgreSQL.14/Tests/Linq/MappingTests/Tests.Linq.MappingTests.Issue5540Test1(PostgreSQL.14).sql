@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Items Varchar(3) -- String
@@ -15,8 +15,7 @@ VALUES
 	:Items
 )
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL13
-
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id",
 	t1."Items"

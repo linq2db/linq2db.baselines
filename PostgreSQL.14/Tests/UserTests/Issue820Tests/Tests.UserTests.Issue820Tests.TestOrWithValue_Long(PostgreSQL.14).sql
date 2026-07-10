@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -26,7 +25,6 @@ WHERE
 	:param = t1."BigIntValue"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."MoneyValue",

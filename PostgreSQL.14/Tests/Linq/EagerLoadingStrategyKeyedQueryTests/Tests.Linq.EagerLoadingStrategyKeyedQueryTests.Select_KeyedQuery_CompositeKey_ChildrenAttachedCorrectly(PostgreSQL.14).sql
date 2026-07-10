@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Region",
 	p."Code",
@@ -11,7 +10,6 @@ ORDER BY
 	p."Code"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	k_1."Item1",
 	k_1."Item2",

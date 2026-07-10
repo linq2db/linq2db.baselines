@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	s."ID",
 	s."FirstName"
@@ -18,7 +17,6 @@ WHERE
 	s."FirstName" <> ''
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

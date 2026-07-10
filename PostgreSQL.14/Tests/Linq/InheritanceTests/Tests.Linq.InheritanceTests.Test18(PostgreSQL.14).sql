@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT DISTINCT
 	p1."PersonID",
 	p1."Gender",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN Length(p."FirstName") <> 0 THEN p."FirstName"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	c_1."ParentID",
 	c_1."ChildID"
@@ -16,7 +15,6 @@ WHERE
 	)
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	c_1."ParentID",
 	c_1."ChildID"

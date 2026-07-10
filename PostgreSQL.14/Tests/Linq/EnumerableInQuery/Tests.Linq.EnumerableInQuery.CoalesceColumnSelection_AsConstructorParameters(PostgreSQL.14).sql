@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t3."ColorName",
 	t3."StyleName",
@@ -46,7 +45,6 @@ ORDER BY
 	t3."StrValue"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."ColorId",
@@ -61,7 +59,6 @@ FROM
 		LEFT JOIN "SomeStyle" "a_Style" ON t1."StyleId" = "a_Style"."Id"
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."ColorId",

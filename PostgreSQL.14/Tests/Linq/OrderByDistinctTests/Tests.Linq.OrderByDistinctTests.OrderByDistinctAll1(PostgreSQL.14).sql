@@ -23,7 +23,6 @@ ORDER BY
 LIMIT :take OFFSET :skip 
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

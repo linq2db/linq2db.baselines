@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."GuidValue",
@@ -12,7 +11,6 @@ WHERE
 	e."GuidNullableValue" = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

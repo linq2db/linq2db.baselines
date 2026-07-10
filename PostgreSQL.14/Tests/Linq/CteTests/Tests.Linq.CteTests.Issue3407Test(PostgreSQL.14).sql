@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"ID",
@@ -38,7 +37,6 @@ WHERE
 	r."ID" = 2
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 WITH "CTE_1" (c1)
 AS
 (

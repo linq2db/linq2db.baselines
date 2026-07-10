@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t_1."ID",
 	DENSE_RANK() OVER (ORDER BY t_1."ID")

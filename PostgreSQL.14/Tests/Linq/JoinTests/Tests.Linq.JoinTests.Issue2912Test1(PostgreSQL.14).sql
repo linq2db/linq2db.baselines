@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t1."ParentID" IS NOT NULL THEN t1."ChildID"

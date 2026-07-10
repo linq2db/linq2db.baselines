@@ -9,7 +9,6 @@ ORDER BY p."Id"
 
 
 -- PostgreSQL.13 PostgreSQL12
-
 SELECT
 	p."Id"
 FROM

@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	Lower(t."Id"::VarChar(36))
 FROM
 	"TableWithGuid" t
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-
 SELECT
 	t."Id"
 FROM
