@@ -11,7 +11,6 @@ ORDER BY [r].[Id], [t].[AccountsAccountId], [t].[RolesId]
 
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[o].[Name]
@@ -27,7 +26,6 @@ ORDER BY
 
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]

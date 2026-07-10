@@ -1,25 +1,19 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(12345 as binary(2))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(12345 as binary(4))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(12345 as varbinary(2))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(12345 as varbinary(4))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL as image)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(12345 as varbinary(max))
 
 -- SqlServer.SA.MS SqlServer.2019

@@ -1,85 +1,64 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as char)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as char(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as char(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as varchar)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as varchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as varchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT COUNT(*) FROM sys.databases WHERE database_id = DB_ID() AND collation_name LIKE '%_SC'
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as text)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as text)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as varchar(max))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as varchar(max))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as nchar)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as nchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as nchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as nvarchar)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as nvarchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as nvarchar(20))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as ntext)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as ntext)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast('12345' as nvarchar(max))
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT Cast(NULL    as nvarchar(max))
 
 -- SqlServer.SA.MS SqlServer.2019

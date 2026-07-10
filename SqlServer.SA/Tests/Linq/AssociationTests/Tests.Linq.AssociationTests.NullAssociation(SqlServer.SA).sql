@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[a_ParentTest].[ParentID],
 	[a_ParentTest].[Value1]

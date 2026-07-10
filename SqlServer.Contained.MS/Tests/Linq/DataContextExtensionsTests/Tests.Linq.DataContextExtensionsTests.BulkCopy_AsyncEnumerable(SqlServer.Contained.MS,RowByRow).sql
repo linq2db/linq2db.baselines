@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -43,7 +42,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -83,7 +81,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -93,7 +90,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -133,7 +129,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -143,7 +138,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -183,7 +177,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -193,7 +186,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -233,7 +225,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -243,7 +234,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -283,7 +273,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -293,7 +282,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -333,7 +321,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -343,7 +330,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -383,7 +369,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -393,7 +378,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -433,7 +417,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -443,7 +426,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -483,7 +465,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -493,7 +474,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -533,7 +513,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -543,7 +522,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -583,7 +561,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -593,7 +570,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -633,7 +609,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -643,7 +618,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -683,7 +657,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -693,7 +666,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -733,7 +705,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -743,7 +714,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -783,7 +753,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -793,7 +762,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -833,7 +801,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -843,7 +810,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]
@@ -883,7 +849,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -893,7 +858,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[BulkCopyTable] [t1]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[ParentID],
 	[t1].[ChildID],

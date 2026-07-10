@@ -36,7 +36,6 @@ WHERE
 	[TrimTestTable].[Data] = @p
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -46,7 +45,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[r].[ID],
 	[r].[Data]

@@ -18,7 +18,6 @@ VALUES
 
 CommitTransactionAsync
 -- SqlServer.Contained SqlServer.2019
-
 DELETE [t1]
 FROM
 	[Parent] [t1]

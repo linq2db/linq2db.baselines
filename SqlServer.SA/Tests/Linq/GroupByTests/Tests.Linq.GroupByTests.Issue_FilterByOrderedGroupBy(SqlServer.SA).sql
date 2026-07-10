@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[ParentID],
 	[t].[ChildID]
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

@@ -26,7 +26,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 UPDATE
 	[Person]
 SET

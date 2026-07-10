@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,7 +25,6 @@ WHERE
 	)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

@@ -19,7 +19,6 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

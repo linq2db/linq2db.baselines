@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = N'O', N'Aberto', N'Fechado'),

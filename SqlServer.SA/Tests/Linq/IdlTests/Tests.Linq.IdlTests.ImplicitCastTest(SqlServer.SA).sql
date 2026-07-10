@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]
@@ -9,7 +8,6 @@ WHERE
 	[p].[PersonID] = 1
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	[p].[FirstName]

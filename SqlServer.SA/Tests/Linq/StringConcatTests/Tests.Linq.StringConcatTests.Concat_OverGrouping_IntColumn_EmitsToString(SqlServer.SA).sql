@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[g_1].[GrpId],
 	STRING_AGG(CAST([g_1].[IntV] AS NVarChar(11)), N'') WITHIN GROUP (ORDER BY [g_1].[PK])
@@ -11,7 +10,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

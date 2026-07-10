@@ -11,7 +11,6 @@ ORDER BY [a].[Id], [t0].[ArticlesId], [t0].[TagsTagId]
 
 
 -- SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[o].[Label]
@@ -27,7 +26,6 @@ ORDER BY
 
 
 -- SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Title]

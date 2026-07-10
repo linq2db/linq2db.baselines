@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[groupedData_1].[Key_1],
 	COUNT(*)

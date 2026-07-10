@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	[rTable1].[Id_1],
 	[rTable1].[Description],

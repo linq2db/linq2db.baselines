@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 /* query 1
 query 2 */
 SELECT

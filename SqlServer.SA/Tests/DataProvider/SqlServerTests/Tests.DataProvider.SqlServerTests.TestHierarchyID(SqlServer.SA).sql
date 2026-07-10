@@ -1,17 +1,13 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT Cast('/1/3/' as hierarchyid)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast('/1/3/' as hierarchyid)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast(NULL as hierarchyid)
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT Cast(NULL as hierarchyid)
 
 -- SqlServer.SA SqlServer.2019

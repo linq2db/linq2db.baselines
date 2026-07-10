@@ -15,7 +15,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Grp],

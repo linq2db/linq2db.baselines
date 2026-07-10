@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 WITH [CTE_1] ([Value1], [Value2])
 AS
 (

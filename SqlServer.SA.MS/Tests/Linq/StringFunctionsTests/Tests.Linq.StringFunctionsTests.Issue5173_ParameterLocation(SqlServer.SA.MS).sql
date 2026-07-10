@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	STRING_AGG(N'test:' + CAST([grp_1].[ch] AS NVarChar(11)), N';')
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]
@@ -44,7 +43,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[t].[ID],
 	[t].[MoneyValue],
@@ -59,7 +57,6 @@ WHERE
 	[t].[ID] = 1001
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t]
 FROM
 	[LinqDataTypes] [t]

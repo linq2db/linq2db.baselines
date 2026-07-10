@@ -16,7 +16,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]
@@ -26,7 +25,6 @@ WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (2)
 	[e].[Id],
 	[e].[SomeText]

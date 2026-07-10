@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT

@@ -1,9 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT Cast('6F9619FF-8B86-D011-B42D-00C04FC964FF' as uniqueidentifier)
 
 -- SqlServer.Contained.MS SqlServer.2019

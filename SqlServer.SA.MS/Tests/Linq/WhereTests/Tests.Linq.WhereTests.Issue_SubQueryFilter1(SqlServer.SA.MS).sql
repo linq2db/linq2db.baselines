@@ -40,7 +40,6 @@ ORDER BY
 	[t1].[PersonID]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[PersonID],
 	[t1].[Diagnosis]
@@ -48,7 +47,6 @@ FROM
 	[Patient] [t1]
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

@@ -46,7 +46,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	N'Id',
 	[it].[Id],

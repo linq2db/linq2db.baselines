@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS
 (

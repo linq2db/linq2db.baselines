@@ -1,9 +1,7 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SqlServer.Contained SqlServer.2019
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -15,7 +13,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 INSERT BULK [TempTable](Name)
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t].[Name]
 FROM
@@ -23,6 +20,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 -- SqlServer.Contained SqlServer.2019
-
 DROP TABLE IF EXISTS [TempTable]
 

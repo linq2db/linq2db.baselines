@@ -1,12 +1,9 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT 1 UNION ALL SELECT 2
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT 1 UNION ALL SELECT 2
 

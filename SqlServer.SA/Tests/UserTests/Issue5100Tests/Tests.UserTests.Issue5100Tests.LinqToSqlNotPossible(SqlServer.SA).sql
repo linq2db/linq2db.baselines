@@ -66,7 +66,6 @@ VALUES
 )
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT TOP (1)
 	[t1].[LanguageId],
 	[t1].[TextId],

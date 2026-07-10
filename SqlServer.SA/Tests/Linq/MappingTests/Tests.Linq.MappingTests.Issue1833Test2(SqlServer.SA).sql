@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT TOP (2)
 	[e].[PersonID],
 	[e].[FirstName],

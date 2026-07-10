@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.SA.MS SqlServer.2019
-
 SELECT
 	[r].[Guid],
 	[lc].[Count],

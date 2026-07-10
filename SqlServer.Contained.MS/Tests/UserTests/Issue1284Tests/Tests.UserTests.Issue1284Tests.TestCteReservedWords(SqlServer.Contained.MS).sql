@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1] ([Obj_Operator])
 AS
 (
@@ -14,7 +13,6 @@ FROM
 	[CTE_1] [t1]
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT TOP (1)
 	[person_1].[LastName]
 FROM

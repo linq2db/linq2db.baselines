@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x].[FirstName],
 	[x].[LastName],
@@ -20,7 +19,6 @@ ORDER BY
 	[x].[PersonID] DESC
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

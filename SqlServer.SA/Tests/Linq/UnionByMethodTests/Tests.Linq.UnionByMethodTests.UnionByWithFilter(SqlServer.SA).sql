@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Key_1],
@@ -42,7 +41,6 @@ ORDER BY
 	[t1].[Key_1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Key],
@@ -52,7 +50,6 @@ FROM
 	[UnionByLeft] [t1]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[Key],

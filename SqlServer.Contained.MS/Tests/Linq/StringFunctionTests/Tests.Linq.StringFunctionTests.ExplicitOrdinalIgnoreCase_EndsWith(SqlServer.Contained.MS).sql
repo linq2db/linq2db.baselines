@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
-
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -35,7 +33,6 @@ WHERE
 	Lower([r].[CaseSensitive]) LIKE N'%ststring' ESCAPE N'~'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -44,7 +41,6 @@ WHERE
 	Lower([r].[CaseInsensitive]) LIKE N'%ststring' ESCAPE N'~'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM
@@ -53,7 +49,6 @@ WHERE
 	Lower([r].[CaseSensitive]) LIKE N'%ststring' ESCAPE N'~'
 
 -- SqlServer.Contained.MS SqlServer.2019
-
 SELECT
 	COUNT(*)
 FROM

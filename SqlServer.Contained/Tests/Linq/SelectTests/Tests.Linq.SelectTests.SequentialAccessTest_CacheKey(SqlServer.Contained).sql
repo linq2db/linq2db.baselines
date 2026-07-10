@@ -1,5 +1,4 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],
@@ -8,7 +7,6 @@ FROM
 	[InheritanceParent] [t1]
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[t1].[TypeDiscriminator],
 	[t1].[InheritanceParentId],

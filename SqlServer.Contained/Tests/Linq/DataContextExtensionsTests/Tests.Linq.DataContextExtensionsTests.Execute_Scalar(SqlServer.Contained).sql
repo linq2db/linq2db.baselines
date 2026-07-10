@@ -1,24 +1,18 @@
 ﻿-- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 
 -- SqlServer.Contained SqlServer.2019
-
 SELECT 5
 

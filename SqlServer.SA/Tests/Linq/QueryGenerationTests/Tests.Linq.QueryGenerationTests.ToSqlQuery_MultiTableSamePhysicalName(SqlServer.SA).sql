@@ -1,5 +1,4 @@
 ﻿-- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	[d].[PersonID]
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN [Doctor] [d] ON [p].[PersonID] = [d].[PersonID]
 
 -- SqlServer.SA SqlServer.2019
-
 SELECT
 	[p].[PersonID],
 	[d].[PersonID]

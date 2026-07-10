@@ -1,7 +1,6 @@
 ﻿INSERT BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
 -- SqlServer.SA.MS SqlServer.2019
-
 DELETE [p]
 FROM
 	[dbo].[LinqDataTypes] [p]
