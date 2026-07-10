@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t."EnumValue" = 'S' THEN 'Second'

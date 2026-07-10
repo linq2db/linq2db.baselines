@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Value1",
 	t."Value2"
@@ -9,7 +8,6 @@ ORDER BY
 	t."ID"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value1",

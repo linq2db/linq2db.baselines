@@ -11,7 +11,6 @@ WHERE
 	r."ParentID" = :p
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

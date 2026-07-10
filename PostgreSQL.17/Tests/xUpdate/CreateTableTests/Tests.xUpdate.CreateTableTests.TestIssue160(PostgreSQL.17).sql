@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE aa
 (
 	bb Int  NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1.bb,
 	t1.cc
@@ -34,6 +32,5 @@ FROM
 	aa t1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DROP TABLE aa
 

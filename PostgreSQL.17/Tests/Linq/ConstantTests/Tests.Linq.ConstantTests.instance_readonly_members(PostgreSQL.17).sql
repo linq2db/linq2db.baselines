@@ -15,7 +15,6 @@ WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",
@@ -41,7 +40,6 @@ WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

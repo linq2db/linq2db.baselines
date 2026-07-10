@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ChildID" IN (1001, 1002)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -19,7 +17,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "Child"
 (
 	"ParentID",
@@ -32,7 +29,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +37,6 @@ WHERE
 	c_1."ParentID" = 1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Child" t1
 WHERE
@@ -59,7 +54,6 @@ WHERE
 	)
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

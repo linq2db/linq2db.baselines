@@ -37,7 +37,6 @@ FROM
 	"DateTypes" t_1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."DateTime",

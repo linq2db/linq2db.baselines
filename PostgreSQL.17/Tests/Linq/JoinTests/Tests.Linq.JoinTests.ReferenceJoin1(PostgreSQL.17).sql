@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	c_1."ParentID",
 	g_1."GrandChildID"
@@ -10,7 +9,6 @@ FROM
 		ON c_1."ParentID" = "a_Child"."ParentID" AND c_1."ChildID" = "a_Child"."ChildID"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	c_1."ParentID",
 	g_1."GrandChildID"

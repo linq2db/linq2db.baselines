@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "Issue1107TB"
 (
 	"Id",
