@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	cc_1.Name
 FROM

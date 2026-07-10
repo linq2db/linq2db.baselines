@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	concat(Coalesce(e.Str1, ''), '/', Coalesce(e.StrReq, ''))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	e.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Str1,

@@ -1,7 +1,6 @@
 ﻿INSERT ASYNC BULK TrimTestTable(ID, Data)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.Data
@@ -11,7 +10,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.Data

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	m_1.Name,
@@ -12,7 +11,6 @@ ORDER BY
 	m_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.Id,
 	c_1.Name

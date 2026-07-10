@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	ID Int32,
@@ -10,7 +9,6 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO TempTable
 (
 	ID
@@ -21,7 +19,6 @@ FROM
 	Parent p
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID
 FROM
@@ -29,6 +26,5 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TempTable
 

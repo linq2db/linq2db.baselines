@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TEMPORARY TABLE TableWithPrimaryKey
 (
 	Key Int32,
@@ -10,6 +9,5 @@ ENGINE = MergeTree()
 ORDER BY Key
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

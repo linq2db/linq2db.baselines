@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	MONTH(t1.DateTimeValue),
 	YEAR(t1.DateTimeValue)

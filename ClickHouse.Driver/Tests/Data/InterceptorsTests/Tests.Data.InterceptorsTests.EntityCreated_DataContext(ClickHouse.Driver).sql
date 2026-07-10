@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
 	Person t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

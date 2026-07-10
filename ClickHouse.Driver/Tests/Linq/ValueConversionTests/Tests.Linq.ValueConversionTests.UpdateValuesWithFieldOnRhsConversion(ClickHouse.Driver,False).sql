@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TableWithConverterValue
 UPDATE
@@ -11,7 +10,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,
@@ -24,7 +22,6 @@ WHERE
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id,
 	x.NoConversion,

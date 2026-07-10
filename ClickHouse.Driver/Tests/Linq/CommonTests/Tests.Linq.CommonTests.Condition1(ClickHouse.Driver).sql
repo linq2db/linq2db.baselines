@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	CASE
 		WHEN lengthUTF8(p.FirstName) <> 0 THEN p.FirstName

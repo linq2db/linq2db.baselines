@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.Id,
 	Coalesce((
@@ -16,7 +15,6 @@ ORDER BY
 	p.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -27,7 +25,6 @@ FROM
 		INNER JOIN ConcatChild d ON m_1.Id = d.ParentId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name

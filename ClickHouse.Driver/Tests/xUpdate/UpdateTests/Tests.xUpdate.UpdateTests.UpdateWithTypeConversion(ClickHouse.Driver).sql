@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -24,7 +22,6 @@ WHERE
 	ID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	LinqDataTypes
 UPDATE
@@ -34,7 +31,6 @@ WHERE
 	ID = 1001
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t.ID,
 	t.MoneyValue,

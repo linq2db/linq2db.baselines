@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -8,7 +7,6 @@ WHERE
 	ID = 3
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -17,7 +15,6 @@ WHERE
 	Data = '***XXX***'
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	TrimTestTable
 UPDATE
@@ -26,7 +23,6 @@ WHERE
 	Data = '***HHH***'
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.Data
@@ -36,7 +32,6 @@ ORDER BY
 	r.ID
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	r.ID,
 	r.Data

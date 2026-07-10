@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN CTE_1 d ON m_1.Key_1 = Coalesce(d.ParentID, -1)
 
 -- ClickHouse.Driver ClickHouse
-
 WITH CTE_1 AS
 (
 	SELECT

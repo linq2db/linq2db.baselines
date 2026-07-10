@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	SUM(CASE
 		WHEN t.ParentID IN (3) THEN t.ChildID

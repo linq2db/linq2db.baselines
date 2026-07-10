@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,
@@ -17,7 +16,6 @@ WHERE
 	toInt16(1) = t1.SmallIntValue
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ID,
 	t1.MoneyValue,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	arrayStringConcat(groupArray(toString(t1.Value4)), ' -> ')
 FROM

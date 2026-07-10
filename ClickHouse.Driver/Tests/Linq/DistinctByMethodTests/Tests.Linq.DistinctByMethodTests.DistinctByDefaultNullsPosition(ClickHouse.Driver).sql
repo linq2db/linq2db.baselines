@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id
 FROM
@@ -20,7 +19,6 @@ ORDER BY
 	x.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.Id
 FROM

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.ParentID,
 	d_1.Key_1,
@@ -22,7 +21,6 @@ FROM
 		) d_1 ON m_1.ParentID = d_1.Key_1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	c_1.ParentID
 FROM

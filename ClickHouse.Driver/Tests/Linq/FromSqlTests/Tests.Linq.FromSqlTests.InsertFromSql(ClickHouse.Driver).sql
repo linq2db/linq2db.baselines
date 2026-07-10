@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 CREATE TEMPORARY TABLE Projection2
 (
 	i Int32
@@ -7,7 +6,6 @@ CREATE TEMPORARY TABLE Projection2
 ENGINE = Memory()
 
 -- ClickHouse.Driver ClickHouse
-
 INSERT INTO Projection2
 (
 	i
@@ -18,7 +16,6 @@ FROM
 	(with Rows as (select 1 as i1, 2 as i2) select * from Rows) t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.i
 FROM
@@ -26,6 +23,5 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Projection2
 

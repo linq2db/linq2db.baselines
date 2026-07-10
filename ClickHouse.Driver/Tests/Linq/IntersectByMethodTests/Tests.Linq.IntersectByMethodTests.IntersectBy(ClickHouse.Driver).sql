@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	e_1.Id,
 	e_1.TestId
@@ -20,7 +19,6 @@ ORDER BY
 	e_1.Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.TestId

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.FirstName,
 	x.LastName,
@@ -20,7 +19,6 @@ ORDER BY
 	x.PersonID DESC
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.FirstName,
 	t1.PersonID,

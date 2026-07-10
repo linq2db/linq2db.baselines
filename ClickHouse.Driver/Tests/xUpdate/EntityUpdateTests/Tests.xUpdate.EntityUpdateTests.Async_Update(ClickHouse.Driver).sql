@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	EntityUpdateTest
 UPDATE
@@ -11,7 +10,6 @@ WHERE
 	Id = 1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Name,

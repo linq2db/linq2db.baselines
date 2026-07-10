@@ -1,12 +1,10 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	trim(LEADING '.+' FROM t.NVarCharColumn)
 FROM
 	StringTrimTable t
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.CharColumn,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	x.DuplicateData
 FROM
@@ -7,7 +6,6 @@ FROM
 LIMIT 0, 3
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.DuplicateData
 FROM
@@ -19,7 +17,6 @@ ORDER BY
 LIMIT 0, 3
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT DISTINCT
 	x.DuplicateData
 FROM
@@ -27,7 +24,6 @@ FROM
 LIMIT 0, 3
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	x.DuplicateData
 FROM

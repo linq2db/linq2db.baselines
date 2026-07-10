@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 INSERT INTO ValuesTable
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,
@@ -24,7 +22,6 @@ FROM
 LIMIT 2
 
 -- ClickHouse.Driver ClickHouse
-
 ALTER TABLE
 	ValuesTable
 UPDATE
@@ -34,7 +31,6 @@ WHERE
 	Id = toInt64(1)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.SomeValue1,

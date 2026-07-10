@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	p.Id,
 	p.Text
@@ -10,7 +9,6 @@ WHERE
 |||| || | | | | | | | | | | | | | | | | |　', ''))
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id,
 	t1.Text

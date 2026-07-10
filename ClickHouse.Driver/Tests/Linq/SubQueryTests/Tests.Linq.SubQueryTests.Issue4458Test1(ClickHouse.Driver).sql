@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 SELECT
 	m_1.Id,
 	d.ItemId,
@@ -22,7 +21,6 @@ ORDER BY
 	d.UserId
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	i.Id,
 	stock_1.TotalAvailable
@@ -48,14 +46,12 @@ WHERE
 	)
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.Id
 FROM
 	Issue4458Item t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ItemId,
 	t1.QuantityAvailable,
@@ -64,7 +60,6 @@ FROM
 	WarehouseStock t1
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	t1.ItemId,
 	t1.UserId,

@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 WITH RECURSIVE partHierarchy AS
 (
 	SELECT

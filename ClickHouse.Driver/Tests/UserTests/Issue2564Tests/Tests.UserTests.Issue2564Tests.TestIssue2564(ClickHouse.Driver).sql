@@ -1,9 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
-
 DROP TABLE IF EXISTS Issue2564Table
 
 -- ClickHouse.Driver ClickHouse
-
 CREATE TABLE Issue2564Table
 (
 	Id                     Int64,
@@ -20,7 +18,6 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 -- ClickHouse.Driver ClickHouse
-
 SELECT
 	Trim(minOrNull(tgGroup_1.TranslatedMessage1)),
 	tgGroup_1.TranslatedMessageGroup,
