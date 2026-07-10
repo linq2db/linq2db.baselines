@@ -19,7 +19,6 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

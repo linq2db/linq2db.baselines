@@ -3,7 +3,6 @@ FROM [Products] AS [p]
 
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[IsDeleted],
 	[t1].[ProductID],

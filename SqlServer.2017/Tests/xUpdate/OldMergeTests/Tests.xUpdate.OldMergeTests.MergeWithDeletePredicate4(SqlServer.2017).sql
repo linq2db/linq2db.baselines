@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (1)
 	[t1].[PersonID],
 	[t1].[Diagnosis]

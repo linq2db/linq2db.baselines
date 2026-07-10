@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t].[Id],
 	LAG([t].[IntValue]) OVER (ORDER BY [t].[Id])

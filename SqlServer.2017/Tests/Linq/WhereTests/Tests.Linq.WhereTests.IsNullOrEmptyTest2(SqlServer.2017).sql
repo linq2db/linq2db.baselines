@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[nm].[FirstName]
 FROM
@@ -8,7 +7,6 @@ WHERE
 	LEN([nm].[FirstName] + N'.') <> 1
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

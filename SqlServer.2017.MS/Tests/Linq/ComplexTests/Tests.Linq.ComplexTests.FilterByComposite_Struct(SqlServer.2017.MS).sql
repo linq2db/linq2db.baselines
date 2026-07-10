@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT TOP (2)
 	[u].[Id],
 	[u].[user_name],

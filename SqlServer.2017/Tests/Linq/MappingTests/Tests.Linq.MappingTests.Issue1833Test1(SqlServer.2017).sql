@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (2)
 	[e].[PersonID],
 	[e].[FirstName],

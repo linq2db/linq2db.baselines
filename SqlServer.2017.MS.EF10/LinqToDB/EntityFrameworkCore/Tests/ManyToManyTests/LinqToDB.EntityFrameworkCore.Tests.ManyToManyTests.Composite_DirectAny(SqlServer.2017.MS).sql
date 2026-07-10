@@ -9,7 +9,6 @@ ORDER BY [p].[Code]
 
 
 -- SqlServer.2017
-
 SELECT
 	[p].[Code]
 FROM

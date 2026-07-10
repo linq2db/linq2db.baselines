@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[c_1].[ParentID],
 	Coalesce([c_1].[Value1], 0),

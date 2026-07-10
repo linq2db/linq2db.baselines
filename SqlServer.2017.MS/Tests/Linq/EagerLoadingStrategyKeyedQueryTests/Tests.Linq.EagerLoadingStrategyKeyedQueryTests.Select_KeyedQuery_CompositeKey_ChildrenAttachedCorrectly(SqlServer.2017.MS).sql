@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[p].[Region],
 	[p].[Code],
@@ -11,7 +10,6 @@ ORDER BY
 	[p].[Code]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[k_1].[Item1],
 	[k_1].[Item2],

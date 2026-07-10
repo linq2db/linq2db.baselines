@@ -9,7 +9,6 @@ ORDER BY [s].[Id]
 
 
 -- SqlServer.2017
-
 SELECT
 	[s].[Id]
 FROM

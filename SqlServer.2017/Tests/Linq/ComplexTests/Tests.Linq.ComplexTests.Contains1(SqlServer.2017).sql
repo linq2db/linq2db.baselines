@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[p].[ParentID],
 	[gc3_1].[not_null],

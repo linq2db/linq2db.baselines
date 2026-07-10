@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[x].[Id],
 	IIF([x].[StringProp] = N'1' OR [x].[StringProp] IS NULL, 1, 0),
@@ -25,7 +24,6 @@ WHERE
 	END = 2
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[StringProp]

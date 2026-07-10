@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT Cast(1 as timestamp)
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT Cast(1 as rowversion)
 
 -- SqlServer.2017.MS SqlServer.2017

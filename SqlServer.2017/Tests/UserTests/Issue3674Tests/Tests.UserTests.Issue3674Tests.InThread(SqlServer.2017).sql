@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (1)
 	[p].[Id],
 	[p].[Code],

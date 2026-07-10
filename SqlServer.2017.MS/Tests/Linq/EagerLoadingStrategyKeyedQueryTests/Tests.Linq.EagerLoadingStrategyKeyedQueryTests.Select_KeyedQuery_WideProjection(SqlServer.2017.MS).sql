@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[c_1].[Id],
 	[c_1].[Name],
@@ -69,7 +68,6 @@ ORDER BY
 	[c_1].[Id]
 
 -- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -8,7 +7,6 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 -- SqlServer.2017
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -17,7 +15,6 @@ WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
 -- SqlServer.2017
-
 UPDATE
 	[TrimTestTable]
 SET
@@ -26,7 +23,6 @@ WHERE
 	[TrimTestTable].[Data] = N'***HHH***'
 
 -- SqlServer.2017
-
 SELECT
 	[r].[ID],
 	[r].[Data]
@@ -36,7 +32,6 @@ ORDER BY
 	[r].[ID]
 
 -- SqlServer.2017
-
 SELECT
 	[r].[ID],
 	[r].[Data]

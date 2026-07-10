@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -10,7 +9,6 @@ ORDER BY
 OFFSET 3 ROWS
 
 -- SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

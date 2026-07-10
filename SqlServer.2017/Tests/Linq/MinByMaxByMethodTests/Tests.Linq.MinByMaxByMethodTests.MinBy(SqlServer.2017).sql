@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[TestId],

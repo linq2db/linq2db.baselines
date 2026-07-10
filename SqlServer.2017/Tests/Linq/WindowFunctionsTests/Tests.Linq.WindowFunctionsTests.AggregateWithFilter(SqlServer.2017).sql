@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2017
-
 SELECT
 	SUM(IIF([t].[CategoryId] = 1, [t].[IntValue], NULL)) OVER (PARTITION BY [t].[CategoryId] ORDER BY [t].[Id]),
 	SUM(IIF([t].[IntValue] > 20, [t].[IntValue], NULL)) OVER (ORDER BY [t].[Id] ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW),

@@ -35,7 +35,6 @@ ORDER BY [p].[ProductID], [t3].[OrderID0], [t3].[ProductID], [t3].[OrderID], [t3
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[SupplierId],
 	[m_1].[ProductId],
@@ -70,7 +69,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[m_1].[ProductID],
 	[d].[Discount],
@@ -101,7 +99,6 @@ WHERE
 
 
 -- SqlServer.2017
-
 SELECT
 	[p].[ProductName],
 	[p].[ProductID]
