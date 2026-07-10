@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[c_1].[Value1],
 	NULL

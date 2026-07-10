@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value],
@@ -29,6 +26,5 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

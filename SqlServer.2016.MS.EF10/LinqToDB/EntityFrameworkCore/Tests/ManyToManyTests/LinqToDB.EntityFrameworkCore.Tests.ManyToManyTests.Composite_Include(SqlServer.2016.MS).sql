@@ -11,7 +11,6 @@ ORDER BY [p].[Code], [p].[OrgId], [s].[MemberId], [s].[OrgId], [s].[Code]
 
 
 -- SqlServer.2016
-
 SELECT
 	[m_1].[OrgId],
 	[m_1].[Code],
@@ -27,7 +26,6 @@ ORDER BY
 
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],

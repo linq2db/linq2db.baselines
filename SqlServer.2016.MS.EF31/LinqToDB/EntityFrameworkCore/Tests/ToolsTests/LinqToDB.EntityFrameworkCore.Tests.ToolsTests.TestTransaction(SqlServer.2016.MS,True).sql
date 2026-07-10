@@ -7,7 +7,6 @@ WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([p].[IsDeleted] <> CAST(1 AS bit
 
 
 -- SqlServer.2016
-
 SELECT
 	MAX([e].[QuantityPerUnit])
 FROM
@@ -18,7 +17,6 @@ WHERE
 
 
 -- SqlServer.2016
-
 DELETE [e]
 FROM
 	[Products] [e]

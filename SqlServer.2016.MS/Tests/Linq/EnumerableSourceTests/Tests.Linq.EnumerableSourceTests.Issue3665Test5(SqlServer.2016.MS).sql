@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[y].[item]
 FROM
@@ -9,7 +8,6 @@ FROM
 		) [y]([item])
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

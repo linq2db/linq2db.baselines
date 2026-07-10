@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t1].[SmallIntValue],
 	[t1].[SmallIntValue],

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	Lower([p].[Taxonomy])
 FROM

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[m_1].[BranchAddress],
 	[m_1].[BranchId],

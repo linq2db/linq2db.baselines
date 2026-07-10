@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[a_MiddleGeneric].[ParentID],
 	[a_Bottom].[ParentID],

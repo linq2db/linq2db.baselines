@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[item_1].[FirstName],
 	[item_1].[PersonID],

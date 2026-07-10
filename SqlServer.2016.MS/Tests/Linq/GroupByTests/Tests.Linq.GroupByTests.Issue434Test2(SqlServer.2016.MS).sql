@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
@@ -11,7 +10,6 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

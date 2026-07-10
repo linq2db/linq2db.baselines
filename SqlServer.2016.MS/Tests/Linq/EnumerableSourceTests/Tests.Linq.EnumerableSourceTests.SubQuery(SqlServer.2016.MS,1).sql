@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t].[Id],
 	[t].[Value]
@@ -18,7 +17,6 @@ WHERE
 	)
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

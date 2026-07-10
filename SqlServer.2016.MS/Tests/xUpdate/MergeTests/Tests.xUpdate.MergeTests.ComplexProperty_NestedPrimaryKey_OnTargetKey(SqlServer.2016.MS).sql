@@ -33,7 +33,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 MERGE INTO [NestedKeyTarget] [Target]
 USING (VALUES
 	(1,N'first-updated')
@@ -51,7 +50,6 @@ SET
 ;
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Code],
 	[t1].[Id]

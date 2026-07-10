@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1]
@@ -7,7 +6,6 @@ FROM
 	[Table1788] [t1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[l].[Value1]
 FROM

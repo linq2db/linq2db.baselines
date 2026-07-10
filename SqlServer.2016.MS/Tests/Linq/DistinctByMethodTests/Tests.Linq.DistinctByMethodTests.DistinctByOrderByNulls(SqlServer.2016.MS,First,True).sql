@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -31,7 +30,6 @@ ORDER BY
 	[t1].[Date_1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Name],

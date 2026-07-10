@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 UPDATE
 	[p2]
 SET

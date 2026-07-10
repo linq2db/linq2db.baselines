@@ -1,13 +1,10 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 select @@version
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -45,7 +42,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -63,7 +59,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -100,7 +95,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -119,7 +113,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -139,7 +132,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -197,7 +189,6 @@ SET     @params = N'@input int, @output int'
 sp_describe_first_result_set
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 -- SqlServer.2016.MS SqlServer.2016
@@ -209,7 +200,6 @@ SET     @params = N''
 sp_describe_first_result_set
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
 -- SqlServer.2016.MS SqlServer.2016
@@ -383,7 +373,6 @@ SET     @ReturnFullRow = 0
 [TestDataMS].[dbo].[VariableResults]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
 -- SqlServer.2016.MS SqlServer.2016
@@ -396,15 +385,12 @@ sp_describe_first_result_set
 
 RollbackTransaction
 -- SqlServer.2016.MS SqlServer.2016
-
 select @@version
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -442,7 +428,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -460,7 +445,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -497,7 +481,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -516,7 +499,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -536,7 +518,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,
@@ -563,15 +544,12 @@ FROM
 
 RollbackTransaction
 -- SqlServer.2016.MS SqlServer.2016
-
 select @@version
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME as TableID,
@@ -609,7 +587,6 @@ WHERE
 			) IS NULL
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	k.TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + k.TABLE_SCHEMA + '.' + k.TABLE_NAME as TableID,
 	k.CONSTRAINT_NAME                                                                    as PrimaryKeyName,
@@ -627,7 +604,6 @@ WHERE
 		c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 -- SqlServer.2016.MS SqlServer.2016
-
 
 SELECT
 	TABLE_CATALOG COLLATE DATABASE_DEFAULT + '.' + TABLE_SCHEMA + '.' + TABLE_NAME                      as TableID,
@@ -664,7 +640,6 @@ FROM
 					LEFT JOIN sys.tables t ON OBJECT_ID('[' + TABLE_CATALOG + '].[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']') = t.object_id
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	fk.name                                                     as Name,
 	DB_NAME() + '.' + SCHEMA_NAME(po.schema_id) + '.' + po.name as ThisTableID,
@@ -683,7 +658,6 @@ ORDER BY
 	Ordinal
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	SPECIFIC_CATALOG                                                                        as CatalogName,
@@ -703,7 +677,6 @@ FROM
 ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
 	ORDINAL_POSITION                                                                        as Ordinal,

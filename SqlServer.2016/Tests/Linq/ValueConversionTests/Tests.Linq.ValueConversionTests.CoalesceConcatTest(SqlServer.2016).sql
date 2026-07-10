@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[t2].[Converted1],
 	[t2].[Converted2],

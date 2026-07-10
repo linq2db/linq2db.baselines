@@ -14,7 +14,6 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id]
 FROM

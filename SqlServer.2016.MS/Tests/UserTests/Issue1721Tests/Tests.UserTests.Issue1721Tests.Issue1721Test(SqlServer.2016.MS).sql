@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [tempdb]..[#I1721Model]
 (
 	[TestDateTime2]           DateTime2      NOT NULL,
@@ -11,6 +10,5 @@ CREATE TABLE [tempdb]..[#I1721Model]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [tempdb]..[#I1721Model]
 

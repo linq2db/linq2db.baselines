@@ -12,7 +12,6 @@ ORDER BY [i].[Id]
 
 
 -- SqlServer.2016
-
 SELECT
 	[c_1].[Id]
 FROM

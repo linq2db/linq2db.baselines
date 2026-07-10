@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[g_2].[ID1],
 	[g_2].[ID2] + 1,

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[p].[LastName] + N', ' + [p].[FirstName]
 FROM

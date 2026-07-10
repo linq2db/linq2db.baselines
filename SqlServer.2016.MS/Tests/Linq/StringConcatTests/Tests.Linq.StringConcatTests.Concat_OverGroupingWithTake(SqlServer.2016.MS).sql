@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[m_1].[Key_1],
 	[d_1].[Value_1]
@@ -24,7 +23,6 @@ ORDER BY
 	[m_1].[Key_1]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT DISTINCT
 	[g_1].[GrpId]
 FROM
@@ -33,7 +31,6 @@ ORDER BY
 	[g_1].[GrpId]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[PK],
 	[t1].[GrpId],

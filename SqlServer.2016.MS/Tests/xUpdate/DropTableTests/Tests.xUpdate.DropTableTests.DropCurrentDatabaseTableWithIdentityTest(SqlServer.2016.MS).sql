@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE IF EXISTS [DropTableTestID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 CREATE TABLE [DropTableTestID]
 (
 	[ID]  Int  NOT NULL IDENTITY,
@@ -13,7 +11,6 @@ CREATE TABLE [DropTableTestID]
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [DropTableTestID]
 (
 	[ID1]
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t].[ID],
 	[t].[ID1]
@@ -32,11 +28,9 @@ FROM
 	[DropTableTestID] [t]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DROP TABLE [DropTableTestID]
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	[t1].[ID],
 	[t1].[ID1]

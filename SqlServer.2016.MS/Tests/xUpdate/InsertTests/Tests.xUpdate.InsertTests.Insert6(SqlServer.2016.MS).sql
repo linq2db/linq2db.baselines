@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DELETE [p]
 FROM
 	[Parent] [p]
@@ -7,7 +6,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- SqlServer.2016.MS SqlServer.2016
-
 INSERT INTO [Parent]
 (
 	[ParentID],
@@ -22,7 +20,6 @@ WHERE
 	[c_1].[ChildID] = 11
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -31,7 +28,6 @@ WHERE
 	[p].[Value1] = 11
 
 -- SqlServer.2016.MS SqlServer.2016
-
 DELETE [p]
 FROM
 	[Parent] [p]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -105,7 +104,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
@@ -211,7 +209,6 @@ VALUES
 )
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -223,7 +220,6 @@ FROM
 	[TestMerge2] [t1]
 
 -- SqlServer.2016
-
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
 	(3), (4), (5), (6)
@@ -236,7 +232,6 @@ WHEN MATCHED AND [Source].[Key_1] = 4 THEN DELETE
 ;
 
 -- SqlServer.2016
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlServer.2016.MS SqlServer.2016
-
 SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],

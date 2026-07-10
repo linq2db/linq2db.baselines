@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 DROP TABLE IF EXISTS [InventoryResource]
 
 -- SqlServer.2016

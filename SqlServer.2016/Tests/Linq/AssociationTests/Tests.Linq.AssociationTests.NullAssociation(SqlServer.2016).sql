@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	[a_ParentTest].[ParentID],
 	[a_ParentTest].[Value1]

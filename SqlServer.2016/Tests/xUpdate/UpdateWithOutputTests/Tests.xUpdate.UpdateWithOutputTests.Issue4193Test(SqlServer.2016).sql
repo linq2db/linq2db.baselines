@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 UPDATE
 	[a_Salary]
 SET

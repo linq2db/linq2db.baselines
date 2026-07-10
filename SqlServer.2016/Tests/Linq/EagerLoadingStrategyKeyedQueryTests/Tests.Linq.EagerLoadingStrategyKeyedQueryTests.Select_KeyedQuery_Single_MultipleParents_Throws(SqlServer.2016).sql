@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT TOP (2)
 	[c_1].[Id],
 	[c_1].[Name]
@@ -7,7 +6,6 @@ FROM
 	[Company] [c_1]
 
 -- SqlServer.2016
-
 SELECT
 	[k_1].[item],
 	[d].[Id],

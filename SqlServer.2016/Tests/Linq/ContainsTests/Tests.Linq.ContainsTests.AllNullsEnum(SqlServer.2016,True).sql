@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[s].[Enum] IS NULL
 
 -- SqlServer.2016
-
 SELECT
 	COUNT(*)
 FROM

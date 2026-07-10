@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
