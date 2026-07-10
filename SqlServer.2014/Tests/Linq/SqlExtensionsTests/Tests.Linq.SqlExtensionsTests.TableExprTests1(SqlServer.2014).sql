@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT TOP (1)
 	'[database].[schema].[table_name]',
 	'[database].[schema].[table_name]',

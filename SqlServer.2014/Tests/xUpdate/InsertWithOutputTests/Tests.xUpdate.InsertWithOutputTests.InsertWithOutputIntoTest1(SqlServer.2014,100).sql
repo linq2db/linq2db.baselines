@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2014
-
 CREATE TABLE [tempdb]..[#TInserted]
 (
 	[ParentID] Int NOT NULL,
@@ -54,7 +52,6 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 -- SqlServer.2014
-
 SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
@@ -64,11 +61,9 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 -- SqlServer.2014
-
 DROP TABLE [tempdb]..[#TInserted]
 
 -- SqlServer.2014
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]

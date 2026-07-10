@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 WITH [cte] ([Id])
 AS
 (
@@ -32,7 +31,6 @@ FROM
 		INNER JOIN [StackOverflowTable5] [d] ON [d].[Value] = [m_1].[Id]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 WITH [cte] ([Id])
 AS
 (

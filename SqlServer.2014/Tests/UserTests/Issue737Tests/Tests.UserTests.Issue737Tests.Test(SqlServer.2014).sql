@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],
@@ -13,7 +12,6 @@ WHERE
 	1 = 0
 
 -- SqlServer.2014
-
 SELECT
 	[x].[FirstName],
 	[x].[PersonID],

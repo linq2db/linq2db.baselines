@@ -1,17 +1,14 @@
 ﻿-- SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 -- SqlServer.2014
-
 SELECT
 	[p].[ParentID]
 FROM
 	[Parent] [p]
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
@@ -23,7 +20,6 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 INSERT BULK [TempTable](ID)
 
 -- SqlServer.2014
-
 SELECT
 	[t].[ID]
 FROM
@@ -31,7 +27,6 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 -- SqlServer.2014
-
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 

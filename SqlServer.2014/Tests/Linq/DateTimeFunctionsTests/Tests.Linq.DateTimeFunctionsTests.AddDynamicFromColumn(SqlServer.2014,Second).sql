@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	DateAdd(second, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM

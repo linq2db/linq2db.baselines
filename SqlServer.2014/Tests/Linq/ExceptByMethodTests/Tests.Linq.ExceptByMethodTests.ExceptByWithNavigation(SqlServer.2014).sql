@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	[p].[ParentID],
 	[c_2].[ChildID]
@@ -25,7 +24,6 @@ ORDER BY
 	[c_2].[ChildID]
 
 -- SqlServer.2014
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -40,7 +38,6 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]

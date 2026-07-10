@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[s].[ID],
 	[s].[FirstName]
@@ -15,7 +14,6 @@ WHERE
 	[s].[FirstName] <> N''
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

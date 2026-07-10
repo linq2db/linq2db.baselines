@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[m_1].[Id],
 	[d].[Name]
@@ -20,7 +19,6 @@ FROM
 		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[item_1].[Name],
 	[t1].[Name],

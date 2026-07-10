@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
@@ -45,7 +44,6 @@ VALUES
 SET IDENTITY_INSERT [AllTypes2] OFF
 
 -- SqlServer.2014
-
 SELECT
 	[t1].[ID],
 	[t1].[datetimeoffsetDataType],

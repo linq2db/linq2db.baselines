@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014
-
 SELECT
 	SUM([i].[DecimalValue])
 FROM

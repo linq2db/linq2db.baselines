@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	MAX([t1].[PersonID])
 FROM
@@ -44,7 +43,6 @@ VALUES
 SET IDENTITY_INSERT [Person] OFF
 
 -- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
