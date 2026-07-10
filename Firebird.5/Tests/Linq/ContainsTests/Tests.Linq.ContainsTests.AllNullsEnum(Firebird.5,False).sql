@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	"s"."Enum" IN (NULL, NULL)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

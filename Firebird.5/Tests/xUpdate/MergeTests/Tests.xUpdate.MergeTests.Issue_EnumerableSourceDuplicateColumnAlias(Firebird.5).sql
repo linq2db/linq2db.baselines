@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "MyChildClass" "Target"
 USING (
 	SELECT 1 AS "Id", 10 AS "Value_1" FROM rdb$database

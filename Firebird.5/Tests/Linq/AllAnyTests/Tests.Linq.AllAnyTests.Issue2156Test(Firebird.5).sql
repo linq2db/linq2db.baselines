@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT DISTINCT
 	"i"."FirstName",
 	"i"."PersonID",

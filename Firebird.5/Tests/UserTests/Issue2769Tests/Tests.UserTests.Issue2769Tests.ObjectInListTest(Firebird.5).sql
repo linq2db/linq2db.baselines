@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"a_1"."Id",
 	"a_1"."NullValue"

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "CamelCaseName"
 (
 	"Id",
@@ -20,7 +19,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1".NAME1,
@@ -32,7 +30,6 @@ FROM
 	"CamelCaseName" "t1"
 
 -- Firebird.5 Firebird4
-
 DELETE FROM
 	"CamelCaseName" "t1"
 

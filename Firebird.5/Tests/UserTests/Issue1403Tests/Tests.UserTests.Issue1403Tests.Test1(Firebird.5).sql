@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "Issue1403Tests_1"
 (
 	"event_id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."event_id",
 	"t1"."event_description"

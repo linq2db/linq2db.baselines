@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"c_1"."Name",
 	"o"."Name"
@@ -10,7 +9,6 @@ WHERE
 	"c_1"."Id" >= 2
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Name"
@@ -18,7 +16,6 @@ FROM
 	"Customer" "t1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."CustomerId",

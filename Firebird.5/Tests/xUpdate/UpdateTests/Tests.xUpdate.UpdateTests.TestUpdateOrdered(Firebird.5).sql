@@ -169,7 +169,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 UPDATE
 	"Parent" "x"
 SET
@@ -180,7 +179,6 @@ ORDER BY
 	"x"."ParentID" DESC
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"r"."Value1"
 FROM

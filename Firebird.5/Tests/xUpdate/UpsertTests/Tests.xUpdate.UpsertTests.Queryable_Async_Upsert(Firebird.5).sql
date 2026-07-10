@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT
@@ -57,7 +56,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

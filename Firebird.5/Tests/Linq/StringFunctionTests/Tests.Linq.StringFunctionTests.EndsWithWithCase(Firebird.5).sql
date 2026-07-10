@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	"p"."PersonID" = 2
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	"p"."PersonID" = 2
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
@@ -29,7 +26,6 @@ WHERE
 	"p"."PersonID" = 2
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

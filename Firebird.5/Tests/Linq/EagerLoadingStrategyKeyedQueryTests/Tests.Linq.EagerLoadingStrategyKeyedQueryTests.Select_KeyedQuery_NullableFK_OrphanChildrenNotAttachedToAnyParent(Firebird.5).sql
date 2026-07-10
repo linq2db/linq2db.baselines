@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"d"."Id",
@@ -13,7 +12,6 @@ ORDER BY
 	"m_1"."Id"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"p"."Id",
 	"p"."Name"
@@ -23,7 +21,6 @@ ORDER BY
 	"p"."Id"
 
 -- Firebird.5 Firebird4
-
 WITH CTE_1 ("Id", "field", "Name")
 AS
 (

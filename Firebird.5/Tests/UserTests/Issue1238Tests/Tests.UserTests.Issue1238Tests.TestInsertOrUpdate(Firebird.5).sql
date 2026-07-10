@@ -1,10 +1,8 @@
 ﻿-- Firebird.5 Firebird4
-
 DELETE FROM
 	"InheritanceParent" "t1"
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM rdb$database) "s" ON
 (
@@ -30,14 +28,12 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM
 	"InheritanceParent" "t1"
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT 143 AS "InheritanceParentId", NULL AS "Name" FROM rdb$database) "s" ON
 (
@@ -63,7 +59,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	COUNT(*)
 FROM

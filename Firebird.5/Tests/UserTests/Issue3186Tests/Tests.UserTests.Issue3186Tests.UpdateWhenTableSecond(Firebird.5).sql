@@ -19,7 +19,6 @@ WHERE
 	)
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."id",
 	"x"."service_id",
@@ -30,7 +29,6 @@ WHERE
 	"x"."is_deleted" AND "x"."service_id" = 'TestProcessService'
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"x"."id",
 	"x"."service_id",

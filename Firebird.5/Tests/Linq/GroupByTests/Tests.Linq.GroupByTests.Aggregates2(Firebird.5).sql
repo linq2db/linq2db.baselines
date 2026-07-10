@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	SUM("g_1"."ChildID"),
 	MIN("g_1"."ChildID"),

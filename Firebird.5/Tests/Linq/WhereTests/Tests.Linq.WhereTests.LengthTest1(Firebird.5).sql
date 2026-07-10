@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"nm"."MiddleName"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	CHAR_LENGTH("nm"."MiddleName") <> 0 OR "nm"."MiddleName" IS NULL
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."FirstName",
 	"t1"."PersonID",

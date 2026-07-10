@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "ComplexPropertyTarget" "Target"
 USING (
 	SELECT 1 AS "Id", CAST('alpha-new' AS VARCHAR(9)) AS "Code", TRUE AS "Nested_Field" FROM rdb$database
@@ -75,7 +74,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Code",

@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH RECURSIVE "cte" ("Id")
 AS
 (
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN "Person" "d" ON "d"."PersonID" = "m_1"."Id"
 
 -- Firebird.5 Firebird4
-
 WITH RECURSIVE "cte" ("Id")
 AS
 (

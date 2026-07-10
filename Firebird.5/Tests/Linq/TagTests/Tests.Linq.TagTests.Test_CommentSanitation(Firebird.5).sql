@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 /* My bad Test */
 SELECT
 	"x"."FirstName",

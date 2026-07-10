@@ -13,7 +13,6 @@ WHERE
 	(Coalesce("e"."StringValue", '') || '1') = @p
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."GuidValue",

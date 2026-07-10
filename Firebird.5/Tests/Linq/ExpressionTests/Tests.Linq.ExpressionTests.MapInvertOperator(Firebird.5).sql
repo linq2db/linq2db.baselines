@@ -10,7 +10,6 @@ SET
 	"Value" = Bin_And(Bin_Or("t1"."Value", CAST(@addMask AS Int)), BIN_NOT(CAST(@removeMask AS Int)))
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Value"

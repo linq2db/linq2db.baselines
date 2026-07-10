@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 1 AS "Id", CAST('skip' AS VARCHAR(4)) AS "Name", 0 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -47,7 +46,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	EXISTS(
 		SELECT
@@ -58,7 +56,6 @@ SELECT
 FROM rdb$database
 
 -- Firebird.5 Firebird4
-
 MERGE INTO "UpsertTest" "Target"
 USING (
 	SELECT 2 AS "Id", CAST('keep' AS VARCHAR(4)) AS "Name", 5 AS "Version_1", CAST(NULL AS TimeStamp) AS "CreatedAt", CAST(NULL AS VARCHAR(1)) AS "CreatedBy", CAST(NULL AS TimeStamp) AS "UpdatedAt", CAST(NULL AS VARCHAR(1)) AS "UpdatedBy" FROM rdb$database) "Source"
@@ -106,7 +103,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."Name",

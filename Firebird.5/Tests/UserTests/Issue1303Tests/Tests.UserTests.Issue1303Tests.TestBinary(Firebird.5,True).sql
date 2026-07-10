@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "Issue1303"
 (
 	ID,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1"."Array",
@@ -26,7 +24,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1"."Array",
@@ -38,7 +35,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1".ID,
 	"t1"."Array",

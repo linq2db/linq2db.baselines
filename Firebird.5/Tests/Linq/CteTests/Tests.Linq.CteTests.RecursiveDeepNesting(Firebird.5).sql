@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 WITH RECURSIVE CTE_1 ("Id")
 AS
 (

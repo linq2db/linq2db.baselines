@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	"p"."Id",
 	"p"."Str"
@@ -13,7 +12,6 @@ FROM
 	"Issue3360Table" "p_1"
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"p"."Id",
 	CAST('str' AS VarChar(255) CHARACTER SET UNICODE_FSS)

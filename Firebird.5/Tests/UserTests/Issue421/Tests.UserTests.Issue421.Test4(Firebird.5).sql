@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"
@@ -23,7 +21,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Firebird.5 Firebird4
-
 SELECT
 	"t1"."Id",
 	"t1"."BlobValue"

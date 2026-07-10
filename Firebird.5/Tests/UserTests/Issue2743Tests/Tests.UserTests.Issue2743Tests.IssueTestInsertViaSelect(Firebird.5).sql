@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 INSERT INTO "MessageEventDTOTb2"
 (
 	"Id"

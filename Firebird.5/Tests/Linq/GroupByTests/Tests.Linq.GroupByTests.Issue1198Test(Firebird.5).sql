@@ -1,5 +1,4 @@
 ﻿-- Firebird.5 Firebird4
-
 SELECT
 	COUNT(CASE
 		WHEN "t"."Status" = 3 THEN 1
