@@ -7,7 +7,6 @@ FROM
 ----
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."ParentID",
 	p."Value1"
@@ -24,7 +23,6 @@ FROM
 ---
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."ParentID",
 	p."Value1"

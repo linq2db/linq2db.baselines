@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,14 +7,12 @@ WHERE
 	1 = 0
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"Src" s
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

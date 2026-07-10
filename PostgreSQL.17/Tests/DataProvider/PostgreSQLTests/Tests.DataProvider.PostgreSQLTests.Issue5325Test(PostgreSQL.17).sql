@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -12,7 +11,6 @@ WHERE
 	r."Timestamp" = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -25,7 +23,6 @@ WHERE
 	r."TimestampN" = timezone('UTC', now())
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -38,7 +35,6 @@ WHERE
 	r."TimestampTZ" = timezone('UTC', now())::TimeStampTZ
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -51,7 +47,6 @@ WHERE
 	r."TimestampTZN" = timezone('UTC', now())::TimeStampTZ
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -64,7 +59,6 @@ WHERE
 	r."Timestamp"::TimeStampTZ = now()
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -77,7 +71,6 @@ WHERE
 	r."TimestampN"::TimeStampTZ = now()
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",
@@ -90,7 +83,6 @@ WHERE
 	r."TimestampTZ" = now()
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Timestamp",

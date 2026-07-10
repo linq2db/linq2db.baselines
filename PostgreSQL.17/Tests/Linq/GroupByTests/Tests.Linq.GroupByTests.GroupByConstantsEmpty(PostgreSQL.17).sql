@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	g_2."ChildId",
 	g_2."ParentId",
@@ -19,7 +18,6 @@ GROUP BY
 	g_2."ParentId"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."ChildID"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."MoneyValue",
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."MoneyValue",
@@ -132,7 +130,6 @@ WHERE
 	"LinqDataTypes"."ID" = :ID
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."ID",
 	r."MoneyValue",

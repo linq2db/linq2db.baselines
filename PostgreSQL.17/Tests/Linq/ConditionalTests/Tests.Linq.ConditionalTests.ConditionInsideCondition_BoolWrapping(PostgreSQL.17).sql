@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN (p."ParentID"::decimal % 3)::decimal = 0
@@ -10,7 +9,6 @@ FROM
 	"Parent" p
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -25,7 +23,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

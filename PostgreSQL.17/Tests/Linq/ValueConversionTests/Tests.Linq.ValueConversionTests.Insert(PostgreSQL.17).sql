@@ -32,7 +32,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -84,7 +83,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -152,7 +150,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	e."Id",
 	e."Value1",
@@ -171,7 +168,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

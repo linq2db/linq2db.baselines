@@ -33,7 +33,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "NestedKeyTarget" "Target"
 USING (VALUES
 	(1,'first-updated')
@@ -50,7 +49,6 @@ SET
 	"Code" = "Source"."Code"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Code",
 	t1."Id"

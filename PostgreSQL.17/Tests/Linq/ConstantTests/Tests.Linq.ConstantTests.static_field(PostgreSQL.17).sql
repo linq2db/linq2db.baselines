@@ -13,7 +13,6 @@ WHERE
 	e."GuidValue" = :GuidNonReadonly AND e."GuidNullableValue" = :GuidNonReadonly
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."GuidValue",

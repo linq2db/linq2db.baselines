@@ -13,7 +13,6 @@ RETURNING "Id";
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "Issue4783Records"
 (
 	"Source",
@@ -32,7 +31,6 @@ VALUES
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Source",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	(p2."PersonID" * 2) / 2,
 	p2."FirstName"

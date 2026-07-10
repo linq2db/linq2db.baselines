@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "IgnoreConflictsTable"
 (
 	"ID",
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "IgnoreConflictsTable"
 (
 	"ID",
@@ -23,7 +21,6 @@ VALUES
 ON CONFLICT DO NOTHING
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."Value"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	d."PersonID"
@@ -8,7 +7,6 @@ FROM
 		INNER JOIN "Doctor" d ON p."PersonID" = d."PersonID"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	d."PersonID"

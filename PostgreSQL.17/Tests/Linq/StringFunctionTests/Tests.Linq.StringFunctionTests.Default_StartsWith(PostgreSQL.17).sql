@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"CollatedTable" t1
 
@@ -25,7 +24,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -34,7 +32,6 @@ WHERE
 	r."CaseSensitive" LIKE 'TestSt%' ESCAPE '~'
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -43,7 +40,6 @@ WHERE
 	r."CaseInsensitive" LIKE 'TestSt%' ESCAPE '~'
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
@@ -52,7 +48,6 @@ WHERE
 	r."CaseSensitive" LIKE 'testst%' ESCAPE '~'
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

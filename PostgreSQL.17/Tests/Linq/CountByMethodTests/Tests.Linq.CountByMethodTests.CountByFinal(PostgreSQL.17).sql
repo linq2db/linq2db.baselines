@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	g_1."TestId",
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1."TestId"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."TestId"

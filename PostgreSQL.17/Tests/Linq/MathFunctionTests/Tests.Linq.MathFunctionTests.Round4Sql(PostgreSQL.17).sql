@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	CASE
 		WHEN t.c1::decimal * 2 = ROUND(t.c1::decimal * 2, 5) AND t.c1::decimal <> ROUND(t.c1::decimal, 5)

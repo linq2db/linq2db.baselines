@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 DELETE FROM
 	"Child" c_1
 WHERE

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "ExplicitComplexPropertyTarget" "Target"
 USING (VALUES
 	(1,True)
@@ -33,7 +32,6 @@ SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExplicitComplexPropertyField"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field"

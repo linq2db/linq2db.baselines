@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	MIN(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),
 	MIN(t."NullableIntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

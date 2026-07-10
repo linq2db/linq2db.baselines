@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	'123' || p."FirstName" || '012345'

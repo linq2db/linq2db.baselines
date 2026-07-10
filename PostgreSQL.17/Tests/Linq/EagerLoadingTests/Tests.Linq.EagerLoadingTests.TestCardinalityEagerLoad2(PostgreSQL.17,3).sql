@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1."FK"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -32,7 +30,6 @@ FROM
 		LEFT JOIN "EntityMD" "a_ObjectD" ON d."FKD" = "a_ObjectD"."Id"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."FK",
