@@ -33,7 +33,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
@@ -77,7 +76,6 @@ WHEN NOT MATCHED THEN
 	);
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],

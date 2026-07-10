@@ -12,7 +12,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[ID]
 FROM

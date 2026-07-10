@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 WITH [BooksCte] ([AuthorId], [Title])
 AS
 (

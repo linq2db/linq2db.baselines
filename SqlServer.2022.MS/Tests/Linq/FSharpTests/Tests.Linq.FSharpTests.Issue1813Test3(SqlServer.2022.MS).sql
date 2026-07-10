@@ -50,7 +50,6 @@ VALUES
 )
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

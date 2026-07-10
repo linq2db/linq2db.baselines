@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -16,7 +15,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 DELETE [p]
 FROM
 	[Person] [p]

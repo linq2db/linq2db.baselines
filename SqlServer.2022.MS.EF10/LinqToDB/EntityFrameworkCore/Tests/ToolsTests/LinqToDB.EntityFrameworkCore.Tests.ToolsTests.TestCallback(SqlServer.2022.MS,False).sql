@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 DELETE [e]
 FROM
 	[Products] [e]

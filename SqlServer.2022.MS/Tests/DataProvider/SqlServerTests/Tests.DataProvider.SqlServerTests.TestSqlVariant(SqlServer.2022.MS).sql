@@ -1,17 +1,13 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT Cast(1 as sql_variant)
 
 -- SqlServer.2022.MS SqlServer.2022

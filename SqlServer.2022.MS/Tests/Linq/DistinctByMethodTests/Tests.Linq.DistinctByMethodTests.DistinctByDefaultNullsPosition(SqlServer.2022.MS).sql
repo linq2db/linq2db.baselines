@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[x].[Id]
 FROM
@@ -22,7 +21,6 @@ ORDER BY
 	[x].[Id]
 
 -- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	[x].[Id]
 FROM

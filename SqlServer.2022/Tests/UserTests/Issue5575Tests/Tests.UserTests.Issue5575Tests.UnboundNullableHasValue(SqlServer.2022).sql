@@ -1,12 +1,10 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[s].[Id]
 FROM
 	[SomeTable] [s]
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Value]

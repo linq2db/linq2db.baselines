@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],

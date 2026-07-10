@@ -12,14 +12,12 @@ VALUES
 )
 
 -- SqlServer.2022
-
 UPDATE
 	[TableWithIdentity]
 SET
 	[Value] = 123
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Value]

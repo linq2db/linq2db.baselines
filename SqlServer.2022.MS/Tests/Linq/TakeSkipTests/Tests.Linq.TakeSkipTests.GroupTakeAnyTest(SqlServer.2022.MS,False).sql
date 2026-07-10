@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	IIF(EXISTS(
 		SELECT TOP (1)

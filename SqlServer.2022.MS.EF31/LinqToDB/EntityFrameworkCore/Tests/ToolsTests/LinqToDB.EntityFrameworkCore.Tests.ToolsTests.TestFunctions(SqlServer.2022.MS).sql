@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[p].[OrderID],
 	DATEDIFF(YEAR, [p].[ShippedDate], [p].[OrderDate]),

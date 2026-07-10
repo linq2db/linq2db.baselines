@@ -14,7 +14,6 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 -- SqlServer.2022
-
 SELECT
 	[r].[Id],
 	[r].[Column],
@@ -25,7 +24,6 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 -- SqlServer.2022
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -84,13 +81,11 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2022
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
 -- SqlServer.2022
-
 INSERT INTO [IntEnumTable]
 (
 	[Id],
@@ -102,7 +97,6 @@ VALUES
 (2,2,3)
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],
@@ -113,7 +107,6 @@ ORDER BY
 	[t1].[Id]
 
 -- SqlServer.2022
-
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
@@ -121,7 +114,6 @@ FROM
 INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
 
 -- SqlServer.2022
-
 SELECT
 	[t1].[Id],
 	[t1].[Column],

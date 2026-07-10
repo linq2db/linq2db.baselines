@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 MERGE INTO [UpsertTest] [Target]
 USING (VALUES
 	(N'alice',99,42,CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)),CAST(NULL AS DateTime2),CAST(NULL AS NVarChar(4000)))
@@ -48,7 +47,6 @@ SET
 ;
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],
@@ -63,7 +61,6 @@ WHERE
 	[r].[Name] = N'alice'
 
 -- SqlServer.2022
-
 SELECT TOP (2)
 	[r].[Id],
 	[r].[Name],

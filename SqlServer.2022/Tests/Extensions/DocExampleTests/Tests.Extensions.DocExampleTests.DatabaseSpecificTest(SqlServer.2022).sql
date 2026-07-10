@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT /* qb */
 	[t].[PersonID],
 	[t].[Diagnosis]

@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 MERGE INTO [ReviewIndexes] [Target]
 USING (VALUES
 	(1)

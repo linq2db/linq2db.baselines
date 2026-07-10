@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 SELECT
 	[sq].[Rank],
 	[sq].[RowNumber],

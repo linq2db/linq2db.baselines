@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2022
-
 DROP TABLE IF EXISTS [TempTable]
 
 -- SqlServer.2022
-
 CREATE TABLE [tempdb]..[#TempTable]
 (
 	[ID] Int NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 -- SqlServer.2022
-
 INSERT INTO [tempdb]..[#TempTable]
 (
 	[ID]
@@ -23,10 +20,8 @@ FROM
 	[Parent] [p]
 
 -- SqlServer.2022
-
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 
 -- SqlServer.2022
-
 DROP TABLE [TempTable]
 

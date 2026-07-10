@@ -1,5 +1,4 @@
 ﻿-- SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -7,7 +6,6 @@ WHERE
 	[c_1].[ChildID] IN (1001, 1002)
 
 -- SqlServer.2022
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 INSERT INTO [Child]
 (
 	[ParentID],
@@ -33,7 +30,6 @@ VALUES
 )
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
@@ -42,7 +38,6 @@ WHERE
 	[c_1].[ParentID] = 1
 
 -- SqlServer.2022
-
 DELETE [c_1]
 FROM
 	[Child] [c_1]
@@ -51,7 +46,6 @@ WHERE
 	[a_Parent].[ParentID] = 1 AND [c_1].[ChildID] IN (1001, 1002)
 
 -- SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
