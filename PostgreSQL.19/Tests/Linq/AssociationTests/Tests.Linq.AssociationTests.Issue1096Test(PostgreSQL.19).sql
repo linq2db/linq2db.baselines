@@ -41,7 +41,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT DISTINCT
 	t."Pk",
 	t."Id",

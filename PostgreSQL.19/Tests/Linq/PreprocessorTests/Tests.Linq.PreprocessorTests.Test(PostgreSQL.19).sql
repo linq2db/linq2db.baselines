@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."ParentID"
 FROM
@@ -9,7 +8,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."ParentID"
 FROM
@@ -19,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."ParentID"
 FROM

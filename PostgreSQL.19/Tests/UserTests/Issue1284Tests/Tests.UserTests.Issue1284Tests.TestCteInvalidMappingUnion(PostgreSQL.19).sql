@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 WITH "CTE_1"
 (
 	"entry_FirstName",
@@ -55,7 +54,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."ID",

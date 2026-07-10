@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	e."FirstName",
 	"a_Person"."PersonID" IS NOT NULL AND "a_Person"."LastName" IS NOT NULL,

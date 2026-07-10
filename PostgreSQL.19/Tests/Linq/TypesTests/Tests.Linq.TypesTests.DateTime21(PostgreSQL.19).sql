@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."MoneyValue",
@@ -29,7 +28,6 @@ WHERE
 	"LinqDataTypes"."ID" = 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t."ID",
 	t."MoneyValue",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 /* My Test */
 MERGE INTO "TestMerge1" "Target"
 USING (

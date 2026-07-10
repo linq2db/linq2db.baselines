@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "ReviewIndexes" "Target"
 USING (
 	SELECT

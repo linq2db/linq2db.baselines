@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Value_1" IS NULL OR Length(t1."Value_1") = 0

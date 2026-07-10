@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -22,7 +21,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."ParentID",
 	p."Value1",
@@ -44,7 +42,6 @@ ORDER BY
 	c_2."Key_1"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -59,7 +56,6 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ParentID",
 	t1."Value1"

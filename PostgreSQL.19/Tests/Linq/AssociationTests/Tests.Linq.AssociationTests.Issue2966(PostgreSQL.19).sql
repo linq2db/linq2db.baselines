@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	r_1."Diagnosis",
 	"a_Person"."FirstName"

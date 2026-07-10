@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	p."FirstName",
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."PersonID",
 	p."FirstName",

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."RangeMappedAsDateTimeOffset",
 	t1."RangeMappedAsDateTime"

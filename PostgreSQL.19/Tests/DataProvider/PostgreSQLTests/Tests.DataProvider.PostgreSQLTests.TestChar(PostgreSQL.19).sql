@@ -1,33 +1,25 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as char)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as char)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as char(1))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as char(1))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as varchar)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as varchar)
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as varchar(20))
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT Cast('1' as varchar(20))
 
 -- PostgreSQL.19 PostgreSQL12

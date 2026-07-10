@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT E'\060\071'::bytea
 
 -- PostgreSQL.19 PostgreSQL12

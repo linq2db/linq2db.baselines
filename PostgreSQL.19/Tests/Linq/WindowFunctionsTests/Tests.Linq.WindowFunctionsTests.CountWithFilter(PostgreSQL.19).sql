@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	COUNT(*) FILTER (WHERE t."IntValue" > 20) OVER (PARTITION BY t."CategoryId" ORDER BY t."Id")
 FROM

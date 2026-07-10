@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 WITH RECURSIVE cte ("Id", "FirstName", "LastName")
 AS
 (

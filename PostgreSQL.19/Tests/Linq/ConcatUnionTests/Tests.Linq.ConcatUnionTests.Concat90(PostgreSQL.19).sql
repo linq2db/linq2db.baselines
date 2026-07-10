@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -10,7 +9,6 @@ FROM
 		LEFT JOIN "TestEntity2" t2 ON t1."Id" = t2."Id"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",
@@ -23,7 +21,6 @@ WHERE
 	t1."Id" IS NULL
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Field1",

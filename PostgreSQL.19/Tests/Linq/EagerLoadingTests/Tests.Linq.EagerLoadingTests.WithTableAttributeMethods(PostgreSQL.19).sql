@@ -29,7 +29,6 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."FirstName",
 	p."PersonID",

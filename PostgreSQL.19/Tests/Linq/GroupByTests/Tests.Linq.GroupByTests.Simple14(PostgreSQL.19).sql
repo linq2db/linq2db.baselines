@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	m_1."ParentID",
 	d_1."Key_1"
@@ -20,7 +19,6 @@ FROM
 		) d_1 ON 1=1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	p."ParentID"
 FROM

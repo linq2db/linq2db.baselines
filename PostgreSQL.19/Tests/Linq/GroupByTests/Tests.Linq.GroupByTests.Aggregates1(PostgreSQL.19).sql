@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	COUNT(*),
 	SUM(g_1."ChildID"),

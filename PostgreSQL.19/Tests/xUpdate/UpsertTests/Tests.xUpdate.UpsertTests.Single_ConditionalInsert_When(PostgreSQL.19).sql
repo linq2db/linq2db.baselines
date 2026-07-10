@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(1,'skip',0,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -48,7 +47,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	EXISTS(
 		SELECT
@@ -58,7 +56,6 @@ SELECT
 	)
 
 -- PostgreSQL.19 PostgreSQL12
-
 MERGE INTO "UpsertTest" "Target"
 USING (VALUES
 	(2,'keep',5,NULL::TimeStamp,NULL::text,NULL::TimeStamp,NULL::text)
@@ -107,7 +104,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name",

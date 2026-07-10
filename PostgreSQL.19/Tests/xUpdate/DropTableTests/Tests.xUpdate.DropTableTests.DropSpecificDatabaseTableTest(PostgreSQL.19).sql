@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 DROP TABLE IF EXISTS "DropTableTest"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	current_schema()
 FROM
@@ -11,7 +9,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	current_database()
 FROM
@@ -19,7 +16,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.19 PostgreSQL12
-
 CREATE TABLE "DropTableTest"
 (
 	"ID" Int NOT NULL,
@@ -28,7 +24,6 @@ CREATE TABLE "DropTableTest"
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 INSERT INTO testdata.public."DropTableTest"
 (
 	"ID"
@@ -39,18 +34,15 @@ VALUES
 )
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID"
 FROM
 	testdata.public."DropTableTest" t1
 
 -- PostgreSQL.19 PostgreSQL12
-
 DROP TABLE testdata.public."DropTableTest"
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."ID"
 FROM

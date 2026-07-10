@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	it_1.not_null,
 	it_1."ColorName",
@@ -23,7 +22,6 @@ WHERE
 	it_1."ColorName" = 'Red'
 
 -- PostgreSQL.19 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."ColorId",
