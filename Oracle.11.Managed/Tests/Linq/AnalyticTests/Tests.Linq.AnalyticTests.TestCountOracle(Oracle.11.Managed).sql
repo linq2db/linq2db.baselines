@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*) OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	COUNT(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),

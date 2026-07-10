@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ ALL_ROWS */
 	p."ParentID",
 	p."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	CASE
 		WHEN Length(p."FirstName") <> 0 THEN p."FirstName"

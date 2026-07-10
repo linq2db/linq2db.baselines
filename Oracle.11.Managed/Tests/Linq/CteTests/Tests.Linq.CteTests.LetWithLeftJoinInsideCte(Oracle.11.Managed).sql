@@ -25,7 +25,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 WITH CTE_1 (S1)
 AS
 (

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "ExplicitComplexPropertyTarget" Target
 USING (
 	SELECT 1 AS "Id", 1 AS "TestsxUpdateMergeTestsIExp" FROM sys.dual) "Source"
@@ -28,7 +27,6 @@ SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExp"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Field"

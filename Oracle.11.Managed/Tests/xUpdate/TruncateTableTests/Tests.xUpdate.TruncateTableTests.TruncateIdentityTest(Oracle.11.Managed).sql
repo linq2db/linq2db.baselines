@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
@@ -28,7 +27,6 @@ BEGIN
 END;
 
 -- Oracle.11.Managed Oracle11
-
 CREATE TABLE "TestIdTrun"
 (
 	ID       Int              NOT NULL,
@@ -38,11 +36,9 @@ CREATE TABLE "TestIdTrun"
 )
 
 -- Oracle.11.Managed Oracle11
-
 CREATE SEQUENCE "SIDENTITY_TestIdTrun"
 
 -- Oracle.11.Managed Oracle11
-
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestIdTrun"
 BEFORE INSERT ON "TestIdTrun" FOR EACH ROW
 BEGIN
@@ -50,7 +46,6 @@ BEGIN
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -103,11 +97,9 @@ ORDER BY
 	t3.ID
 
 -- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "TestIdTrun"
 
 -- Oracle.11.Managed Oracle11
-
 DECLARE
 	l_value number;
 BEGIN
@@ -125,7 +117,6 @@ BEGIN
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -136,7 +127,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -178,7 +168,6 @@ ORDER BY
 	t3.ID
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';
 	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_TestIdTrun"';

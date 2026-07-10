@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	a_Book."Discriminator",
 	a_Book."BookName"
@@ -21,7 +20,6 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."BookId",
 	m_1."AuthorId",
@@ -41,7 +39,6 @@ FROM
 		LEFT JOIN "Author" a_Author ON d_1."FkAuthorId" = a_Author."AuthorId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."AuthorId",
 	a_Book."BookId",
@@ -55,7 +52,6 @@ FROM
 		LEFT JOIN "Book" a_Book ON d."FkBookId" = a_Book."BookId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."AuthorId",
 	t1."AuthorName"

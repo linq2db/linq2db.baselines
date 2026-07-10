@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 WITH CTE_1 ("Obj_Operator")
 AS
 (
@@ -16,7 +15,6 @@ WHERE
 	ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	person_1."LastName"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	x."Text" IS NULL AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id"
 FROM

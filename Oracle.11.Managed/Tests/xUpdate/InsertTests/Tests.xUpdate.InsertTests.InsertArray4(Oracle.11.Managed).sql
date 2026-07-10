@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE
@@ -43,7 +42,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t.ID,
 	t."MoneyValue",
@@ -58,7 +56,6 @@ WHERE
 	t.ID = 1001 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LinqDataTypes" t
 WHERE

@@ -44,7 +44,6 @@ ORDER BY
 	t2."FirstName"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

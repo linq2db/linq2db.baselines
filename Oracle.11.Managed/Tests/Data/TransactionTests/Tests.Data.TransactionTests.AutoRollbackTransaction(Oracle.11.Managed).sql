@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Parent" t
 SET
@@ -25,7 +24,6 @@ WHERE
 	t."ParentID" = 1010
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."ParentID",
 	t."Value1"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ NO_INMEMORY_PRUNING(p) NO_INMEMORY_PRUNING(c_1) */
 	p."ParentID",
 	p."Value1"

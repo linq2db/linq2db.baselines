@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	a_Parent."ParentID" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	a_Parent."ParentID" = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	a_Parent."ParentID"
 FROM

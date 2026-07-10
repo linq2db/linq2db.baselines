@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(t1.ID)
 FROM
 	"AllTypes" t1
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "AllTypes"
 (
 	ID,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."realDataType",
 	t1."floatDataType"

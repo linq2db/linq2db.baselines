@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT /*+ QB_NAME(qb) NO_STAR_TRANSFORMATION(@qb) */
 	p."ParentID",
 	p."Value1"

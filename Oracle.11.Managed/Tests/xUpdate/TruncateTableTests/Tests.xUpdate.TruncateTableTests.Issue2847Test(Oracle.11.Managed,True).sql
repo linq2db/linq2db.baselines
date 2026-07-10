@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "TestIdTrun"
 (
 	"Field1"
@@ -10,15 +9,12 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 DROP SEQUENCE "SIDENTITY_TestIdTrun"
 
 -- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "TestIdTrun"
 
 -- Oracle.11.Managed Oracle11
-
 DECLARE
 	l_value number;
 BEGIN

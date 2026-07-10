@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	a_QueryableParent."ParentID",
 	a_QueryableParent."Value1"

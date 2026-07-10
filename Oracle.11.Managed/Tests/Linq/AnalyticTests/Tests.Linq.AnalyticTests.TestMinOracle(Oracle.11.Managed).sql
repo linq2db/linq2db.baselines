@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MIN(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	MIN(DISTINCT p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID"),

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t3."ParentID",
 	t3."ChildID"
@@ -28,7 +27,6 @@ ORDER BY
 	t3."ChildID" DESC
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t3."ParentID",
 	t3."ChildID"

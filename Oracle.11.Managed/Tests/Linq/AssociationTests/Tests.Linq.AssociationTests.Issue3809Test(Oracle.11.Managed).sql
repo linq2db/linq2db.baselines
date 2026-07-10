@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -26,7 +25,6 @@ ORDER BY
 	d."ChildID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	a."ParentID",
 	a_ParentTest."ParentID"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(c_1."ChildID"),
 	MAX(c_1."ChildID"),
@@ -12,21 +11,18 @@ GROUP BY
 	g_1."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(ALL t1."ParentID")
 FROM
 	"Child" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(DISTINCT t1."ParentID")
 FROM

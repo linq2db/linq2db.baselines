@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_2."Id1",
 	d."DetailId",
@@ -15,7 +14,6 @@ FROM
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_2."Id1",
 	d_1."DetailId",
@@ -41,7 +39,6 @@ ORDER BY
 	d_1."DetailId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id1",
 	m_1."Id2",
@@ -51,7 +48,6 @@ FROM
 	"MasterClass" m_1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id1",
 	d."DetailId",
@@ -67,7 +63,6 @@ FROM
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id1",
 	t1."Id2",

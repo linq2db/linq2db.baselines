@@ -27,7 +27,6 @@ FROM
 	"TableWithIdentitySrc" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1."Value"

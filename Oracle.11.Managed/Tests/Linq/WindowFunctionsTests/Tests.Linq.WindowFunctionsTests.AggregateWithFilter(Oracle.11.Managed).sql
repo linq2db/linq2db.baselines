@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	SUM(CASE
 		WHEN t."CategoryId" = 1 THEN t."IntValue"

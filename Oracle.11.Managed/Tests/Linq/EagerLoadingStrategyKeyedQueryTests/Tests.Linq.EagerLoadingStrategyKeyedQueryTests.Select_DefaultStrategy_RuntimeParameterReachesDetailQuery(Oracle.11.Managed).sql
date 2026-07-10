@@ -18,7 +18,6 @@ ORDER BY
 	m_1."Id"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	d."Id",
 	d."Name"

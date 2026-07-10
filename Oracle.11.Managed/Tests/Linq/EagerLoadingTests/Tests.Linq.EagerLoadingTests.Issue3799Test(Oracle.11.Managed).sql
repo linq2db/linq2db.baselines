@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	m_1."Id",
 	d."Name"
@@ -21,7 +20,6 @@ FROM
 		INNER JOIN "Test3799Item" d ON m_1."Id" = d."ParentId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	item_1."Name",
 	t1."Name",

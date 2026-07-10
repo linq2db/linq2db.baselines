@@ -1,9 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "test_temp"
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -14,7 +12,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -56,11 +53,9 @@ ORDER BY
 	t3.ID
 
 -- Oracle.11.Managed Oracle11
-
 TRUNCATE TABLE "test_temp"
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "test_temp"
 (
 	"Field1"
@@ -71,7 +66,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "test_temp"
 (
 	"Field1"

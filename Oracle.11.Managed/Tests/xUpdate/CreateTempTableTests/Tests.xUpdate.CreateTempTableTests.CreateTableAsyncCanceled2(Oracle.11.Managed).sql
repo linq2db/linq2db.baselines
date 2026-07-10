@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TempTable"
@@ -29,7 +27,6 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "TempTable"
 (
 	ID
@@ -40,7 +37,6 @@ FROM
 	"Parent" p
 
 -- Oracle.11.Managed Oracle11
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'TRUNCATE TABLE "TempTable"';
@@ -57,6 +53,5 @@ EXCEPTION
 END;
 
 -- Oracle.11.Managed Oracle11
-
 DROP TABLE "TempTable"
 

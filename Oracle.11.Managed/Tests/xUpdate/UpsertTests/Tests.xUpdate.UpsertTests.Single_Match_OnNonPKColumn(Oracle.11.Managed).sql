@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 'alice' AS "Name", 99 AS "Id", 42 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -37,7 +36,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",
@@ -52,7 +50,6 @@ WHERE
 	r."Name" = 'alice' AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",

@@ -33,7 +33,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Value"
@@ -43,7 +42,6 @@ WHERE
 	r."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Value"

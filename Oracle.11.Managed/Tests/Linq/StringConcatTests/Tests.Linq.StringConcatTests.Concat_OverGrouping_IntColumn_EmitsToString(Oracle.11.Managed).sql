@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	g_1."GrpId",
 	LISTAGG(CAST(g_1."IntV" AS VarChar(255)), '') WITHIN GROUP (ORDER BY g_1.PK)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1."GrpId"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.PK,
 	t1."GrpId",

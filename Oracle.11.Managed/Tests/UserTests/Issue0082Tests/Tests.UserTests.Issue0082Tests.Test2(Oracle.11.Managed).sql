@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	o."ParentID",
 	(
@@ -22,14 +21,12 @@ FROM
 	"Parent" o
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"Parent" o
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."ParentID",
 	x."CountResult",

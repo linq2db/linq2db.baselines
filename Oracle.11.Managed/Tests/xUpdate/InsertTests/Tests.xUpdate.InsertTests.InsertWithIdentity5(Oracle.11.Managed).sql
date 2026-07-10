@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" t1
 WHERE
@@ -96,7 +95,6 @@ WHERE
 	ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"Person" t1
 WHERE

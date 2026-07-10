@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 2 AS "Id", 'ignored' AS "Name", 1 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -16,14 +15,12 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	COUNT(*)
 FROM
 	"UpsertTest" t1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",
@@ -38,7 +35,6 @@ WHERE
 	r."Id" = 1 AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 MERGE INTO "UpsertTest" Target
 USING (
 	SELECT 1 AS "Id", 'updated' AS "Name", 2 AS "Version_1", NULL AS "CreatedAt", NULL AS "CreatedBy", NULL AS "UpdatedAt", NULL AS "UpdatedBy" FROM sys.dual) "Source"
@@ -55,7 +51,6 @@ SET
 	"UpdatedBy" = "Source"."UpdatedBy"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	r."Id",
 	r."Name",

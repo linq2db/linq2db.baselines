@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	DENSE_RANK() OVER (ORDER BY t_1.ID),
 	t_1.ID

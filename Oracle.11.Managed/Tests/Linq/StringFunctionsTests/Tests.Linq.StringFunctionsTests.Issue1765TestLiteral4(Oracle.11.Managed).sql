@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	MAX(g_1."Value4"),
 	LISTAGG(CAST(g_1."Value4" AS VarChar(50)), ' -> ') WITHIN GROUP (ORDER BY g_1."Value4")

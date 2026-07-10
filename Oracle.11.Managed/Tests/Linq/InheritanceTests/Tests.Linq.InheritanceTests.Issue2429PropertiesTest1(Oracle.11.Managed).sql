@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id",
 	x."Value"
@@ -9,7 +8,6 @@ WHERE
 	x."Id" = 1 AND ROWNUM <= 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	x."Id",
 	x."Value"

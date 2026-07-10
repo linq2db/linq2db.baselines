@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	p2."PersonID",
 	RTRIM(p2."FirstName" || '', '')

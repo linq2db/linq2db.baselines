@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 UPDATE
 	"Issue2815Table1"
 SET
@@ -45,7 +44,6 @@ WHERE
 	)
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1."Id",
 	t1.SRC_BIC,

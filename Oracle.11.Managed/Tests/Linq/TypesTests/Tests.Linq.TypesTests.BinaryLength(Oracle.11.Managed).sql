@@ -10,7 +10,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	Length(t."BinaryValue")
 FROM

@@ -25,7 +25,6 @@ WHERE
 	t.ID = :p
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t.ID,
 	t."MoneyValue",

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 INSERT INTO "IssueAliasBugT1"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "IssueAliasBugT1"
 (
 	"Id",
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "IssueAliasBugT2"
 (
 	"Id",
@@ -40,7 +37,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "IssueAliasBugT2"
 (
 	"Id",
@@ -55,7 +51,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 INSERT INTO "IssueAliasBugT2"
 (
 	"Id",

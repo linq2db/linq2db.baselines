@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	x."ParentID"
 FROM
@@ -7,7 +6,6 @@ FROM
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
 -- Oracle.11.Managed Oracle11
-
 SELECT DISTINCT
 	g_1."ParentID"
 FROM

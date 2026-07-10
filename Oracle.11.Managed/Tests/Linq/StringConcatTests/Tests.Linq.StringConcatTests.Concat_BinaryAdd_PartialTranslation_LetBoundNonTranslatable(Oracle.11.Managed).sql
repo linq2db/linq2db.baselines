@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."Value1"
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t1.ID,
 	t1."Value1",

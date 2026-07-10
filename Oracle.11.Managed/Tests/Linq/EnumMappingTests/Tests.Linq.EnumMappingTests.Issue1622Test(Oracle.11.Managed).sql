@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."SomeText"
@@ -26,7 +25,6 @@ WHERE
 	e."SomeText" = 'Value1_suffix' AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	e."Id",
 	e."SomeText"

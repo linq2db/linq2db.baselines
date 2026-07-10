@@ -1,12 +1,10 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 DELETE FROM
 	"LongRawTable" t
 WHERE
 	t.ID > 2
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."longRawDataType"
 FROM
@@ -45,7 +43,6 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."longRawDataType"
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Oracle.11.Managed Oracle11
-
 SELECT
 	t."ParentID",
 	(
@@ -14,7 +13,6 @@ FROM
 	"Parent" t
 
 -- Oracle.11.Managed Oracle11
-
 SELECT
 	t."ParentID",
 	(
