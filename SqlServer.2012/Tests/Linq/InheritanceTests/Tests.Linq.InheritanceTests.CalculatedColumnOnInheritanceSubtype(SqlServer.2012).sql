@@ -24,7 +24,6 @@ VALUES
 )
 
 -- SqlServer.2012
-
 SELECT TOP (2)
 	[t1].[Id],
 	[t1].[Type],
