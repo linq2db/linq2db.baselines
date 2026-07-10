@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Person.personid as personid,
 	a_Person.personname as personname,

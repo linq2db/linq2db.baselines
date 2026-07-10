@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 SELECT
 	CAST(Re2::Replace('^[.]+'u)(CAST(('...'u || Coalesce(t.VarCharColumn, ''u)) AS String?), '') AS Utf8?) as c1
 FROM
 	StringTrimTable t
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.CharColumn as CharColumn,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Parent
 (
 	ParentID,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Child
 (
 	ChildID,

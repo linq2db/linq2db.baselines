@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.ChildID as ChildID,
 	a_Parent_1.ParentID as ParentID,
@@ -20,7 +19,6 @@ ORDER BY
 	t1.ChildID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,
@@ -31,7 +29,6 @@ FROM
 		LEFT JOIN Parent a_Parent ON t1.ParentID = a_Parent.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

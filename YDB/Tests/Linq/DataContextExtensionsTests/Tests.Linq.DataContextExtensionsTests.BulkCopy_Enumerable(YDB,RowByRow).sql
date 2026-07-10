@@ -33,7 +33,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -43,7 +42,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -82,7 +80,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -92,7 +89,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -131,7 +127,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -141,7 +136,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -180,7 +174,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -190,7 +183,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -229,7 +221,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -239,7 +230,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -278,7 +268,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -288,7 +277,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -327,7 +315,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -337,7 +324,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -376,7 +362,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -386,7 +371,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -425,7 +409,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -435,7 +418,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -474,7 +456,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -484,7 +465,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -523,7 +503,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -533,7 +512,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -572,7 +550,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -582,7 +559,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -621,7 +597,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -631,7 +606,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -670,7 +644,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -680,7 +653,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -719,7 +691,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -729,7 +700,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -768,7 +738,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -778,7 +747,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -817,7 +785,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -827,7 +794,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -866,7 +832,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -876,7 +841,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -915,7 +879,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -925,7 +888,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -964,7 +926,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -974,7 +935,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1013,7 +973,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1023,7 +982,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1062,7 +1020,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1072,7 +1029,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1111,7 +1067,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1121,7 +1076,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1160,7 +1114,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1170,7 +1123,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1209,7 +1161,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1219,7 +1170,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1258,7 +1208,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1268,7 +1217,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1307,7 +1255,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1317,7 +1264,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1356,7 +1302,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1366,7 +1311,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1405,7 +1349,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1415,7 +1358,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1454,7 +1396,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1464,7 +1405,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1503,7 +1443,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1513,7 +1452,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1552,7 +1490,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1562,7 +1499,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1601,7 +1537,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1611,7 +1546,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1650,7 +1584,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1660,7 +1593,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1699,7 +1631,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1709,7 +1640,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 
@@ -1748,7 +1678,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1
@@ -1758,7 +1687,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	BulkCopyTable
 

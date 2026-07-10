@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.n as n,
 	SUM(g_2.ParentID) as Sum_1

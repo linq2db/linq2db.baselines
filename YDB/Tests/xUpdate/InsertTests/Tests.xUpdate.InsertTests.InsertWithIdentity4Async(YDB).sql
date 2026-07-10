@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE
@@ -92,7 +91,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

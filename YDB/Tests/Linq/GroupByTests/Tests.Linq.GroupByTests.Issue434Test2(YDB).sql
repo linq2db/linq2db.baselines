@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.PersonID as PersonID,
 	d.PersonID as PersonID_1,
@@ -11,7 +10,6 @@ WHERE
 	Unicode::ToLower(m_1.FirstName) LIKE '%test%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,
@@ -45,7 +44,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = $Id AND ConcurrencyAutoIncrement.Stamp = $Stamp
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,
@@ -70,7 +68,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = $Id AND ConcurrencyAutoIncrement.Stamp = $Stamp
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,
@@ -95,7 +92,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = $Id AND ConcurrencyAutoIncrement.Stamp = $Stamp
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,
@@ -115,7 +111,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = $Id AND ConcurrencyAutoIncrement.Stamp = $Stamp
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,
@@ -135,7 +130,6 @@ WHERE
 	ConcurrencyAutoIncrement.Id = $Id AND ConcurrencyAutoIncrement.Stamp = $Stamp
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Stamp as Stamp,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	d.TransactionDate as TransactionDate
 FROM

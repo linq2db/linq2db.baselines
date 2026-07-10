@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x_1.Id as Id,
 	x_1.StatusName as StatusName

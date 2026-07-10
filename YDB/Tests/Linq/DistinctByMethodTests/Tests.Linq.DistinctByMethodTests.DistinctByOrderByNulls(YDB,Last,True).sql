@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -30,7 +29,6 @@ ORDER BY
 	t1.Date_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,

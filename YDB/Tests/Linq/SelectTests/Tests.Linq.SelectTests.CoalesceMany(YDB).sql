@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Coalesce(t.Nullable1, t.Nullable2, t.Nullable3, t.Id) as Value1,
 	Coalesce(t.Nullable2, t.Nullable1, t.Nullable3, t.Id) as Value2,
@@ -13,7 +12,6 @@ FROM
 	CoalesceNullableFields t
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Nullable1 as Nullable1,

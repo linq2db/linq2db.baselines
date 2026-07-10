@@ -45,7 +45,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.DeviceType as DeviceType,
 	t1.Id as Id,
@@ -92,7 +91,6 @@ WHERE
 	Issue4280.Id = $Id
 
 -- YDB Ydb
-
 SELECT
 	t1.DeviceType as DeviceType,
 	t1.Id as Id,

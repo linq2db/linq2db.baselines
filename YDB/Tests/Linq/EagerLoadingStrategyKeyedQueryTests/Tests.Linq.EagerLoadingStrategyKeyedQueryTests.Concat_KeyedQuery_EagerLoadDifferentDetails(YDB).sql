@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name,
@@ -27,7 +26,6 @@ FROM
 	) t1
 
 -- YDB Ydb
-
 SELECT
 	k_1.Item1 as Item1,
 	k_1.Item2 as Item2,
@@ -47,7 +45,6 @@ ORDER BY
 	d.Id
 
 -- YDB Ydb
-
 SELECT
 	k_1.Item1 as Item1,
 	k_1.Item2 as Item2,

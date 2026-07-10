@@ -18,7 +18,6 @@ FROM
 		LEFT JOIN `Order` o ON c_2.Id = o.CustomerId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name
@@ -26,7 +25,6 @@ FROM
 	Customer t1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.CustomerId as CustomerId,

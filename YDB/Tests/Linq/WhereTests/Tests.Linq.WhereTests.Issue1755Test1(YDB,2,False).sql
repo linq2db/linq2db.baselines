@@ -11,7 +11,6 @@ WHERE
 	c_1.ParentID = $id AND c_1.Value1 IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

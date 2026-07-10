@@ -26,7 +26,6 @@ WHERE
 	d.Id = $id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -47,7 +46,6 @@ WHERE
 	d.Id = $id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM

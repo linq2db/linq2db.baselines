@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO Issue1373Tests
 (
 	Id,
@@ -38,7 +35,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Field1 as Field1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.c1 as c1
 FROM

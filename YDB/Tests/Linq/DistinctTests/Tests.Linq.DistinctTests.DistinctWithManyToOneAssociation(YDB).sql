@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	c_1.ChildID as ChildID,
 	a_Parent.ParentID as ParentID,
@@ -11,7 +10,6 @@ ORDER BY
 	ChildID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,

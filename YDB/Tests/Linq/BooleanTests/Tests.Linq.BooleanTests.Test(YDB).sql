@@ -18,7 +18,6 @@ WHERE
 	r.`Boolean` = $True
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -52,7 +51,6 @@ WHERE
 	r.`Boolean` = $False
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -86,7 +84,6 @@ WHERE
 	r.`Boolean` = $TrueN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -120,7 +117,6 @@ WHERE
 	r.`Boolean` = $FalseN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -135,7 +131,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -152,7 +147,6 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -186,7 +180,6 @@ WHERE
 	r.BooleanN = $True
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -220,7 +213,6 @@ WHERE
 	r.BooleanN = $False
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -254,7 +246,6 @@ WHERE
 	r.BooleanN = $TrueN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -288,7 +279,6 @@ WHERE
 	r.BooleanN = $FalseN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -303,7 +293,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -320,7 +309,6 @@ WHERE
 	r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -354,7 +342,6 @@ WHERE
 	r.`Boolean` <> $True
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -388,7 +375,6 @@ WHERE
 	r.`Boolean` <> $False
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -422,7 +408,6 @@ WHERE
 	r.`Boolean` <> $TrueN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -456,7 +441,6 @@ WHERE
 	r.`Boolean` <> $FalseN
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -471,7 +455,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -486,7 +469,6 @@ FROM
 	BooleanTable r
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -520,7 +502,6 @@ WHERE
 	r.BooleanN <> $True OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -554,7 +535,6 @@ WHERE
 	r.BooleanN <> $False OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -588,7 +568,6 @@ WHERE
 	r.BooleanN <> $TrueN OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -622,7 +601,6 @@ WHERE
 	r.BooleanN <> $FalseN OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -637,7 +615,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -654,7 +631,6 @@ WHERE
 	r.BooleanN IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -669,7 +645,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	COUNT(CASE
@@ -859,7 +834,6 @@ GROUP BY
 	g_1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -874,7 +848,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.Int32 = 0 as Condition1,
@@ -1546,7 +1519,6 @@ FROM
 	BooleanTable r_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1561,7 +1533,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1578,7 +1549,6 @@ WHERE
 	r.`Boolean` = true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1593,7 +1563,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1610,7 +1579,6 @@ WHERE
 	r.`Boolean` = false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1625,7 +1593,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1642,7 +1609,6 @@ WHERE
 	r.`Boolean` = true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1657,7 +1623,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1674,7 +1639,6 @@ WHERE
 	r.`Boolean` = false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1689,7 +1653,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1706,7 +1669,6 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1721,7 +1683,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1738,7 +1699,6 @@ WHERE
 	r.BooleanN = true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1753,7 +1713,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1770,7 +1729,6 @@ WHERE
 	r.BooleanN = false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1785,7 +1743,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1802,7 +1759,6 @@ WHERE
 	r.BooleanN = true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1817,7 +1773,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1834,7 +1789,6 @@ WHERE
 	r.BooleanN = false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1849,7 +1803,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1866,7 +1819,6 @@ WHERE
 	r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1881,7 +1833,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1898,7 +1849,6 @@ WHERE
 	r.`Boolean` <> true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1913,7 +1863,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1930,7 +1879,6 @@ WHERE
 	r.`Boolean` <> false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1945,7 +1893,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1962,7 +1909,6 @@ WHERE
 	r.`Boolean` <> true
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -1977,7 +1923,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -1994,7 +1939,6 @@ WHERE
 	r.`Boolean` <> false
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2009,7 +1953,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -2024,7 +1967,6 @@ FROM
 	BooleanTable r
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2039,71 +1981,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
-SELECT
-	r.Id as Id,
-	r.`Boolean` as Boolean_1,
-	r.BooleanN as BooleanN,
-	r.Int32 as Int32,
-	r.Int32N as Int32N,
-	r.`Decimal` as Decimal_1,
-	r.DecimalN as DecimalN,
-	r.`Double` as Double_1,
-	r.DoubleN as DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> true OR r.BooleanN IS NULL
-
--- YDB Ydb
-
-SELECT
-	t1.Id as Id,
-	t1.`Boolean` as Boolean_1,
-	t1.BooleanN as BooleanN,
-	t1.Int32 as Int32,
-	t1.Int32N as Int32N,
-	t1.`Decimal` as Decimal_1,
-	t1.DecimalN as DecimalN,
-	t1.`Double` as Double_1,
-	t1.DoubleN as DoubleN
-FROM
-	BooleanTable t1
-
--- YDB Ydb
-
-SELECT
-	r.Id as Id,
-	r.`Boolean` as Boolean_1,
-	r.BooleanN as BooleanN,
-	r.Int32 as Int32,
-	r.Int32N as Int32N,
-	r.`Decimal` as Decimal_1,
-	r.DecimalN as DecimalN,
-	r.`Double` as Double_1,
-	r.DoubleN as DoubleN
-FROM
-	BooleanTable r
-WHERE
-	r.BooleanN <> false OR r.BooleanN IS NULL
-
--- YDB Ydb
-
-SELECT
-	t1.Id as Id,
-	t1.`Boolean` as Boolean_1,
-	t1.BooleanN as BooleanN,
-	t1.Int32 as Int32,
-	t1.Int32N as Int32N,
-	t1.`Decimal` as Decimal_1,
-	t1.DecimalN as DecimalN,
-	t1.`Double` as Double_1,
-	t1.DoubleN as DoubleN
-FROM
-	BooleanTable t1
-
--- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -2120,7 +1997,6 @@ WHERE
 	r.BooleanN <> true OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2135,7 +2011,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -2152,7 +2027,6 @@ WHERE
 	r.BooleanN <> false OR r.BooleanN IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2167,7 +2041,66 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
+SELECT
+	r.Id as Id,
+	r.`Boolean` as Boolean_1,
+	r.BooleanN as BooleanN,
+	r.Int32 as Int32,
+	r.Int32N as Int32N,
+	r.`Decimal` as Decimal_1,
+	r.DecimalN as DecimalN,
+	r.`Double` as Double_1,
+	r.DoubleN as DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> true OR r.BooleanN IS NULL
 
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.`Boolean` as Boolean_1,
+	t1.BooleanN as BooleanN,
+	t1.Int32 as Int32,
+	t1.Int32N as Int32N,
+	t1.`Decimal` as Decimal_1,
+	t1.DecimalN as DecimalN,
+	t1.`Double` as Double_1,
+	t1.DoubleN as DoubleN
+FROM
+	BooleanTable t1
+
+-- YDB Ydb
+SELECT
+	r.Id as Id,
+	r.`Boolean` as Boolean_1,
+	r.BooleanN as BooleanN,
+	r.Int32 as Int32,
+	r.Int32N as Int32N,
+	r.`Decimal` as Decimal_1,
+	r.DecimalN as DecimalN,
+	r.`Double` as Double_1,
+	r.DoubleN as DoubleN
+FROM
+	BooleanTable r
+WHERE
+	r.BooleanN <> false OR r.BooleanN IS NULL
+
+-- YDB Ydb
+SELECT
+	t1.Id as Id,
+	t1.`Boolean` as Boolean_1,
+	t1.BooleanN as BooleanN,
+	t1.Int32 as Int32,
+	t1.Int32N as Int32N,
+	t1.`Decimal` as Decimal_1,
+	t1.DecimalN as DecimalN,
+	t1.`Double` as Double_1,
+	t1.DoubleN as DoubleN
+FROM
+	BooleanTable t1
+
+-- YDB Ydb
 SELECT
 	r.Id as Id,
 	r.`Boolean` as Boolean_1,
@@ -2184,7 +2117,6 @@ WHERE
 	r.BooleanN IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2199,7 +2131,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	g_1.Id as Id,
 	COUNT(CASE
@@ -2389,7 +2320,6 @@ GROUP BY
 	g_1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,
@@ -2404,7 +2334,6 @@ FROM
 	BooleanTable t1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.Int32 = 0 as Condition1,
@@ -3076,7 +3005,6 @@ FROM
 	BooleanTable r_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Boolean` as Boolean_1,

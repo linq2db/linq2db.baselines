@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	gr_1.ID as ID,
 	gr_1.ID + 1 as ID1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	ip.InvestorId as InvestorId,
 	t1.Units as TotalUnits,

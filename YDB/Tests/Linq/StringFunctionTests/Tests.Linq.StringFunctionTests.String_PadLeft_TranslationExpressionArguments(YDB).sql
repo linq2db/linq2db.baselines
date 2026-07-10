@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	s.ID as ID,
 	s.FirstName as FirstName
@@ -15,7 +14,6 @@ WHERE
 	s.FirstName <> ''u
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

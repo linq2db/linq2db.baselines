@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(grp_1.MoneyValue) as Total,
 	grp_1.Year_1 as Year_1,

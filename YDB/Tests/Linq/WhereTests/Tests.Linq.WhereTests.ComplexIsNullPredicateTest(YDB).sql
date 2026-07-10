@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Value` as Value_1
@@ -11,7 +10,6 @@ ORDER BY
 	r.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Value` as Value_1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(CASE
 		WHEN g_1.`TimeStamp` > Timestamp('2020-02-29T17:54:55.123123Z')

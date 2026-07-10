@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(Unwrap(CAST(e.Num AS Text)) || '-'u || Coalesce(e.StrReq, ''u)) = '100-Programmer'u
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Str1 as Str1,

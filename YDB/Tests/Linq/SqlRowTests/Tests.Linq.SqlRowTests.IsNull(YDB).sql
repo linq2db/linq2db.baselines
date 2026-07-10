@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -17,7 +15,6 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 UPDATE
 	LinqDataTypes
 SET

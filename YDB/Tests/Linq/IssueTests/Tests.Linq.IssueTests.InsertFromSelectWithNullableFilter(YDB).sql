@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO InsertIssueTest
 (
 	Pk,
@@ -47,7 +46,6 @@ FROM
 	) t2
 
 -- YDB Ydb
-
 SELECT
 	t1.Pk as Pk,
 	t1.ID as ID,

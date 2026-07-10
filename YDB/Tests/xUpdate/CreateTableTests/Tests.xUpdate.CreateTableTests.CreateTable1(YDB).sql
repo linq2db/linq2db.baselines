@@ -1,9 +1,7 @@
 ﻿-- YDB Ydb
-
 DROP TABLE IF EXISTS TestTable
 
 -- YDB Ydb
-
 CREATE TABLE TestTable
 (
 	ID        SERIAL,
@@ -15,7 +13,6 @@ CREATE TABLE TestTable
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.Field1 as Field1,
@@ -25,6 +22,5 @@ FROM
 	TestTable t1
 
 -- YDB Ydb
-
 DROP TABLE TestTable
 

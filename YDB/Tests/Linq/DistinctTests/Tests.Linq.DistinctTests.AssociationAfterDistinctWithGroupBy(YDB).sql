@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Parent_1.ParentID as ParentID,
 	COUNT(*) as Count_1
@@ -21,7 +20,6 @@ ORDER BY
 	ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID,

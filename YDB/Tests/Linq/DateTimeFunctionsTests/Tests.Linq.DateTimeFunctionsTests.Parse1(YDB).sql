@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	DateTime::MakeTimestamp(DateTime::StartOfDay(DateTime::Split(d.DateTimeValue))) as Date_1
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue4132Table
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 UPDATE
 	Issue4132Table
 SET
@@ -23,7 +21,6 @@ WHERE
 	Issue4132Table.Id = 1
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Number` as Number_1,

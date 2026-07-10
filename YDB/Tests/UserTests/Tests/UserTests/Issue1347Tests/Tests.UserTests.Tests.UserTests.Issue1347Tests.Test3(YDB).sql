@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.Id as Id,
 	t2.ResourceID as ResourceID,

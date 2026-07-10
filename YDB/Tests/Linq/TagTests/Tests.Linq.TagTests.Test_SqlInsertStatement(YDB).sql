@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 /* My Test */
 INSERT INTO TestTable
 (

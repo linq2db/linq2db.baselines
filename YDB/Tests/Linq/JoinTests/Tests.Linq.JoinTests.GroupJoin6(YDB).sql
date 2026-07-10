@@ -13,7 +13,6 @@ WHERE
 	m_1.ParentID = 1
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID,
 	p.Value1 as Value1

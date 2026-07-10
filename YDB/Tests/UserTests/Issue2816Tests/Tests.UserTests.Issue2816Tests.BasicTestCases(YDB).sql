@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.Id as Id,
 	p.Text as Text
@@ -9,7 +8,6 @@ WHERE
 	p.Text IS NULL OR Length(Unicode::Strip(Unicode::ReplaceAll(p.Text, ''u, ' 'u))) = 0
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Text as Text

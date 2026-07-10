@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	r.Diagnosis LIKE '%Paranoid%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -17,7 +15,6 @@ WHERE
 	r.Diagnosis LIKE '%paranoid%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -26,7 +23,6 @@ WHERE
 	r.Diagnosis ILIKE '%paranoid%'u ESCAPE '~'s
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

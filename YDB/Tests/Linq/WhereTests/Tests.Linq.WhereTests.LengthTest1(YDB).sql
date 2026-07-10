@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	nm.MiddleName as MiddleName
 FROM
@@ -9,7 +8,6 @@ WHERE
 	nm.MiddleName IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

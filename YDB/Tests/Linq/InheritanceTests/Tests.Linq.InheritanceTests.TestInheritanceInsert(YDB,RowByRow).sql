@@ -141,7 +141,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Code as Code,
 	t1.Id as Id,

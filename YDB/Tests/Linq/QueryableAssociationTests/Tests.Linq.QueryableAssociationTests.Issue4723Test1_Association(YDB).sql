@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t5.Id as Id,
 	t2.ExpressionMethod as ExpressionMethod,

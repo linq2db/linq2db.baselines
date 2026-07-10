@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 /* My custom
 wonderful multiline
 query tag */

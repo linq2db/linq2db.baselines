@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO ValueItem
 (
 	`Value`
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	row_1.`Value` as Value_1
 FROM

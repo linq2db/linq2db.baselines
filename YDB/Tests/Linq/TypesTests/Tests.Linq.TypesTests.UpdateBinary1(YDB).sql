@@ -10,7 +10,6 @@ WHERE
 	LinqDataTypes.ID = 1
 
 -- YDB Ydb
-
 SELECT
 	t.BinaryValue as BinaryValue
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.ID as ID,
 	t.BigIntValue as BigIntValue
@@ -32,7 +30,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 DELETE FROM
 	LinqDataTypes
 WHERE

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_QueryableParent.ParentID as ParentID,
 	a_QueryableParent.Value1 as Value1

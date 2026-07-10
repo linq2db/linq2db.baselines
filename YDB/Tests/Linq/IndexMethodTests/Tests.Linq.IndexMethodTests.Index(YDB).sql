@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	ROW_NUMBER() OVER (ORDER BY item_1.Id) - 1l as c1,
 	item_1.Id as Id,
@@ -10,7 +9,6 @@ ORDER BY
 	item_1.Id
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.TestId as TestId

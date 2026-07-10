@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	SUM(c2.ChildID) as Sum_1
 FROM

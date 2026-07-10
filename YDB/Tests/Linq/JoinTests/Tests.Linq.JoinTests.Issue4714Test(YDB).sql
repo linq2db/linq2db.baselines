@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.SampleId as Id,
 	year_1.`Year` as Year_1,

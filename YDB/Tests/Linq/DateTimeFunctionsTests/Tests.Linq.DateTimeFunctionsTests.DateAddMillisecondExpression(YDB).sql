@@ -8,7 +8,6 @@ FROM
 	LinqDataTypes t
 
 -- YDB Ydb
-
 SELECT
 	t.DateTimeValue as DateTimeValue
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 /* My Test */
 SELECT
 	x.FirstName as FirstName,

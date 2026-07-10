@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID,
 	IndexedParent_1.Item1 as Item1,
@@ -20,7 +19,6 @@ ORDER BY
 	IndexedParent_1.ParentID
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

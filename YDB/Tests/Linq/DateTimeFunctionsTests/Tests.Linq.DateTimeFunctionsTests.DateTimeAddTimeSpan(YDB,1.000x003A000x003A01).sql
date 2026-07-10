@@ -37,7 +37,6 @@ FROM
 	DateTypes t_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.DateTime as DateTime,

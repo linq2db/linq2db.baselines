@@ -20,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,
@@ -49,7 +48,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.Name as Name,

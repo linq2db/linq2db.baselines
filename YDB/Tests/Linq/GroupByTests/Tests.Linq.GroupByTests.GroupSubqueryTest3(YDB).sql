@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	pmp.ParentID as ParentID
 FROM
 	Child pmp
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID

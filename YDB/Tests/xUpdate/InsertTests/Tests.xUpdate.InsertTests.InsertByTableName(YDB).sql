@@ -78,14 +78,12 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
 	xxPerson t1
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

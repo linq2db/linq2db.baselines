@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	r.F1 as F1,
 	r.F2 as F2

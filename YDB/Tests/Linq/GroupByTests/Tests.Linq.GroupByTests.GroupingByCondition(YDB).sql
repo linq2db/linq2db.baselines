@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_1.isValueAvailable as isValueAvailable,
 	g_1.ParentID as ParentID,
@@ -22,7 +21,6 @@ GROUP BY
 	g_1.Value_1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID

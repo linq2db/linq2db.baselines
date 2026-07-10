@@ -15,7 +15,6 @@ WHERE
 	e.Id = $Id AND e.Id = $p
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,
@@ -41,7 +40,6 @@ WHERE
 	e.Id = $Id AND e.Id = $p
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,

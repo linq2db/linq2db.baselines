@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.ID as ID,
 	x.Index_1 as Index_1
@@ -27,7 +26,6 @@ ORDER BY
 	x.ID
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	'*** p ***' || '4'u as c1,
 	'*** p ***' as alias1,

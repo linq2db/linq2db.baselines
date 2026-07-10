@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p_1.ID as ID
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1
@@ -9,7 +8,6 @@ WHERE
 	t.`Value`
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1
@@ -19,7 +17,6 @@ WHERE
 	t.`Value` = true
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1
@@ -29,7 +26,6 @@ WHERE
 	t.`Value` = false
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1
@@ -39,7 +35,6 @@ WHERE
 	NOT t.`Value`
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1
@@ -49,7 +44,6 @@ WHERE
 	t.`Value` = false
 
 -- YDB Ydb
-
 SELECT
 	t.Id as Id,
 	t.`Value` as Value_1

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	i_2.LastName as LastName
 FROM

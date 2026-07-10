@@ -41,7 +41,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.IntValue as IntValue,
@@ -53,7 +52,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.IntValue as IntValue,

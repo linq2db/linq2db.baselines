@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
 
 -- YDB Ydb
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 UPDATE
 	LinqDataTypes
 SET
@@ -30,7 +28,6 @@ WHERE
 	LinqDataTypes.ID = 101 AND LinqDataTypes.IntValue = 3
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

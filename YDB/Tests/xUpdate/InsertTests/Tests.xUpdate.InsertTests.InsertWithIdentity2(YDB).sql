@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE
 	Person.PersonID > 4
 
 -- YDB Ydb
-
 INSERT INTO Person
 (
 	FirstName,
@@ -23,7 +21,6 @@ RETURNING
 	PersonID
 
 -- YDB Ydb
-
 SELECT
 	p.FirstName as FirstName,
 	p.PersonID as PersonID,
@@ -37,7 +34,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 DELETE FROM
 	Person
 WHERE

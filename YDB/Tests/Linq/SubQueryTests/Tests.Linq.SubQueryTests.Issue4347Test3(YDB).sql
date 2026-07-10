@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN LineEntity d ON m_1.Id = d.TransactionId
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id,
 	x.ValidOn as ValidOn

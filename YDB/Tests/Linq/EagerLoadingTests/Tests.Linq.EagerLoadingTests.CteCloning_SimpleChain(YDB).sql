@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Id as Id
 	FROM
@@ -35,7 +34,6 @@ FROM
 		INNER JOIN CteTable d_1 ON m_1.Id = d_1.Value3
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		r.Id as Id,
 		r.Value2 as Value2,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	i.Id as Id,
 	t2.Reason as Reason

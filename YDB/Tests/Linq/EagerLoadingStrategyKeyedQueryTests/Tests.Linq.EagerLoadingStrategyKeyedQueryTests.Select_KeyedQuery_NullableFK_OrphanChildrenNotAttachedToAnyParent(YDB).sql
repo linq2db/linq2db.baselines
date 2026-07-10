@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -13,7 +12,6 @@ ORDER BY
 	m_1.Id
 
 -- YDB Ydb
-
 SELECT
 	p.Id as Id,
 	p.Name as Name
@@ -23,7 +21,6 @@ ORDER BY
 	p.Id
 
 -- YDB Ydb
-
 $CTE_1 = 	SELECT
 		p.Id as Id,
 		ROW_NUMBER() OVER (ORDER BY p.Id) as field,

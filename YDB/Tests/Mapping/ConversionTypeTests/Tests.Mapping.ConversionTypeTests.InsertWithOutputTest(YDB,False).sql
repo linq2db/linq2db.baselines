@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO TrimTestTable
 (
 	ID,
@@ -15,7 +14,6 @@ RETURNING
 	`Data`
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.`Data` as Data_1
@@ -25,7 +23,6 @@ ORDER BY
 	r.ID
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.`Data` as Data_1

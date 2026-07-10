@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.ChildID as ChildID,
 	AVG(t1.ParentID) as y

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	DateTime::GetYear(a_Types.DateTimeValue) as Key_1
 FROM

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	tupledArg.ParentID as ParentID,
 	tupledArg.Value1 as Value1,

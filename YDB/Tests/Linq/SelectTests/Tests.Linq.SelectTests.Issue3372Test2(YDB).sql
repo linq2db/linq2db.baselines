@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.FirstName as FirstName,
 	a_Person.PersonID IS NOT NULL AND a_Person.MiddleName IS NOT NULL as c1,

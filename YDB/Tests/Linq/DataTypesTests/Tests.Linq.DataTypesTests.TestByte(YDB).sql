@@ -14,7 +14,6 @@ WHERE
 	r.`Column` = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -25,7 +24,6 @@ WHERE
 	r.`Column` = 255ut AND r.ColumnNullable = 2ut
 
 -- YDB Ydb
-
 DELETE FROM
 	ByteTable
 
@@ -72,7 +70,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -83,12 +80,10 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	ByteTable
 
 -- YDB Ydb
-
 INSERT INTO ByteTable
 (
 	Id,
@@ -100,7 +95,6 @@ VALUES
 (2,255ut,2ut)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -111,14 +105,12 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	ByteTable
 
 INSERT ASYNC BULK ByteTable(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,

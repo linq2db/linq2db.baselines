@@ -16,7 +16,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.SomeText as SomeText
@@ -27,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.SomeText as SomeText

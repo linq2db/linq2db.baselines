@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	fact_1.Id as Id,
 	leftTag.Id as Id_1,

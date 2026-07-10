@@ -23,7 +23,6 @@ ORDER BY
 LIMIT $take OFFSET $skip 
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

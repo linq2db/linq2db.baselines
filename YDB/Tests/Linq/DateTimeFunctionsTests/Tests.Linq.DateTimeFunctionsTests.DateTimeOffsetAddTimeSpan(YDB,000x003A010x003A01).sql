@@ -25,7 +25,6 @@ FROM
 	DateTypesOffset t_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.DateTimeOffset as DateTimeOffset,

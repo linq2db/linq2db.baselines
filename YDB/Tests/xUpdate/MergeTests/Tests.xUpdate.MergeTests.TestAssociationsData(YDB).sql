@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.PersonID as PersonID,
 	t1.Diagnosis as Diagnosis
@@ -9,7 +8,6 @@ ORDER BY
 	t1.PersonID
 
 -- YDB Ydb
-
 SELECT
 	t1.PersonID as PersonID,
 	t1.Taxonomy as Taxonomy
@@ -19,7 +17,6 @@ ORDER BY
 	t1.PersonID
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

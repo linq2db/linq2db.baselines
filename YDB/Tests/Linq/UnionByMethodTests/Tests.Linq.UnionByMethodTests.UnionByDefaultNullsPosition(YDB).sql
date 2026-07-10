@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	x.Id as Id
 FROM
@@ -36,7 +35,6 @@ ORDER BY
 	x.Key_1
 
 -- YDB Ydb
-
 SELECT
 	x.Id as Id
 FROM

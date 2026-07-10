@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.CategoryID as CategoryID,
 	d.ProductID as ProductID,
@@ -11,7 +10,6 @@ FROM
 		INNER JOIN Products d ON m_1.CategoryID = d.CategoryID
 
 -- YDB Ydb
-
 SELECT
 	t1.CategoryID as CategoryID,
 	t1.CategoryName as CategoryName,

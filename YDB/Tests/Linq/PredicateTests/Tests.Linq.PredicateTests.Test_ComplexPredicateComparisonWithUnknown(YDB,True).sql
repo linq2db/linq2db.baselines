@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -32,7 +31,6 @@ WHERE
 	r_1.Value4 IS NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -67,7 +65,6 @@ WHERE
 	r_1.Value4 IS NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -101,7 +98,6 @@ WHERE
 	(r_1.Value1 = r_1.Value2) = (($CTE_1) = (r_1.Value5 + $cnt))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -135,7 +131,6 @@ WHERE
 	(r_1.Value1 <> r_1.Value2) = (($CTE_1) = (r_1.Value5 + $cnt))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -169,7 +164,6 @@ WHERE
 	((1=1)) = (((r_1.Value1 = r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL) AND NOT (r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -203,7 +197,6 @@ WHERE
 	((1=1)) = (((r_1.Value1 <> r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL) AND NOT (r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -237,7 +230,6 @@ WHERE
 	((1=1)) = ((r_1.Value1 = r_1.Value2) = (($CTE_1) = (r_1.Value5 + $cnt)) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -271,7 +263,6 @@ WHERE
 	((1=1)) = ((r_1.Value1 <> r_1.Value2) = (($CTE_1) = (r_1.Value5 + $cnt)) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -306,7 +297,6 @@ WHERE
 	r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -341,7 +331,6 @@ WHERE
 	r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -376,7 +365,6 @@ WHERE
 	r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -411,7 +399,6 @@ WHERE
 	r_1.Value5 IS NULL
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -445,7 +432,6 @@ WHERE
 	((1=1)) = (((r_1.Value1 = r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -479,7 +465,6 @@ WHERE
 	((1=1)) = (((r_1.Value1 <> r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -513,7 +498,6 @@ WHERE
 	((1=1)) = ((r_1.Value1 = r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value5 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -547,7 +531,6 @@ WHERE
 	((1=1)) = ((r_1.Value1 <> r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value5 IS NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -581,7 +564,6 @@ WHERE
 	(r_1.Value4 + $cnt) >= (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -615,7 +597,6 @@ WHERE
 	(r_1.Value4 + $cnt) > (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -649,7 +630,6 @@ WHERE
 	(r_1.Value4 + $cnt) <= (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -683,7 +663,6 @@ WHERE
 	(r_1.Value4 + $cnt) < (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -717,7 +696,6 @@ WHERE
 	(r_1.Value2 + $cnt) >= (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -751,7 +729,6 @@ WHERE
 	(r_1.Value2 + $cnt) > (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -785,7 +762,6 @@ WHERE
 	(r_1.Value2 + $cnt) <= (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -819,7 +795,6 @@ WHERE
 	(r_1.Value2 + $cnt) < (($CTE_1) + r_1.Value5)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -853,7 +828,6 @@ WHERE
 	((1=1)) = ((r_1.Value4 + $cnt) >= (($CTE_1) + r_1.Value5) AND r_1.Value4 IS NOT NULL AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -887,7 +861,6 @@ WHERE
 	((1=1)) = ((r_1.Value4 + $cnt) > (($CTE_1) + r_1.Value5) AND r_1.Value4 IS NOT NULL AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -921,7 +894,6 @@ WHERE
 	((1=1)) = ((r_1.Value4 + $cnt) <= (($CTE_1) + r_1.Value5) AND r_1.Value4 IS NOT NULL AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -955,7 +927,6 @@ WHERE
 	((1=1)) = ((r_1.Value4 + $cnt) < (($CTE_1) + r_1.Value5) AND r_1.Value4 IS NOT NULL AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -989,7 +960,6 @@ WHERE
 	((1=1)) = ((r_1.Value2 + $cnt) >= (($CTE_1) + r_1.Value5) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -1023,7 +993,6 @@ WHERE
 	((1=1)) = ((r_1.Value2 + $cnt) > (($CTE_1) + r_1.Value5) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -1057,7 +1026,6 @@ WHERE
 	((1=1)) = ((r_1.Value2 + $cnt) <= (($CTE_1) + r_1.Value5) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,
@@ -1091,7 +1059,6 @@ WHERE
 	((1=1)) = ((r_1.Value2 + $cnt) < (($CTE_1) + r_1.Value5) AND r_1.Value5 IS NOT NULL)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Value1 as Value1,

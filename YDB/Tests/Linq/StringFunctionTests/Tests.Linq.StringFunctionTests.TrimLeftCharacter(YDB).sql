@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	pp.PersonID as PersonID,
 	'  'u || pp.FirstName || ' 'u as Name

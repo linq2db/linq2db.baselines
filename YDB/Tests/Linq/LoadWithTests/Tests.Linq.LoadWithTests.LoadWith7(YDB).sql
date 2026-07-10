@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_GrandChildren2.ParentID as ParentID,
 	a_GrandChildren2.ChildID as ChildID,

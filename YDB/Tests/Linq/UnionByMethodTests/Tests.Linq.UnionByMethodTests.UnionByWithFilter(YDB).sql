@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Key_1 as Key_1,
@@ -42,7 +41,6 @@ ORDER BY
 	t1.Key_1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Key` as Key_1,
@@ -52,7 +50,6 @@ FROM
 	UnionByLeft t1
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Key` as Key_1,

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT /* Main */
 	p.ParentID as ParentID,
 	p.Value1 as Value1,

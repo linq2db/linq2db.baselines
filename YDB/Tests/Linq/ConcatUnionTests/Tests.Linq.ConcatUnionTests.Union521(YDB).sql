@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p_1.Value1 as Value1
 FROM

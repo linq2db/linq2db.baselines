@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE_1 = 	SELECT
 		child_1.ParentID as Child_ParentID,
 		child_1.ChildID as Child_ChildID
@@ -17,7 +16,6 @@ FROM
 		INNER JOIN $CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID
 
 -- YDB Ydb
-
 SELECT
 	p.ParentID as ParentID,
 	p.Value1 as Value1,

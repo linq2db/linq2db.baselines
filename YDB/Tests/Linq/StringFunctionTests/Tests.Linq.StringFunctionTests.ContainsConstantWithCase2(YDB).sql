@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM
@@ -8,7 +7,6 @@ WHERE
 	p.FirstName LIKE '%Joh%'u ESCAPE '~'s AND p.PersonID = 1
 
 -- YDB Ydb
-
 SELECT
 	COUNT(*) as Count_1
 FROM

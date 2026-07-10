@@ -8,7 +8,6 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < $p
 
 -- YDB Ydb
-
 INSERT INTO LinqDataTypes
 (
 	ID,
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	entity.ID as ID,
 	entity.BigIntValue as BigIntValue,

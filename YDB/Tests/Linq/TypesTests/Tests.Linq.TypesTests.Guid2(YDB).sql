@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.ID as ID,
 	p.MoneyValue as MoneyValue,
@@ -16,7 +15,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	p.ID as ID,
 	p.MoneyValue as MoneyValue,

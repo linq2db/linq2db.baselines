@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	v.inId as inId,
 	t.inIdState as inIdState

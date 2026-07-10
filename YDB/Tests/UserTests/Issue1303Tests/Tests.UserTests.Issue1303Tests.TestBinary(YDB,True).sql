@@ -16,7 +16,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.`Array` as Array_1,
@@ -28,7 +27,6 @@ WHERE
 LIMIT 2
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.`Array` as Array_1,

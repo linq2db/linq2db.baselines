@@ -1,12 +1,10 @@
 ﻿-- YDB Ydb
-
 SELECT
 	MAX(t1.ID) as Max_1
 FROM
 	AllTypes t1
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -21,7 +19,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -36,7 +33,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 INSERT INTO AllTypes
 (
 	ID,
@@ -51,7 +47,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.floatDataType as floatDataType,
 	t1.doubleDataType as doubleDataType

@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.GuidValue as GuidValue,
@@ -11,7 +10,6 @@ WHERE
 	e.Id = 1 AND e.Id = 2
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,
@@ -21,7 +19,6 @@ FROM
 	TestConstantsData t1
 
 -- YDB Ydb
-
 SELECT
 	e.Id as Id,
 	e.GuidValue as GuidValue,
@@ -33,7 +30,6 @@ WHERE
 	e.Id = 1 AND e.Id = 2
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,

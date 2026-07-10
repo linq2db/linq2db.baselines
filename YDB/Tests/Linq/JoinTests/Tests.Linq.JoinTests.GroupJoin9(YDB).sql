@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a.ParentID as ParentID,
 	a.Value1 as Value1,
@@ -19,7 +18,6 @@ FROM
 		LEFT JOIN Parent z ON a.ParentID = Coalesce(z.Value1, 1)
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

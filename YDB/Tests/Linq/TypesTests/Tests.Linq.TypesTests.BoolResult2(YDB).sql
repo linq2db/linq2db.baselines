@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	a_Patient.PersonID IS NOT NULL as IsPatient
 FROM

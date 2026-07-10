@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Coalesce(t.Value1, ''u) || t.Value2 as c1
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	t.ID
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.Value1 as Value1,

@@ -34,7 +34,6 @@ WHERE
 	Issue1554Table.Id = 0
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.ClaimedKeyType as ClaimedKeyType,

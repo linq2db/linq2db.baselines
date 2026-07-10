@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	nm.FirstName as FirstName
 FROM
@@ -8,7 +7,6 @@ WHERE
 	Unwrap(CAST(Unicode::GetLength(nm.FirstName) AS Int32)) <> 0
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

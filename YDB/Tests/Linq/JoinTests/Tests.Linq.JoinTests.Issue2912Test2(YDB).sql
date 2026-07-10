@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	user_1.ParentID as ParentID
 FROM

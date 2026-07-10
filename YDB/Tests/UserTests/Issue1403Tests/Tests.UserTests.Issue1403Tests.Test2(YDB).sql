@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO Issue1403Tests_2
 (
 	event_id,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.event_id as event_id,
 	t1.event_description as event_description

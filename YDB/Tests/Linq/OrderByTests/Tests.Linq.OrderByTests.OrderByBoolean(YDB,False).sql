@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,
@@ -12,7 +11,6 @@ ORDER BY
 	Unwrap(CAST(Unicode::GetLength(t1.FirstName) AS Int32)) > 4
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

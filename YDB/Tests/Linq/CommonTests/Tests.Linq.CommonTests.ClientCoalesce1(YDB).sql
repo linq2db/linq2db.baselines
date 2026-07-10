@@ -10,7 +10,6 @@ WHERE
 	Coalesce(x.Value1, $Value1) > 10
 
 -- YDB Ydb
-
 SELECT
 	p.Value1 as Value1
 FROM

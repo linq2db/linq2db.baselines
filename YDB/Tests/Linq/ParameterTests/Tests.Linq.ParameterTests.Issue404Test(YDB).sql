@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -10,7 +9,6 @@ FROM
 		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -32,7 +30,6 @@ WHERE
 	d.`Usage` = $Usage
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -54,14 +51,12 @@ WHERE
 	d.`Usage` = $Usage
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
 	Table404One t1
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d.Id as Id_1,
@@ -72,7 +67,6 @@ FROM
 		INNER JOIN Table404Two d ON m_1.Id = d.FirstTableId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -94,7 +88,6 @@ WHERE
 	d.`Usage` = $Usage
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM
@@ -116,7 +109,6 @@ WHERE
 	d.`Usage` = $Usage
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id
 FROM

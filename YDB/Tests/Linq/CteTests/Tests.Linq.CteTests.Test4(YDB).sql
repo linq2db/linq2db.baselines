@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE1_ = 	SELECT
 		c_1.ParentID as ParentID
 	FROM
@@ -24,7 +23,6 @@ FROM
 		INNER JOIN $LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
 -- YDB Ydb
-
 SELECT
 	c4.ParentID as ParentID,
 	c4.ChildID as ChildID

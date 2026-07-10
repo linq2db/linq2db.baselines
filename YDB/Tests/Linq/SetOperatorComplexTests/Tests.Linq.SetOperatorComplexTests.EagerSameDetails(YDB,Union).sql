@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	a_Author.AuthorId as AuthorId,
@@ -37,7 +36,6 @@ WHERE
 	m_1.Id IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	a_Book.BookId as BookId,
 	a_Book.BookName as BookName
@@ -59,7 +57,6 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'u
 
 -- YDB Ydb
-
 SELECT
 	m_1.BookId as BookId,
 	m_1.AuthorId as AuthorId,
@@ -81,7 +78,6 @@ WHERE
 	m_1.BookId IS NOT NULL
 
 -- YDB Ydb
-
 SELECT
 	m_1.AuthorId as AuthorId,
 	a_Book.BookId as BookId,
@@ -95,7 +91,6 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 -- YDB Ydb
-
 SELECT
 	t1.AuthorId as AuthorId,
 	t1.AuthorName as AuthorName

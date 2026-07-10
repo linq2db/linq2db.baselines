@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1_1.Id as Id,
 	t1_1.Field6 as Field6

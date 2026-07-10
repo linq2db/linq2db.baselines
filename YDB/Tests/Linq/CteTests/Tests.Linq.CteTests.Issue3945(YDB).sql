@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 $CTE = 	SELECT
 		c_1.ParentId as ParentId,
 		c_1.Label as Label

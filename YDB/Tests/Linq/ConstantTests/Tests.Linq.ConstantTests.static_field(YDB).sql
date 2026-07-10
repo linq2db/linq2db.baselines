@@ -13,7 +13,6 @@ WHERE
 	e.GuidValue = $GuidNonReadonly AND e.GuidNullableValue = $GuidNonReadonly
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.GuidValue as GuidValue,

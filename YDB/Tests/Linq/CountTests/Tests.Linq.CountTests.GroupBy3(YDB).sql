@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	g_2.ParentID as ParentID,
 	MIN(g_2.ChildID) as ChildMin,

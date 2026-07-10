@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	contract.Id as Id,
 	servProj.IdContract as IdContract

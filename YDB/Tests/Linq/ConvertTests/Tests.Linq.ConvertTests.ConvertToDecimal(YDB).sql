@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	Unwrap(CAST(p.MoneyValue AS Decimal(22,9))) as c1
 FROM

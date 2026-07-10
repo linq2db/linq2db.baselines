@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p_1.val as val
 FROM

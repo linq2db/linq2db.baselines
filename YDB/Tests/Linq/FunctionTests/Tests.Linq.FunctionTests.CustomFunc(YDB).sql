@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.LastName || ', 'u || p.FirstName as c1
 FROM

@@ -14,7 +14,6 @@ WHERE
 	r.`Column` = $Column AND r.ColumnNullable = $ColumnNullable
 
 -- YDB Ydb
-
 SELECT
 	r.Id as Id,
 	r.`Column` as Column_1,
@@ -26,7 +25,6 @@ WHERE
 	r.ColumnNullable = Uuid('bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
 -- YDB Ydb
-
 DELETE FROM
 	GuidTable
 
@@ -73,7 +71,6 @@ VALUES
 )
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -84,12 +81,10 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	GuidTable
 
 -- YDB Ydb
-
 INSERT INTO GuidTable
 (
 	Id,
@@ -101,7 +96,6 @@ VALUES
 (2,Uuid('a948600d-de21-4f74-8ac2-9516b287076e'),Uuid('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,
@@ -112,14 +106,12 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 DELETE FROM
 	GuidTable
 
 INSERT ASYNC BULK GuidTable(Id, Column, ColumnNullable)
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.`Column` as Column_1,

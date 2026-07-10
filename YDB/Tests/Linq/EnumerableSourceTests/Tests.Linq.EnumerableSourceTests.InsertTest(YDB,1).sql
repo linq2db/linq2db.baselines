@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 INSERT INTO TableToInsert
 (
 	Id,
@@ -17,7 +16,6 @@ WHERE
 	t.Id IS NULL
 
 -- YDB Ydb
-
 INSERT INTO TableToInsert
 (
 	Id,

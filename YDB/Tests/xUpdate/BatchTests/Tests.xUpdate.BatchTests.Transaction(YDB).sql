@@ -35,7 +35,6 @@ WHERE
 	Parent.ParentID = $ParentID
 
 -- YDB Ydb
-
 INSERT INTO Parent
 (
 	ParentID,

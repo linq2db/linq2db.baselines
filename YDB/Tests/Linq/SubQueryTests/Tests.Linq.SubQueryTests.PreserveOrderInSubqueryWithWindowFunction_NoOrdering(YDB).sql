@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.RowNumber as RowNumber,
 	n.PersonID as PersonID

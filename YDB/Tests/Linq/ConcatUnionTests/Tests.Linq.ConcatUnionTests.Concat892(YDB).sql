@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Value1 as Value1,
 	t1.ParentID as ParentID
@@ -25,7 +24,6 @@ FROM
 	Child c_3
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.ChildID as ChildID
@@ -33,7 +31,6 @@ FROM
 	Child t1
 
 -- YDB Ydb
-
 SELECT
 	t1.ParentID as ParentID,
 	t1.Value1 as Value1

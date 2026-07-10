@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.MoneyValue as MoneyValue,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.MoneyValue as MoneyValue,
@@ -132,7 +130,6 @@ WHERE
 	LinqDataTypes.ID = $ID
 
 -- YDB Ydb
-
 SELECT
 	r.ID as ID,
 	r.MoneyValue as MoneyValue,

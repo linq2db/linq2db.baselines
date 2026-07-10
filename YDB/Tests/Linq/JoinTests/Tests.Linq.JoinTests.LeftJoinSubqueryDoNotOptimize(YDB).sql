@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.PersonID as PersonID,
 	Coalesce(m_2.MiddleName, 'default2'u) as MiddleName
@@ -14,7 +13,6 @@ FROM
 		) m_2 ON p.PersonID = m_2.c1
 
 -- YDB Ydb
-
 SELECT
 	t1.FirstName as FirstName,
 	t1.PersonID as PersonID,

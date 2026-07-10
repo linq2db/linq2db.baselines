@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.Name as Name
@@ -9,7 +8,6 @@ ORDER BY
 	t1.Id
 
 -- YDB Ydb
-
 SELECT
 	m_1.Id as Id,
 	d_1.Id as Id_1,
@@ -29,7 +27,6 @@ FROM
 		INNER JOIN Employee d_1 ON m_1.Id = d_1.DepartmentId
 
 -- YDB Ydb
-
 SELECT
 	k_1.item as item_1,
 	d.Id as Id,

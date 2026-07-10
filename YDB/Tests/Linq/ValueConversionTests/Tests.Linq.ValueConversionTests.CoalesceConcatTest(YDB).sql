@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t2.Converted1 as Converted1,
 	t2.Converted2 as Converted2,

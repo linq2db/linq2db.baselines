@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT DISTINCT
 	true as IsActive,
 	it.SmallIntValue <> 0 as c1
@@ -7,7 +6,6 @@ FROM
 	LinqDataTypes it
 
 -- YDB Ydb
-
 SELECT
 	t1.ID as ID,
 	t1.MoneyValue as MoneyValue,

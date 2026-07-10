@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	p.GuidValue as GuidValue
 FROM

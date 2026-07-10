@@ -1,5 +1,4 @@
 ﻿-- YDB Ydb
-
 SELECT
 	t.TestId as TestId,
 	t1.count_1 as count_1
@@ -16,7 +15,6 @@ FROM
 		) t1 ON t1.Key_1 = t.TestId
 
 -- YDB Ydb
-
 SELECT
 	t1.Id as Id,
 	t1.TestId as TestId
