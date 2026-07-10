@@ -1,5 +1,4 @@
 ﻿-- ClickHouse.Octonica ClickHouse
-
 INSERT INTO CalcSubtypeDual
 (
 	Id,
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t1.Type,
 	t1.Id,
