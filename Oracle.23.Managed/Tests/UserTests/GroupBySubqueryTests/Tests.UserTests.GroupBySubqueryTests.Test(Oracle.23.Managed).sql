@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT DISTINCT
 	a_Ref4."Field6",
 	a_Ref3."Field4",
@@ -15,7 +14,6 @@ WHERE
 	t1."Field3" IS NOT NULL
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_2."Field6",
 	g_2."Field4",

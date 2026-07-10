@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p.ID,
 	p."MoneyValue",
@@ -16,7 +15,6 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p.ID,
 	p."MoneyValue",

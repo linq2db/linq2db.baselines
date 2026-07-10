@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	MAX(CASE
 		WHEN g_1."ChildID" > 0 THEN g_1."ChildID"

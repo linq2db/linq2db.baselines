@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	BEGIN
 		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
@@ -28,7 +27,6 @@ BEGIN
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "DropTableTestID"
 (
 	ID  Int  NOT NULL,
@@ -38,11 +36,9 @@ CREATE TABLE "DropTableTestID"
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE SEQUENCE "SIDENTITY_DropTableTestID"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 CREATE OR REPLACE TRIGGER "TIDENTITY_DropTableTestID"
 BEFORE INSERT ON "DropTableTestID" FOR EACH ROW
 BEGIN
@@ -50,7 +46,6 @@ BEGIN
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "DropTableTestID"
 (
 	ID1
@@ -61,7 +56,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t.ID1
@@ -69,7 +63,6 @@ FROM
 	"DropTableTestID" t
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
 	EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_DropTableTestID"';
@@ -77,7 +70,6 @@ BEGIN
 END;
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1.ID,
 	t1.ID1

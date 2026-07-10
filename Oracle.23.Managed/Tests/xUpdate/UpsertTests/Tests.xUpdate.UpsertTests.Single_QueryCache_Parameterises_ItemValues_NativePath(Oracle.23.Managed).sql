@@ -103,7 +103,6 @@ WHEN NOT MATCHED THEN
 	)
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Name",

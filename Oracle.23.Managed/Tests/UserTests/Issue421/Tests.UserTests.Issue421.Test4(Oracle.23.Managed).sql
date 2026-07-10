@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -23,7 +21,6 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

@@ -1,5 +1,4 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	m_1."Id",
 	d."Id",
@@ -13,7 +12,6 @@ ORDER BY
 	m_1."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	p."Id",
 	p."Name"
@@ -23,7 +21,6 @@ ORDER BY
 	p."Id"
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 WITH CTE_1 ("Id", "field", "Name")
 AS
 (

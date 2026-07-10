@@ -28,7 +28,6 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
 UPDATE
 	"Person" t1
 SET
