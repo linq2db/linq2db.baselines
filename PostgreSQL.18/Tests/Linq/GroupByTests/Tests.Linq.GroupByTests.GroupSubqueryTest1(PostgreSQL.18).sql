@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	pmp1."ChildID"
@@ -11,7 +11,7 @@ FROM
 	) pmp
 		CROSS JOIN "Child" pmp1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ParentID",

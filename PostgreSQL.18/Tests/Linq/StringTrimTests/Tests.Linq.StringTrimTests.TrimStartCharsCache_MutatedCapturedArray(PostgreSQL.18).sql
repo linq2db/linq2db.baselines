@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	LTRIM(t."VarCharColumn", '.+')
@@ -7,7 +7,7 @@ FROM
 ORDER BY
 	t."Id"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	LTRIM(t."VarCharColumn", 'ab')

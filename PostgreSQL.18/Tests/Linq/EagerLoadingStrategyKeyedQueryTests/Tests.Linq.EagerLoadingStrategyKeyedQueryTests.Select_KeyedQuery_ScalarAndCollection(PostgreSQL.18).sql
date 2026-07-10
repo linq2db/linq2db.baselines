@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	c_1."Id",
@@ -16,7 +16,7 @@ FROM
 ORDER BY
 	c_1."Id"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	k_1.item,

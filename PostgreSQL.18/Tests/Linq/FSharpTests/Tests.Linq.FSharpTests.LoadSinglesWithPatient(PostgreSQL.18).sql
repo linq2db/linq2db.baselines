@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."PersonID",
@@ -15,7 +15,7 @@ WHERE
 	p."PersonID" = 1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	p."PersonID",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -27,7 +27,7 @@ VALUES
 	:Name_Second
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Type",
@@ -39,7 +39,7 @@ FROM
 	"Base2" t1
 LIMIT 2
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Type Integer -- Int32
 SET     @Type = 1
 DECLARE @ChildId Integer -- Int32
@@ -61,7 +61,7 @@ SET
 WHERE
 	"Base2"."Id" = :Id
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Type",

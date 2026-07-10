@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @value Bigint -- Int64
 SET     @value = 1
 
@@ -14,7 +14,7 @@ FROM
 			"Person" r
 	) t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @value Bigint -- Int64
 SET     @value = 2147483648
 

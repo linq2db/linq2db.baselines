@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType Text(2) -- String
@@ -19,7 +19,7 @@ VALUES
 	:ClaimedKeyTypeN
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",

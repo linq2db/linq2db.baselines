@@ -1,8 +1,8 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 	"Value" Int NOT NULL
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 INSERT INTO "CreateIfNotExistsTable"
 (
@@ -23,7 +23,7 @@ VALUES
 	2
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",
@@ -31,7 +31,7 @@ SELECT
 FROM
 	"CreateIfNotExistsTable" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -39,11 +39,11 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 	"Value" Int NOT NULL
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

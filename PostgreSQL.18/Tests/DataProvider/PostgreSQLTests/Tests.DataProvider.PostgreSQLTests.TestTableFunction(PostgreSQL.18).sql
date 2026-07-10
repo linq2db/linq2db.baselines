@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ID",
@@ -43,7 +43,7 @@ SELECT
 FROM
 	"TestTableFunctionSchema"() t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ID",
@@ -90,7 +90,7 @@ FROM
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."ID",

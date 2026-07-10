@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."TypeDiscriminator",
@@ -7,7 +7,7 @@ SELECT
 FROM
 	"InheritanceParent" t1
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."TypeDiscriminator",

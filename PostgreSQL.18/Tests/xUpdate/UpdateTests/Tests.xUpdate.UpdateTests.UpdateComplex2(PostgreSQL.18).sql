@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -25,7 +25,7 @@ VALUES
 RETURNING 
 	"PersonID"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 UPDATE
 	"Person"
@@ -34,7 +34,7 @@ SET
 WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

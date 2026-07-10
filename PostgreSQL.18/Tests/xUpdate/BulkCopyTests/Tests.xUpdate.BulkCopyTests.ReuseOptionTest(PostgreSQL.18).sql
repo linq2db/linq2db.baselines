@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 INSERT INTO "Parent"
 (
@@ -8,7 +8,7 @@ INSERT INTO "Parent"
 VALUES
 (111001,NULL)
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 INSERT INTO "Child"
 (

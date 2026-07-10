@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -13,7 +13,7 @@ FROM
 WHERE
 	p."PersonID" = :id
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

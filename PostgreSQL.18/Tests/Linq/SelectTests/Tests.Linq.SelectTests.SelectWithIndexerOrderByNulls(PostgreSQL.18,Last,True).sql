@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	x."ID",
@@ -18,7 +18,7 @@ ORDER BY
 	x."MiddleName" DESC NULLS LAST,
 	x."ID"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."FirstName",

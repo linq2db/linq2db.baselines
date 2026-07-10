@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -7,7 +7,7 @@ DELETE FROM
 WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @TestField Bigint -- Int64
@@ -28,7 +28,7 @@ VALUES
 	:Int32Field
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ FROM
 WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

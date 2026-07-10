@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

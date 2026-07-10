@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @start Integer -- Int32
 SET     @start = 2
 DECLARE @stop Integer -- Int32

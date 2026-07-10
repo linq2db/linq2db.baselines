@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @arr -2147483621 -- Object
 SET     @arr = {'00000003-0000-0000-0000-000000000000'::uuid}
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.18 PostgreSQL13
+﻿-- PostgreSQL.18 PostgreSQL12
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Tests_xUpdate_MergeTests_IExplicitComplexProperty_ Boolean
@@ -15,7 +15,7 @@ VALUES
 	:Tests_xUpdate_MergeTests_IExplicitComplexProperty_
 )
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 MERGE INTO "ExplicitComplexPropertyTarget" "Target"
 USING (VALUES
@@ -32,7 +32,7 @@ UPDATE
 SET
 	"Field" = "Source"."TestsxUpdateMergeTestsIExplicitComplexPropertyField"
 
--- PostgreSQL.18 PostgreSQL13
+-- PostgreSQL.18 PostgreSQL12
 
 SELECT
 	t1."Id",
