@@ -25,7 +25,6 @@ ORDER BY `o`.`OrderID`, `o1`.`OrderID`, `o1`.`ProductID`, `p0`.`ProductID`, `o3`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`ProductId`,
 	`d`.`OrderID`,
@@ -45,7 +44,6 @@ FROM
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`a_Product`.`ProductID`,
 	`od`.`OrderID`,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -16,7 +15,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,
@@ -28,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -45,7 +42,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,

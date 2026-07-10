@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TempTable`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Name` VARCHAR(20) NOT NULL,
@@ -12,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TempTable`
 (
 	`Name`
@@ -21,7 +18,6 @@ VALUES
 ('John')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Name`
 FROM
@@ -29,6 +25,5 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TempTable`
 

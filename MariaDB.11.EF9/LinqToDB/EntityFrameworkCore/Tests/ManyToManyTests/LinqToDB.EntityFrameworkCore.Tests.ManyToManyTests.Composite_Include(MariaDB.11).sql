@@ -11,7 +11,6 @@ ORDER BY `p`.`Code`, `p`.`OrgId`, `s`.`MemberId`, `s`.`OrgId`, `s`.`Code`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`OrgId`,
 	`m_1`.`Code`,
@@ -27,7 +26,6 @@ ORDER BY
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`OrgId`,
 	`t1`.`Code`,

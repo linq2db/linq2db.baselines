@@ -1,7 +1,6 @@
 ﻿INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Discriminator`,
 	`t1`.`Id`,
@@ -15,7 +14,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -30,7 +28,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -45,7 +42,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -60,7 +56,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -75,7 +70,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,
@@ -90,7 +84,6 @@ WHERE
 LIMIT 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`Discriminator`,
 	`x`.`Id`,

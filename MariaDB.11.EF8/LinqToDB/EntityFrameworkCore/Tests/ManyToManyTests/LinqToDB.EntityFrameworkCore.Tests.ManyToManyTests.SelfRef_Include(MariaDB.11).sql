@@ -11,7 +11,6 @@ ORDER BY `p`.`Id`, `t`.`FriendId`, `t`.`PersonId`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -26,7 +25,6 @@ ORDER BY
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

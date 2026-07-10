@@ -1,7 +1,6 @@
 ﻿
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`CfAllowValue`,
@@ -21,7 +20,6 @@ ORDER BY
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`AclNameId`
 FROM

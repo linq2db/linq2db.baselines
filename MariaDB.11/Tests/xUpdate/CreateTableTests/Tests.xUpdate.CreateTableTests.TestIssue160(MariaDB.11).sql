@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `aa`
 (
 	`bb` INT           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`bb`,
 	`t1`.`cc`
@@ -34,6 +32,5 @@ FROM
 	`aa` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `aa`
 

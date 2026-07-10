@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p1`.`Value1`,
 	CAST(NULL AS SIGNED)

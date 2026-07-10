@@ -44,7 +44,6 @@ ORDER BY
 	`p`.`PersonID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`PersonID`,
 	`t1`.`Diagnosis`
@@ -52,7 +51,6 @@ FROM
 	`Patient` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`FirstName`,
 	`t1`.`PersonID`,

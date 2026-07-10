@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`GrandChild`
@@ -7,7 +6,6 @@ WHERE
 	`GrandChild`.`GrandChildID` IN (1001, 1002)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -22,7 +20,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `GrandChild`
 (
 	`ParentID`,
@@ -37,7 +34,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -46,7 +42,6 @@ WHERE
 	`gc`.`ParentID` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE   `gc`
 FROM
 	`GrandChild` `gc`
@@ -55,7 +50,6 @@ WHERE
 	`a_Parent`.`ParentID` = 1 AND `gc`.`GrandChildID` IN (1001, 1002)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

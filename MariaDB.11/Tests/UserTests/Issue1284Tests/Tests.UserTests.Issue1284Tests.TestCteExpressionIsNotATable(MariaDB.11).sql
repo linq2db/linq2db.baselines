@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 WITH `CTE_1`
 (
 	`entry_ID`,
@@ -31,7 +30,6 @@ WHERE
 	`x`.`entry_ID` = 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`x`.`FirstName`,
 	`x`.`PersonID`,

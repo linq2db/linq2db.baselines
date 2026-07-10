@@ -228,7 +228,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`VarCharDefault`,
 	`t1`.`VarChar1`,

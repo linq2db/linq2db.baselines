@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(CASE
 		WHEN `g_1`.`ChildID` > 20 THEN 1

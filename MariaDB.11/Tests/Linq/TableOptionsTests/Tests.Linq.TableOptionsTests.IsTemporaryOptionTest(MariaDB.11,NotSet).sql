@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `temp_table1`
 (
 	`ID`    INT NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE `temp_table1`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -19,7 +17,6 @@ VALUES
 (1,2)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TEMPORARY TABLE `temp_table2`
 (
 	`ID`    INT NOT NULL,
@@ -29,7 +26,6 @@ CREATE TEMPORARY TABLE `temp_table2`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `temp_table2`
 (
 	`ID`,
@@ -42,7 +38,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -50,7 +45,6 @@ FROM
 	`temp_table1` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`
@@ -58,7 +52,6 @@ FROM
 	`temp_table2` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `temp_table1`
 (
 	`ID`,
@@ -87,18 +80,14 @@ VALUES
 INSERT BULK `temp_table1`(ID, Value)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 TRUNCATE TABLE `temp_table1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 TRUNCATE TABLE `temp_table2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TEMPORARY TABLE IF EXISTS `temp_table1`
 

@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 UPDATE
 	`TableWithIdentity` `t1`
 SET
@@ -20,7 +19,6 @@ SET
 	`t1`.`Value` = 123
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

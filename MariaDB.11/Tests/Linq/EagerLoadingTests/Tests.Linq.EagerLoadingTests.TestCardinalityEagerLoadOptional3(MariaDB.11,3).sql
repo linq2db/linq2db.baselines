@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN `EntityD` `d` ON `m_1`.`Id` = `d`.`FK`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`FK`,

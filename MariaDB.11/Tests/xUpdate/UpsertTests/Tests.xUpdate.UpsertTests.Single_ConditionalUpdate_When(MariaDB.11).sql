@@ -38,7 +38,6 @@ WHERE
 	`t1`.`Id` = @Id AND @Version > `t1`.`Version`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,
@@ -93,7 +92,6 @@ WHERE
 	`t1`.`Id` = @Id AND @Version > `t1`.`Version`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`Id`,
 	`r`.`Name`,

@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`item_1`.`FirstName`,
 	`item_1`.`PersonID`,

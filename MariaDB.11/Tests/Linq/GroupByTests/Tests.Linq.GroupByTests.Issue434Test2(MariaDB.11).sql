@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`PersonID`,
 	`d`.`PersonID`,
@@ -11,7 +10,6 @@ WHERE
 	LOCATE('test', Lower(`m_1`.`FirstName`)) > 0
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`

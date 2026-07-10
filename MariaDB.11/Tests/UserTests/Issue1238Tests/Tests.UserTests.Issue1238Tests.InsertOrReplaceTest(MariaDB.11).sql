@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DELETE  
 FROM
 	`InheritanceParent`
@@ -28,7 +27,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM
@@ -58,7 +56,6 @@ ON DUPLICATE KEY UPDATE
 	`TypeDiscriminator` = @Data
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	COUNT(*)
 FROM

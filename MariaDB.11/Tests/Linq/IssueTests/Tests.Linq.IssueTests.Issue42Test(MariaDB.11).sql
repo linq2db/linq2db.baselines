@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -18,7 +17,6 @@ WHERE
 LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,
@@ -132,7 +130,6 @@ WHERE
 	`t1`.`ID` = @ID
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r`.`ID`,
 	`r`.`MoneyValue`,

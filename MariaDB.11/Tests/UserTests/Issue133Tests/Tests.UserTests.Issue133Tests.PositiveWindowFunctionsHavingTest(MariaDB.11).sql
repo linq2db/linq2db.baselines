@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	(CAST(`g_2`.`CountPercents` AS DOUBLE) * 100) / SUM(`g_2`.`CountPercents`) OVER (),
 	`g_2`.`Sum_1`

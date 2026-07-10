@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p_1`.`ParentID`,
 	`p_1`.`Sum_1`

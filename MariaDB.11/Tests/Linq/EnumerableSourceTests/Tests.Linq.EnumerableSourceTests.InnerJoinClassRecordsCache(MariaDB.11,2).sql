@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,
@@ -14,7 +13,6 @@ FROM
 			SELECT 4) `n` ON `p`.`PersonID` = `n`.`ID`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`p`.`FirstName`,
 	`p`.`PersonID`,

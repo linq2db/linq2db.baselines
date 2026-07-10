@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t`.`Id`,
 	CONCAT_WS('', `t`.`Str1`, `t`.`Str2`, `t`.`StrReq`)
@@ -9,7 +8,6 @@ ORDER BY
 	`t`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Str1`,

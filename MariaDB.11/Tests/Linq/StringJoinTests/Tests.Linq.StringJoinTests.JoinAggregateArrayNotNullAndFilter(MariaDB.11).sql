@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	CONCAT_WS(', ', CASE
 		WHEN LOCATE('A', `x`.`NullableValue`) > 0 THEN `x`.`NullableValue`
@@ -32,7 +31,6 @@ WHERE
 	END)) <> 0
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

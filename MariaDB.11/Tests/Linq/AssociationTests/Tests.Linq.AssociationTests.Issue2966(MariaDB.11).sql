@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`r_1`.`Diagnosis`,
 	`a_Person`.`FirstName`

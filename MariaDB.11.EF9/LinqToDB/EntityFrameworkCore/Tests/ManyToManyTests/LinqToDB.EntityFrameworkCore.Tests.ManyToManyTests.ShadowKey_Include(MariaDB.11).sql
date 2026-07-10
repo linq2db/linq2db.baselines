@@ -11,7 +11,6 @@ ORDER BY `a`.`Id`, `s`.`ArticlesId`, `s`.`TagsTagId`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`m_1`.`Id`,
 	`o`.`Label`
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Title`

@@ -1,12 +1,10 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	REGEXP_REPLACE((CONCAT(Coalesce(`t`.`VarCharColumn`, ''), '...')), '(?-i)[.]+$', '')
 FROM
 	`StringTrimTable` `t`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`CharColumn`,

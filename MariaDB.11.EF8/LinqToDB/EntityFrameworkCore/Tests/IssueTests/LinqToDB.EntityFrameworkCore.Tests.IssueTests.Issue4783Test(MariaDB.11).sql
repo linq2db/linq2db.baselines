@@ -13,7 +13,6 @@ RETURNING `Id`;
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `Issue4783Records`
 (
 	`Source`,
@@ -32,7 +31,6 @@ VALUES
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Source`,

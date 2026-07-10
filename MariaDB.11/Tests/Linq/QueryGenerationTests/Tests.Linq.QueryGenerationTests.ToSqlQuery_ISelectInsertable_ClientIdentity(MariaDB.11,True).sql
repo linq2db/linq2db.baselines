@@ -12,7 +12,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TableWithIdentity`
 (
 	`Id`,
@@ -25,7 +24,6 @@ FROM
 	`TableWithIdentitySrc` `t1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

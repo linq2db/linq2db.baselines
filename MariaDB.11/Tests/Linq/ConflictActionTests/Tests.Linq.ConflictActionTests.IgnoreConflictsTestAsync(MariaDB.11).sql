@@ -1,5 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -10,7 +9,6 @@ VALUES
 (2,'original2')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT IGNORE INTO `IgnoreConflictsTable`
 (
 	`ID`,
@@ -22,7 +20,6 @@ VALUES
 (3,'new3')
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value`

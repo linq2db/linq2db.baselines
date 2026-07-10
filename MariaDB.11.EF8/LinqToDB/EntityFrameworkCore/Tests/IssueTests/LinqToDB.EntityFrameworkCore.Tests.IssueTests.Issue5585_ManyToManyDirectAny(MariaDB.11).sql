@@ -9,7 +9,6 @@ ORDER BY `i`.`Id`
 
 
 -- MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`s`.`Id`
 FROM

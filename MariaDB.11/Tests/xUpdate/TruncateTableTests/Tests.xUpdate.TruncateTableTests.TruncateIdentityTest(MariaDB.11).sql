@@ -1,9 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE IF EXISTS `TestIdTrun`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 CREATE TABLE `TestIdTrun`
 (
 	`ID`     INT             AUTO_INCREMENT NOT NULL,
@@ -13,7 +11,6 @@ CREATE TABLE `TestIdTrun`
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -24,7 +21,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -48,11 +44,9 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 TRUNCATE TABLE `TestIdTrun`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -63,7 +57,6 @@ VALUES
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 INSERT INTO `TestIdTrun`
 (
 	`Field1`
@@ -87,6 +80,5 @@ ORDER BY
 LIMIT @skip, 2
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 DROP TABLE `TestIdTrun`
 

@@ -18,7 +18,6 @@ ORDER BY
 	`m_1`.`Id`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
 SELECT
 	`d`.`Id`,
 	`d`.`Name`
