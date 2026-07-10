@@ -9,9 +9,9 @@ DECLARE $ID  -- Int32
 SET     $ID = 5
 
 UPDATE
-	TestData.Issue681Table
+	memory.Issue681Table
 SET
 	"Value" = $Value
 WHERE
-	TestData.Issue681Table.ID = $ID
+	memory.Issue681Table.ID = $ID
 

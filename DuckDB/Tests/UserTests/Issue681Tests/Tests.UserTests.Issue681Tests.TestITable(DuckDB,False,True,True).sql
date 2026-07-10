@@ -14,5 +14,5 @@ SELECT
 	t1.ID,
 	t1."Value"
 FROM
-	TestData.main.Issue681Table t1
+	memory.main.Issue681Table t1
 
