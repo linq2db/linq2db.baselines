@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	e."Id"
 FROM
@@ -8,7 +7,6 @@ WHERE
 	(CAST(e."Num" AS VarChar(255)) || '-' || e."StrReq") = '100-Programmer'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Str1",

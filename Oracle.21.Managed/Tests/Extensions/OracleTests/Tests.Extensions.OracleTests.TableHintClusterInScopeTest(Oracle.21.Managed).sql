@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT /*+ CLUSTER(p) CLUSTER(c_1) */
 	p."ParentID",
 	p."Value1"

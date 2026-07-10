@@ -41,7 +41,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 MERGE INTO "ComplexPropertyTarget" Target
 USING (
 	SELECT 1 AS "Id", 'alpha-new' AS "Code", 1 AS "Nested_Field" FROM sys.dual
@@ -70,7 +69,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."Code",

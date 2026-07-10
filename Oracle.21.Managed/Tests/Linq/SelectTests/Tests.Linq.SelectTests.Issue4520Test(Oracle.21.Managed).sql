@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	CASE
 		WHEN (i."BoolValue" IS NULL OR i."BoolValue" = 0) AND (i."IntValue" = (

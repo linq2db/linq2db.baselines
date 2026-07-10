@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	it_1."not_null",
 	it_1."ColorName",
@@ -30,7 +29,6 @@ WHERE
 	it_1."ColorName" = 'Red'
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."ColorId",
@@ -45,7 +43,6 @@ FROM
 		LEFT JOIN "SomeStyle" a_Style ON t1."StyleId" = a_Style."Id"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."ColorId",

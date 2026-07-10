@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."MoneyValue",
@@ -29,7 +28,6 @@ WHERE
 	t.ID = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t.ID,
 	t."MoneyValue",

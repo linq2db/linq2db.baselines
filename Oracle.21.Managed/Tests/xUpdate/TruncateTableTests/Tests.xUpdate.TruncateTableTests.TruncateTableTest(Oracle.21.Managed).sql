@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TestTrun"';
 EXCEPTION
@@ -10,7 +9,6 @@ EXCEPTION
 END;
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 CREATE TABLE "TestTrun"
 (
 	ID       Int             NOT NULL,
@@ -20,10 +18,8 @@ CREATE TABLE "TestTrun"
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 TRUNCATE TABLE "TestTrun"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DROP TABLE "TestTrun"
 

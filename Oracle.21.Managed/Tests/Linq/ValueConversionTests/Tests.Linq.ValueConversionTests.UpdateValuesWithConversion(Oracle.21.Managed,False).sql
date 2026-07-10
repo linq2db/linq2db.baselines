@@ -10,7 +10,6 @@ WHERE
 	x."Id" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",
@@ -34,7 +33,6 @@ WHERE
 	x."Id" = 2
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."Id",
 	x."NoConversion",

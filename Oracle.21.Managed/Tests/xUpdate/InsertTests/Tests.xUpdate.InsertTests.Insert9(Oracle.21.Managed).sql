@@ -1,12 +1,10 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" > 1000
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Parent" p
 WHERE
@@ -58,14 +56,12 @@ WHERE
 	c_1."ParentID" = :id
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Child" c_1
 WHERE
 	c_1."ParentID" > 1000
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"Parent" p
 WHERE

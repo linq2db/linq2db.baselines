@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 INSERT /*+ FULL(c_1) ALL_ROWS FIRST_ROWS(10) */ INTO "Child"
 (
 	"ChildID"

@@ -16,7 +16,6 @@ VALUES
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"
@@ -38,7 +37,6 @@ WHERE
 	t1."Id" = 1
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."BlobValue"

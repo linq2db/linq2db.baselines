@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	g_1."TestId",
 	COUNT(*)
@@ -11,7 +10,6 @@ ORDER BY
 	g_1."TestId"
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Id",
 	t1."TestId"

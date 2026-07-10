@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	NTILE(p."Value1") OVER (PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1"),
 	NTILE(1) OVER (ORDER BY p."Value1", c_1."ChildID" DESC)

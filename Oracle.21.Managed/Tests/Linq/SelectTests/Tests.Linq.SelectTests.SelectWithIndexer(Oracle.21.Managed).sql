@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	x."FirstName",
 	x."LastName",
@@ -20,7 +19,6 @@ ORDER BY
 	x."PersonID" DESC
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",

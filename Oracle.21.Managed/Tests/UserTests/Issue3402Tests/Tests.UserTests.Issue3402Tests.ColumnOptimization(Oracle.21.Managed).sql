@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	ess.ID
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	ess.ID
 FROM

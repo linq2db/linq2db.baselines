@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("ChildID", "ParentID", "GrandChildID")
 AS
 (
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN "cte" d ON m_1."Key_1" = Coalesce(d."ParentID", -1)
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
 WITH "cte" ("ChildID", "ParentID", "GrandChildID")
 AS
 (

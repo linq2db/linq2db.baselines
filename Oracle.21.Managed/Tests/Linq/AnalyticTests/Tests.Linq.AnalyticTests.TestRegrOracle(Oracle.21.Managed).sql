@@ -1,5 +1,4 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT
 	REGR_AVGX(p."Value1", c_1."ChildID") OVER (PARTITION BY p."Value1", c_1."ChildID"),
 	REGR_AVGY(p."Value1", c_1."ChildID") OVER (PARTITION BY p."Value1", c_1."ChildID"),
