@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN `EntityD` `d` ON `m_1`.`Id` = `d`.`FK`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`e`.`Id`,
 	`a_ObjectBOptional`.`Id`,

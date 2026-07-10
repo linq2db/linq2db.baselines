@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1`
 (
 	`Child_ParentID`,
@@ -38,7 +37,6 @@ FROM
 	`CTE_1` `t1`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1`
 (
 	`Child_ParentID`,

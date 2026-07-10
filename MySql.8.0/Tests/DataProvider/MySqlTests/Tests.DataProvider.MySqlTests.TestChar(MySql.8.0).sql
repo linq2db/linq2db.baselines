@@ -1,17 +1,13 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT Cast('1' as char)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT Cast('1' as char)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT Cast('1' as char(1))
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT Cast('1' as char(1))
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

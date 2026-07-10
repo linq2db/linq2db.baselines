@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TEMPORARY TABLE `Issue4671EntityTMP`
 (
 	`Id`    INT AUTO_INCREMENT NOT NULL,
@@ -9,7 +8,6 @@ CREATE TEMPORARY TABLE `Issue4671EntityTMP`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Issue4671Entity`
 (
 	`Value`
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `Issue4671EntityTMP`
 (
 	`Value`
@@ -31,7 +28,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -40,7 +36,6 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -49,6 +44,5 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TEMPORARY TABLE IF EXISTS `Issue4671EntityTMP`
 

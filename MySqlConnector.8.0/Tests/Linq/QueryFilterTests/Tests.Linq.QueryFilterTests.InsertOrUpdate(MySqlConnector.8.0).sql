@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -16,7 +15,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,
@@ -28,7 +26,6 @@ WHERE
 LIMIT 2
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue5289Table`
 (
 	`Id`,
@@ -45,7 +42,6 @@ ON DUPLICATE KEY UPDATE
 	`PictureId` = 3
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`PictureId`,

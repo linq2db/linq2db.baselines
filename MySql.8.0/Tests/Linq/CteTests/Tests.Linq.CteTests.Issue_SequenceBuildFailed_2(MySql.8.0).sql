@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`PersonID`)
 AS
 (
@@ -27,7 +26,6 @@ FROM
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`PersonID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`PersonID`)
 AS
 (

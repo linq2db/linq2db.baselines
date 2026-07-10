@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`g_1`.`Id`,
 	GROUP_CONCAT(Coalesce(`g_1`.`NullableValue`, '') ORDER BY `g_1`.`NotNullableValue`, `g_1`.`NullableValue` DESC SEPARATOR ', '),
@@ -22,7 +21,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,

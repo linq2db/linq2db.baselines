@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	SUM(CASE
 		WHEN `t`.`ParentID` IN (3) THEN `t`.`ChildID`

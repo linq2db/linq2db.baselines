@@ -1,7 +1,6 @@
 ﻿
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`Id`,
 	`d_1`.`Key_1`,
@@ -27,7 +26,6 @@ FROM
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`c_1`.`Id`
 FROM

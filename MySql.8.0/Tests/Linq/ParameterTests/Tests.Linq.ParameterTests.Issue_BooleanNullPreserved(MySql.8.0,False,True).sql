@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `TestBool`
 (
 	`Id`,
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -21,14 +19,12 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 UPDATE
 	`TestBool` `t1`
 SET
 	`t1`.`Value` = NOT `t1`.`Value`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`
@@ -37,7 +33,6 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 UPDATE
 	`TestBool` `r`
 SET
@@ -46,7 +41,6 @@ WHERE
 	`r`.`Id` = 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Value`

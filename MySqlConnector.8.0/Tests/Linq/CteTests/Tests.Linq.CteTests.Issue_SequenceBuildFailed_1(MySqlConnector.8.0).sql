@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `cte` (`Id`)
 AS
 (
@@ -33,7 +32,6 @@ FROM
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `cte` (`Id`)
 AS
 (

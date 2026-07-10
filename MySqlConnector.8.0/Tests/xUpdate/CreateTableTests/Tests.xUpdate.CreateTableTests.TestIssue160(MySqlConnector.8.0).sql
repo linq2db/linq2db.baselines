@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 CREATE TABLE `aa`
 (
 	`bb` INT           NOT NULL,
@@ -26,7 +25,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`bb`,
 	`t1`.`cc`
@@ -34,6 +32,5 @@ FROM
 	`aa` `t1`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DROP TABLE `aa`
 

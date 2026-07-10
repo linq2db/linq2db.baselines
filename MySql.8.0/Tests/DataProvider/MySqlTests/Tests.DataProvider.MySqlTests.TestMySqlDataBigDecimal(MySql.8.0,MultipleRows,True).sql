@@ -1,13 +1,10 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `BigDecimalMySqlDataTable`
 (
 	`Id`,
@@ -22,7 +19,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `BigDecimalMySqlDataTable`
 (
 	`Id`,
@@ -37,7 +33,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -47,13 +42,11 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `BigDecimalMySqlDataTable`
 (
 	`Id`,
@@ -68,7 +61,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `BigDecimalMySqlDataTable`
 (
 	`Id`,
@@ -83,7 +75,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -93,13 +84,11 @@ FROM
 LIMIT 2
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `BigDecimalMySqlDataTable`
 (
 	`Id`,
@@ -111,7 +100,6 @@ VALUES
 (2,-12345678901234567890123456789012345.123456789012345678901234567891,NULL)
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,

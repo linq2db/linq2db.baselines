@@ -21,7 +21,6 @@ WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `Issue4783Records`
 (
 	`Source`,
@@ -40,7 +39,6 @@ VALUES
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Source`,

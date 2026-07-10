@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	MIN(`t`.`IntValue`) OVER (PARTITION BY `t`.`CategoryId` ORDER BY `t`.`Id`),
 	MIN(`t`.`NullableIntValue`) OVER (PARTITION BY `t`.`CategoryId` ORDER BY `t`.`Id`),

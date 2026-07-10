@@ -16,7 +16,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 UPDATE
 	`Parent` `t`
 SET
@@ -26,7 +25,6 @@ WHERE
 
 RollbackTransaction
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`

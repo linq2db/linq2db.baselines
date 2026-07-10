@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1` (`ParentID`, `ChildID`, `GrandChildID`)
 AS
 (
@@ -25,7 +24,6 @@ FROM
 		INNER JOIN `CTE_1` `d` ON `m_1`.`Key_1` = Coalesce(`d`.`ParentID`, -1)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH `CTE_1` (`ParentID`)
 AS
 (

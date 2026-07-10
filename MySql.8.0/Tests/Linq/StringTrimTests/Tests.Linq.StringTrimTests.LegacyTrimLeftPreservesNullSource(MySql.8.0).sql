@@ -28,7 +28,6 @@ VALUES
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	CASE
 		WHEN `t`.`VarCharColumn` IS NOT NULL THEN REGEXP_REPLACE(`t`.`VarCharColumn`, '(?-i)^[.+]+', '')

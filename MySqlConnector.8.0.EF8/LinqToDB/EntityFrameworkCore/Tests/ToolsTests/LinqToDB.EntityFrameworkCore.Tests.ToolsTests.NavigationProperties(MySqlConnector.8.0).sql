@@ -25,7 +25,6 @@ ORDER BY `o`.`OrderID`, `t`.`OrderID`, `t`.`ProductID`, `t0`.`ProductID`, `t1`.`
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`ProductId`,
 	`d`.`OrderID`,
@@ -47,7 +46,6 @@ FROM
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`a_Product`.`ProductID`,
 	`od`.`OrderID`,

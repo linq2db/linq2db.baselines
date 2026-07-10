@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`Obj_Operator`)
 AS
 (
@@ -15,7 +14,6 @@ FROM
 LIMIT 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`person_1`.`LastName`
 FROM

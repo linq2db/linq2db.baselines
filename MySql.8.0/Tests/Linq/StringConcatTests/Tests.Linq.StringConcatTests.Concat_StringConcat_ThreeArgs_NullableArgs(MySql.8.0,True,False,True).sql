@@ -1,5 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	CONCAT(Coalesce(`t`.`Value1`, ''), `t`.`Value2`, Coalesce(`t`.`Value3`, ''))
 FROM
@@ -8,7 +7,6 @@ ORDER BY
 	`t`.`ID`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`ID`,
 	`t1`.`Value1`,

@@ -1,9 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE IF EXISTS `TestTrun`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 CREATE TABLE `TestTrun`
 (
 	`ID`     INT             NOT NULL,
@@ -13,10 +11,8 @@ CREATE TABLE `TestTrun`
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 TRUNCATE TABLE `TestTrun`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DROP TABLE `TestTrun`
 

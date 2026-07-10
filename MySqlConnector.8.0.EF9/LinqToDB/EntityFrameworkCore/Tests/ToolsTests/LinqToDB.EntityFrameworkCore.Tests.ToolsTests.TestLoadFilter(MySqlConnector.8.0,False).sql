@@ -35,7 +35,6 @@ ORDER BY `p`.`ProductID`, `s1`.`OrderID0`, `s1`.`ProductID`, `s1`.`OrderID`, `s1
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`SupplierId`,
 	`m_1`.`ProductId`,
@@ -70,7 +69,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`m_1`.`ProductID`,
 	`d`.`Discount`,
@@ -103,7 +101,6 @@ WHERE
 
 
 -- MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`p`.`ProductName`,
 	`p`.`ProductID`

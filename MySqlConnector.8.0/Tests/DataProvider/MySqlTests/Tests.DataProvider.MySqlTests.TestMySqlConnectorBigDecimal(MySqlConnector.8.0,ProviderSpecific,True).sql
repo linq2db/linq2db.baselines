@@ -1,13 +1,10 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
 	`Id`,
@@ -22,7 +19,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
 	`Id`,
@@ -37,7 +33,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -48,13 +43,11 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
 	`Id`,
@@ -69,7 +62,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `BigDecimalMySqlConnectorTable`
 (
 	`Id`,
@@ -84,7 +76,6 @@ VALUES
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,
@@ -95,7 +86,6 @@ ORDER BY
 	`t1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 DELETE  
 FROM
 	`BigDecimalMySqlConnectorTable`
@@ -103,7 +93,6 @@ FROM
 INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN)
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Decimal`,

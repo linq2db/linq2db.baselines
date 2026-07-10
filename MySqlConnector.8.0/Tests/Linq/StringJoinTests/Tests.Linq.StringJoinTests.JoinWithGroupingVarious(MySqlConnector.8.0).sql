@@ -1,5 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`g_1`.`Id`,
 	GROUP_CONCAT(DISTINCT Coalesce(`g_1`.`NullableValue`, '') SEPARATOR ', '),
@@ -15,7 +14,6 @@ ORDER BY
 	`g_1`.`Id`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`PK`,
 	`t1`.`Id`,
