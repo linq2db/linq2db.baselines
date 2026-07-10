@@ -49,7 +49,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Code],
 	[e].[Id],

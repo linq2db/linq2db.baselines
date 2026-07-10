@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
 	[Person] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

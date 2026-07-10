@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[author].[Id],
 	[author].[Name]

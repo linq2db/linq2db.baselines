@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	LCase([p].[Taxonomy])
 FROM

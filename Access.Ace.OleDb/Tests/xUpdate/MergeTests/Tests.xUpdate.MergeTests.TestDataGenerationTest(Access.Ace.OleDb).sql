@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[TestMerge1] [t1]
 
@@ -104,7 +103,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[TestMerge2] [t1]
 
@@ -209,7 +207,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -223,7 +220,6 @@ ORDER BY
 	[t1].[Id]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],

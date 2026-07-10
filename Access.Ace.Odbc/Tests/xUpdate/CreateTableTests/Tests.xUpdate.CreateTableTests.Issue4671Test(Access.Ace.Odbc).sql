@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -9,7 +8,6 @@ CREATE TABLE [Issue4671EntityTMP]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [Issue4671Entity]
 (
 	[Value]
@@ -20,7 +18,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [Issue4671EntityTMP]
 (
 	[Value]
@@ -31,7 +28,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -39,7 +35,6 @@ FROM
 	[Issue4671Entity] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]
@@ -47,6 +42,5 @@ FROM
 	[Issue4671EntityTMP] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [Issue4671EntityTMP]
 

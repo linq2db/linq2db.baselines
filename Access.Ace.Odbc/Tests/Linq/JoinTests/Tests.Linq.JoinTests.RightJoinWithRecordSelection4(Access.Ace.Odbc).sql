@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[f].[Id],
 	[t1].[Id] as [Id_1],

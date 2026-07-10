@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]
@@ -17,7 +16,6 @@ WHERE
 	[cross_1].[ParentID] = [g_1].[ParentID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_Child].[ParentID],
 	[a_Child].[ChildID]

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[i].[One] <> 1 OR [i].[Two] <> [i].[One] * 2
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	([i].[One] >= NULL OR [i].[Two] <> -1 OR [i].[Three] <> [i].[Four])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -30,7 +27,6 @@ WHERE
 	([i].[One] >= NULL OR [i].[Three] <> 2)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -41,7 +37,6 @@ WHERE
 	([i].[One] >= NULL OR [i].[Two] <> 2)
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

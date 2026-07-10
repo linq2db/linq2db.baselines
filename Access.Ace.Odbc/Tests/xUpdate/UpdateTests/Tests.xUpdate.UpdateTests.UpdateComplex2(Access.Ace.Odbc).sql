@@ -24,11 +24,9 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT @@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[Person] [t1]
 SET

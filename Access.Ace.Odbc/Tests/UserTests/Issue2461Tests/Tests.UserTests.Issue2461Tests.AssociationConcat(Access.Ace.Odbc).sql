@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP]

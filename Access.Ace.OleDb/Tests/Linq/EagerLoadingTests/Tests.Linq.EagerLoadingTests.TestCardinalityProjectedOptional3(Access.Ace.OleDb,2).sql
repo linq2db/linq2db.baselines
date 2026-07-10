@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id] as [Id_1],
@@ -16,7 +15,6 @@ FROM
 		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[e].[Id],
 	[a_ObjectBOptional].[Id] as [Id_1],

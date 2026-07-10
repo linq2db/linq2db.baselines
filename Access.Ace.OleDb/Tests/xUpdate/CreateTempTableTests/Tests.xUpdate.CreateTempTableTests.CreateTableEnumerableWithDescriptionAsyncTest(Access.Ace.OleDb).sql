@@ -1,9 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TempTable]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [TempTable]
 (
 	[Name] NVarChar(20) NOT NULL,
@@ -25,7 +23,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Name]
 FROM
@@ -33,6 +30,5 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[FirstName] = [t].[Name])
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TempTable]
 

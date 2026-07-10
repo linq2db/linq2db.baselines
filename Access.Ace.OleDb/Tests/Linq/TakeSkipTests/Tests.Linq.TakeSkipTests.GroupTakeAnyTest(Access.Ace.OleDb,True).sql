@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	COUNT(*) > 0
 FROM

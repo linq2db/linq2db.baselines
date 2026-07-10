@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -31,7 +30,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -42,11 +40,9 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [FluentTemp_Cache]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -78,7 +74,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[Value],
@@ -89,11 +84,9 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [FluentTemp_Cache]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -125,7 +118,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -136,11 +128,9 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [FluentTemp_Cache]
 
 -- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [FluentTemp_Cache]
 (
 	[ID]       Int          NOT NULL,
@@ -172,7 +162,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[ID],
 	[t].[Column],
@@ -183,6 +172,5 @@ WHERE
 	[t].[ID] = 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [FluentTemp_Cache]
 

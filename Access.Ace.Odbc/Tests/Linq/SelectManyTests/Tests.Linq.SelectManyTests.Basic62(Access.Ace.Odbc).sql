@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_Children].[ParentID] + [p].[ParentID]
 FROM

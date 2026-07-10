@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[f].[Id],
 	[t1].[Id] as [Id_1],

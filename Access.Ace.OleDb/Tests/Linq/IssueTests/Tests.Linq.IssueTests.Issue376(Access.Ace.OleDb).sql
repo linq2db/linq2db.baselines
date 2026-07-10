@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[PersonID],
 	[a_Doctor].[PersonID] as [PersonID_1],

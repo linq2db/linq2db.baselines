@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [InventoryResource]
 
 -- Access.Ace.OleDb AccessOleDb

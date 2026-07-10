@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 CREATE TABLE [TableWithPrimaryKey]
 (
 	[Key] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [TableWithPrimaryKey]
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DROP TABLE [TableWithPrimaryKey]
 

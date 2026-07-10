@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[entity1].[FirstName],
 	[entity1].[PersonID],

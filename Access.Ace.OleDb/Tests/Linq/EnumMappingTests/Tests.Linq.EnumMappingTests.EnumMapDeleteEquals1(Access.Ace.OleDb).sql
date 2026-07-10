@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 -- Access.Ace.OleDb AccessOleDb
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 DELETE FROM
 	[LinqDataTypes] [r]
 WHERE

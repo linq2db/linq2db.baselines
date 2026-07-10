@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM
@@ -12,7 +11,6 @@ WHERE
 	('{}' + [p].[LastName]) = ('{}' + [p].[LastName])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	COUNT(*)
 FROM

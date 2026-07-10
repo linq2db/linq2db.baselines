@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t].[ParentID],
 	[t].[ChildID]
@@ -24,7 +23,6 @@ WHERE
 	)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

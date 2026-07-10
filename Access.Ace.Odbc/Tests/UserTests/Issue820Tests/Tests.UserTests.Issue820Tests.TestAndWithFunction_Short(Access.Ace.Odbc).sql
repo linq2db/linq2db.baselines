@@ -19,7 +19,6 @@ WHERE
 	? = [t1].[SmallIntValue]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

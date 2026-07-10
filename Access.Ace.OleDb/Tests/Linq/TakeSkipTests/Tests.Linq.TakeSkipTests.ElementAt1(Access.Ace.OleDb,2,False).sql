@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 3
 	[p].[ParentID],
 	[p].[Value1]

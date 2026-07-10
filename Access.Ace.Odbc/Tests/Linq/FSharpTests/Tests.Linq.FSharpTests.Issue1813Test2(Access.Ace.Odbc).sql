@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1],
@@ -62,7 +61,6 @@ ORDER BY
 	[m_1].[Id]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]

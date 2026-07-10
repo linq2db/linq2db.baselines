@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[SmallIntValue],
 	[t1].[SmallIntValue] as [year_1],

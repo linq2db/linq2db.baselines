@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[pmp1].[ChildID]
 FROM
@@ -12,7 +11,6 @@ FROM
 	) [pmp_1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]

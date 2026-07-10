@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -9,7 +8,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -19,7 +17,6 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[a_Parent].[ParentID]
 FROM

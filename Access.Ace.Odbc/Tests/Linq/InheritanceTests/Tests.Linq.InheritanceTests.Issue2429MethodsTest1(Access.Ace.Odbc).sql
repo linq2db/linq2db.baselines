@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Value]
@@ -9,7 +8,6 @@ WHERE
 	[x].[Id] = 1
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Value]

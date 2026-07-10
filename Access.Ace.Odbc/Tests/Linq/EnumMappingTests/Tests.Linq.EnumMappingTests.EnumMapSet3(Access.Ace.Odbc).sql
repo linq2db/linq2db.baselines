@@ -8,7 +8,6 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < ?
 
 -- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [LinqDataTypes]
 (
 	[ID],
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[LinqDataTypes] [r]
 SET
@@ -30,7 +28,6 @@ WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 3
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

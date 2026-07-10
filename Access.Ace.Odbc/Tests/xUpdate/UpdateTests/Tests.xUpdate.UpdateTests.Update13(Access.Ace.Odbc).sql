@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 UPDATE
 	[Parent] [p2],
 	[Parent] [p1]

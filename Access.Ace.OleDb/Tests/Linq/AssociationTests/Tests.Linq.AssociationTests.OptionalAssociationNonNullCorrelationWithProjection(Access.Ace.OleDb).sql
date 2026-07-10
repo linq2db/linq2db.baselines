@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[a_Table2].[ID],
 	[a_Table2].[ID3],

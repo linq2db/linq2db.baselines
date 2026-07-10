@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[ResultId],
 	[t1].[DefinitionId],

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT
 	[r].[F1],
 	[r].[F2]

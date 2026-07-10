@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Id],
 	[e].[Value1] + 12345
@@ -7,7 +6,6 @@ FROM
 	[ClientCalcEntity] [e]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -17,14 +15,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	IIF([e].[Id] > 1, [e].[Value1], [e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -34,14 +30,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	-[e].[Value1]
 FROM
 	[ClientCalcEntity] [e]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -51,14 +45,12 @@ FROM
 	[ClientCalcEntity] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[e].[Value1] + ABS([e].[Value2])
 FROM
 	[ClientCalcEntity] [e]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],

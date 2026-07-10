@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 10
 	(
 		SELECT TOP 1

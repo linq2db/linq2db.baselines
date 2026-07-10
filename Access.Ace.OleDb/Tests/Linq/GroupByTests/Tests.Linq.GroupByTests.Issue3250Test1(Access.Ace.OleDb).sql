@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	CStr([g_2].[Message]) + ' items have not been processed, e.g. #' + IIF([g_2].[Message_1] IS NULL, '', IIF([g_2].[Message_1] IS NOT NULL, CStr([g_2].[Message_1]), NULL)) + '.'
 FROM

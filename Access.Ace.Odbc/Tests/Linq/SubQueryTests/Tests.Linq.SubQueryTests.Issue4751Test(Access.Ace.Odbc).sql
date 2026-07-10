@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 30
 	[x].[Id],
 	[x].[CarNo],
@@ -50,7 +49,6 @@ ORDER BY
 	[x].[CarNo]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM

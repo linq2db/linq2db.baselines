@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM
@@ -8,7 +7,6 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	COUNT([p].[PersonID])
 FROM

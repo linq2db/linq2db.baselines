@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[g_1].[StatsTypeId],
 	[st].[FullName],

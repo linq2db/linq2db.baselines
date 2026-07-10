@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName]
 FROM
@@ -11,7 +10,6 @@ FROM
 	[Person] [p_1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[FirstName] + '/' + [p].[LastName]
 FROM

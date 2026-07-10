@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	True,
 	[it].[SmallIntValue] <> 0
@@ -7,7 +6,6 @@ FROM
 	[LinqDataTypes] [it]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[MoneyValue],

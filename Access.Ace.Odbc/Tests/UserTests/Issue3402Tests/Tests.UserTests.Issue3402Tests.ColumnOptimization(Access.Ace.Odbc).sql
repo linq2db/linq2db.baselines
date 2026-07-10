@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[ess].[ID]
 FROM
@@ -15,7 +14,6 @@ WHERE
 	)
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[ess].[ID]
 FROM

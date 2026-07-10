@@ -50,7 +50,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[after_1].[Id],
 	[after_1].[Name],

@@ -76,7 +76,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[r].[ID],
 	[r].[IntValue]
@@ -88,7 +87,6 @@ ORDER BY
 	[r].[ID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[r].[ID],
 	[r].[IntValue],

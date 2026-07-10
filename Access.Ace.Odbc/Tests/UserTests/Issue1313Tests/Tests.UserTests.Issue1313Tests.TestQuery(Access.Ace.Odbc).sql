@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -10,7 +9,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[row_1].[Value]
 FROM

@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[ch_1].[ChildID],
 	[ch_1].[ParentID],
@@ -18,7 +17,6 @@ FROM
 		LEFT JOIN [Parent] [a_Parent_1] ON ([ch_1].[ParentID] = [a_Parent_1].[ParentID])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],

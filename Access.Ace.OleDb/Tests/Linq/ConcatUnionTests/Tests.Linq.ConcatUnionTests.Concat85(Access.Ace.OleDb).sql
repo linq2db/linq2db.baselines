@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[c_1].[ParentID],
 	IIF([c_1].[Value1] IS NULL, 0, [c_1].[Value1]) as [ID2],

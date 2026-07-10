@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[Id],
 	[a_Child].[Id] as [Id_1],

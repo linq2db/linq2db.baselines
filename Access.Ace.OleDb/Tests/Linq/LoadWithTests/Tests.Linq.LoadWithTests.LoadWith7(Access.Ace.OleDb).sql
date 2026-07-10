@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[a_GrandChildren2].[ParentID],
 	[a_GrandChildren2].[ChildID],

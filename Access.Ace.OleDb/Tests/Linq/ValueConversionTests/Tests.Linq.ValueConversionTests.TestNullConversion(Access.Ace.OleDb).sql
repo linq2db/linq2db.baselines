@@ -153,7 +153,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[IntClassRequired],

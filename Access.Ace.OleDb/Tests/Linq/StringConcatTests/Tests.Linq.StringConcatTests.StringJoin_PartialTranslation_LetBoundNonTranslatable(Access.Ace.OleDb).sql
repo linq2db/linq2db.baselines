@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t].[Value1],
 	[t].[Value2]
@@ -9,7 +8,6 @@ ORDER BY
 	[t].[ID]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[ID],
 	[t1].[Value1],

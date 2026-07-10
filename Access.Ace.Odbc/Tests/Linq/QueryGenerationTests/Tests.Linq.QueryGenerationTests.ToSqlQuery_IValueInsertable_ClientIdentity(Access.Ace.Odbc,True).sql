@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TableWithIdentity]
 (
 	[Id],
@@ -12,7 +11,6 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 2
 	[t1].[Id],
 	[t1].[Value]

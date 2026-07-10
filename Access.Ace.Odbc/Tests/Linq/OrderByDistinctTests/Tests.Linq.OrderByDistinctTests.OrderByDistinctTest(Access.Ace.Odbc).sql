@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 3
 	[x].[DuplicateData]
 FROM
@@ -23,14 +21,12 @@ ORDER BY
 	[x].[OrderData1]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT TOP 3
 	[x].[DuplicateData]
 FROM

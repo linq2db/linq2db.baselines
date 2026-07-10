@@ -1,13 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT '<xml/>'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT '<xml/>'
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT '<xml/>'
 
 -- Access.Ace.Odbc AccessODBC

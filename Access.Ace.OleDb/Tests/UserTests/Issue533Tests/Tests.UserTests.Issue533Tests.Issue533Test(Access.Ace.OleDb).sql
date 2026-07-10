@@ -24,7 +24,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT @@IDENTITY
 
 -- Access.Ace.OleDb AccessOleDb

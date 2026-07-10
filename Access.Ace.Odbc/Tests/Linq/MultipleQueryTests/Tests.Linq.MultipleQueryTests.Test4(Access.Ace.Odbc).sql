@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ChildID]
@@ -15,7 +14,6 @@ ORDER BY
 	[m_1].[ParentID]
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[p].[ParentID]
 FROM

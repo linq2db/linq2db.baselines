@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[tupledArg].[ParentID],
 	[tupledArg].[Value1],

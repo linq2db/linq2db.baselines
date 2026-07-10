@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT DISTINCT
 	[i].[FirstName],
 	[i].[PersonID],

@@ -20,7 +20,6 @@ VALUES
 )
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id] as [Id_1]
@@ -36,7 +35,6 @@ FROM
 		INNER JOIN [Message] [d] ON ([m_1].[Id] = [d].[TopicId])
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT TOP 1
 	[x].[Id],
 	[x].[Title],

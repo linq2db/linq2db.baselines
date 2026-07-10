@@ -1,12 +1,10 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[PersonID]
 FROM
 	[Patient] [x]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[PersonID],
 	[x].[FirstName]
@@ -14,7 +12,6 @@ FROM
 	[Person] [x]
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[PersonID],
 	[person_1].[PersonID] as [ID_1],

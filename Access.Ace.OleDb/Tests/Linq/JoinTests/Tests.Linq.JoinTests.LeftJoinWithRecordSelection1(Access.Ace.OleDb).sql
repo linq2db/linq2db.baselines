@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[fact_1].[Id],
 	[leftTag].[Id] as [Id_1],

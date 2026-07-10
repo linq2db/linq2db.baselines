@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],
@@ -12,7 +11,6 @@ ORDER BY
 	Len([t1].[FirstName]) > 1
 
 -- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[t1].[FirstName],
 	[t1].[PersonID],

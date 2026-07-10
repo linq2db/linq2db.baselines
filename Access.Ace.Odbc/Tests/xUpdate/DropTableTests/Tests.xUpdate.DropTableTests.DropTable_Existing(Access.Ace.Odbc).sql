@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 CREATE TABLE [Table]
 (
 	[ID] Int NOT NULL,
@@ -8,6 +7,5 @@ CREATE TABLE [Table]
 )
 
 -- Access.Ace.Odbc AccessODBC
-
 DROP TABLE [Table]
 

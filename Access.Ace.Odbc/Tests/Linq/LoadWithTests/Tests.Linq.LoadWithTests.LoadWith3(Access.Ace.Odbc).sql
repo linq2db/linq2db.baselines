@@ -1,5 +1,4 @@
 ﻿-- Access.Ace.Odbc AccessODBC
-
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID] as [ParentID_1],
@@ -14,7 +13,6 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 -- Access.Ace.Odbc AccessODBC
-
 SELECT
 	(
 		SELECT
