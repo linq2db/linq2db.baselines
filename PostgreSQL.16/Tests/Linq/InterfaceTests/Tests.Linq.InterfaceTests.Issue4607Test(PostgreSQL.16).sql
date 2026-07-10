@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "SomeTable"
 (
 	"Id",
@@ -14,7 +13,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."ClassProp",

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t2.month_1,
 	t2.year_1,

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	SUM(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),
 	SUM(t."NullableIntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

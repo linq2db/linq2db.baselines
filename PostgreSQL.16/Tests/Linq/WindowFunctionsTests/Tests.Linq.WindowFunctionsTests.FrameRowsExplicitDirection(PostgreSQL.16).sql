@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t."Id",
 	SUM(t."IntValue") OVER (PARTITION BY t."CategoryId" ORDER BY t."Id" ROWS BETWEEN 5 PRECEDING AND 2 PRECEDING),

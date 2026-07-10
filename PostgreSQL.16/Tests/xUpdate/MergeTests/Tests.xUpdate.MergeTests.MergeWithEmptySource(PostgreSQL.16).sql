@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "Person" "Target"
 USING (
 	SELECT NULL::Int, NULL::text, NULL::text, NULL::text, NULL::Char(1)

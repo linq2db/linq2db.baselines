@@ -19,7 +19,6 @@ WHERE
 	:param = t1."BigIntValue"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."ID",
 	t1."MoneyValue",

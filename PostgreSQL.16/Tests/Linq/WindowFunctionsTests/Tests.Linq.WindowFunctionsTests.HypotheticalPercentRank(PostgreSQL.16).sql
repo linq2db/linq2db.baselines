@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	g_1."CategoryId",
 	PERCENT_RANK(1000) WITHIN GROUP (ORDER BY g_1."IntValue"),

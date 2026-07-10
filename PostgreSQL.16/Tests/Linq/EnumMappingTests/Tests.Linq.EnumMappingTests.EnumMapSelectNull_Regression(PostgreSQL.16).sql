@@ -8,7 +8,6 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 INSERT INTO "LinqDataTypes"
 (
 	"ID",
@@ -21,7 +20,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."BigIntValue"
 FROM

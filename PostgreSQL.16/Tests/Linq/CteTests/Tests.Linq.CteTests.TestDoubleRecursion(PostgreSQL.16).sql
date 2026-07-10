@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH RECURSIVE "CTE_1" ("Id")
 AS
 (

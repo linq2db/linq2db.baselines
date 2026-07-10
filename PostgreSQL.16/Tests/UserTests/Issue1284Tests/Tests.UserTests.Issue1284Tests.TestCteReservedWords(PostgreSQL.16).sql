@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 WITH "CTE_1" ("Obj_Operator")
 AS
 (
@@ -15,7 +14,6 @@ FROM
 LIMIT 1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	person_1."LastName"
 FROM

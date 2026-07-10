@@ -24,14 +24,12 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM
 	"xxPerson" t1
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."FirstName",
 	t1."PersonID",
@@ -52,7 +50,6 @@ WHERE
 	t1."PersonID" = :ID
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	COUNT(*)
 FROM

@@ -137,7 +137,6 @@ WHERE
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	s."Id",
 	s."PermanentId",
@@ -152,7 +151,6 @@ WHERE
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."PermanentId",

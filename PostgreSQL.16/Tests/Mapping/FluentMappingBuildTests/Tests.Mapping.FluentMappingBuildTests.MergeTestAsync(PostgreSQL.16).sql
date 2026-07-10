@@ -1,9 +1,7 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS "FluentTemp_Merge"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 CREATE TABLE IF NOT EXISTS "FluentTemp_Merge"
 (
 	"ID"   Int  NOT NULL,
@@ -30,7 +28,6 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 MERGE INTO "FluentTemp_Merge" "Target"
 USING (VALUES
 	(1,'John II')
@@ -59,6 +56,5 @@ VALUES
 )
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 DROP TABLE IF EXISTS "FluentTemp_Merge"
 

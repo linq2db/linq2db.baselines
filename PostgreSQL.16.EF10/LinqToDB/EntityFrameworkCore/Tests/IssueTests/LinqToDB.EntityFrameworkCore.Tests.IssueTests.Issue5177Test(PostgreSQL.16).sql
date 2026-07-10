@@ -6,7 +6,6 @@ VALUES (@p0, @p1);
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	r."Id",
 	r."Value"

@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	x_1."Id",
 	x_1."Name",
@@ -28,7 +27,6 @@ WHERE
 	x_1."Amount" > 100
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Name",

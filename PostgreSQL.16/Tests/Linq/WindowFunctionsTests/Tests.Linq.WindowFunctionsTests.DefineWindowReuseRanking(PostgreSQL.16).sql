@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	ROW_NUMBER() OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),
 	RANK() OVER (PARTITION BY t."CategoryId" ORDER BY t."Id"),

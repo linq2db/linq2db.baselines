@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	it_1.not_null,
 	it_1."ColorName",
@@ -52,7 +51,6 @@ WHERE
 	it_1."ColorName" = 'Red' OR it_1."Count_1" = 0
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."ColorId",

@@ -11,7 +11,6 @@ ORDER BY a."Id", s."ArticlesId", s."TagsTagId"
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	m_1."Id",
 	o."Label"
@@ -25,7 +24,6 @@ ORDER BY
 
 
 -- PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."Title"

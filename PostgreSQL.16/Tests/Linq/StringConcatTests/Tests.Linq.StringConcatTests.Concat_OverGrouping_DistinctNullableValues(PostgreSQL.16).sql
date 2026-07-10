@@ -1,5 +1,4 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	g_1."GrpId",
 	Coalesce(STRING_AGG(DISTINCT g_1."Value", '' ORDER BY g_1."Value"), '')
@@ -11,7 +10,6 @@ ORDER BY
 	g_1."GrpId"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."PK",
 	t1."GrpId",

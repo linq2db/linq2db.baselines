@@ -1,12 +1,10 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	LTRIM('...' || Coalesce(t."VarCharColumn", ''), '.')
 FROM
 	"StringTrimTable" t
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-
 SELECT
 	t1."Id",
 	t1."CharColumn",
