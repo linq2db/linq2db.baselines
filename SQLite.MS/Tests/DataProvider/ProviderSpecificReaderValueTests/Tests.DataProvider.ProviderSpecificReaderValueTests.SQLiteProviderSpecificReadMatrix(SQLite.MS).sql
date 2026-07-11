@@ -1,0 +1,48 @@
+﻿-- SQLite.MS SQLite
+SELECT CAST(123 AS INTEGER)
+
+-- SQLite.MS SQLite
+SELECT CAST(123 AS INTEGER)
+
+-- SQLite.MS SQLite
+SELECT CAST(1234567890123 AS INTEGER)
+
+-- SQLite.MS SQLite
+SELECT CAST(1234567890123 AS INTEGER)
+
+-- SQLite.MS SQLite
+SELECT CAST(1.25 AS REAL)
+
+-- SQLite.MS SQLite
+SELECT CAST(1.25 AS REAL)
+
+-- SQLite.MS SQLite
+SELECT CAST('text' AS TEXT)
+
+-- SQLite.MS SQLite
+SELECT CAST('text' AS TEXT)
+
+-- SQLite.MS SQLite
+SELECT date('2024-01-02')
+
+-- SQLite.MS SQLite
+SELECT date('2024-01-02')
+
+-- SQLite.MS SQLite
+SELECT time('03:04:05')
+
+-- SQLite.MS SQLite
+SELECT time('03:04:05')
+
+-- SQLite.MS SQLite
+SELECT datetime('2024-01-02 03:04:05')
+
+-- SQLite.MS SQLite
+SELECT datetime('2024-01-02 03:04:05')
+
+-- SQLite.MS SQLite
+SELECT x'3039'
+
+-- SQLite.MS SQLite
+SELECT x'3039'
+
