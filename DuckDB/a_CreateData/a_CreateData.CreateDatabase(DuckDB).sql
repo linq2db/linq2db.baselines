@@ -128,12 +128,6 @@ CREATE TABLE "LinqDataTypes"
 )
 
 -- DuckDB
-DROP SEQUENCE IF EXISTS SequenceTestSeq
-
--- DuckDB
-CREATE SEQUENCE SequenceTestSeq INCREMENT BY 1 START 1
-
--- DuckDB
 DROP TABLE IF EXISTS "SequenceTest1"
 
 -- DuckDB
@@ -141,6 +135,14 @@ DROP TABLE IF EXISTS "SequenceTest2"
 
 -- DuckDB
 DROP TABLE IF EXISTS "SequenceTest3"
+
+-- DuckDB
+-- drop the sequence after its dependent tables: on a preloaded in-memory catalog SequenceTest3
+-- still defaults off SequenceTestSeq, so dropping the sequence first is blocked and CREATE collides
+DROP SEQUENCE IF EXISTS SequenceTestSeq
+
+-- DuckDB
+CREATE SEQUENCE SequenceTestSeq INCREMENT BY 1 START 1
 
 -- DuckDB
 DROP SEQUENCE IF EXISTS "SequenceTest2_ID_seq"
