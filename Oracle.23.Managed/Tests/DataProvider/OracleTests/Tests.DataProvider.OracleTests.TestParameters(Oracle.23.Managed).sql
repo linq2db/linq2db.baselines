@@ -2,25 +2,25 @@
 DECLARE @p Blob -- Object
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Char -- AnsiStringFixedLength
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 1
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(255) -- String
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
