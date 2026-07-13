@@ -1,0 +1,41 @@
+﻿-- PostgreSQL.11 PostgreSQL
+DROP TABLE IF EXISTS "TempTable"
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	p."ParentID"
+FROM
+	"Parent" p
+
+-- PostgreSQL.11 PostgreSQL
+CREATE TABLE IF NOT EXISTS "TempTable"
+(
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("ID")
+)
+
+-- PostgreSQL.11 PostgreSQL
+INSERT INTO "TempTable"
+(
+	"ID"
+)
+VALUES
+(2),
+(3),
+(4),
+(5),
+(6),
+(1),
+(7)
+
+-- PostgreSQL.11 PostgreSQL
+SELECT
+	t."ID"
+FROM
+	"Parent" p
+		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
+
+-- PostgreSQL.11 PostgreSQL
+DROP TABLE IF EXISTS "TempTable"
+

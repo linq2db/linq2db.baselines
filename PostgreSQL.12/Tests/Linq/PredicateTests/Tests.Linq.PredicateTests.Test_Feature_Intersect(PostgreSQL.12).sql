@@ -1,0 +1,168 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."One"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."Zero"
+		INTERSECT
+		SELECT
+			r."Zero"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."Null"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."Zero"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	EXISTS(
+		SELECT
+			r."Zero"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."One"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."Zero"
+		INTERSECT
+		SELECT
+			r."Zero"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."Null"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."Zero"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."One"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+
+-- PostgreSQL.12 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	NOT EXISTS(
+		SELECT
+			r."Zero"
+		INTERSECT
+		SELECT
+			r."Null"
+	)
+

@@ -1,0 +1,9 @@
+﻿-- PostgreSQL.9.3 PostgreSQL
+SELECT
+	t."FinishedOn",
+	t."StartedOn"
+FROM
+	"NullableDateTimeSub" t
+ORDER BY
+	t."Id"
+
