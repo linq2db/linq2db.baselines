@@ -38,53 +38,53 @@ SELECT "ntextDataType" FROM "AllTypes" WHERE ID = 1
 DECLARE @p Char(3) -- AnsiStringFixedLength
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(3) -- String
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Clob -- Object
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Char(3) -- StringFixedLength
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p NVarchar2(3) -- String
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p NClob -- Object
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p NVarchar2(3) -- String
 SET     @p = '123'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p NVarchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(1) -- String
 SET     @p = '1'
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 
