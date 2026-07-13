@@ -50,19 +50,19 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = 1
 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                         
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                          
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                           
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                              
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                               
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(NULL as number) FROM sys.dual
@@ -83,19 +83,19 @@ SELECT Cast(NULL as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                            
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2 -- String
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                             
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @p Int16
 SET     @p = NULL
 
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                  
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                               
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
@@ -116,6 +116,12 @@ SELECT Cast(1 as binary_double) FROM sys.dual
 DECLARE @p Int16
 SET     @p = 1
 
+SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                  
+
+-- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int16
+SET     @p = 1
+
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                   
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -123,12 +129,6 @@ DECLARE @p Int16
 SET     @p = 1
 
 SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                    
-
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 1
-
-SELECT :p FROM sys.dual                                                                                                                                                                                                                                                                                                     
 
 -- Oracle.18.Managed Oracle.Managed Oracle12
 SELECT Cast(1 as number) FROM sys.dual
