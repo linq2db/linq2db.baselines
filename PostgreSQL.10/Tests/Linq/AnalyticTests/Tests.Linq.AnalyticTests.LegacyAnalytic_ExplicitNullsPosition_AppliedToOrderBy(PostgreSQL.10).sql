@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT
+	SUM(p."Value1") OVER (ORDER BY p."Value1" NULLS FIRST)
+FROM
+	"Parent" p
+

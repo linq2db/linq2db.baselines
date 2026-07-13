@@ -1,0 +1,62 @@
+﻿-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	x."ParentID",
+	x."ChildID"
+FROM
+	"Child" x
+		LEFT JOIN (
+			SELECT
+				"a_GrandChildren"."ParentID",
+				"a_GrandChildren"."ChildID",
+				"a_GrandChildren"."GrandChildID",
+				ROW_NUMBER() OVER (PARTITION BY "a_GrandChildren"."ParentID", "a_GrandChildren"."ChildID" ORDER BY "a_GrandChildren"."ParentID") as rn
+			FROM
+				"GrandChild" "a_GrandChildren"
+		) t1 ON x."ParentID" = t1."ParentID" AND x."ChildID" = t1."ChildID" AND t1.rn = 1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
+WHERE
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				"a_Children"."ChildID"
+			FROM
+				"Child" "a_Children"
+			WHERE
+				"a_Parent"."ParentID" = "a_Children"."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
+
+-- PostgreSQL.9.2 PostgreSQL
+SELECT
+	x."ParentID",
+	x."ChildID"
+FROM
+	"Child" x
+		LEFT JOIN (
+			SELECT
+				"a_GrandChildren"."ParentID",
+				"a_GrandChildren"."ChildID",
+				"a_GrandChildren"."GrandChildID",
+				ROW_NUMBER() OVER (PARTITION BY "a_GrandChildren"."ParentID", "a_GrandChildren"."ChildID" ORDER BY "a_GrandChildren"."ParentID") as rn
+			FROM
+				"GrandChild" "a_GrandChildren"
+		) t1 ON x."ParentID" = t1."ParentID" AND x."ChildID" = t1."ChildID" AND t1.rn = 1
+		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
+WHERE
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				"a_Children"."ChildID"
+			FROM
+				"Child" "a_Children"
+			WHERE
+				"a_Parent"."ParentID" = "a_Children"."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
+

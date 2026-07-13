@@ -1,0 +1,13 @@
+﻿-- PostgreSQL.12 PostgreSQL12
+SELECT
+	t."Id",
+	(
+		SELECT
+			t1.value
+		FROM
+			UNNEST(t."StrArray") t1(value)
+		LIMIT 1
+	)
+FROM
+	"SampleClass" t
+

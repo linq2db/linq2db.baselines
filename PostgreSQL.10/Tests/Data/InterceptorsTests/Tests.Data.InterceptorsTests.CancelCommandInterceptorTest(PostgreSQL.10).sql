@@ -1,0 +1,3 @@
+﻿-- PostgreSQL.10 PostgreSQL.9.5 PostgreSQL
+SELECT * FROM generate_series(1,1000000)
+
