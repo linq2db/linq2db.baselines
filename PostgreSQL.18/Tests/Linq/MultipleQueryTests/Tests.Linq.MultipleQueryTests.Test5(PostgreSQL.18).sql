@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -13,7 +14,7 @@ FROM
 	) m_1
 		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	"a_Parent"."ParentID"
 FROM
@@ -21,4 +22,3 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON ch."ParentID" = "a_Parent"."ParentID"
 ORDER BY
 	ch."ChildID"
-

@@ -10,7 +10,8 @@ ORDER BY o."Id", s."OrderId", s."ProductId"
 
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Id",
 	o."Id",
@@ -22,9 +23,7 @@ FROM
 ORDER BY
 	m_1."Id"
 
-
-
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."Number"
@@ -32,6 +31,5 @@ FROM
 	"Orders" t1
 ORDER BY
 	t1."Id"
-
 
 
