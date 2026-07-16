@@ -10,8 +10,7 @@ FROM
 			[MasterClass] [x]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id1]
 FROM

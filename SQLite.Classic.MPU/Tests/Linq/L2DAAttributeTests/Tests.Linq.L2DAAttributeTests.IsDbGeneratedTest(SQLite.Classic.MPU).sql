@@ -26,9 +26,9 @@ VALUES
 	@MiddleName,
 	@Gender
 )
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @PersonID  -- Int32

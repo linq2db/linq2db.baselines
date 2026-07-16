@@ -9,8 +9,7 @@ FROM
 		INNER JOIN [UserDTO] [a_User] ON [a_UserPosition].[UserId] = [a_User].[UserId]
 WHERE
 	[a_UserPosition].[PositionId] = 1
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[x].[SectorId]
 FROM

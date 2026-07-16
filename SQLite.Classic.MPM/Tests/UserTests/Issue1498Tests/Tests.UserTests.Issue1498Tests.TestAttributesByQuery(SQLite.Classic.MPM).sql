@@ -34,8 +34,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[x].[Id],
 	[x].[Title],

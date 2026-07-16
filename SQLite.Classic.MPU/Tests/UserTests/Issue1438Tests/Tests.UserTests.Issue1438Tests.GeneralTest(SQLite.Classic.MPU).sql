@@ -10,9 +10,9 @@ VALUES
 (
 	@Has
 )
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
