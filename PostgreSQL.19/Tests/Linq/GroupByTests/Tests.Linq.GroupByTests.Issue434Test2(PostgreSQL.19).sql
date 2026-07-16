@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."PersonID",
 	d."PersonID",
@@ -9,7 +10,7 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	p."FirstName",
 	p."PersonID"
@@ -17,4 +18,3 @@ FROM
 	"Person" p
 WHERE
 	Lower(p."FirstName") LIKE '%test%' ESCAPE '~'
-
