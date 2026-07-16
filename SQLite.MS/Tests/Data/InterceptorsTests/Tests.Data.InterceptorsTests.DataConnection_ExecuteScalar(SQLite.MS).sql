@@ -13,9 +13,9 @@ VALUES
 (
 	1
 )
-
--- SQLite.MS SQLite
-SELECT last_insert_rowid()
+;
+SELECT
+	last_insert_rowid()
 
 -- SQLite.MS SQLite
 DROP TABLE IF EXISTS temp.[InterceptorsTestsTable]

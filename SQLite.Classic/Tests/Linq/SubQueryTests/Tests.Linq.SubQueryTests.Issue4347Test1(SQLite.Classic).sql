@@ -26,8 +26,7 @@ WHERE
 					('A'), ('B')
 				) [t1]
 	)
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

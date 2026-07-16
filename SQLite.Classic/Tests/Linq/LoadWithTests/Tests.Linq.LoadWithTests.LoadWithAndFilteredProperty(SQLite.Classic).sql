@@ -27,8 +27,7 @@ FROM
 ORDER BY
 	[m_2].[Id],
 	[d_1].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -68,8 +67,7 @@ FROM
 ORDER BY
 	[m_2].[Id],
 	[d_1].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -118,8 +116,7 @@ FROM
 ORDER BY
 	[m_2].[Id_1],
 	[d_2].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -140,8 +137,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -190,8 +186,7 @@ FROM
 ORDER BY
 	[m_2].[Id_1],
 	[d_2].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -212,8 +207,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -244,8 +238,7 @@ WHERE
 	[d].[ParentId] % 2 = 0 AND [d].[Value] LIKE 'Sub1~_%' ESCAPE '~'
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

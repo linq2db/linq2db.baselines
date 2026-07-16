@@ -21,10 +21,7 @@ FROM
 		INNER JOIN [Products] [o] ON [o].[Id] = [d].[ProductId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[Id],
 	[t1].[Number]

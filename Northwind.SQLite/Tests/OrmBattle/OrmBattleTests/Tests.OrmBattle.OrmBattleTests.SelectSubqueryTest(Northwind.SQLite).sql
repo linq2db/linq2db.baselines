@@ -21,8 +21,7 @@ FROM
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 	) [m_1]
 		INNER JOIN [Customers] [d] ON [d].[CustomerID] = [m_1].[CustomerID]
-
--- Northwind.SQLite SQLite.Classic SQLite
+;
 SELECT
 	[a_Customer].[CustomerID]
 FROM

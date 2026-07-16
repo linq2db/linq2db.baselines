@@ -46,8 +46,7 @@ FROM
 				THEN 1
 			ELSE 0
 		END)
-
--- Northwind.SQLite SQLite.Classic SQLite
+;
 SELECT DISTINCT
 	CASE
 		WHEN [t2].[Average] >= 80 THEN 1

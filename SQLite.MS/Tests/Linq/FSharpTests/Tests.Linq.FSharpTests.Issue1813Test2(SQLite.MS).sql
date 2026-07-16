@@ -59,8 +59,7 @@ FROM
 		INNER JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]

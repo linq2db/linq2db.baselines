@@ -19,8 +19,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

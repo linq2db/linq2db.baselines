@@ -49,8 +49,7 @@ FROM
 			[MasterClass] [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],

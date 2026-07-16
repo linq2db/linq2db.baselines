@@ -15,8 +15,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value],
