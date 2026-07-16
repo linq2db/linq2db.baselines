@@ -41,9 +41,8 @@ VALUES
 )
 
 -- SqlServer.2025.MS SqlServer.2025
-DECLARE @tz NVarChar(4000) -- String
-SET     @tz = N'UTC'
-
+-- Batch 1
+-- tz = UTC
 SELECT
 	[m_1].[key_1],
 	[d].[Id],
@@ -90,7 +89,7 @@ FROM
 ORDER BY
 	[d].[count_1] DESC
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT
 	[group_1].[key_1]
 FROM
@@ -104,4 +103,3 @@ FROM
 	) [group_1]
 ORDER BY
 	[group_1].[ReferenceId]
-
