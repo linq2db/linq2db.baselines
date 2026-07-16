@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -13,11 +14,10 @@ FROM
 	) `m_1`
 		INNER JOIN `EntityD` `d` ON `m_1`.`Id` = `d`.`FK`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`e`.`Id`,
 	`a_ObjectB`.`Id`
 FROM
 	`EntityA` `e`
 		INNER JOIN `EntityB` `a_ObjectB` ON `e`.`FK` = `a_ObjectB`.`Id`
-

@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (
@@ -34,7 +35,7 @@ FROM
 	) `m_1`
 		INNER JOIN `cte` `d` ON `m_1`.`Key_1` = Coalesce(`d`.`ParentID`, -1)
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 WITH RECURSIVE `cte` (`ChildID`, `ParentID`, `GrandChildID`)
 AS
 (
@@ -60,4 +61,3 @@ SELECT DISTINCT
 	Coalesce(`t1`.`ParentID`, -1)
 FROM
 	`cte` `t1`
-

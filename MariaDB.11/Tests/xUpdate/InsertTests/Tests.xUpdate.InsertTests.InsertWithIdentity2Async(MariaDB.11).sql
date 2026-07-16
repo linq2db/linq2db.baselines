@@ -5,7 +5,8 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -19,9 +20,9 @@ VALUES
 	'M'
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
 	`p`.`FirstName`,

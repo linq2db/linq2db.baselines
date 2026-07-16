@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`CategoryID`,
 	`d`.`ProductID`,
@@ -9,11 +10,10 @@ FROM
 	`Categories` `m_1`
 		INNER JOIN `Products` `d` ON `m_1`.`CategoryID` = `d`.`CategoryID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`CategoryID`,
 	`t1`.`CategoryName`,
 	`t1`.`Description`
 FROM
 	`Categories` `t1`
-

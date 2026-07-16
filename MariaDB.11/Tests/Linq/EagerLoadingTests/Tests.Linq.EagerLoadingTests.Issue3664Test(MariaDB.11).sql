@@ -11,10 +11,9 @@ VALUES
 	@Id
 )
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @id Int32
-SET     @id = 11
-
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
+-- id = 11
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -25,16 +24,14 @@ FROM
 WHERE
 	`d`.`Id` = @id
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`Id`
 FROM
 	`Test3664` `t1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-DECLARE @id Int32
-SET     @id = 12
-
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
+-- id = 12
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -45,9 +42,8 @@ FROM
 WHERE
 	`d`.`Id` = @id
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`Id`
 FROM
 	`Test3664` `t1`
-
