@@ -59,8 +59,7 @@ FROM
 		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
 ORDER BY
 	[m_1].[Id]
-
--- SqlServer.2022
+;
 SELECT
 	[after_1].[Id],
 	[after_1].[Name]
