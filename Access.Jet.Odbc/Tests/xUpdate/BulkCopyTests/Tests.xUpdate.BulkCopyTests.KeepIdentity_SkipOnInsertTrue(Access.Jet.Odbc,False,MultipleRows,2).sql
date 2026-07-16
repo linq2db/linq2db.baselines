@@ -12,7 +12,8 @@ VALUES
 )
 
 -- Access.Jet.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Jet.Odbc AccessODBC
 DECLARE @Value Int -- Int32
