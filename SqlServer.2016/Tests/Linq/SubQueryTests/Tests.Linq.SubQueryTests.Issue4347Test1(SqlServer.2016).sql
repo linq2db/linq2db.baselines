@@ -23,8 +23,7 @@ WHERE
 				(N'A'), (N'B')
 			) [t1]([item])
 	)
-
--- SqlServer.2016
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]
