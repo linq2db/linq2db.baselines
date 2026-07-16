@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
+-- Batch 1
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	[m_1].[Id],
 	[m_1].[Id],
@@ -19,14 +18,11 @@ FROM
 WHERE
 	@testedList = [m_1].[Value2]
 
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
+-- Batch 2
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	[g_1].[Id]
 FROM
 	[ValueConversion] [g_1]
 WHERE
 	@testedList = [g_1].[Value2]
-

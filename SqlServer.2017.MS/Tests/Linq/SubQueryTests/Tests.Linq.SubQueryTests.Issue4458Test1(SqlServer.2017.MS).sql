@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -20,7 +21,7 @@ ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
 
--- SqlServer.2017.MS SqlServer.2017
+-- Batch 2
 SELECT
 	[i].[Id],
 	(
@@ -44,7 +45,6 @@ WHERE
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
-
 -- SqlServer.2017.MS SqlServer.2017
 SELECT
 	[t1].[Id]

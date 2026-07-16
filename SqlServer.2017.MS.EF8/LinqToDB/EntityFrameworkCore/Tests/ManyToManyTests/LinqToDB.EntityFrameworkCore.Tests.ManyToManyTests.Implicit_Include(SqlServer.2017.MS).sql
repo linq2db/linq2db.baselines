@@ -21,10 +21,7 @@ FROM
 		INNER JOIN [Courses] [o] ON [o].[Id] = [d].[CoursesId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SqlServer.2017
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]
