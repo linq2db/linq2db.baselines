@@ -37,12 +37,10 @@ CREATE TABLE issue_4254_media_item_to_media_item_categories
 	CONSTRAINT "PK_issue_4254_media_item_to_media_item_categories" PRIMARY KEY (id)
 )
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-
+-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
+-- userId = bc7b663d-0fde-4327-8f92-5d8cc3a11d11
+-- now = 02/29/2020 17:54:55
 SELECT
 	m_1.id,
 	d.category_id
@@ -58,8 +56,7 @@ WHERE
 		WHERE
 			m_1.id = y.media_item_id AND y.user_id = :userId AND
 			y.expires_at > :now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -69,12 +66,9 @@ WHERE
 			y_1.expires_at > :now
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
-
+-- Batch 2
+-- now = 02/29/2020 17:54:55
+-- userId = bc7b663d-0fde-4327-8f92-5d8cc3a11d11
 SELECT
 	x.id,
 	EXISTS(
@@ -96,8 +90,7 @@ WHERE
 		WHERE
 			x.id = y_1.media_item_id AND y_1.user_id = :userId AND
 			y_1.expires_at > :now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -106,13 +99,10 @@ WHERE
 			x.id = y_2.media_item_id AND y_2.created_by_id = :userId AND
 			y_2.expires_at > :now
 	)
-
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-
+-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
+-- userId = a948600d-de21-4f74-8ac2-9516b287076e
+-- now = 02/29/2020 17:54:55
 SELECT
 	m_1.id,
 	d.category_id
@@ -128,8 +118,7 @@ WHERE
 		WHERE
 			m_1.id = y.media_item_id AND y.user_id = :userId AND
 			y.expires_at > :now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -139,12 +128,9 @@ WHERE
 			y_1.expires_at > :now
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @now Timestamp -- DateTime2
-SET     @now = '2020-02-29 17:54:55.123'::timestamp
-DECLARE @userId Uuid -- Guid
-SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
-
+-- Batch 2
+-- now = 02/29/2020 17:54:55
+-- userId = a948600d-de21-4f74-8ac2-9516b287076e
 SELECT
 	x.id,
 	EXISTS(
@@ -166,8 +152,7 @@ WHERE
 		WHERE
 			x.id = y_1.media_item_id AND y_1.user_id = :userId AND
 			y_1.expires_at > :now
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
@@ -176,7 +161,6 @@ WHERE
 			x.id = y_2.media_item_id AND y_2.created_by_id = :userId AND
 			y_2.expires_at > :now
 	)
-
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 DROP TABLE IF EXISTS issue_4254_media_item_to_media_item_categories
 

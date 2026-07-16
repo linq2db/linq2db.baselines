@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @TypedProperty Text(4) -- String
-SET     @TypedProperty = '%de%'
-
+﻿-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
+-- TypedProperty = %de%
 SELECT
 	m_1."ID",
 	m_1."ValS",
@@ -22,10 +21,8 @@ WHERE
 			m_1."ValS" IS NOT NULL
 	)
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @TypedProperty Text(4) -- String
-SET     @TypedProperty = '%de%'
-
+-- Batch 2
+-- TypedProperty = %de%
 SELECT
 	it."ID",
 	it."ValB",
@@ -43,4 +40,3 @@ WHERE
 			it."ID" = c_1."ParentId" AND it."ValS" LIKE :TypedProperty ESCAPE '~' AND
 			it."ValS" IS NOT NULL
 	)
-
