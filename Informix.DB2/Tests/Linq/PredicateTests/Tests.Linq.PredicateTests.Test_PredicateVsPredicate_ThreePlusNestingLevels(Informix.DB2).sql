@@ -20,7 +20,7 @@ WHERE
 		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN CASE
-			WHEN r.Value4 = r.Value5 OR r.Value4 IS NULL AND r.Value5 IS NULL
+			WHEN (r.Value4 = r.Value5 OR r.Value4 IS NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL)
 				THEN 't'::BOOLEAN
 			ELSE 'f'::BOOLEAN
 		END = CASE
@@ -213,7 +213,7 @@ WHERE
 			WHEN r.Value4 <> r.Value1 OR r.Value4 IS NULL THEN 't'::BOOLEAN
 			ELSE 'f'::BOOLEAN
 		END = CASE
-			WHEN r.Value4 = r.Value5 OR r.Value4 IS NULL AND r.Value5 IS NULL
+			WHEN (r.Value4 = r.Value5 OR r.Value4 IS NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL)
 				THEN 't'::BOOLEAN
 			ELSE 'f'::BOOLEAN
 		END
