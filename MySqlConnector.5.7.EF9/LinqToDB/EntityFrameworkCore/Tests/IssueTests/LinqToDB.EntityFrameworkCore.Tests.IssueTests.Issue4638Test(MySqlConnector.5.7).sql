@@ -1,6 +1,7 @@
 ﻿
 
--- MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`CfAllowValue`,
@@ -17,14 +18,11 @@ FROM
 ORDER BY
 	`d`.`DateFrom`
 
-
-
--- MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`p`.`AclNameId`
 FROM
 	`Issue4624Items` `p`
 LIMIT 1
-
 
 

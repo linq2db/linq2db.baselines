@@ -20,8 +20,7 @@ DELETE
 FROM
 	`Parent`
 WHERE
-	`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR
-	`Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL
+	`Parent`.`ParentID` = 1000 AND `Parent`.`Value1` IS NULL OR `Parent`.`ParentID` = 1001 AND `Parent`.`Value1` IS NULL
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DELETE  

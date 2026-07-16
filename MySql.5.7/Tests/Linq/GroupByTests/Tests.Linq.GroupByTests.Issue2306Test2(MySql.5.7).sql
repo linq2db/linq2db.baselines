@@ -8,8 +8,7 @@ SELECT
 	`m_1`.`Gender`
 FROM
 	`Person` `m_1`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`PersonID`
 FROM
@@ -25,8 +24,7 @@ SELECT
 	`m_1`.`Gender`
 FROM
 	`Person` `m_1`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`PersonID`
 FROM

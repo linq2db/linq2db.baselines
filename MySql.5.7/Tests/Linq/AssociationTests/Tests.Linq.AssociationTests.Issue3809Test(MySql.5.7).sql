@@ -23,8 +23,7 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 ORDER BY
 	`d`.`ChildID`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`a`.`ParentID`,
 	`a_ParentTest`.`ParentID`
