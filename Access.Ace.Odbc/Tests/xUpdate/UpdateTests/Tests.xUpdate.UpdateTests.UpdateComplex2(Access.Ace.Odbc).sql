@@ -24,7 +24,8 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-SELECT @@IDENTITY
+SELECT
+	@@IDENTITY
 
 -- Access.Ace.Odbc AccessODBC
 UPDATE
