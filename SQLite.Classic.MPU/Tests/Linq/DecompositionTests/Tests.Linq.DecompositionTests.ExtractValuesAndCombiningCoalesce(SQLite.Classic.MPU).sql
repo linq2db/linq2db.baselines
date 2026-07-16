@@ -92,8 +92,7 @@ FROM
 			[Item] [x]
 	) [x_1]
 WHERE
-	[x_1].[Color] AND ([x_1].[Color_1] AND [x_1].[Color_2] OR NOT [x_1].[Color_1]) OR
-	NOT [x_1].[Color] AND NOT [x_1].[Color_4]
+	[x_1].[Color] AND ([x_1].[Color_1] AND [x_1].[Color_2] OR NOT [x_1].[Color_1]) OR NOT [x_1].[Color] AND NOT [x_1].[Color_4]
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 SELECT

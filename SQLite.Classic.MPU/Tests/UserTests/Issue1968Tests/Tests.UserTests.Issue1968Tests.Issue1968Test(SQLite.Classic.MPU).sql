@@ -103,8 +103,7 @@ FROM
 			[University] [t1]
 	) [m_1]
 		INNER JOIN [Faculty] [d] ON [m_1].[Id] = [d].[UniversityId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[SubjectId],
@@ -127,8 +126,7 @@ FROM
 			WHERE
 				[m_2].[Id] = [m_1].[UniversityId] AND [m_1].[Id] = [d].[FacultyId]
 		)
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name],

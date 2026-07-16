@@ -30,8 +30,7 @@ FROM
 				INNER JOIN [Patient] [p_1] ON [t2].[Id] = [p_1].[PersonID]
 	) [m_1]
 		INNER JOIN [Person] [d] ON [d].[PersonID] = [m_1].[Id]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 WITH [cte] ([Id])
 AS
 (

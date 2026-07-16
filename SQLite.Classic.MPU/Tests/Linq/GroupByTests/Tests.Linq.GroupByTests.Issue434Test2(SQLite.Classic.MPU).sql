@@ -8,8 +8,7 @@ FROM
 		INNER JOIN [Patient] [d] ON [m_1].[PersonID] = [d].[PersonID]
 WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]

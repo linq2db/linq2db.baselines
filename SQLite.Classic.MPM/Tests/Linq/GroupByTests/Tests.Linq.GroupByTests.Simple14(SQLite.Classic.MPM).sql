@@ -15,8 +15,7 @@ FROM
 			FROM
 				[Child] [d]
 		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[p].[ParentID]
 FROM
