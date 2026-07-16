@@ -23,8 +23,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + 18)) OR
-	r.Value4 IS NULL AND r.Value5 IS NULL
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NULL
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -53,8 +52,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + 18)) OR
-	r.Value4 IS NULL AND r.Value5 IS NULL
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NULL
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -265,8 +263,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + 18)) OR
-	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 -- ClickHouse.MySql ClickHouse
 SELECT
@@ -295,8 +292,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + 18)) OR
-	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 -- ClickHouse.MySql ClickHouse
 SELECT
