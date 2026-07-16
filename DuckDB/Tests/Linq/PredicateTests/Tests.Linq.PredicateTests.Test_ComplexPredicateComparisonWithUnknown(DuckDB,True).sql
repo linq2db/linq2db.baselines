@@ -26,8 +26,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + $cnt)) OR
-	r.Value4 IS NULL AND r.Value5 IS NULL
+	) = (r.Value5 + $cnt)) OR r.Value4 IS NULL AND r.Value5 IS NULL
 
 -- DuckDB
 SELECT
@@ -59,8 +58,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + $cnt)) OR
-	r.Value4 IS NULL AND r.Value5 IS NULL
+	) = (r.Value5 + $cnt)) OR r.Value4 IS NULL AND r.Value5 IS NULL
 
 -- DuckDB
 SELECT
@@ -292,8 +290,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + $cnt)) OR
-	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
+	) = (r.Value5 + $cnt)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 -- DuckDB
 SELECT
@@ -325,8 +322,7 @@ WHERE
 			BooleanTable r_1
 		WHERE
 			r_1.Value1 = 1
-	) = (r.Value5 + $cnt)) OR
-	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
+	) = (r.Value5 + $cnt)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 -- DuckDB
 SELECT
