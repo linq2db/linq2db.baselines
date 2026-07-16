@@ -40,11 +40,7 @@ FROM
 			WHERE
 				[d].[Id] = [m_1].[Id]
 		) [d_1]
-
--- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -62,11 +58,7 @@ FROM
 			) [t1]
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
-
--- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
-
+;
 SELECT TOP (@take)
 	[e].[Id],
 	[t1].[Id],
