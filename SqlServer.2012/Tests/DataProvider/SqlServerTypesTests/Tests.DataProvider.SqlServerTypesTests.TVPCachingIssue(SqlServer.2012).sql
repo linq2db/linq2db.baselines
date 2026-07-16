@@ -15,11 +15,7 @@ WHERE
 		FROM
 			@table [x]
 	)
-
--- SqlServer.2012
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+;
 SELECT
 	[p1].[PersonID]
 FROM
@@ -49,11 +45,7 @@ WHERE
 		FROM
 			@table [x]
 	)
-
--- SqlServer.2012
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+;
 SELECT
 	[p1].[PersonID]
 FROM
@@ -83,11 +75,7 @@ WHERE
 		FROM
 			@table [x]
 	)
-
--- SqlServer.2012
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+;
 SELECT
 	[p1].[PersonID]
 FROM
@@ -117,11 +105,7 @@ WHERE
 		FROM
 			@table [x]
 	)
-
--- SqlServer.2012
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+;
 SELECT
 	[p1].[PersonID]
 FROM
