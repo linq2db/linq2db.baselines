@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Name"
@@ -19,7 +20,7 @@ FROM
 	) m_1
 		INNER JOIN "Test3799Item" d ON m_1."Id" = d."ParentId"
 
--- PostgreSQL.15 PostgreSQL12
+-- Batch 2
 SELECT
 	item_1."Name",
 	t1."Name",
@@ -36,4 +37,3 @@ FROM
 				item_1."Id" = "a_Children"."ParentId"
 			LIMIT 1
 		) t1 ON 1=1
-
