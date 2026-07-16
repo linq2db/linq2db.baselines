@@ -17,7 +17,8 @@ FROM
 ORDER BY
 	c_2."ChildID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."ParentID",
 	d."ParentID",
@@ -31,10 +32,9 @@ FROM
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."ParentID",
 	t1."Value1"
 FROM
 	"Parent" t1
-
