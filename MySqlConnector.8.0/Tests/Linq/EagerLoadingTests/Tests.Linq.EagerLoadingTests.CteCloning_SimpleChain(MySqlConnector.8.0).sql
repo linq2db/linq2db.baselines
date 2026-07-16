@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 WITH `CTE_1` (`Id`)
 AS
 (
@@ -41,7 +42,7 @@ FROM
 	) `m_1`
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 WITH `CTE_1`
 (
 	`Id`,
@@ -109,4 +110,3 @@ SELECT
 FROM
 	`CTE_3` `t1`
 		LEFT JOIN `CteChildTable` `d` ON `t1`.`Value4` = `d`.`Id`
-

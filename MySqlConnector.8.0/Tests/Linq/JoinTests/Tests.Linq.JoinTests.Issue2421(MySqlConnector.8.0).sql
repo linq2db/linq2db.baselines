@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`SectorId`,
 	`a_User`.`UserId`
@@ -10,9 +11,8 @@ FROM
 WHERE
 	`a_UserPosition`.`PositionId` = 1
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`x`.`SectorId`
 FROM
 	`SectorDTO` `x`
-

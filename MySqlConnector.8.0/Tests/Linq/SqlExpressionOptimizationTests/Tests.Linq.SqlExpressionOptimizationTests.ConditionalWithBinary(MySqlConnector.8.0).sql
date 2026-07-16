@@ -1786,8 +1786,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR
-	`swap`.`IntVlaue` < 4
+	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR `swap`.`IntVlaue` < 4
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
