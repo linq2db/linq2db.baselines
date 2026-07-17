@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[CustomerID],
 	[m_1].[Key_1],
@@ -50,7 +51,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Orders] [d_4] ON [m_1].[CustomerID] = [d_4].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_4].[OrderDate] IS NULL) AND ([m_1].[Key_2] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Key_2] IS NULL AND [d_4].[OrderDate] IS NULL)
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[m_1].[CustomerID],
 	[m_1].[Key_1],
@@ -81,7 +82,7 @@ FROM
 				[m_1].[CustomerID] = [d_2].[CustomerID] AND ([m_1].[Key_1] = DatePart(year, [d_2].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d_2].[OrderDate] IS NULL)
 		) [d_3]
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 3
 SELECT
 	[m_1].[CustomerID],
 	[d_1].[Key_1]
@@ -96,10 +97,9 @@ FROM
 				[m_1].[CustomerID] = [d].[CustomerID]
 		) [d_1]
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 4
 SELECT
 	[c_1].[CompanyName],
 	[c_1].[CustomerID]
 FROM
 	[Customers] [c_1]
-
