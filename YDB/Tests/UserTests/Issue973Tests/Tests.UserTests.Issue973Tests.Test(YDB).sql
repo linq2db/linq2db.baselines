@@ -32,8 +32,7 @@ SELECT
 FROM
 	Parent o
 WHERE
-	(o.ParentID IN ($Ids0_1, $Ids0_2, $Ids0_3) OR o.ParentID IS NULL) OR
-	o.ParentID = $param
+	(o.ParentID IN ($Ids0_1, $Ids0_2, $Ids0_3) OR o.ParentID IS NULL) OR o.ParentID = $param
 
 -- YDB Ydb
 DECLARE $p Int32
@@ -69,6 +68,5 @@ SELECT
 FROM
 	Parent o
 WHERE
-	(o.ParentID IN ($Ids0_1, $Ids0_2, $Ids0_3) OR o.ParentID IS NULL) OR
-	o.ParentID = $param
+	(o.ParentID IN ($Ids0_1, $Ids0_2, $Ids0_3) OR o.ParentID IS NULL) OR o.ParentID = $param
 
