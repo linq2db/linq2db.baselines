@@ -21,8 +21,7 @@ FROM
 			GROUP BY
 				[d].[ParentID]
 		) [d_1]
-
--- SqlServer.2017
+;
 SELECT
 	[c_1].[ParentID]
 FROM

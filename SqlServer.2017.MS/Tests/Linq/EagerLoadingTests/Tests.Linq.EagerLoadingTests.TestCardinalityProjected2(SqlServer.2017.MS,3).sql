@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -15,7 +16,7 @@ FROM
 	) [m_1]
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
 
--- SqlServer.2017.MS SqlServer.2017
+-- Batch 2
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -26,9 +27,8 @@ FROM
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
 		LEFT JOIN [EntityMD] [a_ObjectD] ON [d].[FKD] = [a_ObjectD].[Id]
 
--- SqlServer.2017.MS SqlServer.2017
+-- Batch 3
 SELECT
 	[e].[Id]
 FROM
 	[EntityMA] [e]
-
