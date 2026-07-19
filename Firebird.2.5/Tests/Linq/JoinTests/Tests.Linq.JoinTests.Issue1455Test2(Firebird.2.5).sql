@@ -190,8 +190,6 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = "trade_1"."DealId"
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = "nomin_1"."CargoId"
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-			"trade_1"."CounterParty" LIKE @DeliveryCounterParty OR
-			"al_group_1"."AlertCode" LIKE @DeliveryCounterParty
+			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_1"."CounterParty" LIKE @DeliveryCounterParty OR "al_group_1"."AlertCode" LIKE @DeliveryCounterParty
 	) "al_group_2"
 
