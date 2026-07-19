@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -15,15 +16,15 @@ FROM
 WHERE
 	`d`.`ParentID` IN (2)
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (2)
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`GrandChildID`
@@ -40,11 +41,10 @@ FROM
 WHERE
 	`d`.`ParentID` IN (3)
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT DISTINCT
 	`x`.`ChildID`
 FROM
 	`GrandChild` `x`
 WHERE
 	`x`.`ParentID` IN (3)
-

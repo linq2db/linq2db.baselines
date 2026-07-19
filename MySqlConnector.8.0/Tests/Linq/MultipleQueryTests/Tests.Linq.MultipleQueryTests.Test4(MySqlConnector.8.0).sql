@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`
@@ -13,11 +14,10 @@ FROM
 ORDER BY
 	`m_1`.`ParentID`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
 ORDER BY
 	`p`.`ParentID`
-
