@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -21,7 +22,7 @@ ORDER BY
 	m_1."Id",
 	m_1."Id_1"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	m_1."Id",
 	d."Id",
@@ -33,7 +34,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 3
 SELECT
 	c_1."Id",
 	c_1."Name"
@@ -41,4 +42,3 @@ FROM
 	"Company" c_1
 ORDER BY
 	c_1."Id"
-
