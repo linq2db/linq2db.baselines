@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[a_Documents].[Name]
@@ -25,7 +26,7 @@ FROM
 		INNER JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
--- SqlServer.2014.MS SqlServer.2014
+-- Batch 2
 SELECT
 	[t1].[not_null],
 	[t1].[Id]
@@ -45,4 +46,3 @@ FROM
 			WHERE
 				[a_Admin].[Id] = [a_EmailAdminAssociations].[AdminId]
 		) [t1]
-
