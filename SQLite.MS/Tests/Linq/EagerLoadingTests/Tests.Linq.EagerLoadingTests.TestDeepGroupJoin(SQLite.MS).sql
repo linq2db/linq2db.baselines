@@ -23,11 +23,7 @@ FROM
 			) [t1]
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
-
--- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_2].[Id1],
 	[d].[Id1],
@@ -50,11 +46,7 @@ FROM
 			) [t1]
 	) [m_2]
 		INNER JOIN [MasterClass] [d] ON [m_2].[Id1] = [d].[Id1]
-
--- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
-
+;
 SELECT
 	[m_1].[Id1]
 FROM

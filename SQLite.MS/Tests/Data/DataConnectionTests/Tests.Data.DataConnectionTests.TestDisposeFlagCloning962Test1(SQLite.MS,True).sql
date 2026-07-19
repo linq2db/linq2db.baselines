@@ -8,8 +8,7 @@ SELECT
 FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[CategoryID],
 	[t1].[CategoryName],

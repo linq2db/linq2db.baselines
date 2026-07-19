@@ -16,10 +16,7 @@ FROM
 		INNER JOIN [Issue4624Items] [d] ON [m_1].[Key_1] = [d].[AclNameId]
 ORDER BY
 	[d].[DateFrom]
-
-
-
--- SQLite.MS SQLite
+;
 SELECT
 	[p].[AclNameId]
 FROM

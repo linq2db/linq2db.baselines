@@ -21,8 +21,7 @@ FROM
 			VALUES
 				(1), (2), (3), (4), (5), (6), (7)
 			) [d] ON [d].[ParentID] = [m_1].[ParentID]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[ParentID]
 FROM
