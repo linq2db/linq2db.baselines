@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -15,10 +16,9 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- Batch 2
 SELECT TOP (1)
 	[t].[ParentID],
 	[t].[Value1]
 FROM
 	[Parent] [t]
-

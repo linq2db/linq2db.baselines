@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[ArrayString],
 	[d].[value]
@@ -20,7 +21,7 @@ FROM
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[r].[Id],
 	[r].[ArrayString]
@@ -37,4 +38,3 @@ WHERE
 	)
 ORDER BY
 	[r].[Id]
-
