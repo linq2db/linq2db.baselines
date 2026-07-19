@@ -14,16 +14,14 @@ FROM
 				INNER JOIN [EntityMB] [d] ON [e].[Id] = [d].[FK]
 	) [m_1]
 		INNER JOIN [EntityMC] [d_1] ON [m_1].[Id] = [d_1].[FK]
-
--- SqlServer.2008
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id]
 FROM
 	[EntityMA] [m_1]
 		INNER JOIN [EntityMB] [d] ON [m_1].[Id] = [d].[FK]
-
--- SqlServer.2008
+;
 SELECT
 	[e].[Id]
 FROM

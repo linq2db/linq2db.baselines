@@ -48,11 +48,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[c1]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 6
-
+;
 SELECT
 	[t2].[BookType],
 	[t2].[Authors],
@@ -100,8 +96,7 @@ FROM
 	[Book] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SqlServer.2008
+;
 SELECT
 	[t1].[Discriminator],
 	[t1].[BookId],

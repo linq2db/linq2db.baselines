@@ -19,8 +19,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SqlServer.2008
+;
 SELECT
 	[i].[Id],
 	(

@@ -34,8 +34,7 @@ ORDER BY
 		WHEN [m_1].[C1] <> N'T' THEN [d].[Name3]
 		ELSE N''
 	END
-
--- SqlServer.2008
+;
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]
