@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."SectorId",
 	"a_User"."UserId"
@@ -10,9 +11,8 @@ FROM
 WHERE
 	"a_UserPosition"."PositionId" = 1
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- Batch 2
 SELECT
 	x."SectorId"
 FROM
 	"SectorDTO" x
-
