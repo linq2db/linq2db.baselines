@@ -23,8 +23,7 @@ SELECT
 FROM
 	`ConcatParent` `m_1`
 		INNER JOIN `ConcatChild` `d` ON `m_1`.`Id` = `d`.`ParentId`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`

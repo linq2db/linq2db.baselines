@@ -13,8 +13,7 @@ FROM
 				LEFT JOIN `EntityB` `a_ObjectBOptional` ON `e`.`FK` = `a_ObjectBOptional`.`Id`
 	) `m_1`
 		INNER JOIN `EntityD` `d` ON `m_1`.`Id` = `d`.`FK`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`e`.`Id`,
 	`a_ObjectBOptional`.`Id`,

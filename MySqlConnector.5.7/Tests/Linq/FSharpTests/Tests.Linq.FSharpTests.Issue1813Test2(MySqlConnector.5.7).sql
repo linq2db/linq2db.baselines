@@ -49,7 +49,8 @@ VALUES
 	@Text
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -60,7 +61,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`
@@ -68,4 +69,3 @@ FROM
 	`Names` `after_1`
 ORDER BY
 	`after_1`.`Id`
-

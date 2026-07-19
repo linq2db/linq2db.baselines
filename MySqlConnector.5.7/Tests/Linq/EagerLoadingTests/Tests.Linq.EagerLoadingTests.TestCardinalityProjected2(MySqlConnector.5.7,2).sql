@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -9,9 +10,8 @@ FROM
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 		LEFT JOIN `EntityMD` `a_ObjectD` ON `d`.`FKD` = `a_ObjectD`.`Id`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`e`.`Id`
 FROM
 	`EntityMA` `e`
-

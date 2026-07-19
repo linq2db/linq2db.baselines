@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -13,7 +14,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`r_2`.`ParentID`,
 	`r_2`.`ChildID`,
@@ -49,8 +50,8 @@ FROM
 	) `r_2`
 ORDER BY
 	`r_2`.`Count_1`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -65,7 +66,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`,
@@ -74,4 +75,3 @@ SELECT
 FROM
 	`Child` `t1`
 		LEFT JOIN `Parent` `a_Parent` ON `t1`.`ParentID` = `a_Parent`.`ParentID`
-

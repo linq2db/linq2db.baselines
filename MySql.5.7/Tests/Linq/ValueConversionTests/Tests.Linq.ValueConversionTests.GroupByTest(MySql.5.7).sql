@@ -18,11 +18,7 @@ FROM
 	`ValueConversion` `m_1`
 WHERE
 	@testedList = `m_1`.`Value2`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+;
 SELECT
 	`g_1`.`Id`
 FROM

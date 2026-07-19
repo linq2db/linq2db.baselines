@@ -23,8 +23,7 @@ FROM
 			END
 			ELSE '3'
 		END
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT DISTINCT
 	CASE
 		WHEN `g_1`.`ParentID` > 2 THEN CASE

@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @n Int32
-SET     @n = 1
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- n = 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -17,7 +16,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` + @n = `d`.`ParentID`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
@@ -25,4 +24,3 @@ FROM
 	`Parent` `p`
 WHERE
 	`p`.`ParentID` = 1
-

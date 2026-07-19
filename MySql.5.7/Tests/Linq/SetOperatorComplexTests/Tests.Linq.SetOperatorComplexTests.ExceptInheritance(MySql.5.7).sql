@@ -38,8 +38,7 @@ FROM
 	`Author` `m_1`
 		INNER JOIN `BookAuthor` `d` ON `d`.`FkAuthorId` = `m_1`.`AuthorId`
 		LEFT JOIN `Book` `a_Book` ON `d`.`FkBookId` = `a_Book`.`BookId`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`AuthorId`,
 	`t1`.`AuthorName`

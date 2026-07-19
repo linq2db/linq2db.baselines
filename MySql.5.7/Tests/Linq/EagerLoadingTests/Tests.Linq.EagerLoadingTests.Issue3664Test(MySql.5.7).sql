@@ -24,8 +24,7 @@ FROM
 		INNER JOIN `Test3664Item` `d` ON `m_1`.`Id` = `d`.`TestId`
 WHERE
 	`d`.`Id` = @id
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`Id`
 FROM
@@ -44,8 +43,7 @@ FROM
 		INNER JOIN `Test3664Item` `d` ON `m_1`.`Id` = `d`.`TestId`
 WHERE
 	`d`.`Id` = @id
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`Id`
 FROM
