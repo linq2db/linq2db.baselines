@@ -27,8 +27,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 = r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value4 IS NULL AND r_1.Value5 IS NULL
+	(r_1.Value1 = r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
@@ -61,8 +60,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 <> r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value4 IS NULL AND r_1.Value5 IS NULL
+	(r_1.Value1 <> r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
@@ -161,7 +159,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	((1=1)) = (((r_1.Value1 = r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL) AND NOT (r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
+	((1=1)) = (((r_1.Value1 = r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
 SELECT
@@ -194,7 +192,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	((1=1)) = (((r_1.Value1 <> r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL) AND NOT (r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
+	((1=1)) = (((r_1.Value1 <> r_1.Value4) = (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NULL) AND NOT (r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL))
 
 -- YDB Ydb
 SELECT
@@ -293,8 +291,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 = r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
+	(r_1.Value1 = r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
@@ -327,8 +324,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 <> r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
+	(r_1.Value1 <> r_1.Value4) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value4 IS NULL AND r_1.Value5 IS NOT NULL OR r_1.Value4 IS NOT NULL AND r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
@@ -361,8 +357,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 = r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value5 IS NULL
+	(r_1.Value1 = r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
@@ -395,8 +390,7 @@ SELECT
 FROM
 	BooleanTable r_1
 WHERE
-	(r_1.Value1 <> r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR
-	r_1.Value5 IS NULL
+	(r_1.Value1 <> r_1.Value2) <> (($CTE_1) = (r_1.Value5 + $cnt)) OR r_1.Value5 IS NULL
 
 -- YDB Ydb
 SELECT
