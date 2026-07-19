@@ -11,10 +11,9 @@ VALUES
 	:Id
 )
 
--- PostgreSQL.19 PostgreSQL12
-DECLARE @id Integer -- Int32
-SET     @id = 11
-
+-- PostgreSQL.19
+-- Batch 1
+-- id = 11
 SELECT
 	m_1."Id",
 	d."Id",
@@ -25,16 +24,14 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-
--- PostgreSQL.19 PostgreSQL12
-DECLARE @id Integer -- Int32
-SET     @id = 12
-
+-- PostgreSQL.19
+-- Batch 1
+-- id = 12
 SELECT
 	m_1."Id",
 	d."Id",
@@ -45,9 +42,8 @@ FROM
 WHERE
 	d."Id" = :id
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-

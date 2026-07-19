@@ -8,7 +8,8 @@ FROM
 GROUP BY
 	g_1."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -19,10 +20,9 @@ FROM
 	"Item" m_1
 		INNER JOIN "ItemValue" d ON m_1."Id" = d."ItemId"
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id",
 	t1."Name"
 FROM
 	"Item" t1
-
