@@ -19,7 +19,8 @@ VALUES
 	:Text
 )
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id"
@@ -35,7 +36,7 @@ FROM
 	) m_1
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
 
--- PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	x."Id",
 	x."Title",
@@ -45,4 +46,3 @@ FROM
 WHERE
 	x."Id" = 6
 LIMIT 1
-

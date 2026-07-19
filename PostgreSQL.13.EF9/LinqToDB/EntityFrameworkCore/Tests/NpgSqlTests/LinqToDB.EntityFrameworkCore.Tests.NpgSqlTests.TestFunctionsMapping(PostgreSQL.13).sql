@@ -17,11 +17,7 @@ SELECT
 FROM
 	"Events" e
 WHERE
-	e."Duration" @> :date OR
-	lower(e."Duration") = :date OR
-	upper(e."Duration") = :date OR
-	isempty(e."Duration") OR
-	isempty(e."Duration" * e."Duration")
+	e."Duration" @> :date OR lower(e."Duration") = :date OR upper(e."Duration") = :date OR isempty(e."Duration") OR isempty(e."Duration" * e."Duration")
 
 
 
