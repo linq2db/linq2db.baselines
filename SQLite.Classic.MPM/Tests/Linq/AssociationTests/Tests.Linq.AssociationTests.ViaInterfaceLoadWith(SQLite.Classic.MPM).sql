@@ -6,8 +6,7 @@ SELECT
 FROM
 	[MainEntity] [m_1]
 		INNER JOIN [SubEntity] [d] ON [m_1].[Id] = [d].[MainEntityId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[t1].[Id]
 FROM

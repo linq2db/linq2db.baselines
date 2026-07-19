@@ -14,8 +14,7 @@ FROM
 			[Person] [t1]
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[FirstName]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT DISTINCT
 	[t1].[FirstName]
 FROM

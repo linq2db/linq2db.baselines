@@ -36,13 +36,7 @@ FROM
 		LEFT JOIN [ext_translations] [description] ON CAST([equipment].[id] AS NVarChar(11)) = [description].[foreign_key] AND [description].[locale] = @currentLanguage AND [description].[object_class] = @Equipment AND [description].[field] = 'name'
 ORDER BY
 	[m_1].[Id] DESC
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @language NVarChar(2) -- String
-SET     @language = 'en'
-DECLARE @Exercise NVarChar(1) -- String
-SET     @Exercise = '1'
-
+;
 SELECT
 	[exercise_1].[id],
 	[exercise_1].[is_private],

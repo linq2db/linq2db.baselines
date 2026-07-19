@@ -25,8 +25,7 @@ FROM
 		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] = [d].[EmailId]
 		INNER JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[t1].[not_null],
 	[t1].[Id]
