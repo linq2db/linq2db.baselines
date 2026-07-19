@@ -4,8 +4,7 @@ SELECT
 	[t1].[ChildID]
 FROM
 	[Child] [t1]
-
--- SqlServer.2019
+;
 SELECT
 	1
 FROM
