@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`C1`,
@@ -36,11 +37,10 @@ ORDER BY
 		ELSE ''
 	END
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`C1`
 FROM
 	`Issue4596Form` `t1`
 LIMIT 1
-

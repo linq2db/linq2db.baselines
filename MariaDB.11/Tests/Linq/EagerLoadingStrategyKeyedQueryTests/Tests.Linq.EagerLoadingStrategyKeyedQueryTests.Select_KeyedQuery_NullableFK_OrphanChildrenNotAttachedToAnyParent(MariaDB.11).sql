@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -11,7 +12,7 @@ ORDER BY
 	`d`.`Id`,
 	`m_1`.`Id`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`p`.`Id`,
 	`p`.`Name`
@@ -19,7 +20,6 @@ FROM
 	`NullableParent` `p`
 ORDER BY
 	`p`.`Id`
-
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 WITH `CTE_1` (`Id`, `field`, `Name`)
 AS
