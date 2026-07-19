@@ -12,9 +12,8 @@ VALUES
 )
 
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 11
-
+-- Batch 1
+-- id = 11
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -25,16 +24,14 @@ FROM
 WHERE
 	[d].[Id] = @id
 
--- SqlServer.2005.MS SqlServer.2005
+-- Batch 2
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @id Int -- Int32
-SET     @id = 12
-
+-- Batch 1
+-- id = 12
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -45,9 +42,8 @@ FROM
 WHERE
 	[d].[Id] = @id
 
--- SqlServer.2005.MS SqlServer.2005
+-- Batch 2
 SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
