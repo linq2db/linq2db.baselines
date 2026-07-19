@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -14,7 +15,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]
@@ -22,7 +23,6 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-
 -- SqlServer.2025.MS SqlServer.2025
 SELECT
 	[m_1].[ParentID],

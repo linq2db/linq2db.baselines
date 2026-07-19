@@ -11,6 +11,7 @@ ORDER BY [p].[Id], [s].[FriendId], [s].[PersonId]
 
 
 -- SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[o].[Id],
@@ -22,9 +23,7 @@ FROM
 ORDER BY
 	[m_1].[Id]
 
-
-
--- SqlServer.2025
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -32,6 +31,5 @@ FROM
 	[People] [t1]
 ORDER BY
 	[t1].[Id]
-
 
 
