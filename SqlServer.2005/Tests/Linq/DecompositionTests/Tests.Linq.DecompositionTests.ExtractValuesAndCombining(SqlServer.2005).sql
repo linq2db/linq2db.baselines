@@ -519,8 +519,7 @@ FROM
 			[t1].[Bottom] = 1
 	) [x_1]
 WHERE
-	[x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR
-	[x_1].[Size_1] = 0
+	[x_1].[Size_1] = 1 AND [x_1].[Color] IS NULL AND [x_1].[Size_2] = 1 OR [x_1].[Size_1] = 0
 
 -- SqlServer.2005
 SELECT

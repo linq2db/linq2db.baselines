@@ -28,6 +28,7 @@ WHERE
 	[a_Book_1].[Discriminator] = N'Roman'
 
 -- SqlServer.Contained.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -40,10 +41,9 @@ FROM
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]
 FROM
 	[Author] [t1]
-

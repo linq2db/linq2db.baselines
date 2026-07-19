@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Has Bool -- Boolean
-SET     @Has = 1
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- Has = True
 INSERT INTO `Issue1438`
 (
 	`Has`
@@ -11,9 +10,9 @@ VALUES
 	@Has
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @id Int32
 SET     @id = 1

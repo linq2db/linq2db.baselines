@@ -16,8 +16,7 @@ FROM
 			`p`.`ParentID` = 1
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` + @n = `d`.`ParentID`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`

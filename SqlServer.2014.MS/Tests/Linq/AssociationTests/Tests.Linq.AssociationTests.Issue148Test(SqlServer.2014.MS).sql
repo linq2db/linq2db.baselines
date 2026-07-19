@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -12,7 +13,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2014.MS SqlServer.2014
+-- Batch 2
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -26,7 +27,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2014.MS SqlServer.2014
+-- Batch 3
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -40,9 +41,8 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2014.MS SqlServer.2014
+-- Batch 4
 SELECT
 	[n].[ParentID]
 FROM
 	[Parent] [n]
-

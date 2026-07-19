@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_2`.`Id1`,
 	`d`.`DetailId`,
@@ -13,7 +14,7 @@ FROM
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`m_2`.`Id1`,
 	`d`.`DetailId`,
@@ -30,7 +31,7 @@ FROM
 ORDER BY
 	`d`.`DetailId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 3
 SELECT
 	`m_1`.`Id1`,
 	`m_1`.`Id2`,
@@ -38,8 +39,8 @@ SELECT
 	`m_1`.`ByteValues`
 FROM
 	`MasterClass` `m_1`
-
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id1`,
 	`d`.`DetailId`,
@@ -54,7 +55,7 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,
@@ -62,4 +63,3 @@ SELECT
 	`t1`.`ByteValues`
 FROM
 	`MasterClass` `t1`
-

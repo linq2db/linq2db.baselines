@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @TypedProperty VarChar(2) -- String
-SET     @TypedProperty = 'de'
-
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
+-- TypedProperty = de
 SELECT
 	`m_1`.`ID`,
 	`m_1`.`ValS`,
@@ -22,10 +21,8 @@ WHERE
 			`m_1`.`ValS` IS NOT NULL
 	)
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @TypedProperty VarChar(2) -- String
-SET     @TypedProperty = 'de'
-
+-- Batch 2
+-- TypedProperty = de
 SELECT
 	`it`.`ID`,
 	`it`.`ValB`,
@@ -43,4 +40,3 @@ WHERE
 			`it`.`ID` = `c_1`.`ParentId` AND LOCATE(@TypedProperty, `it`.`ValS`) > 0 AND
 			`it`.`ValS` IS NOT NULL
 	)
-

@@ -8,7 +8,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	("r"."Value1" = "r"."Value2") = (("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL))
+	("r"."Value1" = "r"."Value2") = (("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL OR "r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL))
 
 -- Firebird.5 Firebird4
 SELECT
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	("r"."Value1" = "r"."Value2") <> (("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL))
+	("r"."Value1" = "r"."Value2") <> (("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL OR "r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL))
 
 -- Firebird.5 Firebird4
 SELECT
@@ -140,7 +140,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	(("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)) = (("r"."Value5" = "r"."Value4" OR "r"."Value5" IS NULL AND "r"."Value4" IS NULL) AND NOT ("r"."Value5" IS NULL AND "r"."Value4" IS NOT NULL) AND NOT ("r"."Value5" IS NOT NULL AND "r"."Value4" IS NULL))
+	(("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL OR "r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)) = (("r"."Value5" = "r"."Value4" OR "r"."Value5" IS NULL AND "r"."Value4" IS NULL) AND NOT ("r"."Value5" IS NULL AND "r"."Value4" IS NOT NULL OR "r"."Value5" IS NOT NULL AND "r"."Value4" IS NULL))
 
 -- Firebird.5 Firebird4
 SELECT
@@ -162,7 +162,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	(("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL) AND NOT ("r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)) <> (("r"."Value5" = "r"."Value4" OR "r"."Value5" IS NULL AND "r"."Value4" IS NULL) AND NOT ("r"."Value5" IS NULL AND "r"."Value4" IS NOT NULL) AND NOT ("r"."Value5" IS NOT NULL AND "r"."Value4" IS NULL))
+	(("r"."Value4" = "r"."Value5" OR "r"."Value4" IS NULL AND "r"."Value5" IS NULL) AND NOT ("r"."Value4" IS NULL AND "r"."Value5" IS NOT NULL OR "r"."Value4" IS NOT NULL AND "r"."Value5" IS NULL)) <> (("r"."Value5" = "r"."Value4" OR "r"."Value5" IS NULL AND "r"."Value4" IS NULL) AND NOT ("r"."Value5" IS NULL AND "r"."Value4" IS NOT NULL OR "r"."Value5" IS NOT NULL AND "r"."Value4" IS NULL))
 
 -- Firebird.5 Firebird4
 SELECT

@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.15
+-- Batch 1
 WITH RECURSIVE cte ("Id")
 AS
 (
@@ -31,7 +32,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."Id"
 
--- PostgreSQL.15 PostgreSQL12
+-- Batch 2
 WITH RECURSIVE cte ("Id")
 AS
 (
@@ -52,4 +53,3 @@ SELECT
 FROM
 	cte r
 		INNER JOIN "Patient" p_1 ON r."Id" = p_1."PersonID"
-

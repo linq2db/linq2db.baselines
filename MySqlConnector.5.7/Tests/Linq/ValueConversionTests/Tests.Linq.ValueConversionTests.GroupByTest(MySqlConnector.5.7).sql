@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	`m_1`.`Id`,
 	`m_1`.`Id`,
@@ -19,14 +18,11 @@ FROM
 WHERE
 	@testedList = `m_1`.`Value2`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @testedList VarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+-- Batch 2
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	`g_1`.`Id`
 FROM
 	`ValueConversion` `g_1`
 WHERE
 	@testedList = `g_1`.`Value2`
-

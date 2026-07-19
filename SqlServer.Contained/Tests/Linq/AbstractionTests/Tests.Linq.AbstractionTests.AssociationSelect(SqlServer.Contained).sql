@@ -28,8 +28,7 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.Contained SqlServer.2019
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]
@@ -66,8 +65,7 @@ FROM
 			ORDER BY
 				[d].[Id]
 		) [d_1]
-
--- SqlServer.Contained SqlServer.2019
+;
 SELECT
 	[t1].[Id],
 	[t1].[Value]

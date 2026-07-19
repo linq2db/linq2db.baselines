@@ -24,12 +24,7 @@ FROM
 	[Orders] [m_1]
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderID] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
-
-
-
-
-
--- SqlServer.2016
+;
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],
@@ -48,6 +43,8 @@ SELECT
 	[e].[ShipCountry]
 FROM
 	[Orders] [e]
+
+
 
 
 

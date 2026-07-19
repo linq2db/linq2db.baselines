@@ -9,8 +9,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2025
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -23,8 +22,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2025
+;
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

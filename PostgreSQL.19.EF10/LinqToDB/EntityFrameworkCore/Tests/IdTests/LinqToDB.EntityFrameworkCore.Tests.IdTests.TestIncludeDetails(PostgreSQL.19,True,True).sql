@@ -1,6 +1,7 @@
 ﻿
 
--- PostgreSQL.19 PostgreSQL12
+-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -20,9 +21,7 @@ FROM
 	) m_1
 		INNER JOIN sub_details d_1 ON m_1."Id" = d_1.master_id
 
-
-
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	m_1.id,
 	d.id,
@@ -34,9 +33,7 @@ FROM
 WHERE
 	m_1.name = 'Alpha'
 
-
-
--- PostgreSQL.19 PostgreSQL12
+-- Batch 3
 SELECT
 	m_1.id,
 	d.id,
@@ -48,9 +45,7 @@ FROM
 WHERE
 	m_1.name = 'Alpha'
 
-
-
--- PostgreSQL.19 PostgreSQL12
+-- Batch 4
 SELECT
 	e.id,
 	e.name
@@ -58,6 +53,5 @@ FROM
 	entities e
 WHERE
 	e.name = 'Alpha'
-
 
 

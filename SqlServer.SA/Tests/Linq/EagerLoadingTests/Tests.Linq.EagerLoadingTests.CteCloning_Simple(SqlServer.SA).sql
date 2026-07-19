@@ -24,8 +24,7 @@ FROM
 				LEFT JOIN [CteChildTable] [d] ON [t1].[Value4] = [d].[Id]
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
-
--- SqlServer.SA SqlServer.2019
+;
 WITH [CTE_1]
 (
 	[Value4],

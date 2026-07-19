@@ -12,8 +12,7 @@ FROM
 			[MasterClass] [x]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[x].[Id1],
 	[x].[Id2],
@@ -36,8 +35,7 @@ FROM
 			[MasterClass] [x]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[x].[Id1],
 	[x].[Id2],

@@ -30,8 +30,7 @@ FROM
 			[a_Parent].[Id] > 0
 	) [m_1]
 		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
-
--- SqlServer.2017
+;
 SELECT
 	[t].[Id]
 FROM

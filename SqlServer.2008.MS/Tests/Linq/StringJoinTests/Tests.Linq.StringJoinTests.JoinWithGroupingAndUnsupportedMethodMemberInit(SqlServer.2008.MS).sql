@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d_1].[Name]
@@ -22,7 +23,7 @@ FROM
 ORDER BY
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
+-- Batch 2
 SELECT
 	[m_1].[Key_1],
 	[d_1].[NotNullableValue]
@@ -46,14 +47,13 @@ FROM
 ORDER BY
 	[m_1].[Key_1]
 
--- SqlServer.2008.MS SqlServer.2008
+-- Batch 3
 SELECT DISTINCT
 	[g_1].[Id]
 FROM
 	[SampleClass] [g_1]
 ORDER BY
 	[g_1].[Id]
-
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
 	[t1].[PK],

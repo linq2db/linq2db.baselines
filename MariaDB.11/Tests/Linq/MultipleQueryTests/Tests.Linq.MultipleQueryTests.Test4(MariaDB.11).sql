@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`
@@ -13,11 +14,10 @@ FROM
 ORDER BY
 	`m_1`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
 ORDER BY
 	`p`.`ParentID`
-

@@ -14,8 +14,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] IS NOT NULL
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[p].[ParentID]
 FROM
@@ -37,8 +36,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] IS NOT NULL
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[p].[ParentID]
 FROM

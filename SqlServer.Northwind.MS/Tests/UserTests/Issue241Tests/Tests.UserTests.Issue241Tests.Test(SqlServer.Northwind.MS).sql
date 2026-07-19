@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[CustomerID],
 	[m_1].[CustomerID],
@@ -17,11 +18,10 @@ FROM
 WHERE
 	[m_1].[CompanyName] LIKE N'%t%' ESCAPE N'~'
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[o].[CustomerID]
 FROM
 	[Customers] [o]
 WHERE
 	[o].[CompanyName] LIKE N'%t%' ESCAPE N'~'
-

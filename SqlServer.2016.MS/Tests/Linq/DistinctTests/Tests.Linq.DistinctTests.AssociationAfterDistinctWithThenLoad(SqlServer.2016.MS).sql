@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -13,7 +14,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2016.MS SqlServer.2016
+-- Batch 2
 SELECT DISTINCT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -24,8 +25,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
 ORDER BY
 	[t1].[ChildID]
-
 -- SqlServer.2016.MS SqlServer.2016
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -40,7 +41,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
--- SqlServer.2016.MS SqlServer.2016
+-- Batch 2
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID],
@@ -49,4 +50,3 @@ SELECT
 FROM
 	[Child] [t1]
 		LEFT JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
-

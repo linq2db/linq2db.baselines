@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[CustomerID],
@@ -35,7 +36,7 @@ FROM
 				[d].[CustomerID] = [a_Orders_1].[CustomerID]
 		) >= 80, 1, 0)
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 2
 SELECT DISTINCT
 	IIF((
 		SELECT
@@ -47,4 +48,3 @@ SELECT DISTINCT
 	) >= 80, 1, 0)
 FROM
 	[Customers] [t1]
-

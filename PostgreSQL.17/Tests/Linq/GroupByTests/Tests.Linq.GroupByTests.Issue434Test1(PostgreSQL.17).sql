@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @input Text(6) -- String
-SET     @input = '%test%'
-
+﻿-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
+-- input = %test%
 SELECT
 	m_1."PersonID",
 	d."PersonID",
@@ -12,10 +11,8 @@ FROM
 WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @input Text(6) -- String
-SET     @input = '%test%'
-
+-- Batch 2
+-- input = %test%
 SELECT
 	p."FirstName",
 	p."PersonID"
@@ -23,4 +20,3 @@ FROM
 	"Person" p
 WHERE
 	Lower(p."FirstName") LIKE :input ESCAPE '~'
-

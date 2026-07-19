@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -7,9 +8,8 @@ FROM
 	`MainEntity` `m_1`
 		INNER JOIN `SubEntity` `d` ON `m_1`.`Id` = `d`.`MainEntityId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`x`.`Id`
 FROM
 	`MainEntity` `x`
-

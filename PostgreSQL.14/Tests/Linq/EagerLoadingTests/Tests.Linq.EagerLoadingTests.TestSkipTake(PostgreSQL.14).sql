@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_2."Id1",
 	d."DetailId",
@@ -13,7 +14,7 @@ FROM
 	) m_2
 		INNER JOIN "DetailClass" d ON m_2."Id1" = d."MasterId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	m_2."Id1",
 	d_1."DetailId",
@@ -40,7 +41,7 @@ FROM
 			LIMIT 2 OFFSET 1 
 		) d_1 ON 1=1
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 3
 SELECT
 	m_1."Id1",
 	m_1."Id2",
@@ -48,8 +49,8 @@ SELECT
 	m_1."ByteValues"
 FROM
 	"MasterClass" m_1
-
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id1",
 	d."DetailId",
@@ -64,7 +65,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id1",
 	t1."Id2",
@@ -72,4 +73,3 @@ SELECT
 	t1."ByteValues"
 FROM
 	"MasterClass" t1
-

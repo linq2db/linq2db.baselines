@@ -10,7 +10,8 @@ ORDER BY p."Code", p."OrgId", t."MemberId", t."OrgId", t."Code"
 
 
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."OrgId",
 	m_1."Code",
@@ -23,9 +24,7 @@ FROM
 ORDER BY
 	m_1."Code"
 
-
-
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."OrgId",
 	t1."Code",
@@ -34,6 +33,5 @@ FROM
 	"Projects" t1
 ORDER BY
 	t1."Code"
-
 
 

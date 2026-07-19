@@ -11,8 +11,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2016
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -25,8 +24,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2016
+;
 SELECT
 	[m_1].[ParentID],
 	[d].[ParentID],
@@ -39,8 +37,7 @@ FROM
 			[Parent] [n]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.2016
+;
 SELECT
 	[n].[ParentID]
 FROM

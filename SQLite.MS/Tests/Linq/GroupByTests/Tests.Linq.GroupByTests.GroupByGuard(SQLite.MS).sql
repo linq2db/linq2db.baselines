@@ -33,8 +33,7 @@ FROM
 			[Person] [t1]
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[Gender]
-
--- SQLite.MS SQLite
+;
 SELECT DISTINCT
 	[t1].[Gender]
 FROM
@@ -50,8 +49,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[PersonID]
 FROM
@@ -67,8 +65,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[PersonID]
 FROM

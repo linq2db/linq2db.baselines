@@ -23,8 +23,7 @@ SELECT
 FROM
 	[ConcatParent] [m_1]
 		INNER JOIN [ConcatChild] [d] ON [m_1].[Id] = [d].[ParentId]
-
--- SqlServer.Contained SqlServer.2019
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]

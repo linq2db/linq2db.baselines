@@ -15,8 +15,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [OrderDetail] [d] ON [m_1].[OrderId] = [d].[OrderId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[o].[OrderType],
 	[o].[OrderId],

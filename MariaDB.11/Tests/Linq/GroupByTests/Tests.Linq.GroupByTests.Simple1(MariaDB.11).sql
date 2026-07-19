@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Key_1`,
 	`d`.`ParentID`,
@@ -12,9 +13,8 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`Key_1` = `d`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT DISTINCT
 	`t1`.`ParentID`
 FROM
 	`Child` `t1`
-

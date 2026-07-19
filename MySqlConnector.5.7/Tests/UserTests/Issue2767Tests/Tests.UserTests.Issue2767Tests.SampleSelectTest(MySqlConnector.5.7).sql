@@ -1,13 +1,9 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @language VarChar(2) -- String
-SET     @language = 'en'
-DECLARE @Exercise VarChar(1) -- String
-SET     @Exercise = '1'
-DECLARE @currentLanguage VarChar(2) -- String
-SET     @currentLanguage = 'en'
-DECLARE @Equipment VarChar(1) -- String
-SET     @Equipment = '2'
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- language = en
+-- Exercise = 1
+-- currentLanguage = en
+-- Equipment = 2
 SELECT
 	`m_1`.`Id`,
 	`equipment`.`id`,
@@ -37,12 +33,9 @@ FROM
 ORDER BY
 	`m_1`.`Id` DESC
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @language VarChar(2) -- String
-SET     @language = 'en'
-DECLARE @Exercise VarChar(1) -- String
-SET     @Exercise = '1'
-
+-- Batch 2
+-- language = en
+-- Exercise = 1
 SELECT
 	`exercise_1`.`id`,
 	`exercise_1`.`is_private`,
@@ -70,4 +63,3 @@ FROM
 ORDER BY
 	`exercise_1`.`timestamp` DESC,
 	`exercise_1`.`id` DESC
-

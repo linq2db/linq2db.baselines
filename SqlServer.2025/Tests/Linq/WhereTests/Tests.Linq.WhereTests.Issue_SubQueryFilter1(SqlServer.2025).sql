@@ -22,8 +22,7 @@ WHERE
 				FROM
 					[Patient] [d]
 			)
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM

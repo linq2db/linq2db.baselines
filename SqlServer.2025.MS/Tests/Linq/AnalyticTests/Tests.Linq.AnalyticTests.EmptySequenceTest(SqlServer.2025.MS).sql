@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
@@ -22,9 +23,8 @@ FROM
 				[d].[ParentID]
 		) [d_1]
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT
 	[c_1].[ParentID]
 FROM
 	[Parent] [c_1]
-

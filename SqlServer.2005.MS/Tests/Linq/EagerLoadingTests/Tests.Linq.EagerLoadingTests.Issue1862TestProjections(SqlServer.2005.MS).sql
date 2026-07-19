@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
-DECLARE @blogId Int -- Int32
-SET     @blogId = 1
-
+-- Batch 1
+-- blogId = 1
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -31,10 +30,8 @@ ORDER BY
 	[d_1].[TagId],
 	[m_1].[Id]
 
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @blogId Int -- Int32
-SET     @blogId = 1
-
+-- Batch 2
+-- blogId = 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -53,10 +50,8 @@ FROM
 ORDER BY
 	[d].[Id]
 
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @blogId Int -- Int32
-SET     @blogId = 1
-
+-- Batch 3
+-- blogId = 1
 SELECT
 	[b].[Id],
 	[b].[Title]
@@ -64,4 +59,3 @@ FROM
 	[Blog] [b]
 WHERE
 	[b].[Id] = @blogId
-

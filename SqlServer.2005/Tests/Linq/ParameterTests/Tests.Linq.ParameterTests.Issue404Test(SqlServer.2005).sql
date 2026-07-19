@@ -7,8 +7,7 @@ SELECT
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -28,8 +27,7 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -49,8 +47,7 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -65,8 +62,7 @@ SELECT
 FROM
 	[Table404One] [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -86,8 +82,7 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
@@ -107,8 +102,7 @@ FROM
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
 	[d].[Usage] = @Usage
-
--- SqlServer.2005
+;
 SELECT
 	[t1].[Id]
 FROM
