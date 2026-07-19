@@ -27,8 +27,7 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	p.Nullable >= p.OtherNullable OR p.Nullable IS NULL OR
-	p.OtherNullable IS NULL
+	p.Nullable >= p.OtherNullable OR p.Nullable IS NULL OR p.OtherNullable IS NULL
 
 -- ClickHouse.Driver ClickHouse
 SELECT
@@ -68,8 +67,7 @@ SELECT
 FROM
 	WhereCompareData p
 WHERE
-	p.OtherNullable <= p.Nullable OR p.OtherNullable IS NULL OR
-	p.Nullable IS NULL
+	p.OtherNullable <= p.Nullable OR p.OtherNullable IS NULL OR p.Nullable IS NULL
 
 -- ClickHouse.Driver ClickHouse
 SELECT
