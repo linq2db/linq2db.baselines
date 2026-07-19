@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Key_1",
 	d."FirstName",
@@ -15,7 +16,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON m_1."Key_1" = d."FirstName"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	t2."Key_1",
 	t2."Key_1"
@@ -26,4 +27,3 @@ FROM
 		FROM
 			"Person" t1
 	) t2
-
