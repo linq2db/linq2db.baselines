@@ -5,7 +5,7 @@ SET     @from = 2
 UPDATE
 	testparams t
 SET
-	"from" = @from::Int
+	"from" = @from
 WHERE
 	t."from" = 1
 

@@ -1,6 +1,8 @@
 ﻿-- Informix.DB2 Informix
 DECLARE @p Integer(4) -- Int32
 SET     @p = 2
+DECLARE @p_1 Integer(4) -- Int32
+SET     @p_1 = 2
 
 SELECT FIRST 2
 	@p::Int,
@@ -8,5 +10,5 @@ SELECT FIRST 2
 FROM
 	AsyncDataTable c_1
 WHERE
-	c_1.Id = @p::Int
+	c_1.Id = @p_1
 

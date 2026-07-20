@@ -20,11 +20,11 @@ INSERT INTO EntityInsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(1),
-	@Version::Int,
-	@stamp::datetime year to fraction,
-	@CreatedBy::NVarChar(255)
+	@Id,
+	@Name,
+	@Version,
+	@stamp,
+	@CreatedBy
 )
 
 -- Informix.DB2 Informix

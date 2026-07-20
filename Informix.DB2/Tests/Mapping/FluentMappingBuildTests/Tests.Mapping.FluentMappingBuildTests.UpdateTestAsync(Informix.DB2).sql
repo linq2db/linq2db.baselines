@@ -38,8 +38,8 @@ SET     @LastName = 'Dory'
 UPDATE
 	FluentTemp_UpdateAsync t
 SET
-	"Value" = @Name::NVarChar(7),
-	LastName = @LastName::NVarChar(4)
+	"Value" = @Name,
+	LastName = @LastName
 WHERE
 	t.ID = 1
 

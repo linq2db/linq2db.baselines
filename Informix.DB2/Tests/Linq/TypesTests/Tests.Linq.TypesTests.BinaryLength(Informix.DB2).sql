@@ -5,7 +5,7 @@ SET     @BinaryValue = {1,2,3,4,5}
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 
@@ -24,7 +24,7 @@ SET     @BinaryValue = NULL
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = @BinaryValue::BYTE
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 

@@ -8,7 +8,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Month to Second
+	@input
 )
 
 -- Informix.DB2 Informix

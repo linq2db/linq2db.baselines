@@ -10,7 +10,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	1,
-	@Field1::NVarChar(255)
+	@Field1
 )
 
 -- Informix.DB2 Informix
@@ -25,7 +25,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	2,
-	@Field1::NVarChar(255)
+	@Field1
 )
 
 -- Informix.DB2 Informix
@@ -40,7 +40,7 @@ INSERT INTO Issue1373Tests
 VALUES
 (
 	3,
-	@Field1::NVarChar(4)
+	@Field1
 )
 
 -- Informix.DB2 Informix
