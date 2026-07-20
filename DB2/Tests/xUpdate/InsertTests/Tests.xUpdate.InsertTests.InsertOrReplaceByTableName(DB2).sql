@@ -3,6 +3,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC1'
 
 MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -22,7 +24,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -30,6 +32,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC2'
 
 MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -49,7 +53,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -63,6 +67,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC1'
 
 MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -82,7 +88,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -90,6 +96,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'ABC2'
 
 MERGE INTO "xxPatient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -109,7 +117,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW

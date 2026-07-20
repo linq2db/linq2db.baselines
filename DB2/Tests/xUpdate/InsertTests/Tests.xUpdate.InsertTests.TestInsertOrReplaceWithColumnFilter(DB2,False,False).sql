@@ -7,6 +7,12 @@ DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar(15) -- String
 SET     @MiddleName = 'som middle name'
+DECLARE @FirstName_1 VarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 VarChar(8) -- String
+SET     @LastName_1 = 'whatever'
+DECLARE @MiddleName_1 VarChar(15) -- String
+SET     @MiddleName_1 = 'som middle name'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -30,9 +36,9 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@FirstName AS NVarChar(27)),
-		CAST(@LastName AS NVarChar(8)),
-		CAST(@MiddleName AS NVarChar(15))
+		CAST(@FirstName_1 AS NVarChar(27)),
+		CAST(@LastName_1 AS NVarChar(8)),
+		CAST(@MiddleName_1 AS NVarChar(15))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -57,6 +63,10 @@ DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
+DECLARE @FirstName_1 VarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 VarChar(8) -- String
+SET     @LastName_1 = 'whatever'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -78,8 +88,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@FirstName AS NVarChar(27)),
-		CAST(@LastName AS NVarChar(8))
+		CAST(@FirstName_1 AS NVarChar(27)),
+		CAST(@LastName_1 AS NVarChar(8))
 	)
 
 -- DB2 DB2.LUW DB2LUW

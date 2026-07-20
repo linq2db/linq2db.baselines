@@ -5,6 +5,10 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
+DECLARE @Name_1 VarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer(4) -- Int32
+SET     @Age_1 = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -26,8 +30,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS NVarChar(4)),
-		CAST(@Age AS Int)
+		CAST(@Name_1 AS NVarChar(4)),
+		CAST(@Age_1 AS Int)
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -48,6 +52,10 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
 SET     @Age = 2
+DECLARE @Name_1 VarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer(4) -- Int32
+SET     @Age_1 = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -69,8 +77,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS NVarChar(4)),
-		CAST(@Age AS Int)
+		CAST(@Name_1 AS NVarChar(4)),
+		CAST(@Age_1 AS Int)
 	)
 
 -- DB2 DB2.LUW DB2LUW

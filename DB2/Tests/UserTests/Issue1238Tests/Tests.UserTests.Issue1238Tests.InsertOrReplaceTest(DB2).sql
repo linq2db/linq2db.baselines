@@ -9,6 +9,8 @@ DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
 DECLARE @Data Integer(4) -- Int32
 SET     @Data = 1
+DECLARE @Data_1 Integer(4) -- Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS NVarChar(255)) AS "Name" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -31,7 +33,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Key1 AS Int),
 		CAST(@Key2 AS NVarChar(255)),
-		CAST(@Data AS Int)
+		CAST(@Data_1 AS Int)
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -47,6 +49,8 @@ DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
 DECLARE @Data Integer(4) -- Int32
 SET     @Data = 1
+DECLARE @Data_1 Integer(4) -- Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS NVarChar(255)) AS "Name" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -69,7 +73,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Key1 AS Int),
 		CAST(@Key2 AS NVarChar(255)),
-		CAST(@Data AS Int)
+		CAST(@Data_1 AS Int)
 	)
 
 -- DB2 DB2.LUW DB2LUW

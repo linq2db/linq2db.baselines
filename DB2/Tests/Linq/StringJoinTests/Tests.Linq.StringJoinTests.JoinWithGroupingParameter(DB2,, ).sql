@@ -1,11 +1,13 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 DECLARE @separator VarChar(2) -- String
 SET     @separator = ', '
+DECLARE @separator_1 VarChar(2) -- String
+SET     @separator_1 = ', '
 
 SELECT
 	"g_1"."Id",
 	Coalesce(LISTAGG(Coalesce("g_1"."NullableValue", ''), CAST(@separator AS NVarChar(2))), ''),
-	Coalesce(LISTAGG("g_1"."NotNullableValue", CAST(@separator AS NVarChar(2))), '')
+	Coalesce(LISTAGG("g_1"."NotNullableValue", CAST(@separator_1 AS NVarChar(2))), '')
 FROM
 	"SampleClass" "g_1"
 GROUP BY

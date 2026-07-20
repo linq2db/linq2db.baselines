@@ -11,6 +11,14 @@ DECLARE @UpdatedAt Timestamp -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(3) -- String
+SET     @Name_1 = 'row'
+DECLARE @Version_1 Integer(4) -- Int32
+SET     @Version_1 = 1
+DECLARE @CreatedAt_1 Timestamp -- DateTime
+SET     @CreatedAt_1 = NULL
+DECLARE @UpdatedAt_1 Timestamp -- DateTime
+SET     @UpdatedAt_1 = NULL
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -40,11 +48,11 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS NVarChar(3)),
-		CAST(@Version AS Int),
-		CAST(@CreatedAt AS timestamp),
+		CAST(@Name_1 AS NVarChar(3)),
+		CAST(@Version_1 AS Int),
+		CAST(@CreatedAt_1 AS timestamp),
 		'second-root',
-		CAST(@UpdatedAt AS timestamp),
+		CAST(@UpdatedAt_1 AS timestamp),
 		'second-branch'
 	)
 

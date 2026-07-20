@@ -34,6 +34,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc0'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc0'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -53,7 +55,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -61,6 +63,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc1'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc1'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -80,7 +84,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -88,6 +92,8 @@ DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc2'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc2'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -107,7 +113,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS NVarChar(4))
+		CAST(@Diagnosis_1 AS NVarChar(4))
 	)
 
 -- DB2 DB2.LUW DB2LUW

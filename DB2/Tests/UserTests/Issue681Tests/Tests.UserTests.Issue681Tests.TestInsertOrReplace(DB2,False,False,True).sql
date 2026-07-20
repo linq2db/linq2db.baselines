@@ -10,6 +10,8 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10
+DECLARE @Value_1 Integer(4) -- Int32
+SET     @Value_1 = 10
 
 MERGE INTO DB2INST1."Issue681Table" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -29,7 +31,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@Value AS Int)
+		CAST(@Value_1 AS Int)
 	)
 
 -- DB2 DB2.LUW DB2LUW
@@ -37,6 +39,8 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10
+DECLARE @Value_1 Integer(4) -- Int32
+SET     @Value_1 = 10
 
 MERGE INTO DB2INST1."Issue681Table" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -56,6 +60,6 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@Value AS Int)
+		CAST(@Value_1 AS Int)
 	)
 

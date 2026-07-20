@@ -16,7 +16,7 @@ INSERT INTO "Parent"
 VALUES
 (
 	1001,
-	CAST(@Value1 AS Int)
+	@Value1
 )
 
 -- DB2 DB2.LUW DB2LUW
