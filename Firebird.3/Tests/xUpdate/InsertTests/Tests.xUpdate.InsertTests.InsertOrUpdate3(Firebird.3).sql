@@ -32,6 +32,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
 SET     @i = 0
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 5
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -50,7 +52,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		CAST(@id AS Int),
+		CAST(@id_1 AS Int),
 		'abc'
 	)
 
@@ -59,6 +61,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
 SET     @i = 1
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 5
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -77,7 +81,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		CAST(@id AS Int),
+		CAST(@id_1 AS Int),
 		'abc'
 	)
 
@@ -86,6 +90,8 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 DECLARE @i Integer -- Int32
 SET     @i = 2
+DECLARE @id_1 Integer -- Int32
+SET     @id_1 = 5
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -104,7 +110,7 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		CAST(@id AS Int),
+		CAST(@id_1 AS Int),
 		'abc'
 	)
 
