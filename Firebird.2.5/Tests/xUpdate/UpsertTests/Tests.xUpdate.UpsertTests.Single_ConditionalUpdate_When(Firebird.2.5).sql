@@ -24,6 +24,8 @@ DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 3
 
 UPDATE
 	"UpsertTest" "t1"
@@ -35,7 +37,7 @@ SET
 	"UpdatedAt" = CAST(@UpdatedAt AS TimeStamp),
 	"UpdatedBy" = CAST(@UpdatedBy AS VARCHAR(1))
 WHERE
-	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
+	"t1"."Id" = CAST(@Id AS Int) AND @Version_1 > "t1"."Version"
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2
@@ -77,6 +79,8 @@ DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 10
 
 UPDATE
 	"UpsertTest" "t1"
@@ -88,7 +92,7 @@ SET
 	"UpdatedAt" = CAST(@UpdatedAt AS TimeStamp),
 	"UpdatedBy" = CAST(@UpdatedBy AS VARCHAR(1))
 WHERE
-	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
+	"t1"."Id" = CAST(@Id AS Int) AND @Version_1 > "t1"."Version"
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2

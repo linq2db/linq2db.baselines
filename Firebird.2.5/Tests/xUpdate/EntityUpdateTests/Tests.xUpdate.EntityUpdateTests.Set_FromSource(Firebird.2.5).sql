@@ -5,6 +5,8 @@ DECLARE @Version Integer -- Int32
 SET     @Version = 1
 DECLARE @UpdatedAt TimeStamp -- DateTime
 SET     @UpdatedAt = NULL
+DECLARE @Name_1 VarChar(5) -- String
+SET     @Name_1 = 'alice'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -14,7 +16,7 @@ SET
 	"Name" = CAST(@Name AS VARCHAR(5)),
 	"Version" = CAST(@Version AS Int),
 	"UpdatedAt" = CAST(@UpdatedAt AS TimeStamp),
-	"UpdatedBy" = CAST(@Name AS VARCHAR(5))
+	"UpdatedBy" = CAST(@Name_1 AS VARCHAR(5))
 WHERE
 	"t"."Id" = @Id
 

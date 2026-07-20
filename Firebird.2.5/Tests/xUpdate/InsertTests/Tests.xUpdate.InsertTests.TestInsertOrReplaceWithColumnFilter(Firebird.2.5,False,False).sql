@@ -7,6 +7,12 @@ DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName VarChar(15) -- String
 SET     @MiddleName = 'som middle name'
+DECLARE @FirstName_1 VarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 VarChar(8) -- String
+SET     @LastName_1 = 'whatever'
+DECLARE @MiddleName_1 VarChar(15) -- String
+SET     @MiddleName_1 = 'som middle name'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
@@ -30,9 +36,9 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@FirstName AS VARCHAR(27)),
-		CAST(@LastName AS VARCHAR(8)),
-		CAST(@MiddleName AS VARCHAR(15))
+		CAST(@FirstName_1 AS VARCHAR(27)),
+		CAST(@LastName_1 AS VARCHAR(8)),
+		CAST(@MiddleName_1 AS VARCHAR(15))
 	)
 
 -- Firebird.2.5 Firebird
@@ -56,6 +62,10 @@ DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarChar(8) -- String
 SET     @LastName = 'whatever'
+DECLARE @FirstName_1 VarChar(27) -- String
+SET     @FirstName_1 = 'InsertOrReplaceColumnFilter'
+DECLARE @LastName_1 VarChar(8) -- String
+SET     @LastName_1 = 'whatever'
 
 MERGE INTO "TestInsertOrReplaceTable" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
@@ -77,8 +87,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@FirstName AS VARCHAR(27)),
-		CAST(@LastName AS VARCHAR(8))
+		CAST(@FirstName_1 AS VARCHAR(27)),
+		CAST(@LastName_1 AS VARCHAR(8))
 	)
 
 -- Firebird.2.5 Firebird

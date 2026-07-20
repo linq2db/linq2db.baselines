@@ -1,6 +1,8 @@
 ﻿-- Firebird.2.5 Firebird
 DECLARE @param Integer -- Int32
 SET     @param = 200
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 200
 DECLARE @ValueStr VarChar(3) -- String
 SET     @ValueStr = '200'
 
@@ -12,7 +14,7 @@ INSERT INTO "DestinationTable"
 )
 SELECT
 	"s"."Id" + CAST(@param AS Int),
-	"s"."Value" + CAST(@param AS Int),
+	"s"."Value" + CAST(@param_1 AS Int),
 	Coalesce("s"."ValueStr", '') || Coalesce(CAST(@ValueStr AS VARCHAR(3)), '')
 FROM
 	"TableWithData" "s"
@@ -26,12 +28,14 @@ RETURNING
 -- Firebird.2.5 Firebird
 DECLARE @param Integer -- Int32
 SET     @param = 200
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 200
 DECLARE @ValueStr VarChar(3) -- String
 SET     @ValueStr = '200'
 
 SELECT
 	"s"."Id" + CAST(@param AS Int),
-	"s"."Value" + CAST(@param AS Int),
+	"s"."Value" + CAST(@param_1 AS Int),
 	Coalesce("s"."ValueStr", '') || Coalesce(CAST(@ValueStr AS VARCHAR(3)), '')
 FROM
 	"TableWithData" "s"

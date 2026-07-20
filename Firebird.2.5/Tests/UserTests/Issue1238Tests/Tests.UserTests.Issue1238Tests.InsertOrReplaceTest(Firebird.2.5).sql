@@ -9,6 +9,8 @@ DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
+DECLARE @Data_1 Integer -- Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS VARCHAR(1)) AS "Name" FROM rdb$database) "s" ON
@@ -31,7 +33,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Key1 AS Int),
 		CAST(@Key2 AS VARCHAR(1)),
-		CAST(@Data AS Int)
+		CAST(@Data_1 AS Int)
 	)
 
 -- Firebird.2.5 Firebird
@@ -47,6 +49,8 @@ DECLARE @Key2 VarChar -- String
 SET     @Key2 = NULL
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
+DECLARE @Data_1 Integer -- Int32
+SET     @Data_1 = 1
 
 MERGE INTO "InheritanceParent" "t1"
 USING (SELECT CAST(@Key1 AS Int) AS "InheritanceParentId", CAST(@Key2 AS VARCHAR(1)) AS "Name" FROM rdb$database) "s" ON
@@ -69,7 +73,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Key1 AS Int),
 		CAST(@Key2 AS VARCHAR(1)),
-		CAST(@Data AS Int)
+		CAST(@Data_1 AS Int)
 	)
 
 -- Firebird.2.5 Firebird

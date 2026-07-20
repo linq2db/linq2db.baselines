@@ -5,6 +5,10 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Name_1 VarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer -- Int32
+SET     @Age_1 = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -26,8 +30,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(4)),
-		CAST(@Age AS Int)
+		CAST(@Name_1 AS VARCHAR(4)),
+		CAST(@Age_1 AS Int)
 	)
 
 -- Firebird.2.5 Firebird
@@ -47,6 +51,10 @@ DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
+DECLARE @Name_1 VarChar(4) -- String
+SET     @Name_1 = 'John'
+DECLARE @Age_1 Integer -- Int32
+SET     @Age_1 = 2
 
 MERGE INTO "PR_1598_Insert_Table_Cache" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -68,8 +76,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(4)),
-		CAST(@Age AS Int)
+		CAST(@Name_1 AS VARCHAR(4)),
+		CAST(@Age_1 AS Int)
 	)
 
 -- Firebird.2.5 Firebird

@@ -17,10 +17,10 @@ INSERT INTO "EntityInsertTest"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS VARCHAR(1)),
-	CAST(@Version AS Int),
-	CAST(@stamp AS TimeStamp)
+	@Id,
+	@Name,
+	@Version,
+	@stamp
 )
 
 -- Firebird.2.5 Firebird
