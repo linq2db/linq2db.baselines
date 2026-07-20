@@ -5,6 +5,8 @@ DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(5) -- String
+SET     @Name_1 = 'Test1'
 DECLARE @CreatedBy VarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
 
@@ -28,7 +30,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(5)),
+		CAST(@Name_1 AS VARCHAR(5)),
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 
@@ -49,6 +51,8 @@ DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy VarChar(10) -- String
 SET     @UpdatedBy = 'TEST_USER2'
+DECLARE @Name_1 VarChar(5) -- String
+SET     @Name_1 = 'Test2'
 DECLARE @CreatedBy VarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
 
@@ -72,7 +76,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(5)),
+		CAST(@Name_1 AS VARCHAR(5)),
 		CAST(@CreatedBy AS VARCHAR(10))
 	)
 

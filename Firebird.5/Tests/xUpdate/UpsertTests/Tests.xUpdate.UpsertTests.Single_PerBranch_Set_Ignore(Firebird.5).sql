@@ -7,6 +7,10 @@ DECLARE @Version Integer -- Int32
 SET     @Version = 1
 DECLARE @updateTime TimeStamp -- DateTime
 SET     @updateTime = TIMESTAMP '2026-01-01 12:00:00.0000'
+DECLARE @Name_1 VarChar(5) -- String
+SET     @Name_1 = 'first'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 1
 DECLARE @insertTime TimeStamp -- DateTime
 SET     @insertTime = TIMESTAMP '2026-01-01 10:00:00.0000'
 
@@ -34,8 +38,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(5)),
-		CAST(@Version AS Int),
+		CAST(@Name_1 AS VARCHAR(5)),
+		CAST(@Version_1 AS Int),
 		CAST(@insertTime AS TimeStamp),
 		'system'
 	)
@@ -64,6 +68,10 @@ DECLARE @Version Integer -- Int32
 SET     @Version = 2
 DECLARE @updateTime TimeStamp -- DateTime
 SET     @updateTime = TIMESTAMP '2026-01-01 12:00:00.0000'
+DECLARE @Name_1 VarChar(6) -- String
+SET     @Name_1 = 'second'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 2
 DECLARE @insertTime TimeStamp -- DateTime
 SET     @insertTime = TIMESTAMP '2026-01-01 10:00:00.0000'
 
@@ -91,8 +99,8 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(6)),
-		CAST(@Version AS Int),
+		CAST(@Name_1 AS VARCHAR(6)),
+		CAST(@Version_1 AS Int),
 		CAST(@insertTime AS TimeStamp),
 		'system'
 	)

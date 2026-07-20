@@ -11,6 +11,14 @@ DECLARE @UpdatedAt TimeStamp -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(3) -- String
+SET     @Name_1 = 'row'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 1
+DECLARE @CreatedAt_1 TimeStamp -- DateTime
+SET     @CreatedAt_1 = NULL
+DECLARE @UpdatedAt_1 TimeStamp -- DateTime
+SET     @UpdatedAt_1 = NULL
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -40,11 +48,11 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(3)),
-		CAST(@Version AS Int),
-		CAST(@CreatedAt AS TimeStamp),
+		CAST(@Name_1 AS VARCHAR(3)),
+		CAST(@Version_1 AS Int),
+		CAST(@CreatedAt_1 AS TimeStamp),
 		'second-root',
-		CAST(@UpdatedAt AS TimeStamp),
+		CAST(@UpdatedAt_1 AS TimeStamp),
 		'second-branch'
 	)
 
