@@ -32,6 +32,8 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc0'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc0'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -51,7 +53,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS VARCHAR(4))
+		CAST(@Diagnosis_1 AS VARCHAR(4))
 	)
 
 -- Firebird.4 Firebird4
@@ -59,6 +61,8 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc1'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc1'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -78,7 +82,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS VARCHAR(4))
+		CAST(@Diagnosis_1 AS VARCHAR(4))
 	)
 
 -- Firebird.4 Firebird4
@@ -86,6 +90,8 @@ DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc2'
+DECLARE @Diagnosis_1 VarChar(4) -- String
+SET     @Diagnosis_1 = 'abc2'
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM rdb$database) "s" ON
@@ -105,7 +111,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@PersonID AS Int),
-		CAST(@Diagnosis AS VARCHAR(4))
+		CAST(@Diagnosis_1 AS VARCHAR(4))
 	)
 
 -- Firebird.4 Firebird4

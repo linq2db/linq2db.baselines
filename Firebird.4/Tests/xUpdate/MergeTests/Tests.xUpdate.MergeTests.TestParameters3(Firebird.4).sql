@@ -213,8 +213,14 @@ DECLARE @Val5 Integer -- Int32
 SET     @Val5 = 5
 DECLARE @Val1 Integer -- Int32
 SET     @Val1 = 1
+DECLARE @Val5_1 Integer -- Int32
+SET     @Val5_1 = 5
 DECLARE @Val3 Integer -- Int32
 SET     @Val3 = 3
+DECLARE @Val5_2 Integer -- Int32
+SET     @Val5_2 = 5
+DECLARE @Val2_1 Integer -- Int32
+SET     @Val2_1 = 2
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -225,7 +231,7 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 	WHERE
-		"t1"."Id" <> CAST(@Val5 AS Int)
+		"t1"."Id" <> @Val5
 ) "Source"
 (
 	"Id",
@@ -242,13 +248,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id" + CAST(@Val5 AS Int),
+	"Source"."Id" + CAST(@Val5_1 AS Int),
 	"Source"."Field1"
 )
 
 WHEN MATCHED AND "Source"."Id" = CAST(@Val3 AS Int) THEN
 UPDATE
 SET
-	"Field4" = CAST(@Val5 AS Int)
-WHEN MATCHED AND "Target"."Field3" <> CAST(@Val2 AS Int) OR "Target"."Field3" IS NULL THEN DELETE
+	"Field4" = CAST(@Val5_2 AS Int)
+WHEN MATCHED AND "Target"."Field3" <> CAST(@Val2_1 AS Int) OR "Target"."Field3" IS NULL THEN DELETE
 

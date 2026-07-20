@@ -13,6 +13,16 @@ DECLARE @UpdatedAt TimeStamp -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(6) -- String
+SET     @Name_1 = 'ts-ins'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 1
+DECLARE @CreatedBy_1 VarChar -- String
+SET     @CreatedBy_1 = NULL
+DECLARE @UpdatedAt_1 TimeStamp -- DateTime
+SET     @UpdatedAt_1 = NULL
+DECLARE @UpdatedBy_1 VarChar -- String
+SET     @UpdatedBy_1 = NULL
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -42,12 +52,12 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(6)),
-		CAST(@Version AS Int),
+		CAST(@Name_1 AS VARCHAR(6)),
+		CAST(@Version_1 AS Int),
 		CURRENT_TIMESTAMP,
-		CAST(@CreatedBy AS VARCHAR(1)),
-		CAST(@UpdatedAt AS TimeStamp),
-		CAST(@UpdatedBy AS VARCHAR(1))
+		CAST(@CreatedBy_1 AS VARCHAR(1)),
+		CAST(@UpdatedAt_1 AS TimeStamp),
+		CAST(@UpdatedBy_1 AS VARCHAR(1))
 	)
 
 -- Firebird.4 Firebird4
@@ -78,8 +88,18 @@ DECLARE @CreatedBy VarChar -- String
 SET     @CreatedBy = NULL
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(6) -- String
+SET     @Name_1 = 'ts-upd'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 2
+DECLARE @CreatedAt_1 TimeStamp -- DateTime
+SET     @CreatedAt_1 = NULL
+DECLARE @CreatedBy_1 VarChar -- String
+SET     @CreatedBy_1 = NULL
 DECLARE @UpdatedAt TimeStamp -- DateTime
 SET     @UpdatedAt = NULL
+DECLARE @UpdatedBy_1 VarChar -- String
+SET     @UpdatedBy_1 = NULL
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -109,12 +129,12 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(6)),
-		CAST(@Version AS Int),
-		CAST(@CreatedAt AS TimeStamp),
-		CAST(@CreatedBy AS VARCHAR(1)),
+		CAST(@Name_1 AS VARCHAR(6)),
+		CAST(@Version_1 AS Int),
+		CAST(@CreatedAt_1 AS TimeStamp),
+		CAST(@CreatedBy_1 AS VARCHAR(1)),
 		CAST(@UpdatedAt AS TimeStamp),
-		CAST(@UpdatedBy AS VARCHAR(1))
+		CAST(@UpdatedBy_1 AS VARCHAR(1))
 	)
 
 -- Firebird.4 Firebird4
@@ -145,6 +165,16 @@ DECLARE @UpdatedAt TimeStamp -- DateTime
 SET     @UpdatedAt = NULL
 DECLARE @UpdatedBy VarChar -- String
 SET     @UpdatedBy = NULL
+DECLARE @Name_1 VarChar(7) -- String
+SET     @Name_1 = 'root-ts'
+DECLARE @Version_1 Integer -- Int32
+SET     @Version_1 = 1
+DECLARE @CreatedBy_1 VarChar -- String
+SET     @CreatedBy_1 = NULL
+DECLARE @UpdatedAt_1 TimeStamp -- DateTime
+SET     @UpdatedAt_1 = NULL
+DECLARE @UpdatedBy_1 VarChar -- String
+SET     @UpdatedBy_1 = NULL
 
 MERGE INTO "UpsertTest" "t1"
 USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
@@ -174,12 +204,12 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@Id AS Int),
-		CAST(@Name AS VARCHAR(7)),
-		CAST(@Version AS Int),
+		CAST(@Name_1 AS VARCHAR(7)),
+		CAST(@Version_1 AS Int),
 		CURRENT_TIMESTAMP,
-		CAST(@CreatedBy AS VARCHAR(1)),
-		CAST(@UpdatedAt AS TimeStamp),
-		CAST(@UpdatedBy AS VARCHAR(1))
+		CAST(@CreatedBy_1 AS VARCHAR(1)),
+		CAST(@UpdatedAt_1 AS TimeStamp),
+		CAST(@UpdatedBy_1 AS VARCHAR(1))
 	)
 
 -- Firebird.4 Firebird4

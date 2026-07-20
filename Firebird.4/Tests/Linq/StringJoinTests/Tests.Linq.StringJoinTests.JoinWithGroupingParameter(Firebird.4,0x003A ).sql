@@ -1,11 +1,13 @@
 ﻿-- Firebird.4 Firebird4
 DECLARE @separator VarChar(2) -- String
 SET     @separator = ': '
+DECLARE @separator_1 VarChar(2) -- String
+SET     @separator_1 = ': '
 
 SELECT
 	"g_1"."Id",
 	Coalesce(LIST(Coalesce("g_1"."NullableValue", ''), CAST(@separator AS VARCHAR(2))), ''),
-	Coalesce(LIST("g_1"."NotNullableValue", CAST(@separator AS VARCHAR(2))), '')
+	Coalesce(LIST("g_1"."NotNullableValue", CAST(@separator_1 AS VARCHAR(2))), '')
 FROM
 	"SampleClass" "g_1"
 GROUP BY

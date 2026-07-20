@@ -3,6 +3,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
+DECLARE @Value_1 Integer -- Int32
+SET     @Value_1 = 10
 
 MERGE INTO "Issue681Table" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
@@ -22,7 +24,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@Value AS Int)
+		CAST(@Value_1 AS Int)
 	)
 
 -- Firebird.4 Firebird4
@@ -30,6 +32,8 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
+DECLARE @Value_1 Integer -- Int32
+SET     @Value_1 = 10
 
 MERGE INTO "Issue681Table" "t1"
 USING (SELECT CAST(@ID AS Int) AS ID FROM rdb$database) "s" ON
@@ -49,6 +53,6 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@ID AS Int),
-		CAST(@Value AS Int)
+		CAST(@Value_1 AS Int)
 	)
 
