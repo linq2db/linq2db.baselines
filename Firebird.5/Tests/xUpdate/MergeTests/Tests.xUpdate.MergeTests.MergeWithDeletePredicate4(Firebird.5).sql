@@ -64,6 +64,8 @@ WHEN NOT MATCHED THEN
 -- Firebird.5 Firebird4
 DECLARE @patient Integer -- Int32
 SET     @patient = 1
+DECLARE @patient_1 Integer -- Int32
+SET     @patient_1 = 1
 
 MERGE INTO "Person" "Target"
 USING (
@@ -77,7 +79,7 @@ USING (
 		"Person" "t"
 			INNER JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = CAST(@patient AS Int)
+		"a_Patient"."PersonID" = @patient
 ) "Source"
 (
 	ID,
@@ -119,11 +121,13 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Patient" "a_Patient_1"
 	WHERE
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
-) = CAST(@patient AS Int) THEN DELETE
+) = CAST(@patient_1 AS Int) THEN DELETE
 
 -- Firebird.5 Firebird4
 DECLARE @patient Integer -- Int32
 SET     @patient = 2
+DECLARE @patient_1 Integer -- Int32
+SET     @patient_1 = 2
 
 MERGE INTO "Person" "Target"
 USING (
@@ -137,7 +141,7 @@ USING (
 		"Person" "t"
 			INNER JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = CAST(@patient AS Int)
+		"a_Patient"."PersonID" = @patient
 ) "Source"
 (
 	ID,
@@ -179,5 +183,5 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Patient" "a_Patient_1"
 	WHERE
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
-) = CAST(@patient AS Int) THEN DELETE
+) = CAST(@patient_1 AS Int) THEN DELETE
 

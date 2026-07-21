@@ -67,6 +67,8 @@ FETCH NEXT 1 ROWS ONLY
 -- Firebird.5 Firebird4
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
+DECLARE @PersonID_1 Integer -- Int32
+SET     @PersonID_1 = 1
 
 MERGE INTO "Person" "Target"
 USING (
@@ -80,7 +82,7 @@ USING (
 		"Person" "t"
 			INNER JOIN "Patient" "a_Patient" ON "t"."PersonID" = "a_Patient"."PersonID"
 	WHERE
-		"a_Patient"."PersonID" = CAST(@PersonID AS Int)
+		"a_Patient"."PersonID" = @PersonID
 ) "Source"
 (
 	ID,
@@ -122,5 +124,5 @@ WHEN NOT MATCHED BY SOURCE AND (
 		"Patient" "a_Patient_1"
 	WHERE
 		"Target"."PersonID" = "a_Patient_1"."PersonID"
-) = CAST(@PersonID AS Int) THEN DELETE
+) = CAST(@PersonID_1 AS Int) THEN DELETE
 
