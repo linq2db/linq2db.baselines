@@ -9,7 +9,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	CAST(@id AS BINARY(16)),
+	@id,
 	(
 		SELECT
 			"t1"."required_field"
@@ -33,7 +33,7 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	CAST(@id AS BINARY(16)),
+	@id,
 	(
 		SELECT
 			"t1"."required_field"
