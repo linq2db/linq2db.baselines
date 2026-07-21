@@ -17,8 +17,8 @@ INSERT INTO Child
 )
 VALUES
 (
-	@id::Int,
-	@ParentID::Int
+	@id,
+	@ParentID
 )
 
 -- Informix.DB2 Informix

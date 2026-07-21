@@ -23,10 +23,10 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@Id::Int,
-	@Value1::NVarChar(2),
-	@Enum::NVarChar(6),
-	@Value2::NVarChar(22),
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
 	@BoolValue::VarChar(1),
 	@AnotherBoolValue::VarChar(1)
 )
@@ -73,10 +73,10 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	@Id::Int,
-	@Value1::NVarChar(200),
-	@Value2::NVarChar(200),
-	@Enum::NVarChar(6),
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
 	@BoolValue::VarChar(1),
 	@AnotherBoolValue::VarChar(1)
 )

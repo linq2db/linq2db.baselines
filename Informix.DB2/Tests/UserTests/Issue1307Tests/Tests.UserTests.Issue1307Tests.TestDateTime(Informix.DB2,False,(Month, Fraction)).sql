@@ -8,7 +8,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Month to Fraction
+	@input
 )
 
 -- Informix.DB2 Informix

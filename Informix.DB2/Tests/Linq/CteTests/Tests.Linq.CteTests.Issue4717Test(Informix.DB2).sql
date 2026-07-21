@@ -57,7 +57,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@productId::Int,
+	@productId,
 	'123-SKU',
 	'Test 123 Sku',
 	1
@@ -76,7 +76,7 @@ INSERT INTO Issue4717Product
 )
 VALUES
 (
-	@includedProductId::Int,
+	@includedProductId,
 	'ABC-SKU',
 	'Test ABC Sku',
 	1
@@ -96,8 +96,8 @@ INSERT INTO Issue4717ProductIncludedProductMapping
 )
 VALUES
 (
-	@productId::Int,
-	@includedProductId::Int,
+	@productId,
+	@includedProductId,
 	10
 )
 
@@ -114,7 +114,7 @@ INSERT INTO Issue4717WarehouseProductMapping
 VALUES
 (
 	1,
-	@productId::Int,
+	@productId,
 	10
 )
 

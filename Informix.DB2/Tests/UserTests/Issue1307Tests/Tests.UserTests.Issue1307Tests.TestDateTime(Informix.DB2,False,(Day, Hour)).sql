@@ -8,7 +8,7 @@ INSERT INTO DateTimeTestTable
 )
 VALUES
 (
-	@input::datetime Day to Hour
+	@input
 )
 
 -- Informix.DB2 Informix

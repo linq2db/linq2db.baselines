@@ -22,7 +22,7 @@ SET     @dt = TO_DATE('2010-12-14 05:00:07.42501', '%Y-%m-%d %H:%M:%S.%F5')
 UPDATE
 	LinqDataTypes t
 SET
-	DateTimeValue = @dt::datetime year to fraction
+	DateTimeValue = @dt
 WHERE
 	t.ID = 1
 
@@ -50,7 +50,7 @@ SET     @pdt = TO_DATE('2001-01-11 01:11:21.10000', '%Y-%m-%d %H:%M:%S.%F5')
 UPDATE
 	LinqDataTypes t
 SET
-	DateTimeValue = @pdt::datetime year to fraction
+	DateTimeValue = @pdt
 WHERE
 	t.ID = 1
 
