@@ -42,8 +42,6 @@ WHERE
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @diagnosis Integer(4) -- Int32
-SET     @diagnosis = 3
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
 
@@ -55,7 +53,7 @@ INSERT INTO Patient
 VALUES
 (
 	@id,
-	To_Char(@diagnosis::Int + @i::Int)
+	To_Char(3 + @i::Int)
 )
 
 -- Informix.DB2 Informix

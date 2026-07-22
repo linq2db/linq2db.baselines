@@ -12,7 +12,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	Nvl(r.BooleanN, 't'::BOOLEAN)
+	Nvl(r.BooleanN, 't'::BOOLEAN::BOOLEAN)
 
 -- Informix.DB2 Informix
 SELECT
@@ -42,7 +42,7 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	Nvl(r.BooleanN, 'f'::BOOLEAN)
+	Nvl(r.BooleanN, 'f'::BOOLEAN::BOOLEAN)
 
 -- Informix.DB2 Informix
 SELECT

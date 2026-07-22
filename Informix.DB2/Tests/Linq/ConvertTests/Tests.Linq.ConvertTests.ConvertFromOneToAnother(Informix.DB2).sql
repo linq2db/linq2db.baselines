@@ -12,7 +12,7 @@ DECLARE @value Real(4) -- Single
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	@value::Decimal
+	@value::Real
 FROM
 	LinqDataTypes t1
 
@@ -21,7 +21,7 @@ DECLARE @value Double(8)
 SET     @value = 6579.6464800000003
 
 SELECT FIRST 1
-	@value::Decimal
+	@value::Float
 FROM
 	LinqDataTypes t1
 
@@ -30,7 +30,7 @@ DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	@value::Real
+	@value::Decimal(9, 5)
 FROM
 	LinqDataTypes t1
 
@@ -48,7 +48,7 @@ DECLARE @value Double(8)
 SET     @value = 6579.6464800000003
 
 SELECT FIRST 1
-	@value::Real
+	@value::Float
 FROM
 	LinqDataTypes t1
 
@@ -57,7 +57,7 @@ DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	@value::Float
+	@value::Decimal(9, 5)
 FROM
 	LinqDataTypes t1
 
@@ -66,7 +66,7 @@ DECLARE @value Real(4) -- Single
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	@value::Float
+	@value::Real
 FROM
 	LinqDataTypes t1
 
