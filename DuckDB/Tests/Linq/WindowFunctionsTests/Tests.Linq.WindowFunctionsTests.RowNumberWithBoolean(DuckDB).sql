@@ -21,12 +21,10 @@ SELECT
 	x.NullableByteValue,
 	x.BoolValue,
 	x.NullableBoolValue,
-	PERCENT_RANK() OVER (ORDER BY x."Timestamp"),
-	PERCENT_RANK() OVER (ORDER BY x."Value"),
-	PERCENT_RANK() OVER (ORDER BY x."Timestamp" DESC),
-	PERCENT_RANK() OVER (ORDER BY x."Value" DESC),
-	PERCENT_RANK() OVER (ORDER BY x."Timestamp", x."Value"),
-	PERCENT_RANK() OVER (ORDER BY x."Timestamp" DESC, x."Value" DESC)
+	ROW_NUMBER() OVER (ORDER BY x.IntValue = 20, x.Id),
+	ROW_NUMBER() OVER (PARTITION BY x.IntValue = 20 ORDER BY x.Id),
+	ROW_NUMBER() OVER (PARTITION BY x.NullableIntValue IS NOT NULL ORDER BY x.Id),
+	ROW_NUMBER() OVER (PARTITION BY x.CategoryId ORDER BY x.NullableIntValue IS NOT NULL, x.Id)
 FROM
 	WindowFunctionTestEntity x
 ORDER BY
