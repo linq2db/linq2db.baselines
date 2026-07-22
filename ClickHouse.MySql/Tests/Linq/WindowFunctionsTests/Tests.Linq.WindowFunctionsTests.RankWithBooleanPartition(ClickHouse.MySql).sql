@@ -21,8 +21,9 @@ SELECT
 	x.NullableByteValue,
 	x.BoolValue,
 	x.NullableBoolValue,
-	toInt64(ROW_NUMBER() OVER (PARTITION BY x.CategoryId ORDER BY x.Timestamp NULLS FIRST)),
-	toInt64(ROW_NUMBER() OVER (PARTITION BY x.CategoryId ORDER BY x.Timestamp DESC))
+	RANK() OVER (PARTITION BY x.IntValue = 20 ORDER BY x.Id),
+	RANK() OVER (PARTITION BY x.CategoryId, x.IntValue = 20 ORDER BY x.Id),
+	RANK() OVER (PARTITION BY x.NullableIntValue IS NOT NULL ORDER BY x.Id)
 FROM
 	WindowFunctionTestEntity x
 ORDER BY
