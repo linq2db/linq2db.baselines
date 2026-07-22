@@ -1,4 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
+DECLARE @value Char -- String
+SET     @value = '0'
+
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -7,7 +10,11 @@ INSERT INTO "TestBool"
 VALUES
 (
 	1,
-	'1'
+	CASE
+		WHEN CAST(@value AS CHAR(1)) = '0' THEN '1'
+		WHEN CAST(@value AS CHAR(1)) = '1' THEN '0'
+		ELSE NULL
+	END
 )
 
 -- Firebird.2.5 Firebird
@@ -35,10 +42,17 @@ FROM
 	"TestBool" "t1"
 
 -- Firebird.2.5 Firebird
+DECLARE @value Char -- String
+SET     @value = '0'
+
 UPDATE
 	"TestBool" "r"
 SET
-	"Value" = '1'
+	"Value" = CASE
+		WHEN CAST(@value AS CHAR(1)) = '0' THEN '1'
+		WHEN CAST(@value AS CHAR(1)) = '1' THEN '0'
+		ELSE NULL
+	END
 WHERE
 	"r"."Id" = 1
 
