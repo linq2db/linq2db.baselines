@@ -6,7 +6,7 @@ FROM
 	(
 		SELECT
 			r.PersonID as ID,
-			CAST(NULL AS FLOAT) as Value_1
+			NULL as Value_1
 		FROM
 			Person r
 	) t1
