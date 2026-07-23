@@ -42,7 +42,11 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
+	m_1.FirstName,
 	m_1.PersonID,
+	m_1.LastName,
+	m_1.MiddleName,
+	m_1.Gender,
 	m_1.FirstName,
 	m_1.PersonID,
 	m_1.LastName,
@@ -53,13 +57,21 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	t1.PersonID
+	t1.PersonID,
+	t1.FirstName,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
 	Person t1
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
+	m_1.FirstName,
 	m_1.PersonID,
+	m_1.LastName,
+	m_1.MiddleName,
+	m_1.Gender,
 	m_1.FirstName,
 	m_1.PersonID,
 	m_1.LastName,
@@ -70,7 +82,11 @@ FROM
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
-	t1.PersonID
+	t1.PersonID,
+	t1.FirstName,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
 	Person t1
 
