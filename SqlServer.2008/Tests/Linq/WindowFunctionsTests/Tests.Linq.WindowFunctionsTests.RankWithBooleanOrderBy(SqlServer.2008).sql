@@ -21,8 +21,22 @@ SELECT
 	[x].[NullableByteValue],
 	[x].[BoolValue],
 	[x].[NullableBoolValue],
-	ROW_NUMBER() OVER (PARTITION BY [x].[CategoryId] ORDER BY [x].[Timestamp]),
-	ROW_NUMBER() OVER (PARTITION BY [x].[CategoryId] ORDER BY [x].[Timestamp] DESC)
+	RANK() OVER (ORDER BY CASE
+		WHEN [x].[IntValue] = 20 THEN 1
+		ELSE 0
+	END),
+	RANK() OVER (PARTITION BY [x].[CategoryId] ORDER BY CASE
+		WHEN [x].[IntValue] = 20 THEN 1
+		ELSE 0
+	END, [x].[Id]),
+	RANK() OVER (PARTITION BY [x].[CategoryId] ORDER BY CASE
+		WHEN [x].[IntValue] = 20 THEN 1
+		ELSE 0
+	END DESC, [x].[Id]),
+	RANK() OVER (ORDER BY CASE
+		WHEN [x].[NullableIntValue] IS NOT NULL THEN 1
+		ELSE 0
+	END, [x].[Id])
 FROM
 	[WindowFunctionTestEntity] [x]
 ORDER BY
