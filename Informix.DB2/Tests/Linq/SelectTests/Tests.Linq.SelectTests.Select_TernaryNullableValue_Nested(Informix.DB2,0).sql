@@ -3,9 +3,6 @@ DECLARE @value Integer(4) -- Int32
 SET     @value = 0
 
 SELECT
-	CASE
-		WHEN @value::Int < 2 THEN @value::Int
-		ELSE 2 + @value::Int
-	END
+	@value::Int
 FROM table(set{1})
 

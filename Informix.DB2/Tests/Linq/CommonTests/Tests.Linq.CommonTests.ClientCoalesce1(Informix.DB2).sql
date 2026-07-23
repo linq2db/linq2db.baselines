@@ -4,7 +4,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	Nvl(x.Value1, 100::Int) > 10
+	Nvl(x.Value1, 100) > 10
 
 -- Informix.DB2 Informix
 SELECT

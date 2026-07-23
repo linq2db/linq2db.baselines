@@ -1,7 +1,4 @@
 ﻿-- Informix.DB2 Informix
-DECLARE @value Char(1) -- StringFixedLength
-SET     @value = 't'
-
 INSERT INTO TestBool
 (
 	Id,
@@ -10,11 +7,7 @@ INSERT INTO TestBool
 VALUES
 (
 	1,
-	CASE
-		WHEN NOT @value::BOOLEAN THEN 't'::BOOLEAN
-		WHEN @value::BOOLEAN THEN 'f'::BOOLEAN
-		ELSE NULL
-	END
+	'f'::BOOLEAN
 )
 
 -- Informix.DB2 Informix
@@ -42,17 +35,10 @@ FROM
 	TestBool t1
 
 -- Informix.DB2 Informix
-DECLARE @value Char(1) -- StringFixedLength
-SET     @value = 't'
-
 UPDATE
 	TestBool r
 SET
-	"Value" = CASE
-		WHEN NOT @value::BOOLEAN THEN 't'::BOOLEAN
-		WHEN @value::BOOLEAN THEN 'f'::BOOLEAN
-		ELSE NULL
-	END
+	"Value" = 'f'::BOOLEAN
 WHERE
 	r.Id = 1
 
