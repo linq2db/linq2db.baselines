@@ -19,6 +19,8 @@ SELECT
 	x.NullableShortValue as NullableShortValue,
 	x.ByteValue as ByteValue,
 	x.NullableByteValue as NullableByteValue,
+	x.BoolValue as BoolValue,
+	x.NullableBoolValue as NullableBoolValue,
 	ROW_NUMBER() OVER (ORDER BY x.`Timestamp`) as rn1,
 	ROW_NUMBER() OVER (ORDER BY x.`Value`) as rn2,
 	ROW_NUMBER() OVER (ORDER BY x.`Timestamp` DESC) as rn3,
