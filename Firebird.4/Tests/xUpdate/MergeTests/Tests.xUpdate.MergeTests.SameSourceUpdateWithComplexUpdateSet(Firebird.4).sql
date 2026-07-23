@@ -207,8 +207,6 @@ VALUES
 )
 
 -- Firebird.4 Firebird4
-DECLARE @name Integer -- Int32
-SET     @name = 4
 DECLARE @idx Integer -- Int32
 SET     @idx = 6
 
@@ -236,7 +234,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Field1" = "Target"."Field1" + "Source"."Field1",
-	"Field2" = CAST(@name AS Int) + CAST(@idx AS Int),
+	"Field2" = 4 + CAST(@idx AS Int),
 	"Field3" = "Target"."Field3" + "Source"."Field3",
 	"Field4" = "Target"."Field4" + "Source"."Field4",
 	"Field5" = "Target"."Field5" + "Source"."Field5"
