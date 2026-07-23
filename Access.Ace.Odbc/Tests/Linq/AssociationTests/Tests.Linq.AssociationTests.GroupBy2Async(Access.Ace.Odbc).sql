@@ -1,6 +1,7 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 SELECT
 	[sub].[ParentID_1],
+	[sub].[Value1],
 	[sub].[ParentID],
 	[sub].[ChildID]
 FROM
@@ -8,11 +9,13 @@ FROM
 		SELECT
 			[d].[ParentID],
 			[m_1].[ParentID] as [ParentID_1],
+			[m_1].[Value1],
 			[d].[ChildID]
 		FROM
 			(
 				SELECT DISTINCT
-					[a_Parent1].[ParentID]
+					[a_Parent1].[ParentID],
+					[a_Parent1].[Value1]
 				FROM
 					[Child] [t1]
 						INNER JOIN [Parent] [a_Parent1] ON ([t1].[ParentID] = [a_Parent1].[ParentID])
@@ -23,7 +26,8 @@ FROM
 
 -- Access.Ace.Odbc AccessODBC
 SELECT DISTINCT
-	[a_Parent1].[ParentID]
+	[a_Parent1].[ParentID],
+	[a_Parent1].[Value1]
 FROM
 	[Child] [t1]
 		INNER JOIN [Parent] [a_Parent1] ON ([t1].[ParentID] = [a_Parent1].[ParentID])
