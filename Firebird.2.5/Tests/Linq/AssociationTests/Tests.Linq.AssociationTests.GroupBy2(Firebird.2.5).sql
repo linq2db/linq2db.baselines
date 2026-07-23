@@ -1,12 +1,14 @@
 ﻿-- Firebird.2.5 Firebird
 SELECT
 	"m_1"."ParentID",
+	"m_1"."Value1",
 	"d"."ParentID",
 	"d"."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			"a_Parent1"."ParentID"
+			"a_Parent1"."ParentID",
+			"a_Parent1"."Value1"
 		FROM
 			"Child" "t1"
 				INNER JOIN "Parent" "a_Parent1" ON "t1"."ParentID" = "a_Parent1"."ParentID"
@@ -16,7 +18,8 @@ FROM
 
 -- Firebird.2.5 Firebird
 SELECT DISTINCT
-	"a_Parent1"."ParentID"
+	"a_Parent1"."ParentID",
+	"a_Parent1"."Value1"
 FROM
 	"Child" "t1"
 		INNER JOIN "Parent" "a_Parent1" ON "t1"."ParentID" = "a_Parent1"."ParentID"
