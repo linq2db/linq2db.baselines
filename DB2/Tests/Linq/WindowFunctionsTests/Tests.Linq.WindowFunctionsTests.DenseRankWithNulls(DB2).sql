@@ -19,6 +19,8 @@ SELECT
 	"x"."NullableShortValue",
 	"x"."ByteValue",
 	"x"."NullableByteValue",
+	"x"."BoolValue",
+	"x"."NullableBoolValue",
 	DENSE_RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."Timestamp" NULLS FIRST),
 	DENSE_RANK() OVER (PARTITION BY "x"."CategoryId" ORDER BY "x"."Timestamp" DESC NULLS LAST)
 FROM

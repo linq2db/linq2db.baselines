@@ -19,6 +19,8 @@ SELECT
 	x.NullableShortValue,
 	x.ByteValue,
 	x.NullableByteValue,
+	x.BoolValue,
+	x.NullableBoolValue,
 	RANK() OVER (PARTITION BY x.CategoryId ORDER BY x.Timestamp NULLS FIRST),
 	RANK() OVER (PARTITION BY x.CategoryId ORDER BY x.Timestamp DESC)
 FROM

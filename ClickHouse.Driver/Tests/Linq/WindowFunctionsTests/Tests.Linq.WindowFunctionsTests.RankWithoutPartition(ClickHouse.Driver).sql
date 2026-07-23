@@ -19,6 +19,8 @@ SELECT
 	x.NullableShortValue,
 	x.ByteValue,
 	x.NullableByteValue,
+	x.BoolValue,
+	x.NullableBoolValue,
 	RANK() OVER (ORDER BY x.Timestamp),
 	RANK() OVER (ORDER BY x.Value),
 	RANK() OVER (ORDER BY x.Timestamp DESC),
