@@ -5,8 +5,6 @@ DECLARE @Version Integer(4) -- Int32
 SET     @Version = 3
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'stale'
-DECLARE @Version_1 Integer(4) -- Int32
-SET     @Version_1 = 3
 DECLARE @CreatedAt Timestamp -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy VarChar -- String
@@ -25,7 +23,7 @@ WHEN MATCHED AND @Version > "t1"."Version" THEN
 	UPDATE 
 	SET
 		"Name" = CAST(@Name AS NVarChar(5)),
-		"Version" = CAST(@Version_1 AS Int),
+		"Version" = CAST(@Version AS Int),
 		"CreatedAt" = CAST(@CreatedAt AS timestamp),
 		"CreatedBy" = CAST(@CreatedBy AS NVarChar(255)),
 		"UpdatedAt" = CAST(@UpdatedAt AS timestamp),
@@ -45,7 +43,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Id AS Int),
 		CAST(@Name AS NVarChar(5)),
-		CAST(@Version_1 AS Int),
+		CAST(@Version AS Int),
 		CAST(@CreatedAt AS timestamp),
 		CAST(@CreatedBy AS NVarChar(255)),
 		CAST(@UpdatedAt AS timestamp),
@@ -74,8 +72,6 @@ DECLARE @Version Integer(4) -- Int32
 SET     @Version = 10
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'fresh'
-DECLARE @Version_1 Integer(4) -- Int32
-SET     @Version_1 = 10
 DECLARE @CreatedAt Timestamp -- DateTime
 SET     @CreatedAt = NULL
 DECLARE @CreatedBy VarChar -- String
@@ -94,7 +90,7 @@ WHEN MATCHED AND @Version > "t1"."Version" THEN
 	UPDATE 
 	SET
 		"Name" = CAST(@Name AS NVarChar(5)),
-		"Version" = CAST(@Version_1 AS Int),
+		"Version" = CAST(@Version AS Int),
 		"CreatedAt" = CAST(@CreatedAt AS timestamp),
 		"CreatedBy" = CAST(@CreatedBy AS NVarChar(255)),
 		"UpdatedAt" = CAST(@UpdatedAt AS timestamp),
@@ -114,7 +110,7 @@ WHEN NOT MATCHED THEN
 	(
 		CAST(@Id AS Int),
 		CAST(@Name AS NVarChar(5)),
-		CAST(@Version_1 AS Int),
+		CAST(@Version AS Int),
 		CAST(@CreatedAt AS timestamp),
 		CAST(@CreatedBy AS NVarChar(255)),
 		CAST(@UpdatedAt AS timestamp),

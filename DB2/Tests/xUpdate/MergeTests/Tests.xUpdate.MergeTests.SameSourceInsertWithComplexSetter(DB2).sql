@@ -207,8 +207,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @name Integer(4) -- Int32
-SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -240,7 +238,7 @@ VALUES
 (
 	10 + "Source"."Id",
 	123,
-	CAST(@name AS Int) + @idx,
+	4 + @idx,
 	"Source"."Field2",
 	999,
 	888
