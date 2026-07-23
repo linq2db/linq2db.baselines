@@ -9,5 +9,5 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	BitAnd(t.Flags, @flag::Int) = @flag::Int
+	BitAnd(t.Flags, @flag::Int) = @flag
 

@@ -10,7 +10,7 @@ INSERT INTO StringTestTable
 VALUES
 (
 	2,
-	@data::NVarChar(255)
+	@data
 )
 
 -- Informix.DB2 Informix

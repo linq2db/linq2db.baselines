@@ -18,7 +18,7 @@ VALUES
 (
 	1001,
 	TRUE,
-	CAST(@arr AS BLOB)
+	@arr
 )
 
 -- Firebird.4 Firebird4

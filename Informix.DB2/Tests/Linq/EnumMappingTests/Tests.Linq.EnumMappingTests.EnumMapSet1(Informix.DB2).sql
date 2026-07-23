@@ -26,7 +26,7 @@ SET     @TestField = 12
 UPDATE
 	LinqDataTypes r
 SET
-	BigIntValue = @TestField::BigInt
+	BigIntValue = @TestField
 WHERE
 	r.ID = 101 AND r.BigIntValue = 11
 

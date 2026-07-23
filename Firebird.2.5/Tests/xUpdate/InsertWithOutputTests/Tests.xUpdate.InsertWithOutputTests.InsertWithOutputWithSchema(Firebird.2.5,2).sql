@@ -14,9 +14,9 @@ INSERT INTO "TableWithDataAndSchema"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value AS Int),
-	CAST(@ValueStr AS VARCHAR(8))
+	@Id,
+	@Value,
+	@ValueStr
 )
 RETURNING
 	"TableWithDataAndSchema"."Id",

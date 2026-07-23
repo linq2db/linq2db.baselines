@@ -12,8 +12,8 @@ INSERT INTO Person
 )
 VALUES
 (
-	@FirstName::NVarChar(9),
+	@FirstName,
 	'LastName',
-	@Gender::NChar(1)
+	@Gender
 )
 

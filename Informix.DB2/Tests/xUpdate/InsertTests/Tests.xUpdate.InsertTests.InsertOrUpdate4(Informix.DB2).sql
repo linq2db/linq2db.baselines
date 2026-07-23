@@ -37,13 +37,11 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id::Int
+	t1.PersonID = @id
 
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @diagnosis Integer(4) -- Int32
-SET     @diagnosis = 3
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
 
@@ -54,8 +52,8 @@ INSERT INTO Patient
 )
 VALUES
 (
-	@id::Int,
-	To_Char(@diagnosis::Int + @i::Int)
+	@id,
+	To_Char(3 + @i::Int)
 )
 
 -- Informix.DB2 Informix
@@ -69,7 +67,7 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id::Int
+	t1.PersonID = @id
 
 -- Informix.DB2 Informix
 DECLARE @i Integer(4) -- Int32
@@ -82,7 +80,7 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id::Int
+	t1.PersonID = @id
 
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32

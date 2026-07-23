@@ -207,8 +207,6 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-DECLARE @name Integer(4) -- Int32
-SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -240,7 +238,7 @@ VALUES
 (
 	10 + Source.Id,
 	123,
-	@name::Int + @idx::Int,
+	4 + @idx::Int,
 	Source.Field2,
 	999,
 	888

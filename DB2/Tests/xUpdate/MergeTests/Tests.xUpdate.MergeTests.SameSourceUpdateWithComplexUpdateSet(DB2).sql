@@ -207,8 +207,6 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @name Integer(4) -- Int32
-SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -236,7 +234,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Field1" = "Target"."Field1" + "Source"."Field1",
-	"Field2" = CAST(@name AS Int) + @idx,
+	"Field2" = 4 + @idx,
 	"Field3" = "Target"."Field3" + "Source"."Field3",
 	"Field4" = "Target"."Field4" + "Source"."Field4",
 	"Field5" = "Target"."Field5" + "Source"."Field5"

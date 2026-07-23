@@ -8,6 +8,6 @@ SELECT
 FROM
 	"AsyncDataTable" "c_1"
 WHERE
-	"c_1"."Id" = CAST(@p AS Int)
+	"c_1"."Id" = @p
 FETCH NEXT 2 ROWS ONLY
 
