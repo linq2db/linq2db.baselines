@@ -7,7 +7,7 @@ SELECT
 FROM
 	"UpsertTest" "t1"
 WHERE
-	"t1"."Id" = @Id
+	"t1"."Id" = CAST(@Id AS Int)
 
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(5) -- String
@@ -60,7 +60,7 @@ SELECT
 FROM
 	"UpsertTest" "t1"
 WHERE
-	"t1"."Id" = @Id
+	"t1"."Id" = CAST(@Id AS Int)
 
 -- Firebird.2.5 Firebird
 DECLARE @Name VarChar(5) -- String

@@ -3,7 +3,7 @@ DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	CAST(@value AS Decimal(9, 5))
+	CAST(@value AS Real)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -21,7 +21,7 @@ DECLARE @value Double
 SET     @value = 6579.6464800000003
 
 SELECT FIRST 1
-	CAST(@value AS DOUBLE PRECISION)
+	CAST(@value AS Real)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -30,7 +30,7 @@ DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	CAST(@value AS Decimal(9, 5))
+	CAST(@value AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t1"
 
@@ -39,7 +39,7 @@ DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
 SELECT FIRST 1
-	CAST(@value AS Real)
+	CAST(@value AS DOUBLE PRECISION)
 FROM
 	"LinqDataTypes" "t1"
 
