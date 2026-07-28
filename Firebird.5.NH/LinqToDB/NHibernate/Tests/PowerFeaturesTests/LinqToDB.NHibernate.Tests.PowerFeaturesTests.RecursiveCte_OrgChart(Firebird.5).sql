@@ -25,12 +25,12 @@ AS
 		o.parentid IS NULL
 	UNION ALL
 	SELECT
-		par.Level_1 + 1,
+		parent.Level_1 + 1,
 		t1.id,
 		t1.name
 	FROM
 		l2dbnh_orgunits t1
-			INNER JOIN self0 par ON par.Id = t1.parentid
+			INNER JOIN self0 parent ON parent.Id = t1.parentid
 )
 SELECT
 	t2.Id,
