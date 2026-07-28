@@ -207,6 +207,8 @@ VALUES
 )
 
 -- Firebird.5 Firebird4
+DECLARE @name Integer -- Int32
+SET     @name = 4
 DECLARE @idx Integer -- Int32
 SET     @idx = 6
 
@@ -238,7 +240,7 @@ VALUES
 (
 	10 + "Source"."Id",
 	123,
-	4 + CAST(@idx AS Int),
+	CAST(@name AS Int) + CAST(@idx AS Int),
 	"Source"."Field2",
 	999,
 	888
