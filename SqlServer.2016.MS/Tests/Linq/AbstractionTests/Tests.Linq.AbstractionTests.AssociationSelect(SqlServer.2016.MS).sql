@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2016.MS SqlServer.2016
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -29,14 +30,14 @@ FROM
 				[d].[Id]
 		) [d_1]
 
--- SqlServer.2016.MS SqlServer.2016
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[SampleClass1] [t1]
-
 -- SqlServer.2016.MS SqlServer.2016
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d_1].[Id_1],
@@ -67,10 +68,9 @@ FROM
 				[d].[Id]
 		) [d_1]
 
--- SqlServer.2016.MS SqlServer.2016
+-- Batch 2
 SELECT
 	[t1].[Id],
 	[t1].[Value]
 FROM
 	[SampleClass2] [t1]
-
