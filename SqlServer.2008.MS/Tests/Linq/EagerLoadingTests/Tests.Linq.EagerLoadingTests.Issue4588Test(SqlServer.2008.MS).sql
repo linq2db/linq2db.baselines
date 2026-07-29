@@ -1,9 +1,7 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
+-- Batch 1
+-- skip = 100
+-- take = 10
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -43,12 +41,9 @@ FROM
 	) [m_1]
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
+-- Batch 2
+-- skip = 100
+-- take = 10
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -77,12 +72,9 @@ FROM
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 100
-DECLARE @take Int -- Int32
-SET     @take = 10
-
+-- Batch 3
+-- skip = 100
+-- take = 10
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -101,4 +93,3 @@ WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
 ORDER BY
 	[t1].[Id]
-

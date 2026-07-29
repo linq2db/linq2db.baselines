@@ -30,11 +30,7 @@ WHERE
 ORDER BY
 	[d_1].[TagId],
 	[m_1].[Id]
-
--- SqlServer.2008
-DECLARE @blogId Int -- Int32
-SET     @blogId = 1
-
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -52,11 +48,7 @@ FROM
 		INNER JOIN [Post] [d] ON [m_1].[Id] = [d].[BlogId]
 ORDER BY
 	[d].[Id]
-
--- SqlServer.2008
-DECLARE @blogId Int -- Int32
-SET     @blogId = 1
-
+;
 SELECT
 	[b].[Id],
 	[b].[Title]

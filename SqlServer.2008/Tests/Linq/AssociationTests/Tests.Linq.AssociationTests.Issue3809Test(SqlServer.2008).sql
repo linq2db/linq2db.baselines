@@ -23,8 +23,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 ORDER BY
 	[d].[ChildID]
-
--- SqlServer.2008
+;
 SELECT
 	[a].[ParentID],
 	[a_ParentTest].[ParentID]
