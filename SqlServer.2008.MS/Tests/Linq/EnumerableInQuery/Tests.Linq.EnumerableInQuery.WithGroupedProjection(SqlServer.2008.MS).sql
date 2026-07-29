@@ -11,8 +11,8 @@ SELECT
 FROM
 	(
 		SELECT
+			COUNT(*) as [Count_1],
 			[g_2].[ColorName],
-			COUNT(*) as [Conditional],
 			[g_2].[StyleName]
 		FROM
 			(
@@ -40,8 +40,8 @@ FROM
 				1 as [not_null]
 			FROM
 				(VALUES
-					([t1].[ColorName],[t1].[Conditional],[t1].[StyleName],CASE
-						WHEN [t1].[ColorName] = N'Red' THEN [t1].[Conditional]
+					([t1].[ColorName],[t1].[Count_1],[t1].[StyleName],CASE
+						WHEN [t1].[ColorName] = N'Red' THEN [t1].[Count_1]
 						ELSE 0
 					END,1,2,3),
 					(NULL,0,[t1].[StyleName],NULL,4,5,6)

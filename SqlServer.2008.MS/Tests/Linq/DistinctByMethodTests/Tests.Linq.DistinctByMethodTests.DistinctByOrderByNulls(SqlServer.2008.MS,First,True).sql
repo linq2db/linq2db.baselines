@@ -14,13 +14,17 @@ FROM
 				WHEN [e].[Priority] IS NULL THEN 0
 				ELSE 1
 			END, [e].[Priority] DESC, [e].[Id], [e].[Date]) as [RowNumber],
+			[e].[Priority],
 			[e].[Id],
+			[e].[Date] as [Date_1],
 			[e].[Name],
 			[e].[Group] as [Group_1],
-			[e].[Date] as [Date_1],
 			[e].[Amount],
 			[e].[IsActive],
-			[e].[Priority]
+			CASE
+				WHEN [e].[Priority] IS NULL THEN 0
+				ELSE 1
+			END as [c1]
 		FROM
 			[TestData] [e]
 	) [t1]
@@ -33,7 +37,8 @@ ORDER BY
 	END,
 	[t1].[Priority] DESC,
 	[t1].[Id],
-	[t1].[Date_1]
+	[t1].[Date_1],
+	[t1].[c1]
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
