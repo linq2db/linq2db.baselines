@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.16 PostgreSQL.15
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -11,7 +12,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
+-- Batch 2
 SELECT
 	p."Id",
 	p."Name"
@@ -19,7 +20,6 @@ FROM
 	"NullableParent" p
 ORDER BY
 	p."Id"
-
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 WITH "CTE_1" ("Id", field, "Name")
 AS MATERIALIZED
