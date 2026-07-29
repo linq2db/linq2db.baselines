@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -15,15 +16,15 @@ FROM
 WHERE
 	[d].[ParentID] IN (2)
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (2)
-
 -- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[GrandChildID]
@@ -40,11 +41,10 @@ FROM
 WHERE
 	[d].[ParentID] IN (3)
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT DISTINCT
 	[x].[ChildID]
 FROM
 	[GrandChild] [x]
 WHERE
 	[x].[ParentID] IN (3)
-

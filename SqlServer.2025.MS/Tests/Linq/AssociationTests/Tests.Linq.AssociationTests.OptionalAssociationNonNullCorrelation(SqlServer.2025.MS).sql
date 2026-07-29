@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[ID],
 	[d].[ID],
@@ -23,7 +24,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3]
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT
 	[r].[ID],
 	[r].[ID2],
@@ -43,8 +44,8 @@ WHERE
 		WHERE
 			[a_Table3].[ID] = [id].[ID3] AND [id].[ID] = [r].[ID]
 	)
-
 -- SqlServer.2025.MS SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[ID],
 	[d].[ID],
@@ -60,7 +61,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table4] [d] ON [m_1].[ID] = [d].[ID3]
 
--- SqlServer.2025.MS SqlServer.2025
+-- Batch 2
 SELECT
 	[t1].[ID],
 	[t1].[ID2],
@@ -71,4 +72,3 @@ FROM
 	[Table1] [t1]
 		LEFT JOIN [Table2] [a_Table2] ON [t1].[ID2] = [a_Table2].[ID]
 		LEFT JOIN [Table3] [a_Table3] ON [a_Table2].[ID3] = [a_Table3].[ID]
-
