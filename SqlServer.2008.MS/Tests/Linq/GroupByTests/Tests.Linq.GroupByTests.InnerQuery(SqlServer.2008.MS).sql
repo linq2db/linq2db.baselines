@@ -1,18 +1,19 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 SELECT
-	(
-		SELECT TOP (1)
-			[s_2].[Taxonomy]
-		FROM
-			[Doctor] [s_2]
-		WHERE
-			[s_1].[Key_1] = [s_2].[PersonID]
-	)
+	[t1].[Taxonomy]
 FROM
 	(
 		SELECT DISTINCT
 			[s].[PersonID] as [Key_1]
 		FROM
 			[Doctor] [s]
-	) [s_1]
+	) [s_2]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[s_1].[Taxonomy]
+			FROM
+				[Doctor] [s_1]
+			WHERE
+				[s_2].[Key_1] = [s_1].[PersonID]
+		) [t1]
 
