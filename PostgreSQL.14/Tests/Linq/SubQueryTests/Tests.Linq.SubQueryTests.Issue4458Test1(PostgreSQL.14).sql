@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."ItemId",
@@ -20,7 +21,7 @@ ORDER BY
 	d."ItemId",
 	d."UserId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	i."Id",
 	(
@@ -44,7 +45,6 @@ WHERE
 		WHERE
 			r."ItemId" = i."Id" AND r."Score" > 95
 	)
-
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 SELECT
 	t1."Id"

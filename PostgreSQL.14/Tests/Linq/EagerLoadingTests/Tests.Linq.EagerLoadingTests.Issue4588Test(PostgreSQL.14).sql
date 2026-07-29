@@ -1,9 +1,7 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
-
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
+-- take = 10
+-- skip = 100
 SELECT
 	m_1."Id",
 	m_1."Id_1",
@@ -38,12 +36,9 @@ FROM
 	) m_1
 		INNER JOIN "SubOrderDetail" d_1 ON m_1."Id" = d_1."SubOrderId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
-
+-- Batch 2
+-- take = 10
+-- skip = 100
 SELECT
 	m_1."Id",
 	d."Id",
@@ -67,12 +62,9 @@ FROM
 	) m_1
 		INNER JOIN "SubOrder" d ON m_1."Id" = d."OrderId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
-
+-- Batch 3
+-- take = 10
+-- skip = 100
 SELECT
 	x."Id",
 	x."Name"
@@ -83,4 +75,3 @@ WHERE
 ORDER BY
 	x."Id"
 LIMIT :take OFFSET :skip 
-
