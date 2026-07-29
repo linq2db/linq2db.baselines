@@ -5,16 +5,12 @@ FROM
 WHERE
 	`Person`.`PersonID` > 4
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John0'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- FirstName = John0
+-- LastName = Shepard
+-- MiddleName = NULL
+-- Gender = M
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -30,9 +26,9 @@ VALUES
 	@Gender
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John0'
@@ -49,16 +45,12 @@ WHERE
 	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
 LIMIT 2
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(5) -- String
-SET     @FirstName = 'John1'
-DECLARE @LastName VarChar(7) -- String
-SET     @LastName = 'Shepard'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender String(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- FirstName = John1
+-- LastName = Shepard
+-- MiddleName = NULL
+-- Gender = M
 INSERT INTO `Person`
 (
 	`FirstName`,
@@ -74,9 +66,9 @@ VALUES
 	@Gender
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @p VarChar(5) -- String
 SET     @p = 'John1'

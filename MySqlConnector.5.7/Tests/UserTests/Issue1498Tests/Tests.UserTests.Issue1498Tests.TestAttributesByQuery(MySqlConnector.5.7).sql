@@ -19,7 +19,8 @@ VALUES
 	@Text
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`
@@ -35,7 +36,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Message` `d` ON `d`.`TopicId` = `m_1`.`Id`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`x`.`Id`,
 	`x`.`Title`,
@@ -45,4 +46,3 @@ FROM
 WHERE
 	`x`.`Id` = 6
 LIMIT 1
-

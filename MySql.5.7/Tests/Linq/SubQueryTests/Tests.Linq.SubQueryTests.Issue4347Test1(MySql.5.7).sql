@@ -26,8 +26,7 @@ WHERE
 					`a_Lines`.`Currency` = `t1`.`item` OR `a_Lines`.`Currency` IS NULL AND `t1`.`item` IS NULL
 			)
 	)
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`x`.`Id`,
 	`x`.`ValidOn`

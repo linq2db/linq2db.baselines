@@ -1,7 +1,6 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Value Int32
-SET     @Value = 0
-
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
+-- Value = 0
 INSERT INTO `KeepIdentityTest`
 (
 	`Value`
@@ -11,9 +10,9 @@ VALUES
 	@Value
 )
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-SELECT LAST_INSERT_ID()
-
+-- Batch 2
+SELECT
+	LAST_INSERT_ID() as `c1`
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @lastId Int32
 SET     @lastId = 374

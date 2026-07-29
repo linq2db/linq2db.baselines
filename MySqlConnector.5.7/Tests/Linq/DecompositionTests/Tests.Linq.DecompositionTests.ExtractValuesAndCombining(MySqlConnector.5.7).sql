@@ -286,8 +286,7 @@ FROM
 			`t1`.`Bottom`
 	) `x_1`
 WHERE
-	`x_1`.`Color` AND `x_1`.`Color_1` IS NOT NULL AND `x_1`.`Color_1` OR
-	NOT `x_1`.`Color`
+	`x_1`.`Color` AND `x_1`.`Color_1` IS NOT NULL AND `x_1`.`Color_1` OR NOT `x_1`.`Color`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
@@ -451,8 +450,7 @@ FROM
 			`t1`.`Bottom`
 	) `x_1`
 WHERE
-	`x_1`.`Size_1` AND `x_1`.`Color` IS NULL AND `x_1`.`Size_2` OR
-	NOT `x_1`.`Size_1`
+	`x_1`.`Size_1` AND `x_1`.`Color` IS NULL AND `x_1`.`Size_2` OR NOT `x_1`.`Size_1`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
