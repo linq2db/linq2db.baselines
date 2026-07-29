@@ -27,8 +27,7 @@ FROM
 			[t3].[Parent1] IS NOT NULL
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[t1].[Parent1],
 	[t1].[ParentID],

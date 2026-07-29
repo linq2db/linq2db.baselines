@@ -3,8 +3,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t].[Id]
 FROM
@@ -15,8 +14,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[x].[Id]
 FROM
@@ -29,8 +27,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[x].[Id]
 FROM
@@ -43,8 +40,7 @@ SELECT
 	1
 FROM
 	[TableStatus_3014] [x]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[e].[Id]
 FROM

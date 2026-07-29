@@ -14,8 +14,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_2].[DetailId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_2].[DetailId],
 	[m_2].[Id1],
@@ -32,8 +31,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -41,8 +39,7 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id1],
 	'M' || [m_1].[Id1]
@@ -65,8 +62,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [d_1].[DetailId] = [m_2].[DetailId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_2].[DetailId],
 	[m_2].[Id1],
@@ -83,8 +79,7 @@ FROM
 				INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id1],
 	[d].[DetailId],
@@ -92,8 +87,7 @@ SELECT
 FROM
 	[MasterClass] [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1]
-
--- SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id1],
 	'M' || [m_1].[Id1]

@@ -26,8 +26,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [LeftRight] [d] ON [m_1].[LeftId] = [d].[LeftId]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[LeftId],
 	[t1].[LeftData]
@@ -49,8 +48,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [LeftRight] [d] ON [m_1].[RightId] = [d].[RightId]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[RightId],
 	[t1].[RightData]

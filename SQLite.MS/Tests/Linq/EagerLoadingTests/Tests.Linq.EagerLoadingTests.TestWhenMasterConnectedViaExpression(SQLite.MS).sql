@@ -12,8 +12,7 @@ FROM
 			[MasterManyId] [g_1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_1].[Key_1],
 	[d].[DetailId],
@@ -27,8 +26,7 @@ FROM
 			[MasterManyId] [g_1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	COUNT(*),
 	[g_1].[Id1]

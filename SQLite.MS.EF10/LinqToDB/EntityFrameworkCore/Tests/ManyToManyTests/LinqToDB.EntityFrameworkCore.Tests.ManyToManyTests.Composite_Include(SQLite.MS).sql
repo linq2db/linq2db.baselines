@@ -22,10 +22,7 @@ FROM
 		INNER JOIN [Members] [o] ON [o].[Id] = [d].[MemberId]
 ORDER BY
 	[m_1].[Code]
-
-
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],
