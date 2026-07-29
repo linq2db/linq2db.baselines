@@ -14,13 +14,17 @@ FROM
 				WHEN e.Priority IS NULL THEN 0
 				ELSE 1
 			END, e.Priority DESC, e.Id, e.`Date`) as RowNumber,
+			e.Priority as Priority,
 			e.Id as Id,
+			e.`Date` as Date_1,
 			e.Name as Name,
 			e.`Group` as Group_1,
-			e.`Date` as Date_1,
 			e.Amount as Amount,
 			e.IsActive as IsActive,
-			e.Priority as Priority
+			CASE
+				WHEN e.Priority IS NULL THEN 0
+				ELSE 1
+			END as c1
 		FROM
 			TestData e
 	) t1
@@ -33,7 +37,8 @@ ORDER BY
 	END,
 	t1.Priority DESC,
 	t1.Id,
-	t1.Date_1
+	t1.Date_1,
+	t1.c1
 
 -- YDB Ydb
 SELECT
