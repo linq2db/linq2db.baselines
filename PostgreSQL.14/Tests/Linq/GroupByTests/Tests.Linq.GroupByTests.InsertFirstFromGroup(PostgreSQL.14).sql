@@ -30,17 +30,18 @@ INSERT INTO temp_table_2
 	"Value"
 )
 SELECT
-	(
-		SELECT
-			c_1."Value"
-		FROM
-			temp_table_1 c_1
-		WHERE
-			gr."ID" = c_1."ID"
-		LIMIT 1
-	)
+	t1."Value_1"
 FROM
 	temp_table_1 gr
+		INNER JOIN LATERAL (
+			SELECT
+				c_1."Value" as "Value_1"
+			FROM
+				temp_table_1 c_1
+			WHERE
+				gr."ID" = c_1."ID"
+			LIMIT 1
+		) t1 ON 1=1
 
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
 DROP TABLE IF EXISTS temp_table_2
