@@ -23,17 +23,16 @@ INSERT INTO [temp_table_2]
 	[Value]
 )
 SELECT
-	[t1].[Value_1]
+	(
+		SELECT TOP (1)
+			[c_1].[Value]
+		FROM
+			[temp_table_1] [c_1]
+		WHERE
+			[gr].[ID] = [c_1].[ID]
+	)
 FROM
 	[temp_table_1] [gr]
-		CROSS APPLY (
-			SELECT TOP (1)
-				[c_1].[Value] as [Value_1]
-			FROM
-				[temp_table_1] [c_1]
-			WHERE
-				[gr].[ID] = [c_1].[ID]
-		) [t1]
 
 -- SqlServer.2017.MS SqlServer.2017
 DROP TABLE IF EXISTS [temp_table_2]
