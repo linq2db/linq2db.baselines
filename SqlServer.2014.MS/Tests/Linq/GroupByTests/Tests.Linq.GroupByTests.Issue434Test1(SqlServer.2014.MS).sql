@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
-
+-- Batch 1
+-- input = %test%
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID],
@@ -12,10 +11,8 @@ FROM
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE N'~'
 
--- SqlServer.2014.MS SqlServer.2014
-DECLARE @input NVarChar(4000) -- String
-SET     @input = N'%test%'
-
+-- Batch 2
+-- input = %test%
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]
@@ -23,4 +20,3 @@ FROM
 	[Person] [p]
 WHERE
 	Lower([p].[FirstName]) LIKE @input ESCAPE N'~'
-

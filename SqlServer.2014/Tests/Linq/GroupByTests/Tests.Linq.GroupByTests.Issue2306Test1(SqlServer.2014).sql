@@ -8,8 +8,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SqlServer.2014
+;
 SELECT
 	[t1].[PersonID]
 FROM
@@ -25,8 +24,7 @@ SELECT
 	[m_1].[Gender]
 FROM
 	[Person] [m_1]
-
--- SqlServer.2014
+;
 SELECT
 	[t1].[PersonID]
 FROM
