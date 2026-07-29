@@ -22,7 +22,7 @@ SELECT
 FROM
 	"Products" e
 WHERE
-	e."ProductID" > 2 AND NOT e."Discontinued" AND NOT e."IsDeleted"
+	e."ProductID" > 2 AND NOT (e."Discontinued" OR e."IsDeleted")
 
 
 
