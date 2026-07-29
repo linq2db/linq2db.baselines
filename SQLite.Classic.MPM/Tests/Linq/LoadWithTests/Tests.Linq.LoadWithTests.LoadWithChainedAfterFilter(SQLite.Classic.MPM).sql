@@ -30,8 +30,7 @@ FROM
 				INNER JOIN [PeopleForLoadWith] [d] ON [t1].[Id] = [d].[ParentId]
 	) [m_1]
 		INNER JOIN [PeopleForLoadWith] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -55,8 +54,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [PeopleForLoadWith] [d] ON [m_1].[Id] = [d].[ParentId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[p].[Id],
 	[p].[Name],

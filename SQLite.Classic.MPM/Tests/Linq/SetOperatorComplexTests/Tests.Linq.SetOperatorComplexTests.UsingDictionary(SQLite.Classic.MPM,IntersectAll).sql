@@ -37,8 +37,7 @@ FROM
 	) [m_1]
 		INNER JOIN [BookAuthor] [d_1] ON [d_1].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
@@ -50,8 +49,7 @@ FROM
 	[Author] [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkAuthorId] = [m_1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[t1].[AuthorId],
 	[t1].[AuthorName]

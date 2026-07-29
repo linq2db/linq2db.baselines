@@ -11,8 +11,7 @@ FROM
 		INNER JOIN [ItemText] [d] ON [m_1].[Id] = [d].[ItemId]
 WHERE
 	[d].[Lang] = @lang
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[item_1].[Name],
 	[item_1].[Id]

@@ -18,11 +18,7 @@ FROM
 	[ValueConversion] [m_1]
 WHERE
 	@testedList = [m_1].[Value2]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @testedList NVarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+;
 SELECT
 	[g_1].[Id]
 FROM

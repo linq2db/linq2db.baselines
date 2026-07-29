@@ -1,15 +1,14 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
+DECLARE @take  -- Int32
+SET     @take = 11
+
 SELECT
 	[t1].[DetailId],
 	[t1].[MasterId],
 	[t1].[DetailValue]
 FROM
 	[DetailClass] [t1]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 11
-
+;
 SELECT
 	COUNT(*)
 FROM
