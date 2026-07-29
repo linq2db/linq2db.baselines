@@ -15,14 +15,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(3),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
 	CreatedBy = 'second-root',
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
@@ -48,12 +48,12 @@ INSERT INTO UpsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(3),
-	@Version::Int,
-	@CreatedAt::datetime year to fraction,
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
 	'second-root',
-	@UpdatedAt::datetime year to fraction,
+	@UpdatedAt,
 	'second-branch'
 )
 

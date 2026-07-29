@@ -8,5 +8,5 @@ SELECT FIRST 2
 FROM
 	AsyncDataTable c_1
 WHERE
-	c_1.Id = @p::Int
+	c_1.Id = @p
 

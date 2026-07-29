@@ -14,9 +14,9 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	@ID::Int,
-	@MoneyValue::Decimal(4, 0),
-	@SmallIntValue::SmallInt
+	@ID,
+	@MoneyValue,
+	@SmallIntValue
 )
 
 -- Informix.DB2 Informix

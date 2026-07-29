@@ -19,7 +19,7 @@ USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
-WHEN MATCHED AND CAST(@Version AS Int) > "t1"."Version" THEN
+WHEN MATCHED AND @Version > "t1"."Version" THEN
 	UPDATE 
 	SET
 		"Name" = CAST(@Name AS VARCHAR(5)),
@@ -86,7 +86,7 @@ USING (SELECT CAST(@Id AS Int) AS "Id" FROM rdb$database) "s" ON
 (
 	"t1"."Id" = "s"."Id"
 )
-WHEN MATCHED AND CAST(@Version AS Int) > "t1"."Version" THEN
+WHEN MATCHED AND @Version > "t1"."Version" THEN
 	UPDATE 
 	SET
 		"Name" = CAST(@Name AS VARCHAR(5)),

@@ -16,7 +16,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	1001,
-	CAST(@tt AS BigInt)
+	@tt
 )
 
 -- Firebird.2.5 Firebird

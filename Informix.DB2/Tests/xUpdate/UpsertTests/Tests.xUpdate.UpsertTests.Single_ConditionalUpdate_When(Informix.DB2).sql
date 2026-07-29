@@ -7,7 +7,7 @@ SELECT
 FROM
 	UpsertTest t1
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Name VarChar(5) -- String
@@ -28,14 +28,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(5),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int AND @Version::Int > t1.Version
+	t1.Id = @Id AND @Version > t1.Version
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
@@ -60,7 +60,7 @@ SELECT
 FROM
 	UpsertTest t1
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Name VarChar(5) -- String
@@ -81,14 +81,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(5),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int AND @Version::Int > t1.Version
+	t1.Id = @Id AND @Version > t1.Version
 
 -- Informix.DB2 Informix
 SELECT FIRST 2

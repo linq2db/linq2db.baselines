@@ -17,14 +17,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(5),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
@@ -54,13 +54,13 @@ INSERT INTO UpsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(5),
-	@Version::Int,
-	@CreatedAt::datetime year to fraction,
-	@CreatedBy::NVarChar(255),
-	@UpdatedAt::datetime year to fraction,
-	@UpdatedBy::NVarChar(255)
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
+	@CreatedBy,
+	@UpdatedAt,
+	@UpdatedBy
 )
 
 -- Informix.DB2 Informix
@@ -82,14 +82,14 @@ SET     @Id = 2
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(6),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
@@ -119,13 +119,13 @@ INSERT INTO UpsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(6),
-	@Version::Int,
-	@CreatedAt::datetime year to fraction,
-	@CreatedBy::NVarChar(255),
-	@UpdatedAt::datetime year to fraction,
-	@UpdatedBy::NVarChar(255)
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
+	@CreatedBy,
+	@UpdatedAt,
+	@UpdatedBy
 )
 
 -- Informix.DB2 Informix

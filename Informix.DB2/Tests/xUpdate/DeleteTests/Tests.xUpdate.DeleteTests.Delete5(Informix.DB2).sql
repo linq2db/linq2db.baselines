@@ -21,7 +21,7 @@ INSERT INTO Parent
 )
 VALUES
 (
-	@ParentID::Int,
+	@ParentID,
 	1
 )
 
@@ -36,7 +36,7 @@ INSERT INTO Parent
 )
 VALUES
 (
-	@ParentID::Int,
+	@ParentID,
 	1
 )
 

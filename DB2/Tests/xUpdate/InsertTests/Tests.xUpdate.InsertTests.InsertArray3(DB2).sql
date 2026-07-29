@@ -18,7 +18,7 @@ VALUES
 (
 	1001,
 	1,
-	CAST(@arr AS VARBINARY(4))
+	@arr
 )
 
 -- DB2 DB2.LUW DB2LUW

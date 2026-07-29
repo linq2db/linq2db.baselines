@@ -7,7 +7,7 @@ SELECT
 FROM
 	UpsertTest t1
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 SELECT FIRST 2

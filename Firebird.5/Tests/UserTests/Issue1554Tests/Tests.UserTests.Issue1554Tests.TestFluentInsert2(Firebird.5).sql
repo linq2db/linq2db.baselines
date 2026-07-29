@@ -14,9 +14,9 @@ INSERT INTO "Issue1554FluentTable"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@ClaimedKeyType AS VARCHAR(2)),
-	CAST(@ClaimedKeyTypeN AS VARCHAR(1))
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 -- Firebird.5 Firebird4

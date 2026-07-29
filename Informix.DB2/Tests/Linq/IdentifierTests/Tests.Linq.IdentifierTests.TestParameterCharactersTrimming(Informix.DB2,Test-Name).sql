@@ -5,7 +5,7 @@ SET     @TestName = 2
 UPDATE
 	testparams t
 SET
-	"Test-Name" = @TestName::Int
+	"Test-Name" = @TestName
 WHERE
 	t."Test-Name" = 1
 

@@ -35,7 +35,7 @@ SET
 	"UpdatedAt" = CAST(@UpdatedAt AS TimeStamp),
 	"UpdatedBy" = CAST(@UpdatedBy AS VARCHAR(1))
 WHERE
-	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
+	"t1"."Id" = CAST(@Id AS Int) AND @Version > "t1"."Version"
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2
@@ -88,7 +88,7 @@ SET
 	"UpdatedAt" = CAST(@UpdatedAt AS TimeStamp),
 	"UpdatedBy" = CAST(@UpdatedBy AS VARCHAR(1))
 WHERE
-	"t1"."Id" = CAST(@Id AS Int) AND CAST(@Version AS Int) > "t1"."Version"
+	"t1"."Id" = CAST(@Id AS Int) AND @Version > "t1"."Version"
 
 -- Firebird.2.5 Firebird
 SELECT FIRST 2

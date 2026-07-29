@@ -17,14 +17,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(6),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
@@ -52,13 +52,13 @@ INSERT INTO UpsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(6),
-	@Version::Int,
+	@Id,
+	@Name,
+	@Version,
 	CURRENT,
-	@CreatedBy::NVarChar(255),
-	@UpdatedAt::datetime year to fraction,
-	@UpdatedBy::NVarChar(255)
+	@CreatedBy,
+	@UpdatedAt,
+	@UpdatedBy
 )
 
 -- Informix.DB2 Informix
@@ -92,14 +92,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(6),
-	Version = @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
+	Name = @Name,
+	Version = @Version,
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
 	UpdatedAt = CURRENT,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 SELECT FIRST 2
@@ -132,14 +132,14 @@ SET     @Id = 2
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(7),
-	Version = @Version::Int,
+	Name = @Name,
+	Version = @Version,
 	CreatedAt = CURRENT,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
@@ -167,13 +167,13 @@ INSERT INTO UpsertTest
 )
 VALUES
 (
-	@Id::Int,
-	@Name::NVarChar(7),
-	@Version::Int,
+	@Id,
+	@Name,
+	@Version,
 	CURRENT,
-	@CreatedBy::NVarChar(255),
-	@UpdatedAt::datetime year to fraction,
-	@UpdatedBy::NVarChar(255)
+	@CreatedBy,
+	@UpdatedAt,
+	@UpdatedBy
 )
 
 -- Informix.DB2 Informix

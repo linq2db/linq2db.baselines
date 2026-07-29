@@ -15,7 +15,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	CAST(@ParentID AS Int),
+	@ParentID,
 	1
 )
 

@@ -5,7 +5,7 @@ SET     @v1 = 1
 UPDATE
 	Parent p
 SET
-	Value1 = @v1::Int
+	Value1 = @v1
 WHERE
-	p.Value1 = @v1::Int
+	p.Value1 = @v1
 

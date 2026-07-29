@@ -18,7 +18,7 @@ SET     @Data = '***OOO***'
 UPDATE
 	TrimTestTable t
 SET
-	"Data" = @Data::NVarChar(9)
+	"Data" = @Data
 WHERE
 	t."Data" = '***XXX***'
 
@@ -31,7 +31,7 @@ SET     @p = '***HHH***'
 UPDATE
 	TrimTestTable t
 SET
-	"Data" = @Data::NVarChar(9)
+	"Data" = @Data
 WHERE
 	t."Data" = @p
 

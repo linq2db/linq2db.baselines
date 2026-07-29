@@ -5,7 +5,7 @@ SET     @p = 2
 UPDATE
 	testparams t
 SET
-	"1p" = @p::Int
+	"1p" = @p
 WHERE
 	t."1p" = 1
 

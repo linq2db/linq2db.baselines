@@ -229,7 +229,7 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 	WHERE
-		"t1"."Id" <> CAST(@Val5 AS Int)
+		"t1"."Id" <> @Val5
 ) "Source"
 (
 	"Id",

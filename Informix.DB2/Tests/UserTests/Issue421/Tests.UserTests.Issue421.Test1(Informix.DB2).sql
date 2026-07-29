@@ -11,8 +11,8 @@ INSERT INTO BlobClass
 )
 VALUES
 (
-	@Id::Int,
-	@BlobValue::byte
+	@Id,
+	@BlobValue
 )
 
 -- Informix.DB2 Informix
@@ -31,7 +31,7 @@ SET     @BlobValue = {3,2,1}
 UPDATE
 	BlobClass t1
 SET
-	BlobValue = @BlobValue::byte
+	BlobValue = @BlobValue
 WHERE
 	t1.Id = 1
 

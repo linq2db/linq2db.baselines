@@ -28,8 +28,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	CAST(@ID AS Int),
-	CAST(@Data AS VARCHAR(9))
+	@ID,
+	@Data
 )
 
 -- Firebird.5 Firebird4

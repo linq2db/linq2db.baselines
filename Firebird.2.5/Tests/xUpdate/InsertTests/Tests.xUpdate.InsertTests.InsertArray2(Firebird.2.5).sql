@@ -18,7 +18,7 @@ VALUES
 (
 	1001,
 	'1',
-	CAST(@arr AS BLOB)
+	@arr
 )
 
 -- Firebird.2.5 Firebird

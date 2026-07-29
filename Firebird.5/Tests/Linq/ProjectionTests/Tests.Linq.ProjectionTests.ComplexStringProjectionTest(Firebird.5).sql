@@ -10,7 +10,7 @@ INSERT INTO "StringTestTable"
 VALUES
 (
 	2,
-	CAST(@data AS VARCHAR(1))
+	@data
 )
 
 -- Firebird.5 Firebird4

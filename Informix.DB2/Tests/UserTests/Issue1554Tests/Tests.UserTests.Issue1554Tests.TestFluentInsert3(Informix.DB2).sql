@@ -14,9 +14,9 @@ INSERT INTO Issue1554FluentTable
 )
 VALUES
 (
-	@Id::Int,
-	@ClaimedKeyType::NVarChar(2),
-	@ClaimedKeyTypeN::NVarChar(2)
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 -- Informix.DB2 Informix

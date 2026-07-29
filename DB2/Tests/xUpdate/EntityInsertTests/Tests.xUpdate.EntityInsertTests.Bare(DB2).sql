@@ -20,11 +20,11 @@ INSERT INTO "EntityInsertTest"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Name AS NVarChar(2)),
-	CAST(@Version AS Int),
-	CAST(@CreatedAt AS timestamp),
-	CAST(@CreatedBy AS NVarChar(2))
+	@Id,
+	@Name,
+	@Version,
+	@CreatedAt,
+	@CreatedBy
 )
 
 -- DB2 DB2.LUW DB2LUW

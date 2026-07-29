@@ -13,10 +13,10 @@ SET     @Id = 1
 UPDATE
 	EntityUpdateTest t
 SET
-	Name = @Name::NVarChar(5),
-	Version = @Version::Int,
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	Name = @Name,
+	Version = @Version,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
 	t.Id = @Id
 

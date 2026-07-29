@@ -17,14 +17,14 @@ SET     @Id = 1
 UPDATE
 	UpsertTest t1
 SET
-	Name = @Name::NVarChar(3),
+	Name = @Name,
 	Version = t1.Version + @Version::Int,
-	CreatedAt = @CreatedAt::datetime year to fraction,
-	CreatedBy = @CreatedBy::NVarChar(255),
-	UpdatedAt = @UpdatedAt::datetime year to fraction,
-	UpdatedBy = @UpdatedBy::NVarChar(255)
+	CreatedAt = @CreatedAt,
+	CreatedBy = @CreatedBy,
+	UpdatedAt = @UpdatedAt,
+	UpdatedBy = @UpdatedBy
 WHERE
-	t1.Id = @Id::Int
+	t1.Id = @Id
 
 -- Informix.DB2 Informix
 SELECT FIRST 2

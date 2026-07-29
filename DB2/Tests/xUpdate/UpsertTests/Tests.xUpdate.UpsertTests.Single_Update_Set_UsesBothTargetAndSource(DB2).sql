@@ -23,7 +23,7 @@ WHEN MATCHED THEN
 	UPDATE 
 	SET
 		"Name" = CAST(@Name AS NVarChar(3)),
-		"Version" = "t1"."Version" + CAST(@Version AS Int),
+		"Version" = "t1"."Version" + @Version,
 		"CreatedAt" = CAST(@CreatedAt AS timestamp),
 		"CreatedBy" = CAST(@CreatedBy AS NVarChar(255)),
 		"UpdatedAt" = CAST(@UpdatedAt AS timestamp),

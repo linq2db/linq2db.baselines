@@ -10,7 +10,7 @@ INSERT INTO "StringTestTable"
 VALUES
 (
 	2,
-	CAST(@data AS NVarChar(255))
+	@data
 )
 
 -- DB2 DB2.LUW DB2LUW

@@ -35,7 +35,7 @@ SELECT
 FROM
 	Patient t1
 WHERE
-	t1.PersonID = @id::Int
+	t1.PersonID = @id
 
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
@@ -48,7 +48,7 @@ INSERT INTO Patient
 )
 VALUES
 (
-	@id::Int,
+	@id,
 	'negative'
 )
 
@@ -73,7 +73,7 @@ SELECT
 FROM
 	Patient t1
 WHERE
-	t1.PersonID = @id::Int
+	t1.PersonID = @id
 
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
