@@ -1,17 +1,17 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
-	(
-		SELECT
-			"a_Reference"."Name"
-		FROM
-			"TestTable" "t1"
-				INNER JOIN "Reference" "a_Reference" ON "t1"."ReferenceId" = "a_Reference"."Id"
-		WHERE
-			"g_1"."Id" = "t1"."Id"
-		FETCH NEXT 1 ROWS ONLY
-	)
+	"t2"."ReferenceName"
 FROM
 	"TestTable" "g_1"
+		INNER JOIN (
+			SELECT
+				"a_Reference"."Name" as "ReferenceName",
+				ROW_NUMBER() OVER (PARTITION BY "t1"."Id" ORDER BY "t1"."Id") as "rn",
+				"t1"."Id"
+			FROM
+				"TestTable" "t1"
+					INNER JOIN "Reference" "a_Reference" ON "t1"."ReferenceId" = "a_Reference"."Id"
+		) "t2" ON "g_1"."Id" = "t2"."Id" AND "t2"."rn" = 1
 
 -- Firebird.3 Firebird3
 SELECT
