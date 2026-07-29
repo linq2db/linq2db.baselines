@@ -38,8 +38,7 @@ FROM
 			[SomeTable] [t1] WITH (NOLOCK)
 	) [m_1]
 		CROSS APPLY dbo.fn_SomeFunction([m_1].[Id]) [d]
-
--- SqlServer.SA SqlServer.2019
+;
 SELECT
 	[t1].[Id],
 	[t1].[OwnerStr]

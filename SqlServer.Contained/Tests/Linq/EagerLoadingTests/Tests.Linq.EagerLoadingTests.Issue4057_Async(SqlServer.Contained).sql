@@ -13,8 +13,7 @@ FROM
 			[x].[ParentID] = 3
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.Contained SqlServer.2019
+;
 SELECT TOP (1)
 	[x].[ParentID],
 	[x].[Value1]

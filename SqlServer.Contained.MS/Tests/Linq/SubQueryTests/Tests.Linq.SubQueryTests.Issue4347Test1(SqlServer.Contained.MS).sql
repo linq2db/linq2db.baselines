@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -24,7 +25,7 @@ WHERE
 			) [t1]([item])
 	)
 
--- SqlServer.Contained.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[x].[Id],
 	[x].[ValidOn]
@@ -48,4 +49,3 @@ WHERE
 	)
 ORDER BY
 	[x].[ValidOn]
-

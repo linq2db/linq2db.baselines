@@ -7,8 +7,7 @@ SELECT
 FROM
 	[TransactionEntity] [m_1]
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
-
--- SqlServer.SA SqlServer.2019
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]

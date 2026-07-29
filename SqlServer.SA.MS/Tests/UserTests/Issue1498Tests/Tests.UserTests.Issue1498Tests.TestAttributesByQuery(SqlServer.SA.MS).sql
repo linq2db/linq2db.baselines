@@ -33,8 +33,7 @@ FROM
 			[x].[Id] = 6
 	) [m_1]
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
-
--- SqlServer.SA.MS SqlServer.2019
+;
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],
