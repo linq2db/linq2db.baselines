@@ -30,17 +30,17 @@ INSERT INTO [temp_table_2]
 	[Value]
 )
 SELECT
-	(
-		SELECT
-			[c_1].[Value]
-		FROM
-			[temp_table_1] [c_1]
-		WHERE
-			[gr].[ID] = [c_1].[ID]
-		LIMIT 1
-	)
+	[t1].[Value_1]
 FROM
 	[temp_table_1] [gr]
+		INNER JOIN (
+			SELECT
+				[c_1].[Value] as [Value_1],
+				ROW_NUMBER() OVER (PARTITION BY [c_1].[ID] ORDER BY [c_1].[ID]) as [rn],
+				[c_1].[ID]
+			FROM
+				[temp_table_1] [c_1]
+		) [t1] ON [gr].[ID] = [t1].[ID] AND [t1].[rn] = 1
 
 -- SQLite.Classic SQLite
 DROP TABLE IF EXISTS [temp_table_2]
