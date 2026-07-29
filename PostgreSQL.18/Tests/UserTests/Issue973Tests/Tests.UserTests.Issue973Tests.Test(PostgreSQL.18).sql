@@ -26,8 +26,7 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (1, 2, 3) OR o."ParentID" IS NULL) OR
-	o."ParentID" = :param
+	(o."ParentID" IN (1, 2, 3) OR o."ParentID" IS NULL) OR o."ParentID" = :param
 
 -- PostgreSQL.18 PostgreSQL12
 DECLARE @p Integer -- Int32
@@ -57,6 +56,5 @@ SELECT
 FROM
 	"Parent" o
 WHERE
-	(o."ParentID" IN (4, 5, 6) OR o."ParentID" IS NULL) OR
-	o."ParentID" = :param
+	(o."ParentID" IN (4, 5, 6) OR o."ParentID" IS NULL) OR o."ParentID" = :param
 

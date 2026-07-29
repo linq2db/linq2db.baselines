@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Id",
 	m_1."Id",
@@ -23,7 +24,7 @@ FROM
 ORDER BY
 	m_1."Id_1"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	m_1."LINE_ID",
 	d."LINE_ID",
@@ -37,7 +38,7 @@ FROM
 ORDER BY
 	m_1."LINE_ID"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 3
 SELECT
 	t1."LINE_ID",
 	t1."LINE_ID"
@@ -45,4 +46,3 @@ FROM
 	"PUMPLINES" t1
 ORDER BY
 	t1."LINE_ID"
-

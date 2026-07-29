@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.18 PostgreSQL12
+﻿-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -13,11 +14,10 @@ FROM
 	) m_1
 		INNER JOIN "EntityD" d ON m_1."Id" = d."FK"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	e."Id",
 	"a_ObjectB"."Id"
 FROM
 	"EntityA" e
 		INNER JOIN "EntityB" "a_ObjectB" ON e."FK" = "a_ObjectB"."Id"
-

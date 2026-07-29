@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.18 PostgreSQL12
-DECLARE @testedList Varchar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+﻿-- PostgreSQL.18
+-- Batch 1
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	m_1."Id",
 	m_1."Id",
@@ -19,14 +18,11 @@ FROM
 WHERE
 	:testedList = m_1."Value2"
 
--- PostgreSQL.18 PostgreSQL12
-DECLARE @testedList Varchar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
-
+-- Batch 2
+-- testedList = [{"Value":"Value1"}]
 SELECT
 	g_1."Id"
 FROM
 	"ValueConversion" g_1
 WHERE
 	:testedList = g_1."Value2"
-
