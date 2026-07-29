@@ -14,9 +14,9 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[City] as [Key_1]
+			[t1].[City]
 		FROM
 			[Customers] [t1]
 	) [g_1]
-		INNER JOIN [Customers] [c_1] ON [g_1].[Key_1] = [c_1].[City] OR [g_1].[Key_1] IS NULL AND [c_1].[City] IS NULL
+		INNER JOIN [Customers] [c_1] ON [g_1].[City] = [c_1].[City] OR [g_1].[City] IS NULL AND [c_1].[City] IS NULL
 
