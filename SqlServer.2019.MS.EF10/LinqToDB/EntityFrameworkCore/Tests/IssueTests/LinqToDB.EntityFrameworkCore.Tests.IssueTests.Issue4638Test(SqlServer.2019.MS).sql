@@ -1,6 +1,7 @@
 ﻿
 
 -- SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[Key_1],
 	[d].[CfAllowValue],
@@ -16,13 +17,10 @@ FROM
 ORDER BY
 	[d].[DateFrom]
 
-
-
--- SqlServer.2019
+-- Batch 2
 SELECT TOP (1)
 	[p].[AclNameId]
 FROM
 	[Issue4624Items] [p]
-
 
 

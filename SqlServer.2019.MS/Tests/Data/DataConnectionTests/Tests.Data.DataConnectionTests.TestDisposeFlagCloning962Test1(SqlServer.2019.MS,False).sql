@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[CategoryID],
 	[d].[ProductID],
@@ -9,11 +10,10 @@ FROM
 	[Categories] [m_1]
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
 
--- SqlServer.2019.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[t1].[CategoryID],
 	[t1].[CategoryName],
 	[t1].[Description]
 FROM
 	[Categories] [t1]
-

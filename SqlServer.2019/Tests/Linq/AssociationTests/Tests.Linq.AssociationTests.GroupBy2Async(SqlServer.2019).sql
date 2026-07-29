@@ -13,8 +13,7 @@ FROM
 	) [m_1]
 		CROSS JOIN [Child] [d]
 		INNER JOIN [Parent] [a_Parent1_1] ON [d].[ParentID] = [a_Parent1_1].[ParentID] AND [m_1].[ParentID] = [a_Parent1_1].[ParentID]
-
--- SqlServer.2019
+;
 SELECT DISTINCT
 	[a_Parent1].[ParentID]
 FROM
