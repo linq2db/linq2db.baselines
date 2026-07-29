@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`City_Code`,
 	`d_1`.`City_Name`
@@ -24,7 +25,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Cities` `d_1` ON `d_1`.`City_Code` = `m_1`.`City_Code`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`a`.`First_Name`,
 	`a`.`Last_Name`,
@@ -51,4 +52,3 @@ WHERE
 	`cd`.`Type_Code` = 'ESTCOE' AND
 	`d`.`Type_Code` = 'RE' AND
 	`dcp`.`Distributor_Type_Code` = 'RE'
-

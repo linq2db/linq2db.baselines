@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`PersonID`,
 	`m_1`.`FirstName`,
@@ -9,13 +10,13 @@ SELECT
 FROM
 	`Person` `m_1`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`PersonID`
 FROM
 	`Person` `t1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`PersonID`,
 	`m_1`.`FirstName`,
@@ -26,9 +27,8 @@ SELECT
 FROM
 	`Person` `m_1`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`PersonID`
 FROM
 	`Person` `t1`
-

@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 WITH RECURSIVE `cte` (`Value2`, `Value4`)
 AS
 (
@@ -33,7 +34,7 @@ FROM
 	) `m_1`
 		INNER JOIN `CteTable` `d_1` ON `m_1`.`Id` = `d_1`.`Value3`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 WITH RECURSIVE `cte`
 (
 	`Id`,
@@ -77,4 +78,3 @@ SELECT
 FROM
 	`cte` `t2`
 		LEFT JOIN `CteChildTable` `d` ON `t2`.`Value4` = `d`.`Id`
-
