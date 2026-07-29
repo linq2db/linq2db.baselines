@@ -11,10 +11,10 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY 1 ORDER BY e."Group", e."Date") as "RowNumber",
-			e."Id",
-			e."Name",
 			e."Group" as "Group_1",
 			e."Date" as "Date_1",
+			e."Id",
+			e."Name",
 			e."Amount",
 			e."IsActive",
 			e."Priority"
