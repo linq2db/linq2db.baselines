@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[m_1].[C1],
@@ -35,10 +36,9 @@ ORDER BY
 		ELSE N''
 	END
 
--- SqlServer.2005.MS SqlServer.2005
+-- Batch 2
 SELECT TOP (1)
 	[t1].[Id],
 	[t1].[C1]
 FROM
 	[Issue4596Form] [t1]
-
