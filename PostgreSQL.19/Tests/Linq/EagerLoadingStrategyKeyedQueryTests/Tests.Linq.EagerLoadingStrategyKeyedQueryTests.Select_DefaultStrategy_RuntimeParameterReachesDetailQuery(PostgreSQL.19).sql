@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.19 PostgreSQL12
-DECLARE @minId Integer -- Int32
-SET     @minId = 2
-
+﻿-- PostgreSQL.19
+-- Batch 1
+-- minId = 2
 SELECT
 	m_1."Id",
 	d."Id",
@@ -17,7 +16,7 @@ ORDER BY
 	d."Id",
 	m_1."Id"
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	d."Id",
 	d."Name"
@@ -25,4 +24,3 @@ FROM
 	"Department" d
 ORDER BY
 	d."Id"
-

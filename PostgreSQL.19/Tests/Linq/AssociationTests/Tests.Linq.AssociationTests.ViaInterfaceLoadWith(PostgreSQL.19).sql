@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -7,9 +8,8 @@ FROM
 	"MainEntity" m_1
 		INNER JOIN "SubEntity" d ON m_1."Id" = d."MainEntityId"
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id"
 FROM
 	"MainEntity" t1
-
