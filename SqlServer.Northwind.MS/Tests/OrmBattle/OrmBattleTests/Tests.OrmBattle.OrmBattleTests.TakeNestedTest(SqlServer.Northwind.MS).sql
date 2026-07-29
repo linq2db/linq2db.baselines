@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[CustomerID],
 	[d_1].[OrderID],
@@ -41,7 +42,7 @@ FROM
 				[d].[OrderDate] DESC
 		) [d_1]
 
--- SqlServer.Northwind.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],
@@ -56,4 +57,3 @@ SELECT
 	[c_1].[Fax]
 FROM
 	[Customers] [c_1]
-
