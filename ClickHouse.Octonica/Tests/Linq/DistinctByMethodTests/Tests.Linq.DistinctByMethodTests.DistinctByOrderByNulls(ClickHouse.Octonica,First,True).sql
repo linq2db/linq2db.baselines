@@ -11,13 +11,13 @@ FROM
 	(
 		SELECT
 			toInt64(ROW_NUMBER() OVER (PARTITION BY e.Group ORDER BY e.Priority DESC NULLS FIRST, e.Id, e.Date)) as RowNumber,
+			e.Priority as Priority,
 			e.Id as Id,
+			e.Date as Date_1,
 			e.Name as Name,
 			e.Group as Group_1,
-			e.Date as Date_1,
 			e.Amount as Amount,
-			e.IsActive as IsActive,
-			e.Priority as Priority
+			e.IsActive as IsActive
 		FROM
 			TestData e
 	) t1
