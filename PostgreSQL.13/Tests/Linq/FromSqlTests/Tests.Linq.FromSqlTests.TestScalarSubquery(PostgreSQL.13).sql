@@ -1,10 +1,15 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
-	s
+	s_1.c1
 FROM
 	(
 		SELECT
-			1 as c1
+			'hello world' as c1
 	) c_1
-		CROSS JOIN regexp_split_to_table('hello world'::text, E'\\s+') s
+		INNER JOIN LATERAL (
+			SELECT
+				s as c1
+			FROM
+				regexp_split_to_table(c_1.c1::text, E'\\s+') s
+		) s_1 ON 1=1
 
