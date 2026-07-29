@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
-DECLARE @eventId Int -- Int32
-SET     @eventId = 1
-
+-- Batch 1
+-- eventId = 1
 SELECT
 	[m_1].[Id],
 	[d].[EventSchedulePersonId],
@@ -14,14 +13,11 @@ FROM
 WHERE
 	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
 
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @eventId Int -- Int32
-SET     @eventId = 1
-
+-- Batch 2
+-- eventId = 1
 SELECT
 	[p].[Id]
 FROM
 	[EventScheduleItem] [p]
 WHERE
 	[p].[EventId] = @eventId AND [p].[IsActive] = 1
-

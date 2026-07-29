@@ -20,10 +20,7 @@ FROM
 		INNER JOIN [Accounts] [o] ON [o].[account_id_col] = [d].[AccountsAccountId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SqlServer.2017
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]
