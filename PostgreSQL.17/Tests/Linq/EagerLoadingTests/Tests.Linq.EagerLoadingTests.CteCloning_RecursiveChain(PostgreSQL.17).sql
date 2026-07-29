@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
 WITH RECURSIVE cte ("Value2")
 AS
 (
@@ -81,7 +82,7 @@ FROM
 	) m_1
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- Batch 2
 WITH RECURSIVE cte ("Value2")
 AS
 (
@@ -181,4 +182,3 @@ SELECT
 FROM
 	cte1 t7
 		LEFT JOIN "CteChildTable" d ON t7."Value4" = d."Id"
-
