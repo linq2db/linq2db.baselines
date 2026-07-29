@@ -18,8 +18,7 @@ WHERE
 			) t2
 		WHERE
 			e.FirstName LIKE '%John%' ESCAPE '~' AND e.PersonID = t2.PersonID
-	) OR
-	EXISTS(
+	) OR EXISTS(
 		SELECT
 			*
 		FROM
