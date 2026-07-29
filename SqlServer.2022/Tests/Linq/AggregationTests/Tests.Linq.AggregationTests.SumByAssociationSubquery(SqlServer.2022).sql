@@ -18,8 +18,7 @@ SELECT
 FROM
 	[Item] [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
-
--- SqlServer.2022
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]

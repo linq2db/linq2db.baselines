@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
+-- Batch 1
 WITH [cte] ([Id])
 AS
 (
@@ -30,7 +31,7 @@ FROM
 	) [m_1]
 		INNER JOIN [StackOverflowTable5] [d] ON [d].[Value] = [m_1].[Id]
 
--- SqlServer.2022.MS SqlServer.2022
+-- Batch 2
 WITH [cte] ([Id])
 AS
 (
@@ -53,4 +54,3 @@ FROM
 		INNER JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
 WHERE
 	[r3_1].[Value] IS NOT NULL
-
