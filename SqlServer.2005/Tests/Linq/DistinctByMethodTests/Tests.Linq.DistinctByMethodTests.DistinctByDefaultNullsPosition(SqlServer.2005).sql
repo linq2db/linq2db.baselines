@@ -8,9 +8,13 @@ FROM
 				WHEN [e].[Priority] IS NULL THEN 1
 				ELSE 0
 			END, [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Group] as [Group_1],
+			[e].[Priority],
 			[e].[Id],
-			[e].[Priority]
+			[e].[Group] as [Group_1],
+			CASE
+				WHEN [e].[Priority] IS NULL THEN 1
+				ELSE 0
+			END as [c1]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -27,7 +31,8 @@ ORDER BY
 		ELSE 0
 	END,
 	[x].[Priority],
-	[x].[Id]
+	[x].[Id],
+	[x].[c1]
 
 -- SqlServer.2005
 SELECT
@@ -39,9 +44,13 @@ FROM
 				WHEN [e].[Priority] IS NULL THEN 1
 				ELSE 0
 			END, [e].[Priority], [e].[Id]) as [RowNumber],
-			[e].[Group] as [Group_1],
+			[e].[Priority],
 			[e].[Id],
-			[e].[Priority]
+			[e].[Group] as [Group_1],
+			CASE
+				WHEN [e].[Priority] IS NULL THEN 1
+				ELSE 0
+			END as [c1]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -58,5 +67,6 @@ ORDER BY
 		ELSE 0
 	END,
 	[x].[Priority],
-	[x].[Id]
+	[x].[Id],
+	[x].[c1]
 
