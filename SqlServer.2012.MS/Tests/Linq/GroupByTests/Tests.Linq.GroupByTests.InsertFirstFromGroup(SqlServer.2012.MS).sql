@@ -23,16 +23,17 @@ INSERT INTO [temp_table_2]
 	[Value]
 )
 SELECT
-	(
-		SELECT TOP (1)
-			[c_1].[Value]
-		FROM
-			[temp_table_1] [c_1]
-		WHERE
-			[gr].[ID] = [c_1].[ID]
-	)
+	[t1].[Value_1]
 FROM
 	[temp_table_1] [gr]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[c_1].[Value] as [Value_1]
+			FROM
+				[temp_table_1] [c_1]
+			WHERE
+				[gr].[ID] = [c_1].[ID]
+		) [t1]
 
 -- SqlServer.2012.MS SqlServer.2012
 IF (OBJECT_ID(N'[temp_table_2]', N'U') IS NOT NULL)
