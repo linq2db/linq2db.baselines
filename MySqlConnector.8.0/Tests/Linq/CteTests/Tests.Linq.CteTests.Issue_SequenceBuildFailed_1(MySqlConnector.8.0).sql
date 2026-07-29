@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 WITH RECURSIVE `cte` (`Id`)
 AS
 (
@@ -31,7 +32,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Person` `d` ON `d`.`PersonID` = `m_1`.`Id`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 WITH RECURSIVE `cte` (`Id`)
 AS
 (
@@ -52,4 +53,3 @@ SELECT
 FROM
 	`cte` `r`
 		INNER JOIN `Patient` `p_1` ON `r`.`Id` = `p_1`.`PersonID`
-

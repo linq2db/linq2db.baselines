@@ -49,7 +49,8 @@ VALUES
 	@Text
 )
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -60,7 +61,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`after_1`.`Id`,
 	`after_1`.`Name`
@@ -68,4 +69,3 @@ FROM
 	`Names` `after_1`
 ORDER BY
 	`after_1`.`Id`
-

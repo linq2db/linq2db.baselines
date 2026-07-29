@@ -7,7 +7,8 @@ FROM
 WHERE
 	`p`.`ParentID` = 1
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -29,7 +30,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
@@ -38,4 +39,3 @@ FROM
 WHERE
 	`p`.`ParentID` = 1
 LIMIT 2
-

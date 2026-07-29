@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Name`
@@ -19,7 +20,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Id` = `d`.`ParentId`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`item_1`.`Name`,
 	`t1`.`Name`,
@@ -36,4 +37,3 @@ FROM
 				`item_1`.`Id` = `a_Children`.`ParentId`
 			LIMIT 1
 		) `t1` ON 1=1
-

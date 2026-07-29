@@ -39,11 +39,7 @@ FROM
 			`cte` `t2`
 	) `m_1`
 		INNER JOIN `cte` `d` ON `m_1`.`Key_1` = `d`.`Field2`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @id Int32
-SET     @id = 1
-
+;
 WITH RECURSIVE `cte` (`Field2`, `Field3`)
 AS
 (

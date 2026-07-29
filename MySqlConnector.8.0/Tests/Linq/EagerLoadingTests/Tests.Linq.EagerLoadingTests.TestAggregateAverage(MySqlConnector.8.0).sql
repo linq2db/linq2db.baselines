@@ -28,7 +28,8 @@ WHERE
 			`m_1`.`Id1` = `a_Details_1`.`MasterId`
 	) > 1
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id1`,
 	`d`.`DetailId`,
@@ -43,7 +44,7 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,
@@ -51,4 +52,3 @@ SELECT
 	`t1`.`ByteValues`
 FROM
 	`MasterClass` `t1`
-
