@@ -1,4 +1,4 @@
-﻿-- SqlServer.2012
+﻿-- SqlServer.2012.MS SqlServer.2012
 SELECT
 	[t1].[Id],
 	[t1].[Name],
@@ -10,12 +10,12 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id], [e].[Date]) as [RowNumber],
+			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
 			[e].[Priority],
 			[e].[Id],
-			[e].[Date] as [Date_1],
 			[e].[Name],
 			[e].[Group] as [Group_1],
+			[e].[Date] as [Date_1],
 			[e].[Amount],
 			[e].[IsActive]
 		FROM
@@ -26,10 +26,9 @@ WHERE
 ORDER BY
 	IIF([t1].[Priority] IS NULL, 1, 0),
 	[t1].[Priority],
-	[t1].[Id],
-	[t1].[Date_1]
+	[t1].[Id]
 
--- SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012
 SELECT
 	[t1].[Id],
 	[t1].[Name],
