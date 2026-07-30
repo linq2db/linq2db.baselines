@@ -1,8 +1,8 @@
 ﻿-- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @p Integer -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	"e"."Id",
@@ -12,7 +12,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."Id" = @Id AND "e"."Id" = @p
+	"e"."Id" = @Id AND "e"."Id" = @InnerNonReadonlyStructure
 
 -- Firebird.5 Firebird4
 SELECT
@@ -26,8 +26,8 @@ FROM
 -- Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @p Integer -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	"e"."Id",
@@ -37,7 +37,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."Id" = @Id AND "e"."Id" = @p
+	"e"."Id" = @Id AND "e"."Id" = @InnerNonReadonlyStructure
 
 -- Firebird.5 Firebird4
 SELECT
