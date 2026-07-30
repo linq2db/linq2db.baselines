@@ -1,8 +1,8 @@
 ﻿-- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @p Integer(4) -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer(4) -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	e.Id,
@@ -12,7 +12,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	e.Id = @Id AND e.Id = @p
+	e.Id = @Id AND e.Id = @InnerNonReadonlyStructure
 
 -- Informix.DB2 Informix
 SELECT
@@ -26,8 +26,8 @@ FROM
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @p Integer(4) -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer(4) -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	e.Id,
@@ -37,7 +37,7 @@ SELECT
 FROM
 	TestConstantsData e
 WHERE
-	e.Id = @Id AND e.Id = @p
+	e.Id = @Id AND e.Id = @InnerNonReadonlyStructure
 
 -- Informix.DB2 Informix
 SELECT

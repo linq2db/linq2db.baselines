@@ -12,15 +12,15 @@ VALUES
 )
 
 -- Informix.DB2 Informix
-DECLARE @p Integer(4) -- Int32
-SET     @p = 5
+DECLARE @Child Integer(4) -- Int32
+SET     @Child = 5
 
 SELECT FIRST 2
 	t1.ID
 FROM
 	Issue1316Tests t1
 WHERE
-	t1.ID = @p
+	t1.ID = @Child
 
 -- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
