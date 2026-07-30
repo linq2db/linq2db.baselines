@@ -1,8 +1,8 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @param Int32
 SET     @param = 100
-DECLARE @ValueStr VarChar(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 VarChar(3) -- String
+SET     @param_1 = '100'
 
 INSERT INTO `DestinationTable`
 (
@@ -13,7 +13,7 @@ INSERT INTO `DestinationTable`
 SELECT
 	`s`.`Id` + @param,
 	`s`.`Value` + @param,
-	CONCAT(Coalesce(`s`.`ValueStr`, ''), Coalesce(@ValueStr, ''))
+	CONCAT(Coalesce(`s`.`ValueStr`, ''), Coalesce(@param_1, ''))
 FROM
 	`TableWithData` `s`
 WHERE
@@ -26,13 +26,13 @@ RETURNING
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @param Int32
 SET     @param = 100
-DECLARE @ValueStr VarChar(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 VarChar(3) -- String
+SET     @param_1 = '100'
 
 SELECT
 	`s`.`Id` + @param,
 	`s`.`Value` + @param,
-	CONCAT(Coalesce(`s`.`ValueStr`, ''), Coalesce(@ValueStr, ''))
+	CONCAT(Coalesce(`s`.`ValueStr`, ''), Coalesce(@param_1, ''))
 FROM
 	`TableWithData` `s`
 WHERE
