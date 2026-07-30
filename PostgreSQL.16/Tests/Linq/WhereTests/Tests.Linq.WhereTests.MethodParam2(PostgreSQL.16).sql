@@ -1,22 +1,22 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-DECLARE @p Integer -- Int32
-SET     @p = 1
+DECLARE @t Integer -- Int32
+SET     @t = 1
 
 SELECT
 	p."PersonID"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :p
+	p."PersonID" = :t
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
-DECLARE @p Integer -- Int32
-SET     @p = 2
+DECLARE @t Integer -- Int32
+SET     @t = 2
 
 SELECT
 	p."PersonID"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :p
+	p."PersonID" = :t
 
