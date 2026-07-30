@@ -1,22 +1,22 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 1
+DECLARE @t Int32
+SET     @t = 1
 
 SELECT
 	p."PersonID"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :p
+	p."PersonID" = :t
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 2
+DECLARE @t Int32
+SET     @t = 2
 
 SELECT
 	p."PersonID"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :p
+	p."PersonID" = :t
 
