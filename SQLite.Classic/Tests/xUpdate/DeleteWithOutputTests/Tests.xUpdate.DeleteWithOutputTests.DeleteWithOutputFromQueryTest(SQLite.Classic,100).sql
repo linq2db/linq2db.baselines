@@ -11,8 +11,8 @@ WHERE
 -- SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @ValueStr NVarChar(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 NVarChar(3) -- String
+SET     @param_1 = '100'
 
 DELETE FROM
 	[TableWithData]
@@ -21,5 +21,5 @@ WHERE
 RETURNING
 	[TableWithData].[Id] + @param,
 	[TableWithData].[Value] + @param,
-	Coalesce([TableWithData].[ValueStr], '') || Coalesce(@ValueStr, '')
+	Coalesce([TableWithData].[ValueStr], '') || Coalesce(@param_1, '')
 
