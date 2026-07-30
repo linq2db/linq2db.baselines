@@ -21,14 +21,14 @@ WHERE
 -- SqlServer.2017.MS SqlServer.2017
 DECLARE @param Int -- Int32
 SET     @param = 100500
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'100500'
+DECLARE @param_1 NVarChar(50) -- String
+SET     @param_1 = N'100500'
 
 DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	Coalesce(DELETED.[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce(DELETED.[ValueStr], N'') + Coalesce(@param_1, N'')
 INTO [tempdb]..[#DestinationTable_target]
 (
 	[Id],
