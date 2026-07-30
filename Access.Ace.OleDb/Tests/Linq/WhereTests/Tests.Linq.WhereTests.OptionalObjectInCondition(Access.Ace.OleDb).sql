@@ -1,6 +1,6 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarWChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarWChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	[r].[FirstName],
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @p
+	[r].[FirstName] = @Id
 
 -- Access.Ace.OleDb AccessOleDb
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarWChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarWChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	[r].[FirstName],
@@ -38,5 +38,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @p
+	[r].[FirstName] = @Id
 

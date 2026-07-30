@@ -12,8 +12,8 @@ VALUES
 )
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Child Int -- Int32
+SET     @Child = 5
 
 SELECT TOP 2
 	[t1].[ID]

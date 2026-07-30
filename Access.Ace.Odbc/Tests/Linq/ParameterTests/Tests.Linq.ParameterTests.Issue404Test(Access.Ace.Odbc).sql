@@ -15,8 +15,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @usage Int -- Int32
+SET     @usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -36,8 +36,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @usage Int -- Int32
+SET     @usage = 1
 
 SELECT
 	[m_1].[Id],
@@ -73,8 +73,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Usage Int -- Int32
-SET     @Usage = 0
+DECLARE @usage Int -- Int32
+SET     @usage = 0
 
 SELECT
 	[m_1].[Id],
@@ -94,8 +94,8 @@ FROM
 	[Table404One] [t1]
 
 -- Access.Ace.Odbc AccessODBC
-DECLARE @Usage Int -- Int32
-SET     @Usage = 1
+DECLARE @usage Int -- Int32
+SET     @usage = 1
 
 SELECT
 	[m_1].[Id],

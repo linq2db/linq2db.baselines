@@ -1,8 +1,8 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Int -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -26,8 +26,8 @@ FROM
 -- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Int -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
