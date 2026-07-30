@@ -1,6 +1,6 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p VarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -11,7 +11,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @p
+	`r`.`FirstName` = @Id
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @p VarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -38,5 +38,5 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @p
+	`r`.`FirstName` = @Id
 
