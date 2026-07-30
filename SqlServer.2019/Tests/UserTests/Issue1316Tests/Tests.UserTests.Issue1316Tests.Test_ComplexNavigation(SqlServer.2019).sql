@@ -12,15 +12,15 @@ VALUES
 )
 
 -- SqlServer.2019
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Child Int -- Int32
+SET     @Child = 5
 
 SELECT TOP (2)
 	[t1].[ID]
 FROM
 	[Issue1316Tests] [t1]
 WHERE
-	[t1].[ID] = @p
+	[t1].[ID] = @Child
 
 -- SqlServer.2019
 DECLARE @Id Int -- Int32
