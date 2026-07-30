@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @p NVarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id NVarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	[r].[FirstName],
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p NVarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id NVarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	[r].[FirstName],

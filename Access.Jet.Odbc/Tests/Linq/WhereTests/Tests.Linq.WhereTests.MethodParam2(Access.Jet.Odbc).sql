@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 1
+DECLARE @t Int -- Int32
+SET     @t = 1
 
 SELECT
 	[p].[PersonID]
@@ -10,8 +10,8 @@ WHERE
 	[p].[PersonID] = ?
 
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @t Int -- Int32
+SET     @t = 2
 
 SELECT
 	[p].[PersonID]
