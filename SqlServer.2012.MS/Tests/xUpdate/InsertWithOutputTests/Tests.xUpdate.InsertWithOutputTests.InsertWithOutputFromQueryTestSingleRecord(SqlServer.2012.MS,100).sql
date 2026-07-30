@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 100
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'100'
+DECLARE @param_1 NVarChar(50) -- String
+SET     @param_1 = N'100'
 
 INSERT INTO [DestinationTable]
 (
@@ -17,7 +17,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') + Coalesce(@param_1, N'')
 FROM
 	[TableWithData] [s]
 WHERE
@@ -26,13 +26,13 @@ WHERE
 -- SqlServer.2012.MS SqlServer.2012
 DECLARE @param Int -- Int32
 SET     @param = 100
-DECLARE @ValueStr NVarChar(50) -- String
-SET     @ValueStr = N'100'
+DECLARE @param_1 NVarChar(50) -- String
+SET     @param_1 = N'100'
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], N'') + Coalesce(@ValueStr, N'')
+	Coalesce([s].[ValueStr], N'') + Coalesce(@param_1, N'')
 FROM
 	[TableWithData] [s]
 WHERE

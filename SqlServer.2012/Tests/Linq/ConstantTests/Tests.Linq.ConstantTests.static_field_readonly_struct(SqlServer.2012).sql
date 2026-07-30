@@ -1,8 +1,8 @@
 ﻿-- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Int -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- SqlServer.2012
 SELECT
@@ -26,8 +26,8 @@ FROM
 -- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @p Int -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Int -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -37,7 +37,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- SqlServer.2012
 SELECT
