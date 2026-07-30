@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
-DECLARE $p Text(1) -- String
-SET     $p = '1'u
+DECLARE $Id Text(1) -- String
+SET     $Id = '1'u
 
 SELECT
 	r.FirstName as FirstName,
@@ -11,7 +11,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.FirstName = $p
+	r.FirstName = $Id
 
 -- YDB Ydb
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- YDB Ydb
-DECLARE $p Text(1) -- String
-SET     $p = '1'u
+DECLARE $Id Text(1) -- String
+SET     $Id = '1'u
 
 SELECT
 	r.FirstName as FirstName,
@@ -38,5 +38,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.FirstName = $p
+	r.FirstName = $Id
 
