@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @p  -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure  -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT
@@ -26,8 +26,8 @@ FROM
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @p  -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure  -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -37,7 +37,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 SELECT

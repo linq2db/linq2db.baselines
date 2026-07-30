@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @ValueStr NVarChar(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 NVarChar(3) -- String
+SET     @param_1 = '100'
 
 INSERT INTO [DestinationTable]
 (
@@ -13,7 +13,7 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], '') || Coalesce(@ValueStr, '')
+	Coalesce([s].[ValueStr], '') || Coalesce(@param_1, '')
 FROM
 	[TableWithData] [s]
 WHERE
@@ -26,13 +26,13 @@ RETURNING
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @ValueStr NVarChar(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 NVarChar(3) -- String
+SET     @param_1 = '100'
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	Coalesce([s].[ValueStr], '') || Coalesce(@ValueStr, '')
+	Coalesce([s].[ValueStr], '') || Coalesce(@param_1, '')
 FROM
 	[TableWithData] [s]
 WHERE
