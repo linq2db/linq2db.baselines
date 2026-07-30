@@ -12,15 +12,15 @@ VALUES
 )
 
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int32
-SET     @p = 5
+DECLARE @Child Int32
+SET     @Child = 5
 
 SELECT
 	t1.ID
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1.ID = :p AND ROWNUM <= 2
+	t1.ID = :Child AND ROWNUM <= 2
 
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
