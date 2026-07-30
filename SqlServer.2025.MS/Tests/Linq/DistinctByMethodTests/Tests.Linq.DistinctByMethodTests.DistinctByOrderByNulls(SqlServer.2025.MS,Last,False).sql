@@ -17,8 +17,7 @@ FROM
 			[e].[Name],
 			[e].[Group] as [Group_1],
 			[e].[Amount],
-			[e].[IsActive],
-			IIF([e].[Priority] IS NULL, 1, 0) as [c1]
+			[e].[IsActive]
 		FROM
 			[TestData] [e]
 	) [t1]
@@ -28,8 +27,7 @@ ORDER BY
 	IIF([t1].[Priority] IS NULL, 1, 0),
 	[t1].[Priority],
 	[t1].[Id],
-	[t1].[Date_1],
-	[t1].[c1]
+	[t1].[Date_1]
 
 -- SqlServer.2025.MS SqlServer.2025
 SELECT
