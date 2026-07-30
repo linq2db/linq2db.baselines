@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2008
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'1'
+DECLARE @Id NVarChar(4000) -- String
+SET     @Id = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -11,7 +11,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @p
+	[r].[FirstName] = @Id
 
 -- SqlServer.2008
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- SqlServer.2008
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'1'
+DECLARE @Id NVarChar(4000) -- String
+SET     @Id = N'1'
 
 SELECT
 	[r].[FirstName],
@@ -38,5 +38,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[FirstName] = @p
+	[r].[FirstName] = @Id
 
