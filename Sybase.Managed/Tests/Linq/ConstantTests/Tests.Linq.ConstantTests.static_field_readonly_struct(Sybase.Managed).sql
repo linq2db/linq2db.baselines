@@ -1,8 +1,8 @@
 ﻿-- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @p Integer -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -12,7 +12,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- Sybase.Managed Sybase
 SELECT
@@ -26,8 +26,8 @@ FROM
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @p Integer -- Int32
-SET     @p = 2
+DECLARE @InnerNonReadonlyStructure Integer -- Int32
+SET     @InnerNonReadonlyStructure = 2
 
 SELECT
 	[e].[Id],
@@ -37,7 +37,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @p
+	[e].[Id] = @Id AND [e].[Id] = @InnerNonReadonlyStructure
 
 -- Sybase.Managed Sybase
 SELECT

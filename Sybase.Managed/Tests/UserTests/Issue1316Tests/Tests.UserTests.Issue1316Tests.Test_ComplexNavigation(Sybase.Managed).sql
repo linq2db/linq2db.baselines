@@ -12,15 +12,15 @@ VALUES
 )
 
 -- Sybase.Managed Sybase
-DECLARE @p Integer -- Int32
-SET     @p = 5
+DECLARE @Child Integer -- Int32
+SET     @Child = 5
 
 SELECT TOP 2
 	[t1].[ID]
 FROM
 	[Issue1316Tests] [t1]
 WHERE
-	[t1].[ID] = @p
+	[t1].[ID] = @Child
 
 -- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
