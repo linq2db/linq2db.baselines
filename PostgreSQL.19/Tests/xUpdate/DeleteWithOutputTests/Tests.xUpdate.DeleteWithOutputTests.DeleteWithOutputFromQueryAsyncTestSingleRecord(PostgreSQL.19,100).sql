@@ -11,8 +11,8 @@ WHERE
 -- PostgreSQL.19 PostgreSQL12
 DECLARE @param Integer -- Int32
 SET     @param = 100
-DECLARE @ValueStr Text(3) -- String
-SET     @ValueStr = '100'
+DECLARE @param_1 Text(3) -- String
+SET     @param_1 = '100'
 
 DELETE FROM
 	"TableWithData" s
@@ -21,5 +21,5 @@ WHERE
 RETURNING
 	OLD."Id" + :param,
 	OLD."Value" + :param,
-	Coalesce(OLD."ValueStr", '') || Coalesce(:ValueStr, '')
+	Coalesce(OLD."ValueStr", '') || Coalesce(:param_1, '')
 
