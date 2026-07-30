@@ -12,8 +12,8 @@ VALUES
 )
 
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Int -- Int32
-SET     @p = 5
+DECLARE @Child Int -- Int32
+SET     @Child = 5
 
 SELECT
 	"t1"."ID"
