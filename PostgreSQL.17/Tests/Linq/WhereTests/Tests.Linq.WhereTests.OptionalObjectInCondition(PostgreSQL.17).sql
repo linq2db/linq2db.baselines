@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @p Text(1) -- String
-SET     @p = '1'
+DECLARE @Id Text(1) -- String
+SET     @Id = '1'
 
 SELECT
 	r."FirstName",
@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Person" r
 WHERE
-	r."FirstName" = :p
+	r."FirstName" = :Id
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
-DECLARE @p Text(1) -- String
-SET     @p = '1'
+DECLARE @Id Text(1) -- String
+SET     @Id = '1'
 
 SELECT
 	r."FirstName",
@@ -38,5 +38,5 @@ SELECT
 FROM
 	"Person" r
 WHERE
-	r."FirstName" = :p
+	r."FirstName" = :Id
 
