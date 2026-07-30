@@ -20,11 +20,7 @@ FROM
 			`e`.`Name`,
 			`e`.`Group` as `Group_1`,
 			`e`.`Amount`,
-			`e`.`IsActive`,
-			CASE
-				WHEN `e`.`Priority` IS NULL THEN 0
-				ELSE 1
-			END as `c1`
+			`e`.`IsActive`
 		FROM
 			`TestData` `e`
 	) `t1`
@@ -37,8 +33,7 @@ ORDER BY
 	END,
 	`t1`.`Priority` DESC,
 	`t1`.`Id`,
-	`t1`.`Date_1`,
-	`t1`.`c1`
+	`t1`.`Date_1`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 SELECT
