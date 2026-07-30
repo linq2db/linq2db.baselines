@@ -1,6 +1,6 @@
 ﻿-- Firebird.2.5 Firebird
-DECLARE @p VarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	"r"."FirstName",
@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Person" "r"
 WHERE
-	"r"."FirstName" = @p
+	"r"."FirstName" = @Id
 
 -- Firebird.2.5 Firebird
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- Firebird.2.5 Firebird
-DECLARE @p VarChar(1) -- String
-SET     @p = '1'
+DECLARE @Id VarChar(1) -- String
+SET     @Id = '1'
 
 SELECT
 	"r"."FirstName",
@@ -38,5 +38,5 @@ SELECT
 FROM
 	"Person" "r"
 WHERE
-	"r"."FirstName" = @p
+	"r"."FirstName" = @Id
 
