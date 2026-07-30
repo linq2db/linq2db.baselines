@@ -12,15 +12,15 @@ VALUES
 )
 
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 5
+DECLARE @Child Integer(4) -- Int32
+SET     @Child = 5
 
 SELECT
 	"t1".ID
 FROM
 	"Issue1316Tests" "t1"
 WHERE
-	"t1".ID = @p
+	"t1".ID = @Child
 FETCH NEXT 2 ROWS ONLY
 
 -- DB2 DB2.LUW DB2LUW
