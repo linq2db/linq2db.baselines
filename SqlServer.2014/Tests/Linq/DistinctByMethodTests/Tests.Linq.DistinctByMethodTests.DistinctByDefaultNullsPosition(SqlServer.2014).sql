@@ -7,8 +7,7 @@ FROM
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
 			[e].[Priority],
 			[e].[Id],
-			[e].[Group] as [Group_1],
-			IIF([e].[Priority] IS NULL, 1, 0) as [c1]
+			[e].[Group] as [Group_1]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -19,8 +18,7 @@ ORDER BY
 	[x].[Group_1],
 	IIF([x].[Priority] IS NULL, 1, 0),
 	[x].[Priority],
-	[x].[Id],
-	[x].[c1]
+	[x].[Id]
 
 -- SqlServer.2014
 SELECT
@@ -31,8 +29,7 @@ FROM
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY IIF([e].[Priority] IS NULL, 1, 0), [e].[Priority], [e].[Id]) as [RowNumber],
 			[e].[Priority],
 			[e].[Id],
-			[e].[Group] as [Group_1],
-			IIF([e].[Priority] IS NULL, 1, 0) as [c1]
+			[e].[Group] as [Group_1]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -43,6 +40,5 @@ ORDER BY
 	[x].[Group_1],
 	IIF([x].[Priority] IS NULL, 1, 0),
 	[x].[Priority],
-	[x].[Id],
-	[x].[c1]
+	[x].[Id]
 
