@@ -1,6 +1,6 @@
 ﻿-- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(1) -- String
-SET     @p = '1'
+DECLARE @Id Varchar2(1) -- String
+SET     @Id = '1'
 
 SELECT
 	r."FirstName",
@@ -11,7 +11,7 @@ SELECT
 FROM
 	"Person" r
 WHERE
-	r."FirstName" = :p
+	r."FirstName" = :Id
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
 SELECT
@@ -26,8 +26,8 @@ WHERE
 	1 = 0
 
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(1) -- String
-SET     @p = '1'
+DECLARE @Id Varchar2(1) -- String
+SET     @Id = '1'
 
 SELECT
 	r."FirstName",
@@ -38,5 +38,5 @@ SELECT
 FROM
 	"Person" r
 WHERE
-	r."FirstName" = :p
+	r."FirstName" = :Id
 
