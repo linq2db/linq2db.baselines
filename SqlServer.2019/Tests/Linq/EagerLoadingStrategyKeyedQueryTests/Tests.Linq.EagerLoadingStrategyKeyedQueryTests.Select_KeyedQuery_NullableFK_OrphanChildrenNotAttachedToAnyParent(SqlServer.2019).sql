@@ -10,8 +10,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SqlServer.2019
+;
 SELECT
 	[p].[Id],
 	[p].[Name]

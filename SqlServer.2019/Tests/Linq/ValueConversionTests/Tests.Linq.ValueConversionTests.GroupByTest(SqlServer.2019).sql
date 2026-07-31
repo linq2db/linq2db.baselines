@@ -18,11 +18,7 @@ FROM
 	[ValueConversion] [m_1]
 WHERE
 	@testedList = [m_1].[Value2]
-
--- SqlServer.2019
-DECLARE @testedList NVarChar(200) -- String
-SET     @testedList = N'[{"Value":"Value1"}]'
-
+;
 SELECT
 	[g_1].[Id]
 FROM
