@@ -13,8 +13,7 @@ WHERE
 			Parent p
 		WHERE
 			p.Value1 IS NULL
-	) OR
-	c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
+	) OR c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
 		SELECT
 			p_1.Value1
 		FROM
