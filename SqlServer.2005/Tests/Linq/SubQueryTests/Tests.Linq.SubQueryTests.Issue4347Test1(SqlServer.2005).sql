@@ -24,8 +24,7 @@ WHERE
 				UNION ALL
 				SELECT N'B') [t1]
 	)
-
--- SqlServer.2005
+;
 SELECT
 	[x].[Id],
 	[x].[ValidOn]
