@@ -21,11 +21,7 @@ WHERE
 			[m_1].[ID] = [c_1].[ParentId] AND [m_1].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
 			[m_1].[ValS] IS NOT NULL
 	)
-
--- SqlServer.2012
-DECLARE @TypedProperty NVarChar(4000) -- String
-SET     @TypedProperty = N'%de%'
-
+;
 SELECT
 	[it].[ID],
 	[it].[ValB],

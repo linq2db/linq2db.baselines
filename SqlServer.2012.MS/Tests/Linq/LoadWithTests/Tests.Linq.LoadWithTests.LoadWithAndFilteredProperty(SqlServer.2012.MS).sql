@@ -1,4 +1,5 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
+-- Batch 1
 SELECT
 	[m_2].[Id],
 	[d_1].[Id],
@@ -28,7 +29,7 @@ FROM
 ORDER BY
 	[m_2].[Id]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 2
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -38,8 +39,8 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
 -- SqlServer.2012.MS SqlServer.2012
+-- Batch 1
 SELECT
 	[m_2].[Id],
 	[d_1].[Id],
@@ -78,7 +79,7 @@ FROM
 ORDER BY
 	[m_2].[Id]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 2
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -88,8 +89,8 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
 -- SqlServer.2012.MS SqlServer.2012
+-- Batch 1
 SELECT
 	[m_2].[Id],
 	[m_2].[Id_1],
@@ -137,7 +138,7 @@ FROM
 ORDER BY
 	[m_2].[Id_1]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 2
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -159,7 +160,7 @@ FROM
 ORDER BY
 	[m_2].[Id]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 3
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -169,8 +170,8 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
 -- SqlServer.2012.MS SqlServer.2012
+-- Batch 1
 SELECT
 	[m_2].[Id],
 	[m_2].[Id_1],
@@ -218,7 +219,7 @@ FROM
 ORDER BY
 	[m_2].[Id_1]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 2
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -240,7 +241,7 @@ FROM
 ORDER BY
 	[m_2].[Id]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 3
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -250,8 +251,8 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-
 -- SqlServer.2012.MS SqlServer.2012
+-- Batch 1
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -272,7 +273,7 @@ WHERE
 ORDER BY
 	[m_2].[Id]
 
--- SqlServer.2012.MS SqlServer.2012
+-- Batch 2
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -282,4 +283,3 @@ WHERE
 	[m_1].[Id] > 1
 ORDER BY
 	[m_1].[Id]
-

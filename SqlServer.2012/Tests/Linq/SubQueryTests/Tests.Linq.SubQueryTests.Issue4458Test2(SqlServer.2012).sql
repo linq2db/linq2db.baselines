@@ -16,8 +16,7 @@ WHERE
 		WHERE
 			[r].[ItemId] = [m_1].[Id] AND [r].[Score] > 95
 	)
-
--- SqlServer.2012
+;
 SELECT
 	[i].[Id],
 	(

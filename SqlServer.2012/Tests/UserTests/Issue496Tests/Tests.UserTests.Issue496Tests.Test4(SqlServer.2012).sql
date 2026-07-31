@@ -11,8 +11,7 @@ FROM
 			[Parent] [p]
 	) [m_1]
 		INNER JOIN [Child] [d] ON CAST([m_1].[ParentID] AS BigInt) = [d].[ParentID]
-
--- SqlServer.2012
+;
 SELECT
 	[p].[ParentID]
 FROM
