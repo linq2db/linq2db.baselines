@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Id`,
@@ -7,9 +8,8 @@ FROM
 	`MainEntity` `m_1`
 		INNER JOIN `SubEntity` `d` ON `m_1`.`Id` = `d`.`MainEntityId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`x`.`Id`
 FROM
 	`MainEntity` `x`
-

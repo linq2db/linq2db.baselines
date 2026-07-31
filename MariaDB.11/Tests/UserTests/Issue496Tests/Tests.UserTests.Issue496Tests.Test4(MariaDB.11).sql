@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ChildID`,
@@ -12,9 +13,8 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON CAST(`m_1`.`ParentID` AS SIGNED) = `d`.`ParentID`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`p`.`ParentID`
 FROM
 	`Parent` `p`
-

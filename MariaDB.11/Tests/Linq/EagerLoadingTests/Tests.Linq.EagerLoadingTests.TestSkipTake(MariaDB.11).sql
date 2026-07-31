@@ -1,4 +1,5 @@
-﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_2`.`Id1`,
 	`d`.`DetailId`,
@@ -13,7 +14,7 @@ FROM
 	) `m_2`
 		INNER JOIN `DetailClass` `d` ON `m_2`.`Id1` = `d`.`MasterId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`m_2`.`Id1`,
 	`d_1`.`DetailId`,
@@ -38,7 +39,7 @@ FROM
 ORDER BY
 	`d_1`.`DetailId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 3
 SELECT
 	`m_1`.`Id1`,
 	`m_1`.`Id2`,
@@ -46,8 +47,8 @@ SELECT
 	`m_1`.`ByteValues`
 FROM
 	`MasterClass` `m_1`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- MariaDB.11 MariaDB.10.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id1`,
 	`d`.`DetailId`,
@@ -62,7 +63,7 @@ FROM
 	) `m_1`
 		INNER JOIN `DetailClass` `d` ON `m_1`.`Id1` = `d`.`MasterId`
 
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+-- Batch 2
 SELECT
 	`t1`.`Id1`,
 	`t1`.`Id2`,
@@ -70,4 +71,3 @@ SELECT
 	`t1`.`ByteValues`
 FROM
 	`MasterClass` `t1`
-
