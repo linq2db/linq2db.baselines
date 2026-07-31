@@ -5,9 +5,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY [e].[Priority] NULLS LAST, [e].[Id]) as [RowNumber],
-			[e].[Group] as [Group_1],
+			[e].[Priority],
 			[e].[Id],
-			[e].[Priority]
+			[e].[Group] as [Group_1]
 		FROM
 			[TestData] [e]
 	) [x]
@@ -25,9 +25,9 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER (PARTITION BY [e].[Group] ORDER BY [e].[Priority] NULLS LAST, [e].[Id]) as [RowNumber],
-			[e].[Group] as [Group_1],
+			[e].[Priority],
 			[e].[Id],
-			[e].[Priority]
+			[e].[Group] as [Group_1]
 		FROM
 			[TestData] [e]
 	) [x]

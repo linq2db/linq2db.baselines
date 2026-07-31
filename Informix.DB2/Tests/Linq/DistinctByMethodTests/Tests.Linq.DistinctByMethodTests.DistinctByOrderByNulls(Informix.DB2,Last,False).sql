@@ -14,13 +14,13 @@ FROM
 				WHEN e.Priority IS NULL THEN 1
 				ELSE 0
 			END, e.Priority, e.Id, e."Date") as RowNumber,
+			e.Priority,
 			e.Id,
+			e."Date" as Date_1,
 			e.Name,
 			e."Group" as Group_1,
-			e."Date" as Date_1,
 			e.Amount,
-			e.IsActive,
-			e.Priority
+			e.IsActive
 		FROM
 			TestData e
 	) t1
