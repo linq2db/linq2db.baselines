@@ -21,11 +21,7 @@ WHERE
 			`m_1`.`ID` = `c_1`.`ParentId` AND LOCATE(@TypedProperty, `m_1`.`ValS`) > 0 AND
 			`m_1`.`ValS` IS NOT NULL
 	)
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @TypedProperty VarChar(2) -- String
-SET     @TypedProperty = 'de'
-
+;
 SELECT
 	`it`.`ID`,
 	`it`.`ValB`,

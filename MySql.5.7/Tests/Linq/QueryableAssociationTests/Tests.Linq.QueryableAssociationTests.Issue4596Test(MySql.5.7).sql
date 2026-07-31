@@ -35,8 +35,7 @@ ORDER BY
 		WHEN `m_1`.`C1` <> 'T' THEN `d`.`Name3`
 		ELSE ''
 	END
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t1`.`Id`,
 	`t1`.`C1`

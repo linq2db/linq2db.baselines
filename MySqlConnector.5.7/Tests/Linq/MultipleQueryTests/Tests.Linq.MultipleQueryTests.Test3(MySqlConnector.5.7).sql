@@ -1,13 +1,13 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`t1`.`ParentID`,
 	`t1`.`ChildID`
 FROM
 	`Child` `t1`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	1
 FROM
 	`Parent` `p`
-

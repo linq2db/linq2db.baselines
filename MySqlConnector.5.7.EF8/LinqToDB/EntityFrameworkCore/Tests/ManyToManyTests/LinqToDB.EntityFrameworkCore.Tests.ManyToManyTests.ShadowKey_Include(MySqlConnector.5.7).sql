@@ -10,7 +10,8 @@ ORDER BY `a`.`Id`, `t0`.`ArticlesId`, `t0`.`TagsTagId`
 
 
 
--- MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`o`.`Label`
@@ -21,9 +22,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
-
-
--- MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`Title`
@@ -31,6 +30,5 @@ FROM
 	`Articles` `t1`
 ORDER BY
 	`t1`.`Id`
-
 
 

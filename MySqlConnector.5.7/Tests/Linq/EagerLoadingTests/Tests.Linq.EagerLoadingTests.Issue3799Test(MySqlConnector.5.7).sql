@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`d`.`Name`
@@ -19,7 +20,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Id` = `d`.`ParentId`
 
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- Batch 2
 SELECT
 	`item_1`.`Name`,
 	(
@@ -42,4 +43,3 @@ SELECT
 	)
 FROM
 	`Test3799Item` `item_1`
-

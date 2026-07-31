@@ -15,8 +15,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
-
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+;
 SELECT
 	`t`.`ParentID`,
 	`t`.`Value1`
