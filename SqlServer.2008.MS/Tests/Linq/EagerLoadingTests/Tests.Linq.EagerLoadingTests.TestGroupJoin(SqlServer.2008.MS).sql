@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+-- Batch 1
+-- take = 20
 SELECT
 	[m_2].[DetailId],
 	[d].[SubDetailId],
@@ -24,10 +23,8 @@ FROM
 	) [m_2]
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+-- Batch 2
+-- take = 20
 SELECT
 	[m_2].[DetailId],
 	[d_1].[SubDetailId],
@@ -61,10 +58,8 @@ FROM
 				[d].[SubDetailValue]
 		) [d_1]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+-- Batch 3
+-- take = 20
 SELECT
 	[m_2].[MasterId],
 	[d_1].[Id1],
@@ -100,10 +95,8 @@ FROM
 				[d].[Value]
 		) [d_1]
 
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 20
-
+-- Batch 4
+-- take = 20
 SELECT
 	[t1].[Id1],
 	[t1].[Id2],
@@ -125,4 +118,3 @@ FROM
 			[m_1].[Id2] DESC
 	) [t1]
 		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
-

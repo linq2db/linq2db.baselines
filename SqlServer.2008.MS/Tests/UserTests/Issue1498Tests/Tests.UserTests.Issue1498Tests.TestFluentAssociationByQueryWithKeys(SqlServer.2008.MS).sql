@@ -62,6 +62,7 @@ VALUES
 )
 
 -- SqlServer.2008.MS SqlServer.2008
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id]
@@ -76,7 +77,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
--- SqlServer.2008.MS SqlServer.2008
+-- Batch 2
 SELECT TOP (1)
 	[x].[Id],
 	[x].[Title],
@@ -85,4 +86,3 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-

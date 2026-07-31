@@ -23,8 +23,7 @@ FROM
 			END
 			ELSE N'3'
 		END
-
--- SqlServer.2008
+;
 SELECT DISTINCT
 	CASE
 		WHEN [g_1].[ParentID] > 2 THEN CASE

@@ -178,8 +178,7 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] >= [right_1].[StrValueNullable] OR
-	[right_1].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] >= [right_1].[StrValueNullable] OR [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
@@ -193,8 +192,7 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] <= [right_1].[StrValueNullable] OR
-	[i].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] <= [right_1].[StrValueNullable] OR [i].[StrValueNullable] IS NULL
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
@@ -208,8 +206,7 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] > [right_1].[StrValueNullable] OR
-	[i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] > [right_1].[StrValueNullable] OR [i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
@@ -223,8 +220,7 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] < [right_1].[StrValueNullable] OR
-	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL
+	[i].[StrValueNullable] < [right_1].[StrValueNullable] OR [i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
@@ -238,8 +234,7 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] = [right_1].[StrValueNullable] OR
-	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] = [right_1].[StrValueNullable] OR [i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NULL
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT
@@ -253,7 +248,5 @@ FROM
 	[Isue2424Table] [i],
 	[Isue2424Table] [right_1]
 WHERE
-	[i].[StrValueNullable] <> [right_1].[StrValueNullable] OR
-	[i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL OR
-	[i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] <> [right_1].[StrValueNullable] OR [i].[StrValueNullable] IS NULL AND [right_1].[StrValueNullable] IS NOT NULL OR [i].[StrValueNullable] IS NOT NULL AND [right_1].[StrValueNullable] IS NULL
 

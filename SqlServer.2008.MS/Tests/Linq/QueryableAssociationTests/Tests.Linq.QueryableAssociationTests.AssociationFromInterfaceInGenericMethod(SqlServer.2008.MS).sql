@@ -15,6 +15,7 @@ WHERE
 	)
 
 -- SqlServer.2008.MS SqlServer.2008
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -31,7 +32,7 @@ FROM
 	) [m_1]
 		INNER JOIN [TreeItem] [d] ON [m_1].[Id] = [d].[ParentId]
 
--- SqlServer.2008.MS SqlServer.2008
+-- Batch 2
 SELECT
 	[t].[Id]
 FROM
@@ -39,4 +40,3 @@ FROM
 		INNER JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 WHERE
 	[a_Parent].[Id] > 0
-
