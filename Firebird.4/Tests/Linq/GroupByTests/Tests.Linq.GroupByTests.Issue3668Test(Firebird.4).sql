@@ -14,8 +14,7 @@ SELECT
 FROM
 	"Person" "m_1"
 WHERE
-	"m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR
-	"m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id
+	"m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR "m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id
 
 -- Firebird.4 Firebird4
 DECLARE @id Integer -- Int32
@@ -28,6 +27,5 @@ SELECT
 FROM
 	"Person" "x"
 WHERE
-	"x"."PersonID" = @id AND "x"."LastName" <> @name OR
-	"x"."FirstName" <> @name AND "x"."PersonID" - 1 = @id
+	"x"."PersonID" = @id AND "x"."LastName" <> @name OR "x"."FirstName" <> @name AND "x"."PersonID" - 1 = @id
 
