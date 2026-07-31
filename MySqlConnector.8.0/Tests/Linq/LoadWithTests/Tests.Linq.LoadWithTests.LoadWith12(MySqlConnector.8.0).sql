@@ -1,4 +1,5 @@
-﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`ParentID`,
 	`m_1`.`ParentID_1`,
@@ -24,7 +25,7 @@ FROM
 	) `m_1`
 		INNER JOIN `Child` `d_1` ON `m_1`.`ParentID` = `d_1`.`ParentID`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`m_1`.`ParentID`,
 	`d`.`ParentID`,
@@ -44,7 +45,7 @@ FROM
 		INNER JOIN `Child` `d` ON `m_1`.`ParentID` = `d`.`ParentID`
 		LEFT JOIN `Parent` `a_Parent` ON `d`.`ParentID` = `a_Parent`.`ParentID`
 
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- Batch 3
 SELECT
 	`p`.`ParentID`,
 	`p`.`Value1`
@@ -53,4 +54,3 @@ FROM
 WHERE
 	`p`.`ParentID` < 2
 LIMIT 1
-

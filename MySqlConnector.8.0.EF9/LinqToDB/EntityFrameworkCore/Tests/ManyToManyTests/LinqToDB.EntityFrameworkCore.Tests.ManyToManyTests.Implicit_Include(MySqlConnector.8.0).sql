@@ -10,7 +10,8 @@ ORDER BY `s`.`Id`, `s0`.`CoursesId`, `s0`.`StudentsId`
 
 
 
--- MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector
+-- Batch 1
 SELECT
 	`m_1`.`Id`,
 	`o`.`Id`,
@@ -22,9 +23,7 @@ FROM
 ORDER BY
 	`m_1`.`Id`
 
-
-
--- MySql.8.0.MySqlConnector MySql80
+-- Batch 2
 SELECT
 	`t1`.`Id`,
 	`t1`.`Name`
@@ -32,6 +31,5 @@ FROM
 	`Students` `t1`
 ORDER BY
 	`t1`.`Id`
-
 
 
