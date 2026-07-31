@@ -21,10 +21,7 @@ FROM
 		INNER JOIN [People] [o] ON [o].[Id] = [d].[FriendId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SQLite.MS SQLite
+;
 SELECT
 	[t1].[Id],
 	[t1].[Name]

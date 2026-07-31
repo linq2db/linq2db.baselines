@@ -39,8 +39,7 @@ FROM
 		) [d_1] ON [m_1].[CustomerID] = [d_1].[CustomerID] AND [d_1].[rn] <= 5
 ORDER BY
 	[d_1].[OrderDate] DESC
-
--- Northwind.SQLite SQLite.Classic SQLite
+;
 SELECT
 	[c_1].[CustomerID],
 	[c_1].[CompanyName],

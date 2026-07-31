@@ -30,8 +30,7 @@ FROM
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 ORDER BY
 	[m_2].[Id_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -51,8 +50,7 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -72,8 +70,7 @@ FROM
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -118,8 +115,7 @@ FROM
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 ORDER BY
 	[m_2].[Id_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -139,8 +135,7 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -163,8 +158,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]
@@ -209,8 +203,7 @@ FROM
 		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 ORDER BY
 	[m_2].[Id_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -230,8 +223,7 @@ FROM
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_2].[Id],
 	[d].[Id],
@@ -254,8 +246,7 @@ FROM
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 ORDER BY
 	[m_2].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_1].[Id],
 	[m_1].[Value]

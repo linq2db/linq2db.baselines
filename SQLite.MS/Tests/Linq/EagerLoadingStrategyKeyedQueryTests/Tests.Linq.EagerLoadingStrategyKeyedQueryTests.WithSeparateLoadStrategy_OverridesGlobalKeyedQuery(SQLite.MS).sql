@@ -20,8 +20,7 @@ ORDER BY
 	[d_1].[Id],
 	[m_1].[Id],
 	[m_1].[Id_1]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -32,8 +31,7 @@ FROM
 ORDER BY
 	[d].[Id],
 	[m_1].[Id]
-
--- SQLite.MS SQLite
+;
 SELECT
 	[c_1].[Id],
 	[c_1].[Name]

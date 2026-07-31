@@ -18,11 +18,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
-
--- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 35
-
+;
 SELECT
 	[c_1].[Id]
 FROM
@@ -51,11 +47,7 @@ FROM
 		LIMIT 1
 	) [m_1]
 		INNER JOIN [EmailAttachment] [d] ON [m_1].[Id] = [d].[EmailId]
-
--- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 36
-
+;
 SELECT
 	[c_1].[Id]
 FROM

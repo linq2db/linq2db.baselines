@@ -11,11 +11,7 @@ FROM
 		INNER JOIN [Patient] [d] ON [m_1].[PersonID] = [d].[PersonID]
 WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE '~'
-
--- SQLite.MS SQLite
-DECLARE @input NVarChar(6) -- String
-SET     @input = '%test%'
-
+;
 SELECT
 	[p].[FirstName],
 	[p].[PersonID]
