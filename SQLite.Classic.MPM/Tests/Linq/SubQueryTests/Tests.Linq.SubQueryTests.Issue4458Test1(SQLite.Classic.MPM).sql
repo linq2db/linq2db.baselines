@@ -19,8 +19,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[i].[Id],
 	[stock_1].[TotalAvailable]

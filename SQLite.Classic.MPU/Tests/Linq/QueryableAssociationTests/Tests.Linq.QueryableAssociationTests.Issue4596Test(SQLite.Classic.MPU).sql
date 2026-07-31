@@ -35,8 +35,7 @@ ORDER BY
 		WHEN [m_1].[C1] <> 'T' THEN [d].[Name3]
 		ELSE ''
 	END
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 SELECT
 	[t1].[Id],
 	[t1].[C1]

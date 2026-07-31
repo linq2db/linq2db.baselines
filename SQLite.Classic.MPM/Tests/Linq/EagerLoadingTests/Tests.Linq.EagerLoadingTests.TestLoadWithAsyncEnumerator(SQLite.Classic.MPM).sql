@@ -17,11 +17,7 @@ FROM
 			[m_1].[Id1] >= @intParam
 	) [m_2]
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
-SET     @intParam = 0
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
@@ -33,11 +29,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
 	[m_1].[Id1] >= @intParam AND [d].[DetailId] % 2 = 0
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @intParam  -- Int32
-SET     @intParam = 0
-
+;
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],

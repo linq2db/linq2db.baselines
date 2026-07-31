@@ -30,13 +30,7 @@ FROM
 			) [t1]
 	) [m_1]
 		INNER JOIN [User] [d] ON [m_1].[UserId] = [d].[Id]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @UserId  -- Int32
-SET     @UserId = 123
-DECLARE @take  -- Int32
-SET     @take = 1
-
+;
 SELECT
 	[x].[UserId]
 FROM

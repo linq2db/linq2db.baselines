@@ -23,8 +23,7 @@ FROM
 			[dcp].[Distributor_Type_Code] = 'RE'
 	) [m_1]
 		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code]
-
--- SQLite.Classic.MPM SQLite.Classic SQLite
+;
 SELECT
 	[a].[First_Name],
 	[a].[Last_Name],

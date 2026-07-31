@@ -80,8 +80,7 @@ FROM
 				LEFT JOIN [CteChildTable] [d] ON [t7].[Value4] = [d].[Id]
 	) [m_1]
 		INNER JOIN [CteTable] [d_1] ON [m_1].[Id] = [d_1].[Value3]
-
--- SQLite.Classic.MPU SQLite.Classic SQLite
+;
 WITH [cte] ([Value2])
 AS
 (
