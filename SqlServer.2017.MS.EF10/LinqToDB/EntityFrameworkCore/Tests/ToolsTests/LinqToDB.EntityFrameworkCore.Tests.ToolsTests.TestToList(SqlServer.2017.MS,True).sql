@@ -1,6 +1,7 @@
 ﻿
 
 -- SqlServer.2017
+-- Batch 1
 SELECT
 	[m_1].[OrderID],
 	[d].[IsDeleted],
@@ -28,11 +29,7 @@ WHERE
 	[m_1].[IsDeleted] = 0 AND [a_Product].[IsDeleted] = 0 AND
 	[d].[IsDeleted] = 0
 
-
-
-
-
--- SqlServer.2017
+-- Batch 2
 SELECT
 	[e].[IsDeleted],
 	[e].[OrderID],
@@ -53,6 +50,7 @@ FROM
 	[Orders] [e]
 WHERE
 	[e].[IsDeleted] = 0
+
 
 
 
