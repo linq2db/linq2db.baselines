@@ -28,9 +28,7 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = RTrim(Char("trade_1"."DealId"))
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = RTrim(Char("nomin_1"."CargoId"))
 		WHERE
-			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-			"trade_1"."CounterParty" LIKE @DeliveryCounterParty OR
-			"al_group_1"."AlertCode" LIKE @DeliveryCounterParty
+			"nomin_1"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_1"."CounterParty" LIKE @DeliveryCounterParty OR "al_group_1"."AlertCode" LIKE @DeliveryCounterParty
 	) "al_group_3"
 		LEFT JOIN (
 			SELECT
@@ -62,8 +60,6 @@ FROM
 					LEFT JOIN "Trade" "trade_2" ON "t1"."AlertKey" = RTrim(Char("trade_2"."DealId"))
 					LEFT JOIN "Nomin" "nomin_2" ON "t1"."AlertKey" = RTrim(Char("nomin_2"."CargoId"))
 			WHERE
-				"nomin_2"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR
-				"trade_2"."CounterParty" LIKE @DeliveryCounterParty OR
-				"t1"."AlertCode" LIKE @DeliveryCounterParty
+				"nomin_2"."DeliveryCounterParty" LIKE @DeliveryCounterParty OR "trade_2"."CounterParty" LIKE @DeliveryCounterParty OR "t1"."AlertCode" LIKE @DeliveryCounterParty
 		) "t2" ON "al_group_3"."Id" = "t2"."Id" AND "t2"."rn" = 1
 
