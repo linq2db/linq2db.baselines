@@ -11,6 +11,7 @@ ORDER BY [p].[Code], [p].[OrgId], [s].[MemberId], [s].[OrgId], [s].[Code]
 
 
 -- SqlServer.2025
+-- Batch 1
 SELECT
 	[m_1].[OrgId],
 	[m_1].[Code],
@@ -23,9 +24,7 @@ FROM
 ORDER BY
 	[m_1].[Code]
 
-
-
--- SqlServer.2025
+-- Batch 2
 SELECT
 	[t1].[OrgId],
 	[t1].[Code],
@@ -34,6 +33,5 @@ FROM
 	[Projects] [t1]
 ORDER BY
 	[t1].[Code]
-
 
 

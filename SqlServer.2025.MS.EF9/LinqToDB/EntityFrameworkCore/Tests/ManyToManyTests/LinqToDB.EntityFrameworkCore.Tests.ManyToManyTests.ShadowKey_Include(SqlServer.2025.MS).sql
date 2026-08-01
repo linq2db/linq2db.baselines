@@ -20,10 +20,7 @@ FROM
 		INNER JOIN [Tags] [o] ON [o].[tag_id_col] = [d].[TagsTagId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SqlServer.2025
+;
 SELECT
 	[t1].[Id],
 	[t1].[Title]

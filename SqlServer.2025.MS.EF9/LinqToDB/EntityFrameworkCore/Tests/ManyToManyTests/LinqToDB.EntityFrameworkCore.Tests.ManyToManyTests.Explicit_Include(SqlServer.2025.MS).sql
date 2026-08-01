@@ -21,10 +21,7 @@ FROM
 		INNER JOIN [Products] [o] ON [o].[Id] = [d].[ProductId]
 ORDER BY
 	[m_1].[Id]
-
-
-
--- SqlServer.2025
+;
 SELECT
 	[t1].[Id],
 	[t1].[Number]

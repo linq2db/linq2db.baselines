@@ -20,10 +20,7 @@ FROM
 			GROUP BY
 				[d].[ParentId]
 		) [d_1]
-
-
-
--- SqlServer.2025
+;
 SELECT
 	[c_1].[Id]
 FROM
