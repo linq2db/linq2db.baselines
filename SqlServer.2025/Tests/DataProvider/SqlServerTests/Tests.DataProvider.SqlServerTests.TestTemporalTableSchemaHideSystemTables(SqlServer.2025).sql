@@ -105,7 +105,7 @@ WHERE
 			class    = 1           AND
 			name     = N'microsoft_database_tools_support'
 			) IS NULL
-					) AND t.temporal_type <> 1
+					) AND (t.temporal_type IS NULL OR t.temporal_type <> 1)
 
 -- SqlServer.2025
 SELECT
