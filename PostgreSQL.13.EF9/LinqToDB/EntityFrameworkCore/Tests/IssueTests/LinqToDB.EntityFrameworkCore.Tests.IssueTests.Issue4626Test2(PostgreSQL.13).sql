@@ -1,6 +1,7 @@
 ﻿
 
--- PostgreSQL.13 PostgreSQL12
+-- PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d_1."Key_1",
@@ -21,13 +22,10 @@ FROM
 				d."ParentId"
 		) d_1 ON 1=1
 
-
-
--- PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	c_1."Id"
 FROM
 	"Parents" c_1
-
 
 
