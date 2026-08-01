@@ -19,8 +19,7 @@ FROM
 			)
 	) [m_1]
 		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
-
--- SqlServer.SA SqlServer.2019
+;
 SELECT
 	[a].[Id],
 	[a].[ArrayString]

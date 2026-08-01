@@ -1,7 +1,6 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 1
+-- table = 
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID]
@@ -16,10 +15,8 @@ WHERE
 			@table [x]
 	)
 
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 2
+-- table = 
 SELECT
 	[p1].[PersonID]
 FROM
@@ -31,11 +28,9 @@ WHERE
 		FROM
 			@table [x]
 	)
-
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 1
+-- table = 
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID]
@@ -50,10 +45,8 @@ WHERE
 			@table [x]
 	)
 
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 2
+-- table = 
 SELECT
 	[p1].[PersonID]
 FROM
@@ -65,11 +58,9 @@ WHERE
 		FROM
 			@table [x]
 	)
-
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 1
+-- table = 
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID]
@@ -84,10 +75,8 @@ WHERE
 			@table [x]
 	)
 
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 2
+-- table = 
 SELECT
 	[p1].[PersonID]
 FROM
@@ -99,11 +88,9 @@ WHERE
 		FROM
 			@table [x]
 	)
-
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 1
+-- table = 
 SELECT
 	[m_1].[PersonID],
 	[d].[PersonID]
@@ -118,10 +105,8 @@ WHERE
 			@table [x]
 	)
 
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @table [dbo].[TestTableType] -- Structured -- Object
-SET     @table = 
-
+-- Batch 2
+-- table = 
 SELECT
 	[p1].[PersonID]
 FROM
@@ -133,4 +118,3 @@ WHERE
 		FROM
 			@table [x]
 	)
-

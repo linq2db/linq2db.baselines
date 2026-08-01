@@ -19,8 +19,7 @@ WHERE
 ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
-
--- SqlServer.SA SqlServer.2019
+;
 SELECT
 	[i].[Id],
 	(

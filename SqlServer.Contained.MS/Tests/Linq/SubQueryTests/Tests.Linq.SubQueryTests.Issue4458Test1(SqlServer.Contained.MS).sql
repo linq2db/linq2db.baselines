@@ -1,4 +1,5 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
+-- Batch 1
 SELECT
 	[m_1].[Id],
 	[d].[ItemId],
@@ -20,7 +21,7 @@ ORDER BY
 	[d].[ItemId],
 	[d].[UserId]
 
--- SqlServer.Contained.MS SqlServer.2019
+-- Batch 2
 SELECT
 	[i].[Id],
 	(
@@ -44,7 +45,6 @@ WHERE
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
-
 -- SqlServer.Contained.MS SqlServer.2019
 SELECT
 	[t1].[Id]

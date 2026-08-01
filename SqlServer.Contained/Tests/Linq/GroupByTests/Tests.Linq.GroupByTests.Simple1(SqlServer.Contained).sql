@@ -11,8 +11,7 @@ FROM
 			[Child] [t1]
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
-
--- SqlServer.Contained SqlServer.2019
+;
 SELECT DISTINCT
 	[t1].[ParentID]
 FROM

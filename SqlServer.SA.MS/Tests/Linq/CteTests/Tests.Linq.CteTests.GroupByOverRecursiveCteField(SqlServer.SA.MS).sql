@@ -33,8 +33,7 @@ FROM
 			[cte] [t1]
 	) [m_1]
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = Coalesce([d].[ParentID], -1)
-
--- SqlServer.SA.MS SqlServer.2019
+;
 WITH [cte] ([ChildID], [ParentID], [GrandChildID])
 AS
 (

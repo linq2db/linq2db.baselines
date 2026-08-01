@@ -13,8 +13,7 @@ FROM
 			[p].[ParentID] = 2
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
-
--- SqlServer.SA SqlServer.2019
+;
 SELECT
 	[t].[ParentID],
 	[t].[Value1]

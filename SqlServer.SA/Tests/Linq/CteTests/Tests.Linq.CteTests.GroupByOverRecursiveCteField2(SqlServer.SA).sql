@@ -39,11 +39,7 @@ FROM
 			[cte] [t2]
 	) [m_1]
 		INNER JOIN [cte] [d] ON [m_1].[Key_1] = [d].[Field2]
-
--- SqlServer.SA SqlServer.2019
-DECLARE @id Int -- Int32
-SET     @id = 1
-
+;
 WITH [cte] ([Field2], [Field3])
 AS
 (
