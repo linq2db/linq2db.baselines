@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+﻿-- PostgreSQL.14 PostgreSQL.13
+-- Batch 1
 SELECT
 	m_1."Id",
 	d."Id",
@@ -24,7 +25,7 @@ FROM
 		LEFT JOIN "ProductUnit" "a_ProductUnit" ON d."ProductUnitId" = "a_ProductUnit"."Id"
 		LEFT JOIN "Product" "a_Product" ON d."ProductId" = "a_Product"."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 2
 SELECT
 	m_1."Id",
 	d."Id",
@@ -47,7 +48,7 @@ FROM
 		INNER JOIN "InvoiceTaxLine" d ON m_1."Id" = d."InvoiceId"
 		INNER JOIN "AccountTax" "a_Tax" ON d."TaxId" = "a_Tax"."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 3
 SELECT
 	m_1."Id",
 	d."Id",
@@ -67,7 +68,7 @@ FROM
 	) m_1
 		INNER JOIN "CustomInvoiceLine" d ON m_1."Id" = d."CustomInvoiceId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 4
 SELECT
 	m_1."Id",
 	d."Id",
@@ -93,7 +94,7 @@ FROM
 		LEFT JOIN "MeasureSource" "a_Source" ON d."MeasuresSourceId" = "a_Source"."Id"
 		LEFT JOIN "MeasureSource" "a_PreviousSource" ON d."PreviousSourceId" = "a_PreviousSource"."Id"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 5
 SELECT
 	m_1."Id",
 	d."Id",
@@ -113,7 +114,7 @@ FROM
 	) m_1
 		INNER JOIN "TypeBMeasures" d ON m_1."Id" = d."CustomInvoiceId"
 
--- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+-- Batch 6
 SELECT
 	f."Id",
 	f."ContractId",
@@ -165,4 +166,3 @@ FROM
 		LEFT JOIN "PriceList" "a_PriceList" ON f."PriceListId" = "a_PriceList"."Id"
 WHERE
 	f."Id" = 1
-
