@@ -1,7 +1,6 @@
-﻿-- PostgreSQL.18 PostgreSQL12
-DECLARE @myId Integer -- Int32
-SET     @myId = 2
-
+﻿-- PostgreSQL.18
+-- Batch 1
+-- myId = 2
 SELECT
 	m_1."Key_1",
 	d.id,
@@ -27,10 +26,8 @@ FROM
 WHERE
 	d.id2 = :myId
 
--- PostgreSQL.18 PostgreSQL12
-DECLARE @myId Integer -- Int32
-SET     @myId = 2
-
+-- Batch 2
+-- myId = 2
 SELECT DISTINCT
 	x.id
 FROM
@@ -41,4 +38,3 @@ WHERE
 ORDER BY
 	x.id
 LIMIT 1
-

@@ -35,7 +35,8 @@ SELECT
 FROM
 	"MasterClass" m_1
 
--- PostgreSQL.18 PostgreSQL12
+-- PostgreSQL.18
+-- Batch 1
 SELECT
 	m_1."Id1",
 	d."DetailId",
@@ -50,7 +51,7 @@ FROM
 	) m_1
 		INNER JOIN "DetailClass" d ON m_1."Id1" = d."MasterId"
 
--- PostgreSQL.18 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."Id1",
 	t1."Id2",
@@ -58,4 +59,3 @@ SELECT
 	t1."ByteValues"
 FROM
 	"MasterClass" t1
-
