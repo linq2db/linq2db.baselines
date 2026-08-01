@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+﻿-- PostgreSQL.17 PostgreSQL.15
+-- Batch 1
 WITH "CTE_1" ("PersonID")
 AS
 (
@@ -25,7 +26,7 @@ FROM
 	) m_1
 		INNER JOIN "Person" d ON d."PersonID" = m_1."PersonID"
 
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+-- Batch 2
 WITH "CTE_1" ("PersonID")
 AS
 (
@@ -40,4 +41,3 @@ SELECT
 FROM
 	"CTE_1" r
 		INNER JOIN "Patient" p ON r."PersonID" = p."PersonID"
-
