@@ -1,4 +1,5 @@
-﻿-- PostgreSQL.19 PostgreSQL12
+﻿-- PostgreSQL.19
+-- Batch 1
 SELECT
 	m_1."CategoryID",
 	d."ProductID",
@@ -9,11 +10,10 @@ FROM
 	"Categories" m_1
 		INNER JOIN "Products" d ON m_1."CategoryID" = d."CategoryID"
 
--- PostgreSQL.19 PostgreSQL12
+-- Batch 2
 SELECT
 	t1."CategoryID",
 	t1."CategoryName",
 	t1."Description"
 FROM
 	"Categories" t1
-
