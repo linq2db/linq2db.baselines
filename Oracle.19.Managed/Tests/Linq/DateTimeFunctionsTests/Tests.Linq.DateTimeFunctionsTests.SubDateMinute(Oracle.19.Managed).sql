@@ -1,6 +1,6 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 SELECT
-	CAST((CAST((t."DateTimeValue" + 100D * INTERVAL '1' MINUTE) as DATE) - CAST(t."DateTimeValue" as DATE)) * 1440 AS Float)
+	((EXTRACT(DAY FROM CAST((t."DateTimeValue" + 100D * INTERVAL '1' MINUTE) AS TIMESTAMP) - CAST(t."DateTimeValue" AS TIMESTAMP)) * 86400 + EXTRACT(HOUR FROM CAST((t."DateTimeValue" + 100D * INTERVAL '1' MINUTE) AS TIMESTAMP) - CAST(t."DateTimeValue" AS TIMESTAMP)) * 3600 + EXTRACT(MINUTE FROM CAST((t."DateTimeValue" + 100D * INTERVAL '1' MINUTE) AS TIMESTAMP) - CAST(t."DateTimeValue" AS TIMESTAMP)) * 60 + EXTRACT(SECOND FROM CAST((t."DateTimeValue" + 100D * INTERVAL '1' MINUTE) AS TIMESTAMP) - CAST(t."DateTimeValue" AS TIMESTAMP)))) / 60
 FROM
 	"LinqDataTypes" t
 

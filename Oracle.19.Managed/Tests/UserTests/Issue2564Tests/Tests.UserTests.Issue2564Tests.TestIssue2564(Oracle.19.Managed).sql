@@ -33,7 +33,7 @@ SELECT
 	tgGroup_1."TranslatedMessageGroup",
 	tgGroup_1."Hour_1",
 	COUNT(*),
-	SUM(CAST(1000 * (EXTRACT(SECOND FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP))))) AS Float))
+	SUM(((EXTRACT(DAY FROM CAST(tgGroup_1."TimestampGone" AS TIMESTAMP) - CAST(tgGroup_1."TimestampGenerated" AS TIMESTAMP)) * 86400 + EXTRACT(HOUR FROM CAST(tgGroup_1."TimestampGone" AS TIMESTAMP) - CAST(tgGroup_1."TimestampGenerated" AS TIMESTAMP)) * 3600 + EXTRACT(MINUTE FROM CAST(tgGroup_1."TimestampGone" AS TIMESTAMP) - CAST(tgGroup_1."TimestampGenerated" AS TIMESTAMP)) * 60 + EXTRACT(SECOND FROM CAST(tgGroup_1."TimestampGone" AS TIMESTAMP) - CAST(tgGroup_1."TimestampGenerated" AS TIMESTAMP)))) * 1000)
 FROM
 	(
 		SELECT
@@ -41,8 +41,8 @@ FROM
 			tgGroup."TranslatedMessageGroup",
 			EXTRACT(HOUR FROM tgGroup."TimestampGenerated") as "Hour_1",
 			tgGroup."TranslatedMessage1",
-			tgGroup."TimestampGenerated",
-			tgGroup."TimestampGone"
+			tgGroup."TimestampGone",
+			tgGroup."TimestampGenerated"
 		FROM
 			"Issue2564Table" tgGroup
 		WHERE

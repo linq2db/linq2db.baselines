@@ -3,7 +3,7 @@ DECLARE @p Int32
 SET     @p = 226
 
 SELECT
-	t."DateTimeValue" + :p * INTERVAL '0.001' SECOND
+	t."DateTimeValue" + :p * INTERVAL '0.001' SECOND(1,3)
 FROM
 	"LinqDataTypes" t
 
