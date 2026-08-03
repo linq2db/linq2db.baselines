@@ -23,7 +23,7 @@ SELECT
 	tgGroup_1.TranslatedMessageGroup,
 	tgGroup_1.Hour_1,
 	COUNT(*),
-	sumOrNull(toFloat64(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGone, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3))))
+	SUM(toFloat64(toInt64(toInt64((toUnixTimestamp64Nano(toDateTime64(tgGroup_1.TimestampGone, 9)) - toUnixTimestamp64Nano(toDateTime64(tgGroup_1.TimestampGenerated, 9))) / 100))) / toFloat64(10000))
 FROM
 	(
 		SELECT
@@ -31,8 +31,8 @@ FROM
 			tgGroup.TranslatedMessageGroup as TranslatedMessageGroup,
 			toHour(tgGroup.TimestampGenerated) as Hour_1,
 			tgGroup.TranslatedMessage1 as TranslatedMessage1,
-			tgGroup.TimestampGenerated as TimestampGenerated,
-			tgGroup.TimestampGone as TimestampGone
+			tgGroup.TimestampGone as TimestampGone,
+			tgGroup.TimestampGenerated as TimestampGenerated
 		FROM
 			Issue2564Table tgGroup
 		WHERE
