@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	Unwrap(CAST(Unwrap(CAST(t.DateTimeValue + DateTime::IntervalFromMinutes(Unwrap(CAST(Double('100') AS Int32))) - t.DateTimeValue AS Int64)) / 1000000l AS Double)) as c1
+	Unwrap(CAST(Unwrap(CAST(DateTime::ToMicroseconds((t.DateTimeValue + DateTime::IntervalFromMinutes(Unwrap(CAST(Double('100') AS Int32)))) - t.DateTimeValue) * 10 AS Int64)) AS Double)) / Double('10000000') as c1
 FROM
 	LinqDataTypes t
 

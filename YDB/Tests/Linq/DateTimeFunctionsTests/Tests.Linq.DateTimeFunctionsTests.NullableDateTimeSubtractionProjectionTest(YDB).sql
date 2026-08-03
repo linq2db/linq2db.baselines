@@ -1,7 +1,6 @@
 ﻿-- YDB Ydb
 SELECT
-	t.FinishedOn as FinishedOn,
-	t.StartedOn as StartedOn
+	DateTime::ToMicroseconds(t.FinishedOn - t.StartedOn) * 10 as c1
 FROM
 	NullableDateTimeSub t
 ORDER BY
