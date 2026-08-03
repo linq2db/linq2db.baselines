@@ -48,7 +48,7 @@ SELECT
 FROM
 	Common_Topology_Locations x
 WHERE
-	x.StartDateTime2 + ((CAST($p AS BIGINT) - (CAST($p AS BIGINT) % 864000000000)) // 864000000000) * Interval '1 Day' + (((CAST($p AS BIGINT) % 864000000000) - ((CAST($p AS BIGINT) % 864000000000) % 10000)) // 10000) * Interval '1 Millisecond' > '2026-08-03 15:07:37.258898'::TIMESTAMP
+	x.StartDateTime2 + ((CAST($p AS BIGINT) - (CAST($p AS BIGINT) % 864000000000)) // 864000000000) * Interval '1 Day' + (((CAST($p AS BIGINT) % 864000000000) - ((CAST($p AS BIGINT) % 864000000000) % 10000)) // 10000) * Interval '1 Millisecond' > '2026-08-03 18:08:04.559194'::TIMESTAMP
 
 -- DuckDB
 DECLARE $p  -- Int64
@@ -66,7 +66,7 @@ SELECT
 FROM
 	Common_Topology_Locations x
 WHERE
-	x.StartDateTime2 + ((CAST($p AS BIGINT) - (CAST($p AS BIGINT) % 864000000000)) // 864000000000) * Interval '1 Day' + (((CAST($p AS BIGINT) % 864000000000) - ((CAST($p AS BIGINT) % 864000000000) % 10000)) // 10000) * Interval '1 Millisecond' > '2026-08-03 15:07:37.265636'::TIMESTAMP
+	x.StartDateTime2 + ((CAST($p AS BIGINT) - (CAST($p AS BIGINT) % 864000000000)) // 864000000000) * Interval '1 Day' + (((CAST($p AS BIGINT) % 864000000000) - ((CAST($p AS BIGINT) % 864000000000) % 10000)) // 10000) * Interval '1 Millisecond' > '2026-08-03 18:08:04.566807'::TIMESTAMP
 
 -- DuckDB
 SELECT
