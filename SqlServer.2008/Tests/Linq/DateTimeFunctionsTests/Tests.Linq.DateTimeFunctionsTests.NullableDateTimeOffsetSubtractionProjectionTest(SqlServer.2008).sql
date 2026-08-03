@@ -1,7 +1,6 @@
 ﻿-- SqlServer.2008
 SELECT
-	[t].[FinishedOn],
-	[t].[StartedOn]
+	CAST(DATEDIFF(millisecond, [t].[StartedOn], [t].[FinishedOn]) AS BIGINT) * 10000
 FROM
 	[NullableDtOffsetSub] [t]
 ORDER BY
