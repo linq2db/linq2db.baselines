@@ -1,35 +1,27 @@
 ﻿-- SqlServer.2019
 SELECT
-	[t3].[ColorName],
-	[t3].[StyleName],
-	[t3].[Conditional],
-	[t3].[StrValue]
+	[it].[ColorName],
+	[it].[StyleName],
+	[it].[Conditional],
+	CONCAT_WS(N',', N'', [it].[StyleName]) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'')
 FROM
-	(
-		SELECT
-			CONCAT_WS(N',', N'', [it].[StyleName]) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
-			[it].[ColorName],
-			[it].[StyleName],
-			[it].[Conditional]
-		FROM
-			[SomeItem] [t2]
-				LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
-				LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
-				LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
-				OUTER APPLY (VALUES
-					([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),IIF([a_Color].[Name] = N'Red', (
-						SELECT
-							COUNT(*) as [Conditional]
-						FROM
-							[SomeItem] [t1]
-					), 0)),
-					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),0)
-				) [it]([ColorName], [StyleName], [ColorId], [Conditional])
-		WHERE
-			[it].[ColorName] = N'Red'
-	) [t3]
+	[SomeItem] [t2]
+		LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
+		LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
+		LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
+		OUTER APPLY (VALUES
+			([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),IIF([a_Color].[Name] = N'Red', (
+				SELECT
+					COUNT(*) as [Conditional]
+				FROM
+					[SomeItem] [t1]
+			), 0)),
+			(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),0)
+		) [it]([ColorName], [StyleName], [ColorId], [Conditional])
+WHERE
+	[it].[ColorName] = N'Red'
 ORDER BY
-	[t3].[StrValue]
+	CONCAT_WS(N',', N'', [it].[StyleName]) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'')
 
 -- SqlServer.2019
 SELECT

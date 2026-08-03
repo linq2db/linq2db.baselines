@@ -50,12 +50,12 @@ SET     @skip = 6
 SELECT
 	[t1].[BookType],
 	IIF([t1].[BookType] = N'Roman', 1, 0),
-	[t1].[c1]
+	[t1].[Authors]
 FROM
 	(
 		SELECT
 			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-			NULL as [c1]
+			NULL as [Authors]
 		FROM
 			[Book] [b]
 		WHERE
@@ -63,7 +63,7 @@ FROM
 		UNION ALL
 		SELECT
 			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-			[b_1].[BookId] as [c1]
+			[b_1].[BookId] as [Authors]
 		FROM
 			[Book] [b_1]
 		WHERE
