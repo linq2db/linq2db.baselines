@@ -1,5 +1,16 @@
 ﻿-- SqlServer.2019
 SELECT TOP (2)
+	[t1].[Id],
+	[t1].[StartDateTime],
+	[t1].[EndDateTime],
+	[t1].[RequiredDateTime],
+	[t1].[PreNotification],
+	[t1].[RequiredInterval]
+FROM
+	[Common_Topology_Locations] [t1]
+
+-- SqlServer.2019
+SELECT TOP (2)
 	DateAdd(nanosecond, (((CAST([row_1].[PreNotification] AS BigInt) % 864000000000) % 36000000000) % 10000) * 100, DateAdd(millisecond, (((CAST([row_1].[PreNotification] AS BigInt) % 864000000000) % 36000000000) - (((CAST([row_1].[PreNotification] AS BigInt) % 864000000000) % 36000000000) % 10000)) / 10000, DateAdd(hour, ((CAST([row_1].[PreNotification] AS BigInt) % 864000000000) - ((CAST([row_1].[PreNotification] AS BigInt) % 864000000000) % 36000000000)) / 36000000000, DateAdd(day, (CAST([row_1].[PreNotification] AS BigInt) - (CAST([row_1].[PreNotification] AS BigInt) % 864000000000)) / 864000000000, [row_1].[StartDateTime])))),
 	DateAdd(nanosecond, (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) % 10000) * 100, DateAdd(millisecond, (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) - (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) % 10000)) / 10000, DateAdd(hour, ((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) - ((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000)) / 36000000000, DateAdd(day, (CAST([row_1].[RequiredInterval] AS BigInt) - (CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000)) / 864000000000, [row_1].[RequiredDateTime])))),
 	DateAdd(nanosecond, (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) % 10000) * 100, DateAdd(millisecond, (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) - (((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000) % 10000)) / 10000, DateAdd(hour, ((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) - ((CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000) % 36000000000)) / 36000000000, DateAdd(day, (CAST([row_1].[RequiredInterval] AS BigInt) - (CAST([row_1].[RequiredInterval] AS BigInt) % 864000000000)) / 864000000000, [row_1].[StartDateTime])))),
