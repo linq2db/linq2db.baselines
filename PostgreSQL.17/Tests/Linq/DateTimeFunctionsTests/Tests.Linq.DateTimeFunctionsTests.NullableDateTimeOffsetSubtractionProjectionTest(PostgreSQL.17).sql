@@ -1,7 +1,6 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
 SELECT
-	t."FinishedOn",
-	t."StartedOn"
+	t."FinishedOn" - t."StartedOn"
 FROM
 	"NullableDtOffsetSub" t
 ORDER BY
