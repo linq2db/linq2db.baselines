@@ -27,6 +27,6 @@ FROM
 WHERE
 	(x.Status <> 'New' OR x.Status IS NULL) AND
 	(x.Status <> 'Completed' OR x.Status IS NULL) AND
-	x.NotificationDateTime < '2026-08-03 18:08:04.852890'::TIMESTAMP AND
-	CAST(x.StartDateTime AS DATE) < CAST('2026-08-03 18:08:04.853061'::TIMESTAMP AS DATE)
+	x.NotificationDateTime < '2026-08-03 19:02:24.026972'::TIMESTAMP AND
+	CAST(x.StartDateTime AS DATE) < CAST('2026-08-03 19:02:24.027137'::TIMESTAMP AS DATE)
 
