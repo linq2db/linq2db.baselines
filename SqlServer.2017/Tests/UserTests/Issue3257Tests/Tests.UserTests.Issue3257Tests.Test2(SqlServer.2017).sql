@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2017
 SELECT
 	[x_1].[Id],
-	[x_1].[Triggers_1]
+	IIF([x_1].[c1] = 1, [x_1].[Triggers_1], N'None')
 FROM
 	(
 		SELECT
@@ -12,7 +12,8 @@ FROM
 					[ChecklistTrigger] [a_ChecklistTriggers]
 				WHERE
 					[x].[Id] = [a_ChecklistTriggers].[ChecklistId]
-			), (
+			), 1, 0) as [c1],
+			(
 				SELECT
 					STRING_AGG(CASE
 						WHEN [a_ChecklistTriggers_1].[TriggerType] = 1 THEN N'Hired'
@@ -24,11 +25,11 @@ FROM
 					[ChecklistTrigger] [a_ChecklistTriggers_1]
 				WHERE
 					[x].[Id] = [a_ChecklistTriggers_1].[ChecklistId]
-			), N'None') as [Triggers_1],
+			) as [Triggers_1],
 			[x].[Id]
 		FROM
 			[Checklist] [x]
 	) [x_1]
 WHERE
-	[x_1].[Triggers_1] LIKE N'%H%' ESCAPE N'~'
+	IIF([x_1].[c1] = 1, [x_1].[Triggers_1], N'None') LIKE N'%H%' ESCAPE N'~'
 
