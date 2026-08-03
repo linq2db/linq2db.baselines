@@ -1,29 +1,29 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 SELECT
-	[x_1].[Id],
-	[x_1].[StatusName]
+	[t1].[PersonID],
+	[t1].[Diagnosis]
 FROM
 	(
 		SELECT
 			(
 				SELECT TOP 1
-					[y].[Diagnosis]
+					[y].[PersonID]
 				FROM
 					[Patient] [y]
 				WHERE
 					[y].[PersonID] = [x].[PersonID]
-			) as [StatusName],
+			) as [PersonID],
 			(
 				SELECT TOP 1
-					[y_1].[PersonID]
+					[y_1].[Diagnosis]
 				FROM
 					[Patient] [y_1]
 				WHERE
 					[y_1].[PersonID] = [x].[PersonID]
-			) as [Id]
+			) as [Diagnosis]
 		FROM
 			[Person] [x]
-	) [x_1]
+	) [t1]
 WHERE
-	[x_1].[StatusName] = 'abc'
+	[t1].[PersonID] IS NULL OR [t1].[Diagnosis] = 'abc'
 
