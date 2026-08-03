@@ -1,6 +1,6 @@
 ﻿-- SqlServer.Contained SqlServer.2019
 SELECT
-	CAST(DateDiff(second, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue])) AS Float)
+	CAST(CAST(DATEDIFF_BIG(nanosecond, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue])) / 100 AS BigInt) AS Float) / 10000000
 FROM
 	[LinqDataTypes] [t]
 
