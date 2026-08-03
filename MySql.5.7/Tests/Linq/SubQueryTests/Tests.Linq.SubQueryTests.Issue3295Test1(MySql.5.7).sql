@@ -1,31 +1,31 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	`x_1`.`Id`,
-	`x_1`.`StatusName`
+	`t1`.`PersonID`,
+	`t1`.`Diagnosis`
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					`y`.`Diagnosis`
+					`y`.`PersonID`
 				FROM
 					`Patient` `y`
 				WHERE
 					`y`.`PersonID` = `x`.`PersonID`
 				LIMIT 1
-			) as `StatusName`,
+			) as `PersonID`,
 			(
 				SELECT
-					`y_1`.`PersonID`
+					`y_1`.`Diagnosis`
 				FROM
 					`Patient` `y_1`
 				WHERE
 					`y_1`.`PersonID` = `x`.`PersonID`
 				LIMIT 1
-			) as `Id`
+			) as `Diagnosis`
 		FROM
 			`Person` `x`
-	) `x_1`
+	) `t1`
 WHERE
-	`x_1`.`StatusName` = 'abc'
+	`t1`.`PersonID` IS NULL OR `t1`.`Diagnosis` = 'abc'
 
