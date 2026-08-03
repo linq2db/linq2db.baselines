@@ -1,0 +1,8 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	MOD(TRUNC((EXTRACT(EPOCH FROM x."Time")) / 3600), 24)
+FROM
+	"Issue2950Table" x
+WHERE
+	MOD(TRUNC((EXTRACT(EPOCH FROM x."Time")) / 3600), 24) >= 0
+
