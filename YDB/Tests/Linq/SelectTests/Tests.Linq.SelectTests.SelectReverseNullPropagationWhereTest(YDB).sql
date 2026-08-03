@@ -4,9 +4,9 @@ SELECT
 	p.Value1 as Value1,
 	c_1.ParentID as ParentID_1,
 	c_1.ChildID as ChildID,
-	a_Parent.ParentID as ParentID_2,
+	a_Parent.ParentID as Info2_1,
 	a_Parent.Value1 as Value1_1,
-	p.ParentID as ParentID_3,
+	p.ParentID as ParentID_2,
 	p.Value1 as Value1_2,
 	CASE
 		WHEN a_Parent.ParentID IS NOT NULL THEN a_Parent.Value1

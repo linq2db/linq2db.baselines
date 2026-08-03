@@ -1,6 +1,6 @@
 ﻿-- YDB Ydb
 $CTE_1 = 	SELECT
-		c_1.ParentID as ParentID
+		c_1.ParentID as First1
 	FROM
 		Child c_1
 	WHERE
