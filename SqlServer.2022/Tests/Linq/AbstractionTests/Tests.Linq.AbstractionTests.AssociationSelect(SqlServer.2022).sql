@@ -1,10 +1,10 @@
 ﻿-- SqlServer.2022
 SELECT
 	[m_1].[Id],
-	[d_1].[Id_1],
+	[d_1].[Id],
 	[d_1].[ParentId],
 	[d_1].[SubId],
-	[d_1].[Id],
+	[d_1].[Id_1],
 	[d_1].[Value_1]
 FROM
 	(
@@ -15,11 +15,11 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id],
-				[a_SubItem].[Value] as [Value_1],
-				[d].[Id] as [Id_1],
+				[d].[Id],
 				[d].[ParentId],
-				[d].[SubId]
+				[d].[SubId],
+				[a_SubItem].[Id] as [Id_1],
+				[a_SubItem].[Value] as [Value_1]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
@@ -39,10 +39,10 @@ FROM
 -- SqlServer.2022
 SELECT
 	[m_1].[Id],
-	[d_1].[Id_1],
+	[d_1].[Id],
 	[d_1].[ParentId],
 	[d_1].[SubId],
-	[d_1].[Id],
+	[d_1].[Id_1],
 	[d_1].[Value_1]
 FROM
 	(
@@ -53,11 +53,11 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id],
-				[a_SubItem].[Value] as [Value_1],
-				[d].[Id] as [Id_1],
+				[d].[Id],
 				[d].[ParentId],
-				[d].[SubId]
+				[d].[SubId],
+				[a_SubItem].[Id] as [Id_1],
+				[a_SubItem].[Value] as [Value_1]
 			FROM
 				[ChildEntitity] [d]
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
