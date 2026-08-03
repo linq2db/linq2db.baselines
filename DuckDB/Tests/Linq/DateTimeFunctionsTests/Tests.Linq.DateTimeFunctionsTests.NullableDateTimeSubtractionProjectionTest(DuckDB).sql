@@ -1,7 +1,6 @@
 ﻿-- DuckDB
 SELECT
-	t.FinishedOn,
-	t.StartedOn
+	date_diff('microsecond', t.StartedOn, t.FinishedOn) * 10
 FROM
 	NullableDateTimeSub t
 ORDER BY
