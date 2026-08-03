@@ -1,31 +1,25 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
-	x_1."Id",
-	x_1."StatusName"
+	CASE
+		WHEN t1."PersonID" IS NOT NULL THEN t1."PersonID"
+		ELSE x."PersonID"
+	END,
+	CASE
+		WHEN t1."PersonID" IS NOT NULL THEN t1."Diagnosis"
+		ELSE 'abc'
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN t1."PersonID" IS NOT NULL THEN t1."Diagnosis"
-				ELSE 'abc'
-			END as "StatusName",
-			CASE
-				WHEN t1."PersonID" IS NOT NULL THEN t1."PersonID"
-				ELSE x."PersonID"
-			END as "Id"
-		FROM
-			"Person" x
-				LEFT JOIN LATERAL (
-					SELECT
-						y."PersonID",
-						y."Diagnosis"
-					FROM
-						"Patient" y
-					WHERE
-						y."PersonID" = x."PersonID"
-					LIMIT 1
-				) t1 ON 1=1
-	) x_1
+	"Person" x
+		LEFT JOIN LATERAL (
+			SELECT
+				y."PersonID",
+				y."Diagnosis"
+			FROM
+				"Patient" y
+			WHERE
+				y."PersonID" = x."PersonID"
+			LIMIT 1
+		) t1 ON 1=1
 WHERE
-	x_1."StatusName" = 'abc'
+	t1."PersonID" IS NULL OR t1."Diagnosis" = 'abc'
 
