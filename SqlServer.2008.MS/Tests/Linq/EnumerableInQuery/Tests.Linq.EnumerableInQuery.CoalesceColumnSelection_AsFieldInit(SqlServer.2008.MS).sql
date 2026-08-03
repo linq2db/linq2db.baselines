@@ -1,48 +1,44 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 SELECT
-	[t3].[ColorName],
-	[t3].[StyleName],
-	[t3].[Conditional],
-	[t3].[StrValue]
+	[it].[ColorName],
+	[it].[StyleName],
+	[it].[Conditional],
+	SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
+		WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
+			THEN CAST([it].[ColorId] AS NVarChar(11))
+		ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
+	END, N'')
 FROM
-	(
-		SELECT
-			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
-				WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
-					THEN CAST([it].[ColorId] AS NVarChar(11))
-				ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
-			END, N'') as [StrValue],
-			[it].[ColorName],
-			[it].[StyleName],
-			[it].[Conditional]
-		FROM
-			[SomeItem] [t2]
-				LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
-				LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
-				LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
-				OUTER APPLY (VALUES
-					([a_Color].[Name],[a_Style].[Name],Coalesce(CASE
-						WHEN [a_Color_1].[Id] IS NULL THEN NULL
-						ELSE [t2].[ColorId]
-					END, 0),CASE
-						WHEN [a_Color].[Name] = N'Red' THEN (
-							SELECT
-								COUNT(*) as [Conditional]
-							FROM
-								[SomeItem] [t1]
-						)
-						ELSE 0
-					END),
-					(NULL,[a_Style].[Name],Coalesce(CASE
-						WHEN [a_Color_1].[Id] IS NULL THEN NULL
-						ELSE [t2].[ColorId]
-					END, 0),0)
-				) [it]([ColorName], [StyleName], [ColorId], [Conditional])
-		WHERE
-			[it].[ColorName] = N'Red'
-	) [t3]
+	[SomeItem] [t2]
+		LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
+		LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
+		LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
+		OUTER APPLY (VALUES
+			([a_Color].[Name],[a_Style].[Name],Coalesce(CASE
+				WHEN [a_Color_1].[Id] IS NULL THEN NULL
+				ELSE [t2].[ColorId]
+			END, 0),CASE
+				WHEN [a_Color].[Name] = N'Red' THEN (
+					SELECT
+						COUNT(*) as [Conditional]
+					FROM
+						[SomeItem] [t1]
+				)
+				ELSE 0
+			END),
+			(NULL,[a_Style].[Name],Coalesce(CASE
+				WHEN [a_Color_1].[Id] IS NULL THEN NULL
+				ELSE [t2].[ColorId]
+			END, 0),0)
+		) [it]([ColorName], [StyleName], [ColorId], [Conditional])
+WHERE
+	[it].[ColorName] = N'Red'
 ORDER BY
-	[t3].[StrValue]
+	SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(CASE
+		WHEN [it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5
+			THEN CAST([it].[ColorId] AS NVarChar(11))
+		ELSE REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))
+	END, N'')
 
 -- SqlServer.2008.MS SqlServer.2008
 SELECT

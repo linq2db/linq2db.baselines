@@ -56,7 +56,7 @@ SET     @skip = 6
 SELECT
 	[t2].[BookType],
 	[t2].[Authors],
-	[t2].[c1]
+	[t2].[Authors_1]
 FROM
 	(
 		SELECT
@@ -65,13 +65,13 @@ FROM
 				WHEN [t1].[BookType] = N'Roman' THEN 1
 				ELSE 0
 			END as [Authors],
-			[t1].[c1],
+			[t1].[Authors] as [Authors_1],
 			ROW_NUMBER() OVER (ORDER BY [t1].[BookType] DESC) as [RN]
 		FROM
 			(
 				SELECT
 					CAST(N'Roman' AS NVarChar(4000)) as [BookType],
-					NULL as [c1]
+					NULL as [Authors]
 				FROM
 					[Book] [b]
 				WHERE
@@ -79,7 +79,7 @@ FROM
 				UNION ALL
 				SELECT
 					CAST(N'Novel' AS NVarChar(4000)) as [BookType],
-					[b_1].[BookId] as [c1]
+					[b_1].[BookId] as [Authors]
 				FROM
 					[Book] [b_1]
 				WHERE
