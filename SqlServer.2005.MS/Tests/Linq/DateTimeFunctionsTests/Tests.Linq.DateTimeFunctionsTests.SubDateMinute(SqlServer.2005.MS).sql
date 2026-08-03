@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 SELECT
-	CAST(DateDiff(minute, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue])) AS Float)
+	CAST(CAST(CAST(DATEDIFF(millisecond, [t].[DateTimeValue], DateAdd(minute, 100, [t].[DateTimeValue])) AS BIGINT) * 10000 AS BigInt) AS Float) / 600000000
 FROM
 	[LinqDataTypes] [t]
 
