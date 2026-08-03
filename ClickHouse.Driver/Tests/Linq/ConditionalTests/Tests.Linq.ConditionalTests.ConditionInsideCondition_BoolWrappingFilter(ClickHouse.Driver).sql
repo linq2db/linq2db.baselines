@@ -1,19 +1,18 @@
 ﻿-- ClickHouse.Driver ClickHouse
 SELECT
-	s.Value_1
+	CASE
+		WHEN s.ParentID % 2 = 0 THEN s.ParentID % 3 = 0
+		WHEN s.ParentID % 4 = 0 THEN s.ParentID > 0
+		ELSE s.ParentID < 5
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN p.ParentID % 2 = 0 THEN p.ParentID % 3 = 0
-				WHEN p.ParentID % 4 = 0 THEN p.ParentID > 0
-				ELSE p.ParentID < 5
-			END as Value_1
-		FROM
-			Parent p
-	) s
+	Parent s
 WHERE
-	s.Value_1
+	CASE
+		WHEN s.ParentID % 2 = 0 THEN s.ParentID % 3 = 0
+		WHEN s.ParentID % 4 = 0 THEN s.ParentID > 0
+		ELSE s.ParentID < 5
+	END
 
 -- ClickHouse.Driver ClickHouse
 SELECT
