@@ -1,8 +1,8 @@
 ﻿-- SQLite.Classic SQLite
 SELECT
 	CASE
-		WHEN [t1].[ParentID] IS NULL THEN 0
-		ELSE [t1].[ParentID]
+		WHEN [t1].[First1] IS NULL THEN 0
+		ELSE [t1].[First1]
 	END,
 	[t2].[ParentID],
 	[t2].[ChildID]
@@ -10,7 +10,7 @@ FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT
-				[c_1].[ParentID]
+				[c_1].[ParentID] as [First1]
 			FROM
 				[Child] [c_1]
 			WHERE
