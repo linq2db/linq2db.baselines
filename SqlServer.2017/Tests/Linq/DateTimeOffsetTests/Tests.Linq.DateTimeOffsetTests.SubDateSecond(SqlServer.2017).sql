@@ -1,6 +1,6 @@
 ﻿-- SqlServer.2017
 SELECT
-	CAST(DateDiff(second, [t].[TransactionDate], DateAdd(minute, 100, [t].[TransactionDate])) AS Float)
+	CAST(CAST(DATEDIFF_BIG(nanosecond, [t].[TransactionDate], DateAdd(minute, 100, [t].[TransactionDate])) / 100 AS BigInt) AS Float) / 10000000
 FROM
 	[Transactions] [t]
 
