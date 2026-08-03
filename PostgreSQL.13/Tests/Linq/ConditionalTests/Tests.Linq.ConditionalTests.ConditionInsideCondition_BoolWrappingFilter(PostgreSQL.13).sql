@@ -1,19 +1,18 @@
 ﻿-- PostgreSQL.13 PostgreSQL12
 SELECT
-	s."Value_1"
+	CASE
+		WHEN (s."ParentID"::decimal % 2)::decimal = 0 THEN (s."ParentID"::decimal % 3)::decimal = 0
+		WHEN (s."ParentID"::decimal % 4)::decimal = 0 THEN s."ParentID" > 0
+		ELSE s."ParentID" < 5
+	END
 FROM
-	(
-		SELECT
-			CASE
-				WHEN (p."ParentID"::decimal % 2)::decimal = 0 THEN (p."ParentID"::decimal % 3)::decimal = 0
-				WHEN (p."ParentID"::decimal % 4)::decimal = 0 THEN p."ParentID" > 0
-				ELSE p."ParentID" < 5
-			END as "Value_1"
-		FROM
-			"Parent" p
-	) s
+	"Parent" s
 WHERE
-	s."Value_1"
+	CASE
+		WHEN (s."ParentID"::decimal % 2)::decimal = 0 THEN (s."ParentID"::decimal % 3)::decimal = 0
+		WHEN (s."ParentID"::decimal % 4)::decimal = 0 THEN s."ParentID" > 0
+		ELSE s."ParentID" < 5
+	END
 
 -- PostgreSQL.13 PostgreSQL12
 SELECT
