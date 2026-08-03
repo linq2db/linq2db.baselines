@@ -1,6 +1,6 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 SELECT
-	CAST(Nano100_Between("t"."DateTimeValue", Add_Seconds("t"."DateTimeValue", 2023456.7890000001)) / 10000 AS Double)
+	CAST(CAST(Nano100_Between("t"."DateTimeValue", Add_Nano100("t"."DateTimeValue", 20234567890000)) AS BigInt) AS Double) / 10000
 FROM
 	"LinqDataTypes" "t"
 
