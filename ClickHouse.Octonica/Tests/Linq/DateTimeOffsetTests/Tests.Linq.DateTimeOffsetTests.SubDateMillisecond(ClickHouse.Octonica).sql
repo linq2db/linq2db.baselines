@@ -1,6 +1,6 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
-	toFloat64(toUnixTimestamp64Milli(toDateTime64(addSeconds(t.TransactionDate, toFloat64(1)), 3)) - toUnixTimestamp64Milli(toDateTime64(t.TransactionDate, 3)))
+	toFloat64(toInt64(toInt64((toUnixTimestamp64Nano(toDateTime64(addSeconds(t.TransactionDate, toFloat64(1)), 9)) - toUnixTimestamp64Nano(toDateTime64(t.TransactionDate, 9))) / 100))) / toFloat64(10000)
 FROM
 	Transactions t
 
