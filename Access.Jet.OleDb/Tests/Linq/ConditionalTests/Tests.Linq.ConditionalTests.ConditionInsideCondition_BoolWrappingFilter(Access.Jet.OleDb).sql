@@ -1,10 +1,15 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 SELECT
-	IIF([s].[ParentID] MOD 2 = 0, [s].[ParentID] MOD 3 = 0, IIF([s].[ParentID] MOD 4 = 0, [s].[ParentID] > 0, [s].[ParentID] < 5))
+	[s].[Value_1]
 FROM
-	[Parent] [s]
+	(
+		SELECT
+			IIF([p].[ParentID] MOD 2 = 0, [p].[ParentID] MOD 3 = 0, IIF([p].[ParentID] MOD 4 = 0, [p].[ParentID] > 0, [p].[ParentID] < 5)) as [Value_1]
+		FROM
+			[Parent] [p]
+	) [s]
 WHERE
-	IIF([s].[ParentID] MOD 2 = 0, [s].[ParentID] MOD 3 = 0, IIF([s].[ParentID] MOD 4 = 0, [s].[ParentID] > 0, [s].[ParentID] < 5))
+	[s].[Value_1]
 
 -- Access.Jet.OleDb AccessOleDb
 SELECT
