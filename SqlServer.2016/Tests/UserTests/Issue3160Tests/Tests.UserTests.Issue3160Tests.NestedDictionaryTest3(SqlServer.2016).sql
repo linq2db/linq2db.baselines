@@ -1,15 +1,15 @@
 ﻿-- SqlServer.2016
 SELECT
+	[t2].[c2],
 	[t2].[c1],
-	[t2].[c1_1],
 	[t2].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				N't2' as [c1],
-				[t1].[c1] as [c1_1],
-				[t1].[Id3]
+				[t1].[c1],
+				[t1].[Id3],
+				N't2' as [c2]
 			FROM
 				[TABLE2] [x_1]
 					OUTER APPLY (

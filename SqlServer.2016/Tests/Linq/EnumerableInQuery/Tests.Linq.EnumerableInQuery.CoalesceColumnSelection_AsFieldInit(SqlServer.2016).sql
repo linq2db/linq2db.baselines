@@ -1,27 +1,35 @@
 ﻿-- SqlServer.2016
 SELECT
-	[it].[ColorName],
-	[it].[StyleName],
-	[it].[Conditional],
-	SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'')
+	[t3].[ColorName],
+	[t3].[StyleName],
+	[t3].[Conditional],
+	[t3].[StrValue]
 FROM
-	[SomeItem] [t2]
-		LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
-		LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
-		LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
-		OUTER APPLY (VALUES
-			([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),IIF([a_Color].[Name] = N'Red', (
-				SELECT
-					COUNT(*) as [Conditional]
-				FROM
-					[SomeItem] [t1]
-			), 0)),
-			(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),0)
-		) [it]([ColorName], [StyleName], [ColorId], [Conditional])
-WHERE
-	[it].[ColorName] = N'Red'
+	(
+		SELECT
+			SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'') as [StrValue],
+			[it].[ColorName],
+			[it].[StyleName],
+			[it].[Conditional]
+		FROM
+			[SomeItem] [t2]
+				LEFT JOIN [SomeColor] [a_Color] ON [t2].[ColorId] = [a_Color].[Id]
+				LEFT JOIN [SomeStyle] [a_Style] ON [t2].[StyleId] = [a_Style].[Id]
+				LEFT JOIN [SomeColor] [a_Color_1] ON [t2].[ColorId] = [a_Color_1].[Id]
+				OUTER APPLY (VALUES
+					([a_Color].[Name],[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),IIF([a_Color].[Name] = N'Red', (
+						SELECT
+							COUNT(*) as [Conditional]
+						FROM
+							[SomeItem] [t1]
+					), 0)),
+					(NULL,[a_Style].[Name],Coalesce(IIF([a_Color_1].[Id] IS NULL, NULL, [t2].[ColorId]), 0),0)
+				) [it]([ColorName], [StyleName], [ColorId], [Conditional])
+		WHERE
+			[it].[ColorName] = N'Red'
+	) [t3]
 ORDER BY
-	SUBSTRING(N',' + Coalesce(N',' + [it].[StyleName], N''), 2, 2147483647) + N':' + Coalesce(IIF([it].[ColorId] IS NULL OR LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') >= 5, CAST([it].[ColorId] AS NVarChar(11)), REPLICATE(N'0', 4 - (LEN(CAST([it].[ColorId] AS NVarChar(11)) + N'.') - 1)) + CAST([it].[ColorId] AS NVarChar(11))), N'')
+	[t3].[StrValue]
 
 -- SqlServer.2016
 SELECT
