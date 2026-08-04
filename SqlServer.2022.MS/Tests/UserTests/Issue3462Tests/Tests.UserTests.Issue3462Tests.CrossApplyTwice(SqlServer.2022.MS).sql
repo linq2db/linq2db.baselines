@@ -9,9 +9,9 @@ FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[x_1].[NAME2] as [Name2],
 				[t1].[Id3],
 				[t1].[Name3],
+				[x_1].[NAME2] as [Name2],
 				1 as [not_null]
 			FROM
 				[TABLE2] [x_1]
