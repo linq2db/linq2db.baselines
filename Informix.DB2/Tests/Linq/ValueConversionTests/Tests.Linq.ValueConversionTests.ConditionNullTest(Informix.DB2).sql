@@ -1,20 +1,22 @@
 ﻿-- Informix.DB2 Informix
 SELECT
-	CASE
-		WHEN i."item" = 0 THEN NULL
-		ELSE p.ParentID
-	END,
-	p.Value1
+	p_1.ID,
+	p_1.Value1
 FROM
-	Parent p,
 	(
-		SELECT 0::Int AS "item" FROM table(set{1})
-		UNION ALL
-		SELECT 1::Int FROM table(set{1})) i
+		SELECT
+			CASE
+				WHEN i."item" = 0 THEN NULL
+				ELSE p.ParentID
+			END as ID,
+			p.Value1
+		FROM
+			Parent p
+				CROSS JOIN (
+					SELECT 0::Int AS "item" FROM table(set{1})
+					UNION ALL
+					SELECT 1::Int FROM table(set{1})) i
+	) p_1
 WHERE
-	CASE
-		WHEN i."item" = 0 THEN NULL
-		ELSE p.ParentID
-	END = p.Value1 OR
-	i."item" = 0 AND p.Value1 IS NULL
+	p_1.ID = p_1.Value1 OR p_1.ID IS NULL AND p_1.Value1 IS NULL
 
