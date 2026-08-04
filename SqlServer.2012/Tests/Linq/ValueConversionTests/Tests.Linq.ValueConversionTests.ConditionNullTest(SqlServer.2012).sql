@@ -1,13 +1,18 @@
 ﻿-- SqlServer.2012
 SELECT
-	IIF([i].[item] = 0, NULL, [p].[ParentID]),
-	[p].[Value1]
+	[p_1].[ID],
+	[p_1].[Value1]
 FROM
-	[Parent] [p],
-	(VALUES
-		(0), (1)
-	) [i]([item])
+	(
+		SELECT
+			IIF([i].[item] = 0, NULL, [p].[ParentID]) as [ID],
+			[p].[Value1]
+		FROM
+			[Parent] [p]
+				CROSS JOIN (VALUES
+					(0), (1)
+				) [i]([item])
+	) [p_1]
 WHERE
-	IIF([i].[item] = 0, NULL, [p].[ParentID]) = [p].[Value1] OR
-	[i].[item] = 0 AND [p].[Value1] IS NULL
+	[p_1].[ID] = [p_1].[Value1] OR [p_1].[ID] IS NULL AND [p_1].[Value1] IS NULL
 
