@@ -1,10 +1,10 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 SELECT
 	m_1.Id,
-	d_1.Id,
+	d_1.Id_1,
 	d_1.ParentId,
 	d_1.SubId,
-	d_1.Id_1,
+	d_1.Id,
 	d_1.Value_1
 FROM
 	(
@@ -15,11 +15,11 @@ FROM
 	) m_1
 		INNER JOIN (
 			SELECT
-				d.Id as Id,
+				a_SubItem.Id as Id,
+				a_SubItem.Value as Value_1,
+				d.Id as Id_1,
 				d.ParentId as ParentId,
 				d.SubId as SubId,
-				a_SubItem.Id as Id_1,
-				a_SubItem.Value as Value_1,
 				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
 			FROM
 				ChildEntitity d
@@ -28,7 +28,7 @@ FROM
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 ORDER BY
-	d_1.Id
+	d_1.Id_1
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
@@ -40,10 +40,10 @@ FROM
 -- ClickHouse.Octonica ClickHouse
 SELECT
 	m_1.Id,
-	d_1.Id,
+	d_1.Id_1,
 	d_1.ParentId,
 	d_1.SubId,
-	d_1.Id_1,
+	d_1.Id,
 	d_1.Value_1
 FROM
 	(
@@ -54,11 +54,11 @@ FROM
 	) m_1
 		INNER JOIN (
 			SELECT
-				d.Id as Id,
+				a_SubItem.Id as Id,
+				a_SubItem.Value as Value_1,
+				d.Id as Id_1,
 				d.ParentId as ParentId,
 				d.SubId as SubId,
-				a_SubItem.Id as Id_1,
-				a_SubItem.Value as Value_1,
 				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
 			FROM
 				ChildEntitity d
@@ -67,7 +67,7 @@ FROM
 				d.ParentId % 3 = 0
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 ORDER BY
-	d_1.Id
+	d_1.Id_1
 
 -- ClickHouse.Octonica ClickHouse
 SELECT
