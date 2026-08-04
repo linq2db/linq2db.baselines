@@ -1,18 +1,19 @@
 ﻿-- SqlServer.2019
 SELECT
-	CASE
-		WHEN [s].[ParentID] % 2 = 0 THEN IIF([s].[ParentID] % 3 = 0, 1, 0)
-		WHEN [s].[ParentID] % 4 = 0 THEN IIF([s].[ParentID] > 0, 1, 0)
-		ELSE IIF([s].[ParentID] < 5, 1, 0)
-	END
+	[s].[Value_1]
 FROM
-	[Parent] [s]
+	(
+		SELECT
+			CASE
+				WHEN [p].[ParentID] % 2 = 0 THEN IIF([p].[ParentID] % 3 = 0, 1, 0)
+				WHEN [p].[ParentID] % 4 = 0 THEN IIF([p].[ParentID] > 0, 1, 0)
+				ELSE IIF([p].[ParentID] < 5, 1, 0)
+			END as [Value_1]
+		FROM
+			[Parent] [p]
+	) [s]
 WHERE
-	CASE
-		WHEN [s].[ParentID] % 2 = 0 THEN IIF([s].[ParentID] % 3 = 0, 1, 0)
-		WHEN [s].[ParentID] % 4 = 0 THEN IIF([s].[ParentID] > 0, 1, 0)
-		ELSE IIF([s].[ParentID] < 5, 1, 0)
-	END = 1
+	[s].[Value_1] = 1
 
 -- SqlServer.2019
 SELECT
