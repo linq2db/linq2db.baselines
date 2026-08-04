@@ -1,8 +1,8 @@
 ﻿-- Oracle.11.Managed Oracle11
 SELECT
 	CASE
-		WHEN t2."First1" IS NULL THEN 0
-		ELSE t2."First1"
+		WHEN t2."ParentID" IS NULL THEN 0
+		ELSE t2."ParentID"
 	END,
 	t4."ParentID",
 	t4."ChildID"
@@ -10,11 +10,11 @@ FROM
 	"Parent" p
 		LEFT JOIN (
 			SELECT
-				t1."First1"
+				t1."ParentID"
 			FROM
 				(
 					SELECT
-						c_1."ParentID" as "First1"
+						c_1."ParentID"
 					FROM
 						"Child" c_1
 					WHERE
