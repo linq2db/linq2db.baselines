@@ -1,31 +1,31 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 SELECT
-	`t1`.`PersonID`,
-	`t1`.`Diagnosis`
+	`x_1`.`Id`,
+	`x_1`.`StatusName`
 FROM
 	(
 		SELECT
 			(
 				SELECT
-					`y`.`PersonID`
+					`y`.`Diagnosis`
 				FROM
 					`Patient` `y`
 				WHERE
 					`y`.`PersonID` = `x`.`PersonID`
 				LIMIT 1
-			) as `PersonID`,
+			) as `StatusName`,
 			(
 				SELECT
-					`y_1`.`Diagnosis`
+					`y_1`.`PersonID`
 				FROM
 					`Patient` `y_1`
 				WHERE
 					`y_1`.`PersonID` = `x`.`PersonID`
 				LIMIT 1
-			) as `Diagnosis`
+			) as `Id`
 		FROM
 			`Person` `x`
-	) `t1`
+	) `x_1`
 WHERE
-	`t1`.`PersonID` IS NULL OR `t1`.`Diagnosis` = 'abc'
+	`x_1`.`StatusName` = 'abc'
 

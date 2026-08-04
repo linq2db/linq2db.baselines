@@ -1,18 +1,19 @@
 ﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
-	CASE
-		WHEN `s`.`ParentID` % 2 = 0 THEN `s`.`ParentID` % 3 = 0
-		WHEN `s`.`ParentID` % 4 = 0 THEN `s`.`ParentID` > 0
-		ELSE `s`.`ParentID` < 5
-	END
+	`s`.`Value_1`
 FROM
-	`Parent` `s`
+	(
+		SELECT
+			CASE
+				WHEN `p`.`ParentID` % 2 = 0 THEN `p`.`ParentID` % 3 = 0
+				WHEN `p`.`ParentID` % 4 = 0 THEN `p`.`ParentID` > 0
+				ELSE `p`.`ParentID` < 5
+			END as `Value_1`
+		FROM
+			`Parent` `p`
+	) `s`
 WHERE
-	CASE
-		WHEN `s`.`ParentID` % 2 = 0 THEN `s`.`ParentID` % 3 = 0
-		WHEN `s`.`ParentID` % 4 = 0 THEN `s`.`ParentID` > 0
-		ELSE `s`.`ParentID` < 5
-	END
+	`s`.`Value_1`
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 SELECT
