@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 SELECT
-	IIF([t1].[First1] IS NULL, 0, [t1].[First1]),
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT TOP (1)
-				[c_1].[ParentID] as [First1]
+				[c_1].[ParentID]
 			FROM
 				[Child] [c_1]
 			WHERE
