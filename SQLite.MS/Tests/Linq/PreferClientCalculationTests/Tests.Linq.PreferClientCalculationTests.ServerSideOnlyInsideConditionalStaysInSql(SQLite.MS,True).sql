@@ -1,8 +1,9 @@
 ﻿-- SQLite.MS SQLite
 SELECT
-	[e].[Id],
-	ABS([e].[Value1]),
-	[e].[Value2]
+	CASE
+		WHEN [e].[Id] > 1 THEN ABS([e].[Value1])
+		ELSE [e].[Value2]
+	END
 FROM
 	[ClientCalcEntity] [e]
 
