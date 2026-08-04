@@ -1,29 +1,29 @@
 ﻿-- Firebird.2.5 Firebird
 SELECT
-	"t1"."PersonID",
-	"t1"."Diagnosis"
+	"x_1"."Id",
+	"x_1"."StatusName"
 FROM
 	(
 		SELECT
 			(
 				SELECT FIRST 1
-					"y"."PersonID"
+					"y"."Diagnosis"
 				FROM
 					"Patient" "y"
 				WHERE
 					"y"."PersonID" = "x"."PersonID"
-			) as "PersonID",
+			) as "StatusName",
 			(
 				SELECT FIRST 1
-					"y_1"."Diagnosis"
+					"y_1"."PersonID"
 				FROM
 					"Patient" "y_1"
 				WHERE
 					"y_1"."PersonID" = "x"."PersonID"
-			) as "Diagnosis"
+			) as "Id"
 		FROM
 			"Person" "x"
-	) "t1"
+	) "x_1"
 WHERE
-	"t1"."PersonID" IS NULL OR "t1"."Diagnosis" = 'abc'
+	"x_1"."StatusName" = 'abc'
 
