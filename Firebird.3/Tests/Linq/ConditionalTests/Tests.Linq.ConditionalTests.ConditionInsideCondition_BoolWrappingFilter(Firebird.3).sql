@@ -1,18 +1,19 @@
 ﻿-- Firebird.3 Firebird3
 SELECT
-	CASE
-		WHEN Mod("s"."ParentID", 2) = 0 THEN Mod("s"."ParentID", 3) = 0
-		WHEN Mod("s"."ParentID", 4) = 0 THEN "s"."ParentID" > 0
-		ELSE "s"."ParentID" < 5
-	END
+	"s"."Value_1"
 FROM
-	"Parent" "s"
+	(
+		SELECT
+			CASE
+				WHEN Mod("p"."ParentID", 2) = 0 THEN Mod("p"."ParentID", 3) = 0
+				WHEN Mod("p"."ParentID", 4) = 0 THEN "p"."ParentID" > 0
+				ELSE "p"."ParentID" < 5
+			END as "Value_1"
+		FROM
+			"Parent" "p"
+	) "s"
 WHERE
-	CASE
-		WHEN Mod("s"."ParentID", 2) = 0 THEN Mod("s"."ParentID", 3) = 0
-		WHEN Mod("s"."ParentID", 4) = 0 THEN "s"."ParentID" > 0
-		ELSE "s"."ParentID" < 5
-	END
+	"s"."Value_1"
 
 -- Firebird.3 Firebird3
 SELECT
