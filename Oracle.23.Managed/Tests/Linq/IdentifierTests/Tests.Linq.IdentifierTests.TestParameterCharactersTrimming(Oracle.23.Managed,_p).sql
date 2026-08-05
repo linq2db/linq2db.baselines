@@ -1,0 +1,11 @@
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 2
+
+UPDATE
+	"testparams" t
+SET
+	"_p" = :p
+WHERE
+	t."_p" = 1
+
