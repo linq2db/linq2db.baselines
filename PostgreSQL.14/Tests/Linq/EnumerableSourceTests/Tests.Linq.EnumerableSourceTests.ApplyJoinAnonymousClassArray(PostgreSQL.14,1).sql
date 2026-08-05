@@ -1,0 +1,13 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+		INNER JOIN (VALUES
+			('Janet'), ('Doe')
+		) n("Name") ON p."LastName" = n."Name"
+

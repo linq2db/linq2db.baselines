@@ -1,0 +1,5 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+SELECT
+	CURRENT_TIMESTAMP
+LIMIT 1
+

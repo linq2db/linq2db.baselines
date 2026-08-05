@@ -1,0 +1,12 @@
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL12
+DECLARE @p Integer -- Int32
+SET     @p = 1
+
+SELECT
+	p."LastName"
+FROM
+	"Person" p
+WHERE
+	p."PersonID" = :p
+LIMIT 2
+
