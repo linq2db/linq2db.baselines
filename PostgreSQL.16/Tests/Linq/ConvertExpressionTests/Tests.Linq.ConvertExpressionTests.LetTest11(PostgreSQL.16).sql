@@ -1,8 +1,8 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL12
 SELECT
 	CASE
-		WHEN t1."First1" IS NULL THEN 0
-		ELSE t1."First1"
+		WHEN t1."ParentID" IS NULL THEN 0
+		ELSE t1."ParentID"
 	END,
 	t2."ParentID",
 	t2."ChildID"
@@ -10,7 +10,7 @@ FROM
 	"Parent" p
 		LEFT JOIN (
 			SELECT
-				c_1."ParentID" as "First1"
+				c_1."ParentID"
 			FROM
 				"Child" c_1
 			WHERE
