@@ -1,13 +1,13 @@
 ﻿-- PostgreSQL.18 PostgreSQL12
 SELECT
-	t1."Value_1",
-	t1."HasValue"
+	t1."Value_2",
+	t1."Value_1"
 FROM
 	"Request" a
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Metrics"."Value" as "HasValue",
-				"a_Metrics"."Value" IS NOT NULL as "Value_1"
+				"a_Metrics"."Value" as "Value_1",
+				"a_Metrics"."Value" IS NOT NULL as "Value_2"
 			FROM
 				"Metric" "a_Metrics"
 			WHERE
