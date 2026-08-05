@@ -1,7 +1,7 @@
 ﻿-- YDB Ydb
 SELECT
 	c_1.ParentID as ParentID,
-	a_Parent.ParentID as Info2_1,
+	a_Parent.ParentID as ParentID_1,
 	a_Parent.Value1 as Value1
 FROM
 	Parent t1
