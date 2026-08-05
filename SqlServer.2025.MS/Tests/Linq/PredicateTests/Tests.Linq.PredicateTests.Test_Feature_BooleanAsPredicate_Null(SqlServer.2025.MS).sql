@@ -1,0 +1,8 @@
+﻿-- SqlServer.2025.MS SqlServer.2025
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[BoolNull] = 1
+

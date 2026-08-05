@@ -1,0 +1,4 @@
+﻿-- SqlServer.2025
+SELECT
+	GETUTCDATE()
+
