@@ -1,0 +1,4 @@
+﻿-- ClickHouse.Octonica ClickHouse
+SELECT
+	'--'
+

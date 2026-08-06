@@ -1,0 +1,96 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) = (r."One" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) = (r."Zero" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) = (r."Null" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Zero" IS NULL) = (r."Null" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Zero" IS NULL) = (r."Zero" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Null" IS NULL) = (r."Null" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) <> (r."One" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) <> (r."Zero" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."One" IS NULL) <> (r."Null" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Zero" IS NULL) <> (r."Null" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Zero" IS NULL) <> (r."Zero" IS NULL)
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL12
+SELECT
+	COUNT(*)
+FROM
+	"FeatureTable" r
+WHERE
+	(r."Null" IS NULL) <> (r."Null" IS NULL)
+

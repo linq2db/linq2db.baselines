@@ -1,0 +1,3 @@
+﻿-- DuckDB
+DROP TABLE "Table"
+

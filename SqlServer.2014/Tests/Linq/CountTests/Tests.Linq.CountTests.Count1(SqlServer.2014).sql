@@ -1,0 +1,6 @@
+﻿-- SqlServer.2014
+SELECT
+	COUNT(*)
+FROM
+	[Parent] [t1]
+

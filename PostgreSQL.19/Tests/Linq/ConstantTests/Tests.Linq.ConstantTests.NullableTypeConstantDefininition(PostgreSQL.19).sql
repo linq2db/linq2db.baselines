@@ -1,0 +1,5 @@
+﻿-- PostgreSQL.19 PostgreSQL12
+SELECT
+	1
+LIMIT 1
+

@@ -1,0 +1,8 @@
+﻿-- SqlServer.2014
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[False] = 1
+

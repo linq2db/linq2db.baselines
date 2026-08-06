@@ -1,0 +1,11 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+SELECT
+	`gr`.`FirstName`,
+	`gr`.`LastName`,
+	SUM(`gr`.`PersonID`)
+FROM
+	`Person` `gr`
+GROUP BY
+	`gr`.`FirstName`,
+	`gr`.`LastName`
+
